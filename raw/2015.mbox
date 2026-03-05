@@ -1,0 +1,1455 @@
+From code at clayden.org  Thu Jan  8 16:47:04 2015
+From: code at clayden.org (Jon Clayden)
+Date: Thu, 08 Jan 2015 15:47:04 +0000
+Subject: [R-pkgs] Package "ore": Oniguruma Regular Expressions
+Message-ID: <1420732024.1630726.211270997.4D25E01A@webmail.messagingengine.com>
+
+Dear all,
+
+I'm pleased to announce the availability of the "ore" package (for
+"Oniguruma Regular Expressions"), which offers an alternative to base
+R's functions for searching, splitting and substituting text which
+matches (Perl-style) regular expressions. The package uses the
+Oniguruma/Onigmo regex library behind the scenes, and offers the
+following advantages:
+
+- Regular expressions are themselves first-class objects (of class
+"ore"), stored with attributes containing information such as the number
+of parenthesised groups present within them. This means that it is not
+necessary to compile a particular regex more than once.
+- Search results focus around the matched substrings (including
+parenthesised groups), rather than the locations of matches. This saves
+extra work with "substr" or similar to extract the matches themselves.
+- Substantially better performance, especially when matching against
+long strings.
+- Substitutions can be functions as well as strings.
+- Matches can be efficiently obtained over only part of the strings.
+- Fewer core functions, with more consistent names.
+
+The package is developed using GitHub, and more information can be found
+at <https://github.com/jonclayden/ore>. It is also available on CRAN.
+
+In addition, I've developed a regular expression benchmark, which pits
+"ore", "base" and the "stringi" package against the full text of The
+Adventures of Sherlock Holmes. It can be obtained and run via
+<https://github.com/jonclayden/regex-performance>. Sample output is
+available at <http://rpubs.com/jonclayden/regex-performance>.
+
+Contributions to the package or the benchmark are very welcome.
+
+All the best,
+Jon
+
+
+From hb at biostat.ucsf.edu  Mon Jan 26 22:19:59 2015
+From: hb at biostat.ucsf.edu (Henrik Bengtsson)
+Date: Mon, 26 Jan 2015 13:19:59 -0800
+Subject: [R-pkgs] matrixStats 0.13.1 - Methods that Apply to Rows and
+ Columns of a Matrix (and Vectors)
+Message-ID: <CAFDcVCR7jpZLjf9cSkw84+KWg=Ai=TGTjXEmhZdyza5HJoqR_g@mail.gmail.com>
+
+A new release 0.13.1 of matrixStats is now on CRAN
+[http://cran.r-project.org/package=matrixStats]. The source code is
+available on GitHub [https://github.com/HenrikBengtsson/matrixStats].
+
+
+WHAT DOES IT DO?
+
+The matrixStats package provides highly optimized functions for
+computing common summaries over rows and columns of matrices,
+e.g.rowQuantiles(). There are also functions that operate on vectors,
+e.g. logSumExp(). Their implementations strive to minimize both memory
+usage and processing time. They are often remarkably faster compared
+to good old apply() solutions. The calculations are mostly implemented
+in C, which allow us to optimize(*) beyond what is possible to do in
+plain R. The package installs out-of-the-box on all common operating
+systems, including Linux, OS X and Windows.
+
+The following example computes the median of the columns in a 20-by-500 matrix:
+
+    > library("matrixStats")
+    > X <- matrix(rnorm(20 * 500), nrow = 20, ncol = 500)
+    > stats <- microbenchmark::microbenchmark(colMedians = colMedians(X),
+    +     `apply+median` = apply(X, MARGIN = 2, FUN = median), unit = "ms")
+    > stats
+    Unit: milliseconds
+            expr   min    lq  mean median   uq    max neval cld
+      colMedians  0.41  0.45  0.49   0.47  0.5   0.75   100  a
+    apply+median 21.50 22.77 25.59  23.86 26.2 107.12   100   b
+
+It shows that colMedians() is ~51 times faster than apply(...,
+MARGIN=2, FUN=median) in this particular case. The relative gain
+varies with matrix shape, so you should benchmark with your
+configurations. You can also play around with the benchmark reports
+that are under development, e.g. html <-
+matrixStats:::benchmark("colRowMedians"); !html.
+
+
+WHAT IS NEW?
+
+With this release, all the functions run faster than ever before and
+at the same time use less memory than ever before, which in turn means
+that now even larger data matrices can be processed without having to
+upgrade the RAM. A few small bugs have also been fixed and some
+?missing? functions have been added to the R API. This update is part
+of a long-term tune-up that started back in June 2014. Most of the
+major groundwork has already been done, but there is still room for
+improvements. If you're using matrixStats functions in your package
+already now, you should see some notable speedups for those function
+calls, especially compared to what was available back in June. For
+instance, rowMins() is now 5-20 times faster than functions such as
+base::pmin.int() whereas in the past they performed roughly the same.
+
+I've also added a large number of new package tests; the R and C
+source code coverage has recently gone up from 59% to 96% (? and
+counting) [https://coveralls.io/r/HenrikBengtsson/matrixStats?branch=develop].
+Some of the bugs were discovered as part of this effort. Here a
+special thank should go out to Jim Hester for his great work on covr
+[https://github.com/jimhester/covr], which provides me with on-the-fly
+coverage reports via Coveralls. (You can run covr locally or via
+GitHub + Travis CI, which is very easy if you're already up and
+running there. Try it!) I would also like to thank the R core team and
+the CRAN team for their continuous efforts on improving the package
+tests that we get via R CMD check but also via the CRAN farm (which
+occasionally catches code issues that I'm not always seeing on my
+end).
+
+Footnote:
+(*) One strategy for keeping the memory footprint at a minimum is to
+optimize the implementations for the integer and the numeric (double)
+data types separately. Because of this, a great number of data-type
+coercions are avoided, coercions that otherwise would consume precious
+memory due to temporarily allocated copies, but also precious
+processing time because the garbage collector later would have to
+spend time cleaning up the mess. The new weightedMean() function,
+which is many times faster than stats::weighted.mean(), is one of
+several cases where this strategy is particular helpful.
+
+
+Any type of feedback, including bug reports, is always appreciated!
+
+Thanks,
+
+Henrik
+
+
+From jack at jackwasey.com  Tue Jan 27 12:57:04 2015
+From: jack at jackwasey.com (Jack Wasey)
+Date: Tue, 27 Jan 2015 06:57:04 -0500
+Subject: [R-pkgs] Major update: icd9 1.0
+Message-ID: <CA+zP7HHJJZZ76kg88O_27JBD7tHRN7GLEoEGnN9AexMS8nYanA@mail.gmail.com>
+
+Dear R users,
+
+An updated icd9 package is now on CRAN.
+
+Calculate comorbidities, and perform fast and accurate validation,
+conversion, manipulation, filtering and comparison of ICD-9-CM
+(clinical modification) codes. The package enables a work flow from
+raw lists of ICD-9 codes from hospital billing databases to
+comorbidities. ICD-9 to comorbidity mappings from Quan (Deyo and
+Elixhauser versions), Elixhauser and AHRQ included.
+
+A vignette describes the main features:
+http://cran.r-project.org/web/packages/icd9/vignettes/introduction.html
+
+# Version 1.0
+
+* Calculate Charlson scores
+* Sum distinct comorbidities or diagnoses by patient
+* Core rewrite in C++ for 50+ times speed improvement. 100,000
+patients assigned comorbidities in ~2 seconds.
+* Simplified handling validation of codes. No longer done in every function.
+* Most functions now guess the ICD-9 code type automatically (e.g.
+00321 vs 003.21)
+* Reduced external dependencies down to Rcpp and checkmate (a very
+lightweight and fast function argument checker)
+* Bug fixes (see
+[github](https://github.com/jackwasey/icd9/issues?q=is%3Aissue+is%3Aclosed))
+* API changes
+    - no more validation except in the icd9IsValidXxx functions.
+Removed stopIfInvalidIcd9, icd9InvalidActions
+    - internalized utility functions. They are also packaged and
+tested in [jwutil](http://cran.r-project.org/web/packages/jwutil/index.html)
+    - deprecated icd9ValidXxx in favour of icd9IsValidXxx
+    - deprecated icd9ComorbditiesXxx replacing with briefer icd9ComorbidXxx
+    - stopped exporting benchmarking and SAS code processing.
+
+Comments and contributions very welcome via github:
+https://github.com/jackwasey/icd9
+
+Jack Wasey
+
+
+From helios.derosario at ibv.upv.es  Mon Feb 16 23:11:49 2015
+From: helios.derosario at ibv.upv.es (Helios de Rosario)
+Date: Mon, 16 Feb 2015 23:11:49 +0100
+Subject: [R-pkgs] Release of phia 0.2-0
+Message-ID: <54E279350200000C00022218@mailhost.biomec.upv.es>
+
+Dear R users,
+
+I want to announce an update of the package "phia", version 0.2-0, now
+on CRAN:
+<http://cran.r-project.org/web/packages/phia/>
+
+"phia" (Post-Hoc Interaction Analysis) is aimed at the analysis of the
+expected values and other terms of in linear, generalized, and mixed
+linear models, on the basis of multiple comparisons of factor contrasts,
+and is specially suited for the analysis of interaction effects. The
+function "testFactors" provides a flexible user interface for defining
+combinations of factor levels and covariates, to evaluate and test the
+model, using the function "linearHypothesis" from package "car".
+"testInteractions" gives a simpler interface to test multiple
+comparisons of simple effects, interaction residuals, interaction
+contrasts, or user-defined contrasts. "interactionMeans" may be used to
+explore the "cell means" of factorial designs, and plot main effects or
+first-order interactions.
+
+This update incorporates some minor bug fixes to previous versions, and
+a new feature that had long been requested by some package users: the
+report of the error associated to the adjusted values calculated by
+functions like "interactionMeans". Now the standard errors are printed
+together with the adjusted values, and the plot method for interaction
+tables adds error bars with the size of such standard errors, or
+asymptotic confidence intervals based on such errors.
+
+In addition, I would like to refer the package users to the development
+repository in GitHub: <https://github.com/heliosdrm/phia>, where new
+contributions, issues/bug reports, and other comments are welcome.
+
+Best regards
+
+Helios De Rosario
+
+biomecanicamente.org
+Conoce la actualidad on-line del IBV
+______________________________
+
+INSTITUTO DE BIOMEC?NICA DE VALENCIA
+Universidad Polit?cnica de Valencia ? Edificio 9C
+Camino de Vera s/n ? 46022 VALENCIA (ESPA?A)
+Tel. +34 961111170- +34 610567200 ? Fax +34 96 387 91 69
+www.ibv.org
+
+Antes de imprimir este e-mail piense bien si es necesario hacerlo.
+En cumplimiento de la Ley Org?nica 15/1999 reguladora de la Protecci?n
+de Datos de Car?cter Personal, le informamos de que el presente mensaje
+contiene informaci?n confidencial, siendo para uso exclusivo del
+destinatario arriba indicado. En caso de no ser usted el destinatario
+del mismo le informamos que su recepci?n no le autoriza a su divulgaci?n
+o reproducci?n por cualquier medio, debiendo destruirlo de inmediato,
+rog?ndole lo notifique al remitente.
+
+
+From blake.seers at gmail.com  Thu Mar  5 03:59:15 2015
+From: blake.seers at gmail.com (Blake Seers)
+Date: Thu, 5 Mar 2015 15:59:15 +1300
+Subject: [R-pkgs] New package: clifro (v2.4-0)
+Message-ID: <CAHayGv9r+tXChjzW2=Jj20rV3=t_DmcycMN97zj5XutPpM-=Lg@mail.gmail.com>
+
+Dear R Users,
+
+I am pleased to inform you that my clifro package has been submitted to
+CRAN today:
+
+http://cran.r-project.org/web/packages/clifro/
+
+The clifro package imports data from New Zealand's National Climate
+Database (via CliFlo) and provides generic plotting methods for a range of
+the various data types. The focus of clifro is to ensure the process from
+data acquisition to analysis is as smooth as possible. This removes the
+need to manually obtain, validate, import, clean and reshape the data,
+before any plotting, analysis or export takes place.
+
+This package may also be helpful for plotting wind data from any dataset
+(using the windrose function).
+
+The github page can be viewed here:
+https://github.com/ropensci/clifro#enhancing-the-national-climate-database-with-clifro
+
+Any comments, suggestions and feedback are always welcome.
+
+I hope you find this helpful!
+Regards
+---
+Blake
+
+	[[alternative HTML version deleted]]
+
+
+From mikhail.zvagelsky at axibase.com  Tue Mar 17 16:39:25 2015
+From: mikhail.zvagelsky at axibase.com (mikhail.zvagelsky at axibase.com)
+Date: Tue, 17 Mar 2015 10:39:25 -0500
+Subject: [R-pkgs] The 'atsd' package released.
+Message-ID: <59164.1426606765@axibase.com>
+
+Dear R users,
+
+I would like to announce the release of the "atsd" R package on CRAN, 
+which offers functions for retrieving time-series and related meta-data 
+such as entities, metrics, and tags from Axibase Time Series Database (ATSD).
+
+http://cran.r-project.org/web/packages/atsd/index.html
+
+ATSD runs on top of HBase to collect, analyze and visualize time series data at scale. 
+ATSD capabilities include optimized storage schema, built-in rule engine, forecasting 
+algorithms include Holt-Winters, ARIMA and graphics designed for high-frequency data. 
+Primary use case: IT infrastructure resource monitoring.
+
+The main focus of "atsd" R package is to simplify data retrieval. This package eliminates 
+the need to manually retrieve historical data and forecasts, before any advanced analysis 
+is executed. The "atsd" R package fetches data and tags from ATSD, and converts them into 
+a data frame object which can be readily consumed by other R packages.
+
+Key supported functions for retrieving data:
+
+? query() -- get historical data and forecasts from ATSD. 
+             This function supports aggregation: COUNT, MIN, MAX, AVG, WAvg, WTAvg, SUM, 
+             PERCENTILES (50%, 75%, 90%, 95%, 99%, 99.5%, 99.9%), STANDARD_DEVIATION. 
+             The function also supports interpolation: NONE, STEP, LINEAR.
+
+? get_metrics() -- get information about the metrics collected by ATSD.
+
+? get_entities() -- get information about the entities collected by ATSD.
+
+? to_zoo() -- converts a time-series data frame to 'zoo' object for manipulating irregular 
+              time-series with built-in functions in zoo package.
+
+The github page can be found here:
+
+https://github.com/axibase/atsd-api-r
+
+Comments and contributions are welcome.
+
+
+Best Regards,
+Mikhail Zvagelsky.
+
+
+From pbailey at air.org  Tue Apr 28 21:43:15 2015
+From: pbailey at air.org (Bailey, Paul)
+Date: Tue, 28 Apr 2015 19:43:15 +0000
+Subject: [R-pkgs] New package: lfactors (0.4-0)
+Message-ID: <02C0B4336BD2BC4A8FC51CDF98D2F494ABF00C15@DC1VEX10MB001.air.org>
+
+Dear R users,
+
+The "lfactors" package is now available from CRAN. It provides a class "lfactor" that is similar to the class "factor" but can be referred to by level or label.
+
+This package is best explained with an example
+
+flips <- lfactor(c(0,1,1,0,0,1), levels=0:1, labels=c("Tails", "Heads"))
+# Tails can now be referred to as, "Tails" or 0
+# These two lines return the same result
+flips == "Tails"
+flips == 0
+
+Other functions, such as %in% and != also work with lfactors.
+
+This package is helpful for data that was labeled with long labels, making references to the label cumbersome. This happens to me when I'm sharing data with users of other statistical software that uses the same convention as lfactors--that is, allowing a factor level to be referred to by its numeric or character value.
+
+Comments, contributions, and suggests are welcome.
+
+Best,
+Paul
+---
+Paul D. Bailey, Ph.D.
+Economist, Education
+American Institutes for Research
+202.403.5694
+
+
+From f.harrell at Vanderbilt.Edu  Mon May  4 22:23:27 2015
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Mon, 4 May 2015 15:23:27 -0500
+Subject: [R-pkgs] Version 3.16-0 of Hmisc now on CRAN
+Message-ID: <5547D53F.30201@vanderbilt.edu>
+
+Several updates have been made to the Hmisc package:
+
+Changes in version 3.16-0 (2015-04-25)
+    * html.contents.data.frame: corrected html space character to add 
+semicolon
+    * ggplot.summaryP: added size of points according to denominators
+    * colorFacet: new function
+    * labelPlotmath: added chexpr argument (used by rms::ggplot.Predict)
+    * rcsplineFunction: added type='integral'
+    * summaryP: fixed bug with sort=FALSE using mfreq when shouldn't
+    * summaryP: stored levels(val) in original levels order
+    * summaryM: removed observations added by addMarginal when computing 
+N in left column of tables
+    * html.latex: added method for htlatex, added where argument, 
+cleaned up code, implemented file='' for knitr when using html/Rmarkdown
+    * summaryM, summary.formula: changed calls to translate to gsub()
+    * summaryP: corrected but in exclude1 logic, moved exclude1 to 
+methods that operate on summaryP objects and out of summaryP itself
+    * addMarginal: respect original levels, add argument margloc
+    * added latticeExtra:: in front of function calls
+    * numeric.string, all.is.numeric: replaced options(warn=-1) with 
+suppressWarnings() (thanks: Yihui)
+    * arrGrob, print.arrGrob: new functions
+    * wtd.var: added maximum likelihood method, fixed unbiased method, 
+improved documentation (all provided by Benjamin Tyner)
+    * Changed all any(duplicated()) to anyDuplicated(); thanks Benjamin 
+Tyler
+    * getRs: new function to interact with 
+https://github.com/harrelfe/rscripts
+    * knitrSet: new function to setup knitr with nice defaults for books 
+etc.
+      * rcorr: fixed sensing of NAs and diagonal elements of n matrix; 
+thanks: Keith Jewell, Campden BRI Group; similar for hoeffd
+
+-- 
+------------------------------------------------------------------------
+Frank E Harrell Jr 	Professor and Chairman 	School of Medicine
+
+	Department of *Biostatistics* 	*Vanderbilt University*
+
+
+	[[alternative HTML version deleted]]
+
+
+From kyle.hamilton at gmail.com  Fri May  1 03:22:33 2015
+From: kyle.hamilton at gmail.com (Kyle Hamilton)
+Date: Thu, 30 Apr 2015 18:22:33 -0700
+Subject: [R-pkgs] New release of MAVIS (Meta Analysis via Shiny) v1.1 now on
+	CRAN
+Message-ID: <CAN17LWM+mpR0GvVDzMGCR0iBVm-y-GY2XD8LVLuM6FMi7t50dw@mail.gmail.com>
+
+Dear R users,
+
+I'm pleased to announce that the first major update to the MAVIS
+package (Meta Analysis via Shiny) has been released to CRAN.
+
+MAVIS: Meta Analysis via Shiny v1.1 "Smiling Fox" has expanded greatly
+over the last couple of months to include the following.
+
+- User interface has been improved with the ?shinyBS? package and icons.
+- Support for single case design, dichotomous data sets, and
+additional effect size calculators.
+- Expanded options for the detection of publication bias.
+- Expanded support for both random effects and fixed effects models
+with the 'metafor' package.
+- Dichotomous data entry now available with input examples.
+- Graphical outputs for funnel plots now allow for contour enhancement.
+- References to articles covering methods described in MAVIS are now
+easy to find.
+- Knapp & Hartung Adjustment for random-effects models is now available.
+- Regression test options for the detection of publication bias now
+include both Weighted Regression with a Multiplicative Dispersion Term
+and Meta-analytic Models.
+- Users may now have the option for full model output.
+- Single Case Design Data Entry now uses the ?shinyAce? package to
+allow for easy data entry.
+
+The package is developed using GitHub, and more information as well as
+the current development version can be found at
+https://github.com/kylehamilton/MAVIS
+
+
+William Kyle Hamilton  -  Graduate Student
+University of California, Merced  -  Psychological Sciences
+psychology.ucmerced.edu - kylehamilton.com
+
+
+From thomas.hotz at tu-ilmenau.de  Fri Jun  5 13:16:23 2015
+From: thomas.hotz at tu-ilmenau.de (Thomas Hotz)
+Date: Fri, 05 Jun 2015 13:16:23 +0200
+Subject: [R-pkgs] New package stepR: fitting step-functions
+Message-ID: <55718507.4090005@tu-ilmenau.de>
+
+Dear R users,
+
+It is my pleasure to announce the availability of package stepR (1.0-2) 
+on CRAN.
+
+The main purpose of the package is to fit piecewise constant functions 
+(a.k.a. step-functions or block signals) to serial data in a fully 
+data-driven manner under certain (Gaussian or non-Gaussian) 
+distributional assumptions.
+
+It mainly implements the algorithms described in the references below - 
+in a (hopefully) user-friendly fashion.
+
+Try
+
+    library(stepR)
+    example(smuceR) # for [1] and [2]
+    example(jsmurf) # for [3]
+    example(stepsel) # for [4]
+
+to get an idea about what it can do, and how to use it.
+
+We hope it proves useful; community feedback is therefore very welcome!
+
+Best regards
+
+Thomas Hotz
+TU Ilmenau, Institute of Mathematics
+
+References:
+
+[1] Frick, K., Munk, A., and Sieling, H. (2014). Multiscale Change-Point 
+Inference. With discussion and rejoinder by the authors. Journal of the 
+Royal Statistical Society, Series B, 76(3), 495-580.
+[2] Futschik, A., Hotz, T., Munk, A. Sieling, H. (2014). Multiresolution 
+DNA partitioning: statistical evidence for segments. Bioinformatics,  
+30(16), 2255-2262.
+[3] Hotz, T., Sch?tte, O., Sieling, H., Polupanow, T., Diederichsen, U., 
+Steinem, C., and Munk, A. (2013). Idealizing Ion Channel Recordings by a 
+Jump Segmentation Multiresolution Filter. IEEE Transactions on 
+NanoBioscience, 12(4), 376-386.
+[4] Boysen, L., Kempe, A., Liebscher, V., Munk, A., Wittich, O. (2009). 
+Consistencies and rates of convergence of jump-penalized least squares 
+estimators. The Annals of Statistics, 37(1), 157-183.
+
+
+From Michael.Rustler at kompetenz-wasser.de  Mon Jun  8 14:47:02 2015
+From: Michael.Rustler at kompetenz-wasser.de (Michael Rustler)
+Date: Mon, 8 Jun 2015 12:47:02 +0000
+Subject: [R-pkgs] New R package kwb.hantush (0.2.1): calculation of
+ groundwater mounding beneath an (stormwater) infiltration basin
+Message-ID: <6FDA78647A9EF040B0BF9C6081518439340F8FA4@SourceMBX0.KWB.BERLIN>
+
+Dear R users,
+
+It is a pleasure for me to announce the availability of the new package kwb.hantush (0.2.1)? on CRAN. Its objective is the calculation of groundwater mounding beneath an (stormwater) infiltration basin by solving the Hantush (1967) equation. For checking the correct implementation of the algorithm the R modelling results were cross-checked against alternative models assessed in Carleton (2010) by using the same model parameterisation. 
+
+References: 
+[1] Carleton, G.B., 2010, Simulation of groundwater mounding beneath hypothetical stormwater infiltration basins: U.S. Geological Survey Scientific Investigations Report 2010-5102, 64 p.; http://pubs.usgs.gov/sir/2010/5102/ 
+
+[2] Hantush, M.S. (1967): Growth and decay of groundwater-mounds in response to uniform percolation, Water Resources Research (March, 1967); http://doi.org/10.1029/WR003i001p00227 
+
+
+How to get started ? 
+
+* Firstly install the package from CRAN by using:  install.packages("kwb.hantush")
+
+* Secondly visit http://kwb-r.github.io/kwb.hantush? for doing a short tutorial, which answers the following questions: 
+	- How do I perform model runs ?
+
+	- How accurate is the solution of the Hantush equation implemented in R compared to the a reference model 
+	  (e.g. U.S. Geological Survey EXCEL spreadsheet solution, http://pubs.usgs.gov/sir/2010/5102/support/Hantush_USGS_SIR_2010-5102-1110.xlsm) ?
+
+I hope it proves to be useful and community feedback is therefore very welcome!
+
+Best Regards, 
+Michael Rustler
+
+--------------------------------------------
+Dipl.-Geo?k. Michael Rustler
+KompetenzZentrum Wasser Berlin gGmbH
+Cicerostr. 24
+D-10709 Berlin
+Tel. +49 (0)30 53653 825
+Fax +49 (0)30 53653 888
+Email: michael.rustler at kompetenz-wasser.de
+Homepage: www.kompetenz-wasser.de <http://www.kompetenz-wasser.de>
+----------------------------------------------------------------
+----------------------------------------------------------------
+Gesch?ftsf?hrer:
+Dipl.-Ing. Andreas Hartmann
+Sitz der Gesellschaft: Berlin
+Amtsgericht Charlottenburg
+HRB 84461
+
+
+From retep.meissner at gmail.com  Mon Jun  8 12:31:15 2015
+From: retep.meissner at gmail.com (Peter Meissner)
+Date: Mon, 08 Jun 2015 12:31:15 +0200
+Subject: [R-pkgs] New version of wikipediatrend
+Message-ID: <op.xzwp6dyq3euttn@zukd208>
+
+
+Dear UseRs,
+
+
+wikipediatrend - a package to retrieve Wikipedia page access statistics -  
+has jumped from version 0.2 to 1.1.3 and now is more streamlined, feature  
+richer, more tested and comes with a vignette as well as a lot of fun.
+
+
+packge information: http://cran.rstudio.com/web/packages/wikipediatrend
+
+vignette:            
+http://cran.rstudio.com/web/packages/wikipediatrend/vignettes/using-wikipediatrend.html
+
+project page:       https://github.com/petermeissner/wikipediatrend
+
+
+Best, Peter
+
+
+
+
+NEWS wikipediatrend
+==========================================================================
+
+version 1.1.3 // 2015-06-04 ...
+--------------------------------------------------------------------------
+
+- modifying vignette to comply with CRAN policies (dropping lines  
+installing packages if not present)
+
+
+version 1.1.2 // 2015-05-23 ...
+--------------------------------------------------------------------------
+
+- modifying caching to comply with CRAN policies
+
+- changing default folder of cache file from temp (basename(tempdir())) to  
+Rtemp ( tempdir() )
+
+
+version 1.1.1 // 2015-05-23 ...
+--------------------------------------------------------------------------
+
+- adding ghrr as additional repo to comply with CRAN policies
+
+- changing default folder of cache file from home (~) to temp  
+(basename(tempdir()))
+
+
+version 1.1.0 // 2015-05-21 ...
+--------------------------------------------------------------------------
+
+- feature: caching has been overhauled
+
+- feature: wp_trend() now tries to guess if page was supplied as title  
+with possible special characters or as (url-encoded) URL part and take  
+care of  further processing
+
+- bug-fix: special character support of the packages was lousy and  
+preventing
+the usage of articles of non-standard languages ( - especially on Windows)
+   * introduction of the wp_df class to allow for a print.wp_df that
+     a) shortens long strings on print
+     b) does not use format() (format() causes UTF-8 characters to be  
+replaced by "<U+xxxx>" strings (propably only))
+   * using a package specific write_utf8_csv() and read_utf8_csv() to be  
+able to store and cache data for articles with special character names      
+(even under Windows, write.csv() does not allow enforcing a specific  
+encoding)
+
+- bug-fix / backward compatibility: with version 1.0.0 old parameters for
+wp_trend() were causing errors
+
+- bug-fix: wp_cache_reset() would stop with an error if called twice in a  
+row - fixed
+
+
+version 1.0.0 // 2015-04-01 ...
+--------------------------------------------------------------------------
+
+- api-change: option userAgent deleted: the default is to send information  
+on
+versions of R, wikipediatrend, curl as well as RCurl
+
+- api-change: option requestFrom deleted: the default is to not send the  
+header
+
+- feature: wp_trend() now by default caches data retrievals in a temporary  
+file
+
+- feature: wp_trend(file="save.csv") now allows to specify a file where
+retrievals are stored (this will always add to the already existing data)
+
+- feature: wp_trend() now allows to specify more than one page and/or  
+language
+at a time. data than will be retrieved for every combination of
+page-language and date
+
+- feature: caching system is persistant wp_cache_file() will report file  
+used for
+caching; wp_cache_reset() will reset cache; wp_cache_load() will return its
+content as data.frame()
+
+- feature: while wp_trend() now (invisibly) returns only data from the  
+current
+request at hand the new function wp_cache() will retrieve data from cache  
+files
+(by default / if no file name is specified it retrieves data from  
+.wp_trend_cache)
+
+- api-change: the data returned by wp_trend(), cached in cache-file,  
+retrieved by
+wp_cache() does consist of more variables: date, count, project, title,
+rank, month
+
+- feature: testthat tests now check base functionality of the package
+
+- bug-fix: non-existing page views for a month have led to an error, fixed.
+
+- bug-fix: wp_trend() now checks date inputs better for logical  
+inconsistencies
+
+
+version 0.2.0 // 2014-11-01 ...
+--------------------------------------------------------------------------
+
+- first puplication on CRAN
+
+
+From perossichi at gmail.com  Mon Jun 15 05:50:54 2015
+From: perossichi at gmail.com (Peter Rossi)
+Date: Sun, 14 Jun 2015 20:50:54 -0700
+Subject: [R-pkgs] version 3.0-0 of bayesm
+Message-ID: <CANGRwOarTpGUeOVJpyLABxtfrx7W19G+M5T7LQT1cB5_64gy-Q@mail.gmail.com>
+
+Version 3.0-0 of bayesm is now on CRAN.
+
+All MCMC routines in this version have been recoded using rcpp-Armadillo.
+This results in speeds gains
+of between 2 and 30 times faster (hierarchical and density estimation
+routines are on the higher end of this range) than
+in bayesm version 2.2-5.
+
+The algorithm, rsurGibbs, has been improved for better speed as well as
+recoded.
+
+A Bayesian treatment of aggregate random coefficient models (with
+instruments) has been added, see rbayesBLP.
+
+peter rossi
+thanks to Neil Fultz, Keunwoo Kim, and Wayne Taylor for their help in the
+recoding.
+
+	[[alternative HTML version deleted]]
+
+
+From bob at rudis.net  Tue Jun 16 12:40:49 2015
+From: bob at rudis.net (boB Rudis)
+Date: Tue, 16 Jun 2015 06:40:49 -0400
+Subject: [R-pkgs] Version 0.8.5 of metricsgraphics is on CRAN
+Message-ID: <CAJ4QxaMg5_rHUf5s26O9V5G14OgzEBSHPaca5y-EZVA1bqq5aA@mail.gmail.com>
+
+Version 0.8.5 of metricsgraphics is now on CRAN.
+
+It provides an 'htmlwidgets' interface to the 'MetricsGraphics.js'
+('D3'-based) charting
+library which is geared towards displaying time-series data. There are
+routines for scatterplots, histograms and even 'grid.arrange'-like
+functionality for laying out multiple charts.
+
+-Bob
+
+
+From yue-hu-1 at uiowa.edu  Wed Jul  1 23:58:25 2015
+From: yue-hu-1 at uiowa.edu (Hu, Yue)
+Date: Wed, 1 Jul 2015 21:58:25 +0000
+Subject: [R-pkgs] interplot: a new package for visualizing interactive
+	effects
+In-Reply-To: <BLUPR04MB006BED96EBDD7488D18FE2280A80@BLUPR04MB006.namprd04.prod.outlook.com>
+References: <BLUPR04MB006BED96EBDD7488D18FE2280A80@BLUPR04MB006.namprd04.prod.outlook.com>
+Message-ID: <BLUPR04MB0069C4B94C006A47B24755D80A80@BLUPR04MB006.namprd04.prod.outlook.com>
+
+
+Dear colleagues,
+
+We just published a package, "interplot",  in CRAN. It can be used to plots the conditional coefficients ("marginal effects") of variables included in multiplicative interaction terms for various models.  The installation instruction and more details about the package are available in http://cran.r-project.org/web/packages/interplot/vignettes/interplot-vignette.html.
+
+Please contact me with any questions, bug reports, and comments.
+
+Best,
+
+Hu, Yue
+Ph.D. Student, Political Science,
+University of Iowa,
+313 Schaeffer Hall,
+20E Washington St.,
+Iowa City, IA, 52242.
+
+
+	[[alternative HTML version deleted]]
+
+
+From amgv0009 at red.ujaen.es  Tue Jul 21 14:04:22 2015
+From: amgv0009 at red.ujaen.es (amgv0009 at red.ujaen.es)
+Date: Tue, 21 Jul 2015 12:04:22 +0000
+Subject: [R-pkgs] =?utf-8?q?SDR_package_for_Subgroup_Discovery_on_CRAN?=
+Message-ID: <55ae3574.8261b40a.5d367.66b4@mx.google.com>
+
+
+Package SDR for subgroup discovery data mining is available on CRAN now. 
+
+
+
+
+
+More info of the package on the CRAN page:
+
+https://cran.r-project.org/web/packages/SDR/index.html
+
+
+?ngel.
+	[[alternative HTML version deleted]]
+
+
+From pls at mevik.net  Sat Aug 22 16:00:49 2015
+From: pls at mevik.net (=?utf-8?Q?Bj=C3=B8rn-Helge_Mevik?=)
+Date: Sat, 22 Aug 2015 16:00:49 +0200
+Subject: [R-pkgs] pls 2.5-0 released
+Message-ID: <m0a8tjctim.fsf@bar.nemo-project.org>
+
+Version 2.5-0 of the pls package has been released.  The pls package
+implements Partial Least Squares Regression, Principal Component
+Regression and Canonical Powered PLS.
+
+The major changes are:
+
+- Cross-validation can now make sure that replicates are kept in the
+  same segment, by the use of a new argument `nrep'.  See ?cvsegments
+  for details.
+
+- It now has a vignette.
+
+- It now has a NEWS file that can be accessed by news().
+ 
+-- 
+Regards,
+Bj?rn-Helge Mevik
+
+
+From alexis.sarda at gmail.com  Sun Aug 23 20:14:06 2015
+From: alexis.sarda at gmail.com (Alexis Sarda)
+Date: Sun, 23 Aug 2015 20:14:06 +0200
+Subject: [R-pkgs] R Package dtwclust: Shape-based clustering of univariate
+	time series
+Message-ID: <CAA4naPBAfEZz9fs4Uu3Lx-0r-37oxwu2LNgqmJ=p-BK8+6E-gw@mail.gmail.com>
+
+Time Series Clustering With Dynamic Time Warping Distance (DTW)
+===============================================================
+
+The dtwclust package attempts to consolidate some of the recent techniques
+related to time series clustering under DTW and implement them in R. Most
+of these algorithms make use of traditional clustering techniques
+(partitional and hierarchical clustering) but change the distance
+definition. In this case, the distance between time series is measured with
+DTW.
+
+DTW is, however, computationally expensive, so several optimization
+techniques exist. They mostly deal with bounding the DTW distance. These
+bounds are only defined for time series of equal lengths. Nevertheless, if
+the length of the time series of interest vary only slightly,
+reinterpolating them to a common length is probably an appropriate solution.
+
+Additionally, a recently proposed algorithm called k-Shape could serve as
+an alternative. k-Shape clustering relies on custom distance and centroid
+definitions, which are unrelated to DTW. The shape extraction algorithm
+proposed therein is particularly interesting if time series can be
+normalized.
+
+Many of the algorithms and optimizations require that all series have the
+same length. The ones that don't are usually slow but can still be used.
+
+Please see the references for more information.
+
+Dependencies
+------------
+
+-   Partitional procedures are implemented by leveraging the `flexclust`
+package.
+-   Hierarchical procedures use the native `hclust` function.
+-   Cross-distances make use of the `proxy` package.
+-   The core DTW calculations are done by the `dtw` package.
+-   Plotting is done with the `ggplot2` package.
+
+Implementations
+---------------
+
+-   Keogh's and Lemire's lower bounds
+-   DTW Barycenter Averaging
+-   k-Shape clustering
+-   TADPole clustering
+
+--
+Best,
+Alexis Sard? Espinosa.
+
+https://github.com/asardaes/dtwclust
+https://cran.rstudio.com/web/packages/dtwclust/index.html
+
+	[[alternative HTML version deleted]]
+
+
+From me at markedmondson.me  Sun Aug 30 20:29:26 2015
+From: me at markedmondson.me (Mark Edmondson)
+Date: Sun, 30 Aug 2015 20:29:26 +0200
+Subject: [R-pkgs] New packages on CRAN: googleAuthR and searchConsoleR
+Message-ID: <CAGPCWY2N+KLO75+9GVOCAk-tsrTcPREPbWTYKbBO43k4CU+jng@mail.gmail.com>
+
+Hi R package users,
+
+You may be interested in these two new packages now available on CRAN:
+
+*googleAuthR* lets you easily authenticate with Google OAuth2 APIs and make
+your own packages with them.  It also is multi-user Shiny compatible, so
+you can publish your apps and users can work with their own data.  With
+Google APIs including Gmail, Google Predict and Google Drive this offers
+access to some nice resources.
+
+*searchConsoleR* is the first package released using googleAuthR, working
+with the Google Search Console.  This data includes what keywords people
+have used to find your website.
+
+Hope they are of interest, do let me know what you build with them!
+Yours sincerely,
+Mark
+
+	[[alternative HTML version deleted]]
+
+
+From cjendres1 at gmail.com  Fri Sep  4 16:42:30 2015
+From: cjendres1 at gmail.com (Christopher Endres)
+Date: Fri, 4 Sep 2015 10:42:30 -0400
+Subject: [R-pkgs] nhanesA - easy retrieval and import of NHANES data
+Message-ID: <CA+uw+qAeXzVP4dMY9AZyT=8_w4V0RiCssLLFBDZiyWYigEVGQQ@mail.gmail.com>
+
+Dear R enthusiasts, I would like to announce nhanesA, a package that
+enables easy retrieval of the data tables that are available at the
+National Health and Nutritional Examination Survey (NHANES).
+NHANES data are used in over 10,000 peer-reviewed journal publications
+every year. In addition to easy table download, nhanesA features several
+functions that implement web scraping (using rvest) to display table names,
+table variables, and table code translations.
+For more information, Here's a link to the package:
+https://cran.r-project.ohg/web/packages/nhanesA/
+<https://cran.r-project.org/web/packages/nhanesA/>
+install.packages("nhanesA") will get you started.
+
+Hopefully it will be useful for clinical research and general data
+exploration.
+
+Sincerely,
+Christopher Endres
+
+	[[alternative HTML version deleted]]
+
+
+From f.harrell at Vanderbilt.Edu  Thu Oct  1 00:48:58 2015
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Wed, 30 Sep 2015 17:48:58 -0500
+Subject: [R-pkgs] Major updates to Hmisc and rms packages
+Message-ID: <560C66DA.7090803@vanderbilt.edu>
+
+New versions of Hmisc and rms are available on CRAN.  Changes are listed 
+below.
+
+The most significant change to Hmisc is the addition of the ffCompress 
+function that creates an optimal ff package object for large data frames 
+by computing the maximum number of bits used by each numeric or logical 
+variable in the data frame.  And the html.latex method now implements 
+conversion of latex code generated by Hmisc to html for dynamic 
+insertion in R Markdown documents (if you install the system package 
+TeX4ht).
+
+The most significant changes to rms are the correct handling of offset 
+variables and updating the demos.
+----------------------------------------------------------------------------------------------------------------------------
+
+Hmisc Changes in version 3.17-0 (2015-09-20)
+    * format.df (used by latex.default): added space after textless, 
+textgreater
+      * label: changed default for units to value of plot
+      * getRs: replaced where argument with guser, grepo, gdir, dir to 
+allow easy fetching of updated functions from Hmisc etc.
+      * Separated sas.get source code from other .get functions and from 
+upData/cleanup.import by putting into 3 separate files.  Moved stata.get 
+into misc.get.s
+      * upData: for Stat/Transfer exported R workspaces, change 
+variables into factors to incorporate value labels when present; added 
+subset argument and reporting of number of observations pre and post 
+subsetting
+      * latex.default: added comma after botcap directive for ctable.  
+Thanks: Paul Trowbridge
+    * Hmisc-internal.Rd: removed  alias{[.terms}
+      * latex.default: for longtable when no caption is given, subtract 
+one from table counter
+      * latex.summaryM: quit ignoring insert.bottom if it is a character 
+string (thanks: JoAnn Alvarez)
+      * minor.tick: revised version by Earl Belllinger that fixes 
+problem reported in https://github.com/harrelfe/Hmisc/issues/28
+      * several functions: used new names when assigning temporary functions
+      * NAMESPACE: add imports to base functions to avoid new R CMD 
+CHECK warnings
+      * ffCompress: new function
+      * knitrSet: changed fig.path default to '' instead of NULL to work 
+with knitr 1.11
+      * html.latex: added argument rmarkdown
+      * htmltools: added to suggests in DESCRIPTION
+      * tests: new test script latex-html.Rmd for latex -> html under 
+Rmarkdown/knitr/Rstudio, new test for cut2
+      * plsmo, panel.plsmo: added method='intervals', mobs, ifun arguments
+
+
+rms Changes in version 4.4-0 (2015-09-28)
+    * contrast.rms: made SE a vector not a matrix, added 4 list logic 
+for nvary, added new test from JoAnn Alvarez
+      * plot.summary.rms: correct bug where pch was ignored.  Thanks: 
+Tamas Ferenci
+      * prModFit: fix print(fit, latex=FALSE) when fit is result of 
+robcov, bootcov
+      * NAMESPACE: added imports for base functions used to avoid 
+warnings with R CMD CHECK; new test rcs.r
+      * prModFit: added rmarkdown argument.  All print.* methods can 
+pass this argument.
+      * All print methods for fit objects: left result as prModFit 
+instead of invisible() so that rmarkdown will work
+      * demo/all.R: updated for plot and ggplot methods, npsurv
+      * cph, predictrms, rms, rms.trans, rmsMisc: changed Design 
+function to return new objects sformula (formula without cluster()) and 
+mmcolnames which provides a new way to get rid of strat() main effects 
+and interactions involving non-reference cells; handle offsets in cph 
+and predict() (not yet in Predict); new internal function 
+removeFormulaTerms that does character manipulation to remove terms like 
+cluster() or offset() or the dependent variable(s).  This gets around 
+the problem with [.terms messing up offset terms when you subset on 
+non-offset terms
+      * Glm, ols: fixed offset
+      * bj, Gls, lrm, orm, psm, Rq: change to new offset method and sformula
+      * Predict: added offset=list(offsetvariable=value)
+      * several: made temporary function names unique to avoid warnings 
+with R CMD CHECK
+      * ggplot.Predict: changed facet_wrap_labeller to not mess with 
+class of returned object from ggplotGrob
+      * Design: fixed column names for matrix predictors
+      * Design, cph: handled special case where model is fit on a fit$x 
+matrix
+      * dxy.cens: exported
+      * cph: added debug argument
+      * tests/cph4.r: new tests for various predictor types
+      * rms: changed warning to error if an ordered factor appears in 
+the model and options(contrasts) is not set properly
+      * rms transformation functions: made more robust by checking ! 
+length instead of is.null
+
+
+-- 
+------------------------------------------------------------------------
+Frank E Harrell Jr 	Professor and Chairman 	School of Medicine
+
+	Department of *Biostatistics* 	*Vanderbilt University*
+
+
+	[[alternative HTML version deleted]]
+
+
+From alex.deckmyn at meteo.be  Sun Sep 27 10:47:35 2015
+From: alex.deckmyn at meteo.be (Alex Deckmyn)
+Date: Sun, 27 Sep 2015 10:47:35 +0200 (CEST)
+Subject: [R-pkgs] Major update to 'maps': v3.0.0
+Message-ID: <1416191663.7823498.1443343655806.JavaMail.zimbra@meteo.be>
+
+Hi, 
+
+I am pleased to announce the availability of 'maps' v3.0.0 
+This is a major update, mainly because of a new 'world' map. The new data is adapted from the public domain GIS project Natural Earth (the 1:50m admin-0 countries map). 
+
+This change in data has a number of consequences for users. Most significantly, many new country names have appeared while some other no longer exist. So code that explicitely calls, for instance, 'USSR' or 'Yugoslavia' will no longer work correctly. On the other hand, I have tried to keep other country names more or less identical. Besides the updated political borders, the map also has a slightly higher resolution than before. 
+
+I understand that this change (which by its nature can not be completely backward compatible) may cause some problems for existing code. There are however various ways to fall back to the old legacy world map. It can be addressed directly as map("legacy_world",...). But for quickly fixing existing code, there is also the possibility to have 'world' point at the legacy data base in two different ways: 
+- by calling the function world.legacy(TRUE) 
+- be setting the environment variable R_MAP_DATA_LEGACY=TRUE prior to loading the maps package 
+These 2 solutions should be seen as temporary fixes. 
+
+Other notable changes and additions: 
+- a new data set 'iso3166' with 2- and 3-letter ISO codes of all countries plus the sovereignty. A few simple functions allow to map or label coutries by their ISO codes: 
+* iso.expand(c("BE","NL","LU")) 
+* iso.alpha(c("Belgium","Netherlands","Luxembourg"),n=2) 
+* sov.expand("France") 
+
+- internally, these functions and the basic name matching now use perl-style regular expressions. This may be exploited by using regular expressions to (un)select regions in the 'map()' functions directly, e.g. map(regions="(?!Antarctica)",fill=T) 
+
+The README file and NEWS.Rd contain more details and examples. 
+
+I hope this update proves useful. Please inform me of any errors you may find. 
+
+Alex 
+--- 
+Dr. Alex Deckmyn e-mail: alex.deckmyn at meteo.be 
+Royal Meteorological Institute http://www.meteo.be 
+Ringlaan 3, 1180 Ukkel, Belgium tel. (32)(2)3730646 
+
+	[[alternative HTML version deleted]]
+
+
+From alexzemnitskiy at gmail.com  Wed Sep 30 22:26:55 2015
+From: alexzemnitskiy at gmail.com (Alexey Zemnitskiy)
+Date: Wed, 30 Sep 2015 16:26:55 -0400
+Subject: [R-pkgs] PortfolioEffectHFT - High Frequency Portfolio Analytics
+Message-ID: <CADY2e71WW2nxtGnSpTSrFP70AD+0=izrtsPHqf0n_CK3VxMqbA@mail.gmail.com>
+
+Dear R enthusiasts,
+
+I would like to announce PortfolioEffectHFT package availability on CRAN:
+https://cran.r-project.org/web/packages/PortfolioEffectHFT/
+
+It is an R interface to PortfolioEffect Quant service for backtesting high
+frequency trading (HFT)  strategies, intraday portfolio analysis and
+optimization. PortfolioEffect is a cloud-based service, which is free to
+use with your own market data, but also has an integrated (optional) access
+to high frequency prices for all major US Equities (8,000+ symbols).
+
+Package features:
+
+- Auto-calibrating model pipeline for market microstructure noise, risk
+factors, price jumps/outliers, tail risk (high-order moments), price
+fractality (long memory) and was designed to give tick-resolution
+analytics.
+
+- Over 40+ portfolio and position-level metrics to compute intraday risk
+and performance from modern and post-modern portfolio theory.
+
+- Single-period constraint portfolio optimization (classic Markowitz and
+extensions for tail risk) with scalar, vector-based and user-defined
+functional constraints.
+
+- Multi-period constraint portfolio optimization that accounts for previous
+portfolio rebalancing (trading strategy optimization).
+
+- Transactional costs were also implemented in this release.
+
+More details in the package manual:
+https://cran.r-project.org/web/packages/PortfolioEffectHFT/vignettes/PortfolioEffectHFT.pdf
+
+Or on the website (nightly builds and latest updates):
+https://www.portfolioeffect.com/docs/platform/quant/
+
+
+Sincerely,
+
+Aleksey Zemnitskiy
+
+	[[alternative HTML version deleted]]
+
+
+From emmanuel.blondel1 at gmail.com  Mon Oct  5 18:22:07 2015
+From: emmanuel.blondel1 at gmail.com (Emmanuel Blondel)
+Date: Mon, 5 Oct 2015 18:22:07 +0200
+Subject: [R-pkgs] cleangeo - Cleaning Geometries from Spatial Objects
+In-Reply-To: <560D05CE.4070408@gmail.com>
+References: <560D05CE.4070408@gmail.com>
+Message-ID: <5612A3AF.7070507@gmail.com>
+
+Dear all,
+
+I've published a new package in CRAN named "cleangeo", that aims to 
+facilitate the cleaning of geometries from spatial objects. cleangeo was 
+initially born from some assistance provided to users that were facing 
+issues in processing spatial data in R (see the original post at 
+http://gis.stackexchange.com/questions/113964/fixing-orphaned-holes-in-r).
+<https://github.com/eblondel/cleangeo>
+A presentation of the package including a small tutorial is available 
+at: 
+http://fr.slideshare.net/EmmanuelBlondel/cleangeo-cleaning-geometries-from-spatial-objects-in-r
+The project page is available at: https://github.com/eblondel/cleangeo
+
+Best,
+Emmanuel Blondel
+
+
+From bmihaljevic at fi.upm.es  Thu Nov 19 16:46:00 2015
+From: bmihaljevic at fi.upm.es (Bojan Mihaljevic)
+Date: Thu, 19 Nov 2015 16:46:00 +0100
+Subject: [R-pkgs] Version 0.3.2 of bnclassify on CRAN
+Message-ID: <CAE4w2GWLqQP7Cg3YNAfVyVAQv7q0oOkjcU=E88aW9oHOiHPzkQ@mail.gmail.com>
+
+Dear R users,
+
+I am glad to announce that version 0.3.2 of bnclassify is on CRAN.
+bnclassify implements algorithms for learning the structure and parameters
+of discrete Bayesian network classifiers from data, fast prediction with
+complete data, cross-validation and utility functions for inspecting the
+models.
+
+This version improves function documentation and the introductory vignette,
+adds two vignettes, and implements the model averaged naive Bayes.
+
+Best regards,
+Bojan Mihaljevic
+
+	[[alternative HTML version deleted]]
+
+
+From friendly at yorku.ca  Thu Nov 19 19:47:57 2015
+From: friendly at yorku.ca (Michael Friendly)
+Date: Thu, 19 Nov 2015 13:47:57 -0500
+Subject: [R-pkgs] matlib package for linear algebra and multivariate
+	statistics
+Message-ID: <564E195D.8080807@yorku.ca>
+
+Dear useRs
+
+A new package, "matlib" has been under development and the latest 
+version, 0.5.2,
+will shortly be on CRAN.
+http://cran.us.r-project.org/web/packages/matlib/
+
+The package is designed to provide a collection of functions and vignettes
+for teaching and learning linear algebra and multivariate statistics.
+
+In some cases, convenience functions are provided for concepts available
+elsewhere in R, but where the function call or name is not obvious. In other
+cases, functions are provided to show or demonstrate an algorithm.
+
+The topics covered in the package include:
+
+* Vector geometry: vector diagrams, projection
+
+* Determinants: minors, cofactors and expansion by cofactors
+
+* Elementary row operations: functions for solving linear equations 
+"manually" by the steps used in row echelon form and Gaussian elimination
+
+* Linear equations: functions to illustrate and plot linear equations of 
+the form $\mathbf{A x = b}$
+
+* Gaussian elimination: functions for illustrating Gaussian elimination 
+for solving systems of linear equations of the form
+$\mathbf{A x = b}$.  These functions provide a `verbose=TRUE` argument 
+to show the intermediate steps.
+
+* Eigenvalues: functions to illustrate the algorithms for calculating 
+eigenvalues and eigenvectors and the SVD
+
+* browseVignettes("matlib") shows currently available vignettes.
+
+The GitHub development page for the project is:
+https://github.com/friendly/matlib
+
+Comments, suggestions, issues, etc. are invited there.
+
+best,
+-Michael
+
+-- 
+Michael Friendly     Email: friendly AT yorku DOT ca
+Professor, Psychology Dept. & Chair, Quantitative Methods
+York University      Voice: 416 736-2100 x66249 Fax: 416 736-5814
+4700 Keele Street    Web:http://www.datavis.ca
+Toronto, ONT  M3J 1P3 CANADA
+
+
+From cdetermanjr at gmail.com  Mon Nov 23 14:10:09 2015
+From: cdetermanjr at gmail.com (Charles Determan)
+Date: Mon, 23 Nov 2015 07:10:09 -0600
+Subject: [R-pkgs] New package: gpuR
+Message-ID: <CAKxd1KNuX5LYPBhCpf8GKbeJBYpf82Vcrwv6GUK35kVNh6Bg-A@mail.gmail.com>
+
+R Users,
+
+I am happy to inform you that my 'gpuR' package has just been accepted to
+CRAN.
+
+https://cran.r-project.org/web/packages/gpuR/index.html
+
+The gpuR package is designed to provide simple to use functions for
+leveraging GPU's for computing.  Although there are a couple existing
+packages for GPU's in R most are specific to NVIDIA GPU's and have very
+limited and specific functions.  The packaged is based on an OpenCL backend
+in conjunction with the ViennaCL library (which is packaged within the
+RViennaCL package).  This allows the user to use almost any GPU (Intel,
+AMD, or NVIDIA).  It is my hope that these functions can be used to more
+rapidly develop algorithms within R that can leverage GPUs.
+
+The package is structured to use a few new S4 classes that retain the
+object either on the host CPU or in GPU memory (thereby avoiding transfer
+time).  I have included a minimal introductory vignette describing the
+package further, providing a simple use case, and listing currently
+available functions.
+
+https://cran.r-project.org/web/packages/gpuR/vignettes/gpuR.pdf
+
+You can view the github page here:
+
+https://github.com/cdeterman/gpuR
+
+which also contains a wiki to help with installation.  Although it must be
+compiled, it is able to be installed on Linux, Mac OSX, and Windows
+platforms.
+
+I welcome any comments, issues (please submit on the github), and of course
+additional contributions.
+
+Regards,
+Charles Determan
+
+	[[alternative HTML version deleted]]
+
+
+From jvadams at usgs.gov  Fri Dec  4 22:18:50 2015
+From: jvadams at usgs.gov (Adams, Jean)
+Date: Fri, 4 Dec 2015 15:18:50 -0600
+Subject: [R-pkgs] =?utf-8?q?LW1949_=E2=80=93_new_package_for_evaluating_do?=
+	=?utf-8?q?se-effect_experiments?=
+Message-ID: <CAN5YmCHCCUjX6xLPFfENTj6ne-cOpHNAUR2tYiigv0WCpbeorw@mail.gmail.com>
+
+LW1949 1.0.0 is now available on CRAN.
+
+
+
+LW1949 automates the steps taken in Litchfield and Wilcoxon?s (1949) manual
+approach to evaluating dose-effect experiments. Letting the computer do the
+work saves time and yields the best fit possible using the Litchfield
+Wilcoxon approach (by minimizing the chi-squared statistic).
+
+
+
+A brief demonstration of LW1949 is given in this web app,
+
+     https://jvadams.shinyapps.io/LW1949demo
+
+
+
+An example of how to use the functions in LW1949 is given in this vignette,
+
+     https://rawgit.com/JVAdams/LW1949/master/vignettes/Intro.html
+
+
+
+Litchfield, JT Jr. and F Wilcoxon. 1949. A simplified method of evaluating
+dose-effect experiments. Journal of Pharmacology and Experimental
+Therapeutics 96(2):99-113.
+
+     http://jpet.aspetjournals.org/content/96/2/99.abstract
+
+
+Jean??
+
+
+`?.,,  ><(((?>   `?.,,  ><(((?>   `?.,,  ><(((?>
+
+Jean V. Adams??
+Statistician
+U.S. Geological?? Survey ??
+Great Lakes Science Center
+223 East Steinfest Road ??
+Antigo, WI 54409  USA ??
+http://www.glsc.usgs.gov
+http://profile.usgs.gov/jvadams
+
+	[[alternative HTML version deleted]]
+
+
+From marc_schwartz at me.com  Mon Dec  7 19:45:10 2015
+From: marc_schwartz at me.com (Marc Schwartz)
+Date: Mon, 07 Dec 2015 12:45:10 -0600
+Subject: [R-pkgs] WriteXLS Version 4.0.0 Released
+Message-ID: <A5FB07ED-53B9-4169-9CB0-1B7C56204E98@me.com>
+
+Hi all,
+
+WriteXLS version 4.0.0 has been released. It should start appearing in source tarballs and binaries in due course on CRAN mirrors.
+
+The primary changes in this new version are:
+
+1. The new ability to specify either a single data frame object or a list object that contains one or more data frames. 
+
+Previously one needed to specify a character vector of the quoted names of data frames or the quoted name of a list containing one or more data frames. 
+
+I have had several requests to also allow the objects themselves to be passed and this is now possible, in addition to the original functionality. The use of quoted names has also been one of the more common sources of confusion in the use of the function.
+
+Please see the examples in ?WriteXLS for the differences in calling the function with quoted names versus objects.
+
+It was my goal to not break existing code and this has been tested with the new functionality, so please let me know if any one runs into any issues.
+
+
+2. A new 'na' argument, defaulting to "" (blank) for backward compatibility, that allows one to specify the character value to be used in the target Excel file, when NA values are encountered in the source data frame. This is a parallel to the same argument in ?write.table.
+
+
+Regards,
+
+Marc Schwartz
+
+
+From jnkcarlson at gmail.com  Fri Dec 11 09:44:04 2015
+From: jnkcarlson at gmail.com (joel carlson)
+Date: Fri, 11 Dec 2015 17:44:04 +0900
+Subject: [R-pkgs] New Package "radiomics": First and Second Order Matrix
+	Statistics
+Message-ID: <CAG=FcbnD6pqCfZk1U6vvuxnQxUFGzH1K=E5rFAknAYZApE-XPA@mail.gmail.com>
+
+Dear R Users,
+
+I am pleased to inform you that my package, 'radiomics' is now
+available on CRAN:
+https://cran.r-project.org/web/packages/radiomics/
+<http://cran.r-project.org/web/packages/clifro/>
+
+The radiomics package offers 4 classes of texture matrices, and
+associated feature sets. These matrices can be used for image
+classification, or for extraction of meaningful information from the
+input image (as in the case of the research field of radiomics). The
+texture matrices are:
+
+ - Gray level co-occurrence matrix (GLCM)
+
+ - Gray level run-length matrix (GLRLM)
+
+ - Gray level size-zone matrix (GLSZM)
+
+ - Multiple gray level size-zone matrix (MGLSZM)
+
+Each of these matrices are calculated from an input grayscale matrix,
+and return objects of class 'glcm', 'glrlm', 'glszm' or 'mglszm'.
+Features of the matrices can be calculated using the calc_features()
+function. calc_features() can also be called on an image matrix, and
+will return first-order summary statistics.
+
+The github page can be viewed
+here:https://github.com/joelcarlson/radiomics
+<https://github.com/ropensci/clifro#enhancing-the-national-climate-database-with-clifro>
+
+Lists of features, and an introduction to the package can be found in
+the package vignette.
+
+In-depth explanation of texture analysis matrices can be found here:
+
+http://joelcarlson.me/2015/07/10/radiomics-package/
+
+Any comments, contributions, and feedback are always welcome.
+
+I hope you find this helpful!
+Regards
+---
+Joel Carlson
+
+	[[alternative HTML version deleted]]
+
+
+From kogalurshear at gmail.com  Sun Dec 13 17:50:45 2015
+From: kogalurshear at gmail.com (Udaya B. Kogalur)
+Date: Sun, 13 Dec 2015 11:50:45 -0500
+Subject: [R-pkgs] randomForestSRC 2.0.0
+Message-ID: <CACsjJ_dnOLdXQP-=10LRJSaDX5SU5gXcP3Ev+256hUGJYcSVMQ@mail.gmail.com>
+
+randomForestSRC 2.0.0 is now available on CRAN.   The package is able
+to handle multivariate regression (data sets in which the response is
+one or more continuous variables), multivariate classification (data
+sets in which the response is one or more factor variables),
+multivariate mixed (data sets in which the response is a combination
+of continuous and factor variables), survival, competing risk, and
+unsupervised forests (data sets in which no response is chosen).
+
+The memory and CPU profiles for the package have improved.  The
+package is OpenMP compliant on all popular platforms.  Instructions
+for enabling this functionality is available in Rd files, and
+pre-compiled OpenMP binaries are also available at:
+
+http://www.ccs.miami.edu/~hishwaran/rfsrc.html.
+
+Linear gains in computation times have been observed on multi-core
+desktops and cluster environments using OpenMP.
+
+Finally, the ability to implement user defined split rules is now
+available. Instructions and examples for all families are provided in
+the package's src directory in splitCustom.c.
+
+Udaya B. Kogalur, Ph.D.
+Contract Staff, Dept. of Quantitative Health Sciences, Cleveland
+Clinic Foundation
+
+ubkogalur at gmail.com
+
+

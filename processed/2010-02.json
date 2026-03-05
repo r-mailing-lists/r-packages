@@ -1,0 +1,281 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-02",
+  "messages": [
+    {
+      "id": "msg-08d5c0b68b15",
+      "message_id": "<4B67EE2E.4000301@imbe.med.uni-erlangen.de>",
+      "from_name": "Benjamin Hofner",
+      "from_email_hash": "86dcd29ab22383de9ce0a14b32ded8096a416c0f15e75511240e0adc8ad94fc7",
+      "date": "2010-02-02T10:19:42+01:00",
+      "subject": "[R-pkgs] Major update: mboost 2.0-0 released",
+      "subject_clean": "Major update: mboost 2.0-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nwe are happy to announce the release of mboost 2.0-0 on CRAN:\n\nhttp://cran.r-project.org/package=mboost\n\nThis version contains major updates and changes to the implementation of \nthe main algorithm. Some slight changes to the user-interface where \nnecessary. Please consult the manual and the list of CHANGES below.\n\nThe package 'mboost' (Model-based Boosting) implements boosting for \noptimizing general risk functions utilizing component-wise (penalized) \nleast squares estimates or regression trees as base-learners for fitting \ngeneralized linear, additive and interaction models to potentially \nhigh-dimensional data.\n\nA big variety of models can be investigated using 'mboost' including \nsurvival models, expectile regression models, ordinal regression models \nas well as standard models such as simple linear models. In all cases, \nthe predictor can be specified very flexible using linear, smooth, \nrandom and spatial effects as well as decision trees or an arbitrary \ncombination suiting the intention of the researcher.\n\nFor more details and a nice example showing some of the functionality of \n'mboost' see ?mboost-package.\n\nWe appreciate any feedback.\n\n    mboost development team\n\n___________\n\n\n                 CHANGES in `mboost' VERSION 2.0-0 (2010-02-01)\n\n   o  generic implementation of component-wise functional gradient\n      boosting in `mboost_fit', specialized code for linear,\n      additive and interaction models removed\n\n   o  new families available for ordinal, expectile and censored\n      regression\n\n   o  computations potentially based on package Matrix\n      (reduces memory usage)\n\n   o  various speed improvements\n\n   o  added interface to extract selected base-learners (selected())\n\n   o  added interface for parallel computations in cvrisk with\n      arbitrary packages (e.g. multicore, snow)\n\n   o  added \"which\" argument in predict and coef functions and improved\n      usability of \"which\" in plot-function. Users can specify \"which\" as\n      numeric value or as a character string\n\n   o  added function cv() to generate matrices for k-fold\n      cross-validation, subsampling and bootstrap\n\n   o  new function stabsel() for stability selection with error control\n\n   o  added function model.weights() to extract the weights\n\n   o  added interface to expand model by increasing mstop in\n      model[mstop]\n\n   o  alternative definition of degrees of freedom available\n\n   o  Interface changes:\n\n      - class definition / Family() arguments changed\n      - changed behavior of subset method (model[mstop]). Object\n        is directly altered and not duplicated\n      - argument \"center\" in bols replaced with \"intercept\"\n      - argument \"z\" in base-learners replaced with \"by\"\n      - bns and bss deprecated\n\n\n-- \n******************************************************************************\nDipl.-Stat. Benjamin Hofner\n\nInstitut f?r Medizininformatik, Biometrie und Epidemiologie\nFriedrich-Alexander-Universit?t Erlangen-N?rnberg\nWaldstr. 6 - 91054 Erlangen - Germany\n\nbenjamin.hofner at imbe.med.uni-erlangen.de\n\nhttp://www.imbe.med.uni-erlangen.de/~hofnerb/\nhttp://www.benjaminhofner.de",
+      "body_snippet": "Dear useRs,\n\nwe are happy to announce the release of mboost 2.0-0 on CRAN:\n\nhttp://cran.r-project.org/package=mboost\n\nThis version contains major updates and changes to the implementation of \nthe main",
+      "thread_id": "thread-08d5c0b68b15",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-64df85ab83ad",
+      "message_id": "<2141CA57-3FF9-474B-8FC2-6ECE4D06E6A4@mcmaster.ca>",
+      "from_name": "Jeffrey Racine",
+      "from_email_hash": "0142cbe3fe3304381d2b0a61bcba57be4c715a7c0972171715ecef6315cd0493",
+      "date": "2010-02-03T11:10:21-05:00",
+      "subject": "[R-pkgs] Package np update (0.30-6) adds nonparametric entropy test functionality...",
+      "subject_clean": "Package np update (0.30-6) adds nonparametric entropy test functionality...",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nVersion 0.30-6 of the np package has been uploaded to CRAN. See\n\nhttp://cran.r-project.org/package=np\n\nNote that the cubature package is now required in addition to the boot package. The recent updates in 0.30-4 through 0.30-6 provides additional functionality in the form of five new functions that incorporate frequently requested nonparametric entropy-based testing methods to the np package.\n\nThe new functions are:\n\n- npdeneqtest\n- npsymtest\n- npdeptest\n- npsdeptest\n- b.star\n\nA brief description of each:\n\nnpdeneqtest implements a consistent integrated squared difference test for equality of densities as described in Li, Q. and E. Maasoumi and J.S. Racine (2009), ?A Nonparametric Test for Equality of Distributions with Mixed Categorical and Continuous Data,? Journal of Econometrics, 148, pp 186-200.\n\nnpsymtest implements a consistent entropy-based test for asymmetry as described in Maasoumi, E. and J.S. Racine (2009), ?A robust entropy-based test of asymmetry for discrete and continuous processes,? Econometric Reviews, 28, 246-261.\n\nnpdeptest implements a consistent entropy-based test for pairwise independence as described in Maasoumi, E. and J.S. Racine (2002), ?Entropy and Predictability of Stock Market Returns,? Journal of Econometrics, 107, 2, pp 291-312.\n\nnpsdeptest implements a consistent entropy-based test for serial nonlinear dependence as described in Granger, C.W. and E. Maasoumi and J.S. Racine (2004), ?A dependence metric for possibly nonlinear processes?, Journal of Time Series Analysis, 25, 649-669.\n\nb.star is a function which computes the optimal block length for a continuous variable using the method described in Politis, D.N. and H. White (2004), ?Automatic block-length selection for the dependent bootstrap?, Econometric Reviews 23(1), 53-70 and Patton, A. and D.N. Politis and H. White (2009), ?CORRECTION TO \"Automatic block-length selection for the dependent bootstrap\" by D. Politis and H. White?, Econometric Reviews 28(4), 372-375.\n\nThe function b.star is now used throughout the np package for automated block length selection for the stationary bootstrap (via the `l = ' argument in tsboot from the boot package).\n\nExamples are provided for each function at the end of the respective man pages. We hope you find the functions to be easy to use. Kindly report any bugs, suggested improvements and the like to racinej at mcmaster.ca\n\n-- Jeff\n\nProfessor J. S. Racine         Phone:  (905) 525 9140 x 23825\nDepartment of Economics        FAX:    (905) 521-8232\nMcMaster University            e-mail: racinej at mcmaster.ca\n1280 Main St. W.,Hamilton,     URL: http://www.economics.mcmaster.ca/racine/\nOntario, Canada. L8S 4M4\n\n`The generation of random numbers is too important to be left to chance'",
+      "body_snippet": "Dear R users,\n\nVersion 0.30-6 of the np package has been uploaded to CRAN. See\n\nhttp://cran.r-project.org/package=np\n\nNote that the cubature package is now required in addition to the boot package. Th",
+      "thread_id": "thread-64df85ab83ad",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-db27abf0fd90",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C0239271C20@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2010-02-04T16:39:48-05:00",
+      "subject": "[R-pkgs] Update of interval package",
+      "subject_clean": "Update of interval package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl>",
+      "thread_id": "thread-db27abf0fd90",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-0fea393d888f",
+      "message_id": "<alpine.LRH.2.01.1002091334340.22535@hymn33.u.washington.edu>",
+      "from_name": "Thomas Lumley",
+      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
+      "date": "2010-02-09T13:34:34-08:00",
+      "subject": "[R-pkgs] survey 3.20",
+      "subject_clean": "survey 3.20",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.20 of the survey package is percolating through CRAN\n\nThe major additions since the last announcement on this list (3.18, in September) are\n  \n    - database-backed designs can now use replicate weights\n    - some multivariate statistics: principal components, factor analysis.\n\nThe NEWS file has a more detailed list of additions and changes.\n\n       -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
+      "body_snippet": "Version 3.20 of the survey package is percolating through CRAN\n\nThe major additions since the last announcement on this list (3.18, in September) are\n  \n    - database-backed designs can now use repli",
+      "thread_id": "thread-0fea393d888f",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-382196897a80",
+      "message_id": "<182650dc012510ce5c9ebd81a8564bb2.squirrel@webmail.ujaen.es>",
+      "from_name": "Antonio José Sáez Castillo",
+      "from_email_hash": "fd6684128225ab76475207cc8b2fa2258132b376b49976d74cd30bd6e0693c95",
+      "date": "2010-02-11T12:31:56+01:00",
+      "subject": "[R-pkgs] GWRM package",
+      "subject_clean": "GWRM package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of the \"GWRM\" package. It provides a\nset of functions for fitting Generalized Waring Regression Models. It also\nincludes the dataset and the example of Rodriguez-Avi, J; Conde-Sanchez,\nA; Saez-Castillo, A.J., Olmo-Jimenez, M. J. and Martinez Rodriguez, A.\nM.(2009). A generalized Waring regression model for count data.\nComputational Statistics and Data Analysis, 53, pp. 3717-3725. The package\nhas been uploaded to CRAN and is now available under the GPL-2 license.\n\nAntonio Jose Saez-Castillo, Ph.D.",
+      "body_snippet": "I'd like to announce the availability of the \"GWRM\" package. It provides a\nset of functions for fitting Generalized Waring Regression Models. It also\nincludes the dataset and the example of Rodriguez-",
+      "thread_id": "thread-382196897a80",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-3829c2caaaeb",
+      "message_id": "<20100212155012.6af74732@upm.es>",
+      "from_name": "Oscar Perpiñan Lamigueiro",
+      "from_email_hash": "6ff9b11f8e91958cdf2dc4d0fbd334c1e66be0db6e0afc00b477b525cdb8aa1d",
+      "date": "2010-02-12T15:50:12+01:00",
+      "subject": "[R-pkgs] New solaR package",
+      "subject_clean": "New solaR package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello.\n\nI'd like to announce the availability of version 0.14 of the \"solaR\" package. It provides a set of calculation methods of solar radiation and performance of photovoltaic systems. The package has been uploaded to CRAN and is now available under the GPL-3 license. \n\nMoreover, I have designed some GUIs with gWidgets. They are still far from elegant so I have not included them in the package. They are available at my blog: http://procomun.wordpress.com/software/solar/\n\nAn introduction to the package can be found in the vignette (in Spanish): http://cran.r-project.org/web/packages/solaR/vignettes/solaR.pdf. A handbook of photovoltaic systems (in Spanish) is available at http://procomun.wordpress.com/documentos/libroesf/.\n\nBest regards.\n\nOscar Perpi??n Lamigueiro.",
+      "body_snippet": "Hello.\n\nI'd like to announce the availability of version 0.14 of the \"solaR\" package. It provides a set of calculation methods of solar radiation and performance of photovoltaic systems. The package h",
+      "thread_id": "thread-3829c2caaaeb",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-65a8d0fe8d58",
+      "message_id": "<f8e6ff051002191144l4db7bf79s45b14e684bb3120d@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-02-19T13:44:30-06:00",
+      "subject": "[R-pkgs] ggplot2: version 0.8.6",
+      "subject_clean": "ggplot2: version 0.8.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.6 (2010-02-07) ----------------------------------------\n\nNew features\n\n* trans_log1p: new log + 1 transformer contributed by Jean-Olivier Irisson\n\nBug fixes\n\n* aesthetics: fixed bug when overriding aesthetics with NULL\n* annotate: adds layers with legend = FALSE\n* coord_equal: correctly place tick marks (Fixes #61)\n* documentation: usage statements should now be spread over multiple lines\n* fortify.SpatialPolygonsDataFrame: fixed bug when region variable had\nmissing values\n* legend: don't try and display legend when unnecessary scale added\n* legend: text labels now correctly left-aligned when non-numeric\n* order aesthetic now correctly affects position adjustments  (Fixes #70)\n* qplot loads facetting variables from global environment more correctly\n* scale_date and scale_date_time now work with infinite positions\n* scale_date and scale_date_time now take expand argument\n* scales were not getting automatically added in many situations (Fixes #69)\n* scale_manual was not returning labels in the correct format and so legends\n  were not getting merged correctly\n* stat_contour: fix error if x or y coordinates were negative\n* stat_bin: now copes with bars of zero height (Fixes #72)\n* stat_qq: always use sorted data (rather than interpolated quantiles)\non sample axis.  This makes it behave more like qqnorm\n* stat_quantile: correctly group results\n* xlim now works with datetimes\n\n* all plyr functions prefixed with their namespace to avoid clashes\nwith other packages (thanks to Steve Lianoglou)\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-65a8d0fe8d58",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-5b06083d41dc",
+      "message_id": "<eda626a31002191510p343070bbje58e5a96a53ccebc@mail.gmail.com>",
+      "from_name": "Justin Donaldson",
+      "from_email_hash": "0706b4f5bcf0eb19dcdf62b5a9634619396bec5cc6502ea1a936eed5faa1aced",
+      "date": "2010-02-19T18:10:54-05:00",
+      "subject": "[R-pkgs] \"tsne\" package for t-SNE dimensionality reduction",
+      "subject_clean": "\"tsne\" package for t-SNE dimensionality reduction",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl>",
+      "thread_id": "thread-5b06083d41dc",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-9a1f74b63223",
+      "message_id": "<4B7F9DE7.3090603@stamats.de>",
+      "from_name": "Dr. Matthias Kohl",
+      "from_email_hash": "d4f0ad548e5b2b7cf7a8ad59fdeac7b825fdec0788879a852168f8d932a1a177",
+      "date": "2010-02-20T09:31:35+01:00",
+      "subject": "[R-pkgs] new package RFLPtools",
+      "subject_clean": "new package RFLPtools",
+      "in_reply_to": "<4B7A73DC.7010006@uni-bayreuth.de>",
+      "references": [
+        "<4B7A73DC.7010006@uni-bayreuth.de>"
+      ],
+      "body_plain": "The new package RFLPtools is available on CRAN.\n\nRFLPtools provides analysis functions for DNA fragment molecular weights \n(e.g.\\ derived from RFLP-analysis) and nucleotide sequence similarities. \nIt aims mainly at the identification of similar or identical fragment \npatterns to evaluate the amount of different genotypes gained from\nenvironmental samples during diversity studies and at further analysis \nof similarities of nucleotide sequences derived from pairwise sequence \nalignments (e.g.\\ derived from standalone BLAST). Additionally, \nfunctions to check the data quality of molecular fingerprints are \navailable. To identify the organisms represented by the extracted \nfragment patterns (e.g.\\ RFLP genotypes), RFLPtools includes a function \nto compare samples with fragment patterns stored in a reference dataset, \nfrom which the taxonomic affiliations are already known. To identify \nunknown samples in scientific projects, DNA sequences are used, and the \ngained DNA sequences are compared to existing sequence data via \nalignments tools, as standalone BLAST.\nRFLPtools offers tools to generate groups based on tabular report files \nof sequence comparison of pairwise nucleotide sequence alignment.\n\nTo get a first impression try:\n\nvignette(\"RFLPtools\")\n\nas well as\n\nlibrary(RFLPtools)\nexample(\"RFLPplot\")\nexample(\"RFLPrefplot\")\n\nBest regards,\nFabienne\nAlexandra\nMatthias\n\n-- \nDr. Matthias Kohl\nwww.stamats.de",
+      "body_snippet": "The new package RFLPtools is available on CRAN.\n\nRFLPtools provides analysis functions for DNA fragment molecular weights \n(e.g.\\ derived from RFLP-analysis) and nucleotide sequence similarities. \nIt ",
+      "thread_id": "thread-9a1f74b63223",
+      "thread_depth": 0,
+      "month": "2010-02"
+    },
+    {
+      "id": "msg-f6227a72de44",
+      "message_id": "<4B85723A.1070500@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2010-02-24T12:38:50-06:00",
+      "subject": "[R-pkgs] New version of rms package now on CRAN",
+      "subject_clean": "New version of rms package now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.2-0 of the rms package is now available.  This is a somewhat \nmajor update.  One major change is not downward compatible: Instead of \nspecifying predictor=. or predictor=NA to Predict, summary, nomogram, \nsurvplot, gendata, you just specify the name of the predictor.  For \nexample, to get predictions for the default range of x1 and for just 2 \nvalues of x2 you might specify Predict(fit, x1, x2=c(1,3)).  The next \nmajor change is the use of lattice graphics in bplot, so that now you \ncan easily make multi-panel 3-D displays of effects in the fitted model.\n\nThe package's web site is http://biostat.mc.vanderbilt.edu/rms\n\nHere is what's new:\n\n    * Added levels.only option to survplot.* to remove variablename= \nfrom curve labels\n    * Added digits argument to calibrate.default\n    * Added new ref in val.prob help page\n    * Corrected location of dataset in residuals.lrm help page (thanks \nfrederic.holzwarth at bgc-jena.mpg.de)\n    * Fixed latex.rms to latex-escape percent signs inside value labels\n    * Added scat1d.opts to plot.Predict\n    * Changed method of specifying variables to vary by not requiring an \nequals sign and a dot after the variable name, for Predict, summary, \nnomogram, gendata, survplot.rms\n    * Added factors argument to Predict to handle the above for survplot\n    * Made gendata a non-generic function, changed the order of its \narguments, removed editor options, relying on R de function always\n    * Thanks to Kevin Thorpe <kevin.thorpe at utoronto.ca> to make \nlatex.summary.rms and latex.anova.rms respect the table.env argument\n    * Fixed bug in calibrate.default related to digits argument\n    * Re-wrote bplot to use lattice graphics (e.g., levelplot \ncontourplot wireframe), allowing for multiple panels for 3-d plots\n    * Changed all Rd files to use {arg1,arg2,...} instead of having empty {}\n\n-- \nFrank E Harrell Jr   Professor and Chairman        School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "Version 2.2-0 of the rms package is now available.  This is a somewhat \nmajor update.  One major change is not downward compatible: Instead of \nspecifying predictor=. or predictor=NA to Predict, summa",
+      "thread_id": "thread-f6227a72de44",
+      "thread_depth": 0,
+      "month": "2010-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-08d5c0b68b15",
+      "subject": "Major update: mboost 2.0-0 released",
+      "message_count": 1,
+      "participants": [
+        "Benjamin Hofner"
+      ],
+      "started": "2010-02-02T10:19:42+01:00",
+      "last_reply": "2010-02-02T10:19:42+01:00",
+      "root_message_id": "msg-08d5c0b68b15"
+    },
+    {
+      "id": "thread-64df85ab83ad",
+      "subject": "Package np update (0.30-6) adds nonparametric entropy test functionality...",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Racine"
+      ],
+      "started": "2010-02-03T11:10:21-05:00",
+      "last_reply": "2010-02-03T11:10:21-05:00",
+      "root_message_id": "msg-64df85ab83ad"
+    },
+    {
+      "id": "thread-db27abf0fd90",
+      "subject": "Update of interval package",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2010-02-04T16:39:48-05:00",
+      "last_reply": "2010-02-04T16:39:48-05:00",
+      "root_message_id": "msg-db27abf0fd90"
+    },
+    {
+      "id": "thread-0fea393d888f",
+      "subject": "survey 3.20",
+      "message_count": 1,
+      "participants": [
+        "Thomas Lumley"
+      ],
+      "started": "2010-02-09T13:34:34-08:00",
+      "last_reply": "2010-02-09T13:34:34-08:00",
+      "root_message_id": "msg-0fea393d888f"
+    },
+    {
+      "id": "thread-382196897a80",
+      "subject": "GWRM package",
+      "message_count": 1,
+      "participants": [
+        "Antonio José Sáez Castillo"
+      ],
+      "started": "2010-02-11T12:31:56+01:00",
+      "last_reply": "2010-02-11T12:31:56+01:00",
+      "root_message_id": "msg-382196897a80"
+    },
+    {
+      "id": "thread-3829c2caaaeb",
+      "subject": "New solaR package",
+      "message_count": 1,
+      "participants": [
+        "Oscar Perpiñan Lamigueiro"
+      ],
+      "started": "2010-02-12T15:50:12+01:00",
+      "last_reply": "2010-02-12T15:50:12+01:00",
+      "root_message_id": "msg-3829c2caaaeb"
+    },
+    {
+      "id": "thread-65a8d0fe8d58",
+      "subject": "ggplot2: version 0.8.6",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-02-19T13:44:30-06:00",
+      "last_reply": "2010-02-19T13:44:30-06:00",
+      "root_message_id": "msg-65a8d0fe8d58"
+    },
+    {
+      "id": "thread-5b06083d41dc",
+      "subject": "\"tsne\" package for t-SNE dimensionality reduction",
+      "message_count": 1,
+      "participants": [
+        "Justin Donaldson"
+      ],
+      "started": "2010-02-19T18:10:54-05:00",
+      "last_reply": "2010-02-19T18:10:54-05:00",
+      "root_message_id": "msg-5b06083d41dc"
+    },
+    {
+      "id": "thread-9a1f74b63223",
+      "subject": "new package RFLPtools",
+      "message_count": 1,
+      "participants": [
+        "Dr. Matthias Kohl"
+      ],
+      "started": "2010-02-20T09:31:35+01:00",
+      "last_reply": "2010-02-20T09:31:35+01:00",
+      "root_message_id": "msg-9a1f74b63223"
+    },
+    {
+      "id": "thread-f6227a72de44",
+      "subject": "New version of rms package now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2010-02-24T12:38:50-06:00",
+      "last_reply": "2010-02-24T12:38:50-06:00",
+      "root_message_id": "msg-f6227a72de44"
+    }
+  ]
+}

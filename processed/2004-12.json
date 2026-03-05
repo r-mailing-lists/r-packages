@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-12",
+  "messages": [
+    {
+      "id": "msg-ad7a950426e7",
+      "message_id": "<20041202044055.GA13834@sonny.eddelbuettel.com>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2004-12-01T22:40:56-06:00",
+      "subject": "[R-pkgs] Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "subject_clean": "Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I posted the following a little earlier on the quantian-announce list -- but\nit may be of interest here as well as this version contains all (but three,\nsee below) packages from CRAN, and all of BioConductor.\n\nQuantian strives to provide the easiest way to set up a very complete\nscientific computing environment with a wide variety of tools -- including\nR, ESS, Ggobi, almost all of CRAN, all of BioConductor, as well as openMosix\nsupport, and many more applications -- in minutes from a bootable dvd.\n\nFeedback is always welcome, in particular on how to communicate more\ndirectly with specific communities which may benefit from Quantian.  \n\nDirk\n\n\n\n(Please see note [1] below regarding recipients for this posting. Thanks!)\n\n\nExecutive Summary: \n\n    Quantian 0.6.9.2 extends the Quantian series based on Knoppix 3.6 and the\n    corresponding clusterKnoppix release. Over 475 new packages from CRAN and\n    BioConductor provide unparalleled support for statistical computing, data\n    analysis and graphical methods via the R environment and language.\n    Several new packages have been added, and numerous other packages have\n    been updated as well.\n\n\nAnnouncing Quantian release 0.6.9.2\n===================================\n\n\nI   What is it?\n\n    Quantian is a remastering of Knoppix, the self-configuring and directly\n    bootable cdrom/dvd that turns any pc or laptop into a full-featured Linux\n    workstation, and clusterKnoppix, which adds support for openMosix-based \n    cluster computing. However, Quantian differs from (cluster)Knoppix by\n    adding a very large set of programs of interest to applied or theoretical\n    workers in quantitative or data-driven fields. \n\n    See http://dirk.eddelbuettel.com/quantian.html for more details.\n\n    \nII  What is new?\n\n    o Second release based on Knoppix 3.6 adding \n        - over 500 R packages from CRAN and BioConductor (see next point)\n        - several new packages such as labplot, python-matplotlib,\n          python-gdal, subversion, tla, dia, ...\n        - several packages with newer upstream versions such as R 2.0.1, gretl 1.3.0,\n        - added most Recommended: packages for already installed packages\n \n    o The main new feature is the unique support for almost all packages from\n        - CRAN (http://cran.r-project.org), and \n        - BioConductor (http://www.bioconductor.org)\n      About 60 packages are installed directly as Debian packages, and 478\n      more are installed directly into /usr/local/lib/R/site-packages using\n      the mechanisms provided by R, CRAN and BioConductor (and as such, these\n      packages will not appear in the Debian package list).  \n      The only missing CRAN packages are mimR (windows-only), ROracle\n      (requires Oracle) and seao.gui which didn't build in batch mode.\n      \n    o Adding the Recommended: packages provides additional documentation, \n      as well as header files, which complements the installed packages.\n     \n    o Total size is 2.0 gb for the compressed iso image corresponding to\n      almost 6 gb of uncompressed software. \n\n    o See http://dirk.eddelbuettel.com/quantian/changelog.html for details.\n\n    o See http://dirk.eddelbuettel.com/quantian/howto.html for several\n      short HOWTOs on booting Quantian from hd on either Windows or Linux,\n      booting via a bootcd (such as clusterKnoppix), or botting from a \n      USB memory device.  Contributions, corrections, and feedback on these\n      HOWTOs is always appreciated.\n\n\nIII Where do I get it?\n\n    o Downloads are available from the main hosts already listed above, i.e.\n      on the West Coast at\n\n            http://www.analytics.washington.edu/downloads/quantian/\n\n      and at the East Coast at\n\n            http://research.warnes.net/downloads/quantian/CURRENT/\n\t    ftp://research.warnes.net/users/edd/quantian/CURRENT/\n\n      The most recent release is also available at\n\n            http://quantian.alioth.debian.org/\n\n    o Bittorrents are available via\n\n            http://www.analytics.washington.edu:6969/\n\n    o The main European mirror has already caught up:\n\n            http://sunsite.rediris.es/mirror/quantian\n\n      and the second Sunsite mirror should hopefully catch up soon:\n\n            http://sunsite.informatik.rwth-aachen.de/ftp/pub/Linux/quantian\n\n    o CD/DVD vendors will probably update their offerings soon as well. \n      BudgetLinuxCDs.com is typically the fastest:\n\n            http://www.budgetlinuxcds.com/index.php?page=Choose&letter=Q&sort=upd\n\n      and CheapBytes should follow shortly:\n\n            http://www.cheapbytes.com\n\n      Pointers to other vendors are always appreciated.\n\n\nIV  Mailing lists\n\n    o Two mailing lists exist for Quantian\n\n        quantian-announce\t  for announcements, intended to be low volume\n        quantian-general\t  for general discussions about Quantian\n\n      available via\n\n        http://alioth.debian.org/mail/?group_id=1425\n\n      for subscription info etc., and start using the quantian-general lists\n      for general questions, comments, suggestions or discussions about \n      Quantian.\n\n      Quantian-general is subscribed to quantian-announce, so you only need\n      to subscribe to one (but can of course subscribe to both).\n\n      Reply-To: for this message is quantian-general at lists.alioth.debian.org\n      so that discussions can be continued on the list.\n\n\nV  Known Bugs\n\n    o Sound does not appear to get configured on my laptops.\n\n\nVI   Other items\n\n    o Feedback / poll on package additions or removal\n\n      As always, I welcome comments and suggestions about programs to be\n      added or removed. Existing Debian packages get pushed to the front of\n      the line.\n\n      Please send feedback, questions, comments, ... to the \n      \n\tquantian-general at lists.alioth.debian.org\n\n      list to maximise the number of eyes glancing at any one question.\n\n    o Feedback would also be appreciated on ways to better communicate with\n      difference scientific communities that could be interested in Quantian.\n\n\nVII Notes\n\n    [1] This email is sent via the quantian-announce mailing list. I have\n        subscribed those whose email addresses are in my quantian mail folder \n        due to prior emails. The quantian-announce mailing list only sends\n        moderator-approved posts -- so there should be no spam whatsoever. I \n        also added LWN and DWN who had run previous announcements, and as \n        suggested, the openmosix-general, clusterknoppix and debian-knoppix \n        lists. Anybody who considers this unwanted is kindly asked to send me\n        a private mail to get unsubscribed immediately.\n\n\n\nBest regards,  Dirk\n\n\n\n-- \nIf your hair is standing up, then you are in extreme danger.\n      -- http://www.usafa.af.mil/dfp/cockpit-phys/fp1ex3.htm",
+      "body_snippet": "I posted the following a little earlier on the quantian-announce list -- but\nit may be of interest here as well as this version contains all (but three,\nsee below) packages from CRAN, and all of BioCo",
+      "thread_id": "thread-ad7a950426e7",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-ad7a950426e7",
+      "message_id": "<20041202044055.GA13834@sonny.eddelbuettel.com>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2004-12-01T22:40:56-06:00",
+      "subject": "[R-pkgs] Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "subject_clean": "Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I posted the following a little earlier on the quantian-announce list -- but\nit may be of interest here as well as this version contains all (but three,\nsee below) packages from CRAN, and all of BioConductor.\n\nQuantian strives to provide the easiest way to set up a very complete\nscientific computing environment with a wide variety of tools -- including\nR, ESS, Ggobi, almost all of CRAN, all of BioConductor, as well as openMosix\nsupport, and many more applications -- in minutes from a bootable dvd.\n\nFeedback is always welcome, in particular on how to communicate more\ndirectly with specific communities which may benefit from Quantian.  \n\nDirk\n\n\n\n(Please see note [1] below regarding recipients for this posting. Thanks!)\n\n\nExecutive Summary: \n\n    Quantian 0.6.9.2 extends the Quantian series based on Knoppix 3.6 and the\n    corresponding clusterKnoppix release. Over 475 new packages from CRAN and\n    BioConductor provide unparalleled support for statistical computing, data\n    analysis and graphical methods via the R environment and language.\n    Several new packages have been added, and numerous other packages have\n    been updated as well.\n\n\nAnnouncing Quantian release 0.6.9.2\n===================================\n\n\nI   What is it?\n\n    Quantian is a remastering of Knoppix, the self-configuring and directly\n    bootable cdrom/dvd that turns any pc or laptop into a full-featured Linux\n    workstation, and clusterKnoppix, which adds support for openMosix-based \n    cluster computing. However, Quantian differs from (cluster)Knoppix by\n    adding a very large set of programs of interest to applied or theoretical\n    workers in quantitative or data-driven fields. \n\n    See http://dirk.eddelbuettel.com/quantian.html for more details.\n\n    \nII  What is new?\n\n    o Second release based on Knoppix 3.6 adding \n        - over 500 R packages from CRAN and BioConductor (see next point)\n        - several new packages such as labplot, python-matplotlib,\n          python-gdal, subversion, tla, dia, ...\n        - several packages with newer upstream versions such as R 2.0.1, gretl 1.3.0,\n        - added most Recommended: packages for already installed packages\n \n    o The main new feature is the unique support for almost all packages from\n        - CRAN (http://cran.r-project.org), and \n        - BioConductor (http://www.bioconductor.org)\n      About 60 packages are installed directly as Debian packages, and 478\n      more are installed directly into /usr/local/lib/R/site-packages using\n      the mechanisms provided by R, CRAN and BioConductor (and as such, these\n      packages will not appear in the Debian package list).  \n      The only missing CRAN packages are mimR (windows-only), ROracle\n      (requires Oracle) and seao.gui which didn't build in batch mode.\n      \n    o Adding the Recommended: packages provides additional documentation, \n      as well as header files, which complements the installed packages.\n     \n    o Total size is 2.0 gb for the compressed iso image corresponding to\n      almost 6 gb of uncompressed software. \n\n    o See http://dirk.eddelbuettel.com/quantian/changelog.html for details.\n\n    o See http://dirk.eddelbuettel.com/quantian/howto.html for several\n      short HOWTOs on booting Quantian from hd on either Windows or Linux,\n      booting via a bootcd (such as clusterKnoppix), or botting from a \n      USB memory device.  Contributions, corrections, and feedback on these\n      HOWTOs is always appreciated.\n\n\nIII Where do I get it?\n\n    o Downloads are available from the main hosts already listed above, i.e.\n      on the West Coast at\n\n            http://www.analytics.washington.edu/downloads/quantian/\n\n      and at the East Coast at\n\n            http://research.warnes.net/downloads/quantian/CURRENT/\n\t    ftp://research.warnes.net/users/edd/quantian/CURRENT/\n\n      The most recent release is also available at\n\n            http://quantian.alioth.debian.org/\n\n    o Bittorrents are available via\n\n            http://www.analytics.washington.edu:6969/\n\n    o The main European mirror has already caught up:\n\n            http://sunsite.rediris.es/mirror/quantian\n\n      and the second Sunsite mirror should hopefully catch up soon:\n\n            http://sunsite.informatik.rwth-aachen.de/ftp/pub/Linux/quantian\n\n    o CD/DVD vendors will probably update their offerings soon as well. \n      BudgetLinuxCDs.com is typically the fastest:\n\n            http://www.budgetlinuxcds.com/index.php?page=Choose&letter=Q&sort=upd\n\n      and CheapBytes should follow shortly:\n\n            http://www.cheapbytes.com\n\n      Pointers to other vendors are always appreciated.\n\n\nIV  Mailing lists\n\n    o Two mailing lists exist for Quantian\n\n        quantian-announce\t  for announcements, intended to be low volume\n        quantian-general\t  for general discussions about Quantian\n\n      available via\n\n        http://alioth.debian.org/mail/?group_id=1425\n\n      for subscription info etc., and start using the quantian-general lists\n      for general questions, comments, suggestions or discussions about \n      Quantian.\n\n      Quantian-general is subscribed to quantian-announce, so you only need\n      to subscribe to one (but can of course subscribe to both).\n\n      Reply-To: for this message is quantian-general at lists.alioth.debian.org\n      so that discussions can be continued on the list.\n\n\nV  Known Bugs\n\n    o Sound does not appear to get configured on my laptops.\n\n\nVI   Other items\n\n    o Feedback / poll on package additions or removal\n\n      As always, I welcome comments and suggestions about programs to be\n      added or removed. Existing Debian packages get pushed to the front of\n      the line.\n\n      Please send feedback, questions, comments, ... to the \n      \n\tquantian-general at lists.alioth.debian.org\n\n      list to maximise the number of eyes glancing at any one question.\n\n    o Feedback would also be appreciated on ways to better communicate with\n      difference scientific communities that could be interested in Quantian.\n\n\nVII Notes\n\n    [1] This email is sent via the quantian-announce mailing list. I have\n        subscribed those whose email addresses are in my quantian mail folder \n        due to prior emails. The quantian-announce mailing list only sends\n        moderator-approved posts -- so there should be no spam whatsoever. I \n        also added LWN and DWN who had run previous announcements, and as \n        suggested, the openmosix-general, clusterknoppix and debian-knoppix \n        lists. Anybody who considers this unwanted is kindly asked to send me\n        a private mail to get unsubscribed immediately.\n\n\n\nBest regards,  Dirk\n\n\n\n-- \nIf your hair is standing up, then you are in extreme danger.\n      -- http://www.usafa.af.mil/dfp/cockpit-phys/fp1ex3.htm",
+      "body_snippet": "I posted the following a little earlier on the quantian-announce list -- but\nit may be of interest here as well as this version contains all (but three,\nsee below) packages from CRAN, and all of BioCo",
+      "thread_id": "thread-ad7a950426e7",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-046628e8b218",
+      "message_id": "<20041203192039.ZCJ2034.tomts20-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2004-12-03T14:20:40-05:00",
+      "subject": "[R-pkgs] New package: polycor",
+      "subject_clean": "New package: polycor",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI've uploaded a new package, called polycor (version 0.5-0), to CRAN. The\npackage has functions for computing polychoric and polyserial correlations,\neither by maximum-likelihood (in which case, standard errors are available)\nor by faster approximations. There's also a function to compute\n\"heterogeneous\" correlation matrices composed of product-moment, polychoric,\nand polyserial correlations, as appropriate to each pair of variables.\n\nComments and suggestions would be appreciated.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear list members,\n\nI've uploaded a new package, called polycor (version 0.5-0), to CRAN. The\npackage has functions for computing polychoric and polyserial correlations,\neither by maximum-likelihood (",
+      "thread_id": "thread-046628e8b218",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-046628e8b218",
+      "message_id": "<20041203192039.ZCJ2034.tomts20-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2004-12-03T14:20:40-05:00",
+      "subject": "[R-pkgs] New package: polycor",
+      "subject_clean": "New package: polycor",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI've uploaded a new package, called polycor (version 0.5-0), to CRAN. The\npackage has functions for computing polychoric and polyserial correlations,\neither by maximum-likelihood (in which case, standard errors are available)\nor by faster approximations. There's also a function to compute\n\"heterogeneous\" correlation matrices composed of product-moment, polychoric,\nand polyserial correlations, as appropriate to each pair of variables.\n\nComments and suggestions would be appreciated.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear list members,\n\nI've uploaded a new package, called polycor (version 0.5-0), to CRAN. The\npackage has functions for computing polychoric and polyserial correlations,\neither by maximum-likelihood (",
+      "thread_id": "thread-046628e8b218",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-79e6aa00fd37",
+      "message_id": "<41C13C25.9000009@R-project.org>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "45a350d378cada8a3e57089106f6764e20345c5c1895ff406d935d8da081657d",
+      "date": "2004-12-16T08:41:25+01:00",
+      "subject": "[R-pkgs] Building of Windows binary packages for R-1.9.x has been stopped",
+      "subject_clean": "Building of Windows binary packages for R-1.9.x has been stopped",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nautomatical building of contributed Windows binary packages for R-1.9.x\nhas been stopped.\nThe last known good versions of contributed packages are available in\nthe repository: These may be outdated versions, because new versions of\nmany packages already require R>=2.0.0.\n\nUpgrading to R-2.0.1 is recommended.\n\nUwe Ligges",
+      "body_snippet": "Dear useRs,\n\nautomatical building of contributed Windows binary packages for R-1.9.x\nhas been stopped.\nThe last known good versions of contributed packages are available in\nthe repository: These may b",
+      "thread_id": "thread-79e6aa00fd37",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-79e6aa00fd37",
+      "message_id": "<41C13C25.9000009@R-project.org>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "45a350d378cada8a3e57089106f6764e20345c5c1895ff406d935d8da081657d",
+      "date": "2004-12-16T08:41:25+01:00",
+      "subject": "[R-pkgs] Building of Windows binary packages for R-1.9.x has been stopped",
+      "subject_clean": "Building of Windows binary packages for R-1.9.x has been stopped",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nautomatical building of contributed Windows binary packages for R-1.9.x\nhas been stopped.\nThe last known good versions of contributed packages are available in\nthe repository: These may be outdated versions, because new versions of\nmany packages already require R>=2.0.0.\n\nUpgrading to R-2.0.1 is recommended.\n\nUwe Ligges",
+      "body_snippet": "Dear useRs,\n\nautomatical building of contributed Windows binary packages for R-1.9.x\nhas been stopped.\nThe last known good versions of contributed packages are available in\nthe repository: These may b",
+      "thread_id": "thread-79e6aa00fd37",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-df20dba63cc2",
+      "message_id": "<200412221941.iBMJfJGo012380@smtpserver2.Princeton.EDU>",
+      "from_name": "Ying Lu",
+      "from_email_hash": "4f200ab0bfef39058cf525afe84c303004eb00544f0a31dd112e57ea00581c2f",
+      "date": "2004-12-22T14:41:19-05:00",
+      "subject": "[R-pkgs] eco 1.0-1 released",
+      "subject_clean": "eco 1.0-1 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041222/1ee380dd/attachment.asc>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041222/1ee380dd/attachment.asc>",
+      "thread_id": "thread-df20dba63cc2",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-df20dba63cc2",
+      "message_id": "<200412221941.iBMJfJGo012380@smtpserver2.Princeton.EDU>",
+      "from_name": "Ying Lu",
+      "from_email_hash": "4f200ab0bfef39058cf525afe84c303004eb00544f0a31dd112e57ea00581c2f",
+      "date": "2004-12-22T14:41:19-05:00",
+      "subject": "[R-pkgs] eco 1.0-1 released",
+      "subject_clean": "eco 1.0-1 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041222/1ee380dd/attachment-0001.asc>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041222/1ee380dd/attachment-0001.asc>",
+      "thread_id": "thread-df20dba63cc2",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-69420e1d8c42",
+      "message_id": "<Pine.LNX.4.58.0412231329140.23821@thorin.ci.tuwien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
+      "date": "2004-12-23T13:37:25+01:00",
+      "subject": "[R-pkgs] zoo 0.9-1",
+      "subject_clean": "zoo 0.9-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new and much improved version of the zoo package for indexed totally\nordered observations (such as irregular time series) is available from\nCRAN. It allows indexing observations with time/index vectors of arbitrary\nclass and extends many of the standard generic functions also available\nfor \"ts\" objects. Additionally, it allows conversion from/to other\n(irregular) time series classes such as \"its\" and \"irts\". A vignette that\nexplains the features of zoo is also available in the package. For further\ndetails see also the list of changes below.\n\nSeasonal greetings,\nZ\n\n\nChanges in Version 0.9-1\n\n  o new generic functions ORDER() and MATCH() (with\n    order() and match() as the default) so that zoo()\n    can handle  arbitrary index/time classes when\n    suitable methods for the generic function c(),\n    length(), order(), match() and subsetting [, are\n    supplied.\n\n  o improved printing of \"zoo\" objects and added\n    a summary() method.\n\n  o extended coercion functionality to and from\n    \"zoo\" objects. \"its\" objects can be coerced to\n    \"zoo\" and vice versa. \"zoo\" objects can be\n    coerced to vector, matrix, data.frame or list.\n\n  o added functionality to extract/assign to\n    the coredata() of a \"zoo\" object.\n\n  o added/improved functionality to extract/assign\n    to the window() of a \"zoo\" object.\n\n  o added/improved functionality to extract/assign\n    to the index() or time() of a \"zoo\" object.\n\n  o added lag(), diff(), start(), end(), head(),\n    tail() methods.\n\n  o improved plot.zoo() by more flexible expansion\n    of plotting parameters such as col, lty and pch.\n\n  o added a cbind() method for \"zoo\" objects (almost\n    synonymous with merge())\n\n  o NA handling for \"zoo\" objects via na.omit(),\n    na.contiguous(), na.approx() and na.locf().\n\n  o na.locf() generic function with default method (suitable\n    for \"zoo\" objects) which implements Last Observation\n    Carried Forward.\n\n  o na.approx() generic function with default method (suitable\n    for \"zoo\" objects) which implements elimination of NAs\n    by interpolation.\n\n  o added mathematical methods: group generic functions\n    for \"zoo\" objects, t(), cumsum(), cumprod(), cummin(),\n    and cummax().\n\n  o added model.frame.AsIs and model.frame.zoo to support\n    regression based on zoo objects, in particular with lm()\n    (but also many other regression functions).\n\n  o Zero length vector zoo objects may have non-zero index vectors\n    intended to be used in merge to extend zoo objects. zoo\n    changed to enable the creation of such objects by omitting\n    first argument.\n\n  o added a vignette explaining the new features",
+      "body_snippet": "Dear useRs,\n\na new and much improved version of the zoo package for indexed totally\nordered observations (such as irregular time series) is available from\nCRAN. It allows indexing observations with ti",
+      "thread_id": "thread-69420e1d8c42",
+      "thread_depth": 0,
+      "month": "2004-12"
+    },
+    {
+      "id": "msg-69420e1d8c42",
+      "message_id": "<Pine.LNX.4.58.0412231329140.23821@thorin.ci.tuwien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
+      "date": "2004-12-23T13:37:25+01:00",
+      "subject": "[R-pkgs] zoo 0.9-1",
+      "subject_clean": "zoo 0.9-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new and much improved version of the zoo package for indexed totally\nordered observations (such as irregular time series) is available from\nCRAN. It allows indexing observations with time/index vectors of arbitrary\nclass and extends many of the standard generic functions also available\nfor \"ts\" objects. Additionally, it allows conversion from/to other\n(irregular) time series classes such as \"its\" and \"irts\". A vignette that\nexplains the features of zoo is also available in the package. For further\ndetails see also the list of changes below.\n\nSeasonal greetings,\nZ\n\n\nChanges in Version 0.9-1\n\n  o new generic functions ORDER() and MATCH() (with\n    order() and match() as the default) so that zoo()\n    can handle  arbitrary index/time classes when\n    suitable methods for the generic function c(),\n    length(), order(), match() and subsetting [, are\n    supplied.\n\n  o improved printing of \"zoo\" objects and added\n    a summary() method.\n\n  o extended coercion functionality to and from\n    \"zoo\" objects. \"its\" objects can be coerced to\n    \"zoo\" and vice versa. \"zoo\" objects can be\n    coerced to vector, matrix, data.frame or list.\n\n  o added functionality to extract/assign to\n    the coredata() of a \"zoo\" object.\n\n  o added/improved functionality to extract/assign\n    to the window() of a \"zoo\" object.\n\n  o added/improved functionality to extract/assign\n    to the index() or time() of a \"zoo\" object.\n\n  o added lag(), diff(), start(), end(), head(),\n    tail() methods.\n\n  o improved plot.zoo() by more flexible expansion\n    of plotting parameters such as col, lty and pch.\n\n  o added a cbind() method for \"zoo\" objects (almost\n    synonymous with merge())\n\n  o NA handling for \"zoo\" objects via na.omit(),\n    na.contiguous(), na.approx() and na.locf().\n\n  o na.locf() generic function with default method (suitable\n    for \"zoo\" objects) which implements Last Observation\n    Carried Forward.\n\n  o na.approx() generic function with default method (suitable\n    for \"zoo\" objects) which implements elimination of NAs\n    by interpolation.\n\n  o added mathematical methods: group generic functions\n    for \"zoo\" objects, t(), cumsum(), cumprod(), cummin(),\n    and cummax().\n\n  o added model.frame.AsIs and model.frame.zoo to support\n    regression based on zoo objects, in particular with lm()\n    (but also many other regression functions).\n\n  o Zero length vector zoo objects may have non-zero index vectors\n    intended to be used in merge to extend zoo objects. zoo\n    changed to enable the creation of such objects by omitting\n    first argument.\n\n  o added a vignette explaining the new features",
+      "body_snippet": "Dear useRs,\n\na new and much improved version of the zoo package for indexed totally\nordered observations (such as irregular time series) is available from\nCRAN. It allows indexing observations with ti",
+      "thread_id": "thread-69420e1d8c42",
+      "thread_depth": 0,
+      "month": "2004-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ad7a950426e7",
+      "subject": "Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2004-12-01T22:40:56-06:00",
+      "last_reply": "2004-12-01T22:40:56-06:00",
+      "root_message_id": "msg-ad7a950426e7"
+    },
+    {
+      "id": "thread-ad7a950426e7",
+      "subject": "Quantian 0.6.9.2 with over 500 CRAN / BioC packages",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2004-12-01T22:40:56-06:00",
+      "last_reply": "2004-12-01T22:40:56-06:00",
+      "root_message_id": "msg-ad7a950426e7"
+    },
+    {
+      "id": "thread-046628e8b218",
+      "subject": "New package: polycor",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2004-12-03T14:20:40-05:00",
+      "last_reply": "2004-12-03T14:20:40-05:00",
+      "root_message_id": "msg-046628e8b218"
+    },
+    {
+      "id": "thread-046628e8b218",
+      "subject": "New package: polycor",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2004-12-03T14:20:40-05:00",
+      "last_reply": "2004-12-03T14:20:40-05:00",
+      "root_message_id": "msg-046628e8b218"
+    },
+    {
+      "id": "thread-79e6aa00fd37",
+      "subject": "Building of Windows binary packages for R-1.9.x has been stopped",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2004-12-16T08:41:25+01:00",
+      "last_reply": "2004-12-16T08:41:25+01:00",
+      "root_message_id": "msg-79e6aa00fd37"
+    },
+    {
+      "id": "thread-79e6aa00fd37",
+      "subject": "Building of Windows binary packages for R-1.9.x has been stopped",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2004-12-16T08:41:25+01:00",
+      "last_reply": "2004-12-16T08:41:25+01:00",
+      "root_message_id": "msg-79e6aa00fd37"
+    },
+    {
+      "id": "thread-df20dba63cc2",
+      "subject": "eco 1.0-1 released",
+      "message_count": 1,
+      "participants": [
+        "Ying Lu"
+      ],
+      "started": "2004-12-22T14:41:19-05:00",
+      "last_reply": "2004-12-22T14:41:19-05:00",
+      "root_message_id": "msg-df20dba63cc2"
+    },
+    {
+      "id": "thread-df20dba63cc2",
+      "subject": "eco 1.0-1 released",
+      "message_count": 1,
+      "participants": [
+        "Ying Lu"
+      ],
+      "started": "2004-12-22T14:41:19-05:00",
+      "last_reply": "2004-12-22T14:41:19-05:00",
+      "root_message_id": "msg-df20dba63cc2"
+    },
+    {
+      "id": "thread-69420e1d8c42",
+      "subject": "zoo 0.9-1",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2004-12-23T13:37:25+01:00",
+      "last_reply": "2004-12-23T13:37:25+01:00",
+      "root_message_id": "msg-69420e1d8c42"
+    },
+    {
+      "id": "thread-69420e1d8c42",
+      "subject": "zoo 0.9-1",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2004-12-23T13:37:25+01:00",
+      "last_reply": "2004-12-23T13:37:25+01:00",
+      "root_message_id": "msg-69420e1d8c42"
+    }
+  ]
+}

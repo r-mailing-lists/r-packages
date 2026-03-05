@@ -1,0 +1,517 @@
+From m@pjg @end|ng |rom br|@to|@@c@uk  Sun Jan  8 15:13:52 2023
+From: m@pjg @end|ng |rom br|@to|@@c@uk (Peter Green)
+Date: Sun, 8 Jan 2023 14:13:52 +0000
+Subject: [R-pkgs] gRaven package - Bayes Nets: 'RHugin' Emulation with
+ 'gRain'
+Message-ID: <3877ec85-3309-fec1-5cd5-579f291d401f@bristol.ac.uk>
+
+Dear all,
+
+I am pleased to announce that CRAN now hosts my package gRaven.
+
+This provides wrappers for functions in the 'gRain' package to emulate 
+some 'RHugin' functionality, allowing the building of Bayesian networks 
+consisting of discrete chance nodes incrementally - through adding 
+nodes, edges and conditional probability tables, the setting of 
+evidence, whether 'hard' (boolean) or 'soft' (likelihoods), and querying 
+marginal joint probabilities and normalizing constants.
+
+Computations will typically not be so fast as they are with 'RHugin', 
+but this package should assist users without access to the commercial 
+package 'Hugin' to use existing code written to use 'RHugin'.
+
+I am open to extending the functionality of the package in future, in 
+response to user demand.
+
+regards,
+
+Peter Green
+
+-- 
+Peter Green, p.j.green at bristol.ac.uk
+-- 
+Emeritus Professor of Statistics & Professorial Research Fellow
+University of Bristol, Bristol BS8 1UG, UK
+T: +44 117 455 2611; W: https://petergreenweb.wordpress.com/
+
+
+From @t@|v|vek @end|ng |rom y@hoo@co@|n  Wed Jan 11 19:41:56 2023
+From: @t@|v|vek @end|ng |rom y@hoo@co@|n (Vivek Atal)
+Date: Wed, 11 Jan 2023 18:41:56 +0000 (UTC)
+Subject: [R-pkgs] New CRAN package announcement: azlogr
+References: <1506840172.8984.1673462516211.ref@mail.yahoo.com>
+Message-ID: <1506840172.8984.1673462516211@mail.yahoo.com>
+
+I am excited to announce that `azlogr` is published on CRAN!
+This package?enables logging in 'R' by extending the functionality of 'logger' package. There is an option to add additional custom meta-data while logging, which can sometimes be helpful.?Logging messages are displayed on console and optionally they are sent to 'Azure Log Analytics' workspace in real-time.
+The package comes with a vignette, How to use azlogr, that (hopefully) provides a good introduction to using the functions for easy logging. Example usage below:
+# Azure Log Analytics workspace id and shared key are fetched
+# from environment variables.
+Sys.setenv(AZ_LOG_ID = "<enter-your-Azure-Log-Analytics-workspace-id>")
+Sys.setenv(AZ_LOG_KEY = "<enter-your-Azure-Log-Analytics-shared-key>")
+
+library(azlogr)
+
+# Optionally, add additional meta-data, `country` and `id`, to be collected
+# while logging, on top of the default fields - 'level', 'time', 'msg'.
+set_log_config(
+  log_fields = c("level", "time", "msg"),
+  additional_fields = list(country = "in", id = 123)
+)
+
+# Use logger_* functions with appropriate logging level to log.
+# If POST is successful, then it will be available in custom log table on
+# Azure Log Analytics, by default table name will be `log_from_r`_CL (_CL is
+# added by Azure for any custom log table)
+logger_info("log info sent to Azure")
+#> {"level":"INFO","time":"2023-01-11 13:15:04","msg":"log info sent to Azure","country":"in","id":123}
+
+# If the POST request is unsuccessful due to Azure credential issue, then log
+# message is displayed on console and a warning is generated with error details.
+logger_info("log info sent to Azure")
+#> {"level":"INFO","time":"2023-01-11 13:15:04","msg":"log info sent to Azure","country":"in","id":123}
+#> Warning message:
+#> In logger_level(logger::INFO, ...) :
+#>   Some error happened while sending POST request to 'Azure Log Analytics' workspace.
+#> Error message: Error in curl::curl_fetch_memory(url, handle = handle) :
+#>   Could not resolve host: abcd.ods.opinsights.azure.com
+Many thanks to the author of?'logger' package,?and to the CRAN team for a speedy onboarding!
+
+RegardsVivek Atal
+	[[alternative HTML version deleted]]
+
+
+From dj@ndr|j@ @end|ng |rom gm@||@com  Tue Jan 31 08:05:58 2023
+From: dj@ndr|j@ @end|ng |rom gm@||@com (Andrija Djurovic)
+Date: Tue, 31 Jan 2023 08:05:58 +0100
+Subject: [R-pkgs] New package - LGDtoolkit
+Message-ID: <CABcwgRQ+UhisX0tPPgJt1WWpwvF2qT9rsP8B5FfvDzBP1LCwTw@mail.gmail.com>
+
+Dear all,
+
+my new R package LGDtoolkit is now on CRAN.
+
+The goal of this package is to cover the most common steps in Loss Given
+Default (LGD) rating model development. The main procedures available are
+those that refer to bivariate and multivariate analysis.
+In particular two statistical methods for multivariate analysis are
+currently implemented ? OLS regression and fractional logistic regression.
+Both methods are also available within different blockwise model designs,
+and both have customized stepwise algorithms. To cover other important
+steps for LGD model development, it is recommended to use 'LGDtoolkit'
+package along with 'PDtoolkit', and 'monobin' (or 'monobinShiny') packages.
+
+With the next releases package will be extended with a new features. In
+particular, validation procedures will be added, and significant part of
+the package will be dedicated to the usage of survival analysis for LGD
+modeling (extrapolation of LGD for incomplete recoveries, development of
+risk differentiation function and collateral haircut modeling).
+
+To check out the current package functionalities run
+install.packages("LGDtoolkit") and help(package = "LGDtoolkit").
+To stay up to date with new development features follow the github page:
+https://github.com/andrija-djurovic/LGDtoolkit.
+
+I hope some of you will find the package useful.
+
+Kind regards,
+Andrija
+
+	[[alternative HTML version deleted]]
+
+
+From ngre||er @end|ng |rom |q@h@rv@rd@edu  Wed Feb  1 18:49:30 2023
+From: ngre||er @end|ng |rom |q@h@rv@rd@edu (Greifer, Noah)
+Date: Wed, 1 Feb 2023 12:49:30 -0500
+Subject: [R-pkgs] {clarify}: Simulation-Based Inference for Regression Models
+Message-ID: <CALABNevL7o=4hmB2v2G2PQmeCUcX7oa7YuPMfZ_Q6Az2RoL-pQ@mail.gmail.com>
+
+Hello everyone,
+
+Our new package {clarify} has been released. {clarify} provides
+simulation-based inference as an alternative to the delta method for
+interpretable quantities derived from model parameters, like average
+marginal effects, dose-response functions, and predictions at
+representative values. Also provided are methods for combining such
+quantities across multiply imputed datasets.
+
+Those of you who have used Clarify for Stata or the retired R package
+{Zelig} will find similar and expanded capabilities in {clarify}.
+
+Install {clarify} using
+install.packages("clarify")
+
+CRAN page:
+https://cran.r-project.org/package=clarify
+
+{clarify} website:
+https://iqss.github.io/clarify/
+
+Thank you!
+
+-- 
+Noah Greifer, Ph.D.
+*Statistical Consultant and Programmer*
+*Institute for Quantitative Social Science | Harvard University*
+Pronouns: he/him
+
+	[[alternative HTML version deleted]]
+
+
+From Roger@B|v@nd @end|ng |rom nhh@no  Mon Apr 10 17:31:15 2023
+From: Roger@B|v@nd @end|ng |rom nhh@no (Roger Bivand)
+Date: Mon, 10 Apr 2023 17:31:15 +0200 (CEST)
+Subject: [R-pkgs] Retirement/archiving of rgdal,
+ rgeos and maptools October 2023
+Message-ID: <6253c881-857b-bc97-2420-d612a3549a3e@reclus2.nhh.no>
+
+The third report on the R-spatial evolution project has been published.
+
+https://r-spatial.org/r/2023/04/10/evolution3.html
+
+It links back to earlier blogs and presentations, and focuses on work that 
+maintainers of R packages and workflows using rgdal, rgeos and maptools 
+need to put in train now before the packages are archived on CRAN.
+
+The first changes will occur in June 2023, and the retiring packages will 
+be archived during October 2023. If you are giving a workshop or tutorial 
+during the Northern hemisphere summer, aim for June.
+
+If you still need more assistance after reading the project materials, 
+raise an issue on https://github.com/r-spatial/evolution/issues or email 
+me (issue better, less likely to be overlooked).
+
+-- 
+Roger Bivand
+Emeritus Professor
+Department of Economics, Norwegian School of Economics,
+Postboks 3490 Ytre Sandviken, 5045 Bergen, Norway.
+e-mail: Roger.Bivand at nhh.no
+https://orcid.org/0000-0003-2392-6140
+https://scholar.google.no/citations?user=AWeghB0AAAAJ&hl=en
+
+
+From m@pjg @end|ng |rom br|@to|@@c@uk  Wed Apr 12 10:18:21 2023
+From: m@pjg @end|ng |rom br|@to|@@c@uk (Peter Green)
+Date: Wed, 12 Apr 2023 09:18:21 +0100
+Subject: [R-pkgs] DNAmixturesLite and KinMixLite
+Message-ID: <68d2e035-6cba-b6dd-71e8-872dc2ed1f12@bristol.ac.uk>
+
+Dear all,
+
+We are pleased to announce that CRAN now hosts our packages 
+DNAmixturesLite and KinMixLite.
+
+These are fully R-based versions of our packages DNAmixtures and KinMix, 
+which rely on a commercial software, HUGIN, for performing efficient 
+computations in Bayesian networks. The lite versions rely instead on 
+gRain for such computations.
+
+DNAmixtures provides statistical methods for DNA mixture analysis and 
+has been used to provide statistical evidence pertaining to DNA in 
+several criminal cases in the UK and Denmark. The purpose of the newly 
+released lite version is to allow users without a HUGIN software license 
+to experiment with the statistical methodology. While the lite version 
+aims to provide full functionality, it is noticeably less efficient than 
+the original DNAmixtures package. For details on implementation and 
+methodology see <https://dnamixtures.r-forge.r-project.org/>.
+
+KinMix builds upon DNAmixtures and is a toolbox of methods for inference 
+about relationships between contributors to a DNA mixture and other 
+individuals of known genotype: a basic example would be testing whether 
+a contributor to a mixture is the father of a child of known genotype. 
+KinMixLite builds upon DNAmixturesLite and provides most of the 
+functionality of the KinMix package, but with some loss of efficiency. 
+The package implements the methods introduced in Green, P. J. and 
+Mortera, J. (2017) <doi:10.1016/j.fsigen.2017.02.001> and Green, P. J. 
+and Mortera, J. (2021) <doi:10.1111/rssc.12498>.
+
+Regards,
+Therese Graversen and Peter Green
+
+
+From me @end|ng |rom n@nx@me  Mon May  1 22:36:17 2023
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Mon, 01 May 2023 16:36:17 -0400
+Subject: [R-pkgs] gsDesign2 1.0.8 is released
+Message-ID: <8e6617ab-a4aa-4a9c-927d-133e0cd846e5@app.fastmail.com>
+
+Dear all,
+
+A new version of gsDesign2 (1.0.8) is now on CRAN (https://cran.r-project.org/package=gsDesign2). gsDesign2 enables fixed or group sequential design under non-proportional hazards and supports highly flexible enrollment, time-to-event, and time-to-dropout assumptions.
+
+The key improvements in this version include refined naming conventions for options in the info_scale argument adhering to the tidyverse design guide, and bug fixes for computing the futility bounds. Please see the changelog (https://merck.github.io/gsDesign2/news/) for details.
+
+As the gsDesign2 package is still in its early stages, we're eager to continue refining its features and performance. We invite you to try out this new version and share your insights with us. Your feedback is invaluable in helping us develop a tool that meets the evolving needs of users.
+
+Cheers,
+-Nan
+
+
+From Roger@B|v@nd @end|ng |rom nhh@no  Sat Jun 24 16:53:49 2023
+From: Roger@B|v@nd @end|ng |rom nhh@no (Roger Bivand)
+Date: Sat, 24 Jun 2023 14:53:49 +0000
+Subject: [R-pkgs] sp 2.0-0 released
+Message-ID: <SV0P279MB0475E8976F77C9F18136B497EE20A@SV0P279MB0475.NORP279.PROD.OUTLOOK.COM>
+
+A new version of the sp package, 2.0-0, has been published on CRAN. This new version defaults to using the sf package rather than the rgdal package, and deprecates use  of the rgeos package. These changes are described in https://r-spatial.org/r/2023/05/15/evolution4.html, and lead up to the planned archiving of the retiring packages: maptools, rgdal and rgeos in October 2023. This version issues invasive start-up messages in order to alert users to impending changes; maintainers of affected packages have already been warned.
+
+--
+Roger Bivand
+Emeritus Professor
+Norwegian School of Economics
+Postboks 3490 Ytre Sandviken, 5045 Bergen, Norway
+Roger.Bivand at nhh.no
+
+From me @end|ng |rom n@nx@me  Thu Jul 20 05:23:14 2023
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Wed, 19 Jul 2023 23:23:14 -0400
+Subject: [R-pkgs] gsDesign 3.5.0 is released
+Message-ID: <f4414e37-3eb8-4933-8c80-40dff5371998@app.fastmail.com>
+
+Dear all,
+
+I'm thrilled to announce that a new version of gsDesign (3.5.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).
+
+The 3.5.0 update introduces some significant enhancements:
+
+- New toInteger() function to convert gsDesign or gsSurv objects to integer sample size and event counts.
+- New toBinomialExact() function to convert time-to-event bounds to exact binomial for studies with low event rates.
+- New vignette on the fundamentals of asymptotics for group sequential design, and another vignette on the sequential probability ratio test for a single arm binary endpoint.
+
+We have also improved compatibility with the latest ggplot2 version and have introduced a new hex sticker logo. For the complete list of updates, please see the changelog (https://keaven.github.io/gsDesign/news/).
+
+Best regards,
+-Nan
+
+
+From Roger@B|v@nd @end|ng |rom nhh@no  Tue Oct  3 10:18:25 2023
+From: Roger@B|v@nd @end|ng |rom nhh@no (Roger Bivand)
+Date: Tue, 3 Oct 2023 08:18:25 +0000
+Subject: [R-pkgs] maptools, rgdal, rgeos and rgrass7 retiring Monday,
+ October 16
+Message-ID: <SV0P279MB04755A943724ADEE275CDEBCEEC4A@SV0P279MB0475.NORP279.PROD.OUTLOOK.COM>
+
+The legacy R spatial infrastructure packages maptools, rgdal and rgeos will be archived by CRAN on Monday, October 16, 2023; rgrass7 has  already been replaced by rgrass and will be archived with the retiring packages. 
+
+The choice of date matches the previously announced archiving during October 2023, and the specific date matches the release schedule of Bioconductor 3.18 (some Bioconductor packages depend on retiring packages).
+
+sp_2.1-0 was published October 2, 2023, dropping all dependencies on the retiring packages. sp will continue to be available and maintained, but not developed further. Users of sp classes may continue to make use of them, but will have to use sf or terra to read, write or manipulate objects with coercion (for a guide to coercion, see https://cran.r-project.org/web/packages/rgrass/vignettes/coerce.html).
+
+Information about the evolution project may be found in reports and resources at https://r-spatial.github.io/evolution/; a recent blog by Jakub Nowosad may also be useful as an overview of what has been going on: https://geocompx.org/post/2023/rgdal-retirement/. For more detail, see https://r-spatial.github.io/evolution/ogh23_bivand.html and a video recording of this presentation https://av.tib.eu/media/63141 (August 28).
+
+All directly affected package maintainers have been alerted to the impending changes, some in December 2022, most others in March-April 2023. Many have already updated their packages on CRAN - thank you for your understanding! The remainder received github issue comments and email reminders in the last ten days, and will receive final notices to update by October 9. 
+
+On R-universe, builds of packages archived on CRAN are dropped automatically (https://github.com/r-universe-org/help/issues/286). Read-only github mirrors of archived packages will remain available in principle while github exists (https://github.com/r-hub/rhub/issues/568), for example https://github.com/cran/rgdal. Other binary builds (Debian, Fedora, Ubuntu) have been alerted; support at Anaconda has been alerted.
+
+On CRAN, the retired packages will continue to be available as source packages on https://cran.r-project.org/src/contrib/Archive. maptools, rgdal and rgeos also retain their R-forge repositories, which may be used to retrieve functions for adding to other packages.
+
+A snapshot of Windows and macOS binary packages may be found on https://github.com/r-spatial/evolution/tree/main/backstore.
+
+Please raise questions by replying to this post, or as issues on https://github.com/r-spatial/evolution.
+
+--
+Roger Bivand
+Emeritus Professor
+Norwegian School of Economics
+Postboks 3490 Ytre Sandviken, 5045 Bergen, Norway
+Roger.Bivand at nhh.no
+
+From th|@|@@rn| @end|ng |rom gm@||@com  Sun Oct 29 05:55:30 2023
+From: th|@|@@rn| @end|ng |rom gm@||@com (Arni Magnusson)
+Date: Sun, 29 Oct 2023 15:55:30 +1100
+Subject: [R-pkgs] Introducing the makeit package
+Message-ID: <CANrWemj66YMZY-amVVzOAkoS-fCLNR2BNaPftj1mKzxX5oJ6Bw@mail.gmail.com>
+
+Dear R community,
+
+Just a quick note about a new package on CRAN called makeit. Yesterday, I
+added a vignette and released as 1.0.1:
+https://cran.r-project.org/package=makeit
+https://cran.r-project.org/web/packages/makeit/vignettes/makeit.html
+
+It provides a simple but powerful function make() that works the same way
+as GNU Make. In short, it runs an R script if underlying files have
+changed, otherwise it does nothing. The first example in the vignette is:
+  make("analysis.R", "input.dat", "output.dat")
+The second example involves three scripts:
+  make("01_model.R", "data.dat", "results.dat")
+  make("02_plots.R", "results.dat", c("plots/A.png", "plots/B.png"))
+  make("03_tables.R", "results.dat", c("tables/A.csv", "tables/B.csv"))
+
+For R workflows, it can provide the same functionality as GNU Make but with
+fewer software requirements in terms of software installed and system path.
+The make calls() can be grouped together in a dedicated script, called
+something like _make.R, or conveniently called from within scripts to
+decide whether a certain part of the analysis needs to be (re)run or not.
+
+Any feedback is appreciated, via email or GitHub issues
+<https://github.com/arni-magnusson/makeit>.
+
+Best regards,
+Arni
+
+P.S. I originally wanted to call the package simply 'make', but was
+politely informed by the CRAN Team that this could mess with their
+extensive makefile infrastructure. So there we have it, makeit :)
+
+	[[alternative HTML version deleted]]
+
+
+From j|ox @end|ng |rom mcm@@ter@c@  Fri Nov  3 13:44:34 2023
+From: j|ox @end|ng |rom mcm@@ter@c@ (John Fox)
+Date: Fri, 3 Nov 2023 08:44:34 -0400
+Subject: [R-pkgs] new cv package: cross-validation of regression models
+Message-ID: <e64f1971-9441-4779-88ed-153712cfbac3@mcmaster.ca>
+
+Georges Monette and I would like to announce a new package, cv, now on 
+CRAN, which implements cross-validation of regression models.
+
+Some of the functions supplied by the package:
+
+-   cv() is a generic function with a default method and computationally 
+efficient "lm" and "glm" methods, along with a method for a list of 
+competing models. There are also experimental "merMod", "lme", and 
+"glmmTMB" methods for mixed-effects models. cv() supports parallel 
+computations.
+
+-   mse() (mean-squared error) and BayesRule() are cross-validation 
+criteria ("cost functions"), suitable for use with cv().
+
+-   cvSelect() cross-validates a selection procedure for a regression 
+model. cvSelect() also supports parallel computations.
+
+-   selectStepAIC() is a model-selection procedure, suitable for use 
+with cvSelect(), based on the stepAIC() function in the MASS package.
+
+-   selectTrans() is a procedure for selecting predictor and response 
+transformations in regression, also suitable for use with cvSelect(), 
+based on the powerTransform() function in the car package.
+
+For additional information on using the cv package, see the 
+"Cross-validation of regression models" vignette, in the package and at 
+<https://cran.r-project.org/web/packages/cv/vignettes/cv.html>. The cv 
+package is designed to be extensible to other classes of regression 
+models and other model-selection procedures; for details, see the 
+"Extending the cv package" vignette, also in the package and at 
+<https://cran.r-project.org/web/packages/cv/vignettes/cv-extend.html>.
+
+Comments and suggestions would be appreciated. Bug reports and problems 
+can be filed at <https://github.com/gmonette/cv/issues>.
+
+Thank you for your attention,
+  John and Georges
+
+
+-- 
+John Fox, Professor Emeritus
+McMaster University
+Hamilton, Ontario, Canada
+web: https://www.john-fox.ca/
+
+
+From me @end|ng |rom n@nx@me  Mon Nov 20 17:08:25 2023
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Mon, 20 Nov 2023 11:08:25 -0500
+Subject: [R-pkgs] gsDesign 3.6.0 is released
+Message-ID: <97509799-f612-4579-881f-06c78e3e905b@app.fastmail.com>
+
+Dear all,
+
+I'm excited to announce that a new version of gsDesign (3.6.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).
+
+The 3.6.0 update introduces some significant new features and enhancements:
+
+- New gsSurvCalendar() function to enable group sequential design for time-to-event outcomes using calendar timing of interim analysis specification.
+- toInteger() and print.gsSurv() improvements for integer sample size and event count.
+- toBinomialExact() and gsBinomialExact() now have improved error checking in bound computations, error messages, and documentation.
+- New as_rtf() method for gsBinomialExact() objects to support RTF table outputs.
+
+We have also updated the gsDesign Shiny app to 2023.11.0. This version supports the new key features added in gsDesign 3.5.0 and 3.6.0.
+
+For the complete list of updates, please see the announcement: https://keaven.github.io/blog/gsdesign-3-6-0/.
+
+Best regards,
+-Nan
+
+
+From me @end|ng |rom n@nx@me  Wed Dec 13 06:09:06 2023
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Wed, 13 Dec 2023 00:09:06 -0500
+Subject: [R-pkgs] simtrial: Clinical Trial Simulation
+Message-ID: <79834370-a2ad-4a6a-8b55-19b29e998f8a@app.fastmail.com>
+
+Dear all,
+
+I am happy to announce that {simtrial} is now on CRAN (https://cran.r-project.org/package=simtrial). simtrial is a fast and extensible clinical trial simulation framework for time-to-event endpoints.
+
+This release brings a new tabular data processing engine powered by data.table for 3x to 5x faster simulations, a new parallelization adaptor with %dofuture%, a refreshed API that aligns with the gsDesign2 style guide, and new functions for zero early weight and analysis date. For a summary of the updates, please see the announcement: https://keaven.github.io/blog/simtrial-0-3-2/.
+
+I hope you find simtrial helpful. Please feel free to reach out with feedback or questions.
+
+Best regards,
+-Nan
+
+
+From Den|@@Cou@|ne@u @end|ng |rom uott@w@@c@  Wed Dec 13 13:54:07 2023
+From: Den|@@Cou@|ne@u @end|ng |rom uott@w@@c@ (Denis Cousineau)
+Date: Wed, 13 Dec 2023 12:54:07 +0000
+Subject: [R-pkgs] ANOFA: Analysis of frequency data
+Message-ID: <aaeefcc6-8c10-4248-8db2-393c12e460e7@uottawa.ca>
+
+A package for the analysis of frequency data, ANOFA, has been released 
+on CRAN.
+
+With this package, it is now possible to analyze frequencies following 
+the logic of ANOVAs, by examining interaction effects and main effects, 
+or explore simple effects (with expected marginal frequencies) or 
+analyze one-degree-of-freedom orthogonal contrasts.
+
+If you were planning on doing a chi-square test on a contingency table, 
+think twice and read Sharpe (2015) https://*doi*.org/10.7275/tbfa-x148 . 
+Then you will consider running an ANOFA . Examples are given in 
+Laurencelle & Cousineau (2023) https://doi.org/10.20982/tqmp.19.2.p173
+
+Also, a simple function for plotting the frequencies along with 
+confidence intervals is shipped with the package.
+
+See the main documentation on https://dcousin3.github.io/ANOFA/
+
+Denis Cousineau.
+
+
+
+From z|v@n@k@r@m@n @end|ng |rom gm@||@com  Sat Dec 16 19:04:25 2023
+From: z|v@n@k@r@m@n @end|ng |rom gm@||@com (Zivan Karaman)
+Date: Sat, 16 Dec 2023 19:04:25 +0100
+Subject: [R-pkgs] Copernicus Data Space Ecosystem API Wrapper
+Message-ID: <CAKtE6yMQVy4xQYjMWBaj7NkDk5Py8k2QNSt8zwDqH2=fnWYx1g@mail.gmail.com>
+
+Dear all,
+
+I am pleased to announce the release of a new package named 'CDSE' on CRAN.
+
+It provides direct access to the 'Copernicus Data Space Ecosystem' for
+R users. With this package, you can efficiently access the imagery
+from Sentinel-1, Sentinel-2, Sentinel-3, and Sentinel-5 missions and
+process and download data from the R environment.
+
+One of the significant benefits of this package is that you can
+download the satellite data that is limited to your area of interest
+instead of the entire image tiles (100 x 100 km) that are usually
+distributed by Copernicus.
+
+Although the software is compatible with any satellite images
+available in CDSE, it has been primarily tested with Sentinel-2
+images.
+
+This is the first version of the package, and your feedback and
+suggestions are welcome
+
+Please find more details and download the package from the following
+link: https://cran.r-project.org/package=CDSE
+
+Best regards,
+Zivan
+
+

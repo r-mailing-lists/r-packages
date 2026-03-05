@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-08",
+  "messages": [
+    {
+      "id": "msg-48b6879c9082",
+      "message_id": "<9787B662-33B4-4696-B337-68EBB589FF99@gmail.com>",
+      "from_name": "Cory Whitney",
+      "from_email_hash": "0957d87a031ee655c93ee4762461d3eed210ae7246d06d7113e1b3d884b85516",
+      "date": "2019-08-06T16:31:38+02:00",
+      "subject": "[R-pkgs] New functions in ethnobotanyR 0.1.5",
+      "subject_clean": "New functions in ethnobotanyR 0.1.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ethnobotanyR 0.1.5 is a patch. The package now includes four new functions:\n\nUpdated UVs() following Tardio and Pardo-de-Santayana (2008)\n\nsimple_UVs() now calculates a simple UVs cf. Albuquerque et al. (2006).\n\nFidelity level per species FLs() from Friedman et al. (1986) is added.\n\nNow includes the CVe() from Reyes-Garcia et al. (2006).\n\nModeling options and more common quantitative ethnobotany and anthropology tools will be added in the next version.",
+      "body_snippet": "ethnobotanyR 0.1.5 is a patch. The package now includes four new functions:\n\nUpdated UVs() following Tardio and Pardo-de-Santayana (2008)\n\nsimple_UVs() now calculates a simple UVs cf. Albuquerque et a",
+      "thread_id": "thread-48b6879c9082",
+      "thread_depth": 0,
+      "month": "2019-08"
+    },
+    {
+      "id": "msg-b04773d103cb",
+      "message_id": "<CAHUMv58bGM2gAV4J+HAQYdSWOWdniGRN=iTtmSFZBF8fbjxH8w@mail.gmail.com>",
+      "from_name": "Kyle Ward",
+      "from_email_hash": "60f70c7a811b18eed215ecb7791589f2b3d0eeb8502cab8196dc07dfb7bea934",
+      "date": "2019-08-29T12:39:48-04:00",
+      "subject": "[R-pkgs] New CRAN package: ipfr",
+      "subject_clean": "New CRAN package: ipfr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This package implements a robust iterative proportional fitting algorithm,\nwhich is useful in survey expansion, matrix balancing, population\nsynthesis, and other applications. For example, this package could can\nweight a survey of households to match known population characteristics\nlike the number of households by size. I hope you find that the vignettes\nand GitHub readme make it easy to get started.\n\nCRAN: https://cran.r-project.org/web/packages/ipfr/index.html\nGitHub: https://github.com/dkyleward/ipfr\nVignette for basic usage:\nhttps://cran.r-project.org/web/packages/ipfr/vignettes/using_ipfr.html\nAdvanced topics:\nhttps://cran.r-project.org/web/packages/ipfr/vignettes/common_ipf_problems.html\n\nThank you for your time,\nKyle Ward\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This package implements a robust iterative proportional fitting algorithm,\nwhich is useful in survey expansion, matrix balancing, population\nsynthesis, and other applications. For example, this packag",
+      "thread_id": "thread-b04773d103cb",
+      "thread_depth": 0,
+      "month": "2019-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-48b6879c9082",
+      "subject": "New functions in ethnobotanyR 0.1.5",
+      "message_count": 1,
+      "participants": [
+        "Cory Whitney"
+      ],
+      "started": "2019-08-06T16:31:38+02:00",
+      "last_reply": "2019-08-06T16:31:38+02:00",
+      "root_message_id": "msg-48b6879c9082"
+    },
+    {
+      "id": "thread-b04773d103cb",
+      "subject": "New CRAN package: ipfr",
+      "message_count": 1,
+      "participants": [
+        "Kyle Ward"
+      ],
+      "started": "2019-08-29T12:39:48-04:00",
+      "last_reply": "2019-08-29T12:39:48-04:00",
+      "root_message_id": "msg-b04773d103cb"
+    }
+  ]
+}

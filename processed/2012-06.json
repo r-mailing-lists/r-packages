@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-06",
+  "messages": [
+    {
+      "id": "msg-1a5e5c33ba50",
+      "message_id": "<4FCE6E90.1040304@unige.ch>",
+      "from_name": "Gilbert Ritschard",
+      "from_email_hash": "b39ef9479834e10f599347c49b67598206800bd09403d69655db4ad947244ad7",
+      "date": "2012-06-05T22:39:44+02:00",
+      "subject": "[R-pkgs] New version of the TraMineR package (1.8-2)",
+      "subject_clean": "New version of the TraMineR package (1.8-2)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nIt is our pleasure to announce that the new version 1.8-2 of TraMineR \nhas been released on the CRAN.\n\nAlongside the fixes of a series of small bugs and some speed \nimprovements, the main changes are:\n\n     - a new information display when creating state sequence object \nwhich permits\n       better checking of the correspondence between alphabet, state \nnames and labels;\n     - representative sequences now can also account for case weights;\n     - the group argument of seqplot() can now be a a list of variables;\n     - new \"from.start\" and \"from.end\" values for the sortv argument of \nseqiplot;\n     - the support of event subsequences can now be determined by any of \nJoshi's 5 counting methods.\n\nSee http://cran.r-project.org/web/packages/TraMineR/NEWS  for a complete \nlist of changes.\n\nAdditional functions currently in test may be available in our \ndevelopment version and/or the\nTraMineRextras package on https://r-forge.r-project.org/R/?group_id=743.\n\nBest,\n\nGilbert, Alexis, Matthias and Nicolas",
+      "body_snippet": "Hi all,\n\nIt is our pleasure to announce that the new version 1.8-2 of TraMineR \nhas been released on the CRAN.\n\nAlongside the fixes of a series of small bugs and some speed \nimprovements, the main cha",
+      "thread_id": "thread-1a5e5c33ba50",
+      "thread_depth": 0,
+      "month": "2012-06"
+    },
+    {
+      "id": "msg-159da45abf46",
+      "message_id": "<CABtg=KmKh8Z30vaY5jy=mxLjPr3N2w_Aonf+HnN81BB1WY01aA@mail.gmail.com>",
+      "from_name": "Gábor Csárdi",
+      "from_email_hash": "be1b1aa2bf940edb4d90301c038c97e98b84ed5c8724f0d46a3b2ee263683539",
+      "date": "2012-06-17T23:19:54-04:00",
+      "subject": "[R-pkgs] igraph 0.6 released",
+      "subject_clean": "igraph 0.6 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nwe have released version 0.6 of the igraph package today. This is a\nmajor new version, with a lot of new features, and (sadly) it is not\ncompletely compatible with code that was written for the previous\nigraph versions. (See \"Major new features\" below for details.)\n\nI have included below a list of (bigger) changes. Please see the\ndetails in the release notes and the NEWS section at the igraph\nhomepage: http://igraph.sf.net\n\nBest Regards,\nGabor\n\n\n=====================\nMajor new features\n=====================\n\n- Vertices and edges are numbered from 1 instead of 0.\n  Note that this makes most of the old R igraph code incompatible\n  with igraph 0.6. If you want to use your old code, please use\n  the igraph0 package. See more at http://igraph.sf.net/relnotes-0.6.html.\n- The '[' and '[[' operators can now be used on igraph graphs,\n  for '[' the graph behaves as an adjacency matrix, for '[[' is\n  is treated as an adjacency list. It is also much simpler to\n  manipulate the graph structure, i.e. add/remove edges and vertices,\n  with some new operators. See more at ?graph.structure.\n- In all functions that take a vector or list of vertices or edges,\n  vertex/edge names can be given instead of the numeric ids.\n- New package 'igraphdata', contains a number of data sets that can\n  be used directly in igraph.\n- Igraph now supports loading graphs from the Nexus online data\n  repository, see nexus.get(), nexus.info(), nexus.list() and\n  nexus.search().\n- All the community structure finding algorithm return a 'communities'\n  object now, which has a bunch of useful operations, see\n  ?communities for details.\n- Vertex and edge attributes are handled much better now. They\n  are kept whenever possible, and can be combined via a flexible API.\n  See ?attribute.combination.\n- R now prints igraph graphs to the screen in a more structured and\n  informative way. The output of summary() was also updated\n  accordingly.\n\n=====================\nR: Other new features\n=====================\n\n- It is possible to mark vertex groups on plots, via\n  shading. Communities and cohesive blocks are plotted using this by\n  default.\n- Some igraph demos are now available, see a list via\n  'demo(package=\"igraph\")'.\n- igraph now tries to select the optimal layout algorithm, when\n  plotting a graph.\n- Added a simple console, using Tcl/Tk. It contains a text area\n  for status messages and also a status bar. See igraph.console().\n- Reimplemented igraph options support, see igraph.options() and\n  getIgraphOpt().\n- Igraph functions can now print status messages.\n\n===========================\nR: New or updated functions\n===========================\n\nCommunity detection\n-------------------\n- The multi-level modularity optimization community structure detection\n  algorithm by Blondel et al. was added, see multilevel.community().\n- Distance between two community structures: compare.communities().\n- Community structure via exact modularity optimization,\n  optimal.community().\n- Hierarchical random graphs and community finding, porting the code\n  from Aaron Clauset. See hrg.game(), hrg.fit(), etc.\n- Added the InfoMAP community finding method, thanks to Emmanuel\n  Navarro for the code. See infomap.community().\n\nShortest paths\n--------------\n- Eccentricity (eccentricity()), and radius (radius()) calculations.\n- Shortest path calculations with get.shortest.paths() can now\n  return the edges along the shortest paths.\n- get.all.shortest.paths() now supports edge weights.\n\nCentrality\n----------\n- Centralization scores for degree, closeness, betweenness and\n  eigenvector centrality. See centralization.scores().\n- Personalized Page-Rank scores, see page.rank().\n- Subgraph centrality, subgraph.centrality().\n- Authority (authority.score()) and hub (hub.score()) scores support\n  edge weights now.\n- Support edge weights in betweenness and closeness calculations.\n- bonpow(), Bonacich's power centrality and alpha.centrality(),\n  Alpha centrality calculations now use sparse matrices by default.\n- Eigenvector centrality calculation, evcent() now works for\n  directed graphs.\n- Betweenness calculation can now use arbitrarily large integers,\n  this is required for some lattice-like graphs to avoid overflow.\n\nInput/output and file formats\n-----------------------------\n- Support the DL file format in graph.read(). See\n  http://www.analytictech.com/networks/dataentry.htm.\n- Support writing the LEDA file format in write.graph().\n\nPlotting and layouts\n--------------------\n- Star layout: layout.star().\n- Layout based on multidimensional scaling, layout.mds().\n- New layouts layout.grid() and layout.grid.3d().\n- Sugiyama layout algorithm for layered directed acyclic graphs,\n  layout.sugiyama().\n\nGraph generators\n----------------\n- New graph generators: static.fitness.game(), static.power.law.game().\n- barabasi.game() was rewritten and it supports three algorithms now,\n  the default algorithm does not generate multiple or loop edges.\n  The graph generation process can now start from a supplied graph.\n- The Watts-Strogatz graph generator, igraph_watts_strogatz() can\n  now create graphs without loop edges.\n\nOthers\n------\n- Added the Spectral Coarse Graining algorithm, see scg().\n- The cohesive.blocks() function was rewritten in C, it is much faster\n  now. It has a nicer API, too. See demo(\"cohesive\").\n- Added generic breadth-first and depth-first search implementations\n  with many callbacks, graph.bfs() and graph_dfs().\n- Support vertex and edge coloring in the VF2 (sub)graph isomorphism\n  functions (graph.isomorphic.vf2(), graph.count.isomorphisms.vf2(),\n  graph.get.isomorphisms.vf2(), graph.subisomorphic.vf2(),\n  graph.count.subisomorphisms.vf2(), graph.get.subisomorphisms.vf2()).\n- Assortativity coefficient, assortativity(), assortativity.nominal()\n  and assortativity.degree().\n- Vertex operators that work by vertex names:\n  graph.intersection.by.name(), graph.union.by.name(),\n  graph.difference.by.name(). Thanks to Magnus Torfason for\n  contributing his code!\n- Function to calculate a non-induced subraph: subgraph.edges().\n- More comprehensive maximum flow and minimum cut calculation,\n  see functions graph.maxflow(), graph.mincut(), stCuts(), stMincuts().\n- Check whether a directed graph is a DAG, is.dag().\n- has.multiple() to decide whether a graph has multiple edges.\n- Added a function to calculate a diversity score for the vertices,\n  graph.diversity().\n- Graph Laplacian calculation (graph.laplacian()) supports edge\n  weights now.\n- Biconnected component calculation, biconnected.components()\n  now returns the components themselves.\n- bipartite.projection() calculates multiplicity of edges.\n- Maximum cardinality search: maximum.cardinality.search() and\n  chordality test: is.chordal()\n- Convex hull computation, convex.hull().\n- Contract vertices, contract.vertices().",
+      "body_snippet": "Dear All,\n\nwe have released version 0.6 of the igraph package today. This is a\nmajor new version, with a lot of new features, and (sadly) it is not\ncompletely compatible with code that was written for",
+      "thread_id": "thread-159da45abf46",
+      "thread_depth": 0,
+      "month": "2012-06"
+    },
+    {
+      "id": "msg-94859b433e43",
+      "message_id": "<CABdHhvGzeq0uR4GpXrhvHTiLQ2bcypXnxnxwrCu=MitQQ8asDw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2012-06-20T08:45:29-05:00",
+      "subject": "[R-pkgs] Devtools 0.7",
+      "subject_clean": "Devtools 0.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# devtools\n\nThe aim of `devtools` is to make your life as a package developer\neasier by providing R functions that simplify many common tasks.\nDevtools is opinionated about how to do package development, and\nrequires that you use `roxygen2` for documentation and `testthat` for\ntesting. Future version will relax these opinions - patches are\nwelcome! You can track (and contribute to) development of `devtools`\nat https://github.com/hadley/devtools.\n\nFor discussion related to package development with devtools see the\n[rdevtools](http://groups.google.com/group/rdevtools) mailing list.\n\ndevtools 0.7\n------------\n\nINSTALLATION\n\n* `install_bitbucket` installs R packages on bitbucket.\n\n* `install` now uses `--with-keep.source` to make debugging a little easier.\n\n* All remote install functions give better error messages in the case of http\n  errors (Fixes #82).\n\n* `install` has new quick option to make package installation faster, by\n  sacrificing documentation, demos and multi-architecture binaries. (Fixes\n  #77)\n\n* `install_url`, `install_github` and `install_gitorious` gain a subdir\n  argument which makes it possible to install packages that are contained\n  within a sub-directory of a repository or compressed file. (Fixes #64)\n\nCHECKING\n\n* `with_debug` function temporarily sets env vars so that compilation is\n  performed with the appropriate debugging flags set. Contributed by Andrew\n  Redd.\n\n* `revdep`, `revdep_maintainers` and `revdep_check` for calculating reverse\n  dependencies, finding their maintainers and running `R CMD check`.\n  (Fixes #78)\n\n* `check_cran` has received a massive overhaul: it now checks multiple\n  packages, installs dependencies (in user specified library), and parses check\n  output to extract errors and warnings\n\n* `check` uses new `--as-cran` option to make checking as close to CRAN as\n  possible (fixes #68)\n\nOTHER NEW FEATURES\n\n* devtools now uses options `devtools.path` to set the default path to use\n  with devmode, and `github.user` to set the default user when installing\n  packages from github.\n\n* if no package supplied, and no package has been worked with previously, all\n  functions now will try the working directory. (Fixes #87)\n\n* on windows, devtools now looks in the registry to find where Rtools is\n  installed, and does a better a job of locating gcc. (Contributed by Andrew\n  Redd)\n\n* `show_rd` passes `...` on to `Rd2txt` - this is useful if you're checking\n  how build time `\\Sexpr`s are generated.\n\n* A suite of `with` functions that allow you to temporarily alter the\n  environment in which code is run: `in_dir`, `with_collate`, `with_locale`,\n  `with_options`, `with_path`, ... (Fixes #89)\n\n* `release` ask more questions and randomises correct answers so you really\n  need to read them (Fixes #79)\n\n* `source_gist` now accepts default url such as \"https://gist.github.com/nnn\"\n\n* New system path manipulation functions, `get_path`, `set_path`, `add_path`\n  and `on_path`, contributed by Andrew Redd.\n\n* If you're on windows, `devtools` now suppresses the unimportant warning from\n  CYGWIN about the dos style file paths\n\nBUG FIXES\n\n* `decompress` now uses target directory as defined in the function call\n  when expanding a compressed file. (Fixes #84)\n\n* `document` is always run in a C locale so that `NAMESPACE` sort order is\n  consistent across platforms.\n\n* `install` now quotes `libpath` and build path so paths with embedded spaces\n  work (Fixes #73 and #76)\n\n* `load_data` now also loads `.RData` files (Fixes #81)\n\n* `install` now has `args` argument to pass additional command line arguments\n  on to `R CMD install` (replaces `...` which didn't actually do anything).\n  (Fixes #69)\n\n* `load_code` does a better job of reconciling files in DESCRIPTION collate\n  with files that actually exist in the R directory. (Fixes #14)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# devtools\n\nThe aim of `devtools` is to make your life as a package developer\neasier by providing R functions that simplify many common tasks.\nDevtools is opinionated about how to do package developme",
+      "thread_id": "thread-94859b433e43",
+      "thread_depth": 0,
+      "month": "2012-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1a5e5c33ba50",
+      "subject": "New version of the TraMineR package (1.8-2)",
+      "message_count": 1,
+      "participants": [
+        "Gilbert Ritschard"
+      ],
+      "started": "2012-06-05T22:39:44+02:00",
+      "last_reply": "2012-06-05T22:39:44+02:00",
+      "root_message_id": "msg-1a5e5c33ba50"
+    },
+    {
+      "id": "thread-159da45abf46",
+      "subject": "igraph 0.6 released",
+      "message_count": 1,
+      "participants": [
+        "Gábor Csárdi"
+      ],
+      "started": "2012-06-17T23:19:54-04:00",
+      "last_reply": "2012-06-17T23:19:54-04:00",
+      "root_message_id": "msg-159da45abf46"
+    },
+    {
+      "id": "thread-94859b433e43",
+      "subject": "Devtools 0.7",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2012-06-20T08:45:29-05:00",
+      "last_reply": "2012-06-20T08:45:29-05:00",
+      "root_message_id": "msg-94859b433e43"
+    }
+  ]
+}

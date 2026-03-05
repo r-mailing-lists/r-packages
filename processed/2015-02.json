@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-02",
+  "messages": [
+    {
+      "id": "msg-c6d3c635dcc7",
+      "message_id": "<54E279350200000C00022218@mailhost.biomec.upv.es>",
+      "from_name": "Helios de Rosario",
+      "from_email_hash": "9fec595e3c053d568d1e653caf5facdd3d0e9a1a451c163a1aba312072d08fc5",
+      "date": "2015-02-16T23:11:49+01:00",
+      "subject": "[R-pkgs] Release of phia 0.2-0",
+      "subject_clean": "Release of phia 0.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI want to announce an update of the package \"phia\", version 0.2-0, now\non CRAN:\n<http://cran.r-project.org/web/packages/phia/>\n\n\"phia\" (Post-Hoc Interaction Analysis) is aimed at the analysis of the\nexpected values and other terms of in linear, generalized, and mixed\nlinear models, on the basis of multiple comparisons of factor contrasts,\nand is specially suited for the analysis of interaction effects. The\nfunction \"testFactors\" provides a flexible user interface for defining\ncombinations of factor levels and covariates, to evaluate and test the\nmodel, using the function \"linearHypothesis\" from package \"car\".\n\"testInteractions\" gives a simpler interface to test multiple\ncomparisons of simple effects, interaction residuals, interaction\ncontrasts, or user-defined contrasts. \"interactionMeans\" may be used to\nexplore the \"cell means\" of factorial designs, and plot main effects or\nfirst-order interactions.\n\nThis update incorporates some minor bug fixes to previous versions, and\na new feature that had long been requested by some package users: the\nreport of the error associated to the adjusted values calculated by\nfunctions like \"interactionMeans\". Now the standard errors are printed\ntogether with the adjusted values, and the plot method for interaction\ntables adds error bars with the size of such standard errors, or\nasymptotic confidence intervals based on such errors.\n\nIn addition, I would like to refer the package users to the development\nrepository in GitHub: <https://github.com/heliosdrm/phia>, where new\ncontributions, issues/bug reports, and other comments are welcome.\n\nBest regards\n\nHelios De Rosario\n\nbiomecanicamente.org\nConoce la actualidad on-line del IBV\n______________________________\n\nINSTITUTO DE BIOMEC?NICA DE VALENCIA\nUniversidad Polit?cnica de Valencia ? Edificio 9C\nCamino de Vera s/n ? 46022 VALENCIA (ESPA?A)\nTel. +34 961111170- +34 610567200 ? Fax +34 96 387 91 69\nwww.ibv.org\n\nAntes de imprimir este e-mail piense bien si es necesario hacerlo.\nEn cumplimiento de la Ley Org?nica 15/1999 reguladora de la Protecci?n\nde Datos de Car?cter Personal, le informamos de que el presente mensaje\ncontiene informaci?n confidencial, siendo para uso exclusivo del\ndestinatario arriba indicado. En caso de no ser usted el destinatario\ndel mismo le informamos que su recepci?n no le autoriza a su divulgaci?n\no reproducci?n por cualquier medio, debiendo destruirlo de inmediato,\nrog?ndole lo notifique al remitente.",
+      "body_snippet": "Dear R users,\n\nI want to announce an update of the package \"phia\", version 0.2-0, now\non CRAN:\n<http://cran.r-project.org/web/packages/phia/>\n\n\"phia\" (Post-Hoc Interaction Analysis) is aimed at the an",
+      "thread_id": "thread-c6d3c635dcc7",
+      "thread_depth": 0,
+      "month": "2015-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c6d3c635dcc7",
+      "subject": "Release of phia 0.2-0",
+      "message_count": 1,
+      "participants": [
+        "Helios de Rosario"
+      ],
+      "started": "2015-02-16T23:11:49+01:00",
+      "last_reply": "2015-02-16T23:11:49+01:00",
+      "root_message_id": "msg-c6d3c635dcc7"
+    }
+  ]
+}

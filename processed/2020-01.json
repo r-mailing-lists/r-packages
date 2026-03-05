@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-01",
+  "messages": [
+    {
+      "id": "msg-3cc5721ca110",
+      "message_id": "<CAG25rBLnG23LFt_m2KP5d5TAEonZBJZZM16Ai5Qz5Br8G6rAZw@mail.gmail.com>",
+      "from_name": "Thomas Farrar",
+      "from_email_hash": "6746066ac19a250d7232e10905f0073468ac84a796745d1ca5f2ca003ef64635",
+      "date": "2020-01-13T10:03:19+02:00",
+      "subject": "[R-pkgs] Introducing skedastic: Heteroskedasticity Diagnostics for Linear Regression Models",
+      "subject_clean": "Introducing skedastic: Heteroskedasticity Diagnostics for Linear Regression Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI would like to introduce the above-named new package that is now available\non CRAN: https://cran.r-project.org/web/packages/skedastic/index.html The\npackage features numerous 'classical' heteroskedasticity tests (some not\npreviously available in any published R package) as well as one very new\ntest that appeared in the literature only in 2019.\n\nFeedback on bugs/issues is most welcome at\nhttps://github.com/tjfarrar/skedastic and reviews are welcome at\ncrantastic: https://crantastic.org/packages/skedastic\n\nSincerely,\nThomas Farrar\nCape Peninsula University of Technology; University of the Western Cape\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nI would like to introduce the above-named new package that is now available\non CRAN: https://cran.r-project.org/web/packages/skedastic/index.html The\npackage features numerous 'classical' h",
+      "thread_id": "thread-3cc5721ca110",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-abeb308f2ddd",
+      "message_id": "<CAFbfGPa1mNBzw40kui_pD=CWSkFMeRiZ4551kg8ZcbKzdhfDvg@mail.gmail.com>",
+      "from_name": "Benjamin Lu",
+      "from_email_hash": "05db9f77b316ecc090ea361618c01e3357184e1ad3a0deb56369be38a3260ffb",
+      "date": "2020-01-20T10:10:00-08:00",
+      "subject": "[R-pkgs] forestError 0.1.0: Random forest conditional prediction intervals, squared errors, and biases",
+      "subject_clean": "forestError 0.1.0: Random forest conditional prediction intervals, squared errors, and biases",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI?m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional biases, and conditional prediction\nerror distribution functions for random forests using new methods proposed\nin Lu and Hardin (2019+) <arXiv:1912.07435>.\n\nThe package does not grow specially designed random forests, but rather\nsits on top of the standard random forest algorithm. In particular, the\npackage can estimate the above quantities for regression random forests\nbuilt using the randomForest, randomForestSRC, ranger, and quantregForest\npackages.\n\nI hope that you find this useful. Please feel free to reach out with\nfeedback or questions.\n\nCRAN: https://cran.r-project.org/package=forestError\nGithub: https://github.com/benjilu/forestError\nReference: https://arxiv.org/abs/1912.07435\n\nBest,\nBenji Lu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI?m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional bias",
+      "thread_id": "thread-abeb308f2ddd",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-15805d5b9054",
+      "message_id": "<CAAGSCf3tD+wSVJC59z=Uj-Yz6k1K45AE3UTzsOMyorNF3Ytw1w@mail.gmail.com>",
+      "from_name": "Silvana Pesenti",
+      "from_email_hash": "b9a23d6dbfb161dff1488721ce7d5571b548745c1913b968928fbb247fd7930a",
+      "date": "2020-01-23T08:27:29-05:00",
+      "subject": "[R-pkgs] SWIM: vignette and new version on CRAN",
+      "subject_clean": "SWIM: vignette and new version on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\n\nWe?re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides weights on simulated\nscenarios from a stochastic model, such that stressed random variables\nfulfil given probabilistic constraints (e.g. specified values for risk\nmeasures), under the new scenario weights. Scenario weights are selected by\nconstrained minimisation of the relative entropy to the baseline model.\n\n The new version includes additional functionalities which are illustrated\nin the Vignette on a credit risk model:\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274.\n<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274>\n\n\nCRAN: https://CRAN.R-project.org/package=SWIM\n\nGitHuB: https://github.com/spesenti/SWIM\n\nVignette: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274\n\n\n\n\nBest regards,\n\nSilvana Pesenti\n\nMaintainer and co-author.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\n\nWe?re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides ",
+      "thread_id": "thread-15805d5b9054",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-1419044a8a6a",
+      "message_id": "<649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>",
+      "from_name": "Giulio Barcaroli",
+      "from_email_hash": "0326a8c14d3ceb71846cac83f7c53d182c185c88559805f2919e451c3111e1ef",
+      "date": "2020-01-28T11:28:36+01:00",
+      "subject": "[R-pkgs] SamplingStrata: new version on CRAN",
+      "subject_clean": "SamplingStrata: new version on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nthis is to announce that a new version of*SamplingStrata*  \n       is available on CRAN.*SamplingStrata*  is a package for the\n       optimization of stratified sample design. This new version (the\n       1.5) contains a lot of news. In particular:\n\n- there is now the possibility to cover also*spatial sampling*,\n       whenever the units in sampling frame are geo-referenced (method =\n       \"spatial\" in*optimStrata *function);\n\n- the use of the function*optimStrata *(a wrapper that call different\n\toptimization functions) greatly simplifies the handling of*takeall *\n\tstrata;\n\n- when models are used in order to take into account the*anticipated variance*  of target variables, a new function (computeGamma)\n       permits to evaluate*heteroscedasticity*  in order to\n       correctly calculate the overall variance in strata.\n\nA*cheatsheet*  is available in the /docs/inst directory.\n\nYou can find the whole documentation at\n\nhttps://barcaroli.github.io/SamplingStrata/\n\nBest regards,\n\nGiulio Barcaroli\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nthis is to announce that a new version of*SamplingStrata*  \n       is available on CRAN.*SamplingStrata*  is a package for the\n       optimization of stratified sample design. This new vers",
+      "thread_id": "thread-1419044a8a6a",
+      "thread_depth": 0,
+      "month": "2020-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3cc5721ca110",
+      "subject": "Introducing skedastic: Heteroskedasticity Diagnostics for Linear Regression Models",
+      "message_count": 1,
+      "participants": [
+        "Thomas Farrar"
+      ],
+      "started": "2020-01-13T10:03:19+02:00",
+      "last_reply": "2020-01-13T10:03:19+02:00",
+      "root_message_id": "msg-3cc5721ca110"
+    },
+    {
+      "id": "thread-abeb308f2ddd",
+      "subject": "forestError 0.1.0: Random forest conditional prediction intervals, squared errors, and biases",
+      "message_count": 1,
+      "participants": [
+        "Benjamin Lu"
+      ],
+      "started": "2020-01-20T10:10:00-08:00",
+      "last_reply": "2020-01-20T10:10:00-08:00",
+      "root_message_id": "msg-abeb308f2ddd"
+    },
+    {
+      "id": "thread-15805d5b9054",
+      "subject": "SWIM: vignette and new version on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Silvana Pesenti"
+      ],
+      "started": "2020-01-23T08:27:29-05:00",
+      "last_reply": "2020-01-23T08:27:29-05:00",
+      "root_message_id": "msg-15805d5b9054"
+    },
+    {
+      "id": "thread-1419044a8a6a",
+      "subject": "SamplingStrata: new version on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Giulio Barcaroli"
+      ],
+      "started": "2020-01-28T11:28:36+01:00",
+      "last_reply": "2020-01-28T11:28:36+01:00",
+      "root_message_id": "msg-1419044a8a6a"
+    }
+  ]
+}

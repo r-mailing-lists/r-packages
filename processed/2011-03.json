@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-03",
+  "messages": [
+    {
+      "id": "msg-8a6cf6db2c27",
+      "message_id": "<op.vroplbbwn6oykk@biostat145>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2011-03-01T15:49:49-06:00",
+      "subject": "[R-pkgs] Major update to rms package",
+      "subject_clean": "Major update to rms package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of rms is now available on CRAN for Linux and Windows (Mac  \nwill probably be available very soon). Largest changes include latex  \nmethods for validate.* and adding the capability to force a subset of  \nvariables to be included in all backwards stepdown models (single model or  \nvalidation by resampling).\n\nRecent updates:\n\n    * In survplot.rms, fixed bug (curves were undefined if conf='bands' and  \nlabelc was FALSE)\n    * In survfit.cph, fixed bug by which n wasn't always defined\n    * In cph, put survival::: on exact fit call\n    * Quit ignoring zlim argument in bplot; added xlabrot argument\n    * Added caption argument for latex.anova.rms\n    * Changed predab to not print summaries of variables selected if bw=TRUE\n    * Changed predab to pass force argument to fastbw\n    * fastbw: implemented force argument\n    * Added force argument to validate.lrm, validate.bj, calibrate.default,  \ncalibrate.cph, calibrate.psm, validate.bj, validate.cph, validate.ols\n    * print.validate: added B argument to limit how many resamples are  \nprinted summarizing variables selected if BW=TRUE\n    * print.calibrate, print.calibrate.default: added B argument\n    * Added latex method for results produced by validate functions\n    * Fixed survest.cph to convert summary.survfit std.err to log S(t) scale\n    * Fixed val.surv by pulling surv object from survest result\n    * Clarified in predict.lrm help file that doesn't always use the first  \nintercept\n    * lrm.fit, lrm: linear predictor stored in fit object now uses first  \nintercept and not middle one (NOT DOWNWARD COMPATIBLE but makes predict  \nwork when using stored linear.predictors)\n    * Fixed argument consistency with validate methods\n\n\nMore information is at http://biostat.mc.vanderbilt.edu/Rrms\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "A new version of rms is now available on CRAN for Linux and Windows (Mac  \nwill probably be available very soon). Largest changes include latex  \nmethods for validate.* and adding the capability to fo",
+      "thread_id": "thread-8a6cf6db2c27",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-333fbd6b6826",
+      "message_id": "<EB2DFF3F-D912-462A-A5E6-9055982F4E6C@depauw.edu>",
+      "from_name": "Bryan Hanson",
+      "from_email_hash": "f192f25954862d3d3fb5bdfe47d3ac8c1018692930d202d1c6a34a72bce68b75",
+      "date": "2011-03-30T09:25:01-04:00",
+      "subject": "[R-pkgs] Package FuncMap Now Available on CRAN",
+      "subject_clean": "Package FuncMap Now Available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/f3d0192c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/f3d0192c/attachment.pl>",
+      "thread_id": "thread-333fbd6b6826",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-9dc2f3c59760",
+      "message_id": "<D1534F4A-3EC1-4771-8CD4-6E097178B516@depauw.edu>",
+      "from_name": "Bryan Hanson",
+      "from_email_hash": "f192f25954862d3d3fb5bdfe47d3ac8c1018692930d202d1c6a34a72bce68b75",
+      "date": "2011-03-30T09:30:09-04:00",
+      "subject": "[R-pkgs] Package ChemoSpec 1.46 Now Available on CRAN",
+      "subject_clean": "Package ChemoSpec 1.46 Now Available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/ebcb0dae/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/ebcb0dae/attachment.pl>",
+      "thread_id": "thread-9dc2f3c59760",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-b6b32f175a94",
+      "message_id": "<4D949C5C.1040102@unige.ch>",
+      "from_name": "Xavier Robin",
+      "from_email_hash": "dbd78a2c1450a4ca2d421ccdf8611b07605e94a2d62e91a11a6e0ddc7b8fca59",
+      "date": "2011-03-31T17:23:08+02:00",
+      "subject": "[R-pkgs] pROC 1.4.3: compare two ROC curves in R",
+      "subject_clean": "pROC 1.4.3: compare two ROC curves in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\npROC is a package to compare, visualize, and smooth receiver operating\ncharacteristic (ROC) curves.\n\nThe package provides the following features:\n* Partial or full area under the curve (AUC) computation\n* Comparison of two ROC curves (curves and AUC)\n* Calculating and plotting confidence intervals\n* Smoothing of the ROC curve\n* Coordinates extraction ('coords' function).\n\nThe main feature of pROC is the comparison between two ROC curves. Three\nmethods are currently implemented for both paired and unpaired ROC curves:\n* Bootstrap for full and partial AUC and smoothed ROC curves\n* DeLong [1] method for full AUC\n* Venkatraman [2, 3].\n\nConfidence intervals can be computed with bootstrap for both empirical\nor smoothed ROC curves:\n* partial or full AUC (also with DeLong [1] method for full AUC)\n* ROC coordinates (thresholds, sensitivity or specificity).\n\nYou can find more information in our paper [4] and on pROC website:\nhttp://www.expasy.org/tools/pROC/\n\nHope you'll find it useful!\n\nXavier Robin\n\n-- \nReferences:\n[1] DeLong ER, DeLong DM, Clarke-Pearson DL (1988) Comparing the areas\nunder two or more correlated receiver operating characteristic curves: a\nnonparametric approach. Biometrics 44, 837?845.\n[2] Venkatraman ES,Begg CB (1996) A distribution-free procedure for\ncomparing receiver operating characteristic curves from a paired\nexperiment. Biometrika 83, 835?848.\n[3] Venkatraman ES (2000) A Permutation Test to Compare Receiver\nOperating Characteristic Curves. Biometrics 56, 1134?1138.\n[4] Robin X, Turck N, Hainard A, et al. (2011). pROC: an open-source\npackage for R and S+ to analyze and compare ROC curves. BMC\nBioinformatics, 12, 77. http://dx.doi.org/10.1186/1471-2105-12-77",
+      "body_snippet": "Dear R users,\n\npROC is a package to compare, visualize, and smooth receiver operating\ncharacteristic (ROC) curves.\n\nThe package provides the following features:\n* Partial or full area under the curve ",
+      "thread_id": "thread-b6b32f175a94",
+      "thread_depth": 0,
+      "month": "2011-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8a6cf6db2c27",
+      "subject": "Major update to rms package",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2011-03-01T15:49:49-06:00",
+      "last_reply": "2011-03-01T15:49:49-06:00",
+      "root_message_id": "msg-8a6cf6db2c27"
+    },
+    {
+      "id": "thread-333fbd6b6826",
+      "subject": "Package FuncMap Now Available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bryan Hanson"
+      ],
+      "started": "2011-03-30T09:25:01-04:00",
+      "last_reply": "2011-03-30T09:25:01-04:00",
+      "root_message_id": "msg-333fbd6b6826"
+    },
+    {
+      "id": "thread-9dc2f3c59760",
+      "subject": "Package ChemoSpec 1.46 Now Available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bryan Hanson"
+      ],
+      "started": "2011-03-30T09:30:09-04:00",
+      "last_reply": "2011-03-30T09:30:09-04:00",
+      "root_message_id": "msg-9dc2f3c59760"
+    },
+    {
+      "id": "thread-b6b32f175a94",
+      "subject": "pROC 1.4.3: compare two ROC curves in R",
+      "message_count": 1,
+      "participants": [
+        "Xavier Robin"
+      ],
+      "started": "2011-03-31T17:23:08+02:00",
+      "last_reply": "2011-03-31T17:23:08+02:00",
+      "root_message_id": "msg-b6b32f175a94"
+    }
+  ]
+}

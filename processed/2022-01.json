@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-01",
+  "messages": [
+    {
+      "id": "msg-df9d183c473f",
+      "message_id": "<CABcwgRRDj=V=CUp5gg=vHawRzGLXKy_uLFQMWxcyM0TsHZzhPg@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2022-01-04T14:55:42+01:00",
+      "subject": "[R-pkgs] PDtoolkit: Collection of Tools for PD Rating Model Development",
+      "subject_clean": "PDtoolkit: Collection of Tools for PD Rating Model Development",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that my new package PDtoolkit is now available on\nCRAN.\n\nThe goal of this package is to cover the most common steps in probability\nof default (PD) rating model development and validation. The main\nprocedures available are those that refer to univariate, bivariate,\nmultivariate analysis, calibration and validation. Along with accompanied\nmonobin and monobinShiny packages, PDtoolkit provides functions which are\nsuitable for different data transformation and modeling tasks such as:\nimputations, monotonic binning of numeric risk factors, binning of\ncategorical risk factors, weights of evidence (WoE) and information value\n(IV) calculations, WoE coding (replacement of risk factors modalities with\nWoE values), risk factor clustering, area under curve (AUC) calculation and\nothers. Additionally, package provides set of validation functions for\ntesting homogeneity, heterogeneity, discriminatory and predictive power of\nthe model.\n\nFor details and examples please check out the github page\nhttps://github.com/andrija-djurovic/PDtoolkit  or README file on CRAN page\nhttps://CRAN.R-project.org/package=PDtoolkit\n\nBest regards,\nAndrija Djurovic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that my new package PDtoolkit is now available on\nCRAN.\n\nThe goal of this package is to cover the most common steps in probability\nof default (PD) rating model de",
+      "thread_id": "thread-df9d183c473f",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-4e32330065f5",
+      "message_id": "<CANotEPvg_U-vjwO=+BQU4Fp3gkqf6ekr0zQ+Rdeg8mSMNB=-HQ@mail.gmail.com>",
+      "from_name": "Martin R. Smith",
+      "from_email_hash": "67594ec5e9d97ba8c9a55ceeff40ce4dc7ab454ff8076b69eb9e7bb32195a74e",
+      "date": "2022-01-11T11:12:13Z",
+      "subject": "[R-pkgs] Fwd: Ternary 2.0: Holdridge life zones and ternary plots",
+      "subject_clean": "Ternary 2.0: Holdridge life zones and ternary plots",
+      "in_reply_to": "<CANotEPs8zWn5xJzuanqLV38VdpHFVnO2qS+iUWnpwkFDp8OTuA@mail.gmail.com>",
+      "references": [
+        "<CANotEPs8zWn5xJzuanqLV38VdpHFVnO2qS+iUWnpwkFDp8OTuA@mail.gmail.com>"
+      ],
+      "body_plain": "Dear R users,\n\nIt is now possible to create and annotate Holdridge life zone plots using\nfunctions modelled on the standard graphics package using the the package\n\"Ternary\", whose v2.0 release is now available from CRAN:\nhttps://CRAN.R-project.org/package=Ternary .\nThe vignette at https://ms609.github.io/Ternary/articles/Holdridge.html gives\nan example and pointers to detailed documentation.\n\nTernary 2.0 also includes a complete 'shiny' graphical user interface to\nallow interactive construction of ternary plots without detailed knowledge\nof R.\n\nRegards,\n\nMartin Smith\n\n\n--\n\n*Dr. Martin R. Smith*\nAssociate Professor in Palaeontology\nDurham University\nDepartment of Earth Sciences\nMountjoy Site, South Road, Durham, DH1 3LE United Kingdom\n\n*M*: +44 (0)774 353 7510\n*E*: martin.smith at durham.ac.uk\n\nsmithlabdurham.github.io\ntwitter.com/PalaeoSmith\n\nThe information in this e-mail and any attachments is co...{{dropped:13}}",
+      "body_snippet": "Dear R users,\n\nIt is now possible to create and annotate Holdridge life zone plots using\nfunctions modelled on the standard graphics package using the the package\n\"Ternary\", whose v2.0 release is now ",
+      "thread_id": "thread-4e32330065f5",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-efa6b3ca7269",
+      "message_id": "<CANotEPuHoVPYJ9W35rQniFmB035fD5Mf-axwUMFv-_T-V-jOYA@mail.gmail.com>",
+      "from_name": "Martin R. Smith",
+      "from_email_hash": "67594ec5e9d97ba8c9a55ceeff40ce4dc7ab454ff8076b69eb9e7bb32195a74e",
+      "date": "2022-01-13T13:37:24Z",
+      "subject": "[R-pkgs] Package \"Rogue\": Detect wildcard taxa in sets of phylogenetic trees",
+      "subject_clean": "Package \"Rogue\": Detect wildcard taxa in sets of phylogenetic trees",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nPackage \"Rogue\" has been published on CRAN:\nhttps://CRAN.R-project.org/package=Rogue.\n\n\"Rogue\" improves phylogenetic analysis by detecting wildcard taxa whose\ninconsistent position reduces split support and resolution in consensus\ntrees.  It implements an effective new information-theoretic approach\n(Smith 2022, https://doi.org/10.1093/sysbio/syab099), and provides an R\ninterface to the established \"RogueNaRok\" C library (Aberer et al. 2013,\nhttps://doi.org/10.1093/sysbio/sys078).\n\nA vignette demonstrating use on Bayesian posterior tree sets can be found\nat https://cran.r-project.org/web/packages/Rogue/vignettes/Bayesian.html.\nQuestions and bug reports are welcome at https://github.com/ms609/Rogue.\n\nRegards,\n\nMartin Smith\n\n--\n\n*Dr. Martin R. Smith*\nAssociate Professor in Palaeontology\nDurham University\nDepartment of Earth Sciences\nMountjoy Site, South Road, Durham, DH1 3LE United Kingdom\n\n*M*: +44 (0)774 353 7510\n*E*: martin.smith at durham.ac.uk\n\nsmithlabdurham.github.io\ntwitter.com/PalaeoSmith\n\nThe information in this e-mail and any attachments is co...{{dropped:13}}",
+      "body_snippet": "Dear R users,\n\nPackage \"Rogue\" has been published on CRAN:\nhttps://CRAN.R-project.org/package=Rogue.\n\n\"Rogue\" improves phylogenetic analysis by detecting wildcard taxa whose\ninconsistent position redu",
+      "thread_id": "thread-efa6b3ca7269",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-741ef5585d28",
+      "message_id": "<CANotEPvuOsnHr1qihG5KAJ-BPjYRLC+2OA2e06xY=hCSzZyujA@mail.gmail.com>",
+      "from_name": "Martin R. Smith",
+      "from_email_hash": "67594ec5e9d97ba8c9a55ceeff40ce4dc7ab454ff8076b69eb9e7bb32195a74e",
+      "date": "2022-01-18T16:25:34Z",
+      "subject": "[R-pkgs] Analysis of phylogenetic datasets in R: package \"TreeSearch\"",
+      "subject_clean": "Analysis of phylogenetic datasets in R: package \"TreeSearch\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nTreeSearch is an R package for phylogenetic analysis, optimized for\nmorphological datasets. Tree search may be conducted using under equal or\nimplied step weights with an explicit (albeit inexact) allowance for\ninapplicable character entries, avoiding some of the pitfalls inherent in\nstandard parsimony methods. Profile parsimony and user-specified optimality\ncriteria are supported.\n\nA graphical interface, which requires no familiarity with R, is designed to\nhelp a user to improve the quality of datasets through critical review of\nunderpinning character codings; and to obtain additional information from\nresults by identifying and summarising clusters of similar trees, mapping\nthe distribution of trees, and removing ?rogue? taxa that obscure\nunderlying relationships.\n\nTaken together, the package aims to support methodological rigour at each\nstep of data collection, analysis, and the exploration of phylogenetic\nresults.\n\nA stable release of TreeSearch is now on CRAN:\nhttps://CRAN.R-project.org/package=TreeSearch\n\nAn introduction to the package is provided in the vignette:\nhttps://ms609.github.io/TreeSearch/articles/tree-search.html\n\nFurther details are in the BioR?iv preprint:\nhttps://www.biorxiv.org/content/10.1101/2021.11.08.467735\n\nRegards,\n\nMartin\n\n\n--\n\n*Dr. Martin R. Smith*\nAssociate Professor in Palaeontology\nDurham University\nDepartment of Earth Sciences\nMountjoy Site, South Road, Durham, DH1 3LE United Kingdom\n\n*M*: +44 (0)774 353 7510\n*E*: martin.smith at durham.ac.uk\n\nsmithlabdurham.github.io\ntwitter.com/PalaeoSmith\n\nMy working days are Monday?Thursday.\n\nThe information in this e-mail and any attachments is co...{{dropped:13}}",
+      "body_snippet": "Dear R users,\n\nTreeSearch is an R package for phylogenetic analysis, optimized for\nmorphological datasets. Tree search may be conducted using under equal or\nimplied step weights with an explicit (albe",
+      "thread_id": "thread-741ef5585d28",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-8ceacbbd7ab2",
+      "message_id": "<CAGu_3ZJqN4W1jYDx0VJZSGmqUn-JK5OaWCC_QM5-S-5Y5FW2GQ@mail.gmail.com>",
+      "from_name": "Jin Li",
+      "from_email_hash": "0e8fa49570da68e7e513a8d175680f82c304a3871821d2e51fa9f8bc3cb71e7c",
+      "date": "2022-01-19T09:48:03+11:00",
+      "subject": "[R-pkgs] Package \"steprf\": Stepwise Predictive Variable Selection for Random Forest",
+      "subject_clean": "Package \"steprf\": Stepwise Predictive Variable Selection for Random Forest",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nA new package \"steprf\" has been published on CRAN:\nhttps://cran.r-project.org/web/packages/steprf/index.html.\n\nIt introduces several novel predictive variable selection methods for\nrandom forest (RF). The selections are based on various\nvariable  importance methods and predictive accuracy in stepwise\nalgorithms. Their performance can be seen in the references cited in the\ndescription of the package.\n\nRegards,\n\n-- \nJin\n------------------------------------------\nJin Li, PhD\nFounder, Data2action, Australia\nhttps://www.researchgate.net/profile/Jin_Li32\nhttps://scholar.google.com/citations?user=Jeot53EAAAAJ&hl=en\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nA new package \"steprf\" has been published on CRAN:\nhttps://cran.r-project.org/web/packages/steprf/index.html.\n\nIt introduces several novel predictive variable selection methods for\nrand",
+      "thread_id": "thread-8ceacbbd7ab2",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-97debe2480a6",
+      "message_id": "<CAPcHnpR7sUAxvQ6D-K4vmdkay8gC91Z4EcAhU3Efbz3isyP7pA@mail.gmail.com>",
+      "from_name": "Andrew Simmons",
+      "from_email_hash": "40b01f168beec35ef27cb62ca97f7a4b288ecbda9c188bcf84504fdbe44290e9",
+      "date": "2022-01-25T15:02:05-05:00",
+      "subject": "[R-pkgs] this.path-package: get executing script's path",
+      "subject_clean": "this.path-package: get executing script's path",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\n\nR package 'this.path' has received an update, the current version\nnumber is 0.5.0\nYou can find this package at:\n\nhttps://CRAN.R-project.org/package=this.path\n\nUpdates include:\n\n(1) added this.path::here (similar to here::here), for constructing\nthe path to a file, starting with the executing script's directory\n\n(2) this.path::this.path is compatible with URLs in base::source, for\nexample source(\"https://raw.githubusercontent.com/ArcadeAntics/this.path/main/tests/this.path_w_URLs.R\")\n\n(3) added separate methods for extracting the shell argument 'FILE'\nfor Windows and Unix-alikes (shell arguments are handled slightly\ndifferently between the two)\n\n(4) on Windows, in Rgui, added support for all languages listed by\nlist.dirs(system.file(package = \"translations\"), full.names = FALSE,\nrecursive = FALSE)\n\nIf you're using version 0.4.4 or less, it is well worth upgrading.\n\n\nRegards,\n    Andrew Simmons",
+      "body_snippet": "Hello everyone,\n\n\nR package 'this.path' has received an update, the current version\nnumber is 0.5.0\nYou can find this package at:\n\nhttps://CRAN.R-project.org/package=this.path\n\nUpdates include:\n\n(1) a",
+      "thread_id": "thread-97debe2480a6",
+      "thread_depth": 0,
+      "month": "2022-01"
+    },
+    {
+      "id": "msg-4d9a0e338a04",
+      "message_id": "<CAMcXZtE84BN-Nbn_e6bm-w-UJUSjzVxC9Q7at4mkh72dzHUWDg@mail.gmail.com>",
+      "from_name": "Stefano Meschiari",
+      "from_email_hash": "1ec7cf8253c563a9924729c6b766ac29160ec999f137eef03299840c87d4ee4e",
+      "date": "2022-01-27T14:45:54-08:00",
+      "subject": "[R-pkgs] latex2exp 0.9.0: Use LaTeX Expressions in Plots",
+      "subject_clean": "latex2exp 0.9.0: Use LaTeX Expressions in Plots",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nlatex2exp is an R package to use a subset of LaTeX to create formatted\ntext and mathematical formulas and symbols. It can be used for axis\nlabels, annotations, legends, titles, etc. throughout R?s plotting\nsystem and ggplot2.\n\nA call to TeX() such as `TeX(r\"(\\textbf{Euler's identity} is $e^{i\\pi}\n+ 1 = 0$.)\")` will return an expression containing the formatted text\nand equation, suitable for plotting. latex2exp works by parsing the\nprovided LaTeX string and converting it to R's plotmath expressions.\n\nA new major version of latex2exp (0.9.0), containing a rewritten\nparser, tens of new commands and symbols, and many bug fixes, is now\navailable on CRAN:\nhttps://cran.r-project.org/package=latex2exp\n\nA website for the package, with examples, vignettes, and a searchable\ntable of supported LaTeX commands, is available at:\nhttps://stefano-meschiari.github.io/latex2exp\n\nFinally, issues should be reported at:\nhttps://github.com/stefano-meschiari/latex2exp/\n\nBest regards,\nStefano\n-- \nStefano Meschiari\nhttp://www.stefanom.io",
+      "body_snippet": "Dear R users,\n\nlatex2exp is an R package to use a subset of LaTeX to create formatted\ntext and mathematical formulas and symbols. It can be used for axis\nlabels, annotations, legends, titles, etc. thr",
+      "thread_id": "thread-4d9a0e338a04",
+      "thread_depth": 0,
+      "month": "2022-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-df9d183c473f",
+      "subject": "PDtoolkit: Collection of Tools for PD Rating Model Development",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2022-01-04T14:55:42+01:00",
+      "last_reply": "2022-01-04T14:55:42+01:00",
+      "root_message_id": "msg-df9d183c473f"
+    },
+    {
+      "id": "thread-4e32330065f5",
+      "subject": "Ternary 2.0: Holdridge life zones and ternary plots",
+      "message_count": 1,
+      "participants": [
+        "Martin R. Smith"
+      ],
+      "started": "2022-01-11T11:12:13+00:00",
+      "last_reply": "2022-01-11T11:12:13+00:00",
+      "root_message_id": "msg-4e32330065f5"
+    },
+    {
+      "id": "thread-efa6b3ca7269",
+      "subject": "Package \"Rogue\": Detect wildcard taxa in sets of phylogenetic trees",
+      "message_count": 1,
+      "participants": [
+        "Martin R. Smith"
+      ],
+      "started": "2022-01-13T13:37:24+00:00",
+      "last_reply": "2022-01-13T13:37:24+00:00",
+      "root_message_id": "msg-efa6b3ca7269"
+    },
+    {
+      "id": "thread-741ef5585d28",
+      "subject": "Analysis of phylogenetic datasets in R: package \"TreeSearch\"",
+      "message_count": 1,
+      "participants": [
+        "Martin R. Smith"
+      ],
+      "started": "2022-01-18T16:25:34+00:00",
+      "last_reply": "2022-01-18T16:25:34+00:00",
+      "root_message_id": "msg-741ef5585d28"
+    },
+    {
+      "id": "thread-8ceacbbd7ab2",
+      "subject": "Package \"steprf\": Stepwise Predictive Variable Selection for Random Forest",
+      "message_count": 1,
+      "participants": [
+        "Jin Li"
+      ],
+      "started": "2022-01-19T09:48:03+11:00",
+      "last_reply": "2022-01-19T09:48:03+11:00",
+      "root_message_id": "msg-8ceacbbd7ab2"
+    },
+    {
+      "id": "thread-97debe2480a6",
+      "subject": "this.path-package: get executing script's path",
+      "message_count": 1,
+      "participants": [
+        "Andrew Simmons"
+      ],
+      "started": "2022-01-25T15:02:05-05:00",
+      "last_reply": "2022-01-25T15:02:05-05:00",
+      "root_message_id": "msg-97debe2480a6"
+    },
+    {
+      "id": "thread-4d9a0e338a04",
+      "subject": "latex2exp 0.9.0: Use LaTeX Expressions in Plots",
+      "message_count": 1,
+      "participants": [
+        "Stefano Meschiari"
+      ],
+      "started": "2022-01-27T14:45:54-08:00",
+      "last_reply": "2022-01-27T14:45:54-08:00",
+      "root_message_id": "msg-4d9a0e338a04"
+    }
+  ]
+}

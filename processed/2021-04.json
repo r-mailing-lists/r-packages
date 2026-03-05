@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-04",
+  "messages": [
+    {
+      "id": "msg-0bc795ac4381",
+      "message_id": "<6049a9ec-bd7f-790a-fb64-be90f08f1c76@sissa.it>",
+      "from_name": "Valerio Gherardi",
+      "from_email_hash": "983935078100044e1c2dfb4ad3814974046de6e286192336cb587b0f8932e6f9",
+      "date": "2021-04-06T17:50:37+02:00",
+      "subject": "[R-pkgs] fcci: Feldman-Cousins Confidence Intervals",
+      "subject_clean": "fcci: Feldman-Cousins Confidence Intervals",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI would like to share with you my package {fcci}, which has just been \naccepted by CRAN <https://CRAN.R-project.org/package=fcci>.\n\nThis tiny package provides support for building Feldman-Cousins \n<https://journals.aps.org/prd/abstract/10.1103/PhysRevD.57.3873> \nconfidence intervals (for Poisson rate and binomial proportions, by now).\n\nThe Feldman-Cousins prescription was originally developed in the context \nof High-Energy Physics, as a consistent method for providing classical \n(frequentist) confidence intervals for rates of rare events. It is, in \ngeneral, useful when dealing with experiments which expect very few \nevents, and works well with rate estimation in the presence of \nsignificant (spurious) background.\n\nIf you have any feedback, suggestion or bug to communicate, you can \nreach out to me through the GitHub repository or by email \n(vgherard at sissa.it).\n\nLinks:\n\n ?- CRAN:https://CRAN.R-project.org/package=fcci\n\n ?- GitHub: https://github.com/vgherard/fcci\n\n ?- Website: https://vgherard.github.io/fcci/\n\nBest regards,\n\nValerio Gherardi.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI would like to share with you my package {fcci}, which has just been \naccepted by CRAN <https://CRAN.R-project.org/package=fcci>.\n\nThis tiny package provides support for building Feldman-C",
+      "thread_id": "thread-0bc795ac4381",
+      "thread_depth": 0,
+      "month": "2021-04"
+    },
+    {
+      "id": "msg-f59e9049b18a",
+      "message_id": "<006b01d736eb$a51f5ef0$ef5e1cd0$@gmail.com>",
+      "from_name": "jeremy@roos m@iii@g oii gm@ii@com",
+      "from_email_hash": "c32248fd78c025d5b527b5c6828a5d1eb8ea00b63ea2523e6a7b20006df252f2",
+      "date": "2021-04-21T22:19:33+02:00",
+      "subject": "[R-pkgs] gmgm: Gaussian Mixture Graphical Model Learning and Inference",
+      "subject_clean": "gmgm: Gaussian Mixture Graphical Model Learning and Inference",
+      "in_reply_to": "<006401d736ea$edd02f90$c9708eb0$@gmail.com>",
+      "references": [
+        "<006401d736ea$edd02f90$c9708eb0$@gmail.com>"
+      ],
+      "body_plain": "Dear R users,\n\n \n\nI am happy to announce that gmgm 1.0.2 is available on CRAN:\n\nhttps://cran.r-project.org/package=gmgm\n\n \n\ngmgm provides a complete framework to create, manipulate, learn the\nstructure and the parameters, and perform inference in Gaussian mixture\ngraphical models, which include Bayesian networks and dynamic Bayesian\nnetworks (their temporal extension) whose local probability distributions\nare described by Gaussian mixture models.\n\n \n\nThe related GitHub project and an example of use of this package can be\nfound at:\n\nhttps://github.com/jeremyroos/gmgm\n\n \n\nPlease feel free to contact me for more details or to report any issue.\n\n \n\nBest regards,\n\nJ?r?my Roos\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n \n\nI am happy to announce that gmgm 1.0.2 is available on CRAN:\n\nhttps://cran.r-project.org/package=gmgm\n\n \n\ngmgm provides a complete framework to create, manipulate, learn the\nstructur",
+      "thread_id": "thread-f59e9049b18a",
+      "thread_depth": 0,
+      "month": "2021-04"
+    },
+    {
+      "id": "msg-201d5f1c80f8",
+      "message_id": "<YQXPR0101MB08238462CC29689B25D6BE269C449@YQXPR0101MB0823.CANPRD01.PROD.OUTLOOK.COM>",
+      "from_name": "Denis Cousineau",
+      "from_email_hash": "a4976ffb1026766b96582c21b4ce2b819b43775c02e0e6f62d19d475d0343c1c",
+      "date": "2021-04-24T14:05:40Z",
+      "subject": "[R-pkgs] superb (version 0.9.5.0) released to CRAN",
+      "subject_clean": "superb (version 0.9.5.0) released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all, \n\nwe are happy to announce that the package ``superb`` is now available on CRAN. \nhttps://CRAN.R-project.org/package=superb  \n\n``superb`` (Summary statistics Plots with adjusted Error Bars) is a package that produces\nplots of summary statistics with adjusted error bars. These bars are adjusted to\nallow pairwise comparisons in both between and within-subject design (Baguley, 2012; https://doi.org/10.3758%2Fs13428-011-0123-7). \n\nThe latest version 0.9.5.0 (Codename \"95% confident\") is a spin-off of the package \n``MeanPlot`` for Mathematica 10.0 and above (Cousineau, 2017; https://doi.org/10.5709/acp-0214-z).\n\nWith simple adjustments, you get raw confidence intervals or standard errors, but also\nintervals adjusted for within-subject-designs and more.\n\nThe plots created are ggplot objects that can be fully customized for your purpose. The package generates advanced plots such as raincloud plots and violin plots, for example:\n \n\nExamples for the usage of the main function ``superbPlot()``, the documentation of all functions, as well as vignettes can be found at \nhttps://dcousin3.github.io/superb/\n\nIf you notice a bug or have suggestions for improvements, please submit an issue with a minimal reproducible example at \nhttps://github.com/dcousin3/superb/issues/\n\nA complete text describing the ``superb`` framework and philosophy is currently under \nconsiderations as Advances in Methods and Practices in Psychological Sciences.\n\nBest, \nDenis Cousineau\n\n\nRecipient of the 2021 mid-career award from the Canadian Society for Brain, Behavior and Cognitive Sciences\n2020 APA Distinguished Scientific Awards for an Early Career Contribution to Psychology to M.-A. Goulet \n2016 R. Duncan Luce Outstanding Paper award for Learning curves as strong evidence for testing models: The case of EBRW",
+      "body_snippet": "Dear all, \n\nwe are happy to announce that the package ``superb`` is now available on CRAN. \nhttps://CRAN.R-project.org/package=superb  \n\n``superb`` (Summary statistics Plots with adjusted Error Bars) ",
+      "thread_id": "thread-201d5f1c80f8",
+      "thread_depth": 0,
+      "month": "2021-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0bc795ac4381",
+      "subject": "fcci: Feldman-Cousins Confidence Intervals",
+      "message_count": 1,
+      "participants": [
+        "Valerio Gherardi"
+      ],
+      "started": "2021-04-06T17:50:37+02:00",
+      "last_reply": "2021-04-06T17:50:37+02:00",
+      "root_message_id": "msg-0bc795ac4381"
+    },
+    {
+      "id": "thread-f59e9049b18a",
+      "subject": "gmgm: Gaussian Mixture Graphical Model Learning and Inference",
+      "message_count": 1,
+      "participants": [
+        "jeremy@roos m@iii@g oii gm@ii@com"
+      ],
+      "started": "2021-04-21T22:19:33+02:00",
+      "last_reply": "2021-04-21T22:19:33+02:00",
+      "root_message_id": "msg-f59e9049b18a"
+    },
+    {
+      "id": "thread-201d5f1c80f8",
+      "subject": "superb (version 0.9.5.0) released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Denis Cousineau"
+      ],
+      "started": "2021-04-24T14:05:40+00:00",
+      "last_reply": "2021-04-24T14:05:40+00:00",
+      "root_message_id": "msg-201d5f1c80f8"
+    }
+  ]
+}

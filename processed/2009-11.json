@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-11",
+  "messages": [
+    {
+      "id": "msg-46cb2c4973f3",
+      "message_id": "<1409290745@web.de>",
+      "from_name": "Jens Oehlschlägel",
+      "from_email_hash": "f073adaa565bb1d2ee057e84a39a987c70da1df4938e3d4d5a72e0cc3cffbdc1",
+      "date": "2009-11-06T10:36:17+01:00",
+      "subject": "[R-pkgs] New version of package ff",
+      "subject_clean": "New version of package ff",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nff Version 2.1.1 is available on CRAN. It now supports large data.frames, \ncsv import/export, packed atomic datatypes and bit filtering from package \n'bit' on which it depends from now.\n\nSome performance results in seconds from test data with 78 mio rows and 7 columns on a 3 GB notebook:\n\nsequential reading 1 mio rows: csv = 32.7  ffdf = 1.3\nsequential writing 1 mio rows: csv = 35.5  ffdf = 1.5\n\nExamples of things you can do with ff and bit:\n- direct random access to rows of large data-frame instead of talking to SQL database (?ffdf)\n- store 4-level factor like A,T,G,C with 2bit instead of 32bit (?vmode)\n- fast chunked iteration (?chunk)\n- run linear model on large dataset using biglm (?chunk.ffdf)\n- handle boolean selections by factor 32 faster and less RAM consuming (?bit)\n- handle very skewed selections very fast (?bitwhich)\n- parallel access to large dataset just by sending ff's small metadata from master to slaves (e.g. with snowfall)\n\nff is hosted on r-forge now and you find some presentations on ff at\nhttp://ff.r-forge.r-project.org/\n\nHope you find this useful. We appreciate any feedback.\n\n\nJens & Daniel",
+      "body_snippet": "Dear R community,\n\nff Version 2.1.1 is available on CRAN. It now supports large data.frames, \ncsv import/export, packed atomic datatypes and bit filtering from package \n'bit' on which it depends from ",
+      "thread_id": "thread-46cb2c4973f3",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-d42a5d8ea5eb",
+      "message_id": "<4AF40E3F.2030602@unige.ch>",
+      "from_name": "Alexis Gabadinho",
+      "from_email_hash": "f266eb5dc564422b73c163c3575ea632a6b7c79c4b5126673755776c8b963b20",
+      "date": "2009-11-06T12:53:35+01:00",
+      "subject": "[R-pkgs] TraMineR update to 1.4-1",
+      "subject_clean": "TraMineR update to 1.4-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nAn update to version 1.4-1 of the TraMineR package is available on the \nCRAN. The package is intended for mining, describing and visualizing \nsequences of states or events and more generally discrete sequential data.\n\nThis update fixes minor bugs and contains several code improvements. \nUpgrade is recommended. A list of changes and additional information \nabout the TraMineR package can be found here:\n\nhttp://mephisto.unige.ch/traminer/\n\nA local repository is now also available, containing binaries for those \nusing versions of R older than 2.9.\n\nCheers,\nThe TraMineR team.",
+      "body_snippet": "Dear R users,\n\nAn update to version 1.4-1 of the TraMineR package is available on the \nCRAN. The package is intended for mining, describing and visualizing \nsequences of states or events and more gene",
+      "thread_id": "thread-d42a5d8ea5eb",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-85d29c1646c1",
+      "message_id": "<4AF5F1E2.9070703@bank-banque-canada.ca>",
+      "from_name": "Paul Gilbert",
+      "from_email_hash": "51f348dc0febec9b32e9d9dcb86f6de731958e1295e818209b4c127bffef5569",
+      "date": "2009-11-07T17:17:06-05:00",
+      "subject": "[R-pkgs] new dse package",
+      "subject_clean": "new dse package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "With the release of R-2.10.0 I have divided the dse bundle into packages. The bundled package dse1 and part of dse2 are now in the new package dse. The remaining part of dse2 is in a new package EvalEst. The package dse does multivariate ARMA and state space time series modelling and forecasting, while package EvalEst is now focused on the evaluation of estimation methods. To aid transition, there are packages dse1 and dse2 on CRAN. These do nothing except require the new packages dse and EvalEst respectively, but should help prevent breaking of existing code that requires() dse1 or dse2.\n\nI have also taken this opportunity to do a long overdue cleanup of the Users' Guides distributed as vignettes in the packages.\n\nPaul Gilbert\n\n====================================================================================\n\nLa version fran?aise suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential in...{{dropped:26}}",
+      "body_snippet": "With the release of R-2.10.0 I have divided the dse bundle into packages. The bundled package dse1 and part of dse2 are now in the new package dse. The remaining part of dse2 is in a new package EvalE",
+      "thread_id": "thread-85d29c1646c1",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-2b8144ff579e",
+      "message_id": "<4AF97BDA.3020608@isped.u-bordeaux2.fr>",
+      "from_name": "Rondeau Virginie",
+      "from_email_hash": "735a459c8c4eb8398ef509bab3edfc89d21da54f104b2db84d438cf31b460496",
+      "date": "2009-11-10T15:42:34+01:00",
+      "subject": "[R-pkgs] NEW release of FRAILTYPACK",
+      "subject_clean": "NEW release of FRAILTYPACK",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nWe are happy to announce, after a long gestation, the release of the new \nversion of FRAILTYPACK (version 2.2-9.5) which is now available from \nCRAN. The package fit general frailty models using penalized likelihood \nestimation, for clustered or recurrent events.\n\nFor instance :\n\n--  ADDITIVE FRAILTY MODELS for proportional hazards models with two \ncorrelated random effects (intercept random effect with random slope):\n\n  \nfitAdditive<-additivePenal(Surv(t1,t2,event)~cluster(group)+var1+slope(var1), \n\n  correlation=TRUE,data=dataAdditive,n.knots=8,kappa1=10000)\n\n\n--  NESTED FRAILTY MODELS for hierarchically clustered data (with 2 \nlevels of clustering) by including two random effects:\n\n  \nfitnested<-frailtyPenal(Surv(t1,t2,event)~cluster(group)+subcluster(subgroup), \n\n  data=dataNested,n.knots=8,kappa1=50000)\n\n-- JOINT FRAILTY MODELS in the context of joint modelling of recurrent \nevents with terminal event:\n\n  fitJoint<-frailtyPenal(Surv(time.entry,time.end,status)~cluster(id)+\n    \nterminal(status.terminal),formula.terminalEvent=~status.terminal,data=dataJoint \n\n  ,n.knots=12,kappa1=1,kappa2=1,joint=TRUE,recurrentAG=TRUE)\n\nWe included several examples.\n\n\n\nREFERENCES\n\n[1] Rondeau V, Michiels S, Liquet B, Pignon JP. Investigating trial and \ntreatment hete\nrogeneity in an individual patient data meta-analysis of survival data \nby means of the\npenalized maximum likelihood approach. Statistics in Medicine 2008 ;27 \n:1894-1910.\n\n[2] Rondeau V, Mathoulin-Pelissier S, Jacqmin-Gadda H, Brouste V, \nSoubeyran P. Joint\nfrailty models for recurring events and death using maximum penalized \nlikelihood es-\ntimation : application on cancer events. Biostatistics 2007 ; 8(4),708-721.\n\n[3] Rondeau V, Filleul L, Joly P. Nested frailty models using maximum \npenalized likelihood estimation. Statistics in Medicine. 2006 ;25(23) : \n4036-4052.\n\n[4] Rondeau V, Gonzalez JR. FRAILTYPACK : a computer program for the \nanalysis of\ncorrelated failure time data using penalized likelihood estimation. \nComputer Methods\nand Statistics in Biomedicine, 2005 ;80,154-164.\n\n[5] Rondeau V, Joly P, Commenges D. Maximum penalized likelihood \nestimation in frailty\nmodels. Lifetime Data Analysis, 2003 ;9 :139-153.\n\n-- \n_____________________________________________________________________\nVirginie RONDEAU, Ph.D. - Chercheur INSERM (CR1)\n\nINSERM U897 (Biostatistique),ISPED\nUniversit? Victor Segalen Bordeaux2,\n146 rue L?o Saignat,\n33076 Bordeaux Cedex, France.\n\nemail   : Virginie.Rondeau at isped.u-bordeaux2.fr\n\nweb site : http://biostat.isped.u-bordeaux2.fr/\nPhone   : (33) 557 574 531\nFax     : (33) 556 240 081",
+      "body_snippet": "Dear All,\n\nWe are happy to announce, after a long gestation, the release of the new \nversion of FRAILTYPACK (version 2.2-9.5) which is now available from \nCRAN. The package fit general frailty models ",
+      "thread_id": "thread-2b8144ff579e",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-5bc22ab85d5a",
+      "message_id": "<62C82B39B8A85E4B95A18F7F7B852F87055902A343@exvic-mbx03.nexus.csiro.au>",
+      "from_name": "Mark.Bravington at csiro.au",
+      "from_email_hash": "1760727dbf1df1aa8a04bf9be4b052304a85c59263f79bf5814d7216d8dccc9c",
+      "date": "2009-11-16T11:33:42+11:00",
+      "subject": "[R-pkgs] mvbutils and debug: new versions",
+      "subject_clean": "mvbutils and debug: new versions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions of the 'mvbutils' and 'debug' packages are now available on CRAN. These should work with R 2.10 as well as R 2.9.\n\n'mvbutils' offers tools for organization of workspaces, function/documentation editing with backups, package construction and updating, seamless per-object lazy-loading, and various miscellaneous goodies.\n\nNew in this version: nearly-automated package building using only plain-text documentation, plus the ability to edit & update your package while it's loaded, i.e. without needing to reinstall it or to quit R. These new features are \"beta level\"; they've been tested by me and some colleagues, but are still a bit experimental. Comments welcome.\n\n'debug' is a debugger with: separate code windows; line-numbered conditional breakpoints; continuation on errors; direct interpretation of commands from console; skipping backwards & forwards; handling of 'on.exit'. This version fixes a few minor bugs.\n\n-- \nMark Bravington\nCSIRO Mathematical & Information Sciences\nMarine Laboratory\nCastray Esplanade\nHobart 7001\nTAS\n\nph (+61) 3 6232 5118\nfax (+61) 3 6232 5012\nmob (+61) 438 315 623",
+      "body_snippet": "New versions of the 'mvbutils' and 'debug' packages are now available on CRAN. These should work with R 2.10 as well as R 2.9.\n\n'mvbutils' offers tools for organization of workspaces, function/documen",
+      "thread_id": "thread-5bc22ab85d5a",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-df75566c6d10",
+      "message_id": "<4B0A9F6F.1050001@stamats.de>",
+      "from_name": "Matthias Kohl",
+      "from_email_hash": "d4f0ad548e5b2b7cf7a8ad59fdeac7b825fdec0788879a852168f8d932a1a177",
+      "date": "2009-11-23T15:42:55+01:00",
+      "subject": "[R-pkgs] new version of distr-family of packages",
+      "subject_clean": "new version of distr-family of packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new version 2.2 of our distr-family of packages has now been \navailable on CRAN for several days. As there were many changes we will \nonly sketch the most important ones here. For more details see the \ncorresponding NEWS files (e.g. news(package = \"distr\") or using function \nNEWS from package startupmsg i.e. NEWS(\"distr\")).\n\nFirst of all a new package distrEllipse was added to the family which \nincludes S4 classes and methods for elliptical symmetric distributions.\n\n##############################################\n## All packages (distr, distrEx, distrSim, distrTEst, distrTeach,\n##                         distrMod, distrEllipse, distrDoc as well as\n##                         startupmsg and SweaveListingUtils)\n##############################################\n- TOBEDONE file was added as a starting point for collaborations. The\n  file can be displayed via function TOBEDONE from package startupmsg;\n  e.g. TOBEDONE(\"distr\")\n- tests/Examples folder for some automatic testing was introduced\n\n\n##############################################\n## Package distr\n##############################################\n- new diagnostic function (more specifically S4 method)\n                                  qqplot()\n  for quantile-quantile plots to work with distribution objects\n  as argument;  in addition to function qqplot() from package \"stats\"\n  has functionality for point-wise and simultaneous confidence bands\n- under the hood: a new slot symmetry was introduced\n  for distributions\n\n##############################################\n## Package distrEx\n##############################################\n- enhanced E (expectation), m1df, m2df (clipped 1. and 2.\n  moments) methods  --- now you can specify lower and\n  upper integration bounds in the E(.), var(.) functions\n- new class GPareto for generalized Pareto distribution\n  (implemented by Nataliya Horbenko)\n\n##############################################\n## Package distrMod\n##############################################\n- methods for qqplot() for parametric model objects as argument\n- unified treatment of NAs\n\n##############################################\n## Package SweaveListingUtils\n##############################################\n- commands:\n * SweaveListingPreparations() is more flexible\n    [see help & NEWS file]\n * integrated Andrew Ellis's nice ideas into SweaveListingUtils\n    to use \\lstenvironment\n * individual markup style for base or recommended packages\n   (checked for with new function isBaseOrRecommended()) is\n    distinct now by default (extra color RRecomdcolor)\n * temporarily changes (like background color) made easier:\n    by new functions\n     + lstdefRstyle to change Rstyle\n     + lstsetRall to change all R-like styles (i.e. Rstyle, Rinstyle,\n        Routstyle, Rcodestyle)\n * now can specify markup styles for Sinput, Soutput, Scode,\n    separately as Rin, Rout, Rcode\n * colors now have suffix \"color\", i.e.\n     Rcomment -> Rcommentcolor, Rout -> Routcolor\n- vignette:\n * included an example with escape sequences in vignette\n * included an example with framed code in vignette\n\nBest\nPeter\nMatthias\n\n-- \nDr. Matthias Kohl\nwww.stamats.de",
+      "body_snippet": "The new version 2.2 of our distr-family of packages has now been \navailable on CRAN for several days. As there were many changes we will \nonly sketch the most important ones here. For more details see",
+      "thread_id": "thread-df75566c6d10",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-437a5001a781",
+      "message_id": "<4B0FBC32.8060602@cbio.uct.ac.za>",
+      "from_name": "Renaud Gaujoux",
+      "from_email_hash": "eb8074b191ae78032e16ddb5a1d6d46dfca04413aae7bd1a318ec920559bbd21",
+      "date": "2009-11-27T13:46:58+02:00",
+      "subject": "[R-pkgs] NMF package for Nonnegative Matrix Factorization",
+      "subject_clean": "NMF package for Nonnegative Matrix Factorization",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The 'NMF' package implements a number of standard algorithms to perform \nNonnegative Matrix Factorization.\nIt also provides a flexible framework to easily test and develop new \nmethods, as well as a layer to work with Bioconductor objects.\nThe package is available from CRAN. Feedbacks are welcome.\n\n-- \n\nRenaud Gaujoux\nComputational Biology - University of Cape Town\nSouth Africa",
+      "body_snippet": "The 'NMF' package implements a number of standard algorithms to perform \nNonnegative Matrix Factorization.\nIt also provides a flexible framework to easily test and develop new \nmethods, as well as a l",
+      "thread_id": "thread-437a5001a781",
+      "thread_depth": 0,
+      "month": "2009-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-46cb2c4973f3",
+      "subject": "New version of package ff",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschlägel"
+      ],
+      "started": "2009-11-06T10:36:17+01:00",
+      "last_reply": "2009-11-06T10:36:17+01:00",
+      "root_message_id": "msg-46cb2c4973f3"
+    },
+    {
+      "id": "thread-d42a5d8ea5eb",
+      "subject": "TraMineR update to 1.4-1",
+      "message_count": 1,
+      "participants": [
+        "Alexis Gabadinho"
+      ],
+      "started": "2009-11-06T12:53:35+01:00",
+      "last_reply": "2009-11-06T12:53:35+01:00",
+      "root_message_id": "msg-d42a5d8ea5eb"
+    },
+    {
+      "id": "thread-85d29c1646c1",
+      "subject": "new dse package",
+      "message_count": 1,
+      "participants": [
+        "Paul Gilbert"
+      ],
+      "started": "2009-11-07T17:17:06-05:00",
+      "last_reply": "2009-11-07T17:17:06-05:00",
+      "root_message_id": "msg-85d29c1646c1"
+    },
+    {
+      "id": "thread-2b8144ff579e",
+      "subject": "NEW release of FRAILTYPACK",
+      "message_count": 1,
+      "participants": [
+        "Rondeau Virginie"
+      ],
+      "started": "2009-11-10T15:42:34+01:00",
+      "last_reply": "2009-11-10T15:42:34+01:00",
+      "root_message_id": "msg-2b8144ff579e"
+    },
+    {
+      "id": "thread-5bc22ab85d5a",
+      "subject": "mvbutils and debug: new versions",
+      "message_count": 1,
+      "participants": [
+        "Mark.Bravington at csiro.au"
+      ],
+      "started": "2009-11-16T11:33:42+11:00",
+      "last_reply": "2009-11-16T11:33:42+11:00",
+      "root_message_id": "msg-5bc22ab85d5a"
+    },
+    {
+      "id": "thread-df75566c6d10",
+      "subject": "new version of distr-family of packages",
+      "message_count": 1,
+      "participants": [
+        "Matthias Kohl"
+      ],
+      "started": "2009-11-23T15:42:55+01:00",
+      "last_reply": "2009-11-23T15:42:55+01:00",
+      "root_message_id": "msg-df75566c6d10"
+    },
+    {
+      "id": "thread-437a5001a781",
+      "subject": "NMF package for Nonnegative Matrix Factorization",
+      "message_count": 1,
+      "participants": [
+        "Renaud Gaujoux"
+      ],
+      "started": "2009-11-27T13:46:58+02:00",
+      "last_reply": "2009-11-27T13:46:58+02:00",
+      "root_message_id": "msg-437a5001a781"
+    }
+  ]
+}

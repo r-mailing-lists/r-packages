@@ -1,0 +1,225 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2006-04",
+  "messages": [
+    {
+      "id": "msg-620111ee71bf",
+      "message_id": "<443006A1.8070008@rumms.uni-mannheim.de>",
+      "from_name": "Jussi Klemelä",
+      "from_email_hash": "a8a027cda419d24ab3869373bb9522e58cfa5a22f78658895e4501caca490a17",
+      "date": "2006-04-02T19:15:13+02:00",
+      "subject": "[R-pkgs] denpro_0.8.1",
+      "subject_clean": "denpro_0.8.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nVersion denpro_0.8.1 of denpro package is available.\n\nDenpro is a package for visualization of  multivariate functions, sets, \nand data.\nIt is specialized for visualizing multivariate density functions\nand density estimates.\n\nA basic tool is a level set tree,\nwhich makes a recursive approximation of a multivariate function.\nWith the help of level set trees one may define shape isomorphic\ntransformations of a multivariate function to a 1D function.\nMore information is available on the web-page\n\nhttp://www.rni.helsinki.fi/~jsk/denpro/\n\nJussi Klemel?",
+      "body_snippet": "Dear R users,\n\nVersion denpro_0.8.1 of denpro package is available.\n\nDenpro is a package for visualization of  multivariate functions, sets, \nand data.\nIt is specialized for visualizing multivariate d",
+      "thread_id": "thread-620111ee71bf",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-620111ee71bf",
+      "message_id": "<443006A1.8070008@rumms.uni-mannheim.de>",
+      "from_name": "Jussi Klemelä",
+      "from_email_hash": "a8a027cda419d24ab3869373bb9522e58cfa5a22f78658895e4501caca490a17",
+      "date": "2006-04-02T19:15:13+02:00",
+      "subject": "[R-pkgs] denpro_0.8.1",
+      "subject_clean": "denpro_0.8.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nVersion denpro_0.8.1 of denpro package is available.\n\nDenpro is a package for visualization of  multivariate functions, sets, \nand data.\nIt is specialized for visualizing multivariate density functions\nand density estimates.\n\nA basic tool is a level set tree,\nwhich makes a recursive approximation of a multivariate function.\nWith the help of level set trees one may define shape isomorphic\ntransformations of a multivariate function to a 1D function.\nMore information is available on the web-page\n\nhttp://www.rni.helsinki.fi/~jsk/denpro/\n\nJussi Klemel?",
+      "body_snippet": "Dear R users,\n\nVersion denpro_0.8.1 of denpro package is available.\n\nDenpro is a package for visualization of  multivariate functions, sets, \nand data.\nIt is specialized for visualizing multivariate d",
+      "thread_id": "thread-620111ee71bf",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-aba4cab0e405",
+      "message_id": "<Pine.LNX.4.44.0604112031080.7162-100000@reclus.nhh.no>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "a0c87926e9477aa221755cc93bdef47227c3563fd707e66ae49044467663d168",
+      "date": "2006-04-11T20:45:16+02:00",
+      "subject": "[R-pkgs] Incompatible update to splancs",
+      "subject_clean": "Incompatible update to splancs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">From version 2.01-17, splancs, a package for spatial point pattern \nanalysis, depends on package sp. \n\nBecause both packages have defined a bounding box function bbox(), the\nbbox() method in sp has been given priority, and the default object for\ndispatch is an array with two or more columns (as in splancs until now).\n\nHowever, the deprecated splancs function returned a non-closed rectangle\nof coordinates, rather than the 2x2 matrix returned by sp bbox().\n\nConsequently, any splancs bbox() uses in user code need to be replaced by\nbboxx(bbox()), where bboxx() is a helper function unrolling the sp bbox()  \noutput into the form used until now by splancs.\n\nWith apologies for the bumpy ride,\n\n-- \nRoger Bivand\nEconomic Geography Section, Department of Economics, Norwegian School of\nEconomics and Business Administration, Helleveien 30, N-5045 Bergen,\nNorway. voice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
+      "body_snippet": ">From version 2.01-17, splancs, a package for spatial point pattern \nanalysis, depends on package sp. \n\nBecause both packages have defined a bounding box function bbox(), the\nbbox() method in sp has b",
+      "thread_id": "thread-aba4cab0e405",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-aba4cab0e405",
+      "message_id": "<Pine.LNX.4.44.0604112031080.7162-100000@reclus.nhh.no>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "a0c87926e9477aa221755cc93bdef47227c3563fd707e66ae49044467663d168",
+      "date": "2006-04-11T20:45:16+02:00",
+      "subject": "[R-pkgs] Incompatible update to splancs",
+      "subject_clean": "Incompatible update to splancs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">From version 2.01-17, splancs, a package for spatial point pattern \nanalysis, depends on package sp. \n\nBecause both packages have defined a bounding box function bbox(), the\nbbox() method in sp has been given priority, and the default object for\ndispatch is an array with two or more columns (as in splancs until now).\n\nHowever, the deprecated splancs function returned a non-closed rectangle\nof coordinates, rather than the 2x2 matrix returned by sp bbox().\n\nConsequently, any splancs bbox() uses in user code need to be replaced by\nbboxx(bbox()), where bboxx() is a helper function unrolling the sp bbox()  \noutput into the form used until now by splancs.\n\nWith apologies for the bumpy ride,\n\n-- \nRoger Bivand\nEconomic Geography Section, Department of Economics, Norwegian School of\nEconomics and Business Administration, Helleveien 30, N-5045 Bergen,\nNorway. voice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
+      "body_snippet": ">From version 2.01-17, splancs, a package for spatial point pattern \nanalysis, depends on package sp. \n\nBecause both packages have defined a bounding box function bbox(), the\nbbox() method in sp has b",
+      "thread_id": "thread-aba4cab0e405",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-388215f7abfa",
+      "message_id": "<20060418195026.GA6763@sfu.ca>",
+      "from_name": "Sigal Blay",
+      "from_email_hash": "4ecf5c103cd4994edeeda757e107364d8c2e086628bd9431fabd0ca8f1caa31f",
+      "date": "2006-04-18T12:50:26-07:00",
+      "subject": "[R-pkgs] Version 1.0 of hapassoc now available from CRAN",
+      "subject_clean": "Version 1.0 of hapassoc now available from CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.0 of hapassoc now available from CRAN\n\nhapassoc is an R package for likelihood inference of trait associations \nwith SNP haplotypes and other attributes using the EM Algorithm. Recent \nchanges include the addition of anova and logLik methods for the \nclass hapassoc, to allow users to perform likelihood ratio tests of \nhaplotype effects. Other changes include bug-fixes and improvements to \nthe documentation, such as the addition of a package vignette. See the \nexerpt from the ChangeLog for more details.\n\nChangeLog\n\n2006-04-04 Version 1.0\n\n * hapassoc(): the \"baseline\" argument is documented to have default\n   equal to the most common haplotype, but the code to implement this\n   default was lost and needed to be replaced.\n * hapassoc(): added a \"verbose\" flag. Default is verbose=FALSE. If\n   TRUE users see the iteration number and value of the convergence\n   criterion at each iteration of the EM algorithm.\n * pre.hapassoc(): added a \"verbose\" flag. Default is verbose=TRUE.\n   If TRUE users see a list of the SNP genotypes used to form\n   haplotypes and a list of the other \"non-haplotype\" variables.\n * Package vignette \"hapassoc\" added. After loading the package, type\n   vignette(\"hapassoc\") to view.\n\n2006-03-22\n\n * Overall addition of the log-likelihood functions\n * hapassoc(): function now returns log-likelihood and model\n * logLik.hapassoc(): New function to extract the log-likelihood from\n   a hapassoc object\n * anova.hapassoc(): New function to perform likelihood ratio test on\n   two hapassoc objects.\n\n2006-02-02 Minor changes:\n\n * EMvar(): fixed a bug occurring when all haplotype phases are known.\n * RecodeHaplos(): fixed a bug where a single column of non-haplotype\n   data in a non-allelic data set was losing its name.\n * hapassoc(): Change \"...\" argument of hapassoc to \"start\".\n   Previously the only intended use of \"...\" was to allow the user to\n   pass in \"start\" for starting values to the glm function, rather\n   than to allow the user to pass in other optional arguments to glm.\n   We have now made this more explicit by making this argument more\n   specific.",
+      "body_snippet": "Version 1.0 of hapassoc now available from CRAN\n\nhapassoc is an R package for likelihood inference of trait associations \nwith SNP haplotypes and other attributes using the EM Algorithm. Recent \nchang",
+      "thread_id": "thread-388215f7abfa",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-388215f7abfa",
+      "message_id": "<20060418195026.GA6763@sfu.ca>",
+      "from_name": "Sigal Blay",
+      "from_email_hash": "4ecf5c103cd4994edeeda757e107364d8c2e086628bd9431fabd0ca8f1caa31f",
+      "date": "2006-04-18T12:50:26-07:00",
+      "subject": "[R-pkgs] Version 1.0 of hapassoc now available from CRAN",
+      "subject_clean": "Version 1.0 of hapassoc now available from CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.0 of hapassoc now available from CRAN\n\nhapassoc is an R package for likelihood inference of trait associations \nwith SNP haplotypes and other attributes using the EM Algorithm. Recent \nchanges include the addition of anova and logLik methods for the \nclass hapassoc, to allow users to perform likelihood ratio tests of \nhaplotype effects. Other changes include bug-fixes and improvements to \nthe documentation, such as the addition of a package vignette. See the \nexerpt from the ChangeLog for more details.\n\nChangeLog\n\n2006-04-04 Version 1.0\n\n * hapassoc(): the \"baseline\" argument is documented to have default\n   equal to the most common haplotype, but the code to implement this\n   default was lost and needed to be replaced.\n * hapassoc(): added a \"verbose\" flag. Default is verbose=FALSE. If\n   TRUE users see the iteration number and value of the convergence\n   criterion at each iteration of the EM algorithm.\n * pre.hapassoc(): added a \"verbose\" flag. Default is verbose=TRUE.\n   If TRUE users see a list of the SNP genotypes used to form\n   haplotypes and a list of the other \"non-haplotype\" variables.\n * Package vignette \"hapassoc\" added. After loading the package, type\n   vignette(\"hapassoc\") to view.\n\n2006-03-22\n\n * Overall addition of the log-likelihood functions\n * hapassoc(): function now returns log-likelihood and model\n * logLik.hapassoc(): New function to extract the log-likelihood from\n   a hapassoc object\n * anova.hapassoc(): New function to perform likelihood ratio test on\n   two hapassoc objects.\n\n2006-02-02 Minor changes:\n\n * EMvar(): fixed a bug occurring when all haplotype phases are known.\n * RecodeHaplos(): fixed a bug where a single column of non-haplotype\n   data in a non-allelic data set was losing its name.\n * hapassoc(): Change \"...\" argument of hapassoc to \"start\".\n   Previously the only intended use of \"...\" was to allow the user to\n   pass in \"start\" for starting values to the glm function, rather\n   than to allow the user to pass in other optional arguments to glm.\n   We have now made this more explicit by making this argument more\n   specific.",
+      "body_snippet": "Version 1.0 of hapassoc now available from CRAN\n\nhapassoc is an R package for likelihood inference of trait associations \nwith SNP haplotypes and other attributes using the EM Algorithm. Recent \nchang",
+      "thread_id": "thread-388215f7abfa",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-f18f3bf66c46",
+      "message_id": "<m0aca7s31f.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2006-04-27T12:53:16+02:00",
+      "subject": "[R-pkgs] pls package: bugfix release 1.2-1",
+      "subject_clean": "pls package: bugfix release 1.2-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 are\n\n- Fixed bug in kernelpls.fit() that resulted in incorrect results when fitting\n  mulitresponse models with fewer responses than predictors\n- Changed default radii in corrplot()\n- It is now possible to select the radii of the circles in corrplot\n\nSee the file CHANGES in the sources for all changes.\n\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\n-- \nBj?rn-Helge Mevik",
+      "body_snippet": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 a",
+      "thread_id": "thread-f18f3bf66c46",
+      "thread_depth": 0,
+      "month": "2006-04"
+    },
+    {
+      "id": "msg-f18f3bf66c46",
+      "message_id": "<m0aca7s31f.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2006-04-27T12:53:16+02:00",
+      "subject": "[R-pkgs] pls package: bugfix release 1.2-1",
+      "subject_clean": "pls package: bugfix release 1.2-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 are\n\n- Fixed bug in kernelpls.fit() that resulted in incorrect results when fitting\n  mulitresponse models with fewer responses than predictors\n- Changed default radii in corrplot()\n- It is now possible to select the radii of the circles in corrplot\n\nSee the file CHANGES in the sources for all changes.\n\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\n-- \nBj?rn-Helge Mevik",
+      "body_snippet": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 a",
+      "thread_id": "thread-f18f3bf66c46",
+      "thread_depth": 0,
+      "month": "2006-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-620111ee71bf",
+      "subject": "denpro_0.8.1",
+      "message_count": 1,
+      "participants": [
+        "Jussi Klemelä"
+      ],
+      "started": "2006-04-02T19:15:13+02:00",
+      "last_reply": "2006-04-02T19:15:13+02:00",
+      "root_message_id": "msg-620111ee71bf"
+    },
+    {
+      "id": "thread-620111ee71bf",
+      "subject": "denpro_0.8.1",
+      "message_count": 1,
+      "participants": [
+        "Jussi Klemelä"
+      ],
+      "started": "2006-04-02T19:15:13+02:00",
+      "last_reply": "2006-04-02T19:15:13+02:00",
+      "root_message_id": "msg-620111ee71bf"
+    },
+    {
+      "id": "thread-aba4cab0e405",
+      "subject": "Incompatible update to splancs",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2006-04-11T20:45:16+02:00",
+      "last_reply": "2006-04-11T20:45:16+02:00",
+      "root_message_id": "msg-aba4cab0e405"
+    },
+    {
+      "id": "thread-aba4cab0e405",
+      "subject": "Incompatible update to splancs",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2006-04-11T20:45:16+02:00",
+      "last_reply": "2006-04-11T20:45:16+02:00",
+      "root_message_id": "msg-aba4cab0e405"
+    },
+    {
+      "id": "thread-388215f7abfa",
+      "subject": "Version 1.0 of hapassoc now available from CRAN",
+      "message_count": 1,
+      "participants": [
+        "Sigal Blay"
+      ],
+      "started": "2006-04-18T12:50:26-07:00",
+      "last_reply": "2006-04-18T12:50:26-07:00",
+      "root_message_id": "msg-388215f7abfa"
+    },
+    {
+      "id": "thread-388215f7abfa",
+      "subject": "Version 1.0 of hapassoc now available from CRAN",
+      "message_count": 1,
+      "participants": [
+        "Sigal Blay"
+      ],
+      "started": "2006-04-18T12:50:26-07:00",
+      "last_reply": "2006-04-18T12:50:26-07:00",
+      "root_message_id": "msg-388215f7abfa"
+    },
+    {
+      "id": "thread-f18f3bf66c46",
+      "subject": "pls package: bugfix release 1.2-1",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2006-04-27T12:53:16+02:00",
+      "last_reply": "2006-04-27T12:53:16+02:00",
+      "root_message_id": "msg-f18f3bf66c46"
+    },
+    {
+      "id": "thread-f18f3bf66c46",
+      "subject": "pls package: bugfix release 1.2-1",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2006-04-27T12:53:16+02:00",
+      "last_reply": "2006-04-27T12:53:16+02:00",
+      "root_message_id": "msg-f18f3bf66c46"
+    }
+  ]
+}

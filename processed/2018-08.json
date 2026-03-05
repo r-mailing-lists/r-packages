@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-08",
+  "messages": [
+    {
+      "id": "msg-bc18edb695e7",
+      "message_id": "<CAMn=mg2g+r30y+T9RakknkAwg8Q5ih4Py3s-WBYKhp7T+r3uaA@mail.gmail.com>",
+      "from_name": "Himanshu Sikaria",
+      "from_email_hash": "8d0edfd666d7e84dcad303a956b884964d37b836f8f46dbbf124109a72766377",
+      "date": "2018-08-01T11:57:47+05:30",
+      "subject": "[R-pkgs] New package rLandsat: Get ready-to-use satellite data in R",
+      "subject_clean": "New package rLandsat: Get ready-to-use satellite data in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello useRs,\n\nA new package rLandsat has been released on CRAN which makes satellite data\nmore accessible, helping to download the Landsat data with a couple of\nlines of code.\n\nrLandsat makes it easy to search for Landsat8 product IDs, place an order\non USGS-ESPA and download the Landsat data in R along with the meta\ninformation in the perfect format.\n\nLandsat is without a doubt one of the best sources of free satellite data\ntoday. Managed by NASA and the United States Geological Survey, the Landsat\nsatellites have been capturing multi-spectral imagery for over 40 years.\nThe latest satellite, Landsat 8, orbits the Earth every 16 days and\ncaptures more than 700 satellite images per day across 9 spectral bands and\n2 thermal bands. Its imagery has been used for everything from finding\ndrought-prone areas and monitoring coastal erosion to analyzing an area?s\nfire probability and setting the best routes for electricity lines.\n\nLet's start using and analysing  the Landsat data more, and come up with\ninteresting results and use cases.\n\nMore information from the data and the package:\nhttps://blog.socialcops.com/technology/data-science/announcing-rlandsat-landsat-8-data/\nCRAN link: https://cran.r-project.org/web/packages/rLandsat/\nIssues and suggestions are welcome, and can be logged at the package GitHub\nrepository: https://github.com/socialcopsdev/rLandsat\n\nRegards,\nHimanshu Sikaria\nEmail: himanshu.sikaria at socialcops.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello useRs,\n\nA new package rLandsat has been released on CRAN which makes satellite data\nmore accessible, helping to download the Landsat data with a couple of\nlines of code.\n\nrLandsat makes it easy ",
+      "thread_id": "thread-bc18edb695e7",
+      "thread_depth": 0,
+      "month": "2018-08"
+    },
+    {
+      "id": "msg-ca7d2bf2b057",
+      "message_id": "<cda0d878-21e0-b20b-7fe5-e1f7e51ee540@uni-oldenburg.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "26b0fd87448f85a648eb8d4d40959dd5288bb46aed0714d43c9ef3b9b5ea86ce",
+      "date": "2018-08-09T00:03:26+02:00",
+      "subject": "[R-pkgs] distr Release 2.7",
+      "subject_clean": "distr Release 2.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "=================================================================================??? ??? ??? ?\n### distr release 2.7 ###\n=================================================================================??? ??? ??? ?\n\nUpdates for the packages of the distr family are now avaialable on CRAN in\nversion >= 2.7.0.\n\nThe most important changes are:\n? - we switch from SweaveListingUtils (no longer maintained as announced\n??? prior to 2015) to knitr in vignettes\n? - graphics (plot-methods) are now more stringently vectorized in their arguments\n? - internally, we use accessor q.l instead of q for the quantiles which\n??? makes our packages available for use with Jupyter IRKernel and easier\n??? with RStudio (both catch calls to q() and treat them differently to\n??? standard R)\n\nFor details please see the NEWS files in the packages, available as\nNEWS(\"<pkgname>\").\n\nBest regards from the main developpers & maintainers,\nPeter Ruckdeschel (peter.ruckdeschel at uni-oldenburg.de) &\nMatthias Kohl (matthias.kohl at stamats.de)\n\n-- \n%******************************************************************\n% Prof. Dr. Peter Ruckdeschel \n% Institut fuer Mathematik, Fakultaet V - Mathematik und Naturwissenschaften\n% Carl von Ossietzky Universitaet Oldenburg, \n% Postfach 25 03,  26111 Oldenburg\n% Office: Wechloy W1 02-227 Tel: +49 (0)441 798-3240  Fax: +49 (0)441 798-193240\n% peter.ruckdeschel at uni-oldenburg.de\n% http://www.uni-oldenburg.de/peter-ruckdeschel\n%******************************************************************\n\n\n---\nDiese E-Mail wurde von Avast Antivirus-Software auf Viren gepr?ft.\nhttps://www.avast.com/antivirus",
+      "body_snippet": "=================================================================================??? ??? ??? ?\n### distr release 2.7 ###\n===============================================================================",
+      "thread_id": "thread-ca7d2bf2b057",
+      "thread_depth": 0,
+      "month": "2018-08"
+    },
+    {
+      "id": "msg-9b84fd9e80a1",
+      "message_id": "<6fc5a4d7-8cb4-ef04-5bd8-34dca0040c75@uni-oldenburg.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "26b0fd87448f85a648eb8d4d40959dd5288bb46aed0714d43c9ef3b9b5ea86ce",
+      "date": "2018-08-09T00:12:53+02:00",
+      "subject": "[R-pkgs] robast Release 1.1",
+      "subject_clean": "robast Release 1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "=================================================================================??? ??? ??? ?\n### RobASt release 1.1 ###\n=================================================================================??? ??? ??? ?\n\nUpdates for the packages of the RobASt family are now avaialable on CRAN in version >= 1.1.0\n\nMost importantly, we have (finally) released on CRAN a (long announced) new package\n\n?????????????????????? \"RobExtremes\"\n\nin the RobASt family of packages.\n\n+ It provides (speeded up) optimally-robust estimators [MBRE, OMSE, RMXE]for Generalized Extreme Value\n[GEV] distributions, Generalized Pareto distributions [GPD], Pareto distributions,\n+ As other examples of L2 differentiable Scale-shape families, it also provides these (speeded up) estimators\n? for Weibull and Gamma distributions.\n+ It has robust (high-breakdown) starting estimators for\n? ? ? ? ? ? ? ?? - GPD (PickandsEstimator, medkMAD, medSn, medQn)\n? ? ? ? ? ? ??? - GEV (PickandsEstimator)\n? ? ? ? ? ? ??? - Pareto (Cram?r-von-Mises-Minimum-Distance-Estimator)\n? ? ? ? ? ? ? ? - Weibull (the quantile based estimator of Boudt/Caliskan/Croux)\n+ For all these families, of course, MLEs and Minimum-Distance-Estimators are also available through\n?? package distrMod\n+ We bridge to the diagnostics provided by package ismev, i.e. our return objects can be plugged into the\n?? diagnostics of this package\n+ We have the usual diagnostic plots from package RobAStBase, i.e.\n?????????? - Outylingness plots\n?????????? - IC plots\n? ? ? ??? - Information plots?\n? ? ? ??? - compareIC plots\n? ? ? ?? - Cniperpoint plots (from ROptEst)\n? but also (adopted from package distrMod)\n? ? ? ?? - qqplots (with confidence bands)\n? ? ??? - returnlevel plots\n+ As a starting point you may look at the included script \"RobFitsAtRealData.R\" in the scripts folder of\n?? the package,? accessible by file.path(system.file(package=\"RobExtremes\"), \"scripts/RobFitsAtRealData.R\")\n\nThis is joint work with Nataliya Horbenko (whose PhD thesis went into this ackage to a large extent),\nnataliya.horbenko at gmail.de, with contributions by Dasha Pupashenko, Misha Pupashenko, Gerald\nKroisandt, Eugen Massini, Sascha Desmettre and Bernhard Spangl in the framework of project \"Robust\nRisk Estimation\" (2011-2016) funded by Volkswagen foundation (and gratefully ackknowledged).\nThanks also goes to the maintainers of CRAN, in particully to Uwe Ligges who greatly helped us with\nfinding an appropriate way to store the database of interpolating functions which allow the speed up\n-- this is now package RobAStRDA on CRAN.\n\nReferences\nN. Horbenko, P. Ruckdeschel, T. Bae (2011): Robust Estimation of Operational Risk. Journal of Operational Risk 6(2), 3-30.\nRuckdeschel, P. and Horbenko, N. (2011): Optimally-Robust Estimators in Generalized Pareto Models. Statistics. 47(4),\n762?791.\nRuckdeschel, P. and Horbenko, N. (2012): Yet another breakdown point notion: EFSBP ?illustrated at scale-shape\n?????????????? models. Metrika, 75(8), 1025?1047.\n\n=================================================================================??? ??? ??? ?\nIn the other packages of the RobASt family of pkgs, the most important changes are:\n\nAs in distr 2.7, wherever possible we now use q.l internally instead of q to\n????? provide functionality in IRKernel\n\n\nRobAStBase:\n- we enhanced our diagnostic plots:\n? + all diagnostics (including qqplot and returnlevelplot) have adopted the same argument naming\n??? (and selection paradigm) ?\n? + wherever possible arguments are vectorized to allow point - individual attributes\n? + plot methods now return an S3 object of class \\code{c(\"plotInfo\",\"DiagnInfo\")}, i.e., a list\n??? containing the information needed to produce the respective plot, which at a later stage could\n?? be used by different graphic engines (like, e.g.ggplot) to produce the plot in a different framework.\n? + new methods for returnlevelplot for RobModel, InfRobModel, kStepEstimate (as qqplot)\nROptEst:\n? + new wrapper functions RMXEstimator, OBREstimator, MBREstimator, OMSEstimator\n? + several tweaks to speed up things?\nRobAStRDA:\n? + the Lagrange multiplier interpolaters allowing for speed up in our opt-robust\n??? estimators have been re-built as the current .rda file was corrupted\n???\nFor details please see the NEWS files in the packages, available as NEWS(\"<pkgname>\").\n\nBest regards from the main developpers & maintainers,\nPeter Ruckdeschel (peter.ruckdeschel at uni-oldenburg.de) & Matthias Kohl (matthias.kohl at stamats.de)\n\n-- \n%******************************************************************\n% Prof. Dr. Peter Ruckdeschel \n% Institut fuer Mathematik, Fakultaet V - Mathematik und Naturwissenschaften\n% Carl von Ossietzky Universitaet Oldenburg, \n% Postfach 25 03,  26111 Oldenburg\n% Office: Wechloy W1 02-227 Tel: +49 (0)441 798-3240  Fax: +49 (0)441 798-193240\n% peter.ruckdeschel at uni-oldenburg.de\n% http://www.uni-oldenburg.de/peter-ruckdeschel\n%******************************************************************\n\n\n\n---\nDiese E-Mail wurde von Avast Antivirus-Software auf Viren gepr?ft.\nhttps://www.avast.com/antivirus\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "=================================================================================??? ??? ??? ?\n### RobASt release 1.1 ###\n==============================================================================",
+      "thread_id": "thread-9b84fd9e80a1",
+      "thread_depth": 0,
+      "month": "2018-08"
+    },
+    {
+      "id": "msg-9618cb97b3af",
+      "message_id": "<91d65094502d4fa3a5a1388ab1b42270@EX-MBX-01.tubit.win.tu-berlin.de>",
+      "from_name": "Hensel, Tim-Gunnar",
+      "from_email_hash": "bf45158826ba93918bc4c8fbb81cb16bd7ecf3ef0d3e58c627b10cc74617dffc",
+      "date": "2018-08-09T08:52:50Z",
+      "subject": "[R-pkgs] Announcement weibulltools package",
+      "subject_clean": "Announcement weibulltools package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce that the initial release of the weibulltools package is now available on CRAN.\nUnlike other R packages for survival analysis, the weibulltools package focuses on reliability methods based on the Weibull analysis. In addition to that, the package can be integrated into (partly) automated data analysis processes and even can be connected to big data systems.\nKey features\nThe weibulltools package contains methods for examining bench test or field data using the well-known Weibull analysis and provides the following features:\n\n  *   Monte Carlo simulation for estimating the life span of products that have not failed yet, taking account of registering and reporting delays (If the products looked upon are vehicles, the covered mileage can be estimated as well.)\n  *   Methods for probability estimation within samples that contain failures as well as censored data\n  *   Methods for estimating the parameters of lifetime distributions as well as the confidence intervals of quantiles and probabilities\n  *   Segmented regression for dividing data into subgroups automatically\n  *   Methods for interactive visualization of the edited data using plotly\n\nGetting started\nThe package can be downloaded and installed from CRAN via:\ninstall.packages(\"weibulltools\")\n\nExamples and further information\nExamples and further information can be found in the package documentation on CRAN, see\nhttps://cran.r-project.org/web/packages/weibulltools/,\nor by typing ?weibulltools (more specifically: ?weibulltools::functionname) when using R.\n\nAny weibulltools-related feedback, reporting of issues and comments to tim-gunnar.hensel at tu-berlin.de<mailto:tim-gunnar.hensel at tu-berlin.de> are welcome!\n\n------------------------------------------------------------------------------------------------------------------------------------------\nTim-Gunnar Hensel, M. Sc.\nWissenschaftlicher Mitarbeiter\nResearch Assistant\n\nTechnische Universit?t Berlin\nFakult?t V Verkehrs- und Maschinensysteme\nInstitut f?r Werkzeugmaschinen und Fabrikbetrieb\nFachgebiet Qualit?tswissenschaft\n\nMechanical Engineering and Transport Systems\nInstitute for Machine Tools and Factory Management\nChair of Quality Science\n\nPTZ 3\nPascalstra?e 8-9, 10587 Berlin\nTelefon: +49 (0)30 314-24055\nTelefax: +49 (0)30 314-79685\ntim-gunnar.hensel at tu-berlin.de<mailto:tim-gunnar.hensel at tu-berlin.de>\n\nwww.qw.tu-berlin.de<http://www.qw.tu-berlin.de/>\n\nErweitern Sie spielerisch Ihr Wissen im Qualit?tsmanagement!\nSpielen Sie unsere App \"Quality Quiz\": App Store<https://itunes.apple.com/app/id964773723> | Google Play<https://play.google.com/store/apps/details?id=de.tu_berlin.tuquiz&hl=de>\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "We are pleased to announce that the initial release of the weibulltools package is now available on CRAN.\nUnlike other R packages for survival analysis, the weibulltools package focuses on reliability",
+      "thread_id": "thread-9618cb97b3af",
+      "thread_depth": 0,
+      "month": "2018-08"
+    },
+    {
+      "id": "msg-93abbbf8086e",
+      "message_id": "<CA+Nm-7_He7Wc2ruHf9v9j5RX14-eiic2XpmQ0KJtXFm5pPB8=A@mail.gmail.com>",
+      "from_name": "Olatunji Johnson",
+      "from_email_hash": "f71a81e2287993e50bc41cd2d2a3d6e4bc2cac3fa9cf55c124fddeecb0a9d301",
+      "date": "2018-08-24T14:20:23+01:00",
+      "subject": "[R-pkgs] SDALGCP Package now on cran!",
+      "subject_clean": "SDALGCP Package now on cran!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am very pleased to announce that SDALGCP package is now on cran!\n\nSDALGCP package provides a computationally efficient discrete approximation\nto log-Gaussian Cox process model for spatially aggregated disease count\ndata. It uses Monte Carlo Maximum Likelihood for model parameter estimation\nand delivers a spatial prediction of the relative risk both on a discrete\nand continuous scale.\n\nOn cran: https://cran.r-project.org/web/packages/SDALGCP/index.html\nOn GitHub: https://github.com/olatunjijohnson/SDALGCP\n\nThe vignette to the package can be found here\nhttps://cran.r-project.org/web/packages/SDALGCP/vignettes/SDALGCP-vignette.html\n\nAny suggestions and comment are welcome.\n\nCheers\nOlatunji Johnson\nLancaster Medical School\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am very pleased to announce that SDALGCP package is now on cran!\n\nSDALGCP package provides a computationally efficient discrete approximation\nto log-Gaussian Cox process model for spatially aggregat",
+      "thread_id": "thread-93abbbf8086e",
+      "thread_depth": 0,
+      "month": "2018-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bc18edb695e7",
+      "subject": "New package rLandsat: Get ready-to-use satellite data in R",
+      "message_count": 1,
+      "participants": [
+        "Himanshu Sikaria"
+      ],
+      "started": "2018-08-01T11:57:47+05:30",
+      "last_reply": "2018-08-01T11:57:47+05:30",
+      "root_message_id": "msg-bc18edb695e7"
+    },
+    {
+      "id": "thread-ca7d2bf2b057",
+      "subject": "distr Release 2.7",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2018-08-09T00:03:26+02:00",
+      "last_reply": "2018-08-09T00:03:26+02:00",
+      "root_message_id": "msg-ca7d2bf2b057"
+    },
+    {
+      "id": "thread-9b84fd9e80a1",
+      "subject": "robast Release 1.1",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2018-08-09T00:12:53+02:00",
+      "last_reply": "2018-08-09T00:12:53+02:00",
+      "root_message_id": "msg-9b84fd9e80a1"
+    },
+    {
+      "id": "thread-9618cb97b3af",
+      "subject": "Announcement weibulltools package",
+      "message_count": 1,
+      "participants": [
+        "Hensel, Tim-Gunnar"
+      ],
+      "started": "2018-08-09T08:52:50+00:00",
+      "last_reply": "2018-08-09T08:52:50+00:00",
+      "root_message_id": "msg-9618cb97b3af"
+    },
+    {
+      "id": "thread-93abbbf8086e",
+      "subject": "SDALGCP Package now on cran!",
+      "message_count": 1,
+      "participants": [
+        "Olatunji Johnson"
+      ],
+      "started": "2018-08-24T14:20:23+01:00",
+      "last_reply": "2018-08-24T14:20:23+01:00",
+      "root_message_id": "msg-93abbbf8086e"
+    }
+  ]
+}

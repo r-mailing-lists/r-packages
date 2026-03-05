@@ -1,0 +1,173 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-04",
+  "messages": [
+    {
+      "id": "msg-598fd684074f",
+      "message_id": "<AsoSsBYvyQ3-whlaUhLe6ss2y4wN83_AbvZlytyiScQLUqcyMgHh60TmpsQnpJ7_FNLRU-6BdHFFA3pmKh5m6Hs4kYWCte3dks7mLO53lDw=@protonmail.ch>",
+      "from_name": "Krzysztof Bartoszek",
+      "from_email_hash": "cce27547292ce0b548b4d44f722db1bd85fe1604d917c99bc3f100cafcd40748",
+      "date": "2019-04-05T11:51:57Z",
+      "subject": "[R-pkgs] new R packages for phylogenetic compartive methods",
+      "subject_clean": "new R packages for phylogenetic compartive methods",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\nI wanted to let you know about four phylogenetic comparative methods (PCM) packages that have become available on (3 on CRAN and 1 on GitHub) recently that hopefully will be interesting to somebody. Three of them go significantly beyond the Brownian motion (BM) and Ornstein-Uhlenbeck (OU) processes.\n\n1) There is a new version of mvSLOUCH available. The most important change is that\nthe inference engine has been completely rewritten. Instead of directly evaluating the multivariate normal density formula it uses the PCMBase (R package, see below) to obtain the value of the likelihood in linear (in number of tip species) instead of quadratic time. Furthermore, as there is no need to store the between-species-between-traits variance covariance matrix much larger clades, then previously can be handled. From the user's perspective the main changes are the interface and increased functionality:\na) the phylogeny has to be now in the phylo (instead of ouch) format,\nb) the trait data has to be a matrix (and not a data frame),\nc) the package can automatically compare multiple models (BM, OUOU, OUBM and different assumed structures on the drift and diffusion matrices of the multivariate OU procees), function  estimate.evolutionary.model(), and return the one with the lowest AICc (the set of models to consider can either be automatically generated or user defined, see generate.model.setups()),\nd) the user can set entries of the OU model's parameters to desired values (e.g. 0) and this will be fixed through the whole estimation,\ne) a number of control parameters to be passed to the estimation procedure and optim() are available for the user to manipulate\n\n2) PCMFit: the goal of PCMFit is to provide a generic tool for inference and selection of phylogenetic comparative models (PCMs). Currently, the package implements Gaussian and mixed Gaussian phylogenetic models (MGPM) over all tree types (including non-ultrametric and polytomic trees). The package supports non-existing traits or missing measurements for some of the traits on some of the species. The package supports specifying measurement error associated with each tip of the tree or inferring a measurement error parameter for a group of tips. The Gaussian phylogenetic models include various parametrizations of Brownian motion (BM) and Ornstein-Uhlenbeck (OU) multivariate branching processes. The mixed Gaussian models represent models with shifts in the model parameters as well as the type of model at points of the tree. Each shift-point is described as a pair of a shift-node and associated type of model (e.g. OU or BM) driving the trait evolution from the beginning of the branch leading to the shift-node toward the shift-node and its descendants until reaching a tip or another shift-point. The function PCMFit is used to fit a given PCM or a MGPM for a given tree with specified shift-points. The function PCMFitMixed is used to fit an ensemble of possible MGPMs over a tree for which the shift-points are unknown. This function can perform model selection of the best MGPM for a given tree and data according to an information loss function such as the Akaike information criterion (AIC). The package has been thoroughly tested and applied to real data in the related research article entitled \"Automatic Generation of Evolutionary Hypotheses using Mixed Gaussian Phylogenetic Models\" (currently in review). Currently, the package is available from https://github.com/venelin/PCMFit . The web-page https://venelin.github.io/PCMFit/ provides access to documentation and related resources.\n\n3) PCMBase: the computational engine that mvSLOUCH uses. Given a phylogeny (phylo format), traits' (multivariate) measurements and a user provided model of the traits' evolution the package calculates the likelihood. The family of allowed models is rather general. The package can handle any model for which lineages after speciation do not interact and the density of the transition along a branch is:\ni) Gaussian\nii) the mean at the end of the branch depends linearly on the trait value at the start of the branch\niii) the covariance matrix does not depend on the value at the start of the branch\nThe likelihood is calculated in linear in number of tip species time.\nThe package is described in\nVenelin Mitov, Krzysztof Bartoszek, Georgios Asimomitis, Tanja Stadler (2018).\nFast likelihood evaluation for multivariate phylogenetic comparative methods: the PCMBase R package\narXiv URL https://arxiv.org/abs/1809.09014 .\n\n3) pcmabc: a package that allows for simulation and ABC estimation under any model for which the user can provide a function to simulate trait (discrete/continuous, uni- or multivariate) evolution along a branch. Special support is given for SDE based models, using the yuima package.\nKrzysztof Bartoszek, Pietro Lio' (2019) Modelling trait dependent speciation with Approximate Bayesian Computation. Acta Physica Polonica B Proceedings Supplement 12(1): 25-47.\nURL https://www.actaphys.uj.edu.pl/fulltext?series=Sup&vol=12&page=25 .\n\nHope somebody will find these useful\n\nBest wishes\nKrzysztof Bartoszek\n\nSent with ProtonMail Secure Email.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\nI wanted to let you know about four phylogenetic comparative methods (PCM) packages that have become available on (3 on CRAN and 1 on GitHub) recently that hopefully will be interesting to s",
+      "thread_id": "thread-598fd684074f",
+      "thread_depth": 0,
+      "month": "2019-04"
+    },
+    {
+      "id": "msg-8d6a55ee214e",
+      "message_id": "<AM0PR04MB62917659F74A2A29392EF3E2E92D0@AM0PR04MB6291.eurprd04.prod.outlook.com>",
+      "from_name": "Young M.A.",
+      "from_email_hash": "294d1907b8029e455c8e8f4d565fb187096a8a6164fbb99fac59e8f55d0249c4",
+      "date": "2019-04-09T10:59:55Z",
+      "subject": "[R-pkgs] New package to query  the OpenTripPlanner (OTP) API",
+      "subject_clean": "New package to query  the OpenTripPlanner (OTP) API",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all\n\nA new R package 'otpr' is now available on CRAN. It's a wrapper for the OpenTripPlanner (OTP) API and is primarily aimed at researchers and transport planners who want to use OTP to carry out accessibility studies or generate variables for transport models. The package consists of four main functions:\n\notp_connect() - defines and tests the connection to an OTP instance.\notp_get_distance() - gets the distance in metres between an origin and destination on the street and/or path network by specified mode. \notp_get_times() - in its simplest use case gets the journey time between an origin and destination by specified mode(s). It can also return more detailed information, breaking down the journey by transit time, walking time, waiting time and the number of transfers. \notp_get_isochrone() - returns one or more travel time isochrones for a location in GeoJSON format. These can be generated either from or to the specified location. \n\nThe package currently supports a subset of the parameters that are available for the OTP 'planner' and 'isochrone' API resources. This is based on my experience of using OTP to generate this type of data and to keep the functions relatively simple from the user perspective. For a future release I will be allowing a larger range of parameters to be optionally passed through to the API query, giving greater flexibility but still keeping the external functions simple for users who don't need such detailed control. \n\nFor more information, including code examples, take a look at the GitHub repository for the package: \n\nhttps://github.com/marcusyoung/otpr\n \nI also have an OTP intermediate level tutorial - 'creating and querying your own multi-modal route planner' -  which incorporates use of the package:\n\nhttps://github.com/marcusyoung/otp-tutorial\n\nI'd welcome any feedback as well as suggestions for future development. \n\nBest wishes\n\nMarcus\n\n---------------------------------------------------\nDr Marcus Young\nResearch Fellow\nTransportation Research Group\nUniversity of Southampton",
+      "body_snippet": "Dear all\n\nA new R package 'otpr' is now available on CRAN. It's a wrapper for the OpenTripPlanner (OTP) API and is primarily aimed at researchers and transport planners who want to use OTP to carry ou",
+      "thread_id": "thread-8d6a55ee214e",
+      "thread_depth": 0,
+      "month": "2019-04"
+    },
+    {
+      "id": "msg-55b81643c63c",
+      "message_id": "<DB7PR01MB442741969CBAE86F116AC225E32F0@DB7PR01MB4427.eurprd01.prod.exchangelabs.com>",
+      "from_name": "Roman Minguez Salido",
+      "from_email_hash": "fb0cb9116aaa840d24cb544295ffeeaab12f75ae26a9d39e2ceb64eeea04da55",
+      "date": "2019-04-11T10:54:23Z",
+      "subject": "[R-pkgs] Releasing new package on CRAN",
+      "subject_clean": "Releasing new package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users:\n\nFirst, we apologize for possible crossed messages.\n\nIt is a pleasure for us to have the opportunity to present a new R package, called 'spsur' available in  https://cran.r-project.org/web/packages/spsur/index.html\n\nThis is a specific R package for the estimation of Spatial Seemingly Unrelated Regression models by maximum likelihood or instrumental variable procedures. Moreover, 'spsur' implements a collection of Lagrange Multipliers and Likelihood Ratios to test for misspecifications in SUR models.\n\nIf you would like, you can install 'spsur' directly from CRAN repository. There you will find also a vignette including some examples, available also in https://cran.r-project.org/web/packages/spsur/vignettes/spsur-vignette.html\n\nThis is the first version of 'spsur'. We want to improve it in the future, therefore, any suggestions or comments related to the package would be very welcome. Your expertise and your feedback would be very important for us.\n\nWe hope you find this package interesting for your research and empirical work.\n\nThanks in advance for your feedback,\n\nFernando L?pez, Rom?n M?nguez and Jes?s Mur.\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-users:\n\nFirst, we apologize for possible crossed messages.\n\nIt is a pleasure for us to have the opportunity to present a new R package, called 'spsur' available in  https://cran.r-project.org/w",
+      "thread_id": "thread-55b81643c63c",
+      "thread_depth": 0,
+      "month": "2019-04"
+    },
+    {
+      "id": "msg-3c0ebdc5c10a",
+      "message_id": "<1898397232.797436.1555491596663@mail.yahoo.com>",
+      "from_name": "mohammed ibrahim",
+      "from_email_hash": "bb5d3a083144648dbd980a02ffc86d60fd428e947b2bf555f3e2dd6944bc4a0a",
+      "date": "2019-04-17T08:59:56Z",
+      "subject": "[R-pkgs] dbparser v1.0.1: DrugBank XML Database Parser",
+      "subject_clean": "dbparser v1.0.1: DrugBank XML Database Parser",
+      "in_reply_to": null,
+      "references": [
+        "<1898397232.797436.1555491596663.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hello,I am pleased to announce the release of dbparser v1.0.1 on CRAN https://cran.r-project.org/web/packages/dbparser/index.htmlThe new release include:? ? * Check if drugbank database exist before parsing? ? * Add support for international_brands and salts elements? ? * Properly rename some features to have clear names? ? * Reduce datasets size by getting unique rows only? ? * Support reading zip file containing DrugBank xml database? ? * Fix previous version CRAN Note? ? * Improve functions documentation? ? * Refactor unused functions? ? * Remove Count features from drug data set? ? * Fix several typos in documentation and code? ? * Fix consistency issue of CLASS of Data Frames Returned by dbparser\nAs always, contributions and bug reports are welcome on https://dainanahan.github.io/dbparser/index.html\n\nBest Regards,Mohammed Ali\nMSc in Applied Data Science & Big Data\nmohammed.ali at edu.dsti.institute\n+20 01000481973\neg.linkedin.com/in/mohammedali85\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,I am pleased to announce the release of dbparser v1.0.1 on CRAN https://cran.r-project.org/web/packages/dbparser/index.htmlThe new release include:? ? * Check if drugbank database exist before p",
+      "thread_id": "thread-3c0ebdc5c10a",
+      "thread_depth": 0,
+      "month": "2019-04"
+    },
+    {
+      "id": "msg-8439cb0e8759",
+      "message_id": "<CACsjJ_ceQoXq93LsfriKbav2=-rJnJVWBsoCdRp=fwdhjT_Vzw@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "4ee3c419e655152d6069dad28df20ae3ba821ac7219892fd60a8f281edf2d4be",
+      "date": "2019-04-22T14:53:14-04:00",
+      "subject": "[R-pkgs] randomForestSRC 2.9.0 is now available",
+      "subject_clean": "randomForestSRC 2.9.0 is now available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nIt's been some time since we last sent out an announcement, so this one\nwill cover more than just the last update.\n\nThe latest release of randomForestSRC is now available on CRAN at:\n\nhttps://CRAN.R-project.org/package=randomForestSRC\n\nThe GitHub repository, through which we prefer to receive bug reports, is\nat:\n\nhttps://github.com/kogalur/randomForestSRC\n\nIf you do find issues, please use:\n\nhttps://github.com/kogalur/randomForestSRC/issues\n\nand take the time to post a minimal script (and data set if necessary) that\nisolates the error.\n\nAdditional documentation can be found at:\n\nhttps://kogalur.github.io/randomForestSRC/\n\n------------------------------------------\nDetails are as follows:\n\nEnsembles in regression now support Greenwald-Khanna approximate quantile\nqueries via rfsrc(), predict.rfsrc() and the new wrapper\nquantileReg.rfsrc(). Related to this, a new split rule \"quantile.regr\" has\nbeen added.\n\nAnother new wrapper, imbalanced.rfsrc(), implements various solutions to\nthe two-class imbalanced problem, including the newly proposed\nquantile-classifier approach of O'Brien and Ishwaran (2017). This also\nincludes Breiman's balanced random forests under-sampling of the majority\nclass.  Performance is assessed using the G-mean, but misclassification\nerror can be requested.\n\nAlso, the new parameter get.tree in predict.rfsrc() allows users to extract\nthe ensembles for a single tree or subset of trees over the forest.\n\nThe default nodesize for survival and competing risk has been changed to 15.\n\nWe've added new splitrules \"auc\" and \"entropy\" for classification. A new\nvariable importance methodology called Holdout VIMP has been implemented.\nHere, we exclude a variable from a subset of trees and compare the error\nrates between those trees in which the variables was included against those\nin which it was excluded.  The key point here is that no permutation of a\nvariable is conducted.  See holdout.vimp.rfsrc() and the associated Rd file\nfor more information.\n\nFinally, some function names were changed as a general move towards name\nuniformity in the package.  Sorry about that.\n\n------------------------------------------\nAdditional side-notes:\n\nUnfortunately there has been no further work on the Spark build.  However,\nthe Java wrappers have been kept up to date, and the Hello World script is\nstill functional.  Instructions are provided here:\n\nhttps://kogalur.github.io/randomForestSRC/building.html\n\nFor those requesting and still awaiting CPU performance enhancements, our\ncontinued apologies.  Our focus has been methodological, but our intention\nis to address performance in the next build.  We promise.\n\nThank you!\n\nUdaya B. Kogalur, Ph.D.\nubkogalur at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs:\n\nIt's been some time since we last sent out an announcement, so this one\nwill cover more than just the last update.\n\nThe latest release of randomForestSRC is now available on CRAN at:\n\nhtt",
+      "thread_id": "thread-8439cb0e8759",
+      "thread_depth": 0,
+      "month": "2019-04"
+    },
+    {
+      "id": "msg-c9cf569ddf26",
+      "message_id": "<CAGdxdCKc45-RWtKB3BDLPPujBq9K3GRCxWbKFXsQ-2nBdtzwyQ@mail.gmail.com>",
+      "from_name": "Jurriaan Nagelkerke",
+      "from_email_hash": "77b77c152d263daeff5920e31decb2bd59ec2b288e334e6c1dede9ac0a14ac00",
+      "date": "2019-04-25T12:25:04+02:00",
+      "subject": "[R-pkgs] new CRAN package : modelplotr",
+      "subject_clean": "new CRAN package : modelplotr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi there!\n\nWe would like to share the news that our package *modelplotr *has recently\nbeen added to CRAN with your audience. Here's a some text for the\nintroduction:\n\n---------------------\n*Title:*\n\n*modelplotr v1.0 now on CRAN: Visualize the Business Value of your\nPredictive Models *\n\n*Visual:*\nhttps://modelplot.github.io/img/modelplotr_CRAN-topviz-1.gif\n\n*Intro text:*\nModelplotr - Build plots in R to evaluate the business value of predictive\nmodels. Now on CRAN with new (financial) plots, support for caret, mlr,\nh2o, keras and other models and new features to customize your plots.\n\nRead more about modelplotr on our blog:   https://modelplot.github.io/\n<https://modelplot.github.io/intro_modelplotr.html>  . Here you find an\nintroducting blog ( https://modelplot.github.io/intro_modelplotr.html  ) as\nwell as more info on how to use modelplotr (\nhttps://modelplot.github.io/vignette_modelplotr.html  )\n\nQuestions, remarks, suggestions? Please let uw know via github!\n---------------------\n\n\nHope you like to share this with your R audience!\n\nKind regards,\n\nJurriaan Nagelkerke\njurriaan.nagelkerke at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi there!\n\nWe would like to share the news that our package *modelplotr *has recently\nbeen added to CRAN with your audience. Here's a some text for the\nintroduction:\n\n---------------------\n*Title:*\n\n*",
+      "thread_id": "thread-c9cf569ddf26",
+      "thread_depth": 0,
+      "month": "2019-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-598fd684074f",
+      "subject": "new R packages for phylogenetic compartive methods",
+      "message_count": 1,
+      "participants": [
+        "Krzysztof Bartoszek"
+      ],
+      "started": "2019-04-05T11:51:57+00:00",
+      "last_reply": "2019-04-05T11:51:57+00:00",
+      "root_message_id": "msg-598fd684074f"
+    },
+    {
+      "id": "thread-8d6a55ee214e",
+      "subject": "New package to query  the OpenTripPlanner (OTP) API",
+      "message_count": 1,
+      "participants": [
+        "Young M.A."
+      ],
+      "started": "2019-04-09T10:59:55+00:00",
+      "last_reply": "2019-04-09T10:59:55+00:00",
+      "root_message_id": "msg-8d6a55ee214e"
+    },
+    {
+      "id": "thread-55b81643c63c",
+      "subject": "Releasing new package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Roman Minguez Salido"
+      ],
+      "started": "2019-04-11T10:54:23+00:00",
+      "last_reply": "2019-04-11T10:54:23+00:00",
+      "root_message_id": "msg-55b81643c63c"
+    },
+    {
+      "id": "thread-3c0ebdc5c10a",
+      "subject": "dbparser v1.0.1: DrugBank XML Database Parser",
+      "message_count": 1,
+      "participants": [
+        "mohammed ibrahim"
+      ],
+      "started": "2019-04-17T08:59:56+00:00",
+      "last_reply": "2019-04-17T08:59:56+00:00",
+      "root_message_id": "msg-3c0ebdc5c10a"
+    },
+    {
+      "id": "thread-8439cb0e8759",
+      "subject": "randomForestSRC 2.9.0 is now available",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2019-04-22T14:53:14-04:00",
+      "last_reply": "2019-04-22T14:53:14-04:00",
+      "root_message_id": "msg-8439cb0e8759"
+    },
+    {
+      "id": "thread-c9cf569ddf26",
+      "subject": "new CRAN package : modelplotr",
+      "message_count": 1,
+      "participants": [
+        "Jurriaan Nagelkerke"
+      ],
+      "started": "2019-04-25T12:25:04+02:00",
+      "last_reply": "2019-04-25T12:25:04+02:00",
+      "root_message_id": "msg-c9cf569ddf26"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-09",
+  "messages": [
+    {
+      "id": "msg-591412493e37",
+      "message_id": "<CA+uw+qAeXzVP4dMY9AZyT=8_w4V0RiCssLLFBDZiyWYigEVGQQ@mail.gmail.com>",
+      "from_name": "Christopher Endres",
+      "from_email_hash": "417e41cb0ec01897c8e79fdeee7c34fb355cf7ba714a544075a11d4225477200",
+      "date": "2015-09-04T10:42:30-04:00",
+      "subject": "[R-pkgs] nhanesA - easy retrieval and import of NHANES data",
+      "subject_clean": "nhanesA - easy retrieval and import of NHANES data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R enthusiasts, I would like to announce nhanesA, a package that\nenables easy retrieval of the data tables that are available at the\nNational Health and Nutritional Examination Survey (NHANES).\nNHANES data are used in over 10,000 peer-reviewed journal publications\nevery year. In addition to easy table download, nhanesA features several\nfunctions that implement web scraping (using rvest) to display table names,\ntable variables, and table code translations.\nFor more information, Here's a link to the package:\nhttps://cran.r-project.ohg/web/packages/nhanesA/\n<https://cran.r-project.org/web/packages/nhanesA/>\ninstall.packages(\"nhanesA\") will get you started.\n\nHopefully it will be useful for clinical research and general data\nexploration.\n\nSincerely,\nChristopher Endres\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R enthusiasts, I would like to announce nhanesA, a package that\nenables easy retrieval of the data tables that are available at the\nNational Health and Nutritional Examination Survey (NHANES).\nNH",
+      "thread_id": "thread-591412493e37",
+      "thread_depth": 0,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-306b4737d19c",
+      "message_id": "<1416191663.7823498.1443343655806.JavaMail.zimbra@meteo.be>",
+      "from_name": "Alex Deckmyn",
+      "from_email_hash": "b3d1e6f006faa315c69ed0744f4118e0020743d7620b8a4dd1c1cf53e5c21bce",
+      "date": "2015-09-27T10:47:35+02:00",
+      "subject": "[R-pkgs] Major update to 'maps': v3.0.0",
+      "subject_clean": "Major update to 'maps': v3.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, \n\nI am pleased to announce the availability of 'maps' v3.0.0 \nThis is a major update, mainly because of a new 'world' map. The new data is adapted from the public domain GIS project Natural Earth (the 1:50m admin-0 countries map). \n\nThis change in data has a number of consequences for users. Most significantly, many new country names have appeared while some other no longer exist. So code that explicitely calls, for instance, 'USSR' or 'Yugoslavia' will no longer work correctly. On the other hand, I have tried to keep other country names more or less identical. Besides the updated political borders, the map also has a slightly higher resolution than before. \n\nI understand that this change (which by its nature can not be completely backward compatible) may cause some problems for existing code. There are however various ways to fall back to the old legacy world map. It can be addressed directly as map(\"legacy_world\",...). But for quickly fixing existing code, there is also the possibility to have 'world' point at the legacy data base in two different ways: \n- by calling the function world.legacy(TRUE) \n- be setting the environment variable R_MAP_DATA_LEGACY=TRUE prior to loading the maps package \nThese 2 solutions should be seen as temporary fixes. \n\nOther notable changes and additions: \n- a new data set 'iso3166' with 2- and 3-letter ISO codes of all countries plus the sovereignty. A few simple functions allow to map or label coutries by their ISO codes: \n* iso.expand(c(\"BE\",\"NL\",\"LU\")) \n* iso.alpha(c(\"Belgium\",\"Netherlands\",\"Luxembourg\"),n=2) \n* sov.expand(\"France\") \n\n- internally, these functions and the basic name matching now use perl-style regular expressions. This may be exploited by using regular expressions to (un)select regions in the 'map()' functions directly, e.g. map(regions=\"(?!Antarctica)\",fill=T) \n\nThe README file and NEWS.Rd contain more details and examples. \n\nI hope this update proves useful. Please inform me of any errors you may find. \n\nAlex \n--- \nDr. Alex Deckmyn e-mail: alex.deckmyn at meteo.be \nRoyal Meteorological Institute http://www.meteo.be \nRinglaan 3, 1180 Ukkel, Belgium tel. (32)(2)3730646 \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi, \n\nI am pleased to announce the availability of 'maps' v3.0.0 \nThis is a major update, mainly because of a new 'world' map. The new data is adapted from the public domain GIS project Natural Earth ",
+      "thread_id": "thread-306b4737d19c",
+      "thread_depth": 0,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-ce818c767c91",
+      "message_id": "<CADY2e71WW2nxtGnSpTSrFP70AD+0=izrtsPHqf0n_CK3VxMqbA@mail.gmail.com>",
+      "from_name": "Alexey Zemnitskiy",
+      "from_email_hash": "b25bcaf37c5507c96c75a8f823c06be5c46c95a743e3725540db35ce5bb8abca",
+      "date": "2015-09-30T16:26:55-04:00",
+      "subject": "[R-pkgs] PortfolioEffectHFT - High Frequency Portfolio Analytics",
+      "subject_clean": "PortfolioEffectHFT - High Frequency Portfolio Analytics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R enthusiasts,\n\nI would like to announce PortfolioEffectHFT package availability on CRAN:\nhttps://cran.r-project.org/web/packages/PortfolioEffectHFT/\n\nIt is an R interface to PortfolioEffect Quant service for backtesting high\nfrequency trading (HFT)  strategies, intraday portfolio analysis and\noptimization. PortfolioEffect is a cloud-based service, which is free to\nuse with your own market data, but also has an integrated (optional) access\nto high frequency prices for all major US Equities (8,000+ symbols).\n\nPackage features:\n\n- Auto-calibrating model pipeline for market microstructure noise, risk\nfactors, price jumps/outliers, tail risk (high-order moments), price\nfractality (long memory) and was designed to give tick-resolution\nanalytics.\n\n- Over 40+ portfolio and position-level metrics to compute intraday risk\nand performance from modern and post-modern portfolio theory.\n\n- Single-period constraint portfolio optimization (classic Markowitz and\nextensions for tail risk) with scalar, vector-based and user-defined\nfunctional constraints.\n\n- Multi-period constraint portfolio optimization that accounts for previous\nportfolio rebalancing (trading strategy optimization).\n\n- Transactional costs were also implemented in this release.\n\nMore details in the package manual:\nhttps://cran.r-project.org/web/packages/PortfolioEffectHFT/vignettes/PortfolioEffectHFT.pdf\n\nOr on the website (nightly builds and latest updates):\nhttps://www.portfolioeffect.com/docs/platform/quant/\n\n\nSincerely,\n\nAleksey Zemnitskiy\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R enthusiasts,\n\nI would like to announce PortfolioEffectHFT package availability on CRAN:\nhttps://cran.r-project.org/web/packages/PortfolioEffectHFT/\n\nIt is an R interface to PortfolioEffect Quan",
+      "thread_id": "thread-ce818c767c91",
+      "thread_depth": 0,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-c72ae4487499",
+      "message_id": "<560C66DA.7090803@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2015-09-30T17:48:58-05:00",
+      "subject": "[R-pkgs] Major updates to Hmisc and rms packages",
+      "subject_clean": "Major updates to Hmisc and rms packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions of Hmisc and rms are available on CRAN.  Changes are listed \nbelow.\n\nThe most significant change to Hmisc is the addition of the ffCompress \nfunction that creates an optimal ff package object for large data frames \nby computing the maximum number of bits used by each numeric or logical \nvariable in the data frame.  And the html.latex method now implements \nconversion of latex code generated by Hmisc to html for dynamic \ninsertion in R Markdown documents (if you install the system package \nTeX4ht).\n\nThe most significant changes to rms are the correct handling of offset \nvariables and updating the demos.\n----------------------------------------------------------------------------------------------------------------------------\n\nHmisc Changes in version 3.17-0 (2015-09-20)\n    * format.df (used by latex.default): added space after textless, \ntextgreater\n      * label: changed default for units to value of plot\n      * getRs: replaced where argument with guser, grepo, gdir, dir to \nallow easy fetching of updated functions from Hmisc etc.\n      * Separated sas.get source code from other .get functions and from \nupData/cleanup.import by putting into 3 separate files.  Moved stata.get \ninto misc.get.s\n      * upData: for Stat/Transfer exported R workspaces, change \nvariables into factors to incorporate value labels when present; added \nsubset argument and reporting of number of observations pre and post \nsubsetting\n      * latex.default: added comma after botcap directive for ctable.  \nThanks: Paul Trowbridge\n    * Hmisc-internal.Rd: removed  alias{[.terms}\n      * latex.default: for longtable when no caption is given, subtract \none from table counter\n      * latex.summaryM: quit ignoring insert.bottom if it is a character \nstring (thanks: JoAnn Alvarez)\n      * minor.tick: revised version by Earl Belllinger that fixes \nproblem reported in https://github.com/harrelfe/Hmisc/issues/28\n      * several functions: used new names when assigning temporary functions\n      * NAMESPACE: add imports to base functions to avoid new R CMD \nCHECK warnings\n      * ffCompress: new function\n      * knitrSet: changed fig.path default to '' instead of NULL to work \nwith knitr 1.11\n      * html.latex: added argument rmarkdown\n      * htmltools: added to suggests in DESCRIPTION\n      * tests: new test script latex-html.Rmd for latex -> html under \nRmarkdown/knitr/Rstudio, new test for cut2\n      * plsmo, panel.plsmo: added method='intervals', mobs, ifun arguments\n\n\nrms Changes in version 4.4-0 (2015-09-28)\n    * contrast.rms: made SE a vector not a matrix, added 4 list logic \nfor nvary, added new test from JoAnn Alvarez\n      * plot.summary.rms: correct bug where pch was ignored.  Thanks: \nTamas Ferenci\n      * prModFit: fix print(fit, latex=FALSE) when fit is result of \nrobcov, bootcov\n      * NAMESPACE: added imports for base functions used to avoid \nwarnings with R CMD CHECK; new test rcs.r\n      * prModFit: added rmarkdown argument.  All print.* methods can \npass this argument.\n      * All print methods for fit objects: left result as prModFit \ninstead of invisible() so that rmarkdown will work\n      * demo/all.R: updated for plot and ggplot methods, npsurv\n      * cph, predictrms, rms, rms.trans, rmsMisc: changed Design \nfunction to return new objects sformula (formula without cluster()) and \nmmcolnames which provides a new way to get rid of strat() main effects \nand interactions involving non-reference cells; handle offsets in cph \nand predict() (not yet in Predict); new internal function \nremoveFormulaTerms that does character manipulation to remove terms like \ncluster() or offset() or the dependent variable(s).  This gets around \nthe problem with [.terms messing up offset terms when you subset on \nnon-offset terms\n      * Glm, ols: fixed offset\n      * bj, Gls, lrm, orm, psm, Rq: change to new offset method and sformula\n      * Predict: added offset=list(offsetvariable=value)\n      * several: made temporary function names unique to avoid warnings \nwith R CMD CHECK\n      * ggplot.Predict: changed facet_wrap_labeller to not mess with \nclass of returned object from ggplotGrob\n      * Design: fixed column names for matrix predictors\n      * Design, cph: handled special case where model is fit on a fit$x \nmatrix\n      * dxy.cens: exported\n      * cph: added debug argument\n      * tests/cph4.r: new tests for various predictor types\n      * rms: changed warning to error if an ordered factor appears in \nthe model and options(contrasts) is not set properly\n      * rms transformation functions: made more robust by checking ! \nlength instead of is.null\n\n\n-- \n------------------------------------------------------------------------\nFrank E Harrell Jr \tProfessor and Chairman \tSchool of Medicine\n\n\tDepartment of *Biostatistics* \t*Vanderbilt University*\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "New versions of Hmisc and rms are available on CRAN.  Changes are listed \nbelow.\n\nThe most significant change to Hmisc is the addition of the ffCompress \nfunction that creates an optimal ff package ob",
+      "thread_id": "thread-c72ae4487499",
+      "thread_depth": 0,
+      "month": "2015-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-591412493e37",
+      "subject": "nhanesA - easy retrieval and import of NHANES data",
+      "message_count": 1,
+      "participants": [
+        "Christopher Endres"
+      ],
+      "started": "2015-09-04T10:42:30-04:00",
+      "last_reply": "2015-09-04T10:42:30-04:00",
+      "root_message_id": "msg-591412493e37"
+    },
+    {
+      "id": "thread-306b4737d19c",
+      "subject": "Major update to 'maps': v3.0.0",
+      "message_count": 1,
+      "participants": [
+        "Alex Deckmyn"
+      ],
+      "started": "2015-09-27T10:47:35+02:00",
+      "last_reply": "2015-09-27T10:47:35+02:00",
+      "root_message_id": "msg-306b4737d19c"
+    },
+    {
+      "id": "thread-ce818c767c91",
+      "subject": "PortfolioEffectHFT - High Frequency Portfolio Analytics",
+      "message_count": 1,
+      "participants": [
+        "Alexey Zemnitskiy"
+      ],
+      "started": "2015-09-30T16:26:55-04:00",
+      "last_reply": "2015-09-30T16:26:55-04:00",
+      "root_message_id": "msg-ce818c767c91"
+    },
+    {
+      "id": "thread-c72ae4487499",
+      "subject": "Major updates to Hmisc and rms packages",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2015-09-30T17:48:58-05:00",
+      "last_reply": "2015-09-30T17:48:58-05:00",
+      "root_message_id": "msg-c72ae4487499"
+    }
+  ]
+}

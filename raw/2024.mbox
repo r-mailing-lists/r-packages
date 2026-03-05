@@ -1,0 +1,492 @@
+From mzb@deve| @end|ng |rom gm@||@com  Mon Jan 22 03:06:10 2024
+From: mzb@deve| @end|ng |rom gm@||@com (Mauricio Zambrano-Bigiarini)
+Date: Sun, 21 Jan 2024 23:06:10 -0300
+Subject: [R-pkgs] hydroTSM back on CRAN (v0.7-0 released)
+Message-ID: <CAJ44-AkUGpQKQ+8Geuje+Hu8NeemG3DqMyv=jkZVEQKfNH=0uQ@mail.gmail.com>
+
+Dear all,
+
+After being archived on CRAN on 2023-10-1, hydroTSM is finally back on CRAN
+since January 18th: https://cran.r-project.org/package=hydroTSM.
+
+This new version 0.7-0 has several new functions, improvements, bugfixes,
+and a new dataset, mostly devoted to work with sub-daily and sub-hourly
+time series.
+
+*) New functions: baseflow, plot_pq, calendarHeatmap, subhourly2hourly,
+subhourly2nminutes, daily2weekly, subdaily2weekly, cmv, si.
+
+*) Improvements: climograph, (sub)daily2monthly, subdaily2daily,
+daily2annual, daily2monthly, subdaily2annual, hip, hydroplot, sname2plot,
+izoo2rzoo.
+
+A detailed description of the previous changes can be found in the new
+News.md file:
+https://cran.r-project.org/web/packages/hydroTSM/news/news.html
+
+Two vignettes illustrate the usage of the some of the main functions:
+
+1) Analysis of daily precipitation data:
+https://cloud.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Daily_P_Vignette-knitr.pdf
+
+2) 1) Analysis of daily streamflow data:
+https://cloud.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Daily_Q_Vignette-knitr.pdf
+
+If you use this package, please cite it correctly as:
+
+Zambrano-Bigiarini, Mauricio (2024). hydroTSM: Time Series Management and
+Analysis for Hydrological Modelling. R package version 0.7-0. URL:
+https://cran.r-project.org/package=hydroTSM. doi:110.5281/zenodo.839565
+
+Issues and enhancements can be requested on:
+https://github.com/hzambran/hydroTSM/issues
+
+All the best,
+
+Mauricio
+
+
+Mauricio Zambrano-Bigiarini, PhD
+Associate Professor, Universidad de La Frontera
+Associate Researcher, (CR)2 FONDAP Center
+Phone: +56 45 259 2812 <+56+45+259+2812>
+e-mail: mauricio.zambrano at ufrontera.cl
+[image: webpage] <https://hzambran.github.io/> [image: ORCID]
+<https://orcid.org/0000-0002-9536-643X> [image: Github]
+<https://github.com/hzambran> [image: Linkedin]
+<http://www.linkedin.com/in/hzambran/>
+
+	[[alternative HTML version deleted]]
+
+
+From mzb@deve| @end|ng |rom gm@||@com  Mon Jan 22 06:30:00 2024
+From: mzb@deve| @end|ng |rom gm@||@com (Mauricio Zambrano-Bigiarini)
+Date: Mon, 22 Jan 2024 02:30:00 -0300
+Subject: [R-pkgs] hydroGOF back on CRAN (v0.5-4 released)
+Message-ID: <CAJ44-Amtui+ZZCtM4JRMMLJW3d3EkUkBkbVx=b=epWep9v_C=A@mail.gmail.com>
+
+Dear all,
+
+After being archived on CRAN on  2023-10-16 , hydroGOF is finally back on
+CRAN since January 21th: https://cran.r-project.org/package=hydroGOF.
+
+This new version 0.5-4 includes:
+
+*) the following new functions:
+
+    -) KGElf (Garc?a et al., 2017),
+    -) sKGE (Fowler et al., 2018),
+    -) KGEnp (Pool et al., 2018),
+    -) dr (Willmott et al., 2012),
+    -) ubRMSE (Entekhabi et al., 2010),
+    -) wNSE (Hundecha and Bardossy, 2004),
+    -) rSpearman,
+    -) R2
+
+*) improvements: all the functions allow you to apply a user-defined
+function (e.g., log, sqrt) to both 'sim' and 'obs' before computing the
+goodness-of-fit measure.
+
+A detailed description of the previous changes can be found for the 0.5-0
+version in the new News.md file:
+https://cran.r-project.org/web/packages/hydroGOF/news/news.html
+
+A much improved vignette illustrate the usage of some of the main functions:
+
+*) Analysis of daily precipitation data:
+https://cloud.r-project.org/web/packages/hydroGOF/vignettes/hydroGOF_Vignette.pdf
+
+If you use this package, please cite it correctly as:
+
+Zambrano-Bigiarini, Mauricio (2024). hydroGOF: Goodness-of-fit functions
+for comparison of simulated and observed hydrological time series. R
+package version 0.5-4. URL:https://cran.r-project.org/package=hydroGOF.
+doi:10.5281/zenodo.839854.
+
+Issues and enhancements can be requested on:
+https://github.com/hzambran/hydroGOF/issues
+
+All the best,
+
+Mauricio
+
+
+Mauricio Zambrano-Bigiarini, PhD
+Associate Professor, Universidad de La Frontera
+Associate Researcher, (CR)2 FONDAP Center
+Phone: +56 45 259 2812 <+56+45+259+2812>
+e-mail: mauricio.zambrano at ufrontera.cl
+[image: webpage] <http://hzambran.github.io/> [image: ORCID]
+<https://orcid.org/0000-0002-9536-643X> [image: Github]
+<https://github.com/hzambran> [image: Linkedin]
+<http://www.linkedin.com/in/hzambran/>
+
+	[[alternative HTML version deleted]]
+
+
+From v|ncent@@ud|g|er @end|ng |rom cn@m@|r  Wed Mar 13 10:10:23 2024
+From: v|ncent@@ud|g|er @end|ng |rom cn@m@|r (Vincent Audigier)
+Date: Wed, 13 Mar 2024 10:10:23 +0100
+Subject: [R-pkgs] clusterMI: Cluster Analysis with Missing Values by
+ Multiple Imputation
+Message-ID: <bb40a01d-a3dc-4b58-88d5-01f7eb4d4517@cnam.fr>
+
+Dear all,
+
+I am pleased to announce the release of a new package named 'clusterMI' on CRAN.
+
+clusterMI allows clustering of incomplete observations by addressing missing values using multiple imputation.
+
+For achieving this goal, the methodology consists in three steps:
+
+1. missing data imputation using tailored imputation models: four multiple imputation methods are proposed, two are based on joint modelling (JM-GL and JM-DP) and two are fully sequential methods (FCS-homo and FCS-hetero).
+2. cluster analysis of imputed data sets: six clustering methods are available (kmeans, pam, clara, hierarchical clustering, fuzzy c-means and gaussian mixture), but custom methods can also be easily used.
+3. partition pooling: the set of partitions is aggregated using NMF based method. An associated instability measure is computed by bootstrap. Among applications, this instability measure can be used to choose a number of clusters with missing values.
+
+The package also offers several diagnostic tools for tuning the number of imputed data sets, for checking convergence in sequential imputation, for checking the fit of imputation models, etc.
+
+This is the first version of the package, your feedback and suggestions are welcome!
+
+Please find more details and download the package from the following link:https://cran.r-project.org/package=clusterMI
+
+Best regards,
+
+V. Audigier
+
+-- 
+Vincent AUDIGIER
+Associate Professor, CNAM
+2 rue Cont? 75003 Paris
+Office 35.3.21
+Tel: 01 40 27 27 19
+Website:http://vincentaudigier.weebly.com/
+
+
+From RYAN@A@PETERSON @end|ng |rom CUANSCHUTZ@EDU  Thu Mar 28 22:24:11 2024
+From: RYAN@A@PETERSON @end|ng |rom CUANSCHUTZ@EDU (Peterson, Ryan)
+Date: Thu, 28 Mar 2024 21:24:11 +0000
+Subject: [R-pkgs] New package - fastTS
+Message-ID: <SJ2PR05MB10332B2BBCA79839072290B63DB3B2@SJ2PR05MB10332.namprd05.prod.outlook.com>
+
+Hi R enthusiasts,
+
+I am happy to announce a new package available on CRAN: fastTS (https://cran.r-project.org/web/packages/fastTS/). fastTS is especially useful for large time series with exogenous features and/or complex seasonality (i.e. with multiple modes), allowing for possibly high-dimensional feature sets. The method can also facilitate inference on exogenous features, conditional on a series' autoregressive structure. The regularization-based method is considerably faster than competitors, while often producing more accurate predictions. See our open-access publication for more information: https://doi.org/10.1177/1471082X231225307
+
+The package has several vignettes, one of which is an detailed walkthrough of an application to an (included) data set consisting of an hourly series of arrivals into the University of Iowa Emergency Department with concurrent local temperature.
+
+If you encounter any issues or would like to make contributions, please do so via the package's GitHub page: https://github.com/petersonR/fastTS
+
+Best,
+Ryan
+
+Ryan Peterson
+Assistant Professor
+Department of Biostatistics and Informatics
+University of Colorado - Anschutz Medical Campus
+
+	[[alternative HTML version deleted]]
+
+
+From v|to@muggeo @end|ng |rom un|p@@|t  Thu May 16 10:47:33 2024
+From: v|to@muggeo @end|ng |rom un|p@@|t (Vito Muggeo)
+Date: Thu, 16 May 2024 10:47:33 +0200
+Subject: [R-pkgs] segmented 2.1-0 is released
+Message-ID: <dbad3dff-1d81-4439-9f1f-e33daafcc9d0@unipa.it>
+
+dear R users,
+I am pleased to announce that segmented 2.1-0 is now available on CRAN.
+
+segmented focuses on estimation of breakpoints/changepoints of 
+segmented, i.e. piecewise linear, relationships in (generalized) linear 
+models. Starting with version 2.0-0, it is also possible to model 
+stepmented, i.e. piecewise constant, effects.
+
+In the last release both models may be fitted via a formula interface, 
+such as
+
+segreg(y ~ seg(x1, npsi=2) + seg(x2) + z)
+
+stepreg(y ~ seg(x1, npsi=2) + seg(x2) +seg(x3, npsi=3) + z, family=poisson)
+
+There is virtually no limit in the number of covariates and 
+corresponding number of changepoints to be estimated.
+
+thank you,
+kind regards,
+Vito
+
+
+-- 
+=================================================
+Vito M.R. Muggeo, PhD
+Professor of Statistics
+Dip.to Sc Econom, Az e Statistiche
+Universit? di Palermo
+viale delle Scienze, edificio 13
+90128 Palermo - ITALY
+tel: 091 23895240; fax: 091 485726
+http://www.unipa.it/persone/docenti/m/vito.muggeo
+Assoc Editor: Statist Modelling, Statist Meth Appl
+past chair, Statistical Modelling Society
+coordinator, PhD Program in Econ, Businss, Statist
+
+
+From gb@rc@ro|| @end|ng |rom gm@||@com  Sat Jun  1 13:27:16 2024
+From: gb@rc@ro|| @end|ng |rom gm@||@com (Giulio Barcaroli)
+Date: Sat, 1 Jun 2024 13:27:16 +0200
+Subject: [R-pkgs] QGA 1.0 is released
+Message-ID: <7ce4d41b-92e3-435c-a9e8-2e238f74c52e@gmail.com>
+
+Dear R users,
+
+I am pleased to announce that QGA 1.0 is now available on CRAN.
+
+QGA implements the Quantum Genetic Algorithm, as proposed by Han and Kim 
+in 2000, and is an R implementation derived from the Python one by 
+Lahoz-Beltra in 2016.
+
+Under this approach, each solution is represented as a sequence of 
+(qu)bits. Simulating the quantum paradigm, these qubits are in a 
+superposition state: when measuring them, they collapse in a 0 or 1 
+state. After measurement, the solution's fitness is calculated as in 
+usual genetic algorithms.
+
+The evolution at each iteration is oriented by the application of two 
+quantum gates to the amplitudes of the qubits: (1) a rotation gate 
+(always); (2) a Pauli-X gate (optionally). The rotation is based on the 
+theta angle values: higher values allow a quicker evolution, and lower 
+values avoid local maxima. The Pauli-X gate is equivalent to the 
+classical mutation operator and determines the swap between alfa and 
+beta amplitudes of a given qubit.
+
+The package has been developed in such a way as to permit a complete 
+separation between the 'engine', and the particular problem subject to 
+combinatorial optimization. This is evident in the available examples, 
+that come with the package, illustrating the application of QGA to 
+different problems: knapsack, traveler salesman, and clustering.
+
+Thank you, kind regards,
+
+Giulio Barcaroli
+
+	[[alternative HTML version deleted]]
+
+
+From p@ych@o||u @end|ng |rom gm@||@com  Tue Sep  3 18:30:54 2024
+From: p@ych@o||u @end|ng |rom gm@||@com (Chao Liu)
+Date: Tue, 3 Sep 2024 12:30:54 -0400
+Subject: [R-pkgs] Goodreader: Scrape and Analyze 'Goodreads' Book Data
+Message-ID: <CACCU-vM3B95EnoYz=-wKf5r+iWm-O8iCW6h-cBo-q+kjvuRk1Q@mail.gmail.com>
+
+Dear R Users,
+
+I am pleased to announce that Goodreader 0.1.1 is now available on CRAN.
+
+Goodreader offers a toolkit for scraping and analyzing book data from
+Goodreads. Users can search for books, scrape detailed information and
+reviews, perform sentiment analysis on reviews, and conduct topic modeling.
+
+Here?s a quick overview of how to use Goodreader:
+# Search for books
+AI_df <- search_goodreads(search_term = "artificial intelligence",
+search_in = "title", num_books = 10, sort_by = "ratings")
+
+# Retrieve Book IDs and save them to a text file
+get_book_ids(input_data = AI_df, file_name = "AI_books.txt")
+
+# Get book-related information
+scrape_books(book_ids_path = "AI_books.txt")
+
+# Scrape book reviews
+scrape_reviews(book_ids_path = "AI_books.txt", num_reviews = 10)
+
+For more details, please visit: https://liu-chao.site/Goodreader/
+
+Best regards,
+
+Chao Liu
+
+	[[alternative HTML version deleted]]
+
+
+From jen@@oeh|@ch|@ege| @end|ng |rom truec|u@ter@com  Mon Sep 23 22:45:10 2024
+From: jen@@oeh|@ch|@ege| @end|ng |rom truec|u@ter@com (=?UTF-8?Q?Jens_Oehlschl=C3=A4gel?=)
+Date: Mon, 23 Sep 2024 22:45:10 +0200
+Subject: [R-pkgs] bit, bit64, ff and greeNsort
+Message-ID: <b11255da-dd8d-4731-8b3c-0e8a2bdab5e0@truecluster.com>
+
+Dear package maintainers,
+
+Dear users of packages `bit`, `bit64`, `ff`,
+
+Everyone interested in sustainable sorting algorithms,
+
+I submitted updated versions for the upcoming R 4.5.0. The are only 
+minor changes (see the NEWS files) but there is one important change in 
+bit64:
+
+ ??? o setting options(integer64_semantics="new")
+ ????? gives the better semantics suggested by Ofek Shilon.
+ ????? Downstream package authors: please test and adjust to the new 
+semantics,
+ ????? we plan to make that the default.
+
+After 25 years volunteer work for the R community, that was my last 
+combined submission for packages `bit`, `bit64` and `ff`.
+
+I learned S+ in 1996 and supported R's 1.0 release in 2000 with bug 
+testing, a small code contribution to `pairs` and motivating the 
+core-team to replace 'NA' with NA_character_.
+
+In 2007 Daniel Adler and I published `ff`: the first R package allowing 
+big out of memory data.frames was a nail in the coffin of SAS dominance 
+and helped R into the big data era.
+
+2009 and 2012 followed `bit`, `bit64` to enhance R's data types somewhat 
+with `bit` vectors and signed `integer64`. Package `bit` supported 
+efficient selection in `ff`. Package `bit64` was an emergency 
+development in order to establish rather `integer64' than another 
+`int64` package that had too expensive performance.
+
+Since 2011 I work for an employer that does not use R, and maintenance 
+of R packages is a little rewarded burden.
+
+Since 2010 my priorities shifted to fighting global heating by 
+developing more sustainable sorting algorithms that provide better 
+trade-offs between memory investments, compute costs and adaptivity to 
+easier input patterns. My R&D project was successfully completed 2024 
+with theory and design of new symmetric sorting algorithms that can 
+replace Quicksort, Mergesort and Timsort. Lots of info at greeNsort.org. 
+I have an R package `greeNsort` on github with a research testbed that 
+can measure RAM, CPU and RAPL energy for ?150 equally tuned sorting 
+algorithms on multiple test patterns.
+
+Since 24.2.2022 my priorities are on strengthening resilience of 
+European civil society.
+
+Hence I happily accept the generous offer of Michael Chirico to carry 
+forward the maintenance of packages `bit` and `bit64`. Please support 
+him in the difficult task of developing very close to the core as a 
+normal package author.
+
+I will continue bug-fixing `ff` as time permits, although a modern C++ 
+rewrite would be preferable, which
+
+1) supports long vectors
+
+2) avoids copying between Mapped Memory and R's memory
+
+3) simplifies the package, particularly removes the "virtual window" 
+complexity
+
+All the best
+
+
+Jens Oehlschl?gel
+
+
+From unw|n @end|ng |rom m@th@un|-@ug@burg@de  Wed Sep 25 15:27:13 2024
+From: unw|n @end|ng |rom m@th@un|-@ug@burg@de (Antony Unwin)
+Date: Wed, 25 Sep 2024 15:27:13 +0200
+Subject: [R-pkgs] GmooG, ChessGmooG, FilmsGmooG, ComradesM
+Message-ID: <DC8E6342-2A10-4A66-8D0C-007D663DC4F6@math.uni-augsburg.de>
+
+Dear all,
+
+GmooG, ChessGmooG, FilmsGmooG, ComradesM are dataset packages accompanying my book ?Getting (more out of) Graphics? (CRC Press 2024).  They are now available on CRAN.  R code producing the graphics in the book will be put online in a few weeks.
+
+Regards
+
+Antony
+
+Professor Antony Unwin
+Mathematics Institute,
+University of Augsburg, 
+86135 Augsburg, Germany
+
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From e@ @end|ng |rom enr|co@chum@nn@net  Sun Oct 20 18:25:58 2024
+From: e@ @end|ng |rom enr|co@chum@nn@net (Enrico Schumann)
+Date: Sun, 20 Oct 2024 18:25:58 +0200
+Subject: [R-pkgs] PMwR 1.0 (Portfolio Management with R)
+Message-ID: <875xpmyc4p.fsf@enricoschumann.net>
+
+Dear all,
+
+version 1.0-1 of package PMwR is on CRAN now.
+
+PMwR stands for 'Portfolio Management with R', and the
+package provides tools for the practical management of
+financial portfolios: backtesting investment and trading
+strategies, computing profit/loss and returns, analysing
+trades, handling lists of transactions, reporting, and
+more.
+
+The manual [1] provides all the details; a tutorial on
+backtesting with the package is available on SSRN [2].
+
+Comments/corrections/remarks/suggestions are very welcome;
+please send them to the maintainer (me) directly.
+
+Kind regards
+      Enrico
+
+
+
+[1] https://enricoschumann.net/R/packages/PMwR/manual/PMwR.html
+[2] https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3374195
+
+
+-- 
+Enrico Schumann
+Lucerne, Switzerland
+https://enricoschumann.net
+
+
+From e@ @end|ng |rom enr|co@chum@nn@net  Sun Oct 20 18:28:40 2024
+From: e@ @end|ng |rom enr|co@chum@nn@net (Enrico Schumann)
+Date: Sun, 20 Oct 2024 18:28:40 +0200
+Subject: [R-pkgs] NMOF 2.10-0 (Numerical Methods and Optimization in Finance)
+Message-ID: <871q0ayc07.fsf@enricoschumann.net>
+
+Dear all,
+
+version 2.10-0 of package NMOF is on CRAN now.
+
+NMOF stands for 'Numerical Methods and Optimization in
+Finance', and it accompanies the book with the same
+name, written by Manfred Gilli, Dietmar Maringer and
+Enrico Schumann.[1]
+
+Since the last announcement on this list in 2021,
+several functions have been added to the package, such
+as 'barrierOptionEuropean' for valuing barrier options,
+and function 'minMAD' for computing minimum-MAD
+portfolios.  Also, existing functionality has been
+expanded. For instance, 'French', which downloads data
+from Kenneth French's data library, now supports
+additional datasets.  See the NEWS file [2] for all
+changes.  The documentation has also been expanded.
+
+Comments/corrections/remarks/suggestions are -- as always --
+very welcome; please send them to the maintainer (me)
+directly.
+
+Kind regards
+      Enrico
+
+[1] https://enricoschumann.net/NMOF.htm
+[2] https://enricoschumann.net/R/packages/NMOF/NEWS
+
+
+-- 
+Enrico Schumann
+Lucerne, Switzerland
+https://enricoschumann.net
+
+

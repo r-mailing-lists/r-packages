@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-07",
+  "messages": [
+    {
+      "id": "msg-ff3a6fdf52bf",
+      "message_id": "<50276a5f-d5fa-5d05-2561-b60a775210e4@sissa.it>",
+      "from_name": "Valerio Gherardi",
+      "from_email_hash": "983935078100044e1c2dfb4ad3814974046de6e286192336cb587b0f8932e6f9",
+      "date": "2021-07-06T12:55:59+02:00",
+      "subject": "[R-pkgs] r2r: R-Object to R-Object Hash Maps",
+      "subject_clean": "r2r: R-Object to R-Object Hash Maps",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am glad to announce that {r2r} is now available on CRAN \n<https://CRAN.R-project.org/package=r2r>.\n\n{r2r} provides a flexible implementation of hash tables in R, allowing for:\n\n- arbitrary R objects as keys and values,\n- arbitrary key comparison and hash functions,\n- customizable behaviour (throw or return a default value) on missing \nkey exceptions.\n\nFeedbacks are all welcome.\n\n\nBest regards,\n\nValerio Gherardi\n\n---\n\nLinks:\n\n ?- CRAN:https://CRAN.R-project.org/package=r2r\n\n ?- GitHub: https://github.com/vgherard/r2r\n\n ?- Website: https://vgherard.github.io/r2r/\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am glad to announce that {r2r} is now available on CRAN \n<https://CRAN.R-project.org/package=r2r>.\n\n{r2r} provides a flexible implementation of hash tables in R, allowing for:\n\n- arbitrar",
+      "thread_id": "thread-ff3a6fdf52bf",
+      "thread_depth": 0,
+      "month": "2021-07"
+    },
+    {
+      "id": "msg-f799b2e2f8c8",
+      "message_id": "<CABxpnnkbD5qgEZDYOM4PCrYc0uwyyH7X9YaQb4iYUXhceiC7cw@mail.gmail.com>",
+      "from_name": "Grzegorz Smoliński",
+      "from_email_hash": "0e68bd94dd5c8263bc390476eab6f41b619c97f43bf594a72ad1ae993612a84f",
+      "date": "2021-07-16T15:37:51+02:00",
+      "subject": "[R-pkgs] dedupewider - package to dedupe records across multiple columns",
+      "subject_clean": "dedupewider - package to dedupe records across multiple columns",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI would like to announce a one-function package dedupewider. I have\nused it to find companies connected by some telephone numbers to\ncollapse it into one row, e.g. in case of this table:\n\n|tel_1|tel_2|name|\n------------------------\n|1111|2222|nam1|\n|2222|3333|nam2|\n|3333|4444|nam3|\n\nall records will be collapsed into one record with 4 unique telephone\nnumbers (optionally all unique names or information from other columns\ncan be kept). Perhaps it will be helpful for you as well.\n\nLink to CRAN: https://CRAN.R-project.org/package=dedupewider\n\nBest regards,\n\nGrzegorz Smoli?ski",
+      "body_snippet": "Dear All,\n\nI would like to announce a one-function package dedupewider. I have\nused it to find companies connected by some telephone numbers to\ncollapse it into one row, e.g. in case of this table:\n\n|",
+      "thread_id": "thread-f799b2e2f8c8",
+      "thread_depth": 0,
+      "month": "2021-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ff3a6fdf52bf",
+      "subject": "r2r: R-Object to R-Object Hash Maps",
+      "message_count": 1,
+      "participants": [
+        "Valerio Gherardi"
+      ],
+      "started": "2021-07-06T12:55:59+02:00",
+      "last_reply": "2021-07-06T12:55:59+02:00",
+      "root_message_id": "msg-ff3a6fdf52bf"
+    },
+    {
+      "id": "thread-f799b2e2f8c8",
+      "subject": "dedupewider - package to dedupe records across multiple columns",
+      "message_count": 1,
+      "participants": [
+        "Grzegorz Smoliński"
+      ],
+      "started": "2021-07-16T15:37:51+02:00",
+      "last_reply": "2021-07-16T15:37:51+02:00",
+      "root_message_id": "msg-f799b2e2f8c8"
+    }
+  ]
+}

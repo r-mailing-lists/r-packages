@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-04",
+  "messages": [
+    {
+      "id": "msg-724185d44866",
+      "message_id": "<6253c881-857b-bc97-2420-d612a3549a3e@reclus2.nhh.no>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "37a3c7637f7cdc3576966201a0fd58853d44abb21284a9eb85afffcb057c33b5",
+      "date": "2023-04-10T17:31:15+02:00",
+      "subject": "[R-pkgs] Retirement/archiving of rgdal, rgeos and maptools October 2023",
+      "subject_clean": "Retirement/archiving of rgdal, rgeos and maptools October 2023",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The third report on the R-spatial evolution project has been published.\n\nhttps://r-spatial.org/r/2023/04/10/evolution3.html\n\nIt links back to earlier blogs and presentations, and focuses on work that \nmaintainers of R packages and workflows using rgdal, rgeos and maptools \nneed to put in train now before the packages are archived on CRAN.\n\nThe first changes will occur in June 2023, and the retiring packages will \nbe archived during October 2023. If you are giving a workshop or tutorial \nduring the Northern hemisphere summer, aim for June.\n\nIf you still need more assistance after reading the project materials, \nraise an issue on https://github.com/r-spatial/evolution/issues or email \nme (issue better, less likely to be overlooked).\n\n-- \nRoger Bivand\nEmeritus Professor\nDepartment of Economics, Norwegian School of Economics,\nPostboks 3490 Ytre Sandviken, 5045 Bergen, Norway.\ne-mail: Roger.Bivand at nhh.no\nhttps://orcid.org/0000-0003-2392-6140\nhttps://scholar.google.no/citations?user=AWeghB0AAAAJ&hl=en",
+      "body_snippet": "The third report on the R-spatial evolution project has been published.\n\nhttps://r-spatial.org/r/2023/04/10/evolution3.html\n\nIt links back to earlier blogs and presentations, and focuses on work that ",
+      "thread_id": "thread-724185d44866",
+      "thread_depth": 0,
+      "month": "2023-04"
+    },
+    {
+      "id": "msg-d5c42d813ec5",
+      "message_id": "<68d2e035-6cba-b6dd-71e8-872dc2ed1f12@bristol.ac.uk>",
+      "from_name": "Peter Green",
+      "from_email_hash": "1a75dbfab58d60bdc93956658d147fd77c611ae699cce48b00a0c715cdf3fb6f",
+      "date": "2023-04-12T09:18:21+01:00",
+      "subject": "[R-pkgs] DNAmixturesLite and KinMixLite",
+      "subject_clean": "DNAmixturesLite and KinMixLite",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nWe are pleased to announce that CRAN now hosts our packages \nDNAmixturesLite and KinMixLite.\n\nThese are fully R-based versions of our packages DNAmixtures and KinMix, \nwhich rely on a commercial software, HUGIN, for performing efficient \ncomputations in Bayesian networks. The lite versions rely instead on \ngRain for such computations.\n\nDNAmixtures provides statistical methods for DNA mixture analysis and \nhas been used to provide statistical evidence pertaining to DNA in \nseveral criminal cases in the UK and Denmark. The purpose of the newly \nreleased lite version is to allow users without a HUGIN software license \nto experiment with the statistical methodology. While the lite version \naims to provide full functionality, it is noticeably less efficient than \nthe original DNAmixtures package. For details on implementation and \nmethodology see <https://dnamixtures.r-forge.r-project.org/>.\n\nKinMix builds upon DNAmixtures and is a toolbox of methods for inference \nabout relationships between contributors to a DNA mixture and other \nindividuals of known genotype: a basic example would be testing whether \na contributor to a mixture is the father of a child of known genotype. \nKinMixLite builds upon DNAmixturesLite and provides most of the \nfunctionality of the KinMix package, but with some loss of efficiency. \nThe package implements the methods introduced in Green, P. J. and \nMortera, J. (2017) <doi:10.1016/j.fsigen.2017.02.001> and Green, P. J. \nand Mortera, J. (2021) <doi:10.1111/rssc.12498>.\n\nRegards,\nTherese Graversen and Peter Green",
+      "body_snippet": "Dear all,\n\nWe are pleased to announce that CRAN now hosts our packages \nDNAmixturesLite and KinMixLite.\n\nThese are fully R-based versions of our packages DNAmixtures and KinMix, \nwhich rely on a comme",
+      "thread_id": "thread-d5c42d813ec5",
+      "thread_depth": 0,
+      "month": "2023-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-724185d44866",
+      "subject": "Retirement/archiving of rgdal, rgeos and maptools October 2023",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2023-04-10T17:31:15+02:00",
+      "last_reply": "2023-04-10T17:31:15+02:00",
+      "root_message_id": "msg-724185d44866"
+    },
+    {
+      "id": "thread-d5c42d813ec5",
+      "subject": "DNAmixturesLite and KinMixLite",
+      "message_count": 1,
+      "participants": [
+        "Peter Green"
+      ],
+      "started": "2023-04-12T09:18:21+01:00",
+      "last_reply": "2023-04-12T09:18:21+01:00",
+      "root_message_id": "msg-d5c42d813ec5"
+    }
+  ]
+}

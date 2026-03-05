@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-12",
+  "messages": [
+    {
+      "id": "msg-59ac9b59c3d6",
+      "message_id": "<CAAr-_QUT+fJ1P+Z90uLgOgVH+SPtLABu9FF8tbLw7Udx_=h6pw@mail.gmail.com>",
+      "from_name": "Emilio López",
+      "from_email_hash": "4e17542a29153e0cc1434c7e809177ae1ec8529b4c5333a42d850fd4af20e021",
+      "date": "2012-12-01T11:13:19+01:00",
+      "subject": "[R-pkgs] Package SixSigma updated to version 0.7-0",
+      "subject_clean": "Package SixSigma updated to version 0.7-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list,\n\nA new version of the SixSigma package has been updated at CRAN. See\ndetails below, or visit http//www.sixsigmawithr.com\n\nhttp://cran.r-project.org/web/packages/SixSigma/index.html\n\nNEWS\n\nSixSigma 0.7-0\n--------------\n* New function ss.cc for control charts\n(currently supporting moving-range control chart)\n* roxygen2 documentation\n* Updated URL in DESCRIPTION\n* Added compatibility with R-2.14.0\n* Fixed Encoding field in DESCRIPTION\n\n\nComments and suggestions are welcome.\n\nBest wishes,\n\n--\n_____________________________________\n\nEmilio L. Cano\nhttp://www.proyectum.es\n+34 665 676 225\nDepartment of Statistics and Operations Research\nUniversidad Rey Juan Carlos",
+      "body_snippet": "Dear list,\n\nA new version of the SixSigma package has been updated at CRAN. See\ndetails below, or visit http//www.sixsigmawithr.com\n\nhttp://cran.r-project.org/web/packages/SixSigma/index.html\n\nNEWS\n\nS",
+      "thread_id": "thread-59ac9b59c3d6",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-5b2a22bda02b",
+      "message_id": "<CAEiWUctj2jaQcM8=zi4=3+9KZWRSCRuW9VowPwNy9hXPSDwr6Q@mail.gmail.com>",
+      "from_name": "Ian Marschner",
+      "from_email_hash": "078c0b104e246dad19d46260ca66847bb08704e0bd47b64d88f0b88d524c3666",
+      "date": "2012-12-05T10:58:53+11:00",
+      "subject": "[R-pkgs] glm2 version 1.1",
+      "subject_clean": "glm2 version 1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "glm2 (1.1) is now available on CRAN.\n\nglm2 fits generalized linear models using the same model specification\nas glm, but with a modified fitting method that is more stable for\nmodels that may fail to converge using glm (see: R Journal 3/2, 2011,\npp.12-15).\n\nThe previous version of glm2 had to be archived because it called a\nFortran routine no longer available in R >= 2.15.1. This has been\naddressed in the current version of glm2.\n\n-------------------------------------------\nIan Marschner\nProfessor, Dept. of Statistics\nMacquarie University, Sydney,\nAustralia",
+      "body_snippet": "glm2 (1.1) is now available on CRAN.\n\nglm2 fits generalized linear models using the same model specification\nas glm, but with a modified fitting method that is more stable for\nmodels that may fail to ",
+      "thread_id": "thread-5b2a22bda02b",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-7c81e0060a39",
+      "message_id": "<50BF4796.2050504@activequant.com>",
+      "from_name": "Ulrich Staudinger",
+      "from_email_hash": "913e03eed503ef901711cd4c3a016c2db58b6c623e5c94c7634d9f5acdd23254",
+      "date": "2012-12-05T14:09:42+01:00",
+      "subject": "[R-pkgs] AQ-R 0.2 // realtime messaging.",
+      "subject_clean": "AQ-R 0.2 // realtime messaging.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/f7ce8e8f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/f7ce8e8f/attachment.pl>",
+      "thread_id": "thread-7c81e0060a39",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-4fbbbe5ad0a6",
+      "message_id": "<50BF5BCB.3090700@istat.it>",
+      "from_name": "Giulio Barcaroli",
+      "from_email_hash": "0d5e3f8524abaed8db6a811c7773421e2c5e1220b6f9c1ca7bb7b4144a6b0f44",
+      "date": "2012-12-05T15:35:55+01:00",
+      "subject": "[R-pkgs] SamplingStrata version 1.0",
+      "subject_clean": "SamplingStrata version 1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/6c76e21a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/6c76e21a/attachment.pl>",
+      "thread_id": "thread-4fbbbe5ad0a6",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-e043ede0433b",
+      "message_id": "<50C89622.8010603@unige.ch>",
+      "from_name": "Alexis Gabadinho",
+      "from_email_hash": "f266eb5dc564422b73c163c3575ea632a6b7c79c4b5126673755776c8b963b20",
+      "date": "2012-12-12T15:35:14+01:00",
+      "subject": "[R-pkgs] PST version 0.81",
+      "subject_clean": "PST version 0.81",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe PST package (version 0.81) is now available on the CRAN. It enables \nthe modelling and analysis of categorical sequences with probabilistic \nsuffix trees (PST).\n\nThe package fits variable length Markov chain models and store them in \nPSTs. It is specifically adapted to the field of social sciences by \nallowing to learn VLMC models from sets of individual sequences possibly \ncontaining missing values, and to account for case weights.\n\nFitted PSTs can be used among other for sequence prediction (pattern \nmining), imputation and artificial sequences generation. The package \nalso includes original visualization tools of both the model and \noutcomes of sequence prediction.\n\nAlexis Gabadinho\nNCCR LIVES\nInstitute for demographic and life course studies\nUniversity of Geneva\nSwitzerland",
+      "body_snippet": "Dear R users,\n\nThe PST package (version 0.81) is now available on the CRAN. It enables \nthe modelling and analysis of categorical sequences with probabilistic \nsuffix trees (PST).\n\nThe package fits va",
+      "thread_id": "thread-e043ede0433b",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-cfa57bff35b9",
+      "message_id": "<alpine.DEB.2.02.1212171452050.19645@paninaro.uibk.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "a3898362d2961a86696818123ed6017299b88343a2280efbcbbd1f340f19d948",
+      "date": "2012-12-20T17:22:54+01:00",
+      "subject": "[R-pkgs] Package exams with Moodle and OLAT support",
+      "subject_clean": "Package exams with Moodle and OLAT support",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nthis week we have released a new version (1.9) of the \"exams\" package \nwhich now contains flexible tools for generating e-learning exams for\nvarious learning management systems: As in earlier versions of the package \nexam generation is still based on separate Sweave files for each exercise. \nBut rather than just producing different types of PDF output files, the \npackage can now render the same exercises into a wide variety of output \nformats. These include HTML (with various options for displaying \nmathematical content) and XML specifications for online exams in learning \nmanagement systems such as Moodle or OLAT.\n\nThe package is available from http://CRAN.R-project.org/package=exams and \nthe new features are described in detail in the new vignette(\"exams2\", \npackage = \"exams\"). A short intro is also available in a guest post to \nTal Galili's blog at: \nhttp://www.r-statistics.com/2012/12/generation-of-e-learning-exams-in-r-for-moodle-olat-etc/\n\nIf you or someone else at your department wants to use this infrastructure\nin practice and experiences any problems with it, just let us know (either\nthrough e-mail or the support forum on R-Forge).\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nthis week we have released a new version (1.9) of the \"exams\" package \nwhich now contains flexible tools for generating e-learning exams for\nvarious learning management systems: As in ear",
+      "thread_id": "thread-cfa57bff35b9",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-91fe9aef5ecb",
+      "message_id": "<7EA01220-C50F-4463-BE1D-96F88DFBAEC1@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2012-12-27T15:29:26-08:00",
+      "subject": "[R-pkgs] glmnet_1.8-4 on CRAN",
+      "subject_clean": "glmnet_1.8-4 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This version has some minor bug fixes, plus some new features.\n\n* The exact=TRUE option in predict and coef methods now works.\n\nIn earlier versions of glmnet, if you supplied a value of s different from the \nsequence of lambdas used to compute the fit, predict used interpolation.\nThis is exact for lasso (alpha=1) and family=\"gaussian\", and an approximation\notherwise.\nOutside the range it used the closest member in the range.\nThe most frequent value requested was typically s=0,\nand that was a) never in the range, and b) always a little off.\n\nNow predict.glmnet returns the exact values\n\nIn case you missed earlier announcements, glmnet now has additional families.\n\n* \"mgaussian\" is a multi-response gaussian model, that uses a group lasso penalty\nfor the set of coefficients for each predictor.\n\n* For the type=\"multinomial\" family, there is an additional argument \ntype.multinomial=c(\"ungrouped\",\"grouped\") \nFor the grouped cases, again a group lasso penalty is used on the set  of class coefficients\nfor a predictor.\n\n\nTrevor Hastie\n\n ----------------------------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231                 Fax: (650) 725-8977  \n  URL: http://www.stanford.edu/~hastie  \n   address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
+      "body_snippet": "This version has some minor bug fixes, plus some new features.\n\n* The exact=TRUE option in predict and coef methods now works.\n\nIn earlier versions of glmnet, if you supplied a value of s different fr",
+      "thread_id": "thread-91fe9aef5ecb",
+      "thread_depth": 0,
+      "month": "2012-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-59ac9b59c3d6",
+      "subject": "Package SixSigma updated to version 0.7-0",
+      "message_count": 1,
+      "participants": [
+        "Emilio López"
+      ],
+      "started": "2012-12-01T11:13:19+01:00",
+      "last_reply": "2012-12-01T11:13:19+01:00",
+      "root_message_id": "msg-59ac9b59c3d6"
+    },
+    {
+      "id": "thread-5b2a22bda02b",
+      "subject": "glm2 version 1.1",
+      "message_count": 1,
+      "participants": [
+        "Ian Marschner"
+      ],
+      "started": "2012-12-05T10:58:53+11:00",
+      "last_reply": "2012-12-05T10:58:53+11:00",
+      "root_message_id": "msg-5b2a22bda02b"
+    },
+    {
+      "id": "thread-7c81e0060a39",
+      "subject": "AQ-R 0.2 // realtime messaging.",
+      "message_count": 1,
+      "participants": [
+        "Ulrich Staudinger"
+      ],
+      "started": "2012-12-05T14:09:42+01:00",
+      "last_reply": "2012-12-05T14:09:42+01:00",
+      "root_message_id": "msg-7c81e0060a39"
+    },
+    {
+      "id": "thread-4fbbbe5ad0a6",
+      "subject": "SamplingStrata version 1.0",
+      "message_count": 1,
+      "participants": [
+        "Giulio Barcaroli"
+      ],
+      "started": "2012-12-05T15:35:55+01:00",
+      "last_reply": "2012-12-05T15:35:55+01:00",
+      "root_message_id": "msg-4fbbbe5ad0a6"
+    },
+    {
+      "id": "thread-e043ede0433b",
+      "subject": "PST version 0.81",
+      "message_count": 1,
+      "participants": [
+        "Alexis Gabadinho"
+      ],
+      "started": "2012-12-12T15:35:14+01:00",
+      "last_reply": "2012-12-12T15:35:14+01:00",
+      "root_message_id": "msg-e043ede0433b"
+    },
+    {
+      "id": "thread-cfa57bff35b9",
+      "subject": "Package exams with Moodle and OLAT support",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2012-12-20T17:22:54+01:00",
+      "last_reply": "2012-12-20T17:22:54+01:00",
+      "root_message_id": "msg-cfa57bff35b9"
+    },
+    {
+      "id": "thread-91fe9aef5ecb",
+      "subject": "glmnet_1.8-4 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2012-12-27T15:29:26-08:00",
+      "last_reply": "2012-12-27T15:29:26-08:00",
+      "root_message_id": "msg-91fe9aef5ecb"
+    }
+  ]
+}

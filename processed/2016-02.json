@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-02",
+  "messages": [
+    {
+      "id": "msg-89b7034fa900",
+      "message_id": "<F064307CEF0BC64593398B58FBE7EC661D152F5C@msgb07.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2016-02-01T14:01:27Z",
+      "subject": "[R-pkgs] Update on bpcp R package: Confidence intervals to use with Kaplan-Meier Survival Estimator",
+      "subject_clean": "Update on bpcp R package: Confidence intervals to use with Kaplan-Meier Survival Estimator",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nWe have updated the bpcp R package.  It gives pointwise confidence intervals for a survival distribution from right censored data. It is not based on asymptotic approximations, so it may be used with any sample size, and with any censoring distribution, as long as the censoring is non-informative.   Extensive simulations show that the bpcp confidence intervals appear to guarantee coverage.  When there is no censoring the method reduces to the exact binomial intervals for the proportion of survivors at each time point.\n\nHere are some important improvements:\n\n\n1.       The bpcp function now includes a midp option. This provides an confidence interval that is closer to the nominal level \"on average\" over the values of the parameter.  It reduces to the mid-p confidence interval for a binomial parameter when there is no censoring.  Just like other mid-p confidence intevals, for some values of the parameter it can be conservative, and for some values it can be slightly anti-conservative.  With extensive censoring it can be very conservative, because (as with the original version) no assumptions are made about the censoring distribution.\n\n2.       There is a new convention for the original bpcp exactly at the failure times. This new convention ensures that the bpcp confidence intervals enclose the Kaplan-Meier estimator.\n\n3.       There is a new option to enforce monotonicity. This is rarely needed, but is used by default. All new simulations were done using this enforced monotonicity.\n\n4.       An error was fixed in the method that only occurred when non-default Delta values were used.\n\nReferences:\n\nFay, MP, Brittain, EH (2016). Finite Sample Pointwise Confidence Intervals for a Survival Distribution with Right-Censored Data. (to appear in Statistics in Medicine, outlines midp modification, and provides many more simulations).\n\nFay, MP, Brittain, EH, and Proschan, MA (2013). Pointwise confidence intervals for a survival distribution with small samples or heavy censoring. Biostatistics. 14(4): 723-736.\n\n\nThanks,\n\nLet me know if you have comments or want a preprint of the 2016 paper.\n\nMike\n**************************************\nMichael P. Fay, PhD\nMathematical Statistician\nBiostatistics Research Branch/DCR/NIAID\n5601 Fishers Lane,  Room 4B53\nRockville, MD 20852\n240-669-5228\n\nFor FexEx/UPS use:\nRockville, MD 20852\n\nFor US Mail use:\nBethesda, MD 20892\n\nDisclaimer: The information in this e-mail and any of its attachments is confidential and may contain sensitive information.  It should not be used by anyone who is not the original intended recipient.  If you have received this e-mail in error please inform the sender and delete it from your mailbox or any other storage devices.  The National Institute of Allergy and Infectious Diseases (NIAID)  shall not accept liability for any statement made that are the sender's own and not expressly made on behalf of the NIAID by one of its representatives.\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R Users,\n\nWe have updated the bpcp R package.  It gives pointwise confidence intervals for a survival distribution from right censored data. It is not based on asymptotic approximations, so it may be ",
+      "thread_id": "thread-89b7034fa900",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-fb00706d70a8",
+      "message_id": "<515D97C4-DE1E-4283-9082-ECA9486E3B03@comcast.net>",
+      "from_name": "Bert Gunter",
+      "from_email_hash": "55999f6db81a30285e8663f25ef6e0e06fc3f1766ef61fa3463f1a1ee9e82820",
+      "date": "2016-02-01T09:48:18-08:00",
+      "subject": "[R-pkgs] New Package: stripless (V. 1.0)",
+      "subject_clean": "New Package: stripless (V. 1.0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package, ?stripless?, is now available on CRAN. It should be mostly of interest to those who use Lattice graphics when there are more than a couple of conditioning variables. Quoting from the DESCRIPTION:\n\nFor making Trellis-type conditioning plots without strip labels. This is useful for displaying the structure of results from factorial designs and other studies when many conditioning variables would clutter the display with layers of redundant strip labels. Settings of the variables are encoded by layout and spacing in the trellis array and decoded by a separate legend. The functionality is implemented by a single S3 generic strucplot() function that is a wrapper for the Lattice package's xyplot() function. This allows access to all Lattice graphics capabilities in the usual way.\n\nA vignette is in preparation, but the existing Help pages should contain sufficient explanation and examples to get going. Feedback, suggestions, reports of bugs or any other infelicities are welcome. \n\nCheers,\n\nBert Gunter\n\n\"The trouble with having an open mind is that people keep coming along and sticking things into it.?\n-- Opus (aka Berkeley Breathed in his \"Bloom County\" comic strip )",
+      "body_snippet": "A new package, ?stripless?, is now available on CRAN. It should be mostly of interest to those who use Lattice graphics when there are more than a couple of conditioning variables. Quoting from the DE",
+      "thread_id": "thread-fb00706d70a8",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-20431df0c67d",
+      "message_id": "<1556909406.16276237.1455442524227.JavaMail.zimbra@meteo.be>",
+      "from_name": "Alex Deckmyn",
+      "from_email_hash": "b3d1e6f006faa315c69ed0744f4118e0020743d7620b8a4dd1c1cf53e5c21bce",
+      "date": "2016-02-14T10:35:24+01:00",
+      "subject": "[R-pkgs] announcing maps version 3.1.0",
+      "subject_clean": "announcing maps version 3.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, \n\nI am pleased to announce version 3.1.0 of the 'maps' package which has a few important changes and additions. \n\nCHANGES: \n- The 'world' map has been adapted: it now doesn't contain any lakes anymore. Most visible effect is the Great Lakes on the Canada/USA border. \n- Major lakes are now available in a separate database 'lakes', so they can still be added to a plot if desired. \n- As a result, plotting without interior borders now gives much cleaner results. \n- The 'world2' database has been cleaned up a bit to look better at the boundaries. \n\nADDITIONS: \n- map() now accepts spatial objects of types SpatialPolygon[DataFrame] and SpatialLines[DataFrame] as database. The support is limited to the actual polygon co-ordinates and names. Any other information (plotting order, projection etc) is lost. So one can now for instance read shapefile data (e.g. readShapePoly() from the maptools package) and pass the result to map(). \n\nFIXES: \n- map(...,fill=TRUE) will no longer apply thinning to the map. The thinning caused polygons to have non-matching borders. For large databases (e.g. the complete worldHires database) this may have a noticable effect on speed. \n\nAlex Deckmyn \n\n\n--- \nDr. Alex Deckmyn e-mail: alex.deckmyn at meteo.be \nRoyal Meteorological Institute http://www.meteo.be \nRinglaan 3, 1180 Ukkel, Belgium tel. (32)(2)3730646 \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi, \n\nI am pleased to announce version 3.1.0 of the 'maps' package which has a few important changes and additions. \n\nCHANGES: \n- The 'world' map has been adapted: it now doesn't contain any lakes any",
+      "thread_id": "thread-20431df0c67d",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-6decc5abde9f",
+      "message_id": "<CAPJUxXURpuWcsK0qpkXxtFuRM00k_K4tavZ3fAenZ8HZEOupdg@mail.gmail.com>",
+      "from_name": "George Vega Yon",
+      "from_email_hash": "edae9fce24743142989114d1e7ee4aea5716adfbeaaedf579206b4e101ca484c",
+      "date": "2016-02-18T09:50:36-08:00",
+      "subject": "[R-pkgs] New package 'netdiffuseR: Network Analysis for Diffusion of Innovations'",
+      "subject_clean": "New package 'netdiffuseR: Network Analysis for Diffusion of Innovations'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nWe are happy to announce that the R package 'netdiffuseR: Network\nAnalysis for Diffusion of Innovations' is now on CRAN\n(https://cran.r-project.org/web/packages/netdiffuseR/). From the\npackage's description:\n\n\"Empirical statistical analysis, visualization and simulation of\nnetwork models of the diffusion of innovations. The package implements\nalgorithms for calculating network diffusion statistics such as\ntransmission rate, hazard rates, exposure models, network threshold\nlevels, infectiousness (contagion), and susceptibility. The package is\ninspired by work published in Valente, et al., (2015)\n<DOI:10.1016/j.socscimed.2015.10.001>; Valente (1995)\n<ISBN:9781881303213>, Myers (2000) <DOI:10.1086/303110>, Iyengar and\nothers (2011) <DOI:10.1287/mksc.1100.0566>, Burt (1987)\n<DOI:10.1086/228667>; among others.\"\n\nSome other relevant features:\n - Allows working with relative large graphs via sparse matrices\n(easily handles tenths of thousands vertices), and\n - Includes three classical network diffusion of innovations datasets:\nBrazilian Farmers, Korean Family Planning and Medical Innovation\n\nThe package should be available to be installed via R's\ninstall.packages function in the following hours as CRAN builds\nbinaries for Windows/OSX and mirrors have them available to be\ninstalled.\n\nFor those of you who are interested on taking a deep look on this new\ntool, we will be offering a workshop at the 2016 SUNBELT Conference\n(http://insna.org/sunbelt2016/) , so we encourage you to sign in!\n\nBest,\n\nGeorge G. Vega Yon\n+1 (626) 381 8171\nhttp://www.its.caltech.edu/~gvegayon/",
+      "body_snippet": "Dear useRs,\n\nWe are happy to announce that the R package 'netdiffuseR: Network\nAnalysis for Diffusion of Innovations' is now on CRAN\n(https://cran.r-project.org/web/packages/netdiffuseR/). From the\npa",
+      "thread_id": "thread-6decc5abde9f",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-460266e93443",
+      "message_id": "<D7A2070C-E8E1-4645-BAFB-28E9BF19C653@wargo.net>",
+      "from_name": "Rick Wargo",
+      "from_email_hash": "20d0f0a2ea692c49220cdb6b9946af0e29c05c88d1f008543f1a98e624359f05",
+      "date": "2016-02-22T18:03:18Z",
+      "subject": "[R-pkgs] New Package: lrequire v0.1.3 - use modules to encapsulate and cache your R scripts",
+      "subject_clean": "New Package: lrequire v0.1.3 - use modules to encapsulate and cache your R scripts",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nI am happy to announce the initial release (v0.1.3) of lrequire<https://cran.r-project.org/web/packages/lrequire/>, now available on CRAN.\n\nhttps://cran.r-project.org/web/packages/lrequire/\n\nlrequire supports modularization of R Scripts, enabling encapsulation of information and caching of scripts. This is very similar to the require()<https://nodejs.org/api/modules.html> support in node.js<https://nodejs.org/>.\n\nUse of lrequire encourages separation of responsibility and using modules to encapsulate specific functionality. This leads to more easily-maintained scripts and encourages reuse.\nlrequire also cache loaded modules (scripts) such that the next load (source) of the script does not execute its contents, unless specified. For example, if a module is built around sourcing a slowly-changing dataset that is time-consuming to retrieve, frequent reloads of the module will only return the cached copy of the data, saving the time expense. I found this very useful for developing dashboard components ? lrequire permitted me the freedom to keep tweaking the UI without having to wait for the live reload of the data.\n\nHow It Works\n\nGoal: build a reusable module to welcome an individual. Any environment artifacts necessary to build that module are encapsulated in the lrequire() call and only the functionality is returned.\n\nFor example:\n\n________________________________\n\nFile: welcome.R\n\ndata.that.will.not.be.exposed <- 'some work'\n\nhello <- function(person.name) {\n  return (paste0('Hello, ', person.name, '!'))\n}\n\nmodule.exports = hello\n\n________________________________\n\nFile: main.R\n\nhello <- lrequire(welcome)\n\nhello('Rick')\n\n________________________________\n\nNote that the variable declared in welcome.R will not be visible in main.R only the hello() function. Multiple pieces of information can be exposed by returning a list() object in module.exports. Refer to the documentation for details.\n\nAll the best,\nRick Wargo\nhttps://linkedin.com/in/rickwargo/\nhttps://www.rickwargo.com/\n@rickwargo\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users,\n\nI am happy to announce the initial release (v0.1.3) of lrequire<https://cran.r-project.org/web/packages/lrequire/>, now available on CRAN.\n\nhttps://cran.r-project.org/web/packages/lrequ",
+      "thread_id": "thread-460266e93443",
+      "thread_depth": 0,
+      "month": "2016-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fb00706d70a8",
+      "subject": "New Package: stripless (V. 1.0)",
+      "message_count": 1,
+      "participants": [
+        "Bert Gunter"
+      ],
+      "started": "2016-02-01T09:48:18-08:00",
+      "last_reply": "2016-02-01T09:48:18-08:00",
+      "root_message_id": "msg-fb00706d70a8"
+    },
+    {
+      "id": "thread-89b7034fa900",
+      "subject": "Update on bpcp R package: Confidence intervals to use with Kaplan-Meier Survival Estimator",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2016-02-01T14:01:27+00:00",
+      "last_reply": "2016-02-01T14:01:27+00:00",
+      "root_message_id": "msg-89b7034fa900"
+    },
+    {
+      "id": "thread-20431df0c67d",
+      "subject": "announcing maps version 3.1.0",
+      "message_count": 1,
+      "participants": [
+        "Alex Deckmyn"
+      ],
+      "started": "2016-02-14T10:35:24+01:00",
+      "last_reply": "2016-02-14T10:35:24+01:00",
+      "root_message_id": "msg-20431df0c67d"
+    },
+    {
+      "id": "thread-6decc5abde9f",
+      "subject": "New package 'netdiffuseR: Network Analysis for Diffusion of Innovations'",
+      "message_count": 1,
+      "participants": [
+        "George Vega Yon"
+      ],
+      "started": "2016-02-18T09:50:36-08:00",
+      "last_reply": "2016-02-18T09:50:36-08:00",
+      "root_message_id": "msg-6decc5abde9f"
+    },
+    {
+      "id": "thread-460266e93443",
+      "subject": "New Package: lrequire v0.1.3 - use modules to encapsulate and cache your R scripts",
+      "message_count": 1,
+      "participants": [
+        "Rick Wargo"
+      ],
+      "started": "2016-02-22T18:03:18+00:00",
+      "last_reply": "2016-02-22T18:03:18+00:00",
+      "root_message_id": "msg-460266e93443"
+    }
+  ]
+}

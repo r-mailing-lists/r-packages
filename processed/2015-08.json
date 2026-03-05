@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-08",
+  "messages": [
+    {
+      "id": "msg-755b2b3974f4",
+      "message_id": "<m0a8tjctim.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2015-08-22T16:00:49+02:00",
+      "subject": "[R-pkgs] pls 2.5-0 released",
+      "subject_clean": "pls 2.5-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.5-0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression, Principal Component\nRegression and Canonical Powered PLS.\n\nThe major changes are:\n\n- Cross-validation can now make sure that replicates are kept in the\n  same segment, by the use of a new argument `nrep'.  See ?cvsegments\n  for details.\n\n- It now has a vignette.\n\n- It now has a NEWS file that can be accessed by news().\n \n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_snippet": "Version 2.5-0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression, Principal Component\nRegression and Canonical Powered PLS.\n\nThe major changes are:\n\n- C",
+      "thread_id": "thread-755b2b3974f4",
+      "thread_depth": 0,
+      "month": "2015-08"
+    },
+    {
+      "id": "msg-4428703a636c",
+      "message_id": "<CAA4naPBAfEZz9fs4Uu3Lx-0r-37oxwu2LNgqmJ=p-BK8+6E-gw@mail.gmail.com>",
+      "from_name": "Alexis Sarda",
+      "from_email_hash": "963fbcdb7be67128b89b76b18fc70df80fd4006b654c3a4892382c2ce5804c85",
+      "date": "2015-08-23T20:14:06+02:00",
+      "subject": "[R-pkgs] R Package dtwclust: Shape-based clustering of univariate time series",
+      "subject_clean": "R Package dtwclust: Shape-based clustering of univariate time series",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Time Series Clustering With Dynamic Time Warping Distance (DTW)\n===============================================================\n\nThe dtwclust package attempts to consolidate some of the recent techniques\nrelated to time series clustering under DTW and implement them in R. Most\nof these algorithms make use of traditional clustering techniques\n(partitional and hierarchical clustering) but change the distance\ndefinition. In this case, the distance between time series is measured with\nDTW.\n\nDTW is, however, computationally expensive, so several optimization\ntechniques exist. They mostly deal with bounding the DTW distance. These\nbounds are only defined for time series of equal lengths. Nevertheless, if\nthe length of the time series of interest vary only slightly,\nreinterpolating them to a common length is probably an appropriate solution.\n\nAdditionally, a recently proposed algorithm called k-Shape could serve as\nan alternative. k-Shape clustering relies on custom distance and centroid\ndefinitions, which are unrelated to DTW. The shape extraction algorithm\nproposed therein is particularly interesting if time series can be\nnormalized.\n\nMany of the algorithms and optimizations require that all series have the\nsame length. The ones that don't are usually slow but can still be used.\n\nPlease see the references for more information.\n\nDependencies\n------------\n\n-   Partitional procedures are implemented by leveraging the `flexclust`\npackage.\n-   Hierarchical procedures use the native `hclust` function.\n-   Cross-distances make use of the `proxy` package.\n-   The core DTW calculations are done by the `dtw` package.\n-   Plotting is done with the `ggplot2` package.\n\nImplementations\n---------------\n\n-   Keogh's and Lemire's lower bounds\n-   DTW Barycenter Averaging\n-   k-Shape clustering\n-   TADPole clustering\n\n--\nBest,\nAlexis Sard? Espinosa.\n\nhttps://github.com/asardaes/dtwclust\nhttps://cran.rstudio.com/web/packages/dtwclust/index.html\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Time Series Clustering With Dynamic Time Warping Distance (DTW)\n===============================================================\n\nThe dtwclust package attempts to consolidate some of the recent techniq",
+      "thread_id": "thread-4428703a636c",
+      "thread_depth": 0,
+      "month": "2015-08"
+    },
+    {
+      "id": "msg-80fe910ca49e",
+      "message_id": "<CAGPCWY2N+KLO75+9GVOCAk-tsrTcPREPbWTYKbBO43k4CU+jng@mail.gmail.com>",
+      "from_name": "Mark Edmondson",
+      "from_email_hash": "10cb999dbe1867b87fa827dab416badefbc0f0fc9659cfd57731b56e97b93313",
+      "date": "2015-08-30T20:29:26+02:00",
+      "subject": "[R-pkgs] New packages on CRAN: googleAuthR and searchConsoleR",
+      "subject_clean": "New packages on CRAN: googleAuthR and searchConsoleR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R package users,\n\nYou may be interested in these two new packages now available on CRAN:\n\n*googleAuthR* lets you easily authenticate with Google OAuth2 APIs and make\nyour own packages with them.  It also is multi-user Shiny compatible, so\nyou can publish your apps and users can work with their own data.  With\nGoogle APIs including Gmail, Google Predict and Google Drive this offers\naccess to some nice resources.\n\n*searchConsoleR* is the first package released using googleAuthR, working\nwith the Google Search Console.  This data includes what keywords people\nhave used to find your website.\n\nHope they are of interest, do let me know what you build with them!\nYours sincerely,\nMark\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi R package users,\n\nYou may be interested in these two new packages now available on CRAN:\n\n*googleAuthR* lets you easily authenticate with Google OAuth2 APIs and make\nyour own packages with them.  I",
+      "thread_id": "thread-80fe910ca49e",
+      "thread_depth": 0,
+      "month": "2015-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-755b2b3974f4",
+      "subject": "pls 2.5-0 released",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2015-08-22T16:00:49+02:00",
+      "last_reply": "2015-08-22T16:00:49+02:00",
+      "root_message_id": "msg-755b2b3974f4"
+    },
+    {
+      "id": "thread-4428703a636c",
+      "subject": "R Package dtwclust: Shape-based clustering of univariate time series",
+      "message_count": 1,
+      "participants": [
+        "Alexis Sarda"
+      ],
+      "started": "2015-08-23T20:14:06+02:00",
+      "last_reply": "2015-08-23T20:14:06+02:00",
+      "root_message_id": "msg-4428703a636c"
+    },
+    {
+      "id": "thread-80fe910ca49e",
+      "subject": "New packages on CRAN: googleAuthR and searchConsoleR",
+      "message_count": 1,
+      "participants": [
+        "Mark Edmondson"
+      ],
+      "started": "2015-08-30T20:29:26+02:00",
+      "last_reply": "2015-08-30T20:29:26+02:00",
+      "root_message_id": "msg-80fe910ca49e"
+    }
+  ]
+}

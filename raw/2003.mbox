@@ -1,0 +1,1158 @@
+From Roger.Bivand at nhh.no  Fri Sep 26 09:02:28 2003
+From: Roger.Bivand at nhh.no (Roger Bivand)
+Date: Fri, 26 Sep 2003 09:02:28 +0200 (CEST)
+Subject: [R-pkgs] R spatial projects mailing list and web site
+Message-ID: <Pine.LNX.4.44.0309260856170.24413-100000@reclus.nhh.no>
+
+A mailing list has been opened, and a collection of web pages assembled,
+to provide a joint forum for R spatial projects, where spatial data is
+understood mostly as geographical data.
+
+The mailing list is for discussing the development and use of R functions
+and packages for handling and analysis of spatial, and particularly
+geographical, data. The list also covers mapping and cartographic issues,
+and interfaces between R and geographical information systems. It can
+be accessed directly at:
+
+https://www.stat.math.ethz.ch/mailman/listinfo/r-sig-geo
+
+or through the R spatial projects web site:
+
+http://sal.agecon.uiuc.edu/csiss/Rgeo/index.html
+
+hosted by the Spatial Analysis Laboratory in the Department of
+Agricultural and Consumer Economics at the University of Illinois,
+Urbana-Champaign.
+
+I would be very grateful for comments on, and corrections and
+contributions to the web pages, in particular from authors and maintainers
+of packages that should be described in and linked to the site.
+
+Roger Bivand
+
+Economic Geography Section, Department of Economics, Norwegian School of
+Economics and Business Administration, Breiviksveien 40, N-5045 Bergen,
+Norway. voice: +47 55 95 93 55; fax +47 55 95 93 93
+e-mail: Roger.Bivand at nhh.no
+
+
+
+From ray at mcs.vuw.ac.nz  Sun Oct  5 12:03:56 2003
+From: ray at mcs.vuw.ac.nz (Ray Brownrigg)
+Date: Sun, 5 Oct 2003 23:03:56 +1300 (NZDT)
+Subject: [R-pkgs] R maps now for Windows
+Message-ID: <200310051003.h95A3ulY018425@tahi.mcs.vuw.ac.nz>
+
+The original S maps package, previously only available in R on Unix
+systems is now available in R for Windows.
+
+maps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows
+binary form (for rw1071) have been uploaded to CRAN, hopefully soon to
+appear.
+
+The key aspect of this package which differentiates it from other
+GIS related R packages under development is that it is standalone
+within R, i.e. it does not rely on the presence of any other
+software.
+
+Features are:
+1) Built-in databases for usa, state (states of the USA), county
+(counties of the USA), world, world2 (Pacific-centric world) and nz.
+2) Databases supplied in source form with accompanying software to
+generate the binary forms, allowing users to edit the data or add new
+databases (basic format is latitude/longitude pairs).
+3) A database of world cities (generally >~100,000 population).
+4) A companion package called mapdata provides high-resolution versions
+of world, world2 and nz, as well as china (provinces) and rivers.
+5) A companion package called mapproj provides a variety of map 
+   projections (from Doug McIlroy).
+6) While being backwards-compatible with the original 'S maps library',
+it also has many new features, including:
+   - displaying region names on a map,
+   - finding the map region containing a given point (point-in-polygon),
+   - computing areas of map regions, and
+   - interpolating data aggregated over map regions (for statistical maps).
+
+The maps and mapdata packages are maintained by Ray Brownrigg with
+generous assistance from Tom Minka.
+
+The mapproj package is available at 
+   http://www.stat.cmu.edu/~minka/software/maps/
+
+Ray Brownrigg
+Tom Minka
+October 2003
+
+
+
+From vito.muggeo at giustizia.it  Thu Oct  9 09:52:49 2003
+From: vito.muggeo at giustizia.it (Vito Muggeo)
+Date: Thu, 9 Oct 2003 09:52:49 +0200
+Subject: [R-pkgs] new package: segmented
+Message-ID: <011a01c38e3a$59eda620$5c13070a@PROCGEN>
+
+A few days ago I uploaded to CRAN a new package called segmented.
+
+The package contains functions to fit (generalized) linear models with
+`segmented' (or `broken-line' or `piecewise linear') relationships between
+the response and one or more explanatory variables according to methodology
+described in
+
+Muggeo VMR (2003), Estimating regression models with unknown break-points,
+Statistics in Medicine, 22, 3055-3071.
+
+I would be very grateful for comments and suggestions,
+
+best,
+vito
+
+
+
+From bfbraum at fas.harvard.edu  Tue Oct 14 19:42:21 2003
+From: bfbraum at fas.harvard.edu (Bear F. Braumoeller)
+Date: Tue, 14 Oct 2003 13:42:21 -0400
+Subject: [R-pkgs] Updated package: Boolean v1.03
+Message-ID: <C3ACF3F0-FE6D-11D7-BC96-000A95A672D6@fas.harvard.edu>
+
+Version 1.03 of the R package boolean has been uploaded to CRAN and is 
+now available.
+
+boolean implements partial-observability logit and probit models for 
+testing Boolean hypotheses.  It permits researchers to model the 
+probability of the occurrence of a given outcome as a complex function 
+of the probabilities that other outcomes will occur (or other 
+conditions will be fulfilled).  For example, if p(Y) = p(A) * p(B) 
+(that is, A and B jointly produce Y, and the absence of either 
+precludes it), the boolean routine models p(A) and p(B) as logit or 
+probit curves and p(Y) as their product.  Similarly, if A or B produces 
+Y, p(Y) = 1 - [(1-p(A)) * (1-p(B))] becomes the functional form, again 
+with p(A) and p(B) estimated as logit/probit curves.  Arbitrarily 
+convoluted combinations -- e.g., (A and B) or (C and D) produces Y; or, 
+p(Y) = 1 - [1-p(A)*p(B)] * [1-p(C)*p(D)] -- can be estimated, and 
+dependence of probabilities can be modeled by including some of the 
+same independent variables in the separate logit or probit equations.  
+The derivation is in Braumoeller, "Causal Complexity and the Study of 
+Politics," Political Analysis 11(3), 209-233.
+
+Version 1.03 is a service update which ensures that all documentation, 
+in particular the documentation of S4 methods objects, is compatible 
+with R 1.8.  Previous versions will produce warnings upon compilation.
+
+
+Bear F. Braumoeller
+Assistant Professor
+Department of Government
+Harvard University
+http://www.people.fas.harvard.edu/~bfbraum
+
+
+
+From brahm at alum.mit.edu  Fri Oct 17 18:04:04 2003
+From: brahm at alum.mit.edu (David Brahm)
+Date: Fri, 17 Oct 2003 12:04:04 -0400
+Subject: [R-pkgs] Updated package: g.data v1.4
+Message-ID: <16272.4852.615349.178004@arbres1a.fmr.com>
+
+Version 1.4 of package "g.data" is available on CRAN.  This upgrade is
+necessary for it to work under R-1.8.0, and is fully backward compatible.
+
+Description: Create and maintain delayed-data packages (DDP's).  Data stored in
+  a DDP are available on demand, but do not take up memory until requested.
+  You attach a DDP with g.data.attach(), then read from it and assign to it in
+  a manner similar to S-Plus, except that you must run g.data.save() to
+  actually commit to disk.
+
+Thanks very much to <brian at dumbaz.com> for pointing out the incompatibility.
+(Sorry, Brian, a direct reply to you bounced.)  "g.data" basically creates mock
+packages (DDP's) to contain the data, and in R-1.8.0 a package needs a
+DESCRIPTION file to be recognized by .find.package().  Note you will need
+temporary write access to any existing (pre-1.4) DDP's, as g.data.attach() will
+try to create a DESCRIPTION file for any DDP that doesn't already have one.
+-- 
+                              -- David Brahm (brahm at alum.mit.edu)
+
+
+
+From rossini at blindglobe.net  Thu Oct 30 01:49:21 2003
+From: rossini at blindglobe.net (A.J. Rossini)
+Date: Wed, 29 Oct 2003 16:49:21 -0800
+Subject: [R-pkgs] Release of Bioconductor 1.3
+Message-ID: <85fzhbzh0u.fsf@blindglobe.net>
+
+
+The Bioconductor core group would like to announce the 1.3 release of
+the Bioconductor software.  There are many new packages as well as
+several major upgrades and fixes in older packages, and users are
+encouraged to check them out.  Release 1.3 is intended to be operated
+with R version 1.8.X, which can be obtained at CRAN
+(http://cran.r-project.org/) 
+
+
+-- WHAT FEATURES DOES THIS RELEASE PROVIDE?
+
+All packages from the 1.2 release are included.  All current bug fixes
+have been applied, and most have upgraded and provide enhanced
+functionality.
+
+-- NEW PACKAGES AND MAJOR UPGRADES FOR RELEASE 1.3 --
+
+The following is an overview of the most important changes, additions,
+and upgrades:
+
+--- affy
+
+   There have been many improvements to the affy package.  There were
+   big speed and memory improvement of ReadAffy, read.affybatch,
+   justRMA.  A mas5calls method was added to get Affymetrix's P/M/A
+   calls.  Cel and Cdf classes are no longer supported. Function,
+   read.celfile and other Cel related methods and functions
+   removed. Most Cdf related functions have moved to the makecdfenv
+   package.  Function read.probematrix added. It reads CEL files and
+   returns a matrix of PM, MM, or both. This function is more memory
+   efficient than read.affybatch.  Also, affy no longer depends on the
+   affydata package. For this reason some examples have been moved
+   from affy vignettes to the affydata vignette.  The previously
+   deprecated express function has been completely removed.  Lastly,
+   most normalization routines for AffyBatches can now be called with
+   the parameter type which specifies whether the normalization should
+   be applied as a PM-only, MM-only, both PM and MM together or PM and
+   MM separately.
+
+--- affycomp:
+
+   New assessment was added: assessSpikeIn2. Examples of new feature:
+Local 
+   slopes are computes and ROC curves divided by overall expression.
+   Also, all functions that work for hgu95a spike in now also work for
+hgu133a
+   spike in experiment
+
+--- annaffy:
+
+   Functions for handling data from Bioconductor Affymetrix annotation
+   data packages. Produces compact HTML and text reports including
+   experimental data and URL links to many online databases. Allows
+   searching biological metadata using various criteria.
+
+--- Biobase:
+
+   The generic function as.data.frame() now works on objects of class
+   exprSet.  This lets one access the extensive modeling facilities
+   through formula offered by R and packages like 'nlm'.
+
+--- factDesign:
+
+   A package containing functions useful for analyzing data from
+   factorial designed microarray experiments.
+
+--- gpls:
+
+   Classification using partial least squares (PLS), a popular
+   dimension reduction tool in chemometrics, in the context of
+   generalized linear regression based on a previous approach,
+   Iteratively ReWeighted Partial Least Squares (IRWPLS) by Marx
+   (1996).  Both two-group and multi-group classifications are
+   incorporated. Firth's bias reduction procedure is also incorporated
+   to ensure more stable and finite regression coefficients.
+
+--- graph, Rgraphviz, and RBGL:
+
+   Graph/Network handling is greatly improved. There is tighter
+   integration between graph, RBGL and Rgraphviz. Colors and SubGraph
+   layouts are now supported in Rgraphviz. RBGL support includes
+   minimal spanning trees, both strong and weakly connected
+   components, and Dijkstra's shortest path algorithm.  In graph,
+   enhancements in validity checking and representation have been
+   made. New classes have been established that will allow for general
+   representations of nodes and edges. Capabilities include adding or
+   deleting both nodes and edges, combining sets of nodes into a
+   single node. Unions, intersections and complements of graphs
+   defined on a common set of nodes. Joining of two graphs into a
+   single graph. Functions to compute indegree and outdegree. 
+
+--- limma:
+
+   Substantial updates including support for more image analysis
+   programs, new background correction methods, single channel
+   normalization, support for import of exprSet and marrayNorm data
+   objects, improved support for design and contrast matrices, new
+   fitted model object class, within-gene multiple testing, Venn
+   diagrams and generally a move to a simpler command style at the
+   user level.
+
+--- matchprobes:
+
+   A new package providing tools for working with probe sequence
+   information: calculate ATCG content, reverse, complement, mismatch
+   sequences; fast exact sequence matching; combine AffyBatches of
+   different chip types; create probe data packages.  
+
+--- Measurement.cor:
+
+   A package to fit a two-level measurement error model for estimation
+   of correlation coefficient between two random variables assuming
+   bivariate normality for both the true value and measurement
+   error. This model allows dependence between measurement errors
+   hence is more flexible.
+
+--- ontoTools:
+
+   Software for working with ontologies (structured vocabularies) and
+   their associations with general data resources. 
+
+--- Rdbi, RdbiPgSQL:
+
+   Generic framework for database access in R. Adapted from Rdbi
+   authored by Timothy H. Keitt, with methods for accessing data
+   stored in PostgreSQL tables (Adapted from Rdbi.PgSQL, authored
+   by Timothy H. Keitt)
+
+--- SNPtools:
+
+   Currently an interface to the SNPper data resource maintained at
+   Childrens' Boston, which curates SNP-related data from a variety of
+   sources.
+
+--- splicegear:
+
+   A new package that works with oligonucleotide microarrays designed
+   to monitor or confirm the existence of splice variants.  It can
+   extract simple splice-variant information in XML format.  This is
+   demonstrated by the connectivity to an existing database of
+   putative splice variants.  The package can also integrate easily
+   with the results obtained from the package 'matchprobes'. 
+
+--- vsn:
+
+   Two new functions were added 'sagmbSimulateData' and 'sagmbAssess'
+   to quantitatively verify finite sample properties and outlier
+   robustness of the parameter estimation in vsn(). 
+
+-- TOOLS:
+
+The released packages include tools which facilitate:
+
+* annotation (AnnBuilder, annotate).
+
+* data management and organization through the use of the S4 class
+  structure (Biobase, marrayClasses, limma).   
+
+* identification of differentially expressed genes and clustering 
+  (edd, genefilter, geneplotter, multtest, ROC, limma)
+
+* analysis of Affymetrix expression array data (affy, affycomp,
+  gcrma)
+
+* diagnostic plots and normalization for cDNA array data (marrayInput,
+  marrayNorm, marrayPlots)
+
+* storage and retrieval of large datasets (rhdf5, externalVector,
+   Rdbi, RdbiPgSQL).
+
+* facilitate user interaction (tkWidgets, widgetTools)
+
+There are currently a total of 48 packages, not including precomputed
+annotation data packages for Affymetrix GeneChips(tm), KEGG, GO,
+and LocusLink mappings.
+
+
+-- HELP AND RESOURCES:
+
+The packages and more details may be found on the Bioconductor WWW
+site: 
+
+      http://www.bioconductor.org/
+
+Information on subscribing to the mailing list and viewing its
+archives
+can be found at:
+
+      http://www.stat.math.ethz.ch/mailman/listinfo/bioconductor
+
+Please use that list to discuss Bioconductor specific issues, bugs,
+and problems.  Note that every package has a vignette (a literate
+program which provides an annotated example of the package's use) as
+well as possibly some "HOWTO"s.  These document the tool's usage, and
+are provided in the "doc" subdirectory of each package library.
+
+
+-- WHO:
+
+For the Bioconductor development team:
+
+Douglas Bates, University of Wisconsin, USA.
+Ben Bolstad, Division of Biostatistics, UC Berkeley, USA.
+Vince Carey, Harvard Medical School, USA.
+Marcel Dettling, Federal Inst. Technology, Switzerland.
+Sandrine Dudoit, Division of Biostatistics, UC Berkeley, USA.
+Byron Ellis, Harvard Department of Statistics, USA.
+Laurent Gautier, Technial University of Denmark, Denmark.
+Robert Gentleman, Harvard Medical School, USA.
+Jeff Gentry, Dana-Farber Cancer Institute, USA.
+Kurt Hornik, Technische Universitat Wien, Austria.
+Torsten Hothorn, Institut fuer Medizininformatik,
+        Biometrie und Epidemiologie, Germany.
+Wolfgang Huber, DKFZ Heidelberg, Molecular Genome Analysis, Germany.
+Stefano Iacus, Italy
+Rafael Irizarry, Department of Biostatistics (JHU), USA.
+Friedrich Leisch, Technische Universitat Wien, Austria.
+Martin Maechler, Federal Inst. Technology, Switzerland.
+Colin Smith, Scripps Research Institute, USA.
+Gordon Smyth, Walter and Eliza Hall Institute, Australia.
+Anthony Rossini, University of Washington
+        and the Fred Hutchinson Cancer Research Center, USA.
+Gunther Sawitzki, Institute fur Angewandte Mathematik, Germany.
+Luke Tierney, University of Iowa, USA.
+Jean Yee Hwa Yang, University of California, San Francisco, USA.
+Jianhua (John) Zhang, Dana-Farber Cancer Institute, USA.
+
+
+-- 
+rossini at u.washington.edu            http://www.analytics.washington.edu/ 
+Biomedical and Health Informatics   University of Washington
+Biostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center
+UW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable
+FHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email
+
+CONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}
+
+
+
+From ray at mcs.vuw.ac.nz  Sat Nov  1 10:47:10 2003
+From: ray at mcs.vuw.ac.nz (Ray Brownrigg)
+Date: Sat, 1 Nov 2003 22:47:10 +1300 (NZDT)
+Subject: [R-pkgs] R maps, mapdata and mapproj for Windows
+Message-ID: <200311010947.hA19lAjt016231@tahi.mcs.vuw.ac.nz>
+
+Nearly a month ago I announced the availability of a Windows port of
+the maps for S package but for various reasons the Windows binaries
+did not appear on CRAN until yesterday.  Now I am pleased to announce
+that the three packages maps_2.0-8 (the base maps package with
+low-resolution databases), mapdata_2.0-6 (high-resolution and other
+databases) and mapproj_1.1 (projection add-on for maps, maintained by
+Tom Minka) are all now available on CRAN both in source and Windows
+binary forms.
+
+I apologise for the delays.
+Ray Brownrigg
+
+
+
+From maechler at stat.math.ethz.ch  Wed Nov 19 09:14:24 2003
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Wed, 19 Nov 2003 09:14:24 +0100
+Subject: [R-pkgs] 'nor1mix' for 1-dimensional normal mixture distributions
+Message-ID: <16315.9824.576634.789737@gargle.gargle.HOWL>
+
+I have been authoring a very small R package on CRAN, named 
+"normix" which implements an S3 class "norMix" has plot and
+print methods;  further, E[X] and Var[X] methods, random number
+generation ("r") and density evaluation.
+It also provides the 16 "Marron-Wand densities" (known in the (1d)
+density estimation business).
+Erik J?rgensen has provided "p" and "q" functions -- such that
+there's now the full range of "dpqr" functionality.
+
+I have recently *renamed* the package to 'nor1mix' (now on CRAN
+where 'normix' has gone). 
+
+Note that *estimation* (i.e. fitting normal mixtures to data) is 
+not part of this package, but rather in (the more general framework of)
+the package 'mclust'.
+
+Martin Maechler <maechler at stat.math.ethz.ch>	http://stat.ethz.ch/~maechler/
+Seminar fuer Statistik, ETH-Zentrum  LEO C16	Leonhardstr. 27
+ETH (Federal Inst. Technology)	8092 Zurich	SWITZERLAND
+phone: x-41-1-632-3408		fax: ...-1228			<><
+
+
+
+From rksh at soc.soton.ac.uk  Wed Nov 26 17:40:51 2003
+From: rksh at soc.soton.ac.uk (Robin Hankin)
+Date: Wed, 26 Nov 2003 16:40:51 +0000
+Subject: [R-pkgs] new R package: magic squares
+Message-ID: <a06002024bbea865e3f74@[139.166.242.29]>
+
+Dear List
+
+I have just placed a new R package on CRAN that includes many tools 
+for creating and
+investigating magic squares and hypercubes.
+
+Any comments, suggestions, etc very welcome.  I am particularly interested in
+coding up additional algorithms for magic squares, and also in improving the
+existing methods.
+
+
+-- 
+Robin Hankin
+Uncertainty Analyst
+Southampton Oceanography Centre
+SO14 3ZH
+tel +44(0)23-8059-7743
+initialDOTsurname at soc.soton.ac.uk (edit in obvious way; spam precaution)
+
+
+
+From raftery at stat.washington.edu  Fri Dec  5 04:34:41 2003
+From: raftery at stat.washington.edu (Adrian Raftery)
+Date: Thu, 4 Dec 2003 19:34:41 -0800 (PST)
+Subject: [R-pkgs] Robust Covariance Estimation (NNVE) Package Released
+Message-ID: <Pine.OSF.4.58.0312041933390.334531@lisbon2.stat.washington.edu>
+
+ Robust Covariance Estimation Software via Nearest Neighbor Variance Estimation (NNVE)
+
+Software to carry out robust covariance estimation by Nearest Neighbor
+Variance Estimation (NNVE) [Wang and Raftery (2002, J. Amer. Statist. Ass.)]
+is now available for R and Splus. In the simulation studies published in JASA,
+this had mean squared error at least 100 times smaller than that of
+other leading covariance estimators when the proportion of outliers was high.
+
+cov.nnve is now available in the covRobust contributed package at
+http://cran.r-project.org/src/contrib/PACKAGES.html#covRobust
+
+An Splus version is also available on the S archive of Statlib
+http://lib.stat.cmu.edu/S/
+under the function name cov.nnve
+
+cov.nnve is by Naisyin Wang and Adrian Raftery, with contributions by Chris Fraley.
+
+References:
+
+Wang, N. and Raftery. A.E. (December 2002). Nearest-neighbor variance estimation (NNVE):
+ Robust covariance estimation via nearest-neighbor cleaning (with Discussion).
+ Journal of the American Statistical Association 97(460): 994-1019.
+
+Wang, N. and Raftery. A.E. (2000). Nearest-neighbor variance estimation (NNVE):
+ Robust covariance estimation via nearest-neighbor cleaning.
+ Technical Report no. 368, Department of Statistics, University of Washington.
+ Available at www.stat.washington.edu/www/research/reports
+
+
+ -------------------------------------------------------------------
+ Adrian E. Raftery
+ Professor of Statistics and Sociology
+ Director, Center for Statistics and the Social Sciences
+ University of Washington, Box 354320	 Phone: (206) 543-4505
+ Seattle, WA 98195-4320.		 FAX:   (206) 221-6873
+ Web: www.stat.washington.edu/raftery;   www.csss.washington.edu
+ -------------------------------------------------------------------
+
+
+
+From claudio at unive.it  Tue Dec 23 16:28:59 2003
+From: claudio at unive.it (Claudio Agostinelli)
+Date: Tue, 23 Dec 2003 16:28:59 +0100 (CET)
+Subject: [R-pkgs] circular package
+Message-ID: <Pine.LNX.4.33L2.0312231605500.23875-100000@linaria.dst.unive.it>
+
+Dear All,
+Ulric Lund and me are developing a new package called 'circular' that as
+soon as possible will substitute 'CircStats' package.
+A pre-released is available at:
+http://www.dst.unive.it/~claudio/R/circular_0.1.tar.gz
+I kindly ask everybody is using CircStats to check this new package
+and send me comments, suggestions and bugs to claudio at unive.it and not to
+the list.
+As soon as the package will work fine we will ask the R core to make it
+available on CRAN.
+
+Bests,
+Claudio Agostinelli
+
+--------------------------------------------------------------
+Claudio Agostinelli
+Dipartimento di Statistica
+Universita' Ca' Foscari di Venezia
+Campiello San Agostin, 2347 San Polo
+30125 Venezia
+Tel: 041 2347432, Fax: 041 710355
+email: claudio at unive.it, www: www.dst.unive.it/~claudio
+--------------------------------------------------------------
+Per favore non mandatemi allegati in Word o PowerPoint.
+Si veda http://www.fsf.org/philosophy/no-word-attachments.html
+
+Please avoid sending me Word or PowerPoint attachments.
+See http://www.fsf.org/philosophy/no-word-attachments.html
+
+
+
+From Roger.Bivand at nhh.no  Fri Sep 26 09:02:28 2003
+From: Roger.Bivand at nhh.no (Roger Bivand)
+Date: Fri, 26 Sep 2003 09:02:28 +0200 (CEST)
+Subject: [R-pkgs] R spatial projects mailing list and web site
+Message-ID: <Pine.LNX.4.44.0309260856170.24413-100000@reclus.nhh.no>
+
+A mailing list has been opened, and a collection of web pages assembled,
+to provide a joint forum for R spatial projects, where spatial data is
+understood mostly as geographical data.
+
+The mailing list is for discussing the development and use of R functions
+and packages for handling and analysis of spatial, and particularly
+geographical, data. The list also covers mapping and cartographic issues,
+and interfaces between R and geographical information systems. It can
+be accessed directly at:
+
+https://www.stat.math.ethz.ch/mailman/listinfo/r-sig-geo
+
+or through the R spatial projects web site:
+
+http://sal.agecon.uiuc.edu/csiss/Rgeo/index.html
+
+hosted by the Spatial Analysis Laboratory in the Department of
+Agricultural and Consumer Economics at the University of Illinois,
+Urbana-Champaign.
+
+I would be very grateful for comments on, and corrections and
+contributions to the web pages, in particular from authors and maintainers
+of packages that should be described in and linked to the site.
+
+Roger Bivand
+
+Economic Geography Section, Department of Economics, Norwegian School of
+Economics and Business Administration, Breiviksveien 40, N-5045 Bergen,
+Norway. voice: +47 55 95 93 55; fax +47 55 95 93 93
+e-mail: Roger.Bivand at nhh.no
+
+
+
+From ray at mcs.vuw.ac.nz  Sun Oct  5 12:03:56 2003
+From: ray at mcs.vuw.ac.nz (Ray Brownrigg)
+Date: Sun, 5 Oct 2003 23:03:56 +1300 (NZDT)
+Subject: [R-pkgs] R maps now for Windows
+Message-ID: <200310051003.h95A3ulY018425@tahi.mcs.vuw.ac.nz>
+
+The original S maps package, previously only available in R on Unix
+systems is now available in R for Windows.
+
+maps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows
+binary form (for rw1071) have been uploaded to CRAN, hopefully soon to
+appear.
+
+The key aspect of this package which differentiates it from other
+GIS related R packages under development is that it is standalone
+within R, i.e. it does not rely on the presence of any other
+software.
+
+Features are:
+1) Built-in databases for usa, state (states of the USA), county
+(counties of the USA), world, world2 (Pacific-centric world) and nz.
+2) Databases supplied in source form with accompanying software to
+generate the binary forms, allowing users to edit the data or add new
+databases (basic format is latitude/longitude pairs).
+3) A database of world cities (generally >~100,000 population).
+4) A companion package called mapdata provides high-resolution versions
+of world, world2 and nz, as well as china (provinces) and rivers.
+5) A companion package called mapproj provides a variety of map 
+   projections (from Doug McIlroy).
+6) While being backwards-compatible with the original 'S maps library',
+it also has many new features, including:
+   - displaying region names on a map,
+   - finding the map region containing a given point (point-in-polygon),
+   - computing areas of map regions, and
+   - interpolating data aggregated over map regions (for statistical maps).
+
+The maps and mapdata packages are maintained by Ray Brownrigg with
+generous assistance from Tom Minka.
+
+The mapproj package is available at 
+   http://www.stat.cmu.edu/~minka/software/maps/
+
+Ray Brownrigg
+Tom Minka
+October 2003
+
+
+
+From vito.muggeo at giustizia.it  Thu Oct  9 09:52:49 2003
+From: vito.muggeo at giustizia.it (Vito Muggeo)
+Date: Thu, 9 Oct 2003 09:52:49 +0200
+Subject: [R-pkgs] new package: segmented
+Message-ID: <011a01c38e3a$59eda620$5c13070a@PROCGEN>
+
+A few days ago I uploaded to CRAN a new package called segmented.
+
+The package contains functions to fit (generalized) linear models with
+`segmented' (or `broken-line' or `piecewise linear') relationships between
+the response and one or more explanatory variables according to methodology
+described in
+
+Muggeo VMR (2003), Estimating regression models with unknown break-points,
+Statistics in Medicine, 22, 3055-3071.
+
+I would be very grateful for comments and suggestions,
+
+best,
+vito
+
+
+
+From bfbraum at fas.harvard.edu  Tue Oct 14 19:42:21 2003
+From: bfbraum at fas.harvard.edu (Bear F. Braumoeller)
+Date: Tue, 14 Oct 2003 13:42:21 -0400
+Subject: [R-pkgs] Updated package: Boolean v1.03
+Message-ID: <C3ACF3F0-FE6D-11D7-BC96-000A95A672D6@fas.harvard.edu>
+
+Version 1.03 of the R package boolean has been uploaded to CRAN and is 
+now available.
+
+boolean implements partial-observability logit and probit models for 
+testing Boolean hypotheses.  It permits researchers to model the 
+probability of the occurrence of a given outcome as a complex function 
+of the probabilities that other outcomes will occur (or other 
+conditions will be fulfilled).  For example, if p(Y) = p(A) * p(B) 
+(that is, A and B jointly produce Y, and the absence of either 
+precludes it), the boolean routine models p(A) and p(B) as logit or 
+probit curves and p(Y) as their product.  Similarly, if A or B produces 
+Y, p(Y) = 1 - [(1-p(A)) * (1-p(B))] becomes the functional form, again 
+with p(A) and p(B) estimated as logit/probit curves.  Arbitrarily 
+convoluted combinations -- e.g., (A and B) or (C and D) produces Y; or, 
+p(Y) = 1 - [1-p(A)*p(B)] * [1-p(C)*p(D)] -- can be estimated, and 
+dependence of probabilities can be modeled by including some of the 
+same independent variables in the separate logit or probit equations.  
+The derivation is in Braumoeller, "Causal Complexity and the Study of 
+Politics," Political Analysis 11(3), 209-233.
+
+Version 1.03 is a service update which ensures that all documentation, 
+in particular the documentation of S4 methods objects, is compatible 
+with R 1.8.  Previous versions will produce warnings upon compilation.
+
+
+Bear F. Braumoeller
+Assistant Professor
+Department of Government
+Harvard University
+http://www.people.fas.harvard.edu/~bfbraum
+
+
+
+From brahm at alum.mit.edu  Fri Oct 17 18:04:04 2003
+From: brahm at alum.mit.edu (David Brahm)
+Date: Fri, 17 Oct 2003 12:04:04 -0400
+Subject: [R-pkgs] Updated package: g.data v1.4
+Message-ID: <16272.4852.615349.178004@arbres1a.fmr.com>
+
+Version 1.4 of package "g.data" is available on CRAN.  This upgrade is
+necessary for it to work under R-1.8.0, and is fully backward compatible.
+
+Description: Create and maintain delayed-data packages (DDP's).  Data stored in
+  a DDP are available on demand, but do not take up memory until requested.
+  You attach a DDP with g.data.attach(), then read from it and assign to it in
+  a manner similar to S-Plus, except that you must run g.data.save() to
+  actually commit to disk.
+
+Thanks very much to <brian at dumbaz.com> for pointing out the incompatibility.
+(Sorry, Brian, a direct reply to you bounced.)  "g.data" basically creates mock
+packages (DDP's) to contain the data, and in R-1.8.0 a package needs a
+DESCRIPTION file to be recognized by .find.package().  Note you will need
+temporary write access to any existing (pre-1.4) DDP's, as g.data.attach() will
+try to create a DESCRIPTION file for any DDP that doesn't already have one.
+-- 
+                              -- David Brahm (brahm at alum.mit.edu)
+
+
+
+From rossini at blindglobe.net  Thu Oct 30 01:49:21 2003
+From: rossini at blindglobe.net (A.J. Rossini)
+Date: Wed, 29 Oct 2003 16:49:21 -0800
+Subject: [R-pkgs] Release of Bioconductor 1.3
+Message-ID: <85fzhbzh0u.fsf@blindglobe.net>
+
+
+The Bioconductor core group would like to announce the 1.3 release of
+the Bioconductor software.  There are many new packages as well as
+several major upgrades and fixes in older packages, and users are
+encouraged to check them out.  Release 1.3 is intended to be operated
+with R version 1.8.X, which can be obtained at CRAN
+(http://cran.r-project.org/) 
+
+
+-- WHAT FEATURES DOES THIS RELEASE PROVIDE?
+
+All packages from the 1.2 release are included.  All current bug fixes
+have been applied, and most have upgraded and provide enhanced
+functionality.
+
+-- NEW PACKAGES AND MAJOR UPGRADES FOR RELEASE 1.3 --
+
+The following is an overview of the most important changes, additions,
+and upgrades:
+
+--- affy
+
+   There have been many improvements to the affy package.  There were
+   big speed and memory improvement of ReadAffy, read.affybatch,
+   justRMA.  A mas5calls method was added to get Affymetrix's P/M/A
+   calls.  Cel and Cdf classes are no longer supported. Function,
+   read.celfile and other Cel related methods and functions
+   removed. Most Cdf related functions have moved to the makecdfenv
+   package.  Function read.probematrix added. It reads CEL files and
+   returns a matrix of PM, MM, or both. This function is more memory
+   efficient than read.affybatch.  Also, affy no longer depends on the
+   affydata package. For this reason some examples have been moved
+   from affy vignettes to the affydata vignette.  The previously
+   deprecated express function has been completely removed.  Lastly,
+   most normalization routines for AffyBatches can now be called with
+   the parameter type which specifies whether the normalization should
+   be applied as a PM-only, MM-only, both PM and MM together or PM and
+   MM separately.
+
+--- affycomp:
+
+   New assessment was added: assessSpikeIn2. Examples of new feature:
+Local 
+   slopes are computes and ROC curves divided by overall expression.
+   Also, all functions that work for hgu95a spike in now also work for
+hgu133a
+   spike in experiment
+
+--- annaffy:
+
+   Functions for handling data from Bioconductor Affymetrix annotation
+   data packages. Produces compact HTML and text reports including
+   experimental data and URL links to many online databases. Allows
+   searching biological metadata using various criteria.
+
+--- Biobase:
+
+   The generic function as.data.frame() now works on objects of class
+   exprSet.  This lets one access the extensive modeling facilities
+   through formula offered by R and packages like 'nlm'.
+
+--- factDesign:
+
+   A package containing functions useful for analyzing data from
+   factorial designed microarray experiments.
+
+--- gpls:
+
+   Classification using partial least squares (PLS), a popular
+   dimension reduction tool in chemometrics, in the context of
+   generalized linear regression based on a previous approach,
+   Iteratively ReWeighted Partial Least Squares (IRWPLS) by Marx
+   (1996).  Both two-group and multi-group classifications are
+   incorporated. Firth's bias reduction procedure is also incorporated
+   to ensure more stable and finite regression coefficients.
+
+--- graph, Rgraphviz, and RBGL:
+
+   Graph/Network handling is greatly improved. There is tighter
+   integration between graph, RBGL and Rgraphviz. Colors and SubGraph
+   layouts are now supported in Rgraphviz. RBGL support includes
+   minimal spanning trees, both strong and weakly connected
+   components, and Dijkstra's shortest path algorithm.  In graph,
+   enhancements in validity checking and representation have been
+   made. New classes have been established that will allow for general
+   representations of nodes and edges. Capabilities include adding or
+   deleting both nodes and edges, combining sets of nodes into a
+   single node. Unions, intersections and complements of graphs
+   defined on a common set of nodes. Joining of two graphs into a
+   single graph. Functions to compute indegree and outdegree. 
+
+--- limma:
+
+   Substantial updates including support for more image analysis
+   programs, new background correction methods, single channel
+   normalization, support for import of exprSet and marrayNorm data
+   objects, improved support for design and contrast matrices, new
+   fitted model object class, within-gene multiple testing, Venn
+   diagrams and generally a move to a simpler command style at the
+   user level.
+
+--- matchprobes:
+
+   A new package providing tools for working with probe sequence
+   information: calculate ATCG content, reverse, complement, mismatch
+   sequences; fast exact sequence matching; combine AffyBatches of
+   different chip types; create probe data packages.  
+
+--- Measurement.cor:
+
+   A package to fit a two-level measurement error model for estimation
+   of correlation coefficient between two random variables assuming
+   bivariate normality for both the true value and measurement
+   error. This model allows dependence between measurement errors
+   hence is more flexible.
+
+--- ontoTools:
+
+   Software for working with ontologies (structured vocabularies) and
+   their associations with general data resources. 
+
+--- Rdbi, RdbiPgSQL:
+
+   Generic framework for database access in R. Adapted from Rdbi
+   authored by Timothy H. Keitt, with methods for accessing data
+   stored in PostgreSQL tables (Adapted from Rdbi.PgSQL, authored
+   by Timothy H. Keitt)
+
+--- SNPtools:
+
+   Currently an interface to the SNPper data resource maintained at
+   Childrens' Boston, which curates SNP-related data from a variety of
+   sources.
+
+--- splicegear:
+
+   A new package that works with oligonucleotide microarrays designed
+   to monitor or confirm the existence of splice variants.  It can
+   extract simple splice-variant information in XML format.  This is
+   demonstrated by the connectivity to an existing database of
+   putative splice variants.  The package can also integrate easily
+   with the results obtained from the package 'matchprobes'. 
+
+--- vsn:
+
+   Two new functions were added 'sagmbSimulateData' and 'sagmbAssess'
+   to quantitatively verify finite sample properties and outlier
+   robustness of the parameter estimation in vsn(). 
+
+-- TOOLS:
+
+The released packages include tools which facilitate:
+
+* annotation (AnnBuilder, annotate).
+
+* data management and organization through the use of the S4 class
+  structure (Biobase, marrayClasses, limma).   
+
+* identification of differentially expressed genes and clustering 
+  (edd, genefilter, geneplotter, multtest, ROC, limma)
+
+* analysis of Affymetrix expression array data (affy, affycomp,
+  gcrma)
+
+* diagnostic plots and normalization for cDNA array data (marrayInput,
+  marrayNorm, marrayPlots)
+
+* storage and retrieval of large datasets (rhdf5, externalVector,
+   Rdbi, RdbiPgSQL).
+
+* facilitate user interaction (tkWidgets, widgetTools)
+
+There are currently a total of 48 packages, not including precomputed
+annotation data packages for Affymetrix GeneChips(tm), KEGG, GO,
+and LocusLink mappings.
+
+
+-- HELP AND RESOURCES:
+
+The packages and more details may be found on the Bioconductor WWW
+site: 
+
+      http://www.bioconductor.org/
+
+Information on subscribing to the mailing list and viewing its
+archives
+can be found at:
+
+      http://www.stat.math.ethz.ch/mailman/listinfo/bioconductor
+
+Please use that list to discuss Bioconductor specific issues, bugs,
+and problems.  Note that every package has a vignette (a literate
+program which provides an annotated example of the package's use) as
+well as possibly some "HOWTO"s.  These document the tool's usage, and
+are provided in the "doc" subdirectory of each package library.
+
+
+-- WHO:
+
+For the Bioconductor development team:
+
+Douglas Bates, University of Wisconsin, USA.
+Ben Bolstad, Division of Biostatistics, UC Berkeley, USA.
+Vince Carey, Harvard Medical School, USA.
+Marcel Dettling, Federal Inst. Technology, Switzerland.
+Sandrine Dudoit, Division of Biostatistics, UC Berkeley, USA.
+Byron Ellis, Harvard Department of Statistics, USA.
+Laurent Gautier, Technial University of Denmark, Denmark.
+Robert Gentleman, Harvard Medical School, USA.
+Jeff Gentry, Dana-Farber Cancer Institute, USA.
+Kurt Hornik, Technische Universitat Wien, Austria.
+Torsten Hothorn, Institut fuer Medizininformatik,
+        Biometrie und Epidemiologie, Germany.
+Wolfgang Huber, DKFZ Heidelberg, Molecular Genome Analysis, Germany.
+Stefano Iacus, Italy
+Rafael Irizarry, Department of Biostatistics (JHU), USA.
+Friedrich Leisch, Technische Universitat Wien, Austria.
+Martin Maechler, Federal Inst. Technology, Switzerland.
+Colin Smith, Scripps Research Institute, USA.
+Gordon Smyth, Walter and Eliza Hall Institute, Australia.
+Anthony Rossini, University of Washington
+        and the Fred Hutchinson Cancer Research Center, USA.
+Gunther Sawitzki, Institute fur Angewandte Mathematik, Germany.
+Luke Tierney, University of Iowa, USA.
+Jean Yee Hwa Yang, University of California, San Francisco, USA.
+Jianhua (John) Zhang, Dana-Farber Cancer Institute, USA.
+
+
+-- 
+rossini at u.washington.edu            http://www.analytics.washington.edu/ 
+Biomedical and Health Informatics   University of Washington
+Biostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center
+UW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable
+FHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email
+
+CONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}
+
+
+
+From ray at mcs.vuw.ac.nz  Sat Nov  1 10:47:10 2003
+From: ray at mcs.vuw.ac.nz (Ray Brownrigg)
+Date: Sat, 1 Nov 2003 22:47:10 +1300 (NZDT)
+Subject: [R-pkgs] R maps, mapdata and mapproj for Windows
+Message-ID: <200311010947.hA19lAjt016231@tahi.mcs.vuw.ac.nz>
+
+Nearly a month ago I announced the availability of a Windows port of
+the maps for S package but for various reasons the Windows binaries
+did not appear on CRAN until yesterday.  Now I am pleased to announce
+that the three packages maps_2.0-8 (the base maps package with
+low-resolution databases), mapdata_2.0-6 (high-resolution and other
+databases) and mapproj_1.1 (projection add-on for maps, maintained by
+Tom Minka) are all now available on CRAN both in source and Windows
+binary forms.
+
+I apologise for the delays.
+Ray Brownrigg
+
+
+
+From maechler at stat.math.ethz.ch  Wed Nov 19 09:14:24 2003
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Wed, 19 Nov 2003 09:14:24 +0100
+Subject: [R-pkgs] 'nor1mix' for 1-dimensional normal mixture distributions
+Message-ID: <16315.9824.576634.789737@gargle.gargle.HOWL>
+
+I have been authoring a very small R package on CRAN, named 
+"normix" which implements an S3 class "norMix" has plot and
+print methods;  further, E[X] and Var[X] methods, random number
+generation ("r") and density evaluation.
+It also provides the 16 "Marron-Wand densities" (known in the (1d)
+density estimation business).
+Erik J?rgensen has provided "p" and "q" functions -- such that
+there's now the full range of "dpqr" functionality.
+
+I have recently *renamed* the package to 'nor1mix' (now on CRAN
+where 'normix' has gone). 
+
+Note that *estimation* (i.e. fitting normal mixtures to data) is 
+not part of this package, but rather in (the more general framework of)
+the package 'mclust'.
+
+Martin Maechler <maechler at stat.math.ethz.ch>	http://stat.ethz.ch/~maechler/
+Seminar fuer Statistik, ETH-Zentrum  LEO C16	Leonhardstr. 27
+ETH (Federal Inst. Technology)	8092 Zurich	SWITZERLAND
+phone: x-41-1-632-3408		fax: ...-1228			<><
+
+
+
+From rksh at soc.soton.ac.uk  Wed Nov 26 17:40:51 2003
+From: rksh at soc.soton.ac.uk (Robin Hankin)
+Date: Wed, 26 Nov 2003 16:40:51 +0000
+Subject: [R-pkgs] new R package: magic squares
+Message-ID: <a06002024bbea865e3f74@[139.166.242.29]>
+
+Dear List
+
+I have just placed a new R package on CRAN that includes many tools 
+for creating and
+investigating magic squares and hypercubes.
+
+Any comments, suggestions, etc very welcome.  I am particularly interested in
+coding up additional algorithms for magic squares, and also in improving the
+existing methods.
+
+
+-- 
+Robin Hankin
+Uncertainty Analyst
+Southampton Oceanography Centre
+SO14 3ZH
+tel +44(0)23-8059-7743
+initialDOTsurname at soc.soton.ac.uk (edit in obvious way; spam precaution)
+
+
+
+From raftery at stat.washington.edu  Fri Dec  5 04:34:41 2003
+From: raftery at stat.washington.edu (Adrian Raftery)
+Date: Thu, 4 Dec 2003 19:34:41 -0800 (PST)
+Subject: [R-pkgs] Robust Covariance Estimation (NNVE) Package Released
+Message-ID: <Pine.OSF.4.58.0312041933390.334531@lisbon2.stat.washington.edu>
+
+ Robust Covariance Estimation Software via Nearest Neighbor Variance Estimation (NNVE)
+
+Software to carry out robust covariance estimation by Nearest Neighbor
+Variance Estimation (NNVE) [Wang and Raftery (2002, J. Amer. Statist. Ass.)]
+is now available for R and Splus. In the simulation studies published in JASA,
+this had mean squared error at least 100 times smaller than that of
+other leading covariance estimators when the proportion of outliers was high.
+
+cov.nnve is now available in the covRobust contributed package at
+http://cran.r-project.org/src/contrib/PACKAGES.html#covRobust
+
+An Splus version is also available on the S archive of Statlib
+http://lib.stat.cmu.edu/S/
+under the function name cov.nnve
+
+cov.nnve is by Naisyin Wang and Adrian Raftery, with contributions by Chris Fraley.
+
+References:
+
+Wang, N. and Raftery. A.E. (December 2002). Nearest-neighbor variance estimation (NNVE):
+ Robust covariance estimation via nearest-neighbor cleaning (with Discussion).
+ Journal of the American Statistical Association 97(460): 994-1019.
+
+Wang, N. and Raftery. A.E. (2000). Nearest-neighbor variance estimation (NNVE):
+ Robust covariance estimation via nearest-neighbor cleaning.
+ Technical Report no. 368, Department of Statistics, University of Washington.
+ Available at www.stat.washington.edu/www/research/reports
+
+
+ -------------------------------------------------------------------
+ Adrian E. Raftery
+ Professor of Statistics and Sociology
+ Director, Center for Statistics and the Social Sciences
+ University of Washington, Box 354320	 Phone: (206) 543-4505
+ Seattle, WA 98195-4320.		 FAX:   (206) 221-6873
+ Web: www.stat.washington.edu/raftery;   www.csss.washington.edu
+ -------------------------------------------------------------------
+
+
+
+From claudio at unive.it  Tue Dec 23 16:28:59 2003
+From: claudio at unive.it (Claudio Agostinelli)
+Date: Tue, 23 Dec 2003 16:28:59 +0100 (CET)
+Subject: [R-pkgs] circular package
+Message-ID: <Pine.LNX.4.33L2.0312231605500.23875-100000@linaria.dst.unive.it>
+
+Dear All,
+Ulric Lund and me are developing a new package called 'circular' that as
+soon as possible will substitute 'CircStats' package.
+A pre-released is available at:
+http://www.dst.unive.it/~claudio/R/circular_0.1.tar.gz
+I kindly ask everybody is using CircStats to check this new package
+and send me comments, suggestions and bugs to claudio at unive.it and not to
+the list.
+As soon as the package will work fine we will ask the R core to make it
+available on CRAN.
+
+Bests,
+Claudio Agostinelli
+
+--------------------------------------------------------------
+Claudio Agostinelli
+Dipartimento di Statistica
+Universita' Ca' Foscari di Venezia
+Campiello San Agostin, 2347 San Polo
+30125 Venezia
+Tel: 041 2347432, Fax: 041 710355
+email: claudio at unive.it, www: www.dst.unive.it/~claudio
+--------------------------------------------------------------
+Per favore non mandatemi allegati in Word o PowerPoint.
+Si veda http://www.fsf.org/philosophy/no-word-attachments.html
+
+Please avoid sending me Word or PowerPoint attachments.
+See http://www.fsf.org/philosophy/no-word-attachments.html
+
+
+

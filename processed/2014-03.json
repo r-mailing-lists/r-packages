@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-03",
+  "messages": [
+    {
+      "id": "msg-6c23367d6ad7",
+      "message_id": "<2F982EDF-097B-46EF-93DC-D31F419DA4E2@hacettepe.edu.tr>",
+      "from_name": "Selcuk Korkmaz",
+      "from_email_hash": "995881611b3a7fde3395388b3f5786852aff764c9d76eaaca37ad69b248b823f",
+      "date": "2014-03-04T12:34:20+02:00",
+      "subject": "[R-pkgs]  Version 2.0 of MVN package on CRAN‏",
+      "subject_clean": "Version 2.0 of MVN package on CRAN‏",
+      "in_reply_to": "<C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>",
+      "references": [
+        "<C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>"
+      ],
+      "body_plain": "Dear R users,\n\nWe are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. \n\nThis package contains three most widely used multivariate normality tests, including Mardia?s, Henze-Zirkler?s and Royston?s Multivariate Normality Tests. \nIn addition these tests, our package has ability to create three multivariate plots. In the earlier version of the package, there was just one plot, which was chi-square Q-Q plot. Now, users can create two new multivariate plots, perspective and contour plots, for binary data sets. \n\nWe have also added a vignette to the package for more depth information.\n\nWe are looking forward to getting your useful feedbacks to email selcuk.korkmaz at hacettepe.edu.tr\n\nBest, \n\nhttp://cran.r-project.org/web/packages/MVN/index.html\nhttp://cran.r-project.org/web/packages/MVN/vignettes/MVN.pdf\n\n----------------------------------------------------------\nSelcuk Korkmaz\nHacettepe University \nFaculty of Medicine \nDepartment of Biostatistics \n06100 Sihhiye, Ankara/Turkey.",
+      "body_snippet": "Dear R users,\n\nWe are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. \n\nThis package contains three most widely used multivariate",
+      "thread_id": "thread-6c23367d6ad7",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-30d5b505cf35",
+      "message_id": "<5315D361.3000909@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-03-04T07:21:37-06:00",
+      "subject": "[R-pkgs] New version of Hmisc package on CRAN",
+      "subject_clean": "New version of Hmisc package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Recent changes include the following.\n\nChanges in version 3.14-2 (2014-02-26)\n    * latex.default: improved logic using new function in Misc: latexBuild\n\t * latex.default: fixed bug with ctable=TRUE with no caption by \nremoving default label\n    * latex.default: improved formatting for insert.top\n    * latex.default: added tests, fixed insert.bottom\n    * latex.summaryM: return stat summary key as legend attribute, use \nthis according to insert.bottom argument\n    * latex.summary.formula.response: fixed bug related to computation \nof cdec.  Thanks: Kevin Thorpe\n    * latex.default: added new argument star: ctables uses this to \nspread over two columns when the LaTeX document is in \\twocolumn mode. \nThanks:  David Whiting\n\nChanges in version 3.14-1 (2014-02-25)\n    * Added latexNeedle function\n    * Change latexTherm, latexNeedle to use user LaTeX macro \\tooltipn \nto do the pop-up\n    * latex.default: changed line breaks around \\end{tabular}\n    * latex.summaryM: put insert.bottom text in minipage so \\tooltip \nwill not devote wide space to it\n    * sas.get: added defaultencoding argument and logic (Thanks: \nReinhold Koch)\n    * plot.summaryP: omit tick marks for proportion > 1.0\n    * format.df (used by latex): fixed na.blank logic for character var\n    * latex: removed newlines when ending environments, added hyperref \nargument\n    * latex: added center='centerline', fixed 'centering'\n    * upData, cleanup.import, dataframeReduce: changed argument pr to print\n    * rcspline.eval: added more evasive action in case of extreme ties\n\nChanges in version 3.14-0 (2014-01-22)\n    * Added trans argument to varclus\n    * Removed recode, existsFunction functions, under.unix object, \nsurvfitKM, functions used only by S-Plus: comment, mem, mulbar.chart, \np.sunflowers\n    * as.category, is.category, untangle.special: removed\n    * Removed reference to .R. from many functions\n    * Remove oldClass, oldUnclass, getFunction\n    * latex.default: changed 'rotate' to 'sideways' for ctable mode. \nThanks: Simon Zehnder <szehnder at uni-bonn.de>\n    * gView: removed\n    * ldBands: removed\n    * summaryP: new function - graphical replacement for tables of \nproportions\n    * ynbind: new function for combining related yes/no variables into a \nmatrix with a label\n    * added file argument to prn\n    * summaryP: added autoarrange\n    * added addMarginal and nobsY functions\n    * pBlock: new function for blocking variables for summaryP\n    * summaryP: changed text positioning to grid absolutes, added \ntext.at argument\n    * scat1d, histSpike: if grid used and y has grid units, fixed logic \nfor frac\n    * plsmo, panel.plsmo: added scat1d.opts argument\n    * label.Surv, units.Surv: added, removed ::: in survival calls\n    * summarize: added keepcolnames argument\n    * Suppressed startup message unless options(Hverbose=TRUE) is set\n    * summaryS: new function - multi-panel lattice xy and dot plots\n    * summaryD: added ylab argument\n    * dotchart3: quit letting left margin be less than pre-existing one\n    * multLines: new function\n    * Improved nobsY to respect subject IDs when counting number of \nsubjects, and to return an attribute 'formula' without id variable; \nchanged bpplotM, summaryP, summaryS to use this\n    * Removed nobsY calculations from bpplotM, summaryP, summaryS, \nenhanced nobsY to allow stratification by treatment\n    * panel.bpplot: added violin and violin.opts arguments\n    * summaryS: added medvPanel support during-plot vertical violin plots\n    * plot.summaryP: padded x-axis limits\n    * latexTabular: added translate and hline arguments; moved to its \nown file and help page\n    * latexTherm: added tooltip using LaTeX ocgtools package\n    * summaryP: stopped reversing order of panels\n    * summaryM: added table.env argument, changed how model.frame built\n    * latex.summaryM: changed to print proportions by default, added \nround='auto'\n    * character.table: added xpd=NA; thanks: Dale\n    * summaryP: added latex method\n    * latex.default: added insert.top argument\n    * summaryM: added stratification (multiple tables)\n\n\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "Recent changes include the following.\n\nChanges in version 3.14-2 (2014-02-26)\n    * latex.default: improved logic using new function in Misc: latexBuild\n\t * latex.default: fixed bug with ctable=TRUE w",
+      "thread_id": "thread-30d5b505cf35",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-38b257e88742",
+      "message_id": "<5315D446.8000808@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-03-04T07:25:26-06:00",
+      "subject": "[R-pkgs] rms package updated",
+      "subject_clean": "rms package updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Changes are listed below.\n\nNOTE: The next release of rms will replace the survfit.formula function \nwith a new function named npsurv (\"nonparametric survival estimates\") so \nas to not conflict with the survival package.  This is a \nNON-DOWNWARD-COMPATIBLE change.  To get Kaplan-Meier estimates in the \nNEXT release use npsurv() instead of survfit().\n\nThe web site for more information about rms is \nhttp://biostat.mc.vanderbilt.edu/Rrms\n\n\nChanges in version 4.1-3 (2014-03-02)\n    * num.intercepts: removed (is in Hmisc)\n\t * survfit.formula, cph, psm: changed to use inputAttributes attribute \nof Surv objects (introduced earlier in survival package so that rms \ncould drop its customized Surv function)\n    * Exported survfit.formula\n    * Changed survival fitting functions and residuals to use units.Surv\n\nChanges in version 4.1-2 (2014-02-28)\n    * psm: Fixed bug to allow computation of Dxy with left censoring\n    * val.prob: Fixed recently introduced bug that made calibration \nintercept and slope always 0,1.  Thanks: Lars.Engerstrom at lio.se\n    * plot.Predict: added between to leave space between panels\n    * orm.fit: fixed error in kmid calculation when heavy ties at first \nlevel of y.  Thanks: Yuwei Zhu\n    * setPb: changed default to now use tktcl to show progress bars for \nsimulations\n    * predictrms: fixed bug with type='terms'\n    * val.surv: handle case where survival estimates=0 or 1 when using \nlog-log transform\n\nChanges in version 4.1-1 (2014-01-22)\n    * Removed use of under.unix in anova.rms, latex.summary, plot.nomogram\n    * Removed use of oldUnclass, oldClass, is.category\n    * Fixed class of Rq object; had failed with bootcov.  Thanks: Max Gordon\n    * survplot: preserved par()\n    * Srv: removed, changed all uses to Surv() for new survival package \nthat preserves attributes for Surv inputs\n    * survplot.survfit, survdiffplot: added conf='diffbands'\n    * predictrms: fixed num. intercepts calculation order\n    * survplot, survdiffplot: used original standard error for \nsurvdiffplot, and fun\n    * dyx.cens: allow left-censoring\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "Changes are listed below.\n\nNOTE: The next release of rms will replace the survfit.formula function \nwith a new function named npsurv (\"nonparametric survival estimates\") so \nas to not conflict with th",
+      "thread_id": "thread-38b257e88742",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-4e4646db05fc",
+      "message_id": "<53166925.8050509@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-03-04T18:00:37-06:00",
+      "subject": "[R-pkgs] New package on CRAN: greport",
+      "subject_clean": "New package on CRAN: greport",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The first submission of the new greport package is now on CTAN.  This \npackage facilitates graphical reporting of clinical trials an is highly \ntied to LaTeX, Hmisc, and lattice.  It creates hyperlinks and pop-up \ntooltips in the resulting pdf report.  Tables are greatly de-emphasized, \nbut hyperlinks take you from primary graphics to supporting tables in an \nappendix, which are hyperlinked back to the graphic.\n\nThe package's web page, with example pdf reports, is at \nhttp://biostat.mc.vanderbilt.edu/Greport\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "The first submission of the new greport package is now on CTAN.  This \npackage facilitates graphical reporting of clinical trials an is highly \ntied to LaTeX, Hmisc, and lattice.  It creates hyperlink",
+      "thread_id": "thread-4e4646db05fc",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-0f667db17234",
+      "message_id": "<Zen-1WPYmY-000EAo-RD@smarthost01b.mail.zen.net.uk>",
+      "from_name": "Michael Dewey",
+      "from_email_hash": "322e71ea84e79afdb1d951edbe529ecadf30fc1a304e1f09387273954d7ba960",
+      "date": "2014-03-17T14:44:45Z",
+      "subject": "[R-pkgs] New package metap on CRAN",
+      "subject_clean": "New package metap on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This package provides meta-analysis of significance values.\n\nAlthough the preferred way of performing meta-analysis uses effect \nsizes sometimes these are unavailable and only p-values can be \nobtained from the primary studies. The metap package provides several \nways of synthesising p-values and a graphical display. There exist a \nnumber of packages on CRAN which use one or other of these techniques \nin the context of genetic studies but metap is designed for general \npurpose use.\n\nComments welcome.\n\n\nMichael Dewey\ninfo at aghmed.fsnet.co.uk\nhttp://www.aghmed.fsnet.co.uk/home.html",
+      "body_snippet": "This package provides meta-analysis of significance values.\n\nAlthough the preferred way of performing meta-analysis uses effect \nsizes sometimes these are unavailable and only p-values can be \nobtaine",
+      "thread_id": "thread-0f667db17234",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-bbb0c5c41c30",
+      "message_id": "<CALVusX-+YSCo+K3zt=zbt+w6Wthmo_OGkd3-M-hsaoam_ASVzg@mail.gmail.com>",
+      "from_name": "John Harrison",
+      "from_email_hash": "d6219a4ab3a73c5be43990b3d5b2f0e770b6ec201d93dd4268f8475bb9215b39",
+      "date": "2014-03-18T08:59:45+07:00",
+      "subject": "[R-pkgs] RSelenium package",
+      "subject_clean": "RSelenium package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140318/82c23d50/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140318/82c23d50/attachment.pl>",
+      "thread_id": "thread-bbb0c5c41c30",
+      "thread_depth": 0,
+      "month": "2014-03"
+    },
+    {
+      "id": "msg-5069ea81e8cc",
+      "message_id": "<web-502235909@cgpsrv2.cis.mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2014-03-22T11:01:15-04:00",
+      "subject": "[R-pkgs] new version of effects package",
+      "subject_clean": "new version of effects package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nSandy Weisberg, Michael Friendly, and I would like to announce a new version of the effects package, 3.0-0, now on CRAN; the new version should shortly percolate through the various CRAN mirrors. \n\nThe major enhancement in this version of effects is the ability to plot partial residuals and smoothed partial residuals in effect displays for linear and generalized linear models, generalizing component-plus-residual plots. This new feature provides a visualization of the data against fitted terms in the model (or combinations of predictors) of arbitrary dimension and complexity. See the documentation for the partial.residuals argument in ?Effect and ?plot.eff.\n\nAs always, suggestions and reports of problems are appreciated.\n\nBest,\n John\n\n------------------------------------------------\nJohn Fox, Professor\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox/",
+      "body_snippet": "Dear all,\n\nSandy Weisberg, Michael Friendly, and I would like to announce a new version of the effects package, 3.0-0, now on CRAN; the new version should shortly percolate through the various CRAN mi",
+      "thread_id": "thread-5069ea81e8cc",
+      "thread_depth": 0,
+      "month": "2014-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-30d5b505cf35",
+      "subject": "New version of Hmisc package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-03-04T07:21:37-06:00",
+      "last_reply": "2014-03-04T07:21:37-06:00",
+      "root_message_id": "msg-30d5b505cf35"
+    },
+    {
+      "id": "thread-38b257e88742",
+      "subject": "rms package updated",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-03-04T07:25:26-06:00",
+      "last_reply": "2014-03-04T07:25:26-06:00",
+      "root_message_id": "msg-38b257e88742"
+    },
+    {
+      "id": "thread-6c23367d6ad7",
+      "subject": "Version 2.0 of MVN package on CRAN‏",
+      "message_count": 1,
+      "participants": [
+        "Selcuk Korkmaz"
+      ],
+      "started": "2014-03-04T12:34:20+02:00",
+      "last_reply": "2014-03-04T12:34:20+02:00",
+      "root_message_id": "msg-6c23367d6ad7"
+    },
+    {
+      "id": "thread-4e4646db05fc",
+      "subject": "New package on CRAN: greport",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-03-04T18:00:37-06:00",
+      "last_reply": "2014-03-04T18:00:37-06:00",
+      "root_message_id": "msg-4e4646db05fc"
+    },
+    {
+      "id": "thread-0f667db17234",
+      "subject": "New package metap on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Dewey"
+      ],
+      "started": "2014-03-17T14:44:45+00:00",
+      "last_reply": "2014-03-17T14:44:45+00:00",
+      "root_message_id": "msg-0f667db17234"
+    },
+    {
+      "id": "thread-bbb0c5c41c30",
+      "subject": "RSelenium package",
+      "message_count": 1,
+      "participants": [
+        "John Harrison"
+      ],
+      "started": "2014-03-18T08:59:45+07:00",
+      "last_reply": "2014-03-18T08:59:45+07:00",
+      "root_message_id": "msg-bbb0c5c41c30"
+    },
+    {
+      "id": "thread-5069ea81e8cc",
+      "subject": "new version of effects package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2014-03-22T11:01:15-04:00",
+      "last_reply": "2014-03-22T11:01:15-04:00",
+      "root_message_id": "msg-5069ea81e8cc"
+    }
+  ]
+}

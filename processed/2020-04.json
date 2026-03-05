@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-04",
+  "messages": [
+    {
+      "id": "msg-755b1df0e883",
+      "message_id": "<CAC1PbYRmsFor1_5bf9reOpBQHrq3qNP7B9PVsZLx9t=ZDZgPmw@mail.gmail.com>",
+      "from_name": "Megha Joshi",
+      "from_email_hash": "01bfa578766ae1c5b70511f6ba02515b3542cd67f57d6c723d744dc13b7db06f",
+      "date": "2020-04-01T17:46:47-05:00",
+      "subject": "[R-pkgs] simhelpers: Helper Functions for Simulation Studies",
+      "subject_clean": "simhelpers: Helper Functions for Simulation Studies",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi :)\n\nHope you are doing well!\n\nI have been working on an R package that has helper functions for\nsimulation studies. First version of the package is on CRAN now ?\nHere is the website for the package:\nhttps://meghapsimatrix.github.io/simhelpers/index.html\n\nHope it is useful to you for running simulations in R :)\n\nHope you are safe and healthy!!\n\n\n-- \nMegha Joshi\n(she/her/hers)\nmeghapsimatrix.com\nDoctoral student\nQuantitative Methods\n*The University of Texas at Austin*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi :)\n\nHope you are doing well!\n\nI have been working on an R package that has helper functions for\nsimulation studies. First version of the package is on CRAN now ?\nHere is the website for the package",
+      "thread_id": "thread-755b1df0e883",
+      "thread_depth": 0,
+      "month": "2020-04"
+    },
+    {
+      "id": "msg-e95538e9406d",
+      "message_id": "<CAN+Ty_Ai+-6wA8sNEwH46cy25pjjGVuwX61G3XnS911rw4MGSQ@mail.gmail.com>",
+      "from_name": "Jasper Watson",
+      "from_email_hash": "de087baade348c395179ff7ea20816dacb737b33a887a2c2a7070382e577d329",
+      "date": "2020-04-26T11:08:43+12:00",
+      "subject": "[R-pkgs] RBNZ: new package for downloading Reserve Bank of New Zealand data",
+      "subject_clean": "RBNZ: new package for downloading Reserve Bank of New Zealand data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI have just released to CRAN the RBNZ package which allows users to\ndownload financial and economic data published by the Reserve Bank of New\nZealand. The data is provided on their website in spreadsheet format; this\npackage provides a method to download those spreadsheets and read them\ndirectly into R.\n\nCRAN: https://cran.r-project.org/web/packages/RBNZ/index.html\nGitHub: https://github.com/rntq472/RBNZ\nData Source: https://www.rbnz.govt.nz/statistics\n\nCheers,\n\nJasper Watson\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI have just released to CRAN the RBNZ package which allows users to\ndownload financial and economic data published by the Reserve Bank of New\nZealand. The data is provided on their website in ",
+      "thread_id": "thread-e95538e9406d",
+      "thread_depth": 0,
+      "month": "2020-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-755b1df0e883",
+      "subject": "simhelpers: Helper Functions for Simulation Studies",
+      "message_count": 1,
+      "participants": [
+        "Megha Joshi"
+      ],
+      "started": "2020-04-01T17:46:47-05:00",
+      "last_reply": "2020-04-01T17:46:47-05:00",
+      "root_message_id": "msg-755b1df0e883"
+    },
+    {
+      "id": "thread-e95538e9406d",
+      "subject": "RBNZ: new package for downloading Reserve Bank of New Zealand data",
+      "message_count": 1,
+      "participants": [
+        "Jasper Watson"
+      ],
+      "started": "2020-04-26T11:08:43+12:00",
+      "last_reply": "2020-04-26T11:08:43+12:00",
+      "root_message_id": "msg-e95538e9406d"
+    }
+  ]
+}

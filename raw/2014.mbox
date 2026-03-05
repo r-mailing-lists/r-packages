@@ -1,0 +1,1591 @@
+From Max.Kuhn at pfizer.com  Sat Jan  4 07:11:11 2014
+From: Max.Kuhn at pfizer.com (Kuhn, Max)
+Date: Sat, 4 Jan 2014 06:11:11 +0000
+Subject: [R-pkgs] caret version 6.0-21
+Message-ID: <CEED102E.1BF50%max.kuhn@pfizer.com>
+
+The caret package (short for Classification And REgression
+Training) attempts to streamline the process for creating
+predictive models. The package contains tools for:
+
+ - data splitting
+ - pre-processing
+ - feature selection
+ - model tuning using resampling (with parallel processing)
+ - variable importance estimation
+
+as well as other functionality. The package website has lengthy
+descriptions of functionality:
+
+   http://caret.r-forge.r-project.org/
+
+A new version, 6.0-21, was just released to CRAN and contains
+major improvements:
+
+ - A new system for user-defined models has been added. See
+  http://caret.r-forge.r-project.org/custom_models.html.
+
+ - When creating the grid of tuning parameter values, the column
+  names no longer need to be preceded by a period. Periods can
+  still be used as before but are not required.
+
+ - trainControl now has a 'method = "none"' resampling option that
+  bypasses model tuning and fits the model to the entire training
+  set.
+
+- Several new models were added, bringing the total number of
+  models up to 149.
+
+ - ggplot methods were added for several classes.
+
+Most changes are not user-visible so that the impact on current
+scripts should be minimal.
+
+For this caret update, the AppliedPredictiveModeling package will be
+brought up to date shortly with slightly modified scripts for the
+analyses contained in the text.
+
+Thanks to the R community and caret contributors: Jed Wing, Steve
+Weston, Andre Williams, Chris Keefer, Allan Engelhardt, Tony Cooper,
+Zachary Mayer and the R Core Team.
+
+Please contact me (max.kuhn at pfizer.com) with any comments, suggestions,
+questions or ideas for a good wedding toasts.
+
+Max
+
+
+From d.rizopoulos at erasmusmc.nl  Mon Jan 13 08:48:25 2014
+From: d.rizopoulos at erasmusmc.nl (D. Rizopoulos)
+Date: Mon, 13 Jan 2014 07:48:25 +0000
+Subject: [R-pkgs] package JMbayes -- version 0.5-0
+Message-ID: <7191AFC7255B4F49A30707E39BEAD05F3C83586A@EXCH-RX03.erasmusmc.nl>
+
+*** Apologies for cross posting ***
+
+Dear Colleagues, Dear R-users,
+
+I would like to announce the release of the new version of package 
+JMbayes available from CRAN (http://CRAN.R-project.org/package=JMbayes). 
+This package fits joint models for longitudinal and time-to-event data 
+under a Bayesian approach using MCMC. These models are applicable in 
+mainly two settings. First, when focus is on the survival outcome and we 
+wish to account for the effect of an endogenous (aka internal) 
+time-dependent covariates measured with error. Second, when focus is on 
+the longitudinal outcome and we wish to correct for nonrandom dropout.
+
+Some basic features of the new version:
+
+* The MCMC in now implemented with efficient custom-made code and no 
+longer relies on JAGS, OpenBUGS or WinBUGS.
+
+* The user can now specify her own density function for the longitudinal 
+responses using argument 'densLong' (default is the normal pdf). Among 
+others, this allows to fit joint models with categorical and 
+left-censored longitudinal responses and robust joint models with 
+Student's-t error terms. In addition, using the 'df.RE' argument, the 
+user can also change the distribution of the random effects from 
+multivariate normal to a multivariate Student's-t with prespecified 
+degrees of freedom.
+
+* The user has now the option to define custom transformation functions 
+for the terms of the longitudinal submodel that enter into the linear 
+predictor of the survival submodel (argument 'transFun'). For example, 
+interactions terms, nonlinear terms (polynomials, splines), etc.
+
+* The baseline hazard is now only estimated using B-splines (penalized 
+(default) or regression).
+
+* Dynamic predictions:
+
+   - function survfitJM.JMbayes(), which computes dynamic survival 
+probabilities, is now faster;
+
+   - the new generic function aucJM() calculates time-dependent AUCs for 
+joint models;
+
+   - the new generic function dynCJM() calculates a dynamic 
+discrimination index (weighted average of time-dependent AUCs) for joint 
+models;
+
+   - the new generic function prederrJM() calculates prediction errors 
+for joint models;
+
+   - the new function bma.combine() combines predictions using Bayesian 
+model averaging; posterior model weights can be calculated using 
+logLik.JMbayes() and marglogLik().
+
+* a method has been added for the xtable() generic from package xtable 
+for producing a LaTeX table with the results of the joint model.
+
+* Backward-incompatible version; the aforementioned changes require 
+refitting joint models that have been fitted with previous versions.
+
+
+As always, any kind of feedback (e.g., questions, suggestions, 
+bug-reports, etc.) is more than welcome.
+
+
+Kind regards,
+
+Dimitris
+
+-- 
+Dimitris Rizopoulos
+Assistant Professor
+Department of Biostatistics
+Erasmus University Medical Center
+
+Address: PO Box 2040, 3000 CA Rotterdam, the Netherlands
+Tel: +31/(0)10/7043478
+Fax: +31/(0)10/7043014
+Web: http://www.erasmusmc.nl/biostatistiek/
+
+From cipollini.fabrizio at gmail.com  Mon Jan 20 13:39:28 2014
+From: cipollini.fabrizio at gmail.com (Cipollini Fabrizio)
+Date: Mon, 20 Jan 2014 13:39:28 +0100
+Subject: [R-pkgs] TAQMNGR
+Message-ID: <CAE_jnnpuei0CNYe6M=T8ebjfpMLCpnEf_6YxMffb5A_oz=RCkA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl>
+
+From revelle at northwestern.edu  Tue Jan 21 01:25:36 2014
+From: revelle at northwestern.edu (William R Revelle)
+Date: Tue, 21 Jan 2014 00:25:36 +0000
+Subject: [R-pkgs] psych version 1.4.1
+Message-ID: <47399D37-9704-4F26-AB3C-991E7CF809D0@northwestern.edu>
+
+psych 1.4.1 is now on CRAN and being distributed to the mirrors.
+
+
+? Substantial improvements in speed through the use of the parallel package and some coding improvements in a number of functions.
+ ? Added parallel processing (multicores) to polychoric, tetrachoric, mixed.cor, fa, fa.parallel, cor.ci and alpha 
+ ? With 2 cores this saves 50%, but this is not a linear function of the number of cores: with 4 cores the savings seems to be 67% and with 8 cores 75%. Requires the parallel package
+ ? Modified ICLUST to increase speed by about 50% (does not require parallel). 
+ ? Added splitHalf, omega2latex and ICC2latex 
+ ? Added the ability to find scores automatically in omega. 
+ ? A minor tweak to r.test to better report the call in the case of a correlated correlation. 
+ ? A minor tweak to corr.test so that if all the sample sizes are the same, just report one number.
+ ? Added the Gleser data set for an example of generalizability theory. 
+ ? Added the ability data set (just the iqitems scored for correct/incorrect)
+ ? Added the check option in describe (turning it off increases speed drastically, but at the risk of not detecting logical or factor data). 
+ ? Added the describeData helper to do a quick pass to list the data types in a data.frame. 
+ ? Added best.items and lookup as two helper functions for finding item contents from a dictionary of item names and contents.
+
+What is psych?
+
+A number of routines for personality, psychometrics and experimental psychology.   Functions are primarily for scale construction using factor analysis, cluster analysis and reliability analysis, although others provide basic descriptive statistics. Item Response Theory is done using  factor analysis of tetrachoric and polychoric correlations. Functions for simulating particular item and test structures are included. Several functions serve as a useful front end for structural equation modeling.  Graphical displays of path diagrams, factor analysis and structural equation models are created using basic graphics. Some of the functions are written to support a book on psychometrics as well as publications in personality research. For more information, see the https://personality-project.org/r/psych/  webpage 
+
+
+
+William Revelle		           http://personality-project.org/revelle.html
+Professor			           http://personality-project.org
+Department of Psychology   http://www.wcas.northwestern.edu/psych/
+Northwestern University	   http://www.northwestern.edu/
+Use R for psychology             http://personality-project.org/r
+It is 5 minutes to midnight	   http://www.thebulletin.org
+
+
+From f.harrell at Vanderbilt.Edu  Fri Jan 24 00:31:37 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Thu, 23 Jan 2014 17:31:37 -0600
+Subject: [R-pkgs] Major update to Hmisc package available on CRAN
+Message-ID: <52E1A659.2090509@vanderbilt.edu>
+
+Hmisc has had the following updates, with some of the new functions 
+demonstrated on http://biostat.mc.vanderbilt.edu/HmiscNew .  Much of the 
+new work is motivated by the need to replace tables with graphics.
+----------------------------------------------------------------
+
+Changes in version 3.14-0 (2014-01-22)
+    * Added trans argument to varclus
+    * Removed recode, existsFunction functions, under.unix object, 
+survfitKM, functions used only by S-Plus: comment, mem, mulbar.chart, 
+p.sunflowers
+    * as.category, is.category, untangle.special: removed
+    * Removed reference to .R. from many functions
+    * Remove oldClass, oldUnclass, getFunction
+    * latex.default: changed 'rotate' to 'sideways' for ctable mode. 
+Thanks: Simon Zehnder <szehnder at uni-bonn.de>
+    * gView: removed
+    * ldBands: removed
+    * summaryP: new function - graphical replacement for tables of 
+proportions
+    * ynbind: new function for combining related yes/no variables into a 
+matrix with a label
+    * added file argument to prn
+    * summaryP: added autoarrange
+    * added addMarginal and nobsY functions
+    * pBlock: new function for blocking variables for summaryP
+    * summaryP: changed text positioning to grid absolutes, added 
+text.at argument
+    * scat1d, histSpike: if grid used and y has grid units, fixed logic 
+for frac
+    * plsmo, panel.plsmo: added scat1d.opts argument
+    * label.Surv, units.Surv: added, removed ::: in survival calls
+    * summarize: added keepcolnames argument
+    * Suppressed startup message unless options(Hverbose=TRUE) is set
+    * summaryS: new function - multi-panel lattice xy and dot plots
+    * summaryD: added ylab argument
+    * dotchart3: quit letting left margin be less than pre-existing one
+    * multLines: new function
+    * Improved nobsY to respect subject IDs when counting number of 
+subjects, and to return an attribute 'formula' without id variable; 
+changed bpplotM, summaryP, summaryS to use this
+    * Removed nobsY calculations from bpplotM, summaryP, summaryS, 
+enhanced nobsY to allow stratification by treatment
+    * panel.bpplot: added violin and violin.opts arguments
+    * summaryS: added medvPanel support during-plot vertical violin plots
+    * plot.summaryP: padded x-axis limits
+    * latexTabular: added translate and hline arguments; moved to its 
+own file and help page
+    * latexTherm: added tooltip using LaTeX ocgtools package
+    * summaryP: stopped reversing order of panels
+    * summaryM: added table.env argument, changed how model.frame built
+    * latex.summaryM: changed to print proportions by default, added 
+round='auto'
+    * character.table: added xpd=NA; thanks: Dale
+    * summaryP: added latex method
+    * latex.default: added insert.top argument
+    * summaryM: added stratification (multiple tables)
+
+
+-- 
+Frank E Harrell Jr Professor and Chairman      School of Medicine
+                    Department of Biostatistics Vanderbilt University
+
+
+From sprint at ed.ac.uk  Thu Jan 30 16:22:04 2014
+From: sprint at ed.ac.uk (SPRINT Project)
+Date: Thu, 30 Jan 2014 15:22:04 +0000
+Subject: [R-pkgs] SPRINT 1.0.5 release (parallelised R functions for complex
+ analysis and large data sets)
+Message-ID: <20140130152204.166467mxiucvjnrw@www.staffmail.ed.ac.uk>
+
+Dear All
+
+We have recently released SPRINT v1.0.5. SPRINT provides parallelised  
+versions of existing R functions (e.g. statistical, machine learning,  
+utility) that often exceed computational limits (speed or memory) with  
+large or complex data sets.
+
+
+SPRINT 1.0.5 now:
+
+-> runs on Mac OSX multi-cores (i.e. you may not need to obtain access  
+to compute clusters)
+
+-> provides a parallelised version of the Hamming distance (based on  
+original version contained in stringdistmatrix() by M van der Loo, and  
+parallelised differently from the option provided therein)
+
+-> compliant with MPI3 (and the latest version of the mpich package)
+
+
+Download and instructions available at www.r-sprint.org.
+
+SPRINT 1.0.5 is not available on CRAN as we have not yet completed  
+testing against the latest major release of R (3.0.x). However, we  
+will release a small incremental update of SPRINT as version 1.0.6  
+within the next few weeks that will be available via CRAN and will  
+work with R3.
+
+
+Notes:
+- With the availability of SPRINT for Mac users, we hope to address  
+computational issues that are too large or too slow for these users,  
+but still small enough to not require a much larger number of nodes  
+and cores (i.e. compute clusters or supercomputers like HECToR or  
+ARCHER).
+- We have parallelised the Hamming distance as from collaborators and  
+course participants we know this to have potential in use for  
+Next-Gen-Sequencing, e.g. measuring pairwise distances between  
+nucleotide sequences. In principle, though, Hamming is a distance  
+useful for string or binary data vectors.
+
+
+
+SPRINT Project
+
+sprint at ed.ac.uk
+www.r-sprint.org
+
+The University of Edinburgh
+
+-- 
+The University of Edinburgh is a charitable body, registered in
+Scotland, with registration number SC005336.
+
+
+From edd at debian.org  Tue Feb  4 03:28:47 2014
+From: edd at debian.org (Dirk Eddelbuettel)
+Date: Mon, 3 Feb 2014 20:28:47 -0600
+Subject: [R-pkgs] Rcpp 0.11.0
+Message-ID: <21232.20575.43733.265462@max.nulle.part>
+
+
+A new release 0.11.0 of Rcpp is now on CRAN, bringing a key new feature as
+well as a number of enhancements, extensions and and bug fixes to R ---
+please see the announcement text below.
+
+The key change is the fact that builds are now effectively 'header-only' and
+no longer require packages to link against a library provided by the Rcpp
+package. Instead, R's function registration mechanism is used.  This does
+however mean that your current packages using Rcpp will break, so you need
+rebuild all packages using Rcpp this one time.  Some details are below.
+
+Dirk, on behalf of the Rcpp Core team
+
+
+
+
+===== Summary =====
+
+Version 0.11.0 of the Rcpp package is now on CRAN and its mirrors.  
+
+This new release brings a number of new features, most noticably a simplified
+build system, as well as improvements to existing features and bugfixes.
+
+Complete details of the changes implemented between the last announcement for
+version 0.10.0 and this new can be found in the NEWS and ChangeLog files
+which are included in the package.
+
+
+
+===== Overview =====
+
+Rcpp is an R package and associated C++ library for seamless integration
+between C++ and R.  
+
+It has been described in a Journal of Statistical Software (2011, Vol 40,
+Issue 08) paper (also included in the package as the "Rcpp-introduction" pdf
+vignette) and a book "Seamless R and C++ Integration with Rcpp" (2013,
+Springer, useR! Series).
+
+As of early 2014, Rcpp is used by over 160 other CRAN packages.
+
+Several key features of the new 0.11.0 release are described below.
+
+
+
+===== One-time rebuild required =====
+
+Because of the simplified linking scheme detailed in the next section, and
+the corresponding removal of the libRcpp.* library, all packages currently
+using Rcpp need to be reinstalled.
+
+We provide a simple helper script at
+https://github.com/RcppCore/rcpp-logs/blob/master/scripts/showReverseRcppDepends.r
+to identidy which of your currently-installed packages use Rcpp, and need to
+be rebuilt / reinstalled.
+
+
+
+===== Simpler Building with Rcpp =====
+
+Thanks to the 'LinkingTo:' directive, R already instructed the compiler where
+to fine header files when writing code with Rcpp. The package now uses the
+registration facilities in R (see Section 5.4 in Writing R Extensions). 
+
+With just an 'Imports: Rcpp' in DESCRIPTION along with an explicit import
+statement in the NAMESPACE file such 'importFrom(Rcpp, evalCpp)' all required
+Rcpp code will be properly instantiated without any explicit linking. [ Note
+that just using 'import(Rcpp)' is not sufficient, but any exported C++
+identifier should do -- evalCpp is nice and short. ]
+
+This means that the package no longer provides a user-facing library
+libRcpp.so (or libRcpp.dylib or libRcpp.dll).  This also implies that a
+one-time rebuild is needed as alluded to in the previous section.
+
+The key benefit is that many package should no longer require the files
+src/Makevars and src/Makevars.win in order to link with Rcpp. Mny packages
+will be able to retire these files. The exception, of course, is the case
+where a package links against an external library as eg the RcppArmadillo
+package> Here, the LAPACK / BLAS / Fortran libraries still need to be
+linked. However, the corresponding values are also provided by R and the
+expression becomes a simple 'PKG_LIBS=$(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)'.
+
+
+
+===== Rcpp attributes =====
+
+Rcpp attributes were a key innovation in the 0.10.0; they have matured
+further and have now become the standard way to build code with Rcpp.  See
+the dedicated vignette for details.
+
+
+
+==== C++11 Support =====
+
+R 3.1.0, to be released in a few month, will permit compilation using C++11,
+the newest C++ standard -- including for packages going to CRAN.  Rcpp had
+already supported 'local' builds using C++11 since version 0.10.3, simply add
+
+   [[Rcpp::plugins(cpp11)]]
+
+and Rcpp attributes takes care of the rest.
+
+
+
+===== Memory management =====
+
+A number of internal data structures have been rewritten.
+
+
+
+===== Links =====
+
+Rcpp site:
+    http://www.rcpp.org
+
+Rcpp Gallery:
+    http://gallery.rcpp.org
+
+Dirk's Rcpp page: 
+    http://dirk.eddelbuettel.com/code/rcpp.html
+
+GitHub page: 
+    https://github.com/RcppCore/Rcpp
+
+R-forge project page: 
+    http://r-forge.r-project.org/projects/rcpp/
+
+Google+: 
+    https://plus.google.com/b/107029540907667241299/107029540907667241299/posts
+    
+
+
+===== Support =====
+
+Questions about Rcpp should be directed to the Rcpp-devel mailing list
+    https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel
+
+While we prefer the mailing list, StackOverflow has also become a frequently
+used resource under the [rcpp] tag:
+    http://stackoverflow.com/questions/tagged/rcpp
+
+
+
+On behalf of the Rcpp Core team,  
+
+   Dirk Eddelbuettel
+   February 2014
+
+
+
+
+
+
+
+-- 
+Dirk Eddelbuettel | edd at debian.org | http://dirk.eddelbuettel.com
+
+
+From c.bergmeir at decsai.ugr.es  Wed Feb  5 17:27:17 2014
+From: c.bergmeir at decsai.ugr.es (Christoph Bergmeir)
+Date: Wed, 05 Feb 2014 17:27:17 +0100
+Subject: [R-pkgs] New package: RoughSets (v1.0-0)
+Message-ID: <52F26665.7050207@decsai.ugr.es>
+
+Dear R users,
+
+we are happy to announce that a new package, RoughSets, is available on CRAN at
+
+http://cran.r-project.org/web/packages/RoughSets/index.html
+
+It is a comprehensive package for rough set theory and fuzzy rough set theory, with a detailed manual and many demos showing it's use. Here is the description:
+
+This package provides comprehensive implementations of the rough set theory (RST) and the fuzzy rough set theory (FRST), and integrates these two theories into a single package. It provides implementations, not only for the basic concepts of RST and FRST, but also most common methods based on them for handling some tasks such as discretization, feature selection, instance selection, rule induction, and prediction. RST was introduced by Zdzislaw Pawlak in 1982 as a sophisticated mathematical tool based on indiscernibility relations to model and process imprecise or incomplete information. It works on symbolic-valued datasets for tackling the data analysis problems. By using the indiscernibility relation for objects/instances, RST does not require additional parameters to analyze the data. FRST is an extension of RST. The FRST combines concepts of vagueness and indiscernibility that are expressed with fuzzy sets (as proposed by Zadeh, in 1965) and RST.
+
+Any feedback is clearly welcome.
+
+Kind regards,
+Christoph
+
+-- 
+Christoph Bergmeir
+e-mail: c.bergmeir at decsai.ugr.es
+Grupo SCI2S, DiCITS Lab          (http://sci2s.ugr.es/DiCITS)
+Dpto. de Ciencias de la Computacion e Inteligencia Artificial
+E.T.S. Ingenierias de Informatica y Telecomunicacion
+Universidad de Granada
+18071 - GRANADA (Spain)
+
+
+From leodidonato at gmail.com  Wed Feb 26 12:00:16 2014
+From: leodidonato at gmail.com (Leonardo Di Donato)
+Date: Wed, 26 Feb 2014 12:00:16 +0100
+Subject: [R-pkgs] new package: hrr version 1.0.1
+Message-ID: <CAMy00i2vHEZqWeHAprAXhad97eiuLMzPoLeEMrOiyD=OhtTGbg@mail.gmail.com>
+
+Dear R users,
+
+as I often have to visually divide my R output into blocks, especially
+when I create R executable scripts, I created hrr in the hope that
+this simple package might come in handy to you.
+I released it to CRAN today.
+
+It is a simple package to create and print fully customisable
+horizontal rules that fits your terminal windows width.
+It provides two functions:
+
+- `hr` function to create and print horizontal rules
+- `ncols` function to detect the number of terminal window columns and
+optionally set the `width` option
+
+Link to the package: http://cran.r-project.org/web/packages/hrr/index.html
+
+Its source code is located at https://github.com/leodido/hrr and issue
+tracker at https://github.com/leodido/hrr/issues.
+
+Please contact me (leodidonato at gmail.com) with any comments,
+suggestions, and/or
+questions.
+
+Regards,
+--
+Leonardo Di Donato
+
+
+From f.harrell at Vanderbilt.Edu  Tue Mar  4 14:21:37 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Tue, 4 Mar 2014 07:21:37 -0600
+Subject: [R-pkgs] New version of Hmisc package on CRAN
+Message-ID: <5315D361.3000909@vanderbilt.edu>
+
+Recent changes include the following.
+
+Changes in version 3.14-2 (2014-02-26)
+    * latex.default: improved logic using new function in Misc: latexBuild
+	 * latex.default: fixed bug with ctable=TRUE with no caption by 
+removing default label
+    * latex.default: improved formatting for insert.top
+    * latex.default: added tests, fixed insert.bottom
+    * latex.summaryM: return stat summary key as legend attribute, use 
+this according to insert.bottom argument
+    * latex.summary.formula.response: fixed bug related to computation 
+of cdec.  Thanks: Kevin Thorpe
+    * latex.default: added new argument star: ctables uses this to 
+spread over two columns when the LaTeX document is in \twocolumn mode. 
+Thanks:  David Whiting
+
+Changes in version 3.14-1 (2014-02-25)
+    * Added latexNeedle function
+    * Change latexTherm, latexNeedle to use user LaTeX macro \tooltipn 
+to do the pop-up
+    * latex.default: changed line breaks around \end{tabular}
+    * latex.summaryM: put insert.bottom text in minipage so \tooltip 
+will not devote wide space to it
+    * sas.get: added defaultencoding argument and logic (Thanks: 
+Reinhold Koch)
+    * plot.summaryP: omit tick marks for proportion > 1.0
+    * format.df (used by latex): fixed na.blank logic for character var
+    * latex: removed newlines when ending environments, added hyperref 
+argument
+    * latex: added center='centerline', fixed 'centering'
+    * upData, cleanup.import, dataframeReduce: changed argument pr to print
+    * rcspline.eval: added more evasive action in case of extreme ties
+
+Changes in version 3.14-0 (2014-01-22)
+    * Added trans argument to varclus
+    * Removed recode, existsFunction functions, under.unix object, 
+survfitKM, functions used only by S-Plus: comment, mem, mulbar.chart, 
+p.sunflowers
+    * as.category, is.category, untangle.special: removed
+    * Removed reference to .R. from many functions
+    * Remove oldClass, oldUnclass, getFunction
+    * latex.default: changed 'rotate' to 'sideways' for ctable mode. 
+Thanks: Simon Zehnder <szehnder at uni-bonn.de>
+    * gView: removed
+    * ldBands: removed
+    * summaryP: new function - graphical replacement for tables of 
+proportions
+    * ynbind: new function for combining related yes/no variables into a 
+matrix with a label
+    * added file argument to prn
+    * summaryP: added autoarrange
+    * added addMarginal and nobsY functions
+    * pBlock: new function for blocking variables for summaryP
+    * summaryP: changed text positioning to grid absolutes, added 
+text.at argument
+    * scat1d, histSpike: if grid used and y has grid units, fixed logic 
+for frac
+    * plsmo, panel.plsmo: added scat1d.opts argument
+    * label.Surv, units.Surv: added, removed ::: in survival calls
+    * summarize: added keepcolnames argument
+    * Suppressed startup message unless options(Hverbose=TRUE) is set
+    * summaryS: new function - multi-panel lattice xy and dot plots
+    * summaryD: added ylab argument
+    * dotchart3: quit letting left margin be less than pre-existing one
+    * multLines: new function
+    * Improved nobsY to respect subject IDs when counting number of 
+subjects, and to return an attribute 'formula' without id variable; 
+changed bpplotM, summaryP, summaryS to use this
+    * Removed nobsY calculations from bpplotM, summaryP, summaryS, 
+enhanced nobsY to allow stratification by treatment
+    * panel.bpplot: added violin and violin.opts arguments
+    * summaryS: added medvPanel support during-plot vertical violin plots
+    * plot.summaryP: padded x-axis limits
+    * latexTabular: added translate and hline arguments; moved to its 
+own file and help page
+    * latexTherm: added tooltip using LaTeX ocgtools package
+    * summaryP: stopped reversing order of panels
+    * summaryM: added table.env argument, changed how model.frame built
+    * latex.summaryM: changed to print proportions by default, added 
+round='auto'
+    * character.table: added xpd=NA; thanks: Dale
+    * summaryP: added latex method
+    * latex.default: added insert.top argument
+    * summaryM: added stratification (multiple tables)
+
+
+
+-- 
+Frank E Harrell Jr Professor and Chairman      School of Medicine
+                    Department of Biostatistics Vanderbilt University
+
+
+From f.harrell at Vanderbilt.Edu  Tue Mar  4 14:25:26 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Tue, 4 Mar 2014 07:25:26 -0600
+Subject: [R-pkgs] rms package updated
+Message-ID: <5315D446.8000808@vanderbilt.edu>
+
+Changes are listed below.
+
+NOTE: The next release of rms will replace the survfit.formula function 
+with a new function named npsurv ("nonparametric survival estimates") so 
+as to not conflict with the survival package.  This is a 
+NON-DOWNWARD-COMPATIBLE change.  To get Kaplan-Meier estimates in the 
+NEXT release use npsurv() instead of survfit().
+
+The web site for more information about rms is 
+http://biostat.mc.vanderbilt.edu/Rrms
+
+
+Changes in version 4.1-3 (2014-03-02)
+    * num.intercepts: removed (is in Hmisc)
+	 * survfit.formula, cph, psm: changed to use inputAttributes attribute 
+of Surv objects (introduced earlier in survival package so that rms 
+could drop its customized Surv function)
+    * Exported survfit.formula
+    * Changed survival fitting functions and residuals to use units.Surv
+
+Changes in version 4.1-2 (2014-02-28)
+    * psm: Fixed bug to allow computation of Dxy with left censoring
+    * val.prob: Fixed recently introduced bug that made calibration 
+intercept and slope always 0,1.  Thanks: Lars.Engerstrom at lio.se
+    * plot.Predict: added between to leave space between panels
+    * orm.fit: fixed error in kmid calculation when heavy ties at first 
+level of y.  Thanks: Yuwei Zhu
+    * setPb: changed default to now use tktcl to show progress bars for 
+simulations
+    * predictrms: fixed bug with type='terms'
+    * val.surv: handle case where survival estimates=0 or 1 when using 
+log-log transform
+
+Changes in version 4.1-1 (2014-01-22)
+    * Removed use of under.unix in anova.rms, latex.summary, plot.nomogram
+    * Removed use of oldUnclass, oldClass, is.category
+    * Fixed class of Rq object; had failed with bootcov.  Thanks: Max Gordon
+    * survplot: preserved par()
+    * Srv: removed, changed all uses to Surv() for new survival package 
+that preserves attributes for Surv inputs
+    * survplot.survfit, survdiffplot: added conf='diffbands'
+    * predictrms: fixed num. intercepts calculation order
+    * survplot, survdiffplot: used original standard error for 
+survdiffplot, and fun
+    * dyx.cens: allow left-censoring
+
+-- 
+Frank E Harrell Jr Professor and Chairman      School of Medicine
+                    Department of Biostatistics Vanderbilt University
+
+
+From f.harrell at Vanderbilt.Edu  Wed Mar  5 01:00:37 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Tue, 4 Mar 2014 18:00:37 -0600
+Subject: [R-pkgs] New package on CRAN: greport
+Message-ID: <53166925.8050509@vanderbilt.edu>
+
+The first submission of the new greport package is now on CTAN.  This 
+package facilitates graphical reporting of clinical trials an is highly 
+tied to LaTeX, Hmisc, and lattice.  It creates hyperlinks and pop-up 
+tooltips in the resulting pdf report.  Tables are greatly de-emphasized, 
+but hyperlinks take you from primary graphics to supporting tables in an 
+appendix, which are hyperlinked back to the graphic.
+
+The package's web page, with example pdf reports, is at 
+http://biostat.mc.vanderbilt.edu/Greport
+
+-- 
+Frank E Harrell Jr Professor and Chairman      School of Medicine
+                    Department of Biostatistics Vanderbilt University
+
+
+From selcuk.korkmaz at hacettepe.edu.tr  Tue Mar  4 11:34:20 2014
+From: selcuk.korkmaz at hacettepe.edu.tr (Selcuk Korkmaz)
+Date: Tue, 4 Mar 2014 12:34:20 +0200
+Subject: [R-pkgs] =?utf-8?q?_Version_2=2E0_of_MVN_package_on_CRAN=E2=80=8F?=
+In-Reply-To: <C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>
+References: <C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>
+Message-ID: <2F982EDF-097B-46EF-93DC-D31F419DA4E2@hacettepe.edu.tr>
+
+Dear R users,
+
+We are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. 
+
+This package contains three most widely used multivariate normality tests, including Mardia?s, Henze-Zirkler?s and Royston?s Multivariate Normality Tests. 
+In addition these tests, our package has ability to create three multivariate plots. In the earlier version of the package, there was just one plot, which was chi-square Q-Q plot. Now, users can create two new multivariate plots, perspective and contour plots, for binary data sets. 
+
+We have also added a vignette to the package for more depth information.
+
+We are looking forward to getting your useful feedbacks to email selcuk.korkmaz at hacettepe.edu.tr
+
+Best, 
+
+http://cran.r-project.org/web/packages/MVN/index.html
+http://cran.r-project.org/web/packages/MVN/vignettes/MVN.pdf
+
+----------------------------------------------------------
+Selcuk Korkmaz
+Hacettepe University 
+Faculty of Medicine 
+Department of Biostatistics 
+06100 Sihhiye, Ankara/Turkey.
+
+
+From info at aghmed.fsnet.co.uk  Mon Mar 17 15:44:45 2014
+From: info at aghmed.fsnet.co.uk (Michael Dewey)
+Date: Mon, 17 Mar 2014 14:44:45 +0000
+Subject: [R-pkgs] New package metap on CRAN
+Message-ID: <Zen-1WPYmY-000EAo-RD@smarthost01b.mail.zen.net.uk>
+
+This package provides meta-analysis of significance values.
+
+Although the preferred way of performing meta-analysis uses effect 
+sizes sometimes these are unavailable and only p-values can be 
+obtained from the primary studies. The metap package provides several 
+ways of synthesising p-values and a graphical display. There exist a 
+number of packages on CRAN which use one or other of these techniques 
+in the context of genetic studies but metap is designed for general 
+purpose use.
+
+Comments welcome.
+
+
+Michael Dewey
+info at aghmed.fsnet.co.uk
+http://www.aghmed.fsnet.co.uk/home.html
+
+
+From johndharrison0 at gmail.com  Tue Mar 18 02:59:45 2014
+From: johndharrison0 at gmail.com (John Harrison)
+Date: Tue, 18 Mar 2014 08:59:45 +0700
+Subject: [R-pkgs] RSelenium package
+Message-ID: <CALVusX-+YSCo+K3zt=zbt+w6Wthmo_OGkd3-M-hsaoam_ASVzg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140318/82c23d50/attachment.pl>
+
+From jfox at mcmaster.ca  Sat Mar 22 16:01:15 2014
+From: jfox at mcmaster.ca (John Fox)
+Date: Sat, 22 Mar 2014 11:01:15 -0400
+Subject: [R-pkgs] new version of effects package
+Message-ID: <web-502235909@cgpsrv2.cis.mcmaster.ca>
+
+Dear all,
+
+Sandy Weisberg, Michael Friendly, and I would like to announce a new version of the effects package, 3.0-0, now on CRAN; the new version should shortly percolate through the various CRAN mirrors. 
+
+The major enhancement in this version of effects is the ability to plot partial residuals and smoothed partial residuals in effect displays for linear and generalized linear models, generalizing component-plus-residual plots. This new feature provides a visualization of the data against fitted terms in the model (or combinations of predictors) of arbitrary dimension and complexity. See the documentation for the partial.residuals argument in ?Effect and ?plot.eff.
+
+As always, suggestions and reports of problems are appreciated.
+
+Best,
+ John
+
+------------------------------------------------
+John Fox, Professor
+McMaster University
+Hamilton, Ontario, Canada
+http://socserv.mcmaster.ca/jfox/
+
+
+From johndharrison0 at gmail.com  Thu Apr  3 22:03:58 2014
+From: johndharrison0 at gmail.com (John Harrison)
+Date: Fri, 4 Apr 2014 03:03:58 +0700
+Subject: [R-pkgs] rDVR package
+Message-ID: <CALVusX9Guch9jfqPL0+RkD=sd4mktNLVEGvsY87RoWjbqT21YQ@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140404/a389844b/attachment.pl>
+
+From romain at r-enthusiasts.com  Fri Apr 11 14:48:43 2014
+From: romain at r-enthusiasts.com (Romain Francois)
+Date: Fri, 11 Apr 2014 14:48:43 +0200
+Subject: [R-pkgs] Rcpp11 3.1.0 is on CRAN.
+Message-ID: <324CDF70-7468-4A9D-9950-93A809CFB527@r-enthusiasts.com>
+
+Hello, 
+
+R version 3.1.0 was released yesterday, and as always is welcome with great pleasure. One
+of the features that is of particular interest to me is the support for C++11. 
+I would encourage you to read 
+[Writing R Extensions](http://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Using-C_002b_002b11-code)
+to familiarize yourself with 
+what this supports means and how to take advantage of it. C++11 is a major 
+upgrade of the C++ standard, making C++ more expressive, more efficient, more
+fun to use and teach. It almost feels like a new language if you embrace it fully. 
+The standards committee has done a great job of maintaining compatibility, which means
+that code written with older standard will still compile and work. 
+However, with C++11 code you write today and tomorrow will not be the same as code 
+you used to write with C++98. 
+
+To get the best of what C++11 has to offer, I'm releasing Rcpp11 today. Rcpp11
+is a complete redesign of Rcpp, focused on C++11. Rcpp11 is a header only 
+C++ library, distributed as an R package on CRAN, that facilitates embedding 
+C++ code in R packages. 
+
+I'll try to keep this announcement short. More details will follow on dedicated 
+channels. I will just highlight a few aspects of Rcpp11 that are high level 
+enough for such an annoucement. 
+
+Header Only
+===========
+
+Rcpp11 is header only -- it consists only of a set of `.h` files. Rcpp11 has no
+`.cpp` files, and no R functions. This eliminates many problems inherent to 
+binary compatibility that Rcpp has been fighting with for years. 
+
+The recommended way to use Rcpp11 is to have these lines in the `DESCRIPTION` file 
+of your package: 
+
+```
+LinkingTo: Rcpp11
+SystemRequirements: C++11
+```
+
+Modernized code base
+====================
+
+Many features of the original Rcpp code base are the consequence of my 
+learning C++ and the internal API of R. After a few years of experience, I can 
+now admit that mistakes were made while designing it. Unfortunately for reasons
+outside of my control, it is not possible to fix these mistakes under the umbrella
+of the Rcpp package. 
+
+Things are radically different for Rcpp11, which I will maintain. Over the past 
+few months, I have considered many features of the code base and either decided
+to abandon them or upgrade them to the level of expectation we should have for a 
+modern R/C++ interface. 
+
+
+API
+---
+
+Most of what is usually called the API has been retained. I do not guarantee
+low level compatibililty, but there is conceptual compatibility. For example, 
+Rcpp11 contains all the classes we would expect: `NumericVector`, `List`, ...
+
+I'm not going into details about what the individual differences are. Instead I 
+will start documenting how to use the API provided by Rcpp11. 
+
+
+Attributes
+----------
+
+Attributes is probably the best feature that has ever been contributed to Rcpp. It 
+gives a mechanism for decorating C++ functions, parsing these decorations and generating
+scaffolding code around them.  
+
+This feature has not been retained in Rcpp11, but instead has been moved into a 
+new package called [attributes](https://github.com/Rcpp11/attributes), 
+which is being developed and will be released later. 
+
+It is worth mentioning that code generated by Rcpp's `compileAttributes` function
+should be compilable against Rcpp11. When attributes becomes available it will 
+provide a more flexible approach, and provide facilities for package authors to
+implement and use their own attributes.
+
+
+Modules
+-------
+
+Rcpp modules was not retained as part of Rcpp11. This was a hard decision, because
+I invested a lot of time developing the original code behind Rcpp modules. However
+modules have significant problems which make them hard to maintain. Modules are 
+also very demanding on the compiler. 
+
+However, I still believe that the promise of Rcpp modules -- exposing C++ classes 
+at the R level -- is very worthwhile. My plan is to redesign it using a different 
+approach, more oriented towards code generation, ? la attributes. 
+
+
+Time and Date classes
+---------------------
+
+I decided to abandon the classes responsible to handling dates and times. Better 
+classes might be introduced when I'm comfortable with the design. Design 
+documents and pull requests are welcome. 
+
+
+Further discussion
+==================
+
+Please consider subscribing to the R and C++ mailing list that was created a few 
+days ago: https://groups.google.com/forum/#!forum/r-and-cpp
+
+The scope of the mailing list is broader, the intention is to discuss all things 
+R and C++. Questions about Rcpp11, Rcpp or anything related to using C++ and R
+are welcome. As of today, 37 participants are registered. Please consider 
+replying to this annoucement email through the mailing list. 
+
+Rcpp11 is developed through the Rcpp11 organisation on github. Feel free
+to report issues and submit pull requests. https://github.com/Rcpp11/Rcpp11
+
+
+Versioning
+==========
+
+The pattern that has been decided for versions of Rcpp11 is to use the same 
+number as the mininum version of R required. Therefore this initial version
+is Rcpp11 3.1.0 and interim releases might be called 3.1.0.1, 3.1.0.2, etc ...
+
+Documentation
+=============
+
+There is no documentation yet. I personally find the heterogeneous sources
+of documentation for Rcpp to be confusing. I have three goals in terms of 
+documentation for Rcpp11:
+
+ - An article is being written. This will be a casual introduction to 
+   interesting features of C++11 and Rcpp11.
+ - API documentation. My goal is to have a website that will make easy to 
+   browse internal documentation (what to do with a NumericVector, ...) similar
+   to cplusplus.com or something. 
+ - I have started working on a R and C++ book. As I personally consider that 
+   C++ = C++11 from now on, the book will mainly cover uses cases of Rcpp11. 
+
+I hope to that between now and useR this year, I will make progress on the 2 first 
+items of the previous list. 
+
+Licensing
+=========
+
+Rcpp11 is licensed under the MIT license.
+
+Future
+======
+
+This is the first release, it has required a lot of time and effort from me and
+Kevin Ushey who has stepped in as a regular contributor to the package. 
+
+This sets us with a new foundation for interfacing R and C++ for years to come. 
+Many features of C++11 such as regular expressions and threads have not been 
+leveraged yet with this initial release. 
+
+C++ is more alive than ever, a new minor update of the standard is likely to 
+be released this year and supported at day 0 by popular compilers. At this point
+I do not anticipate to start working on a Rcpp14 package. 
+
+In a few years (the ETA is currently 2017), a new major version of the C++ standard
+will be released. It is too soon to say if it will be worthwhile to have a Rcpp17, 
+but from a casual reading of the expected features, I'd say it is likely. 
+
+I sincerely hope you will enjoy working with Rcpp11.
+
+Romain
+
+
+From Virginie.Rondeau at isped.u-bordeaux2.fr  Tue Apr  8 09:09:48 2014
+From: Virginie.Rondeau at isped.u-bordeaux2.fr (Rondeau Virginie)
+Date: Tue, 08 Apr 2014 09:09:48 +0200
+Subject: [R-pkgs] frailtypack package 2.6
+Message-ID: <5343A0BC.9040105@isped.u-bordeaux2.fr>
+
+Un texte encapsul? et encod? dans un jeu de caract?res inconnu a ?t? nettoy?...
+Nom : non disponible
+URL : <https://stat.ethz.ch/pipermail/r-packages/attachments/20140408/b96a1202/attachment.pl>
+
+From f.harrell at Vanderbilt.Edu  Thu Apr 17 02:01:53 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Wed, 16 Apr 2014 19:01:53 -0500
+Subject: [R-pkgs] Updates to Hmisc, rms, and greport packages
+Message-ID: <534F19F1.1050905@vanderbilt.edu>
+
+The Hmisc package has had a number of updates/fixes:
+
+Changes in version 3.14-4 (2014-04-13)
+    * rcspline.eval: stop new logic for ignoring outer values when there 
+are many ties when there are also many ties on interior values.  Added 
+new logic to use interior unique values of x when the number of unique x 
+is small.
+    * latexBuild: generalized with insert argument
+    * latex.default: modified to use mods of latexBuild, fixed bug with 
+caption.loc='bottom' (thanks: YacineH)
+    * latex.default: fixed bug where comma did not appear after 
+caption={} for ctable (thanks: Johannes Hofrichter)
+    * tests: fit.mult.impute.bootstrap.r: added new example (thanks: 
+Jane Cook)
+    * fit.mult.impute: added call for fit.mult.impute in returned 
+object, replacing call from fitter; makes update work for fit.mult.impute
+    * summary.formula: fixed recognition of multiple left-hand-side 
+variables to trigger call to summaryM (thanks: Kevin Thorpe)
+    * summaryM: changed group label to '' instead of 0 for formulas like 
+age + sex ~ 1
+    * Ecdf: added what argument to all functions
+    * nobsY: return constructed id vector
+    * addMarginal: instead of .marginal. being logical, make it contain 
+names of variables being marginalized over
+    * mChoice.c: fixed some inconsistencies
+
+The rms package has also had some changes, and the survfit.formula 
+function has been REMOVED, replaced by the npsurv function:
+
+Changes in version 4.2-0 (2014-04-13)
+    * Deprecated survfit.formula so would not overlap with function in 
+survival
+    * Added function npsurv, survplot.npsurv
+    * REMOVED survfit.formula
+    * Used new type argument to label.Surv for fitting functions
+    * cph: added weights argument to residuals.coxph (Thanks: Thomas Lumley)
+    * survfit.cph: fixed bug in using wrong type variable.  Thanks: 
+Zhiyuan Sun
+    * cph: added weighted=TRUE in call to residuals.coxph (Thanks: T Lumley)
+    * orm.fit: improved ormfit to not try to deal with NaN in V, 
+assuming that step-halving will happen
+
+Some improvements have been made in the greport package:
+
+Changes in version 0.5-1 (2014-04-15)
+    * survReport: changed to use npsurv instead of survfit.formula
+	 * exReport: changed order of output so that analysis of randomized 
+patients marked for exclusions appears last; use LaTeX chngpage package 
+to allow detailed table to go into left margin so as to be centered on page
+    * exReport: added adjustwidth argument
+	 * accrualReport: allowed enrollment target N to be omitted
+    * exReport: fine tuning
+    * nriskReport: new report to show number of subjects still being 
+followed at each day
+	 * Merge: added support for data.table
+    * nriskReport: added id() variable
+    * exReport: fixed bug when there is an exclusion with 0 frequency
+    * accrualReport: improved graphics formatting, added minrand argument
+    * accrualReport: added enrollmax argument, clarified notation
+    * exReport: added ignoreExcl, ignoreRand arguments
+    * all: added greportOption texwhere; default is 'gentex'; can 
+specify texwhere='' to write non-appendix LaTeX code to console as for knitr
+    * dReport: for byx for discrete Y, sense when Y is binary and use 
+Wilson interval instead of bootstrap; adjust SE using confidence 
+interval if proportion is 0 or 1
+    * dReport: changed discreteness non-binary classification to use 
+maximum number of unique values or Y instead of minimum
+    * add globalVariables call to nriskReport
+
+
+-- 
+Frank E Harrell Jr Professor and Chairman      School of Medicine
+                    Department of Biostatistics Vanderbilt University
+
+
+From kogalurshear at gmail.com  Tue May 13 15:47:51 2014
+From: kogalurshear at gmail.com (Udaya B. Kogalur)
+Date: Tue, 13 May 2014 09:47:51 -0400
+Subject: [R-pkgs] randomForestSRC 1.5.0 is on CRAN
+Message-ID: <CACsjJ_f88r40YronnvYVjdsdtTOkjvRczRSGU+p6-Y6OqDDO+g@mail.gmail.com>
+
+DeaR useRs:
+
+Version 1.5.0 of the package randomForestSRC is now on CRAN.
+
+>From the NEWS file:
+---------------------------------------------------------------------------------
+Changes to RELEASE 1.5.0
+
+Significant improvements to CPU and RAM usage profiles in serial and
+OpenMP modes of execution.  Proximity options allow inbag, oob and
+all.  VIMP implements subsetting and conditional variable importance.
+NA options allow the split statistic to be based on non-missing values
+only.  In addition it allows random assignment of missing values.
+---------------------------------------------------------------------------------
+
+Thank you.
+
+Udaya B. Kogalur, Ph.D.
+Adjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation
+
+kogalurshear at gmail.com
+www.kogalur.com
+
+
+From hfang.shanghai at gmail.com  Wed May 21 13:06:16 2014
+From: hfang.shanghai at gmail.com (Hai Fang)
+Date: Wed, 21 May 2014 12:06:16 +0100
+Subject: [R-pkgs] Package 'dnet' for omics data integrative analysis
+Message-ID: <CAF-SqYFLZ_ob_E-1yyZMChbkDAEuVZVTWcq3tHuH76DVhkwroQ@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl>
+
+From arne.henningsen at gmail.com  Sat Jun 28 09:01:49 2014
+From: arne.henningsen at gmail.com (Arne Henningsen)
+Date: Sat, 28 Jun 2014 09:01:49 +0200
+Subject: [R-pkgs] sampleSelection 1.0 released
+Message-ID: <CAMTWbJgf8Ts96RDca7PCP=+ZXaad=sf1WVk1AaAZRTmeAmEYVg@mail.gmail.com>
+
+Dear All
+
+The recently released version of the sampleSelection package [1] has
+the version number 1.0, because we consider the package now to be
+mature and feature-complete. Compared to version 0.6 of the
+sampleSelection package (which is described in an article in the
+Journal of Statistical Software [2]), the new version has, for
+instance, following new features:
+
+* estimation of binary-outcome selection models
+
+* probit models, tobit-2 models, and binary-outcome selection models
+can now be estimated with observation-specific weights
+
+* predict() methods for calculating unconditional and conditional expectations
+
+* improved/extended residuals() methods
+
+* logLik() methods
+
+* nobs() and nObs() methods
+
+* default df.residual() method works
+
+* removed the deprecated function tobit2()
+
+Any kind of feedback is--as always--very welcome, preferable via R-Forge [3]!
+
+Best regards,
+Ott and Arne
+
+[1] http://cran.r-project.org/package=sampleSelection
+
+[2] http://www.jstatsoft.org/v27/i07/
+
+[3] http://r-forge.r-project.org/projects/sampleselection/
+
+-- 
+Arne Henningsen
+http://www.arne-henningsen.name
+
+
+From jack at jackwasey.com  Tue Jun 24 04:06:59 2014
+From: jack at jackwasey.com (Jack Wasey)
+Date: Tue, 24 Jun 2014 02:06:59 -0000
+Subject: [R-pkgs] icd9 - a new R package
+Message-ID: <CA+zP7HEU9Ny4_t4kDS=CFwPM5KhQ3nyMUOGMDCZ8HM3miFDgWg@mail.gmail.com>
+
+Dear R people,
+
+The new packge 'icd9' provides a range of tools for working with ICD-9-CM codes.
+
+http://cran.r-project.org/web/packages/icd9/index.html
+https://github.com/jackwasey/icd9
+
+ICD-9 (clinical modification) is primarily used for categorizing
+diseases in the USA for hospital administration, whereas ICD-10 is
+used by the rest of the world for disease surveillance. This package
+is currently restricted to ICD-9-CM codes.
+
+I've seen other R code which manipulates ICD-9 codes, but the mistake
+is often made of thinking they are numeric. This is not the case, e.g.
+100.0 is different from 100 and 100.00 . This package takes care of
+validating these codes, explaining them (converting code to plain
+English), comparing them, and attributing codes to groups of codes to
+assign co-morbidities to patients. ICD-9 codes are often provided in a
+shortened format without a decimal place, and these have distinct
+validation rules. Functions to convert between decimal and short forms
+are provided. All key parts use vectorized code, and comorbidities for
+a million patient visits can be assigned in a few seconds on a modest
+workstation.
+
+SAS code is published by AHRQ to allow assignment of ICD-9 codes to
+comorbidities. This package contains some SAS source to R code
+translation, so that the canonical ICD-9-CM to comorbidity mapping
+provided by AHRQ can be derived directly without the cumbersome and
+error-prone manual task of re-encoding the relationships in R. I
+believe a SAS to R converter was an April Fools' joke some time ago,
+but this is indeed a very limited answer to that problem.
+http://www.biostatistics.dk/sas2r/index.html
+
+A short vignette covers the major use-cases.
+http://cran.r-project.org/web/packages/icd9/vignettes/icd9.pdf
+
+The code is supported by a fairly thorough test suite, and is well
+documented in the hope that it will be easier for users of the package
+to understand it, and to get involved. I chose only to export key
+functions where I had thought carefully about the external API, but
+all internal functions are documented and contain potentially useful
+nuggets for power users.
+
+Comments and contributions are most welcome. In particular, I'd love
+to see unit tests corresponding to any failures you may encounter
+working with your own ICD-9 data.
+
+Hope you find this useful.
+Jack
+
+--
+Jack Wasey
+Resident Physician, Anesthesiology and Critical Care Medicine
+Johns Hopkins Hospital
+Baltimore, MD, USA
+
+
+From srisatish at 0xdata.com  Sun Jun 29 03:59:40 2014
+From: srisatish at 0xdata.com (SriSatish Ambati)
+Date: Sat, 28 Jun 2014 18:59:40 -0700
+Subject: [R-pkgs] h2o - fast scalable glm, deeplearning, gbm, randomForest,
+ plyr for big datasets
+Message-ID: <CAFC-x4a_sp-5LN_KxJnO4w=PR+yn1KS7Na-c1NqVcB4VO33nUg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140628/b5c8e19d/attachment.pl>
+
+From mail at p-roocks.de  Tue Aug  5 12:48:17 2014
+From: mail at p-roocks.de (Patrick Roocks)
+Date: Tue, 5 Aug 2014 12:48:17 +0200
+Subject: [R-pkgs] rPref - new package for preferences and Skylines
+Message-ID: <53E0B671.8000801@p-roocks.de>
+
+rPref is a new package for Skyline computation and some slight 
+generalizations (database preferences).
+
+The Skyline of a dataset selects tuples which are Pareto-optimal with 
+respect to given optimization goals. Only those tuples are returned, 
+which are not dominated by any other tuple. A tuple dominates another 
+tuple if it is better than another tuple in all relevant dimensions 
+(strictly better at least in one dimension).
+
+rPref offers efficient Skyline computation (algorithms are in C++) and 
+some related stuff (e.g. maxima of other preference orders, top-k 
+preference selection, some tools for visualization).
+
+Find more information and examples at: http://www.p-roocks.de/rpref
+
+Feel free to send a mail to me for suggestions, bug reports, etc.
+
+Patrick
+
+
+From kemphillips at comcast.net  Tue Aug  5 14:31:29 2014
+From: kemphillips at comcast.net (Kem Phillips)
+Date: Tue, 5 Aug 2014 08:31:29 -0400
+Subject: [R-pkgs] New version of the symmoments package
+Message-ID: <004701cfb0a9$2f051ea0$8d0f5be0$@comcast.net>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl>
+
+From emmanuel.blondel1 at gmail.com  Thu Aug 28 18:06:49 2014
+From: emmanuel.blondel1 at gmail.com (Emmanuel Blondel)
+Date: Thu, 28 Aug 2014 18:06:49 +0200
+Subject: [R-pkgs] rsdmx - a package to read SDMX data and metadata
+Message-ID: <53FF5399.6060209@gmail.com>
+
+Dear all,
+
+The rsdmx package has been published in CRAN 
+http://cran.r-project.org/web/packages/rsdmx/index.html.
+rsdmx allows to read SDMX (Statistical Data and Metadata EXchange) data 
+and metadata files, available in SDMX-ML format (XML).
+
+For your information, its source code is managed at the following 
+repository https://github.com/opensdmx/rsdmx
+
+The current version is 0.3, and a change history is available at: 
+https://github.com/opensdmx/rsdmx/wiki/Change-History. I also recommend 
+to check out the rsdmx wiki page available at: 
+https://github.com/opensdmx/rsdmx/wiki
+
+I sincerely hope you will enjoy working with rsdmx. Feel free to contact 
+me for questions or other feedback,
+
+Emmanuel
+
+
+From fabian.krueger83 at gmail.com  Fri Sep 12 10:15:34 2014
+From: fabian.krueger83 at gmail.com (Krueger, Fabian)
+Date: Fri, 12 Sep 2014 10:15:34 +0200
+Subject: [R-pkgs] New R package ``bvarsv''
+Message-ID: <5412ABA6.5080808@gmail.com>
+
+Dear R users,
+
+please let me draw your attention to my new R package bvarsv (on CRAN 
+since August 28) which implements the Primiceri (Review of Economic 
+Studies, 2005) vector autoregressive model. The model is popular in 
+macroeconomic analysis as it allows to model instabilities (e.g. in the 
+mean and volatility dynamics) that are often observed in macroeconomic 
+time series like inflation.
+
+The package provides functionality for Bayesian analysis of the 
+Primiceri model. To the best of my knowledge, it is the only publicly 
+available R code to do so. The underlying Markov Chain Monte Carlo 
+algorithm is computationally challenging, since each iteration requires 
+multiple calls of a recursive Kalman filter type algorithm. Therefore, 
+bvarsv relies on C++ code ported to R via Rcpp and RcppArmadillo. The 
+clear focus of the package is on forecasting, as opposed to structural 
+analysis of economic relationships. The package allows to compute 
+posterior predictive distributions, which can then be plotted and 
+analyzed using forecast evaluation techniques. More detailed 
+documentation and examples is available here:
+
+https://sites.google.com/site/fk83research/code
+
+Your feedback on any aspects of the package, as well as possible 
+improvements or extensions, would be highly appreciated.
+
+Thank you and best wishes,
+Fabian Kr?ger
+
+
+From friendly at yorku.ca  Sun Sep 14 16:41:04 2014
+From: friendly at yorku.ca (Michael Friendly)
+Date: Sun, 14 Sep 2014 10:41:04 -0400
+Subject: [R-pkgs] Announce: Lahman baseball database archive package, v 3.0
+Message-ID: <5415A900.8000406@yorku.ca>
+
+Dear list
+
+Version 3.0-1 of the Lahman package was recently submitted to CRAN. It 
+contains the
+the tables from Sean Lahman's  Baseball Database,
+http://www.seanlahman.com/baseball-archive/statistics/
+as a set of R data.frames with examples of use.
+
+V 3.0 provides the updated data on pitching, hitting and fielding 
+performance and other tables from 1871
+through 2013, as recorded in the 2014 version of the database.  The 
+Lahman project has a home page
+at http://lahman.r-forge.r-project.org/ with some additional examples.  
+Additional links to other
+applications or analyses of this database are invited.
+
+If you have used the earlier v. 2.0-x package in scripts or examples, 
+please note that the database schema
+has been somewhat revised to regularize the use of player ID variables 
+across the various tables, and
+remove some redundant variables, so some scripts may need to be 
+revised.  In particular:
+
+   o HallOfFame$hofID is now HallOfFame$playerID
+   o managerID is now playerID in all tables
+   o Removed from Master: managerID, hofID, holtzID, lahmanID, 
+lahman40ID, lahman45ID, nameNote, nameNick, and college
+
+-Michael
+
+-- 
+Michael Friendly     Email: friendly AT yorku DOT ca
+Professor, Psychology Dept. & Chair, Quantitative Methods
+York University      Voice: 416 736-2100 x66249 Fax: 416 736-5814
+4700 Keele Street    Web:http://www.datavis.ca
+Toronto, ONT  M3J 1P3 CANADA
+
+
+From jwijffels at bnosac.be  Fri Sep 19 14:01:28 2014
+From: jwijffels at bnosac.be (Jan Wijffels)
+Date: Fri, 19 Sep 2014 14:01:28 +0200
+Subject: [R-pkgs] RMOA data stream modelling using MOA (Massive Online
+	Analysis)
+Message-ID: <CAJ9GNa=7X6YDaCFu3JOHdg2S15_VKUvdGaUkWiQ73Z7jBhcD7w@mail.gmail.com>
+
+Dear R community,
+
+For users interested in streaming classification or building classification
+models with limited amounts of RAM on your whole data set, I would like to
+announce the release of a new package called RMOA on CRAN (
+http://cran.r-project.org/web/packages/RMOA).
+
+MOA is the most popular open source framework for data stream mining and is
+being developed at the University of Waikato: http://moa.cms.waikato.ac.nz.
+RMOA interfaces with MOA version 2014.04 and focusses on building streaming
+classification & regression models on data streams (the stream package in R
+already allows clustering).
+
+Classification models which are possible through RMOA are:
+
+- Classification trees:
+  * AdaHoeffdingOptionTree
+  * ASHoeffdingTree
+  * DecisionStump
+  * HoeffdingAdaptiveTree
+  * HoeffdingOptionTree
+  * HoeffdingTree
+  * LimAttHoeffdingTree
+  * RandomHoeffdingTree
+- Bayesian classification:
+  * NaiveBayes
+  * NaiveBayesMultinomial
+- Active learning classification:
+  * ActiveClassifier
+- Ensemble (meta) classifiers:
+  * Bagging
+      + LeveragingBag
+      + OzaBag
+      + OzaBagAdwin
+      + OzaBagASHT
+  * Boosting
+      + OCBoost
+      + OzaBoost
+      + OzaBoostAdwin
+  * Stacking
+      + LimAttClassifier
+  * Other
+      + AccuracyUpdatedEnsemble
+      + AccuracyWeightedEnsemble
+      + ADACC
+      + DACC
+      + OnlineAccuracyUpdatedEnsemble
+      + TemporallyAugmentedClassifier
+      + WeightedMajorityAlgorithm
+
+Interfaces are implemented to model data in standard files (csv, txt,
+delimited), ffdf data (from the ff package), data.frames and matrices.
+
+Documentation of MOA directed towards RMOA users can be found at
+http://jwijffels.github.io/RMOA/
+Examples on the use of RMOA can be found in the documentation, on github at
+https://github.com/jwijffels/RMOA or e.g. by viewing the showcase at
+http://bnosac.be/index.php/blog/32-rmoa-massive-online-data-stream-classifications-with-r-a-moa
+
+I you have any remarks or requests, don't hesitate to get into contact.
+
+stream on,
+Jan
+
+
+Jan Wijffels
+Statistical Data Miner
+www.bnosac.be  | +32 486 611708
+
+	[[alternative HTML version deleted]]
+
+
+From f.harrell at Vanderbilt.Edu  Fri Sep 19 18:56:38 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Fri, 19 Sep 2014 11:56:38 -0500
+Subject: [R-pkgs] CRAN submission of Hmisc 3.14-5
+Message-ID: <541C6046.1060602@vanderbilt.edu>
+
+An update to the Hmisc package is now on CRAN.  Some recent changes:
+
+    * latex.summaryM: fixed bug in caption with test=TRUE.  Thanks: 
+Yonghao Pua
+    * combined.levels: sensed all NA vector, now return non-factor 
+numeric instead
+    * dataframeReduce: handle all-NA factor variable
+    * subplot: replaced with latest version from TeachingDemos package 
+by Greg Snow
+    * latexTabular: fixed error in example in help file; result is not a 
+file
+    * latex: another test added in tests/latex.s
+    * summaryP: removed observations with a right-hand-side variable missing
+    * latex.summaryP: fixed bug with wrong column labels due to reshape 
+reordering columns coming from factor levels alphabetically instead of 
+by original levels
+    * format.df: added % & <= >= to list of characters handled, the last 
+two by going into math mode
+    * latex.summaryP: use blank if denominator 0, instead of NaN
+    * summary.formula: fixed problem with deparse formula.  Thanks: 
+Andreas Kiermeier
+    * describe: added relative information measure for numeric variables 
+- a measure of how continuous the variable is
+    * wtd.table: detect duplications using duplicated() instead of 
+diff(x) to handle Inf.  Thanks: Benjamin Tyner
+    * DESCRIPTION, NAMESPACE: multiple function changes to work in R-devel
+
+See http://biostat.mc.vanderbilt.edu/Hmisc, 
+https://github.com/harrelfe/Hmisc for more information.
+
+Frank Harrell
+Vanderbilt University
+
+
+From f.harrell at Vanderbilt.Edu  Fri Sep 19 19:00:52 2014
+From: f.harrell at Vanderbilt.Edu (Frank Harrell)
+Date: Fri, 19 Sep 2014 12:00:52 -0500
+Subject: [R-pkgs] CRAN update: rms 4.2-1
+Message-ID: <541C6144.2030204@vanderbilt.edu>
+
+An update to the rms package is now on CRAN.  Some recent changes:
+
+    * plot.summary.rms: allowed a vector for lwd, and passed lwd to 
+confbar.  Thanks: Michael Friendly
+    * gendata: Starting in R 3.1.0, as.data.frame.labelled or 
+as.data.frame.list quit working when length vary; workaround
+    * predictrms, ols: handle offset in formula.  Thanks: Max Gordon
+    * pentrace: neatened code, added new argument noaddzero if user 
+wants to prevent unpenalized model from being tried; add new test script 
+in tests
+    * bplot: fixed bug whereby xlabrot was ignored.  Thanks: Sven 
+Krackow <sven.krackow at gmail.com>; new test for bplot in tests directory
+    * plot.Predict: fixed bug in which 2nd argument to perim was not correct
+    * validate.ols: Shane McIntosh fixed the passing of the tolerance 
+argument to predab.resample
+    * predictrms: computed offset earlier so always defined no matter 
+the value of type
+    * plot.Predict: added scaletrans argument, fixed use of subscripts 
+in pan
+    * lrm, lrm.fit: added scale argument
+    * orm, orm.fit: added scale argument
+    * vcov.orm: accounted for scale when extracting covariance matrix
+    * npsurv: was not passing type argument
+    * npsurv: start storing all classes created by survfit.formula
+    * logLik.Gls: added.  Makes AIC(Gls object) work.
+    * NAMESPACE: several changes
+
+
+See http://biostat.mc.vanderbilt.edu/rms and 
+https://github.com/harrelfe/rms for more information.
+
+Frank Harrell
+Vanderbilt University
+
+
+From davidhughjones at gmail.com  Thu Nov  6 12:22:55 2014
+From: davidhughjones at gmail.com (David Hugh-Jones)
+Date: Thu, 6 Nov 2014 11:22:55 +0000
+Subject: [R-pkgs] anim.plots - simple animated plots for R
+Message-ID: <CAARY7kiMGUJrTG1t2omQBgYSGa3JS3L89QEvmfscv3Gxa_Trtw@mail.gmail.com>
+
+Announcing the first release of anim.plots, a package for simple animated
+plots in R, using Yihui Xie's animation package.
+
+http://cran.r-project.org/web/packages/anim.plots/index.html
+
+Functions are very similar to basic R graphics. Currently the package
+includes animated versions of plot, barplot, persp, contour,
+filled.contour, hist, curve, points, lines, text, symbols, segments, and
+arrows.
+
+There's a brief introduction here:
+http://davidhughjones.blogspot.co.uk/2014/10/easy-animations-in-r.html
+
+And an HTML presentation:
+http://hughjonesd.github.io/anim-plots-presentation.html
+
+Code is hosted on GitHub:
+https://github.com/hughjonesd/anim.plots
+
+Cheers,
+David
+
+	[[alternative HTML version deleted]]
+
+

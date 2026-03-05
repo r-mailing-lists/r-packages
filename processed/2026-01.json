@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2026-01",
+  "messages": [
+    {
+      "id": "msg-580c39a99996",
+      "message_id": "<GV2PR03MB8582AE221696CAAECBC9D934F8B8A@GV2PR03MB8582.eurprd03.prod.outlook.com>",
+      "from_name": "Antoine Soetewey",
+      "from_email_hash": "e164100ee1af610da43c8b3cc48f1a602d7879e34f211dca52b390f49fdc74b2",
+      "date": "2026-01-09T11:58:25Z",
+      "subject": "[R-pkgs] New package: AssociationExplorer2",
+      "subject_clean": "New package: AssociationExplorer2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-packages community,\n\nI would like to announce the release of a new R package, AssociationExplorer2, now available on CRAN.\n\nAssociationExplorer2 provides a user-friendly Shiny application for exploratory analysis of associations in multivariate datasets. It supports both quantitative and qualitative variables and automatically selects appropriate association measures (Pearson?s r, Cramer?s V, and correlation ratio). Results are presented through an interactive correlation network and bivariate visualizations, making the package particularly suitable for exploratory data analysis, teaching, data journalism, and public communication.\n\nAn accompanying paper describing the methodology and design of the package has been published in SoftwareX:\nhttps://doi.org/10.1016/j.softx.2025.102483\n\nCRAN page:\n<https://cran.r-project.org/package=AssociationExplorer2>https://CRAN.R-project.org/package=AssociationExplorer2<https://cran.r-project.org/package=AssociationExplorer2>\n\nSource code and documentation:\nhttps://github.com/AntoineSoetewey/AssociationExplorer2\n\nI hope this package will be useful to the community, and please feel free to contact me if you have any feedback or suggestions.\n\nBest regards,\nAntoine Soetewey\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-packages community,\n\nI would like to announce the release of a new R package, AssociationExplorer2, now available on CRAN.\n\nAssociationExplorer2 provides a user-friendly Shiny application for e",
+      "thread_id": "thread-580c39a99996",
+      "thread_depth": 0,
+      "month": "2026-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-580c39a99996",
+      "subject": "New package: AssociationExplorer2",
+      "message_count": 1,
+      "participants": [
+        "Antoine Soetewey"
+      ],
+      "started": "2026-01-09T11:58:25+00:00",
+      "last_reply": "2026-01-09T11:58:25+00:00",
+      "root_message_id": "msg-580c39a99996"
+    }
+  ]
+}

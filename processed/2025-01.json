@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2025-01",
+  "messages": [
+    {
+      "id": "msg-6f7022c76a2e",
+      "message_id": "<CANBF2awsFFWuB6YjwxZuZSEtrC0beevxR_GqpMqX+_NMtS3Uew@mail.gmail.com>",
+      "from_name": "Niels van der Velden",
+      "from_email_hash": "2abe75a1a26766a18ef4c0131a2459beccdaf0be19ac461dd9d5c8f864ee6b7c",
+      "date": "2025-01-13T12:05:46-04:00",
+      "subject": "[R-pkgs] Announcing geneviewer v0.1.10 Now Available on CRAN",
+      "subject_clean": "Announcing geneviewer v0.1.10 Now Available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that {geneviewer*}* v0.1.10 is now on CRAN.\n\n*{geneviewer}* is an R package for plotting gene clusters and transcripts.\nIt imports data from GenBank, FASTA, and GFF files, performs BlastP and\nMUMmer alignments, and displays results on gene arrow maps. The package\noffers extensive customization options, including legends, labels,\nannotations, scales, colors, tooltips, and more.\n\n   - *CRAN:* https://cran.r-project.org/web/packages/geneviewer/index.html\n   - *GitHub Repository:* https://github.com/nvelden/geneviewer\n   - *Package website:  *https://nvelden.github.io/geneviewer/\n   <https://github.com/nvelden/geneviewer/issues>\n   - *Bug Reports:* https://github.com/nvelden/geneviewer/issues\n\nI hope you find {*geneviewer}* helpful.\n\nPlease feel free to reach out with feedback or questions.\n\nThanks,\n\nNiels van der Velden\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am happy to announce that {geneviewer*}* v0.1.10 is now on CRAN.\n\n*{geneviewer}* is an R package for plotting gene clusters and transcripts.\nIt imports data from GenBank, FASTA, and GFF f",
+      "thread_id": "thread-6f7022c76a2e",
+      "thread_depth": 0,
+      "month": "2025-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6f7022c76a2e",
+      "subject": "Announcing geneviewer v0.1.10 Now Available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Niels van der Velden"
+      ],
+      "started": "2025-01-13T12:05:46-04:00",
+      "last_reply": "2025-01-13T12:05:46-04:00",
+      "root_message_id": "msg-6f7022c76a2e"
+    }
+  ]
+}

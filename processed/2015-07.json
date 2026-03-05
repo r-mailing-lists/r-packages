@@ -1,0 +1,65 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-07",
+  "messages": [
+    {
+      "id": "msg-9a1b93ae7ca2",
+      "message_id": "<BLUPR04MB0069C4B94C006A47B24755D80A80@BLUPR04MB006.namprd04.prod.outlook.com>",
+      "from_name": "Hu, Yue",
+      "from_email_hash": "10e42f5e83c6f4c9e93db408150cbfeae80aa554f0ddfe2fe0e067ca415a897d",
+      "date": "2015-07-01T21:58:25Z",
+      "subject": "[R-pkgs] interplot: a new package for visualizing interactive effects",
+      "subject_clean": "interplot: a new package for visualizing interactive effects",
+      "in_reply_to": "<BLUPR04MB006BED96EBDD7488D18FE2280A80@BLUPR04MB006.namprd04.prod.outlook.com>",
+      "references": [
+        "<BLUPR04MB006BED96EBDD7488D18FE2280A80@BLUPR04MB006.namprd04.prod.outlook.com>"
+      ],
+      "body_plain": "Dear colleagues,\n\nWe just published a package, \"interplot\",  in CRAN. It can be used to plots the conditional coefficients (\"marginal effects\") of variables included in multiplicative interaction terms for various models.  The installation instruction and more details about the package are available in http://cran.r-project.org/web/packages/interplot/vignettes/interplot-vignette.html.\n\nPlease contact me with any questions, bug reports, and comments.\n\nBest,\n\nHu, Yue\nPh.D. Student, Political Science,\nUniversity of Iowa,\n313 Schaeffer Hall,\n20E Washington St.,\nIowa City, IA, 52242.\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nWe just published a package, \"interplot\",  in CRAN. It can be used to plots the conditional coefficients (\"marginal effects\") of variables included in multiplicative interaction term",
+      "thread_id": "thread-9a1b93ae7ca2",
+      "thread_depth": 0,
+      "month": "2015-07"
+    },
+    {
+      "id": "msg-cb7c2f8763ea",
+      "message_id": "<55ae3574.8261b40a.5d367.66b4@mx.google.com>",
+      "from_name": "amgv0009 at red.ujaen.es",
+      "from_email_hash": "43253ea3c2502b0caf9f5b9892a4a6cb73a768fecbc8c4917a9ac464101f08a2",
+      "date": "2015-07-21T12:04:22Z",
+      "subject": "[R-pkgs] SDR package for Subgroup Discovery on CRAN",
+      "subject_clean": "SDR package for Subgroup Discovery on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Package SDR for subgroup discovery data mining is available on CRAN now. \n\n\n\n\n\nMore info of the package on the CRAN page:\n\nhttps://cran.r-project.org/web/packages/SDR/index.html\n\n\n?ngel.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Package SDR for subgroup discovery data mining is available on CRAN now. \n\n\n\n\n\nMore info of the package on the CRAN page:\n\nhttps://cran.r-project.org/web/packages/SDR/index.html\n\n\n?ngel.\n\t[[alternativ",
+      "thread_id": "thread-cb7c2f8763ea",
+      "thread_depth": 0,
+      "month": "2015-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9a1b93ae7ca2",
+      "subject": "interplot: a new package for visualizing interactive effects",
+      "message_count": 1,
+      "participants": [
+        "Hu, Yue"
+      ],
+      "started": "2015-07-01T21:58:25+00:00",
+      "last_reply": "2015-07-01T21:58:25+00:00",
+      "root_message_id": "msg-9a1b93ae7ca2"
+    },
+    {
+      "id": "thread-cb7c2f8763ea",
+      "subject": "SDR package for Subgroup Discovery on CRAN",
+      "message_count": 1,
+      "participants": [
+        "amgv0009 at red.ujaen.es"
+      ],
+      "started": "2015-07-21T12:04:22+00:00",
+      "last_reply": "2015-07-21T12:04:22+00:00",
+      "root_message_id": "msg-cb7c2f8763ea"
+    }
+  ]
+}

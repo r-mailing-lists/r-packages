@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-09",
+  "messages": [
+    {
+      "id": "msg-f732ffc733ad",
+      "message_id": "<SN4P106MB014480742C9B8DCA49C094B1FD7A9@SN4P106MB0144.NAMP106.PROD.OUTLOOK.COM>",
+      "from_name": "Zhu, Yalin",
+      "from_email_hash": "5a613266f0c0c4f10d2ee2998e4f37b1ea40d848dd26d1c0b1bb80138e4533c5",
+      "date": "2022-09-02T14:26:11Z",
+      "subject": "[R-pkgs] gMCPLite: Lightweight Graph Based Multiple Comparison Procedures",
+      "subject_clean": "gMCPLite: Lightweight Graph Based Multiple Comparison Procedures",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that {gMCPLite} is now on CRAN. It is a lightweight fork of {gMCP} for graph-based multiple comparison procedures, with {ggplot2} multiplicity graph visualizations, graphical testing for group sequential design workflows, and essential unit testing.\n\nI hope you find it helpful. Please feel free to reach out with feedbacks or questions.\n\nCRAN: https://cran.r-project.org/package=gMCPLite \nDocumentation: https://merck.github.io/gMCPLite/ \n\n-Yalin Zhu\n\nThis e-mail message, together with any attachments, cont...{{dropped:10}}",
+      "body_snippet": "Dear all,\n\nI am happy to announce that {gMCPLite} is now on CRAN. It is a lightweight fork of {gMCP} for graph-based multiple comparison procedures, with {ggplot2} multiplicity graph visualizations, g",
+      "thread_id": "thread-f732ffc733ad",
+      "thread_depth": 0,
+      "month": "2022-09"
+    },
+    {
+      "id": "msg-9a74c1f7d2fb",
+      "message_id": "<472c1447-c521-4b9b-8274-321a602b56c9@www.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2022-09-02T13:27:34-04:00",
+      "subject": "[R-pkgs] pkglite 0.2.1 is released",
+      "subject_clean": "pkglite 0.2.1 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nA new version of pkglite (0.2.1) is now on CRAN (https://cran.r-project.org/package=pkglite). pkglite offers a tool, grammar, and standard to represent and exchange R package source code as text files.\n\nThis version brings expanded coverage of file types (before: 88.85%, after: 96.65%, tested among all files in all CRAN packages), fewer dependencies, and more low-level enhancements. Please see the changelog (https://merck.github.io/pkglite/news/) for details.\n\nThanks,\n-Nan",
+      "body_snippet": "Dear all,\n\nA new version of pkglite (0.2.1) is now on CRAN (https://cran.r-project.org/package=pkglite). pkglite offers a tool, grammar, and standard to represent and exchange R package source code as",
+      "thread_id": "thread-9a74c1f7d2fb",
+      "thread_depth": 0,
+      "month": "2022-09"
+    },
+    {
+      "id": "msg-3f146ea52d96",
+      "message_id": "<CAJ=0CtBM_tyfu1DuMjf3Oq8TJY-eW+AOopE=qywJ=NpNWWCzTw@mail.gmail.com>",
+      "from_name": "Adrian Dușa",
+      "from_email_hash": "08f405507ac687741364700c3283681d6a9bc9b1d96b171d3bdccbc9cc7be1a2",
+      "date": "2022-09-29T20:17:36+03:00",
+      "subject": "[R-pkgs] new version of package declared",
+      "subject_clean": "new version of package declared",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-list,\n\nIt gives me great pleasure to announce the release of version 0.18 of\npackage declared, that makes a difference between empty missing values (the\ncurrent NAs in R) and declared missing values (NAs with a reason).\n\nBesides an automatic detection of such values by most base R operations\n(including ==, != etc.), package declared also offers weighted versions of\nmost common summaries (ex. mean, median, sd, quantile) that also apply on\nthe declared missing values, something not covered by other similar\nfunctions.\n\nVersion 0.18 is fully documented using Roxygen2 and extensively (even\nobsessively) tested to achieve no less than 100% code coverage, using more\nthan 750 tests including the \"golden\" ones capturing output using\nsnapshots. It also features three Vignettes showcasing the package's\nfeatures.\n\nMany thanks to Daniel Antal for the enthusiastic support and contribution\nto the initial Roxygen2 and pkgdown documentation, bringing this package\ncloser to the rOpenSci standards. Most functions are now generic, allowing\nextensions to any type of object, for both creation and coercion to class\n\"declared\".\n\nPlatform specific binaries are soon to be built on CRAN, but they are also\navailable and can be installed from R-universe package page:\nhttps://dusadrian.r-universe.dev/ui#package:declared\n\nAs always, bug reporting and feature proposals are more than welcome.\nAdrian\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-list,\n\nIt gives me great pleasure to announce the release of version 0.18 of\npackage declared, that makes a difference between empty missing values (the\ncurrent NAs in R) and declared missing v",
+      "thread_id": "thread-3f146ea52d96",
+      "thread_depth": 0,
+      "month": "2022-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9a74c1f7d2fb",
+      "subject": "pkglite 0.2.1 is released",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2022-09-02T13:27:34-04:00",
+      "last_reply": "2022-09-02T13:27:34-04:00",
+      "root_message_id": "msg-9a74c1f7d2fb"
+    },
+    {
+      "id": "thread-f732ffc733ad",
+      "subject": "gMCPLite: Lightweight Graph Based Multiple Comparison Procedures",
+      "message_count": 1,
+      "participants": [
+        "Zhu, Yalin"
+      ],
+      "started": "2022-09-02T14:26:11+00:00",
+      "last_reply": "2022-09-02T14:26:11+00:00",
+      "root_message_id": "msg-f732ffc733ad"
+    },
+    {
+      "id": "thread-3f146ea52d96",
+      "subject": "new version of package declared",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dușa"
+      ],
+      "started": "2022-09-29T20:17:36+03:00",
+      "last_reply": "2022-09-29T20:17:36+03:00",
+      "root_message_id": "msg-3f146ea52d96"
+    }
+  ]
+}

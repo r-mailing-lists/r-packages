@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-03",
+  "messages": [
+    {
+      "id": "msg-65136192d7b7",
+      "message_id": "<CAB+AFnLrRb4ywqTw+oMsu3mNz1kMR-WRoS-r5FK472vS8amkRQ@mail.gmail.com>",
+      "from_name": "Jiena McLellan",
+      "from_email_hash": "c8f0091f554cc4c4f89a025e206b1aa3ef1f10bf045846108744a3c4ec10aa43",
+      "date": "2019-03-21T16:09:51-05:00",
+      "subject": "[R-pkgs] noteMD v0.1.0 on CRAN",
+      "subject_clean": "noteMD v0.1.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R and Shiny Developers,\n\nPackage noteMD v0.1.0 is released on CRAN now.\nWhen building a 'shiny' app to generate reports (pdf or 'word'), we can\ninsert a comment box in front-end side for user to write down notes and\nuser this package to document those notes in reports.\n\n\nCRAN:\nhttps://cran.r-project.org/web/packages/noteMD/index.html\nGithub:\nhttps://github.com/jienagu/noteMD\n\nWelcome to give me any feedback!\n\nBest Regards,\nJiena\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R and Shiny Developers,\n\nPackage noteMD v0.1.0 is released on CRAN now.\nWhen building a 'shiny' app to generate reports (pdf or 'word'), we can\ninsert a comment box in front-end side for user to write",
+      "thread_id": "thread-65136192d7b7",
+      "thread_depth": 0,
+      "month": "2019-03"
+    },
+    {
+      "id": "msg-8cd0987e0865",
+      "message_id": "<001d01d4e0a4$31a9d8a0$94fd89e0$@sowi.uni-kl.de>",
+      "from_name": "Tobias Rüttenauer",
+      "from_email_hash": "456576553df8fade7b011cbfe0348d34d3363cd3b3eedd85c3f21e353763a331",
+      "date": "2019-03-22T12:41:30+01:00",
+      "subject": "[R-pkgs] New package feisr: Fixed effects individual slope models",
+      "subject_clean": "New package feisr: Fixed effects individual slope models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nAre you worried about the parallel trends assumption in your panel\nregression? Use fixed effects individual slope models, controlling for\nheterogeneous trends!\n\nI am very pleased to announce that the package feisr is now available on\nCRAN!\n\nCRAN: https://cran.r-project.org/package=feisr\nGitHub: https://github.com/ruettenauer/feisr\n\nThe packages feisr provides a function to estimate fixed effects individual\nslope (FEIS) models. FEIS models constitute a more general version of the\noften used conventional fixed effects (FE) panel models. In contrast to\nconventional fixed effects models, data are not person ?demeaned?, but\n'detrended? by the predicted individual slope of each person or group, which\nrelaxes the assumptions of parallel trends between treated and untreated\ngroups.\n\nWe are happy about any comments or feedback!\n\nBest regards,\nTobias\n\n\nTobias R?ttenauer\nDepartment of Social Sciences\nTU Kaiserslautern\nErwin-Schroedinger-Str. 57\n67663 Kaiserslautern\n\nruettenauer at sowi.uni-kl.de\nTel.: +49 631 205 5785",
+      "body_snippet": "Dear R users,\n\nAre you worried about the parallel trends assumption in your panel\nregression? Use fixed effects individual slope models, controlling for\nheterogeneous trends!\n\nI am very pleased to ann",
+      "thread_id": "thread-8cd0987e0865",
+      "thread_depth": 0,
+      "month": "2019-03"
+    },
+    {
+      "id": "msg-850039f2f882",
+      "message_id": "<b23057$bcgv6f@ironport10.mayo.edu>",
+      "from_name": "Heinzen, Ethan P.",
+      "from_email_hash": "844bbdac4e776906332510aef753246ff1fdd5332960b03d444eca5a25509285",
+      "date": "2019-03-26T14:17:04Z",
+      "subject": "[R-pkgs] arsenal v3.0.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "subject_clean": "arsenal v3.0.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to announce the release of the \"arsenal\" package v3.0.0 on CRAN (https://cran.r-project.org/package=arsenal)!\n\n\"arsenal\" has experienced some major growth in the last few months, starting with the release of v2.0.0 in January.  We tried to maintain backwards compatibility wherever possible, but had to eliminate it in some places.  With that said, here's the latest and greatest of \"arsenal\":\n\n\n1.      The compare() function was renamed to comparedf(), to avoid conflicts with the \"testthat\" package.  comparedf() is used to compare two data.frames, and now includes additional functionality to specify which variables should be compared if they have different column names.\n\n2.      tableby() is our Table-1-like function.  It now accepts a strata term and multiple left-hand-side terms.\n\n3.      paired() piggybacks off of tableby() for comparisons across two time points.\n\n4.      modelsum() runs [lm, coxph, glm, etc.] models on multiple variables, adjusted for the same covariates.  It also accepts a strata term and multiple left-hand-side terms.\n\n5.      freqlist() generates frequency tables, much like SAS's \"proc freq\" with the \"list\" option.  It, too, accepts a strata term and multiple left-hand-side terms.\n\n6.      write2html(), write2pdf(), and write2word() are capable of outputting tables to documents without needing to open a whole new .Rmd script.\n\n7.      formulize() is a useful function for creating formulas from character vectors (or columns of data.frames).\n\nAs always, contributions and bug reports are welcome on arsenal's GitHub page: https://github.com/eheinzen/arsenal\n\nCheers!\nEthan Heinzen\nheinzen.ethan at mayo.edu<mailto:heinzen.ethan at mayo.edu>\nhttps://github.com/eheinzen\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to announce the release of the \"arsenal\" package v3.0.0 on CRAN (https://cran.r-project.org/package=arsenal)!\n\n\"arsenal\" has experienced some major growth in the last few months, starting ",
+      "thread_id": "thread-850039f2f882",
+      "thread_depth": 0,
+      "month": "2019-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-65136192d7b7",
+      "subject": "noteMD v0.1.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Jiena McLellan"
+      ],
+      "started": "2019-03-21T16:09:51-05:00",
+      "last_reply": "2019-03-21T16:09:51-05:00",
+      "root_message_id": "msg-65136192d7b7"
+    },
+    {
+      "id": "thread-8cd0987e0865",
+      "subject": "New package feisr: Fixed effects individual slope models",
+      "message_count": 1,
+      "participants": [
+        "Tobias Rüttenauer"
+      ],
+      "started": "2019-03-22T12:41:30+01:00",
+      "last_reply": "2019-03-22T12:41:30+01:00",
+      "root_message_id": "msg-8cd0987e0865"
+    },
+    {
+      "id": "thread-850039f2f882",
+      "subject": "arsenal v3.0.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "message_count": 1,
+      "participants": [
+        "Heinzen, Ethan P."
+      ],
+      "started": "2019-03-26T14:17:04+00:00",
+      "last_reply": "2019-03-26T14:17:04+00:00",
+      "root_message_id": "msg-850039f2f882"
+    }
+  ]
+}

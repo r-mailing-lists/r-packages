@@ -1,0 +1,201 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-10",
+  "messages": [
+    {
+      "id": "msg-8a23998971d8",
+      "message_id": "<E8D38D92-D00D-43AA-A2FD-741949501DE8@posteo.de>",
+      "from_name": "Eugene Ha",
+      "from_email_hash": "d8858abb8118f290c8e265194b1ce793220f886c89686a40b83c98f419a0011b",
+      "date": "2017-10-03T13:31:28+02:00",
+      "subject": "[R-pkgs] nofrills: Low-Cost Anonymous Functions",
+      "subject_clean": "nofrills: Low-Cost Anonymous Functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nnofrills (0.2.0) has been published on CRAN:\nhttps://cran.r-project.org/package=nofrills\n\nThis lightweight package provides `fn()`, a compact variation of the\nusual syntax of function declaration, in order to support\ntidyverse-style quasiquotation of a function?s arguments and body.\n\nAside from enabling a shorter but fully general syntax for function\ndeclarations, the main benefit of `fn()` is its ability to create\n_pure_ functions via quasiquotation, which is tricky to guarantee in\nbase R, due to the mutability of bindings in a function?s lexical scope.\n\nTo learn more, see the landing page of the source repository:\nhttps://github.com/egnha/nofrills\n\nBug reports and other feedback are welcome at the issues page on GitHub:\nhttps://github.com/egnha/nofrills/issues\n\nEugene Ha",
+      "body_snippet": "Dear R Users,\n\nnofrills (0.2.0) has been published on CRAN:\nhttps://cran.r-project.org/package=nofrills\n\nThis lightweight package provides `fn()`, a compact variation of the\nusual syntax of function d",
+      "thread_id": "thread-8a23998971d8",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-2895127e3455",
+      "message_id": "<CAARY7kiBNg87Gdbv-W_duJLGON1RNo_E_1bD1kKPQFv1GrPOcQ@mail.gmail.com>",
+      "from_name": "David Hugh-Jones",
+      "from_email_hash": "36af917953ef4b56c37a32f04551e72f9ee3f1f4bcc5440822670195db6f6253",
+      "date": "2017-10-07T15:34:30Z",
+      "subject": "[R-pkgs] 📦 huxtable 1.0.0 on CRAN",
+      "subject_clean": "📦 huxtable 1.0.0 on CRAN",
+      "in_reply_to": "<CAE6U0BbbKWm4aDiPiZWDdCtGZCvDutStSfyjTu4=4kXsq=Fi6A@mail.gmail.com>",
+      "references": [
+        "<CAE6U0BYLyEtNVnTNkZtbT2cVLy6zLhdmQm2M27WLCS8wxwfTWg@mail.gmail.com>",
+        "<CAE6U0BbbKWm4aDiPiZWDdCtGZCvDutStSfyjTu4=4kXsq=Fi6A@mail.gmail.com>"
+      ],
+      "body_plain": "Dear R users,\n\nI'm pleased to announce that huxtable version 1.0.0 will be on CRAN\nshortly.\n\nHuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface.\n\nVersion 1.0.0 includes several improvements:\n* variable border widths in LaTeX\n* colour display on-screen with `crayon` package (works in terminal or\nrecent daily RStudio)\n* move to officer from ReporteRs for Word/PowerPoint export: no more RJava\n\nFor more information see the following URLs:\nhttps://cran.r-project.org/package=huxtable\nCRAN page\n\nhttps://github.com/hughjonesd/huxtable\nGitHub\n\nhttps://hughjonesd.github.io/huxtable/\nWebsite with examples and vignettes\n\nCheers,\nDavid Hugh-Jones\n\n\n\n\n\n-- \nSent from Gmail Mobile\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI'm pleased to announce that huxtable version 1.0.0 will be on CRAN\nshortly.\n\nHuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface.\n\nVersion 1.0.0",
+      "thread_id": "thread-2895127e3455",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-f4366ae1e104",
+      "message_id": "<20171010082638.wm367y5nmtrvrflb@emachines>",
+      "from_name": "Johannes Titz",
+      "from_email_hash": "e5f11cd03480888702a3319256bd9b386a39eea30306ecdccc88c90c91964028",
+      "date": "2017-10-10T10:26:38+02:00",
+      "subject": "[R-pkgs] New package: leabRa",
+      "subject_clean": "New package: leabRa",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R enthusiasts,\n\nI am happy to announce that the package Leab*R*a is now on CRAN\n(https://cran.r-project.org/web/packages/leabRa/)\n\nLeab*R*a provides the Leabra artificial neural network algorithm (O?Reilly,\n1996, ftp://grey.colorado.edu/pub/oreilly/thesis/oreilly_thesis.all.pdf)\nfor R. Leabra stands for ?local error driven and associative biologically\nrealistic algorithm?. It is the Rolls Royce of artificial neural networks\nbecause it combines error driven learning and self organized learning in an\nelegant way, while focusing on a biologically plausible learning rule.\n\nThe vignette shows how to construct networks:\nhttps://cran.r-project.org/web/packages/leabRa/vignettes/leabRa.html\n\nFeedback welcome: https://github.com/johannes-titz/leabRa/\n\nBest,\nJohannes",
+      "body_snippet": "Dear R enthusiasts,\n\nI am happy to announce that the package Leab*R*a is now on CRAN\n(https://cran.r-project.org/web/packages/leabRa/)\n\nLeab*R*a provides the Leabra artificial neural network algorithm",
+      "thread_id": "thread-f4366ae1e104",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-85dd0cfec63c",
+      "message_id": "<CAKxd1KMfxonkJi7kLFaaLanTKs1gWN=6+xYuNhR1xapPX3CjJg@mail.gmail.com>",
+      "from_name": "Charles Determan",
+      "from_email_hash": "fcc9a1e7c21371cee92703630056a3d910de1afb77217895dfe5b4bc47c007e1",
+      "date": "2017-10-19T08:53:26-05:00",
+      "subject": "[R-pkgs] gpuR 2.0.0 released",
+      "subject_clean": "gpuR 2.0.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce the most recent version of gpuR has been\nreleased. There are several new enhancements to the package including\nthe ability to use user written OpenCL kernels.  A full list of\nchanges from the NEWS are shown below.\n\nAPI Changes:\n\n1. deviceType, gpuInfo, cpuInfo not longer accepts 'platform_idx'\nparameter as OpenCL contexts cannot contain more than one platform.\n\nNew Features:\n\n1. Added functionality to create custom OpenCL functions from user\nprovided kernels\n\n2. Added 'synchronize' function to assure completion of device calls\n(necessary for benchmarking)\n\n3. Added determinant function (det)\n\n4. Allow for gpuR object - base object interaction (e.g. vclMatrix * matrix)\n\n5. Added ?inplace' function for ?inplace' operations. These operations\ninclude '+', '-', '*', '/', 'sin', 'asin', 'sinh', 'cos', 'acos',\n'cosh', 'tan', 'atan', 'tanh'.\n\n6. Added 'sqrt', 'sum', 'sign','pmin', and 'pmax' functions\n\n7. Methods to pass two gpuR matrix objects to 'cov'\n\n8. Added 'norm' method\n\n9. Added gpuRmatrix/gpuRvector Arith '+','-' methods\n\nBug Fixes:\n\n1. Fixed incorrect device info when using different contexts\n\n2. Fixed Integer Matrix Multiplication\n\n3. All OpenCL devices will be initialized on startup (previous version\noccasionally would omit some devices)\n\n\nThere are many more features in the works.  Suggestions and\ncontributions continue to be welcomed.  Please submit all through my\ngithub issues https://github.com/cdeterman/gpuR/issues\n<https://github.com/cdeterman/gpuR.git>\n\n\nAlso, thanks to all those as well for testing this package on various\nGPU devices and operating systems.  A lot of the stability of this\npackage is made possible by your efforts.\n\n\nKind regards,\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce the most recent version of gpuR has been\nreleased. There are several new enhancements to the package including\nthe ability to use user written OpenCL kernels.  A ",
+      "thread_id": "thread-85dd0cfec63c",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-67a22ff0f485",
+      "message_id": "<20171020143850.Horde.f2cnVm9t67LTsmwHkJscUG7@webmail.your-server.de>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "6e2b07dfece9903edd38ae5f89516e6019180d40f61f8bc93b0510f5f6c6ba17",
+      "date": "2017-10-20T14:38:50+02:00",
+      "subject": "[R-pkgs] NMOF 1.2-2 (Numerical Methods and Optimization in Finance)",
+      "subject_clean": "NMOF 1.2-2 (Numerical Methods and Optimization in Finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 1.2-2 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization\nin Finance'. The package provides R code and datasets\nfor the book with the same name, written by Manfred\nGilli, Dietmar Maringer and Enrico Schumann, published\nby Elsevier/Academic Press in 2011.\n\nThe package has finally crossed the 1.0 line: It is\n10 years since the development of NMOF began, and many\nof the functions -- notably those for optimization --\nhave been in continuous use since then. That implies\na certain maturity, and so it was time to upgrade\nthe version to 1.0 (and beyond already).\n\nSince my last announcement on this list [1], a number\nof functions have been added to the package:\n'SAopt' (Simulated Annealing), 'CPPIgap' (portfolio\ninsurance), 'minvar' (computation of minimum-variance\nportfolios), and more. See the NEWS file [2] and the\nChangeLog [3] for all details.\n\nMany of the new functions are described, with\nexamples, in the Manual [4].\n\n\nKind regards\n     Enrico\n\n\n[1] https://stat.ethz.ch/pipermail/r-packages/2016/001510.html\n[2] https://github.com/enricoschumann/NMOF/blob/master/NEWS\n[3] https://github.com/enricoschumann/NMOF/blob/master/ChangeLog\n[4] http://enricoschumann.net/NMOF.htm#NMOFmanual\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttp://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 1.2-2 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization\nin Finance'. The package provides R code and datasets\nfor the book with the same name, wri",
+      "thread_id": "thread-67a22ff0f485",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-b87169d3bb8e",
+      "message_id": "<CACsjJ_cqZy-GBCJ3ryLoxoat=To=bRJScepA5nTxgxZ2zbc2Yw@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2017-10-20T13:25:02-04:00",
+      "subject": "[R-pkgs] randomForestSRC 2.5.1 and OpenMP",
+      "subject_clean": "randomForestSRC 2.5.1 and OpenMP",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nThe latest build of randomForestSRC (2.5.1) includes a configuration\nfile that switches on the -fopenmp tag during compilation on systems\nthat support OpenMP parallel processing.  Previously, to achieve\nparallel processing, we required the additional step of executing an\nautoconf command before compiling and installing the package from\nsource.\n\nWe also believe the binaries provided by CRAN for Windows, and MacOS\nEl Capitan support OpenMP out-of-the-box on many systems.  If you are\nrunning a serial version of our package, we strongly recommend an\nupgrade path that will allow you to run the parallel version.  The\nperformance gains will be significant especially in large n and large\np scenarios.  This upgrade path may be as simple as installing the\n2.5.1 CRAN binaries.  But, on some systems, it may also involve a\nscenario where you will need to install an OpenMP capable C-compiler\nsuch as GCC, and then compile and install 2.5.1 from source.\n\nDocumentation and more can be found at:\nhttps://kogalur.github.io/randomForestSRC/\n\nThank you.\n\nUdaya Kogalur",
+      "body_snippet": "Dear useRs:\n\nThe latest build of randomForestSRC (2.5.1) includes a configuration\nfile that switches on the -fopenmp tag during compilation on systems\nthat support OpenMP parallel processing.  Previou",
+      "thread_id": "thread-b87169d3bb8e",
+      "thread_depth": 0,
+      "month": "2017-10"
+    },
+    {
+      "id": "msg-59ed86988b64",
+      "message_id": "<3529837.SCD6RYzQl2@pc19329>",
+      "from_name": "Lukas Lehnert",
+      "from_email_hash": "9fd36b85a6cdb51f9f7470c37c8be8d9817590a3ab16a015390e36475190aa99",
+      "date": "2017-10-23T12:55:19+02:00",
+      "subject": "[R-pkgs] hsdar is back on CRAN",
+      "subject_clean": "hsdar is back on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hsdar is back on CRAN\n\nWe are very happy to announce that a new version of the hsdar-package \n(hyperspectral data analysis in R) is available on CRAN. \n\nThe introductory vignette is available here: \nhttps://cran.r-project.org/web/packages/hsdar/vignettes/Hsdar-intro.pdf\n\nThe main class \"Speclib\" has been changed in that the additional information \nis now stored in the SI slot (function \"SI\" replaced \"attribute\" for \nupdate/access). This change was used to restructure how the supplementary data \nis internally stored and allows the user to use e.g. raster images as source \nof additional information (which can be of advantage if e.g. terrain is \nsuspected to play a role for hyperspectral classification/regression).  \nAdditionally, the Speclib-class has now methods compatible with the \niteratively reading/writing functions of the raster-package (writeStart-, \nwriteValues-, writeStop-methods for Speclib class are implemented).\n\nBesides these technical changes, the new version of PROSPECT (version D) is \nimplemented.\n\nCheers\n\nLukas Lehnert\nHanna Meyer\nJ?rg Bendix",
+      "body_snippet": "hsdar is back on CRAN\n\nWe are very happy to announce that a new version of the hsdar-package \n(hyperspectral data analysis in R) is available on CRAN. \n\nThe introductory vignette is available here: \nh",
+      "thread_id": "thread-59ed86988b64",
+      "thread_depth": 0,
+      "month": "2017-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8a23998971d8",
+      "subject": "nofrills: Low-Cost Anonymous Functions",
+      "message_count": 1,
+      "participants": [
+        "Eugene Ha"
+      ],
+      "started": "2017-10-03T13:31:28+02:00",
+      "last_reply": "2017-10-03T13:31:28+02:00",
+      "root_message_id": "msg-8a23998971d8"
+    },
+    {
+      "id": "thread-2895127e3455",
+      "subject": "📦 huxtable 1.0.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "David Hugh-Jones"
+      ],
+      "started": "2017-10-07T15:34:30+00:00",
+      "last_reply": "2017-10-07T15:34:30+00:00",
+      "root_message_id": "msg-2895127e3455"
+    },
+    {
+      "id": "thread-f4366ae1e104",
+      "subject": "New package: leabRa",
+      "message_count": 1,
+      "participants": [
+        "Johannes Titz"
+      ],
+      "started": "2017-10-10T10:26:38+02:00",
+      "last_reply": "2017-10-10T10:26:38+02:00",
+      "root_message_id": "msg-f4366ae1e104"
+    },
+    {
+      "id": "thread-85dd0cfec63c",
+      "subject": "gpuR 2.0.0 released",
+      "message_count": 1,
+      "participants": [
+        "Charles Determan"
+      ],
+      "started": "2017-10-19T08:53:26-05:00",
+      "last_reply": "2017-10-19T08:53:26-05:00",
+      "root_message_id": "msg-85dd0cfec63c"
+    },
+    {
+      "id": "thread-b87169d3bb8e",
+      "subject": "randomForestSRC 2.5.1 and OpenMP",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2017-10-20T13:25:02-04:00",
+      "last_reply": "2017-10-20T13:25:02-04:00",
+      "root_message_id": "msg-b87169d3bb8e"
+    },
+    {
+      "id": "thread-67a22ff0f485",
+      "subject": "NMOF 1.2-2 (Numerical Methods and Optimization in Finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2017-10-20T14:38:50+02:00",
+      "last_reply": "2017-10-20T14:38:50+02:00",
+      "root_message_id": "msg-67a22ff0f485"
+    },
+    {
+      "id": "thread-59ed86988b64",
+      "subject": "hsdar is back on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Lukas Lehnert"
+      ],
+      "started": "2017-10-23T12:55:19+02:00",
+      "last_reply": "2017-10-23T12:55:19+02:00",
+      "root_message_id": "msg-59ed86988b64"
+    }
+  ]
+}

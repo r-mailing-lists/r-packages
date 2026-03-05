@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-09",
+  "messages": [
+    {
+      "id": "msg-9337bd37be46",
+      "message_id": "<4836bc6a0909010315q74b07dcfyf730e9df06ed004c@mail.gmail.com>",
+      "from_name": "Fabian Scheipl",
+      "from_email_hash": "adbeb0db03d3186112f76493acdf9b0fd5241bd7f500835deb71b1a970697b72",
+      "date": "2009-09-01T12:15:20+02:00",
+      "subject": "[R-pkgs] amer: generalized additive mixed models with lme4",
+      "subject_clean": "amer: generalized additive mixed models with lme4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090901/6c602412/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090901/6c602412/attachment.pl>",
+      "thread_id": "thread-9337bd37be46",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-650908a342ff",
+      "message_id": "<4AA5F87C.80808@dbmail.com>",
+      "from_name": "Romain Francois",
+      "from_email_hash": "59e39d3ea92dfd200ae594261b1588764b0f983f395cce1fc006e71efaf2c073",
+      "date": "2009-09-08T08:23:56+02:00",
+      "subject": "[R-pkgs] R meets apache ant",
+      "subject_clean": "R meets apache ant",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nThis is to announce the first release of the \"ant\" R package, which has \nbeen pushed to CRAN yesterday, and should reach your mirror and your \nplatform soon.\n\nThe package provides an R-aware version of the famous build tool from \nthe apache project. http://ant.apache.org/\n\nThe package ships an R script that can be used to invoke ant with enough \nplumbing so that it can use R specific tasks within targets.\n\n$ Rscript -e \"ant::ant()\"\n\nThe package contains two R specific tasks:\n- <r-run> that can be used to run arbitrary R code.\n- <r-set> that can be used to set a property based on the result of an R \nexpression.\n\nAn demonstrative build file is included within the package to further \nillustrate the two tasks. Also available at my blog (http://tr.im/xMdt)\n\nR> system.file( \"examples\", \"build.xml\", package = \"ant\" )\n\nThe package is source-controlled at r-forge as part of the orchestra \nproject. http://r-forge.r-project.org/projects/orchestra/\n\nMany thanks to Duncan Murdoch who suggested adding the \"ant\" function as \na shortcut to invoke the script and Simon Urbanek who revealed to me the \nexistence of the configure script.\n\nThis is a very first release, so feedback and ideas for additional \nfeatures or tasks is very welcome.\n\nRomain\n\n-- \nRomain Francois\nProfessional R Enthusiast\n+33(0) 6 28 91 30 30\nhttp://romainfrancois.blog.free.fr\n|- http://tr.im/xMdt : update on the ant package\n|- http://tr.im/xHLs : R capable version of ant\n`- http://tr.im/xHiZ : Tip: get java home from R with rJava",
+      "body_snippet": "Hello,\n\nThis is to announce the first release of the \"ant\" R package, which has \nbeen pushed to CRAN yesterday, and should reach your mirror and your \nplatform soon.\n\nThe package provides an R-aware v",
+      "thread_id": "thread-650908a342ff",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-71257a00e806",
+      "message_id": "<4AA659E8.5050806@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2009-09-08T08:19:36-05:00",
+      "subject": "[R-pkgs] New package: rms",
+      "subject_clean": "New package: rms",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce a new package rms on CRAN.  rms goes along with my \nbook Regression Modeling Strategies.  The home page for rms is \nhttp://biostat.mc.vanderbilt.edu/rms, or go directly to \nhttp://biostat.mc.vanderbilt.edu/Rrms for information just about the \nsoftware.\n\nrms is a re-write of the Design package that has improved graphics and \nthat duplicates very little code in the survival package.  In \nparticular, rms does not use low-level C language interfaces to other \npackages and will be easier to maintain.  rms also interfaces to \nquantile regression (new Rq function), and interfaces to glm and gls \nhave been renamed Glm and Gls.  rms requires the latest version of Hmisc \non CRAN.\n\nrms has cleaned up graphics routines to make them more modular, to use \nlattice graphics, and to make it easier to use ggplot2 graphics. \nDefaults for confidence bands are now gray scale-shaded polygons.\n\nThe most visable change for the user is the replacement of the \nplot.Design function with the Predict, plot.Predict, and bplot \nfunctions.  plot.Predict is used for bivariate graphics (using lattice), \nand bplot is used for 3-d graphics using base graphics functions image, \ncontour, and persp. Note that multi-panel lattice graphics are usually \nbetter than 3-d graphics for showing the effects of multiple predictors \nvarying simultaneously. The output of Predict is suitable for direct use \nby lattice (e.g., the xyplot function) and ggplot2 if you don't want to \nuse plot.Predict.  plot.Predict allows you to specify a lattice formula \n(less the left hand side) if you don't like plot.Predict's choice of \nsuperpositioning and panel variables.\n\nThe following outlines the most significant change users will need to \nmake (the web page contains the complete list).  Note that the \nconvention used for getting predictions over the default range is now \npredictor=. rather than predictor=NA.\n\nrequire(rms)  # instead of Design; loads Hmisc and survival\nplot(fit, x1=NA, x2=NA, ...) changed to\n  p <- Predict(fit, x1=., x2=., ...)\n  plot(p)          # ?plot.Predict for details; produces a lattice object\n  plot(Predict(fit, ...))\n  print(plot(p))   # needed if using Sweave or are inside { }\n\n  plot(fit, .., method='image' or 'contour' or 'persp') changed to\n  p <- Predict(..., np=50)   # type ?Predict for details\n  bplot(p, method=)   # ?bplot for details; uses base graphics\n\nThe nomogram function now has a plot method so nomogram() by itself does \nnot plot.\n\nType ?rmsOverview for an overview and extensive examples.  The package's \nhome page contains a reference card you can print.\n\n-- \nFrank E Harrell Jr   Professor and Chair           School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "This is to announce a new package rms on CRAN.  rms goes along with my \nbook Regression Modeling Strategies.  The home page for rms is \nhttp://biostat.mc.vanderbilt.edu/rms, or go directly to \nhttp://",
+      "thread_id": "thread-71257a00e806",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-d16f1d69e5ec",
+      "message_id": "<20090909102629.5wm9t66yn6s4cwoc@imp.inserm.fr>",
+      "from_name": "Ken Knoblauch",
+      "from_email_hash": "7e8b6c9e332f8fb406f5225c42712e6bbab07fdbe1b2b8be3afdbd9db45ad318",
+      "date": "2009-09-09T10:26:29+02:00",
+      "subject": "[R-pkgs] new package MLCM: Maximum Likelihood Conjoint Measurement",
+      "subject_clean": "new package MLCM: Maximum Likelihood Conjoint Measurement",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce a new package MLCM on CRAN.\nThe package provides functions for estimating perceptual scales\nby maximum likelihood from data collected in a conjoint measurement\nexperiment. Data for conjoint measurement are typically collected\nusing a psychophysical procedure. The stimuli vary along 2 or more\ndimensions.  The observer views pairs of stimuli and judges which\nstimulus of each pair is higher on a specified dimension.\nFor example, stimuli may be goods baskets containing amounts of\nmilk and honey (dimensions) and the subject may order each pair\nof baskets by subjective desirability.  This package contains\ntools to estimate the additive contribution of the n scales\nto the judgment by a maximum likelihood method under several\nhypotheses of how the perceptual dimensions interact.\n\n-- \nKen Knoblauch\nInserm U846\nStem-cell and Brain Research Institute\nDepartment of Integrative Neurosciences\n18 avenue du Doyen L?pine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.sbri.fr/members/kenneth-knoblauch.html",
+      "body_snippet": "This is to announce a new package MLCM on CRAN.\nThe package provides functions for estimating perceptual scales\nby maximum likelihood from data collected in a conjoint measurement\nexperiment. Data for",
+      "thread_id": "thread-d16f1d69e5ec",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-043b68dcb61f",
+      "message_id": "<6C53267C784DF74BAB366EE1FEED4DE101FA0709@CPEXBE-EML20.kpnsp.local>",
+      "from_name": "mgko at planet.nl",
+      "from_email_hash": "dd9b6244c068745693a4561e95a82621ef6860039e5a71483692e7c1f79f9b10",
+      "date": "2009-09-10T13:56:52+02:00",
+      "subject": "[R-pkgs] new version of R-package mice",
+      "subject_clean": "new version of R-package mice",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090910/c2e67991/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090910/c2e67991/attachment.pl>",
+      "thread_id": "thread-043b68dcb61f",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-c237f4f675d2",
+      "message_id": "<4AA9A6EF.1090106@prodsyse.com>",
+      "from_name": "spencerg",
+      "from_email_hash": "6586e2ac1511c7ac857f5fde255a82a116c8b018001a5efabe6ff8460c83a853",
+      "date": "2009-09-10T18:25:03-07:00",
+      "subject": "[R-pkgs] New package \"sos\" for searching help pages of contributed packages",
+      "subject_clean": "New package \"sos\" for searching help pages of contributed packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Searching help pages of contributed packages just got \neasier with the release of the new \"sos\" package. This is a \nreplacement for and substantial enhancement of the existing \n\"RSiteSearch\" package.  To learn more about it, try \nvignette(\"sos\"). \n\n\n\t  We hope you find this as useful as we have.\n\n\n\t  Spencer Graves, Sundar Dorai-Raj, Romain Francois",
+      "body_snippet": "Searching help pages of contributed packages just got \neasier with the release of the new \"sos\" package. This is a \nreplacement for and substantial enhancement of the existing \n\"RSiteSearch\" package. ",
+      "thread_id": "thread-c237f4f675d2",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-a4b69703cec5",
+      "message_id": "<28152c800909121015h7504fc4p33b715282e70bfbd@mail.gmail.com>",
+      "from_name": "Cameron Bracken",
+      "from_email_hash": "020a769e735b40b41b51198f839f2fc5533f7323b1c06483bcac5d5d323f5587",
+      "date": "2009-09-12T11:15:38-06:00",
+      "subject": "[R-pkgs] New package: tikzDevice",
+      "subject_clean": "New package: tikzDevice",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090912/ca404658/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090912/ca404658/attachment.pl>",
+      "thread_id": "thread-a4b69703cec5",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-1108ccc102da",
+      "message_id": "<7CA48FBC-953C-4A9D-9CFD-38B4054B9896@stat.ucla.edu>",
+      "from_name": "Jan de Leeuw",
+      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
+      "date": "2009-09-19T12:41:56-07:00",
+      "subject": "[R-pkgs] homals package and core loop",
+      "subject_clean": "homals package and core loop",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The homals package\n\nhttp://www.jstatsoft.org/v31/i04\n\nwill get a major programming overhaul. This will take some time,\nbut what's a few years on a 40-year project. Suggestions\nfrom the audience are welcome.\n\nhomals() has a core loop over the m variables in which\n\n1. tapply is used to compute category quantification (centroids)\n2. category quantifications are then adjusted to satisfy the\n   rank and level constraints\n\nThe idea is to replace 1 by least squares fitting of a B-spline and\nto adjust 2 accordingly. The core will be re-programmed in C\nand/or FORTRAN (sometimes using existing routines), and the loop over\nvariables will be parallelized using OpenMP or Grand Central Dispatch.\nFor ordinal variables this requires some alternative quadratic  \nprogramming\nroutines to be linked in (which could then also become part of the\nisotone package).\n\nIn addition the basic homals code will have object (individual) weights\n(minor addition) and the prehom routines (from the jacobi package) will\nbe added. Because of the use of B splines the variables in homals will\nno longer be all factors, some can now be numerical (\"continuous\").\n\nOtherwise the package will keep its many analysis options (multi-set  \nnon-metric canonical analysis,\nnon-metric discriminant analysis, non-metric regression, multiple  \ncorrespondence analysis,\nnon-metric principal components analysis, non-metric additive conjoint  \nanalysis)\nand its many plot options.\n\n====================================================================\n     Jan de Leeuw, 11667 Steinhoff Rd, Frazier Park, CA 93225\n     home 661-245-1725 mobile 661-231-5416 work 310-825-9550\n     .mac: jdeleeuw +++  aim: deleeuwjan +++ skype: j_deleeuw\n====================================================================\nIf I wanted you to understand it, I would have explained it  \nbetter.                                                \t\t\t\t\t\n                                                   -- Johan Cruijff",
+      "body_snippet": "The homals package\n\nhttp://www.jstatsoft.org/v31/i04\n\nwill get a major programming overhaul. This will take some time,\nbut what's a few years on a 40-year project. Suggestions\nfrom the audience are we",
+      "thread_id": "thread-1108ccc102da",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-62f4da3e78b0",
+      "message_id": "<200909210122.30382.dusa.adrian@gmail.com>",
+      "from_name": "Adrian Dusa",
+      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
+      "date": "2009-09-21T01:22:30+03:00",
+      "subject": "[R-pkgs] New version of QCA",
+      "subject_clean": "New version of QCA",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090921/0a45967e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090921/0a45967e/attachment.pl>",
+      "thread_id": "thread-62f4da3e78b0",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-d33866832c2c",
+      "message_id": "<Pine.LNX.4.43.0909231106222.29884@hymn32.u.washington.edu>",
+      "from_name": "Thomas Lumley",
+      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
+      "date": "2009-09-23T11:06:22-07:00",
+      "subject": "[R-pkgs] survey package (3.18)",
+      "subject_clean": "survey package (3.18)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.18 of the survey package is now percolating through CRAN.\n\nSince the last announcement on this list, in February, the main additions are\n  - standard errors for survival curves (both Kaplan-Meier and Cox model)\n  - svyciprop() for confidence intervals on proportions, especially in small samples or near 0 or 1.\n  - predictive margins by direct standardization, with marginpred()\n  - two-phase subsampling designs can now have arbitrary multistage designs at each phase\n  - Rao-Scott-type likelihood ratio tests are now available for glms and the Cox model\n  - a wide range of options for PPS designs without replacement\n\nThere is also experimental support for parallel processing using the 'multicore' package.\n\n         -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
+      "body_snippet": "Version 3.18 of the survey package is now percolating through CRAN.\n\nSince the last announcement on this list, in February, the main additions are\n  - standard errors for survival curves (both Kaplan-",
+      "thread_id": "thread-d33866832c2c",
+      "thread_depth": 0,
+      "month": "2009-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9337bd37be46",
+      "subject": "amer: generalized additive mixed models with lme4",
+      "message_count": 1,
+      "participants": [
+        "Fabian Scheipl"
+      ],
+      "started": "2009-09-01T12:15:20+02:00",
+      "last_reply": "2009-09-01T12:15:20+02:00",
+      "root_message_id": "msg-9337bd37be46"
+    },
+    {
+      "id": "thread-71257a00e806",
+      "subject": "New package: rms",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2009-09-08T08:19:36-05:00",
+      "last_reply": "2009-09-08T08:19:36-05:00",
+      "root_message_id": "msg-71257a00e806"
+    },
+    {
+      "id": "thread-650908a342ff",
+      "subject": "R meets apache ant",
+      "message_count": 1,
+      "participants": [
+        "Romain Francois"
+      ],
+      "started": "2009-09-08T08:23:56+02:00",
+      "last_reply": "2009-09-08T08:23:56+02:00",
+      "root_message_id": "msg-650908a342ff"
+    },
+    {
+      "id": "thread-d16f1d69e5ec",
+      "subject": "new package MLCM: Maximum Likelihood Conjoint Measurement",
+      "message_count": 1,
+      "participants": [
+        "Ken Knoblauch"
+      ],
+      "started": "2009-09-09T10:26:29+02:00",
+      "last_reply": "2009-09-09T10:26:29+02:00",
+      "root_message_id": "msg-d16f1d69e5ec"
+    },
+    {
+      "id": "thread-043b68dcb61f",
+      "subject": "new version of R-package mice",
+      "message_count": 1,
+      "participants": [
+        "mgko at planet.nl"
+      ],
+      "started": "2009-09-10T13:56:52+02:00",
+      "last_reply": "2009-09-10T13:56:52+02:00",
+      "root_message_id": "msg-043b68dcb61f"
+    },
+    {
+      "id": "thread-c237f4f675d2",
+      "subject": "New package \"sos\" for searching help pages of contributed packages",
+      "message_count": 1,
+      "participants": [
+        "spencerg"
+      ],
+      "started": "2009-09-10T18:25:03-07:00",
+      "last_reply": "2009-09-10T18:25:03-07:00",
+      "root_message_id": "msg-c237f4f675d2"
+    },
+    {
+      "id": "thread-a4b69703cec5",
+      "subject": "New package: tikzDevice",
+      "message_count": 1,
+      "participants": [
+        "Cameron Bracken"
+      ],
+      "started": "2009-09-12T11:15:38-06:00",
+      "last_reply": "2009-09-12T11:15:38-06:00",
+      "root_message_id": "msg-a4b69703cec5"
+    },
+    {
+      "id": "thread-1108ccc102da",
+      "subject": "homals package and core loop",
+      "message_count": 1,
+      "participants": [
+        "Jan de Leeuw"
+      ],
+      "started": "2009-09-19T12:41:56-07:00",
+      "last_reply": "2009-09-19T12:41:56-07:00",
+      "root_message_id": "msg-1108ccc102da"
+    },
+    {
+      "id": "thread-62f4da3e78b0",
+      "subject": "New version of QCA",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dusa"
+      ],
+      "started": "2009-09-21T01:22:30+03:00",
+      "last_reply": "2009-09-21T01:22:30+03:00",
+      "root_message_id": "msg-62f4da3e78b0"
+    },
+    {
+      "id": "thread-d33866832c2c",
+      "subject": "survey package (3.18)",
+      "message_count": 1,
+      "participants": [
+        "Thomas Lumley"
+      ],
+      "started": "2009-09-23T11:06:22-07:00",
+      "last_reply": "2009-09-23T11:06:22-07:00",
+      "root_message_id": "msg-d33866832c2c"
+    }
+  ]
+}

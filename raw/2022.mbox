@@ -1,0 +1,1214 @@
+From dj@ndr|j@ @end|ng |rom gm@||@com  Tue Jan  4 14:55:42 2022
+From: dj@ndr|j@ @end|ng |rom gm@||@com (Andrija Djurovic)
+Date: Tue, 4 Jan 2022 14:55:42 +0100
+Subject: [R-pkgs] PDtoolkit: Collection of Tools for PD Rating Model
+ Development
+Message-ID: <CABcwgRRDj=V=CUp5gg=vHawRzGLXKy_uLFQMWxcyM0TsHZzhPg@mail.gmail.com>
+
+Dear R users,
+
+I am happy to announce that my new package PDtoolkit is now available on
+CRAN.
+
+The goal of this package is to cover the most common steps in probability
+of default (PD) rating model development and validation. The main
+procedures available are those that refer to univariate, bivariate,
+multivariate analysis, calibration and validation. Along with accompanied
+monobin and monobinShiny packages, PDtoolkit provides functions which are
+suitable for different data transformation and modeling tasks such as:
+imputations, monotonic binning of numeric risk factors, binning of
+categorical risk factors, weights of evidence (WoE) and information value
+(IV) calculations, WoE coding (replacement of risk factors modalities with
+WoE values), risk factor clustering, area under curve (AUC) calculation and
+others. Additionally, package provides set of validation functions for
+testing homogeneity, heterogeneity, discriminatory and predictive power of
+the model.
+
+For details and examples please check out the github page
+https://github.com/andrija-djurovic/PDtoolkit  or README file on CRAN page
+https://CRAN.R-project.org/package=PDtoolkit
+
+Best regards,
+Andrija Djurovic
+
+	[[alternative HTML version deleted]]
+
+
+From m@rt|n@@m|th @end|ng |rom durh@m@@c@uk  Tue Jan 11 12:12:13 2022
+From: m@rt|n@@m|th @end|ng |rom durh@m@@c@uk (Martin R. Smith)
+Date: Tue, 11 Jan 2022 11:12:13 +0000
+Subject: [R-pkgs] Fwd: Ternary 2.0: Holdridge life zones and ternary plots
+In-Reply-To: <CANotEPs8zWn5xJzuanqLV38VdpHFVnO2qS+iUWnpwkFDp8OTuA@mail.gmail.com>
+References: <CANotEPs8zWn5xJzuanqLV38VdpHFVnO2qS+iUWnpwkFDp8OTuA@mail.gmail.com>
+Message-ID: <CANotEPvg_U-vjwO=+BQU4Fp3gkqf6ekr0zQ+Rdeg8mSMNB=-HQ@mail.gmail.com>
+
+Dear R users,
+
+It is now possible to create and annotate Holdridge life zone plots using
+functions modelled on the standard graphics package using the the package
+"Ternary", whose v2.0 release is now available from CRAN:
+https://CRAN.R-project.org/package=Ternary .
+The vignette at https://ms609.github.io/Ternary/articles/Holdridge.html gives
+an example and pointers to detailed documentation.
+
+Ternary 2.0 also includes a complete 'shiny' graphical user interface to
+allow interactive construction of ternary plots without detailed knowledge
+of R.
+
+Regards,
+
+Martin Smith
+
+
+--
+
+*Dr. Martin R. Smith*
+Associate Professor in Palaeontology
+Durham University
+Department of Earth Sciences
+Mountjoy Site, South Road, Durham, DH1 3LE United Kingdom
+
+*M*: +44 (0)774 353 7510
+*E*: martin.smith at durham.ac.uk
+
+smithlabdurham.github.io
+twitter.com/PalaeoSmith
+
+The information in this e-mail and any attachments is co...{{dropped:13}}
+
+
+From m@rt|n@@m|th @end|ng |rom durh@m@@c@uk  Thu Jan 13 14:37:24 2022
+From: m@rt|n@@m|th @end|ng |rom durh@m@@c@uk (Martin R. Smith)
+Date: Thu, 13 Jan 2022 13:37:24 +0000
+Subject: [R-pkgs] Package "Rogue": Detect wildcard taxa in sets of
+ phylogenetic trees
+Message-ID: <CANotEPuHoVPYJ9W35rQniFmB035fD5Mf-axwUMFv-_T-V-jOYA@mail.gmail.com>
+
+Dear R users,
+
+Package "Rogue" has been published on CRAN:
+https://CRAN.R-project.org/package=Rogue.
+
+"Rogue" improves phylogenetic analysis by detecting wildcard taxa whose
+inconsistent position reduces split support and resolution in consensus
+trees.  It implements an effective new information-theoretic approach
+(Smith 2022, https://doi.org/10.1093/sysbio/syab099), and provides an R
+interface to the established "RogueNaRok" C library (Aberer et al. 2013,
+https://doi.org/10.1093/sysbio/sys078).
+
+A vignette demonstrating use on Bayesian posterior tree sets can be found
+at https://cran.r-project.org/web/packages/Rogue/vignettes/Bayesian.html.
+Questions and bug reports are welcome at https://github.com/ms609/Rogue.
+
+Regards,
+
+Martin Smith
+
+--
+
+*Dr. Martin R. Smith*
+Associate Professor in Palaeontology
+Durham University
+Department of Earth Sciences
+Mountjoy Site, South Road, Durham, DH1 3LE United Kingdom
+
+*M*: +44 (0)774 353 7510
+*E*: martin.smith at durham.ac.uk
+
+smithlabdurham.github.io
+twitter.com/PalaeoSmith
+
+The information in this e-mail and any attachments is co...{{dropped:13}}
+
+
+From m@rt|n@@m|th @end|ng |rom durh@m@@c@uk  Tue Jan 18 17:25:34 2022
+From: m@rt|n@@m|th @end|ng |rom durh@m@@c@uk (Martin R. Smith)
+Date: Tue, 18 Jan 2022 16:25:34 +0000
+Subject: [R-pkgs] Analysis of phylogenetic datasets in R: package
+ "TreeSearch"
+Message-ID: <CANotEPvuOsnHr1qihG5KAJ-BPjYRLC+2OA2e06xY=hCSzZyujA@mail.gmail.com>
+
+Dear R users,
+
+TreeSearch is an R package for phylogenetic analysis, optimized for
+morphological datasets. Tree search may be conducted using under equal or
+implied step weights with an explicit (albeit inexact) allowance for
+inapplicable character entries, avoiding some of the pitfalls inherent in
+standard parsimony methods. Profile parsimony and user-specified optimality
+criteria are supported.
+
+A graphical interface, which requires no familiarity with R, is designed to
+help a user to improve the quality of datasets through critical review of
+underpinning character codings; and to obtain additional information from
+results by identifying and summarising clusters of similar trees, mapping
+the distribution of trees, and removing ?rogue? taxa that obscure
+underlying relationships.
+
+Taken together, the package aims to support methodological rigour at each
+step of data collection, analysis, and the exploration of phylogenetic
+results.
+
+A stable release of TreeSearch is now on CRAN:
+https://CRAN.R-project.org/package=TreeSearch
+
+An introduction to the package is provided in the vignette:
+https://ms609.github.io/TreeSearch/articles/tree-search.html
+
+Further details are in the BioR?iv preprint:
+https://www.biorxiv.org/content/10.1101/2021.11.08.467735
+
+Regards,
+
+Martin
+
+
+--
+
+*Dr. Martin R. Smith*
+Associate Professor in Palaeontology
+Durham University
+Department of Earth Sciences
+Mountjoy Site, South Road, Durham, DH1 3LE United Kingdom
+
+*M*: +44 (0)774 353 7510
+*E*: martin.smith at durham.ac.uk
+
+smithlabdurham.github.io
+twitter.com/PalaeoSmith
+
+My working days are Monday?Thursday.
+
+The information in this e-mail and any attachments is co...{{dropped:13}}
+
+
+From j|n||68 @end|ng |rom gm@||@com  Tue Jan 18 23:48:03 2022
+From: j|n||68 @end|ng |rom gm@||@com (Jin Li)
+Date: Wed, 19 Jan 2022 09:48:03 +1100
+Subject: [R-pkgs] Package "steprf": Stepwise Predictive Variable Selection
+ for Random Forest
+Message-ID: <CAGu_3ZJqN4W1jYDx0VJZSGmqUn-JK5OaWCC_QM5-S-5Y5FW2GQ@mail.gmail.com>
+
+Dear R users,
+
+A new package "steprf" has been published on CRAN:
+https://cran.r-project.org/web/packages/steprf/index.html.
+
+It introduces several novel predictive variable selection methods for
+random forest (RF). The selections are based on various
+variable  importance methods and predictive accuracy in stepwise
+algorithms. Their performance can be seen in the references cited in the
+description of the package.
+
+Regards,
+
+-- 
+Jin
+------------------------------------------
+Jin Li, PhD
+Founder, Data2action, Australia
+https://www.researchgate.net/profile/Jin_Li32
+https://scholar.google.com/citations?user=Jeot53EAAAAJ&hl=en
+
+	[[alternative HTML version deleted]]
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Tue Jan 25 21:02:05 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Tue, 25 Jan 2022 15:02:05 -0500
+Subject: [R-pkgs] this.path-package: get executing script's path
+Message-ID: <CAPcHnpR7sUAxvQ6D-K4vmdkay8gC91Z4EcAhU3Efbz3isyP7pA@mail.gmail.com>
+
+Hello everyone,
+
+
+R package 'this.path' has received an update, the current version
+number is 0.5.0
+You can find this package at:
+
+https://CRAN.R-project.org/package=this.path
+
+Updates include:
+
+(1) added this.path::here (similar to here::here), for constructing
+the path to a file, starting with the executing script's directory
+
+(2) this.path::this.path is compatible with URLs in base::source, for
+example source("https://raw.githubusercontent.com/ArcadeAntics/this.path/main/tests/this.path_w_URLs.R")
+
+(3) added separate methods for extracting the shell argument 'FILE'
+for Windows and Unix-alikes (shell arguments are handled slightly
+differently between the two)
+
+(4) on Windows, in Rgui, added support for all languages listed by
+list.dirs(system.file(package = "translations"), full.names = FALSE,
+recursive = FALSE)
+
+If you're using version 0.4.4 or less, it is well worth upgrading.
+
+
+Regards,
+    Andrew Simmons
+
+
+From @te|@no@me@ch|@r| @end|ng |rom gm@||@com  Thu Jan 27 23:45:54 2022
+From: @te|@no@me@ch|@r| @end|ng |rom gm@||@com (Stefano Meschiari)
+Date: Thu, 27 Jan 2022 14:45:54 -0800
+Subject: [R-pkgs] latex2exp 0.9.0: Use LaTeX Expressions in Plots
+Message-ID: <CAMcXZtE84BN-Nbn_e6bm-w-UJUSjzVxC9Q7at4mkh72dzHUWDg@mail.gmail.com>
+
+Dear R users,
+
+latex2exp is an R package to use a subset of LaTeX to create formatted
+text and mathematical formulas and symbols. It can be used for axis
+labels, annotations, legends, titles, etc. throughout R?s plotting
+system and ggplot2.
+
+A call to TeX() such as `TeX(r"(\textbf{Euler's identity} is $e^{i\pi}
++ 1 = 0$.)")` will return an expression containing the formatted text
+and equation, suitable for plotting. latex2exp works by parsing the
+provided LaTeX string and converting it to R's plotmath expressions.
+
+A new major version of latex2exp (0.9.0), containing a rewritten
+parser, tens of new commands and symbols, and many bug fixes, is now
+available on CRAN:
+https://cran.r-project.org/package=latex2exp
+
+A website for the package, with examples, vignettes, and a searchable
+table of supported LaTeX commands, is available at:
+https://stefano-meschiari.github.io/latex2exp
+
+Finally, issues should be reported at:
+https://github.com/stefano-meschiari/latex2exp/
+
+Best regards,
+Stefano
+-- 
+Stefano Meschiari
+http://www.stefanom.io
+
+
+From d@nny @end|ng |rom |dem@@|ntern@t|on@|  Wed Feb  2 17:10:41 2022
+From: d@nny @end|ng |rom |dem@@|ntern@t|on@| (Danny Parsons)
+Date: Wed, 2 Feb 2022 16:10:41 +0000
+Subject: [R-pkgs] Package "naflex": Flexible Options for Handling Missing
+ Values
+Message-ID: <CABxkZL5b3Vfa=Q44iAgwQ0T6gK8BNU8W_3o_vzyb=azx=+t46g@mail.gmail.com>
+
+Dear all,
+
+I have recently released a new package "naflex" on CRAN:
+https://cran.r-project.org/web/packages/naflex/index.html.
+
+"naflex" provides helper functions that give additional flexibility for
+handling missing values in summary functions (beyond the current extremes
+of na.rm = TRUE/FALSE).
+
+For example, allow up to 20% of values to be missing:
+
+library(naflex)
+library(magrittr)
+x <- c(1, 3, NA, 4, 3, 2, NA, 5, 8, 7)
+mean(x %>% na_omit_if(prop = 0.2))
+# 4.125
+mean(x %>% na_omit_if(prop = 0.1))
+# NA
+
+Please see the package details or vignette for the full set of checks
+available.
+
+I hope this may be of use to some as a convenient way to work with various
+missing value rules.
+
+Feedback, suggestions and bug reports are welcome at
+https://github.com/dannyparsons/naflex or by email
+(danny at idems.international)
+
+Best regards,
+
+Danny Parsons
+
+	[[alternative HTML version deleted]]
+
+
+From dscoiby17 m@iii@g oii gm@ii@com  Fri Feb  4 21:31:59 2022
+From: dscoiby17 m@iii@g oii gm@ii@com (dscoiby17 m@iii@g oii gm@ii@com)
+Date: Fri, 4 Feb 2022 15:31:59 -0500
+Subject: [R-pkgs] spacejamr v0.2
+Message-ID: <031e01d81a06$4fa88600$eef99200$@gmail.com>
+
+Dear R users,
+
+ 
+
+I am pleased to announce that v0.2 of the spacejamr package is now available
+on CRAN.  This package enables social network analysis when social network
+data is unavailable. spacejamr simulates points from a spatial point process
+or sequence in a user-specified spatial window, converts distances between
+points into tie formation probabilities, and outputs an igraph object that
+can be analyzed with normal network analysis methods. In addition, the
+package includes plotting methods for spatial boundaries, point processes,
+and social networks.
+
+ 
+
+Some changes to this version are:
+
+ 
+
+            * Users can decide whether to use the coordinate reference
+system in the supplied shapefile or let the as.spacejamr() method find the
+best projected CRS.
+
+    
+
+             * spacejamr no longer depends on the methods package.
+
+    
+
+            * In line with new versions of the spatstat metapackage,
+spacejamr now calls functions from spatstat.random to simulate spatial point
+processes.
+
+ 
+
+Please check it out here:
+
+https://cran.r-project.org/package=spacejamr
+
+ 
+
+For more details on the methodology used in the package see:
+
+Carter T. Butts, (2002, ISBN:978-0-493-72676-2), "Spatial models of
+large-scale interpersonal networks."
+
+ 
+
+Best regards,
+
+ 
+
+Darren Colby
+
+ 
+
+
+	[[alternative HTML version deleted]]
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Thu Feb 17 22:25:39 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Thu, 17 Feb 2022 16:25:39 -0500
+Subject: [R-pkgs] this.path-package: get executing script's path
+Message-ID: <CAPcHnpQrOWjep3Js5UXJyhKmCCk=aw6kp_UygUKhyxGTc64MEA@mail.gmail.com>
+
+Hello everyone,
+
+
+R package 'this.path' has received an update, the current version
+number is 0.5.0
+You can find this package at:
+
+https://CRAN.R-project.org/package=this.path
+
+Updates include:
+
+(1) added this.path::here (similar to here::here), for constructing
+the path to a file, starting with the executing script's directory
+
+(2) this.path::this.path is compatible with URLs in base::source, for
+example source("https://raw.githubusercontent.com/ArcadeAntics/this.path/main/tests/this.path_w_URLs.R")
+
+(3) added separate methods for extracting the shell argument 'FILE'
+for Windows and Unix-alikes (shell arguments are handled slightly
+differently between the two)
+
+(4) on Windows, in Rgui, added support for all languages listed by
+list.dirs(system.file(package = "translations"), full.names = FALSE,
+recursive = FALSE)
+
+If you're using version 0.4.4 or less, it is well worth upgrading.
+
+
+Regards,
+    Andrew Simmons
+
+
+From k@ttw|nke|-m|r@ @end|ng |rom un|-|@nd@u@de  Tue Feb 15 10:11:39 2022
+From: k@ttw|nke|-m|r@ @end|ng |rom un|-|@nd@u@de (Mira Kattwinkel)
+Date: Tue, 15 Feb 2022 10:11:39 +0100
+Subject: [R-pkgs] update openSTARS
+Message-ID: <a32be8de-3ca0-bc62-d08b-b15b6865d6ab@uni-landau.de>
+
+Dear R users
+
+There is an update of openSTARS available on CRAN (now version 1.2.3), 
+fixing some problems in correct_complex_confluences.
+
+openSTARS provides GIS functionalities to delineate streams from DEMs, 
+derive catchments of sampling sites along streams and intersect with 
+potential covariates of stream monitoring data. It also prepares the 
+data to be further processed by geostatistical regression models using ssn.
+
+All the best,
+
+Mira
+
+-- 
+Dr. Mira Kattwinkel
+Quantitative Landscape Ecology
+iES Landau, Institute for Environmental Sciences
+University of Koblenz-Landau
+Fortstra?e 7
+76829 Landau
+Germany
+Phone: + 49 6341 280-31553
+Office: Building I, Room 2.02
+
+
+From |eg|d| @end|ng |rom un|t@@|t  Tue Feb 22 15:41:48 2022
+From: |eg|d| @end|ng |rom un|t@@|t (EGIDI LEONARDO)
+Date: Tue, 22 Feb 2022 14:41:48 +0000
+Subject: [R-pkgs] footBayes 0.1.0 for football modelling is on CRAN!
+Message-ID: <AS8P250MB0008A7F0B87BEE6E89344EE9B63B9@AS8P250MB0008.EURP250.PROD.OUTLOOK.COM>
+
+Hi all,
+
+just to inform you that the 'footBayes' package (version 0.1.0) is now on CRAN:
+
+ https://CRAN.R-project.org/package=footBayes<https://cran.r-project.org/package=footBayes>
+
+The package wants to be the most comprehensive tool for the football (soccer) modelling ecosystem.
+As such, it allows the estimation, the visualization and the prediction for the most
+well-known football (soccer) models, according to the references:
+
+Dixon and Coles (1997) <doi:10.1111/1467-9876.00065>,
+Karlis and Ntzoufras (2003) <doi:10.1111/1467-9884.00366> and
+Egidi, Pauli and Torelli (2018) <doi:10.1177/1471082X18798414>.
+
+In brief, the goal of ```footBayes``` is to propose a complete workflow to:
+
+- fit the most well-known football models: double Poisson, bivariate Poisson, Skellam, student-t, according to both maximum likelihood and Bayesian methods (+ Hamiltonian Monte Carlo engine);
+
+- visualize the teams' abilities, the model checks, the rank-league reconstruction;
+
+- predict out-of-sample matches.
+
+Try the package now and enjoy!
+Best.
+
+Leonardo Egidi
+University of Trieste
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From er|cwe|ne15 @end|ng |rom gm@||@com  Thu Feb 24 05:18:50 2022
+From: er|cwe|ne15 @end|ng |rom gm@||@com (Eric Weine)
+Date: Wed, 23 Feb 2022 23:18:50 -0500
+Subject: [R-pkgs] qqconf update to 1.2.0
+Message-ID: <CAO=DOOa+UjJgvd67=vHPtvsSusgsqfh_PrvQ1X3jge1SpyMVoQ@mail.gmail.com>
+
+Hello,
+
+qqconf has received an update to version 1.2.0. All interfaces are exactly
+the same, but the code to derive testing bands for qq plots has gotten
+substantially faster due to a new FFT method thanks to Amit Moscovich and
+Boaz Nadler (see documentation for more details).
+
+	[[alternative HTML version deleted]]
+
+
+From |8|5h9 @end|ng |rom gm@||@com  Mon Mar  7 10:14:59 2022
+From: |8|5h9 @end|ng |rom gm@||@com (=?utf-8?Q?Fernando_A_L=C3=B3pez_Hern=C3=A1ndez?=)
+Date: Mon, 7 Mar 2022 10:14:59 +0100
+Subject: [R-pkgs] spqdep: An R package to test for spatial dependence in
+ categorical spatial data
+Message-ID: <11C9A418-E478-41DD-ADD9-ADEB9535759F@gmail.com>
+
+Dear R users,
+
+I am happy to announce that a new package ?spqdep? is now available on CRAN.
+https://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/index.html>
+
+The objective of this R-package is to test for spatial dependence in categorical spatial data. 
+https://f8l5h9.github.io/spqdep/articles/spq_userguide.html <https://f8l5h9.github.io/spqdep/articles/spq_userguide.html>
+
+Several tests have been implemented in spqdep, namely, the classical joint count statistics, the Q-test based on symbolic dynamics, the Scan-test based on scan methodology and a new spatial test based on spatial-runs. All tests can be applied to categorical spatial cross-section data with two or more categories and asymptotic and bootstrap permutation distribution are implemented. The R package is completely documented, including several examples and an user-guide is available as a vignette.
+
+Best regards,
+Fernando L?pez
+
+
+	[[alternative HTML version deleted]]
+
+
+From dj@ndr|j@ @end|ng |rom gm@||@com  Mon Mar  7 15:01:46 2022
+From: dj@ndr|j@ @end|ng |rom gm@||@com (Andrija Djurovic)
+Date: Mon, 7 Mar 2022 15:01:46 +0100
+Subject: [R-pkgs] PDtoolkit: new version 0.2.0
+Message-ID: <CABcwgRSNJAUbDWvpdWctGjSqTvpzdeX1YAb2DhVR0YwAq+go5g@mail.gmail.com>
+
+Dear R users,
+
+the new version (0.2.0) of PDtoolkit package is now on CRAN.
+The is the package second update.
+
+Since the first release, besides minor improvements of the existing
+features, package is extended with a new functions:
+1. psi - calculates population stability index
+2. create.partitions - creates nested dummy variables
+3. evrs - uses for modeling the economic value of PD rating model
+4. interaction.transforme -  extracts risk factors interaction from
+decision tree
+
+For examples, please, install the new version of the package and check the
+help page of the functions.
+
+Best regards,
+Andrija Djurovic
+
+	[[alternative HTML version deleted]]
+
+
+From xwu @end|ng |rom em@||@t@mu@edu  Tue Mar  8 03:51:40 2022
+From: xwu @end|ng |rom em@||@t@mu@edu (ximing wu)
+Date: Mon, 7 Mar 2022 20:51:40 -0600
+Subject: [R-pkgs] rlcv: robust likelihood cross validation bandwidth
+ selection for kernel density estimation
+Message-ID: <be3c1a41-e3ee-52ef-a0fc-b40d4d3c669f@email.tamu.edu>
+
+Dear R users,
+
+I am happy to announce that a new package 'rlcv' is now available on? CRAN.
+
+https://cran.r-project.org/web/packages/rlcv/index.html
+
+Robust likelihood cross validation bandwidth for uni- and multi-variate 
+kernel densities. It is robust against fat-tailed distributions and/or 
+outliers. Based on "Robust Likelihood Cross-Validation for Kernel 
+Density Estimation," Wu (2019) <doi:10.1080/07350015.2018.1424633 
+<https://doi.org/10.1080%2F07350015.2018.1424633>>.
+
+Best regards,
+
+Ximing Wu
+
+
+	[[alternative HTML version deleted]]
+
+
+From du@@@@dr|@n @end|ng |rom gm@||@com  Thu Mar 17 12:19:03 2022
+From: du@@@@dr|@n @end|ng |rom gm@||@com (=?UTF-8?B?QWRyaWFuIER1yJlh?=)
+Date: Thu, 17 Mar 2022 13:19:03 +0200
+Subject: [R-pkgs] new version of package declared
+Message-ID: <CAJ=0CtDcomCvLRiXFTDLkRXWH+m1Tv7V53Q6VZhTM49udGwAfg@mail.gmail.com>
+
+Dear community,
+
+Version 0.12 of the package declared has just made it on CRAN.
+
+Apart from the usual functions to declare labels for regular and missing
+values, this version has a suite of new functions to calculate various
+weighted frequencies and summaries.
+
+The weighted versions are heavily inspired from the base R packages and
+other established contributed ones, but adapted to objects of class
+"declared".
+
+In hoping this might be helpful,
+
+Adrian Dusa
+University of Bucharest
+Romanian Social Data Archive
+Soseaua Panduri nr. 90-92
+050663 Bucharest sector 5
+Romania
+https://adriandusa.eu
+
+	[[alternative HTML version deleted]]
+
+
+From ||ndbrook @end|ng |rom gm@||@com  Thu Mar 17 18:26:53 2022
+From: ||ndbrook @end|ng |rom gm@||@com (Peter Li)
+Date: Thu, 17 Mar 2022 10:26:53 -0700
+Subject: [R-pkgs] PackageRank: Computation and Visualization of Package
+ Download Counts and Percentiles
+Message-ID: <31182898-BF95-4CFD-AEDB-3F5908658DAA@gmail.com>
+
+Hi all,
+
+packageRank v0.6.0 is now available. 
+
+??packageRank? is an R package that helps put package download counts into context. It does so via two core functions, cranDownloads() and packageRank(), a set of filters that reduces package download count inflation, and other assorted functions that help you assess interest in your package. 
+
+https://cran.r-project.org/package=packageRank
+
+https://github.com/lindbrook/packageRank
+
+Cheers. 
+	[[alternative HTML version deleted]]
+
+
+From Benj@m|n@W|@em@n @end|ng |rom KornFerry@com  Mon Mar 21 20:35:06 2022
+From: Benj@m|n@W|@em@n @end|ng |rom KornFerry@com (Ben Wiseman)
+Date: Mon, 21 Mar 2022 19:35:06 +0000
+Subject: [R-pkgs] sentiment.ai CRAN package (vignette is on github.io -
+ package is hosted on CRAN)
+Message-ID: <BY3PR05MB8114B0A33F847BF7B74494D49B169@BY3PR05MB8114.namprd05.prod.outlook.com>
+
+An easy way to do sentiment analysis (and more) based on deep learning: sentiment.ai, now on CRAN! https://cran.r-project.org/web/packages/sentiment.ai/index.html
+
+sentiment.ai  does sentiment analysis via deep learning (with tensorflow) and gradient boosting models with a lot of the underlying hassle taken care of to make the process as simple as possible. In addition to out-performing traditional, lexicon-based sentiment analysis, and even Azure Cognitive Services (see https://benwiseman.github.io/sentiment.ai/#Benchmarks), it also allows the user to create embedding vectors for text (via Google's U.S.E.) which can be used in other analyses (e.g. text similarity). What's more is that the community can contribute better sentiment scoring models to make sentiment analysis in R get better and better over time. Our aim is to make sentiment analysis more consistently good for all people with as little hassle as possible. GPU acceleration via NVIDIA CUDA is supported on Windows and Linux.
+
+To install the package, run:
+install.packages("sentiment.ai")
+# followed by
+sentiment.ai::install_sentiment.ai() # to set up python/tensorflow dependencies
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From j@w|eczo @end|ng |rom co|by@edu  Tue Mar 22 21:07:51 2022
+From: j@w|eczo @end|ng |rom co|by@edu (Jerzy Wieczorek)
+Date: Tue, 22 Mar 2022 16:07:51 -0400
+Subject: [R-pkgs] surveyCV: cross validation based on survey design
+Message-ID: <CAKRVze+TD-bbDVdE4usEEj5CLi_ZxMcNgPwdoJuo7QJswVOsmQ@mail.gmail.com>
+
+Dear R users,
+
+I have released a new package on CRAN:
+
+`surveyCV`: Cross Validation Based on Survey Design
+https://cran.r-project.org/package=surveyCV
+
+Following the design-based framework used in survey sampling, we
+provide functions to generate K-fold cross validation (CV) folds and
+CV test error estimates that are able to account for many common
+sampling designs (SRS, clustering, stratification, and/or unequal
+sampling weights). The sampling design can be specified directly or
+provided as a `svydesign` object from the `survey` package.
+
+For linear or logistic regression, the function `cv.svy()` carries out
+the entire CV process: generate folds, train fitted models, and
+calculate estimates of test error and their SEs, all while respecting
+the sampling design.
+For other model types, the function `folds.svy()` partitions your
+dataset into K folds that respect any stratification and clustering in
+the sampling design, so that these folds can be used in your own
+custom CV loop.
+
+Please see our package's README and `intro` vignette for examples:
+https://github.com/ColbyStatSvyRsch/surveyCV/#readme
+https://cran.r-project.org/web/packages/surveyCV/vignettes/intro.html
+
+For further details on the methodology, please see:
+Wieczorek, Guerin, and McMahon (2022), "K-Fold Cross-Validation for
+Complex Sample Surveys," *Stat* <doi:10.1002/sta4.454>
+https://doi.org/10.1002/sta4.454
+
+Feedback is welcome by email or at:
+https://github.com/ColbyStatSvyRsch/surveyCV/issues
+
+Best wishes,
+Jerzy Wieczorek
+
+PS -- The package was originally released in January as v0.1.1, but it
+was not announced here until now that the more feature-complete v0.2.0
+is available.
+
+--
+Jerzy Wieczorek
+Assistant Professor
+Department of Statistics
+Colby College
+5841 Mayflower Hill
+Waterville, ME 04901
+207-859-5841
+jawieczo at colby.edu
+https://civilstat.com/
+
+
+From m@pjg @end|ng |rom br|@to|@@c@uk  Sat Apr  2 16:58:17 2022
+From: m@pjg @end|ng |rom br|@to|@@c@uk (Peter Green)
+Date: Sat, 2 Apr 2022 15:58:17 +0100
+Subject: [R-pkgs] Nmix package - Bayesian inference about univariate
+ Gaussian mixtures with an unknown number of components
+Message-ID: <d52bf841-0a15-ba10-6585-155a33be35e9@bristol.ac.uk>
+
+This package is now on CRAN in version 2.0.2, and anyone interested in 
+inference on mixture models, or more generally in Bayesian inference for 
+"trans-dimensional" problems, is encouraged to try it out. The 
+methodology is that presented by Richardson and Green in our 1997 
+article in the Journal of the Royal Statistical Society, using 
+Reversible jump Markov chain Monte Carlo. The package is based on the 
+Fortran code used in the research for that paper, which is available now 
+to the R user for the first time. A rich variety of outputs from the 
+MCMC sample path is available, optionally, and many features of the 
+posterior distribution are presented graphically. Apart from its direct 
+use in analysing data, the package might be useful in supporting 
+learning about Bayesian computation.
+
+Feedback is most welcome, and I may be open to extending the 
+functionality of the package in response to concrete suggestions.
+
+regards,
+
+Peter Green
+
+
+From ric@rdo@i@@doit m@iii@g oii outiook@com  Wed May 25 08:58:21 2022
+From: ric@rdo@i@@doit m@iii@g oii outiook@com (ric@rdo@i@@doit m@iii@g oii outiook@com)
+Date: Wed, 25 May 2022 06:58:21 +0000
+Subject: [R-pkgs] shadowr: Selenium plugin to manage multiple levels of
+ shadow elements on web page
+In-Reply-To: <DBAPR02MB60375C21F4D303721CB7FE89E2D29@DBAPR02MB6037.eurprd02.prod.outlook.com>
+References: <DBAPR02MB60375C21F4D303721CB7FE89E2D29@DBAPR02MB6037.eurprd02.prod.outlook.com>
+Message-ID: <DBAPR02MB6037AC908F3B241F11DB921DE2D69@DBAPR02MB6037.eurprd02.prod.outlook.com>
+
+Dear R users,
+
+
+I am happy to announce that my new package shadowr is now available on
+CRAN.
+
+The package enables to use the shadow selenium plugin<https://github.com/sukgu/shadow-automation-selenium> to manage multi level shadow DOM elements on web page.
+
+Shadow DOM is a web standard that offers component style and markup encapsulation.
+
+It is a critically important piece of the Web Components story as it ensures that a component will work in
+
+any environment even if other CSS or JavaScript is at play on the page.
+
+The problem is that Custom HTML tags can?t be directly identified with selenium tools.
+
+If you just need to click a cookie accept button and if there is only a one level shadow dom structure,
+
+you could just copy the js path and let the selenium driver execute this js code.
+
+For details and examples please check out the github page.
+
+But when you have a multi level shadow dom structure and have to do different things with the elements like get the text or click them,
+
+sooner or later things get complicated.
+
+You would have to handle a lot of long strings and depending on the action and amount of elements also modify/extend the strings.
+
+Shadowr enable R users a more comfortable and reliable way to work with shadow dom elements.
+
+
+https://cran.r-project.org/web/packages/shadowr/index.html, README file on CRAN page
+
+https://cran.r-project.org/package=shadowr or blog article https://www.shadowr.org/.
+
+
+Best regards,
+Ricardo Landolt
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From j@w|eczo @end|ng |rom co|by@edu  Wed Jun 22 03:16:43 2022
+From: j@w|eczo @end|ng |rom co|by@edu (Jerzy Wieczorek)
+Date: Tue, 21 Jun 2022 21:16:43 -0400
+Subject: [R-pkgs] {CIPerm}: Computationally-Efficient Confidence Intervals
+ for Mean Shift from Permutation Methods
+Message-ID: <CAKRVzeL7Sx=xqTCNrAd2CRk+EAq4jVgpwayKKiFeEk8PNST6YA@mail.gmail.com>
+
+Dear R users,
+
+Emily Tupaj and I recently released a new package on CRAN:
+
+{CIPerm}: Computationally-Efficient Confidence Intervals
+for Mean Shift from Permutation Methods
+https://cran.r-project.org/package=CIPerm
+
+Problem:
+It is straightforward to carry out a permutation or randomization test of
+H_0: mu_A - mu_B = 0
+but the "naive" approach to getting a confidence interval for the mean
+shift parameter
+(mu_A - mu_B)
+is more computationally-intensive. In this "naive" approach we would test
+H_0: mu_A - mu_B = delta
+for many values of delta, and let our CI be the delta values where we
+did not reject H_0. This requires running a new permutation test for
+each candidate value of delta.
+
+Our contribution:
+Instead of the naive approach, our R package implements an exact
+method derived by Minh Nguyen (2009) to calculate such confidence
+interval endpoints from a single set of permutations. Thus, it is no
+more computationally expensive than a single standard permutation
+test.
+
+Please see our package's README and `nguyen` vignette for examples and
+a brief overview of the method:
+https://github.com/ColbyStatSvyRsch/CIPerm#readme
+https://cran.r-project.org/web/packages/CIPerm/vignettes/nguyen.html
+
+Our `naive` vignette contains timing tests to compare the
+computational speeds of Nguyen's method against the naive approach.
+For large datasets, Nguyen's method is substantially faster:
+https://cran.r-project.org/web/packages/CIPerm/vignettes/naive.html
+
+For details on the methodology, please see:
+Nguyen, M.D. (2009). "Nonparametric Inference using Randomization and
+Permutation Reference Distribution and their Monte-Carlo
+Approximation" [unpublished MS thesis; Mara Tableman, advisor],
+Portland State University. Dissertations and Theses. Paper 5927.
+https://doi.org/10.15760/etd.7798
+
+Feedback is welcome by email or at:
+https://github.com/ColbyStatSvyRsch/CIPerm/issues
+
+Best wishes,
+Jerzy Wieczorek
+
+-- 
+Jerzy Wieczorek
+Assistant Professor
+Department of Statistics
+Colby College
+5841 Mayflower Hill
+Waterville, ME 04901
+207-859-5841
+jawieczo at colby.edu
+
+
+From @h@e|ebrown @end|ng |rom gm@||@com  Mon Aug 15 19:20:59 2022
+From: @h@e|ebrown @end|ng |rom gm@||@com (Shael Brown)
+Date: Mon, 15 Aug 2022 13:20:59 -0400
+Subject: [R-pkgs] TDApplied: Machine Learning and Inference for Topological
+ Data Analysis
+Message-ID: <CAESJsLvGMY_YJe6fkWgSZAsASGgGeZ8SHD5=NAyjOhCqpFCjug@mail.gmail.com>
+
+Dear R users,
+
+I am very excited to announce my new package TDApplied is now available on
+CRAN.
+
+Topological data analysis is a powerful tool for finding non-linear global
+structure in whole datasets. 'TDApplied' aims to bridge topological data
+analysis with data, statistical and machine learning practitioners so that
+more analyses may benefit from the power of topological data analysis. The
+main tool of topological data analysis is persistent homology, which
+computes a shape descriptor of a dataset, called a persistence diagram.
+There are three goals of this package: (1) convert persistence diagrams
+computed using the two main R packages for topological data analysis into a
+data frame, (2) implement fast versions of both distance and kernel
+calculations for pairs of persistence diagrams, and (3) provide scalable
+methods for machine learning and inference for persistence diagrams.
+
+For details and examples please check out the github page
+https://github.com/shaelebrown/TDApplied or the README file on CRAN
+https://cran.r-project.org/web/packages/TDApplied/readme/README.html
+
+I sincerely hope that you will enjoy using this package and that it helps
+the field of topological data analysis progress in both academia and
+industry.
+
+Best regards,
+Shael
+
+	[[alternative HTML version deleted]]
+
+
+From Den|@@Cou@|ne@u @end|ng |rom uott@w@@c@  Wed Aug 24 16:32:25 2022
+From: Den|@@Cou@|ne@u @end|ng |rom uott@w@@c@ (Denis Cousineau)
+Date: Wed, 24 Aug 2022 14:32:25 +0000
+Subject: [R-pkgs] CohensdpLibrary: Compute Cohen's d and its confidence
+ interval in any experimental design
+Message-ID: <0175872f-a228-5b53-f9df-0b4bd6e69d18@uottawa.ca>
+
+Dear all,
+
+If you are using Cohen's d, this package is for you. The package "CohensdpLibrary" lets you compute Cohen's d from basic statistics and also get confidence intervals. It expands on MBESS as it is available for data obtained in within-subject designs as well as between-subject designs.
+
+It is based on a simple command, e. g.,
+
+Cohensdp( statistics = list(m1=76, m2=72, n=20, s1=14.8, s2=18.8, r=0.2),
+          design = "within"
+)
+
+Learn more at
+
+https://dcousin3.github.io/CohensdpLibrary/
+
+Sincerely,
+Denis Cousineau.
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From y@||n@zhu @end|ng |rom merck@com  Fri Sep  2 16:26:11 2022
+From: y@||n@zhu @end|ng |rom merck@com (Zhu, Yalin)
+Date: Fri, 2 Sep 2022 14:26:11 +0000
+Subject: [R-pkgs] gMCPLite: Lightweight Graph Based Multiple Comparison
+ Procedures
+Message-ID: <SN4P106MB014480742C9B8DCA49C094B1FD7A9@SN4P106MB0144.NAMP106.PROD.OUTLOOK.COM>
+
+Dear all,
+
+I am happy to announce that {gMCPLite} is now on CRAN. It is a lightweight fork of {gMCP} for graph-based multiple comparison procedures, with {ggplot2} multiplicity graph visualizations, graphical testing for group sequential design workflows, and essential unit testing.
+
+I hope you find it helpful. Please feel free to reach out with feedbacks or questions.
+
+CRAN: https://cran.r-project.org/package=gMCPLite 
+Documentation: https://merck.github.io/gMCPLite/ 
+
+-Yalin Zhu
+
+This e-mail message, together with any attachments, cont...{{dropped:10}}
+
+
+From me @end|ng |rom n@nx@me  Fri Sep  2 19:27:34 2022
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Fri, 02 Sep 2022 13:27:34 -0400
+Subject: [R-pkgs] pkglite 0.2.1 is released
+Message-ID: <472c1447-c521-4b9b-8274-321a602b56c9@www.fastmail.com>
+
+Dear all,
+
+A new version of pkglite (0.2.1) is now on CRAN (https://cran.r-project.org/package=pkglite). pkglite offers a tool, grammar, and standard to represent and exchange R package source code as text files.
+
+This version brings expanded coverage of file types (before: 88.85%, after: 96.65%, tested among all files in all CRAN packages), fewer dependencies, and more low-level enhancements. Please see the changelog (https://merck.github.io/pkglite/news/) for details.
+
+Thanks,
+-Nan
+
+
+From du@@@@dr|@n @end|ng |rom gm@||@com  Thu Sep 29 19:17:36 2022
+From: du@@@@dr|@n @end|ng |rom gm@||@com (=?UTF-8?B?QWRyaWFuIER1yJlh?=)
+Date: Thu, 29 Sep 2022 20:17:36 +0300
+Subject: [R-pkgs] new version of package declared
+Message-ID: <CAJ=0CtBM_tyfu1DuMjf3Oq8TJY-eW+AOopE=qywJ=NpNWWCzTw@mail.gmail.com>
+
+Dear R-list,
+
+It gives me great pleasure to announce the release of version 0.18 of
+package declared, that makes a difference between empty missing values (the
+current NAs in R) and declared missing values (NAs with a reason).
+
+Besides an automatic detection of such values by most base R operations
+(including ==, != etc.), package declared also offers weighted versions of
+most common summaries (ex. mean, median, sd, quantile) that also apply on
+the declared missing values, something not covered by other similar
+functions.
+
+Version 0.18 is fully documented using Roxygen2 and extensively (even
+obsessively) tested to achieve no less than 100% code coverage, using more
+than 750 tests including the "golden" ones capturing output using
+snapshots. It also features three Vignettes showcasing the package's
+features.
+
+Many thanks to Daniel Antal for the enthusiastic support and contribution
+to the initial Roxygen2 and pkgdown documentation, bringing this package
+closer to the rOpenSci standards. Most functions are now generic, allowing
+extensions to any type of object, for both creation and coercion to class
+"declared".
+
+Platform specific binaries are soon to be built on CRAN, but they are also
+available and can be installed from R-universe package page:
+https://dusadrian.r-universe.dev/ui#package:declared
+
+As always, bug reporting and feature proposals are more than welcome.
+Adrian
+
+	[[alternative HTML version deleted]]
+
+
+From me @end|ng |rom n@nx@me  Wed Oct 12 20:05:35 2022
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Wed, 12 Oct 2022 14:05:35 -0400
+Subject: [R-pkgs] gsDesign 3.4.0 is released
+Message-ID: <b16750c6-f7ad-4399-9077-574ba3d06236@app.fastmail.com>
+
+Dear all,
+
+A new version of gsDesign (3.4.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).
+
+This version removes restrictions on conditional power calculations for interim test statistic and brings improvements on dependencies and lifecycle management. Please see the changelog (https://keaven.github.io/gsDesign/news/) for details.
+
+Thanks,
+-Nan
+
+
+From @cpubr @end|ng |rom gm@||@com  Mon Oct 17 16:28:51 2022
+From: @cpubr @end|ng |rom gm@||@com (Enrique Blanco Carmona)
+Date: Mon, 17 Oct 2022 16:28:51 +0200
+Subject: [R-pkgs] SCpubr: Generate high quality,
+ publication-ready plots of single-cell transcriptomics data.
+Message-ID: <CAJHOHbtK4+PnmMt3Mf=iX0pvFmpVoUjS50=NXQ0to_jiGLT8mw@mail.gmail.com>
+
+Dear R community,
+
+It is my pleasure to announce that my new R package (*SCpubr
+<https://github.com/enblacar/SCpubr>*) to generate *high-quality,
+publication-ready plots* for *single-cell transcriptomics* data has been
+released *on CRAN
+<https://cran.r-project.org/web/packages/SCpubr/index.html>*. It uses *Seurat
+objects* <https://cran.r-project.org/web/packages/Seurat/index.html> as
+backbone to generate any type of data visualisation you might need for your
+research!
+
+If this is of interest to you, please give it a try! You can have an
+in-depth look of *SCpubr's *functionalities in the *documentation book*
+<https://enblacar.github.io/SCpubr-book/>.
+
+Any kind of feedback is appreciated!
+
+Best,
+Enrique
+-- 
+*Enrique Blanco Carmona*
+Developer and maintainer
+
+*SCpubr*
+*[CRAN package <https://cran.r-project.org/web/packages/SCpubr/index.html>]
+| [GitHub <https://github.com/enblacar/SCpubr>] | [Documentation Book
+<https://enblacar.github.io/SCpubr-book/>]*
+
+	[[alternative HTML version deleted]]
+
+
+From @h@e|ebrown @end|ng |rom gm@||@com  Wed Nov  9 14:17:06 2022
+From: @h@e|ebrown @end|ng |rom gm@||@com (Shael Brown)
+Date: Wed, 9 Nov 2022 09:17:06 -0400
+Subject: [R-pkgs] TDApplied version 2.0.0
+Message-ID: <CAESJsLuT6TdnaUATFV6pddbzxSLBqbQgGLGdmynwQoK9dZ_JRA@mail.gmail.com>
+
+Dear R users,
+
+I am very excited to announce TDApplied version 2.0.0 is now available on
+CRAN, with some significant improvements to the previous version.
+
+Topological data analysis is a powerful tool for finding non-linear global
+structure in whole datasets. 'TDApplied' aims to bridge topological data
+analysis with data, statistical and machine learning practitioners so that
+more analyses may benefit from the power of topological data analysis. The
+main tool of topological data analysis is persistent homology, which
+computes a shape descriptor of a dataset, called a persistence diagram.
+
+There are five goals of this package:
+
+(1) convert persistence diagrams computed using the two main R packages for
+topological data analysis into a data frame,
+(2) implement fast versions of both distance and kernel calculations
+    for pairs of persistence diagrams,
+(3) provide methods for machine learning and inference for persistence
+diagrams which scale well,
+(4) deliver a fast implementation of persistent homology via a python
+interface, and
+(5) contribute tools for the interpretation of persistence diagrams.
+
+For details and examples please check out the github page
+https://github.com/shaelebrown/TDApplied or the README file on CRAN
+https://cran.r-project.org/web/packages/TDApplied/readme/README.html
+
+I sincerely hope that you will enjoy using this updated version and that it
+helps the field of topological data analysis progress in both academia and
+industry.
+
+Best regards,
+Shael
+
+	[[alternative HTML version deleted]]
+
+
+From d@t@|owe @end|ng |rom po@teo@de  Fri Nov 11 18:27:55 2022
+From: d@t@|owe @end|ng |rom po@teo@de (Lowe Wilsson)
+Date: Fri, 11 Nov 2022 17:27:55 +0000
+Subject: [R-pkgs] synr: Analyze stimulus-color consistency test data
+Message-ID: <eecad148a1987e4f8b053b564c614158@posteo.de>
+
+ Dear fellow useRs,
+
+synr is an R package for working with data resulting from so-called
+consistency tests, aimed at studying associations between stimuli and
+colors. A simple example of such an association is if someone
+experiences the color blue when hearing a particular word, or seeing the
+letter 7 as red even if it is printed in black. The package, like
+consistency tests, is especially relevant for synesthesia research but
+may be of use to others researching color experiences. Yet others might
+be interested in how the package utilizes the DBSCAN clustering
+algorithm to evaluate variation in 3D space point coordinates.
+
+You can learn more in an article just published in Behavior Research
+Methods, "synr: An R package for handling synesthesia consistency test
+data": https://rdcu.be/cZrrh [1]
+
+The package itself also includes comprehensive vignettes explaining its
+use. CRAN link: https://cran.r-project.org/web/packages/synr/index.html
+[2]
+
+Issue reports and contributions are very welcome on GitHub:
+https://github.com/datalowe/synr [3] I've also created a GitHub page
+with Packrat which includes nicely-formatted versions of the vignettes:
+https://datalowe.github.io/synr [4]
+
+I hope you'll find the package useful!
+
+Sincerely,
+Lowe Wilsson 
+
+Links:
+------
+[1] https://rdcu.be/cZrrh
+[2] https://cran.r-project.org/web/packages/synr/index.html
+[3] https://github.com/datalowe/synr
+[4] https://datalowe.github.io/synr
+
+	[[alternative HTML version deleted]]
+
+
+From d@v|dhughjone@ @end|ng |rom gm@||@com  Wed Dec  7 17:57:12 2022
+From: d@v|dhughjone@ @end|ng |rom gm@||@com (David Hugh-Jones)
+Date: Wed, 7 Dec 2022 16:57:12 +0000
+Subject: [R-pkgs] onetime 0.1.0: Run Code Only Once
+Message-ID: <CAARY7kg9QnxFkNh_MMO1=xa4wMOet=McSFN1y1JTMK1d5F9MPQ@mail.gmail.com>
+
+Dear all,
+
+Onetime 0.1.0, a utility package of interest to package developers, is now
+on CRAN:
+
+https://cran.r-project.org/package=onetime
+
+Onetime uses lockfiles to perform an action only once (ever, or with an
+expiry date) on a given computer. For example, it can send a message or
+warning:
+
+for (i in 1:10) {
+  onetime_message("This will be shown only once", id = "my-message")
+}
+
+It also lets you send a message and confirm the user doesn't need to see it
+again:
+
+onetime_message_confirm("User can opt not to show this message again",
+                                             id = "my-confirm-message")
+
+Onetime checks that you have permission to store files on the user's
+computer, and allows package authors to ask for this permission using
+check_ok_to_store().
+
+Package authors can use onetime to print one-off informative messages for
+new users, or to do other one-off actions.
+
+Documentation is available at https://hughjonesd.github.io/onetime/.
+
+Cheers,
+David
+
+	[[alternative HTML version deleted]]
+
+

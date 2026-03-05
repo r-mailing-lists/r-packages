@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-05",
+  "messages": [
+    {
+      "id": "msg-574a34eae2c0",
+      "message_id": "<5547D53F.30201@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2015-05-04T15:23:27-05:00",
+      "subject": "[R-pkgs] Version 3.16-0 of Hmisc now on CRAN",
+      "subject_clean": "Version 3.16-0 of Hmisc now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Several updates have been made to the Hmisc package:\n\nChanges in version 3.16-0 (2015-04-25)\n    * html.contents.data.frame: corrected html space character to add \nsemicolon\n    * ggplot.summaryP: added size of points according to denominators\n    * colorFacet: new function\n    * labelPlotmath: added chexpr argument (used by rms::ggplot.Predict)\n    * rcsplineFunction: added type='integral'\n    * summaryP: fixed bug with sort=FALSE using mfreq when shouldn't\n    * summaryP: stored levels(val) in original levels order\n    * summaryM: removed observations added by addMarginal when computing \nN in left column of tables\n    * html.latex: added method for htlatex, added where argument, \ncleaned up code, implemented file='' for knitr when using html/Rmarkdown\n    * summaryM, summary.formula: changed calls to translate to gsub()\n    * summaryP: corrected but in exclude1 logic, moved exclude1 to \nmethods that operate on summaryP objects and out of summaryP itself\n    * addMarginal: respect original levels, add argument margloc\n    * added latticeExtra:: in front of function calls\n    * numeric.string, all.is.numeric: replaced options(warn=-1) with \nsuppressWarnings() (thanks: Yihui)\n    * arrGrob, print.arrGrob: new functions\n    * wtd.var: added maximum likelihood method, fixed unbiased method, \nimproved documentation (all provided by Benjamin Tyner)\n    * Changed all any(duplicated()) to anyDuplicated(); thanks Benjamin \nTyler\n    * getRs: new function to interact with \nhttps://github.com/harrelfe/rscripts\n    * knitrSet: new function to setup knitr with nice defaults for books \netc.\n      * rcorr: fixed sensing of NAs and diagonal elements of n matrix; \nthanks: Keith Jewell, Campden BRI Group; similar for hoeffd\n\n-- \n------------------------------------------------------------------------\nFrank E Harrell Jr \tProfessor and Chairman \tSchool of Medicine\n\n\tDepartment of *Biostatistics* \t*Vanderbilt University*\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Several updates have been made to the Hmisc package:\n\nChanges in version 3.16-0 (2015-04-25)\n    * html.contents.data.frame: corrected html space character to add \nsemicolon\n    * ggplot.summaryP: add",
+      "thread_id": "thread-574a34eae2c0",
+      "thread_depth": 0,
+      "month": "2015-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-574a34eae2c0",
+      "subject": "Version 3.16-0 of Hmisc now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2015-05-04T15:23:27-05:00",
+      "last_reply": "2015-05-04T15:23:27-05:00",
+      "root_message_id": "msg-574a34eae2c0"
+    }
+  ]
+}

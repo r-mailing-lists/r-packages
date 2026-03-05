@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-01",
+  "messages": [
+    {
+      "id": "msg-c68429fe759b",
+      "message_id": "<1420732024.1630726.211270997.4D25E01A@webmail.messagingengine.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "66398086331ca3bb01fe938c661c80a9e3dcd3f31a80727de9b1215eb9fd90db",
+      "date": "2015-01-08T15:47:04Z",
+      "subject": "[R-pkgs] Package \"ore\": Oniguruma Regular Expressions",
+      "subject_clean": "Package \"ore\": Oniguruma Regular Expressions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm pleased to announce the availability of the \"ore\" package (for\n\"Oniguruma Regular Expressions\"), which offers an alternative to base\nR's functions for searching, splitting and substituting text which\nmatches (Perl-style) regular expressions. The package uses the\nOniguruma/Onigmo regex library behind the scenes, and offers the\nfollowing advantages:\n\n- Regular expressions are themselves first-class objects (of class\n\"ore\"), stored with attributes containing information such as the number\nof parenthesised groups present within them. This means that it is not\nnecessary to compile a particular regex more than once.\n- Search results focus around the matched substrings (including\nparenthesised groups), rather than the locations of matches. This saves\nextra work with \"substr\" or similar to extract the matches themselves.\n- Substantially better performance, especially when matching against\nlong strings.\n- Substitutions can be functions as well as strings.\n- Matches can be efficiently obtained over only part of the strings.\n- Fewer core functions, with more consistent names.\n\nThe package is developed using GitHub, and more information can be found\nat <https://github.com/jonclayden/ore>. It is also available on CRAN.\n\nIn addition, I've developed a regular expression benchmark, which pits\n\"ore\", \"base\" and the \"stringi\" package against the full text of The\nAdventures of Sherlock Holmes. It can be obtained and run via\n<https://github.com/jonclayden/regex-performance>. Sample output is\navailable at <http://rpubs.com/jonclayden/regex-performance>.\n\nContributions to the package or the benchmark are very welcome.\n\nAll the best,\nJon",
+      "body_snippet": "Dear all,\n\nI'm pleased to announce the availability of the \"ore\" package (for\n\"Oniguruma Regular Expressions\"), which offers an alternative to base\nR's functions for searching, splitting and substitut",
+      "thread_id": "thread-c68429fe759b",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-e45b99303740",
+      "message_id": "<CAFDcVCR7jpZLjf9cSkw84+KWg=Ai=TGTjXEmhZdyza5HJoqR_g@mail.gmail.com>",
+      "from_name": "Henrik Bengtsson",
+      "from_email_hash": "a578bc6fcbd48aad24b4b0f4186124fb1b69f77c14884741fd6a4c1cac8fc3bb",
+      "date": "2015-01-26T13:19:59-08:00",
+      "subject": "[R-pkgs] matrixStats 0.13.1 - Methods that Apply to Rows and Columns of a Matrix (and Vectors)",
+      "subject_clean": "matrixStats 0.13.1 - Methods that Apply to Rows and Columns of a Matrix (and Vectors)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new release 0.13.1 of matrixStats is now on CRAN\n[http://cran.r-project.org/package=matrixStats]. The source code is\navailable on GitHub [https://github.com/HenrikBengtsson/matrixStats].\n\n\nWHAT DOES IT DO?\n\nThe matrixStats package provides highly optimized functions for\ncomputing common summaries over rows and columns of matrices,\ne.g.rowQuantiles(). There are also functions that operate on vectors,\ne.g. logSumExp(). Their implementations strive to minimize both memory\nusage and processing time. They are often remarkably faster compared\nto good old apply() solutions. The calculations are mostly implemented\nin C, which allow us to optimize(*) beyond what is possible to do in\nplain R. The package installs out-of-the-box on all common operating\nsystems, including Linux, OS X and Windows.\n\nThe following example computes the median of the columns in a 20-by-500 matrix:\n\n    > library(\"matrixStats\")\n    > X <- matrix(rnorm(20 * 500), nrow = 20, ncol = 500)\n    > stats <- microbenchmark::microbenchmark(colMedians = colMedians(X),\n    +     `apply+median` = apply(X, MARGIN = 2, FUN = median), unit = \"ms\")\n    > stats\n    Unit: milliseconds\n            expr   min    lq  mean median   uq    max neval cld\n      colMedians  0.41  0.45  0.49   0.47  0.5   0.75   100  a\n    apply+median 21.50 22.77 25.59  23.86 26.2 107.12   100   b\n\nIt shows that colMedians() is ~51 times faster than apply(...,\nMARGIN=2, FUN=median) in this particular case. The relative gain\nvaries with matrix shape, so you should benchmark with your\nconfigurations. You can also play around with the benchmark reports\nthat are under development, e.g. html <-\nmatrixStats:::benchmark(\"colRowMedians\"); !html.\n\n\nWHAT IS NEW?\n\nWith this release, all the functions run faster than ever before and\nat the same time use less memory than ever before, which in turn means\nthat now even larger data matrices can be processed without having to\nupgrade the RAM. A few small bugs have also been fixed and some\n?missing? functions have been added to the R API. This update is part\nof a long-term tune-up that started back in June 2014. Most of the\nmajor groundwork has already been done, but there is still room for\nimprovements. If you're using matrixStats functions in your package\nalready now, you should see some notable speedups for those function\ncalls, especially compared to what was available back in June. For\ninstance, rowMins() is now 5-20 times faster than functions such as\nbase::pmin.int() whereas in the past they performed roughly the same.\n\nI've also added a large number of new package tests; the R and C\nsource code coverage has recently gone up from 59% to 96% (? and\ncounting) [https://coveralls.io/r/HenrikBengtsson/matrixStats?branch=develop].\nSome of the bugs were discovered as part of this effort. Here a\nspecial thank should go out to Jim Hester for his great work on covr\n[https://github.com/jimhester/covr], which provides me with on-the-fly\ncoverage reports via Coveralls. (You can run covr locally or via\nGitHub + Travis CI, which is very easy if you're already up and\nrunning there. Try it!) I would also like to thank the R core team and\nthe CRAN team for their continuous efforts on improving the package\ntests that we get via R CMD check but also via the CRAN farm (which\noccasionally catches code issues that I'm not always seeing on my\nend).\n\nFootnote:\n(*) One strategy for keeping the memory footprint at a minimum is to\noptimize the implementations for the integer and the numeric (double)\ndata types separately. Because of this, a great number of data-type\ncoercions are avoided, coercions that otherwise would consume precious\nmemory due to temporarily allocated copies, but also precious\nprocessing time because the garbage collector later would have to\nspend time cleaning up the mess. The new weightedMean() function,\nwhich is many times faster than stats::weighted.mean(), is one of\nseveral cases where this strategy is particular helpful.\n\n\nAny type of feedback, including bug reports, is always appreciated!\n\nThanks,\n\nHenrik",
+      "body_snippet": "A new release 0.13.1 of matrixStats is now on CRAN\n[http://cran.r-project.org/package=matrixStats]. The source code is\navailable on GitHub [https://github.com/HenrikBengtsson/matrixStats].\n\n\nWHAT DOES",
+      "thread_id": "thread-e45b99303740",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-1ffc4f55218e",
+      "message_id": "<CA+zP7HHJJZZ76kg88O_27JBD7tHRN7GLEoEGnN9AexMS8nYanA@mail.gmail.com>",
+      "from_name": "Jack Wasey",
+      "from_email_hash": "7d2f0b8d1ea7b010c54f9af90a9adc619e9597f35408f75c7bd1722f2f428db2",
+      "date": "2015-01-27T06:57:04-05:00",
+      "subject": "[R-pkgs] Major update: icd9 1.0",
+      "subject_clean": "Major update: icd9 1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nAn updated icd9 package is now on CRAN.\n\nCalculate comorbidities, and perform fast and accurate validation,\nconversion, manipulation, filtering and comparison of ICD-9-CM\n(clinical modification) codes. The package enables a work flow from\nraw lists of ICD-9 codes from hospital billing databases to\ncomorbidities. ICD-9 to comorbidity mappings from Quan (Deyo and\nElixhauser versions), Elixhauser and AHRQ included.\n\nA vignette describes the main features:\nhttp://cran.r-project.org/web/packages/icd9/vignettes/introduction.html\n\n# Version 1.0\n\n* Calculate Charlson scores\n* Sum distinct comorbidities or diagnoses by patient\n* Core rewrite in C++ for 50+ times speed improvement. 100,000\npatients assigned comorbidities in ~2 seconds.\n* Simplified handling validation of codes. No longer done in every function.\n* Most functions now guess the ICD-9 code type automatically (e.g.\n00321 vs 003.21)\n* Reduced external dependencies down to Rcpp and checkmate (a very\nlightweight and fast function argument checker)\n* Bug fixes (see\n[github](https://github.com/jackwasey/icd9/issues?q=is%3Aissue+is%3Aclosed))\n* API changes\n    - no more validation except in the icd9IsValidXxx functions.\nRemoved stopIfInvalidIcd9, icd9InvalidActions\n    - internalized utility functions. They are also packaged and\ntested in [jwutil](http://cran.r-project.org/web/packages/jwutil/index.html)\n    - deprecated icd9ValidXxx in favour of icd9IsValidXxx\n    - deprecated icd9ComorbditiesXxx replacing with briefer icd9ComorbidXxx\n    - stopped exporting benchmarking and SAS code processing.\n\nComments and contributions very welcome via github:\nhttps://github.com/jackwasey/icd9\n\nJack Wasey",
+      "body_snippet": "Dear R users,\n\nAn updated icd9 package is now on CRAN.\n\nCalculate comorbidities, and perform fast and accurate validation,\nconversion, manipulation, filtering and comparison of ICD-9-CM\n(clinical modi",
+      "thread_id": "thread-1ffc4f55218e",
+      "thread_depth": 0,
+      "month": "2015-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c68429fe759b",
+      "subject": "Package \"ore\": Oniguruma Regular Expressions",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2015-01-08T15:47:04+00:00",
+      "last_reply": "2015-01-08T15:47:04+00:00",
+      "root_message_id": "msg-c68429fe759b"
+    },
+    {
+      "id": "thread-e45b99303740",
+      "subject": "matrixStats 0.13.1 - Methods that Apply to Rows and Columns of a Matrix (and Vectors)",
+      "message_count": 1,
+      "participants": [
+        "Henrik Bengtsson"
+      ],
+      "started": "2015-01-26T13:19:59-08:00",
+      "last_reply": "2015-01-26T13:19:59-08:00",
+      "root_message_id": "msg-e45b99303740"
+    },
+    {
+      "id": "thread-1ffc4f55218e",
+      "subject": "Major update: icd9 1.0",
+      "message_count": 1,
+      "participants": [
+        "Jack Wasey"
+      ],
+      "started": "2015-01-27T06:57:04-05:00",
+      "last_reply": "2015-01-27T06:57:04-05:00",
+      "root_message_id": "msg-1ffc4f55218e"
+    }
+  ]
+}

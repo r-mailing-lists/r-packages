@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-04",
+  "messages": [
+    {
+      "id": "msg-9721b2290b28",
+      "message_id": "<02C0B4336BD2BC4A8FC51CDF98D2F494ABF00C15@DC1VEX10MB001.air.org>",
+      "from_name": "Bailey, Paul",
+      "from_email_hash": "e20d611f5efacffb9bedddfd892830a4c0ab94777fdbf7666084c2ec3bb202c9",
+      "date": "2015-04-28T19:43:15Z",
+      "subject": "[R-pkgs] New package: lfactors (0.4-0)",
+      "subject_clean": "New package: lfactors (0.4-0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe \"lfactors\" package is now available from CRAN. It provides a class \"lfactor\" that is similar to the class \"factor\" but can be referred to by level or label.\n\nThis package is best explained with an example\n\nflips <- lfactor(c(0,1,1,0,0,1), levels=0:1, labels=c(\"Tails\", \"Heads\"))\n# Tails can now be referred to as, \"Tails\" or 0\n# These two lines return the same result\nflips == \"Tails\"\nflips == 0\n\nOther functions, such as %in% and != also work with lfactors.\n\nThis package is helpful for data that was labeled with long labels, making references to the label cumbersome. This happens to me when I'm sharing data with users of other statistical software that uses the same convention as lfactors--that is, allowing a factor level to be referred to by its numeric or character value.\n\nComments, contributions, and suggests are welcome.\n\nBest,\nPaul\n---\nPaul D. Bailey, Ph.D.\nEconomist, Education\nAmerican Institutes for Research\n202.403.5694",
+      "body_snippet": "Dear R users,\n\nThe \"lfactors\" package is now available from CRAN. It provides a class \"lfactor\" that is similar to the class \"factor\" but can be referred to by level or label.\n\nThis package is best ex",
+      "thread_id": "thread-9721b2290b28",
+      "thread_depth": 0,
+      "month": "2015-04"
+    },
+    {
+      "id": "msg-9d28cd28cfe4",
+      "message_id": "<CAN17LWM+mpR0GvVDzMGCR0iBVm-y-GY2XD8LVLuM6FMi7t50dw@mail.gmail.com>",
+      "from_name": "Kyle Hamilton",
+      "from_email_hash": "0ce4e7e25c0d4d7fa89ad8900d93aa52c9ca9d18b936d29c5499bb90d7317c6d",
+      "date": "2015-04-30T18:22:33-07:00",
+      "subject": "[R-pkgs] New release of MAVIS (Meta Analysis via Shiny) v1.1 now on CRAN",
+      "subject_clean": "New release of MAVIS (Meta Analysis via Shiny) v1.1 now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'm pleased to announce that the first major update to the MAVIS\npackage (Meta Analysis via Shiny) has been released to CRAN.\n\nMAVIS: Meta Analysis via Shiny v1.1 \"Smiling Fox\" has expanded greatly\nover the last couple of months to include the following.\n\n- User interface has been improved with the ?shinyBS? package and icons.\n- Support for single case design, dichotomous data sets, and\nadditional effect size calculators.\n- Expanded options for the detection of publication bias.\n- Expanded support for both random effects and fixed effects models\nwith the 'metafor' package.\n- Dichotomous data entry now available with input examples.\n- Graphical outputs for funnel plots now allow for contour enhancement.\n- References to articles covering methods described in MAVIS are now\neasy to find.\n- Knapp & Hartung Adjustment for random-effects models is now available.\n- Regression test options for the detection of publication bias now\ninclude both Weighted Regression with a Multiplicative Dispersion Term\nand Meta-analytic Models.\n- Users may now have the option for full model output.\n- Single Case Design Data Entry now uses the ?shinyAce? package to\nallow for easy data entry.\n\nThe package is developed using GitHub, and more information as well as\nthe current development version can be found at\nhttps://github.com/kylehamilton/MAVIS\n\n\nWilliam Kyle Hamilton  -  Graduate Student\nUniversity of California, Merced  -  Psychological Sciences\npsychology.ucmerced.edu - kylehamilton.com",
+      "body_snippet": "Dear R users,\n\nI'm pleased to announce that the first major update to the MAVIS\npackage (Meta Analysis via Shiny) has been released to CRAN.\n\nMAVIS: Meta Analysis via Shiny v1.1 \"Smiling Fox\" has expa",
+      "thread_id": "thread-9d28cd28cfe4",
+      "thread_depth": 0,
+      "month": "2015-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9721b2290b28",
+      "subject": "New package: lfactors (0.4-0)",
+      "message_count": 1,
+      "participants": [
+        "Bailey, Paul"
+      ],
+      "started": "2015-04-28T19:43:15+00:00",
+      "last_reply": "2015-04-28T19:43:15+00:00",
+      "root_message_id": "msg-9721b2290b28"
+    },
+    {
+      "id": "thread-9d28cd28cfe4",
+      "subject": "New release of MAVIS (Meta Analysis via Shiny) v1.1 now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Kyle Hamilton"
+      ],
+      "started": "2015-04-30T18:22:33-07:00",
+      "last_reply": "2015-04-30T18:22:33-07:00",
+      "root_message_id": "msg-9d28cd28cfe4"
+    }
+  ]
+}

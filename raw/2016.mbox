@@ -1,0 +1,2909 @@
+From luke-tierney at uiowa.edu  Tue Jan  5 21:29:14 2016
+From: luke-tierney at uiowa.edu (luke-tierney at uiowa.edu)
+Date: Tue, 5 Jan 2016 14:29:14 -0600
+Subject: [R-pkgs] new release of proftools package.
+Message-ID: <alpine.DEB.2.10.1601051427490.2461@luke-Latitude>
+
+Version 0.99-0 of the proftools package for analyzing and
+visualizing R profiling data has been uploaded to CRAN. This is a
+major update that adds new summary functions, new and improved
+visualizations, and tools for subsetting and filtering profile
+data. A vignette illustrates the use of the package.
+
+Luke Tierney
+Riad Jarjour
+
+-- 
+Luke Tierney
+Ralph E. Wareham Professor of Mathematical Sciences
+University of Iowa                  Phone:             319-335-3386
+Department of Statistics and        Fax:               319-335-3017
+    Actuarial Science
+241 Schaeffer Hall                  email:   luke-tierney at uiowa.edu
+Iowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu
+
+
+From dusa.adrian at unibuc.ro  Sat Jan  9 16:56:25 2016
+From: dusa.adrian at unibuc.ro (=?UTF-8?B?QWRyaWFuIER1yJlh?=)
+Date: Sat, 9 Jan 2016 17:56:25 +0200
+Subject: [R-pkgs] new package: venn
+Message-ID: <CAJ=0CtBzXpeHiKvJKuiK45xFTgLXyU0P-XfR98Xrj6O3x5J-pg@mail.gmail.com>
+
+Dear R users,
+
+I would like to announce a new package that has just the appeared on CRAN,
+called "venn" version 1.0:
+http://cran.r-project.org/web/packages/venn/
+(binaries will appear in one or two days)
+
+Although there are quite a few packages that draw Venn diagrams, there are
+a number of reasons for yet another one:
+
+- this package draws diagrams up to 7 sets (!) while other packages top at 5
+
+- in addition, this package is also capable to draw any boolean union of
+set intersections, using different colors (transparency included), using a
+meta-command
+
+- efforts were employed to create these diagrams using base R, without
+using any dependencies to other graphics oriented packages
+
+- there are a variety of input data which are automatically recognised,
+making the package user friendly
+
+- the technology behind this package is completely different from the other
+Venn diagrams functions, similar to geographical maps where polygons can be
+constructed on a hierarchical order, the way administrative units belong to
+superior, higher units.
+
+The most impressive diagram to show off is the so-called "Adelaide" for 7
+sets, which can be viewed simply with:
+
+> venn(7)
+
+Comments and suggestions are, as always, welcome.
+
+Best wishes,
+Adrian
+
+--
+Adrian Dusa
+University of Bucharest
+Romanian Social Data Archive
+Soseaua Panduri nr.90
+050663 Bucharest sector 5
+Romania
+
+	[[alternative HTML version deleted]]
+
+
+From phill at starkingdom.co.uk  Sun Jan 31 22:36:33 2016
+From: phill at starkingdom.co.uk (phill at starkingdom.co.uk)
+Date: Sun, 31 Jan 2016 21:36:33 +0000
+Subject: [R-pkgs] New Package: backblazer
+Message-ID: <81e4302a6d68ab3bae64841ed7b0b25b@starkingdom.co.uk>
+
+ 
+
+Dear R users, 
+
+I'm pleased to announce that my first package has been accepted in CRAN.
+
+
+https://cran.r-project.org/web/packages/backblazer/ 
+
+backblazer provides bindings to Backblaze's B2 cloud storage API. 
+
+As it is my first package on CRAN, I would certainly appreciate feedback
+and suggestions from more experienced packagers. 
+
+Regards, 
+
+Phill 
+
+ 
+	[[alternative HTML version deleted]]
+
+
+From bgunter at comcast.net  Mon Feb  1 18:48:18 2016
+From: bgunter at comcast.net (Bert Gunter)
+Date: Mon, 1 Feb 2016 09:48:18 -0800
+Subject: [R-pkgs] New Package: stripless (V. 1.0)
+Message-ID: <515D97C4-DE1E-4283-9082-ECA9486E3B03@comcast.net>
+
+A new package, ?stripless?, is now available on CRAN. It should be mostly of interest to those who use Lattice graphics when there are more than a couple of conditioning variables. Quoting from the DESCRIPTION:
+
+For making Trellis-type conditioning plots without strip labels. This is useful for displaying the structure of results from factorial designs and other studies when many conditioning variables would clutter the display with layers of redundant strip labels. Settings of the variables are encoded by layout and spacing in the trellis array and decoded by a separate legend. The functionality is implemented by a single S3 generic strucplot() function that is a wrapper for the Lattice package's xyplot() function. This allows access to all Lattice graphics capabilities in the usual way.
+
+A vignette is in preparation, but the existing Help pages should contain sufficient explanation and examples to get going. Feedback, suggestions, reports of bugs or any other infelicities are welcome. 
+
+Cheers,
+
+Bert Gunter
+
+"The trouble with having an open mind is that people keep coming along and sticking things into it.?
+-- Opus (aka Berkeley Breathed in his "Bloom County" comic strip )
+
+
+From mfay at niaid.nih.gov  Mon Feb  1 15:01:27 2016
+From: mfay at niaid.nih.gov (Fay, Michael (NIH/NIAID) [E])
+Date: Mon, 1 Feb 2016 14:01:27 +0000
+Subject: [R-pkgs] Update on bpcp R package: Confidence intervals to use with
+ Kaplan-Meier Survival Estimator
+Message-ID: <F064307CEF0BC64593398B58FBE7EC661D152F5C@msgb07.nih.gov>
+
+R Users,
+
+We have updated the bpcp R package.  It gives pointwise confidence intervals for a survival distribution from right censored data. It is not based on asymptotic approximations, so it may be used with any sample size, and with any censoring distribution, as long as the censoring is non-informative.   Extensive simulations show that the bpcp confidence intervals appear to guarantee coverage.  When there is no censoring the method reduces to the exact binomial intervals for the proportion of survivors at each time point.
+
+Here are some important improvements:
+
+
+1.       The bpcp function now includes a midp option. This provides an confidence interval that is closer to the nominal level "on average" over the values of the parameter.  It reduces to the mid-p confidence interval for a binomial parameter when there is no censoring.  Just like other mid-p confidence intevals, for some values of the parameter it can be conservative, and for some values it can be slightly anti-conservative.  With extensive censoring it can be very conservative, because (as with the original version) no assumptions are made about the censoring distribution.
+
+2.       There is a new convention for the original bpcp exactly at the failure times. This new convention ensures that the bpcp confidence intervals enclose the Kaplan-Meier estimator.
+
+3.       There is a new option to enforce monotonicity. This is rarely needed, but is used by default. All new simulations were done using this enforced monotonicity.
+
+4.       An error was fixed in the method that only occurred when non-default Delta values were used.
+
+References:
+
+Fay, MP, Brittain, EH (2016). Finite Sample Pointwise Confidence Intervals for a Survival Distribution with Right-Censored Data. (to appear in Statistics in Medicine, outlines midp modification, and provides many more simulations).
+
+Fay, MP, Brittain, EH, and Proschan, MA (2013). Pointwise confidence intervals for a survival distribution with small samples or heavy censoring. Biostatistics. 14(4): 723-736.
+
+
+Thanks,
+
+Let me know if you have comments or want a preprint of the 2016 paper.
+
+Mike
+**************************************
+Michael P. Fay, PhD
+Mathematical Statistician
+Biostatistics Research Branch/DCR/NIAID
+5601 Fishers Lane,  Room 4B53
+Rockville, MD 20852
+240-669-5228
+
+For FexEx/UPS use:
+Rockville, MD 20852
+
+For US Mail use:
+Bethesda, MD 20892
+
+Disclaimer: The information in this e-mail and any of its attachments is confidential and may contain sensitive information.  It should not be used by anyone who is not the original intended recipient.  If you have received this e-mail in error please inform the sender and delete it from your mailbox or any other storage devices.  The National Institute of Allergy and Infectious Diseases (NIAID)  shall not accept liability for any statement made that are the sender's own and not expressly made on behalf of the NIAID by one of its representatives.
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From alex.deckmyn at meteo.be  Sun Feb 14 10:35:24 2016
+From: alex.deckmyn at meteo.be (Alex Deckmyn)
+Date: Sun, 14 Feb 2016 10:35:24 +0100 (CET)
+Subject: [R-pkgs] announcing maps version 3.1.0
+Message-ID: <1556909406.16276237.1455442524227.JavaMail.zimbra@meteo.be>
+
+Hi, 
+
+I am pleased to announce version 3.1.0 of the 'maps' package which has a few important changes and additions. 
+
+CHANGES: 
+- The 'world' map has been adapted: it now doesn't contain any lakes anymore. Most visible effect is the Great Lakes on the Canada/USA border. 
+- Major lakes are now available in a separate database 'lakes', so they can still be added to a plot if desired. 
+- As a result, plotting without interior borders now gives much cleaner results. 
+- The 'world2' database has been cleaned up a bit to look better at the boundaries. 
+
+ADDITIONS: 
+- map() now accepts spatial objects of types SpatialPolygon[DataFrame] and SpatialLines[DataFrame] as database. The support is limited to the actual polygon co-ordinates and names. Any other information (plotting order, projection etc) is lost. So one can now for instance read shapefile data (e.g. readShapePoly() from the maptools package) and pass the result to map(). 
+
+FIXES: 
+- map(...,fill=TRUE) will no longer apply thinning to the map. The thinning caused polygons to have non-matching borders. For large databases (e.g. the complete worldHires database) this may have a noticable effect on speed. 
+
+Alex Deckmyn 
+
+
+--- 
+Dr. Alex Deckmyn e-mail: alex.deckmyn at meteo.be 
+Royal Meteorological Institute http://www.meteo.be 
+Ringlaan 3, 1180 Ukkel, Belgium tel. (32)(2)3730646 
+
+
+	[[alternative HTML version deleted]]
+
+
+From g.vegayon at gmail.com  Thu Feb 18 18:50:36 2016
+From: g.vegayon at gmail.com (George Vega Yon)
+Date: Thu, 18 Feb 2016 09:50:36 -0800
+Subject: [R-pkgs] New package 'netdiffuseR: Network Analysis for Diffusion
+	of Innovations'
+Message-ID: <CAPJUxXURpuWcsK0qpkXxtFuRM00k_K4tavZ3fAenZ8HZEOupdg@mail.gmail.com>
+
+Dear useRs,
+
+We are happy to announce that the R package 'netdiffuseR: Network
+Analysis for Diffusion of Innovations' is now on CRAN
+(https://cran.r-project.org/web/packages/netdiffuseR/). From the
+package's description:
+
+"Empirical statistical analysis, visualization and simulation of
+network models of the diffusion of innovations. The package implements
+algorithms for calculating network diffusion statistics such as
+transmission rate, hazard rates, exposure models, network threshold
+levels, infectiousness (contagion), and susceptibility. The package is
+inspired by work published in Valente, et al., (2015)
+<DOI:10.1016/j.socscimed.2015.10.001>; Valente (1995)
+<ISBN:9781881303213>, Myers (2000) <DOI:10.1086/303110>, Iyengar and
+others (2011) <DOI:10.1287/mksc.1100.0566>, Burt (1987)
+<DOI:10.1086/228667>; among others."
+
+Some other relevant features:
+ - Allows working with relative large graphs via sparse matrices
+(easily handles tenths of thousands vertices), and
+ - Includes three classical network diffusion of innovations datasets:
+Brazilian Farmers, Korean Family Planning and Medical Innovation
+
+The package should be available to be installed via R's
+install.packages function in the following hours as CRAN builds
+binaries for Windows/OSX and mirrors have them available to be
+installed.
+
+For those of you who are interested on taking a deep look on this new
+tool, we will be offering a workshop at the 2016 SUNBELT Conference
+(http://insna.org/sunbelt2016/) , so we encourage you to sign in!
+
+Best,
+
+George G. Vega Yon
++1 (626) 381 8171
+http://www.its.caltech.edu/~gvegayon/
+
+
+From rickwargo at epicminds.com  Mon Feb 22 19:03:18 2016
+From: rickwargo at epicminds.com (Rick Wargo)
+Date: Mon, 22 Feb 2016 18:03:18 +0000
+Subject: [R-pkgs] New Package: lrequire v0.1.3 - use modules to encapsulate
+ and cache your R scripts
+Message-ID: <D7A2070C-E8E1-4645-BAFB-28E9BF19C653@wargo.net>
+
+Dear R Users,
+
+I am happy to announce the initial release (v0.1.3) of lrequire<https://cran.r-project.org/web/packages/lrequire/>, now available on CRAN.
+
+https://cran.r-project.org/web/packages/lrequire/
+
+lrequire supports modularization of R Scripts, enabling encapsulation of information and caching of scripts. This is very similar to the require()<https://nodejs.org/api/modules.html> support in node.js<https://nodejs.org/>.
+
+Use of lrequire encourages separation of responsibility and using modules to encapsulate specific functionality. This leads to more easily-maintained scripts and encourages reuse.
+lrequire also cache loaded modules (scripts) such that the next load (source) of the script does not execute its contents, unless specified. For example, if a module is built around sourcing a slowly-changing dataset that is time-consuming to retrieve, frequent reloads of the module will only return the cached copy of the data, saving the time expense. I found this very useful for developing dashboard components ? lrequire permitted me the freedom to keep tweaking the UI without having to wait for the live reload of the data.
+
+How It Works
+
+Goal: build a reusable module to welcome an individual. Any environment artifacts necessary to build that module are encapsulated in the lrequire() call and only the functionality is returned.
+
+For example:
+
+________________________________
+
+File: welcome.R
+
+data.that.will.not.be.exposed <- 'some work'
+
+hello <- function(person.name) {
+  return (paste0('Hello, ', person.name, '!'))
+}
+
+module.exports = hello
+
+________________________________
+
+File: main.R
+
+hello <- lrequire(welcome)
+
+hello('Rick')
+
+________________________________
+
+Note that the variable declared in welcome.R will not be visible in main.R only the hello() function. Multiple pieces of information can be exposed by returning a list() object in module.exports. Refer to the documentation for details.
+
+All the best,
+Rick Wargo
+https://linkedin.com/in/rickwargo/
+https://www.rickwargo.com/
+@rickwargo
+
+
+	[[alternative HTML version deleted]]
+
+
+From boxuancui at gmail.com  Wed Mar  2 19:46:53 2016
+From: boxuancui at gmail.com (Boxuan Cui)
+Date: Wed, 2 Mar 2016 13:46:53 -0500
+Subject: [R-pkgs] New package: DataExplorer
+Message-ID: <CAC-fbYZNnJjwdm7iDfq+=453mAQ0LhpH9Ya-q04ypk1hKhfskQ@mail.gmail.com>
+
+Dear useRs,
+
+I am really excited that my first package is now on CRAN:
+https://cran.r-project.org/web/packages/DataExplorer/.
+
+The package aims to simplify the data exploration process before your data
+analysis and/or model building process.
+
+Example use case: One day, you get a random dataset that you have no idea
+what is in there. You could simply type the following two lines of R code
+to quickly visualize things and get started.
+
+*## assume you load the data into R and name it mysterious_data*
+*library(DataExplorer)*
+*GenerateReport(mysterious_data)*
+
+
+I am trying to add more functionalities and also vignettes to better
+illustrate how to explore your data using this package. Check the GitHub
+page for most up-to-date development:
+https://github.com/boxuancui/DataExplorer.
+
+I welcome all feedback, suggestions, bug reports and feature requests.
+Thank you!
+
+
+Best,
+Boxuan (Bo)
+
+	[[alternative HTML version deleted]]
+
+
+From kyle.hamilton at gmail.com  Fri Mar  4 22:43:03 2016
+From: kyle.hamilton at gmail.com (Kyle Hamilton)
+Date: Fri, 4 Mar 2016 13:43:03 -0800
+Subject: [R-pkgs] lavaan.shiny "latent variable analysis with shiny"
+Message-ID: <CAN17LWP_y0FezqPw35gNmj=cA1D5C6Totu=OvJ-eM1iam8WTXQ@mail.gmail.com>
+
+Dear R users,
+
+I'm pleased to announce that the first release of lavaan.shiny has
+been released to CRAN.
+
+lavaan.shiny "latent variable analysis with shiny" has built in
+examples from the lavaan package and currently supports latent growth
+curve models, confirmatory factor analysis, and structural equation
+modeling. Graphics are handled by the semPlot package.
+
+Currently there is a live demo of lavaan.shiny online which can be
+accessed here http://kylehamilton.net/shiny/lavaan.shiny/ it is
+recommended that users download the package and run it naively.
+
+The package is developed using GitHub, and more information as well as
+the current development version can be found at
+https://github.com/kylehamilton/lavaan.shiny
+
+
+William Kyle Hamilton  -  Graduate Student
+University of California, Merced  -  Psychological Sciences
+psychology.ucmerced.edu - kylehamilton.com
+
+
+From amos.elberg at gmail.com  Mon Mar  7 20:33:40 2016
+From: amos.elberg at gmail.com (Amos B. Elberg)
+Date: Mon, 7 Mar 2016 14:33:40 -0500
+Subject: [R-pkgs] rZeppelin: An R notebook that makes Spark easy to use
+Message-ID: <CAGaD6pw9Nxb3embEwxysWeO4dtaiY+J36wU+rJOQCJ+MYuhdbw@mail.gmail.com>
+
+rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin
+is a notebook, sort of like iPython, built on top of Apache Spark.
+
+rZeppelin makes it possible, for the first time, to create a single data/ML
+pipeline that mixes R, scala, and Python code, seamlessly, from a single
+interface.  (Without breaking lazy evaluation!)
+
+For R-using data scientists, this means that you can access the full power
+of Spark ? including ultra-fast distributed implementations of popular
+algorithms ? using R, without having to learn scala, without a dedicated
+administrator to manage a Spark or Hadoop cluster, and without spending
+more than minimal time to review the SparkR api.
+
+You can load text data using R, quickly create an LDA model using Spark?s
+distributed LDA package, tag the text using gensim from Python, and then
+visualize and take further steps from R, from a single session using a
+single interface.
+
+The full range of Spark packages, including MLLIB and GraphX, which used to
+require scala development, can be used in the same pipeline with R.
+(Except Spark Streaming, which Zeppelin doesn?t yet support.)
+
+Beyond Spark, R data can be visualized using Zeppelin?s built-in
+interactive visualizations.  rZeppelin also leverages knitr to make
+available most R visualization and interactive visualization packages.
+
+Many data types are also easily moved between R, scala and Python:  the
+languages share a ZeppelinContext, where variables can be added and
+extracted with .z.put() and .z.get().
+
+rZeppelin is intended to make Spark part of the R data scientist?s daily
+toolbox.
+
+rZeppelin is available here:  https://github.com/elbamos/Zeppelin-With-R
+
+	[[alternative HTML version deleted]]
+
+
+From u.block.mz at gmail.com  Sat Mar 12 17:11:16 2016
+From: u.block.mz at gmail.com (Uwe Block)
+Date: Sat, 12 Mar 2016 17:11:16 +0100
+Subject: [R-pkgs] New package lazysql: Lazy SQL Programming
+Message-ID: <CANwJfJR2KoYh1MHz4-J8EPS+9PQ7xRXjubPmnPMbygLLAGO8hw@mail.gmail.com>
+
+Dear R users,
+
+The new package lazysql has been accepted on CRAN
+(https://cran.r-project.org/web/packages/lazysql/).
+
+It includes helper functions to build SQL statements under program
+control for use with dbGetQuery or dbSendQuery. They are intended to
+increase speed of coding and to reduce coding errors. Arguments are
+carefully checked, in particular SQL identifiers such as names of
+tables or columns.
+
+Currently implemented are:
+
+- date_between: Create SQL string to select date between two given dates.
+- in_condition: Create SQL string to select values included (or not
+included) in a set of given values.
+- natural_key: Create SQL string for joining on matching natural keys.
+
+More patterns will be added as required.
+
+Examples of usage  can be found at
+https://github.com/UweBlock/lazysql/blob/master/README.md.
+
+Bug reports, suggestions, and feature requests are highly appreciated
+at https://github.com/UweBlock/lazysql/issues.
+
+Have fun,
+Uwe
+
+
+From cdetermanjr at gmail.com  Wed Mar 16 20:41:24 2016
+From: cdetermanjr at gmail.com (Charles Determan)
+Date: Wed, 16 Mar 2016 14:41:24 -0500
+Subject: [R-pkgs] gpuR 1.1.0 Release
+Message-ID: <CAKxd1KMTVTwNGRWGB4kE-S=FdTixLbNdpxnX4xQ7tdS+t5OzpA@mail.gmail.com>
+
+Dear R users,
+
+The next release of gpuR (1.1.0) has been accepted to CRAN (
+http://cran.r-project.org/package=gpuR).
+
+There have been multiple additions including:
+
+1. Scalar operations for gpuMatrix/vclMatrix objects (e.g. 2 * X)
+2. Unary '-' operator added (e.g. -X)
+3. 'slice' and 'block' methods for vector & matrix objects respectively
+4. 'deepcopy' methods
+5. 'abs', 'max', 'min' methods added
+6. 'cbind' & 'rbind' methods added for matrices
+7. 't' method
+8. 'distance' method for pairwise distances (euclidean and sqEuclidean)
+
+Introductory vignette can be found at
+https://cran.r-project.org/web/packages/gpuR/vignettes/gpuR.pdf
+
+Help with installation can be found at
+https://github.com/cdeterman/gpuR/wiki
+
+Bug reports, suggestions, and feature requests are appreciated at
+https://github.com/cdeterman/gpuR/issues
+
+Happy GPU computing,
+Charles
+
+	[[alternative HTML version deleted]]
+
+
+From eglenn at mit.edu  Fri Mar 18 14:29:47 2016
+From: eglenn at mit.edu (Ezra Haber Glenn)
+Date: Fri, 18 Mar 2016 09:29:47 -0400
+Subject: [R-pkgs] acs version 2.0: an R package to download and analyze data
+ from the US Census
+Message-ID: <86pourhq2c.wl%eglenn@mit.edu>
+
+
+We are pleased to announce the release of version 2.0 of the "acs"
+package, now available on CRAN
+<http://cran.r-project.org/web/packages/acs/index.html>.
+
+The package allows users to download, manipulate, analyze, and present
+demographic data from the U.S. Census, with special tools and methods
+to simplify the tasks of working with estimates and standard errors
+contained in data from the American Community Survey (ACS).  
+
+Version 2.0 of the package provides full support for all ACS data
+available through the Census API -- including the most recent 2014
+data -- as well as Decennial Census Data from 1990, 2000, and 2010.
+Users can work with existing census geographies (states, counties,
+tracts, block-groups, places, zip code areas, congressional districts,
+school districts, etc.), or create and save their own custom
+geographies with the package's "geo.make()" function.
+
+For more information please visit:
+<http://eglenn.scripts.mit.edu/citystate/2016/03/acs-version-2-0-now-on-cran>,
+and the newly-updated "Working with acs.R" user guide at
+<http://dusp.mit.edu/sites/dusp.mit.edu/files/attachments/publications/working_with_acs_R_v_2.0.pdf>.
+
+Special thanks to package beta testers (Ari, Arin, Bethany, Emma,
+John, and Michael) and the entire acs-r community, as well as to Uwe
+and Kurt at CRAN for their infinite patience and continuing care and
+stewardship of the system.
+
+--
+Ezra Haber Glenn, AICP
+Department of Urban Studies and Planning
+Massachusetts Institute of Technology
+77 Massachusetts Ave., Room 7-337
+Cambridge, MA 02139
+eglenn at mit.edu 
+http://dusp.mit.edu/faculty/ezra-glenn | http://eglenn.scripts.mit.edu/citystate/
+617.253.2024 (w)
+617.721.7131 (c)
+
+
+From pnovack-gottshall at ben.edu  Fri Mar 25 19:26:04 2016
+From: pnovack-gottshall at ben.edu (Novack-Gottshall, Philip M.)
+Date: Fri, 25 Mar 2016 18:26:04 +0000
+Subject: [R-pkgs] New R package for K-S goodness-of-fit tests
+Message-ID: <8CF6FE2C677EA94F94FA6285289BAE68755B549B@BENMAIL02.ben.pri>
+
+Greetings,
+
+We wanted to announce a new R package 'KScorrect' that carries out the Lilliefors correction to the Kolmogorov-Smirnoff test for use in (one-sample) goodness-of-fit tests.
+
+It's well-established it's inappropriate to use the K-S test when sample statistics are used to estimate parameters, which results in substantially increased Type-II errors. This warning is mentioned in the ks.test Help page, but no general solution is currently available for non-normal distributions.
+
+The 'KScorrect' package corrects for the bias by using Monte Carlo simulation, a solution first recommended by Lilliefors (1967) but not widely heeded. The primary function 'LcKS()' is written to complement, and can be used directly in place of, 'ks.test()'. It can be used with most continuous distribution functions, including normal, univariate mixture of normals, lognormal, uniform, loguniform (flat when data are log-transformed), exponential, gamma, and Weibull distributions, and corresponding maximum-likelihood parameters are estimated automatically from the provided sample.
+
+Distribution functions are provided in the package for the loguniform and univariate mixture of normal distributions, which are not included in the R base installation.
+
+Simple examples are provided by calling example(KScorrect) or example(LcKS).
+
+Additional details are available at https://cran.r-project.org/web/packages/KScorrect. Bug reports, suggestions, and feature requests are encouraged at https://github.com/pnovack-gottshall/KScorrect. 
+
+We hope you find the functions useful when conducting goodness-of-fit tests using the K-S test.
+
+Sincerely,
+Phil Novack-Gottshall and Steve Wang
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Phil Novack-Gottshall
+ Associate Professor
+ Department of Biological Sciences
+ Benedictine University
+ 5700 College Road 
+ Lisle, IL 60532
+
+ pnovack-gottshall at ben.edu
+ Phone: 630-829-6514
+ Fax: 630-829-6547
+ Office: 332 Birck Hall
+ Lab: 316 Birck Hall
+ http://www.ben.edu/faculty/pnovack-gottshall
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+From therneau at mayo.edu  Mon Apr 18 14:28:11 2016
+From: therneau at mayo.edu (Therneau, Terry M., Ph.D.)
+Date: Mon, 18 Apr 2016 07:28:11 -0500
+Subject: [R-pkgs] Survival 2.39
+Message-ID: <519743$2s38ma@ironport10.mayo.edu>
+
+A new version of the survival package has been released.  The biggest change is stronger 
+support for multi-state models, which is an outgrowth of their increasing use in my own 
+practice. Interested users are directed to the "time dependent covariates" vignette for 
+discussion of the tmerge and survSplit functions, which are useful tools to build the 
+requisite data sets, and to the "multi-state" vignette for model fits and plots.
+
+Terry Therneau
+
+
+From mail at p-roocks.de  Thu Apr 21 09:23:23 2016
+From: mail at p-roocks.de (Patrick Roocks)
+Date: Thu, 21 Apr 2016 09:23:23 +0200
+Subject: [R-pkgs] rPref 1.0 - Computing Pareto Optima and Database
+	Preferences
+Message-ID: <57187FEB.7070008@p-roocks.de>
+
+Dear R users,
+
+the first 1.0 version of the rPref package is now on CRAN.
+
+rPref allows to select the Pareto-optimal tuples from a data set, also 
+called Skylines in the database community. For example, optimal tuples 
+from mtcars according to "high(mpg) * high(hp)" (where "*" is the Pareto 
+operator) are those cars, for which no other dominating car exists. 
+There, a car dominates another car if its horsepower or miles-per-gallon 
+value is strictly better while the other value is better or equal.
+
+See http://p-roocks.de/rpref/index.php?section=examples for more examples.
+
+The changes of this version include:
+- A new function get_btg_dot to generate Better-Than-Graphs induced by 
+the preference using Graphviz.
+- Fixed compatibility issues with new versions of dplyr and testthat.
+
+Comments and contributions are very welcome via github:
+https://github.com/patrickroocks/rpref
+
+Best regards,
+
+Patrick
+
+
+From piburnjo at ornl.gov  Fri Apr 22 16:37:28 2016
+From: piburnjo at ornl.gov (Piburn, Jesse O.)
+Date: Fri, 22 Apr 2016 14:37:28 +0000
+Subject: [R-pkgs] New Package on CRAN: wbstats
+Message-ID: <f5d2fa1b8f0047dbaccc47145c0ab1e9@EXCHCS34.ornl.gov>
+
+Hello,
+
+I wanted to announce the release of a new package on CRAN wbstats.
+
+>From the description "Tools for searching and downloading data and statistics from the World Bank Data API (http://data.worldbank.org/developers/api-overview) and the World Bank Data Catalog API (http://data.worldbank.org/developers/data-catalog-api)"
+
+Here is a (hopefully) useful vignette if you would like to learn more
+https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html
+
+Comments and suggestions are always welcome. Thank you
+
+Repos
+CRAN: https://cran.r-project.org/web/packages/wbstats/
+Github: https://github.com/GIST-ORNL/wbstats
+
+
+Best,
+Jesse
+
+
+
+
+Jesse Piburn
+Research Scientist in Geographic Data Sciences
+Geographic Information Science and Technology Group
+Computational Sciences and Engineering Division
+Oak Ridge National Laboratory
+Office E304, Building 5600
+Office Phone: 865 576 9318
+Email: piburnjo at ornl.gov
+
+
+	[[alternative HTML version deleted]]
+
+
+From kcoburn at ucmerced.edu  Sun Apr 24 23:45:10 2016
+From: kcoburn at ucmerced.edu (Katie Coburn)
+Date: Sun, 24 Apr 2016 14:45:10 -0700
+Subject: [R-pkgs] New package: weightr (v. 1.0.0)
+Message-ID: <CAB7cXUKeiDkxd1TJdjBRGMgRzMkaLhJOoErcX4Ou80yHK=Dysw@mail.gmail.com>
+
+Greetings, R users!
+
+I'm excited and pleased to announce that the weightr package was
+released to CRAN today:
+
+https://cran.r-project.org/web/packages/weightr/
+
+Our package provides a function for meta-analysts to implement the
+Vevea and Hedges (1995) weight-function model for publication bias in
+R and, by specifying an additional argument, to implement the modified
+Vevea and Woods (2005) version as well. We were inspired by Wolfgang
+Viechtbauer's fantastic metafor package, and have formatted our output
+similarly.
+
+The package also includes a function to launch the Shiny app that
+implements both of these models locally. For anyone interested who
+wants to preview the Shiny app without installing the package, it's
+available online here:
+
+https://vevealab.shinyapps.io/WeightFunctionModel/
+
+Thanks for your time, and I hope the package is useful to you! If you
+encounter any problems or have feedback, please feel free to contact
+me at kcoburn at ucmerced.edu.
+
+Katie Coburn - Graduate Student, Quantitative Psychology,
+University of California, Merced
+
+Dr. Jack Vevea - Associate Professor, Quantitative Psychology,
+University of California, Merced
+
+
+From bruce.swihart at gmail.com  Wed Apr 27 14:35:25 2016
+From: bruce.swihart at gmail.com (Bruce Swihart)
+Date: Wed, 27 Apr 2016 08:35:25 -0400
+Subject: [R-pkgs] New package: bridgedist (v 0.1.0)
+Message-ID: <CAAHpScqMeqrGi4kLKemMNyKOZ7DO-EqQe=qiB7foESXA7gh4vA@mail.gmail.com>
+
+R Users,
+
+The d/p/q/r functions for the bridge distribution are now available in
+bridgedist.
+
+When a random intercept follows the bridge distribution, as detailed in
+Wang and Louis (2003) <doi:10.1093/biomet/90.4.765
+<http://dx.doi.org/10.1093/biomet/90.4.765>>, a marginalized
+random-intercept logistic regression will still be a logistic regression
+with marginal coefficients that are scalar multiples of the conditional
+regression's coefficients.
+
+Another way to state the result is that the sum of a standard logistic
+random variable and a bridge random variable will follow a logistic
+distribution with scale > 1.
+
+Examples of use:
+
+dbridge(0)#> [1] 0.1591549
+pbridge(0)#> [1] 0.5
+qbridge(0.5)#> [1] 0
+mean(rbridge(1e5)) ## approximately 0#> [1] -0.003490218
+var(rbridge(1e5, scale = 1/sqrt(1+3/pi^2)))  # approximately 1#> [1] 0.9983954
+
+
+Vignette:
+
+https://cran.r-project.org/web/packages/bridgedist/vignettes/the_bridgedist_basics.html
+
+
+References:
+
+Wang, Z. and Louis, T.A. (2003) Matching conditional and marginal shapes in
+binary random intercept models using a bridge distribution function.
+Biometrika, 90(4), 765-775. <DOI:10.1093/biomet/90.4.765>
+
+See also:
+
+Swihart, B.J., Caffo, B.S., and Crainiceanu, C.M. (2013). A Unifying
+Framework for Marginalized Random-Intercept Models of Correlated Binary
+Outcomes. International Statistical Review, 82 (2), 275-295 1-22. <DOI:
+10.1111/insr.12035>
+
+Griswold, M.E., Swihart, B.J., Caffo, B.S and Zeger, S.L. (2013). Practical
+marginalized multilevel models. Stat, 2(1), 129-142. <DOI: 10.1002/sta4.22>
+
+Heagerty, P.J. (1999). Marginally specified logistic-normal models for
+longitudinal binary data. Biometrics, 55(3), 688-698. <DOI:
+10.1111/j.0006-341X.1999.00688.x>
+
+Heagerty, P.J. and Zeger, S.L. (2000). Marginalized multilevel models and
+likelihood inference (with comments and a rejoinder by the authors). Stat.
+Sci., 15(1), 1-26. <DOI: 10.1214/ss/1009212671>
+
+All the best,
+Bruce
+
+	[[alternative HTML version deleted]]
+
+
+From francesco.grossetti at polimi.it  Wed Apr 27 09:58:43 2016
+From: francesco.grossetti at polimi.it (Francesco Grossetti)
+Date: Wed, 27 Apr 2016 09:58:43 +0200
+Subject: [R-pkgs] New package: msmtools (v1.0)
+Message-ID: <A0A6E86D-15B7-49C0-9383-13744859EA95@polimi.it>
+
+Greetings, R users!
+
+It is with pleasure that I am announcing the release of msmtools package on CRAN:
+
+https://cran.r-project.org/web/packages/msmtools/index.html
+
+msmtools provides a fast and general method for restructuring classical longitudinal data into augmented ones. The reason for this is to facilitate the modeling of longitudinal data under a multi-state framework using the 'msm? package by Chris Jackson.
+The tools is fitted for longitudinal datasets in which events are localized in time (i.e. a starting and an ending time are present). The method is efficient and fast and thus is suitable when dealing with highly dimensional datasets.
+
+The package also includes two graphical goodness-of-fit tools which can roughly assess the behaviour of the Markov model.
+I hope you?ll find the package useful for your work! 
+
+For any issues you may encounter, please leave a related comment to my repository at: 
+
+https://github.com/contefranz/msmtools/issues
+
+or contact me at francesco.grossetti at polimi.it
+
+Thanks! 
+Francesco
+
+-- 
+Francesco Grossetti
+Ph.D. Student
+MOX - Modeling and Scientific Computing
+Dipartimento di Matematica ?F. Brioschi"
+Politecnico di Milano
+Via Bonardi 9
+I-20133 Milano - Italy
+ph.: +39 02 2399 4564
+email: francesco.grossetti at polimi.it
+
+
+From m.p.kosinski at gmail.com  Thu Apr 28 08:59:00 2016
+From: m.p.kosinski at gmail.com (=?UTF-8?Q?Marcin_Kosi=C5=84ski?=)
+Date: Thu, 28 Apr 2016 08:59:00 +0200
+Subject: [R-pkgs] New R package on CRAN: RZabbix - easy and direct
+ communication with 'Zabbix API'
+Message-ID: <CAL8y_QwxacN8vbTCHchCoQXHp4wfw75+FKrmC-f4xDd-Ud-3wg@mail.gmail.com>
+
+Hi all,
+
+2 days ago a new R packages appeared on CRAN
+https://cran.r-project.org/web/packages/RZabbix/index.html
+
+RZabbix is an R interface to the 'Zabbix API' data <
+https://www.zabbix.com/documentation/3.0/manual/api/reference>. Enables
+easy and direct communication with 'Zabbix API' from 'R'.
+
+You can now integrate your Zabbix applications monitoring with reports
+created in R. Feel free to check examples in ZabbixAPI function and please
+post your comments, ideas on future improvements or user requests here :
+https://github.com/MarcinKosinski/RZabbix/issues
+I also encourage you to provide a sweet pull request with your ideas.
+
+Best,
+RZabbix author,
+Marcin Kosi?ski
+
+	[[alternative HTML version deleted]]
+
+
+From svazzole at gmail.com  Mon May 23 19:10:24 2016
+From: svazzole at gmail.com (Simone Vazzoler)
+Date: Mon, 23 May 2016 19:10:24 +0200
+Subject: [R-pkgs] New package: sparsevar
+Message-ID: <57433980.4010800@gmail.com>
+
+Dear R users,
+
+I would like to announce a new package called "sparsevar" version 0.0.3:
+
+https://cran.r-project.org/web/packages/sparsevar/
+
+The package should be useful to estimate sparse VAR/VECM models.
+The developing version can be found on Github:
+
+https://github.com/svazzole/sparsevar
+
+Best,
+Simon
+
+
+From friendly at yorku.ca  Wed Jun  8 16:58:49 2016
+From: friendly at yorku.ca (Michael Friendly)
+Date: Wed, 8 Jun 2016 10:58:49 -0400
+Subject: [R-pkgs] New versions of heplots, candisc,
+	mvinfluence and matlib on CRAN
+Message-ID: <055c2148-f8ba-f4ba-4dbc-85c7e38bc49c@yorku.ca>
+
+# New versions of heplots, candisc, mvinfluence and matlib on CRAN
+# ----------------------------------------------------------------
+
+New versions of my packages designed for visualization of multivariate
+linear models have recently been submitted to CRAN. The matlib package
+also contains some plot methods for vector diagrams representing linear
+algebra concepts in multivariate statistical methods.
+
+## heplots
+## -------
+
+Devel URL: https://r-forge.r-project.org/projects/heplots/
+Issue tracker: https://r-forge.r-project.org/tracker/?group_id=24
+
+Provides HE plot and other functions for visualizing hypothesis
+tests in multivariate linear models. HE plots represent sums-of-squares-and-
+products matrices for linear hypotheses and for error using ellipses (in two
+dimensions) and ellipsoids (in three dimensions).
+
+Version 1.3-0 (2016-06-03)
+
+o In cqplot(), pch, col, and cex can now be vectors
+o Bump version, prepare for release
+
+Version 1.2-1 (2016-05-19)
+
+o in coefplot.mlm(), now pass `label.pos` to label.ellipse()
+o added Mahalanobis() for classical and robust squared distances; handles
+   missing data gracefully and provides a confidence envelope
+o added SocialCog data [Thx: Leah Hartman]
+o added cqplot() of Mahalanobis distances as a plot method for an mlm 
+and for multivariate data
+
+Version 1.2-0 (2016-04-27)
+
+o covEllipses() extended to more than two variables, giving a 
+scatterplot matrix plot
+o plot.boxM() now can plot other measures of the eigenvalues of the 
+covariance matrices,
+   useful for understanding the properties of the test.
+o added bartlettTests() for a collection of univariate Bartlett tests
+o added leveneTests() for a collection of univariate Levene tests
+o added NeuroCog data, a simple one-way MANOVA [Thx: Leah Hartman]
+o label.ellipse() now uses a much more flexible `label.pos` argument for 
+positioning the
+   text labels used in heplot() and friends.
+
+## candisc
+## -------
+
+Devel URL: https://r-forge.r-project.org/projects/candisc/
+
+Functions for computing and visualizing generalized canonical discriminant
+analyses and canonical correlation analysis for a multivariate linear model.
+Traditional canonical discriminant analysis is restricted to a one-way 
+'MANOVA'
+design and is equivalent to canonical correlation analysis between a set of
+quantitative response variables and a set of dummy variables coded from the
+factor variable. The 'candisc' package generalizes this to higher-way 
+'MANOVA'
+designs for all factors in a multivariate linear model, computing canonical
+scores and vectors for each term. The graphic functions provide low-rank 
+(1D,
+2D, 3D) visualizations of terms in an 'mlm' via the 'plot.candisc' and
+'heplot.candisc' methods. Related plots are now provided for canonical
+correlation analysis when all predictors are quantitative.
+
+Changes in version 0.7-1 (2016-05-23)
+
+   o respect var.lwd in 2D plot.candisc()
+   o heplot.candisc() gets a rev.axes argument to reverse the axes and a 
+var.pos
+     argument to position  variable labels
+   o vectors() now produces nicer arrow head a la matlib::vectors()
+   o added var.pos argument to plot.candisc
+   o allow to suppress likelihood ratio tests in print.candisc
+
+Changes in version 0.7-0 (2016-04-25)
+
+   o Added Wine data -- three cultivars with a very simple canonical 
+structure
+   o Added ellipses to plot.candisc(); enhanced candisc.Rd documentation
+   o Added varOrder() for effect ordering in MLMs-- permutations of 
+variables
+     according to various criteria for scatterplot matrices, etc.
+   o plot.candisc() gets a var.labels argument
+   o added method="colmean" and descending=T/F to varOrder()
+   o plot.candisc() gets a rev.axes argument
+   o fixed imports() in NAMESPACE for CRAN checks
+
+
+## mvinfluence
+## -----------
+
+Devel URL: https://r-forge.r-project.org/projects/mvinfluence/
+
+Computes regression deletion diagnostics for multivariate linear models and
+provides some associated diagnostic plots. The diagnostic measures 
+include hat-
+values (leverages), generalized Cook's distance, and generalized squared
+'studentized' residuals. Several types of plots to detect influential
+observations are provided.
+
+Version 0.8 (2016-06-02)
+
+o Fixed problems for CRAN: NAMESPACE, Rd files
+o Added more examples to Rd files
+o Added infIndexPlot for index plots of diagnostic measures
+o Fixed buglet in influencePlot re: rownames of result
+
+## matlib
+## ------
+
+Devel URL: https://github.com/friendly/matlib
+Issue tracker: https://github.com/friendly/matlib/issues
+
+A collection of matrix functions for teaching and learning matrix
+linear algebra as used in multivariate statistical methods. These 
+functions are
+mainly for tutorial purposes in learning matrix algebra ideas using R. 
+In some
+cases, functions are provided for concepts available elsewhere in R, but 
+where
+the function call or name is not obvious. In other cases, functions are 
+provided
+to show or demonstrate an algorithm. In addition, a collection of 
+functions are
+provided for drawing vector diagrams in 2D and 3D, e.g., regvec() and 
+regvec2d()
+for vector diagrams for the vector space representation of a 
+two-variable regression
+model, plotEqn() and plotEqn3d() for diagrams of linear equations of the 
+form
+A x = b.
+
+matlib 0.7.3
+
+- Changed gaussianElimination() by defining local ERO functions to make 
+the algorithm clearer;
+   in verbose mode, show each ERO.
+- Added a draw argument to `vectors3d()` and `arrows3d()`, which 
+defaults to TRUE.
+   If FALSE, just returns returns the "reg.length" to help in scaling.
+- Small cosmetic changes to regvec3d().
+- Added a `showEig` function to draw eigenvectors superimposed on a 
+dataEllipse [MF]
+
+matlib 0.7.2
+
+   - added argument `error.sphere` to `plot.regvec3d()` [JF]
+   - remove use of `lengths()` in `corner()` to avoid R version dependency
+
+
+
+-- 
+Michael Friendly     Email: friendly AT yorku DOT ca
+Professor, Psychology Dept. & Chair, Quantitative Methods
+York University      Voice: 416 736-2100 x66249 Fax: 416 736-5814
+4700 Keele Street    Web:http://www.datavis.ca
+Toronto, ONT  M3J 1P3 CANADA
+
+
+From andreas.hill at usys.ethz.ch  Sat Jul  9 13:38:53 2016
+From: andreas.hill at usys.ethz.ch (Hill  Andreas)
+Date: Sat, 9 Jul 2016 11:38:53 +0000
+Subject: [R-pkgs] New package 'forestinventory: Design-Based Global and
+ Small-Area Estimations for Multiphase Forest Inventories'
+Message-ID: <0A4219CAB0E2EC4B98F9C7C2F51CC838238384B3@MBX115.d.ethz.ch>
+
+Dear R users,
+
+We are happy to announce that the R package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'
+is now on CRAN (https://cran.r-project.org/web/packages/forestinventory/).
+
+The aim of our package is to provide global- and smallarea estimators for twophase and threephase forest inventories under simple and cluster sampling.
+The methods can be used for double sampling for stratification (i.e. classical ANOVA model as prediction model),
+double sampling for regression (i.e. multiple regression model as prediction model) and double sampling for regression within strata
+(i.e. classical ANCOVA model as prediction model). The implemented estimators have been developed by Daniel Mandallaz at ETH Zurich
+and their implementation has been optimized according to current challenges and needs of multiphase inventories (e.g. use of remote sensing / geodata).
+
+Relevant features:
+
+-          Provides point - and variance estimators for 64 inventory scenarios in total,
+
+according to sample design (simple and cluster sampling, two- and threephase inventory designs) and availability of auxiliary information
+
+-          Allows for the computation of Confidence Intervals for the point estimates
+
+-          Completes the range of the already published estimators for threephase small area estimations
+
+-          Also includes estimators for onephase inventories (only using terrestrial inventory data)
+
+Upcoming activities:
+We will publish a vignette illustrating the use of the various estimators as soon as possible.
+
+
+Best,
+
+Andreas Hill
+Alexander Massey
+
+
+-------------------------------------------
+ETH Z?rich
+Andreas Hill
+Forstl. Ingenieurwesen, Heinimann
+CHN K 75.1
+Universit?tstrasse 16
+8092 Z?rich
+
+Telefon: +41 44 632 32 36
+Andreas.hill at usys.ethz.ch
+
+	[[alternative HTML version deleted]]
+
+
+From Keith.Goldfeld at nyumc.org  Tue Jun 21 17:18:50 2016
+From: Keith.Goldfeld at nyumc.org (Goldfeld, Keith)
+Date: Tue, 21 Jun 2016 15:18:50 -0000
+Subject: [R-pkgs] New package: simstudy
+Message-ID: <3C22D6B3-96D1-4C1F-979C-A91EDAB7FFD9@nyumc.org>
+
+Greetings ?
+
+A new package ?simstudy? is now available on CRAN. What started as a small number of functions that enabled me to quickly generate simple data sets for teaching and power/sample size calculations has grown into a more robust set of tools that allows users to simulate more complex data sets in order to explore modeling techniques or better understand data generating processes. The user specifies a set of relationships between covariates in table form (the table can be built interactively or created externally as a csv file), and generates data based on these specifications. The final data sets can represent data from randomized control trials, observed (non-randomized) studies, repeated measure (longitudinal) designs, and cluster randomized trials. Missingness can be generated using various mechanisms (MCAR, MAR, NMAR). Currently, data can be generated from normal/Gaussian, binary, Poisson, truncated Poisson, Gamma, and uniform distributions. Survival data can also be generated.
+
+I will be adding functionality over time, and will be particularly interested in knowing what userRs would be interested in having me add. I look forward to hearing your comments.
+
+- Keith
+
+
+Keith Goldfeld
+Department of Population Health
+School of Medicine, New York University
+227 East 30th Street, 6th Floor
+New York, NY  10016
+
+
+------------------------------------------------------------
+This email message, including any attachments, is for the sole use of the intended recipient(s) and may contain information that is proprietary, confidential, and exempt from disclosure under applicable law. Any unauthorized review, use, disclosure, or distribution is prohibited. If you have received this email in error please notify the sender by return email and delete the original message. Please note, the recipient should check this email and any attachments for the presence of viruses. The organization accepts no liability for any damage caused by any virus transmitted by this email.
+=================================
+
+	[[alternative HTML version deleted]]
+
+
+From m.p.kosinski at gmail.com  Mon Jun 27 00:16:02 2016
+From: m.p.kosinski at gmail.com (=?UTF-8?Q?Marcin_Kosi=C5=84ski?=)
+Date: Mon, 27 Jun 2016 00:16:02 +0200
+Subject: [R-pkgs] archivist.github 0.2.1 on CRAN - Task View: Reproducible
+	Research
+Message-ID: <CAL8y_Qw-EwAtUJ_Y=Kyqgtv6vsOppfMLyPAUq645vOfEBAZE9w@mail.gmail.com>
+
+Hi all R devs,
+
+archivist.github has appeared on CRAN in it's updated version.
+You can check the last blog post on how has RHero saved the Backup City
+with the power or archivist and GitHub
+http://www.r-bloggers.com/r-hero-saves-backup-city-with-archivist-and-github/
+
+There is also going to be a talk on useR2016 about it's core dependency -
+archivist
+
+How to use the archivist package to boost reproducibility of your research
+<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>
+<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>
+<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>
+
+If you would like to boost your reproducible engines then this is a talk
+for you :)
+
+Best,
+archivist.github author
+Marcin Kosi?ski
+
+	[[alternative HTML version deleted]]
+
+
+From neerajdhanraj at gmail.com  Sat Jul  2 22:09:23 2016
+From: neerajdhanraj at gmail.com (Neeraj Dhanraj)
+Date: Sun, 3 Jul 2016 01:39:23 +0530
+Subject: [R-pkgs] Seasonal PSF - Time Series Forecasting algorithm
+Message-ID: <CAC58_Y=nCh6nd19C_-1KsYpW12R+GMYrkDQV+qWeO5QmYU48qg@mail.gmail.com>
+
+Hi friends,
+If you are interested in univariate time series data predictions, have a
+look in PSF algorithm and it's R Packages available at :
+CRAN: https://cran.r-project.org/web/packages/PSF/index.html
+
+GitHub: https://github.com/neerajdhanraj/PSF
+
+How to use:
+https://www.researchgate.net/publication/304131481_PSF_Introduction_to_R_Package_for_Pattern_Sequence_Based_Forecasting_Algorithm
+
+and
+
+https://www.researchgate.net/publication/304580701_Introduction_of_seasonality_concept_in_PSF_algorithm_to_improve_univariate_time_series_predictions
+
+For further details contact me at: http://www.neerajbokde.com?
+
+	[[alternative HTML version deleted]]
+
+
+From marielaure.delignettemuller at vetagro-sup.fr  Thu Jul  7 17:12:17 2016
+From: marielaure.delignettemuller at vetagro-sup.fr (Marie Laure Delignette-Muller)
+Date: Thu, 7 Jul 2016 17:12:17 +0200
+Subject: [R-pkgs] new version of the package fitdistrplus
+Message-ID: <CANpor5BHktAcQF_74vevaDYx=q8NXhJ=qkED7J9No5yvgNzqng@mail.gmail.com>
+
+We are pleased to announce your a new version of fitdistrplus  (
+https://cran.r-project.org/package=fitdistrplus). Among the new features of
+the package (https://cran.r-project.org/web/packages/fitdistrplus/NEWS), a
+FAQ vignette is now available (
+https://cran.r-project.org/web/packages/fitdistrplus/vignettes/FAQ.html).
+We will be delighted to update it with new questions sent by users. Do not
+hesitate to send us any comment on this vignette or on the package in
+general.
+
+Best regards
+Marie Laure DELIGNETTE-MULLER and Christophe DUTANG
+
+	[[alternative HTML version deleted]]
+
+
+From drsimonjackson at gmail.com  Fri Jul 15 01:04:13 2016
+From: drsimonjackson at gmail.com (Simon Jackson)
+Date: Fri, 15 Jul 2016 09:04:13 +1000
+Subject: [R-pkgs] New package: corrr 0.1.0
+Message-ID: <002501d1de24$0bea7a00$23bf6e00$@gmail.com>
+
+Dear R users,
+
+ 
+
+I'm glad to announce the release of a new package on CRAN for exploring
+correlations in R: corrr
+<https://cran.rstudio.com/web/packages/corrr/index.html> .
+
+ 
+
+corrr provides a handful of methods to create and explore a correlation tbl
+(rather than a matrix). E.g., rearrange() the correlations based on their
+strength, or focus() on selected variables against others. All methods are
+designed to work in data pipelines, and the tbl (data frame) structure
+allows for custom exploration using packages like dplyr.
+
+ 
+
+corrr is my first package on CRAN, and I'd greatly appreciate any feedback,
+suggestions, or contributions on Github: https://github.com/drsimonj/corrr
+
+ 
+
+Enjoy,
+
+ 
+
+Simon
+
+SIMON A JACKSON | Postdoctoral Research Fellow
+Cognitive and Decision Sciences Research Lab (CODES), School of Psychology
+
+THE UNIVERSITY OF SYDNEY
+Rm 440, Brennan MacCallum Building A18 | The University of Sydney | NSW |
+2006
+drsimonjackson at gmail.com <mailto:drsimonjackson at gmail.com>   | @drsimonj
+<https://twitter.com/drsimonj> 
+
+ 
+
+ 
+
+
+	[[alternative HTML version deleted]]
+
+
+From jepusto at gmail.com  Wed Jul 27 16:29:16 2016
+From: jepusto at gmail.com (James Pustejovsky)
+Date: Wed, 27 Jul 2016 09:29:16 -0500
+Subject: [R-pkgs] new package clubSandwich: Cluster-Robust (Sandwich)
+ Variance Estimators with Small-Sample Corrections
+Message-ID: <CAFUVuJwJ1-Uk5KJHYv0L+FEVk=WKwe2yPvL9C=wxCoy_WzhgKw@mail.gmail.com>
+
+Dear R users:
+
+I'm happy to announce the first CRAN release of the clubSandwich package:
+
+https://cran.r-project.org/web/packages/clubSandwich
+
+clubSandwich provides several variants of the cluster-robust variance
+estimator for ordinary and weighted least squares linear regression models,
+including the bias-reduced linearization estimator of Bell and McCaffrey
+(2002). The package includes functions for estimating the
+variance-covariance matrix and for testing single- and multiple-contrast
+hypotheses based on Wald test statistics. The hypothesis tests incorporate
+small-sample corrections that lead to more accurate rejection rates when
+the number of clusters is small or the design is unbalanced/leveraged.
+Tests of single regression coefficients use Satterthwaite or saddle-point
+corrections. Tests of multiple-contrast hypotheses use an approximation to
+Hotelling's T-squared distribution. Methods are provided for a variety of
+fitted models, including lm(), plm() (from package 'plm'), gls() and lme()
+(from 'nlme'), robu() (from 'robumeta'), and rma.uni() and rma.mv() (from
+'metafor').
+
+The package includes two vignettes that demonstrate its use for estimation
+of panel data models and meta-regression models.
+
+Bug reports, suggestions, and feature requests are welcome
+at https://github.com/jepusto/clubSandwich
+
+Cheers,
+James
+
+
+___________________________________________
+James Pustejovsky
+Assistant Professor, Quantitative Methods Program
+Educational Psychology Department
+The University of Texas at Austin
+http://jepusto.github.io/
+
+	[[alternative HTML version deleted]]
+
+
+From guillermo.olmedo at gmail.com  Tue Aug  2 00:35:06 2016
+From: guillermo.olmedo at gmail.com (Guillermo Federico Olmedo)
+Date: Mon, 1 Aug 2016 19:35:06 -0300
+Subject: [R-pkgs] new version of package water: Actual Evapotranspiration
+ with Energy Balance Models
+Message-ID: <CABOAaB1FnDL8BHDA0TRArwaxFqsADKNKF5bBKsKvWtw+MRx54A@mail.gmail.com>
+
+Dear R users,
+
+I'm glad to announce the new version of water package (0.5).
+
+As this is my first message to the list, I want to add that this
+package provides tools to estimate actual evapotranspiration from
+surface energy balance models.
+
+Right now you can run the well-know METRIC model using it. This model
+allows to estimate the energy balance using landsat (7 or 5) images
+and a weather station.
+
+I'll be happy to discuss or provide more information.
+
+Regards,
+
+Guillermo.
+
+#########################
+
+The changes since the last version are:
+
+* Added maxit parameter to calcH to control the maximun number of iterations.
+* Added an optional constrain to the selection of anchors pixels using the
+  location of the weather station and a 30km buffer.
+* Changed default value for Z.om.ws in calcH. (From 0.0018 to 0.03)
+* Added a new parameter to calcAnchors, available for both methods: buffer.
+  buffer allow to set the minimun distance between two anchor pixels of the same
+  kind
+* Added a new method for calcAnchors = "CITRA-MCBbc". This method chooses the
+  coldest and hottest anchors pixels availables. Previous method ("CITRA-MCBr")
+  chooses random pixel who meets the conditions. CITRA-MCBbc is now the default
+  method for calcAnchors
+* General remote sensing functions moved to a separate file
+* loadImage detects when there is more than 1 image on the working folder
+* Rn, G, H, LE are restricted to values > 0
+* Improvements to anchors pixels selection: more releaxed hot
+  temperature criterium, distance, mean of many pixels, etc
+* Added two methods for land surface estimation: single channel and
+split windows.
+  Split windows only works for Landsat 8.
+* loadImage now loads thermal data also: low gain for L7 and both bands for L8
+* Fixed big bug when estimating ETo with a large weather station file
+
+
+From rpkg at jcarroll.com.au  Mon Aug  8 14:56:08 2016
+From: rpkg at jcarroll.com.au (Jonathan Carroll)
+Date: Mon, 8 Aug 2016 22:26:08 +0930
+Subject: [R-pkgs] New package: ggghost 0.1.0 - Capture the spirit of your
+	ggplot2 calls
+Message-ID: <CAAjDRigRHmiPSBEoY7h3rCXD7FF7_Bk2x_PenDoBT4t0LXKBQQ@mail.gmail.com>
+
+Greetings, R users!
+
+I am pleased to announce the release of my first CRAN package: ggghost.
+
+https://cran.r-project.org/web/packages/ggghost
+https://github.com/jonocarroll/ggghost
+
+Features:
+
+ - Minimal user-space overhead for implementation; p %g<% ggplot(dat,
+aes(x,y))
+ - ggplot2 components added to the plot object (p <- p + geom_point()) are
+stored in a list within p, and evaluation delayed
+ - The incoming data is captured and retained for reproducibility
+ - The list of calls can be added to (+), subtracted from (-, via regex),
+and subset
+ - The list of calls can be inspected (via summary)
+ - The data and calls can be recovered from the object p even if removed
+from the workspace.
+
+Provides a solution to a question posed here:
+https://twitter.com/JennyBryan/status/755417584359632896
+
+Whether the pun name or the R code came first is a secret that dies with me.
+
+I welcome any feedback or suggestions you may have.
+
+Kind regards,
+
+- Jonathan Carroll.
+
+	[[alternative HTML version deleted]]
+
+
+From bob at rud.is  Mon Aug  8 16:52:40 2016
+From: bob at rud.is (Bob Rudis)
+Date: Mon, 8 Aug 2016 10:52:40 -0400
+Subject: [R-pkgs] New package uaparserjs 0.1.0 - Slice up browser user agent
+	strings
+Message-ID: <CAA-FpKUF-5mJNLCVG_3ATWNSAoV3zhp3Y4N+oZnQZs1M9OOS3w@mail.gmail.com>
+
+I keep forgetting I can announce things here.
+
+[Insert witty/standard boilerplate introductory verbiage here]
+
+CRAN: <https://cran.rstudio.com/web/packages/uaparserjs/index.html>
+GitHub: <https://github.com/hrbrmstr/uaparserjs>
+
+Until Oliver and/or I figure out a way to get uap-r
+<https://github.com/ua-parser/uap-r> working w/o Boost, this package
+provides a way to parse browser user agent strings that are found in
+web logs, proxy logs, PCAPs, etc.
+
+This is about 100x slower than uap-r as it's based on javascript
+modules that I've built a V8-wrapper around.
+
+It doesn't work on i386 Windows due to v8-library (not the V8-package)
+limitations but it works on 64-bit Windows (prbly better off
+installing from github for that as CRAN is marking this non-Windows
+due to the i386 incompatibility).
+
+If you're on Linux and can deal with a full Boost install and have
+need of user agent parsing, use uap-r (it still won't work on Windows
+or macOS). Otherwise, give this a go.
+
+I've tested in on a number of OSes but welcome feedback and I'm sure
+both Oliver & I would welcome hints on alternatives to Boost regex
+that work on all OSes for uap-r since I'd eventually like to replace
+this with that.
+
+-Bob
+
+
+From malNamalJa at gmx.de  Tue Aug 16 00:03:39 2016
+From: malNamalJa at gmx.de (=?UTF-8?Q?=22Jannes_M=C3=BCnchow=22?=)
+Date: Tue, 16 Aug 2016 00:03:39 +0200
+Subject: [R-pkgs] RQGIS 0.1.0 release
+Message-ID: <trinity-ccbe8b64-b6d1-45a2-9753-09bf2019acfa-1471298619060@3capp-gmx-bs41>
+
+Dear all,
+
+We proudly announce the release of RQGIS! RQGIS establishes an interface between R and QGIS (probably the most widely used
+open-source Desktop GIS!), i.e. it allows the user to access the more than 1000 QGIS geoalgorithms from within R. To install it, run:
+
+install.packages("RQGIS")
+
+To find out more about RQGIS and how to use it, please visit:
+
+https://jannesm.wordpress.com/2016/08/15/rqgis-0-1-0-release/
+
+and/or
+
+https://github.com/jannes-m/RQGIS
+
+All the best,
+
+Jannes
+?
+
+
+From neerajdhanraj at gmail.com  Thu Aug 18 09:02:15 2016
+From: neerajdhanraj at gmail.com (Neeraj Dhanraj)
+Date: Thu, 18 Aug 2016 12:32:15 +0530
+Subject: [R-pkgs] have a look over package "imputeTestbench"
+Message-ID: <CAC58_YkEScPombZnELJP5mDwbxco9ANR3Kw4d+Lwm_idruir8g@mail.gmail.com>
+
+Hi Friends,
+
+Have a look over R package "imputeTestbench". It provides a Test bench for
+comparison of missing data imputation models/methods. It compares imputing
+methods with reference to RMSE, MAE or MAPE parameters. It allows to add
+new proposed methods to test bench and to compare with other methods. The
+function 'append_method()' allows to add multiple numbers of methods to the
+existing methods available in test bench.
+
+CRAN: https://cran.r-project.org/package=imputeTestbench
+
+GitHub: https://github.com/neerajdhanraj/imputeTestbench
+
+How to Use:
+https://www.researchgate.net/publication/305767990_R_package_%27imputeTestbench%27_as_a_Testbench_to_compare_missing_value_imputation_methods
+
+The current version is talking about univariate dataset imputation. Very
+next version will allow user to operate it on any type of dataset including
+multivariate datset.
+
+For more detail contact me at:
+http://www.neerajbokde.com/?
+-- 
+Regards ,
+*Neeraj Dhanraj Bokde  *
+*M.E. Embedded System*
+
+*Birla Institute of Technology & Science,* Pilani
+
+Pilani Campus , Rajasthan, India
+
+Phone: *+91 9028415974*
+
+Email: h2012105 at pilani.bits-pilani.ac.in; *neerajdhanraj at gmail.com
+<neerajdhanraj at gmail.com>*
+
+Website: http://www.neerajbokde.com
+
+	[[alternative HTML version deleted]]
+
+
+From david.bucklin at gmail.com  Mon Aug 29 20:46:42 2016
+From: david.bucklin at gmail.com (David Bucklin)
+Date: Mon, 29 Aug 2016 14:46:42 -0400
+Subject: [R-pkgs] new package: rpostgis
+Message-ID: <CAECT9fmyNJaGtrzF7j2qKXQ=h20yS7-gAWrj7apWR7YDYBo5Sg@mail.gmail.com>
+
+We'd like to announce the initial CRAN release of 'rpostgis' (v1.0.0),
+which facilitates transfer between PostGIS "Geometry" objects (stored in
+PostgreSQL databases) and R spatial objects. The package also contains a
+variety of convenience functions which are supplemental to the excellent
+'RPostgreSQL' package for interfacing with a PostgreSQL/PostGIS database.
+
+To install the package:
+
+install.packages("rpostgis")
+
+The package main development area can be found on GitHub; any bugs, issues,
+or feature requests can be submitted through the "issues" page there:
+
+https://github.com/mablab/rpostgis
+David
+
+	[[alternative HTML version deleted]]
+
+
+From neerajdhanraj at gmail.com  Sun Aug 28 05:55:31 2016
+From: neerajdhanraj at gmail.com (Neeraj Dhanraj)
+Date: Sun, 28 Aug 2016 09:25:31 +0530
+Subject: [R-pkgs] The modification in PSF Package
+Message-ID: <CAC58_YnX4TD3yCb5QoQ3TzB40itkF1sSOyLqXubkSOaOoh_qRA@mail.gmail.com>
+
+Dear Researchers,
+
+Have a look over updated *R package PSF*. Pattern Sequence Based
+Forecasting (PSF) takes univariate time series data as input and assist to
+forecast its future values. This algorithm forecasts the behavior of time
+series based on similarity of pattern sequences. Initially, clustering is
+done with the labeling of samples from database. The labels associated with
+samples are then used for forecasting the future behaviour of time series
+data. The further technical details and references regarding PSF are
+discussed in Vignette.
+
+*CRAN:* *https://cran.r-project.org/web/packages/PSF/index.html
+<https://cran.r-project.org/web/packages/PSF/index.html>*
+
+*GitHub:* https://github.com/neerajdhanraj/PSF
+
+*How to use:* https://www.researchgate.net/publication/304131481_PSF_
+Introduction_to_R_Package_for_Pattern_Sequence_Based_Forecasting_Algorithm
+
+Also go through the modification in terms of seasonal dataset.
+
+https://www.researchgate.net/publication/304580701_
+Introduction_of_seasonality_concept_in_PSF_algorithm_to_
+improve_univariate_time_series_predictions
+
+For further details *contact me* at: http://www.neerajbokde.com/
+
+-- 
+Regards ,
+Neeraj Dhanraj Bokde
+M.E. Embedded System
+
+Birla Institute of Technology & Science, Pilani
+
+Pilani Campus , Rajasthan, India
+
+Phone: *+91 9028415974 <%2B91%209028415974>*
+
+Email: h2012105 at pilani.bits-pilani.ac.in; *neerajdhanraj at gmail.com
+<neerajdhanraj at gmail.com>*
+
+Website: http://www.neerajbokde.com
+
+	[[alternative HTML version deleted]]
+
+
+From friendly at yorku.ca  Tue Sep  6 19:54:20 2016
+From: friendly at yorku.ca (Michael Friendly)
+Date: Tue, 6 Sep 2016 13:54:20 -0400
+Subject: [R-pkgs] statquotes package released to CRAN
+Message-ID: <5e149577-d9b8-7eb4-0fa8-f1bb7edcb6b7@yorku.ca>
+
+## statquotes package released to CRAN
+
+The statquotes package v. 0.2 has recently been released to CRAN.  In a spirit
+similar to fortunes and gaussfacts, the function `statquote()`
+displays a randomly chosen quotation from a data base consisting
+of quotes about topics related to statistics, data visualization and science.
+
+The data base is a collection of quotations assembled over the years from various
+sources. The quotes are classified by general topics (and subtopics).
+
+### Examples
+
+> set.seed(761)
+> statquote()
+The best thing about being a statistician is that you get to play in everyone's backyard.
+--- John W. Tukey
+> statquote(topic="science")
+Some people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute
+to make the whole picture beautiful and unique.
+--- Anon.
+
+### Development
+
+The package is hosted on Github, at https://github.com/friendly/statquotes/.
+Please report any problems or bugs at https://github.com/friendly/statquotes/issues.
+
+
+-- 
+Michael Friendly     Email: friendly AT yorku DOT ca
+Professor, Psychology Dept. & Chair, Quantitative Methods
+York University      Voice: 416 736-2100 x66249 Fax: 416 736-5814
+4700 Keele Street    Web:http://www.datavis.ca
+Toronto, ONT  M3J 1P3 CANADA
+
+
+From friendly at yorku.ca  Tue Sep  6 20:06:40 2016
+From: friendly at yorku.ca (Michael Friendly)
+Date: Tue, 6 Sep 2016 14:06:40 -0400
+Subject: [R-pkgs] Lahman package v. 5.0.0 released to CRAN
+Message-ID: <f691c99e-7d0b-cf73-2399-bfb2605aa572@yorku.ca>
+
+## Lahman package v. 5.0.0 released to CRAN
+
+Team Lahman is pleased to announce that v. 5.0.0 of the Lahamn package 
+is now
+on CRAN.  It contains the data from Sean Lahman's Baseball Database,
+http://www.seanlahman.com/baseball-archive/statistics/
+as a collection of data frames covering nearly all aspects of baseball
+statistics from 1871--2015.
+
+In this release,
+
+* All data sets have been updated with data for the 2015 baseball 
+season.  In
+   addition, numerous corrections of data errors and inconsistencies 
+discovered
+   in previous year tables were applied.
+
+* Documentation examples are now provided for all data tables.
+
+*  Documentation examples were re-writtten to make extensive use of 
+dplyr for data manipulation
+   and ggplot2 for graphics.
+
+### Development
+
+All development of the package takes place on Github, 
+https://github.com/cdalzell/Lahman.
+Major versions of the R package are released only once a year, following 
+the release of a
+new 20XX archive on Sean Lahman's site.  This R release occurs after 
+sufficient time has
+elapsed to correct errors in the source data for a new season. Minor 
+versions may be
+released from time to time to correct errors in the R version or add 
+functionality.
+
+Please report any problems or issues with this new version as an issue 
+on this site,
+https://github.com/cdalzell/Lahman/issues.  Additional contributions are 
+welcome.
+
+There exists an old pseudo-wiki on R-Forge, 
+http://lahman.r-forge.r-project.org/ that
+collects some additional analyses and visualizations.
+
+-- Team Lahman: Chris Dalzell (maintainer), Michael Friendly (author), 
+Denis Murphy, Martin Monkman, Sean Lahman
+
+
+-- 
+Michael Friendly     Email: friendly AT yorku DOT ca
+Professor, Psychology Dept. & Chair, Quantitative Methods
+York University      Voice: 416 736-2100 x66249 Fax: 416 736-5814
+4700 Keele Street    Web:http://www.datavis.ca
+Toronto, ONT  M3J 1P3 CANADA
+
+
+From brodie.gaslam at yahoo.com  Wed Sep  7 14:40:01 2016
+From: brodie.gaslam at yahoo.com (brodie gaslam)
+Date: Wed, 7 Sep 2016 12:40:01 +0000 (UTC)
+Subject: [R-pkgs] diffobj released to CRAN
+References: <1718206551.1071563.1473252001303.ref@mail.yahoo.com>
+Message-ID: <1718206551.1071563.1473252001303@mail.yahoo.com>
+
+diffobj provides tools to compare the visual representation of R objects using the Myer's diff algorithm:
+
+## Example:
+> mx1 <- matrix(1:9, 3)
+> mx2 <- mx1[-2,]
+> diffPrint(mx1, mx2, format="raw")
+< mx1                  > mx2
+@@ 1,4 @@              @@ 1,3 @@
+.       [,1] [,2] [,3]         [,1] [,2] [,3]
+. [1,]    1    4    7    [1,]    1    4    7
+< [2,]    2    5    8  ~
+. [3,]    3    6    9    [2,]    3    6    9
+
+This is similar to `tools::Rdiff`, but is easier to use directly with R objects, has colorized output if your terminal supports it, has semantic-aware handling of the text output of R objects, and does not require the GNU diff utility to be available on the system.
+
+See the vignette for more details <https://cran.r-project.org/web/packages/diffobj/vignettes/diffobj.html>, and the Github page to submit issues <https://github.com/brodieG/diffobj>.
+
+Many thanks to Uwe Ligges and Kurt Hornik for their patience with my first CRAN submission.
+
+Brodie Gaslam.
+
+
+From bgunter at comcast.net  Thu Sep  8 18:56:15 2016
+From: bgunter at comcast.net (Bert Gunter)
+Date: Thu, 8 Sep 2016 09:56:15 -0700
+Subject: [R-pkgs] stripless package version 1.0-2 now on CRAN
+Message-ID: <63626547-A7D3-4D0A-B24A-18AE3400C1AB@comcast.net>
+
+A vignette has been added to the package. I hope that even those who don?t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs and adds a few small features. See the NEWS file for details. As always, comments and suggestions welcome. 
+
+
+From gennarotedesco at gmail.com  Sun Sep 25 15:34:38 2016
+From: gennarotedesco at gmail.com (Gennaro Tedesco)
+Date: Sun, 25 Sep 2016 15:34:38 +0200
+Subject: [R-pkgs] package Rdice released
+Message-ID: <CAF=y844JFV=pvhysB+mtEYtM8YtNWWbCNtJ45LT5eWp4kmQTfQ@mail.gmail.com>
+
+The package "Rdice" has just been released on CRAN. It contains a
+collection of functions to simulate dice rolls and the like. In particular,
+experiments and exercises can be performed looking at combinations and
+permutations of values in dice rolls and coin flips, together with the
+corresponding frequencies of occurrences. When applying each function, the
+user has to input the number of times (rolls, flips) to toss the dice.
+Moreover, the package provides functions to generate non-transitive sets of
+dice (like Efron's) and to check whether a given set of dice is
+non-transitive with given probability.
+
+A vignette with example and use cases is provided.
+
+Best regards,
+Gennaro
+
+	[[alternative HTML version deleted]]
+
+
+From bob at rud.is  Sat Oct  1 19:25:44 2016
+From: bob at rud.is (Bob Rudis)
+Date: Sat, 1 Oct 2016 13:25:44 -0400
+Subject: [R-pkgs] A few new packages on CRAN
+Message-ID: <CAA-FpKWE=Nv0fi+3BAWbMbSeznTZ8eBP4zYydq7RmCmkWvBxVw@mail.gmail.com>
+
+- ndjdon : Wicked Fast ndjson Reader
+
+  Reads in ndjson significantly faster than jsonlite::stream_in(), flattens
+each
+  JSON record and returns a data.table.
+
+  https://cran.r-project.org/web/packages/ndjson/index.html
+
+
+- htmltidy : Clean Up or Pretty Print Gnarly HTML and XHTML
+
+  C-backed package that includes the HTML Tidy library. Useful for cleaning
+up
+  HTML beyond what you get with the HTML parsing in the libxml2-based
+packages.
+
+  https://cran.r-project.org/web/packages/htmltidy/index.html
+
+  (v0.3.0 on github is a tad more robust and will be in CRAN later in
+October)
+
+
+- wand : Retrieve 'Magic' Attributes from Files and Directories
+
+  Uses libmagic (file.exe on Windows for the time being) to discern file
+types.
+
+  https://cran.r-project.org/web/packages/wand/index.html
+
+  (100% libmagic version coming later in October)
+
+
+- gdns : Tools to work with the Google DNS over HTTPS API
+
+  Provides full access to the Google DNS HTTPS API and also toold to work
+with
+  SPF records. Great for validating your local provider DNS lookups and for
+  generating features for cybersecurity machine learning.
+
+  https://cran.r-project.org/web/packages/gdns/index.html
+
+
+- qrencoder : Quick Response Code (QR Code) / Matrix Barcode Creator
+
+  C-backed package to generate QR codes (it's being used in some bitcoin
+Shiny
+  projects).
+
+  https://cran.r-project.org/web/packages/qrencoder/index.html
+
+
+- darksky : Tools to Work with the Dark Sky API
+  Data retrieval and some default plotting for this weather API.
+
+  https://cran.r-project.org/web/packages/darksky/index.html
+
+Issues/enhancement requests are most welcome at each pkg's GH issues page.
+
+-Bob
+
+	[[alternative HTML version deleted]]
+
+
+From francois.vieille at mel.lincoln.fr  Mon Oct 10 11:30:44 2016
+From: francois.vieille at mel.lincoln.fr (Francois vieille)
+Date: Mon, 10 Oct 2016 11:30:44 +0200
+Subject: [R-pkgs] aVirtualTwins available on CRAN
+Message-ID: <D28EF69F27EB064FA9FD0F5F09ADFCE517203923E9@srv-exchange.lincoln-outils.fr>
+
+
+[markdown format]
+
+I'm glad to introduce you the new package aVirtualTwins. This package is an adaptation of VirtualTwins method of subgroup identification from [Foster, J. C., Taylor, J. M.G. and Ruberg, S. J. (2011)](http://onlinelibrary.wiley.com/doi/10.1002/sim.4322/abstract).
+
+### Explanation
+
+Virtual Twins has been created to find subgroup of patients in a random clinical trial with enhanced treatment effect, if it exists. Theorically, this method can be used for binary and continous outcome. This package only deals with binary outcome in a two arms clinical trial.
+
+Virutal Twins is also adapted for A/B testing of course.
+
+Virtual Twins is based on random forest and regression/classification trees.
+
+### Quick preview
+
+Here's a example of aVirtualTwins use with a well known dataset (_sepsis_) in subgroup decovery:
+
+_Sepsis_ contains simulated data on 470 subjects with a binary outcome survival, that stores survival status for patient after 28 days of treatment, value of 1 for subjects who died after 28 days and 0 otherwise. There are 11 covariates, listed below, all of which are numerical variables.
+
+
+```r
+library(aVirtualTwins)
+
+# Load data
+data(sepsis)
+# Format data
+vt.obj <- vt.data(dataset         = sepsis,
+                  outcome.field   = "survival",
+                  treatment.field = "THERAPY",
+                  interactions    = TRUE)
+## "1" will be the favorable outcome
+# view of data
+head(sepsis)
+##   survival THERAPY PRAPACHE    AGE BLGCS ORGANNUM   BLIL6  BLLPLAT
+## 1        0       1       19 42.921    15        1  301.80 191.0000
+## 2        1       1       48 68.818    11        2  118.90 264.1565
+## 3        0       1       20 68.818    15        2   92.80 123.0000
+## 4        0       1       19 33.174    14        2 1232.00 244.0000
+## 5        0       1       48 46.532     3        4 2568.00  45.0000
+## 6        0       0       21 56.098    14        1  162.65 137.0000
+##    BLLBILI BLLCREAT TIMFIRST BLADL blSOFA
+## 1 2.913416 1.000000    17.17     0   5.00
+## 2 0.400000 1.100000    17.17     5  10.00
+## 3 5.116471 1.000000    10.00     1   7.50
+## 4 3.142092 1.200000    17.17     0   6.25
+## 5 4.052668 3.000000    10.00     0  12.00
+## 6 0.500000 4.662556    10.00     0   8.75
+# Print Incidences of sepsis data
+vt.obj$getIncidences()
+## $table
+##            trt
+## resp        0    1     sum  
+##   0         101  188   289  
+##   1         52   129   181  
+##   sum       153  317   470  
+##   Incidence 0.34 0.407 0.385
+## 
+## $rr
+## [1] 1.197059
+# $table
+#            trt
+# resp        0    1     sum  
+#   0         101  188   289  
+#   1         52   129   181  
+#   sum       153  317   470  
+#   Incidence 0.34 0.407 0.385
+#
+# $rr
+# [1] 1.197059
+#
+
+# First step : create random forest model
+vt.for <- vt.forest(forest.type  = "one",
+                    vt.data      = vt.obj,
+                    interactions = TRUE,
+                    ntree        = 500)
+# Second step : find rules in data 
+vt.trees <- vt.tree(tree.type = "class",
+                    vt.difft  = vt.for, 
+                    threshold = quantile(vt.for$difft, seq(.5,.8,.1)),
+                    maxdepth  = 2)
+# Print results
+vt.sbgrps <- vt.subgroups(vt.trees)
+knitr::kable(vt.sbgrps)
+```
+
+        Subgroup                      Subgroup size   Treatement event rate   Control event rate   Treatment sample size   Control sample size    RR (resub)   RR (snd)
+------  ----------------------------  --------------  ----------------------  -------------------  ----------------------  --------------------  -----------  ---------
+tree1   PRAPACHE>=26.5                157             0.752                   0.327                105                     52                          2.300      1.774
+tree3   PRAPACHE>=26.5 & AGE>=51.74   120             0.897                   0.31                 78                      42                          2.894      1.924
+
+
+aVirtualTwins can be found on [CRAN](https://cran.r-project.org/package=aVirtualTwins) and [github](https://github.com/prise6/aVirtualTwins). Feel free to contribute.
+
+Francois.
+
+
+From johanlarsson at outlook.com  Mon Oct 10 08:33:07 2016
+From: johanlarsson at outlook.com (Johan Larsson)
+Date: Mon, 10 Oct 2016 06:33:07 +0000
+Subject: [R-pkgs] Announcing qualpalr 0.2.1
+Message-ID: <AM5PR0801MB1732DF4DA9D81DE41665BAFFC0DB0@AM5PR0801MB1732.eurprd08.prod.outlook.com>
+
+Dear R users,
+
+I would like to announce an updated version of qualpalr:
+
+https://cran.r-project.org/package=qualpalr
+
+qualpalr uses color difference equations to generate distinct qualitative color palettes for use in R graphics. Version 0.2.1 has been redesigned to use a better, more efficient optimization method and moreover introduces methods to adapt palettes to color blindness.
+
+Please see the vignette (https://cran.r-project.org/web/packages/qualpalr/vignettes/introduction.html) if you'd like to learn more or visit the repository on GitHub (https://github.com/jolars/qualpalr) if you want to contribute.
+All the best,
+Johan
+
+	[[alternative HTML version deleted]]
+
+
+From stefan.schroedl at gmx.de  Wed Oct  5 06:46:42 2016
+From: stefan.schroedl at gmx.de (=?UTF-8?Q?=22Stefan_Schr=C3=B6dl=22?=)
+Date: Wed, 5 Oct 2016 06:46:42 +0200
+Subject: [R-pkgs] New Package: Plotluck
+In-Reply-To: <mailman.0.1475642105.27394.r-packages@r-project.org>
+References: <mailman.0.1475642105.27394.r-packages@r-project.org>
+Message-ID: <trinity-ac927d4e-f330-4cd3-b5e2-c9a63689042b-1475642802266@3capp-gmx-bs26>
+
+
+Dear useRs,
+
+I am happy to announce that my package "plotluck" is now on CRAN:
+[1]https://cran.r-project.org/web/packages/plotluck/
+
+The aim of the package is to let the user focus on what to plot, rather than on
+ the "how" during exploratory data analysis. Based on  the characteristics of a
+ data frame and a formula, it tries to automatically choose the most suitable t
+ype of plot (supported options are scatter, violin, box, bar, density, hexagon
+bin, spine plot, and heat map). It also automates handling of observation weigh
+ts, logarithmic axis scaling, reordering of factor levels, and overlaying smoot
+hing curves and median lines. Plots are drawn using 'ggplot2'. Please see the v
+ignette for some examples.
+
+I welcome all feedback, suggestions, bug reports and feature requests.
+Thank you!
+
+
+   - Stefan
+
+References
+
+   1. https://cran.r-project.org/web/packages/plotluck/
+
+From kontakt at benjaminschlegel.ch  Mon Oct 10 16:19:19 2016
+From: kontakt at benjaminschlegel.ch (kontakt at benjaminschlegel.ch)
+Date: Mon, 10 Oct 2016 16:19:19 +0200
+Subject: [R-pkgs] new package glm.predict
+Message-ID: <004e01d22301$4a378e20$dea6aa60$@benjaminschlegel.ch>
+
+Dear R users,
+
+ 
+
+I'm pleased to announce that my first package has been accepted in CRAN.
+
+ 
+
+https://cran.r-project.org/web/packages/glm.predict/
+
+ 
+
+With glm.predict it is possible to calculate discrete changes with
+confidence intervals for glm(), glm_nb(), polr() and multinom() models.
+
+It is possible to calculate many discrete changes with just one line of
+code. The output is a data.frame.
+
+ 
+
+The functions calculate the confidence intervals with simulation, so the
+results are only true asymptotically.
+
+ 
+
+Comments and suggestions are welcome.
+
+ 
+
+Best
+
+Benjamin
+
+------------------------------------------------------
+
+Benjamin Schlegel
+
+University of Zurich
+
+Institut of Political Science
+Affolternstrasse 56
+8050 Zurich
+
+kontakt at benjaminschlegel.ch
+
++41 44 634 62 08
+
+
+	[[alternative HTML version deleted]]
+
+
+From johanlarsson at outlook.com  Sun Oct 16 11:49:05 2016
+From: johanlarsson at outlook.com (Johan Larsson)
+Date: Sun, 16 Oct 2016 09:49:05 +0000
+Subject: [R-pkgs] New package: eulerr 0.1.0
+Message-ID: <AM5PR0801MB1732ADA1AEAB51A947BC6CC3C0D10@AM5PR0801MB1732.eurprd08.prod.outlook.com>
+
+Dear R users,
+
+
+
+I would like to announce the first version of eulerr (https://cran.r-project.org/package=eulerr). eulerr generates area-proportional euler diagrams that display set relationships (intersections, unions, and disjoints) with circles. Euler diagrams (https://en.wikipedia.org/wiki/Euler_diagram) are Venn diagrams without the requirement that all set interactions be present (whether they are empty or not). That is, depending on input, eulerr will sometimes produce Venn diagrams and sometimes not.
+
+
+
+Please see the vignette (https://cran.r-project.org/web/packages/eulerr/vignettes/introduction.html) for a brief introduction or visit the repository on GitHub (https://github.com/jolars/eulerr) to contribute.
+
+
+
+All the best,
+
+Johan
+
+	[[alternative HTML version deleted]]
+
+
+From a.recktenwald at mx.uni-saarland.de  Tue Oct 25 13:58:18 2016
+From: a.recktenwald at mx.uni-saarland.de (Andreas Recktenwald)
+Date: Tue, 25 Oct 2016 13:58:18 +0200
+Subject: [R-pkgs] New Package: pinbasic - Fast and Stable Estimation of the
+ Probability of Informed Trading (PIN)
+Message-ID: <a262f7c2-63e8-7e84-c611-9ce55041a377@mx.uni-saarland.de>
+
+Dear R-Users,
+
+a new package, "pinbasic", is now available on CRAN. According to the 
+DESCRIPTION:
+
+
+Utilities for fast and stable estimation of the probability of informed 
+trading (PIN) in the model introduced by Easley et al. (2002) 
+<DOI:10.1111/1540-6261.00493> are implemented. Since the basic model 
+developed  by Easley et al. (1996) 
+<DOI:10.1111/j.1540-6261.1996.tb04074.x> is nested in the former due to 
+equating the intensity of uninformed buys and sells, functionalities  
+can also be applied to this simpler model structure, if needed.
+
+
+A vignette will be added to the package in near future. However, the 
+existing manual pages should be a good starting point.
+
+Development version of the package is available at:
+
+https://github.com/anre005/pinbasic
+
+-- 
+Diplom-Kaufmann Andreas Recktenwald
+Statistik & ?konometrie
+Rechts- und Wirtschaftswissenschaftliche Fakult?t
+Universit?t des Saarlandes
+Campus C3 1, Raum 2.06
+66123 Saarbr?cken
+Deutschland
+
+
+From es at enricoschumann.net  Mon Oct 24 20:44:36 2016
+From: es at enricoschumann.net (Enrico Schumann)
+Date: Mon, 24 Oct 2016 20:44:36 +0200
+Subject: [R-pkgs] NMOF 0.40-0 (Numerical Methods and Optimization in Finance)
+Message-ID: <87a8dtd1t7.fsf@enricoschumann.net>
+
+Dear all,
+
+version 0.40-0 of package NMOF is on CRAN now, 5 years
+(exactly) after its first release on CRAN.
+
+'NMOF' stands for 'Numerical Methods and Optimization
+in Finance'. The package accompanies the book with the
+same name, written by Manfred Gilli, Dietmar Maringer
+and Enrico Schumann, published by Elsevier/Academic
+Press in 2011.
+
+Since my last announcement on this list [1], many
+things have been added to the package:
+
+- all the R code examples from the book (?showExample)
+
+- many new functions, e.g. for pricing financial
+  instruments (?vanillaOptionEuropean, ?vanillaBond,
+  ?callMerton, ?xtContractValue, ...), and utilities
+  for Monte-Carlo simulation, for computing implied
+  vol, yields, etc.
+
+Many of these new functions are described, with
+examples, in the Manual [2].
+
+If you want to stay up-to-date: the latest version is
+always available from my website [3]; there is a public
+Git repository on GitHub [4].
+
+In case of comments/corrections/remarks/suggestions --
+which are very welcome -- please contact the maintainer
+(me) directly.
+
+
+Kind regards
+    Enrico
+
+
+[1] https://stat.ethz.ch/pipermail/r-packages/2011/001257.html
+[2] http://enricoschumann.net/NMOF.htm#NMOFmanual
+[3] http://enricoschumann.net/R/packages/NMOF/
+[4] https://github.com/enricoschumann/NMOF
+
+-- 
+Enrico Schumann
+Lucerne, Switzerland
+http://enricoschumann.net
+
+
+From f.harrell at vanderbilt.edu  Thu Nov  3 14:51:28 2016
+From: f.harrell at vanderbilt.edu (Frank Harrell)
+Date: Thu, 3 Nov 2016 08:51:28 -0500
+Subject: [R-pkgs] Massive Update to Hmisc package
+Message-ID: <CAMO-wTa0yqeeJm+KhqFwTqu0ntFxj0=+k6HQkUU_-H7jeKGzpA@mail.gmail.com>
+
+Hmisc 4.0-0 is now on CRAN.  The package has undergone a massive update.
+The most user-visable changes are;
+
+- support for Rmarkdown html notebooks
+
+- advanced html tables using the htmlTable package and summaryM function;
+can copy and paste into word processors
+
+- support for plotly interactive graphics, e.g.
+  options(grType='plotly')
+  plot(describe(mydata))
+
+- new function ggfreqScatter
+
+- new object markupSpecs that drives LaTeX and html translations
+
+- describe function computes new statistics and relabels Unique as Distinct
+
+The full list of changes is below.  You can look at examples of html
+notebook reports produced using the new Hmisc at
+http://biostat.mc.vanderbilt.edu/Hmisc .  These include interactive plotly
+graphics.
+
+Changes in version 4.0-0 (2016-10-31)
+   * summaryP: fixed exclude1 logic - was not excluding enough levels
+(inconsistent use of variable names vs. labels)
+* latexTranslate: any NAs in first argument changed to "" before conversion
+* minor.tick: added arguments to pass through (thanks: vhorvath)
+* tests/latexpng.r: test conversion of LaTeX table to png
+* latexTabular: made it properly call latexTranslate separately for each
+column, convert argument to matrix or data frame if a vector
+* tests/latexTabular.r: new test
+* latexDotchart: added call to latexTranslate to escape special characters
+for LaTeX such as underscore and pound sign
+* ggfreqScatter: new function
+* grType: new non-exported service function to sense if plotly is in effect
+* plot.describe: new function to make plotly graph for describe objects
+* describe: changed output: 3 decimal places for Info, new format for
+frequency table, separated logic for 10 extreme values from logic for
+frequency table, significant changes to print.describe
+* dotchartp: new version of dotchart3 for plotly charts
+* summaryD: modified to use dotchartp if options(grType='plotly') is in
+effect
+* nFm: added argument html
+* label.default, label.Surv, labelPlotmath: added html argument to
+implement HTML markup in place of plotmath (for plotly)
+* now imports htmlTable, viridis
+* html.contents.data.frame: return invisibly if file=''
+* htmlVerbatim: new function
+* html.contents.data.frame: improved html
+* html.data.frame: changed column headers from h4 to <strong>
+* ggfreqScatter: added html argument
+* knitrSet: was ignoring default figure h and w
+* html.summaryM: new function using new version of latex.summaryM
+* markupSpecs: new list object defining markup elements for latex and html,
+used by summaryM
+* show.html, print.html: removed; conflicted with htmltools/rmarkdown
+* label: required exact match on attribute name "label" to not retrieve the
+"labels" attribute (thanks: Ivan Puzek)
+* htmlSN: new function to convert floating point to scientific format usint
+html
+* upData, cleanup.import: fix NA becoming new factor levels (thanks: Beau
+Bruce)
+* htmlTranslate: new function
+* plotlySave: new function
+* histSpikep: new function
+* upData: new argument html
+* plot.describe: added ggplot2 graphics, improved continuous display using
+ggplotly
+* labelPlotmath: cleaned up by using markupSpecs
+* capitalize: fixed bug - did not cap. first letter if other letters after
+it were upper case (thanks: dchiu911)
+* html.summaryM: added brmsd argument to put mean, SD on separate line
+* Save: changed default back to use gzip for speed
+* knitrSet: used new knitr way to set aliases for option names
+* latexTabular: made translate argument apply to body of table also;
+implemented multi-line header
+* html.data.frame: added several arguments
+* describe: added html method
+* html markupSpecs object: added bibliographic database utility functions
+* bppltp: new service function for extended box plots for plotly
+* plot.summaryM: new plotly method
+* prType: new service function used to detect user settings for html, latex
+for print methods
+* html.contents.data.frame: removed file and append arguments and output an
+html character vector instead
+* prList: new function
+* GiniMd: moved to Hmisc from rms
+* describe: added GMD (Gini's mean difference) and relabeled unique to
+distinct
+* latex.summaryM: added Needspace{2.7in} before 2nd and later strata
+* ggplot.summaryP: added point labels for use with plotly as hover text
+* latex.summaryP: fixed bad linebreak at strata boundaries
+* dotchartpl: new plotly dot chart function especially for summaryP
+* plot.summaryP: new plotly method using dotchartpl when
+options(grType='plotly')
+* putHfig: new function to render graphics with captions in HTML reports
+* pngNeedle: new function, like latexNeedle but useful with HTML reports
+* html.data.frame: added width and caption arguments
+* plotlyParm: list object with plotly helper functions
+* summaryD, dotchartp: added symbol and col arguments
+* upData: improved efficiency, added labelled class to variables without it
+but having labels (e.g., data imported using haven package)
+* gbayesMixPost: mixed error in posterior odds of the mixing parameter that
+resulted in incorrect posterior probabilities when the variance of the
+statistic was appreciable; added option to compute posterior mean
+
+
+
+
+------------------------------
+Frank E Harrell Jr      Professor and Chairman      School of Medicine
+
+Department of *Biostatistics*      *Vanderbilt University*
+
+	[[alternative HTML version deleted]]
+
+
+From david.bucklin at gmail.com  Wed Nov  2 15:59:39 2016
+From: david.bucklin at gmail.com (David Bucklin)
+Date: Wed, 2 Nov 2016 10:59:39 -0400
+Subject: [R-pkgs] new package: rpostgisLT
+Message-ID: <CAECT9fk1E=1GkNAKpgjTsStfpG0yR=2AhBuJ+6Tbc3PkszsAuA@mail.gmail.com>
+
+We're announcing the initial CRAN release of 'rpostgisLT' (v0.4.0), which
+is an extension to our 'rpostgis
+<https://cran.r-project.org/web/packages/rpostgis/index.html>' package.
+rpostgisLT is aimed at those using R and/or the PostgreSQL/PostGIS database
+system to manage and analyze animal trajectory (movement) data. Package
+functions allow bi-directional transfer between the database and "ltraj"
+objects from the R package "adehabitatLT
+<https://cran.r-project.org/web/packages/adehabitatLT/index.html>", which
+has an extensive set of trajectory manipulation and analysis functions.
+
+To install the package:
+
+install.packages("rpostgisLT")
+
+To get started, please take a look at the Readme
+<https://cran.r-project.org/web/packages/rpostgisLT/README.html>, and to
+learn more, check out the package vignettes on the database data model
+<https://cran.r-project.org/web/packages/rpostgisLT/vignettes/data-model.html>
+and more advanced use cases
+<https://cran.r-project.org/web/packages/rpostgisLT/vignettes/use-cases.html>
+.
+
+The package main development area can be found on GitHub; any bugs, issues,
+or feature requests can be submitted through the "issues" page there:
+
+https://github.com/mablab/rpostgisLT
+
+David Bucklin
+
+	[[alternative HTML version deleted]]
+
+
+From f.harrell at vanderbilt.edu  Fri Nov  4 19:17:05 2016
+From: f.harrell at vanderbilt.edu (Frank Harrell)
+Date: Fri, 4 Nov 2016 13:17:05 -0500
+Subject: [R-pkgs] Major Update to rms package: 5.0-0
+Message-ID: <CAMO-wTbJaPUwnWWAEXGfvB4AhDZqvtiFHh1VHvXmo5BjyDQKEQ@mail.gmail.com>
+
+A major new version of the rms package is now on CRAN.  The most
+user-visible changes are:
+
+- interactive plotly graphic methods for model fits.  The best example of
+this is survplot for npsurv (Kaplan-Meier) estimates where the number of
+risk pop up as you hover over the curves, and you can click to bring up
+confidence bands for differences in survival curves
+
+- html methods for model fit summaries especially when using Rmarkdown html
+notebooks
+
+- instead of running print(fit, latex=TRUE) use
+   options(prType='latex')
+   print(fit)
+   Or: options(prType='html')
+
+A complete list of changes is below.  See
+http://biostat.mc.vanderbilt.edu/Rrms for an html notebook showing examples
+of new features.
+
+Changes in version 5.0-0 (2016-10-31)
+   * plot.summary.rms: implemented plotly interactive plots if
+options(grType='plotly') in effect
+* plot.anova.rms: implemented plotly interactive plots if
+options(grType='plotly') in effect; remove psmall argument; changed margin
+default to chisq and P
+* ggplot.Predict: implemented plotly interactive plots if
+options(grType='plotly') in effect
+* print(fit, md=TRUE), prModFit, prStats: added latex/html methods using
+htmlTable package and MathJax for latex math
+* html.anova.rms, html.validate, html.summary.rms: new functions for use
+with html and MathJax/knitr/RStudio
+* latex methods for model fits: added md=TRUE argument to produce
+MathJax-compatible latex and html code for fitted models when using R
+Markdown
+* html: new methods for model fit objects for use with R Markdown
+* formatNP: fixed error when digits=NA
+* latex.anova.rms: fixed error in not rounding enough columns doe to using
+all.is.numeric intead of is.numeric
+* catg: corrected bug that disallowed explicit catg() in formulas
+* ggplot.Predict: added height and width for plotly
+* survplot: respected xlim with diffbands.  Thanks: Toni G
+* reVector: changed to reListclean and stored model stats components as
+lists so can handle mixture of numeric and character, e.g., name of
+clustering variable
+* survplotp.npsurv: new function for interactive survival curve graphs
+using plotly
+* anova, summary, latex, print for model fits: use options(grType='html')
+or 'latex' to set output type, output htmltools::HTML marked html so that
+chunk header doesn't need results='asis'
+* latex methods - set file default to ''
+* GiniMd: moved to Hmisc package
+* plot.nomogram: fixed bug where abbreviations were being ignored.  Thanks:
+Zongheng Zhang
+* nomogram: improved examples in help file
+* survplot.npsurv: fixed n.risk when competing risks
+* survest.cph, survfit.cph, others: fixed large problems due to
+incompatibility with survival 2.39-5 for survival predictions; changed
+object Strata to strata in cph to be compatible with survival package
+* new test survest.r to more comprehensively check survfit.cph and
+survest.cph
+* ggplot.Predict: quit ignoring xlim; suppress confidence bands if two
+group bariables because ggplot2 geom_ribbon doesn't support multiple
+aesthetics
+* predictrms: set contrasts for ordered factors to contr.treatment instead
+of contr.poly
+* val.prob: changed line of identity to use wide grayscale line instead of
+dashed line
+
+------------------------------
+Frank E Harrell Jr      Professor and Chairman      School of Medicine
+
+Department of *Biostatistics*      *Vanderbilt University*
+
+	[[alternative HTML version deleted]]
+
+
+From marceloperlin at gmail.com  Sun Nov  6 17:02:50 2016
+From: marceloperlin at gmail.com (Marcelo Perlin)
+Date: Sun, 6 Nov 2016 14:02:50 -0200
+Subject: [R-pkgs] Package BatchGetSymbols
+Message-ID: <CANMhtdw+6E9DCBfs6d2rrnc5YndaW1ZJQ1jpzNSyvH5Vxq09FQ@mail.gmail.com>
+
+Dear R users,
+
+If you use quantmod::GetSymbols to download financial data from yahoo or
+google finance, you might find my new package  *BatchGetSymbols* very
+useful. It no only downloads data for multiple tickers but also organizes
+it in an efficient way, making it easy to use dplyr and ggplot2 in the
+resulting dataframe.
+
+You can check the vignette here:
+https://cran.r-project.org/web/packages/BatchGetSymbols/vignettes/BatchGetSymbols-vignette.html
+
+And the package here:
+https://cran.r-project.org/web/packages/BatchGetSymbols/index.html
+
+As usual, comments and suggestions are very welcome.
+
+Best,
+
+-- 
+Marcelo Perlin
+Professor Adjunto | Escola de Administra??o
+Universidade Federal do Rio Grande do Sul
+Rua Washington Luiz, 855 | 90010-460| Porto Alegre RS| Brasil
+Tel.: (51) 3308-3303 | www.ea.ufrgs.br
+http://lattes.cnpq.br/3262699324398819
+https://sites.google.com/site/marceloperlin/
+
+	[[alternative HTML version deleted]]
+
+
+From Vincent.Goulet at act.ulaval.ca  Mon Nov 14 15:06:23 2016
+From: Vincent.Goulet at act.ulaval.ca (Vincent Goulet)
+Date: Mon, 14 Nov 2016 14:06:23 +0000
+Subject: [R-pkgs] Major update of package actuar
+Message-ID: <C9ED9D22-1783-450B-9C81-D7AB6ECC7E0B@act.ulaval.ca>
+
+Dear useRs,
+
+I'm happy to announce a substantial update of package actuar that bumps the version number to 2.0-0. This release focuses on additional support for continuous and discrete distributions, new functions to simulate data from compound models and mixtures, and revised and improved documentation.
+
+A slightly shortened version of the NEWS file follows:
+
+NEW FEATURES
+
+? Support for the inverse Gaussian distribution. The pdf, cdf and
+  quantile functions are C (read: faster) implementations of otherwise 
+  equivalent functions in package ?statmod?.
+
+? Support for the Gumbel extreme value distribution.
+
+? Extended range of admissible values for many limited
+  expected value functions thanks to new C-level functions
+  ?expint?, ?betaint? and ?gammaint?. These provide special
+  integrals presented in the introduction of Appendix A of
+  Klugman et al. (2012); see also ?vignette("distributions")?.
+
+  Affected functions are: ?levtrbeta?, ?levgenpareto?,
+  ?levburr?, ?levinvburr?, ?levpareto?, ?levinvpareto?,
+  ?levllogis?, ?levparalogis?, ?levinvparalogis? in the
+  Transformed Beta family, and ?levinvtrgamma?, ?levinvgamma?,
+  ?levinvweibull? in the Transformed Gamma family.
+
+? Functions ?expint?, ?betaint? and ?gammaint? to compute
+  the special integrals mentioned above. These are merely
+  convenience R interfaces to the C level functions. They are
+  _not_ exported by the package.
+
+? Support for the Poisson-inverse Gaussian discrete distribution.
+
+? Support for the logarithmic (or log-series) and zero-modified
+  logarithmic distributions.
+
+? Support for the zero-truncated and zero-modified Poisson
+  distributions.
+
+? Support for the zero-truncated and zero-modified negative 
+  binomial distributions.
+
+? Support for the zero-truncated and zero-modified geometric
+  distributions.
+
+? Support for the zero-truncated and zero-modified binomial
+  distributions.
+
+? New vignette ?"distributions"? that reviews in great detail the
+  continuous and discrete distributions provided in the
+  package, along with implementation details.
+
+? ?aggregateDist? now accepts ?"zero-truncated binomial"?,
+  ?"zero-truncated geometric"?, ?"zero-truncated negative
+  binomial"?, ?"zero-truncated poisson"?, ?"zero-modified
+  binomial"?, ?"zero-modified geometric"?, ?"zero-modified
+  negative binomial"?, ?"zero-modified poisson"? and
+  ?"zero-modified logarithmic"? for argument ?model.freq? with
+  the ?"recursive"? method.
+
+? New function ?rmixture? to generate random variates from
+  discrete mixtures, that is from random variables with
+  densities of the form f(x) = p_1 f_1(x) + ... + p_n f_n(x).
+
+? New function ?rcompound? to generate random variates from (non
+  hierarchical) compound models of the form S = X_1 + ... + X_N.
+  Function ?simul? could already do that, but ?rcompound? is
+  substantially faster for non hierarchical models.
+
+? New function 'rcomppois' that is a simplified version of
+  ?rcompound? for the very common compound Poisson case.
+
+? Function ?simul? now accepts an atomic (named or not) vector for
+  argument ?nodes? when simulating from a non hierarchical
+  compound model. But really, one should use ?rcompound? for
+  such cases.
+
+? New alias ?rcomphierarc? for ?simul? that better fits within
+  the usual naming scheme of random generation functions.
+
+? Functions ?grouped.data? and ?ogive? now accept individual
+  data in argument. The former will group the data using
+  ?hist? (therefore, all the algorithms to compute the number
+  of breakpoints available in ?hist? are also available in
+  ?grouped.data?). ?ogive? will first create a grouped data
+  object and then compute the ogive.
+
+  While there is no guarantee that the two functions are
+  backward compatible (the number and position of the
+  arguments have changed), standard calls should not be
+  affected.
+
+USER VISIBLE CHANGES
+
+? The material on probability laws in vignette ?"lossdist"?
+  has been moved to the new vignette ?"distributions"? (see
+  the previous section).
+
+? The first argument of the ?mgf<dist>? functions has changed
+  from ?x? to ?t?. This is a more common notation for moment
+  generating functions.
+
+? In ?aggregateDist? with the ?"recursive"? method, if the
+  length of ?p0? is greater than one, only the first element
+  is used, with a warning.
+
+? ?aggregateDist? with the ?"recursive"? method and
+  ?model.freq = "logarithmic"? now uses the new ?dlogarithmic?
+  family of functions. Therefore, parametrization has changed
+  from the one of Klugman et al. (2012) to the standard
+  parametrization for the logarithmic distribution. Basically,
+  any value of ?prob? for the logarithmic parameter in
+  previous versions of ?actuar? should now be ?1 - prob?.
+
+? The aim of vignette ?"simulation"? is changed from
+  ?simulation of compound hierarchical models? to ?simulation
+  of insurance data with ?actuar?? as it also covers the new
+  functions ?rmixture? and ?rcompound?.
+
+? Vignette ?"lossdist"? is renamed to ?"modeling"? and it is
+  revised to cover the new functionalities of ?grouped.data?
+  and ?ogive?.
+
+BUG FIX
+
+?  An old and nasty out-of-bounds bug could crash R when using
+  the "recursive" method of 'aggregateDist' with a frequency
+  distribution from the (a, b, 1) family.
+
+
+I hope this update will prove useful.
+
+Vincent Goulet, Ph.D.
+Professeur titulaire
+?cole d'actuariat, Universit? Laval
+
+
+From amos.elberg at icloud.com  Tue Nov 15 04:37:52 2016
+From: amos.elberg at icloud.com (Amos Elberg)
+Date: Mon, 14 Nov 2016 22:37:52 -0500
+Subject: [R-pkgs] New Package: largeVis
+Message-ID: <etPan.582a8310.754f1c19.70aa@icloud.com>
+
+Dear R users,  
+
+I?m please to announce the available on CRAN of new package largeVis.(*)   
+
+largeVis offers three major features:
+
+	- A fast implementation of the LargeVis algorithm. LargeVis is for visualizing high-dimensional datasets, similar to (and of similar quality to) t-SNE. But, LargeVis runs in O(n) time, which makes it feasible to use on datasets with millions of rows and thousands of columns. LargeVis is also insensitive to hyperparameter changes, which is important when running on large datasets that take time to compute.  
+
+	- Very fast approximate nearest neighbor search. I believe it to be the fastest nearest neighbor search available for R.  
+
+	- A fast implementation of the HDBSCAN clustering algorithm. HDBSCAN is a density-based clustering similar to DBSCAN and OPTICS (which are also implemented), but HDBSCAN allows the density threshold for clusters to vary. This makes it insensitive to hyperparameter changes and more flexible than either DBSCAN or OPTICS.
+
+There are other features as well, such as functions to visualize image embeddings using largeVis.?
+
+Some examples are available here: ?https://github.com/elbamos/largevis
+Benchmarks comparing the speed of the nearest neighbor search to RcppAnnoy are here:?https://github.com/elbamos/largeVis/blob/master/benchmarks.md
+Examples of HDBSCAN are here: ?https://cran.r-project.org/web/packages/largeVis/vignettes/momentumandusedata.html
+
+The package is available here: ?https://cran.r-project.org/web/packages/largeVis/index.html? and for best results, to take advantage of 64-bit machines and multiple cores, should be installed from source.?
+
+Thank you!
+
+(*) A prior version was available on CRAN but not announced.
+	[[alternative HTML version deleted]]
+
+
+From svdpas at math.leidenuniv.nl  Wed Nov 16 21:15:07 2016
+From: svdpas at math.leidenuniv.nl (S.L. van der Pas)
+Date: Wed, 16 Nov 2016 14:15:07 -0600
+Subject: [R-pkgs] Announcing new package horseshoe
+Message-ID: <D8C8E847-8FD6-4BEE-864A-4A07DFBCD877@math.leidenuniv.nl>
+
+Dear R users,
+
+The first version of the package ?horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versions for the special case of the normal means problem.
+
+The functions output, among other things, the horseshoe estimator (posterior mean), credible intervals, and there is a function to perform variable selection.
+
+The package can be installed by typing install.packages{?horseshoe?)
+
+The page for the package:
+
+https://CRAN.R-project.org/package=horseshoe <https://cran.r-project.org/package=horseshoe>
+
+The manual contains examples for each function:
+
+https://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf <https://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf>
+
+Comments and suggestions are very welcome.
+
+Best wishes,
+
+St?phanie van der Pas, James Scott, Antik Chakraborty and Anirban Bhattacharya
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From anthonyebert at gmail.com  Tue Nov 29 09:17:20 2016
+From: anthonyebert at gmail.com (Anthony Ebert)
+Date: Tue, 29 Nov 2016 18:17:20 +1000
+Subject: [R-pkgs] New package queuecomputer
+Message-ID: <CAOR1wai8w9wZjUQJHCD6qpiGz8jats5zoaRvpD6e5nUmuh4+AQ@mail.gmail.com>
+
+Dear R users,
+
+queuecomputer is a new R package now available on CRAN. It is a very
+fast method for simulating queueing networks.
+
+The user supplies the arrival and service times and the departure
+times are computed deterministically. The name queuecomputer is meant
+in the sense that the package 'computes queues'.
+
+The page for the package:
+
+https://CRAN.R-project.org/package=queuecomputer
+
+The github repo is:
+
+https://github.com/AnthonyEbert/queuecomputer
+
+All feedback is welcome anthonyebert+CRAN at gmail.com
+
+Please send any reports of bugs to anthonyebert+CRAN at gmail.com or
+create an issue on github.
+
+Kind regards,
+
+Anthony Ebert
+
+
+From paciorek at stat.berkeley.edu  Mon Dec  5 01:30:31 2016
+From: paciorek at stat.berkeley.edu (Chris Paciorek)
+Date: Sun, 4 Dec 2016 16:30:31 -0800
+Subject: [R-pkgs] NIMBLE package for hierarchical modeling now on CRAN
+Message-ID: <CAG=M9Loqy+ph1iAwzi_vP78BCQZLTszSnQGpfw7P95zqOvnF2w@mail.gmail.com>
+
+NIMBLE version 0.6-2 has been released on CRAN and at  r-nimble.org.
+
+NIMBLE is a system that allows you to:
+
+ - Write general hierarchical statistical models in BUGS code and
+create a corresponding model object to use in R.
+ - Build Markov chain Monte Carlo (MCMC), particle filters, Monte
+Carlo Expectation  Maximization (MCEM), or write generic algorithms
+that can be applied to any model.
+ - Compile models and algorithms via problem-specific generated C++
+that NIMBLE interfaces to R for you.
+
+Most people associate BUGS with MCMC, but NIMBLE is about much more
+than that.  It implements and extends the BUGS language as a flexible
+system for model declaration and lets you do what you want with the
+resulting models.  Some of the cool things you can do with NIMBLE
+include:
+
+ - Extend BUGS with functions and distributions you write in R as
+nimbleFunctions, which will be automatically turned into C++ and
+compiled into your model.
+ - Program with models written in BUGS code: get and set values of
+variables, control model calculations, simulate new values, use
+different data sets in the same model, and more.
+ - Write your own MCMC samplers as nimbleFunctions and use them in
+combination with NIMBLE?s samplers.
+ - Write functions that use MCMC as one step of a larger algorithm.
+ - Use standard particle filter methods or write your own.
+ - Combine particle filters with MCMC as Particle MCMC methods.
+ - Write other kinds of model-generic algorithms as nimbleFunctions.
+ - Compile a subset of R?s math syntax to C++ automatically, without
+writing any C++ yourself.
+
+Compared to earlier versions, the new version of NIMBLE is faster and
+more flexible in a lot of ways.  Building and compiling models and
+algorithms could sometimes get bogged down for large models, so we
+streamlined those steps quite a lot.   We?ve generally increased the
+efficiency of C++ generated by the NIMBLE compiler.  We?ve added
+functionality to what can be compiled to C++ from nimbleFunctions.
+And we?ve added a bunch of better error-trapping and informative
+messages, although there is still a good way to go on that.   Give us
+a holler on the nimble-users list (see r-nimble.org) if you run into
+questions.
+
+- Chris Paciorek, for the NIMBLE development team
+
+
+From yann.desjeux at inra.fr  Tue Dec  6 14:32:30 2016
+From: yann.desjeux at inra.fr (Yann Desjeux)
+Date: Tue, 6 Dec 2016 14:32:30 +0100
+Subject: [R-pkgs] New R package on CRAN: productivity (0.1.0)
+Message-ID: <02810bae-1a85-a4be-eece-d3a01c9f15c2@inra.fr>
+
+Dear R users,
+
+
+I am happy to announce that the R package 'productivity: Indices of 
+Productivity Using Data Envelopment Analysis' is now available on CRAN 
+(https://cran.r-project.org/package=productivity).
+
+Productivity allows computing various transitive measures of 
+productivity and profitability, in both levels and changes.
+In addition to the classic Malmquist productivity index, 'productivity' 
+also contains the multiplicatively complete and transitive F?re-Primont 
+and Lowe indices.
+
+All estimations are based on the nonparametric Data Envelopment Analysis 
+(DEA) and several assumptions regarding returns to scale are available 
+(i.e. CRS, VRS, NIRS, NDRS).
+
+Besides, the package allows parallel computing.
+
+I would certainly appreciate feedback, comments and suggestions from 
+more experienced packagers and R users at 
+https://r-forge.r-project.org/projects/productivity/
+
+
+Best regards,
+
+Yann
+
+	[[alternative HTML version deleted]]
+
+
+From johanlarsson at outlook.com  Sun Dec 11 21:22:14 2016
+From: johanlarsson at outlook.com (Johan Larsson)
+Date: Sun, 11 Dec 2016 20:22:14 +0000
+Subject: [R-pkgs] Announcing eulerr 1.0.0
+Message-ID: <AM5PR0801MB1732CB6901C67D5373ADBBF6C0990@AM5PR0801MB1732.eurprd08.prod.outlook.com>
+
+Dear R users,
+
+
+
+I would like to announce version 1.0.0 of eulerr (https://cran.r-project.org/package=eulerr). eulerr produces venn and euler diagrams for any number of sets. The user inputs a string of set relationships, for instance eulerr(c("A" = 10, "B" = 5, "A&B" = 2)), and out pops a specification for a euler diagram that can be plotted via eulerr.
+
+
+
+For some set relationships, there is no perfect solution in the form of a euler diagram; in these cases, eulerr offers an approximation using numerical optimization and provides the user with diagnostics that reveal if the approximation can be trusted.
+
+
+
+In this version, most of the optimization routines have been ported to C++ via Rcpp and RcppArmadillo, label placement has been improved, and additional loss functions for the optimization have been introduced. For a complete list of the updates, please see https://cran.r-project.org/package=eulerr/news.html
+
+
+
+Finally, please visit the repository at https://github.com/jolars/eulerr if you are interested in contributing.
+
+
+
+All the best,
+
+Johan
+
+
+	[[alternative HTML version deleted]]
+
+
+From hfang.shanghai at gmail.com  Tue Dec 13 22:54:27 2016
+From: hfang.shanghai at gmail.com (Hai Fang)
+Date: Tue, 13 Dec 2016 21:54:27 +0000
+Subject: [R-pkgs]  Announcing XGR
+Message-ID: <CAF-SqYEyTHNuPZ+LUn7ofRLB===Swbe-Lq054mGWZc7b31mSJg@mail.gmail.com>
+
+Dear R users,
+
+I am happy to announce that the package 'XGR' (Exploring Genomic Relations
+available at http://cran.r-project.org/package=XGR) has been on CRAN since
+this April. Now it gets published in Genome Medicine (see
+http://dx.doi.org/10.1186/s13073-016-0384-y). Together with its web app,
+XGR is able to provide a user-friendly tool for exploring genomic relations
+at the gene, SNP and genomic region level.
+
+Best regards,
+
+Dr Hai Fang
+Wellcome Trust Centre for Human Genetics
+University of Oxford
+Roosevelt Drive Headington
+Oxford OX3 7BN
+
+	[[alternative HTML version deleted]]
+
+
+From pls at mevik.net  Sun Dec 18 18:36:37 2016
+From: pls at mevik.net (=?utf-8?Q?Bj=C3=B8rn-Helge_Mevik?=)
+Date: Sun, 18 Dec 2016 18:36:37 +0100
+Subject: [R-pkgs] pls 2.6-0 released
+Message-ID: <8737hlyw9m.fsf@nor.mevik.net>
+
+Version 2.6-0 of the pls package has been released and will be available
+at your local CRAN mirror shortly.  The pls package implements Partial
+Least Squares Regression, Principal Component Regression and Canonical
+Powered PLS.
+
+The major changes in 2.6-0 are:
+
+- It now has a function selectNcomp() for automatically suggesting the
+  optimal number of components for the model.  The function implements
+  two different algorithms, and will optionally plot the RMSEP values
+  and number of components.
+
+- A description of selectNcomp() has been added to the vignette.
+
+-- 
+Regards,
+Bj?rn-Helge Mevik
+
+
+From cdetermanjr at gmail.com  Wed Dec 21 17:12:40 2016
+From: cdetermanjr at gmail.com (Charles Determan)
+Date: Wed, 21 Dec 2016 10:12:40 -0600
+Subject: [R-pkgs] gpuR 1.2.0 released
+Message-ID: <CAKxd1KM93ZCrTvTm5WprS=F=Pcwd274UFGp7e4Kmv+tTy5N3qg@mail.gmail.com>
+
+Dear R users,
+
+
+
+I am happy to announce the most recent version of gpuR has been released.
+There are several new enhancements to the package including:
+
+1.    Automatically detect available SDK on install if available
+
+2.    Simplified installation to build OpenCL ICD when have OpenCL driver
+but no SDK installed (thanks Yixuan Qui)
+
+3.    Control over individual OpenCL contexts to allow user to choose
+device to use
+
+4.    Added as.* methods for vclMatrix/Vector and gpuMatrix/Vector objects
+
+5.    Added str method for matrix objects
+
+6.    Added length method for matrix objects
+
+7.    Added solve method for square vclMatrix objects
+
+8.    Added QR-decompsition, SVD, Cholesky for square gpuMatrix/vclMatrix
+objects
+
+9.    Added diag and diag<- method for matix objects
+
+
+There are many more features in the works.  Suggestions and contributions
+continue to be welcomed.  Please submit all through my github issues
+https://github.com/cdeterman/gpuR.git
+
+
+Also, thanks to all those as well for testing this package on various GPU
+devices and operating systems.  A lot of the stability of this package is
+made possible by your efforts.
+
+
+Kind regards,
+
+Charles
+
+	[[alternative HTML version deleted]]
+
+

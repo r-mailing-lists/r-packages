@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-03",
+  "messages": [
+    {
+      "id": "msg-d64fd98061f8",
+      "message_id": "<11C9A418-E478-41DD-ADD9-ADEB9535759F@gmail.com>",
+      "from_name": "Fernando A López Hernández",
+      "from_email_hash": "d34ed1b438efb0321cb99e3819c3073e12b1c43a6959089d83f8ca98dd4bd0fd",
+      "date": "2022-03-07T10:14:59+01:00",
+      "subject": "[R-pkgs] spqdep: An R package to test for spatial dependence in categorical spatial data",
+      "subject_clean": "spqdep: An R package to test for spatial dependence in categorical spatial data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that a new package ?spqdep? is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/index.html>\n\nThe objective of this R-package is to test for spatial dependence in categorical spatial data. \nhttps://f8l5h9.github.io/spqdep/articles/spq_userguide.html <https://f8l5h9.github.io/spqdep/articles/spq_userguide.html>\n\nSeveral tests have been implemented in spqdep, namely, the classical joint count statistics, the Q-test based on symbolic dynamics, the Scan-test based on scan methodology and a new spatial test based on spatial-runs. All tests can be applied to categorical spatial cross-section data with two or more categories and asymptotic and bootstrap permutation distribution are implemented. The R package is completely documented, including several examples and an user-guide is available as a vignette.\n\nBest regards,\nFernando L?pez\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that a new package ?spqdep? is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/in",
+      "thread_id": "thread-d64fd98061f8",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-12566914999a",
+      "message_id": "<CABcwgRSNJAUbDWvpdWctGjSqTvpzdeX1YAb2DhVR0YwAq+go5g@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2022-03-07T15:01:46+01:00",
+      "subject": "[R-pkgs] PDtoolkit: new version 0.2.0",
+      "subject_clean": "PDtoolkit: new version 0.2.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nthe new version (0.2.0) of PDtoolkit package is now on CRAN.\nThe is the package second update.\n\nSince the first release, besides minor improvements of the existing\nfeatures, package is extended with a new functions:\n1. psi - calculates population stability index\n2. create.partitions - creates nested dummy variables\n3. evrs - uses for modeling the economic value of PD rating model\n4. interaction.transforme -  extracts risk factors interaction from\ndecision tree\n\nFor examples, please, install the new version of the package and check the\nhelp page of the functions.\n\nBest regards,\nAndrija Djurovic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nthe new version (0.2.0) of PDtoolkit package is now on CRAN.\nThe is the package second update.\n\nSince the first release, besides minor improvements of the existing\nfeatures, package is ",
+      "thread_id": "thread-12566914999a",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-76975cadfdf4",
+      "message_id": "<be3c1a41-e3ee-52ef-a0fc-b40d4d3c669f@email.tamu.edu>",
+      "from_name": "ximing wu",
+      "from_email_hash": "3f67214b685011b041f27ab9e8e25683c451a8d5ca7af4bea95a6b2ae213fbb1",
+      "date": "2022-03-07T20:51:40-06:00",
+      "subject": "[R-pkgs] rlcv: robust likelihood cross validation bandwidth selection for kernel density estimation",
+      "subject_clean": "rlcv: robust likelihood cross validation bandwidth selection for kernel density estimation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that a new package 'rlcv' is now available on? CRAN.\n\nhttps://cran.r-project.org/web/packages/rlcv/index.html\n\nRobust likelihood cross validation bandwidth for uni- and multi-variate \nkernel densities. It is robust against fat-tailed distributions and/or \noutliers. Based on \"Robust Likelihood Cross-Validation for Kernel \nDensity Estimation,\" Wu (2019) <doi:10.1080/07350015.2018.1424633 \n<https://doi.org/10.1080%2F07350015.2018.1424633>>.\n\nBest regards,\n\nXiming Wu\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that a new package 'rlcv' is now available on? CRAN.\n\nhttps://cran.r-project.org/web/packages/rlcv/index.html\n\nRobust likelihood cross validation bandwidth for un",
+      "thread_id": "thread-76975cadfdf4",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-4b738ffd728d",
+      "message_id": "<CAJ=0CtDcomCvLRiXFTDLkRXWH+m1Tv7V53Q6VZhTM49udGwAfg@mail.gmail.com>",
+      "from_name": "Adrian Dușa",
+      "from_email_hash": "08f405507ac687741364700c3283681d6a9bc9b1d96b171d3bdccbc9cc7be1a2",
+      "date": "2022-03-17T13:19:03+02:00",
+      "subject": "[R-pkgs] new version of package declared",
+      "subject_clean": "new version of package declared",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear community,\n\nVersion 0.12 of the package declared has just made it on CRAN.\n\nApart from the usual functions to declare labels for regular and missing\nvalues, this version has a suite of new functions to calculate various\nweighted frequencies and summaries.\n\nThe weighted versions are heavily inspired from the base R packages and\nother established contributed ones, but adapted to objects of class\n\"declared\".\n\nIn hoping this might be helpful,\n\nAdrian Dusa\nUniversity of Bucharest\nRomanian Social Data Archive\nSoseaua Panduri nr. 90-92\n050663 Bucharest sector 5\nRomania\nhttps://adriandusa.eu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear community,\n\nVersion 0.12 of the package declared has just made it on CRAN.\n\nApart from the usual functions to declare labels for regular and missing\nvalues, this version has a suite of new functi",
+      "thread_id": "thread-4b738ffd728d",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-496f910cdedf",
+      "message_id": "<31182898-BF95-4CFD-AEDB-3F5908658DAA@gmail.com>",
+      "from_name": "Peter Li",
+      "from_email_hash": "2c57b603681d452ea33602d90f1f66349dbe7342de356ed66733ca72f5a4247c",
+      "date": "2022-03-17T10:26:53-07:00",
+      "subject": "[R-pkgs] PackageRank: Computation and Visualization of Package Download Counts and Percentiles",
+      "subject_clean": "PackageRank: Computation and Visualization of Package Download Counts and Percentiles",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\npackageRank v0.6.0 is now available. \n\n??packageRank? is an R package that helps put package download counts into context. It does so via two core functions, cranDownloads() and packageRank(), a set of filters that reduces package download count inflation, and other assorted functions that help you assess interest in your package. \n\nhttps://cran.r-project.org/package=packageRank\n\nhttps://github.com/lindbrook/packageRank\n\nCheers. \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\npackageRank v0.6.0 is now available. \n\n??packageRank? is an R package that helps put package download counts into context. It does so via two core functions, cranDownloads() and packageRank()",
+      "thread_id": "thread-496f910cdedf",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-bf713084042e",
+      "message_id": "<BY3PR05MB8114B0A33F847BF7B74494D49B169@BY3PR05MB8114.namprd05.prod.outlook.com>",
+      "from_name": "Ben Wiseman",
+      "from_email_hash": "d76872170fb174f647c11df55f044f8472570bbe1946fe358c7418c67af9c52e",
+      "date": "2022-03-21T19:35:06Z",
+      "subject": "[R-pkgs] sentiment.ai CRAN package (vignette is on github.io - package is hosted on CRAN)",
+      "subject_clean": "sentiment.ai CRAN package (vignette is on github.io - package is hosted on CRAN)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An easy way to do sentiment analysis (and more) based on deep learning: sentiment.ai, now on CRAN! https://cran.r-project.org/web/packages/sentiment.ai/index.html\n\nsentiment.ai  does sentiment analysis via deep learning (with tensorflow) and gradient boosting models with a lot of the underlying hassle taken care of to make the process as simple as possible. In addition to out-performing traditional, lexicon-based sentiment analysis, and even Azure Cognitive Services (see https://benwiseman.github.io/sentiment.ai/#Benchmarks), it also allows the user to create embedding vectors for text (via Google's U.S.E.) which can be used in other analyses (e.g. text similarity). What's more is that the community can contribute better sentiment scoring models to make sentiment analysis in R get better and better over time. Our aim is to make sentiment analysis more consistently good for all people with as little hassle as possible. GPU acceleration via NVIDIA CUDA is supported on Windows and Linux.\n\nTo install the package, run:\ninstall.packages(\"sentiment.ai\")\n# followed by\nsentiment.ai::install_sentiment.ai() # to set up python/tensorflow dependencies\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "An easy way to do sentiment analysis (and more) based on deep learning: sentiment.ai, now on CRAN! https://cran.r-project.org/web/packages/sentiment.ai/index.html\n\nsentiment.ai  does sentiment analysi",
+      "thread_id": "thread-bf713084042e",
+      "thread_depth": 0,
+      "month": "2022-03"
+    },
+    {
+      "id": "msg-4a61e7c2fc6a",
+      "message_id": "<CAKRVze+TD-bbDVdE4usEEj5CLi_ZxMcNgPwdoJuo7QJswVOsmQ@mail.gmail.com>",
+      "from_name": "Jerzy Wieczorek",
+      "from_email_hash": "df7f23d1600a3856be6de6ff39f2ae8a1287c5654ad3babe0b6a50badd6dc2fc",
+      "date": "2022-03-22T16:07:51-04:00",
+      "subject": "[R-pkgs] surveyCV: cross validation based on survey design",
+      "subject_clean": "surveyCV: cross validation based on survey design",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI have released a new package on CRAN:\n\n`surveyCV`: Cross Validation Based on Survey Design\nhttps://cran.r-project.org/package=surveyCV\n\nFollowing the design-based framework used in survey sampling, we\nprovide functions to generate K-fold cross validation (CV) folds and\nCV test error estimates that are able to account for many common\nsampling designs (SRS, clustering, stratification, and/or unequal\nsampling weights). The sampling design can be specified directly or\nprovided as a `svydesign` object from the `survey` package.\n\nFor linear or logistic regression, the function `cv.svy()` carries out\nthe entire CV process: generate folds, train fitted models, and\ncalculate estimates of test error and their SEs, all while respecting\nthe sampling design.\nFor other model types, the function `folds.svy()` partitions your\ndataset into K folds that respect any stratification and clustering in\nthe sampling design, so that these folds can be used in your own\ncustom CV loop.\n\nPlease see our package's README and `intro` vignette for examples:\nhttps://github.com/ColbyStatSvyRsch/surveyCV/#readme\nhttps://cran.r-project.org/web/packages/surveyCV/vignettes/intro.html\n\nFor further details on the methodology, please see:\nWieczorek, Guerin, and McMahon (2022), \"K-Fold Cross-Validation for\nComplex Sample Surveys,\" *Stat* <doi:10.1002/sta4.454>\nhttps://doi.org/10.1002/sta4.454\n\nFeedback is welcome by email or at:\nhttps://github.com/ColbyStatSvyRsch/surveyCV/issues\n\nBest wishes,\nJerzy Wieczorek\n\nPS -- The package was originally released in January as v0.1.1, but it\nwas not announced here until now that the more feature-complete v0.2.0\nis available.\n\n--\nJerzy Wieczorek\nAssistant Professor\nDepartment of Statistics\nColby College\n5841 Mayflower Hill\nWaterville, ME 04901\n207-859-5841\njawieczo at colby.edu\nhttps://civilstat.com/",
+      "body_snippet": "Dear R users,\n\nI have released a new package on CRAN:\n\n`surveyCV`: Cross Validation Based on Survey Design\nhttps://cran.r-project.org/package=surveyCV\n\nFollowing the design-based framework used in sur",
+      "thread_id": "thread-4a61e7c2fc6a",
+      "thread_depth": 0,
+      "month": "2022-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d64fd98061f8",
+      "subject": "spqdep: An R package to test for spatial dependence in categorical spatial data",
+      "message_count": 1,
+      "participants": [
+        "Fernando A López Hernández"
+      ],
+      "started": "2022-03-07T10:14:59+01:00",
+      "last_reply": "2022-03-07T10:14:59+01:00",
+      "root_message_id": "msg-d64fd98061f8"
+    },
+    {
+      "id": "thread-12566914999a",
+      "subject": "PDtoolkit: new version 0.2.0",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2022-03-07T15:01:46+01:00",
+      "last_reply": "2022-03-07T15:01:46+01:00",
+      "root_message_id": "msg-12566914999a"
+    },
+    {
+      "id": "thread-76975cadfdf4",
+      "subject": "rlcv: robust likelihood cross validation bandwidth selection for kernel density estimation",
+      "message_count": 1,
+      "participants": [
+        "ximing wu"
+      ],
+      "started": "2022-03-07T20:51:40-06:00",
+      "last_reply": "2022-03-07T20:51:40-06:00",
+      "root_message_id": "msg-76975cadfdf4"
+    },
+    {
+      "id": "thread-496f910cdedf",
+      "subject": "PackageRank: Computation and Visualization of Package Download Counts and Percentiles",
+      "message_count": 1,
+      "participants": [
+        "Peter Li"
+      ],
+      "started": "2022-03-17T10:26:53-07:00",
+      "last_reply": "2022-03-17T10:26:53-07:00",
+      "root_message_id": "msg-496f910cdedf"
+    },
+    {
+      "id": "thread-4b738ffd728d",
+      "subject": "new version of package declared",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dușa"
+      ],
+      "started": "2022-03-17T13:19:03+02:00",
+      "last_reply": "2022-03-17T13:19:03+02:00",
+      "root_message_id": "msg-4b738ffd728d"
+    },
+    {
+      "id": "thread-bf713084042e",
+      "subject": "sentiment.ai CRAN package (vignette is on github.io - package is hosted on CRAN)",
+      "message_count": 1,
+      "participants": [
+        "Ben Wiseman"
+      ],
+      "started": "2022-03-21T19:35:06+00:00",
+      "last_reply": "2022-03-21T19:35:06+00:00",
+      "root_message_id": "msg-bf713084042e"
+    },
+    {
+      "id": "thread-4a61e7c2fc6a",
+      "subject": "surveyCV: cross validation based on survey design",
+      "message_count": 1,
+      "participants": [
+        "Jerzy Wieczorek"
+      ],
+      "started": "2022-03-22T16:07:51-04:00",
+      "last_reply": "2022-03-22T16:07:51-04:00",
+      "root_message_id": "msg-4a61e7c2fc6a"
+    }
+  ]
+}

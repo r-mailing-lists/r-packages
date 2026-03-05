@@ -1,0 +1,1674 @@
+From tom @end|ng |rom d|@no|go@com  Mon Jan 13 09:03:19 2020
+From: tom @end|ng |rom d|@no|go@com (Thomas Farrar)
+Date: Mon, 13 Jan 2020 10:03:19 +0200
+Subject: [R-pkgs] Introducing skedastic: Heteroskedasticity Diagnostics for
+ Linear Regression Models
+Message-ID: <CAG25rBLnG23LFt_m2KP5d5TAEonZBJZZM16Ai5Qz5Br8G6rAZw@mail.gmail.com>
+
+Dear All,
+
+I would like to introduce the above-named new package that is now available
+on CRAN: https://cran.r-project.org/web/packages/skedastic/index.html The
+package features numerous 'classical' heteroskedasticity tests (some not
+previously available in any published R package) as well as one very new
+test that appeared in the literature only in 2019.
+
+Feedback on bugs/issues is most welcome at
+https://github.com/tjfarrar/skedastic and reviews are welcome at
+crantastic: https://crantastic.org/packages/skedastic
+
+Sincerely,
+Thomas Farrar
+Cape Peninsula University of Technology; University of the Western Cape
+
+	[[alternative HTML version deleted]]
+
+
+From b@|u @end|ng |rom berke|ey@edu  Mon Jan 20 19:10:00 2020
+From: b@|u @end|ng |rom berke|ey@edu (Benjamin Lu)
+Date: Mon, 20 Jan 2020 10:10:00 -0800
+Subject: [R-pkgs] forestError 0.1.0: Random forest conditional prediction
+ intervals, squared errors, and biases
+Message-ID: <CAFbfGPa1mNBzw40kui_pD=CWSkFMeRiZ4551kg8ZcbKzdhfDvg@mail.gmail.com>
+
+Hi all,
+
+I?m writing to introduce a new package, forestError. This package estimates
+conditional response quantiles (prediction intervals), conditional mean
+squared prediction errors, conditional biases, and conditional prediction
+error distribution functions for random forests using new methods proposed
+in Lu and Hardin (2019+) <arXiv:1912.07435>.
+
+The package does not grow specially designed random forests, but rather
+sits on top of the standard random forest algorithm. In particular, the
+package can estimate the above quantities for regression random forests
+built using the randomForest, randomForestSRC, ranger, and quantregForest
+packages.
+
+I hope that you find this useful. Please feel free to reach out with
+feedback or questions.
+
+CRAN: https://cran.r-project.org/package=forestError
+Github: https://github.com/benjilu/forestError
+Reference: https://arxiv.org/abs/1912.07435
+
+Best,
+Benji Lu
+
+	[[alternative HTML version deleted]]
+
+
+From @w|mp@ck@ge @end|ng |rom gm@||@com  Thu Jan 23 14:27:29 2020
+From: @w|mp@ck@ge @end|ng |rom gm@||@com (Silvana Pesenti)
+Date: Thu, 23 Jan 2020 08:27:29 -0500
+Subject: [R-pkgs] SWIM: vignette and new version on CRAN
+Message-ID: <CAAGSCf3tD+wSVJC59z=Uj-Yz6k1K45AE3UTzsOMyorNF3Ytw1w@mail.gmail.com>
+
+Hi all,
+
+
+We?re happy to announce that the new version of *SWIM* is available on
+CRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic
+models based on Monte Carlo samples. It provides weights on simulated
+scenarios from a stochastic model, such that stressed random variables
+fulfil given probabilistic constraints (e.g. specified values for risk
+measures), under the new scenario weights. Scenario weights are selected by
+constrained minimisation of the relative entropy to the baseline model.
+
+ The new version includes additional functionalities which are illustrated
+in the Vignette on a credit risk model:
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274.
+<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274>
+
+
+CRAN: https://CRAN.R-project.org/package=SWIM
+
+GitHuB: https://github.com/spesenti/SWIM
+
+Vignette: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274
+
+
+
+
+Best regards,
+
+Silvana Pesenti
+
+Maintainer and co-author.
+
+	[[alternative HTML version deleted]]
+
+
+From gb@rc@ro|| @end|ng |rom gm@||@com  Tue Jan 28 11:28:36 2020
+From: gb@rc@ro|| @end|ng |rom gm@||@com (Giulio Barcaroli)
+Date: Tue, 28 Jan 2020 11:28:36 +0100
+Subject: [R-pkgs] SamplingStrata: new version on CRAN
+Message-ID: <649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>
+
+Dear all,
+
+this is to announce that a new version of*SamplingStrata*  
+       is available on CRAN.*SamplingStrata*  is a package for the
+       optimization of stratified sample design. This new version (the
+       1.5) contains a lot of news. In particular:
+
+- there is now the possibility to cover also*spatial sampling*,
+       whenever the units in sampling frame are geo-referenced (method =
+       "spatial" in*optimStrata *function);
+
+- the use of the function*optimStrata *(a wrapper that call different
+	optimization functions) greatly simplifies the handling of*takeall *
+	strata;
+
+- when models are used in order to take into account the*anticipated variance*  of target variables, a new function (computeGamma)
+       permits to evaluate*heteroscedasticity*  in order to
+       correctly calculate the overall variance in strata.
+
+A*cheatsheet*  is available in the /docs/inst directory.
+
+You can find the whole documentation at
+
+https://barcaroli.github.io/SamplingStrata/
+
+Best regards,
+
+Giulio Barcaroli
+
+
+	[[alternative HTML version deleted]]
+
+
+From m@ur|c|o@z@mbr@no @end|ng |rom u|ronter@@c|  Thu Mar 19 00:35:41 2020
+From: m@ur|c|o@z@mbr@no @end|ng |rom u|ronter@@c| (Mauricio Zambrano-Bigiarini)
+Date: Wed, 18 Mar 2020 20:35:41 -0300
+Subject: [R-pkgs] hydroPSO: new version 0.5-0 on CRAN
+In-Reply-To: <649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>
+References: <649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>
+Message-ID: <CAP6Varumwiv4MZQs5HeDTiv69Y4_GWXxXJMg8yweCpgW6KgaKQ@mail.gmail.com>
+
+Dear all,
+
+I would bring your attention to the new release of hydroPSO (v0.5-0),
+which is on CRAN now: https://cran.r-project.org/package=hydroPSO.
+
+
+Among its new features stand out:
+
+ o Full compatibility with (hydrological/environmental) models
+implemented as R functions (e.g., TUWmodel, GR4J, etc)
+
+ o New vignette showing how to calibrate TUWmodel with hydroPSO:
+https://doi.org/10.5281/zenodo.3701902.
+
+ o New vignette showing how to calibrate TUWmodel with GR4J (and other
+models of the 'airGR' family): https://doi.org/10.5281/zenodo.3712382.
+
+ o 'verification'  : now it is fully compatible with R-based models
+and allows parallelisation.
+
+ o 'read_results', plot_results', 'read_out  :much faster now due to
+the use of 'data.table::fread' instead of 'read.table'
+
+ o New dataset 'Trancura9414001' with daily time series on P, Temp,
+PET, and Q from 1979 to 2016.
+
+ o Package tested against R 4.0.0 (unstable) (2020-03-17 r77992) --
+"Unsuffered Consequences", following an imperative request made by
+CRAN.
+
+ o All the new features can be read at:
+https://cran.r-project.org/web/packages/hydroPSO/NEWS
+
+
+I hope you enjoy it !.
+
+
+Mauricio Zambrano-Bigiarini, PhD
+
+=====================================
+Department of Civil Engineering
+Faculty of Engineering and Sciences
+Universidad de La Frontera, Temuco, Chile
+http://hzambran.github.io/
+=====================================
+mailto : mauricio.zambrano at ufrontera.cl
+work-phone : +56 45 259 2812
+=====================================
+"A people that values its privileges
+above its principles soon loses both".
+(Dwight D. Eisenhower)
+=====================================
+Linux user #454569 -- Linux Mint user
+
+-- 
+La informaci?n contenida en este correo electr?nico y cualquier anexo o 
+respuesta relacionada, puede contener datos e informaci?n confidencial y no 
+puede ser usada o difundida por personas distintas a su(s) destinatario(s). 
+Si usted no es el destinatario de esta comunicaci?n, le informamos que 
+cualquier divulgaci?n, distribuci?n o copia de esta informaci?n constituye 
+un delito conforme a la ley chilena. Si lo ha recibido por error, por favor 
+borre el mensaje y todos sus anexos y notifique al remitente.
+
+
+From megh@@j456 @end|ng |rom gm@||@com  Thu Apr  2 00:46:47 2020
+From: megh@@j456 @end|ng |rom gm@||@com (Megha Joshi)
+Date: Wed, 1 Apr 2020 17:46:47 -0500
+Subject: [R-pkgs] simhelpers: Helper Functions for Simulation Studies
+Message-ID: <CAC1PbYRmsFor1_5bf9reOpBQHrq3qNP7B9PVsZLx9t=ZDZgPmw@mail.gmail.com>
+
+Hi :)
+
+Hope you are doing well!
+
+I have been working on an R package that has helper functions for
+simulation studies. First version of the package is on CRAN now ?
+Here is the website for the package:
+https://meghapsimatrix.github.io/simhelpers/index.html
+
+Hope it is useful to you for running simulations in R :)
+
+Hope you are safe and healthy!!
+
+
+-- 
+Megha Joshi
+(she/her/hers)
+meghapsimatrix.com
+Doctoral student
+Quantitative Methods
+*The University of Texas at Austin*
+
+	[[alternative HTML version deleted]]
+
+
+From j@@per@g@w@t@on @end|ng |rom gm@||@com  Sun Apr 26 01:08:43 2020
+From: j@@per@g@w@t@on @end|ng |rom gm@||@com (Jasper Watson)
+Date: Sun, 26 Apr 2020 11:08:43 +1200
+Subject: [R-pkgs] RBNZ: new package for downloading Reserve Bank of New
+ Zealand data
+Message-ID: <CAN+Ty_Ai+-6wA8sNEwH46cy25pjjGVuwX61G3XnS911rw4MGSQ@mail.gmail.com>
+
+Hello,
+
+I have just released to CRAN the RBNZ package which allows users to
+download financial and economic data published by the Reserve Bank of New
+Zealand. The data is provided on their website in spreadsheet format; this
+package provides a method to download those spreadsheets and read them
+directly into R.
+
+CRAN: https://cran.r-project.org/web/packages/RBNZ/index.html
+GitHub: https://github.com/rntq472/RBNZ
+Data Source: https://www.rbnz.govt.nz/statistics
+
+Cheers,
+
+Jasper Watson
+
+	[[alternative HTML version deleted]]
+
+
+From bjoern@boettcher @end|ng |rom tu-dre@den@de  Mon May  4 11:04:06 2020
+From: bjoern@boettcher @end|ng |rom tu-dre@den@de (=?UTF-8?Q?Bj=c3=b6rn_B=c3=b6ttcher?=)
+Date: Mon, 4 May 2020 11:04:06 +0200
+Subject: [R-pkgs] multivariance: Measuring Multivariate Dependence Using
+ Distance Multivariance
+Message-ID: <47d83b4d-e077-5956-cb49-b252e72818d3@tu-dresden.de>
+
+Dear R-users and developers,
+
+based on a recent series of of papers [1-6] the package 'multivariance' 
+(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.
+It provides in particular:
+
++ *fast global tests of independence* for an arbitrary number of 
+variables of arbitrary dimensions
+
++ a detection and visualization algorithm for *higher order dependence 
+structures*
+
++ estimators for multivariate dependence measures which *characterize 
+independence*, i.e. the population version is 0 if and only if the 
+variables are independent (in contrast to the standard correlation 'cor')
+
+As a side remark, some food for thought: Note that in [3] it is referred 
+to over 350 datasets from more than 150 R-packages, which all feature 
+some statistical significant higher order dependencies. Some are 
+probably artefacts, but in any case it is likely that these have been 
+unnoticed and undiscussed so far. Moreover, since it was purely a brute 
+force study, this might provide starting points for plenty of research 
+by the corresponding field specialists.
+
+Comments and questions on 'multivariance' and the underlying theory are 
+welcome.
+
+Best wishes
+
+Bj?rn B?ttcher
+
+
+References:
+
+[1] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Detecting 
+independence of random vectors: generalized distance covariance and 
+Gaussian covariance.
+Modern Stochastics: Theory and Applications, Vol. 5, No. 3 (2018) 353-383.
+https://www.vmsta.org/journal/VMSTA/article/127/info
+
+[2] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Distance 
+multivariance: New dependence measures for random vectors.
+The Annals of Statistics, Vol. 47, No. 5 (2019) 2757-2789.
+https://projecteuclid.org/euclid.aos/1564797863
+
+[3] B. B?ttcher, Dependence and Dependence Structures: Estimation and 
+Visualization using the Unifying Concept of Distance Multivariance.
+Open Statistics, Vol. 1, No. 1 (2020) 1-46.
+https://doi.org/10.1515/stat-2020-0001
+
+[4] G. Berschneider, B. B?ttcher, On complex Gaussian random fields, 
+Gaussian quadratic forms and sample distance multivariance. Preprint.
+https://arxiv.org/abs/1808.07280
+
+[5] B. B?ttcher, Copula versions of distance multivariance and dHSIC via 
+the distributional transform -- a general approach to construct 
+invariant dependence measures.
+Statistics, (2020) 1-18.
+https://doi.org/10.1080/02331888.2020.1748029
+
+[6] B. B?ttcher, Notes on the interpretation of dependence measures -- 
+Pearson's correlation, distance correlation, distance multicorrelations 
+and their copula versions. Preprint.
+https://arxiv.org/abs/2004.07649
+
+
+-- 
+Dr. Bj?rn B?ttcher
+TU Dresden
+Institut f?r Math. Stochastik
+D-01062 Dresden, Germany
+Phone: +49 (0) 351 463 32423
+Fax:   +49 (0) 351 463 37251
+Web:   http://www.math.tu-dresden.de/~boettch/
+
+
+From h@yden@m@cdon@|d@8778 @end|ng |rom gm@||@com  Mon May  4 14:03:22 2020
+From: h@yden@m@cdon@|d@8778 @end|ng |rom gm@||@com (Hayden MacDonald)
+Date: Mon, 4 May 2020 08:03:22 -0400
+Subject: [R-pkgs] squashinformr: Politely web scrape data from SquashInfo in
+ R
+Message-ID: <CANTbTwDL04K6fsgVVzFgPmsMJdkZMSfuKHVW5WFrWVbU_aJ3Xw@mail.gmail.com>
+
+Hi all,
+
+I hope this message finds you well. I have developed a new R package,
+squashinformr, that allows users to web scrape data on the Professional
+Squash Association World Tour and other squash tournaments. Currently,
+squashinformr provides functions for accessing data on players, rankings,
+and tournaments. Additionally, squashinformr ethically scrapes data from
+SquashInfo <http://www.squashinfo.com/> by adhering to `polite` principles
+<https://github.com/dmi3kno/polite>. Version 0.1.2 is now available on CRAN!
+
+Here is a blog post introducing the package and some of its uses:
+https://needleinthehay.ca/introducing-squashinformr/
+
+and here is the package's GitHub repository:
+https://github.com/HaydenMacDonald/squashinformr
+
+Best wishes,
+
+Hayden MacDonald
+
+	[[alternative HTML version deleted]]
+
+
+From @@mue|| @end|ng |rom ||||no|@@edu  Thu May  7 17:32:14 2020
+From: @@mue|| @end|ng |rom ||||no|@@edu (Bonfim Fernandes, Samuel)
+Date: Thu, 7 May 2020 15:32:14 +0000
+Subject: [R-pkgs] simplePHENOTYPES: SIMulation of Pleiotropic,
+ Linked and Epistatic PHENOTYPES
+Message-ID: <C478E421-C30E-4D57-B0EB-6A45B83E03D3@illinois.edu>
+
+Hi All,
+
+I hope this message finds you well.
+I have developed the simplePHENOTYPES package to simulate single and multiple (correlated) traits in a wide range of scenarios, including additive, dominance, and epistatic (AxA) models.
+The newest version, simplePHENOTYPES v1.2.4, which has just been released on CRAN, has substantial improvements compared to the previous one.
+
+Some of the new features include:
+- Options for using VCF, plink bed/ped files, GDS, HapMap, and Numeric as input files.
+- Implementation of two types of spurious pleiotropy simulation (?direct" and "indirect").
+- Simulation of residual correlation among traits.
+
+Please check it our here:
+https://cran.r-project.org/package=simplePHENOTYPES
+Vignettes for the most common scenarios one would want to simulate may be found here:
+https://cran.r-project.org/web/packages/simplePHENOTYPES/vignettes/simplePHENOTYPES.html
+
+Best regards,
+Samuel Fernandes
+
+	[[alternative HTML version deleted]]
+
+
+From bgunter@4567 @end|ng |rom gm@||@com  Sat May  9 05:08:10 2020
+From: bgunter@4567 @end|ng |rom gm@||@com (Bert Gunter)
+Date: Fri, 8 May 2020 20:08:10 -0700
+Subject: [R-pkgs] addScales package available on CRAN
+Message-ID: <CAGxFJbSMF=+Xk6L0jBFRxEELJ1cLqUhmJJJJxM_sy5XnwxbcBg@mail.gmail.com>
+
+addScales is a small package that modifies trellis objects created
+using lattice graphics by adding horizontal and/or vertical reference
+lines that provide visual scaling information. This is mostly useful
+for multi-panel plots that use the relation = 'free' option in their
+'scales' argument list. Examples show when and how this might aid data
+visualization.
+
+Please feel free to contact me with suggestions for improvement.
+
+Bert Gunter
+
+
+From wo||g@ng@v|echtb@uer @end|ng |rom m@@@tr|chtun|ver@|ty@n|  Fri May  8 20:30:12 2020
+From: wo||g@ng@v|echtb@uer @end|ng |rom m@@@tr|chtun|ver@|ty@n| (Viechtbauer, Wolfgang (SP))
+Date: Fri, 8 May 2020 18:30:12 +0000
+Subject: [R-pkgs] mathjaxr: Using 'Mathjax' in Rd Files
+Message-ID: <986895facff141379e5d379a666e5bcb@UM-MAIL3214.unimaas.nl>
+
+Dear All,
+
+I would like to announce the release of the 'mathjaxr' package: 
+
+https://cran.r-project.org/package=mathjaxr
+
+The package provides MathJax and a handful of macros to enable its use within Rd files for rendering equations in the HTML help files.
+
+Package authors wanting to make use of the package and its functionality need to:
+
+1. install the mathjaxr package,
+2. add mathjaxr to 'Suggests' or 'Imports' in the DESCRIPTION file of their package,
+3. add mathjaxr to 'RdMacros' in the DESCRIPTION file of their package (or add 'RdMacros: mathjaxr' if the DESCRIPTION file does not yet contain a 'RdMacros' entry),
+
+One can then enable the use of MathJax by calling the \loadmathjax macro within the \description{} section of an .Rd file.
+
+An inline equation can then be added with the \mjeqn{latex}{ascii} macro, with the LaTeX commands for the equation given between the first set of curly brackets (which will be rendered in the HTML and PDF help pages) and the plain-text version of the equation given between the second set of curly brackets (which will be shown in the plain text help). With the \mjdeqn{latex}{ascii} macro, one can add 'displayed equations' (as in LaTeX's displaymath environment). Single argument versions of these macros, namely \mjseqn{latexascii} and \mjsdeqn{latexascii}, are also available.
+
+I hope package authors will find this useful for providing fully rendered equations not only in the PDF manual, but also in the HTML help files (which the vast majority of users are probably looking at).
+
+Feedback, comments, suggestions more than welcome. For bug reports, please go to:
+
+https://github.com/wviechtb/mathjaxr/issues
+
+Best,
+Wolfgang
+
+
+From |8|5h9 @end|ng |rom gm@||@com  Sat May  9 12:06:30 2020
+From: |8|5h9 @end|ng |rom gm@||@com (=?utf-8?Q?Fernando_A_L=C3=B3pez_Hern=C3=A1ndez?=)
+Date: Sat, 9 May 2020 12:06:30 +0200
+Subject: [R-pkgs] New version 'spsur' for the estimation of Spatial
+ Seemingly Unrelated Regression
+Message-ID: <10919E94-320E-43E7-9C78-1032E95915EA@gmail.com>
+
+Dear all
+I am pleased to announce that the R package ?spsur? for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. 
+
+https://cran.r-project.org/web/packages/spsur/index.html <https://cran.r-project.org/web/packages/spsur/index.html>
+This version of ?spsur? has been adapted to the standard arguments used in similar packages (spatialreg, spdep, splm, sphet) and include new functionalities.
+
+A new user guide is available on: https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html <https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html>
+I hope you find interest this package for you research or for your PhD students. 
+Fernando A. L?pez Hern?ndez
+fernando.lopez at upct.es <mailto:fernando.lopez at upct.es>
+http://metodos.upct.es/falopez/ <http://metodos.upct.es/falopez/>
+	[[alternative HTML version deleted]]
+
+
+From m@j|@n03 @end|ng |rom gm@||@com  Wed May 13 04:22:05 2020
+From: m@j|@n03 @end|ng |rom gm@||@com (=?ISO-8859-1?B?TWEgSmlhbg==?=)
+Date: Wed, 13 May 2020 10:22:05 +0800
+Subject: [R-pkgs] copent: Estimating Copula Entropy
+Message-ID: <tencent_AD3EF6D19AD1105EA7024527EAC04696F206@qq.com>
+
+Hi all,
+
+
+I'm writing to you to introduce our new package, copent. This package estimates copula entropy, a new mathematical concept for multivariate statistical independence measure and testing [1].&nbsp; The estimating method is nonparametric and can be applied to any cases without making assumptions. The package has been used for 
+&nbsp;* association discovery [2], in which copula entropy is an association measure shown to be better than correlation coeffients,
+&nbsp;* structure learning [3],
+&nbsp;* variable selection [4], and 
+&nbsp;* causal discovery [5] by estimating transfer entropy.
+
+
+CRAN: https://cran.r-project.org/package=copent
+GITHUB: https://github.com/majianthu/copent/
+
+
+Hope it helpful for you. Any comments and suggestions are welcome.
+
+
+Best Regards,
+MA Jian
+------
+References
+1. Ma Jian, Sun Zengqi. Mutual information is copula entropy. Tsinghua Science &amp; Technology, 2011, 16(1): 51-54. See also arXiv preprint, arXiv:0808.0845, 2008.
+2. Ma Jian. Discovering Association with Copula Entropy. arXiv preprint arXiv:1907.12268, 2019.
+3. Ma Jian, Sun Zengqi. Dependence Structure Estimation via Copula. arXiv preprint arXiv:0804.4451v2, 2019.
+
+4. Ma Jian. Variable Selection with Copula Entropy. arXiv preprint arXiv:1910.12389, 2019.
+5. Ma Jian. Estimating Transfer Entropy via Copula Entropy. arXiv preprint arXiv:1910.04375, 2019.
+	[[alternative HTML version deleted]]
+
+
+From @gr@w@|@nur@g1999 @end|ng |rom gm@||@com  Fri May 15 16:32:09 2020
+From: @gr@w@|@nur@g1999 @end|ng |rom gm@||@com (Anurag Agrawal)
+Date: Fri, 15 May 2020 20:02:09 +0530
+Subject: [R-pkgs] Package "roptions"
+Message-ID: <CAPxR1s4AkpjaxW7QkjrDi_ot2jUcvDbROokBavNVKWWfY=tJDQ@mail.gmail.com>
+
+Thanks all,
+My package "roptions" is now available on CRAN. My package contains a
+collection of tools to develop options strategies, value option contracts
+using the Black-Scholes-Merten option pricing model and calculate the
+option Greeks. For more information see Hull, John C. "Options, Futures,
+and Other Derivatives" (1997, ISBN:0-13-601589-1). Fischer Black, Myron
+Scholes (1973) "The Pricing of Options and Corporate Liabilities"
+
+
+Download using: install.packages("roptions")
+
+
+https://cran.r-project.org/package=roptions
+
+
+Regards,
+Anurag Agrawal
+Bachelor of Science in Finance,
+Narsee Monjee Institute of Management Studies.
+___________________________________________
+Disclaimer: The content of this message is confidential. If you have
+received it by mistake, please inform us by an email reply and then delete
+the message. It is forbidden to copy, forward, or in any way reveal the
+contents of this message to anyone. The integrity and security of this
+email cannot be guaranteed over the Internet. Therefore, the sender will
+not be held liable for any damage caused by the message.
+
+	[[alternative HTML version deleted]]
+
+
+From dy|@nbe|jer@ @end|ng |rom gm@||@com  Mon May 18 23:22:24 2020
+From: dy|@nbe|jer@ @end|ng |rom gm@||@com (Dylan Beijers)
+Date: Mon, 18 May 2020 23:22:24 +0200
+Subject: [R-pkgs] statespacer: State Space Modelling in 'R'
+Message-ID: <CAM3wmzgid+CBVNVje2PH7QXvGi5z+qgnj5K_qzTbcXqE+x5SWg@mail.gmail.com>
+
+Dear All,
+
+The statespacer package is now on CRAN (
+https://cran.r-project.org/package=statespacer). This package provides
+functionality for modelling and forecasting time series using state space
+techniques. For more info, please see
+https://dylanb95.github.io/statespacer/
+
+Best,
+Dylan Beijers
+
+	[[alternative HTML version deleted]]
+
+
+From wgu2 @end|ng |rom pr|nceton@edu  Thu May 21 22:13:17 2020
+From: wgu2 @end|ng |rom pr|nceton@edu (Will Underwood)
+Date: Thu, 21 May 2020 15:13:17 -0500
+Subject: [R-pkgs] motifcluster: Motif-Based Spectral Clustering of Weighted
+ Directed Networks
+Message-ID: <d7d12ea2-dbbb-22a9-9f78-d3aad0f05460@princeton.edu>
+
+Dear all,
+
+I am happy to announce that the R package "motifcluster" is now 
+available on CRAN. This package provides tools for spectral clustering 
+of weighted directed networks using motif adjacency matrices. Methods 
+perform well on large and sparse networks, and random sampling methods 
+for generating weighted directed networks are also provided. Based on 
+methodology detailed in Underwood, Elliott and Cucuringu (2020) 
+<arXiv:2004.01293>.
+
+Feel free to contact me with questions, and I hope you find this package 
+to be of use.
+
+CRAN: https://cran.r-project.org/web/packages/motifcluster/index.html
+GitHub: https://github.com/WGUNDERWOOD/motifcluster
+Issues: https://github.com/WGUNDERWOOD/motifcluster/issues
+Reference: https://arxiv.org/abs/2004.01293
+
+Best wishes,
+
+William G. Underwood
+ORFE Department
+Princeton University
+
+
+	[[alternative HTML version deleted]]
+
+
+From je|| @end|ng |rom @tr@nd@tech  Thu May 28 01:14:08 2020
+From: je|| @end|ng |rom @tr@nd@tech (Jeff Enos)
+Date: Wed, 27 May 2020 19:14:08 -0400
+Subject: [R-pkgs] strand: A Framework for Investment Strategy Simulation
+Message-ID: <CADu7Xui2NUcCaRZuYMCfb842_=G6+_F-Z39dDHxKr33t6Xpbpw@mail.gmail.com>
+
+Hi all,
+
+I'm pleased to announce that the 'strand' package is now available on CRAN.
+
+The package provides a framework for performing discrete (share-level)
+simulations of investment strategies. Simulated portfolios optimize
+exposure to an input signal subject to constraints such as position size,
+factor and category exposure limits, and trading limits. Features include
+YAML-based configuration, realistic trade filling based on percentage of
+actual volume, and automatic loosening of exposure constraints if no
+solution is found.
+
+CRAN: https://CRAN.R-project.org/package=strand
+GitHub: https://github.com/strand-tech/strand
+
+Please let me know if you have any feedback or questions.
+
+Best,
+Jeff Enos
+
+	[[alternative HTML version deleted]]
+
+
+From @eb@@t|@n@kr@ntz @end|ng |rom gr@du@te|n@t|tute@ch  Mon Jun  1 00:33:01 2020
+From: @eb@@t|@n@kr@ntz @end|ng |rom gr@du@te|n@t|tute@ch (Sebastian Martin Krantz)
+Date: Mon, 1 Jun 2020 00:33:01 +0200
+Subject: [R-pkgs] collapse package: Advanced and Fast Data Transformation in
+ R
+Message-ID: <CAOsNuxCjVm+eRFnK+=7s1PuG7_Nc1UtFBAzgmpj2tgsug=kaLw@mail.gmail.com>
+
+Dear R users, with some delay I would like to make you aware of the recent
+CRAN release of *collapse* (https://CRAN.R-project.org/package=collapse), a
+large new C/C++ based package for advanced and high-performance general
+purpose data transformation in R.
+
+*collapse* has 2 main objectives:
+
+1. To facilitate complex data transformation and exploration tasks in R.
+*(In particular grouped and weighted statistical computations, advanced
+aggregation of mixed-type data, advanced transformations of time-series and
+panel-data, and the manipulation of lists)*
+
+2. To help make R code fast, flexible, parsimonious and programmer
+friendly.
+*(Providing order of magnitude performance improvements via extensive use
+of C/C++ and highly optimized R code, broad object orientation and
+infrastructure for grouped programming)*
+
+*collapse*'s main innovation to service these objectives is the
+introduction of a comprehensive set of fast generic functions and
+transformation operators, with methods for all standard R objects written
+in C++.
+
+Currently *collapse* provides 13 fast statistical functions (`fmean`,
+`fmedian`, `fmode`, `fsum`, `fprod`, `fsd`, `fvar`, `fmin`, `fmax`,
+`ffirst`, `flast`, `fNobs` and `fNdistinct`) supporting grouped and
+weighted computations on vectors, matrices and data.frames, and 8
+specialized vector-valued functions and associated transformation operators
+(`fscale/STD`, `fbetween/B`, `fwithin/W`, `fHDbetween/HDB`,
+`fHDwithin/HDW`, `flag/L/F`, `fdiff/D/Dlog` and `fgrowth/G`) particularly
+useful for the transformation of time-series and panel-data. Furthermore
+the function `collap` painlessly handles complex aggregations of mixed-type
+data, and the function `qsu` computes fast (panel-) summary statistics.
+
+Together with these functions, *collapse* also attempts to formalize and
+speed up C++ based grouped programming in R: The function `GRP` creates
+grouping objects which can be passed to the `g` argument of the above
+functions. This eliminates all time spent on grouping when performing
+several computations over the same groups! The `TRA` function also exists
+for grouped replacing and sweeping out of any computed statistics.
+
+To round things off, *collapse* provides full sets of functions for very
+fast manipulation of data.frames, fast ordering, fast factor generation,
+fast conversions between common data objects, and for recursive list
+processing (such as the function `unlist2d` which creates a tidy data.frame
+from a nested list of heterogeneous data objects).
+
+To enhance compatibility with existing frameworks, *collapse* functions
+provide methods for *dplyr* grouped tibbles and *plm* classes for
+panel-data (pseries and pdata.frame). *data.table*'s are also supported by
+all functions. These methods allow for easy integration of *collapse*'s
+fast functions into any of the workflows with these packages. The default
+methods for transformation functions like `fscale` or `flag` can also
+handle most time-series classes. In general attributes are preserved as
+much as possible in all *collapse* computations.
+
+Regarding performance: *collapse* seems to be the fastest R package for a
+good share of the functionality it offers. Sizable performance gains can be
+realized over packages like *dplyr* or *data.table* for various grouped
+computations. The emphasis is on C++, and R code employed is carefully
+micro-optimized, so a *collapse* script typically evaluates significantly
+faster than, say, a *dplyr* script doing the same thing. Some benchmarks
+are in the vignettes.
+
+*collapse* also realizes an innovative approach to documentation.
+Installing the package and calling `help("collapse-documentation")` brings
+up a full hierarchically structured documentation. The introductory
+vignette also introduces all main features in a systematic way.
+
+At this point, *collapse* 1.2.1 is already a quite mature package with a
+stable user API, passing repeated checks of R and C++ code and > 5600 unit
+tests on all supported operating systems. The package will continue to
+receive active maintenance and development.
+
+I hope that the availability of *collapse* would lead not only to faster
+data science, but especially to faster and richer development of complex
+statistical techniques. I welcome initiatives of like-minded developers
+willing to speed up grouped programming in R via C++, and encourage the use
+of the *collapse* API for such endeavors. For any issues, contributions,
+comments or suggestions, use github or send me an e-mail.
+
+Best regards,
+
+Sebastian
+
+	[[alternative HTML version deleted]]
+
+
+From |eg|d| @end|ng |rom un|t@@|t  Sun Jun  7 14:49:18 2020
+From: |eg|d| @end|ng |rom un|t@@|t (EGIDI LEONARDO)
+Date: Sun, 7 Jun 2020 12:49:18 +0000
+Subject: [R-pkgs] R: pivmet 0.3.0
+In-Reply-To: <DB7PR04MB4714DDBBE318A4F7640A12B3B6860@DB7PR04MB4714.eurprd04.prod.outlook.com>
+References: <DB7PR04MB4714DDBBE318A4F7640A12B3B6860@DB7PR04MB4714.eurprd04.prod.outlook.com>
+Message-ID: <DB7PR04MB4714A8BB6BF07B57FE04B59CB6840@DB7PR04MB4714.eurprd04.prod.outlook.com>
+
+Dear R users,
+
+pivmet 0.3.0 for pivotal relabelling in Bayesian Mixture Models and Kmeans clustering with pivotal seeding is on CRAN .
+The new updated version includes the following new features:
+
+
+  *   multivariate mixtures
+  *   bayesplot plots now available and linked to the package
+  *   Stan divergences and diagnostics
+  *   updated vignette
+
+CRAN: https://CRAN.R-project.org/package=pivmet<https://cran.r-project.org/package=pivmet>
+Github: https://github.com/LeoEgidi/pivmet
+
+Cheers,
+
+Leonardo Egidi
+University of Trieste
+
+
+
+
+________________________________
+Da: EGIDI LEONARDO
+Inviato: venerd? 5 giugno 2020 17:40
+A: r-packages at r-project.org <r-packages at r-project.org>
+Oggetto: pivmet 0.3.0
+
+Dear R users,
+
+pivmet 0.3.0 for pivotal relabelling in Bayesian Mixture Models and Kmeans clustering with pivotal seeding is on CRAN .
+The new updated version includes the following new features:
+
+
+  *   multivariate mixtures
+  *   bayesplot plots now available and linked to the package
+  *   Stan divergences and diagnostics
+  *   updated vignette
+
+CRAN: https://cran.r-project.org/web/packages/pivmet/index.html
+Github: https://github.com/LeoEgidi/pivmet
+
+Cheers,
+
+Leonardo Egidi
+University of Trieste
+
+
+	[[alternative HTML version deleted]]
+
+
+From V|ncent@Gou|et @end|ng |rom @ct@u|@v@|@c@  Mon Jun  8 16:46:08 2020
+From: V|ncent@Gou|et @end|ng |rom @ct@u|@v@|@c@ (Vincent Goulet)
+Date: Mon, 8 Jun 2020 14:46:08 +0000
+Subject: [R-pkgs] 3.0-0 milestone for actuar
+Message-ID: <4E58D00B-0A44-47EA-810F-9EB09EDC02D2@act.ulaval.ca>
+
+Dear useRs and developeRs,
+
+We are proud to announce that version 3.0-0 of actuar is now available on CRAN.
+
+This newest release further extends support of the package for heavy tail and extreme value size distributions. It also introduces a package API, so that developers may easily integrate our C code into their own package.
+
+From the NEWS file:
+
+? Support functions ?[dpqrm,lev]fpareto? for the Feller-Pareto
+  distribution and related Pareto distributions with a
+  location parameter. The Feller-Pareto defines a large family
+  of distributions encompassing the transformed beta family
+  and many variants of the Pareto distribution. Using the
+  nomenclature of Arnold (2015), the following distributions
+  are now supported by ?actuar?: Feller-Pareto, Pareto IV,
+  Pareto III, and Pareto II. The Pareto I was already
+  supported under the name Single Parameter Pareto.
+
+? The package now exposes through an API its 200+ C routines
+  for probability functions and the beta integral. This is
+  documented in a new section of the ?distributions? package
+  vignette. See file ?include/actuarAPI.h? in the package
+  installation directory for the complete list of exported
+  routines.
+
+The complete NEWS is available on CRAN as usual:
+
+	https://cran.r-project.org/web/packages/actuar/news.html
+
+Cheers,
+
+Vincent Goulet
+Professor
+?cole d'actuariat, Universit? Laval
+
+
+From j|en@gu90 @end|ng |rom gm@||@com  Sat Jun 27 22:10:26 2020
+From: j|en@gu90 @end|ng |rom gm@||@com (Jiena McLellan)
+Date: Sat, 27 Jun 2020 16:10:26 -0400
+Subject: [R-pkgs] forestry v0.1.0 on CRAN
+Message-ID: <CAB+AFnL4HigGrUeZeSCEhayfkGW2tSBL0d9FS+zjNo+qop+3sQ@mail.gmail.com>
+
+R Users,
+
+I?m writing to introduce a new package, forestry. This package offers a
+series of utility functions to help with reshaping the hierarchy of data
+tree, and reform the structure of data tree.
+
+It is particularly useful in these following ways:
+
+1. Reshape tree data then convert to JSON to fit the (nested) JSON format
+of your htmlwidget.
+2. Manipulate data across a desired level. For example, get `cumsum` data
+across a desired level in data tree.
+
+Hopefully you find this useful. Please feel free to reach out with feedback
+or questions.
+
+CRAN: https://cran.r-project.org/web/packages/forestry/index.html
+Github: https://github.com/jienagu/forestry
+
+Best Regards,
+Jiena
+
+	[[alternative HTML version deleted]]
+
+
+From neer@jdh@nr@j @end|ng |rom gm@||@com  Mon Jun 29 18:18:32 2020
+From: neer@jdh@nr@j @end|ng |rom gm@||@com (Neeraj Dhanraj)
+Date: Mon, 29 Jun 2020 21:48:32 +0530
+Subject: [R-pkgs] ForecastTB package on CRAN
+Message-ID: <CAC58_Y=zJDBJkYG_R9RLbXQhYM33LrMkrkjNwYi3Vd1VpCArXw@mail.gmail.com>
+
+Hi All,
+
+I am glad to share a new R package, named 'ForecastTB'. It is an automated
+testbench to compare the performance of forecasting methods for univariate
+time series.
+
+The details are as follows:
+
+CRAN: https://CRAN.R-project.org/package=ForecastTB
+<https://cran.r-project.org/package=ForecastTB>
+Details:
+https://towardsdatascience.com/a-tool-to-ease-and-reproduce-the-univariate-time-series-forecast-prediction-analysis-bd9ffc14a3a
+
+I hope that you will find this useful and feel free to share your thoughts
+and feedback.
+
+Regards,
+-- 
+
+*Neeraj Dhanraj Bokde *
+Postdoctoral Researcher
+Ph.D., M.E.
+
+Mobil: +45 5222 6500
+Mail: neerajdhanraj at eng.au.dk
+
+*Department of Engineering*
+Aarhus University
+Inge Lehmanns Gade 10
+DK-8000 Aarhus C
+
+	[[alternative HTML version deleted]]
+
+
+From mp @end|ng |rom bodk@n@net  Wed Jul  8 21:52:36 2020
+From: mp @end|ng |rom bodk@n@net (Martin Petr)
+Date: Wed, 8 Jul 2020 21:52:36 +0200
+Subject: [R-pkgs] admixr: An Interface for Running 'ADMIXTOOLS' Analyses
+Message-ID: <CADwGh-7j9nYgr0xV6xOdB-6heHgAaBELiL6GhSm2AQ1qY_A9Vw@mail.gmail.com>
+
+Dear R users,
+
+I would like to introduce my R package, admixr, which provides an interface
+for performing population genetic analyses using the ADMIXTOOLS suite of
+command-line utilities: https://cran.r-project.org/package=admixr.
+
+ADMIXTOOLS (https://www.genetics.org/content/192/3/1065) is a very popular
+software in population genetics. However, because each of its command-line
+programs requires configuration files specific to each analysis, it is very
+cumbersome to use.
+
+The admixr package wraps around ADMIXTOOLS utilities and presents them as
+if they were simple R functions. It achieves this by creating all
+intermediate files needed by ADMIXTOOLS and extracting relevant statistics
+from generated output files, which all happens under the hood.
+
+Extended tutorial and overview of the package can be found at:
+https://bodkan.net/admixr/articles/tutorial.html
+Any feedback is welcome at: https://github.com/bodkan/admixr/issues
+
+Best regards,
+Martin Petr
+
+-- 
+www.bodkan.net
+
+	[[alternative HTML version deleted]]
+
+
+From @purvpr|y@m @end|ng |rom gm@||@com  Mon Jul 20 01:51:46 2020
+From: @purvpr|y@m @end|ng |rom gm@||@com (Apurv Priyam)
+Date: Sun, 19 Jul 2020 19:51:46 -0400
+Subject: [R-pkgs] 'analyzer' - R package to automatic data analysis
+Message-ID: <CADF+LybHP5ygoeo0DzEyEQ5jeRqdj6_4pRPTZM-xuyOtJuXK7w@mail.gmail.com>
+
+Hi all,
+
+I would like to introduce a recently published R package 'analyzer' which
+can be used for automated data analysis. With one command a detailed R
+markdown notebook can be generated with pre-written codes for data analysis
+using 15+ statistical tests, model, variable selection, and plots.
+
+To install the package simply use
+install.packages('analyzer')
+
+CRAN link -  https://CRAN.R-project.org/package=analyzer
+<https://cran.r-project.org/package=analyzer>
+
+Regards,
+Apurv Priyam
+MS-CSE, Georgia Tech
+
+	[[alternative HTML version deleted]]
+
+
+From j|en@gu90 @end|ng |rom gm@||@com  Sun Aug  2 02:35:38 2020
+From: j|en@gu90 @end|ng |rom gm@||@com (Jiena McLellan)
+Date: Sat, 1 Aug 2020 20:35:38 -0400
+Subject: [R-pkgs] faq v0.1.0 on CRAN
+Message-ID: <CAB+AFnLTfpSGcd2f73-9SgjX8_ROwZp4OT30wtH1KaAvLW7iAw@mail.gmail.com>
+
+R Users,
+
+I?m writing to introduce a new package, faq. This package offers a fast
+tool to create an interactive and toggle styling Frequently Asked Questions
+page by using R data.
+Hopefully you find this useful. Please feel free to reach out with feedback
+or questions.
+
+CRAN: https://cran.r-project.org/web/packages/faq/index.html
+Github: https://github.com/jienagu/faq
+
+Best Regards,
+Jiena Gu McLellan
+
+	[[alternative HTML version deleted]]
+
+
+From tom @end|ng |rom d|@no|go@com  Wed Aug 12 17:50:52 2020
+From: tom @end|ng |rom d|@no|go@com (Thomas Farrar)
+Date: Wed, 12 Aug 2020 17:50:52 +0200
+Subject: [R-pkgs] skedastic: Heteroskedasticity Diagnostics for Linear
+ Regression Models
+Message-ID: <CAG25rBKCrMex3yp8yd-QRyXj_3D79m1tY73jNj8y6H7rwObrnA@mail.gmail.com>
+
+Dear All,
+
+Allow me to re-introduce the skedastic package (version 1.0.0) which now
+implements more than 20 different heteroskedasticity tests for the linear
+regression model, as well as a graphical diagnostic tool and some helper
+functions with broader applications (e.g., computing probability
+distributions of certain nonparametric statistics, computing two-sided
+p-values from asymmetric distributions using three different methods, and
+computing cumulative probabilities for ratios of quadratic forms in normal
+random vectors).
+
+All of the included heteroskedasticity tests are taken from
+statistics/econometrics literature but many of them have never (to my
+knowledge) been made available in statistical software until now.
+
+The new version of the package also incorporates unit tests via testthat
+and is thus more robust against code breaks.
+
+CRAN page: https://cran.r-project.org/package=skedastic
+Github page: https://github.com/tjfarrar/skedastic
+
+Sincerely,
+Thomas
+
+	[[alternative HTML version deleted]]
+
+
+From j|ox @end|ng |rom mcm@@ter@c@  Thu Sep  3 19:36:05 2020
+From: j|ox @end|ng |rom mcm@@ter@c@ (John Fox)
+Date: Thu, 3 Sep 2020 13:36:05 -0400
+Subject: [R-pkgs] new ivreg package for 2SLS regression with diagnostics
+Message-ID: <febda047-9c87-840b-d995-41e58d116021@mcmaster.ca>
+
+Dear list members,
+
+Christian Kleiber, Achim Zeileis, and I would like to announce a new 
+CRAN package, ivreg, which provides a comprehensive implementation of 
+instrumental variables estimation using two-stage least-squares (2SLS) 
+regression.
+
+The standard regression functionality (parameter estimation, inference, 
+robust covariances, predictions, etc.) in the package is derived from 
+and supersedes the ivreg() function in the AER package. Additionally, 
+various regression diagnostics are supported, including hat values, 
+deletion diagnostics such as studentized residuals and Cook's distances; 
+graphical diagnostics such as component-plus-residual plots and 
+added-variable plots; and effect plots with partial residuals. In order 
+to provide these features, the ivreg package integrates seamlessly with 
+other packages through suitable S3 methods, specifically for generic 
+functions in the base-R stats package, and in the car, effects, lmtest, 
+and sandwich packages, among others.
+
+The ivreg package is accompanied by two online vignettes: a brief 
+general introduction to the package, and an introduction to the 
+regression diagnostics and graphics that are provided.
+
+For more information, see the ivreg CRAN webpage at 
+<https://cran.r-project.org/package=ivreg> and the ivreg pkgdown webpage 
+at <https://john-d-fox.github.io/ivreg/>.
+
+Comments, suggestions, and bug reports would be appreciated.
+
+John
+
+-- 
+John Fox, Professor Emeritus
+McMaster University
+Hamilton, Ontario, Canada
+web: https://socialsciences.mcmaster.ca/jfox/
+
+
+From mort|mer@@teven@m @end|ng |rom gm@||@com  Sun Sep 13 12:42:18 2020
+From: mort|mer@@teven@m @end|ng |rom gm@||@com (Steven M. Mortimer)
+Date: Sun, 13 Sep 2020 06:42:18 -0400
+Subject: [R-pkgs] salesforcer v0.2.2: An Implementation of Salesforce APIs
+ Using Tidy Principles
+Message-ID: <CACv7DjrMyugPt1baeCpbPWqbfpEE83_YrenWciHkUt8V0jHFSA@mail.gmail.com>
+
+The {salesforcer} package allows users to query and analyze Salesforce data
+and administer their Org's records and object metadata (fields, triggers,
+layouts). It has been three years in the making to map multiple
+Salesforce Platform
+APIs for use in R. The package implements the REST, SOAP, Bulk 1.0, Bulk
+2.0, Metadata, and Reports and Dashboards APIs. If you or your colleagues
+maintain or analyze Salesforce data, then I would greatly appreciate your
+use and feedback of this package. Thank you.
+
+Sincerely,
+Steven M. Mortimer
+
+CRAN: https://cran.r-project.org/package=salesforcer
+GitHub: https://github.com/StevenMMortimer/salesforcer
+
+	[[alternative HTML version deleted]]
+
+
+From m@rk@c|ement@ @end|ng |rom k|@@e  Mon Sep 21 14:41:01 2020
+From: m@rk@c|ement@ @end|ng |rom k|@@e (Mark Clements)
+Date: Mon, 21 Sep 2020 12:41:01 +0000
+Subject: [R-pkgs] ascii package returns to CRAN
+Message-ID: <1cb16c76-a692-4153-9c4e-961ea7ccabc2@email.android.com>
+
+The ascii package provides formatted tables and lists in a number of markup formats (Asciidoc, Org mode, Pandoc markdown, ReStructured text, Txt2tags and Textile). Documents in Rmarkdown and Org mode can include R code blocks that produce markup output. Sweave drivers are also available for all six markup formats, including caching through weaver. Finally, the package supports R scripting to export reports to a variety of formats.
+
+Changes from the previous CRAN release include: removal of cacheSweave functionality; internal implementation of weaver; additional examples; and a number of bug fixes.
+
+
+
+
+N?r du skickar e-post till Karolinska Institutet (KI) inneb?r detta att KI kommer att behandla dina personuppgifter. H?r finns information om hur KI behandlar personuppgifter<https://ki.se/medarbetare/integritetsskyddspolicy>.
+
+
+Sending email to Karolinska Institutet (KI) will result in KI processing your personal data. You can read more about KI?s processing of personal data here<https://ki.se/en/staff/data-protection-policy>.
+
+	[[alternative HTML version deleted]]
+
+
+From ko@t@kt m@iii@g oii be@j@mi@schiegei@ch  Tue Sep 29 19:09:12 2020
+From: ko@t@kt m@iii@g oii be@j@mi@schiegei@ch (ko@t@kt m@iii@g oii be@j@mi@schiegei@ch)
+Date: Tue, 29 Sep 2020 19:09:12 +0200
+Subject: [R-pkgs] New version of package brant on CRAN
+Message-ID: <00cf01d69683$415b4130$c411c390$@benjaminschlegel.ch>
+
+Dear R community
+
+ 
+
+The new version of the package brant (0.3-0) is now available on CRAN. It
+contains the function brant() to test the parallel regression assumption for
+ordinal logistic regression models.
+
+ 
+
+I this version I fixed a bug which led in some situations to an error
+message and I added support for interaction terms. 
+
+ 
+
+Let me know if you have any questions, still get an error message in any
+situation or have suggestions.
+
+ 
+
+Best,
+
+ 
+
+Benjamin Schlegel
+
+Assistent Lehrstuhl f?r Methoden
+
+ 
+
+Unversit?t Z?rich
+
+Institut f?r Politikwissenschaften
+
+Affolternstrasse 56
+
+8050 Z?rich
+
+ 
+
++41 44 634 62 08
+
+kontakt at benjaminschlegel.ch <mailto:kontakt at benjaminschlegel.ch> 
+
+
+	[[alternative HTML version deleted]]
+
+
+From @nthonytrev|@@n @end|ng |rom gm@||@com  Thu Oct 15 19:43:33 2020
+From: @nthonytrev|@@n @end|ng |rom gm@||@com (Anthony Trevisan)
+Date: Thu, 15 Oct 2020 13:43:33 -0400
+Subject: [R-pkgs] rameritrade
+Message-ID: <CAB035r+h0+RF4g2YUAner6Ne4cWfpRuynZFaLea1LKnB6+4BsA@mail.gmail.com>
+
+Hello,
+
+I recently created a package that allows R users to trade through the TD
+Ameritrade API. With billions in assets and over 11 million clients, I am
+sure some R users could leverage the API.
+
+Best regards,
+Tony
+
+https://cran.r-project.org/web/packages/rameritrade/index.html
+
+https://tonytrevisan.github.io/rameritrade/index.html
+
+	[[alternative HTML version deleted]]
+
+
+From d|ego@hern@ngomezherrero @end|ng |rom gm@||@com  Fri Oct 16 17:37:56 2020
+From: d|ego@hern@ngomezherrero @end|ng |rom gm@||@com (=?UTF-8?Q?Diego_Hernang=C3=B3mez_Herrero?=)
+Date: Fri, 16 Oct 2020 17:37:56 +0200
+Subject: [R-pkgs] {giscoR} v0.1.0 available on CRAN
+Message-ID: <CAA-ibazJcPPtm3DJngObXhiB5zXgvH0t_bHfH7bN=-Mcrkca5Q@mail.gmail.com>
+
+Good afternoon:
+
+giscoR is already available on CRAN. giscoR is a API package that helps to
+retrieve data from GISCO - Eurostat. It  also provides some lightweight
+data sets ready to use without downloading.
+
+GISCO is a geospatial open data repository including several data sets as
+countries, coastal lines, labels or NUTS levels. The data sets are usually
+provided at several resolution levels (60M/20M/10M/03M/01M) and in 3
+different projections (4326/3035/3857).
+
+Vignette:
+https://dieghernan.github.io/giscoR/articles/giscoR.html
+-- 
+
+
+
+Have a nice day!
+
+	[[alternative HTML version deleted]]
+
+
+From k@ttw|nke|-m|r@ @end|ng |rom un|-|@nd@u@de  Thu Oct 22 11:01:33 2020
+From: k@ttw|nke|-m|r@ @end|ng |rom un|-|@nd@u@de (Mira Kattwinkel)
+Date: Thu, 22 Oct 2020 11:01:33 +0200
+Subject: [R-pkgs] openSTARS version 1.2.2 on CRAN
+Message-ID: <8a3f5759-8d4b-cc5c-3774-14782c68006d@uni-landau.de>
+
+Dear R community
+
+There is a new version of the openSTARS package (preparing GIS data for 
+stream analysis) available on CRAN.
+
+Major updates are:
+
+- catch errors arising in GRASS 7.8 due to changes in v.to.db
+- update setup_grass_environment; there is no need any more to initGRASS 
+before
+
+Please also find a detailed description of the package including example 
+code here: 
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239237
+
+Any comments, suggestions or bug reports are welcome on 
+https://github.com/MiKatt/openSTARS
+
+All the best,
+
+Mira
+
+
+-- 
+Dr. Mira Kattwinkel
+Quantitative Landscape Ecology
+iES Landau, Institute for Environmental Sciences
+University of Koblenz-Landau
+Fortstra?e 7
+76829 Landau
+Germany
+Phone: + 49 6341 280-31553
+Office: Building I, Room 2.02
+
+
+From m@rc_@chw@rtz @end|ng |rom me@com  Fri Oct 23 15:15:01 2020
+From: m@rc_@chw@rtz @end|ng |rom me@com (Marc Schwartz)
+Date: Fri, 23 Oct 2020 09:15:01 -0400
+Subject: [R-pkgs] WriteXLS Version 6.0.0 Released
+Message-ID: <068A6271-39B5-42CA-9E96-FC99EA68F137@me.com>
+
+Hi All,
+
+WriteXLS version 6.0.0 has been released and is available on CRAN.
+
+The key changes are:
+
+1. More robust handling of embedded newline ('\n') and carriage return ('\r') characters, double quotes, and two character sequences of a backslash character ('\') followed by another character, within a data value, has been implemented. An indirect consequence of this more robust handling, is better support for multiline cells in the resultant Excel worksheet.
+
+2. New 'AllText' argument to globally handle/overcome Excel's default reformatting of erstwhile numeric values with leading and/or trailing zeros. This option enhances prior improvements to preserving leading and/or trailing zeros on a worksheet cell specific basis.
+
+3. Updated Perl libraries are included as apropos.
+
+
+Regards,
+
+Marc Schwartz
+
+
+From @nthonytrev|@@n @end|ng |rom gm@||@com  Wed Nov  4 13:04:05 2020
+From: @nthonytrev|@@n @end|ng |rom gm@||@com (Anthony Trevisan)
+Date: Wed, 4 Nov 2020 07:04:05 -0500
+Subject: [R-pkgs] fmpcloudr package
+Message-ID: <5D40F6F7-71CB-4A7F-BE1A-4CB398F6BB80@gmail.com>
+
+Hello,
+
+As recommended in https://r-pkgs.org/release.html <https://r-pkgs.org/release.html>, I wanted to notify the R community about a new package for accessing financial data metrics. The package fmpcloudr (https://CRAN.R-project.org/package=fmpcloudr <https://cran.r-project.org/package=fmpcloudr>) interacts with the FMP API. 
+
+FMP offers historical pricing data for indexes, stocks, ETFs, mutual finds, currencies, and crypto. Other financial metrics are available such as technical indicators (EMA, RSI, etc), company financials, and 13F. It?s a great data source and could be beneficial to many R users. You can find more details about the package here: https://tonytrevisan.github.io/fmpcloudr/ <https://tonytrevisan.github.io/fmpcloudr/>
+
+Thank you for supporting such an incredible open source community. Learning R has dramatically reshaped my career path which would have been impossible without the R community.  
+
+Best regards,
+Tony
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From jo@chim m@iii@g oii zuck@reiii@de  Thu Nov  5 10:55:08 2020
+From: jo@chim m@iii@g oii zuck@reiii@de (jo@chim m@iii@g oii zuck@reiii@de)
+Date: Thu, 5 Nov 2020 10:55:08 +0100
+Subject: [R-pkgs] xmlconvert: A package for converting XML data to R data
+ frames and vice versa
+Message-ID: <015e01d6b359$bf0c8ba0$3d25a2e0$@zuckarelli.de>
+
+Hello everyone,
+
+
+
+Driven by the need to work with XML data from medical systems that use
+object-oriented databases I have developed the 'xmlconvert' package. With
+its easy-to-use functions xml_to_df() and df_to_xml() it allows to convert
+data from XML to R data frames and vice versa. A variety of arguments gives
+you control over the specifics of the conversion process.
+
+
+
+The package is available on CRAN (visit
+https://CRAN.R-project.org/package=xmlconvert for more details). Install it
+by executing
+
+> install.packages("xmlconvert", dependencies = TRUE)
+
+in the R console.
+
+
+
+You will find more information on GitHub
+(https://github.com/jsugarelli/xmlconvert). The GitHub README provides an
+intro how to use the package and how to adjust for different ways in which
+the data can be represented in the XML documents.
+
+
+
+Best,
+
+
+
+Joachim
+
+
+
+----
+
+Joachim L. Zuckarelli
+
+E-mail: joachim at zuckarelli.de <mailto:joachim at zuckarelli.de>
+
+Website: http://www.zuckarelli.de
+
+Twitter: https://twitter.com/jsugarelli
+
+
+
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From vgher@rd @end|ng |rom @|@@@@|t  Fri Nov  6 16:13:11 2020
+From: vgher@rd @end|ng |rom @|@@@@|t (Valerio Gherardi)
+Date: Fri, 6 Nov 2020 16:13:11 +0100
+Subject: [R-pkgs] sbo: N-gram Stupid Back-Off models in R
+Message-ID: <40ef1bf6-d199-287f-4905-b3d532c7049f@sissa.it>
+
+Dear all,
+
+I would like to introduce
+sbo: Utilities for building and evaluating text prediction functions 
+based on Stupid Back-off N-gram models.
+
+v0.3.0 is now on CRAN: 
+https://cran.r-project.org/web/packages/sbo/index.html
+website: https://vgherard.github.io/sbo/
+For bugs/issues: https://github.com/vgherard/sbo
+
+Feedback of any kind is welcome.
+
+Sincerely,
+Valerio Gherardi.
+
+
+From b@@|||e @end|ng |rom u||@edu  Mon Nov 16 03:09:02 2020
+From: b@@|||e @end|ng |rom u||@edu (Mathieu Basille)
+Date: Sun, 15 Nov 2020 21:09:02 -0500
+Subject: [R-pkgs] Package 'sftrack': Modern classes for tracking and
+ movement data
+Message-ID: <892cc4c8-fa44-2d8d-db3a-a9f6818b2d9f@ufl.edu>
+
+Dear R users and developers,
+
+The 'sftrack' package is finally on CRAN!
+
+https://cran.r-project.org/package=sftrack
+
+'sftrack' provides modern classes for tracking and movement data, relying
+on 'sf' spatial infrastructure. Tracking data are made of tracks, i.e.
+series of locations with at least 2-dimensional spatial coordinates (x,y),
+a time index (t), and individual identification (id) of the object being
+monitored; movement data are made of trajectories, i.e. the line
+representation of the path, composed by steps (the straight-line segments
+connecting successive locations). 'sftrack' is designed to handle movement
+of both living organisms and inanimate objects. A dedicated website with
+extensive vignettes and documentation can be found at:
+
+https://mablab.org/sftrack/
+
+The development and design of the 'sftrack' package follow three simple
+principles:
+
+* Minimal and focused: this is basically the Unix philosophy. Do a simple
+thing, and do it well. The scope of the package is limited (see above),
+with as few dependencies as possible;
+* User-friendly: 'sftrack' is designed to be as easy to use as familiar R
+structures like data.frames and 'sf' objects. 'sftrack' objects are tidy,
+and follow the idea that rows are records (locations) and columns are
+variable (following the semantics of tracking and movement data);
+* Flexible and extensible: 'sftrack' is meant first for users to use on
+their data, but also directly designed to address other developers? needs
+for their own tracking packages. If you are a developer of a tracking
+package, and you are interested in the classes provided by 'sftrack',
+please do not hesitate to contact us (for instance at
+https://github.com/mablab/sftrack/issues).
+
+You can directly install the version available on CRAN
+('install.packages("sftrack")'), but note that the development version
+currently goes a step (!) forward by implementing a true representation of
+time steps (t1?t2), which makes each step completely defined by itself
+(x,y,t1?x,y,t2) and independent from other steps (each step can be handled
+on its own). See the details of the implementation in the documentation of
+the dev branch:
+
+https://mablab.org/sftrack/dev/articles/sftrack6_time.html
+
+Best,
+Mathieu Basille, for the 'sftrack' team.
+
+
+-- 
+
+Mathieu Basille
+
+basille at ufl.edu | https://mablab.org/
++1 954-577-6314 | University of Florida FLREC
+
+  ? Le tout est de tout dire, et je manque de mots
+  Et je manque de temps, et je manque d'audace. ?
+  ? Paul ?luard
+
+
+From ||u|@@rev|||@ @end|ng |rom gm@||@com  Wed Nov 25 11:29:00 2020
+From: ||u|@@rev|||@ @end|ng |rom gm@||@com (=?UTF-8?Q?Llu=C3=ADs_Revilla?=)
+Date: Wed, 25 Nov 2020 11:29:00 +0100
+Subject: [R-pkgs] experDesign
+Message-ID: <CAN+W6_sOwBn7MNCgBN0LoKRMgF5HxdOs78jptj=nzHv54q0Mvg@mail.gmail.com>
+
+Hello,
+
+Some weeks ago the experDesign package was released on CRAN:
+https://CRAN.R-project.org/package=experDesign
+The package helps designing experiments to avoid batch effects
+confounding the result by distributing the samples on batches
+according to their features.
+
+If you or your colleagues design this kind of analysis I hope
+experDesign will be useful. I greatly appreciate your feedback,
+especially if you find bugs (despite the testing) or think of any
+improvement.
+
+To all developers, maintainers and the CRAN team that made this
+possible: Thank you!
+
+Best regards,
+
+Llu?s
+
+GitHub: https://github.com/llrs/experDesign
+CRAN: https://CRAN.R-project.org/package=experDesign
+
+
+From m@rc_@chw@rtz @end|ng |rom me@com  Wed Nov 25 14:27:03 2020
+From: m@rc_@chw@rtz @end|ng |rom me@com (Marc Schwartz)
+Date: Wed, 25 Nov 2020 08:27:03 -0500
+Subject: [R-pkgs] WriteXLS Version 6.1.0 - Bug Fix Release
+Message-ID: <A60CA282-CCCF-4A50-82E2-505AA9B424D7@me.com>
+
+Hi All,
+
+WriteXLS version 6.1.0 has been released and is in the process of becoming available via CRAN.
+
+This is a bug fix release, as in version 6.0.0, there were occasions where certain integer values in source data frames, containing specific patterns of trailing and embedded zeros, were written to the Excel worksheets as left justified text values, as opposed to right justified numeric values.
+
+Please download and install the updated version at your convenience.
+
+Thanks and regards,
+
+Marc Schwartz
+
+
+From @nthonytrev|@@n @end|ng |rom gm@||@com  Mon Nov 30 19:29:36 2020
+From: @nthonytrev|@@n @end|ng |rom gm@||@com (Anthony Trevisan)
+Date: Mon, 30 Nov 2020 13:29:36 -0500
+Subject: [R-pkgs] Automated Investing - etrader
+Message-ID: <CAB035rJoen8J-s+wYGtxuSD+80+tm4Mr_HfQ4r8eFqzd6a9S-w@mail.gmail.com>
+
+Hello,
+
+I wanted to notify the R community about a new package for trading on the
+ETRADE platform through an API. The package `etrader` (
+https://CRAN.R-project.org/package=etrader
+<https://cran.r-project.org/package=etrader>) interacts with the ETRADE API
+to allow for authentication, trading, account details and more. You can
+find more details about the package here:
+https://tonytrevisan.github.io/etrader/.
+
+This completes a suite of three finance packages I developed to allow for
+automated trading and investing. `rameritrade` and `etrader` allow for
+trading on TD Ameritrade and ETRADE which collectively hold more than 16
+million accounts and $1.5 trillion in Assets. `fmpcloudr` is a package to
+pull data from Financial Modeling Prep (
+https://financialmodelingprep.com/developer/docs/companies-key-stats-free-api/)
+to perform in-depth analysis on a range of financial metrics.
+
+I have a number of articles and 'How To' guides on my blog that show
+someone how to fully automate their retirement investing (
+https://tonytrevisan.github.io/blog.html). I hope these tools prove useful
+to the R community.
+
+Best regards,
+Tony
+
+	[[alternative HTML version deleted]]
+
+
+From d|ego@hern@ngomezherrero @end|ng |rom gm@||@com  Thu Dec  3 10:10:56 2020
+From: d|ego@hern@ngomezherrero @end|ng |rom gm@||@com (=?UTF-8?Q?Diego_Hernang=C3=B3mez_Herrero?=)
+Date: Thu, 3 Dec 2020 10:10:56 +0100
+Subject: [R-pkgs] mapSpain on CRAN
+Message-ID: <CAA-ibaw1T1uvV+DTYSmq1HZQZkH-sCcW3WMvXm+Y2-=sxzv8oQ@mail.gmail.com>
+
+Dear R users:
+
+mapSpain is now available on CRAN. This package provides the administrative
+boundaries of Spain at several levels: all NUTS levels, Autonomous
+Communities , Provinces and municipalities (sf objects).
+
+The package also has the ability of downloading WMS/WMTS geotagged images
+of different public organisms of Spain for static  maps, a leaflet plugin
+for the same providers to use with R leaflet and many other features.
+
+Full documentation and vignettes on:
+
+https://dieghernan.github.io/mapSpain/
+
+
+Hope this can be useful, regards
+-- 
+
+
+
+Have a nice day!
+
+	[[alternative HTML version deleted]]
+
+
+From rrpr| @end|ng |rom emvt@net  Mon Dec  7 05:00:52 2020
+From: rrpr| @end|ng |rom emvt@net (Richard Raubertas)
+Date: Sun, 6 Dec 2020 23:00:52 -0500
+Subject: [R-pkgs] tablesgg: Presentation-quality tables displayed using
+ 'ggplot2'
+Message-ID: <b941b96f-4b29-c0a9-6446-62938f24dcad@emvt.net>
+
+I'm pleased to announce that package 'tablesgg' is now available:
+
+CRAN: https://CRAN.R-project.org/package=tablesgg
+GitHub:? https://github.com/rrprf/tablesgg
+
+The package displays presentation-quality tables as plots on an R 
+graphics device.? It is unique in combining two features:
+
+* It is aware of the logical structure of the table being presented, and 
+makes use of that for automatic layout and styling of the table.? This 
+avoids the need for most manual adjustments to achieve an attractive 
+result.
+
+* It displays tables using `ggplot2` graphics.? External software such 
+as LaTeX or HTML or their viewers is not required.
+
+A full set of tools is provided to control table appearance, including 
+titles, footnotes and reference marks, horizontal and vertical rules, 
+and spacing or grouping of rows and columns.? Many properties can be set 
+automatically by specifying _styles_.? Default styles are included, and 
+the user can define custom styles.? There are also tools for low-level 
+manipulation of the appearance of individual table elements if desired.
+
+Methods are included to display data frames; tables created by R's 
+ftable(), table(), and xtabs() functions; and tables created by the 
+`tables` and `xtable` packages.? Methods can be added to display other 
+table-like objects.
+
+A vignette is included that illustrates usage and options available in 
+the package.
+
+Richard Raubertas
+
+
+From jo@chim m@iii@g oii zuck@reiii@de  Sun Dec 13 23:34:18 2020
+From: jo@chim m@iii@g oii zuck@reiii@de (jo@chim m@iii@g oii zuck@reiii@de)
+Date: Sun, 13 Dec 2020 23:34:18 +0100
+Subject: [R-pkgs] shinyfilter: 'Excel-like' interdependent column filters in
+ Shiny tables
+Message-ID: <008c01d6d1a0$18292310$487b6930$@zuckarelli.de>
+
+Hello everyone,
+
+
+
+I have been looking for 'Excel-like' column filters for reactable tables in
+Shiny, and finally decided to developed this functionality myself. The basic
+idea is that the selection options available in each column filter of a
+table depend on the combined selection in all other filters, just as we know
+it from popular spreadsheet applications.
+
+
+
+As a result, my new package 'shinyfilter' is now available on CRAN (visit
+https://CRAN.R-project.org/package=shinyfilter for more details). Install it
+by executing
+
+R> install.packages("shinyfilter", dependencies = TRUE)
+
+in the R console.
+
+
+
+You will find more information (including both, a comprehensive tutorial and
+a short 'cookbook recipe') on GitHub
+(https://github.com/jsugarelli/shinyfilter).
+
+
+
+Best,
+
+
+
+Joachim
+
+
+
+----
+
+Joachim L. Zuckarelli
+
+E-mail: joachim at zuckarelli.de <mailto:joachim at zuckarelli.de>
+
+Website: http://www.zuckarelli.de
+
+Twitter: https://twitter.com/jsugarelli
+
+
+
+
+	[[alternative HTML version deleted]]
+
+

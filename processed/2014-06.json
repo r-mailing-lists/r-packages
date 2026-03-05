@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-06",
+  "messages": [
+    {
+      "id": "msg-59c8b1b4b34b",
+      "message_id": "<CA+zP7HEU9Ny4_t4kDS=CFwPM5KhQ3nyMUOGMDCZ8HM3miFDgWg@mail.gmail.com>",
+      "from_name": "Jack Wasey",
+      "from_email_hash": "7d2f0b8d1ea7b010c54f9af90a9adc619e9597f35408f75c7bd1722f2f428db2",
+      "date": "2014-06-24T02:06:59Z",
+      "subject": "[R-pkgs] icd9 - a new R package",
+      "subject_clean": "icd9 - a new R package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R people,\n\nThe new packge 'icd9' provides a range of tools for working with ICD-9-CM codes.\n\nhttp://cran.r-project.org/web/packages/icd9/index.html\nhttps://github.com/jackwasey/icd9\n\nICD-9 (clinical modification) is primarily used for categorizing\ndiseases in the USA for hospital administration, whereas ICD-10 is\nused by the rest of the world for disease surveillance. This package\nis currently restricted to ICD-9-CM codes.\n\nI've seen other R code which manipulates ICD-9 codes, but the mistake\nis often made of thinking they are numeric. This is not the case, e.g.\n100.0 is different from 100 and 100.00 . This package takes care of\nvalidating these codes, explaining them (converting code to plain\nEnglish), comparing them, and attributing codes to groups of codes to\nassign co-morbidities to patients. ICD-9 codes are often provided in a\nshortened format without a decimal place, and these have distinct\nvalidation rules. Functions to convert between decimal and short forms\nare provided. All key parts use vectorized code, and comorbidities for\na million patient visits can be assigned in a few seconds on a modest\nworkstation.\n\nSAS code is published by AHRQ to allow assignment of ICD-9 codes to\ncomorbidities. This package contains some SAS source to R code\ntranslation, so that the canonical ICD-9-CM to comorbidity mapping\nprovided by AHRQ can be derived directly without the cumbersome and\nerror-prone manual task of re-encoding the relationships in R. I\nbelieve a SAS to R converter was an April Fools' joke some time ago,\nbut this is indeed a very limited answer to that problem.\nhttp://www.biostatistics.dk/sas2r/index.html\n\nA short vignette covers the major use-cases.\nhttp://cran.r-project.org/web/packages/icd9/vignettes/icd9.pdf\n\nThe code is supported by a fairly thorough test suite, and is well\ndocumented in the hope that it will be easier for users of the package\nto understand it, and to get involved. I chose only to export key\nfunctions where I had thought carefully about the external API, but\nall internal functions are documented and contain potentially useful\nnuggets for power users.\n\nComments and contributions are most welcome. In particular, I'd love\nto see unit tests corresponding to any failures you may encounter\nworking with your own ICD-9 data.\n\nHope you find this useful.\nJack\n\n--\nJack Wasey\nResident Physician, Anesthesiology and Critical Care Medicine\nJohns Hopkins Hospital\nBaltimore, MD, USA",
+      "body_snippet": "Dear R people,\n\nThe new packge 'icd9' provides a range of tools for working with ICD-9-CM codes.\n\nhttp://cran.r-project.org/web/packages/icd9/index.html\nhttps://github.com/jackwasey/icd9\n\nICD-9 (clini",
+      "thread_id": "thread-59c8b1b4b34b",
+      "thread_depth": 0,
+      "month": "2014-06"
+    },
+    {
+      "id": "msg-35ccf798e70a",
+      "message_id": "<CAMTWbJgf8Ts96RDca7PCP=+ZXaad=sf1WVk1AaAZRTmeAmEYVg@mail.gmail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "23cf086ca920b8413cf82f50e8684d2ad0107f757c3acccd0f951bbb269742f4",
+      "date": "2014-06-28T09:01:49+02:00",
+      "subject": "[R-pkgs] sampleSelection 1.0 released",
+      "subject_clean": "sampleSelection 1.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All\n\nThe recently released version of the sampleSelection package [1] has\nthe version number 1.0, because we consider the package now to be\nmature and feature-complete. Compared to version 0.6 of the\nsampleSelection package (which is described in an article in the\nJournal of Statistical Software [2]), the new version has, for\ninstance, following new features:\n\n* estimation of binary-outcome selection models\n\n* probit models, tobit-2 models, and binary-outcome selection models\ncan now be estimated with observation-specific weights\n\n* predict() methods for calculating unconditional and conditional expectations\n\n* improved/extended residuals() methods\n\n* logLik() methods\n\n* nobs() and nObs() methods\n\n* default df.residual() method works\n\n* removed the deprecated function tobit2()\n\nAny kind of feedback is--as always--very welcome, preferable via R-Forge [3]!\n\nBest regards,\nOtt and Arne\n\n[1] http://cran.r-project.org/package=sampleSelection\n\n[2] http://www.jstatsoft.org/v27/i07/\n\n[3] http://r-forge.r-project.org/projects/sampleselection/\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "Dear All\n\nThe recently released version of the sampleSelection package [1] has\nthe version number 1.0, because we consider the package now to be\nmature and feature-complete. Compared to version 0.6 of",
+      "thread_id": "thread-35ccf798e70a",
+      "thread_depth": 0,
+      "month": "2014-06"
+    },
+    {
+      "id": "msg-da2b7d21e2dd",
+      "message_id": "<CAFC-x4a_sp-5LN_KxJnO4w=PR+yn1KS7Na-c1NqVcB4VO33nUg@mail.gmail.com>",
+      "from_name": "SriSatish Ambati",
+      "from_email_hash": "5099488cb3559b761d822a0d5d20e11ee033fac9773456a217790579ff496dfe",
+      "date": "2014-06-28T18:59:40-07:00",
+      "subject": "[R-pkgs] h2o - fast scalable glm, deeplearning, gbm, randomForest, plyr for big datasets",
+      "subject_clean": "h2o - fast scalable glm, deeplearning, gbm, randomForest, plyr for big datasets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140628/b5c8e19d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140628/b5c8e19d/attachment.pl>",
+      "thread_id": "thread-da2b7d21e2dd",
+      "thread_depth": 0,
+      "month": "2014-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-59c8b1b4b34b",
+      "subject": "icd9 - a new R package",
+      "message_count": 1,
+      "participants": [
+        "Jack Wasey"
+      ],
+      "started": "2014-06-24T02:06:59+00:00",
+      "last_reply": "2014-06-24T02:06:59+00:00",
+      "root_message_id": "msg-59c8b1b4b34b"
+    },
+    {
+      "id": "thread-35ccf798e70a",
+      "subject": "sampleSelection 1.0 released",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2014-06-28T09:01:49+02:00",
+      "last_reply": "2014-06-28T09:01:49+02:00",
+      "root_message_id": "msg-35ccf798e70a"
+    },
+    {
+      "id": "thread-da2b7d21e2dd",
+      "subject": "h2o - fast scalable glm, deeplearning, gbm, randomForest, plyr for big datasets",
+      "message_count": 1,
+      "participants": [
+        "SriSatish Ambati"
+      ],
+      "started": "2014-06-28T18:59:40-07:00",
+      "last_reply": "2014-06-28T18:59:40-07:00",
+      "root_message_id": "msg-da2b7d21e2dd"
+    }
+  ]
+}

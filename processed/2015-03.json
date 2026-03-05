@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-03",
+  "messages": [
+    {
+      "id": "msg-eeddb0e32d48",
+      "message_id": "<CAHayGv9r+tXChjzW2=Jj20rV3=t_DmcycMN97zj5XutPpM-=Lg@mail.gmail.com>",
+      "from_name": "Blake Seers",
+      "from_email_hash": "f5936720f8118ce0ec6a6e134d533023471d7949ab9032f5cb802ca8446e4c62",
+      "date": "2015-03-05T15:59:15+13:00",
+      "subject": "[R-pkgs] New package: clifro (v2.4-0)",
+      "subject_clean": "New package: clifro (v2.4-0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nI am pleased to inform you that my clifro package has been submitted to\nCRAN today:\n\nhttp://cran.r-project.org/web/packages/clifro/\n\nThe clifro package imports data from New Zealand's National Climate\nDatabase (via CliFlo) and provides generic plotting methods for a range of\nthe various data types. The focus of clifro is to ensure the process from\ndata acquisition to analysis is as smooth as possible. This removes the\nneed to manually obtain, validate, import, clean and reshape the data,\nbefore any plotting, analysis or export takes place.\n\nThis package may also be helpful for plotting wind data from any dataset\n(using the windrose function).\n\nThe github page can be viewed here:\nhttps://github.com/ropensci/clifro#enhancing-the-national-climate-database-with-clifro\n\nAny comments, suggestions and feedback are always welcome.\n\nI hope you find this helpful!\nRegards\n---\nBlake\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users,\n\nI am pleased to inform you that my clifro package has been submitted to\nCRAN today:\n\nhttp://cran.r-project.org/web/packages/clifro/\n\nThe clifro package imports data from New Zealand's N",
+      "thread_id": "thread-eeddb0e32d48",
+      "thread_depth": 0,
+      "month": "2015-03"
+    },
+    {
+      "id": "msg-dc209571f9fc",
+      "message_id": "<59164.1426606765@axibase.com>",
+      "from_name": "mikhail.zvagelsky at axibase.com",
+      "from_email_hash": "1d5db4d4ae5c04aceb22a776d5b59ace1abe26ab926c5e1d5dfb18e6f5034c25",
+      "date": "2015-03-17T10:39:25-05:00",
+      "subject": "[R-pkgs] The 'atsd' package released.",
+      "subject_clean": "The 'atsd' package released.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to announce the release of the \"atsd\" R package on CRAN, \nwhich offers functions for retrieving time-series and related meta-data \nsuch as entities, metrics, and tags from Axibase Time Series Database (ATSD).\n\nhttp://cran.r-project.org/web/packages/atsd/index.html\n\nATSD runs on top of HBase to collect, analyze and visualize time series data at scale. \nATSD capabilities include optimized storage schema, built-in rule engine, forecasting \nalgorithms include Holt-Winters, ARIMA and graphics designed for high-frequency data. \nPrimary use case: IT infrastructure resource monitoring.\n\nThe main focus of \"atsd\" R package is to simplify data retrieval. This package eliminates \nthe need to manually retrieve historical data and forecasts, before any advanced analysis \nis executed. The \"atsd\" R package fetches data and tags from ATSD, and converts them into \na data frame object which can be readily consumed by other R packages.\n\nKey supported functions for retrieving data:\n\n? query() -- get historical data and forecasts from ATSD. \n             This function supports aggregation: COUNT, MIN, MAX, AVG, WAvg, WTAvg, SUM, \n             PERCENTILES (50%, 75%, 90%, 95%, 99%, 99.5%, 99.9%), STANDARD_DEVIATION. \n             The function also supports interpolation: NONE, STEP, LINEAR.\n\n? get_metrics() -- get information about the metrics collected by ATSD.\n\n? get_entities() -- get information about the entities collected by ATSD.\n\n? to_zoo() -- converts a time-series data frame to 'zoo' object for manipulating irregular \n              time-series with built-in functions in zoo package.\n\nThe github page can be found here:\n\nhttps://github.com/axibase/atsd-api-r\n\nComments and contributions are welcome.\n\n\nBest Regards,\nMikhail Zvagelsky.",
+      "body_snippet": "Dear R users,\n\nI would like to announce the release of the \"atsd\" R package on CRAN, \nwhich offers functions for retrieving time-series and related meta-data \nsuch as entities, metrics, and tags from ",
+      "thread_id": "thread-dc209571f9fc",
+      "thread_depth": 0,
+      "month": "2015-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-eeddb0e32d48",
+      "subject": "New package: clifro (v2.4-0)",
+      "message_count": 1,
+      "participants": [
+        "Blake Seers"
+      ],
+      "started": "2015-03-05T15:59:15+13:00",
+      "last_reply": "2015-03-05T15:59:15+13:00",
+      "root_message_id": "msg-eeddb0e32d48"
+    },
+    {
+      "id": "thread-dc209571f9fc",
+      "subject": "The 'atsd' package released.",
+      "message_count": 1,
+      "participants": [
+        "mikhail.zvagelsky at axibase.com"
+      ],
+      "started": "2015-03-17T10:39:25-05:00",
+      "last_reply": "2015-03-17T10:39:25-05:00",
+      "root_message_id": "msg-dc209571f9fc"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-04",
+  "messages": [
+    {
+      "id": "msg-918c165432ce",
+      "message_id": "<CAKru3AA=Z10d-ww-gMdK-4YhWp9j0s5s-jdFumasfPu9zEvAJA@mail.gmail.com>",
+      "from_name": "Sam Albers",
+      "from_email_hash": "ca035d84d8c4044a360efa8bc5dd17b3562fd2b0617623b9edbe0821e6421883",
+      "date": "2017-04-10T09:42:48-07:00",
+      "subject": "[R-pkgs] Introducing the rsoi package",
+      "subject_clean": "Introducing the rsoi package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi folks,\n\nI am pleased to announce that the rsoi is now up on CRAN (v0.2.1\nhttps://CRAN.R-project.org/package=rsoi). rsoi is a minimal but\nhopefully useful package to folks that are looking for easy access in\nR to Southern Oscillation Index and Oceanic Nino Index data.\n\nrsoi uses data collected by the National Oceanic Atmospheric\nAdministration. Their data are usually updated monthly. Data are\ndownloaded and formatted for use in R by the `download_enso()`\nfunction. El Nino, La Nina and neutral periods of ENSO are categorized\nby temperature anomalies from a 30 year base period in the Central\nSouth Pacific Ocean.\n\nSuggestions and contributions are very much welcome at the rsoi github\npage: https://github.com/boshek/rsoi\n\n-Sam",
+      "body_snippet": "Hi folks,\n\nI am pleased to announce that the rsoi is now up on CRAN (v0.2.1\nhttps://CRAN.R-project.org/package=rsoi). rsoi is a minimal but\nhopefully useful package to folks that are looking for easy ",
+      "thread_id": "thread-918c165432ce",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-584e65615656",
+      "message_id": "<1408192736.562858.1491920359684@mail.yahoo.com>",
+      "from_name": "brodie gaslam",
+      "from_email_hash": "c8d0937e5dd68ad44721736755f2c013dc82cb1d905f5bec9a5e6b5610559043",
+      "date": "2017-04-11T14:19:19Z",
+      "subject": "[R-pkgs] Announcing 'unitizer': Interactive Unit Tests",
+      "subject_clean": "Announcing 'unitizer': Interactive Unit Tests",
+      "in_reply_to": null,
+      "references": [
+        "<1408192736.562858.1491920359684.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "`unitizer` is a unit testing framework for tests that produce non-trivial output.  It is conceptually similar to using \".Rout.save\" files, except we save the actual R objects and conditions, and we streamline the update/test/debug cycle via an interactive interface.  A non-interactive mode is available for R CMD check runs.\n\n* unitizer 1.4.2 on CRAN: https://cran.r-project.org/package=unitizer\n\n* A demo screencast: http://htmlpreview.github.io/?https://github.com/brodieG/unitizer/blob/rc/extra/gifshow.html\n\n\nFeedback welcome (github: https://github.com/brodieG/unitizer).\n\nAlso, a big thank you to Uwe Ligges and Kurt Hornik for maintaining CRAN and for their patience with my submission.\n\n\nBest regards,\n\n\nBrodie Gaslam.",
+      "body_snippet": "`unitizer` is a unit testing framework for tests that produce non-trivial output.  It is conceptually similar to using \".Rout.save\" files, except we save the actual R objects and conditions, and we st",
+      "thread_id": "thread-584e65615656",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-0587abd77c99",
+      "message_id": "<CAPVd8gK5BAKqh7n1tyGVtru9kD3mYUHYQZdjqXG63E3Six40yA@mail.gmail.com>",
+      "from_name": "Jacob Kaplan",
+      "from_email_hash": "55eae5df56924b954e0970747e09f9a2da85fe5b32ace694abbcb94b6a491867",
+      "date": "2017-04-21T09:34:36-04:00",
+      "subject": "[R-pkgs] New package: fastDummies",
+      "subject_clean": "New package: fastDummies",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that the package fastDummies is now on CRAN\n(*https://cran.r-project.org/package=fastDummies\n<https://cran.r-project.org/package=fastDummies>)*.\n\nThe fastDummies package lets you quickly and easily create dummy columns\nfrom categorical variables in data.tables or data.frames. This package is\nmuch faster than model.matrix() in handling data with greater than 1,000\nrows.\n\nPlease submit all question or issues here (https://github.com/jacobkap/\nfastDummies/issues)\n\nBest,\nJacob\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that the package fastDummies is now on CRAN\n(*https://cran.r-project.org/package=fastDummies\n<https://cran.r-project.org/package=fastDummies>)*.\n\nThe fastDummies ",
+      "thread_id": "thread-0587abd77c99",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-6d7855047f0b",
+      "message_id": "<HK2P15301MB0083996D3D6C30B103FCF96DA6110@HK2P15301MB0083.APCP153.PROD.OUTLOOK.COM>",
+      "from_name": "Hong Ooi",
+      "from_email_hash": "14983f83f8ec09d6eecf10b3a33a1d29e0e5ff8f8858f3f23bf3e75d9c739834",
+      "date": "2017-04-26T10:14:17Z",
+      "subject": "[R-pkgs] Package glmnetUtils now on CRAN",
+      "subject_clean": "Package glmnetUtils now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to announce that the glmnetUtils package is now available on CRAN. I wrote this after using the popular glmnet package to fit elastic net models for a few customer projects, and rewriting the same boilerplate code each time.\n\nglmnetUtils provides some quality-of-life improvements for glmnet, specifically:\n\n- a formula/data frame interface to glmnet and cv.glmnet. No more manual fiddling around with model.matrix/as.matrix/data.matrix, worrying about NA values, etc.\n- a cva.glmnet function to choose both the alpha and lambda parameters via cross-validation, following the approach described in the help page for cv.glmnet. Optionally does the cross-validation in parallel.\n- Methods for predict and coef for the above.\n\nIn addition, to facilitate analysis of very wide datasets, glmnetUtils by default takes a slightly different approach to generating model matrices. Rather than calling model.frame() and model.matrix() on the full dataset, it builds up the model.matrix term by term. This is because model.frame() creates a terms object, which can be excessively large for wide data. Building up the model matrix one term at a time avoids this problem.\n\nCRAN link: https://cran.r-project.org/package=glmnetUtils\n\nGithub repo: https://github.com/hong-revo/glmnetUtils\n\nPlease feel free to contact me with suggestions, bug reports, criticisms, etc.",
+      "body_snippet": "I'm pleased to announce that the glmnetUtils package is now available on CRAN. I wrote this after using the popular glmnet package to fit elastic net models for a few customer projects, and rewriting ",
+      "thread_id": "thread-6d7855047f0b",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-3d0c371a132d",
+      "message_id": "<CAARY7kgYxJaY-eO_ecdA+86yBMJ4eDhEeq+EkjJU0XV-dPY3AQ@mail.gmail.com>",
+      "from_name": "David Hugh-Jones",
+      "from_email_hash": "36af917953ef4b56c37a32f04551e72f9ee3f1f4bcc5440822670195db6f6253",
+      "date": "2017-04-26T14:51:30+01:00",
+      "subject": "[R-pkgs] Package huxtable 0.2.1 on CRAN",
+      "subject_clean": "Package huxtable 0.2.1 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI'm happy to announce that the huxtable package version 0.2.1 is on CRAN.\n\nhuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface. Features of 0.2.1 include:\n\n- Export to LaTeX, HTML, Word and Markdown\n- Easy integration with knitr and rmarkdown documents\n- Multirow and multicolumn cells\n- Fine-grained control over cell background, spacing, alignment, size and\nborders\n- Control over text font, style, size, colour, alignment, number format and\nrotation\n- Table manipulation using standard R subsetting, or dplyr functions like\nfilter and select\n- Easy conditional formatting based on table contents\n- Quick table themes\n- Automatic creation of regression output tables with the huxreg function\n\nThe CRAN link is https://cran.r-project.org/package=huxtable , and there's\na website with documentation at http://hughjonesd.github.io/huxtable\n\nComments, suggestions and bug reports are welcome and can be filed at\nhttp://www.github.com/hughjonesd/huxtable/issues\n\nCheers,\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI'm happy to announce that the huxtable package version 0.2.1 is on CRAN.\n\nhuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface. Features of 0.2.1 inclu",
+      "thread_id": "thread-3d0c371a132d",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-78dba227f055",
+      "message_id": "<CADgKAxs0pAa3EDBSdXS+uYhH+FWJXRaYF7HrBbO78eYoN+TYhw@mail.gmail.com>",
+      "from_name": "Aurélien Chateigner",
+      "from_email_hash": "5d2aec2034de40de23a69fc0ed1c060298ecdb9bd955d799134ca6362da62ab6",
+      "date": "2017-04-28T08:17:14Z",
+      "subject": "[R-pkgs] apercu",
+      "subject_clean": "apercu",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aper?u\" in french) of any object you want (vector, matrix, data\nframe, list, array...). I first developed it after being tired to write\nmatrix[1:5,1:5] all the time to check my data, and I am sure that I am not\nthe only one doing that all the time. Thus now you can replace it by\nap(matrix) !\n\nIf you find a bug, please don't hesitate to contact me.\n\nBest,\n\nAur?lien Chateigner, PhD\nPostdoctoral Fellow\nUR0588 Am?lioration, G?n?tique et Physiologie Foresti?res\nINRA Val-de-Loire\n2163 avenue de la Pomme de Pin\nCS 40001 - Ardon\n45075 ORLEANS CEDEX 2\nFrance\n\nhttps://www6.val-de-loire.inra.fr/uragpf/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aper?u\" in french) of any objec",
+      "thread_id": "thread-78dba227f055",
+      "thread_depth": 0,
+      "month": "2017-04"
+    },
+    {
+      "id": "msg-d8ba0e564ca4",
+      "message_id": "<CAC58_YkuYnunbjV=xWKO0G3pV4x6=wpEFcX2RdV=VnQ2ShNCVg@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c8d656fb819da8012d5821aea2d81117adec96293c0907599d677f0e82262a42",
+      "date": "2017-04-28T11:11:05Z",
+      "subject": "[R-pkgs] Updated Package PSF and Publication",
+      "subject_clean": "Updated Package PSF and Publication",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nHave a look at updated version of PSF package for time series forecasting.\nI am glad to inform you, it gets published in R Journal, too.\n\nPattern Sequence Based Forecasting (PSF) takes univariate time series data\nas input and assist in forecasting its future values. This algorithm\nforecasts the behavior of time series based on similarity of pattern\nsequences. Initially, clustering is done with the labelling of samples from\na database. The labels associated with samples are then used for\nforecasting the future behaviour of time series data. The further technical\ndetails and references regarding PSF are discussed in Vignette.\n\nCRAN Link: https://cran.r-project.org/package=PSF\n\nPublication Link: https://www.researchgate.net/publication/\n304131481_PSF_Introduction_to_R_Package_for_Pattern_\nSequence_Based_Forecasting_Algorithm\n\nPlease feel free to contact me with suggestions, bug reports, criticisms,\netc.\n\n-- \nRegards ,\n*Neeraj Dhanraj Bokde  *\n*Research Scholar (PhD)*\n\n*Visvesvaraya National Institute of Technology ,* Nagpur\n\nMaharashtra, India\n\nPhone: *+91 9028415974*\n\nEmail: h2012105 at pilani.bits-pilani.ac.in; *neerajdhanraj at gmail.com\n<neerajdhanraj at gmail.com>*\n\nWebsite: http://www.neerajbokde.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nHave a look at updated version of PSF package for time series forecasting.\nI am glad to inform you, it gets published in R Journal, too.\n\nPattern Sequence Based Forecasting (PSF) takes univ",
+      "thread_id": "thread-d8ba0e564ca4",
+      "thread_depth": 0,
+      "month": "2017-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-918c165432ce",
+      "subject": "Introducing the rsoi package",
+      "message_count": 1,
+      "participants": [
+        "Sam Albers"
+      ],
+      "started": "2017-04-10T09:42:48-07:00",
+      "last_reply": "2017-04-10T09:42:48-07:00",
+      "root_message_id": "msg-918c165432ce"
+    },
+    {
+      "id": "thread-584e65615656",
+      "subject": "Announcing 'unitizer': Interactive Unit Tests",
+      "message_count": 1,
+      "participants": [
+        "brodie gaslam"
+      ],
+      "started": "2017-04-11T14:19:19+00:00",
+      "last_reply": "2017-04-11T14:19:19+00:00",
+      "root_message_id": "msg-584e65615656"
+    },
+    {
+      "id": "thread-0587abd77c99",
+      "subject": "New package: fastDummies",
+      "message_count": 1,
+      "participants": [
+        "Jacob Kaplan"
+      ],
+      "started": "2017-04-21T09:34:36-04:00",
+      "last_reply": "2017-04-21T09:34:36-04:00",
+      "root_message_id": "msg-0587abd77c99"
+    },
+    {
+      "id": "thread-6d7855047f0b",
+      "subject": "Package glmnetUtils now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Hong Ooi"
+      ],
+      "started": "2017-04-26T10:14:17+00:00",
+      "last_reply": "2017-04-26T10:14:17+00:00",
+      "root_message_id": "msg-6d7855047f0b"
+    },
+    {
+      "id": "thread-3d0c371a132d",
+      "subject": "Package huxtable 0.2.1 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "David Hugh-Jones"
+      ],
+      "started": "2017-04-26T14:51:30+01:00",
+      "last_reply": "2017-04-26T14:51:30+01:00",
+      "root_message_id": "msg-3d0c371a132d"
+    },
+    {
+      "id": "thread-78dba227f055",
+      "subject": "apercu",
+      "message_count": 1,
+      "participants": [
+        "Aurélien Chateigner"
+      ],
+      "started": "2017-04-28T08:17:14+00:00",
+      "last_reply": "2017-04-28T08:17:14+00:00",
+      "root_message_id": "msg-78dba227f055"
+    },
+    {
+      "id": "thread-d8ba0e564ca4",
+      "subject": "Updated Package PSF and Publication",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2017-04-28T11:11:05+00:00",
+      "last_reply": "2017-04-28T11:11:05+00:00",
+      "root_message_id": "msg-d8ba0e564ca4"
+    }
+  ]
+}

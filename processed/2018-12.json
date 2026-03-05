@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-12",
+  "messages": [
+    {
+      "id": "msg-fd843d6a93d9",
+      "message_id": "<CAB8pepz4BS-vb5VqUaDN8fBE=3bOT+0bV9zc29aQWPHYNo6sVg@mail.gmail.com>",
+      "from_name": "Abs Spurdle",
+      "from_email_hash": "0eb16fd9e97bf0f4728957e3e93ffca3a4157dc7999c72558370c767bb65f7e9",
+      "date": "2018-12-03T14:59:28+13:00",
+      "subject": "[R-pkgs] Introducing empirical: Probability Distributions as Models of Data",
+      "subject_clean": "Introducing empirical: Probability Distributions as Models of Data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi all\n\nI would like to introduce my R package:\nempirical: Probability Distributions as Models of Data\n\nThe description is:\nComputes continuous (not step) empirical (and nonparametric) probability\ndensity, cumulative distribution and quantile functions. Supports\nunivariate, multivariate and conditional probability distributions, some\nkernel smoothing features and weighted data (possibly useful mixed with\nfuzzy clustering). Can compute multivariate and conditional probabilities.\nAlso, can compute conditional medians, quantiles and modes.\n\nNotes:\n(1) I'm planning to support categorical variables in the future.\n(2) There are some problems with univariate models (but not multivariate),\nespecially PDFs.\n(3) Contrary to what the name empirical suggests, currently multivariate\nmodels use kernel smoothing.\n(4) I'm interested in implementing a hybrid Kernel-Quantile method, which I\nsuspect may be more robust to outliers. If I succeed, then I may rewrite\nthe univariate implementation.\n\nThe URL is:\nhttps://cran.r-project.org/package=empirical\n\nI've written a vignette which describes the package in more detail.\nIt's URL is:\nhttps://cran.r-project.org/web/packages/empirical/vignettes/empirical.pdf\n\n\nkind regards\nAbs\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "hi all\n\nI would like to introduce my R package:\nempirical: Probability Distributions as Models of Data\n\nThe description is:\nComputes continuous (not step) empirical (and nonparametric) probability\nden",
+      "thread_id": "thread-fd843d6a93d9",
+      "thread_depth": 0,
+      "month": "2018-12"
+    },
+    {
+      "id": "msg-de7410696c9d",
+      "message_id": "<3600bded-9af7-061e-0b1b-14f206595419@uni-wuerzburg.de>",
+      "from_name": "Wolfgang Lenhard",
+      "from_email_hash": "018776cc5e46a8d2436b30dfa0fb550318bf2319956bd7be9b984a36b682ab4a",
+      "date": "2018-12-03T12:03:44+01:00",
+      "subject": "[R-pkgs] New package cNORM: Continuous norming",
+      "subject_clean": "New package cNORM: Continuous norming",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\nI would like to introduce a new package: cNORM. It aims at solving \nproblems with percentile estimation / norm score generation in \nbiometrics and psychometrics, f. e. BMI growth curves, IQ tests ... \nConventional methods for producing standard scores in psychometrics or \nbiometrics are often plagued with \"jumps\" or \"gaps\" (i.e., \ndiscontinuities) in norm tables and low confidence for assessing extreme \nscores. The continuous norming method introduced by A. Lenhard et al. \n(2016), <doi:10.1177/1073191116656437>, generates continuous test norm \nscores on the basis of the raw data from standardization samples, \nwithout requiring assumptions about the distribution of the raw data: \nNorm scores are directly established from raw data by modeling the \nlatter ones as a function of both percentile scores and an explanatory \nvariable (e.g., age). The method minimizes bias arising from sampling \nand measurement error, while handling marked deviations from normality, \naddressing bottom or ceiling effects and capturing almost all of the \nvariance in the original norm data sample.\n\nThe R package is available via \nhttps://cran.r-project.org/web/packages/cNORM/\nComprehensive online tutorial: https://www.psychometrica.de/cNorm_en.html\nIf you like to access the developmental version: \nhttps://github.com/WLenhard/cNORM\n\nAnd finally the original article and project updates via Researchgate:\n- https://www.researchgate.net/project/Continuous-Norming\n- \nhttps://www.researchgate.net/publication/303785307_A_Continuous_Solution_to_the_Norming_Problem\n\nBest regards,\n ??? Wolfgang Lenhard\n\n-- \nProf. Dr. Wolfgang Lenhard\nInstitute for Psychologie IV\nD-97070 W?rzburg, Germany\nURL:  https://go.uniwue.de/lenhard",
+      "body_snippet": "Hi everyone,\nI would like to introduce a new package: cNORM. It aims at solving \nproblems with percentile estimation / norm score generation in \nbiometrics and psychometrics, f. e. BMI growth curves, ",
+      "thread_id": "thread-de7410696c9d",
+      "thread_depth": 0,
+      "month": "2018-12"
+    },
+    {
+      "id": "msg-2e66dd4b8147",
+      "message_id": "<494687108.6752524.1545236241993@mail.yahoo.com>",
+      "from_name": "mohammed ibrahim",
+      "from_email_hash": "b1d0486be4ff69cbf8819b1f9002e2512cd499489afd167acc051b23bc06dc14",
+      "date": "2018-12-19T16:17:21Z",
+      "subject": "[R-pkgs] dbparser: 'DrugBank' Database XML Parser",
+      "subject_clean": "dbparser: 'DrugBank' Database XML Parser",
+      "in_reply_to": null,
+      "references": [
+        "<494687108.6752524.1545236241993.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hello,\nKindly?find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given database.\nCRAN:?<https://cran.r-project.org/web/packages/dbparser/index.html>\nVignettes:?<https://cran.r-project.org/web/packages/dbparser/vignettes/dbparser.html>\nGithub:?<https://github.com/Dainanahan/dbparser>\n\n\n\n\nIt will be great to know your feedback :). Thank you\n\nBest Regards,\nMohammed Ali\nMSc in Applied Data Science & Big Data\nmohammed.ali at edu.dsti.institute\n+20 01000481973\neg.linkedin.com/in/mohammedali85",
+      "body_snippet": "Hello,\nKindly?find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given ",
+      "thread_id": "thread-2e66dd4b8147",
+      "thread_depth": 0,
+      "month": "2018-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-de7410696c9d",
+      "subject": "New package cNORM: Continuous norming",
+      "message_count": 1,
+      "participants": [
+        "Wolfgang Lenhard"
+      ],
+      "started": "2018-12-03T12:03:44+01:00",
+      "last_reply": "2018-12-03T12:03:44+01:00",
+      "root_message_id": "msg-de7410696c9d"
+    },
+    {
+      "id": "thread-fd843d6a93d9",
+      "subject": "Introducing empirical: Probability Distributions as Models of Data",
+      "message_count": 1,
+      "participants": [
+        "Abs Spurdle"
+      ],
+      "started": "2018-12-03T14:59:28+13:00",
+      "last_reply": "2018-12-03T14:59:28+13:00",
+      "root_message_id": "msg-fd843d6a93d9"
+    },
+    {
+      "id": "thread-2e66dd4b8147",
+      "subject": "dbparser: 'DrugBank' Database XML Parser",
+      "message_count": 1,
+      "participants": [
+        "mohammed ibrahim"
+      ],
+      "started": "2018-12-19T16:17:21+00:00",
+      "last_reply": "2018-12-19T16:17:21+00:00",
+      "root_message_id": "msg-2e66dd4b8147"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-11",
+  "messages": [
+    {
+      "id": "msg-312bbeef272a",
+      "message_id": "<4EB10FC2.2010505@isped.u-bordeaux2.fr>",
+      "from_name": "Rondeau Virginie",
+      "from_email_hash": "735a459c8c4eb8398ef509bab3edfc89d21da54f104b2db84d438cf31b460496",
+      "date": "2011-11-02T10:39:14+01:00",
+      "subject": "[R-pkgs] new version of FRAILTYPACK: general frailty models",
+      "subject_clean": "new version of FRAILTYPACK: general frailty models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nWe are pleased to tell you that \"FRAILTYPACK\" has been updated.\n\n\"FRAILTYPACK\" stands now for general frailty models estimated with a \nsemi-parametrical penalized likelihood,\nbut also with a parametrical approach.\n\nIn case of comments/corrections/remarks/suggestions -- which are very \nwelcome --please contact the maintainer directly.\n\nKind regards,\nThe FRAILTYPACK team.",
+      "body_snippet": "Dear R users,\n\nWe are pleased to tell you that \"FRAILTYPACK\" has been updated.\n\n\"FRAILTYPACK\" stands now for general frailty models estimated with a \nsemi-parametrical penalized likelihood,\nbut also w",
+      "thread_id": "thread-312bbeef272a",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-bd74867cf42d",
+      "message_id": "<008001cc9d80$368e6c60$a3ab4520$@mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2011-11-07T14:05:27-05:00",
+      "subject": "[R-pkgs] new version 2.0-0 of the sem package",
+      "subject_clean": "new version 2.0-0 of the sem package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nJarrett Byrnes and I would like to announce version 2.0-0 of the sem package\nfor fitting observed- and latent-variable structural equation models. This\nis a general reworking of the original sem package (which is still available\non R-Forge as package sem1). \n\nSome highlights of sem 2.0-0 include:\n\no  More convenient and compact model specification, including the default\nautomatic generation of error variances for endogenous variables and more\ncompact specification of error covariances. In the near future, we\nanticipate releasing an update that permits equation-style specification of\nstructural equations.\n\no  The ability to update model specifications.\n\no  Soft-coded objective functions (\"fit\" functions in SEM jargon) and\noptimizers. Two objective functions are provided, for multinormal\nfull-information maximum likelihood and for generalized least squares; and\nthree optimizers are provided, based on the standard R nlm(), optim(), and\nnlminb() optimizers. The user can add objective functions and optimizers.\n\no  Analytic standard errors are provided by default for the FIML estimator\n(standard errors based on the numeric Hessian are now optional), and robust\nstandard errors and tests are optionally available.\n\no  The ability to fit a model to a data frame, as a preferred alternative to\ncomputing a covariance or moment matrix in an intermediate step. The\noriginal data are required to obtain robust standard errors and tests, and\nare optional otherwise.\n\no  Correctly computed \"modification indices\" (score tests for fixed\nparameters).\n\no  Enhanced output, including R^2s for endogenous variables, additional\ninformation criteria, and the computation of indirect effects.\n\no  Executable examples in the help pages for the package, along with (as\nbefore) non-executable examples in which model specifications and\ncorrelation/covariance/moment matrices appear in the input stream.\n\nThe new sem package is designed to be upwards compatible with the old one,\nso that scripts that worked previously should still work.\n\nAlthough we have tested the new sem package, this is a major update and it's\npossible that bugs will surface. Please let me know if you encounter\nproblems.\n\nBest,\n John\n\n--------------------------------\nJohn Fox\nSenator William McMaster\n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nJarrett Byrnes and I would like to announce version 2.0-0 of the sem package\nfor fitting observed- and latent-variable structural equation models. This\nis a general reworking of the ori",
+      "thread_id": "thread-bd74867cf42d",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-334d21cbc782",
+      "message_id": "<4EB9C43D.7040106@ecs.vuw.ac.nz>",
+      "from_name": "Ray Brownrigg",
+      "from_email_hash": "338125b88a55f3eb65f28e93e16b531fe2f374988fecfd530857f07c8e6d84c7",
+      "date": "2011-11-09T13:07:25+13:00",
+      "subject": "[R-pkgs] maps package updated databases",
+      "subject_clean": "maps package updated databases",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The latest version, maps_2.2-2 (appearing \"soon\" on CRAN), has been\nenhanced with the state.vbm and state.carto databases (thanks to Simon\nUrbanek), and the state.fips, county.fips (both thanks to Clint\nCummins), state.vbm.center and state.carto.center datasets.\n\nEnjoy,\nRay Brownrigg",
+      "body_snippet": "The latest version, maps_2.2-2 (appearing \"soon\" on CRAN), has been\nenhanced with the state.vbm and state.carto databases (thanks to Simon\nUrbanek), and the state.fips, county.fips (both thanks to Cli",
+      "thread_id": "thread-334d21cbc782",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-9126dfbdd271",
+      "message_id": "<20111110185352.58635dcc@amd64>",
+      "from_name": "Antoine",
+      "from_email_hash": "54cb78c512c95d4b4c7bb62e81f31fac8e50c5443165c5df6052684f958c241f",
+      "date": "2011-11-10T18:53:52+01:00",
+      "subject": "[R-pkgs] amap new version (multidimensional analysis)",
+      "subject_clean": "amap new version (multidimensional analysis)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThanks to a new contributor, Luigi Cerulo, amap provides 2 more metrics, \nand another agglomeration linkage for distance computation, and hierarchical\nclustering.\n\nThe new centroid linkage method implemented in the cluster3\nsoftware tool (http://bonsai.hgc.jp/~mdehoon/software/cluster/software.htm). \nIn this method the pseudoitem of a cluster is computed as the average of\nthe items coordinates, and clusters are aggregated with the same\ndistance metrics used between items. This approach reveals very\neffective in the context of gene functional expressions analysis.\n\nThis update makes amap even more convenient for gene expression analysis, \nbut not only; amap provides a lot of tools for robust statistics (rank \nbased metrics, robust principal component analysis) with very fast\nimplementations.\n\nAntoine Lucas.",
+      "body_snippet": "Dear R users,\n\nThanks to a new contributor, Luigi Cerulo, amap provides 2 more metrics, \nand another agglomeration linkage for distance computation, and hierarchical\nclustering.\n\nThe new centroid link",
+      "thread_id": "thread-9126dfbdd271",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-43304ed71b69",
+      "message_id": "<4EBFBB3C.9000109@unrealizedtime.nl>",
+      "from_name": "Jan van der Laan",
+      "from_email_hash": "9e72d92bea0e4f471041f56e1f0a4b048445766d7413e7a54eba6035f7a4e996",
+      "date": "2011-11-13T13:42:36+01:00",
+      "subject": "[R-pkgs] LaF 0.3: fast access to large ASCII files",
+      "subject_clean": "LaF 0.3: fast access to large ASCII files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The LaF package provides methods for fast access to large ASCII files. \nCurrently the following file formats are supported:\n\n* comma separated format (csv) and other separated formats and\n* fixed width format.\n\nIt is assumed that the files are too large to fit into memory, although \nthe package can also be used to efficiently access files that do fit \ninto memory.\n\nIn order to process files that are too large to fit into memory, methods \nare provided to access and process file blockwise. Furthermore, an \nopened file can be indexed as one would a data.frame. In this way \nsubsets. or specific columns can be read into memory. For example, \nassuming that an object laf has been created using one of the functions \nlaf_open_csv or laf_open_fwf, the third column from the file can be read \ninto memory using:\n\n > col <- laf[,3]\n\n\nThe LaF-manual vignette contains a description of all functionality \nprovided:\n\n   http://laf-r.googlecode.com/files/LaF-manual_0.3.pdf\n\nThe Laf-benchmark vignette compares the performance of LaF to the \nstandard R-routines read.table and read.fwf:\n\n   http://laf-r.googlecode.com/files/LaF-benchmark_0.3.pdf",
+      "body_snippet": "The LaF package provides methods for fast access to large ASCII files. \nCurrently the following file formats are supported:\n\n* comma separated format (csv) and other separated formats and\n* fixed widt",
+      "thread_id": "thread-43304ed71b69",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-14c01d713fe3",
+      "message_id": "<CABdHhvHf44Af1p-uoQAPPi3sK+xmV3CXMQdw6zYCgwUp8_5Vgw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-11-13T09:36:33-06:00",
+      "subject": "[R-pkgs] Roxygen2: version 2.2",
+      "subject_clean": "Roxygen2: version 2.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# Roxygen2\n\nThe premise of `roxygen2` is simple: describe your functions in\ncomments next to where their definitions and `roxygen2` will process\nyour source code and comments to produce R compatible Rd files.\nHere's a simple example from the `stringr` package:\n? ? #' The length of a string (in characters).? ? #'? ? #' @param\nstring input character vector? ? #' @return numeric vector giving\nnumber of characters in each element of the?? ? #' ? character vector.\n?Missing string have missing length.? ? #' @keywords character? ? #'\n@seealso \\code{\\link{nchar}} which this function wraps? ? #' @export\n #' @examples? ? #' str_length(letters)? ? #' str_length(c(\"i\",\n\"like\", \"programming\", NA))? ? str_length <- function(string) {\nstring <- check_string(string)\n? ? ? nc <- nchar(string, allowNA = TRUE)? ? ? is.na(nc) <-\nis.na(string)? ? ? nc? ? }\nWhen you `roxygenise` your package these comments will be\nautomatically transformed to the Rd file you need to pass `R CMD\ncheck`:\n? ? \\name{str_length}? ? \\alias{str_length}? ? \\title{The length of a\nstring (in characters).}? ? \\usage{str_length(string)}? ? \\arguments{\n? ? \\item{string}{input character vector}? ? }? ? \\description{\nThe length of a string (in characters).? ? }\n\\seealso{\\code{\\link{nchar}} which this function wraps}\n\\value{numeric vector giving number of characters in each element of\nthe? ? character vector. ?Missing string have missing length.}\n\\keyword{character}? ? \\examples{? ? ? str_length(letters)\nstr_length(c(\"i\", \"like\", \"programming\", NA))? ? }\nroxygen2 2.2\n------------\n\nNEW FEATURES\n\n* Package docType will automatically add package alias, if needed. (Fixes #4)\n\n* Data docType will automatically add `datasets` keyword, default usage, and\n  default format. (Fixes #5). Data docType automatically added to data\n  objects.\n\n* New `@encoding` tag for manually setting non-ASCII encodings when needed.\n  (Fixes #7)\n\n\nBUG FIXES\n\n* `write.description()` now tries much harder to respect\n  users' original DESCRIPTION field formatting instead of forcibly\n  re-wrapping certain fields at 60 characters.\n\n* `@details` and `@description` now work correctly\n\n* `@useDynLib` now works correctly:\n\n       @useDynLib packageName routine1 routine2\n\n   produces\n\n       useDynLib(packageName, routine1)\n       useDynLib(packageName, routine2)\n\n   in the NAMESPACE file, instead of separate (wrong) useDynLib statements as\n   before.\n\n* All namespace import directives now behave in the same way as the export\n  directives, producing multiple single directives instead one multiple\n  directive: `@importClassesFrom pkg a b` now produces\n  `importClassesFrom(pkg, a)` and `importClassesFrom(pkg, b)`\n\n* In example files included with `@example` you can now use infix operators\n  (e.g. %*%) or other things with %, because they will be preceded by a\n  backslash in the Rd file. This behaviour was already in place for examples\n  directly included with `@examples`.\n\n* Aliases are no longer quoted, and % is escaped with a backslash (Fixes #24).\n  Names also have % escaped (Fixes #50)\n\n* Replacement functions (e.g. `foo<-`) now get correct usage statements:\n  `foo() <- value` instead of `foo()<-value`. (Fixes #38)\n\n* Functions with no arguments now correctly get usage statements (Fixes #35)\n\n* Indentation in examples now preserved (Fixes #27)\n\n* roxygen2 will replace characters that are not valid in filenames with a\n  character substitute, e.g. `[]` becomes `sub`, `<-` becomes `set` (Fixes #6)\n\n* Usage strings use non-breaking spaces to prevent string default values\n  containing whitespace to be split across multiple lines. This may cause\n  problems in the unlikely event that you have default value containing a\n  non-breaking space (`\"\\uA0\"')  (Fixes #21)\n\n* Functions with quoted names now get correct usage statements (Fixes #41)\n\n* Objects that no longer exist are not documented (Fixes #42)\n\n* Errors now display file name and line number of roxygen block to help you\n  find the problem. Thanks to code contributions from Renaud Gaujoux. (Fixes\n  #13)\n\n* Documentation with no untagged text but with `@title`, `@description` and\n  `@details` tags now produces correct output.\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# Roxygen2\n\nThe premise of `roxygen2` is simple: describe your functions in\ncomments next to where their definitions and `roxygen2` will process\nyour source code and comments to produce R compatible R",
+      "thread_id": "thread-14c01d713fe3",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-65bbce1ef13f",
+      "message_id": "<CAMTWbJjJrCjqkN4bhaG2c=x4W=OfAcQWhq1DHKif=Fw6UvXyQA@mail.gmail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2011-11-15T22:50:32+01:00",
+      "subject": "[R-pkgs] mvProbit -- Multivariate Probit Models",
+      "subject_clean": "mvProbit -- Multivariate Probit Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce the initial release of the \"mvProbit\" package\non CRAN (version 0.1-0). This package provides tools for econometric\nanalysis with Multivariate Probit Models. While these models can be\nestimated also by several other statistical software packages (e.g.\nLIMDEP/NLOGIT, STATA), \"mvProbit\" is much more flexible and powerful\nin calculating marginal effects. To my best knowledge, \"mvProbit\" is\nthe only statistical software package that can calculate various\nmarginal effects including their standard errors at arbitrary\nuser-defined values of the explanatory (and dependent) variables (e.g.\nat all observations or at the sample mean): marginal effects on the\nunconditional expectations of the dependent variables and marginal\neffects on the conditional expectations of each dependent variable at\nall possible combinations of the other dependent variables. Feedback\nis very welcome!\n\n/Arne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "Dear R users,\n\nI am happy to announce the initial release of the \"mvProbit\" package\non CRAN (version 0.1-0). This package provides tools for econometric\nanalysis with Multivariate Probit Models. While",
+      "thread_id": "thread-65bbce1ef13f",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-c58140de0f45",
+      "message_id": "<CAMEX5synNrO0JcTyHgdx1F-PqDrBNmCzFRs2sif-AWKy4RaWgA@mail.gmail.com>",
+      "from_name": "Charlie Sharpsteen",
+      "from_email_hash": "61a5157bf3b50056b8fad9b559d93b86915f2e7b847327766122b4f2cfc76e33",
+      "date": "2011-11-17T16:23:48-08:00",
+      "subject": "[R-pkgs] tikzDevice 0.6.2",
+      "subject_clean": "tikzDevice 0.6.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.6.2 of the tikzDevice was recently posted to CRAN and should\nbe making its way to a local mirror. The tikzDevice package provides a\ngraphics device that translates R graphics into TeX code suitable for\ninclusion in LaTeX documents. Version 0.6.2 is primarily a maintenance\nrelease that supports some new functionality in R 2.14.0.\n\nThe latest version adds new functions that allow users to insert\ncustom annotations into grid graphics. Previously versions of the\ntikzDevice only supported annotation of base graphics.\n\nThe full changelog is appended to this email. For a detailed diff of\nchanges since 0.6.0, see:\n\n  https://github.com/Sharpie/RTikZDevice/compare/0.6.0...0.6.2\n\nBug reports are welcomed at the GitHub issue tracker:\n\n  https://github.com/Sharpie/RTikZDevice/issues\n\nThe tikzDevice also has a mailing list provided by R-Forge:\n\n  tikzdevice-bugs @at@ lists.r-forge.r-project.org\n\nWhich is also accessible via Google Groups:\n\n  https://groups.google.com/forum/#!forum/tikzdevice\n\nA rough roadmap for future package development can be found at:\n\n  https://github.com/Sharpie/RTikZDevice/wiki/Roadmap\n\nCommentary and discussion is welcomed in the mailing list, patches\ncontaining bugfixes or features are welcomed on the issue tracker.\n\nHappy TeXing!\n\n-Charlie\n\n\n---\n\n### Version: 0.6.2\nReleased: 11-13-2011\n\n---\n\n#### New Features\n\n- The annotation system has been improved. A new function `tikzNode` has been\n  added that makes it easy to insert TikZ nodes with custom options and\n  content. `tikzCoord` is now a wrapper for `tikzNode` that simplifies the\n  function call required to get a plain coordinate.\n\n- Annotation of Grid graphics is now supported. New functions\n  `tikzAnnotateGrob`, `tikzNodeGrob` and `tikzCoordGrob` allow the creation of\n  Grid grobs that execute annotiation commands when drawn to a `tikz` device.\n  Wrapper functions `grid.tikzAnnotate`, `grid.tikzNode` and `grid.tikzCoord`\n  are also provided. The necessary transformations between Grid coordinates,\n  which are viewport-centric, to absolute device coordinates are handled by a\n  new function `gridToDevice`.\n\n- Support has been added for the `dev.capabilities` function in R 2.14.0.\n\n#### Bug Fixes\n\n- Fixed a bug where the outline of the background bounding box was being drawn\n  with the forground color instead of the background color. This was\n  unnoticible except when a non-white background was used. Thanks to Matthieu\n  Stigler for reporting.\n\n#### Behind the Scenes\n\n- The tikzDevice is now checked with \"visual regression testing\" which compares\n  the results of graphics tests against a set of standard images using a visual\n  diff. If a change occurs that significantly affects font metrics or graphics\n  primitives the effects will show up in the diff. Currently, ImageMagick's\n  `compare` utility is used to calculate differences. This process was inspired\n  by the work of Paul Murrell and Stephen Gardiner on the graphicsQC package.\n  Future versions of the tikzDevice may use graphicsQC to perform this task.\n\n- The tikzDevice Vignette used to employ a rather ugly hack that re-wrote the\n  internals of the Sweave driver during processing in order to gain more\n  control over syntax highlighting. This hack has been replaced by TeX macros\n  that achieve the same result without messing with R.\n\n\n---\n\n### Version: 0.6.1\nReleased: 4-14-2011\n\n---\n\n#### Bug Fixes\n\n- Fixed a bug where `tikz` was not applying background color to the plot\n  canvas.\n\n- Fixed a Vignette bug caused by an incorrect merge that was breaking the CRAN\n  build.\n\n---",
+      "body_snippet": "Version 0.6.2 of the tikzDevice was recently posted to CRAN and should\nbe making its way to a local mirror. The tikzDevice package provides a\ngraphics device that translates R graphics into TeX code s",
+      "thread_id": "thread-c58140de0f45",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-4c58333709f0",
+      "message_id": "<F18C7FCA-5A1C-4D29-97FD-F2B4511BBD2E@depauw.edu>",
+      "from_name": "Bryan Hanson",
+      "from_email_hash": "f192f25954862d3d3fb5bdfe47d3ac8c1018692930d202d1c6a34a72bce68b75",
+      "date": "2011-11-19T14:37:24-05:00",
+      "subject": "[R-pkgs] Package HiveR 0.1-4 Released",
+      "subject_clean": "Package HiveR 0.1-4 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am pleased to announce the first release of HiveR, a package to\ndraw 2D and 3D Hive Plots.  It's currently on CRAN and on it's way to\na mirror near you.\n\nHive plots are a unique method of displaying networks of many types\nin which node properties are mapped to axes using meaningful\nproperties rather than being arbitrarily positioned.  The hive plot\nconcept was invented by Martin Krzywinski at the Genome Science\nCenter (www.hiveplot.com) and there is a paper in press on the topic:\n\nKrzywinski M, Birol I, Jones S, Marra M (2011). Hive Plots - Rational\nApproach to Visualizing Networks. Briefings in Bioinformatics (in press,\nshould be available in about 3 weeks).\n\nA vignette is available with background and examples.\n\nHiveR has most of the basic functionality in place but I expect  a number\nof small additions will be made in the next month or so, as well as some\nlarge improvements in speed for 3D plots.\n\nPlease do let me know if you have questions, feature requests or find problems.\n\nThanks, Bryan\n****************\nProf. Bryan Hanson\nDept of Chemistry & Biochemistry\nDePauw University\nGreencastle IN 46135 USA\nacademic.depauw.edu/~hanson/deadpezsociety.html\ngithub.com/bryanhanson\nacademic.depauw.edu/~hanson/UMP/Index.html",
+      "body_snippet": "I am pleased to announce the first release of HiveR, a package to\ndraw 2D and 3D Hive Plots.  It's currently on CRAN and on it's way to\na mirror near you.\n\nHive plots are a unique method of displaying",
+      "thread_id": "thread-4c58333709f0",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-91d0fa31e92c",
+      "message_id": "<006201ccaac6$dc04a440$940decc0$@mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2011-11-24T11:33:54-05:00",
+      "subject": "[R-pkgs] sem package (version 2.1-1)",
+      "subject_clean": "sem package (version 2.1-1)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nVersion 2.1-1 of the sem package, for structural equation modeling, is now\non CRAN. \n\nUnlike version 2.0-0, which was a major overhaul of the package, version\n2.1-1 just sprinkles some syntactic sugar on it, introducing the\nspecifyEquations() and cfa() functions; specifyEquations() supports model\nspecification in equation (rather than path) format, and cfa() facilitates\ncompact specification of simple confirmatory factor analysis models. \n\nFor example, from ?sem, the Duncan, Haller, and Portes peer-influences model\ncan now be specified as\n\nmodel.dhp.1 <- specifyEquations(covs=\"RGenAsp, FGenAsp\")\nRGenAsp = gam11*RParAsp + gam12*RIQ + gam13*RSES + gam14*FSES +\nbeta12*FGenAsp\nFGenAsp = gam23*RSES + gam24*FSES + gam25*FIQ + gam26*FParAsp +\nbeta21*RGenAsp\nROccAsp = 1*RGenAsp\nREdAsp = lam21(1)*RGenAsp  # to illustrate setting start values, not\nnecessary here\nFOccAsp = 1*FGenAsp\nFEdAsp = lam42(1)*FGenAsp\n\nand the Wheaton alientation model as\n\nmodel.wh <- specifyEquations()\nAnomia67 = 1*Alienation67\nPowerless67 = lamby*Alienation67\nAnomia71 = 1*Alienation71\nPowerless71 = lamby*Alienation71\nEducation = 1*SES\nSEI = lambx*SES\nAlienation67 = gam1*SES\nAlienation71 = gam2*SES + beta*Alienation67\nV(Anomia67) = the1\nV(Anomia71) = the1\nV(Powerless67) = the2\nV(Powerless71) = the2\nV(SES) = phi\nC(Anomia67, Anomia71) = the5\nC(Powerless67, Powerless71) = the5\n\nSimilarly, the following are equivalent specifications of a CFA model for\nthe Thurstore mental-tests data:\n\n(1) in CFA format:\n\nmod.cfa.thur.c <- cfa()\nFA: Sentences, Vocabulary, Sent.Completion\nFB: First.Letters, 4.Letter.Words, Suffixes\nFC: Letter.Series, Pedigrees, Letter.Group\n\ncfa.thur.c <- sem(mod.cfa.thur.c, R.thur, 213)\nsummary(cfa.thur.c)\n\n(2) in equation format:\n\nmod.cfa.thur.e <- specifyEquations(covs=\"F1, F2, F3\")\nSentences = lam11*F1\nVocabulary = lam21*F1\nSent.Completion = lam31*F1\nFirst.Letters = lam42*F2\n4.Letter.Words = lam52*F2\nSuffixes = lam62*F2\nLetter.Series = lam73*F3\nPedigrees = lam83*F3\nLetter.Group = lam93*F3\nV(F1) = 1\nV(F2) = 1\nV(F3) = 1\n\ncfa.thur.e <- sem(mod.cfa.thur.e, R.thur, 213)\nsummary(cfa.thur.e)\n\n(3) in path format:\n\nmod.cfa.thur.p <- specifyModel(covs=\"F1, F2, F3\")\nF1 -> Sentences,                      lam11\nF1 -> Vocabulary,                     lam21\nF1 -> Sent.Completion,                lam31\nF2 -> First.Letters,                  lam41\nF2 -> 4.Letter.Words,                 lam52\nF2 -> Suffixes,                       lam62\nF3 -> Letter.Series,                  lam73\nF3 -> Pedigrees,                      lam83\nF3 -> Letter.Group,                   lam93\nF1 <-> F1,                            NA,     1\nF2 <-> F2,                            NA,     1\nF3 <-> F3,                            NA,     1\n\n\nAs usual, I'd be grateful for comments, suggestions, and bug reports.\n\nBest,\n John\n\n--------------------------------\nJohn Fox\nSenator William McMaster\n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nVersion 2.1-1 of the sem package, for structural equation modeling, is now\non CRAN. \n\nUnlike version 2.0-0, which was a major overhaul of the package, version\n2.1-1 just sprinkles some ",
+      "thread_id": "thread-91d0fa31e92c",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-1ee517aa3872",
+      "message_id": "<CAGBu4COmrQNzCjCAYHFALj1SOWNV2Bj8ESUKTEk3HbRF82ApRQ@mail.gmail.com>",
+      "from_name": "Jakson Alves de Aquino",
+      "from_email_hash": "4d6acdc04f0bcb431941b6ea3bf51f44e700878475ed16501c961ecf41518951",
+      "date": "2011-11-25T10:32:22-03:00",
+      "subject": "[R-pkgs] New package 'colorout' to colorize R output on terminal emulators",
+      "subject_clean": "New package 'colorout' to colorize R output on terminal emulators",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI'm pleased to announce the availability of 'colorout' on CRAN.\nThe package colorizes R output when it is running on a terminal\nemulator.\n\nScreenshot: http://www.lepem.ufc.br/jaa/R_color_output.png\n\nYou can use either 16 colors (8 colors * 2 degrees of intensity)\nor 256 colors to highlight normal text, numbers, strings,\nwarnings, errors and the keywords TRUE, FALSE, NA, NaN and Inf.\n\nThe package is not available for Windows, and there is no support\nfor Graphical User Interfaces, such as RStudio, RKward, JGR, Rcmdr\nand other interfaces which have their own engine to display R\noutput. The colorization of output only works if R is compiled\nfor Unix systems and it is running interactively in a terminal\nemulator (like when using RGedit or Vim-R-plugin).\n\nThe terminal must support Select Graphic Rendition (SGR, also\nknown as ANSI escape codes or sequences), otherwise you may see\ngarbage like this:\n\n    > rnorm(5)\n    [32m[ [33m1 [32m] [0m [32m  [33m0.07574585 [32m [0m [32m\n    [33m0.88167822 [32m [0m [32m  [33m0.60788656 [32m [0m [32m\n    [33m1.13590951 [32m [0m [32m  [33m1.07758879 [32m [0m [32m [0m\n\nNotes for Emacs/ESS users:\n  1. Emacs terminal does not support 256 colors.\n  2. When the colorizing of R output is enabled, the ESS\n     autocompletion of R object names and function arguments\n     stops working on the R buffer.\n\nFunctions available in the package:\n\nColorOut:           Colorize R output in terminal emulator\nnoColorOut:         Stop colorizing R output\nsetOutputColors:    Set the colors to be used on R output\nsetOutputColors256: Set the colors to be used on R output\nshow256Colors:      Create and show a table with 256 colors\n\nAny feedback will be appreciated.\n\nSincerely,\n\n-- \nJakson Alves de Aquino\nFederal University of Cear?\nSocial Sciences Department\nwww.lepem.ufc.br/aquino.php\njalvesaq at gmail.com",
+      "body_snippet": "Dear R Community,\n\nI'm pleased to announce the availability of 'colorout' on CRAN.\nThe package colorizes R output when it is running on a terminal\nemulator.\n\nScreenshot: http://www.lepem.ufc.br/jaa/R_",
+      "thread_id": "thread-1ee517aa3872",
+      "thread_depth": 0,
+      "month": "2011-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-312bbeef272a",
+      "subject": "new version of FRAILTYPACK: general frailty models",
+      "message_count": 1,
+      "participants": [
+        "Rondeau Virginie"
+      ],
+      "started": "2011-11-02T10:39:14+01:00",
+      "last_reply": "2011-11-02T10:39:14+01:00",
+      "root_message_id": "msg-312bbeef272a"
+    },
+    {
+      "id": "thread-bd74867cf42d",
+      "subject": "new version 2.0-0 of the sem package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2011-11-07T14:05:27-05:00",
+      "last_reply": "2011-11-07T14:05:27-05:00",
+      "root_message_id": "msg-bd74867cf42d"
+    },
+    {
+      "id": "thread-334d21cbc782",
+      "subject": "maps package updated databases",
+      "message_count": 1,
+      "participants": [
+        "Ray Brownrigg"
+      ],
+      "started": "2011-11-09T13:07:25+13:00",
+      "last_reply": "2011-11-09T13:07:25+13:00",
+      "root_message_id": "msg-334d21cbc782"
+    },
+    {
+      "id": "thread-9126dfbdd271",
+      "subject": "amap new version (multidimensional analysis)",
+      "message_count": 1,
+      "participants": [
+        "Antoine"
+      ],
+      "started": "2011-11-10T18:53:52+01:00",
+      "last_reply": "2011-11-10T18:53:52+01:00",
+      "root_message_id": "msg-9126dfbdd271"
+    },
+    {
+      "id": "thread-14c01d713fe3",
+      "subject": "Roxygen2: version 2.2",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-11-13T09:36:33-06:00",
+      "last_reply": "2011-11-13T09:36:33-06:00",
+      "root_message_id": "msg-14c01d713fe3"
+    },
+    {
+      "id": "thread-43304ed71b69",
+      "subject": "LaF 0.3: fast access to large ASCII files",
+      "message_count": 1,
+      "participants": [
+        "Jan van der Laan"
+      ],
+      "started": "2011-11-13T13:42:36+01:00",
+      "last_reply": "2011-11-13T13:42:36+01:00",
+      "root_message_id": "msg-43304ed71b69"
+    },
+    {
+      "id": "thread-65bbce1ef13f",
+      "subject": "mvProbit -- Multivariate Probit Models",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2011-11-15T22:50:32+01:00",
+      "last_reply": "2011-11-15T22:50:32+01:00",
+      "root_message_id": "msg-65bbce1ef13f"
+    },
+    {
+      "id": "thread-c58140de0f45",
+      "subject": "tikzDevice 0.6.2",
+      "message_count": 1,
+      "participants": [
+        "Charlie Sharpsteen"
+      ],
+      "started": "2011-11-17T16:23:48-08:00",
+      "last_reply": "2011-11-17T16:23:48-08:00",
+      "root_message_id": "msg-c58140de0f45"
+    },
+    {
+      "id": "thread-4c58333709f0",
+      "subject": "Package HiveR 0.1-4 Released",
+      "message_count": 1,
+      "participants": [
+        "Bryan Hanson"
+      ],
+      "started": "2011-11-19T14:37:24-05:00",
+      "last_reply": "2011-11-19T14:37:24-05:00",
+      "root_message_id": "msg-4c58333709f0"
+    },
+    {
+      "id": "thread-91d0fa31e92c",
+      "subject": "sem package (version 2.1-1)",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2011-11-24T11:33:54-05:00",
+      "last_reply": "2011-11-24T11:33:54-05:00",
+      "root_message_id": "msg-91d0fa31e92c"
+    },
+    {
+      "id": "thread-1ee517aa3872",
+      "subject": "New package 'colorout' to colorize R output on terminal emulators",
+      "message_count": 1,
+      "participants": [
+        "Jakson Alves de Aquino"
+      ],
+      "started": "2011-11-25T10:32:22-03:00",
+      "last_reply": "2011-11-25T10:32:22-03:00",
+      "root_message_id": "msg-1ee517aa3872"
+    }
+  ]
+}

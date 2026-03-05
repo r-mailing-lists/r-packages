@@ -1,0 +1,607 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2008-02",
+  "messages": [
+    {
+      "id": "msg-65f5ecc5bfb5",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBBE99432@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2008-02-04T10:32:59-07:00",
+      "subject": "[R-pkgs] Package blockrand version 1.1 on CRAN",
+      "subject_clean": "Package blockrand version 1.1 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce an updated version of the blockrand package has been\nuploaded to CRAN.\n\nThe blockrand package is used for creating randomizations for clinical\ntrials or other studies where random assignments are made one at a time.\nIt implements the ideas of randomizing within blocks so that the numbers\nof subjects in each group remain fairly balanced (but allows for\nunbalanced blocks to make anticipation of future allocations more\ndifficult). \n\nIt also includes a function to print randomization cards (creates a pdf\nfile) that can be put into envelopes for a study coordinator to use to\nassign subjects to treatments.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n(801) 408-8111",
+      "body_snippet": "This is to announce an updated version of the blockrand package has been\nuploaded to CRAN.\n\nThe blockrand package is used for creating randomizations for clinical\ntrials or other studies where random ",
+      "thread_id": "thread-65f5ecc5bfb5",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-65f5ecc5bfb5",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBBE99432@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2008-02-04T10:32:59-07:00",
+      "subject": "[R-pkgs] Package blockrand version 1.1 on CRAN",
+      "subject_clean": "Package blockrand version 1.1 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce an updated version of the blockrand package has been\nuploaded to CRAN.\n\nThe blockrand package is used for creating randomizations for clinical\ntrials or other studies where random assignments are made one at a time.\nIt implements the ideas of randomizing within blocks so that the numbers\nof subjects in each group remain fairly balanced (but allows for\nunbalanced blocks to make anticipation of future allocations more\ndifficult). \n\nIt also includes a function to print randomization cards (creates a pdf\nfile) that can be put into envelopes for a study coordinator to use to\nassign subjects to treatments.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n(801) 408-8111",
+      "body_snippet": "This is to announce an updated version of the blockrand package has been\nuploaded to CRAN.\n\nThe blockrand package is used for creating randomizations for clinical\ntrials or other studies where random ",
+      "thread_id": "thread-65f5ecc5bfb5",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-58eb766bc9a5",
+      "message_id": "<38c08c270802111323t753c5804j99381a7daa28ddcd@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
+      "date": "2008-02-11T16:23:40-05:00",
+      "subject": "[R-pkgs] Release 3.2.0 of randomSurvivalForest is now availablle",
+      "subject_clean": "Release 3.2.0 of randomSurvivalForest is now availablle",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nRelease 3.2.0 of the CRAN package randomSurvivalForest is now available.\n\n----------------------------------------------------------------------------------------------\n\nRelease 3.2.0 represents a significant upgrade in the functionality of\nthe product.  Key changes are as follows:\n\no A second method of perturbing the data set in order to calculate\nvariable importance (VIMP) has been implemented.  In addition to\npermuting the values for a single variable, a random split approach\nhas been taken in which a data point is randomly assigned to the left\nor right daughter node when a split occurs on the specified variable.\n\no The joint VIMP among multiple variables of a (potentially proper)\nsubset of the GROW data can now be calculated using the new function\ninteraction.rsf().  This represents a third mode of operation for the\napplication, and follows rsf.default (GROW) and predict.rsf (PREDICT).\nSee the documentation for details.\n\no An additional option in GROW mode can now be specified.  The option\n'varUsed' allows users to quantify which variables have been split\nupon within a single tree or over the entire forest.  See the\ndocumentation for more details.\n\no The ability to multiply impute data has been implemented.  This\ninvolves imputing data while growing a forest and using the results to\ngrow a new forest in order to better impute the data.\n\no In GROW mode, the application now outputs both the in-bag and OOB\nsummary imputed values.\n\no An additional split rule 'randomsplit' has been implemented.\nSee the documentation for more details.\n\no The split rule 'logrankscore' is now calculated correctly.\n\no The split rule 'logrankapprox' has been removed and replaced by\nthe new split rule 'logrankrandom'.  See the documentation for more details.\n\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Dear useRs:\n\nRelease 3.2.0 of the CRAN package randomSurvivalForest is now available.\n\n----------------------------------------------------------------------------------------------\n\nRelease 3.2.0 rep",
+      "thread_id": "thread-58eb766bc9a5",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-58eb766bc9a5",
+      "message_id": "<38c08c270802111323t753c5804j99381a7daa28ddcd@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
+      "date": "2008-02-11T16:23:40-05:00",
+      "subject": "[R-pkgs] Release 3.2.0 of randomSurvivalForest is now availablle",
+      "subject_clean": "Release 3.2.0 of randomSurvivalForest is now availablle",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nRelease 3.2.0 of the CRAN package randomSurvivalForest is now available.\n\n----------------------------------------------------------------------------------------------\n\nRelease 3.2.0 represents a significant upgrade in the functionality of\nthe product.  Key changes are as follows:\n\no A second method of perturbing the data set in order to calculate\nvariable importance (VIMP) has been implemented.  In addition to\npermuting the values for a single variable, a random split approach\nhas been taken in which a data point is randomly assigned to the left\nor right daughter node when a split occurs on the specified variable.\n\no The joint VIMP among multiple variables of a (potentially proper)\nsubset of the GROW data can now be calculated using the new function\ninteraction.rsf().  This represents a third mode of operation for the\napplication, and follows rsf.default (GROW) and predict.rsf (PREDICT).\nSee the documentation for details.\n\no An additional option in GROW mode can now be specified.  The option\n'varUsed' allows users to quantify which variables have been split\nupon within a single tree or over the entire forest.  See the\ndocumentation for more details.\n\no The ability to multiply impute data has been implemented.  This\ninvolves imputing data while growing a forest and using the results to\ngrow a new forest in order to better impute the data.\n\no In GROW mode, the application now outputs both the in-bag and OOB\nsummary imputed values.\n\no An additional split rule 'randomsplit' has been implemented.\nSee the documentation for more details.\n\no The split rule 'logrankscore' is now calculated correctly.\n\no The split rule 'logrankapprox' has been removed and replaced by\nthe new split rule 'logrankrandom'.  See the documentation for more details.\n\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Dear useRs:\n\nRelease 3.2.0 of the CRAN package randomSurvivalForest is now available.\n\n----------------------------------------------------------------------------------------------\n\nRelease 3.2.0 rep",
+      "thread_id": "thread-58eb766bc9a5",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-69d1f690f429",
+      "message_id": "<47B2A9FC.90905@pdf.com>",
+      "from_name": "Spencer Graves",
+      "from_email_hash": "0d1725402b5f223aa45a1714f600b741ea6c2ccb2d67d2b94ddab1ed1e80aefd",
+      "date": "2008-02-13T00:27:40-08:00",
+      "subject": "[R-pkgs] FinTS_0.2-7",
+      "subject_clean": "FinTS_0.2-7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, All:\n\n\t  FinTS version 0.2-7 is now available on CRAN.  This version adds two \nnew functions:\n\n\t  * ArchTest to compute the Engle (1982) Lagrange multiplier test for \nconditional heteroscedasticity, discussed on pp. 101-102 of Tsay, with \nexamples on those pages worked in the R script in \n\"~R\\library\\FinTS\\scripts\\ch03.R\", where \"~R\" is your local R \ninstallation directory.  The code for this was kindly provided by \nBernhard Pfaff.\n\n\t  * Acf and plot.Acf to plot the autocorrelation function without the \nnoninformative unit spike at lag 0, facilitating the production of many \nACF plots in Tsay (2005) Analysis of Financial\nTime Series, 2nd ed. (Wiley) that follow this secondary standard.\n\n\t Spencer Graves",
+      "body_snippet": "Hi, All:\n\n\t  FinTS version 0.2-7 is now available on CRAN.  This version adds two \nnew functions:\n\n\t  * ArchTest to compute the Engle (1982) Lagrange multiplier test for \nconditional heteroscedasticit",
+      "thread_id": "thread-69d1f690f429",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-69d1f690f429",
+      "message_id": "<47B2A9FC.90905@pdf.com>",
+      "from_name": "Spencer Graves",
+      "from_email_hash": "0d1725402b5f223aa45a1714f600b741ea6c2ccb2d67d2b94ddab1ed1e80aefd",
+      "date": "2008-02-13T00:27:40-08:00",
+      "subject": "[R-pkgs] FinTS_0.2-7",
+      "subject_clean": "FinTS_0.2-7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, All:\n\n\t  FinTS version 0.2-7 is now available on CRAN.  This version adds two \nnew functions:\n\n\t  * ArchTest to compute the Engle (1982) Lagrange multiplier test for \nconditional heteroscedasticity, discussed on pp. 101-102 of Tsay, with \nexamples on those pages worked in the R script in \n\"~R\\library\\FinTS\\scripts\\ch03.R\", where \"~R\" is your local R \ninstallation directory.  The code for this was kindly provided by \nBernhard Pfaff.\n\n\t  * Acf and plot.Acf to plot the autocorrelation function without the \nnoninformative unit spike at lag 0, facilitating the production of many \nACF plots in Tsay (2005) Analysis of Financial\nTime Series, 2nd ed. (Wiley) that follow this secondary standard.\n\n\t Spencer Graves",
+      "body_snippet": "Hi, All:\n\n\t  FinTS version 0.2-7 is now available on CRAN.  This version adds two \nnew functions:\n\n\t  * ArchTest to compute the Engle (1982) Lagrange multiplier test for \nconditional heteroscedasticit",
+      "thread_id": "thread-69d1f690f429",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-19022e4ff17a",
+      "message_id": "<00c801c8739c$26581ba0$0e40210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
+      "date": "2008-02-20T09:39:47+01:00",
+      "subject": "[R-pkgs] New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "subject_clean": "New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new package JM (JM_0.1-0 \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data.\n\nThe package has a single model-fitting function called jointModel(), \nwhich accepts as main arguments a linear mixed effects object fit \nreturned by function lme() of package nlme, and a survival object fit \nreturned by either function coxph() or function survreg() of package \nsurvival. In addition, the method argument of jointModel() specifies \nthe type of the survival submodel to be fitted and the type of the \nnumerical integration technique; available options are:\n\n    * \"ph-GH\": the time-dependent version of a proportional hazards \nmodel with unspecified baseline hazard function. This option \ncorresponds to the joint model proposed by Wulfsohn and Tsiatis, \nBiometrics, 1997.\n\n    * \"weibull-GH\": the Weibull model under the accelerated failure \ntime formulation.\n\n    * \"ch-GH\" and \"ch-Laplace\": an additive log cumulative hazard \nmodel, in which the log cumulative baseline hazard is approximated \nusing B-splines.\n\nFor \"ph-GH\", \"weibull-GH\" and \"ch-GH\" the Gauss-Hermite integration \nrule is used to approximate the required integrals, whereas for \n\"ch-Laplace\" a fully exponential Laplace approximation method is \napplied. The last option is more suitable for high-dimensional random \neffects vectors, when e.g., modelling nonlinear subject-specific \ntrajectories with splines or high-order polynomials.\n\nSample analyses can be found at:\nhttp://student.kuleuven.be/~m0390867/R%20packages%20&%20Computing/R%20Packages/pbc.R, \nand\nhttp://student.kuleuven.be/~m0390867/R%20packages%20&%20Computing/R%20Packages/aids.R\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new package JM (JM_0.1-0 \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data.\n\nThe package has a single model-f",
+      "thread_id": "thread-19022e4ff17a",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-19022e4ff17a",
+      "message_id": "<00c801c8739c$26581ba0$0e40210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
+      "date": "2008-02-20T09:39:47+01:00",
+      "subject": "[R-pkgs] New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "subject_clean": "New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new package JM (JM_0.1-0 \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data.\n\nThe package has a single model-fitting function called jointModel(), \nwhich accepts as main arguments a linear mixed effects object fit \nreturned by function lme() of package nlme, and a survival object fit \nreturned by either function coxph() or function survreg() of package \nsurvival. In addition, the method argument of jointModel() specifies \nthe type of the survival submodel to be fitted and the type of the \nnumerical integration technique; available options are:\n\n    * \"ph-GH\": the time-dependent version of a proportional hazards \nmodel with unspecified baseline hazard function. This option \ncorresponds to the joint model proposed by Wulfsohn and Tsiatis, \nBiometrics, 1997.\n\n    * \"weibull-GH\": the Weibull model under the accelerated failure \ntime formulation.\n\n    * \"ch-GH\" and \"ch-Laplace\": an additive log cumulative hazard \nmodel, in which the log cumulative baseline hazard is approximated \nusing B-splines.\n\nFor \"ph-GH\", \"weibull-GH\" and \"ch-GH\" the Gauss-Hermite integration \nrule is used to approximate the required integrals, whereas for \n\"ch-Laplace\" a fully exponential Laplace approximation method is \napplied. The last option is more suitable for high-dimensional random \neffects vectors, when e.g., modelling nonlinear subject-specific \ntrajectories with splines or high-order polynomials.\n\nSample analyses can be found at:\nhttp://student.kuleuven.be/~m0390867/R%20packages%20&%20Computing/R%20Packages/pbc.R, \nand\nhttp://student.kuleuven.be/~m0390867/R%20packages%20&%20Computing/R%20Packages/aids.R\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new package JM (JM_0.1-0 \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data.\n\nThe package has a single model-f",
+      "thread_id": "thread-19022e4ff17a",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-1aa30405f9a1",
+      "message_id": "<20080220201110.GC8077@localdomain>",
+      "from_name": "Gabor Csardi",
+      "from_email_hash": "ef3fbd846d44752887aef63d2684b8733c31936c1b61ce693ec52e1334cdae73",
+      "date": "2008-02-20T21:11:10+01:00",
+      "subject": "[R-pkgs] igraph package, version 0.5",
+      "subject_clean": "igraph package, version 0.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "igraph is a package for graphs and networks. It has a C core and \nuses a simple and fast graph representation allowing millions \nof vertices and edges.\n\nNEW FEATURES:\n\n- We use the ARPACK library for graph related eigenvalue problems, \n  like Page Rank calculation, Kleinberg's hub and authority scores,\n  eigenvector centrality, etc. There is also a generic interface \n  if someone wants to use ARPACK for a different (not necessarily \n  graph-related) problem.\n\n- We support the BLISS graph isomorphism algorithm, and the \n  implementation of the VF2 algorithm can calculate subgraph isomorphisms\n  now.\n\n- We include a collection of \"famous\" graphs, these can be created \n  by referring to their name.\n\n- We have a new 'graph.formula' function, for creating small graphs\n  using symbolic names, by giving simple R formulae.\n\n- Many functions support weighted graphs now: Page Rank, modularity\n  calculation, the fast greedy community finding algorithm, etc.\n\n- We have a new graph layout algorithm called 'graphopt'.\n\n- A bunch of new functions are added: biconnected components and \n  articulation points, dyad and triad census, functions for vertex \n  similarity, functions for estimating closeness, betweenness and \n  edge betweenness, etc.\n\n- igraph can write files in the DOT format now.\n\n- Some graphics improvements, e.g. it is possible to draw \n  graphs on top of each other, etc.\n\n- Many bugs were fixed, the most important one is probably that \n  now memory is always properly deallocated when CTRL+C (ESC) is \n  used to interrupt a computation.\n\nPACKAGE DESCRIPTION:\n\nigraph is originally a C library for graphs, but has interfaces\nto high level languages like R, Python and Ruby. The R package \ncontains BOTH the C library and its R interface. \n\nigraph supports:\n\n- graph generators, creating both regular structures like trees,\n  lattices, etc. and various random graphs.\n\n- a rich set of functions calculating structural properties of \n  graphs, like vertex centrality (degree, betweenness, closeness,\n  page rank, eigenvector centrality, Burt's constraints, etc.),\n  shortest paths, dyad and triad census, network motifs, girth, \n  K-core decomposition, etc.\n\n- attributes can be associated with the vertices/edges of the graph,\n  or the graph itself. The attributes can be arbitrary R objects.\n\n- graph visualization using regular R devices, interactive visualization\n  using Tcl/Tk, 3D visualization using RGL.\n\n- graph layout generators, the standard Kamada-Kawai and \n  Fruchterman-Reingold algorithms are included, plus many more.\n\n- Functions for graph and subgraph isomorphism, the BLISS and the VF2\n  algorithms are included.\n\n- Functions for maximal network flows, minimal cuts, vertex and \n  edge connectivity.\n\n- igraph can read and write many popular file formats used for \n  storing graph data: GraphML, Pajek, GML and others.\n\n- igraph contains implementations of many community structure \n  detection algorithms proposed recently.\n\nSee more at the igraph homepage:\nhttp://cneurocvs.rmki.kfki.hu/igraph/index.html\n\n-- \nCsardi Gabor <csardi at rmki.kfki.hu>",
+      "body_snippet": "igraph is a package for graphs and networks. It has a C core and \nuses a simple and fast graph representation allowing millions \nof vertices and edges.\n\nNEW FEATURES:\n\n- We use the ARPACK library for ",
+      "thread_id": "thread-1aa30405f9a1",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-1aa30405f9a1",
+      "message_id": "<20080220201110.GC8077@localdomain>",
+      "from_name": "Gabor Csardi",
+      "from_email_hash": "ef3fbd846d44752887aef63d2684b8733c31936c1b61ce693ec52e1334cdae73",
+      "date": "2008-02-20T21:11:10+01:00",
+      "subject": "[R-pkgs] igraph package, version 0.5",
+      "subject_clean": "igraph package, version 0.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "igraph is a package for graphs and networks. It has a C core and \nuses a simple and fast graph representation allowing millions \nof vertices and edges.\n\nNEW FEATURES:\n\n- We use the ARPACK library for graph related eigenvalue problems, \n  like Page Rank calculation, Kleinberg's hub and authority scores,\n  eigenvector centrality, etc. There is also a generic interface \n  if someone wants to use ARPACK for a different (not necessarily \n  graph-related) problem.\n\n- We support the BLISS graph isomorphism algorithm, and the \n  implementation of the VF2 algorithm can calculate subgraph isomorphisms\n  now.\n\n- We include a collection of \"famous\" graphs, these can be created \n  by referring to their name.\n\n- We have a new 'graph.formula' function, for creating small graphs\n  using symbolic names, by giving simple R formulae.\n\n- Many functions support weighted graphs now: Page Rank, modularity\n  calculation, the fast greedy community finding algorithm, etc.\n\n- We have a new graph layout algorithm called 'graphopt'.\n\n- A bunch of new functions are added: biconnected components and \n  articulation points, dyad and triad census, functions for vertex \n  similarity, functions for estimating closeness, betweenness and \n  edge betweenness, etc.\n\n- igraph can write files in the DOT format now.\n\n- Some graphics improvements, e.g. it is possible to draw \n  graphs on top of each other, etc.\n\n- Many bugs were fixed, the most important one is probably that \n  now memory is always properly deallocated when CTRL+C (ESC) is \n  used to interrupt a computation.\n\nPACKAGE DESCRIPTION:\n\nigraph is originally a C library for graphs, but has interfaces\nto high level languages like R, Python and Ruby. The R package \ncontains BOTH the C library and its R interface. \n\nigraph supports:\n\n- graph generators, creating both regular structures like trees,\n  lattices, etc. and various random graphs.\n\n- a rich set of functions calculating structural properties of \n  graphs, like vertex centrality (degree, betweenness, closeness,\n  page rank, eigenvector centrality, Burt's constraints, etc.),\n  shortest paths, dyad and triad census, network motifs, girth, \n  K-core decomposition, etc.\n\n- attributes can be associated with the vertices/edges of the graph,\n  or the graph itself. The attributes can be arbitrary R objects.\n\n- graph visualization using regular R devices, interactive visualization\n  using Tcl/Tk, 3D visualization using RGL.\n\n- graph layout generators, the standard Kamada-Kawai and \n  Fruchterman-Reingold algorithms are included, plus many more.\n\n- Functions for graph and subgraph isomorphism, the BLISS and the VF2\n  algorithms are included.\n\n- Functions for maximal network flows, minimal cuts, vertex and \n  edge connectivity.\n\n- igraph can read and write many popular file formats used for \n  storing graph data: GraphML, Pajek, GML and others.\n\n- igraph contains implementations of many community structure \n  detection algorithms proposed recently.\n\nSee more at the igraph homepage:\nhttp://cneurocvs.rmki.kfki.hu/igraph/index.html\n\n-- \nCsardi Gabor <csardi at rmki.kfki.hu>",
+      "body_snippet": "igraph is a package for graphs and networks. It has a C core and \nuses a simple and fast graph representation allowing millions \nof vertices and edges.\n\nNEW FEATURES:\n\n- We use the ARPACK library for ",
+      "thread_id": "thread-1aa30405f9a1",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-a4bb5047c6b1",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBBE2F513@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2008-02-23T11:00:08-07:00",
+      "subject": "[R-pkgs] Announcement: obsSens Package",
+      "subject_clean": "Announcement: obsSens Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl>",
+      "thread_id": "thread-a4bb5047c6b1",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-a4bb5047c6b1",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBBE2F513@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2008-02-23T11:00:08-07:00",
+      "subject": "[R-pkgs] Announcement: obsSens Package",
+      "subject_clean": "Announcement: obsSens Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment-0001.pl>",
+      "thread_id": "thread-a4bb5047c6b1",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-6a96091d41a0",
+      "message_id": "<90c54480802240758y22967accpa75be28a2cfd070b@mail.gmail.com>",
+      "from_name": "Longhai Li",
+      "from_email_hash": "48c20b9208a763509b24b424c7582be2bda7e0cf249a057c1ed3b12b246d9ceb",
+      "date": "2008-02-24T09:58:32-06:00",
+      "subject": "[R-pkgs] Bayesian Prediction with High-order Interactions",
+      "subject_clean": "Bayesian Prediction with High-order Interactions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Everybody,\n\nA new package called ``Bayesian Prediction with High-order\nInteractions'' is available from CRAN. The description of this package\nis as follows\"\n\n\"This R package is used in two situations. The first is to predict the\nnext outcome based on the previous states of a discrete sequence. The\nsecond is to classify a discrete response based on a number of\ndiscreate covariates. In both situations, we use Bayesian logistic\nregression models that consider the high-order interactions. The time\narising from using high-order interactions is reduced greatly by our\ncompression technique that represents a group of original parameters\nas a single one in MCMC step. In this version, we use log-normal prior\nfor the hyperparameters. When it is used for the second situation ---\nclassification, we consider the full set of interaction patterns up to\na specified order.\"\n\nThe website of this package is\n\nhttp://fisher.utstat.toronto.edu/~longhai/software/BPHO/release.html\n\n-- \n\nLonghai Li, PhD\n\nAssistant Professor\nDepartment of Mathematics and  Statistics\nUniversity of Saskatchewan\n\nHomepage: http://math.usask.ca/~longhai",
+      "body_snippet": "Hi Everybody,\n\nA new package called ``Bayesian Prediction with High-order\nInteractions'' is available from CRAN. The description of this package\nis as follows\"\n\n\"This R package is used in two situatio",
+      "thread_id": "thread-6a96091d41a0",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-6a96091d41a0",
+      "message_id": "<90c54480802240758y22967accpa75be28a2cfd070b@mail.gmail.com>",
+      "from_name": "Longhai Li",
+      "from_email_hash": "48c20b9208a763509b24b424c7582be2bda7e0cf249a057c1ed3b12b246d9ceb",
+      "date": "2008-02-24T09:58:32-06:00",
+      "subject": "[R-pkgs] Bayesian Prediction with High-order Interactions",
+      "subject_clean": "Bayesian Prediction with High-order Interactions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Everybody,\n\nA new package called ``Bayesian Prediction with High-order\nInteractions'' is available from CRAN. The description of this package\nis as follows\"\n\n\"This R package is used in two situations. The first is to predict the\nnext outcome based on the previous states of a discrete sequence. The\nsecond is to classify a discrete response based on a number of\ndiscreate covariates. In both situations, we use Bayesian logistic\nregression models that consider the high-order interactions. The time\narising from using high-order interactions is reduced greatly by our\ncompression technique that represents a group of original parameters\nas a single one in MCMC step. In this version, we use log-normal prior\nfor the hyperparameters. When it is used for the second situation ---\nclassification, we consider the full set of interaction patterns up to\na specified order.\"\n\nThe website of this package is\n\nhttp://fisher.utstat.toronto.edu/~longhai/software/BPHO/release.html\n\n-- \n\nLonghai Li, PhD\n\nAssistant Professor\nDepartment of Mathematics and  Statistics\nUniversity of Saskatchewan\n\nHomepage: http://math.usask.ca/~longhai",
+      "body_snippet": "Hi Everybody,\n\nA new package called ``Bayesian Prediction with High-order\nInteractions'' is available from CRAN. The description of this package\nis as follows\"\n\n\"This R package is used in two situatio",
+      "thread_id": "thread-6a96091d41a0",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-c6862a2c772a",
+      "message_id": "<50266.130.95.98.17.1204009819.squirrel@130.95.98.17>",
+      "from_name": "adrian at maths.uwa.edu.au",
+      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
+      "date": "2008-02-26T16:10:19+09:00",
+      "subject": "[R-pkgs] Course on analysing spatial point patterns",
+      "subject_clean": "Course on analysing spatial point patterns",
+      "in_reply_to": "<mailman.11.1203937203.11666.r-sig-geo@stat.math.ethz.ch>",
+      "references": [
+        "<mailman.11.1203937203.11666.r-sig-geo@stat.math.ethz.ch>"
+      ],
+      "body_plain": "A full set of course notes on\n          'Analysing spatial point patterns in R'\nis now available at\n     <http://www.csiro.au/resources/pf16h.html>\n\nThe course is based on the package 'spatstat'. It includes a brief\nintroduction to R, a detailed introduction to the 'spatstat' package, and\na discussion of statistical methodology.\n\nAdrian Baddeley",
+      "body_snippet": "A full set of course notes on\n          'Analysing spatial point patterns in R'\nis now available at\n     <http://www.csiro.au/resources/pf16h.html>\n\nThe course is based on the package 'spatstat'. It i",
+      "thread_id": "thread-c6862a2c772a",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-c6862a2c772a",
+      "message_id": "<50266.130.95.98.17.1204009819.squirrel@130.95.98.17>",
+      "from_name": "adrian at maths.uwa.edu.au",
+      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
+      "date": "2008-02-26T16:10:19+09:00",
+      "subject": "[R-pkgs] Course on analysing spatial point patterns",
+      "subject_clean": "Course on analysing spatial point patterns",
+      "in_reply_to": "<mailman.11.1203937203.11666.r-sig-geo@stat.math.ethz.ch>",
+      "references": [
+        "<mailman.11.1203937203.11666.r-sig-geo@stat.math.ethz.ch>"
+      ],
+      "body_plain": "A full set of course notes on\n          'Analysing spatial point patterns in R'\nis now available at\n     <http://www.csiro.au/resources/pf16h.html>\n\nThe course is based on the package 'spatstat'. It includes a brief\nintroduction to R, a detailed introduction to the 'spatstat' package, and\na discussion of statistical methodology.\n\nAdrian Baddeley",
+      "body_snippet": "A full set of course notes on\n          'Analysing spatial point patterns in R'\nis now available at\n     <http://www.csiro.au/resources/pf16h.html>\n\nThe course is based on the package 'spatstat'. It i",
+      "thread_id": "thread-c6862a2c772a",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-502e96c282c2",
+      "message_id": "<4e2dfc530802280949j7f575aadr714a3e72464339ca@mail.gmail.com>",
+      "from_name": "Barret Schloerke",
+      "from_email_hash": "7fa59ebf340e3e56f3ab06d44e67fdb1c60754d346c7f7ec855a4d376f9fd1ac",
+      "date": "2008-02-28T11:49:06-06:00",
+      "subject": "[R-pkgs] New Package: geozoo. High-Dimensional Geometric Objects",
+      "subject_clean": "New Package: geozoo. High-Dimensional Geometric Objects",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl>",
+      "thread_id": "thread-502e96c282c2",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-502e96c282c2",
+      "message_id": "<4e2dfc530802280949j7f575aadr714a3e72464339ca@mail.gmail.com>",
+      "from_name": "Barret Schloerke",
+      "from_email_hash": "7fa59ebf340e3e56f3ab06d44e67fdb1c60754d346c7f7ec855a4d376f9fd1ac",
+      "date": "2008-02-28T11:49:06-06:00",
+      "subject": "[R-pkgs] New Package: geozoo. High-Dimensional Geometric Objects",
+      "subject_clean": "New Package: geozoo. High-Dimensional Geometric Objects",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment-0001.pl>",
+      "thread_id": "thread-502e96c282c2",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-f44631a746b8",
+      "message_id": "<op.t68xp212d6fnbv@dk.kolej.mff.cuni.cz>",
+      "from_name": "David Kraus",
+      "from_email_hash": "0dc1e660a01f5ca9e56a155b4de5dfd70357161cbbc64aed973d30b40f365e37",
+      "date": "2008-02-28T19:02:16+01:00",
+      "subject": "[R-pkgs] surv2sample 0.1-2",
+      "subject_clean": "surv2sample 0.1-2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral information about the package:\n\nsurv2sample provides various two-sample tests for right-censored survival  \ndata. Three main areas and corresponding methods are:\n\n* comparison of two survival distributions\n   - surv2.logrank: weighted logrank tests and their combinations (max, sum)\n   - surv2.neyman: Neyman's smooth test and its data-driven version\n   - surv2.ks: Kolmogorov?Smirnov, Cram?r?von Mises and Anderson?Darling  \ntest\n\n* comparison of two cumulative incidence functions for competing risks data\n   - cif: estimation and plotting of cumulative incidence functions\n   - cif2.logrank: logrank-type test for subdistribution hazards\n   - cif2.neyman: Neyman's smooth test and its data-driven version\n   - cif2.ks: Kolmogorov?Smirnov test\n   - cif2.int: integrated-difference test\n\n* goodness of fit tests of the proportional rate assumption (proportional  \nhazards or proportional odds functions in two samples)\n   - proprate2: estimation based on the simplified partial likelihood\n   - proprate2.ks: Kolmogorov?Smirnov test\n   - proprate2.neyman: Neyman's smooth test and its data-driven version\n   - proprate2.gs: Gill?Schumacher type test\n\nSee http://www.davidkraus.net/surv2sample/ for details and references.\n\nBest regards,\n\n-- \nDavid Kraus\n\nInstitute of Information Theory and Automation\nPod Vodarenskou vezi 4\nCZ-18208 Prague 8\nCzechia\n\ndavid.kraus at matfyz.cz\nhttp://www.davidkraus.net/",
+      "body_snippet": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral ",
+      "thread_id": "thread-f44631a746b8",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-f44631a746b8",
+      "message_id": "<op.t68xp212d6fnbv@dk.kolej.mff.cuni.cz>",
+      "from_name": "David Kraus",
+      "from_email_hash": "0dc1e660a01f5ca9e56a155b4de5dfd70357161cbbc64aed973d30b40f365e37",
+      "date": "2008-02-28T19:02:16+01:00",
+      "subject": "[R-pkgs] surv2sample 0.1-2",
+      "subject_clean": "surv2sample 0.1-2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral information about the package:\n\nsurv2sample provides various two-sample tests for right-censored survival  \ndata. Three main areas and corresponding methods are:\n\n* comparison of two survival distributions\n   - surv2.logrank: weighted logrank tests and their combinations (max, sum)\n   - surv2.neyman: Neyman's smooth test and its data-driven version\n   - surv2.ks: Kolmogorov?Smirnov, Cram?r?von Mises and Anderson?Darling  \ntest\n\n* comparison of two cumulative incidence functions for competing risks data\n   - cif: estimation and plotting of cumulative incidence functions\n   - cif2.logrank: logrank-type test for subdistribution hazards\n   - cif2.neyman: Neyman's smooth test and its data-driven version\n   - cif2.ks: Kolmogorov?Smirnov test\n   - cif2.int: integrated-difference test\n\n* goodness of fit tests of the proportional rate assumption (proportional  \nhazards or proportional odds functions in two samples)\n   - proprate2: estimation based on the simplified partial likelihood\n   - proprate2.ks: Kolmogorov?Smirnov test\n   - proprate2.neyman: Neyman's smooth test and its data-driven version\n   - proprate2.gs: Gill?Schumacher type test\n\nSee http://www.davidkraus.net/surv2sample/ for details and references.\n\nBest regards,\n\n-- \nDavid Kraus\n\nInstitute of Information Theory and Automation\nPod Vodarenskou vezi 4\nCZ-18208 Prague 8\nCzechia\n\ndavid.kraus at matfyz.cz\nhttp://www.davidkraus.net/",
+      "body_snippet": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral ",
+      "thread_id": "thread-f44631a746b8",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-87c6a404ab7b",
+      "message_id": "<2323A6D37908A847A7C32F1E3662C80E015368B4@dc1ex01.air.org>",
+      "from_name": "Doran, Harold",
+      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
+      "date": "2008-02-29T09:24:42-05:00",
+      "subject": "[R-pkgs] MiscPsycho 1.1 revised posted",
+      "subject_clean": "MiscPsycho 1.1 revised posted",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl>",
+      "thread_id": "thread-87c6a404ab7b",
+      "thread_depth": 0,
+      "month": "2008-02"
+    },
+    {
+      "id": "msg-87c6a404ab7b",
+      "message_id": "<2323A6D37908A847A7C32F1E3662C80E015368B4@dc1ex01.air.org>",
+      "from_name": "Doran, Harold",
+      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
+      "date": "2008-02-29T09:24:42-05:00",
+      "subject": "[R-pkgs] MiscPsycho 1.1 revised posted",
+      "subject_clean": "MiscPsycho 1.1 revised posted",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment-0001.pl>",
+      "thread_id": "thread-87c6a404ab7b",
+      "thread_depth": 0,
+      "month": "2008-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-65f5ecc5bfb5",
+      "subject": "Package blockrand version 1.1 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2008-02-04T10:32:59-07:00",
+      "last_reply": "2008-02-04T10:32:59-07:00",
+      "root_message_id": "msg-65f5ecc5bfb5"
+    },
+    {
+      "id": "thread-65f5ecc5bfb5",
+      "subject": "Package blockrand version 1.1 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2008-02-04T10:32:59-07:00",
+      "last_reply": "2008-02-04T10:32:59-07:00",
+      "root_message_id": "msg-65f5ecc5bfb5"
+    },
+    {
+      "id": "thread-58eb766bc9a5",
+      "subject": "Release 3.2.0 of randomSurvivalForest is now availablle",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2008-02-11T16:23:40-05:00",
+      "last_reply": "2008-02-11T16:23:40-05:00",
+      "root_message_id": "msg-58eb766bc9a5"
+    },
+    {
+      "id": "thread-58eb766bc9a5",
+      "subject": "Release 3.2.0 of randomSurvivalForest is now availablle",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2008-02-11T16:23:40-05:00",
+      "last_reply": "2008-02-11T16:23:40-05:00",
+      "root_message_id": "msg-58eb766bc9a5"
+    },
+    {
+      "id": "thread-69d1f690f429",
+      "subject": "FinTS_0.2-7",
+      "message_count": 1,
+      "participants": [
+        "Spencer Graves"
+      ],
+      "started": "2008-02-13T00:27:40-08:00",
+      "last_reply": "2008-02-13T00:27:40-08:00",
+      "root_message_id": "msg-69d1f690f429"
+    },
+    {
+      "id": "thread-69d1f690f429",
+      "subject": "FinTS_0.2-7",
+      "message_count": 1,
+      "participants": [
+        "Spencer Graves"
+      ],
+      "started": "2008-02-13T00:27:40-08:00",
+      "last_reply": "2008-02-13T00:27:40-08:00",
+      "root_message_id": "msg-69d1f690f429"
+    },
+    {
+      "id": "thread-19022e4ff17a",
+      "subject": "New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2008-02-20T09:39:47+01:00",
+      "last_reply": "2008-02-20T09:39:47+01:00",
+      "root_message_id": "msg-19022e4ff17a"
+    },
+    {
+      "id": "thread-19022e4ff17a",
+      "subject": "New Package 'JM' for the Joint Modelling of Longitudinal and Survival Data",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2008-02-20T09:39:47+01:00",
+      "last_reply": "2008-02-20T09:39:47+01:00",
+      "root_message_id": "msg-19022e4ff17a"
+    },
+    {
+      "id": "thread-1aa30405f9a1",
+      "subject": "igraph package, version 0.5",
+      "message_count": 1,
+      "participants": [
+        "Gabor Csardi"
+      ],
+      "started": "2008-02-20T21:11:10+01:00",
+      "last_reply": "2008-02-20T21:11:10+01:00",
+      "root_message_id": "msg-1aa30405f9a1"
+    },
+    {
+      "id": "thread-1aa30405f9a1",
+      "subject": "igraph package, version 0.5",
+      "message_count": 1,
+      "participants": [
+        "Gabor Csardi"
+      ],
+      "started": "2008-02-20T21:11:10+01:00",
+      "last_reply": "2008-02-20T21:11:10+01:00",
+      "root_message_id": "msg-1aa30405f9a1"
+    },
+    {
+      "id": "thread-a4bb5047c6b1",
+      "subject": "Announcement: obsSens Package",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2008-02-23T11:00:08-07:00",
+      "last_reply": "2008-02-23T11:00:08-07:00",
+      "root_message_id": "msg-a4bb5047c6b1"
+    },
+    {
+      "id": "thread-a4bb5047c6b1",
+      "subject": "Announcement: obsSens Package",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2008-02-23T11:00:08-07:00",
+      "last_reply": "2008-02-23T11:00:08-07:00",
+      "root_message_id": "msg-a4bb5047c6b1"
+    },
+    {
+      "id": "thread-6a96091d41a0",
+      "subject": "Bayesian Prediction with High-order Interactions",
+      "message_count": 1,
+      "participants": [
+        "Longhai Li"
+      ],
+      "started": "2008-02-24T09:58:32-06:00",
+      "last_reply": "2008-02-24T09:58:32-06:00",
+      "root_message_id": "msg-6a96091d41a0"
+    },
+    {
+      "id": "thread-6a96091d41a0",
+      "subject": "Bayesian Prediction with High-order Interactions",
+      "message_count": 1,
+      "participants": [
+        "Longhai Li"
+      ],
+      "started": "2008-02-24T09:58:32-06:00",
+      "last_reply": "2008-02-24T09:58:32-06:00",
+      "root_message_id": "msg-6a96091d41a0"
+    },
+    {
+      "id": "thread-c6862a2c772a",
+      "subject": "Course on analysing spatial point patterns",
+      "message_count": 1,
+      "participants": [
+        "adrian at maths.uwa.edu.au"
+      ],
+      "started": "2008-02-26T16:10:19+09:00",
+      "last_reply": "2008-02-26T16:10:19+09:00",
+      "root_message_id": "msg-c6862a2c772a"
+    },
+    {
+      "id": "thread-c6862a2c772a",
+      "subject": "Course on analysing spatial point patterns",
+      "message_count": 1,
+      "participants": [
+        "adrian at maths.uwa.edu.au"
+      ],
+      "started": "2008-02-26T16:10:19+09:00",
+      "last_reply": "2008-02-26T16:10:19+09:00",
+      "root_message_id": "msg-c6862a2c772a"
+    },
+    {
+      "id": "thread-502e96c282c2",
+      "subject": "New Package: geozoo. High-Dimensional Geometric Objects",
+      "message_count": 1,
+      "participants": [
+        "Barret Schloerke"
+      ],
+      "started": "2008-02-28T11:49:06-06:00",
+      "last_reply": "2008-02-28T11:49:06-06:00",
+      "root_message_id": "msg-502e96c282c2"
+    },
+    {
+      "id": "thread-502e96c282c2",
+      "subject": "New Package: geozoo. High-Dimensional Geometric Objects",
+      "message_count": 1,
+      "participants": [
+        "Barret Schloerke"
+      ],
+      "started": "2008-02-28T11:49:06-06:00",
+      "last_reply": "2008-02-28T11:49:06-06:00",
+      "root_message_id": "msg-502e96c282c2"
+    },
+    {
+      "id": "thread-f44631a746b8",
+      "subject": "surv2sample 0.1-2",
+      "message_count": 1,
+      "participants": [
+        "David Kraus"
+      ],
+      "started": "2008-02-28T19:02:16+01:00",
+      "last_reply": "2008-02-28T19:02:16+01:00",
+      "root_message_id": "msg-f44631a746b8"
+    },
+    {
+      "id": "thread-f44631a746b8",
+      "subject": "surv2sample 0.1-2",
+      "message_count": 1,
+      "participants": [
+        "David Kraus"
+      ],
+      "started": "2008-02-28T19:02:16+01:00",
+      "last_reply": "2008-02-28T19:02:16+01:00",
+      "root_message_id": "msg-f44631a746b8"
+    },
+    {
+      "id": "thread-87c6a404ab7b",
+      "subject": "MiscPsycho 1.1 revised posted",
+      "message_count": 1,
+      "participants": [
+        "Doran, Harold"
+      ],
+      "started": "2008-02-29T09:24:42-05:00",
+      "last_reply": "2008-02-29T09:24:42-05:00",
+      "root_message_id": "msg-87c6a404ab7b"
+    },
+    {
+      "id": "thread-87c6a404ab7b",
+      "subject": "MiscPsycho 1.1 revised posted",
+      "message_count": 1,
+      "participants": [
+        "Doran, Harold"
+      ],
+      "started": "2008-02-29T09:24:42-05:00",
+      "last_reply": "2008-02-29T09:24:42-05:00",
+      "root_message_id": "msg-87c6a404ab7b"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-08",
+  "messages": [
+    {
+      "id": "msg-443f291b8dc3",
+      "message_id": "<CAPvvxJXjmr8xsDLQgdhsGNr0=drVOCkosZNcY5WsZJNdppqrXg@mail.gmail.com>",
+      "from_name": "Gergely Daróczi",
+      "from_email_hash": "f46e91adb756c13153b61cc27d6f509aac8e7b9b701d63d523721ca4b41aced9",
+      "date": "2013-08-07T16:35:41+02:00",
+      "subject": "[R-pkgs] New package about migration indices",
+      "subject_clean": "New package about migration indices",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl>",
+      "thread_id": "thread-443f291b8dc3",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-19fe8b7692c9",
+      "message_id": "<ACD6D6E6-4966-4525-BDAC-7E62EEFB97FA@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2013-08-08T12:11:35-05:00",
+      "subject": "[R-pkgs] WriteXLS version 3.2.1 - Bug Fix Release",
+      "subject_clean": "WriteXLS version 3.2.1 - Bug Fix Release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nWriteXLS version 3.2.1 has been submitted to CRAN, with thanks to the CRAN maintainers.\n\nThis is a bug fix release with the following fixes:\n\n1. When row.names = TRUE, the initial comments row, which contains the comments attributes for the data frame columns and is rbind()ed to the source data frame, was not properly identified by the included Perl script code, resulting in an error in the Excel file. Bug identified yesterday by Robert Zeigler via GitHub.\n\n2. The rownames for the original data frame were not being properly preserved, hence were in error in the Excel file when row.names = TRUE. Picked up in the course of fixing the above bug.\n\n\nSource tarballs of the updated package are being mirrored and binaries for Windows and OSX should appear in due course.\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nWriteXLS version 3.2.1 has been submitted to CRAN, with thanks to the CRAN maintainers.\n\nThis is a bug fix release with the following fixes:\n\n1. When row.names = TRUE, the initial comments ro",
+      "thread_id": "thread-19fe8b7692c9",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-3a09e9f7395d",
+      "message_id": "<m0siygebkz.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2013-08-11T13:00:44+02:00",
+      "subject": "[R-pkgs] pls 2.4-3 released",
+      "subject_clean": "pls 2.4-3 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.4-3 of the pls package has been released.  Windows and OSX\nbinaries should appear shortly.\n\nThe pls package implements Partial Least Squares Regression, Principal\nComponent Regression and Canonical Powered PLS Regression.\n\nThe major changes are:\n\n- Can now perform cross-validation in parallel, using the facilities of\n  the 'parallel' package.  See ?pls.options and the examples in ?mvr for\n  details.  (Note: in order to use MPI, packages 'snow' and 'Rmpi' must\n  be installed, because 'parallel' rely on them for MPI parallelisation.)\n\nOther user-visible changes:\n\n- In order to comply with current CRAN submission policies,\n  pls.options() no longer stores the modified option list in the global \n  environment.  This has the effect that the options will have to be set\n  every time R is started, even if the work space was saved an loaded.\n\n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_snippet": "Version 2.4-3 of the pls package has been released.  Windows and OSX\nbinaries should appear shortly.\n\nThe pls package implements Partial Least Squares Regression, Principal\nComponent Regression and Ca",
+      "thread_id": "thread-3a09e9f7395d",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-a4b59f1efba3",
+      "message_id": "<29E08D95-4B86-4FF5-A332-55C191CCADA9@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2013-08-11T19:09:41-07:00",
+      "subject": "[R-pkgs] Some improvements in gam package",
+      "subject_clean": "Some improvements in gam package",
+      "in_reply_to": null,
+      "references": [
+        "<030f01c47bdb$c8d6a160$ec6640ab@stuk>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl>",
+      "thread_id": "thread-a4b59f1efba3",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-5bda43cf2c6d",
+      "message_id": "<CAJ9GNakOWLZES4tbbyd-=PqB9h1fVsgoSObBN1PQ2k+zjZ+aXw@mail.gmail.com>",
+      "from_name": "Jan Wijffels",
+      "from_email_hash": "c67854060f9d1faa0785ceb6d8fc98369d857f79d54a92b874f39998787b7fc2",
+      "date": "2013-08-12T12:36:30+02:00",
+      "subject": "[R-pkgs] Myrrix at CRAN - recommendation engines locally or distributed",
+      "subject_clean": "Myrrix at CRAN - recommendation engines locally or distributed",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl>",
+      "thread_id": "thread-5bda43cf2c6d",
+      "thread_depth": 0,
+      "month": "2013-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-443f291b8dc3",
+      "subject": "New package about migration indices",
+      "message_count": 1,
+      "participants": [
+        "Gergely Daróczi"
+      ],
+      "started": "2013-08-07T16:35:41+02:00",
+      "last_reply": "2013-08-07T16:35:41+02:00",
+      "root_message_id": "msg-443f291b8dc3"
+    },
+    {
+      "id": "thread-19fe8b7692c9",
+      "subject": "WriteXLS version 3.2.1 - Bug Fix Release",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2013-08-08T12:11:35-05:00",
+      "last_reply": "2013-08-08T12:11:35-05:00",
+      "root_message_id": "msg-19fe8b7692c9"
+    },
+    {
+      "id": "thread-3a09e9f7395d",
+      "subject": "pls 2.4-3 released",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2013-08-11T13:00:44+02:00",
+      "last_reply": "2013-08-11T13:00:44+02:00",
+      "root_message_id": "msg-3a09e9f7395d"
+    },
+    {
+      "id": "thread-a4b59f1efba3",
+      "subject": "Some improvements in gam package",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2013-08-11T19:09:41-07:00",
+      "last_reply": "2013-08-11T19:09:41-07:00",
+      "root_message_id": "msg-a4b59f1efba3"
+    },
+    {
+      "id": "thread-5bda43cf2c6d",
+      "subject": "Myrrix at CRAN - recommendation engines locally or distributed",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2013-08-12T12:36:30+02:00",
+      "last_reply": "2013-08-12T12:36:30+02:00",
+      "root_message_id": "msg-5bda43cf2c6d"
+    }
+  ]
+}

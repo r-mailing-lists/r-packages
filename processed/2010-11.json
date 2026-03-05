@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-11",
+  "messages": [
+    {
+      "id": "msg-bce51d79e35c",
+      "message_id": "<AANLkTinqjw_B7TkMJ++bQRKJW+z8ofsFKgPUQHk5fsOY@mail.gmail.com>",
+      "from_name": "Michael Lawrence",
+      "from_email_hash": "bfe89466f88aa4e170d0a66a4e53638a9e527ae59f6b2639e8267ad3421950bf",
+      "date": "2010-11-05T15:23:38-07:00",
+      "subject": "[R-pkgs] RGtk2 2.20.x",
+      "subject_clean": "RGtk2 2.20.x",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101105/702f38f2/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101105/702f38f2/attachment.pl>",
+      "thread_id": "thread-bce51d79e35c",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-05b71c95d619",
+      "message_id": "<AANLkTimayH-yB4qD+62yNELeMarZvA+54ULHsi=MF_nX@mail.gmail.com>",
+      "from_name": "Charlotte Maia",
+      "from_email_hash": "3d0795a7b2517575cc7e66f2a4d170db38bd5db6c3e72af4e60d2ab5aee4244b",
+      "date": "2010-11-17T12:56:26+13:00",
+      "subject": "[R-pkgs] The *makesweave* Package for Using Make with Sweave Efficiently",
+      "subject_clean": "The *makesweave* Package for Using Make with Sweave Efficiently",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R Community,\n\nI've just completed the initial version of (Linux-based) R package,\ncalled *makesweave*, for using Make to build Sweave documents\nefficiently.\n\nThe idea is that R is started once (per shell) as a background\nprocess, then Make builds each Sweave source file, using the same R\ninstance.\n\nMore information in the package vignette.\n\nFeedback very welcome.\n\n\nregards\n-- \nCharlotte Maia\nhttp://sites.google.com/site/maiagx",
+      "body_snippet": "Hi R Community,\n\nI've just completed the initial version of (Linux-based) R package,\ncalled *makesweave*, for using Make to build Sweave documents\nefficiently.\n\nThe idea is that R is started once (per",
+      "thread_id": "thread-05b71c95d619",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-9a63b3ab996e",
+      "message_id": "<AANLkTikPq_jj2MG5y_mhf1F9iN_aqtY_DnA8WDwbZK4_@mail.gmail.com>",
+      "from_name": "Garrett Grolemund",
+      "from_email_hash": "1f06ee68251392cd88a1b603f6ff387738cb0830211a0f37fb794a80993f1f09",
+      "date": "2010-11-17T09:31:08-06:00",
+      "subject": "[R-pkgs] lubridate v2.2 available on cran",
+      "subject_clean": "lubridate v2.2 available on cran",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101117/872a2669/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101117/872a2669/attachment.pl>",
+      "thread_id": "thread-9a63b3ab996e",
+      "thread_depth": 0,
+      "month": "2010-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bce51d79e35c",
+      "subject": "RGtk2 2.20.x",
+      "message_count": 1,
+      "participants": [
+        "Michael Lawrence"
+      ],
+      "started": "2010-11-05T15:23:38-07:00",
+      "last_reply": "2010-11-05T15:23:38-07:00",
+      "root_message_id": "msg-bce51d79e35c"
+    },
+    {
+      "id": "thread-9a63b3ab996e",
+      "subject": "lubridate v2.2 available on cran",
+      "message_count": 1,
+      "participants": [
+        "Garrett Grolemund"
+      ],
+      "started": "2010-11-17T09:31:08-06:00",
+      "last_reply": "2010-11-17T09:31:08-06:00",
+      "root_message_id": "msg-9a63b3ab996e"
+    },
+    {
+      "id": "thread-05b71c95d619",
+      "subject": "The *makesweave* Package for Using Make with Sweave Efficiently",
+      "message_count": 1,
+      "participants": [
+        "Charlotte Maia"
+      ],
+      "started": "2010-11-17T12:56:26+13:00",
+      "last_reply": "2010-11-17T12:56:26+13:00",
+      "root_message_id": "msg-05b71c95d619"
+    }
+  ]
+}

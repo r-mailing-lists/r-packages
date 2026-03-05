@@ -1,0 +1,65 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-08",
+  "messages": [
+    {
+      "id": "msg-111908bf3dc7",
+      "message_id": "<20034.41891.404513.696145@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2011-08-10T17:28:35+02:00",
+      "subject": "[R-pkgs] New Matrix and lme4: Must reinstall lme4 if got new Matrix",
+      "subject_clean": "New Matrix and lme4: Must reinstall lme4 if got new Matrix",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We have released to CRAN a new version of the (recommended)\npackage Matrix, and of package lme4 yesterday.\n\nAnyone who gets the new version of Matrix *MUST* re-install lme4\n-- if (s)he is using lme4 at all.  Technical details about that further below.\n\nThe fact that yesterday's version number of Matrix is 0.9995875-2, \nindicates that Matrix' version is indeed approaching 1.0 (*),\nand I'd declare this version as  \"release candidate\" for 1.0.\nAs a recommended package, Matrix is part of every R distribution,\nour aim is to release Matrix_1.0-0 (or higher) with the next\nnon-patch release of R, i.e., R-2.14.0 somewhere in October.\n\nFor this reason, we are asking R useRs, programmeRs and\nprovideRs, to ``hash at'' the package, trying to find problems /\nbugs, badly lacking (or wrong) documentation, etc,\nand report it to us (to 'Matrix-authors at ...' or possibly R-devel at ...),\nso we can prepare a  shiny sparkling  Matrix_1.0-0 in time.\nThank you in advance for such a contribution to the Free\nSoftware universe.\n\nMartin Maechler and Doug Bates\n(and Ben Bolker for lme4).\n\n-- -- --\n\n- Why must lme4 be re-installed as well ?  [Technical !]\n\n This is because lme4 has a 'LinkingTo: Matrix' in its\n DESCRIPTION and indeed, lme4's C code is using part of Matrix' C\n code.\n The change in Matrix: Part of the C-level interface in Matrix is\n now (again, after several years) using the standard CHOLMOD\n typedef of UFlong.  This means that the C API of Matrix should\n behave conformly with what other instances of CHOLMOD export.\n\n(*) For some, it may be amusing to read\n     \thttps://stat.ethz.ch/pipermail/r-packages/2008/000911.html\n    which was the last announcement of Matrix on R-packages.",
+      "body_snippet": "We have released to CRAN a new version of the (recommended)\npackage Matrix, and of package lme4 yesterday.\n\nAnyone who gets the new version of Matrix *MUST* re-install lme4\n-- if (s)he is using lme4 a",
+      "thread_id": "thread-111908bf3dc7",
+      "thread_depth": 0,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-c817d0194d56",
+      "message_id": "<CANwJfJQNHsfNXv3XFFXtvYCidMF1a5tG00EoL6X8zV5bzqjhWQ@mail.gmail.com>",
+      "from_name": "Uwe Block",
+      "from_email_hash": "cebd471f3fe0739515aa0aeb6dd2f0c515ffb256a55394dc53cec4e8a4d75051",
+      "date": "2011-08-25T01:11:37+02:00",
+      "subject": "[R-pkgs] New package ISOweek: Week of the year and weekday according to ISO 8601",
+      "subject_clean": "New package ISOweek: Week of the year and weekday according to ISO 8601",
+      "in_reply_to": "<CANwJfJSEmzetUAwPJfrHNm4K6hQPUsXPi_H==vB6Ui5khHRLsg@mail.gmail.com>",
+      "references": [
+        "<CANwJfJSEmzetUAwPJfrHNm4K6hQPUsXPi_H==vB6Ui5khHRLsg@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110825/b43e128a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110825/b43e128a/attachment.pl>",
+      "thread_id": "thread-c817d0194d56",
+      "thread_depth": 0,
+      "month": "2011-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-111908bf3dc7",
+      "subject": "New Matrix and lme4: Must reinstall lme4 if got new Matrix",
+      "message_count": 1,
+      "participants": [
+        "Martin Maechler"
+      ],
+      "started": "2011-08-10T17:28:35+02:00",
+      "last_reply": "2011-08-10T17:28:35+02:00",
+      "root_message_id": "msg-111908bf3dc7"
+    },
+    {
+      "id": "thread-c817d0194d56",
+      "subject": "New package ISOweek: Week of the year and weekday according to ISO 8601",
+      "message_count": 1,
+      "participants": [
+        "Uwe Block"
+      ],
+      "started": "2011-08-25T01:11:37+02:00",
+      "last_reply": "2011-08-25T01:11:37+02:00",
+      "root_message_id": "msg-c817d0194d56"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-05",
+  "messages": [
+    {
+      "id": "msg-1cb82bfba904",
+      "message_id": "<CACsjJ_f88r40YronnvYVjdsdtTOkjvRczRSGU+p6-Y6OqDDO+g@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2014-05-13T09:47:51-04:00",
+      "subject": "[R-pkgs] randomForestSRC 1.5.0 is on CRAN",
+      "subject_clean": "randomForestSRC 1.5.0 is on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "DeaR useRs:\n\nVersion 1.5.0 of the package randomForestSRC is now on CRAN.\n\n>From the NEWS file:\n---------------------------------------------------------------------------------\nChanges to RELEASE 1.5.0\n\nSignificant improvements to CPU and RAM usage profiles in serial and\nOpenMP modes of execution.  Proximity options allow inbag, oob and\nall.  VIMP implements subsetting and conditional variable importance.\nNA options allow the split statistic to be based on non-missing values\nonly.  In addition it allows random assignment of missing values.\n---------------------------------------------------------------------------------\n\nThank you.\n\nUdaya B. Kogalur, Ph.D.\nAdjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation\n\nkogalurshear at gmail.com\nwww.kogalur.com",
+      "body_snippet": "DeaR useRs:\n\nVersion 1.5.0 of the package randomForestSRC is now on CRAN.\n\n>From the NEWS file:\n---------------------------------------------------------------------------------\nChanges to RELEASE 1.5",
+      "thread_id": "thread-1cb82bfba904",
+      "thread_depth": 0,
+      "month": "2014-05"
+    },
+    {
+      "id": "msg-14d714f0ae78",
+      "message_id": "<CAF-SqYFLZ_ob_E-1yyZMChbkDAEuVZVTWcq3tHuH76DVhkwroQ@mail.gmail.com>",
+      "from_name": "Hai Fang",
+      "from_email_hash": "914dca97b2da8c06fb8f540db9c2ccb97388d61ea03e9a0c09d4ed485290b8e9",
+      "date": "2014-05-21T12:06:16+01:00",
+      "subject": "[R-pkgs] Package 'dnet' for omics data integrative analysis",
+      "subject_clean": "Package 'dnet' for omics data integrative analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl>",
+      "thread_id": "thread-14d714f0ae78",
+      "thread_depth": 0,
+      "month": "2014-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1cb82bfba904",
+      "subject": "randomForestSRC 1.5.0 is on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2014-05-13T09:47:51-04:00",
+      "last_reply": "2014-05-13T09:47:51-04:00",
+      "root_message_id": "msg-1cb82bfba904"
+    },
+    {
+      "id": "thread-14d714f0ae78",
+      "subject": "Package 'dnet' for omics data integrative analysis",
+      "message_count": 1,
+      "participants": [
+        "Hai Fang"
+      ],
+      "started": "2014-05-21T12:06:16+01:00",
+      "last_reply": "2014-05-21T12:06:16+01:00",
+      "root_message_id": "msg-14d714f0ae78"
+    }
+  ]
+}

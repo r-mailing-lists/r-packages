@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-11",
+  "messages": [
+    {
+      "id": "msg-3199e6f4cda5",
+      "message_id": "<CAE4w2GWLqQP7Cg3YNAfVyVAQv7q0oOkjcU=E88aW9oHOiHPzkQ@mail.gmail.com>",
+      "from_name": "Bojan Mihaljevic",
+      "from_email_hash": "18b0764115573ac68ba301d354a36699e9fc151b699ccbc85b99afde66422fcc",
+      "date": "2015-11-19T16:46:00+01:00",
+      "subject": "[R-pkgs] Version 0.3.2 of bnclassify on CRAN",
+      "subject_clean": "Version 0.3.2 of bnclassify on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am glad to announce that version 0.3.2 of bnclassify is on CRAN.\nbnclassify implements algorithms for learning the structure and parameters\nof discrete Bayesian network classifiers from data, fast prediction with\ncomplete data, cross-validation and utility functions for inspecting the\nmodels.\n\nThis version improves function documentation and the introductory vignette,\nadds two vignettes, and implements the model averaged naive Bayes.\n\nBest regards,\nBojan Mihaljevic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am glad to announce that version 0.3.2 of bnclassify is on CRAN.\nbnclassify implements algorithms for learning the structure and parameters\nof discrete Bayesian network classifiers fr",
+      "thread_id": "thread-3199e6f4cda5",
+      "thread_depth": 0,
+      "month": "2015-11"
+    },
+    {
+      "id": "msg-0e9b737463b6",
+      "message_id": "<564E195D.8080807@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2015-11-19T13:47:57-05:00",
+      "subject": "[R-pkgs] matlib package for linear algebra and multivariate statistics",
+      "subject_clean": "matlib package for linear algebra and multivariate statistics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs\n\nA new package, \"matlib\" has been under development and the latest \nversion, 0.5.2,\nwill shortly be on CRAN.\nhttp://cran.us.r-project.org/web/packages/matlib/\n\nThe package is designed to provide a collection of functions and vignettes\nfor teaching and learning linear algebra and multivariate statistics.\n\nIn some cases, convenience functions are provided for concepts available\nelsewhere in R, but where the function call or name is not obvious. In other\ncases, functions are provided to show or demonstrate an algorithm.\n\nThe topics covered in the package include:\n\n* Vector geometry: vector diagrams, projection\n\n* Determinants: minors, cofactors and expansion by cofactors\n\n* Elementary row operations: functions for solving linear equations \n\"manually\" by the steps used in row echelon form and Gaussian elimination\n\n* Linear equations: functions to illustrate and plot linear equations of \nthe form $\\mathbf{A x = b}$\n\n* Gaussian elimination: functions for illustrating Gaussian elimination \nfor solving systems of linear equations of the form\n$\\mathbf{A x = b}$.  These functions provide a `verbose=TRUE` argument \nto show the intermediate steps.\n\n* Eigenvalues: functions to illustrate the algorithms for calculating \neigenvalues and eigenvectors and the SVD\n\n* browseVignettes(\"matlib\") shows currently available vignettes.\n\nThe GitHub development page for the project is:\nhttps://github.com/friendly/matlib\n\nComments, suggestions, issues, etc. are invited there.\n\nbest,\n-Michael\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept. & Chair, Quantitative Methods\nYork University      Voice: 416 736-2100 x66249 Fax: 416 736-5814\n4700 Keele Street    Web:http://www.datavis.ca\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "Dear useRs\n\nA new package, \"matlib\" has been under development and the latest \nversion, 0.5.2,\nwill shortly be on CRAN.\nhttp://cran.us.r-project.org/web/packages/matlib/\n\nThe package is designed to pr",
+      "thread_id": "thread-0e9b737463b6",
+      "thread_depth": 0,
+      "month": "2015-11"
+    },
+    {
+      "id": "msg-2061d9562627",
+      "message_id": "<CAKxd1KNuX5LYPBhCpf8GKbeJBYpf82Vcrwv6GUK35kVNh6Bg-A@mail.gmail.com>",
+      "from_name": "Charles Determan",
+      "from_email_hash": "fcc9a1e7c21371cee92703630056a3d910de1afb77217895dfe5b4bc47c007e1",
+      "date": "2015-11-23T07:10:09-06:00",
+      "subject": "[R-pkgs] New package: gpuR",
+      "subject_clean": "New package: gpuR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nI am happy to inform you that my 'gpuR' package has just been accepted to\nCRAN.\n\nhttps://cran.r-project.org/web/packages/gpuR/index.html\n\nThe gpuR package is designed to provide simple to use functions for\nleveraging GPU's for computing.  Although there are a couple existing\npackages for GPU's in R most are specific to NVIDIA GPU's and have very\nlimited and specific functions.  The packaged is based on an OpenCL backend\nin conjunction with the ViennaCL library (which is packaged within the\nRViennaCL package).  This allows the user to use almost any GPU (Intel,\nAMD, or NVIDIA).  It is my hope that these functions can be used to more\nrapidly develop algorithms within R that can leverage GPUs.\n\nThe package is structured to use a few new S4 classes that retain the\nobject either on the host CPU or in GPU memory (thereby avoiding transfer\ntime).  I have included a minimal introductory vignette describing the\npackage further, providing a simple use case, and listing currently\navailable functions.\n\nhttps://cran.r-project.org/web/packages/gpuR/vignettes/gpuR.pdf\n\nYou can view the github page here:\n\nhttps://github.com/cdeterman/gpuR\n\nwhich also contains a wiki to help with installation.  Although it must be\ncompiled, it is able to be installed on Linux, Mac OSX, and Windows\nplatforms.\n\nI welcome any comments, issues (please submit on the github), and of course\nadditional contributions.\n\nRegards,\nCharles Determan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R Users,\n\nI am happy to inform you that my 'gpuR' package has just been accepted to\nCRAN.\n\nhttps://cran.r-project.org/web/packages/gpuR/index.html\n\nThe gpuR package is designed to provide simple to us",
+      "thread_id": "thread-2061d9562627",
+      "thread_depth": 0,
+      "month": "2015-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0e9b737463b6",
+      "subject": "matlib package for linear algebra and multivariate statistics",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2015-11-19T13:47:57-05:00",
+      "last_reply": "2015-11-19T13:47:57-05:00",
+      "root_message_id": "msg-0e9b737463b6"
+    },
+    {
+      "id": "thread-3199e6f4cda5",
+      "subject": "Version 0.3.2 of bnclassify on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bojan Mihaljevic"
+      ],
+      "started": "2015-11-19T16:46:00+01:00",
+      "last_reply": "2015-11-19T16:46:00+01:00",
+      "root_message_id": "msg-3199e6f4cda5"
+    },
+    {
+      "id": "thread-2061d9562627",
+      "subject": "New package: gpuR",
+      "message_count": 1,
+      "participants": [
+        "Charles Determan"
+      ],
+      "started": "2015-11-23T07:10:09-06:00",
+      "last_reply": "2015-11-23T07:10:09-06:00",
+      "root_message_id": "msg-2061d9562627"
+    }
+  ]
+}

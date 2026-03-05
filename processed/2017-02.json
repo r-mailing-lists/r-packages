@@ -1,0 +1,216 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-02",
+  "messages": [
+    {
+      "id": "msg-fcb60d542bd8",
+      "message_id": "<fbcf66e2-3899-9b09-e09b-44453a296af9@univ-lyon1.fr>",
+      "from_name": "Aurélie Siberchicot",
+      "from_email_hash": "dace8776744d919be46005bf33101fb40cb379ef6cc8ffb15d8bb7ada24a4922",
+      "date": "2017-02-03T18:02:00+01:00",
+      "subject": "[R-pkgs] Announcing fitdistrplus 1.0-8",
+      "subject_clean": "Announcing fitdistrplus 1.0-8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nWe are pleased to announce you a new version of \"fitdistrplus\" on CRAN :\nhttps://cran.r-project.org/web/packages/fitdistrplus/index.html\n\n\"fitdistrplus\" is a package dedicated to help the fit of a parametric \ndistribution to non-censored or censored data.\n\nThe main new features in this release are few new topics in the FAQ \nvignette \n(https://cran.r-project.org/web/packages/fitdistrplus/vignettes/FAQ.html) \nand the now possible use of \"ggplot2\" in functions \"cdfcomp\", \n\"denscomp\", \"qqcomp\" and \"ppcomp\".\nWe also created a new mailing list \nfitdist-users at listes.univ-lyon1.fr*//*at which you can send any question \nor comment regarding \"fitdistrplus\".\n\nBest regards,\n\nMarie Laure Delignette-Muller, Christophe Dutang and Aur?lie Siberchicot\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nWe are pleased to announce you a new version of \"fitdistrplus\" on CRAN :\nhttps://cran.r-project.org/web/packages/fitdistrplus/index.html\n\n\"fitdistrplus\" is a package dedicated to help the",
+      "thread_id": "thread-fcb60d542bd8",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-b6cc3809a9eb",
+      "message_id": "<CAHujmRZV-ePVGzQ-uUCM862BKzMiBj2rTsRfYVkrEpGL319Duw@mail.gmail.com>",
+      "from_name": "Paolo Di Lorenzo",
+      "from_email_hash": "815e153360e250e25e3e8a917c64b7a9b6a6d4bd923086d53988fce47d9b94c7",
+      "date": "2017-02-04T15:59:22-05:00",
+      "subject": "[R-pkgs] usmap v 0.1.0 released",
+      "subject_clean": "usmap v 0.1.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello useRs,\n\nI am announcing the release of my first package, usmap (\nhttp://cran.r-project.org/package=usmap).\n\n\"usmap\" is a package to aid in the creation of US choropleths that include\nAlaska and Hawaii. It is still in its early stages (v 0.1.0) but I hope to\nimprove it with added functionality over time.\n\nFeatures can be seen in the vignettes here:\nhttps://cran.r-project.org/web/packages/usmap/vignettes/introduction.html\nhttps://cran.r-project.org/web/packages/usmap/vignettes/mapping.html\n\nFeel free to contribute ideas and code: http://github.com/pdil/usmap\n\nIf you have any questions please email me at paolo at dilorenzo.pl or message\nme on Twitter @dilorenzopl <http://www.twitter.com/dilorenzopl>.\n\nThank you,\n\nPaolo Di Lorenzo\nhttp://dilorenzo.pl\npaolo at dilorenzo.pl // dilorenzopl at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello useRs,\n\nI am announcing the release of my first package, usmap (\nhttp://cran.r-project.org/package=usmap).\n\n\"usmap\" is a package to aid in the creation of US choropleths that include\nAlaska and ",
+      "thread_id": "thread-b6cc3809a9eb",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-b0444c0bcd7b",
+      "message_id": "<CAPK6mFpn7qUdi3O2L37MkVHMmiveXGp3AQ19uNdhJoVp5AE--Q@mail.gmail.com>",
+      "from_name": "Luís Paulo F. Garcia",
+      "from_email_hash": "eb9290c36366025a338795498e5db88651936d499b079be56fb796d8bb5869d2",
+      "date": "2017-02-08T16:30:07-02:00",
+      "subject": "[R-pkgs]  Announcing mfe 0.1.0",
+      "subject_clean": "Announcing mfe 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from datasets to support the design\nof\nrecommendation systems based on Meta-Learning. The meta-features, also\ncalled\ncharacterization measures, are able to characterize the complexity of\ndatasets\nand to provide estimates of algorithm performance. The package contains not\nonly the standard characterization measures, but also more recent\ncharacterization measures.\n\nPlease, visit the repository on GitHub (https://github.com/rivolli/mfe) or\nthe\nVignette (\nhttps://cran.r-project.org/web/packages/mfe/vignettes/mfe-vignette.html)\nfor more information.\n\nKind Regards,\nLuis\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
+      "thread_id": "thread-b0444c0bcd7b",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-4acb89e5735f",
+      "message_id": "<CANnL8go6tpwxXBMiLsKJamc2xQpD5ciar031X2xC-QTjzjQ+Fg@mail.gmail.com>",
+      "from_name": "Tim Keitt",
+      "from_email_hash": "d1fbfc1cb7ef35401094f34c8b86be970c51c67d04033c5e7eff9b5bfec47e48",
+      "date": "2017-02-16T12:34:14-06:00",
+      "subject": "[R-pkgs] CRAN updates: rpg and odeintr",
+      "subject_clean": "CRAN updates: rpg and odeintr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "rpg is a package for working with postgresql: https://github.com/thk686/rpg\nodeintr is a package for integrating differential equations:\nhttps://github.com/thk686/odeintr\n\nCheers,\nTHK\n\nhttp://www.keittlab.org/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "rpg is a package for working with postgresql: https://github.com/thk686/rpg\nodeintr is a package for integrating differential equations:\nhttps://github.com/thk686/odeintr\n\nCheers,\nTHK\n\nhttp://www.keit",
+      "thread_id": "thread-4acb89e5735f",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-ec89c18277b4",
+      "message_id": "<CAPK6mFqS5j6OszPH+-W7MDKxrDt_5xwHO1yD4px73Van0z3zcA@mail.gmail.com>",
+      "from_name": "Luís Paulo F. Garcia",
+      "from_email_hash": "eb9290c36366025a338795498e5db88651936d499b079be56fb796d8bb5869d2",
+      "date": "2017-02-20T08:18:34-03:00",
+      "subject": "[R-pkgs]  Announcing mfe 0.1.0",
+      "subject_clean": "Announcing mfe 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from datasets to support the design\nof\nrecommendation systems based on Meta-Learning. The meta-features, also\ncalled\ncharacterization measures, are able to characterize the complexity of\ndatasets\nand to provide estimates of algorithm performance. The package contains not\nonly the standard characterization measures, but also more recent\ncharacterization measures.\n\nPlease, visit the repository on GitHub (https://github.com/rivolli/mfe) or\nthe\nVignette (https://cran.r-project.org/web/packages/mfe/vignettes/\nmfe-vignette.html)\nfor more information.\n\nKind regards,\nLuis\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
+      "thread_id": "thread-ec89c18277b4",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-af915c022bc5",
+      "message_id": "<CAPsOnmbD8PAnhy=WXnfSnvvQv08pQdLOQabrk+9nY3G1Z17b1g@mail.gmail.com>",
+      "from_name": "Angus Dempster",
+      "from_email_hash": "968ee34c59cb5485a0fa1a2b8398faed7b52aef3ff0623af32d6704e70eaec3a",
+      "date": "2017-02-21T11:30:24+11:00",
+      "subject": "[R-pkgs] New package: opusminer",
+      "subject_clean": "New package: opusminer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe new package opusminer is now available on CRAN:\n<https://CRAN.R-project.org/package=opusminer>.\n\nopusminer provides an interface to the OPUS Miner algorithm\n(implemented in C++) for finding the key associations in transaction\ndata.  The OPUS Miner algorithm uses the OPUS search algorithm to\nefficiently discover the key associations in transaction data, in the\nform of self-sufficient itemsets, using either leverage or lift.\n\nopusminer can read transaction data directly from a file, from a list,\nor from an object of class transactions (from the package arules).\n\nBest,\n\nAngus",
+      "body_snippet": "Dear all,\n\nThe new package opusminer is now available on CRAN:\n<https://CRAN.R-project.org/package=opusminer>.\n\nopusminer provides an interface to the OPUS Miner algorithm\n(implemented in C++) for fin",
+      "thread_id": "thread-af915c022bc5",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-5f8a44c51ecf",
+      "message_id": "<330D71BA48EB384F.550835D7-0988-4DA4-AAD4-052BDBFE2DBD@mail.outlook.com>",
+      "from_name": "Paolo Di Lorenzo",
+      "from_email_hash": "815e153360e250e25e3e8a917c64b7a9b6a6d4bd923086d53988fce47d9b94c7",
+      "date": "2017-02-24T05:13:32Z",
+      "subject": "[R-pkgs] usmap v 0.1.0 released",
+      "subject_clean": "usmap v 0.1.0 released",
+      "in_reply_to": "<CAHujmRZV-ePVGzQ-uUCM862BKzMiBj2rTsRfYVkrEpGL319Duw@mail.gmail.com>",
+      "references": [
+        "<CAHujmRZV-ePVGzQ-uUCM862BKzMiBj2rTsRfYVkrEpGL319Duw@mail.gmail.com>"
+      ],
+      "body_plain": "Hello useRs,\nI am announcing the release of my first package, usmap (http://cran.r-project.org/package=usmap).\n\"usmap\" is a package to aid in the creation of US choropleths that include Alaska and Hawaii. It is still in its early stages (v 0.1.0) but I hope to improve it with added functionality over time.\nFeatures can be seen in the vignettes here:https://cran.r-project.org/web/packages/usmap/vignettes/introduction.html\nhttps://cran.r-project.org/web/packages/usmap/vignettes/mapping.html\n\nFeel free to contribute ideas and code:?http://github.com/pdil/usmap\nIf you have any questions please email me at?paolo at dilorenzo.pl?or message me on Twitter?@dilorenzopl.\nThank you,\nPaolo Di Lorenzohttp://dilorenzo.plpaolo at dilorenzo.pl?// dilorenzopl at gmail.com\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello useRs,\nI am announcing the release of my first package, usmap (http://cran.r-project.org/package=usmap).\n\"usmap\" is a package to aid in the creation of US choropleths that include Alaska and Haw",
+      "thread_id": "thread-b6cc3809a9eb",
+      "thread_depth": 1,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-114a9b67893f",
+      "message_id": "<CAA-FpKUzpVd1_ccuoF0sCSpjWcmmE2fGJydD14fEyyv0bG3Zmw@mail.gmail.com>",
+      "from_name": "Bob Rudis",
+      "from_email_hash": "06069ff8bf65af0cc1ddc4f9da6c2a365b90baa3c37e0a4c63565522e5804ed8",
+      "date": "2017-02-26T11:23:13-05:00",
+      "subject": "[R-pkgs] New package: hrbrthemes",
+      "subject_clean": "New package: hrbrthemes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hey folks,\n\nI'm pleased to announce the inaugural release of my hrbrthemes (0.1.0)\non CRAN: https://CRAN.R-project.org/package=hrbrthemes\n\nThe primary goal of said package is to provide opinionated\ntypographical and other aesthetic defaults for ggplot2 charts.\n\nTwo core themes are included:\n\n- theme_ipsum() ? an Arial Narrow-based theme\n- theme_ipsum_rc() ? a Roboto Condensed-based theme.\n\nThe Roboto Condensed Google Font comes with the package along with an\ninstaller for said font.\n\nOther niceties include:\n\n- scale_[xy]_comma() ? shortcut for expand=c(0,0), labels=scales::comma\n- scale_[xy]_percent() ? shortcut for expand=c(0,0), labels=scales::percent\n- scale_[color|fill]_ipsum() ? discrete scale with 9 colors\n- gg_check() ? pass-through spell checker for ggplot2 label elements\n\nSource version is tracked on GitHub: https://github.com/hrbrmstr/hrbrthemes\n\nCritiques, bug reports and enhancement requests are most welcome as\nGitHub issues.\n\n-Bob",
+      "body_snippet": "Hey folks,\n\nI'm pleased to announce the inaugural release of my hrbrthemes (0.1.0)\non CRAN: https://CRAN.R-project.org/package=hrbrthemes\n\nThe primary goal of said package is to provide opinionated\nty",
+      "thread_id": "thread-114a9b67893f",
+      "thread_depth": 0,
+      "month": "2017-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fcb60d542bd8",
+      "subject": "Announcing fitdistrplus 1.0-8",
+      "message_count": 1,
+      "participants": [
+        "Aurélie Siberchicot"
+      ],
+      "started": "2017-02-03T18:02:00+01:00",
+      "last_reply": "2017-02-03T18:02:00+01:00",
+      "root_message_id": "msg-fcb60d542bd8"
+    },
+    {
+      "id": "thread-b6cc3809a9eb",
+      "subject": "usmap v 0.1.0 released",
+      "message_count": 2,
+      "participants": [
+        "Paolo Di Lorenzo"
+      ],
+      "started": "2017-02-04T15:59:22-05:00",
+      "last_reply": "2017-02-24T05:13:32+00:00",
+      "root_message_id": "msg-b6cc3809a9eb"
+    },
+    {
+      "id": "thread-b0444c0bcd7b",
+      "subject": "Announcing mfe 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Luís Paulo F. Garcia"
+      ],
+      "started": "2017-02-08T16:30:07-02:00",
+      "last_reply": "2017-02-08T16:30:07-02:00",
+      "root_message_id": "msg-b0444c0bcd7b"
+    },
+    {
+      "id": "thread-4acb89e5735f",
+      "subject": "CRAN updates: rpg and odeintr",
+      "message_count": 1,
+      "participants": [
+        "Tim Keitt"
+      ],
+      "started": "2017-02-16T12:34:14-06:00",
+      "last_reply": "2017-02-16T12:34:14-06:00",
+      "root_message_id": "msg-4acb89e5735f"
+    },
+    {
+      "id": "thread-ec89c18277b4",
+      "subject": "Announcing mfe 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Luís Paulo F. Garcia"
+      ],
+      "started": "2017-02-20T08:18:34-03:00",
+      "last_reply": "2017-02-20T08:18:34-03:00",
+      "root_message_id": "msg-ec89c18277b4"
+    },
+    {
+      "id": "thread-af915c022bc5",
+      "subject": "New package: opusminer",
+      "message_count": 1,
+      "participants": [
+        "Angus Dempster"
+      ],
+      "started": "2017-02-21T11:30:24+11:00",
+      "last_reply": "2017-02-21T11:30:24+11:00",
+      "root_message_id": "msg-af915c022bc5"
+    },
+    {
+      "id": "thread-114a9b67893f",
+      "subject": "New package: hrbrthemes",
+      "message_count": 1,
+      "participants": [
+        "Bob Rudis"
+      ],
+      "started": "2017-02-26T11:23:13-05:00",
+      "last_reply": "2017-02-26T11:23:13-05:00",
+      "root_message_id": "msg-114a9b67893f"
+    }
+  ]
+}

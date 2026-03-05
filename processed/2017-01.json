@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-01",
+  "messages": [
+    {
+      "id": "msg-508059c47ff4",
+      "message_id": "<021cdb$5h5q0m@ironport10.mayo.edu>",
+      "from_name": "Sinnwell, Jason P.",
+      "from_email_hash": "3e536969a68dca93d0071076e1ef0794b5c628a648f2109b7089e51d196019c7",
+      "date": "2017-01-11T19:24:11Z",
+      "subject": "[R-pkgs] new package: arsenal",
+      "subject_clean": "new package: arsenal",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\n\n\nWe are pleased to announce a new package that has recently appeared on CRAN, called \"arsenal\" (version 0.1.2: https://CRAN.R-project.org/package=arsenal<https://cran.r-project.org/package=arsenal>).\nThe package is a toolkit for statistical summaries, and is streamlined to work with the latest reporting tools in R and RStudio. The primary functions use a formula-driven approach to creating tables of summary statistics and univariate models. A set of common summary statistics is provided, or user-defined statistics can be used instead.  Model families supported include Binomial, Gaussian, Poisson, and Survival. More details are in the vignettes, which are listed below.\n+ tableby(): a Table-1-like summary of multiple variable types 'by' the levels of a categorical variable\nhttps://cran.r-project.org/web/packages/arsenal/vignettes/tableby.html\n+ modelsum(): performs simple model fits on the same endpoint for many variables (univariate or adjusted for standard covariates)\nhttps://cran.r-project.org/web/packages/arsenal/vignettes/modelsum.html\n+ freqlist(): a powerful frequency table across many categorical variables\nhttps://cran.r-project.org/web/packages/arsenal/vignettes/freqlist.pdf\n\nSuggestions and contributions are welcome.\n\n\n\nBest,\n\nJason Sinnwell\n\nEthan Heinzen\n\n\n\n--\n\nJason Sinnwell and Ethan Heinzen\n\nMayo Clinic\n\nDepartment of Health Sciences Research\n\nDivision of Biomedical Statistics and Informatics\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\n\n\nWe are pleased to announce a new package that has recently appeared on CRAN, called \"arsenal\" (version 0.1.2: https://CRAN.R-project.org/package=arsenal<https://cran.r-project.org/packa",
+      "thread_id": "thread-508059c47ff4",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-31cf1afad9e4",
+      "message_id": "<7B91989A-3503-472A-BDE3-6BE51B182A43@me.com>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "bc5a6cd6b19b750ccb5f3272cd4a5e7069b8d280acb0bad2b7995c0e4290f59f",
+      "date": "2017-01-11T20:55:28-05:00",
+      "subject": "[R-pkgs] Announcing new package expint",
+      "subject_clean": "Announcing new package expint",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am pleased to announce the immediate availability on CRAN of the new\npackage expint: https://cran.r-project.org/package=expint.\n\nThe exponential integral\n\n  E_1(x) = int_x^\\Inf exp(-t)/t dt,  x real\n\nand the incomplete gamma function\n\n  G(a, x) = \\int_x^\\Inf t^{a-1} exp(-t) dt, x > 0, a real\n\nare two closely related functions that arise in various fields of\nmathematics.\n\nexpint is a small package that intends to fill a gap in R's\nsupport for mathematical functions by providing facilities to compute\nthe exponential integral and the incomplete gamma function.\n\nFurthermore, and perhaps most conveniently for R package developers,\nthe package also gives easy access to the underlying C workhorses\nthrough an API; see the exhaustive package vignette for details.\n\nThe C routines are derived from the GNU Scientific Library.\n\nBest,\n\nv.",
+      "body_snippet": "I am pleased to announce the immediate availability on CRAN of the new\npackage expint: https://cran.r-project.org/package=expint.\n\nThe exponential integral\n\n  E_1(x) = int_x^\\Inf exp(-t)/t dt,  x real",
+      "thread_id": "thread-31cf1afad9e4",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-6661565ccbf0",
+      "message_id": "<CAA-FpKXCUe-HMO3QAsF0LAytz8kPX=jCpBOwaPQyCoUQHQpa+w@mail.gmail.com>",
+      "from_name": "Bob Rudis",
+      "from_email_hash": "06069ff8bf65af0cc1ddc4f9da6c2a365b90baa3c37e0a4c63565522e5804ed8",
+      "date": "2017-01-12T06:28:08-05:00",
+      "subject": "[R-pkgs] New package: epidata",
+      "subject_clean": "New package: epidata",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hey folks,\n\nepidata ? https://cran.r-project.org/package=epidata ? hit CRAN a few\ndays ago. It provides tools to retrieve Economic Policy Institute data\nlibrary extracts from their \"hidden\"-but-well-conceived API, returning\npristine data frames.\n\nEPI <http://www.epi.org/> provides researchers, media, and the public\nwith easily accessible, up-to-date, and comprehensive historical data\non the American labor force. It is compiled from Economic Policy\nInstitute analysis of [U.S.] government data sources.\n\nIt has data on wages, unemployment, inequality, and other economic\nindicators over time and among demographic groups. Their data is\nusually updated monthly.\n\nCode (with extended examples in the README) is at:\nhttps://github.com/hrbrmstr/epidata\n\nIssues, enhancements (etc) are ? as always ? welcome.\n\n-Bob",
+      "body_snippet": "Hey folks,\n\nepidata ? https://cran.r-project.org/package=epidata ? hit CRAN a few\ndays ago. It provides tools to retrieve Economic Policy Institute data\nlibrary extracts from their \"hidden\"-but-well-c",
+      "thread_id": "thread-6661565ccbf0",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-cf62ad9dfc8a",
+      "message_id": "<CAPVd8g+MWj++w5ONLBfz90A06bXU0TqQ9C3+djCwjSfJtDFN8Q@mail.gmail.com>",
+      "from_name": "Jacob Kaplan",
+      "from_email_hash": "55eae5df56924b954e0970747e09f9a2da85fe5b32ace694abbcb94b6a491867",
+      "date": "2017-01-22T01:06:00-05:00",
+      "subject": "[R-pkgs] Announcing caesar",
+      "subject_clean": "Announcing caesar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that the package caesar is now on CRAN (\nhttps://cran.r-project.org/web/packages/caesar/index.html).\n\nThe caesar package lets you encrypt and decrypt strings using the common\nCaesar cipher or a more secure pseudorandom number generator method.\n\nIf you would like to know more please visit the repository on GitHub (\nhttps://github.com/jacobkap/caesar).\n\nBest,\nJacob\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that the package caesar is now on CRAN (\nhttps://cran.r-project.org/web/packages/caesar/index.html).\n\nThe caesar package lets you encrypt and decrypt strings usin",
+      "thread_id": "thread-cf62ad9dfc8a",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-b2e6b19736cd",
+      "message_id": "<f7f0ffc1-c3cf-537d-4bd0-8a8d4804cb2a@dewey.myzen.co.uk>",
+      "from_name": "Michael Dewey",
+      "from_email_hash": "dae04c4953348ab1a35e8427343ae0b4fd8830bc053feb0d2b09ee16a3c19a2d",
+      "date": "2017-01-25T16:10:28Z",
+      "subject": "[R-pkgs] Update of package metap now on CRAN",
+      "subject_clean": "Update of package metap now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have uploaded version 0.8 of this package for meta-analysis of \nsignificance values. In the nearly three years since I last posted here \nabout it there have been some additions (see the NEWS) but the most \nimportant change is an extended vignette which not only describes the \nfunction but also gives some information about choice between them.\n\nI would be very interested to hear comments. In particular I am \nsearching for published worked examples of (a) methods involving \nweighting except for Stouffer's method (b) methods for correlated \nsignificance values. I only include methods where I can check my coding \nagainst a published example.\n\nDisclaimer: meta-analysis of significance values is a last resort and if \nyou have effect sizes you should not use this package.\n\n-- \nMichael\nhttp://www.dewey.myzen.co.uk/home.html",
+      "body_snippet": "I have uploaded version 0.8 of this package for meta-analysis of \nsignificance values. In the nearly three years since I last posted here \nabout it there have been some additions (see the NEWS) but th",
+      "thread_id": "thread-b2e6b19736cd",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-558a3dbaa6be",
+      "message_id": "<CAAwsjPiDYg4X0kdg3zCaOQSEq_cn1QSfQC68jHA9jGCRPrFO2A@mail.gmail.com>",
+      "from_name": "Steffen Moritz",
+      "from_email_hash": "19dc5e0266f1d473ab4d03c0932609909c77dab03c7030e84f0a86c02a58bcb4",
+      "date": "2017-01-31T19:16:39+01:00",
+      "subject": "[R-pkgs] Announcing imputeTS 1.8",
+      "subject_clean": "Announcing imputeTS 1.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "imputeTS:\nImputation (replacement) of missing values in univariate time series.\n\nDear R users,\n\nI would like to announce version 1.8 of the imputeTS package.\n( https://cran.r-project.org/package=imputeTS )\n\nSince I did not introduce the package here before, let me give you a short\nwrap up:\n\nThe package\n\n- Focuses on missing value replacement in (univariate) time series\n\n- Offers several simple and very fast imputation algorithms\n  ( e.g. mean, last observation carried forward, linear interpolation )\n\n- Offers several advanced (but slower) imputation algorithms\n   ( like e.g. kalman smoothing on structural time series models )\n\n- Additionally provides functions for plotting the distribution of missing\nvalues\n  in a time series\n\nThe latest (version 1.8) update includes significant speed improvements for\nsome of the imputation functions.\n\nI am always happy about feedback!\n( either per mail or via https://github.com/SteffenMoritz/imputeTS )\n\nBest regards,\n\nSteffen\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "imputeTS:\nImputation (replacement) of missing values in univariate time series.\n\nDear R users,\n\nI would like to announce version 1.8 of the imputeTS package.\n( https://cran.r-project.org/package=imput",
+      "thread_id": "thread-558a3dbaa6be",
+      "thread_depth": 0,
+      "month": "2017-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-508059c47ff4",
+      "subject": "new package: arsenal",
+      "message_count": 1,
+      "participants": [
+        "Sinnwell, Jason P."
+      ],
+      "started": "2017-01-11T19:24:11+00:00",
+      "last_reply": "2017-01-11T19:24:11+00:00",
+      "root_message_id": "msg-508059c47ff4"
+    },
+    {
+      "id": "thread-31cf1afad9e4",
+      "subject": "Announcing new package expint",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2017-01-11T20:55:28-05:00",
+      "last_reply": "2017-01-11T20:55:28-05:00",
+      "root_message_id": "msg-31cf1afad9e4"
+    },
+    {
+      "id": "thread-6661565ccbf0",
+      "subject": "New package: epidata",
+      "message_count": 1,
+      "participants": [
+        "Bob Rudis"
+      ],
+      "started": "2017-01-12T06:28:08-05:00",
+      "last_reply": "2017-01-12T06:28:08-05:00",
+      "root_message_id": "msg-6661565ccbf0"
+    },
+    {
+      "id": "thread-cf62ad9dfc8a",
+      "subject": "Announcing caesar",
+      "message_count": 1,
+      "participants": [
+        "Jacob Kaplan"
+      ],
+      "started": "2017-01-22T01:06:00-05:00",
+      "last_reply": "2017-01-22T01:06:00-05:00",
+      "root_message_id": "msg-cf62ad9dfc8a"
+    },
+    {
+      "id": "thread-b2e6b19736cd",
+      "subject": "Update of package metap now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Dewey"
+      ],
+      "started": "2017-01-25T16:10:28+00:00",
+      "last_reply": "2017-01-25T16:10:28+00:00",
+      "root_message_id": "msg-b2e6b19736cd"
+    },
+    {
+      "id": "thread-558a3dbaa6be",
+      "subject": "Announcing imputeTS 1.8",
+      "message_count": 1,
+      "participants": [
+        "Steffen Moritz"
+      ],
+      "started": "2017-01-31T19:16:39+01:00",
+      "last_reply": "2017-01-31T19:16:39+01:00",
+      "root_message_id": "msg-558a3dbaa6be"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-07",
+  "messages": [
+    {
+      "id": "msg-8a5efd19612d",
+      "message_id": "<a87f8a21-cd5f-e1b4-1779-23ca4c27e589@ben.edu>",
+      "from_name": "Phil Novack-Gottshall",
+      "from_email_hash": "02854d3d3dad51bfe8321dd82c5d45ab1c63711f02c893344a109bb9e9018a64",
+      "date": "2019-07-05T11:37:30-05:00",
+      "subject": "[R-pkgs] Update for R package KScorrect for K-S goodness-of-fit tests",
+      "subject_clean": "Update for R package KScorrect for K-S goodness-of-fit tests",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings,\n\nWe wanted to announce v. 1.4.0 of the R package 'KScorrect', which \ncarries out the Lilliefors correction to the Kolmogorov-Smirnoff (K-S) \ntest for use in (one-sample) goodness-of-fit tests.\n\nAside from several minor changes, the biggest change is that the Monte \nCarlo algorithm now supports parallel implementation, using the \nplatform-independent 'doParallel' and 'foreach' infrastructure. For \ncomplex distributions (such as Weibull, gamma, and mixture of normals), \nrunning in parallel can significantly reduce computation time.\n\nIt's well-established that it inappropriate to use the K-S test when \nsample statistics are used to estimate parameters, which results in \nsubstantially increased Type-II errors. This warning is mentioned in the \nks.test Help page, but no general solution is currently available for \nnon-normal distributions. The 'KScorrect' package corrects for the bias \nby using Monte Carlo simulation, a solution first recommended by \nLilliefors (1967) but not widely heeded.\n\nDistribution functions are provided in the package for the loguniform \nand univariate mixture of normal distributions, which are not included \nin the R base installation.\n\nSimple examples are provided by calling example(KScorrect) or example(LcKS).\n\nAdditional details are available at \nhttps://cran.r-project.org/web/packages/KScorrect. Bug reports, \nsuggestions, and feature requests are encouraged at \nhttps://github.com/pnovack-gottshall/KScorrect.\n\nWe hope you find the functions useful when conducting goodness-of-fit \ntests using the K-S test.\n\nSincerely,\nPhil Novack-Gottshall and Steve Wang\n\n-- \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n  Phil Novack-Gottshall\n  Associate Professor\n  Department of Biological Sciences\n  Benedictine University\n  5700 College Road  Lisle, IL 60532\n\n  pnovack-gottshall at ben.edu\n  Phone: 630-829-6514\n  Fax: 630-829-6547\n  Office: 332 Birck Hall\n  Lab: 316 Birck Hall\n  http://www.ben.edu/faculty/pnovack-gottshall\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "body_snippet": "Greetings,\n\nWe wanted to announce v. 1.4.0 of the R package 'KScorrect', which \ncarries out the Lilliefors correction to the Kolmogorov-Smirnoff (K-S) \ntest for use in (one-sample) goodness-of-fit tes",
+      "thread_id": "thread-8a5efd19612d",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-d44a767e8faa",
+      "message_id": "<798672124.2819020.1562603856600@mail.yahoo.com>",
+      "from_name": "mohammed ibrahim",
+      "from_email_hash": "bb5d3a083144648dbd980a02ffc86d60fd428e947b2bf555f3e2dd6944bc4a0a",
+      "date": "2019-07-08T16:37:36Z",
+      "subject": "[R-pkgs] dbparser v1.0.2: DrugBank XML Database Parser",
+      "subject_clean": "dbparser v1.0.2: DrugBank XML Database Parser",
+      "in_reply_to": null,
+      "references": [
+        "<798672124.2819020.1562603856600.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hello,?\nKindly check the new release of dbparser v1.0.2 on?https://cran.r-project.org/web/packages/dbparser/index.html\nThe new release include:?\n- Fix zip file location issue??\n- Replace Secondary and third keys columns from drug framework with other_keys column that contains any other keys that might exist in addition to the primary key??\n- Add average-mass, monoisotopic-mass and calculated-properties parsers.??\n- Support saving parsed drugs related parsed database as csv?\n\nAs always, contributions and bug reports are welcome on https://dainanahan.github.io/dbparser/index.html?\n\nBest Regards,\nMohammed Ali\nMSc in Applied Data Science & Big Data\nmohammed.ali at edu.dsti.institute\n+20 01000481973\neg.linkedin.com/in/mohammedali85",
+      "body_snippet": "Hello,?\nKindly check the new release of dbparser v1.0.2 on?https://cran.r-project.org/web/packages/dbparser/index.html\nThe new release include:?\n- Fix zip file location issue??\n- Replace Secondary and",
+      "thread_id": "thread-d44a767e8faa",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-10d0b01da099",
+      "message_id": "<154001d535c6$b1f703d0$15e50b70$@zuckarelli.de>",
+      "from_name": "jo@chim m@iii@g oii zuck@reiii@de",
+      "from_email_hash": "ed5429e40662f3b322f96d5858e964eb8bbb4ddd1e6f8150d5b78fdfbbfd0ce1",
+      "date": "2019-07-08T21:52:37+02:00",
+      "subject": "[R-pkgs] packagefinder 0.1.4: Finding packages from the R console",
+      "subject_clean": "packagefinder 0.1.4: Finding packages from the R console",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\n\n\nCurrently, there are more than 14,500 R packages on CRAN providing R with an\nunparalleled wealth of features. The downside of the large and increasing\namount of packages is that it becomes increasingly difficult to find the\nright tools to tackle a specific problem.\n\n\n\nThe 'packagefinder' package is designed to search for CRAN packages right\nfrom the R console. The philosophy behind the package is that R users enjoy\nworking with the R console and need a tool to do their day-to-day-work on\nCRAN without leaving their normal workspace, the console.\n\n\n\npackagefinder helps you.\n\n* . find the right package for your purpose\n\n* . get detailed information about packages (incl. access to online\ndocumentation)\n\n* . learn about what's new on CRAN\n\n\n\nLearn more about packagefinder:\n\n* Read the web tutorial:\n<http://www.zuckarelli.de/packagefinder/tutorial.html>\nhttp://www.zuckarelli.de/packagefinder/tutorial.html\n\n* Watch the video tutorial:  <https://www.youtube.com/watch?v=66Mes6_hYno>\nhttps://www.youtube.com/watch?v=66Mes6_hYno\n\n* Visit the GitHub repo:  <https://github.com/jsugarelli/packagefinder>\nhttps://github.com/jsugarelli/packagefinder\n\n* Follow me on Twitter:  <https://twitter.com/jsugarelli>\nhttps://twitter.com/jsugarelli\n\n\n\nBest,\n\n\n\nJoachim\n\n\n\n\n\nJoachim L. Zuckarelli\nE-mail:  <mailto:joachim at zuckarelli.de> joachim at zuckarelli.de\n\nWebsite:  <http://www.zuckarelli.de/> http://www.zuckarelli.de\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\n\n\nCurrently, there are more than 14,500 R packages on CRAN providing R with an\nunparalleled wealth of features. The downside of the large and increasing\namount of packages is that it ",
+      "thread_id": "thread-10d0b01da099",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-60d75c025363",
+      "message_id": "<69912ad7d1ae41a4b0e1b0f9df1e799b@uwaterloo.ca>",
+      "from_name": "Hyunjin Cho",
+      "from_email_hash": "25d751bcf5e174b7e34de7ba3ea7f7a328f06947bf685115106e9420cfc7c42e",
+      "date": "2019-07-19T12:36:11Z",
+      "subject": "[R-pkgs] Introducing The New Package 'forestRK'",
+      "subject_clean": "Introducing The New Package 'forestRK'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\n\nI am pleased to announce my new package forestRK. The package implements Forest-RK algorithm discussed in the paper \"Forest-RK: A New Random Forest Induction Method\" by Simon Bernard, Laurent Heutte, Sebastien Adam, 4th International Conference on Intelligent Computing (ICIC), Sep 2008, Shanghai, China, pp.430-437, to various datasets for classification.\n\n\nSome of the forestRK functions were built based on the discussion:\n\n  https://stats.stackexchange.com/questions/168964/building-a-regression-tree-with-r-from-scratch/168967#168967\n\n\nExamples of functions included in the new forestRK package are (there are 17 functions in total in this package):\n\n\n1. construct.treeRK: Builds a single decision tree after implementing the RK (random ?K?) algorithm (i.e. builds ?rktree?);\n\n\n2. pred.treeRK: Makes predictions on the test observations based on the ?rktree? model in question;\n\n\n3. draw.treeRK: Makes igraph plot of a ?rktree?.\n\n\n4. forestRK: Builds a Forest-RK model;\n\n\n5. pred.forestRK: Makes predictions on the test observations by using the Forest-RK algorithm;\n\n\n\n6. mds.plot.forestRK: Generate 2D Multi-Dimensional Scaling plot of the test observations, where the test observations are colour coded by their predicted class type indicated in the pred.forestRK object;\n\n\n7. importance.forestRK: Calculate Gini Importance of each covariate based on a forestRK model;\n\n\n8. importance.plot.forestRK: Generate Importance ggplot of the covariates.\n\n\nThe forestRK package also provides tools to encode non-numeric dataset into a numeric one via Numeric Encoding or Binary Encoding.\n\n\nFor more information about the new forestRK package, please visit:\n\n\nhttps://cran.r-project.org/web/packages/forestRK/index.html (CRAN)\n\nhttps://github.com/h56cho/forestRK (Github)\n\n\nHyunjin Cho\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\n\nI am pleased to announce my new package forestRK. The package implements Forest-RK algorithm discussed in the paper \"Forest-RK: A New Random Forest Induction Method\" by Simon Bernard, Laurent",
+      "thread_id": "thread-60d75c025363",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-f3ca9ce8defc",
+      "message_id": "<CAAGSCf2J4rjmj=DLZAVJLPBtocjN40n31VoO0wv6MQDgQHE57Q@mail.gmail.com>",
+      "from_name": "Silvana Pesenti",
+      "from_email_hash": "b9a23d6dbfb161dff1488721ce7d5571b548745c1913b968928fbb247fd7930a",
+      "date": "2019-07-19T18:21:11-04:00",
+      "subject": "[R-pkgs] New CRAN Release: SWIM",
+      "subject_clean": "New CRAN Release: SWIM",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The *SWIM* (Sensitivity Weights for Importance Weights) package is released\non CRAN: https://CRAN.R-project.org/package=SWIM.\n\nThe *SWIM* package provides weights on simulated scenarios from a\nstochastic model, such that stressed model components (random variables)\nfulfil given probabilistic constraints (e.g. specified values for risk\nmeasures), under the new scenario weights. Scenario weights are selected by\nconstrained minimisation of the relative entropy to the baseline model.\nImplemented constraints are stresses on the Vaule-at-Risk,\nExpected-Shortfall, moments and probability intervals. Visual tools such as\nplotting of the stressed empirical distribution function, histograms and\nsensitivity measures are provided.\n\nConsult the README for examples on GitHub: https://github.com/spesenti/SWIM\n\nBest regards,\nSWIM maintainer\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The *SWIM* (Sensitivity Weights for Importance Weights) package is released\non CRAN: https://CRAN.R-project.org/package=SWIM.\n\nThe *SWIM* package provides weights on simulated scenarios from a\nstochas",
+      "thread_id": "thread-f3ca9ce8defc",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-840fe8367826",
+      "message_id": "<CAJnynRN1hTgmrAO=EDOixktCQee122JPtqEMRc6FEYXhn5vNZw@mail.gmail.com>",
+      "from_name": "Tanbing Yan",
+      "from_email_hash": "72458959f936c5c72c967aae8a092a4e8696fc60d6f8986b2e261c882c5345d9",
+      "date": "2019-07-22T14:23:31-04:00",
+      "subject": "[R-pkgs] Introducing teamr Package",
+      "subject_clean": "Introducing teamr Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Today I am so pleased to introduce my first CRAN package for sending\nformatted messages to Microsoft Teams, teamr\n<https://github.com/wwwjk366/teamr>.\n\nMotivation is simple here. For years I have been using Slack and built many\nslash commands and apps using incoming webhooks with R, but ever since I\nstarted to use Teams, I found that we will have the same needs for\ncommunicating with R as well. So with some inspiration from the Python\npackage pymsteams <https://pypi.org/project/pymsteams/>. I created\nteamr package\nwith the hope that this package will provide a simple and clean way to talk\nto Teams from R.\nInstallation\n\nYou can install the released version of teamr from CRAN\n<https://cran.r-project.org/> with:\n\ninstall.packages(\"teamr\")\n\nAnd the development version from GitHub <https://github.com/> with:\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"wwwjk366/teamr\")\n\nExample\n\nThis is a basic example of send a simple titled message to MS Teams:\n\nlibrary(teamr)\n# initiate new connector card object\ncc <- connector_card$new(hookurl =\n\"https://outlook.office.com/webhook/...\")# add text\ncc$text(\"This is text of main body.\")# add title\ncc$title(\"This is message title\")# add hyperlink button\ncc$add_link_button(\"Read more\", \"https://www.google.com\")# change theme color\ncc$color(\"#008000\")\n\nWe can print out the payload that will be sending to given webhook using\nprintmethod\n\n# print out the payload for checking\ncc$print()\n\nCard:\n  hookurl: https://outlook.office.com/webhook/...\n  payload:  {\"text\":\"This is text of main body.\",\"title\":\"This is\nmessage title\",\"potentialAction\":[{\"@context\":\"http://schema.org\",\"@type\":\"ViewAction\",\"name\":\"Read\nmore\",\"target\":[\"https://www.google.com\"]}],\"themeColor\":\"#008000\"}\n\nOur JSON payload looks good, time to send it out :)\n\n# send to Teams\ncc$send()\n\n[1] TRUE\n\nsend menthod will return TRUE if send was successful (status code 200). If\nit failed, it will return the reponse object for further investigation. Our\nmessage with a link button will looks like this:\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Today I am so pleased to introduce my first CRAN package for sending\nformatted messages to Microsoft Teams, teamr\n<https://github.com/wwwjk366/teamr>.\n\nMotivation is simple here. For years I have been",
+      "thread_id": "thread-840fe8367826",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-f9fae89e705d",
+      "message_id": "<1000196845.51881.1563956649748@us2.webmail.mailhostbox.com>",
+      "from_name": "Mike Page",
+      "from_email_hash": "d708c2d1a625391be1b6f41c212aa4e8481a9a0769b49837d6c557b2e29ace4c",
+      "date": "2019-07-24T13:54:09+05:30",
+      "subject": "[R-pkgs] {mortyr}",
+      "subject_clean": "{mortyr}",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New package: mortyr. A wrapper to the The Rick and Morty API https://rickandmortyapi.com/  and the most rickdiculous package in the R-verse. Use it to return information about your favourite characters, locations, and episodes from the show.\n\nThe released version can be found on CRAN: https://CRAN.R-project.org/package=mortyr\n\n---\n\nhttps://www.mikejohnpage.com/\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "New package: mortyr. A wrapper to the The Rick and Morty API https://rickandmortyapi.com/  and the most rickdiculous package in the R-verse. Use it to return information about your favourite character",
+      "thread_id": "thread-f9fae89e705d",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-d9a96b88684f",
+      "message_id": "<20190724110931.Horde.KX2QOipvW-Cw3tvL2E2fiIc@wmail4.units.it>",
+      "from_name": "iegidi m@iii@g oii u@its@it",
+      "from_email_hash": "170f29dd11851538dc7222d0171f9d97d7f639da342d2263240068e7098dae85",
+      "date": "2019-07-24T11:09:31+02:00",
+      "subject": "[R-pkgs] pivmet 0.2.0 - Pivotal Methods for Bayesian Relabelling and k-Means Clustering",
+      "subject_clean": "pivmet 0.2.0 - Pivotal Methods for Bayesian Relabelling and k-Means Clustering",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new version (0.2.0) of rhe 'pivmet' package is released on CRAN:\nhttps://CRAN.R-project.org/package=pivmet.\n\nThe package offers a collection of pivotal algorithms\nfor: relabelling the MCMC chains in order to undo the label\nswitching problem in Bayesian mixture models,\nas proposed in Egidi et al. (2018a);\ninitializing the centers of the classical k-means algorithm\nin order to obtain a better clustering solution (Egidi et al., 2018b).\n\nThe new version incorporates the Stan language for fitting\nefficient mixture models.\n\ngithub package page at:\n\nhttps://github.com/LeoEgidi/pivmet\n\nHere are the two referred articles:\n\nEgidi et al. (2018a)\nhttps://link.springer.com/article/10.1007/s11222-017-9774-2\n\nEgidi et al. (2018b)\nhttps://www.researchgate.net/profile/Leonardo_Egidi/publication/326225330_K-means_seeding_via_MUS_algorithm_-_Inizializzazione_del_K-means_tramite_l%27algoritmo_MUS/links/5b3f2c2caca27207851c7865/K-means-seeding-via-MUS-algorithm-Inizializzazione-del-K-means-tramite-lalgoritmo-MUS.pdf\n\n\nAll the best\n\nLeonardo Egidi\nPostdoctoral researcher\nUniversity of Trieste",
+      "body_snippet": "The new version (0.2.0) of rhe 'pivmet' package is released on CRAN:\nhttps://CRAN.R-project.org/package=pivmet.\n\nThe package offers a collection of pivotal algorithms\nfor: relabelling the MCMC chains ",
+      "thread_id": "thread-d9a96b88684f",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-5f1b0c06d026",
+      "message_id": "<CAAcGz9_jHUaJE9gdRexnzkCfAkuwUpddmWmVPug9ZnaXD1TadQ@mail.gmail.com>",
+      "from_name": "Michael Sumner",
+      "from_email_hash": "ec02820eba6228afb61925d60b233042e6d048081cc8b7f7e46a034ba5ad3d90",
+      "date": "2019-07-24T22:51:14+10:00",
+      "subject": "[R-pkgs] ceramic - download web map tiles to local cache",
+      "subject_clean": "ceramic - download web map tiles to local cache",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nThere's a new package ceramic to download online imagery tiles.\n\nDownload imagery tiles to a local cache and load the data into raster\nobjects. Facilities  are provided for Amazon 'AWS' terrain\nhttps://aws.amazon.com/public-datasets/terrain/ and Mapbox images and\nterrain https://www.mapbox.com/.\n\nUse of Mapbox requires obtaining an API key and setting it locally,\nfunctions that require this key provide information on doing this if a\nvalid key is not found.\n\nTiled imagery may be downloaded and cached by providing a spatial extent in\nseveral possible formats, with optional control over provider, tile type,\nformat and zoom.  Direct access to load a raster image will trigger the\ntile download and caching, if required.\n\nThe release 0.6.0 of ceramic is available on CRAN:\n\nhttps://CRAN.R-project.org/package=ceramic\n\nThe development repository of ceramic is hosted on GitHub:\n\nhttps://github.com/hypertidy/ceramic\n\nThank you.\n\n-- \nMichael Sumner\nSoftware and Database Engineer\nAustralian Antarctic Division\nHobart, Australia\ne-mail: mdsumner at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nThere's a new package ceramic to download online imagery tiles.\n\nDownload imagery tiles to a local cache and load the data into raster\nobjects. Facilities  are provided for Amazon 'AWS' terrai",
+      "thread_id": "thread-5f1b0c06d026",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-52c7748a0739",
+      "message_id": "<CAKcJ18NYWQOmCZD+ks0bh7j9FHeTto0qgFfh5J=GSsFCfQ-6FA@mail.gmail.com>",
+      "from_name": "Hugo Pedder",
+      "from_email_hash": "777394553e8c8267eccf0dfe3fd935da4486c1f3d01e31c09b5cf7b028d112d0",
+      "date": "2019-07-25T17:40:51+01:00",
+      "subject": "[R-pkgs] New package MBNMAdose: dose-response meta-analysis",
+      "subject_clean": "New package MBNMAdose: dose-response meta-analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI would like to introduce you to a new package available on CRAN for\nperforming meta-analysis of dose-response relationships, 'MBNMAdose'.\n\nFor anyone who has performed a meta-analysis or network meta-analysis\nbefore, you might be aware of the difficulties of including different doses\nof a drug. Typically one either assumes that different doses have a broadly\nsimilar effect, or that they are totally independent.\n\nMBNMAdose allows you to explicitly model the dose-response relationship in\na statistically robust framework. By modelling dose-response relationships\nthis can connect networks of evidence that might otherwise be disconnected,\nand can improve precision on treatment estimates.\n\nThere's a detailed vignette included with the package that explains\neverything in a lot more detail for those that are interested.\n\nAny feedback or suggestions for improvements would be hugely welcome.\n\nMany thanks,\n\nHugo\n\nHugo Pedder\nSenior Research Associate\nPopulation Health Sciences\nUniversity of Bristol\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI would like to introduce you to a new package available on CRAN for\nperforming meta-analysis of dose-response relationships, 'MBNMAdose'.\n\nFor anyone who has performed a meta-analysis or net",
+      "thread_id": "thread-52c7748a0739",
+      "thread_depth": 0,
+      "month": "2019-07"
+    },
+    {
+      "id": "msg-afc96610e562",
+      "message_id": "<63dd5294-e9ae-294d-5f09-0a835c40637d@sicyon.com>",
+      "from_name": "Teodor Krastev",
+      "from_email_hash": "37d45c16a3345b9e6b3ce28b03b0eea995ce30565267b91ac443fd4e7ac53a02",
+      "date": "2019-07-28T12:43:39+01:00",
+      "subject": "[R-pkgs] new version (2.0.0) of spectrino package",
+      "subject_clean": "new version (2.0.0) of spectrino package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new version (2.0.0) of 'spectrino' package is released on CRAN: \n_https://CRAN.R-project.org/package=spectrino_.\n\nRemainder: ?spectrino? is a spectra preparation software utility for R. \nIt is OS specific tool (Microsoft Windows), with specialized \nvisualization, organization and pre-processing features for spectra \n(mostly mass-spec). The software accepts spectral data from analytical \ninstruments and then prepares a data structure to be introduced into R. \n?spectrino? has a rich set of features to create data structures and \nvisually manipulate/compare spectra.\n\nVersion 2.0 of Spectrino adds new features to the spectral part of the \napplication (multi-tab spec-trees) and a completely new part - blocks of \nproperties. The latter provides user interface to a list of properties \n(accessible from your script) as well as log, chart and snippet (small \npieces of code) support. As properties are modifiable from both sides: \nuser interface and your code, this feature offers a versatile and \nconvenient way for parametrized control to your algorithm.\n\nFor more details (including manual) visit http://spectrino.com\n\nYou may read an article about Spectrino (v1.6) in \"Journal of \nStatistical Software\" https://www.jstatsoft.org/article/view/v018i10\n\nAll the best\n\nTeodor Krastev\n\nResearch Associate,\n\nPhysics Department, Imperial College, London, UK\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The new version (2.0.0) of 'spectrino' package is released on CRAN: \n_https://CRAN.R-project.org/package=spectrino_.\n\nRemainder: ?spectrino? is a spectra preparation software utility for R. \nIt is OS ",
+      "thread_id": "thread-afc96610e562",
+      "thread_depth": 0,
+      "month": "2019-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8a5efd19612d",
+      "subject": "Update for R package KScorrect for K-S goodness-of-fit tests",
+      "message_count": 1,
+      "participants": [
+        "Phil Novack-Gottshall"
+      ],
+      "started": "2019-07-05T11:37:30-05:00",
+      "last_reply": "2019-07-05T11:37:30-05:00",
+      "root_message_id": "msg-8a5efd19612d"
+    },
+    {
+      "id": "thread-d44a767e8faa",
+      "subject": "dbparser v1.0.2: DrugBank XML Database Parser",
+      "message_count": 1,
+      "participants": [
+        "mohammed ibrahim"
+      ],
+      "started": "2019-07-08T16:37:36+00:00",
+      "last_reply": "2019-07-08T16:37:36+00:00",
+      "root_message_id": "msg-d44a767e8faa"
+    },
+    {
+      "id": "thread-10d0b01da099",
+      "subject": "packagefinder 0.1.4: Finding packages from the R console",
+      "message_count": 1,
+      "participants": [
+        "jo@chim m@iii@g oii zuck@reiii@de"
+      ],
+      "started": "2019-07-08T21:52:37+02:00",
+      "last_reply": "2019-07-08T21:52:37+02:00",
+      "root_message_id": "msg-10d0b01da099"
+    },
+    {
+      "id": "thread-60d75c025363",
+      "subject": "Introducing The New Package 'forestRK'",
+      "message_count": 1,
+      "participants": [
+        "Hyunjin Cho"
+      ],
+      "started": "2019-07-19T12:36:11+00:00",
+      "last_reply": "2019-07-19T12:36:11+00:00",
+      "root_message_id": "msg-60d75c025363"
+    },
+    {
+      "id": "thread-f3ca9ce8defc",
+      "subject": "New CRAN Release: SWIM",
+      "message_count": 1,
+      "participants": [
+        "Silvana Pesenti"
+      ],
+      "started": "2019-07-19T18:21:11-04:00",
+      "last_reply": "2019-07-19T18:21:11-04:00",
+      "root_message_id": "msg-f3ca9ce8defc"
+    },
+    {
+      "id": "thread-840fe8367826",
+      "subject": "Introducing teamr Package",
+      "message_count": 1,
+      "participants": [
+        "Tanbing Yan"
+      ],
+      "started": "2019-07-22T14:23:31-04:00",
+      "last_reply": "2019-07-22T14:23:31-04:00",
+      "root_message_id": "msg-840fe8367826"
+    },
+    {
+      "id": "thread-d9a96b88684f",
+      "subject": "pivmet 0.2.0 - Pivotal Methods for Bayesian Relabelling and k-Means Clustering",
+      "message_count": 1,
+      "participants": [
+        "iegidi m@iii@g oii u@its@it"
+      ],
+      "started": "2019-07-24T11:09:31+02:00",
+      "last_reply": "2019-07-24T11:09:31+02:00",
+      "root_message_id": "msg-d9a96b88684f"
+    },
+    {
+      "id": "thread-f9fae89e705d",
+      "subject": "{mortyr}",
+      "message_count": 1,
+      "participants": [
+        "Mike Page"
+      ],
+      "started": "2019-07-24T13:54:09+05:30",
+      "last_reply": "2019-07-24T13:54:09+05:30",
+      "root_message_id": "msg-f9fae89e705d"
+    },
+    {
+      "id": "thread-5f1b0c06d026",
+      "subject": "ceramic - download web map tiles to local cache",
+      "message_count": 1,
+      "participants": [
+        "Michael Sumner"
+      ],
+      "started": "2019-07-24T22:51:14+10:00",
+      "last_reply": "2019-07-24T22:51:14+10:00",
+      "root_message_id": "msg-5f1b0c06d026"
+    },
+    {
+      "id": "thread-52c7748a0739",
+      "subject": "New package MBNMAdose: dose-response meta-analysis",
+      "message_count": 1,
+      "participants": [
+        "Hugo Pedder"
+      ],
+      "started": "2019-07-25T17:40:51+01:00",
+      "last_reply": "2019-07-25T17:40:51+01:00",
+      "root_message_id": "msg-52c7748a0739"
+    },
+    {
+      "id": "thread-afc96610e562",
+      "subject": "new version (2.0.0) of spectrino package",
+      "message_count": 1,
+      "participants": [
+        "Teodor Krastev"
+      ],
+      "started": "2019-07-28T12:43:39+01:00",
+      "last_reply": "2019-07-28T12:43:39+01:00",
+      "root_message_id": "msg-afc96610e562"
+    }
+  ]
+}

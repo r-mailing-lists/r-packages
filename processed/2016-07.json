@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-07",
+  "messages": [
+    {
+      "id": "msg-3c6703bf0e3b",
+      "message_id": "<CAC58_Y=nCh6nd19C_-1KsYpW12R+GMYrkDQV+qWeO5QmYU48qg@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c8d656fb819da8012d5821aea2d81117adec96293c0907599d677f0e82262a42",
+      "date": "2016-07-03T01:39:23+05:30",
+      "subject": "[R-pkgs] Seasonal PSF - Time Series Forecasting algorithm",
+      "subject_clean": "Seasonal PSF - Time Series Forecasting algorithm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi friends,\nIf you are interested in univariate time series data predictions, have a\nlook in PSF algorithm and it's R Packages available at :\nCRAN: https://cran.r-project.org/web/packages/PSF/index.html\n\nGitHub: https://github.com/neerajdhanraj/PSF\n\nHow to use:\nhttps://www.researchgate.net/publication/304131481_PSF_Introduction_to_R_Package_for_Pattern_Sequence_Based_Forecasting_Algorithm\n\nand\n\nhttps://www.researchgate.net/publication/304580701_Introduction_of_seasonality_concept_in_PSF_algorithm_to_improve_univariate_time_series_predictions\n\nFor further details contact me at: http://www.neerajbokde.com?\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi friends,\nIf you are interested in univariate time series data predictions, have a\nlook in PSF algorithm and it's R Packages available at :\nCRAN: https://cran.r-project.org/web/packages/PSF/index.ht",
+      "thread_id": "thread-3c6703bf0e3b",
+      "thread_depth": 0,
+      "month": "2016-07"
+    },
+    {
+      "id": "msg-cfc477bd5c52",
+      "message_id": "<CANpor5BHktAcQF_74vevaDYx=q8NXhJ=qkED7J9No5yvgNzqng@mail.gmail.com>",
+      "from_name": "Marie Laure Delignette-Muller",
+      "from_email_hash": "8cf92e87cf3def8ebaf4ed3818faad9bf0249840a4b34b422342076108e38d5c",
+      "date": "2016-07-07T17:12:17+02:00",
+      "subject": "[R-pkgs] new version of the package fitdistrplus",
+      "subject_clean": "new version of the package fitdistrplus",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce your a new version of fitdistrplus  (\nhttps://cran.r-project.org/package=fitdistrplus). Among the new features of\nthe package (https://cran.r-project.org/web/packages/fitdistrplus/NEWS), a\nFAQ vignette is now available (\nhttps://cran.r-project.org/web/packages/fitdistrplus/vignettes/FAQ.html).\nWe will be delighted to update it with new questions sent by users. Do not\nhesitate to send us any comment on this vignette or on the package in\ngeneral.\n\nBest regards\nMarie Laure DELIGNETTE-MULLER and Christophe DUTANG\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "We are pleased to announce your a new version of fitdistrplus  (\nhttps://cran.r-project.org/package=fitdistrplus). Among the new features of\nthe package (https://cran.r-project.org/web/packages/fitdis",
+      "thread_id": "thread-cfc477bd5c52",
+      "thread_depth": 0,
+      "month": "2016-07"
+    },
+    {
+      "id": "msg-e302d550a281",
+      "message_id": "<0A4219CAB0E2EC4B98F9C7C2F51CC838238384B3@MBX115.d.ethz.ch>",
+      "from_name": "Hill  Andreas",
+      "from_email_hash": "52470d9e23f9816aa6081cbd8005640b37122755b1ce751a8933355ad5846a94",
+      "date": "2016-07-09T11:38:53Z",
+      "subject": "[R-pkgs] New package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'",
+      "subject_clean": "New package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nWe are happy to announce that the R package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'\nis now on CRAN (https://cran.r-project.org/web/packages/forestinventory/).\n\nThe aim of our package is to provide global- and smallarea estimators for twophase and threephase forest inventories under simple and cluster sampling.\nThe methods can be used for double sampling for stratification (i.e. classical ANOVA model as prediction model),\ndouble sampling for regression (i.e. multiple regression model as prediction model) and double sampling for regression within strata\n(i.e. classical ANCOVA model as prediction model). The implemented estimators have been developed by Daniel Mandallaz at ETH Zurich\nand their implementation has been optimized according to current challenges and needs of multiphase inventories (e.g. use of remote sensing / geodata).\n\nRelevant features:\n\n-          Provides point - and variance estimators for 64 inventory scenarios in total,\n\naccording to sample design (simple and cluster sampling, two- and threephase inventory designs) and availability of auxiliary information\n\n-          Allows for the computation of Confidence Intervals for the point estimates\n\n-          Completes the range of the already published estimators for threephase small area estimations\n\n-          Also includes estimators for onephase inventories (only using terrestrial inventory data)\n\nUpcoming activities:\nWe will publish a vignette illustrating the use of the various estimators as soon as possible.\n\n\nBest,\n\nAndreas Hill\nAlexander Massey\n\n\n-------------------------------------------\nETH Z?rich\nAndreas Hill\nForstl. Ingenieurwesen, Heinimann\nCHN K 75.1\nUniversit?tstrasse 16\n8092 Z?rich\n\nTelefon: +41 44 632 32 36\nAndreas.hill at usys.ethz.ch\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nWe are happy to announce that the R package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'\nis now on CRAN (https://cran.r-project.or",
+      "thread_id": "thread-e302d550a281",
+      "thread_depth": 0,
+      "month": "2016-07"
+    },
+    {
+      "id": "msg-156f124fafcc",
+      "message_id": "<002501d1de24$0bea7a00$23bf6e00$@gmail.com>",
+      "from_name": "Simon Jackson",
+      "from_email_hash": "25919e7159cfec3aa67ca2aa802568865000935b23f8da5c1371bf3e8cf03be0",
+      "date": "2016-07-15T09:04:13+10:00",
+      "subject": "[R-pkgs] New package: corrr 0.1.0",
+      "subject_clean": "New package: corrr 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\n \n\nI'm glad to announce the release of a new package on CRAN for exploring\ncorrelations in R: corrr\n<https://cran.rstudio.com/web/packages/corrr/index.html> .\n\n \n\ncorrr provides a handful of methods to create and explore a correlation tbl\n(rather than a matrix). E.g., rearrange() the correlations based on their\nstrength, or focus() on selected variables against others. All methods are\ndesigned to work in data pipelines, and the tbl (data frame) structure\nallows for custom exploration using packages like dplyr.\n\n \n\ncorrr is my first package on CRAN, and I'd greatly appreciate any feedback,\nsuggestions, or contributions on Github: https://github.com/drsimonj/corrr\n\n \n\nEnjoy,\n\n \n\nSimon\n\nSIMON A JACKSON | Postdoctoral Research Fellow\nCognitive and Decision Sciences Research Lab (CODES), School of Psychology\n\nTHE UNIVERSITY OF SYDNEY\nRm 440, Brennan MacCallum Building A18 | The University of Sydney | NSW |\n2006\ndrsimonjackson at gmail.com <mailto:drsimonjackson at gmail.com>   | @drsimonj\n<https://twitter.com/drsimonj> \n\n \n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n \n\nI'm glad to announce the release of a new package on CRAN for exploring\ncorrelations in R: corrr\n<https://cran.rstudio.com/web/packages/corrr/index.html> .\n\n \n\ncorrr provides a handf",
+      "thread_id": "thread-156f124fafcc",
+      "thread_depth": 0,
+      "month": "2016-07"
+    },
+    {
+      "id": "msg-8dd1bb0a7ccd",
+      "message_id": "<CAFUVuJwJ1-Uk5KJHYv0L+FEVk=WKwe2yPvL9C=wxCoy_WzhgKw@mail.gmail.com>",
+      "from_name": "James Pustejovsky",
+      "from_email_hash": "ff5337671e7bcc03df08ad94f558c1d3e5a89471c2640137ef4d569e650bbeea",
+      "date": "2016-07-27T09:29:16-05:00",
+      "subject": "[R-pkgs] new package clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample Corrections",
+      "subject_clean": "new package clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample Corrections",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users:\n\nI'm happy to announce the first CRAN release of the clubSandwich package:\n\nhttps://cran.r-project.org/web/packages/clubSandwich\n\nclubSandwich provides several variants of the cluster-robust variance\nestimator for ordinary and weighted least squares linear regression models,\nincluding the bias-reduced linearization estimator of Bell and McCaffrey\n(2002). The package includes functions for estimating the\nvariance-covariance matrix and for testing single- and multiple-contrast\nhypotheses based on Wald test statistics. The hypothesis tests incorporate\nsmall-sample corrections that lead to more accurate rejection rates when\nthe number of clusters is small or the design is unbalanced/leveraged.\nTests of single regression coefficients use Satterthwaite or saddle-point\ncorrections. Tests of multiple-contrast hypotheses use an approximation to\nHotelling's T-squared distribution. Methods are provided for a variety of\nfitted models, including lm(), plm() (from package 'plm'), gls() and lme()\n(from 'nlme'), robu() (from 'robumeta'), and rma.uni() and rma.mv() (from\n'metafor').\n\nThe package includes two vignettes that demonstrate its use for estimation\nof panel data models and meta-regression models.\n\nBug reports, suggestions, and feature requests are welcome\nat https://github.com/jepusto/clubSandwich\n\nCheers,\nJames\n\n\n___________________________________________\nJames Pustejovsky\nAssistant Professor, Quantitative Methods Program\nEducational Psychology Department\nThe University of Texas at Austin\nhttp://jepusto.github.io/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n\nI'm happy to announce the first CRAN release of the clubSandwich package:\n\nhttps://cran.r-project.org/web/packages/clubSandwich\n\nclubSandwich provides several variants of the cluster-ro",
+      "thread_id": "thread-8dd1bb0a7ccd",
+      "thread_depth": 0,
+      "month": "2016-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3c6703bf0e3b",
+      "subject": "Seasonal PSF - Time Series Forecasting algorithm",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2016-07-03T01:39:23+05:30",
+      "last_reply": "2016-07-03T01:39:23+05:30",
+      "root_message_id": "msg-3c6703bf0e3b"
+    },
+    {
+      "id": "thread-cfc477bd5c52",
+      "subject": "new version of the package fitdistrplus",
+      "message_count": 1,
+      "participants": [
+        "Marie Laure Delignette-Muller"
+      ],
+      "started": "2016-07-07T17:12:17+02:00",
+      "last_reply": "2016-07-07T17:12:17+02:00",
+      "root_message_id": "msg-cfc477bd5c52"
+    },
+    {
+      "id": "thread-e302d550a281",
+      "subject": "New package 'forestinventory: Design-Based Global and Small-Area Estimations for Multiphase Forest Inventories'",
+      "message_count": 1,
+      "participants": [
+        "Hill  Andreas"
+      ],
+      "started": "2016-07-09T11:38:53+00:00",
+      "last_reply": "2016-07-09T11:38:53+00:00",
+      "root_message_id": "msg-e302d550a281"
+    },
+    {
+      "id": "thread-156f124fafcc",
+      "subject": "New package: corrr 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Simon Jackson"
+      ],
+      "started": "2016-07-15T09:04:13+10:00",
+      "last_reply": "2016-07-15T09:04:13+10:00",
+      "root_message_id": "msg-156f124fafcc"
+    },
+    {
+      "id": "thread-8dd1bb0a7ccd",
+      "subject": "new package clubSandwich: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample Corrections",
+      "message_count": 1,
+      "participants": [
+        "James Pustejovsky"
+      ],
+      "started": "2016-07-27T09:29:16-05:00",
+      "last_reply": "2016-07-27T09:29:16-05:00",
+      "root_message_id": "msg-8dd1bb0a7ccd"
+    }
+  ]
+}

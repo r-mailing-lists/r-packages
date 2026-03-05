@@ -1,0 +1,333 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-09",
+  "messages": [
+    {
+      "id": "msg-d5f77e7f494b",
+      "message_id": "<AANLkTim3G666qV9LucV0gXxU5T4+H3OoiMK+Rzy_OAKs@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-09-01T07:54:46-05:00",
+      "subject": "[R-pkgs] testthat: version 0.3",
+      "subject_clean": "testthat: version 0.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# testthat\n\nTesting your code is normally painful and boring. `testthat` tries to\nmake testing as fun as possible, so that you get a visceral\nsatisfaction from writing tests. Testing should be fun, not a drag, so\nyou do it all the time. To make that happen, `testthat`:\n\n* Provides functions that make it easy to describe what you expect a\n  function to do, including catching errors, warnings and messages.\n\n* Easily integrates in your existing workflow, whether it's informal testing\n  on the command line, building test suites or using R CMD check.\n\n* Can re-run tests automatically as you change your code or tests.\n\n* Displays test progress visually, showing a pass, fail or error for every\n  expectation. If you're using the terminal, it'll even colour the output.\n\n`testthat` draws inspiration from the xUnit family of testing\npackages, as well from many of the innovative ruby testing libraries,\nlike [rspec](http://rspec.info/),\n[testy](http://github.com/ahoward/testy),\n[bacon](http://github.com/chneukirchen/bacon) and\n[cucumber](http://wiki.github.com/aslakhellesoy/cucumber/). I have\nused what I think works for R, and abandoned what doesn't, creating a\ntesting environment that is philosophically centred in R.\n\nChanges in version 0.3\n-----------------------------------------------------------------\n\n* all expectations now have a shortcut form, so instead of\n     expect_that(a, is_identical_to(b))\n  you can do\n     expect_identical(a, b)\n\n* new shows_message and gives_warning expectations to test warnings and\n  messages\n\n* expect_that, equals, is_identical_to and is_equivalent to now have\n  additional label argument which allows you to control the appearance of the\n  text used for the expected object (for expect_that) and actual object (for\n  all other functions) in failure messages. This is useful when you have loops\n  that run tests as otherwise all the variable names are identical, and it's\n  difficult to tell which iteration caused the failure.\n\n* executing bare tests gives nicer output\n\n* all expectations now give more information on failure to make it easier to\n  track down the problem.\n\n* test_file and test_dir now run in code in separate environment to avoid\n  pollution of global environment. They also temporary change the working\n  directory so tests can use relative paths.\n\n* test_package makes it easier to run all tests in an installed package. Code\n  run in this manner has access to non-exported functions and objects. If any\n  errors or failures occur, test_package will throw an error, making it\n  suitable for use with R CMD check.\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# testthat\n\nTesting your code is normally painful and boring. `testthat` tries to\nmake testing as fun as possible, so that you get a visceral\nsatisfaction from writing tests. Testing should be fun, no",
+      "thread_id": "thread-d5f77e7f494b",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-c4eeb9ed7afc",
+      "message_id": "<AANLkTi=vBGPbU+h3iMoOvjGoJX84pyQv7kA4in9XFyZR@mail.gmail.com>",
+      "from_name": "Hans-Peter Suter",
+      "from_email_hash": "e7d4189c6cafc80d637e7b43161b7f28886447d8477b5ef558270c1388473117",
+      "date": "2010-09-06T11:41:15+02:00",
+      "subject": "[R-pkgs] xlsReadWrite v1.5.2",
+      "subject_clean": "xlsReadWrite v1.5.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Natively read and write Excel (.xls) files. Supports Windows 32-bit only (atm).\n\nA new version has been released:\n\n-- changes --\n\no read.xls\n  - new arguments 'checkNames'\n  - recognize NA values according to a new 'naStrings' argument\n  - recognize NaN values\n  - recognize 'true', 'false' (not case-sensitive) as logical when\ndeterming a class for data.frame column;\n    when the value in the first cell is an integer, a numeric will be\nassumed nevertheless\n  - colnames are more consistent with R usage (X, X.1, V1, etc.)\n  - matrices always have rownames (as in data.frame). With FALSE\nrownames become (integer) 1:length(rows)\n  - duplicated rownames no longer accepted\n  - allow data with one row which is defined as being the colnames\n(i.e. no 'real' data row)\n  - colNames/colClasses can optionally contain an entry for the column\nused for the rownames\no write.xls\n  - error (instead of warning) when length of character colnames\ndoesn't fit data\n  - write NA values according to the 'naStrings' (scalar) argument\n  - write NaN values as 'NaN' string (instead of ending as #ZAHL!)\n  - colNames can optionally contain an entry for the column used for\nthe rownames\no template location moved\n  - new: R_HOME/library/xlsReadWrite/template/TemplateNew.xls\n  - (old/erronous: R_HOME/library/xlsReadWrite/libs/template, reported\nby B. Ripley)\no RUnit tests extended, loading simplified\no improve examples and run them on the regular version, polish docu\n\n-- bugfixes --\n\no file: path may be absolute or relative to the current working directory.\n  The 'relative' part was broken (feedback from several people)\no xls.getshlib: sometimes existing dll could not be replaced. Now uses path\n  of loaded dll instead of lib.loc and path (reported by G. Grothendieck)\no use .Platform$r_arch for shlib path and R.version$platform in xls.getshlib\n  to make pkg compatible with R2.12dev (reported and tips by B. Ripley)\no several fixes related to row/colnames in special cases (without data)\n\n-- 'ecosystem' --\n\no issue tracking (developer) link change:\n  - http://dev.swissr.org (was: https://redmine.swissr.org)\n  - allow guest login and directly mention credentials\n\n\nCheers,\nHans-Peter",
+      "body_snippet": "Natively read and write Excel (.xls) files. Supports Windows 32-bit only (atm).\n\nA new version has been released:\n\n-- changes --\n\no read.xls\n  - new arguments 'checkNames'\n  - recognize NA values acco",
+      "thread_id": "thread-c4eeb9ed7afc",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-15c4f102cff0",
+      "message_id": "<AANLkTimH1L35YtT607DDFtQRCWm2BqtEhTnEfuUBMp31@mail.gmail.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "32fdd8046b75cfb0f4d6f8edc57dd69378ce2bc2369db36530b2110136c2b3c5",
+      "date": "2010-09-08T17:10:30+01:00",
+      "subject": "[R-pkgs] New package for medical image registration: RNiftyReg",
+      "subject_clean": "New package for medical image registration: RNiftyReg",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The first release of \"RNiftyReg\", an R package for registration\n(alignment and resampling) of medical images, is now available on CRAN\n[1]. It may also be useful for other 3D array-like data sets.\nRNiftyReg is built on top of the NiftyReg library [2], and is written\nin a mixture of C, C++ and R. It currently supports 3D rigid-body and\naffine registration, and support for 2D and nonlinear registration is\nplanned for a future release. NIfTI-format files can be read in and\npassed to the registration algorithm using the oro.nifti package. In\ntesting I've found that a standard 12 degree-of-freedom affine\nregistration typically takes less than a minute, but timings will\ndepend on the dimensions of the images. Feedback on the package would\nbe very welcome at this stage.\n\nOver the last few years a number of R packages for medical image\nanalysis have been produced, and R is gaining momentum as a platform\nin this field [3]. I hope that this package will be a useful addition.\n\nAll the best,\nJon\n\n--\n[1] http://cran.r-project.org/web/packages/RNiftyReg/index.html\n[2] http://sourceforge.net/projects/niftyreg/\n[3] http://cran.r-project.org/web/views/MedicalImaging.html",
+      "body_snippet": "The first release of \"RNiftyReg\", an R package for registration\n(alignment and resampling) of medical images, is now available on CRAN\n[1]. It may also be useful for other 3D array-like data sets.\nRNi",
+      "thread_id": "thread-15c4f102cff0",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-6ce39918e42b",
+      "message_id": "<AANLkTimL6yyLMtmVS4oFxUwYphU_50VpzXtNBuF=UF-3@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-09-10T07:34:54-05:00",
+      "subject": "[R-pkgs] reshape2: a reboot of the reshape package",
+      "subject_clean": "reshape2: a reboot of the reshape package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape2 is a reboot of the reshape package. It's been over five years\nsince the first release of the package, and in that time I've learned\na tremendous amount about R programming, and how to work with data in\nR. Reshape2 uses that knowledge to make a new package for reshaping\ndata that is much more focussed and much much faster.\n\nThis version improves speed at the cost of functionality, so I have\nrenamed it to `reshape2` to avoid causing problems for existing users.\n Based on user feedback I may reintroduce some of these features.\n\nWhat's new in `reshape2`:\n\n * considerably faster and more memory efficient thanks to a much better\n   underlying algorithm that uses the power and speed of subsetting to the\n   fullest extent, in most cases only making a single copy of the data.\n\n * cast is replaced by two functions depending on the output type: `dcast`\n   produces data frames, and `acast` produces matrices/arrays.\n\n * multidimensional margins are now possible: `grand_row` and `grand_col` have\n   been dropped: now the name of the margin refers to the variable that has\n   its value set to (all).\n\n * some features have been removed such as the `|` cast operator, and the\n   ability to return multiple values from an aggregation function. I'm\n   reasonably sure both these operations are better performed by plyr.\n\n * a new cast syntax which allows you to reshape based on functions\n   of variables (based on the same underlying syntax as plyr):\n\n * better development practices like namespaces and tests.\n\nThis work has been generously supported by BD (Becton Dickinson).\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "Reshape2 is a reboot of the reshape package. It's been over five years\nsince the first release of the package, and in that time I've learned\na tremendous amount about R programming, and how to work wi",
+      "thread_id": "thread-6ce39918e42b",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-1a7f1c640c75",
+      "message_id": "<AANLkTimMsCiCataY1FzLH7s5DBm8x2nkzaVN0cum17mn@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-09-10T07:36:20-05:00",
+      "subject": "[R-pkgs] plyr: version 1.2",
+      "subject_clean": "plyr: version 1.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "plyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in functions.\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.  You can ask\nquestions about plyr (and data-manipulation in general) on the plyr\nmailing list. Sign up at http://groups.google.com/group/manipulatr\n\nVersion 1.2 (2010-09-09)\n------------------------------------------------------------------------------\n\nNEW FEATURES\n\n* l*ply, d*ply, a*ply and m*ply all gain a .parallel argument that when TRUE,\n  applies functions in parallel using a parallel backend registered with the\n  foreach package:\n\n  x <- seq_len(20)\n  wait <- function(i) Sys.sleep(0.1)\n  system.time(llply(x, wait))\n  #  user  system elapsed\n  # 0.007   0.005   2.005\n\n  library(doMC)\n  registerDoMC(2)\n  system.time(llply(x, wait, .parallel = TRUE))\n  #  user  system elapsed\n  # 0.020   0.011   1.038\n\n  This work has been generously supported by BD (Becton Dickinson).\n\nMINOR CHANGES\n\n* a*ply and m*ply gain an .expand argument that controls whether data frames\n  produce a single output dimension (one element for each row), or an output\n  dimension for each variable.\n\n* new vaggregate (vector aggregate) function, which is equivalent to tapply,\n  but much faster (~ 10x), since it avoids copying the data.\n\n* llply: for simple lists and vectors, with no progress bar, no extra info,\n  and no parallelisation, llply calls lapply directly to avoid all the\n  overhead associated with those unused extra features.\n\n* llply: in serial case, for loop replaced with custom C function that takes\n  about 40% less time (or about 20% less time than lapply). Note that as a\n  whole, llply still has much more overhead than lapply.\n\n* round_any now lives in plyr instead of reshape\n\nBUG FIXES\n\n* list_to_array works correct even when there are missing values in the array.\n  This is particularly important for daply.\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "plyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back",
+      "thread_id": "thread-1a7f1c640c75",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-47d660f0d10e",
+      "message_id": "<alpine.DEB.2.00.1009131342390.11575@biostat145>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2010-09-13T13:46:22-05:00",
+      "subject": "[R-pkgs] New version of rms package on CRAN",
+      "subject_clean": "New version of rms package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "CRAN has a significant update to rms.  Windows and unix/linux versions \nare available and I expect the Mac version to be available soon. \nThe most significant improvement is addition of latex=TRUE \narguments to model fitting print methods, made especially for use \nwith Sweave.\n\nHere is a summary of changes since the previous version.\n\nChanges in version 3.1-0 (2010-09-12)\n    * Fixed gIndex to not use scale for labeling unless character\n    * Changed default na.action in Gls to na.omit and added a note in \nthe help file that na.delete does not work with Gls\n    * Added terms component to Gls fit object (latex was not working)\n    * Added examples in robcov help file testing sandwich covariance \nestimator\n    * Added reference related to the effects package under help file \nfor plot.Predict\n    * Added more examples and simulations to gIndex\n    * Fixed ancient bug in lrm.fit Fortran code to handle case where \ninitial estimates are nearly perfect (was trying to step halve); \nthanks: Dan Hogan\n    * Changed survdiffplot to use gray(.85) for bands instead of \ngray(.95)\n    * Fixed formatting problem in print.psm\n    * Added prStats and reVector functions to rmsMisc.s\n    * Changed formatting of all print.* functions for model fits to use \nnew prStats function\n    * Added latex=TRUE option to all model fit print methods; requires \nLaTeX package needspace\n    * Re-wrote printing routines to make use of more general model\n    * Removed long and scale options from cph printing-related routines\n    * Prepare for version 2.36-1 of survival package by adding \ncensor=FALSE argument to survfit.coxph\n    * Added type=\"ccterms\" to various predict methods\n    * Made type=\"ccterms\" the default for partial g-indexes in gIndex, \ni.e., combine all indirectly related (through interactions) terms\n    * Added Spiegelhalter calibration test to val.prob\n    * Added a check in cph to trigger an error if strata() is used in \nformula\n    * Fixed drawing of polygon for shaded confidence bands for \nsurvplot.survfit (thanks to Patrick Breheny <patrick.breheny at uky.edu>)\n    * Changed default adjust.subtitle in bplot to depend on ref.zero, \nthanks to David Winsemius <dwinsemius at comcast.net>\n    * Used a namespace and simplified referenced to a few survival \npackage functions that survival actually exports\n\n\nFrank E Harrell Jr   Professor and Chairman        School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "CRAN has a significant update to rms.  Windows and unix/linux versions \nare available and I expect the Mac version to be available soon. \nThe most significant improvement is addition of latex=TRUE \nar",
+      "thread_id": "thread-47d660f0d10e",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-fb29849c1399",
+      "message_id": "<F532B28B-6438-428A-BC29-90B91CBBF503@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2010-09-16T14:16:49-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 2.0.1",
+      "subject_clean": "WriteXLS - New Version 2.0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The updated package has been submitted to CRAN and will propagate to mirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls, where downloads will eventually be available as well. \n\nPackage: WriteXLS\n\nVersion: 2.0.1\n\nDescription: Cross-platform Perl based R function to create Excel 2003 (XLS) files from one or more data frames. Each data frame will be written to a separate named worksheet in the Excel spreadsheet. The worksheet name will be the name of the data frame it contains or can be specified by the user.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\n\nChanges since version 1.9.0:\n\n1. Major version update to 2.x.y\n2. Added the ability to specify the name of a list that contains one or more data frames, in addition to the original vector of one or more data frame names.\n3. Updated with newer versions of the included Perl modules.\n4. Note that WorkbookBig.pm is no longer required and is therefore removed from the packaged Perl modules.\n5. Fixed the underscores \"_\" in testPerl.Rd\n6. Added check of the data frames for rows > 65536 and columns > 256.\n7. Temporary CSV file names are now (1:number of data frames).csv\n6. SheetNames are now always written to temporary file SheetNames.txt, so the '--SN' argument is deleted from the Perl script\n\n\nThe major user visible functional change is number 2, such that the name of a list can now be specified, where the list contains one or more data frames. An example of this use is:\n\n iris.split <- split(iris, iris$Species)\n WriteXLS(\"iris.split\", \"irissplit.xls\")\n\nThis will result in 3 worksheets created in an Excel 2003 format XLS file called 'irissplit.xls'. The worksheet names will, by default, be names(iris.split), that is c(\"setosa\", \"versicolor\", \"virginica\"). See the function help file for more details.\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "The updated package has been submitted to CRAN and will propagate to mirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls, where downloads wi",
+      "thread_id": "thread-fb29849c1399",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-9dc34c5d66eb",
+      "message_id": "<1B40A925-F521-4458-8724-88318F4275DD@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2010-09-19T14:09:20-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 2.1.0",
+      "subject_clean": "WriteXLS - New Version 2.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "On the heels of the major version update to version 2.0.1 this past week, another incremental update, version 2.1.0, has been submitted to CRAN and will propagate to mirrors over the next day or so.\n\nThe package is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls, where downloads will eventually be available as well. \n\nPackage: WriteXLS\n\nVersion: 2.1.0\n\nDescription: Cross-platform Perl based R function to create Excel 2003 (XLS) files from one or more data frames. Each data frame will be written to a separate named worksheet in the Excel spreadsheet. The worksheet name will be the name of the data frame it contains or can be specified by the user.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\n\nChange since version 2.0.1:\n\nNew logical argument 'row.names' to enable the ability to export the data frame row names to the Excel file. Defaults to FALSE for compatibility with prior versions.\n\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "On the heels of the major version update to version 2.0.1 this past week, another incremental update, version 2.1.0, has been submitted to CRAN and will propagate to mirrors over the next day or so.\n\n",
+      "thread_id": "thread-9dc34c5d66eb",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-e11885fe8384",
+      "message_id": "<AANLkTinn-jkEyxWTKmFX6iohJi6d2t5dJq+k5B_VWd=C@mail.gmail.com>",
+      "from_name": "Ingmar Visser",
+      "from_email_hash": "3de458686dcc530513283e67f86dca86206142086b772552f194f13c43024b11",
+      "date": "2010-09-20T15:45:16+02:00",
+      "subject": "[R-pkgs] depmixS4 1.0-0 on CRAN & vignette/paper on jstatsoft.org",
+      "subject_clean": "depmixS4 1.0-0 on CRAN & vignette/paper on jstatsoft.org",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100920/f274fed3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100920/f274fed3/attachment.pl>",
+      "thread_id": "thread-e11885fe8384",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-d7def49003bc",
+      "message_id": "<52C938A8-5077-406F-BBCC-54F199F07791@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-09-25T10:01:10-07:00",
+      "subject": "[R-pkgs] Deducer 0.4-1 and JGR 1.7-2 released",
+      "subject_clean": "Deducer 0.4-1 and JGR 1.7-2 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nI would like to announce the release of Deducer 0.4-1 and JGR 1.7-2 to CRAN. The updates should be propagating through the mirrors over the next few days. On the Deducer side we have a number of nice improvements:\n\n1. A new Text Field Widget for plug-ins is included, which is better suited for entering/displaying numeric and short string fields than TextAreaWidget.\n2. A new Object Chooser Widget is included, which allows the user to select an object from their workspace, possibly of a specific class.\n3. Fixed combobox bug on Mac OS 64-bit.\n4. Factor editor and Recode dialog handle empty strings.\n5. Created menu items for common plotting templates.\n\nThe new JGR includes stability fixes along with a few new features.\n\nBug fixes:\n1. Fixed MacOS JavaGD resize deadlock bug\n2. Fixed 100% CPU on start-up bug reported on some UNIX systems.\n3. Interrupt R button fixed on unix systems \n\nNew Features:\n1. Graphics device save support for png, jpeg, bmp, and tiff\n2. User control over the menu system has been improved. Added ability to insert new menus, menu items, separators, and sub-menus. Menus and menu items can also be removed.\n\n\nIan Fellows",
+      "body_snippet": "Hi All,\n\nI would like to announce the release of Deducer 0.4-1 and JGR 1.7-2 to CRAN. The updates should be propagating through the mirrors over the next few days. On the Deducer side we have a number",
+      "thread_id": "thread-d7def49003bc",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-94ad9cf07ad4",
+      "message_id": "<4CA06792.70607@ifspm.uzh.ch>",
+      "from_name": "Daniel Sabanés Bové",
+      "from_email_hash": "82e047175125898d0c4437d2724dbdc33580849bcb34d0177dca830f1e3a6ec0",
+      "date": "2010-09-27T11:44:50+02:00",
+      "subject": "[R-pkgs] Bayesian Fractional Polynomials package \"bfp\" on CRAN",
+      "subject_clean": "Bayesian Fractional Polynomials package \"bfp\" on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Fractional polynomials (\"FPs\") are an automatic way of fitting \nnon-linear, parametric effects. The R-package mfp implements a \nfrequentist inference approach for FP models. Recently, we have proposed \na Bayesian inference approach for normal FP models, which is based on \nthe quasi-default hyper-/g/ prior for the regression coefficients [1]. \nThis approach is implemented in the new R-package \"bfp\".\n\nThe R-package bfp (current version: 0.0-17) is now available on CRAN [2].\nThe current development version is (still) available on R-Forge [3].\n\nFor a quick start try:\n\ninstall.packages(\"bfp\")\nlibrary(bfp)\nexample(BmaSamples)\n\nand if you have more time, to reproduce results from the paper [1]:\n\ndemo(ozone)\n\nQuestions, suggestions or critique are very welcome!\n\nBest regards,\nDaniel\n\n[1] Statistics & Computing paper: \nhttp://dx.doi.org/10.1007/s11222-010-9170-7\n[2] CRAN: http://cran.r-project.org/web/packages/bfp/index.html\n[3] R-Forge: http://r-forge.r-project.org/projects/bfp/",
+      "body_snippet": "Fractional polynomials (\"FPs\") are an automatic way of fitting \nnon-linear, parametric effects. The R-package mfp implements a \nfrequentist inference approach for FP models. Recently, we have proposed",
+      "thread_id": "thread-94ad9cf07ad4",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-5ab2c13dc288",
+      "message_id": "<C8C8CD0B.B7B0%Max.Kuhn@pfizer.com>",
+      "from_name": "KuhnA03",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2010-09-29T11:01:31-04:00",
+      "subject": "[R-pkgs] caret package version 4.63",
+      "subject_clean": "caret package version 4.63",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 4.63 of the caret package is now on CRAN.\n\ncaret can be used to tune the parameters of predictive models using\nresampling, estimate variable importance and visualize the results.\nThere are also various modeling and \"helper\" functions that can be\nuseful for training models.\n\ncaret has wrappers to over 99 different models for classification\nand regression. See the package vignettes or:\n\n  http://user2010.org/slides/Kuhn.pdf\n  http://www.jstatsoft.org/v28/i05\n\nfor more details. \n\n\nSince the last posting to the list:\n\n - wrappers for a number of new models were added, notably gam\n   models (from both the gam and mgcv packages) and logic trees\n\n - when resampling with train(), class probabilities can now be\n   used to calculate performance (such as the AUC of an ROC curve).\n   A basic summary function, twoClassSummary(), can be used to\n   calculate sensitivity, specificity and the ROC AUC.\n\n - repeated k-fold CV and the bootstrap 632 technique are available\n   in train()\n\n - pre-processing can not be used within each resampling iteration\n   within train().\n\n - a function for independent component regression (icr) was added\n\n - the class for aggregating and visualization resampling results\n   (resamples) has been enhanced with more visualization methods.\n   The class can also work with caret's feature selection routines\n   (rfe() and sbf())\n\n - the print method for train() has been improved\n\n - functions can be now be passed to the tuneGrid argument in\n   train()\n\n - an existing function that catalogs the existing models available\n   within train(), called modelLookup(), is now available to the\n   users\n\n - when parallel processing, more computations are being executed\n   in the worker processes than previously (e.g. performance calcs)\n\nThe NEWS file has the blow-by-blow list of changes.\n\n\nThe package homepage is\n\n  https://r-forge.r-project.org/projects/caret/\n\nSend questions, collaborations, comments etc to max.kuhn at pfizer.com.\n\nMax",
+      "body_snippet": "Version 4.63 of the caret package is now on CRAN.\n\ncaret can be used to tune the parameters of predictive models using\nresampling, estimate variable importance and visualize the results.\nThere are als",
+      "thread_id": "thread-5ab2c13dc288",
+      "thread_depth": 0,
+      "month": "2010-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d5f77e7f494b",
+      "subject": "testthat: version 0.3",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-09-01T07:54:46-05:00",
+      "last_reply": "2010-09-01T07:54:46-05:00",
+      "root_message_id": "msg-d5f77e7f494b"
+    },
+    {
+      "id": "thread-c4eeb9ed7afc",
+      "subject": "xlsReadWrite v1.5.2",
+      "message_count": 1,
+      "participants": [
+        "Hans-Peter Suter"
+      ],
+      "started": "2010-09-06T11:41:15+02:00",
+      "last_reply": "2010-09-06T11:41:15+02:00",
+      "root_message_id": "msg-c4eeb9ed7afc"
+    },
+    {
+      "id": "thread-15c4f102cff0",
+      "subject": "New package for medical image registration: RNiftyReg",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2010-09-08T17:10:30+01:00",
+      "last_reply": "2010-09-08T17:10:30+01:00",
+      "root_message_id": "msg-15c4f102cff0"
+    },
+    {
+      "id": "thread-6ce39918e42b",
+      "subject": "reshape2: a reboot of the reshape package",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-09-10T07:34:54-05:00",
+      "last_reply": "2010-09-10T07:34:54-05:00",
+      "root_message_id": "msg-6ce39918e42b"
+    },
+    {
+      "id": "thread-1a7f1c640c75",
+      "subject": "plyr: version 1.2",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-09-10T07:36:20-05:00",
+      "last_reply": "2010-09-10T07:36:20-05:00",
+      "root_message_id": "msg-1a7f1c640c75"
+    },
+    {
+      "id": "thread-47d660f0d10e",
+      "subject": "New version of rms package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2010-09-13T13:46:22-05:00",
+      "last_reply": "2010-09-13T13:46:22-05:00",
+      "root_message_id": "msg-47d660f0d10e"
+    },
+    {
+      "id": "thread-fb29849c1399",
+      "subject": "WriteXLS - New Version 2.0.1",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2010-09-16T14:16:49-05:00",
+      "last_reply": "2010-09-16T14:16:49-05:00",
+      "root_message_id": "msg-fb29849c1399"
+    },
+    {
+      "id": "thread-9dc34c5d66eb",
+      "subject": "WriteXLS - New Version 2.1.0",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2010-09-19T14:09:20-05:00",
+      "last_reply": "2010-09-19T14:09:20-05:00",
+      "root_message_id": "msg-9dc34c5d66eb"
+    },
+    {
+      "id": "thread-e11885fe8384",
+      "subject": "depmixS4 1.0-0 on CRAN & vignette/paper on jstatsoft.org",
+      "message_count": 1,
+      "participants": [
+        "Ingmar Visser"
+      ],
+      "started": "2010-09-20T15:45:16+02:00",
+      "last_reply": "2010-09-20T15:45:16+02:00",
+      "root_message_id": "msg-e11885fe8384"
+    },
+    {
+      "id": "thread-d7def49003bc",
+      "subject": "Deducer 0.4-1 and JGR 1.7-2 released",
+      "message_count": 1,
+      "participants": [
+        "Ian Fellows"
+      ],
+      "started": "2010-09-25T10:01:10-07:00",
+      "last_reply": "2010-09-25T10:01:10-07:00",
+      "root_message_id": "msg-d7def49003bc"
+    },
+    {
+      "id": "thread-94ad9cf07ad4",
+      "subject": "Bayesian Fractional Polynomials package \"bfp\" on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Daniel Sabanés Bové"
+      ],
+      "started": "2010-09-27T11:44:50+02:00",
+      "last_reply": "2010-09-27T11:44:50+02:00",
+      "root_message_id": "msg-94ad9cf07ad4"
+    },
+    {
+      "id": "thread-5ab2c13dc288",
+      "subject": "caret package version 4.63",
+      "message_count": 1,
+      "participants": [
+        "KuhnA03"
+      ],
+      "started": "2010-09-29T11:01:31-04:00",
+      "last_reply": "2010-09-29T11:01:31-04:00",
+      "root_message_id": "msg-5ab2c13dc288"
+    }
+  ]
+}

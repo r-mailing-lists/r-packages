@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-05",
+  "messages": [
+    {
+      "id": "msg-969d3cf77ecc",
+      "message_id": "<dbad3dff-1d81-4439-9f1f-e33daafcc9d0@unipa.it>",
+      "from_name": "Vito Muggeo",
+      "from_email_hash": "bd382efd8a907a9b66693329a03e45f1c13cfe2ce8b40eba9a9d05d9710a3087",
+      "date": "2024-05-16T10:47:33+02:00",
+      "subject": "[R-pkgs] segmented 2.1-0 is released",
+      "subject_clean": "segmented 2.1-0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "dear R users,\nI am pleased to announce that segmented 2.1-0 is now available on CRAN.\n\nsegmented focuses on estimation of breakpoints/changepoints of \nsegmented, i.e. piecewise linear, relationships in (generalized) linear \nmodels. Starting with version 2.0-0, it is also possible to model \nstepmented, i.e. piecewise constant, effects.\n\nIn the last release both models may be fitted via a formula interface, \nsuch as\n\nsegreg(y ~ seg(x1, npsi=2) + seg(x2) + z)\n\nstepreg(y ~ seg(x1, npsi=2) + seg(x2) +seg(x3, npsi=3) + z, family=poisson)\n\nThere is virtually no limit in the number of covariates and \ncorresponding number of changepoints to be estimated.\n\nthank you,\nkind regards,\nVito\n\n\n-- \n=================================================\nVito M.R. Muggeo, PhD\nProfessor of Statistics\nDip.to Sc Econom, Az e Statistiche\nUniversit? di Palermo\nviale delle Scienze, edificio 13\n90128 Palermo - ITALY\ntel: 091 23895240; fax: 091 485726\nhttp://www.unipa.it/persone/docenti/m/vito.muggeo\nAssoc Editor: Statist Modelling, Statist Meth Appl\npast chair, Statistical Modelling Society\ncoordinator, PhD Program in Econ, Businss, Statist",
+      "body_snippet": "dear R users,\nI am pleased to announce that segmented 2.1-0 is now available on CRAN.\n\nsegmented focuses on estimation of breakpoints/changepoints of \nsegmented, i.e. piecewise linear, relationships i",
+      "thread_id": "thread-969d3cf77ecc",
+      "thread_depth": 0,
+      "month": "2024-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-969d3cf77ecc",
+      "subject": "segmented 2.1-0 is released",
+      "message_count": 1,
+      "participants": [
+        "Vito Muggeo"
+      ],
+      "started": "2024-05-16T10:47:33+02:00",
+      "last_reply": "2024-05-16T10:47:33+02:00",
+      "root_message_id": "msg-969d3cf77ecc"
+    }
+  ]
+}

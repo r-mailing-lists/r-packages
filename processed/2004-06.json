@@ -1,0 +1,387 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-06",
+  "messages": [
+    {
+      "id": "msg-928a7d18d32d",
+      "message_id": "<6rbrk36kjo.fsf@bates4.stat.wisc.edu>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2004-06-01T16:22:03-05:00",
+      "subject": "[R-pkgs] lme4_0.6-1 uploaded",
+      "subject_clean": "lme4_0.6-1 uploaded",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have uploaded release 0.6-1 of the lme4 package to the incoming area\non CRAN.  I expect it will be transferred to the archive within a\ncouple of days, after which Uwe's Windows build daemon should be able\nto get it to build a Windows version.  The lme4 package itself is a\npure R package (i.e. it does not contain any code to be compiled) but\nit depends on the Matrix_0.8-7 package which has a considerable amount\nof C code in it.\n\nThis package contains the version of lme that I spoke of at useR!2004.\nUsing sparse matrix methods - in particular, Tim Davis' LDL package -\nwe are able to fit models with crossed random effects quickly and\neffectively.  This package also contains an implementation of GLMM for\nGeneralized Linear Mixed Models using either Penalized\nQuasi-Likelihood (PQL) or ML estimation using the Laplacian\napproximation to the marginal likelihood.  At present method =\n'Laplace' is considerably slower than method = 'PQL'.  We would\nrecommend using PQL for model building and determining final parameter\nestimates using method = 'Laplace'.\n\nFeedback is welcome.\n\n-- \nDouglas Bates                            bates at stat.wisc.edu\nStatistics Department                    608/262-2598\nUniversity of Wisconsin - Madison        http://www.stat.wisc.edu/~bates/",
+      "body_snippet": "I have uploaded release 0.6-1 of the lme4 package to the incoming area\non CRAN.  I expect it will be transferred to the archive within a\ncouple of days, after which Uwe's Windows build daemon should b",
+      "thread_id": "thread-928a7d18d32d",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-928a7d18d32d",
+      "message_id": "<6rbrk36kjo.fsf@bates4.stat.wisc.edu>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2004-06-01T16:22:03-05:00",
+      "subject": "[R-pkgs] lme4_0.6-1 uploaded",
+      "subject_clean": "lme4_0.6-1 uploaded",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have uploaded release 0.6-1 of the lme4 package to the incoming area\non CRAN.  I expect it will be transferred to the archive within a\ncouple of days, after which Uwe's Windows build daemon should be able\nto get it to build a Windows version.  The lme4 package itself is a\npure R package (i.e. it does not contain any code to be compiled) but\nit depends on the Matrix_0.8-7 package which has a considerable amount\nof C code in it.\n\nThis package contains the version of lme that I spoke of at useR!2004.\nUsing sparse matrix methods - in particular, Tim Davis' LDL package -\nwe are able to fit models with crossed random effects quickly and\neffectively.  This package also contains an implementation of GLMM for\nGeneralized Linear Mixed Models using either Penalized\nQuasi-Likelihood (PQL) or ML estimation using the Laplacian\napproximation to the marginal likelihood.  At present method =\n'Laplace' is considerably slower than method = 'PQL'.  We would\nrecommend using PQL for model building and determining final parameter\nestimates using method = 'Laplace'.\n\nFeedback is welcome.\n\n-- \nDouglas Bates                            bates at stat.wisc.edu\nStatistics Department                    608/262-2598\nUniversity of Wisconsin - Madison        http://www.stat.wisc.edu/~bates/",
+      "body_snippet": "I have uploaded release 0.6-1 of the lme4 package to the incoming area\non CRAN.  I expect it will be transferred to the archive within a\ncouple of days, after which Uwe's Windows build daemon should b",
+      "thread_id": "thread-928a7d18d32d",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-f32dc1d3354a",
+      "message_id": "<40C0735F.8050204@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2004-06-04T09:04:31-04:00",
+      "subject": "[R-pkgs] New versions of Hmisc and Design on CRAN",
+      "subject_clean": "New versions of Hmisc and Design on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions of source packages for Hmisc and Design are available from \nCRAN for R 1.9 on Linux/Unix.   Knowing Uwe Ligges, a Windows binary is \nnot far behind.  Changelogs are at \nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/ChangelogHmisc and\nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/ChangelogDesign . \nThese versions pass R CMD check for the latest R-devel so I expect they \nwill work on the next production release of R.\n\nOf special note is the Hmisc sasxport.get function's new method='csv' \nargument.  This works with a SAS macro to use SAS PROC EXPORT to export \nan entire data library, and handles variable and value labels, date, \ntime, data/time variables [for dates, the new R Date class is now used \nas is also now used for sas.get, spss.get, csv.get].  We have found the \nnew SAS import method in sasxport.get to be the most reliable way to \nconvert datasets from SAS if you can run SAS on your system or on a \nserver.  An example may be found at \nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/SASexportHowto and \nthe SAS macro is at \nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/Hmisc/exportlib.sas . \nThe main page for Hmisc is http://biostat.mc.vanderbilt.edu/s/Hmisc . \nsasxport.get largely supplants sas.get.\n\nFor those users who are not familiar with the Hmisc/LaTeX combination, \nhave a look at \nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/StatReport/summary.pdf\n\nThanks to Kurt Hornik for always providing such an excellent service to \nthe community through his work on CRAN.\n-- \nFrank E Harrell Jr   Professor and Chair           School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "New versions of source packages for Hmisc and Design are available from \nCRAN for R 1.9 on Linux/Unix.   Knowing Uwe Ligges, a Windows binary is \nnot far behind.  Changelogs are at \nhttp://biostat.mc.",
+      "thread_id": "thread-f32dc1d3354a",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-f32dc1d3354a",
+      "message_id": "<40C0735F.8050204@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2004-06-04T09:04:31-04:00",
+      "subject": "[R-pkgs] New versions of Hmisc and Design on CRAN",
+      "subject_clean": "New versions of Hmisc and Design on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions of source packages for Hmisc and Design are available from \nCRAN for R 1.9 on Linux/Unix.   Knowing Uwe Ligges, a Windows binary is \nnot far behind.  Changelogs are at \nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/ChangelogHmisc and\nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/ChangelogDesign . \nThese versions pass R CMD check for the latest R-devel so I expect they \nwill work on the next production release of R.\n\nOf special note is the Hmisc sasxport.get function's new method='csv' \nargument.  This works with a SAS macro to use SAS PROC EXPORT to export \nan entire data library, and handles variable and value labels, date, \ntime, data/time variables [for dates, the new R Date class is now used \nas is also now used for sas.get, spss.get, csv.get].  We have found the \nnew SAS import method in sasxport.get to be the most reliable way to \nconvert datasets from SAS if you can run SAS on your system or on a \nserver.  An example may be found at \nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/SASexportHowto and \nthe SAS macro is at \nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/Hmisc/exportlib.sas . \nThe main page for Hmisc is http://biostat.mc.vanderbilt.edu/s/Hmisc . \nsasxport.get largely supplants sas.get.\n\nFor those users who are not familiar with the Hmisc/LaTeX combination, \nhave a look at \nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/StatReport/summary.pdf\n\nThanks to Kurt Hornik for always providing such an excellent service to \nthe community through his work on CRAN.\n-- \nFrank E Harrell Jr   Professor and Chair           School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "New versions of source packages for Hmisc and Design are available from \nCRAN for R 1.9 on Linux/Unix.   Knowing Uwe Ligges, a Windows binary is \nnot far behind.  Changelogs are at \nhttp://biostat.mc.",
+      "thread_id": "thread-f32dc1d3354a",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-11e53d84a092",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C52150A@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-06-09T14:11:41-04:00",
+      "subject": "[R-pkgs] gregmisc 1.11.2 including read.xls()",
+      "subject_clean": "gregmisc 1.11.2 including read.xls()",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 1.11.2 of the gregmisc() package of functions is now available on\nCRAN at http://cran.r-project.org/src/contrib/Descriptions/gregmisc.html for\nboth Unix and Windows systems.\n\nThe most notable enhancement provided by this release is:\n\n- read.xls(), a function to read Microsoft Excel files by\n  translating them to csv files via the xls2csv.pl script has\n  been added.  I've also provided Unix and MS-Windows scripts \n  in <R_LIBRARY_DIR>/gregmisc/bin which allow you to call \n  xls2csv directly.  The code uses perl libraries which are\n  included in the package, so perl must be in the execution path.\n\nOther enhancements include:\n\n- Improvements to CrossTable() by Marc Schwartz <MSchwartz at MedAnalytics.com>\n\n- Improvements to ooplot() by Lodewijk Bonebakker <bonebakker at comcast.net>\n\n- plotCI() and plotmeans() now have improved argument handling.\n\n- The running() function now has an additional parameter `simplify'\n  which controls whether the returned values are simplified into a\n  vector/matrix or left as a list.\n\n- A makefile that will download and attempt to install all available\n  packages from CRAN and Bioconductor is now provided in\n  $PACKAGE$/gregmisc/tools/\n\n- space() can now space points along the 'y' dimension.\n\n- Fix an error in the permutations code for repeats.allow=T and r>2.\n  Both the bug report and fix are from Elizabeth Purdom\n  <epurdom at stanford.edu>.\n\n- Various fixes for compatibility with R 1.9.X.\n\nSee the NEWS and ChangeLog files in the .tar.gz file for additional details.\n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Release 1.11.2 of the gregmisc() package of functions is now available on\nCRAN at http://cran.r-project.org/src/contrib/Descriptions/gregmisc.html for\nboth Unix and Windows systems.\n\nThe most notable ",
+      "thread_id": "thread-11e53d84a092",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-11e53d84a092",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C52150A@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-06-09T14:11:41-04:00",
+      "subject": "[R-pkgs] gregmisc 1.11.2 including read.xls()",
+      "subject_clean": "gregmisc 1.11.2 including read.xls()",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 1.11.2 of the gregmisc() package of functions is now available on\nCRAN at http://cran.r-project.org/src/contrib/Descriptions/gregmisc.html for\nboth Unix and Windows systems.\n\nThe most notable enhancement provided by this release is:\n\n- read.xls(), a function to read Microsoft Excel files by\n  translating them to csv files via the xls2csv.pl script has\n  been added.  I've also provided Unix and MS-Windows scripts \n  in <R_LIBRARY_DIR>/gregmisc/bin which allow you to call \n  xls2csv directly.  The code uses perl libraries which are\n  included in the package, so perl must be in the execution path.\n\nOther enhancements include:\n\n- Improvements to CrossTable() by Marc Schwartz <MSchwartz at MedAnalytics.com>\n\n- Improvements to ooplot() by Lodewijk Bonebakker <bonebakker at comcast.net>\n\n- plotCI() and plotmeans() now have improved argument handling.\n\n- The running() function now has an additional parameter `simplify'\n  which controls whether the returned values are simplified into a\n  vector/matrix or left as a list.\n\n- A makefile that will download and attempt to install all available\n  packages from CRAN and Bioconductor is now provided in\n  $PACKAGE$/gregmisc/tools/\n\n- space() can now space points along the 'y' dimension.\n\n- Fix an error in the permutations code for repeats.allow=T and r>2.\n  Both the bug report and fix are from Elizabeth Purdom\n  <epurdom at stanford.edu>.\n\n- Various fixes for compatibility with R 1.9.X.\n\nSee the NEWS and ChangeLog files in the .tar.gz file for additional details.\n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Release 1.11.2 of the gregmisc() package of functions is now available on\nCRAN at http://cran.r-project.org/src/contrib/Descriptions/gregmisc.html for\nboth Unix and Windows systems.\n\nThe most notable ",
+      "thread_id": "thread-11e53d84a092",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-5592035f0368",
+      "message_id": "<40C9B6C6.1020604@epigenomics.com>",
+      "from_name": "Klaus Juenemann",
+      "from_email_hash": "a4d33a34846eafafcd2c3614a5aee8c83c282e8e02701b16d9d9b02a97f170e2",
+      "date": "2004-06-11T15:42:30+02:00",
+      "subject": "[R-pkgs] New package: RUnit",
+      "subject_clean": "New package: RUnit",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new package: RUnit\n\nIt contains a unit testing framework strongly inspired by Javas popular \nJUint package. In addition it contains some functionality to investigate \nthe degree to which some function is covered by a test suite.\n\nThe main aims of the package are\n- to support a development style where test cases are written and \nconstantly executed parallel to implementing the actual functinality.\n- to deliver the results of a test run in a format as structured and \nhelpful as possible.\n\nBesides the usual function documentation the doc subdirectory contains a \npdf file with additional information.\n\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing\n\nMatthias Burger\nThomas Koenig\nKlaus Juenemann\n\n\n\n\n-- \nKlaus Juenemann\n\nEpigenomics AG          www.epigenomics.com           Kastanienallee 24\n+493024345393                                              10435 Berlin",
+      "body_snippet": "We would like to announce the availability on CRAN of a new package: RUnit\n\nIt contains a unit testing framework strongly inspired by Javas popular \nJUint package. In addition it contains some functio",
+      "thread_id": "thread-5592035f0368",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-5592035f0368",
+      "message_id": "<40C9B6C6.1020604@epigenomics.com>",
+      "from_name": "Klaus Juenemann",
+      "from_email_hash": "a4d33a34846eafafcd2c3614a5aee8c83c282e8e02701b16d9d9b02a97f170e2",
+      "date": "2004-06-11T15:42:30+02:00",
+      "subject": "[R-pkgs] New package: RUnit",
+      "subject_clean": "New package: RUnit",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new package: RUnit\n\nIt contains a unit testing framework strongly inspired by Javas popular \nJUint package. In addition it contains some functionality to investigate \nthe degree to which some function is covered by a test suite.\n\nThe main aims of the package are\n- to support a development style where test cases are written and \nconstantly executed parallel to implementing the actual functinality.\n- to deliver the results of a test run in a format as structured and \nhelpful as possible.\n\nBesides the usual function documentation the doc subdirectory contains a \npdf file with additional information.\n\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing\n\nMatthias Burger\nThomas Koenig\nKlaus Juenemann\n\n\n\n\n-- \nKlaus Juenemann\n\nEpigenomics AG          www.epigenomics.com           Kastanienallee 24\n+493024345393                                              10435 Berlin",
+      "body_snippet": "We would like to announce the availability on CRAN of a new package: RUnit\n\nIt contains a unit testing framework strongly inspired by Javas popular \nJUint package. In addition it contains some functio",
+      "thread_id": "thread-5592035f0368",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-9c56b28ab941",
+      "message_id": "<40CFFB52.4040102@geog.uu.nl>",
+      "from_name": "Edzer J. Pebesma",
+      "from_email_hash": "a7fb0ca623e251a5aff6aa466eb7f50e3c643594fe03e3232d546a007043eef0",
+      "date": "2004-06-16T09:48:34+02:00",
+      "subject": "[R-pkgs] gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "subject_clean": "gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I uploaded gstat 0.9-12 to CRAN, which has a few important changes:\n\n1. Cokriging cross validation\n\nCokriging cross validation is now possible with the function gstat.cv:\nyou simply pass a multivariable gstat object, and cross validation is done\nfor the first variable in the object. Optionally, secondary variable \nrecords\nat locations coinciding with the validation locations are removed.\n\n2. Class name changes\n\nBoth gstat and geoR used the name \"variogram\" for -- highly incompatible --\nobjects that contain information about a variogram. This led to errors when\ncalling plot() with a variogram object calculated from one, but plotted by\nthe other package. I changed the class name into \"gstatVariogram\". The full\nlist of class name changes:\n\nvariogram -> gstatVariogram\npoint.pairs -> pointPairs\nvariogram.map -> variogramMap\nvariogram.cloud -> variogramCloud\n\nYou can still run scripts you have with the new packages, but e.g. plot(v)\nwhen v is an old object of class \"variogram\" will not work with the new\npackage. As these are S3 classes, a simple solution would be to\nreassign the class:\n\nclass(v) = c(\"gstatVariogram\", \"data.frame\")\n\n3. Compatibility with package sp and variogram maps\nOn http://sourceforge.net/projects/r-spatial/ beta releases for the upcoming\npackage sp are available; sp provides classes and methods for spatial data.\nInstead of:\n\n > library(gstat)\n > data(meuse)\n > variogram(zinc~1, ~x+y, meuse)\n\nyou could, with package sp loaded, do:\n\n > coordinates(meuse) = ~x+y # promotes meuse to SpatialDataFrame\n > variogram(zinc~1, meuse) # no coordinates required.\n\nIn addition, sp provides classes for gridded data and polygon data. With sp\nloaded, gstat can calculate variogram maps.\n\nAny comments are welcome,\n--\nEdzer",
+      "body_snippet": "I uploaded gstat 0.9-12 to CRAN, which has a few important changes:\n\n1. Cokriging cross validation\n\nCokriging cross validation is now possible with the function gstat.cv:\nyou simply pass a multivariab",
+      "thread_id": "thread-9c56b28ab941",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-9c56b28ab941",
+      "message_id": "<40CFFB52.4040102@geog.uu.nl>",
+      "from_name": "Edzer J. Pebesma",
+      "from_email_hash": "a7fb0ca623e251a5aff6aa466eb7f50e3c643594fe03e3232d546a007043eef0",
+      "date": "2004-06-16T09:48:34+02:00",
+      "subject": "[R-pkgs] gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "subject_clean": "gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I uploaded gstat 0.9-12 to CRAN, which has a few important changes:\n\n1. Cokriging cross validation\n\nCokriging cross validation is now possible with the function gstat.cv:\nyou simply pass a multivariable gstat object, and cross validation is done\nfor the first variable in the object. Optionally, secondary variable \nrecords\nat locations coinciding with the validation locations are removed.\n\n2. Class name changes\n\nBoth gstat and geoR used the name \"variogram\" for -- highly incompatible --\nobjects that contain information about a variogram. This led to errors when\ncalling plot() with a variogram object calculated from one, but plotted by\nthe other package. I changed the class name into \"gstatVariogram\". The full\nlist of class name changes:\n\nvariogram -> gstatVariogram\npoint.pairs -> pointPairs\nvariogram.map -> variogramMap\nvariogram.cloud -> variogramCloud\n\nYou can still run scripts you have with the new packages, but e.g. plot(v)\nwhen v is an old object of class \"variogram\" will not work with the new\npackage. As these are S3 classes, a simple solution would be to\nreassign the class:\n\nclass(v) = c(\"gstatVariogram\", \"data.frame\")\n\n3. Compatibility with package sp and variogram maps\nOn http://sourceforge.net/projects/r-spatial/ beta releases for the upcoming\npackage sp are available; sp provides classes and methods for spatial data.\nInstead of:\n\n > library(gstat)\n > data(meuse)\n > variogram(zinc~1, ~x+y, meuse)\n\nyou could, with package sp loaded, do:\n\n > coordinates(meuse) = ~x+y # promotes meuse to SpatialDataFrame\n > variogram(zinc~1, meuse) # no coordinates required.\n\nIn addition, sp provides classes for gridded data and polygon data. With sp\nloaded, gstat can calculate variogram maps.\n\nAny comments are welcome,\n--\nEdzer",
+      "body_snippet": "I uploaded gstat 0.9-12 to CRAN, which has a few important changes:\n\n1. Cokriging cross validation\n\nCokriging cross validation is now possible with the function gstat.cv:\nyou simply pass a multivariab",
+      "thread_id": "thread-9c56b28ab941",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-3a869f8919a3",
+      "message_id": "<40D85970.8090506@univie.ac.at>",
+      "from_name": "Erich Neuwirth",
+      "from_email_hash": "178c9665decd09e76ed713e123ba2a6b2ed2ac166995047eb6dc12c5ab93e7ac",
+      "date": "2004-06-22T18:08:16+02:00",
+      "subject": "[R-pkgs] R (D)COM server, new release",
+      "subject_clean": "R (D)COM server, new release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Today we uploaded a new release of the\nR (D)COM server for Windows to CRAN.\nIt is release 1.35\n\nThe software is much more stable, and there are\nquite a few improvements.\n\nExcerpts from the NEWS file:\n\nRServerManager has been added. This provides a repository for R COM \nservers.  See the samples and the additional documentation\n\nPartial rewrite of the code for SetSymbol() and GetSymbol().\nNow arrays of VARIANTs are supported to some degree.\nThis makes the COM server accessible to many scripting languages\n\nSample usage for JScript, Python, and VBScript added\n\nNew tools library provided for Excel to remotely access COM server\nwithout the need for local installation\n\nThe software should appear on CRAN in the \"Other\" section\nwithin the next few days.\n\n\nThomas Baier\nErich Neuwirth\n\n\n\n\n-- \nErich Neuwirth, Computer Supported Didactics Working Group\nVisit our SunSITE at http://sunsite.univie.ac.at\nPhone: +43-1-4277-38624 Fax: +43-1-4277-9386",
+      "body_snippet": "Today we uploaded a new release of the\nR (D)COM server for Windows to CRAN.\nIt is release 1.35\n\nThe software is much more stable, and there are\nquite a few improvements.\n\nExcerpts from the NEWS file:\n",
+      "thread_id": "thread-3a869f8919a3",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-3a869f8919a3",
+      "message_id": "<40D85970.8090506@univie.ac.at>",
+      "from_name": "Erich Neuwirth",
+      "from_email_hash": "178c9665decd09e76ed713e123ba2a6b2ed2ac166995047eb6dc12c5ab93e7ac",
+      "date": "2004-06-22T18:08:16+02:00",
+      "subject": "[R-pkgs] R (D)COM server, new release",
+      "subject_clean": "R (D)COM server, new release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Today we uploaded a new release of the\nR (D)COM server for Windows to CRAN.\nIt is release 1.35\n\nThe software is much more stable, and there are\nquite a few improvements.\n\nExcerpts from the NEWS file:\n\nRServerManager has been added. This provides a repository for R COM \nservers.  See the samples and the additional documentation\n\nPartial rewrite of the code for SetSymbol() and GetSymbol().\nNow arrays of VARIANTs are supported to some degree.\nThis makes the COM server accessible to many scripting languages\n\nSample usage for JScript, Python, and VBScript added\n\nNew tools library provided for Excel to remotely access COM server\nwithout the need for local installation\n\nThe software should appear on CRAN in the \"Other\" section\nwithin the next few days.\n\n\nThomas Baier\nErich Neuwirth\n\n\n\n\n-- \nErich Neuwirth, Computer Supported Didactics Working Group\nVisit our SunSITE at http://sunsite.univie.ac.at\nPhone: +43-1-4277-38624 Fax: +43-1-4277-9386",
+      "body_snippet": "Today we uploaded a new release of the\nR (D)COM server for Windows to CRAN.\nIt is release 1.35\n\nThe software is much more stable, and there are\nquite a few improvements.\n\nExcerpts from the NEWS file:\n",
+      "thread_id": "thread-3a869f8919a3",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-71d174b20fd8",
+      "message_id": "<Pine.LNX.4.44.0406291502090.19397-100000@wws-6qcbw21.Princeton.EDU>",
+      "from_name": "Kosuke Imai",
+      "from_email_hash": "eaf0ca146d17076052f4ad39e1dcb4c6ac5808ae945d402c1627ab60a6549cc1",
+      "date": "2004-06-29T15:05:16-04:00",
+      "subject": "[R-pkgs] MNP",
+      "subject_clean": "MNP",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the release of our software, which is now \navailable through CRAN.\n\nMNP: R Package for Fitting the Multinomial Probit Models\n\nAbstract:\nMNP is a publicly available R package that fits the Bayesian multinomial\nprobit models via Markov chain Monte Carlo. Along with the standard\nmultinomial probit model, it can also fit models with different choice\nsets for each observation, and complete or partial ordering of all the\navailable alternatives. The computation is based on the efficient marginal\ndata augmentation algorithm that is developed by Imai and van Dyk (2004)  \n``A Bayesian Analysis of the Multinomial Probit Model Using the Data\nAugmentation,'' Journal of Econometrics, Forthcoming.\n\nKosuke Imai, Department of Politics, Princeton University\nJordan R. Vance, Department of Computer Science, Princeton University\nDavid A. van Dyk, Department of Statistics, University of California, Irvine",
+      "body_snippet": "We would like to announce the release of our software, which is now \navailable through CRAN.\n\nMNP: R Package for Fitting the Multinomial Probit Models\n\nAbstract:\nMNP is a publicly available R package ",
+      "thread_id": "thread-71d174b20fd8",
+      "thread_depth": 0,
+      "month": "2004-06"
+    },
+    {
+      "id": "msg-71d174b20fd8",
+      "message_id": "<Pine.LNX.4.44.0406291502090.19397-100000@wws-6qcbw21.Princeton.EDU>",
+      "from_name": "Kosuke Imai",
+      "from_email_hash": "eaf0ca146d17076052f4ad39e1dcb4c6ac5808ae945d402c1627ab60a6549cc1",
+      "date": "2004-06-29T15:05:16-04:00",
+      "subject": "[R-pkgs] MNP",
+      "subject_clean": "MNP",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the release of our software, which is now \navailable through CRAN.\n\nMNP: R Package for Fitting the Multinomial Probit Models\n\nAbstract:\nMNP is a publicly available R package that fits the Bayesian multinomial\nprobit models via Markov chain Monte Carlo. Along with the standard\nmultinomial probit model, it can also fit models with different choice\nsets for each observation, and complete or partial ordering of all the\navailable alternatives. The computation is based on the efficient marginal\ndata augmentation algorithm that is developed by Imai and van Dyk (2004)  \n``A Bayesian Analysis of the Multinomial Probit Model Using the Data\nAugmentation,'' Journal of Econometrics, Forthcoming.\n\nKosuke Imai, Department of Politics, Princeton University\nJordan R. Vance, Department of Computer Science, Princeton University\nDavid A. van Dyk, Department of Statistics, University of California, Irvine",
+      "body_snippet": "We would like to announce the release of our software, which is now \navailable through CRAN.\n\nMNP: R Package for Fitting the Multinomial Probit Models\n\nAbstract:\nMNP is a publicly available R package ",
+      "thread_id": "thread-71d174b20fd8",
+      "thread_depth": 0,
+      "month": "2004-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-928a7d18d32d",
+      "subject": "lme4_0.6-1 uploaded",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2004-06-01T16:22:03-05:00",
+      "last_reply": "2004-06-01T16:22:03-05:00",
+      "root_message_id": "msg-928a7d18d32d"
+    },
+    {
+      "id": "thread-928a7d18d32d",
+      "subject": "lme4_0.6-1 uploaded",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2004-06-01T16:22:03-05:00",
+      "last_reply": "2004-06-01T16:22:03-05:00",
+      "root_message_id": "msg-928a7d18d32d"
+    },
+    {
+      "id": "thread-f32dc1d3354a",
+      "subject": "New versions of Hmisc and Design on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2004-06-04T09:04:31-04:00",
+      "last_reply": "2004-06-04T09:04:31-04:00",
+      "root_message_id": "msg-f32dc1d3354a"
+    },
+    {
+      "id": "thread-f32dc1d3354a",
+      "subject": "New versions of Hmisc and Design on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2004-06-04T09:04:31-04:00",
+      "last_reply": "2004-06-04T09:04:31-04:00",
+      "root_message_id": "msg-f32dc1d3354a"
+    },
+    {
+      "id": "thread-11e53d84a092",
+      "subject": "gregmisc 1.11.2 including read.xls()",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-06-09T14:11:41-04:00",
+      "last_reply": "2004-06-09T14:11:41-04:00",
+      "root_message_id": "msg-11e53d84a092"
+    },
+    {
+      "id": "thread-11e53d84a092",
+      "subject": "gregmisc 1.11.2 including read.xls()",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-06-09T14:11:41-04:00",
+      "last_reply": "2004-06-09T14:11:41-04:00",
+      "root_message_id": "msg-11e53d84a092"
+    },
+    {
+      "id": "thread-5592035f0368",
+      "subject": "New package: RUnit",
+      "message_count": 1,
+      "participants": [
+        "Klaus Juenemann"
+      ],
+      "started": "2004-06-11T15:42:30+02:00",
+      "last_reply": "2004-06-11T15:42:30+02:00",
+      "root_message_id": "msg-5592035f0368"
+    },
+    {
+      "id": "thread-5592035f0368",
+      "subject": "New package: RUnit",
+      "message_count": 1,
+      "participants": [
+        "Klaus Juenemann"
+      ],
+      "started": "2004-06-11T15:42:30+02:00",
+      "last_reply": "2004-06-11T15:42:30+02:00",
+      "root_message_id": "msg-5592035f0368"
+    },
+    {
+      "id": "thread-9c56b28ab941",
+      "subject": "gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "message_count": 1,
+      "participants": [
+        "Edzer J. Pebesma"
+      ],
+      "started": "2004-06-16T09:48:34+02:00",
+      "last_reply": "2004-06-16T09:48:34+02:00",
+      "root_message_id": "msg-9c56b28ab941"
+    },
+    {
+      "id": "thread-9c56b28ab941",
+      "subject": "gstat 0.9-12: cokriging cross validation and class name incompatibilities",
+      "message_count": 1,
+      "participants": [
+        "Edzer J. Pebesma"
+      ],
+      "started": "2004-06-16T09:48:34+02:00",
+      "last_reply": "2004-06-16T09:48:34+02:00",
+      "root_message_id": "msg-9c56b28ab941"
+    },
+    {
+      "id": "thread-3a869f8919a3",
+      "subject": "R (D)COM server, new release",
+      "message_count": 1,
+      "participants": [
+        "Erich Neuwirth"
+      ],
+      "started": "2004-06-22T18:08:16+02:00",
+      "last_reply": "2004-06-22T18:08:16+02:00",
+      "root_message_id": "msg-3a869f8919a3"
+    },
+    {
+      "id": "thread-3a869f8919a3",
+      "subject": "R (D)COM server, new release",
+      "message_count": 1,
+      "participants": [
+        "Erich Neuwirth"
+      ],
+      "started": "2004-06-22T18:08:16+02:00",
+      "last_reply": "2004-06-22T18:08:16+02:00",
+      "root_message_id": "msg-3a869f8919a3"
+    },
+    {
+      "id": "thread-71d174b20fd8",
+      "subject": "MNP",
+      "message_count": 1,
+      "participants": [
+        "Kosuke Imai"
+      ],
+      "started": "2004-06-29T15:05:16-04:00",
+      "last_reply": "2004-06-29T15:05:16-04:00",
+      "root_message_id": "msg-71d174b20fd8"
+    },
+    {
+      "id": "thread-71d174b20fd8",
+      "subject": "MNP",
+      "message_count": 1,
+      "participants": [
+        "Kosuke Imai"
+      ],
+      "started": "2004-06-29T15:05:16-04:00",
+      "last_reply": "2004-06-29T15:05:16-04:00",
+      "root_message_id": "msg-71d174b20fd8"
+    }
+  ]
+}

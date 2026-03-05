@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-07",
+  "messages": [
+    {
+      "id": "msg-9edc7ffa82af",
+      "message_id": "<4FFBC5C6.4030800@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2012-07-10T08:03:50+02:00",
+      "subject": "[R-pkgs] package JM -- version 1.0-0",
+      "subject_clean": "package JM -- version 1.0-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of version 1.0-0 of package JM (already \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter models. These models are \napplicable in mainly two settings. First, when focus is in the survival \noutcome and we wish to account for the effect of an endogenous (aka \ninternal) time-dependent covariate measured with error. Second, when \nfocus is in the longitudinal outcome and we wish to correct for \nnonrandom dropout.\n\nSome basic features of JM:\n\n* it fits joint models for continuous longitudinal responses and allows \nfor several options for the survival submodel, including PH models with \nWeibull, piecewise-constant, spline-approximated and unspecified \nbaseline hazard functions. The most complete option is the PH model with \nthe spline-approximated baseline hazard, which also allows for the \ninclusion of stratification factors, competing risks and (exogenous) \ntime-varying covariates;\n\n* it allows for several formulations of the association structure \nbetween the longitudinal and survival outcomes;\n\n* it computes dynamic individualized predictions for the survival and \nlongitudinal outcomes, which are updated as extra longitudinal \ninformation is recorded;\n\n* it computes time-dependent sensitivity and specificity, and the \ncorresponding ROCs and AUCs with several options for the prediction rule;\n\n* several types of residuals are supported for both outcomes;\n\n* fast fitting of these models is facilitated with a pseudo-adaptive \nGaussian-Hermite rule.\n\n\nThe theory and application of this type of models along with a \ncomprehensive overview of the capabilities of the package can be found \nin the recently published book \"Joint Models for Longitudinal and \nTime-to-Event Data, with Applications in R\" by Chapman and Hall/CRC \n(http://www.crcpress.com/product/isbn/9781439872864). The code used in \nthe book and additional material are available in the R-forge web site: \nhttp://jmr.r-forge.r-project.org/\n\nAdditional information can be found in the corresponding help files, and \nexamples at the R wiki web page devoted to JM: \nhttp://rwiki.sciviews.org/doku.php?id=packages:cran:jm\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014\nWeb: http://www.erasmusmc.nl/biostatistiek/",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of version 1.0-0 of package JM (already \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter mode",
+      "thread_id": "thread-9edc7ffa82af",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-caa4fe3a5a73",
+      "message_id": "<50112908.60602@ma.tum.de>",
+      "from_name": "Nicole Krämer",
+      "from_email_hash": "a3e8deaa69c5508dcf0bea4b68fce78883a3e26af3adebdfb0d363c75d7c450b",
+      "date": "2012-07-26T13:24:56+02:00",
+      "subject": "[R-pkgs] plsdof 0.2-3: Degrees of Freedom and Statistical Inference for Partial Least Squares",
+      "subject_clean": "plsdof 0.2-3: Degrees of Freedom and Statistical Inference for Partial Least Squares",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nwe proudly announce the latest release of our R package plsdof:  Degrees\nof Freedom and Statistical Inference for Partial Least Squares.\n\nFeatures include:\n\n* Degrees of Freedom estimates for Partial Least Squares (PLS) Regression\n* Model selection for PLS based on various information criteria and on\ncross-validation\n* approximate confidence intervals  and significance tests for PLS\nregression coefficients\n* cross-validation for Ridge Regression and Principal Components Regression\n\nAll implemented methods are explained in detail in\n\nKr?mer & Sugiyama (2011)\nThe Degrees of Freedom of Partial Least Squares Regression\nJournal of the American Statistical Association, 106 (494), 697 - 705\nhttp://amstat.tandfonline.com/doi/abs/10.1198/jasa.2011.tm10107\n\nBest regards,\n\nNicole & Mikio\n\n-- \nDr. Nicole Kr?mer\nTechnische Universit?t M?nchen\nZentrum Mathematik\nLehrstuhl f?r Mathematische Statistik\nBoltzmannstr. 3 (postal address) / Parkring 13 (street address)\n85748 Garching\n\nTel.: +49 89 289 17426\nFax.: +49 89 289 17435\n\nhttp://www-m4.ma.tum.de/personen/mitarbeiter/nicole-kraemer/",
+      "body_snippet": "Dear R users,\n\nwe proudly announce the latest release of our R package plsdof:  Degrees\nof Freedom and Statistical Inference for Partial Least Squares.\n\nFeatures include:\n\n* Degrees of Freedom estimat",
+      "thread_id": "thread-caa4fe3a5a73",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-89ac8457e5a8",
+      "message_id": "<20120731082854.wvltua0d8gc08k0w@imp.inserm.fr>",
+      "from_name": "Ken Knoblauch",
+      "from_email_hash": "7e8b6c9e332f8fb406f5225c42712e6bbab07fdbe1b2b8be3afdbd9db45ad318",
+      "date": "2012-07-31T08:28:54+02:00",
+      "subject": "[R-pkgs] new package MPDiR version 0.1-11",
+      "subject_clean": "new package MPDiR version 0.1-11",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We announce the release of package MPDiR version 0.1-11 which contains\ndata sets and functions to support the forthcoming book\n\"Modeling Psychophysical Data in R\" by K. Knoblauch and L. T. Maloney,\nUse R! Vol 32, Springer (expected publication date: September 2012).\n\nThe package includes several data sets from published psychophysical\nexperiments using detection and rating scale measures for\nestimating signal detection parameters, psychometric functions,\nclassification images, etc.\n\nBest,\n\nKen\n\n-- \nKen Knoblauch\nInserm U846\nStem-cell and Brain Research Institute\nDepartment of Integrative Neurosciences\n18 avenue du Doyen L?pine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.sbri.fr/members/kenneth-knoblauch.html",
+      "body_snippet": "We announce the release of package MPDiR version 0.1-11 which contains\ndata sets and functions to support the forthcoming book\n\"Modeling Psychophysical Data in R\" by K. Knoblauch and L. T. Maloney,\nUs",
+      "thread_id": "thread-89ac8457e5a8",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-653642799f7e",
+      "message_id": "<CAJ=0CtC6=Q2L0QzuKK668AZtMhQu9RhZgX=LU6ahun3xg5rjvw@mail.gmail.com>",
+      "from_name": "Adrian Duşa",
+      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
+      "date": "2012-07-31T13:24:15+03:00",
+      "subject": "[R-pkgs] QCA version 1.0-4 released",
+      "subject_clean": "QCA version 1.0-4 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nQCA package version 1.0-4 has been released today, the sources are now\nvisible on CRAN and the binaries for Windows and MacOS should appear\nin a couple of more days.\n\nWe highly recommend upgrading to this version. Apart from a number of\nsmall bug fixes, the most notable reason to upgrade is a dramatic\nincrease in speed, due to the compilation of some computationally\nintensive parts of the code in the C language. QCA is now faster by a\nfactor of at least 10 (in some cases over 100), and it consumes\nconsiderably less memory.\n\nWe are grateful to Jim Holtman, Simon Urbanek, Duncan Murdoch, Martin\nMorgan and Prof. Brian Ripley for very useful hints while optimizing\nboth the R code and some of its C implementation.\n\nBest wishes,\nAdrian and Alrik\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd.\n050025 Bucharest sector 5\nRomania\nTel.:+40 21 3126618 \\\n       +40 21 3120210 / int.101\nFax: +40 21 3158391",
+      "body_snippet": "Dear All,\n\nQCA package version 1.0-4 has been released today, the sources are now\nvisible on CRAN and the binaries for Windows and MacOS should appear\nin a couple of more days.\n\nWe highly recommend up",
+      "thread_id": "thread-653642799f7e",
+      "thread_depth": 0,
+      "month": "2012-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9edc7ffa82af",
+      "subject": "package JM -- version 1.0-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2012-07-10T08:03:50+02:00",
+      "last_reply": "2012-07-10T08:03:50+02:00",
+      "root_message_id": "msg-9edc7ffa82af"
+    },
+    {
+      "id": "thread-caa4fe3a5a73",
+      "subject": "plsdof 0.2-3: Degrees of Freedom and Statistical Inference for Partial Least Squares",
+      "message_count": 1,
+      "participants": [
+        "Nicole Krämer"
+      ],
+      "started": "2012-07-26T13:24:56+02:00",
+      "last_reply": "2012-07-26T13:24:56+02:00",
+      "root_message_id": "msg-caa4fe3a5a73"
+    },
+    {
+      "id": "thread-89ac8457e5a8",
+      "subject": "new package MPDiR version 0.1-11",
+      "message_count": 1,
+      "participants": [
+        "Ken Knoblauch"
+      ],
+      "started": "2012-07-31T08:28:54+02:00",
+      "last_reply": "2012-07-31T08:28:54+02:00",
+      "root_message_id": "msg-89ac8457e5a8"
+    },
+    {
+      "id": "thread-653642799f7e",
+      "subject": "QCA version 1.0-4 released",
+      "message_count": 1,
+      "participants": [
+        "Adrian Duşa"
+      ],
+      "started": "2012-07-31T13:24:15+03:00",
+      "last_reply": "2012-07-31T13:24:15+03:00",
+      "root_message_id": "msg-653642799f7e"
+    }
+  ]
+}

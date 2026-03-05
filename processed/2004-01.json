@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-01",
+  "messages": [
+    {
+      "id": "msg-b0c350e25cd2",
+      "message_id": "<20040108092150.GA1179@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2004-01-08T10:21:50+01:00",
+      "subject": "[R-pkgs] New version of eha",
+      "subject_clean": "New version of eha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty models, yet (on the TODO list).\n\n\t* mlreg: New argument, 'n.points', added to 'control'. Controls\n\tthe number of points used in the Gauss-Hermite quadrature.\n\n\t* mlreg: Stricter control of numerical problems, especially in the\n\tfrailty fit.\n\t\n\t* clean: Replaced by the new functions check.spells and join.spells.\n\n\t* Return values changed to conform with R-1.8.0 (and later).\n-------------------------\nAs usual, comments and bug reports are welcome!\n\n-- \n G?ran Brostr?m                    tel: +46 90 786 5223\n Department of Statistics          fax: +46 90 786 6614\n Ume? University                   http://www.stat.umu.se/egna/gb/\n SE-90187 Ume?, Sweden             e-mail: gb at stat.umu.se",
+      "body_snippet": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty model",
+      "thread_id": "thread-b0c350e25cd2",
+      "thread_depth": 0,
+      "month": "2004-01"
+    },
+    {
+      "id": "msg-b0c350e25cd2",
+      "message_id": "<20040108092150.GA1179@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2004-01-08T10:21:50+01:00",
+      "subject": "[R-pkgs] New version of eha",
+      "subject_clean": "New version of eha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty models, yet (on the TODO list).\n\n\t* mlreg: New argument, 'n.points', added to 'control'. Controls\n\tthe number of points used in the Gauss-Hermite quadrature.\n\n\t* mlreg: Stricter control of numerical problems, especially in the\n\tfrailty fit.\n\t\n\t* clean: Replaced by the new functions check.spells and join.spells.\n\n\t* Return values changed to conform with R-1.8.0 (and later).\n-------------------------\nAs usual, comments and bug reports are welcome!\n\n-- \n G?ran Brostr?m                    tel: +46 90 786 5223\n Department of Statistics          fax: +46 90 786 6614\n Ume? University                   http://www.stat.umu.se/egna/gb/\n SE-90187 Ume?, Sweden             e-mail: gb at stat.umu.se",
+      "body_snippet": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty model",
+      "thread_id": "thread-b0c350e25cd2",
+      "thread_depth": 0,
+      "month": "2004-01"
+    },
+    {
+      "id": "msg-59de5a5d39c1",
+      "message_id": "<3A822319EB35174CA3714066D590DCD504AF75EB@usrymx25.merck.com>",
+      "from_name": "Liaw, Andy",
+      "from_email_hash": "898c214b2bc6c21da39a883e12ded19760ce149cfa1067d738a1a4f3200f2bc0",
+      "date": "2004-01-11T22:22:32-05:00",
+      "subject": "[R-pkgs] new version of randomForest (4.0-7)",
+      "subject_clean": "new version of randomForest (4.0-7)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI've just released a new version of randomForest (available on CRAN now).\nThis version contained quite a number of new features and bug fixes,\ncompared to version prior to 4.0-x (and few more since 4.0-1).\n\nFor those not familiar with randomForest, it's an ensemble\nclassifier/regression tool.  Please see\nhttp://www.math.usu.edu/~adele/forests/ for more detailed information, as\nwell as the Fortran code.\n\nComments/questions/bugs reports/patches much appreciated! \n\nA few notes about the new version:\n\no  There is a new tuneRF() function for searching for the optimal mtry,\nfollowing Breiman's suggestion.  PLEASE use it to see if result can be\nimproved!\n\no  A new variable importance measure replaces the one based on margin.  This\nnew measure is the same as in Breiman's V5.  The analogous measure is also\nimplemented for regression.  This new measure is designed to be more robust\nagainst data where predictor variables have very different number of\npossible splits (i.e., unique values/categories).  The previous measure\ntends to make variables with more possible splits look more important.\n\no  For classification, the new meassure is also computed on a per-class\nbasis.\n\no  There is the new `sampsize' option for down-sampling larger classes.\nE.g., if in a two-class problem, there are 950 class 1s and 50 class 2s, use\nsampsize=c(50, 50) will usually give a more `balanced' classifier.\n\no  There is a new importance() function for extracting the importance\nmeasure.\n\no  The predict() method has an option to return predictions by the component\ntrees.\n\no  There is a new getTree() function for looking at one of the trees in the\nforest. \n\no  For dealing with missing values in the predictor variables, there are\nna.roughfix() and rfImpute(), which correspond to the `missquick' and\n`missright' options in Breiman's V4/V5 code.  Both works for classification\nas well as regression.\n\no  There is an experimental bias reduction step in regression (the corr.bias\nargument in randomForest) that could be very effective for some data (but\nessentially no effect for some others).\n\n\nSome notes about differences between the package and Breiman's Fortran code:\n\no  Breiman uses the class weights to cast weighted votes.  This is not done\nin the R version.  However, one can use the threshold argument to\nrandomForest to get similar (but not exactly the same) effect.\n\no  In Breiman's V4/V5 code, the Gini-based importance is weighted by the\nout-of-bag data.  This has not been implemented in the R version.\n\no  Breiman's V4/V5 code can handle categorical predictors with more than 32\ncategories.  This has not been implemented in the R version.\n\no  Breiman's classification code uses mtry differently than the R version:\nthe mtry variables are sampled *with replacement* at each node.  The R\nversion samples without replacement, so that if mtry is set to number of\npredictors, one gets the same result as bagging.  Breiman's regression code\n*does* sample the variables without replacement.\n\no  In the R version, ties are randomly broken when finding best variables,\nor when making predictions.  In Breiman's code, the first one found wins.\n\no  The `prototypes' Breiman described have not been implemented.  There are\nsituations when they can be misleading, so I have chosen not to implement\nit.\n\no  The `interaction detection' feature in Breiman's V5 has not been\nimplemented (but is fairly high on my to-do list).\n\n\nBest,\nAndy\n\n\nAndy Liaw, PhD\nBiometrics Research      PO Box 2000, RY33-300     \nMerck Research Labs           Rahway, NJ 07065\nmailto:andy_liaw at merck.com        732-594-0820\n\n\n\n\n------------------------------------------------------------------------------\nNotice:  This e-mail message, together with any attachments,...{{dropped}}",
+      "body_snippet": "Dear R users,\n\nI've just released a new version of randomForest (available on CRAN now).\nThis version contained quite a number of new features and bug fixes,\ncompared to version prior to 4.0-x (and fe",
+      "thread_id": "thread-59de5a5d39c1",
+      "thread_depth": 0,
+      "month": "2004-01"
+    },
+    {
+      "id": "msg-59de5a5d39c1",
+      "message_id": "<3A822319EB35174CA3714066D590DCD504AF75EB@usrymx25.merck.com>",
+      "from_name": "Liaw, Andy",
+      "from_email_hash": "898c214b2bc6c21da39a883e12ded19760ce149cfa1067d738a1a4f3200f2bc0",
+      "date": "2004-01-11T22:22:32-05:00",
+      "subject": "[R-pkgs] new version of randomForest (4.0-7)",
+      "subject_clean": "new version of randomForest (4.0-7)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI've just released a new version of randomForest (available on CRAN now).\nThis version contained quite a number of new features and bug fixes,\ncompared to version prior to 4.0-x (and few more since 4.0-1).\n\nFor those not familiar with randomForest, it's an ensemble\nclassifier/regression tool.  Please see\nhttp://www.math.usu.edu/~adele/forests/ for more detailed information, as\nwell as the Fortran code.\n\nComments/questions/bugs reports/patches much appreciated! \n\nA few notes about the new version:\n\no  There is a new tuneRF() function for searching for the optimal mtry,\nfollowing Breiman's suggestion.  PLEASE use it to see if result can be\nimproved!\n\no  A new variable importance measure replaces the one based on margin.  This\nnew measure is the same as in Breiman's V5.  The analogous measure is also\nimplemented for regression.  This new measure is designed to be more robust\nagainst data where predictor variables have very different number of\npossible splits (i.e., unique values/categories).  The previous measure\ntends to make variables with more possible splits look more important.\n\no  For classification, the new meassure is also computed on a per-class\nbasis.\n\no  There is the new `sampsize' option for down-sampling larger classes.\nE.g., if in a two-class problem, there are 950 class 1s and 50 class 2s, use\nsampsize=c(50, 50) will usually give a more `balanced' classifier.\n\no  There is a new importance() function for extracting the importance\nmeasure.\n\no  The predict() method has an option to return predictions by the component\ntrees.\n\no  There is a new getTree() function for looking at one of the trees in the\nforest. \n\no  For dealing with missing values in the predictor variables, there are\nna.roughfix() and rfImpute(), which correspond to the `missquick' and\n`missright' options in Breiman's V4/V5 code.  Both works for classification\nas well as regression.\n\no  There is an experimental bias reduction step in regression (the corr.bias\nargument in randomForest) that could be very effective for some data (but\nessentially no effect for some others).\n\n\nSome notes about differences between the package and Breiman's Fortran code:\n\no  Breiman uses the class weights to cast weighted votes.  This is not done\nin the R version.  However, one can use the threshold argument to\nrandomForest to get similar (but not exactly the same) effect.\n\no  In Breiman's V4/V5 code, the Gini-based importance is weighted by the\nout-of-bag data.  This has not been implemented in the R version.\n\no  Breiman's V4/V5 code can handle categorical predictors with more than 32\ncategories.  This has not been implemented in the R version.\n\no  Breiman's classification code uses mtry differently than the R version:\nthe mtry variables are sampled *with replacement* at each node.  The R\nversion samples without replacement, so that if mtry is set to number of\npredictors, one gets the same result as bagging.  Breiman's regression code\n*does* sample the variables without replacement.\n\no  In the R version, ties are randomly broken when finding best variables,\nor when making predictions.  In Breiman's code, the first one found wins.\n\no  The `prototypes' Breiman described have not been implemented.  There are\nsituations when they can be misleading, so I have chosen not to implement\nit.\n\no  The `interaction detection' feature in Breiman's V5 has not been\nimplemented (but is fairly high on my to-do list).\n\n\nBest,\nAndy\n\n\nAndy Liaw, PhD\nBiometrics Research      PO Box 2000, RY33-300     \nMerck Research Labs           Rahway, NJ 07065\nmailto:andy_liaw at merck.com        732-594-0820\n\n\n\n\n------------------------------------------------------------------------------\nNotice:  This e-mail message, together with any attachments,...{{dropped}}",
+      "body_snippet": "Dear R users,\n\nI've just released a new version of randomForest (available on CRAN now).\nThis version contained quite a number of new features and bug fixes,\ncompared to version prior to 4.0-x (and fe",
+      "thread_id": "thread-59de5a5d39c1",
+      "thread_depth": 0,
+      "month": "2004-01"
+    },
+    {
+      "id": "msg-df93b8b53ed9",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20680AD2B@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-01-16T03:54:37-05:00",
+      "subject": "[R-pkgs] FW: Announce: RPy version 0.3.3",
+      "subject_clean": "Announce: RPy version 0.3.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">  -----Original Message-----\n> From: \tWarnes, Gregory R  \n> Sent:\tFriday, January 16, 2004 3:52 AM\n> To:\t'r-packages'; 'python-announce '; 'rsoap-talk'; 'Dan Nathan'; 'RPy\n> List'\n> Subject:\tAnnounce: RPy version 0.3.3\n> \n> \n> RPy Version 0.3.3 is now available from the RPy home page at\n> http://rpy.sf.net.   \n> \n> What is RPy?\n> --------------------\n> \n> RPy is a very simple, yet robust, Python (http://www.python.org) interface\n> to the R environment for statistical data analysis and graphics\n> (http://www.r-project.org).  RPy can manages translation between python\n> and R formats for all kinds of R objects and can execute arbitrary R\n> functions (including the graphic functions).  All errors from the R\n> language are converted to proper Python exceptions.  All module installed\n> on the R system are available from Python.\n> \n> Consequently, RPy allows Python programmers to easily add advanced\n> statistical functionality to Python programs.  It allows R programmers the\n> ability to use Python to control R computations and to interface them with\n> other systems.  Examples include RSOAP\n> (http://www.analytics.washington.edu/Zope/projects/RSOAP),  RSessionDA\n> (http://www.analytics.washington.edu/Zope/projects/RSOAP), and RStatServer\n> (http://www.analytics.washington.edu/Zope/projects/RStatServer).   These\n> products, which make heavy use of RPy have been used in a production\n> environments for two years.\n> \n> New features in 0.3.3\n> -------------------------------\n> \n> o Now works with R 1.8.X\n> \n> o Windows version merged into the Unix source tree\n> \n> o Added lcall() method for calling R functions using a list of (name,\n>   value) pairs for the parameters.  This is works around the python\n>   (mis-)feature of using unordered python dictionaries for named\n>   parameters, resulting in the loss of order for named parameters.\n> \n> o All reported bugs have been fixed.\n> \n> o New maintainer: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\n> \n> \n> For more information visit the RPy home page at http://rpy.sf.net, or the\n> RPy SourceForge project page at http://www.sf.net/projects/rpy.\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": ">  -----Original Message-----\n> From: \tWarnes, Gregory R  \n> Sent:\tFriday, January 16, 2004 3:52 AM\n> To:\t'r-packages'; 'python-announce '; 'rsoap-talk'; 'Dan Nathan'; 'RPy\n> List'\n> Subject:\tAnnounce",
+      "thread_id": "thread-df93b8b53ed9",
+      "thread_depth": 0,
+      "month": "2004-01"
+    },
+    {
+      "id": "msg-df93b8b53ed9",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20680AD2B@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-01-16T03:54:37-05:00",
+      "subject": "[R-pkgs] FW: Announce: RPy version 0.3.3",
+      "subject_clean": "Announce: RPy version 0.3.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">  -----Original Message-----\n> From: \tWarnes, Gregory R  \n> Sent:\tFriday, January 16, 2004 3:52 AM\n> To:\t'r-packages'; 'python-announce '; 'rsoap-talk'; 'Dan Nathan'; 'RPy\n> List'\n> Subject:\tAnnounce: RPy version 0.3.3\n> \n> \n> RPy Version 0.3.3 is now available from the RPy home page at\n> http://rpy.sf.net.   \n> \n> What is RPy?\n> --------------------\n> \n> RPy is a very simple, yet robust, Python (http://www.python.org) interface\n> to the R environment for statistical data analysis and graphics\n> (http://www.r-project.org).  RPy can manages translation between python\n> and R formats for all kinds of R objects and can execute arbitrary R\n> functions (including the graphic functions).  All errors from the R\n> language are converted to proper Python exceptions.  All module installed\n> on the R system are available from Python.\n> \n> Consequently, RPy allows Python programmers to easily add advanced\n> statistical functionality to Python programs.  It allows R programmers the\n> ability to use Python to control R computations and to interface them with\n> other systems.  Examples include RSOAP\n> (http://www.analytics.washington.edu/Zope/projects/RSOAP),  RSessionDA\n> (http://www.analytics.washington.edu/Zope/projects/RSOAP), and RStatServer\n> (http://www.analytics.washington.edu/Zope/projects/RStatServer).   These\n> products, which make heavy use of RPy have been used in a production\n> environments for two years.\n> \n> New features in 0.3.3\n> -------------------------------\n> \n> o Now works with R 1.8.X\n> \n> o Windows version merged into the Unix source tree\n> \n> o Added lcall() method for calling R functions using a list of (name,\n>   value) pairs for the parameters.  This is works around the python\n>   (mis-)feature of using unordered python dictionaries for named\n>   parameters, resulting in the loss of order for named parameters.\n> \n> o All reported bugs have been fixed.\n> \n> o New maintainer: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\n> \n> \n> For more information visit the RPy home page at http://rpy.sf.net, or the\n> RPy SourceForge project page at http://www.sf.net/projects/rpy.\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": ">  -----Original Message-----\n> From: \tWarnes, Gregory R  \n> Sent:\tFriday, January 16, 2004 3:52 AM\n> To:\t'r-packages'; 'python-announce '; 'rsoap-talk'; 'Dan Nathan'; 'RPy\n> List'\n> Subject:\tAnnounce",
+      "thread_id": "thread-df93b8b53ed9",
+      "thread_depth": 0,
+      "month": "2004-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b0c350e25cd2",
+      "subject": "New version of eha",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2004-01-08T10:21:50+01:00",
+      "last_reply": "2004-01-08T10:21:50+01:00",
+      "root_message_id": "msg-b0c350e25cd2"
+    },
+    {
+      "id": "thread-b0c350e25cd2",
+      "subject": "New version of eha",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2004-01-08T10:21:50+01:00",
+      "last_reply": "2004-01-08T10:21:50+01:00",
+      "root_message_id": "msg-b0c350e25cd2"
+    },
+    {
+      "id": "thread-59de5a5d39c1",
+      "subject": "new version of randomForest (4.0-7)",
+      "message_count": 1,
+      "participants": [
+        "Liaw, Andy"
+      ],
+      "started": "2004-01-11T22:22:32-05:00",
+      "last_reply": "2004-01-11T22:22:32-05:00",
+      "root_message_id": "msg-59de5a5d39c1"
+    },
+    {
+      "id": "thread-59de5a5d39c1",
+      "subject": "new version of randomForest (4.0-7)",
+      "message_count": 1,
+      "participants": [
+        "Liaw, Andy"
+      ],
+      "started": "2004-01-11T22:22:32-05:00",
+      "last_reply": "2004-01-11T22:22:32-05:00",
+      "root_message_id": "msg-59de5a5d39c1"
+    },
+    {
+      "id": "thread-df93b8b53ed9",
+      "subject": "Announce: RPy version 0.3.3",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-01-16T03:54:37-05:00",
+      "last_reply": "2004-01-16T03:54:37-05:00",
+      "root_message_id": "msg-df93b8b53ed9"
+    },
+    {
+      "id": "thread-df93b8b53ed9",
+      "subject": "Announce: RPy version 0.3.3",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-01-16T03:54:37-05:00",
+      "last_reply": "2004-01-16T03:54:37-05:00",
+      "root_message_id": "msg-df93b8b53ed9"
+    }
+  ]
+}

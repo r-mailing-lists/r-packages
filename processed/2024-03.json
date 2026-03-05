@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-03",
+  "messages": [
+    {
+      "id": "msg-928949b86c48",
+      "message_id": "<bb40a01d-a3dc-4b58-88d5-01f7eb4d4517@cnam.fr>",
+      "from_name": "Vincent Audigier",
+      "from_email_hash": "e4c5f0aacfe96125ea31d60b9e55160999b37032cd12ceca42c32bba8017928c",
+      "date": "2024-03-13T10:10:23+01:00",
+      "subject": "[R-pkgs] clusterMI: Cluster Analysis with Missing Values by Multiple Imputation",
+      "subject_clean": "clusterMI: Cluster Analysis with Missing Values by Multiple Imputation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am pleased to announce the release of a new package named 'clusterMI' on CRAN.\n\nclusterMI allows clustering of incomplete observations by addressing missing values using multiple imputation.\n\nFor achieving this goal, the methodology consists in three steps:\n\n1. missing data imputation using tailored imputation models: four multiple imputation methods are proposed, two are based on joint modelling (JM-GL and JM-DP) and two are fully sequential methods (FCS-homo and FCS-hetero).\n2. cluster analysis of imputed data sets: six clustering methods are available (kmeans, pam, clara, hierarchical clustering, fuzzy c-means and gaussian mixture), but custom methods can also be easily used.\n3. partition pooling: the set of partitions is aggregated using NMF based method. An associated instability measure is computed by bootstrap. Among applications, this instability measure can be used to choose a number of clusters with missing values.\n\nThe package also offers several diagnostic tools for tuning the number of imputed data sets, for checking convergence in sequential imputation, for checking the fit of imputation models, etc.\n\nThis is the first version of the package, your feedback and suggestions are welcome!\n\nPlease find more details and download the package from the following link:https://cran.r-project.org/package=clusterMI\n\nBest regards,\n\nV. Audigier\n\n-- \nVincent AUDIGIER\nAssociate Professor, CNAM\n2 rue Cont? 75003 Paris\nOffice 35.3.21\nTel: 01 40 27 27 19\nWebsite:http://vincentaudigier.weebly.com/",
+      "body_snippet": "Dear all,\n\nI am pleased to announce the release of a new package named 'clusterMI' on CRAN.\n\nclusterMI allows clustering of incomplete observations by addressing missing values using multiple imputati",
+      "thread_id": "thread-928949b86c48",
+      "thread_depth": 0,
+      "month": "2024-03"
+    },
+    {
+      "id": "msg-7f25b4ae353b",
+      "message_id": "<SJ2PR05MB10332B2BBCA79839072290B63DB3B2@SJ2PR05MB10332.namprd05.prod.outlook.com>",
+      "from_name": "Peterson, Ryan",
+      "from_email_hash": "e0d668a5054b40bf3edf6381c2a27f6a1ec937b8247485e1132860fb0cf3cb60",
+      "date": "2024-03-28T21:24:11Z",
+      "subject": "[R-pkgs] New package - fastTS",
+      "subject_clean": "New package - fastTS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R enthusiasts,\n\nI am happy to announce a new package available on CRAN: fastTS (https://cran.r-project.org/web/packages/fastTS/). fastTS is especially useful for large time series with exogenous features and/or complex seasonality (i.e. with multiple modes), allowing for possibly high-dimensional feature sets. The method can also facilitate inference on exogenous features, conditional on a series' autoregressive structure. The regularization-based method is considerably faster than competitors, while often producing more accurate predictions. See our open-access publication for more information: https://doi.org/10.1177/1471082X231225307\n\nThe package has several vignettes, one of which is an detailed walkthrough of an application to an (included) data set consisting of an hourly series of arrivals into the University of Iowa Emergency Department with concurrent local temperature.\n\nIf you encounter any issues or would like to make contributions, please do so via the package's GitHub page: https://github.com/petersonR/fastTS\n\nBest,\nRyan\n\nRyan Peterson\nAssistant Professor\nDepartment of Biostatistics and Informatics\nUniversity of Colorado - Anschutz Medical Campus\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi R enthusiasts,\n\nI am happy to announce a new package available on CRAN: fastTS (https://cran.r-project.org/web/packages/fastTS/). fastTS is especially useful for large time series with exogenous fe",
+      "thread_id": "thread-7f25b4ae353b",
+      "thread_depth": 0,
+      "month": "2024-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-928949b86c48",
+      "subject": "clusterMI: Cluster Analysis with Missing Values by Multiple Imputation",
+      "message_count": 1,
+      "participants": [
+        "Vincent Audigier"
+      ],
+      "started": "2024-03-13T10:10:23+01:00",
+      "last_reply": "2024-03-13T10:10:23+01:00",
+      "root_message_id": "msg-928949b86c48"
+    },
+    {
+      "id": "thread-7f25b4ae353b",
+      "subject": "New package - fastTS",
+      "message_count": 1,
+      "participants": [
+        "Peterson, Ryan"
+      ],
+      "started": "2024-03-28T21:24:11+00:00",
+      "last_reply": "2024-03-28T21:24:11+00:00",
+      "root_message_id": "msg-7f25b4ae353b"
+    }
+  ]
+}

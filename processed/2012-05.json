@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-05",
+  "messages": [
+    {
+      "id": "msg-c45617e4abcb",
+      "message_id": "<4FA0E13E.8000008@mrc-bsu.cam.ac.uk>",
+      "from_name": "Michael Sweeting",
+      "from_email_hash": "d5221aa3bfd5184d6b1d71c2c12b9e6c91518681a374b36beab710d8459900f9",
+      "date": "2012-05-02T08:24:46+01:00",
+      "subject": "[R-pkgs] bcrm package update",
+      "subject_clean": "bcrm package update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nVersion 0.3 of the bcrm package is now available on CRAN. The package \nallows users to fit Bayesian Continuous Reassessment Method Phase I \ntrial designs. This version has the following new developments from \nversion 0.1:\n\n* Stopping rules have been added, allowing stopping to be based on a \nmaximum sample size, the maximum number to be treated at the final MTD \nestimate, the precision of the MTD estimate, and a minumum sample size.\n* Implementation of escalation based on posterior toxicity intervals \nusing loss functions.\n* Posterior summaries after each recruited cohort can now be plotted \nusing the \"each\" argument of plot.bcrm.\n* When simulating, operating characteristics are also now presented by \ntrue regions of toxicity risk.\n* Simulations now run faster, as they use information from identical \nprevious simulations to choose next dose. This is only implemented if \nnsims<=1000, otherwise the computation time to search previous \nsimulations becomes unmanageable.\n* Plot and print commands now refer to actual dose labels when they have \nbeen given by the user\n* Output from simulations can now be plotted as histograms using the \nfunction plot.bcrm.sim\n\nBest wishes\nMike\n\n-- \n-------------------------------------------\nDr Michael Sweeting\nMRC Biostatistics Unit\nInstitute of Public Health\nRobinson Way\nCambridge\nCB2 0SR\n\nTel: 01223 768257\nFax: 01223 760729",
+      "body_snippet": "Dear all,\n\nVersion 0.3 of the bcrm package is now available on CRAN. The package \nallows users to fit Bayesian Continuous Reassessment Method Phase I \ntrial designs. This version has the following new",
+      "thread_id": "thread-c45617e4abcb",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-cccd913632a4",
+      "message_id": "<CANROs4f7m5Da-Sa2mfJ=HJOAgz0N8VrxJiT-gLnweevHDYRsWA@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2012-05-02T16:31:51-05:00",
+      "subject": "[R-pkgs] New version of the knitr package (0.5)",
+      "subject_clean": "New version of the knitr package (0.5)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The knitr package version 0.5 is on CRAN now. It has gone through\nextensive development in the past few months, and about 200 issues\nwere solved (https://github.com/yihui/knitr/issues) thanks to the\nfeedback of users, which greatly improved the quality and usefulness\nof this package. For a complete list of changes, see\nhttps://github.com/yihui/knitr/blob/master/NEWS\n\nMost notable new features are:\n\n- chunk options can be arbitrary valid R code, e.g. <<echo=!TRUE,\nresults=ifelse(x, 'asis', 'markup')>>=; this makes a document really\nprogrammable, and the syntax is also consistent with normal R code;\nhttp://yihui.name/knitr/demo/sweave/\n- the listings package is supported via render_listings(), and the\nstyles are based on Sweavel.sty (courtesy of Frank Harrell);\nhttp://yihui.name/knitr/demo/listings/\n- for HTML/markdown documents, R plots can be automatically uploaded\nto Imgur to make sure the output is self-contained (no need to copy\nimages when publishing the output);\nhttp://yihui.name/knitr/demo/upload/\n- arbitrary recursive references of code chunks with <<label>> (e.g.\nchunk A can call chunk B which in turn calls C);\nhttp://yihui.name/knitr/demo/reference/\n- for cached chunks, their dependencies can be automatically figured\nout by analyzing the R code for global and local variables (see the\n'autodep' option)\n- new chunk options fig.cap and fig.scap to create figure environments\nwith captions in LaTeX;\n- Sweave concordance was implemented and integrated with RStudio so\nthat error navigation and PDF/Rnw sync become easy\n- more comprehensive support to markdown and reStructuredText;\nmarkdown is also well supported in RStudio (preview version); see\nhttp://yihui.name/en/2012/05/how-to-make-html5-slides-with-knitr/\n- other languages like Python and Awk can also be supported, e.g.\nhttps://github.com/yihui/knitr/blob/master/inst/examples/knitr-lang.Rmd\n\nSuggestions and questions are welcome; please join the mailing list\nhttps://groups.google.com/group/knitr or file issues to Github.\nThanks!\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "The knitr package version 0.5 is on CRAN now. It has gone through\nextensive development in the past few months, and about 200 issues\nwere solved (https://github.com/yihui/knitr/issues) thanks to the\nf",
+      "thread_id": "thread-cccd913632a4",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-0a82d7c55615",
+      "message_id": "<CAO58qEA8RP6PmQgFO4xqofmTrbcT=1Y6MjOFj2bS=nxXJkfP_w@mail.gmail.com>",
+      "from_name": "Tobias Sing",
+      "from_email_hash": "e5aa9e0a72a46e83010f69de9f936c1a74b392c29e707d83b3cedba8ec971b9a",
+      "date": "2012-05-05T20:25:10+02:00",
+      "subject": "[R-pkgs] ROCR source code now available on github",
+      "subject_clean": "ROCR source code now available on github",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nthe commented source code for the ROCR package\n(http://cran.r-project.org/web/packages/ROCR) is now available on\ngithub -- feel free to fork, add improvements, and contribute back!\nhttps://github.com/ipa-tys/ROCR\n\nKind regards,\n  Tobias",
+      "body_snippet": "Dear all,\n\nthe commented source code for the ROCR package\n(http://cran.r-project.org/web/packages/ROCR) is now available on\ngithub -- feel free to fork, add improvements, and contribute back!\nhttps://",
+      "thread_id": "thread-0a82d7c55615",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-395b012a205d",
+      "message_id": "<CA+OeqpPGPTVAB227owNc0kK2jeLEVcB81gDjiquwpXLvPuns3A@mail.gmail.com>",
+      "from_name": "Justin Donaldson",
+      "from_email_hash": "0a061bd4432ebed377ec908d3ecc37def939116804ebcf5a73e20bda78c6ac20",
+      "date": "2012-05-08T15:46:24-07:00",
+      "subject": "[R-pkgs] ANN: bigml package for R bigml_0.1.tar.gz",
+      "subject_clean": "ANN: bigml package for R bigml_0.1.tar.gz",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120508/c9f55ac6/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120508/c9f55ac6/attachment.pl>",
+      "thread_id": "thread-395b012a205d",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-f65fe9513e2b",
+      "message_id": "<4FB46CB9.90307@prodsyse.com>",
+      "from_name": "Spencer Graves",
+      "from_email_hash": "6586e2ac1511c7ac857f5fde255a82a116c8b018001a5efabe6ff8460c83a853",
+      "date": "2012-05-16T20:12:57-07:00",
+      "subject": "[R-pkgs] new version of fda fixes bug in pca.fd and supports library(Matrix)",
+      "subject_clean": "new version of fda fixes bug in pca.fd and supports library(Matrix)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello, All:\n\n\n\t  fda_2.2.8 (functional data analysis) is now available on CRAN.  This \nrevision includes the following improvements:\n\n\n\t\t    1.  A bug in pca.fd has been fixed.\n\n\n\t\t    2.  Many functions have a new argument \"returnMatrix\", which if \nTRUE allows the function to use the sparse matrix representations in \nlibrary(Matrix).  This should allow users to solve some larger problems \nand provides a speed advantage in a few cases.\n\n\n\t\t    3.  A few other minor bugs have been fixed including problems with \nsome of the script files in system.files('scripts', package='fda').\n\n\n\t  A package using the returnMatrix argument will also need Matrix in \nthe dependencies in DESCRIPTION and something like import(Matrix) in \nNAMESPACE.  Each use will require adding returnMatrix = TRUE to an \nappropriate fda function call.\n\n\n       Best Wishes,\nJim Ramsay, Giles Hooker, Spencer Graves",
+      "body_snippet": "Hello, All:\n\n\n\t  fda_2.2.8 (functional data analysis) is now available on CRAN.  This \nrevision includes the following improvements:\n\n\n\t\t    1.  A bug in pca.fd has been fixed.\n\n\n\t\t    2.  Many functi",
+      "thread_id": "thread-f65fe9513e2b",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-67a5e8811662",
+      "message_id": "<yajfbolgz5s1.fsf@gmail.com>",
+      "from_name": "Tim Hesterberg",
+      "from_email_hash": "c51170cbadb80bb547ec19aa1d0acf3876b4cc6e2d33e0c7ddbbc72eeeef2cd6",
+      "date": "2012-05-22T06:47:42-07:00",
+      "subject": "[R-pkgs] dataframe package",
+      "subject_clean": "dataframe package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new 'dataframe' package is on CRAN.  This is a modified version\nof the data frame code in R, modified to make fewer copies of the inputs\nand run faster, e.g.\n  as.data.frame(a vector)\nmakes 1 copy of the vector rather than 3,\n  data.frame(a vector)\nmakes 3 copies rather than 6, and\n  x[, \"a\"] <- newValue\nmakes (2,2,1) copies of (old data frame, new column, integer vector\nof row names) rather than (6,4,2).\n\nFunctionality should be identical to existing R code, with two exceptions:\n* bug fix, if x has two columns, then x[[4]] <- value will fail rather than \n  producing an illegal data frame\n* round(a data frame with numeric and factor columns)\n  rounds the numeric columns and leaves the factor columns unchanged, rather\n  than failing.\n\nTim Hesterberg\n\nNEW!  Mathematical Statistics with Resampling and R, Chihara & Hesterberg\nhttp://www.amazon.com/Mathematical-Statistics-Resampling-Laura-Chihara/dp/1118029852/ref=sr_1_1?ie=UTF8\nhttp://home.comcast.net/~timhesterberg\n (resampling, water bottle rockets, computers to Costa Rica, shower = 2650 light bulbs, ...)",
+      "body_snippet": "A new 'dataframe' package is on CRAN.  This is a modified version\nof the data frame code in R, modified to make fewer copies of the inputs\nand run faster, e.g.\n  as.data.frame(a vector)\nmakes 1 copy o",
+      "thread_id": "thread-67a5e8811662",
+      "thread_depth": 0,
+      "month": "2012-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c45617e4abcb",
+      "subject": "bcrm package update",
+      "message_count": 1,
+      "participants": [
+        "Michael Sweeting"
+      ],
+      "started": "2012-05-02T08:24:46+01:00",
+      "last_reply": "2012-05-02T08:24:46+01:00",
+      "root_message_id": "msg-c45617e4abcb"
+    },
+    {
+      "id": "thread-cccd913632a4",
+      "subject": "New version of the knitr package (0.5)",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2012-05-02T16:31:51-05:00",
+      "last_reply": "2012-05-02T16:31:51-05:00",
+      "root_message_id": "msg-cccd913632a4"
+    },
+    {
+      "id": "thread-0a82d7c55615",
+      "subject": "ROCR source code now available on github",
+      "message_count": 1,
+      "participants": [
+        "Tobias Sing"
+      ],
+      "started": "2012-05-05T20:25:10+02:00",
+      "last_reply": "2012-05-05T20:25:10+02:00",
+      "root_message_id": "msg-0a82d7c55615"
+    },
+    {
+      "id": "thread-395b012a205d",
+      "subject": "ANN: bigml package for R bigml_0.1.tar.gz",
+      "message_count": 1,
+      "participants": [
+        "Justin Donaldson"
+      ],
+      "started": "2012-05-08T15:46:24-07:00",
+      "last_reply": "2012-05-08T15:46:24-07:00",
+      "root_message_id": "msg-395b012a205d"
+    },
+    {
+      "id": "thread-f65fe9513e2b",
+      "subject": "new version of fda fixes bug in pca.fd and supports library(Matrix)",
+      "message_count": 1,
+      "participants": [
+        "Spencer Graves"
+      ],
+      "started": "2012-05-16T20:12:57-07:00",
+      "last_reply": "2012-05-16T20:12:57-07:00",
+      "root_message_id": "msg-f65fe9513e2b"
+    },
+    {
+      "id": "thread-67a5e8811662",
+      "subject": "dataframe package",
+      "message_count": 1,
+      "participants": [
+        "Tim Hesterberg"
+      ],
+      "started": "2012-05-22T06:47:42-07:00",
+      "last_reply": "2012-05-22T06:47:42-07:00",
+      "root_message_id": "msg-67a5e8811662"
+    }
+  ]
+}

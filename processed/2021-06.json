@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-06",
+  "messages": [
+    {
+      "id": "msg-74af4d8e8e31",
+      "message_id": "<CANP8LTWrVq7hFWnAAf3+Ff=t4aaySOUD_TJ4sw=87pOkPjg5CA@mail.gmail.com>",
+      "from_name": "Yilong Zhang",
+      "from_email_hash": "981058d122a4fc2c1e1828f689e3be31a928f389a75f7cf162e313a3c38214ec",
+      "date": "2021-06-01T10:06:33-04:00",
+      "subject": "[R-pkgs] r2rtf: Easily Create Production-Ready Rich Text Format (RTF) Table and Figure",
+      "subject_clean": "r2rtf: Easily Create Production-Ready Rich Text Format (RTF) Table and Figure",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\n\n\nI am happy to announce that {r2rtf} v0.3.0 is now on CRAN.\n\n\n\nr2rtf is an R package to create production-ready tables and figures in RTF\nformat. The R package is designed to provide simple ?verb? functions that\ncorrespond to each component of a table or figure.\n\n\n\nI hope you find it helpful. Please feel free to reach out with feedback or\nquestions.\n\n\n\nCRAN: https://cloud.r-project.org/web/packages/r2rtf/index.html\n\nDocumentation: https://merck.github.io/r2rtf/articles/index.html\n\n\n\nThanks,\n\n\n\nYilong\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\n\n\nI am happy to announce that {r2rtf} v0.3.0 is now on CRAN.\n\n\n\nr2rtf is an R package to create production-ready tables and figures in RTF\nformat. The R package is designed to provide simpl",
+      "thread_id": "thread-74af4d8e8e31",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-52e7d82bcc81",
+      "message_id": "<2A51428D-5C81-467A-80A1-640AA37A440A@me.com>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "877f6c36916ca4af45728329f87b7e11757108144062c44c2f8447673e6138b0",
+      "date": "2021-06-01T17:41:23-04:00",
+      "subject": "[R-pkgs] Announcing RweaveExtra",
+      "subject_clean": "Announcing RweaveExtra",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nA new package is now available on CRAN: RweaveExtra 1.0-0, which provides \"Sweave Drivers with Extra Tricks Up their Sleeve\".\n\nCall me an old timer, but I always stuck to Sweave ever since it introduced me to literate programming. I just prefer the simplicity of the system. \n\nNow, I developed a workflow over the last few of years where one option was missing in the weave and tangle \tsteps: the ability to completely ignore a code chunk. Sure, one can use 'eval = FALSE', but this is not equivalent. First, the code in the chunk is parsed. Second, the code is commented out in the tangled file. \n\nWhat if I want to write unparsable code (say for didactic purposes) or code in a foreign language altogether, and that I want this code to appear as is in the tangled script? This is where RweaveExtra comes in. Use the 'RweaveExtraLatex' driver with the chunk option 'ignore.on.weave=TRUE' and the code in the chunk will be completely ignored (not even parsed) on the weave step, but it will still be written out verbatim (uncommented) in the tangle step. (For symmetry reasons, an 'ignore.on.tangle' option also exists for the 'RtangleExtra' driver, but I never had use for it.)\n\nSee ?RweaveExtraLatex for a complete example.\n\nI have been using the package \"privately\" for the past year without any issue.\n\nI hope that the new drivers may prove useful to the community.\n\nVincent Goulet\n?cole d'actuariat\nUniversit? Laval",
+      "body_snippet": "Hi all,\n\nA new package is now available on CRAN: RweaveExtra 1.0-0, which provides \"Sweave Drivers with Extra Tricks Up their Sleeve\".\n\nCall me an old timer, but I always stuck to Sweave ever since it",
+      "thread_id": "thread-52e7d82bcc81",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-d450fbd52cd3",
+      "message_id": "<CABcwgRRfT=ArGrzSerAtVptziZatVzsboT4ibpZKk-dHnfYUxA@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2021-06-03T14:16:21+02:00",
+      "subject": "[R-pkgs] monobin: Monotonic Binning for Credit Rating Models",
+      "subject_clean": "monobin: Monotonic Binning for Credit Rating Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that my package monobin is now available on CRAN.\n\nThe package contains functions that perform monotonic binning of numeric\nrisk factor in credit rating models (PD, LGD, EAD) development. All\nfunctions handle both binary and continuous target variable. Functions that\nuse isotonic regression in the first stage of binning process have an\nadditional feature for correction of minimum percentage of observations and\nminimum target rate per bin. Additionally, monotonic trend can be\nidentified based on raw data or, if known in advance, forced by functions'\nargument. Missing values and other possible special values are treated\nseparately from so-called complete cases.\nClose attention should be paid when modeling continuous target due to\npossible negative values.\n\nHope that some of you will find the package useful.\n\nBest regards,\nAndrija Djurovic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that my package monobin is now available on CRAN.\n\nThe package contains functions that perform monotonic binning of numeric\nrisk factor in credit rating models (P",
+      "thread_id": "thread-d450fbd52cd3",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-5fa9e6ccd67b",
+      "message_id": "<CANBF2ax2r9WAA-AnERwmexYWOYbGvJGPnv=kkMFbpn_DrcSUSA@mail.gmail.com>",
+      "from_name": "Niels van der Velden",
+      "from_email_hash": "2abe75a1a26766a18ef4c0131a2459beccdaf0be19ac461dd9d5c8f864ee6b7c",
+      "date": "2021-06-08T17:05:07+02:00",
+      "subject": "[R-pkgs] New CRAN Package: NGLVieweR - Interactive 3D Visualization of Molecular Structures",
+      "subject_clean": "New CRAN Package: NGLVieweR - Interactive 3D Visualization of Molecular Structures",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that {NGLVieweR} v1.3.1 is now on CRAN.\n\n{NGLVieweR} provides an 'htmlwidgets' https://www.htmlwidgets.org/\ninterface to 'NGL.js' http://nglviewer.org/ngl/api/.\n{NGLVieweR} can be used to visualize and interact with protein databank\n(PDB) and structural files in R and Shiny applications.\nIt includes a set of API functions to manipulate the viewer after creation\nin Shiny.\n\nCRAN: https://cran.r-project.org/web/packages/NGLVieweR/index.html\nDocumentation: https://nvelden.github.io/NGLVieweR/\nGraphical UI for the {NGLVieweR} package:\nhttps://niels-van-der-velden.shinyapps.io/shinyNGLVieweR/\nRationale on the development of the package:\nhttps://community.rstudio.com/t/three-dimensional-3d-interactive-visualization-of-protein-structures-shiny-contest-submission/104697\n\nI hope you find it helpful.\n\nPlease feel free to reach out with feedback or questions.\n\nThanks,\n\nNiels van der Velden\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am happy to announce that {NGLVieweR} v1.3.1 is now on CRAN.\n\n{NGLVieweR} provides an 'htmlwidgets' https://www.htmlwidgets.org/\ninterface to 'NGL.js' http://nglviewer.org/ngl/api/.\n{NGLV",
+      "thread_id": "thread-5fa9e6ccd67b",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-202560aad722",
+      "message_id": "<000001d75ee7$fa205c00$ee611400$@brachtendorf@gmx.de>",
+      "from_name": "Lorenz Brachtendorf",
+      "from_email_hash": "e8242a019166b807f7bef44082f248c863cec9e9a3beb1468e8e4d3f69748362",
+      "date": "2021-06-11T19:34:04+02:00",
+      "subject": "[R-pkgs] cryptowatchR new version 0.2.0 on CRAN",
+      "subject_clean": "cryptowatchR new version 0.2.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\n\n\nthis is to announce that a new version of cryptowatchR is now available on\nCRAN. It may be useful for everyone who is interested in working with data\non cryptocurrencies and crypto exchanges.\n\n\n\nThis package is a wrapper of the cryptowatch API (for a detailed\ndocumentation see https://docs.cryptowat.ch/rest-api) and allows an easy and\nfree access to prices and other market data (volume, trades, order books,\nbid and ask prices, live quotes, and more) of cryptocurrencies and crypto\nexchanges. For example, you can easily retrieve historical prices for a\nlarge number of cryptocurrencies without setting up an account.\n\n\n\nThe new version includes the option to use your own personal API key. This\nmay be relevant for heavy users of the API. Moreover, several new functions\nallow access to all available data that can be retrieved from Cryptowatch.\n\n\n\nCRAN: https://cran.r-project.org/web/packages/cryptowatchR/index.html\n\nGitHub: https://github.com/lorenzbr/cryptowatchR\n\n\n\nI hope you find this package useful. Please let me know if you have any\nsuggestions or if you have come across any issues.\n\n\n\nBest regards,\n\n\n\nLorenz Brachtendorf\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\n\n\nthis is to announce that a new version of cryptowatchR is now available on\nCRAN. It may be useful for everyone who is interested in working with data\non cryptocurrencies and crypto exchan",
+      "thread_id": "thread-202560aad722",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-32ec3b178b69",
+      "message_id": "<CAJ=0CtAWkSCKJuW7poMhh1Hbn_ikb0z-810JCuSyb4RUMqKy7Q@mail.gmail.com>",
+      "from_name": "Adrian Dușa",
+      "from_email_hash": "e33a2b333bf33e5a02ad875b1f10006293adb45d47f464e4612f6967fd8d8ce5",
+      "date": "2021-06-17T14:53:41+03:00",
+      "subject": "[R-pkgs] CRAN has a new package: declared",
+      "subject_clean": "CRAN has a new package: declared",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nA new package called 'declared' has made it to CRAN (platform specific\nbinaries in due course). This might be useful for social scientists, where\nmultiple (types of) missing values are declared for any given variable.\n\nThe package has a similar functionality to packages 'haven' and 'labelled',\nwith one but important difference: instead of treating existing values as\nNAs, package declared interprets NAs as existing values (details in the\nembedded vignette). Users do not have to do anything else in the subsequent\nanalyses, since the declared values are stored as regular NAs.\n\nMy most sincere thanks to all contributors from the r-devel list who\nexpressed their points regarding the treatment of missing values in R, and\nespecially to Duncan Murdoch who provided the starting solution.\n\nSpecial thanks to Avi Gross for the subsequent email exchanges, revision of\nthe package and its vignette.\n\nHope this will prove useful, I would be grateful for feedback and bug\nreports.\n\n--\nAdrian Dusa\nUniversity of Bucharest\nRomanian Social Data Archive\nSoseaua Panduri nr. 90-92\n050663 Bucharest sector 5\nRomania\nhttps://adriandusa.eu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nA new package called 'declared' has made it to CRAN (platform specific\nbinaries in due course). This might be useful for social scientists, where\nmultiple (types of) missing values are decl",
+      "thread_id": "thread-32ec3b178b69",
+      "thread_depth": 0,
+      "month": "2021-06"
+    },
+    {
+      "id": "msg-8aba8443825c",
+      "message_id": "<CAN+Ty_DGjS+q1jdHL++L4sjWmM1=-dcQsToUXLcC8o_680fwPA@mail.gmail.com>",
+      "from_name": "Jasper Watson",
+      "from_email_hash": "de087baade348c395179ff7ea20816dacb737b33a887a2c2a7070382e577d329",
+      "date": "2021-06-20T16:59:14+02:00",
+      "subject": "[R-pkgs] precisePlacement: new package for precisely placing elements onto a base R plot",
+      "subject_clean": "precisePlacement: new package for precisely placing elements onto a base R plot",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI have just released to CRAN the precisePlacement package which provides a\nselection of tools that make it easier to place elements onto a (base R)\nplot exactly where you want them. It allows users to identify points and\ndistances on a plot in terms of inches, pixels, margin lines, data units,\nand proportions of the plotting space, all in a manner more simple than\nmanipulating par().\n\nCRAN: https://CRAN.R-project.org/package=precisePlacement\nGitHub: https://github.com/rntq472/precisePlacement\n\nCheers,\n\nJasper Watson\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI have just released to CRAN the precisePlacement package which provides a\nselection of tools that make it easier to place elements onto a (base R)\nplot exactly where you want them. It allows ",
+      "thread_id": "thread-8aba8443825c",
+      "thread_depth": 0,
+      "month": "2021-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-74af4d8e8e31",
+      "subject": "r2rtf: Easily Create Production-Ready Rich Text Format (RTF) Table and Figure",
+      "message_count": 1,
+      "participants": [
+        "Yilong Zhang"
+      ],
+      "started": "2021-06-01T10:06:33-04:00",
+      "last_reply": "2021-06-01T10:06:33-04:00",
+      "root_message_id": "msg-74af4d8e8e31"
+    },
+    {
+      "id": "thread-52e7d82bcc81",
+      "subject": "Announcing RweaveExtra",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2021-06-01T17:41:23-04:00",
+      "last_reply": "2021-06-01T17:41:23-04:00",
+      "root_message_id": "msg-52e7d82bcc81"
+    },
+    {
+      "id": "thread-d450fbd52cd3",
+      "subject": "monobin: Monotonic Binning for Credit Rating Models",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2021-06-03T14:16:21+02:00",
+      "last_reply": "2021-06-03T14:16:21+02:00",
+      "root_message_id": "msg-d450fbd52cd3"
+    },
+    {
+      "id": "thread-5fa9e6ccd67b",
+      "subject": "New CRAN Package: NGLVieweR - Interactive 3D Visualization of Molecular Structures",
+      "message_count": 1,
+      "participants": [
+        "Niels van der Velden"
+      ],
+      "started": "2021-06-08T17:05:07+02:00",
+      "last_reply": "2021-06-08T17:05:07+02:00",
+      "root_message_id": "msg-5fa9e6ccd67b"
+    },
+    {
+      "id": "thread-202560aad722",
+      "subject": "cryptowatchR new version 0.2.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Lorenz Brachtendorf"
+      ],
+      "started": "2021-06-11T19:34:04+02:00",
+      "last_reply": "2021-06-11T19:34:04+02:00",
+      "root_message_id": "msg-202560aad722"
+    },
+    {
+      "id": "thread-32ec3b178b69",
+      "subject": "CRAN has a new package: declared",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dușa"
+      ],
+      "started": "2021-06-17T14:53:41+03:00",
+      "last_reply": "2021-06-17T14:53:41+03:00",
+      "root_message_id": "msg-32ec3b178b69"
+    },
+    {
+      "id": "thread-8aba8443825c",
+      "subject": "precisePlacement: new package for precisely placing elements onto a base R plot",
+      "message_count": 1,
+      "participants": [
+        "Jasper Watson"
+      ],
+      "started": "2021-06-20T16:59:14+02:00",
+      "last_reply": "2021-06-20T16:59:14+02:00",
+      "root_message_id": "msg-8aba8443825c"
+    }
+  ]
+}

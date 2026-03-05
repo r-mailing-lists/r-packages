@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-06",
+  "messages": [
+    {
+      "id": "msg-a744ddb959a2",
+      "message_id": "<55718507.4090005@tu-ilmenau.de>",
+      "from_name": "Thomas Hotz",
+      "from_email_hash": "380cbd68c8b6d057c1f3aac7a47b3d6b07d9a987ae6db43dbfb23d609c1f2956",
+      "date": "2015-06-05T13:16:23+02:00",
+      "subject": "[R-pkgs] New package stepR: fitting step-functions",
+      "subject_clean": "New package stepR: fitting step-functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nIt is my pleasure to announce the availability of package stepR (1.0-2) \non CRAN.\n\nThe main purpose of the package is to fit piecewise constant functions \n(a.k.a. step-functions or block signals) to serial data in a fully \ndata-driven manner under certain (Gaussian or non-Gaussian) \ndistributional assumptions.\n\nIt mainly implements the algorithms described in the references below - \nin a (hopefully) user-friendly fashion.\n\nTry\n\n    library(stepR)\n    example(smuceR) # for [1] and [2]\n    example(jsmurf) # for [3]\n    example(stepsel) # for [4]\n\nto get an idea about what it can do, and how to use it.\n\nWe hope it proves useful; community feedback is therefore very welcome!\n\nBest regards\n\nThomas Hotz\nTU Ilmenau, Institute of Mathematics\n\nReferences:\n\n[1] Frick, K., Munk, A., and Sieling, H. (2014). Multiscale Change-Point \nInference. With discussion and rejoinder by the authors. Journal of the \nRoyal Statistical Society, Series B, 76(3), 495-580.\n[2] Futschik, A., Hotz, T., Munk, A. Sieling, H. (2014). Multiresolution \nDNA partitioning: statistical evidence for segments. Bioinformatics,  \n30(16), 2255-2262.\n[3] Hotz, T., Sch?tte, O., Sieling, H., Polupanow, T., Diederichsen, U., \nSteinem, C., and Munk, A. (2013). Idealizing Ion Channel Recordings by a \nJump Segmentation Multiresolution Filter. IEEE Transactions on \nNanoBioscience, 12(4), 376-386.\n[4] Boysen, L., Kempe, A., Liebscher, V., Munk, A., Wittich, O. (2009). \nConsistencies and rates of convergence of jump-penalized least squares \nestimators. The Annals of Statistics, 37(1), 157-183.",
+      "body_snippet": "Dear R users,\n\nIt is my pleasure to announce the availability of package stepR (1.0-2) \non CRAN.\n\nThe main purpose of the package is to fit piecewise constant functions \n(a.k.a. step-functions or bloc",
+      "thread_id": "thread-a744ddb959a2",
+      "thread_depth": 0,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-a4b386c957d1",
+      "message_id": "<op.xzwp6dyq3euttn@zukd208>",
+      "from_name": "Peter Meissner",
+      "from_email_hash": "995e8c129d80a55c502ea3d786d41d905fdce75d0ab78df186e4c9c940b90a77",
+      "date": "2015-06-08T12:31:15+02:00",
+      "subject": "[R-pkgs] New version of wikipediatrend",
+      "subject_clean": "New version of wikipediatrend",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear UseRs,\n\n\nwikipediatrend - a package to retrieve Wikipedia page access statistics -  \nhas jumped from version 0.2 to 1.1.3 and now is more streamlined, feature  \nricher, more tested and comes with a vignette as well as a lot of fun.\n\n\npackge information: http://cran.rstudio.com/web/packages/wikipediatrend\n\nvignette:            \nhttp://cran.rstudio.com/web/packages/wikipediatrend/vignettes/using-wikipediatrend.html\n\nproject page:       https://github.com/petermeissner/wikipediatrend\n\n\nBest, Peter\n\n\n\n\nNEWS wikipediatrend\n==========================================================================\n\nversion 1.1.3 // 2015-06-04 ...\n--------------------------------------------------------------------------\n\n- modifying vignette to comply with CRAN policies (dropping lines  \ninstalling packages if not present)\n\n\nversion 1.1.2 // 2015-05-23 ...\n--------------------------------------------------------------------------\n\n- modifying caching to comply with CRAN policies\n\n- changing default folder of cache file from temp (basename(tempdir())) to  \nRtemp ( tempdir() )\n\n\nversion 1.1.1 // 2015-05-23 ...\n--------------------------------------------------------------------------\n\n- adding ghrr as additional repo to comply with CRAN policies\n\n- changing default folder of cache file from home (~) to temp  \n(basename(tempdir()))\n\n\nversion 1.1.0 // 2015-05-21 ...\n--------------------------------------------------------------------------\n\n- feature: caching has been overhauled\n\n- feature: wp_trend() now tries to guess if page was supplied as title  \nwith possible special characters or as (url-encoded) URL part and take  \ncare of  further processing\n\n- bug-fix: special character support of the packages was lousy and  \npreventing\nthe usage of articles of non-standard languages ( - especially on Windows)\n   * introduction of the wp_df class to allow for a print.wp_df that\n     a) shortens long strings on print\n     b) does not use format() (format() causes UTF-8 characters to be  \nreplaced by \"<U+xxxx>\" strings (propably only))\n   * using a package specific write_utf8_csv() and read_utf8_csv() to be  \nable to store and cache data for articles with special character names      \n(even under Windows, write.csv() does not allow enforcing a specific  \nencoding)\n\n- bug-fix / backward compatibility: with version 1.0.0 old parameters for\nwp_trend() were causing errors\n\n- bug-fix: wp_cache_reset() would stop with an error if called twice in a  \nrow - fixed\n\n\nversion 1.0.0 // 2015-04-01 ...\n--------------------------------------------------------------------------\n\n- api-change: option userAgent deleted: the default is to send information  \non\nversions of R, wikipediatrend, curl as well as RCurl\n\n- api-change: option requestFrom deleted: the default is to not send the  \nheader\n\n- feature: wp_trend() now by default caches data retrievals in a temporary  \nfile\n\n- feature: wp_trend(file=\"save.csv\") now allows to specify a file where\nretrievals are stored (this will always add to the already existing data)\n\n- feature: wp_trend() now allows to specify more than one page and/or  \nlanguage\nat a time. data than will be retrieved for every combination of\npage-language and date\n\n- feature: caching system is persistant wp_cache_file() will report file  \nused for\ncaching; wp_cache_reset() will reset cache; wp_cache_load() will return its\ncontent as data.frame()\n\n- feature: while wp_trend() now (invisibly) returns only data from the  \ncurrent\nrequest at hand the new function wp_cache() will retrieve data from cache  \nfiles\n(by default / if no file name is specified it retrieves data from  \n.wp_trend_cache)\n\n- api-change: the data returned by wp_trend(), cached in cache-file,  \nretrieved by\nwp_cache() does consist of more variables: date, count, project, title,\nrank, month\n\n- feature: testthat tests now check base functionality of the package\n\n- bug-fix: non-existing page views for a month have led to an error, fixed.\n\n- bug-fix: wp_trend() now checks date inputs better for logical  \ninconsistencies\n\n\nversion 0.2.0 // 2014-11-01 ...\n--------------------------------------------------------------------------\n\n- first puplication on CRAN",
+      "body_snippet": "Dear UseRs,\n\n\nwikipediatrend - a package to retrieve Wikipedia page access statistics -  \nhas jumped from version 0.2 to 1.1.3 and now is more streamlined, feature  \nricher, more tested and comes with",
+      "thread_id": "thread-a4b386c957d1",
+      "thread_depth": 0,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-4e8d34d58afc",
+      "message_id": "<6FDA78647A9EF040B0BF9C6081518439340F8FA4@SourceMBX0.KWB.BERLIN>",
+      "from_name": "Michael Rustler",
+      "from_email_hash": "f09bc2da38c42a92d049b6dcd5c532aeca90841756948864c6a4b1cbcb00b8f7",
+      "date": "2015-06-08T12:47:02Z",
+      "subject": "[R-pkgs] New R package kwb.hantush (0.2.1): calculation of groundwater mounding beneath an (stormwater) infiltration basin",
+      "subject_clean": "New R package kwb.hantush (0.2.1): calculation of groundwater mounding beneath an (stormwater) infiltration basin",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nIt is a pleasure for me to announce the availability of the new package kwb.hantush (0.2.1)? on CRAN. Its objective is the calculation of groundwater mounding beneath an (stormwater) infiltration basin by solving the Hantush (1967) equation. For checking the correct implementation of the algorithm the R modelling results were cross-checked against alternative models assessed in Carleton (2010) by using the same model parameterisation. \n\nReferences: \n[1] Carleton, G.B., 2010, Simulation of groundwater mounding beneath hypothetical stormwater infiltration basins: U.S. Geological Survey Scientific Investigations Report 2010-5102, 64 p.; http://pubs.usgs.gov/sir/2010/5102/ \n\n[2] Hantush, M.S. (1967): Growth and decay of groundwater-mounds in response to uniform percolation, Water Resources Research (March, 1967); http://doi.org/10.1029/WR003i001p00227 \n\n\nHow to get started ? \n\n* Firstly install the package from CRAN by using:  install.packages(\"kwb.hantush\")\n\n* Secondly visit http://kwb-r.github.io/kwb.hantush? for doing a short tutorial, which answers the following questions: \n\t- How do I perform model runs ?\n\n\t- How accurate is the solution of the Hantush equation implemented in R compared to the a reference model \n\t  (e.g. U.S. Geological Survey EXCEL spreadsheet solution, http://pubs.usgs.gov/sir/2010/5102/support/Hantush_USGS_SIR_2010-5102-1110.xlsm) ?\n\nI hope it proves to be useful and community feedback is therefore very welcome!\n\nBest Regards, \nMichael Rustler\n\n--------------------------------------------\nDipl.-Geo?k. Michael Rustler\nKompetenzZentrum Wasser Berlin gGmbH\nCicerostr. 24\nD-10709 Berlin\nTel. +49 (0)30 53653 825\nFax +49 (0)30 53653 888\nEmail: michael.rustler at kompetenz-wasser.de\nHomepage: www.kompetenz-wasser.de <http://www.kompetenz-wasser.de>\n----------------------------------------------------------------\n----------------------------------------------------------------\nGesch?ftsf?hrer:\nDipl.-Ing. Andreas Hartmann\nSitz der Gesellschaft: Berlin\nAmtsgericht Charlottenburg\nHRB 84461",
+      "body_snippet": "Dear R users,\n\nIt is a pleasure for me to announce the availability of the new package kwb.hantush (0.2.1)? on CRAN. Its objective is the calculation of groundwater mounding beneath an (stormwater) in",
+      "thread_id": "thread-4e8d34d58afc",
+      "thread_depth": 0,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-c3d1862b44a9",
+      "message_id": "<CANGRwOarTpGUeOVJpyLABxtfrx7W19G+M5T7LQT1cB5_64gy-Q@mail.gmail.com>",
+      "from_name": "Peter Rossi",
+      "from_email_hash": "5aefa34ff48b83be89aed56c5b797912e52e26462d2b6fb07467733c8a74b95d",
+      "date": "2015-06-14T20:50:54-07:00",
+      "subject": "[R-pkgs] version 3.0-0 of bayesm",
+      "subject_clean": "version 3.0-0 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.0-0 of bayesm is now on CRAN.\n\nAll MCMC routines in this version have been recoded using rcpp-Armadillo.\nThis results in speeds gains\nof between 2 and 30 times faster (hierarchical and density estimation\nroutines are on the higher end of this range) than\nin bayesm version 2.2-5.\n\nThe algorithm, rsurGibbs, has been improved for better speed as well as\nrecoded.\n\nA Bayesian treatment of aggregate random coefficient models (with\ninstruments) has been added, see rbayesBLP.\n\npeter rossi\nthanks to Neil Fultz, Keunwoo Kim, and Wayne Taylor for their help in the\nrecoding.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 3.0-0 of bayesm is now on CRAN.\n\nAll MCMC routines in this version have been recoded using rcpp-Armadillo.\nThis results in speeds gains\nof between 2 and 30 times faster (hierarchical and densi",
+      "thread_id": "thread-c3d1862b44a9",
+      "thread_depth": 0,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-99e523441fef",
+      "message_id": "<CAJ4QxaMg5_rHUf5s26O9V5G14OgzEBSHPaca5y-EZVA1bqq5aA@mail.gmail.com>",
+      "from_name": "boB Rudis",
+      "from_email_hash": "a26d124c455064db4d60c538894063c0f8cb488637af120b1e3326571e017cd6",
+      "date": "2015-06-16T06:40:49-04:00",
+      "subject": "[R-pkgs] Version 0.8.5 of metricsgraphics is on CRAN",
+      "subject_clean": "Version 0.8.5 of metricsgraphics is on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.8.5 of metricsgraphics is now on CRAN.\n\nIt provides an 'htmlwidgets' interface to the 'MetricsGraphics.js'\n('D3'-based) charting\nlibrary which is geared towards displaying time-series data. There are\nroutines for scatterplots, histograms and even 'grid.arrange'-like\nfunctionality for laying out multiple charts.\n\n-Bob",
+      "body_snippet": "Version 0.8.5 of metricsgraphics is now on CRAN.\n\nIt provides an 'htmlwidgets' interface to the 'MetricsGraphics.js'\n('D3'-based) charting\nlibrary which is geared towards displaying time-series data. ",
+      "thread_id": "thread-99e523441fef",
+      "thread_depth": 0,
+      "month": "2015-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a744ddb959a2",
+      "subject": "New package stepR: fitting step-functions",
+      "message_count": 1,
+      "participants": [
+        "Thomas Hotz"
+      ],
+      "started": "2015-06-05T13:16:23+02:00",
+      "last_reply": "2015-06-05T13:16:23+02:00",
+      "root_message_id": "msg-a744ddb959a2"
+    },
+    {
+      "id": "thread-a4b386c957d1",
+      "subject": "New version of wikipediatrend",
+      "message_count": 1,
+      "participants": [
+        "Peter Meissner"
+      ],
+      "started": "2015-06-08T12:31:15+02:00",
+      "last_reply": "2015-06-08T12:31:15+02:00",
+      "root_message_id": "msg-a4b386c957d1"
+    },
+    {
+      "id": "thread-4e8d34d58afc",
+      "subject": "New R package kwb.hantush (0.2.1): calculation of groundwater mounding beneath an (stormwater) infiltration basin",
+      "message_count": 1,
+      "participants": [
+        "Michael Rustler"
+      ],
+      "started": "2015-06-08T12:47:02+00:00",
+      "last_reply": "2015-06-08T12:47:02+00:00",
+      "root_message_id": "msg-4e8d34d58afc"
+    },
+    {
+      "id": "thread-c3d1862b44a9",
+      "subject": "version 3.0-0 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Peter Rossi"
+      ],
+      "started": "2015-06-14T20:50:54-07:00",
+      "last_reply": "2015-06-14T20:50:54-07:00",
+      "root_message_id": "msg-c3d1862b44a9"
+    },
+    {
+      "id": "thread-99e523441fef",
+      "subject": "Version 0.8.5 of metricsgraphics is on CRAN",
+      "message_count": 1,
+      "participants": [
+        "boB Rudis"
+      ],
+      "started": "2015-06-16T06:40:49-04:00",
+      "last_reply": "2015-06-16T06:40:49-04:00",
+      "root_message_id": "msg-99e523441fef"
+    }
+  ]
+}

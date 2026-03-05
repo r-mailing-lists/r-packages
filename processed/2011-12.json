@@ -1,0 +1,252 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-12",
+  "messages": [
+    {
+      "id": "msg-57648d947cf2",
+      "message_id": "<509CC1B4-BCC2-4AA1-B3E7-838379DC57A4@userprimary.net>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2011-12-01T13:48:59-08:00",
+      "subject": "[R-pkgs] RSQLite 0.11.0",
+      "subject_clean": "RSQLite 0.11.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of RSQLite has been uploaded to CRAN. Details on the enhancements and fixes are below. Please direct questions to the R-sig-db mailing list.\n\nVersion 0.11.0\n\n- Enhance type detection in sqliteDataType (dbDataType). The storage\n  mode of a data.frame column is now used as part of the type\n  detection. Prior to this patch, all vectors with class other than\n  numeric or logical were mapped to a TEXT column. This patch uses the\n  output of storage.mode to map to integer and double vectors to\n  INTEGER and REAL columns, respectively.  All other modes are mapped\n  to a TEXT column.\n\n- Detection of BLOBs was narrowed slightly. The code now treats only\n  objects with data.class(obj) == \"list\" as BLOBs. Previously, is.list\n  was used which could return TRUE for lists of various classes.\n\n- Fix bug in sqliteImportFile (used by dbWriteTable) that prevented a\n  comment character from being specified for the input file.\n\n- Increase compile-time SQLite limits for maximum number of columns in\n  a table to 30000 and maximum number of parameters (?N) in a SELECT\n  to 40000. Use of wide tables is not encouraged. The default values\n  for SQLite are 2000 and 999, respectively. Databases containing\n  tables with more than 2000 columns may not be compatible with\n  versions of SQLite compiled with default settings.\n\n- Upgrade to SQLite 3.7.9.\n\n--\nSeth Falcon | @sfalcon | http://userprimary.net/",
+      "body_snippet": "A new version of RSQLite has been uploaded to CRAN. Details on the enhancements and fixes are below. Please direct questions to the R-sig-db mailing list.\n\nVersion 0.11.0\n\n- Enhance type detection in ",
+      "thread_id": "thread-57648d947cf2",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-cdb7e5113743",
+      "message_id": "<m0hb1ddbmw.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2011-12-06T15:21:11+01:00",
+      "subject": "[R-pkgs] pls 2.3.0 released",
+      "subject_clean": "pls 2.3.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.3.0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression and Principal Component\nRegression.\n\nThe major changes are:\n\n- New analysis method Canonical Powered PLS (CPPLS) implmemented.  See\n  ?cppls.fit.\n\n- coefplot() can now plot whiskers at +/-1 SE (since 2.2.0).  See ?coefplot\n\n- The package now has a name space (since 2.2.0).\n\n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_snippet": "Version 2.3.0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression and Principal Component\nRegression.\n\nThe major changes are:\n\n- New analysis method Cano",
+      "thread_id": "thread-cdb7e5113743",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-4413a0dd2a14",
+      "message_id": "<CABdHhvHztWX4GPNyRe8y8Fm3gw9ViqxzWeLV_uyPOVZ=tiQBxA@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-12-09T13:46:38Z",
+      "subject": "[R-pkgs] stringr 0.6",
+      "subject_clean": "stringr 0.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# stringr\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because they have grown\norganically over time, they can be inconsistent and a little hard to\nlearn. Additionally, they lag behind the string operations in other\nprogramming languages, so that some things that are easy to do in\nlanguages like Ruby or Python are rather hard to do in R. The\n`stringr` package aims to remedy these problems by providing a clean,\nmodern interface to common string operations.\nMore concretely, `stringr`:\n?* Processes factors and characters in the same way.\n?* Gives functions consistent names and arguments.\n?* Simplifies string operations by eliminating options that you don't\nneed? ?95% of the time.\n?* Produces outputs than can easily be used as inputs. This includes\nensuring? ?that missing inputs result in missing outputs, and zero\nlength inputs? ?result in zero length outputs.\n?* Completes R's string handling functions with useful functions from\nother? ?programming languages.\n\nstringr 0.6\n===========\n\n* new modifier `perl` that switches to Perl regular expressions\n\n* `str_match` now uses new base function `regmatches` to extract matches -\n  this should hopefully be faster than my previous pure R algorithm\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# stringr\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because th",
+      "thread_id": "thread-4413a0dd2a14",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-35afa1e44bb4",
+      "message_id": "<CANQBBMvyEDmTKKchfb61-gaovsGjJUHHtOn-AKvDu_H8e7whjQ@mail.gmail.com>",
+      "from_name": "Wincent",
+      "from_email_hash": "6846f5c272f8850077470247e7e6a025c83f8d7387bcf22387269b3b25a06522",
+      "date": "2011-12-27T21:32:46+08:00",
+      "subject": "[R-pkgs] RQDA 0.2-2 has been released",
+      "subject_clean": "RQDA 0.2-2 has been released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl>",
+      "thread_id": "thread-35afa1e44bb4",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-b0e02b2d1205",
+      "message_id": "<002501ccc577$ee33e420$ca9bac60$@mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2011-12-28T10:46:56-05:00",
+      "subject": "[R-pkgs] new version of the Rcmdr package",
+      "subject_clean": "new version of the Rcmdr package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'd like to announce a new version, 1.8-1, of the Rcmdr package. The Rcmdr\n(\"R Commander\") package provides a basic-statistics graphical user interface\n(GUI) to R, implemented in Tcl/Tk via the standard R tcltk package. \n\nBeyond small changes and additions, the new version of the Rcmdr package\nuniformly implements a feature, first available in version 1.7-0, that\nallows dialogs to retain users' previous selections. This feature is\nactivated by setting the Rcmdr option retain.selections to TRUE, which is\nnow the default choice (see ?Commander). When retain.selections is TRUE,\nparticipating dialogs acquire a Reset button, which will restore them to\npristine state. As well, dialogs that access the current Rcmdr data set are\nautomatically reset when the data set changes. The selection-retention\nmechanism can also be used by authors of Rcmdr plug-in packages.\n\nAlthough the new Rcmdr package has been tested, it's possible that problems\nwill surface, and as always I'm grateful for bug reports.\n\nKosar Karimi Pour, a graduate-student assistant, helped me in adapting the\nRcmdr dialogs to employ the new selection-retention feature.\n\nBest wishes for the new year,\n John\n\n--------------------------------\nJohn Fox\nSenator William McMaster\n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nI'd like to announce a new version, 1.8-1, of the Rcmdr package. The Rcmdr\n(\"R Commander\") package provides a basic-statistics graphical user interface\n(GUI) to R, implemented in Tcl/Tk",
+      "thread_id": "thread-b0e02b2d1205",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-77c6a1b498c8",
+      "message_id": "<08C8F20B14E34F46B1DCB7D954E608D3020B006B4A90@BVMBX1.univ-lyon1.fr>",
+      "from_name": "CHAMPELY STEPHANE",
+      "from_email_hash": "b209e90c745dc60bd62699dfa7130e2f0327df2f05316a3b3768d692050fb3fa",
+      "date": "2011-12-30T07:27:27+01:00",
+      "subject": "[R-pkgs] PairedData: a new package for analysing paired (numerical) data",
+      "subject_clean": "PairedData: a new package for analysing paired (numerical) data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'd like to announce the PairedData package (version 0.5). This package provides a set of graphical tools (based on ggplot2), statistics, effect sizes and some classical and robust tests, confidence intervals and random simulation functions for analysing paired data. Several datasets from sports sciences are also included.\n\nHappy new year !\n\n- - - - - - - - - - - - - - - - - - - -\nS. CHAMPELY\nSports Sciences Department\nLyon 1 University\nFRANCE",
+      "body_snippet": "Dear R users,\n\nI'd like to announce the PairedData package (version 0.5). This package provides a set of graphical tools (based on ggplot2), statistics, effect sizes and some classical and robust test",
+      "thread_id": "thread-77c6a1b498c8",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-785aa2271983",
+      "message_id": "<CABdHhvHF0Uu1TMo8bTufKR+Ei7GVQndw2wqcso4M-SN=9HOizQ@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-12-30T08:30:47-06:00",
+      "subject": "[R-pkgs] Plyr 1.7",
+      "subject_clean": "Plyr 1.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in equivalents.\n\nA detailed introduction to plyr has been published in JSS: \"The\nSplit-Apply-Combine Strategy for Data Analysis\",\nhttp://www.jstatsoft.org/v40/i01/. You can find out more at\nhttp://had.co.nz/plyr/, or track development at\nhttp://github.com/hadley/plyr. You can ask questions about plyr (and\ndata manipulation in general) on the plyr mailing list. Sign up at\nhttp://groups.google.com/group/manipulatr.\n\nVersion 1.7------------------------------------------------------------------------------\n* `rbind.fill`: if a column contains both factors and characters (in\ndifferent? inputs), the resulting column will be coerced to character\n* When there are more than 2^31 distinct combinations `id`, switches\nto a? slower fallback strategy using strings (inspired by `merge`)\nthat guarantees? correct results. This fixes problems with `join` when\njoining across many? columns. (Fixes #63)\n* `split_indices` checks input more aggressively to prevent segfaults.\n? ?Fixes #43.\n* fix small bug in `loop_apply` which lead to segfaults in certain\ncircumstances. (Thanks to P?l Westermark for patch)\n* `itertools` and `iterators` moved to suggests from imports so that\nplyr now? only depends on base R.\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
+      "thread_id": "thread-785aa2271983",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-c10055bdeac5",
+      "message_id": "<CABdHhvE9e4vk3QLFRUD+Zg857+ajSAvuZ8LY6yODaBTefpiuSw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-12-30T08:31:18-06:00",
+      "subject": "[R-pkgs] testthat 0.6",
+      "subject_clean": "testthat 0.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# testthat\nTesting your code is normally painful and boring. `testthat` tries to\nmake testing as fun as possible, so that you get a visceral\nsatisfaction from writing tests. Testing should be fun, not a drag, so\nyou do it all the time. To make that happen, `testthat`:\n* Provides functions that make it easy to describe what you expect a\nfunction to do, including catching errors, warnings and messages.\n* Easily integrates in your existing workflow, whether it's informal\ntesting? on the command line, building test suites or using R CMD\ncheck.\n* Can re-run tests automatically as you change your code or tests.\n* Displays test progress visually, showing a pass, fail or error for\nevery? expectation. If you're using the terminal, it'll even colour\nthe output.?? ??`testthat` draws inspiration from the xUnit family of\ntesting packages, as well from many of the innovative ruby testing\nlibraries, like [rspec](http://rspec.info/),\n[testy](http://github.com/ahoward/testy),\n[bacon](http://github.com/chneukirchen/bacon) and\n[cucumber](http://wiki.github.com/aslakhellesoy/cucumber/). I have\nused what I think works for R, and abandoned what doesn't, creating a\ntesting environment that is philosophically centred in R.\n\nVersion 0.6\n------------------------------------------------------------------------------\n\n* All `mutatr` classes have been replaced with ReferenceClasses.\n\n* Better documentation for short-hand expectations.\n\n* `test_dir` and `test_package` gain new `filter` argument which allows you to\n   restrict which tests are run.\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# testthat\nTesting your code is normally painful and boring. `testthat` tries to\nmake testing as fun as possible, so that you get a visceral\nsatisfaction from writing tests. Testing should be fun, not",
+      "thread_id": "thread-c10055bdeac5",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-34fa8b7ce193",
+      "message_id": "<CAEdd+FY5J1QFDGXmgT8JOqhbmj+0DLTW9270ce1QEFt=mNSt3g@mail.gmail.com>",
+      "from_name": "Paweł Matykiewicz",
+      "from_email_hash": "6b5e27818366cfa4a929f20222f18f70021d215b4863d6a9f563adb9de38feb6",
+      "date": "2011-12-30T14:08:28-05:00",
+      "subject": "[R-pkgs] What happened with \"packages\" directory on CRAN website?",
+      "subject_clean": "What happened with \"packages\" directory on CRAN website?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "What happened with \"packages\" directory?\n\nhttp://cran.r-project.org/web/\n\nThanks\n-- \nPawel Matykiewicz\nhttp://www.neuron.m4u.pl\nhttp://www.linkedin.com/in/pawelmatykiewicz",
+      "body_snippet": "What happened with \"packages\" directory?\n\nhttp://cran.r-project.org/web/\n\nThanks\n-- \nPawel Matykiewicz\nhttp://www.neuron.m4u.pl\nhttp://www.linkedin.com/in/pawelmatykiewicz",
+      "thread_id": "thread-34fa8b7ce193",
+      "thread_depth": 0,
+      "month": "2011-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-57648d947cf2",
+      "subject": "RSQLite 0.11.0",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2011-12-01T13:48:59-08:00",
+      "last_reply": "2011-12-01T13:48:59-08:00",
+      "root_message_id": "msg-57648d947cf2"
+    },
+    {
+      "id": "thread-cdb7e5113743",
+      "subject": "pls 2.3.0 released",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2011-12-06T15:21:11+01:00",
+      "last_reply": "2011-12-06T15:21:11+01:00",
+      "root_message_id": "msg-cdb7e5113743"
+    },
+    {
+      "id": "thread-4413a0dd2a14",
+      "subject": "stringr 0.6",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-12-09T13:46:38+00:00",
+      "last_reply": "2011-12-09T13:46:38+00:00",
+      "root_message_id": "msg-4413a0dd2a14"
+    },
+    {
+      "id": "thread-35afa1e44bb4",
+      "subject": "RQDA 0.2-2 has been released",
+      "message_count": 1,
+      "participants": [
+        "Wincent"
+      ],
+      "started": "2011-12-27T21:32:46+08:00",
+      "last_reply": "2011-12-27T21:32:46+08:00",
+      "root_message_id": "msg-35afa1e44bb4"
+    },
+    {
+      "id": "thread-b0e02b2d1205",
+      "subject": "new version of the Rcmdr package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2011-12-28T10:46:56-05:00",
+      "last_reply": "2011-12-28T10:46:56-05:00",
+      "root_message_id": "msg-b0e02b2d1205"
+    },
+    {
+      "id": "thread-77c6a1b498c8",
+      "subject": "PairedData: a new package for analysing paired (numerical) data",
+      "message_count": 1,
+      "participants": [
+        "CHAMPELY STEPHANE"
+      ],
+      "started": "2011-12-30T07:27:27+01:00",
+      "last_reply": "2011-12-30T07:27:27+01:00",
+      "root_message_id": "msg-77c6a1b498c8"
+    },
+    {
+      "id": "thread-785aa2271983",
+      "subject": "Plyr 1.7",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-12-30T08:30:47-06:00",
+      "last_reply": "2011-12-30T08:30:47-06:00",
+      "root_message_id": "msg-785aa2271983"
+    },
+    {
+      "id": "thread-c10055bdeac5",
+      "subject": "testthat 0.6",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-12-30T08:31:18-06:00",
+      "last_reply": "2011-12-30T08:31:18-06:00",
+      "root_message_id": "msg-c10055bdeac5"
+    },
+    {
+      "id": "thread-34fa8b7ce193",
+      "subject": "What happened with \"packages\" directory on CRAN website?",
+      "message_count": 1,
+      "participants": [
+        "Paweł Matykiewicz"
+      ],
+      "started": "2011-12-30T14:08:28-05:00",
+      "last_reply": "2011-12-30T14:08:28-05:00",
+      "root_message_id": "msg-34fa8b7ce193"
+    }
+  ]
+}

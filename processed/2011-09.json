@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-09",
+  "messages": [
+    {
+      "id": "msg-f51a2eb18ea4",
+      "message_id": "<4E608BEC.6090600@jrc.ec.europa.eu>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "cb7a54ef4e8975ad30de0695b2d09aa3d4937b447001baa0a37c3eb2d889aeda",
+      "date": "2011-09-02T09:55:24+02:00",
+      "subject": "[R-pkgs] hydroTSM 0.3-0 and hydroGOF 0.3-0",
+      "subject_clean": "hydroTSM 0.3-0 and hydroGOF 0.3-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users and hydrological/environmental community,\n\nI'm glad to announce that a major (and recommended) update for the \npackages hydroTSM and hydroGOF are now available on CRAN:\n\n-) hydroTSM: http://cran.r-project.org/web/packages/hydroTSM/\n-) hydroGOF: http://cran.r-project.org/web/packages/hydroGOF/\n\n\n###################\n# hydroTSM v0.3-0 #\n###################\n\nhydroTSM is a package for management, analysis, interpolation and \nplotting of time series used in hydrology and related environmental \nsciences.\n\nThis new release collects feedback received since the first public \nrelease of the package (~ 1 year ago).\nMajor changes are related to improved plotting of time series, better \nand faster support for zoo objects, and new features in some functions.\n\nA full list of changes can be found on:\n\nhttp://www.rforge.net/hydroTSM/news.html\n\n\n###################\n# hydroGOF v0.3-0 #\n###################\n\nhydroGOF is a package implementing both statistical and graphical \ngoodness-of-fit measures between observed and simulated values, mainly \noriented to be used during the calibration, validation, and application \nof hydrological/environmental models.\n\nMajor changes in this new release are related to improved plotting of \nsimulated vs observed values and a new vignette.\n\nA full list of changes can be found on:\n\nhttp://www.rforge.net/hydroGOF/news.html\n\n\n###################\n#  Related Links  #\n###################\n\nhttp://meetingorganizer.copernicus.org/EGU2010/EGU2010-13008.pdf\n\nhttp://www.slideshare.net/hzambran/egu2010-ra-statisticalenvironmentfordoinghydrologicalanalysis-9095709\n\nhttp://www.r-project.org/conferences/useR-2009/slides/Zambrano+Bigiarini.pdf\n\n\n###################\nBugs / comments / questions / collaboration of any kind are very\nwelcomed, and in particular, datasets that can be included in the\npackages for academic purposes.\n\n\n\nKind regards,\n\nMauricio Zambrano-Bigiarini\n\n-- \n=======================================================\nFLOODS Action\nLand Management and Natural Hazards Unit\nInstitute for Environment and Sustainability (IES)\nEuropean Commission, Joint Research Centre (JRC)\nwebinfo    : http://floods.jrc.ec.europa.eu/\n=======================================================\nDISCLAIMER:\\ \"The views expressed are purely those of th...{{dropped:11}}",
+      "body_snippet": "Dear R users and hydrological/environmental community,\n\nI'm glad to announce that a major (and recommended) update for the \npackages hydroTSM and hydroGOF are now available on CRAN:\n\n-) hydroTSM: http",
+      "thread_id": "thread-f51a2eb18ea4",
+      "thread_depth": 0,
+      "month": "2011-09"
+    },
+    {
+      "id": "msg-4750bcfe2d5d",
+      "message_id": "<4E64AC2A.8090901@inserm.fr>",
+      "from_name": "Emmanuelle Comets",
+      "from_email_hash": "dc9c693a1c430c595db0a9e1ba6dad3e85e915492340352718a179c559f4ab21",
+      "date": "2011-09-05T13:02:02+02:00",
+      "subject": "[R-pkgs] saemix: SAEM algorithm for parameter estimation in non-linear mixed-effect models (version 0.96)",
+      "subject_clean": "saemix: SAEM algorithm for parameter estimation in non-linear mixed-effect models (version 0.96)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "saemix implements the SAEM (stochastic approximation EM) algorithm for \nparameter estimation in non-linear mixed effect models, used to model \nlongitudinal data.\n\n\tLongitudinal data are particularly prominent in pharmacokinetics (study of drug \nconcentrations versus time) and pharmacodynamics (study of drug effect versus \ntime), but the SAEM algorithm has also been successfully applied in many other \nareas and we would like to encourage you to try saemix.\n\n\tMore details can be found in the user guide included in the package, which \nencloses a section showing different examples using SAEMIX.\n\n\tAs always, I would be very grateful for comments and suggestions, and would \nwelcome any feed-back.\n\n\t\t\tEmmanuelle Comets\n\nAuthors: Emmanuelle Comets, Audrey Lavenu and Marc Lavielle\n-- \nStatistiquement, tout s'explique.\nPersonnellement, tout se complique.\n         (Daniel Pennac)",
+      "body_snippet": "saemix implements the SAEM (stochastic approximation EM) algorithm for \nparameter estimation in non-linear mixed effect models, used to model \nlongitudinal data.\n\n\tLongitudinal data are particularly p",
+      "thread_id": "thread-4750bcfe2d5d",
+      "thread_depth": 0,
+      "month": "2011-09"
+    },
+    {
+      "id": "msg-668ec2d2dd79",
+      "message_id": "<4E7C9DB9.4030207@istat.it>",
+      "from_name": "Teresa Buglielli",
+      "from_email_hash": "13c32ac32ad067d2730705fbefbd14f9c2166931cef0073273844fb25aed9570",
+      "date": "2011-09-23T16:54:49+02:00",
+      "subject": "[R-pkgs] new package 'SeleMix' for selective editing",
+      "subject_clean": "new package 'SeleMix' for selective editing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nwe would like to announce that on the CRAN a new package (SeleMix\nversion 0.8.1) for selective editing is available.\n\nThis package includes functions for identification of outliers and\ninfluential errors in numerical data. For each unit, it provides also\nanticipated values (predictions) for both observed and non observed\nvariables. The method is based on explicitly modelling both true\n(error-free) data and error mechanism through a two-component Gaussian\nmixture. Specifically, true data (first mixture component) are supposed\nto follow normal or log-normal distribution. We assume that only a\nsubset of data (second mixture component) is affected by error and that\nthe error mechanism is specified through a Gaussian random variable with\nzero mean vector and covariance matrix proportional to the covariance\nmatrix of the true data distribution.\n\n\nWe would appreciate any feedback\n\nSincerely,\n\nTeresa Buglielli and Ugo Guarnera\n\n-- \nTeresa Buglielli\nMethods, Tools and Methodological Support\nItalian National Institute of Statistics\nbugliell at istat.it\n\nUgo Guarnera\nMethods, Tools and Methodological Support\nItalian National Institute of Statistics\nguarnera at istat.it",
+      "body_snippet": "Dear R users,\n\nwe would like to announce that on the CRAN a new package (SeleMix\nversion 0.8.1) for selective editing is available.\n\nThis package includes functions for identification of outliers and\n",
+      "thread_id": "thread-668ec2d2dd79",
+      "thread_depth": 0,
+      "month": "2011-09"
+    },
+    {
+      "id": "msg-bc5f7df3ccc1",
+      "message_id": "<4E831017.7010201@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2011-09-28T14:16:23+02:00",
+      "subject": "[R-pkgs] package JM -- version 0.9-0",
+      "subject_clean": "package JM -- version 0.9-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter models. These models are \napplicable in mainly two settings. First, when focus is in the survival \noutcome and we wish to account for the effect of an endogenous (aka \ninternal) time-dependent covariate measured with error. Second, when \nfocus is in the longitudinal outcome and we wish to correct for \nnonrandom dropout.\n\nNew features include:\n\n* jointModel() with option \"spline-PH-aGH\" for the 'method' argument can \nnow also handle competing risks settings.\n\n* jointModel() with option \"spline-PH-aGH\" for the 'method' argument can \nnow also handle exogenous time-dependent covariates, using the (start, \nstop] notation of coxph().\n\n* The predict method allows now for both marginal and subject-specific \npredictions for the longitudinal outcome.\n\n* The pseudo adaptive Gauss-Hermite rule is now used by default.\n\nMore information can be found in the corresponding help files, and \nexamples at http://rwiki.sciviews.org/doku.php?id=packages:cran:jm\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014\nWeb: http://www.erasmusmc.nl/biostatistiek/",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter model",
+      "thread_id": "thread-bc5f7df3ccc1",
+      "thread_depth": 0,
+      "month": "2011-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f51a2eb18ea4",
+      "subject": "hydroTSM 0.3-0 and hydroGOF 0.3-0",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2011-09-02T09:55:24+02:00",
+      "last_reply": "2011-09-02T09:55:24+02:00",
+      "root_message_id": "msg-f51a2eb18ea4"
+    },
+    {
+      "id": "thread-4750bcfe2d5d",
+      "subject": "saemix: SAEM algorithm for parameter estimation in non-linear mixed-effect models (version 0.96)",
+      "message_count": 1,
+      "participants": [
+        "Emmanuelle Comets"
+      ],
+      "started": "2011-09-05T13:02:02+02:00",
+      "last_reply": "2011-09-05T13:02:02+02:00",
+      "root_message_id": "msg-4750bcfe2d5d"
+    },
+    {
+      "id": "thread-668ec2d2dd79",
+      "subject": "new package 'SeleMix' for selective editing",
+      "message_count": 1,
+      "participants": [
+        "Teresa Buglielli"
+      ],
+      "started": "2011-09-23T16:54:49+02:00",
+      "last_reply": "2011-09-23T16:54:49+02:00",
+      "root_message_id": "msg-668ec2d2dd79"
+    },
+    {
+      "id": "thread-bc5f7df3ccc1",
+      "subject": "package JM -- version 0.9-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2011-09-28T14:16:23+02:00",
+      "last_reply": "2011-09-28T14:16:23+02:00",
+      "root_message_id": "msg-bc5f7df3ccc1"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-10",
+  "messages": [
+    {
+      "id": "msg-e9ee1e849ef7",
+      "message_id": "<b16750c6-f7ad-4399-9077-574ba3d06236@app.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2022-10-12T14:05:35-04:00",
+      "subject": "[R-pkgs] gsDesign 3.4.0 is released",
+      "subject_clean": "gsDesign 3.4.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nA new version of gsDesign (3.4.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).\n\nThis version removes restrictions on conditional power calculations for interim test statistic and brings improvements on dependencies and lifecycle management. Please see the changelog (https://keaven.github.io/gsDesign/news/) for details.\n\nThanks,\n-Nan",
+      "body_snippet": "Dear all,\n\nA new version of gsDesign (3.4.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison an",
+      "thread_id": "thread-e9ee1e849ef7",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-4fd203d7a06b",
+      "message_id": "<CAJHOHbtK4+PnmMt3Mf=iX0pvFmpVoUjS50=NXQ0to_jiGLT8mw@mail.gmail.com>",
+      "from_name": "Enrique Blanco Carmona",
+      "from_email_hash": "733215172fd2554eee7946f2d6b383ec6bc7b2bfc0322bba06a1e9799aee0847",
+      "date": "2022-10-17T16:28:51+02:00",
+      "subject": "[R-pkgs] SCpubr: Generate high quality, publication-ready plots of single-cell transcriptomics data.",
+      "subject_clean": "SCpubr: Generate high quality, publication-ready plots of single-cell transcriptomics data.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nIt is my pleasure to announce that my new R package (*SCpubr\n<https://github.com/enblacar/SCpubr>*) to generate *high-quality,\npublication-ready plots* for *single-cell transcriptomics* data has been\nreleased *on CRAN\n<https://cran.r-project.org/web/packages/SCpubr/index.html>*. It uses *Seurat\nobjects* <https://cran.r-project.org/web/packages/Seurat/index.html> as\nbackbone to generate any type of data visualisation you might need for your\nresearch!\n\nIf this is of interest to you, please give it a try! You can have an\nin-depth look of *SCpubr's *functionalities in the *documentation book*\n<https://enblacar.github.io/SCpubr-book/>.\n\nAny kind of feedback is appreciated!\n\nBest,\nEnrique\n-- \n*Enrique Blanco Carmona*\nDeveloper and maintainer\n\n*SCpubr*\n*[CRAN package <https://cran.r-project.org/web/packages/SCpubr/index.html>]\n| [GitHub <https://github.com/enblacar/SCpubr>] | [Documentation Book\n<https://enblacar.github.io/SCpubr-book/>]*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\nIt is my pleasure to announce that my new R package (*SCpubr\n<https://github.com/enblacar/SCpubr>*) to generate *high-quality,\npublication-ready plots* for *single-cell transcriptom",
+      "thread_id": "thread-4fd203d7a06b",
+      "thread_depth": 0,
+      "month": "2022-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e9ee1e849ef7",
+      "subject": "gsDesign 3.4.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2022-10-12T14:05:35-04:00",
+      "last_reply": "2022-10-12T14:05:35-04:00",
+      "root_message_id": "msg-e9ee1e849ef7"
+    },
+    {
+      "id": "thread-4fd203d7a06b",
+      "subject": "SCpubr: Generate high quality, publication-ready plots of single-cell transcriptomics data.",
+      "message_count": 1,
+      "participants": [
+        "Enrique Blanco Carmona"
+      ],
+      "started": "2022-10-17T16:28:51+02:00",
+      "last_reply": "2022-10-17T16:28:51+02:00",
+      "root_message_id": "msg-4fd203d7a06b"
+    }
+  ]
+}

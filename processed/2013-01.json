@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-01",
+  "messages": [
+    {
+      "id": "msg-66e9fcc71aee",
+      "message_id": "<50ED1B3D.20103@bioinf.jku.at>",
+      "from_name": "Ulrich Bodenhofer",
+      "from_email_hash": "235a23b4b9d7ccb9626ce68d4d9248ea6e23014f9ccf9e135eb089e19ec666b3",
+      "date": "2013-01-09T08:24:45+01:00",
+      "subject": "[R-pkgs] Version 1.3.0 of apcluster package on CRAN",
+      "subject_clean": "Version 1.3.0 of apcluster package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear colleagues,\n\nThis is to inform you that Version 1.3.0 of the R package apcluster has \nbeen released on CRAN yesterday. We did a major extension and overhaul \nof the package. Most importantly, we added Leveraged Affinity \nPropagation in fulfillment of multiple users requests. It should now be \nmuch easier to cluster large data sets. Apart from this extension, the \ninterfaces to apcluster() and related functions have been made more \ncomfortable and flexible. For more details, see the following URLs:\n\nhttp://www.bioinf.jku.at/software/apcluster/ \n<http://www.bioinf.jku.at/software/apcluster/>\nhttp://cran.r-project.org/web/packages/apcluster/index.html \n<http://cran.r-project.org/web/packages/apcluster/index.html>\n\nBest regards,\nUlrich\n\n\n------------------------------------------------------------------------\n*Dr. Ulrich Bodenhofer*\nAssociate Professor\nInstitute of Bioinformatics\n\n*Johannes Kepler University*\nAltenberger Str. 69\n4040 Linz, Austria\n\nTel. +43 732 2468 9552\nFax +43 732 2468 9511\nbodenhofer at bioinf.jku.at <mailto:bodenhofer at bioinf.jku.at>\nhttp://www.bioinf.jku.at/ <http://www.bioinf.jku.at>",
+      "body_snippet": "Dear colleagues,\n\nThis is to inform you that Version 1.3.0 of the R package apcluster has \nbeen released on CRAN yesterday. We did a major extension and overhaul \nof the package. Most importantly, we ",
+      "thread_id": "thread-66e9fcc71aee",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-dc05aedcc95c",
+      "message_id": "<fcd08d2754a.50eef21e@hacettepe.edu.tr>",
+      "from_name": "Selcuk KORKMAZ",
+      "from_email_hash": "995881611b3a7fde3395388b3f5786852aff764c9d76eaaca37ad69b248b823f",
+      "date": "2013-01-10T16:53:50+02:00",
+      "subject": "[R-pkgs]  Version 1.0 of royston package on CRAN‏",
+      "subject_clean": "Version 1.0 of royston package on CRAN‏",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130110/f2969dc3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130110/f2969dc3/attachment.pl>",
+      "thread_id": "thread-dc05aedcc95c",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-70740cbbf958",
+      "message_id": "<CAJ44-AmxjBRaVpW_8WQBTeUC2vwAwz+y9i1mZ7Zk3GO0TTSTTg@mail.gmail.com>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "e9fde6a1889a918f8a1b9e2b03f04fe4a17789608f62c0d62ec496896a0ff481",
+      "date": "2013-01-10T16:05:13-03:00",
+      "subject": "[R-pkgs] hydroPSO 0.3-0 on CRAN",
+      "subject_clean": "hydroPSO 0.3-0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R and hydrological/environmental community,\n\nA major release of hydroPSO is now available on CRAN.  This new release:\n\n-) implements the Standard Particle Swarm 2011 (SPSO-2011)\n-) is parallel-capable, to alleviate the computational burden of\ncomplex models with \"long\" execution time\n-) has an improved performance (33% - 38% faster)\n-) allows normalization, when the parameter space is not a hypercube\n-) includes seven new benchmark functions\n-) includes two new functions for importing/exporting from/to PEST\n-) handles models with sub-daily time step and with sub-daily observations\n-) has a new vignette\n-) computes the normalised swarm radius using the median distance of\nall the particles to the global best (instead of using the maximum\ndistance)\n\n\nhydroPSO is a global optimization R package implementing a\nstate-of-the-art version of the Particle Swarm Optimization (PSO)\nalgorithm.\n\nhydroPSO can be used as a replacement of 'optim' for (global)\noptimization of non-smooth and non-linear functions. However, the main\nfocus of hydroPSO is the calibration of environmental and other\nreal-world models that need to be executed from the system console.\n\nhydroPSO is model-independent, allowing the user to easily interface\nany computer simulation model with the calibration engine (PSO).\nhydroPSO communicates with the model through the model's own input and\noutput files, without requiring access to the model's source code.\n\nSeveral PSO variants and controlling options are included to fine-tune\nthe performance of the calibration engine to different calibration\nproblems.\n\nAn advanced sensitivity analysis function together with user-friendly\nplotting summaries facilitates the interpretation and assessment of\nthe optimization/calibration results.\n\n\n-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-\n\nhydroPSO 0.3-0 is already available on CRAN:\n\nhttp://cran.r-project.org/web/packages/hydroPSO/\n\n-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-\n\n\nThis package includes a vignette (tutorial) showing how to calibrate\nSWAT-2005 (http://swatmodel.tamu.edu/software/swat-model/) and\nMODFLOW-2005 (http://water.usgs.gov/nrp/gwsoftware/modflow2005/modflow2005.html)\nfor real-world case studies.\n\nYou can download the vignette and all the files required to follow the\ntwo case studies from:\n\nhttp://www.rforge.net/hydroPSO/\n\n\nFor assistance/bugs, comments, and/or collaboration do not hesitate to\ncontact the authors (in English, Spanish or Italian):\n\nMauricio Zambrano-Bigiarini     <mzb.devel [at] gmail.com>\nRodrigo Rojas                          <Rodrigo.RojasMujica [at] gmail.com>\n\n\nKind regards,\nMauricio Zambrano-Bigiarini, Ph.D\n\n-- \n======================================\nWater Resources Unit\nInstitute for Environment and Sustainability\nJoint Research Centre, European Commission\nwebinfo    : http://floods.jrc.ec.europa.eu/\n======================================\nDISCLAIMER:\\ \"The views expressed are purely those of th...{{dropped:11}}",
+      "body_snippet": "Dear R and hydrological/environmental community,\n\nA major release of hydroPSO is now available on CRAN.  This new release:\n\n-) implements the Standard Particle Swarm 2011 (SPSO-2011)\n-) is parallel-ca",
+      "thread_id": "thread-70740cbbf958",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-216ca4a44b84",
+      "message_id": "<C16A6FAE-F018-4480-AB56-A53E46972EEF@muxspace.com>",
+      "from_name": "Brian Lee Yung Rowe",
+      "from_email_hash": "9bac401501175f8e5f58a68494a778fda4c9e165446648ca3c36d0f863e74446",
+      "date": "2013-01-21T13:34:38-05:00",
+      "subject": "[R-pkgs] lambda.r 1.1.0 on CRAN",
+      "subject_clean": "lambda.r 1.1.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'm pleased to announce that version 1.1.0 of lambda.r is now available on CRAN (http://cran.r-project.org/web/packages/lambda.r/). This package provides a complete functional programming environment within R (and is backwards compatible with S3). Lambda.r introduces many concepts including:\n\n. Multipart function definitions\n. Guard statements to control execution of functions\n. Pattern matching in function definitions\n. An intuitive type system\n. Optional strong typing via type constraints\n. Type variables\n. Cleaner syntax for attributes\n\nUsing these techniques, systems can be written more efficiently and with less headache. Here is a brief example of what you can do with lambda.r.\n\nfib(n) %::% numeric : numeric\nfib(n) %when% { n < 0 } %as% { stop(\"Negative numbers not allowed\") }\nfib(0) %as% 1\nfib(1) %as% 1\nfib(n) %as% { fib(n-1) + fib(n-2) }\n\n> fib(-1)\nError in function (n)  : Negative numbers not allowed\n> fib(5)\n[1] 8\n\nDocumentation is available at the following locations:\n. http://cartesianfaith.wordpress.com/category/r/lambda-r/\n. https://github.com/muxspace/lambda.r\n\nA more complete discussion on why analytical systems should be designed using functional programming principles will be available in my forthcoming book on functional programming and computational finance. \n\nWarm Regards,\nBrian Rowe",
+      "body_snippet": "Dear useRs,\n\nI'm pleased to announce that version 1.1.0 of lambda.r is now available on CRAN (http://cran.r-project.org/web/packages/lambda.r/). This package provides a complete functional programming",
+      "thread_id": "thread-216ca4a44b84",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-b38de348a0a8",
+      "message_id": "<CAAy4ZDTzK3sg71S91h=hQb_ZJr0-=RscpYR=8y-ADvm7CJDoyg@mail.gmail.com>",
+      "from_name": "David Valentim Dias",
+      "from_email_hash": "9c9779894c45d1446c7d1fd5e1aed82fdb16feade5ec981bf1be118dc2f1b9b8",
+      "date": "2013-01-26T17:03:05-04:00",
+      "subject": "[R-pkgs] FI 1.0 avaliable on CRAN",
+      "subject_clean": "FI 1.0 avaliable on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130126/603c6064/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130126/603c6064/attachment.pl>",
+      "thread_id": "thread-b38de348a0a8",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-d5830ad8479e",
+      "message_id": "<201301301409.005707@miram7700b.williams.edu>",
+      "from_name": "Yang Lu",
+      "from_email_hash": "0f2eeb256397f8a59992133c0585dd89f350f3bbe3ec4a799788057f4a1f756c",
+      "date": "2013-01-30T09:09:51-05:00",
+      "subject": "[R-pkgs] Version 1.2 of pa package available on CRAN",
+      "subject_clean": "Version 1.2 of pa package available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130130/576b3f55/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130130/576b3f55/attachment.pl>",
+      "thread_id": "thread-d5830ad8479e",
+      "thread_depth": 0,
+      "month": "2013-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-66e9fcc71aee",
+      "subject": "Version 1.3.0 of apcluster package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Ulrich Bodenhofer"
+      ],
+      "started": "2013-01-09T08:24:45+01:00",
+      "last_reply": "2013-01-09T08:24:45+01:00",
+      "root_message_id": "msg-66e9fcc71aee"
+    },
+    {
+      "id": "thread-70740cbbf958",
+      "subject": "hydroPSO 0.3-0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2013-01-10T16:05:13-03:00",
+      "last_reply": "2013-01-10T16:05:13-03:00",
+      "root_message_id": "msg-70740cbbf958"
+    },
+    {
+      "id": "thread-dc05aedcc95c",
+      "subject": "Version 1.0 of royston package on CRAN‏",
+      "message_count": 1,
+      "participants": [
+        "Selcuk KORKMAZ"
+      ],
+      "started": "2013-01-10T16:53:50+02:00",
+      "last_reply": "2013-01-10T16:53:50+02:00",
+      "root_message_id": "msg-dc05aedcc95c"
+    },
+    {
+      "id": "thread-216ca4a44b84",
+      "subject": "lambda.r 1.1.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Brian Lee Yung Rowe"
+      ],
+      "started": "2013-01-21T13:34:38-05:00",
+      "last_reply": "2013-01-21T13:34:38-05:00",
+      "root_message_id": "msg-216ca4a44b84"
+    },
+    {
+      "id": "thread-b38de348a0a8",
+      "subject": "FI 1.0 avaliable on CRAN",
+      "message_count": 1,
+      "participants": [
+        "David Valentim Dias"
+      ],
+      "started": "2013-01-26T17:03:05-04:00",
+      "last_reply": "2013-01-26T17:03:05-04:00",
+      "root_message_id": "msg-b38de348a0a8"
+    },
+    {
+      "id": "thread-d5830ad8479e",
+      "subject": "Version 1.2 of pa package available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Yang Lu"
+      ],
+      "started": "2013-01-30T09:09:51-05:00",
+      "last_reply": "2013-01-30T09:09:51-05:00",
+      "root_message_id": "msg-d5830ad8479e"
+    }
+  ]
+}

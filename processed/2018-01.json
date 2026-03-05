@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-01",
+  "messages": [
+    {
+      "id": "msg-7b584ecff36d",
+      "message_id": "<CAE6U0BaV911HuMoBMX8z0rw9WciCh=4GBbFqfNh2crcXDiSfrw@mail.gmail.com>",
+      "from_name": "AMR RS",
+      "from_email_hash": "9d8ba78f8e2e04768169ecfa71127fd39c1084fddf646d787a6f5b66796419a2",
+      "date": "2018-01-08T23:53:08+05:30",
+      "subject": "[R-pkgs] 'coindeskr' to access coindesk API Bitcoin Price (Historic)",
+      "subject_clean": "'coindeskr' to access coindesk API Bitcoin Price (Historic)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello Rusers,\n\nIntroducing *coindeskr - *an R package to access coindesk API Bitcoin Price\nIndex (Including Historic Price).\n\nhttps://github.com/amrrs/coindeskr\n\nhttps://cran.r-project.org/package=coindeskr\n\nPlease share your feedback using it.\n\nRegards,\nAbdul\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Rusers,\n\nIntroducing *coindeskr - *an R package to access coindesk API Bitcoin Price\nIndex (Including Historic Price).\n\nhttps://github.com/amrrs/coindeskr\n\nhttps://cran.r-project.org/package=coi",
+      "thread_id": "thread-7b584ecff36d",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-a686122a772e",
+      "message_id": "<5b0a5b51692f497d8eb4683229f1beaa@EXCHCS35.ornl.gov>",
+      "from_name": "Piburn, Jesse O.",
+      "from_email_hash": "e01fc830d0ed8d586992ec2eeef11e5e995be1f388a36759817a2b9896c9506b",
+      "date": "2018-01-10T15:18:59Z",
+      "subject": "[R-pkgs] Release of wbstats 0.2 on CRAN",
+      "subject_clean": "Release of wbstats 0.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all\n\nI'm happy to announce a new version of wbstats is now available on CRAN.\n\nwbstats is an R package for searching and downloading data from the World Bank API that includes access to all annual, monthly, and quarterly indicators\n\nin addition to bug fixes. Version 0.2 now\n\n  *   Uses version 2 of the World Bank API. This includes data that is unavailable in the previous world bank API\n  *   Has the ability to return data in a \"wide\" format (indicators are columns) with the return_wide = TRUE option\n  *   More explicit error messaging\n  *   Has a lastUpdated field for each data source\n\n\nCRAN: https://CRAN.R-project.org/package=wbstats\nGithub: https://github.com/GIST-ORNL/wbstats\n\nA getting started with wbstats article, including examples with sf, ggplot2, and leaflet\nhttps://jesse.netlify.com/2018/01/05/getting-started-with-wbstats-a-world-bank-r-package/\n\n\nThanks!\nJesse\n\n\nJesse Piburn\nResearch Scientist in Geographic Data Sciences\nGeographic Information Science & Technology Group\nComputational Sciences and Engineering Division\nOak Ridge National Laboratory\n1 Bethel Valley Road P.O. Box 2008 MS-6134\nOak Ridge, TN 37831 6134\nOffice Phone: 865 576 9318\nMobile Phone (preferred): 865 621 9034\nEmail: piburnjo at ornl.gov\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all\n\nI'm happy to announce a new version of wbstats is now available on CRAN.\n\nwbstats is an R package for searching and downloading data from the World Bank API that includes access to all annual,",
+      "thread_id": "thread-a686122a772e",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-0ebb9f9a45e9",
+      "message_id": "<CAJ9GNanA=KgGOoxpO3PUYkPQheg6pxYdJXuKs0Nwuc9JaSdHRg@mail.gmail.com>",
+      "from_name": "Jan Wijffels",
+      "from_email_hash": "c67854060f9d1faa0785ceb6d8fc98369d857f79d54a92b874f39998787b7fc2",
+      "date": "2018-01-15T19:29:44+01:00",
+      "subject": "[R-pkgs] Natural Language Processing for non-English languages with udpipe",
+      "subject_clean": "Natural Language Processing for non-English languages with udpipe",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'm happy to announce the release of version 0.3 of the udpipe R package on\nCRAN (https://CRAN.R-project.org/package=udpipe). The udpipe R package is a\nNatural Language Processing toolkit that provides language-agnostic\n'tokenization', 'parts of speech tagging', 'lemmatization', 'morphological\nfeature tagging' and 'dependency parsing' of raw text. Next to text\nparsing, the R package also allows you to train annotation models based on\ndata of 'treebanks' in 'CoNLL-U' format as provided at\nhttp://universaldependencies.org/format.html.\n\nThe R package provides direct access to language models trained on more\nthan 50 languages. The following languages are directly available:\n\nafrikaans, ancient_greek-proiel, ancient_greek, arabic, basque, belarusian,\nbulgarian, catalan, chinese, coptic, croatian, czech-cac, czech-cltt,\nczech, danish, dutch-lassysmall, dutch, english-lines, english-partut,\nenglish, estonian, finnish-ftb, finnish, french-partut, french-sequoia,\nfrench, galician-treegal, galician, german, gothic, greek, hebrew, hindi,\nhungarian, indonesian, irish, italian, japanese, kazakh, korean,\nlatin-ittb, latin-proiel, latin, latvian, lithuanian, norwegian-bokmaal,\nnorwegian-nynorsk, old_church_slavonic, persian, polish, portuguese-br,\nportuguese, romanian, russian-syntagrus, russian, sanskrit, serbian,\nslovak, slovenian-sst, slovenian, spanish-ancora, spanish, swedish-lines,\nswedish, tamil, turkish, ukrainian, urdu, uyghur, vietnamese\n\nWe hope that the package will allow other R users to build natural language\napplications on top of the resulting parts of speech tags, tokens,\nmorphological features and dependency parsing output. And we hope in\nparticular that applications will arise which are not limited to English\nonly (like the textrank R package or the cleanNLP package to name a few)\n\nNote that the package has no external software dependencies (no java nor\npython) and depends only on 2 R packages (Rcpp and data.table), which makes\nthe package easy to install on any platform.\n\nThe package is available on CRAN at\nhttps://CRAN.R-project.org/package=udpipe and is developed at\nhttps://github.com/bnosac/udpipe\nA small docusaurus website is made available at\nhttps://bnosac.github.io/udpipe/en\n\nWe hope you enjoy using it and we would like to thank Milan Straka for all\nthe efforts done on UDPipe as well as all persons involved in\nhttp://universaldependencies.org\n\nall the best,\nJan\n\nJan Wijffels\nStatistician\nwww.bnosac.be  | +32 486 611708\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI'm happy to announce the release of version 0.3 of the udpipe R package on\nCRAN (https://CRAN.R-project.org/package=udpipe). The udpipe R package is a\nNatural Language Processing toolk",
+      "thread_id": "thread-0ebb9f9a45e9",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-6b35bacce871",
+      "message_id": "<CADmCUH=S7OqD0JQ=CA3juEJz89Q9dbmF63jLuCkVyiPkXW-ibA@mail.gmail.com>",
+      "from_name": "Casey Youngflesh",
+      "from_email_hash": "34f908286374cdc768112c0f5355a0191f0a137bc726b54939cf890c3d7c87a4",
+      "date": "2018-01-18T17:11:48-05:00",
+      "subject": "[R-pkgs] MCMCvis 0.9.2 on CRAN",
+      "subject_clean": "MCMCvis 0.9.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The latest version of `MCMCvis` is now available on CRAN.\n\n`MCMCvis` is an R package used to visualize, manipulate, and summarize MCMC\noutput. MCMC output may be derived from Bayesian model output fit with\nJAGS, Stan, or other MCMC samplers.\n\nImprovements since the last CRAN release (0.8.1) include:\n\n* ability to calculate and plot prior posterior overlap\n* ability to return number of effective samples for each parameter\n* ability to accept some arguments in regular expression format\n* ability to easily subset mcmc.list objects into smaller mcmc.list objects\n* function to retain structure of parameters (matrix parameters in model\nwill be summarized by function and returned in matrix format)\n* speed improvements (particularly for large model objects)\n\nCRAN: https://CRAN.R-project.org/package=MCMCvis\nGitHub: https://github.com/caseyyoungflesh/MCMCvis\n\nFull tutorial here: http://www.caseyyoungflesh.com/software/\n\nCheers,\n\nCasey\n\n-- \n*Casey Youngflesh*\nDepartment of Ecology and Evolution\nStony Brook University\nStony Brook, NY 11794 USA\nwww.caseyyoungflesh.com <http://www.caseyyoungflesh.weebly.com>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The latest version of `MCMCvis` is now available on CRAN.\n\n`MCMCvis` is an R package used to visualize, manipulate, and summarize MCMC\noutput. MCMC output may be derived from Bayesian model output fit",
+      "thread_id": "thread-6b35bacce871",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-9b0ee48e63fe",
+      "message_id": "<CADOV6XG_p=++wHSejHkPRmns=k3T8uhyHWEPyACnZ4UGJ6gwjQ@mail.gmail.com>",
+      "from_name": "Peter Laurinec",
+      "from_email_hash": "bab74c96e96192461df0ee28ae281aa1d8f99ef0bb426b79fd2505dd9fcae027",
+      "date": "2018-01-26T15:40:56+01:00",
+      "subject": "[R-pkgs] new package TSrepr",
+      "subject_clean": "new package TSrepr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'm happy to announce a new package that has recently appeared on CRAN,\ncalled \"TSrepr\" (version 1.0.0: https://CRAN.R-project.org/package=TSrepr).\n\nTSrepr is an R package for fast time series representations computations.\n\nIntroduction to usage of TSrepr package can be found in this tutorial:\nhttps://cran.r-project.org/web/packages/TSrepr/vignettes/TSrepr_representations_of_time_series.html\n\nUse case with clustering of time series representations can be found here:\nhttps://cran.r-project.org/web/packages/TSrepr/vignettes/TSrepr_representations_use_case.html\n\nExamples how to extend TSrepr functionalities are here:\nhttps://cran.r-project.org/web/packages/TSrepr/vignettes/TSrepr_extentions.html\n\nAny suggestions and comments are welcome.\n\nBest regards,\nPeter Laurinec\nEmail: tsreprpackage at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nI'm happy to announce a new package that has recently appeared on CRAN,\ncalled \"TSrepr\" (version 1.0.0: https://CRAN.R-project.org/package=TSrepr).\n\nTSrepr is an R package for fast time s",
+      "thread_id": "thread-9b0ee48e63fe",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-1e6f5ae1fada",
+      "message_id": "<SYXPR01MB073560D260956E1108000C07ECE70@SYXPR01MB0735.ausprd01.prod.outlook.com>",
+      "from_name": "Graham White",
+      "from_email_hash": "8324b23f88520cc3935d79628e03f262decfec68982784ca07ae685d0ec669a1",
+      "date": "2018-01-27T06:03:33Z",
+      "subject": "[R-pkgs] New package IndexNumR: A package for computation of index numbers",
+      "subject_clean": "New package IndexNumR: A package for computation of index numbers",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello useRs,\n\nA new package, IndexNumR, has been released on CRAN.\n\nIndexNumR provides a set of functions for computing various bilateral and multilateral indices. It is designed to compute price or quantity indices over time. Bilateral indices include Laspeyres, Paasche, Fisher, Tornqvist, Sato-Vartia, Walsh and CES, as well as elementary indices Dutot, Carli, Harmonic mean, CSWD and Jevons. All of these bilateral indices can be computed as period-on-period, fixed-base or chained.\n\nMultilateral indices can be computed in the time series context using the GEKS methodology, and updating is provided via the window, movement or mean splice methods. The GEKS method is computed using either the Fisher or Tornqvist superlative index number methods.\n\nThe package also provides functions to compute measures of dissimilarity between time periods, which can be used to choose the linking period for chained indices.\n\nFor more information, see?https://cran.r-project.org/package=IndexNumR.?\n\nDetailed information is contained in the package vignette at?https://cran.r-project.org/web/packages/IndexNumR/vignettes/indexnumr.html.\n\nIssues and suggestions are welcome, and can be logged at the package Github repository https://github.com/grahamjwhite/IndexNumR.\n\nKind regards,?\nGraham White\ng.white at unswalumni.com",
+      "body_snippet": "Hello useRs,\n\nA new package, IndexNumR, has been released on CRAN.\n\nIndexNumR provides a set of functions for computing various bilateral and multilateral indices. It is designed to compute price or q",
+      "thread_id": "thread-1e6f5ae1fada",
+      "thread_depth": 0,
+      "month": "2018-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7b584ecff36d",
+      "subject": "'coindeskr' to access coindesk API Bitcoin Price (Historic)",
+      "message_count": 1,
+      "participants": [
+        "AMR RS"
+      ],
+      "started": "2018-01-08T23:53:08+05:30",
+      "last_reply": "2018-01-08T23:53:08+05:30",
+      "root_message_id": "msg-7b584ecff36d"
+    },
+    {
+      "id": "thread-a686122a772e",
+      "subject": "Release of wbstats 0.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Piburn, Jesse O."
+      ],
+      "started": "2018-01-10T15:18:59+00:00",
+      "last_reply": "2018-01-10T15:18:59+00:00",
+      "root_message_id": "msg-a686122a772e"
+    },
+    {
+      "id": "thread-0ebb9f9a45e9",
+      "subject": "Natural Language Processing for non-English languages with udpipe",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2018-01-15T19:29:44+01:00",
+      "last_reply": "2018-01-15T19:29:44+01:00",
+      "root_message_id": "msg-0ebb9f9a45e9"
+    },
+    {
+      "id": "thread-6b35bacce871",
+      "subject": "MCMCvis 0.9.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Casey Youngflesh"
+      ],
+      "started": "2018-01-18T17:11:48-05:00",
+      "last_reply": "2018-01-18T17:11:48-05:00",
+      "root_message_id": "msg-6b35bacce871"
+    },
+    {
+      "id": "thread-9b0ee48e63fe",
+      "subject": "new package TSrepr",
+      "message_count": 1,
+      "participants": [
+        "Peter Laurinec"
+      ],
+      "started": "2018-01-26T15:40:56+01:00",
+      "last_reply": "2018-01-26T15:40:56+01:00",
+      "root_message_id": "msg-9b0ee48e63fe"
+    },
+    {
+      "id": "thread-1e6f5ae1fada",
+      "subject": "New package IndexNumR: A package for computation of index numbers",
+      "message_count": 1,
+      "participants": [
+        "Graham White"
+      ],
+      "started": "2018-01-27T06:03:33+00:00",
+      "last_reply": "2018-01-27T06:03:33+00:00",
+      "root_message_id": "msg-1e6f5ae1fada"
+    }
+  ]
+}

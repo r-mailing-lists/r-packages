@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2003-10",
+  "messages": [
+    {
+      "id": "msg-1dca0a8c1ea8",
+      "message_id": "<200310051003.h95A3ulY018425@tahi.mcs.vuw.ac.nz>",
+      "from_name": "Ray Brownrigg",
+      "from_email_hash": "7c9305d6e8465d47af27a60c306088e1452a12be430f4303fa181000c81760b5",
+      "date": "2003-10-05T23:03:56+13:00",
+      "subject": "[R-pkgs] R maps now for Windows",
+      "subject_clean": "R maps now for Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The original S maps package, previously only available in R on Unix\nsystems is now available in R for Windows.\n\nmaps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows\nbinary form (for rw1071) have been uploaded to CRAN, hopefully soon to\nappear.\n\nThe key aspect of this package which differentiates it from other\nGIS related R packages under development is that it is standalone\nwithin R, i.e. it does not rely on the presence of any other\nsoftware.\n\nFeatures are:\n1) Built-in databases for usa, state (states of the USA), county\n(counties of the USA), world, world2 (Pacific-centric world) and nz.\n2) Databases supplied in source form with accompanying software to\ngenerate the binary forms, allowing users to edit the data or add new\ndatabases (basic format is latitude/longitude pairs).\n3) A database of world cities (generally >~100,000 population).\n4) A companion package called mapdata provides high-resolution versions\nof world, world2 and nz, as well as china (provinces) and rivers.\n5) A companion package called mapproj provides a variety of map \n   projections (from Doug McIlroy).\n6) While being backwards-compatible with the original 'S maps library',\nit also has many new features, including:\n   - displaying region names on a map,\n   - finding the map region containing a given point (point-in-polygon),\n   - computing areas of map regions, and\n   - interpolating data aggregated over map regions (for statistical maps).\n\nThe maps and mapdata packages are maintained by Ray Brownrigg with\ngenerous assistance from Tom Minka.\n\nThe mapproj package is available at \n   http://www.stat.cmu.edu/~minka/software/maps/\n\nRay Brownrigg\nTom Minka\nOctober 2003",
+      "body_snippet": "The original S maps package, previously only available in R on Unix\nsystems is now available in R for Windows.\n\nmaps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows\nbinary form (for rw1",
+      "thread_id": "thread-1dca0a8c1ea8",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-1dca0a8c1ea8",
+      "message_id": "<200310051003.h95A3ulY018425@tahi.mcs.vuw.ac.nz>",
+      "from_name": "Ray Brownrigg",
+      "from_email_hash": "7c9305d6e8465d47af27a60c306088e1452a12be430f4303fa181000c81760b5",
+      "date": "2003-10-05T23:03:56+13:00",
+      "subject": "[R-pkgs] R maps now for Windows",
+      "subject_clean": "R maps now for Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The original S maps package, previously only available in R on Unix\nsystems is now available in R for Windows.\n\nmaps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows\nbinary form (for rw1071) have been uploaded to CRAN, hopefully soon to\nappear.\n\nThe key aspect of this package which differentiates it from other\nGIS related R packages under development is that it is standalone\nwithin R, i.e. it does not rely on the presence of any other\nsoftware.\n\nFeatures are:\n1) Built-in databases for usa, state (states of the USA), county\n(counties of the USA), world, world2 (Pacific-centric world) and nz.\n2) Databases supplied in source form with accompanying software to\ngenerate the binary forms, allowing users to edit the data or add new\ndatabases (basic format is latitude/longitude pairs).\n3) A database of world cities (generally >~100,000 population).\n4) A companion package called mapdata provides high-resolution versions\nof world, world2 and nz, as well as china (provinces) and rivers.\n5) A companion package called mapproj provides a variety of map \n   projections (from Doug McIlroy).\n6) While being backwards-compatible with the original 'S maps library',\nit also has many new features, including:\n   - displaying region names on a map,\n   - finding the map region containing a given point (point-in-polygon),\n   - computing areas of map regions, and\n   - interpolating data aggregated over map regions (for statistical maps).\n\nThe maps and mapdata packages are maintained by Ray Brownrigg with\ngenerous assistance from Tom Minka.\n\nThe mapproj package is available at \n   http://www.stat.cmu.edu/~minka/software/maps/\n\nRay Brownrigg\nTom Minka\nOctober 2003",
+      "body_snippet": "The original S maps package, previously only available in R on Unix\nsystems is now available in R for Windows.\n\nmaps_2.0-2 and mapdata_2.0-2 (see below) in both source and Windows\nbinary form (for rw1",
+      "thread_id": "thread-1dca0a8c1ea8",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-f7894c3fc2a5",
+      "message_id": "<011a01c38e3a$59eda620$5c13070a@PROCGEN>",
+      "from_name": "Vito Muggeo",
+      "from_email_hash": "e2ca080c5dec900c1f06077c30739021dab09435c0e36e27aae158b2f6806355",
+      "date": "2003-10-09T09:52:49+02:00",
+      "subject": "[R-pkgs] new package: segmented",
+      "subject_clean": "new package: segmented",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A few days ago I uploaded to CRAN a new package called segmented.\n\nThe package contains functions to fit (generalized) linear models with\n`segmented' (or `broken-line' or `piecewise linear') relationships between\nthe response and one or more explanatory variables according to methodology\ndescribed in\n\nMuggeo VMR (2003), Estimating regression models with unknown break-points,\nStatistics in Medicine, 22, 3055-3071.\n\nI would be very grateful for comments and suggestions,\n\nbest,\nvito",
+      "body_snippet": "A few days ago I uploaded to CRAN a new package called segmented.\n\nThe package contains functions to fit (generalized) linear models with\n`segmented' (or `broken-line' or `piecewise linear') relations",
+      "thread_id": "thread-f7894c3fc2a5",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-f7894c3fc2a5",
+      "message_id": "<011a01c38e3a$59eda620$5c13070a@PROCGEN>",
+      "from_name": "Vito Muggeo",
+      "from_email_hash": "e2ca080c5dec900c1f06077c30739021dab09435c0e36e27aae158b2f6806355",
+      "date": "2003-10-09T09:52:49+02:00",
+      "subject": "[R-pkgs] new package: segmented",
+      "subject_clean": "new package: segmented",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A few days ago I uploaded to CRAN a new package called segmented.\n\nThe package contains functions to fit (generalized) linear models with\n`segmented' (or `broken-line' or `piecewise linear') relationships between\nthe response and one or more explanatory variables according to methodology\ndescribed in\n\nMuggeo VMR (2003), Estimating regression models with unknown break-points,\nStatistics in Medicine, 22, 3055-3071.\n\nI would be very grateful for comments and suggestions,\n\nbest,\nvito",
+      "body_snippet": "A few days ago I uploaded to CRAN a new package called segmented.\n\nThe package contains functions to fit (generalized) linear models with\n`segmented' (or `broken-line' or `piecewise linear') relations",
+      "thread_id": "thread-f7894c3fc2a5",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-676cf147211c",
+      "message_id": "<C3ACF3F0-FE6D-11D7-BC96-000A95A672D6@fas.harvard.edu>",
+      "from_name": "Bear F. Braumoeller",
+      "from_email_hash": "ea29b3e24b6206b6b564a563772bdd6806def2b5bcc359f3afe56d3980d9dee4",
+      "date": "2003-10-14T13:42:21-04:00",
+      "subject": "[R-pkgs] Updated package: Boolean v1.03",
+      "subject_clean": "Updated package: Boolean v1.03",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.03 of the R package boolean has been uploaded to CRAN and is \nnow available.\n\nboolean implements partial-observability logit and probit models for \ntesting Boolean hypotheses.  It permits researchers to model the \nprobability of the occurrence of a given outcome as a complex function \nof the probabilities that other outcomes will occur (or other \nconditions will be fulfilled).  For example, if p(Y) = p(A) * p(B) \n(that is, A and B jointly produce Y, and the absence of either \nprecludes it), the boolean routine models p(A) and p(B) as logit or \nprobit curves and p(Y) as their product.  Similarly, if A or B produces \nY, p(Y) = 1 - [(1-p(A)) * (1-p(B))] becomes the functional form, again \nwith p(A) and p(B) estimated as logit/probit curves.  Arbitrarily \nconvoluted combinations -- e.g., (A and B) or (C and D) produces Y; or, \np(Y) = 1 - [1-p(A)*p(B)] * [1-p(C)*p(D)] -- can be estimated, and \ndependence of probabilities can be modeled by including some of the \nsame independent variables in the separate logit or probit equations.  \nThe derivation is in Braumoeller, \"Causal Complexity and the Study of \nPolitics,\" Political Analysis 11(3), 209-233.\n\nVersion 1.03 is a service update which ensures that all documentation, \nin particular the documentation of S4 methods objects, is compatible \nwith R 1.8.  Previous versions will produce warnings upon compilation.\n\n\nBear F. Braumoeller\nAssistant Professor\nDepartment of Government\nHarvard University\nhttp://www.people.fas.harvard.edu/~bfbraum",
+      "body_snippet": "Version 1.03 of the R package boolean has been uploaded to CRAN and is \nnow available.\n\nboolean implements partial-observability logit and probit models for \ntesting Boolean hypotheses.  It permits re",
+      "thread_id": "thread-676cf147211c",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-676cf147211c",
+      "message_id": "<C3ACF3F0-FE6D-11D7-BC96-000A95A672D6@fas.harvard.edu>",
+      "from_name": "Bear F. Braumoeller",
+      "from_email_hash": "ea29b3e24b6206b6b564a563772bdd6806def2b5bcc359f3afe56d3980d9dee4",
+      "date": "2003-10-14T13:42:21-04:00",
+      "subject": "[R-pkgs] Updated package: Boolean v1.03",
+      "subject_clean": "Updated package: Boolean v1.03",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.03 of the R package boolean has been uploaded to CRAN and is \nnow available.\n\nboolean implements partial-observability logit and probit models for \ntesting Boolean hypotheses.  It permits researchers to model the \nprobability of the occurrence of a given outcome as a complex function \nof the probabilities that other outcomes will occur (or other \nconditions will be fulfilled).  For example, if p(Y) = p(A) * p(B) \n(that is, A and B jointly produce Y, and the absence of either \nprecludes it), the boolean routine models p(A) and p(B) as logit or \nprobit curves and p(Y) as their product.  Similarly, if A or B produces \nY, p(Y) = 1 - [(1-p(A)) * (1-p(B))] becomes the functional form, again \nwith p(A) and p(B) estimated as logit/probit curves.  Arbitrarily \nconvoluted combinations -- e.g., (A and B) or (C and D) produces Y; or, \np(Y) = 1 - [1-p(A)*p(B)] * [1-p(C)*p(D)] -- can be estimated, and \ndependence of probabilities can be modeled by including some of the \nsame independent variables in the separate logit or probit equations.  \nThe derivation is in Braumoeller, \"Causal Complexity and the Study of \nPolitics,\" Political Analysis 11(3), 209-233.\n\nVersion 1.03 is a service update which ensures that all documentation, \nin particular the documentation of S4 methods objects, is compatible \nwith R 1.8.  Previous versions will produce warnings upon compilation.\n\n\nBear F. Braumoeller\nAssistant Professor\nDepartment of Government\nHarvard University\nhttp://www.people.fas.harvard.edu/~bfbraum",
+      "body_snippet": "Version 1.03 of the R package boolean has been uploaded to CRAN and is \nnow available.\n\nboolean implements partial-observability logit and probit models for \ntesting Boolean hypotheses.  It permits re",
+      "thread_id": "thread-676cf147211c",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-be7281b57ad5",
+      "message_id": "<16272.4852.615349.178004@arbres1a.fmr.com>",
+      "from_name": "David Brahm",
+      "from_email_hash": "86a6ec3ce56525d2890f653acf45ab31d9cb8da3b88f7fbdcc45cacabb829c54",
+      "date": "2003-10-17T12:04:04-04:00",
+      "subject": "[R-pkgs] Updated package: g.data v1.4",
+      "subject_clean": "Updated package: g.data v1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.4 of package \"g.data\" is available on CRAN.  This upgrade is\nnecessary for it to work under R-1.8.0, and is fully backward compatible.\n\nDescription: Create and maintain delayed-data packages (DDP's).  Data stored in\n  a DDP are available on demand, but do not take up memory until requested.\n  You attach a DDP with g.data.attach(), then read from it and assign to it in\n  a manner similar to S-Plus, except that you must run g.data.save() to\n  actually commit to disk.\n\nThanks very much to <brian at dumbaz.com> for pointing out the incompatibility.\n(Sorry, Brian, a direct reply to you bounced.)  \"g.data\" basically creates mock\npackages (DDP's) to contain the data, and in R-1.8.0 a package needs a\nDESCRIPTION file to be recognized by .find.package().  Note you will need\ntemporary write access to any existing (pre-1.4) DDP's, as g.data.attach() will\ntry to create a DESCRIPTION file for any DDP that doesn't already have one.\n-- \n                              -- David Brahm (brahm at alum.mit.edu)",
+      "body_snippet": "Version 1.4 of package \"g.data\" is available on CRAN.  This upgrade is\nnecessary for it to work under R-1.8.0, and is fully backward compatible.\n\nDescription: Create and maintain delayed-data packages",
+      "thread_id": "thread-be7281b57ad5",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-be7281b57ad5",
+      "message_id": "<16272.4852.615349.178004@arbres1a.fmr.com>",
+      "from_name": "David Brahm",
+      "from_email_hash": "86a6ec3ce56525d2890f653acf45ab31d9cb8da3b88f7fbdcc45cacabb829c54",
+      "date": "2003-10-17T12:04:04-04:00",
+      "subject": "[R-pkgs] Updated package: g.data v1.4",
+      "subject_clean": "Updated package: g.data v1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.4 of package \"g.data\" is available on CRAN.  This upgrade is\nnecessary for it to work under R-1.8.0, and is fully backward compatible.\n\nDescription: Create and maintain delayed-data packages (DDP's).  Data stored in\n  a DDP are available on demand, but do not take up memory until requested.\n  You attach a DDP with g.data.attach(), then read from it and assign to it in\n  a manner similar to S-Plus, except that you must run g.data.save() to\n  actually commit to disk.\n\nThanks very much to <brian at dumbaz.com> for pointing out the incompatibility.\n(Sorry, Brian, a direct reply to you bounced.)  \"g.data\" basically creates mock\npackages (DDP's) to contain the data, and in R-1.8.0 a package needs a\nDESCRIPTION file to be recognized by .find.package().  Note you will need\ntemporary write access to any existing (pre-1.4) DDP's, as g.data.attach() will\ntry to create a DESCRIPTION file for any DDP that doesn't already have one.\n-- \n                              -- David Brahm (brahm at alum.mit.edu)",
+      "body_snippet": "Version 1.4 of package \"g.data\" is available on CRAN.  This upgrade is\nnecessary for it to work under R-1.8.0, and is fully backward compatible.\n\nDescription: Create and maintain delayed-data packages",
+      "thread_id": "thread-be7281b57ad5",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-444d51450454",
+      "message_id": "<85fzhbzh0u.fsf@blindglobe.net>",
+      "from_name": "A.J. Rossini",
+      "from_email_hash": "0c039ab537611416fe37b12e9ca69767bfd2c5030d7e2f2a7420f19217e05d1b",
+      "date": "2003-10-29T16:49:21-08:00",
+      "subject": "[R-pkgs] Release of Bioconductor 1.3",
+      "subject_clean": "Release of Bioconductor 1.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The Bioconductor core group would like to announce the 1.3 release of\nthe Bioconductor software.  There are many new packages as well as\nseveral major upgrades and fixes in older packages, and users are\nencouraged to check them out.  Release 1.3 is intended to be operated\nwith R version 1.8.X, which can be obtained at CRAN\n(http://cran.r-project.org/) \n\n\n-- WHAT FEATURES DOES THIS RELEASE PROVIDE?\n\nAll packages from the 1.2 release are included.  All current bug fixes\nhave been applied, and most have upgraded and provide enhanced\nfunctionality.\n\n-- NEW PACKAGES AND MAJOR UPGRADES FOR RELEASE 1.3 --\n\nThe following is an overview of the most important changes, additions,\nand upgrades:\n\n--- affy\n\n   There have been many improvements to the affy package.  There were\n   big speed and memory improvement of ReadAffy, read.affybatch,\n   justRMA.  A mas5calls method was added to get Affymetrix's P/M/A\n   calls.  Cel and Cdf classes are no longer supported. Function,\n   read.celfile and other Cel related methods and functions\n   removed. Most Cdf related functions have moved to the makecdfenv\n   package.  Function read.probematrix added. It reads CEL files and\n   returns a matrix of PM, MM, or both. This function is more memory\n   efficient than read.affybatch.  Also, affy no longer depends on the\n   affydata package. For this reason some examples have been moved\n   from affy vignettes to the affydata vignette.  The previously\n   deprecated express function has been completely removed.  Lastly,\n   most normalization routines for AffyBatches can now be called with\n   the parameter type which specifies whether the normalization should\n   be applied as a PM-only, MM-only, both PM and MM together or PM and\n   MM separately.\n\n--- affycomp:\n\n   New assessment was added: assessSpikeIn2. Examples of new feature:\nLocal \n   slopes are computes and ROC curves divided by overall expression.\n   Also, all functions that work for hgu95a spike in now also work for\nhgu133a\n   spike in experiment\n\n--- annaffy:\n\n   Functions for handling data from Bioconductor Affymetrix annotation\n   data packages. Produces compact HTML and text reports including\n   experimental data and URL links to many online databases. Allows\n   searching biological metadata using various criteria.\n\n--- Biobase:\n\n   The generic function as.data.frame() now works on objects of class\n   exprSet.  This lets one access the extensive modeling facilities\n   through formula offered by R and packages like 'nlm'.\n\n--- factDesign:\n\n   A package containing functions useful for analyzing data from\n   factorial designed microarray experiments.\n\n--- gpls:\n\n   Classification using partial least squares (PLS), a popular\n   dimension reduction tool in chemometrics, in the context of\n   generalized linear regression based on a previous approach,\n   Iteratively ReWeighted Partial Least Squares (IRWPLS) by Marx\n   (1996).  Both two-group and multi-group classifications are\n   incorporated. Firth's bias reduction procedure is also incorporated\n   to ensure more stable and finite regression coefficients.\n\n--- graph, Rgraphviz, and RBGL:\n\n   Graph/Network handling is greatly improved. There is tighter\n   integration between graph, RBGL and Rgraphviz. Colors and SubGraph\n   layouts are now supported in Rgraphviz. RBGL support includes\n   minimal spanning trees, both strong and weakly connected\n   components, and Dijkstra's shortest path algorithm.  In graph,\n   enhancements in validity checking and representation have been\n   made. New classes have been established that will allow for general\n   representations of nodes and edges. Capabilities include adding or\n   deleting both nodes and edges, combining sets of nodes into a\n   single node. Unions, intersections and complements of graphs\n   defined on a common set of nodes. Joining of two graphs into a\n   single graph. Functions to compute indegree and outdegree. \n\n--- limma:\n\n   Substantial updates including support for more image analysis\n   programs, new background correction methods, single channel\n   normalization, support for import of exprSet and marrayNorm data\n   objects, improved support for design and contrast matrices, new\n   fitted model object class, within-gene multiple testing, Venn\n   diagrams and generally a move to a simpler command style at the\n   user level.\n\n--- matchprobes:\n\n   A new package providing tools for working with probe sequence\n   information: calculate ATCG content, reverse, complement, mismatch\n   sequences; fast exact sequence matching; combine AffyBatches of\n   different chip types; create probe data packages.  \n\n--- Measurement.cor:\n\n   A package to fit a two-level measurement error model for estimation\n   of correlation coefficient between two random variables assuming\n   bivariate normality for both the true value and measurement\n   error. This model allows dependence between measurement errors\n   hence is more flexible.\n\n--- ontoTools:\n\n   Software for working with ontologies (structured vocabularies) and\n   their associations with general data resources. \n\n--- Rdbi, RdbiPgSQL:\n\n   Generic framework for database access in R. Adapted from Rdbi\n   authored by Timothy H. Keitt, with methods for accessing data\n   stored in PostgreSQL tables (Adapted from Rdbi.PgSQL, authored\n   by Timothy H. Keitt)\n\n--- SNPtools:\n\n   Currently an interface to the SNPper data resource maintained at\n   Childrens' Boston, which curates SNP-related data from a variety of\n   sources.\n\n--- splicegear:\n\n   A new package that works with oligonucleotide microarrays designed\n   to monitor or confirm the existence of splice variants.  It can\n   extract simple splice-variant information in XML format.  This is\n   demonstrated by the connectivity to an existing database of\n   putative splice variants.  The package can also integrate easily\n   with the results obtained from the package 'matchprobes'. \n\n--- vsn:\n\n   Two new functions were added 'sagmbSimulateData' and 'sagmbAssess'\n   to quantitatively verify finite sample properties and outlier\n   robustness of the parameter estimation in vsn(). \n\n-- TOOLS:\n\nThe released packages include tools which facilitate:\n\n* annotation (AnnBuilder, annotate).\n\n* data management and organization through the use of the S4 class\n  structure (Biobase, marrayClasses, limma).   \n\n* identification of differentially expressed genes and clustering \n  (edd, genefilter, geneplotter, multtest, ROC, limma)\n\n* analysis of Affymetrix expression array data (affy, affycomp,\n  gcrma)\n\n* diagnostic plots and normalization for cDNA array data (marrayInput,\n  marrayNorm, marrayPlots)\n\n* storage and retrieval of large datasets (rhdf5, externalVector,\n   Rdbi, RdbiPgSQL).\n\n* facilitate user interaction (tkWidgets, widgetTools)\n\nThere are currently a total of 48 packages, not including precomputed\nannotation data packages for Affymetrix GeneChips(tm), KEGG, GO,\nand LocusLink mappings.\n\n\n-- HELP AND RESOURCES:\n\nThe packages and more details may be found on the Bioconductor WWW\nsite: \n\n      http://www.bioconductor.org/\n\nInformation on subscribing to the mailing list and viewing its\narchives\ncan be found at:\n\n      http://www.stat.math.ethz.ch/mailman/listinfo/bioconductor\n\nPlease use that list to discuss Bioconductor specific issues, bugs,\nand problems.  Note that every package has a vignette (a literate\nprogram which provides an annotated example of the package's use) as\nwell as possibly some \"HOWTO\"s.  These document the tool's usage, and\nare provided in the \"doc\" subdirectory of each package library.\n\n\n-- WHO:\n\nFor the Bioconductor development team:\n\nDouglas Bates, University of Wisconsin, USA.\nBen Bolstad, Division of Biostatistics, UC Berkeley, USA.\nVince Carey, Harvard Medical School, USA.\nMarcel Dettling, Federal Inst. Technology, Switzerland.\nSandrine Dudoit, Division of Biostatistics, UC Berkeley, USA.\nByron Ellis, Harvard Department of Statistics, USA.\nLaurent Gautier, Technial University of Denmark, Denmark.\nRobert Gentleman, Harvard Medical School, USA.\nJeff Gentry, Dana-Farber Cancer Institute, USA.\nKurt Hornik, Technische Universitat Wien, Austria.\nTorsten Hothorn, Institut fuer Medizininformatik,\n        Biometrie und Epidemiologie, Germany.\nWolfgang Huber, DKFZ Heidelberg, Molecular Genome Analysis, Germany.\nStefano Iacus, Italy\nRafael Irizarry, Department of Biostatistics (JHU), USA.\nFriedrich Leisch, Technische Universitat Wien, Austria.\nMartin Maechler, Federal Inst. Technology, Switzerland.\nColin Smith, Scripps Research Institute, USA.\nGordon Smyth, Walter and Eliza Hall Institute, Australia.\nAnthony Rossini, University of Washington\n        and the Fred Hutchinson Cancer Research Center, USA.\nGunther Sawitzki, Institute fur Angewandte Mathematik, Germany.\nLuke Tierney, University of Iowa, USA.\nJean Yee Hwa Yang, University of California, San Francisco, USA.\nJianhua (John) Zhang, Dana-Farber Cancer Institute, USA.\n\n\n-- \nrossini at u.washington.edu            http://www.analytics.washington.edu/ \nBiomedical and Health Informatics   University of Washington\nBiostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center\nUW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable\nFHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email\n\nCONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}",
+      "body_snippet": "The Bioconductor core group would like to announce the 1.3 release of\nthe Bioconductor software.  There are many new packages as well as\nseveral major upgrades and fixes in older packages, and users a",
+      "thread_id": "thread-444d51450454",
+      "thread_depth": 0,
+      "month": "2003-10"
+    },
+    {
+      "id": "msg-444d51450454",
+      "message_id": "<85fzhbzh0u.fsf@blindglobe.net>",
+      "from_name": "A.J. Rossini",
+      "from_email_hash": "0c039ab537611416fe37b12e9ca69767bfd2c5030d7e2f2a7420f19217e05d1b",
+      "date": "2003-10-29T16:49:21-08:00",
+      "subject": "[R-pkgs] Release of Bioconductor 1.3",
+      "subject_clean": "Release of Bioconductor 1.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The Bioconductor core group would like to announce the 1.3 release of\nthe Bioconductor software.  There are many new packages as well as\nseveral major upgrades and fixes in older packages, and users are\nencouraged to check them out.  Release 1.3 is intended to be operated\nwith R version 1.8.X, which can be obtained at CRAN\n(http://cran.r-project.org/) \n\n\n-- WHAT FEATURES DOES THIS RELEASE PROVIDE?\n\nAll packages from the 1.2 release are included.  All current bug fixes\nhave been applied, and most have upgraded and provide enhanced\nfunctionality.\n\n-- NEW PACKAGES AND MAJOR UPGRADES FOR RELEASE 1.3 --\n\nThe following is an overview of the most important changes, additions,\nand upgrades:\n\n--- affy\n\n   There have been many improvements to the affy package.  There were\n   big speed and memory improvement of ReadAffy, read.affybatch,\n   justRMA.  A mas5calls method was added to get Affymetrix's P/M/A\n   calls.  Cel and Cdf classes are no longer supported. Function,\n   read.celfile and other Cel related methods and functions\n   removed. Most Cdf related functions have moved to the makecdfenv\n   package.  Function read.probematrix added. It reads CEL files and\n   returns a matrix of PM, MM, or both. This function is more memory\n   efficient than read.affybatch.  Also, affy no longer depends on the\n   affydata package. For this reason some examples have been moved\n   from affy vignettes to the affydata vignette.  The previously\n   deprecated express function has been completely removed.  Lastly,\n   most normalization routines for AffyBatches can now be called with\n   the parameter type which specifies whether the normalization should\n   be applied as a PM-only, MM-only, both PM and MM together or PM and\n   MM separately.\n\n--- affycomp:\n\n   New assessment was added: assessSpikeIn2. Examples of new feature:\nLocal \n   slopes are computes and ROC curves divided by overall expression.\n   Also, all functions that work for hgu95a spike in now also work for\nhgu133a\n   spike in experiment\n\n--- annaffy:\n\n   Functions for handling data from Bioconductor Affymetrix annotation\n   data packages. Produces compact HTML and text reports including\n   experimental data and URL links to many online databases. Allows\n   searching biological metadata using various criteria.\n\n--- Biobase:\n\n   The generic function as.data.frame() now works on objects of class\n   exprSet.  This lets one access the extensive modeling facilities\n   through formula offered by R and packages like 'nlm'.\n\n--- factDesign:\n\n   A package containing functions useful for analyzing data from\n   factorial designed microarray experiments.\n\n--- gpls:\n\n   Classification using partial least squares (PLS), a popular\n   dimension reduction tool in chemometrics, in the context of\n   generalized linear regression based on a previous approach,\n   Iteratively ReWeighted Partial Least Squares (IRWPLS) by Marx\n   (1996).  Both two-group and multi-group classifications are\n   incorporated. Firth's bias reduction procedure is also incorporated\n   to ensure more stable and finite regression coefficients.\n\n--- graph, Rgraphviz, and RBGL:\n\n   Graph/Network handling is greatly improved. There is tighter\n   integration between graph, RBGL and Rgraphviz. Colors and SubGraph\n   layouts are now supported in Rgraphviz. RBGL support includes\n   minimal spanning trees, both strong and weakly connected\n   components, and Dijkstra's shortest path algorithm.  In graph,\n   enhancements in validity checking and representation have been\n   made. New classes have been established that will allow for general\n   representations of nodes and edges. Capabilities include adding or\n   deleting both nodes and edges, combining sets of nodes into a\n   single node. Unions, intersections and complements of graphs\n   defined on a common set of nodes. Joining of two graphs into a\n   single graph. Functions to compute indegree and outdegree. \n\n--- limma:\n\n   Substantial updates including support for more image analysis\n   programs, new background correction methods, single channel\n   normalization, support for import of exprSet and marrayNorm data\n   objects, improved support for design and contrast matrices, new\n   fitted model object class, within-gene multiple testing, Venn\n   diagrams and generally a move to a simpler command style at the\n   user level.\n\n--- matchprobes:\n\n   A new package providing tools for working with probe sequence\n   information: calculate ATCG content, reverse, complement, mismatch\n   sequences; fast exact sequence matching; combine AffyBatches of\n   different chip types; create probe data packages.  \n\n--- Measurement.cor:\n\n   A package to fit a two-level measurement error model for estimation\n   of correlation coefficient between two random variables assuming\n   bivariate normality for both the true value and measurement\n   error. This model allows dependence between measurement errors\n   hence is more flexible.\n\n--- ontoTools:\n\n   Software for working with ontologies (structured vocabularies) and\n   their associations with general data resources. \n\n--- Rdbi, RdbiPgSQL:\n\n   Generic framework for database access in R. Adapted from Rdbi\n   authored by Timothy H. Keitt, with methods for accessing data\n   stored in PostgreSQL tables (Adapted from Rdbi.PgSQL, authored\n   by Timothy H. Keitt)\n\n--- SNPtools:\n\n   Currently an interface to the SNPper data resource maintained at\n   Childrens' Boston, which curates SNP-related data from a variety of\n   sources.\n\n--- splicegear:\n\n   A new package that works with oligonucleotide microarrays designed\n   to monitor or confirm the existence of splice variants.  It can\n   extract simple splice-variant information in XML format.  This is\n   demonstrated by the connectivity to an existing database of\n   putative splice variants.  The package can also integrate easily\n   with the results obtained from the package 'matchprobes'. \n\n--- vsn:\n\n   Two new functions were added 'sagmbSimulateData' and 'sagmbAssess'\n   to quantitatively verify finite sample properties and outlier\n   robustness of the parameter estimation in vsn(). \n\n-- TOOLS:\n\nThe released packages include tools which facilitate:\n\n* annotation (AnnBuilder, annotate).\n\n* data management and organization through the use of the S4 class\n  structure (Biobase, marrayClasses, limma).   \n\n* identification of differentially expressed genes and clustering \n  (edd, genefilter, geneplotter, multtest, ROC, limma)\n\n* analysis of Affymetrix expression array data (affy, affycomp,\n  gcrma)\n\n* diagnostic plots and normalization for cDNA array data (marrayInput,\n  marrayNorm, marrayPlots)\n\n* storage and retrieval of large datasets (rhdf5, externalVector,\n   Rdbi, RdbiPgSQL).\n\n* facilitate user interaction (tkWidgets, widgetTools)\n\nThere are currently a total of 48 packages, not including precomputed\nannotation data packages for Affymetrix GeneChips(tm), KEGG, GO,\nand LocusLink mappings.\n\n\n-- HELP AND RESOURCES:\n\nThe packages and more details may be found on the Bioconductor WWW\nsite: \n\n      http://www.bioconductor.org/\n\nInformation on subscribing to the mailing list and viewing its\narchives\ncan be found at:\n\n      http://www.stat.math.ethz.ch/mailman/listinfo/bioconductor\n\nPlease use that list to discuss Bioconductor specific issues, bugs,\nand problems.  Note that every package has a vignette (a literate\nprogram which provides an annotated example of the package's use) as\nwell as possibly some \"HOWTO\"s.  These document the tool's usage, and\nare provided in the \"doc\" subdirectory of each package library.\n\n\n-- WHO:\n\nFor the Bioconductor development team:\n\nDouglas Bates, University of Wisconsin, USA.\nBen Bolstad, Division of Biostatistics, UC Berkeley, USA.\nVince Carey, Harvard Medical School, USA.\nMarcel Dettling, Federal Inst. Technology, Switzerland.\nSandrine Dudoit, Division of Biostatistics, UC Berkeley, USA.\nByron Ellis, Harvard Department of Statistics, USA.\nLaurent Gautier, Technial University of Denmark, Denmark.\nRobert Gentleman, Harvard Medical School, USA.\nJeff Gentry, Dana-Farber Cancer Institute, USA.\nKurt Hornik, Technische Universitat Wien, Austria.\nTorsten Hothorn, Institut fuer Medizininformatik,\n        Biometrie und Epidemiologie, Germany.\nWolfgang Huber, DKFZ Heidelberg, Molecular Genome Analysis, Germany.\nStefano Iacus, Italy\nRafael Irizarry, Department of Biostatistics (JHU), USA.\nFriedrich Leisch, Technische Universitat Wien, Austria.\nMartin Maechler, Federal Inst. Technology, Switzerland.\nColin Smith, Scripps Research Institute, USA.\nGordon Smyth, Walter and Eliza Hall Institute, Australia.\nAnthony Rossini, University of Washington\n        and the Fred Hutchinson Cancer Research Center, USA.\nGunther Sawitzki, Institute fur Angewandte Mathematik, Germany.\nLuke Tierney, University of Iowa, USA.\nJean Yee Hwa Yang, University of California, San Francisco, USA.\nJianhua (John) Zhang, Dana-Farber Cancer Institute, USA.\n\n\n-- \nrossini at u.washington.edu            http://www.analytics.washington.edu/ \nBiomedical and Health Informatics   University of Washington\nBiostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center\nUW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable\nFHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email\n\nCONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}",
+      "body_snippet": "The Bioconductor core group would like to announce the 1.3 release of\nthe Bioconductor software.  There are many new packages as well as\nseveral major upgrades and fixes in older packages, and users a",
+      "thread_id": "thread-444d51450454",
+      "thread_depth": 0,
+      "month": "2003-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1dca0a8c1ea8",
+      "subject": "R maps now for Windows",
+      "message_count": 1,
+      "participants": [
+        "Ray Brownrigg"
+      ],
+      "started": "2003-10-05T23:03:56+13:00",
+      "last_reply": "2003-10-05T23:03:56+13:00",
+      "root_message_id": "msg-1dca0a8c1ea8"
+    },
+    {
+      "id": "thread-1dca0a8c1ea8",
+      "subject": "R maps now for Windows",
+      "message_count": 1,
+      "participants": [
+        "Ray Brownrigg"
+      ],
+      "started": "2003-10-05T23:03:56+13:00",
+      "last_reply": "2003-10-05T23:03:56+13:00",
+      "root_message_id": "msg-1dca0a8c1ea8"
+    },
+    {
+      "id": "thread-f7894c3fc2a5",
+      "subject": "new package: segmented",
+      "message_count": 1,
+      "participants": [
+        "Vito Muggeo"
+      ],
+      "started": "2003-10-09T09:52:49+02:00",
+      "last_reply": "2003-10-09T09:52:49+02:00",
+      "root_message_id": "msg-f7894c3fc2a5"
+    },
+    {
+      "id": "thread-f7894c3fc2a5",
+      "subject": "new package: segmented",
+      "message_count": 1,
+      "participants": [
+        "Vito Muggeo"
+      ],
+      "started": "2003-10-09T09:52:49+02:00",
+      "last_reply": "2003-10-09T09:52:49+02:00",
+      "root_message_id": "msg-f7894c3fc2a5"
+    },
+    {
+      "id": "thread-676cf147211c",
+      "subject": "Updated package: Boolean v1.03",
+      "message_count": 1,
+      "participants": [
+        "Bear F. Braumoeller"
+      ],
+      "started": "2003-10-14T13:42:21-04:00",
+      "last_reply": "2003-10-14T13:42:21-04:00",
+      "root_message_id": "msg-676cf147211c"
+    },
+    {
+      "id": "thread-676cf147211c",
+      "subject": "Updated package: Boolean v1.03",
+      "message_count": 1,
+      "participants": [
+        "Bear F. Braumoeller"
+      ],
+      "started": "2003-10-14T13:42:21-04:00",
+      "last_reply": "2003-10-14T13:42:21-04:00",
+      "root_message_id": "msg-676cf147211c"
+    },
+    {
+      "id": "thread-be7281b57ad5",
+      "subject": "Updated package: g.data v1.4",
+      "message_count": 1,
+      "participants": [
+        "David Brahm"
+      ],
+      "started": "2003-10-17T12:04:04-04:00",
+      "last_reply": "2003-10-17T12:04:04-04:00",
+      "root_message_id": "msg-be7281b57ad5"
+    },
+    {
+      "id": "thread-be7281b57ad5",
+      "subject": "Updated package: g.data v1.4",
+      "message_count": 1,
+      "participants": [
+        "David Brahm"
+      ],
+      "started": "2003-10-17T12:04:04-04:00",
+      "last_reply": "2003-10-17T12:04:04-04:00",
+      "root_message_id": "msg-be7281b57ad5"
+    },
+    {
+      "id": "thread-444d51450454",
+      "subject": "Release of Bioconductor 1.3",
+      "message_count": 1,
+      "participants": [
+        "A.J. Rossini"
+      ],
+      "started": "2003-10-29T16:49:21-08:00",
+      "last_reply": "2003-10-29T16:49:21-08:00",
+      "root_message_id": "msg-444d51450454"
+    },
+    {
+      "id": "thread-444d51450454",
+      "subject": "Release of Bioconductor 1.3",
+      "message_count": 1,
+      "participants": [
+        "A.J. Rossini"
+      ],
+      "started": "2003-10-29T16:49:21-08:00",
+      "last_reply": "2003-10-29T16:49:21-08:00",
+      "root_message_id": "msg-444d51450454"
+    }
+  ]
+}

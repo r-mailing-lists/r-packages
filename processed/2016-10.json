@@ -1,0 +1,227 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-10",
+  "messages": [
+    {
+      "id": "msg-01dd41a50702",
+      "message_id": "<CAA-FpKWE=Nv0fi+3BAWbMbSeznTZ8eBP4zYydq7RmCmkWvBxVw@mail.gmail.com>",
+      "from_name": "Bob Rudis",
+      "from_email_hash": "06069ff8bf65af0cc1ddc4f9da6c2a365b90baa3c37e0a4c63565522e5804ed8",
+      "date": "2016-10-01T13:25:44-04:00",
+      "subject": "[R-pkgs] A few new packages on CRAN",
+      "subject_clean": "A few new packages on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "- ndjdon : Wicked Fast ndjson Reader\n\n  Reads in ndjson significantly faster than jsonlite::stream_in(), flattens\neach\n  JSON record and returns a data.table.\n\n  https://cran.r-project.org/web/packages/ndjson/index.html\n\n\n- htmltidy : Clean Up or Pretty Print Gnarly HTML and XHTML\n\n  C-backed package that includes the HTML Tidy library. Useful for cleaning\nup\n  HTML beyond what you get with the HTML parsing in the libxml2-based\npackages.\n\n  https://cran.r-project.org/web/packages/htmltidy/index.html\n\n  (v0.3.0 on github is a tad more robust and will be in CRAN later in\nOctober)\n\n\n- wand : Retrieve 'Magic' Attributes from Files and Directories\n\n  Uses libmagic (file.exe on Windows for the time being) to discern file\ntypes.\n\n  https://cran.r-project.org/web/packages/wand/index.html\n\n  (100% libmagic version coming later in October)\n\n\n- gdns : Tools to work with the Google DNS over HTTPS API\n\n  Provides full access to the Google DNS HTTPS API and also toold to work\nwith\n  SPF records. Great for validating your local provider DNS lookups and for\n  generating features for cybersecurity machine learning.\n\n  https://cran.r-project.org/web/packages/gdns/index.html\n\n\n- qrencoder : Quick Response Code (QR Code) / Matrix Barcode Creator\n\n  C-backed package to generate QR codes (it's being used in some bitcoin\nShiny\n  projects).\n\n  https://cran.r-project.org/web/packages/qrencoder/index.html\n\n\n- darksky : Tools to Work with the Dark Sky API\n  Data retrieval and some default plotting for this weather API.\n\n  https://cran.r-project.org/web/packages/darksky/index.html\n\nIssues/enhancement requests are most welcome at each pkg's GH issues page.\n\n-Bob\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "- ndjdon : Wicked Fast ndjson Reader\n\n  Reads in ndjson significantly faster than jsonlite::stream_in(), flattens\neach\n  JSON record and returns a data.table.\n\n  https://cran.r-project.org/web/package",
+      "thread_id": "thread-01dd41a50702",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-21edad4a9bf8",
+      "message_id": "<trinity-ac927d4e-f330-4cd3-b5e2-c9a63689042b-1475642802266@3capp-gmx-bs26>",
+      "from_name": "\"Stefan Schrödl\"",
+      "from_email_hash": "69e3499f7c31b39d85b4094a2bcf8c8e47a096372d47a621ff3c3d4ca31fb5aa",
+      "date": "2016-10-05T06:46:42+02:00",
+      "subject": "[R-pkgs] New Package: Plotluck",
+      "subject_clean": "New Package: Plotluck",
+      "in_reply_to": "<mailman.0.1475642105.27394.r-packages@r-project.org>",
+      "references": [
+        "<mailman.0.1475642105.27394.r-packages@r-project.org>"
+      ],
+      "body_plain": "Dear useRs,\n\nI am happy to announce that my package \"plotluck\" is now on CRAN:\n[1]https://cran.r-project.org/web/packages/plotluck/\n\nThe aim of the package is to let the user focus on what to plot, rather than on\n the \"how\" during exploratory data analysis. Based on  the characteristics of a\n data frame and a formula, it tries to automatically choose the most suitable t\nype of plot (supported options are scatter, violin, box, bar, density, hexagon\nbin, spine plot, and heat map). It also automates handling of observation weigh\nts, logarithmic axis scaling, reordering of factor levels, and overlaying smoot\nhing curves and median lines. Plots are drawn using 'ggplot2'. Please see the v\nignette for some examples.\n\nI welcome all feedback, suggestions, bug reports and feature requests.\nThank you!\n\n\n   - Stefan\n\nReferences\n\n   1. https://cran.r-project.org/web/packages/plotluck/",
+      "body_snippet": "Dear useRs,\n\nI am happy to announce that my package \"plotluck\" is now on CRAN:\n[1]https://cran.r-project.org/web/packages/plotluck/\n\nThe aim of the package is to let the user focus on what to plot, ra",
+      "thread_id": "thread-21edad4a9bf8",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-df2f43b5ae15",
+      "message_id": "<AM5PR0801MB1732DF4DA9D81DE41665BAFFC0DB0@AM5PR0801MB1732.eurprd08.prod.outlook.com>",
+      "from_name": "Johan Larsson",
+      "from_email_hash": "b8c1919587dfa44f9fee1637f9b66c88ac9d8a6b0c8f6282e82e5a7cd596394e",
+      "date": "2016-10-10T06:33:07Z",
+      "subject": "[R-pkgs] Announcing qualpalr 0.2.1",
+      "subject_clean": "Announcing qualpalr 0.2.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to announce an updated version of qualpalr:\n\nhttps://cran.r-project.org/package=qualpalr\n\nqualpalr uses color difference equations to generate distinct qualitative color palettes for use in R graphics. Version 0.2.1 has been redesigned to use a better, more efficient optimization method and moreover introduces methods to adapt palettes to color blindness.\n\nPlease see the vignette (https://cran.r-project.org/web/packages/qualpalr/vignettes/introduction.html) if you'd like to learn more or visit the repository on GitHub (https://github.com/jolars/qualpalr) if you want to contribute.\nAll the best,\nJohan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI would like to announce an updated version of qualpalr:\n\nhttps://cran.r-project.org/package=qualpalr\n\nqualpalr uses color difference equations to generate distinct qualitative color pa",
+      "thread_id": "thread-df2f43b5ae15",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-49aedccc242b",
+      "message_id": "<D28EF69F27EB064FA9FD0F5F09ADFCE517203923E9@srv-exchange.lincoln-outils.fr>",
+      "from_name": "Francois vieille",
+      "from_email_hash": "901a1dee167bcebcadefd1058b184d73c39e49b7b6d9a58dfab0b184411edd04",
+      "date": "2016-10-10T11:30:44+02:00",
+      "subject": "[R-pkgs] aVirtualTwins available on CRAN",
+      "subject_clean": "aVirtualTwins available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "[markdown format]\n\nI'm glad to introduce you the new package aVirtualTwins. This package is an adaptation of VirtualTwins method of subgroup identification from [Foster, J. C., Taylor, J. M.G. and Ruberg, S. J. (2011)](http://onlinelibrary.wiley.com/doi/10.1002/sim.4322/abstract).\n\n### Explanation\n\nVirtual Twins has been created to find subgroup of patients in a random clinical trial with enhanced treatment effect, if it exists. Theorically, this method can be used for binary and continous outcome. This package only deals with binary outcome in a two arms clinical trial.\n\nVirutal Twins is also adapted for A/B testing of course.\n\nVirtual Twins is based on random forest and regression/classification trees.\n\n### Quick preview\n\nHere's a example of aVirtualTwins use with a well known dataset (_sepsis_) in subgroup decovery:\n\n_Sepsis_ contains simulated data on 470 subjects with a binary outcome survival, that stores survival status for patient after 28 days of treatment, value of 1 for subjects who died after 28 days and 0 otherwise. There are 11 covariates, listed below, all of which are numerical variables.\n\n\n```r\nlibrary(aVirtualTwins)\n\n# Load data\ndata(sepsis)\n# Format data\nvt.obj <- vt.data(dataset         = sepsis,\n                  outcome.field   = \"survival\",\n                  treatment.field = \"THERAPY\",\n                  interactions    = TRUE)\n## \"1\" will be the favorable outcome\n# view of data\nhead(sepsis)\n##   survival THERAPY PRAPACHE    AGE BLGCS ORGANNUM   BLIL6  BLLPLAT\n## 1        0       1       19 42.921    15        1  301.80 191.0000\n## 2        1       1       48 68.818    11        2  118.90 264.1565\n## 3        0       1       20 68.818    15        2   92.80 123.0000\n## 4        0       1       19 33.174    14        2 1232.00 244.0000\n## 5        0       1       48 46.532     3        4 2568.00  45.0000\n## 6        0       0       21 56.098    14        1  162.65 137.0000\n##    BLLBILI BLLCREAT TIMFIRST BLADL blSOFA\n## 1 2.913416 1.000000    17.17     0   5.00\n## 2 0.400000 1.100000    17.17     5  10.00\n## 3 5.116471 1.000000    10.00     1   7.50\n## 4 3.142092 1.200000    17.17     0   6.25\n## 5 4.052668 3.000000    10.00     0  12.00\n## 6 0.500000 4.662556    10.00     0   8.75\n# Print Incidences of sepsis data\nvt.obj$getIncidences()\n## $table\n##            trt\n## resp        0    1     sum  \n##   0         101  188   289  \n##   1         52   129   181  \n##   sum       153  317   470  \n##   Incidence 0.34 0.407 0.385\n## \n## $rr\n## [1] 1.197059\n# $table\n#            trt\n# resp        0    1     sum  \n#   0         101  188   289  \n#   1         52   129   181  \n#   sum       153  317   470  \n#   Incidence 0.34 0.407 0.385\n#\n# $rr\n# [1] 1.197059\n#\n\n# First step : create random forest model\nvt.for <- vt.forest(forest.type  = \"one\",\n                    vt.data      = vt.obj,\n                    interactions = TRUE,\n                    ntree        = 500)\n# Second step : find rules in data \nvt.trees <- vt.tree(tree.type = \"class\",\n                    vt.difft  = vt.for, \n                    threshold = quantile(vt.for$difft, seq(.5,.8,.1)),\n                    maxdepth  = 2)\n# Print results\nvt.sbgrps <- vt.subgroups(vt.trees)\nknitr::kable(vt.sbgrps)\n```\n\n        Subgroup                      Subgroup size   Treatement event rate   Control event rate   Treatment sample size   Control sample size    RR (resub)   RR (snd)\n------  ----------------------------  --------------  ----------------------  -------------------  ----------------------  --------------------  -----------  ---------\ntree1   PRAPACHE>=26.5                157             0.752                   0.327                105                     52                          2.300      1.774\ntree3   PRAPACHE>=26.5 & AGE>=51.74   120             0.897                   0.31                 78                      42                          2.894      1.924\n\n\naVirtualTwins can be found on [CRAN](https://cran.r-project.org/package=aVirtualTwins) and [github](https://github.com/prise6/aVirtualTwins). Feel free to contribute.\n\nFrancois.",
+      "body_snippet": "[markdown format]\n\nI'm glad to introduce you the new package aVirtualTwins. This package is an adaptation of VirtualTwins method of subgroup identification from [Foster, J. C., Taylor, J. M.G. and Rub",
+      "thread_id": "thread-49aedccc242b",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-31c6a3676cb4",
+      "message_id": "<004e01d22301$4a378e20$dea6aa60$@benjaminschlegel.ch>",
+      "from_name": "kontakt at benjaminschlegel.ch",
+      "from_email_hash": "94b966cc1bd84094983fe19b8ca7aa5d0238b5ca6ba5d69c2942933eb86b6a1c",
+      "date": "2016-10-10T16:19:19+02:00",
+      "subject": "[R-pkgs] new package glm.predict",
+      "subject_clean": "new package glm.predict",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\n \n\nI'm pleased to announce that my first package has been accepted in CRAN.\n\n \n\nhttps://cran.r-project.org/web/packages/glm.predict/\n\n \n\nWith glm.predict it is possible to calculate discrete changes with\nconfidence intervals for glm(), glm_nb(), polr() and multinom() models.\n\nIt is possible to calculate many discrete changes with just one line of\ncode. The output is a data.frame.\n\n \n\nThe functions calculate the confidence intervals with simulation, so the\nresults are only true asymptotically.\n\n \n\nComments and suggestions are welcome.\n\n \n\nBest\n\nBenjamin\n\n------------------------------------------------------\n\nBenjamin Schlegel\n\nUniversity of Zurich\n\nInstitut of Political Science\nAffolternstrasse 56\n8050 Zurich\n\nkontakt at benjaminschlegel.ch\n\n+41 44 634 62 08\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n \n\nI'm pleased to announce that my first package has been accepted in CRAN.\n\n \n\nhttps://cran.r-project.org/web/packages/glm.predict/\n\n \n\nWith glm.predict it is possible to calculate dis",
+      "thread_id": "thread-31c6a3676cb4",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-b51052e26d00",
+      "message_id": "<AM5PR0801MB1732ADA1AEAB51A947BC6CC3C0D10@AM5PR0801MB1732.eurprd08.prod.outlook.com>",
+      "from_name": "Johan Larsson",
+      "from_email_hash": "b8c1919587dfa44f9fee1637f9b66c88ac9d8a6b0c8f6282e82e5a7cd596394e",
+      "date": "2016-10-16T09:49:05Z",
+      "subject": "[R-pkgs] New package: eulerr 0.1.0",
+      "subject_clean": "New package: eulerr 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\n\n\nI would like to announce the first version of eulerr (https://cran.r-project.org/package=eulerr). eulerr generates area-proportional euler diagrams that display set relationships (intersections, unions, and disjoints) with circles. Euler diagrams (https://en.wikipedia.org/wiki/Euler_diagram) are Venn diagrams without the requirement that all set interactions be present (whether they are empty or not). That is, depending on input, eulerr will sometimes produce Venn diagrams and sometimes not.\n\n\n\nPlease see the vignette (https://cran.r-project.org/web/packages/eulerr/vignettes/introduction.html) for a brief introduction or visit the repository on GitHub (https://github.com/jolars/eulerr) to contribute.\n\n\n\nAll the best,\n\nJohan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n\n\nI would like to announce the first version of eulerr (https://cran.r-project.org/package=eulerr). eulerr generates area-proportional euler diagrams that display set relationships (int",
+      "thread_id": "thread-b51052e26d00",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-2e0679b9ced2",
+      "message_id": "<87a8dtd1t7.fsf@enricoschumann.net>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "6e2b07dfece9903edd38ae5f89516e6019180d40f61f8bc93b0510f5f6c6ba17",
+      "date": "2016-10-24T20:44:36+02:00",
+      "subject": "[R-pkgs] NMOF 0.40-0 (Numerical Methods and Optimization in Finance)",
+      "subject_clean": "NMOF 0.40-0 (Numerical Methods and Optimization in Finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 0.40-0 of package NMOF is on CRAN now, 5 years\n(exactly) after its first release on CRAN.\n\n'NMOF' stands for 'Numerical Methods and Optimization\nin Finance'. The package accompanies the book with the\nsame name, written by Manfred Gilli, Dietmar Maringer\nand Enrico Schumann, published by Elsevier/Academic\nPress in 2011.\n\nSince my last announcement on this list [1], many\nthings have been added to the package:\n\n- all the R code examples from the book (?showExample)\n\n- many new functions, e.g. for pricing financial\n  instruments (?vanillaOptionEuropean, ?vanillaBond,\n  ?callMerton, ?xtContractValue, ...), and utilities\n  for Monte-Carlo simulation, for computing implied\n  vol, yields, etc.\n\nMany of these new functions are described, with\nexamples, in the Manual [2].\n\nIf you want to stay up-to-date: the latest version is\nalways available from my website [3]; there is a public\nGit repository on GitHub [4].\n\nIn case of comments/corrections/remarks/suggestions --\nwhich are very welcome -- please contact the maintainer\n(me) directly.\n\n\nKind regards\n    Enrico\n\n\n[1] https://stat.ethz.ch/pipermail/r-packages/2011/001257.html\n[2] http://enricoschumann.net/NMOF.htm#NMOFmanual\n[3] http://enricoschumann.net/R/packages/NMOF/\n[4] https://github.com/enricoschumann/NMOF\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttp://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 0.40-0 of package NMOF is on CRAN now, 5 years\n(exactly) after its first release on CRAN.\n\n'NMOF' stands for 'Numerical Methods and Optimization\nin Finance'. The package accompanies",
+      "thread_id": "thread-2e0679b9ced2",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-cd6649d41a3b",
+      "message_id": "<a262f7c2-63e8-7e84-c611-9ce55041a377@mx.uni-saarland.de>",
+      "from_name": "Andreas Recktenwald",
+      "from_email_hash": "eed10f97572ac0c70386ff57a7bd3ea13977cfefbbc2fb1e05a1b1751ca4d1a0",
+      "date": "2016-10-25T13:58:18+02:00",
+      "subject": "[R-pkgs] New Package: pinbasic - Fast and Stable Estimation of the Probability of Informed Trading (PIN)",
+      "subject_clean": "New Package: pinbasic - Fast and Stable Estimation of the Probability of Informed Trading (PIN)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-Users,\n\na new package, \"pinbasic\", is now available on CRAN. According to the \nDESCRIPTION:\n\n\nUtilities for fast and stable estimation of the probability of informed \ntrading (PIN) in the model introduced by Easley et al. (2002) \n<DOI:10.1111/1540-6261.00493> are implemented. Since the basic model \ndeveloped  by Easley et al. (1996) \n<DOI:10.1111/j.1540-6261.1996.tb04074.x> is nested in the former due to \nequating the intensity of uninformed buys and sells, functionalities  \ncan also be applied to this simpler model structure, if needed.\n\n\nA vignette will be added to the package in near future. However, the \nexisting manual pages should be a good starting point.\n\nDevelopment version of the package is available at:\n\nhttps://github.com/anre005/pinbasic\n\n-- \nDiplom-Kaufmann Andreas Recktenwald\nStatistik & ?konometrie\nRechts- und Wirtschaftswissenschaftliche Fakult?t\nUniversit?t des Saarlandes\nCampus C3 1, Raum 2.06\n66123 Saarbr?cken\nDeutschland",
+      "body_snippet": "Dear R-Users,\n\na new package, \"pinbasic\", is now available on CRAN. According to the \nDESCRIPTION:\n\n\nUtilities for fast and stable estimation of the probability of informed \ntrading (PIN) in the model",
+      "thread_id": "thread-cd6649d41a3b",
+      "thread_depth": 0,
+      "month": "2016-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-01dd41a50702",
+      "subject": "A few new packages on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bob Rudis"
+      ],
+      "started": "2016-10-01T13:25:44-04:00",
+      "last_reply": "2016-10-01T13:25:44-04:00",
+      "root_message_id": "msg-01dd41a50702"
+    },
+    {
+      "id": "thread-21edad4a9bf8",
+      "subject": "New Package: Plotluck",
+      "message_count": 1,
+      "participants": [
+        "\"Stefan Schrödl\""
+      ],
+      "started": "2016-10-05T06:46:42+02:00",
+      "last_reply": "2016-10-05T06:46:42+02:00",
+      "root_message_id": "msg-21edad4a9bf8"
+    },
+    {
+      "id": "thread-df2f43b5ae15",
+      "subject": "Announcing qualpalr 0.2.1",
+      "message_count": 1,
+      "participants": [
+        "Johan Larsson"
+      ],
+      "started": "2016-10-10T06:33:07+00:00",
+      "last_reply": "2016-10-10T06:33:07+00:00",
+      "root_message_id": "msg-df2f43b5ae15"
+    },
+    {
+      "id": "thread-49aedccc242b",
+      "subject": "aVirtualTwins available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Francois vieille"
+      ],
+      "started": "2016-10-10T11:30:44+02:00",
+      "last_reply": "2016-10-10T11:30:44+02:00",
+      "root_message_id": "msg-49aedccc242b"
+    },
+    {
+      "id": "thread-31c6a3676cb4",
+      "subject": "new package glm.predict",
+      "message_count": 1,
+      "participants": [
+        "kontakt at benjaminschlegel.ch"
+      ],
+      "started": "2016-10-10T16:19:19+02:00",
+      "last_reply": "2016-10-10T16:19:19+02:00",
+      "root_message_id": "msg-31c6a3676cb4"
+    },
+    {
+      "id": "thread-b51052e26d00",
+      "subject": "New package: eulerr 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Johan Larsson"
+      ],
+      "started": "2016-10-16T09:49:05+00:00",
+      "last_reply": "2016-10-16T09:49:05+00:00",
+      "root_message_id": "msg-b51052e26d00"
+    },
+    {
+      "id": "thread-2e0679b9ced2",
+      "subject": "NMOF 0.40-0 (Numerical Methods and Optimization in Finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2016-10-24T20:44:36+02:00",
+      "last_reply": "2016-10-24T20:44:36+02:00",
+      "root_message_id": "msg-2e0679b9ced2"
+    },
+    {
+      "id": "thread-cd6649d41a3b",
+      "subject": "New Package: pinbasic - Fast and Stable Estimation of the Probability of Informed Trading (PIN)",
+      "message_count": 1,
+      "participants": [
+        "Andreas Recktenwald"
+      ],
+      "started": "2016-10-25T13:58:18+02:00",
+      "last_reply": "2016-10-25T13:58:18+02:00",
+      "root_message_id": "msg-cd6649d41a3b"
+    }
+  ]
+}

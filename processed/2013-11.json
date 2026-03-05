@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-11",
+  "messages": [
+    {
+      "id": "msg-f9681ffec32a",
+      "message_id": "<897442EE-113C-45B5-A7A7-1873F5D62CAB@freenet.de>",
+      "from_name": "Markus Schmidberger",
+      "from_email_hash": "4b85acf9eb987a25df74e6a938fd71395eef96ba64041fe597724c1bba2c994a",
+      "date": "2013-11-04T09:22:26+01:00",
+      "subject": "[R-pkgs] rmongodb 1.1.3 back to CRAN",
+      "subject_clean": "rmongodb 1.1.3 back to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131104/344de54f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131104/344de54f/attachment.pl>",
+      "thread_id": "thread-f9681ffec32a",
+      "thread_depth": 0,
+      "month": "2013-11"
+    },
+    {
+      "id": "msg-d9251c30a3b1",
+      "message_id": "<CABtDUsT=Eu6UrYTo0g=5E2BUjw4y=3pnu1enzk7dorz7wty6hw@mail.gmail.com>",
+      "from_name": "Cyrus Shaoul",
+      "from_email_hash": "1088916a2b6d34840d89887e9fd6483035fd71af03df7292477f6b49497876b4",
+      "date": "2013-11-07T13:46:38+01:00",
+      "subject": "[R-pkgs] ndl 0.2.13 released today.",
+      "subject_clean": "ndl 0.2.13 released today.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131107/6793c34a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131107/6793c34a/attachment.pl>",
+      "thread_id": "thread-d9251c30a3b1",
+      "thread_depth": 0,
+      "month": "2013-11"
+    },
+    {
+      "id": "msg-71cf392aa358",
+      "message_id": "<46602276E511624D9CC6B8650147C245BAE836@MSGPEXCHA08A.mfad.mfroot.org>",
+      "from_name": "Sinnwell, Jason P.",
+      "from_email_hash": "3e536969a68dca93d0071076e1ef0794b5c628a648f2109b7089e51d196019c7",
+      "date": "2013-11-19T18:58:07Z",
+      "subject": "[R-pkgs] Introducing pedgene 1.2 on CRAN",
+      "subject_clean": "Introducing pedgene 1.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nWe would like to introduce the \"pedgene\" package, version 1.2, available now on CRAN, with a brief manual available as a vignette:\nhttp://cran.r-project.org/web/packages/pedgene/index.html\n\nThe pedgene package performs gene-level kernel and burden association tests with disease status and continuous response \nfor pedigree data, as described in our recent paper:\n\n\tSchaid, D. J., McDonnell, S. K., Sinnwell, J. P. and Thibodeau, S. N. (2013), Multiple Genetic Variant Association \n\tTesting by Collapsing and Kernel Methods With Pedigree or Population Structured Data. Genet. Epidemiol., \n\t37: 409-418.  doi: 10.1002/gepi.21727\n\tLINK:   http://onlinelibrary.wiley.com/doi/10.1002/gepi.21727/abstract\n\nWe have received some valuable feedback, and welcome more.\n\nBest,\nJason Sinnwell, MS\nMayo Clinic\nDivision of Biomedical Statistics and Informatics\n200 1st St SW\nRochester MN 55905",
+      "body_snippet": "Dear useRs:\n\nWe would like to introduce the \"pedgene\" package, version 1.2, available now on CRAN, with a brief manual available as a vignette:\nhttp://cran.r-project.org/web/packages/pedgene/index.htm",
+      "thread_id": "thread-71cf392aa358",
+      "thread_depth": 0,
+      "month": "2013-11"
+    },
+    {
+      "id": "msg-bda84fa9b8f0",
+      "message_id": "<5290B219.3020505@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2013-11-23T07:48:09-06:00",
+      "subject": "[R-pkgs] Hmisc package 3.13-0",
+      "subject_clean": "Hmisc package 3.13-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A significant update to the Hmisc package is now available on CRAN for \nall platforms.  Hmisc source is now on github at \nhttps://github.com/harrelfe/Hmisc and the full change log may be found \nat https://github.com/harrelfe/Hmisc/commits/master\n\nThe most important updates are additions of new graphics functions for \nsummarizing and displaying data with an aim of replacing tables.  There \nis also an interface to Duncan Murdoch's tables package for advanced \nLaTeX table making, allowing Hmisc variable labels and units of \nmeasurement to be automatically incorporated into table row or column \nlabels.  New functions are overviewed and exemplified at \nhttp://biostat.mc.vanderbilt.edu/HmiscNew .  There is also a new \nfunction latexTherm that writes a LaTeX picture environment for \nincluding a series of thermometers inside LaTeX text.  This is intended \nespecially for figure captions where the analyst wishes to provide a \nsnapshot of the fraction of observations that are used in the current \ngraphic.\n\nThe dotchart3 function is an improvement of dotchart2.\n\nThe rcspline.eval function, used by the rms package's rcs function, has \nbetter default knot placement for restricted cubic splines (natural \nsplines) when there are ties in the predictor at the lowest or highest \nvalue (e.g., clumping at zero).\n\nThe most recent updates to Hmisc are\n\n    * Changed n location (nloc argument) in bpplotM\n    * Improved dotchart3 to better compute string widths when there is a \nmixture of expressions and regular strings for auxdata/auxtitle\n    * Changed rlegend to not take logs if log axes are in effect.  Fixes \nEcdf(..., log='x', label.curves=list(keys=1:3)).  Thanks: Bayazid Sarker \n<sarkarbayazid at gmail.com>\n          * Extended non-panel (regular) version of plsmo to handle matrix y\n    * Likewise for summaryRc\n    * Added xlim to bpplotM\n    * Added latexTherm function to create LaTeX picture environments to \nadd a series of thermometers to LaTeX text\n    * Fixed deff to handle the case where R^2 = 1.  Thanks: Matthieu \nStigler <matthieu.stigler at gmail.com>\n    * Added new test file for wtd.mean, wtd.quantile\n    * New test aregImpute3.r for glm Poisson regression\n    * Improved describe.vector to format single unique values\n    * Took aware warning about var, s.e., t, p in fit.mult.impute\n    * Changed wtd.loess.noiter to use loess instead of stats:::simpleLoess\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "A significant update to the Hmisc package is now available on CRAN for \nall platforms.  Hmisc source is now on github at \nhttps://github.com/harrelfe/Hmisc and the full change log may be found \nat htt",
+      "thread_id": "thread-bda84fa9b8f0",
+      "thread_depth": 0,
+      "month": "2013-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f9681ffec32a",
+      "subject": "rmongodb 1.1.3 back to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Markus Schmidberger"
+      ],
+      "started": "2013-11-04T09:22:26+01:00",
+      "last_reply": "2013-11-04T09:22:26+01:00",
+      "root_message_id": "msg-f9681ffec32a"
+    },
+    {
+      "id": "thread-d9251c30a3b1",
+      "subject": "ndl 0.2.13 released today.",
+      "message_count": 1,
+      "participants": [
+        "Cyrus Shaoul"
+      ],
+      "started": "2013-11-07T13:46:38+01:00",
+      "last_reply": "2013-11-07T13:46:38+01:00",
+      "root_message_id": "msg-d9251c30a3b1"
+    },
+    {
+      "id": "thread-71cf392aa358",
+      "subject": "Introducing pedgene 1.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Sinnwell, Jason P."
+      ],
+      "started": "2013-11-19T18:58:07+00:00",
+      "last_reply": "2013-11-19T18:58:07+00:00",
+      "root_message_id": "msg-71cf392aa358"
+    },
+    {
+      "id": "thread-bda84fa9b8f0",
+      "subject": "Hmisc package 3.13-0",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2013-11-23T07:48:09-06:00",
+      "last_reply": "2013-11-23T07:48:09-06:00",
+      "root_message_id": "msg-bda84fa9b8f0"
+    }
+  ]
+}

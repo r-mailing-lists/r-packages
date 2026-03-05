@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-06",
+  "messages": [
+    {
+      "id": "msg-fe614bffbb22",
+      "message_id": "<7C491159-06A2-4D35-AE35-B68CDBAE5C87@posteo.de>",
+      "from_name": "Eugene Ha",
+      "from_email_hash": "58d2c5ed306d1d5e658a597385eade1129b8e9239319e531f99dc5e359b7edf3",
+      "date": "2018-06-02T17:30:45-04:00",
+      "subject": "[R-pkgs] gestalt: Tools for Making and Combining Functions",
+      "subject_clean": "gestalt: Tools for Making and Combining Functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n \nThe gestalt package (0.1.1) has been published on CRAN:\nhttps://cran.r-project.org/package=gestalt\n\nIt provides a suite of function-building tools centered around a\n(forward) composition operator, '%>>>%', which extends the semantics\nof the magrittr '%>%' operator and supports tidyverse quasiquotation.\nAside from making your functions more modular, the main benefit of\n'%>>>%' is its ability to make composite functions that can be\ninspected and transformed as list-like objects.\n\nAs an illustration, you can sample, capitalize, and join (character)\nvectors with the following composite function:\n\n  draw <- sample %>>>% toupper %>>>% paste(collapse = \"\")\n  \n  set.seed(1)\n  draw(letters, 5)\n  #> [1] ?GJNUE\"\n\nBut because the composite function 'draw()' is list-like, you can also\ninspect its intermediate results using a standard map-reduce strategy:\n\n  stepwise <- lapply(`%>>>%`, print) %>>>% compose\n  \n  set.seed(1)\n  stepwise(draw)(letters, 5)\n  #> [1] \"g\" \"j\" \"n\" \"u\" \"e\"\n  #> [1] \"G\" \"J\" \"N\" \"U\" \"E\"\n  #> [1] \"GJNUE\"\n\nIn conjunction with '%>>>%', a compact function constructor, 'fn()',\nand a function that performs partial application, 'partial()', are\nalso provided. Both support quasiquotation.\n\nLearn more from\n\n- the landing page of the source repository:\n  https://github.com/egnha/gestalt\n\n- the package vignette, which gives an overview through examples:\n  https://cran.r-project.org/package=gestalt/vignettes/gestalt.html\n\nBug reports and other feedback are welcome at the GitHub issues page:\nhttps://github.com/egnha/gestalt/issues\n\nEugene Ha",
+      "body_snippet": "Dear R Users,\n \nThe gestalt package (0.1.1) has been published on CRAN:\nhttps://cran.r-project.org/package=gestalt\n\nIt provides a suite of function-building tools centered around a\n(forward) compositi",
+      "thread_id": "thread-fe614bffbb22",
+      "thread_depth": 0,
+      "month": "2018-06"
+    },
+    {
+      "id": "msg-8876df18b7d1",
+      "message_id": "<afc3b6be-c845-744a-a3f0-dd357813d65c@jackwasey.com>",
+      "from_name": "Jack Wasey",
+      "from_email_hash": "d6ee3782c9812dfd1340103355b7a1b4ed37d307c08825e273b7b3c6f1f64375",
+      "date": "2018-06-07T20:03:40-04:00",
+      "subject": "[R-pkgs] icd: Comorbidities from ICD-9 and ICD-10 codes, manipulation and validation",
+      "subject_clean": "icd: Comorbidities from ICD-9 and ICD-10 codes, manipulation and validation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nAfter about five years of development and generous contributions, 'icd' has now reached version 3.2 and is better than ever.\n\n'icd' can calculate comorbidities, Charlson and other scores, and perform fast and accurate manipulation and analysis ICD-9 and ICD-10 codes. 'icd' enables a work flow from raw lists of ICD codes in hospital databases to comorbidities. ICD-9 and ICD-10 comorbidity mappings from Quan (Deyo and Elixhauser versions), Elixhauser and AHRQ are included. Pediatric Complex Chronic Conditions (PCCC) were recently added, along with ICD procedure codes. Common ICD code ambiguities and different code formats are handled carefully.\n\nThe new core comorbidity calculations could be used for any similar categorization task, and are done with optimized matrix algebra using Rcpp and Eigen to full effect across CPU cores.\n\nRecent contributions include:\n - AHRQ clinical condition software (CCS) classification for ICD-9 and ICD-10, thanks to Vitaly Druker\n - CMS Hierarchical Condition Codes, thanks to Anobel Odisho\n - explaining codes into table format, thanks to Ed Lee\n\nMore information, documentation, several vignettes at:\nhttps://jackwasey.github.io/icd/\n\nI love to hear from users via email, or GitHub issues. In particular, I was happy to hear 'icd' was recently used for some great journalism ( http://www.pulitzer.org/finalists/staff-propublica ). Please do let me know how you are using 'icd' in your hospital, university or elsewhere, and how we can improve it.\n\nJack Wasey",
+      "body_snippet": "Dear R users,\n\nAfter about five years of development and generous contributions, 'icd' has now reached version 3.2 and is better than ever.\n\n'icd' can calculate comorbidities, Charlson and other score",
+      "thread_id": "thread-8876df18b7d1",
+      "thread_depth": 0,
+      "month": "2018-06"
+    },
+    {
+      "id": "msg-4c1bec2a658c",
+      "message_id": "<20180613115052.Horde.nD_otlnCTN5Q-BUV-0no3w9@webmail.uth.gr>",
+      "from_name": "Polychronis KOSTOULAS",
+      "from_email_hash": "2ec1744c4564280209f8e4a8a5b11f8cee79db3ae555d1cdb44db32eaf61609b",
+      "date": "2018-06-13T11:50:52+03:00",
+      "subject": "[R-pkgs] PriorGen: An R package that generates prior distributions for proportions",
+      "subject_clean": "PriorGen: An R package that generates prior distributions for proportions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Colleagues,\n\nPriorGen is an R package that generates priors in the form of beta and\nGamma distributions got proportions. You may find it useful for the\ngeneration of priors on the sensitivity/specificity of diagnostic tests and\nthe prevalence of disease.\n\nThe findbeta function estimates the parameters of a Beta distribution based\non the existing prior beliefs about the mean (or the median or the mode)\nand whether it is lower or greater that a certain value with a\npre-speci?ed certainty (usually set at 95%).\n\nThe findbetaqq function estimates the parameters of a Beta distribution\nbased on the existing prior beliefs about the values of two distinct\npercentiles.\n\nThe findbetamupsi function estimates:\n\n? 1.? the parameters of a Beta distribution for the expected mean of a\nproportion -usually the prevalence of disease/infection.\n? 2.? the parameters of a Gamma distribution expressing our prior belief\nabout the variability (?) of the prevalence estimates across the units of\nthe area/region under consideration.\n\nYou may download it from here: https://cran.r-project.org/package=PriorGen\n\nHope you find it helpful and, of course, any comments/suggestions are most\nwelcome.\n\nPolychronis\n\nTo cite package ?PriorGen? in publications use:\n\n? Polychronis Kostoulas (2018). PriorGen: Generates Prior Distributions\n? for Proportions. R package version 1.1.2.\n? https://CRAN.R-project.org/package=PriorGen\n\nA BibTeX entry for LaTeX users is\n\n? @Manual{,\n??? title = {PriorGen: Generates Prior Distributions for Proportions},\n??? author = {Polychronis Kostoulas},\n??? year = {2018},\n??? note = {R package version 1.1.2},\n??? url = {https://CRAN.R-project.org/package=PriorGen},\n? }\n-- \nPolychronis P. Kostoulas\nD.V.M., Ph.D., Assistant Professor\nAssociate Editor of Preventive Veterinary Medicine\nErasmus+ Departmental Coordinator\nLaboratory of Epidemiology, Biostatistics and Animal Health Economics\nFaculty of Veterinary Medicine\nUniversity of Thessaly\nKarditsa, 224 Trikalon st.\nGREECE. P.C. 43100\nTelephone: +30 2441066022\nMobile: +30 6977881857\nEmail: pkost at vet.uth.gr\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Colleagues,\n\nPriorGen is an R package that generates priors in the form of beta and\nGamma distributions got proportions. You may find it useful for the\ngeneration of priors on the sensitivity/spe",
+      "thread_id": "thread-4c1bec2a658c",
+      "thread_depth": 0,
+      "month": "2018-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fe614bffbb22",
+      "subject": "gestalt: Tools for Making and Combining Functions",
+      "message_count": 1,
+      "participants": [
+        "Eugene Ha"
+      ],
+      "started": "2018-06-02T17:30:45-04:00",
+      "last_reply": "2018-06-02T17:30:45-04:00",
+      "root_message_id": "msg-fe614bffbb22"
+    },
+    {
+      "id": "thread-8876df18b7d1",
+      "subject": "icd: Comorbidities from ICD-9 and ICD-10 codes, manipulation and validation",
+      "message_count": 1,
+      "participants": [
+        "Jack Wasey"
+      ],
+      "started": "2018-06-07T20:03:40-04:00",
+      "last_reply": "2018-06-07T20:03:40-04:00",
+      "root_message_id": "msg-8876df18b7d1"
+    },
+    {
+      "id": "thread-4c1bec2a658c",
+      "subject": "PriorGen: An R package that generates prior distributions for proportions",
+      "message_count": 1,
+      "participants": [
+        "Polychronis KOSTOULAS"
+      ],
+      "started": "2018-06-13T11:50:52+03:00",
+      "last_reply": "2018-06-13T11:50:52+03:00",
+      "root_message_id": "msg-4c1bec2a658c"
+    }
+  ]
+}

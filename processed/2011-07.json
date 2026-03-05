@@ -1,0 +1,333 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-07",
+  "messages": [
+    {
+      "id": "msg-e306268449cf",
+      "message_id": "<BANLkTimZS3jkrStUivcTNeAr5p4+2_V0rw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-07-01T08:01:25-05:00",
+      "subject": "[R-pkgs] stringr 0.5",
+      "subject_clean": "stringr 0.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# stringr\n\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because they have grown\norganically over time, they can be inconsistent and a little hard to\nlearn. Additionally, they lag behind the string operations in other\nprogramming languages, so that some things that are easy to do in\nlanguages like Ruby or Python are rather hard to do in R. The\n`stringr` package aims to remedy these problems by providing a clean,\nmodern interface to common string operations.\n\nMore concretely, `stringr`:\n\n * Processes factors and characters in the same way.\n\n * Gives functions consistent names and arguments.\n\n * Simplifies string operations by eliminating options that you don't need\n   95% of the time.\n\n * Produces outputs than can easily be used as inputs. This includes ensuring\n   that missing inputs result in missing outputs, and zero length inputs\n   result in zero length outputs.\n\n * Completes R's string handling functions with useful functions from other\n   programming languages.\n\nstringr 0.5\n===========\n\n* new `str_wrap` function which gives `strwrap` output in a more convenient\n  format\n\n* new `word` function extract words from a string given user defined\n  separator (thanks to suggestion by David Cooper)\n\n* `str_locate` now returns consistent type when matching empty string (thanks\n  to Stavros Macrakis)\n\n* new `str_count` counts number of matches in a string.\n\n* `str_pad` and `str_trim` receive performance tweaks - for large vectors this\n  should give at least a two order of magnitude speed up\n\n* str_length returns NA for invalid multibyte strings\n\n* fix small bug in internal `recyclable` function\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# stringr\n\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because t",
+      "thread_id": "thread-e306268449cf",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-8836d1a30bde",
+      "message_id": "<4E0F5F2E.6040708@statistik.tu-dortmund.de>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "41041d76fae21a8bc18fe19d38def92b3b630abfb7abf4acf41a0734d8851d24",
+      "date": "2011-07-02T18:11:12Z",
+      "subject": "[R-pkgs] new versions of packages RWinEdt, signal, tuneR",
+      "subject_clean": "new versions of packages RWinEdt, signal, tuneR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A series of package updates is on CRAN (or in the process to get there).\n\nAlready available from CRAN are:\n\n- signal: Since I took over maintainership years ago, I have not \ninvested the required amount of time into this package - until this \nspring and now the package got a NAMESPACE and dozens of bugfixes, \ndocumentation improvements and hundreds of test cases - many thanks to \nSarah Schnackenberg for most of the work!\n\n\n- tuneR: After tuneR got mp3 read support last year, we managed to \ninclude support for mel/bark/hertz scales and conversion, powerspectra, \nas well as full support of LPC and MFCC coefficients (and some other \nstuff). Note that the former code that was documented as \"experimental\" \nfor MFCC calculations has been replaced and the API changed. Many thanks \nto Sebastian Krey for the contributions!\n\n\nOn its way to CRAN is:\n\n- RWinEdt: RWinEdt 1.8-3 is a minor change that fixes minor issues when \nworking under Windows 7. This version is compatible with WinEdt versions \n5.2-5.5 but it is still not compatible with WinEdt 6!\nImportant to remember is:\n+ Please run it with R >= 2.13.0 patched (!) under Windows 7 (there is a \nsmall bug in R <= 2.13.0 causing RWinEdt to be unable to start WinEdt \nfrom R)\n+ After installation of RWinEdt run R once with admin privileges (by \nright click) and say library(\"RWinEdt\"). After that, you can start R \nwith regular permissions.\n\nWe are working on a version for WinEdt 6 now. For users who cannot wait \nto use WinEdt 6 with R: There is a \"R-Sweave\" mode available from \nhttp://www.winedt.org/ (untested so far).\n\n\nBest,\nUwe Ligges",
+      "body_snippet": "A series of package updates is on CRAN (or in the process to get there).\n\nAlready available from CRAN are:\n\n- signal: Since I took over maintainership years ago, I have not \ninvested the required amou",
+      "thread_id": "thread-8836d1a30bde",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-fb4d2e0257de",
+      "message_id": "<alpine.LRH.2.00.1107041127390.30204@reclus.nhh.no>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "a0c87926e9477aa221755cc93bdef47227c3563fd707e66ae49044467663d168",
+      "date": "2011-07-04T11:33:17+02:00",
+      "subject": "[R-pkgs] rgdal 0.7-1 release",
+      "subject_clean": "rgdal 0.7-1 release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new release of rgdal, a package providing bindings for the Geospatial \nData Abstraction Library for reading and writing spatial data, has reached \nCRAN.\n\nThis release changes the error handling mechanisms, and is more fully \ndescribed in a posting on R-sig-geo:\n\nhttps://stat.ethz.ch/pipermail/r-sig-geo/2011-July/012126.html\n\nIf any users observe unexpected behaviour following update, please revert \nto the 0.6-* series, and report with full details to the package \nmaintainer. Extensive checking has been carried out, and no unexpected \nbehaviour observed, but it is not feasible to check all possible use \ncases, especially erroneous use cases, hence this message.\n\n-- \nRoger Bivand\nDepartment of Economics, NHH Norwegian School of Economics,\nHelleveien 30, N-5045 Bergen, Norway.\nvoice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
+      "body_snippet": "A new release of rgdal, a package providing bindings for the Geospatial \nData Abstraction Library for reading and writing spatial data, has reached \nCRAN.\n\nThis release changes the error handling mech",
+      "thread_id": "thread-fb4d2e0257de",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-0c778e0b8983",
+      "message_id": "<CAC0j+rexf=sv3Z7Qmrst-VwW-RwObZSDmDcEL7aNLAAvafY=Yw@mail.gmail.com>",
+      "from_name": "SMS Chauhan",
+      "from_email_hash": "c724dc739e9cfb72b8014fd92b8f43de625eddaafe537642b2fd2016bcd7027a",
+      "date": "2011-07-08T11:33:53+05:30",
+      "subject": "[R-pkgs] ANNOUNCE -- Rjms package, message publishing using rJava and ActiveMQ",
+      "subject_clean": "ANNOUNCE -- Rjms package, message publishing using rJava and ActiveMQ",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl>",
+      "thread_id": "thread-0c778e0b8983",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-f0644b2a53d9",
+      "message_id": "<20110724000655.GB16572@klutometis.wikitex.org>",
+      "from_name": "Peter Danenberg",
+      "from_email_hash": "25f3e3a4bbf4f8f7bbfc6f58e8e012a38b128d572f4c642b86e5b13601139710",
+      "date": "2011-07-23T19:06:55-05:00",
+      "subject": "[R-pkgs] roxygen2",
+      "subject_clean": "roxygen2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hadley Wickham refactored roxygen, making it more maintainable and\nrobust; the changes are so significant that we decided to nominate it\nroxygen2:\n\n  http://cran.r-project.org/web/packages/roxygen2/index.html\n\nSome highlights:\n\n  * it's faster;\n  * usage has been improved (the @usage tag should be obsolete);\n  * @rdname merges documentation for multiple functions into one file.\n\nFor details, see:\n\n  https://github.com/klutometis/roxygen/blob/master/NEWS",
+      "body_snippet": "Hadley Wickham refactored roxygen, making it more maintainable and\nrobust; the changes are so significant that we decided to nominate it\nroxygen2:\n\n  http://cran.r-project.org/web/packages/roxygen2/in",
+      "thread_id": "thread-f0644b2a53d9",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-6c847aa50c74",
+      "message_id": "<20110725012006.13282d52@upm.es>",
+      "from_name": "Oscar Perpiñan Lamigueiro",
+      "from_email_hash": "6ff9b11f8e91958cdf2dc4d0fbd334c1e66be0db6e0afc00b477b525cdb8aa1d",
+      "date": "2011-07-25T01:20:06+02:00",
+      "subject": "[R-pkgs] rasterVis 0.10-3",
+      "subject_clean": "rasterVis 0.10-3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'd like to announce the release of version 0.10-3 of rasterVis. This\npackage provides a set of methods for enhanced visualization and\ninteraction with the Raster* objects from the raster package.\n\nYou will find some examples at: http://rastervis.r-forge.r-project.org/.\n\nBest,\n\nOscar.\n-------------\nOscar Perpi??n Lamigueiro\nDpto. de Ingenier?a El?ctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
+      "body_snippet": "Dear useRs,\n\nI'd like to announce the release of version 0.10-3 of rasterVis. This\npackage provides a set of methods for enhanced visualization and\ninteraction with the Raster* objects from the raster",
+      "thread_id": "thread-6c847aa50c74",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-9825a0485f28",
+      "message_id": "<20110725012553.0169e3a7@upm.es>",
+      "from_name": "Oscar Perpiñan Lamigueiro",
+      "from_email_hash": "6ff9b11f8e91958cdf2dc4d0fbd334c1e66be0db6e0afc00b477b525cdb8aa1d",
+      "date": "2011-07-25T01:25:53+02:00",
+      "subject": "[R-pkgs] pxR 0.20",
+      "subject_clean": "pxR 0.20",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'd like to announce the release of pxR, a package to use the PC-Axis\nfile format in R.\n\nPC-Axis is a software family consisting of a number of programs for the\nWindows and Internet environment used to present statistical\ninformation. It is used by national and international institutions to\npublish statistical data. Programs in the PC-Axis family use a\nparticular data file format. pxR provides a set of functions for \nreading and writing PC-Axis files. \n\nThe function read.px reads a PC-Axis file from a given location and\nreturns an object of the class px containing all the data and metadata\nin the PC-Axis file. The single most important piece of information with\na px object is the data matrix, which can be extracted with function\nas.data.frame.\n\nFor instance,\n\tmy.px.object <- read.px(\"/path/to/pc-axis/file\")\n\tmy.px.data   <-  as.data.frame(my.px.object)\n\nwill create the data.frame my.px.data with the data in the\ncorresponding PC-Axis file.\n\nBest,\n\nOscar.\n\n-------------\nOscar Perpi??n Lamigueiro\nDpto. de Ingenier?a El?ctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
+      "body_snippet": "Dear useRs,\n\nI'd like to announce the release of pxR, a package to use the PC-Axis\nfile format in R.\n\nPC-Axis is a software family consisting of a number of programs for the\nWindows and Internet envir",
+      "thread_id": "thread-9825a0485f28",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-f0a09b1b522a",
+      "message_id": "<DC25D759-4668-4BCB-80E3-97AE71F01077@uni-goettingen.de>",
+      "from_name": "Daniel Adler",
+      "from_email_hash": "469a3a475c36a72d9b30e0f97eb9eaa4a3b8c71d9422a01a0e93e5444b308512",
+      "date": "2011-07-25T14:23:41+02:00",
+      "subject": "[R-pkgs] rdyncall 0.7.3",
+      "subject_clean": "rdyncall 0.7.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Initial Announcement: Package rdyncall released on CRAN. (Version 0.7.3)\n\nThe package was presented at the Use!R 2009 with the title \n'An improved Foreign Function Interface for R' and is now available on CRAN \nand considered stable for a large range of R platforms.\n\nThe package provides a cross-platform framework for dynamic binding of \nC libraries using a flexible Foreign Function Interface (FFI). \n\nThe FFI supports almost all fundamental C types, multiple calling conventions, \nsymbolic access to foreign C struct/union data types and wrapping of R fun-\nctions as C callback function pointers. \n\nDynamic bindings to shared C libraries and the C APIa are data-driven by \ncross-platform binding specification using a compact plain text format.\nThe interface consists of a single function, similar to 'library':\n \n  > dynport(portname)\n\nwhere 'portname' refers to a name of a C API binding specification;\nan initial repository of DynPorts to a couple of common C libraries comes \nwith the package:\n\n  DynPort     Description\n  \n  expat       Expat XML Parser Library\n  GL          OpenGL 1.1 API\n  GLU         OpenGL Utility Library\n  SDL         Simple DirectMedia Layer library        \n  SDL_image   Loading of image files (png,jpeg..)\n  SDL_mixer   Loading/Playing of ogg/mp3/mod/xm music files.\n  SDL_ttf     Loading/Rendering of True Type Fonts.\n  glew        OpenGL Extension Wrangler (includes OpenGL 3)\n  gl3         strict OpenGL 3 \n  R           R shared library\n  ode         Open Dynamics (Physics-) Engine (untested)\n  cuda        NVIDIA Cuda (untested)\n  opencl      OpenCL (untested)\n  stdio       C Standard Library I/O Functions\n\nThe R programming interface of bindings looks very similar to C.\n'dynport()' dynamically creates and attaches an R namespace that is \npopulated with lightweight R helper objects (with similar name) to \nC entities such as: \n  - dynamically linked and resolved C functions, \n  - symbolic constants (macro definitions and enums) and \n  - struct/union type information objects (allocation and symbolic access).\n\nThe R bindings work across platforms. The host system need to have the C \nshared libraries pre-installed. For OS-specific details on this, see \nmanual page on 'rdyncall-demos' (type: ?'rdyncall-demos').\n\nThe package includes a variety of technology demos via demo()..\n\n  demo            Description\n\n  SDL             3D rotating cube using SDL, OpenGL and GLU. \n  randomfield\t  512x512 random field matrix generator via blending 5000 \n                  textures using OpenGL (10-50 fps) and transfer to R.\n  expat           Parsing XML using expat and callbacks.\n  Win32PlaySound  Win32 demo, playing a wav file.\n  intro           Texture-mapped scroller while playing a nice tune(XM module).\n  qsort           C standard library qsort C with a custom compare via\n                  callbacks\n\nA complete showcase of a cross-platform audio/visual 'Demo',\nwritten in 100% pure R using rdyncall, SDL libraries and OpenGL is available \nwith source, instructions and a video screencast at:\n\n  http://dyncall.org/demos/soulsalicious/\n\n\nThe package enables R developers to develop system-level software directly in R \nvia powerful tools for dynamic interoperability with the C language:\n\n- flexible and more type-safe alternative for '.C()', see '.dyncall()'.\n- handling of C struct/union types from R, see 'new.struct()'.\n- manipulation of low-level C data, see '.pack()'.\n- wrap R functions as C callback pointers, see 'new.callback()'.\n- name/load shared libraries cross-platform, see 'dynfind()'.\n\nThe manual and a vignette on 'Foreign Library Interface' (vignette('FLI')) give \ndetailed information.\n\n\nDetails on Portability and Platform Support\n-------------------------------------------\n\nThe implementation is based on libraries from the DynCall Project that\nuse a small amount of code in Assembly to offer a generic solution \nfor dynamic function calls (dyncall) and callback handling (dyncallback)\nfor a particular binary platform and calling convention.\n\nOnce a library is ported, a universal solution becomes available that\nuses very small amount of native code; the R package consists of approx. \n60kb native code including (dynload, dyncallback and R <-> C value type \nmappings).\n\nWe use a suite of testing tools to assert a correct implementation of \nthe call and callback back-ends by checking a large number of cases\nwith different number and types of argument/return types to ensure\na correct passing between caller and callee.\n\nThe cross-platform portability for bindings work at the abstract C type\nsystem layer without defining the exact bit size.\nThe interface of the dyncall libraries uses this layer to \nprepare concrete calls and callbacks with appropriate size and layout.\nThe bindings are automatically extracted from C header files using a\nchain of tools including GCC_XML.\n\nMore information on DynCall including a manual, more bindings etc..\n\n  see http://dyncall.org\n\nExamples of dyncall bindings for other languages (lua, python, ruby) are \navailable in the subversion source trunk.\n\n\nSupported Operating-Systems\n---------------------------\nThe R Package has been tested on several major 32- and 64-bit R platforms\nincluding\n\n- Mac OS X 10.4-6 (ppc32, i386, amd64) \n- Windows 32/64-bit\n- Linux [Debian,Ubuntu,Fedora,Gentoo] (i386,amd64,ppc32,arm)\n- NetBSD (i386,amd64)\n- OpenBSD (i386,amd64)\n- Solaris (i386,amd64) [to a limited degree]\n\nThe DynCall libraries are tested on Linux, Mac OS X, Windows, BSD derivates,\nSolaris and more exotic platforms such as Playstation Portable, Nintendo DS, \nPlan9, Haiku and Minix.\n\n\nDetails on supported Processor-Architectures and Calling-Conventions:\n---------------------------------------------------------------------\n\n- Intel i386: cdecl,stdcall,fastcall (msvc/gcc),thiscall (msvc/gcc),plan9\n- AMD64: x64 (Win64), System V\n- PowerPC 32-bit: Mac OS X, System V\n- ARM 32-bit ARM/Thumb (>= armv4t, no armv7 support currently): aapcs\n- MIPS 32-bit: o32, eabi \n- MIPS 64-bit: n64\n- SPARC 32-bit: v7/v8 \n- SPARC 64-bit: v9\n\nNOTE: 'System V' is the standard ABI/C calling convention on ELF-based systems \nsuch as Linux, BSDs, Solaris and also the ABI on Mac OS X/amd64.\nAll i386 platforms except plan9 use cdecl for C (and we do 16-byte alignment\nto be compatible with Mac OS X and GCC >= 3.0).\n\nAs of this release, no support for callbacks (wrapping R functions as\nC function pointers) is available on MIPS or SPARC.\nCallbacks on PowerPC 32-bit for Mac OS X work fine, for other \nELF/System V-based PowerPC systems, callbacks are not yet implemented.\n\n\nKnown Bugs\n----------\n* PowerPC/Mac OS X 10.4: Building Universal Binaries are broken.. in particular \n  the as for i386 assembly.\n  Workaround for PowerPC users: install with \"--no-multiarch\" or use prebuilt \n  binaries built on OS X >= 10.5.\n\n* SPARC Assembly sources are currently implemented for GNU assembler; they\n  are not compatible with 'fbe' Sun Assembler on Solaris. \n\n* SDL demos fail on OpenBSD 4.8 due to pthread issues.\n\n\nHelp and Feedback\n-----------------\nThe package comprises new methods for dynamic binding of native code to R\nthat were designed to work cross-platform. It required intensive \ntesting on a large range of processor/OS/tool-chain combinations.\nIt was (and still is!) also very helpful to run tests on different \n'distributions' of the same OS for checking e.g. the search algorithm for\nlocating shared libraries by a short name across operating-systems \n(see '?dynfind' for details on this).\n\nI am very thankful for any feedback including bug-reports, success and \nfailure stories or ideas of improvements. If you feel that an important \narchitecture, platform or build-tool is missing here please let me know too.\n\nThe DynCall authors appreciate any support that helps with porting the DynCall \nlibraries and the R package e.g. remote development accounts to interesting \nplatforms, qemu/gxemul images, borrowed/sponsored hardware. \nIn particular we are currently looking for the following arch/os/compilers \nenvironment for porting the DynCall libraries and rdyncall:\n\n  - Sparc/Solaris/SunPro\n  - PowerPC/AIX/XL C \n  - MIPS/IRIX/MIPSpro\n\n\nChangeLog\n---------\n\n0.7.3: [2011-07-19] Added vignette, new ports, new tool-chain an fixes for bugs\n o bugfix for Fedora/x64: added search path 'lib64' folder for 'dynfind'.\n o added support for Sun make, DynCall uses Makefile.embedded.\n o added sparc and sparc64 support using gcc tool-chain.\n o added support for amd64 using solaris tool-chain.\n o added vignette \"foreign library interface\".\n o bugfix for solaris/x64: added search path 'amd64' folder for 'dynfind'.\n o bugfix in examples for libm using 'm.so.6' besides 'm' on unix \n   (needed by debian 6 sid unstable)\n\n0.7.2: [2011-04-27] Minor fixes \n o added win64/mingw64 support.\n\n0.7.1: [2011-04-26] Minor fixes      \n o minor Makevars fix for parallel builds.\n\n0.7.0: [2011-04-20] Initial Release \n o first upload to CRAN.\n\n\nenjoy,\n- Daniel",
+      "body_snippet": "Initial Announcement: Package rdyncall released on CRAN. (Version 0.7.3)\n\nThe package was presented at the Use!R 2009 with the title \n'An improved Foreign Function Interface for R' and is now availabl",
+      "thread_id": "thread-f0a09b1b522a",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-a49b76b98e8d",
+      "message_id": "<70C3C49A0FC26142866098EFDC07D572050FEE9F@MSGEBE12.mfad.mfroot.org>",
+      "from_name": "Sinnwell, Jason P.",
+      "from_email_hash": "3e536969a68dca93d0071076e1ef0794b5c628a648f2109b7089e51d196019c7",
+      "date": "2011-07-26T11:37:01-05:00",
+      "subject": "[R-pkgs] kinship2",
+      "subject_clean": "kinship2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nAnnouncing the release of kinship2, version 1.2.1, to CRAN. \n\nkinship2 is a branch from the original kinship package with some key\nupdates for the pedigree and kinship functions, with some additional\nfunctions that work with the pedigree object.\n\nHighlights:\n * pedigree and pedigreeList objects implemented with S3 methods print\nand \"[,\"\n * pedigree plotting routine re-written, now more robust\n * kinship matrices now implemented with Matrix package classes\n * utilities to trim the pedigree object with various criteria\n\nA vignette is available with\nvignette(\"pedigree\")\n\nFor details and updates, see:\nhttps://r-forge.r-project.org/projects/kinship2/\n\n\nBest,\nJason Sinnwell",
+      "body_snippet": "Dear useRs:\n\nAnnouncing the release of kinship2, version 1.2.1, to CRAN. \n\nkinship2 is a branch from the original kinship package with some key\nupdates for the pedigree and kinship functions, with som",
+      "thread_id": "thread-a49b76b98e8d",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-5674ff1a9510",
+      "message_id": "<5CD78996B8F8844D963C875D3159B94A01112143@DSRCORREO.azti.local>",
+      "from_name": "Rubén Roa",
+      "from_email_hash": "573fe0f0b4ef59ed1639560bb30a2df5507ce90eb17b37ef0102740ea8d10cb5",
+      "date": "2011-07-27T13:34:18+02:00",
+      "subject": "[R-pkgs] CatDyn - Estimation of wild populations abundance",
+      "subject_clean": "CatDyn - Estimation of wild populations abundance",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl>",
+      "thread_id": "thread-5674ff1a9510",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-2945530103f3",
+      "message_id": "<1311871110.43482.YahooMailNeo@web161309.mail.bf1.yahoo.com>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
+      "date": "2011-07-28T09:38:30-07:00",
+      "subject": "[R-pkgs] xgrid package: Access Apple Xgrid using R",
+      "subject_clean": "xgrid package: Access Apple Xgrid using R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package xgrid 0.1-11 is now available on CRAN.? The package provides functions to distribute and collate results from\nsimulation studies and other computationally expensive tasks to\nApple Xgrid clusters from within R.\n\nMore specifically, the routines within the package facilitate access to Apple Xgrid clusters (which can be created using standard installations of Mac OS X, for example in a classroom or computer lab) to undertake independent simulations or other\nlong-running jobs that can be divided into replicate runs.? In addition to the documentation within the package, more information can be found at:\n\nhttp://www.math.smith.edu/xgrid\n\nOn a related note, the \"runjags\" package provides similar functionality for Gibbs sampling.\n\nHappy simulating!\n\nNick\n\nNicholas Horton\nDepartment of Mathematics and Statistics\nSmith College\nClark Science Center\nNorthampton, MA 01063-0001 USA",
+      "body_snippet": "The package xgrid 0.1-11 is now available on CRAN.? The package provides functions to distribute and collate results from\nsimulation studies and other computationally expensive tasks to\nApple Xgrid cl",
+      "thread_id": "thread-2945530103f3",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-11eefad54765",
+      "message_id": "<CABdHhvHbTTAH7bq8A+BMZyUZizFFj6vHB230jZpjJyLo0Y_Y4Q@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-07-30T08:32:39-05:00",
+      "subject": "[R-pkgs] plyr version 1.6",
+      "subject_clean": "plyr version 1.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in equivalents.\n\nA detailed introduction to plyr has been published in JSS: \"The\nSplit-Apply-Combine Strategy for Data Analysis\",\nhttp://www.jstatsoft.org/v40/i01/. You can find out more at\nhttp://had.co.nz/plyr/, or track development at\nhttp://github.com/hadley/plyr. You can ask questions about plyr (and\ndata manipulation in general) on the plyr mailing list. Sign up at\nhttp://groups.google.com/group/manipulatr.\n\nVersion 1.6\n------------------------------------------------------------------------------\n\n* documentation improved using new features of `roxygen2`\n\n* fixed namespacing issue which lead to lost labels when subsetting the\n  results of `*lply`\n\n* `colwise` automatically strips off split variables.\n\n* `rlply` now correctly deals with `rlply(4, NULL)` (thanks to bug report from\n  Eric Goldlust)\n\n* `rbind.fill` tries harder to keep attributes, retaining the attributes from\n  the first occurrence of each column it finds. It also now works with\n  variables of class `POSIXlt` and preserves the ordered status of factors.\n\n* `arrange` now works with one column data frames\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
+      "thread_id": "thread-11eefad54765",
+      "thread_depth": 0,
+      "month": "2011-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e306268449cf",
+      "subject": "stringr 0.5",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-07-01T08:01:25-05:00",
+      "last_reply": "2011-07-01T08:01:25-05:00",
+      "root_message_id": "msg-e306268449cf"
+    },
+    {
+      "id": "thread-8836d1a30bde",
+      "subject": "new versions of packages RWinEdt, signal, tuneR",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2011-07-02T18:11:12+00:00",
+      "last_reply": "2011-07-02T18:11:12+00:00",
+      "root_message_id": "msg-8836d1a30bde"
+    },
+    {
+      "id": "thread-fb4d2e0257de",
+      "subject": "rgdal 0.7-1 release",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2011-07-04T11:33:17+02:00",
+      "last_reply": "2011-07-04T11:33:17+02:00",
+      "root_message_id": "msg-fb4d2e0257de"
+    },
+    {
+      "id": "thread-0c778e0b8983",
+      "subject": "ANNOUNCE -- Rjms package, message publishing using rJava and ActiveMQ",
+      "message_count": 1,
+      "participants": [
+        "SMS Chauhan"
+      ],
+      "started": "2011-07-08T11:33:53+05:30",
+      "last_reply": "2011-07-08T11:33:53+05:30",
+      "root_message_id": "msg-0c778e0b8983"
+    },
+    {
+      "id": "thread-f0644b2a53d9",
+      "subject": "roxygen2",
+      "message_count": 1,
+      "participants": [
+        "Peter Danenberg"
+      ],
+      "started": "2011-07-23T19:06:55-05:00",
+      "last_reply": "2011-07-23T19:06:55-05:00",
+      "root_message_id": "msg-f0644b2a53d9"
+    },
+    {
+      "id": "thread-6c847aa50c74",
+      "subject": "rasterVis 0.10-3",
+      "message_count": 1,
+      "participants": [
+        "Oscar Perpiñan Lamigueiro"
+      ],
+      "started": "2011-07-25T01:20:06+02:00",
+      "last_reply": "2011-07-25T01:20:06+02:00",
+      "root_message_id": "msg-6c847aa50c74"
+    },
+    {
+      "id": "thread-9825a0485f28",
+      "subject": "pxR 0.20",
+      "message_count": 1,
+      "participants": [
+        "Oscar Perpiñan Lamigueiro"
+      ],
+      "started": "2011-07-25T01:25:53+02:00",
+      "last_reply": "2011-07-25T01:25:53+02:00",
+      "root_message_id": "msg-9825a0485f28"
+    },
+    {
+      "id": "thread-f0a09b1b522a",
+      "subject": "rdyncall 0.7.3",
+      "message_count": 1,
+      "participants": [
+        "Daniel Adler"
+      ],
+      "started": "2011-07-25T14:23:41+02:00",
+      "last_reply": "2011-07-25T14:23:41+02:00",
+      "root_message_id": "msg-f0a09b1b522a"
+    },
+    {
+      "id": "thread-a49b76b98e8d",
+      "subject": "kinship2",
+      "message_count": 1,
+      "participants": [
+        "Sinnwell, Jason P."
+      ],
+      "started": "2011-07-26T11:37:01-05:00",
+      "last_reply": "2011-07-26T11:37:01-05:00",
+      "root_message_id": "msg-a49b76b98e8d"
+    },
+    {
+      "id": "thread-5674ff1a9510",
+      "subject": "CatDyn - Estimation of wild populations abundance",
+      "message_count": 1,
+      "participants": [
+        "Rubén Roa"
+      ],
+      "started": "2011-07-27T13:34:18+02:00",
+      "last_reply": "2011-07-27T13:34:18+02:00",
+      "root_message_id": "msg-5674ff1a9510"
+    },
+    {
+      "id": "thread-2945530103f3",
+      "subject": "xgrid package: Access Apple Xgrid using R",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2011-07-28T09:38:30-07:00",
+      "last_reply": "2011-07-28T09:38:30-07:00",
+      "root_message_id": "msg-2945530103f3"
+    },
+    {
+      "id": "thread-11eefad54765",
+      "subject": "plyr version 1.6",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-07-30T08:32:39-05:00",
+      "last_reply": "2011-07-30T08:32:39-05:00",
+      "root_message_id": "msg-11eefad54765"
+    }
+  ]
+}

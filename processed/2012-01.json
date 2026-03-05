@@ -1,0 +1,173 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-01",
+  "messages": [
+    {
+      "id": "msg-a03e5c73d6bc",
+      "message_id": "<4F05823E.8070608@statistik.tu-dortmund.de>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "41041d76fae21a8bc18fe19d38def92b3b630abfb7abf4acf41a0734d8851d24",
+      "date": "2012-01-05T11:58:06+01:00",
+      "subject": "[R-pkgs] The BRugs 0.7-4 interface to OpenBUGS released",
+      "subject_clean": "The BRugs 0.7-4 interface to OpenBUGS released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "After so many questions and a considerable delay (almost entirely my \nfault), the BRugs package version 0.7-4 has been released yesterday. The \nBRugs package is available from CRAN master already as source and in \nbinary form for Windows and will be synced by the mirrors shortly.\n\nNote the following changes (more details in the NEWS file):\n\nBRugs works on Linux now\n\nBRugs now supports 64-bit R on Windows\n\nBRugs works with an existing installation of OpenBUGS (at least 3.2.1) \ninstead of being distributed with the OpenBUGS library, hence the \nOpenBUGS installation is a requirement.\n\nBoth the Linux version as well as the 64-bit version for 64-bit R on \nWindows are  typically slower than the more native interface used for \n32-bit R on Windows.\n\nThanks to all who helped to get so far. Special thanks to Chris Jackson \nfor many improvement and all his work to build the Linux part of the \ninterface.\n\nBest,\nUwe Ligges",
+      "body_snippet": "After so many questions and a considerable delay (almost entirely my \nfault), the BRugs package version 0.7-4 has been released yesterday. The \nBRugs package is available from CRAN master already as s",
+      "thread_id": "thread-a03e5c73d6bc",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-cf453103a6c7",
+      "message_id": "<70C3C49A0FC26142866098EFDC07D57207129E06@MSGEBE12.mfad.mfroot.org>",
+      "from_name": "Sinnwell, Jason P.",
+      "from_email_hash": "3e536969a68dca93d0071076e1ef0794b5c628a648f2109b7089e51d196019c7",
+      "date": "2012-01-10T10:16:37-06:00",
+      "subject": "[R-pkgs] haplo.stats version 1.5.2",
+      "subject_clean": "haplo.stats version 1.5.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "haplo.stats, version 1.5.2, is now available on CRAN.\n\nBelow I provide the description and link to our software page where you\ncan also find the updated user manual. The most notable updates for this\nversion were to make the haplo.glm fitted object work more like the glm\nobject; other changes are listed in the NEWS file entries pasted below.\n\nDESCRIPTION:\nhaplo.stats: Statistical Analysis of Haplotypes with Traits and\nCovariates when Linkage Phase is Ambiguous\n\nA suite of R routines for the analysis of indirectly measured\nhaplotypes. The statistical methods assume that all subjects are\nunrelated and that haplotypes are ambiguous (due to unknown linkage\nphase of the genetic markers). The main functions are: haplo.em,\nhaplo.glm, haplo.score, haplo.power, and seqhap.\n\nURL:\nhttp://mayoresearch.mayo.edu/mayo/research/schaid_lab/software.cfm\n\n\nNEWS:\nChanges in version 1.5.2:\n\n    o   Added methods for haplo.glm object: anova, residuals, vcov,\nfitted\n\n    o   Updated haplo.glm to work more like glm object with methods\n\n    o   Took out S-PLUS functionality for haplo.glm\n\n    o   Remove notes for S-PLUS usage in documentation\n\n    o   Added eps.svd argument to haplo.glm.control to give users\ncontrol\n        over calculating rank of information matrix\n\n    o   Remove loci, geno.recode, allele.recode, which is now handled\nwith\n        setupGeno\n\n    o   Add test suite with .R and .Rout.save files\n\n    o   Major update to user manual in doc/\n\n    o   Suggest Harrell's rms package instead of Design for haplo.score\n        with ordinal traits\n\n    o   Add NAMESPACE and NEWS files\n\n\nCheers,\n-Jason\n\nJason Sinnwell, MS | Division of Biomedical Statistics and Informatics |\n507.284.3270 | sinnwell at mayo.edu \nMayo Clinic | 200 First Street SW | Rochester, MN 55905 |\nwww.mayoclinic.org",
+      "body_snippet": "haplo.stats, version 1.5.2, is now available on CRAN.\n\nBelow I provide the description and link to our software page where you\ncan also find the updated user manual. The most notable updates for this\n",
+      "thread_id": "thread-cf453103a6c7",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-6cf2f8eee283",
+      "message_id": "<CAD+yNFjm1KPA+rznwr1LD7FHaEbacsRRKv+B8Hw2Arvqp5iTqA@mail.gmail.com>",
+      "from_name": "Jeffrey Horner",
+      "from_email_hash": "7511839a7ff3ccd4495a33d9411dfe3760207a304859290cd9d586f8a1efa278",
+      "date": "2012-01-11T16:20:04-06:00",
+      "subject": "[R-pkgs] Rook: software and specification for R web applications and servers",
+      "subject_clean": "Rook: software and specification for R web applications and servers",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear ?useRs,\n\nRook version 1.0-3 has been submitted to CRAN. In the mean time you\ncan get it here:\n\nhttps://github.com/jeffreyhorner/rRack/blob/master/Rook_1.0-3.tar.gz\n\nThe latest release contains support for deployment with rApache. Please see\n3.6.5 and 3.6.6 under section 'Configuring rApache' in the manual:\n\nhttp://www.rapache.net/manual.html#Configuring_rapache\n\nWhat is Rook? A package that does three things:\n\n- It provides a way to run R web applications on your desktop with the\nnew internal R web server named Rhttpd. Please see the Rhttpd help page.\n\n- It provides a set of reference classes you can use to write you R\nweb applications. The following help pages provide more information:\nBrewery, Builder, File, Middleware, Redirect, Request, Response, Static,\nURLMap, and Utils. Also see the example web applications located in\n'system(\"exampleApps\",package=\"Rook\")'.\n\n- It provides a specification for writing your R web applications to\nwork on any web server that supports the Rook specification.\n\nYou may not see the need for web applications written in R, but consider\nusing Rook to build a statistical engine that complements a front-end\nweb system, or consider creating elegant ggplot2 graphics on-demand from\na fresh data stream. Also, consider creating dynamic instructional content\nfor the classroom.\n\nIf you have other examples or ideas, please join in the discussion on\nR-help or here:\n\nhttp://groups.google.com/group/rrook\n\n--\nJeffrey Horner",
+      "body_snippet": "Dear ?useRs,\n\nRook version 1.0-3 has been submitted to CRAN. In the mean time you\ncan get it here:\n\nhttps://github.com/jeffreyhorner/rRack/blob/master/Rook_1.0-3.tar.gz\n\nThe latest release contains su",
+      "thread_id": "thread-6cf2f8eee283",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-4ccef9c40cd5",
+      "message_id": "<4F10687C.10605@mrc-bsu.cam.ac.uk>",
+      "from_name": "Michael Sweeting",
+      "from_email_hash": "d5221aa3bfd5184d6b1d71c2c12b9e6c91518681a374b36beab710d8459900f9",
+      "date": "2012-01-13T17:23:08Z",
+      "subject": "[R-pkgs] New package ‘bcrm’ to implement Bayesian continuous reassessment method designs",
+      "subject_clean": "New package ‘bcrm’ to implement Bayesian continuous reassessment method designs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce  the release of a new packaged called `bcrm? \n(version 0.1), now available on CRAN.\n\nThe package implements a wide range of Bayesian continuous reassessment \nmethod (CRM) designs to be used in Phase I dose-escalation trials. The \npackage is fully documented and highlights include\n?    A choice of 1-parameter working models or the 2-parameter logistic \nmodel.\n?    Bayesian updating performed after outcomes from each cohort of \npatients becomes available, using exact computation or MCMC methods (via \neither BRugs or R2WinBUGS).\n?    Full functionality allowing a range prior distributions for the \nmodel parameter(s) as well as calculation of standardised doses from \nprior estimates of toxicity at each dose level\n?    The ability to choose the summary estimate of the posterior \ndistribution used to select the next dose (options are posterior mean or \nplug-in mean toxicity or a quantile of the maximum tolerated dose (MTD) \ndistribution, as in an EWOC design).\n?    Specification of a modified (constrained) or unmodified CRM design.\n?    Varying the cohort size\n?    Plots of the data and estimated dose-toxicity curve after each \ncohort has been recruited.\n?    Fully integrated simulation code, which returns operating \ncharacteristics of the design as output. Alternatively, the user can \ninteractively run the design, specifying doses and outcomes as each new \ncohort is recruited, as if conducting a trial.\n\nIn a future release I hope to allow full loss function based decisions \nto be made, using toxicity intervals (areas of the posterior distribution).\n\nAs this package is new I would appreciate any feedback users have.\n\nBest wishes\nMichael Sweeting\n\n-- \n-------------------------------------------\nDr Michael Sweeting\nMRC Biostatistics Unit\nInstitute of Public Health\nRobinson Way\nCambridge\nCB2 0SR\n\nTel: 01223 768257\nFax: 01223 760729",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce  the release of a new packaged called `bcrm? \n(version 0.1), now available on CRAN.\n\nThe package implements a wide range of Bayesian continuous reassessment \nme",
+      "thread_id": "thread-4ccef9c40cd5",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-fdd1b1557812",
+      "message_id": "<CANROs4c10T6o=OTgAk6MXTxLpm8Ses8a8MR1Md0SHxOBPJotFA@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2012-01-18T14:12:29-06:00",
+      "subject": "[R-pkgs] New package knitr",
+      "subject_clean": "New package knitr",
+      "in_reply_to": "<CANROs4d7Hvj3Kcd12yfEd29g3FJ2WpdH1_r9jiboVD2ne3wVdQ@mail.gmail.com>",
+      "references": [
+        "<CANROs4d7Hvj3Kcd12yfEd29g3FJ2WpdH1_r9jiboVD2ne3wVdQ@mail.gmail.com>"
+      ],
+      "body_plain": "The knitr package was designed to be a transparent engine for dynamic\nreport generation with R, solve some long-standing problems in Sweave,\nand combine features in other add-on packages into one package. It is\na general-purpose package, and currently supports LaTeX, HTML and\nMarkdown (still extensible).\n\nSee the package website [1] to get started; see the package manuals\n([2], [3] and [4]) for a quick overview of what knitr can do; see the\ndemos [5] for other examples.\n\n[1] http://yihui.github.com/knitr/\n[2] https://github.com/downloads/yihui/knitr/knitr-manual.pdf\n[3] https://github.com/downloads/yihui/knitr/knitr-graphics.pdf\n[4] https://github.com/downloads/yihui/knitr/knitr-themes.pdf\n[5] http://yihui.github.com/knitr/demos\n\nThis package is available on the main CRAN site now, and you may need\nto wait for a few days for it to be mirrored to a CRAN site near to\nyou.\n\nFeedback, bug report and feature request are welcome: use\nhttps://github.com/yihui/knitr/issues or\nhttps://groups.google.com/group/knitr or StackOverflow or r-help.\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "The knitr package was designed to be a transparent engine for dynamic\nreport generation with R, solve some long-standing problems in Sweave,\nand combine features in other add-on packages into one pack",
+      "thread_id": "thread-fdd1b1557812",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-e11fc8f6dad4",
+      "message_id": "<CAM98rvS5CEWkh_KRqONXD=8A9enagFdRimy7sGGRpuQZ9hKX0g@mail.gmail.com>",
+      "from_name": "Antoine Lucas",
+      "from_email_hash": "a7a5e71716e3d60260b1564f8365e8e157304637b0ba91636f319f1bc0367bc8",
+      "date": "2012-01-28T19:51:55+01:00",
+      "subject": "[R-pkgs] New package \"geotools\"",
+      "subject_clean": "New package \"geotools\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI have upload a new package \"geotools\", that main purpose is to\npropose functions to get distance between cities, with city name or\npostal code (usage: shipment).\n\nFor now: there is only the french cities dataset.\n\nAn example:\nReturn all postal code at 7 kms from Paris:\ncodesNearToCode(zipCode(\"Paris\"),7)\n\n\nRegards,\n\nAntoine Lucas.",
+      "body_snippet": "Dear All,\n\nI have upload a new package \"geotools\", that main purpose is to\npropose functions to get distance between cities, with city name or\npostal code (usage: shipment).\n\nFor now: there is only th",
+      "thread_id": "thread-e11fc8f6dad4",
+      "thread_depth": 0,
+      "month": "2012-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a03e5c73d6bc",
+      "subject": "The BRugs 0.7-4 interface to OpenBUGS released",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2012-01-05T11:58:06+01:00",
+      "last_reply": "2012-01-05T11:58:06+01:00",
+      "root_message_id": "msg-a03e5c73d6bc"
+    },
+    {
+      "id": "thread-cf453103a6c7",
+      "subject": "haplo.stats version 1.5.2",
+      "message_count": 1,
+      "participants": [
+        "Sinnwell, Jason P."
+      ],
+      "started": "2012-01-10T10:16:37-06:00",
+      "last_reply": "2012-01-10T10:16:37-06:00",
+      "root_message_id": "msg-cf453103a6c7"
+    },
+    {
+      "id": "thread-6cf2f8eee283",
+      "subject": "Rook: software and specification for R web applications and servers",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Horner"
+      ],
+      "started": "2012-01-11T16:20:04-06:00",
+      "last_reply": "2012-01-11T16:20:04-06:00",
+      "root_message_id": "msg-6cf2f8eee283"
+    },
+    {
+      "id": "thread-4ccef9c40cd5",
+      "subject": "New package ‘bcrm’ to implement Bayesian continuous reassessment method designs",
+      "message_count": 1,
+      "participants": [
+        "Michael Sweeting"
+      ],
+      "started": "2012-01-13T17:23:08+00:00",
+      "last_reply": "2012-01-13T17:23:08+00:00",
+      "root_message_id": "msg-4ccef9c40cd5"
+    },
+    {
+      "id": "thread-fdd1b1557812",
+      "subject": "New package knitr",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2012-01-18T14:12:29-06:00",
+      "last_reply": "2012-01-18T14:12:29-06:00",
+      "root_message_id": "msg-fdd1b1557812"
+    },
+    {
+      "id": "thread-e11fc8f6dad4",
+      "subject": "New package \"geotools\"",
+      "message_count": 1,
+      "participants": [
+        "Antoine Lucas"
+      ],
+      "started": "2012-01-28T19:51:55+01:00",
+      "last_reply": "2012-01-28T19:51:55+01:00",
+      "root_message_id": "msg-e11fc8f6dad4"
+    }
+  ]
+}

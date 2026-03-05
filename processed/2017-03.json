@@ -1,0 +1,146 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-03",
+  "messages": [
+    {
+      "id": "msg-2d7797927271",
+      "message_id": "<CA+HzfA5CYqGqqh+y6B14a7NviZq72Xbya1JzfBK2wkfLrEsLHw@mail.gmail.com>",
+      "from_name": "Tomas Sieger",
+      "from_email_hash": "9e9e7530ed0bf9a186569b48b72ab467038240113c71523a6b603095fc900481",
+      "date": "2017-03-03T14:56:00+01:00",
+      "subject": "[R-pkgs] new packages idendro and idendr0",
+      "subject_clean": "new packages idendro and idendr0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n let me please announce two new R packages for interactive dendrogram\nexploration: idendro and idendr0.\n\nidendro [1] enables useRs to inspect hierarchical clustering dendrograms\ninteractively: to select and color clusters, to zoom and pan the\ndendrogram, and to visualize the clustered data not only in a built-in heat\nmap, but also in any interactive plot implemented in the cranvas [2]\npackage.\n\nA lightweight version idendr0 [3] with reduced dependencies is also\navailable. This version is suited for those who have no cranvas (and its\ndependencies, namely the qtbase and qtpaint packages) installed. idendr0 is\nimplemented using base R graphics embedded in a Tcl/Tk GUI, and can be\nintegrated with GGobi dynamic interactive graphics made available to R\nusing the rggobi package [4].\n\nA comprehensive description of the idendr0 package is available as a recent\nJSS paper: https://www.jstatsoft.org/article/view/v076i10, and also as\nvignettes to the packages.\n\n[1] https://github.com/tsieger/idendro\n[2] https://github.com/ggobi/cranvas\n[3] https://cran.r-project.org/package=idendr0\n[4] https://cran.r-project.org/package=rggobi\n\nBest regards,\n Tomas Sieger\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n let me please announce two new R packages for interactive dendrogram\nexploration: idendro and idendr0.\n\nidendro [1] enables useRs to inspect hierarchical clustering dendrograms\ninteractivel",
+      "thread_id": "thread-2d7797927271",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-b297914e22f3",
+      "message_id": "<CAGxFJbQ_J+Qh_Bcq8T8sxhLWwcB_JRP=zQ5YrFAVCA9LkGp5+w@mail.gmail.com>",
+      "from_name": "Bert Gunter",
+      "from_email_hash": "be33e4b6b93b14487fe5706ad20c8119f12a9c16f94e8024bb998c159c7742b2",
+      "date": "2017-03-07T22:00:46-08:00",
+      "subject": "[R-pkgs] New package on CRAN: remindR",
+      "subject_clean": "New package on CRAN: remindR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "remindR is a simple, small package with essentially a single purpose:\nto Insert/extract text \"reminders\" into/from function source code\ncomments or as the \"comment\" attribute of any object. The intent is\nthat the former could be handy in the course of program development to\nremind one of e.g. argument requirements, to-do's, required options\nsettings, etc. The latter, which just wraps R's existing comment()\nfunction, could also be used to provide information on objects or to\nprovide simple manual \"tooltips\" for users.\n\nIf interested, please have a look at the package vignette, which\nprovide a fuller explanation of how and why this might be useful and\nhow it works.\n\nAll feedback welcome: bgunter.4567 at gmail.com\n\n-- Bert Gunter",
+      "body_snippet": "remindR is a simple, small package with essentially a single purpose:\nto Insert/extract text \"reminders\" into/from function source code\ncomments or as the \"comment\" attribute of any object. The intent",
+      "thread_id": "thread-b297914e22f3",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-20ce23663059",
+      "message_id": "<HE1PR01MB1451A4219FB5DD33AAEB7B74C0240@HE1PR01MB1451.eurprd01.prod.exchangelabs.com>",
+      "from_name": "Northrop, Paul",
+      "from_email_hash": "c85c89d12d86c2f91cbe100993ec21298c9e1279b4c6e2ff3fb6fa177d83502f",
+      "date": "2017-03-14T15:25:34Z",
+      "subject": "[R-pkgs] New package: revdbayes",
+      "subject_clean": "New package: revdbayes",
+      "in_reply_to": "<HE1PR01MB14512E397444005C01E7A17FC0240@HE1PR01MB1451.eurprd01.prod.exchangelabs.com>",
+      "references": [
+        "<HE1PR01MB14512E397444005C01E7A17FC0240@HE1PR01MB1451.eurprd01.prod.exchangelabs.com>"
+      ],
+      "body_plain": "Dear R users,\n\n\nI am pleased to announce the release on CRAN of revdbayes 1.1.0 : Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis (https://cran.r-project.org/package=revdbayes<https://cran.r-project.org/package=revdbayes>).\n\n\nrevdbayes performs random posterior sampling in univariate extreme value analyses.  It also produces posterior predictive checks, using the bayesplot package (https://cran.r-project.org/package=bayesplot), and posterior predictive inference for extreme quantities.\n\n\nPlease see the vignettes at https://cran.r-project.org/web/packages/revdbayes/vignettes/revdbayes-vignette.html and https://cran.r-project.org/web/packages/revdbayes/vignettes/revdbayes-predictive-vignette.html for details.\n\n\nAny comments, suggestions or queries are gratefully received.\n\n\nBest wishes\n\n\nPaul\n\n\nDr Paul Northrop\nDepartment of Statistical Science\nUniversity College London\nGower Street\nLondon\nWC1E 6BT\nTel: 020 7679 1869\nInternal: 41869\nE-mail: p.northrop at ucl.ac.uk\nhttp://www.homepages.ucl.ac.uk/~ucakpjn/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n\nI am pleased to announce the release on CRAN of revdbayes 1.1.0 : Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis (https://cran.r-project.org/package=revdbayes<https://c",
+      "thread_id": "thread-20ce23663059",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-91ded22a3ab7",
+      "message_id": "<007301d2a221$bc45b0b0$34d11210$@benjaminschlegel.ch>",
+      "from_name": "kontakt at benjaminschlegel.ch",
+      "from_email_hash": "94b966cc1bd84094983fe19b8ca7aa5d0238b5ca6ba5d69c2942933eb86b6a1c",
+      "date": "2017-03-21T10:01:32+01:00",
+      "subject": "[R-pkgs] New package: brant",
+      "subject_clean": "New package: brant",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce the release on CRAN of brant 0.1-1:\nhttps://cran.r-project.org/package=brant. I implemented the brant test\n(Brant, Rollin 1990) in R together with Prof. Marco Steenbergen at our\nInstitute.\n\nThe function brant() tests the parallel regression assumption for ordinal\nlogistic regressions.\n\nAny comments, suggestions or queries are gratefully received.\n\nBest\nBenjamin\n\n\n\n\nBenjamin Schlegel\nAssistent Lehrstuhl f?r Methoden\nInstitut f?r Politikwissenschaft\nUniversit?t Z?rich\nAffolternstrasse 56\nCH-8050 Z?rich\nTel. +41 44 634 62 08\nE-Mail: kontakt at benjaminschlegel.ch <mailto:kontakt at benjaminschlegel.ch> \nWebseite: https://benjaminschlegel.ch\n\n\n\n \n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce the release on CRAN of brant 0.1-1:\nhttps://cran.r-project.org/package=brant. I implemented the brant test\n(Brant, Rollin 1990) in R together with Prof. Marco S",
+      "thread_id": "thread-91ded22a3ab7",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-859b52669ab1",
+      "message_id": "<9CBE69FA-C589-4AF7-BFF1-C98BF9AEE7A8@posteo.de>",
+      "from_name": "Eugene Ha",
+      "from_email_hash": "d8858abb8118f290c8e265194b1ce793220f886c89686a40b83c98f419a0011b",
+      "date": "2017-03-26T12:18:58+02:00",
+      "subject": "[R-pkgs] valaddin (0.1.0): Make your functions more robust",
+      "subject_clean": "valaddin (0.1.0): Make your functions more robust",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear fellow R users,\n\nvaladdin (0.1.0) has been published on CRAN:\nhttps://cran.r-project.org/package=valaddin\n\nUsing valaddin, you can transform an existing function into a function with\ninput validation, without having to rewrite it with stop() or stopifnot()\nstatements. It therefore provides a convenient and consistent way to make\nyour functions more robust and more predictable, either interactively at\nthe console, or in your programs.\n\nTo learn more, see:\n\n- The landing page of the source repository:\n  https://github.com/egnha/valaddin\n\n- The package vignette, which gives an overview of use cases:\n  https://cran.r-project.org/package=valaddin/vignettes/valaddin.html\n\nBug reports and other feedback are welcome at the issues page on GitHub:\nhttps://github.com/egnha/valaddin/issues\n\n- Eugene Ha",
+      "body_snippet": "Dear fellow R users,\n\nvaladdin (0.1.0) has been published on CRAN:\nhttps://cran.r-project.org/package=valaddin\n\nUsing valaddin, you can transform an existing function into a function with\ninput valida",
+      "thread_id": "thread-859b52669ab1",
+      "thread_depth": 0,
+      "month": "2017-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2d7797927271",
+      "subject": "new packages idendro and idendr0",
+      "message_count": 1,
+      "participants": [
+        "Tomas Sieger"
+      ],
+      "started": "2017-03-03T14:56:00+01:00",
+      "last_reply": "2017-03-03T14:56:00+01:00",
+      "root_message_id": "msg-2d7797927271"
+    },
+    {
+      "id": "thread-b297914e22f3",
+      "subject": "New package on CRAN: remindR",
+      "message_count": 1,
+      "participants": [
+        "Bert Gunter"
+      ],
+      "started": "2017-03-07T22:00:46-08:00",
+      "last_reply": "2017-03-07T22:00:46-08:00",
+      "root_message_id": "msg-b297914e22f3"
+    },
+    {
+      "id": "thread-20ce23663059",
+      "subject": "New package: revdbayes",
+      "message_count": 1,
+      "participants": [
+        "Northrop, Paul"
+      ],
+      "started": "2017-03-14T15:25:34+00:00",
+      "last_reply": "2017-03-14T15:25:34+00:00",
+      "root_message_id": "msg-20ce23663059"
+    },
+    {
+      "id": "thread-91ded22a3ab7",
+      "subject": "New package: brant",
+      "message_count": 1,
+      "participants": [
+        "kontakt at benjaminschlegel.ch"
+      ],
+      "started": "2017-03-21T10:01:32+01:00",
+      "last_reply": "2017-03-21T10:01:32+01:00",
+      "root_message_id": "msg-91ded22a3ab7"
+    },
+    {
+      "id": "thread-859b52669ab1",
+      "subject": "valaddin (0.1.0): Make your functions more robust",
+      "message_count": 1,
+      "participants": [
+        "Eugene Ha"
+      ],
+      "started": "2017-03-26T12:18:58+02:00",
+      "last_reply": "2017-03-26T12:18:58+02:00",
+      "root_message_id": "msg-859b52669ab1"
+    }
+  ]
+}

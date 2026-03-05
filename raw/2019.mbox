@@ -1,0 +1,1974 @@
+From @yekirin @ending from gm@il@com  Sat Jan  5 22:43:00 2019
+From: @yekirin @ending from gm@il@com (Stanislav Syekirin)
+Date: Sat, 5 Jan 2019 22:43:00 +0100
+Subject: [R-pkgs] New package readABF for reading Axon Binary Files
+Message-ID: <CAO5UwgaeADkYcpma1ew=8w5wWS8ouRRPMcJmw+QmCTjZhG1tBA@mail.gmail.com>
+
+A new package called readABF for reading .abf, a binary format (or rather a
+family of related binary formats) used by software like Axon pClamp, is
+available.
+
+CRAN: https://cran.r-project.org/package=readABF
+GitHub: https://github.com/Zabolekar/readABF
+
+We greatly appreciate any feedback.
+
+Best regards
+Stanislav Syekirin
+
+	[[alternative HTML version deleted]]
+
+
+From @iegfried@koe@tlmeier @ending from gm@il@com  Fri Jan 11 15:25:31 2019
+From: @iegfried@koe@tlmeier @ending from gm@il@com (=?UTF-8?Q?Siegfried_K=c3=b6stlmeier?=)
+Date: Fri, 11 Jan 2019 15:25:31 +0100
+Subject: [R-pkgs] New package qrandom: True random numbers
+Message-ID: <bb46e0cb-9326-f7de-c118-043d18b543b8@gmail.com>
+
+Hi everyone,
+I would like to introduce a new package for R which is available on CRAN
+now:
+
+qrandom: True Random Numbers using the ANU Quantum Random Numbers Server
+
+Note:
+(1) This package generates true random numbers and can be used as an
+alternative for RANDOM.ORG.
+(2) There is absolutely no limit on how many true random numbers one may
+retrieve.
+(3) A sequence up to 100,000 true random integers or hexadecimal numbers
+per single request is possible and data is whether a sequence, uniform
+distribution or normal distribution.
+
+Description:
+It provides an interface to the ANU Quantum Random Number Generator
+<https://qrng.anu.edu.au/index.php> provided by the Australian National
+University. True random numbers are generated in real-time by measuring
+the quantum fluctuations of the vacuum. The electromagnetic field of the
+vacuum exhibits random fluctuations in phase and amplitude at all
+frequencies. By carefully measuring these fluctuations, one is able to
+generate ultra-high bandwidth random numbers. The quantum Random Number
+Generator is based on the papers by Symul et al., (2011)
+<https://doi.org/10.1063/1.3597793> and Haw, et al. (2015)
+<https://doi.org/10.1103/PhysRevApplied.3.054004>. The package offers
+functions to retrieve a sequence of random integers or hexadecimals and
+true random samples from a normal or uniform distribution.
+
+The R package is available via
+https://cran.r-project.org/web/packages/qrandom/index.html
+If you like to access the developmental version:
+https://github.com/skoestlmeier/qrandom
+
+Best regards,
+Siegfried K?stlmeier (Ph.D. student in Finance at the University of
+Regensburg)
+
+
+From i@vi@@er @ending from uv@@nl  Thu Jan 10 11:43:20 2019
+From: i@vi@@er @ending from uv@@nl (Ingmar Visser)
+Date: Thu, 10 Jan 2019 11:43:20 +0100
+Subject: [R-pkgs] standard errors in depmixS4 beta version 1.4 on r-forge
+Message-ID: <CABmqZHOBdG0hpdPAvw5AcmBK8HmPQeme8OeTKzi3QFvp=m9NvA@mail.gmail.com>
+
+The new 1.4 version of depmixS4 has an important (and much requested!) new
+feature: the possibility to request standard errors of estimated parameters
+through the use of a finite differences approximation of the hessian. As
+this is a critical feature we appreciate your comments and feedback when
+using the beta version of this package available from r-forge:
+https://r-forge.r-project.org/R/?group_id=148
+which can be installed using:
+*install.packages("depmixS4", repos="http://R-Forge.R-project.org
+<http://R-Forge.R-project.org>")*
+
+As soon as enough testing has been done and we are confident about the
+robustness of this new functionality we will post the package to CRAN.
+
+Happy mixing, Ingmar Visser & Maarten Speekenbrink
+
+Ingmar Visser
+Universitair Hoofddocent ontwikkelingspsychologie | Directeur College
+Psychologie
+Afdeling Psychologie | Faculteit Maatschappij- en Gedragswetenschappen |
+Universiteit van Amsterdam
+Bezoek | Nieuwe Achtergracht 129B | Kamer G 1.18
+Post | Postbus 15933 | 1001 NK Amsterdam
+Pakketpost | Valckenierstraat 59 | 1018 XE Amsterdam
+T: +31205256723 | M: +31647260824 | e: i.visser at uva.nl
+
+	[[alternative HTML version deleted]]
+
+
+From Oyv|nd@L@ng@rud @end|ng |rom @@b@no  Wed Jan 23 23:10:32 2019
+From: Oyv|nd@L@ng@rud @end|ng |rom @@b@no (=?iso-8859-1?Q?Langsrud=2C_=D8yvind?=)
+Date: Wed, 23 Jan 2019 22:10:32 +0000
+Subject: [R-pkgs] MANOVA for collinear responses with rotation testing
+ (ffmanova) + Synthetic data (RegSDC)
+Message-ID: <mailman.1098.2.1548318082.8483.r-packages@r-project.org>
+
+Hi,
+
+Package ffmanova originally released on CRAN in 2006 has now been updated to Version 1.0. It has been a stable working horse and the changes are cosmetic.
+
+Package RegSDC (Version: 0.2.0) is a new package on CRAN. The two packages are theoretically related and both make use of conditioned multivariate normal simulations - rotation testing in ffmanova and synthetic data generation in RegSDC.
+
+Package ffmanova is mainly meant as a package for multivariate responses, but it also involves a general contribution to ANOVA testing in linear models. The approach to sums of squares (Type II*) is invariant to scale changes of continuous variables and pitfalls are avoided. Try to run code below.
+
+
+ffmanova: Fifty-Fifty MANOVA
+
+General linear modeling with multiple responses (MANCOVA). An overall p-value for each model term is calculated by the 50-50 MANOVA method by Langsrud (2002) <https://10.1111/1467-9884.00320>, which handles collinear responses. Rotation testing, described by Langsrud (2005) <https://10.1007/s11222-005-4789-5>, is used to compute adjusted single response p-values according to familywise error rates and false discovery rates (FDR). The approach to FDR is described in the appendix of Moen et al. (2005) <https://10.1128/AEM.71.4.2086-2094.2005>. Unbalanced designs are handled by Type II sums of squares as argued in Langsrud (2003) <https://10.1023/A:1023260610025>. Furthermore, the Type II philosophy is extended to continuous design variables as described in Langsrud et al. (2007) <https://10.1080/02664760701594246>. This means that the method is invariant to scale changes and that common pitfalls are avoided.
+
+
+RegSDC: Information Preserving Regression-Based Tools for Statistical Disclosure Control
+
+Information Preserving Regression-Based Tools for Statistical Disclosure Control
+Implementation of the methods described in the paper with the above title: Langsrud, ?. (2019) <https://10.1007/s11222-018-9848-9>. Open view-only version at <https://rdcu.be/bfeWQ>. The package can be used to generate synthetic or hybrid continuous microdata, and the relationship to the original data can be controlled in several ways.
+
+
+Best,
+?yvind Langsrud
+
+
+set.seed(123)
+z <- 1:9
+x <- c(0, 0, 0, 10, 10, 10, 1, 1, 1)
+y <- rnorm(9)/10 + x  # y depends strongly on x
+z100 <- z + 100  # change of scale (origin)
+x100 <- x + 100  # change of scale (origin)
+library(car)  # Anova with type II as default
+library(ffmanova)
+
+# Type III depends on scale
+Anova(lm(y ~ factor(x) * z), type = 3)
+Anova(lm(y ~ factor(x) * z100), type = 3)
+
+# Even Type II depends on scale
+Anova(lm(y ~ x + I(x^2)), type = 2)
+Anova(lm(y ~ x100 + I(x100^2)), type = 2)
+
+# Type II* within ffmanova is invariant
+ffmanova(y ~ x100 + I(x100^2))
+ffmanova(y ~ z * (x100 + I(x100^2)))
+
+# Type I for comparison
+anova(lm(y ~ x100 + I(x100^2)))  # same as ffmanova
+anova(lm(y ~ z * (x100 + I(x100^2))))  # but here z is significant
+
+	[[alternative HTML version deleted]]
+
+
+From J@rom||@Fro@@@rd @end|ng |rom un|ge@ch  Mon Jan 28 03:07:44 2019
+From: J@rom||@Fro@@@rd @end|ng |rom un|ge@ch (Jaromil Frossard)
+Date: Mon, 28 Jan 2019 02:07:44 +0000
+Subject: [R-pkgs] permuco: permutation tests and multiple comparisons.
+Message-ID: <94c8e48ca3944046a7e0936151bb58ad@unige.ch>
+
+Hello everyone,
+
+We present you the permuco package, which has 2 main purposes: PERmutation tests and MUltiple COmparisons.
+
+First, the package has functions for permutation tests for parameters in linear models with nuisance variables. Several permutation methods exist in the literature to reduce the effect of nuisance variables and the permuco package allows to use them for t statistics in regression model, F tests in type 3 ANOVA, and F tests in repeated measures ANOVA. The 2 functions aovperm() and lmperm() perform these tests and their usage is similar to the parametric counterpart aov() and lm().
+
+Secondly, it uses multiple comparisons procedures with permutation tests to compare signals time by time. This problem is common when analysing electroencephalography (or fMRI) data where the response variables are EEG signals recorded for each experimental setting. In these experiments, the number of tests is equal to the number of time points of the signal which is typically in the thousands. The permuco package implements the state-of-the-art multiple comparisons procedures which uses permutations, like the cluster-mass test or the threshold-free cluster-enhancement. These procedures are powerful when the effects appear in clusters and they will control the family wise error rate (FWER) under the null hypothesis.
+
+All these procedures are explained and exemplified in detail in a vignette.
+
+We are waiting for your feedback in order to improve the next releases of permuco.
+
+Olivier Renaud & Jaromil Frossard
+
+University of Geneva
+
+URL:
+https://CRAN.R-project.org/package=permuco
+Maintainer:
+jaromil.frossard at unige.ch<mailto:jaromil.frossard at unige.ch>
+
+<mailto:jaromil.frossard at unige.ch>
+
+
+	[[alternative HTML version deleted]]
+
+
+From m@tteo@|@@|o|o @end|ng |rom gm@||@com  Mon Jan 28 13:08:08 2019
+From: m@tteo@|@@|o|o @end|ng |rom gm@||@com (Matteo Fasiolo)
+Date: Mon, 28 Jan 2019 13:08:08 +0100
+Subject: [R-pkgs] mgcViz: scalable ggplot2 visualisations for mgcv
+Message-ID: <CAC_0WE9WJDzXFXwwnc_tvYfea6+RX3_8QA+7hBqG8smZp0RZrg@mail.gmail.com>
+
+Dear useRs,
+
+ I am pleased to announce the publication of mgcViz 0.1.3 on CRAN:
+https://cran.r-project.org/web/packages/mgcViz/index.html
+
+mgcViz is an extension of mgcv, and provides a layered ggplot2-based
+visualisation framework for GAM models. In addition to layered smooth effect
+plots, mgcViz offers:
+- new scalable methods for model building and checking;
+- interactive 3D visualisations via the rgl package;
+- methods for approximate Bayesian posterior simulation.
+
+For examples see the articles on mgcViz's website:
+https://mfasiolo.github.io/mgcViz/
+while for more details on the underlying methods see:
+https://arxiv.org/abs/1809.10632
+
+The package is also available on github:
+https://github.com/mfasiolo/mgcViz
+so feel free to send comments, criticisms and feature requests via Github
+issues.
+
+Matteo Fasiolo
+
+	[[alternative HTML version deleted]]
+
+
+From |@h@rre|| @end|ng |rom vumc@org  Tue Jan 29 17:24:25 2019
+From: |@h@rre|| @end|ng |rom vumc@org (Harrell, Frank E)
+Date: Tue, 29 Jan 2019 16:24:25 +0000
+Subject: [R-pkgs] Significant Update to Hmisc Package
+In-Reply-To: <DM5PR1201MB0009361609C41F4B7B3A891E87970@DM5PR1201MB0009.namprd12.prod.outlook.com>
+References: <DM5PR1201MB0009361609C41F4B7B3A891E87970@DM5PR1201MB0009.namprd12.prod.outlook.com>
+Message-ID: <DM5PR1201MB000998F27B394AB4A6037C6987970@DM5PR1201MB0009.namprd12.prod.outlook.com>
+
+
+
+There have been a significant number of bug fixes and updates to the Hmisc package.  See the following for the list of changes: https://cran.r-project.org/web/packages/Hmisc/NEWS
+
+cran.r-project.org<https://cran.r-project.org/web/packages/Hmisc/NEWS>
+cran.r-project.org
+Changes in version 4.1-1 (2018-01-03)) * describe: quit rounding values when = 20 distinct values no matter how far apart any two values are spaced.https ...
+
+
+
+
+________________________________
+Frank E Harrell Jr      Professor       School of Medicine
+
+        Department of Biostatistics             Vanderbilt University
+
+
+	[[alternative HTML version deleted]]
+
+
+From wh|tney@cory @end|ng |rom gm@||@com  Wed Jan 30 15:43:04 2019
+From: wh|tney@cory @end|ng |rom gm@||@com (Cory Whitney)
+Date: Wed, 30 Jan 2019 15:43:04 +0100
+Subject: [R-pkgs] ethnobotanyR v0.1.3
+Message-ID: <FF905256-DACF-4AD9-84E9-F5063FF058AA@gmail.com>
+
+Many ethnobotanists are calculating indices and performing quantitative analysis with excel. Not any more! Now they can use the ethnobotanyR package to calculate common quantitative ethnobotany indices to assess the cultural significance of plant species based on informant consensus. The package closely follows two papers, one by Tardio and Pardo-de-Santayana (2008) and another by Whitney et al. (2018).
+
+The CRAN page for the ethnobotanyR package
+https://cran.r-project.org/web/packages/ethnobotanyR/index.html
+
+A vignette that describes it i ethnobotanyR greater detail:
+https://cran.r-project.org/web/packages/ethnobotanyR/vignettes/ethnobotanyr_vignette.html
+
+The main papers behind ethnobotanyR: 
+
+Tardio, J., and M. Pardo-de-Santayana, 2008. Cultural Importance Indices: A Comparative Analysis Based on the Useful Wild Plants of Southern Cantabria (Northern Spain) 1. Economic Botany, 62(1), 24-39. https://doi.org/10.1007/s12231-007-9004-5.
+
+Whitney, C. W., Bahati, J., and Gebauer, J. (2018), Ethnobotany and agrobiodiversity; valuation of plants in the homegardens of southwestern Uganda. Ethnobiology Letters, 9(2), 90-100. https://doi.org/10.14237/ebl.9.2.2018.503
+
+The future of ethnobotanyR: 
+The package will be constantly updated with new functions and methods. If you have ideas, suggestions, metrics or methods that you would like to include please contact the package maintainer Cory Whitney <whitney.cory at gmail.com>
+
+
+From jkk@p|@n6 @end|ng |rom gm@||@com  Mon Feb  4 15:05:37 2019
+From: jkk@p|@n6 @end|ng |rom gm@||@com (Jacob)
+Date: Mon, 4 Feb 2019 09:05:37 -0500
+Subject: [R-pkgs] Major Update to asciiSetupReader Package
+Message-ID: <CAE-oFUdnZ=g8TDZyhtZ2cmudWt-Lhk4nLnF_P_hTc9rkgXbe-A@mail.gmail.com>
+
+ The latest version of the package asciiSetupReader includes a number of
+major improvements and bug fixes. This package lets you read in .dat+.sps
+and .dat+.sas pair files.
+
+See the following for an overview of the package:
+https://jacobkap.github.io/asciiSetupReader/
+
+
+For a list of changes please see here:
+https://cran.r-project.org/web/packages/asciiSetupReader/news/news.html
+
+Best,
+Jacob
+
+	[[alternative HTML version deleted]]
+
+
+From bruce@@w|h@rt @end|ng |rom gm@||@com  Tue Feb  5 18:54:20 2019
+From: bruce@@w|h@rt @end|ng |rom gm@||@com (Bruce Swihart)
+Date: Tue, 5 Feb 2019 12:54:20 -0500
+Subject: [R-pkgs] Jim Lindsey's packages back on CRAN
+Message-ID: <CAAHpScqk1jhXDomtjU_Z+M-gX7Qpk1UWuLHBX-N8DZa2z=KGPQ@mail.gmail.com>
+
+R Users,
+
+Jim Lindsey's R packages:
+
+  * event: Event History Procedures and Models
+  * gnlm: Generalized Nonlinear Regression Models
+  * growth: Multivariate Normal and Elliptically-Contoured Repeated
+Measurements Models
+  * repeated: Non-Normal Repeated Measurements Models
+  * rmutil: Utilities for Nonlinear Regression and Repeated Measurements
+Models
+  * stable: Probability Functions and Generalized Regression Models for
+Stable Distributions
+
+are now being maintained on CRAN and developed with a Github repo
+workflow.   There are still off-CRAN versions and supporting materials
+available at his website (http://www.commanster.eu/rcode.html).  I have
+added some code to help equate and transform the pm=0, pm=1 Nolan
+parameterizations with the parameterization provided in stable (see more at
+https://github.com/swihart/stable).
+
+All the best,
+Bruce
+
+	[[alternative HTML version deleted]]
+
+
+From j|en@gu90 @end|ng |rom gm@||@com  Thu Mar 21 22:09:51 2019
+From: j|en@gu90 @end|ng |rom gm@||@com (Jiena McLellan)
+Date: Thu, 21 Mar 2019 16:09:51 -0500
+Subject: [R-pkgs] noteMD v0.1.0 on CRAN
+Message-ID: <CAB+AFnLrRb4ywqTw+oMsu3mNz1kMR-WRoS-r5FK472vS8amkRQ@mail.gmail.com>
+
+ R and Shiny Developers,
+
+Package noteMD v0.1.0 is released on CRAN now.
+When building a 'shiny' app to generate reports (pdf or 'word'), we can
+insert a comment box in front-end side for user to write down notes and
+user this package to document those notes in reports.
+
+
+CRAN:
+https://cran.r-project.org/web/packages/noteMD/index.html
+Github:
+https://github.com/jienagu/noteMD
+
+Welcome to give me any feedback!
+
+Best Regards,
+Jiena
+
+	[[alternative HTML version deleted]]
+
+
+From ruetten@uer @end|ng |rom @ow|@un|-k|@de  Fri Mar 22 12:41:30 2019
+From: ruetten@uer @end|ng |rom @ow|@un|-k|@de (=?iso-8859-1?Q?Tobias_R=FCttenauer?=)
+Date: Fri, 22 Mar 2019 12:41:30 +0100
+Subject: [R-pkgs] New package feisr: Fixed effects individual slope models
+Message-ID: <001d01d4e0a4$31a9d8a0$94fd89e0$@sowi.uni-kl.de>
+
+Dear R users,
+
+Are you worried about the parallel trends assumption in your panel
+regression? Use fixed effects individual slope models, controlling for
+heterogeneous trends!
+
+I am very pleased to announce that the package feisr is now available on
+CRAN!
+
+CRAN: https://cran.r-project.org/package=feisr
+GitHub: https://github.com/ruettenauer/feisr
+
+The packages feisr provides a function to estimate fixed effects individual
+slope (FEIS) models. FEIS models constitute a more general version of the
+often used conventional fixed effects (FE) panel models. In contrast to
+conventional fixed effects models, data are not person ?demeaned?, but
+'detrended? by the predicted individual slope of each person or group, which
+relaxes the assumptions of parallel trends between treated and untreated
+groups.
+
+We are happy about any comments or feedback!
+
+Best regards,
+Tobias
+
+
+Tobias R?ttenauer
+Department of Social Sciences
+TU Kaiserslautern
+Erwin-Schroedinger-Str. 57
+67663 Kaiserslautern
+
+ruettenauer at sowi.uni-kl.de
+Tel.: +49 631 205 5785
+
+
+From He|nzen@Eth@n @end|ng |rom m@yo@edu  Tue Mar 26 15:17:04 2019
+From: He|nzen@Eth@n @end|ng |rom m@yo@edu (Heinzen, Ethan P.)
+Date: Tue, 26 Mar 2019 14:17:04 +0000
+Subject: [R-pkgs] arsenal v3.0.0: An Arsenal of 'R' Functions for
+ Large-Scale Statistical Summaries
+Message-ID: <b23057$bcgv6f@ironport10.mayo.edu>
+
+I'm pleased to announce the release of the "arsenal" package v3.0.0 on CRAN (https://cran.r-project.org/package=arsenal)!
+
+"arsenal" has experienced some major growth in the last few months, starting with the release of v2.0.0 in January.  We tried to maintain backwards compatibility wherever possible, but had to eliminate it in some places.  With that said, here's the latest and greatest of "arsenal":
+
+
+1.      The compare() function was renamed to comparedf(), to avoid conflicts with the "testthat" package.  comparedf() is used to compare two data.frames, and now includes additional functionality to specify which variables should be compared if they have different column names.
+
+2.      tableby() is our Table-1-like function.  It now accepts a strata term and multiple left-hand-side terms.
+
+3.      paired() piggybacks off of tableby() for comparisons across two time points.
+
+4.      modelsum() runs [lm, coxph, glm, etc.] models on multiple variables, adjusted for the same covariates.  It also accepts a strata term and multiple left-hand-side terms.
+
+5.      freqlist() generates frequency tables, much like SAS's "proc freq" with the "list" option.  It, too, accepts a strata term and multiple left-hand-side terms.
+
+6.      write2html(), write2pdf(), and write2word() are capable of outputting tables to documents without needing to open a whole new .Rmd script.
+
+7.      formulize() is a useful function for creating formulas from character vectors (or columns of data.frames).
+
+As always, contributions and bug reports are welcome on arsenal's GitHub page: https://github.com/eheinzen/arsenal
+
+Cheers!
+Ethan Heinzen
+heinzen.ethan at mayo.edu<mailto:heinzen.ethan at mayo.edu>
+https://github.com/eheinzen
+
+
+	[[alternative HTML version deleted]]
+
+
+From krzb@r @end|ng |rom protonm@||@ch  Fri Apr  5 13:51:57 2019
+From: krzb@r @end|ng |rom protonm@||@ch (Krzysztof Bartoszek)
+Date: Fri, 05 Apr 2019 11:51:57 +0000
+Subject: [R-pkgs] new R packages for phylogenetic compartive methods
+Message-ID: <AsoSsBYvyQ3-whlaUhLe6ss2y4wN83_AbvZlytyiScQLUqcyMgHh60TmpsQnpJ7_FNLRU-6BdHFFA3pmKh5m6Hs4kYWCte3dks7mLO53lDw=@protonmail.ch>
+
+Dear all,
+I wanted to let you know about four phylogenetic comparative methods (PCM) packages that have become available on (3 on CRAN and 1 on GitHub) recently that hopefully will be interesting to somebody. Three of them go significantly beyond the Brownian motion (BM) and Ornstein-Uhlenbeck (OU) processes.
+
+1) There is a new version of mvSLOUCH available. The most important change is that
+the inference engine has been completely rewritten. Instead of directly evaluating the multivariate normal density formula it uses the PCMBase (R package, see below) to obtain the value of the likelihood in linear (in number of tip species) instead of quadratic time. Furthermore, as there is no need to store the between-species-between-traits variance covariance matrix much larger clades, then previously can be handled. From the user's perspective the main changes are the interface and increased functionality:
+a) the phylogeny has to be now in the phylo (instead of ouch) format,
+b) the trait data has to be a matrix (and not a data frame),
+c) the package can automatically compare multiple models (BM, OUOU, OUBM and different assumed structures on the drift and diffusion matrices of the multivariate OU procees), function  estimate.evolutionary.model(), and return the one with the lowest AICc (the set of models to consider can either be automatically generated or user defined, see generate.model.setups()),
+d) the user can set entries of the OU model's parameters to desired values (e.g. 0) and this will be fixed through the whole estimation,
+e) a number of control parameters to be passed to the estimation procedure and optim() are available for the user to manipulate
+
+2) PCMFit: the goal of PCMFit is to provide a generic tool for inference and selection of phylogenetic comparative models (PCMs). Currently, the package implements Gaussian and mixed Gaussian phylogenetic models (MGPM) over all tree types (including non-ultrametric and polytomic trees). The package supports non-existing traits or missing measurements for some of the traits on some of the species. The package supports specifying measurement error associated with each tip of the tree or inferring a measurement error parameter for a group of tips. The Gaussian phylogenetic models include various parametrizations of Brownian motion (BM) and Ornstein-Uhlenbeck (OU) multivariate branching processes. The mixed Gaussian models represent models with shifts in the model parameters as well as the type of model at points of the tree. Each shift-point is described as a pair of a shift-node and associated type of model (e.g. OU or BM) driving the trait evolution from the beginning of the branch leading to the shift-node toward the shift-node and its descendants until reaching a tip or another shift-point. The function PCMFit is used to fit a given PCM or a MGPM for a given tree with specified shift-points. The function PCMFitMixed is used to fit an ensemble of possible MGPMs over a tree for which the shift-points are unknown. This function can perform model selection of the best MGPM for a given tree and data according to an information loss function such as the Akaike information criterion (AIC). The package has been thoroughly tested and applied to real data in the related research article entitled "Automatic Generation of Evolutionary Hypotheses using Mixed Gaussian Phylogenetic Models" (currently in review). Currently, the package is available from https://github.com/venelin/PCMFit . The web-page https://venelin.github.io/PCMFit/ provides access to documentation and related resources.
+
+3) PCMBase: the computational engine that mvSLOUCH uses. Given a phylogeny (phylo format), traits' (multivariate) measurements and a user provided model of the traits' evolution the package calculates the likelihood. The family of allowed models is rather general. The package can handle any model for which lineages after speciation do not interact and the density of the transition along a branch is:
+i) Gaussian
+ii) the mean at the end of the branch depends linearly on the trait value at the start of the branch
+iii) the covariance matrix does not depend on the value at the start of the branch
+The likelihood is calculated in linear in number of tip species time.
+The package is described in
+Venelin Mitov, Krzysztof Bartoszek, Georgios Asimomitis, Tanja Stadler (2018).
+Fast likelihood evaluation for multivariate phylogenetic comparative methods: the PCMBase R package
+arXiv URL https://arxiv.org/abs/1809.09014 .
+
+3) pcmabc: a package that allows for simulation and ABC estimation under any model for which the user can provide a function to simulate trait (discrete/continuous, uni- or multivariate) evolution along a branch. Special support is given for SDE based models, using the yuima package.
+Krzysztof Bartoszek, Pietro Lio' (2019) Modelling trait dependent speciation with Approximate Bayesian Computation. Acta Physica Polonica B Proceedings Supplement 12(1): 25-47.
+URL https://www.actaphys.uj.edu.pl/fulltext?series=Sup&vol=12&page=25 .
+
+Hope somebody will find these useful
+
+Best wishes
+Krzysztof Bartoszek
+
+Sent with ProtonMail Secure Email.
+	[[alternative HTML version deleted]]
+
+
+From M@A@Young @end|ng |rom @oton@@c@uk  Tue Apr  9 12:59:55 2019
+From: M@A@Young @end|ng |rom @oton@@c@uk (Young M.A.)
+Date: Tue, 9 Apr 2019 10:59:55 +0000
+Subject: [R-pkgs] New package to query  the OpenTripPlanner (OTP) API
+Message-ID: <AM0PR04MB62917659F74A2A29392EF3E2E92D0@AM0PR04MB6291.eurprd04.prod.outlook.com>
+
+Dear all
+
+A new R package 'otpr' is now available on CRAN. It's a wrapper for the OpenTripPlanner (OTP) API and is primarily aimed at researchers and transport planners who want to use OTP to carry out accessibility studies or generate variables for transport models. The package consists of four main functions:
+
+otp_connect() - defines and tests the connection to an OTP instance.
+otp_get_distance() - gets the distance in metres between an origin and destination on the street and/or path network by specified mode. 
+otp_get_times() - in its simplest use case gets the journey time between an origin and destination by specified mode(s). It can also return more detailed information, breaking down the journey by transit time, walking time, waiting time and the number of transfers. 
+otp_get_isochrone() - returns one or more travel time isochrones for a location in GeoJSON format. These can be generated either from or to the specified location. 
+
+The package currently supports a subset of the parameters that are available for the OTP 'planner' and 'isochrone' API resources. This is based on my experience of using OTP to generate this type of data and to keep the functions relatively simple from the user perspective. For a future release I will be allowing a larger range of parameters to be optionally passed through to the API query, giving greater flexibility but still keeping the external functions simple for users who don't need such detailed control. 
+
+For more information, including code examples, take a look at the GitHub repository for the package: 
+
+https://github.com/marcusyoung/otpr
+ 
+I also have an OTP intermediate level tutorial - 'creating and querying your own multi-modal route planner' -  which incorporates use of the package:
+
+https://github.com/marcusyoung/otp-tutorial
+
+I'd welcome any feedback as well as suggestions for future development. 
+
+Best wishes
+
+Marcus
+
+---------------------------------------------------
+Dr Marcus Young
+Research Fellow
+Transportation Research Group
+University of Southampton
+
+
+From Rom@n@M|nguez @end|ng |rom uc|m@e@  Thu Apr 11 12:54:23 2019
+From: Rom@n@M|nguez @end|ng |rom uc|m@e@ (Roman Minguez Salido)
+Date: Thu, 11 Apr 2019 10:54:23 +0000
+Subject: [R-pkgs] Releasing new package on CRAN
+Message-ID: <DB7PR01MB442741969CBAE86F116AC225E32F0@DB7PR01MB4427.eurprd01.prod.exchangelabs.com>
+
+Dear R-users:
+
+First, we apologize for possible crossed messages.
+
+It is a pleasure for us to have the opportunity to present a new R package, called 'spsur' available in  https://cran.r-project.org/web/packages/spsur/index.html
+
+This is a specific R package for the estimation of Spatial Seemingly Unrelated Regression models by maximum likelihood or instrumental variable procedures. Moreover, 'spsur' implements a collection of Lagrange Multipliers and Likelihood Ratios to test for misspecifications in SUR models.
+
+If you would like, you can install 'spsur' directly from CRAN repository. There you will find also a vignette including some examples, available also in https://cran.r-project.org/web/packages/spsur/vignettes/spsur-vignette.html
+
+This is the first version of 'spsur'. We want to improve it in the future, therefore, any suggestions or comments related to the package would be very welcome. Your expertise and your feedback would be very important for us.
+
+We hope you find this package interesting for your research and empirical work.
+
+Thanks in advance for your feedback,
+
+Fernando L?pez, Rom?n M?nguez and Jes?s Mur.
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From moh_|c|@ @end|ng |rom y@hoo@com  Wed Apr 17 10:59:56 2019
+From: moh_|c|@ @end|ng |rom y@hoo@com (mohammed ibrahim)
+Date: Wed, 17 Apr 2019 08:59:56 +0000 (UTC)
+Subject: [R-pkgs] dbparser v1.0.1: DrugBank XML Database Parser
+References: <1898397232.797436.1555491596663.ref@mail.yahoo.com>
+Message-ID: <1898397232.797436.1555491596663@mail.yahoo.com>
+
+Hello,I am pleased to announce the release of dbparser v1.0.1 on CRAN https://cran.r-project.org/web/packages/dbparser/index.htmlThe new release include:? ? * Check if drugbank database exist before parsing? ? * Add support for international_brands and salts elements? ? * Properly rename some features to have clear names? ? * Reduce datasets size by getting unique rows only? ? * Support reading zip file containing DrugBank xml database? ? * Fix previous version CRAN Note? ? * Improve functions documentation? ? * Refactor unused functions? ? * Remove Count features from drug data set? ? * Fix several typos in documentation and code? ? * Fix consistency issue of CLASS of Data Frames Returned by dbparser
+As always, contributions and bug reports are welcome on https://dainanahan.github.io/dbparser/index.html
+
+Best Regards,Mohammed Ali
+MSc in Applied Data Science & Big Data
+mohammed.ali at edu.dsti.institute
++20 01000481973
+eg.linkedin.com/in/mohammedali85
+	[[alternative HTML version deleted]]
+
+
+From kog@|ur@he@r @end|ng |rom gm@||@com  Mon Apr 22 20:53:14 2019
+From: kog@|ur@he@r @end|ng |rom gm@||@com (Udaya B. Kogalur)
+Date: Mon, 22 Apr 2019 14:53:14 -0400
+Subject: [R-pkgs] randomForestSRC 2.9.0 is now available
+Message-ID: <CACsjJ_ceQoXq93LsfriKbav2=-rJnJVWBsoCdRp=fwdhjT_Vzw@mail.gmail.com>
+
+Dear useRs:
+
+It's been some time since we last sent out an announcement, so this one
+will cover more than just the last update.
+
+The latest release of randomForestSRC is now available on CRAN at:
+
+https://CRAN.R-project.org/package=randomForestSRC
+
+The GitHub repository, through which we prefer to receive bug reports, is
+at:
+
+https://github.com/kogalur/randomForestSRC
+
+If you do find issues, please use:
+
+https://github.com/kogalur/randomForestSRC/issues
+
+and take the time to post a minimal script (and data set if necessary) that
+isolates the error.
+
+Additional documentation can be found at:
+
+https://kogalur.github.io/randomForestSRC/
+
+------------------------------------------
+Details are as follows:
+
+Ensembles in regression now support Greenwald-Khanna approximate quantile
+queries via rfsrc(), predict.rfsrc() and the new wrapper
+quantileReg.rfsrc(). Related to this, a new split rule "quantile.regr" has
+been added.
+
+Another new wrapper, imbalanced.rfsrc(), implements various solutions to
+the two-class imbalanced problem, including the newly proposed
+quantile-classifier approach of O'Brien and Ishwaran (2017). This also
+includes Breiman's balanced random forests under-sampling of the majority
+class.  Performance is assessed using the G-mean, but misclassification
+error can be requested.
+
+Also, the new parameter get.tree in predict.rfsrc() allows users to extract
+the ensembles for a single tree or subset of trees over the forest.
+
+The default nodesize for survival and competing risk has been changed to 15.
+
+We've added new splitrules "auc" and "entropy" for classification. A new
+variable importance methodology called Holdout VIMP has been implemented.
+Here, we exclude a variable from a subset of trees and compare the error
+rates between those trees in which the variables was included against those
+in which it was excluded.  The key point here is that no permutation of a
+variable is conducted.  See holdout.vimp.rfsrc() and the associated Rd file
+for more information.
+
+Finally, some function names were changed as a general move towards name
+uniformity in the package.  Sorry about that.
+
+------------------------------------------
+Additional side-notes:
+
+Unfortunately there has been no further work on the Spark build.  However,
+the Java wrappers have been kept up to date, and the Hello World script is
+still functional.  Instructions are provided here:
+
+https://kogalur.github.io/randomForestSRC/building.html
+
+For those requesting and still awaiting CPU performance enhancements, our
+continued apologies.  Our focus has been methodological, but our intention
+is to address performance in the next build.  We promise.
+
+Thank you!
+
+Udaya B. Kogalur, Ph.D.
+ubkogalur at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From jurr|@@n@n@ge|kerke @end|ng |rom gm@||@com  Thu Apr 25 12:25:04 2019
+From: jurr|@@n@n@ge|kerke @end|ng |rom gm@||@com (Jurriaan Nagelkerke)
+Date: Thu, 25 Apr 2019 12:25:04 +0200
+Subject: [R-pkgs] new CRAN package : modelplotr
+Message-ID: <CAGdxdCKc45-RWtKB3BDLPPujBq9K3GRCxWbKFXsQ-2nBdtzwyQ@mail.gmail.com>
+
+Hi there!
+
+We would like to share the news that our package *modelplotr *has recently
+been added to CRAN with your audience. Here's a some text for the
+introduction:
+
+---------------------
+*Title:*
+
+*modelplotr v1.0 now on CRAN: Visualize the Business Value of your
+Predictive Models *
+
+*Visual:*
+https://modelplot.github.io/img/modelplotr_CRAN-topviz-1.gif
+
+*Intro text:*
+Modelplotr - Build plots in R to evaluate the business value of predictive
+models. Now on CRAN with new (financial) plots, support for caret, mlr,
+h2o, keras and other models and new features to customize your plots.
+
+Read more about modelplotr on our blog:   https://modelplot.github.io/
+<https://modelplot.github.io/intro_modelplotr.html>  . Here you find an
+introducting blog ( https://modelplot.github.io/intro_modelplotr.html  ) as
+well as more info on how to use modelplotr (
+https://modelplot.github.io/vignette_modelplotr.html  )
+
+Questions, remarks, suggestions? Please let uw know via github!
+---------------------
+
+
+Hope you like to share this with your R audience!
+
+Kind regards,
+
+Jurriaan Nagelkerke
+jurriaan.nagelkerke at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From r|cc@rdo@porrec@ @end|ng |rom m|r@|-@o|ut|on@@com  Mon May  6 11:42:58 2019
+From: r|cc@rdo@porrec@ @end|ng |rom m|r@|-@o|ut|on@@com (Riccardo Porreca)
+Date: Mon, 6 May 2019 11:42:58 +0200
+Subject: [R-pkgs] rTRNG: Advanced and Parallel Random Number Generation via
+ TRNG
+Message-ID: <CAHBAGFVJrDQ1yrxjUUbC8UNe_Dh+rFFuwvcH7Q7+Ht7C0Z7dCw@mail.gmail.com>
+
+We are happy to announce the first CRAN release of rTRNG version 4.20-1.
+
+rTRNG is a package for advanced parallel Random Number Generation in
+R. It relies on TRNG (Tina?s Random Number Generator,
+<https://numbercrunch.de/trng/>), a state-of-the-art C++ pseudo-random
+number generator library for sequential and parallel Monte Carlo
+simulations. In particular, parallel random number generators provided
+by TRNG can be manipulated by jump and split operations. These allow
+to jump ahead by an arbitrary number of steps and to split a sequence
+into any desired sub-sequence(s), thus enabling techniques suitable to
+parallel algorithms, such as block-splitting and leapfrogging.
+
+The package provides the R user with access to the functionality of
+the underlying TRNG C++ library. It embeds TRNG sources and headers
+and makes them available to other projects combining R with C++.
+Beyond this, rTRNG exposes the creation, manipulation and use of
+pseudo-random streams to R, via Rcpp and RcppParallel.
+
+rTRNG on CRAN
+<https://cran.r-project.org/package=rTRNG>
+Public repository
+<https://github.com/miraisolutions/rTRNG#readme>
+
+More on the history behind rTRNG and its way to CRAN at
+<https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/>
+
+
+-- 
+Riccardo Porreca
+Senior Solutions Consultant
+Mirai Solutions GmbH
+riccardo.porreca at mirai-solutions.com
+
+
+From |br@h|mmyr|@m7 @end|ng |rom gm@||@com  Thu May 23 03:21:21 2019
+From: |br@h|mmyr|@m7 @end|ng |rom gm@||@com (Myriam Ibrahim)
+Date: Wed, 22 May 2019 21:21:21 -0400
+Subject: [R-pkgs] Release Announcement : Riex Package
+In-Reply-To: <CAKzWEHQFakehnf-WhkeO-Lrd-caXtzWvDzSkruTBiUqUhn6N_w@mail.gmail.com>
+References: <CAKzWEHQFakehnf-WhkeO-Lrd-caXtzWvDzSkruTBiUqUhn6N_w@mail.gmail.com>
+Message-ID: <CAKzWEHT3H+eHvTb8bY8KP3UeWkx4=TMkD3RUvefwcz=eU9wkeA@mail.gmail.com>
+
+Hi,
+
+Please find below the links related to 'Riex' package release announcement.
+If you have any questions or need additional information,  let me know.
+
+   - Release Announcement *-  *https://myriamibrahim.com/portfolio/riex/
+   - CRAN  - https://cran.r-project.org/web/packages/Riex/index.html
+   - Github - https://github.com/TheEliteAnalyst/Riex
+
+Thank you for all your efforts and support to R Community !
+
+Best regards,
+Myriam Ibrahim
+
+
+On Fri, May 17, 2019 at 12:32 PM Myriam Ibrahim <ibrahimmyriam7 at gmail.com>
+wrote:
+
+> Hi,
+>
+> Please find attached the .md  and .html files for 'Riex' release
+> announcement.
+>
+> I'm hoping this is the designated email for that purpose. If you believe
+> this is incorrect, please advise who should I reach out to.
+>
+> Thank you in advance for your help and support. If you have any questions
+> or need additional details about this request, let me know.
+>
+> Best regards,
+> Myriam
+>
+
+	[[alternative HTML version deleted]]
+
+
+From m@rc_@chw@rtz @end|ng |rom me@com  Tue May 28 14:14:14 2019
+From: m@rc_@chw@rtz @end|ng |rom me@com (Marc Schwartz)
+Date: Tue, 28 May 2019 08:14:14 -0400
+Subject: [R-pkgs] WriteXLS version 5.0.0 now available
+Message-ID: <63DFFC50-CA0B-48EC-B09A-E11AD86715BD@me.com>
+
+Hi all,
+
+I am pleased to announce that WriteXLS version 5.0.0 is now available on CRAN:
+
+  https://cran.r-project.org/web/packages/WriteXLS/index.html
+
+This supersedes version 4.1.0 and should appear on your local CRAN mirror in due course, if not there already.
+
+WriteXLS, first released in 2009, is a cross-platform, Perl-based R function to create Excel 2003 (XLS) and Excel 2007 (XLSX) files from one or more data frames. 
+
+The primary change in this major new version is improved support for Unicode/UTF-8 variable width character sets, especially on Windows. This is accomplished via the use of writeLines(..., useBytes = TRUE), rather than write.table(), to create intermediate CSV files from the source R data frames. These exported CSV files are then parsed by Perl scripts to create the resultant Excel file.
+
+The prior use of write.table() to create the CSV files could result in the re-encoding of the content of the CSV files into the locale of the computer upon which the code is running. This could result in the loss of the source character encoding used in the originating R data frames, where variable width character sets are in use. This was primarily an issue on Windows, given the limitations of Unicode/UTF-8 support on that OS.
+
+I want to thank Hamid Moshen for first raising this issue in late March, providing test datasets in multiple Unicode/UTF-8 character sets that I could use to reproduce and correct the issues, and his testing of the changes required.
+
+Warm regards,
+
+Marc Schwartz
+
+
+From @|ex|@@@@rd@ @end|ng |rom gm@||@com  Tue Jun  4 19:54:45 2019
+From: @|ex|@@@@rd@ @end|ng |rom gm@||@com (Alexis Sarda)
+Date: Tue, 4 Jun 2019 19:54:45 +0200
+Subject: [R-pkgs] table.express: use dplyr verbs to build data.table
+ expressions
+Message-ID: <CAA4naPDVjE=UWYM85dJkywzrYUKYkw=QV_m=e1LZrTx_X=S-GA@mail.gmail.com>
+
+Hello everyone,
+
+I like the expressiveness of dplyr's data manipulation verbs, but I also
+appreciate the optimizations offered by data.table, so I figured: why not
+both?
+
+The table.express package leverages the rlang package to bridge dplyr and
+data.table by essentially parsing and chaining the operations specified by
+the verbs,
+building expressions that are ultimately evaluated by data.table, letting
+it handle optimizations as usual. Some custom verbs are also added to
+facilitate building expressions that work on a subset of the data.
+
+The package with single-table verbs is now on CRAN, and the documentation
+can also be browsed online at
+https://asardaes.github.io/table.express/index.html
+
+Regards,
+Alexis.
+
+	[[alternative HTML version deleted]]
+
+
+From chr|@topher@@ber@on @end|ng |rom humbo|dt@edu  Sat Jun 15 02:07:55 2019
+From: chr|@topher@@ber@on @end|ng |rom humbo|dt@edu (Christopher L Aberson)
+Date: Fri, 14 Jun 2019 17:07:55 -0700
+Subject: [R-pkgs] New CRAN package: pwr2ppl
+Message-ID: <CAJa0+SuHH-cgLTeAYp2vefP26NZGM27ABRzU2zBXtg-9E+0xYw@mail.gmail.com>
+
+pwr2ppl contains protocols for running a wide range of power analyses.
+Analyses range from simple approaches such as t-test and correlations
+to multifactor ANOVA (between and within subjects, linear mixed model
+approaches) and regression-based approaches (basic multiple
+regression, moderated regression, mediation, and logistic regression).
+
+These protocols accompany the book Applied Power Analysis for the
+Behavioral Sciences (2nd ed.).
+https://www.routledge.com/Applied-Power-Analysis-for-the-Behavioral-Sciences-2nd-Edition-2nd-Edition/Aberson/p/book/9781138044593
+
+The book gives lots of illustrative examples of using the code but is
+not necessary for using the package.
+
+CRAN: https://cran.r-project.org/web/packages/pwr2ppl/index.html
+GitHub: https://github.com/chrisaberson/pwr2ppl
+
+Best,
+
+Chris Aberson
+
+	[[alternative HTML version deleted]]
+
+
+From m@rc@@gen|@ @end|ng |rom gm@||@com  Tue Jun 18 09:53:35 2019
+From: m@rc@@gen|@ @end|ng |rom gm@||@com (Agenis-Nevers Marc)
+Date: Tue, 18 Jun 2019 09:53:35 +0200
+Subject: [R-pkgs] short presentation of the new package "GuessCompx"
+Message-ID: <CAGkBxuHrAum=1X0PT_za24fdht_UY3R8gKkWsC4VFrB5X7svFA@mail.gmail.com>
+
+Dear R community members, please find here a short presentation of our new
+package.
+
+We introduce GuessCompx, a new R package that makes an empirical guess on
+the time and memory complexities of an algorithm or a function. It will
+test multiple, increasing-sizes samples of the user?s data and try to fit
+one of seven complexity functions : O(n), O(n2), O(log(n)), etc. Based on a
+best fit procedure using LOO-MSE error, it also predicts the full
+computation time and memory usage on the whole dataset. It relies on the
+base R functions `system.time` and `memory.size `, the latter being only
+suitable for Windows users. Together with this result, a plot and a
+significance test are also returned.
+
+Complexity is assessed with regard to the user?s actual dataset through its
+size (and no other parameter). We provide several examples showing some use
+case (distance function, time series, custom function) and how to best tune
+the parameters.
+
+The subject of empirical computational complexity has been relatively
+little studied in computer sciences, and such a package provides a
+convenient and simple procedure to estimate it, thus preventing the user to
+run any computation for an unknown amount of time. Empirical fit does not
+guarantee to find the true complexity function but approaches it in an
+acceptable way. The package does not require to have the code of the target
+function.
+
+https://cran.r-project.org/package=GuessCompx
+
+Regards,
+
+Marc Agenis
+Neeraj Bokde
+marc.agenis at gmail.com
++33 (0)6 19 60 91 23
+
+	[[alternative HTML version deleted]]
+
+
+From n|co|o@m@rg@r|te||@ @end|ng |rom gm@||@com  Tue Jun 18 16:43:27 2019
+From: n|co|o@m@rg@r|te||@ @end|ng |rom gm@||@com (=?UTF-8?Q?Nicol=C3=B2_Margaritella?=)
+Date: Tue, 18 Jun 2019 15:43:27 +0100
+Subject: [R-pkgs] New package APFr for Average Power Function & Bayes FDR
+ robust estimation
+Message-ID: <CALLd2zBrD3tYSQepFVY2CPeyNurs=_AW9U3aLtvEUOsLa-yC3w@mail.gmail.com>
+
+A new package called APFr for threshold selection in large scale inference
+problems using robust estimates of Average Power Function and Bayes FDR, is
+available.
+
+CRAN: https://cran.r-project.org/web/packages/APFr/index.html
+
+An illustrative example can be found at:
+https://www.researchgate.net/publication/333852294_APFr_-R_package_for_APF_Bayes_FDR_robust_estimationpdf
+
+Kind regards,
+Nicolo' Margaritella
+
+	[[alternative HTML version deleted]]
+
+
+From pnov@ck-gott@h@|| @end|ng |rom ben@edu  Fri Jul  5 18:37:30 2019
+From: pnov@ck-gott@h@|| @end|ng |rom ben@edu (Phil Novack-Gottshall)
+Date: Fri, 5 Jul 2019 11:37:30 -0500
+Subject: [R-pkgs] Update for R package KScorrect for K-S goodness-of-fit
+ tests
+Message-ID: <a87f8a21-cd5f-e1b4-1779-23ca4c27e589@ben.edu>
+
+Greetings,
+
+We wanted to announce v. 1.4.0 of the R package 'KScorrect', which 
+carries out the Lilliefors correction to the Kolmogorov-Smirnoff (K-S) 
+test for use in (one-sample) goodness-of-fit tests.
+
+Aside from several minor changes, the biggest change is that the Monte 
+Carlo algorithm now supports parallel implementation, using the 
+platform-independent 'doParallel' and 'foreach' infrastructure. For 
+complex distributions (such as Weibull, gamma, and mixture of normals), 
+running in parallel can significantly reduce computation time.
+
+It's well-established that it inappropriate to use the K-S test when 
+sample statistics are used to estimate parameters, which results in 
+substantially increased Type-II errors. This warning is mentioned in the 
+ks.test Help page, but no general solution is currently available for 
+non-normal distributions. The 'KScorrect' package corrects for the bias 
+by using Monte Carlo simulation, a solution first recommended by 
+Lilliefors (1967) but not widely heeded.
+
+Distribution functions are provided in the package for the loguniform 
+and univariate mixture of normal distributions, which are not included 
+in the R base installation.
+
+Simple examples are provided by calling example(KScorrect) or example(LcKS).
+
+Additional details are available at 
+https://cran.r-project.org/web/packages/KScorrect. Bug reports, 
+suggestions, and feature requests are encouraged at 
+https://github.com/pnovack-gottshall/KScorrect.
+
+We hope you find the functions useful when conducting goodness-of-fit 
+tests using the K-S test.
+
+Sincerely,
+Phil Novack-Gottshall and Steve Wang
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Phil Novack-Gottshall
+  Associate Professor
+  Department of Biological Sciences
+  Benedictine University
+  5700 College Road  Lisle, IL 60532
+
+  pnovack-gottshall at ben.edu
+  Phone: 630-829-6514
+  Fax: 630-829-6547
+  Office: 332 Birck Hall
+  Lab: 316 Birck Hall
+  http://www.ben.edu/faculty/pnovack-gottshall
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+From jo@chim m@iii@g oii zuck@reiii@de  Mon Jul  8 21:52:37 2019
+From: jo@chim m@iii@g oii zuck@reiii@de (jo@chim m@iii@g oii zuck@reiii@de)
+Date: Mon, 8 Jul 2019 21:52:37 +0200
+Subject: [R-pkgs] packagefinder 0.1.4: Finding packages from the R console
+Message-ID: <154001d535c6$b1f703d0$15e50b70$@zuckarelli.de>
+
+Hello everyone,
+
+
+
+Currently, there are more than 14,500 R packages on CRAN providing R with an
+unparalleled wealth of features. The downside of the large and increasing
+amount of packages is that it becomes increasingly difficult to find the
+right tools to tackle a specific problem.
+
+
+
+The 'packagefinder' package is designed to search for CRAN packages right
+from the R console. The philosophy behind the package is that R users enjoy
+working with the R console and need a tool to do their day-to-day-work on
+CRAN without leaving their normal workspace, the console.
+
+
+
+packagefinder helps you.
+
+* . find the right package for your purpose
+
+* . get detailed information about packages (incl. access to online
+documentation)
+
+* . learn about what's new on CRAN
+
+
+
+Learn more about packagefinder:
+
+* Read the web tutorial:
+<http://www.zuckarelli.de/packagefinder/tutorial.html>
+http://www.zuckarelli.de/packagefinder/tutorial.html
+
+* Watch the video tutorial:  <https://www.youtube.com/watch?v=66Mes6_hYno>
+https://www.youtube.com/watch?v=66Mes6_hYno
+
+* Visit the GitHub repo:  <https://github.com/jsugarelli/packagefinder>
+https://github.com/jsugarelli/packagefinder
+
+* Follow me on Twitter:  <https://twitter.com/jsugarelli>
+https://twitter.com/jsugarelli
+
+
+
+Best,
+
+
+
+Joachim
+
+
+
+
+
+Joachim L. Zuckarelli
+E-mail:  <mailto:joachim at zuckarelli.de> joachim at zuckarelli.de
+
+Website:  <http://www.zuckarelli.de/> http://www.zuckarelli.de
+
+
+	[[alternative HTML version deleted]]
+
+
+From moh_|c|@ @end|ng |rom y@hoo@com  Mon Jul  8 18:37:36 2019
+From: moh_|c|@ @end|ng |rom y@hoo@com (mohammed ibrahim)
+Date: Mon, 8 Jul 2019 16:37:36 +0000 (UTC)
+Subject: [R-pkgs] dbparser v1.0.2: DrugBank XML Database Parser
+References: <798672124.2819020.1562603856600.ref@mail.yahoo.com>
+Message-ID: <798672124.2819020.1562603856600@mail.yahoo.com>
+
+ Hello,?
+Kindly check the new release of dbparser v1.0.2 on?https://cran.r-project.org/web/packages/dbparser/index.html
+The new release include:?
+- Fix zip file location issue??
+- Replace Secondary and third keys columns from drug framework with other_keys column that contains any other keys that might exist in addition to the primary key??
+- Add average-mass, monoisotopic-mass and calculated-properties parsers.??
+- Support saving parsed drugs related parsed database as csv?
+
+As always, contributions and bug reports are welcome on https://dainanahan.github.io/dbparser/index.html?
+
+Best Regards,
+Mohammed Ali
+MSc in Applied Data Science & Big Data
+mohammed.ali at edu.dsti.institute
++20 01000481973
+eg.linkedin.com/in/mohammedali85
+
+
+From h56cho @end|ng |rom uw@ter|oo@c@  Fri Jul 19 14:36:11 2019
+From: h56cho @end|ng |rom uw@ter|oo@c@ (Hyunjin Cho)
+Date: Fri, 19 Jul 2019 12:36:11 +0000
+Subject: [R-pkgs] Introducing The New Package 'forestRK'
+Message-ID: <69912ad7d1ae41a4b0e1b0f9df1e799b@uwaterloo.ca>
+
+Hello,
+
+
+I am pleased to announce my new package forestRK. The package implements Forest-RK algorithm discussed in the paper "Forest-RK: A New Random Forest Induction Method" by Simon Bernard, Laurent Heutte, Sebastien Adam, 4th International Conference on Intelligent Computing (ICIC), Sep 2008, Shanghai, China, pp.430-437, to various datasets for classification.
+
+
+Some of the forestRK functions were built based on the discussion:
+
+  https://stats.stackexchange.com/questions/168964/building-a-regression-tree-with-r-from-scratch/168967#168967
+
+
+Examples of functions included in the new forestRK package are (there are 17 functions in total in this package):
+
+
+1. construct.treeRK: Builds a single decision tree after implementing the RK (random ?K?) algorithm (i.e. builds ?rktree?);
+
+
+2. pred.treeRK: Makes predictions on the test observations based on the ?rktree? model in question;
+
+
+3. draw.treeRK: Makes igraph plot of a ?rktree?.
+
+
+4. forestRK: Builds a Forest-RK model;
+
+
+5. pred.forestRK: Makes predictions on the test observations by using the Forest-RK algorithm;
+
+
+
+6. mds.plot.forestRK: Generate 2D Multi-Dimensional Scaling plot of the test observations, where the test observations are colour coded by their predicted class type indicated in the pred.forestRK object;
+
+
+7. importance.forestRK: Calculate Gini Importance of each covariate based on a forestRK model;
+
+
+8. importance.plot.forestRK: Generate Importance ggplot of the covariates.
+
+
+The forestRK package also provides tools to encode non-numeric dataset into a numeric one via Numeric Encoding or Binary Encoding.
+
+
+For more information about the new forestRK package, please visit:
+
+
+https://cran.r-project.org/web/packages/forestRK/index.html (CRAN)
+
+https://github.com/h56cho/forestRK (Github)
+
+
+Hyunjin Cho
+
+	[[alternative HTML version deleted]]
+
+
+From @w|mp@ck@ge @end|ng |rom gm@||@com  Sat Jul 20 00:21:11 2019
+From: @w|mp@ck@ge @end|ng |rom gm@||@com (Silvana Pesenti)
+Date: Fri, 19 Jul 2019 18:21:11 -0400
+Subject: [R-pkgs] New CRAN Release: SWIM
+Message-ID: <CAAGSCf2J4rjmj=DLZAVJLPBtocjN40n31VoO0wv6MQDgQHE57Q@mail.gmail.com>
+
+The *SWIM* (Sensitivity Weights for Importance Weights) package is released
+on CRAN: https://CRAN.R-project.org/package=SWIM.
+
+The *SWIM* package provides weights on simulated scenarios from a
+stochastic model, such that stressed model components (random variables)
+fulfil given probabilistic constraints (e.g. specified values for risk
+measures), under the new scenario weights. Scenario weights are selected by
+constrained minimisation of the relative entropy to the baseline model.
+Implemented constraints are stresses on the Vaule-at-Risk,
+Expected-Shortfall, moments and probability intervals. Visual tools such as
+plotting of the stressed empirical distribution function, histograms and
+sensitivity measures are provided.
+
+Consult the README for examples on GitHub: https://github.com/spesenti/SWIM
+
+Best regards,
+SWIM maintainer
+
+	[[alternative HTML version deleted]]
+
+
+From t@nb|ngy @end|ng |rom gm@||@com  Mon Jul 22 20:23:31 2019
+From: t@nb|ngy @end|ng |rom gm@||@com (Tanbing Yan)
+Date: Mon, 22 Jul 2019 14:23:31 -0400
+Subject: [R-pkgs] Introducing teamr Package
+Message-ID: <CAJnynRN1hTgmrAO=EDOixktCQee122JPtqEMRc6FEYXhn5vNZw@mail.gmail.com>
+
+Today I am so pleased to introduce my first CRAN package for sending
+formatted messages to Microsoft Teams, teamr
+<https://github.com/wwwjk366/teamr>.
+
+Motivation is simple here. For years I have been using Slack and built many
+slash commands and apps using incoming webhooks with R, but ever since I
+started to use Teams, I found that we will have the same needs for
+communicating with R as well. So with some inspiration from the Python
+package pymsteams <https://pypi.org/project/pymsteams/>. I created
+teamr package
+with the hope that this package will provide a simple and clean way to talk
+to Teams from R.
+Installation
+
+You can install the released version of teamr from CRAN
+<https://cran.r-project.org/> with:
+
+install.packages("teamr")
+
+And the development version from GitHub <https://github.com/> with:
+
+# install.packages("devtools")
+devtools::install_github("wwwjk366/teamr")
+
+Example
+
+This is a basic example of send a simple titled message to MS Teams:
+
+library(teamr)
+# initiate new connector card object
+cc <- connector_card$new(hookurl =
+"https://outlook.office.com/webhook/...")# add text
+cc$text("This is text of main body.")# add title
+cc$title("This is message title")# add hyperlink button
+cc$add_link_button("Read more", "https://www.google.com")# change theme color
+cc$color("#008000")
+
+We can print out the payload that will be sending to given webhook using
+printmethod
+
+# print out the payload for checking
+cc$print()
+
+Card:
+  hookurl: https://outlook.office.com/webhook/...
+  payload:  {"text":"This is text of main body.","title":"This is
+message title","potentialAction":[{"@context":"http://schema.org","@type":"ViewAction","name":"Read
+more","target":["https://www.google.com"]}],"themeColor":"#008000"}
+
+Our JSON payload looks good, time to send it out :)
+
+# send to Teams
+cc$send()
+
+[1] TRUE
+
+send menthod will return TRUE if send was successful (status code 200). If
+it failed, it will return the reponse object for further investigation. Our
+message with a link button will looks like this:
+
+	[[alternative HTML version deleted]]
+
+
+From he||o @end|ng |rom m|kejohnp@ge@com  Wed Jul 24 10:24:09 2019
+From: he||o @end|ng |rom m|kejohnp@ge@com (Mike Page)
+Date: Wed, 24 Jul 2019 13:54:09 +0530 (IST)
+Subject: [R-pkgs] {mortyr}
+Message-ID: <1000196845.51881.1563956649748@us2.webmail.mailhostbox.com>
+
+New package: mortyr. A wrapper to the The Rick and Morty API https://rickandmortyapi.com/  and the most rickdiculous package in the R-verse. Use it to return information about your favourite characters, locations, and episodes from the show.
+
+The released version can be found on CRAN: https://CRAN.R-project.org/package=mortyr
+
+---
+
+https://www.mikejohnpage.com/
+	[[alternative HTML version deleted]]
+
+
+From iegidi m@iii@g oii u@its@it  Wed Jul 24 11:09:31 2019
+From: iegidi m@iii@g oii u@its@it (iegidi m@iii@g oii u@its@it)
+Date: Wed, 24 Jul 2019 11:09:31 +0200
+Subject: [R-pkgs] pivmet 0.2.0 - Pivotal Methods for Bayesian Relabelling
+ and k-Means Clustering
+Message-ID: <20190724110931.Horde.KX2QOipvW-Cw3tvL2E2fiIc@wmail4.units.it>
+
+
+The new version (0.2.0) of rhe 'pivmet' package is released on CRAN:
+https://CRAN.R-project.org/package=pivmet.
+
+The package offers a collection of pivotal algorithms
+for: relabelling the MCMC chains in order to undo the label
+switching problem in Bayesian mixture models,
+as proposed in Egidi et al. (2018a);
+initializing the centers of the classical k-means algorithm
+in order to obtain a better clustering solution (Egidi et al., 2018b).
+
+The new version incorporates the Stan language for fitting
+efficient mixture models.
+
+github package page at:
+
+https://github.com/LeoEgidi/pivmet
+
+Here are the two referred articles:
+
+Egidi et al. (2018a)
+https://link.springer.com/article/10.1007/s11222-017-9774-2
+
+Egidi et al. (2018b)
+https://www.researchgate.net/profile/Leonardo_Egidi/publication/326225330_K-means_seeding_via_MUS_algorithm_-_Inizializzazione_del_K-means_tramite_l%27algoritmo_MUS/links/5b3f2c2caca27207851c7865/K-means-seeding-via-MUS-algorithm-Inizializzazione-del-K-means-tramite-lalgoritmo-MUS.pdf
+
+
+All the best
+
+Leonardo Egidi
+Postdoctoral researcher
+University of Trieste
+
+
+From md@umner @end|ng |rom gm@||@com  Wed Jul 24 14:51:14 2019
+From: md@umner @end|ng |rom gm@||@com (Michael Sumner)
+Date: Wed, 24 Jul 2019 22:51:14 +1000
+Subject: [R-pkgs] ceramic - download web map tiles to local cache
+Message-ID: <CAAcGz9_jHUaJE9gdRexnzkCfAkuwUpddmWmVPug9ZnaXD1TadQ@mail.gmail.com>
+
+Hello,
+
+There's a new package ceramic to download online imagery tiles.
+
+Download imagery tiles to a local cache and load the data into raster
+objects. Facilities  are provided for Amazon 'AWS' terrain
+https://aws.amazon.com/public-datasets/terrain/ and Mapbox images and
+terrain https://www.mapbox.com/.
+
+Use of Mapbox requires obtaining an API key and setting it locally,
+functions that require this key provide information on doing this if a
+valid key is not found.
+
+Tiled imagery may be downloaded and cached by providing a spatial extent in
+several possible formats, with optional control over provider, tile type,
+format and zoom.  Direct access to load a raster image will trigger the
+tile download and caching, if required.
+
+The release 0.6.0 of ceramic is available on CRAN:
+
+https://CRAN.R-project.org/package=ceramic
+
+The development repository of ceramic is hosted on GitHub:
+
+https://github.com/hypertidy/ceramic
+
+Thank you.
+
+-- 
+Michael Sumner
+Software and Database Engineer
+Australian Antarctic Division
+Hobart, Australia
+e-mail: mdsumner at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From hugopedder @end|ng |rom gm@||@com  Thu Jul 25 18:40:51 2019
+From: hugopedder @end|ng |rom gm@||@com (Hugo Pedder)
+Date: Thu, 25 Jul 2019 17:40:51 +0100
+Subject: [R-pkgs] New package MBNMAdose: dose-response meta-analysis
+Message-ID: <CAKcJ18NYWQOmCZD+ks0bh7j9FHeTto0qgFfh5J=GSsFCfQ-6FA@mail.gmail.com>
+
+Hi all,
+
+I would like to introduce you to a new package available on CRAN for
+performing meta-analysis of dose-response relationships, 'MBNMAdose'.
+
+For anyone who has performed a meta-analysis or network meta-analysis
+before, you might be aware of the difficulties of including different doses
+of a drug. Typically one either assumes that different doses have a broadly
+similar effect, or that they are totally independent.
+
+MBNMAdose allows you to explicitly model the dose-response relationship in
+a statistically robust framework. By modelling dose-response relationships
+this can connect networks of evidence that might otherwise be disconnected,
+and can improve precision on treatment estimates.
+
+There's a detailed vignette included with the package that explains
+everything in a lot more detail for those that are interested.
+
+Any feedback or suggestions for improvements would be hugely welcome.
+
+Many thanks,
+
+Hugo
+
+Hugo Pedder
+Senior Research Associate
+Population Health Sciences
+University of Bristol
+
+	[[alternative HTML version deleted]]
+
+
+From @pectr|no @end|ng |rom @|cyon@com  Sun Jul 28 13:43:39 2019
+From: @pectr|no @end|ng |rom @|cyon@com (Teodor Krastev)
+Date: Sun, 28 Jul 2019 12:43:39 +0100
+Subject: [R-pkgs] new version (2.0.0) of spectrino package
+Message-ID: <63dd5294-e9ae-294d-5f09-0a835c40637d@sicyon.com>
+
+The new version (2.0.0) of 'spectrino' package is released on CRAN: 
+_https://CRAN.R-project.org/package=spectrino_.
+
+Remainder: ?spectrino? is a spectra preparation software utility for R. 
+It is OS specific tool (Microsoft Windows), with specialized 
+visualization, organization and pre-processing features for spectra 
+(mostly mass-spec). The software accepts spectral data from analytical 
+instruments and then prepares a data structure to be introduced into R. 
+?spectrino? has a rich set of features to create data structures and 
+visually manipulate/compare spectra.
+
+Version 2.0 of Spectrino adds new features to the spectral part of the 
+application (multi-tab spec-trees) and a completely new part - blocks of 
+properties. The latter provides user interface to a list of properties 
+(accessible from your script) as well as log, chart and snippet (small 
+pieces of code) support. As properties are modifiable from both sides: 
+user interface and your code, this feature offers a versatile and 
+convenient way for parametrized control to your algorithm.
+
+For more details (including manual) visit http://spectrino.com
+
+You may read an article about Spectrino (v1.6) in "Journal of 
+Statistical Software" https://www.jstatsoft.org/article/view/v018i10
+
+All the best
+
+Teodor Krastev
+
+Research Associate,
+
+Physics Department, Imperial College, London, UK
+
+
+	[[alternative HTML version deleted]]
+
+
+From wh|tney@cory @end|ng |rom gm@||@com  Tue Aug  6 16:31:38 2019
+From: wh|tney@cory @end|ng |rom gm@||@com (Cory Whitney)
+Date: Tue, 6 Aug 2019 16:31:38 +0200
+Subject: [R-pkgs] New functions in ethnobotanyR 0.1.5
+Message-ID: <9787B662-33B4-4696-B337-68EBB589FF99@gmail.com>
+
+ethnobotanyR 0.1.5 is a patch. The package now includes four new functions:
+
+Updated UVs() following Tardio and Pardo-de-Santayana (2008)
+
+simple_UVs() now calculates a simple UVs cf. Albuquerque et al. (2006).
+
+Fidelity level per species FLs() from Friedman et al. (1986) is added.
+
+Now includes the CVe() from Reyes-Garcia et al. (2006).
+
+Modeling options and more common quantitative ethnobotany and anthropology tools will be added in the next version.
+
+
+From ky|ew@rd084 @end|ng |rom gm@||@com  Thu Aug 29 18:39:48 2019
+From: ky|ew@rd084 @end|ng |rom gm@||@com (Kyle Ward)
+Date: Thu, 29 Aug 2019 12:39:48 -0400
+Subject: [R-pkgs] New CRAN package: ipfr
+Message-ID: <CAHUMv58bGM2gAV4J+HAQYdSWOWdniGRN=iTtmSFZBF8fbjxH8w@mail.gmail.com>
+
+This package implements a robust iterative proportional fitting algorithm,
+which is useful in survey expansion, matrix balancing, population
+synthesis, and other applications. For example, this package could can
+weight a survey of households to match known population characteristics
+like the number of households by size. I hope you find that the vignettes
+and GitHub readme make it easy to get started.
+
+CRAN: https://cran.r-project.org/web/packages/ipfr/index.html
+GitHub: https://github.com/dkyleward/ipfr
+Vignette for basic usage:
+https://cran.r-project.org/web/packages/ipfr/vignettes/using_ipfr.html
+Advanced topics:
+https://cran.r-project.org/web/packages/ipfr/vignettes/common_ipf_problems.html
+
+Thank you for your time,
+Kyle Ward
+
+	[[alternative HTML version deleted]]
+
+
+From khvorov45 @end|ng |rom gm@||@com  Mon Sep  9 00:06:14 2019
+From: khvorov45 @end|ng |rom gm@||@com (Arseniy Khvorov)
+Date: Mon, 9 Sep 2019 08:06:14 +1000
+Subject: [R-pkgs] New package sclr for scaled logit model
+Message-ID: <b593e923-c8ab-4ed6-40e5-f350aa51200d@gmail.com>
+
+A new package "sclr" for fitting the "scaled logit" model from Dunning 
+(2006)? <doi:10.1002/sim.2282> is available.
+
+CRAN: https://cran.r-project.org/package=sclr
+Github: https://github.com/khvorov45/sclr
+
+I appreciate any feedback.
+
+Best regards,
+Arseniy Khvorov
+
+
+From etoum @end|ng |rom mendoz@-con|cet@gob@@r  Mon Sep  9 14:26:18 2019
+From: etoum @end|ng |rom mendoz@-con|cet@gob@@r (Ezequiel Toum)
+Date: Mon, 9 Sep 2019 09:26:18 -0300 (ART)
+Subject: [R-pkgs] =?utf-8?b?TmV3IHBhY2thZ2Ug4oCYSEJWLklBTklHTEHigJkgZm9y?=
+ =?utf-8?q?_hydrological_modeling?=
+Message-ID: <970603173.12400643.1568031978544.JavaMail.zimbra@mendoza-conicet.gob.ar>
+
+
+
+Hi, 
+
+
+
+
+a new package ?HBV.IANIGLA? for hydrological modeling has been relesased. 
+
+CRAN: [ https://cran.r-project.org/web/packages/HBV.IANIGLA/index.html | https://cran.r-project.org/web/packages/HBV.IANIGLA/index.html ] 
+
+
+In case of doubts do not hesitate to write. 
+
+
+
+
+Best, 
+
+Ezequiel Toum 
+-- 
+Ezequiel Toum 
+Ingeniero Civil 
+Becario Doctoral 
+https://www.mendoza-conicet.gob.ar/portal/ianigla/paginas/index/integrantes87 
+
+Instituto Argentino de Nivolog?a, 
+Glaciolog?a y Ciencias Ambientales (IANIGLA) 
+CCT-CONICET-Mendoza 
+C.C. 330, (5500) Mendoza, Argentina 
+Tel: 54(261)5244266 
+Fax: 54(261)5244201 
+
+	[[alternative HTML version deleted]]
+
+
+From dom@g@|9 @end|ng |rom m@u@edu  Mon Sep 30 17:42:03 2019
+From: dom@g@|9 @end|ng |rom m@u@edu (Domagalski, Rachel)
+Date: Mon, 30 Sep 2019 15:42:03 +0000
+Subject: [R-pkgs] New package 'backbone' for extracting significant edges
+ from a weighted graph
+Message-ID: <DM6PR12MB3452B8D51C55AF591A01335C9F820@DM6PR12MB3452.namprd12.prod.outlook.com>
+
+Hello R users,
+
+I am excited to introduce a new package for R which is now available on CRAN called ?backbone?.
+The package can be found here: https://cran.r-project.org/web/packages/backbone/index.html
+
+The backbone package provides methods for extracting from a weighted graph a binary or signed backbone that retains only the significant edges. The user may input a weighted graph, or a bipartite graph from which a weighted graph is first constructed via projection.
+
+Backbone extraction methods include:
+the stochastic degree sequence model (Neal, Z. P. (2014). https://doi.org/10.1016/j.socnet.2014.06.001),
+hypergeometric model (Neal, Z. (2013). https://doi.org/10.1007/s13278-013-0107-y),
+the fixed degree sequence model (Zweig, K. A., and Kaufmann, M. (2011). https://doi.org/10.1007/s13278-011-0021-0),
+as well as a universal threshold method.
+
+A vignette which describes the package in greater detail can be found here: https://cran.r-project.org/web/packages/backbone/vignettes/backbone_introduction.html
+
+The package will be constantly updated with new functions and methods.
+If you have any backbone extraction methods you would like to see included, please contact the package maintainer Rachel Domagalski at <domagal9 at msu.edu>.
+
+Very best regards,
+Rachel Domagalski
+Zachary Neal
+Bruce Sagan
+
+
+	[[alternative HTML version deleted]]
+
+
+From dch|u @end|ng |rom bccrc@c@  Thu Oct  3 19:20:30 2019
+From: dch|u @end|ng |rom bccrc@c@ (Derek Chiu)
+Date: Thu, 3 Oct 2019 17:20:30 +0000
+Subject: [R-pkgs] New package 'rsf' for generating a report of statistical
+ findings
+Message-ID: <553536EF-B70A-4810-AB7B-C69B40705B72@bccrc.ca>
+
+A new package ?rsf' has been released to CRAN:
+
+https://cran.r-project.org/web/packages/rsf/index.html
+
+This package is meant to be used in conjunction with RStudio, as it adds a new project template to the New Project menu interface.
+A skeleton project is generated with files used for the ?bookdown? format.
+The next release will focus on refactoring the package to use ?ymlthis? as a new core dependency.
+
+Any feedback would be greatly appreciated:
+
+https://github.com/dchiu911/rsf
+
+Regards,
+Derek Chiu
+
+From e@ @end|ng |rom enr|co@chum@nn@net  Tue Oct 22 08:16:36 2019
+From: e@ @end|ng |rom enr|co@chum@nn@net (Enrico Schumann)
+Date: Tue, 22 Oct 2019 08:16:36 +0200
+Subject: [R-pkgs] NMOF 2.0-1 (Numerical Methods and Optimization in Finance)
+Message-ID: <20191022081636.Horde.EoC89oRNWVWpSwPnev1fws0@webmail.your-server.de>
+
+Dear all,
+
+version 2.0-1 of package NMOF is on CRAN now.
+
+NMOF stands for 'Numerical Methods and Optimization in Finance',
+and it accompanies the book with the same name, written by
+Manfred Gilli, Dietmar Maringer and Enrico Schumann.[1]
+
+The new version of the package provides all R code and datasets
+of the book's second edition, which has been published a few weeks ago.
+All updates and new features are listed in the NEWS file.[2]
+Sample materials of the book, on backtesting and on optimization
+heuristics, are available as well.[3][4]
+
+Kind regards
+      Enrico
+
+[1] http://enricoschumann.net/NMOF
+[2] https://github.com/enricoschumann/NMOF/blob/master/NEWS
+[3] optimisation heuristics: https://ssrn.com/abstract=3391756
+[4] backtesting: https://ssrn.com/abstract=3374195
+
+
+
+-- 
+Enrico Schumann
+Lucerne, Switzerland
+http://enricoschumann.net
+
+
+From ||ndbrook @end|ng |rom gm@||@com  Tue Oct 22 19:39:11 2019
+From: ||ndbrook @end|ng |rom gm@||@com (Peter Li)
+Date: Tue, 22 Oct 2019 10:39:11 -0700
+Subject: [R-pkgs] packageRank (v.0.3.0) update
+Message-ID: <CAEX8acpSjAF+kHuEh7nk5fGyYFX_OdGF3OWW3X0xYy_RQpeNeg@mail.gmail.com>
+
+packageRank: compute and visualize package download counts and rank
+percentiles
+
+* compute and visualize the counts and ranks (nominal and percentile) of
+downloads from RStudio's CRAN mirror and Bioconductor.
+* compute and visualize a package's position in the overall distribution of
+download counts for a given day (cross-sectionally) or over time
+(longitudinally).
+* compute and visualize the downloads of the R application.
+
+CRAN: https://cran.r-project.org/package=packageRank
+GitHub: https://github.com/lindbrook/packageRank
+
+	[[alternative HTML version deleted]]
+
+
+From py_berr@rd @end|ng |rom gmx@|r  Tue Nov  5 17:02:59 2019
+From: py_berr@rd @end|ng |rom gmx@|r (PY Berrard)
+Date: Tue, 5 Nov 2019 17:02:59 +0100
+Subject: [R-pkgs] New package 'funprog' : data manipulation with high-order
+ functions
+Message-ID: <trinity-cfe6d357-b000-4baa-be54-3e572a938b50-1572969779507@3c-app-mailcom-bs11>
+
+DeaR users,
+
+A new package called 'funprog' is now on CRAN : https://CRAN.R-project.org/package=funprog
+
+'funprog' contains high-order functions to manipulate data, given one or more auxiliary functions.
+Functions are inspired by other pure functional programming languages (Haskell mainly).
+
+The package also provides built-in function operators for creating compact anonymous functions, as well as the possibility to use the purrr package syntax.
+
+If you are interested, you will find more details and examples here : https://gitlab.com/py_b/funprog#readme
+
+Best regards,
+
+Pierre-Yves B.
+
+
+From terry@therne@u @end|ng |rom gm@||@com  Wed Nov  6 13:15:43 2019
+From: terry@therne@u @end|ng |rom gm@||@com (Terry Therneau)
+Date: Wed, 6 Nov 2019 06:15:43 -0600
+Subject: [R-pkgs] survival3.1
+Message-ID: <CAGzH7UfN-qWE1N0=Mm1i-uVCEc24_dyL0qi70UMkjcHxFTGt=A@mail.gmail.com>
+
+Version 3.x of the survival package is now available from CRAN.  This is a
+major update whose primary goal is to make the analysis of multi-state
+survival models as easy to do as simple Kaplan-Meier and Cox proportional
+hazard fits. The primary changes are
+
+    -- in Surv(time1, time2, status) the status variable can now be a
+factor that specifies which state a subject has transitioned into.  From a
+user's point of view this is the single key change.
+
+    -- survfit() will then create multi-state Pr(state | time) curves,
+i.e., the Aalen-Johansen estimate.  (Kaplan-Meier and cumulative incidence
+are special cases of the AJ).  Printout and plotting are unchanged.
+
+    -- coxph() will then create multi-state fits.  There is an easy
+formula-like syntax for specifying shared coefficients or baseline hazards.
+
+    -- all use standard data, i.e. the (time1, time2, status) format that
+is common for time-dependent covariates; there is no need to create special
+intermediate data sets.  (An id variable is necessary to specify which rows
+go with whom.)
+
+    -- robust variance estimates available throughout
+
+Many other CRAN packages depend on survival, which drove a second goal of
+"don't break it".  Part of the testing involved running the test suits of
+all 679 reverse dependencies under the new version.
+
+Terry Therneau
+therneau at mayo.edu
+
+	[[alternative HTML version deleted]]
+
+
+From murphymv @end|ng |rom gm@||@com  Fri Nov  8 17:48:55 2019
+From: murphymv @end|ng |rom gm@||@com (Mark Murphy)
+Date: Fri, 8 Nov 2019 16:48:55 +0000
+Subject: [R-pkgs] New package 'semEff'
+Message-ID: <CAJ+Uk2V_9fZD+bJ+s5DG3Yto0tPLCO-fD_qLS7Vb60m+HGX7Sg@mail.gmail.com>
+
+ Hi,
+
+I have a new package <https://www.rdocumentation.org/packages/semEff>
+available for automatic effect calculation for 'piecewise' structural
+equation models (SEM), commonly used in ecology and evolution. Confidence
+intervals are provided via bootstrapping. It also does some useful things
+for linear and generalised linear (mixed) models, like standardised
+coefficients, R-squared, etc. Feedback/bug reports welcome. This is my
+first CRAN release.
+
+Cheers,
+Mark
+-- 
+*Mark V. Murphy*
+*Community Ecologist*
+murphymv at gmail.com
+* <https://orcid.org/0000-0001-9178-0871>*
+ORCID <https://orcid.org/0000-0001-9178-0871> | ResearcherID
+<https://publons.com/researcher/2970870/mark-murphy/> | ResearchGate
+<https://www.researchgate.net/profile/Mark_Murphy7> | Linkedin
+<https://www.linkedin.com/in/murphymv> | Twitter
+<https://twitter.com/murphy_mv> | GitHub <https://github.com/murphymv>
+
+	[[alternative HTML version deleted]]
+
+
+From pedro@r@|@e|@m@r|nho @end|ng |rom gm@||@com  Tue Dec  3 17:38:30 2019
+From: pedro@r@|@e|@m@r|nho @end|ng |rom gm@||@com (Pedro Rafael)
+Date: Tue, 3 Dec 2019 13:38:30 -0300
+Subject: [R-pkgs] ropenblas package
+Message-ID: <CAKwavrn3m5nt-Y_LGiL-M=afdS-Ty=HEOAQtNg+QDsqVurq_4A@mail.gmail.com>
+
+Dear colleagues,
+
+The *ropenblas* <https://prdm0.github.io/ropenblas/> is a package designed
+to facilitate the linking of the library *OpenBLAS*
+<https://www.openblas.net/> with the language *R*
+<https://www.r-project.org/>. The package, which works only for Linux
+systems, will automatically download the latest source code from the
+*OpenBLAS* <https://www.openblas.net/> library and compile the code. The
+package will automatically bind the language *R*
+<https://www.r-project.org/> to use the *OpenBLAS*
+<https://www.openblas.net/> library. Everything will be done automatically
+regardless of the Linux distribution you are using.
+
+You can also specify older versions of the *OpenBLAS*
+<https://www.openblas.net/> library. Automatically, if no version is
+specified, the *ropenblas* <https://prdm0.github.io/ropenblas/> package
+will consider the latest version of the library *OpenBLAS*
+<https://www.openblas.net/>.
+
+Considering using the *OpenBLAS* <https://www.openblas.net/> library rather
+than the *BLAS* <http://www.netlib.org/blas/> may bring extra optimizations
+for your code and improved computational performance for your simulations,
+since *OpenBLAS* <https://www.openblas.net/> is an optimized implementation
+of the library *BLAS* <http://www.netlib.org/blas/>.
+
+Some of the reasons why it is convenient to link *R*
+<https://www.r-project.org/> language to the use of *BLAS*
+<http://www.netlib.org/blas/> optimized alternatives can be found *here*
+<https://csantill.github.io/RPerformanceWBLAS/>. Several other *benchmarks*
+<https://en.wikipedia.org/wiki/Benchmarking> that point to improved
+computing performance by considering the library *OpenBLAS*
+<https://www.openblas.net/> can be found on the internet.
+
+Best regards,
+
+Pedro Rafael.
+
+	[[alternative HTML version deleted]]
+
+
+From z@d @end|ng |rom |e@@||ke|y@com  Sun Dec  8 05:24:34 2019
+From: z@d @end|ng |rom |e@@||ke|y@com (Zad Chow)
+Date: Sat, 7 Dec 2019 23:24:34 -0500
+Subject: [R-pkgs] concurve v 2.3.0 - Comparing Functions, Bootstrapping,
+ and Exporting Tables
+Message-ID: <CAD3yMvKA7k7tHBc9v4KCyR_Wmd3sBYMB+=RhnJvCyY=j-p0aGA@mail.gmail.com>
+
+Pleased to announce that the next version (2.3.0) of our package ?concurve?
+is out on CRAN (https://cran.r-project.org/package=concurve).
+
+In addition to plotting confidence (consonance) curves, it can now plot two
+functions next to one another to see the amount of overlap. It can also
+plot likelihood and deviance functions along with consonance densities and
+distributions.
+
+And it can utilize bootstrapping (the BCa and t method) to approximate the
+curves, distributions, and densities. And to top it off, it can export
+tables of relevant statistics in various formats.
+
+We welcome any feedback and bug reports (
+https://github.com/zadchow/concurve/issues)
+
+Best,
+
+Zad R. Chow
+Andrew D. Vigotsky
+
+	[[alternative HTML version deleted]]
+
+
+From jo@e@b@rrer@ @end|ng |rom |@g|ob@|@org  Sun Dec 15 20:02:59 2019
+From: jo@e@b@rrer@ @end|ng |rom |@g|ob@|@org (Jose Barrera)
+Date: Sun, 15 Dec 2019 20:02:59 +0100
+Subject: [R-pkgs] christmas package
+Message-ID: <CACr7k5J5brk29wofrWYyKqqqNphbCLL5QLKScOrkAmx0Lj+aUg@mail.gmail.com>
+
+Generation of a number of Christmas cards, most of them being animated. The
+name of each card includes the year in which it was created.
+
+Some examples are:
+
+- The christmas card that was writen in 2009 shows a ?caganer? (
+https://en.wikipedia.org/wiki/Caganer):
+
+> library(christmas)
+> xmas2009caganer()
+
+- The 2019 design is about CRM (Christmas regression model)  ;-)
+
+> xmas2019regression()
+
+Have a nice 2020!
+
+
+Jose Barrera
+Statistician, Associate Lecturer
+
+*IS**Global*
+Barcelona Institute for Global Health - Campus MAR
+Barcelona Biomedical Research Park (PRBB) (Room Hypatia)
+
+Doctor Aiguader, 88
+08003 Barcelona, Spain
+Tel. +34 93 2147383
+jose.barrera at isglobal.org
+<https://www.linkedin.com/in/josebarrera>
+Personal website: sites.google.com/view/josebarrera
+www.isglobal.org
+
+This message is intended exclusively for its addressee and may contain
+information that is CONFIDENTIAL and protected by professional privilege.
+If you are not the intended recipient you are hereby notified that any
+dissemination, copy or disclosure of this communication is strictly
+prohibited by law. If this message has been received in error, please
+immediately notify us via e-mail and delete it.
+
+DATA PROTECTION. We inform you that your personal data, including your
+e-mail address and data included in your email correspondence, are included
+in the ISGlobal Foundation filing system. Your personal data will be used
+for the purpose of contacting you and sending information on the activities
+of the above foundations. You can exercise your rights to  access to
+personal data, rectification, erasure, restriction of processing, data
+portability and object by contacting the following address: *lopd at isglobal.org
+<lopd at isglobal.org>*. ISGlobal Privacy Policy at *www.isglobal.org
+<http://www.isglobal.org/>*.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+CONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a su
+destinatario y puede contener informaci?n confidencial, por lo que la
+utilizaci?n, divulgaci?n y/o copia sin autorizaci?n est? prohibida por la
+legislaci?n vigente. Si ha recibido este mensaje por error, le rogamos lo
+comunique inmediatamente por esta misma v?a y proceda a su destrucci?n.
+
+PROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este
+env?o, incluida su direcci?n de e-mail, forman parte de ficheros de
+titularidad de la Fundaci?n ISGlobal  para cualquier finalidades de
+contacto, relaci?n institucional y/o env?o de informaci?n sobre sus
+actividades. Los datos que usted nos pueda facilitar contestando este
+correo quedar?n incorporados en los correspondientes ficheros, autorizando
+el uso de su direcci?n de e-mail para las finalidades citadas. Puede
+ejercer los derechos de acceso, rectificaci?n, supresi?n, limitaci?n del
+tratamiento, portabilidad y oposici?n dirigi?ndose a *lopd at isglobal.org
+<lopd at isglobal.org>* . Pol?tica de privacidad en *www.isglobal.org
+<http://www.isglobal.org/>*.
+
+-- 
+
+
+This message is intended exclusively for its addressee and may contain
+
+information that is CONFIDENTIAL and protected by professional privilege. 
+If
+you are not the intended recipient you are hereby notified that any
+
+dissemination, copy or disclosure of this communication is strictly 
+prohibited
+by law. If this message has been received in error, please 
+immediately notify
+us via e-mail and delete it.
+
+
+
+DATA PROTECTION. We 
+inform you that your personal data, including your
+e-mail address and data 
+included in your email correspondence, are included in
+the ISGlobal 
+Foundation files. Your personal data will be used for the purpose
+of 
+contacting you and sending information on the activities of the above
+
+foundations. You can exercise your rights of access, rectification,
+
+cancellation and opposition by contacting the following address: 
+lopd at isglobal.org <mailto:lopd at isglobal.org>. ISGlobal
+Privacy Policy at 
+www.isglobal.org <http://www.isglobal.org/>.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+CONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a
+su 
+destinatario y puede contener informaci?n confidencial, por lo que la
+utilizaci?n,
+divulgaci?n y/o copia sin autorizaci?n est? prohibida por la
+legislaci?n
+vigente. Si ha recibido este mensaje por error, le rogamos lo 
+comunique
+inmediatamente por esta misma v?a y proceda a su destrucci?n.
+
+
+
+
+
+
+
+
+
+
+PROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este
+
+env?o, incluida su direcci?n de e-mail, forman parte de ficheros de 
+titularidad
+de la Fundaci?n ISGlobal? para cualquier
+finalidades de 
+contacto, relaci?n institucional y/o env?o de informaci?n sobre
+sus 
+actividades. Los datos que usted nos pueda facilitar contestando este
+
+correo quedar?n incorporados en los correspondientes ficheros, autorizando 
+el
+uso de su direcci?n de e-mail para las finalidades citadas. Puede 
+ejercer los
+derechos de acceso, rectificaci?n, cancelaci?n y oposici?n 
+dirigi?ndose a lopd at isglobal.org <mailto:lopd at isglobal.org>* *. Pol?tica de 
+privacidad
+en www.isglobal.org <http://www.isglobal.org/>.
+
+	[[alternative HTML version deleted]]
+
+

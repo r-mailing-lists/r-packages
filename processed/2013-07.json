@@ -1,0 +1,173 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-07",
+  "messages": [
+    {
+      "id": "msg-085a7979b26b",
+      "message_id": "<51D83B88.30903@ugent.be>",
+      "from_name": "Brecht Devleesschauwer",
+      "from_email_hash": "65665ef466b108a98f2bbec1749a59b144a0ed1fdef3d27e78c950e0b78465b7",
+      "date": "2013-07-06T17:45:12+02:00",
+      "subject": "[R-pkgs] new package 'prevalence'",
+      "subject_clean": "new package 'prevalence'",
+      "in_reply_to": "<51D7EAB0.1080203@ugent.be>",
+      "references": [
+        "<51D7EAB0.1080203@ugent.be>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130706/58bfd862/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130706/58bfd862/attachment.pl>",
+      "thread_id": "thread-085a7979b26b",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-42ef5a5a5429",
+      "message_id": "<51DEA618.2030205@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2013-07-11T07:33:28-05:00",
+      "subject": "[R-pkgs] Major Update to rms package",
+      "subject_clean": "Major Update to rms package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The rms (\"Regression Modeling Strategies\") package has undergone a \nmassive update.  The entire list of updates is at the bottom of this \nnote.  CRAN has the update for linux and will soon have it for Windows \nand Mac - check http://cran.r-project.org/web/packages/rms/ for \navailability.  This rms update relies on a major update of the Hmisc \npackage.\n\nThe most user-visible changes are:\n   * Addition of a major new modeling function orm (\"ordinal regression \nmodel\") that supports 5 distribution families (one being the logistic, \nfor proportional odds models) and is meant for continuous Y.  Sparse \nmatrix operations (helped greatly by the SparseM package) allows \nthousands of intercepts to be fitted when there are thousands of unique \nY values.  New function generators Mean, Quantile, and ExProb \n(exceedance probability distribution) have been added.  A detailed case \nstudy is in http://biostat.mc.vanderbilt.edu/CourseBios330 Chapter 15. \nOrdinal regression is now a direct competitor to linear models, and far \nmore robust, even allowing spikes in the distribution of Y.\n    * More generality and ease of obtaining bootstrap confidence limits \nfor all estimands (predictions, contrasts).  The basic bootstrap is now \nimplemented and tends to work better than the percentile bootstrap in \nterms of confidence coverage.\n    * Change of Surv to Srv\n    * Added tk/tcl progress bars for bootstrap and other repeated \ncalculations.  This can be turned off by specifying \noptions(showprogress=FALSE) or options(showprogress='console') to use \ncat().  Use options(showevery=50) to update the progress bar only every \n50 iterations.\n    * Made all design matrices stored in model fits exclude any \nintercepts, with columns of ones added as needed with Predict() etc.\n    * Dxy and c-index are now calculated with Therneau's survival \npackage survConcordance functions which is blazing fast so can be used \nroutinely in all model validations that used Dxy\n    * plot.summary.rms now produces cleaner output with fewer confidence \nlevels\n    * Several bug corrections\n\n---------------------------------------------------------------------\n\nChanges in version 4.0-0 (2013-07-10)\n    * Cleaned up label logic in Surv, made it work with interval2 \n(thanks:Chris Andrews)\n    * Fixed bug in val.prob - wrong denominator for Brier score if obs \nremoved for logistic calibration\n    * Fixed inconsistency in predictrms where predict() for Cox models \nused a design matrix that was centered on medians and modes rather than \nmeans (thanks: David van Klaveren <d.vanklaveren.1 at erasmusmc.nl>)\n    * Added mean absolute prediction error to Rq output\n    * Made pr argument passed to predab.resample more encompassing\n    * Fixed logLik method for ols\n    * Made contrast.rms and summary.rms automatically compute bootstrap \nnonparametric confidence limits if fit was run through bootcov\n    * Fixed bug in Predict where conf.type='simultaneous' was being \nignored if bootstrap coefficients were present\n    * For plot.Predict made default gray scale shaded confidence bands \ndarker\n    * For bootcov exposed eps argument to fitters and default to lower value\n    * Fixed bug in plot.pentrace regarding effective.df plotting\n    * Added setPb function for pop-up progress bars for simulations; \nturn off using options(showprogress=FALSE) or \noptions(showprogress='console')\n    * Added progress bars for predab.resample (for validate, calibrate) \nand bootcov\n    * Added bootBCa function\n    * Added seed to bootcov object\n    * Added boot.type='bca' to Predict, contrast.rms, summary.rms\n    * Improved summary.rms to use t critical values if df.residual defined\n    * Added simultaneous contrasts to summary.rms\n    * Fixed calculation of Brier score, g, gp in lrm.fit by handling \nspecial case of computing linear predictor when there are no predictors \nin the model\n    * Fixed bug in prModFit preventing successful latex'ing of penalized \nlrms\n    * Removed \\synopsis from two Rd files\n    * Added prmodsel argument to predab.resample\n    * Correct Rd files to change Design to rms\n    * Restricted NAMESPACE to functions expected to be called by users\n    * Improved Fortran code to use better dimensions for array declarations\n    * Added the basic bootstrap for confidence limits for bootBCa, \ncontrast, Predict, summary\n    * Fixed bug in latex.pphsm, neatened pphsm code\n    * Neatened code in rms.s\n    * Improved code for bootstrapping ranks of variables in anova.rms \nhelp file\n    * Fixed bug in Function.rms - undefined Nam[[i]] if strat.  Thanks: \ndouglaswilkins at yahoo.com\n    * Made quantreg be loaded at end of search list in Rq so it doesn't \noverride latex generic in Hmisc\n    * Improved plot.summary.rms to use blue of varying transparency \ninstead of polygons to show confidence intervals, and to use only three \nconfidence levels by default: 0.9 0.95 0.99\n    * Changed Surv to Srv; use of Surv in fitting functions will result \nin lack of time labels and assumption of Day as time unit; no longer \noverride Surv in survival\n    * Changed calculation of Dxy (and c-index) to use survival package \nsurvConcordance service function when analyzing (censored) survival \ntime; very fast\n    * Changed default dxy to TRUE in validate.cph, validate.psm\n    * Dxy is now negated if correlating Cox model log relative hazard \nwith survival time\n    * Removed dxy argument from validate.bj as it always computed\n    * Added Dxy to standard output of cph, psm\n    * Added help file for Srv\n    * Removed reference to ps.slide from survplot help page\n    * Added the general ordinal regression fitting function orm (and \norm.fit) which efficiently handles thousands of intercepts because of \nsparse matrix representation of the information matrix; implements 5 \ndistribution families\n    * Added associated functions print.orm, vcov.orm, predict.orm, \nMean.orm, Quantile.orm, latex.orm, validate.orm\n    * Changed predab.resample to allow number of intercepts from \nresample to resample\n    * Fixed bug in Mean.cph (thanks: Komal Kapoor <komal.bitsgoa at gmail.com>)\n    * Removed incl.non.slopes and non.slopes arguments from all predict \nmethods\n    * Changed all functions to expect predict(..., type='x') to not \nreturn intercept columns, and all fitting functions to not store column \nof ones if x=TRUE\n    * Changed nomogram argument intercept to kint, used default as \nfit$interceptRef\n    * Made bootcov behave in a special way for orm, to use linear \ninterpolation to select a single intercept targeted at median Y\n    * Revamped all of rms to never store intercepts in design matrices \nin fit objects and to add intercepts on demand inside predictrms\n    * Added new function generator ExProb to compute exceedance \nprobabilities from orm fits\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "The rms (\"Regression Modeling Strategies\") package has undergone a \nmassive update.  The entire list of updates is at the bottom of this \nnote.  CRAN has the update for linux and will soon have it for",
+      "thread_id": "thread-42ef5a5a5429",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-e5fe0b21fc66",
+      "message_id": "<87ip0cq2x3.wl%eglenn@mit.edu>",
+      "from_name": "Ezra Haber Glenn",
+      "from_email_hash": "97e7ed7f7dce2c2cec1d7cb672f982f3087af9f4e61a0cdb8e0ce347c1fd9f90",
+      "date": "2013-07-14T16:53:12-04:00",
+      "subject": "[R-pkgs] acs package version 1.1: download and analyze census data from the ACS",
+      "subject_clean": "acs package version 1.1: download and analyze census data from the ACS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce that version 1.1 of the acs package is now\navailable on CRAN.  The package allows users to automatically\ndownload, analyze, and present data from the U.S. Census American\nCommunity Survey.\n\nMajor improvements in versions 1.0 and 1.1 include:\n\n  * A single \"acs.fetch()\" function allows users to downloading data\n    directly from the new Census American Community Survey API and\n    import it into R (with proper statistical treatment of estimates\n    and error, variable and geographic relabeling, and more);\n\n  * A new \"geo.make()\" function allows users to create their own\n    custom geographies from the existing census hierarchy to organize\n    and download data.  The function accepts over 20 different\n    geographic options (state, county, tract, congressional district,\n    zip code, metropolitan statistical area, different types of state\n    school and legislative districts, and more), which may be set to\n    create and endlessly-combine 25 different summary levels for easy\n    downloading from the Census; and\n\n  * Two special lookup tools help users filter Census geographies\n    (with the \"geo.lookup()\" function) and statistical tables (with\n    the \"acs.lookup()\" function) to find exactly what they want.\n\nThe package is well documented via the manual on CRAN, as well as a\nUser Guide available at\n<http://eglenn.scripts.mit.edu/citystate/wp-content/uploads/2013/06/wpid-working_with_acs_R3.pdf>.\nAdditional support, worked examples, and more can be found on the\nCityState blog (<http://eglenn.scripts.mit.edu/citystate>), as well as\nthrough the acs.R user group mailing list -- visit\n<http://mailman.mit.edu/mailman/listinfo/acs-r> to subscribe and view\narchives.\n\n--\nEzra Haber Glenn, AICP\nDepartment of Urban Studies and Planning\nMassachusetts Institute of Technology\n77 Massachusetts Ave., Room 7-337\nCambridge, MA 02139\neglenn at mit.edu \nhttp://dusp.mit.edu/faculty/ezra-glenn | http://eglenn.scripts.mit.edu/citystate/\n617.253.2024 (w)\n617.721.7131 (c)",
+      "body_snippet": "We are pleased to announce that version 1.1 of the acs package is now\navailable on CRAN.  The package allows users to automatically\ndownload, analyze, and present data from the U.S. Census American\nCo",
+      "thread_id": "thread-e5fe0b21fc66",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-ee02b46e6cab",
+      "message_id": "<4B50EBB3-5545-4F75-BAA9-5967AB3024F1@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2013-07-19T10:40:59-05:00",
+      "subject": "[R-pkgs] WriteXLS Version 3.0.0 Released",
+      "subject_clean": "WriteXLS Version 3.0.0 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nVersion 3.0.0 of the WriteXLS package has been released to CRAN. Source tarballs are being mirrored and binaries for Windows and OSX should appear in due course.\n\nMain CRAN URL: http://cran.r-project.org/web/packages/WriteXLS/index.html\n\nWriterXLS is a cross-platform Perl based R function to create Excel 2003 (XLS) and Excel 2007 (XLSX) files from one or more data frames. Each data frame will be written to a separate named worksheet in the Excel spreadsheet. The worksheet name will be the name of the data frame it contains or can be specified by the user.\n\nThe key changes in the new version are:\n\n1. The ability to create Excel 2007 (XLSX) files in addition to Excel 2003 (XLS) files.\n\n2. The Perl package Excel::Writer::XLSX is now included to facilitate the creation of the Excel 2007 files.\n\n3. The Perl package Text::CSV_XS has been replaced with Text::CSV_PP, which is a Pure Perl implementation of the former package and is included in the WriteXLS package. This should make it easier for users to install WriteXLS since a pre-compiled or locally compiled binary for Text::CSV_XS is no longer required.\n\n4. Data frame columns that have a 'comment' attribute, created using the comment() function, will have the text content of the 'comment' attribute written to a cell comment in the first row of the worksheet containing that data frame. This will work for both Excel 2003 (XLS) and Excel 2007 (XLSX) files. These comments can serve as column labels, providing descriptive information on the content of the column in the Excel worksheet.\n\n\nThe package is openly maintained under GPL-2 at:\n\n  https://github.com/marcschwartz/WriteXLS\n\n\nIf anyone identifies any issues, please let me know.\n\nThanks and regards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nVersion 3.0.0 of the WriteXLS package has been released to CRAN. Source tarballs are being mirrored and binaries for Windows and OSX should appear in due course.\n\nMain CRAN URL: http://cran.r",
+      "thread_id": "thread-ee02b46e6cab",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-c0e668035c2c",
+      "message_id": "<CAMTWbJh6ScLphf2nnd3guwOhk9Tp3N0utu_2S6Yuzp7sih0b6g@mail.gmail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "23cf086ca920b8413cf82f50e8684d2ad0107f757c3acccd0f951bbb269742f4",
+      "date": "2013-07-22T10:31:54+02:00",
+      "subject": "[R-pkgs] Version 1.0 of the R package \"frontier\" released",
+      "subject_clean": "Version 1.0 of the R package \"frontier\" released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all\n\nI am happy to announce that version 1.0 of the \"frontier\" package is\navailable on CRAN. The R package \"frontier\" provides tools for\nanalysing efficiency and productivity using the \"stochastic frontier\"\napproach. This R package is based on Tim Coelli's DOS software\n\"FRONTIER 4.1\" and has been available on CRAN for almost 5 years now.\nAfter many improvements of the source code, a few additional features,\nand a few changes of the user interface in the beginning, the code and\nthe user interface have been rather stable in the previous 2.5 years.\nThe \"frontier\" package has been used by many R users and many\napplications have proven its reliability. Therefore, I have called the\nlatest version of this package \"1.0.\" This version is almost identical\nto the previous versions but it includes citation information and the\nargument \"farrell\" of efficiencies.frontier() has been renamed as\n\"minusU\" and the argument \"farrell\" of summary.frontier() has been\nrenamed as \"effMinusU\", because the term \"farrell\" was misleading in\nsome cases. The argument \"farrell\" can still be used for maintaining\nbackward-compatibility.\n\nhttp://cran.r-project.org/package=frontier\n\nhttps://r-forge.r-project.org/projects/frontier/\n\nBest regards,\nArne\n\n--\nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "Dear all\n\nI am happy to announce that version 1.0 of the \"frontier\" package is\navailable on CRAN. The R package \"frontier\" provides tools for\nanalysing efficiency and productivity using the \"stochasti",
+      "thread_id": "thread-c0e668035c2c",
+      "thread_depth": 0,
+      "month": "2013-07"
+    },
+    {
+      "id": "msg-a7e97968d001",
+      "message_id": "<51F7D08E.5090205@ku.edu>",
+      "from_name": "Paul Johnson",
+      "from_email_hash": "39535fb6d68bd241213126c7497c4b387b8587d36f0f655573d15b4a998aec72",
+      "date": "2013-07-30T09:41:18-05:00",
+      "subject": "[R-pkgs] update: rockchalk 1.8.0",
+      "subject_clean": "update: rockchalk 1.8.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This will appear on CRAN mirrors soon. It's my update for Spring, 2013. I keep\ntrack of R problems that arise in the regression course and try to facilitate\nthem. There are functions for describing data, presenting regression plots and\ntables, some regression diagnostics.\n\nMost of the usages are illustrated in the vignette \"rockchalk\".  That has plenty\nof illustrations if you care to take a quick look.\n\nIf you did not try this before, here is why you might want to. The function that\nthe package was organized around originally was plotSlopes: draw predicted value\nlines on the same scatterplot. Now this is generalized a bit, the moderator\nvariable can be numeric or factor and I have bent over backwards to make this\nflexible for the end users. If you run the examples for \"predictOMatic\" and\n\"plotSlopes\" and \"plotCurves,\" you will get the idea.\n\nThe rest is details.\n\nI started a NEWS file using Emacs org mode, here it is:\n\n* version 1.8\n\nThis is the end of the Spring semester, so its time for the new rockchalk\nrelease.\n\n** New, general, flexible framework for calculating marginal effects\n   in regression models, linear or otherwise.\n\n*** newdata function works. It can scan a regression, isolate the\n   predictors, and then make a \"mix and match\" new data object for use\n   with a predict function.  This is convenient for users but also very\n   flexible.\n\n*** The newdata framework is built on top of \"divider\" methods that can\n    check whether a variable is numeric or categorical, and select\n    example values according to user-specified criteria.\n\n*** predictOMatic works dependably! Please try\n    example(predictOMatic). The problem with single predictor models\n    that bugged users of rockchalk 1.6.2 has been solved.\n\n*** predictOMatic argument interval = c(\"none\", \"confidence\",\n    \"prediction\").  Guess what that is supposed to do? For glm,\n    which does not provide a confidence interval, I've written code\n    for an approximate Wald type CI, and hope to do better in future.\n\n** Regression diagnostics.\n\n*** getPartialCor: get partial correlations from a fitted model\n(student convenience).\n\n*** getDeltaRsquare: Returns the change in estimated R-square observed\n    when each predictor is removed.  This is the squared semi-partial\n    correlation coefficients (student convenience).\n\n*** mcDiangose for multicollinearity diagnostics (student convenience)\n\n** MeanCenter: add arguments to make selection of variables for\ncentering more convenient when users don't like the automatic\noptions centerOnlyInteractors.\n\n** plotSlopes, plotCurves:\n *** Added intervals argument, for confidence and prediction intervals.\n\n*** Added opacity argument to determine darkness of interval regions\n    (which use the transparency \"alpha layer.\").\n\n*** A lot of fiddling under the hood to make colors consistent when\n    levels of modx are altered to compare plots of a given model.\n\n*** Can produce a simple regression prediction plot if modx argument\n    is omitted. This is a widely requested feature.\n\nPlease run example(plotSlopes) and example(plotCurves)\n\n*** Changes under the hood. The common plotting functions of\n    plotSlopes and plotCurves are abstracted into a function\n    plotFancy, so now this will be eaiser for me to maintain. The\n    plotting ritual is the same, why keep 2 functions, you ask?\n    plotCurves tolerates more complicated regression\n    formula. plotSlopes leads to testSlopes, and hence to\n    plot.testSlopes.\n\n** addLines: communication between 2 dimensional regression plots and 3\ndimensional plots from plotPlane. Run example(addLines).\n\n** plot.testSlopes. Run testSlopes on an interactive model. For a\nmodel with 2 ocontinuous predictors that interact, this will generate\nan ABSOLUTELY EXCELLENT and highly informative plot displaying the\neffect of the interaction.\n\n** outreg: LaTeX tables from regression models.\n\n*** Reworked with new arguments to make tables for more types\nof regressions. There's quite a bit more room for users to customize\nthe type of diagnostics they want to report.\n\nThe wide variety of output types from regression models is very\nbothersome. I refuse to write a separate outreg method for each\ndifferent regression packages. If you want to use a package\nfrom an author who is willing to do that, consider the \"texreg\"\npackage.\n\n*** outreg2HTML. converts outreg to HTML markup and into a file.\nIntended for importation into word processor programs.\n\n** New vignette Rstyle. Most of the source-code files have been reformatted\nto comply with my advice.\n\n** genCorrelatedData2\n\n*** genCorrelatedData2. For regression examples, suppose you want to\n    have 6 columns of an MVN with a certain mean and covariance\n    structure. And you want the regression formula to have\n    interactions and squared-terms. No more hassle. This is a\n    framework that works. Users set the mean, standard deviations, and\n    correlation values in various ways. Run\n    example(genCorrelatedData2).\n\n*** To support that, there are more generally useful\n    functions. lazyCor and lazyCov are flexible ways to create\n    correlation and covariance matrices. As the names suggest, they\n    are for lazy users who just want to specify some information and\n    get the right thing.  This requires a set of transformation\n    functions, to receive vech and create matrices, and so forth.\n    Check genCorrelatedData.R, for vech2Corr, makeVec, makeSymmetric,\n    checkPosDef. The latter, which I am surprised not to find in the\n    base of R itself, imitates code in the MASS package for\n    ascertaining if a matrix is positive definite.\n\n*** Small, almost microscopic, revision of MASS package mvrnorm\n    function to assure replication of MVN draws when the sample size\n    is adjusted. The first rows of the resulting MVN draw will be the\n    same, no matter how the \"n\" argument is changed. The same change\n    has been made in the mvtnorm package's MVN random generator. While\n    this is a very small code change, it does solve some very\n    mysterious simulation results that have been obtained with MASS\n    mvrnorm in our lab.\n\n\n-- \nPaul E. Johnson\t\t\temail: pauljohn at ku.edu\nhttp://pj.freefaculty.org\tAssoc. Director\nProfessor, Political Science \tCtr for Research Methods & Data Analysis\n1541 Lilac Lane, Rm 504\t\t1425 Jayhawk Blvd.\t\nUniversity of Kansas\t\tWatson Library, Rm. 470  \t\nLawrence, Kansas 66045-3129\tLawrence, Kansas 66045-7555\nPh: (785) 864-3523\t\tPh: (785) 864-3353",
+      "body_snippet": "This will appear on CRAN mirrors soon. It's my update for Spring, 2013. I keep\ntrack of R problems that arise in the regression course and try to facilitate\nthem. There are functions for describing da",
+      "thread_id": "thread-a7e97968d001",
+      "thread_depth": 0,
+      "month": "2013-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-085a7979b26b",
+      "subject": "new package 'prevalence'",
+      "message_count": 1,
+      "participants": [
+        "Brecht Devleesschauwer"
+      ],
+      "started": "2013-07-06T17:45:12+02:00",
+      "last_reply": "2013-07-06T17:45:12+02:00",
+      "root_message_id": "msg-085a7979b26b"
+    },
+    {
+      "id": "thread-42ef5a5a5429",
+      "subject": "Major Update to rms package",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2013-07-11T07:33:28-05:00",
+      "last_reply": "2013-07-11T07:33:28-05:00",
+      "root_message_id": "msg-42ef5a5a5429"
+    },
+    {
+      "id": "thread-e5fe0b21fc66",
+      "subject": "acs package version 1.1: download and analyze census data from the ACS",
+      "message_count": 1,
+      "participants": [
+        "Ezra Haber Glenn"
+      ],
+      "started": "2013-07-14T16:53:12-04:00",
+      "last_reply": "2013-07-14T16:53:12-04:00",
+      "root_message_id": "msg-e5fe0b21fc66"
+    },
+    {
+      "id": "thread-ee02b46e6cab",
+      "subject": "WriteXLS Version 3.0.0 Released",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2013-07-19T10:40:59-05:00",
+      "last_reply": "2013-07-19T10:40:59-05:00",
+      "root_message_id": "msg-ee02b46e6cab"
+    },
+    {
+      "id": "thread-c0e668035c2c",
+      "subject": "Version 1.0 of the R package \"frontier\" released",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2013-07-22T10:31:54+02:00",
+      "last_reply": "2013-07-22T10:31:54+02:00",
+      "root_message_id": "msg-c0e668035c2c"
+    },
+    {
+      "id": "thread-a7e97968d001",
+      "subject": "update: rockchalk 1.8.0",
+      "message_count": 1,
+      "participants": [
+        "Paul Johnson"
+      ],
+      "started": "2013-07-30T09:41:18-05:00",
+      "last_reply": "2013-07-30T09:41:18-05:00",
+      "root_message_id": "msg-a7e97968d001"
+    }
+  ]
+}

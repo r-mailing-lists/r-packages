@@ -1,0 +1,360 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-12",
+  "messages": [
+    {
+      "id": "msg-fcfabd21395f",
+      "message_id": "<bd27195cb539a9f82317852a91e1b7d5.squirrel@mail.stat.ucla.edu>",
+      "from_name": "ian.fellows at stat.ucla.edu",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2009-12-02T16:19:36-08:00",
+      "subject": "[R-pkgs] Deducer: An R data analysis GUI",
+      "subject_clean": "Deducer: An R data analysis GUI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing a new version of Deducer:\n\nDeducer 0.2-1 is an intuitive, cross-platform graphical data analysis\nsystem. It uses menus and dialogs to guide the user efficiently through\nthe data manipulation and analysis process, and has an excel like\nspreadsheet for easy data frame visualization and editing. Deducer works\nbest when used with the Java based R GUI JGR, but the dialogs can be\ncalled from the command line. Dialogs have also been integrated into the\nWindows Rgui.\n\nThe statistical methods and concepts covered by the dialogs is increasing,\nand currently includes:\n\nData Manipulation: factor editing, Variable recoding, subseting, sorting,\nmerging, transposing, opening data (text and foreign), and saving data\n\nAnalysis: Frequencies, Descriptives, Contingency tables (and related\nstatistics), one-sample, two-sample, k-sample tests, as well as\ncorrelations\n\nModels: Linear Models (with optional HCCM), Logistic regression,\nGeneralized Linear Models\n\nSince it?s initial release in August, there have been significant changes\nto the back-end as well as the programmatic interface. This has resulted\nin increased stability, and made for easier incorporation of Deducer?s R\nfunctions into non-GUI programs. Additionally, a plug-in interface has\nbeen added, which allows arbitrary packages to add onto Deducer?s menu\nsystem.",
+      "body_snippet": "Announcing a new version of Deducer:\n\nDeducer 0.2-1 is an intuitive, cross-platform graphical data analysis\nsystem. It uses menus and dialogs to guide the user efficiently through\nthe data manipulatio",
+      "thread_id": "thread-fcfabd21395f",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-7e50e2d4be98",
+      "message_id": "<28152c800912041211y787668ew3cfc3b2bb4289d3e@mail.gmail.com>",
+      "from_name": "Cameron Bracken",
+      "from_email_hash": "020a769e735b40b41b51198f839f2fc5533f7323b1c06483bcac5d5d323f5587",
+      "date": "2009-12-04T13:11:12-07:00",
+      "subject": "[R-pkgs] New Package: pgfSweave",
+      "subject_clean": "New Package: pgfSweave",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "At long last pgfSweave has finally made its way to CRAN.\n\nThe pgfSweave package is about speed and style of graphics. For speed,\nthe package provides capabilities for ?caching? graphics generated\nwith Sweave on top of the caching funcitonality of cacheSweave. For\nstyle the pgfSweave package facilitates the integration of R graphics\nwith LaTeX reports through the tikzDevice package and eps2pgf utility.\nWith these tools, figure labels are converted to LaTeX strings so they\nmatch the style of the document and the full range of LaTeX math\nsymbols/equations are available.\n\nThe backbone of pgfSweave is a a new driver for Sweave\n(pgfSweaveDriver). The driver provides new chunk options tikz, pgf and\nexternal on top of the cache option provided by cacheSweave.\n\nThis package started as a fork (hack) of cacheSweave to suit our own\nnarrow purposes and has since become a valuable tool for much of our\nown work.  We hope you will find it useful as well.\n\n-Cameron Bracken and Charlie Sharpsteen",
+      "body_snippet": "At long last pgfSweave has finally made its way to CRAN.\n\nThe pgfSweave package is about speed and style of graphics. For speed,\nthe package provides capabilities for ?caching? graphics generated\nwith",
+      "thread_id": "thread-7e50e2d4be98",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-729097360b52",
+      "message_id": "<4B1FA963.8060000@stamats.de>",
+      "from_name": "Matthias Kohl",
+      "from_email_hash": "d4f0ad548e5b2b7cf7a8ad59fdeac7b825fdec0788879a852168f8d932a1a177",
+      "date": "2009-12-09T14:42:59+01:00",
+      "subject": "[R-pkgs] new version of RobASt-family of packages",
+      "subject_clean": "new version of RobASt-family of packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new version 0.7 of our RobASt-family of packages is available on \nCRAN for several days. As there were many changes we will only sketch \nthe most important ones here. For more details see the corresponding \nNEWS files (e.g. news(package = \"RobAStBase\") or using function NEWS \nfrom package startupmsg i.e. NEWS(\"RobAStBase\")).\n\n\nFirst of all the new package RobLoxBioC was added to the family which \nincludes S4 classes and methods for preprocessing omics data, in \nparticular gene expression data.\n\n\n##############################################\n## All packages (RandVar, RobAStBase, RobLox, RobLoxBioC,\n##                         ROptEst, ROptEstOld, ROptRegTS, RobRex)\n##############################################\n- TOBEDONE file was added as a starting point for collaborations. The\nfile can be displayed via function TOBEDONE from package startupmsg;\ne.g. TOBEDONE(\"distr\")\n- tests/Examples folder for some automatic testing was introduced\n\n\n##############################################\n## Package RandVar\n##############################################\n- mainly fixing of warnings and bugs\n\n\n##############################################\n## Package RobAStBase\n##############################################\n- enhanced plotting, in particular methods for qqplot\n- unified treatment of NAs\n- extended implementation for total variation neighbourhoods\n- implementation of k-step estimator construction extended\n\n\n##############################################\n## Package RobLox\n##############################################\n- na.rm argument added\n- introduction of finite-sample correction\n\n\n##############################################\n## Package ROptEst\n##############################################\n- optional use of alternative algorithm to obtain Lagrange multipliers\n  using duality based optimization\n- extended implementation for total variation neighbourhoods\n- solutions for general parameter transformations with nuisance\n  components\n- several extensions to the examples in folder scripts\n- implementation of k-step estimator construction extended\n\n\n##############################################\n## Package ROptEstOld\n##############################################\n- still needed for packages ROptRegTS and RobRex\n- removed Symmetry and DistributionSymmetry implementation to\n  make ROptEstOld compatible with distr 2.2\n\n\n##############################################\n## Package ROptRegTS\n##############################################\n- still depends on ROptEstOld\n\n\n##############################################\n## Packages RobRex\n##############################################\n- moved some of the examples in \\dontrun{} to reduce check time ...\n- some minor corrections in ExamplesEstimation.R in folder scripts\n\n\nBest\nPeter\nMatthias\n\n-- \nDr. Matthias Kohl\nwww.stamats.de",
+      "body_snippet": "The new version 0.7 of our RobASt-family of packages is available on \nCRAN for several days. As there were many changes we will only sketch \nthe most important ones here. For more details see the corr",
+      "thread_id": "thread-729097360b52",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-224641e62972",
+      "message_id": "<57e838140912090704tde0815lf9b9611b4cbbc9d6@mail.gmail.com>",
+      "from_name": "Stephen Weston",
+      "from_email_hash": "507fe1aedccd9cb1c2bba1715ac24f959abe255adeeb866f82b6c8a1896cbd15",
+      "date": "2009-12-09T10:04:36-05:00",
+      "subject": "[R-pkgs] doMPI 0.1-3",
+      "subject_clean": "doMPI 0.1-3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of the new \"doMPI\" package, a\nparallel backend for the \"foreach\" package, which acts as an adaptor to\nthe \"Rmpi\" package.  The package has been uploaded to CRAN and is now\navailable.\n\nLike the \"doSNOW\" package, \"doMPI\" allows you to execute foreach loops\nin parallel using \"Rmpi\" as the underlying transport.  But I was\ninterested in experimenting with using \"Rmpi\" directly so that data that\nwas used in all iterations of a foreach loop could be broadcast to the\ncluster workers using the \"Rmpi\" mpi.bcast function.  I also wanted to\nwrite the package so it could fetch arguments and process results\ndynamically, allowing it to handle an arbitrary number of tasks in a\nmemory efficient way.\n\nThe package includes a number of example scripts and an introductory\nvignette, in addition to the standard help documentation.  The vignette\nalso attempts to explain how to run \"doMPI\" scripts using the Open MPI\n\"orterun\" command, which I hope helps people who are new to \"Rmpi\" get\nstarted running parallel R programs.\n\n- Steve Weston",
+      "body_snippet": "I'd like to announce the availability of the new \"doMPI\" package, a\nparallel backend for the \"foreach\" package, which acts as an adaptor to\nthe \"Rmpi\" package.  The package has been uploaded to CRAN a",
+      "thread_id": "thread-224641e62972",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-1d3e76f17965",
+      "message_id": "<b7bfe54e0912091613l2b16a713mc6798f5ab9c0b5c8@mail.gmail.com>",
+      "from_name": "Charlotte Maia",
+      "from_email_hash": "3d0795a7b2517575cc7e66f2a4d170db38bd5db6c3e72af4e60d2ab5aee4244b",
+      "date": "2009-12-10T13:13:14+13:00",
+      "subject": "[R-pkgs] Multivariate ECDFs",
+      "subject_clean": "Multivariate ECDFs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hey R people,\n\nI have just put a package on CRAN, mecdf 0.2.1.\n\nIt computes multivariate ECDFs.\ni.e. Estimates (or perhaps I should say evaluates) a multivariate\ncumulative distribution function, using data, without any assumptions\nper se.\nPlus contrary to my own advise, the vignette contains some pretty\npictures of the bivariate normal...\n\nThe current package is relatively simple.\nHowever, I have searched for this topic, and found very little\ninformation, so I regard this as a new(ish) topic.\n\nThe package is still new and relatively untested.\nI'm planning to implement smooth(ish) distribution functions in the\nnear future. e.g. Interpolating the step function (possibly with some\nother adjustments).\nSuggestions (including criticisms) welcome, especially while the package is new.\n\n\nMerry Christmas, group hug...\n-- \nCharlotte Maia\nhttp://sites.google.com/site/maiagx/home",
+      "body_snippet": "Hey R people,\n\nI have just put a package on CRAN, mecdf 0.2.1.\n\nIt computes multivariate ECDFs.\ni.e. Estimates (or perhaps I should say evaluates) a multivariate\ncumulative distribution function, usin",
+      "thread_id": "thread-1d3e76f17965",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-441e7af58a92",
+      "message_id": "<f8e6ff050912102003w5eb363bbm9f67d60b376516d9@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2009-12-10T22:03:03-06:00",
+      "subject": "[R-pkgs] ggplot2: version 0.8.4",
+      "subject_clean": "ggplot2: version 0.8.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.4 (2009-12-08) ----------------------------------------\n\n* aes and aes_string both convert prefixes to full names\n* aesthetics: corrected list of aesthetics to include american spelling of\n  colour as well as base R abbreviations\n* aesthetics: fix bug in detecting which aesthetics are calculated\n* aes_string treats NULL as \"NULL\"\n* annotate now works with missing x and y (e.g. for geom_rect)\n* continuous scale limits now automatically sorted\n* coord_polar: fix bug if breaks not all inside limits\n* facet_wrap: can now specify both ncol and nrow without getting an error\n* facet_wrap: now works with statistics that produce both x and y values (e.g.\n  stat_qq)\n* fullseq now adds additional break on bottom if necessary, so that the\n  include.lowest argument in cut never comes into play (this the source of a\n  potential bug in histograms)\n* geom_boxplot: alpha now affects fill colour of boxes only\n* geom_path correctly switches to segments if varying alpha used (thanks to\n  Karl Ove Hufthammer for the report and Baptiste Auguie for the fix)\n* geom_point: the alpha aesthetic now also affects the fill.\n* geom_ribbon always sorts input to avoid problems with certain pathological\n  inputs\n* geom_smooth was incorrectly applying alpha to line colour in the legend\n* nullGrob renamed to zeroGrob to avoid name conflict with grid\n* position_collide now works with missing values\n* position_stack: fixed bug in detection of overlap for negative values\n* scale_discrete_position now uses drop argument to force dropping of unused\n  levels\n* scale_gradient, scale_gradient2 and scale_gradientn now uses label\n  parameters, if supplied\n* scale_x_inverse, scale_y_inverse now actually work, and added recip as alias\n* stat_qq now correctly groups results\n* stat_smooth will not try and fit a line to 2 or fewer points (previously\n  didn't try for only 1 point)\n* stat_spoke now works with reversed scales\n* grouping: now consistent between different geoms (Issue #33)\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-441e7af58a92",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-97b7ab60307e",
+      "message_id": "<FE171F69-AC8A-4903-88CA-F99D0AAEBF6F@gmail.com>",
+      "from_name": "Christophe Dutang",
+      "from_email_hash": "71db47fbb88383c85c0a4105bb9dd5508a39e5eb48ded58e22bd31403fb35064",
+      "date": "2009-12-20T19:24:39+01:00",
+      "subject": "[R-pkgs] new version of randtoolbox",
+      "subject_clean": "new version of randtoolbox",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091220/2556e950/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091220/2556e950/attachment.pl>",
+      "thread_id": "thread-97b7ab60307e",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-18d4f4f58dab",
+      "message_id": "<38c08c270912211015u6b82772cpb5e168270e2b1afd@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
+      "date": "2009-12-21T13:15:36-05:00",
+      "subject": "[R-pkgs] randomSurvivalForest 3.6.0 now available on CRAN",
+      "subject_clean": "randomSurvivalForest 3.6.0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Please find release 3.6.0 of the package \"randomSurvivalForest\" now\navailable for download on CRAN.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE ?3.6.0\n\nRELEASE 3.6.0 represents the last and final major upgrade\nof this product. ?Current and future functionality will migrate to the\nnew CRAN package, Random Forests for Survival, Regression, and\nClassification, that will be released in the coming months.\n\nKey changes to the current release are as follows:\n\no The ability to fully analyze competing risk data including ensemble\n?estimation, error rates, and VIMP by event type. ?Can also predict\n?on test data. ?Missing data imputation is also available. See rsf()\n?and competing.risk() for details.\n\no Automatic variable selection using minimal depth theory implemented\n?in the new function varSel(). ?Also see the core function\n?max.subtree().\n\no Pairwise interactions between variables using minimal depth theory.\n?See find.interaction() for more details.\n\no The ability to analyze mean minimal depth information by individual\n?(for variable selection at the individual level). See the\n?documentation for rsf() for more information.\n\no Impute only mode for extremely fast imputation of data. ?See the\n?documentation for impute.rsf() fro more details.\n\no The ability to export forests to a Java (JUNG) based plug-in. ?This\n?allows one to visualize individual trees in the forest. See the\n?documentation for rsf2rfz() for more information.\n\no Modification to random splitting to grow deeper trees.\n\no Fix of memory leak in INTERACTION mode. ?Thanks to Xi Chen for\n?finding this feature. ?Other miscellaneous bug fixes.\n\n---------------------------------------------------------------------------------\n\n\nudaya at kogalur-shear.com\n919-824-9825\n\nUdaya B. Kogalur, Ph.D.\nAdjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation\nPresident, Kogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Please find release 3.6.0 of the package \"randomSurvivalForest\" now\navailable for download on CRAN.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEAS",
+      "thread_id": "thread-18d4f4f58dab",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-574b4612889a",
+      "message_id": "<19248.13681.21625.678963@ron.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2009-12-21T20:56:49-06:00",
+      "subject": "[R-pkgs] Rcpp 0.7.0: R/C++ integration now even easier",
+      "subject_clean": "Rcpp 0.7.0: R/C++ integration now even easier",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Rcpp version 0.7.0 went onto CRAN this weekend. The key new features are\n\n  o inline support, taken from Oleg Sklyar's neat inline package and \n    adapted/extented to support Rcpp as well as external libraries\n    (see below for an example); this even works on Windows (provided you \n    have Rtools installed and configured); \n\n  o addition of a new simple type RcppSexp for importing or exporting\n    simple types directly between R and C++\n\n  o addition of a number of new examples for both these features\n\n  o code reorganisation: every class has in its own header and source file \n\n  o last but not least relicensed from LGPL (>=2.1) to GPL (>= 2)\n\nMy blog (http://dirk.eddelbuettel.com/blog/) has two recent posts with a bit\nmore details (and colour highlighting of the code below) but let's just look\nat one example of using GNU GSL functions for illustrative purposes (as you\nwouldn't need this to access random-number generators as R has its own).\n\nConsider this R code snippet:\n\n    ## use Rcpp to pass down a parameter for the seed, and a vector size\n    gslrng <- '\n       int seed = RcppSexp(s).asInt();\n       int len = RcppSexp(n).asInt();\n\n       gsl_rng *r;\n       gsl_rng_env_setup();\n       std::vector<double> v(len);\n\n       r = gsl_rng_alloc (gsl_rng_default);\n\n       gsl_rng_set (r, (unsigned long) seed);\n       for (int i=0; i<len; i++) {\n           v[i] = gsl_rng_get (r);\n       }\n       gsl_rng_free(r);\n\n       return RcppSexp(v).asSexp();\n       '\n\n    ## turn into a function that R can call\n    ## compileargs redundant on Debian/Ubuntu as gsl headers are found anyway\n    funx <- cfunction(signature(s=\"numeric\", n=\"numeric\"),\n                      gslrng,\n                      includes=\"#include <gsl/gsl_rng.h>\",\n                      Rcpp=TRUE,\n                      cppargs=\"-I/usr/include\",\n                      libargs=\"-lgsl -lgslcblas\")\n    print(funx(0, 5))\n\n\nBrief notes on this:\n\n  1)  The character variable gslrng contains valid C++ code.\n\n  2)  The call to cfunction converts this C++ code into a function that\n      calls it -- and this function is compiled, linked and loaded\n      automagically simply using hints about GSL header files and libraries.\n\n  3)  The interface is explit: cfunction() is told about a function signature\n      with numeric variables 's' and 'n'; this is what the C++ code convert\n      to (C++ local) variables 'seed' and 'len' using the RcppSexp class.\n\n  4)  We return a single SEXP to R which is based on the std::vector<double>\n      v which is also converted on the fly.\n\n  5)  The resulting vector is returned and simply printed at the R level.\n\n\nMore examples are in the source tarball and in the R-Forge SVN archive.\n\nCheers, Dirk\n\n-- \nThree out of two people have difficulties with fractions.",
+      "body_snippet": "Rcpp version 0.7.0 went onto CRAN this weekend. The key new features are\n\n  o inline support, taken from Oleg Sklyar's neat inline package and \n    adapted/extented to support Rcpp as well as external",
+      "thread_id": "thread-574b4612889a",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-381b060dd974",
+      "message_id": "<f8e6ff050912220317x5896e1d4rf9d0f0e177484bc2@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2009-12-22T11:17:25Z",
+      "subject": "[R-pkgs] ggplot2 version 0.8.5",
+      "subject_clean": "ggplot2 version 0.8.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nSee NEWS for changes in latest version\n\nggplot2 0.8.5 (2009-12-15) ----------------------------------------\n\nNew features\n\n* geom_text gains parse argument which makes it possible to display\n  expressions. (Implements #50)\n\n* all scales now have legend parameter, which defaults to TRUE. Setting to\n  false will prevent that scale from contributing to the legend (Implements\n  #27)\n\n* default axis labels and legend titles are now stored in the options, instead\n  of in each scale. This fixes a long standing bug where it was not easy to\n  set the label for computed variable, such as the y axis on a histogram.\n  Additionally, it means default scales are only added to the plot until just\n  prior to plotting, instead of the previous behaviour where scales where\n  added as layers were added - this could cause problems if you later modified\n  the underlying data. (Implements #28)\n\n* coord_equal: when ratio = NULL (the default), it will adjust the aspect\n  ratio of the plot, rather than trying to extend the shortest axis.\n\n* x and y positions can be set to Inf or -Inf to refer to the top/right and\n  bottom/left extents of the panel. (Implements #18)\n\n* expand_limits(): a new function to make it easy to force the inclusion of\n  any set of values in the limits of any aesthetic.\n\nNew features (minor)\n\n* aesthetics: when _setting_ an aesthetic, you may only set it to a single\n  value.  This was always a good idea, but now it is enforced with an\n  informative error message.\n* stat_contour bump up default number of contours\n* stat_density2d: make number of grid points used for density estimation\n  user controllable (implements #9)\n* geom_bin now allows you to set whether bins used intervals of the form\n  (a, b] or [a, b) with the \"right\" parameter (implements #20)\n* geom_path: linejoin, lineend and linemitre are now user controllable\n  (implements #24)\n* scales: all scales check that breaks are supplied if labels are, and\n  that breaks and labels are the same length (implements #40)\n* scales: if breaks are a named vector, the names will be used as labels\n  (thanks to suggestion by David Kahle)\n* scale_colour_gradient, scale_colour_gradient2 & scale_colour_gradientn now\n  have formatter argument to match scale_continuous\n* updated citation to refer to the ggplot2 book\n\nBug fixes\n\n* coord_cartesian now correctly sets limits when one or both of the position\n  scales are non-linear.  (fixes #17)\n* coord_equal: now works with non-linear scales (fixes #13)\n* coord_map sets aspect ratio correctly (fixes #4)\n* coord_polar correctly combines labels on end of axis if expressions\n  (fixes #39)\n* coord_trans now respects scale expand parameter (expansion occurs after\n  transformation) (fixes #14)\n* facet_grid with scales = \"free\" and space = \"free\" now calculates space\n  correctly if the range of the scale is < 1 (fixes #1)\n* facet_grid works once more when facetting with multiple variables in one\n  direction (fixes #11)\n* facet_wrap now sets aspect ratio correctly\n* facet_wrap now maintains original order of data\n* geom_hline and geom_vline now work with coord_flip (fixes #30)\n* geom_path drops missing values at start and end of each line (fixes #41)\n* scale_shape_discrete, scale_size_continuous, scale_alpha and\n  scale_linetype_discrete added to scales to match naming convention of all\n  other scales (fixes #47)\n* legends now correctly calculate label widths (fixes #38)\n* legends will only merge if both the title and all labels are the same.\n  (fixes #16)\n* legends: fix for bug #19: Legend with three constraints doesn't work\n* stat_contour & stat_density2d: fix grouping bugs (issue #7)\n* xlim, ylim: fix bug when setting limits of discrete scales\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-381b060dd974",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-85a11c43c215",
+      "message_id": "<6a7001e10912220604j67979311w2d75673da414b542@mail.gmail.com>",
+      "from_name": "Brandon Whitcher",
+      "from_email_hash": "f049bea1e8e17d2647618f9fb715e26559a3ddd7eb5563ad65ce97cc699c16ed",
+      "date": "2009-12-22T14:04:44Z",
+      "subject": "[R-pkgs] dcemriS4: A package for medical image analysis (S4 implementation)",
+      "subject_clean": "dcemriS4: A package for medical image analysis (S4 implementation)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "dcemriS4: A package for medical image anlaysis\n\nThe dcemriS4 package is a major update, and S4 implementation, of the\ndcemri package.? All previous functionality has been replicated, for\nDCE-MRI and DWI, with specific emphasis on cancer imaging\napplications.? Additional major features include:\n\n? o  S4 classes for NIfTI and Analyze data formats that merges header\nand data information\n  o  Simplified import/export functions with NIfTI header extension support\n  o  Complete \"audit trail\" functionality, in XML, stored as a NIfTI\nheader extension\n  o  Graphical methods for \"lightbox\", \"orthographic\" and \"overlay\" displays\n  o  Expanded vignette with examples\n\nI look forward to receiving feedback on this project.\n\ncheers...\n\nBrandon",
+      "body_snippet": "dcemriS4: A package for medical image anlaysis\n\nThe dcemriS4 package is a major update, and S4 implementation, of the\ndcemri package.? All previous functionality has been replicated, for\nDCE-MRI and D",
+      "thread_id": "thread-85a11c43c215",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-d74212161c13",
+      "message_id": "<971536df0912251125x3713decdu1003cca9b689888e@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2009-12-25T14:25:15-05:00",
+      "subject": "[R-pkgs] sqldf 0.2-0",
+      "subject_clean": "sqldf 0.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of sqldf, version 0.2-0, has been uploaded to CRAN and\nshould be available on most mirrors by now.\n\nNEW\n\n- works with the new version of DBI package, DBI 0.2-5.   The default\naction of this version of DBI quotes those column names in select\nstatements that are SQL reserved words (rather than appending __1 to\nthem which was the previous default action).  As a result it should no\nlonger be necessary to refer to Time as Time__1, etc. Thus this now\nworks where BOD is a 6 row data frame that comes with R and has the\nindicated column names:\n\n     sqldf(\"select Time, demand from BOD\")\n\n- if the libspatialite-1.dll sqlite loadable extension is found on\nPATH then it will automatically be loaded into SQLite the first time\nsqldf is called in a session.  This gives access to several dozen new\nSQL functions.  For a complete list see:\n\n     http://www.gaia-gis.it/spatialite/spatialite-sql-2.3.1.html\n\n  For example, stddev_pop and var_pop are functions provided in the\ndll used in this example:\n\n     sqldf(\"select avg(demand) mean, stddev_pop(demand) sd,\nvar_pop(demand) var from BOD\")\n\n  (If the loadable extension is not found then sqldf still works with\nall the functionality it previously had but the new functions in the\nloadable extension will, of course, not be available.  Note that this\nloadable extension does not come with sqldf ; however, it is free\nsoftware distributed under the Mozilla public license and the user may\ndownload it from http://www.gaia-gis.it/spatialite/binaries.html  and\nplace the dll on their PATH to get automatic access from sqldf).\n\n- new filter argument on read.csv.sql\n\n- read.csv2.sql added.  This is like read.csv.sql but uses a default\nfilter which translates all commas to dots.  On Windows it pipes the\ninput file through a custom vbscript that comes with sqldf and on\nother systems it uses tr , .   (In both cases the result is the same.)\n read.csv2.sql is used to read data files originating in certain\nEuropean countries.\n\nOVERVIEW\n\nsqldf is an R package that allows one to manipulate R data frames and\ninput files using SQL from within R.  It is layered on top of RSQLite,\nDBI and the sqlite database.  Typical usage involves a single line of\nR code calling sqldf and containing a string argument which is the\nselect statement.  sqldf automatically sets up a database and table\ndefinitions, runs the select statement, retrieves the result and\ndestroys the database.  For more information including many examples\nof use see the home page at:\n\n   http://sqldf.googlecode.com\n\nand the help files in the package.",
+      "body_snippet": "A new version of sqldf, version 0.2-0, has been uploaded to CRAN and\nshould be available on most mirrors by now.\n\nNEW\n\n- works with the new version of DBI package, DBI 0.2-5.   The default\naction of t",
+      "thread_id": "thread-d74212161c13",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-7515bdefe996",
+      "message_id": "<ee2a35a60912280224p44cb8f1dy186a29448f68bca7@mail.gmail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2009-12-28T11:24:14+01:00",
+      "subject": "[R-pkgs] micEcon split into miscTools, micEconAids, and micEcon",
+      "subject_clean": "micEcon split into miscTools, micEconAids, and micEcon",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The \"micEcon\" package has been split into three packages: miscTools,\nmicEconAids, and micEcon.\n\na) miscTools (version 0.6-0) includes miscellaneous small tools and\nutilities that are not related to (micro)economics, e.g. colMedians(),\nrowMedians(), insertCol(), insertRow(), vecli(), symMatrix(),\ntriang(), semidefiniteness(), compPlot(), and rSquared(). The\nmiscTools package should depend on (almost) no other packages so that\nit can be used in other packages without increasing the total\n(recursive!) dependencies of these packages too much.\n\nb) micEconAids (version 0.6-0) includes all functions and methods for\ndemand analysis with the Almost Ideal Demand System (AIDS) of Deaton\nand Muellbauer (1980). Since these functions and methods comprised a\nlarge and rather specific \"group\" within the \"old\" micEcon package, it\nmakes sense (IMHO) to separate them into a separate package.\n\nc) micEcon (version 0.6-0) includes the remaining parts of the \"old\"\nmicEcon package, e.g. for economic analysis with Cobb-Douglas\nfunctions, translog functions, quadratic functions, CES (constant\nelasticity of substitution) functions, SNQ (symmetric normalized\nquadratic = generalized McFadden) profit functions, or linearly\nhomogeneous non-parametric functions.\n\nI have uploaded all three packages to CRAN. They should be available\nfor download on CRAN and its mirrors (at latest) in a few days.\n\nFeedback is highly welcome!\n\n/Arne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "The \"micEcon\" package has been split into three packages: miscTools,\nmicEconAids, and micEcon.\n\na) miscTools (version 0.6-0) includes miscellaneous small tools and\nutilities that are not related to (m",
+      "thread_id": "thread-7515bdefe996",
+      "thread_depth": 0,
+      "month": "2009-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fcfabd21395f",
+      "subject": "Deducer: An R data analysis GUI",
+      "message_count": 1,
+      "participants": [
+        "ian.fellows at stat.ucla.edu"
+      ],
+      "started": "2009-12-02T16:19:36-08:00",
+      "last_reply": "2009-12-02T16:19:36-08:00",
+      "root_message_id": "msg-fcfabd21395f"
+    },
+    {
+      "id": "thread-7e50e2d4be98",
+      "subject": "New Package: pgfSweave",
+      "message_count": 1,
+      "participants": [
+        "Cameron Bracken"
+      ],
+      "started": "2009-12-04T13:11:12-07:00",
+      "last_reply": "2009-12-04T13:11:12-07:00",
+      "root_message_id": "msg-7e50e2d4be98"
+    },
+    {
+      "id": "thread-224641e62972",
+      "subject": "doMPI 0.1-3",
+      "message_count": 1,
+      "participants": [
+        "Stephen Weston"
+      ],
+      "started": "2009-12-09T10:04:36-05:00",
+      "last_reply": "2009-12-09T10:04:36-05:00",
+      "root_message_id": "msg-224641e62972"
+    },
+    {
+      "id": "thread-729097360b52",
+      "subject": "new version of RobASt-family of packages",
+      "message_count": 1,
+      "participants": [
+        "Matthias Kohl"
+      ],
+      "started": "2009-12-09T14:42:59+01:00",
+      "last_reply": "2009-12-09T14:42:59+01:00",
+      "root_message_id": "msg-729097360b52"
+    },
+    {
+      "id": "thread-1d3e76f17965",
+      "subject": "Multivariate ECDFs",
+      "message_count": 1,
+      "participants": [
+        "Charlotte Maia"
+      ],
+      "started": "2009-12-10T13:13:14+13:00",
+      "last_reply": "2009-12-10T13:13:14+13:00",
+      "root_message_id": "msg-1d3e76f17965"
+    },
+    {
+      "id": "thread-441e7af58a92",
+      "subject": "ggplot2: version 0.8.4",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2009-12-10T22:03:03-06:00",
+      "last_reply": "2009-12-10T22:03:03-06:00",
+      "root_message_id": "msg-441e7af58a92"
+    },
+    {
+      "id": "thread-97b7ab60307e",
+      "subject": "new version of randtoolbox",
+      "message_count": 1,
+      "participants": [
+        "Christophe Dutang"
+      ],
+      "started": "2009-12-20T19:24:39+01:00",
+      "last_reply": "2009-12-20T19:24:39+01:00",
+      "root_message_id": "msg-97b7ab60307e"
+    },
+    {
+      "id": "thread-18d4f4f58dab",
+      "subject": "randomSurvivalForest 3.6.0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2009-12-21T13:15:36-05:00",
+      "last_reply": "2009-12-21T13:15:36-05:00",
+      "root_message_id": "msg-18d4f4f58dab"
+    },
+    {
+      "id": "thread-574b4612889a",
+      "subject": "Rcpp 0.7.0: R/C++ integration now even easier",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2009-12-21T20:56:49-06:00",
+      "last_reply": "2009-12-21T20:56:49-06:00",
+      "root_message_id": "msg-574b4612889a"
+    },
+    {
+      "id": "thread-381b060dd974",
+      "subject": "ggplot2 version 0.8.5",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2009-12-22T11:17:25+00:00",
+      "last_reply": "2009-12-22T11:17:25+00:00",
+      "root_message_id": "msg-381b060dd974"
+    },
+    {
+      "id": "thread-85a11c43c215",
+      "subject": "dcemriS4: A package for medical image analysis (S4 implementation)",
+      "message_count": 1,
+      "participants": [
+        "Brandon Whitcher"
+      ],
+      "started": "2009-12-22T14:04:44+00:00",
+      "last_reply": "2009-12-22T14:04:44+00:00",
+      "root_message_id": "msg-85a11c43c215"
+    },
+    {
+      "id": "thread-d74212161c13",
+      "subject": "sqldf 0.2-0",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2009-12-25T14:25:15-05:00",
+      "last_reply": "2009-12-25T14:25:15-05:00",
+      "root_message_id": "msg-d74212161c13"
+    },
+    {
+      "id": "thread-7515bdefe996",
+      "subject": "micEcon split into miscTools, micEconAids, and micEcon",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2009-12-28T11:24:14+01:00",
+      "last_reply": "2009-12-28T11:24:14+01:00",
+      "root_message_id": "msg-7515bdefe996"
+    }
+  ]
+}

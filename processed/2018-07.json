@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-07",
+  "messages": [
+    {
+      "id": "msg-890df870da14",
+      "message_id": "<CAOZ2irF_hhgL5jJtago76eRujnXx97u7rWmEetLm4bkpqNPE4A@mail.gmail.com>",
+      "from_name": "Christopher Peralta",
+      "from_email_hash": "7306f3cd0c67c7268987f1aaf9219b35b7a34d6b6e885f041ffaa1c9db317a43",
+      "date": "2018-07-03T12:55:53+08:00",
+      "subject": "[R-pkgs] New package: frite",
+      "subject_clean": "New package: frite",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI've released a new package called *frite* and it has been published by\ncran.\n\nIts purpose is to provide basic tools for code generation. Additionally,\nthere are also more general functions to aid in code refactoring.\n\nYou can download it here:\nhttps://cran.r-project.org/package=frite\n\nThanks for reading,\nChristopher Peralta\n\n- *frite* author and maintainer\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI've released a new package called *frite* and it has been published by\ncran.\n\nIts purpose is to provide basic tools for code generation. Additionally,\nthere are also more general functions to",
+      "thread_id": "thread-890df870da14",
+      "thread_depth": 0,
+      "month": "2018-07"
+    },
+    {
+      "id": "msg-4bc7fbd7ea5d",
+      "message_id": "<CADgKAxv5M6zOisTtXX9TrJJsyJcc6kR33GB=X__G8Wcu8-tbDg@mail.gmail.com>",
+      "from_name": "Aurélien Chateigner",
+      "from_email_hash": "9f7ccfba0e6306decd5fea50c574b17890895301f141b32054b17822fecf7e31",
+      "date": "2018-07-24T10:33:39+02:00",
+      "subject": "[R-pkgs] New package : anyLib",
+      "subject_clean": "New package : anyLib",
+      "in_reply_to": "<CADgKAxsvPHygMzSv0=XJn1UGwaBWNrKCsv4EvNaevDPQM2VCgg@mail.gmail.com>",
+      "references": [
+        "<CADgKAxsvPHygMzSv0=XJn1UGwaBWNrKCsv4EvNaevDPQM2VCgg@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nThis message is to announce the release of anyLib, a new package to install\neasily any package from CRAN, Bioconductor or GitHub. It also automatically\nloads the installed package. So do not bother anymore to remember where a\npackage come from and if you already installed it or not, just anyLib!\n\nYou can download it from https://cran.r-project.org/package=anyLib\n\nBest,\n\nAur?lien Chateigner, PhD\nPostdoctoral Fellow\n\nBioForA, INRA, ONF, 45075, Orl?ans, France\nINRA Val-de-Loire\n2163 avenue de la Pomme de Pin\nCS 40001 - Ardon\n45075 ORLEANS CEDEX 2\nFrance\n\nhttps://www6.val-de-loire.inra.fr/uragpf/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nThis message is to announce the release of anyLib, a new package to install\neasily any package from CRAN, Bioconductor or GitHub. It also automatically\nloads the installed package. So do not both",
+      "thread_id": "thread-4bc7fbd7ea5d",
+      "thread_depth": 0,
+      "month": "2018-07"
+    },
+    {
+      "id": "msg-21fa76e3c4de",
+      "message_id": "<CAC9BCcyKZ2BhkxeQfEVQsSgYZp2VyUd6+8UJBgk61oTDYX2C2A@mail.gmail.com>",
+      "from_name": "Xiaoli Zhao",
+      "from_email_hash": "d63f540739c73dad1c212731139c0115382bdaf391460de1c9f9a099426ed216",
+      "date": "2018-07-25T15:39:11-04:00",
+      "subject": "[R-pkgs] New package cleandata: functions to clean business data",
+      "subject_clean": "New package cleandata: functions to clean business data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi useRs,\n\nA new package, cleandata, has been released on CRAN.\n\nThis package contains functions to that work with data frame to inspect,\nimpute, and encode data. The functions for imputation and encoding can\nproduce log files to help you keep track of your process.\n\nI designed the package to be efficient to work with business datasets.\nHowever, it can also work with other datasets, especially datasets with\nmany columns.\n\nA Demo of Using It to Wrangle Business Data:\nhttps://rpubs.com/neilalien/rpkgcd010demo01\n\nCRAN: https://cran.r-project.org/package=cleandata\nGitHub: https://github.com/sherrisherry/cleandata\n\nAll the best,\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi useRs,\n\nA new package, cleandata, has been released on CRAN.\n\nThis package contains functions to that work with data frame to inspect,\nimpute, and encode data. The functions for imputation and enco",
+      "thread_id": "thread-21fa76e3c4de",
+      "thread_depth": 0,
+      "month": "2018-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-890df870da14",
+      "subject": "New package: frite",
+      "message_count": 1,
+      "participants": [
+        "Christopher Peralta"
+      ],
+      "started": "2018-07-03T12:55:53+08:00",
+      "last_reply": "2018-07-03T12:55:53+08:00",
+      "root_message_id": "msg-890df870da14"
+    },
+    {
+      "id": "thread-4bc7fbd7ea5d",
+      "subject": "New package : anyLib",
+      "message_count": 1,
+      "participants": [
+        "Aurélien Chateigner"
+      ],
+      "started": "2018-07-24T10:33:39+02:00",
+      "last_reply": "2018-07-24T10:33:39+02:00",
+      "root_message_id": "msg-4bc7fbd7ea5d"
+    },
+    {
+      "id": "thread-21fa76e3c4de",
+      "subject": "New package cleandata: functions to clean business data",
+      "message_count": 1,
+      "participants": [
+        "Xiaoli Zhao"
+      ],
+      "started": "2018-07-25T15:39:11-04:00",
+      "last_reply": "2018-07-25T15:39:11-04:00",
+      "root_message_id": "msg-21fa76e3c4de"
+    }
+  ]
+}

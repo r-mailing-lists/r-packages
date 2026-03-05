@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-10",
+  "messages": [
+    {
+      "id": "msg-3565dad78e68",
+      "message_id": "<CADPvwO5f1_kXnW7PEWd6YKGuqwwvr2tOB97AFo_mMJ4mUATOcQ@mail.gmail.com>",
+      "from_name": "Giulio Barcaroli",
+      "from_email_hash": "f1f1615cf038c8d70c912b5266d090026a849a9eea859e7a367070a2f3d9522a",
+      "date": "2018-10-08T16:25:06+02:00",
+      "subject": "[R-pkgs] Announcement: SamplingStrata 1.3 on the CRAN",
+      "subject_clean": "Announcement: SamplingStrata 1.3 on the CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am pleased to announce that a new release (1.3)  of SamplingStrata is now\navailable on CRAN.\nThis version offers a numer of important new features:\n\n  o The optimization of the stratification of the population frame is run\nin parallel if different   domains are considered. If not specified, n-1 of\ntotal  available cores are used OR if number     of domains < (n-1) cores,\nthen a number of cores equal to number of domains are used.\n\n  o A new function 'KmeansSolution' produces an initial solution using the\nkmeans algorithm by clustering atomic strata considering the values of\n the means of target variables in them.By indicating this solution as a\nsuggestion to the optimization step, this may greatly speed the convergence\nto the optimal  solution.\n\n  o A new function 'selectSampleSystematic' has been added. It allows to\nselect a stratified sample with the systematic method.\n\n  o It is now possible to handle \"anticipated variance\" by introducing a\nmodel linking a proxy variable whose values are available for all units in\nthe sampling frame, with the target variable whose values are not\navailable. In this implementation only linear model can be chosen.\n\nThe package can be downloaded and installed from CRAN via:\ninstall.packages(\"SamplingStrata\")\nor from github:\ndevtools::install_github(\"barcaroli/SamplingStrata\")\n\nReport any issue at:\nhttps://github.com/barcaroli/SamplingStrata/issues\n\nYou can also find additional information at:\nhttps://barcaroli.github.io/SamplingStrata/index.html\n\n-- \nGiulio Barcaroli\n\nMethods, Quality and Metadata Division - Methodologies Directorate\n\nItalian National Institute of Statistics\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am pleased to announce that a new release (1.3)  of SamplingStrata is now\navailable on CRAN.\nThis version offers a numer of important new features:\n\n  o The optimization of the stratification of the",
+      "thread_id": "thread-3565dad78e68",
+      "thread_depth": 0,
+      "month": "2018-10"
+    },
+    {
+      "id": "msg-f3ff7b8f7537",
+      "message_id": "<201810092043.w99KhkJk020741@mail.math.utah.edu>",
+      "from_name": "Curtis Miller",
+      "from_email_hash": "d0110e8c284cf3fe14c978eabd24d900dffa5f7ce1d872dea3b4aeeb3ec0789a",
+      "date": "2018-10-09T14:43:51-06:00",
+      "subject": "[R-pkgs] MCHT: an R package for bootstrap and Monte Carlo hypothesis testing",
+      "subject_clean": "MCHT: an R package for bootstrap and Monte Carlo hypothesis testing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to publicly announce MCHT, an R package for bootstrap and Monte Carlo hypothesis testing. Here is the blog post announcing the package (https://ntguardian.wordpress.com/2018/10/08/announcing-mcht-package-bootstrap-monte-carlo-hypothesis-testing/) and here is a link to the GitHub page (https://github.com/ntguardian/MCHT). In the blog post (and in the read-me of the actual package) I explain how Monte Carlo and bootstrap hypothesis testing work, and I give demonstrations of basic usage of the package.\n\nThis is the first in a weekly series of blog posts explaining the package. Future topics include making the primary objects of the package (MCHTest-class objects) self-contained and immune from side effects; maximized Monte Carlo testing; bootstrap testing; testing with multi-sample or multivariate data; time series inference; and a final example that motivated my initial creation of the package.\n\nI'm excited about the package and hope others will find it useful. This is the first package I?ve publicly released so I?d like feedback, such as whether I should submit the package to CRAN or a paper to J. Stat. Soft. or the R Journal. And please report any issues you encounter on GitHub; I won't know until someone tells me.\n\nCurtis Miller\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to publicly announce MCHT, an R package for bootstrap and Monte Carlo hypothesis testing. Here is the blog post announcing the package (https://ntguardian.wordpress.com/2018/10/08/announci",
+      "thread_id": "thread-f3ff7b8f7537",
+      "thread_depth": 0,
+      "month": "2018-10"
+    },
+    {
+      "id": "msg-00fbc74df385",
+      "message_id": "<CAARY7kh_xa5UbC_BSevO8zz+5OX6qaMsrn5znoZO3_muG_rCEg@mail.gmail.com>",
+      "from_name": "David Hugh-Jones",
+      "from_email_hash": "b861a0e46a03ea754054f771a3a6d4397e2e40ca0c58eb56fa5478b1247a758d",
+      "date": "2018-10-11T11:22:43+01:00",
+      "subject": "[R-pkgs] New rcheology update",
+      "subject_clean": "New rcheology update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "List members might like to know that the `rcheology` package has been\nupdated on CRAN. `rcheology` is a data package which lists every object in\nbase R packages for previous versions of R. The new update extends R\nversions back to 1.0.1, and also includes unexported objects in the\nnamespace (like `.subset`).\n\nCheers,\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "List members might like to know that the `rcheology` package has been\nupdated on CRAN. `rcheology` is a data package which lists every object in\nbase R packages for previous versions of R. The new upd",
+      "thread_id": "thread-00fbc74df385",
+      "thread_depth": 0,
+      "month": "2018-10"
+    },
+    {
+      "id": "msg-d87d602b48d7",
+      "message_id": "<CAG4iXGU8MEfHwy5goQRb3v2NbDPwBO_qMD4iFM4OZi8PW6wZKg@mail.gmail.com>",
+      "from_name": "Piotr Szulc",
+      "from_email_hash": "fc6c4e5b915c1c4c6ffd1cb2be13a3f30b12d43ed5344489b92afba285ba214e",
+      "date": "2018-10-13T08:07:22+02:00",
+      "subject": "[R-pkgs] bigstep 1.0 released",
+      "subject_clean": "bigstep 1.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nif you are using machine learning algorithms and have a lot of data\n(especially a lot of predictors, e.g. in genome-wide association studies),\ncheck the package bigstep. You can easily run the stepwise procedure with\ne.g. BIC or mBIC (which is modified version of BIC designed for a large\nnumber of predictors). Selection can be performed on data which exceed RAM\ncapacity.\n\nVignette:\nhttps://cran.r-project.org/web/packages/bigstep/vignettes/bigstep.html\n\nBest,\nPiotr Szulc\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nif you are using machine learning algorithms and have a lot of data\n(especially a lot of predictors, e.g. in genome-wide association studies),\ncheck the package bigstep. You can easily ",
+      "thread_id": "thread-d87d602b48d7",
+      "thread_depth": 0,
+      "month": "2018-10"
+    },
+    {
+      "id": "msg-bba83269997d",
+      "message_id": "<CAJ9GNa=NJu0ygVbaWEWDXEBfph2NWgFOvLAhV18PRyOSougBNw@mail.gmail.com>",
+      "from_name": "Jan Wijffels",
+      "from_email_hash": "40e7be1f43d69a8c349f5a5e49ba5325991324a0f33c40afca692559ba4ce9ad",
+      "date": "2018-10-23T14:23:05+02:00",
+      "subject": "[R-pkgs] new R package crfsuite for building classification models in Natural Language Processing",
+      "subject_clean": "new R package crfsuite for building classification models in Natural Language Processing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\nI'm happy to announce the release of a new R package on CRAN called\ncrfsuite.\nThe crfsuite package is an R package specific to *Natural Language\nProcessing* and allows you to easily build and apply models for\n\n\n\n\n* - named entity recognition - text chunking - part of speech tagging -\nintent recognition or  - classification of any category you have in mind*\n\nThe focus of the implementation is on allowing the R user to build such\nmodels *on his/her own data.*\n\nIn order to facilitate creating training data on your own data, a shiny app\nis made available in this R package which allows you to easily tag your own\nchunks of text, with your own categories, which can next be used to build a\ncrfsuite model.\nThe package also plays nicely together with the udpipe R package (\nhttps://CRAN.R-project.org/package=udpipe), which you need in order to\nextract predictive features for your words to be used in the crfsuite model.\n\nMore details at the development repository\nhttps://github.com/bnosac/crfsuite or at CRAN\nhttps://CRAN.R-project.org/package=crfsuite\n\nHope it is useful to you. Feel free to provide feedback at\nhttps://github.com/bnosac/crfsuite\n\nbest,\nJan\n\nJan Wijffels\nStatistician\nwww.bnosac.be  | +32 486 611708\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\nI'm happy to announce the release of a new R package on CRAN called\ncrfsuite.\nThe crfsuite package is an R package specific to *Natural Language\nProcessing* and allows you to easily b",
+      "thread_id": "thread-bba83269997d",
+      "thread_depth": 0,
+      "month": "2018-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3565dad78e68",
+      "subject": "Announcement: SamplingStrata 1.3 on the CRAN",
+      "message_count": 1,
+      "participants": [
+        "Giulio Barcaroli"
+      ],
+      "started": "2018-10-08T16:25:06+02:00",
+      "last_reply": "2018-10-08T16:25:06+02:00",
+      "root_message_id": "msg-3565dad78e68"
+    },
+    {
+      "id": "thread-f3ff7b8f7537",
+      "subject": "MCHT: an R package for bootstrap and Monte Carlo hypothesis testing",
+      "message_count": 1,
+      "participants": [
+        "Curtis Miller"
+      ],
+      "started": "2018-10-09T14:43:51-06:00",
+      "last_reply": "2018-10-09T14:43:51-06:00",
+      "root_message_id": "msg-f3ff7b8f7537"
+    },
+    {
+      "id": "thread-00fbc74df385",
+      "subject": "New rcheology update",
+      "message_count": 1,
+      "participants": [
+        "David Hugh-Jones"
+      ],
+      "started": "2018-10-11T11:22:43+01:00",
+      "last_reply": "2018-10-11T11:22:43+01:00",
+      "root_message_id": "msg-00fbc74df385"
+    },
+    {
+      "id": "thread-d87d602b48d7",
+      "subject": "bigstep 1.0 released",
+      "message_count": 1,
+      "participants": [
+        "Piotr Szulc"
+      ],
+      "started": "2018-10-13T08:07:22+02:00",
+      "last_reply": "2018-10-13T08:07:22+02:00",
+      "root_message_id": "msg-d87d602b48d7"
+    },
+    {
+      "id": "thread-bba83269997d",
+      "subject": "new R package crfsuite for building classification models in Natural Language Processing",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2018-10-23T14:23:05+02:00",
+      "last_reply": "2018-10-23T14:23:05+02:00",
+      "root_message_id": "msg-bba83269997d"
+    }
+  ]
+}

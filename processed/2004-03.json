@@ -1,0 +1,441 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-03",
+  "messages": [
+    {
+      "id": "msg-30b2f79714d9",
+      "message_id": "<004e01c40290$728a50f0$0501a8c0@crush>",
+      "from_name": "Daniel Adler",
+      "from_email_hash": "469a3a475c36a72d9b30e0f97eb9eaa4a3b8c71d9422a01a0e93e5444b308512",
+      "date": "2004-03-05T10:01:28+01:00",
+      "subject": "[R-pkgs] rgl v0.64-10 released",
+      "subject_clean": "rgl v0.64-10 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ANNOUNCEMENT\nrgl - 3d visualization device system for R using OpenGL\n\nDESCRIPTION\nThe rgl package is a visualization device system for R, using \nOpenGL as the rendering backend. An rgl device at its core \nis a real-time 3D engine written in C++. It provides an \ninteractive viewpoint navigation facility (mouse + wheel support)\nand an R programming interface.\n  \nVERSION\nv0.64-10\n  \nCHANGELOG \n- MacOS X 'Panther' G5 fix for OpenGL library loading in .first.lib\n- removed lpng and zlib from source tree \n- support for automatic downloading of zlib and lpng on win32 \n- added demo directory with several examples using demo(rgl)\n- CRAN R check fixes (v0.64-9 to v0.64-10)\n    \nKNOWN BUGS\n- rgl.close() and rgl.quit() might crash on X11 platforms \n\nHOMEPAGE\nhttp://wsopuppenkiste.wiso.uni-goettingen.de/~dadler\n\nAUTHOR\nDaniel Adler <dadler at uni-goettingen.de>\nDepartment of Statistics and Econometrics\nUniversity of Goettingen, Germany",
+      "body_snippet": "ANNOUNCEMENT\nrgl - 3d visualization device system for R using OpenGL\n\nDESCRIPTION\nThe rgl package is a visualization device system for R, using \nOpenGL as the rendering backend. An rgl device at its c",
+      "thread_id": "thread-30b2f79714d9",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-30b2f79714d9",
+      "message_id": "<004e01c40290$728a50f0$0501a8c0@crush>",
+      "from_name": "Daniel Adler",
+      "from_email_hash": "469a3a475c36a72d9b30e0f97eb9eaa4a3b8c71d9422a01a0e93e5444b308512",
+      "date": "2004-03-05T10:01:28+01:00",
+      "subject": "[R-pkgs] rgl v0.64-10 released",
+      "subject_clean": "rgl v0.64-10 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ANNOUNCEMENT\nrgl - 3d visualization device system for R using OpenGL\n\nDESCRIPTION\nThe rgl package is a visualization device system for R, using \nOpenGL as the rendering backend. An rgl device at its core \nis a real-time 3D engine written in C++. It provides an \ninteractive viewpoint navigation facility (mouse + wheel support)\nand an R programming interface.\n  \nVERSION\nv0.64-10\n  \nCHANGELOG \n- MacOS X 'Panther' G5 fix for OpenGL library loading in .first.lib\n- removed lpng and zlib from source tree \n- support for automatic downloading of zlib and lpng on win32 \n- added demo directory with several examples using demo(rgl)\n- CRAN R check fixes (v0.64-9 to v0.64-10)\n    \nKNOWN BUGS\n- rgl.close() and rgl.quit() might crash on X11 platforms \n\nHOMEPAGE\nhttp://wsopuppenkiste.wiso.uni-goettingen.de/~dadler\n\nAUTHOR\nDaniel Adler <dadler at uni-goettingen.de>\nDepartment of Statistics and Econometrics\nUniversity of Goettingen, Germany",
+      "body_snippet": "ANNOUNCEMENT\nrgl - 3d visualization device system for R using OpenGL\n\nDESCRIPTION\nThe rgl package is a visualization device system for R, using \nOpenGL as the rendering backend. An rgl device at its c",
+      "thread_id": "thread-30b2f79714d9",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-ea2e70ba9b67",
+      "message_id": "<1078931928.2622.36.camel@chomsky.estadi.uv.es>",
+      "from_name": "Virgilio Gómez Rubio",
+      "from_email_hash": "3b4123f5c3ff01b6d34830be0726ae099a8f42790bf2cac840611dbd735d6dd0",
+      "date": "2004-03-10T16:18:48+01:00",
+      "subject": "[R-pkgs] New package: DCluster",
+      "subject_clean": "New package: DCluster",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am glad to announce the release of a new package for R: DCluster. It\nimplements a number of methods for the detection of clusters of disease.\nIt includes methods to test Poisson extra-variation (Chi-square test and\nPotthoff-Whittinghill's test), Spatial Autocorrelation (Moran's I and\nGeary's c), general clustering (Whittermore's statistic and Tango's\nstatistic), scan methods (Openshaw's GAM, Besag & Newell's methods and\nKulldorff & Nagarwalla's statistic) and a focused test (Stone's Test).\n\nBootstrap is used to estimate significance and a number of models are\nproposed to simulate data: permutations and Poisson, Multinomial or Neg.\nBinomial distributions.\n\nI hope the package will be useful to epidemiologists and statisticians\ninvolved in spatial epidemiological studies. As usual, feedback and\ncomments are welcome. Our hope is to improve the package, so suggestions\nabout new methods to be added are of interest.\n\nWith best regards,\n\n-- \n             Virgilio G?mez Rubio\n\nGrup d'Estad?stica espacial i temporal \nen Epidemiologia i medi ambient \n\nDpto. Estad?stica e I. O. - Facultat de Matem?tiques\nAvda. Vicent A. Estell?s, 1 - 46100 Burjassot\nValencia - SPAIN\n\nhttp://matheron.uv.es/~virgil\n\nTLF: 00 34 96 354 43 62 - FAX: 00 34 96 354 47 35",
+      "body_snippet": "Dear R users,\n\nI am glad to announce the release of a new package for R: DCluster. It\nimplements a number of methods for the detection of clusters of disease.\nIt includes methods to test Poisson extra",
+      "thread_id": "thread-ea2e70ba9b67",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-ea2e70ba9b67",
+      "message_id": "<1078931928.2622.36.camel@chomsky.estadi.uv.es>",
+      "from_name": "Virgilio Gómez Rubio",
+      "from_email_hash": "3b4123f5c3ff01b6d34830be0726ae099a8f42790bf2cac840611dbd735d6dd0",
+      "date": "2004-03-10T16:18:48+01:00",
+      "subject": "[R-pkgs] New package: DCluster",
+      "subject_clean": "New package: DCluster",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am glad to announce the release of a new package for R: DCluster. It\nimplements a number of methods for the detection of clusters of disease.\nIt includes methods to test Poisson extra-variation (Chi-square test and\nPotthoff-Whittinghill's test), Spatial Autocorrelation (Moran's I and\nGeary's c), general clustering (Whittermore's statistic and Tango's\nstatistic), scan methods (Openshaw's GAM, Besag & Newell's methods and\nKulldorff & Nagarwalla's statistic) and a focused test (Stone's Test).\n\nBootstrap is used to estimate significance and a number of models are\nproposed to simulate data: permutations and Poisson, Multinomial or Neg.\nBinomial distributions.\n\nI hope the package will be useful to epidemiologists and statisticians\ninvolved in spatial epidemiological studies. As usual, feedback and\ncomments are welcome. Our hope is to improve the package, so suggestions\nabout new methods to be added are of interest.\n\nWith best regards,\n\n-- \n             Virgilio G?mez Rubio\n\nGrup d'Estad?stica espacial i temporal \nen Epidemiologia i medi ambient \n\nDpto. Estad?stica e I. O. - Facultat de Matem?tiques\nAvda. Vicent A. Estell?s, 1 - 46100 Burjassot\nValencia - SPAIN\n\nhttp://matheron.uv.es/~virgil\n\nTLF: 00 34 96 354 43 62 - FAX: 00 34 96 354 47 35",
+      "body_snippet": "Dear R users,\n\nI am glad to announce the release of a new package for R: DCluster. It\nimplements a number of methods for the detection of clusters of disease.\nIt includes methods to test Poisson extra",
+      "thread_id": "thread-ea2e70ba9b67",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-4b0ce7e48bcf",
+      "message_id": "<E1B1P1l-0003PO-00@DMjcadima>",
+      "from_name": "Jorge Cadima",
+      "from_email_hash": "a263d5a66379eed6efe61017b0d94c4dcb2bc08bbac49d7abd304fb5bd8e4523",
+      "date": "2004-03-11T12:11:04Z",
+      "subject": "[R-pkgs] Subselect package - Version 0.7.1",
+      "subject_clean": "Subselect package - Version 0.7.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new  version (0.7.1) of package 'subselect' has been uploaded to CRAN.\n\nPackage 'subselect' provides functions which assess the quality of\nvariable subsets as surrogates for a full data set, in an exploratory\ndata analysis, and search for subsets which are optimal under various\ncriteria. \n\nAs of version 0.7 a new function 'leaps' has been added. 'Leaps'\nperforms a branch and bound search for the best variable subsets,\naccording to a specified criterion. 'Leaps' implements Duarte Silva's\nadaptation (Reference 3) of Furnival and Wilson's Leaps and Bounds\nAlgorithm for variable selection in Regression Analysis. It is viable in\nidentifying optimal subsets for data sets with a moderate number\n(up to about 30-35) of variables, and very fast for small data sets\n(up to about 20-25 variables).\n\nIn package subselect, the quality of given k-subsets of variables are\nassessed under three criteria (Reference 2). \n\nThree additional functions, 'anneal', 'genetic' and 'improve', search for\noptimal k-variable subsets under those criteria, using three different\nalgorithms: a simulated annealing algorithm, a genetic algorithm and a\nrestricted local improvement algorithm (Reference 1). Among the\noptions, the user can control number of iterations, initial\ntemperature, cooling factors and cooling frequency in simulated\nannealing, and number of generations, population size, admissibility\nof clones and presence and frequency of mutations in the \ngenetic algorithm. \n\nFor all algorithms, it is possible to specify the number\nof solutions required in one or more cardinalities and to force the solutions \nto include and/or to exclude given subsets of variables.\n\n\nHere is the DESCRIPTION file for the package:\n\nPackage: subselect\nVersion: 0.7.1\nDate: 2004/03/10\nTitle: Selecting variable subsets.\nAuthor: Jorge Orestes Cerdeira <orestes at isa.utl.pt> Pedro Duarte Silva\n        <psilva at porto.ucp.pt> Jorge Cadima <jcadima at isa.utl.pt> Manuel\n        Minhoto <minhoto at uevora.pt>\nMaintainer: Jorge Cadima <jcadima at isa.utl.pt>\nDescription: A collection of functions which assess the quality of\n        variable subsets as surrogates for a full data set, in an\n        exploratory data analysis, and search for subsets which are\n        optimal under various criteria.\nLicense: GPL\n\n\nThere is a CHANGELOG file in subdirectory 'inst' documenting changes\nsince Version 0.1.\n\n\n\nBIBLIOGRAPHY:\n\n1) Cadima, J., Cerdeira, J. Orestes and Minhoto, M. (2004)\nComputational aspects of algorithms for variable selection in the\ncontext of principal components. To appear in \n_Computational Statistics & Data Analysis_ (Special Issue on\nApplications of Optimization Heuristics to Estimation and Modelling Problems).\n\n2) Cadima, J. and Jolliffe, I.T. (2001). Variable Selection and\nthe Interpretation of Principal Subspaces, _Journal of\nAgricultural, Biological and Environmental Statistics_, Vol. 6, 62-79.\n\n3) Duarte Silva, A.P. (2002) Discarding Variables in a Principal \nComponent Analysis: Algorithms for All-Subsets Comparisons,\n_Computational Statistics_, Vol. 17, 251-271.",
+      "body_snippet": "A new  version (0.7.1) of package 'subselect' has been uploaded to CRAN.\n\nPackage 'subselect' provides functions which assess the quality of\nvariable subsets as surrogates for a full data set, in an e",
+      "thread_id": "thread-4b0ce7e48bcf",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-4b0ce7e48bcf",
+      "message_id": "<E1B1P1l-0003PO-00@DMjcadima>",
+      "from_name": "Jorge Cadima",
+      "from_email_hash": "a263d5a66379eed6efe61017b0d94c4dcb2bc08bbac49d7abd304fb5bd8e4523",
+      "date": "2004-03-11T12:11:04Z",
+      "subject": "[R-pkgs] Subselect package - Version 0.7.1",
+      "subject_clean": "Subselect package - Version 0.7.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new  version (0.7.1) of package 'subselect' has been uploaded to CRAN.\n\nPackage 'subselect' provides functions which assess the quality of\nvariable subsets as surrogates for a full data set, in an exploratory\ndata analysis, and search for subsets which are optimal under various\ncriteria. \n\nAs of version 0.7 a new function 'leaps' has been added. 'Leaps'\nperforms a branch and bound search for the best variable subsets,\naccording to a specified criterion. 'Leaps' implements Duarte Silva's\nadaptation (Reference 3) of Furnival and Wilson's Leaps and Bounds\nAlgorithm for variable selection in Regression Analysis. It is viable in\nidentifying optimal subsets for data sets with a moderate number\n(up to about 30-35) of variables, and very fast for small data sets\n(up to about 20-25 variables).\n\nIn package subselect, the quality of given k-subsets of variables are\nassessed under three criteria (Reference 2). \n\nThree additional functions, 'anneal', 'genetic' and 'improve', search for\noptimal k-variable subsets under those criteria, using three different\nalgorithms: a simulated annealing algorithm, a genetic algorithm and a\nrestricted local improvement algorithm (Reference 1). Among the\noptions, the user can control number of iterations, initial\ntemperature, cooling factors and cooling frequency in simulated\nannealing, and number of generations, population size, admissibility\nof clones and presence and frequency of mutations in the \ngenetic algorithm. \n\nFor all algorithms, it is possible to specify the number\nof solutions required in one or more cardinalities and to force the solutions \nto include and/or to exclude given subsets of variables.\n\n\nHere is the DESCRIPTION file for the package:\n\nPackage: subselect\nVersion: 0.7.1\nDate: 2004/03/10\nTitle: Selecting variable subsets.\nAuthor: Jorge Orestes Cerdeira <orestes at isa.utl.pt> Pedro Duarte Silva\n        <psilva at porto.ucp.pt> Jorge Cadima <jcadima at isa.utl.pt> Manuel\n        Minhoto <minhoto at uevora.pt>\nMaintainer: Jorge Cadima <jcadima at isa.utl.pt>\nDescription: A collection of functions which assess the quality of\n        variable subsets as surrogates for a full data set, in an\n        exploratory data analysis, and search for subsets which are\n        optimal under various criteria.\nLicense: GPL\n\n\nThere is a CHANGELOG file in subdirectory 'inst' documenting changes\nsince Version 0.1.\n\n\n\nBIBLIOGRAPHY:\n\n1) Cadima, J., Cerdeira, J. Orestes and Minhoto, M. (2004)\nComputational aspects of algorithms for variable selection in the\ncontext of principal components. To appear in \n_Computational Statistics & Data Analysis_ (Special Issue on\nApplications of Optimization Heuristics to Estimation and Modelling Problems).\n\n2) Cadima, J. and Jolliffe, I.T. (2001). Variable Selection and\nthe Interpretation of Principal Subspaces, _Journal of\nAgricultural, Biological and Environmental Statistics_, Vol. 6, 62-79.\n\n3) Duarte Silva, A.P. (2002) Discarding Variables in a Principal \nComponent Analysis: Algorithms for All-Subsets Comparisons,\n_Computational Statistics_, Vol. 17, 251-271.",
+      "body_snippet": "A new  version (0.7.1) of package 'subselect' has been uploaded to CRAN.\n\nPackage 'subselect' provides functions which assess the quality of\nvariable subsets as surrogates for a full data set, in an e",
+      "thread_id": "thread-4b0ce7e48bcf",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-683846456501",
+      "message_id": "<C4178DC99E08604EA5E2BDB989F09380090C8D@EXTAS2-HBA.tas.csiro.au>",
+      "from_name": "Mark.Bravington at csiro.au",
+      "from_email_hash": "1760727dbf1df1aa8a04bf9be4b052304a85c59263f79bf5814d7216d8dccc9c",
+      "date": "2004-03-15T12:09:03+11:00",
+      "subject": "[R-pkgs] New versions: mvbutils and debug packages",
+      "subject_clean": "New versions: mvbutils and debug packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users\n\nNew versions of the 'mvbutils' and 'debug' packages are now available on CRAN, both in source form and as precompiled binaries.\n\n'mvbutils' offers the following (as well as many miscellaneous utilities):\n\n  ?  hiearchical, searchable project organization, with workspaces switchable inside a single R session, and objects in \"ancestor\" projects always visible in R from \"child\" projects;\n  ?  function editing (interface to text editors), with multiple simultaneous edits, an \"unfrozen\" R prompt, and automatic backup;\n  ?  function code and plain-text documentation stored in the same R object, and editable in the same file;\n  ?  informal plain-text documentation via help, and conversion to Rd format;\n  ?  nested 'source'ing, and interspersal of R code and data in the same file;\n  ?  macro-like functions, executing inside their caller's environment;\n  ?  untangling and display of \"what calls what\" within groups of functions.\n\n'debug' is for debugging functions (yours or other people's). It requires 'mvbutils'. 'debug' offers:\n\n  ?  a visible code window with line-numbered code and highlighted execution point;\n  ?  the ability to set (conditional) breakpoints in advance, at any line number;\n  ?  the opportunity to keep going after errors;\n  ?  multiple debugging windows open at once (when one debuggee calls another, or itself);\n  ?  full debugging of 'on.exit' code;\n  ?  the ability to move the execution point around without executing intervening statements;\n  ?  direct interpretation of typed-in statements, as if they were in the function itself.\n\nFor further information on 'debug', see the article \"Debugging without (too many) tears\" in R-news 3/3.\n\nThe new versions fix a few minor bugs in the 1.0.0 releases, as documented in the CHANGES.TXT files in each package.\n\nMark\n\n*******************************\n\nMark Bravington\nCSIRO (CMIS)\nPO Box 1538\nCastray Esplanade\nHobart\nTAS 7001\n\nEmail name: Mark.Bravington\nEmail location: csiro.au",
+      "body_snippet": "Dear R users\n\nNew versions of the 'mvbutils' and 'debug' packages are now available on CRAN, both in source form and as precompiled binaries.\n\n'mvbutils' offers the following (as well as many miscella",
+      "thread_id": "thread-683846456501",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-683846456501",
+      "message_id": "<C4178DC99E08604EA5E2BDB989F09380090C8D@EXTAS2-HBA.tas.csiro.au>",
+      "from_name": "Mark.Bravington at csiro.au",
+      "from_email_hash": "1760727dbf1df1aa8a04bf9be4b052304a85c59263f79bf5814d7216d8dccc9c",
+      "date": "2004-03-15T12:09:03+11:00",
+      "subject": "[R-pkgs] New versions: mvbutils and debug packages",
+      "subject_clean": "New versions: mvbutils and debug packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users\n\nNew versions of the 'mvbutils' and 'debug' packages are now available on CRAN, both in source form and as precompiled binaries.\n\n'mvbutils' offers the following (as well as many miscellaneous utilities):\n\n  ?  hiearchical, searchable project organization, with workspaces switchable inside a single R session, and objects in \"ancestor\" projects always visible in R from \"child\" projects;\n  ?  function editing (interface to text editors), with multiple simultaneous edits, an \"unfrozen\" R prompt, and automatic backup;\n  ?  function code and plain-text documentation stored in the same R object, and editable in the same file;\n  ?  informal plain-text documentation via help, and conversion to Rd format;\n  ?  nested 'source'ing, and interspersal of R code and data in the same file;\n  ?  macro-like functions, executing inside their caller's environment;\n  ?  untangling and display of \"what calls what\" within groups of functions.\n\n'debug' is for debugging functions (yours or other people's). It requires 'mvbutils'. 'debug' offers:\n\n  ?  a visible code window with line-numbered code and highlighted execution point;\n  ?  the ability to set (conditional) breakpoints in advance, at any line number;\n  ?  the opportunity to keep going after errors;\n  ?  multiple debugging windows open at once (when one debuggee calls another, or itself);\n  ?  full debugging of 'on.exit' code;\n  ?  the ability to move the execution point around without executing intervening statements;\n  ?  direct interpretation of typed-in statements, as if they were in the function itself.\n\nFor further information on 'debug', see the article \"Debugging without (too many) tears\" in R-news 3/3.\n\nThe new versions fix a few minor bugs in the 1.0.0 releases, as documented in the CHANGES.TXT files in each package.\n\nMark\n\n*******************************\n\nMark Bravington\nCSIRO (CMIS)\nPO Box 1538\nCastray Esplanade\nHobart\nTAS 7001\n\nEmail name: Mark.Bravington\nEmail location: csiro.au",
+      "body_snippet": "Dear R users\n\nNew versions of the 'mvbutils' and 'debug' packages are now available on CRAN, both in source form and as precompiled binaries.\n\n'mvbutils' offers the following (as well as many miscella",
+      "thread_id": "thread-683846456501",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-adff8ada272c",
+      "message_id": "<Pine.SOL.4.58.0403161058130.29943@moon.stats.gla.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "36ac2776f5ec91936d203295c2b32089e39725e9aab19c2a037b5c6fef8154f1",
+      "date": "2004-03-16T11:00:52Z",
+      "subject": "[R-pkgs] mgcv 1.0 ",
+      "subject_clean": "mgcv 1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv 1.0 (package providing gams etc) will be released with R 1.9.0.\n(R 1.8.x compatible versions can be found at:\nhttp://www.stats.gla.ac.uk/~simon/simon/mgcv.html)\nThere are quite a few changes from mgcv 0.9: hence this message.\n\nThe main new features are:\n\n* A generalized additive mixed modelling function `gamm' (which uses lme\n  from the nlme library of glmmPQL from the MASS library for fitting).\n\n* Tensor product smooths as an alternative way of representing smooths of\n  more than one variable. These are useful when isotropic smoothing is\n  inappropriate. Tensor products of any available smooth can be used.\n  See ?te\n\n* An object oriented approach to smooth terms that allows new classes of\n  smooths to be added easily. See ?smooth.construct for details and\n  example R code implementing `p-splines'.\n\n* A built in cyclic smooth class for terms where the beginning is the\n  end...\n\nPartly as a result of the above the code has undergone some fairly major\nre-organization, which means that ...\n\n1. The new version is not fully back compatible with previous versions.\n   For example version 1.0 plotting or summary functions will not work with\n   gam objects from previous versions of mgcv.\n\n2. There's likely to be the odd teething problem - please let me know\n   about them so they can get fixed.\n\n_____________________________________________________________________\n> Simon Wood simon at stats.gla.ac.uk        www.stats.gla.ac.uk/~simon/\n>>  Department of Statistics, University of Glasgow, Glasgow, G12 8QQ\n>>>   Direct telephone: (0)141 330 4530          Fax: (0)141 330 4814",
+      "body_snippet": "mgcv 1.0 (package providing gams etc) will be released with R 1.9.0.\n(R 1.8.x compatible versions can be found at:\nhttp://www.stats.gla.ac.uk/~simon/simon/mgcv.html)\nThere are quite a few changes from",
+      "thread_id": "thread-adff8ada272c",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-adff8ada272c",
+      "message_id": "<Pine.SOL.4.58.0403161058130.29943@moon.stats.gla.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "36ac2776f5ec91936d203295c2b32089e39725e9aab19c2a037b5c6fef8154f1",
+      "date": "2004-03-16T11:00:52Z",
+      "subject": "[R-pkgs] mgcv 1.0 ",
+      "subject_clean": "mgcv 1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv 1.0 (package providing gams etc) will be released with R 1.9.0.\n(R 1.8.x compatible versions can be found at:\nhttp://www.stats.gla.ac.uk/~simon/simon/mgcv.html)\nThere are quite a few changes from mgcv 0.9: hence this message.\n\nThe main new features are:\n\n* A generalized additive mixed modelling function `gamm' (which uses lme\n  from the nlme library of glmmPQL from the MASS library for fitting).\n\n* Tensor product smooths as an alternative way of representing smooths of\n  more than one variable. These are useful when isotropic smoothing is\n  inappropriate. Tensor products of any available smooth can be used.\n  See ?te\n\n* An object oriented approach to smooth terms that allows new classes of\n  smooths to be added easily. See ?smooth.construct for details and\n  example R code implementing `p-splines'.\n\n* A built in cyclic smooth class for terms where the beginning is the\n  end...\n\nPartly as a result of the above the code has undergone some fairly major\nre-organization, which means that ...\n\n1. The new version is not fully back compatible with previous versions.\n   For example version 1.0 plotting or summary functions will not work with\n   gam objects from previous versions of mgcv.\n\n2. There's likely to be the odd teething problem - please let me know\n   about them so they can get fixed.\n\n_____________________________________________________________________\n> Simon Wood simon at stats.gla.ac.uk        www.stats.gla.ac.uk/~simon/\n>>  Department of Statistics, University of Glasgow, Glasgow, G12 8QQ\n>>>   Direct telephone: (0)141 330 4530          Fax: (0)141 330 4814",
+      "body_snippet": "mgcv 1.0 (package providing gams etc) will be released with R 1.9.0.\n(R 1.8.x compatible versions can be found at:\nhttp://www.stats.gla.ac.uk/~simon/simon/mgcv.html)\nThere are quite a few changes from",
+      "thread_id": "thread-adff8ada272c",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-704b4848fda7",
+      "message_id": "<6.0.3.0.2.20040320142045.090d76d8@wheresmymailserver.com>",
+      "from_name": "Tony Plate",
+      "from_email_hash": "270dbfad1bede22a8cb030fa728f9ba1cb2915f53915148ec2f12f8d2cfa93a9",
+      "date": "2004-03-20T14:21:34-07:00",
+      "subject": "[R-pkgs] new version of abind()",
+      "subject_clean": "new version of abind()",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is a new version of the abind package on CRAN (abind_1.1-0).  abind() \nis a multi-dimensional generalization of cbind() and rbind() -- it can bind \nmultiple 2-d matrices into a 3-d array, or bind 3-d arrays together, etc.\n\nIn this new version the behavior of the function abind() has been enhanced \nslightly (it can now accept a list as the first argument, removing the need \nto use do.call() in most situtations), and changed slightly (to no longer \nby default creates dimension names if none exist, because these are usually \nuseless and mostly annoying).  There is also a new function in the package: \nadrop(), which does approximately what drop() does, but allows control over \nwhich dimensions are dropped.\n\nNote also that the abind() function runs under S-plus as well (I believe \nadrop() does as well, but it is not as well tested).\n\nDetails:\n\n2004-03-12\n\n         * R/abind.R man/abind.Rd\n         allow first argument of abind() to be a list of objects to be\n         bound -- this avoids the need for do.call() when one wants to bind\n         a list of objects\n\n         * R/abind.R man/abind.Rd\n         changed argument name 'use.anon.names' to the more intuitive\n         'make.names' (the argument 'use.anon.names' still works)\n\n         * R/abind.R man/abind.Rd\n         changed default value for 'make.names' to FALSE (now more closely\n         behaves like rbind() and cbind()).  This means that dimension\n           names for dimensions that have no names are only constructed\n           when requested, not by default.\n\n         * R/adrop.R man/adrop.Rd\n         added new function adrop().  This is a function like drop(), but it\n           allows to user to specify which of the dimensions with extent one\n           will be dropped.\n\n\nPlease let me know of any problems.\n\n-- Tony Plate\n\nTony Plate   tplate at acm.org",
+      "body_snippet": "There is a new version of the abind package on CRAN (abind_1.1-0).  abind() \nis a multi-dimensional generalization of cbind() and rbind() -- it can bind \nmultiple 2-d matrices into a 3-d array, or bin",
+      "thread_id": "thread-704b4848fda7",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-704b4848fda7",
+      "message_id": "<6.0.3.0.2.20040320142045.090d76d8@wheresmymailserver.com>",
+      "from_name": "Tony Plate",
+      "from_email_hash": "270dbfad1bede22a8cb030fa728f9ba1cb2915f53915148ec2f12f8d2cfa93a9",
+      "date": "2004-03-20T14:21:34-07:00",
+      "subject": "[R-pkgs] new version of abind()",
+      "subject_clean": "new version of abind()",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is a new version of the abind package on CRAN (abind_1.1-0).  abind() \nis a multi-dimensional generalization of cbind() and rbind() -- it can bind \nmultiple 2-d matrices into a 3-d array, or bind 3-d arrays together, etc.\n\nIn this new version the behavior of the function abind() has been enhanced \nslightly (it can now accept a list as the first argument, removing the need \nto use do.call() in most situtations), and changed slightly (to no longer \nby default creates dimension names if none exist, because these are usually \nuseless and mostly annoying).  There is also a new function in the package: \nadrop(), which does approximately what drop() does, but allows control over \nwhich dimensions are dropped.\n\nNote also that the abind() function runs under S-plus as well (I believe \nadrop() does as well, but it is not as well tested).\n\nDetails:\n\n2004-03-12\n\n         * R/abind.R man/abind.Rd\n         allow first argument of abind() to be a list of objects to be\n         bound -- this avoids the need for do.call() when one wants to bind\n         a list of objects\n\n         * R/abind.R man/abind.Rd\n         changed argument name 'use.anon.names' to the more intuitive\n         'make.names' (the argument 'use.anon.names' still works)\n\n         * R/abind.R man/abind.Rd\n         changed default value for 'make.names' to FALSE (now more closely\n         behaves like rbind() and cbind()).  This means that dimension\n           names for dimensions that have no names are only constructed\n           when requested, not by default.\n\n         * R/adrop.R man/adrop.Rd\n         added new function adrop().  This is a function like drop(), but it\n           allows to user to specify which of the dimensions with extent one\n           will be dropped.\n\n\nPlease let me know of any problems.\n\n-- Tony Plate\n\nTony Plate   tplate at acm.org",
+      "body_snippet": "There is a new version of the abind package on CRAN (abind_1.1-0).  abind() \nis a multi-dimensional generalization of cbind() and rbind() -- it can bind \nmultiple 2-d matrices into a 3-d array, or bin",
+      "thread_id": "thread-704b4848fda7",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-adb1c38e2a99",
+      "message_id": "<Pine.LNX.4.51.0403271325160.27230@localhost.localdomain>",
+      "from_name": "Igor Wronsky",
+      "from_email_hash": "73974be5fad8a45cbd97819434c7416177ad0af35308507ed967f2261817bfda",
+      "date": "2004-03-27T13:28:48+02:00",
+      "subject": "[R-pkgs] Moron v0.6.0b released",
+      "subject_clean": "Moron v0.6.0b released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce that the development of the\nnotorious \"Method for Object Recognition of Obscure Nature\"\n(or Moron, for short) has been switched to the R language.\n\nGiven a directory of images (i.e. jpegs), Moron attempts\nto predict a category distribution for the content of each\nimage. The default categories modelled are {healthy,pron,\nlatex/fetish,japanese_cg,manga,b/w photo}. Supposing\ngood statistical models can be designed for problems\nlike these, Moron could eventually be usable as a spam filter\nfor visual data or to sort images, depending on your taste.\nCurrently it is not accurate enough for production use.\n\nThe Moron package contains a data.frame to estimate a\nmodel to recognize the default categories, and source code\nto evaluate new images, collect new training sets (this\ncan be done simply by putting images of different classes\nto different directories and running a few provided functions)\nand train new classifiers. The included Local Binary Pattern\n(LBP) feature extractors and RGB<->HSV conversion routines\nmight be of aside interest.\n\nDue to its ability to visualize the predictions made\nper image region, Moron is a guaranteed hit in both\nparties and classrooms, if only given a juicy enough set\nof test images. Even layman (male) audience has been\nseen to be captivated by the antics of Moron, efficiently\nrivalling traditional aquariums and fireplaces.\n\nMoron is released under GPL. Version 0.6.0b for R can be dl'ed from\n\nhttp://sourceforge.net/project/showfiles.php?group_id=7434&package_id=68958\n\nThe package relies on R libraries 'randomForest' and 'pixmap'.\nIt has been developed on Linux, but is probably usable on\nother systems with only a few simple modifications.\n\n\nHave fun,\nIgor",
+      "body_snippet": "We are pleased to announce that the development of the\nnotorious \"Method for Object Recognition of Obscure Nature\"\n(or Moron, for short) has been switched to the R language.\n\nGiven a directory of imag",
+      "thread_id": "thread-adb1c38e2a99",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-adb1c38e2a99",
+      "message_id": "<Pine.LNX.4.51.0403271325160.27230@localhost.localdomain>",
+      "from_name": "Igor Wronsky",
+      "from_email_hash": "73974be5fad8a45cbd97819434c7416177ad0af35308507ed967f2261817bfda",
+      "date": "2004-03-27T13:28:48+02:00",
+      "subject": "[R-pkgs] Moron v0.6.0b released",
+      "subject_clean": "Moron v0.6.0b released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce that the development of the\nnotorious \"Method for Object Recognition of Obscure Nature\"\n(or Moron, for short) has been switched to the R language.\n\nGiven a directory of images (i.e. jpegs), Moron attempts\nto predict a category distribution for the content of each\nimage. The default categories modelled are {healthy,pron,\nlatex/fetish,japanese_cg,manga,b/w photo}. Supposing\ngood statistical models can be designed for problems\nlike these, Moron could eventually be usable as a spam filter\nfor visual data or to sort images, depending on your taste.\nCurrently it is not accurate enough for production use.\n\nThe Moron package contains a data.frame to estimate a\nmodel to recognize the default categories, and source code\nto evaluate new images, collect new training sets (this\ncan be done simply by putting images of different classes\nto different directories and running a few provided functions)\nand train new classifiers. The included Local Binary Pattern\n(LBP) feature extractors and RGB<->HSV conversion routines\nmight be of aside interest.\n\nDue to its ability to visualize the predictions made\nper image region, Moron is a guaranteed hit in both\nparties and classrooms, if only given a juicy enough set\nof test images. Even layman (male) audience has been\nseen to be captivated by the antics of Moron, efficiently\nrivalling traditional aquariums and fireplaces.\n\nMoron is released under GPL. Version 0.6.0b for R can be dl'ed from\n\nhttp://sourceforge.net/project/showfiles.php?group_id=7434&package_id=68958\n\nThe package relies on R libraries 'randomForest' and 'pixmap'.\nIt has been developed on Linux, but is probably usable on\nother systems with only a few simple modifications.\n\n\nHave fun,\nIgor",
+      "body_snippet": "We are pleased to announce that the development of the\nnotorious \"Method for Object Recognition of Obscure Nature\"\n(or Moron, for short) has been switched to the R language.\n\nGiven a directory of imag",
+      "thread_id": "thread-adb1c38e2a99",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-f57ecd89297f",
+      "message_id": "<p04310101bc909e38eb73@[129.1.87.58]>",
+      "from_name": "Gabor Szekely",
+      "from_email_hash": "e4d8e0d9c3d354c8ac9c7afae21e900edccaa0aabce617cb3ef9f38705ae1c84",
+      "date": "2004-03-31T11:21:10-05:00",
+      "subject": "[R-pkgs] energy 1.0.1",
+      "subject_clean": "energy 1.0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nWe would like to announce that Version 1.0.1 of the energy package is\nnow available on CRAN.\n\nThe energy package introduces a new class of statistical tests based\non the concept of Newton's potential energy. Included in the package are\n\n    * mvnorm.etest (test) and mvnorm.e (statistic)\n      A rotation invariant multivariate goodness-of-fit test,\n      implemented for testing multivariate normality with\n      estimated parameters\n\n    * eqdist.etest (test) and ksample.e (statistic)\n      A k-sample multivariate nonparametric test of equal distributions\n      (arbitrary number of samples and arbitrary dimension)\n      with optional incomplete statistics to support testing\n      arbitrarily large samples\n\n    * energy.hclust and edist\n      Hierarchical clustering based on e-distances and\n      cluster distance function\n\n    * poisson.mtest (test) and poisson.m (statistic)\n      Mean distance test of Poisson distribution, estimated mean\n\nHere is a brief summary of the potential energy background of the\ntests in the energy package:\n\nNewton's gravitational force is inversely proportional to squared\nEuclidean distances between pairs of objects, and the potential\nenergy is inversely proportional to their Euclidean distances. The\nsimplest choice for the absolute value of the force is constant, and\nthen the potential energy is proportional to the Euclidean distances\nbetween pairs of objects. In statistics, the objects are the observed\nrandom vectors, and thus our energy terms are Euclidean distances\nbetween the pairs of sample elements: ||x_i - x_j||. Tests are based\non the Theorem that a suitable linear combination of these distances\n(the potential energy of the 'statistical situation') is always\nnonnegative, and equals 0 if and only if the null hypothesis holds.\n\nComments and suggestions are welcome. The description file is below.\n\n        Gabor Szekely and Maria Rizzo\n\n----------------------------------------------------------------------\nDescription:\nPackage: energy\nTitle: E-statistics (energy statistics) tests of fit, clustering\nVersion: 1.0.1\nDate: March 24, 2004\nAuthor: Maria L. Rizzo <rizzo at math.ohiou.edu> and Gabor J. Szekely\n<gabors at bgnet.bgsu.edu>\nDescription: E-statistics (energy) tests for comparing distributions:\nmultivariate normality, Poisson test, multivariate k-sample\ntest for equal distributions, hierarchical clustering by\ne-distances. Energy-statistics concept based on a\ngeneralization of Newton's potential energy is due to Gabor J.\nSzekely.\nMaintainer: Maria Rizzo <rizzo at math.ohiou.edu>\nLicense: GPL 2.0 or later\n-- \n\n****************************************\nGabor J. Szekely\nProfessor\nDepartment of Mathematics and Statistics\nMath Science Building\nBowling Green State University\nBowling Green, OH 43403-0221\n\nE-mail: gabors at bgnet.bgsu.edu\nTel: \t419-372-7474\nFax:\t419-372-6092\nhttp://www-math.bgsu.edu/~gabors/",
+      "body_snippet": "R Users,\n\nWe would like to announce that Version 1.0.1 of the energy package is\nnow available on CRAN.\n\nThe energy package introduces a new class of statistical tests based\non the concept of Newton's ",
+      "thread_id": "thread-f57ecd89297f",
+      "thread_depth": 0,
+      "month": "2004-03"
+    },
+    {
+      "id": "msg-f57ecd89297f",
+      "message_id": "<p04310101bc909e38eb73@[129.1.87.58]>",
+      "from_name": "Gabor Szekely",
+      "from_email_hash": "e4d8e0d9c3d354c8ac9c7afae21e900edccaa0aabce617cb3ef9f38705ae1c84",
+      "date": "2004-03-31T11:21:10-05:00",
+      "subject": "[R-pkgs] energy 1.0.1",
+      "subject_clean": "energy 1.0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nWe would like to announce that Version 1.0.1 of the energy package is\nnow available on CRAN.\n\nThe energy package introduces a new class of statistical tests based\non the concept of Newton's potential energy. Included in the package are\n\n    * mvnorm.etest (test) and mvnorm.e (statistic)\n      A rotation invariant multivariate goodness-of-fit test,\n      implemented for testing multivariate normality with\n      estimated parameters\n\n    * eqdist.etest (test) and ksample.e (statistic)\n      A k-sample multivariate nonparametric test of equal distributions\n      (arbitrary number of samples and arbitrary dimension)\n      with optional incomplete statistics to support testing\n      arbitrarily large samples\n\n    * energy.hclust and edist\n      Hierarchical clustering based on e-distances and\n      cluster distance function\n\n    * poisson.mtest (test) and poisson.m (statistic)\n      Mean distance test of Poisson distribution, estimated mean\n\nHere is a brief summary of the potential energy background of the\ntests in the energy package:\n\nNewton's gravitational force is inversely proportional to squared\nEuclidean distances between pairs of objects, and the potential\nenergy is inversely proportional to their Euclidean distances. The\nsimplest choice for the absolute value of the force is constant, and\nthen the potential energy is proportional to the Euclidean distances\nbetween pairs of objects. In statistics, the objects are the observed\nrandom vectors, and thus our energy terms are Euclidean distances\nbetween the pairs of sample elements: ||x_i - x_j||. Tests are based\non the Theorem that a suitable linear combination of these distances\n(the potential energy of the 'statistical situation') is always\nnonnegative, and equals 0 if and only if the null hypothesis holds.\n\nComments and suggestions are welcome. The description file is below.\n\n        Gabor Szekely and Maria Rizzo\n\n----------------------------------------------------------------------\nDescription:\nPackage: energy\nTitle: E-statistics (energy statistics) tests of fit, clustering\nVersion: 1.0.1\nDate: March 24, 2004\nAuthor: Maria L. Rizzo <rizzo at math.ohiou.edu> and Gabor J. Szekely\n<gabors at bgnet.bgsu.edu>\nDescription: E-statistics (energy) tests for comparing distributions:\nmultivariate normality, Poisson test, multivariate k-sample\ntest for equal distributions, hierarchical clustering by\ne-distances. Energy-statistics concept based on a\ngeneralization of Newton's potential energy is due to Gabor J.\nSzekely.\nMaintainer: Maria Rizzo <rizzo at math.ohiou.edu>\nLicense: GPL 2.0 or later\n-- \n\n****************************************\nGabor J. Szekely\nProfessor\nDepartment of Mathematics and Statistics\nMath Science Building\nBowling Green State University\nBowling Green, OH 43403-0221\n\nE-mail: gabors at bgnet.bgsu.edu\nTel: \t419-372-7474\nFax:\t419-372-6092\nhttp://www-math.bgsu.edu/~gabors/",
+      "body_snippet": "R Users,\n\nWe would like to announce that Version 1.0.1 of the energy package is\nnow available on CRAN.\n\nThe energy package introduces a new class of statistical tests based\non the concept of Newton's ",
+      "thread_id": "thread-f57ecd89297f",
+      "thread_depth": 0,
+      "month": "2004-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-30b2f79714d9",
+      "subject": "rgl v0.64-10 released",
+      "message_count": 1,
+      "participants": [
+        "Daniel Adler"
+      ],
+      "started": "2004-03-05T10:01:28+01:00",
+      "last_reply": "2004-03-05T10:01:28+01:00",
+      "root_message_id": "msg-30b2f79714d9"
+    },
+    {
+      "id": "thread-30b2f79714d9",
+      "subject": "rgl v0.64-10 released",
+      "message_count": 1,
+      "participants": [
+        "Daniel Adler"
+      ],
+      "started": "2004-03-05T10:01:28+01:00",
+      "last_reply": "2004-03-05T10:01:28+01:00",
+      "root_message_id": "msg-30b2f79714d9"
+    },
+    {
+      "id": "thread-ea2e70ba9b67",
+      "subject": "New package: DCluster",
+      "message_count": 1,
+      "participants": [
+        "Virgilio Gómez Rubio"
+      ],
+      "started": "2004-03-10T16:18:48+01:00",
+      "last_reply": "2004-03-10T16:18:48+01:00",
+      "root_message_id": "msg-ea2e70ba9b67"
+    },
+    {
+      "id": "thread-ea2e70ba9b67",
+      "subject": "New package: DCluster",
+      "message_count": 1,
+      "participants": [
+        "Virgilio Gómez Rubio"
+      ],
+      "started": "2004-03-10T16:18:48+01:00",
+      "last_reply": "2004-03-10T16:18:48+01:00",
+      "root_message_id": "msg-ea2e70ba9b67"
+    },
+    {
+      "id": "thread-4b0ce7e48bcf",
+      "subject": "Subselect package - Version 0.7.1",
+      "message_count": 1,
+      "participants": [
+        "Jorge Cadima"
+      ],
+      "started": "2004-03-11T12:11:04+00:00",
+      "last_reply": "2004-03-11T12:11:04+00:00",
+      "root_message_id": "msg-4b0ce7e48bcf"
+    },
+    {
+      "id": "thread-4b0ce7e48bcf",
+      "subject": "Subselect package - Version 0.7.1",
+      "message_count": 1,
+      "participants": [
+        "Jorge Cadima"
+      ],
+      "started": "2004-03-11T12:11:04+00:00",
+      "last_reply": "2004-03-11T12:11:04+00:00",
+      "root_message_id": "msg-4b0ce7e48bcf"
+    },
+    {
+      "id": "thread-683846456501",
+      "subject": "New versions: mvbutils and debug packages",
+      "message_count": 1,
+      "participants": [
+        "Mark.Bravington at csiro.au"
+      ],
+      "started": "2004-03-15T12:09:03+11:00",
+      "last_reply": "2004-03-15T12:09:03+11:00",
+      "root_message_id": "msg-683846456501"
+    },
+    {
+      "id": "thread-683846456501",
+      "subject": "New versions: mvbutils and debug packages",
+      "message_count": 1,
+      "participants": [
+        "Mark.Bravington at csiro.au"
+      ],
+      "started": "2004-03-15T12:09:03+11:00",
+      "last_reply": "2004-03-15T12:09:03+11:00",
+      "root_message_id": "msg-683846456501"
+    },
+    {
+      "id": "thread-adff8ada272c",
+      "subject": "mgcv 1.0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2004-03-16T11:00:52+00:00",
+      "last_reply": "2004-03-16T11:00:52+00:00",
+      "root_message_id": "msg-adff8ada272c"
+    },
+    {
+      "id": "thread-adff8ada272c",
+      "subject": "mgcv 1.0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2004-03-16T11:00:52+00:00",
+      "last_reply": "2004-03-16T11:00:52+00:00",
+      "root_message_id": "msg-adff8ada272c"
+    },
+    {
+      "id": "thread-704b4848fda7",
+      "subject": "new version of abind()",
+      "message_count": 1,
+      "participants": [
+        "Tony Plate"
+      ],
+      "started": "2004-03-20T14:21:34-07:00",
+      "last_reply": "2004-03-20T14:21:34-07:00",
+      "root_message_id": "msg-704b4848fda7"
+    },
+    {
+      "id": "thread-704b4848fda7",
+      "subject": "new version of abind()",
+      "message_count": 1,
+      "participants": [
+        "Tony Plate"
+      ],
+      "started": "2004-03-20T14:21:34-07:00",
+      "last_reply": "2004-03-20T14:21:34-07:00",
+      "root_message_id": "msg-704b4848fda7"
+    },
+    {
+      "id": "thread-adb1c38e2a99",
+      "subject": "Moron v0.6.0b released",
+      "message_count": 1,
+      "participants": [
+        "Igor Wronsky"
+      ],
+      "started": "2004-03-27T13:28:48+02:00",
+      "last_reply": "2004-03-27T13:28:48+02:00",
+      "root_message_id": "msg-adb1c38e2a99"
+    },
+    {
+      "id": "thread-adb1c38e2a99",
+      "subject": "Moron v0.6.0b released",
+      "message_count": 1,
+      "participants": [
+        "Igor Wronsky"
+      ],
+      "started": "2004-03-27T13:28:48+02:00",
+      "last_reply": "2004-03-27T13:28:48+02:00",
+      "root_message_id": "msg-adb1c38e2a99"
+    },
+    {
+      "id": "thread-f57ecd89297f",
+      "subject": "energy 1.0.1",
+      "message_count": 1,
+      "participants": [
+        "Gabor Szekely"
+      ],
+      "started": "2004-03-31T11:21:10-05:00",
+      "last_reply": "2004-03-31T11:21:10-05:00",
+      "root_message_id": "msg-f57ecd89297f"
+    },
+    {
+      "id": "thread-f57ecd89297f",
+      "subject": "energy 1.0.1",
+      "message_count": 1,
+      "participants": [
+        "Gabor Szekely"
+      ],
+      "started": "2004-03-31T11:21:10-05:00",
+      "last_reply": "2004-03-31T11:21:10-05:00",
+      "root_message_id": "msg-f57ecd89297f"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-05",
+  "messages": [
+    {
+      "id": "msg-03cc332ea951",
+      "message_id": "<CAHBAGFVJrDQ1yrxjUUbC8UNe_Dh+rFFuwvcH7Q7+Ht7C0Z7dCw@mail.gmail.com>",
+      "from_name": "Riccardo Porreca",
+      "from_email_hash": "f6e1a781f85ee095bd3b8a537a76d1747a2bbe3f5f1fc78ccf855a02db57ba53",
+      "date": "2019-05-06T11:42:58+02:00",
+      "subject": "[R-pkgs] rTRNG: Advanced and Parallel Random Number Generation via TRNG",
+      "subject_clean": "rTRNG: Advanced and Parallel Random Number Generation via TRNG",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina?s Random Number Generator,\n<https://numbercrunch.de/trng/>), a state-of-the-art C++ pseudo-random\nnumber generator library for sequential and parallel Monte Carlo\nsimulations. In particular, parallel random number generators provided\nby TRNG can be manipulated by jump and split operations. These allow\nto jump ahead by an arbitrary number of steps and to split a sequence\ninto any desired sub-sequence(s), thus enabling techniques suitable to\nparallel algorithms, such as block-splitting and leapfrogging.\n\nThe package provides the R user with access to the functionality of\nthe underlying TRNG C++ library. It embeds TRNG sources and headers\nand makes them available to other projects combining R with C++.\nBeyond this, rTRNG exposes the creation, manipulation and use of\npseudo-random streams to R, via Rcpp and RcppParallel.\n\nrTRNG on CRAN\n<https://cran.r-project.org/package=rTRNG>\nPublic repository\n<https://github.com/miraisolutions/rTRNG#readme>\n\nMore on the history behind rTRNG and its way to CRAN at\n<https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/>\n\n\n-- \nRiccardo Porreca\nSenior Solutions Consultant\nMirai Solutions GmbH\nriccardo.porreca at mirai-solutions.com",
+      "body_snippet": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina?s Random Number Generator,\n<ht",
+      "thread_id": "thread-03cc332ea951",
+      "thread_depth": 0,
+      "month": "2019-05"
+    },
+    {
+      "id": "msg-35566e720c39",
+      "message_id": "<CAKzWEHT3H+eHvTb8bY8KP3UeWkx4=TMkD3RUvefwcz=eU9wkeA@mail.gmail.com>",
+      "from_name": "Myriam Ibrahim",
+      "from_email_hash": "b261b484bb13704c517ba5846ada251addce868f3f328bd1253ae47fe02ce9cf",
+      "date": "2019-05-22T21:21:21-04:00",
+      "subject": "[R-pkgs] Release Announcement : Riex Package",
+      "subject_clean": "Release Announcement : Riex Package",
+      "in_reply_to": "<CAKzWEHQFakehnf-WhkeO-Lrd-caXtzWvDzSkruTBiUqUhn6N_w@mail.gmail.com>",
+      "references": [
+        "<CAKzWEHQFakehnf-WhkeO-Lrd-caXtzWvDzSkruTBiUqUhn6N_w@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nPlease find below the links related to 'Riex' package release announcement.\nIf you have any questions or need additional information,  let me know.\n\n   - Release Announcement *-  *https://myriamibrahim.com/portfolio/riex/\n   - CRAN  - https://cran.r-project.org/web/packages/Riex/index.html\n   - Github - https://github.com/TheEliteAnalyst/Riex\n\nThank you for all your efforts and support to R Community !\n\nBest regards,\nMyriam Ibrahim\n\n\nOn Fri, May 17, 2019 at 12:32 PM Myriam Ibrahim <ibrahimmyriam7 at gmail.com>\nwrote:\n\n> Hi,\n>\n> Please find attached the .md  and .html files for 'Riex' release\n> announcement.\n>\n> I'm hoping this is the designated email for that purpose. If you believe\n> this is incorrect, please advise who should I reach out to.\n>\n> Thank you in advance for your help and support. If you have any questions\n> or need additional details about this request, let me know.\n>\n> Best regards,\n> Myriam\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nPlease find below the links related to 'Riex' package release announcement.\nIf you have any questions or need additional information,  let me know.\n\n   - Release Announcement *-  *https://myriami",
+      "thread_id": "thread-35566e720c39",
+      "thread_depth": 0,
+      "month": "2019-05"
+    },
+    {
+      "id": "msg-258af0080031",
+      "message_id": "<63DFFC50-CA0B-48EC-B09A-E11AD86715BD@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "040b2d09159b27cfd2853bc2dbb476bd637811586f307d9583c9ef7f806f3692",
+      "date": "2019-05-28T08:14:14-04:00",
+      "subject": "[R-pkgs] WriteXLS version 5.0.0 now available",
+      "subject_clean": "WriteXLS version 5.0.0 now available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI am pleased to announce that WriteXLS version 5.0.0 is now available on CRAN:\n\n  https://cran.r-project.org/web/packages/WriteXLS/index.html\n\nThis supersedes version 4.1.0 and should appear on your local CRAN mirror in due course, if not there already.\n\nWriteXLS, first released in 2009, is a cross-platform, Perl-based R function to create Excel 2003 (XLS) and Excel 2007 (XLSX) files from one or more data frames. \n\nThe primary change in this major new version is improved support for Unicode/UTF-8 variable width character sets, especially on Windows. This is accomplished via the use of writeLines(..., useBytes = TRUE), rather than write.table(), to create intermediate CSV files from the source R data frames. These exported CSV files are then parsed by Perl scripts to create the resultant Excel file.\n\nThe prior use of write.table() to create the CSV files could result in the re-encoding of the content of the CSV files into the locale of the computer upon which the code is running. This could result in the loss of the source character encoding used in the originating R data frames, where variable width character sets are in use. This was primarily an issue on Windows, given the limitations of Unicode/UTF-8 support on that OS.\n\nI want to thank Hamid Moshen for first raising this issue in late March, providing test datasets in multiple Unicode/UTF-8 character sets that I could use to reproduce and correct the issues, and his testing of the changes required.\n\nWarm regards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nI am pleased to announce that WriteXLS version 5.0.0 is now available on CRAN:\n\n  https://cran.r-project.org/web/packages/WriteXLS/index.html\n\nThis supersedes version 4.1.0 and should appear ",
+      "thread_id": "thread-258af0080031",
+      "thread_depth": 0,
+      "month": "2019-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-03cc332ea951",
+      "subject": "rTRNG: Advanced and Parallel Random Number Generation via TRNG",
+      "message_count": 1,
+      "participants": [
+        "Riccardo Porreca"
+      ],
+      "started": "2019-05-06T11:42:58+02:00",
+      "last_reply": "2019-05-06T11:42:58+02:00",
+      "root_message_id": "msg-03cc332ea951"
+    },
+    {
+      "id": "thread-35566e720c39",
+      "subject": "Release Announcement : Riex Package",
+      "message_count": 1,
+      "participants": [
+        "Myriam Ibrahim"
+      ],
+      "started": "2019-05-22T21:21:21-04:00",
+      "last_reply": "2019-05-22T21:21:21-04:00",
+      "root_message_id": "msg-35566e720c39"
+    },
+    {
+      "id": "thread-258af0080031",
+      "subject": "WriteXLS version 5.0.0 now available",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2019-05-28T08:14:14-04:00",
+      "last_reply": "2019-05-28T08:14:14-04:00",
+      "root_message_id": "msg-258af0080031"
+    }
+  ]
+}

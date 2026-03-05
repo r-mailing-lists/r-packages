@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-06",
+  "messages": [
+    {
+      "id": "msg-0e9a106501c4",
+      "message_id": "<CAA4naPDVjE=UWYM85dJkywzrYUKYkw=QV_m=e1LZrTx_X=S-GA@mail.gmail.com>",
+      "from_name": "Alexis Sarda",
+      "from_email_hash": "cf99c79a424809fca6bb7e3400fecb8e6a1741d82cfa12bb547b5bcaea8a4b70",
+      "date": "2019-06-04T19:54:45+02:00",
+      "subject": "[R-pkgs] table.express: use dplyr verbs to build data.table expressions",
+      "subject_clean": "table.express: use dplyr verbs to build data.table expressions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\nI like the expressiveness of dplyr's data manipulation verbs, but I also\nappreciate the optimizations offered by data.table, so I figured: why not\nboth?\n\nThe table.express package leverages the rlang package to bridge dplyr and\ndata.table by essentially parsing and chaining the operations specified by\nthe verbs,\nbuilding expressions that are ultimately evaluated by data.table, letting\nit handle optimizations as usual. Some custom verbs are also added to\nfacilitate building expressions that work on a subset of the data.\n\nThe package with single-table verbs is now on CRAN, and the documentation\ncan also be browsed online at\nhttps://asardaes.github.io/table.express/index.html\n\nRegards,\nAlexis.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\nI like the expressiveness of dplyr's data manipulation verbs, but I also\nappreciate the optimizations offered by data.table, so I figured: why not\nboth?\n\nThe table.express package lev",
+      "thread_id": "thread-0e9a106501c4",
+      "thread_depth": 0,
+      "month": "2019-06"
+    },
+    {
+      "id": "msg-7e56fd72f9f6",
+      "message_id": "<CAJa0+SuHH-cgLTeAYp2vefP26NZGM27ABRzU2zBXtg-9E+0xYw@mail.gmail.com>",
+      "from_name": "Christopher L Aberson",
+      "from_email_hash": "af5d8fd1b13b73b162eaffe62a6d7873c5a21341d6f5486f5c851bf2d2a2e296",
+      "date": "2019-06-14T17:07:55-07:00",
+      "subject": "[R-pkgs] New CRAN package: pwr2ppl",
+      "subject_clean": "New CRAN package: pwr2ppl",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "pwr2ppl contains protocols for running a wide range of power analyses.\nAnalyses range from simple approaches such as t-test and correlations\nto multifactor ANOVA (between and within subjects, linear mixed model\napproaches) and regression-based approaches (basic multiple\nregression, moderated regression, mediation, and logistic regression).\n\nThese protocols accompany the book Applied Power Analysis for the\nBehavioral Sciences (2nd ed.).\nhttps://www.routledge.com/Applied-Power-Analysis-for-the-Behavioral-Sciences-2nd-Edition-2nd-Edition/Aberson/p/book/9781138044593\n\nThe book gives lots of illustrative examples of using the code but is\nnot necessary for using the package.\n\nCRAN: https://cran.r-project.org/web/packages/pwr2ppl/index.html\nGitHub: https://github.com/chrisaberson/pwr2ppl\n\nBest,\n\nChris Aberson\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "pwr2ppl contains protocols for running a wide range of power analyses.\nAnalyses range from simple approaches such as t-test and correlations\nto multifactor ANOVA (between and within subjects, linear m",
+      "thread_id": "thread-7e56fd72f9f6",
+      "thread_depth": 0,
+      "month": "2019-06"
+    },
+    {
+      "id": "msg-178939f72c1b",
+      "message_id": "<CAGkBxuHrAum=1X0PT_za24fdht_UY3R8gKkWsC4VFrB5X7svFA@mail.gmail.com>",
+      "from_name": "Agenis-Nevers Marc",
+      "from_email_hash": "dc8dff7a594c38b2928ff12ceec6c6aa92ffa14468f0ab9e9c1609fbaa4cfecb",
+      "date": "2019-06-18T09:53:35+02:00",
+      "subject": "[R-pkgs] short presentation of the new package \"GuessCompx\"",
+      "subject_clean": "short presentation of the new package \"GuessCompx\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community members, please find here a short presentation of our new\npackage.\n\nWe introduce GuessCompx, a new R package that makes an empirical guess on\nthe time and memory complexities of an algorithm or a function. It will\ntest multiple, increasing-sizes samples of the user?s data and try to fit\none of seven complexity functions : O(n), O(n2), O(log(n)), etc. Based on a\nbest fit procedure using LOO-MSE error, it also predicts the full\ncomputation time and memory usage on the whole dataset. It relies on the\nbase R functions `system.time` and `memory.size `, the latter being only\nsuitable for Windows users. Together with this result, a plot and a\nsignificance test are also returned.\n\nComplexity is assessed with regard to the user?s actual dataset through its\nsize (and no other parameter). We provide several examples showing some use\ncase (distance function, time series, custom function) and how to best tune\nthe parameters.\n\nThe subject of empirical computational complexity has been relatively\nlittle studied in computer sciences, and such a package provides a\nconvenient and simple procedure to estimate it, thus preventing the user to\nrun any computation for an unknown amount of time. Empirical fit does not\nguarantee to find the true complexity function but approaches it in an\nacceptable way. The package does not require to have the code of the target\nfunction.\n\nhttps://cran.r-project.org/package=GuessCompx\n\nRegards,\n\nMarc Agenis\nNeeraj Bokde\nmarc.agenis at gmail.com\n+33 (0)6 19 60 91 23\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community members, please find here a short presentation of our new\npackage.\n\nWe introduce GuessCompx, a new R package that makes an empirical guess on\nthe time and memory complexities of an al",
+      "thread_id": "thread-178939f72c1b",
+      "thread_depth": 0,
+      "month": "2019-06"
+    },
+    {
+      "id": "msg-23017663d33e",
+      "message_id": "<CALLd2zBrD3tYSQepFVY2CPeyNurs=_AW9U3aLtvEUOsLa-yC3w@mail.gmail.com>",
+      "from_name": "Nicolò Margaritella",
+      "from_email_hash": "1a1dccedf1116b6f14ac36f40ba8cc43ebd7f279db92306cbcb06e69f11709b5",
+      "date": "2019-06-18T15:43:27+01:00",
+      "subject": "[R-pkgs] New package APFr for Average Power Function & Bayes FDR robust estimation",
+      "subject_clean": "New package APFr for Average Power Function & Bayes FDR robust estimation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package called APFr for threshold selection in large scale inference\nproblems using robust estimates of Average Power Function and Bayes FDR, is\navailable.\n\nCRAN: https://cran.r-project.org/web/packages/APFr/index.html\n\nAn illustrative example can be found at:\nhttps://www.researchgate.net/publication/333852294_APFr_-R_package_for_APF_Bayes_FDR_robust_estimationpdf\n\nKind regards,\nNicolo' Margaritella\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A new package called APFr for threshold selection in large scale inference\nproblems using robust estimates of Average Power Function and Bayes FDR, is\navailable.\n\nCRAN: https://cran.r-project.org/web/",
+      "thread_id": "thread-23017663d33e",
+      "thread_depth": 0,
+      "month": "2019-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0e9a106501c4",
+      "subject": "table.express: use dplyr verbs to build data.table expressions",
+      "message_count": 1,
+      "participants": [
+        "Alexis Sarda"
+      ],
+      "started": "2019-06-04T19:54:45+02:00",
+      "last_reply": "2019-06-04T19:54:45+02:00",
+      "root_message_id": "msg-0e9a106501c4"
+    },
+    {
+      "id": "thread-7e56fd72f9f6",
+      "subject": "New CRAN package: pwr2ppl",
+      "message_count": 1,
+      "participants": [
+        "Christopher L Aberson"
+      ],
+      "started": "2019-06-14T17:07:55-07:00",
+      "last_reply": "2019-06-14T17:07:55-07:00",
+      "root_message_id": "msg-7e56fd72f9f6"
+    },
+    {
+      "id": "thread-178939f72c1b",
+      "subject": "short presentation of the new package \"GuessCompx\"",
+      "message_count": 1,
+      "participants": [
+        "Agenis-Nevers Marc"
+      ],
+      "started": "2019-06-18T09:53:35+02:00",
+      "last_reply": "2019-06-18T09:53:35+02:00",
+      "root_message_id": "msg-178939f72c1b"
+    },
+    {
+      "id": "thread-23017663d33e",
+      "subject": "New package APFr for Average Power Function & Bayes FDR robust estimation",
+      "message_count": 1,
+      "participants": [
+        "Nicolò Margaritella"
+      ],
+      "started": "2019-06-18T15:43:27+01:00",
+      "last_reply": "2019-06-18T15:43:27+01:00",
+      "root_message_id": "msg-23017663d33e"
+    }
+  ]
+}

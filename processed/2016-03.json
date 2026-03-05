@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-03",
+  "messages": [
+    {
+      "id": "msg-395de1ce6ef4",
+      "message_id": "<CAC-fbYZNnJjwdm7iDfq+=453mAQ0LhpH9Ya-q04ypk1hKhfskQ@mail.gmail.com>",
+      "from_name": "Boxuan Cui",
+      "from_email_hash": "71796d53cc18e6487f431f41b4811bae04ff1a0e99a4d15854c6d46c33bfa725",
+      "date": "2016-03-02T13:46:53-05:00",
+      "subject": "[R-pkgs] New package: DataExplorer",
+      "subject_clean": "New package: DataExplorer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI am really excited that my first package is now on CRAN:\nhttps://cran.r-project.org/web/packages/DataExplorer/.\n\nThe package aims to simplify the data exploration process before your data\nanalysis and/or model building process.\n\nExample use case: One day, you get a random dataset that you have no idea\nwhat is in there. You could simply type the following two lines of R code\nto quickly visualize things and get started.\n\n*## assume you load the data into R and name it mysterious_data*\n*library(DataExplorer)*\n*GenerateReport(mysterious_data)*\n\n\nI am trying to add more functionalities and also vignettes to better\nillustrate how to explore your data using this package. Check the GitHub\npage for most up-to-date development:\nhttps://github.com/boxuancui/DataExplorer.\n\nI welcome all feedback, suggestions, bug reports and feature requests.\nThank you!\n\n\nBest,\nBoxuan (Bo)\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nI am really excited that my first package is now on CRAN:\nhttps://cran.r-project.org/web/packages/DataExplorer/.\n\nThe package aims to simplify the data exploration process before your dat",
+      "thread_id": "thread-395de1ce6ef4",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-0e7e213d3f90",
+      "message_id": "<CAN17LWP_y0FezqPw35gNmj=cA1D5C6Totu=OvJ-eM1iam8WTXQ@mail.gmail.com>",
+      "from_name": "Kyle Hamilton",
+      "from_email_hash": "0ce4e7e25c0d4d7fa89ad8900d93aa52c9ca9d18b936d29c5499bb90d7317c6d",
+      "date": "2016-03-04T13:43:03-08:00",
+      "subject": "[R-pkgs] lavaan.shiny \"latent variable analysis with shiny\"",
+      "subject_clean": "lavaan.shiny \"latent variable analysis with shiny\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'm pleased to announce that the first release of lavaan.shiny has\nbeen released to CRAN.\n\nlavaan.shiny \"latent variable analysis with shiny\" has built in\nexamples from the lavaan package and currently supports latent growth\ncurve models, confirmatory factor analysis, and structural equation\nmodeling. Graphics are handled by the semPlot package.\n\nCurrently there is a live demo of lavaan.shiny online which can be\naccessed here http://kylehamilton.net/shiny/lavaan.shiny/ it is\nrecommended that users download the package and run it naively.\n\nThe package is developed using GitHub, and more information as well as\nthe current development version can be found at\nhttps://github.com/kylehamilton/lavaan.shiny\n\n\nWilliam Kyle Hamilton  -  Graduate Student\nUniversity of California, Merced  -  Psychological Sciences\npsychology.ucmerced.edu - kylehamilton.com",
+      "body_snippet": "Dear R users,\n\nI'm pleased to announce that the first release of lavaan.shiny has\nbeen released to CRAN.\n\nlavaan.shiny \"latent variable analysis with shiny\" has built in\nexamples from the lavaan packa",
+      "thread_id": "thread-0e7e213d3f90",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-dd0f2c11d59d",
+      "message_id": "<CAGaD6pw9Nxb3embEwxysWeO4dtaiY+J36wU+rJOQCJ+MYuhdbw@mail.gmail.com>",
+      "from_name": "Amos B. Elberg",
+      "from_email_hash": "104b5e94731ce97ad153893847887f051aa1bca84241e80a9242c3ccda1ef0fe",
+      "date": "2016-03-07T14:33:40-05:00",
+      "subject": "[R-pkgs] rZeppelin: An R notebook that makes Spark easy to use",
+      "subject_clean": "rZeppelin: An R notebook that makes Spark easy to use",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin\nis a notebook, sort of like iPython, built on top of Apache Spark.\n\nrZeppelin makes it possible, for the first time, to create a single data/ML\npipeline that mixes R, scala, and Python code, seamlessly, from a single\ninterface.  (Without breaking lazy evaluation!)\n\nFor R-using data scientists, this means that you can access the full power\nof Spark ? including ultra-fast distributed implementations of popular\nalgorithms ? using R, without having to learn scala, without a dedicated\nadministrator to manage a Spark or Hadoop cluster, and without spending\nmore than minimal time to review the SparkR api.\n\nYou can load text data using R, quickly create an LDA model using Spark?s\ndistributed LDA package, tag the text using gensim from Python, and then\nvisualize and take further steps from R, from a single session using a\nsingle interface.\n\nThe full range of Spark packages, including MLLIB and GraphX, which used to\nrequire scala development, can be used in the same pipeline with R.\n(Except Spark Streaming, which Zeppelin doesn?t yet support.)\n\nBeyond Spark, R data can be visualized using Zeppelin?s built-in\ninteractive visualizations.  rZeppelin also leverages knitr to make\navailable most R visualization and interactive visualization packages.\n\nMany data types are also easily moved between R, scala and Python:  the\nlanguages share a ZeppelinContext, where variables can be added and\nextracted with .z.put() and .z.get().\n\nrZeppelin is intended to make Spark part of the R data scientist?s daily\ntoolbox.\n\nrZeppelin is available here:  https://github.com/elbamos/Zeppelin-With-R\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin\nis a notebook, sort of like iPython, built on top of Apache Spark.\n\nrZeppelin makes it possible, for the first time, to create",
+      "thread_id": "thread-dd0f2c11d59d",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-358dc95580c4",
+      "message_id": "<CANwJfJR2KoYh1MHz4-J8EPS+9PQ7xRXjubPmnPMbygLLAGO8hw@mail.gmail.com>",
+      "from_name": "Uwe Block",
+      "from_email_hash": "78bcb87384e1ae10dba3cc94ec2c7ce1e5027694de4c33428c040c1ce6d66652",
+      "date": "2016-03-12T17:11:16+01:00",
+      "subject": "[R-pkgs] New package lazysql: Lazy SQL Programming",
+      "subject_clean": "New package lazysql: Lazy SQL Programming",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe new package lazysql has been accepted on CRAN\n(https://cran.r-project.org/web/packages/lazysql/).\n\nIt includes helper functions to build SQL statements under program\ncontrol for use with dbGetQuery or dbSendQuery. They are intended to\nincrease speed of coding and to reduce coding errors. Arguments are\ncarefully checked, in particular SQL identifiers such as names of\ntables or columns.\n\nCurrently implemented are:\n\n- date_between: Create SQL string to select date between two given dates.\n- in_condition: Create SQL string to select values included (or not\nincluded) in a set of given values.\n- natural_key: Create SQL string for joining on matching natural keys.\n\nMore patterns will be added as required.\n\nExamples of usage  can be found at\nhttps://github.com/UweBlock/lazysql/blob/master/README.md.\n\nBug reports, suggestions, and feature requests are highly appreciated\nat https://github.com/UweBlock/lazysql/issues.\n\nHave fun,\nUwe",
+      "body_snippet": "Dear R users,\n\nThe new package lazysql has been accepted on CRAN\n(https://cran.r-project.org/web/packages/lazysql/).\n\nIt includes helper functions to build SQL statements under program\ncontrol for use",
+      "thread_id": "thread-358dc95580c4",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-64bcf216c2cf",
+      "message_id": "<CAKxd1KMTVTwNGRWGB4kE-S=FdTixLbNdpxnX4xQ7tdS+t5OzpA@mail.gmail.com>",
+      "from_name": "Charles Determan",
+      "from_email_hash": "fcc9a1e7c21371cee92703630056a3d910de1afb77217895dfe5b4bc47c007e1",
+      "date": "2016-03-16T14:41:24-05:00",
+      "subject": "[R-pkgs] gpuR 1.1.0 Release",
+      "subject_clean": "gpuR 1.1.0 Release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe next release of gpuR (1.1.0) has been accepted to CRAN (\nhttp://cran.r-project.org/package=gpuR).\n\nThere have been multiple additions including:\n\n1. Scalar operations for gpuMatrix/vclMatrix objects (e.g. 2 * X)\n2. Unary '-' operator added (e.g. -X)\n3. 'slice' and 'block' methods for vector & matrix objects respectively\n4. 'deepcopy' methods\n5. 'abs', 'max', 'min' methods added\n6. 'cbind' & 'rbind' methods added for matrices\n7. 't' method\n8. 'distance' method for pairwise distances (euclidean and sqEuclidean)\n\nIntroductory vignette can be found at\nhttps://cran.r-project.org/web/packages/gpuR/vignettes/gpuR.pdf\n\nHelp with installation can be found at\nhttps://github.com/cdeterman/gpuR/wiki\n\nBug reports, suggestions, and feature requests are appreciated at\nhttps://github.com/cdeterman/gpuR/issues\n\nHappy GPU computing,\nCharles\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nThe next release of gpuR (1.1.0) has been accepted to CRAN (\nhttp://cran.r-project.org/package=gpuR).\n\nThere have been multiple additions including:\n\n1. Scalar operations for gpuMatrix/",
+      "thread_id": "thread-64bcf216c2cf",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-30ca9defa5b5",
+      "message_id": "<86pourhq2c.wl%eglenn@mit.edu>",
+      "from_name": "Ezra Haber Glenn",
+      "from_email_hash": "97e7ed7f7dce2c2cec1d7cb672f982f3087af9f4e61a0cdb8e0ce347c1fd9f90",
+      "date": "2016-03-18T09:29:47-04:00",
+      "subject": "[R-pkgs] acs version 2.0: an R package to download and analyze data from the US Census",
+      "subject_clean": "acs version 2.0: an R package to download and analyze data from the US Census",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce the release of version 2.0 of the \"acs\"\npackage, now available on CRAN\n<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package allows users to download, manipulate, analyze, and present\ndemographic data from the U.S. Census, with special tools and methods\nto simplify the tasks of working with estimates and standard errors\ncontained in data from the American Community Survey (ACS).  \n\nVersion 2.0 of the package provides full support for all ACS data\navailable through the Census API -- including the most recent 2014\ndata -- as well as Decennial Census Data from 1990, 2000, and 2010.\nUsers can work with existing census geographies (states, counties,\ntracts, block-groups, places, zip code areas, congressional districts,\nschool districts, etc.), or create and save their own custom\ngeographies with the package's \"geo.make()\" function.\n\nFor more information please visit:\n<http://eglenn.scripts.mit.edu/citystate/2016/03/acs-version-2-0-now-on-cran>,\nand the newly-updated \"Working with acs.R\" user guide at\n<http://dusp.mit.edu/sites/dusp.mit.edu/files/attachments/publications/working_with_acs_R_v_2.0.pdf>.\n\nSpecial thanks to package beta testers (Ari, Arin, Bethany, Emma,\nJohn, and Michael) and the entire acs-r community, as well as to Uwe\nand Kurt at CRAN for their infinite patience and continuing care and\nstewardship of the system.\n\n--\nEzra Haber Glenn, AICP\nDepartment of Urban Studies and Planning\nMassachusetts Institute of Technology\n77 Massachusetts Ave., Room 7-337\nCambridge, MA 02139\neglenn at mit.edu \nhttp://dusp.mit.edu/faculty/ezra-glenn | http://eglenn.scripts.mit.edu/citystate/\n617.253.2024 (w)\n617.721.7131 (c)",
+      "body_snippet": "We are pleased to announce the release of version 2.0 of the \"acs\"\npackage, now available on CRAN\n<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package allows users to download, manipu",
+      "thread_id": "thread-30ca9defa5b5",
+      "thread_depth": 0,
+      "month": "2016-03"
+    },
+    {
+      "id": "msg-84d447758952",
+      "message_id": "<8CF6FE2C677EA94F94FA6285289BAE68755B549B@BENMAIL02.ben.pri>",
+      "from_name": "Novack-Gottshall, Philip M.",
+      "from_email_hash": "f0987a6b116d71c93d5a21cc2e88fb3da36870a92929ebce3edc04d106ecd5b1",
+      "date": "2016-03-25T18:26:04Z",
+      "subject": "[R-pkgs] New R package for K-S goodness-of-fit tests",
+      "subject_clean": "New R package for K-S goodness-of-fit tests",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings,\n\nWe wanted to announce a new R package 'KScorrect' that carries out the Lilliefors correction to the Kolmogorov-Smirnoff test for use in (one-sample) goodness-of-fit tests.\n\nIt's well-established it's inappropriate to use the K-S test when sample statistics are used to estimate parameters, which results in substantially increased Type-II errors. This warning is mentioned in the ks.test Help page, but no general solution is currently available for non-normal distributions.\n\nThe 'KScorrect' package corrects for the bias by using Monte Carlo simulation, a solution first recommended by Lilliefors (1967) but not widely heeded. The primary function 'LcKS()' is written to complement, and can be used directly in place of, 'ks.test()'. It can be used with most continuous distribution functions, including normal, univariate mixture of normals, lognormal, uniform, loguniform (flat when data are log-transformed), exponential, gamma, and Weibull distributions, and corresponding maximum-likelihood parameters are estimated automatically from the provided sample.\n\nDistribution functions are provided in the package for the loguniform and univariate mixture of normal distributions, which are not included in the R base installation.\n\nSimple examples are provided by calling example(KScorrect) or example(LcKS).\n\nAdditional details are available at https://cran.r-project.org/web/packages/KScorrect. Bug reports, suggestions, and feature requests are encouraged at https://github.com/pnovack-gottshall/KScorrect. \n\nWe hope you find the functions useful when conducting goodness-of-fit tests using the K-S test.\n\nSincerely,\nPhil Novack-Gottshall and Steve Wang\n\n-- \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n Phil Novack-Gottshall\n Associate Professor\n Department of Biological Sciences\n Benedictine University\n 5700 College Road \n Lisle, IL 60532\n\n pnovack-gottshall at ben.edu\n Phone: 630-829-6514\n Fax: 630-829-6547\n Office: 332 Birck Hall\n Lab: 316 Birck Hall\n http://www.ben.edu/faculty/pnovack-gottshall\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "body_snippet": "Greetings,\n\nWe wanted to announce a new R package 'KScorrect' that carries out the Lilliefors correction to the Kolmogorov-Smirnoff test for use in (one-sample) goodness-of-fit tests.\n\nIt's well-estab",
+      "thread_id": "thread-84d447758952",
+      "thread_depth": 0,
+      "month": "2016-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-395de1ce6ef4",
+      "subject": "New package: DataExplorer",
+      "message_count": 1,
+      "participants": [
+        "Boxuan Cui"
+      ],
+      "started": "2016-03-02T13:46:53-05:00",
+      "last_reply": "2016-03-02T13:46:53-05:00",
+      "root_message_id": "msg-395de1ce6ef4"
+    },
+    {
+      "id": "thread-0e7e213d3f90",
+      "subject": "lavaan.shiny \"latent variable analysis with shiny\"",
+      "message_count": 1,
+      "participants": [
+        "Kyle Hamilton"
+      ],
+      "started": "2016-03-04T13:43:03-08:00",
+      "last_reply": "2016-03-04T13:43:03-08:00",
+      "root_message_id": "msg-0e7e213d3f90"
+    },
+    {
+      "id": "thread-dd0f2c11d59d",
+      "subject": "rZeppelin: An R notebook that makes Spark easy to use",
+      "message_count": 1,
+      "participants": [
+        "Amos B. Elberg"
+      ],
+      "started": "2016-03-07T14:33:40-05:00",
+      "last_reply": "2016-03-07T14:33:40-05:00",
+      "root_message_id": "msg-dd0f2c11d59d"
+    },
+    {
+      "id": "thread-358dc95580c4",
+      "subject": "New package lazysql: Lazy SQL Programming",
+      "message_count": 1,
+      "participants": [
+        "Uwe Block"
+      ],
+      "started": "2016-03-12T17:11:16+01:00",
+      "last_reply": "2016-03-12T17:11:16+01:00",
+      "root_message_id": "msg-358dc95580c4"
+    },
+    {
+      "id": "thread-64bcf216c2cf",
+      "subject": "gpuR 1.1.0 Release",
+      "message_count": 1,
+      "participants": [
+        "Charles Determan"
+      ],
+      "started": "2016-03-16T14:41:24-05:00",
+      "last_reply": "2016-03-16T14:41:24-05:00",
+      "root_message_id": "msg-64bcf216c2cf"
+    },
+    {
+      "id": "thread-30ca9defa5b5",
+      "subject": "acs version 2.0: an R package to download and analyze data from the US Census",
+      "message_count": 1,
+      "participants": [
+        "Ezra Haber Glenn"
+      ],
+      "started": "2016-03-18T09:29:47-04:00",
+      "last_reply": "2016-03-18T09:29:47-04:00",
+      "root_message_id": "msg-30ca9defa5b5"
+    },
+    {
+      "id": "thread-84d447758952",
+      "subject": "New R package for K-S goodness-of-fit tests",
+      "message_count": 1,
+      "participants": [
+        "Novack-Gottshall, Philip M."
+      ],
+      "started": "2016-03-25T18:26:04+00:00",
+      "last_reply": "2016-03-25T18:26:04+00:00",
+      "root_message_id": "msg-84d447758952"
+    }
+  ]
+}

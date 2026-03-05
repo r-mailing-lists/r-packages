@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-11",
+  "messages": [
+    {
+      "id": "msg-58e263c9f9ec",
+      "message_id": "<e64f1971-9441-4779-88ed-153712cfbac3@mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "fb5e585740b7c9920dce8700b35a0da42dc1980ade6aac3a1f02de01be0488d9",
+      "date": "2023-11-03T08:44:34-04:00",
+      "subject": "[R-pkgs] new cv package: cross-validation of regression models",
+      "subject_clean": "new cv package: cross-validation of regression models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Georges Monette and I would like to announce a new package, cv, now on \nCRAN, which implements cross-validation of regression models.\n\nSome of the functions supplied by the package:\n\n-   cv() is a generic function with a default method and computationally \nefficient \"lm\" and \"glm\" methods, along with a method for a list of \ncompeting models. There are also experimental \"merMod\", \"lme\", and \n\"glmmTMB\" methods for mixed-effects models. cv() supports parallel \ncomputations.\n\n-   mse() (mean-squared error) and BayesRule() are cross-validation \ncriteria (\"cost functions\"), suitable for use with cv().\n\n-   cvSelect() cross-validates a selection procedure for a regression \nmodel. cvSelect() also supports parallel computations.\n\n-   selectStepAIC() is a model-selection procedure, suitable for use \nwith cvSelect(), based on the stepAIC() function in the MASS package.\n\n-   selectTrans() is a procedure for selecting predictor and response \ntransformations in regression, also suitable for use with cvSelect(), \nbased on the powerTransform() function in the car package.\n\nFor additional information on using the cv package, see the \n\"Cross-validation of regression models\" vignette, in the package and at \n<https://cran.r-project.org/web/packages/cv/vignettes/cv.html>. The cv \npackage is designed to be extensible to other classes of regression \nmodels and other model-selection procedures; for details, see the \n\"Extending the cv package\" vignette, also in the package and at \n<https://cran.r-project.org/web/packages/cv/vignettes/cv-extend.html>.\n\nComments and suggestions would be appreciated. Bug reports and problems \ncan be filed at <https://github.com/gmonette/cv/issues>.\n\nThank you for your attention,\n  John and Georges\n\n\n-- \nJohn Fox, Professor Emeritus\nMcMaster University\nHamilton, Ontario, Canada\nweb: https://www.john-fox.ca/",
+      "body_snippet": "Georges Monette and I would like to announce a new package, cv, now on \nCRAN, which implements cross-validation of regression models.\n\nSome of the functions supplied by the package:\n\n-   cv() is a gen",
+      "thread_id": "thread-58e263c9f9ec",
+      "thread_depth": 0,
+      "month": "2023-11"
+    },
+    {
+      "id": "msg-1395079239b5",
+      "message_id": "<97509799-f612-4579-881f-06c78e3e905b@app.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2023-11-20T11:08:25-05:00",
+      "subject": "[R-pkgs] gsDesign 3.6.0 is released",
+      "subject_clean": "gsDesign 3.6.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm excited to announce that a new version of gsDesign (3.6.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).\n\nThe 3.6.0 update introduces some significant new features and enhancements:\n\n- New gsSurvCalendar() function to enable group sequential design for time-to-event outcomes using calendar timing of interim analysis specification.\n- toInteger() and print.gsSurv() improvements for integer sample size and event count.\n- toBinomialExact() and gsBinomialExact() now have improved error checking in bound computations, error messages, and documentation.\n- New as_rtf() method for gsBinomialExact() objects to support RTF table outputs.\n\nWe have also updated the gsDesign Shiny app to 2023.11.0. This version supports the new key features added in gsDesign 3.5.0 and 3.6.0.\n\nFor the complete list of updates, please see the announcement: https://keaven.github.io/blog/gsdesign-3-6-0/.\n\nBest regards,\n-Nan",
+      "body_snippet": "Dear all,\n\nI'm excited to announce that a new version of gsDesign (3.6.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largel",
+      "thread_id": "thread-1395079239b5",
+      "thread_depth": 0,
+      "month": "2023-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-58e263c9f9ec",
+      "subject": "new cv package: cross-validation of regression models",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2023-11-03T08:44:34-04:00",
+      "last_reply": "2023-11-03T08:44:34-04:00",
+      "root_message_id": "msg-58e263c9f9ec"
+    },
+    {
+      "id": "thread-1395079239b5",
+      "subject": "gsDesign 3.6.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2023-11-20T11:08:25-05:00",
+      "last_reply": "2023-11-20T11:08:25-05:00",
+      "root_message_id": "msg-1395079239b5"
+    }
+  ]
+}

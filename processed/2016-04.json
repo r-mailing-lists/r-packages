@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-04",
+  "messages": [
+    {
+      "id": "msg-3aa81cf792da",
+      "message_id": "<519743$2s38ma@ironport10.mayo.edu>",
+      "from_name": "Therneau, Terry M., Ph.D.",
+      "from_email_hash": "382b7509cd09524d5383672b54b7679da321b2d7cddcbd90c1ab33e6472aece6",
+      "date": "2016-04-18T07:28:11-05:00",
+      "subject": "[R-pkgs] Survival 2.39",
+      "subject_clean": "Survival 2.39",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of the survival package has been released.  The biggest change is stronger \nsupport for multi-state models, which is an outgrowth of their increasing use in my own \npractice. Interested users are directed to the \"time dependent covariates\" vignette for \ndiscussion of the tmerge and survSplit functions, which are useful tools to build the \nrequisite data sets, and to the \"multi-state\" vignette for model fits and plots.\n\nTerry Therneau",
+      "body_snippet": "A new version of the survival package has been released.  The biggest change is stronger \nsupport for multi-state models, which is an outgrowth of their increasing use in my own \npractice. Interested ",
+      "thread_id": "thread-3aa81cf792da",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-91acf41e5488",
+      "message_id": "<57187FEB.7070008@p-roocks.de>",
+      "from_name": "Patrick Roocks",
+      "from_email_hash": "6b660630464dc5e34a570e236dfe2043f86241db8afc6e73187a3005d40c6301",
+      "date": "2016-04-21T09:23:23+02:00",
+      "subject": "[R-pkgs] rPref 1.0 - Computing Pareto Optima and Database Preferences",
+      "subject_clean": "rPref 1.0 - Computing Pareto Optima and Database Preferences",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nthe first 1.0 version of the rPref package is now on CRAN.\n\nrPref allows to select the Pareto-optimal tuples from a data set, also \ncalled Skylines in the database community. For example, optimal tuples \nfrom mtcars according to \"high(mpg) * high(hp)\" (where \"*\" is the Pareto \noperator) are those cars, for which no other dominating car exists. \nThere, a car dominates another car if its horsepower or miles-per-gallon \nvalue is strictly better while the other value is better or equal.\n\nSee http://p-roocks.de/rpref/index.php?section=examples for more examples.\n\nThe changes of this version include:\n- A new function get_btg_dot to generate Better-Than-Graphs induced by \nthe preference using Graphviz.\n- Fixed compatibility issues with new versions of dplyr and testthat.\n\nComments and contributions are very welcome via github:\nhttps://github.com/patrickroocks/rpref\n\nBest regards,\n\nPatrick",
+      "body_snippet": "Dear R users,\n\nthe first 1.0 version of the rPref package is now on CRAN.\n\nrPref allows to select the Pareto-optimal tuples from a data set, also \ncalled Skylines in the database community. For exampl",
+      "thread_id": "thread-91acf41e5488",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-34d55bd8295e",
+      "message_id": "<f5d2fa1b8f0047dbaccc47145c0ab1e9@EXCHCS34.ornl.gov>",
+      "from_name": "Piburn, Jesse O.",
+      "from_email_hash": "e01fc830d0ed8d586992ec2eeef11e5e995be1f388a36759817a2b9896c9506b",
+      "date": "2016-04-22T14:37:28Z",
+      "subject": "[R-pkgs] New Package on CRAN: wbstats",
+      "subject_clean": "New Package on CRAN: wbstats",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI wanted to announce the release of a new package on CRAN wbstats.\n\n>From the description \"Tools for searching and downloading data and statistics from the World Bank Data API (http://data.worldbank.org/developers/api-overview) and the World Bank Data Catalog API (http://data.worldbank.org/developers/data-catalog-api)\"\n\nHere is a (hopefully) useful vignette if you would like to learn more\nhttps://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html\n\nComments and suggestions are always welcome. Thank you\n\nRepos\nCRAN: https://cran.r-project.org/web/packages/wbstats/\nGithub: https://github.com/GIST-ORNL/wbstats\n\n\nBest,\nJesse\n\n\n\n\nJesse Piburn\nResearch Scientist in Geographic Data Sciences\nGeographic Information Science and Technology Group\nComputational Sciences and Engineering Division\nOak Ridge National Laboratory\nOffice E304, Building 5600\nOffice Phone: 865 576 9318\nEmail: piburnjo at ornl.gov\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI wanted to announce the release of a new package on CRAN wbstats.\n\n>From the description \"Tools for searching and downloading data and statistics from the World Bank Data API (http://data.wor",
+      "thread_id": "thread-34d55bd8295e",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-7fd9f28e3f69",
+      "message_id": "<CAB7cXUKeiDkxd1TJdjBRGMgRzMkaLhJOoErcX4Ou80yHK=Dysw@mail.gmail.com>",
+      "from_name": "Katie Coburn",
+      "from_email_hash": "4006c7a63cc5ecb47a2a6ed45669bbe5c19daac60892afd2142e606010c6d868",
+      "date": "2016-04-24T14:45:10-07:00",
+      "subject": "[R-pkgs] New package: weightr (v. 1.0.0)",
+      "subject_clean": "New package: weightr (v. 1.0.0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings, R users!\n\nI'm excited and pleased to announce that the weightr package was\nreleased to CRAN today:\n\nhttps://cran.r-project.org/web/packages/weightr/\n\nOur package provides a function for meta-analysts to implement the\nVevea and Hedges (1995) weight-function model for publication bias in\nR and, by specifying an additional argument, to implement the modified\nVevea and Woods (2005) version as well. We were inspired by Wolfgang\nViechtbauer's fantastic metafor package, and have formatted our output\nsimilarly.\n\nThe package also includes a function to launch the Shiny app that\nimplements both of these models locally. For anyone interested who\nwants to preview the Shiny app without installing the package, it's\navailable online here:\n\nhttps://vevealab.shinyapps.io/WeightFunctionModel/\n\nThanks for your time, and I hope the package is useful to you! If you\nencounter any problems or have feedback, please feel free to contact\nme at kcoburn at ucmerced.edu.\n\nKatie Coburn - Graduate Student, Quantitative Psychology,\nUniversity of California, Merced\n\nDr. Jack Vevea - Associate Professor, Quantitative Psychology,\nUniversity of California, Merced",
+      "body_snippet": "Greetings, R users!\n\nI'm excited and pleased to announce that the weightr package was\nreleased to CRAN today:\n\nhttps://cran.r-project.org/web/packages/weightr/\n\nOur package provides a function for met",
+      "thread_id": "thread-7fd9f28e3f69",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-34dbb14b3b2d",
+      "message_id": "<A0A6E86D-15B7-49C0-9383-13744859EA95@polimi.it>",
+      "from_name": "Francesco Grossetti",
+      "from_email_hash": "6cdc5ed663bf3742337b796002c12be27883eb13a7e7f4c4eca998bf28f19116",
+      "date": "2016-04-27T09:58:43+02:00",
+      "subject": "[R-pkgs] New package: msmtools (v1.0)",
+      "subject_clean": "New package: msmtools (v1.0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings, R users!\n\nIt is with pleasure that I am announcing the release of msmtools package on CRAN:\n\nhttps://cran.r-project.org/web/packages/msmtools/index.html\n\nmsmtools provides a fast and general method for restructuring classical longitudinal data into augmented ones. The reason for this is to facilitate the modeling of longitudinal data under a multi-state framework using the 'msm? package by Chris Jackson.\nThe tools is fitted for longitudinal datasets in which events are localized in time (i.e. a starting and an ending time are present). The method is efficient and fast and thus is suitable when dealing with highly dimensional datasets.\n\nThe package also includes two graphical goodness-of-fit tools which can roughly assess the behaviour of the Markov model.\nI hope you?ll find the package useful for your work! \n\nFor any issues you may encounter, please leave a related comment to my repository at: \n\nhttps://github.com/contefranz/msmtools/issues\n\nor contact me at francesco.grossetti at polimi.it\n\nThanks! \nFrancesco\n\n-- \nFrancesco Grossetti\nPh.D. Student\nMOX - Modeling and Scientific Computing\nDipartimento di Matematica ?F. Brioschi\"\nPolitecnico di Milano\nVia Bonardi 9\nI-20133 Milano - Italy\nph.: +39 02 2399 4564\nemail: francesco.grossetti at polimi.it",
+      "body_snippet": "Greetings, R users!\n\nIt is with pleasure that I am announcing the release of msmtools package on CRAN:\n\nhttps://cran.r-project.org/web/packages/msmtools/index.html\n\nmsmtools provides a fast and genera",
+      "thread_id": "thread-34dbb14b3b2d",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-079b64520a63",
+      "message_id": "<CAAHpScqMeqrGi4kLKemMNyKOZ7DO-EqQe=qiB7foESXA7gh4vA@mail.gmail.com>",
+      "from_name": "Bruce Swihart",
+      "from_email_hash": "2f43e44bd68164bc83a7afd681b0b24efa603eb32fa831ff373fdcd56acb097e",
+      "date": "2016-04-27T08:35:25-04:00",
+      "subject": "[R-pkgs] New package: bridgedist (v 0.1.0)",
+      "subject_clean": "New package: bridgedist (v 0.1.0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nThe d/p/q/r functions for the bridge distribution are now available in\nbridgedist.\n\nWhen a random intercept follows the bridge distribution, as detailed in\nWang and Louis (2003) <doi:10.1093/biomet/90.4.765\n<http://dx.doi.org/10.1093/biomet/90.4.765>>, a marginalized\nrandom-intercept logistic regression will still be a logistic regression\nwith marginal coefficients that are scalar multiples of the conditional\nregression's coefficients.\n\nAnother way to state the result is that the sum of a standard logistic\nrandom variable and a bridge random variable will follow a logistic\ndistribution with scale > 1.\n\nExamples of use:\n\ndbridge(0)#> [1] 0.1591549\npbridge(0)#> [1] 0.5\nqbridge(0.5)#> [1] 0\nmean(rbridge(1e5)) ## approximately 0#> [1] -0.003490218\nvar(rbridge(1e5, scale = 1/sqrt(1+3/pi^2)))  # approximately 1#> [1] 0.9983954\n\n\nVignette:\n\nhttps://cran.r-project.org/web/packages/bridgedist/vignettes/the_bridgedist_basics.html\n\n\nReferences:\n\nWang, Z. and Louis, T.A. (2003) Matching conditional and marginal shapes in\nbinary random intercept models using a bridge distribution function.\nBiometrika, 90(4), 765-775. <DOI:10.1093/biomet/90.4.765>\n\nSee also:\n\nSwihart, B.J., Caffo, B.S., and Crainiceanu, C.M. (2013). A Unifying\nFramework for Marginalized Random-Intercept Models of Correlated Binary\nOutcomes. International Statistical Review, 82 (2), 275-295 1-22. <DOI:\n10.1111/insr.12035>\n\nGriswold, M.E., Swihart, B.J., Caffo, B.S and Zeger, S.L. (2013). Practical\nmarginalized multilevel models. Stat, 2(1), 129-142. <DOI: 10.1002/sta4.22>\n\nHeagerty, P.J. (1999). Marginally specified logistic-normal models for\nlongitudinal binary data. Biometrics, 55(3), 688-698. <DOI:\n10.1111/j.0006-341X.1999.00688.x>\n\nHeagerty, P.J. and Zeger, S.L. (2000). Marginalized multilevel models and\nlikelihood inference (with comments and a rejoinder by the authors). Stat.\nSci., 15(1), 1-26. <DOI: 10.1214/ss/1009212671>\n\nAll the best,\nBruce\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R Users,\n\nThe d/p/q/r functions for the bridge distribution are now available in\nbridgedist.\n\nWhen a random intercept follows the bridge distribution, as detailed in\nWang and Louis (2003) <doi:10.1093",
+      "thread_id": "thread-079b64520a63",
+      "thread_depth": 0,
+      "month": "2016-04"
+    },
+    {
+      "id": "msg-907e380d0cc1",
+      "message_id": "<CAL8y_QwxacN8vbTCHchCoQXHp4wfw75+FKrmC-f4xDd-Ud-3wg@mail.gmail.com>",
+      "from_name": "Marcin Kosiński",
+      "from_email_hash": "fdef291fec9c834c8b1f3fe80b9868159d450dcdf61b747e0dd07b23c902612f",
+      "date": "2016-04-28T08:59:00+02:00",
+      "subject": "[R-pkgs] New R package on CRAN: RZabbix - easy and direct communication with 'Zabbix API'",
+      "subject_clean": "New R package on CRAN: RZabbix - easy and direct communication with 'Zabbix API'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\n2 days ago a new R packages appeared on CRAN\nhttps://cran.r-project.org/web/packages/RZabbix/index.html\n\nRZabbix is an R interface to the 'Zabbix API' data <\nhttps://www.zabbix.com/documentation/3.0/manual/api/reference>. Enables\neasy and direct communication with 'Zabbix API' from 'R'.\n\nYou can now integrate your Zabbix applications monitoring with reports\ncreated in R. Feel free to check examples in ZabbixAPI function and please\npost your comments, ideas on future improvements or user requests here :\nhttps://github.com/MarcinKosinski/RZabbix/issues\nI also encourage you to provide a sweet pull request with your ideas.\n\nBest,\nRZabbix author,\nMarcin Kosi?ski\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\n2 days ago a new R packages appeared on CRAN\nhttps://cran.r-project.org/web/packages/RZabbix/index.html\n\nRZabbix is an R interface to the 'Zabbix API' data <\nhttps://www.zabbix.com/documentat",
+      "thread_id": "thread-907e380d0cc1",
+      "thread_depth": 0,
+      "month": "2016-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3aa81cf792da",
+      "subject": "Survival 2.39",
+      "message_count": 1,
+      "participants": [
+        "Therneau, Terry M., Ph.D."
+      ],
+      "started": "2016-04-18T07:28:11-05:00",
+      "last_reply": "2016-04-18T07:28:11-05:00",
+      "root_message_id": "msg-3aa81cf792da"
+    },
+    {
+      "id": "thread-91acf41e5488",
+      "subject": "rPref 1.0 - Computing Pareto Optima and Database Preferences",
+      "message_count": 1,
+      "participants": [
+        "Patrick Roocks"
+      ],
+      "started": "2016-04-21T09:23:23+02:00",
+      "last_reply": "2016-04-21T09:23:23+02:00",
+      "root_message_id": "msg-91acf41e5488"
+    },
+    {
+      "id": "thread-34d55bd8295e",
+      "subject": "New Package on CRAN: wbstats",
+      "message_count": 1,
+      "participants": [
+        "Piburn, Jesse O."
+      ],
+      "started": "2016-04-22T14:37:28+00:00",
+      "last_reply": "2016-04-22T14:37:28+00:00",
+      "root_message_id": "msg-34d55bd8295e"
+    },
+    {
+      "id": "thread-7fd9f28e3f69",
+      "subject": "New package: weightr (v. 1.0.0)",
+      "message_count": 1,
+      "participants": [
+        "Katie Coburn"
+      ],
+      "started": "2016-04-24T14:45:10-07:00",
+      "last_reply": "2016-04-24T14:45:10-07:00",
+      "root_message_id": "msg-7fd9f28e3f69"
+    },
+    {
+      "id": "thread-079b64520a63",
+      "subject": "New package: bridgedist (v 0.1.0)",
+      "message_count": 1,
+      "participants": [
+        "Bruce Swihart"
+      ],
+      "started": "2016-04-27T08:35:25-04:00",
+      "last_reply": "2016-04-27T08:35:25-04:00",
+      "root_message_id": "msg-079b64520a63"
+    },
+    {
+      "id": "thread-34dbb14b3b2d",
+      "subject": "New package: msmtools (v1.0)",
+      "message_count": 1,
+      "participants": [
+        "Francesco Grossetti"
+      ],
+      "started": "2016-04-27T09:58:43+02:00",
+      "last_reply": "2016-04-27T09:58:43+02:00",
+      "root_message_id": "msg-34dbb14b3b2d"
+    },
+    {
+      "id": "thread-907e380d0cc1",
+      "subject": "New R package on CRAN: RZabbix - easy and direct communication with 'Zabbix API'",
+      "message_count": 1,
+      "participants": [
+        "Marcin Kosiński"
+      ],
+      "started": "2016-04-28T08:59:00+02:00",
+      "last_reply": "2016-04-28T08:59:00+02:00",
+      "root_message_id": "msg-907e380d0cc1"
+    }
+  ]
+}

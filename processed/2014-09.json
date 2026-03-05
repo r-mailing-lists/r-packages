@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-09",
+  "messages": [
+    {
+      "id": "msg-a7c19d1d6f36",
+      "message_id": "<5412ABA6.5080808@gmail.com>",
+      "from_name": "Krueger, Fabian",
+      "from_email_hash": "0f389ba022f161515d9d1e5d7789c8b990d855bd487feccf1b9ecd786381a4a6",
+      "date": "2014-09-12T10:15:34+02:00",
+      "subject": "[R-pkgs] New R package ``bvarsv''",
+      "subject_clean": "New R package ``bvarsv''",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nplease let me draw your attention to my new R package bvarsv (on CRAN \nsince August 28) which implements the Primiceri (Review of Economic \nStudies, 2005) vector autoregressive model. The model is popular in \nmacroeconomic analysis as it allows to model instabilities (e.g. in the \nmean and volatility dynamics) that are often observed in macroeconomic \ntime series like inflation.\n\nThe package provides functionality for Bayesian analysis of the \nPrimiceri model. To the best of my knowledge, it is the only publicly \navailable R code to do so. The underlying Markov Chain Monte Carlo \nalgorithm is computationally challenging, since each iteration requires \nmultiple calls of a recursive Kalman filter type algorithm. Therefore, \nbvarsv relies on C++ code ported to R via Rcpp and RcppArmadillo. The \nclear focus of the package is on forecasting, as opposed to structural \nanalysis of economic relationships. The package allows to compute \nposterior predictive distributions, which can then be plotted and \nanalyzed using forecast evaluation techniques. More detailed \ndocumentation and examples is available here:\n\nhttps://sites.google.com/site/fk83research/code\n\nYour feedback on any aspects of the package, as well as possible \nimprovements or extensions, would be highly appreciated.\n\nThank you and best wishes,\nFabian Kr?ger",
+      "body_snippet": "Dear R users,\n\nplease let me draw your attention to my new R package bvarsv (on CRAN \nsince August 28) which implements the Primiceri (Review of Economic \nStudies, 2005) vector autoregressive model. T",
+      "thread_id": "thread-a7c19d1d6f36",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-2098ff5bf8ce",
+      "message_id": "<5415A900.8000406@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2014-09-14T10:41:04-04:00",
+      "subject": "[R-pkgs] Announce: Lahman baseball database archive package, v 3.0",
+      "subject_clean": "Announce: Lahman baseball database archive package, v 3.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list\n\nVersion 3.0-1 of the Lahman package was recently submitted to CRAN. It \ncontains the\nthe tables from Sean Lahman's  Baseball Database,\nhttp://www.seanlahman.com/baseball-archive/statistics/\nas a set of R data.frames with examples of use.\n\nV 3.0 provides the updated data on pitching, hitting and fielding \nperformance and other tables from 1871\nthrough 2013, as recorded in the 2014 version of the database.  The \nLahman project has a home page\nat http://lahman.r-forge.r-project.org/ with some additional examples.  \nAdditional links to other\napplications or analyses of this database are invited.\n\nIf you have used the earlier v. 2.0-x package in scripts or examples, \nplease note that the database schema\nhas been somewhat revised to regularize the use of player ID variables \nacross the various tables, and\nremove some redundant variables, so some scripts may need to be \nrevised.  In particular:\n\n   o HallOfFame$hofID is now HallOfFame$playerID\n   o managerID is now playerID in all tables\n   o Removed from Master: managerID, hofID, holtzID, lahmanID, \nlahman40ID, lahman45ID, nameNote, nameNick, and college\n\n-Michael\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept. & Chair, Quantitative Methods\nYork University      Voice: 416 736-2100 x66249 Fax: 416 736-5814\n4700 Keele Street    Web:http://www.datavis.ca\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "Dear list\n\nVersion 3.0-1 of the Lahman package was recently submitted to CRAN. It \ncontains the\nthe tables from Sean Lahman's  Baseball Database,\nhttp://www.seanlahman.com/baseball-archive/statistics/",
+      "thread_id": "thread-2098ff5bf8ce",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-98e9029e4942",
+      "message_id": "<CAJ9GNa=7X6YDaCFu3JOHdg2S15_VKUvdGaUkWiQ73Z7jBhcD7w@mail.gmail.com>",
+      "from_name": "Jan Wijffels",
+      "from_email_hash": "c67854060f9d1faa0785ceb6d8fc98369d857f79d54a92b874f39998787b7fc2",
+      "date": "2014-09-19T14:01:28+02:00",
+      "subject": "[R-pkgs] RMOA data stream modelling using MOA (Massive Online Analysis)",
+      "subject_clean": "RMOA data stream modelling using MOA (Massive Online Analysis)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nFor users interested in streaming classification or building classification\nmodels with limited amounts of RAM on your whole data set, I would like to\nannounce the release of a new package called RMOA on CRAN (\nhttp://cran.r-project.org/web/packages/RMOA).\n\nMOA is the most popular open source framework for data stream mining and is\nbeing developed at the University of Waikato: http://moa.cms.waikato.ac.nz.\nRMOA interfaces with MOA version 2014.04 and focusses on building streaming\nclassification & regression models on data streams (the stream package in R\nalready allows clustering).\n\nClassification models which are possible through RMOA are:\n\n- Classification trees:\n  * AdaHoeffdingOptionTree\n  * ASHoeffdingTree\n  * DecisionStump\n  * HoeffdingAdaptiveTree\n  * HoeffdingOptionTree\n  * HoeffdingTree\n  * LimAttHoeffdingTree\n  * RandomHoeffdingTree\n- Bayesian classification:\n  * NaiveBayes\n  * NaiveBayesMultinomial\n- Active learning classification:\n  * ActiveClassifier\n- Ensemble (meta) classifiers:\n  * Bagging\n      + LeveragingBag\n      + OzaBag\n      + OzaBagAdwin\n      + OzaBagASHT\n  * Boosting\n      + OCBoost\n      + OzaBoost\n      + OzaBoostAdwin\n  * Stacking\n      + LimAttClassifier\n  * Other\n      + AccuracyUpdatedEnsemble\n      + AccuracyWeightedEnsemble\n      + ADACC\n      + DACC\n      + OnlineAccuracyUpdatedEnsemble\n      + TemporallyAugmentedClassifier\n      + WeightedMajorityAlgorithm\n\nInterfaces are implemented to model data in standard files (csv, txt,\ndelimited), ffdf data (from the ff package), data.frames and matrices.\n\nDocumentation of MOA directed towards RMOA users can be found at\nhttp://jwijffels.github.io/RMOA/\nExamples on the use of RMOA can be found in the documentation, on github at\nhttps://github.com/jwijffels/RMOA or e.g. by viewing the showcase at\nhttp://bnosac.be/index.php/blog/32-rmoa-massive-online-data-stream-classifications-with-r-a-moa\n\nI you have any remarks or requests, don't hesitate to get into contact.\n\nstream on,\nJan\n\n\nJan Wijffels\nStatistical Data Miner\nwww.bnosac.be  | +32 486 611708\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\nFor users interested in streaming classification or building classification\nmodels with limited amounts of RAM on your whole data set, I would like to\nannounce the release of a new ",
+      "thread_id": "thread-98e9029e4942",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-4f83333da522",
+      "message_id": "<541C6046.1060602@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-09-19T11:56:38-05:00",
+      "subject": "[R-pkgs] CRAN submission of Hmisc 3.14-5",
+      "subject_clean": "CRAN submission of Hmisc 3.14-5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An update to the Hmisc package is now on CRAN.  Some recent changes:\n\n    * latex.summaryM: fixed bug in caption with test=TRUE.  Thanks: \nYonghao Pua\n    * combined.levels: sensed all NA vector, now return non-factor \nnumeric instead\n    * dataframeReduce: handle all-NA factor variable\n    * subplot: replaced with latest version from TeachingDemos package \nby Greg Snow\n    * latexTabular: fixed error in example in help file; result is not a \nfile\n    * latex: another test added in tests/latex.s\n    * summaryP: removed observations with a right-hand-side variable missing\n    * latex.summaryP: fixed bug with wrong column labels due to reshape \nreordering columns coming from factor levels alphabetically instead of \nby original levels\n    * format.df: added % & <= >= to list of characters handled, the last \ntwo by going into math mode\n    * latex.summaryP: use blank if denominator 0, instead of NaN\n    * summary.formula: fixed problem with deparse formula.  Thanks: \nAndreas Kiermeier\n    * describe: added relative information measure for numeric variables \n- a measure of how continuous the variable is\n    * wtd.table: detect duplications using duplicated() instead of \ndiff(x) to handle Inf.  Thanks: Benjamin Tyner\n    * DESCRIPTION, NAMESPACE: multiple function changes to work in R-devel\n\nSee http://biostat.mc.vanderbilt.edu/Hmisc, \nhttps://github.com/harrelfe/Hmisc for more information.\n\nFrank Harrell\nVanderbilt University",
+      "body_snippet": "An update to the Hmisc package is now on CRAN.  Some recent changes:\n\n    * latex.summaryM: fixed bug in caption with test=TRUE.  Thanks: \nYonghao Pua\n    * combined.levels: sensed all NA vector, now ",
+      "thread_id": "thread-4f83333da522",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-9d9afd42d5c4",
+      "message_id": "<541C6144.2030204@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-09-19T12:00:52-05:00",
+      "subject": "[R-pkgs] CRAN update: rms 4.2-1",
+      "subject_clean": "CRAN update: rms 4.2-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An update to the rms package is now on CRAN.  Some recent changes:\n\n    * plot.summary.rms: allowed a vector for lwd, and passed lwd to \nconfbar.  Thanks: Michael Friendly\n    * gendata: Starting in R 3.1.0, as.data.frame.labelled or \nas.data.frame.list quit working when length vary; workaround\n    * predictrms, ols: handle offset in formula.  Thanks: Max Gordon\n    * pentrace: neatened code, added new argument noaddzero if user \nwants to prevent unpenalized model from being tried; add new test script \nin tests\n    * bplot: fixed bug whereby xlabrot was ignored.  Thanks: Sven \nKrackow <sven.krackow at gmail.com>; new test for bplot in tests directory\n    * plot.Predict: fixed bug in which 2nd argument to perim was not correct\n    * validate.ols: Shane McIntosh fixed the passing of the tolerance \nargument to predab.resample\n    * predictrms: computed offset earlier so always defined no matter \nthe value of type\n    * plot.Predict: added scaletrans argument, fixed use of subscripts \nin pan\n    * lrm, lrm.fit: added scale argument\n    * orm, orm.fit: added scale argument\n    * vcov.orm: accounted for scale when extracting covariance matrix\n    * npsurv: was not passing type argument\n    * npsurv: start storing all classes created by survfit.formula\n    * logLik.Gls: added.  Makes AIC(Gls object) work.\n    * NAMESPACE: several changes\n\n\nSee http://biostat.mc.vanderbilt.edu/rms and \nhttps://github.com/harrelfe/rms for more information.\n\nFrank Harrell\nVanderbilt University",
+      "body_snippet": "An update to the rms package is now on CRAN.  Some recent changes:\n\n    * plot.summary.rms: allowed a vector for lwd, and passed lwd to \nconfbar.  Thanks: Michael Friendly\n    * gendata: Starting in R",
+      "thread_id": "thread-9d9afd42d5c4",
+      "thread_depth": 0,
+      "month": "2014-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a7c19d1d6f36",
+      "subject": "New R package ``bvarsv''",
+      "message_count": 1,
+      "participants": [
+        "Krueger, Fabian"
+      ],
+      "started": "2014-09-12T10:15:34+02:00",
+      "last_reply": "2014-09-12T10:15:34+02:00",
+      "root_message_id": "msg-a7c19d1d6f36"
+    },
+    {
+      "id": "thread-2098ff5bf8ce",
+      "subject": "Announce: Lahman baseball database archive package, v 3.0",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2014-09-14T10:41:04-04:00",
+      "last_reply": "2014-09-14T10:41:04-04:00",
+      "root_message_id": "msg-2098ff5bf8ce"
+    },
+    {
+      "id": "thread-4f83333da522",
+      "subject": "CRAN submission of Hmisc 3.14-5",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-09-19T11:56:38-05:00",
+      "last_reply": "2014-09-19T11:56:38-05:00",
+      "root_message_id": "msg-4f83333da522"
+    },
+    {
+      "id": "thread-9d9afd42d5c4",
+      "subject": "CRAN update: rms 4.2-1",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-09-19T12:00:52-05:00",
+      "last_reply": "2014-09-19T12:00:52-05:00",
+      "root_message_id": "msg-9d9afd42d5c4"
+    },
+    {
+      "id": "thread-98e9029e4942",
+      "subject": "RMOA data stream modelling using MOA (Massive Online Analysis)",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2014-09-19T14:01:28+02:00",
+      "last_reply": "2014-09-19T14:01:28+02:00",
+      "root_message_id": "msg-98e9029e4942"
+    }
+  ]
+}

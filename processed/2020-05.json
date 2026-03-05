@@ -1,0 +1,306 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-05",
+  "messages": [
+    {
+      "id": "msg-7bcfa05558c7",
+      "message_id": "<47d83b4d-e077-5956-cb49-b252e72818d3@tu-dresden.de>",
+      "from_name": "Björn Böttcher",
+      "from_email_hash": "4ccadb73e4c6e13792d1cd7376c114b1514e9214ac93a84d2bdd1d92b94dca6d",
+      "date": "2020-05-04T11:04:06+02:00",
+      "subject": "[R-pkgs] multivariance: Measuring Multivariate Dependence Using Distance Multivariance",
+      "subject_clean": "multivariance: Measuring Multivariate Dependence Using Distance Multivariance",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users and developers,\n\nbased on a recent series of of papers [1-6] the package 'multivariance' \n(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.\nIt provides in particular:\n\n+ *fast global tests of independence* for an arbitrary number of \nvariables of arbitrary dimensions\n\n+ a detection and visualization algorithm for *higher order dependence \nstructures*\n\n+ estimators for multivariate dependence measures which *characterize \nindependence*, i.e. the population version is 0 if and only if the \nvariables are independent (in contrast to the standard correlation 'cor')\n\nAs a side remark, some food for thought: Note that in [3] it is referred \nto over 350 datasets from more than 150 R-packages, which all feature \nsome statistical significant higher order dependencies. Some are \nprobably artefacts, but in any case it is likely that these have been \nunnoticed and undiscussed so far. Moreover, since it was purely a brute \nforce study, this might provide starting points for plenty of research \nby the corresponding field specialists.\n\nComments and questions on 'multivariance' and the underlying theory are \nwelcome.\n\nBest wishes\n\nBj?rn B?ttcher\n\n\nReferences:\n\n[1] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Detecting \nindependence of random vectors: generalized distance covariance and \nGaussian covariance.\nModern Stochastics: Theory and Applications, Vol. 5, No. 3 (2018) 353-383.\nhttps://www.vmsta.org/journal/VMSTA/article/127/info\n\n[2] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Distance \nmultivariance: New dependence measures for random vectors.\nThe Annals of Statistics, Vol. 47, No. 5 (2019) 2757-2789.\nhttps://projecteuclid.org/euclid.aos/1564797863\n\n[3] B. B?ttcher, Dependence and Dependence Structures: Estimation and \nVisualization using the Unifying Concept of Distance Multivariance.\nOpen Statistics, Vol. 1, No. 1 (2020) 1-46.\nhttps://doi.org/10.1515/stat-2020-0001\n\n[4] G. Berschneider, B. B?ttcher, On complex Gaussian random fields, \nGaussian quadratic forms and sample distance multivariance. Preprint.\nhttps://arxiv.org/abs/1808.07280\n\n[5] B. B?ttcher, Copula versions of distance multivariance and dHSIC via \nthe distributional transform -- a general approach to construct \ninvariant dependence measures.\nStatistics, (2020) 1-18.\nhttps://doi.org/10.1080/02331888.2020.1748029\n\n[6] B. B?ttcher, Notes on the interpretation of dependence measures -- \nPearson's correlation, distance correlation, distance multicorrelations \nand their copula versions. Preprint.\nhttps://arxiv.org/abs/2004.07649\n\n\n-- \nDr. Bj?rn B?ttcher\nTU Dresden\nInstitut f?r Math. Stochastik\nD-01062 Dresden, Germany\nPhone: +49 (0) 351 463 32423\nFax:   +49 (0) 351 463 37251\nWeb:   http://www.math.tu-dresden.de/~boettch/",
+      "body_snippet": "Dear R-users and developers,\n\nbased on a recent series of of papers [1-6] the package 'multivariance' \n(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.\nIt provides in particular:\n\n",
+      "thread_id": "thread-7bcfa05558c7",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-969a9b4e690b",
+      "message_id": "<CANTbTwDL04K6fsgVVzFgPmsMJdkZMSfuKHVW5WFrWVbU_aJ3Xw@mail.gmail.com>",
+      "from_name": "Hayden MacDonald",
+      "from_email_hash": "7dd0d9575e655b3302184da2c1de3b9ee688663f9c88be02af18f73eaf87bf6e",
+      "date": "2020-05-04T08:03:22-04:00",
+      "subject": "[R-pkgs] squashinformr: Politely web scrape data from SquashInfo in R",
+      "subject_clean": "squashinformr: Politely web scrape data from SquashInfo in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI hope this message finds you well. I have developed a new R package,\nsquashinformr, that allows users to web scrape data on the Professional\nSquash Association World Tour and other squash tournaments. Currently,\nsquashinformr provides functions for accessing data on players, rankings,\nand tournaments. Additionally, squashinformr ethically scrapes data from\nSquashInfo <http://www.squashinfo.com/> by adhering to `polite` principles\n<https://github.com/dmi3kno/polite>. Version 0.1.2 is now available on CRAN!\n\nHere is a blog post introducing the package and some of its uses:\nhttps://needleinthehay.ca/introducing-squashinformr/\n\nand here is the package's GitHub repository:\nhttps://github.com/HaydenMacDonald/squashinformr\n\nBest wishes,\n\nHayden MacDonald\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI hope this message finds you well. I have developed a new R package,\nsquashinformr, that allows users to web scrape data on the Professional\nSquash Association World Tour and other squash to",
+      "thread_id": "thread-969a9b4e690b",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-3af5883842a4",
+      "message_id": "<C478E421-C30E-4D57-B0EB-6A45B83E03D3@illinois.edu>",
+      "from_name": "Bonfim Fernandes, Samuel",
+      "from_email_hash": "630de235531b2c639dd927929a07b61ffcc556207cc1e8f7520d47db022006f7",
+      "date": "2020-05-07T15:32:14Z",
+      "subject": "[R-pkgs] simplePHENOTYPES: SIMulation of Pleiotropic, Linked and Epistatic PHENOTYPES",
+      "subject_clean": "simplePHENOTYPES: SIMulation of Pleiotropic, Linked and Epistatic PHENOTYPES",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nI hope this message finds you well.\nI have developed the simplePHENOTYPES package to simulate single and multiple (correlated) traits in a wide range of scenarios, including additive, dominance, and epistatic (AxA) models.\nThe newest version, simplePHENOTYPES v1.2.4, which has just been released on CRAN, has substantial improvements compared to the previous one.\n\nSome of the new features include:\n- Options for using VCF, plink bed/ped files, GDS, HapMap, and Numeric as input files.\n- Implementation of two types of spurious pleiotropy simulation (?direct\" and \"indirect\").\n- Simulation of residual correlation among traits.\n\nPlease check it our here:\nhttps://cran.r-project.org/package=simplePHENOTYPES\nVignettes for the most common scenarios one would want to simulate may be found here:\nhttps://cran.r-project.org/web/packages/simplePHENOTYPES/vignettes/simplePHENOTYPES.html\n\nBest regards,\nSamuel Fernandes\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi All,\n\nI hope this message finds you well.\nI have developed the simplePHENOTYPES package to simulate single and multiple (correlated) traits in a wide range of scenarios, including additive, dominan",
+      "thread_id": "thread-3af5883842a4",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-b7fa801f9b95",
+      "message_id": "<986895facff141379e5d379a666e5bcb@UM-MAIL3214.unimaas.nl>",
+      "from_name": "Viechtbauer, Wolfgang (SP)",
+      "from_email_hash": "bfe931aadd3cb7631b70e83086a082e314918464e0b2d0cbb3f72828d9937141",
+      "date": "2020-05-08T18:30:12Z",
+      "subject": "[R-pkgs] mathjaxr: Using 'Mathjax' in Rd Files",
+      "subject_clean": "mathjaxr: Using 'Mathjax' in Rd Files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI would like to announce the release of the 'mathjaxr' package: \n\nhttps://cran.r-project.org/package=mathjaxr\n\nThe package provides MathJax and a handful of macros to enable its use within Rd files for rendering equations in the HTML help files.\n\nPackage authors wanting to make use of the package and its functionality need to:\n\n1. install the mathjaxr package,\n2. add mathjaxr to 'Suggests' or 'Imports' in the DESCRIPTION file of their package,\n3. add mathjaxr to 'RdMacros' in the DESCRIPTION file of their package (or add 'RdMacros: mathjaxr' if the DESCRIPTION file does not yet contain a 'RdMacros' entry),\n\nOne can then enable the use of MathJax by calling the \\loadmathjax macro within the \\description{} section of an .Rd file.\n\nAn inline equation can then be added with the \\mjeqn{latex}{ascii} macro, with the LaTeX commands for the equation given between the first set of curly brackets (which will be rendered in the HTML and PDF help pages) and the plain-text version of the equation given between the second set of curly brackets (which will be shown in the plain text help). With the \\mjdeqn{latex}{ascii} macro, one can add 'displayed equations' (as in LaTeX's displaymath environment). Single argument versions of these macros, namely \\mjseqn{latexascii} and \\mjsdeqn{latexascii}, are also available.\n\nI hope package authors will find this useful for providing fully rendered equations not only in the PDF manual, but also in the HTML help files (which the vast majority of users are probably looking at).\n\nFeedback, comments, suggestions more than welcome. For bug reports, please go to:\n\nhttps://github.com/wviechtb/mathjaxr/issues\n\nBest,\nWolfgang",
+      "body_snippet": "Dear All,\n\nI would like to announce the release of the 'mathjaxr' package: \n\nhttps://cran.r-project.org/package=mathjaxr\n\nThe package provides MathJax and a handful of macros to enable its use within ",
+      "thread_id": "thread-b7fa801f9b95",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-d234bb6ec542",
+      "message_id": "<CAGxFJbSMF=+Xk6L0jBFRxEELJ1cLqUhmJJJJxM_sy5XnwxbcBg@mail.gmail.com>",
+      "from_name": "Bert Gunter",
+      "from_email_hash": "e06c8b0dadbc2737decb2b2e2cad765c22313a04fde395a45b7b4f4ea0f812b1",
+      "date": "2020-05-08T20:08:10-07:00",
+      "subject": "[R-pkgs] addScales package available on CRAN",
+      "subject_clean": "addScales package available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "addScales is a small package that modifies trellis objects created\nusing lattice graphics by adding horizontal and/or vertical reference\nlines that provide visual scaling information. This is mostly useful\nfor multi-panel plots that use the relation = 'free' option in their\n'scales' argument list. Examples show when and how this might aid data\nvisualization.\n\nPlease feel free to contact me with suggestions for improvement.\n\nBert Gunter",
+      "body_snippet": "addScales is a small package that modifies trellis objects created\nusing lattice graphics by adding horizontal and/or vertical reference\nlines that provide visual scaling information. This is mostly u",
+      "thread_id": "thread-d234bb6ec542",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-89b6dafc7811",
+      "message_id": "<10919E94-320E-43E7-9C78-1032E95915EA@gmail.com>",
+      "from_name": "Fernando A López Hernández",
+      "from_email_hash": "d34ed1b438efb0321cb99e3819c3073e12b1c43a6959089d83f8ca98dd4bd0fd",
+      "date": "2020-05-09T12:06:30+02:00",
+      "subject": "[R-pkgs] New version 'spsur' for the estimation of Spatial Seemingly Unrelated Regression",
+      "subject_clean": "New version 'spsur' for the estimation of Spatial Seemingly Unrelated Regression",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all\nI am pleased to announce that the R package ?spsur? for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/spsur/index.html <https://cran.r-project.org/web/packages/spsur/index.html>\nThis version of ?spsur? has been adapted to the standard arguments used in similar packages (spatialreg, spdep, splm, sphet) and include new functionalities.\n\nA new user guide is available on: https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html <https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html>\nI hope you find interest this package for you research or for your PhD students. \nFernando A. L?pez Hern?ndez\nfernando.lopez at upct.es <mailto:fernando.lopez at upct.es>\nhttp://metodos.upct.es/falopez/ <http://metodos.upct.es/falopez/>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all\nI am pleased to announce that the R package ?spsur? for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/sp",
+      "thread_id": "thread-89b6dafc7811",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-292208d5eca2",
+      "message_id": "<tencent_AD3EF6D19AD1105EA7024527EAC04696F206@qq.com>",
+      "from_name": "Ma Jian",
+      "from_email_hash": "13ef22f1d81950ad5124c153c647354755d76c62b7ba38de69624c34139ad3d9",
+      "date": "2020-05-13T10:22:05+08:00",
+      "subject": "[R-pkgs] copent: Estimating Copula Entropy",
+      "subject_clean": "copent: Estimating Copula Entropy",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\n\nI'm writing to you to introduce our new package, copent. This package estimates copula entropy, a new mathematical concept for multivariate statistical independence measure and testing [1].&nbsp; The estimating method is nonparametric and can be applied to any cases without making assumptions. The package has been used for \n&nbsp;* association discovery [2], in which copula entropy is an association measure shown to be better than correlation coeffients,\n&nbsp;* structure learning [3],\n&nbsp;* variable selection [4], and \n&nbsp;* causal discovery [5] by estimating transfer entropy.\n\n\nCRAN: https://cran.r-project.org/package=copent\nGITHUB: https://github.com/majianthu/copent/\n\n\nHope it helpful for you. Any comments and suggestions are welcome.\n\n\nBest Regards,\nMA Jian\n------\nReferences\n1. Ma Jian, Sun Zengqi. Mutual information is copula entropy. Tsinghua Science &amp; Technology, 2011, 16(1): 51-54. See also arXiv preprint, arXiv:0808.0845, 2008.\n2. Ma Jian. Discovering Association with Copula Entropy. arXiv preprint arXiv:1907.12268, 2019.\n3. Ma Jian, Sun Zengqi. Dependence Structure Estimation via Copula. arXiv preprint arXiv:0804.4451v2, 2019.\n\n4. Ma Jian. Variable Selection with Copula Entropy. arXiv preprint arXiv:1910.12389, 2019.\n5. Ma Jian. Estimating Transfer Entropy via Copula Entropy. arXiv preprint arXiv:1910.04375, 2019.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\n\nI'm writing to you to introduce our new package, copent. This package estimates copula entropy, a new mathematical concept for multivariate statistical independence measure and testing [1].&",
+      "thread_id": "thread-292208d5eca2",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-b02f6e04ef42",
+      "message_id": "<CAPxR1s4AkpjaxW7QkjrDi_ot2jUcvDbROokBavNVKWWfY=tJDQ@mail.gmail.com>",
+      "from_name": "Anurag Agrawal",
+      "from_email_hash": "816234068ebf1ab99f8655c3fff902aa70059abca39cd0d74bb544d8b0249c47",
+      "date": "2020-05-15T20:02:09+05:30",
+      "subject": "[R-pkgs] Package \"roptions\"",
+      "subject_clean": "Package \"roptions\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Thanks all,\nMy package \"roptions\" is now available on CRAN. My package contains a\ncollection of tools to develop options strategies, value option contracts\nusing the Black-Scholes-Merten option pricing model and calculate the\noption Greeks. For more information see Hull, John C. \"Options, Futures,\nand Other Derivatives\" (1997, ISBN:0-13-601589-1). Fischer Black, Myron\nScholes (1973) \"The Pricing of Options and Corporate Liabilities\"\n\n\nDownload using: install.packages(\"roptions\")\n\n\nhttps://cran.r-project.org/package=roptions\n\n\nRegards,\nAnurag Agrawal\nBachelor of Science in Finance,\nNarsee Monjee Institute of Management Studies.\n___________________________________________\nDisclaimer: The content of this message is confidential. If you have\nreceived it by mistake, please inform us by an email reply and then delete\nthe message. It is forbidden to copy, forward, or in any way reveal the\ncontents of this message to anyone. The integrity and security of this\nemail cannot be guaranteed over the Internet. Therefore, the sender will\nnot be held liable for any damage caused by the message.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Thanks all,\nMy package \"roptions\" is now available on CRAN. My package contains a\ncollection of tools to develop options strategies, value option contracts\nusing the Black-Scholes-Merten option pricin",
+      "thread_id": "thread-b02f6e04ef42",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-c50175544344",
+      "message_id": "<CAM3wmzgid+CBVNVje2PH7QXvGi5z+qgnj5K_qzTbcXqE+x5SWg@mail.gmail.com>",
+      "from_name": "Dylan Beijers",
+      "from_email_hash": "de33e691da4350bece9416df2f2d250b782235cc73d9901eeda76c38c8b27267",
+      "date": "2020-05-18T23:22:24+02:00",
+      "subject": "[R-pkgs] statespacer: State Space Modelling in 'R'",
+      "subject_clean": "statespacer: State Space Modelling in 'R'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nThe statespacer package is now on CRAN (\nhttps://cran.r-project.org/package=statespacer). This package provides\nfunctionality for modelling and forecasting time series using state space\ntechniques. For more info, please see\nhttps://dylanb95.github.io/statespacer/\n\nBest,\nDylan Beijers\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nThe statespacer package is now on CRAN (\nhttps://cran.r-project.org/package=statespacer). This package provides\nfunctionality for modelling and forecasting time series using state space\ntec",
+      "thread_id": "thread-c50175544344",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-52915bc79a1d",
+      "message_id": "<d7d12ea2-dbbb-22a9-9f78-d3aad0f05460@princeton.edu>",
+      "from_name": "Will Underwood",
+      "from_email_hash": "141e21946988e7f99f9bcec4f27dc79eb259a3dde5e0b929ab9d2533cf04beb3",
+      "date": "2020-05-21T15:13:17-05:00",
+      "subject": "[R-pkgs] motifcluster: Motif-Based Spectral Clustering of Weighted Directed Networks",
+      "subject_clean": "motifcluster: Motif-Based Spectral Clustering of Weighted Directed Networks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that the R package \"motifcluster\" is now \navailable on CRAN. This package provides tools for spectral clustering \nof weighted directed networks using motif adjacency matrices. Methods \nperform well on large and sparse networks, and random sampling methods \nfor generating weighted directed networks are also provided. Based on \nmethodology detailed in Underwood, Elliott and Cucuringu (2020) \n<arXiv:2004.01293>.\n\nFeel free to contact me with questions, and I hope you find this package \nto be of use.\n\nCRAN: https://cran.r-project.org/web/packages/motifcluster/index.html\nGitHub: https://github.com/WGUNDERWOOD/motifcluster\nIssues: https://github.com/WGUNDERWOOD/motifcluster/issues\nReference: https://arxiv.org/abs/2004.01293\n\nBest wishes,\n\nWilliam G. Underwood\nORFE Department\nPrinceton University\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am happy to announce that the R package \"motifcluster\" is now \navailable on CRAN. This package provides tools for spectral clustering \nof weighted directed networks using motif adjacency ",
+      "thread_id": "thread-52915bc79a1d",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-5cc9c94551e9",
+      "message_id": "<CADu7Xui2NUcCaRZuYMCfb842_=G6+_F-Z39dDHxKr33t6Xpbpw@mail.gmail.com>",
+      "from_name": "Jeff Enos",
+      "from_email_hash": "c4cd0dbcefbcbba20b51a6e2a2a9caa32a56471631ab7800b1e5a67e1b620890",
+      "date": "2020-05-27T19:14:08-04:00",
+      "subject": "[R-pkgs] strand: A Framework for Investment Strategy Simulation",
+      "subject_clean": "strand: A Framework for Investment Strategy Simulation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI'm pleased to announce that the 'strand' package is now available on CRAN.\n\nThe package provides a framework for performing discrete (share-level)\nsimulations of investment strategies. Simulated portfolios optimize\nexposure to an input signal subject to constraints such as position size,\nfactor and category exposure limits, and trading limits. Features include\nYAML-based configuration, realistic trade filling based on percentage of\nactual volume, and automatic loosening of exposure constraints if no\nsolution is found.\n\nCRAN: https://CRAN.R-project.org/package=strand\nGitHub: https://github.com/strand-tech/strand\n\nPlease let me know if you have any feedback or questions.\n\nBest,\nJeff Enos\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI'm pleased to announce that the 'strand' package is now available on CRAN.\n\nThe package provides a framework for performing discrete (share-level)\nsimulations of investment strategies. Simul",
+      "thread_id": "thread-5cc9c94551e9",
+      "thread_depth": 0,
+      "month": "2020-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-969a9b4e690b",
+      "subject": "squashinformr: Politely web scrape data from SquashInfo in R",
+      "message_count": 1,
+      "participants": [
+        "Hayden MacDonald"
+      ],
+      "started": "2020-05-04T08:03:22-04:00",
+      "last_reply": "2020-05-04T08:03:22-04:00",
+      "root_message_id": "msg-969a9b4e690b"
+    },
+    {
+      "id": "thread-7bcfa05558c7",
+      "subject": "multivariance: Measuring Multivariate Dependence Using Distance Multivariance",
+      "message_count": 1,
+      "participants": [
+        "Björn Böttcher"
+      ],
+      "started": "2020-05-04T11:04:06+02:00",
+      "last_reply": "2020-05-04T11:04:06+02:00",
+      "root_message_id": "msg-7bcfa05558c7"
+    },
+    {
+      "id": "thread-3af5883842a4",
+      "subject": "simplePHENOTYPES: SIMulation of Pleiotropic, Linked and Epistatic PHENOTYPES",
+      "message_count": 1,
+      "participants": [
+        "Bonfim Fernandes, Samuel"
+      ],
+      "started": "2020-05-07T15:32:14+00:00",
+      "last_reply": "2020-05-07T15:32:14+00:00",
+      "root_message_id": "msg-3af5883842a4"
+    },
+    {
+      "id": "thread-b7fa801f9b95",
+      "subject": "mathjaxr: Using 'Mathjax' in Rd Files",
+      "message_count": 1,
+      "participants": [
+        "Viechtbauer, Wolfgang (SP)"
+      ],
+      "started": "2020-05-08T18:30:12+00:00",
+      "last_reply": "2020-05-08T18:30:12+00:00",
+      "root_message_id": "msg-b7fa801f9b95"
+    },
+    {
+      "id": "thread-d234bb6ec542",
+      "subject": "addScales package available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bert Gunter"
+      ],
+      "started": "2020-05-08T20:08:10-07:00",
+      "last_reply": "2020-05-08T20:08:10-07:00",
+      "root_message_id": "msg-d234bb6ec542"
+    },
+    {
+      "id": "thread-89b6dafc7811",
+      "subject": "New version 'spsur' for the estimation of Spatial Seemingly Unrelated Regression",
+      "message_count": 1,
+      "participants": [
+        "Fernando A López Hernández"
+      ],
+      "started": "2020-05-09T12:06:30+02:00",
+      "last_reply": "2020-05-09T12:06:30+02:00",
+      "root_message_id": "msg-89b6dafc7811"
+    },
+    {
+      "id": "thread-292208d5eca2",
+      "subject": "copent: Estimating Copula Entropy",
+      "message_count": 1,
+      "participants": [
+        "Ma Jian"
+      ],
+      "started": "2020-05-13T10:22:05+08:00",
+      "last_reply": "2020-05-13T10:22:05+08:00",
+      "root_message_id": "msg-292208d5eca2"
+    },
+    {
+      "id": "thread-b02f6e04ef42",
+      "subject": "Package \"roptions\"",
+      "message_count": 1,
+      "participants": [
+        "Anurag Agrawal"
+      ],
+      "started": "2020-05-15T20:02:09+05:30",
+      "last_reply": "2020-05-15T20:02:09+05:30",
+      "root_message_id": "msg-b02f6e04ef42"
+    },
+    {
+      "id": "thread-c50175544344",
+      "subject": "statespacer: State Space Modelling in 'R'",
+      "message_count": 1,
+      "participants": [
+        "Dylan Beijers"
+      ],
+      "started": "2020-05-18T23:22:24+02:00",
+      "last_reply": "2020-05-18T23:22:24+02:00",
+      "root_message_id": "msg-c50175544344"
+    },
+    {
+      "id": "thread-52915bc79a1d",
+      "subject": "motifcluster: Motif-Based Spectral Clustering of Weighted Directed Networks",
+      "message_count": 1,
+      "participants": [
+        "Will Underwood"
+      ],
+      "started": "2020-05-21T15:13:17-05:00",
+      "last_reply": "2020-05-21T15:13:17-05:00",
+      "root_message_id": "msg-52915bc79a1d"
+    },
+    {
+      "id": "thread-5cc9c94551e9",
+      "subject": "strand: A Framework for Investment Strategy Simulation",
+      "message_count": 1,
+      "participants": [
+        "Jeff Enos"
+      ],
+      "started": "2020-05-27T19:14:08-04:00",
+      "last_reply": "2020-05-27T19:14:08-04:00",
+      "root_message_id": "msg-5cc9c94551e9"
+    }
+  ]
+}

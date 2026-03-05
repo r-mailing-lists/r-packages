@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-02",
+  "messages": [
+    {
+      "id": "msg-cf76a5467a7c",
+      "message_id": "<BLU170-W854EB2AA278231C5B0503AEF1C0@phx.gbl>",
+      "from_name": "Tyler Rinker",
+      "from_email_hash": "192c5a5c2cf714557361f22b3321228f178e2588db202a9d36282ce6a9620983",
+      "date": "2013-02-01T16:48:42-05:00",
+      "subject": "[R-pkgs] qdap 0.2.0 released",
+      "subject_clean": "qdap 0.2.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "qdap (Quantitative Discourse Analysis Package) is an R package designed to assist in quantitative discourse analysis. The package stands as a bridge between qualitative transcripts of dialogue and statistical analysis and visualization.\n\n\nThis is the first CRAN release of qdap:?http://cran.r-project.org/web/packages/qdap/index.html\n\n\nThe qdap package automates many of the tasks associated with quantitative discourse analysis of transcripts containing discourse including frequency counts of sentence types, words, sentence, turns of talk, syllable counts and other assorted analysis tasks. The package provides parsing tools for preparing transcript data. Many functions enable the user to aggregate data by any number of grouping variables providing analysis and seamless integration with other R packages that undertake higher level analysis and visualization of text. This provides the user with a more efficient and targeted analysis.\n\n\nGithub development version:?https://github.com/trinker/qdap\n\n\nAs qdap is further developed the following are planned: (a) a github hosted website via statics (b) a help video section and (c) a vignette detailing workflow and use of qdap.\n\n\nTyler Rinker",
+      "body_snippet": "qdap (Quantitative Discourse Analysis Package) is an R package designed to assist in quantitative discourse analysis. The package stands as a bridge between qualitative transcripts of dialogue and sta",
+      "thread_id": "thread-cf76a5467a7c",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-f26f560ed00e",
+      "message_id": "<5114E9F3.60402@itwm.fraunhofer.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "e1a5284edd05344af58462cd7612e9492ad67fdfa1603d275d5f8d319567262c",
+      "date": "2013-02-08T13:05:07+01:00",
+      "subject": "[R-pkgs] release 2.4 of distr-family of packages on CRAN",
+      "subject_clean": "release 2.4 of distr-family of packages on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions 2.4 of our distr-family of packages are submitted to\nCRAN and will soon be available on all mirrors\n\n(i.e.; startupmsg, SweaveListingUtils, distr, distrEx, distrDoc,\ndistrEllipse, distrMod, distrSim, distrTEst, distrTeach)\n\nIn addition, there is a new package distrRmetrics with distr support\nfor (some) distributions provided in the Rmetrics family of packages.\n\nFor more details see the corresponding NEWS files in the pkgs, e.g.\nnews(package = \"distr\") or NEWS(\"distr\") [the latter using fct NEWS\nfrom pkg startupmsg].\n\nWe are looking forward to getting your RFEs, bug reports\nor simple feedback,\n\nBest, Peter and coauthors (CC).",
+      "body_snippet": "New versions 2.4 of our distr-family of packages are submitted to\nCRAN and will soon be available on all mirrors\n\n(i.e.; startupmsg, SweaveListingUtils, distr, distrEx, distrDoc,\ndistrEllipse, distrMo",
+      "thread_id": "thread-f26f560ed00e",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-dd7dfe5924ba",
+      "message_id": "<74ECACE8-BD88-4727-B368-12D67926990C@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2013-02-10T10:53:26-08:00",
+      "subject": "[R-pkgs] glmnet_1.9-1 submitted to CRAN",
+      "subject_clean": "glmnet_1.9-1 submitted to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This new version of glmnet has some bug fixes, and some new features\n\n* new arguments lower.limits=-Inf  and upper.limits=Inf (defaults shown) for all the coefficients\nin glmnet. Users can provide limits on coefficients. See the documentation for glmnet.\nTypical usage:\nglmnet(x,y,lower=0)\n\nHere the argument is abbreviated, and by giving a single value, this uses the same value for all parameters.\nThis fits a positive lasso\n\n* new function glmnet.control() allows one to set internal parameters in glmnet, previously not under user control.\n These are for knowledgeable users. Once changed, the settings persist for the session. \nglmnet.control has a useful factory=TRUE argument, which will reset the \"factory\" defaults.\n\n* a memory bug in coxnet has been fixed. \n\nTrevor Hastie\n ----------------------------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231                 Fax: (650) 725-8977  \n  URL: http://www.stanford.edu/~hastie  \n   address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
+      "body_snippet": "This new version of glmnet has some bug fixes, and some new features\n\n* new arguments lower.limits=-Inf  and upper.limits=Inf (defaults shown) for all the coefficients\nin glmnet. Users can provide lim",
+      "thread_id": "thread-dd7dfe5924ba",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-83b8262dd536",
+      "message_id": "<DUB002-W144274D6BA95FAA9EC2577FC80C0@phx.gbl>",
+      "from_name": "Selçuk Korkmaz",
+      "from_email_hash": "995881611b3a7fde3395388b3f5786852aff764c9d76eaaca37ad69b248b823f",
+      "date": "2013-02-17T10:05:19Z",
+      "subject": "[R-pkgs]  Version 1.0 of MVN package on CRAN‏",
+      "subject_clean": "Version 1.0 of MVN package on CRAN‏",
+      "in_reply_to": "<DUB002-W74A6F5095D511C60AB5BDBC80E0@phx.gbl>",
+      "references": [
+        "<DUB002-W74A6F5095D511C60AB5BDBC80E0@phx.gbl>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130217/9da0a729/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130217/9da0a729/attachment.pl>",
+      "thread_id": "thread-83b8262dd536",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-e1a7e1a0ae6a",
+      "message_id": "<CANROs4fMmjmvj0JCUZ3LPYz26iDa1MvutcaOt1mdNBu_qE6LQg@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2013-02-19T02:18:15-06:00",
+      "subject": "[R-pkgs] knitr version 1.1",
+      "subject_clean": "knitr version 1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI released knitr 1.1 to CRAN a few days ago:\nhttp://cran.r-project.org/package=knitr See all new features and\nchanges at https://github.com/yihui/knitr/blob/master/NEWS.md#changes-in-knitr-version-11\n\nThe version 1.0 does not imply perfect stability or maturity. The\nmajor version number was bumped from 0.x to 1.x due to a number of\nimportant features and the breaking of compatibility with Sweave\n(http://yihui.name/knitr/demo/sweave/). A brief summary of recent\nfeatures:\n\n1. (please regard this one as \"experimental\") from R 3.0.0 we will be\nable to compile package vignettes with knitr, even including R\nMarkdown vignettes (http://yihui.name/knitr/demo/vignette/)\n2. the encoding argument in knit() allows one to specify the encoding\nof the source document, which may benefit international users (this\nhas also been supported in RStudio, and the next version of LyX will\nalso support encoding correctly)\n3. you can publish blog posts from R to WordPress using R Markdown and\nthe knit2wp() function\n(http://yihui.name/en/2013/02/publishing-from-r-knitr-to-wordpress/)\n4. Rcpp is supported in code chunks (see http://gallery.rcpp.org for\nan application), and more languages have been added (Perl, Bash,\nCoffeeScript, ... http://yihui.name/knitr/demo/engines/)\n5. A Shiny notebook was added as a demo (http://glimmer.rstudio.com/yihui/knitr)\n\nI thank the amazing R community; in particular, I thank all\ncontributors who sent me over 50 pull requests\n(https://github.com/yihui/knitr/contributors) and users who reported\nnearly 500 issues (https://github.com/yihui/knitr/issues), asked more\nthan 200 questions on StackOverflow\n(http://stackoverflow.com/questions/tagged/knitr) and made hundreds of\ncomments in the knitr website (http://yihui.name/knitr/). If you want\nto contribute or have any questions, please follow these links.\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "Hi,\n\nI released knitr 1.1 to CRAN a few days ago:\nhttp://cran.r-project.org/package=knitr See all new features and\nchanges at https://github.com/yihui/knitr/blob/master/NEWS.md#changes-in-knitr-versio",
+      "thread_id": "thread-e1a7e1a0ae6a",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-ad1969426a32",
+      "message_id": "<CAM2SgK5wPjKZ_0f5_jK16L92U_puV4pDLm4b-uverYSu9COOhg@mail.gmail.com>",
+      "from_name": "Bill Venables",
+      "from_email_hash": "a1611e5cfca09ba23cc84933c0ecdb12de98c3cfa888a9426be8ee967fbe4fc7",
+      "date": "2013-02-24T10:46:48+10:00",
+      "subject": "[R-pkgs] conf.design 2.0.0 has been submitted to CRAN",
+      "subject_clean": "conf.design 2.0.0 has been submitted to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/6cee087d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/6cee087d/attachment.pl>",
+      "thread_id": "thread-ad1969426a32",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-3db3c8c52ab2",
+      "message_id": "<CAM2SgK763hf5_x6aeq-KROtrd5fM6Gp8AD0fnTExoReuA+bGHw@mail.gmail.com>",
+      "from_name": "Bill Venables",
+      "from_email_hash": "a1611e5cfca09ba23cc84933c0ecdb12de98c3cfa888a9426be8ee967fbe4fc7",
+      "date": "2013-02-24T11:22:35+10:00",
+      "subject": "[R-pkgs] New package lazyData submitted to CRAN",
+      "subject_clean": "New package lazyData submitted to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/408c9763/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/408c9763/attachment.pl>",
+      "thread_id": "thread-3db3c8c52ab2",
+      "thread_depth": 0,
+      "month": "2013-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cf76a5467a7c",
+      "subject": "qdap 0.2.0 released",
+      "message_count": 1,
+      "participants": [
+        "Tyler Rinker"
+      ],
+      "started": "2013-02-01T16:48:42-05:00",
+      "last_reply": "2013-02-01T16:48:42-05:00",
+      "root_message_id": "msg-cf76a5467a7c"
+    },
+    {
+      "id": "thread-f26f560ed00e",
+      "subject": "release 2.4 of distr-family of packages on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2013-02-08T13:05:07+01:00",
+      "last_reply": "2013-02-08T13:05:07+01:00",
+      "root_message_id": "msg-f26f560ed00e"
+    },
+    {
+      "id": "thread-dd7dfe5924ba",
+      "subject": "glmnet_1.9-1 submitted to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2013-02-10T10:53:26-08:00",
+      "last_reply": "2013-02-10T10:53:26-08:00",
+      "root_message_id": "msg-dd7dfe5924ba"
+    },
+    {
+      "id": "thread-83b8262dd536",
+      "subject": "Version 1.0 of MVN package on CRAN‏",
+      "message_count": 1,
+      "participants": [
+        "Selçuk Korkmaz"
+      ],
+      "started": "2013-02-17T10:05:19+00:00",
+      "last_reply": "2013-02-17T10:05:19+00:00",
+      "root_message_id": "msg-83b8262dd536"
+    },
+    {
+      "id": "thread-e1a7e1a0ae6a",
+      "subject": "knitr version 1.1",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2013-02-19T02:18:15-06:00",
+      "last_reply": "2013-02-19T02:18:15-06:00",
+      "root_message_id": "msg-e1a7e1a0ae6a"
+    },
+    {
+      "id": "thread-ad1969426a32",
+      "subject": "conf.design 2.0.0 has been submitted to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bill Venables"
+      ],
+      "started": "2013-02-24T10:46:48+10:00",
+      "last_reply": "2013-02-24T10:46:48+10:00",
+      "root_message_id": "msg-ad1969426a32"
+    },
+    {
+      "id": "thread-3db3c8c52ab2",
+      "subject": "New package lazyData submitted to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bill Venables"
+      ],
+      "started": "2013-02-24T11:22:35+10:00",
+      "last_reply": "2013-02-24T11:22:35+10:00",
+      "root_message_id": "msg-3db3c8c52ab2"
+    }
+  ]
+}

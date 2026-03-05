@@ -1,0 +1,603 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2006-03",
+  "messages": [
+    {
+      "id": "msg-72a2b2fade52",
+      "message_id": "<440649FB.6010109@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2006-03-01T17:27:23-08:00",
+      "subject": "[R-pkgs] glmpath (new version 0.91)",
+      "subject_clean": "glmpath (new version 0.91)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060301/ab95ceea/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060301/ab95ceea/attachment.pl>",
+      "thread_id": "thread-72a2b2fade52",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-72a2b2fade52",
+      "message_id": "<440649FB.6010109@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2006-03-01T17:27:23-08:00",
+      "subject": "[R-pkgs] glmpath (new version 0.91)",
+      "subject_clean": "glmpath (new version 0.91)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060301/ab95ceea/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060301/ab95ceea/attachment-0001.pl>",
+      "thread_id": "thread-72a2b2fade52",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-9bab381a7358",
+      "message_id": "<17414.25456.301349.40942@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2006-03-01T21:16:00-06:00",
+      "subject": "[R-pkgs] New Quantian releases with almost all of CRAN / BioC",
+      "subject_clean": "New Quantian releases with almost all of CRAN / BioC",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "[ I hope this is not considered off-topic for the list: \n\n  A new Quantian release was just announced, and it contains even more R.\n  As before, we have R (now 2.2.1), ESS, Ggobi, Rpy, several BioInfo tools \n  -- but now we also have RSPerl, JGR, rJava and more.  A full sync to CRAN\n  and BioC as of Feb 25, 2006 now yields   dim(installed.packages())[1] \n  of 877.    Feedback welcome, but preferably on the quantian-general\n  lists (which requires subscriptions to keep the spammers out). \n\n  The original announcement is below. I also welcome careful forwarding\n  to other audiences or communities I may not reach.    \n\n  --  Thanks,  Dirk ]\n\n\n(Please see note [1] below regarding recipients for this posting. Thanks!)\n\n\nExecutive Summary: \n\n    Quantian 0.7.9.2 is the second Quantian release based on Knoppix 4.0.2.\n    Quantian adds hundreds of scientific / numeric packages, as well as the\n    an openMosix enabled 2.4.27 kernel, to the cdrom version of Knoppix. \n    Version 0.7.9.2 ships as one compressed iso file of 2.7gb that is\n    \n    Relative to the previous release 0.7.9.1, several small bugs have been \n    fixed, Sun's Java 1.5.0 SDK has been added along with several Java-based\n    applications (ImageJ, Weka, JGR, Mondrian), several other applications\n    have been added, yet more R packages from CRAN and BioC are included and\n    a few other packages have been updated.\n    \n    Quantian now contains over 2550 Debian packages, over 870 packages\n    for R and a few extra applications.\n\n    Quantian comes as one bootable dvd iso of 2.85 gb (compressed) with\n    over 7.6 gb (uncompressed) of software of interest to quantitative \n    analysists, scientists, researchers or students.\n\n\nAnnouncing Quantian release 0.7.9.2\n===================================\n\n\nI   What is it?\n\n    Quantian is a remastering of Knoppix, the self-configuring and directly\n    bootable cdrom/dvd that turns any pc or laptop into a full-featured Linux\n    workstation, and (parts of) clusterKnoppix, which adds support for\n    openMosix-based  cluster computing. However, Quantian differs from\n    Knoppix by having a particular focus on quantitative, numerical or \n    scientific applications, and hence adds a very large set of programs of\n    interest to applied or theoretical workers in quantitative or data-driven\n    fields to the solid base provided by Knoppix..  \n\n    See http://dirk.eddelbuettel.com/quantian.html for more details.\n\n    \nII What Quantian highlights should I care about ?\n\n    o Second release based on Knoppix 4.0.2: Derived from the cdrom version of\n      Knoppix, Quantian utilises the unionfs setup of Knoppix to combine two\n      compressed loop images for a total of 2.85 gb (from two files of 1.66 gb\n      and 1.19 gb) corresponding to over 7.6 gb of software.\n\n    o KDE 3.4/3.5, Kernel 2.6.12; added backport of kernel 2.4.27 with\n      openMosix patch for continued openMosix support including unionfs\n      support (that was missing in 0.7.9.1)\n\n    o Some highlights in 0.7.9.2 are\n\n      - Java support via the 'Java 1.5.0' SDK from Sun, installed via\n        the packages from www.debian-unofficial.org; this allowed us to\n\tadd ImageJ, Weka, Mondrian and JGR.\n      \n      - some other packages that were added: celestia, cervisia, gcj,\n        gnuhtml2latex, inkscape, octplot, oprofile, prospect, praat, rserve,\n\twxmaxima, xalan, (x)orsa as well as many library additions/upgrades\n\n      - even more complete R support with 877 packages (25 from 'core R',\n        another 76 from Debian packages, and 779 directly installed from CRAN\n        and BioConductor, covering over 99% of all packages at CRAN and\n        BioConductor [ not counting a handful of windows-only CRAN packages]\n        for complete coverage as of 25 Feb 2006), ESS editing in Emacs /\n        XEmacs, GGobi visualization, Rpad webinterface, the award winning JGR\n        'Java GUI for R', RSPerl, Rserve, an early release of the RKward GUI\n        and more.\n\n      - continued strong bioinformatics/biology support:\n        BioConductor, arb, biofox, bioperl, biopython, blast2, boxshade,\n        bugsx, clustalw, fastdnaml, fastlink, garlic, gromacs, hmmer, loki,\n        mipe, molphy, muscle, ncbi, phylip, rasmol, readseq, seaview,\n        t-coffee, textopo, ImageJ, and more;\n\n      - continued strong mathematics / computational algrebra support: axiom,\n        blacs, calc, euler, gap, giac, mathomatic, maxima, pari, scalapack,\n        scilab, texmacs, yacas, yorick;\n\n      - continued strong visualization / graphics support: dx, garlic, gdpc,\n        gnuplot, grace, grass, gri, illuminator, kst, labplot, mayavi,\n        matplot, proj, plplot, plotmtv, rasmol, starplot, vtk, xd3d, xgraph,\n        ygraph;  \n \n      - large number of programming and scripting languages, editors, \n        debuggers and libraries;\n\n      - excellent latex support with auctex, lyx, kile, texmacs interface,\n        as well as numerous macro packages, bibtex tools;\n\n      - office support via openoffice and koffice suites, abiword, gnumeric\n        and other applications;\n\n      - plus all the tools and toys from the current Knoppix relase.\n\n    o See http://dirk.eddelbuettel.com/quantian/changelog.html for details.\n\n    o See http://dirk.eddelbuettel.com/quantian/howto.html for several\n      short HOWTOs on booting Quantian from hd on either Windows or Linux,\n      booting via a bootcd (such as clusterKnoppix), or botting from a \n      USB memory device.  Contributions, corrections, and feedback on these\n      HOWTOs is always appreciated.\n\n\nIII Where do I get it?\n\n    o Downloads are available from the main host at Seattle at FHCRC:\n\n            http://quantian.fhcrc.org/\n\t    rsync://quantian.fhcrc.org/quantian/\n      \n      and at the East Coast at \n\n            http://research.warnes.net/downloads/quantian/CURRENT/\n\t    ftp://research.warnes.net/users/edd/quantian/CURRENT/\n\n      The most recent release is also available at\n\n            http://quantian.alioth.debian.org/\n\n      Note that file size of 2.75 gb may upset web caching system such\n      as squid. It may be prudent to rely on rsync or bittorrent instead\n      of http.\n\n    o Bittorrents should be available shortly at\n\n            http://www.tlm-project.org/public/distributions/quantian/\n\n    o The main European mirrors should catch up shortly:\n\n            http://sunsite.rediris.es/mirror/quantian\n\n            http://sunsite.informatik.rwth-aachen.de/ftp/pub/Linux/quantian\n\n    o CD/DVD vendors will probably update their offerings soon as well. \n      See the Quantian site for a list.\n\n\nIV  Mailing lists\n\n    o Two mailing lists exist for Quantian\n\n        quantian-announce\t  for announcements, intended to be low volume\n        quantian-general\t  for general discussions about Quantian\n\n      available via\n\n\thttp://alioth.debian.org/mail/?group_id=30303\n\n      for subscription info etc., and start using the quantian-general lists\n      for general questions, comments, suggestions or discussions about \n      Quantian.\n\n      Quantian-general is subscribed to quantian-announce, so you only need\n      to subscribe to one (but can of course subscribe to both).  Posting to\n      quantian-general requires a subscription. \n\n      Reply-To: for this message is quantian-general at lists.alioth.debian.org\n      so that discussions can be continued on the list.\n\n\nV   Bugs fixed from 0.7.9.1\n\n    o The missing default boot option for isolinux has been added, simply\n      pressing return at the boot prompt (or waiting) now yields kernel 2.6.\n\n    o Marco Caliari figured out how to add unionfs support to Kernel 2.4.27,\n      so we now have openMosix support with the full 7.5 gb of software!\n\n    o Progress from Debian's C++ transition allowed us to update many KDE\n      packages, including kdvi. KDE is in parts updates to release 3.5, some\n      applications are still from release 3.4. Several other applications\n      that were uninstallable in 0.7.9.1 because of C++ library conflicts\n      (celestia, gdal) are now included.\n     \n\nVI  Known Bugs in 0.7.9.2\n\n    o Only under kernel 2.4.27, kdesktop comes up with an error message\n      that needs to be acknowledged. Konsole then has a broken color schema.\n      Simply selecting a working schema, and manually running kdesktop fixes\n      this.\n\n    o No other issue as of 28 Feb 2006. Please report anything you notice\n      to the quantian-general mailing list.\n\n\nVII Other items\n\n    o Feedback / poll on package additions or removal\n\n      As always, I welcome comments and suggestions about programs to be\n      added or removed. Existing Debian packages, and possibly existing\n      rpm packages, typically get inserted quite readily.\n\n      Please send feedback, questions, comments, ... to the \n      \n\tquantian-general at lists.alioth.debian.org\n\n      list to maximise the number of eyes glancing at any one question.\n      Notice that a subscription to the list is needed in order to post.\n\n    o Feedback would also be appreciated on ways to better communicate with\n      difference scientific communities that could be interested in Quantian.\n\n\nVIII Notes\n\n    [1] This email is sent via the quantian-announce mailing list. I have\n        subscribed those whose email addresses are in my quantian mail folder \n        due to prior emails. The quantian-announce mailing list only sends\n        moderator-approved posts -- so there should be no spam whatsoever. \n        Anybody who considers this unwanted is kindly asked to send me\n        a private mail to get unsubscribed immediately.\n\n\nBest regards,  Dirk\n\n\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
+      "body_snippet": "[ I hope this is not considered off-topic for the list: \n\n  A new Quantian release was just announced, and it contains even more R.\n  As before, we have R (now 2.2.1), ESS, Ggobi, Rpy, several BioInfo",
+      "thread_id": "thread-9bab381a7358",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-9bab381a7358",
+      "message_id": "<17414.25456.301349.40942@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2006-03-01T21:16:00-06:00",
+      "subject": "[R-pkgs] New Quantian releases with almost all of CRAN / BioC",
+      "subject_clean": "New Quantian releases with almost all of CRAN / BioC",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "[ I hope this is not considered off-topic for the list: \n\n  A new Quantian release was just announced, and it contains even more R.\n  As before, we have R (now 2.2.1), ESS, Ggobi, Rpy, several BioInfo tools \n  -- but now we also have RSPerl, JGR, rJava and more.  A full sync to CRAN\n  and BioC as of Feb 25, 2006 now yields   dim(installed.packages())[1] \n  of 877.    Feedback welcome, but preferably on the quantian-general\n  lists (which requires subscriptions to keep the spammers out). \n\n  The original announcement is below. I also welcome careful forwarding\n  to other audiences or communities I may not reach.    \n\n  --  Thanks,  Dirk ]\n\n\n(Please see note [1] below regarding recipients for this posting. Thanks!)\n\n\nExecutive Summary: \n\n    Quantian 0.7.9.2 is the second Quantian release based on Knoppix 4.0.2.\n    Quantian adds hundreds of scientific / numeric packages, as well as the\n    an openMosix enabled 2.4.27 kernel, to the cdrom version of Knoppix. \n    Version 0.7.9.2 ships as one compressed iso file of 2.7gb that is\n    \n    Relative to the previous release 0.7.9.1, several small bugs have been \n    fixed, Sun's Java 1.5.0 SDK has been added along with several Java-based\n    applications (ImageJ, Weka, JGR, Mondrian), several other applications\n    have been added, yet more R packages from CRAN and BioC are included and\n    a few other packages have been updated.\n    \n    Quantian now contains over 2550 Debian packages, over 870 packages\n    for R and a few extra applications.\n\n    Quantian comes as one bootable dvd iso of 2.85 gb (compressed) with\n    over 7.6 gb (uncompressed) of software of interest to quantitative \n    analysists, scientists, researchers or students.\n\n\nAnnouncing Quantian release 0.7.9.2\n===================================\n\n\nI   What is it?\n\n    Quantian is a remastering of Knoppix, the self-configuring and directly\n    bootable cdrom/dvd that turns any pc or laptop into a full-featured Linux\n    workstation, and (parts of) clusterKnoppix, which adds support for\n    openMosix-based  cluster computing. However, Quantian differs from\n    Knoppix by having a particular focus on quantitative, numerical or \n    scientific applications, and hence adds a very large set of programs of\n    interest to applied or theoretical workers in quantitative or data-driven\n    fields to the solid base provided by Knoppix..  \n\n    See http://dirk.eddelbuettel.com/quantian.html for more details.\n\n    \nII What Quantian highlights should I care about ?\n\n    o Second release based on Knoppix 4.0.2: Derived from the cdrom version of\n      Knoppix, Quantian utilises the unionfs setup of Knoppix to combine two\n      compressed loop images for a total of 2.85 gb (from two files of 1.66 gb\n      and 1.19 gb) corresponding to over 7.6 gb of software.\n\n    o KDE 3.4/3.5, Kernel 2.6.12; added backport of kernel 2.4.27 with\n      openMosix patch for continued openMosix support including unionfs\n      support (that was missing in 0.7.9.1)\n\n    o Some highlights in 0.7.9.2 are\n\n      - Java support via the 'Java 1.5.0' SDK from Sun, installed via\n        the packages from www.debian-unofficial.org; this allowed us to\n\tadd ImageJ, Weka, Mondrian and JGR.\n      \n      - some other packages that were added: celestia, cervisia, gcj,\n        gnuhtml2latex, inkscape, octplot, oprofile, prospect, praat, rserve,\n\twxmaxima, xalan, (x)orsa as well as many library additions/upgrades\n\n      - even more complete R support with 877 packages (25 from 'core R',\n        another 76 from Debian packages, and 779 directly installed from CRAN\n        and BioConductor, covering over 99% of all packages at CRAN and\n        BioConductor [ not counting a handful of windows-only CRAN packages]\n        for complete coverage as of 25 Feb 2006), ESS editing in Emacs /\n        XEmacs, GGobi visualization, Rpad webinterface, the award winning JGR\n        'Java GUI for R', RSPerl, Rserve, an early release of the RKward GUI\n        and more.\n\n      - continued strong bioinformatics/biology support:\n        BioConductor, arb, biofox, bioperl, biopython, blast2, boxshade,\n        bugsx, clustalw, fastdnaml, fastlink, garlic, gromacs, hmmer, loki,\n        mipe, molphy, muscle, ncbi, phylip, rasmol, readseq, seaview,\n        t-coffee, textopo, ImageJ, and more;\n\n      - continued strong mathematics / computational algrebra support: axiom,\n        blacs, calc, euler, gap, giac, mathomatic, maxima, pari, scalapack,\n        scilab, texmacs, yacas, yorick;\n\n      - continued strong visualization / graphics support: dx, garlic, gdpc,\n        gnuplot, grace, grass, gri, illuminator, kst, labplot, mayavi,\n        matplot, proj, plplot, plotmtv, rasmol, starplot, vtk, xd3d, xgraph,\n        ygraph;  \n \n      - large number of programming and scripting languages, editors, \n        debuggers and libraries;\n\n      - excellent latex support with auctex, lyx, kile, texmacs interface,\n        as well as numerous macro packages, bibtex tools;\n\n      - office support via openoffice and koffice suites, abiword, gnumeric\n        and other applications;\n\n      - plus all the tools and toys from the current Knoppix relase.\n\n    o See http://dirk.eddelbuettel.com/quantian/changelog.html for details.\n\n    o See http://dirk.eddelbuettel.com/quantian/howto.html for several\n      short HOWTOs on booting Quantian from hd on either Windows or Linux,\n      booting via a bootcd (such as clusterKnoppix), or botting from a \n      USB memory device.  Contributions, corrections, and feedback on these\n      HOWTOs is always appreciated.\n\n\nIII Where do I get it?\n\n    o Downloads are available from the main host at Seattle at FHCRC:\n\n            http://quantian.fhcrc.org/\n\t    rsync://quantian.fhcrc.org/quantian/\n      \n      and at the East Coast at \n\n            http://research.warnes.net/downloads/quantian/CURRENT/\n\t    ftp://research.warnes.net/users/edd/quantian/CURRENT/\n\n      The most recent release is also available at\n\n            http://quantian.alioth.debian.org/\n\n      Note that file size of 2.75 gb may upset web caching system such\n      as squid. It may be prudent to rely on rsync or bittorrent instead\n      of http.\n\n    o Bittorrents should be available shortly at\n\n            http://www.tlm-project.org/public/distributions/quantian/\n\n    o The main European mirrors should catch up shortly:\n\n            http://sunsite.rediris.es/mirror/quantian\n\n            http://sunsite.informatik.rwth-aachen.de/ftp/pub/Linux/quantian\n\n    o CD/DVD vendors will probably update their offerings soon as well. \n      See the Quantian site for a list.\n\n\nIV  Mailing lists\n\n    o Two mailing lists exist for Quantian\n\n        quantian-announce\t  for announcements, intended to be low volume\n        quantian-general\t  for general discussions about Quantian\n\n      available via\n\n\thttp://alioth.debian.org/mail/?group_id=30303\n\n      for subscription info etc., and start using the quantian-general lists\n      for general questions, comments, suggestions or discussions about \n      Quantian.\n\n      Quantian-general is subscribed to quantian-announce, so you only need\n      to subscribe to one (but can of course subscribe to both).  Posting to\n      quantian-general requires a subscription. \n\n      Reply-To: for this message is quantian-general at lists.alioth.debian.org\n      so that discussions can be continued on the list.\n\n\nV   Bugs fixed from 0.7.9.1\n\n    o The missing default boot option for isolinux has been added, simply\n      pressing return at the boot prompt (or waiting) now yields kernel 2.6.\n\n    o Marco Caliari figured out how to add unionfs support to Kernel 2.4.27,\n      so we now have openMosix support with the full 7.5 gb of software!\n\n    o Progress from Debian's C++ transition allowed us to update many KDE\n      packages, including kdvi. KDE is in parts updates to release 3.5, some\n      applications are still from release 3.4. Several other applications\n      that were uninstallable in 0.7.9.1 because of C++ library conflicts\n      (celestia, gdal) are now included.\n     \n\nVI  Known Bugs in 0.7.9.2\n\n    o Only under kernel 2.4.27, kdesktop comes up with an error message\n      that needs to be acknowledged. Konsole then has a broken color schema.\n      Simply selecting a working schema, and manually running kdesktop fixes\n      this.\n\n    o No other issue as of 28 Feb 2006. Please report anything you notice\n      to the quantian-general mailing list.\n\n\nVII Other items\n\n    o Feedback / poll on package additions or removal\n\n      As always, I welcome comments and suggestions about programs to be\n      added or removed. Existing Debian packages, and possibly existing\n      rpm packages, typically get inserted quite readily.\n\n      Please send feedback, questions, comments, ... to the \n      \n\tquantian-general at lists.alioth.debian.org\n\n      list to maximise the number of eyes glancing at any one question.\n      Notice that a subscription to the list is needed in order to post.\n\n    o Feedback would also be appreciated on ways to better communicate with\n      difference scientific communities that could be interested in Quantian.\n\n\nVIII Notes\n\n    [1] This email is sent via the quantian-announce mailing list. I have\n        subscribed those whose email addresses are in my quantian mail folder \n        due to prior emails. The quantian-announce mailing list only sends\n        moderator-approved posts -- so there should be no spam whatsoever. \n        Anybody who considers this unwanted is kindly asked to send me\n        a private mail to get unsubscribed immediately.\n\n\nBest regards,  Dirk\n\n\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
+      "body_snippet": "[ I hope this is not considered off-topic for the list: \n\n  A new Quantian release was just announced, and it contains even more R.\n  As before, we have R (now 2.2.1), ESS, Ggobi, Rpy, several BioInfo",
+      "thread_id": "thread-9bab381a7358",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-abd7b5e69a78",
+      "message_id": "<17420.32154.96149.92683@gargle.gargle.HOWL>",
+      "from_name": "Jeff Enos",
+      "from_email_hash": "6371495f4c250755c717111961b2399fec4c002541d2ade6ab2c9ec45e6c0d39",
+      "date": "2006-03-06T13:21:14-05:00",
+      "subject": "[R-pkgs] New package 'portfolio'",
+      "subject_clean": "New package 'portfolio'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability of the 'portfolio' package\nin R for analysing equity portfolios.  Version 0.2-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"portfolio\")\n...\n> vignette(\"portfolio\")\n\nand play around. Those who would just like to check out an\nintroduction can simply look at:\n\nhttp://www.kanecap.com/R/portfolio/portfolio.pdf\n\nThis is the first, very rough version of a package that we hope to\nbuild and extend over the coming months. Our ambitions for this\nproject are not small. Hundreds of professionals around the world use\nR for portfolio analysis but, right now, we all use our own individual\ntools for doing so. That seems a shame.\n\nOf course, one reason for the lack of cooperation is that finance is\nlargely a zero sum game. Every dollar that we make is a dollar that\nsomeone else loses. But, at least when it comes to analysis tools\n(rather than alpha generation). This conflict does not seem\ninsurmountable. We will see.\n\nSo, consider this e-mail a call for comment and cooperation. Are there\nothers out there who would be interested in using this package? Are\nthere others willing to contribute, if only in terms of bug fixes,\ntest cases, documentation and the like? Please let us know and, in\nfact, let the whole list know.\n\nBy releasing a rough version of the package, we are especially\ninterested in recruiting other developers to the project. None of our\ndesign decisions are set in stone. Serious offers to contribute will\nearn a significant say in future development.\n\nDave Kane\nJeff Enos",
+      "body_snippet": "We would like to announce the availability of the 'portfolio' package\nin R for analysing equity portfolios.  Version 0.2-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"port",
+      "thread_id": "thread-abd7b5e69a78",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-abd7b5e69a78",
+      "message_id": "<17420.32154.96149.92683@gargle.gargle.HOWL>",
+      "from_name": "Jeff Enos",
+      "from_email_hash": "6371495f4c250755c717111961b2399fec4c002541d2ade6ab2c9ec45e6c0d39",
+      "date": "2006-03-06T13:21:14-05:00",
+      "subject": "[R-pkgs] New package 'portfolio'",
+      "subject_clean": "New package 'portfolio'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability of the 'portfolio' package\nin R for analysing equity portfolios.  Version 0.2-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"portfolio\")\n...\n> vignette(\"portfolio\")\n\nand play around. Those who would just like to check out an\nintroduction can simply look at:\n\nhttp://www.kanecap.com/R/portfolio/portfolio.pdf\n\nThis is the first, very rough version of a package that we hope to\nbuild and extend over the coming months. Our ambitions for this\nproject are not small. Hundreds of professionals around the world use\nR for portfolio analysis but, right now, we all use our own individual\ntools for doing so. That seems a shame.\n\nOf course, one reason for the lack of cooperation is that finance is\nlargely a zero sum game. Every dollar that we make is a dollar that\nsomeone else loses. But, at least when it comes to analysis tools\n(rather than alpha generation). This conflict does not seem\ninsurmountable. We will see.\n\nSo, consider this e-mail a call for comment and cooperation. Are there\nothers out there who would be interested in using this package? Are\nthere others willing to contribute, if only in terms of bug fixes,\ntest cases, documentation and the like? Please let us know and, in\nfact, let the whole list know.\n\nBy releasing a rough version of the package, we are especially\ninterested in recruiting other developers to the project. None of our\ndesign decisions are set in stone. Serious offers to contribute will\nearn a significant say in future development.\n\nDave Kane\nJeff Enos",
+      "body_snippet": "We would like to announce the availability of the 'portfolio' package\nin R for analysing equity portfolios.  Version 0.2-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"port",
+      "thread_id": "thread-abd7b5e69a78",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-74a61944139b",
+      "message_id": "<440EE4CB.2080407@upc.edu>",
+      "from_name": "Jan Graffelman",
+      "from_email_hash": "2b79b556fd4e4ce02607cbc53b2a555c073ca59f0750b9880f1b2d13cf1f7eb3",
+      "date": "2006-03-08T15:06:03+01:00",
+      "subject": "[R-pkgs] New package for calibration of biplot axes.",
+      "subject_clean": "New package for calibration of biplot axes.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI recently uploaded a package called \"calibrate\" to CRAN. This\npackage contains routines for the calibration of (oblique) axes\nin biplots and scatter plots. Documentation provides examples\nfor ordinary scatter plots with additional axes, biplots from\nprincipal component analysis, correspondence analysis,\ncanonical correlation analysis and redundancy analysis.\n\nJan Graffelman\n\n-- \n------------------------------------------------------------------------\n|Jan Graffelman                          |tel:   +34-93-4011739        |\n|Dpt. of Statistics & Operations Research|fax:   +34-93-4016575        |\n|Universitat Politecnica de Catalunya    |email: jan.graffelman at upc.edu|\n|Av. Diagonal 647, 6th floor             |                             |\n|08028 Barcelona, Spain                  |                             |",
+      "body_snippet": "Hi,\n\nI recently uploaded a package called \"calibrate\" to CRAN. This\npackage contains routines for the calibration of (oblique) axes\nin biplots and scatter plots. Documentation provides examples\nfor or",
+      "thread_id": "thread-74a61944139b",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-74a61944139b",
+      "message_id": "<440EE4CB.2080407@upc.edu>",
+      "from_name": "Jan Graffelman",
+      "from_email_hash": "2b79b556fd4e4ce02607cbc53b2a555c073ca59f0750b9880f1b2d13cf1f7eb3",
+      "date": "2006-03-08T15:06:03+01:00",
+      "subject": "[R-pkgs] New package for calibration of biplot axes.",
+      "subject_clean": "New package for calibration of biplot axes.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI recently uploaded a package called \"calibrate\" to CRAN. This\npackage contains routines for the calibration of (oblique) axes\nin biplots and scatter plots. Documentation provides examples\nfor ordinary scatter plots with additional axes, biplots from\nprincipal component analysis, correspondence analysis,\ncanonical correlation analysis and redundancy analysis.\n\nJan Graffelman\n\n-- \n------------------------------------------------------------------------\n|Jan Graffelman                          |tel:   +34-93-4011739        |\n|Dpt. of Statistics & Operations Research|fax:   +34-93-4016575        |\n|Universitat Politecnica de Catalunya    |email: jan.graffelman at upc.edu|\n|Av. Diagonal 647, 6th floor             |                             |\n|08028 Barcelona, Spain                  |                             |",
+      "body_snippet": "Hi,\n\nI recently uploaded a package called \"calibrate\" to CRAN. This\npackage contains routines for the calibration of (oblique) axes\nin biplots and scatter plots. Documentation provides examples\nfor or",
+      "thread_id": "thread-74a61944139b",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-32550db8f494",
+      "message_id": "<001301c64465$05439a60$8d00a8c0@theo>",
+      "from_name": "Teodor Krastev",
+      "from_email_hash": "aec5f617b5fbf197093ed133876e8379ecaf1d2f28cc75d2f5771159deaa4e0f",
+      "date": "2006-03-10T09:06:48-08:00",
+      "subject": "[R-pkgs]  Spectrino 1.5 update",
+      "subject_clean": "Spectrino 1.5 update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\na new release (v1.5) of Spectrino package is on CRAN.\n\nFor those of you not familiar with Spectrino:\nSpectrino is a spectra preparation utility for R. It has specialized \norganization and visualization features for spectra. Spectrino has visual \ninterface - as Windows application with rich set of features to set a \nstructure and manipulate visually spectra and it is accessible from R as a \nlibrary with a set of commands for saving and selective extraction of \nspectral data.\n\nmore info at http://www.spectrino.com\n\nFor all Spectrino users:\nThe new in version 1.5:\n  - minor bugs fixed.\n  - some visual interface improvements.\n  - now, the pre-processing options are adjustable from within R - function \nspnPPOpt(opts)\n  - the mean extraction is based on a specific group (not on the entire \nset) - more appropriate for discriminant analysis.\n\nEnjoy the new Spectrino !\n\nTeodor Krastev\n--SpecLabs",
+      "body_snippet": "Dear R users,\n\na new release (v1.5) of Spectrino package is on CRAN.\n\nFor those of you not familiar with Spectrino:\nSpectrino is a spectra preparation utility for R. It has specialized \norganization a",
+      "thread_id": "thread-32550db8f494",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-32550db8f494",
+      "message_id": "<001301c64465$05439a60$8d00a8c0@theo>",
+      "from_name": "Teodor Krastev",
+      "from_email_hash": "aec5f617b5fbf197093ed133876e8379ecaf1d2f28cc75d2f5771159deaa4e0f",
+      "date": "2006-03-10T09:06:48-08:00",
+      "subject": "[R-pkgs]  Spectrino 1.5 update",
+      "subject_clean": "Spectrino 1.5 update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\na new release (v1.5) of Spectrino package is on CRAN.\n\nFor those of you not familiar with Spectrino:\nSpectrino is a spectra preparation utility for R. It has specialized \norganization and visualization features for spectra. Spectrino has visual \ninterface - as Windows application with rich set of features to set a \nstructure and manipulate visually spectra and it is accessible from R as a \nlibrary with a set of commands for saving and selective extraction of \nspectral data.\n\nmore info at http://www.spectrino.com\n\nFor all Spectrino users:\nThe new in version 1.5:\n  - minor bugs fixed.\n  - some visual interface improvements.\n  - now, the pre-processing options are adjustable from within R - function \nspnPPOpt(opts)\n  - the mean extraction is based on a specific group (not on the entire \nset) - more appropriate for discriminant analysis.\n\nEnjoy the new Spectrino !\n\nTeodor Krastev\n--SpecLabs",
+      "body_snippet": "Dear R users,\n\na new release (v1.5) of Spectrino package is on CRAN.\n\nFor those of you not familiar with Spectrino:\nSpectrino is a spectra preparation utility for R. It has specialized \norganization a",
+      "thread_id": "thread-32550db8f494",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-7910a21cb105",
+      "message_id": "<20060312195513.GA14923@sfu.ca>",
+      "from_name": "Sigal Blay",
+      "from_email_hash": "4ecf5c103cd4994edeeda757e107364d8c2e086628bd9431fabd0ca8f1caa31f",
+      "date": "2006-03-12T11:55:13-08:00",
+      "subject": "[R-pkgs] New version of the LDheatmap package",
+      "subject_clean": "New version of the LDheatmap package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.2 of the package LDheatmap is now on CRAN. The main function \nLDheatmap produces a graphical display, as a heat map, of measures of \npairwise linkage disequilibria between SNPs. Users may optionally \ninclude the physical locations or genetic map distances of each SNP on \nthe plot.\n\nThe revisions to the package are aimed at improving the user's ability \nto modify and annotate the heatmap. Most notably, LDheatmap is now based \non grid graphics. Examples of how to modify the plot using tools from \nthe grid package are included in the LDheatmap help file.\n\nSigal Blay",
+      "body_snippet": "Version 0.2 of the package LDheatmap is now on CRAN. The main function \nLDheatmap produces a graphical display, as a heat map, of measures of \npairwise linkage disequilibria between SNPs. Users may op",
+      "thread_id": "thread-7910a21cb105",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-7910a21cb105",
+      "message_id": "<20060312195513.GA14923@sfu.ca>",
+      "from_name": "Sigal Blay",
+      "from_email_hash": "4ecf5c103cd4994edeeda757e107364d8c2e086628bd9431fabd0ca8f1caa31f",
+      "date": "2006-03-12T11:55:13-08:00",
+      "subject": "[R-pkgs] New version of the LDheatmap package",
+      "subject_clean": "New version of the LDheatmap package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.2 of the package LDheatmap is now on CRAN. The main function \nLDheatmap produces a graphical display, as a heat map, of measures of \npairwise linkage disequilibria between SNPs. Users may optionally \ninclude the physical locations or genetic map distances of each SNP on \nthe plot.\n\nThe revisions to the package are aimed at improving the user's ability \nto modify and annotate the heatmap. Most notably, LDheatmap is now based \non grid graphics. Examples of how to modify the plot using tools from \nthe grid package are included in the LDheatmap help file.\n\nSigal Blay",
+      "body_snippet": "Version 0.2 of the package LDheatmap is now on CRAN. The main function \nLDheatmap produces a graphical display, as a heat map, of measures of \npairwise linkage disequilibria between SNPs. Users may op",
+      "thread_id": "thread-7910a21cb105",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-d384982e252f",
+      "message_id": "<033f01c646c5$33488490$0540210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
+      "date": "2006-03-13T18:40:20+01:00",
+      "subject": "[R-pkgs] package ltm -- version 0.4-0",
+      "subject_clean": "package ltm -- version 0.4-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the new version of package 'ltm' for Item \nResponse Theory analysis. The function grm() (along with supporting \nmethods, i.e., anova, margins, factor.scores, etc.) has been added for \nfitting the Graded Response Model for ordinal polytomous manifest \nvariables. An extra feature of the plot method for classes 'grm', \n'ltm' and 'rasch' is the possibility to plot Item or Test Information \nCurves. You may find a more detailed description of the new features \nof the package in the CHANGES file.\n\nFuture plans include development of functions for the three-parameter \nlogistic model.\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://www.med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the new version of package 'ltm' for Item \nResponse Theory analysis. The function grm() (along with supporting \nmethods, i.e., anova, margins, factor.scores, etc.) ",
+      "thread_id": "thread-d384982e252f",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-d384982e252f",
+      "message_id": "<033f01c646c5$33488490$0540210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
+      "date": "2006-03-13T18:40:20+01:00",
+      "subject": "[R-pkgs] package ltm -- version 0.4-0",
+      "subject_clean": "package ltm -- version 0.4-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the new version of package 'ltm' for Item \nResponse Theory analysis. The function grm() (along with supporting \nmethods, i.e., anova, margins, factor.scores, etc.) has been added for \nfitting the Graded Response Model for ordinal polytomous manifest \nvariables. An extra feature of the plot method for classes 'grm', \n'ltm' and 'rasch' is the possibility to plot Item or Test Information \nCurves. You may find a more detailed description of the new features \nof the package in the CHANGES file.\n\nFuture plans include development of functions for the three-parameter \nlogistic model.\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://www.med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the new version of package 'ltm' for Item \nResponse Theory analysis. The function grm() (along with supporting \nmethods, i.e., anova, margins, factor.scores, etc.) ",
+      "thread_id": "thread-d384982e252f",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-f33e383037bd",
+      "message_id": "<200603210816.00299.ahenningsen@agric-econ.uni-kiel.de>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "6fcce20179f6a327dc7017fc6d55daf14dffb6de4f5e971123133a5428048485",
+      "date": "2006-03-21T08:16:00+01:00",
+      "subject": "[R-pkgs] New version of 'systemfit'",
+      "subject_clean": "New version of 'systemfit'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe authors of the systemfit package have released a new version of this \npackage with substantial enhancements. \nThe systemfit package contains functions for fitting simultaneous systems of \nlinear equations using Ordinary Least Squares (OLS), Weighted Least Squares \n(WLS), Seemingly Unrelated Regressions (SUR), Two-Stage Least Squares (2SLS), \nWeighted Two-Stage Least Squares (W2SLS), and Three-Stage Least Squares \n(3SLS). \nThe new enhancements include the ability to test linear restrictions using an \nF, Wald or likelihood-ratio test and the ability to test model specification \nusing the Hausman test. The major enhancements include better estimation \nusing large data sets as well as many minor improvements, e.g. the ability to \ndefine how the residual covariance matrix and degrees of freedom are \ncomputed. The new version includes a wrapper function systemfitClassic that \ncan be applied to (classical) panel-like data in long format. Furthermore, \nversion 0.8-0 includes additional documentation \n(inst/doc/vignette_systemfit.pdf).\n\nJeff D. Hamann\nArne Henningsen\n\n\n-- \nJeff D. Hamann\nForest Informatics, Inc.\nPO Box 1421\nCorvallis, Oregon 97339-1421\nphone 541-754-1428\njeff.hamann at forestinformatics.com\nwww.forestinformatics.com\n\nand\n\nArne Henningsen\nDepartment of Agricultural Economics\nUniversity of Kiel\nOlshausenstr. 40\nD-24098 Kiel (Germany)\nTel: +49-431-880 4445\nFax: +49-431-880 1397\nahenningsen at agric-econ.uni-kiel.de\nhttp://www.uni-kiel.de/agrarpol/ahenningsen/",
+      "body_snippet": "Dear R users,\n\nThe authors of the systemfit package have released a new version of this \npackage with substantial enhancements. \nThe systemfit package contains functions for fitting simultaneous syste",
+      "thread_id": "thread-f33e383037bd",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-f33e383037bd",
+      "message_id": "<200603210816.00299.ahenningsen@agric-econ.uni-kiel.de>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "6fcce20179f6a327dc7017fc6d55daf14dffb6de4f5e971123133a5428048485",
+      "date": "2006-03-21T08:16:00+01:00",
+      "subject": "[R-pkgs] New version of 'systemfit'",
+      "subject_clean": "New version of 'systemfit'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe authors of the systemfit package have released a new version of this \npackage with substantial enhancements. \nThe systemfit package contains functions for fitting simultaneous systems of \nlinear equations using Ordinary Least Squares (OLS), Weighted Least Squares \n(WLS), Seemingly Unrelated Regressions (SUR), Two-Stage Least Squares (2SLS), \nWeighted Two-Stage Least Squares (W2SLS), and Three-Stage Least Squares \n(3SLS). \nThe new enhancements include the ability to test linear restrictions using an \nF, Wald or likelihood-ratio test and the ability to test model specification \nusing the Hausman test. The major enhancements include better estimation \nusing large data sets as well as many minor improvements, e.g. the ability to \ndefine how the residual covariance matrix and degrees of freedom are \ncomputed. The new version includes a wrapper function systemfitClassic that \ncan be applied to (classical) panel-like data in long format. Furthermore, \nversion 0.8-0 includes additional documentation \n(inst/doc/vignette_systemfit.pdf).\n\nJeff D. Hamann\nArne Henningsen\n\n\n-- \nJeff D. Hamann\nForest Informatics, Inc.\nPO Box 1421\nCorvallis, Oregon 97339-1421\nphone 541-754-1428\njeff.hamann at forestinformatics.com\nwww.forestinformatics.com\n\nand\n\nArne Henningsen\nDepartment of Agricultural Economics\nUniversity of Kiel\nOlshausenstr. 40\nD-24098 Kiel (Germany)\nTel: +49-431-880 4445\nFax: +49-431-880 1397\nahenningsen at agric-econ.uni-kiel.de\nhttp://www.uni-kiel.de/agrarpol/ahenningsen/",
+      "body_snippet": "Dear R users,\n\nThe authors of the systemfit package have released a new version of this \npackage with substantial enhancements. \nThe systemfit package contains functions for fitting simultaneous syste",
+      "thread_id": "thread-f33e383037bd",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-a78165416dd8",
+      "message_id": "<971536df0603280506u7bb23e48he527d21b2ae8e144@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2006-03-28T08:06:59-05:00",
+      "subject": "[R-pkgs] New package gsubfn",
+      "subject_clean": "New package gsubfn",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gsubfn is a package with one function, gsubfn, that\nis like gsub except instead of taking a replacement\nstring it takes a replacement function.  For each\nmatch, that match is passed to the replacement\nfunction along with the backreferences, if any,\nand replaced with the output of the function.\nIf the first two arguments are omitted the defaults\nare set to do perl-style (sort of) string interpolation\nas in last example.\n\ngsubfn is available for all platforms via CRAN.\n\n# makes all letters except first in word lower case\n# output: \"I Like A Banana Split\"\ngsubfn(\"\\\\B.\", tolower, \"I LIKE A BANANA SPLIT\")\n\n# adds 1 to each number in third arg\n# output: \"(11 21)(101 31)\"\ngsubfn(\"[[:digit:]]+\", function(x) as.numeric(x)+1, \"(10 20)(100 30)\")\n\n# replaces pairs m:n with their sum\n# first argument of f is the match; 2nd & 3rd are the 2 backreferences\n# output: \"abc 30 def 70 50\"\nf <- function(x,y,z) as.numeric(y)+as.numeric(z)\ngsubfn(\"([0-9]+):([0-9]+)\", f, \"abc 10:20 def 30:40 50\")\n\n# extracts numbers from string and places them into vector v\n# v becomes: 12 34 56 89 12\nv <- c(); f <- function(x) v <<- append(v,as.numeric(x))\njunk <- gsubfn(\"[0-9]+\", f, \"12;34:56,89,,12\")\nv\n\n# string interpolation (perl-style, somewhat)\n# output: pi = 3.14159265358979, 2pi = 6.28318530717959\ncat(gsubfn( , , \"pi = $pi, 2pi = `2*pi`\\n\"))",
+      "body_snippet": "gsubfn is a package with one function, gsubfn, that\nis like gsub except instead of taking a replacement\nstring it takes a replacement function.  For each\nmatch, that match is passed to the replacement",
+      "thread_id": "thread-a78165416dd8",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-a78165416dd8",
+      "message_id": "<971536df0603280506u7bb23e48he527d21b2ae8e144@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2006-03-28T08:06:59-05:00",
+      "subject": "[R-pkgs] New package gsubfn",
+      "subject_clean": "New package gsubfn",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gsubfn is a package with one function, gsubfn, that\nis like gsub except instead of taking a replacement\nstring it takes a replacement function.  For each\nmatch, that match is passed to the replacement\nfunction along with the backreferences, if any,\nand replaced with the output of the function.\nIf the first two arguments are omitted the defaults\nare set to do perl-style (sort of) string interpolation\nas in last example.\n\ngsubfn is available for all platforms via CRAN.\n\n# makes all letters except first in word lower case\n# output: \"I Like A Banana Split\"\ngsubfn(\"\\\\B.\", tolower, \"I LIKE A BANANA SPLIT\")\n\n# adds 1 to each number in third arg\n# output: \"(11 21)(101 31)\"\ngsubfn(\"[[:digit:]]+\", function(x) as.numeric(x)+1, \"(10 20)(100 30)\")\n\n# replaces pairs m:n with their sum\n# first argument of f is the match; 2nd & 3rd are the 2 backreferences\n# output: \"abc 30 def 70 50\"\nf <- function(x,y,z) as.numeric(y)+as.numeric(z)\ngsubfn(\"([0-9]+):([0-9]+)\", f, \"abc 10:20 def 30:40 50\")\n\n# extracts numbers from string and places them into vector v\n# v becomes: 12 34 56 89 12\nv <- c(); f <- function(x) v <<- append(v,as.numeric(x))\njunk <- gsubfn(\"[0-9]+\", f, \"12;34:56,89,,12\")\nv\n\n# string interpolation (perl-style, somewhat)\n# output: pi = 3.14159265358979, 2pi = 6.28318530717959\ncat(gsubfn( , , \"pi = $pi, 2pi = `2*pi`\\n\"))",
+      "body_snippet": "gsubfn is a package with one function, gsubfn, that\nis like gsub except instead of taking a replacement\nstring it takes a replacement function.  For each\nmatch, that match is passed to the replacement",
+      "thread_id": "thread-a78165416dd8",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-0fec78d43174",
+      "message_id": "<EC6501D4A6BB5442B583E3FABC9D131F0644899C@exchange.ad.acadiau.ca>",
+      "from_name": "Hugh Chipman",
+      "from_email_hash": "528f583f98fe417c6763bf9f627fee9144229242a53bc2e4d8c69f1b1b048157",
+      "date": "2006-03-28T12:17:44-04:00",
+      "subject": "[R-pkgs] hybridHclust (new package)",
+      "subject_clean": "hybridHclust (new package)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of a new library for hybrid\nhierarchical clustering, \"hybridHclust\".  The library has been uploaded\nto CRAN and is now available.\n\nThe library implements a hybrid of top-down and bottom-up hierarchical\nclustering.  Along the way, the idea of a \"mutual cluster\" is developed.\nA mutual cluster is a set of observations whose largest within-group\ndistance is smaller than the distance to the closest point outside the\nset.  The hybrid method is a top-down approach that preserves such\nmutual clusters.\n\nMutual clusters are useful in their own right, and have the interesting\nproperty that they cannot be \"broken\" by many bottom-up methods.  Tools\nthat graphically integrate mutual clusters into bottom-up methods are\nalso included in the library.\n\nLastly, an implementation of Michael Eisen's bottom-up clustering\nalgorithm is also in the library.\n\nA paper, soon to appear in Biostatistics, describes this work:\n\nChipman, H., and Tibshirani, R. \"Hybrid Hierarchical Clustering with\nApplications to Microarray Data\", available at\nhttp://ace.acadiau.ca/math/chipmanh/papers/chipman-tibshirani-2003-modif\nied.pdf\n\nThere's an online tutorial at\nhttp://ace.acadiau.ca/math/chipmanh/hybridHclust/index.html \n\nHugh Chipman and Robert Tibshirani\n\n-- Hugh Chipman\n-- Associate Professor and Canada Research Chair in Mathematical\nModelling\n-- Department of Mathematics and Statistics, Acadia University\n-- Wolfville, Nova Scotia, Canada B4P 2R6\n-- (902) 585-1525, Fax: (902) 585-1074\n-- http://ace.acadiau.ca/math/chipmanh/homepage.htm",
+      "body_snippet": "I'd like to announce the availability of a new library for hybrid\nhierarchical clustering, \"hybridHclust\".  The library has been uploaded\nto CRAN and is now available.\n\nThe library implements a hybrid",
+      "thread_id": "thread-0fec78d43174",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-0fec78d43174",
+      "message_id": "<EC6501D4A6BB5442B583E3FABC9D131F0644899C@exchange.ad.acadiau.ca>",
+      "from_name": "Hugh Chipman",
+      "from_email_hash": "528f583f98fe417c6763bf9f627fee9144229242a53bc2e4d8c69f1b1b048157",
+      "date": "2006-03-28T12:17:44-04:00",
+      "subject": "[R-pkgs] hybridHclust (new package)",
+      "subject_clean": "hybridHclust (new package)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of a new library for hybrid\nhierarchical clustering, \"hybridHclust\".  The library has been uploaded\nto CRAN and is now available.\n\nThe library implements a hybrid of top-down and bottom-up hierarchical\nclustering.  Along the way, the idea of a \"mutual cluster\" is developed.\nA mutual cluster is a set of observations whose largest within-group\ndistance is smaller than the distance to the closest point outside the\nset.  The hybrid method is a top-down approach that preserves such\nmutual clusters.\n\nMutual clusters are useful in their own right, and have the interesting\nproperty that they cannot be \"broken\" by many bottom-up methods.  Tools\nthat graphically integrate mutual clusters into bottom-up methods are\nalso included in the library.\n\nLastly, an implementation of Michael Eisen's bottom-up clustering\nalgorithm is also in the library.\n\nA paper, soon to appear in Biostatistics, describes this work:\n\nChipman, H., and Tibshirani, R. \"Hybrid Hierarchical Clustering with\nApplications to Microarray Data\", available at\nhttp://ace.acadiau.ca/math/chipmanh/papers/chipman-tibshirani-2003-modif\nied.pdf\n\nThere's an online tutorial at\nhttp://ace.acadiau.ca/math/chipmanh/hybridHclust/index.html \n\nHugh Chipman and Robert Tibshirani\n\n-- Hugh Chipman\n-- Associate Professor and Canada Research Chair in Mathematical\nModelling\n-- Department of Mathematics and Statistics, Acadia University\n-- Wolfville, Nova Scotia, Canada B4P 2R6\n-- (902) 585-1525, Fax: (902) 585-1074\n-- http://ace.acadiau.ca/math/chipmanh/homepage.htm",
+      "body_snippet": "I'd like to announce the availability of a new library for hybrid\nhierarchical clustering, \"hybridHclust\".  The library has been uploaded\nto CRAN and is now available.\n\nThe library implements a hybrid",
+      "thread_id": "thread-0fec78d43174",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-5ffad4d2c5b5",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBB30E39C@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Gregory Snow",
+      "from_email_hash": "e432b243d0660ee238e83f8aa2714b750d4574c97597be8ee6eb021bf26ebc5c",
+      "date": "2006-03-30T11:27:55-07:00",
+      "subject": "[R-pkgs] New Package blockrand",
+      "subject_clean": "New Package blockrand",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package blockrand is now available on CRAN.\n\nThis package aids in doing block randomizations for clinical trials or\nother situations where subjects or experimental units arrive over time\nand need to be randomized one at a time.  The block randomization keeps\nthe number of subjects in each arm of the trial fairly balanced.\n\nThe package also includes a plot function that creates a pdf file of\nrandomization cards that can be put in envelopes and given to a study\ncoordinator for the actual assignment to treatment as subjects are\nenrolled.\n\nComments, suggestions, and contributions are welcome and appreciated.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at intermountainmail.org\n(801) 408-8111",
+      "body_snippet": "The package blockrand is now available on CRAN.\n\nThis package aids in doing block randomizations for clinical trials or\nother situations where subjects or experimental units arrive over time\nand need ",
+      "thread_id": "thread-5ffad4d2c5b5",
+      "thread_depth": 0,
+      "month": "2006-03"
+    },
+    {
+      "id": "msg-5ffad4d2c5b5",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBB30E39C@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Gregory Snow",
+      "from_email_hash": "e432b243d0660ee238e83f8aa2714b750d4574c97597be8ee6eb021bf26ebc5c",
+      "date": "2006-03-30T11:27:55-07:00",
+      "subject": "[R-pkgs] New Package blockrand",
+      "subject_clean": "New Package blockrand",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package blockrand is now available on CRAN.\n\nThis package aids in doing block randomizations for clinical trials or\nother situations where subjects or experimental units arrive over time\nand need to be randomized one at a time.  The block randomization keeps\nthe number of subjects in each arm of the trial fairly balanced.\n\nThe package also includes a plot function that creates a pdf file of\nrandomization cards that can be put in envelopes and given to a study\ncoordinator for the actual assignment to treatment as subjects are\nenrolled.\n\nComments, suggestions, and contributions are welcome and appreciated.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at intermountainmail.org\n(801) 408-8111",
+      "body_snippet": "The package blockrand is now available on CRAN.\n\nThis package aids in doing block randomizations for clinical trials or\nother situations where subjects or experimental units arrive over time\nand need ",
+      "thread_id": "thread-5ffad4d2c5b5",
+      "thread_depth": 0,
+      "month": "2006-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-72a2b2fade52",
+      "subject": "glmpath (new version 0.91)",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2006-03-01T17:27:23-08:00",
+      "last_reply": "2006-03-01T17:27:23-08:00",
+      "root_message_id": "msg-72a2b2fade52"
+    },
+    {
+      "id": "thread-72a2b2fade52",
+      "subject": "glmpath (new version 0.91)",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2006-03-01T17:27:23-08:00",
+      "last_reply": "2006-03-01T17:27:23-08:00",
+      "root_message_id": "msg-72a2b2fade52"
+    },
+    {
+      "id": "thread-9bab381a7358",
+      "subject": "New Quantian releases with almost all of CRAN / BioC",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2006-03-01T21:16:00-06:00",
+      "last_reply": "2006-03-01T21:16:00-06:00",
+      "root_message_id": "msg-9bab381a7358"
+    },
+    {
+      "id": "thread-9bab381a7358",
+      "subject": "New Quantian releases with almost all of CRAN / BioC",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2006-03-01T21:16:00-06:00",
+      "last_reply": "2006-03-01T21:16:00-06:00",
+      "root_message_id": "msg-9bab381a7358"
+    },
+    {
+      "id": "thread-abd7b5e69a78",
+      "subject": "New package 'portfolio'",
+      "message_count": 1,
+      "participants": [
+        "Jeff Enos"
+      ],
+      "started": "2006-03-06T13:21:14-05:00",
+      "last_reply": "2006-03-06T13:21:14-05:00",
+      "root_message_id": "msg-abd7b5e69a78"
+    },
+    {
+      "id": "thread-abd7b5e69a78",
+      "subject": "New package 'portfolio'",
+      "message_count": 1,
+      "participants": [
+        "Jeff Enos"
+      ],
+      "started": "2006-03-06T13:21:14-05:00",
+      "last_reply": "2006-03-06T13:21:14-05:00",
+      "root_message_id": "msg-abd7b5e69a78"
+    },
+    {
+      "id": "thread-74a61944139b",
+      "subject": "New package for calibration of biplot axes.",
+      "message_count": 1,
+      "participants": [
+        "Jan Graffelman"
+      ],
+      "started": "2006-03-08T15:06:03+01:00",
+      "last_reply": "2006-03-08T15:06:03+01:00",
+      "root_message_id": "msg-74a61944139b"
+    },
+    {
+      "id": "thread-74a61944139b",
+      "subject": "New package for calibration of biplot axes.",
+      "message_count": 1,
+      "participants": [
+        "Jan Graffelman"
+      ],
+      "started": "2006-03-08T15:06:03+01:00",
+      "last_reply": "2006-03-08T15:06:03+01:00",
+      "root_message_id": "msg-74a61944139b"
+    },
+    {
+      "id": "thread-32550db8f494",
+      "subject": "Spectrino 1.5 update",
+      "message_count": 1,
+      "participants": [
+        "Teodor Krastev"
+      ],
+      "started": "2006-03-10T09:06:48-08:00",
+      "last_reply": "2006-03-10T09:06:48-08:00",
+      "root_message_id": "msg-32550db8f494"
+    },
+    {
+      "id": "thread-32550db8f494",
+      "subject": "Spectrino 1.5 update",
+      "message_count": 1,
+      "participants": [
+        "Teodor Krastev"
+      ],
+      "started": "2006-03-10T09:06:48-08:00",
+      "last_reply": "2006-03-10T09:06:48-08:00",
+      "root_message_id": "msg-32550db8f494"
+    },
+    {
+      "id": "thread-7910a21cb105",
+      "subject": "New version of the LDheatmap package",
+      "message_count": 1,
+      "participants": [
+        "Sigal Blay"
+      ],
+      "started": "2006-03-12T11:55:13-08:00",
+      "last_reply": "2006-03-12T11:55:13-08:00",
+      "root_message_id": "msg-7910a21cb105"
+    },
+    {
+      "id": "thread-7910a21cb105",
+      "subject": "New version of the LDheatmap package",
+      "message_count": 1,
+      "participants": [
+        "Sigal Blay"
+      ],
+      "started": "2006-03-12T11:55:13-08:00",
+      "last_reply": "2006-03-12T11:55:13-08:00",
+      "root_message_id": "msg-7910a21cb105"
+    },
+    {
+      "id": "thread-d384982e252f",
+      "subject": "package ltm -- version 0.4-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2006-03-13T18:40:20+01:00",
+      "last_reply": "2006-03-13T18:40:20+01:00",
+      "root_message_id": "msg-d384982e252f"
+    },
+    {
+      "id": "thread-d384982e252f",
+      "subject": "package ltm -- version 0.4-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2006-03-13T18:40:20+01:00",
+      "last_reply": "2006-03-13T18:40:20+01:00",
+      "root_message_id": "msg-d384982e252f"
+    },
+    {
+      "id": "thread-f33e383037bd",
+      "subject": "New version of 'systemfit'",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2006-03-21T08:16:00+01:00",
+      "last_reply": "2006-03-21T08:16:00+01:00",
+      "root_message_id": "msg-f33e383037bd"
+    },
+    {
+      "id": "thread-f33e383037bd",
+      "subject": "New version of 'systemfit'",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2006-03-21T08:16:00+01:00",
+      "last_reply": "2006-03-21T08:16:00+01:00",
+      "root_message_id": "msg-f33e383037bd"
+    },
+    {
+      "id": "thread-a78165416dd8",
+      "subject": "New package gsubfn",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2006-03-28T08:06:59-05:00",
+      "last_reply": "2006-03-28T08:06:59-05:00",
+      "root_message_id": "msg-a78165416dd8"
+    },
+    {
+      "id": "thread-a78165416dd8",
+      "subject": "New package gsubfn",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2006-03-28T08:06:59-05:00",
+      "last_reply": "2006-03-28T08:06:59-05:00",
+      "root_message_id": "msg-a78165416dd8"
+    },
+    {
+      "id": "thread-0fec78d43174",
+      "subject": "hybridHclust (new package)",
+      "message_count": 1,
+      "participants": [
+        "Hugh Chipman"
+      ],
+      "started": "2006-03-28T12:17:44-04:00",
+      "last_reply": "2006-03-28T12:17:44-04:00",
+      "root_message_id": "msg-0fec78d43174"
+    },
+    {
+      "id": "thread-0fec78d43174",
+      "subject": "hybridHclust (new package)",
+      "message_count": 1,
+      "participants": [
+        "Hugh Chipman"
+      ],
+      "started": "2006-03-28T12:17:44-04:00",
+      "last_reply": "2006-03-28T12:17:44-04:00",
+      "root_message_id": "msg-0fec78d43174"
+    },
+    {
+      "id": "thread-5ffad4d2c5b5",
+      "subject": "New Package blockrand",
+      "message_count": 1,
+      "participants": [
+        "Gregory Snow"
+      ],
+      "started": "2006-03-30T11:27:55-07:00",
+      "last_reply": "2006-03-30T11:27:55-07:00",
+      "root_message_id": "msg-5ffad4d2c5b5"
+    },
+    {
+      "id": "thread-5ffad4d2c5b5",
+      "subject": "New Package blockrand",
+      "message_count": 1,
+      "participants": [
+        "Gregory Snow"
+      ],
+      "started": "2006-03-30T11:27:55-07:00",
+      "last_reply": "2006-03-30T11:27:55-07:00",
+      "root_message_id": "msg-5ffad4d2c5b5"
+    }
+  ]
+}

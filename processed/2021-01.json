@@ -1,0 +1,147 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-01",
+  "messages": [
+    {
+      "id": "msg-9e23cdc20bf2",
+      "message_id": "<5ccc8b828aba487bb2fe02293acf27a3@tu-berlin.de>",
+      "from_name": "Hensel, Tim-Gunnar",
+      "from_email_hash": "d425cf5ca0a69c6a915ef2933489b3b2da8967bd9406de72bd6675cc9f25f2eb",
+      "date": "2021-01-13T08:59:35Z",
+      "subject": "[R-pkgs] weibulltools version 2.0.0 released on CRAN",
+      "subject_clean": "weibulltools version 2.0.0 released on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all, \n\nwe are happy to announce that a new version of weibulltools is available on CRAN. \nhttps://CRAN.R-project.org/package=weibulltools  \n\nweibulltools is a package that focuses on statistical methods and visualizations that are often used in reliability engineering. \nThe core idea is to provide a compact and easily accessible set of methods and visualization tools that make the examination and \nadjustment as well as the analysis and interpretation of field and bench test data as simple as possible. \n\nCompared to previous releases (<= 1.0.1), the new version (2.0.0) includes a data-based interface through which the obtained function outputs \ncan be easily passed into subsequent methods and visualizations. \nFurthermore, all visualizations that were generated dynamically with 'plotly', can now also be created statically with the support of 'ggplot2'. \n\nThe previously used vector-based approach has been largely preserved but is no longer recommended.\n\nExamples for the usage of the new interface, the documentation of all functions, as well as further changes can be found at \nhttps://tim-tu.github.io/weibulltools/\n\nIf you notice a bug or have suggestions for improvements, please submit an issue with a minimal reproducible example at \nhttps://github.com/Tim-TU/weibulltools/issues/\n\nBest regards, \nTim-Gunnar Hensel and David Barkemeyer",
+      "body_snippet": "Dear all, \n\nwe are happy to announce that a new version of weibulltools is available on CRAN. \nhttps://CRAN.R-project.org/package=weibulltools  \n\nweibulltools is a package that focuses on statistical ",
+      "thread_id": "thread-9e23cdc20bf2",
+      "thread_depth": 0,
+      "month": "2021-01"
+    },
+    {
+      "id": "msg-27400349e770",
+      "message_id": "<490700049.7377939.1610538864402.JavaMail.zimbra@istat.it>",
+      "from_name": "Andrea Fasulo",
+      "from_email_hash": "1effc454e30b23d0543992f3d7bfc77298a18f97de8a308d86967d4624a54f4d",
+      "date": "2021-01-13T12:54:24+01:00",
+      "subject": "[R-pkgs] R2BEAT 1.0.2",
+      "subject_clean": "R2BEAT 1.0.2",
+      "in_reply_to": "<229720362.7377386.1610538781693.JavaMail.zimbra@istat.it>",
+      "references": [
+        "<625278381.7227906.1610527875843.JavaMail.zimbra@istat.it>",
+        "<229720362.7377386.1610538781693.JavaMail.zimbra@istat.it>"
+      ],
+      "body_plain": "Dear R users, \nR2BEAT 1.0.2 is now available on CRAN. \nThis package covers the two-stage stratified sample design,\noffering functions for determining the optimal allocation of both Primary and Secondary stage units,\nand for the selection of PSUs with pps, in such a way that the  final sample of SSU is almost self-weighting.\n\nFull documentation and vignettes on: [ https://urlsand.esvalabs.com/?u=https%3A%2F%2Fbarcaroli.github.io%2FR2BEAT%2F&e=3cfb7ead&h=8644c130&f=y&p=y | https://barcaroli.github.io/R2BEAT/ ] \nHope this can be useful, \nRegards \nAndrea Fasulo \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users, \nR2BEAT 1.0.2 is now available on CRAN. \nThis package covers the two-stage stratified sample design,\noffering functions for determining the optimal allocation of both Primary and Seconda",
+      "thread_id": "thread-27400349e770",
+      "thread_depth": 0,
+      "month": "2021-01"
+    },
+    {
+      "id": "msg-0022b8c3267c",
+      "message_id": "<e324992b-0dcb-5868-c252-beea44e7be21@p-roocks.de>",
+      "from_name": "Patrick Roocks",
+      "from_email_hash": "3da19de69ed1d29809d194513678c54e13e0049011242335baae28e55fe5561d",
+      "date": "2021-01-15T19:07:15+01:00",
+      "subject": "[R-pkgs] listcompr: list comprehension for R",
+      "subject_clean": "listcompr: list comprehension for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce the first version of listcompr which is on CRAN \nnow. listcompr is a \"syntactic sugar\" approach to generate lists, \nvectors and data frames with list comprehension.\n\nSome examples are shown on the readme page on the github repository: \nhttps://github.com/patrickroocks/listcompr\n\nI hope this is useful for some of you.\n\nAll the best,\n\nPatrick",
+      "body_snippet": "Dear R users,\n\nI am happy to announce the first version of listcompr which is on CRAN \nnow. listcompr is a \"syntactic sugar\" approach to generate lists, \nvectors and data frames with list comprehensio",
+      "thread_id": "thread-0022b8c3267c",
+      "thread_depth": 0,
+      "month": "2021-01"
+    },
+    {
+      "id": "msg-d320be6b96e7",
+      "message_id": "<4D51D79E-F197-4D31-A4B7-6396F1B2DD00@illinois.edu>",
+      "from_name": "Bonfim Fernandes, Samuel",
+      "from_email_hash": "630de235531b2c639dd927929a07b61ffcc556207cc1e8f7520d47db022006f7",
+      "date": "2021-01-20T17:18:00Z",
+      "subject": "[R-pkgs] simplePHENOTYPES v1.3.0",
+      "subject_clean": "simplePHENOTYPES v1.3.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nI hope this message finds you well.\n\nWe have released simplePHENOTYPES v1.3.0.  Our package simulates single and multiple (correlated) traits in a wide range of scenarios, including additive, dominance, and epistatic (AxA, AxAxA, ...) models.\n\nSome of the new features include:\n- The option to specify what markers will be used as QTNs\n- Implemented the parameter \"ld_max\" and ?ld_min? for simulating spurious pleiotropy\n- Implemented the option for simulating more than two-way epistatic interactions\n- Included the parameter 'mean', so traits can be simulated with the desired mean (intercept) value.\n\nPlease check it our here:\nhttps://cran.r-project.org/package=simplePHENOTYPES\nVignettes for the most common scenarios one would want to simulate may be found here:\nhttps://cran.r-project.org/web/packages/simplePHENOTYPES/vignettes/simplePHENOTYPES.html\n\nBest regards,\nSamuel Fernandes\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi All,\n\nI hope this message finds you well.\n\nWe have released simplePHENOTYPES v1.3.0.  Our package simulates single and multiple (correlated) traits in a wide range of scenarios, including additive,",
+      "thread_id": "thread-d320be6b96e7",
+      "thread_depth": 0,
+      "month": "2021-01"
+    },
+    {
+      "id": "msg-c4091e470900",
+      "message_id": "<14DF4068-DD33-406D-A06D-3A56E37911A1@pm.me>",
+      "from_name": "Protonmail",
+      "from_email_hash": "4fcd82aaae95a5863f099b650743e302d595e613dd111f8fc560a95a8d8f402f",
+      "date": "2021-01-29T13:33:59Z",
+      "subject": "[R-pkgs] sensobol 1.0.0. (variance-based sensitivity analysis)",
+      "subject_clean": "sensobol 1.0.0. (variance-based sensitivity analysis)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "sensobol: an R package to compute variance-based sensitivity indices\n\nSensobol 1.0.0 is already in CRAN, and a detailed vignette can be found in CRAN and in arXiv: https://arxiv.org/abs/2101.10103\n\nIt allows to rapidly compute, bootstrap and plot up to third-order Sobol'-based sensitivity indices using several state-of-the-art first and total-order estimators. Sobol' indices can be computed either for models that yield a scalar as a model output or for systems of differential equations. The package also provides a suit of benchmark tests functions and several options to obtain publication-ready figures of the model output uncertainty and sensitivity-related analysis.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "sensobol: an R package to compute variance-based sensitivity indices\n\nSensobol 1.0.0 is already in CRAN, and a detailed vignette can be found in CRAN and in arXiv: https://arxiv.org/abs/2101.10103\n\nIt",
+      "thread_id": "thread-c4091e470900",
+      "thread_depth": 0,
+      "month": "2021-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9e23cdc20bf2",
+      "subject": "weibulltools version 2.0.0 released on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Hensel, Tim-Gunnar"
+      ],
+      "started": "2021-01-13T08:59:35+00:00",
+      "last_reply": "2021-01-13T08:59:35+00:00",
+      "root_message_id": "msg-9e23cdc20bf2"
+    },
+    {
+      "id": "thread-27400349e770",
+      "subject": "R2BEAT 1.0.2",
+      "message_count": 1,
+      "participants": [
+        "Andrea Fasulo"
+      ],
+      "started": "2021-01-13T12:54:24+01:00",
+      "last_reply": "2021-01-13T12:54:24+01:00",
+      "root_message_id": "msg-27400349e770"
+    },
+    {
+      "id": "thread-0022b8c3267c",
+      "subject": "listcompr: list comprehension for R",
+      "message_count": 1,
+      "participants": [
+        "Patrick Roocks"
+      ],
+      "started": "2021-01-15T19:07:15+01:00",
+      "last_reply": "2021-01-15T19:07:15+01:00",
+      "root_message_id": "msg-0022b8c3267c"
+    },
+    {
+      "id": "thread-d320be6b96e7",
+      "subject": "simplePHENOTYPES v1.3.0",
+      "message_count": 1,
+      "participants": [
+        "Bonfim Fernandes, Samuel"
+      ],
+      "started": "2021-01-20T17:18:00+00:00",
+      "last_reply": "2021-01-20T17:18:00+00:00",
+      "root_message_id": "msg-d320be6b96e7"
+    },
+    {
+      "id": "thread-c4091e470900",
+      "subject": "sensobol 1.0.0. (variance-based sensitivity analysis)",
+      "message_count": 1,
+      "participants": [
+        "Protonmail"
+      ],
+      "started": "2021-01-29T13:33:59+00:00",
+      "last_reply": "2021-01-29T13:33:59+00:00",
+      "root_message_id": "msg-c4091e470900"
+    }
+  ]
+}

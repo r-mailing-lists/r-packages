@@ -1,0 +1,146 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-09",
+  "messages": [
+    {
+      "id": "msg-6c8b2aef8bfe",
+      "message_id": "<5e149577-d9b8-7eb4-0fa8-f1bb7edcb6b7@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2016-09-06T13:54:20-04:00",
+      "subject": "[R-pkgs] statquotes package released to CRAN",
+      "subject_clean": "statquotes package released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "## statquotes package released to CRAN\n\nThe statquotes package v. 0.2 has recently been released to CRAN.  In a spirit\nsimilar to fortunes and gaussfacts, the function `statquote()`\ndisplays a randomly chosen quotation from a data base consisting\nof quotes about topics related to statistics, data visualization and science.\n\nThe data base is a collection of quotations assembled over the years from various\nsources. The quotes are classified by general topics (and subtopics).\n\n### Examples\n\n> set.seed(761)\n> statquote()\nThe best thing about being a statistician is that you get to play in everyone's backyard.\n--- John W. Tukey\n> statquote(topic=\"science\")\nSome people weave burlap into the fabric of our lives, and some weave gold thread. Both contribute\nto make the whole picture beautiful and unique.\n--- Anon.\n\n### Development\n\nThe package is hosted on Github, at https://github.com/friendly/statquotes/.\nPlease report any problems or bugs at https://github.com/friendly/statquotes/issues.\n\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept. & Chair, Quantitative Methods\nYork University      Voice: 416 736-2100 x66249 Fax: 416 736-5814\n4700 Keele Street    Web:http://www.datavis.ca\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "## statquotes package released to CRAN\n\nThe statquotes package v. 0.2 has recently been released to CRAN.  In a spirit\nsimilar to fortunes and gaussfacts, the function `statquote()`\ndisplays a randoml",
+      "thread_id": "thread-6c8b2aef8bfe",
+      "thread_depth": 0,
+      "month": "2016-09"
+    },
+    {
+      "id": "msg-a8beda2be8fd",
+      "message_id": "<f691c99e-7d0b-cf73-2399-bfb2605aa572@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2016-09-06T14:06:40-04:00",
+      "subject": "[R-pkgs] Lahman package v. 5.0.0 released to CRAN",
+      "subject_clean": "Lahman package v. 5.0.0 released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "## Lahman package v. 5.0.0 released to CRAN\n\nTeam Lahman is pleased to announce that v. 5.0.0 of the Lahamn package \nis now\non CRAN.  It contains the data from Sean Lahman's Baseball Database,\nhttp://www.seanlahman.com/baseball-archive/statistics/\nas a collection of data frames covering nearly all aspects of baseball\nstatistics from 1871--2015.\n\nIn this release,\n\n* All data sets have been updated with data for the 2015 baseball \nseason.  In\n   addition, numerous corrections of data errors and inconsistencies \ndiscovered\n   in previous year tables were applied.\n\n* Documentation examples are now provided for all data tables.\n\n*  Documentation examples were re-writtten to make extensive use of \ndplyr for data manipulation\n   and ggplot2 for graphics.\n\n### Development\n\nAll development of the package takes place on Github, \nhttps://github.com/cdalzell/Lahman.\nMajor versions of the R package are released only once a year, following \nthe release of a\nnew 20XX archive on Sean Lahman's site.  This R release occurs after \nsufficient time has\nelapsed to correct errors in the source data for a new season. Minor \nversions may be\nreleased from time to time to correct errors in the R version or add \nfunctionality.\n\nPlease report any problems or issues with this new version as an issue \non this site,\nhttps://github.com/cdalzell/Lahman/issues.  Additional contributions are \nwelcome.\n\nThere exists an old pseudo-wiki on R-Forge, \nhttp://lahman.r-forge.r-project.org/ that\ncollects some additional analyses and visualizations.\n\n-- Team Lahman: Chris Dalzell (maintainer), Michael Friendly (author), \nDenis Murphy, Martin Monkman, Sean Lahman\n\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept. & Chair, Quantitative Methods\nYork University      Voice: 416 736-2100 x66249 Fax: 416 736-5814\n4700 Keele Street    Web:http://www.datavis.ca\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "## Lahman package v. 5.0.0 released to CRAN\n\nTeam Lahman is pleased to announce that v. 5.0.0 of the Lahamn package \nis now\non CRAN.  It contains the data from Sean Lahman's Baseball Database,\nhttp://",
+      "thread_id": "thread-a8beda2be8fd",
+      "thread_depth": 0,
+      "month": "2016-09"
+    },
+    {
+      "id": "msg-ab3de39b79e5",
+      "message_id": "<1718206551.1071563.1473252001303@mail.yahoo.com>",
+      "from_name": "brodie gaslam",
+      "from_email_hash": "c8d0937e5dd68ad44721736755f2c013dc82cb1d905f5bec9a5e6b5610559043",
+      "date": "2016-09-07T12:40:01Z",
+      "subject": "[R-pkgs] diffobj released to CRAN",
+      "subject_clean": "diffobj released to CRAN",
+      "in_reply_to": null,
+      "references": [
+        "<1718206551.1071563.1473252001303.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "diffobj provides tools to compare the visual representation of R objects using the Myer's diff algorithm:\n\n## Example:\n> mx1 <- matrix(1:9, 3)\n> mx2 <- mx1[-2,]\n> diffPrint(mx1, mx2, format=\"raw\")\n< mx1                  > mx2\n@@ 1,4 @@              @@ 1,3 @@\n.       [,1] [,2] [,3]         [,1] [,2] [,3]\n. [1,]    1    4    7    [1,]    1    4    7\n< [2,]    2    5    8  ~\n. [3,]    3    6    9    [2,]    3    6    9\n\nThis is similar to `tools::Rdiff`, but is easier to use directly with R objects, has colorized output if your terminal supports it, has semantic-aware handling of the text output of R objects, and does not require the GNU diff utility to be available on the system.\n\nSee the vignette for more details <https://cran.r-project.org/web/packages/diffobj/vignettes/diffobj.html>, and the Github page to submit issues <https://github.com/brodieG/diffobj>.\n\nMany thanks to Uwe Ligges and Kurt Hornik for their patience with my first CRAN submission.\n\nBrodie Gaslam.",
+      "body_snippet": "diffobj provides tools to compare the visual representation of R objects using the Myer's diff algorithm:\n\n## Example:\n> mx1 <- matrix(1:9, 3)\n> mx2 <- mx1[-2,]\n> diffPrint(mx1, mx2, format=\"raw\")\n< m",
+      "thread_id": "thread-ab3de39b79e5",
+      "thread_depth": 0,
+      "month": "2016-09"
+    },
+    {
+      "id": "msg-700c006a6a2d",
+      "message_id": "<63626547-A7D3-4D0A-B24A-18AE3400C1AB@comcast.net>",
+      "from_name": "Bert Gunter",
+      "from_email_hash": "55999f6db81a30285e8663f25ef6e0e06fc3f1766ef61fa3463f1a1ee9e82820",
+      "date": "2016-09-08T09:56:15-07:00",
+      "subject": "[R-pkgs] stripless package version 1.0-2 now on CRAN",
+      "subject_clean": "stripless package version 1.0-2 now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A vignette has been added to the package. I hope that even those who don?t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs and adds a few small features. See the NEWS file for details. As always, comments and suggestions welcome.",
+      "body_snippet": "A vignette has been added to the package. I hope that even those who don?t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs a",
+      "thread_id": "thread-700c006a6a2d",
+      "thread_depth": 0,
+      "month": "2016-09"
+    },
+    {
+      "id": "msg-a719be823036",
+      "message_id": "<CAF=y844JFV=pvhysB+mtEYtM8YtNWWbCNtJ45LT5eWp4kmQTfQ@mail.gmail.com>",
+      "from_name": "Gennaro Tedesco",
+      "from_email_hash": "51f910b5aa025438a92bc9541154b3045a6a7d301028cb5e9e5827594b38a238",
+      "date": "2016-09-25T15:34:38+02:00",
+      "subject": "[R-pkgs] package Rdice released",
+      "subject_clean": "package Rdice released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package \"Rdice\" has just been released on CRAN. It contains a\ncollection of functions to simulate dice rolls and the like. In particular,\nexperiments and exercises can be performed looking at combinations and\npermutations of values in dice rolls and coin flips, together with the\ncorresponding frequencies of occurrences. When applying each function, the\nuser has to input the number of times (rolls, flips) to toss the dice.\nMoreover, the package provides functions to generate non-transitive sets of\ndice (like Efron's) and to check whether a given set of dice is\nnon-transitive with given probability.\n\nA vignette with example and use cases is provided.\n\nBest regards,\nGennaro\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The package \"Rdice\" has just been released on CRAN. It contains a\ncollection of functions to simulate dice rolls and the like. In particular,\nexperiments and exercises can be performed looking at comb",
+      "thread_id": "thread-a719be823036",
+      "thread_depth": 0,
+      "month": "2016-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6c8b2aef8bfe",
+      "subject": "statquotes package released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2016-09-06T13:54:20-04:00",
+      "last_reply": "2016-09-06T13:54:20-04:00",
+      "root_message_id": "msg-6c8b2aef8bfe"
+    },
+    {
+      "id": "thread-a8beda2be8fd",
+      "subject": "Lahman package v. 5.0.0 released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2016-09-06T14:06:40-04:00",
+      "last_reply": "2016-09-06T14:06:40-04:00",
+      "root_message_id": "msg-a8beda2be8fd"
+    },
+    {
+      "id": "thread-ab3de39b79e5",
+      "subject": "diffobj released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "brodie gaslam"
+      ],
+      "started": "2016-09-07T12:40:01+00:00",
+      "last_reply": "2016-09-07T12:40:01+00:00",
+      "root_message_id": "msg-ab3de39b79e5"
+    },
+    {
+      "id": "thread-700c006a6a2d",
+      "subject": "stripless package version 1.0-2 now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bert Gunter"
+      ],
+      "started": "2016-09-08T09:56:15-07:00",
+      "last_reply": "2016-09-08T09:56:15-07:00",
+      "root_message_id": "msg-700c006a6a2d"
+    },
+    {
+      "id": "thread-a719be823036",
+      "subject": "package Rdice released",
+      "message_count": 1,
+      "participants": [
+        "Gennaro Tedesco"
+      ],
+      "started": "2016-09-25T15:34:38+02:00",
+      "last_reply": "2016-09-25T15:34:38+02:00",
+      "root_message_id": "msg-a719be823036"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-08",
+  "messages": [
+    {
+      "id": "msg-4b703ef91699",
+      "message_id": "<SG2P15301MB0093B7B470C9BECF1CCFF2B5A6B00@SG2P15301MB0093.APCP153.PROD.OUTLOOK.COM>",
+      "from_name": "Hong Ooi",
+      "from_email_hash": "14983f83f8ec09d6eecf10b3a33a1d29e0e5ff8f8858f3f23bf3e75d9c739834",
+      "date": "2017-08-02T04:31:11Z",
+      "subject": "[R-pkgs] glmnetUtils 1.1 now available",
+      "subject_clean": "glmnetUtils 1.1 now available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The version 1.1 update to my glmnetUtils package is now available on CRAN. glmnetUtils provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating the alpha parameter, and other quality-of-life tools.\n\n\n>From the NEWS.md file:\n\n- Now allows interaction and expression terms without requiring use.model.frame=TRUE. This works in an additive fashion, ie the formula ~ a + b:c + d*e is treated as consisting of three terms, a, b:c and d*e each of which is processed independently of the others. A dot in the formula includes all main effect terms, ie ~ . + a:b + f(x) expands to ~ a + b + x + a:b + f(x) (assuming a, b and x are the only columns in the data). Note that a formula like ~ (a + b) + (c + d) will be treated as two terms, a + b and c + d.\n\n- The call component of a glmnet/cv.glmnet object that uses the original matrix/vector interface is now useful.\n\n- You can now explicitly specify the vector of crossvalidation folds (for the inner loop over lambda) when calling cva.glmnet.\n\n- Correctly handle non-syntactic factor variables in a formula.\n\nYou can download it from: https://cran.r-project.org/package=glmnetUtils",
+      "body_snippet": "The version 1.1 update to my glmnetUtils package is now available on CRAN. glmnetUtils provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating th",
+      "thread_id": "thread-4b703ef91699",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-de5d0796bafa",
+      "message_id": "<CAE6U0BYwMD9k4PVAzEqB6EupBMnfGfvnw1LN2L2BZsQfDwFFUw@mail.gmail.com>",
+      "from_name": "AMR RS",
+      "from_email_hash": "9d8ba78f8e2e04768169ecfa71127fd39c1084fddf646d787a6f5b66796419a2",
+      "date": "2017-08-07T21:29:29+05:30",
+      "subject": "[R-pkgs] itunesr - new package to access iTunes App Store Ratings and Reviews",
+      "subject_clean": "itunesr - new package to access iTunes App Store Ratings and Reviews",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello Fellow Rusers,\n\nIntroducing '*itunesr' *my first package to help iOS Product Managers to\naccess Ratings and Reviews via R: https://cran.r-project.org/package=itunesr\n\n\nPlease give me suggestions to improve my next version\n\nWould love contributions also!\n\nhttps://github.com/amrrs/itunesr\n\nhttps://cran.r-project.org/web/packages/itunesr/index.html\n\nThanks and Regards,\nAbdul\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Fellow Rusers,\n\nIntroducing '*itunesr' *my first package to help iOS Product Managers to\naccess Ratings and Reviews via R: https://cran.r-project.org/package=itunesr\n\n\nPlease give me suggestions",
+      "thread_id": "thread-de5d0796bafa",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-9c2b1fbddc33",
+      "message_id": "<c5b420aa-74e5-71f9-01c8-c02931f03fd0@uni-landau.de>",
+      "from_name": "Mira Kattwinkel",
+      "from_email_hash": "def828a8412a986365eb6b846953f73420cd88aa7b26527882471b043d147bc0",
+      "date": "2017-08-10T13:47:42+02:00",
+      "subject": "[R-pkgs] New Package: openSTARS",
+      "subject_clean": "New Package: openSTARS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear userRs\n\nI am pleased to announce the release of the new package *openSTARS* on \nCRAN (https://cran.r-project.org/web/packages/openSTARS/index.html).\n\nopenSTARS prepares GIS data for stream network analysis using open \nsource GRASS GIS within R. It is intended as an alternative to the \nArcGIS toolbox STARS to format the input data for the SSN package for \nSpatial Statistical Modeling on Stream Networks \n(https://cran.r-project.org/web/packages/SSN/index.html).\n\nFor more information see \nhttps://htmlpreview.github.io/?https://github.com/MiKatt/openSTARS/master/release_files/release_announcement.html \n.\n\nAny comments and suggestions are very welcome.\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\nInstitute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstra?e 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
+      "body_snippet": "Dear userRs\n\nI am pleased to announce the release of the new package *openSTARS* on \nCRAN (https://cran.r-project.org/web/packages/openSTARS/index.html).\n\nopenSTARS prepares GIS data for stream networ",
+      "thread_id": "thread-9c2b1fbddc33",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-65c2b3e1cf76",
+      "message_id": "<1502542020.4026853.1071231640.158A14D1@webmail.messagingengine.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "f786b05ce281eed0c7570d62b6f73e30436d49b615cde36d1e821a8b736436ec",
+      "date": "2017-08-12T08:47:00-04:00",
+      "subject": "[R-pkgs] OHPL - new package for group variable selection",
+      "subject_clean": "OHPL - new package for group variable selection",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\n- I am pleased to announce that the R package OHPL is now available on\nCRAN (https://CRAN.R-project.org/package=OHPL).\n\nThe package implements the ordered homogeneity pursuit lasso (OHPL)\nalgorithm for group variable selection proposed in Lin et al. (2017)\n<doi:10.1016/j.chemolab.2017.07.004>. The OHPL method exploits the\nhomogeneity structure in high-dimensional data and enjoys the grouping\neffect to select groups of important variables automatically. This\nfeature makes it particularly useful for high-dimensional datasets with\nstrongly correlated variables, such as spectroscopic data.\n\nFor more information, please see https://OHPL.io.\n\nCheers,\n-Nan\n\n-- \nhttps://nanx.me",
+      "body_snippet": "Dear useRs,\n\n- I am pleased to announce that the R package OHPL is now available on\nCRAN (https://CRAN.R-project.org/package=OHPL).\n\nThe package implements the ordered homogeneity pursuit lasso (OHPL)",
+      "thread_id": "thread-65c2b3e1cf76",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-4420b9b719ce",
+      "message_id": "<9153c6$7ok42k@ironport10.mayo.edu>",
+      "from_name": "Heinzen, Ethan P.",
+      "from_email_hash": "5c480216203fa97aa23b11defa83859675a4a5548b365f3c9ccf3ba1e4626c48",
+      "date": "2017-08-15T18:11:59Z",
+      "subject": "[R-pkgs] arsenal v0.5.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "subject_clean": "arsenal v0.5.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to announce the release of the \"arsenal\" package v0.5.0 on CRAN (https://cran.r-project.org/package=arsenal).  There are 4 items I want to mention:\n\n1.      arsenal is now on github: https://github.com/eheinzen/arsenal\n\n2.      ~10 bugs have been fixed in the latest release.\n\n3.      Tired of subsetting data.frames and losing your labels?  Try the new keep.labels function.  For details, see the vignette on \"labels\".\n\n4.      Need a detailed comparison of two data.frames?  Try the new compare() function.  For details, see the vignette on \"compare\".\n\nCheers,\nEthan Heinzen\nheinzen.ethan at mayo.edu<mailto:heinzen.ethan at mayo.edu>\nhttps://github.com/eheinzen\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to announce the release of the \"arsenal\" package v0.5.0 on CRAN (https://cran.r-project.org/package=arsenal).  There are 4 items I want to mention:\n\n1.      arsenal is now on github: https",
+      "thread_id": "thread-4420b9b719ce",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-470347c84ff0",
+      "message_id": "<CAHujmRaAqBTLaaFobF1pu+GiY_MqukT0R4Oty96H33pTzjet_w@mail.gmail.com>",
+      "from_name": "Paolo Di Lorenzo",
+      "from_email_hash": "a5608d90a1cabb1858b7773241fc66e1a017924b17f6dc6da00717d6a0e3c702",
+      "date": "2017-08-17T00:06:53-04:00",
+      "subject": "[R-pkgs] usmap v0.2.1 released",
+      "subject_clean": "usmap v0.2.1 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello useRs,\n\nPackage *usmap* has been updated to version 0.2.1 and is now available on\nCRAN <https://cran.r-project.org/package=usmap>. This update contains some\nminor fixes and improvements.\n\nThe full change log is available on Github:\nhttps://github.com/pdil/usmap/releases/tag/v0.2.1\n\n?\n\n*usmap* is a package that allows one to easily create US choropleths that\ninclude Alaska and Hawaii. The package is still in its early stages and I?m\ncontinuing to add more features and improve the API. I am open to\nsuggestions for the direction in which this package should go so feel free\nto submit issues/pull requests at https://github.com/pdil/usmap.\n\nRegards,\nPaolo\nhttps://dilorenzo.pl\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello useRs,\n\nPackage *usmap* has been updated to version 0.2.1 and is now available on\nCRAN <https://cran.r-project.org/package=usmap>. This update contains some\nminor fixes and improvements.\n\nThe fu",
+      "thread_id": "thread-470347c84ff0",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-f9fa31427cd3",
+      "message_id": "<CAL59HHJSrOcBmEmfRdCqcFzR-uKhsM7xcu+wqJwaD6wr5ib8fw@mail.gmail.com>",
+      "from_name": "Dror Bogin",
+      "from_email_hash": "97ca64bffd12a13d9549f673a3103dfe2fd78acc29a4632b2b9d66e42301913d",
+      "date": "2017-08-20T10:38:13+03:00",
+      "subject": "[R-pkgs] easycsv v1.0.5 released",
+      "subject_clean": "easycsv v1.0.5 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello users,\n\npackage *easycsv* version 1.0.5 is now available on CRAN <\nhttps://cran.r-project.org/package=usmap>. this update contains some\nupgrades and a new *choose_dir* function for Linux and Mac OSX users, for\nwindows users, it's still implemented with utils::choose.dir.\n\nThe full change log is available on Github:\nhttps://github.com/bogind/easycsv/releases/tag/v1.0.5\n\n__\n\n*easycsv* is mostly meant for easily reading multiple comma separated\ntables into R's environment from either a local folder, a zip file or a\nremote folder, but I add some nice utility functions when I can.\nfeedback and issues are welcome on https://github.com/bogind/easycsv/issues\n\n\n\n-- \nRegards,\nDror\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello users,\n\npackage *easycsv* version 1.0.5 is now available on CRAN <\nhttps://cran.r-project.org/package=usmap>. this update contains some\nupgrades and a new *choose_dir* function for Linux and Mac",
+      "thread_id": "thread-f9fa31427cd3",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-38bfa1d001d5",
+      "message_id": "<CAA-FpKX=7bmgWLr4aT+zK-gyHu78JvGepw6jmR+fp+N+=xGF8w@mail.gmail.com>",
+      "from_name": "Bob Rudis",
+      "from_email_hash": "06069ff8bf65af0cc1ddc4f9da6c2a365b90baa3c37e0a4c63565522e5804ed8",
+      "date": "2017-08-29T19:57:22-04:00",
+      "subject": "[R-pkgs] New CRAN Package Announcement: splashr",
+      "subject_clean": "New CRAN Package Announcement: splashr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to announce that splashr is now on CRAN:\nhttps://CRAN.R-project.org/package=splashr\n\nThe package is an R interface to the Splash javascript rendering\nservice. It works in a similar fashion to Selenium but is fear more\ngeared to web scraping and has quite a bit of power under the hood.\n\nThere are three vignettes that should help folks get started using it\n(like Selenium it really requires Docker for the best experience) and\nthere are a few blog posts about it kicking around on the internet.\n\nMany thanks to all (if you're on here) who took it for a spin and\nprovided suggestions and even more thanks to the CRAN team for a\nspeedy onboarding.\n\n-Bob",
+      "body_snippet": "I'm pleased to announce that splashr is now on CRAN:\nhttps://CRAN.R-project.org/package=splashr\n\nThe package is an R interface to the Splash javascript rendering\nservice. It works in a similar fashion",
+      "thread_id": "thread-38bfa1d001d5",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-f990b33f4a4a",
+      "message_id": "<CAPK6mFqp-GLSdH85D987OSjvez06c=cY5hxUOd1nP+vPz_LkDg@mail.gmail.com>",
+      "from_name": "Luís Paulo F. Garcia",
+      "from_email_hash": "eb9290c36366025a338795498e5db88651936d499b079be56fb796d8bb5869d2",
+      "date": "2017-08-30T10:03:00+02:00",
+      "subject": "[R-pkgs] Announcing mfe 0.1.0",
+      "subject_clean": "Announcing mfe 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from datasets to support the design\nof\nrecommendation systems based on Meta-Learning. The meta-features, also\ncalled\ncharacterization measures, are able to characterize the complexity of\ndatasets\nand to provide estimates of algorithm performance. The package contains not\nonly the standard characterization measures, but also more recent\ncharacterization measures.\n\nPlease, visit the repository on GitHub (https://github.com/rivolli/mfe) or\nthe\nVignette (https://cran.r-project.org/web/packages/mfe/vignettes/mfe-\nvignette.html)\nfor more information.\n\nKind regards,\nLuis\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
+      "thread_id": "thread-f990b33f4a4a",
+      "thread_depth": 0,
+      "month": "2017-08"
+    },
+    {
+      "id": "msg-7c442f41b819",
+      "message_id": "<CAAiuAp=nEYgS+Ub-M3ZqDOgjHj2=wV6pJpKegOkhXg==QxvSSg@mail.gmail.com>",
+      "from_name": "Shaun Wilkinson",
+      "from_email_hash": "bd81cf48d16be285db08e10961cdf2b8d7bc86b2a037ebd2d12373a26764ea32",
+      "date": "2017-08-31T10:17:05+09:00",
+      "subject": "[R-pkgs] The aphid package for analysis with profile hidden Markov models",
+      "subject_clean": "The aphid package for analysis with profile hidden Markov models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi folks,\n\nI'm pleased to introduce a new package called ?aphid?, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor both nucleic acids and proteins (preferably in the DNAbin or AAbin\nformat), model building, parameter optimization (Baum Welch and Viterbi\ntraining), plotting, file import & export, tree-based sequence weighting,\nsimulation, and implementation of the forward, backward and Viterbi\nalgorithms for calculating sequence probabilities.\n\n\nStandard HMMs are also supported, with functions for building, training,\nplotting, sequence simulation, and HMM implementations of the forward,\nbackward & Viterbi algorithms.\n\n\nThe package has a wide variety of uses including database searching,\ngene-finding and annotation, phylogenetic analysis and sequence\nclassification.\n\n\nThe number of dependencies has been kept to a minimum (non-base\ndependencies: Rcpp, openssl & phylogram), and while aphid is designed to be\nused in conjunction with the ?ape? package, it is not a requisite. Indeed,\nthe package functions will work with any standard character sequence\nvectors (even non-biological ones), though at a cost of memory efficiency\nwhen compared with ape?s raw DNAbin and AAbin objects types.\n\n\nAlgorithms and examples are from the essential book by Durbin et al (1998),\nBiological Sequence Analysis: Probabilistic Models of Proteins and Nucleic\nAcids (Cambridge University Press; ISBN 978-0521629713).\n\n\n\nAny feedback is warmly welcomed.\n\n\nRegards,\n\nShaun Wilkinson\n\nRutherford Foundation Postdoctoral Research Fellow\n\nVictoria University of Wellington\n\nP.O. Box 600 Wellington, New Zealand\n\n\n\nvignette: https://cran.r-project.org/web/packages/aphid/vignettes/\naphid-vignette.html\n\ndevelopment version: https://github.com/shaunpwilkinson/aphid\n\nbug reports: https://github.com/shaunpwilkinson/aphid/issues\n\nemail: shaunpwilkinson at gmail.com\n\ntwitter: @wilkinshau\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi folks,\n\nI'm pleased to introduce a new package called ?aphid?, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor",
+      "thread_id": "thread-7c442f41b819",
+      "thread_depth": 0,
+      "month": "2017-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4b703ef91699",
+      "subject": "glmnetUtils 1.1 now available",
+      "message_count": 1,
+      "participants": [
+        "Hong Ooi"
+      ],
+      "started": "2017-08-02T04:31:11+00:00",
+      "last_reply": "2017-08-02T04:31:11+00:00",
+      "root_message_id": "msg-4b703ef91699"
+    },
+    {
+      "id": "thread-de5d0796bafa",
+      "subject": "itunesr - new package to access iTunes App Store Ratings and Reviews",
+      "message_count": 1,
+      "participants": [
+        "AMR RS"
+      ],
+      "started": "2017-08-07T21:29:29+05:30",
+      "last_reply": "2017-08-07T21:29:29+05:30",
+      "root_message_id": "msg-de5d0796bafa"
+    },
+    {
+      "id": "thread-9c2b1fbddc33",
+      "subject": "New Package: openSTARS",
+      "message_count": 1,
+      "participants": [
+        "Mira Kattwinkel"
+      ],
+      "started": "2017-08-10T13:47:42+02:00",
+      "last_reply": "2017-08-10T13:47:42+02:00",
+      "root_message_id": "msg-9c2b1fbddc33"
+    },
+    {
+      "id": "thread-65c2b3e1cf76",
+      "subject": "OHPL - new package for group variable selection",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2017-08-12T08:47:00-04:00",
+      "last_reply": "2017-08-12T08:47:00-04:00",
+      "root_message_id": "msg-65c2b3e1cf76"
+    },
+    {
+      "id": "thread-4420b9b719ce",
+      "subject": "arsenal v0.5.0: An Arsenal of 'R' Functions for Large-Scale Statistical Summaries",
+      "message_count": 1,
+      "participants": [
+        "Heinzen, Ethan P."
+      ],
+      "started": "2017-08-15T18:11:59+00:00",
+      "last_reply": "2017-08-15T18:11:59+00:00",
+      "root_message_id": "msg-4420b9b719ce"
+    },
+    {
+      "id": "thread-470347c84ff0",
+      "subject": "usmap v0.2.1 released",
+      "message_count": 1,
+      "participants": [
+        "Paolo Di Lorenzo"
+      ],
+      "started": "2017-08-17T00:06:53-04:00",
+      "last_reply": "2017-08-17T00:06:53-04:00",
+      "root_message_id": "msg-470347c84ff0"
+    },
+    {
+      "id": "thread-f9fa31427cd3",
+      "subject": "easycsv v1.0.5 released",
+      "message_count": 1,
+      "participants": [
+        "Dror Bogin"
+      ],
+      "started": "2017-08-20T10:38:13+03:00",
+      "last_reply": "2017-08-20T10:38:13+03:00",
+      "root_message_id": "msg-f9fa31427cd3"
+    },
+    {
+      "id": "thread-38bfa1d001d5",
+      "subject": "New CRAN Package Announcement: splashr",
+      "message_count": 1,
+      "participants": [
+        "Bob Rudis"
+      ],
+      "started": "2017-08-29T19:57:22-04:00",
+      "last_reply": "2017-08-29T19:57:22-04:00",
+      "root_message_id": "msg-38bfa1d001d5"
+    },
+    {
+      "id": "thread-f990b33f4a4a",
+      "subject": "Announcing mfe 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Luís Paulo F. Garcia"
+      ],
+      "started": "2017-08-30T10:03:00+02:00",
+      "last_reply": "2017-08-30T10:03:00+02:00",
+      "root_message_id": "msg-f990b33f4a4a"
+    },
+    {
+      "id": "thread-7c442f41b819",
+      "subject": "The aphid package for analysis with profile hidden Markov models",
+      "message_count": 1,
+      "participants": [
+        "Shaun Wilkinson"
+      ],
+      "started": "2017-08-31T10:17:05+09:00",
+      "last_reply": "2017-08-31T10:17:05+09:00",
+      "root_message_id": "msg-7c442f41b819"
+    }
+  ]
+}

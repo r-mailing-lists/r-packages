@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-08",
+  "messages": [
+    {
+      "id": "msg-215c8c5eb12f",
+      "message_id": "<CABOAaB1FnDL8BHDA0TRArwaxFqsADKNKF5bBKsKvWtw+MRx54A@mail.gmail.com>",
+      "from_name": "Guillermo Federico Olmedo",
+      "from_email_hash": "b40284df819dca44351658dafc1c3354f775b6e20f1ced8fb264cef52a6a490d",
+      "date": "2016-08-01T19:35:06-03:00",
+      "subject": "[R-pkgs] new version of package water: Actual Evapotranspiration with Energy Balance Models",
+      "subject_clean": "new version of package water: Actual Evapotranspiration with Energy Balance Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'm glad to announce the new version of water package (0.5).\n\nAs this is my first message to the list, I want to add that this\npackage provides tools to estimate actual evapotranspiration from\nsurface energy balance models.\n\nRight now you can run the well-know METRIC model using it. This model\nallows to estimate the energy balance using landsat (7 or 5) images\nand a weather station.\n\nI'll be happy to discuss or provide more information.\n\nRegards,\n\nGuillermo.\n\n#########################\n\nThe changes since the last version are:\n\n* Added maxit parameter to calcH to control the maximun number of iterations.\n* Added an optional constrain to the selection of anchors pixels using the\n  location of the weather station and a 30km buffer.\n* Changed default value for Z.om.ws in calcH. (From 0.0018 to 0.03)\n* Added a new parameter to calcAnchors, available for both methods: buffer.\n  buffer allow to set the minimun distance between two anchor pixels of the same\n  kind\n* Added a new method for calcAnchors = \"CITRA-MCBbc\". This method chooses the\n  coldest and hottest anchors pixels availables. Previous method (\"CITRA-MCBr\")\n  chooses random pixel who meets the conditions. CITRA-MCBbc is now the default\n  method for calcAnchors\n* General remote sensing functions moved to a separate file\n* loadImage detects when there is more than 1 image on the working folder\n* Rn, G, H, LE are restricted to values > 0\n* Improvements to anchors pixels selection: more releaxed hot\n  temperature criterium, distance, mean of many pixels, etc\n* Added two methods for land surface estimation: single channel and\nsplit windows.\n  Split windows only works for Landsat 8.\n* loadImage now loads thermal data also: low gain for L7 and both bands for L8\n* Fixed big bug when estimating ETo with a large weather station file",
+      "body_snippet": "Dear R users,\n\nI'm glad to announce the new version of water package (0.5).\n\nAs this is my first message to the list, I want to add that this\npackage provides tools to estimate actual evapotranspirati",
+      "thread_id": "thread-215c8c5eb12f",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-e3613b3d093a",
+      "message_id": "<CAAjDRigRHmiPSBEoY7h3rCXD7FF7_Bk2x_PenDoBT4t0LXKBQQ@mail.gmail.com>",
+      "from_name": "Jonathan Carroll",
+      "from_email_hash": "bfdce0c95a3258ff1dde129132708e26566d91de8ee6ef7e6e905db924252e01",
+      "date": "2016-08-08T22:26:08+09:30",
+      "subject": "[R-pkgs] New package: ggghost 0.1.0 - Capture the spirit of your ggplot2 calls",
+      "subject_clean": "New package: ggghost 0.1.0 - Capture the spirit of your ggplot2 calls",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings, R users!\n\nI am pleased to announce the release of my first CRAN package: ggghost.\n\nhttps://cran.r-project.org/web/packages/ggghost\nhttps://github.com/jonocarroll/ggghost\n\nFeatures:\n\n - Minimal user-space overhead for implementation; p %g<% ggplot(dat,\naes(x,y))\n - ggplot2 components added to the plot object (p <- p + geom_point()) are\nstored in a list within p, and evaluation delayed\n - The incoming data is captured and retained for reproducibility\n - The list of calls can be added to (+), subtracted from (-, via regex),\nand subset\n - The list of calls can be inspected (via summary)\n - The data and calls can be recovered from the object p even if removed\nfrom the workspace.\n\nProvides a solution to a question posed here:\nhttps://twitter.com/JennyBryan/status/755417584359632896\n\nWhether the pun name or the R code came first is a secret that dies with me.\n\nI welcome any feedback or suggestions you may have.\n\nKind regards,\n\n- Jonathan Carroll.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Greetings, R users!\n\nI am pleased to announce the release of my first CRAN package: ggghost.\n\nhttps://cran.r-project.org/web/packages/ggghost\nhttps://github.com/jonocarroll/ggghost\n\nFeatures:\n\n - Mini",
+      "thread_id": "thread-e3613b3d093a",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-335be93b894a",
+      "message_id": "<CAA-FpKUF-5mJNLCVG_3ATWNSAoV3zhp3Y4N+oZnQZs1M9OOS3w@mail.gmail.com>",
+      "from_name": "Bob Rudis",
+      "from_email_hash": "06069ff8bf65af0cc1ddc4f9da6c2a365b90baa3c37e0a4c63565522e5804ed8",
+      "date": "2016-08-08T10:52:40-04:00",
+      "subject": "[R-pkgs] New package uaparserjs 0.1.0 - Slice up browser user agent strings",
+      "subject_clean": "New package uaparserjs 0.1.0 - Slice up browser user agent strings",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I keep forgetting I can announce things here.\n\n[Insert witty/standard boilerplate introductory verbiage here]\n\nCRAN: <https://cran.rstudio.com/web/packages/uaparserjs/index.html>\nGitHub: <https://github.com/hrbrmstr/uaparserjs>\n\nUntil Oliver and/or I figure out a way to get uap-r\n<https://github.com/ua-parser/uap-r> working w/o Boost, this package\nprovides a way to parse browser user agent strings that are found in\nweb logs, proxy logs, PCAPs, etc.\n\nThis is about 100x slower than uap-r as it's based on javascript\nmodules that I've built a V8-wrapper around.\n\nIt doesn't work on i386 Windows due to v8-library (not the V8-package)\nlimitations but it works on 64-bit Windows (prbly better off\ninstalling from github for that as CRAN is marking this non-Windows\ndue to the i386 incompatibility).\n\nIf you're on Linux and can deal with a full Boost install and have\nneed of user agent parsing, use uap-r (it still won't work on Windows\nor macOS). Otherwise, give this a go.\n\nI've tested in on a number of OSes but welcome feedback and I'm sure\nboth Oliver & I would welcome hints on alternatives to Boost regex\nthat work on all OSes for uap-r since I'd eventually like to replace\nthis with that.\n\n-Bob",
+      "body_snippet": "I keep forgetting I can announce things here.\n\n[Insert witty/standard boilerplate introductory verbiage here]\n\nCRAN: <https://cran.rstudio.com/web/packages/uaparserjs/index.html>\nGitHub: <https://gith",
+      "thread_id": "thread-335be93b894a",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-9a73b3470f4b",
+      "message_id": "<trinity-ccbe8b64-b6d1-45a2-9753-09bf2019acfa-1471298619060@3capp-gmx-bs41>",
+      "from_name": "\"Jannes Münchow\"",
+      "from_email_hash": "bfd605b5712554e89f193d7890595bce3bf4f865787e3eb018f119041482052e",
+      "date": "2016-08-16T00:03:39+02:00",
+      "subject": "[R-pkgs] RQGIS 0.1.0 release",
+      "subject_clean": "RQGIS 0.1.0 release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nWe proudly announce the release of RQGIS! RQGIS establishes an interface between R and QGIS (probably the most widely used\nopen-source Desktop GIS!), i.e. it allows the user to access the more than 1000 QGIS geoalgorithms from within R. To install it, run:\n\ninstall.packages(\"RQGIS\")\n\nTo find out more about RQGIS and how to use it, please visit:\n\nhttps://jannesm.wordpress.com/2016/08/15/rqgis-0-1-0-release/\n\nand/or\n\nhttps://github.com/jannes-m/RQGIS\n\nAll the best,\n\nJannes\n?",
+      "body_snippet": "Dear all,\n\nWe proudly announce the release of RQGIS! RQGIS establishes an interface between R and QGIS (probably the most widely used\nopen-source Desktop GIS!), i.e. it allows the user to access the m",
+      "thread_id": "thread-9a73b3470f4b",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-e658b633a108",
+      "message_id": "<CAC58_YkEScPombZnELJP5mDwbxco9ANR3Kw4d+Lwm_idruir8g@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c8d656fb819da8012d5821aea2d81117adec96293c0907599d677f0e82262a42",
+      "date": "2016-08-18T12:32:15+05:30",
+      "subject": "[R-pkgs] have a look over package \"imputeTestbench\"",
+      "subject_clean": "have a look over package \"imputeTestbench\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Friends,\n\nHave a look over R package \"imputeTestbench\". It provides a Test bench for\ncomparison of missing data imputation models/methods. It compares imputing\nmethods with reference to RMSE, MAE or MAPE parameters. It allows to add\nnew proposed methods to test bench and to compare with other methods. The\nfunction 'append_method()' allows to add multiple numbers of methods to the\nexisting methods available in test bench.\n\nCRAN: https://cran.r-project.org/package=imputeTestbench\n\nGitHub: https://github.com/neerajdhanraj/imputeTestbench\n\nHow to Use:\nhttps://www.researchgate.net/publication/305767990_R_package_%27imputeTestbench%27_as_a_Testbench_to_compare_missing_value_imputation_methods\n\nThe current version is talking about univariate dataset imputation. Very\nnext version will allow user to operate it on any type of dataset including\nmultivariate datset.\n\nFor more detail contact me at:\nhttp://www.neerajbokde.com/?\n-- \nRegards ,\n*Neeraj Dhanraj Bokde  *\n*M.E. Embedded System*\n\n*Birla Institute of Technology & Science,* Pilani\n\nPilani Campus , Rajasthan, India\n\nPhone: *+91 9028415974*\n\nEmail: h2012105 at pilani.bits-pilani.ac.in; *neerajdhanraj at gmail.com\n<neerajdhanraj at gmail.com>*\n\nWebsite: http://www.neerajbokde.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Friends,\n\nHave a look over R package \"imputeTestbench\". It provides a Test bench for\ncomparison of missing data imputation models/methods. It compares imputing\nmethods with reference to RMSE, MAE o",
+      "thread_id": "thread-e658b633a108",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-380caec67a58",
+      "message_id": "<CAC58_YnX4TD3yCb5QoQ3TzB40itkF1sSOyLqXubkSOaOoh_qRA@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c8d656fb819da8012d5821aea2d81117adec96293c0907599d677f0e82262a42",
+      "date": "2016-08-28T09:25:31+05:30",
+      "subject": "[R-pkgs] The modification in PSF Package",
+      "subject_clean": "The modification in PSF Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Researchers,\n\nHave a look over updated *R package PSF*. Pattern Sequence Based\nForecasting (PSF) takes univariate time series data as input and assist to\nforecast its future values. This algorithm forecasts the behavior of time\nseries based on similarity of pattern sequences. Initially, clustering is\ndone with the labeling of samples from database. The labels associated with\nsamples are then used for forecasting the future behaviour of time series\ndata. The further technical details and references regarding PSF are\ndiscussed in Vignette.\n\n*CRAN:* *https://cran.r-project.org/web/packages/PSF/index.html\n<https://cran.r-project.org/web/packages/PSF/index.html>*\n\n*GitHub:* https://github.com/neerajdhanraj/PSF\n\n*How to use:* https://www.researchgate.net/publication/304131481_PSF_\nIntroduction_to_R_Package_for_Pattern_Sequence_Based_Forecasting_Algorithm\n\nAlso go through the modification in terms of seasonal dataset.\n\nhttps://www.researchgate.net/publication/304580701_\nIntroduction_of_seasonality_concept_in_PSF_algorithm_to_\nimprove_univariate_time_series_predictions\n\nFor further details *contact me* at: http://www.neerajbokde.com/\n\n-- \nRegards ,\nNeeraj Dhanraj Bokde\nM.E. Embedded System\n\nBirla Institute of Technology & Science, Pilani\n\nPilani Campus , Rajasthan, India\n\nPhone: *+91 9028415974 <%2B91%209028415974>*\n\nEmail: h2012105 at pilani.bits-pilani.ac.in; *neerajdhanraj at gmail.com\n<neerajdhanraj at gmail.com>*\n\nWebsite: http://www.neerajbokde.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Researchers,\n\nHave a look over updated *R package PSF*. Pattern Sequence Based\nForecasting (PSF) takes univariate time series data as input and assist to\nforecast its future values. This algorith",
+      "thread_id": "thread-380caec67a58",
+      "thread_depth": 0,
+      "month": "2016-08"
+    },
+    {
+      "id": "msg-db032a47f51c",
+      "message_id": "<CAECT9fmyNJaGtrzF7j2qKXQ=h20yS7-gAWrj7apWR7YDYBo5Sg@mail.gmail.com>",
+      "from_name": "David Bucklin",
+      "from_email_hash": "ead645847ce3d1362d40a69a94b1e0a390b507abb2cd3610727847f46c2c5c06",
+      "date": "2016-08-29T14:46:42-04:00",
+      "subject": "[R-pkgs] new package: rpostgis",
+      "subject_clean": "new package: rpostgis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We'd like to announce the initial CRAN release of 'rpostgis' (v1.0.0),\nwhich facilitates transfer between PostGIS \"Geometry\" objects (stored in\nPostgreSQL databases) and R spatial objects. The package also contains a\nvariety of convenience functions which are supplemental to the excellent\n'RPostgreSQL' package for interfacing with a PostgreSQL/PostGIS database.\n\nTo install the package:\n\ninstall.packages(\"rpostgis\")\n\nThe package main development area can be found on GitHub; any bugs, issues,\nor feature requests can be submitted through the \"issues\" page there:\n\nhttps://github.com/mablab/rpostgis\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "We'd like to announce the initial CRAN release of 'rpostgis' (v1.0.0),\nwhich facilitates transfer between PostGIS \"Geometry\" objects (stored in\nPostgreSQL databases) and R spatial objects. The package",
+      "thread_id": "thread-db032a47f51c",
+      "thread_depth": 0,
+      "month": "2016-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-215c8c5eb12f",
+      "subject": "new version of package water: Actual Evapotranspiration with Energy Balance Models",
+      "message_count": 1,
+      "participants": [
+        "Guillermo Federico Olmedo"
+      ],
+      "started": "2016-08-01T19:35:06-03:00",
+      "last_reply": "2016-08-01T19:35:06-03:00",
+      "root_message_id": "msg-215c8c5eb12f"
+    },
+    {
+      "id": "thread-335be93b894a",
+      "subject": "New package uaparserjs 0.1.0 - Slice up browser user agent strings",
+      "message_count": 1,
+      "participants": [
+        "Bob Rudis"
+      ],
+      "started": "2016-08-08T10:52:40-04:00",
+      "last_reply": "2016-08-08T10:52:40-04:00",
+      "root_message_id": "msg-335be93b894a"
+    },
+    {
+      "id": "thread-e3613b3d093a",
+      "subject": "New package: ggghost 0.1.0 - Capture the spirit of your ggplot2 calls",
+      "message_count": 1,
+      "participants": [
+        "Jonathan Carroll"
+      ],
+      "started": "2016-08-08T22:26:08+09:30",
+      "last_reply": "2016-08-08T22:26:08+09:30",
+      "root_message_id": "msg-e3613b3d093a"
+    },
+    {
+      "id": "thread-9a73b3470f4b",
+      "subject": "RQGIS 0.1.0 release",
+      "message_count": 1,
+      "participants": [
+        "\"Jannes Münchow\""
+      ],
+      "started": "2016-08-16T00:03:39+02:00",
+      "last_reply": "2016-08-16T00:03:39+02:00",
+      "root_message_id": "msg-9a73b3470f4b"
+    },
+    {
+      "id": "thread-e658b633a108",
+      "subject": "have a look over package \"imputeTestbench\"",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2016-08-18T12:32:15+05:30",
+      "last_reply": "2016-08-18T12:32:15+05:30",
+      "root_message_id": "msg-e658b633a108"
+    },
+    {
+      "id": "thread-380caec67a58",
+      "subject": "The modification in PSF Package",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2016-08-28T09:25:31+05:30",
+      "last_reply": "2016-08-28T09:25:31+05:30",
+      "root_message_id": "msg-380caec67a58"
+    },
+    {
+      "id": "thread-db032a47f51c",
+      "subject": "new package: rpostgis",
+      "message_count": 1,
+      "participants": [
+        "David Bucklin"
+      ],
+      "started": "2016-08-29T14:46:42-04:00",
+      "last_reply": "2016-08-29T14:46:42-04:00",
+      "root_message_id": "msg-db032a47f51c"
+    }
+  ]
+}

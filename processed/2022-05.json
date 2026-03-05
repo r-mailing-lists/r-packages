@@ -1,0 +1,38 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-05",
+  "messages": [
+    {
+      "id": "msg-5ec4fbf7dfe7",
+      "message_id": "<DBAPR02MB6037AC908F3B241F11DB921DE2D69@DBAPR02MB6037.eurprd02.prod.outlook.com>",
+      "from_name": "ric@rdo@i@@doit m@iii@g oii outiook@com",
+      "from_email_hash": "a6804ffd1af8cc40dfdc884ab41cb5ac064e2a13593347aa2c7b359405fc9ba6",
+      "date": "2022-05-25T06:58:21Z",
+      "subject": "[R-pkgs] shadowr: Selenium plugin to manage multiple levels of shadow elements on web page",
+      "subject_clean": "shadowr: Selenium plugin to manage multiple levels of shadow elements on web page",
+      "in_reply_to": "<DBAPR02MB60375C21F4D303721CB7FE89E2D29@DBAPR02MB6037.eurprd02.prod.outlook.com>",
+      "references": [
+        "<DBAPR02MB60375C21F4D303721CB7FE89E2D29@DBAPR02MB6037.eurprd02.prod.outlook.com>"
+      ],
+      "body_plain": "Dear R users,\n\n\nI am happy to announce that my new package shadowr is now available on\nCRAN.\n\nThe package enables to use the shadow selenium plugin<https://github.com/sukgu/shadow-automation-selenium> to manage multi level shadow DOM elements on web page.\n\nShadow DOM is a web standard that offers component style and markup encapsulation.\n\nIt is a critically important piece of the Web Components story as it ensures that a component will work in\n\nany environment even if other CSS or JavaScript is at play on the page.\n\nThe problem is that Custom HTML tags can?t be directly identified with selenium tools.\n\nIf you just need to click a cookie accept button and if there is only a one level shadow dom structure,\n\nyou could just copy the js path and let the selenium driver execute this js code.\n\nFor details and examples please check out the github page.\n\nBut when you have a multi level shadow dom structure and have to do different things with the elements like get the text or click them,\n\nsooner or later things get complicated.\n\nYou would have to handle a lot of long strings and depending on the action and amount of elements also modify/extend the strings.\n\nShadowr enable R users a more comfortable and reliable way to work with shadow dom elements.\n\n\nhttps://cran.r-project.org/web/packages/shadowr/index.html, README file on CRAN page\n\nhttps://cran.r-project.org/package=shadowr or blog article https://www.shadowr.org/.\n\n\nBest regards,\nRicardo Landolt\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n\nI am happy to announce that my new package shadowr is now available on\nCRAN.\n\nThe package enables to use the shadow selenium plugin<https://github.com/sukgu/shadow-automation-selenium>",
+      "thread_id": "thread-5ec4fbf7dfe7",
+      "thread_depth": 0,
+      "month": "2022-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5ec4fbf7dfe7",
+      "subject": "shadowr: Selenium plugin to manage multiple levels of shadow elements on web page",
+      "message_count": 1,
+      "participants": [
+        "ric@rdo@i@@doit m@iii@g oii outiook@com"
+      ],
+      "started": "2022-05-25T06:58:21+00:00",
+      "last_reply": "2022-05-25T06:58:21+00:00",
+      "root_message_id": "msg-5ec4fbf7dfe7"
+    }
+  ]
+}

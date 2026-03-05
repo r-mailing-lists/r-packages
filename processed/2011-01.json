@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-01",
+  "messages": [
+    {
+      "id": "msg-2d9e1cbbd3e6",
+      "message_id": "<AANLkTim+N8Zvf-c4uOrxrynP1SEjWhVs+a5doMaf=qBG@mail.gmail.com>",
+      "from_name": "Peter Solymos",
+      "from_email_hash": "3e4e5c37645041a11f505cbd9ee9456181aeea94ae29ebbc2f9032bc9b3633e1",
+      "date": "2011-01-03T10:05:20-07:00",
+      "subject": "[R-pkgs] dclone 1.3-0",
+      "subject_clean": "dclone 1.3-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am happy to introduce the latest version 1.3-0 of the 'dclone' R package.\n\nThe package provides low level functions for implementing maximum\nlikelihood estimating procedures for complex models using data cloning\nand Bayesian Markov chain Monte Carlo methods with support for JAGS,\nWinBUGS and OpenBUGS.\n\nData cloning is a global optimization approach and a variant of\nsimulated annealing which exploits Bayesian MCMC tools to get maximum\nlikelihood point estimates and corresponding standard errors (see Lele\net al. 2007, Ecology Letters, 10:551-563).\n\nThe implementation used in the 'dclone' package is described in the\nrecent paper: Solymos, P. 2010. dclone: Data Cloning in R. The R\nJournal, 2(2):29-37. URL:\nhttp://journal.r-project.org/archive/2010-2/RJournal_2010-2_Solymos.pdf\n\nThe current release of 'dclone' supports parallel computations via the\n'snow' package.\n\nHave fun,\n\nPeter\n\nPeter Solymos\nAlberta Biodiversity Monitoring Institute\nand Boreal Avian Modelling project\nDepartment of Biological Sciences\nCW 405, Biological Sciences Bldg\nUniversity of Alberta\nEdmonton, Alberta, T6G 2E9, Canada\nPhone: 780.492.8534\nFax: 780.492.7635\nemail <- paste(\"solymos\", \"ualberta.ca\", sep = \"@\")\nhttp://www.abmi.ca\nhttp://www.borealbirds.ca\nhttp://sites.google.com/site/psolymos\n\n--\n\nMain functions in the 'dclone' package include:\n\n* dclone, dcdim: cloning R objects in various ways.\n\n* jags.fit, bugs.fit: conveniently fit BUGS models. (jags.parfit fits\nchains on parallel\nworkers for JAGS.)\n\n* dc.fit: iterative model fitting by the data cloning algorithm.\n(dc.parfit is the parallelized\nversion.)\n\n* dctable, dcdiag: helps evaluating data cloning convergence by\ndescriptive statistics and diagnostic tools. (These are based on e.g.\nchisq.diag and lambdamax.diag.)\n\n* coef.mcmc.list, confint.mcmc.list.dc, dcsd.mcmc.list,\nquantile.mcmc.list, vcov.mcmc.list.dc, mcmcapply: convenient functions\nfor mcmc.list objects.\n\n* write.jags.model, clean.jags.model, custommodel: convenient\nfunctions for handling\nBUGS models.",
+      "body_snippet": "Dear R Community,\n\nI am happy to introduce the latest version 1.3-0 of the 'dclone' R package.\n\nThe package provides low level functions for implementing maximum\nlikelihood estimating procedures for c",
+      "thread_id": "thread-2d9e1cbbd3e6",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-c4fad0492949",
+      "message_id": "<4D2212EE.5070404@uni-hamburg.de>",
+      "from_name": "Jens Rogmann (ABK/SK-Zentrum EPB Uni HH)",
+      "from_email_hash": "d48d078fec4801330d98babfc39a8153fd5e4cbcef2b52e854ad6f72b512ca1b",
+      "date": "2011-01-03T19:18:22+01:00",
+      "subject": "[R-pkgs] orddom package for Ordinal Dominance Statistics",
+      "subject_clean": "orddom package for Ordinal Dominance Statistics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff?s delta \nstatistics. It provides basic parameters for various robust tests of \nstochastic equality with ordinally scaled variables.\n\nFor two sets of data, ordinal comparison estimates are calculated such as\n- Cliff's delta (for which a Cohen's d effect size estimate, along with \nCIs are also calculated), (cf. Cliff, 1993; 1996; Long, Feng, & Cliff, \n2003; Feng & Cliff, 2004; Feng, 2007);\n\n- the Common Language CL effect size or Probability of Superiority (PS) \n(Grissom, 1994; Grissom & Kim, 2005) estimate; and\n\n- estimates of Vargha and Delaney?s A as stochastic superiority (Vargha \n& Delaney, 1998, 2000; Delaney & Vargha, 2002).\n\nReferences and details can be found in the package help manual.\nThe package is available as of now via\nhttp://cran.r-project.org/web/packages/orddom/index.html\n\nYour comments and suggestions are appreciated; please send your email to \njens.rogmann _AT_ uni-hamburg.de\n\nThank you,\nKind regards\n\nJens J. Rogmann\n---------------\nDr. J. J. Rogmann\nUniversit?t Hamburg\nFakultaet EPB / ABK\nDept of Psychology\nVon-Melle-Park 5/IV\nD-20146 Hamburg\nGermany",
+      "body_snippet": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff?s delta \n",
+      "thread_id": "thread-c4fad0492949",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-1e6ab882caea",
+      "message_id": "<AANLkTinNrYT0U0PG=TR8xN=Pmi8hM6zGGqL+647Kq9EE@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-01-04T14:14:50Z",
+      "subject": "[R-pkgs] plyr 1.4",
+      "subject_clean": "plyr 1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in functions.\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.  You can ask\nquestions about plyr (and data-manipulation in general) on the plyr\nmailing list. Sign up at http://groups.google.com/group/manipulatr\n\nVersion 1.4 (2011-01-03)\n------------------------------------------------------------------------------\n\n* `count` now takes an additional parameter `wt_var` which allows you to\n  compute weighted sums. This is as fast, or faster than, `tapply` or `xtabs`.\n\n* Really fix bug in `names.quoted`\n\n* `.` now captures the environment in which it was evaluated. This should fix\n  an esoteric class of bugs which no-one probably ever encountered, but will\n  form the basis for an improved version of `ggplot2::aes`.\n\nVersion 1.3.1 (2010-12-30)\n------------------------------------------------------------------------------\n\n* Fix bug in `names.quoted` that interfered with ggplot2\n\nVersion 1.3 (2010-12-28)\n------------------------------------------------------------------------------\n\nNEW FEATURES\n\n* new function `mutate` that works like transform to add new columns or\n  overwrite existing columns, but computes new columns iteratively so later\n  transformations can use columns created by earlier transformations. (It's\n  also about 10x faster) (Fixes #21)\n\nBUG FIXES\n\n* split column names are no longer coerced to valid R names.\n\n* `quickdf` now adds names if missing\n\n* `summarise` preserves variable names if explicit names not provided (Fixes\n  #17)\n\n* `arrays` with names should be sorted correctly once again (also fixed a bug\n  in the test case that prevented me from catching this automatically)\n\n* `m_ply` no longer possesses .parallel argument (mistakenly added)\n\n* `ldply` (and hence `adply` and `ddply`) now correctly passes on .parallel\n  argument (Fixes #16)\n\n* `id` uses a better strategy for converting to integers, making it possible\n  to use for cases with larger potential numbers of combinations\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
+      "thread_id": "thread-1e6ab882caea",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-ddc14ae28a36",
+      "message_id": "<AANLkTimetGWBEof26V7spkfTD+dqUXy_E1REmLFvo+zR@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-01-04T14:16:02Z",
+      "subject": "[R-pkgs] reshape2 1.1",
+      "subject_clean": "reshape2 1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape2 is a reboot of the reshape package. It's been over five years\nsince the first release of the package, and in that time I've learned\na tremendous amount about R programming, and how to work with data in\nR. Reshape2 uses that knowledge to make a new package for reshaping\ndata that is much more focussed and much much faster.\n\nThis version improves speed at the cost of functionality, so I have\nrenamed it to `reshape2` to avoid causing problems for existing users.\n Based on user feedback I may reintroduce some of these features.\n\nWhat's new in `reshape2`:\n\n * considerably faster and more memory efficient thanks to a much better\n   underlying algorithm that uses the power and speed of subsetting to the\n   fullest extent, in most cases only making a single copy of the data.\n\n * cast is replaced by two functions depending on the output type: `dcast`\n   produces data frames, and `acast` produces matrices/arrays.\n\n * multidimensional margins are now possible: `grand_row` and `grand_col` have\n   been dropped: now the name of the margin refers to the variable that has\n   its value set to (all).\n\n * some features have been removed such as the `|` cast operator, and the\n   ability to return multiple values from an aggregation function. I'm\n   reasonably sure both these operations are better performed by plyr.\n\n * a new cast syntax which allows you to reshape based on functions\n   of variables (based on the same underlying syntax as plyr):\n\n * better development practices like namespaces and tests.\n\nInitial benchmarking has shown `melt` to be up to 10x faster, pure\nreshaping `cast` up to 100x faster, and aggregating `cast()` up to 10x\nfaster.\n\nThis work has been generously supported by BD (Becton Dickinson).\n\nVersion 1.1\n-----------\n\n* `melt.data.frame` no longer turns characters into factors\n\n* All melt methods gain a `na.rm` and `value.name` arguments - these\n  previously were only possessed by `melt.data.frame` (Fixes #5)\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "Reshape2 is a reboot of the reshape package. It's been over five years\nsince the first release of the package, and in that time I've learned\na tremendous amount about R programming, and how to work wi",
+      "thread_id": "thread-ddc14ae28a36",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-213340080f0b",
+      "message_id": "<4D232EFC.1040602@univie.ac.at>",
+      "from_name": "Erich Neuwirth",
+      "from_email_hash": "178c9665decd09e76ed713e123ba2a6b2ed2ac166995047eb6dc12c5ab93e7ac",
+      "date": "2011-01-04T15:30:20+01:00",
+      "subject": "[R-pkgs] ENmisc_1.0",
+      "subject_clean": "ENmisc_1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ENmisc contains two utility function\n\nmtapply is a hybrid of mapply and tapply. It evaluates summary function\nfor each cell of data defined by a fixed set of factor values.\nThe reason I wrote it was to be able to compute weighted means\n(using wtd.mean from Hmisc) to groups of data defined by factors,\nbut it accepts any multivariate function as the function argument\n\nwtd.boxplot does what the name makes you expect, it computes and draws\nboxplots for weighted data. It behaves like boxplot, but accepts an\nadditional argument, weights.",
+      "body_snippet": "ENmisc contains two utility function\n\nmtapply is a hybrid of mapply and tapply. It evaluates summary function\nfor each cell of data defined by a fixed set of factor values.\nThe reason I wrote it was t",
+      "thread_id": "thread-213340080f0b",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-3c4c11a0c577",
+      "message_id": "<AANLkTin7Y_Nu3ThBtpn8hsfkzLyy1h-VEEHtvxVgdM-p@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2011-01-04T09:55:20-06:00",
+      "subject": "[R-pkgs] Package animation update (v2.0-0)",
+      "subject_clean": "Package animation update (v2.0-0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nThe animation package 2.0-0 is on CRAN now. This version is a\nmilestone of the animation package. It includes a new function\nsaveHTML() which uses a much more elegant interface and is consistent\nin syntax with other save*() functions such as saveMovie(), saveSWF()\nand saveLatex(). Lots of demos have been added to demonstrate the\nflexibility of this package, e.g. now we can get the snapshots of rgl\n3D plots and insert them into LaTeX with a single call to saveLatex(),\nor even into Sweave documents.\n\nThere are some funny demos in this version too, e.g. demo('fireworks')\nto set fireworks, or demo('CLEvsLAL') which is a \"replay\" of an NBA\ngame between Cavaliers and Lakers on 2009.\n\nHave fun!\n\n\n? ? ? ? ? ? ? ? ?CHANGES IN animation VERSION 2.0-0\n\n\nNEW FEATURES\n\n? ?o a new demo 'Xmas2': Merry Christmas with snowflakes (see\n?demo('Xmas2', 'animation'); thanks, Jing Jiao)\n\n? ?o a new function saveHTML() to insert animations into HTML pages\n?(this was designed to replace the old ani.start() and ani.stop();\n?the output is much more appealing; the JavaScript is based on the\n?SciAnimator library and jQuery)\n\n? ?o ani.options() gained a new option 'autoplay' to indicate whether\n?to autoplay the animation in the HTML page created by saveHTML()\n\n? ?o in fact ani.options() was rewritten, but this should not have\n?any influence on users; the usage is the same\n\n? ?o ani.options() gained a new option 'use.dev' to decide whether to\n?use the graphics device provided in ani.options('ani.dev') when\n?calling saveHTML(), saveLatex(), saveMovie() and saveSWF()\n\n? ?o ani.options() has a couple of hidden options ('convert',\n?'swftools', 'img.fmt') which can be useful too; see ?ani.options for\n?details\n\n? ?o a new function ani.pause(): it is a wrapper to\n?Sys.sleep(interval) but it will not pause when called in a\n?non-interactive graphics device (usually the off-screen devices);\n?this is the recommended way to specify the pause in the animation\n?now -- all the functions in this package have been adjusted to use\n?ani.pause()\n\n? ?o a new demo('pollen') to show the hidden 'structure' in a large\n?data (requires the rgl package)\n\n? ?o a new demo('CLEvsLAL') to `replay' the NBA game between CLE and\n?LAL on 2009 Christmas (with a new dataset 'CLELAL09')\n\n? ?o a new demo('fireworks') to set fireworks using R (thanks,\n?Weicheng Zhu)\n\n? ?o saveLatex() can work with the rgl package to produce 3D animations\n?in a PDF document now; see demo('rgl_animation')\n\n? ?o a new demo('rgl_animation') to demonstrate how to insert rgl 3D\n?animations into a LaTeX document and compile to PDF\n\n? ?o a new demo('use_Cairo') to show how to use the Cairo device in\n?this package to obtain high-quality output\n\n? ?o a new demo('Sweave_animation') to show how to insert animations\n?into Sweave documents\n\n? ?o a new demo('game_of_life') to demonstrate the (amusing) Game of\n?Life (thanks, Linlin Yan)\n\n\nSIGNIFICANT CHANGES\n\n? ?o the documentation of this package has been tremendously revised;\n?hopefully it is more clear to read now\n\n? ?o several arguments in saveMovie(), im.convert(), saveSWF() and\n?saveLatex() were removed, because they can be specified by\n?ani.options(); this can simplify the usage of these functions\n\n\nMINOR CHANGES\n\n? ?o the argument 'para' in saveMovie() was removed; the argument\n?'ani.first' was also removed from all the save*() functions, because\n?this can be written in 'expr' and there is no need to provide an\n?additional argument\n\n? ?o the path of the output in im.convert() and gm.convert() will be\n?quoted, because sometimes users might supply a path containing\n?spaces (thanks, Phalkun Chheng)\n\n? ?o the option 'filename' in ani.options() was renamed to 'htmlfile'\n?so that the meaning of this option is more clear; 'footer' was\n?renamed to 'verbose' too\n\n? ?o ani.options() can accept any arguments now\n\n? ?o im.convert() and gm.convert() will no longer stop() when the\n?convert utility cannot be found; instead, they only issue warnings;\n?a hidden option ani.options('convert') can be used to specify the\n?location of convert.exe in ImageMagick\n\n? ?o saveMovie(), saveHTML(), saveSWF() and saveLatex() will try to\n?open the output if ani.options('autobrowse') is TRUE; and they will\n?keep the current working directory untouched when evaluating 'expr'\n?(i.e. ?'expr' will be evaluated under getwd())\n\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "Hi,\n\nThe animation package 2.0-0 is on CRAN now. This version is a\nmilestone of the animation package. It includes a new function\nsaveHTML() which uses a much more elegant interface and is consistent\n",
+      "thread_id": "thread-3c4c11a0c577",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-09238f6a6da1",
+      "message_id": "<AANLkTikAeD_iih8ug+1t1X6qvE9Ud52X3DRNUO9x8=Kk@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2011-01-10T16:56:08-06:00",
+      "subject": "[R-pkgs] Package Rd2roxygen v0.1-5",
+      "subject_clean": "Package Rd2roxygen v0.1-5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nA new version (0.1-5) of Rd2roxygen is on CRAN now.\n\nRd2roxygen is a package to help developers transit from the raw Rd\nfiles to roxygen-style documentations, and it also has utilities to\nhelp build the package (with options to reformat the usage and\nexamples sections).\n\nUpdates:\n\n?o a new way to reformat the usage and examples sections generated by\nroxygen; it is more reliable than earlier versions, e.g. the\n\\subsection{}{} macro will no longer be destroyed when reformatting\nthe Rd and building the package.\n\nSee the package vignette for more details:\n\nlibrary(Rd2roxygen)\nvignette('Rd2roxygen')\n## or http://cran.r-project.org/web/packages/Rd2roxygen/vignettes/Rd2roxygen.pdf\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "Hi,\n\nA new version (0.1-5) of Rd2roxygen is on CRAN now.\n\nRd2roxygen is a package to help developers transit from the raw Rd\nfiles to roxygen-style documentations, and it also has utilities to\nhelp bu",
+      "thread_id": "thread-09238f6a6da1",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-1cec123fb33b",
+      "message_id": "<AANLkTimV6MxT=Adnvx6bSTDqV_faP3mvKME1G8neYzRw@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2011-01-10T16:59:07-06:00",
+      "subject": "[R-pkgs] Package animation update 2.0-1",
+      "subject_clean": "Package animation update 2.0-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nThe package animation 2.0-1 is on CRAN now\n(http://cran.r-project.org/package=animation).\n\n\n? ? ? ? ? ? ? ? ?CHANGES IN animation VERSION 2.0-1\n\n\nNEW FEATURES\n\n? ?o demo('Xmas_card') contributed by Yuan Huang\n\n? ?o demo('flowers') to show how to download images from the Internet\n?and create an animation\n\n? ?o a new function pdftk() as a wrapper to call the Pdftk toolkit\n?(mainly for compressing PDF graphics output)\n\n? ?o saveLatex(), saveSWF() and saveMovie() can compress the PDF\n?graphics using Pdftk (if available) now; if ani.options('ani.type')\n?is 'pdf' and the 'pdftk' option is set, these functions will try the\n?compression first\n\n? ?o new functions ani.record() and ani.replay() to record and replay\n?the animations; they can be used to capture the changes in the\n?graphics made by low-level plotting commands (see ?ani.record for\n?examples)\n\n\nSIGNIFICANT CHANGES\n\n? ?o the function tidy.source() was completely removed from this\n?package; users should go to the formatR package (tidy.source() is\n?there now)\n\n\nMINOR CHANGES\n\n? ?o the argument 'expr' in saveHTML(), saveLatex(), saveMovie() and\n?saveSWF() will be evaluated by eval(), so we may pass a real R\n?expression (see ?expression) to 'expr', e.g. saveHTML(expression(for\n?(i in 1:10) plot(runif(30)))); but note this argument does not *have\n?to* be a real R expression -- you can still use an arbitrary R code\n?chunk, e.g. saveHTML(for (i in 1:10) plot(runif(30))) (thanks,\n?Aquery)\n\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "Hi,\n\nThe package animation 2.0-1 is on CRAN now\n(http://cran.r-project.org/package=animation).\n\n\n? ? ? ? ? ? ? ? ?CHANGES IN animation VERSION 2.0-1\n\n\nNEW FEATURES\n\n? ?o demo('Xmas_card') contributed ",
+      "thread_id": "thread-1cec123fb33b",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-2fac83597bbe",
+      "message_id": "<4D400B9B.6010707@itwm.fraunhofer.de>",
+      "from_name": "Dr. Peter Ruckdeschel",
+      "from_email_hash": "e1a5284edd05344af58462cd7612e9492ad67fdfa1603d275d5f8d319567262c",
+      "date": "2011-01-26T12:55:07+01:00",
+      "subject": "[R-pkgs] New package versions for distr- and robast- families",
+      "subject_clean": "New package versions for distr- and robast- families",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nNew versions 2.3 of our distr-family of packages are now\navailable on CRAN.\n\n(i.e.; startupmsg, SweaveListingUtils,\n       distr, distrEx, distrDoc, distrEllipse,\n       distrMod, distrSim, distrTEst, distrTeach)\n\nMost importantly, we have included:\n\n+ a quasi-MC trick by Nataliya Horbenko to better produce\n  image distributions under complicated, not necessarily\n  monotone transformations\n+ enhanced function qqplot\n+ (enhanced) support for GEV distribution\n+ new functional kMad\n+ as well as several bug fixes\n\nFor more details see the corresponding NEWS files\n(e.g. news(package = \"distr\")\nor using function NEWS from package startupmsg\ni.e. NEWS(\"distr\")).\n\nWe are looking forward to getting your RFEs, bug reports \nor simple feedback,\n\nBest,\n\nPeter, Matthias, Nataliya\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nNew versions 0.8 of our RobASt-family of packages are now\navailable on CRAN.\n\n(i.e.; RandVar, RobAStBase, ROptEst,\n       RobLox, ROptEstOld, ROptEstTS, RobRex,\n       RobLoxBioC)\n\nMost importantly, we have included:\n\n+ a quasi-MC trick by Nataliya Horbenko to better produce\n  random variables under complicated not necessarily\n  monotone transformations\n\n+ enhanced functions\n   infoPlot, (plots relative information used for coordinates\n              of a parameter estimator)\n   ddPlot, (distance-distance plot)\n   cniperPointPlot, (cniper concept for seemingly harmless\n            contamination behavior)\n   qqplot (now gets outlier corrected versions)\n\n+ new risks: asAnscombe, asL1, asL4\n  for asymptotic L1 L4 risk, and optimal bias robust estimator,\n   to given efficiency loss in ideal model\n\n+ new helper methods makeIC\n  to apply to functions or list of functions\n  for easily producing (suboptimal) ICs\n\n+ new function getReq for two ICs IC1 and IC2\n  to compute a radius interval where IC1 is better\n  than IC2 acc. to G-Risk\n\n+ new function getMaxIneff() to compute,\n  for any IC of class 'IC', the maximal inefficiency\n  for radius r varying in [0,Inf)\n\n+ as well as several bug fixes\n\nFor more details see the corresponding NEWS files\n(e.g. news(package = \"RobAStBase\")\nor using function NEWS from package startupmsg\ni.e. NEWS(\"RobAStBase\")).\n\nWe are looking forward to getting your RFEs, bug reports \nor simple feedback,\n\n\nBest,\n\nPeter, Matthias, Nataliya\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\n-- \nDr. Peter Ruckdeschel, Abteilung Finanzmathematik, F3.17\nFraunhofer ITWM, Fraunhofer Platz 1, 67663 Kaiserslautern\nTelefon:  +49 631/31600-4699\nFax    :  +49 631/31600-5699\nE-Mail :  peter.ruckdeschel at itwm.fraunhofer.de",
+      "body_snippet": "------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nNew versions 2.3 of our distr-family of packages are ",
+      "thread_id": "thread-2fac83597bbe",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-3bb6aab7fb2f",
+      "message_id": "<127B60EF19BB9F4FB94D157AA8BF3D0A93323B102C@EMAIL06.pnl.gov>",
+      "from_name": "Taverner, Thomas",
+      "from_email_hash": "b1f366bba8e9c729f28d1e1aedd63126a9c927930c7cd42ffa1d692907e72bf0",
+      "date": "2011-01-26T12:10:15-08:00",
+      "subject": "[R-pkgs] RGtk2Extras package for dataframe editing and easy dialog creation",
+      "subject_clean": "RGtk2Extras package for dataframe editing and easy dialog creation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nThis is to announce the RGtk2Extras R package is available on CRAN in version 0.5.1.\n\nThis package provides useful extras for R programmers who wish to create graphic user interfaces. It is based on GTK, using Michael Lawrence's RGtk2 package and John Verzani's gWidgets, and some ideas from John Verzani's traitr package.\n\nThe first major feature of RGtk2Extras, the run.dialog function, is an interface for creating simple front-ends to R functions using a terse markup scheme. No GUI knowledge is required; if you can write an R function, you can create a dialog for it.\n\nAn example:\n\n    # A function with one argument, N\n\n  Histogram = function(N) hist(rnorm(N))\n\n    # Dialog markup list for the function Histogram\n    # Create the main dialog label with the first \"label=\" (optional)\n    # Then specify N.integerItem=50, where \n    #   (1) N is the function argument\n    #   (2) integerItem is the type of widget to use, see ?run.dialog\n    #   (3) the value 50 is the default\n    # Then with the second \"label=\" add a label for the \"N\" item (optional)\n\n  Histogram.dialog = list(label = \"Histogram of N points\",\n    N.integerItem = 50, label = \"Value of N\")\n  \n    # Run the dialog.\n    # The returned list has elements \"args\" for dialog arguments\n    # and \"retval\" for the return value.\n    # With auto.assign=TRUE, the return value is stored in \"Histogram_output\".\n    # run.dialog also does error handling, interrupts and an optional \n    # progress bar dialog for long running tasks, see ?run.dialog\n\n  a = run.dialog(Histogram)\n\nA more complex demo example, thanks to Graham Williams:\n\n  demo(MakeAngle)\n\n\nThe second feature of RGtk2Extras is gtkDfEdit, an editable spreadsheet widget designed for editing data matrices and data frames. It's also based on RGtk2. This was released earlier as RGtk2DfEdit which was then folded into RGtk2Extras.\n\nThe gtkDfEdit spreadsheet is quite full featured and has been designed to be familiar to Excel users, while allowing most of the data frames and factor operations that are possible from the R command line.\n\nData frame columns are type-aware and there is a factor editor. Most functions can be accessed from right clicking on data columns or cells. There is undo, cross platform copy/paste, sorting, cell filling, and data loading capabilities. See ?gtkDfEdit.\n\nThe widget provided by gtkDfEdit() can be integrated into larger RGtk2 based user interfaces, or its standalone wrapper dfedit() can be used as a straight replacement for edit.data.frame().\n\nThere is also a basic API for manipulating and binding event handlers to the spreadsheet. See ?gtkDfEditDoTask and ?gtkDfEditSetActionHandler.\n\n# Edit the iris data frame\n# Note the blank row at the bottom to allow pasting into rows below.\nx = dfedit(iris)\n\n# Example user interactions\n1. Right click the \"Species\" column or column header to see or change the data type. Click \"Edit Factors\" to change factor levels or ordering.\n\n2. Right click a column header and then click \"Sort\" to sort columns\n\n3. Right click column header and change data type by selecting \"Character\"/\"Integer\" etc. Factors can be changed to integer levels (\"To Factor Levels\") or integers (\"To Factor Ordering\")\n\n4. Right click column header to insert or delete columns or change column name.\n\n5. Select a submatrix of numbers within \"iris\" and press the \"=\" key to bring up the Command Editor, then type \"hist\" in the command field and \"OK\" to create a histogram of the submatrix; \"function(x) hist(x)\" works as well.\n\n6. Select a submatrix within \"iris\" and press Ctrl-V or right-click and select Copy to copy into an external spreadsheet; Ctrl-C works to paste into the data frame. Ctrl-Shift-C copies submatrix and row and column names. (The equivalent Mac keys should also work.)\n\n7. Select a range of cells within \"Species\" column and right-click to select \"Fill in Cycles\" to fill cyclic factors.\n\n8. Right click left hand corner cell to open CSV file into editor or save as file.\n\n9. Right click left hand corner cell and \"Default Columns\" to set columns to default Excel-style column headers.\n\n10. Ctrl-Z to undo previous edits.\n# End of examples\n\nRGtk2Extras is still in a beta stage of development. It is hosted on r-forge.r-project.org/R/?group_id=924. Comments and suggestions appreciated; email thomas.taverner _AT_ pnl.gov\n\nThanks to the entire R community, particularly the R Development Core Team, Michael Lawrence and John Verzani, and also Graham Williams and Iago Conde for comments.\n\nTom",
+      "body_snippet": "Dear useRs,\n\nThis is to announce the RGtk2Extras R package is available on CRAN in version 0.5.1.\n\nThis package provides useful extras for R programmers who wish to create graphic user interfaces. It ",
+      "thread_id": "thread-3bb6aab7fb2f",
+      "thread_depth": 0,
+      "month": "2011-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2d9e1cbbd3e6",
+      "subject": "dclone 1.3-0",
+      "message_count": 1,
+      "participants": [
+        "Peter Solymos"
+      ],
+      "started": "2011-01-03T10:05:20-07:00",
+      "last_reply": "2011-01-03T10:05:20-07:00",
+      "root_message_id": "msg-2d9e1cbbd3e6"
+    },
+    {
+      "id": "thread-c4fad0492949",
+      "subject": "orddom package for Ordinal Dominance Statistics",
+      "message_count": 1,
+      "participants": [
+        "Jens Rogmann (ABK/SK-Zentrum EPB Uni HH)"
+      ],
+      "started": "2011-01-03T19:18:22+01:00",
+      "last_reply": "2011-01-03T19:18:22+01:00",
+      "root_message_id": "msg-c4fad0492949"
+    },
+    {
+      "id": "thread-3c4c11a0c577",
+      "subject": "Package animation update (v2.0-0)",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2011-01-04T09:55:20-06:00",
+      "last_reply": "2011-01-04T09:55:20-06:00",
+      "root_message_id": "msg-3c4c11a0c577"
+    },
+    {
+      "id": "thread-1e6ab882caea",
+      "subject": "plyr 1.4",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-01-04T14:14:50+00:00",
+      "last_reply": "2011-01-04T14:14:50+00:00",
+      "root_message_id": "msg-1e6ab882caea"
+    },
+    {
+      "id": "thread-ddc14ae28a36",
+      "subject": "reshape2 1.1",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-01-04T14:16:02+00:00",
+      "last_reply": "2011-01-04T14:16:02+00:00",
+      "root_message_id": "msg-ddc14ae28a36"
+    },
+    {
+      "id": "thread-213340080f0b",
+      "subject": "ENmisc_1.0",
+      "message_count": 1,
+      "participants": [
+        "Erich Neuwirth"
+      ],
+      "started": "2011-01-04T15:30:20+01:00",
+      "last_reply": "2011-01-04T15:30:20+01:00",
+      "root_message_id": "msg-213340080f0b"
+    },
+    {
+      "id": "thread-09238f6a6da1",
+      "subject": "Package Rd2roxygen v0.1-5",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2011-01-10T16:56:08-06:00",
+      "last_reply": "2011-01-10T16:56:08-06:00",
+      "root_message_id": "msg-09238f6a6da1"
+    },
+    {
+      "id": "thread-1cec123fb33b",
+      "subject": "Package animation update 2.0-1",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2011-01-10T16:59:07-06:00",
+      "last_reply": "2011-01-10T16:59:07-06:00",
+      "root_message_id": "msg-1cec123fb33b"
+    },
+    {
+      "id": "thread-3bb6aab7fb2f",
+      "subject": "RGtk2Extras package for dataframe editing and easy dialog creation",
+      "message_count": 1,
+      "participants": [
+        "Taverner, Thomas"
+      ],
+      "started": "2011-01-26T12:10:15-08:00",
+      "last_reply": "2011-01-26T12:10:15-08:00",
+      "root_message_id": "msg-3bb6aab7fb2f"
+    },
+    {
+      "id": "thread-2fac83597bbe",
+      "subject": "New package versions for distr- and robast- families",
+      "message_count": 1,
+      "participants": [
+        "Dr. Peter Ruckdeschel"
+      ],
+      "started": "2011-01-26T12:55:07+01:00",
+      "last_reply": "2011-01-26T12:55:07+01:00",
+      "root_message_id": "msg-2fac83597bbe"
+    }
+  ]
+}

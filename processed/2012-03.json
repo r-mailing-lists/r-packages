@@ -1,0 +1,387 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-03",
+  "messages": [
+    {
+      "id": "msg-e1715c47eb93",
+      "message_id": "<CABdHhvGw_=NFE6vXs-0oy-F1OQQR_1GCvfRjQs4URRrNA_DgMg@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2012-03-02T06:54:48-06:00",
+      "subject": "[R-pkgs] devtools 0.6",
+      "subject_clean": "devtools 0.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# devtools\n\nThe aim of `devtools` is to make your life as a package developer\neasier by providing R functions that simplify many common tasks.\nDevtools is opinionated about how to do package development, and\nrequires that you use `roxygen2` for documentation and `testthat` for\ntesting. Future version will relax these opinions - patches are\nwelcome! You can track (and contribute to) development of `devtools`\nat https://github.com/hadley/devtools.\n\nFor discussion related to package development with devtools see the\n[rdevtools](http://groups.google.com/group/rdevtools) mailing list.\n\ndevtools 0.6\n------------\n\nNEW FEATURES\n\n* `test` function takes `filter` argument which allows you to restrict which\n  tests are to be run\n\n* `check` runs with example timings, as is done on CRAN. Run with new param\n  `cleanup = F` to access the timings.\n\n* `missing_s3` function to help figure out if you've forgotten to export any\n  s3 methods\n\n* `check_cran` downloads and checks a CRAN package - this is useful to run as\n  part of the testing process of your package if you want to check the\n  dependencies of your package\n\n* `strict` mode for `run_examples` which runs each example in a clean\n  environment. This is much slower than the default (running in the current\n  environment), but ensures that each example works standalone.\n\n* `dev_mode` now updates prompt to indicate that it's active (Thanks to Kohske\n  Takahashi)\n\n* new `source_url` function for sourcing script on a remote server via\n  protocols other than http (e.g. https or ftp). (Thanks to Kohske Takahashi)\n\n* new `source_gist` function to source R code stored in a github gist. (Thanks\n  to Kohske Takahashi)\n\n* `load_all` now also loads all package dependencies (including suggestions) -\n  this works around some bugs in the way that devtools attaches the\n  development environment into the search path in a way that fails to recreate\n  what happens normally during package loading.\n\nINSTALLATION\n\n* remote installation will ensure the configure file is executable.\n\n* all external package installation functions are vectorised so you can\n  install multiple packages at time\n\n* new `install_gitorious` function install packages in gitorious repos.\n\n* new `install_url` function for installing package from an arbitrary url\n\n* include `install_version` function from Jeremy Stephens for installing a\n  specific version of a CRAN package from the archive.\n\nBETTER WINDOWS BEHAVIOUR\n\n* better check for OS type (thanks to Brian Ripley)\n\n* better default paths for 64-bit R on windows (Fixes #35)\n\n* check to see if Rtools is already available before trying to mess with the\n  paths. (Fixes #55)\n\nBUG FIXES\n\n* if an error occurs when calling loading R files, the cache will be\n  automatically cleared so that all files are loaded again next time you try\n  (Fixes #55)\n\n* functions that run R now do so with `R_LIBS` set to the current\n  `.libPaths()` - this will ensure that checking uses the development library\n  if you are in development mode. `R_ENVIRON_USER` is set to an empty file to\n  avoid your existing settings overriding this.\n\n* `load_data` (called by `load_all`) will also load data defined in R files in\n  the data directory. (Fixes #45)\n\n* `dev_mode` performs some basic tests to make sure you're not setting your\n  development library to a directory that's not already an R library. (Fixes\n  #25)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# devtools\n\nThe aim of `devtools` is to make your life as a package developer\neasier by providing R functions that simplify many common tasks.\nDevtools is opinionated about how to do package developme",
+      "thread_id": "thread-e1715c47eb93",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-41a5b1396e14",
+      "message_id": "<CABdHhvGjytdGCxr4Ak69LsPqix+Jq4kWrr0gA46fkKa3MZAUTw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2012-03-02T07:04:16-06:00",
+      "subject": "[R-pkgs] ggplot2 0.9.0",
+      "subject_clean": "ggplot2 0.9.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# ggplot2\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at http://github.com/hadley/ggplot2\n\nggplot2 0.9.0 has an extensive set of changes, summarised below and\ndescribed in detail in a 40 page transition guide:\nhttp://bit.ly/AhLHuV\n\nggplot2 0.9.0\n----------------------------------------------------------------\n\nNEW FEATURES\n\n* `annotation_custom`: a new geom intended for use as static annnotations that\n  are the same in every panel. Can be used to add inset plots, tables, and\n  other grid-based decorations inside the plot area (Contributed by Baptiste\n  Augui?).\n\n* `geom_map`: a new special case of `geom_polygon` useful when you are drawing\n  maps, particularly choropleth maps. It is matched with `annotation_map`, an\n  even faster special case when you want the same map drawn in each panel.\n\n* `geom_raster` is a special case of `geom_tile` for equally sized rectangular\n  tiles. It uses the raster functionality of R graphics devices for massively\n  increased speed and much decreased file sizes. It is matched with\n  `annotation_raster`, an even faster special case, for when you want to draw\n  the same raster in each panel.\n\n* `geom_violin`: an implementation of violin plots, which are a way of\n  visualizing kernel density estimates. (Thanks to Winston Chang)\n\n* `geom_dotplot`: dot plots, as described in Wilkinson (1999). To bin the\n  data, it uses `stat_bindot` to bin the data, which has two methods: histodot\n  and dot-density. Histodot binning uses fixed-width bins just like\n  `stat_bin`, while dot-density binning uses variable-width bins. A new grob,\n  `grob_dotstack` is used to render the dots. (Thanks to Winston Chang)\n\n* New fortify methods have been added for objects produced by the `multcomp`\n  package.\n\n* `stat_summary2d` and `stat_summary_hex`. These are work like `stat_bin2d`\n  and stat_binhex but allow any summarisation function (instead of just\n  count). They are 2d analogs of `stat_summary`\n\n* `facet_grid`: The space argument now supports `free_x` and `free_y` next to\n  `free` and `fixed, this allows the user to adjust the spatial scaling of the\n  facets in either the x or y direction. This is especially useful when the\n  scales are very different. In this case space = `free` could make some\n  facets very small. (Thanks to Willem Ligtenberg)\n\nDOCUMENTATION\n\n* Thorough clean up and checking, including documenting all arguments, adding\n  systematic cross-references, and adding commonly requested examples. Thanks\n  to Jake Russ and Dennis Murphy for the help.\n\n* Complete series of aesthetics pages (grouped subsets of aesthetics) with\n  examples of how to use the major ones, see e.g. `?fill`, `?shape`, `?x`,\n\n* Added a complete list of theme opts with usage examples in `?opts`\n\n* Added \"translate\" pages to demonstrate usage between qplot and ggplot, GPL,\n  base and lattice graphics: `?translate_qplot_base`, `?translate_qplot_gpl`,\n  `?translate_qplot_lattice`, `?translate_qplot_ggplot`,\n\nSCALES\n\n* Scales have been rewritten to use the new `scales` package, which does a\n  much better job at defining what a scale is and making it easier for you to\n  create your own scales. Scales should now behave much more consistently, and\n  it should be easier for me to add new features in the future.\n\n* `breaks` parameter can now be a function, which will be passed the scale\n  limits and expected to return a character vector of breaks\n\n* `labels` parameter can now be a function - this replaces the previous\n  formatter function that only some scales possessed, and the `major` argument\n  to the data time scales. This function should take a vector of breaks as\n  input, and return a character vector or list of expressions as output. See\n  `comma_format`, `dollar_format`, `percent_format`, `scientific_format`,\n  `parse_format` and `math_format` for examples\n\n* Transformations are now provided by the scales package - see `?trans_new`\n  for list of available transformations, and how to create your own. The\n  transformations in this package should do a better job at computing default\n  breaks.\n\n* Transformations for continuous scales are now detected automatically when\n  the default scales are added. This ensures that dates and date times will\n  display correctly when used for any aesthetic - previously they only worked\n  with position scales. The system is now also easier to extend to new types\n  of continuous data that you might want to plot.  (Fixes #48)\n\n* All scales now accept a `na.value` parameter which provides an aesthetic\n  value to be used for `NA` values in the data. Colour/fill scales default to\n  grey, which should stand out as different from non-missing values.\n\n* The new `oob` (out of bounds) parameter controls how scales deals with\n  values outside the limits. The default action is `censor` - see `clip` for\n  another option.\n\n* Only `scale_x_log10`, `scale_x_sqrt` and `scale_x_reverse` provided as\n  convenience functions for x and y scales. Use e.g. `scale_x_continuous(trans\n  = \"log\")` to access others\n\n* `set_default_scale` has been removed. If you want to change the default\n  scale for an aesthetic, just create a function called\n  `scale_aesthetic_continuous` or `scale_aesthetic_discrete` that returns the\n  scale that you want.  For example:\n\n      p <- qplot(mpg, wt, data = mtcars, colour = factor(cyl))\n      p\n      scale_colour_discrete <- scale_colour_brewer\n      p\n\n* Scales now automatically shrink to what is actually displayed on the plot,\n  not the underlying data used for statistical transformation. If you want the\n  old behaviour, supply `shrink = FALSE` to the facetting specification.\n  (Fixes #125)\n\n* `scale_colour_gradient` and `scale_fill_gradient` now use a colour scheme\n  with constant hue but varying chroma and luminance. This is better because\n  it creates a natural ordering inline with the order of the colour values.\n\nFACETS\n\n* Converted from proto to S3 objects, and class methods (somewhat) documented\n  in `facet.r`. This should make it easier to develop new types of facetting\n  specifications.\n\n* The new `facet_null` specification is applied in the default case of no\n  faceting. This special case is implemented more efficiently and results in\n  substantial performance improvements for non-facetted plots.\n\n* Facetting variables will no longer interfere with aesthetic mappings -\n  `facet_wrap(~ colour)` will no longer affect the colour of points.\n\nDEVELOPMENT\n\n* ggplot2 has moved away from the two (!!) homegrown documentation systems\n  that it previously relied on, and now uses roxygen extensively. The current\n  downside is that this means that ggplot2 website can no longer be updated,\n  but I hope work with the `helpr` package will resolve that shortly.\n\n* ggplot2 now uses a `NAMESPACE`, and only exports functions that should be\n  user visible - this should make it play considerably more nicely with other\n  packages in the R ecosystem. Note that this means you now need to explicitly\n  load `plyr` (and other packages) if you are using them elsewhere in your\n  code.\n\n* ggplot2 now has a start on a set of automated tests. As this test suite\n  expands it will help me ensure that bugs stay fixed, and that old bugs don't\n  come back in new versions. A test suite also gives me more confidence when\n  I'm modifying code, which should help with general code quality.\n\nCOORDS\n\n* Converted from proto to S3 objects, and class methods (somewhat) documented\n  in `coord.r`. This should make it easier to develop new types of coordinate\n  systems.\n\n* Added a new method `coord_range` for finding the x and y range even after\n  coordinates have been transformed to other names (eg., theta and r). (Thanks\n  to Winston Chang)\n\nRENDERING\n\n* When printing a ggplot2 object, the rendered plot information is returned\n  invisibly. You can capture this with (e.g.) `x <- print(qplot(mpg, wt, data\n  = mtcars))` and in the future will be able to use it to get information\n  about the plot computations, such as the range of all the scales, and the\n  exact data that is plotted.\n\n* Drawing a plot takes place in three documented steps: `ggplot_build` which\n  creates a list of data frames ready for rendering builds, `ggplot_gtable`\n  which creates a `gtable` of grobs, and `grid.draw` which renders the grobs\n  on screen. Each of these returns a data structure which should be useful for\n  understanding and modifying the rendered plot. This is still a work in\n  progress, so please ask questions if anything is confusing.\n\n* The `drop` and `keep` parameters to `ggsave` and `print.ggplot` have been\n  dropped, as the data structure returned by `ggplot_gtable` is sufficiently\n  rich enough to remove the need for them.\n\n* Axis labels are now centred underneath the panels (not the whole plot), and\n  stick close to the panels regardless of the aspect ratio.\n\nGUIDES\n\n* Guides (particularly legends) have been rewritten by Kohske Takahashi to\n  provide considerably more layout flexibility.\n\n* `guide_legend` now supports multi-row/column legend and reversed order,\n  gives more flexible positioning of title and label, and can override\n  aesthetics settings. This is useful, for example, when alpha value in a\n  panel is very low but you want to show vivid legend.\n\n* `guide_colorbar` is a guide specially for continuous colour scales as\n  produced by colour and fill scales.\n\nMINOR CHANGES\n\n* `geom_text` now supports `fontfamily`, `fontface`, and `lineheight`\n  aesthetics for finer control over text display. (Thanks to Kohske Takahashi\n  for the patch. Fixes #60)\n\n* `collide`, which powers `position_dodge` and `position_stack`, now does not\n  error on single x values (Thanks to Brian Diggs for a fix. #157)\n\n* `...` in `ggplot` now passed on to `fortify` method when used with an object\n  other than a data frame\n\n* `geom_boxplot`: outlier colour and shape now default to values set by the\n  aesthetic mapping (thanks to suggestion by Ben Bolker), the width of the\n  median line is now `fatten` times the width of the other lines (thanks to\n  suggestion by Di Cook), and the line type can now be set. Notched box\n  plots are now supported by setting `notch = TRUE` (thanks to Winston Chang\n  for the patch).\n\n* `ggsave` can work with cm and mm `units` (Thanks to patch from Jean-Olivier\n  Irisson)\n\n* `scale_shape` finally returns an error when you try and use it with a\n  continuous variable\n\n* `stat_contour` no longer errors if all breaks outside z range (fixes #195).\n\n* `geom_text` remove rows with missing values with warning (fixes #191)\n\n* New generic function `autoplot` for the creation of complete plots\n  specific to a given data structure. Default implementation throws\n  an error. It is designed to have implementations provided by other\n  packages.  (Thanks to suggestion by Brian Diggs)\n\n* `ggpcp` loses the `scale` argument because it relied on reshape(1) code\n\n* `map_data` passes `...` on to `maps::map` (Fixes #223)\n\n* `coord_fixed` accepts `xlim` and `ylim` parameters to zoom in on x and y\n  scales (Fixes #91)\n\n* ggplot2 will occasionally display a useful hint or tip on startup.  Use\n  `suppressPackageStartupMessages` to eliminate\n\n* `stat_binhex` uses correct bin width for computing y axis bounds. (Fixes\n  #299, thanks to Dave Henderson for bug report and fix.)\n\n* `stat_smooth` now adjusts confidence intervals from `loess` using a\n  t-based approximation\n\n* `stat_smooth` reports what method is used when method is \"auto\". It also\n  picks the method based on the size of the largest group, not individually by\n  group. (Thanks to Winston Chang)\n\n* `stat_bin` and `geom_histogram` now use right-open, left-closed intervals by\n  default. Use `right = TRUE` to return to previous behaviour.\n\n* `geom_vline`, `geom_hline`, and `geom_abline` now work with non-Cartesian\n  coordinate systems. (Thanks to Winston Chang)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# ggplot2\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddl",
+      "thread_id": "thread-41a5b1396e14",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-cd482ba27086",
+      "message_id": "<6DD07D82-3593-43FA-920E-4401ABC9B25F@fellstat.com>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "0d60e51606b155fe8a11878399cbbd1a8efe15e9ba4892e6fd9ec2452c825ef6",
+      "date": "2012-03-04T23:39:42-08:00",
+      "subject": "[R-pkgs] New package: OpenStreetMap 0.2",
+      "subject_clean": "New package: OpenStreetMap 0.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "OpenStreetMap is a new package that accesses raster open street maps from Mapnik, and satellite imagery from Bing. \n\nSome features:\n     1. Uses multiple map tiles stitched together to create high quality images.\n     2. No files are created or stored on the hard drive.\n     3. Tiles are cached, so downloads occur only when necessary.\n     4. ggplot 0.9.0 integration\n\nMore information is available at: http://blog.fellstat.com/?p=130\n\nIan Fellows\nhttp://www.fellstat.com",
+      "body_snippet": "OpenStreetMap is a new package that accesses raster open street maps from Mapnik, and satellite imagery from Bing. \n\nSome features:\n     1. Uses multiple map tiles stitched together to create high qua",
+      "thread_id": "thread-cd482ba27086",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-6b44813cbe13",
+      "message_id": "<BB94D15E-889E-47B1-85C5-06F4A686181B@gmail.com>",
+      "from_name": "David Kahle",
+      "from_email_hash": "481ebc2f7720ff38d57191aaf190448698f44594ae0937532e9395a472402532",
+      "date": "2012-03-05T11:20:51-06:00",
+      "subject": "[R-pkgs] ggmap : ggplot2 and RgoogleMaps",
+      "subject_clean": "ggmap : ggplot2 and RgoogleMaps",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120305/98e223b4/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120305/98e223b4/attachment.pl>",
+      "thread_id": "thread-6b44813cbe13",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-a16cb933a59f",
+      "message_id": "<CAA7Z3Bp5Q6K_J5Y8tcCewmPxr0ci_RORNOdMQhNSZG1PsHKtWw@mail.gmail.com>",
+      "from_name": "Garrett Grolemund",
+      "from_email_hash": "1f06ee68251392cd88a1b603f6ff387738cb0830211a0f37fb794a80993f1f09",
+      "date": "2012-03-06T10:36:41-06:00",
+      "subject": "[R-pkgs] lubridate 1.1.0",
+      "subject_clean": "lubridate 1.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120306/6bd71b0d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120306/6bd71b0d/attachment.pl>",
+      "thread_id": "thread-a16cb933a59f",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-1dfdd1750c57",
+      "message_id": "<528EF21B-0203-4E53-AD8A-ED9BF372C1C3@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2012-03-06T19:54:54-08:00",
+      "subject": "[R-pkgs] sparsenet: a new package for sparse model selection",
+      "subject_clean": "sparsenet: a new package for sparse model selection",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We have put a new package sparsenet on CRAN.\n\nSparsenet fits regularization paths for sparse model selection via coordinate descent, \nusing a penalized least-squares framework and a non-convex penalty.\n\nThe package is based on our JASA paper\nRahul Mazumder, Jerome Friedman and Trevor Hastie: SparseNet : Coordinate Descent with Non-Convex Penalties. (JASA 2011)\nhttp://www.stanford.edu/~hastie/Papers/Sparsenet/jasa_MFH_final.pdf\n\nWe use Zhang's  MC+ penalty to impose sparsity in model selection. This penalty \nparametrizes a family ranging between L1 and L0 regularization. One nice feature of this\nfamily is that the single-coordinate optimization problems are convex, making it\nideal for coordinate descent.\n\nThe package fits the regularization surface for each parameter -  a surface over the \ntwo-dimensional space of tuning parameters. The concavity parameter gamma indexes \nthe member of the family, and lambda is the usual Lagrange penalty parameter which\ndetermines the strength of the penalty.\n\nSparsenet is extremely fast. For example, with 10K variables and 1K samples, the entire surface with\n10 values of gamma and 50 values of lambda takes under a second on a Macbook Pro.\n\nThe package includes functions for fitting, plotting and cross-validation of the models,\nas well as methods for prediction.\n\nTrevor Hastie, with Jerome Friedman and Rahul Mazumder",
+      "body_snippet": "We have put a new package sparsenet on CRAN.\n\nSparsenet fits regularization paths for sparse model selection via coordinate descent, \nusing a penalized least-squares framework and a non-convex penalty",
+      "thread_id": "thread-1dfdd1750c57",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-95ef6954a2dc",
+      "message_id": "<87r4wvenoe.fsf@kolob.subpolar.dyndns.org>",
+      "from_name": "Sebastian P. Luque",
+      "from_email_hash": "2cd4815ed8883e0c35c16bacf1be9d88d662c4a9f03492384d48d7b9ac92a1d5",
+      "date": "2012-03-14T00:50:25-05:00",
+      "subject": "[R-pkgs] diveMove 1.3.1",
+      "subject_clean": "diveMove 1.3.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.3.1 of diveMove is now available on CRAN.  Changes since\nprevious version (1.2.9) are:\n\n\n   o Improved formatting of code in vignette.  Figure resolution reduced to\n     satisfy package check requirements.\n\n   o At least R 2.13.0 is required.\n\n   o Dives occurring in \"trivial wet\" periods are now identified.\n\n   o Improved validity checking for 'TDRcalibrate' objects.\n\n   o 'TDRcalibrate' accessor methods now explicitly check and report\n     that requested dives exist.\n\n   o plotTDR() now conditionally generates initial plot, after preparing\n     Tcl/Tk widgets, to accomodate for changes in R 2.14.2. Legend is\n     plotted only if there is at least one level in the phase factor.\n\n\nCheers,\n\n-- \nSebastian P. Luque, Ph.D.\nDepartment of Biological Sciences\nUniversity of Manitoba\nhttp://www.ucs.mun.ca/~sluque",
+      "body_snippet": "Version 1.3.1 of diveMove is now available on CRAN.  Changes since\nprevious version (1.2.9) are:\n\n\n   o Improved formatting of code in vignette.  Figure resolution reduced to\n     satisfy package chec",
+      "thread_id": "thread-95ef6954a2dc",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-ba4e7ffa6077",
+      "message_id": "<87wr6g61nc.wl%eglenn@mit.edu>",
+      "from_name": "Ezra Haber Glenn",
+      "from_email_hash": "97e7ed7f7dce2c2cec1d7cb672f982f3087af9f4e61a0cdb8e0ce347c1fd9f90",
+      "date": "2012-03-19T11:39:19-04:00",
+      "subject": "[R-pkgs] acs package: analyze data from the U.S. American Community Survey",
+      "subject_clean": "acs package: analyze data from the U.S. American Community Survey",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce version 0.8 of the acs package for R, now\navailable on CRAN\n(<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package provides a general toolkit for managing, analyzing, and\npresenting data from the U.S. Census American Community Survey\n(ACS). Confidence intervals provided with the data are converted to\nstandard errors and bundled with estimates in complex \"acs-class\"\nobjects. The package provides new methods to conduct standard\noperations, plots, and tests on acs objects in statistically\nappropriate ways.\n\nIn addition to improved documentation and bug-fixes, highlights include:\n\n    * An improved \"read.acs\" function for importing data downloaded\n      from the Census American FactFinder site.\n\n    * \"rbind\" and \"cbind\" functions to help create larger acs objects\n      from smaller ones.\n\n    * A \"sum\" method to aggregate rows or columns of ACS data, dealing\n      correctly with both estimates and standard errors.\n\n    * A new \"apply\" method to allow users to apply virtually any\n      function to each row or column of an acs data object.\n\n    * A snazzy new \"plot\" method capable of plotting both density\n      plots (for estimates of a single geography and variable) and\n      multiple estimates with errors bars (for estimates of the same\n      variable over multiple geographies, or vice versa).\n\n    * New functions two deal with adjusting the nominal values of\n      currency from different years for the purpose of comparing\n      between one survey and another.\n\n    * A new prompt method to serve as a helper function when changing\n      geographic rownames or variable column names.\n\nFor more info, examples, and demo plots, see the package documentation\nand/or\n<http://eglenn.scripts.mit.edu/citystate/2012/03/acs-package-updated-version-0-8-now-on-cran/>.\n\n--\nEzra Haber Glenn, AICP\nLecturer in Community Development\nDepartment of Urban Studies and Planning\nMassachusetts Institute of Technology\n77 Massachusetts Ave., Room 7-337\nCambridge, MA 02139\neglenn at mit.edu \nhttp://dusp.mit.edu/faculty/eglenn | http://eglenn.scripts.mit.edu/citystate/\n617.253.2024 (w)\n617.721.7131 (c)",
+      "body_snippet": "We are pleased to announce version 0.8 of the acs package for R, now\navailable on CRAN\n(<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package provides a general toolkit for managing, a",
+      "thread_id": "thread-ba4e7ffa6077",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-a10f3434d666",
+      "message_id": "<20331.7660.552238.847490@max.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2012-03-22T07:41:16-05:00",
+      "subject": "[R-pkgs] New package RcppSMC 0.1.0 for Sequential Monte Carlo and Particle Filters",
+      "subject_clean": "New package RcppSMC 0.1.0 for Sequential Monte Carlo and Particle Filters",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "===== Summary =====\n\nVersion 0.1.0 provides the initial release of RcppSMC, an integration of the\nSMCTC template classes for Sequential Monte Carlo and Particle Filters\n(Johansen, 2009, J Statistical Software, 30:6) with the Rcpp package for R/C++\nIntegration (Eddelbuettel and Francois, 2011, J Statistical Software, 40:8).\n\nRcppSMC allows for easier and more direct access from R to the computational\ncore of the SMC algorithm.\n\n===== Overview =====\n\nSequential Monte Carlo methods are a very general class of Monte Carlo\nmethods for sampling from sequences of distributions. Simple examples of\nthese algorithms are used very widely in the tracking and signal processing\nliterature. Recent developments illustrate that these techniques have much\nmore general applicability, and can be applied very effectively to\nstatistical inference problems. Unfortunately, these methods are often\nperceived as being computationally expensive and difficult to implement. \n\nBy combining the SMCTC with the 'glue' provided by Rcpp, a tighter\nintegration with R is achieved.  This allows the applied researcher\ninterested in Sequential Monte Carlo and Particle Filter methods to more\neasily vary input data, summarize outputs, plot results and so on. \n\nAs a concrete example, figure 5.1 of Johansen (2009) which illustrates a\nParticle Filter for a two-dimensional linear state space model with\nnon-Gaussian observation error, is reproduced by\n\n   res <- pfLineartBS(plot=TRUE)\n\nwhere we select the optional plot. Moreover, progress during the model fit\ncan also be visualized (using callbacks into R from C++ which Rcpp provides)\nvia \n\n   res <- pfLineartBS(onlinePlot=pfLineartBSOnlinePlot)\n\nwhere pfLineartBSOnlinePlot() is a default plotting function provided for\nthis example by the package.\n\nTwo more 'classic' examples from the literature have been added to the\npackage:\n\n   blockpfGaussianOpt()   provides the Block Sampling Particle Filter of\n      Doucet, Briers and Senecal (2006, JCGS 15:693) in the context of a \n      univariate linear Gaussian model.\n\n   pfNonlinBS() provides the Bootstrap Particle Filter of\n      Gordon, Salmond and Smith (1993, IEE Proceedings-F 140:107)\n      in the context of the ubiquitous nonlinear model which was used in\n      section 4.1 of that paper.\n\nThese examples are hopefully of some pedagogic interest and provide templates\nwhich can be used to guide the implementation of more complicated algorithms\nusing the Rcpp/SMCTC-combination.\n\nWe intend to add more example and illustrations over time and aim ultimately \nto provide a framework to support the straightforward implementation of SMC\nalgorithms which exploits the powerful combination of R and C++.\n\n\n===== Support =====\n\nQuestions about RcppSMC should be directed to the Rcpp-devel mailing list\n    https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\n\n\n\n -- Dirk Eddelbuettel and Adam Johansen\n    March 2012\n\n\n\n\n-- \n\"Outside of a dog, a book is a man's best friend. Inside of a dog, it is too\ndark to read.\" -- Groucho Marx",
+      "body_snippet": "===== Summary =====\n\nVersion 0.1.0 provides the initial release of RcppSMC, an integration of the\nSMCTC template classes for Sequential Monte Carlo and Particle Filters\n(Johansen, 2009, J Statistical ",
+      "thread_id": "thread-a10f3434d666",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-44442edbfd08",
+      "message_id": "<4F6B2DE4.60703@norbl.com>",
+      "from_name": "Barnet Wagman",
+      "from_email_hash": "115e00c4e6be73f8bad83b8e83c4aef3b25a4cc4c4e4660070efe6e628a07871",
+      "date": "2012-03-22T08:49:24-05:00",
+      "subject": "[R-pkgs] New package cloudRmpi: Cloud-based parallel proccessing for R",
+      "subject_clean": "New package cloudRmpi: Cloud-based parallel proccessing for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120322/0658dc07/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120322/0658dc07/attachment.pl>",
+      "thread_id": "thread-44442edbfd08",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-346772bb0ac4",
+      "message_id": "<1697D58E-7FBA-4999-BD4C-DC1A3E284FA2@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2012-03-27T21:42:53-07:00",
+      "subject": "[R-pkgs] Updates to the Deducer family of packages",
+      "subject_clean": "Updates to the Deducer family of packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nOver the past month there have been a number of package updates in the deducer ecosystem. Deducer is a general purpose, extensible, data analysis GUI. It is designed to be a free easy to use alternative to proprietary data analysis software such as SPSS, JMP, and Minitab. It has a menu system to do common data manipulation and analysis tasks, and an excel-like spreadsheet in which to view and edit data frames.\n\nMore information is available in the online manual:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\nAnd there is an intro video in youtube:\n\nhttp://www.youtube.com/watch?v=AjLToyuluSM&lr=1\n\n\n-------------------------------------------------------------------------------------------------------\n\t\t\t\t\t\tDeducer 0.6-3\n-------------------------------------------------------------------------------------------------------\n\nThe main change in Deducer 0.6-3 is an update to the (award winning) Plot Builder GUI to make use of the new features in ggplot2 0.9-0.\n\nNew plot builder features: Part 1\nhttp://www.youtube.com/watch?list=UUd1MSCNy5v9i8UGkSc6tCmg&feature=player_detailpage&v=K38IkTn5M_o\n\nNew plot builder features: Part 2\nhttp://www.youtube.com/watch?list=UUd1MSCNy5v9i8UGkSc6tCmg&feature=player_detailpage&v=bUTu597Mf3g\n\n-------------------------------------------------------------------------------------------------------\n\t\t\t\t\t    DeducerSpatial 0.4\n-------------------------------------------------------------------------------------------------------\n\nA Deducer plug-in for spatial data analysis. Includes The ability to plot and explore open street map and Bing satellite images. Currently there is not much here in terms of heavy data analysis, but there are some great tools for importing and exploring spatial data.\n\nhttp://www.youtube.com/watch?v=SXaBT22w8G4&list=UUd1MSCNy5v9i8UGkSc6tCmg&index=3&feature=plcp\n\n-------------------------------------------------------------------------------------------------------\n\t\t\t\t\tDeducerPlugInScaling 0.1-0\n-------------------------------------------------------------------------------------------------------\n\nA Deducer plug-in for factor analysis, reliability analysis and discriminant analysis.\n\nVersion 0.1-0 includes some general improvements as well as a dialog for linear discriminant analysis (thanks to Helios De Rosario-Martinez).\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.LinearDiscriminantAnalysis\n\n-------------------------------------------------------------------------------------------------------\n\t\t\t\t\t\tDeducerExtras 1.5\n-------------------------------------------------------------------------------------------------------\n\nAdded functionality for Deducer. This package includes additional dialogs for calculating distribution function values, cluster analysis, and more.\n\nVersion 1.5 includes some general improvements along with a new dialog implementing Friedman's test, and Kendall's W test (thanks to Helios De Rosario-Martinez).\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.RankingAnalysis",
+      "body_snippet": "Dear R users,\n\nOver the past month there have been a number of package updates in the deducer ecosystem. Deducer is a general purpose, extensible, data analysis GUI. It is designed to be a free easy t",
+      "thread_id": "thread-346772bb0ac4",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-d8f507d3eacb",
+      "message_id": "<4F72BE1A.8000508@imbi.uni-freiburg.de>",
+      "from_name": "Guido Schwarzer",
+      "from_email_hash": "ac628a8c2380a155bd0c0ea44c33031ce7084b7e52eb1a393681f849a1d4b18c",
+      "date": "2012-03-28T09:30:34+02:00",
+      "subject": "[R-pkgs] Major update: meta version 2.0-0",
+      "subject_clean": "Major update: meta version 2.0-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.0-0 of meta (an R package for meta-analysis) is now available \non CRAN. Changes are described below.\n\nYours,\nGuido\n\n\nMajor revision\n\nR package meta linked to R package metafor by Wolfgang Viechtbauer to \nprovide additional statistical methods, e.g. meta-regression and other \nestimates for tau-squared (REML, ...)\n\nNew functions:\n  - metareg              (meta-regression)\n  - metabias             (generic method for function metabias)\n  - metabias.default     (generic method for function metabias)\n  - metabias.meta        (generic method for function metabias)\n  - metabias.rm5         (generic method for function metabias)\n  - print.rm5            (generic method for rm5-object)\n  - print.summary.rm5    (generic method for rm5-object)\n  - summary.rm5          (generic method for rm5-object)\n  - catmeth              (function used internally)\n  - crtitle              (function used internally)\n  - hypergeometric       (function used internally)\n  - is.installed.metafor (function used internally)\n  - kentau               (function used internally)\n  - linregcore           (function used internally)\n  - p2logit              (function used internally)\n\nFunctions metabin, metacont, metacor, metagen, metaprop:\n  - new arguments:\n    - hakn (Hartung-Knapp method)\n    - method.tau (estimation method for tau-squared)\n    - tau.preset (fixed value for tau)\n    - TE.tau (prespecified treatment effect to estimate tau)\n    - method.bias (test for funnel plot asymmetry used in metabias)\n    - label.left (Label on left side of forest plot, new argument in\n                  functions metabin, metacont, and metagen)\n    - label.right (Label on right side of forest plot, new argument in\n                   functions metabin, metacont, and metagen)\n    - warn (print warning messages, new argument in functions metacont\n            and metagen)\n  - new list components of returned object:\n    - se.tau2 (standard error of tau-squared)\n    - hakn (Hartung-Knapp method)\n    - method.tau (estimation method for tau-squared)\n    - tau.preset (fixed value for tau)\n    - TE.tau (prespecified treatment effect to estimate tau)\n    - method.bias (test for funnel plot asymmetry used in metabias)\n    - label.left (Label on left side of forst plot, new list component\n                  in functions metabin, metacont, and metagen)\n    - label.right (Label on right side of forst plot, new list component\n      in functions metabin, metacont, and metagen)\n  - argument 'warn' suppresses more warning messages if FALSE\n  - function metabin: studies are excluded from meta-analysis if\n    (event.e > n.e | event.c > n.c) or (n.e <= 0 | n.c <= 0) or\n    (event.e < 0 | event.c < 0)\n\nFunction metacum and metainf:\n  - modified so that NULL is returned if function is used with a single\n    study\n  - modified so that new arguments hakn, method.tau, tau.preset,\n    method.bias, label.left, label.right are considered in execution of\n    the function\n  - argument level removed\n\nFunction metaprop:\n  - modified so that the correct variance function 1/(n+0.5) instead of\n    1/(n+1) is used for the Freeman-Tukey-Transformation (i.e. sm=\"PFT\")\n  - see also news on function asin2p\n\nFunction asin2p:\n  - completely rewritten as back transformation of Freeman-Tukey\n    transformed proportions was inaccurate\n  - back transformation of Freeman-Tukey proportions according to\n    Miller (1978) - see help page of R command metaprop\n\nFunction print.metabias:\n  - print a warning if number of studies is too small to conduct a\n    test for funnel plot asymmetry (see new argument k.min)\n\nFunction print.summary.meta:\n  - new argument bylab.nchar\n  - print test for subgroup differences for both fixed effect and\n    random effects model\n  - value 'invisible(NULL)' returned for metacum and metainf objects\n\nFunction metacr:\n  - new arguments:\n    - sm (summary measure)\n    - method (pooling method)\n    - comb.fixed (fixed effect model)\n    - comb.random (random effects model)\n    - swap.events (only for binary data)\n    - method.tau (estimation method for between-study variance)\n    - hakn (Hartung-Knapp adjustment)\n    - title (Title of Cochrane review)\n    - complab (Comparison label)\n    - outclab (Outcome label)\n    - warn (print warning messages)\n  - removed argument:\n    - smother (summary measure)\n  - value 'NULL' returned if no data is available for selection of\n    comp.no and outcome.no\n\nFunction read.rm5:\n   - changed substantially for reading of RevMan 5.1 files\n\nFunction summary.meta:\n  - modified so that new arguments hakn, method.tau, tau.preset,\n    method.bias are considered in execution of the function\n  - argument 'warn' suppresses more warning messages\n\nFunction forest.meta:\n  - modified so that the treatment effect and 95% confidence interval\n    is printed in the correct order for objects of class metaprop if\n    argument sort or order is used\n  - symmetric forest plot by default (argument xlim=\"s\")\n  - new arguments:\n    - smlab, smlab.pos, fs.smlab, fflab\n      (Label for summary measure - at top of figure)\n    - label.right, label.left, fs.lr, ff.lr\n      (Label on right and left side)\n    - overall.hetstat (heterogeneity information for overall effect)\n\nFunction funnel.default and funnel.meta:\n  - modified so that arguments col.fixed and col.random are recognised\n\nFunction metabias.default and metabias.meta:\n  - new argument k.min:\n    test for funnel plot asymmetry only conducted if number of studies\n    in meta-analysis is larger or equal to k.min\n  - new argument '...' (ignored at the moment)\n\nFunction trimfill.default and trimfill.meta:\n  - value 'invisible(NULL)' returned if number of studies is smaller\n    than 3\n\nNew datasets: amlodipine, cisapride\n\nFile FLEISS93.MTV moved from directory data to directory extdata\n\nUpdate of several help pages. Some new help pages added.\n\n-- \nDr. Guido Schwarzer (sc at imbi.uni-freiburg.de)\nInstitute of Medical Biometry and Medical Informatics\nStefan-Meier-Str. 26, D-79104 Freiburg | Phone: +49 (0)761 203 6668\nhttp://www.imbi.uni-freiburg.de        | Fax:   +49 (0)761 203 6680",
+      "body_snippet": "Version 2.0-0 of meta (an R package for meta-analysis) is now available \non CRAN. Changes are described below.\n\nYours,\nGuido\n\n\nMajor revision\n\nR package meta linked to R package metafor by Wolfgang Vi",
+      "thread_id": "thread-d8f507d3eacb",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-1e5c8629e767",
+      "message_id": "<CAPcL1f0Y4LT-OR-p_Z244GvqU1ErHEVAjf+RnudH+QEB=Yj-pQ@mail.gmail.com>",
+      "from_name": "dustin tingley",
+      "from_email_hash": "f2ca1e111b11400431e9c6f9db70027263fcc816eafb95bab145105b4c573ff7",
+      "date": "2012-03-28T14:19:30-04:00",
+      "subject": "[R-pkgs] package update: mediation",
+      "subject_clean": "package update: mediation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120328/18e1a85c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120328/18e1a85c/attachment.pl>",
+      "thread_id": "thread-1e5c8629e767",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-d24c3c99d125",
+      "message_id": "<B8D68EFE-3E42-488C-A7C0-F8A657928731@northumbria.ac.uk>",
+      "from_name": "Pete Philipson",
+      "from_email_hash": "03ac25c7ea60741c0fd69e64c58604899b27b7c1f7434c116842bc604289672a",
+      "date": "2012-03-31T19:00:46+01:00",
+      "subject": "[R-pkgs] New package joineR",
+      "subject_clean": "New package joineR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120331/789ab38b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120331/789ab38b/attachment.pl>",
+      "thread_id": "thread-d24c3c99d125",
+      "thread_depth": 0,
+      "month": "2012-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e1715c47eb93",
+      "subject": "devtools 0.6",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2012-03-02T06:54:48-06:00",
+      "last_reply": "2012-03-02T06:54:48-06:00",
+      "root_message_id": "msg-e1715c47eb93"
+    },
+    {
+      "id": "thread-41a5b1396e14",
+      "subject": "ggplot2 0.9.0",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2012-03-02T07:04:16-06:00",
+      "last_reply": "2012-03-02T07:04:16-06:00",
+      "root_message_id": "msg-41a5b1396e14"
+    },
+    {
+      "id": "thread-cd482ba27086",
+      "subject": "New package: OpenStreetMap 0.2",
+      "message_count": 1,
+      "participants": [
+        "Ian Fellows"
+      ],
+      "started": "2012-03-04T23:39:42-08:00",
+      "last_reply": "2012-03-04T23:39:42-08:00",
+      "root_message_id": "msg-cd482ba27086"
+    },
+    {
+      "id": "thread-6b44813cbe13",
+      "subject": "ggmap : ggplot2 and RgoogleMaps",
+      "message_count": 1,
+      "participants": [
+        "David Kahle"
+      ],
+      "started": "2012-03-05T11:20:51-06:00",
+      "last_reply": "2012-03-05T11:20:51-06:00",
+      "root_message_id": "msg-6b44813cbe13"
+    },
+    {
+      "id": "thread-a16cb933a59f",
+      "subject": "lubridate 1.1.0",
+      "message_count": 1,
+      "participants": [
+        "Garrett Grolemund"
+      ],
+      "started": "2012-03-06T10:36:41-06:00",
+      "last_reply": "2012-03-06T10:36:41-06:00",
+      "root_message_id": "msg-a16cb933a59f"
+    },
+    {
+      "id": "thread-1dfdd1750c57",
+      "subject": "sparsenet: a new package for sparse model selection",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2012-03-06T19:54:54-08:00",
+      "last_reply": "2012-03-06T19:54:54-08:00",
+      "root_message_id": "msg-1dfdd1750c57"
+    },
+    {
+      "id": "thread-95ef6954a2dc",
+      "subject": "diveMove 1.3.1",
+      "message_count": 1,
+      "participants": [
+        "Sebastian P. Luque"
+      ],
+      "started": "2012-03-14T00:50:25-05:00",
+      "last_reply": "2012-03-14T00:50:25-05:00",
+      "root_message_id": "msg-95ef6954a2dc"
+    },
+    {
+      "id": "thread-ba4e7ffa6077",
+      "subject": "acs package: analyze data from the U.S. American Community Survey",
+      "message_count": 1,
+      "participants": [
+        "Ezra Haber Glenn"
+      ],
+      "started": "2012-03-19T11:39:19-04:00",
+      "last_reply": "2012-03-19T11:39:19-04:00",
+      "root_message_id": "msg-ba4e7ffa6077"
+    },
+    {
+      "id": "thread-a10f3434d666",
+      "subject": "New package RcppSMC 0.1.0 for Sequential Monte Carlo and Particle Filters",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2012-03-22T07:41:16-05:00",
+      "last_reply": "2012-03-22T07:41:16-05:00",
+      "root_message_id": "msg-a10f3434d666"
+    },
+    {
+      "id": "thread-44442edbfd08",
+      "subject": "New package cloudRmpi: Cloud-based parallel proccessing for R",
+      "message_count": 1,
+      "participants": [
+        "Barnet Wagman"
+      ],
+      "started": "2012-03-22T08:49:24-05:00",
+      "last_reply": "2012-03-22T08:49:24-05:00",
+      "root_message_id": "msg-44442edbfd08"
+    },
+    {
+      "id": "thread-346772bb0ac4",
+      "subject": "Updates to the Deducer family of packages",
+      "message_count": 1,
+      "participants": [
+        "Ian Fellows"
+      ],
+      "started": "2012-03-27T21:42:53-07:00",
+      "last_reply": "2012-03-27T21:42:53-07:00",
+      "root_message_id": "msg-346772bb0ac4"
+    },
+    {
+      "id": "thread-d8f507d3eacb",
+      "subject": "Major update: meta version 2.0-0",
+      "message_count": 1,
+      "participants": [
+        "Guido Schwarzer"
+      ],
+      "started": "2012-03-28T09:30:34+02:00",
+      "last_reply": "2012-03-28T09:30:34+02:00",
+      "root_message_id": "msg-d8f507d3eacb"
+    },
+    {
+      "id": "thread-1e5c8629e767",
+      "subject": "package update: mediation",
+      "message_count": 1,
+      "participants": [
+        "dustin tingley"
+      ],
+      "started": "2012-03-28T14:19:30-04:00",
+      "last_reply": "2012-03-28T14:19:30-04:00",
+      "root_message_id": "msg-1e5c8629e767"
+    },
+    {
+      "id": "thread-d24c3c99d125",
+      "subject": "New package joineR",
+      "message_count": 1,
+      "participants": [
+        "Pete Philipson"
+      ],
+      "started": "2012-03-31T19:00:46+01:00",
+      "last_reply": "2012-03-31T19:00:46+01:00",
+      "root_message_id": "msg-d24c3c99d125"
+    }
+  ]
+}

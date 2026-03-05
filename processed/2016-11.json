@@ -1,0 +1,225 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-11",
+  "messages": [
+    {
+      "id": "msg-3298da2bb814",
+      "message_id": "<CAECT9fk1E=1GkNAKpgjTsStfpG0yR=2AhBuJ+6Tbc3PkszsAuA@mail.gmail.com>",
+      "from_name": "David Bucklin",
+      "from_email_hash": "ead645847ce3d1362d40a69a94b1e0a390b507abb2cd3610727847f46c2c5c06",
+      "date": "2016-11-02T10:59:39-04:00",
+      "subject": "[R-pkgs] new package: rpostgisLT",
+      "subject_clean": "new package: rpostgisLT",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We're announcing the initial CRAN release of 'rpostgisLT' (v0.4.0), which\nis an extension to our 'rpostgis\n<https://cran.r-project.org/web/packages/rpostgis/index.html>' package.\nrpostgisLT is aimed at those using R and/or the PostgreSQL/PostGIS database\nsystem to manage and analyze animal trajectory (movement) data. Package\nfunctions allow bi-directional transfer between the database and \"ltraj\"\nobjects from the R package \"adehabitatLT\n<https://cran.r-project.org/web/packages/adehabitatLT/index.html>\", which\nhas an extensive set of trajectory manipulation and analysis functions.\n\nTo install the package:\n\ninstall.packages(\"rpostgisLT\")\n\nTo get started, please take a look at the Readme\n<https://cran.r-project.org/web/packages/rpostgisLT/README.html>, and to\nlearn more, check out the package vignettes on the database data model\n<https://cran.r-project.org/web/packages/rpostgisLT/vignettes/data-model.html>\nand more advanced use cases\n<https://cran.r-project.org/web/packages/rpostgisLT/vignettes/use-cases.html>\n.\n\nThe package main development area can be found on GitHub; any bugs, issues,\nor feature requests can be submitted through the \"issues\" page there:\n\nhttps://github.com/mablab/rpostgisLT\n\nDavid Bucklin\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "We're announcing the initial CRAN release of 'rpostgisLT' (v0.4.0), which\nis an extension to our 'rpostgis\n<https://cran.r-project.org/web/packages/rpostgis/index.html>' package.\nrpostgisLT is aimed a",
+      "thread_id": "thread-3298da2bb814",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-2c8b9e395671",
+      "message_id": "<CAMO-wTa0yqeeJm+KhqFwTqu0ntFxj0=+k6HQkUU_-H7jeKGzpA@mail.gmail.com>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2016-11-03T08:51:28-05:00",
+      "subject": "[R-pkgs] Massive Update to Hmisc package",
+      "subject_clean": "Massive Update to Hmisc package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hmisc 4.0-0 is now on CRAN.  The package has undergone a massive update.\nThe most user-visable changes are;\n\n- support for Rmarkdown html notebooks\n\n- advanced html tables using the htmlTable package and summaryM function;\ncan copy and paste into word processors\n\n- support for plotly interactive graphics, e.g.\n  options(grType='plotly')\n  plot(describe(mydata))\n\n- new function ggfreqScatter\n\n- new object markupSpecs that drives LaTeX and html translations\n\n- describe function computes new statistics and relabels Unique as Distinct\n\nThe full list of changes is below.  You can look at examples of html\nnotebook reports produced using the new Hmisc at\nhttp://biostat.mc.vanderbilt.edu/Hmisc .  These include interactive plotly\ngraphics.\n\nChanges in version 4.0-0 (2016-10-31)\n   * summaryP: fixed exclude1 logic - was not excluding enough levels\n(inconsistent use of variable names vs. labels)\n* latexTranslate: any NAs in first argument changed to \"\" before conversion\n* minor.tick: added arguments to pass through (thanks: vhorvath)\n* tests/latexpng.r: test conversion of LaTeX table to png\n* latexTabular: made it properly call latexTranslate separately for each\ncolumn, convert argument to matrix or data frame if a vector\n* tests/latexTabular.r: new test\n* latexDotchart: added call to latexTranslate to escape special characters\nfor LaTeX such as underscore and pound sign\n* ggfreqScatter: new function\n* grType: new non-exported service function to sense if plotly is in effect\n* plot.describe: new function to make plotly graph for describe objects\n* describe: changed output: 3 decimal places for Info, new format for\nfrequency table, separated logic for 10 extreme values from logic for\nfrequency table, significant changes to print.describe\n* dotchartp: new version of dotchart3 for plotly charts\n* summaryD: modified to use dotchartp if options(grType='plotly') is in\neffect\n* nFm: added argument html\n* label.default, label.Surv, labelPlotmath: added html argument to\nimplement HTML markup in place of plotmath (for plotly)\n* now imports htmlTable, viridis\n* html.contents.data.frame: return invisibly if file=''\n* htmlVerbatim: new function\n* html.contents.data.frame: improved html\n* html.data.frame: changed column headers from h4 to <strong>\n* ggfreqScatter: added html argument\n* knitrSet: was ignoring default figure h and w\n* html.summaryM: new function using new version of latex.summaryM\n* markupSpecs: new list object defining markup elements for latex and html,\nused by summaryM\n* show.html, print.html: removed; conflicted with htmltools/rmarkdown\n* label: required exact match on attribute name \"label\" to not retrieve the\n\"labels\" attribute (thanks: Ivan Puzek)\n* htmlSN: new function to convert floating point to scientific format usint\nhtml\n* upData, cleanup.import: fix NA becoming new factor levels (thanks: Beau\nBruce)\n* htmlTranslate: new function\n* plotlySave: new function\n* histSpikep: new function\n* upData: new argument html\n* plot.describe: added ggplot2 graphics, improved continuous display using\nggplotly\n* labelPlotmath: cleaned up by using markupSpecs\n* capitalize: fixed bug - did not cap. first letter if other letters after\nit were upper case (thanks: dchiu911)\n* html.summaryM: added brmsd argument to put mean, SD on separate line\n* Save: changed default back to use gzip for speed\n* knitrSet: used new knitr way to set aliases for option names\n* latexTabular: made translate argument apply to body of table also;\nimplemented multi-line header\n* html.data.frame: added several arguments\n* describe: added html method\n* html markupSpecs object: added bibliographic database utility functions\n* bppltp: new service function for extended box plots for plotly\n* plot.summaryM: new plotly method\n* prType: new service function used to detect user settings for html, latex\nfor print methods\n* html.contents.data.frame: removed file and append arguments and output an\nhtml character vector instead\n* prList: new function\n* GiniMd: moved to Hmisc from rms\n* describe: added GMD (Gini's mean difference) and relabeled unique to\ndistinct\n* latex.summaryM: added Needspace{2.7in} before 2nd and later strata\n* ggplot.summaryP: added point labels for use with plotly as hover text\n* latex.summaryP: fixed bad linebreak at strata boundaries\n* dotchartpl: new plotly dot chart function especially for summaryP\n* plot.summaryP: new plotly method using dotchartpl when\noptions(grType='plotly')\n* putHfig: new function to render graphics with captions in HTML reports\n* pngNeedle: new function, like latexNeedle but useful with HTML reports\n* html.data.frame: added width and caption arguments\n* plotlyParm: list object with plotly helper functions\n* summaryD, dotchartp: added symbol and col arguments\n* upData: improved efficiency, added labelled class to variables without it\nbut having labels (e.g., data imported using haven package)\n* gbayesMixPost: mixed error in posterior odds of the mixing parameter that\nresulted in incorrect posterior probabilities when the variance of the\nstatistic was appreciable; added option to compute posterior mean\n\n\n\n\n------------------------------\nFrank E Harrell Jr      Professor and Chairman      School of Medicine\n\nDepartment of *Biostatistics*      *Vanderbilt University*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hmisc 4.0-0 is now on CRAN.  The package has undergone a massive update.\nThe most user-visable changes are;\n\n- support for Rmarkdown html notebooks\n\n- advanced html tables using the htmlTable package ",
+      "thread_id": "thread-2c8b9e395671",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-7c4008ea3be1",
+      "message_id": "<CAMO-wTbJaPUwnWWAEXGfvB4AhDZqvtiFHh1VHvXmo5BjyDQKEQ@mail.gmail.com>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2016-11-04T13:17:05-05:00",
+      "subject": "[R-pkgs] Major Update to rms package: 5.0-0",
+      "subject_clean": "Major Update to rms package: 5.0-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A major new version of the rms package is now on CRAN.  The most\nuser-visible changes are:\n\n- interactive plotly graphic methods for model fits.  The best example of\nthis is survplot for npsurv (Kaplan-Meier) estimates where the number of\nrisk pop up as you hover over the curves, and you can click to bring up\nconfidence bands for differences in survival curves\n\n- html methods for model fit summaries especially when using Rmarkdown html\nnotebooks\n\n- instead of running print(fit, latex=TRUE) use\n   options(prType='latex')\n   print(fit)\n   Or: options(prType='html')\n\nA complete list of changes is below.  See\nhttp://biostat.mc.vanderbilt.edu/Rrms for an html notebook showing examples\nof new features.\n\nChanges in version 5.0-0 (2016-10-31)\n   * plot.summary.rms: implemented plotly interactive plots if\noptions(grType='plotly') in effect\n* plot.anova.rms: implemented plotly interactive plots if\noptions(grType='plotly') in effect; remove psmall argument; changed margin\ndefault to chisq and P\n* ggplot.Predict: implemented plotly interactive plots if\noptions(grType='plotly') in effect\n* print(fit, md=TRUE), prModFit, prStats: added latex/html methods using\nhtmlTable package and MathJax for latex math\n* html.anova.rms, html.validate, html.summary.rms: new functions for use\nwith html and MathJax/knitr/RStudio\n* latex methods for model fits: added md=TRUE argument to produce\nMathJax-compatible latex and html code for fitted models when using R\nMarkdown\n* html: new methods for model fit objects for use with R Markdown\n* formatNP: fixed error when digits=NA\n* latex.anova.rms: fixed error in not rounding enough columns doe to using\nall.is.numeric intead of is.numeric\n* catg: corrected bug that disallowed explicit catg() in formulas\n* ggplot.Predict: added height and width for plotly\n* survplot: respected xlim with diffbands.  Thanks: Toni G\n* reVector: changed to reListclean and stored model stats components as\nlists so can handle mixture of numeric and character, e.g., name of\nclustering variable\n* survplotp.npsurv: new function for interactive survival curve graphs\nusing plotly\n* anova, summary, latex, print for model fits: use options(grType='html')\nor 'latex' to set output type, output htmltools::HTML marked html so that\nchunk header doesn't need results='asis'\n* latex methods - set file default to ''\n* GiniMd: moved to Hmisc package\n* plot.nomogram: fixed bug where abbreviations were being ignored.  Thanks:\nZongheng Zhang\n* nomogram: improved examples in help file\n* survplot.npsurv: fixed n.risk when competing risks\n* survest.cph, survfit.cph, others: fixed large problems due to\nincompatibility with survival 2.39-5 for survival predictions; changed\nobject Strata to strata in cph to be compatible with survival package\n* new test survest.r to more comprehensively check survfit.cph and\nsurvest.cph\n* ggplot.Predict: quit ignoring xlim; suppress confidence bands if two\ngroup bariables because ggplot2 geom_ribbon doesn't support multiple\naesthetics\n* predictrms: set contrasts for ordered factors to contr.treatment instead\nof contr.poly\n* val.prob: changed line of identity to use wide grayscale line instead of\ndashed line\n\n------------------------------\nFrank E Harrell Jr      Professor and Chairman      School of Medicine\n\nDepartment of *Biostatistics*      *Vanderbilt University*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A major new version of the rms package is now on CRAN.  The most\nuser-visible changes are:\n\n- interactive plotly graphic methods for model fits.  The best example of\nthis is survplot for npsurv (Kapla",
+      "thread_id": "thread-7c4008ea3be1",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-f21d2c1fdcaf",
+      "message_id": "<CANMhtdw+6E9DCBfs6d2rrnc5YndaW1ZJQ1jpzNSyvH5Vxq09FQ@mail.gmail.com>",
+      "from_name": "Marcelo Perlin",
+      "from_email_hash": "c87e9dc8b848907eae5eabccc41b70833e3c71915e47d10e8911609c196740ae",
+      "date": "2016-11-06T14:02:50-02:00",
+      "subject": "[R-pkgs] Package BatchGetSymbols",
+      "subject_clean": "Package BatchGetSymbols",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nIf you use quantmod::GetSymbols to download financial data from yahoo or\ngoogle finance, you might find my new package  *BatchGetSymbols* very\nuseful. It no only downloads data for multiple tickers but also organizes\nit in an efficient way, making it easy to use dplyr and ggplot2 in the\nresulting dataframe.\n\nYou can check the vignette here:\nhttps://cran.r-project.org/web/packages/BatchGetSymbols/vignettes/BatchGetSymbols-vignette.html\n\nAnd the package here:\nhttps://cran.r-project.org/web/packages/BatchGetSymbols/index.html\n\nAs usual, comments and suggestions are very welcome.\n\nBest,\n\n-- \nMarcelo Perlin\nProfessor Adjunto | Escola de Administra??o\nUniversidade Federal do Rio Grande do Sul\nRua Washington Luiz, 855 | 90010-460| Porto Alegre RS| Brasil\nTel.: (51) 3308-3303 | www.ea.ufrgs.br\nhttp://lattes.cnpq.br/3262699324398819\nhttps://sites.google.com/site/marceloperlin/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nIf you use quantmod::GetSymbols to download financial data from yahoo or\ngoogle finance, you might find my new package  *BatchGetSymbols* very\nuseful. It no only downloads data for mult",
+      "thread_id": "thread-f21d2c1fdcaf",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-b74aa674681f",
+      "message_id": "<C9ED9D22-1783-450B-9C81-D7AB6ECC7E0B@act.ulaval.ca>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "773d704bb01dd05dd0f2d10c30d30f8968194f70b20d8fe3f1dd9b43e0bb6057",
+      "date": "2016-11-14T14:06:23Z",
+      "subject": "[R-pkgs] Major update of package actuar",
+      "subject_clean": "Major update of package actuar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'm happy to announce a substantial update of package actuar that bumps the version number to 2.0-0. This release focuses on additional support for continuous and discrete distributions, new functions to simulate data from compound models and mixtures, and revised and improved documentation.\n\nA slightly shortened version of the NEWS file follows:\n\nNEW FEATURES\n\n? Support for the inverse Gaussian distribution. The pdf, cdf and\n  quantile functions are C (read: faster) implementations of otherwise \n  equivalent functions in package ?statmod?.\n\n? Support for the Gumbel extreme value distribution.\n\n? Extended range of admissible values for many limited\n  expected value functions thanks to new C-level functions\n  ?expint?, ?betaint? and ?gammaint?. These provide special\n  integrals presented in the introduction of Appendix A of\n  Klugman et al. (2012); see also ?vignette(\"distributions\")?.\n\n  Affected functions are: ?levtrbeta?, ?levgenpareto?,\n  ?levburr?, ?levinvburr?, ?levpareto?, ?levinvpareto?,\n  ?levllogis?, ?levparalogis?, ?levinvparalogis? in the\n  Transformed Beta family, and ?levinvtrgamma?, ?levinvgamma?,\n  ?levinvweibull? in the Transformed Gamma family.\n\n? Functions ?expint?, ?betaint? and ?gammaint? to compute\n  the special integrals mentioned above. These are merely\n  convenience R interfaces to the C level functions. They are\n  _not_ exported by the package.\n\n? Support for the Poisson-inverse Gaussian discrete distribution.\n\n? Support for the logarithmic (or log-series) and zero-modified\n  logarithmic distributions.\n\n? Support for the zero-truncated and zero-modified Poisson\n  distributions.\n\n? Support for the zero-truncated and zero-modified negative \n  binomial distributions.\n\n? Support for the zero-truncated and zero-modified geometric\n  distributions.\n\n? Support for the zero-truncated and zero-modified binomial\n  distributions.\n\n? New vignette ?\"distributions\"? that reviews in great detail the\n  continuous and discrete distributions provided in the\n  package, along with implementation details.\n\n? ?aggregateDist? now accepts ?\"zero-truncated binomial\"?,\n  ?\"zero-truncated geometric\"?, ?\"zero-truncated negative\n  binomial\"?, ?\"zero-truncated poisson\"?, ?\"zero-modified\n  binomial\"?, ?\"zero-modified geometric\"?, ?\"zero-modified\n  negative binomial\"?, ?\"zero-modified poisson\"? and\n  ?\"zero-modified logarithmic\"? for argument ?model.freq? with\n  the ?\"recursive\"? method.\n\n? New function ?rmixture? to generate random variates from\n  discrete mixtures, that is from random variables with\n  densities of the form f(x) = p_1 f_1(x) + ... + p_n f_n(x).\n\n? New function ?rcompound? to generate random variates from (non\n  hierarchical) compound models of the form S = X_1 + ... + X_N.\n  Function ?simul? could already do that, but ?rcompound? is\n  substantially faster for non hierarchical models.\n\n? New function 'rcomppois' that is a simplified version of\n  ?rcompound? for the very common compound Poisson case.\n\n? Function ?simul? now accepts an atomic (named or not) vector for\n  argument ?nodes? when simulating from a non hierarchical\n  compound model. But really, one should use ?rcompound? for\n  such cases.\n\n? New alias ?rcomphierarc? for ?simul? that better fits within\n  the usual naming scheme of random generation functions.\n\n? Functions ?grouped.data? and ?ogive? now accept individual\n  data in argument. The former will group the data using\n  ?hist? (therefore, all the algorithms to compute the number\n  of breakpoints available in ?hist? are also available in\n  ?grouped.data?). ?ogive? will first create a grouped data\n  object and then compute the ogive.\n\n  While there is no guarantee that the two functions are\n  backward compatible (the number and position of the\n  arguments have changed), standard calls should not be\n  affected.\n\nUSER VISIBLE CHANGES\n\n? The material on probability laws in vignette ?\"lossdist\"?\n  has been moved to the new vignette ?\"distributions\"? (see\n  the previous section).\n\n? The first argument of the ?mgf<dist>? functions has changed\n  from ?x? to ?t?. This is a more common notation for moment\n  generating functions.\n\n? In ?aggregateDist? with the ?\"recursive\"? method, if the\n  length of ?p0? is greater than one, only the first element\n  is used, with a warning.\n\n? ?aggregateDist? with the ?\"recursive\"? method and\n  ?model.freq = \"logarithmic\"? now uses the new ?dlogarithmic?\n  family of functions. Therefore, parametrization has changed\n  from the one of Klugman et al. (2012) to the standard\n  parametrization for the logarithmic distribution. Basically,\n  any value of ?prob? for the logarithmic parameter in\n  previous versions of ?actuar? should now be ?1 - prob?.\n\n? The aim of vignette ?\"simulation\"? is changed from\n  ?simulation of compound hierarchical models? to ?simulation\n  of insurance data with ?actuar?? as it also covers the new\n  functions ?rmixture? and ?rcompound?.\n\n? Vignette ?\"lossdist\"? is renamed to ?\"modeling\"? and it is\n  revised to cover the new functionalities of ?grouped.data?\n  and ?ogive?.\n\nBUG FIX\n\n?  An old and nasty out-of-bounds bug could crash R when using\n  the \"recursive\" method of 'aggregateDist' with a frequency\n  distribution from the (a, b, 1) family.\n\n\nI hope this update will prove useful.\n\nVincent Goulet, Ph.D.\nProfesseur titulaire\n?cole d'actuariat, Universit? Laval",
+      "body_snippet": "Dear useRs,\n\nI'm happy to announce a substantial update of package actuar that bumps the version number to 2.0-0. This release focuses on additional support for continuous and discrete distributions, ",
+      "thread_id": "thread-b74aa674681f",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-4b52b6028727",
+      "message_id": "<etPan.582a8310.754f1c19.70aa@icloud.com>",
+      "from_name": "Amos Elberg",
+      "from_email_hash": "c39513ef9db10655c12f179d90eaebd04be55488cdf83298699b5c2edc6a86c4",
+      "date": "2016-11-14T22:37:52-05:00",
+      "subject": "[R-pkgs] New Package: largeVis",
+      "subject_clean": "New Package: largeVis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,  \n\nI?m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for visualizing high-dimensional datasets, similar to (and of similar quality to) t-SNE. But, LargeVis runs in O(n) time, which makes it feasible to use on datasets with millions of rows and thousands of columns. LargeVis is also insensitive to hyperparameter changes, which is important when running on large datasets that take time to compute.  \n\n\t- Very fast approximate nearest neighbor search. I believe it to be the fastest nearest neighbor search available for R.  \n\n\t- A fast implementation of the HDBSCAN clustering algorithm. HDBSCAN is a density-based clustering similar to DBSCAN and OPTICS (which are also implemented), but HDBSCAN allows the density threshold for clusters to vary. This makes it insensitive to hyperparameter changes and more flexible than either DBSCAN or OPTICS.\n\nThere are other features as well, such as functions to visualize image embeddings using largeVis.?\n\nSome examples are available here: ?https://github.com/elbamos/largevis\nBenchmarks comparing the speed of the nearest neighbor search to RcppAnnoy are here:?https://github.com/elbamos/largeVis/blob/master/benchmarks.md\nExamples of HDBSCAN are here: ?https://cran.r-project.org/web/packages/largeVis/vignettes/momentumandusedata.html\n\nThe package is available here: ?https://cran.r-project.org/web/packages/largeVis/index.html? and for best results, to take advantage of 64-bit machines and multiple cores, should be installed from source.?\n\nThank you!\n\n(*) A prior version was available on CRAN but not announced.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,  \n\nI?m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for",
+      "thread_id": "thread-4b52b6028727",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-6d928d5b322a",
+      "message_id": "<D8C8E847-8FD6-4BEE-864A-4A07DFBCD877@math.leidenuniv.nl>",
+      "from_name": "S.L. van der Pas",
+      "from_email_hash": "b3633e1bbd8832152642bf33d4ed1aaec540f9cb56e928c5a25fefacdd8ec356",
+      "date": "2016-11-16T14:15:07-06:00",
+      "subject": "[R-pkgs] Announcing new package horseshoe",
+      "subject_clean": "Announcing new package horseshoe",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe first version of the package ?horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versions for the special case of the normal means problem.\n\nThe functions output, among other things, the horseshoe estimator (posterior mean), credible intervals, and there is a function to perform variable selection.\n\nThe package can be installed by typing install.packages{?horseshoe?)\n\nThe page for the package:\n\nhttps://CRAN.R-project.org/package=horseshoe <https://cran.r-project.org/package=horseshoe>\n\nThe manual contains examples for each function:\n\nhttps://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf <https://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf>\n\nComments and suggestions are very welcome.\n\nBest wishes,\n\nSt?phanie van der Pas, James Scott, Antik Chakraborty and Anirban Bhattacharya\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nThe first version of the package ?horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versio",
+      "thread_id": "thread-6d928d5b322a",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-8442a108f1ca",
+      "message_id": "<CAOR1wai8w9wZjUQJHCD6qpiGz8jats5zoaRvpD6e5nUmuh4+AQ@mail.gmail.com>",
+      "from_name": "Anthony Ebert",
+      "from_email_hash": "9e41a24c0d6db35ce7193ae123e907714dbf28c9738425ae9d0240dc31405beb",
+      "date": "2016-11-29T18:17:20+10:00",
+      "subject": "[R-pkgs] New package queuecomputer",
+      "subject_clean": "New package queuecomputer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nqueuecomputer is a new R package now available on CRAN. It is a very\nfast method for simulating queueing networks.\n\nThe user supplies the arrival and service times and the departure\ntimes are computed deterministically. The name queuecomputer is meant\nin the sense that the package 'computes queues'.\n\nThe page for the package:\n\nhttps://CRAN.R-project.org/package=queuecomputer\n\nThe github repo is:\n\nhttps://github.com/AnthonyEbert/queuecomputer\n\nAll feedback is welcome anthonyebert+CRAN at gmail.com\n\nPlease send any reports of bugs to anthonyebert+CRAN at gmail.com or\ncreate an issue on github.\n\nKind regards,\n\nAnthony Ebert",
+      "body_snippet": "Dear R users,\n\nqueuecomputer is a new R package now available on CRAN. It is a very\nfast method for simulating queueing networks.\n\nThe user supplies the arrival and service times and the departure\ntim",
+      "thread_id": "thread-8442a108f1ca",
+      "thread_depth": 0,
+      "month": "2016-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3298da2bb814",
+      "subject": "new package: rpostgisLT",
+      "message_count": 1,
+      "participants": [
+        "David Bucklin"
+      ],
+      "started": "2016-11-02T10:59:39-04:00",
+      "last_reply": "2016-11-02T10:59:39-04:00",
+      "root_message_id": "msg-3298da2bb814"
+    },
+    {
+      "id": "thread-2c8b9e395671",
+      "subject": "Massive Update to Hmisc package",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2016-11-03T08:51:28-05:00",
+      "last_reply": "2016-11-03T08:51:28-05:00",
+      "root_message_id": "msg-2c8b9e395671"
+    },
+    {
+      "id": "thread-7c4008ea3be1",
+      "subject": "Major Update to rms package: 5.0-0",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2016-11-04T13:17:05-05:00",
+      "last_reply": "2016-11-04T13:17:05-05:00",
+      "root_message_id": "msg-7c4008ea3be1"
+    },
+    {
+      "id": "thread-f21d2c1fdcaf",
+      "subject": "Package BatchGetSymbols",
+      "message_count": 1,
+      "participants": [
+        "Marcelo Perlin"
+      ],
+      "started": "2016-11-06T14:02:50-02:00",
+      "last_reply": "2016-11-06T14:02:50-02:00",
+      "root_message_id": "msg-f21d2c1fdcaf"
+    },
+    {
+      "id": "thread-b74aa674681f",
+      "subject": "Major update of package actuar",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2016-11-14T14:06:23+00:00",
+      "last_reply": "2016-11-14T14:06:23+00:00",
+      "root_message_id": "msg-b74aa674681f"
+    },
+    {
+      "id": "thread-4b52b6028727",
+      "subject": "New Package: largeVis",
+      "message_count": 1,
+      "participants": [
+        "Amos Elberg"
+      ],
+      "started": "2016-11-14T22:37:52-05:00",
+      "last_reply": "2016-11-14T22:37:52-05:00",
+      "root_message_id": "msg-4b52b6028727"
+    },
+    {
+      "id": "thread-6d928d5b322a",
+      "subject": "Announcing new package horseshoe",
+      "message_count": 1,
+      "participants": [
+        "S.L. van der Pas"
+      ],
+      "started": "2016-11-16T14:15:07-06:00",
+      "last_reply": "2016-11-16T14:15:07-06:00",
+      "root_message_id": "msg-6d928d5b322a"
+    },
+    {
+      "id": "thread-8442a108f1ca",
+      "subject": "New package queuecomputer",
+      "message_count": 1,
+      "participants": [
+        "Anthony Ebert"
+      ],
+      "started": "2016-11-29T18:17:20+10:00",
+      "last_reply": "2016-11-29T18:17:20+10:00",
+      "root_message_id": "msg-8442a108f1ca"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-07",
+  "messages": [
+    {
+      "id": "msg-8847122d1fd3",
+      "message_id": "<CALFkR3huvsXkmwDGJWMhzY=C7tXm4zejJ_ZABw-QMeMZeCNoQg@mail.gmail.com>",
+      "from_name": "Edward Visel",
+      "from_email_hash": "f89e4f5e9d63968a1c9ddeffe7afdffd084cff8688ce93b52e2f33964a6943fc",
+      "date": "2017-07-10T13:06:23-04:00",
+      "subject": "[R-pkgs] New package: passport",
+      "subject_clean": "New package: passport",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI'm happy to announce the debut of my first package on CRAN, `passport`, to\nhelp your country name and code data travel smoothly between formats.\n\n`passport` brings simple utilities for parsing irregular country names to\nstandardized codes using local regex, or for anything geocodable, the Data\nScience Toolkit or Google geocoding APIs.\n\nOnce the data is standardized, it has fast converters for moving between\nnames and codes, offering a range of standardized namesets including from\nUnicode's Common Locale Data Repository (http://cldr.unicode.org/), which\noffers common-sense, usable standardizations in languages from Afrikaans to\nZulu, with short and alternate variants.\n\ntl;dr: If you need your data to say \"South Korea\" instead of \"Korea, Rep.\",\ntry `passport`.\n\nLinks:\n- Website: https://alistaire47.github.io/passport//index.html\n- GitHub: https://github.com/alistaire47/passport\n- CRAN: https://cran.r-project.org/package=passport\n\nI hope it's useful!\n\nBest,\nEdward\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi!\n\nI'm happy to announce the debut of my first package on CRAN, `passport`, to\nhelp your country name and code data travel smoothly between formats.\n\n`passport` brings simple utilities for parsing i",
+      "thread_id": "thread-8847122d1fd3",
+      "thread_depth": 0,
+      "month": "2017-07"
+    },
+    {
+      "id": "msg-54acb66d5e8e",
+      "message_id": "<86zica6bqf.wl-eglenn@mit.edu>",
+      "from_name": "Ezra Haber Glenn",
+      "from_email_hash": "97e7ed7f7dce2c2cec1d7cb672f982f3087af9f4e61a0cdb8e0ce347c1fd9f90",
+      "date": "2017-07-11T14:59:36-04:00",
+      "subject": "[R-pkgs] acs version 2.1.0 update: download and analyze data from the US Census in R",
+      "subject_clean": "acs version 2.1.0 update: download and analyze data from the US Census in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce the release of version 2.1.0 of the \"acs\"\npackage, now available on CRAN\n<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package allows users to download, manipulate, analyze, and present\ndemographic data from the U.S. Census, with special tools and methods\nto simplify the tasks of working with estimates and standard errors\ncontained in data from the American Community Survey (ACS).  \n\nImportant: version 2.1.0 of the package is a \"minor update\" in terms\nof features, but it includes a number of low-level tweaks necessary to\naccommodate upcoming changes in the Census API, including a shift to\nhttps transfer.  Current users are strongly encouraged to update as\nsoon as possible to avoid problems at the end of the summer.\n\nOther minor changes include (a) removing plyr from a \"dependency\" and\nsimply importing the required \"rbind.fill\" function, and (b) updating\ncbind/rbind options to be consistent with S3 methods.\n\nFor more information on the package and the update, please visit:\n<http://eglenn.scripts.mit.edu/citystate/2016/03/acs-version-2-0-now-on-cran>,\nand the \"Working with acs.R\" user guide at\n<http://dusp.mit.edu/sites/dusp.mit.edu/files/attachments/publications/working_with_acs_R_v_2.0.pdf>.\n\n--\nEzra Haber Glenn, AICP\nDepartment of Urban Studies and Planning\nMassachusetts Institute of Technology\n77 Massachusetts Ave., Room 7-346\nCambridge, MA 02139\neglenn at mit.edu \nhttp://dusp.mit.edu/faculty/ezra-glenn\n617.253.2024 (w)\n617.721.7131 (c)",
+      "body_snippet": "We are pleased to announce the release of version 2.1.0 of the \"acs\"\npackage, now available on CRAN\n<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package allows users to download, mani",
+      "thread_id": "thread-54acb66d5e8e",
+      "thread_depth": 0,
+      "month": "2017-07"
+    },
+    {
+      "id": "msg-5b2d5d603a6b",
+      "message_id": "<557430534.1245032.1501071297432@mail.yahoo.com>",
+      "from_name": "brodie gaslam",
+      "from_email_hash": "c8d0937e5dd68ad44721736755f2c013dc82cb1d905f5bec9a5e6b5610559043",
+      "date": "2017-07-26T12:14:57Z",
+      "subject": "[R-pkgs] New Package vetr: Enforce Structural Requirements for S3 Objects",
+      "subject_clean": "New Package vetr: Enforce Structural Requirements for S3 Objects",
+      "in_reply_to": null,
+      "references": [
+        "<557430534.1245032.1501071297432.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "`vetr` implements a declarative template-based approach to verify that objects\nmeet structural requirements, and auto-composes error messages when they do not.\nThis package is intended to simplify a more formal use of S3 objects.\n\nThe template concept is borrowed from `vapply`:\n\n>> vet(numeric(1L), 1:3)\n>? [1] \"`1:3` should be length 1 (is 3)\"\n>> vet(numeric(1L), \"hello\")\n>? [1] \"`\\\"hello\\\"` should be type \\\"numeric\\\" (is \\\"character\\\")\"\n>> vet(numeric(1L), 42)\n>? [1] TRUE\n\nThere is no limit on template complexity:\n\n>> vet(matrix(integer(), ncol=3), matrix(1:12, 3))\n>? [1] \"`matrix(1:12, 3)` should have 3 columns (has 4)\"\n>\n>> iris.template <- abstract(iris)\n>> levels(iris$Species)[3] <- 'sibirica'\n>> vet(iris.template, iris[1:10,])\n>? [1] \"`levels((iris[1:10, ])$Species)[3]` should be \\\"virginica\\\"\n>? (is \\\"sibirica\\\")\"\n\n`vetr` implements programmable non-standard evaluation via recursive\nsubstitution of language objects:\n\n>> a <- quote(integer() && . > 0)\n>> b <- quote(logical(1L) && !anyNA(.))\n>> c <- quote(a || b)\n>> vet(c, -1)\n>? [1] \"At least one of these should pass:\"\n>? [2] \"? - `-1 > 0` is not TRUE (FALSE)\"\n>? [3] \"? - `-1` should be type \\\"logical\\\" (is \\\"double\\\")\"\n\nPerformance is comparable to `stopifnot` for simple checks, and is faster for\ncomplex (template based) ones.? There is a mode that further streamlines\nparameter vetting in functions.\n\nThe package is still under development, but the features should be mostly\nstable.? Feedback welcome <https://github.com/brodieG/vetr>.\n\nBest regards,\n\n\nBrodie\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "`vetr` implements a declarative template-based approach to verify that objects\nmeet structural requirements, and auto-composes error messages when they do not.\nThis package is intended to simplify a m",
+      "thread_id": "thread-5b2d5d603a6b",
+      "thread_depth": 0,
+      "month": "2017-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8847122d1fd3",
+      "subject": "New package: passport",
+      "message_count": 1,
+      "participants": [
+        "Edward Visel"
+      ],
+      "started": "2017-07-10T13:06:23-04:00",
+      "last_reply": "2017-07-10T13:06:23-04:00",
+      "root_message_id": "msg-8847122d1fd3"
+    },
+    {
+      "id": "thread-54acb66d5e8e",
+      "subject": "acs version 2.1.0 update: download and analyze data from the US Census in R",
+      "message_count": 1,
+      "participants": [
+        "Ezra Haber Glenn"
+      ],
+      "started": "2017-07-11T14:59:36-04:00",
+      "last_reply": "2017-07-11T14:59:36-04:00",
+      "root_message_id": "msg-54acb66d5e8e"
+    },
+    {
+      "id": "thread-5b2d5d603a6b",
+      "subject": "New Package vetr: Enforce Structural Requirements for S3 Objects",
+      "message_count": 1,
+      "participants": [
+        "brodie gaslam"
+      ],
+      "started": "2017-07-26T12:14:57+00:00",
+      "last_reply": "2017-07-26T12:14:57+00:00",
+      "root_message_id": "msg-5b2d5d603a6b"
+    }
+  ]
+}

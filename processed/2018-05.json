@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-05",
+  "messages": [
+    {
+      "id": "msg-988729d5d0b7",
+      "message_id": "<CACsjJ_cDdbwYM7L1Sd_qwOeU_GgQg1JxPdfCMWtse4pYGhAxig@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2018-05-02T22:32:12-04:00",
+      "subject": "[R-pkgs] randomForestSRC 2.6.0 - Our Fastest Build Yet!",
+      "subject_clean": "randomForestSRC 2.6.0 - Our Fastest Build Yet!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nThe latest build of randomForestSRC (2.6.0) includes significant\nimprovements in speed when a number of user options including general\nensembles, forest weights, importance and partial plots are in play.  We\nmanaged to remove some bottlenecks that were occurring between the OpenMP\nthreads in larger-n and larger-p situations.  This was especially\npronounced in survival families.\n\nAs per the previous release, we believe the binaries provided by CRAN for\nWindows, MacOS, and Linux support OpenMP out-of-the-box.  If you are running\na serial version of our package, we strongly recommend an upgrade path that\nwill allow you to run the parallel version.  This upgrade path may be as\nsimple as installing the CRAN binaries.  But, on some systems, it may also\ninvolve a scenario where you will need to install an OpenMP capable\nC-compiler such as GCC, and then compile and install randomForestSRC from\nsource.\n\nDocumentation and more can be found at:\nhttps://kogalur.github.io/randomForestSRC/\n\nThank you.\n\nUdaya Kogalur\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs:\n\nThe latest build of randomForestSRC (2.6.0) includes significant\nimprovements in speed when a number of user options including general\nensembles, forest weights, importance and partial pl",
+      "thread_id": "thread-988729d5d0b7",
+      "thread_depth": 0,
+      "month": "2018-05"
+    },
+    {
+      "id": "msg-2d917ea34764",
+      "message_id": "<CAFx18AqjGg68oDdG7RPPKpDOxy14rcSNV68XCa4AnLYLffZA3g@mail.gmail.com>",
+      "from_name": "Peter Straka",
+      "from_email_hash": "f8edc68e7ad1a48802b7126407f3dfaf87db7a872001e7e737f461f3fd0b2659",
+      "date": "2018-05-15T16:07:39+08:00",
+      "subject": "[R-pkgs] New package CTRE modelling Bursty Extremes",
+      "subject_clean": "New package CTRE modelling Bursty Extremes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nthe R package CTRE has been released on CRAN. It models *extreme values in\nbursty time series*.\n\nUnlike extreme value cluster models, CTRE assumes heavy-tailed\ninter-arrival times, which directly produce bursty dynamics.\n\nFor more details, see the blog post at <\nhttps://strakaps.github.io/post/ctre-package/>. It features a shiny app\nloaded with sample datasets.\n\nFor the full picture, see the CTRE paper: <\nhttps://strakaps.github.io/bursty-POT/>\n\nThe package web page is at <https://strakaps.github.io/CTRE/> (thanks to\npkgdown).\n\nThank you all and best wishes,\n\nPeter Straka\n@strakaps\n*Senior Research Fellow in Statistics (DECRA)*\nSchool of Mathematics & Statistics <https://www.maths.unsw.edu.au/> |\nFaculty of Science\n\nUNSW SYDNEY NSW 2052 AUSTRALIA\nE: p.straka at unsw.edu.au\nW: strakaps.github.io\nZ: https://unsw.zoom.us/j/5204286354\nORCID: 0000-0003-1735-4676 <http://orcid.org/0000-0003-1735-4676>\nCRICOS Provider Code 00098G\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nthe R package CTRE has been released on CRAN. It models *extreme values in\nbursty time series*.\n\nUnlike extreme value cluster models, CTRE assumes heavy-tailed\ninter-arrival times, which ",
+      "thread_id": "thread-2d917ea34764",
+      "thread_depth": 0,
+      "month": "2018-05"
+    },
+    {
+      "id": "msg-a93c73acd709",
+      "message_id": "<CAE6U0Ba69NDj0eqHELoVuBHHoxinHXxX8JG11r8E4CK35-3Z1Q@mail.gmail.com>",
+      "from_name": "AMR RS",
+      "from_email_hash": "99848ff6b4d8cdb629dc76d9d19a64f78428aa63daf8b85014e0c77b7858831a",
+      "date": "2018-05-16T03:40:43+05:30",
+      "subject": "[R-pkgs] randquotes - Need motivation? randquotes R package to deliver random quotes",
+      "subject_clean": "randquotes - Need motivation? randquotes R package to deliver random quotes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello Rusers, `randquotes` R package to Get Random Quotes from Quotes on\nDesign API .\n\nStar it, Fork it, install it and use it!\n\nhttps://github.com/amrrs/randquotes\n\ninstall.packages(\"randquotes\")\n\nhttps://cran.r-project.org/package=randquotes\n\nThanks & Regards,\nAbdul\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Rusers, `randquotes` R package to Get Random Quotes from Quotes on\nDesign API .\n\nStar it, Fork it, install it and use it!\n\nhttps://github.com/amrrs/randquotes\n\ninstall.packages(\"randquotes\")\n\nht",
+      "thread_id": "thread-a93c73acd709",
+      "thread_depth": 0,
+      "month": "2018-05"
+    },
+    {
+      "id": "msg-f224eb63a97d",
+      "message_id": "<68fe2283-ed2f-a3f0-ad24-68454954bb71@daqana.com>",
+      "from_name": "Ralf Stubner",
+      "from_email_hash": "47f4782239adabbcf14960e1886f42c1089d8e66e1de7ae8ecb7f088016c550c",
+      "date": "2018-05-18T10:44:09+02:00",
+      "subject": "[R-pkgs] new R package dqrng",
+      "subject_clean": "new R package dqrng",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nA new package, dqrng, is available on CRAN:\n\ndqrng: Fast Pseudo Random Number Generators\n\nSeveral fast random number generators are provided as C++ header only\nlibraries: The PCG family by O'Neill (2014\n<https://www.cs.hmc.edu/tr/hmc-cs-2014-0905.pdf>) as well as\nXoroshiro128+ and Xoshiro256+ by Blackman and Vigna (2018\n<arXiv:1805.01407>). In addition fast functions for generating random\nnumbers according to a uniform, normal and exponential distribution are\nincluded. The latter two use the Ziggurat algorithm originally proposed\nby Marsaglia and Tsang (2000, <doi:10.18637/jss.v005.i08>). These\nfunctions are exported to R and as a C++ interface and are enabled for\nuse with the 64 bit version of the Mersenne-Twister by Matsumoto and\nNishimura (1998 <doi:10.1145/272991.272995>), the default 64 bit\ngenerator from the PCG family as well as Xoroshiro128+ and Xoshiro256+.\n\nUsing the provided RNGs from R is deliberately similar to using R?s\nbuild-in RNGs:\n\nlibrary(dqrng)\ndqRNGkind(\"Xoroshiro128+\")\ndqset.seed(42)\ndqrunif(5, min = 2, max = 10)\n#> [1] 4.498747 9.647875 5.232044 6.176499 8.453008\ndqrexp(5, rate = 4)\n#> [1] 0.5520084 0.1982174 0.3281557 0.1913137 0.7544450\n\nThey are quite a bit faster, though:\n\nN <- 1e7\nsystem.time(rnorm(N))\n#>    user  system elapsed\n#>   0.650   0.005   0.654\nsystem.time(dqrnorm(N))\n#>    user  system elapsed\n#>   0.059   0.012   0.072\n\nGreetings\nRalf\n\n-- \nRalf Stubner\nSenior Software Engineer / Trainer\n\ndaqana GmbH\nDortustra?e 48\n14467 Potsdam\n\nT: +49 331 23 70 81 66\nF: +49 331 23 70 81 67\nM: +49 162 20 91 196\nMail: ralf.stubner at daqana.com\n\nSitz: Potsdam\nRegister: AG Potsdam HRB 27966 P\nUst.-IdNr.: DE300072622\nGesch?ftsf?hrer: Prof. Dr. Dr. Karl-Kuno Kunze",
+      "body_snippet": "Dear R users,\n\nA new package, dqrng, is available on CRAN:\n\ndqrng: Fast Pseudo Random Number Generators\n\nSeveral fast random number generators are provided as C++ header only\nlibraries: The PCG family",
+      "thread_id": "thread-f224eb63a97d",
+      "thread_depth": 0,
+      "month": "2018-05"
+    },
+    {
+      "id": "msg-0f3bc6d7f2bf",
+      "message_id": "<FF1FDDA9-1043-45C7-B0F6-8EBF4733FBCE@wiwi.hu-berlin.de>",
+      "from_name": "Joachim Gassen",
+      "from_email_hash": "3b0cdb38a422ccb7510a4691007a69a8a56278df588526eb4d42adc0162b8d3a",
+      "date": "2018-05-19T17:04:50+02:00",
+      "subject": "[R-pkgs] New package ExPanDaR: Explore Panel Data Interactively",
+      "subject_clean": "New package ExPanDaR: Explore Panel Data Interactively",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'm happy to announce the release of the new R package \n\t\n\tExPanDaR (Explore Panel Data with R)\n\non CRAN (https://CRAN.R-project.org/package=ExPanDaR). \n\nExPanDaR provides the code base for the ExPanD web app. \nExPanD is a shiny based app supporting interactive exploratory data analysis.\n\nIt has two purposes:\n\n- Provide a toolbox for researchers to explore panel data on the fly.\n- Enable users to assess the robustness of empirical evidence without \n  providing them with access to the underlying data.\n\nWhile I hope that ExPanD will be particularly helpful in the academic review, \npublication and replication process, it might also be convenient for typical \nexploratory data analysis workflows. In addition, it has already proven to be \nhelpful in the classroom.\n\nTo check-out the ExPanD shiny based web-app, go to\n\thttps://jgassen.shinyapps.io/expand_wb/\n\nTo learn more about ExPanDaR, its functions and its usability, go to\n\thttps://joachim-gassen.github.io/ExPanDaR\n\nThe GitHub repository can be found at\n\thttps://github.com/joachim-gassen/ExPanDaR\n\nThank you all for making R happen and best regards,\n\nJoachim\n-- \nProf. Dr. Joachim Gassen\nChair of Financial Accounting and Auditing\nSchool of Business and Economics\nHumboldt University Berlin\n10099 Berlin - Germany\nphone: +49-30-2093 99440\nfax: +49-30-2093 99441\npapers at: http://papers.ssrn.com/author=78615",
+      "body_snippet": "Dear R users,\n\nI'm happy to announce the release of the new R package \n\t\n\tExPanDaR (Explore Panel Data with R)\n\non CRAN (https://CRAN.R-project.org/package=ExPanDaR). \n\nExPanDaR provides the code base",
+      "thread_id": "thread-0f3bc6d7f2bf",
+      "thread_depth": 0,
+      "month": "2018-05"
+    },
+    {
+      "id": "msg-07db95cbc003",
+      "message_id": "<74D09130-4F19-4651-817C-21522C8B8ECB@icloud.com>",
+      "from_name": "Jesse Vent",
+      "from_email_hash": "547ac07a162f739a417547673e8bdf4967210553191090c1fc2fa921fe987301",
+      "date": "2018-05-30T00:10:56+09:30",
+      "subject": "[R-pkgs] crypto: Historical cryptocurrency market data for all digital currencies",
+      "subject_clean": "crypto: Historical cryptocurrency market data for all digital currencies",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "## [crypto 1.0.1]\n\nDear R users and enthusiasts,\n\nAfter several months in the public domain, the first major version of the ?crypto? package was just released on CRAN with some new features and bug fixes.\n\nThe R package that provides historic OHLC crypto currency market data for ALL coins and exchanges.\n\nThe **crypto** package is the R resource to go to for anything crypto currency related and includes a variety of different functions to extract data about the crypto currency markets. \n\nFeatured on Kaggle as the 35th most popular dataset, it is quickly becoming the go-to resource for crypto currency market information in the data science community.\n\t\t\t\t\n- crypto_history()\t\tRetrieves OHLC historical crypto currency data  \n- crypto_prices()\t\tRetrieves current crypto currency prices  \n- crypto_list()\t\t\tRetrieves list of all crypto currencies  \n- crypto_exchanges()\tRetrieves all crypto exchanges and their listings  \n- crypto_xts()\t\t\tConverts/summarises historical data into xts objects  \n- daily_market()\t\tTime series market data perfect for charts and visualisation  \n- global_market()\t\tGlobal market time series for all coins or alt-coins\n\n> Now featuring enhanced localisation support for different encoding standards.\n\nCRAN:\thttps://CRAN.R-project.org/package=crypto <https://cran.r-project.org/package=crypto>\nGithub: \thttps://github.com/JesseVent/crypto <https://github.com/JesseVent/crypto>\nKaggle: \thttps://www.kaggle.com/jessevent/all-crypto-currencies <https://www.kaggle.com/jessevent/all-crypto-currencies>\n\nAll suggestions, comments and feedback are welcome\n\nBest regards, \n\nJesse V.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "## [crypto 1.0.1]\n\nDear R users and enthusiasts,\n\nAfter several months in the public domain, the first major version of the ?crypto? package was just released on CRAN with some new features and bug fi",
+      "thread_id": "thread-07db95cbc003",
+      "thread_depth": 0,
+      "month": "2018-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-988729d5d0b7",
+      "subject": "randomForestSRC 2.6.0 - Our Fastest Build Yet!",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2018-05-02T22:32:12-04:00",
+      "last_reply": "2018-05-02T22:32:12-04:00",
+      "root_message_id": "msg-988729d5d0b7"
+    },
+    {
+      "id": "thread-2d917ea34764",
+      "subject": "New package CTRE modelling Bursty Extremes",
+      "message_count": 1,
+      "participants": [
+        "Peter Straka"
+      ],
+      "started": "2018-05-15T16:07:39+08:00",
+      "last_reply": "2018-05-15T16:07:39+08:00",
+      "root_message_id": "msg-2d917ea34764"
+    },
+    {
+      "id": "thread-a93c73acd709",
+      "subject": "randquotes - Need motivation? randquotes R package to deliver random quotes",
+      "message_count": 1,
+      "participants": [
+        "AMR RS"
+      ],
+      "started": "2018-05-16T03:40:43+05:30",
+      "last_reply": "2018-05-16T03:40:43+05:30",
+      "root_message_id": "msg-a93c73acd709"
+    },
+    {
+      "id": "thread-f224eb63a97d",
+      "subject": "new R package dqrng",
+      "message_count": 1,
+      "participants": [
+        "Ralf Stubner"
+      ],
+      "started": "2018-05-18T10:44:09+02:00",
+      "last_reply": "2018-05-18T10:44:09+02:00",
+      "root_message_id": "msg-f224eb63a97d"
+    },
+    {
+      "id": "thread-0f3bc6d7f2bf",
+      "subject": "New package ExPanDaR: Explore Panel Data Interactively",
+      "message_count": 1,
+      "participants": [
+        "Joachim Gassen"
+      ],
+      "started": "2018-05-19T17:04:50+02:00",
+      "last_reply": "2018-05-19T17:04:50+02:00",
+      "root_message_id": "msg-0f3bc6d7f2bf"
+    },
+    {
+      "id": "thread-07db95cbc003",
+      "subject": "crypto: Historical cryptocurrency market data for all digital currencies",
+      "message_count": 1,
+      "participants": [
+        "Jesse Vent"
+      ],
+      "started": "2018-05-30T00:10:56+09:30",
+      "last_reply": "2018-05-30T00:10:56+09:30",
+      "root_message_id": "msg-07db95cbc003"
+    }
+  ]
+}

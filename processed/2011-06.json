@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-06",
+  "messages": [
+    {
+      "id": "msg-eb7d93053da2",
+      "message_id": "<1EA2B30C-D011-4898-870D-D8EAFBE4C433@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2011-06-08T12:27:17-07:00",
+      "subject": "[R-pkgs] svmpath_0.95 uploaded to CRAN",
+      "subject_clean": "svmpath_0.95 uploaded to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This new version includes a plot method for plotting\na particular instance along the path.\n\n ----------------------------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231                 Fax: (650) 725-8977  \n  URL: http://www.stanford.edu/~hastie  \n   address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
+      "body_snippet": "This new version includes a plot method for plotting\na particular instance along the path.\n\n ----------------------------------------------------------------------------------------\n  Trevor Hastie   ",
+      "thread_id": "thread-eb7d93053da2",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-3516cebd50d3",
+      "message_id": "<4DFDDC97.3060302@gmail.com>",
+      "from_name": "Sylvain Mareschal",
+      "from_email_hash": "56f0027e872c13dd6f7e7d121859486d2430c3b65ef543ba286db572f03c49b8",
+      "date": "2011-06-19T13:25:11+02:00",
+      "subject": "[R-pkgs] ODB : connecting OpenOffice Base with R",
+      "subject_clean": "ODB : connecting OpenOffice Base with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The recently released \"ODB\" package was developped to manage HSQL \ndatabases embedded in .odb files (the default when creating a database \nwith OpenOffice Base) via R.\n\n\n\nBRIEFLY\n\nThe goal of this package is to access OpenOffice databases via R, to \nprocess data stored in it or to automatize their building from scratch \nor updating.\n\nThe package provides 5 main functions :\n- odb.create, to create a new .odb file from a template.\n- odb.open, to produce an \"odb\" connection to a temporary copy of the \n.odb file.\n- odb.close, to close the connection and update the .odb file.\n- odb.read, to import data from the database to R via \"SELECT\" SQL \nqueries built by the useR.\n- odb.write, to update the database via \"INSERT\" or \"CREATE\" SQL queries \nbuilt by the useR.\n\nA few other functions are also provided to manage .odb specificties such \nas comments on table fields and stored queries. Some wrappers are also \nprovided to insert directly a data.frame in a database table without \nwriting the SQL query, list the table names ands fields or export the \ndatabase in a .sql file.\n\nOther wrappers may be added in future versions to help users not \nfamiliar with the SQL language.\n\n\n\nTYPICAL USE\n\nconnection <- odb.open(\"file.odb\")\ndata <- odb.read(connection, \"SELECT * FROM table WHERE id < 15\")\nodb.write(connection, \"UPDATE table SET field='peach' WHERE id = 5\")\nodb.close(connection)\n\n\n\nTECHNICAL CONSIDERATIONS\n\n.odb files, as any other OpenDocument files, are ZIP archives containing \nthe HSQL files. To establish the connection, the .odb file is unzipped \nvia the \"zip\" bash command if available, and the connection is made via \nthe RJDBC interface. The \"odb\" object produced inherits from the \n\"DBIConnection\" class, thus all functions provided in the DBI packages \nmay be used directly on it to manage the database. The odb.read and \nodb.write functions are only wrappers to such DBI functions, handling \nfrequent issues such as charset or factors considerations.\n\nNotice the database files are copied in a temporary directory, thus any \nupdate made to the database is not written in the .odb file untill the \nodb.close call, so simultaneous access to a same database (via R and \nOpenOffice) should not be considered.\n\n\n\nAny suggestion or comment may be sent back to this email adress.\n\nSylvain Mareschal",
+      "body_snippet": "The recently released \"ODB\" package was developped to manage HSQL \ndatabases embedded in .odb files (the default when creating a database \nwith OpenOffice Base) via R.\n\n\n\nBRIEFLY\n\nThe goal of this pac",
+      "thread_id": "thread-3516cebd50d3",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-5763d7a5bfa1",
+      "message_id": "<63082DBDBE79D044A586D01118F27976B631B4787C@ICTS-S-EXC2-CA.luna.kuleuven.be>",
+      "from_name": "Ivailo Partchev",
+      "from_email_hash": "ea82744cd5fac6059e3f4d5003ba6d43ab1281c970eb59aa7687ff2c12ec4fea",
+      "date": "2011-06-23T09:37:02Z",
+      "subject": "[R-pkgs] irtoys 0.1.4",
+      "subject_clean": "irtoys 0.1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of irtoys is / will be available on CRAN. Two minor bugs have been fixed. One of these is more interesting: the previous code did not anticipate negative estimates for discriminations. What I did not know is that, unlike ICL or Bilog, ltm does not constrain discriminations to be positive. This means that it can be used to analyze bipolar data (think political sciences).\n\nThere are also two new features: (i) Tamaki Hattori has kindly provided me with the original 1980 article of Haebara, and he has written code for the symmetrical versions of the Haebara and Stocking-Lord scaling methods, now available as an option; (ii) I have finally added a wle function for the bias-corrected estimates of ability aka Warm's estimates\n\nKind regards\nIvailo Partchev",
+      "body_snippet": "A new version of irtoys is / will be available on CRAN. Two minor bugs have been fixed. One of these is more interesting: the previous code did not anticipate negative estimates for discriminations. W",
+      "thread_id": "thread-5763d7a5bfa1",
+      "thread_depth": 0,
+      "month": "2011-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-eb7d93053da2",
+      "subject": "svmpath_0.95 uploaded to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2011-06-08T12:27:17-07:00",
+      "last_reply": "2011-06-08T12:27:17-07:00",
+      "root_message_id": "msg-eb7d93053da2"
+    },
+    {
+      "id": "thread-3516cebd50d3",
+      "subject": "ODB : connecting OpenOffice Base with R",
+      "message_count": 1,
+      "participants": [
+        "Sylvain Mareschal"
+      ],
+      "started": "2011-06-19T13:25:11+02:00",
+      "last_reply": "2011-06-19T13:25:11+02:00",
+      "root_message_id": "msg-3516cebd50d3"
+    },
+    {
+      "id": "thread-5763d7a5bfa1",
+      "subject": "irtoys 0.1.4",
+      "message_count": 1,
+      "participants": [
+        "Ivailo Partchev"
+      ],
+      "started": "2011-06-23T09:37:02+00:00",
+      "last_reply": "2011-06-23T09:37:02+00:00",
+      "root_message_id": "msg-5763d7a5bfa1"
+    }
+  ]
+}

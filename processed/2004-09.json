@@ -1,0 +1,339 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-09",
+  "messages": [
+    {
+      "id": "msg-f0c7fa80178a",
+      "message_id": "<Pine.LNX.4.44.0409151632150.17035-100000@gannet.stats>",
+      "from_name": "Prof Brian Ripley",
+      "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
+      "date": "2004-09-15T16:38:17+01:00",
+      "subject": "[R-pkgs] RODBC 1.1-1",
+      "subject_clean": "RODBC 1.1-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The first non-maintenance update of RODBC since January 2003 is now on \nCRAN and will soon propagate to mirrors.  From the ChangeLog:\n\n        * Select the decimal point from Sys.localeconv.\n\n        * Add an external reference and finalizer so open channels get\n          closed at the end of the session or when there is no R object\n          referring to them.\n\n        * There is no longer a restriction to 16 channels.\n\n        * Add NAMESPACE.\n\n        * odbcConnect{Access,Dbase,Excel} allow a missing file name\n          (and will bring up a dialog box to search for it).\n\n        * odbcGetInfo returns more information in a 8-element character\n          vector (based on an idea of Matthew Dowle).\n\n        * The C code calls SQLExecuteDirect rather than SQLExecute and\n          does not call SQLCloseCursor, based on a problem report from\n          Matthew Dowle using MS SQLServer.  Repeated calls to\n          sqlGetResults now work.\n\n        * New function sqlFetchMore.\n\n        * Table names in Access with embedded spaces are mapped to the\n          [name space] form which Access requires.\n\n        * Table creation no longer removes _ from column names.\n\n        * New functions get/setSqlTypeInfo and the typeInfo argument to\n          sqlSave allow users to specify the mapping from R types to DBMS\n          datatypes.  sqlSave also allows the specification of DBMS\n          datatypes by column.\n\n        * It is now possible to write more than 255 chars to a field with\n          sqlSave and sqlUpdate.\n\n        * Dates and timestamps are now read as 'Date' and 'POSIXct'\n          columns by sqlGetResults (unless as.is = TRUE for the column).\n\nI have been able to test SQL Server reasonably extensively this time \naround, as well as MySQL, PostgreSQL, Access, Excel and SQLite.\n\n-- \nBrian D. Ripley,                  ripley at stats.ox.ac.uk\nProfessor of Applied Statistics,  http://www.stats.ox.ac.uk/~ripley/\nUniversity of Oxford,             Tel:  +44 1865 272861 (self)\n1 South Parks Road,                     +44 1865 272866 (PA)\nOxford OX1 3TG, UK                Fax:  +44 1865 272595",
+      "body_snippet": "The first non-maintenance update of RODBC since January 2003 is now on \nCRAN and will soon propagate to mirrors.  From the ChangeLog:\n\n        * Select the decimal point from Sys.localeconv.\n\n        ",
+      "thread_id": "thread-f0c7fa80178a",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-f0c7fa80178a",
+      "message_id": "<Pine.LNX.4.44.0409151632150.17035-100000@gannet.stats>",
+      "from_name": "Prof Brian Ripley",
+      "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
+      "date": "2004-09-15T16:38:17+01:00",
+      "subject": "[R-pkgs] RODBC 1.1-1",
+      "subject_clean": "RODBC 1.1-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The first non-maintenance update of RODBC since January 2003 is now on \nCRAN and will soon propagate to mirrors.  From the ChangeLog:\n\n        * Select the decimal point from Sys.localeconv.\n\n        * Add an external reference and finalizer so open channels get\n          closed at the end of the session or when there is no R object\n          referring to them.\n\n        * There is no longer a restriction to 16 channels.\n\n        * Add NAMESPACE.\n\n        * odbcConnect{Access,Dbase,Excel} allow a missing file name\n          (and will bring up a dialog box to search for it).\n\n        * odbcGetInfo returns more information in a 8-element character\n          vector (based on an idea of Matthew Dowle).\n\n        * The C code calls SQLExecuteDirect rather than SQLExecute and\n          does not call SQLCloseCursor, based on a problem report from\n          Matthew Dowle using MS SQLServer.  Repeated calls to\n          sqlGetResults now work.\n\n        * New function sqlFetchMore.\n\n        * Table names in Access with embedded spaces are mapped to the\n          [name space] form which Access requires.\n\n        * Table creation no longer removes _ from column names.\n\n        * New functions get/setSqlTypeInfo and the typeInfo argument to\n          sqlSave allow users to specify the mapping from R types to DBMS\n          datatypes.  sqlSave also allows the specification of DBMS\n          datatypes by column.\n\n        * It is now possible to write more than 255 chars to a field with\n          sqlSave and sqlUpdate.\n\n        * Dates and timestamps are now read as 'Date' and 'POSIXct'\n          columns by sqlGetResults (unless as.is = TRUE for the column).\n\nI have been able to test SQL Server reasonably extensively this time \naround, as well as MySQL, PostgreSQL, Access, Excel and SQLite.\n\n-- \nBrian D. Ripley,                  ripley at stats.ox.ac.uk\nProfessor of Applied Statistics,  http://www.stats.ox.ac.uk/~ripley/\nUniversity of Oxford,             Tel:  +44 1865 272861 (self)\n1 South Parks Road,                     +44 1865 272866 (PA)\nOxford OX1 3TG, UK                Fax:  +44 1865 272595",
+      "body_snippet": "The first non-maintenance update of RODBC since January 2003 is now on \nCRAN and will soon propagate to mirrors.  From the ChangeLog:\n\n        * Select the decimal point from Sys.localeconv.\n\n        ",
+      "thread_id": "thread-f0c7fa80178a",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-a28070e45e5c",
+      "message_id": "<85wtyv5ptp.fsf_-_@servant.blindglobe.net>",
+      "from_name": "A.J. Rossini",
+      "from_email_hash": "0c039ab537611416fe37b12e9ca69767bfd2c5030d7e2f2a7420f19217e05d1b",
+      "date": "2004-09-15T11:50:42-07:00",
+      "subject": "[R-pkgs] Announcing snowFT 0.1",
+      "subject_clean": "Announcing snowFT 0.1",
+      "in_reply_to": "<Pine.LNX.4.53.0409150923480.7383@sdhcp24.stat.washington.edu> (Hana Sevcikova's message of \"Wed, 15 Sep 2004 09:59:54 -0700 (PDT)\")",
+      "references": [
+        "<85mzzrwmrl.fsf@servant.blindglobe.net>",
+        "<Pine.LNX.4.53.0409150923480.7383@sdhcp24.stat.washington.edu>"
+      ],
+      "body_plain": "Parallel programming with snowFT\n\nOur package snowFT is now available at CRAN. It is an extention of the\npackage snow, which adds fault tolerance (in the sense of recomputing\ncomputational units when hardware/network failures occur on compute\nnodes) and a tighter notion of reproducibility for computations\nrunning on clusters.  It additionally provides tools for flexible\nmanagement of cluster size as well as computation transparency.\n\nsnowFT is written by Hana Sevcikova and Tony Rossini.\n\n(this tool currently requires rpvm for the SNOW backend, though we are\nexploring the possibility of extensions for the Rmpi backend.  It is\nunlikely that these extensions will be implemented for the socket\nbackend.\n\nbest,\n-tony\n\n\n\n-- \nAnthony Rossini\t\t\t    Research Associate Professor\nrossini at u.washington.edu            http://www.analytics.washington.edu/ \nBiomedical and Health Informatics   University of Washington\nBiostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center\nUW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable\nFHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email\n\nCONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}",
+      "body_snippet": "Parallel programming with snowFT\n\nOur package snowFT is now available at CRAN. It is an extention of the\npackage snow, which adds fault tolerance (in the sense of recomputing\ncomputational units when ",
+      "thread_id": "thread-a28070e45e5c",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-a28070e45e5c",
+      "message_id": "<85wtyv5ptp.fsf_-_@servant.blindglobe.net>",
+      "from_name": "A.J. Rossini",
+      "from_email_hash": "0c039ab537611416fe37b12e9ca69767bfd2c5030d7e2f2a7420f19217e05d1b",
+      "date": "2004-09-15T11:50:42-07:00",
+      "subject": "[R-pkgs] Announcing snowFT 0.1",
+      "subject_clean": "Announcing snowFT 0.1",
+      "in_reply_to": "<Pine.LNX.4.53.0409150923480.7383@sdhcp24.stat.washington.edu> (Hana Sevcikova's message of \"Wed, 15 Sep 2004 09:59:54 -0700 (PDT)\")",
+      "references": [
+        "<85mzzrwmrl.fsf@servant.blindglobe.net>",
+        "<Pine.LNX.4.53.0409150923480.7383@sdhcp24.stat.washington.edu>"
+      ],
+      "body_plain": "Parallel programming with snowFT\n\nOur package snowFT is now available at CRAN. It is an extention of the\npackage snow, which adds fault tolerance (in the sense of recomputing\ncomputational units when hardware/network failures occur on compute\nnodes) and a tighter notion of reproducibility for computations\nrunning on clusters.  It additionally provides tools for flexible\nmanagement of cluster size as well as computation transparency.\n\nsnowFT is written by Hana Sevcikova and Tony Rossini.\n\n(this tool currently requires rpvm for the SNOW backend, though we are\nexploring the possibility of extensions for the Rmpi backend.  It is\nunlikely that these extensions will be implemented for the socket\nbackend.\n\nbest,\n-tony\n\n\n\n-- \nAnthony Rossini\t\t\t    Research Associate Professor\nrossini at u.washington.edu            http://www.analytics.washington.edu/ \nBiomedical and Health Informatics   University of Washington\nBiostatistics, SCHARP/HVTN          Fred Hutchinson Cancer Research Center\nUW (Tu/Th/F): 206-616-7630 FAX=206-543-3461 | Voicemail is unreliable\nFHCRC  (M/W): 206-667-7025 FAX=206-667-4812 | use Email\n\nCONFIDENTIALITY NOTICE: This e-mail message and any attachme...{{dropped}}",
+      "body_snippet": "Parallel programming with snowFT\n\nOur package snowFT is now available at CRAN. It is an extention of the\npackage snow, which adds fault tolerance (in the sense of recomputing\ncomputational units when ",
+      "thread_id": "thread-a28070e45e5c",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-aa4846359501",
+      "message_id": "<414B35AC.1030201@epri-peac.com>",
+      "from_name": "Short, Tom",
+      "from_email_hash": "0bab54eed724573acd8ef682cf726d6f1e94addc99416a2646cd8199308fe7bb",
+      "date": "2004-09-17T15:06:21-04:00",
+      "subject": "[R-pkgs]  Announcing Rpad, a web-based workbook-style interface for R",
+      "subject_clean": "Announcing Rpad, a web-based workbook-style interface for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Rpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis package, a\nweb-page designer, and a gui designer all wrapped in one. Rpad pages are \nrun from the browser and connect to R running on the server (the same \nserver that hosts the web pages).\n\nRpad includes the R package \"RpadUtils\", which adds convenient code to\ngenerate HTML widgets and convenience functions for generating web graphics\n(png).\n\nFor more information and demonstrations, please see:\n\nhttp://www.Rpad.org/Rpad/\n\nKey features include:\n\n(*) WYSIWYG editing -- The browser page is editable, so you can add \ncomments or change the code or input data.\n\n(*) GUI's -- Create GUI elements with R or with the Rpad interface.\n\n(*) Fast -- No browser refreshes. The R process on the server stays alive \nwhile the browser page is open, so once the page is up and running, it is \nquite responsive.\n\n(*) HTML output -- Create fancy HTML output using Eric Lecoutre's R2HTML.\n\n(*) Simple plotting -- Has convenience functions to simplify creation and\npresentation of web-friendly graphics.\n\n(*) Flexible -- You can add features in a number of ways with javascript\nand/or R.\n\n(*) Cross platform -- Rpad pages work in Internet Explorer v5.5 or greater\nand Mozilla (Firefox or Suite). The server-side code works in Apache in\nLinux or Windows (although not as well in Windows).\n\n(*) Open source -- Rpad brings together several powerful open-source\ntechnologies, specifically: R, Mozile, HTMLArea, Statistics-R-0.02,\nJSCookMenu, Apache, and R2HTML.\n\nFeel free to use the r-sig-gui mailing list\n(https://stat.ethz.ch/mailman/listinfo/r-sig-gui) for any feedback on Rpad, \nthe demonstration pages, and especially for feedback and questions on\ninstalling your own Rpad server.\n\n- Tom\n\n-- \nTom Short\nEPRI PEAC, www.epri-peac.com\n\nT. A. Short, Electric Power Distribution Handbook, CRC Press, 2004.\nhttp://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=1791",
+      "body_snippet": "Rpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis package, a\nweb-page designer, and a gui designer all wrapped in one. ",
+      "thread_id": "thread-aa4846359501",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-aa4846359501",
+      "message_id": "<414B35AC.1030201@epri-peac.com>",
+      "from_name": "Short, Tom",
+      "from_email_hash": "0bab54eed724573acd8ef682cf726d6f1e94addc99416a2646cd8199308fe7bb",
+      "date": "2004-09-17T15:06:21-04:00",
+      "subject": "[R-pkgs]  Announcing Rpad, a web-based workbook-style interface for R",
+      "subject_clean": "Announcing Rpad, a web-based workbook-style interface for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Rpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis package, a\nweb-page designer, and a gui designer all wrapped in one. Rpad pages are \nrun from the browser and connect to R running on the server (the same \nserver that hosts the web pages).\n\nRpad includes the R package \"RpadUtils\", which adds convenient code to\ngenerate HTML widgets and convenience functions for generating web graphics\n(png).\n\nFor more information and demonstrations, please see:\n\nhttp://www.Rpad.org/Rpad/\n\nKey features include:\n\n(*) WYSIWYG editing -- The browser page is editable, so you can add \ncomments or change the code or input data.\n\n(*) GUI's -- Create GUI elements with R or with the Rpad interface.\n\n(*) Fast -- No browser refreshes. The R process on the server stays alive \nwhile the browser page is open, so once the page is up and running, it is \nquite responsive.\n\n(*) HTML output -- Create fancy HTML output using Eric Lecoutre's R2HTML.\n\n(*) Simple plotting -- Has convenience functions to simplify creation and\npresentation of web-friendly graphics.\n\n(*) Flexible -- You can add features in a number of ways with javascript\nand/or R.\n\n(*) Cross platform -- Rpad pages work in Internet Explorer v5.5 or greater\nand Mozilla (Firefox or Suite). The server-side code works in Apache in\nLinux or Windows (although not as well in Windows).\n\n(*) Open source -- Rpad brings together several powerful open-source\ntechnologies, specifically: R, Mozile, HTMLArea, Statistics-R-0.02,\nJSCookMenu, Apache, and R2HTML.\n\nFeel free to use the r-sig-gui mailing list\n(https://stat.ethz.ch/mailman/listinfo/r-sig-gui) for any feedback on Rpad, \nthe demonstration pages, and especially for feedback and questions on\ninstalling your own Rpad server.\n\n- Tom\n\n-- \nTom Short\nEPRI PEAC, www.epri-peac.com\n\nT. A. Short, Electric Power Distribution Handbook, CRC Press, 2004.\nhttp://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=1791",
+      "body_snippet": "Rpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis package, a\nweb-page designer, and a gui designer all wrapped in one. ",
+      "thread_id": "thread-aa4846359501",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-67a268b20fc8",
+      "message_id": "<5.1.0.14.0.20040923151115.02a77108@biomserv.univ-lyon1.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
+      "date": "2004-09-24T17:03:09+02:00",
+      "subject": "[R-pkgs] New package: adehabitat",
+      "subject_clean": "New package: adehabitat",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently used in this field are available to\nhighlight habitat selection by animals (selection ratios, ENFA, habitat \nsuitability maps\nwith the algorithm DOMAIN or Resource Selection Functions)\nor to describe the movements and area used in radio-tracking studies \n(kernel or\nminimum convex polygon home range, computation of travel speed and turning \nangles).\nASCII raster maps exported from Arcview can also be imported, and basic GIS \noperations\nare available (e.g. spatial join, computation of buffers).\n\nThe package comes with a pdf documentation file which\ncontains an overview of the main classes of maps available\nin the package.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHere is the description file of the package:\n\nPackage: adehabitat\nVersion: 1.1\nDate: 2004/09/15\nTitle: Analysis of habitat selection by animals\nAuthor: Cl?ment Calenge, contributions from Mathieu Basille\nMaintainer: Cl?ment Calenge <calenge at biomserv.univ-lyon1.fr>\nDepends: R (>= 1.8.0), ade4\nDescription: A collection of tools for the analysis of habitat selection by \nanimals\nLicense: GPL version 2 or newer\n\nHappy testing\n\n\nCl?ment Calenge\n\n======================================\nUMR CNRS 5558 - Equipe \"Ecologie Statistique\"\nLaboratoire de Biom?trie et Biologie Evolutive\nUniversit? Claude Bernard Lyon 1\n43, Boulevard du 11 novembre 1918\n69622 Villeurbanne Cedex\nFRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_snippet": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently ",
+      "thread_id": "thread-67a268b20fc8",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-67a268b20fc8",
+      "message_id": "<5.1.0.14.0.20040923151115.02a77108@biomserv.univ-lyon1.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
+      "date": "2004-09-24T17:03:09+02:00",
+      "subject": "[R-pkgs] New package: adehabitat",
+      "subject_clean": "New package: adehabitat",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently used in this field are available to\nhighlight habitat selection by animals (selection ratios, ENFA, habitat \nsuitability maps\nwith the algorithm DOMAIN or Resource Selection Functions)\nor to describe the movements and area used in radio-tracking studies \n(kernel or\nminimum convex polygon home range, computation of travel speed and turning \nangles).\nASCII raster maps exported from Arcview can also be imported, and basic GIS \noperations\nare available (e.g. spatial join, computation of buffers).\n\nThe package comes with a pdf documentation file which\ncontains an overview of the main classes of maps available\nin the package.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHere is the description file of the package:\n\nPackage: adehabitat\nVersion: 1.1\nDate: 2004/09/15\nTitle: Analysis of habitat selection by animals\nAuthor: Cl?ment Calenge, contributions from Mathieu Basille\nMaintainer: Cl?ment Calenge <calenge at biomserv.univ-lyon1.fr>\nDepends: R (>= 1.8.0), ade4\nDescription: A collection of tools for the analysis of habitat selection by \nanimals\nLicense: GPL version 2 or newer\n\nHappy testing\n\n\nCl?ment Calenge\n\n======================================\nUMR CNRS 5558 - Equipe \"Ecologie Statistique\"\nLaboratoire de Biom?trie et Biologie Evolutive\nUniversit? Claude Bernard Lyon 1\n43, Boulevard du 11 novembre 1918\n69622 Villeurbanne Cedex\nFRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_snippet": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently ",
+      "thread_id": "thread-67a268b20fc8",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-eeea28da5c0c",
+      "message_id": "<415808A8.9090006@env.ethz.ch>",
+      "from_name": "Schmidli Juerg",
+      "from_email_hash": "1a8854476cd06ec7b1e669b68771f0341f947a835f88e954caf0efdc8f693079",
+      "date": "2004-09-27T14:33:44+02:00",
+      "subject": "[R-pkgs] New package: ncvar",
+      "subject_clean": "New package: ncvar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nncvar: High-level R Interface to NetCDF Datasets\n\nThis package provides a high-level R interface to Unidata's NetCDF\ndata files. Using this package netCDF datasets, and all their\nassociated metadata, can be read and written in one go. It is also\neasy to create datasets including lots of metadata.\nThis package supports both the CF and default NetCDF metadata conventions.\nIt requires the low-level NetCDF package RNetCDF by Pavel Michna.\n\nFeedback is greatly appreciated.\n\nJuerg",
+      "body_snippet": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nncvar: High-level R Interface to NetCDF Datasets\n\nThis package provides a high-level R interface to Unidata's NetCDF\ndat",
+      "thread_id": "thread-eeea28da5c0c",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-eeea28da5c0c",
+      "message_id": "<415808A8.9090006@env.ethz.ch>",
+      "from_name": "Schmidli Juerg",
+      "from_email_hash": "1a8854476cd06ec7b1e669b68771f0341f947a835f88e954caf0efdc8f693079",
+      "date": "2004-09-27T14:33:44+02:00",
+      "subject": "[R-pkgs] New package: ncvar",
+      "subject_clean": "New package: ncvar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nncvar: High-level R Interface to NetCDF Datasets\n\nThis package provides a high-level R interface to Unidata's NetCDF\ndata files. Using this package netCDF datasets, and all their\nassociated metadata, can be read and written in one go. It is also\neasy to create datasets including lots of metadata.\nThis package supports both the CF and default NetCDF metadata conventions.\nIt requires the low-level NetCDF package RNetCDF by Pavel Michna.\n\nFeedback is greatly appreciated.\n\nJuerg",
+      "body_snippet": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nncvar: High-level R Interface to NetCDF Datasets\n\nThis package provides a high-level R interface to Unidata's NetCDF\ndat",
+      "thread_id": "thread-eeea28da5c0c",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-63b4acf67715",
+      "message_id": "<41586016.7060705@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2004-09-27T20:46:46+02:00",
+      "subject": "[R-pkgs] new version of package \"distr\" available",
+      "subject_clean": "new version of package \"distr\" available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new version (1.4)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges from 1.3 to 1.4\n-To avoid name collisions with short forms for TRUE and FALSE: classes T\n and F (T- and F-distributions) renamed to Td and Fd\n-The package is now loaded as a binary => considerable speed gain\n-Using subsititute, the bodies of the r,d,p,q-function-slots\n distributions show the parameter values with which they were \n generated\n-Convolutions and applications of the math group may now be traced in\n r-slot of a distribution object, compare\n              r(sin(Norm()) + cos(Unif() * 3 + 2))\n-Parameters of a distribution (mean, sd, etc) are now tested on length 1\n  *we see the objects as implementations of univariate distributions, so\n   vectors  make  no sense here; rather one could gather several objects \n   with possibly different parameters to a vector of distributions.\n   Of course, the original R-functions rnorm etc remain unchanged and\n   still allow for vector-valued parameters.\n  *\n-Classes \"Parameter\" , \"Distribution\" , \"UnivariateDistribution\" are no\n longer VIRTUAL\n-\"AbscontParameter\" and \"DiscreteParameter\" are replaced by \"Parameter\"\n-Type of slots d,p,q  and param is changed to \"OptionalFunction\" and\n \"OptionalParameter\" respectively\n\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\" \nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n-----------------------------------------------------------------------------------------\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.4\nDate: 2004/09/23\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 1.9.0),  (versions for <=1.8.x, on URL cited below),\n                setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:  \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new version (1.4)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges fro",
+      "thread_id": "thread-63b4acf67715",
+      "thread_depth": 0,
+      "month": "2004-09"
+    },
+    {
+      "id": "msg-63b4acf67715",
+      "message_id": "<41586016.7060705@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2004-09-27T20:46:46+02:00",
+      "subject": "[R-pkgs] new version of package \"distr\" available",
+      "subject_clean": "new version of package \"distr\" available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new version (1.4)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges from 1.3 to 1.4\n-To avoid name collisions with short forms for TRUE and FALSE: classes T\n and F (T- and F-distributions) renamed to Td and Fd\n-The package is now loaded as a binary => considerable speed gain\n-Using subsititute, the bodies of the r,d,p,q-function-slots\n distributions show the parameter values with which they were \n generated\n-Convolutions and applications of the math group may now be traced in\n r-slot of a distribution object, compare\n              r(sin(Norm()) + cos(Unif() * 3 + 2))\n-Parameters of a distribution (mean, sd, etc) are now tested on length 1\n  *we see the objects as implementations of univariate distributions, so\n   vectors  make  no sense here; rather one could gather several objects \n   with possibly different parameters to a vector of distributions.\n   Of course, the original R-functions rnorm etc remain unchanged and\n   still allow for vector-valued parameters.\n  *\n-Classes \"Parameter\" , \"Distribution\" , \"UnivariateDistribution\" are no\n longer VIRTUAL\n-\"AbscontParameter\" and \"DiscreteParameter\" are replaced by \"Parameter\"\n-Type of slots d,p,q  and param is changed to \"OptionalFunction\" and\n \"OptionalParameter\" respectively\n\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\" \nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n-----------------------------------------------------------------------------------------\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.4\nDate: 2004/09/23\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 1.9.0),  (versions for <=1.8.x, on URL cited below),\n                setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:  \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new version (1.4)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges fro",
+      "thread_id": "thread-63b4acf67715",
+      "thread_depth": 0,
+      "month": "2004-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a28070e45e5c",
+      "subject": "Announcing snowFT 0.1",
+      "message_count": 1,
+      "participants": [
+        "A.J. Rossini"
+      ],
+      "started": "2004-09-15T11:50:42-07:00",
+      "last_reply": "2004-09-15T11:50:42-07:00",
+      "root_message_id": "msg-a28070e45e5c"
+    },
+    {
+      "id": "thread-a28070e45e5c",
+      "subject": "Announcing snowFT 0.1",
+      "message_count": 1,
+      "participants": [
+        "A.J. Rossini"
+      ],
+      "started": "2004-09-15T11:50:42-07:00",
+      "last_reply": "2004-09-15T11:50:42-07:00",
+      "root_message_id": "msg-a28070e45e5c"
+    },
+    {
+      "id": "thread-f0c7fa80178a",
+      "subject": "RODBC 1.1-1",
+      "message_count": 1,
+      "participants": [
+        "Prof Brian Ripley"
+      ],
+      "started": "2004-09-15T16:38:17+01:00",
+      "last_reply": "2004-09-15T16:38:17+01:00",
+      "root_message_id": "msg-f0c7fa80178a"
+    },
+    {
+      "id": "thread-f0c7fa80178a",
+      "subject": "RODBC 1.1-1",
+      "message_count": 1,
+      "participants": [
+        "Prof Brian Ripley"
+      ],
+      "started": "2004-09-15T16:38:17+01:00",
+      "last_reply": "2004-09-15T16:38:17+01:00",
+      "root_message_id": "msg-f0c7fa80178a"
+    },
+    {
+      "id": "thread-aa4846359501",
+      "subject": "Announcing Rpad, a web-based workbook-style interface for R",
+      "message_count": 1,
+      "participants": [
+        "Short, Tom"
+      ],
+      "started": "2004-09-17T15:06:21-04:00",
+      "last_reply": "2004-09-17T15:06:21-04:00",
+      "root_message_id": "msg-aa4846359501"
+    },
+    {
+      "id": "thread-aa4846359501",
+      "subject": "Announcing Rpad, a web-based workbook-style interface for R",
+      "message_count": 1,
+      "participants": [
+        "Short, Tom"
+      ],
+      "started": "2004-09-17T15:06:21-04:00",
+      "last_reply": "2004-09-17T15:06:21-04:00",
+      "root_message_id": "msg-aa4846359501"
+    },
+    {
+      "id": "thread-67a268b20fc8",
+      "subject": "New package: adehabitat",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2004-09-24T17:03:09+02:00",
+      "last_reply": "2004-09-24T17:03:09+02:00",
+      "root_message_id": "msg-67a268b20fc8"
+    },
+    {
+      "id": "thread-67a268b20fc8",
+      "subject": "New package: adehabitat",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2004-09-24T17:03:09+02:00",
+      "last_reply": "2004-09-24T17:03:09+02:00",
+      "root_message_id": "msg-67a268b20fc8"
+    },
+    {
+      "id": "thread-eeea28da5c0c",
+      "subject": "New package: ncvar",
+      "message_count": 1,
+      "participants": [
+        "Schmidli Juerg"
+      ],
+      "started": "2004-09-27T14:33:44+02:00",
+      "last_reply": "2004-09-27T14:33:44+02:00",
+      "root_message_id": "msg-eeea28da5c0c"
+    },
+    {
+      "id": "thread-eeea28da5c0c",
+      "subject": "New package: ncvar",
+      "message_count": 1,
+      "participants": [
+        "Schmidli Juerg"
+      ],
+      "started": "2004-09-27T14:33:44+02:00",
+      "last_reply": "2004-09-27T14:33:44+02:00",
+      "root_message_id": "msg-eeea28da5c0c"
+    },
+    {
+      "id": "thread-63b4acf67715",
+      "subject": "new version of package \"distr\" available",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2004-09-27T20:46:46+02:00",
+      "last_reply": "2004-09-27T20:46:46+02:00",
+      "root_message_id": "msg-63b4acf67715"
+    },
+    {
+      "id": "thread-63b4acf67715",
+      "subject": "new version of package \"distr\" available",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2004-09-27T20:46:46+02:00",
+      "last_reply": "2004-09-27T20:46:46+02:00",
+      "root_message_id": "msg-63b4acf67715"
+    }
+  ]
+}

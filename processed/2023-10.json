@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-10",
+  "messages": [
+    {
+      "id": "msg-e15b9351859d",
+      "message_id": "<SV0P279MB04755A943724ADEE275CDEBCEEC4A@SV0P279MB0475.NORP279.PROD.OUTLOOK.COM>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "37a3c7637f7cdc3576966201a0fd58853d44abb21284a9eb85afffcb057c33b5",
+      "date": "2023-10-03T08:18:25Z",
+      "subject": "[R-pkgs] maptools, rgdal, rgeos and rgrass7 retiring Monday, October 16",
+      "subject_clean": "maptools, rgdal, rgeos and rgrass7 retiring Monday, October 16",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The legacy R spatial infrastructure packages maptools, rgdal and rgeos will be archived by CRAN on Monday, October 16, 2023; rgrass7 has  already been replaced by rgrass and will be archived with the retiring packages. \n\nThe choice of date matches the previously announced archiving during October 2023, and the specific date matches the release schedule of Bioconductor 3.18 (some Bioconductor packages depend on retiring packages).\n\nsp_2.1-0 was published October 2, 2023, dropping all dependencies on the retiring packages. sp will continue to be available and maintained, but not developed further. Users of sp classes may continue to make use of them, but will have to use sf or terra to read, write or manipulate objects with coercion (for a guide to coercion, see https://cran.r-project.org/web/packages/rgrass/vignettes/coerce.html).\n\nInformation about the evolution project may be found in reports and resources at https://r-spatial.github.io/evolution/; a recent blog by Jakub Nowosad may also be useful as an overview of what has been going on: https://geocompx.org/post/2023/rgdal-retirement/. For more detail, see https://r-spatial.github.io/evolution/ogh23_bivand.html and a video recording of this presentation https://av.tib.eu/media/63141 (August 28).\n\nAll directly affected package maintainers have been alerted to the impending changes, some in December 2022, most others in March-April 2023. Many have already updated their packages on CRAN - thank you for your understanding! The remainder received github issue comments and email reminders in the last ten days, and will receive final notices to update by October 9. \n\nOn R-universe, builds of packages archived on CRAN are dropped automatically (https://github.com/r-universe-org/help/issues/286). Read-only github mirrors of archived packages will remain available in principle while github exists (https://github.com/r-hub/rhub/issues/568), for example https://github.com/cran/rgdal. Other binary builds (Debian, Fedora, Ubuntu) have been alerted; support at Anaconda has been alerted.\n\nOn CRAN, the retired packages will continue to be available as source packages on https://cran.r-project.org/src/contrib/Archive. maptools, rgdal and rgeos also retain their R-forge repositories, which may be used to retrieve functions for adding to other packages.\n\nA snapshot of Windows and macOS binary packages may be found on https://github.com/r-spatial/evolution/tree/main/backstore.\n\nPlease raise questions by replying to this post, or as issues on https://github.com/r-spatial/evolution.\n\n--\nRoger Bivand\nEmeritus Professor\nNorwegian School of Economics\nPostboks 3490 Ytre Sandviken, 5045 Bergen, Norway\nRoger.Bivand at nhh.no",
+      "body_snippet": "The legacy R spatial infrastructure packages maptools, rgdal and rgeos will be archived by CRAN on Monday, October 16, 2023; rgrass7 has  already been replaced by rgrass and will be archived with the ",
+      "thread_id": "thread-e15b9351859d",
+      "thread_depth": 0,
+      "month": "2023-10"
+    },
+    {
+      "id": "msg-9b22675f5dc7",
+      "message_id": "<CANrWemj66YMZY-amVVzOAkoS-fCLNR2BNaPftj1mKzxX5oJ6Bw@mail.gmail.com>",
+      "from_name": "Arni Magnusson",
+      "from_email_hash": "b52312a06ff856cc28768edd97375e646bac5b9e0ba2276f18329e5999b2818c",
+      "date": "2023-10-29T15:55:30+11:00",
+      "subject": "[R-pkgs] Introducing the makeit package",
+      "subject_clean": "Introducing the makeit package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nJust a quick note about a new package on CRAN called makeit. Yesterday, I\nadded a vignette and released as 1.0.1:\nhttps://cran.r-project.org/package=makeit\nhttps://cran.r-project.org/web/packages/makeit/vignettes/makeit.html\n\nIt provides a simple but powerful function make() that works the same way\nas GNU Make. In short, it runs an R script if underlying files have\nchanged, otherwise it does nothing. The first example in the vignette is:\n  make(\"analysis.R\", \"input.dat\", \"output.dat\")\nThe second example involves three scripts:\n  make(\"01_model.R\", \"data.dat\", \"results.dat\")\n  make(\"02_plots.R\", \"results.dat\", c(\"plots/A.png\", \"plots/B.png\"))\n  make(\"03_tables.R\", \"results.dat\", c(\"tables/A.csv\", \"tables/B.csv\"))\n\nFor R workflows, it can provide the same functionality as GNU Make but with\nfewer software requirements in terms of software installed and system path.\nThe make calls() can be grouped together in a dedicated script, called\nsomething like _make.R, or conveniently called from within scripts to\ndecide whether a certain part of the analysis needs to be (re)run or not.\n\nAny feedback is appreciated, via email or GitHub issues\n<https://github.com/arni-magnusson/makeit>.\n\nBest regards,\nArni\n\nP.S. I originally wanted to call the package simply 'make', but was\npolitely informed by the CRAN Team that this could mess with their\nextensive makefile infrastructure. So there we have it, makeit :)\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\nJust a quick note about a new package on CRAN called makeit. Yesterday, I\nadded a vignette and released as 1.0.1:\nhttps://cran.r-project.org/package=makeit\nhttps://cran.r-project.or",
+      "thread_id": "thread-9b22675f5dc7",
+      "thread_depth": 0,
+      "month": "2023-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e15b9351859d",
+      "subject": "maptools, rgdal, rgeos and rgrass7 retiring Monday, October 16",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2023-10-03T08:18:25+00:00",
+      "last_reply": "2023-10-03T08:18:25+00:00",
+      "root_message_id": "msg-e15b9351859d"
+    },
+    {
+      "id": "thread-9b22675f5dc7",
+      "subject": "Introducing the makeit package",
+      "message_count": 1,
+      "participants": [
+        "Arni Magnusson"
+      ],
+      "started": "2023-10-29T15:55:30+11:00",
+      "last_reply": "2023-10-29T15:55:30+11:00",
+      "root_message_id": "msg-9b22675f5dc7"
+    }
+  ]
+}

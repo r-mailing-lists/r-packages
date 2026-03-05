@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-08",
+  "messages": [
+    {
+      "id": "msg-6dacde0e4ba4",
+      "message_id": "<710094407.167898.1629478164878.JavaMail.open-xchange@torgui05>",
+      "from_name": "DB",
+      "from_email_hash": "5738c06d6c392891e4e3ec3fa965ce217d1f58558f90e22bf5a705d922ea199d",
+      "date": "2021-08-20T12:49:24-04:00",
+      "subject": "[R-pkgs] New Release: package replacer_v.1.0.0",
+      "subject_clean": "New Release: package replacer_v.1.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "\"replacer v.1.0.0\"\n\nnew package submission\n\n\"replacer\" is a value replacement utility currently based on the powerful\npackage \"data.table\", available on CRAN.\n\nThis utility is purposed for outside-database update of datasets. It is\naccessible to beginners to `R` and facilitates complex dataset updates with\nminimal prompt time by employing User-friendly functions that automatically\nfollow a decision tree rooted in User's input. \n\nThe package source can be downloaded from\nhttps://CRAN.R-project.org/package=replacer\n<https://CRAN.R-project.org/package=replacer>\n\nor, by typing:\n\ninstall.packages('replacer')\n\nat the R prompt. Once installed, the User can run a short example by copying the\nnext 3 lines below:\n\nrequire(replacer)\n\ndir = system.file('extdata', package = 'replacer')\n\nreplaceVals(dir, save = FALSE)\n\nFamiliarity with basic R commands is necessary. Familiarity with `data.table` is\nnot, yet strongly recommended!\n\nUsers are encouraged to start by reading the vignette found at the link above.\n\nThank you,\n\nDragos Bandur, author\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "\"replacer v.1.0.0\"\n\nnew package submission\n\n\"replacer\" is a value replacement utility currently based on the powerful\npackage \"data.table\", available on CRAN.\n\nThis utility is purposed for outside-dat",
+      "thread_id": "thread-6dacde0e4ba4",
+      "thread_depth": 0,
+      "month": "2021-08"
+    },
+    {
+      "id": "msg-e93b837d91d3",
+      "message_id": "<YQXPR0101MB082351072BA906CD5E0E69C69CC79@YQXPR0101MB0823.CANPRD01.PROD.OUTLOOK.COM>",
+      "from_name": "Denis Cousineau",
+      "from_email_hash": "a4976ffb1026766b96582c21b4ce2b819b43775c02e0e6f62d19d475d0343c1c",
+      "date": "2021-08-26T10:56:52Z",
+      "subject": "[R-pkgs] summary plots with adjusted error bar: A Shiny interface",
+      "subject_clean": "summary plots with adjusted error bar: A Shiny interface",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThis short email to inform you that a new version  of *superb* (SUmmary Plots with adjusted ERror Bars) is now available on CRAN (version 0.9.7.5; codename \"two-tail 95% confident\").\n\nThis package lets you generate plots with correct error bars without heavy programming. I know that this does not concern you, users of this mailing list, but you certainly know people around you for which plotting error bars and adjusting these to the experimental design is a challenge. Please share this announcement.\n\nThe package now comes with a shiny interface, launched from within R with the command superbShiny().\n\nIt is also available online for those who don't have R, from https://dcousin3.shinyapps.io/superbshiny/\n\nFinally, a brief tutorial on YouTube can be found at https://www.youtube.com/watch?v=rw_6ll5nVus\n\nPlotting error bars has never been so easy!\n\nYou can read more from this recently published article to *Advances in Methods and Practices in Psychological Science* (doi: https://doi.org/10.1177/25152459211035109).\n\nAll the best,\nDenis, Marc-Andr? and Brad!",
+      "body_snippet": "Dear all,\n\nThis short email to inform you that a new version  of *superb* (SUmmary Plots with adjusted ERror Bars) is now available on CRAN (version 0.9.7.5; codename \"two-tail 95% confident\").\n\nThis ",
+      "thread_id": "thread-e93b837d91d3",
+      "thread_depth": 0,
+      "month": "2021-08"
+    },
+    {
+      "id": "msg-ebe1f3453167",
+      "message_id": "<CABcwgRRpdX-Mv+Vm4dpYUcvRNX0qvO4Fr0keJkbG4nMTgWuCPg@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2021-08-26T13:50:30+02:00",
+      "subject": "[R-pkgs] monobinShiny: Shiny User Interface for 'monobin' Package",
+      "subject_clean": "monobinShiny: Shiny User Interface for 'monobin' Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that my new package monobinShiny is now available on\nCRAN.\nThis is an add-on package to the 'monobin' package that simplifies its use.\nAs reminder, the goal of 'monobin' is to perform monotonic binning of\nnumeric risk factor in credit rating models (PD, LGD, EAD) development. All\nfunctions handle both binary and continuous target variable. Missing values\nand other possible special values are treated separately from so-called\ncomplete cases.\n\n'monobinShiny' provides shiny-based user interface to 'monobin' package and\nit can be especially handy for less experienced R users as well as for\nthose who intend to perform quick scanning of numeric risk factors when\nbuilding credit rating models. The additional functions implemented in\n'monobinShiny' that do no exist in 'monobin' package are: descriptive\nstatistics, special case and outliers imputation. The function descriptive\nstatistics is exported and can be used in R sessions independently from the\nuser interface, while the special case and the outlier imputation functions\nare written to be used with shiny UI.\n\nHere is, also, the link to github page:\nhttps://github.com/andrija-djurovic/monobinShiny\n\nHope that some of you will find the package useful.\n\nBest regards,\nAndrija Djurovic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that my new package monobinShiny is now available on\nCRAN.\nThis is an add-on package to the 'monobin' package that simplifies its use.\nAs reminder, the goal of 'm",
+      "thread_id": "thread-ebe1f3453167",
+      "thread_depth": 0,
+      "month": "2021-08"
+    },
+    {
+      "id": "msg-1f96eea2a5de",
+      "message_id": "<CAJqRp3b3Hv+xxP77MRxqBaNrqkxpHPRt0=FGyi8z7GJkd9GWFg@mail.gmail.com>",
+      "from_name": "Chris Webster",
+      "from_email_hash": "5576248e90a17624cc02b17b14b9d3b4898fdc13fa6907da97bc931834f29ccf",
+      "date": "2021-08-31T10:08:34-04:00",
+      "subject": "[R-pkgs] Announcing R package 'fedmatch'",
+      "subject_clean": "Announcing R package 'fedmatch'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\nWe have just released the R package 'fedmatch' to CRAN. Following is a\nbrief description and some links for more information:\nWith an ever-expanding set of financial data providers, each covering many\nof the same firms and entities, matching data sets that do not share common\nidentifiers has never been more important. *fedmatch* is a set of tools for\nperforming record linkage between two data sets. It allows for a variety of\ndifferent matching techniques, letting the user build a matching algorithm\nfor their specific application. Although *fedmatch* was designed with\neconomic data in mind (i.e. loans or companies), it is very flexible, so it\ncan be used for any matching problem. With *fedmatch*, a researcher or\nanalyst can quickly go from having 0 matches between two datasets to having\nmany. With more time and care, they can use more advanced techniques to\npull out even more matches.\nWebsite <https://seunglee98.github.io/fedmatch/>\nCRAN <https://cran.r-project.org/package=fedmatch>\nThanks,\nChris Webster\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\nWe have just released the R package 'fedmatch' to CRAN. Following is a\nbrief description and some links for more information:\nWith an ever-expanding set of financial data providers, each co",
+      "thread_id": "thread-1f96eea2a5de",
+      "thread_depth": 0,
+      "month": "2021-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6dacde0e4ba4",
+      "subject": "New Release: package replacer_v.1.0.0",
+      "message_count": 1,
+      "participants": [
+        "DB"
+      ],
+      "started": "2021-08-20T12:49:24-04:00",
+      "last_reply": "2021-08-20T12:49:24-04:00",
+      "root_message_id": "msg-6dacde0e4ba4"
+    },
+    {
+      "id": "thread-e93b837d91d3",
+      "subject": "summary plots with adjusted error bar: A Shiny interface",
+      "message_count": 1,
+      "participants": [
+        "Denis Cousineau"
+      ],
+      "started": "2021-08-26T10:56:52+00:00",
+      "last_reply": "2021-08-26T10:56:52+00:00",
+      "root_message_id": "msg-e93b837d91d3"
+    },
+    {
+      "id": "thread-ebe1f3453167",
+      "subject": "monobinShiny: Shiny User Interface for 'monobin' Package",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2021-08-26T13:50:30+02:00",
+      "last_reply": "2021-08-26T13:50:30+02:00",
+      "root_message_id": "msg-ebe1f3453167"
+    },
+    {
+      "id": "thread-1f96eea2a5de",
+      "subject": "Announcing R package 'fedmatch'",
+      "message_count": 1,
+      "participants": [
+        "Chris Webster"
+      ],
+      "started": "2021-08-31T10:08:34-04:00",
+      "last_reply": "2021-08-31T10:08:34-04:00",
+      "root_message_id": "msg-1f96eea2a5de"
+    }
+  ]
+}

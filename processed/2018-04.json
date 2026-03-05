@@ -1,0 +1,65 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-04",
+  "messages": [
+    {
+      "id": "msg-8aa7f35e1e26",
+      "message_id": "<570443092.435468.1522629550677@mail.yahoo.com>",
+      "from_name": "brodie gaslam",
+      "from_email_hash": "c8d0937e5dd68ad44721736755f2c013dc82cb1d905f5bec9a5e6b5610559043",
+      "date": "2018-04-02T00:39:10Z",
+      "subject": "[R-pkgs] New Package fansi: ANSI Control Sequence Aware String Functions",
+      "subject_clean": "New Package fansi: ANSI Control Sequence Aware String Functions",
+      "in_reply_to": null,
+      "references": [
+        "<570443092.435468.1522629550677.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "fansi provides counterparts to the base string manipulation functions substr, strwrap, strtrim, strsplit, and n(z)char that account for ANSI CSI SGR control sequences.? ANSI CSI SGR control sequences [1] can be used to format text in terminals that support them.\n\nFor example the control sequence \"\\033[31m\" causes text that follows to render in red, and the control sequence \"\\033[0m\" turns off formatting.? So with:\n\n> substr_ctl(\"\\033[31mABC\\033[0m\", 2, 2)\n[1] \"\\033[31mB\\033[0m\"\n\nwe extract the second letter of the red formatted ABC while retaining the formatting.\n\nfansi is written mostly in C, so its performance is comparable to the corresponding base functions.? There are versions of some of the functions with additional functionality.? For example, `substr2_ctl` supports character-width (as opposed to character-count) based substrings.\n\nfansi is dependency-less.\n\nFeedback is welcome either by e-mail or via github (<https://github.com/brodieG/fansi>).\n\n\nBrodie.\n\n[1] <https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters>.",
+      "body_snippet": "fansi provides counterparts to the base string manipulation functions substr, strwrap, strtrim, strsplit, and n(z)char that account for ANSI CSI SGR control sequences.? ANSI CSI SGR control sequences ",
+      "thread_id": "thread-8aa7f35e1e26",
+      "thread_depth": 0,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-841646b5ed98",
+      "message_id": "<CAPK6mFqHDA0FCVmfz00+EcmMKLKY9WA4gEc=wwkB_tLLcPBFhQ@mail.gmail.com>",
+      "from_name": "Luís Paulo F. Garcia",
+      "from_email_hash": "eb9290c36366025a338795498e5db88651936d499b079be56fb796d8bb5869d2",
+      "date": "2018-04-26T11:27:45+02:00",
+      "subject": "[R-pkgs] Announcing ECoL 0.1.0",
+      "subject_clean": "Announcing ECoL 0.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the package ECoL (Complexity Measures for\nClassification Problems) is now available on CRAN (\nhttps://cran.r-project.org/package=ECoL).\n\nThe ECoL package provides measures to characterize the complexity of\nclassification problems based on the ambiguity and the separation between\nthe classes and the data sparsity and dimensionality of the datasets. This\npackage provides bug fixes, generalizations and implementations of many\nstate of the art measures. The measures are described in the paper: Tin Ho\nand Mitra Basu (2002).\n\nPlease, visit the repository on GitHub (\nhttps://github.com/SmartDataAnalytics/ECoL) for more information.\n\nKind regards,\nLuis\n\n-- \nDr. Lu?s Paulo Faina Garcia\nDepartment of Computer Science, University of Leipzig\nhttp://aksw.org/LuisGarcia\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that the package ECoL (Complexity Measures for\nClassification Problems) is now available on CRAN (\nhttps://cran.r-project.org/package=ECoL).\n\nThe ECoL package p",
+      "thread_id": "thread-841646b5ed98",
+      "thread_depth": 0,
+      "month": "2018-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8aa7f35e1e26",
+      "subject": "New Package fansi: ANSI Control Sequence Aware String Functions",
+      "message_count": 1,
+      "participants": [
+        "brodie gaslam"
+      ],
+      "started": "2018-04-02T00:39:10+00:00",
+      "last_reply": "2018-04-02T00:39:10+00:00",
+      "root_message_id": "msg-8aa7f35e1e26"
+    },
+    {
+      "id": "thread-841646b5ed98",
+      "subject": "Announcing ECoL 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Luís Paulo F. Garcia"
+      ],
+      "started": "2018-04-26T11:27:45+02:00",
+      "last_reply": "2018-04-26T11:27:45+02:00",
+      "root_message_id": "msg-841646b5ed98"
+    }
+  ]
+}

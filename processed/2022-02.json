@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-02",
+  "messages": [
+    {
+      "id": "msg-68a523a6ef91",
+      "message_id": "<CABxkZL5b3Vfa=Q44iAgwQ0T6gK8BNU8W_3o_vzyb=azx=+t46g@mail.gmail.com>",
+      "from_name": "Danny Parsons",
+      "from_email_hash": "8280df348bcab32c27b475b46bad91867468892e4fa31857d418afa988d260be",
+      "date": "2022-02-02T16:10:41Z",
+      "subject": "[R-pkgs] Package \"naflex\": Flexible Options for Handling Missing Values",
+      "subject_clean": "Package \"naflex\": Flexible Options for Handling Missing Values",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have recently released a new package \"naflex\" on CRAN:\nhttps://cran.r-project.org/web/packages/naflex/index.html.\n\n\"naflex\" provides helper functions that give additional flexibility for\nhandling missing values in summary functions (beyond the current extremes\nof na.rm = TRUE/FALSE).\n\nFor example, allow up to 20% of values to be missing:\n\nlibrary(naflex)\nlibrary(magrittr)\nx <- c(1, 3, NA, 4, 3, 2, NA, 5, 8, 7)\nmean(x %>% na_omit_if(prop = 0.2))\n# 4.125\nmean(x %>% na_omit_if(prop = 0.1))\n# NA\n\nPlease see the package details or vignette for the full set of checks\navailable.\n\nI hope this may be of use to some as a convenient way to work with various\nmissing value rules.\n\nFeedback, suggestions and bug reports are welcome at\nhttps://github.com/dannyparsons/naflex or by email\n(danny at idems.international)\n\nBest regards,\n\nDanny Parsons\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI have recently released a new package \"naflex\" on CRAN:\nhttps://cran.r-project.org/web/packages/naflex/index.html.\n\n\"naflex\" provides helper functions that give additional flexibility for\n",
+      "thread_id": "thread-68a523a6ef91",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-d467a29a8966",
+      "message_id": "<031e01d81a06$4fa88600$eef99200$@gmail.com>",
+      "from_name": "dscoiby17 m@iii@g oii gm@ii@com",
+      "from_email_hash": "8051ea81d225f4578ad197d434170ccbd7a732826e5beaa5648e4cb3ed548384",
+      "date": "2022-02-04T15:31:59-05:00",
+      "subject": "[R-pkgs] spacejamr v0.2",
+      "subject_clean": "spacejamr v0.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\n \n\nI am pleased to announce that v0.2 of the spacejamr package is now available\non CRAN.  This package enables social network analysis when social network\ndata is unavailable. spacejamr simulates points from a spatial point process\nor sequence in a user-specified spatial window, converts distances between\npoints into tie formation probabilities, and outputs an igraph object that\ncan be analyzed with normal network analysis methods. In addition, the\npackage includes plotting methods for spatial boundaries, point processes,\nand social networks.\n\n \n\nSome changes to this version are:\n\n \n\n            * Users can decide whether to use the coordinate reference\nsystem in the supplied shapefile or let the as.spacejamr() method find the\nbest projected CRS.\n\n    \n\n             * spacejamr no longer depends on the methods package.\n\n    \n\n            * In line with new versions of the spatstat metapackage,\nspacejamr now calls functions from spatstat.random to simulate spatial point\nprocesses.\n\n \n\nPlease check it out here:\n\nhttps://cran.r-project.org/package=spacejamr\n\n \n\nFor more details on the methodology used in the package see:\n\nCarter T. Butts, (2002, ISBN:978-0-493-72676-2), \"Spatial models of\nlarge-scale interpersonal networks.\"\n\n \n\nBest regards,\n\n \n\nDarren Colby\n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n \n\nI am pleased to announce that v0.2 of the spacejamr package is now available\non CRAN.  This package enables social network analysis when social network\ndata is unavailable. spacejamr",
+      "thread_id": "thread-d467a29a8966",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-cfd413352642",
+      "message_id": "<a32be8de-3ca0-bc62-d08b-b15b6865d6ab@uni-landau.de>",
+      "from_name": "Mira Kattwinkel",
+      "from_email_hash": "893afa219a0fec51923074f36c9cca1ac66acb43cd3b9ae1c9735dd60b673d18",
+      "date": "2022-02-15T10:11:39+01:00",
+      "subject": "[R-pkgs] update openSTARS",
+      "subject_clean": "update openSTARS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users\n\nThere is an update of openSTARS available on CRAN (now version 1.2.3), \nfixing some problems in correct_complex_confluences.\n\nopenSTARS provides GIS functionalities to delineate streams from DEMs, \nderive catchments of sampling sites along streams and intersect with \npotential covariates of stream monitoring data. It also prepares the \ndata to be further processed by geostatistical regression models using ssn.\n\nAll the best,\n\nMira\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\niES Landau, Institute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstra?e 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
+      "body_snippet": "Dear R users\n\nThere is an update of openSTARS available on CRAN (now version 1.2.3), \nfixing some problems in correct_complex_confluences.\n\nopenSTARS provides GIS functionalities to delineate streams ",
+      "thread_id": "thread-cfd413352642",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-5a1f60ffc3f7",
+      "message_id": "<CAPcHnpQrOWjep3Js5UXJyhKmCCk=aw6kp_UygUKhyxGTc64MEA@mail.gmail.com>",
+      "from_name": "Andrew Simmons",
+      "from_email_hash": "40b01f168beec35ef27cb62ca97f7a4b288ecbda9c188bcf84504fdbe44290e9",
+      "date": "2022-02-17T16:25:39-05:00",
+      "subject": "[R-pkgs] this.path-package: get executing script's path",
+      "subject_clean": "this.path-package: get executing script's path",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\n\nR package 'this.path' has received an update, the current version\nnumber is 0.5.0\nYou can find this package at:\n\nhttps://CRAN.R-project.org/package=this.path\n\nUpdates include:\n\n(1) added this.path::here (similar to here::here), for constructing\nthe path to a file, starting with the executing script's directory\n\n(2) this.path::this.path is compatible with URLs in base::source, for\nexample source(\"https://raw.githubusercontent.com/ArcadeAntics/this.path/main/tests/this.path_w_URLs.R\")\n\n(3) added separate methods for extracting the shell argument 'FILE'\nfor Windows and Unix-alikes (shell arguments are handled slightly\ndifferently between the two)\n\n(4) on Windows, in Rgui, added support for all languages listed by\nlist.dirs(system.file(package = \"translations\"), full.names = FALSE,\nrecursive = FALSE)\n\nIf you're using version 0.4.4 or less, it is well worth upgrading.\n\n\nRegards,\n    Andrew Simmons",
+      "body_snippet": "Hello everyone,\n\n\nR package 'this.path' has received an update, the current version\nnumber is 0.5.0\nYou can find this package at:\n\nhttps://CRAN.R-project.org/package=this.path\n\nUpdates include:\n\n(1) a",
+      "thread_id": "thread-5a1f60ffc3f7",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-1d753bdbe63a",
+      "message_id": "<AS8P250MB0008A7F0B87BEE6E89344EE9B63B9@AS8P250MB0008.EURP250.PROD.OUTLOOK.COM>",
+      "from_name": "EGIDI LEONARDO",
+      "from_email_hash": "bd073223a05bc1228c8e550eb18ae0806f766cac7c3b09f84e44b55fc05599bc",
+      "date": "2022-02-22T14:41:48Z",
+      "subject": "[R-pkgs] footBayes 0.1.0 for football modelling is on CRAN!",
+      "subject_clean": "footBayes 0.1.0 for football modelling is on CRAN!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\njust to inform you that the 'footBayes' package (version 0.1.0) is now on CRAN:\n\n https://CRAN.R-project.org/package=footBayes<https://cran.r-project.org/package=footBayes>\n\nThe package wants to be the most comprehensive tool for the football (soccer) modelling ecosystem.\nAs such, it allows the estimation, the visualization and the prediction for the most\nwell-known football (soccer) models, according to the references:\n\nDixon and Coles (1997) <doi:10.1111/1467-9876.00065>,\nKarlis and Ntzoufras (2003) <doi:10.1111/1467-9884.00366> and\nEgidi, Pauli and Torelli (2018) <doi:10.1177/1471082X18798414>.\n\nIn brief, the goal of ```footBayes``` is to propose a complete workflow to:\n\n- fit the most well-known football models: double Poisson, bivariate Poisson, Skellam, student-t, according to both maximum likelihood and Bayesian methods (+ Hamiltonian Monte Carlo engine);\n\n- visualize the teams' abilities, the model checks, the rank-league reconstruction;\n\n- predict out-of-sample matches.\n\nTry the package now and enjoy!\nBest.\n\nLeonardo Egidi\nUniversity of Trieste\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\njust to inform you that the 'footBayes' package (version 0.1.0) is now on CRAN:\n\n https://CRAN.R-project.org/package=footBayes<https://cran.r-project.org/package=footBayes>\n\nThe package wants",
+      "thread_id": "thread-1d753bdbe63a",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-57a07f3ceff7",
+      "message_id": "<CAO=DOOa+UjJgvd67=vHPtvsSusgsqfh_PrvQ1X3jge1SpyMVoQ@mail.gmail.com>",
+      "from_name": "Eric Weine",
+      "from_email_hash": "0f36da20c412dea03b08802df05062114118350b238bb2c63ae84ed8e8c2a5ec",
+      "date": "2022-02-23T23:18:50-05:00",
+      "subject": "[R-pkgs] qqconf update to 1.2.0",
+      "subject_clean": "qqconf update to 1.2.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nqqconf has received an update to version 1.2.0. All interfaces are exactly\nthe same, but the code to derive testing bands for qq plots has gotten\nsubstantially faster due to a new FFT method thanks to Amit Moscovich and\nBoaz Nadler (see documentation for more details).\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nqqconf has received an update to version 1.2.0. All interfaces are exactly\nthe same, but the code to derive testing bands for qq plots has gotten\nsubstantially faster due to a new FFT method t",
+      "thread_id": "thread-57a07f3ceff7",
+      "thread_depth": 0,
+      "month": "2022-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-68a523a6ef91",
+      "subject": "Package \"naflex\": Flexible Options for Handling Missing Values",
+      "message_count": 1,
+      "participants": [
+        "Danny Parsons"
+      ],
+      "started": "2022-02-02T16:10:41+00:00",
+      "last_reply": "2022-02-02T16:10:41+00:00",
+      "root_message_id": "msg-68a523a6ef91"
+    },
+    {
+      "id": "thread-d467a29a8966",
+      "subject": "spacejamr v0.2",
+      "message_count": 1,
+      "participants": [
+        "dscoiby17 m@iii@g oii gm@ii@com"
+      ],
+      "started": "2022-02-04T15:31:59-05:00",
+      "last_reply": "2022-02-04T15:31:59-05:00",
+      "root_message_id": "msg-d467a29a8966"
+    },
+    {
+      "id": "thread-cfd413352642",
+      "subject": "update openSTARS",
+      "message_count": 1,
+      "participants": [
+        "Mira Kattwinkel"
+      ],
+      "started": "2022-02-15T10:11:39+01:00",
+      "last_reply": "2022-02-15T10:11:39+01:00",
+      "root_message_id": "msg-cfd413352642"
+    },
+    {
+      "id": "thread-5a1f60ffc3f7",
+      "subject": "this.path-package: get executing script's path",
+      "message_count": 1,
+      "participants": [
+        "Andrew Simmons"
+      ],
+      "started": "2022-02-17T16:25:39-05:00",
+      "last_reply": "2022-02-17T16:25:39-05:00",
+      "root_message_id": "msg-5a1f60ffc3f7"
+    },
+    {
+      "id": "thread-1d753bdbe63a",
+      "subject": "footBayes 0.1.0 for football modelling is on CRAN!",
+      "message_count": 1,
+      "participants": [
+        "EGIDI LEONARDO"
+      ],
+      "started": "2022-02-22T14:41:48+00:00",
+      "last_reply": "2022-02-22T14:41:48+00:00",
+      "root_message_id": "msg-1d753bdbe63a"
+    },
+    {
+      "id": "thread-57a07f3ceff7",
+      "subject": "qqconf update to 1.2.0",
+      "message_count": 1,
+      "participants": [
+        "Eric Weine"
+      ],
+      "started": "2022-02-23T23:18:50-05:00",
+      "last_reply": "2022-02-23T23:18:50-05:00",
+      "root_message_id": "msg-57a07f3ceff7"
+    }
+  ]
+}

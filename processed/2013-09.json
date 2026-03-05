@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-09",
+  "messages": [
+    {
+      "id": "msg-f462a1acff7c",
+      "message_id": "<CABmqZHP-kW7Yg+TsKe_z_-mVDNEcN7BmZEUPqZaArT1M64NvNg@mail.gmail.com>",
+      "from_name": "Ingmar Visser",
+      "from_email_hash": "3de458686dcc530513283e67f86dca86206142086b772552f194f13c43024b11",
+      "date": "2013-09-19T11:32:46+02:00",
+      "subject": "[R-pkgs] depmixS4 version 1.3-0 on CRAN",
+      "subject_clean": "depmixS4 version 1.3-0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Package news (see below for general description of functionality)\n\ndepmixS4 version 1.3-0 has been released on CRAN. See the NEWS file\nfor an overview of all changes. The most important user-visible\nchanges are:\n\n1) more compact pretty-printing of parameters in print/summary of\n(dep)mix objects (following lm/glm style of presenting results)\n\n2) some speed improvements in the EM algorithm, most notable in large\ndata/models\n\n3) EM has an optional argument to use the classification likelihood\ninstead of the usual likelihood; this can be useful as a means of\nstarting value generation; use with caution as results are often\nunstable.\n\nBest, happy mixing, Ingmar & Maarten\n\n\n\nPackage general information\n\ndepmixS4 is a framework for specifying and fitting dependent mixture\nmodels, otherwise known as hidden or latent Markov models.\nOptimization is done with the EM algorithm or optionally with Rdonlp2\nwhen (general linear (in-)equality) constraints on the parameters need\nto be incorporated.  Models can be fitted on (multiple) sets of\nobservations.  The response densities for each state may be chosen\nfrom the GLM family, or a multinomial.  User defined response\ndensities are easy to add; for the latter an example is given for the\nex-gauss distribution as well as the multivariate normal distribution.\n\nMixture or latent class (regression) models can also be fitted; these\nare the limit case in which the length of observed time series is 1\nfor all cases.",
+      "body_snippet": "Package news (see below for general description of functionality)\n\ndepmixS4 version 1.3-0 has been released on CRAN. See the NEWS file\nfor an overview of all changes. The most important user-visible\nc",
+      "thread_id": "thread-f462a1acff7c",
+      "thread_depth": 0,
+      "month": "2013-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f462a1acff7c",
+      "subject": "depmixS4 version 1.3-0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Ingmar Visser"
+      ],
+      "started": "2013-09-19T11:32:46+02:00",
+      "last_reply": "2013-09-19T11:32:46+02:00",
+      "root_message_id": "msg-f462a1acff7c"
+    }
+  ]
+}

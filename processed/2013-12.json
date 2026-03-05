@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-12",
+  "messages": [
+    {
+      "id": "msg-87c950983ba2",
+      "message_id": "<52A23E42.7050802@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2013-12-06T15:14:42-06:00",
+      "subject": "[R-pkgs] rms 4.1-0",
+      "subject_clean": "rms 4.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The rms package has had several updates in version 4.1-0:\n\n    * Fixed orm.fit to not create penalty matrix if not needed \n(penalties are not yet implemented anyway)\n    * Added yscale argument to plot.Predict\n    * Added Wald test simulation to orm help file\n    * Added example in help file for plot.anova.rms of adding a line \ncombining the effects of two predictors in dot chart\n    * Fixed grid interpretation error in survplot.survfit\n    * Changed plot.anova.rms to use dotchart3 instead of dotchart2\n    * Fixed bug in summary.rms - was taking reciprocal of effect ratio \nwith orm even if not loglog family (thanks: Yong Hao Pua \n<puayonghao at gmail.com>\n    * Removed link to print.lm, summary.lm in ols.Rd\n    * Added ntrans argument to plot.anova.rms\n    * Fixed handling of intercepts in Rq, validate.Rq\n    * Removed residuals.Glm, residuals.rms (also from Rd, NAMESPACE)\n    * Removed other .rms methods and other remnants from fooling S+ \ndispatcher\n    * Fixed bug in lm.pfit when penalty used (thanks: Yong Hao Pua \n<puayonghao at gmail.com>)\n    * Fixed bug in calibrate.default for ols (thanks: Andy Bush)\n    * Change print.contrast.rms to insert NA for SE if fun is not the \nidentity function\n    * Added margin argument to plot.anova.rms to print selected stats in \nright margin of dot chart\n    * Added anova argument to plot.Predict to allow overall association \ntest statistics to be added to panels\n    * Fixed bug in val.prob in which the logistic model was re-fitted \ninstead of fixing coefficients at 0,1.  This resulted in model \nstatistics (including c-index) to always be favorable even when \npredictions were worse than change.  Thanks: Kirsen Van Hoorde \n<Kirsten.VanHoorde at esat.kuleuven.be>\n    * Fixed bug in survdiffplot where conf.int was always overridden by \nvalue from survfit.  Thanks: Kamil Fijorek <kamilfijorek at gmail.com>\n    * Fixed bug in grid= for survplot.* and survdiffplot.  Thanks: Kamil \nFijorek\n    * Fixed rms.s to account for possible offset in names(nmiss). \nThanks: Larry Hunsicker\n    * Fixed psm.s to not compute Dxy if simple right censoring is not in \neffect.  Thanks: I.M. Nolte\n    * rcs: respect system option fractied, passed to rcspline.eval; can \nbe used to get old behavior\n    * Gls: as nlme 3.1-113 exports more functions, removed nlme:::\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "The rms package has had several updates in version 4.1-0:\n\n    * Fixed orm.fit to not create penalty matrix if not needed \n(penalties are not yet implemented anyway)\n    * Added yscale argument to plo",
+      "thread_id": "thread-87c950983ba2",
+      "thread_depth": 0,
+      "month": "2013-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-87c950983ba2",
+      "subject": "rms 4.1-0",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2013-12-06T15:14:42-06:00",
+      "last_reply": "2013-12-06T15:14:42-06:00",
+      "root_message_id": "msg-87c950983ba2"
+    }
+  ]
+}

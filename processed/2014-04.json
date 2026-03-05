@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-04",
+  "messages": [
+    {
+      "id": "msg-ae3c149585b4",
+      "message_id": "<CALVusX9Guch9jfqPL0+RkD=sd4mktNLVEGvsY87RoWjbqT21YQ@mail.gmail.com>",
+      "from_name": "John Harrison",
+      "from_email_hash": "d6219a4ab3a73c5be43990b3d5b2f0e770b6ec201d93dd4268f8475bb9215b39",
+      "date": "2014-04-04T03:03:58+07:00",
+      "subject": "[R-pkgs] rDVR package",
+      "subject_clean": "rDVR package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140404/a389844b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140404/a389844b/attachment.pl>",
+      "thread_id": "thread-ae3c149585b4",
+      "thread_depth": 0,
+      "month": "2014-04"
+    },
+    {
+      "id": "msg-f058d1cb0412",
+      "message_id": "<5343A0BC.9040105@isped.u-bordeaux2.fr>",
+      "from_name": "Rondeau Virginie",
+      "from_email_hash": "735a459c8c4eb8398ef509bab3edfc89d21da54f104b2db84d438cf31b460496",
+      "date": "2014-04-08T09:09:48+02:00",
+      "subject": "[R-pkgs] frailtypack package 2.6",
+      "subject_clean": "frailtypack package 2.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Un texte encapsul? et encod? dans un jeu de caract?res inconnu a ?t? nettoy?...\nNom : non disponible\nURL : <https://stat.ethz.ch/pipermail/r-packages/attachments/20140408/b96a1202/attachment.pl>",
+      "body_snippet": "Un texte encapsul? et encod? dans un jeu de caract?res inconnu a ?t? nettoy?...\nNom : non disponible\nURL : <https://stat.ethz.ch/pipermail/r-packages/attachments/20140408/b96a1202/attachment.pl>",
+      "thread_id": "thread-f058d1cb0412",
+      "thread_depth": 0,
+      "month": "2014-04"
+    },
+    {
+      "id": "msg-15e30b56d7cd",
+      "message_id": "<324CDF70-7468-4A9D-9950-93A809CFB527@r-enthusiasts.com>",
+      "from_name": "Romain Francois",
+      "from_email_hash": "8f31c4dddde5f249ac380b8d2d5d1eff7bd702b45de9f90ab8075a7b03949f03",
+      "date": "2014-04-11T14:48:43+02:00",
+      "subject": "[R-pkgs] Rcpp11 3.1.0 is on CRAN.",
+      "subject_clean": "Rcpp11 3.1.0 is on CRAN.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello, \n\nR version 3.1.0 was released yesterday, and as always is welcome with great pleasure. One\nof the features that is of particular interest to me is the support for C++11. \nI would encourage you to read \n[Writing R Extensions](http://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Using-C_002b_002b11-code)\nto familiarize yourself with \nwhat this supports means and how to take advantage of it. C++11 is a major \nupgrade of the C++ standard, making C++ more expressive, more efficient, more\nfun to use and teach. It almost feels like a new language if you embrace it fully. \nThe standards committee has done a great job of maintaining compatibility, which means\nthat code written with older standard will still compile and work. \nHowever, with C++11 code you write today and tomorrow will not be the same as code \nyou used to write with C++98. \n\nTo get the best of what C++11 has to offer, I'm releasing Rcpp11 today. Rcpp11\nis a complete redesign of Rcpp, focused on C++11. Rcpp11 is a header only \nC++ library, distributed as an R package on CRAN, that facilitates embedding \nC++ code in R packages. \n\nI'll try to keep this announcement short. More details will follow on dedicated \nchannels. I will just highlight a few aspects of Rcpp11 that are high level \nenough for such an annoucement. \n\nHeader Only\n===========\n\nRcpp11 is header only -- it consists only of a set of `.h` files. Rcpp11 has no\n`.cpp` files, and no R functions. This eliminates many problems inherent to \nbinary compatibility that Rcpp has been fighting with for years. \n\nThe recommended way to use Rcpp11 is to have these lines in the `DESCRIPTION` file \nof your package: \n\n```\nLinkingTo: Rcpp11\nSystemRequirements: C++11\n```\n\nModernized code base\n====================\n\nMany features of the original Rcpp code base are the consequence of my \nlearning C++ and the internal API of R. After a few years of experience, I can \nnow admit that mistakes were made while designing it. Unfortunately for reasons\noutside of my control, it is not possible to fix these mistakes under the umbrella\nof the Rcpp package. \n\nThings are radically different for Rcpp11, which I will maintain. Over the past \nfew months, I have considered many features of the code base and either decided\nto abandon them or upgrade them to the level of expectation we should have for a \nmodern R/C++ interface. \n\n\nAPI\n---\n\nMost of what is usually called the API has been retained. I do not guarantee\nlow level compatibililty, but there is conceptual compatibility. For example, \nRcpp11 contains all the classes we would expect: `NumericVector`, `List`, ...\n\nI'm not going into details about what the individual differences are. Instead I \nwill start documenting how to use the API provided by Rcpp11. \n\n\nAttributes\n----------\n\nAttributes is probably the best feature that has ever been contributed to Rcpp. It \ngives a mechanism for decorating C++ functions, parsing these decorations and generating\nscaffolding code around them.  \n\nThis feature has not been retained in Rcpp11, but instead has been moved into a \nnew package called [attributes](https://github.com/Rcpp11/attributes), \nwhich is being developed and will be released later. \n\nIt is worth mentioning that code generated by Rcpp's `compileAttributes` function\nshould be compilable against Rcpp11. When attributes becomes available it will \nprovide a more flexible approach, and provide facilities for package authors to\nimplement and use their own attributes.\n\n\nModules\n-------\n\nRcpp modules was not retained as part of Rcpp11. This was a hard decision, because\nI invested a lot of time developing the original code behind Rcpp modules. However\nmodules have significant problems which make them hard to maintain. Modules are \nalso very demanding on the compiler. \n\nHowever, I still believe that the promise of Rcpp modules -- exposing C++ classes \nat the R level -- is very worthwhile. My plan is to redesign it using a different \napproach, more oriented towards code generation, ? la attributes. \n\n\nTime and Date classes\n---------------------\n\nI decided to abandon the classes responsible to handling dates and times. Better \nclasses might be introduced when I'm comfortable with the design. Design \ndocuments and pull requests are welcome. \n\n\nFurther discussion\n==================\n\nPlease consider subscribing to the R and C++ mailing list that was created a few \ndays ago: https://groups.google.com/forum/#!forum/r-and-cpp\n\nThe scope of the mailing list is broader, the intention is to discuss all things \nR and C++. Questions about Rcpp11, Rcpp or anything related to using C++ and R\nare welcome. As of today, 37 participants are registered. Please consider \nreplying to this annoucement email through the mailing list. \n\nRcpp11 is developed through the Rcpp11 organisation on github. Feel free\nto report issues and submit pull requests. https://github.com/Rcpp11/Rcpp11\n\n\nVersioning\n==========\n\nThe pattern that has been decided for versions of Rcpp11 is to use the same \nnumber as the mininum version of R required. Therefore this initial version\nis Rcpp11 3.1.0 and interim releases might be called 3.1.0.1, 3.1.0.2, etc ...\n\nDocumentation\n=============\n\nThere is no documentation yet. I personally find the heterogeneous sources\nof documentation for Rcpp to be confusing. I have three goals in terms of \ndocumentation for Rcpp11:\n\n - An article is being written. This will be a casual introduction to \n   interesting features of C++11 and Rcpp11.\n - API documentation. My goal is to have a website that will make easy to \n   browse internal documentation (what to do with a NumericVector, ...) similar\n   to cplusplus.com or something. \n - I have started working on a R and C++ book. As I personally consider that \n   C++ = C++11 from now on, the book will mainly cover uses cases of Rcpp11. \n\nI hope to that between now and useR this year, I will make progress on the 2 first \nitems of the previous list. \n\nLicensing\n=========\n\nRcpp11 is licensed under the MIT license.\n\nFuture\n======\n\nThis is the first release, it has required a lot of time and effort from me and\nKevin Ushey who has stepped in as a regular contributor to the package. \n\nThis sets us with a new foundation for interfacing R and C++ for years to come. \nMany features of C++11 such as regular expressions and threads have not been \nleveraged yet with this initial release. \n\nC++ is more alive than ever, a new minor update of the standard is likely to \nbe released this year and supported at day 0 by popular compilers. At this point\nI do not anticipate to start working on a Rcpp14 package. \n\nIn a few years (the ETA is currently 2017), a new major version of the C++ standard\nwill be released. It is too soon to say if it will be worthwhile to have a Rcpp17, \nbut from a casual reading of the expected features, I'd say it is likely. \n\nI sincerely hope you will enjoy working with Rcpp11.\n\nRomain",
+      "body_snippet": "Hello, \n\nR version 3.1.0 was released yesterday, and as always is welcome with great pleasure. One\nof the features that is of particular interest to me is the support for C++11. \nI would encourage you",
+      "thread_id": "thread-15e30b56d7cd",
+      "thread_depth": 0,
+      "month": "2014-04"
+    },
+    {
+      "id": "msg-4e1f0e46fa13",
+      "message_id": "<534F19F1.1050905@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-04-16T19:01:53-05:00",
+      "subject": "[R-pkgs] Updates to Hmisc, rms, and greport packages",
+      "subject_clean": "Updates to Hmisc, rms, and greport packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The Hmisc package has had a number of updates/fixes:\n\nChanges in version 3.14-4 (2014-04-13)\n    * rcspline.eval: stop new logic for ignoring outer values when there \nare many ties when there are also many ties on interior values.  Added \nnew logic to use interior unique values of x when the number of unique x \nis small.\n    * latexBuild: generalized with insert argument\n    * latex.default: modified to use mods of latexBuild, fixed bug with \ncaption.loc='bottom' (thanks: YacineH)\n    * latex.default: fixed bug where comma did not appear after \ncaption={} for ctable (thanks: Johannes Hofrichter)\n    * tests: fit.mult.impute.bootstrap.r: added new example (thanks: \nJane Cook)\n    * fit.mult.impute: added call for fit.mult.impute in returned \nobject, replacing call from fitter; makes update work for fit.mult.impute\n    * summary.formula: fixed recognition of multiple left-hand-side \nvariables to trigger call to summaryM (thanks: Kevin Thorpe)\n    * summaryM: changed group label to '' instead of 0 for formulas like \nage + sex ~ 1\n    * Ecdf: added what argument to all functions\n    * nobsY: return constructed id vector\n    * addMarginal: instead of .marginal. being logical, make it contain \nnames of variables being marginalized over\n    * mChoice.c: fixed some inconsistencies\n\nThe rms package has also had some changes, and the survfit.formula \nfunction has been REMOVED, replaced by the npsurv function:\n\nChanges in version 4.2-0 (2014-04-13)\n    * Deprecated survfit.formula so would not overlap with function in \nsurvival\n    * Added function npsurv, survplot.npsurv\n    * REMOVED survfit.formula\n    * Used new type argument to label.Surv for fitting functions\n    * cph: added weights argument to residuals.coxph (Thanks: Thomas Lumley)\n    * survfit.cph: fixed bug in using wrong type variable.  Thanks: \nZhiyuan Sun\n    * cph: added weighted=TRUE in call to residuals.coxph (Thanks: T Lumley)\n    * orm.fit: improved ormfit to not try to deal with NaN in V, \nassuming that step-halving will happen\n\nSome improvements have been made in the greport package:\n\nChanges in version 0.5-1 (2014-04-15)\n    * survReport: changed to use npsurv instead of survfit.formula\n\t * exReport: changed order of output so that analysis of randomized \npatients marked for exclusions appears last; use LaTeX chngpage package \nto allow detailed table to go into left margin so as to be centered on page\n    * exReport: added adjustwidth argument\n\t * accrualReport: allowed enrollment target N to be omitted\n    * exReport: fine tuning\n    * nriskReport: new report to show number of subjects still being \nfollowed at each day\n\t * Merge: added support for data.table\n    * nriskReport: added id() variable\n    * exReport: fixed bug when there is an exclusion with 0 frequency\n    * accrualReport: improved graphics formatting, added minrand argument\n    * accrualReport: added enrollmax argument, clarified notation\n    * exReport: added ignoreExcl, ignoreRand arguments\n    * all: added greportOption texwhere; default is 'gentex'; can \nspecify texwhere='' to write non-appendix LaTeX code to console as for knitr\n    * dReport: for byx for discrete Y, sense when Y is binary and use \nWilson interval instead of bootstrap; adjust SE using confidence \ninterval if proportion is 0 or 1\n    * dReport: changed discreteness non-binary classification to use \nmaximum number of unique values or Y instead of minimum\n    * add globalVariables call to nriskReport\n\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "The Hmisc package has had a number of updates/fixes:\n\nChanges in version 3.14-4 (2014-04-13)\n    * rcspline.eval: stop new logic for ignoring outer values when there \nare many ties when there are also",
+      "thread_id": "thread-4e1f0e46fa13",
+      "thread_depth": 0,
+      "month": "2014-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ae3c149585b4",
+      "subject": "rDVR package",
+      "message_count": 1,
+      "participants": [
+        "John Harrison"
+      ],
+      "started": "2014-04-04T03:03:58+07:00",
+      "last_reply": "2014-04-04T03:03:58+07:00",
+      "root_message_id": "msg-ae3c149585b4"
+    },
+    {
+      "id": "thread-f058d1cb0412",
+      "subject": "frailtypack package 2.6",
+      "message_count": 1,
+      "participants": [
+        "Rondeau Virginie"
+      ],
+      "started": "2014-04-08T09:09:48+02:00",
+      "last_reply": "2014-04-08T09:09:48+02:00",
+      "root_message_id": "msg-f058d1cb0412"
+    },
+    {
+      "id": "thread-15e30b56d7cd",
+      "subject": "Rcpp11 3.1.0 is on CRAN.",
+      "message_count": 1,
+      "participants": [
+        "Romain Francois"
+      ],
+      "started": "2014-04-11T14:48:43+02:00",
+      "last_reply": "2014-04-11T14:48:43+02:00",
+      "root_message_id": "msg-15e30b56d7cd"
+    },
+    {
+      "id": "thread-4e1f0e46fa13",
+      "subject": "Updates to Hmisc, rms, and greport packages",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-04-16T19:01:53-05:00",
+      "last_reply": "2014-04-16T19:01:53-05:00",
+      "root_message_id": "msg-4e1f0e46fa13"
+    }
+  ]
+}

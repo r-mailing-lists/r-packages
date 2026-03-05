@@ -1,0 +1,387 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2005-10",
+  "messages": [
+    {
+      "id": "msg-71a60c190412",
+      "message_id": "<1E7B167439290641966EB161D433079854537D@GSBEX.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2005-10-02T21:31:13-05:00",
+      "subject": "[R-pkgs] release of version 2.0-1 of bayesm",
+      "subject_clean": "release of version 2.0-1 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20051002/fa38fbb8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20051002/fa38fbb8/attachment.pl>",
+      "thread_id": "thread-71a60c190412",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-71a60c190412",
+      "message_id": "<1E7B167439290641966EB161D433079854537D@GSBEX.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2005-10-02T21:31:13-05:00",
+      "subject": "[R-pkgs] release of version 2.0-1 of bayesm",
+      "subject_clean": "release of version 2.0-1 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20051002/fa38fbb8/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20051002/fa38fbb8/attachment-0001.pl>",
+      "thread_id": "thread-71a60c190412",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-7d92a50dfe23",
+      "message_id": "<m0mzlgmo0k.fsf@bar.nemo-project.org>",
+      "from_name": "Ron Wehrens and Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2005-10-11T10:55:07+02:00",
+      "subject": "[R-pkgs] pls version 1.1-0",
+      "subject_clean": "pls version 1.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.0-3 are\n\n- mvr, mvrCv and predict.mvr now has builtin support for scaling of X.\n- A new function stdize for explicit centering and/or scaling.\n- Correlation loadings plot (corrplot).\n- New argument `varnames' in coefplot, to label the x tick marks with the\n  variable names.\n- loadingplot, coefplot and plot.mvrVal can now display legends, with the\n  argument 'legendpos'.\n\nSee CHANGES in the sources for all changes.\n\n\n-- \nBj?rn-Helge Mevik and Ron Wehrens",
+      "body_snippet": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
+      "thread_id": "thread-7d92a50dfe23",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-7d92a50dfe23",
+      "message_id": "<m0mzlgmo0k.fsf@bar.nemo-project.org>",
+      "from_name": "Ron Wehrens and Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2005-10-11T10:55:07+02:00",
+      "subject": "[R-pkgs] pls version 1.1-0",
+      "subject_clean": "pls version 1.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.0-3 are\n\n- mvr, mvrCv and predict.mvr now has builtin support for scaling of X.\n- A new function stdize for explicit centering and/or scaling.\n- Correlation loadings plot (corrplot).\n- New argument `varnames' in coefplot, to label the x tick marks with the\n  variable names.\n- loadingplot, coefplot and plot.mvrVal can now display legends, with the\n  argument 'legendpos'.\n\nSee CHANGES in the sources for all changes.\n\n\n-- \nBj?rn-Helge Mevik and Ron Wehrens",
+      "body_snippet": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
+      "thread_id": "thread-7d92a50dfe23",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-0ef637d2795a",
+      "message_id": "<20051020092945.7ba1dc7a.david.meyer@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2005-10-20T09:29:45+02:00",
+      "subject": "[R-pkgs] vcd package 0.9-5 released",
+      "subject_clean": "vcd package 0.9-5 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new version of the vcd package (0.9-5) is now available from CRAN.\n\nApart from (a lot of) bug fixes, it includes the following new features\n(some of them have 'silently' been included in previous bug fix\nreleases):\n\n* Improved documentation:\n\n  - an introductory vignette on the strucplot framework (including\n    mosaic, association and sieve plots)\n  - special vignettes on using/extending shading and labeling functions\n\n* New function spine() for spinograms and spine plots\n\n* New function cd_plot() for conditional density plots \n\n* New function cotabplot() for visualizing conditional independence in a\n  trellis-like layout, providing panel functions for association,\n  mosaic, and sieve plots\n\n* Sieve plots are now integrated in the strucplot framework, sieve()\n  replaces sieveplot()\n\n* Extended support for 'structable' objects (textual representation of\n  mosaic plots):\n\n  - structable objects can be used as input for mosaic(), sieve(), and\n    assoc()\n  - extract (\"[\") and replacement (\"[<-\") functions are available (old\n    \"[[\" method removed)\n  - methods for t(), dim(), as.matrix(), as.vector(), as.table(), etc.\n    are available\n\n* New panel function pairs_diagonal_text() for pairs()\n\n* The alternative legend function legend_fixed() now looks more similar\n  to the legend of mosaicplot() in base R\n\nComments are more then welcome!\n\nDavid, Achim, Kurt.\n\nPS: If you like modern art, try out demo(mondrian)! :)\n\n\n-- \nDr. David Meyer\nDepartment of Information Systems and Operations\n\nVienna University of Economics and Business Administration\nAugasse 2-6, A-1090 Wien, Austria, Europe\nFax: +43-1-313 36x746 \nTel: +43-1-313 36x4393\nHP:  http://wi.wu-wien.ac.at/~meyer/",
+      "body_snippet": "Dear useRs,\n\na new version of the vcd package (0.9-5) is now available from CRAN.\n\nApart from (a lot of) bug fixes, it includes the following new features\n(some of them have 'silently' been included i",
+      "thread_id": "thread-0ef637d2795a",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-0ef637d2795a",
+      "message_id": "<20051020092945.7ba1dc7a.david.meyer@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2005-10-20T09:29:45+02:00",
+      "subject": "[R-pkgs] vcd package 0.9-5 released",
+      "subject_clean": "vcd package 0.9-5 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new version of the vcd package (0.9-5) is now available from CRAN.\n\nApart from (a lot of) bug fixes, it includes the following new features\n(some of them have 'silently' been included in previous bug fix\nreleases):\n\n* Improved documentation:\n\n  - an introductory vignette on the strucplot framework (including\n    mosaic, association and sieve plots)\n  - special vignettes on using/extending shading and labeling functions\n\n* New function spine() for spinograms and spine plots\n\n* New function cd_plot() for conditional density plots \n\n* New function cotabplot() for visualizing conditional independence in a\n  trellis-like layout, providing panel functions for association,\n  mosaic, and sieve plots\n\n* Sieve plots are now integrated in the strucplot framework, sieve()\n  replaces sieveplot()\n\n* Extended support for 'structable' objects (textual representation of\n  mosaic plots):\n\n  - structable objects can be used as input for mosaic(), sieve(), and\n    assoc()\n  - extract (\"[\") and replacement (\"[<-\") functions are available (old\n    \"[[\" method removed)\n  - methods for t(), dim(), as.matrix(), as.vector(), as.table(), etc.\n    are available\n\n* New panel function pairs_diagonal_text() for pairs()\n\n* The alternative legend function legend_fixed() now looks more similar\n  to the legend of mosaicplot() in base R\n\nComments are more then welcome!\n\nDavid, Achim, Kurt.\n\nPS: If you like modern art, try out demo(mondrian)! :)\n\n\n-- \nDr. David Meyer\nDepartment of Information Systems and Operations\n\nVienna University of Economics and Business Administration\nAugasse 2-6, A-1090 Wien, Austria, Europe\nFax: +43-1-313 36x746 \nTel: +43-1-313 36x4393\nHP:  http://wi.wu-wien.ac.at/~meyer/",
+      "body_snippet": "Dear useRs,\n\na new version of the vcd package (0.9-5) is now available from CRAN.\n\nApart from (a lot of) bug fixes, it includes the following new features\n(some of them have 'silently' been included i",
+      "thread_id": "thread-0ef637d2795a",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-9aed968698df",
+      "message_id": "<A1292252-DF1B-427D-9AFF-B689E65E0DB6@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2005-10-21T14:21:02+01:00",
+      "subject": "[R-pkgs] new package bundle: onion",
+      "subject_clean": "new package bundle: onion",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear List\n\nI have just uploaded a new package, \"onion\", to CRAN.\n\nIt provides some functionality for manipulating and visualizing  \nquaternions\nand octonions.\n\nAll comments welcome!\n\n\nenjoy\n\n\nrksh\n\n\n--\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Dear List\n\nI have just uploaded a new package, \"onion\", to CRAN.\n\nIt provides some functionality for manipulating and visualizing  \nquaternions\nand octonions.\n\nAll comments welcome!\n\n\nenjoy\n\n\nrksh\n\n\n-",
+      "thread_id": "thread-9aed968698df",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-9aed968698df",
+      "message_id": "<A1292252-DF1B-427D-9AFF-B689E65E0DB6@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2005-10-21T14:21:02+01:00",
+      "subject": "[R-pkgs] new package bundle: onion",
+      "subject_clean": "new package bundle: onion",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear List\n\nI have just uploaded a new package, \"onion\", to CRAN.\n\nIt provides some functionality for manipulating and visualizing  \nquaternions\nand octonions.\n\nAll comments welcome!\n\n\nenjoy\n\n\nrksh\n\n\n--\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Dear List\n\nI have just uploaded a new package, \"onion\", to CRAN.\n\nIt provides some functionality for manipulating and visualizing  \nquaternions\nand octonions.\n\nAll comments welcome!\n\n\nenjoy\n\n\nrksh\n\n\n-",
+      "thread_id": "thread-9aed968698df",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-50c03bb042c9",
+      "message_id": "<435A91AE.4020109@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2005-10-22T21:23:26+02:00",
+      "subject": "[R-pkgs] after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "subject_clean": "after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "After some reorganization, we would like to announce the availability\non CRAN of a new version (1.6) of our package \"distr\" as well as the\navailabilty on CRAN of the new packages \"distrEx\", \"distrSim\",\n\"distrTEst\", \"RandVar\".\n\n-----------------------------------------------------------------------------------------\nChanges from 1.5 to 1.6\n-[former package \"distr\"] reorganization:\n we have split up our package distr into smaller units:\n * \"distr\" now only contains the (basic) classes and methods\n           for distributions\n * \"distrSim\" requires \"distr\" and contains classes and methods\n           for data / simulations formerly contained in \"distr\"\n * \"distrTEst\" requires \"distr\" and \"distrSim\" and contains\n           classes and methods for evaluation of estimators\n           at data / simulations formerly contained in \"distr\"\n-[distrSim] under the hood: signature of method \"simulate\" adapted\n            in order to prevent collision with corresponding method\n            from the stats package\nsome more details to be found at\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR\na more detailed manual is available at\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\n-additional packages by Matthias Kohl:\n * \"distrEx\" requires \"distr\" and contains some extensions to\n           package \"distr\" (see later)\n * \"RandVar\" requires \"distr\" and \"distrEx\" and contains classes\n           and methods for random variables (see later)\nThese two packages are described in some detail in Matthias' PhD Thesis\n\"Numerical Contributions to the Asymptotic Theory of Robustness\", App. D\navailable on http://stamats.de/ThesisMKohl.pdf\n\n-----------------------------------------------------------------------------------------\nShort Descriptions\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\"\nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n-----------------------------------------------------------------------------------------\nShort Description of \"distrSim\":\nClasses and methods are provided for a standardized treatment of\nsimulations (also under contaminations) .\n-----------------------------------------------------------------------------------------\nShort Description of \"distrTEst\":\nClasses and methods are provided for a standardized treatment of\nthe evaluation of statistical procedures (up to now only estimators)\nat data/simulations\n-----------------------------------------------------------------------------------------\nShort Description of \"distrEx\":\nThis package provides some extensions to package \"distr\"\nlike:\n* extreme value distribution classes,\n*expectations\n  +in the form E(X)  for the expectation of X where X is some\n    distribution or\n  +in the form E(X,f) for the expectation of f(X) where X is\n     some distribution and f some function in X,\n* truncated moments,\n* distances between distributions\n  (Hellinger, Kolmogorov, total variation, \"convex contamination\")\n* lists of distributions,\n* conditional distributions in factorized form \n* conditional expectations in factorized form\n-----------------------------------------------------------------------------------------\nShort Description of \"RandVar\":\nThis package introduces classes and methods for random\nvariables (understood as measurable mappings); in particular\ngroups Math and Arith as well as matrix multiplication  and\nexpectations are available so that quite general \"regular\" expressions\nwith random variables are possible.\n-----------------------------------------------------------------------------------------\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen\n-----------------------------------------------------------------------------------------\nDESCRIPTIONS\n-----------------------------------------------------------------------------------------\nPackage: distr\nVersion: 1.6\nDate: 2005-10-17\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 2.2.0), (versions for <=2.2.0, on URL cited below),\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrSim\nVersion: 1.6\nDate: 2005-10-17\nTitle: Simulation classes based on package distr\nDepends: R(>= 2.2.0), methods, graphics, setRNG, distr\nImports: stats\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nDescription: Simulation (S4-)classes based on package distr\nMaintainer: Peter Ruckdeschel <Peter.Ruckdeschel at uni-bayreuth.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrTEst\nVersion: 1.6\nDate: 2005-10-17\nTitle: Estimation and Testing classes based on package distr\nDepends: R(>= 2.2.0), methods, graphics, setRNG, distr, distrSim\nImports: stats\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nDescription: Evaluation (S4-)classes based on package distr for\nevaluating\n    procedures (estimators/tests) at data/simulation in a unified way.\nMaintainer: Peter Ruckdeschel <Peter.Ruckdeschel at uni-bayreuth.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrEx\nVersion: 0-4.1\nDate: 2005-10-17\nTitle: Extensions of package distr\nDescription: Extensions of package distr and some additional functionality\nDepends: R(>= 2.0.1), methods, distr, evd\nAuthor: Matthias Kohl\nMaintainer: Matthias Kohl <Matthias.Kohl at stamats.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:  http://stamats.de/ThesisMKohl.pdf , App. D\n-----------------------------------------------------------------------------------------\nPackage: RandVar\nVersion: 0.4-1\nDate: 2005-10-17\nTitle: Implementation of random variables\nDescription: Implementation of random variables by means\n    of S4 classes and methods\nDepends: R (>= 2.0.1), methods, distr(>= 1.6), distrEx\nAuthor: Matthias Kohl\nMaintainer: Matthias Kohl <Matthias.Kohl at stamats.de>\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:  http://stamats.de/ThesisMKohl.pdf , App. D",
+      "body_snippet": "After some reorganization, we would like to announce the availability\non CRAN of a new version (1.6) of our package \"distr\" as well as the\navailabilty on CRAN of the new packages \"distrEx\", \"distrSim\"",
+      "thread_id": "thread-50c03bb042c9",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-50c03bb042c9",
+      "message_id": "<435A91AE.4020109@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2005-10-22T21:23:26+02:00",
+      "subject": "[R-pkgs] after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "subject_clean": "after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "After some reorganization, we would like to announce the availability\non CRAN of a new version (1.6) of our package \"distr\" as well as the\navailabilty on CRAN of the new packages \"distrEx\", \"distrSim\",\n\"distrTEst\", \"RandVar\".\n\n-----------------------------------------------------------------------------------------\nChanges from 1.5 to 1.6\n-[former package \"distr\"] reorganization:\n we have split up our package distr into smaller units:\n * \"distr\" now only contains the (basic) classes and methods\n           for distributions\n * \"distrSim\" requires \"distr\" and contains classes and methods\n           for data / simulations formerly contained in \"distr\"\n * \"distrTEst\" requires \"distr\" and \"distrSim\" and contains\n           classes and methods for evaluation of estimators\n           at data / simulations formerly contained in \"distr\"\n-[distrSim] under the hood: signature of method \"simulate\" adapted\n            in order to prevent collision with corresponding method\n            from the stats package\nsome more details to be found at\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR\na more detailed manual is available at\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\n-additional packages by Matthias Kohl:\n * \"distrEx\" requires \"distr\" and contains some extensions to\n           package \"distr\" (see later)\n * \"RandVar\" requires \"distr\" and \"distrEx\" and contains classes\n           and methods for random variables (see later)\nThese two packages are described in some detail in Matthias' PhD Thesis\n\"Numerical Contributions to the Asymptotic Theory of Robustness\", App. D\navailable on http://stamats.de/ThesisMKohl.pdf\n\n-----------------------------------------------------------------------------------------\nShort Descriptions\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\"\nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n-----------------------------------------------------------------------------------------\nShort Description of \"distrSim\":\nClasses and methods are provided for a standardized treatment of\nsimulations (also under contaminations) .\n-----------------------------------------------------------------------------------------\nShort Description of \"distrTEst\":\nClasses and methods are provided for a standardized treatment of\nthe evaluation of statistical procedures (up to now only estimators)\nat data/simulations\n-----------------------------------------------------------------------------------------\nShort Description of \"distrEx\":\nThis package provides some extensions to package \"distr\"\nlike:\n* extreme value distribution classes,\n*expectations\n  +in the form E(X)  for the expectation of X where X is some\n    distribution or\n  +in the form E(X,f) for the expectation of f(X) where X is\n     some distribution and f some function in X,\n* truncated moments,\n* distances between distributions\n  (Hellinger, Kolmogorov, total variation, \"convex contamination\")\n* lists of distributions,\n* conditional distributions in factorized form \n* conditional expectations in factorized form\n-----------------------------------------------------------------------------------------\nShort Description of \"RandVar\":\nThis package introduces classes and methods for random\nvariables (understood as measurable mappings); in particular\ngroups Math and Arith as well as matrix multiplication  and\nexpectations are available so that quite general \"regular\" expressions\nwith random variables are possible.\n-----------------------------------------------------------------------------------------\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen\n-----------------------------------------------------------------------------------------\nDESCRIPTIONS\n-----------------------------------------------------------------------------------------\nPackage: distr\nVersion: 1.6\nDate: 2005-10-17\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 2.2.0), (versions for <=2.2.0, on URL cited below),\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrSim\nVersion: 1.6\nDate: 2005-10-17\nTitle: Simulation classes based on package distr\nDepends: R(>= 2.2.0), methods, graphics, setRNG, distr\nImports: stats\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nDescription: Simulation (S4-)classes based on package distr\nMaintainer: Peter Ruckdeschel <Peter.Ruckdeschel at uni-bayreuth.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrTEst\nVersion: 1.6\nDate: 2005-10-17\nTitle: Estimation and Testing classes based on package distr\nDepends: R(>= 2.2.0), methods, graphics, setRNG, distr, distrSim\nImports: stats\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nDescription: Evaluation (S4-)classes based on package distr for\nevaluating\n    procedures (estimators/tests) at data/simulation in a unified way.\nMaintainer: Peter Ruckdeschel <Peter.Ruckdeschel at uni-bayreuth.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n-----------------------------------------------------------------------------------------\nPackage: distrEx\nVersion: 0-4.1\nDate: 2005-10-17\nTitle: Extensions of package distr\nDescription: Extensions of package distr and some additional functionality\nDepends: R(>= 2.0.1), methods, distr, evd\nAuthor: Matthias Kohl\nMaintainer: Matthias Kohl <Matthias.Kohl at stamats.de>\nLicense: GPL (version 2 or later)\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:  http://stamats.de/ThesisMKohl.pdf , App. D\n-----------------------------------------------------------------------------------------\nPackage: RandVar\nVersion: 0.4-1\nDate: 2005-10-17\nTitle: Implementation of random variables\nDescription: Implementation of random variables by means\n    of S4 classes and methods\nDepends: R (>= 2.0.1), methods, distr(>= 1.6), distrEx\nAuthor: Matthias Kohl\nMaintainer: Matthias Kohl <Matthias.Kohl at stamats.de>\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\nReference:  http://stamats.de/ThesisMKohl.pdf , App. D",
+      "body_snippet": "After some reorganization, we would like to announce the availability\non CRAN of a new version (1.6) of our package \"distr\" as well as the\navailabilty on CRAN of the new packages \"distrEx\", \"distrSim\"",
+      "thread_id": "thread-50c03bb042c9",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-3a81fb5ba1a1",
+      "message_id": "<4D8E1D88-AC4C-4B2B-837C-B3AFE94E6A5A@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2005-10-24T09:26:47+01:00",
+      "subject": "[R-pkgs] new package bundle on CRAN:  BACCO",
+      "subject_clean": "new package bundle on CRAN:  BACCO",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear List\n\nplease find on CRAN a new R bundle, BACCO, for Bayesian analysis of\nrandom functions, comprising two packages: emulator and calibrator.\n\nPackage calibrator implements:\n\n?Bayesian calibration of computer models?, M. C. Kennedy and A.  \nO'Hagan 2001. Journal of the Royal Statistical Society B, 63(3)  \npp425-464\n\n\nand package emulator implements:\nJ. Oakley 2004. ?Estimating percentiles of uncertain computer code  \noutputs?. Applied Statistics, 53(1), pp89-93.\n\nJ. Oakley and A. O'Hagan, 2002. ?Bayesian Inference for the  \nUncertainty Distribution of Computer Model Outputs?, Biometrika 89 \n(4), pp769-784\n\n\n\n\n\nThe bundle is described in:\n\nR. K. S. Hankin 2005. ?Introducing BACCO, an R bundle for Bayesian  \nanalysis of computer code output?, Journal of Statistical Software, 14 \n(16)\n\n\n\n\nenjoy\n\n\nrksh\n\n--\n\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Dear List\n\nplease find on CRAN a new R bundle, BACCO, for Bayesian analysis of\nrandom functions, comprising two packages: emulator and calibrator.\n\nPackage calibrator implements:\n\n?Bayesian calibratio",
+      "thread_id": "thread-3a81fb5ba1a1",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-3a81fb5ba1a1",
+      "message_id": "<4D8E1D88-AC4C-4B2B-837C-B3AFE94E6A5A@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2005-10-24T09:26:47+01:00",
+      "subject": "[R-pkgs] new package bundle on CRAN:  BACCO",
+      "subject_clean": "new package bundle on CRAN:  BACCO",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear List\n\nplease find on CRAN a new R bundle, BACCO, for Bayesian analysis of\nrandom functions, comprising two packages: emulator and calibrator.\n\nPackage calibrator implements:\n\n?Bayesian calibration of computer models?, M. C. Kennedy and A.  \nO'Hagan 2001. Journal of the Royal Statistical Society B, 63(3)  \npp425-464\n\n\nand package emulator implements:\nJ. Oakley 2004. ?Estimating percentiles of uncertain computer code  \noutputs?. Applied Statistics, 53(1), pp89-93.\n\nJ. Oakley and A. O'Hagan, 2002. ?Bayesian Inference for the  \nUncertainty Distribution of Computer Model Outputs?, Biometrika 89 \n(4), pp769-784\n\n\n\n\n\nThe bundle is described in:\n\nR. K. S. Hankin 2005. ?Introducing BACCO, an R bundle for Bayesian  \nanalysis of computer code output?, Journal of Statistical Software, 14 \n(16)\n\n\n\n\nenjoy\n\n\nrksh\n\n--\n\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Dear List\n\nplease find on CRAN a new R bundle, BACCO, for Bayesian analysis of\nrandom functions, comprising two packages: emulator and calibrator.\n\nPackage calibrator implements:\n\n?Bayesian calibratio",
+      "thread_id": "thread-3a81fb5ba1a1",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-bc622296206b",
+      "message_id": "<17253.35715.443094.418346@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2005-10-30T21:12:03-06:00",
+      "subject": "[R-pkgs] New version of RQuantLib",
+      "subject_clean": "New version of RQuantLib",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of RQuantLib has been uploaded to CRAN a few days ago (and\nshould be available at http://cran.r-project.org and all mirrors). Debian\nbinaries are also available.\n\nAmong the new features in version 0.2.0, all of which are due to excellent\ncontributions by Dominick Samperi, are\n- new functions for Fixed Income support:\n   * DiscountCurve for discount / forward / zero curve construction\n   * BermudanSwaption provding several QuantLib pricers for Swaptions\n- new internal R / C++ interface class RCpp\n- Windows binary packages on CRAN \n\nWindows users can now install RQuantLib via the menu just like any other\npackage.  Debian users can still say 'apt-get install r-cran-rquantlib'. All\nothers can compile manually (which still requires Boost and QuantLib\nheaders).\n\nWe also have an experimental OpenGL demo of option analytics visualisation\nvia the rgl package.  However, there are some concerns over stability,\nespecially on platforms with ATI graphics card.  If you want to try it, do\n \n> library(RQuantLib)\n> source(url(\"http://basebud.nulle.part/~edd/code/rquantlib/OptionSurfaces.R\"))\n\nand let us know how it worked (or not) and what your platform is. We still\nwould like to release this in an upcoming revision.  A more fail-safe way,\nusing animated gifs of the demo's output, is available at\n\n     http://dirk.eddelbuettel.com/code/rquantlib-rgl.html\n\nSpecial thanks to Dominick Sapieri for the new code and all his testing and\nbuilding help, and to Uwe Ligges for help with the Windows binaries.\n\nWith best regards, Dirk\n\n-- \nStatistics: The (futile) attempt to offer certainty about uncertainty.\n         -- Roger Koenker, 'Dictionary of Received Ideas of Statistics'",
+      "body_snippet": "A new version of RQuantLib has been uploaded to CRAN a few days ago (and\nshould be available at http://cran.r-project.org and all mirrors). Debian\nbinaries are also available.\n\nAmong the new features ",
+      "thread_id": "thread-bc622296206b",
+      "thread_depth": 0,
+      "month": "2005-10"
+    },
+    {
+      "id": "msg-bc622296206b",
+      "message_id": "<17253.35715.443094.418346@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2005-10-30T21:12:03-06:00",
+      "subject": "[R-pkgs] New version of RQuantLib",
+      "subject_clean": "New version of RQuantLib",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of RQuantLib has been uploaded to CRAN a few days ago (and\nshould be available at http://cran.r-project.org and all mirrors). Debian\nbinaries are also available.\n\nAmong the new features in version 0.2.0, all of which are due to excellent\ncontributions by Dominick Samperi, are\n- new functions for Fixed Income support:\n   * DiscountCurve for discount / forward / zero curve construction\n   * BermudanSwaption provding several QuantLib pricers for Swaptions\n- new internal R / C++ interface class RCpp\n- Windows binary packages on CRAN \n\nWindows users can now install RQuantLib via the menu just like any other\npackage.  Debian users can still say 'apt-get install r-cran-rquantlib'. All\nothers can compile manually (which still requires Boost and QuantLib\nheaders).\n\nWe also have an experimental OpenGL demo of option analytics visualisation\nvia the rgl package.  However, there are some concerns over stability,\nespecially on platforms with ATI graphics card.  If you want to try it, do\n \n> library(RQuantLib)\n> source(url(\"http://basebud.nulle.part/~edd/code/rquantlib/OptionSurfaces.R\"))\n\nand let us know how it worked (or not) and what your platform is. We still\nwould like to release this in an upcoming revision.  A more fail-safe way,\nusing animated gifs of the demo's output, is available at\n\n     http://dirk.eddelbuettel.com/code/rquantlib-rgl.html\n\nSpecial thanks to Dominick Sapieri for the new code and all his testing and\nbuilding help, and to Uwe Ligges for help with the Windows binaries.\n\nWith best regards, Dirk\n\n-- \nStatistics: The (futile) attempt to offer certainty about uncertainty.\n         -- Roger Koenker, 'Dictionary of Received Ideas of Statistics'",
+      "body_snippet": "A new version of RQuantLib has been uploaded to CRAN a few days ago (and\nshould be available at http://cran.r-project.org and all mirrors). Debian\nbinaries are also available.\n\nAmong the new features ",
+      "thread_id": "thread-bc622296206b",
+      "thread_depth": 0,
+      "month": "2005-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-71a60c190412",
+      "subject": "release of version 2.0-1 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2005-10-02T21:31:13-05:00",
+      "last_reply": "2005-10-02T21:31:13-05:00",
+      "root_message_id": "msg-71a60c190412"
+    },
+    {
+      "id": "thread-71a60c190412",
+      "subject": "release of version 2.0-1 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2005-10-02T21:31:13-05:00",
+      "last_reply": "2005-10-02T21:31:13-05:00",
+      "root_message_id": "msg-71a60c190412"
+    },
+    {
+      "id": "thread-7d92a50dfe23",
+      "subject": "pls version 1.1-0",
+      "message_count": 1,
+      "participants": [
+        "Ron Wehrens and Bjørn-Helge Mevik"
+      ],
+      "started": "2005-10-11T10:55:07+02:00",
+      "last_reply": "2005-10-11T10:55:07+02:00",
+      "root_message_id": "msg-7d92a50dfe23"
+    },
+    {
+      "id": "thread-7d92a50dfe23",
+      "subject": "pls version 1.1-0",
+      "message_count": 1,
+      "participants": [
+        "Ron Wehrens and Bjørn-Helge Mevik"
+      ],
+      "started": "2005-10-11T10:55:07+02:00",
+      "last_reply": "2005-10-11T10:55:07+02:00",
+      "root_message_id": "msg-7d92a50dfe23"
+    },
+    {
+      "id": "thread-0ef637d2795a",
+      "subject": "vcd package 0.9-5 released",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2005-10-20T09:29:45+02:00",
+      "last_reply": "2005-10-20T09:29:45+02:00",
+      "root_message_id": "msg-0ef637d2795a"
+    },
+    {
+      "id": "thread-0ef637d2795a",
+      "subject": "vcd package 0.9-5 released",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2005-10-20T09:29:45+02:00",
+      "last_reply": "2005-10-20T09:29:45+02:00",
+      "root_message_id": "msg-0ef637d2795a"
+    },
+    {
+      "id": "thread-9aed968698df",
+      "subject": "new package bundle: onion",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-10-21T14:21:02+01:00",
+      "last_reply": "2005-10-21T14:21:02+01:00",
+      "root_message_id": "msg-9aed968698df"
+    },
+    {
+      "id": "thread-9aed968698df",
+      "subject": "new package bundle: onion",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-10-21T14:21:02+01:00",
+      "last_reply": "2005-10-21T14:21:02+01:00",
+      "root_message_id": "msg-9aed968698df"
+    },
+    {
+      "id": "thread-50c03bb042c9",
+      "subject": "after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2005-10-22T21:23:26+02:00",
+      "last_reply": "2005-10-22T21:23:26+02:00",
+      "root_message_id": "msg-50c03bb042c9"
+    },
+    {
+      "id": "thread-50c03bb042c9",
+      "subject": "after package reorganization: version 1.6 of package \"distr\" available; new packages \"distrEx\", \"distrSim\", \"distrTEst\", \"RandVar\"",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2005-10-22T21:23:26+02:00",
+      "last_reply": "2005-10-22T21:23:26+02:00",
+      "root_message_id": "msg-50c03bb042c9"
+    },
+    {
+      "id": "thread-3a81fb5ba1a1",
+      "subject": "new package bundle on CRAN:  BACCO",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-10-24T09:26:47+01:00",
+      "last_reply": "2005-10-24T09:26:47+01:00",
+      "root_message_id": "msg-3a81fb5ba1a1"
+    },
+    {
+      "id": "thread-3a81fb5ba1a1",
+      "subject": "new package bundle on CRAN:  BACCO",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-10-24T09:26:47+01:00",
+      "last_reply": "2005-10-24T09:26:47+01:00",
+      "root_message_id": "msg-3a81fb5ba1a1"
+    },
+    {
+      "id": "thread-bc622296206b",
+      "subject": "New version of RQuantLib",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2005-10-30T21:12:03-06:00",
+      "last_reply": "2005-10-30T21:12:03-06:00",
+      "root_message_id": "msg-bc622296206b"
+    },
+    {
+      "id": "thread-bc622296206b",
+      "subject": "New version of RQuantLib",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2005-10-30T21:12:03-06:00",
+      "last_reply": "2005-10-30T21:12:03-06:00",
+      "root_message_id": "msg-bc622296206b"
+    }
+  ]
+}

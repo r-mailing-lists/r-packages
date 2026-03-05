@@ -1,0 +1,254 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-10",
+  "messages": [
+    {
+      "id": "msg-52e7d1f72900",
+      "message_id": "<375872627.1570539.1285947364767.JavaMail.fmail@mwmweb018>",
+      "from_name": "Jens Oehlschlägel",
+      "from_email_hash": "f073adaa565bb1d2ee057e84a39a987c70da1df4938e3d4d5a72e0cc3cffbdc1",
+      "date": "2010-10-01T17:36:04+02:00",
+      "subject": "[R-pkgs] ff version 2.2.0",
+      "subject_clean": "ff version 2.2.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nThe next release of package ff is available on CRAN. With kind help of Brian Ripley it now supports the Win64 and Sun versions of R. It has three major functional enhancements:\n\na) new fast in-memory sorting and ordering functions (single-threaded)\nb) ff now supports on-disk sorting and ordering of ff vectors and ffdf dataframes\nc) ff integer vectors now can be used as subscripts of ff vectors and ffdf dataframes\n\na) is achieved by careful implementation of NA-handling and exploiting context information\nb) although permanently stored, sorting and ordering of ff objects can be faster than the standard routines in R\nc) applying an order to ff vectors and ffdf dataframes is substantially slower than in pure R because it involves disk-access AND sorting index positions (to avoid random access). \n\nThere is still room for improvement, however, the current status should already be useful. I run some comparisons with SAS (see end of mail): \n- both could sort German census size (81e6 rows) on a 3GB notebook\n- ff sorts and orders faster on single columns\n- sorting big multicolumn-tables is faster in SAS\n\nWin64 binaries and version 2.2.1 supporting Sun should appear during the next days on CRAN. For the impatient: checkout from r-forge with revision 67 or higher.\nNon-Windows users: please note that you need to set appropriate values for options 'ffbatchbytes' and 'ffmaxbytes' yourself.\n\nNote that  virtual window support is deprecated now because it leads to too complex code. Let us know if you urgently need this and why.\n\nFeedback, ideas and contributions appreciated. To those who offered code during the last months: please forgive us that integrating and documenting was not possible with this release. \n\n\nJens & Daniel\n\n\n\nP.S. NEWS\n\n\n\t\tCHANGES IN ff VERSION 2.2.0\n\n\nNEW FEATURES\n\n    o\tff now supports the 64 bit Windows and Sun versions of R \n    \t(thanks to Brian Ripley)\n    o\tff now supports sorting and ordering of ff vectors and dataframes\n    \t(see ramsort, ffsort, ffdfsort, ramorder, fforder, ffdforder)\n    o\tff now supports ff vectors as subscripts of ff objects\n    \t(currently positive integers only, booleans are planned)\n    o\tNew option 'ffmaxbytes' which allows certain ff procedures like sorting\n    \tusing larger limit of RAM than 'ffbatchbytes' in chunked processing.\n    \tSuch higher limit is useful for (single-R-process) sorting compared to\n    \tsome multi-R-process chunked processing. It is a good idea to reduce \n    \t'ffmaxbytes' on slaves or avoid ff sorting there completely.\n    o\tNew generic 'pagesize' with method 'pagesize.ff' which returns the \n    \tcurrent pagesize as defined on opening the ff object.\n\n\nUSER VISIBLE CHANGES\n\n    o\t[.ff now returns with the same vmode as the ff-object\n    o\tCertain operations are faster now because we worked around \n    \tunnecessary copying triggered by many of R's assignment functions.\n    \tFor example reading a factor from a (well-cached) file is now 20%\n    \tfaster and thus as fast as just creating this factor in-RAM using \n    \tlevels()<- and class()<- assignments. \n    \t(consider this tuning temporary, hoping for a generic fix in base R)\n    o\tff() can now open files larger than .Machine$integer.max elements\n    \t(but gives access only to the first .Machine$integer.max elements)\n    o\tff now has default pattern NULL translating to the pattern in 'filename'\n        (and only to the previous default 'ff' if no filename is given)\n    o\tff now sets the pattern in synch with a requested 'filename'\n    o\tclone.ff now always creates a file consistent with the previous pattern\n    o\tclone.ff now always creates a finalizer consistent with the file location\n    o\tclone.ffdf has a new argument 'nrow' which allows to create an empty copy \n        with a different number of rows (currently requires 'initdata=NULL')\n    o\tclone.default now deep-copies lists and atomic vectors\n    \t\n    \nDEPRECATED\n\n    o\tvirtual window support is deprecated. Let us know if you urgently need this and why.\n   \n\nBUG FIXES\n\n    o\tread.table.ffdf now also works if transFUN filters and returns less rows\n\n\nBUG FIXES at 2.1.4\n\n    o\t[<-.ffdf no longer does calculate the number of elements in an ffdf\n    \twhich could led to an integer overflow\n\n\nBUG FIXES at 2.1.3\n\n\n    o\tffsafe now always closes ffdf objects - also partially closed ones\n\n    o\tffsafe no longer passes arguments 'add' and 'move' to 'save'\n\n    o\tffsafe and friends now work around the fact that under windows getwd()\n    \tcan report the same path in upper and lower case versions. \n\n\n\n    CHANGES IN bit VERSION 1.1.5\n\n\nNEW FEATURES\n\n    o new utility functions setattr() and setattributes() allow to set attributes \n      by reference (unlike attr()<- attributes()<- without copying the object)\n\n    o new utility unattr() returns copy of input with attributes removed\n\n\nUSER VISIBLE CHANGES\n\n    o certain operations like creating a bit object are even faster now: need \n      half the time and RAM through the use of setattr() instead of attr()<-\n\n    o [.bit now decorates its logical return vector with attr(,'vmode')='boolean',\n      i.e. we retain the information that there are no NAs.\n\n\nBUG FIXES\n\n    o .onLoad() no longer calls installed.packages() which substantially \n      improves startup time (thanks to Brian Ripley)\n\n\n\n\nP.P.S. Below are some timings in seconds at 3e6, 9e6, 27e6 and 81e6 elements from a Lenovo 410s notebook \n(3GB RAM, i5 m520, 2 real cores, 4 hyperthreaded cores, SSD drive, Windows7 32bit)\n\nLegend for software\n  ram:  new in-ram inplace operations receiving enough RAM to optimize for speed, not for memory\n   ff:  new on-disk operations limiting RAM for this operation at ~500GB\n    R:  timings from standard sort() and order()\n  SAS:  timings from SAS 9.2 allowing for multithreaded sorting\n\n\nLegend for type of random data\n  rboolean:  bi-boolean with 50% FALSE and TRUE\n  rlogical:  tri-boolean with 33% NA, FALSE and TRUE\n    rubyte:  integers from 0..255\n     rbyte:  33% NA and 67% -127..127\n   rushort:  integers from 0..65535\n    rshort:  33% NA and 67% -32767..32767\n ruinteger:  50% NA and 50% integers\n  rinteger:  random integers\n  rusingle:  50% NA and 50% singles\n   rsingle:  random singles\n  rudouble:  50% NA and 50% doubles\n   rdouble:  doubles\n   rfactor:  factor with 64 levels of length 66 (being different at bytes 65 and 66)\n     rchar:  64 strings of length 66 (being different at bytes 65 and 66)\n\n\nLegend for abbreviations\n  OOM:  out of memory\n  OOD:  out of disk\n   NT:  not timed because too slow\n   NA:  not available\n   \n\n\nResults for sorting a single column\n=====================================\n\n, , 3e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor rchar\nram     0.02     0.03   0.02  0.04    0.02   0.02      0.17     0.11     0.66    0.36     0.66    0.36    0.03    NA\nff      0.25     0.33   0.22  0.25    0.28   0.26      0.38     0.30     1.02    0.65     0.92    0.67    0.39    NA\nR         NA     0.35     NA    NA      NA     NA      0.83     0.54       NA      NA     1.28    0.90   64.83 51.20\nSAS       NA       NA     NA    NA      NA     NA      1.61     1.32       NA      NA     1.57    1.29      NA 17.01\n\n, , 9e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor rchar\nram     0.04     0.07   0.03  0.08    0.03   0.07      0.50     0.31     1.88    0.97     1.87    0.97    0.04    NA\nff      0.72     0.93   0.61  0.73    0.84   0.75      1.08     0.86     2.68    1.62     2.57    1.67    0.78    NA\nR         NA     0.90     NA    NA      NA     NA      2.84     1.78       NA      NA     3.51    2.12      NA    NT\nSAS       NA       NA     NA    NA      NA     NA      4.99     3.90       NA      NA     4.91    4.48      NA 62.76\n\n, , 27e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor  rchar\nram     0.10     0.24   0.09  0.23    0.11   0.23      1.58     1.00     6.06    3.15     6.00    3.23    0.16     NA\nff      2.19     2.98   1.92  2.21    2.56   2.31      3.22     2.68     8.49    5.18     8.10    5.35    2.58     NA\nR         NA     2.72     NA    NA      NA     NA      9.69     5.80       NA      NA    12.34    6.97      NA     NT\nSAS       NA       NA     NA    NA      NA     NA     17.02    12.67       NA      NA    17.05   14.07      NA 176.63\n\n, , 81e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor rchar\nram     0.27     0.67   0.28  0.67    0.33   0.72      5.58     3.23       NA      NA       NA      NA    0.49    NA\nff      6.56     9.06   5.93  6.88    8.52   7.15     10.70     8.54    51.35   28.98    70.20   44.13    7.91    NA\nR        OOM      OOM    OOM   OOM     OOM    OOM       OOM      OOM      OOM     OOM      OOM     OOM     OOM   OOM\nSAS       NA       NA     NA    NA      NA     NA     61.45    44.94       NA      NA    63.14   46.56      NA   OOD\n\n\n\n\nResults for calculating the order on a single column\n====================================================\n\n, , 3e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor  rchar\nram     0.05     0.07   0.04  0.07    0.09   0.11      0.92     0.53     1.46    0.81     1.31    0.64    0.06     NA\nff      0.14     0.19   0.77  0.58    0.87   0.67      1.04     0.60     1.66    0.81     1.43    0.85    0.74     NA\nR         NA     3.23     NA    NA      NA     NA      4.57     4.07       NA      NA     5.27    4.61    4.59 193.75\nSAS       NA       NA     NA    NA      NA     NA      1.86     1.48       NA      NA     1.63    1.39      NA  16.83\n\n, , 9e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor rchar\nram     0.16     0.21   0.17  0.20    0.30   0.28      3.07     1.61     4.24    2.16     4.22    2.19    0.19    NA\nff      0.48     0.51   2.45  1.84    2.91   2.15      3.38     1.92     4.72    2.48     4.54    2.45    1.91    NA\nR         NA    12.31     NA    NA      NA     NA     17.02    15.56       NA      NA    16.96   15.47      NT    NT\nSAS       NA       NA     NA    NA      NA     NA      6.71     5.97       NA      NA     6.25    5.41      NA 59.27\n\n, , 27e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor  rchar\nram     0.51     0.67    0.5  0.69    0.92   0.94      9.89     5.31    15.13    7.69    15.15    7.70    0.58     NA\nff      1.33     1.51    7.6  5.77    9.25   6.79     10.72     6.12    15.98    8.53    15.96    8.92    5.80     NA\nR         NA    46.37     NA    NA      NA     NA     65.57    59.17       NA      NA    63.74   58.37      NT     NT\nSAS       NA       NA     NA    NA      NA     NA     21.41    18.77       NA      NA    20.22   18.84      NA 182.74\n\n, , 81e6\n\n    rboolean rlogical rubyte rbyte rushort rshort ruinteger rinteger rusingle rsingle rudouble rdouble rfactor rchar\nram     1.49     2.03    1.5  2.06    3.15   2.98     34.33    17.89       NA      NA       NA      NA    1.90    NT\nff      3.98     4.65   22.9 17.42   30.33  21.82     36.68    20.36    77.16   49.55   125.01   59.27   17.39    NT\nR        OOM      OOM    OOM   OOM     OOM    OOM       OOM      OOM      OOM     OOM      OOM     OOM     OOM   OOM\nSAS       NA       NA     NA    NA      NA     NA     86.24    70.32       NA      NA    84.40   68.66      NA    NA\n\n\n\n\nResults for sorting all columns of a table with m columns of random double data (without NAs)\n=============================================================================================\n\n\n, , 3e6\n\nncol   1    2    5   10    20\nSAS 1.65 1.83 3.71 6.90 14.06\nff  1.97 2.37 3.75 6.21 10.86\nR   4.70 5.67 5.65 6.46  8.06\n\n, , 9e6\n\nncol    1     2     5    10    20\nSAS  5.18  6.70 14.02 19.25 41.65\nff   6.38  7.96 12.12 19.58 45.43\nR   18.86 19.20 20.58   OOM   OOM\n\n, , 27e6\n\nncol    1     2     5    10     20\nSAS 17.79 19.52 35.03 83.30 142.09\nff  22.68 25.79 46.25 87.55 157.62\nR   65.56   OOM   OOM   OOM    OOM\n\n, , 81e6\n\nncol     1      2      5     10     20\nSAS  64.78  83.39 143.59 242.23 408.72\nff  167.52 220.03 324.03 502.42 884.03\nR      OOM    OOM    OOM    OOM    OOM",
+      "body_snippet": "Dear R community,\n\nThe next release of package ff is available on CRAN. With kind help of Brian Ripley it now supports the Win64 and Sun versions of R. It has three major functional enhancements:\n\na) ",
+      "thread_id": "thread-52e7d1f72900",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-f3818f1e92d9",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C02D7ECDF83@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2010-10-06T09:13:22-04:00",
+      "subject": "[R-pkgs] update to exact2x2 package",
+      "subject_clean": "update to exact2x2 package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101006/91d99fe5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101006/91d99fe5/attachment.pl>",
+      "thread_id": "thread-f3818f1e92d9",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-bc244ef70be1",
+      "message_id": "<20101008102534.79e4da21@OPL-EUITI>",
+      "from_name": "Oscar Perpiñan Lamigueiro",
+      "from_email_hash": "6ff9b11f8e91958cdf2dc4d0fbd334c1e66be0db6e0afc00b477b525cdb8aa1d",
+      "date": "2010-10-08T10:25:34+02:00",
+      "subject": "[R-pkgs] solaR: version 0.20",
+      "subject_clean": "solaR: version 0.20",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI'd like to announce the availability of the version 0.20 of the\n\"solaR\" package. It provides a set of calculation methods of solar\nradiation and performance of photovoltaic systems. The package has\nbeen uploaded to CRAN under the GPL-3 license.  \n\nThe most important changes included in this version are:  \n\n*The package is now almost entirely designed with S4 classes and\nmethods. \n*The time series objects are constructed with the 'zoo'\npackage. \n*Most of the functions and arguments have been renamed in\norder to ease the understanding by international users.\n*Two new functions have been included for the statistical analysis of\na PV plant composed of several systems.\n*The package dependencies have been optimized.\n*Several new small functions for date-time calculations are now\navailable. \n*Several bugs have been corrected.  \n\nAn introduction to this package is available as a vignette (both in\nEnglish and in Spanish). Moreover, a handbook of photovoltaic systems (in Spanish) is available at\nhttp://procomun.wordpress.com/documentos/libroesf/.  \n\nBest regards.  \n\nOscar Perpi??n Lamigueiro\nElectrical Engineering Department\nEUITI-UPM",
+      "body_snippet": "Hello,\n\nI'd like to announce the availability of the version 0.20 of the\n\"solaR\" package. It provides a set of calculation methods of solar\nradiation and performance of photovoltaic systems. The packa",
+      "thread_id": "thread-bc244ef70be1",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-0439f7d9fc77",
+      "message_id": "<D833E179-7591-433E-8FDE-DEBCA4DBEB80@comcast.net>",
+      "from_name": "David Winsemius",
+      "from_email_hash": "e3a7b8eb6067ea7800bca3bfc3867dc752c8c60a378f21755e53d6893a6080bc",
+      "date": "2010-10-08T21:08:55-04:00",
+      "subject": "[R-pkgs]  solaR: version 0.20",
+      "subject_clean": "solaR: version 0.20",
+      "in_reply_to": null,
+      "references": [
+        "<mailman.1.1286586175.31653.r-help@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101008/e887d65f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101008/e887d65f/attachment.pl>",
+      "thread_id": "thread-0439f7d9fc77",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-54afc4103a6d",
+      "message_id": "<AANLkTikeuv8Adbc9tJ_xCzr5rzUwEQdrGh7+Vs3duj+m@mail.gmail.com>",
+      "from_name": "Charlie Sharpsteen",
+      "from_email_hash": "f11c1b44e624ad93d6ab5001cc3c4e30763f6b8f246981fde0a3f61a25ac2fbc",
+      "date": "2010-10-15T15:22:26-07:00",
+      "subject": "[R-pkgs] Announcing TikZ Device 0.5.2",
+      "subject_clean": "Announcing TikZ Device 0.5.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.5.2 of the tikzDevice is now available on CRAN in source\nform.  Binary builds will become available in the next few days.  This\nbuild supersedes 0.5.1, which was just released a couple of days ago.\n\nVersion 0.5.2 is a recommended upgrade for all users as it contains\nfixes a major issue:\n\n- Two buffer overflow conditions were found which can cause R to\nbehave extremely erratically if triggered.\n\n  * The first buffer overflow only affects users of tikzDeivce 0.5.1\nwho use tikz( ..., sanitize = TRUE ).  The sanitize option to tikz()\nwas added in 0.5.0, but was non-functional due to a bug.\n\n  * The second buffer overflow affects users of any version of\ntikzDevice.  However, it only occurs when bold italic text is used in\nplots which is a fairly rare occurrence.\n\nMany thanks to Mikhail Titov for taking the time to file bug reports\nthat led to the discovery of this issues.\n\nAdditionally, the vignette and polypath() functions have been\nupdated/added to support changes in R 2.12.0 and support for Solaris\nwas improved.\n\n\nFor more info on the tikzDevice, please visit us on GitHub:\n\n  http://github.com/Sharpie/RTikZDevice\n\n\nThe combined changelog for version 0.5.1 and 0.5.2 is as follows:\n\n---\n\n### Version: 0.5.2\n\n---\n\n#### Contributors\nThe following people contributed to this release of the tikzDevice:\n\n- mlt for reporting problems with the Sanitize function that led to\nthe discovery of two situations where buffer overflows were occurring.\n\n\n#### Bug Fixes\n\n- Fixed buffer overflows and memory leaks related to string pointers\nin tikzDevice.c.\n\n- Fixed compilation of the tikzDevice vignette under R 2.12.0.\n\n- Reduced the verbosity of the package startup message.\n\n\n---\n\n### Version: 0.5.1\n\n---\n\n#### Bug Fixes\n\n- A stub function has been added so that the `polypath()` function\nintroduced in R 2.12.0 won't crash the device.\n\n- Fixed bug where no string output was shown when the sanitize=TRUE\noption was used.\n\n- The path to a LaTeX compiler returned by `Sys.which()` is now\nchecked by `file.access()` to check that it is actually an executable\nand not an error message.  This fixes issues arising from\n`Sys.which()` on Solaris.\n\n- On UNIX platforms, `/usr/texbin/pdflatex` is added to the end of the\nlist of places to search for a LaTeX compiler.  This should help\npeople using R.app on OS X find a LaTeX compiler without having to\nmanually specify it.\n\n- `tikz()` produces a better error message when it cannot open a file\nfor output.\n\n- In the event that LaTeX crashes during a metric calculation, the\nLaTeX log output is echoed using `message()` instead of `cat()`.  This\nmakes it show up during operations that supperss `cat()` output such\nas `R CMD build` and `R CMD Sweave`.",
+      "body_snippet": "Version 0.5.2 of the tikzDevice is now available on CRAN in source\nform.  Binary builds will become available in the next few days.  This\nbuild supersedes 0.5.1, which was just released a couple of da",
+      "thread_id": "thread-54afc4103a6d",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-d08ae904240a",
+      "message_id": "<1287396941.9923.1.camel@D01RI1002244.h07.jrc.it>",
+      "from_name": "Mauricio Zambrano",
+      "from_email_hash": "cb7a54ef4e8975ad30de0695b2d09aa3d4937b447001baa0a37c3eb2d889aeda",
+      "date": "2010-10-18T12:15:41+02:00",
+      "subject": "[R-pkgs] new packages: hydroTSM 0.2-0 and hydroGOF 0.2-0",
+      "subject_clean": "new packages: hydroTSM 0.2-0 and hydroGOF 0.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R and hydrological community,\n\nThe first public (beta) release of two new R packages are now available\non CRAN:\n\n\n############\n# hydroTSM #\n############\n\n1) hydroTSM is a package for management and analysis of hydrological\ntime series:\n\nhttp://cran.r-project.org/web/packages/hydroTSM/\n\nhydroTSM includes S3 functions for management, analysis, interpolation\nand plot of hydrological time series, mainly oriented to hydrological\nmodelling tasks. So far, it only works with daily / monthly / seasonal /\nannual time series.\n\nThe focus of this package has been put in providing a collection of\nfunctions useful for the daily work of hydrologists, and although an\neffort was made to optimise each function as much as possible,\nfunctionality has had priority over speed.\n\n\n############\n# hydroGOF #\n############\n\n2) hydroGOF is a package for comparison of simulated and observed\nhydrological time series:\n\nhttp://cran.r-project.org/web/packages/hydroGOF/\n\nhydroGOF includes S3 functions implementing both statistical and\ngraphical goodness-of-fit measures between observed and simulated\nvalues, mainly oriented to be used during the calibration, validation,\nand application of hydrological models. \n\nMissing values in observed and/or simulated values can be removed before\ncomputations. \n\n\n################\n# Installation #\n################\n\n*) From the R console:\n> # Required packages:\n> install.packages(c(\"zoo\", \"gstat\", \"automap\"))\n\n> # Suggested packages:\n> install.packages(c(\"sp\", \"maptools\", \"e1071\", \"rgdal\"))\n\n> # hydroTSM\n> install.packages(\"hydroTSM\")\n\n> # hydroGOF\n> install.packages(\"hydroGOF\")\n\n################\n#    Links     #\n################\n\nhttp://meetingorganizer.copernicus.org/EGU2010/EGU2010-13008.pdf\nhttp://www.slideshare.net/posterVienna/egu2010-ra-statisticalenvironmentfordoinghydrologicalanalysis\n\n\n################\n# Beta Notice  #\n################\n\nhydroTSM and hydroGOF have been tested for more than a year, but its\ndevelopment began in early 2008, during the Ph.D programme of the author\nat the University of Trento. \nBoth packages are reasonably stable, but they are currently flagged as\nbeta work, in order to get some feedback from a broader audience.\n\n\nBugs / comments / questions / collaboration of any kind are very\nwelcomed, and in particular, datasets that can be included in the\npackages for academic purposes.\n\n\nKind regards,\n\nMauricio Zambrano-Bigiarini\n\n=======================================================\nFLOODS Action\nLand Management and Natural Hazards Unit\nInstitute for Environment and Sustainability\nEuropean Commission, Joint Research Centre\n=======================================================\nLinux user #454569 -- Ubuntu user #17469\n=======================================================\n\"Learning is not attained by chance, \nit must be sought for with ardor and \nattended to with diligence.\"\n(Abigail Adams, 1744 - 1818)\n=======================================================\nDISCLAIMER:\\ \"The views expressed are purely those of th...{{dropped:6}}",
+      "body_snippet": "Dear R and hydrological community,\n\nThe first public (beta) release of two new R packages are now available\non CRAN:\n\n\n############\n# hydroTSM #\n############\n\n1) hydroTSM is a package for management a",
+      "thread_id": "thread-d08ae904240a",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-c2f8af9645a1",
+      "message_id": "<001401cb6ec6$f04a4410$d0decc30$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2010-10-18T09:18:22-04:00",
+      "subject": "[R-pkgs] OpenMX structural equation software",
+      "subject_clean": "OpenMX structural equation software",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe OpenMx developer team takes great pride in announcing the availability\nof OpenMx 1.0. The team would like to express its gratitude to the large\nnumber of beta-testers who have helped us improve the code. Thank you.\n\nOpenMx is a free suite of R functions and a estimation back-end that\nsupports fitting a wide variety of structural equation models including\nmultiple groups, full information ML for missing data, ordinal estimation\nwith thresholds, multilevel, latent class, and mixture distributions to name\na few.\n\nThe most current version of OpenMx (for Mac, Windows and most Linux\nvariants) may be downloaded by issuing the following R command:\n\nsource('http://openmx.psyc.virginia.edu/getOpenMx.R')\n\nOpenMx is not currently hosted on CRAN due to a license restriction on the\none portion of our code, an optimizer, that was not written by the project.\nWe hope to remedy this situation reasonably soon as we are working on an\nopen source version of the optimizer.  The remainder of the project is\nlicensed under Apache 2.0 and the source code may be downloaded from the\nOpenMx website and used for any purpose you wish.  We do hope that you wish\nto contribute improvements or bug fixes back to the project, but we do not\nrequire it.\n\nThe OpenMx website is http://openmx.psyc.virginia.edu, where we host a set\nof manuals and tutorials, a wiki, and a set of user forums where issues to\ndo with OpenMx and SEM in general can be discussed.  We require free\nregistration in order to post to the forums or wiki so as to slow down the\nspambots, but everything else is available without registration.\n\nOpenMx has been in development for 3 years.  The OpenMx beta test program\nbegan in October 2009. Since then, we have improved the interface and sped\nup the optimization times considerably. Many new features are in the works\nand we encourage you to post to the Wish List forum so that we know what you\nwould like to see.\n\n>From this point on, we will maintain two binary releases: a stable release\nnumbered as 1.x.x, and a development binary with the latest and greatest\nfeatures and bug-fixes, numbered with the current revision number (e.g.,\n1448). The development of OpenMx is on-going and we expect that new\ndevelopment binaries will be released often. The stable releases are likely\nto be updated every few months or so.\n\nFor the OpenMx team.\n\nJohn\n\n--------------------------------\nJohn Fox\nSenator William McMaster \n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nThe OpenMx developer team takes great pride in announcing the availability\nof OpenMx 1.0. The team would like to express its gratitude to the large\nnumber of beta-testers who have helpe",
+      "thread_id": "thread-c2f8af9645a1",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-d5a171e2ae4d",
+      "message_id": "<1288140480.31580.46.camel@localhost>",
+      "from_name": "Nurometic R Help",
+      "from_email_hash": "77b55219a9338da0a9708c4b2daff6755ce5b2750d1efd6155495cb56733fcf8",
+      "date": "2010-10-26T20:48:00-04:00",
+      "subject": "[R-pkgs] Introducing the futile.paradigm, a package for functional\tdispatching in R",
+      "subject_clean": "Introducing the futile.paradigm, a package for functional\tdispatching in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello useRs,\n\nI'm pleased to announce the general availability of the R package\nfutile.paradigm, which is a language extension that implements\nfunctional dispatching in R. This is an alternative to the current\nobject-oriented styles, replacing them with a functional programming\nstyle that provides a clean, fine-grained declarative syntax for\nfunction definitions. The core of the package consists of two operators,\n%when% and %must% that implement guard statements that define when a\nfunction variant is executed and post assertions that define the\ncriteria for success on individual functions. The package also\nimplements custom type constructors, which are declared using the\n'create' function, which is predefined in the futile.paradigm.\n\nHere are some examples to give you an idea of the syntax.\n\n# Factorial function in the 'fac' namespace\nfac.0 %when% (x == 0)  # guard statement\nfac.0 <- function(x) 1 # function variant\n\nfac.n %when% (x > 0)       # guard statement\nfac.n %must% (result >= x) # post-assertion\nfac.n <- function(x) x * fac(x-1) # function variant\n\n> fac(4)\n[1] 24\n> fac(-2)\nError in UseFunction(\"fac\", ...) : No valid function for 'fac/1' : -2\n\n# Numerical optimization with custom type constructors\n# Define a function and its derivatives\nfx <- function(x) x^2 - 4\nf1 <- function(x) 2*x\nf2 <- function(x) 2\n\n# Define the numerical optimization harness\nconverged <- function(x1, x0, tolerance=1e-6) abs(x1 - x0) < tolerance\nminimize <- function(x0, algo, max.steps=100)\n{\n  step <- 0\n  old.x <- x0\n  while (step < max.steps)\n  {\n    # Calls abstract function 'iterate' with definitions below\n    new.x <- iterate(old.x, algo)\n    if (converged(new.x, old.x)) break\n    old.x <- new.x\n  }\n  new.x\n}\n\n# Implement Newton-Raphson\niterate.nr %when% (algo %isa% NewtonRaphson)\niterate.nr <- function(x, algo) x - algo$f1(x) / algo$f2(x)\n\n# Implement Gradient Descent\niterate.gd %when% (algo %isa% GradientDescent)\niterate.gd <- function(x, algo) x - algo$step * algo$f1(x)\n\n# Create a custom type constructor\ncreate.GradientDescent <- function(T, f1, step=0.01) list(f1=f1,step=step)\n\n> algo <- create(GradientDescent, f1)\n> minimize(3, algo)\n[1] 3.677989e-06\n\n# Execute using a dynamic type constructor\n> algo <- create(NewtonRaphson, f1=f1,f2=f2)\n> minimize(3, algo)\n[1] 0\n\nMore documentation is available in the package help files and also at\nhttps://nurometic.com/quantitative-finance/futile/paradigm\n\nThe current version is version 1.2.0 and is available on CRAN.\n\nRegards,\nBrian Lee Yung Rowe",
+      "body_snippet": "Hello useRs,\n\nI'm pleased to announce the general availability of the R package\nfutile.paradigm, which is a language extension that implements\nfunctional dispatching in R. This is an alternative to th",
+      "thread_id": "thread-d5a171e2ae4d",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-61d50f0bef5c",
+      "message_id": "<AANLkTimOH2ehns=payiUSq7eESewn7Dnti-AXpw21YTJ@mail.gmail.com>",
+      "from_name": "Anup Parikh",
+      "from_email_hash": "6418cea15d2cbe0a891aec3e3e378a2c9f75d98b44eac119dabc1f13c84c678e",
+      "date": "2010-10-30T16:07:05-07:00",
+      "subject": "[R-pkgs] Introducing Red-R: visual programming for R",
+      "subject_clean": "Introducing Red-R: visual programming for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-Packages Mailing List,\n\nThe Red-R development team would like to introduce Red-R: a user\nfriendly visual programming and data analysis framework for R.\n\nRed-R makes the advanced functionality of R available to the\nnon-computational users by hiding the computational complexity behind\na visual programming interface. In addition, Red-R improves analysis\nreadability and data sharing to facilitates better communication in\ninter-disciplinary teams.\n\nAnalyses are performed by visually linking a series of widgets\ntogether that read, manipulate, and interactively display data. These\npipelines, representing both the data and analysis, can be easily\nshared with others. Red-R can also generate reports in odt, html and\nlatex to help better document and share results.\n\nRed-R is an extension of Orange (http://www.ailab.si/orange), a data\nmining framework written in Python and Qt. Red-R accesses all the\nfunctionality and data in R, using the Python interface for R provided\nby RPy2 (http://rpy.sourceforge.net). This framework is highly\nflexible and can be extended to include virtually all the functionally\nR packages currently offer.\n\nIf you maintain an R package and are interested in created a GUI\ninterface please don't hesitate to contact us. We would be happy to\nprovide any help in creating the Red-R packages.\n\nWe would like to thank all those that helped test the software over\nthe last year and a half and welcome any feedback/suggestions from the\nR community.\n\nPlease visit the Red-R webpage (www.red-r.org) for more information.\n\nThank you,\nRed-R Development Team\nAnup Parikh (anup at red-r.org)\nKyle R. Covington (kyle at red-r.org)",
+      "body_snippet": "Dear R-Packages Mailing List,\n\nThe Red-R development team would like to introduce Red-R: a user\nfriendly visual programming and data analysis framework for R.\n\nRed-R makes the advanced functionality o",
+      "thread_id": "thread-61d50f0bef5c",
+      "thread_depth": 0,
+      "month": "2010-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-52e7d1f72900",
+      "subject": "ff version 2.2.0",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschlägel"
+      ],
+      "started": "2010-10-01T17:36:04+02:00",
+      "last_reply": "2010-10-01T17:36:04+02:00",
+      "root_message_id": "msg-52e7d1f72900"
+    },
+    {
+      "id": "thread-f3818f1e92d9",
+      "subject": "update to exact2x2 package",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2010-10-06T09:13:22-04:00",
+      "last_reply": "2010-10-06T09:13:22-04:00",
+      "root_message_id": "msg-f3818f1e92d9"
+    },
+    {
+      "id": "thread-bc244ef70be1",
+      "subject": "solaR: version 0.20",
+      "message_count": 1,
+      "participants": [
+        "Oscar Perpiñan Lamigueiro"
+      ],
+      "started": "2010-10-08T10:25:34+02:00",
+      "last_reply": "2010-10-08T10:25:34+02:00",
+      "root_message_id": "msg-bc244ef70be1"
+    },
+    {
+      "id": "thread-0439f7d9fc77",
+      "subject": "solaR: version 0.20",
+      "message_count": 1,
+      "participants": [
+        "David Winsemius"
+      ],
+      "started": "2010-10-08T21:08:55-04:00",
+      "last_reply": "2010-10-08T21:08:55-04:00",
+      "root_message_id": "msg-0439f7d9fc77"
+    },
+    {
+      "id": "thread-54afc4103a6d",
+      "subject": "Announcing TikZ Device 0.5.2",
+      "message_count": 1,
+      "participants": [
+        "Charlie Sharpsteen"
+      ],
+      "started": "2010-10-15T15:22:26-07:00",
+      "last_reply": "2010-10-15T15:22:26-07:00",
+      "root_message_id": "msg-54afc4103a6d"
+    },
+    {
+      "id": "thread-c2f8af9645a1",
+      "subject": "OpenMX structural equation software",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2010-10-18T09:18:22-04:00",
+      "last_reply": "2010-10-18T09:18:22-04:00",
+      "root_message_id": "msg-c2f8af9645a1"
+    },
+    {
+      "id": "thread-d08ae904240a",
+      "subject": "new packages: hydroTSM 0.2-0 and hydroGOF 0.2-0",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano"
+      ],
+      "started": "2010-10-18T12:15:41+02:00",
+      "last_reply": "2010-10-18T12:15:41+02:00",
+      "root_message_id": "msg-d08ae904240a"
+    },
+    {
+      "id": "thread-d5a171e2ae4d",
+      "subject": "Introducing the futile.paradigm, a package for functional\tdispatching in R",
+      "message_count": 1,
+      "participants": [
+        "Nurometic R Help"
+      ],
+      "started": "2010-10-26T20:48:00-04:00",
+      "last_reply": "2010-10-26T20:48:00-04:00",
+      "root_message_id": "msg-d5a171e2ae4d"
+    },
+    {
+      "id": "thread-61d50f0bef5c",
+      "subject": "Introducing Red-R: visual programming for R",
+      "message_count": 1,
+      "participants": [
+        "Anup Parikh"
+      ],
+      "started": "2010-10-30T16:07:05-07:00",
+      "last_reply": "2010-10-30T16:07:05-07:00",
+      "root_message_id": "msg-61d50f0bef5c"
+    }
+  ]
+}

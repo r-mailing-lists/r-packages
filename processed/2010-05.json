@@ -1,0 +1,441 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-05",
+  "messages": [
+    {
+      "id": "msg-2938686612ad",
+      "message_id": "<4BE1A64B.5040306@vanderbilt.edu>",
+      "from_name": "Charles Dupont",
+      "from_email_hash": "7960b47447fcea177e0e9a44be8ad24c62762f0d4e923b4fbdfdcbdedc3faac4",
+      "date": "2010-05-05T12:09:31-05:00",
+      "subject": "[R-pkgs] Hmisc version 3.8-0 now available on CRAN",
+      "subject_clean": "Hmisc version 3.8-0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hmisc version 3.8-0 has been released and is now available on CRAN.\n\nPrimary improvement is compatibility with R 2.11.0.\n\nLinux packages, Windows 32bit and 64bit binary packages, and Mac binary packages \nare built and are currently available on the http://cran.r-project.org/ repository.\n\nCharles Dupont",
+      "body_snippet": "Hmisc version 3.8-0 has been released and is now available on CRAN.\n\nPrimary improvement is compatibility with R 2.11.0.\n\nLinux packages, Windows 32bit and 64bit binary packages, and Mac binary packag",
+      "thread_id": "thread-2938686612ad",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-a67f0bfed85e",
+      "message_id": "<q2necd262691005060536t9fe54a59p594d928c5c4cfe84@mail.gmail.com>",
+      "from_name": "Sebastien Bihorel",
+      "from_email_hash": "60097aa983007324f8198033befe397fe8635f596c08e3d1aac26ae66ddd6534",
+      "date": "2010-05-06T08:36:49-04:00",
+      "subject": "[R-pkgs] Release of optimbase, optimsimplex and neldermead packages",
+      "subject_clean": "Release of optimbase, optimsimplex and neldermead packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl>",
+      "thread_id": "thread-a67f0bfed85e",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-1a7427e5fe87",
+      "message_id": "<z2pecd262691005060537t2c878ec5ya12340faa0e73c24@mail.gmail.com>",
+      "from_name": "Sebastien Bihorel",
+      "from_email_hash": "60097aa983007324f8198033befe397fe8635f596c08e3d1aac26ae66ddd6534",
+      "date": "2010-05-06T08:37:49-04:00",
+      "subject": "[R-pkgs] Release of the scaRabee package",
+      "subject_clean": "Release of the scaRabee package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl>",
+      "thread_id": "thread-1a7427e5fe87",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-f641ebd1aaec",
+      "message_id": "<1273169736.27760.7.camel@Adam>",
+      "from_name": "Matthew Dowle",
+      "from_email_hash": "da70e29f21357922d3ff71dee2915877599edde846f651e4da8287df362c75d3",
+      "date": "2010-05-06T19:15:36+01:00",
+      "subject": "[R-pkgs] data.table 1.4.1 now on CRAN",
+      "subject_clean": "data.table 1.4.1 now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "data.table is an enhanced data.frame with fast subset, fast\ngrouping and fast merge. It uses a short and flexible syntax\nwhich extends existing R concepts.\n\nExample:\n    DT[a>3,sum(b*c),by=d]\nwhere DT is a data.table with 4 columns (a,b,c,d).\n\ndata.table 1.4.1 :\n\n* grouping is now 10+ times faster than tapply()\n* extract is 100+ times faster than ==, as before\n* 3 new vignettes: Intro, FAQ & Timings\n* NEWS file contains further details\n\nhttp://datatable.r-forge.r-project.org/\n\nhttp://cran.r-project.org/web/packages/data.table/index.html\n\nThere is a new mailing list, datatable-help. Please do send comments,\nfeedback, problems and questions.\n\nMatthew and Tom",
+      "body_snippet": "data.table is an enhanced data.frame with fast subset, fast\ngrouping and fast merge. It uses a short and flexible syntax\nwhich extends existing R concepts.\n\nExample:\n    DT[a>3,sum(b*c),by=d]\nwhere DT",
+      "thread_id": "thread-f641ebd1aaec",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-782447e19a98",
+      "message_id": "<o2h5832a2d11005070919w7469aa85tda377d3a280b76de@mail.gmail.com>",
+      "from_name": "Christopher Brown",
+      "from_email_hash": "4205802204ed3b4d0888f15590bcb78b9fc46f698c0506e7df14ed595e0d391a",
+      "date": "2010-05-07T09:19:15-07:00",
+      "subject": "[R-pkgs] hash-2.0.0",
+      "subject_clean": "hash-2.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl>",
+      "thread_id": "thread-782447e19a98",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-c3ca0c91c0fc",
+      "message_id": "<4BE450F7.2090705@userprimary.net>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2010-05-07T10:42:15-07:00",
+      "subject": "[R-pkgs] Release announcement: RSQLite 0.9-0 now with more BLOBs",
+      "subject_clean": "Release announcement: RSQLite 0.9-0 now with more BLOBs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RSQLite is an R package conforming to the R DBI interface that allows \nfor interaction with SQLite.\n\nVersion 0.9-0 highlights:\n\n* Support for SQLite BLOBs using raw vectors in R\n\n* New memory model for db connections allows for more familiar R \nsemantics and no predefined limit to the number of connections you can \nhave in an R session.\n\n* Upgrade to SQLite 3.6.23.1\n\n* Removed an unnecessary validity check on process ID for the manager \nhandle.  This should make use of RSQLite with the multicore package easier.\n\n* RSQLite now depends on R >= 2.10.0\n\nYou can read more details about these and other changes here:\n\n    http://cran.r-project.org/web/packages/RSQLite/NEWS\n\n\n+ seth\n\n\n-- \nSeth Falcon | @sfalcon | http://userprimary.net/",
+      "body_snippet": "RSQLite is an R package conforming to the R DBI interface that allows \nfor interaction with SQLite.\n\nVersion 0.9-0 highlights:\n\n* Support for SQLite BLOBs using raw vectors in R\n\n* New memory model fo",
+      "thread_id": "thread-c3ca0c91c0fc",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-b72a5efb468e",
+      "message_id": "<u2ud4588dec1005091206z3c660b21gc4d395d488981a81@mail.gmail.com>",
+      "from_name": "Jay Emerson",
+      "from_email_hash": "d3ffa0338d064ec9ac7a773f5c07c8f79ca790af532172525a48eea9a520d9ae",
+      "date": "2010-05-09T15:06:57-04:00",
+      "subject": "[R-pkgs] \"Bayesian change point\" package bcp 2.2.0 available",
+      "subject_clean": "\"Bayesian change point\" package bcp 2.2.0 available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl>",
+      "thread_id": "thread-b72a5efb468e",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-5dbf0772667d",
+      "message_id": "<AANLkTikFeZPzjCfgxt-BEEbGauoGlR8CzY9L_prkZJNe@mail.gmail.com>",
+      "from_name": "Jay Emerson",
+      "from_email_hash": "d3ffa0338d064ec9ac7a773f5c07c8f79ca790af532172525a48eea9a520d9ae",
+      "date": "2010-05-10T12:20:41-04:00",
+      "subject": "[R-pkgs] Bayesian change point\" package bcp 2.2.0 available",
+      "subject_clean": "Bayesian change point\" package bcp 2.2.0 available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.2.0 of package bcp is now available.? It replaces the\nsuggests of NetWorkSpaces (previously used for optional parallel MCMC)\nwith the dependency on package foreach, giving greater flexibility and\nsupporting a wider range of parallel backends (see doSNOW, doMC,\netc...).\n\nFor those unfamiliar with foreach (thanks to Steve Weston for this\ncontribution), it's a beautiful and highly portable looping construct\nwhich can run sequentially or in parallel based on the user's actions\n(rather than the programmer's choices).? We think other package\nauthors might want to consider taking advantage of it for tasks that\nmight be computationally intensive and could be easily done in\nparallel.? Some vignettes are available at\nhttp://cran.r-project.org/web/packages/foreach/index.html.\n\nJay Emerson & Chandra Erdman\n\n(Apologies, the first version of this announcement was not plain-text.)\n\n--\nJohn W. Emerson (Jay)\nAssociate Professor of Statistics\nDepartment of Statistics\nYale University\nhttp://www.stat.yale.edu/~jay",
+      "body_snippet": "Version 2.2.0 of package bcp is now available.? It replaces the\nsuggests of NetWorkSpaces (previously used for optional parallel MCMC)\nwith the dependency on package foreach, giving greater flexibilit",
+      "thread_id": "thread-5dbf0772667d",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-d421d4357861",
+      "message_id": "<AANLkTikV70OIc_-CWa2hz5xV-zqOLNb7AZ0-wJgyh3Ev@mail.gmail.com>",
+      "from_name": "Jay Emerson",
+      "from_email_hash": "d3ffa0338d064ec9ac7a773f5c07c8f79ca790af532172525a48eea9a520d9ae",
+      "date": "2010-05-10T12:27:24-04:00",
+      "subject": "[R-pkgs] bigmemory 4.2.3",
+      "subject_clean": "bigmemory 4.2.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The long-promised revision to bigmemory has arrived, with package\n4.2.3 now on CRAN.  The mutexes (locks) have been extracted and will\nbe available through package synchronicity (on R-Forge, soon to appear\non CRAN).  Initial versions of packages biganalytics and bigtabulate\nare on CRAN, and new versions which resolve the warnings and have\nstreamlined CRAN-friendly configurations will appear shortly.  Package\nbigalgebra will remain on R-Forge for the time being as the\nuser-interface is developed and the configuration possibilities\nexpand.\n\nFor more information, please feel free to email us or visit\nhttp://www.bigmemory.org/.\n\nJay Emerson & Mike Kane\n\n-- \nJohn W. Emerson (Jay)\nAssociate Professor of Statistics\nDepartment of Statistics\nYale University\nhttp://www.stat.yale.edu/~jay",
+      "body_snippet": "The long-promised revision to bigmemory has arrived, with package\n4.2.3 now on CRAN.  The mutexes (locks) have been extracted and will\nbe available through package synchronicity (on R-Forge, soon to a",
+      "thread_id": "thread-d421d4357861",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-52f478c6d7c6",
+      "message_id": "<AANLkTinnKoXGiXkdh-Wu2BXktKidCH3jXsHx71P4b4U_@mail.gmail.com>",
+      "from_name": "Matt Young",
+      "from_email_hash": "cdcb8efe89eff61afbd5b0bce1fad00e613ff927cb30141eed4db77069fb04ff",
+      "date": "2010-05-12T08:23:24-07:00",
+      "subject": "[R-pkgs] Bidirectional piping in windows",
+      "subject_clean": "Bidirectional piping in windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Lot of examples for one way pipes, but I need to create some named\npipes from R to another process, especially SQLite.  I am look at the\nR/SQLite packages for help.  ANy pointers?",
+      "body_snippet": "Lot of examples for one way pipes, but I need to create some named\npipes from R to another process, especially SQLite.  I am look at the\nR/SQLite packages for help.  ANy pointers?",
+      "thread_id": "thread-52f478c6d7c6",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-eb72caa4fd5e",
+      "message_id": "<19441.24167.442231.404310@ron.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2010-05-17T10:19:03-05:00",
+      "subject": "[R-pkgs] Rcpp 0.8.0 on CRAN",
+      "subject_clean": "Rcpp 0.8.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "===== Summary =====\n\nVersion 0.8.0 of the Rcpp package was released to CRAN today. This release\nmarks another milestone in the ongoing redesign of the package, and\nunderlying C++ library.\n\n\n===== Overview =====\n\nRcpp is an R package and C++ library that facilitates integration of C++\ncode in R packages. \n\nThe package features a set of C++ classes (Rcpp::IntegerVector,\nRcpp::Function, Rcpp::Environment, ...) that makes it easier to manipulate R\nobjects of matching types (integer vectors, functions, environments, etc\n...).\n\nRcpp takes advantage of C++ language features such as the explicit\nconstructor/destructor lifecycle of objects to manage garbage collection\nautomatically and transparently. We believe this is a major improvement over\nPROTECT/UNPROTECT. When an Rcpp object is created, it protects the underlying\nSEXP so that the garbage collector does not attempt to reclaim the\nmemory. This protection is withdrawn when the object goes out of\nscope. Moreover, users generally do not need to manage memory directly (via\ncalls to new / delete or malloc / free) as this is done by the Rcpp classes\nor the corresponding STL containers.\n\n\n===== API =====\n\nRcpp provides two APIs: an older set of classes we refer to the classic API\n(see below for the section 'Backwards Compatibility) as well as second and\nnewer set of classes. \n\nClasses of the new Rcpp API belong to the Rcpp namespace. Each class is\nassociated to a given SEXP type and exposes an interface that allows\nmanipulation of the object that may feel more natural than the usual use of\nmacros and functions provided by the R API.\n\n----------------------------------------------------------\nSEXP type         |    Rcpp class                 \n----------------------------------------------------------\nINTSXP            |    Rcpp::IntegerVector        \nREALSXP           |    Rcpp::NumericVector\nRAWSXP            |    Rcpp::RawVector\nLGLSXP            |    Rcpp::LogicalVector\nCPLXSXP           |    Rcpp::ComplexVector \nSTRSXP            |    Rcpp::CharacterVector\nVECSXP            |    Rcpp::List\nEXPRSXP           |    Rcpp::ExpressionVector\n----------------------------------------------------------\nENVSXP            |    Rcpp::Environment\nSYMSXP            |    Rcpp::Symbol\n----------------------------------------------------------\nCLOSXP            |\nBUILTINSXP        |    Rcpp::Function\nSPECIALSXP        |\n----------------------------------------------------------\nLANGSXP           |    Rcpp::Language\nLISTSXP           |    Rcpp::Pairlist\n----------------------------------------------------------\nS4SXP             |    Rcpp::S4\n----------------------------------------------------------\nPROMSXP           |    Rcpp::Promise\nWEAKREFSXP        |    Rcpp::WeakReference\nEXTPTRSXP         |    template <typename T> Rcpp::XPtr\n----------------------------------------------------------\n\nSome SEXP types do not have dedicated Rcpp classes : NILSXP, DOTSXP, \nANYSXP, BCODESXP and CHARSXP. \n\nStill missing are a few convenience classes such as Rcpp::Date or\nRcpp::Datetime which would map useful and frequently used R data types, but\nwhich do not have an underlying SEXP type.\n\n\n===== Data Interchange =====\n\nData interchange between R and C++ is managed by extensible and powerful yet\nsimple mechanisms.\n\nConversion of a C++ object is managed by the template function Rcpp::wrap. \nThis function currently manages :\n - primitive types : int, double, bool, float, Rbyte, ...\n - std::string, const char*\n - STL containers such as std::vector<T> and STL maps such as \n   std::map< std::string, T> provided that the template type T is wrappable \n-  any class that can be implicitely converted to SEXP, through operator SEXP()\n\nConversion of an R object to a C++ object is managed by the Rcpp::as<T>\ntemplate which can handle:\n - primitive types\n - std::string, const char* \n - STL containers such as std::vector<T>\n\nRcpp::wrap and Rcpp::as are often used implicitely. For example, when\nassigning objects to an environment:\n\n  // grab the global environment\n  Rcpp::Environment global = Rcpp::Environment::global_env() ;\n  std::deque<bool> z( 3 ); z[0] = false; z[1] = true; z[3] = false ;\n\n  global[\"x\"] = 2 ;                    // implicit call of wrap<int>\n  global[\"y\"] = \"foo\";                 // implicit call of wrap<char*>\n  global[\"z\"] = z ;                    // impl. call of wrap<std::deque<bool>>\n\n  int x = global[\"x\"] ;                // implicit call of as<int>\n  std::string y = global[\"y\"]          // implicit call of as<std::string>\n  std::vector<bool> z1 = global[\"z\"] ; // impl. call of as<std::vector<bool>>\n\nRcpp contains several examples that illustrate wrap and as. The mechanism was \ndesigned to be extensible. We have developped separate packages to illustrate\nhow to extend Rcpp conversion mechanisms to third party types. \n - RcppArmadillo : conversion of types from the Armadillo C++ library. \n - RcppGSL       : conversion of types from the GNU Scientific Library. \n\nRcpp is also used for data interchange by the RInside package which provides\nand easy way of embedding an R instance inside of C++ programs.\n\n\n===== inline use =====\n\nRcpp depends on the inline package by Oleg Sklyar et al. Rcpp then uses the\n'cfunction' provided by inline (with argument Rcpp=TRUE) to compile, link and\nload C++ function from the R session.\n\nAs of version 0.8.0 of Rcpp, we also define an R function cppfunction that\nacts as a facade function to the inline::cfuntion, with specialization for\nC++ use.\n\nThis allows quick prototyping of compiled code. All our unit tests are based \non cppfunction and can serve as examples of how to use the mechanism. For example\nthis function (from the runit.GenericVector.R unit test file) defines from\nR a C++ (simplified) version of lapply: \n\n  ## create a compiled function cpp_lapply using cppfunction \n  cpp_lapply <- cppfunction(signature(x = \"list\", g = \"function\" ), \n  \t\t'Function fun(g) ;\n\t\t List input(x) ;\n\t\t List output( input.size() ) ;\n\t\t std::transform( input.begin(), input.end(), output.begin(), fun ) ;\n\t\t output.names() = input.names() ;\n\t\t return output ;\n\t    ')\n  ## call cpp_lapply on the iris data with the R function summary\n  cpp_lapply( iris, summary )\t\n\n\n===== Using Rcpp in other packages =====\n\nRcpp is designed so that its classes are used from other packages. Using Rcpp\nrequires : \n - using the header files provided by Rcpp. This is typically done by adding this\n   line in the package DESRIPTION file: \n  \n\tLinkingTo: Rcpp\n\n  and add the following line in the package code: \n  \n\t#include <Rcpp.h>\n\n- linking against the Rcpp dynamic or static library, which is achieved by \n  adding this line to the src/Makevars of the package:\n  \n\tPKG_LIBS = $(shell $(R_HOME)/bin/Rscript -e \"Rcpp:::LdFlags()\" )\n\n  and this line to the src/Makevars.win file: \n  \n\tPKG_LIBS = $(shell Rscript.exe -e \"Rcpp:::LdFlags()\")\n\nRcpp contains a function Rcpp.package.skeleton, modelled after\npackage.skeleton from the utils package in base r, that creates a skeleton of\na package using Rcpp, including example code.\n\n\n===== C++ exceptions =====\n\nC++ exceptions are R contexts are both based on non local jumps (at least \non the implementation of exceptions in gcc), so care must be ensure\nthat one system does not void assumptions of the other. It is therefore \nvery strongly recommended that each function using C++ catches \nC++ exceptions. Rcpp offers the function forward_exception_to_r\nto facilitate forwarding the exception to the \"R side\" as an R condition. \nFor example : \n\n  SEXP foo( ) {\n    try {\n      // user code here\n    } catch( std::exception& __ex__){\n      forward_exception_to_r( __ex__ ) ;\n    }\n    // return something here\n  }\n\nAlternatively, functions can enclose the user code with the macros BEGIN_RCPP\nand END_RCPP, which provides for a more compact way of programming.  The\nfunction above could be written as follows using the macros:\n\n  SEXP foo( ) {\n    BEGIN_RCPP\n    // user code here\n    END_RCPP\n    // return something here\n  }\n\nThe use of BEGIN_RCPP and END_RCPP is recommended to anticipate future changes\nof Rcpp. We might for example decide to install dedicated handlers for specific \nexceptions later.\n\n\n===== Experimental code generation macros =====\n\nRcpp contains several macros that can generate repetitive 'boiler plate' code:\n  RCPP_FUNCTION_0, ..., RCPP_FUNCTION_65\n  RCPP_FUNCTION_VOID_0, ..., RCPP_FUNCTION_VOID_65\n  RCPP_XP_METHOD_0, ..., RCPP_XP_METHOD_65\n  RCPP_XP_METHOD_CAST_0, ..., RCPP_XP_METHOD_CAST_65\n  RCPP_XP_METHOD_VOID_0, ..., RCPP_XP_METHOD_VOID_65\n\nFor example: \n\n  RCPP_FUNCTION_2( int, foobar, int x, int y){\n     return x + y ;\n  }\n\nThis will create a .Call compatible function \"foobar\" that calls a \nc++ function for which we provide the argument list (int x, int y)\nand the return type (int). The macro also encloses the call \nin BEGIN_RCPP/END_RCPP so that exceptions are properly forwarded to R.\n\nExamples of the other macros are given in the NEWS file.\n\nThis feature is still experimental, but is being used in packages\nhighlight and RProtoBuf\n\n\n===== Quality Assurance =====\n\nRcpp uses the RUnit package by Matthias Burger et al and the aforementioned\ninline package by Oleg Sklyar et al to provide unit testing. Rcpp currently\nhas over 500 unit tests (called from more than 230 unit test functions) with\nvery good coverage of the critical parts of the package and library.\n\nSource code for unit test functions are stored in the unitTests directory \nof the installed package and the results are collected in the \"Rcpp-unitTests\"\nvignette. \n\nThe unit tests can be both during the standard R package build and testing\nprocess, and also when the package is installed.  The latter use is helpful\nto ensure that no system components have changed in a way that affect the\nRcpp package since it has been installed.  To run the tests, execute\n\n   Rcpp:::test()\n\nwhere an output directory can be provided as an optional first argument.\n\n\n===== Backwards Compatibility =====\n\nWe believe the new API is now more complete and useful than the previous set\nof classes, which we refer to as the \"classic Rcpp API\". We would therefore\nrecommend to package authors using 'classic' Rcpp to move to the new API.\nHowever, the classic API is still maintained and will continue to be\nmaintained to ensure backwards compatibility for code that uses it.\n\nPackages uses the 'Classic API' can use features of the new API selectively\nand in incremental steps. This provides for a non-disruptive upgrade path.\n\n\n===== Documentation =====\n\nThe package contains a vignette which provides a short and succinct\nintroduction to the Rcpp package along with several motivating examples.\nAlso provided is a vignette containing the regression test summary from\nthe time the package was built.\n\n\n===== Links =====\n\nRcpp main page: http://dirk.eddelbuettel.com/code/rcpp.html\nR-forge project page: http://r-forge.r-project.org/projects/rcpp/\nDirk's blog section about Rcpp: http://dirk.eddelbuettel.com/blog/code/rcpp/\nRomain's blog section about Rcpp: http://romainfrancois.blog.free.fr/index.php?category/R-package/Rcpp\n\n\n===== Support =====\n\nQuestions about Rcpp should be directed to the Rcpp-devel mailing list\nhttps://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\n\n\n\n -- Dirk Eddelbuettel and Romain Francois\n    Chicago, IL, USA, and Montpellier, France\n\tMay 2010",
+      "body_snippet": "===== Summary =====\n\nVersion 0.8.0 of the Rcpp package was released to CRAN today. This release\nmarks another milestone in the ongoing redesign of the package, and\nunderlying C++ library.\n\n\n===== Over",
+      "thread_id": "thread-eb72caa4fd5e",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-48545cad2f60",
+      "message_id": "<C8171CA5.9158%Max.Kuhn@pfizer.com>",
+      "from_name": "KuhnA03",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2010-05-17T16:17:41-04:00",
+      "subject": "[R-pkgs] version 4.39 of the caret package",
+      "subject_clean": "version 4.39 of the caret package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 4.39 of the caret package was sent to CRAN.\n\ncaret can be used to tune the parameters of predictive models using\nresampling, estimate variable importance and visualize the results.\nThere are also various modeling and \"helper\" functions that can be\nuseful for training models. caret has wrappers to over 75 different\nmodels for classification and regression. See the package vignettes or\nthe paper at\n\n  http://www.jstatsoft.org/v28/i05\n\nfor more details. I'll also be giving a talk at this year's useR!\nconference.\n\n\nSince the last posting to this list:\n\n - 23 additional models were added to train()\n\n - weights can be passed in through train()\n\n - feature selection methods have been added: recursive feature\n   elimination (rfe()) and selection by univariate filters (sbf()).\n   Both functions can be run in parallel.\n\n - a set of functions (class \"classDist\") to computes the class\n   centroids and covariance matrix for a training set for\n   determining Mahalanobis distances of new samples to each class\n   centroid \n\n - a faster version of nearZeroVar() due to Allan Engelhardt\n\n - two new data sets were added\n\n - several classes for examining the resampling results were added for\n   estimating pair-wise differences in models and lattice visualizations\n\nThe NEWS file has the blow-by-blow list of changes.\n\n\nThe package homepage is\n\n  https://r-forge.r-project.org/projects/caret/\n\nSend questions, collaborations, comments etc to max.kuhn at pfizer.com.\n\nMax",
+      "body_snippet": "Version 4.39 of the caret package was sent to CRAN.\n\ncaret can be used to tune the parameters of predictive models using\nresampling, estimate variable importance and visualize the results.\nThere are a",
+      "thread_id": "thread-48545cad2f60",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-89a6aa730920",
+      "message_id": "<7A1DEFE3-D09D-4E48-B095-DF8F307ED5F6@mcmaster.ca>",
+      "from_name": "Jeffrey Racine",
+      "from_email_hash": "0142cbe3fe3304381d2b0a61bcba57be4c715a7c0972171715ecef6315cd0493",
+      "date": "2010-05-18T14:02:07-04:00",
+      "subject": "[R-pkgs] The npRmpi package (parallel np package for multi-core environments)",
+      "subject_clean": "The npRmpi package (parallel np package for multi-core environments)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nA parallel implementation of the np package titled `npRmpi' is now available on CRAN. This package can take advantage of multiple core computing environments to reduce the run time associated with the methods contained in the np package. \n\nKindly see the vignette for details and examples on modifying np code and running it in a parallel environment. You are requested to seek local assistance for configuring machines to support MPI aware programs.\n\nInformation on the npRmpi package:\n\nThis package provides a variety of nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. This package incorporates the Rmpi package (Hao Yu <hyu at stats.uwo.ca>) with minor modifications and we are extremely grateful to Hao Yu for his contributions to the R community. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC:www.nserc.ca), the Social Sciences and Humanities Research Council of Canada (SSHRC:www.sshrc.ca), and the Shared Hierarchical Academic Research Computing Network (SHARCNET:www.sharcnet.ca).\n\nA thorough treatment of the subject matter can be found in Li, Q. and J. S. Racine (2007), Nonparametric Econometrics: Theory and Practice, Princeton University Press, ISBN: 0691121613 (768 Pages) for\nthose who might be interested (http://press.princeton.edu/titles/8355.html)\n\n-- Jeffrey Racine & Tristen Hayfield.\n\nProfessor J. S. Racine         Phone:  (905) 525 9140 x 23825\nDepartment of Economics        FAX:    (905) 521-8232\nMcMaster University            e-mail: racinej at mcmaster.ca\n1280 Main St. W.,Hamilton,     URL: www.economics.mcmaster.ca/racine\nOntario, Canada. L8S 4M4\n\n`The generation of random numbers is too important to be left to chance'",
+      "body_snippet": "Dear R users,\n\nA parallel implementation of the np package titled `npRmpi' is now available on CRAN. This package can take advantage of multiple core computing environments to reduce the run time asso",
+      "thread_id": "thread-89a6aa730920",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-ed712ed8bf38",
+      "message_id": "<4BF3D8F8.2050802@UGent.be>",
+      "from_name": "Yves Rosseel",
+      "from_email_hash": "7ee5d518252b686fc8ce3f122bc472d620147f60ac9268aceff8928b1fe84606",
+      "date": "2010-05-19T14:26:32+02:00",
+      "subject": "[R-pkgs] New package: `lavaan' for latent variable analysis (including structural equation modeling)",
+      "subject_clean": "New package: `lavaan' for latent variable analysis (including structural equation modeling)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nA new package called `lavaan' (for latent variable analysis) has been \nuploaded to CRAN. The current version of lavaan (0.3-1) can be used for \npath analysis, confirmatory factor analysis, structural equation \nmodeling, and growth curve modeling.\n\nMore information can be found on the website: http://lavaan.org\n\nSome notable features of lavaan:\n\n- the 'lavaan model syntax' allows users to express their models in a \ncompact, elegant and useR-friendly way\n\n- lavaan is robust and reliable: there are no convergence problems and \nnumerical results are very close (if not identical) to the commercial \npackage Mplus\n\n- many different estimators are available: ML, GLS, WLS, robust ML using \nSatorra-Bentler corrections, and FIML for data with missing values\n\n- full support for meanstructures and multiple groups\n\n- user friendly output including standardized solutions, fit measures, \nmodification indices and more\n\nTo get a first impression of how the 'lavaan model syntax' looks like, \nbelow is the full R code for fitting a SEM model:\n\n## begin R Code ##\n\nlibrary(lavaan)\n\n# The industrialization and Political Democracy Example\n# Bollen (1989), page 332\n\nmodel <- '\n   # latent variable definitions\n      ind60 =~ x1 + x2 + x3\n      dem60 =~ y1 + y2 + y3 + y4\n      dem65 =~ y5 + y6 + y7 + y8\n\n   # regressions\n     dem60 ~ ind60\n     dem65 ~ ind60 + dem60\n\n   # residual correlations\n     y1 ~~ y5\n     y2 ~~ y4 + y6\n     y3 ~~ y7\n     y4 ~~ y8\n     y6 ~~ y8\n'\n\nfit <- sem(model, data=PoliticalDemocracy)\nsummary(fit, fit.measures=TRUE)\n\n## end R code ##\n\n\nPlease feel free to contact me directly with questions and comments.\n\nBest,\n\nYves Rosseel.\n\n\n\n-- \nYves Rosseel -- http://www.da.ugent.be\nDepartment of Data Analysis, Ghent University\nHenri Dunantlaan 1, B-9000 Gent, Belgium\n-",
+      "body_snippet": "Dear R-users,\n\nA new package called `lavaan' (for latent variable analysis) has been \nuploaded to CRAN. The current version of lavaan (0.3-1) can be used for \npath analysis, confirmatory factor analys",
+      "thread_id": "thread-ed712ed8bf38",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-ac5f2f09f52c",
+      "message_id": "<AANLkTinL-VdAf8uJx1ZeeNg7ItIwzOS1Ra0EzHNQTYaC@mail.gmail.com>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2010-05-30T13:33:24-07:00",
+      "subject": "[R-pkgs] New package RSQLite.extfuns and minor upgrade for RSQLite",
+      "subject_clean": "New package RSQLite.extfuns and minor upgrade for RSQLite",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RSQLite.extfuns provides SQLite extension functions for use with\nRSQLite.  The package is a wrapper of extension functions written by\nLiam Healy and made available through the SQLite website\n(http://www.sqlite.org/contrib).\n\nYou can make the extension functions available on a per db connection\nbasis like this:\n\nlibrary(\"RSQLite.extfuns\")\ndb <- dbConnect(SQLite(), dbname = \":memory:\")\ninit_extensions(db)\n\n\nThe extension functions provided by the package include:\n\nMath: acos, asin, atan, atn2, atan2, acosh, asinh, atanh, difference,\ndegrees, radians, cos, sin, tan, cot, cosh, sinh, tanh, coth, exp,\nlog, log10, power, sign, sqrt, square, ceil, floor, pi.\n\nString: replicate, charindex, leftstr, rightstr, ltrim, rtrim, trim,\nreplace, reverse, proper, padl, padr, padc, strfilter.\n\nAggregate: stdev, variance, mode, median, lower_quartile, upper_quartile.\n\n\nRSQLite has been modified to provide the SQLite header files in the\ninstalled include directory so that RSQLite.extfuns (and other\npackages wishing to provide SQLite extension functions) can use\nLinkingTo.  The default value of loadable.extensions is now TRUE.\n\n+ seth\n\n-- \nSeth Falcon | @sfalcon | http://userprimary.net/",
+      "body_snippet": "RSQLite.extfuns provides SQLite extension functions for use with\nRSQLite.  The package is a wrapper of extension functions written by\nLiam Healy and made available through the SQLite website\n(http://w",
+      "thread_id": "thread-ac5f2f09f52c",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-b446d06c3384",
+      "message_id": "<AANLkTim6ZdI3c2irLmtGOpUViUSZAqurHLoBe7Vfir9m@mail.gmail.com>",
+      "from_name": "Charlotte Maia",
+      "from_email_hash": "3d0795a7b2517575cc7e66f2a4d170db38bd5db6c3e72af4e60d2ab5aee4244b",
+      "date": "2010-05-31T10:58:32+12:00",
+      "subject": "[R-pkgs] Yet Another Package for Time Data",
+      "subject_clean": "Yet Another Package for Time Data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi fellow R developers/users,\n\nI've recently revised a package called rtv, and now consider it\nreasonably stable.\n\nDescription: A package for conveniently representing, manipulating and\nvisualising time data. Here, time is regarded as a random variable,\nand objects are used to represent realisations of that random\nvariable. This is particularly useful for change points, irregular\ntimeseries and failure events. There's a strong emphasis on continuous\nrepresentations of time, with user-specified origins and units.\n\nhttp://cran.r-project.org/web/packages/rtv/index.html\n\nThe package contains classes notably similar to the POSIXt classes.\nHowever, the classes are based on a somewhat different philosophy.\nThe major advantage of the package, is that crtv objects (similar to\nPOSIXct objects) allow user-specified origins and units.\nIt also allows time events to be represented as fractional months or\nfractional years.\n\nMore info in the package vignette.\n\nBug reports and feature requests welcome.\n\n\nkind regards\n-- \nCharlotte Maia\nhttp://sites.google.com/site/maiagx",
+      "body_snippet": "Hi fellow R developers/users,\n\nI've recently revised a package called rtv, and now consider it\nreasonably stable.\n\nDescription: A package for conveniently representing, manipulating and\nvisualising ti",
+      "thread_id": "thread-b446d06c3384",
+      "thread_depth": 0,
+      "month": "2010-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2938686612ad",
+      "subject": "Hmisc version 3.8-0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Charles Dupont"
+      ],
+      "started": "2010-05-05T12:09:31-05:00",
+      "last_reply": "2010-05-05T12:09:31-05:00",
+      "root_message_id": "msg-2938686612ad"
+    },
+    {
+      "id": "thread-a67f0bfed85e",
+      "subject": "Release of optimbase, optimsimplex and neldermead packages",
+      "message_count": 1,
+      "participants": [
+        "Sebastien Bihorel"
+      ],
+      "started": "2010-05-06T08:36:49-04:00",
+      "last_reply": "2010-05-06T08:36:49-04:00",
+      "root_message_id": "msg-a67f0bfed85e"
+    },
+    {
+      "id": "thread-1a7427e5fe87",
+      "subject": "Release of the scaRabee package",
+      "message_count": 1,
+      "participants": [
+        "Sebastien Bihorel"
+      ],
+      "started": "2010-05-06T08:37:49-04:00",
+      "last_reply": "2010-05-06T08:37:49-04:00",
+      "root_message_id": "msg-1a7427e5fe87"
+    },
+    {
+      "id": "thread-f641ebd1aaec",
+      "subject": "data.table 1.4.1 now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Matthew Dowle"
+      ],
+      "started": "2010-05-06T19:15:36+01:00",
+      "last_reply": "2010-05-06T19:15:36+01:00",
+      "root_message_id": "msg-f641ebd1aaec"
+    },
+    {
+      "id": "thread-782447e19a98",
+      "subject": "hash-2.0.0",
+      "message_count": 1,
+      "participants": [
+        "Christopher Brown"
+      ],
+      "started": "2010-05-07T09:19:15-07:00",
+      "last_reply": "2010-05-07T09:19:15-07:00",
+      "root_message_id": "msg-782447e19a98"
+    },
+    {
+      "id": "thread-c3ca0c91c0fc",
+      "subject": "Release announcement: RSQLite 0.9-0 now with more BLOBs",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2010-05-07T10:42:15-07:00",
+      "last_reply": "2010-05-07T10:42:15-07:00",
+      "root_message_id": "msg-c3ca0c91c0fc"
+    },
+    {
+      "id": "thread-b72a5efb468e",
+      "subject": "\"Bayesian change point\" package bcp 2.2.0 available",
+      "message_count": 1,
+      "participants": [
+        "Jay Emerson"
+      ],
+      "started": "2010-05-09T15:06:57-04:00",
+      "last_reply": "2010-05-09T15:06:57-04:00",
+      "root_message_id": "msg-b72a5efb468e"
+    },
+    {
+      "id": "thread-5dbf0772667d",
+      "subject": "Bayesian change point\" package bcp 2.2.0 available",
+      "message_count": 1,
+      "participants": [
+        "Jay Emerson"
+      ],
+      "started": "2010-05-10T12:20:41-04:00",
+      "last_reply": "2010-05-10T12:20:41-04:00",
+      "root_message_id": "msg-5dbf0772667d"
+    },
+    {
+      "id": "thread-d421d4357861",
+      "subject": "bigmemory 4.2.3",
+      "message_count": 1,
+      "participants": [
+        "Jay Emerson"
+      ],
+      "started": "2010-05-10T12:27:24-04:00",
+      "last_reply": "2010-05-10T12:27:24-04:00",
+      "root_message_id": "msg-d421d4357861"
+    },
+    {
+      "id": "thread-52f478c6d7c6",
+      "subject": "Bidirectional piping in windows",
+      "message_count": 1,
+      "participants": [
+        "Matt Young"
+      ],
+      "started": "2010-05-12T08:23:24-07:00",
+      "last_reply": "2010-05-12T08:23:24-07:00",
+      "root_message_id": "msg-52f478c6d7c6"
+    },
+    {
+      "id": "thread-eb72caa4fd5e",
+      "subject": "Rcpp 0.8.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2010-05-17T10:19:03-05:00",
+      "last_reply": "2010-05-17T10:19:03-05:00",
+      "root_message_id": "msg-eb72caa4fd5e"
+    },
+    {
+      "id": "thread-48545cad2f60",
+      "subject": "version 4.39 of the caret package",
+      "message_count": 1,
+      "participants": [
+        "KuhnA03"
+      ],
+      "started": "2010-05-17T16:17:41-04:00",
+      "last_reply": "2010-05-17T16:17:41-04:00",
+      "root_message_id": "msg-48545cad2f60"
+    },
+    {
+      "id": "thread-89a6aa730920",
+      "subject": "The npRmpi package (parallel np package for multi-core environments)",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Racine"
+      ],
+      "started": "2010-05-18T14:02:07-04:00",
+      "last_reply": "2010-05-18T14:02:07-04:00",
+      "root_message_id": "msg-89a6aa730920"
+    },
+    {
+      "id": "thread-ed712ed8bf38",
+      "subject": "New package: `lavaan' for latent variable analysis (including structural equation modeling)",
+      "message_count": 1,
+      "participants": [
+        "Yves Rosseel"
+      ],
+      "started": "2010-05-19T14:26:32+02:00",
+      "last_reply": "2010-05-19T14:26:32+02:00",
+      "root_message_id": "msg-ed712ed8bf38"
+    },
+    {
+      "id": "thread-ac5f2f09f52c",
+      "subject": "New package RSQLite.extfuns and minor upgrade for RSQLite",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2010-05-30T13:33:24-07:00",
+      "last_reply": "2010-05-30T13:33:24-07:00",
+      "root_message_id": "msg-ac5f2f09f52c"
+    },
+    {
+      "id": "thread-b446d06c3384",
+      "subject": "Yet Another Package for Time Data",
+      "message_count": 1,
+      "participants": [
+        "Charlotte Maia"
+      ],
+      "started": "2010-05-31T10:58:32+12:00",
+      "last_reply": "2010-05-31T10:58:32+12:00",
+      "root_message_id": "msg-b446d06c3384"
+    }
+  ]
+}

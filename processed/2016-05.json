@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-05",
+  "messages": [
+    {
+      "id": "msg-01e3263dd74b",
+      "message_id": "<57433980.4010800@gmail.com>",
+      "from_name": "Simone Vazzoler",
+      "from_email_hash": "3e8c27dcf1ea324c3e6ec093586d3bd1aba6329fdf4f85248cc7e25a85c8d820",
+      "date": "2016-05-23T19:10:24+02:00",
+      "subject": "[R-pkgs] New package: sparsevar",
+      "subject_clean": "New package: sparsevar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to announce a new package called \"sparsevar\" version 0.0.3:\n\nhttps://cran.r-project.org/web/packages/sparsevar/\n\nThe package should be useful to estimate sparse VAR/VECM models.\nThe developing version can be found on Github:\n\nhttps://github.com/svazzole/sparsevar\n\nBest,\nSimon",
+      "body_snippet": "Dear R users,\n\nI would like to announce a new package called \"sparsevar\" version 0.0.3:\n\nhttps://cran.r-project.org/web/packages/sparsevar/\n\nThe package should be useful to estimate sparse VAR/VECM mo",
+      "thread_id": "thread-01e3263dd74b",
+      "thread_depth": 0,
+      "month": "2016-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-01e3263dd74b",
+      "subject": "New package: sparsevar",
+      "message_count": 1,
+      "participants": [
+        "Simone Vazzoler"
+      ],
+      "started": "2016-05-23T19:10:24+02:00",
+      "last_reply": "2016-05-23T19:10:24+02:00",
+      "root_message_id": "msg-01e3263dd74b"
+    }
+  ]
+}

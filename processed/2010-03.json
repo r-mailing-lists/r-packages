@@ -1,0 +1,576 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-03",
+  "messages": [
+    {
+      "id": "msg-8e830818ba88",
+      "message_id": "<38b9f0351002282024n3b62a98am4e75faf3b4e7d896@mail.gmail.com>",
+      "from_name": "Wincent",
+      "from_email_hash": "6846f5c272f8850077470247e7e6a025c83f8d7387bcf22387269b3b25a06522",
+      "date": "2010-03-01T12:24:31+08:00",
+      "subject": "[R-pkgs] RQDA 0.1-9 is on CRAN now",
+      "subject_clean": "RQDA 0.1-9 is on CRAN now",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nRQDA is a R package for computer-aided qualitative data analysis\n(CAQDA). It is an easy-to-use tool to assist in the analysis of\ntextual data.\n\nRQDA 0.1-9 is a major upgrade with the following changes:\n* widgets are enabled only if they are usable.\n* Better code categories management system and various improvements of GUI.\n* Click-handler for second half of code-mark.\n* Better default color scheme for code mark.\n* New function of and().\n* New option \"both\" in \"type of retrieval\".\n* New option of subset in GetAtrr().\n* It can handle ' correctly now.\n* Various bugfixes.\n\nAs always, feedbacks and suggestions are more than welcome.\n\nRegars\n\n-- \nWincent Ronggui HUANG\nDoctoral Candidate\nDept of Public and Social Administration\nCity University of Hong Kong\nhttp://asrr.r-forge.r-project.org/rghuang.html",
+      "body_snippet": "Dear all,\n\nRQDA is a R package for computer-aided qualitative data analysis\n(CAQDA). It is an easy-to-use tool to assist in the analysis of\ntextual data.\n\nRQDA 0.1-9 is a major upgrade with the follow",
+      "thread_id": "thread-8e830818ba88",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-6c81b6b495e2",
+      "message_id": "<20100301111120.7510@gmx.net>",
+      "from_name": "\"Alexander Pilhöfer\"",
+      "from_email_hash": "96c95927897bd82a3a080a659959ef143cdf0887178cbd2a418c3fdd542e3fdd",
+      "date": "2010-03-01T12:11:20+01:00",
+      "subject": "[R-pkgs] NEW: extracat - a package for the visualization of categorical data",
+      "subject_clean": "NEW: extracat - a package for the visualization of categorical data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100301/6f212e63/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100301/6f212e63/attachment.pl>",
+      "thread_id": "thread-6c81b6b495e2",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-c662b308021d",
+      "message_id": "<4B8CD044.3060702@gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2010-03-02T09:45:56+01:00",
+      "subject": "[R-pkgs] Version 1.4.7 of package vars",
+      "subject_clean": "Version 1.4.7 of package vars",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nThe package vars, implementing multivariate time series models VAR and \nVECM, has been updated to version 1.4.7\n\nThe new changes are:\n\n-the compatibility with the sandwich/lmtest package, which allows to use \nheteroskedasticity consistent (HC) covariance estimators, to do \ninference on the parameters taking into account heteroskedasticity of \nunknown form.\n\n-Implementation of a heteroskedasticity robust Granger causality test \nwith HC covariance and/or a wild bootstrap\n\nExample:\nlibrary(vars)\ndata(Canada)\nva<-VAR(Canada, p=2)\ncoeftest(va, vcov.=vcovHC)\ncausality(va, vcov.=vcovHC, boot=TRUE)\n\nBest\n\nMatthieu Stigler",
+      "body_snippet": "Dear useRs,\n\nThe package vars, implementing multivariate time series models VAR and \nVECM, has been updated to version 1.4.7\n\nThe new changes are:\n\n-the compatibility with the sandwich/lmtest package,",
+      "thread_id": "thread-c662b308021d",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-0a28f8a07db7",
+      "message_id": "<4B8F5CD2.70001@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2010-03-04T08:10:10+01:00",
+      "subject": "[R-pkgs] KmL 1.1.1",
+      "subject_clean": "KmL 1.1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "?kml? is an implementation of k-means for longitudinal data (or \ntrajectories). This algorithm is able to deal with missing value\nand provides an easy way to re roll the algorithm several times, varying \nthe starting conditions and/or the number of clusters looked for.\n\nKmL 1.1.1 addition:\n- 7 imputations methods for longitudinal data\n- Calculus of three qualities criterion (Calinski&Harabatz, Ray&Turi, \nDavies&Bouldin)\n- Implementation of the Frechet distance between two trajectories\n- Calculus of the Frechet path\n- Optimization of the function 'dist' for trajectories\n- Possibility to use three different ways to define the starting conditions\n- Correction of minor bugs\n\n\nChristophe Genolini",
+      "body_snippet": "?kml? is an implementation of k-means for longitudinal data (or \ntrajectories). This algorithm is able to deal with missing value\nand provides an easy way to re roll the algorithm several times, varyi",
+      "thread_id": "thread-0a28f8a07db7",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-a6f16a3a9656",
+      "message_id": "<4B97DA4D.9060208@userprimary.net>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2010-03-10T09:43:41-08:00",
+      "subject": "[R-pkgs] RSQLite 0.8-4 now on CRAN",
+      "subject_clean": "RSQLite 0.8-4 now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of RSQLite (0.8-4) is now available on CRAN.  Highlights \nof this release:\n\nVersion 0.8-4\n\n- Fix a memory leak in bound parameter management and resolve a\n   missing PROTECT bug that caused spurious crashes when performing\n   many prepared queries.\n\n- There is now a fairly comprehensive example of using prepared\n   queries in the man page for dbSendQuery-methods.\n\n- Upgrade to SQLite 3.6.21 => 3.6.22 (minor bug fixes).\n\n- Enable full-text search module by default.  See\n   http://www.sqlite.org/fts3.html for details on this SQLite\n   module.\n\n- Add support for prepared queries that involve a SELECT.  This was\n   previously unsupported.  SELECT queries can now be used with\n   dbSendPreparedQuery.  The return value is the same as rbind'ing the\n   results of the individual queries.  This means that parameters that\n   return no results are ignored in the result.\n\nFull NEWS items available here:\nhttp://cran.r-project.org/web/packages/RSQLite/NEWS\n\n+ seth\n\n-- \nSeth Falcon | @sfalcon | http://userprimary.net/",
+      "body_snippet": "A new version of RSQLite (0.8-4) is now available on CRAN.  Highlights \nof this release:\n\nVersion 0.8-4\n\n- Fix a memory leak in bound parameter management and resolve a\n   missing PROTECT bug that cau",
+      "thread_id": "thread-a6f16a3a9656",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-b39c15fdcefd",
+      "message_id": "<6a7001e11003120401m33780dd3g51713f306d507bc8@mail.gmail.com>",
+      "from_name": "Brandon Whitcher",
+      "from_email_hash": "f049bea1e8e17d2647618f9fb715e26559a3ddd7eb5563ad65ce97cc699c16ed",
+      "date": "2010-03-12T12:01:08Z",
+      "subject": "[R-pkgs] oro.dicom released (replaces DICOM)",
+      "subject_clean": "oro.dicom released (replaces DICOM)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/126aa10d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/126aa10d/attachment.pl>",
+      "thread_id": "thread-b39c15fdcefd",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-81c6aadfbdfa",
+      "message_id": "<6a7001e11003120412i460db188y533a0c4af9ea4682@mail.gmail.com>",
+      "from_name": "Brandon Whitcher",
+      "from_email_hash": "f049bea1e8e17d2647618f9fb715e26559a3ddd7eb5563ad65ce97cc699c16ed",
+      "date": "2010-03-12T12:12:26Z",
+      "subject": "[R-pkgs] oro.nifti released (new package)",
+      "subject_clean": "oro.nifti released (new package)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/dc60c0a6/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/dc60c0a6/attachment.pl>",
+      "thread_id": "thread-81c6aadfbdfa",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-247bc0bba1e3",
+      "message_id": "<f8e6ff051003121642n7a2fbdccida963bd1b65747d0@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-03-12T18:42:15-06:00",
+      "subject": "[R-pkgs] ggplot2: version 0.8.7",
+      "subject_clean": "ggplot2: version 0.8.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.7 (2010-03-03) ----------------------------------------\n\n* coord_map gains xlim and ylim arguments to control region of projection\n* corrected label generation for computed aesthetics (..x..) and special\n  names (`x x`)\n* fullseq: now always returns vector of length two, even when range is 0\n* geom_point legend takes more care to ensure that fill colours will be shown\n* legend: fixed scale merging bug when labels were set manually\n* scale_area: gains a legend argument like all other scales\n* scale_colour_brewer: gains na.colour argument to set colour of missing\n  values\n* stat_bin2d: fix typo in breaks calculation\n* stat_bin: deals with floating point rounding issues using the same\n  algorithm as base::hist\n* stat_density2d: fixed bug when contour = FALSE (Thanks to Takahashi Kohske)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-247bc0bba1e3",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-9aeceed1326d",
+      "message_id": "<24019E41-3EE3-4951-994A-FDE29489EDED@stat.ucla.edu>",
+      "from_name": "ian fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-03-14T23:55:20-07:00",
+      "subject": "[R-pkgs] Deducer 0.2-3 and DeducerPlugInExample released",
+      "subject_clean": "Deducer 0.2-3 and DeducerPlugInExample released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I would like to announce the release of Deducer 0.2-3 and the new  \npackage DeducerPlugInExample.\n\n-----------------------------------\n\nDeducer is designed to be a free easy to use alternative to  \nproprietary data analysis software such as SPSS, JMP, and Minitab. It  \nhas a menu system to do common data manipulation and analysis tasks,  \nand an excel-like spreadsheet in which to view and edit data frames.\n\nThis new version of Deducer includes an easy to use API for creating  \nnew GUI dialogs for statistical analysis. These dialogs can be  \ncreated using either Java, or purely in R. Documentation, which is  \ncurrently under construction, is available at: http://www.deducer.org/ \npmwiki/pmwiki.php?n=Main.Development\n\n-----------------------------------\n\nDeducerPlugInExample is a simple plug-in package illustrating dialog  \ncreation both from within R and from Java. It aims to be a good  \nstarting place for future plug-in projects.\n\n-----------------------------------\n\nI am very interested in community feedback regarding the API and  \nDeducer in general. If you have a suggestion or question please feel  \nfree to join the discussion group at http://groups.google.com/group/ \ndeducer\n\nAll the best,\nIan Fellows",
+      "body_snippet": "I would like to announce the release of Deducer 0.2-3 and the new  \npackage DeducerPlugInExample.\n\n-----------------------------------\n\nDeducer is designed to be a free easy to use alternative to  \npr",
+      "thread_id": "thread-9aeceed1326d",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-05e3bfcc31c0",
+      "message_id": "<4949c7e61003160345q19bc9ec7y732200fa09dac208@mail.gmail.com>",
+      "from_name": "Rune Haubo",
+      "from_email_hash": "8d8d05953756264e1e826ac7fff4e10d00c41d492fe31f7a04b781c058d9aad0",
+      "date": "2010-03-16T11:45:14+01:00",
+      "subject": "[R-pkgs] New package: ordinal",
+      "subject_clean": "New package: ordinal",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce the new R-package ?ordinal? that implements\ncumulative link (mixed) models for ordinal (ordered categorical) data\n(http://www.cran.r-project.org/package=ordinal/).\n\nThe main features are:\n-\tscale (multiplicative) as well as location (additive) effects\n-\tnominal effects for a subset of the predictors (denoted partial\nproportional odds when the link is the logistic)\n-\tstructured thresholds, e.g. assuming symmetry or equidistant thresholds\n-\trandom effects via the Laplace approximation and adaptive\nGauss-Hermite quadrature in the location-part of the model.\n-\ta range of standard link functions\n-\tflexible link functions where an extra link function-parameter\nbridges the log-log, probit and c-loglog links (log-gamma), and\ncloglog and logistic links (Aranda-Ordaz)\n-\ta suite of optimizers including an efficient Newton scheme.\n-\tworks for binomial observations (a special case of ordinal data).\n-\ta suite of methods including anova, addterm, dropterm, profile,\nconfint, plot.profile, predict, in addition to the standard print and\nsummary methods.\n-\tan important special case is the proportional odds model (with\nrandom effects).\n-\ta range of examples illustrates how to use the functions.\n\nFuture additions will include:\n-\tmore general random effect structures: multiple (crossed and nested)\nand vector-valued random effects.\n-\tprofile methods for variance parameters in mixed effect models.\n-\thelpful package vignettes.\n-\timplementation of core functions in C.\n\nComments, critique, suggestions, wishes and contributions are always\nhighly appreciated.\n\nKind regards\nRune\n\n-- \nRune Haubo Bojesen Christensen\n\nPhD student, M.Sc. Eng.\nPhone: (+45) 45 25 33 63\nMail: rhbc at imm.dtu.dk\n\nDTU Informatics, Section for Statistics\nTechnical University of Denmark, Build. 305, Room 122,\nDK-2800 Kgs. Lyngby, Denmark",
+      "body_snippet": "This is to announce the new R-package ?ordinal? that implements\ncumulative link (mixed) models for ordinal (ordered categorical) data\n(http://www.cran.r-project.org/package=ordinal/).\n\nThe main featur",
+      "thread_id": "thread-05e3bfcc31c0",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-6c5ef541572a",
+      "message_id": "<51DB78F6E5F0E84DB1F28E85AC471F3F171A728868@OB1NWS302.financial.com>",
+      "from_name": "Stefan Wilhelm",
+      "from_email_hash": "40112b2a5e2accb6bdd7cb6e0b2d279d39f7e6adc34a18fc83bbe16e96c1c7d3",
+      "date": "2010-03-16T15:12:02+01:00",
+      "subject": "[R-pkgs] tmvtnorm: version 1.0-2",
+      "subject_clean": "tmvtnorm: version 1.0-2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100316/5eda189e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100316/5eda189e/attachment.pl>",
+      "thread_id": "thread-6c5ef541572a",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-d10dfd7fe40c",
+      "message_id": "<103B1DA6-2962-4BA2-87BC-917E4EB48808@bristol.ac.uk>",
+      "from_name": "Guy Nason",
+      "from_email_hash": "fb88672880fb67b8599f8c2a3fde501f83a0caa19dec3b0ab2a71a6fa9531ec6",
+      "date": "2010-03-17T14:29:00Z",
+      "subject": "[R-pkgs] wavethresh",
+      "subject_clean": "wavethresh",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nA new version of wavethresh has just been submitted to CRAN.\n\nThis is version 4.5\n\nAll best wishes,\nGuy Nason",
+      "body_snippet": "Dear all,\n\nA new version of wavethresh has just been submitted to CRAN.\n\nThis is version 4.5\n\nAll best wishes,\nGuy Nason",
+      "thread_id": "thread-d10dfd7fe40c",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-086091020f0e",
+      "message_id": "<84A68B94-206F-4975-926F-678E90F111A4@bristol.ac.uk>",
+      "from_name": "Guy Nason",
+      "from_email_hash": "2acf181e67aa6fad40648582ac29584bb3a744d3e1372930f79e85541da3efd8",
+      "date": "2010-03-17T14:31:45Z",
+      "subject": "[R-pkgs] haarfisz",
+      "subject_clean": "haarfisz",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe package haarfisz, for computing Haar-Fisz variance stabilization transforms for Poisson-like data has just been submitted to CRAN.\n\nThis was previously bundled with wavethresh, but has now been unbundled.\n\nBest wishes,\nGuy Nason",
+      "body_snippet": "Dear all,\n\nThe package haarfisz, for computing Haar-Fisz variance stabilization transforms for Poisson-like data has just been submitted to CRAN.\n\nThis was previously bundled with wavethresh, but has ",
+      "thread_id": "thread-086091020f0e",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-e8a3fa488862",
+      "message_id": "<FFB5F3FA-2DBE-4CF5-A60C-79D68C4D82EF@bristol.ac.uk>",
+      "from_name": "Guy Nason",
+      "from_email_hash": "2acf181e67aa6fad40648582ac29584bb3a744d3e1372930f79e85541da3efd8",
+      "date": "2010-03-17T14:32:33Z",
+      "subject": "[R-pkgs] waveband",
+      "subject_clean": "waveband",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9422abb5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9422abb5/attachment.pl>",
+      "thread_id": "thread-e8a3fa488862",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-ca8d83bdfd91",
+      "message_id": "<5B8606F9-E973-422B-AE7F-0D81CBAD028D@bristol.ac.uk>",
+      "from_name": "Guy Nason",
+      "from_email_hash": "2acf181e67aa6fad40648582ac29584bb3a744d3e1372930f79e85541da3efd8",
+      "date": "2010-03-17T14:33:04Z",
+      "subject": "[R-pkgs] cthresh",
+      "subject_clean": "cthresh",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9cf9bfba/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9cf9bfba/attachment.pl>",
+      "thread_id": "thread-ca8d83bdfd91",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-dfbe3e8abdee",
+      "message_id": "<1A0D7197-DFF7-4765-AE26-89AF66542457@bristol.ac.uk>",
+      "from_name": "Guy Nason",
+      "from_email_hash": "2acf181e67aa6fad40648582ac29584bb3a744d3e1372930f79e85541da3efd8",
+      "date": "2010-03-17T14:34:59Z",
+      "subject": "[R-pkgs] NORMT3",
+      "subject_clean": "NORMT3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/2f0280c0/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/2f0280c0/attachment.pl>",
+      "thread_id": "thread-dfbe3e8abdee",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-331bd1ead323",
+      "message_id": "<38c08c271003171047u5fe7cd3amd570f94636191574@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2010-03-17T13:47:02-04:00",
+      "subject": "[R-pkgs] spikeslab 1.0.0 now available on CRAN",
+      "subject_clean": "spikeslab 1.0.0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Please find release 1.0.0 of the new CRAN package \"spikeslab\" now\navailable for download.  Thank you.\n\n---------------------------------------------------------------------------------\n\nRELEASE 1.0.0 is the first and initial release of this package.\n\nFits a rescaled spike and slab model using a continuous bimodal\nprior. Can be used for prediction and variable selection in low and\nhigh-dimensional linear regression models.\n\nKey features include:\n\no Option for ultra-fast handling of high-dimensional data.\n\no Variable selection using the generalized elastic net (gnet).\n\no Grouping of variables with unique regularization (no limit on the number).\n\no Predict wrapper for predicting on test data.\n\no Sparse PC approach for multiclass analysis of gene expression data.\n\no Depends on the randomForest and lars R-packages.\n\n\n---------------------------------------------------------------------------------\n\nkogalurshear at gmail.com\n\nUdaya B. Kogalur, Ph.D.\nAdjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation\nPresident, Kogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Please find release 1.0.0 of the new CRAN package \"spikeslab\" now\navailable for download.  Thank you.\n\n---------------------------------------------------------------------------------\n\nRELEASE 1.0.0 ",
+      "thread_id": "thread-331bd1ead323",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-8f846fb5ef24",
+      "message_id": "<4BA1DDC3.4090202@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2010-03-18T09:01:07+01:00",
+      "subject": "[R-pkgs] package JM -- version 0.6-0",
+      "subject_clean": "package JM -- version 0.6-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data using shared parameter models. These models are \napplicable in mainly two settings. First, when focus is in the \ntime-to-event outcome and we wish to account for the effect of a \ntime-dependent covariate measured with error. Second, when focus is in \nthe longitudinal outcome and we wish to correct for nonrandom dropout.\n\nNew features include:\n\n* function survfitJM() has been added that calculates predictions of \nsubject-specific survival probabilities given a history of longitudinal \nresponses.\n\n   * function dynC() has been added that calculates a dynamic \nconcordance index for joint models. The function also returns \ntime-dependent areas under the ROC curve.\n\n   * method = \"ch-GH\" has been replaced by method = \"spline-PH-GH\" that \nfits a relative risk model with a B-spline-approximated baseline risk \nfunction. Similarly to method = \"ch-GH\", the plan is that the same \nrelative risk model with a B-spline-approximated baseline risk will also \nreplace method = \"ch-Laplace\".\n\n   * method = \"spline-PH-GH\" allows for stratification, i.e., different \nspline coefficients are estimated for the different levels of a \nstratification factor. By default the knots positions are the same \nacross strata -- this can be changed by either directly specifying the \nknots or by setting the control argument 'equal.strata.knots' to FALSE.\n\n   * the new function wald.strata() can be used to test for equality of \nthe spline coefficients among strata.\n\n   * jointModel() has now the extra argument 'lag' that allows for \nlagged effects in the time-dependent covariate represented by the linear \nmixed model.\n\n   * method = \"ph-GH\" that fits a relative risk with an unspecified \nbaseline risk function has been renamed to method = \"Cox-PH-GH\".\n\n   * a bug was corrected in joint models with piecewise constant \nbaseline risk function. In particular, the 'xi' parameters were reported \nas double their actual value.\n\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data using shared parameter mode",
+      "thread_id": "thread-8f846fb5ef24",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-aa1892e79883",
+      "message_id": "<B633EF1D-C0D3-4D4C-A823-46ADB3C8FBF2@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2010-03-22T08:33:32-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 1.9.0",
+      "subject_clean": "WriteXLS - New Version 1.9.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The updated package has been submitted to CRAN and has begun to propagate to CRAN mirrors.\n\nPackage: WriteXLS\n\nVersion: 1.9.0\n\nDescription: Cross-platform perl based R function to create Excel (XLS) files from one or more data frames. Each data frame will be written to a separate named worksheet in the Excel spreadsheet. The worksheet name will be the name of the data frame it contains or can be specified by the user.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\nURL:\thttp://r-forge.r-project.org/projects/writexls/\n\n\nKey changes since version 1.8.1:\n\nNew arguments: \n\n1. 'AdjWidth' for approximate auto column width adjustments to the longest (widest) entry in each column. This is approximate because the built-in AutoFit functions are not accessible from Perl. The approximation used will typically result in a column width that is somewhat too wide rather than too narrow and is based upon using the default font of Arial 10. Default is FALSE.\n\n2. 'AutoFilter' for setting up autofiltering for each column. Default is FALSE.\n\n3. 'BoldHeaderRow' to add bold font to header row entries. Default is FALSE.\n\n4. 'FreezeRow' and 'FreezeCol' to set up frozen panes in each worksheet. Default values are 0 and 0, where there are no frozen panes created.\n\n\nThe above new options will apply to ALL worksheets created in the XLS file.\n\n\nPlease note that after researching the potential for being able to append new worksheets to an existing XLS file, this does not appear to be a robust option via Perl. The combination of the required Perl packages Spreadsheet::ParseExcel and Spreadsheet::WriteExcel does not support the preservation of many pre-existing worksheet objects as noted in:\n\nhttp://search.cpan.org/~jmcnamara/Spreadsheet-WriteExcel-2.37/lib/Spreadsheet/WriteExcel.pm#MODIFYING_AND_REWRITING_EXCEL_FILES\n\nThese include embedded graphics, cell formulae, macros, etc. which would be lost during the worksheet appending process. Via Perl, it appears that one cannot simply open an XLS file, add a new worksheet and then close the file. One has to open the existing file, read each existing worksheet, write the existing worksheets to a new file, append the new worksheets to the new file and then close both files. Thus, given this limitation using Perl and the potential for compromising the content of existing XLS files, there are no plans at present to add the ability to append new worksheets to an existing file to this package.\n\n\nThanks and regards,\n\nMarc Schwartz",
+      "body_snippet": "The updated package has been submitted to CRAN and has begun to propagate to CRAN mirrors.\n\nPackage: WriteXLS\n\nVersion: 1.9.0\n\nDescription: Cross-platform perl based R function to create Excel (XLS) f",
+      "thread_id": "thread-aa1892e79883",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-a28331fddf12",
+      "message_id": "<4BACE3F5.2040409@gmail.com>",
+      "from_name": "Tony Albano",
+      "from_email_hash": "d38249ef04e9f214448abc80819f7bf5316a7ee7dc46ac27ff488924e2b7cab7",
+      "date": "2010-03-26T11:42:29-05:00",
+      "subject": "[R-pkgs]  New package: equate",
+      "subject_clean": "New package: equate",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The 'equate' package, designed for statistical equating (non-IRT) of \ntest score distributions, is available on CRAN:\nhttp://cran.r-project.org/package=equate\n\nThe package was developed for both research and teaching purposes, and \nwill hopefully be useful for both. A vignette introduces the basic \nconcepts and terminology of traditional equating, and demonstrates the \nfunctionality of the package.\n\nMean, linear, equipercentile, and circle-arc equating are supported and \nspecific methods include Tucker, Levine observed score, Levine true \nscore, Braun/Holland, frequency estimation, and chained equating (linear \nand nonlinear). Univariate and bivariate presmoothing are also \nsupported, as is estimation of standard error via bootstrapping.\n\nAdditional info can be found at the rwiki:\nhttp://rwiki.sciviews.org/doku.php?id=packages:cran:equate\n\nSuggestions are much appreciated!\nThanks\nTony\n____________________________________________\nTony Albano       \n\nUniversity of Minnesota\n193 Education Sciences Building\n56 East River Road\nMinneapolis, MN 55455",
+      "body_snippet": "The 'equate' package, designed for statistical equating (non-IRT) of \ntest score distributions, is available on CRAN:\nhttp://cran.r-project.org/package=equate\n\nThe package was developed for both resea",
+      "thread_id": "thread-a28331fddf12",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-c36593c448b0",
+      "message_id": "<ee2a35a61003270233q2fb54a7dx3e0564e4560f19fd@mail.gmail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2010-03-27T10:33:24+01:00",
+      "subject": "[R-pkgs] micEcon split into micEconSNQP, micEconCES, and micEcon",
+      "subject_clean": "micEcon split into micEconSNQP, micEconCES, and micEcon",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "In December, the packages \"miscTools\" and \"micEconAids\" were separated\nfrom the \"micEcon\" package. Now, two further packages have been\nseparated from the micEcon package: \"micEconSNQP\" and \"micEconCES\".\n\nThe \"micEconSNQP\" package (version 0.6-2) provides tools for\nproduction analysis with the Symmetric Normalized Quadratic (SNQ)\nprofit function (also known as the \"Generalized McFadden\" profit\nfunction), e.g. snqProfitEst() for estimating the SNQ profit function,\nsnqProfitCalc() for calculating the endogenous variable of the SNQ\nprofit function, or snqProfitEla() for calculating price elasticities\nof the SNQ profit function.\n\nThe \"micEconCES\" package (version 0.6-6) provides tools for estimating\nthe Constant Elasticity of Scale (CES) function. Function cesEst() has\nbeen tremendously improved. It can estimate the CES function using\nmuch more estimation methods (optimizers) now, e.g. the\nLevenberg-Marquardt or the Differential Evolution algorithm.\nFurthermore a \"vignette\" (supplementary documentation) \"Estimating the\nCES Function in R: Package micEconCES\" (written by Geraldine\nHenningsen and Arne Henningsen) [1] has been added.\n\nThe \"micEcon\" package (version 0.6-2) includes the remaining parts of\nthe \"old\" micEcon package, e.g. for economic analysis with\nCobb-Douglas functions, translog functions, quadratic functions, or\nlinearly homogeneous non-parametric functions.\n\nAll these packages are available on CRAN [2,3,4] and R-Forge [5].\n\n[1] http://cran.r-project.org/web/packages/micEconCES/vignettes/CES.pdf\n[2] http://cran.r-project.org/package=micEcon\n[3] http://cran.r-project.org/package=micEconSNQP\n[4] http://cran.r-project.org/package=micEconCES\n[5] http://r-forge.r-project.org/projects/micecon/\n\nFeedback is highly welcome!\n\n/Arne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "In December, the packages \"miscTools\" and \"micEconAids\" were separated\nfrom the \"micEcon\" package. Now, two further packages have been\nseparated from the micEcon package: \"micEconSNQP\" and \"micEconCES",
+      "thread_id": "thread-c36593c448b0",
+      "thread_depth": 0,
+      "month": "2010-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6c81b6b495e2",
+      "subject": "NEW: extracat - a package for the visualization of categorical data",
+      "message_count": 1,
+      "participants": [
+        "\"Alexander Pilhöfer\""
+      ],
+      "started": "2010-03-01T12:11:20+01:00",
+      "last_reply": "2010-03-01T12:11:20+01:00",
+      "root_message_id": "msg-6c81b6b495e2"
+    },
+    {
+      "id": "thread-8e830818ba88",
+      "subject": "RQDA 0.1-9 is on CRAN now",
+      "message_count": 1,
+      "participants": [
+        "Wincent"
+      ],
+      "started": "2010-03-01T12:24:31+08:00",
+      "last_reply": "2010-03-01T12:24:31+08:00",
+      "root_message_id": "msg-8e830818ba88"
+    },
+    {
+      "id": "thread-c662b308021d",
+      "subject": "Version 1.4.7 of package vars",
+      "message_count": 1,
+      "participants": [
+        "Matthieu Stigler"
+      ],
+      "started": "2010-03-02T09:45:56+01:00",
+      "last_reply": "2010-03-02T09:45:56+01:00",
+      "root_message_id": "msg-c662b308021d"
+    },
+    {
+      "id": "thread-0a28f8a07db7",
+      "subject": "KmL 1.1.1",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2010-03-04T08:10:10+01:00",
+      "last_reply": "2010-03-04T08:10:10+01:00",
+      "root_message_id": "msg-0a28f8a07db7"
+    },
+    {
+      "id": "thread-a6f16a3a9656",
+      "subject": "RSQLite 0.8-4 now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2010-03-10T09:43:41-08:00",
+      "last_reply": "2010-03-10T09:43:41-08:00",
+      "root_message_id": "msg-a6f16a3a9656"
+    },
+    {
+      "id": "thread-b39c15fdcefd",
+      "subject": "oro.dicom released (replaces DICOM)",
+      "message_count": 1,
+      "participants": [
+        "Brandon Whitcher"
+      ],
+      "started": "2010-03-12T12:01:08+00:00",
+      "last_reply": "2010-03-12T12:01:08+00:00",
+      "root_message_id": "msg-b39c15fdcefd"
+    },
+    {
+      "id": "thread-81c6aadfbdfa",
+      "subject": "oro.nifti released (new package)",
+      "message_count": 1,
+      "participants": [
+        "Brandon Whitcher"
+      ],
+      "started": "2010-03-12T12:12:26+00:00",
+      "last_reply": "2010-03-12T12:12:26+00:00",
+      "root_message_id": "msg-81c6aadfbdfa"
+    },
+    {
+      "id": "thread-247bc0bba1e3",
+      "subject": "ggplot2: version 0.8.7",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-03-12T18:42:15-06:00",
+      "last_reply": "2010-03-12T18:42:15-06:00",
+      "root_message_id": "msg-247bc0bba1e3"
+    },
+    {
+      "id": "thread-9aeceed1326d",
+      "subject": "Deducer 0.2-3 and DeducerPlugInExample released",
+      "message_count": 1,
+      "participants": [
+        "ian fellows"
+      ],
+      "started": "2010-03-14T23:55:20-07:00",
+      "last_reply": "2010-03-14T23:55:20-07:00",
+      "root_message_id": "msg-9aeceed1326d"
+    },
+    {
+      "id": "thread-05e3bfcc31c0",
+      "subject": "New package: ordinal",
+      "message_count": 1,
+      "participants": [
+        "Rune Haubo"
+      ],
+      "started": "2010-03-16T11:45:14+01:00",
+      "last_reply": "2010-03-16T11:45:14+01:00",
+      "root_message_id": "msg-05e3bfcc31c0"
+    },
+    {
+      "id": "thread-6c5ef541572a",
+      "subject": "tmvtnorm: version 1.0-2",
+      "message_count": 1,
+      "participants": [
+        "Stefan Wilhelm"
+      ],
+      "started": "2010-03-16T15:12:02+01:00",
+      "last_reply": "2010-03-16T15:12:02+01:00",
+      "root_message_id": "msg-6c5ef541572a"
+    },
+    {
+      "id": "thread-331bd1ead323",
+      "subject": "spikeslab 1.0.0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2010-03-17T13:47:02-04:00",
+      "last_reply": "2010-03-17T13:47:02-04:00",
+      "root_message_id": "msg-331bd1ead323"
+    },
+    {
+      "id": "thread-d10dfd7fe40c",
+      "subject": "wavethresh",
+      "message_count": 1,
+      "participants": [
+        "Guy Nason"
+      ],
+      "started": "2010-03-17T14:29:00+00:00",
+      "last_reply": "2010-03-17T14:29:00+00:00",
+      "root_message_id": "msg-d10dfd7fe40c"
+    },
+    {
+      "id": "thread-086091020f0e",
+      "subject": "haarfisz",
+      "message_count": 1,
+      "participants": [
+        "Guy Nason"
+      ],
+      "started": "2010-03-17T14:31:45+00:00",
+      "last_reply": "2010-03-17T14:31:45+00:00",
+      "root_message_id": "msg-086091020f0e"
+    },
+    {
+      "id": "thread-e8a3fa488862",
+      "subject": "waveband",
+      "message_count": 1,
+      "participants": [
+        "Guy Nason"
+      ],
+      "started": "2010-03-17T14:32:33+00:00",
+      "last_reply": "2010-03-17T14:32:33+00:00",
+      "root_message_id": "msg-e8a3fa488862"
+    },
+    {
+      "id": "thread-ca8d83bdfd91",
+      "subject": "cthresh",
+      "message_count": 1,
+      "participants": [
+        "Guy Nason"
+      ],
+      "started": "2010-03-17T14:33:04+00:00",
+      "last_reply": "2010-03-17T14:33:04+00:00",
+      "root_message_id": "msg-ca8d83bdfd91"
+    },
+    {
+      "id": "thread-dfbe3e8abdee",
+      "subject": "NORMT3",
+      "message_count": 1,
+      "participants": [
+        "Guy Nason"
+      ],
+      "started": "2010-03-17T14:34:59+00:00",
+      "last_reply": "2010-03-17T14:34:59+00:00",
+      "root_message_id": "msg-dfbe3e8abdee"
+    },
+    {
+      "id": "thread-8f846fb5ef24",
+      "subject": "package JM -- version 0.6-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2010-03-18T09:01:07+01:00",
+      "last_reply": "2010-03-18T09:01:07+01:00",
+      "root_message_id": "msg-8f846fb5ef24"
+    },
+    {
+      "id": "thread-aa1892e79883",
+      "subject": "WriteXLS - New Version 1.9.0",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2010-03-22T08:33:32-05:00",
+      "last_reply": "2010-03-22T08:33:32-05:00",
+      "root_message_id": "msg-aa1892e79883"
+    },
+    {
+      "id": "thread-a28331fddf12",
+      "subject": "New package: equate",
+      "message_count": 1,
+      "participants": [
+        "Tony Albano"
+      ],
+      "started": "2010-03-26T11:42:29-05:00",
+      "last_reply": "2010-03-26T11:42:29-05:00",
+      "root_message_id": "msg-a28331fddf12"
+    },
+    {
+      "id": "thread-c36593c448b0",
+      "subject": "micEcon split into micEconSNQP, micEconCES, and micEcon",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2010-03-27T10:33:24+01:00",
+      "last_reply": "2010-03-27T10:33:24+01:00",
+      "root_message_id": "msg-c36593c448b0"
+    }
+  ]
+}

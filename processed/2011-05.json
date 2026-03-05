@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-05",
+  "messages": [
+    {
+      "id": "msg-b8eb36847073",
+      "message_id": "<4DCA81B7020000B20007E5E4@smtp-a.lshtm.ac.uk>",
+      "from_name": "Antonio.Gasparrini at lshtm.ac.uk",
+      "from_email_hash": "4259481ab2ca70510d6c3e35bf36d9141101faff9d6a8035498e7ebe93597860",
+      "date": "2011-05-11T12:31:51+01:00",
+      "subject": "[R-pkgs] new package 'mvmeta' to perform multivariate meta-analysis",
+      "subject_clean": "new package 'mvmeta' to perform multivariate meta-analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am pleased to announce the release of a new package called  'mvmeta', now available on CRAN (version 0.2.0).\n \nThe package mvmeta provides some functions to perform fixed and random-effects multivariate meta-analysis and meta-regression. This modelling framework is exploited to pool multiple correlated outcomes across studies, and already applied in different fields: meta-analysis of randomized controlled trials reporting more than 1 outcome, multi-site observational studies estimating multi-parameterized associations, among others.\n \nThe package is fully documented through help pages. A package vignette will be hopefully added soon.\n \nI hope that this package will be useful to your work. \nAny kind of feedback (questions, suggestions, bug-reports, etc.) is appreciated.\n\nSincerely,\n\nAntonio Gasparrini\nLondon School of Hygiene & Tropical Medicine\nDepartment of Social and Environmental Health Research\n15-17 Tavistock Place, London WC1H 9SH, UK\nOffice: 0044 (0)20 79272406\nMobile: 0044 (0)79 64925523\nSkype contact: a.gasparrini\nhttp://www.lshtm.ac.uk/people/gasparrini.antonio",
+      "body_snippet": "Dear R Community,\n\nI am pleased to announce the release of a new package called  'mvmeta', now available on CRAN (version 0.2.0).\n \nThe package mvmeta provides some functions to perform fixed and rand",
+      "thread_id": "thread-b8eb36847073",
+      "thread_depth": 0,
+      "month": "2011-05"
+    },
+    {
+      "id": "msg-8dbad58725b1",
+      "message_id": "<4DD14B71.1050504@istat.it>",
+      "from_name": "Giulio Barcaroli",
+      "from_email_hash": "0d5e3f8524abaed8db6a811c7773421e2c5e1220b6f9c1ca7bb7b4144a6b0f44",
+      "date": "2011-05-16T18:06:09+02:00",
+      "subject": "[R-pkgs] new package SamplingStrata",
+      "subject_clean": "new package SamplingStrata",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to announce that on the CRAN is now available a new package (SamplingStrata version 0.9) for the optimal stratification of sampling frames.\n\nThis package offers an approach for the determination of the best stratification of a sampling frame, the one that ensures the minimum sample size under the condition to satisfy precision constraints in a multivariate and multidomain case. This approach is based on the use of the genetic algorithm: each solution (i.e. a particular partition in strata of the sampling frame) is considered as an individual in a population to be evolved; the fitness of all individuals is evaluated by calculating (using the Bethel-Chromy algorithm) the sampling size satisfying accuracy constraints on the target estimates.\n\nThe package covers all the phases, from the optimisation of the sampling frame, up to the design of the stratified sample, ending with the selection of the units.\n\nIn the tar.gz (directory: \\inst\\doc) it is possible to find a vignette ('SamplingStrataVignette.pdf') showing a complete application, from the optimisation of the sampling frame to the selection of the required sample.\n\nI would appreciate any feedback\n\nSincerely,\n\nGiulio Barcaroli\n\n-- \nGiulio Barcaroli\nMethods, Tools and Methodological Support\nItalian National Institute of Statistics\nbarcarol at istat.it",
+      "body_snippet": "Dear R users,\n\nI would like to announce that on the CRAN is now available a new package (SamplingStrata version 0.9) for the optimal stratification of sampling frames.\n\nThis package offers an approach",
+      "thread_id": "thread-8dbad58725b1",
+      "thread_depth": 0,
+      "month": "2011-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b8eb36847073",
+      "subject": "new package 'mvmeta' to perform multivariate meta-analysis",
+      "message_count": 1,
+      "participants": [
+        "Antonio.Gasparrini at lshtm.ac.uk"
+      ],
+      "started": "2011-05-11T12:31:51+01:00",
+      "last_reply": "2011-05-11T12:31:51+01:00",
+      "root_message_id": "msg-b8eb36847073"
+    },
+    {
+      "id": "thread-8dbad58725b1",
+      "subject": "new package SamplingStrata",
+      "message_count": 1,
+      "participants": [
+        "Giulio Barcaroli"
+      ],
+      "started": "2011-05-16T18:06:09+02:00",
+      "last_reply": "2011-05-16T18:06:09+02:00",
+      "root_message_id": "msg-8dbad58725b1"
+    }
+  ]
+}

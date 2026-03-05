@@ -1,0 +1,765 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2008-01",
+  "messages": [
+    {
+      "id": "msg-34c0abbfdfd8",
+      "message_id": "<200801081433.13738.izmirlian@nih.gov>",
+      "from_name": "Grant Izmirlian",
+      "from_email_hash": "3890da4d7af1f4e7953de38f023e85674350aa5d8e5d1e3398a05cbae0b2c1c7",
+      "date": "2008-01-08T14:33:13-05:00",
+      "subject": "[R-pkgs] PwrGSD",
+      "subject_clean": "PwrGSD",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello List:\n\nPlease find uploaded to CRAN a new package, PwrGSD\n\nThe package is intended for the design and analysis of group sequential trials\nThere are two main functions, \n(1) GrpSeqBnds: computes group sequential stopping boundaries for interim\n      analysis of a sequential trial based upon a normally distributed test \n      statistic. This can be done via the Lan-Demets procedure with \n      Obrien-Fleming, Pocock or Wang-Tsiatis spending. This can also be\n      done via boundaries created to correspond with the stochastic \n      curtailment procedure.  \n\n(2) PwrGSD (same as the package name) which computes operating \n      characteristics such as power, expected duration, weighted avergage \n      relative risks at the boundaries among other things, that correspond to \n      a user supplied hypothetical two arm trial under a user supplied choice\n      of monitoring scheme and choice of test statistic within the weighted \n      log-rank class of test statistics. Computations are done either via \n      aysmptotic methods or via simulation.  Note:  another feature is the \n      flexible provision for time dependent non-compliance.  \n\n      The function has a nice calling interface based upon the specification\n      of boundary methods via functional forms.  There are alot of nice\n      summarization methods which allow the user to explore the space of\n      hypothetical trial scenarios and boundary construction methods, such as \n      a compound object class for linking individuals calls to PwrGSD to \n      components of a list that are linked to an indexing dataframe for \n      reference purpose.\n\n      I appologize for a lengthy note, but attach a quite informative example \n      below.  \n\n      Best Regards,\n\n      Grant Izmirlian\n      Mathematical Statistician\n      Division of Cancer Prevention\n      US National Cancer Institute\n      1-(301)496-7519\n      izmirlig at mail.nih.gov\n     ????? ?????????\n---------------------------------------------------------------------------------\n       tlook <- c(7.14, 8.14, 9.14, 10.14, 10.64, 11.15, 12.14, 13.14,\n                      14.14, 15.14, 16.14, 17.14, 18.14, 19.14, 20.14)\n       t0 <- 0:19      \n       h0 <- c(rep(3.73e-04, 2), rep(7.45e-04, 3), rep(1.49e-03, 15))\n       rhaz <-c(1, 0.9125, 0.8688, 0.7814, 0.6941, 0.6943, 0.6072, 0.5202,  \n                      0.4332, 0.652, 0.6524, 0.6527, 0.653, 0.6534, 0.6537, \n                      0.6541, 0.6544, 0.6547, 0.6551, 0.6554)\n\thc <- c(rep(1.05e-02, 2), rep(2.09e-02, 3), rep(4.19e-02, 15))\n        hd1B <- c(0.1109, 0.1381, 0.1485, 0.1637, 0.2446, 0.2497, 0)\n\n\n      test.example <- PwrGSD(\n         EfficacyBoundary=LanDemets(alpha=0.05, spending= ObrienFleming),\n         FutilityBoundary=LanDemets(alpha=0.1,spending=ObrienFleming),\n         RR.Futility = 0.82, sided=\"<\",method=\"A\",accru =7.73, accrat=9818.65,\n         tlook =tlook, tcut0 =t0, h0=h0, tcut1=t0, rhaz=rhaz, \n         tcutc0=t0, hc0=hc, tcutc1=t0, hc1=hc, \n         tcutd0B =c(0, 13), hd0B =c(0.04777, 0),\n         tcutd1B =0:6, hd1B =hd1B,\n         noncompliance =crossover, gradual =TRUE,\n         WtFun =c(\"FH\", \"SFH\", \"Ramp\"),\n         ppar =c(0, 1, 0, 1, 10, 10))\n\n     ## we will construct a variety of alternate hypotheses relative to the\n     ## base case specified above\n\n       max.effect <- 0.80 + 0.05*(0:8)\n       n.me <- length(max.effect)\n\n     ## we will also vary extent of censoring relative to the base case\n     ## specified above\n\n       cens.amt <- 0.75 + 0.25*(0:2)\n       n.ca <- length(cens.amt)\n\n     ## we may also wish to compare the Lan-Demets/O'Brien-Fleming efficacy\n     ## boundary with a Pocock efficacy boundary\n\n       Eff.bound.choice <- 1:2\n       ebc.nms <- c(\"LanDemets(alpha=0.05, spending=ObrienFleming)\",\n                    \"SC(alpha=0.05, crit=0.90)\")\n       n.ec <- length(Eff.bound.choice)\n\n     ## The following line creates the indexing dataframe, `descr', with one\n     ## line for each possible combination of the selection variables we've\n     ## created.\n\n       descr <- \n          as.data.frame(\n             cbind(Eff.bound.choice=rep(Eff.bound.choice, each=n.ca*n.me),\n                      cens.amt=rep(rep(cens.amt, each=n.me), n.ec),\n                      max.effect=rep(max.effect, n.ec*n.ca)))\n\n       descr$Eff.bound.choice <- ebc.nms[descr$Eff.bound.choice]\n\n     ## Now descr contains one row for each combination of the levels of\n     ## the user defined selection variables, `Eff.bound.choice',\n     ## `max.effect' and `cens.amt'. Keep in mind that the names and number\n     ## of these variables is arbitrary. Next we create a skeleton\n     ## `cpd.PwrGSD' object with a call to the function `cpd.PwrGSD' with\n     ## argument `descr'\n\n       test.example.set <- cpd.PwrGSD(descr)\n\n     ## Now, the newly created object, of class `cpd.PwrGSD', contains\n     ## an element `descr', a component `date', the date created\n     ## and a component `Elements', an empty list of length equal\n     ## to the number of rows in `descr'.  Next we do the computation in\n     ## a loop over the rows of `descr'.\n\n       n.descr <- nrow(descr)\n       for(k in 1:n.descr){\n\n         ## First, we copy the original call to the current call,\n         ## `Elements[[k]]$call'\n\n         test.example.set$Elements[[k]]$call <- test.example$call\n\n         ## Use the efficacy boundary choice in the kth row of `descr'\n         ## to set the efficacy boundary choice in the current call\n\n         test.example.set$Elements[[k]]$call$EfficacyBoundary <-\n         parse(text=as.character(descr[k,\"Eff.bound.choice\"]))[[1]]\n\n         ## Derive the `rhaz' defined by the selection variable \"max.effect\"\n         ## in the kth row of `descr' and use this to set the `rhaz'\n         ## components of the current call\n\n         test.example.set$Elements[[k]]$call$rhaz <-\n                                 exp(descr[k,\"max.effect\"] * log(rhaz))\n\n         ## Derive the censoring components from the selection variable\n         ## \"cens.amt\" in the kth row of `descr' and place that result\n         ## into the current call\n\n         test.example.set$Elements[[k]]$call$hc0 <-\n         test.example.set$Elements[[k]]$call$hc1 <-\n                                    exp(descr[k, \"cens.amt\"] * log(hc))\n\n         ## Now the current call corresponds exactly to the selection\n         ## variable values in row `k' of `descr'. The computation is\n         ## done by calling `update'\n\n         test.example.set$Elements[[k]] <-\n                               update(test.example.set$Elements[[k]])\n         cat(k/n.descr, \"\\r\")\n       }\n\n\n       ## We can plot the results -- see the help under `plot.cpd.PwrGSD'\n\n       plot(test.example.set, formula = ~ max.effect | stat * cens.amt,\n            subset=(substring(Eff.bound.choice, 1,9)==\"LanDemets\"))\n\n       plot(test.example.set, formula = ~ max.effect | stat * cens.amt,\n            subset=(substring(Eff.bound.choice, 1,2)==\"SC\"))\n\n       ## Notice the appearance of the selection variable `stat' which was\n       ## not defined in the dataset `descr'.",
+      "body_snippet": "Hello List:\n\nPlease find uploaded to CRAN a new package, PwrGSD\n\nThe package is intended for the design and analysis of group sequential trials\nThere are two main functions, \n(1) GrpSeqBnds: computes ",
+      "thread_id": "thread-34c0abbfdfd8",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-34c0abbfdfd8",
+      "message_id": "<200801081433.13738.izmirlian@nih.gov>",
+      "from_name": "Grant Izmirlian",
+      "from_email_hash": "3890da4d7af1f4e7953de38f023e85674350aa5d8e5d1e3398a05cbae0b2c1c7",
+      "date": "2008-01-08T14:33:13-05:00",
+      "subject": "[R-pkgs] PwrGSD",
+      "subject_clean": "PwrGSD",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello List:\n\nPlease find uploaded to CRAN a new package, PwrGSD\n\nThe package is intended for the design and analysis of group sequential trials\nThere are two main functions, \n(1) GrpSeqBnds: computes group sequential stopping boundaries for interim\n      analysis of a sequential trial based upon a normally distributed test \n      statistic. This can be done via the Lan-Demets procedure with \n      Obrien-Fleming, Pocock or Wang-Tsiatis spending. This can also be\n      done via boundaries created to correspond with the stochastic \n      curtailment procedure.  \n\n(2) PwrGSD (same as the package name) which computes operating \n      characteristics such as power, expected duration, weighted avergage \n      relative risks at the boundaries among other things, that correspond to \n      a user supplied hypothetical two arm trial under a user supplied choice\n      of monitoring scheme and choice of test statistic within the weighted \n      log-rank class of test statistics. Computations are done either via \n      aysmptotic methods or via simulation.  Note:  another feature is the \n      flexible provision for time dependent non-compliance.  \n\n      The function has a nice calling interface based upon the specification\n      of boundary methods via functional forms.  There are alot of nice\n      summarization methods which allow the user to explore the space of\n      hypothetical trial scenarios and boundary construction methods, such as \n      a compound object class for linking individuals calls to PwrGSD to \n      components of a list that are linked to an indexing dataframe for \n      reference purpose.\n\n      I appologize for a lengthy note, but attach a quite informative example \n      below.  \n\n      Best Regards,\n\n      Grant Izmirlian\n      Mathematical Statistician\n      Division of Cancer Prevention\n      US National Cancer Institute\n      1-(301)496-7519\n      izmirlig at mail.nih.gov\n     ????? ?????????\n---------------------------------------------------------------------------------\n       tlook <- c(7.14, 8.14, 9.14, 10.14, 10.64, 11.15, 12.14, 13.14,\n                      14.14, 15.14, 16.14, 17.14, 18.14, 19.14, 20.14)\n       t0 <- 0:19      \n       h0 <- c(rep(3.73e-04, 2), rep(7.45e-04, 3), rep(1.49e-03, 15))\n       rhaz <-c(1, 0.9125, 0.8688, 0.7814, 0.6941, 0.6943, 0.6072, 0.5202,  \n                      0.4332, 0.652, 0.6524, 0.6527, 0.653, 0.6534, 0.6537, \n                      0.6541, 0.6544, 0.6547, 0.6551, 0.6554)\n\thc <- c(rep(1.05e-02, 2), rep(2.09e-02, 3), rep(4.19e-02, 15))\n        hd1B <- c(0.1109, 0.1381, 0.1485, 0.1637, 0.2446, 0.2497, 0)\n\n\n      test.example <- PwrGSD(\n         EfficacyBoundary=LanDemets(alpha=0.05, spending= ObrienFleming),\n         FutilityBoundary=LanDemets(alpha=0.1,spending=ObrienFleming),\n         RR.Futility = 0.82, sided=\"<\",method=\"A\",accru =7.73, accrat=9818.65,\n         tlook =tlook, tcut0 =t0, h0=h0, tcut1=t0, rhaz=rhaz, \n         tcutc0=t0, hc0=hc, tcutc1=t0, hc1=hc, \n         tcutd0B =c(0, 13), hd0B =c(0.04777, 0),\n         tcutd1B =0:6, hd1B =hd1B,\n         noncompliance =crossover, gradual =TRUE,\n         WtFun =c(\"FH\", \"SFH\", \"Ramp\"),\n         ppar =c(0, 1, 0, 1, 10, 10))\n\n     ## we will construct a variety of alternate hypotheses relative to the\n     ## base case specified above\n\n       max.effect <- 0.80 + 0.05*(0:8)\n       n.me <- length(max.effect)\n\n     ## we will also vary extent of censoring relative to the base case\n     ## specified above\n\n       cens.amt <- 0.75 + 0.25*(0:2)\n       n.ca <- length(cens.amt)\n\n     ## we may also wish to compare the Lan-Demets/O'Brien-Fleming efficacy\n     ## boundary with a Pocock efficacy boundary\n\n       Eff.bound.choice <- 1:2\n       ebc.nms <- c(\"LanDemets(alpha=0.05, spending=ObrienFleming)\",\n                    \"SC(alpha=0.05, crit=0.90)\")\n       n.ec <- length(Eff.bound.choice)\n\n     ## The following line creates the indexing dataframe, `descr', with one\n     ## line for each possible combination of the selection variables we've\n     ## created.\n\n       descr <- \n          as.data.frame(\n             cbind(Eff.bound.choice=rep(Eff.bound.choice, each=n.ca*n.me),\n                      cens.amt=rep(rep(cens.amt, each=n.me), n.ec),\n                      max.effect=rep(max.effect, n.ec*n.ca)))\n\n       descr$Eff.bound.choice <- ebc.nms[descr$Eff.bound.choice]\n\n     ## Now descr contains one row for each combination of the levels of\n     ## the user defined selection variables, `Eff.bound.choice',\n     ## `max.effect' and `cens.amt'. Keep in mind that the names and number\n     ## of these variables is arbitrary. Next we create a skeleton\n     ## `cpd.PwrGSD' object with a call to the function `cpd.PwrGSD' with\n     ## argument `descr'\n\n       test.example.set <- cpd.PwrGSD(descr)\n\n     ## Now, the newly created object, of class `cpd.PwrGSD', contains\n     ## an element `descr', a component `date', the date created\n     ## and a component `Elements', an empty list of length equal\n     ## to the number of rows in `descr'.  Next we do the computation in\n     ## a loop over the rows of `descr'.\n\n       n.descr <- nrow(descr)\n       for(k in 1:n.descr){\n\n         ## First, we copy the original call to the current call,\n         ## `Elements[[k]]$call'\n\n         test.example.set$Elements[[k]]$call <- test.example$call\n\n         ## Use the efficacy boundary choice in the kth row of `descr'\n         ## to set the efficacy boundary choice in the current call\n\n         test.example.set$Elements[[k]]$call$EfficacyBoundary <-\n         parse(text=as.character(descr[k,\"Eff.bound.choice\"]))[[1]]\n\n         ## Derive the `rhaz' defined by the selection variable \"max.effect\"\n         ## in the kth row of `descr' and use this to set the `rhaz'\n         ## components of the current call\n\n         test.example.set$Elements[[k]]$call$rhaz <-\n                                 exp(descr[k,\"max.effect\"] * log(rhaz))\n\n         ## Derive the censoring components from the selection variable\n         ## \"cens.amt\" in the kth row of `descr' and place that result\n         ## into the current call\n\n         test.example.set$Elements[[k]]$call$hc0 <-\n         test.example.set$Elements[[k]]$call$hc1 <-\n                                    exp(descr[k, \"cens.amt\"] * log(hc))\n\n         ## Now the current call corresponds exactly to the selection\n         ## variable values in row `k' of `descr'. The computation is\n         ## done by calling `update'\n\n         test.example.set$Elements[[k]] <-\n                               update(test.example.set$Elements[[k]])\n         cat(k/n.descr, \"\\r\")\n       }\n\n\n       ## We can plot the results -- see the help under `plot.cpd.PwrGSD'\n\n       plot(test.example.set, formula = ~ max.effect | stat * cens.amt,\n            subset=(substring(Eff.bound.choice, 1,9)==\"LanDemets\"))\n\n       plot(test.example.set, formula = ~ max.effect | stat * cens.amt,\n            subset=(substring(Eff.bound.choice, 1,2)==\"SC\"))\n\n       ## Notice the appearance of the selection variable `stat' which was\n       ## not defined in the dataset `descr'.",
+      "body_snippet": "Hello List:\n\nPlease find uploaded to CRAN a new package, PwrGSD\n\nThe package is intended for the design and analysis of group sequential trials\nThere are two main functions, \n(1) GrpSeqBnds: computes ",
+      "thread_id": "thread-34c0abbfdfd8",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-252a0c389613",
+      "message_id": "<a695148b0801100440o4b4d8166y8c5a0fb03fa52587@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2008-01-10T07:40:46-05:00",
+      "subject": "[R-pkgs] prob package: elementary probability on finite sample spaces",
+      "subject_clean": "prob package: elementary probability on finite sample spaces",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it with\n\ninstall.packages(\"prob\", repos = \"http://r-forge.r-project.org\")\n\nThe prob package gives a framework for doing elementary probability on\nfinite sample spaces in R.  The primary notion of \"probability space\"\nhas been built around the data frame structure, both for simplicity\nand to maximize compatibility with the R Commander by John Fox.\n\nThe package addresses an ample proportion of material in a typical\nundergraduate course in elementary probability, or the probability\nmaterial in an introductory statistics course. For details, see\nvignette(\"prob\").\n\nSince the focus is on sample/probability spaces, the prob package\ncould be used as a precursor to the more sophisticated distrxxx-family\nof packages.\n\nTopics:\n\n* construction of sample spaces (in the sense of 'prob' ) of various\nkinds.  Some standard sample spaces are included (toss a coin, roll a\ndie, sample from an urn, draw cards, roulette, etc.)\n* counting and the Multiplication Principle,\n* subsets and events including methods for intersect, union, and\nsetdiff extending those in the base package,\n* the prob function for finding probability and conditional\nprobability of events,\n* simulation and relative frequencies,\n* random variables, marginal distributions,\n* extensions for more general sample spaces,\n* discrete multivariate distributions with finite support,\n* more...\n\nSome discussion and examples can be found at the R-Forge prob project web page:\n\nhttp://prob.r-forge.r-project.org/\n\nThere are many avenues for future development/improvement;  all\nsuggestions and comments are welcomed.  I would appreciate hearing\nabout your experiences with it in the classroom and elsewhere.\n\nThe audience for this package would include teachers and students of\nelementary probability, or simply anyone wanting to dabble with\nprobability on a finite sample space.\n\nRegards,\nJay\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssistant Professor / Statistics Coordinator\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it w",
+      "thread_id": "thread-252a0c389613",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-252a0c389613",
+      "message_id": "<a695148b0801100440o4b4d8166y8c5a0fb03fa52587@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2008-01-10T07:40:46-05:00",
+      "subject": "[R-pkgs] prob package: elementary probability on finite sample spaces",
+      "subject_clean": "prob package: elementary probability on finite sample spaces",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it with\n\ninstall.packages(\"prob\", repos = \"http://r-forge.r-project.org\")\n\nThe prob package gives a framework for doing elementary probability on\nfinite sample spaces in R.  The primary notion of \"probability space\"\nhas been built around the data frame structure, both for simplicity\nand to maximize compatibility with the R Commander by John Fox.\n\nThe package addresses an ample proportion of material in a typical\nundergraduate course in elementary probability, or the probability\nmaterial in an introductory statistics course. For details, see\nvignette(\"prob\").\n\nSince the focus is on sample/probability spaces, the prob package\ncould be used as a precursor to the more sophisticated distrxxx-family\nof packages.\n\nTopics:\n\n* construction of sample spaces (in the sense of 'prob' ) of various\nkinds.  Some standard sample spaces are included (toss a coin, roll a\ndie, sample from an urn, draw cards, roulette, etc.)\n* counting and the Multiplication Principle,\n* subsets and events including methods for intersect, union, and\nsetdiff extending those in the base package,\n* the prob function for finding probability and conditional\nprobability of events,\n* simulation and relative frequencies,\n* random variables, marginal distributions,\n* extensions for more general sample spaces,\n* discrete multivariate distributions with finite support,\n* more...\n\nSome discussion and examples can be found at the R-Forge prob project web page:\n\nhttp://prob.r-forge.r-project.org/\n\nThere are many avenues for future development/improvement;  all\nsuggestions and comments are welcomed.  I would appreciate hearing\nabout your experiences with it in the classroom and elsewhere.\n\nThe audience for this package would include teachers and students of\nelementary probability, or simply anyone wanting to dabble with\nprobability on a finite sample space.\n\nRegards,\nJay\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssistant Professor / Statistics Coordinator\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it w",
+      "thread_id": "thread-252a0c389613",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-fbbf01b9ed43",
+      "message_id": "<f8e6ff050801111416s4707ffeao92483948815e2fe3@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-01-11T16:16:36-06:00",
+      "subject": "[R-pkgs] New version of ggplot2: 0.5.7",
+      "subject_clean": "New version of ggplot2: 0.5.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nggplot 0.5.7\n----------------------------------------\n\nNew geoms, scales and aesthetics\n\n  * stat_step and geom_step to draw staircase plots (like plot(type=\"s\"))\n  * order aesthetic (currently only for lines/paths) allows you to\ncontrol the drawing order within a group\n  * scale_manual makes it easier to let ggplot uses the exact\ncolours/sizes/linetypes that you want\n  * scale_reverse allows you to reverse the scale of x and y axes\n  * scale_grey is a new black and white scale for categorical data\n(colour and fill)\n\n\nImproved options handling\n\n  * new function opts() to allow modification of plot options by addition\n  * update(p, theme_bw) and p + theme_bw now work\n\nThese changes mean that you can modify plot options in the same way\nthat you modify all other aspects of the plot, e.g.  qplot(mpg, wt,\ndata=mptcars) + opts(title = \"Fuel economy vs weight\")\n\nImproved documentation\n\n  * many tweaks to the online documentation, particular including the\nactual code you need to run for each object!\n  * every page now has a link to a form where you can submit feedback\non exactly you do or don't like about a page\n  * required aesthetics now listed in documentation\n  * geom_polygon now has a decent example\n  * numerous minor corrections suggested by J?rg Beyer\n  * separated plotting advice from details of plot construction (what\nvs how), thanks to Bert Gunter for this suggestion\n\n\nImproved map projections (with coord_map)\n\n  * coord_map defaults to orientation = c(90, 0, mean(range(y))) -\nthis ensures that multiple layers line up correctly, but means you\nwill have to specify the orientation yourself for many projections\n  * coord_map now respects limits set by scales\n  * removed useless ticks from coord_map\n\nIf you're using ggplot to draw maps and have thought of other features\nthat would make your life easier, please let me know.\n\n\nBug fixes\n\n  * adding data and aesthetics in separate steps should now work\n  * layers with set parameters will not use mapped aesthetics\n  * use LazyLoad: false instead of SaveData: true for better future\ncompatability\n\n  * coord_cartesian: fixed bug that prevented you from overriding the\ndefault axis expansion\n  * coord_equal: now scales correctly if ratio < 1\n  * geom_abline: fix bug where slope was ignored\n  * geom_jitter now works correctly with groups and categorical values\n(was actually a bug in how scale_discrete deals with continuous\nvalues)\n  * geom_path: automatically switch between polylineGrob and\nsegmentsGrob when drawing paths so that setting line type now works\nproperly\n  * geom_segment now uses both ends of segments to calculate axis limits\n  * plotmatrix: fix bug in scatterplot matrix where all scatterplots\nwere transposed!\n  * qplot: should now work better within functions\n  * quickplot added as an alias of qplot, to avoid confusion with qunif, etc\n  * scale_*: better error message if you add a scale without a\nmatching aesthetic mapping in the plot\n  * scale_identity no longer converts everything to character\n  * scale_identity: grob argument renamed to guide\n  * stat_*: made all statistics more robust to errors\n  * stat_quantile: fixed bug when only drawing a single quantile\n  * stat_smooth: returns silently if <2 non-missing data points\n\n\nMinor aesthetic improvements\n\n  * coord_polar now specifies aspect.ratio by default, and I've made a\nfew other tweaks to make polar coordinates plot look nicer\n  * geom_bar no longer draws gray borders by default, but instead uses\nthe same colour as fill (this eliminates a tiny gap between\nneighbouring bars)\n  * plotmatrix: tweaks to improve display of scatterplot matrix\n  * scale_brewer: added option to reverse palette\n  * scale_colour: colour and fill legends now look exactly the same\n(previously colour was missing a grey border)\n  * scale_discrete has slightly larger expansion (0.75 vs 0.5)\n  * stat_bar: only output bars with > 0 count\n\n\nSee CHANGELOG for changes in previous versions\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-fbbf01b9ed43",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-fbbf01b9ed43",
+      "message_id": "<f8e6ff050801111416s4707ffeao92483948815e2fe3@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-01-11T16:16:36-06:00",
+      "subject": "[R-pkgs] New version of ggplot2: 0.5.7",
+      "subject_clean": "New version of ggplot2: 0.5.7",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nggplot 0.5.7\n----------------------------------------\n\nNew geoms, scales and aesthetics\n\n  * stat_step and geom_step to draw staircase plots (like plot(type=\"s\"))\n  * order aesthetic (currently only for lines/paths) allows you to\ncontrol the drawing order within a group\n  * scale_manual makes it easier to let ggplot uses the exact\ncolours/sizes/linetypes that you want\n  * scale_reverse allows you to reverse the scale of x and y axes\n  * scale_grey is a new black and white scale for categorical data\n(colour and fill)\n\n\nImproved options handling\n\n  * new function opts() to allow modification of plot options by addition\n  * update(p, theme_bw) and p + theme_bw now work\n\nThese changes mean that you can modify plot options in the same way\nthat you modify all other aspects of the plot, e.g.  qplot(mpg, wt,\ndata=mptcars) + opts(title = \"Fuel economy vs weight\")\n\nImproved documentation\n\n  * many tweaks to the online documentation, particular including the\nactual code you need to run for each object!\n  * every page now has a link to a form where you can submit feedback\non exactly you do or don't like about a page\n  * required aesthetics now listed in documentation\n  * geom_polygon now has a decent example\n  * numerous minor corrections suggested by J?rg Beyer\n  * separated plotting advice from details of plot construction (what\nvs how), thanks to Bert Gunter for this suggestion\n\n\nImproved map projections (with coord_map)\n\n  * coord_map defaults to orientation = c(90, 0, mean(range(y))) -\nthis ensures that multiple layers line up correctly, but means you\nwill have to specify the orientation yourself for many projections\n  * coord_map now respects limits set by scales\n  * removed useless ticks from coord_map\n\nIf you're using ggplot to draw maps and have thought of other features\nthat would make your life easier, please let me know.\n\n\nBug fixes\n\n  * adding data and aesthetics in separate steps should now work\n  * layers with set parameters will not use mapped aesthetics\n  * use LazyLoad: false instead of SaveData: true for better future\ncompatability\n\n  * coord_cartesian: fixed bug that prevented you from overriding the\ndefault axis expansion\n  * coord_equal: now scales correctly if ratio < 1\n  * geom_abline: fix bug where slope was ignored\n  * geom_jitter now works correctly with groups and categorical values\n(was actually a bug in how scale_discrete deals with continuous\nvalues)\n  * geom_path: automatically switch between polylineGrob and\nsegmentsGrob when drawing paths so that setting line type now works\nproperly\n  * geom_segment now uses both ends of segments to calculate axis limits\n  * plotmatrix: fix bug in scatterplot matrix where all scatterplots\nwere transposed!\n  * qplot: should now work better within functions\n  * quickplot added as an alias of qplot, to avoid confusion with qunif, etc\n  * scale_*: better error message if you add a scale without a\nmatching aesthetic mapping in the plot\n  * scale_identity no longer converts everything to character\n  * scale_identity: grob argument renamed to guide\n  * stat_*: made all statistics more robust to errors\n  * stat_quantile: fixed bug when only drawing a single quantile\n  * stat_smooth: returns silently if <2 non-missing data points\n\n\nMinor aesthetic improvements\n\n  * coord_polar now specifies aspect.ratio by default, and I've made a\nfew other tweaks to make polar coordinates plot look nicer\n  * geom_bar no longer draws gray borders by default, but instead uses\nthe same colour as fill (this eliminates a tiny gap between\nneighbouring bars)\n  * plotmatrix: tweaks to improve display of scatterplot matrix\n  * scale_brewer: added option to reverse palette\n  * scale_colour: colour and fill legends now look exactly the same\n(previously colour was missing a grey border)\n  * scale_discrete has slightly larger expansion (0.75 vs 0.5)\n  * stat_bar: only output bars with > 0 count\n\n\nSee CHANGELOG for changes in previous versions\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-fbbf01b9ed43",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-bb6c3e918d0e",
+      "message_id": "<40D3930AC1C8EA469E39536E5BC8083505452383@EXDKBA021.corp.novocorp.net>",
+      "from_name": "BXC (Bendix Carstensen)",
+      "from_email_hash": "e2c63febb35b7e0607156d33a4415f54466d31fe15c27f86e63edfa5bcac1ad3",
+      "date": "2008-01-17T17:09:40+01:00",
+      "subject": "[R-pkgs] New version of Epi package out (1.0.7)",
+      "subject_clean": "New version of Epi package out (1.0.7)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new major upgrade of the Epi package for Epidemiological data analysis\nhas been put on CRAN, it is now at version 1.0.7.\n\nIt contains an entirely new way of representing follow-up data on\nmultiple timescales and multiple states. See the function Lexis().\n\nPlus a lot of other useful stuff for epidemiological analysis.\nSee more on the package homepage, www.biostat.ku.dk/~bxc/Epi\n\nNote also that there will be a course 28 May - 2 June in Estonia, see\nwww.biostat.ku.dk/~bxc/SPE.\n\nBendix Carstensen\nEpi package maintainer\t\n______________________________________________\n\nBendix Carstensen\nSenior Statistician\nSteno Diabetes Center\nNiels Steensens Vej 2-4\nDK-2820 Gentofte\nDenmark\n+45 44 43 87 38 (direct)\n+45 30 75 87 38 (mobile)\nbxc at steno.dk   http://www.biostat.ku.dk/~bxc",
+      "body_snippet": "A new major upgrade of the Epi package for Epidemiological data analysis\nhas been put on CRAN, it is now at version 1.0.7.\n\nIt contains an entirely new way of representing follow-up data on\nmultiple t",
+      "thread_id": "thread-bb6c3e918d0e",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-bb6c3e918d0e",
+      "message_id": "<40D3930AC1C8EA469E39536E5BC8083505452383@EXDKBA021.corp.novocorp.net>",
+      "from_name": "BXC (Bendix Carstensen)",
+      "from_email_hash": "e2c63febb35b7e0607156d33a4415f54466d31fe15c27f86e63edfa5bcac1ad3",
+      "date": "2008-01-17T17:09:40+01:00",
+      "subject": "[R-pkgs] New version of Epi package out (1.0.7)",
+      "subject_clean": "New version of Epi package out (1.0.7)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new major upgrade of the Epi package for Epidemiological data analysis\nhas been put on CRAN, it is now at version 1.0.7.\n\nIt contains an entirely new way of representing follow-up data on\nmultiple timescales and multiple states. See the function Lexis().\n\nPlus a lot of other useful stuff for epidemiological analysis.\nSee more on the package homepage, www.biostat.ku.dk/~bxc/Epi\n\nNote also that there will be a course 28 May - 2 June in Estonia, see\nwww.biostat.ku.dk/~bxc/SPE.\n\nBendix Carstensen\nEpi package maintainer\t\n______________________________________________\n\nBendix Carstensen\nSenior Statistician\nSteno Diabetes Center\nNiels Steensens Vej 2-4\nDK-2820 Gentofte\nDenmark\n+45 44 43 87 38 (direct)\n+45 30 75 87 38 (mobile)\nbxc at steno.dk   http://www.biostat.ku.dk/~bxc",
+      "body_snippet": "A new major upgrade of the Epi package for Epidemiological data analysis\nhas been put on CRAN, it is now at version 1.0.7.\n\nIt contains an entirely new way of representing follow-up data on\nmultiple t",
+      "thread_id": "thread-bb6c3e918d0e",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-404f564856bd",
+      "message_id": "<971536df0801190941q672c4fcbx4e4f8701fec75831@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2008-01-19T12:41:11-05:00",
+      "subject": "[R-pkgs] batchfiles 0.4-0",
+      "subject_clean": "batchfiles 0.4-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "batchfiles 0.4-0 consists of a set of Windows Vista\n.bat, .hta and .pl files.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com\n\nCHANGES\n\n- now tested with Vista exclusively (use 0.3-2 instead on XP)\n\n- sweave.bat now has no dependencies on the other batch\n  files.  With this change all .bat and .hta files now\n  have no dependencies except possibly for R.\n\n- RguiStart.bat is like Rgui.bat but takes a single argument\n  which may be an .Rdata file or a folder.  It can be\n  placed in your SendTo folder in which case you can\n  right click in Windows Explorer choosing\n   SendTo | RguiStart.bat\n\n- Rversions.hta now elevates RSetReg automatically (but\n  you will still be prompted for confirmation)\n\n- new toggleDoc.pl perl program from Dieter Menne which\n  unclutters 00Index.html Help files in packages.  See\n  sample output at:\n  http://www.menne-biomed.de/download/toggleDoc/00Index.html\n  and try toggling the Show All checkbox to see what it does.\n\n- Rversions.bat, Rfind.bat, makepkg.bat and withgs.bat\n  are no longer part of the package but are still available\n  in version 0.3-2.\n\nPACKAGE DESCRIPTION\n\n(Note that this is a collection of Windows batch and other\nfiles available in the CRAN Other area for R as opposed to\na package written in R.)\n\nbatchfiles is a collection of .bat, .hta and .pl scripts\nthat are useful when using R or developing R software.\n\nThe .bat and .hta files are easy to install as they have no\ndependencies other than R and they automatically look up R\nin the registry so no paths have to be set.  Just place them\nall or just those you want anywhere in your path.  There are\nutilities for running R, creating packages, switching the\ncurrent R version, R scripting and runing sweave as well as\nothers.\n\n- Rcmd.bat, R.bat and Rgui.bat are all the same file which\nquery what name it was called by and acts in a similar way\nto the R .exe files of the same name except that they first\nattempt to find R by checking the registry and common\nlocations so to use them all you do is put them anywhere in\nyour path.\n\n- RguiStart.bat is the same as Rgui.bat except it accepts\na single argument that is an R directory or .Rdata file\nso if you place it in your SendTo folder and right click\nany folder in Windows Explorer choosing SendTo | RguiStart.bat\nit will start up R in that folder.  If an .Rdata file is\nright clicked then R starts up loading that file.\n\n- sweave.bat will run sweave and the pdflatex and then display\nthe pdf file (or some subset of those depending on switches).\nIt has builtin makefile functionality so it will not proceed\nto the next step if the prior step has failed.  It also\ncreates and displays a backup copy of the pdf with a unique\nname so two versions of the same pdf file can be simultaneously\ndisplayed.\n\n- #Rscript.bat can be used as the first line of an R script to\nmake it callable as a batch file.  Rscript.bat is a variation\nof it used differently.\n\n- Rtidy.bat reformats R programs.  Its primarily included as\na simple example of #Rscript.bat .\n\n- Rversions.hta - if there are multiple versions of R installed\nthis program locates all versions in the registry and\nprovides a GUI interface with a drop down menu to choose\nwhich one you wish to make current.\n\n- copydir.bat/movedir.bat copy or move packages from one library\nto another such as would be done when upgrading R.  They will\ncreate new copies but will never overwrite any files that are\nalready there so they should be safe to use.\n\n- toggleDoc.pl is a perl program which unclutters HTML help\nfiles contributed by Dieter Menne.  For an example see:\nhttp://www.menne-biomed.de/download/toggleDoc/00Index.html",
+      "body_snippet": "batchfiles 0.4-0 consists of a set of Windows Vista\n.bat, .hta and .pl files.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com\n\nCHANGES\n\n- now tested with Vista exclus",
+      "thread_id": "thread-404f564856bd",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-404f564856bd",
+      "message_id": "<971536df0801190941q672c4fcbx4e4f8701fec75831@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2008-01-19T12:41:11-05:00",
+      "subject": "[R-pkgs] batchfiles 0.4-0",
+      "subject_clean": "batchfiles 0.4-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "batchfiles 0.4-0 consists of a set of Windows Vista\n.bat, .hta and .pl files.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com\n\nCHANGES\n\n- now tested with Vista exclusively (use 0.3-2 instead on XP)\n\n- sweave.bat now has no dependencies on the other batch\n  files.  With this change all .bat and .hta files now\n  have no dependencies except possibly for R.\n\n- RguiStart.bat is like Rgui.bat but takes a single argument\n  which may be an .Rdata file or a folder.  It can be\n  placed in your SendTo folder in which case you can\n  right click in Windows Explorer choosing\n   SendTo | RguiStart.bat\n\n- Rversions.hta now elevates RSetReg automatically (but\n  you will still be prompted for confirmation)\n\n- new toggleDoc.pl perl program from Dieter Menne which\n  unclutters 00Index.html Help files in packages.  See\n  sample output at:\n  http://www.menne-biomed.de/download/toggleDoc/00Index.html\n  and try toggling the Show All checkbox to see what it does.\n\n- Rversions.bat, Rfind.bat, makepkg.bat and withgs.bat\n  are no longer part of the package but are still available\n  in version 0.3-2.\n\nPACKAGE DESCRIPTION\n\n(Note that this is a collection of Windows batch and other\nfiles available in the CRAN Other area for R as opposed to\na package written in R.)\n\nbatchfiles is a collection of .bat, .hta and .pl scripts\nthat are useful when using R or developing R software.\n\nThe .bat and .hta files are easy to install as they have no\ndependencies other than R and they automatically look up R\nin the registry so no paths have to be set.  Just place them\nall or just those you want anywhere in your path.  There are\nutilities for running R, creating packages, switching the\ncurrent R version, R scripting and runing sweave as well as\nothers.\n\n- Rcmd.bat, R.bat and Rgui.bat are all the same file which\nquery what name it was called by and acts in a similar way\nto the R .exe files of the same name except that they first\nattempt to find R by checking the registry and common\nlocations so to use them all you do is put them anywhere in\nyour path.\n\n- RguiStart.bat is the same as Rgui.bat except it accepts\na single argument that is an R directory or .Rdata file\nso if you place it in your SendTo folder and right click\nany folder in Windows Explorer choosing SendTo | RguiStart.bat\nit will start up R in that folder.  If an .Rdata file is\nright clicked then R starts up loading that file.\n\n- sweave.bat will run sweave and the pdflatex and then display\nthe pdf file (or some subset of those depending on switches).\nIt has builtin makefile functionality so it will not proceed\nto the next step if the prior step has failed.  It also\ncreates and displays a backup copy of the pdf with a unique\nname so two versions of the same pdf file can be simultaneously\ndisplayed.\n\n- #Rscript.bat can be used as the first line of an R script to\nmake it callable as a batch file.  Rscript.bat is a variation\nof it used differently.\n\n- Rtidy.bat reformats R programs.  Its primarily included as\na simple example of #Rscript.bat .\n\n- Rversions.hta - if there are multiple versions of R installed\nthis program locates all versions in the registry and\nprovides a GUI interface with a drop down menu to choose\nwhich one you wish to make current.\n\n- copydir.bat/movedir.bat copy or move packages from one library\nto another such as would be done when upgrading R.  They will\ncreate new copies but will never overwrite any files that are\nalready there so they should be safe to use.\n\n- toggleDoc.pl is a perl program which unclutters HTML help\nfiles contributed by Dieter Menne.  For an example see:\nhttp://www.menne-biomed.de/download/toggleDoc/00Index.html",
+      "body_snippet": "batchfiles 0.4-0 consists of a set of Windows Vista\n.bat, .hta and .pl files.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com\n\nCHANGES\n\n- now tested with Vista exclus",
+      "thread_id": "thread-404f564856bd",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-25f39756313d",
+      "message_id": "<47946233.2000709@stat.uni-muenchen.de>",
+      "from_name": "Michael Höhle",
+      "from_email_hash": "3eb90d12fb57275c05640639c0827f3290a37f092e2ecf88e8e3c6712c37c93d",
+      "date": "2008-01-21T10:13:23+01:00",
+      "subject": "[R-pkgs] Package surveillance (v0.9-8) on CRAN",
+      "subject_clean": "Package surveillance (v0.9-8) on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health data.\n\nThe package addresses epidemiologists and statisticians working with\nroutine surveillance, but it also offers an infrastructure for\ndevelopers of new detection algorithms.\n\nImplemented outbreak detection algorithms are:\n* Stroup et al. (1989)\n* Farrington et al. (1996)\n* A Bayesian predictive posterior approach\n* Time varying Poisson means as documented in Rogerson and Yamada (2004)\n* Approximate CUSUM method for time varying Poisson means by\n   Rossi et al. (1999)\n* A generalized likelihood ratio detector for time varying Poisson\n   and and negative binomial means\n\nModelling routines:\n* A Poisson and negative binomial model for the analysis of\nmultivariate infectious disease surveillance data described in Held\net al. (2005)\n\nThe paper available from http://dx.doi.org/10.1007/s00180-007-0074-8\nprovides a good overview of the package. Source code and binaries\n(currently version 0.9-8) are available from CRAN. Visit the R-Forge\nproject web page for more information, development versions and forums\nto discuss ideas and report bugs:\n\n       \t    http://surveillance.r-forge.r-project.org/\n\nI would appreciate hearing about your experiences with the package.\n\nBest regards,\n\nMichael\n-on behalf of the surveillance development team\n\n--\n\nMichael H?hle, Ph.D.\nDepartment of Statistics\nUniversity of Munich\nLudwigstr. 33\n80539 Munich\nGermany\n\nHomepage: http://www.stat.uni-muenchen.de/~hoehle",
+      "body_snippet": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health d",
+      "thread_id": "thread-25f39756313d",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-25f39756313d",
+      "message_id": "<47946233.2000709@stat.uni-muenchen.de>",
+      "from_name": "Michael Höhle",
+      "from_email_hash": "3eb90d12fb57275c05640639c0827f3290a37f092e2ecf88e8e3c6712c37c93d",
+      "date": "2008-01-21T10:13:23+01:00",
+      "subject": "[R-pkgs] Package surveillance (v0.9-8) on CRAN",
+      "subject_clean": "Package surveillance (v0.9-8) on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health data.\n\nThe package addresses epidemiologists and statisticians working with\nroutine surveillance, but it also offers an infrastructure for\ndevelopers of new detection algorithms.\n\nImplemented outbreak detection algorithms are:\n* Stroup et al. (1989)\n* Farrington et al. (1996)\n* A Bayesian predictive posterior approach\n* Time varying Poisson means as documented in Rogerson and Yamada (2004)\n* Approximate CUSUM method for time varying Poisson means by\n   Rossi et al. (1999)\n* A generalized likelihood ratio detector for time varying Poisson\n   and and negative binomial means\n\nModelling routines:\n* A Poisson and negative binomial model for the analysis of\nmultivariate infectious disease surveillance data described in Held\net al. (2005)\n\nThe paper available from http://dx.doi.org/10.1007/s00180-007-0074-8\nprovides a good overview of the package. Source code and binaries\n(currently version 0.9-8) are available from CRAN. Visit the R-Forge\nproject web page for more information, development versions and forums\nto discuss ideas and report bugs:\n\n       \t    http://surveillance.r-forge.r-project.org/\n\nI would appreciate hearing about your experiences with the package.\n\nBest regards,\n\nMichael\n-on behalf of the surveillance development team\n\n--\n\nMichael H?hle, Ph.D.\nDepartment of Statistics\nUniversity of Munich\nLudwigstr. 33\n80539 Munich\nGermany\n\nHomepage: http://www.stat.uni-muenchen.de/~hoehle",
+      "body_snippet": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health d",
+      "thread_id": "thread-25f39756313d",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-3d17705283eb",
+      "message_id": "<4794659F.3060000@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2008-01-21T10:27:59+01:00",
+      "subject": "[R-pkgs] New package: R to LaTeX Univariate Analyses",
+      "subject_clean": "New package: R to LaTeX Univariate Analyses",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi the list\n\n*** New package ***\nR to LaTeX : Univariate analyses\nr2lUniv\n*URL:*http://www.r-project.org, http://christophe.genolini.free.fr/r2lUniv\n\n*** Description ***\nr2lUniv performs some basic analyses, then generates a code to be \nincluded in a LaTeX document\nto print the analyses in a (so nice!) LaTeX way.\nr2lUniv performs the analyses automatically according to the classical \nstatistics\ntype definition that are nominal, ordinal, discrete and continuous. The \nanalysis performed are:\n- Nominal : modality, size, barplot\n- Ordinal: modality, size, quartile, barplot\n- Discrete: modality, size, mean, var, quartile, boxplot, barplot\n- Continuous: mean, var, quartile, boxplot, barplot\n\n*** I am a Rookie... ***\nWell, I know that. This is my first package and I am almost a beginner in R.\nSo any comment on any subject (programming style, way of writing the \nman, use of S3) are welcome\n(\"You did a nice job, but classical usage is to...\" or \"Hmmm, that would \nbe more practical if...\").\n\n*** Other project ***\nWell, Univariate Analysis is the first step, the second is Bivariate \nanalysis.\nAlso, before posting here, I submit this package on a French forum.\nThe first suggestion is to extend this package to HTML. I will not have \ntime to do it alone.\nSo if some people are interested, two other project are almost open :\n- R to LaTeX Bivaraite Analysis\n- R to HTML Univariate Analysis\n\nThanks\n\nChristophe Genolini\n\nJunior statistician\n\"PSIGIAM: Paris Sud Innovation Group in Adolescent Mental Health\"\nINSERM U669 / Maison de Solenn / Paris",
+      "body_snippet": "Hi the list\n\n*** New package ***\nR to LaTeX : Univariate analyses\nr2lUniv\n*URL:*http://www.r-project.org, http://christophe.genolini.free.fr/r2lUniv\n\n*** Description ***\nr2lUniv performs some basic an",
+      "thread_id": "thread-3d17705283eb",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-3d17705283eb",
+      "message_id": "<4794659F.3060000@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2008-01-21T10:27:59+01:00",
+      "subject": "[R-pkgs] New package: R to LaTeX Univariate Analyses",
+      "subject_clean": "New package: R to LaTeX Univariate Analyses",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi the list\n\n*** New package ***\nR to LaTeX : Univariate analyses\nr2lUniv\n*URL:*http://www.r-project.org, http://christophe.genolini.free.fr/r2lUniv\n\n*** Description ***\nr2lUniv performs some basic analyses, then generates a code to be \nincluded in a LaTeX document\nto print the analyses in a (so nice!) LaTeX way.\nr2lUniv performs the analyses automatically according to the classical \nstatistics\ntype definition that are nominal, ordinal, discrete and continuous. The \nanalysis performed are:\n- Nominal : modality, size, barplot\n- Ordinal: modality, size, quartile, barplot\n- Discrete: modality, size, mean, var, quartile, boxplot, barplot\n- Continuous: mean, var, quartile, boxplot, barplot\n\n*** I am a Rookie... ***\nWell, I know that. This is my first package and I am almost a beginner in R.\nSo any comment on any subject (programming style, way of writing the \nman, use of S3) are welcome\n(\"You did a nice job, but classical usage is to...\" or \"Hmmm, that would \nbe more practical if...\").\n\n*** Other project ***\nWell, Univariate Analysis is the first step, the second is Bivariate \nanalysis.\nAlso, before posting here, I submit this package on a French forum.\nThe first suggestion is to extend this package to HTML. I will not have \ntime to do it alone.\nSo if some people are interested, two other project are almost open :\n- R to LaTeX Bivaraite Analysis\n- R to HTML Univariate Analysis\n\nThanks\n\nChristophe Genolini\n\nJunior statistician\n\"PSIGIAM: Paris Sud Innovation Group in Adolescent Mental Health\"\nINSERM U669 / Maison de Solenn / Paris",
+      "body_snippet": "Hi the list\n\n*** New package ***\nR to LaTeX : Univariate analyses\nr2lUniv\n*URL:*http://www.r-project.org, http://christophe.genolini.free.fr/r2lUniv\n\n*** Description ***\nr2lUniv performs some basic an",
+      "thread_id": "thread-3d17705283eb",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-6323e686c19d",
+      "message_id": "<2323A6D37908A847A7C32F1E3662C80E0153615F@dc1ex01.air.org>",
+      "from_name": "Doran, Harold",
+      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
+      "date": "2008-01-23T11:42:48-05:00",
+      "subject": "[R-pkgs] MiscPsycho 1.1 uploaded to CRAN",
+      "subject_clean": "MiscPsycho 1.1 uploaded to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1 of the MiscPsycho package had been uploaded to CRAN. The\npackage has been updated to include the following:\n\n1) The irt.ability() function that estimates examinee ability given a\nset of item parameters. The function is very general and can be used to\nestimate ability when there are only dichotomous items (1-, 2-, or 3PL),\nonly polytomous items (generalized partial credit model), or a mixture\nof dichotomous and polytomous items. The function can be used to\nestimate maximum likelihood estimates or two bayesian estimates: the\nmaximum a posteriori (MAP) and the expected a posteriori (EAP).\n\n2) The plaus.val() function that uses rejection sampling to draw random\nsamples from any IRT posterior distribution. \n\n3) The posterior() function that computes the density of any IRT\nposterior distribution.\n\n4) The class.acc() function that can be used to perform integration from\n[-Inf,b] or [a,Inf] of any IRT posterior distribution.\n\n5) Complete technical documentation describing all of the mathematical\nmethods underlying the functions as well as complete examples\ndemonstrating the use of all functions. This documentation lives in the\n\"doc\" subdirectory of the MiscPsycho library.\n\nAny bug reports, issues, and comments on the package are welcome.\n\nHarold Doran",
+      "body_snippet": "Version 1.1 of the MiscPsycho package had been uploaded to CRAN. The\npackage has been updated to include the following:\n\n1) The irt.ability() function that estimates examinee ability given a\nset of it",
+      "thread_id": "thread-6323e686c19d",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-6323e686c19d",
+      "message_id": "<2323A6D37908A847A7C32F1E3662C80E0153615F@dc1ex01.air.org>",
+      "from_name": "Doran, Harold",
+      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
+      "date": "2008-01-23T11:42:48-05:00",
+      "subject": "[R-pkgs] MiscPsycho 1.1 uploaded to CRAN",
+      "subject_clean": "MiscPsycho 1.1 uploaded to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1 of the MiscPsycho package had been uploaded to CRAN. The\npackage has been updated to include the following:\n\n1) The irt.ability() function that estimates examinee ability given a\nset of item parameters. The function is very general and can be used to\nestimate ability when there are only dichotomous items (1-, 2-, or 3PL),\nonly polytomous items (generalized partial credit model), or a mixture\nof dichotomous and polytomous items. The function can be used to\nestimate maximum likelihood estimates or two bayesian estimates: the\nmaximum a posteriori (MAP) and the expected a posteriori (EAP).\n\n2) The plaus.val() function that uses rejection sampling to draw random\nsamples from any IRT posterior distribution. \n\n3) The posterior() function that computes the density of any IRT\nposterior distribution.\n\n4) The class.acc() function that can be used to perform integration from\n[-Inf,b] or [a,Inf] of any IRT posterior distribution.\n\n5) Complete technical documentation describing all of the mathematical\nmethods underlying the functions as well as complete examples\ndemonstrating the use of all functions. This documentation lives in the\n\"doc\" subdirectory of the MiscPsycho library.\n\nAny bug reports, issues, and comments on the package are welcome.\n\nHarold Doran",
+      "body_snippet": "Version 1.1 of the MiscPsycho package had been uploaded to CRAN. The\npackage has been updated to include the following:\n\n1) The irt.ability() function that estimates examinee ability given a\nset of it",
+      "thread_id": "thread-6323e686c19d",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-5a82cf915729",
+      "message_id": "<m2ve5gtode.fsf@userprimary.net>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2008-01-26T10:47:57-08:00",
+      "subject": "[R-pkgs] RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "subject_clean": "RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RSQLite 0.6-7 has been uploaded to CRAN and should hit a mirror near\nyou in the next few days.\n\nThis version changes the behavior of the dbGetQuery method to make it\nmore consistent with dbSendQuery.  Specifically:\n\n1. dbGetQuery now closes a complete result set as dbSendQuery does.\n\n2. If there is an incomplete result set open, dbGetQuery still opens a\n   new temporary connection, but now issues a warning.  It is best\n   practice to explicitly close open result sets before issuing\n   further queries.\n\nThese changes are in response to the following discussion on the\nr-sig-db list:\n\n    https://stat.ethz.ch/pipermail/r-sig-db/2008q1/000399.html\n\n+ seth\n\n-- \nSeth Falcon | seth at userprimary.net | blog: http://userprimary.net/user/",
+      "body_snippet": "RSQLite 0.6-7 has been uploaded to CRAN and should hit a mirror near\nyou in the next few days.\n\nThis version changes the behavior of the dbGetQuery method to make it\nmore consistent with dbSendQuery. ",
+      "thread_id": "thread-5a82cf915729",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-5a82cf915729",
+      "message_id": "<m2ve5gtode.fsf@userprimary.net>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2008-01-26T10:47:57-08:00",
+      "subject": "[R-pkgs] RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "subject_clean": "RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RSQLite 0.6-7 has been uploaded to CRAN and should hit a mirror near\nyou in the next few days.\n\nThis version changes the behavior of the dbGetQuery method to make it\nmore consistent with dbSendQuery.  Specifically:\n\n1. dbGetQuery now closes a complete result set as dbSendQuery does.\n\n2. If there is an incomplete result set open, dbGetQuery still opens a\n   new temporary connection, but now issues a warning.  It is best\n   practice to explicitly close open result sets before issuing\n   further queries.\n\nThese changes are in response to the following discussion on the\nr-sig-db list:\n\n    https://stat.ethz.ch/pipermail/r-sig-db/2008q1/000399.html\n\n+ seth\n\n-- \nSeth Falcon | seth at userprimary.net | blog: http://userprimary.net/user/",
+      "body_snippet": "RSQLite 0.6-7 has been uploaded to CRAN and should hit a mirror near\nyou in the next few days.\n\nThis version changes the behavior of the dbGetQuery method to make it\nmore consistent with dbSendQuery. ",
+      "thread_id": "thread-5a82cf915729",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-6ea951969be3",
+      "message_id": "<Pine.LNX.4.44.0801281053320.29044-100000@disco.wu-wien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2008-01-28T11:46:26+01:00",
+      "subject": "[R-pkgs] dynlm: new version 0.2-0",
+      "subject_clean": "dynlm: new version 0.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI've release a new version of the \"dynlm\" package to CRAN which adds two\nnew features:\n\n  o instrumental variables regression (two-stage least squares) via\n    formulas like\n      dynlm(y ~ x1 + x2 | z1 + z2 + z3, data = mydata)\n    where z1, z2, z3 are the instruments which can again contain\n    lags/differences/season via the d()/L()/season() operators.\n\n  o specification of multiple lags via formulas like\n      dynlm(y ~ L(x, 0:4), data = mydata)\n    where y is regressed on x and lags 1 through 4 of x.\n\nFurthermore, I've enhanced some convenience funcitonality such as printing\nand fixed a bug in the time alignment when there were leading NAs in the\nunderlying data.\nZ",
+      "body_snippet": "Dear useRs,\n\nI've release a new version of the \"dynlm\" package to CRAN which adds two\nnew features:\n\n  o instrumental variables regression (two-stage least squares) via\n    formulas like\n      dynlm(y",
+      "thread_id": "thread-6ea951969be3",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-6ea951969be3",
+      "message_id": "<Pine.LNX.4.44.0801281053320.29044-100000@disco.wu-wien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2008-01-28T11:46:26+01:00",
+      "subject": "[R-pkgs] dynlm: new version 0.2-0",
+      "subject_clean": "dynlm: new version 0.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI've release a new version of the \"dynlm\" package to CRAN which adds two\nnew features:\n\n  o instrumental variables regression (two-stage least squares) via\n    formulas like\n      dynlm(y ~ x1 + x2 | z1 + z2 + z3, data = mydata)\n    where z1, z2, z3 are the instruments which can again contain\n    lags/differences/season via the d()/L()/season() operators.\n\n  o specification of multiple lags via formulas like\n      dynlm(y ~ L(x, 0:4), data = mydata)\n    where y is regressed on x and lags 1 through 4 of x.\n\nFurthermore, I've enhanced some convenience funcitonality such as printing\nand fixed a bug in the time alignment when there were leading NAs in the\nunderlying data.\nZ",
+      "body_snippet": "Dear useRs,\n\nI've release a new version of the \"dynlm\" package to CRAN which adds two\nnew features:\n\n  o instrumental variables regression (two-stage least squares) via\n    formulas like\n      dynlm(y",
+      "thread_id": "thread-6ea951969be3",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-89aed838c317",
+      "message_id": "<C83C5E3DEEE97E498B74729A33F6EAEC0562FAF0@DJFPOST01.djf.agrsci.dk>",
+      "from_name": "Søren Højsgaard",
+      "from_email_hash": "e5cd905344767ecb559aed462a5df5b7b6c5918e1391a7e4f72a49ff79251ec2",
+      "date": "2008-01-28T12:46:20+01:00",
+      "subject": "[R-pkgs] New package: gRain - gRAphical Independence Networks",
+      "subject_clean": "New package: gRain - gRAphical Independence Networks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?ren H?jsgaard",
+      "body_snippet": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?",
+      "thread_id": "thread-89aed838c317",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-89aed838c317",
+      "message_id": "<C83C5E3DEEE97E498B74729A33F6EAEC0562FAF0@DJFPOST01.djf.agrsci.dk>",
+      "from_name": "Søren Højsgaard",
+      "from_email_hash": "e5cd905344767ecb559aed462a5df5b7b6c5918e1391a7e4f72a49ff79251ec2",
+      "date": "2008-01-28T12:46:20+01:00",
+      "subject": "[R-pkgs] New package: gRain - gRAphical Independence Networks",
+      "subject_clean": "New package: gRain - gRAphical Independence Networks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?ren H?jsgaard",
+      "body_snippet": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?",
+      "thread_id": "thread-89aed838c317",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-55083513aea3",
+      "message_id": "<479E65F2.7050907@wu-wien.ac.at>",
+      "from_name": "Patrick Mair",
+      "from_email_hash": "583f5d11bdfd6505935d488414fe04faade2c1bf3792ad7958260a4576cc050c",
+      "date": "2008-01-28T15:32:02-08:00",
+      "subject": "[R-pkgs] eRm: new version 0.9-6",
+      "subject_clean": "eRm: new version 0.9-6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nnew and updated features in eRm 0.9-6 for extended Rasch modeling:\n\n- infit and outfit mean-square statistics added to functions personfit() \nand itemfit().\n\n- new method: plotPImap() plots a person-item map (cf. Bond & Fox, \n2007), i.e., a map\nof locations of item (and threshold) parameters, and the distribution of \nperson parameters.\n\n- new options in plotGOF():\n'conf': draws confidence ellipses for item parameters, optionally single \nitems can be chosen interactively.\n'ctrline': draws confidence bands along the diagonal line based on the \nse's of the item parameters (cf. Wright &\nStone, 1999) .\nplotGOF() now displays difficulty parameters (see below).\n\n- unification of output for item parameter estimates: all plotting \nfunctions and the function thresholds() display\nitem difficulty parameters. all numeric output (i.e. from model objects) \ngives item easiness parameters.\n\n- new and enhanced options in plotICC():\n'empirical': empirical ICCs can now be smoothed using various smoothers \n(such as Tukey, loess, or kernel).\n'ask': interactive turning over of plots can be switched off (only \nuseful if automated figure export is in effect,\ne.g., when using Sweave).\n\n- simulation module for 0-1 response matrices: sim.rasch() for Rasch \nhomogeneous data,\nsim.2pl() for 2-PL data, sim.xdim() for unidimensionality violation, and\nsim.locdep() for locally dependent item responses.\n\n- package vignette \"eRmvig\" added.\n\nBest,\nPatrick",
+      "body_snippet": "Dear useRs,\n\nnew and updated features in eRm 0.9-6 for extended Rasch modeling:\n\n- infit and outfit mean-square statistics added to functions personfit() \nand itemfit().\n\n- new method: plotPImap() plo",
+      "thread_id": "thread-55083513aea3",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-55083513aea3",
+      "message_id": "<479E65F2.7050907@wu-wien.ac.at>",
+      "from_name": "Patrick Mair",
+      "from_email_hash": "583f5d11bdfd6505935d488414fe04faade2c1bf3792ad7958260a4576cc050c",
+      "date": "2008-01-28T15:32:02-08:00",
+      "subject": "[R-pkgs] eRm: new version 0.9-6",
+      "subject_clean": "eRm: new version 0.9-6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nnew and updated features in eRm 0.9-6 for extended Rasch modeling:\n\n- infit and outfit mean-square statistics added to functions personfit() \nand itemfit().\n\n- new method: plotPImap() plots a person-item map (cf. Bond & Fox, \n2007), i.e., a map\nof locations of item (and threshold) parameters, and the distribution of \nperson parameters.\n\n- new options in plotGOF():\n'conf': draws confidence ellipses for item parameters, optionally single \nitems can be chosen interactively.\n'ctrline': draws confidence bands along the diagonal line based on the \nse's of the item parameters (cf. Wright &\nStone, 1999) .\nplotGOF() now displays difficulty parameters (see below).\n\n- unification of output for item parameter estimates: all plotting \nfunctions and the function thresholds() display\nitem difficulty parameters. all numeric output (i.e. from model objects) \ngives item easiness parameters.\n\n- new and enhanced options in plotICC():\n'empirical': empirical ICCs can now be smoothed using various smoothers \n(such as Tukey, loess, or kernel).\n'ask': interactive turning over of plots can be switched off (only \nuseful if automated figure export is in effect,\ne.g., when using Sweave).\n\n- simulation module for 0-1 response matrices: sim.rasch() for Rasch \nhomogeneous data,\nsim.2pl() for 2-PL data, sim.xdim() for unidimensionality violation, and\nsim.locdep() for locally dependent item responses.\n\n- package vignette \"eRmvig\" added.\n\nBest,\nPatrick",
+      "body_snippet": "Dear useRs,\n\nnew and updated features in eRm 0.9-6 for extended Rasch modeling:\n\n- infit and outfit mean-square statistics added to functions personfit() \nand itemfit().\n\n- new method: plotPImap() plo",
+      "thread_id": "thread-55083513aea3",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-0a78b0cb758c",
+      "message_id": "<9b2eed510801290332ga0381e6ua278e6b446261e72@mail.gmail.com>",
+      "from_name": "Toni Giorgino",
+      "from_email_hash": "df151898a5b545f391697db063086db4e2660cb5925c1fc506efd2eb7e5d847d",
+      "date": "2008-01-29T12:32:26+01:00",
+      "subject": "[R-pkgs] New package: dtw - Dynamic Time Warping",
+      "subject_clean": "New package: dtw - Dynamic Time Warping",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl>",
+      "thread_id": "thread-0a78b0cb758c",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-0a78b0cb758c",
+      "message_id": "<9b2eed510801290332ga0381e6ua278e6b446261e72@mail.gmail.com>",
+      "from_name": "Toni Giorgino",
+      "from_email_hash": "df151898a5b545f391697db063086db4e2660cb5925c1fc506efd2eb7e5d847d",
+      "date": "2008-01-29T12:32:26+01:00",
+      "subject": "[R-pkgs] New package: dtw - Dynamic Time Warping",
+      "subject_clean": "New package: dtw - Dynamic Time Warping",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment-0001.pl>",
+      "thread_id": "thread-0a78b0cb758c",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-fb5993a0fbab",
+      "message_id": "<47A21522.4060201@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2008-01-31T13:36:18-05:00",
+      "subject": "[R-pkgs] Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "subject_clean": "Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "X2R is a bundle of three software libraries allowing the user to pass\nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN and should be available at \nmirrors shortly. We also have uploaded FishGraph, a set of R functions\nto generate graphics from fish population models. From the menu at the \nleft of the CRAN home page, look under Software / Other.\n\nChanges in this Update\n\n- Minor bug fixes and improvements have been made throughout, both in\nthe software and users' guides.\n- ADMB2R is compatible with gcc as well as with the Borland compiler.\n- FishGraph is available from CRAN.\n- ADMB2R includes a detailed example compatible with FishGraph. This\nshould minimize the learning curve for those getting started with ADMB2R\nand FishGraph.\n\nX2R is supplied as files X2R.zip and X2R.tar.gz, which are equivalent.\nThe version and release date can be identified from the contents of file\n\"VersionInfo.txt\" in the root of each archive. The new version bears\ndate January 19, 2008.\n\nFishGraph is supplied separately as a Windows installer in the same\ndirectory. If we hear from anyone interested in using it under other \noperating system(s), we can collaborate on making it work.\n\n                                * * *\n\nMore detail for the interested:\n\nX2R is composed of three independent but related software libraries:\nC2R, ADMB2R, and For2R (together, X2R). Each contains output routines to\nsimplify transfer of complicated data structures from models written in\na compiled language to R (note 1). Through calls to X2R routines, the\nuser's data is written as a structured ASCII file. That file can be read\nby R with a single dget() function call to create an R data object of\ntype list. The list may contain components such as vectors, data frames,\nmatrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be\nused with programmers' own modeling codes. Limited testing indicates\ncompatibility with S-PLUS, as well (note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R)\nand AD Model Builder (with ADMB2R) (note 3). Source code and detailed \nusers' manuals are supplied.\n\nADMB2R has been tested with ADMB versions 6.03 and 7.71 and recent\nversions of the gcc and Borland C++ compilers.\n\nFishGraph is a set of R functions providing exploratory and presentation \ngraphics of fishery catch-at-age or catch-at-length models. By taking \nits data from an R list assumed to have a certain structure (diagram \nprovided), FishGraph determines which graphs should be generated and for \nhow many data series, years, etc. The data structure may be generated \nwith X2R or within R itself and may contain any amount of additional \ndata. Most FishGraph routines have options to control titles, colors, \nand reference lines. The combination of X2R and FishGraph allows \nautomating graphics production from routine fish stock assessments. The \nFishGraph functions can be modified or supplemented to reflect the needs \nof the analysis at hand.\n\nThis work has been tested and is regularly used by the authors. However,\nany software may contain bugs, and these works are classified by NOAA as\n\"Experimental Products.\"  THIS SOFTWARE IS SUPPLIED WITH NO WARRANTY OF\nANY KIND. Nonetheless, the authors will endeavor to fix bugs promptly \nand to add requested features.  Send bug reports, suggestions, and \nextensions to either author.\n\nMichael H. Prager - mike.prager at noaa.gov\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1. Use of product names (commercial or otherwise) does not imply\nendorsement or recommendation by any U.S. government agency, nor by the\nauthors in their government capacities.\n* Note 2. S-PLUS is a commercial product, released by Insightful \nCorporation.\n* Note 3. AD Model Builder is a commercial product, released by Otter\nResearch.",
+      "body_snippet": "X2R is a bundle of three software libraries allowing the user to pass\nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN and should be availa",
+      "thread_id": "thread-fb5993a0fbab",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-fb5993a0fbab",
+      "message_id": "<47A21522.4060201@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2008-01-31T13:36:18-05:00",
+      "subject": "[R-pkgs] Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "subject_clean": "Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "X2R is a bundle of three software libraries allowing the user to pass\nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN and should be available at \nmirrors shortly. We also have uploaded FishGraph, a set of R functions\nto generate graphics from fish population models. From the menu at the \nleft of the CRAN home page, look under Software / Other.\n\nChanges in this Update\n\n- Minor bug fixes and improvements have been made throughout, both in\nthe software and users' guides.\n- ADMB2R is compatible with gcc as well as with the Borland compiler.\n- FishGraph is available from CRAN.\n- ADMB2R includes a detailed example compatible with FishGraph. This\nshould minimize the learning curve for those getting started with ADMB2R\nand FishGraph.\n\nX2R is supplied as files X2R.zip and X2R.tar.gz, which are equivalent.\nThe version and release date can be identified from the contents of file\n\"VersionInfo.txt\" in the root of each archive. The new version bears\ndate January 19, 2008.\n\nFishGraph is supplied separately as a Windows installer in the same\ndirectory. If we hear from anyone interested in using it under other \noperating system(s), we can collaborate on making it work.\n\n                                * * *\n\nMore detail for the interested:\n\nX2R is composed of three independent but related software libraries:\nC2R, ADMB2R, and For2R (together, X2R). Each contains output routines to\nsimplify transfer of complicated data structures from models written in\na compiled language to R (note 1). Through calls to X2R routines, the\nuser's data is written as a structured ASCII file. That file can be read\nby R with a single dget() function call to create an R data object of\ntype list. The list may contain components such as vectors, data frames,\nmatrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be\nused with programmers' own modeling codes. Limited testing indicates\ncompatibility with S-PLUS, as well (note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R)\nand AD Model Builder (with ADMB2R) (note 3). Source code and detailed \nusers' manuals are supplied.\n\nADMB2R has been tested with ADMB versions 6.03 and 7.71 and recent\nversions of the gcc and Borland C++ compilers.\n\nFishGraph is a set of R functions providing exploratory and presentation \ngraphics of fishery catch-at-age or catch-at-length models. By taking \nits data from an R list assumed to have a certain structure (diagram \nprovided), FishGraph determines which graphs should be generated and for \nhow many data series, years, etc. The data structure may be generated \nwith X2R or within R itself and may contain any amount of additional \ndata. Most FishGraph routines have options to control titles, colors, \nand reference lines. The combination of X2R and FishGraph allows \nautomating graphics production from routine fish stock assessments. The \nFishGraph functions can be modified or supplemented to reflect the needs \nof the analysis at hand.\n\nThis work has been tested and is regularly used by the authors. However,\nany software may contain bugs, and these works are classified by NOAA as\n\"Experimental Products.\"  THIS SOFTWARE IS SUPPLIED WITH NO WARRANTY OF\nANY KIND. Nonetheless, the authors will endeavor to fix bugs promptly \nand to add requested features.  Send bug reports, suggestions, and \nextensions to either author.\n\nMichael H. Prager - mike.prager at noaa.gov\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1. Use of product names (commercial or otherwise) does not imply\nendorsement or recommendation by any U.S. government agency, nor by the\nauthors in their government capacities.\n* Note 2. S-PLUS is a commercial product, released by Insightful \nCorporation.\n* Note 3. AD Model Builder is a commercial product, released by Otter\nResearch.",
+      "body_snippet": "X2R is a bundle of three software libraries allowing the user to pass\nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN and should be availa",
+      "thread_id": "thread-fb5993a0fbab",
+      "thread_depth": 0,
+      "month": "2008-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-34c0abbfdfd8",
+      "subject": "PwrGSD",
+      "message_count": 1,
+      "participants": [
+        "Grant Izmirlian"
+      ],
+      "started": "2008-01-08T14:33:13-05:00",
+      "last_reply": "2008-01-08T14:33:13-05:00",
+      "root_message_id": "msg-34c0abbfdfd8"
+    },
+    {
+      "id": "thread-34c0abbfdfd8",
+      "subject": "PwrGSD",
+      "message_count": 1,
+      "participants": [
+        "Grant Izmirlian"
+      ],
+      "started": "2008-01-08T14:33:13-05:00",
+      "last_reply": "2008-01-08T14:33:13-05:00",
+      "root_message_id": "msg-34c0abbfdfd8"
+    },
+    {
+      "id": "thread-252a0c389613",
+      "subject": "prob package: elementary probability on finite sample spaces",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2008-01-10T07:40:46-05:00",
+      "last_reply": "2008-01-10T07:40:46-05:00",
+      "root_message_id": "msg-252a0c389613"
+    },
+    {
+      "id": "thread-252a0c389613",
+      "subject": "prob package: elementary probability on finite sample spaces",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2008-01-10T07:40:46-05:00",
+      "last_reply": "2008-01-10T07:40:46-05:00",
+      "root_message_id": "msg-252a0c389613"
+    },
+    {
+      "id": "thread-fbbf01b9ed43",
+      "subject": "New version of ggplot2: 0.5.7",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-01-11T16:16:36-06:00",
+      "last_reply": "2008-01-11T16:16:36-06:00",
+      "root_message_id": "msg-fbbf01b9ed43"
+    },
+    {
+      "id": "thread-fbbf01b9ed43",
+      "subject": "New version of ggplot2: 0.5.7",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-01-11T16:16:36-06:00",
+      "last_reply": "2008-01-11T16:16:36-06:00",
+      "root_message_id": "msg-fbbf01b9ed43"
+    },
+    {
+      "id": "thread-bb6c3e918d0e",
+      "subject": "New version of Epi package out (1.0.7)",
+      "message_count": 1,
+      "participants": [
+        "BXC (Bendix Carstensen)"
+      ],
+      "started": "2008-01-17T17:09:40+01:00",
+      "last_reply": "2008-01-17T17:09:40+01:00",
+      "root_message_id": "msg-bb6c3e918d0e"
+    },
+    {
+      "id": "thread-bb6c3e918d0e",
+      "subject": "New version of Epi package out (1.0.7)",
+      "message_count": 1,
+      "participants": [
+        "BXC (Bendix Carstensen)"
+      ],
+      "started": "2008-01-17T17:09:40+01:00",
+      "last_reply": "2008-01-17T17:09:40+01:00",
+      "root_message_id": "msg-bb6c3e918d0e"
+    },
+    {
+      "id": "thread-404f564856bd",
+      "subject": "batchfiles 0.4-0",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2008-01-19T12:41:11-05:00",
+      "last_reply": "2008-01-19T12:41:11-05:00",
+      "root_message_id": "msg-404f564856bd"
+    },
+    {
+      "id": "thread-404f564856bd",
+      "subject": "batchfiles 0.4-0",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2008-01-19T12:41:11-05:00",
+      "last_reply": "2008-01-19T12:41:11-05:00",
+      "root_message_id": "msg-404f564856bd"
+    },
+    {
+      "id": "thread-25f39756313d",
+      "subject": "Package surveillance (v0.9-8) on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Höhle"
+      ],
+      "started": "2008-01-21T10:13:23+01:00",
+      "last_reply": "2008-01-21T10:13:23+01:00",
+      "root_message_id": "msg-25f39756313d"
+    },
+    {
+      "id": "thread-25f39756313d",
+      "subject": "Package surveillance (v0.9-8) on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Höhle"
+      ],
+      "started": "2008-01-21T10:13:23+01:00",
+      "last_reply": "2008-01-21T10:13:23+01:00",
+      "root_message_id": "msg-25f39756313d"
+    },
+    {
+      "id": "thread-3d17705283eb",
+      "subject": "New package: R to LaTeX Univariate Analyses",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2008-01-21T10:27:59+01:00",
+      "last_reply": "2008-01-21T10:27:59+01:00",
+      "root_message_id": "msg-3d17705283eb"
+    },
+    {
+      "id": "thread-3d17705283eb",
+      "subject": "New package: R to LaTeX Univariate Analyses",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2008-01-21T10:27:59+01:00",
+      "last_reply": "2008-01-21T10:27:59+01:00",
+      "root_message_id": "msg-3d17705283eb"
+    },
+    {
+      "id": "thread-6323e686c19d",
+      "subject": "MiscPsycho 1.1 uploaded to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Doran, Harold"
+      ],
+      "started": "2008-01-23T11:42:48-05:00",
+      "last_reply": "2008-01-23T11:42:48-05:00",
+      "root_message_id": "msg-6323e686c19d"
+    },
+    {
+      "id": "thread-6323e686c19d",
+      "subject": "MiscPsycho 1.1 uploaded to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Doran, Harold"
+      ],
+      "started": "2008-01-23T11:42:48-05:00",
+      "last_reply": "2008-01-23T11:42:48-05:00",
+      "root_message_id": "msg-6323e686c19d"
+    },
+    {
+      "id": "thread-5a82cf915729",
+      "subject": "RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2008-01-26T10:47:57-08:00",
+      "last_reply": "2008-01-26T10:47:57-08:00",
+      "root_message_id": "msg-5a82cf915729"
+    },
+    {
+      "id": "thread-5a82cf915729",
+      "subject": "RSQLite 0.6-7 -- changes to dbGetQuery semantics",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2008-01-26T10:47:57-08:00",
+      "last_reply": "2008-01-26T10:47:57-08:00",
+      "root_message_id": "msg-5a82cf915729"
+    },
+    {
+      "id": "thread-6ea951969be3",
+      "subject": "dynlm: new version 0.2-0",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2008-01-28T11:46:26+01:00",
+      "last_reply": "2008-01-28T11:46:26+01:00",
+      "root_message_id": "msg-6ea951969be3"
+    },
+    {
+      "id": "thread-6ea951969be3",
+      "subject": "dynlm: new version 0.2-0",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2008-01-28T11:46:26+01:00",
+      "last_reply": "2008-01-28T11:46:26+01:00",
+      "root_message_id": "msg-6ea951969be3"
+    },
+    {
+      "id": "thread-89aed838c317",
+      "subject": "New package: gRain - gRAphical Independence Networks",
+      "message_count": 1,
+      "participants": [
+        "Søren Højsgaard"
+      ],
+      "started": "2008-01-28T12:46:20+01:00",
+      "last_reply": "2008-01-28T12:46:20+01:00",
+      "root_message_id": "msg-89aed838c317"
+    },
+    {
+      "id": "thread-89aed838c317",
+      "subject": "New package: gRain - gRAphical Independence Networks",
+      "message_count": 1,
+      "participants": [
+        "Søren Højsgaard"
+      ],
+      "started": "2008-01-28T12:46:20+01:00",
+      "last_reply": "2008-01-28T12:46:20+01:00",
+      "root_message_id": "msg-89aed838c317"
+    },
+    {
+      "id": "thread-55083513aea3",
+      "subject": "eRm: new version 0.9-6",
+      "message_count": 1,
+      "participants": [
+        "Patrick Mair"
+      ],
+      "started": "2008-01-28T15:32:02-08:00",
+      "last_reply": "2008-01-28T15:32:02-08:00",
+      "root_message_id": "msg-55083513aea3"
+    },
+    {
+      "id": "thread-55083513aea3",
+      "subject": "eRm: new version 0.9-6",
+      "message_count": 1,
+      "participants": [
+        "Patrick Mair"
+      ],
+      "started": "2008-01-28T15:32:02-08:00",
+      "last_reply": "2008-01-28T15:32:02-08:00",
+      "root_message_id": "msg-55083513aea3"
+    },
+    {
+      "id": "thread-0a78b0cb758c",
+      "subject": "New package: dtw - Dynamic Time Warping",
+      "message_count": 1,
+      "participants": [
+        "Toni Giorgino"
+      ],
+      "started": "2008-01-29T12:32:26+01:00",
+      "last_reply": "2008-01-29T12:32:26+01:00",
+      "root_message_id": "msg-0a78b0cb758c"
+    },
+    {
+      "id": "thread-0a78b0cb758c",
+      "subject": "New package: dtw - Dynamic Time Warping",
+      "message_count": 1,
+      "participants": [
+        "Toni Giorgino"
+      ],
+      "started": "2008-01-29T12:32:26+01:00",
+      "last_reply": "2008-01-29T12:32:26+01:00",
+      "root_message_id": "msg-0a78b0cb758c"
+    },
+    {
+      "id": "thread-fb5993a0fbab",
+      "subject": "Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2008-01-31T13:36:18-05:00",
+      "last_reply": "2008-01-31T13:36:18-05:00",
+      "root_message_id": "msg-fb5993a0fbab"
+    },
+    {
+      "id": "thread-fb5993a0fbab",
+      "subject": "Update of X2R (with FishGraph) sent to CRAN, 30 Jan 2008",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2008-01-31T13:36:18-05:00",
+      "last_reply": "2008-01-31T13:36:18-05:00",
+      "root_message_id": "msg-fb5993a0fbab"
+    }
+  ]
+}

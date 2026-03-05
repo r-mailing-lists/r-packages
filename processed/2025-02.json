@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2025-02",
+  "messages": [
+    {
+      "id": "msg-82aa3e147ee0",
+      "message_id": "<554f296f-3f0f-41a4-ae35-852a4ed12ee9@gmail.com>",
+      "from_name": "Mikael Jagan",
+      "from_email_hash": "4bef0ec6e88ca2d9a2d39dae930cd5ac951a48aafc09e210705e7cdcf3fd5964",
+      "date": "2025-02-23T19:34:48-05:00",
+      "subject": "[R-pkgs] R package 'flint', an interface to the FLINT C library, now available on CRAN",
+      "subject_clean": "R package 'flint', an interface to the FLINT C library, now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-packages/R-help subscribers,\n\nJust writing to advertise that R package 'flint', interfacing the FLINT\nC library for number theory, is now available on CRAN.\n\n     https://cran.r-project.org/package=flint\n     https://github.com/jaganmn/flint\n     https://flintlib.org/\n\nThanks very much to the CRAN Team for its early guidance and clear documentation\non the correct approach to adding external libraries to the CRAN check servers:\n\n     https://cran.r-project.org/web/packages/external_libs.html\n\nI copy the R package description here and add some comments below for early\nusers.\n\nDescription:\n\n     An R interface to 'FLINT' <https://flintlib.org/>, a C library for\n     number theory.  'FLINT' extends GNU 'MPFR' <https://www.mpfr.org/>\n     and GNU 'MP' <https://gmplib.org/> with support for arithmetic in\n     standard rings (the integers, the integers modulo n, the rational,\n     p-adic, real, and complex numbers) as well as vectors, matrices,\n     polynomials, and power series over rings.  'FLINT' implements\n     midpoint-radius interval arithmetic, also known as ball arithmetic,\n     in the real and complex numbers, enabling computation in arbitrary\n     precision with rigorous propagation of errors; see Johansson (2017)\n     <doi:10.1109/TC.2017.2690633>.  Finally, 'FLINT' provides ball\n     arithmetic implementations of many special mathematical functions,\n     with high coverage of reference works such as the NIST Digital\n     Library of Mathematical Functions <https://dlmf.nist.gov/>.  The R\n     interface defines S4 classes, generic functions, and methods for\n     representation and basic operations as well as plain R functions\n     mirroring and vectorizing entry points in the C library.\n\nComments:\n\n     * The C library is expansive:\n\n           https://flintlib.org/doc/\n\n       The R package makes no attempt to interface every C entry point.  Rather,\n       users wanting an R interface to a C entry point are encouraged to file an\n       issue requesting an implementation.  In this way, the interface will grow\n       organically and \"as needed\" by the community of R users.\n\n     * Of particular interest to applied mathematicians and statisticians will\n       be special mathematical functions of real and complex arguments not\n       previously supported by R or any R package available on CRAN (or, where\n       supported, not defined over the complex numbers, to arbitrary precision,\n       or beyond the radius of convergence of a power series representation).\n\n       Use\n\n           help.search(package = \"flint\", keyword = \"math\")\n\n       to get an index of special mathematical functions currently interfaced.\n       At the moment, this list excludes the (inverse) trigonometric, (inverse)\n       hyperbolic, logarithmic, exponential, and other functions for which\n       R provides S4 group generic functions 'Math', 'Math2', and 'Complex',\n       for which the R package provides *methods* rather than plain R functions.\n\n     * The interface to traditional number theoretic functionality (concerning\n       integers, the integers modulo n, polynomials over the integers, ...) is\n       small right now.  I don't personally have use for it.  But it can be\n       expanded, again by request of users.\n\n     * Installation from sources depends on FLINT, GNU MPFR, and GNU MP headers\n       and libraries.  Use your operating system's package manager to install\n       these ...\n\n           $ pacman -S flint\n           $ apt install libflint-dev\n           $ dnf install flint-devel\n           $ pkg install flint\n           $ port install flint\n           $ brew install flint\n\n       ... unless ...\n\n       (1) The repositories provide a too old (< 3.0.0) version of FLINT, in\n           which case consider building FLINT from a recent (>= 3.0.0) source\n           tarball obtained here:\n\n               https://github.com/flintlib/flint/releases\n\n       (2) You use Windows and obtained R from CRAN, in which case use the\n           headers and libraries from a recent enough Rtools (>= Rtools44 r6414)\n\n               https://cran.r-project.org/bin/windows/Rtools/\n               https://cran.r-project.org/bin/windows/Rtools/rtools44/news.html\n\n           choosing the Rtools installer built for your architecture (x86_64 or\n           aarch64).\n\n       (3) You use macOS and obtained R from CRAN, in which case install the\n           macOS binaries (for flint, mpfr, and gmp) maintained by Simon Urbanek\n\n               https://mac.r-project.org/bin/\n               https://mac.r-project.org/bin/darwin20/x86_64/\n               https://mac.r-project.org/bin/darwin20/arm64/\n\n           choosing the binaries built for your architecture (x86_64 or arm64).\n\nComments from early users are very much welcome and appreciated.\n\nMikael",
+      "body_snippet": "Dear R-packages/R-help subscribers,\n\nJust writing to advertise that R package 'flint', interfacing the FLINT\nC library for number theory, is now available on CRAN.\n\n     https://cran.r-project.org/pac",
+      "thread_id": "thread-82aa3e147ee0",
+      "thread_depth": 0,
+      "month": "2025-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-82aa3e147ee0",
+      "subject": "R package 'flint', an interface to the FLINT C library, now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mikael Jagan"
+      ],
+      "started": "2025-02-23T19:34:48-05:00",
+      "last_reply": "2025-02-23T19:34:48-05:00",
+      "root_message_id": "msg-82aa3e147ee0"
+    }
+  ]
+}

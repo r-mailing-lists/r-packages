@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-02",
+  "messages": [
+    {
+      "id": "msg-00df9325b834",
+      "message_id": "<CALABNevL7o=4hmB2v2G2PQmeCUcX7oa7YuPMfZ_Q6Az2RoL-pQ@mail.gmail.com>",
+      "from_name": "Greifer, Noah",
+      "from_email_hash": "b3c207b5e0a8590ca1107db6f21458ba872693455eb4805036f270e895dac4bc",
+      "date": "2023-02-01T12:49:30-05:00",
+      "subject": "[R-pkgs] {clarify}: Simulation-Based Inference for Regression Models",
+      "subject_clean": "{clarify}: Simulation-Based Inference for Regression Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\nOur new package {clarify} has been released. {clarify} provides\nsimulation-based inference as an alternative to the delta method for\ninterpretable quantities derived from model parameters, like average\nmarginal effects, dose-response functions, and predictions at\nrepresentative values. Also provided are methods for combining such\nquantities across multiply imputed datasets.\n\nThose of you who have used Clarify for Stata or the retired R package\n{Zelig} will find similar and expanded capabilities in {clarify}.\n\nInstall {clarify} using\ninstall.packages(\"clarify\")\n\nCRAN page:\nhttps://cran.r-project.org/package=clarify\n\n{clarify} website:\nhttps://iqss.github.io/clarify/\n\nThank you!\n\n-- \nNoah Greifer, Ph.D.\n*Statistical Consultant and Programmer*\n*Institute for Quantitative Social Science | Harvard University*\nPronouns: he/him\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\nOur new package {clarify} has been released. {clarify} provides\nsimulation-based inference as an alternative to the delta method for\ninterpretable quantities derived from model parame",
+      "thread_id": "thread-00df9325b834",
+      "thread_depth": 0,
+      "month": "2023-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-00df9325b834",
+      "subject": "{clarify}: Simulation-Based Inference for Regression Models",
+      "message_count": 1,
+      "participants": [
+        "Greifer, Noah"
+      ],
+      "started": "2023-02-01T12:49:30-05:00",
+      "last_reply": "2023-02-01T12:49:30-05:00",
+      "root_message_id": "msg-00df9325b834"
+    }
+  ]
+}

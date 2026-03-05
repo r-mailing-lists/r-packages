@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-02",
+  "messages": [
+    {
+      "id": "msg-ef49979af876",
+      "message_id": "<CAE-oFUdnZ=g8TDZyhtZ2cmudWt-Lhk4nLnF_P_hTc9rkgXbe-A@mail.gmail.com>",
+      "from_name": "Jacob",
+      "from_email_hash": "1e4c3846518c472c910e41f91f5643e47ddb10b04bae3b0c4133c52127575dc2",
+      "date": "2019-02-04T09:05:37-05:00",
+      "subject": "[R-pkgs] Major Update to asciiSetupReader Package",
+      "subject_clean": "Major Update to asciiSetupReader Package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The latest version of the package asciiSetupReader includes a number of\nmajor improvements and bug fixes. This package lets you read in .dat+.sps\nand .dat+.sas pair files.\n\nSee the following for an overview of the package:\nhttps://jacobkap.github.io/asciiSetupReader/\n\n\nFor a list of changes please see here:\nhttps://cran.r-project.org/web/packages/asciiSetupReader/news/news.html\n\nBest,\nJacob\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The latest version of the package asciiSetupReader includes a number of\nmajor improvements and bug fixes. This package lets you read in .dat+.sps\nand .dat+.sas pair files.\n\nSee the following for an ov",
+      "thread_id": "thread-ef49979af876",
+      "thread_depth": 0,
+      "month": "2019-02"
+    },
+    {
+      "id": "msg-f44d49049232",
+      "message_id": "<CAAHpScqk1jhXDomtjU_Z+M-gX7Qpk1UWuLHBX-N8DZa2z=KGPQ@mail.gmail.com>",
+      "from_name": "Bruce Swihart",
+      "from_email_hash": "eaea70a2bfac0f5bf18156538a94783540816e4fbe0a12905fb0a2cd9d9dd52b",
+      "date": "2019-02-05T12:54:20-05:00",
+      "subject": "[R-pkgs] Jim Lindsey's packages back on CRAN",
+      "subject_clean": "Jim Lindsey's packages back on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nJim Lindsey's R packages:\n\n  * event: Event History Procedures and Models\n  * gnlm: Generalized Nonlinear Regression Models\n  * growth: Multivariate Normal and Elliptically-Contoured Repeated\nMeasurements Models\n  * repeated: Non-Normal Repeated Measurements Models\n  * rmutil: Utilities for Nonlinear Regression and Repeated Measurements\nModels\n  * stable: Probability Functions and Generalized Regression Models for\nStable Distributions\n\nare now being maintained on CRAN and developed with a Github repo\nworkflow.   There are still off-CRAN versions and supporting materials\navailable at his website (http://www.commanster.eu/rcode.html).  I have\nadded some code to help equate and transform the pm=0, pm=1 Nolan\nparameterizations with the parameterization provided in stable (see more at\nhttps://github.com/swihart/stable).\n\nAll the best,\nBruce\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R Users,\n\nJim Lindsey's R packages:\n\n  * event: Event History Procedures and Models\n  * gnlm: Generalized Nonlinear Regression Models\n  * growth: Multivariate Normal and Elliptically-Contoured Repeate",
+      "thread_id": "thread-f44d49049232",
+      "thread_depth": 0,
+      "month": "2019-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ef49979af876",
+      "subject": "Major Update to asciiSetupReader Package",
+      "message_count": 1,
+      "participants": [
+        "Jacob"
+      ],
+      "started": "2019-02-04T09:05:37-05:00",
+      "last_reply": "2019-02-04T09:05:37-05:00",
+      "root_message_id": "msg-ef49979af876"
+    },
+    {
+      "id": "thread-f44d49049232",
+      "subject": "Jim Lindsey's packages back on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Bruce Swihart"
+      ],
+      "started": "2019-02-05T12:54:20-05:00",
+      "last_reply": "2019-02-05T12:54:20-05:00",
+      "root_message_id": "msg-f44d49049232"
+    }
+  ]
+}

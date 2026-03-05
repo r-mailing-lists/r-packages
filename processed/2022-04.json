@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-04",
+  "messages": [
+    {
+      "id": "msg-840381cce7c2",
+      "message_id": "<d52bf841-0a15-ba10-6585-155a33be35e9@bristol.ac.uk>",
+      "from_name": "Peter Green",
+      "from_email_hash": "1a75dbfab58d60bdc93956658d147fd77c611ae699cce48b00a0c715cdf3fb6f",
+      "date": "2022-04-02T15:58:17+01:00",
+      "subject": "[R-pkgs] Nmix package - Bayesian inference about univariate Gaussian mixtures with an unknown number of components",
+      "subject_clean": "Nmix package - Bayesian inference about univariate Gaussian mixtures with an unknown number of components",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This package is now on CRAN in version 2.0.2, and anyone interested in \ninference on mixture models, or more generally in Bayesian inference for \n\"trans-dimensional\" problems, is encouraged to try it out. The \nmethodology is that presented by Richardson and Green in our 1997 \narticle in the Journal of the Royal Statistical Society, using \nReversible jump Markov chain Monte Carlo. The package is based on the \nFortran code used in the research for that paper, which is available now \nto the R user for the first time. A rich variety of outputs from the \nMCMC sample path is available, optionally, and many features of the \nposterior distribution are presented graphically. Apart from its direct \nuse in analysing data, the package might be useful in supporting \nlearning about Bayesian computation.\n\nFeedback is most welcome, and I may be open to extending the \nfunctionality of the package in response to concrete suggestions.\n\nregards,\n\nPeter Green",
+      "body_snippet": "This package is now on CRAN in version 2.0.2, and anyone interested in \ninference on mixture models, or more generally in Bayesian inference for \n\"trans-dimensional\" problems, is encouraged to try it ",
+      "thread_id": "thread-840381cce7c2",
+      "thread_depth": 0,
+      "month": "2022-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-840381cce7c2",
+      "subject": "Nmix package - Bayesian inference about univariate Gaussian mixtures with an unknown number of components",
+      "message_count": 1,
+      "participants": [
+        "Peter Green"
+      ],
+      "started": "2022-04-02T15:58:17+01:00",
+      "last_reply": "2022-04-02T15:58:17+01:00",
+      "root_message_id": "msg-840381cce7c2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-12",
+  "messages": [
+    {
+      "id": "msg-9eec9b28f188",
+      "message_id": "<CAARY7kg9QnxFkNh_MMO1=xa4wMOet=McSFN1y1JTMK1d5F9MPQ@mail.gmail.com>",
+      "from_name": "David Hugh-Jones",
+      "from_email_hash": "c01d3bbb6a694b769edf375156fb923c7ef096beba54668f403d92863f7141d2",
+      "date": "2022-12-07T16:57:12Z",
+      "subject": "[R-pkgs] onetime 0.1.0: Run Code Only Once",
+      "subject_clean": "onetime 0.1.0: Run Code Only Once",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nOnetime 0.1.0, a utility package of interest to package developers, is now\non CRAN:\n\nhttps://cran.r-project.org/package=onetime\n\nOnetime uses lockfiles to perform an action only once (ever, or with an\nexpiry date) on a given computer. For example, it can send a message or\nwarning:\n\nfor (i in 1:10) {\n  onetime_message(\"This will be shown only once\", id = \"my-message\")\n}\n\nIt also lets you send a message and confirm the user doesn't need to see it\nagain:\n\nonetime_message_confirm(\"User can opt not to show this message again\",\n                                             id = \"my-confirm-message\")\n\nOnetime checks that you have permission to store files on the user's\ncomputer, and allows package authors to ask for this permission using\ncheck_ok_to_store().\n\nPackage authors can use onetime to print one-off informative messages for\nnew users, or to do other one-off actions.\n\nDocumentation is available at https://hughjonesd.github.io/onetime/.\n\nCheers,\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nOnetime 0.1.0, a utility package of interest to package developers, is now\non CRAN:\n\nhttps://cran.r-project.org/package=onetime\n\nOnetime uses lockfiles to perform an action only once (ever,",
+      "thread_id": "thread-9eec9b28f188",
+      "thread_depth": 0,
+      "month": "2022-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9eec9b28f188",
+      "subject": "onetime 0.1.0: Run Code Only Once",
+      "message_count": 1,
+      "participants": [
+        "David Hugh-Jones"
+      ],
+      "started": "2022-12-07T16:57:12+00:00",
+      "last_reply": "2022-12-07T16:57:12+00:00",
+      "root_message_id": "msg-9eec9b28f188"
+    }
+  ]
+}

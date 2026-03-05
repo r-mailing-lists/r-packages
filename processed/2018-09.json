@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-09",
+  "messages": [
+    {
+      "id": "msg-fb711cb764d6",
+      "message_id": "<086AD38D-E04D-4260-BDC6-979E0121E799@contoso.com>",
+      "from_name": "Ben Wiseman",
+      "from_email_hash": "0c96cd6fe289e5be696939a2365da1832987a44a5d0c04b3b702df7b811a70cc",
+      "date": "2018-09-13T20:43:44Z",
+      "subject": "[R-pkgs] A small package to make R nicer: roperators",
+      "subject_clean": "A small package to make R nicer: roperators",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nRecently, my coworkers and I put up a package `roperators` which adds some useful features like string arithmetic, in-place modifiers, and several shortcuts. Loosely inspired by magrittr, it simplifies your R code and makes scripts that little bit nicer to write. It also serves as a response to some of the common criticisms about R that Pythonistas often throw about (for the Hoarde and all that).\n\nYou can read about it here:\nhttps://happylittlescripts.blogspot.com/\nhttps://cran.r-project.org/web/packages/roperators/index.html\n\nAny feedback would be greatly appreciated ?\n\nCiao!\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nRecently, my coworkers and I put up a package `roperators` which adds some useful features like string arithmetic, in-place modifiers, and several shortcuts. Loosely inspired by magrittr, it ",
+      "thread_id": "thread-fb711cb764d6",
+      "thread_depth": 0,
+      "month": "2018-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fb711cb764d6",
+      "subject": "A small package to make R nicer: roperators",
+      "message_count": 1,
+      "participants": [
+        "Ben Wiseman"
+      ],
+      "started": "2018-09-13T20:43:44+00:00",
+      "last_reply": "2018-09-13T20:43:44+00:00",
+      "root_message_id": "msg-fb711cb764d6"
+    }
+  ]
+}

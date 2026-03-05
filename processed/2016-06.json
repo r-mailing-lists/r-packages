@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-06",
+  "messages": [
+    {
+      "id": "msg-b9d8dd229c5d",
+      "message_id": "<055c2148-f8ba-f4ba-4dbc-85c7e38bc49c@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2016-06-08T10:58:49-04:00",
+      "subject": "[R-pkgs] New versions of heplots, candisc, mvinfluence and matlib on CRAN",
+      "subject_clean": "New versions of heplots, candisc, mvinfluence and matlib on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# New versions of heplots, candisc, mvinfluence and matlib on CRAN\n# ----------------------------------------------------------------\n\nNew versions of my packages designed for visualization of multivariate\nlinear models have recently been submitted to CRAN. The matlib package\nalso contains some plot methods for vector diagrams representing linear\nalgebra concepts in multivariate statistical methods.\n\n## heplots\n## -------\n\nDevel URL: https://r-forge.r-project.org/projects/heplots/\nIssue tracker: https://r-forge.r-project.org/tracker/?group_id=24\n\nProvides HE plot and other functions for visualizing hypothesis\ntests in multivariate linear models. HE plots represent sums-of-squares-and-\nproducts matrices for linear hypotheses and for error using ellipses (in two\ndimensions) and ellipsoids (in three dimensions).\n\nVersion 1.3-0 (2016-06-03)\n\no In cqplot(), pch, col, and cex can now be vectors\no Bump version, prepare for release\n\nVersion 1.2-1 (2016-05-19)\n\no in coefplot.mlm(), now pass `label.pos` to label.ellipse()\no added Mahalanobis() for classical and robust squared distances; handles\n   missing data gracefully and provides a confidence envelope\no added SocialCog data [Thx: Leah Hartman]\no added cqplot() of Mahalanobis distances as a plot method for an mlm \nand for multivariate data\n\nVersion 1.2-0 (2016-04-27)\n\no covEllipses() extended to more than two variables, giving a \nscatterplot matrix plot\no plot.boxM() now can plot other measures of the eigenvalues of the \ncovariance matrices,\n   useful for understanding the properties of the test.\no added bartlettTests() for a collection of univariate Bartlett tests\no added leveneTests() for a collection of univariate Levene tests\no added NeuroCog data, a simple one-way MANOVA [Thx: Leah Hartman]\no label.ellipse() now uses a much more flexible `label.pos` argument for \npositioning the\n   text labels used in heplot() and friends.\n\n## candisc\n## -------\n\nDevel URL: https://r-forge.r-project.org/projects/candisc/\n\nFunctions for computing and visualizing generalized canonical discriminant\nanalyses and canonical correlation analysis for a multivariate linear model.\nTraditional canonical discriminant analysis is restricted to a one-way \n'MANOVA'\ndesign and is equivalent to canonical correlation analysis between a set of\nquantitative response variables and a set of dummy variables coded from the\nfactor variable. The 'candisc' package generalizes this to higher-way \n'MANOVA'\ndesigns for all factors in a multivariate linear model, computing canonical\nscores and vectors for each term. The graphic functions provide low-rank \n(1D,\n2D, 3D) visualizations of terms in an 'mlm' via the 'plot.candisc' and\n'heplot.candisc' methods. Related plots are now provided for canonical\ncorrelation analysis when all predictors are quantitative.\n\nChanges in version 0.7-1 (2016-05-23)\n\n   o respect var.lwd in 2D plot.candisc()\n   o heplot.candisc() gets a rev.axes argument to reverse the axes and a \nvar.pos\n     argument to position  variable labels\n   o vectors() now produces nicer arrow head a la matlib::vectors()\n   o added var.pos argument to plot.candisc\n   o allow to suppress likelihood ratio tests in print.candisc\n\nChanges in version 0.7-0 (2016-04-25)\n\n   o Added Wine data -- three cultivars with a very simple canonical \nstructure\n   o Added ellipses to plot.candisc(); enhanced candisc.Rd documentation\n   o Added varOrder() for effect ordering in MLMs-- permutations of \nvariables\n     according to various criteria for scatterplot matrices, etc.\n   o plot.candisc() gets a var.labels argument\n   o added method=\"colmean\" and descending=T/F to varOrder()\n   o plot.candisc() gets a rev.axes argument\n   o fixed imports() in NAMESPACE for CRAN checks\n\n\n## mvinfluence\n## -----------\n\nDevel URL: https://r-forge.r-project.org/projects/mvinfluence/\n\nComputes regression deletion diagnostics for multivariate linear models and\nprovides some associated diagnostic plots. The diagnostic measures \ninclude hat-\nvalues (leverages), generalized Cook's distance, and generalized squared\n'studentized' residuals. Several types of plots to detect influential\nobservations are provided.\n\nVersion 0.8 (2016-06-02)\n\no Fixed problems for CRAN: NAMESPACE, Rd files\no Added more examples to Rd files\no Added infIndexPlot for index plots of diagnostic measures\no Fixed buglet in influencePlot re: rownames of result\n\n## matlib\n## ------\n\nDevel URL: https://github.com/friendly/matlib\nIssue tracker: https://github.com/friendly/matlib/issues\n\nA collection of matrix functions for teaching and learning matrix\nlinear algebra as used in multivariate statistical methods. These \nfunctions are\nmainly for tutorial purposes in learning matrix algebra ideas using R. \nIn some\ncases, functions are provided for concepts available elsewhere in R, but \nwhere\nthe function call or name is not obvious. In other cases, functions are \nprovided\nto show or demonstrate an algorithm. In addition, a collection of \nfunctions are\nprovided for drawing vector diagrams in 2D and 3D, e.g., regvec() and \nregvec2d()\nfor vector diagrams for the vector space representation of a \ntwo-variable regression\nmodel, plotEqn() and plotEqn3d() for diagrams of linear equations of the \nform\nA x = b.\n\nmatlib 0.7.3\n\n- Changed gaussianElimination() by defining local ERO functions to make \nthe algorithm clearer;\n   in verbose mode, show each ERO.\n- Added a draw argument to `vectors3d()` and `arrows3d()`, which \ndefaults to TRUE.\n   If FALSE, just returns returns the \"reg.length\" to help in scaling.\n- Small cosmetic changes to regvec3d().\n- Added a `showEig` function to draw eigenvectors superimposed on a \ndataEllipse [MF]\n\nmatlib 0.7.2\n\n   - added argument `error.sphere` to `plot.regvec3d()` [JF]\n   - remove use of `lengths()` in `corner()` to avoid R version dependency\n\n\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept. & Chair, Quantitative Methods\nYork University      Voice: 416 736-2100 x66249 Fax: 416 736-5814\n4700 Keele Street    Web:http://www.datavis.ca\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "# New versions of heplots, candisc, mvinfluence and matlib on CRAN\n# ----------------------------------------------------------------\n\nNew versions of my packages designed for visualization of multiva",
+      "thread_id": "thread-b9d8dd229c5d",
+      "thread_depth": 0,
+      "month": "2016-06"
+    },
+    {
+      "id": "msg-0d5e87e1c467",
+      "message_id": "<3C22D6B3-96D1-4C1F-979C-A91EDAB7FFD9@nyumc.org>",
+      "from_name": "Goldfeld, Keith",
+      "from_email_hash": "430a86911779ec3342034acb590c7ffaac1efc3d2717bf14d94b77f716a34141",
+      "date": "2016-06-21T15:18:50Z",
+      "subject": "[R-pkgs] New package: simstudy",
+      "subject_clean": "New package: simstudy",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings ?\n\nA new package ?simstudy? is now available on CRAN. What started as a small number of functions that enabled me to quickly generate simple data sets for teaching and power/sample size calculations has grown into a more robust set of tools that allows users to simulate more complex data sets in order to explore modeling techniques or better understand data generating processes. The user specifies a set of relationships between covariates in table form (the table can be built interactively or created externally as a csv file), and generates data based on these specifications. The final data sets can represent data from randomized control trials, observed (non-randomized) studies, repeated measure (longitudinal) designs, and cluster randomized trials. Missingness can be generated using various mechanisms (MCAR, MAR, NMAR). Currently, data can be generated from normal/Gaussian, binary, Poisson, truncated Poisson, Gamma, and uniform distributions. Survival data can also be generated.\n\nI will be adding functionality over time, and will be particularly interested in knowing what userRs would be interested in having me add. I look forward to hearing your comments.\n\n- Keith\n\n\nKeith Goldfeld\nDepartment of Population Health\nSchool of Medicine, New York University\n227 East 30th Street, 6th Floor\nNew York, NY  10016\n\n\n------------------------------------------------------------\nThis email message, including any attachments, is for the sole use of the intended recipient(s) and may contain information that is proprietary, confidential, and exempt from disclosure under applicable law. Any unauthorized review, use, disclosure, or distribution is prohibited. If you have received this email in error please notify the sender by return email and delete the original message. Please note, the recipient should check this email and any attachments for the presence of viruses. The organization accepts no liability for any damage caused by any virus transmitted by this email.\n=================================\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Greetings ?\n\nA new package ?simstudy? is now available on CRAN. What started as a small number of functions that enabled me to quickly generate simple data sets for teaching and power/sample size calc",
+      "thread_id": "thread-0d5e87e1c467",
+      "thread_depth": 0,
+      "month": "2016-06"
+    },
+    {
+      "id": "msg-00135796c45b",
+      "message_id": "<CAL8y_Qw-EwAtUJ_Y=Kyqgtv6vsOppfMLyPAUq645vOfEBAZE9w@mail.gmail.com>",
+      "from_name": "Marcin Kosiński",
+      "from_email_hash": "fdef291fec9c834c8b1f3fe80b9868159d450dcdf61b747e0dd07b23c902612f",
+      "date": "2016-06-27T00:16:02+02:00",
+      "subject": "[R-pkgs] archivist.github 0.2.1 on CRAN - Task View: Reproducible Research",
+      "subject_clean": "archivist.github 0.2.1 on CRAN - Task View: Reproducible Research",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all R devs,\n\narchivist.github has appeared on CRAN in it's updated version.\nYou can check the last blog post on how has RHero saved the Backup City\nwith the power or archivist and GitHub\nhttp://www.r-bloggers.com/r-hero-saves-backup-city-with-archivist-and-github/\n\nThere is also going to be a talk on useR2016 about it's core dependency -\narchivist\n\nHow to use the archivist package to boost reproducibility of your research\n<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>\n<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>\n<http://schedule.user2016.org/event/7BYx/how-to-use-the-archivist-package-to-boost-reproducibility-of-your-research>\n\nIf you would like to boost your reproducible engines then this is a talk\nfor you :)\n\nBest,\narchivist.github author\nMarcin Kosi?ski\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all R devs,\n\narchivist.github has appeared on CRAN in it's updated version.\nYou can check the last blog post on how has RHero saved the Backup City\nwith the power or archivist and GitHub\nhttp://www",
+      "thread_id": "thread-00135796c45b",
+      "thread_depth": 0,
+      "month": "2016-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b9d8dd229c5d",
+      "subject": "New versions of heplots, candisc, mvinfluence and matlib on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2016-06-08T10:58:49-04:00",
+      "last_reply": "2016-06-08T10:58:49-04:00",
+      "root_message_id": "msg-b9d8dd229c5d"
+    },
+    {
+      "id": "thread-0d5e87e1c467",
+      "subject": "New package: simstudy",
+      "message_count": 1,
+      "participants": [
+        "Goldfeld, Keith"
+      ],
+      "started": "2016-06-21T15:18:50+00:00",
+      "last_reply": "2016-06-21T15:18:50+00:00",
+      "root_message_id": "msg-0d5e87e1c467"
+    },
+    {
+      "id": "thread-00135796c45b",
+      "subject": "archivist.github 0.2.1 on CRAN - Task View: Reproducible Research",
+      "message_count": 1,
+      "participants": [
+        "Marcin Kosiński"
+      ],
+      "started": "2016-06-27T00:16:02+02:00",
+      "last_reply": "2016-06-27T00:16:02+02:00",
+      "root_message_id": "msg-00135796c45b"
+    }
+  ]
+}

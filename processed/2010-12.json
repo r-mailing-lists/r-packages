@@ -1,0 +1,306 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-12",
+  "messages": [
+    {
+      "id": "msg-93b6ab74bc1a",
+      "message_id": "<AANLkTikkyBcvx6qdt-9w9y-YFbTiqStqg23=PZASqdz6@mail.gmail.com>",
+      "from_name": "Yihui Xie",
+      "from_email_hash": "233321ed9815f7d81a1c5f64502dfaacb2b6f3570ae39ee0e7d761f5b987e884",
+      "date": "2010-12-03T09:11:02-06:00",
+      "subject": "[R-pkgs] formatR update (0.1-5)",
+      "subject_clean": "formatR update (0.1-5)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "In formatR 0.1-5, the dependency on the gWidgets and animation\npackages are removed. The GUI by gWidgets is optional now.\n\nMeanwhile, the function tidy.source() has been moved from the\nanimation package to this package.\n\n> library(formatR)\n> tidy.source(textConnection('\n  # rotation of the word \"Animation\"\n  # in a loop; change the angle and color\n  # step by step\n  for (i in 1:360) {\n  # redraw the plot again and again\n  plot(1,ann=FALSE,type=\"n\",axes=FALSE)\n  # rotate; use rainbow() colors\n  text(1,1,\"Animation\",srt=i,col=rainbow(360)[i],cex=7*i/360)\n   # pause for a while\n   Sys.sleep(0.01)}\n'))\n\n# rotation of the word 'Animation'\n# in a loop; change the angle and color\n# step by step\nfor (i in 1:360) {\n    # redraw the plot again and again\n    plot(1, ann = FALSE, type = \"n\", axes = FALSE)\n    # rotate; use rainbow() colors\n    text(1, 1, \"Animation\", srt = i, col = rainbow(360)[i], cex = 7 * i/360)\n    # pause for a while\n    Sys.sleep(0.01)\n}\n\nFor more information, see http://yihui.name/en/2010/12/formatr-update-0-1-5/\n\nRegards,\nYihui\n--\nYihui Xie <xieyihui at gmail.com>\nPhone: 515-294-2465 Web: http://yihui.name\nDepartment of Statistics, Iowa State University\n2215 Snedecor Hall, Ames, IA",
+      "body_snippet": "In formatR 0.1-5, the dependency on the gWidgets and animation\npackages are removed. The GUI by gWidgets is optional now.\n\nMeanwhile, the function tidy.source() has been moved from the\nanimation packa",
+      "thread_id": "thread-93b6ab74bc1a",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-6ae57a089859",
+      "message_id": "<AANLkTi=LY4ryXHLmrJ7pu_+t53rL_4E6rH=b6Q2c_-ZE@mail.gmail.com>",
+      "from_name": "Charlie Sharpsteen",
+      "from_email_hash": "f11c1b44e624ad93d6ab5001cc3c4e30763f6b8f246981fde0a3f61a25ac2fbc",
+      "date": "2010-12-06T18:51:02-08:00",
+      "subject": "[R-pkgs] tikzDevice 0.5.3 released to CRAN",
+      "subject_clean": "tikzDevice 0.5.3 released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new release of the tikzDevice was posted to CRAN today and will soon\nbe available from mirrors worldwide.  The tikzDevice package provides\na graphics device that translates R graphics into TeX code suitable\nfor seamless integration with LaTeX documents.  Version 0.5.3 of the\ntikzDevice is a bugfix release that addresses clarity of warning/error\nmessages and enhances the handling of characters that are special to\nLaTeX.  Details are contained in the changelog at the end of this\nannouncement.\n\nBarring the discovery of significant issues, the next release of the\ntikzDevice should be version 0.6.0.  This release is planned to\ncontain new functionality drawn from one or both of the following\ndevelopment efforts:\n\n- Support for UTF8 plot text when tikzDevice is used with the XeTeX engine.\n\n- Support for the raster and polypath additions to the R graphics engine.\n\n\n---\n\n### Version: 0.5.3\n\n---\n\n#### Bug Fixes\n\n- R 2.12.x now throws a warning message when shell commands run via `system()`\n  have non-zero exit conditions.  The metric calculation runs LaTeX on a file\n  containing an \\@@end command.  This causes a non zero exit condition.  The end\n  result was that users were getting spammed by warning messages.  These\n  messages have been gagged for now and a better way to run LaTeX such that a\n  non-zero condition can meaningfully indicate an error is being investigated.\n\n- The range of characters the default sanitizer looks for has been extended.  It\n  should now process all characters that are special to TeX with the exception\n  of backslashes.  Documentation has been improved.\n\n- Detection of failed string metric calculations has been strengthened and the\n  resulting error message has been improved.\n\n\nHappy TeXing!\n\n-The tikzDevice team",
+      "body_snippet": "A new release of the tikzDevice was posted to CRAN today and will soon\nbe available from mirrors worldwide.  The tikzDevice package provides\na graphics device that translates R graphics into TeX code ",
+      "thread_id": "thread-6ae57a089859",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-6a94fd6b8372",
+      "message_id": "<AANLkTikApA4_FpOi=PGsHZD8GM=UScK0ZRCo92dgEC++@mail.gmail.com>",
+      "from_name": "Cameron Bracken",
+      "from_email_hash": "020a769e735b40b41b51198f839f2fc5533f7323b1c06483bcac5d5d323f5587",
+      "date": "2010-12-07T16:26:40-07:00",
+      "subject": "[R-pkgs] pgfSweave 1.1.1 Released",
+      "subject_clean": "pgfSweave 1.1.1 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The next release of?pgfSweave?is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the?highlight?package. This can be\nturned off with the new `highlight`?option.\n- \"Tidying\" of source code output via the?tidy?option.\n- Access to?tikzDevice?sanitization through a code chunk option?`sanitize`\n- Automatic addition of the?\\pgfrealjobname?command if it does not\nexist similarly to the addition of the?\\usepackage{Sweave}?line.\n- Setting tex.driver=latex will now (in addition to working) generate\nan eps file\n\nAnd of course bug fixes:\n\n- Fixes for bunches of issues related to the changes in Sweave in R\n2.12. I think these issues are now resolved (fingers crossed)\n- keep.source?actually works now.\n\nSee the?NEWS?file for the complete list of changes and the?vignette\nfor information on now to use the new options.\n\nCheers!\n\n-Cameron",
+      "body_snippet": "The next release of?pgfSweave?is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the?highlight?pac",
+      "thread_id": "thread-6a94fd6b8372",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-0259355737e4",
+      "message_id": "<AANLkTinz1NDT9Y=zsnBZx_DqzkAcTCa177hmOz41Fq4r@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-12-13T10:02:49-05:00",
+      "subject": "[R-pkgs] batchfiles 0.6-0",
+      "subject_clean": "batchfiles 0.6-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "batchfiles is a set of batch, javascript and HTML\nApplication files that are useful for running R and\nassociated programs on Windows.\n\nVersion 0.6-0 updates them for the new architecture\nspecific directory structure in R 2.12.0 .\n\nA few of the lesser used utilities have been dropped.\n\nEach batchfile is self contained.  To install just\nplace all or just any that you wish to use anywhere on\nyour path.  The batch command:\n\n\tpath\n\nwill show you which folders are on your path.\n\n\nDOWNLOAD\n\nThey can be downloaded individually from the svn\nrepository available via the home page or they can be\ndownloaded all at one in a zip file from CRAN here:\n\nhttp://cran.r-project.org/contrib/extra/batchfiles/\n\n\nMORE INFO\n\nMore info is available from the home page:\n\nhttp://batchfiles.googlecode.com\n\n\nLIST OF PROGRAMS\n\nLegend:\nh = no args gives help\n0 = common usage is to enter command name without arguments\nd = in development\n* = all files marked with one star are the same.  Program checks name\nby which its called to determine action.\n** = all files marked with two stars are the same.  Program checks\nname by which its called to determine action.\n\n#Rscript.bat - put at top of R file to make it a batch file (h) (*)\nclip2r.js - pastes clipboard into Rgui.  See comments in file for use\nfrom vim. (0)(d)\ncopydir.bat - copy a library from one version of R to another (h)\nel.js - run elevated - Vista and up, e.g. el Rgui  runs R elevated\nfind-miktex.hta - GUI to find MiKTeX (0)\nkopy.bat - copy Rcmd to other batch files (h)(d)\nmovedir.bat - move library from one version of R to another (h)\nR.bat - like R.exe but finds R from registry (0) (*)\nRcmd.bat - like Rcmd.exe but finds R from registry (h) (*)\nRgui.bat - like Rgui.exe but finds R from registry (0) (*)\nRguiStart.bat - like Rgui.bat but arg1 defines folder to start R in (*)\nRscript.bat - run .R script (h) (*)\nRterm.bat - like rterm.exe but finds R from registry (h) (*)\nRtidy.bat - reformat a .R file, e.g. Rtidy myfile.R > outfile.R (d)\nRtools.bat - place Rtools on path for remainder of console session (0) (*)\nRversions.bat - list R and set R version in registry, e.g. on Vista:\nel cmd/c Rversions R-2.12.0 (0)\nshow-svn-info.hta - show svn info if current folder is an svn checkout (0)\nStangle.bat - run arg1 through Stangle (h) (**)\nSweave.bat - run arg1 through Sweave (h) (**)\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "batchfiles is a set of batch, javascript and HTML\nApplication files that are useful for running R and\nassociated programs on Windows.\n\nVersion 0.6-0 updates them for the new architecture\nspecific dire",
+      "thread_id": "thread-0259355737e4",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-114295ebd359",
+      "message_id": "<D979C3DE-5D6D-47B4-B301-8141BD54A8D3@gmail.com>",
+      "from_name": "Markus Gesmann",
+      "from_email_hash": "6fcb58ff8ebdda71412f05e66028373e96b0d1a2a71fbea0e1fb1d9050f686db",
+      "date": "2010-12-14T07:49:51Z",
+      "subject": "[R-pkgs] googleVis 0.2.2 - Using the Google Visualisation API with R",
+      "subject_clean": "googleVis 0.2.2 - Using the Google Visualisation API with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101214/0b9afe1c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101214/0b9afe1c/attachment.pl>",
+      "thread_id": "thread-114295ebd359",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-81a0ed9ad138",
+      "message_id": "<4D08A4A2.40908@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2010-12-15T12:21:06+01:00",
+      "subject": "[R-pkgs] package JM -- version 0.8-0",
+      "subject_clean": "package JM -- version 0.8-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter models. These models are \napplicable in mainly two settings. First, when focus is in the survival \noutcome and we wish to account for the effect of a time-dependent \ncovariate measured with error. Second, when focus is in the longitudinal \noutcome and we wish to correct for nonrandom dropout.\n\nNew features include:\n\n* for all joint models fitted by JM there is now the option to use a \npseudo adaptive Gauss-Hermite rule. This is much faster than the default \noption and produces results of equal or better quality. It can be \ninvoked via the 'method' argument of jointModel() by specifying \"aGH\" \ninstead of \"GH\", e.g., 'method = \"piecewise-PH-aGH\"' instead of 'method \n= \"piecewise-PH-GH\"'.\n\n* function rocJM() has been added that estimates time-dependent\nsensitivity and specificity (and the corresponding time-dependent\nROCs and AUCs) for longitudinal markers under the joint modeling\nframework. The function also allows for several predictions rules.\n\n* the new argument 'interFact' added in jointModel() allows the \nspecification of interaction terms between the longitudinal outcome and \nbaseline covariates.\n\n* the new arguments 'parameterization' and 'derivForm' added in \njointModel() allow the specification of more general association \nstructures between the longitudinal marker and the risk for an event. \nFor instance, if a random intercepts and random slopes mixed model has \nbeen postulated for the longitudinal outcome, then this argument can be \nused to also associate the risk for an event with the subject-specific \nslopes.\n\n* a predict method has been added. Currently this only calculates fitted \naverage longitudinal evolutions based on the information provided in the \n'newdata' argument.\n\nMore information can be found in the corresponding help files, and \nexamples at http://rwiki.sciviews.org/doku.php?id=packages:cran:jm\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014\nWeb: http://www.erasmusmc.nl/biostatistiek/",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter model",
+      "thread_id": "thread-81a0ed9ad138",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-e55c472be62c",
+      "message_id": "<AANLkTikHz5ak60tg5BrQeKZPuTyJ5QGpar=v6NV_xT0h@mail.gmail.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "32fdd8046b75cfb0f4d6f8edc57dd69378ce2bc2369db36530b2110136c2b3c5",
+      "date": "2010-12-16T10:44:31Z",
+      "subject": "[R-pkgs] New package for general-purpose global optimisation: \"soma\"",
+      "subject_clean": "New package for general-purpose global optimisation: \"soma\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm pleased to announce the release of an R implementation of the\nSelf-Organising Migrating Algorithm (SOMA), a general-purpose,\nstochastic optimisation algorithm. The approach is similar to that of\ngenetic algorithms, although it is based on the idea of a series of\n\"migrations\" by a fixed set of individuals, rather than the\ndevelopment of successive generations. It can be applied to any\ncost-minimisation problem with a bounded parameter space, and is\nrobust to local minima. The algorithm was originally developed by Ivan\nZelinka [1].\n\nI have found the algorithm useful in applications, and I hope others\nwill too. Testing suggests that for some problems SOMA substantially\noutperforms comparable methods available for R, such as Differential\nEvolution (the \"DEoptim\" package [2]).\n\nThe \"soma\" package is now on the main CRAN site [3], and is finding\nits way onto the mirrors.\n\nAll the best,\nJon\n\n--\n[1] http://www.ft.utb.cz/people/zelinka/soma/\n[2] http://cran.r-project.org/web/packages/DEoptim/index.html\n[3] http://cran.r-project.org/web/packages/soma/index.html",
+      "body_snippet": "Dear all,\n\nI'm pleased to announce the release of an R implementation of the\nSelf-Organising Migrating Algorithm (SOMA), a general-purpose,\nstochastic optimisation algorithm. The approach is similar t",
+      "thread_id": "thread-e55c472be62c",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-6ebcdfbb32a2",
+      "message_id": "<19730.27945.984823.70351@max.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2010-12-22T15:27:05-06:00",
+      "subject": "[R-pkgs] Rcpp 0.9.0 and RcppClassic 0.9.0",
+      "subject_clean": "Rcpp 0.9.0 and RcppClassic 0.9.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "===== Summary =====\n\nVersion 0.9.0 of the Rcpp package is now on CRAN and its mirrors.  This\nrelease marks another step in the development of the package, and a few key\npoints are highlighted below.  More details are in the NEWS and ChangeLog\nfiles included in the package.\n\n\n===== Overview =====\n\nRcpp is an R package and associated C++ library that facilitates integration\nof C++ code in R packages.\n\nThe package features a complete set of C++ classes (Rcpp::IntegerVector,\nRcpp:NumericVector, Rcpp::Function, Rcpp::Environment, ...) that makes it\neasier to manipulate R objects of matching types (integer vectors, functions,\nenvironments, etc ...).\n\nRcpp takes advantage of C++ language features such as the explicit\nconstructor / destructor lifecycle of objects to manage garbage collection\nautomatically and transparently.  We believe this is a major improvement over\nuse of PROTECT/UNPROTECT.  When an Rcpp object is created, it protects the\nunderlying SEXP so that the garbage collector does not attempt to reclaim the\nmemory.  This protection is withdrawn when the object goes out of\nscope. Moreover, users generally do not need to manage memory directly (via\ncalls to new / delete or malloc / free) as this is done by the Rcpp classes\nor the corresponding STL containers.\n\nA few key points about Rcpp:\n\n - a rich API covering all core R data types including vectors, matrices,\n   functions, environments, ... (with the exeception of factors\n   which are less useful in C++)\n\n - seamless (bi-directional) data interchange between R and C++\n\n - possibility of inline use permitting definition, compilation, linking and\n   loading of C++ functions directly from R\n\n - extensive documentation now covering eight vignettes\n\n - exception handling and error propagation back to R\n\n - extensive test suite using RUnit covering over 700 tests\n\n - extension packages RcppArmadillo and RcppGSL provide easy-to-use\n   integration with the Armadillo (linear algebra) and GNU GSL librasries\n\n - increasing adoption among R users and package developers with now\n   twenty packages from CRAN or BioConductor depending on Rcpp\n\n - support for the legacy 'classic' Rcpp is now provided by the RcppClassic\n   package which is being released concurrently with Rcpp 0.9.0 \n\nSeveral key features were added during the 0.8.* cycles and are described below.\n\n\n===== Rcpp sugar =====\n\nRcpp now provides syntactic sugar: vectorised expressions at the C++ level\nwhich are motivated by the corresponding R expressions.  This covers\noperators (binary arithmetic, binary logical, unary), functions (producing\nsingle logical results, mathematical functions and d/p/q/r statistical\nfunctions). Examples comprises anything from ifelse() to pmin()/pmax() or \n\nA really simply example is a function\n\n    SEXP foo( SEXP xx, SEXP yy){\n        NumericVector x(xx), y(yy) ;\n        return ifelse( x < y, x*x, -(y*y) ) ;\n    }\n\nwhich deploys the sugar 'ifelse' function modeled after the corresponding R\nfunction. Another simple example is\n\n    double square( double x){\n        return x*x ;\n    }\n\n    SEXP foo( SEXP xx ){\n        NumericVector x(xx) ;\n        return sapply( x, square ) ;\n    }\n\nwhere use the sugar function 'sapply' to sweep a simple C++ function which\noperates elementwise across the supplied vector.\n\nThe Rcpp-sugar vignette describes sugar in more detail.\n\n\n===== Rcpp modules =====\n\nRcpp modules are inspired by Boost.Python and make exposing C++ functions or\nclasses to R even easier.  A first illustration is provided by this simple\nC++ code snippet\n\n    const char* hello( const std::string& who ){\n        std::string result( \"hello \" ) ;\n        result += who ;\n        return result.c_str() ;\n    }\n\n    RCPP_MODULE(yada){\n        using namespace Rcpp ;\n        function( \"hello\", &hello ) ;\n    }\n\nwhich (after compiling and loading) we can access in R as\n\n    yada <- Module( \"yada\" )\n    yada$hello( \"world\" )\n\nIn a similar way, C++ classes can be exposed very easily.\n\nRcpp modules are also described in more detail in their own vignette.\n\n\n===== Reference Classes =====\n\nR release 2.12.0 introduced Reference Classes. These are formal S4 classes\nwith the corresponding dispatch method, but passed by reference and easy to\nuse. Reference Classes can also be exposed to R by using Rcpp modules.\n\n\n===== Extension packackages =====\n\nThe RcppArmadillo package permits use of the advanced C++ library 'Armadillo,\na C++ linear algebra library aiming towards a good balance between speed and\nease of use, providing integer, floating point and complex matrices and\nvectors with lapack / blas support via R. Armadillo uses templates for a\ndelayed evaluation approach is employed (during compile time) to combine\nseveral operations into one and reduce (or eliminate) the need for\ntemporaries.  Armadillo is useful if C++ has been decided as the language of\nchoice, rather than another language like Matlab ? or Octave, and aims to be\nas expressive as the former.  Via Rcpp and RcppArmadillo, R users now have\neasy access to this functionality. Examples are provided in the RcppArmadillo\npackage.\n\nThe RcppGSL package permits easy use of the GNU Scientific Library (GSL), a\ncollection of numerical routines for scientifc computing. It is particularly\nuseful for C and C++ programs as it provides a standard C interface to a wide\nrange of mathematical routines such as special functions, permutations,\ncombinations, fast fourier transforms, eigensystems, random numbers,\nquadrature, random distributions, quasi-random sequences, Monte Carlo\nintegration, N-tuples, differential equations, simulated annealing, numerical\ndifferentiation, interpolation, series acceleration, Chebyshev\napproximations, root-finding, discrete Hankel transforms physical constants,\nbasis splines and wavelets.  There are over 1000 functions in total with an\nextensive test suite.  The RcppGSL package provides an easy-to-use interface\nbetween GSL data structures and R using concepts from Rcpp. The RcppGSL\npackage also contains a vignette with more documentation.\n\n\n===== Legacy 'classic' API =====\n\nPackages still using code interfacing the initial 'classic' Rcpp API are\nencouraged to migrate to the new API.  Should a code transition not be\npossible, backwards compatibility is provided by the RcppClassic package\nreleased alongside Rcpp 0.9.0.  By including RcppClassic.h and building\nagainst the RcppClassic package and library, vintage code can remain\noperational using the classic API.  The short vignette in the RcppClassic\npackage has more details.\n\n\n===== Documentation =====\n\nThe package contains a total of eight vignettes the first of which provides a\nshort and succinct introduction to the Rcpp package along with several\nmotivating examples.\n\n\n===== Links =====\n\nRcpp main page: \n    http://dirk.eddelbuettel.com/code/rcpp.html\nR-forge project page: \n    http://r-forge.r-project.org/projects/rcpp/\nDirk's blog section about \n    Rcpp: http://dirk.eddelbuettel.com/blog/code/rcpp/\nRomain's blog section about Rcpp: \n    http://romainfrancois.blog.free.fr/index.php?category/R-package/Rcpp\n\n\n===== Support =====\n\nQuestions about Rcpp should be directed to the Rcpp-devel mailing list\n    https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\n\n\n\n -- Dirk Eddelbuettel, Romain Francois, Doug Bates and John Chambers\n    December 2010\n\n\n\n\n-- \nDirk Eddelbuettel | edd at debian.org | http://dirk.eddelbuettel.com",
+      "body_snippet": "===== Summary =====\n\nVersion 0.9.0 of the Rcpp package is now on CRAN and its mirrors.  This\nrelease marks another step in the development of the package, and a few key\npoints are highlighted below.  ",
+      "thread_id": "thread-6ebcdfbb32a2",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-cdf07f5bd53c",
+      "message_id": "<668024.5432.qm@web120206.mail.ne1.yahoo.com>",
+      "from_name": "Mehmet Hakan Satman",
+      "from_email_hash": "b7dd90b9660e649989c99c4406f66097d80813fd14264a417e8c873698858905",
+      "date": "2010-12-24T02:12:37-08:00",
+      "subject": "[R-pkgs] mcga 1.1 (machine coded genetic algorithms) package released",
+      "subject_clean": "mcga 1.1 (machine coded genetic algorithms) package released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101224/4598fb4f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101224/4598fb4f/attachment.pl>",
+      "thread_id": "thread-cdf07f5bd53c",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-783212149216",
+      "message_id": "<AANLkTi=s=LNzqrTUEZKQ_Gn1jTk+bHLgavHkdQKcMxXG@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-12-24T10:34:03-06:00",
+      "subject": "[R-pkgs] ggplot2 0.8.9 - Merry Christmas version",
+      "subject_clean": "ggplot2 0.8.9 - Merry Christmas version",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.9 (2010-12-24) ----------------------------------------\n\nA big thanks to Koshke Takahashi, who supplied the majority of\nimprovements in this release!\n\nGUIDE IMPROVEMENTS\n\n* key size: can specify width and height separately\n\n* axis: can partially handle text rotation (issue #149)\n\n* legend: now can specify the direction of element by opts(legend.direction =\n  \"vertical\") or opts(legend.direction = \"horizontal\"), and legend box is\n  center aligned if horizontal\n\n* legend: now can override the alignment of legend box by\n  opts(legend.box = \"vertical\") or opts(legend.box = \"horizontal\")\n\n* legend: now can override legend title alignment with opts(legend.title.align\n  = 0) or opts(legend.title.align = 1)\n\n* legend: can override legend text alignment with opts(legend.text.align = 0)\n  or opts(legend.text.align = 1)\n\nBUG FIXES\n\n* theme_*: can specify font-family for all text elements other than geom_text\n\n* facet_grid: fixed hirozontal spacing when nrow of horizontal strip >= 2\n\n* facet_grid: now can manually specify the relative size of each row and column\n\n* is.zero: now correctly works\n\n* +: adding NULL to a plot returns the plot (idempotent under addition)\n  (thanks to suggestion by Matthew O'Meara)\n\n* +: meaningful error message if + doesn't know how to deal with an object\n  type\n\n* coord_cartesian and coord_flip: now can wisely zoom when wise = TRUE\n\n* coord_polar: fix point division bugs\n\n* facet_grid: now labels in facet_grid are correctly aligned when the number\n  of factors is more then one (fixes #87 and #65)\n\n* geom_hex: now correctly applies alpha to fill colour not outline colour\n  (thanks to bug report from Ian Fellows)\n\n* geom_polygon: specifying linetype now works (thanks to fix from Kohske\n  Takahashi)\n\n* hcl: can now set c and l, and preserves names (thanks to suggestion by\n  Richard Cotton)\n\n* mean_se: a new summary function to work with stat_summary that calculates\n  mean and one standard error on either side (thanks to contribution from\n  Kohske Takahashi)\n\n* pos_stack: now works with NAs in x\n\n* scale_alpha: setting limits to a range inside the data now works (thanks to\n  report by Dr Proteome)\n\n* scale_colour_continuous: works correctly with single continuous value (fixes\n  #73)\n\n* scale_identity: now show legends (fix #119)\n\n* stat_function: now works without y values\n\n* stat_smooth: draw line if only 2 unique x values, not three as previously *\n  guides: fixed #126\n\n* stat_smooth: once again works if n > 1000 and SE = F (thanks to bug report\n  from Theiry Onkelinx and fix from Kohske Takahashi)\n\n* stat_smooth: works with locfit (fix #129)\n\n* theme_text handles alignment better when angle = 90\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-783212149216",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-8ecc62a3c65d",
+      "message_id": "<AANLkTi=eddvdhsGLbosqA-yzE-kgq3F-R9JWVNR=sEdN@mail.gmail.com>",
+      "from_name": "Bill Pikounis",
+      "from_email_hash": "b138569d519441b303894acb13e118d3d2bd0d1e7522483f5c5014d95c7db2a3",
+      "date": "2010-12-27T08:32:01-05:00",
+      "subject": "[R-pkgs] First release of package \"cg\" for comparison of groups",
+      "subject_clean": "First release of package \"cg\" for comparison of groups",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.9.0, a first release of cg, is published on CRAN and its\nmirrors. The \"cg\" name stands for \"compare groups.\" Its genesis and\nevolution are driven by common \"in-practice\" needs to compare samples,\ntreatments, administrations, conditions, etc. in medicine research &\ndevelopment. The current version provides comparisons of unpaired\nsamples, i.e. a linear model with one factor of at least two levels.\nGood data graphs, modern statistical methods, and useful displays of\nresults are emphasized.\n\nThe cg package is developed with the overall goal of a comprehensive\nanalysis of data when comparison of groups is a primary interest. A\nflow of wrapper functions are contained within it to guide the full\nanalysis and interpretation of the data. The wrapper functions\nencompass functions in base R and other packages. Some features\ninclude:\n\n* Housekeeping of log-scale analysis to express multiplicative effects;\n\n* Use of resistant & robust models to accommodate potential outliers;\n\n* Use of accelerated failure time models to handle limits-of-detection values.\n\nOnce the package is loaded, the call\n\n> example(cg)\n\nillustrates the package with two included data sets.\n\nA slide deck presentation of the package can be found at\nhttp://user2010.org/slides/Pikounis+Oleynick.pdf . A manuscript on the\npackage has just recently been submitted to the Journal of Statistical\nSoftware and is under early review.\n\nBug reports and questions are welcome and can be directed to at \"cg at\nbillpikounis.net\"\n\nThanks to all of the R Development Core Team for base R and its\npackages, all authors and maintainers of the packages Hmisc, grid,\nlattice, MASS, survival, multcomp, mvtnorm, nlme and VGAM on which cg\ndepends, and all of the R community for inspiration.\n\nBill Pikounis and John Oleynick",
+      "body_snippet": "Version 0.9.0, a first release of cg, is published on CRAN and its\nmirrors. The \"cg\" name stands for \"compare groups.\" Its genesis and\nevolution are driven by common \"in-practice\" needs to compare sam",
+      "thread_id": "thread-8ecc62a3c65d",
+      "thread_depth": 0,
+      "month": "2010-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-93b6ab74bc1a",
+      "subject": "formatR update (0.1-5)",
+      "message_count": 1,
+      "participants": [
+        "Yihui Xie"
+      ],
+      "started": "2010-12-03T09:11:02-06:00",
+      "last_reply": "2010-12-03T09:11:02-06:00",
+      "root_message_id": "msg-93b6ab74bc1a"
+    },
+    {
+      "id": "thread-6ae57a089859",
+      "subject": "tikzDevice 0.5.3 released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Charlie Sharpsteen"
+      ],
+      "started": "2010-12-06T18:51:02-08:00",
+      "last_reply": "2010-12-06T18:51:02-08:00",
+      "root_message_id": "msg-6ae57a089859"
+    },
+    {
+      "id": "thread-6a94fd6b8372",
+      "subject": "pgfSweave 1.1.1 Released",
+      "message_count": 1,
+      "participants": [
+        "Cameron Bracken"
+      ],
+      "started": "2010-12-07T16:26:40-07:00",
+      "last_reply": "2010-12-07T16:26:40-07:00",
+      "root_message_id": "msg-6a94fd6b8372"
+    },
+    {
+      "id": "thread-0259355737e4",
+      "subject": "batchfiles 0.6-0",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2010-12-13T10:02:49-05:00",
+      "last_reply": "2010-12-13T10:02:49-05:00",
+      "root_message_id": "msg-0259355737e4"
+    },
+    {
+      "id": "thread-114295ebd359",
+      "subject": "googleVis 0.2.2 - Using the Google Visualisation API with R",
+      "message_count": 1,
+      "participants": [
+        "Markus Gesmann"
+      ],
+      "started": "2010-12-14T07:49:51+00:00",
+      "last_reply": "2010-12-14T07:49:51+00:00",
+      "root_message_id": "msg-114295ebd359"
+    },
+    {
+      "id": "thread-81a0ed9ad138",
+      "subject": "package JM -- version 0.8-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2010-12-15T12:21:06+01:00",
+      "last_reply": "2010-12-15T12:21:06+01:00",
+      "root_message_id": "msg-81a0ed9ad138"
+    },
+    {
+      "id": "thread-e55c472be62c",
+      "subject": "New package for general-purpose global optimisation: \"soma\"",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2010-12-16T10:44:31+00:00",
+      "last_reply": "2010-12-16T10:44:31+00:00",
+      "root_message_id": "msg-e55c472be62c"
+    },
+    {
+      "id": "thread-6ebcdfbb32a2",
+      "subject": "Rcpp 0.9.0 and RcppClassic 0.9.0",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2010-12-22T15:27:05-06:00",
+      "last_reply": "2010-12-22T15:27:05-06:00",
+      "root_message_id": "msg-6ebcdfbb32a2"
+    },
+    {
+      "id": "thread-cdf07f5bd53c",
+      "subject": "mcga 1.1 (machine coded genetic algorithms) package released",
+      "message_count": 1,
+      "participants": [
+        "Mehmet Hakan Satman"
+      ],
+      "started": "2010-12-24T02:12:37-08:00",
+      "last_reply": "2010-12-24T02:12:37-08:00",
+      "root_message_id": "msg-cdf07f5bd53c"
+    },
+    {
+      "id": "thread-783212149216",
+      "subject": "ggplot2 0.8.9 - Merry Christmas version",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-12-24T10:34:03-06:00",
+      "last_reply": "2010-12-24T10:34:03-06:00",
+      "root_message_id": "msg-783212149216"
+    },
+    {
+      "id": "thread-8ecc62a3c65d",
+      "subject": "First release of package \"cg\" for comparison of groups",
+      "message_count": 1,
+      "participants": [
+        "Bill Pikounis"
+      ],
+      "started": "2010-12-27T08:32:01-05:00",
+      "last_reply": "2010-12-27T08:32:01-05:00",
+      "root_message_id": "msg-8ecc62a3c65d"
+    }
+  ]
+}

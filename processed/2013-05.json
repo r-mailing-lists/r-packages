@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-05",
+  "messages": [
+    {
+      "id": "msg-592fd178ab3d",
+      "message_id": "<5E98660B-0014-40F5-8AD0-31B7CC97D1A5@chasset.net>",
+      "from_name": "Pierre-Olivier Chasset",
+      "from_email_hash": "0b957d58454cb9ad8acbf7ce5537b5b5d70772124ee2939d1a60437f89083960",
+      "date": "2013-05-17T14:07:47+02:00",
+      "subject": "[R-pkgs]  Probabilistic neural network (PNN)",
+      "subject_clean": "Probabilistic neural network (PNN)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI am pleased to announce the release of the new package PNN.\n\nPNN implements the algorithm proposed by Specht (1990). It is written in the R statistical language. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this datasets and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. It is delivered with four functions - learn, smooth, perf and guess - and a dataset. The functions are documented with examples and provided with unit tests.\n\nContinue reading at http://flow.chasset.net/r-pnn/\n\nHave a good week-end,\n\nPierre-Olivier Chasset",
+      "body_snippet": "Dear useRs,\n\nI am pleased to announce the release of the new package PNN.\n\nPNN implements the algorithm proposed by Specht (1990). It is written in the R statistical language. It solves a common probl",
+      "thread_id": "thread-592fd178ab3d",
+      "thread_depth": 0,
+      "month": "2013-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-592fd178ab3d",
+      "subject": "Probabilistic neural network (PNN)",
+      "message_count": 1,
+      "participants": [
+        "Pierre-Olivier Chasset"
+      ],
+      "started": "2013-05-17T14:07:47+02:00",
+      "last_reply": "2013-05-17T14:07:47+02:00",
+      "root_message_id": "msg-592fd178ab3d"
+    }
+  ]
+}

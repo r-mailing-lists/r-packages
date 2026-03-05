@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-09",
+  "messages": [
+    {
+      "id": "msg-47b88a70f670",
+      "message_id": "<230AB4F1-4D98-4F1B-9E1D-7215A4267693@glasgow.ac.uk>",
+      "from_name": "Adrian Bowman",
+      "from_email_hash": "a727b340ff61d029de5d836104fb0fb9881006a76c225a95acbf016482432a2e",
+      "date": "2021-09-08T10:15:45Z",
+      "subject": "[R-pkgs] rpanel package update",
+      "subject_clean": "rpanel package update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The rpanel package provides a set of tools to build simple GUI controls for R functions, using the tcltk R package and the Tcl/Tk system. Some ?cartoons? which use interaction and animation to communicate statistical concepts are also included.  There have been some difficulties in installing rpanel on some systems (notably Mac computers) due to the reference to a Tcl/Tk module known as BWidget.  This has now been resolved.  If BWidget is not available the rpanel package can still be installed but two facilities, namely the ?combobox? (R function rp.combo) and ?notebook? (R functions rp.notebook and rp.notebook.raise) are disabled.\n\nAdrian Bowman\n\nProf. Adrian Bowman\nBSc (Hons) Dip.Math.Stat PhD FRSE\nEmeritus Professor of Statistics\nUniversity of Glasgow\n\nE: adrian.bowman at glasgow.ac.uk<mailto:adrian.bowman at glasgow.ac.uk>\nW: www.stats.gla.ac.uk/~adrian<http://www.stats.gla.ac.uk/~adrian>\n\nSchool of Mathematics and Statistics\nUniversity of Glasgow\nGlasgow G12 8QQ\n\nThe University of Glasgow, charity number SC004401\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The rpanel package provides a set of tools to build simple GUI controls for R functions, using the tcltk R package and the Tcl/Tk system. Some ?cartoons? which use interaction and animation to communi",
+      "thread_id": "thread-47b88a70f670",
+      "thread_depth": 0,
+      "month": "2021-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-47b88a70f670",
+      "subject": "rpanel package update",
+      "message_count": 1,
+      "participants": [
+        "Adrian Bowman"
+      ],
+      "started": "2021-09-08T10:15:45+00:00",
+      "last_reply": "2021-09-08T10:15:45+00:00",
+      "root_message_id": "msg-47b88a70f670"
+    }
+  ]
+}

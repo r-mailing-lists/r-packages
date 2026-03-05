@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-11",
+  "messages": [
+    {
+      "id": "msg-ea0ff25e33d1",
+      "message_id": "<1541059013771.22055@kuleuven.be>",
+      "from_name": "Tom Wenseleers",
+      "from_email_hash": "a28c59f8b05f3c15e76bc82c9bc965c4f144b5ccc459bd905f3d3efd982313c1",
+      "date": "2018-11-01T07:56:07Z",
+      "subject": "[R-pkgs] New package export to export graphs & statistical tables to Microsoft Office / Powerpoint / Word / LibreOffice",
+      "subject_clean": "New package export to export graphs & statistical tables to Microsoft Office / Powerpoint / Word / LibreOffice",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nJust to announce a new R package, export, that enables you to easily export 'R' graphs and statistical output to 'Microsoft Office' / 'LibreOffice', 'Latex' and 'HTML' Documents, using sensible defaults that result in publication-quality output with simple, straightforward commands. Output to 'Microsoft Office' is in editable 'DrawingML' vector format for graphs, and can use corporate template documents for styling. This enables the production of standardized reports and also allows for manual tidy-up of the layout of 'R' graphs in 'Powerpoint' before final publication. Export of graphs is flexible, and functions enable the currently showing R graph or the currently showing 'R' stats object to be exported, but also allow the graphical or tabular output to be passed as objects. The package relies on package 'officer' for export to 'Office' documents,and output files are also fully compatible with 'LibreOffice'. Base 'R', 'ggplot2' and 'lattice' plots are supported, as well as a wide variety of 'R' stats objects, via wrappers to xtable(), broom::tidy() and stargazer(), including aov(), lm(), glm(), lme(), glmnet() and coxph() as well as matrices and data frames and many more...\n\n\nSee\n\nhttps://cran.r-project.org/web/packages/export/index.html and\n\nhttps://github.com/tomwenseleers/export\n\n\nEnjoy!\n\n\nbest regards,\n\nTom Wenseleer & Christophe Vanderaa\n\nProf. Tom Wenseleers\nLaboratory of Socioecology and Social Evolution\nDept. of Biology\nUniversity of Leuven\nNaamsestraat 59\n3000 Leuven\nBelgium\nhttps://bio.kuleuven.be/ento/wenseleers/twenseleers.htm\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nJust to announce a new R package, export, that enables you to easily export 'R' graphs and statistical output to 'Microsoft Office' / 'LibreOffice', 'Latex' and 'HTML' Documents, using sens",
+      "thread_id": "thread-ea0ff25e33d1",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-023f8c1252b5",
+      "message_id": "<3907566C-9CD2-4729-9055-40F515747501@uclouvain.be>",
+      "from_name": "Antoine Soetewey",
+      "from_email_hash": "4bc30877b56c2ae13ff4afbcd5cc8de6bc34ed75f7120d1a12fa2a432393fa13",
+      "date": "2018-11-02T20:35:23Z",
+      "subject": "[R-pkgs] New release: yll package to compute (average) years of life lost in survival analysis",
+      "subject_clean": "New release: yll package to compute (average) years of life lost in survival analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nA new package, yll, has been released on CRAN on November 2.\n\nyll aims at computing the standard expected years of life lost (YLL), as developed by the Global Burden of Disease Study (Murray, C.J., Lopez, A.D. and World Health Organization, 1996<http://apps.who.int/iris/bitstream/handle/10665/41864/096554660?sequence=1>). The YLL is based on comparing the age of death to an external standard life expectancy curve. The package also provides a function to computes the average YLL, which highlights premature causes of death and brings attention to preventable deaths (Aragon et al., 2008<https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/1471-2458-8-116>).\n\nThe package is particulary useful in biostatistics and survival analysis.\n\nFor more information see https://CRAN.R-project.org/package=yll<https://cran.r-project.org/package=yll>.\n\n\n\nDetailed information and examples are contained in the package README file at https://github.com/AntoineSoetewey/yll/blob/master/README.md.\n\n\n\nIssues and suggestions are welcome, and can be logged at the package Github repository https://github.com/AntoineSoetewey/yll/issues.\n\nBest regards,\nAntoine Soetewey\n\n__\n\nPhD Student and Teaching Assistant\nInstitute of Statistics, Biostatistics and Actuarial Sciences\nUniversit? catholique de Louvain\nVoie du Roman Pays 20 box L1.04.01 (office C137), B-1348 Louvain-la-Neuve (Belgium)\nwww.uclouvain.be/antoine.soetewey<https://uclouvain.be/antoine.soetewey>\nwww.antoinesoetewey.com<http://www.antoinesoetewey.com/>\nantoine.soetewey at uclouvain.be<mailto:antoine.soetewey at uclouvain.be>\nPhone: +3210474281\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nA new package, yll, has been released on CRAN on November 2.\n\nyll aims at computing the standard expected years of life lost (YLL), as developed by the Global Burden of Disease Study (Murra",
+      "thread_id": "thread-023f8c1252b5",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-3c36294cf9f2",
+      "message_id": "<9A74D6A8-1E50-48AB-BB09-8265C182D7F5@gmail.com>",
+      "from_name": "David sjöberg",
+      "from_email_hash": "e5f30d3fba4860857492456d6bb2367d10fc9b22f40f52592735ccc55515690e",
+      "date": "2018-11-04T22:44:13+01:00",
+      "subject": "[R-pkgs] New CRAN package: hablar",
+      "subject_clean": "New CRAN package: hablar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nThe new package hablar help R-users to convert columns to new data types. \nAlso helps with summary functions like min and mean with vectors that contain \nNA, Inf, NaN or when they are empty.\n\nThree functions you may consider to use:\n\ninstall.packages(\"hablar\")\nlibrary(hablar)\n\n\n1. convert()\n\nmtcars %>%\n  convert(num(vs),\n          int(am, gear),\n          chr(cyl:drat))\n\nthis simple code chunk converts column 'vs' to numeric, \n'am' and 'gear' to integer and 'cyl' through 'drat' to character.\n\n\n2. retype()\n\nmtcars <- mtcars %>%\n\tconvert(chr(everything()))\n\nmtcars %>% retype()\n\nThis function is for us lazy R-programmers. It converts columns \nto the simplest data type possible, without loosing information.\n\n\n3. s()\n\nmin(c()) # base R returns Inf\nmin(s(c())) # with s it returns NA\n\nmax(c(NaN, Inf)) # base R returns NaN\nmax(s(c(NaN, Inf))) # with s it returns NA\n\nmean(c(NA, 2, 4, NA), na.rm = TRUE) # base R returns NA\nmean(c(NA, 2, 4, NA)) # base R returns 3\nmean(s(c(NA, 2, 4, NA))) # with s it returns 3 without using na.rm = TRUE\n\ns always returns a real value, otherwise NA. This helps you\navoid the problem of getting Inf when trying to minimize \nempty or vectors with infinite or NaN values. You can also skip na.rm = T\nto simplify code syntax.\n\n\nMore information on hablar:\nhttps://cran.r-project.org/web/packages/hablar/readme/README.html\nhttps://github.com/davidsjoberg/hablar\nhttps://davidsjoberg.github.io/blog/\n\nHappy coding!\nDavid",
+      "body_snippet": "Dear R-users,\n\nThe new package hablar help R-users to convert columns to new data types. \nAlso helps with summary functions like min and mean with vectors that contain \nNA, Inf, NaN or when they are e",
+      "thread_id": "thread-3c36294cf9f2",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-aed447019724",
+      "message_id": "<7C49886C-DF20-4FBD-939F-CD80DAB19403@gmail.com>",
+      "from_name": "David sjöberg",
+      "from_email_hash": "e5f30d3fba4860857492456d6bb2367d10fc9b22f40f52592735ccc55515690e",
+      "date": "2018-11-05T21:03:16+01:00",
+      "subject": "[R-pkgs] Repost: New CRAN package: hablar",
+      "subject_clean": "Repost: New CRAN package: hablar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nThe new package hablar help R-users to convert columns to new data types. \nAlso helps with summary functions like min and mean with vectors that contain NA, Inf, NaN or when they are empty.\n\nThree functions you may consider to use:\n  \ninstall.packages(\"hablar\")\nlibrary(hablar)\n\n\n1. convert()\n\nmtcars %>%\n  convert(num(vs),\n          int(am, gear),\n          chr(cyl:drat))\n\nthis simple code chunk converts column 'vs' to numeric, \n'am' and 'gear' to integer and 'cyl' through 'drat' to character.\n\n\n2. retype()\n\nmtcars <- mtcars %>%\n  convert(chr(everything()))\n\nmtcars %>% retype()\n\nThis function is for us lazy R-programmers. It converts columns \nto the simplest data type possible, without loosing information.\n\n3. s()\n\nmin(c()) # base R returns Inf\nmin(s(c())) # with s it returns NA\n\nmax(c(NaN, Inf)) # base R returns NaN\nmax(s(c(NaN, Inf))) # with s it returns NA\n\nmean(c(NA, 2, 4, NA)) # base R returns NA\nmean(c(NA, 2, 4, NA), na.rm = TRUE) # base R with na.rm = T returns 3\nmean(s(c(NA, 2, 4, NA))) # with s it returns 3 without using na.rm = TRUE\nmean_(c(NA, 2, 4, NA)) # s-wrapper mean_  returns 3\n\ns always returns a real value, otherwise NA. This helps you\navoid the problem of getting Inf when trying to minimize \nempty or vectors with infinite or NaN values. You can also skip na.rm = T\nto simplify code syntax.\n\n\nMore information on hablar:\nhttps://cran.r-project.org/web/packages/hablar/readme/README.html\nhttps://github.com/davidsjoberg/hablar\nhttps://davidsjoberg.github.io/blog/\n  \nHappy coding!\nDavid",
+      "body_snippet": "Dear R-users,\n\nThe new package hablar help R-users to convert columns to new data types. \nAlso helps with summary functions like min and mean with vectors that contain NA, Inf, NaN or when they are em",
+      "thread_id": "thread-aed447019724",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-e110a90d0b15",
+      "message_id": "<CAHprtLT-5NBm6Qw0_Fsf==H_5UiHfbrVbVUd+wUUa73V3SJ5fg@mail.gmail.com>",
+      "from_name": "Philip Barrett",
+      "from_email_hash": "ad608ed2f890a22567cba5e755a67e1f9927a67b8cf3d8f7b5ebf9dbcec366a1",
+      "date": "2018-11-08T15:28:26Z",
+      "subject": "[R-pkgs] New Package pgsc",
+      "subject_clean": "New Package pgsc",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am pleased to announce a new CRAN package, \"pgsc\" version 1.0.0 <\nhttps://cran.r-project.org/package=pgsc>.\n\nThis package implements the extension of the synthetic control method to\nallow for continuous and time-varying treatments described in Powell (2017)\n<doi:10.7249/WR1142>.  Functions for both estimation and general hypothesis\ntesting are provided.\n\nThe vignette presents an extended example where panel regression suffers\nfrom omitted variables bias -- even with time and unit fixed effects -- and\nshows how the generalized synthetic control method produces unbiased\nestimates of treatment effects.  The vignette can be found at <\nhttps://cran.r-project.org/web/packages/pgsc/vignettes/pgsc_vignette.pdf>.\n\nSuggestions and comments much appreciated,\n\nPhilip Barrett\n\nEmail: pobarrett at gmail dot com\nGithub: https://github.com/philipbarrett/pgsc\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am pleased to announce a new CRAN package, \"pgsc\" version 1.0.0 <\nhttps://cran.r-project.org/package=pgsc>.\n\nThis package implements the extension of the synthetic control method to\nallow",
+      "thread_id": "thread-e110a90d0b15",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-883419ac1a35",
+      "message_id": "<CADg8+HhdD-zoATLCouqW9BFfE2nSrJutTZgBW3bUGHKSRR=c9g@mail.gmail.com>",
+      "from_name": "James Goldie",
+      "from_email_hash": "0607e71bd69c2ac3c1847ae99f37335a152eb7059d8c89410b57a304842b8baa",
+      "date": "2018-11-20T09:14:49+11:00",
+      "subject": "[R-pkgs] New package: collateral 0.4.2 on CRAN",
+      "subject_clean": "New package: collateral 0.4.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\n\nCollateral is now available on CRAN. If you've used purrr's side effect\ncapturing functions before, you'll love collateral: it provides you with\nmap variants that automatically wrap your mapped function in safely() or\nquietly() and provide nicely printed output, allowing you to quickly see\nwhich elements of a list returned results, and which returned errors,\nwarnings or messages. The package also provides helpers to let you\nsummarise your results and filter or aggregate the captured side effects.\n\nIf you haven't used a list-column workflow before, I've included a vignette\nwith collateral to get you started:\nhttps://rensa.co/collateral/articles/collateral.html\n\nIf you'd like to contribute to collateral, you can find it on GitHub:\nhttps://github.com/rensa/collateral\n\nThanks very much!\n\n<https://rensa.co/collateral/articles/collateral.html>\n-- \n=================================================\nJames Goldie: PhD Student, Climate Change Research Centre\nEmail: j.goldie at unsw.edu.au, me at rensa.co\nTel: +61 421 747 208\nSkype: james-goldie\nWeb: https://rensa.co\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone,\n\nCollateral is now available on CRAN. If you've used purrr's side effect\ncapturing functions before, you'll love collateral: it provides you with\nmap variants that automatically wrap your",
+      "thread_id": "thread-883419ac1a35",
+      "thread_depth": 0,
+      "month": "2018-11"
+    },
+    {
+      "id": "msg-26c42ef7f3b2",
+      "message_id": "<20181123131327.Horde.QTZrPs4g2nq45UnqXROcqUo@wmail4.units.it>",
+      "from_name": "legidi m@ili@g off u@its@it",
+      "from_email_hash": "839fa29719ee55ab28e67a76a351843faee1f3b30744363412d4880da7b18777",
+      "date": "2018-11-23T13:13:27+01:00",
+      "subject": "[R-pkgs] New package pivmet: relabelling and K-means seeding via pivotal methods",
+      "subject_clean": "New package pivmet: relabelling and K-means seeding via pivotal methods",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am glad to announce the release (version 0.1) of the pivmet package,  \nwhich proposes some pivotal methods in order to:\n\n\n* undo the label switching problem which naturally arises during the  \nMCMC sampling in Bayesian mixture models [pivotal relabelling] (Egidi  \net al. 2018a)\n\n* initialize the K-means algorithm aimed at obtaining a good  \nclustering solution [pivotal seeding] (Egidi et al. 2018b)\n\nThe package includes two vignettes for easing its use and is here available:\n\nhttps://cran.r-project.org/web/packages/pivmet/index.html\n\nand developed in github at:\n\nhttps://github.com/LeoEgidi/pivmet\n\n\nHere are the two referred articles:\n\nEgidi et al. (2018a)\nhttps://link.springer.com/article/10.1007/s11222-017-9774-2\n\nEgidi et al. (2018b)\nhttps://www.researchgate.net/profile/Leonardo_Egidi/publication/326225330_K-means_seeding_via_MUS_algorithm_-_Inizializzazione_del_K-means_tramite_l%27algoritmo_MUS/links/5b3f2c2caca27207851c7865/K-means-seeding-via-MUS-algorithm-Inizializzazione-del-K-means-tramite-lalgoritmo-MUS.pdf\n\n\nAll the best\n\nLeonardo Egidi\nPostdoctoral researcher, University of Trieste",
+      "body_snippet": "Dear R users,\n\nI am glad to announce the release (version 0.1) of the pivmet package,  \nwhich proposes some pivotal methods in order to:\n\n\n* undo the label switching problem which naturally arises dur",
+      "thread_id": "thread-26c42ef7f3b2",
+      "thread_depth": 0,
+      "month": "2018-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ea0ff25e33d1",
+      "subject": "New package export to export graphs & statistical tables to Microsoft Office / Powerpoint / Word / LibreOffice",
+      "message_count": 1,
+      "participants": [
+        "Tom Wenseleers"
+      ],
+      "started": "2018-11-01T07:56:07+00:00",
+      "last_reply": "2018-11-01T07:56:07+00:00",
+      "root_message_id": "msg-ea0ff25e33d1"
+    },
+    {
+      "id": "thread-023f8c1252b5",
+      "subject": "New release: yll package to compute (average) years of life lost in survival analysis",
+      "message_count": 1,
+      "participants": [
+        "Antoine Soetewey"
+      ],
+      "started": "2018-11-02T20:35:23+00:00",
+      "last_reply": "2018-11-02T20:35:23+00:00",
+      "root_message_id": "msg-023f8c1252b5"
+    },
+    {
+      "id": "thread-3c36294cf9f2",
+      "subject": "New CRAN package: hablar",
+      "message_count": 1,
+      "participants": [
+        "David sjöberg"
+      ],
+      "started": "2018-11-04T22:44:13+01:00",
+      "last_reply": "2018-11-04T22:44:13+01:00",
+      "root_message_id": "msg-3c36294cf9f2"
+    },
+    {
+      "id": "thread-aed447019724",
+      "subject": "Repost: New CRAN package: hablar",
+      "message_count": 1,
+      "participants": [
+        "David sjöberg"
+      ],
+      "started": "2018-11-05T21:03:16+01:00",
+      "last_reply": "2018-11-05T21:03:16+01:00",
+      "root_message_id": "msg-aed447019724"
+    },
+    {
+      "id": "thread-e110a90d0b15",
+      "subject": "New Package pgsc",
+      "message_count": 1,
+      "participants": [
+        "Philip Barrett"
+      ],
+      "started": "2018-11-08T15:28:26+00:00",
+      "last_reply": "2018-11-08T15:28:26+00:00",
+      "root_message_id": "msg-e110a90d0b15"
+    },
+    {
+      "id": "thread-883419ac1a35",
+      "subject": "New package: collateral 0.4.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "James Goldie"
+      ],
+      "started": "2018-11-20T09:14:49+11:00",
+      "last_reply": "2018-11-20T09:14:49+11:00",
+      "root_message_id": "msg-883419ac1a35"
+    },
+    {
+      "id": "thread-26c42ef7f3b2",
+      "subject": "New package pivmet: relabelling and K-means seeding via pivotal methods",
+      "message_count": 1,
+      "participants": [
+        "legidi m@ili@g off u@its@it"
+      ],
+      "started": "2018-11-23T13:13:27+01:00",
+      "last_reply": "2018-11-23T13:13:27+01:00",
+      "root_message_id": "msg-26c42ef7f3b2"
+    }
+  ]
+}

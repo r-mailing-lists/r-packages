@@ -1,0 +1,92 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-01",
+  "messages": [
+    {
+      "id": "msg-866b71d76b73",
+      "message_id": "<3877ec85-3309-fec1-5cd5-579f291d401f@bristol.ac.uk>",
+      "from_name": "Peter Green",
+      "from_email_hash": "1a75dbfab58d60bdc93956658d147fd77c611ae699cce48b00a0c715cdf3fb6f",
+      "date": "2023-01-08T14:13:52Z",
+      "subject": "[R-pkgs] gRaven package - Bayes Nets: 'RHugin' Emulation with 'gRain'",
+      "subject_clean": "gRaven package - Bayes Nets: 'RHugin' Emulation with 'gRain'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am pleased to announce that CRAN now hosts my package gRaven.\n\nThis provides wrappers for functions in the 'gRain' package to emulate \nsome 'RHugin' functionality, allowing the building of Bayesian networks \nconsisting of discrete chance nodes incrementally - through adding \nnodes, edges and conditional probability tables, the setting of \nevidence, whether 'hard' (boolean) or 'soft' (likelihoods), and querying \nmarginal joint probabilities and normalizing constants.\n\nComputations will typically not be so fast as they are with 'RHugin', \nbut this package should assist users without access to the commercial \npackage 'Hugin' to use existing code written to use 'RHugin'.\n\nI am open to extending the functionality of the package in future, in \nresponse to user demand.\n\nregards,\n\nPeter Green\n\n-- \nPeter Green, p.j.green at bristol.ac.uk\n-- \nEmeritus Professor of Statistics & Professorial Research Fellow\nUniversity of Bristol, Bristol BS8 1UG, UK\nT: +44 117 455 2611; W: https://petergreenweb.wordpress.com/",
+      "body_snippet": "Dear all,\n\nI am pleased to announce that CRAN now hosts my package gRaven.\n\nThis provides wrappers for functions in the 'gRain' package to emulate \nsome 'RHugin' functionality, allowing the building o",
+      "thread_id": "thread-866b71d76b73",
+      "thread_depth": 0,
+      "month": "2023-01"
+    },
+    {
+      "id": "msg-8380161ffd90",
+      "message_id": "<1506840172.8984.1673462516211@mail.yahoo.com>",
+      "from_name": "Vivek Atal",
+      "from_email_hash": "a9b8fc0642140c17af18717d6ab04924db15567021202c54a90b95f86047bd1a",
+      "date": "2023-01-11T18:41:56Z",
+      "subject": "[R-pkgs] New CRAN package announcement: azlogr",
+      "subject_clean": "New CRAN package announcement: azlogr",
+      "in_reply_to": null,
+      "references": [
+        "<1506840172.8984.1673462516211.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "I am excited to announce that `azlogr` is published on CRAN!\nThis package?enables logging in 'R' by extending the functionality of 'logger' package. There is an option to add additional custom meta-data while logging, which can sometimes be helpful.?Logging messages are displayed on console and optionally they are sent to 'Azure Log Analytics' workspace in real-time.\nThe package comes with a vignette, How to use azlogr, that (hopefully) provides a good introduction to using the functions for easy logging. Example usage below:\n# Azure Log Analytics workspace id and shared key are fetched\n# from environment variables.\nSys.setenv(AZ_LOG_ID = \"<enter-your-Azure-Log-Analytics-workspace-id>\")\nSys.setenv(AZ_LOG_KEY = \"<enter-your-Azure-Log-Analytics-shared-key>\")\n\nlibrary(azlogr)\n\n# Optionally, add additional meta-data, `country` and `id`, to be collected\n# while logging, on top of the default fields - 'level', 'time', 'msg'.\nset_log_config(\n  log_fields = c(\"level\", \"time\", \"msg\"),\n  additional_fields = list(country = \"in\", id = 123)\n)\n\n# Use logger_* functions with appropriate logging level to log.\n# If POST is successful, then it will be available in custom log table on\n# Azure Log Analytics, by default table name will be `log_from_r`_CL (_CL is\n# added by Azure for any custom log table)\nlogger_info(\"log info sent to Azure\")\n#> {\"level\":\"INFO\",\"time\":\"2023-01-11 13:15:04\",\"msg\":\"log info sent to Azure\",\"country\":\"in\",\"id\":123}\n\n# If the POST request is unsuccessful due to Azure credential issue, then log\n# message is displayed on console and a warning is generated with error details.\nlogger_info(\"log info sent to Azure\")\n#> {\"level\":\"INFO\",\"time\":\"2023-01-11 13:15:04\",\"msg\":\"log info sent to Azure\",\"country\":\"in\",\"id\":123}\n#> Warning message:\n#> In logger_level(logger::INFO, ...) :\n#>   Some error happened while sending POST request to 'Azure Log Analytics' workspace.\n#> Error message: Error in curl::curl_fetch_memory(url, handle = handle) :\n#>   Could not resolve host: abcd.ods.opinsights.azure.com\nMany thanks to the author of?'logger' package,?and to the CRAN team for a speedy onboarding!\n\nRegardsVivek Atal\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am excited to announce that `azlogr` is published on CRAN!\nThis package?enables logging in 'R' by extending the functionality of 'logger' package. There is an option to add additional custom meta-da",
+      "thread_id": "thread-8380161ffd90",
+      "thread_depth": 0,
+      "month": "2023-01"
+    },
+    {
+      "id": "msg-bc034f6c6d20",
+      "message_id": "<CABcwgRQ+UhisX0tPPgJt1WWpwvF2qT9rsP8B5FfvDzBP1LCwTw@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2023-01-31T08:05:58+01:00",
+      "subject": "[R-pkgs] New package - LGDtoolkit",
+      "subject_clean": "New package - LGDtoolkit",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nmy new R package LGDtoolkit is now on CRAN.\n\nThe goal of this package is to cover the most common steps in Loss Given\nDefault (LGD) rating model development. The main procedures available are\nthose that refer to bivariate and multivariate analysis.\nIn particular two statistical methods for multivariate analysis are\ncurrently implemented ? OLS regression and fractional logistic regression.\nBoth methods are also available within different blockwise model designs,\nand both have customized stepwise algorithms. To cover other important\nsteps for LGD model development, it is recommended to use 'LGDtoolkit'\npackage along with 'PDtoolkit', and 'monobin' (or 'monobinShiny') packages.\n\nWith the next releases package will be extended with a new features. In\nparticular, validation procedures will be added, and significant part of\nthe package will be dedicated to the usage of survival analysis for LGD\nmodeling (extrapolation of LGD for incomplete recoveries, development of\nrisk differentiation function and collateral haircut modeling).\n\nTo check out the current package functionalities run\ninstall.packages(\"LGDtoolkit\") and help(package = \"LGDtoolkit\").\nTo stay up to date with new development features follow the github page:\nhttps://github.com/andrija-djurovic/LGDtoolkit.\n\nI hope some of you will find the package useful.\n\nKind regards,\nAndrija\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nmy new R package LGDtoolkit is now on CRAN.\n\nThe goal of this package is to cover the most common steps in Loss Given\nDefault (LGD) rating model development. The main procedures available a",
+      "thread_id": "thread-bc034f6c6d20",
+      "thread_depth": 0,
+      "month": "2023-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-866b71d76b73",
+      "subject": "gRaven package - Bayes Nets: 'RHugin' Emulation with 'gRain'",
+      "message_count": 1,
+      "participants": [
+        "Peter Green"
+      ],
+      "started": "2023-01-08T14:13:52+00:00",
+      "last_reply": "2023-01-08T14:13:52+00:00",
+      "root_message_id": "msg-866b71d76b73"
+    },
+    {
+      "id": "thread-8380161ffd90",
+      "subject": "New CRAN package announcement: azlogr",
+      "message_count": 1,
+      "participants": [
+        "Vivek Atal"
+      ],
+      "started": "2023-01-11T18:41:56+00:00",
+      "last_reply": "2023-01-11T18:41:56+00:00",
+      "root_message_id": "msg-8380161ffd90"
+    },
+    {
+      "id": "thread-bc034f6c6d20",
+      "subject": "New package - LGDtoolkit",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2023-01-31T08:05:58+01:00",
+      "last_reply": "2023-01-31T08:05:58+01:00",
+      "root_message_id": "msg-bc034f6c6d20"
+    }
+  ]
+}

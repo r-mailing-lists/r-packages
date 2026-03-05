@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-11",
+  "messages": [
+    {
+      "id": "msg-be15c10cebb1",
+      "message_id": "<CAARY7kiMGUJrTG1t2omQBgYSGa3JS3L89QEvmfscv3Gxa_Trtw@mail.gmail.com>",
+      "from_name": "David Hugh-Jones",
+      "from_email_hash": "36af917953ef4b56c37a32f04551e72f9ee3f1f4bcc5440822670195db6f6253",
+      "date": "2014-11-06T11:22:55Z",
+      "subject": "[R-pkgs] anim.plots - simple animated plots for R",
+      "subject_clean": "anim.plots - simple animated plots for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing the first release of anim.plots, a package for simple animated\nplots in R, using Yihui Xie's animation package.\n\nhttp://cran.r-project.org/web/packages/anim.plots/index.html\n\nFunctions are very similar to basic R graphics. Currently the package\nincludes animated versions of plot, barplot, persp, contour,\nfilled.contour, hist, curve, points, lines, text, symbols, segments, and\narrows.\n\nThere's a brief introduction here:\nhttp://davidhughjones.blogspot.co.uk/2014/10/easy-animations-in-r.html\n\nAnd an HTML presentation:\nhttp://hughjonesd.github.io/anim-plots-presentation.html\n\nCode is hosted on GitHub:\nhttps://github.com/hughjonesd/anim.plots\n\nCheers,\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Announcing the first release of anim.plots, a package for simple animated\nplots in R, using Yihui Xie's animation package.\n\nhttp://cran.r-project.org/web/packages/anim.plots/index.html\n\nFunctions are ",
+      "thread_id": "thread-be15c10cebb1",
+      "thread_depth": 0,
+      "month": "2014-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-be15c10cebb1",
+      "subject": "anim.plots - simple animated plots for R",
+      "message_count": 1,
+      "participants": [
+        "David Hugh-Jones"
+      ],
+      "started": "2014-11-06T11:22:55+00:00",
+      "last_reply": "2014-11-06T11:22:55+00:00",
+      "root_message_id": "msg-be15c10cebb1"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-12",
+  "messages": [
+    {
+      "id": "msg-7b12189d4d55",
+      "message_id": "<CAN5YmCHCCUjX6xLPFfENTj6ne-cOpHNAUR2tYiigv0WCpbeorw@mail.gmail.com>",
+      "from_name": "Adams, Jean",
+      "from_email_hash": "b0a0a120a933c9f22a721edfedacedb8be80a53ef46367c1c4d59470648f3a0b",
+      "date": "2015-12-04T15:18:50-06:00",
+      "subject": "[R-pkgs] LW1949 – new package for evaluating dose-effect experiments",
+      "subject_clean": "LW1949 – new package for evaluating dose-effect experiments",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "LW1949 1.0.0 is now available on CRAN.\n\n\n\nLW1949 automates the steps taken in Litchfield and Wilcoxon?s (1949) manual\napproach to evaluating dose-effect experiments. Letting the computer do the\nwork saves time and yields the best fit possible using the Litchfield\nWilcoxon approach (by minimizing the chi-squared statistic).\n\n\n\nA brief demonstration of LW1949 is given in this web app,\n\n     https://jvadams.shinyapps.io/LW1949demo\n\n\n\nAn example of how to use the functions in LW1949 is given in this vignette,\n\n     https://rawgit.com/JVAdams/LW1949/master/vignettes/Intro.html\n\n\n\nLitchfield, JT Jr. and F Wilcoxon. 1949. A simplified method of evaluating\ndose-effect experiments. Journal of Pharmacology and Experimental\nTherapeutics 96(2):99-113.\n\n     http://jpet.aspetjournals.org/content/96/2/99.abstract\n\n\nJean??\n\n\n`?.,,  ><(((?>   `?.,,  ><(((?>   `?.,,  ><(((?>\n\nJean V. Adams??\nStatistician\nU.S. Geological?? Survey ??\nGreat Lakes Science Center\n223 East Steinfest Road ??\nAntigo, WI 54409  USA ??\nhttp://www.glsc.usgs.gov\nhttp://profile.usgs.gov/jvadams\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "LW1949 1.0.0 is now available on CRAN.\n\n\n\nLW1949 automates the steps taken in Litchfield and Wilcoxon?s (1949) manual\napproach to evaluating dose-effect experiments. Letting the computer do the\nwork s",
+      "thread_id": "thread-7b12189d4d55",
+      "thread_depth": 0,
+      "month": "2015-12"
+    },
+    {
+      "id": "msg-34a3dc29034a",
+      "message_id": "<A5FB07ED-53B9-4169-9CB0-1B7C56204E98@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2015-12-07T12:45:10-06:00",
+      "subject": "[R-pkgs] WriteXLS Version 4.0.0 Released",
+      "subject_clean": "WriteXLS Version 4.0.0 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nWriteXLS version 4.0.0 has been released. It should start appearing in source tarballs and binaries in due course on CRAN mirrors.\n\nThe primary changes in this new version are:\n\n1. The new ability to specify either a single data frame object or a list object that contains one or more data frames. \n\nPreviously one needed to specify a character vector of the quoted names of data frames or the quoted name of a list containing one or more data frames. \n\nI have had several requests to also allow the objects themselves to be passed and this is now possible, in addition to the original functionality. The use of quoted names has also been one of the more common sources of confusion in the use of the function.\n\nPlease see the examples in ?WriteXLS for the differences in calling the function with quoted names versus objects.\n\nIt was my goal to not break existing code and this has been tested with the new functionality, so please let me know if any one runs into any issues.\n\n\n2. A new 'na' argument, defaulting to \"\" (blank) for backward compatibility, that allows one to specify the character value to be used in the target Excel file, when NA values are encountered in the source data frame. This is a parallel to the same argument in ?write.table.\n\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nWriteXLS version 4.0.0 has been released. It should start appearing in source tarballs and binaries in due course on CRAN mirrors.\n\nThe primary changes in this new version are:\n\n1. The new ab",
+      "thread_id": "thread-34a3dc29034a",
+      "thread_depth": 0,
+      "month": "2015-12"
+    },
+    {
+      "id": "msg-014c4d9913c5",
+      "message_id": "<CAG=FcbnD6pqCfZk1U6vvuxnQxUFGzH1K=E5rFAknAYZApE-XPA@mail.gmail.com>",
+      "from_name": "joel carlson",
+      "from_email_hash": "2f78e3cf60694451067dc247705c445bb30292f61457b4bc84c777dd21b163a9",
+      "date": "2015-12-11T17:44:04+09:00",
+      "subject": "[R-pkgs] New Package \"radiomics\": First and Second Order Matrix Statistics",
+      "subject_clean": "New Package \"radiomics\": First and Second Order Matrix Statistics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nI am pleased to inform you that my package, 'radiomics' is now\navailable on CRAN:\nhttps://cran.r-project.org/web/packages/radiomics/\n<http://cran.r-project.org/web/packages/clifro/>\n\nThe radiomics package offers 4 classes of texture matrices, and\nassociated feature sets. These matrices can be used for image\nclassification, or for extraction of meaningful information from the\ninput image (as in the case of the research field of radiomics). The\ntexture matrices are:\n\n - Gray level co-occurrence matrix (GLCM)\n\n - Gray level run-length matrix (GLRLM)\n\n - Gray level size-zone matrix (GLSZM)\n\n - Multiple gray level size-zone matrix (MGLSZM)\n\nEach of these matrices are calculated from an input grayscale matrix,\nand return objects of class 'glcm', 'glrlm', 'glszm' or 'mglszm'.\nFeatures of the matrices can be calculated using the calc_features()\nfunction. calc_features() can also be called on an image matrix, and\nwill return first-order summary statistics.\n\nThe github page can be viewed\nhere:https://github.com/joelcarlson/radiomics\n<https://github.com/ropensci/clifro#enhancing-the-national-climate-database-with-clifro>\n\nLists of features, and an introduction to the package can be found in\nthe package vignette.\n\nIn-depth explanation of texture analysis matrices can be found here:\n\nhttp://joelcarlson.me/2015/07/10/radiomics-package/\n\nAny comments, contributions, and feedback are always welcome.\n\nI hope you find this helpful!\nRegards\n---\nJoel Carlson\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users,\n\nI am pleased to inform you that my package, 'radiomics' is now\navailable on CRAN:\nhttps://cran.r-project.org/web/packages/radiomics/\n<http://cran.r-project.org/web/packages/clifro/>\n\nTh",
+      "thread_id": "thread-014c4d9913c5",
+      "thread_depth": 0,
+      "month": "2015-12"
+    },
+    {
+      "id": "msg-db95903170cf",
+      "message_id": "<CACsjJ_dnOLdXQP-=10LRJSaDX5SU5gXcP3Ev+256hUGJYcSVMQ@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2015-12-13T11:50:45-05:00",
+      "subject": "[R-pkgs] randomForestSRC 2.0.0",
+      "subject_clean": "randomForestSRC 2.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "randomForestSRC 2.0.0 is now available on CRAN.   The package is able\nto handle multivariate regression (data sets in which the response is\none or more continuous variables), multivariate classification (data\nsets in which the response is one or more factor variables),\nmultivariate mixed (data sets in which the response is a combination\nof continuous and factor variables), survival, competing risk, and\nunsupervised forests (data sets in which no response is chosen).\n\nThe memory and CPU profiles for the package have improved.  The\npackage is OpenMP compliant on all popular platforms.  Instructions\nfor enabling this functionality is available in Rd files, and\npre-compiled OpenMP binaries are also available at:\n\nhttp://www.ccs.miami.edu/~hishwaran/rfsrc.html.\n\nLinear gains in computation times have been observed on multi-core\ndesktops and cluster environments using OpenMP.\n\nFinally, the ability to implement user defined split rules is now\navailable. Instructions and examples for all families are provided in\nthe package's src directory in splitCustom.c.\n\nUdaya B. Kogalur, Ph.D.\nContract Staff, Dept. of Quantitative Health Sciences, Cleveland\nClinic Foundation\n\nubkogalur at gmail.com",
+      "body_snippet": "randomForestSRC 2.0.0 is now available on CRAN.   The package is able\nto handle multivariate regression (data sets in which the response is\none or more continuous variables), multivariate classificati",
+      "thread_id": "thread-db95903170cf",
+      "thread_depth": 0,
+      "month": "2015-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7b12189d4d55",
+      "subject": "LW1949 – new package for evaluating dose-effect experiments",
+      "message_count": 1,
+      "participants": [
+        "Adams, Jean"
+      ],
+      "started": "2015-12-04T15:18:50-06:00",
+      "last_reply": "2015-12-04T15:18:50-06:00",
+      "root_message_id": "msg-7b12189d4d55"
+    },
+    {
+      "id": "thread-34a3dc29034a",
+      "subject": "WriteXLS Version 4.0.0 Released",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2015-12-07T12:45:10-06:00",
+      "last_reply": "2015-12-07T12:45:10-06:00",
+      "root_message_id": "msg-34a3dc29034a"
+    },
+    {
+      "id": "thread-014c4d9913c5",
+      "subject": "New Package \"radiomics\": First and Second Order Matrix Statistics",
+      "message_count": 1,
+      "participants": [
+        "joel carlson"
+      ],
+      "started": "2015-12-11T17:44:04+09:00",
+      "last_reply": "2015-12-11T17:44:04+09:00",
+      "root_message_id": "msg-014c4d9913c5"
+    },
+    {
+      "id": "thread-db95903170cf",
+      "subject": "randomForestSRC 2.0.0",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2015-12-13T11:50:45-05:00",
+      "last_reply": "2015-12-13T11:50:45-05:00",
+      "root_message_id": "msg-db95903170cf"
+    }
+  ]
+}

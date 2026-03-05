@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-11",
+  "messages": [
+    {
+      "id": "msg-55058d8a1530",
+      "message_id": "<BN6PR01MB2834F5141E5C21865320B7B4AB500@BN6PR01MB2834.prod.exchangelabs.com>",
+      "from_name": "Ma. Regina Paz Saquido Onglao",
+      "from_email_hash": "45d680eed9a1798bdb611dc736a54efa041e69e0fb6e738538c25a330f1932ab",
+      "date": "2017-11-06T14:02:09Z",
+      "subject": "[R-pkgs] New package: data360r to access trade and governance open data",
+      "subject_clean": "New package: data360r to access trade and governance open data",
+      "in_reply_to": "<BN6PR01MB2834288B81C99C7FAD720EE4AB500@BN6PR01MB2834.prod.exchangelabs.com>",
+      "references": [
+        "<BN6PR01MB2834288B81C99C7FAD720EE4AB500@BN6PR01MB2834.prod.exchangelabs.com>"
+      ],
+      "body_plain": "Hi everyone,\n\nWe've recently launched data360r, now available on CRAN at https://cran.r-project.org/web/packages/data360r/index.html\n\nThis package makes it easy to engage with the APIs of the TCdata360 and Govdata360 open data platforms at https://tcdata360.worldbank.org/ and https://govdata360.worldbank.org/, respectively. These APIs provide access to over 5000 trade, competitiveness, and governance indicator data, metadata, and related information from over 80 sources both inside and outside the World Bank Group. Package functions include easier download of data sets, metadata, and related information, as well as searching based on user-inputted query.\n\nAdditional information can be seen at:\n+ See how it works through detailed use cases at https://tcdata360.worldbank.org/tools/data360r\n+ Read about data360r's benefits in this blog: https://blogs.worldbank.org/opendata/introducing-data360r-data-power-r\n+ Check out a cool usecase using data360r and Bob Rudis' streamgraph package: http://blogs.worldbank.org/opendata/interactive-product-export-streamgraphs-data360r-now-cran\n+ Code can be seen at my github repo: https://github.com/mrpsonglao/data360r\n\nIf you have any questions, feedback, or suggestions, I'd be more than happy to hear these. Feel free to send me an email at monglao at ifc.org.\n\n\nCheers,\n\nMa. Regina Paz S. Onglao\n\nData Scientist\n\nTrade and Competitiveness (T&C) Global Practice\n\nWorld Bank Group\n\n\nE\n\nmonglao at ifc.org\n\nW\n\nhttps://tcdata360.worldbank.org/\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone,\n\nWe've recently launched data360r, now available on CRAN at https://cran.r-project.org/web/packages/data360r/index.html\n\nThis package makes it easy to engage with the APIs of the TCdata36",
+      "thread_id": "thread-55058d8a1530",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-901314988d1e",
+      "message_id": "<CALdB+JGPQRf2pr8WMGGtg1ku2JQkyMH-0bqvpycDSa-rjQDXTw@mail.gmail.com>",
+      "from_name": "Jorge Cimentada",
+      "from_email_hash": "afe639554313d36912733aa0fcde01ca8b2b29bb20aac18363a3872800f2d1c5",
+      "date": "2017-11-09T00:02:53+01:00",
+      "subject": "[R-pkgs] Release of ess 0.0.1",
+      "subject_clean": "Release of ess 0.0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear CRANers!\n\nI'm happy to announce the release of ess 0.0.1 a package designed to\ndownload data from the European Social Survey\n<http://www.europeansocialsurvey.org/> directly into R as easily as\npossible. It has a few helper functions to download rounds/waves, rounds\nfor a selected country and to show which rounds/countries are available.\n\nThis is an exciting moment for the release considering that just last week\nthe ESS released it's 8th round, which is already available in the package.\nYou can checkout some brief examples here\n<https://twitter.com/cimentadaj/status/928394896700051461> or a more\ndetailed description in the vignette\n<https://cran.r-project.org/web/packages/ess/vignettes/ess_r_stata_users.html>.\nBugs\nand improvements can be issued in the Github repository\n<https://github.com/cimentadaj/ess>. This is the first release and I'm sure\nthere's a lot of room for improvement.\n\nThanks!\n-----------------------------------\n\n\nJorge Cimentada\n*https://cimentadaj.github.io/ <https://cimentadaj.github.io/>*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear CRANers!\n\nI'm happy to announce the release of ess 0.0.1 a package designed to\ndownload data from the European Social Survey\n<http://www.europeansocialsurvey.org/> directly into R as easily as\npo",
+      "thread_id": "thread-901314988d1e",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-f23957606c81",
+      "message_id": "<DB6PR0801MB16222BA118538ADA24459DB1C0290@DB6PR0801MB1622.eurprd08.prod.outlook.com>",
+      "from_name": "Johan Larsson",
+      "from_email_hash": "b8c1919587dfa44f9fee1637f9b66c88ac9d8a6b0c8f6282e82e5a7cd596394e",
+      "date": "2017-11-15T17:47:04Z",
+      "subject": "[R-pkgs] eulerr 3.0.0",
+      "subject_clean": "eulerr 3.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI have just published a major update to my R package eulerr, which constructs and plots area-proportional Euler and Venn diagrams. The new update, version 3.0.0, allows the user to now also plot Euler diagrams using ellipses in addition to circles, which enables accurate diagrams for a wider range of inputs. This is the first software solution that features Euler diagrams with ellipses for more than 3 sets.\n\nFor a quick introduction, check out the shiny application for the package at http://jolars.co/eulerr or visit https://CRAN.R-project.org/package=eulerr to learn about the application in detail. You can also read about all the new updates at https://cran.r-project.org/web/packages/eulerr/news.html which also includes updated algorithms for arranging diagrams, ports of existing code to C++, and updates to the default color palettes.\n\nIf you are interested in collaborating on the project, please visit the development page at https://github.com/jolars/eulerr \n\nAll the best,\nJohan Larsson",
+      "body_snippet": "Dear R users,\n\nI have just published a major update to my R package eulerr, which constructs and plots area-proportional Euler and Venn diagrams. The new update, version 3.0.0, allows the user to now ",
+      "thread_id": "thread-f23957606c81",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-ec2d2e556735",
+      "message_id": "<375144$8caemt@ironport10.mayo.edu>",
+      "from_name": "Heinzen, Ethan P.",
+      "from_email_hash": "5c480216203fa97aa23b11defa83859675a4a5548b365f3c9ccf3ba1e4626c48",
+      "date": "2017-11-20T19:26:31Z",
+      "subject": "[R-pkgs] elo v1.0.0: Elo Ratings",
+      "subject_clean": "elo v1.0.0: Elo Ratings",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI'm pleased to announce the v1.0.0 major release of the \"elo\" package on CRAN (https://cran.r-project.org/package=elo).\n\nThis package implements a flexible framework for calculating Elo ratings of any two-team-per-matchup system (chess, sports leagues, 'Go', etc.).  It is capable of evaluating a variety of matchups, Elo rating updates, and win probabilities, all based on the basic Elo rating system.  For details, see the vignette included in the package.  Bug reports and other contributions are always welcome on the \"elo\" package GitHub page: https://github.com/eheinzen/elo.\n\nCheers,\nEthan Heinzen\nheinzen.ethan at mayo.edu<mailto:heinzen.ethan at mayo.edu>\nhttps://github.com/eheinzen\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nI'm pleased to announce the v1.0.0 major release of the \"elo\" package on CRAN (https://cran.r-project.org/package=elo).\n\nThis package implements a flexible framework for calculating Elo r",
+      "thread_id": "thread-ec2d2e556735",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-1d73d38a54e4",
+      "message_id": "<2dc989fa-4338-a16f-7572-cb8321cff0d3@stanford.edu>",
+      "from_name": "Balasubramanian Narasimhan",
+      "from_email_hash": "6bc924444e06374cf1e6a1426a5d6229c73b5beea903838622aa4cf84e292b2c",
+      "date": "2017-11-21T09:53:04-08:00",
+      "subject": "[R-pkgs] CVXR: Convex Programming in R",
+      "subject_clean": "CVXR: Convex Programming in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nWe are pleased to announce the first release of CVXR which implements \nDisciplined Convex Programming (DCP) in R on CRAN. Like CVXPY in Python, \nCVXR provides a domain specific language for formulating \nconvexoptimization problems in a natural way following mathematical \nconvention and DCP rules. The system analyzes the problem, verifies its \nconvexity, converts it into a canonical form, and hands it off to an \nappropriate solver to obtain the solution.\n\nApplications of convex programming are described in a paper available at\n\nhttps://stanford.edu/~boyd/papers/pdf/cvxr_paper.pdf \n<https://stanford.edu/%7Eboyd/papers/pdf/cvxr_paper.pdf> .\n\nAn introductory vignette is included in the package.? A number of \nfurther examples are available at https://cvxr.rbind.io.\n\nWe welcome your feedback and issues on Github ( \nhttps://github.com/anqif/CVXR ).\n\n--\n\nAnqi Fu, Balasubramanian Narasimhan, Stephen Boyd\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users,\n\nWe are pleased to announce the first release of CVXR which implements \nDisciplined Convex Programming (DCP) in R on CRAN. Like CVXPY in Python, \nCVXR provides a domain specific language",
+      "thread_id": "thread-1d73d38a54e4",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-f8951c5aa084",
+      "message_id": "<MWHPR04MB1040325B5FB68C8ABCE31AC1E83B0@MWHPR04MB1040.namprd04.prod.outlook.com>",
+      "from_name": "Peterson, Ryan A",
+      "from_email_hash": "d3db0088661faaa7230f62a1fe208c62c9fdd47fb381054d2fdedd4637333df2",
+      "date": "2017-11-29T18:39:58Z",
+      "subject": "[R-pkgs] New package - bestNormalize",
+      "subject_clean": "New package - bestNormalize",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R enthusiasts,\n\n\nI am happy to announce a new package available on CRAN, bestNormalize (https://cran.r-project.org/web/packages/bestNormalize/). bestNormalize can be used for estimating a suite of normalizing transformations, including a new technique based on ranks which can guarantee normally distributed transformed data if there are no ties: ordered quantile normalization. The package is built to estimate the best normalizing transformation for a vector consistently and accurately. It implements the Box-Cox transformation, the Yeo-Johnson transformation, three types of Lambert WxF transformations, and the ordered quantile normalization transformation.\n\n\nSee the package vignette for a guide on how to use the package, as well as an application to some (included) scraped Autotrader data.\n\n\nIf you encounter any issues or would like to make contributions, please do so via the package's GitHub page: https://github.com/petersonR/bestNormalize\n\nRyan Peterson\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi R enthusiasts,\n\n\nI am happy to announce a new package available on CRAN, bestNormalize (https://cran.r-project.org/web/packages/bestNormalize/). bestNormalize can be used for estimating a suite of ",
+      "thread_id": "thread-f8951c5aa084",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-6742092e1c85",
+      "message_id": "<1512028245.4722.68.camel@med.uni-goettingen.de>",
+      "from_name": "Röver, Christian",
+      "from_email_hash": "37bc3fbd6f9ad5d92608e6adbd6d5e1c60d8c42607729120280c75a5983f5e5f",
+      "date": "2017-11-30T07:50:45Z",
+      "subject": "[R-pkgs] bayesmeta 2.0 released",
+      "subject_clean": "bayesmeta 2.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\na new version (2.0) of the \"bayesmeta\" package for Bayesian random-\neffects meta-analysis is now available on CRAN; see here:\n\n??http://cran.r-project.org/package=bayesmeta\n\nAlong with the package now comes an extensive introduction to the topic\nas well as the use of the package (also included as a package\nvignette); see here:\n\n??Bayesian random-effects meta-analysis using the bayesmeta R package\n??http://arxiv.org/abs/1711.08683\n\nComments/questions/suggestions/... are, as always, welcome.\n\nHappy meta-analysing,\n\nChristian R?ver",
+      "body_snippet": "Dear R users,\n\na new version (2.0) of the \"bayesmeta\" package for Bayesian random-\neffects meta-analysis is now available on CRAN; see here:\n\n??http://cran.r-project.org/package=bayesmeta\n\nAlong with ",
+      "thread_id": "thread-6742092e1c85",
+      "thread_depth": 0,
+      "month": "2017-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-55058d8a1530",
+      "subject": "New package: data360r to access trade and governance open data",
+      "message_count": 1,
+      "participants": [
+        "Ma. Regina Paz Saquido Onglao"
+      ],
+      "started": "2017-11-06T14:02:09+00:00",
+      "last_reply": "2017-11-06T14:02:09+00:00",
+      "root_message_id": "msg-55058d8a1530"
+    },
+    {
+      "id": "thread-901314988d1e",
+      "subject": "Release of ess 0.0.1",
+      "message_count": 1,
+      "participants": [
+        "Jorge Cimentada"
+      ],
+      "started": "2017-11-09T00:02:53+01:00",
+      "last_reply": "2017-11-09T00:02:53+01:00",
+      "root_message_id": "msg-901314988d1e"
+    },
+    {
+      "id": "thread-f23957606c81",
+      "subject": "eulerr 3.0.0",
+      "message_count": 1,
+      "participants": [
+        "Johan Larsson"
+      ],
+      "started": "2017-11-15T17:47:04+00:00",
+      "last_reply": "2017-11-15T17:47:04+00:00",
+      "root_message_id": "msg-f23957606c81"
+    },
+    {
+      "id": "thread-ec2d2e556735",
+      "subject": "elo v1.0.0: Elo Ratings",
+      "message_count": 1,
+      "participants": [
+        "Heinzen, Ethan P."
+      ],
+      "started": "2017-11-20T19:26:31+00:00",
+      "last_reply": "2017-11-20T19:26:31+00:00",
+      "root_message_id": "msg-ec2d2e556735"
+    },
+    {
+      "id": "thread-1d73d38a54e4",
+      "subject": "CVXR: Convex Programming in R",
+      "message_count": 1,
+      "participants": [
+        "Balasubramanian Narasimhan"
+      ],
+      "started": "2017-11-21T09:53:04-08:00",
+      "last_reply": "2017-11-21T09:53:04-08:00",
+      "root_message_id": "msg-1d73d38a54e4"
+    },
+    {
+      "id": "thread-f8951c5aa084",
+      "subject": "New package - bestNormalize",
+      "message_count": 1,
+      "participants": [
+        "Peterson, Ryan A"
+      ],
+      "started": "2017-11-29T18:39:58+00:00",
+      "last_reply": "2017-11-29T18:39:58+00:00",
+      "root_message_id": "msg-f8951c5aa084"
+    },
+    {
+      "id": "thread-6742092e1c85",
+      "subject": "bayesmeta 2.0 released",
+      "message_count": 1,
+      "participants": [
+        "Röver, Christian"
+      ],
+      "started": "2017-11-30T07:50:45+00:00",
+      "last_reply": "2017-11-30T07:50:45+00:00",
+      "root_message_id": "msg-6742092e1c85"
+    }
+  ]
+}

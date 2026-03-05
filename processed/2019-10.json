@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-10",
+  "messages": [
+    {
+      "id": "msg-911cc5405e8e",
+      "message_id": "<553536EF-B70A-4810-AB7B-C69B40705B72@bccrc.ca>",
+      "from_name": "Derek Chiu",
+      "from_email_hash": "068341246552485f584650e48092b39c230ebd78d10ff8ed32cbc42ebc02de65",
+      "date": "2019-10-03T17:20:30Z",
+      "subject": "[R-pkgs] New package 'rsf' for generating a report of statistical findings",
+      "subject_clean": "New package 'rsf' for generating a report of statistical findings",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package ?rsf' has been released to CRAN:\n\nhttps://cran.r-project.org/web/packages/rsf/index.html\n\nThis package is meant to be used in conjunction with RStudio, as it adds a new project template to the New Project menu interface.\nA skeleton project is generated with files used for the ?bookdown? format.\nThe next release will focus on refactoring the package to use ?ymlthis? as a new core dependency.\n\nAny feedback would be greatly appreciated:\n\nhttps://github.com/dchiu911/rsf\n\nRegards,\nDerek Chiu",
+      "body_snippet": "A new package ?rsf' has been released to CRAN:\n\nhttps://cran.r-project.org/web/packages/rsf/index.html\n\nThis package is meant to be used in conjunction with RStudio, as it adds a new project template ",
+      "thread_id": "thread-911cc5405e8e",
+      "thread_depth": 0,
+      "month": "2019-10"
+    },
+    {
+      "id": "msg-113a602a6dea",
+      "message_id": "<20191022081636.Horde.EoC89oRNWVWpSwPnev1fws0@webmail.your-server.de>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "42e3fbcaa04e968726f4c1d1a69e34143bdbc62b403d112ba1d3712256bacb88",
+      "date": "2019-10-22T08:16:36+02:00",
+      "subject": "[R-pkgs] NMOF 2.0-1 (Numerical Methods and Optimization in Finance)",
+      "subject_clean": "NMOF 2.0-1 (Numerical Methods and Optimization in Finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 2.0-1 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization in Finance',\nand it accompanies the book with the same name, written by\nManfred Gilli, Dietmar Maringer and Enrico Schumann.[1]\n\nThe new version of the package provides all R code and datasets\nof the book's second edition, which has been published a few weeks ago.\nAll updates and new features are listed in the NEWS file.[2]\nSample materials of the book, on backtesting and on optimization\nheuristics, are available as well.[3][4]\n\nKind regards\n      Enrico\n\n[1] http://enricoschumann.net/NMOF\n[2] https://github.com/enricoschumann/NMOF/blob/master/NEWS\n[3] optimisation heuristics: https://ssrn.com/abstract=3391756\n[4] backtesting: https://ssrn.com/abstract=3374195\n\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttp://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 2.0-1 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization in Finance',\nand it accompanies the book with the same name, written by\nManfred Gilli, Die",
+      "thread_id": "thread-113a602a6dea",
+      "thread_depth": 0,
+      "month": "2019-10"
+    },
+    {
+      "id": "msg-cef495453bfc",
+      "message_id": "<CAEX8acpSjAF+kHuEh7nk5fGyYFX_OdGF3OWW3X0xYy_RQpeNeg@mail.gmail.com>",
+      "from_name": "Peter Li",
+      "from_email_hash": "2c57b603681d452ea33602d90f1f66349dbe7342de356ed66733ca72f5a4247c",
+      "date": "2019-10-22T10:39:11-07:00",
+      "subject": "[R-pkgs] packageRank (v.0.3.0) update",
+      "subject_clean": "packageRank (v.0.3.0) update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "packageRank: compute and visualize package download counts and rank\npercentiles\n\n* compute and visualize the counts and ranks (nominal and percentile) of\ndownloads from RStudio's CRAN mirror and Bioconductor.\n* compute and visualize a package's position in the overall distribution of\ndownload counts for a given day (cross-sectionally) or over time\n(longitudinally).\n* compute and visualize the downloads of the R application.\n\nCRAN: https://cran.r-project.org/package=packageRank\nGitHub: https://github.com/lindbrook/packageRank\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "packageRank: compute and visualize package download counts and rank\npercentiles\n\n* compute and visualize the counts and ranks (nominal and percentile) of\ndownloads from RStudio's CRAN mirror and Bioco",
+      "thread_id": "thread-cef495453bfc",
+      "thread_depth": 0,
+      "month": "2019-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-911cc5405e8e",
+      "subject": "New package 'rsf' for generating a report of statistical findings",
+      "message_count": 1,
+      "participants": [
+        "Derek Chiu"
+      ],
+      "started": "2019-10-03T17:20:30+00:00",
+      "last_reply": "2019-10-03T17:20:30+00:00",
+      "root_message_id": "msg-911cc5405e8e"
+    },
+    {
+      "id": "thread-113a602a6dea",
+      "subject": "NMOF 2.0-1 (Numerical Methods and Optimization in Finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2019-10-22T08:16:36+02:00",
+      "last_reply": "2019-10-22T08:16:36+02:00",
+      "root_message_id": "msg-113a602a6dea"
+    },
+    {
+      "id": "thread-cef495453bfc",
+      "subject": "packageRank (v.0.3.0) update",
+      "message_count": 1,
+      "participants": [
+        "Peter Li"
+      ],
+      "started": "2019-10-22T10:39:11-07:00",
+      "last_reply": "2019-10-22T10:39:11-07:00",
+      "root_message_id": "msg-cef495453bfc"
+    }
+  ]
+}

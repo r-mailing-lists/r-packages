@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-12",
+  "messages": [
+    {
+      "id": "msg-38591a6e38bf",
+      "message_id": "<CAKwavrn3m5nt-Y_LGiL-M=afdS-Ty=HEOAQtNg+QDsqVurq_4A@mail.gmail.com>",
+      "from_name": "Pedro Rafael",
+      "from_email_hash": "50f74ab333072c96036aff2fa0705edee0797905e08b2d909ee86bab84284514",
+      "date": "2019-12-03T13:38:30-03:00",
+      "subject": "[R-pkgs] ropenblas package",
+      "subject_clean": "ropenblas package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear colleagues,\n\nThe *ropenblas* <https://prdm0.github.io/ropenblas/> is a package designed\nto facilitate the linking of the library *OpenBLAS*\n<https://www.openblas.net/> with the language *R*\n<https://www.r-project.org/>. The package, which works only for Linux\nsystems, will automatically download the latest source code from the\n*OpenBLAS* <https://www.openblas.net/> library and compile the code. The\npackage will automatically bind the language *R*\n<https://www.r-project.org/> to use the *OpenBLAS*\n<https://www.openblas.net/> library. Everything will be done automatically\nregardless of the Linux distribution you are using.\n\nYou can also specify older versions of the *OpenBLAS*\n<https://www.openblas.net/> library. Automatically, if no version is\nspecified, the *ropenblas* <https://prdm0.github.io/ropenblas/> package\nwill consider the latest version of the library *OpenBLAS*\n<https://www.openblas.net/>.\n\nConsidering using the *OpenBLAS* <https://www.openblas.net/> library rather\nthan the *BLAS* <http://www.netlib.org/blas/> may bring extra optimizations\nfor your code and improved computational performance for your simulations,\nsince *OpenBLAS* <https://www.openblas.net/> is an optimized implementation\nof the library *BLAS* <http://www.netlib.org/blas/>.\n\nSome of the reasons why it is convenient to link *R*\n<https://www.r-project.org/> language to the use of *BLAS*\n<http://www.netlib.org/blas/> optimized alternatives can be found *here*\n<https://csantill.github.io/RPerformanceWBLAS/>. Several other *benchmarks*\n<https://en.wikipedia.org/wiki/Benchmarking> that point to improved\ncomputing performance by considering the library *OpenBLAS*\n<https://www.openblas.net/> can be found on the internet.\n\nBest regards,\n\nPedro Rafael.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nThe *ropenblas* <https://prdm0.github.io/ropenblas/> is a package designed\nto facilitate the linking of the library *OpenBLAS*\n<https://www.openblas.net/> with the language *R*\n<http",
+      "thread_id": "thread-38591a6e38bf",
+      "thread_depth": 0,
+      "month": "2019-12"
+    },
+    {
+      "id": "msg-ee98de75c49b",
+      "message_id": "<CAD3yMvKA7k7tHBc9v4KCyR_Wmd3sBYMB+=RhnJvCyY=j-p0aGA@mail.gmail.com>",
+      "from_name": "Zad Chow",
+      "from_email_hash": "ea15e4cf414b06af8f137767e6c5397bef15cc0767fb489cdb3849650c1d0455",
+      "date": "2019-12-07T23:24:34-05:00",
+      "subject": "[R-pkgs] concurve v 2.3.0 - Comparing Functions, Bootstrapping, and Exporting Tables",
+      "subject_clean": "concurve v 2.3.0 - Comparing Functions, Bootstrapping, and Exporting Tables",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Pleased to announce that the next version (2.3.0) of our package ?concurve?\nis out on CRAN (https://cran.r-project.org/package=concurve).\n\nIn addition to plotting confidence (consonance) curves, it can now plot two\nfunctions next to one another to see the amount of overlap. It can also\nplot likelihood and deviance functions along with consonance densities and\ndistributions.\n\nAnd it can utilize bootstrapping (the BCa and t method) to approximate the\ncurves, distributions, and densities. And to top it off, it can export\ntables of relevant statistics in various formats.\n\nWe welcome any feedback and bug reports (\nhttps://github.com/zadchow/concurve/issues)\n\nBest,\n\nZad R. Chow\nAndrew D. Vigotsky\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Pleased to announce that the next version (2.3.0) of our package ?concurve?\nis out on CRAN (https://cran.r-project.org/package=concurve).\n\nIn addition to plotting confidence (consonance) curves, it ca",
+      "thread_id": "thread-ee98de75c49b",
+      "thread_depth": 0,
+      "month": "2019-12"
+    },
+    {
+      "id": "msg-9edcd10ef6ec",
+      "message_id": "<CACr7k5J5brk29wofrWYyKqqqNphbCLL5QLKScOrkAmx0Lj+aUg@mail.gmail.com>",
+      "from_name": "Jose Barrera",
+      "from_email_hash": "8778f264bf3302810a47e59dbb83a8c1620caae4891286991a9e13f30ea084b7",
+      "date": "2019-12-15T20:02:59+01:00",
+      "subject": "[R-pkgs] christmas package",
+      "subject_clean": "christmas package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Generation of a number of Christmas cards, most of them being animated. The\nname of each card includes the year in which it was created.\n\nSome examples are:\n\n- The christmas card that was writen in 2009 shows a ?caganer? (\nhttps://en.wikipedia.org/wiki/Caganer):\n\n> library(christmas)\n> xmas2009caganer()\n\n- The 2019 design is about CRM (Christmas regression model)  ;-)\n\n> xmas2019regression()\n\nHave a nice 2020!\n\n\nJose Barrera\nStatistician, Associate Lecturer\n\n*IS**Global*\nBarcelona Institute for Global Health - Campus MAR\nBarcelona Biomedical Research Park (PRBB) (Room Hypatia)\n\nDoctor Aiguader, 88\n08003 Barcelona, Spain\nTel. +34 93 2147383\njose.barrera at isglobal.org\n<https://www.linkedin.com/in/josebarrera>\nPersonal website: sites.google.com/view/josebarrera\nwww.isglobal.org\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege.\nIf you are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly\nprohibited by law. If this message has been received in error, please\nimmediately notify us via e-mail and delete it.\n\nDATA PROTECTION. We inform you that your personal data, including your\ne-mail address and data included in your email correspondence, are included\nin the ISGlobal Foundation filing system. Your personal data will be used\nfor the purpose of contacting you and sending information on the activities\nof the above foundations. You can exercise your rights to  access to\npersonal data, rectification, erasure, restriction of processing, data\nportability and object by contacting the following address: *lopd at isglobal.org\n<lopd at isglobal.org>*. ISGlobal Privacy Policy at *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a su\ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n, divulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n vigente. Si ha recibido este mensaje por error, le rogamos lo\ncomunique inmediatamente por esta misma v?a y proceda a su destrucci?n.\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de\ntitularidad de la Fundaci?n ISGlobal  para cualquier finalidades de\ncontacto, relaci?n institucional y/o env?o de informaci?n sobre sus\nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando\nel uso de su direcci?n de e-mail para las finalidades citadas. Puede\nejercer los derechos de acceso, rectificaci?n, supresi?n, limitaci?n del\ntratamiento, portabilidad y oposici?n dirigi?ndose a *lopd at isglobal.org\n<lopd at isglobal.org>* . Pol?tica de privacidad en *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n-- \n\n\nThis message is intended exclusively for its addressee and may contain\n\ninformation that is CONFIDENTIAL and protected by professional privilege. \nIf\nyou are not the intended recipient you are hereby notified that any\n\ndissemination, copy or disclosure of this communication is strictly \nprohibited\nby law. If this message has been received in error, please \nimmediately notify\nus via e-mail and delete it.\n\n\n\nDATA PROTECTION. We \ninform you that your personal data, including your\ne-mail address and data \nincluded in your email correspondence, are included in\nthe ISGlobal \nFoundation files. Your personal data will be used for the purpose\nof \ncontacting you and sending information on the activities of the above\n\nfoundations. You can exercise your rights of access, rectification,\n\ncancellation and opposition by contacting the following address: \nlopd at isglobal.org <mailto:lopd at isglobal.org>. ISGlobal\nPrivacy Policy at \nwww.isglobal.org <http://www.isglobal.org/>.\n\n\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a\nsu \ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n,\ndivulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n\nvigente. Si ha recibido este mensaje por error, le rogamos lo \ncomunique\ninmediatamente por esta misma v?a y proceda a su destrucci?n.\n\n\n\n\n\n\n\n\n\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\n\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de \ntitularidad\nde la Fundaci?n ISGlobal? para cualquier\nfinalidades de \ncontacto, relaci?n institucional y/o env?o de informaci?n sobre\nsus \nactividades. Los datos que usted nos pueda facilitar contestando este\n\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando \nel\nuso de su direcci?n de e-mail para las finalidades citadas. Puede \nejercer los\nderechos de acceso, rectificaci?n, cancelaci?n y oposici?n \ndirigi?ndose a lopd at isglobal.org <mailto:lopd at isglobal.org>* *. Pol?tica de \nprivacidad\nen www.isglobal.org <http://www.isglobal.org/>.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Generation of a number of Christmas cards, most of them being animated. The\nname of each card includes the year in which it was created.\n\nSome examples are:\n\n- The christmas card that was writen in 20",
+      "thread_id": "thread-9edcd10ef6ec",
+      "thread_depth": 0,
+      "month": "2019-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-38591a6e38bf",
+      "subject": "ropenblas package",
+      "message_count": 1,
+      "participants": [
+        "Pedro Rafael"
+      ],
+      "started": "2019-12-03T13:38:30-03:00",
+      "last_reply": "2019-12-03T13:38:30-03:00",
+      "root_message_id": "msg-38591a6e38bf"
+    },
+    {
+      "id": "thread-ee98de75c49b",
+      "subject": "concurve v 2.3.0 - Comparing Functions, Bootstrapping, and Exporting Tables",
+      "message_count": 1,
+      "participants": [
+        "Zad Chow"
+      ],
+      "started": "2019-12-07T23:24:34-05:00",
+      "last_reply": "2019-12-07T23:24:34-05:00",
+      "root_message_id": "msg-ee98de75c49b"
+    },
+    {
+      "id": "thread-9edcd10ef6ec",
+      "subject": "christmas package",
+      "message_count": 1,
+      "participants": [
+        "Jose Barrera"
+      ],
+      "started": "2019-12-15T20:02:59+01:00",
+      "last_reply": "2019-12-15T20:02:59+01:00",
+      "root_message_id": "msg-9edcd10ef6ec"
+    }
+  ]
+}

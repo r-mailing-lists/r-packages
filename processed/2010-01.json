@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-01",
+  "messages": [
+    {
+      "id": "msg-af142ac84989",
+      "message_id": "<alpine.DEB.2.00.1001061730340.6635@paninaro.stat-math.wu-wien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
+      "date": "2010-01-06T17:40:46+01:00",
+      "subject": "[R-pkgs] fortunes: 250th fortune",
+      "subject_clean": "fortunes: 250th fortune",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nit's a new year and time for a new CRAN-version of the \"fortunes\" package. \nVersion 1.3-7 is now online at\n\n   http://CRAN.R-project.org/package=fortunes\n\nwhich contains the 250th fortune:\n\nR> fortune(250)\n\nAs Obi-Wan Kenobi may have said in Star Wars: \"Use the source, Luke!\"\n    -- Barry Rowlingson (answering a question on the documentation of some\n       implementation details)\n       R-devel (January 2010)\n\nActually there is also the 251st...\n\nThanks to all that have contributed to the \"fortunes\" package in the form \nof creating these nice quote or submitting them to the package.\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nit's a new year and time for a new CRAN-version of the \"fortunes\" package. \nVersion 1.3-7 is now online at\n\n   http://CRAN.R-project.org/package=fortunes\n\nwhich contains the 250th fortune",
+      "thread_id": "thread-af142ac84989",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-bc06890542c4",
+      "message_id": "<4B44C46D.2000705@cs.tu-berlin.de>",
+      "from_name": "Nicole Krämer",
+      "from_email_hash": "5b6b941b8f58e9970ea921428e2d930f44d2f7d20e62d3948a19c51737b6f5f7",
+      "date": "2010-01-06T18:12:13+01:00",
+      "subject": "[R-pkgs] parcor 0.2-2 - Regularized Partial Correlation Matrices with (adaptive) Lasso, PLS, and Ridge Regression",
+      "subject_clean": "parcor 0.2-2 - Regularized Partial Correlation Matrices with (adaptive) Lasso, PLS, and Ridge Regression",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nwe are happy to announce the release of our R package parcor.\n\nThe package contains tools to estimate the matrix of partial \ncorrelations based on different regularized regression methods: Lasso, \nadaptive Lasso, PLS, and Ridge Regression. In addition, parcor provides \ncross-validation based model selection for Lasso, adaptive Lasso and \nRidge Regression.\n\nMore details can be found in the accompanying article\n\nNicole Kr?mer, Juliane Sch?fer, Anne-Laure Boulesteix.\nRegularized Estimation of Large Scale Gene Association Networks using \nGaussian Graphical Models\nBMC Bioinformatics, 10:384, 2009.\n\nhttp://www.biomedcentral.com/1471-2105/10/384\n\nPlease send an email to nkraemer at cs.tu-berlin.de for any comments, \nsuggestions, or bug reports.\n\nBest regards,\n\nNicole & Juliane\n\n-- \nDr. Nicole Kr?mer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
+      "body_snippet": "Dear R-users,\n\nwe are happy to announce the release of our R package parcor.\n\nThe package contains tools to estimate the matrix of partial \ncorrelations based on different regularized regression metho",
+      "thread_id": "thread-bc06890542c4",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-6cf3e1ef0bc8",
+      "message_id": "<alpine.LRH.2.00.1001131949130.25617@reclus.nhh.no>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "a0c87926e9477aa221755cc93bdef47227c3563fd707e66ae49044467663d168",
+      "date": "2010-01-13T19:58:17+01:00",
+      "subject": "[R-pkgs] New sp release",
+      "subject_clean": "New sp release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The sp package provides class definitions for spatial data, and utilities \nfor spatial data handling and manipulation.\n\nThe release of sp version 0.9-56 introduces changes in the ways in which \nPolygon, Polygons, and SpatialPolygons objects are created, moving from R \ncode to compiled C code. Because of these changes, it is possible that \nusers will see changed output. The package maintainers have tested as far \nas possible, and a beta release has been checked by some users, without \nany problems coming to light.\n\nFurther details are given in:\n\nhttps://stat.ethz.ch/pipermail/r-sig-geo/2010-January/007377.html\n\nShould anyone see problems following this change, please contact me \ndirectly with a reproducible example.\n\n-- \nRoger Bivand\nEconomic Geography Section, Department of Economics, Norwegian School of\nEconomics and Business Administration, Helleveien 30, N-5045 Bergen,\nNorway. voice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
+      "body_snippet": "The sp package provides class definitions for spatial data, and utilities \nfor spatial data handling and manipulation.\n\nThe release of sp version 0.9-56 introduces changes in the ways in which \nPolygo",
+      "thread_id": "thread-6cf3e1ef0bc8",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-fa33d31a218e",
+      "message_id": "<57e838141001141339k70a47a26p39f4785844df0df1@mail.gmail.com>",
+      "from_name": "Stephen Weston",
+      "from_email_hash": "507fe1aedccd9cb1c2bba1715ac24f959abe255adeeb866f82b6c8a1896cbd15",
+      "date": "2010-01-14T16:39:59-05:00",
+      "subject": "[R-pkgs] itertools 0.1-1",
+      "subject_clean": "itertools 0.1-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of the new \"itertools\" package,\nwhich provides a variety of functions used to create iterators, as\ndefined by REvolution Computing's \"iterators\" package.  The package has\nbeen uploaded to CRAN and is now available under the GPL-2 license.\n\nThe \"itertools\" package is strongly inspired by the Python itertools\nmodule, and includes a number of functions of the same name.  There are\na variety of functions that create iterators for splitting, chunking,\nrepeating, recycling, zipping, and filtering your data.  There is also\nan \"ihasNext\" function, written by Hadley Wickham, that adds a \"hasNext\"\nmethod to any iterator, making it easier to get values from an iterator\nwithout the use of the \"foreach\" function.  Hadley also contributed some\nutility functions for writing your own iterators.\n\n- Steve Weston",
+      "body_snippet": "I'd like to announce the availability of the new \"itertools\" package,\nwhich provides a variety of functions used to create iterators, as\ndefined by REvolution Computing's \"iterators\" package.  The pac",
+      "thread_id": "thread-fa33d31a218e",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-62a044b40c3b",
+      "message_id": "<57e838141001141342o27b89b03i570e1838f7102c06@mail.gmail.com>",
+      "from_name": "Stephen Weston",
+      "from_email_hash": "507fe1aedccd9cb1c2bba1715ac24f959abe255adeeb866f82b6c8a1896cbd15",
+      "date": "2010-01-14T16:42:26-05:00",
+      "subject": "[R-pkgs] doMPI 0.1-4",
+      "subject_clean": "doMPI 0.1-4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'd like to announce the availability of version 0.1-4 of the \"doMPI\"\npackage, a parallel backend for the \"foreach\" package, which acts as an\nadaptor to the \"Rmpi\" package.  The package has been uploaded to CRAN\nand is now available under the GPL-2 license.\n\nIn addition to fixing a few problems in version 0.1-3, the main new\nfeature of this release is the backend-specific \"initEnvirMaster\"\noption, which specifies an R function that is executed in the master\nprocess at the beginning of the foreach loop.  It is intended to be used\nin conjunction with the \"initEnvir\" option, which specifies an R\nfunction that is executed by the cluster workers.  By using both\ntogether, MPI collective communication functions can be executed to\ninitialize the cluster workers.  This is particularly useful for sending\nlarge matrices to each of the workers, since it allows the matrix to be\nbroadcast using the mpi.bcast function without calling the R \"serialize\"\nfunction.  An example of this technique is in the new \"rforest.R\" file,\na parallel random forest benchmark which is included in the \"benchmark\"\ndirectory of the doMPI distribution.\n\n- Steve Weston",
+      "body_snippet": "I'd like to announce the availability of version 0.1-4 of the \"doMPI\"\npackage, a parallel backend for the \"foreach\" package, which acts as an\nadaptor to the \"Rmpi\" package.  The package has been uploa",
+      "thread_id": "thread-62a044b40c3b",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-6ac92fa2aaac",
+      "message_id": "<4e2dfc531001211137r2f1f58cldad1ffd8e7ca9a14@mail.gmail.com>",
+      "from_name": "Barret Schloerke",
+      "from_email_hash": "7cfbf5bf9c0943fe1842d2957ccf772904909de04e1e509d33579088226dc722",
+      "date": "2010-01-21T13:37:24-06:00",
+      "subject": "[R-pkgs] GGally - Plot Matrix Extension for GGplot2",
+      "subject_clean": "GGally - Plot Matrix Extension for GGplot2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "GGally:  a companion to GGplot2.\n\nGGally is a package built to produce plot matrices without the hassle\nof making viewports and labels yourself.  GGally is built upon the\nGGplot2 framework.  Keeping the functionality and feel of ggplot,\nGGally has shortened common function calls and added a few new ones.\n\nggpairs, the main function within GGally, will take your data set and\nproduce a plots according to the data types given. ggpairs will\nproduce four different types of plots: continuous-continuous,\ncontinuous-discrete, discrete-continuous, discrete-discrete.  The\nfunction will determine which type is needed and produce a plot\naccording the the specified type given.  General aesthetics can be\napplied to the whole plot matrix.\n\nThis package was developed as an add on package to keep the base\nfunctionality of GGplot2 separate.\n\nExamples:\n  #plot matrix of all five variables in iris\n  ggpairs(iris)\n\n  # Make a ggpairs object with\n  #  the upper triangle containing 2D density plots and box plots,\n  #  the lower triangle containing scatter plots and dod plots,\n  #  the diagonal containing histograms.\n  # The color of each plot, if applicable, will be done accordingly to \"cut\"\n  #\n  diamondMatrix <- ggpairs(\t\n    diamonds[,1:3], \t\n    upper = list(continuous = \"density\", combo = \"box\"), \t\n    lower = list(continuous = \"points\", combo = \"dot\"), \t\n    diag = list(continuous = \"bar\", discrete = \"bar\"),\n    color = \"cut\",\n    filled = TRUE,\n    title = \"Diamonds\"\n  )\n  # print the plot matrix\n  diamondMatrix\n\n- Barret Schloerke, Dianne Cook, Heike Hofmann, Hadley Wickham",
+      "body_snippet": "GGally:  a companion to GGplot2.\n\nGGally is a package built to produce plot matrices without the hassle\nof making viewports and labels yourself.  GGally is built upon the\nGGplot2 framework.  Keeping t",
+      "thread_id": "thread-6ac92fa2aaac",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-18e4858d77b5",
+      "message_id": "<1264103187.6220.108.camel@corn.betterworld.us>",
+      "from_name": "Ross Boylan",
+      "from_email_hash": "3b685ae524fd179987cea6805254ec04944439a5442eedd63f029c38b7e1db33",
+      "date": "2010-01-21T11:46:27-08:00",
+      "subject": "[R-pkgs] [ANN] mspath analyzes transitions between multiple state with\thistory dependence",
+      "subject_clean": "[ANN] mspath analyzes transitions between multiple state with\thistory dependence",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Now available on CRAN.\nPackage: mspath\nTitle: Multi-state Path-Dependent Models in Discrete Time\nDescription:  Functions for fitting path-dependent (non-Markov)\n multi-state models to categorical processes observed at arbitrary\n times,  optionally with misclassified responses, and covariates on\n transition  or misclassification rates.  Uses discrete-time\n approximation.  Based on the Jackson's msm package v 0.3.1, with an\n interface as compatible as  possible.",
+      "body_snippet": "Now available on CRAN.\nPackage: mspath\nTitle: Multi-state Path-Dependent Models in Discrete Time\nDescription:  Functions for fitting path-dependent (non-Markov)\n multi-state models to categorical proc",
+      "thread_id": "thread-18e4858d77b5",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-98ad63d3fd00",
+      "message_id": "<1477909486@web.de>",
+      "from_name": "Jens Oehlschlägel",
+      "from_email_hash": "f073adaa565bb1d2ee057e84a39a987c70da1df4938e3d4d5a72e0cc3cffbdc1",
+      "date": "2010-01-22T17:49:10+01:00",
+      "subject": "[R-pkgs] New version of package ff",
+      "subject_clean": "New version of package ff",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nPackage bit version 1.1-3 and ff version 2.1.2 is available on CRAN and should be useful to handle large datasets.\n\nIt adds convenient utilities for managing ff objects and files (see ?ffsave) and removes some performance bottlenecks. \n\nIn case you experience unexpected performance problems with ff, here is a couple of recommendations based on FAQs:\n\n1) Compare the size of data to be written at the same time to available RAM for your filesystem cache. \n   If the data exceeds available RAM, then consider using caching=\"mmeachflush\" instead of caching=\"mmnoflush\", this will make write operations predictably slower but prevent write storms stalling some systems (observed under NTFS win32+64).\n   You can set ff's caching option \n   either with options(ffcaching=\"mmeachflush\") before creating ff objects\n   or create ff objects with ffobj <- ff(..., caching=\"mmeachflush\") \n   or open your existing ff object with open(ffobj, caching=\"mmeachflush\") (while it is closed)\n   ff objects will remember this setting\n\n2) If you use caching=\"mmnoflush\": check the writeback cache configuration of your filesystem (e.g. set data=writeback for ext3, tune limits for dirty pages, consider different filesystem, consider different OS). \n\n3) Choose a reasonable size for options(\"ffbatchbytes\"), which limits the amount of RAM used for one chunk. \n   With too small chunks you pay more performance overhead. \n   Note that bigger chunks are not always better, for example if you distribute chunked processing on many cores or if some operation involved does not scale well with chunk size. \n\nFinal remark: testing ff access functionality  on a Core i7 920 (4 cores, 8 cores with HT) shows that hyperthreading with 8 parallel processes (snowfall, sockets) gives about 5x the performance of a single process, but already 7 processes with HT perform worse than 4 processes without HT. Conclusion: if a machine is dedicated to R for RAM-critical applications, try switching hyperthreading off. \n\nHope you find this useful. We appreciate any feedback.\n\n\nJens & Daniel",
+      "body_snippet": "Dear R community,\n\nPackage bit version 1.1-3 and ff version 2.1.2 is available on CRAN and should be useful to handle large datasets.\n\nIt adds convenient utilities for managing ff objects and files (s",
+      "thread_id": "thread-98ad63d3fd00",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-ffe667faac83",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C023825B6F1@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2010-01-27T19:59:09-05:00",
+      "subject": "[R-pkgs] exactci package gives exact binomial and poisson tests and matching CI",
+      "subject_clean": "exactci package gives exact binomial and poisson tests and matching CI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl>",
+      "thread_id": "thread-ffe667faac83",
+      "thread_depth": 0,
+      "month": "2010-01"
+    },
+    {
+      "id": "msg-ac6e7f332736",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C023825B6F2@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2010-01-27T19:59:50-05:00",
+      "subject": "[R-pkgs] Update to exact2x2 package: Exact McNemar's test",
+      "subject_clean": "Update to exact2x2 package: Exact McNemar's test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl>",
+      "thread_id": "thread-ac6e7f332736",
+      "thread_depth": 0,
+      "month": "2010-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-af142ac84989",
+      "subject": "fortunes: 250th fortune",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2010-01-06T17:40:46+01:00",
+      "last_reply": "2010-01-06T17:40:46+01:00",
+      "root_message_id": "msg-af142ac84989"
+    },
+    {
+      "id": "thread-bc06890542c4",
+      "subject": "parcor 0.2-2 - Regularized Partial Correlation Matrices with (adaptive) Lasso, PLS, and Ridge Regression",
+      "message_count": 1,
+      "participants": [
+        "Nicole Krämer"
+      ],
+      "started": "2010-01-06T18:12:13+01:00",
+      "last_reply": "2010-01-06T18:12:13+01:00",
+      "root_message_id": "msg-bc06890542c4"
+    },
+    {
+      "id": "thread-6cf3e1ef0bc8",
+      "subject": "New sp release",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2010-01-13T19:58:17+01:00",
+      "last_reply": "2010-01-13T19:58:17+01:00",
+      "root_message_id": "msg-6cf3e1ef0bc8"
+    },
+    {
+      "id": "thread-fa33d31a218e",
+      "subject": "itertools 0.1-1",
+      "message_count": 1,
+      "participants": [
+        "Stephen Weston"
+      ],
+      "started": "2010-01-14T16:39:59-05:00",
+      "last_reply": "2010-01-14T16:39:59-05:00",
+      "root_message_id": "msg-fa33d31a218e"
+    },
+    {
+      "id": "thread-62a044b40c3b",
+      "subject": "doMPI 0.1-4",
+      "message_count": 1,
+      "participants": [
+        "Stephen Weston"
+      ],
+      "started": "2010-01-14T16:42:26-05:00",
+      "last_reply": "2010-01-14T16:42:26-05:00",
+      "root_message_id": "msg-62a044b40c3b"
+    },
+    {
+      "id": "thread-18e4858d77b5",
+      "subject": "[ANN] mspath analyzes transitions between multiple state with\thistory dependence",
+      "message_count": 1,
+      "participants": [
+        "Ross Boylan"
+      ],
+      "started": "2010-01-21T11:46:27-08:00",
+      "last_reply": "2010-01-21T11:46:27-08:00",
+      "root_message_id": "msg-18e4858d77b5"
+    },
+    {
+      "id": "thread-6ac92fa2aaac",
+      "subject": "GGally - Plot Matrix Extension for GGplot2",
+      "message_count": 1,
+      "participants": [
+        "Barret Schloerke"
+      ],
+      "started": "2010-01-21T13:37:24-06:00",
+      "last_reply": "2010-01-21T13:37:24-06:00",
+      "root_message_id": "msg-6ac92fa2aaac"
+    },
+    {
+      "id": "thread-98ad63d3fd00",
+      "subject": "New version of package ff",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschlägel"
+      ],
+      "started": "2010-01-22T17:49:10+01:00",
+      "last_reply": "2010-01-22T17:49:10+01:00",
+      "root_message_id": "msg-98ad63d3fd00"
+    },
+    {
+      "id": "thread-ffe667faac83",
+      "subject": "exactci package gives exact binomial and poisson tests and matching CI",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2010-01-27T19:59:09-05:00",
+      "last_reply": "2010-01-27T19:59:09-05:00",
+      "root_message_id": "msg-ffe667faac83"
+    },
+    {
+      "id": "thread-ac6e7f332736",
+      "subject": "Update to exact2x2 package: Exact McNemar's test",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2010-01-27T19:59:50-05:00",
+      "last_reply": "2010-01-27T19:59:50-05:00",
+      "root_message_id": "msg-ac6e7f332736"
+    }
+  ]
+}

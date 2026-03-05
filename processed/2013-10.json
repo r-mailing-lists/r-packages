@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-10",
+  "messages": [
+    {
+      "id": "msg-afdc3efaedd0",
+      "message_id": "<83174111.1898895.1381242919289.JavaMail.root@uc.edu.ve>",
+      "from_name": "Carlos M. Martinez Manrique",
+      "from_email_hash": "49c7dbabe818f59155d946549a2e91d2febcc9c29efb4418d961d4420bad2a07",
+      "date": "2013-10-08T10:05:19-04:30",
+      "subject": "[R-pkgs] A new version of the package “TestSurvRec” is now available on CRAN",
+      "subject_clean": "A new version of the package “TestSurvRec” is now available on CRAN",
+      "in_reply_to": "<1066770146.1892580.1381242742199.JavaMail.root@uc.edu.ve>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: no disponible\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131008/d45017b1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: no disponible\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131008/d45017b1/attachment.pl>",
+      "thread_id": "thread-afdc3efaedd0",
+      "thread_depth": 0,
+      "month": "2013-10"
+    },
+    {
+      "id": "msg-da3faf65c2e0",
+      "message_id": "<905536DC-D16E-40F9-AEC3-0C7A485D57A5@gmail.com>",
+      "from_name": "Vaidotas Zemlys",
+      "from_email_hash": "0dd7d3aa1b1660ff795daf0b2ccfc59a399d018513f7aa4c5655922ffdd0b027",
+      "date": "2013-10-12T13:44:43+03:00",
+      "subject": "[R-pkgs] new package 'midasr'",
+      "subject_clean": "new package 'midasr'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nA new package, called *midasr* (version 0.1), is now available on \nCRAN: http://cran.r-project.org/package=midasr\n\nThis package provides econometric methods for working with mixed frequency data. The package provides tools for estimating the time series MIDAS regression, where the response and explanatory variables are of different frequency, e.g. quarterly vs monthly. The fitted regression model can be tested for adequacy and then used for forecasting. More specifically, the following main functions are available:\n\n   * midas_r -- MIDAS regression estimation using non-linear least squares.\n   * mls -- time series embedding to lower frequency, flexible function for specifying MIDAS models.\n   * hAh.test and hAhr.test -- adequacy testing of MIDAS regression.\n   * forecast -- forecasting MIDAS regression.\n   * midasr_ic_table -- lag selection using information criteria.\n   * average_forecast -- calculate weighted forecast combination.\n   * select_and_forecast -- perform model selection and then use the selected model for forecasting.\n\nThe package provides the usual methods for generic functions which can be used on fitted MIDAS regression object: summary, coef, residuals, deviance, fitted, predict, logLik. It also has additional methods for estimating robust standard errors: estfun and bread.\n\nThe package also provides all the popular MIDAS regression restrictions such as normalized Almon exponential lag, normalized beta lag and etc.\n\nThe package has the project webpage (http://mpiktas.github.io/midasr/) and you can follow its development on github (https://github.com/mpiktas/midasr).\n\nThe detailed description of the package features can be found in the user guide. The user guide, all of the code examples in the user guide and some additional examples together with the user guide .Rnw file can be found in the midasr-user-guide github repository (https://github.com/mpiktas/midasr-user-guide/).\n\nComments and suggestions would be greatly appreciated.\n\nVaidotas Zemlys\nhttp://mif.vu.lt/~zemlys",
+      "body_snippet": "Dear list members,\n\nA new package, called *midasr* (version 0.1), is now available on \nCRAN: http://cran.r-project.org/package=midasr\n\nThis package provides econometric methods for working with mixed ",
+      "thread_id": "thread-da3faf65c2e0",
+      "thread_depth": 0,
+      "month": "2013-10"
+    },
+    {
+      "id": "msg-da03e189206f",
+      "message_id": "<52668847.1000201@imperial.ac.uk>",
+      "from_name": "James Keirstead",
+      "from_email_hash": "ca84318cc1ccf3fa5f90221dcd4e8e995d10b64a6a286dd94ca8a56265b4c28b",
+      "date": "2013-10-22T15:14:31+01:00",
+      "subject": "[R-pkgs] scholar 0.1.0 on CRAN",
+      "subject_clean": "scholar 0.1.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nA new package 'scholar' (version 0.1.0) is now available on CRAN: \nhttp://cran.r-project.org/web/packages/scholar/index.html.\n\nThe scholar package provides functions to extract citation data from \nGoogle Scholar.  In addition to retrieving basic information about a \nsingle scholar, the package also allows you to compare multiple scholars \nand predict future h-index values based on the method of Acuna et al.  \nFor example, we can compare the careers of Richard Feynman and Stephen \nHawking as follows:\n\n    ids <- c('B7vSqZsAAAAJ', 'qj74uXkAAAAJ')\n    df <- compare_scholar_careers(ids)\n    ggplot(df, aes(x=career_year, y=cites)) + geom_line(aes(linetype=name))\n\nFor more information and examples of how to use the package, please see \nhttps://github.com/jkeirstead/scholar.\n\nYour comments and suggestions would be appreciated.\n\nBest wishes,\nJames\n\n-- \nDr James Keirstead\nLecturer\nDept of Civil and Environmental Engineering\nImperial College\nSouth Kensington, London\nSW7 2AZ",
+      "body_snippet": "Dear R users,\n\nA new package 'scholar' (version 0.1.0) is now available on CRAN: \nhttp://cran.r-project.org/web/packages/scholar/index.html.\n\nThe scholar package provides functions to extract citation",
+      "thread_id": "thread-da03e189206f",
+      "thread_depth": 0,
+      "month": "2013-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-afdc3efaedd0",
+      "subject": "A new version of the package “TestSurvRec” is now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Carlos M. Martinez Manrique"
+      ],
+      "started": "2013-10-08T10:05:19-04:30",
+      "last_reply": "2013-10-08T10:05:19-04:30",
+      "root_message_id": "msg-afdc3efaedd0"
+    },
+    {
+      "id": "thread-da3faf65c2e0",
+      "subject": "new package 'midasr'",
+      "message_count": 1,
+      "participants": [
+        "Vaidotas Zemlys"
+      ],
+      "started": "2013-10-12T13:44:43+03:00",
+      "last_reply": "2013-10-12T13:44:43+03:00",
+      "root_message_id": "msg-da3faf65c2e0"
+    },
+    {
+      "id": "thread-da03e189206f",
+      "subject": "scholar 0.1.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "James Keirstead"
+      ],
+      "started": "2013-10-22T15:14:31+01:00",
+      "last_reply": "2013-10-22T15:14:31+01:00",
+      "root_message_id": "msg-da03e189206f"
+    }
+  ]
+}

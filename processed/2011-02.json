@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-02",
+  "messages": [
+    {
+      "id": "msg-afa3ee01832c",
+      "message_id": "<4D4BB776.6050903@uni-hohenheim.de>",
+      "from_name": "Frank Technow",
+      "from_email_hash": "b014676f3a2e0225d89fddd77bdab3c30c35642f0d37ea0e610eec8c80082dcf",
+      "date": "2011-02-04T09:23:18+01:00",
+      "subject": "[R-pkgs] R package hypred: Simulation of genomic data in applied genetics",
+      "subject_clean": "R package hypred: Simulation of genomic data in applied genetics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI am glad to announce that the new R package \"hypred\", initial version\n0.1, is now available on CRAN.\n\n\"hypred\" is a package for simulating high-density SNP data. Its main \nfunction, \"hypredRecombine\" is intended to be used as a \"Software tool\" \nin larger programs that simulate complex populations.\n\n  The focus of the package is on producing data for genomic applications \nin applied genetics\n(such as genomic selection/prediction), but I expect that it can be\nuseful in related fields as well.\n\nPlease see the included vignette and the manual for more details.\n\nDon't hesitate sending bug reports; and I would appreciate receiving\nsome comments and feedback from users.\n\nBest regards\n\nFrank.\n\n-- \nFrank Technow\nUniversity of Hohenheim\n350 Institute of Plant Breeding, Seed Sciences, and Population Genetics\n70593 Stuttgart/Germany\nPhone: 0049 711 459 23544\ne-mail: Frank.Technow at uni-hohenheim.de or Frank.Technow at gmx.net",
+      "body_snippet": "Dear useRs,\n\nI am glad to announce that the new R package \"hypred\", initial version\n0.1, is now available on CRAN.\n\n\"hypred\" is a package for simulating high-density SNP data. Its main \nfunction, \"hyp",
+      "thread_id": "thread-afa3ee01832c",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-4d5f3e4402cf",
+      "message_id": "<AANLkTikA1_sAmRKjOgm4zVn9-csg9nrU0QuLAS-0T6_E@mail.gmail.com>",
+      "from_name": "Mike Lawrence",
+      "from_email_hash": "1a5ee30e8b6d6fd023f9cd066f9903301f0b75e038949a90eeb1aac28c844171",
+      "date": "2011-02-08T12:37:52-04:00",
+      "subject": "[R-pkgs] ez version 3.0",
+      "subject_clean": "ez version 3.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi folks,\n\nI'd like to announce the release of version 3.0 of the \"ez\" package.\nThis package was developed to aid those that are new to statistical\nprogramming. Over the course of several years of helping colleagues\nand students learn R, I observed that folks are often initially turned\noff R because they have difficulty obtaining SPSS-like results quickly\n(SPSS is the dominant environment in my field, psychology). ez\nattempts to fill this gap, providing quick and easy analysis and\ngraphics for common experimental designs. By easing the early portions\nof the R learning curve, ez hopes to promote the spread of R as a\nmeans of open source and reproducible analysis.\n\nez may also be of interest to more advanced users as it includes the\n\"ezMixed()\" function, which automates the assessment of fixed effects\nin a mixed effects modelling context, and the \"ezPredict()\" function,\nwhich obtains predictions for the fixed effects from a mixed effects\nmodel.\n\n\n****Installing ez****\n\nVersion 3.0 of ez requires that you have R 2.12.1 installed, which is\nthe latest version of R as of this notice. If you have an older\nversion of R you will need to update R by installing the latest\nversion (from http://cran.r-project.org/) before installing ez.\n\nWindows and linux users should be able to install the latest version\nby running the command:\ninstall.packages( 'ez' )\n\nMac users should be able to install the latest version by running the commands:\ninstall.packages( c( 'car' , 'reshape2' , 'plyr' , 'ggplot2' ,\n'stringr' , 'lme4' , 'Matrix' ) )\ninstall.packages( 'ez' , type='source' , dependencies=F )\n\n\nOnce installed, running the following commands will load ez and bring\nup its help page that links to descriptions of all ez's functions:\nlibrary( ez )\n?ez\n\n\n****Big changes in version 3.0****\n\n- A big rework of \"ezANOVA()\" to permit more flexibility, including\nmore nuanced handling of numeric predictor variables, specification of\nsums-of-squares types when data is imbalanced, and an option to\ncompute/return an aov object representing the requested ANOVA for\nfollow-up contrast analysis. (The latter two features follow from the\ndiscussion at http://stats.stackexchange.com/questions/6208/should-i-include-an-argument-to-request-type-iii-sums-of-squares-in-ezanova)\n\n- An important bugfix for \"ezMixed()\", which previously permitted\nspecification of multiple random effects but silently ignored all but\nthe last!\n\n- A big rework of \"ezMixed()\", completely changing the output\n(including removal of p-values following advice of Pinero & Bates,\n2000, and many on the R-SIG-Mixed-Models mailing list) and providing a\nnew feature whereby the linearity of numeric fixed effects can be\nassessed by comparison to higher polynomial degrees.\n\n\n****Also new****\n\nAs noted above, this version fixes a big bug in \"ezMixed()\" about\nwhich I wish I could have warned users sooner. To facilitate future\nrapid notification of users, I've created a discussion group\n(http://groups.google.com/group/ez4r) to which users can/should\nsubscribe to keep up to date on development news. Additionally, I\ncreated a project page on github\n(https://github.com/mike-lawrence/ez/issues) where users can submit\nbug reports and feature requests. Finally, I encourage users to rate\nor review ez (and any other packages you use) at crantastic.org\n(http://crantastic.org/packages/ez).\n\n\n****Official CHANGES entry****\n3.0-0\n- added urls in all documentation pointing to the\nbug-report/feature-request site\n(https://github.com/mike-lawrence/ez/issues) and the discussion group\n(http://groups.google.com/group/ez4r).\n- changed reshape dependency to reshape2\n- ezANOVA\n-     fixed bug such that if detailed=F and car:Anova fails, the first\nline of results from stats:aov is cut off.\n-     Added more nuanced treatment of numeric variables\n-     Added type argument to specify sums-of-squares type selection (1,2, or 3)\n-     Added white.adjust argument to permit heteroscedasticity\nadjustment (see ?car::Anova)\n-     Added return_aov argument to permit returning a stats:aov object\nalong with results (this was requested by a user seeking to use the\naov object to compute contrasts)\n- ezMixed\n-     IMPORTANT: Fixed bug such that only the last specified random\neffect was implemented\n-     fixed bug such that an error occurred if only one fixed effect\nwas specified\n-     changed output format to a list containing a summary data frame,\na list of formulae, a list of errors, a list of warnings, and\n(optionally) a list of fitted models\n-     Changed format of summary output including removal of p-values\n(on the strong advice of many that the p-values from a likelihood\nratio test of a fixed effect is highly questionable)\n-     removed the \"return_anovas\" argument\n-     added nuanced ability to explore non-linear effects via addition\nof \"fixed_poly\" and \"fixed_poly_max\" arguments\n- ezPredict\n-     Added ability to handle models fit with \"I()\"'d variables\n-     Added stop error when encountering models with \"poly()\" and no\nsupplied prediction data frame\n- ezBoot\n-     Modified the resampling procedure to ensure that any given\nresampling of Subjects has at least 2 unique Subjects.\n- ezPerm\n-     Modified to return only the data frame containing the permutation test.\n- ezResample\n-     Added to \"include\" list for general use\n- progress_time\n-     Added to \"include\" list for general use\n-     fixed bug that prevented accurate timing\n- Added functions:\n-     progress_timeCI\n-         Computes bootstrapped time-remaining quantile estimates for\nlong and heterogenous computations (eg. employed in ezMixed)",
+      "body_snippet": "Hi folks,\n\nI'd like to announce the release of version 3.0 of the \"ez\" package.\nThis package was developed to aid those that are new to statistical\nprogramming. Over the course of several years of hel",
+      "thread_id": "thread-4d5f3e4402cf",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-b83e35e231cd",
+      "message_id": "<850D4D4F-538F-4731-93F7-A61A21AA91E6@gmail.com>",
+      "from_name": "Markus Gesmann",
+      "from_email_hash": "6fcb58ff8ebdda71412f05e66028373e96b0d1a2a71fbea0e1fb1d9050f686db",
+      "date": "2011-02-08T22:33:12Z",
+      "subject": "[R-pkgs] Update: googleVis 0.2.4 - Using the Google Visualisation API with R",
+      "subject_clean": "Update: googleVis 0.2.4 - Using the Google Visualisation API with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110208/485fbd95/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110208/485fbd95/attachment.pl>",
+      "thread_id": "thread-b83e35e231cd",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-73ebbf75a33e",
+      "message_id": "<4D52C396.9090507@oncfs.gouv.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "599c7bb21e58eb2d87faf33dae39c73009649e589b73716148359a67c1e08666",
+      "date": "2011-02-09T17:40:54+01:00",
+      "subject": "[R-pkgs] adehabitatMA, LT, HR and HS version 0.1",
+      "subject_clean": "adehabitatMA, LT, HR and HS version 0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded 4 new packages on CRAN, which are on the long term \ndesigned to replace the \"old\" package adehabitat:\n\n* adehabitatMA: functions to perform spatial operations (morphology, \nbuffer, etc.)\n* adehabitatHS: functions for the analysis of habitat selection by wildlife\n* adehabitatHR: functions for home range estimation of animals\n* adehabitatLT: functions for animal movement analysis\n\nI will still continue to maintain the \"old\" adehabitat, but on the \nlong-term, adehabitat will be replaced by these four packages.\n\nDetailed justification for the development of these packages is given below.\n\n======================================================================\n\nThe R environment has changed a lot since I began the development of \nadehabitat in 2002 (development of namespace, etc.), and new classes and \nefficient methods have been developed to deal with spatial data (package \nsp). In addition, the number of functions available in the package has \ngrown to more than 250 functions, implementing methods for habitat \nselection analysis, home range estimation, animal movement analysis, or \nspatial operations.\n\nTherefore, I decided to:\n(i) rewrite the package adehabitat to make it more compliant with these \nevolutions of the package R,\n(ii) split adehabitat into four packages\n\nThe four new packages are:\n\n* adehabitatMA: functions to perform spatial operations (morphology, \nbuffer, etc.)\n* adehabitatHS: functions for the analysis of habitat selection\n* adehabitatHR: functions for home range estimation\n* adehabitatLT: functions for movement analysis\n\nI will continue to maintain the old adehabitat on CRAN for some time, \nbut on the long term, this package will disappear. These four packages \nare expected to become the future of adehabitat.\n\nI now describe several major changes:\n\n* the functions of the packages are documented precisely in a vignette \n(there is one vignette per package). Both their use and the theory \nunderlying these functions are described there. To access it, type:\nvignette(\"packagename\")\n\n* the home range estimation methods have been homogenized and return \nclasses compliant with the classes of the package sp:\n- the functions kernelUD, kernelbb, BRB and kernelkc all return objects \nof class \"estUDm\", which are lists of objects of class \"estUD\". The \nclass estUD extends the class SpatialPixelsDataFrame.\n- the function clusthr and LoCoH return objects of class \"MCHu\", which \nare lists of SpatialPolygonsDataFrame\n- the function mcp returns a SpatialPolygonsDataFrame\n\n* home range estimation methods now take objects of class SpatialPoints \nas arguments\n\n* objects of class \"ltraj\" are now characterized by an additional \nattribute \"infolocs\", which is designed to store metadata on the \ntrajectories (e.g. precision on the relocations). Most functions of the \npackage adehabitatLT can be used to analyse these metadata (plotltr, \netc. see the vignette).\n\n* the method of characteristic hulls (Downs and Horner 2009), suggested \nby Paolo Cavallini, on the list has been added to adehabitatHR, and \nreturns an object of class MCHu\n\n* the method of biased random bridges (Benhamou, 2011) has be added to \nadehabitatHR, to estimate the utilization distribution from a trajectory.\n\n* the canonical OMI analysis, allowing exploration of habitat selection \nwith radio-tracking data, has been added to the package adehabitatHS\n\n* the autocorrelation functions described by Dray et al. (2010) for the \nanalysis of movement have been added to the package adehabitatLT;\n\n* the function rasterize.ltraj allows to rasterize a trajectory (i.e. \nuseful to identify the habitat characteristics of the steps building the \ntrajectory)\n\n* all the packages have a namespace for management of internal functions.\n\n* Two additional functions dl and ld to convert efficiently the class \nltraj to and from data frames (thanks to Mathieu Basille for the \nsuggestion).\n\nNote that the calculations performed by most functions of adehabitat \nhave not changed (e.g. the algorithm implemented in kernelUD of \nadehabitat is the same as the algorithm implemented in the function \nkernelUD of the package adehabitatHR), since they have been deeply \ndiscussed with users and corrected during the last six years. Only the \ninput and output of the functions have been changed.\n\n=============================================================================\n\nHappy testing,\n\n\nCl?ment Calenge\n-- \nCl?ment CALENGE\nCellule d'appui ? l'analyse de donn?es\nDirection des Etudes et de la Recherche\nOffice national de la chasse et de la faune sauvage\nSaint Benoist - 78610 Auffargis\ntel. (33) 01.30.46.54.14",
+      "body_snippet": "Dear all,\n\nI have just uploaded 4 new packages on CRAN, which are on the long term \ndesigned to replace the \"old\" package adehabitat:\n\n* adehabitatMA: functions to perform spatial operations (morpholo",
+      "thread_id": "thread-73ebbf75a33e",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-b2293ee9e574",
+      "message_id": "<op.vq2ey41un6oykk@biostat145>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2011-02-17T14:53:18-06:00",
+      "subject": "[R-pkgs] New version of rms package on CRAN",
+      "subject_clean": "New version of rms package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of rms is now available on CRAN for Linux/UNIX.  I expect  \nMac and Windows versions to be available in a day or so. This version  \nworks with and requires the newest version of Therneau's survival package.\n\nMore information is at http://biostat.mc.vanderbilt.edu/Rrms\n\n\nChanges in version 3.2-0 (2011-02-14)\n    * Changed to be compatible with survival 2.36-3 which is now required\n    * Added logLik.rms and AIC.rms functions to be compatible with standard  \nR\n    * Fixed oos.loglik.Glm\n    * Fixed bootcov related to nfit='Glm'\n    * Fixed (probably) old bug in latexrms with strat predictors\n\nFrank\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "A new version of rms is now available on CRAN for Linux/UNIX.  I expect  \nMac and Windows versions to be available in a day or so. This version  \nworks with and requires the newest version of Therneau",
+      "thread_id": "thread-b2293ee9e574",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-2249fc497961",
+      "message_id": "<AANLkTimqevLDQi954ZZkWrOksiLLSQPL3XuC6p9CVT3Z@mail.gmail.com>",
+      "from_name": "David Hajage",
+      "from_email_hash": "15168f299cc5de4176eab4a4af782aa32cf3e6e50bf36d13124c9fb3b7dd77eb",
+      "date": "2011-02-27T20:25:53+01:00",
+      "subject": "[R-pkgs] ascii package updated",
+      "subject_clean": "ascii package updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110227/1a423ff3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110227/1a423ff3/attachment.pl>",
+      "thread_id": "thread-2249fc497961",
+      "thread_depth": 0,
+      "month": "2011-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-afa3ee01832c",
+      "subject": "R package hypred: Simulation of genomic data in applied genetics",
+      "message_count": 1,
+      "participants": [
+        "Frank Technow"
+      ],
+      "started": "2011-02-04T09:23:18+01:00",
+      "last_reply": "2011-02-04T09:23:18+01:00",
+      "root_message_id": "msg-afa3ee01832c"
+    },
+    {
+      "id": "thread-4d5f3e4402cf",
+      "subject": "ez version 3.0",
+      "message_count": 1,
+      "participants": [
+        "Mike Lawrence"
+      ],
+      "started": "2011-02-08T12:37:52-04:00",
+      "last_reply": "2011-02-08T12:37:52-04:00",
+      "root_message_id": "msg-4d5f3e4402cf"
+    },
+    {
+      "id": "thread-b83e35e231cd",
+      "subject": "Update: googleVis 0.2.4 - Using the Google Visualisation API with R",
+      "message_count": 1,
+      "participants": [
+        "Markus Gesmann"
+      ],
+      "started": "2011-02-08T22:33:12+00:00",
+      "last_reply": "2011-02-08T22:33:12+00:00",
+      "root_message_id": "msg-b83e35e231cd"
+    },
+    {
+      "id": "thread-73ebbf75a33e",
+      "subject": "adehabitatMA, LT, HR and HS version 0.1",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2011-02-09T17:40:54+01:00",
+      "last_reply": "2011-02-09T17:40:54+01:00",
+      "root_message_id": "msg-73ebbf75a33e"
+    },
+    {
+      "id": "thread-b2293ee9e574",
+      "subject": "New version of rms package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2011-02-17T14:53:18-06:00",
+      "last_reply": "2011-02-17T14:53:18-06:00",
+      "root_message_id": "msg-b2293ee9e574"
+    },
+    {
+      "id": "thread-2249fc497961",
+      "subject": "ascii package updated",
+      "message_count": 1,
+      "participants": [
+        "David Hajage"
+      ],
+      "started": "2011-02-27T20:25:53+01:00",
+      "last_reply": "2011-02-27T20:25:53+01:00",
+      "root_message_id": "msg-2249fc497961"
+    }
+  ]
+}

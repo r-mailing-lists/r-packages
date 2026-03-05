@@ -1,0 +1,198 @@
+From n@@@j@v@nderve|den @end|ng |rom gm@||@com  Mon Jan 13 17:05:46 2025
+From: n@@@j@v@nderve|den @end|ng |rom gm@||@com (Niels van der Velden)
+Date: Mon, 13 Jan 2025 12:05:46 -0400
+Subject: [R-pkgs] Announcing geneviewer v0.1.10 Now Available on CRAN
+Message-ID: <CANBF2awsFFWuB6YjwxZuZSEtrC0beevxR_GqpMqX+_NMtS3Uew@mail.gmail.com>
+
+Dear all,
+
+I am happy to announce that {geneviewer*}* v0.1.10 is now on CRAN.
+
+*{geneviewer}* is an R package for plotting gene clusters and transcripts.
+It imports data from GenBank, FASTA, and GFF files, performs BlastP and
+MUMmer alignments, and displays results on gene arrow maps. The package
+offers extensive customization options, including legends, labels,
+annotations, scales, colors, tooltips, and more.
+
+   - *CRAN:* https://cran.r-project.org/web/packages/geneviewer/index.html
+   - *GitHub Repository:* https://github.com/nvelden/geneviewer
+   - *Package website:  *https://nvelden.github.io/geneviewer/
+   <https://github.com/nvelden/geneviewer/issues>
+   - *Bug Reports:* https://github.com/nvelden/geneviewer/issues
+
+I hope you find {*geneviewer}* helpful.
+
+Please feel free to reach out with feedback or questions.
+
+Thanks,
+
+Niels van der Velden
+
+	[[alternative HTML version deleted]]
+
+
+From j@g@nmn2 @end|ng |rom gm@||@com  Mon Feb 24 01:34:48 2025
+From: j@g@nmn2 @end|ng |rom gm@||@com (Mikael Jagan)
+Date: Sun, 23 Feb 2025 19:34:48 -0500
+Subject: [R-pkgs] R package 'flint', an interface to the FLINT C library,
+ now available on CRAN
+Message-ID: <554f296f-3f0f-41a4-ae35-852a4ed12ee9@gmail.com>
+
+Dear R-packages/R-help subscribers,
+
+Just writing to advertise that R package 'flint', interfacing the FLINT
+C library for number theory, is now available on CRAN.
+
+     https://cran.r-project.org/package=flint
+     https://github.com/jaganmn/flint
+     https://flintlib.org/
+
+Thanks very much to the CRAN Team for its early guidance and clear documentation
+on the correct approach to adding external libraries to the CRAN check servers:
+
+     https://cran.r-project.org/web/packages/external_libs.html
+
+I copy the R package description here and add some comments below for early
+users.
+
+Description:
+
+     An R interface to 'FLINT' <https://flintlib.org/>, a C library for
+     number theory.  'FLINT' extends GNU 'MPFR' <https://www.mpfr.org/>
+     and GNU 'MP' <https://gmplib.org/> with support for arithmetic in
+     standard rings (the integers, the integers modulo n, the rational,
+     p-adic, real, and complex numbers) as well as vectors, matrices,
+     polynomials, and power series over rings.  'FLINT' implements
+     midpoint-radius interval arithmetic, also known as ball arithmetic,
+     in the real and complex numbers, enabling computation in arbitrary
+     precision with rigorous propagation of errors; see Johansson (2017)
+     <doi:10.1109/TC.2017.2690633>.  Finally, 'FLINT' provides ball
+     arithmetic implementations of many special mathematical functions,
+     with high coverage of reference works such as the NIST Digital
+     Library of Mathematical Functions <https://dlmf.nist.gov/>.  The R
+     interface defines S4 classes, generic functions, and methods for
+     representation and basic operations as well as plain R functions
+     mirroring and vectorizing entry points in the C library.
+
+Comments:
+
+     * The C library is expansive:
+
+           https://flintlib.org/doc/
+
+       The R package makes no attempt to interface every C entry point.  Rather,
+       users wanting an R interface to a C entry point are encouraged to file an
+       issue requesting an implementation.  In this way, the interface will grow
+       organically and "as needed" by the community of R users.
+
+     * Of particular interest to applied mathematicians and statisticians will
+       be special mathematical functions of real and complex arguments not
+       previously supported by R or any R package available on CRAN (or, where
+       supported, not defined over the complex numbers, to arbitrary precision,
+       or beyond the radius of convergence of a power series representation).
+
+       Use
+
+           help.search(package = "flint", keyword = "math")
+
+       to get an index of special mathematical functions currently interfaced.
+       At the moment, this list excludes the (inverse) trigonometric, (inverse)
+       hyperbolic, logarithmic, exponential, and other functions for which
+       R provides S4 group generic functions 'Math', 'Math2', and 'Complex',
+       for which the R package provides *methods* rather than plain R functions.
+
+     * The interface to traditional number theoretic functionality (concerning
+       integers, the integers modulo n, polynomials over the integers, ...) is
+       small right now.  I don't personally have use for it.  But it can be
+       expanded, again by request of users.
+
+     * Installation from sources depends on FLINT, GNU MPFR, and GNU MP headers
+       and libraries.  Use your operating system's package manager to install
+       these ...
+
+           $ pacman -S flint
+           $ apt install libflint-dev
+           $ dnf install flint-devel
+           $ pkg install flint
+           $ port install flint
+           $ brew install flint
+
+       ... unless ...
+
+       (1) The repositories provide a too old (< 3.0.0) version of FLINT, in
+           which case consider building FLINT from a recent (>= 3.0.0) source
+           tarball obtained here:
+
+               https://github.com/flintlib/flint/releases
+
+       (2) You use Windows and obtained R from CRAN, in which case use the
+           headers and libraries from a recent enough Rtools (>= Rtools44 r6414)
+
+               https://cran.r-project.org/bin/windows/Rtools/
+               https://cran.r-project.org/bin/windows/Rtools/rtools44/news.html
+
+           choosing the Rtools installer built for your architecture (x86_64 or
+           aarch64).
+
+       (3) You use macOS and obtained R from CRAN, in which case install the
+           macOS binaries (for flint, mpfr, and gmp) maintained by Simon Urbanek
+
+               https://mac.r-project.org/bin/
+               https://mac.r-project.org/bin/darwin20/x86_64/
+               https://mac.r-project.org/bin/darwin20/arm64/
+
+           choosing the binaries built for your architecture (x86_64 or arm64).
+
+Comments from early users are very much welcome and appreciated.
+
+Mikael
+
+
+From @@@655 @end|ng |rom |d@u|b@eu  Sat Nov  8 12:28:42 2025
+From: @@@655 @end|ng |rom |d@u|b@eu (=?UTF-8?Q?Albert_Ses=C3=A9?=)
+Date: Sat, 8 Nov 2025 12:28:42 +0100
+Subject: [R-pkgs] MLwrap: An R package for simplifying Machine Learning
+ Models
+Message-ID: <20e36a82-665b-49eb-a035-f3922cc0ce46@id.uib.eu>
+
+Dear R-packages community,
+
+I am prof. Albert Ses? from the University of the Balearic Islands (UIB).
+
+I am writing to announce MLwrap, an R package now available on CRAN.
+
+MLwrap is designed to simplify machine learning implementation for 
+educational and research contexts. It provides a step-by-step workflow 
+that emphasizes reproducibility, transparency, and pedagogical clarity.
+
+The package integrates four machine learning algorithms:
+
+- Neural Networks (Multilayer Perceptron)
+- Support Vector Machines
+- Random Forests
+- XGBoost
+
+Key features:
+
+- Unified pipeline for model building, optimization, and evaluation
+- Explicit handling of random seeds for reproducibility
+- Clear, accessible interface for learning
+- Built-in sensitivity analysis for model interpretation
+
+Resources:
+
+CRAN package: https://cran.r-project.org/web/packages/MLwrap
+Tutorial: https://osf.io/preprints/psyarxiv/j6m4z
+
+Web page: https://areademetodologia.uib.es/MLwrap/MLwrap_website.html
+
+MLwrap is particularly useful for teaching statistics and data science? 
+courses to students and researchers new to machine learning.
+
+Best regards,
+Dr. Albert Ses?
+University of the Balearic Islands (UIB)
+Department of Psychology
+albert.sese at uib.es
+
+

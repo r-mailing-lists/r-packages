@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2005-01",
+  "messages": [
+    {
+      "id": "msg-e9b3680b2ef3",
+      "message_id": "<Pine.LNX.4.58.0501111309520.4433@stat.harvard.edu>",
+      "from_name": "Elizabeth Stuart",
+      "from_email_hash": "55a88cc9c2d942b4aa233dc5b8329445cd5aa0af11b848ed46485bc76c88e321",
+      "date": "2005-01-11T13:17:29-05:00",
+      "subject": "[R-pkgs] New package: MatchIt",
+      "subject_clean": "New package: MatchIt",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the release of our software MatchIt, now \navailable on CRAN.   MatchIt implements a variety of matching methods for \ncausal inference.  \n\nAbstract:\nMatchIt implements the suggestions of Ho, Imai, King, and Stuart (2004) \nfor improving parametric statistical models by preprocessing data with \nnonparametric matching methods. MatchIt implements a wide range of \nsophisticated matching methods, making it possible to greatly reduce the \ndependence of causal inferences on hard-to-justify, but commonly made, \nstatistical modeling assumptions. The software also easily fits into \nexisting research practices since, after preprocessing data with MatchIt, \nresearchers can use whatever parametric model they would have used without \nMatchIt, but produce inferences with substantially more robustness and \nless sensitivity to modeling assumptions. MatchIt is an R program, and \nalso works seamlessly with Zelig.\n\nFor more information, please see http://gking.harvard.edu/matchit/.  \nComments and suggestions are welcome.  \n\nSincerely,\nDaniel Ho, Kosuke Imai, Gary King, and Elizabeth Stuart",
+      "body_snippet": "We would like to announce the release of our software MatchIt, now \navailable on CRAN.   MatchIt implements a variety of matching methods for \ncausal inference.  \n\nAbstract:\nMatchIt implements the sug",
+      "thread_id": "thread-e9b3680b2ef3",
+      "thread_depth": 0,
+      "month": "2005-01"
+    },
+    {
+      "id": "msg-e9b3680b2ef3",
+      "message_id": "<Pine.LNX.4.58.0501111309520.4433@stat.harvard.edu>",
+      "from_name": "Elizabeth Stuart",
+      "from_email_hash": "55a88cc9c2d942b4aa233dc5b8329445cd5aa0af11b848ed46485bc76c88e321",
+      "date": "2005-01-11T13:17:29-05:00",
+      "subject": "[R-pkgs] New package: MatchIt",
+      "subject_clean": "New package: MatchIt",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the release of our software MatchIt, now \navailable on CRAN.   MatchIt implements a variety of matching methods for \ncausal inference.  \n\nAbstract:\nMatchIt implements the suggestions of Ho, Imai, King, and Stuart (2004) \nfor improving parametric statistical models by preprocessing data with \nnonparametric matching methods. MatchIt implements a wide range of \nsophisticated matching methods, making it possible to greatly reduce the \ndependence of causal inferences on hard-to-justify, but commonly made, \nstatistical modeling assumptions. The software also easily fits into \nexisting research practices since, after preprocessing data with MatchIt, \nresearchers can use whatever parametric model they would have used without \nMatchIt, but produce inferences with substantially more robustness and \nless sensitivity to modeling assumptions. MatchIt is an R program, and \nalso works seamlessly with Zelig.\n\nFor more information, please see http://gking.harvard.edu/matchit/.  \nComments and suggestions are welcome.  \n\nSincerely,\nDaniel Ho, Kosuke Imai, Gary King, and Elizabeth Stuart",
+      "body_snippet": "We would like to announce the release of our software MatchIt, now \navailable on CRAN.   MatchIt implements a variety of matching methods for \ncausal inference.  \n\nAbstract:\nMatchIt implements the sug",
+      "thread_id": "thread-e9b3680b2ef3",
+      "thread_depth": 0,
+      "month": "2005-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e9b3680b2ef3",
+      "subject": "New package: MatchIt",
+      "message_count": 1,
+      "participants": [
+        "Elizabeth Stuart"
+      ],
+      "started": "2005-01-11T13:17:29-05:00",
+      "last_reply": "2005-01-11T13:17:29-05:00",
+      "root_message_id": "msg-e9b3680b2ef3"
+    },
+    {
+      "id": "thread-e9b3680b2ef3",
+      "subject": "New package: MatchIt",
+      "message_count": 1,
+      "participants": [
+        "Elizabeth Stuart"
+      ],
+      "started": "2005-01-11T13:17:29-05:00",
+      "last_reply": "2005-01-11T13:17:29-05:00",
+      "root_message_id": "msg-e9b3680b2ef3"
+    }
+  ]
+}

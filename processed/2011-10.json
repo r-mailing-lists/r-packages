@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-10",
+  "messages": [
+    {
+      "id": "msg-335c741b5016",
+      "message_id": "<alpine.DEB.2.00.1110031757570.5642@diana>",
+      "from_name": "Torsten Hothorn",
+      "from_email_hash": "40ebb1701aa3a2b4cedb797a29241023a52a5dce6796674cf5d521e50ad8697f",
+      "date": "2011-10-03T18:00:29+02:00",
+      "subject": "[R-pkgs] `partykit': A Toolkit for Recursive Partytioning",
+      "subject_clean": "`partykit': A Toolkit for Recursive Partytioning",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New package `partykit': A Toolkit for Recursive Partytioning\n\nThe purpose of the package is to provide a toolkit with infrastructure for\nrepresenting, summarizing, and visualizing tree-structured regression and\nclassification models. Thus, the focus is not on _inferring_ such a\ntree structure from data but to _represent_ a given tree so that\nprinting/plotting and computing predictions can be performed in a\nstandardized  way. In particular, this unified infrastructure can be\nused for reading/coercing tree models from different sources\n(packages `rpart', `RWeka', `PMML') yielding objects that share\nfunctionality for `print()', `plot()', and `predict()' methods.\n\nThe impatient users will hopefully have fun with\n\ninstall.packages(\"partykit\")\nlibrary(\"partykit\")\nlibrary(\"rpart\")\n### from ?rpart\nfit <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis)\nplot(as.party(fit))\n\n\nBest,\n\nTorsten & Achim",
+      "body_snippet": "New package `partykit': A Toolkit for Recursive Partytioning\n\nThe purpose of the package is to provide a toolkit with infrastructure for\nrepresenting, summarizing, and visualizing tree-structured regr",
+      "thread_id": "thread-335c741b5016",
+      "thread_depth": 0,
+      "month": "2011-10"
+    },
+    {
+      "id": "msg-b8543b9ce548",
+      "message_id": "<CAJ55+d+5fbZ1zGqw20MJV-3f0JkODypZPC=6F40JF8mT_K95YQ@mail.gmail.com>",
+      "from_name": "Thomas Lumley",
+      "from_email_hash": "7d3e82acd7a177485858a278f82b82d7e665640301fe16d4c1d9312e4963cff3",
+      "date": "2011-10-15T12:49:21+13:00",
+      "subject": "[R-pkgs] survey 3.26",
+      "subject_clean": "survey 3.26",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.26 of the survey package is percolating through CRAN.  Since\nthe last announcement on this list, of version 3.20, about 18 months\nago, the main changes are\n\n   --  an option to calculate replicate-weight variances from sums of\nsquares around the point estimate rather than from the variance of the\nreplicates (\"MSE\" style)\n\n   --  Preston's multistage rescaled bootstrap, which is valid for any\nnumber of stages of sampling and arbitrary sampling fractions\n\n   -- wider use of, and better asymptotic approximations for the\nRao-Scott likelihood ratio tests\n\n   --  trimming of weights\n\nA lot of minor bugs and infelicities have also been fixed. More\ndetails are in the NEWS file.\n\n    -thomas\n\n-- \nThomas Lumley\nProfessor of Biostatistics\nUniversity of Auckland",
+      "body_snippet": "Version 3.26 of the survey package is percolating through CRAN.  Since\nthe last announcement on this list, of version 3.20, about 18 months\nago, the main changes are\n\n   --  an option to calculate rep",
+      "thread_id": "thread-b8543b9ce548",
+      "thread_depth": 0,
+      "month": "2011-10"
+    },
+    {
+      "id": "msg-e930768694ac",
+      "message_id": "<4EA5BCED.8080104@yahoo.de>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "640e15492bcf8d10115a38cd2155f0a3bf60d8ff1e1e86a12adbbc144a3343be",
+      "date": "2011-10-24T21:30:53+02:00",
+      "subject": "[R-pkgs] NMOF 0.20-0 (Numerical methods and optimization in finance)",
+      "subject_clean": "NMOF 0.20-0 (Numerical methods and optimization in finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 0.20-0 of package NMOF is now on CRAN. 'NMOF' stands for \n'Numerical Methods and Optimization in Finance'. The package accompanies \nthe book with the same name, written by Manfred Gilli, Dietmar Maringer \nand Enrico Schumann, published by Elsevier/Academic Press in 2011.\n\nThe package contains, in particular, several implementations of \noptimization heuristics, such as Differential Evolution, Genetic \nAlgorithms and Threshold Accepting. The package comes with several \nvignettes, for example on yield-curve fitting, portfolio optimization \nand robust regression.\n\nThe development version (it's a long TODO list until version 1.0) is \navailable from R-Forge ( http://nmof.r-forge.r-project.org/ ).\n\nThere is also a mailing list that informs about news regarding the \npackage/book ( \nhttps://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/nmof-news ).\n\nIn case of comments/corrections/remarks/suggestions -- which are very \nwelcome -- please contact the maintainer (me) directly.\n\n\nBest regards,\nEnrico\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttp://nmof.net/",
+      "body_snippet": "Dear all,\n\nversion 0.20-0 of package NMOF is now on CRAN. 'NMOF' stands for \n'Numerical Methods and Optimization in Finance'. The package accompanies \nthe book with the same name, written by Manfred G",
+      "thread_id": "thread-e930768694ac",
+      "thread_depth": 0,
+      "month": "2011-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-335c741b5016",
+      "subject": "`partykit': A Toolkit for Recursive Partytioning",
+      "message_count": 1,
+      "participants": [
+        "Torsten Hothorn"
+      ],
+      "started": "2011-10-03T18:00:29+02:00",
+      "last_reply": "2011-10-03T18:00:29+02:00",
+      "root_message_id": "msg-335c741b5016"
+    },
+    {
+      "id": "thread-b8543b9ce548",
+      "subject": "survey 3.26",
+      "message_count": 1,
+      "participants": [
+        "Thomas Lumley"
+      ],
+      "started": "2011-10-15T12:49:21+13:00",
+      "last_reply": "2011-10-15T12:49:21+13:00",
+      "root_message_id": "msg-b8543b9ce548"
+    },
+    {
+      "id": "thread-e930768694ac",
+      "subject": "NMOF 0.20-0 (Numerical methods and optimization in finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2011-10-24T21:30:53+02:00",
+      "last_reply": "2011-10-24T21:30:53+02:00",
+      "root_message_id": "msg-e930768694ac"
+    }
+  ]
+}

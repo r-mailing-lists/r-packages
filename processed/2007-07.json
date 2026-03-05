@@ -1,0 +1,607 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2007-07",
+  "messages": [
+    {
+      "id": "msg-830690687440",
+      "message_id": "<f8e6ff050707010858h7f4b925eu7e5fbecb5a6479f9@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-01T17:58:54+02:00",
+      "subject": "[R-pkgs] Clusterfly",
+      "subject_clean": "Clusterfly",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "clusterfly\nhttp://had.co.nz/clusterfly/\n\nTypically, there is somewhat of a divide between statistics and\nvisualisation software. Statistics software, particularly R, provides\nimplementation of cutting edge research methods, but limited graphics.\nVisualisation software will provide sophisticated visual interfaces,\nbut few statistical algorithms. The clusterfly package presents some\nearly experimentation aimed at overcoming this deficiency by linking R\nand GGobi. Cluster analysis was chosen as it is an exploratory method\nthat needs sophisticated visualisation and statistical algorithms.\n\nClusterfly provides some tools that work with all clustering\nalgorithms, and some that are tailored for particular ones.  Generic\ntools allow you to animate between clusterings (see ?cfly_animate) and\nproduce common static graphics (?cfly_dist, ?cfly_pcp).  Specific\nalgorithms are available for:\n\n* Self organising maps (aka Kohonen neural networks), ?ggobi.som.\nDisplays the self organising map/net in the original space of the\ndata.\n\n* Hierarchical clustering, ?hierfly. Connects data points with lines\nlike a dendrogram, but in the high-dimensional space of the original\ndata\n\n * Model based clustering, ?mefly. Adds ellipsoids from the\nmultivariate normal distributions the clusters are based on\n\nYou will need GGobi (http://www.ggobi.org) and rggobi\n(http://www.ggobi.org/rggobi) installed to be able to use clusterfly.\n\nRegards,\n\nHadley",
+      "body_snippet": "clusterfly\nhttp://had.co.nz/clusterfly/\n\nTypically, there is somewhat of a divide between statistics and\nvisualisation software. Statistics software, particularly R, provides\nimplementation of cutting",
+      "thread_id": "thread-830690687440",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-830690687440",
+      "message_id": "<f8e6ff050707010858h7f4b925eu7e5fbecb5a6479f9@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-01T17:58:54+02:00",
+      "subject": "[R-pkgs] Clusterfly",
+      "subject_clean": "Clusterfly",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "clusterfly\nhttp://had.co.nz/clusterfly/\n\nTypically, there is somewhat of a divide between statistics and\nvisualisation software. Statistics software, particularly R, provides\nimplementation of cutting edge research methods, but limited graphics.\nVisualisation software will provide sophisticated visual interfaces,\nbut few statistical algorithms. The clusterfly package presents some\nearly experimentation aimed at overcoming this deficiency by linking R\nand GGobi. Cluster analysis was chosen as it is an exploratory method\nthat needs sophisticated visualisation and statistical algorithms.\n\nClusterfly provides some tools that work with all clustering\nalgorithms, and some that are tailored for particular ones.  Generic\ntools allow you to animate between clusterings (see ?cfly_animate) and\nproduce common static graphics (?cfly_dist, ?cfly_pcp).  Specific\nalgorithms are available for:\n\n* Self organising maps (aka Kohonen neural networks), ?ggobi.som.\nDisplays the self organising map/net in the original space of the\ndata.\n\n* Hierarchical clustering, ?hierfly. Connects data points with lines\nlike a dendrogram, but in the high-dimensional space of the original\ndata\n\n * Model based clustering, ?mefly. Adds ellipsoids from the\nmultivariate normal distributions the clusters are based on\n\nYou will need GGobi (http://www.ggobi.org) and rggobi\n(http://www.ggobi.org/rggobi) installed to be able to use clusterfly.\n\nRegards,\n\nHadley",
+      "body_snippet": "clusterfly\nhttp://had.co.nz/clusterfly/\n\nTypically, there is somewhat of a divide between statistics and\nvisualisation software. Statistics software, particularly R, provides\nimplementation of cutting",
+      "thread_id": "thread-830690687440",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7f763d8d0250",
+      "message_id": "<f8e6ff050707081210n29e29847y372e02fd220c5d3b@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-08T21:10:49+02:00",
+      "subject": "[R-pkgs] Scagnostics - scatterplot diagnostics",
+      "subject_clean": "Scagnostics - scatterplot diagnostics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The scagnostics package implements the graph theoretic scagnostics\ndescribed by Leland Wilkinson, Anushka Anand and Robert Grossman\n(http://www.ncdm.uic.edu/publications/files/proc-094.pdf), building on\nan old idea of Tukey's to define indices of \"interestingness\" to help\nguide the search for interesting features in the pair-wise\nscatterplots of a highly multivariate dataset.\n\nThe scagnostics package currently only supports two methods, one which\ncomputes the scagnostics for a pair of variables, and the other for\nall pairs of variables in a data.frame.\n\nIf you are attending the JSM, there is a session on scagnostics.\nDetails are available at http://tinyurl.com/324yb5\n\n(The package has just been added to CRAN, it may be a couple of days\nbefore it is available on your local mirror)\n\nRegards,\n\nHadley",
+      "body_snippet": "The scagnostics package implements the graph theoretic scagnostics\ndescribed by Leland Wilkinson, Anushka Anand and Robert Grossman\n(http://www.ncdm.uic.edu/publications/files/proc-094.pdf), building ",
+      "thread_id": "thread-7f763d8d0250",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7f763d8d0250",
+      "message_id": "<f8e6ff050707081210n29e29847y372e02fd220c5d3b@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-08T21:10:49+02:00",
+      "subject": "[R-pkgs] Scagnostics - scatterplot diagnostics",
+      "subject_clean": "Scagnostics - scatterplot diagnostics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The scagnostics package implements the graph theoretic scagnostics\ndescribed by Leland Wilkinson, Anushka Anand and Robert Grossman\n(http://www.ncdm.uic.edu/publications/files/proc-094.pdf), building on\nan old idea of Tukey's to define indices of \"interestingness\" to help\nguide the search for interesting features in the pair-wise\nscatterplots of a highly multivariate dataset.\n\nThe scagnostics package currently only supports two methods, one which\ncomputes the scagnostics for a pair of variables, and the other for\nall pairs of variables in a data.frame.\n\nIf you are attending the JSM, there is a session on scagnostics.\nDetails are available at http://tinyurl.com/324yb5\n\n(The package has just been added to CRAN, it may be a couple of days\nbefore it is available on your local mirror)\n\nRegards,\n\nHadley",
+      "body_snippet": "The scagnostics package implements the graph theoretic scagnostics\ndescribed by Leland Wilkinson, Anushka Anand and Robert Grossman\n(http://www.ncdm.uic.edu/publications/files/proc-094.pdf), building ",
+      "thread_id": "thread-7f763d8d0250",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-8114efe79ddc",
+      "message_id": "<f8e6ff050707090212r7925d60ck2ece466d98500731@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-09T11:12:28+02:00",
+      "subject": "[R-pkgs] ggplot 0.5.4",
+      "subject_clean": "ggplot 0.5.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nChanges in version 0.5.4 ------------------------------\n\n* border now drawn on top of geoms, instead of below - this results in\nbetter appearance when adjusting scale limits\n* ggplot() + aes() now modifies existing default aesthetic mapping,\nrather than overwriting\n* polished examples in facet_grid\n\nChanges in version 0.5.3 ------------------------------\n\n* added experimental scatterplot matrix, see ?plotmatrix\n* added new border.colour and grid.minor.colour options for better\ncontrol over plot appearance\n* updated theme_bw to do better when drawing a plot with white background\n* better default colour choices for gradients (and more discussion in examples)\n* fixed bug in ScaleGradient2 where scales with different positive and\nnegative ranges were not scaled correctly\n* allow expressions as result from strip.text\n* fixed rare bug in geom_vline and geom_hline\n* fixed example in geom_abline\n* tweaked display of multiline axis labels\n\nRegards,\n\nHadley",
+      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. ",
+      "thread_id": "thread-8114efe79ddc",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-8114efe79ddc",
+      "message_id": "<f8e6ff050707090212r7925d60ck2ece466d98500731@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-09T11:12:28+02:00",
+      "subject": "[R-pkgs] ggplot 0.5.4",
+      "subject_clean": "ggplot 0.5.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nChanges in version 0.5.4 ------------------------------\n\n* border now drawn on top of geoms, instead of below - this results in\nbetter appearance when adjusting scale limits\n* ggplot() + aes() now modifies existing default aesthetic mapping,\nrather than overwriting\n* polished examples in facet_grid\n\nChanges in version 0.5.3 ------------------------------\n\n* added experimental scatterplot matrix, see ?plotmatrix\n* added new border.colour and grid.minor.colour options for better\ncontrol over plot appearance\n* updated theme_bw to do better when drawing a plot with white background\n* better default colour choices for gradients (and more discussion in examples)\n* fixed bug in ScaleGradient2 where scales with different positive and\nnegative ranges were not scaled correctly\n* allow expressions as result from strip.text\n* fixed rare bug in geom_vline and geom_hline\n* fixed example in geom_abline\n* tweaked display of multiline axis labels\n\nRegards,\n\nHadley",
+      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. ",
+      "thread_id": "thread-8114efe79ddc",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7c542b26e786",
+      "message_id": "<46923CE9.4090802@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-07-09T15:49:29+02:00",
+      "subject": "[R-pkgs] New package \"proxy\" for distances and similiarities",
+      "subject_clean": "New package \"proxy\" for distances and similiarities",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new package for computing distance and similarity matrices made it to \nCRAN, and will propagate to the mirrors soon.\n\nIt includes an enhanced version of \"dist()\" with support for more than \n40 popular similarity and distance measures, both for auto- and \ncross-distances. Some important ones are implemented in C.\n\nThe proximity measures are stored in a registry which can easily be \nqueried and extended by users at run-time. For adding a new measure, the \nsimplest way is to provide the distance measure as a small R function, \nthe package code will do the loops on the C code level to create the \nproximity matrix. It is of course also possible to use more efficient C \nimplementations---either for the distance measure alone, or the whole \nmatrix computation.\n\nInput data is not restricted to matrices: provided the proximity measure \ncan handle it, lists and data frames are also accepted.\n\nThe formulas for binary proximities can conveniently be specified in the \na/b/c/d/n format, where the number of concordant/discordant pairs is \nprecomputed on the C code level.\n\nWe are currently working on support for sparse data.\n\nThis is also a \"Call for Measures\": if you feel that a particular \nsimilarity of distance measure is missing, please send the formula and a \nreference (or, ideally, the whole registry entry) to one of the package \nmaintainers who will happily add it.\n\nDavid and Christian.",
+      "body_snippet": "Dear useRs,\n\na new package for computing distance and similarity matrices made it to \nCRAN, and will propagate to the mirrors soon.\n\nIt includes an enhanced version of \"dist()\" with support for more t",
+      "thread_id": "thread-7c542b26e786",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7c542b26e786",
+      "message_id": "<46923CE9.4090802@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-07-09T15:49:29+02:00",
+      "subject": "[R-pkgs] New package \"proxy\" for distances and similiarities",
+      "subject_clean": "New package \"proxy\" for distances and similiarities",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new package for computing distance and similarity matrices made it to \nCRAN, and will propagate to the mirrors soon.\n\nIt includes an enhanced version of \"dist()\" with support for more than \n40 popular similarity and distance measures, both for auto- and \ncross-distances. Some important ones are implemented in C.\n\nThe proximity measures are stored in a registry which can easily be \nqueried and extended by users at run-time. For adding a new measure, the \nsimplest way is to provide the distance measure as a small R function, \nthe package code will do the loops on the C code level to create the \nproximity matrix. It is of course also possible to use more efficient C \nimplementations---either for the distance measure alone, or the whole \nmatrix computation.\n\nInput data is not restricted to matrices: provided the proximity measure \ncan handle it, lists and data frames are also accepted.\n\nThe formulas for binary proximities can conveniently be specified in the \na/b/c/d/n format, where the number of concordant/discordant pairs is \nprecomputed on the C code level.\n\nWe are currently working on support for sparse data.\n\nThis is also a \"Call for Measures\": if you feel that a particular \nsimilarity of distance measure is missing, please send the formula and a \nreference (or, ideally, the whole registry entry) to one of the package \nmaintainers who will happily add it.\n\nDavid and Christian.",
+      "body_snippet": "Dear useRs,\n\na new package for computing distance and similarity matrices made it to \nCRAN, and will propagate to the mirrors soon.\n\nIt includes an enhanced version of \"dist()\" with support for more t",
+      "thread_id": "thread-7c542b26e786",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-764363b8dace",
+      "message_id": "<18066.25939.77583.800991@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2007-07-09T11:41:55-05:00",
+      "subject": "[R-pkgs] CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "subject_clean": "CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing CRANberries -- An RSS feed about New and Updated CRAN packages\n\nA new RSS feed [1] is now available that summarizes uploads to CRAN.  This\nmakes it possibly to quickly obtain concise information about which (of the\nnow over one thousand !!) packages were added or updated at CRAN and its\nmirrors.\n\nTo this end, two basic variants are provided:\n - a feed for new packages where we display the DESCRIPTION file\n - a feed for updated packages where we display the output of diffstat(1) \n   between the old and new source tar archives.\n  \nAs the URLs for these are in a hierarchy, one can subscribe to both or\nindividual feeds.  The URLs are as follows:\n\n   Everything\n\thttp://dirk.eddelbuettel.com/cranberries/index.rss\n\n   Just CRAN (so far the same as All)\n\thttp://dirk.eddelbuettel.com/cranberries/cran/index.rss\n\n   New CRAN packages\n\thttp://dirk.eddelbuettel.com/cranberries/cran/new/index.rss\n\n   Updated CRAN packages\n\thttp://dirk.eddelbuettel.com/cranberries/cran/updated/index.rss\n\nbut the easiest way may just be to subscribe to Elijah's wonderful 'Planet R'\nfeed aggregator which already sources the 'Everything' variant above.  Beside\ngiving you lots of other R information, it also points to a more reliable\nback-end than my small server at home.\n\nLastly, I could add other repositories. However, to provide updates in the\ncurrent format, my code relies on some CRAN features not available on all\nother repos (i.e an Archive/ section with old tarballs, and the various\nDescriptions/$package.DESCRIPTION files).\n\nFor the technically inclined, this is implemented using a few lines of R\nexecuted by littler [2] storing data via R/DBI in a SQLite db and writing\nsimple text files that are then aggregated by the Blosxom [3] blog engine.\n\nComments, questions, criticism most welcome.\n\nBest regards,  Dirk\n\n[1] See the Wikipedia entry at http://en.wikipedia.org/wiki/Rss if that term\n    is unfamiliar. RSS feeds can be read in web browsers, numerous stand-alone\n    applications, or web-services such as Google Reader.\n\n[2] See http://dirk.eddelbuettel.com/code/littler.html\n\n[3] See http://blosxom.sourceforge.net/ and http://blosxom.sourceforge.net/\n    but not that Blosxom development seems to have ceased. There are many \n    alternatives such as PyBlosxom and Nanoblogger.\n\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
+      "body_snippet": "Announcing CRANberries -- An RSS feed about New and Updated CRAN packages\n\nA new RSS feed [1] is now available that summarizes uploads to CRAN.  This\nmakes it possibly to quickly obtain concise inform",
+      "thread_id": "thread-764363b8dace",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-764363b8dace",
+      "message_id": "<18066.25939.77583.800991@basebud.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2007-07-09T11:41:55-05:00",
+      "subject": "[R-pkgs] CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "subject_clean": "CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing CRANberries -- An RSS feed about New and Updated CRAN packages\n\nA new RSS feed [1] is now available that summarizes uploads to CRAN.  This\nmakes it possibly to quickly obtain concise information about which (of the\nnow over one thousand !!) packages were added or updated at CRAN and its\nmirrors.\n\nTo this end, two basic variants are provided:\n - a feed for new packages where we display the DESCRIPTION file\n - a feed for updated packages where we display the output of diffstat(1) \n   between the old and new source tar archives.\n  \nAs the URLs for these are in a hierarchy, one can subscribe to both or\nindividual feeds.  The URLs are as follows:\n\n   Everything\n\thttp://dirk.eddelbuettel.com/cranberries/index.rss\n\n   Just CRAN (so far the same as All)\n\thttp://dirk.eddelbuettel.com/cranberries/cran/index.rss\n\n   New CRAN packages\n\thttp://dirk.eddelbuettel.com/cranberries/cran/new/index.rss\n\n   Updated CRAN packages\n\thttp://dirk.eddelbuettel.com/cranberries/cran/updated/index.rss\n\nbut the easiest way may just be to subscribe to Elijah's wonderful 'Planet R'\nfeed aggregator which already sources the 'Everything' variant above.  Beside\ngiving you lots of other R information, it also points to a more reliable\nback-end than my small server at home.\n\nLastly, I could add other repositories. However, to provide updates in the\ncurrent format, my code relies on some CRAN features not available on all\nother repos (i.e an Archive/ section with old tarballs, and the various\nDescriptions/$package.DESCRIPTION files).\n\nFor the technically inclined, this is implemented using a few lines of R\nexecuted by littler [2] storing data via R/DBI in a SQLite db and writing\nsimple text files that are then aggregated by the Blosxom [3] blog engine.\n\nComments, questions, criticism most welcome.\n\nBest regards,  Dirk\n\n[1] See the Wikipedia entry at http://en.wikipedia.org/wiki/Rss if that term\n    is unfamiliar. RSS feeds can be read in web browsers, numerous stand-alone\n    applications, or web-services such as Google Reader.\n\n[2] See http://dirk.eddelbuettel.com/code/littler.html\n\n[3] See http://blosxom.sourceforge.net/ and http://blosxom.sourceforge.net/\n    but not that Blosxom development seems to have ceased. There are many \n    alternatives such as PyBlosxom and Nanoblogger.\n\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
+      "body_snippet": "Announcing CRANberries -- An RSS feed about New and Updated CRAN packages\n\nA new RSS feed [1] is now available that summarizes uploads to CRAN.  This\nmakes it possibly to quickly obtain concise inform",
+      "thread_id": "thread-764363b8dace",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-8c74e4d7c182",
+      "message_id": "<f8e6ff050707091023j2818c1d6gcfb763e1c5e81b09@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-09T19:23:21+02:00",
+      "subject": "[R-pkgs] Reshape version 0.8",
+      "subject_clean": "Reshape version 0.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape version 0.8\nhttp://had.co.nz/reshape\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get your data into the shape that you want.  You can find out\nmore at http://had.co.nz/reshape\n\nThis version brings a few minor changes to make the output more\nattractive and less surprising.  If you have any code that relies on\nthe exact output structure you might need to tweak it a little.\n\n* preserve.na renamed to na.rm to be consistent with other R functions\n\n* Column names are no longer automatically converted to valid R names.\nYou may need to use `` (those are backticks) to access these names.\n\n* Margins now displayed with (all) instead of NA\n\n* melt.array can now deal with cases where there are partial dimnames\n- Thanks to Roberto Ugoccioni\n\n * Added the Smiths dataset to the package\n\n * Fixed a bug when displaying margins with multiple result variables\n\nRegards,\n\nHadley",
+      "body_snippet": "Reshape version 0.8\nhttp://had.co.nz/reshape\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to ",
+      "thread_id": "thread-8c74e4d7c182",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-8c74e4d7c182",
+      "message_id": "<f8e6ff050707091023j2818c1d6gcfb763e1c5e81b09@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-07-09T19:23:21+02:00",
+      "subject": "[R-pkgs] Reshape version 0.8",
+      "subject_clean": "Reshape version 0.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape version 0.8\nhttp://had.co.nz/reshape\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get your data into the shape that you want.  You can find out\nmore at http://had.co.nz/reshape\n\nThis version brings a few minor changes to make the output more\nattractive and less surprising.  If you have any code that relies on\nthe exact output structure you might need to tweak it a little.\n\n* preserve.na renamed to na.rm to be consistent with other R functions\n\n* Column names are no longer automatically converted to valid R names.\nYou may need to use `` (those are backticks) to access these names.\n\n* Margins now displayed with (all) instead of NA\n\n* melt.array can now deal with cases where there are partial dimnames\n- Thanks to Roberto Ugoccioni\n\n * Added the Smiths dataset to the package\n\n * Fixed a bug when displaying margins with multiple result variables\n\nRegards,\n\nHadley",
+      "body_snippet": "Reshape version 0.8\nhttp://had.co.nz/reshape\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to ",
+      "thread_id": "thread-8c74e4d7c182",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7a69ca0e2bfa",
+      "message_id": "<46940CF0.5040205@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-07-11T00:49:20+02:00",
+      "subject": "[R-pkgs] package \"relations\" updated",
+      "subject_clean": "package \"relations\" updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nVersion 0.2 of package \"relations\" appeared on CRAN and is currently \npropagating to the mirrors. In addition to some bug fixes, the new \nrelease includes:\n\n   o an introductory vignette showing the main features;\n\n   o new SD fitters for the C (\"complete\") and A (\"antisymmetric\")\n     families of relations;\n\n   o a fitter for Copeland's method;\n\n   o the relation_classes() function to extract and pretty-print\n     (ordered) classes from preferences and equivalences;\n\n   o the function relation_violations() to compute a measure of\n     remoteness from a specified property (e.g., symmetry,\n     transitivity, etc.).\n\nDavid and Kurt.\n\n\n\n\n\n-- \nDr. David Meyer\nDepartment of Information Systems and Operations\n\nVienna University of Economics and Business Administration\nAugasse 2-6, A-1090 Wien, Austria, Europe\nTel: +43-1-313 36 4393\nFax: +43-1-313 36 90 4393\nHP:  http://wi.wu-wien.ac.at/~meyer/",
+      "body_snippet": "Dear useRs,\n\nVersion 0.2 of package \"relations\" appeared on CRAN and is currently \npropagating to the mirrors. In addition to some bug fixes, the new \nrelease includes:\n\n   o an introductory vignette ",
+      "thread_id": "thread-7a69ca0e2bfa",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-7a69ca0e2bfa",
+      "message_id": "<46940CF0.5040205@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-07-11T00:49:20+02:00",
+      "subject": "[R-pkgs] package \"relations\" updated",
+      "subject_clean": "package \"relations\" updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nVersion 0.2 of package \"relations\" appeared on CRAN and is currently \npropagating to the mirrors. In addition to some bug fixes, the new \nrelease includes:\n\n   o an introductory vignette showing the main features;\n\n   o new SD fitters for the C (\"complete\") and A (\"antisymmetric\")\n     families of relations;\n\n   o a fitter for Copeland's method;\n\n   o the relation_classes() function to extract and pretty-print\n     (ordered) classes from preferences and equivalences;\n\n   o the function relation_violations() to compute a measure of\n     remoteness from a specified property (e.g., symmetry,\n     transitivity, etc.).\n\nDavid and Kurt.\n\n\n\n\n\n-- \nDr. David Meyer\nDepartment of Information Systems and Operations\n\nVienna University of Economics and Business Administration\nAugasse 2-6, A-1090 Wien, Austria, Europe\nTel: +43-1-313 36 4393\nFax: +43-1-313 36 90 4393\nHP:  http://wi.wu-wien.ac.at/~meyer/",
+      "body_snippet": "Dear useRs,\n\nVersion 0.2 of package \"relations\" appeared on CRAN and is currently \npropagating to the mirrors. In addition to some bug fixes, the new \nrelease includes:\n\n   o an introductory vignette ",
+      "thread_id": "thread-7a69ca0e2bfa",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-ca522760f416",
+      "message_id": "<200707240805.19285.aaron.king@umich.edu>",
+      "from_name": "Aaron King",
+      "from_email_hash": "6d98a657d40dc1167c0eb88dca3f476cce7d0bd4ac384493818f323b6766c107",
+      "date": "2007-07-24T08:05:19-04:00",
+      "subject": "[R-pkgs] New package: pomp, inference for partially-observed Markov processes",
+      "subject_clean": "New package: pomp, inference for partially-observed Markov processes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "To: cran at r-project.org\nSubject: New package: pomp, inference for partially-observed Markov processes\n\nThe new package 'pomp' is built around a very general realization of nonlinear \npartially-observed Markov processes (AKA state-space models, nonlinear \nstochastic dynamical systems). The user provides functions specifying the \nmodel's process and measurement components. The package's algorithms are \nbuilt on top of these functions. \n\nAt the moment, algorithms are provided for particle filtering (AKA sequential \nimportance sampling or sequential Monte Carlo) and the likelihood \nmaximization by iterated filtering (MIF) method of Ionides, Breto, and King \n(PNAS, 103:18438-18443, 2006). Future support for a variety of other \nalgorithms is envisioned. A working group of the National Center for \nEcological Analysis and Synthesis (NCEAS), \"Inference for Mechanistic \nModels\", is currently implementing additional methods for this package.\n\nSimple worked examples are provided in the form of a \nvignette, \"random_walk_example\".\n\nThe package is provided under the GPL. Contributions are welcome, as are \ncomments, suggestions, examples, and bug reports.\n\nThe development of this package has been aided by support from the U.S. N.S.F \n(Grants #EF-0545276, #EF-0430120) and by the \"Inference for Mechanistic \nModels\" Working Group supported by the National Center for Ecological \nAnalysis and Synthesis, a Center funded by NSF (Grant #DEB-0553768), the \nUniversity of California, Santa Barbara, and the State of California.\n\n\n\n-- \nAaron A. King, Ph.D.\nEcology & Evolutionary Biology\nUniversity of Michigan\nhttp://www.umich.edu/~kingaa\nGPG Public Key: 0x2B00840F",
+      "body_snippet": "To: cran at r-project.org\nSubject: New package: pomp, inference for partially-observed Markov processes\n\nThe new package 'pomp' is built around a very general realization of nonlinear \npartially-obser",
+      "thread_id": "thread-ca522760f416",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-ca522760f416",
+      "message_id": "<200707240805.19285.aaron.king@umich.edu>",
+      "from_name": "Aaron King",
+      "from_email_hash": "6d98a657d40dc1167c0eb88dca3f476cce7d0bd4ac384493818f323b6766c107",
+      "date": "2007-07-24T08:05:19-04:00",
+      "subject": "[R-pkgs] New package: pomp, inference for partially-observed Markov processes",
+      "subject_clean": "New package: pomp, inference for partially-observed Markov processes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "To: cran at r-project.org\nSubject: New package: pomp, inference for partially-observed Markov processes\n\nThe new package 'pomp' is built around a very general realization of nonlinear \npartially-observed Markov processes (AKA state-space models, nonlinear \nstochastic dynamical systems). The user provides functions specifying the \nmodel's process and measurement components. The package's algorithms are \nbuilt on top of these functions. \n\nAt the moment, algorithms are provided for particle filtering (AKA sequential \nimportance sampling or sequential Monte Carlo) and the likelihood \nmaximization by iterated filtering (MIF) method of Ionides, Breto, and King \n(PNAS, 103:18438-18443, 2006). Future support for a variety of other \nalgorithms is envisioned. A working group of the National Center for \nEcological Analysis and Synthesis (NCEAS), \"Inference for Mechanistic \nModels\", is currently implementing additional methods for this package.\n\nSimple worked examples are provided in the form of a \nvignette, \"random_walk_example\".\n\nThe package is provided under the GPL. Contributions are welcome, as are \ncomments, suggestions, examples, and bug reports.\n\nThe development of this package has been aided by support from the U.S. N.S.F \n(Grants #EF-0545276, #EF-0430120) and by the \"Inference for Mechanistic \nModels\" Working Group supported by the National Center for Ecological \nAnalysis and Synthesis, a Center funded by NSF (Grant #DEB-0553768), the \nUniversity of California, Santa Barbara, and the State of California.\n\n\n\n-- \nAaron A. King, Ph.D.\nEcology & Evolutionary Biology\nUniversity of Michigan\nhttp://www.umich.edu/~kingaa\nGPG Public Key: 0x2B00840F",
+      "body_snippet": "To: cran at r-project.org\nSubject: New package: pomp, inference for partially-observed Markov processes\n\nThe new package 'pomp' is built around a very general realization of nonlinear \npartially-obser",
+      "thread_id": "thread-ca522760f416",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-9e75b2366e61",
+      "message_id": "<46ADCCF3.4010207@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2007-07-30T13:35:15+02:00",
+      "subject": "[R-pkgs] New versions for the distr-family of packages and of package startupmsg",
+      "subject_clean": "New versions for the distr-family of packages and of package startupmsg",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN (with possibly a minor delay until on\nevery mirror) of new versions of our packages in the \"distrXXX\"-family (version 1.9),\ni.e.; \"distr\", \"distrEx\", \"distrSim\", \"distrTEst\", and \"distrDoc\"\n      as well as of package for managing startup messages, \"startupmsg\" (0.5).\n[all of them require R >= 2.2.0]\n-----------------------------------------------------------------------------------------\n********************************* Changes ***********************************************\nof \"distr\" (1.9), \"distrEx\" (1.9), \"distrSim\" (1.9), \"distrTEst\" (1.9), \"distrDoc\" (1.9)\n*****************************************************************************************\n-----------------------------------------------------------------------------------------\nThere are major changes in \"distr\" and \"distrEx\" from this release on;\nthe more important ones can be inspected at\n\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR\n\nand the pages linked to on this page.\n\nSpecial thanks go to Spencer Graves for spotting some errors in 1.8 (which\nshould be fixed by now) and to G.Jay Kerns for detecting some further bugs\nand providing code for exact kurtosis and skewness functionals.\n\nAfter package installation you may also have a look at NEWS(\"<pkg-name>\") for each of the\npackages mentioned in this mail.\n-----------------------------------------------------------------------------------------\n********************************* Changes ***********************************************\nof \"startupmsg\" (0.5)\n*****************************************************************************************\n-----------------------------------------------------------------------------------------\nThis may be interesting to those annoyed by our \"chatty\" startup messages ;-)\n\n-> From this version on, you may use suppressPackageStartupMessages() to suppress the\n   startup-messages issued by our packages---\n\ncompare http://tolstoy.newcastle.edu.au/R/e2/devel/07/04/3039.html\n-----------------------------------------------------------------------------------------\nShort Descriptions\n-----------------------------------------------------------------------------------------\n************ \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\"\nis introduced.\nAll distributions of the \"stats\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n-----------------------------------------------------------------------------------------\n************ \"distrSim\":\nClasses and methods are provided for a standardized treatment of\nsimulations (also under contaminations) .\n-----------------------------------------------------------------------------------------\n************ \"distrTEst\":\nClasses and methods are provided for a standardized treatment of\nthe evaluation of statistical procedures (up to now only estimators)\nat data/simulations\n-----------------------------------------------------------------------------------------\n************ \"distrEx\":\nThis package provides some extensions to package \"distr\" like:\n* extreme value distribution classes,\n* expectations\n+in the form E(X) for the expectation of X where X is some\ndistribution or\n+in the form E(X,f) for the expectation of f(X) where X is\nsome distribution and f some function in X,\n* further functionals: var, sd, IQR, mad, median, kurtosis, skewness\n* truncated moments\n* distances between distributions\n(Hellinger, Kolmogorov, total variation, \"convex contamination\")\n* conditional distributions in factorized form\n* conditional expectations in factorized form\n-----------------------------------------------------------------------------------------\n************ \"distrDoc\":\n\"distrDoc\" provides a common vignette to the distrXXX family\n-----------------------------------------------------------------------------------------\n************ \"startupmsg\":\nprovides utilities for start-up messages for packages\n-----------------------------------------------------------------------------------------\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN (with possibly a minor delay until on\nevery mirror) of new versions of our packages in the \"distrXXX\"-family (version 1.9),\ni.e.; \"distr\", \"distrEx\",",
+      "thread_id": "thread-9e75b2366e61",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-9e75b2366e61",
+      "message_id": "<46ADCCF3.4010207@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2007-07-30T13:35:15+02:00",
+      "subject": "[R-pkgs] New versions for the distr-family of packages and of package startupmsg",
+      "subject_clean": "New versions for the distr-family of packages and of package startupmsg",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN (with possibly a minor delay until on\nevery mirror) of new versions of our packages in the \"distrXXX\"-family (version 1.9),\ni.e.; \"distr\", \"distrEx\", \"distrSim\", \"distrTEst\", and \"distrDoc\"\n      as well as of package for managing startup messages, \"startupmsg\" (0.5).\n[all of them require R >= 2.2.0]\n-----------------------------------------------------------------------------------------\n********************************* Changes ***********************************************\nof \"distr\" (1.9), \"distrEx\" (1.9), \"distrSim\" (1.9), \"distrTEst\" (1.9), \"distrDoc\" (1.9)\n*****************************************************************************************\n-----------------------------------------------------------------------------------------\nThere are major changes in \"distr\" and \"distrEx\" from this release on;\nthe more important ones can be inspected at\n\nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR\n\nand the pages linked to on this page.\n\nSpecial thanks go to Spencer Graves for spotting some errors in 1.8 (which\nshould be fixed by now) and to G.Jay Kerns for detecting some further bugs\nand providing code for exact kurtosis and skewness functionals.\n\nAfter package installation you may also have a look at NEWS(\"<pkg-name>\") for each of the\npackages mentioned in this mail.\n-----------------------------------------------------------------------------------------\n********************************* Changes ***********************************************\nof \"startupmsg\" (0.5)\n*****************************************************************************************\n-----------------------------------------------------------------------------------------\nThis may be interesting to those annoyed by our \"chatty\" startup messages ;-)\n\n-> From this version on, you may use suppressPackageStartupMessages() to suppress the\n   startup-messages issued by our packages---\n\ncompare http://tolstoy.newcastle.edu.au/R/e2/devel/07/04/3039.html\n-----------------------------------------------------------------------------------------\nShort Descriptions\n-----------------------------------------------------------------------------------------\n************ \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\"\nis introduced.\nAll distributions of the \"stats\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n-----------------------------------------------------------------------------------------\n************ \"distrSim\":\nClasses and methods are provided for a standardized treatment of\nsimulations (also under contaminations) .\n-----------------------------------------------------------------------------------------\n************ \"distrTEst\":\nClasses and methods are provided for a standardized treatment of\nthe evaluation of statistical procedures (up to now only estimators)\nat data/simulations\n-----------------------------------------------------------------------------------------\n************ \"distrEx\":\nThis package provides some extensions to package \"distr\" like:\n* extreme value distribution classes,\n* expectations\n+in the form E(X) for the expectation of X where X is some\ndistribution or\n+in the form E(X,f) for the expectation of f(X) where X is\nsome distribution and f some function in X,\n* further functionals: var, sd, IQR, mad, median, kurtosis, skewness\n* truncated moments\n* distances between distributions\n(Hellinger, Kolmogorov, total variation, \"convex contamination\")\n* conditional distributions in factorized form\n* conditional expectations in factorized form\n-----------------------------------------------------------------------------------------\n************ \"distrDoc\":\n\"distrDoc\" provides a common vignette to the distrXXX family\n-----------------------------------------------------------------------------------------\n************ \"startupmsg\":\nprovides utilities for start-up messages for packages\n-----------------------------------------------------------------------------------------\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN (with possibly a minor delay until on\nevery mirror) of new versions of our packages in the \"distrXXX\"-family (version 1.9),\ni.e.; \"distr\", \"distrEx\",",
+      "thread_id": "thread-9e75b2366e61",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-83f639e0dc16",
+      "message_id": "<38c08c270707310503t5ecdd95cwe7c54423248dbbb0@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
+      "date": "2007-07-31T08:03:58-04:00",
+      "subject": "[R-pkgs] randomSurvivalForest 3.0.0 now available",
+      "subject_clean": "randomSurvivalForest 3.0.0 now available",
+      "in_reply_to": "<38c08c270707291256l41912585qde16fc1c2d8385b1@mail.gmail.com>",
+      "references": [
+        "<38c08c270707291256l41912585qde16fc1c2d8385b1@mail.gmail.com>"
+      ],
+      "body_plain": "Dear useRs:\n\nRelease 3.0.0 of the randomSurvivalForest, an ensemble tree method for\nthe analysis of right censored survival data,  package is now\navailable.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 3.0.0\n\nRelease 3.0.0 represents a major upgrade in the functionality of the\n2.x releases.  Key changes are as follows:\n\no Missing data can be imputed in both grow and predict mode.  This\n  applies to variables as well as time and censoring outcome values.\n  Values are imputed dynamically as the tree is grown using a new tree\n  imputation methodology.  This produces an imputed forest which can be\n  used for prediction purposes on test data sets with missing data.\n\no Importance values for variables are returned in predict mode when test\n  data contains outcomes as well as variables.\n\no Fixed some bugs in plot.variable().  Thanks to Andy J. Minn for\npointing this out.\n\no Minor modification of PMML representation of RSF forest output to accomodate\n  imputation.  The method of random seed chain recovery has been altered.\n  Note that forests produced with prior releases will have to be\n  regenerated using this release.  We apologize for the inconvenience.\n\n---------------------------------------------------------------------------------\n\nThanks.\n\nubk\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Dear useRs:\n\nRelease 3.0.0 of the randomSurvivalForest, an ensemble tree method for\nthe analysis of right censored survival data,  package is now\navailable.\n\n------------------------------------------",
+      "thread_id": "thread-83f639e0dc16",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-83f639e0dc16",
+      "message_id": "<38c08c270707310503t5ecdd95cwe7c54423248dbbb0@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
+      "date": "2007-07-31T08:03:58-04:00",
+      "subject": "[R-pkgs] randomSurvivalForest 3.0.0 now available",
+      "subject_clean": "randomSurvivalForest 3.0.0 now available",
+      "in_reply_to": "<38c08c270707291256l41912585qde16fc1c2d8385b1@mail.gmail.com>",
+      "references": [
+        "<38c08c270707291256l41912585qde16fc1c2d8385b1@mail.gmail.com>"
+      ],
+      "body_plain": "Dear useRs:\n\nRelease 3.0.0 of the randomSurvivalForest, an ensemble tree method for\nthe analysis of right censored survival data,  package is now\navailable.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 3.0.0\n\nRelease 3.0.0 represents a major upgrade in the functionality of the\n2.x releases.  Key changes are as follows:\n\no Missing data can be imputed in both grow and predict mode.  This\n  applies to variables as well as time and censoring outcome values.\n  Values are imputed dynamically as the tree is grown using a new tree\n  imputation methodology.  This produces an imputed forest which can be\n  used for prediction purposes on test data sets with missing data.\n\no Importance values for variables are returned in predict mode when test\n  data contains outcomes as well as variables.\n\no Fixed some bugs in plot.variable().  Thanks to Andy J. Minn for\npointing this out.\n\no Minor modification of PMML representation of RSF forest output to accomodate\n  imputation.  The method of random seed chain recovery has been altered.\n  Note that forests produced with prior releases will have to be\n  regenerated using this release.  We apologize for the inconvenience.\n\n---------------------------------------------------------------------------------\n\nThanks.\n\nubk\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Dear useRs:\n\nRelease 3.0.0 of the randomSurvivalForest, an ensemble tree method for\nthe analysis of right censored survival data,  package is now\navailable.\n\n------------------------------------------",
+      "thread_id": "thread-83f639e0dc16",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-9e137177e74e",
+      "message_id": "<971536df0707311743y201acba8ocaff55d803dd5269@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2007-07-31T20:43:29-04:00",
+      "subject": "[R-pkgs] New R package sqldf",
+      "subject_clean": "New R package sqldf",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "sqldf is an R package for running SQL select\nstatements on one or more R data frames. It is\noptimized for convenience making it useful\nfor ad hoc queries against R data frames.\n\nGiven an SQL select statement whose tables\nare the names of R data frames it:\n\n- sets up the database (by default it transparently\n  sets up an in memory SQLite database using RSQLite;\n  however, MySQL via RMySQL, can be specified as an\n  alternative.  MySQL has not been tested.)\n- imports the data frames found in SQL select\n  statement into the database\n- runs the SQL select statement\n- outputs the result back to a data frame\n- uses a heuristic to assign the appropriate column\n  classes to the result\n- removes the database\n\nso that all the user has to do is issue a one line\nfunction call with one argument, the select\nstatement.\n\nHere is an example which processes an SQL select\nstatement whose functionality is similar to the R\naggregate function.  Note that although the iris\ndataset (which is built into R) uses the name\nSepal.Length the R database interface, DBI, converts\nthat to Sepal_Length.  Just install the sqldf package\nfrom CRAN and type these two lines into R without\nthe > prompts:\n\n> library(sqldf)\n> sqldf(\"select Species, avg(Sepal_Length) from iris group by Species\")\n\n     Species avg(Sepal_Length)\n1     setosa             5.006\n2 versicolor             5.936\n3  virginica             6.588\n\nAs can be seen from the example, there is:\n- no database setup\n- no importing and exporting into the database\n- no coercing of the returned columns to the\n  appropriate class (in most cases)\n\nIt can be used:\n- as an alternate syntax for data frame manipulation\n- learning SQL if you know R\n- learning R if you know SQL\n\nThe sqldf package has a single function, sqldf.  More\ninformation is available by issuing the command ?sqldf\nfrom within R.  More examples and useful links are\navailable at the sqldf home page:\n\nhttp://code.google.com/p/sqldf/",
+      "body_snippet": "sqldf is an R package for running SQL select\nstatements on one or more R data frames. It is\noptimized for convenience making it useful\nfor ad hoc queries against R data frames.\n\nGiven an SQL select st",
+      "thread_id": "thread-9e137177e74e",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-9e137177e74e",
+      "message_id": "<971536df0707311743y201acba8ocaff55d803dd5269@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2007-07-31T20:43:29-04:00",
+      "subject": "[R-pkgs] New R package sqldf",
+      "subject_clean": "New R package sqldf",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "sqldf is an R package for running SQL select\nstatements on one or more R data frames. It is\noptimized for convenience making it useful\nfor ad hoc queries against R data frames.\n\nGiven an SQL select statement whose tables\nare the names of R data frames it:\n\n- sets up the database (by default it transparently\n  sets up an in memory SQLite database using RSQLite;\n  however, MySQL via RMySQL, can be specified as an\n  alternative.  MySQL has not been tested.)\n- imports the data frames found in SQL select\n  statement into the database\n- runs the SQL select statement\n- outputs the result back to a data frame\n- uses a heuristic to assign the appropriate column\n  classes to the result\n- removes the database\n\nso that all the user has to do is issue a one line\nfunction call with one argument, the select\nstatement.\n\nHere is an example which processes an SQL select\nstatement whose functionality is similar to the R\naggregate function.  Note that although the iris\ndataset (which is built into R) uses the name\nSepal.Length the R database interface, DBI, converts\nthat to Sepal_Length.  Just install the sqldf package\nfrom CRAN and type these two lines into R without\nthe > prompts:\n\n> library(sqldf)\n> sqldf(\"select Species, avg(Sepal_Length) from iris group by Species\")\n\n     Species avg(Sepal_Length)\n1     setosa             5.006\n2 versicolor             5.936\n3  virginica             6.588\n\nAs can be seen from the example, there is:\n- no database setup\n- no importing and exporting into the database\n- no coercing of the returned columns to the\n  appropriate class (in most cases)\n\nIt can be used:\n- as an alternate syntax for data frame manipulation\n- learning SQL if you know R\n- learning R if you know SQL\n\nThe sqldf package has a single function, sqldf.  More\ninformation is available by issuing the command ?sqldf\nfrom within R.  More examples and useful links are\navailable at the sqldf home page:\n\nhttp://code.google.com/p/sqldf/",
+      "body_snippet": "sqldf is an R package for running SQL select\nstatements on one or more R data frames. It is\noptimized for convenience making it useful\nfor ad hoc queries against R data frames.\n\nGiven an SQL select st",
+      "thread_id": "thread-9e137177e74e",
+      "thread_depth": 0,
+      "month": "2007-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-830690687440",
+      "subject": "Clusterfly",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-01T17:58:54+02:00",
+      "last_reply": "2007-07-01T17:58:54+02:00",
+      "root_message_id": "msg-830690687440"
+    },
+    {
+      "id": "thread-830690687440",
+      "subject": "Clusterfly",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-01T17:58:54+02:00",
+      "last_reply": "2007-07-01T17:58:54+02:00",
+      "root_message_id": "msg-830690687440"
+    },
+    {
+      "id": "thread-7f763d8d0250",
+      "subject": "Scagnostics - scatterplot diagnostics",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-08T21:10:49+02:00",
+      "last_reply": "2007-07-08T21:10:49+02:00",
+      "root_message_id": "msg-7f763d8d0250"
+    },
+    {
+      "id": "thread-7f763d8d0250",
+      "subject": "Scagnostics - scatterplot diagnostics",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-08T21:10:49+02:00",
+      "last_reply": "2007-07-08T21:10:49+02:00",
+      "root_message_id": "msg-7f763d8d0250"
+    },
+    {
+      "id": "thread-8114efe79ddc",
+      "subject": "ggplot 0.5.4",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-09T11:12:28+02:00",
+      "last_reply": "2007-07-09T11:12:28+02:00",
+      "root_message_id": "msg-8114efe79ddc"
+    },
+    {
+      "id": "thread-8114efe79ddc",
+      "subject": "ggplot 0.5.4",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-09T11:12:28+02:00",
+      "last_reply": "2007-07-09T11:12:28+02:00",
+      "root_message_id": "msg-8114efe79ddc"
+    },
+    {
+      "id": "thread-764363b8dace",
+      "subject": "CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2007-07-09T11:41:55-05:00",
+      "last_reply": "2007-07-09T11:41:55-05:00",
+      "root_message_id": "msg-764363b8dace"
+    },
+    {
+      "id": "thread-764363b8dace",
+      "subject": "CRANberries -- An RSS feed about New and Updated CRAN packages",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2007-07-09T11:41:55-05:00",
+      "last_reply": "2007-07-09T11:41:55-05:00",
+      "root_message_id": "msg-764363b8dace"
+    },
+    {
+      "id": "thread-7c542b26e786",
+      "subject": "New package \"proxy\" for distances and similiarities",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-07-09T15:49:29+02:00",
+      "last_reply": "2007-07-09T15:49:29+02:00",
+      "root_message_id": "msg-7c542b26e786"
+    },
+    {
+      "id": "thread-7c542b26e786",
+      "subject": "New package \"proxy\" for distances and similiarities",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-07-09T15:49:29+02:00",
+      "last_reply": "2007-07-09T15:49:29+02:00",
+      "root_message_id": "msg-7c542b26e786"
+    },
+    {
+      "id": "thread-8c74e4d7c182",
+      "subject": "Reshape version 0.8",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-09T19:23:21+02:00",
+      "last_reply": "2007-07-09T19:23:21+02:00",
+      "root_message_id": "msg-8c74e4d7c182"
+    },
+    {
+      "id": "thread-8c74e4d7c182",
+      "subject": "Reshape version 0.8",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-07-09T19:23:21+02:00",
+      "last_reply": "2007-07-09T19:23:21+02:00",
+      "root_message_id": "msg-8c74e4d7c182"
+    },
+    {
+      "id": "thread-7a69ca0e2bfa",
+      "subject": "package \"relations\" updated",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-07-11T00:49:20+02:00",
+      "last_reply": "2007-07-11T00:49:20+02:00",
+      "root_message_id": "msg-7a69ca0e2bfa"
+    },
+    {
+      "id": "thread-7a69ca0e2bfa",
+      "subject": "package \"relations\" updated",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-07-11T00:49:20+02:00",
+      "last_reply": "2007-07-11T00:49:20+02:00",
+      "root_message_id": "msg-7a69ca0e2bfa"
+    },
+    {
+      "id": "thread-ca522760f416",
+      "subject": "New package: pomp, inference for partially-observed Markov processes",
+      "message_count": 1,
+      "participants": [
+        "Aaron King"
+      ],
+      "started": "2007-07-24T08:05:19-04:00",
+      "last_reply": "2007-07-24T08:05:19-04:00",
+      "root_message_id": "msg-ca522760f416"
+    },
+    {
+      "id": "thread-ca522760f416",
+      "subject": "New package: pomp, inference for partially-observed Markov processes",
+      "message_count": 1,
+      "participants": [
+        "Aaron King"
+      ],
+      "started": "2007-07-24T08:05:19-04:00",
+      "last_reply": "2007-07-24T08:05:19-04:00",
+      "root_message_id": "msg-ca522760f416"
+    },
+    {
+      "id": "thread-9e75b2366e61",
+      "subject": "New versions for the distr-family of packages and of package startupmsg",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2007-07-30T13:35:15+02:00",
+      "last_reply": "2007-07-30T13:35:15+02:00",
+      "root_message_id": "msg-9e75b2366e61"
+    },
+    {
+      "id": "thread-9e75b2366e61",
+      "subject": "New versions for the distr-family of packages and of package startupmsg",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2007-07-30T13:35:15+02:00",
+      "last_reply": "2007-07-30T13:35:15+02:00",
+      "root_message_id": "msg-9e75b2366e61"
+    },
+    {
+      "id": "thread-83f639e0dc16",
+      "subject": "randomSurvivalForest 3.0.0 now available",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2007-07-31T08:03:58-04:00",
+      "last_reply": "2007-07-31T08:03:58-04:00",
+      "root_message_id": "msg-83f639e0dc16"
+    },
+    {
+      "id": "thread-83f639e0dc16",
+      "subject": "randomSurvivalForest 3.0.0 now available",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2007-07-31T08:03:58-04:00",
+      "last_reply": "2007-07-31T08:03:58-04:00",
+      "root_message_id": "msg-83f639e0dc16"
+    },
+    {
+      "id": "thread-9e137177e74e",
+      "subject": "New R package sqldf",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2007-07-31T20:43:29-04:00",
+      "last_reply": "2007-07-31T20:43:29-04:00",
+      "root_message_id": "msg-9e137177e74e"
+    },
+    {
+      "id": "thread-9e137177e74e",
+      "subject": "New R package sqldf",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2007-07-31T20:43:29-04:00",
+      "last_reply": "2007-07-31T20:43:29-04:00",
+      "root_message_id": "msg-9e137177e74e"
+    }
+  ]
+}

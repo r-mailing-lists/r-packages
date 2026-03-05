@@ -1,0 +1,38 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-03",
+  "messages": [
+    {
+      "id": "msg-2181fb09a4c5",
+      "message_id": "<CAP6Varumwiv4MZQs5HeDTiv69Y4_GWXxXJMg8yweCpgW6KgaKQ@mail.gmail.com>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "63ffe6ef883d79df13ebb43477a62200c9e23eee00a2ba2b810a314f9e35a9ac",
+      "date": "2020-03-18T20:35:41-03:00",
+      "subject": "[R-pkgs] hydroPSO: new version 0.5-0 on CRAN",
+      "subject_clean": "hydroPSO: new version 0.5-0 on CRAN",
+      "in_reply_to": "<649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>",
+      "references": [
+        "<649f9b7a-8cec-661d-453b-af6a6a151e8d@gmail.com>"
+      ],
+      "body_plain": "Dear all,\n\nI would bring your attention to the new release of hydroPSO (v0.5-0),\nwhich is on CRAN now: https://cran.r-project.org/package=hydroPSO.\n\n\nAmong its new features stand out:\n\n o Full compatibility with (hydrological/environmental) models\nimplemented as R functions (e.g., TUWmodel, GR4J, etc)\n\n o New vignette showing how to calibrate TUWmodel with hydroPSO:\nhttps://doi.org/10.5281/zenodo.3701902.\n\n o New vignette showing how to calibrate TUWmodel with GR4J (and other\nmodels of the 'airGR' family): https://doi.org/10.5281/zenodo.3712382.\n\n o 'verification'  : now it is fully compatible with R-based models\nand allows parallelisation.\n\n o 'read_results', plot_results', 'read_out  :much faster now due to\nthe use of 'data.table::fread' instead of 'read.table'\n\n o New dataset 'Trancura9414001' with daily time series on P, Temp,\nPET, and Q from 1979 to 2016.\n\n o Package tested against R 4.0.0 (unstable) (2020-03-17 r77992) --\n\"Unsuffered Consequences\", following an imperative request made by\nCRAN.\n\n o All the new features can be read at:\nhttps://cran.r-project.org/web/packages/hydroPSO/NEWS\n\n\nI hope you enjoy it !.\n\n\nMauricio Zambrano-Bigiarini, PhD\n\n=====================================\nDepartment of Civil Engineering\nFaculty of Engineering and Sciences\nUniversidad de La Frontera, Temuco, Chile\nhttp://hzambran.github.io/\n=====================================\nmailto : mauricio.zambrano at ufrontera.cl\nwork-phone : +56 45 259 2812\n=====================================\n\"A people that values its privileges\nabove its principles soon loses both\".\n(Dwight D. Eisenhower)\n=====================================\nLinux user #454569 -- Linux Mint user\n\n-- \nLa informaci?n contenida en este correo electr?nico y cualquier anexo o \nrespuesta relacionada, puede contener datos e informaci?n confidencial y no \npuede ser usada o difundida por personas distintas a su(s) destinatario(s). \nSi usted no es el destinatario de esta comunicaci?n, le informamos que \ncualquier divulgaci?n, distribuci?n o copia de esta informaci?n constituye \nun delito conforme a la ley chilena. Si lo ha recibido por error, por favor \nborre el mensaje y todos sus anexos y notifique al remitente.",
+      "body_snippet": "Dear all,\n\nI would bring your attention to the new release of hydroPSO (v0.5-0),\nwhich is on CRAN now: https://cran.r-project.org/package=hydroPSO.\n\n\nAmong its new features stand out:\n\n o Full compati",
+      "thread_id": "thread-2181fb09a4c5",
+      "thread_depth": 0,
+      "month": "2020-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2181fb09a4c5",
+      "subject": "hydroPSO: new version 0.5-0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2020-03-18T20:35:41-03:00",
+      "last_reply": "2020-03-18T20:35:41-03:00",
+      "root_message_id": "msg-2181fb09a4c5"
+    }
+  ]
+}

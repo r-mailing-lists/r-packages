@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2018-03",
+  "messages": [
+    {
+      "id": "msg-bf2c0f6ac217",
+      "message_id": "<CAKOtKsV7nrihXUL9oqAsN=QD99q0OX9MVAHJ87noQdTLjX2zmg@mail.gmail.com>",
+      "from_name": "marlene marchena",
+      "from_email_hash": "51c8e0edaf952cfb752e3ee290087a359b2780021f9273eb1ab10ff849bee2a8",
+      "date": "2018-03-02T11:16:11+01:00",
+      "subject": "[R-pkgs] release of SCperf 1.1.1 and bullwhipgame packages",
+      "subject_clean": "release of SCperf 1.1.1 and bullwhipgame packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users.\n\nI'm pleased to announce the release of *SCperf*  1.1.1  and *bullwhipgame*\npackages on CRAN.\n\nThe *SCperf* package implements functions for planning and managing\nInventories in a Supply Chain:\n\nhttps://CRAN.R-project.org/package=SCperf\n<https://cran.r-project.org/package=SCperf>\n\nAnd the *bullwhipgame* is a  shiny app demo of the bullwhip effect,  the\nincrease in demand variability along the supply chain. This educational\ngame seeks  to present the dynamics of the distribution of a product and to\nshow typical problems arising from a non-coordinated system:\n\nhttps://CRAN.R-project.org/package=bullwhipgame\n<https://cran.r-project.org/package=bullwhipgame>\n\nThe *bullwhipgame* app has been developed to substitute some related\nfunctions (now deprecated) from the *SCperf* package and it is still in\ndevelopment.  Comments, suggestions, bug report or just want to contribute\nto the project please do not hesitate to contact me.\n\nKind regards,\n\nMarlene Marchena\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users.\n\nI'm pleased to announce the release of *SCperf*  1.1.1  and *bullwhipgame*\npackages on CRAN.\n\nThe *SCperf* package implements functions for planning and managing\nInventories in a Supply",
+      "thread_id": "thread-bf2c0f6ac217",
+      "thread_depth": 0,
+      "month": "2018-03"
+    },
+    {
+      "id": "msg-3a9f2a7db58b",
+      "message_id": "<CAC58_YkNk8wNsn38UUanEprg1xGGRqMb1C6vc-9KS2MzL17Y6Q@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c8d656fb819da8012d5821aea2d81117adec96293c0907599d677f0e82262a42",
+      "date": "2018-03-02T22:29:45+05:30",
+      "subject": "[R-pkgs] WindCurves",
+      "subject_clean": "WindCurves",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all\nHave a look at 'WindCurves' package.\nThe package WindCurves is a tool used to fit the wind turbine power curves.\nIt can be useful for researchers, data analysts/scientist, practitioners,\nstatistians and students working on wind turbine power curves.\n\nThe package and Vignette are available at:\n\nhttps://CRAN.R-project.org/package=WindCurves\n<https://cran.r-project.org/package=WindCurves>\n\nhttps://cran.r-project.org/web/packages/WindCurves/\nvignettes/WindCurves_Info.html\n\nFeedback and proposals for research collaborations are welcomed.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all\nHave a look at 'WindCurves' package.\nThe package WindCurves is a tool used to fit the wind turbine power curves.\nIt can be useful for researchers, data analysts/scientist, practitioners,\nstat",
+      "thread_id": "thread-3a9f2a7db58b",
+      "thread_depth": 0,
+      "month": "2018-03"
+    },
+    {
+      "id": "msg-25248060e1c7",
+      "message_id": "<67AC3BB2-4594-4945-8C4B-E6DD6ACB591E@gmail.com>",
+      "from_name": "Ege Ulgen",
+      "from_email_hash": "64b875a49a250694554517fadb2a0c89b6bb248874202b678b62aed11970308a",
+      "date": "2018-03-12T14:37:01+03:00",
+      "subject": "[R-pkgs] pathfindR: An R Package for Pathway Enrichment Analysis Utilizing Active Subnetworks",
+      "subject_clean": "pathfindR: An R Package for Pathway Enrichment Analysis Utilizing Active Subnetworks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nI would like to introduce our group's new bioinformatics package to you: pathfindR <https://cran.r-project.org/package=pathfindR>\nThis tool is designed to improve pathway enrichment analysis by firstly identifying active subnetworksin differential expression/methylation data using a protein-protein interaction network. It then performs pathway enrichment analysis (Over-Representation Analysis). By utilizing the interaction information, the tool identifies most of the involved pathways.\npathfindR also creates pathway diagrams with the involved genes colored by change values. (this is achieved using the bioconductor package pathview)\nFinally, the package allows for clustering of enriched pathways and establishment of representative pathways. This allows for further abstraction and reduces the complexity of analysis.\nYou can read more about the package and a case study in our pre-print <https://doi.org/10.1101/272450>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\n\nI would like to introduce our group's new bioinformatics package to you: pathfindR <https://cran.r-project.org/package=pathfindR>\nThis tool is designed to improve pathway enrichment analys",
+      "thread_id": "thread-25248060e1c7",
+      "thread_depth": 0,
+      "month": "2018-03"
+    },
+    {
+      "id": "msg-3a9b77289d84",
+      "message_id": "<8c8476aa-df85-5a33-6922-6138b83385fb@gmail.com>",
+      "from_name": "Eric Bohlman",
+      "from_email_hash": "21c61993e1956874f1f730fc67c9e283202f6467ddab66fdb1241f2d20e559c0",
+      "date": "2018-03-14T17:14:26-05:00",
+      "subject": "[R-pkgs] New package ridittools",
+      "subject_clean": "New package ridittools",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package, ridittools, is available on CRAN\n\nDescription: Functions to compute ridit scores of vectors, compute mean\nridits and their standard errors for vectors compared to a reference \nvector,as described in Fleiss (1981, ISBN:0-471-06428-9), and compute\nmeans/SEs for multiple groups in matrices. Data can be either\ncounts or proportions. Emphasis is on ridit analysis of ordered\ncategorical data such as Likert items and pain-rating scales.",
+      "body_snippet": "A new package, ridittools, is available on CRAN\n\nDescription: Functions to compute ridit scores of vectors, compute mean\nridits and their standard errors for vectors compared to a reference \nvector,as",
+      "thread_id": "thread-3a9b77289d84",
+      "thread_depth": 0,
+      "month": "2018-03"
+    },
+    {
+      "id": "msg-c6dad545d52a",
+      "message_id": "<CALv3xzs8u1ynC3zvzAaM=wtTQmx6O+BuaQLzotvZifNHVU-3HQ@mail.gmail.com>",
+      "from_name": "Ruben Arslan",
+      "from_email_hash": "f80994acef1dfb393c86e57bcbac600feeda5ed9d122408c50244a83998c4bcd",
+      "date": "2018-03-23T08:54:52Z",
+      "subject": "[R-pkgs] New package: codebook",
+      "subject_clean": "New package: codebook",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\ncodebook (v. 0.5.8) was just released on CRAN.\nhttps://CRAN.R-project.org/package=codebook\n\nIt uses the metadata/attributes that some other packages add (item labels,\nvalue labels, labelled missings) to automatically generate a codebook that\nis both human- and machine-readable. It combines metadata about the\nvariables with data summaries. Many people will import this kind of\nmetadata already, when importing data from SPSS or Stata files using the\nhaven package.\n\nMy hope was to encourage people to share data and especially\nmachine-readable metadata more often by giving them something that is\nuseful (automating a common, tedious task), so that we can have something\neven more useful in the future (searchable, machine-readable metadata).\n\nA small example and more documentation is here:\nhttps://rubenarslan.github.io/codebook/articles/codebook.html\n\ncodebook automates the following tasks:\n* computing reliabilities (internal consistencies, retest, multilevel) for\npsychological scales\n* summarising the distributions of scales and items graphically and using\ndescriptive statistics\n* combining this information with metadata (such as item labels and\nlabelled values) derived from attributes\n\nTo do so, the package relies on 'rmarkdown' partials, so you can generate\nHTML, PDF, and Word documents, and embed the codebook in a larger document\nproviding context.\n\nCodebooks are also generated as tables (CSV, Excel, etc.) and are invisibly\nembedded as JSON-LD in generated HTML files. JSON-LD for datasets is not\nyet supported by search engines, but hopefully will be.\n\nCritiques, bug reports and enhancement requests are welcome as GitHub\nissues. I'm a social scientist and tested this mostly on survey data. I'm\nsure that shows in some design decisions. I'd be happy to find\ncollaborators who can e.g. fill in my knowledge gaps on metadata and\nontologies.\nhttps://github.com/rubenarslan/codebook/issues\n\nBest,\n\nRuben\n-- \n\nRuben C. Arslan\n\nCenter for Adaptive Rationality\nMax Planck Institute for Human Development\nBerlin, Germany\nhttps://www.mpib-berlin.mpg.de/en/staff/ruben-arslan\nhttps://formr.org\nhttp://www.the100.ci\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\ncodebook (v. 0.5.8) was just released on CRAN.\nhttps://CRAN.R-project.org/package=codebook\n\nIt uses the metadata/attributes that some other packages add (item labels,\nvalue labels, labe",
+      "thread_id": "thread-c6dad545d52a",
+      "thread_depth": 0,
+      "month": "2018-03"
+    },
+    {
+      "id": "msg-3c1bf526e089",
+      "message_id": "<00fb01d3c2aa$267e0be0$737a23a0$@uniovi.es>",
+      "from_name": "Victor Quesada",
+      "from_email_hash": "d90a1263d39d28c048bb45d6c94f47064853b5dc1511a03ae459c9c7c4dc9dfc",
+      "date": "2018-03-23T14:23:34+01:00",
+      "subject": "[R-pkgs] New package nVennR",
+      "subject_clean": "New package nVennR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package, nVennR, is available on CRAN\n\n \n\nDescription: Provides an interface for the nVenn algorithm (Perez-Silva et\nal. 2018) <DOI:10.1093/bioinformatics/bty109> to create approximately\nproportional, n-dimensional Venn and Euler diagrams. There is no limit to\nthe number of sets, although using more than seven takes a long time and is\nhard to interpret. You can check an example for six sets at\n<http://degradome.uniovi.es/cgi-bin/nVenn/nvenn.cgi?uid=2A916BED>.\n\n \n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A new package, nVennR, is available on CRAN\n\n \n\nDescription: Provides an interface for the nVenn algorithm (Perez-Silva et\nal. 2018) <DOI:10.1093/bioinformatics/bty109> to create approximately\nproport",
+      "thread_id": "thread-3c1bf526e089",
+      "thread_depth": 0,
+      "month": "2018-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bf2c0f6ac217",
+      "subject": "release of SCperf 1.1.1 and bullwhipgame packages",
+      "message_count": 1,
+      "participants": [
+        "marlene marchena"
+      ],
+      "started": "2018-03-02T11:16:11+01:00",
+      "last_reply": "2018-03-02T11:16:11+01:00",
+      "root_message_id": "msg-bf2c0f6ac217"
+    },
+    {
+      "id": "thread-3a9f2a7db58b",
+      "subject": "WindCurves",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2018-03-02T22:29:45+05:30",
+      "last_reply": "2018-03-02T22:29:45+05:30",
+      "root_message_id": "msg-3a9f2a7db58b"
+    },
+    {
+      "id": "thread-25248060e1c7",
+      "subject": "pathfindR: An R Package for Pathway Enrichment Analysis Utilizing Active Subnetworks",
+      "message_count": 1,
+      "participants": [
+        "Ege Ulgen"
+      ],
+      "started": "2018-03-12T14:37:01+03:00",
+      "last_reply": "2018-03-12T14:37:01+03:00",
+      "root_message_id": "msg-25248060e1c7"
+    },
+    {
+      "id": "thread-3a9b77289d84",
+      "subject": "New package ridittools",
+      "message_count": 1,
+      "participants": [
+        "Eric Bohlman"
+      ],
+      "started": "2018-03-14T17:14:26-05:00",
+      "last_reply": "2018-03-14T17:14:26-05:00",
+      "root_message_id": "msg-3a9b77289d84"
+    },
+    {
+      "id": "thread-c6dad545d52a",
+      "subject": "New package: codebook",
+      "message_count": 1,
+      "participants": [
+        "Ruben Arslan"
+      ],
+      "started": "2018-03-23T08:54:52+00:00",
+      "last_reply": "2018-03-23T08:54:52+00:00",
+      "root_message_id": "msg-c6dad545d52a"
+    },
+    {
+      "id": "thread-3c1bf526e089",
+      "subject": "New package nVennR",
+      "message_count": 1,
+      "participants": [
+        "Victor Quesada"
+      ],
+      "started": "2018-03-23T14:23:34+01:00",
+      "last_reply": "2018-03-23T14:23:34+01:00",
+      "root_message_id": "msg-3c1bf526e089"
+    }
+  ]
+}

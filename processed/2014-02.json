@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-02",
+  "messages": [
+    {
+      "id": "msg-8999065fef21",
+      "message_id": "<21232.20575.43733.265462@max.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2014-02-03T20:28:47-06:00",
+      "subject": "[R-pkgs] Rcpp 0.11.0",
+      "subject_clean": "Rcpp 0.11.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new release 0.11.0 of Rcpp is now on CRAN, bringing a key new feature as\nwell as a number of enhancements, extensions and and bug fixes to R ---\nplease see the announcement text below.\n\nThe key change is the fact that builds are now effectively 'header-only' and\nno longer require packages to link against a library provided by the Rcpp\npackage. Instead, R's function registration mechanism is used.  This does\nhowever mean that your current packages using Rcpp will break, so you need\nrebuild all packages using Rcpp this one time.  Some details are below.\n\nDirk, on behalf of the Rcpp Core team\n\n\n\n\n===== Summary =====\n\nVersion 0.11.0 of the Rcpp package is now on CRAN and its mirrors.  \n\nThis new release brings a number of new features, most noticably a simplified\nbuild system, as well as improvements to existing features and bugfixes.\n\nComplete details of the changes implemented between the last announcement for\nversion 0.10.0 and this new can be found in the NEWS and ChangeLog files\nwhich are included in the package.\n\n\n\n===== Overview =====\n\nRcpp is an R package and associated C++ library for seamless integration\nbetween C++ and R.  \n\nIt has been described in a Journal of Statistical Software (2011, Vol 40,\nIssue 08) paper (also included in the package as the \"Rcpp-introduction\" pdf\nvignette) and a book \"Seamless R and C++ Integration with Rcpp\" (2013,\nSpringer, useR! Series).\n\nAs of early 2014, Rcpp is used by over 160 other CRAN packages.\n\nSeveral key features of the new 0.11.0 release are described below.\n\n\n\n===== One-time rebuild required =====\n\nBecause of the simplified linking scheme detailed in the next section, and\nthe corresponding removal of the libRcpp.* library, all packages currently\nusing Rcpp need to be reinstalled.\n\nWe provide a simple helper script at\nhttps://github.com/RcppCore/rcpp-logs/blob/master/scripts/showReverseRcppDepends.r\nto identidy which of your currently-installed packages use Rcpp, and need to\nbe rebuilt / reinstalled.\n\n\n\n===== Simpler Building with Rcpp =====\n\nThanks to the 'LinkingTo:' directive, R already instructed the compiler where\nto fine header files when writing code with Rcpp. The package now uses the\nregistration facilities in R (see Section 5.4 in Writing R Extensions). \n\nWith just an 'Imports: Rcpp' in DESCRIPTION along with an explicit import\nstatement in the NAMESPACE file such 'importFrom(Rcpp, evalCpp)' all required\nRcpp code will be properly instantiated without any explicit linking. [ Note\nthat just using 'import(Rcpp)' is not sufficient, but any exported C++\nidentifier should do -- evalCpp is nice and short. ]\n\nThis means that the package no longer provides a user-facing library\nlibRcpp.so (or libRcpp.dylib or libRcpp.dll).  This also implies that a\none-time rebuild is needed as alluded to in the previous section.\n\nThe key benefit is that many package should no longer require the files\nsrc/Makevars and src/Makevars.win in order to link with Rcpp. Mny packages\nwill be able to retire these files. The exception, of course, is the case\nwhere a package links against an external library as eg the RcppArmadillo\npackage> Here, the LAPACK / BLAS / Fortran libraries still need to be\nlinked. However, the corresponding values are also provided by R and the\nexpression becomes a simple 'PKG_LIBS=$(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)'.\n\n\n\n===== Rcpp attributes =====\n\nRcpp attributes were a key innovation in the 0.10.0; they have matured\nfurther and have now become the standard way to build code with Rcpp.  See\nthe dedicated vignette for details.\n\n\n\n==== C++11 Support =====\n\nR 3.1.0, to be released in a few month, will permit compilation using C++11,\nthe newest C++ standard -- including for packages going to CRAN.  Rcpp had\nalready supported 'local' builds using C++11 since version 0.10.3, simply add\n\n   [[Rcpp::plugins(cpp11)]]\n\nand Rcpp attributes takes care of the rest.\n\n\n\n===== Memory management =====\n\nA number of internal data structures have been rewritten.\n\n\n\n===== Links =====\n\nRcpp site:\n    http://www.rcpp.org\n\nRcpp Gallery:\n    http://gallery.rcpp.org\n\nDirk's Rcpp page: \n    http://dirk.eddelbuettel.com/code/rcpp.html\n\nGitHub page: \n    https://github.com/RcppCore/Rcpp\n\nR-forge project page: \n    http://r-forge.r-project.org/projects/rcpp/\n\nGoogle+: \n    https://plus.google.com/b/107029540907667241299/107029540907667241299/posts\n    \n\n\n===== Support =====\n\nQuestions about Rcpp should be directed to the Rcpp-devel mailing list\n    https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\n\nWhile we prefer the mailing list, StackOverflow has also become a frequently\nused resource under the [rcpp] tag:\n    http://stackoverflow.com/questions/tagged/rcpp\n\n\n\nOn behalf of the Rcpp Core team,  \n\n   Dirk Eddelbuettel\n   February 2014\n\n\n\n\n\n\n\n-- \nDirk Eddelbuettel | edd at debian.org | http://dirk.eddelbuettel.com",
+      "body_snippet": "A new release 0.11.0 of Rcpp is now on CRAN, bringing a key new feature as\nwell as a number of enhancements, extensions and and bug fixes to R ---\nplease see the announcement text below.\n\nThe key chan",
+      "thread_id": "thread-8999065fef21",
+      "thread_depth": 0,
+      "month": "2014-02"
+    },
+    {
+      "id": "msg-a1abc81441a9",
+      "message_id": "<52F26665.7050207@decsai.ugr.es>",
+      "from_name": "Christoph Bergmeir",
+      "from_email_hash": "e5e45628f62e44ec6d9435641077b928d3030547edfb50d476f07dcc9e6af6cc",
+      "date": "2014-02-05T17:27:17+01:00",
+      "subject": "[R-pkgs] New package: RoughSets (v1.0-0)",
+      "subject_clean": "New package: RoughSets (v1.0-0)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nwe are happy to announce that a new package, RoughSets, is available on CRAN at\n\nhttp://cran.r-project.org/web/packages/RoughSets/index.html\n\nIt is a comprehensive package for rough set theory and fuzzy rough set theory, with a detailed manual and many demos showing it's use. Here is the description:\n\nThis package provides comprehensive implementations of the rough set theory (RST) and the fuzzy rough set theory (FRST), and integrates these two theories into a single package. It provides implementations, not only for the basic concepts of RST and FRST, but also most common methods based on them for handling some tasks such as discretization, feature selection, instance selection, rule induction, and prediction. RST was introduced by Zdzislaw Pawlak in 1982 as a sophisticated mathematical tool based on indiscernibility relations to model and process imprecise or incomplete information. It works on symbolic-valued datasets for tackling the data analysis problems. By using the indiscernibility relation for objects/instances, RST does not require additional parameters to analyze the data. FRST is an extension of RST. The FRST combines concepts of vagueness and indiscernibility that are expressed with fuzzy sets (as proposed by Zadeh, in 1965) and RST.\n\nAny feedback is clearly welcome.\n\nKind regards,\nChristoph\n\n-- \nChristoph Bergmeir\ne-mail: c.bergmeir at decsai.ugr.es\nGrupo SCI2S, DiCITS Lab          (http://sci2s.ugr.es/DiCITS)\nDpto. de Ciencias de la Computacion e Inteligencia Artificial\nE.T.S. Ingenierias de Informatica y Telecomunicacion\nUniversidad de Granada\n18071 - GRANADA (Spain)",
+      "body_snippet": "Dear R users,\n\nwe are happy to announce that a new package, RoughSets, is available on CRAN at\n\nhttp://cran.r-project.org/web/packages/RoughSets/index.html\n\nIt is a comprehensive package for rough set",
+      "thread_id": "thread-a1abc81441a9",
+      "thread_depth": 0,
+      "month": "2014-02"
+    },
+    {
+      "id": "msg-2d284aba75f1",
+      "message_id": "<CAMy00i2vHEZqWeHAprAXhad97eiuLMzPoLeEMrOiyD=OhtTGbg@mail.gmail.com>",
+      "from_name": "Leonardo Di Donato",
+      "from_email_hash": "d6fdfbe4a87e08c33a4437d04153f2b72e7f190096f3b642a3abc3ff658579b3",
+      "date": "2014-02-26T12:00:16+01:00",
+      "subject": "[R-pkgs] new package: hrr version 1.0.1",
+      "subject_clean": "new package: hrr version 1.0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nas I often have to visually divide my R output into blocks, especially\nwhen I create R executable scripts, I created hrr in the hope that\nthis simple package might come in handy to you.\nI released it to CRAN today.\n\nIt is a simple package to create and print fully customisable\nhorizontal rules that fits your terminal windows width.\nIt provides two functions:\n\n- `hr` function to create and print horizontal rules\n- `ncols` function to detect the number of terminal window columns and\noptionally set the `width` option\n\nLink to the package: http://cran.r-project.org/web/packages/hrr/index.html\n\nIts source code is located at https://github.com/leodido/hrr and issue\ntracker at https://github.com/leodido/hrr/issues.\n\nPlease contact me (leodidonato at gmail.com) with any comments,\nsuggestions, and/or\nquestions.\n\nRegards,\n--\nLeonardo Di Donato",
+      "body_snippet": "Dear R users,\n\nas I often have to visually divide my R output into blocks, especially\nwhen I create R executable scripts, I created hrr in the hope that\nthis simple package might come in handy to you.",
+      "thread_id": "thread-2d284aba75f1",
+      "thread_depth": 0,
+      "month": "2014-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8999065fef21",
+      "subject": "Rcpp 0.11.0",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2014-02-03T20:28:47-06:00",
+      "last_reply": "2014-02-03T20:28:47-06:00",
+      "root_message_id": "msg-8999065fef21"
+    },
+    {
+      "id": "thread-a1abc81441a9",
+      "subject": "New package: RoughSets (v1.0-0)",
+      "message_count": 1,
+      "participants": [
+        "Christoph Bergmeir"
+      ],
+      "started": "2014-02-05T17:27:17+01:00",
+      "last_reply": "2014-02-05T17:27:17+01:00",
+      "root_message_id": "msg-a1abc81441a9"
+    },
+    {
+      "id": "thread-2d284aba75f1",
+      "subject": "new package: hrr version 1.0.1",
+      "message_count": 1,
+      "participants": [
+        "Leonardo Di Donato"
+      ],
+      "started": "2014-02-26T12:00:16+01:00",
+      "last_reply": "2014-02-26T12:00:16+01:00",
+      "root_message_id": "msg-2d284aba75f1"
+    }
+  ]
+}

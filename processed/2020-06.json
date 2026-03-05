@@ -1,0 +1,146 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-06",
+  "messages": [
+    {
+      "id": "msg-99b3e3f81fec",
+      "message_id": "<CAOsNuxCjVm+eRFnK+=7s1PuG7_Nc1UtFBAzgmpj2tgsug=kaLw@mail.gmail.com>",
+      "from_name": "Sebastian Martin Krantz",
+      "from_email_hash": "118aa9651db99100ce65bad60e8aca913362b1b37783626666e2044a6f11a716",
+      "date": "2020-06-01T00:33:01+02:00",
+      "subject": "[R-pkgs] collapse package: Advanced and Fast Data Transformation in R",
+      "subject_clean": "collapse package: Advanced and Fast Data Transformation in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users, with some delay I would like to make you aware of the recent\nCRAN release of *collapse* (https://CRAN.R-project.org/package=collapse), a\nlarge new C/C++ based package for advanced and high-performance general\npurpose data transformation in R.\n\n*collapse* has 2 main objectives:\n\n1. To facilitate complex data transformation and exploration tasks in R.\n*(In particular grouped and weighted statistical computations, advanced\naggregation of mixed-type data, advanced transformations of time-series and\npanel-data, and the manipulation of lists)*\n\n2. To help make R code fast, flexible, parsimonious and programmer\nfriendly.\n*(Providing order of magnitude performance improvements via extensive use\nof C/C++ and highly optimized R code, broad object orientation and\ninfrastructure for grouped programming)*\n\n*collapse*'s main innovation to service these objectives is the\nintroduction of a comprehensive set of fast generic functions and\ntransformation operators, with methods for all standard R objects written\nin C++.\n\nCurrently *collapse* provides 13 fast statistical functions (`fmean`,\n`fmedian`, `fmode`, `fsum`, `fprod`, `fsd`, `fvar`, `fmin`, `fmax`,\n`ffirst`, `flast`, `fNobs` and `fNdistinct`) supporting grouped and\nweighted computations on vectors, matrices and data.frames, and 8\nspecialized vector-valued functions and associated transformation operators\n(`fscale/STD`, `fbetween/B`, `fwithin/W`, `fHDbetween/HDB`,\n`fHDwithin/HDW`, `flag/L/F`, `fdiff/D/Dlog` and `fgrowth/G`) particularly\nuseful for the transformation of time-series and panel-data. Furthermore\nthe function `collap` painlessly handles complex aggregations of mixed-type\ndata, and the function `qsu` computes fast (panel-) summary statistics.\n\nTogether with these functions, *collapse* also attempts to formalize and\nspeed up C++ based grouped programming in R: The function `GRP` creates\ngrouping objects which can be passed to the `g` argument of the above\nfunctions. This eliminates all time spent on grouping when performing\nseveral computations over the same groups! The `TRA` function also exists\nfor grouped replacing and sweeping out of any computed statistics.\n\nTo round things off, *collapse* provides full sets of functions for very\nfast manipulation of data.frames, fast ordering, fast factor generation,\nfast conversions between common data objects, and for recursive list\nprocessing (such as the function `unlist2d` which creates a tidy data.frame\nfrom a nested list of heterogeneous data objects).\n\nTo enhance compatibility with existing frameworks, *collapse* functions\nprovide methods for *dplyr* grouped tibbles and *plm* classes for\npanel-data (pseries and pdata.frame). *data.table*'s are also supported by\nall functions. These methods allow for easy integration of *collapse*'s\nfast functions into any of the workflows with these packages. The default\nmethods for transformation functions like `fscale` or `flag` can also\nhandle most time-series classes. In general attributes are preserved as\nmuch as possible in all *collapse* computations.\n\nRegarding performance: *collapse* seems to be the fastest R package for a\ngood share of the functionality it offers. Sizable performance gains can be\nrealized over packages like *dplyr* or *data.table* for various grouped\ncomputations. The emphasis is on C++, and R code employed is carefully\nmicro-optimized, so a *collapse* script typically evaluates significantly\nfaster than, say, a *dplyr* script doing the same thing. Some benchmarks\nare in the vignettes.\n\n*collapse* also realizes an innovative approach to documentation.\nInstalling the package and calling `help(\"collapse-documentation\")` brings\nup a full hierarchically structured documentation. The introductory\nvignette also introduces all main features in a systematic way.\n\nAt this point, *collapse* 1.2.1 is already a quite mature package with a\nstable user API, passing repeated checks of R and C++ code and > 5600 unit\ntests on all supported operating systems. The package will continue to\nreceive active maintenance and development.\n\nI hope that the availability of *collapse* would lead not only to faster\ndata science, but especially to faster and richer development of complex\nstatistical techniques. I welcome initiatives of like-minded developers\nwilling to speed up grouped programming in R via C++, and encourage the use\nof the *collapse* API for such endeavors. For any issues, contributions,\ncomments or suggestions, use github or send me an e-mail.\n\nBest regards,\n\nSebastian\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users, with some delay I would like to make you aware of the recent\nCRAN release of *collapse* (https://CRAN.R-project.org/package=collapse), a\nlarge new C/C++ based package for advanced and hi",
+      "thread_id": "thread-99b3e3f81fec",
+      "thread_depth": 0,
+      "month": "2020-06"
+    },
+    {
+      "id": "msg-3c113378037c",
+      "message_id": "<DB7PR04MB4714A8BB6BF07B57FE04B59CB6840@DB7PR04MB4714.eurprd04.prod.outlook.com>",
+      "from_name": "EGIDI LEONARDO",
+      "from_email_hash": "bd073223a05bc1228c8e550eb18ae0806f766cac7c3b09f84e44b55fc05599bc",
+      "date": "2020-06-07T12:49:18Z",
+      "subject": "[R-pkgs] R: pivmet 0.3.0",
+      "subject_clean": "R: pivmet 0.3.0",
+      "in_reply_to": "<DB7PR04MB4714DDBBE318A4F7640A12B3B6860@DB7PR04MB4714.eurprd04.prod.outlook.com>",
+      "references": [
+        "<DB7PR04MB4714DDBBE318A4F7640A12B3B6860@DB7PR04MB4714.eurprd04.prod.outlook.com>"
+      ],
+      "body_plain": "Dear R users,\n\npivmet 0.3.0 for pivotal relabelling in Bayesian Mixture Models and Kmeans clustering with pivotal seeding is on CRAN .\nThe new updated version includes the following new features:\n\n\n  *   multivariate mixtures\n  *   bayesplot plots now available and linked to the package\n  *   Stan divergences and diagnostics\n  *   updated vignette\n\nCRAN: https://CRAN.R-project.org/package=pivmet<https://cran.r-project.org/package=pivmet>\nGithub: https://github.com/LeoEgidi/pivmet\n\nCheers,\n\nLeonardo Egidi\nUniversity of Trieste\n\n\n\n\n________________________________\nDa: EGIDI LEONARDO\nInviato: venerd? 5 giugno 2020 17:40\nA: r-packages at r-project.org <r-packages at r-project.org>\nOggetto: pivmet 0.3.0\n\nDear R users,\n\npivmet 0.3.0 for pivotal relabelling in Bayesian Mixture Models and Kmeans clustering with pivotal seeding is on CRAN .\nThe new updated version includes the following new features:\n\n\n  *   multivariate mixtures\n  *   bayesplot plots now available and linked to the package\n  *   Stan divergences and diagnostics\n  *   updated vignette\n\nCRAN: https://cran.r-project.org/web/packages/pivmet/index.html\nGithub: https://github.com/LeoEgidi/pivmet\n\nCheers,\n\nLeonardo Egidi\nUniversity of Trieste\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\npivmet 0.3.0 for pivotal relabelling in Bayesian Mixture Models and Kmeans clustering with pivotal seeding is on CRAN .\nThe new updated version includes the following new features:\n\n\n  ",
+      "thread_id": "thread-3c113378037c",
+      "thread_depth": 0,
+      "month": "2020-06"
+    },
+    {
+      "id": "msg-171f8deb64be",
+      "message_id": "<4E58D00B-0A44-47EA-810F-9EB09EDC02D2@act.ulaval.ca>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "45bec8795c3c1834c77b8fcba129553a5bcdb557e60c16ce9c33f2f4e48addc1",
+      "date": "2020-06-08T14:46:08Z",
+      "subject": "[R-pkgs] 3.0-0 milestone for actuar",
+      "subject_clean": "3.0-0 milestone for actuar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs and developeRs,\n\nWe are proud to announce that version 3.0-0 of actuar is now available on CRAN.\n\nThis newest release further extends support of the package for heavy tail and extreme value size distributions. It also introduces a package API, so that developers may easily integrate our C code into their own package.",
+      "body_snippet": "Dear useRs and developeRs,\n\nWe are proud to announce that version 3.0-0 of actuar is now available on CRAN.\n\nThis newest release further extends support of the package for heavy tail and extreme value",
+      "thread_id": "thread-171f8deb64be",
+      "thread_depth": 0,
+      "month": "2020-06"
+    },
+    {
+      "id": "msg-7ae3155f4961",
+      "message_id": "<CAB+AFnL4HigGrUeZeSCEhayfkGW2tSBL0d9FS+zjNo+qop+3sQ@mail.gmail.com>",
+      "from_name": "Jiena McLellan",
+      "from_email_hash": "c8f0091f554cc4c4f89a025e206b1aa3ef1f10bf045846108744a3c4ec10aa43",
+      "date": "2020-06-27T16:10:26-04:00",
+      "subject": "[R-pkgs] forestry v0.1.0 on CRAN",
+      "subject_clean": "forestry v0.1.0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "R Users,\n\nI?m writing to introduce a new package, forestry. This package offers a\nseries of utility functions to help with reshaping the hierarchy of data\ntree, and reform the structure of data tree.\n\nIt is particularly useful in these following ways:\n\n1. Reshape tree data then convert to JSON to fit the (nested) JSON format\nof your htmlwidget.\n2. Manipulate data across a desired level. For example, get `cumsum` data\nacross a desired level in data tree.\n\nHopefully you find this useful. Please feel free to reach out with feedback\nor questions.\n\nCRAN: https://cran.r-project.org/web/packages/forestry/index.html\nGithub: https://github.com/jienagu/forestry\n\nBest Regards,\nJiena\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R Users,\n\nI?m writing to introduce a new package, forestry. This package offers a\nseries of utility functions to help with reshaping the hierarchy of data\ntree, and reform the structure of data tree.\n",
+      "thread_id": "thread-7ae3155f4961",
+      "thread_depth": 0,
+      "month": "2020-06"
+    },
+    {
+      "id": "msg-881f79ac34b4",
+      "message_id": "<CAC58_Y=zJDBJkYG_R9RLbXQhYM33LrMkrkjNwYi3Vd1VpCArXw@mail.gmail.com>",
+      "from_name": "Neeraj Dhanraj",
+      "from_email_hash": "c2a2ce06aa08067a2aa9eda91e60932b368cebe6ac273915a29d6f4d6c00d62f",
+      "date": "2020-06-29T21:48:32+05:30",
+      "subject": "[R-pkgs] ForecastTB package on CRAN",
+      "subject_clean": "ForecastTB package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nI am glad to share a new R package, named 'ForecastTB'. It is an automated\ntestbench to compare the performance of forecasting methods for univariate\ntime series.\n\nThe details are as follows:\n\nCRAN: https://CRAN.R-project.org/package=ForecastTB\n<https://cran.r-project.org/package=ForecastTB>\nDetails:\nhttps://towardsdatascience.com/a-tool-to-ease-and-reproduce-the-univariate-time-series-forecast-prediction-analysis-bd9ffc14a3a\n\nI hope that you will find this useful and feel free to share your thoughts\nand feedback.\n\nRegards,\n-- \n\n*Neeraj Dhanraj Bokde *\nPostdoctoral Researcher\nPh.D., M.E.\n\nMobil: +45 5222 6500\nMail: neerajdhanraj at eng.au.dk\n\n*Department of Engineering*\nAarhus University\nInge Lehmanns Gade 10\nDK-8000 Aarhus C\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi All,\n\nI am glad to share a new R package, named 'ForecastTB'. It is an automated\ntestbench to compare the performance of forecasting methods for univariate\ntime series.\n\nThe details are as follows:",
+      "thread_id": "thread-881f79ac34b4",
+      "thread_depth": 0,
+      "month": "2020-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-99b3e3f81fec",
+      "subject": "collapse package: Advanced and Fast Data Transformation in R",
+      "message_count": 1,
+      "participants": [
+        "Sebastian Martin Krantz"
+      ],
+      "started": "2020-06-01T00:33:01+02:00",
+      "last_reply": "2020-06-01T00:33:01+02:00",
+      "root_message_id": "msg-99b3e3f81fec"
+    },
+    {
+      "id": "thread-3c113378037c",
+      "subject": "R: pivmet 0.3.0",
+      "message_count": 1,
+      "participants": [
+        "EGIDI LEONARDO"
+      ],
+      "started": "2020-06-07T12:49:18+00:00",
+      "last_reply": "2020-06-07T12:49:18+00:00",
+      "root_message_id": "msg-3c113378037c"
+    },
+    {
+      "id": "thread-171f8deb64be",
+      "subject": "3.0-0 milestone for actuar",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2020-06-08T14:46:08+00:00",
+      "last_reply": "2020-06-08T14:46:08+00:00",
+      "root_message_id": "msg-171f8deb64be"
+    },
+    {
+      "id": "thread-7ae3155f4961",
+      "subject": "forestry v0.1.0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Jiena McLellan"
+      ],
+      "started": "2020-06-27T16:10:26-04:00",
+      "last_reply": "2020-06-27T16:10:26-04:00",
+      "root_message_id": "msg-7ae3155f4961"
+    },
+    {
+      "id": "thread-881f79ac34b4",
+      "subject": "ForecastTB package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Neeraj Dhanraj"
+      ],
+      "started": "2020-06-29T21:48:32+05:30",
+      "last_reply": "2020-06-29T21:48:32+05:30",
+      "root_message_id": "msg-881f79ac34b4"
+    }
+  ]
+}

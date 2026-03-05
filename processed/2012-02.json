@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-02",
+  "messages": [
+    {
+      "id": "msg-c40755573652",
+      "message_id": "<d5cccd19fb48bb26a5502ca0429bdfff@ulrik.uio.no>",
+      "from_name": "Magnus Dehli Vigeland",
+      "from_email_hash": "40b2b3bc6336992360200fd7fe16f71e203cedd3490f18bf79c719ac92d24dc4",
+      "date": "2012-02-03T12:24:53+01:00",
+      "subject": "[R-pkgs] Major update: paramlink version 0.6-1",
+      "subject_clean": "Major update: paramlink version 0.6-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\n I'd like to introduce the paramlink package, offering parametric \n linkage analysis in R, as well as other likelihood-based pedigree \n analyses.\n While a rudimentary version of the package has existed for a while, it \n was never properly introduced to this forum. The present version is a \n major update with new and improved functions.\n\n Features:\n * Singlepoint LOD scores for simple/complex/inbred pedigrees \n (implementing the Elston-Stewart algorithm). Allows partial genotypes \n (i.e. with one missing allele)\n * Multipoint analysis is provided through a wrapper for MERLIN. The \n wrapper creates all necessary files automatically, and makes it easy to \n re-run analysis under different models or with subsets of pedigree \n members/markers.\n * Power analysis for linkage (implementing the simulation algorithm of \n SLINK).\n * Nice pedigree plots produced by importing the kinship2 package. \n Includes flexible plotting of marker genotypes.\n * LOD score plots.\n * Reads and writes ped/map/dat/freq/model files in MERLIN format.\n * Computation of genotype probability distributions, unconditional or \n conditional on partial marker data:\n    - For a single marker, the joint genotype distribution of any number \n of family members.\n    - For a single individual, the joint genotype distribution of two \n linked markers.\n * Many utility functions for creating/modifying pedigrees. This is \n usually quicker than writing pedigree files from scratch in a text \n editor.\n\n There is a vignette with an introduction to the main features: \n http://cran.r-project.org/web/packages/paramlink/vignettes/paramlink.pdf\n\n Feedback, bug reports and feature requests are most welcome.\n\n Regards,\n Magnus\n\n-- \n Magnus Dehli Vigeland, PhD\n Department of Medical Genetics\n University of Oslo\n Norway\n\n E-mail: magnusdv at medisin.uio.no\n Phone: +47 22 11 98 79",
+      "body_snippet": "Dear all,\n\n I'd like to introduce the paramlink package, offering parametric \n linkage analysis in R, as well as other likelihood-based pedigree \n analyses.\n While a rudimentary version of the package",
+      "thread_id": "thread-c40755573652",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-546a04ed6616",
+      "message_id": "<CAHHjBM6xXeJ2WJiGjPZhkxD8+N=Q0xOYuG_=RzU-mQeUWYF1Sw@mail.gmail.com>",
+      "from_name": "robin hankin",
+      "from_email_hash": "53ec16b04ed8adaf46925b139567c8ea5f9e6012a47d351f63674e036ad02e86",
+      "date": "2012-02-14T10:26:45+13:00",
+      "subject": "[R-pkgs] new package on CRAN: multivator",
+      "subject_clean": "new package on CRAN: multivator",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list,\n\nThe new package 'multivator' is now available on CRAN.  This presents\na multivariate generalization of the emulator package.\n\nThe corresponding JSS article is:\n\nRobin K. S. Hankin (2012),  \"Introducing multivator: A Multivariate Emulator\",\n Journal of Statistical Software, 46(8), 1-20.\n   URL http://www.jstatsoft.org/v46/i08/\n\n\nbest wishes\n\nRobin\n\n\n\n-- \nRobin Hankin\nUncertainty Analyst\nhankin.robin at gmail.com",
+      "body_snippet": "Dear list,\n\nThe new package 'multivator' is now available on CRAN.  This presents\na multivariate generalization of the emulator package.\n\nThe corresponding JSS article is:\n\nRobin K. S. Hankin (2012), ",
+      "thread_id": "thread-546a04ed6616",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-4b767de8c102",
+      "message_id": "<CAH9coKZ0hKsQYJrrikUj3Kiy3oHHo7oXLWgdsQQ7oH5MXGwSnA@mail.gmail.com>",
+      "from_name": "Peter Solymos",
+      "from_email_hash": "3e4e5c37645041a11f505cbd9ee9456181aeea94ae29ebbc2f9032bc9b3633e1",
+      "date": "2012-02-14T10:09:20-07:00",
+      "subject": "[R-pkgs] New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
+      "subject_clean": "New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am happy to introduce the next release of the *dclone* package (see\nR Journal, 2(2): 29-37, 2010) which now includes a suite of functions\nfor parallel computations:\n\n- see functions parJagsModel, parUpdate, parCodaSamples using 'snow'\ntype clusters; and the\n- jags.parfit function that can be used with 'snow' type clusters or\nmultiple cores.\n- iterative model fitting with the data cloning algorithm can exploit\nvarious types of parallelism (parallel chains, 'size' balancing or the\ntwo combined) through the dc.parfit function using JAGS, WinBUGS or\nOpenBUGS.\n- JAGS related parallel functions can safely handle RNGs even for\nlarge numbers of parallel chains using the \"lecuyer\" JAGS module.\n\nThe *dcmle* package defines S4 classes around infrastructure provided\nby the dclone package to make package development with data cloning\nfor hierarchical models easy as a breeze.\n\nThe testing suite of the two packages now includes 30 examples (see\nlistDcExamples() ).\n\nlibrary(dcmle)\nsourceDcExample(\"seeds\")\ncl <- makePSOCKcluster(3)\nparLoadModule(\"glm\")\nm <- dcmle(seeds, n.clones=c(1,2,4), cl=cl, partype=\"parchains\")\nstopCluster(cl)\nm\n\nI am grateful for the feedback and support provided by a growing user\nbase. Special thanks to Martyn Plummer for exposing RNG handling in\nrjags for better integration, and to Khurram Nadeem for catching the\nmost annoying bugs on the test run.\n\nCheers,\n\nPeter\n\nPeter Solymos\nAlberta Biodiversity Monitoring Institute\nand Boreal Avian Modelling project\nDepartment of Biological Sciences\nCW 405, Biological Sciences Bldg\nUniversity of Alberta\nEdmonton, Alberta, T6G 2E9, Canada\nPhone: 780.492.8534\nFax: 780.492.7635\nemail <- paste(\"solymos\", \"ualberta.ca\", sep = \"@\")\nhttp://www.abmi.ca\nhttp://www.borealbirds.ca\nhttp://sites.google.com/site/psolymos",
+      "body_snippet": "Dear R Community,\n\nI am happy to introduce the next release of the *dclone* package (see\nR Journal, 2(2): 29-37, 2010) which now includes a suite of functions\nfor parallel computations:\n\n- see functio",
+      "thread_id": "thread-4b767de8c102",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-a42b51a8d938",
+      "message_id": "<4F4416F4.2010809@truecluster.com>",
+      "from_name": "Jens Oehlschägel",
+      "from_email_hash": "a80c35d696d9821fe13568d7832e4175b24fc29fe0387be26ac995214f63c354",
+      "date": "2012-02-21T23:13:08+01:00",
+      "subject": "[R-pkgs] new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
+      "subject_clean": "new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-Core team,\nDear Rcpp team and other package teams,\nDear R users,\n\nThe new package 'bit64' is available on CRAN for beta-testing and \ncode-reviewing.\n\nPackage 'bit64' provides fast serializable S3 atomic 64bit (signed) \nintegers that can be used in vectors, matrices, arrays and data.frames. \nMethods are available for coercion from and to logicals, integers, \ndoubles, characters as well as many elementwise and summary functions.\n\nPackage 'bit64' has the following advantages over package 'int64' (which \nwas sponsored by Google):\n- true atomic vectors usable with length, dim, names etc.\n- only S3, not S4 class system used to dispatch methods\n- less RAM consumption by factor 7 (under 64 bit OS)\n- faster operations by factor 4 to 2000 (under 64 bit OS)\n- no slow-down of R's garbage collection (as caused by the pure \nexistence of 'int64' objects)\n- pure GPL, no copyrights from transnational commercial company\n\nWhile the advantage of the atomic S3 design over the complicated S4 \nobject design is obvious, it is less obvious that an external package is \nthe best way to enrich R with 64bit integers. An external package will \nnot give us literals such as 1LL or directly allow us to address larger \nvectors than possible with base R. But it allows us to properly address \nlarger vectors in other packages such as 'ff' or 'bigmemory' and it \nallows us to properly work with large surrogate keys from external \ndatabases. An external package realizing just one data type also makes a \nperfect test bed to play with innovative performance enhancements. \nPerformance tuned sorting and hashing are planned for the next release, \nwhich will give us fast versions of sort, order, merge, duplicated, \nunique, and table - for 64bit integers.\n\nFor those who still hope that R's 'integer' will be 64bit some day, here \nis my key learning: migrating R's 'integer' from 32 to 64 bit would be \nRAM expensive. It would most likely require to also migrate R's 'double' \nfrom 64 to 128 bit - in order to again have a data type to which we can \nlossless coerce. The assumption that 'integer' is a proper subset of \n'double' is scattered over R's semantics. We all expect that binary and \nn-ary functions such as '+' and 'c' do return 'double' and do not \ndestroy information. With solely extending 64bit integers but not 128bit \ndoubles, we have semantic changes potentially disappointing such \nexpectations: integer64+double returns integer64 and does kill decimals. \nI did my best to make operations involving integer64 consistent and \nnumerically stable - please consult the documentation at ?bit64 for details.\n\nSince this package is 'at risk' to create a lot of dependencies from \nother packages, I'd appreciate serious  beta-testing and also \ncode-review, ideally from the R-Core team. Please check the \n'Limitations' sections at the help page and the numerics involving \"long \ndouble\" in C. If the conclusion is that this should be better done in \nBase R - I happly donate the code and drop this package. If we have to \ngo with an external package for 64bit integers, it would be great if \nthis work could convince the Rcpp team including Romain about the \nadvantages of this approach. Shouldn't we join forces here?\n\nBest regards\n\nJens Oehlschl?gel\nMunich, 21.2.2012",
+      "body_snippet": "Dear R-Core team,\nDear Rcpp team and other package teams,\nDear R users,\n\nThe new package 'bit64' is available on CRAN for beta-testing and \ncode-reviewing.\n\nPackage 'bit64' provides fast serializable ",
+      "thread_id": "thread-a42b51a8d938",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-7274eaefe95a",
+      "message_id": "<2E564738-5A6E-428B-9A44-77FEFF9057B7@imperial.ac.uk>",
+      "from_name": "Federico Calboli",
+      "from_email_hash": "a8bbf369f348bd87d0af37612627264a6c22cc2852a56c36e1457f3a5c80f6d6",
+      "date": "2012-02-29T14:52:49Z",
+      "subject": "[R-pkgs] MultiPhen 0.3 is available on CRAN",
+      "subject_clean": "MultiPhen 0.3 is available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\na new version of MultiPhen (0.3) is available on CRAN, and will be available to a mirror near you soon. \n\n*Please upgrade* because this release is a bug fix release. A new version, with improvements in the output and more useful error messages is basically ready, but I will wait to release it until next week to add other possible improvements.\n\nFor all asking for the related paper, Paul should be ready with the final draft 'soon'.\n\nCheers\n\nFederico\n\n--\nFederico C. F. Calboli\nNeuroepidemiology and Ageing Research\nImperial College, St. Mary's Campus\nNorfolk Place, London W2 1PG\n\nTel +44 (0)20 75941602   Fax +44 (0)20 75943193\n\nf.calboli [.a.t] imperial.ac.uk\nf.calboli [.a.t] gmail.com",
+      "body_snippet": "Dear All,\n\na new version of MultiPhen (0.3) is available on CRAN, and will be available to a mirror near you soon. \n\n*Please upgrade* because this release is a bug fix release. A new version, with imp",
+      "thread_id": "thread-7274eaefe95a",
+      "thread_depth": 0,
+      "month": "2012-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c40755573652",
+      "subject": "Major update: paramlink version 0.6-1",
+      "message_count": 1,
+      "participants": [
+        "Magnus Dehli Vigeland"
+      ],
+      "started": "2012-02-03T12:24:53+01:00",
+      "last_reply": "2012-02-03T12:24:53+01:00",
+      "root_message_id": "msg-c40755573652"
+    },
+    {
+      "id": "thread-4b767de8c102",
+      "subject": "New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
+      "message_count": 1,
+      "participants": [
+        "Peter Solymos"
+      ],
+      "started": "2012-02-14T10:09:20-07:00",
+      "last_reply": "2012-02-14T10:09:20-07:00",
+      "root_message_id": "msg-4b767de8c102"
+    },
+    {
+      "id": "thread-546a04ed6616",
+      "subject": "new package on CRAN: multivator",
+      "message_count": 1,
+      "participants": [
+        "robin hankin"
+      ],
+      "started": "2012-02-14T10:26:45+13:00",
+      "last_reply": "2012-02-14T10:26:45+13:00",
+      "root_message_id": "msg-546a04ed6616"
+    },
+    {
+      "id": "thread-a42b51a8d938",
+      "subject": "new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschägel"
+      ],
+      "started": "2012-02-21T23:13:08+01:00",
+      "last_reply": "2012-02-21T23:13:08+01:00",
+      "root_message_id": "msg-a42b51a8d938"
+    },
+    {
+      "id": "thread-7274eaefe95a",
+      "subject": "MultiPhen 0.3 is available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Federico Calboli"
+      ],
+      "started": "2012-02-29T14:52:49+00:00",
+      "last_reply": "2012-02-29T14:52:49+00:00",
+      "root_message_id": "msg-7274eaefe95a"
+    }
+  ]
+}

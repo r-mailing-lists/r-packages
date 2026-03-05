@@ -1,0 +1,38 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2015-10",
+  "messages": [
+    {
+      "id": "msg-50edebfe06c1",
+      "message_id": "<5612A3AF.7070507@gmail.com>",
+      "from_name": "Emmanuel Blondel",
+      "from_email_hash": "eaaf2bdcbbb04c4bd02dba805d0187b0e9df3b55e277d977b19556bdc8ac488f",
+      "date": "2015-10-05T18:22:07+02:00",
+      "subject": "[R-pkgs] cleangeo - Cleaning Geometries from Spatial Objects",
+      "subject_clean": "cleangeo - Cleaning Geometries from Spatial Objects",
+      "in_reply_to": "<560D05CE.4070408@gmail.com>",
+      "references": [
+        "<560D05CE.4070408@gmail.com>"
+      ],
+      "body_plain": "Dear all,\n\nI've published a new package in CRAN named \"cleangeo\", that aims to \nfacilitate the cleaning of geometries from spatial objects. cleangeo was \ninitially born from some assistance provided to users that were facing \nissues in processing spatial data in R (see the original post at \nhttp://gis.stackexchange.com/questions/113964/fixing-orphaned-holes-in-r).\n<https://github.com/eblondel/cleangeo>\nA presentation of the package including a small tutorial is available \nat: \nhttp://fr.slideshare.net/EmmanuelBlondel/cleangeo-cleaning-geometries-from-spatial-objects-in-r\nThe project page is available at: https://github.com/eblondel/cleangeo\n\nBest,\nEmmanuel Blondel",
+      "body_snippet": "Dear all,\n\nI've published a new package in CRAN named \"cleangeo\", that aims to \nfacilitate the cleaning of geometries from spatial objects. cleangeo was \ninitially born from some assistance provided t",
+      "thread_id": "thread-50edebfe06c1",
+      "thread_depth": 0,
+      "month": "2015-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-50edebfe06c1",
+      "subject": "cleangeo - Cleaning Geometries from Spatial Objects",
+      "message_count": 1,
+      "participants": [
+        "Emmanuel Blondel"
+      ],
+      "started": "2015-10-05T18:22:07+02:00",
+      "last_reply": "2015-10-05T18:22:07+02:00",
+      "root_message_id": "msg-50edebfe06c1"
+    }
+  ]
+}

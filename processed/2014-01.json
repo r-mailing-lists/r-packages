@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-01",
+  "messages": [
+    {
+      "id": "msg-8d55ca13d80e",
+      "message_id": "<CEED102E.1BF50%max.kuhn@pfizer.com>",
+      "from_name": "Kuhn, Max",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2014-01-04T06:11:11Z",
+      "subject": "[R-pkgs] caret version 6.0-21",
+      "subject_clean": "caret version 6.0-21",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The caret package (short for Classification And REgression\nTraining) attempts to streamline the process for creating\npredictive models. The package contains tools for:\n\n - data splitting\n - pre-processing\n - feature selection\n - model tuning using resampling (with parallel processing)\n - variable importance estimation\n\nas well as other functionality. The package website has lengthy\ndescriptions of functionality:\n\n   http://caret.r-forge.r-project.org/\n\nA new version, 6.0-21, was just released to CRAN and contains\nmajor improvements:\n\n - A new system for user-defined models has been added. See\n  http://caret.r-forge.r-project.org/custom_models.html.\n\n - When creating the grid of tuning parameter values, the column\n  names no longer need to be preceded by a period. Periods can\n  still be used as before but are not required.\n\n - trainControl now has a 'method = \"none\"' resampling option that\n  bypasses model tuning and fits the model to the entire training\n  set.\n\n- Several new models were added, bringing the total number of\n  models up to 149.\n\n - ggplot methods were added for several classes.\n\nMost changes are not user-visible so that the impact on current\nscripts should be minimal.\n\nFor this caret update, the AppliedPredictiveModeling package will be\nbrought up to date shortly with slightly modified scripts for the\nanalyses contained in the text.\n\nThanks to the R community and caret contributors: Jed Wing, Steve\nWeston, Andre Williams, Chris Keefer, Allan Engelhardt, Tony Cooper,\nZachary Mayer and the R Core Team.\n\nPlease contact me (max.kuhn at pfizer.com) with any comments, suggestions,\nquestions or ideas for a good wedding toasts.\n\nMax",
+      "body_snippet": "The caret package (short for Classification And REgression\nTraining) attempts to streamline the process for creating\npredictive models. The package contains tools for:\n\n - data splitting\n - pre-proces",
+      "thread_id": "thread-8d55ca13d80e",
+      "thread_depth": 0,
+      "month": "2014-01"
+    },
+    {
+      "id": "msg-57f6558d8170",
+      "message_id": "<7191AFC7255B4F49A30707E39BEAD05F3C83586A@EXCH-RX03.erasmusmc.nl>",
+      "from_name": "D. Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2014-01-13T07:48:25Z",
+      "subject": "[R-pkgs] package JMbayes -- version 0.5-0",
+      "subject_clean": "package JMbayes -- version 0.5-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "*** Apologies for cross posting ***\n\nDear Colleagues, Dear R-users,\n\nI would like to announce the release of the new version of package \nJMbayes available from CRAN (http://CRAN.R-project.org/package=JMbayes). \nThis package fits joint models for longitudinal and time-to-event data \nunder a Bayesian approach using MCMC. These models are applicable in \nmainly two settings. First, when focus is on the survival outcome and we \nwish to account for the effect of an endogenous (aka internal) \ntime-dependent covariates measured with error. Second, when focus is on \nthe longitudinal outcome and we wish to correct for nonrandom dropout.\n\nSome basic features of the new version:\n\n* The MCMC in now implemented with efficient custom-made code and no \nlonger relies on JAGS, OpenBUGS or WinBUGS.\n\n* The user can now specify her own density function for the longitudinal \nresponses using argument 'densLong' (default is the normal pdf). Among \nothers, this allows to fit joint models with categorical and \nleft-censored longitudinal responses and robust joint models with \nStudent's-t error terms. In addition, using the 'df.RE' argument, the \nuser can also change the distribution of the random effects from \nmultivariate normal to a multivariate Student's-t with prespecified \ndegrees of freedom.\n\n* The user has now the option to define custom transformation functions \nfor the terms of the longitudinal submodel that enter into the linear \npredictor of the survival submodel (argument 'transFun'). For example, \ninteractions terms, nonlinear terms (polynomials, splines), etc.\n\n* The baseline hazard is now only estimated using B-splines (penalized \n(default) or regression).\n\n* Dynamic predictions:\n\n   - function survfitJM.JMbayes(), which computes dynamic survival \nprobabilities, is now faster;\n\n   - the new generic function aucJM() calculates time-dependent AUCs for \njoint models;\n\n   - the new generic function dynCJM() calculates a dynamic \ndiscrimination index (weighted average of time-dependent AUCs) for joint \nmodels;\n\n   - the new generic function prederrJM() calculates prediction errors \nfor joint models;\n\n   - the new function bma.combine() combines predictions using Bayesian \nmodel averaging; posterior model weights can be calculated using \nlogLik.JMbayes() and marglogLik().\n\n* a method has been added for the xtable() generic from package xtable \nfor producing a LaTeX table with the results of the joint model.\n\n* Backward-incompatible version; the aforementioned changes require \nrefitting joint models that have been fitted with previous versions.\n\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\n\nKind regards,\n\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014\nWeb: http://www.erasmusmc.nl/biostatistiek/",
+      "body_snippet": "*** Apologies for cross posting ***\n\nDear Colleagues, Dear R-users,\n\nI would like to announce the release of the new version of package \nJMbayes available from CRAN (http://CRAN.R-project.org/package=",
+      "thread_id": "thread-57f6558d8170",
+      "thread_depth": 0,
+      "month": "2014-01"
+    },
+    {
+      "id": "msg-c1c0eb95a9a7",
+      "message_id": "<CAE_jnnpuei0CNYe6M=T8ebjfpMLCpnEf_6YxMffb5A_oz=RCkA@mail.gmail.com>",
+      "from_name": "Cipollini Fabrizio",
+      "from_email_hash": "7cd4fa11fd60716381872727132f05ef3e40e2c26ed3786c104b6f07894eabfb",
+      "date": "2014-01-20T13:39:28+01:00",
+      "subject": "[R-pkgs] TAQMNGR",
+      "subject_clean": "TAQMNGR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl>",
+      "thread_id": "thread-c1c0eb95a9a7",
+      "thread_depth": 0,
+      "month": "2014-01"
+    },
+    {
+      "id": "msg-fc1cb3811c49",
+      "message_id": "<47399D37-9704-4F26-AB3C-991E7CF809D0@northwestern.edu>",
+      "from_name": "William R Revelle",
+      "from_email_hash": "90c1f4b1911cae8b00cb728d30f21f87f09094fdd3ec43a43946e4349d6c6133",
+      "date": "2014-01-21T00:25:36Z",
+      "subject": "[R-pkgs] psych version 1.4.1",
+      "subject_clean": "psych version 1.4.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "psych 1.4.1 is now on CRAN and being distributed to the mirrors.\n\n\n? Substantial improvements in speed through the use of the parallel package and some coding improvements in a number of functions.\n ? Added parallel processing (multicores) to polychoric, tetrachoric, mixed.cor, fa, fa.parallel, cor.ci and alpha \n ? With 2 cores this saves 50%, but this is not a linear function of the number of cores: with 4 cores the savings seems to be 67% and with 8 cores 75%. Requires the parallel package\n ? Modified ICLUST to increase speed by about 50% (does not require parallel). \n ? Added splitHalf, omega2latex and ICC2latex \n ? Added the ability to find scores automatically in omega. \n ? A minor tweak to r.test to better report the call in the case of a correlated correlation. \n ? A minor tweak to corr.test so that if all the sample sizes are the same, just report one number.\n ? Added the Gleser data set for an example of generalizability theory. \n ? Added the ability data set (just the iqitems scored for correct/incorrect)\n ? Added the check option in describe (turning it off increases speed drastically, but at the risk of not detecting logical or factor data). \n ? Added the describeData helper to do a quick pass to list the data types in a data.frame. \n ? Added best.items and lookup as two helper functions for finding item contents from a dictionary of item names and contents.\n\nWhat is psych?\n\nA number of routines for personality, psychometrics and experimental psychology.   Functions are primarily for scale construction using factor analysis, cluster analysis and reliability analysis, although others provide basic descriptive statistics. Item Response Theory is done using  factor analysis of tetrachoric and polychoric correlations. Functions for simulating particular item and test structures are included. Several functions serve as a useful front end for structural equation modeling.  Graphical displays of path diagrams, factor analysis and structural equation models are created using basic graphics. Some of the functions are written to support a book on psychometrics as well as publications in personality research. For more information, see the https://personality-project.org/r/psych/  webpage \n\n\n\nWilliam Revelle\t\t           http://personality-project.org/revelle.html\nProfessor\t\t\t           http://personality-project.org\nDepartment of Psychology   http://www.wcas.northwestern.edu/psych/\nNorthwestern University\t   http://www.northwestern.edu/\nUse R for psychology             http://personality-project.org/r\nIt is 5 minutes to midnight\t   http://www.thebulletin.org",
+      "body_snippet": "psych 1.4.1 is now on CRAN and being distributed to the mirrors.\n\n\n? Substantial improvements in speed through the use of the parallel package and some coding improvements in a number of functions.\n ?",
+      "thread_id": "thread-fc1cb3811c49",
+      "thread_depth": 0,
+      "month": "2014-01"
+    },
+    {
+      "id": "msg-bd3c541a4e21",
+      "message_id": "<52E1A659.2090509@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2014-01-23T17:31:37-06:00",
+      "subject": "[R-pkgs] Major update to Hmisc package available on CRAN",
+      "subject_clean": "Major update to Hmisc package available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hmisc has had the following updates, with some of the new functions \ndemonstrated on http://biostat.mc.vanderbilt.edu/HmiscNew .  Much of the \nnew work is motivated by the need to replace tables with graphics.\n----------------------------------------------------------------\n\nChanges in version 3.14-0 (2014-01-22)\n    * Added trans argument to varclus\n    * Removed recode, existsFunction functions, under.unix object, \nsurvfitKM, functions used only by S-Plus: comment, mem, mulbar.chart, \np.sunflowers\n    * as.category, is.category, untangle.special: removed\n    * Removed reference to .R. from many functions\n    * Remove oldClass, oldUnclass, getFunction\n    * latex.default: changed 'rotate' to 'sideways' for ctable mode. \nThanks: Simon Zehnder <szehnder at uni-bonn.de>\n    * gView: removed\n    * ldBands: removed\n    * summaryP: new function - graphical replacement for tables of \nproportions\n    * ynbind: new function for combining related yes/no variables into a \nmatrix with a label\n    * added file argument to prn\n    * summaryP: added autoarrange\n    * added addMarginal and nobsY functions\n    * pBlock: new function for blocking variables for summaryP\n    * summaryP: changed text positioning to grid absolutes, added \ntext.at argument\n    * scat1d, histSpike: if grid used and y has grid units, fixed logic \nfor frac\n    * plsmo, panel.plsmo: added scat1d.opts argument\n    * label.Surv, units.Surv: added, removed ::: in survival calls\n    * summarize: added keepcolnames argument\n    * Suppressed startup message unless options(Hverbose=TRUE) is set\n    * summaryS: new function - multi-panel lattice xy and dot plots\n    * summaryD: added ylab argument\n    * dotchart3: quit letting left margin be less than pre-existing one\n    * multLines: new function\n    * Improved nobsY to respect subject IDs when counting number of \nsubjects, and to return an attribute 'formula' without id variable; \nchanged bpplotM, summaryP, summaryS to use this\n    * Removed nobsY calculations from bpplotM, summaryP, summaryS, \nenhanced nobsY to allow stratification by treatment\n    * panel.bpplot: added violin and violin.opts arguments\n    * summaryS: added medvPanel support during-plot vertical violin plots\n    * plot.summaryP: padded x-axis limits\n    * latexTabular: added translate and hline arguments; moved to its \nown file and help page\n    * latexTherm: added tooltip using LaTeX ocgtools package\n    * summaryP: stopped reversing order of panels\n    * summaryM: added table.env argument, changed how model.frame built\n    * latex.summaryM: changed to print proportions by default, added \nround='auto'\n    * character.table: added xpd=NA; thanks: Dale\n    * summaryP: added latex method\n    * latex.default: added insert.top argument\n    * summaryM: added stratification (multiple tables)\n\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "Hmisc has had the following updates, with some of the new functions \ndemonstrated on http://biostat.mc.vanderbilt.edu/HmiscNew .  Much of the \nnew work is motivated by the need to replace tables with ",
+      "thread_id": "thread-bd3c541a4e21",
+      "thread_depth": 0,
+      "month": "2014-01"
+    },
+    {
+      "id": "msg-a238942b3561",
+      "message_id": "<20140130152204.166467mxiucvjnrw@www.staffmail.ed.ac.uk>",
+      "from_name": "SPRINT Project",
+      "from_email_hash": "2d5d599a20bb736f1cc38972fffd8124909a0c55e3a8787c663a209afc001bf6",
+      "date": "2014-01-30T15:22:04Z",
+      "subject": "[R-pkgs] SPRINT 1.0.5 release (parallelised R functions for complex analysis and large data sets)",
+      "subject_clean": "SPRINT 1.0.5 release (parallelised R functions for complex analysis and large data sets)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All\n\nWe have recently released SPRINT v1.0.5. SPRINT provides parallelised  \nversions of existing R functions (e.g. statistical, machine learning,  \nutility) that often exceed computational limits (speed or memory) with  \nlarge or complex data sets.\n\n\nSPRINT 1.0.5 now:\n\n-> runs on Mac OSX multi-cores (i.e. you may not need to obtain access  \nto compute clusters)\n\n-> provides a parallelised version of the Hamming distance (based on  \noriginal version contained in stringdistmatrix() by M van der Loo, and  \nparallelised differently from the option provided therein)\n\n-> compliant with MPI3 (and the latest version of the mpich package)\n\n\nDownload and instructions available at www.r-sprint.org.\n\nSPRINT 1.0.5 is not available on CRAN as we have not yet completed  \ntesting against the latest major release of R (3.0.x). However, we  \nwill release a small incremental update of SPRINT as version 1.0.6  \nwithin the next few weeks that will be available via CRAN and will  \nwork with R3.\n\n\nNotes:\n- With the availability of SPRINT for Mac users, we hope to address  \ncomputational issues that are too large or too slow for these users,  \nbut still small enough to not require a much larger number of nodes  \nand cores (i.e. compute clusters or supercomputers like HECToR or  \nARCHER).\n- We have parallelised the Hamming distance as from collaborators and  \ncourse participants we know this to have potential in use for  \nNext-Gen-Sequencing, e.g. measuring pairwise distances between  \nnucleotide sequences. In principle, though, Hamming is a distance  \nuseful for string or binary data vectors.\n\n\n\nSPRINT Project\n\nsprint at ed.ac.uk\nwww.r-sprint.org\n\nThe University of Edinburgh\n\n-- \nThe University of Edinburgh is a charitable body, registered in\nScotland, with registration number SC005336.",
+      "body_snippet": "Dear All\n\nWe have recently released SPRINT v1.0.5. SPRINT provides parallelised  \nversions of existing R functions (e.g. statistical, machine learning,  \nutility) that often exceed computational limit",
+      "thread_id": "thread-a238942b3561",
+      "thread_depth": 0,
+      "month": "2014-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8d55ca13d80e",
+      "subject": "caret version 6.0-21",
+      "message_count": 1,
+      "participants": [
+        "Kuhn, Max"
+      ],
+      "started": "2014-01-04T06:11:11+00:00",
+      "last_reply": "2014-01-04T06:11:11+00:00",
+      "root_message_id": "msg-8d55ca13d80e"
+    },
+    {
+      "id": "thread-57f6558d8170",
+      "subject": "package JMbayes -- version 0.5-0",
+      "message_count": 1,
+      "participants": [
+        "D. Rizopoulos"
+      ],
+      "started": "2014-01-13T07:48:25+00:00",
+      "last_reply": "2014-01-13T07:48:25+00:00",
+      "root_message_id": "msg-57f6558d8170"
+    },
+    {
+      "id": "thread-c1c0eb95a9a7",
+      "subject": "TAQMNGR",
+      "message_count": 1,
+      "participants": [
+        "Cipollini Fabrizio"
+      ],
+      "started": "2014-01-20T13:39:28+01:00",
+      "last_reply": "2014-01-20T13:39:28+01:00",
+      "root_message_id": "msg-c1c0eb95a9a7"
+    },
+    {
+      "id": "thread-fc1cb3811c49",
+      "subject": "psych version 1.4.1",
+      "message_count": 1,
+      "participants": [
+        "William R Revelle"
+      ],
+      "started": "2014-01-21T00:25:36+00:00",
+      "last_reply": "2014-01-21T00:25:36+00:00",
+      "root_message_id": "msg-fc1cb3811c49"
+    },
+    {
+      "id": "thread-bd3c541a4e21",
+      "subject": "Major update to Hmisc package available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2014-01-23T17:31:37-06:00",
+      "last_reply": "2014-01-23T17:31:37-06:00",
+      "root_message_id": "msg-bd3c541a4e21"
+    },
+    {
+      "id": "thread-a238942b3561",
+      "subject": "SPRINT 1.0.5 release (parallelised R functions for complex analysis and large data sets)",
+      "message_count": 1,
+      "participants": [
+        "SPRINT Project"
+      ],
+      "started": "2014-01-30T15:22:04+00:00",
+      "last_reply": "2014-01-30T15:22:04+00:00",
+      "root_message_id": "msg-a238942b3561"
+    }
+  ]
+}

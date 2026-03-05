@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-06",
+  "messages": [
+    {
+      "id": "msg-319f38a93d58",
+      "message_id": "<7ce4d41b-92e3-435c-a9e8-2e238f74c52e@gmail.com>",
+      "from_name": "Giulio Barcaroli",
+      "from_email_hash": "0326a8c14d3ceb71846cac83f7c53d182c185c88559805f2919e451c3111e1ef",
+      "date": "2024-06-01T13:27:16+02:00",
+      "subject": "[R-pkgs] QGA 1.0 is released",
+      "subject_clean": "QGA 1.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that QGA 1.0 is now available on CRAN.\n\nQGA implements the Quantum Genetic Algorithm, as proposed by Han and Kim \nin 2000, and is an R implementation derived from the Python one by \nLahoz-Beltra in 2016.\n\nUnder this approach, each solution is represented as a sequence of \n(qu)bits. Simulating the quantum paradigm, these qubits are in a \nsuperposition state: when measuring them, they collapse in a 0 or 1 \nstate. After measurement, the solution's fitness is calculated as in \nusual genetic algorithms.\n\nThe evolution at each iteration is oriented by the application of two \nquantum gates to the amplitudes of the qubits: (1) a rotation gate \n(always); (2) a Pauli-X gate (optionally). The rotation is based on the \ntheta angle values: higher values allow a quicker evolution, and lower \nvalues avoid local maxima. The Pauli-X gate is equivalent to the \nclassical mutation operator and determines the swap between alfa and \nbeta amplitudes of a given qubit.\n\nThe package has been developed in such a way as to permit a complete \nseparation between the 'engine', and the particular problem subject to \ncombinatorial optimization. This is evident in the available examples, \nthat come with the package, illustrating the application of QGA to \ndifferent problems: knapsack, traveler salesman, and clustering.\n\nThank you, kind regards,\n\nGiulio Barcaroli\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that QGA 1.0 is now available on CRAN.\n\nQGA implements the Quantum Genetic Algorithm, as proposed by Han and Kim \nin 2000, and is an R implementation derived fr",
+      "thread_id": "thread-319f38a93d58",
+      "thread_depth": 0,
+      "month": "2024-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-319f38a93d58",
+      "subject": "QGA 1.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Giulio Barcaroli"
+      ],
+      "started": "2024-06-01T13:27:16+02:00",
+      "last_reply": "2024-06-01T13:27:16+02:00",
+      "root_message_id": "msg-319f38a93d58"
+    }
+  ]
+}

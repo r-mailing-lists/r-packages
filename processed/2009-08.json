@@ -1,0 +1,227 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-08",
+  "messages": [
+    {
+      "id": "msg-3cb061e0470a",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C01BAB6C0DC@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2009-08-02T21:45:41-04:00",
+      "subject": "[R-pkgs] new package: perm",
+      "subject_clean": "new package: perm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI have uploaded a new package called perm which does linear permutation tests. It does two-sample, k-sample and trend tests. The package is redundant, since everything it does can be done in the coin package, and it is usually faster in coin. The main motivation is to provide another check for exact tests in R.  It also handles ties differently than coin, so if you have test statistics that theoretically should be tied but are not tied in R, perm can easily be made to treat them as tied.  The package perm rounds to the nearest 12 digits (or whatever you set the 'digits' parameter to) then calls values that match to the first 12 digits tied.\n\nLet me know if there are comments or questions,\n\nThanks,\n\nMike",
+      "body_snippet": "Hi all,\n\nI have uploaded a new package called perm which does linear permutation tests. It does two-sample, k-sample and trend tests. The package is redundant, since everything it does can be done in ",
+      "thread_id": "thread-3cb061e0470a",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-e9f4a9b18de2",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C01BAB6C0DD@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2009-08-02T21:52:22-04:00",
+      "subject": "[R-pkgs] new package: interval",
+      "subject_clean": "new package: interval",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have just uploaded a new package called interval. It does weighted logrank tests (e.g., logrank, Wilcoxon-type tests) on interval censored data. It allows Surv objects and can calculated exact p-values. It calls the perm package, but also allows calculation of scores that may be output to faster permutation packages like coin.\n\nThere is a full description of the packge and methods  in a vignette.\n\nLet me know if there are comments or questions.\n\nMike",
+      "body_snippet": "I have just uploaded a new package called interval. It does weighted logrank tests (e.g., logrank, Wilcoxon-type tests) on interval censored data. It allows Surv objects and can calculated exact p-val",
+      "thread_id": "thread-e9f4a9b18de2",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-0c67bbd7d24c",
+      "message_id": "<C04B648476384BDF91C046FEEDED70B0@gpbdmx>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "d12bb521d01a14c5c9364007086c61200d7898178507ef5d276c14223c822c6b",
+      "date": "2009-08-03T09:45:01-07:00",
+      "subject": "[R-pkgs] Deducer 0.1 : An intuitive cross-platform data analysis GUI",
+      "subject_clean": "Deducer 0.1 : An intuitive cross-platform data analysis GUI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Deducer 0.1 has been released to CRAN\n\nDeducer is designed to be a free, easy to use, alternative to proprietary\nsoftware such as SPSS, JMP, and Minitab. It has a menu system to do common\ndata manipulation and data analysis tasks, and an excel-like spreadsheet in\nwhich to view and edit data frames. The goal of the project is to two fold. \n\n\t1. Provide an intuitive interface so that non-technical users \n\t   can learn and perform analyses without programming getting \n\t   in their way. \n\t2. Increase the efficiency of expert R users when performing \n         common tasks by replacing hundreds of keystrokes with a few \n         mouse clicks. Also, as much as possible the GUI should not \n         get in their way if they just want to do some programming. \n\nDeducer is integrated into the Windows RGui, and the cross-platform Java\nconsole JGR, and is also usable and accessible from the command line.\nScreen shots and examples can be viewed in the online wiki manual:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\nComments and questions are more than welcome. A discussion group has been\ncreated for any questions or recommendations.\n\nhttp://groups.google.com/group/deducer\n\nDeducer Features:\n\nData manipulation:\n\t1. Factor editor\n\t2. Variable recoding\n\t3. data sorting\n\t4. data frame merging\n\t5. transposing a data frame\n\t6. subseting\n\nAnalysis:\n\t1. Frequencies\n\t2. Descriptives\n\t3. Contingency tables\n\t\ta. Nicely formatted tables with optional\n\t\t\ti. Percentages\n\t\t\tii. Expected counts\n\t\t\tiii. Residuals\n\t\tb. Statistical tests\n\t\t\ti. chi-squared \n\t\t\tii. likelihood ratio\n\t\t\tiii. fisher's exact\n\t\t\tiv. mantel haenszel\n\t\t\tv. kendall's tau\n\t\t\tvi. spearman's rho\n\t\t\tvii. kruskal-wallis\n\t\t\tviii. mid-p values for all exact/monte carlo tests\n\t4. One sample tests\n\t\ta. T-test\n\t\tb. Shapiro-wilk\n\t\tc. Histogram/box-plot summaries\n\t5. Two sample tests\n\t\ta. T-test (student and welch)\n\t\tb. Permutation test\n\t\tc. Wilcoxon\n\t\td. Brunner-munzel\n\t\te. Kolmogorov-smirnov\n\t\tf. Jitter/box-plot group comparison\n\t6. K-sample tests\n\t\ta. Anova (usual and welch)\n\t\tb. Kruskal-wallis\n\t\tc. Jitter/boxplot comparison\n\t7. Correlation\n\t\ta. Nicely formatted correlation matrices\n\t\tb. Pearson's\n\t\tc. Kendall's\n\t\td. Spearman's\n\t\te. Scatterplot paneled array\n\t\tf. Circle plot\n\t\tg. Full correlation matrix plot\n        8.Generalized Linear Models\n\t\ta. Model preview\n\t\tb. Intuitive model builder\n\t\tc. diagnostic plots \n\t\td. Component residual and added variable plots\n\t\te. Anova (type II and III implementing LR, Wald and F tests)\n\t\tf. Parameter summary tables and parameter correlations\n\t\tg. Influence and colinearity diagnostics\n\t\th. Post-hoc tests and confidence intervals \n\t\t   with (or without) adjustments for multiple testing.\n\t\ti. Custom linear hypothesis tests\n\t\tj. Effect mean summaries (with confidence intervals), and\nplots\n\t\tk. Exports: Residuals, Standardized residuals, Studentized\n \t\t   residuals, Predicted Values (linear and link), Cooks \n\t\t   distance, DFBETA, DFFITS, hat values, and Cov Ratio\n\t\tl. Observation weights and subseting\n\t9. Logistic Regression\n\t\ta. All GLM features\n\t\tb. ROC Plot\n\t10. Linear Model\n\t\ta. All GLM features\n       \tb. Heteroskedastic robust tests",
+      "body_snippet": "Deducer 0.1 has been released to CRAN\n\nDeducer is designed to be a free, easy to use, alternative to proprietary\nsoftware such as SPSS, JMP, and Minitab. It has a menu system to do common\ndata manipul",
+      "thread_id": "thread-0c67bbd7d24c",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-149ccd6f2cff",
+      "message_id": "<4A797CAE.1080806@dbmail.com>",
+      "from_name": "Romain Francois",
+      "from_email_hash": "59e39d3ea92dfd200ae594261b1588764b0f983f395cce1fc006e71efaf2c073",
+      "date": "2009-08-05T14:35:58+02:00",
+      "subject": "[R-pkgs] parser 0.0-3 on CRAN",
+      "subject_clean": "parser 0.0-3 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nThe version 0.0-3 of the parser package has been published to CRAN a few \ndays ago.\nThe package defines a parser for R code very similar to the \"parse\" \nfunction in base but organize the information differently, in a flat \ndata frame.\n\nThere is a more complete announcement in my blog: http://tr.im/vsK1\n\nRomain\n\n-- \nRomain Francois\nProfessional R Enthusiast\n+33(0) 6 28 91 30 30\nhttp://romainfrancois.blog.free.fr\n|- http://tr.im/vsK1 : R parser package on CRAN\n|- http://tr.im/vshK : Transfer files through Rserve\n`- http://tr.im/vfxe : R GUI page on the R wiki",
+      "body_snippet": "Hello,\n\nThe version 0.0-3 of the parser package has been published to CRAN a few \ndays ago.\nThe package defines a parser for R code very similar to the \"parse\" \nfunction in base but organize the infor",
+      "thread_id": "thread-149ccd6f2cff",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-c354e6801ab5",
+      "message_id": "<4A831476.9070205@unine.ch>",
+      "from_name": "Alexis Gabadinho",
+      "from_email_hash": "ff87692dab55669ec4014a1fa39f7cffb57799e058b0f041f6decf1431e0949d",
+      "date": "2009-08-12T21:13:58+02:00",
+      "subject": "[R-pkgs] TraMineR updated to version 1.4",
+      "subject_clean": "TraMineR updated to version 1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.4.\n\nMany new functionalities have been added, among which: new metrics for \ncomputing distances between sequences, function for computing \nmulti-channel distances, new functions for extracting and visualizing \nsets of non-redundant representative sequences, etc...\n\nMore information about TraMineR can be found here: \nhttp://mephisto.unige.ch/traminer/\n\nCheers,\nThe TraMineR team.",
+      "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.4.\n\nMany new funct",
+      "thread_id": "thread-c354e6801ab5",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-8f5d3e69d2ea",
+      "message_id": "<OFDF8575D7.3E9D509E-ON80257611.00327317-80257611.00344BE8@gsk.com>",
+      "from_name": "Brandon.J.Whitcher at gsk.com",
+      "from_email_hash": "9183cb37ae448daaffdebf38502d0bbc1908de40c74bb8327885350e5be7c442",
+      "date": "2009-08-13T10:31:11+01:00",
+      "subject": "[R-pkgs] dcemri: A package for medical image analysis",
+      "subject_clean": "dcemri: A package for medical image analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl>",
+      "thread_id": "thread-8f5d3e69d2ea",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-a1d51a04e578",
+      "message_id": "<20090815044443.GI286@ziti.local>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "11c6971bcb88df56e639b6a132437a8a73d7e421ce61eb5feaa3d85efef832df",
+      "date": "2009-08-14T21:44:43-07:00",
+      "subject": "[R-pkgs] New version of RSQLite on CRAN",
+      "subject_clean": "New version of RSQLite on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nRSQLite 0.7-2 is available on CRAN.\n\nVersion 0.7-2\n\n- Fixed some partial argument matching warnings.  Thanks to Matthias\n  Burger for reporting and sending a patch.\n\n- Added dbBuildTableDefinition to exports per user request.\n\n+ seth",
+      "body_snippet": "Hi,\n\nRSQLite 0.7-2 is available on CRAN.\n\nVersion 0.7-2\n\n- Fixed some partial argument matching warnings.  Thanks to Matthias\n  Burger for reporting and sending a patch.\n\n- Added dbBuildTableDefinitio",
+      "thread_id": "thread-a1d51a04e578",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-eb8c2dfe5e41",
+      "message_id": "<39488.130.234.32.100.1250678752.squirrel@webmail1.cc.jyu.fi>",
+      "from_name": "Jouni Lehtonen",
+      "from_email_hash": "d0927106fe0d3e7943d00eef726df623e48c39ac1f6eeb2c4aa3daab08538930",
+      "date": "2009-08-19T13:45:52+03:00",
+      "subject": "[R-pkgs] New package for multivariate Kalman filtering, smoothing, simulation and forecasting",
+      "subject_clean": "New package for multivariate Kalman filtering, smoothing, simulation and forecasting",
+      "in_reply_to": "<mailman.0.1250665896.17370.r-packages@r-project.org>",
+      "references": [
+        "<mailman.0.1250665896.17370.r-packages@r-project.org>"
+      ],
+      "body_plain": "Dear all,\n\nI am pleased to announce the CRAN release of a new package called 'KFAS' -\nKalman filter and smoother.\n\nThe package KFAS contains functions of multivariate Kalman filter,\nsmoother, simulation smoother and forecasting. It uses univariate approach\nalgorithm (aka sequential processing), which is faster than normal method,\nand it also allows mean square prediction error matrix Ft to be singular.\nFiltering, smoothing and simulation functions are all written in Fortran.\nFunctions allow time-variant system matrices and missing observations. In\ncase distributions of some or all elements of initial state vector are\nunknown, functions use exact diffuse initialisation.\n\nI hope that this package will be useful for people working with state\nspace models and time series in general. Any feedback is appreciated.\n\nYours,\n\nJouni Lehtonen\nUniversity of Jyv?skyl?\nFinland",
+      "body_snippet": "Dear all,\n\nI am pleased to announce the CRAN release of a new package called 'KFAS' -\nKalman filter and smoother.\n\nThe package KFAS contains functions of multivariate Kalman filter,\nsmoother, simulati",
+      "thread_id": "thread-eb8c2dfe5e41",
+      "thread_depth": 0,
+      "month": "2009-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3cb061e0470a",
+      "subject": "new package: perm",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2009-08-02T21:45:41-04:00",
+      "last_reply": "2009-08-02T21:45:41-04:00",
+      "root_message_id": "msg-3cb061e0470a"
+    },
+    {
+      "id": "thread-e9f4a9b18de2",
+      "subject": "new package: interval",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2009-08-02T21:52:22-04:00",
+      "last_reply": "2009-08-02T21:52:22-04:00",
+      "root_message_id": "msg-e9f4a9b18de2"
+    },
+    {
+      "id": "thread-0c67bbd7d24c",
+      "subject": "Deducer 0.1 : An intuitive cross-platform data analysis GUI",
+      "message_count": 1,
+      "participants": [
+        "Ian Fellows"
+      ],
+      "started": "2009-08-03T09:45:01-07:00",
+      "last_reply": "2009-08-03T09:45:01-07:00",
+      "root_message_id": "msg-0c67bbd7d24c"
+    },
+    {
+      "id": "thread-149ccd6f2cff",
+      "subject": "parser 0.0-3 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Romain Francois"
+      ],
+      "started": "2009-08-05T14:35:58+02:00",
+      "last_reply": "2009-08-05T14:35:58+02:00",
+      "root_message_id": "msg-149ccd6f2cff"
+    },
+    {
+      "id": "thread-c354e6801ab5",
+      "subject": "TraMineR updated to version 1.4",
+      "message_count": 1,
+      "participants": [
+        "Alexis Gabadinho"
+      ],
+      "started": "2009-08-12T21:13:58+02:00",
+      "last_reply": "2009-08-12T21:13:58+02:00",
+      "root_message_id": "msg-c354e6801ab5"
+    },
+    {
+      "id": "thread-8f5d3e69d2ea",
+      "subject": "dcemri: A package for medical image analysis",
+      "message_count": 1,
+      "participants": [
+        "Brandon.J.Whitcher at gsk.com"
+      ],
+      "started": "2009-08-13T10:31:11+01:00",
+      "last_reply": "2009-08-13T10:31:11+01:00",
+      "root_message_id": "msg-8f5d3e69d2ea"
+    },
+    {
+      "id": "thread-a1d51a04e578",
+      "subject": "New version of RSQLite on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2009-08-14T21:44:43-07:00",
+      "last_reply": "2009-08-14T21:44:43-07:00",
+      "root_message_id": "msg-a1d51a04e578"
+    },
+    {
+      "id": "thread-eb8c2dfe5e41",
+      "subject": "New package for multivariate Kalman filtering, smoothing, simulation and forecasting",
+      "message_count": 1,
+      "participants": [
+        "Jouni Lehtonen"
+      ],
+      "started": "2009-08-19T13:45:52+03:00",
+      "last_reply": "2009-08-19T13:45:52+03:00",
+      "root_message_id": "msg-eb8c2dfe5e41"
+    }
+  ]
+}

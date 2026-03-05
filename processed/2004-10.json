@@ -1,0 +1,549 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-10",
+  "messages": [
+    {
+      "id": "msg-797714b1130c",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521D04@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-10-01T10:19:47-04:00",
+      "subject": "[R-pkgs] gregmisc 2.0.0 release",
+      "subject_clean": "gregmisc 2.0.0 release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gregmisc 2.0.0\n===========\n\ngregmisc 2.0.0 has been released and is now available on CRAN.   \n\nImportant Changes\n---------------------------\n\n- Now a package bundle \n\nFor this release, gregmisc has been split into a bundle containing 4\nseparate packages: gdata, gmodels, gplots and gtools. All of your favorite\nfunctions are still present, but they are now better organized into thematic\ngroups, which should make them easier to maintain.\n\n- Namespaces\n\nEach of the gregmisc packages now provide namespaces, and are fully\ncompatible with R 2.0.0.   The namespaces make it easier to avoid conflicts\nwith functions in other packages, and prevent local utility functions from\ncluttering up the global function namespace.\n\nConsequences for Users\n------------------------------------\n\nInstead of attaching the gregmisc package, you will need to attach the\nappropriate individual packages.  IE, instead of\n\t> library(gregmisc)\nyou should use one or more of\n\t> library(gdata)\n\t> library(gmodels)\n\t> library(gplots)\n\t> library(gtools)\n\nFor more details, including bug fixes, see the ChangeLog file in the source\ndistribution.\n\n-Greg \n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "gregmisc 2.0.0\n===========\n\ngregmisc 2.0.0 has been released and is now available on CRAN.   \n\nImportant Changes\n---------------------------\n\n- Now a package bundle \n\nFor this release, gregmisc has be",
+      "thread_id": "thread-797714b1130c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-797714b1130c",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521D04@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-10-01T10:19:47-04:00",
+      "subject": "[R-pkgs] gregmisc 2.0.0 release",
+      "subject_clean": "gregmisc 2.0.0 release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gregmisc 2.0.0\n===========\n\ngregmisc 2.0.0 has been released and is now available on CRAN.   \n\nImportant Changes\n---------------------------\n\n- Now a package bundle \n\nFor this release, gregmisc has been split into a bundle containing 4\nseparate packages: gdata, gmodels, gplots and gtools. All of your favorite\nfunctions are still present, but they are now better organized into thematic\ngroups, which should make them easier to maintain.\n\n- Namespaces\n\nEach of the gregmisc packages now provide namespaces, and are fully\ncompatible with R 2.0.0.   The namespaces make it easier to avoid conflicts\nwith functions in other packages, and prevent local utility functions from\ncluttering up the global function namespace.\n\nConsequences for Users\n------------------------------------\n\nInstead of attaching the gregmisc package, you will need to attach the\nappropriate individual packages.  IE, instead of\n\t> library(gregmisc)\nyou should use one or more of\n\t> library(gdata)\n\t> library(gmodels)\n\t> library(gplots)\n\t> library(gtools)\n\nFor more details, including bug fixes, see the ChangeLog file in the source\ndistribution.\n\n-Greg \n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "gregmisc 2.0.0\n===========\n\ngregmisc 2.0.0 has been released and is now available on CRAN.   \n\nImportant Changes\n---------------------------\n\n- Now a package bundle \n\nFor this release, gregmisc has be",
+      "thread_id": "thread-797714b1130c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-aff1695cfd9c",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521D05@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-10-01T10:20:58-04:00",
+      "subject": "[R-pkgs] genetics 1.1.0 released",
+      "subject_clean": "genetics 1.1.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1.0 of the genetics package is now available on CRAN.  This\nrelease adds namespace support, and several minor bug fixes.   \n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Version 1.1.0 of the genetics package is now available on CRAN.  This\nrelease adds namespace support, and several minor bug fixes.   \n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer ",
+      "thread_id": "thread-aff1695cfd9c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-aff1695cfd9c",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521D05@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-10-01T10:20:58-04:00",
+      "subject": "[R-pkgs] genetics 1.1.0 released",
+      "subject_clean": "genetics 1.1.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1.0 of the genetics package is now available on CRAN.  This\nrelease adds namespace support, and several minor bug fixes.   \n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Version 1.1.0 of the genetics package is now available on CRAN.  This\nrelease adds namespace support, and several minor bug fixes.   \n\n-Greg\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer ",
+      "thread_id": "thread-aff1695cfd9c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-70bc9d7aaf8f",
+      "message_id": "<99A4F49A-14A4-11D9-9D7C-000D932C7F48@stat.ucla.edu>",
+      "from_name": "Jan de Leeuw",
+      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
+      "date": "2004-10-02T11:55:16-07:00",
+      "subject": "[R-pkgs] Publishing R package descriptions in JSS",
+      "subject_clean": "Publishing R package descriptions in JSS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "More and more R packages come with a corresponding article in the  \nJournal\nof Statistical Software (www.jstatsoft.org). Achim Zeileis, our\nTeXnical Editor, has recently contributed jss style files for issues,\nbookreviews, software reviews, and code snippets. They can be\ndownloaded from\n\nhttp://www.jstatsoft.org/JSSstyle.zip\n\nPackage authors who want to transform their package into a\npublished article are encouraged to use these style files.\n\n===\nJan de Leeuw; Professor and Chair, UCLA Department of Statistics;\nEditor: Journal of Multivariate Analysis, Journal of Statistical  \nSoftware\nUS mail: 8125 Math Sciences Bldg, Box 951554, Los Angeles, CA 90095-1554\nphone (310)-825-9550;  fax (310)-206-5658;  email: deleeuw at stat.ucla.edu\nhomepage: http://gifi.stat.ucla.edu\n   \n------------------------------------------------------------------------ \n-------------------------\n           No matter where you go, there you are. --- Buckaroo Banzai\n                    http://gifi.stat.ucla.edu/sounds/nomatter.au",
+      "body_snippet": "More and more R packages come with a corresponding article in the  \nJournal\nof Statistical Software (www.jstatsoft.org). Achim Zeileis, our\nTeXnical Editor, has recently contributed jss style files fo",
+      "thread_id": "thread-70bc9d7aaf8f",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-70bc9d7aaf8f",
+      "message_id": "<99A4F49A-14A4-11D9-9D7C-000D932C7F48@stat.ucla.edu>",
+      "from_name": "Jan de Leeuw",
+      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
+      "date": "2004-10-02T11:55:16-07:00",
+      "subject": "[R-pkgs] Publishing R package descriptions in JSS",
+      "subject_clean": "Publishing R package descriptions in JSS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "More and more R packages come with a corresponding article in the  \nJournal\nof Statistical Software (www.jstatsoft.org). Achim Zeileis, our\nTeXnical Editor, has recently contributed jss style files for issues,\nbookreviews, software reviews, and code snippets. They can be\ndownloaded from\n\nhttp://www.jstatsoft.org/JSSstyle.zip\n\nPackage authors who want to transform their package into a\npublished article are encouraged to use these style files.\n\n===\nJan de Leeuw; Professor and Chair, UCLA Department of Statistics;\nEditor: Journal of Multivariate Analysis, Journal of Statistical  \nSoftware\nUS mail: 8125 Math Sciences Bldg, Box 951554, Los Angeles, CA 90095-1554\nphone (310)-825-9550;  fax (310)-206-5658;  email: deleeuw at stat.ucla.edu\nhomepage: http://gifi.stat.ucla.edu\n   \n------------------------------------------------------------------------ \n-------------------------\n           No matter where you go, there you are. --- Buckaroo Banzai\n                    http://gifi.stat.ucla.edu/sounds/nomatter.au",
+      "body_snippet": "More and more R packages come with a corresponding article in the  \nJournal\nof Statistical Software (www.jstatsoft.org). Achim Zeileis, our\nTeXnical Editor, has recently contributed jss style files fo",
+      "thread_id": "thread-70bc9d7aaf8f",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-3472e10b8cf7",
+      "message_id": "<Pine.LNX.4.44.0410041000490.13615-100000@albedo.rap.ucar.edu>",
+      "from_name": "Matt Pocernich",
+      "from_email_hash": "69b1491ec2bf184b213cdedcbecd2764515bce4363cb5250f9b31a2cfe4a1a2e",
+      "date": "2004-10-04T10:02:33-06:00",
+      "subject": "[R-pkgs] verfication package announcement ",
+      "subject_clean": "verfication package announcement",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The verification package has recently been posted to CRAN.  This package\nwas initially developed by people in the Verification Group at the\nNational Center for Atmospheric Research to verfiy and study weather\nmodels and forecasts.  It has been written in general terms to be\napplicable to other fields of study.  Functions include\n\nreceiver operating characteristic curves\nattribute diagrams\nreliability plots\nspatial scale and frequency plots\nconditional quantile plots and more.\n\nSuggestions and comments on the package can be directed to me at\npocernic at ucar.edu.  More information on verification (with a somewhat\nmeteorolgical perspective) can be found at\nhttp://www.bom.gov.au/bmrc/wefor/staff/eee/verif/verif_web_page.html.\n\nThanks,\n\nMatt\n\n#####################\nMatt Pocernich\nNCAR - Research Applications Program\n303-497-8312",
+      "body_snippet": "The verification package has recently been posted to CRAN.  This package\nwas initially developed by people in the Verification Group at the\nNational Center for Atmospheric Research to verfiy and study",
+      "thread_id": "thread-3472e10b8cf7",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-3472e10b8cf7",
+      "message_id": "<Pine.LNX.4.44.0410041000490.13615-100000@albedo.rap.ucar.edu>",
+      "from_name": "Matt Pocernich",
+      "from_email_hash": "69b1491ec2bf184b213cdedcbecd2764515bce4363cb5250f9b31a2cfe4a1a2e",
+      "date": "2004-10-04T10:02:33-06:00",
+      "subject": "[R-pkgs] verfication package announcement ",
+      "subject_clean": "verfication package announcement",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The verification package has recently been posted to CRAN.  This package\nwas initially developed by people in the Verification Group at the\nNational Center for Atmospheric Research to verfiy and study weather\nmodels and forecasts.  It has been written in general terms to be\napplicable to other fields of study.  Functions include\n\nreceiver operating characteristic curves\nattribute diagrams\nreliability plots\nspatial scale and frequency plots\nconditional quantile plots and more.\n\nSuggestions and comments on the package can be directed to me at\npocernic at ucar.edu.  More information on verification (with a somewhat\nmeteorolgical perspective) can be found at\nhttp://www.bom.gov.au/bmrc/wefor/staff/eee/verif/verif_web_page.html.\n\nThanks,\n\nMatt\n\n#####################\nMatt Pocernich\nNCAR - Research Applications Program\n303-497-8312",
+      "body_snippet": "The verification package has recently been posted to CRAN.  This package\nwas initially developed by people in the Verification Group at the\nNational Center for Atmospheric Research to verfiy and study",
+      "thread_id": "thread-3472e10b8cf7",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-a62296607144",
+      "message_id": "<FBBB9805-18C2-11D9-A4F9-000A95A672D6@fas.harvard.edu>",
+      "from_name": "Bear F. Braumoeller",
+      "from_email_hash": "ea29b3e24b6206b6b564a563772bdd6806def2b5bcc359f3afe56d3980d9dee4",
+      "date": "2004-10-07T20:42:51-04:00",
+      "subject": "[R-pkgs] updated package boolean 1.5",
+      "subject_clean": "updated package boolean 1.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have just uploaded an updated version of my boolean package (v1.05), \nwhich should be propagating through CRAN's mirrors soon.  Boolean \npermits estimation of Boolean logit and probit models (see Braumoeller \n(2003), full reference in help file, for derivation).  Boolean logit \nand probit are a family of partial-observability n-variate models \ndesigned to permit researchers to model causal complexity, or multiple \ncausal \"paths\" to a given outcome.  The various \"paths\" are modeled as \nlatent dependent variables that are multiplied together in a manner \ndetermined by the logic of their (Boolean) interaction.  Any \ncombination of ANDs and ORs can be posited, and the interaction of any \nnumber of latent dependent variables can be modeled, although the \nprocedure becomes exponentially more data-intensive as the number of \nlatent dependent variables increases.\n\nThe update to version 1.04 was not announced; only minor modifications \nwere made to ensure compatibility with R 1.9.\n\nThe update to version 1.05 permits the use of Sekhon and Mebane's \nGENOUD optimizer for likelihood surfaces that are convoluted and \ntherefore contain multiple local maxima.  Because this procedure can \nproduce such surfaces quite easily, the use of GENOUD is recommended.\n\n\nBear F. Braumoeller\nAssociate Professor\nDepartment of Government\nHarvard University\nhttp://www.people.fas.harvard.edu/~bfbraum",
+      "body_snippet": "I have just uploaded an updated version of my boolean package (v1.05), \nwhich should be propagating through CRAN's mirrors soon.  Boolean \npermits estimation of Boolean logit and probit models (see Br",
+      "thread_id": "thread-a62296607144",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-a62296607144",
+      "message_id": "<FBBB9805-18C2-11D9-A4F9-000A95A672D6@fas.harvard.edu>",
+      "from_name": "Bear F. Braumoeller",
+      "from_email_hash": "ea29b3e24b6206b6b564a563772bdd6806def2b5bcc359f3afe56d3980d9dee4",
+      "date": "2004-10-07T20:42:51-04:00",
+      "subject": "[R-pkgs] updated package boolean 1.5",
+      "subject_clean": "updated package boolean 1.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have just uploaded an updated version of my boolean package (v1.05), \nwhich should be propagating through CRAN's mirrors soon.  Boolean \npermits estimation of Boolean logit and probit models (see Braumoeller \n(2003), full reference in help file, for derivation).  Boolean logit \nand probit are a family of partial-observability n-variate models \ndesigned to permit researchers to model causal complexity, or multiple \ncausal \"paths\" to a given outcome.  The various \"paths\" are modeled as \nlatent dependent variables that are multiplied together in a manner \ndetermined by the logic of their (Boolean) interaction.  Any \ncombination of ANDs and ORs can be posited, and the interaction of any \nnumber of latent dependent variables can be modeled, although the \nprocedure becomes exponentially more data-intensive as the number of \nlatent dependent variables increases.\n\nThe update to version 1.04 was not announced; only minor modifications \nwere made to ensure compatibility with R 1.9.\n\nThe update to version 1.05 permits the use of Sekhon and Mebane's \nGENOUD optimizer for likelihood surfaces that are convoluted and \ntherefore contain multiple local maxima.  Because this procedure can \nproduce such surfaces quite easily, the use of GENOUD is recommended.\n\n\nBear F. Braumoeller\nAssociate Professor\nDepartment of Government\nHarvard University\nhttp://www.people.fas.harvard.edu/~bfbraum",
+      "body_snippet": "I have just uploaded an updated version of my boolean package (v1.05), \nwhich should be propagating through CRAN's mirrors soon.  Boolean \npermits estimation of Boolean logit and probit models (see Br",
+      "thread_id": "thread-a62296607144",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-fc2bd1d0a760",
+      "message_id": "<20041008072022.GB16210@nf034.jinr.ru>",
+      "from_name": "Timur Elzhov",
+      "from_email_hash": "0d4c19e06afb749979bfe6806bc819f3cfe4872f02d5c0711c72ef66f7ca3a0d",
+      "date": "2004-10-08T11:20:22+04:00",
+      "subject": "[R-pkgs] R interface for MINPACK least squares optimization library",
+      "subject_clean": "R interface for MINPACK least squares optimization library",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello guys.\n\nI've built and uploaded to CRAN an R interface to MINPACK Fortran library,\nwhich  solves non-linear  least squares problem  by  modification of the\nLevenberg-Marquardt algorithm. The package includes one R function, which\npasses  all  the necessary control parameters to the appropriate Fortran\nfunctions.\n\nThe package location is\nhttp://cran.r-project.org/src/contrib/Descriptions/minpack.lm.html\n\n\nBest wishes,\nTimur.",
+      "body_snippet": "Hello guys.\n\nI've built and uploaded to CRAN an R interface to MINPACK Fortran library,\nwhich  solves non-linear  least squares problem  by  modification of the\nLevenberg-Marquardt algorithm. The pack",
+      "thread_id": "thread-fc2bd1d0a760",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-fc2bd1d0a760",
+      "message_id": "<20041008072022.GB16210@nf034.jinr.ru>",
+      "from_name": "Timur Elzhov",
+      "from_email_hash": "0d4c19e06afb749979bfe6806bc819f3cfe4872f02d5c0711c72ef66f7ca3a0d",
+      "date": "2004-10-08T11:20:22+04:00",
+      "subject": "[R-pkgs] R interface for MINPACK least squares optimization library",
+      "subject_clean": "R interface for MINPACK least squares optimization library",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello guys.\n\nI've built and uploaded to CRAN an R interface to MINPACK Fortran library,\nwhich  solves non-linear  least squares problem  by  modification of the\nLevenberg-Marquardt algorithm. The package includes one R function, which\npasses  all  the necessary control parameters to the appropriate Fortran\nfunctions.\n\nThe package location is\nhttp://cran.r-project.org/src/contrib/Descriptions/minpack.lm.html\n\n\nBest wishes,\nTimur.",
+      "body_snippet": "Hello guys.\n\nI've built and uploaded to CRAN an R interface to MINPACK Fortran library,\nwhich  solves non-linear  least squares problem  by  modification of the\nLevenberg-Marquardt algorithm. The pack",
+      "thread_id": "thread-fc2bd1d0a760",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-87519858db14",
+      "message_id": "<6.0.1.1.2.20041019162257.034c6ec0@stat4ux.stat.ucl.ac.be>",
+      "from_name": "Eric Lecoutre",
+      "from_email_hash": "8fa2348fb1c15ba0453cc647aa6644879770c76ceeb98d5db135f1b4dd3c7cf3",
+      "date": "2004-10-19T16:57:27+02:00",
+      "subject": "[R-pkgs] R2HTML version 1.4-3",
+      "subject_clean": "R2HTML version 1.4-3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi useRs,\n\nI have uploaded on CRAN R2HTML version 1.4-3, which should be available \nsoon for your favorite platform.\n\nFor R 2.0.0, I had to rewrite some parts of the code so that it works. I \ndid that quickly (maybe too), letting some bugs.\n\nNow, this is mere the good R 2.0 version, with some new functionalities:\n\n- HTML.matrix and HTML.data.frame now can use several new output options\n   as they call now 'format. This allows using a comma \",\" as decimal\n   separator for example. All 'format' arguments are allowed and can be used\n   as a single element (value applies to all columns) or a vector (provide\n   values for each column). - Suggestion by Arne Henningsen\n\n- HTML.data.frame now has a sortableDF option. When using it, a link to\n   an external DHTML behavior file is done (suggestion by Tom Short, could be\n   used by it's wonderful Rpad)\n\n- Available options that user may want to change\n  (default for every   matrix/DF):\n\tR2HTML.sortableDF  \t\t(FALSE)\n\tR2HTML.format.digits  \t\t(2)\n\tR2HTML.format.nsmall  \t\t(0)\n\tR2HTML.format.big.mark\t\t(\"\")\n\tR2HTML.format.big.interval\t(3)\n\tR2HTML.format.decimal.mark=\t(Sys.localeconv()[[\"decimal_point\"]])\n\n- Bug fixed: HTML.table\n\nFollowing modifications contributed by Philippe Grosjean\n\n- Now uses NAMESPACE\n\n- Renamed .First.lib() into .onLoad()\n\n- In RweaveHTMLSetup(), commented if(!require(R2HTML))\n       stop(\"R2HTML package is required.\").\n   This is not useful, becasue this function IS in R2HTML package!!!\n\n- Changed utils:::XXX and utils::XXX into XXX everywhere, and added\n   import(utils) in NAMESPACE instead.\n\nEric\nEric Lecoutre\nUCL /  Institut de Statistique\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBelgium\n\ntel: (+32)(0)10473050\nlecoutre at stat.ucl.ac.be\nhttp://www.stat.ucl.ac.be/ISpersonnel/lecoutre\n\nIf the statistics are boring, then you've got the wrong numbers. -Edward \nTufte",
+      "body_snippet": "Hi useRs,\n\nI have uploaded on CRAN R2HTML version 1.4-3, which should be available \nsoon for your favorite platform.\n\nFor R 2.0.0, I had to rewrite some parts of the code so that it works. I \ndid that",
+      "thread_id": "thread-87519858db14",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-87519858db14",
+      "message_id": "<6.0.1.1.2.20041019162257.034c6ec0@stat4ux.stat.ucl.ac.be>",
+      "from_name": "Eric Lecoutre",
+      "from_email_hash": "8fa2348fb1c15ba0453cc647aa6644879770c76ceeb98d5db135f1b4dd3c7cf3",
+      "date": "2004-10-19T16:57:27+02:00",
+      "subject": "[R-pkgs] R2HTML version 1.4-3",
+      "subject_clean": "R2HTML version 1.4-3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi useRs,\n\nI have uploaded on CRAN R2HTML version 1.4-3, which should be available \nsoon for your favorite platform.\n\nFor R 2.0.0, I had to rewrite some parts of the code so that it works. I \ndid that quickly (maybe too), letting some bugs.\n\nNow, this is mere the good R 2.0 version, with some new functionalities:\n\n- HTML.matrix and HTML.data.frame now can use several new output options\n   as they call now 'format. This allows using a comma \",\" as decimal\n   separator for example. All 'format' arguments are allowed and can be used\n   as a single element (value applies to all columns) or a vector (provide\n   values for each column). - Suggestion by Arne Henningsen\n\n- HTML.data.frame now has a sortableDF option. When using it, a link to\n   an external DHTML behavior file is done (suggestion by Tom Short, could be\n   used by it's wonderful Rpad)\n\n- Available options that user may want to change\n  (default for every   matrix/DF):\n\tR2HTML.sortableDF  \t\t(FALSE)\n\tR2HTML.format.digits  \t\t(2)\n\tR2HTML.format.nsmall  \t\t(0)\n\tR2HTML.format.big.mark\t\t(\"\")\n\tR2HTML.format.big.interval\t(3)\n\tR2HTML.format.decimal.mark=\t(Sys.localeconv()[[\"decimal_point\"]])\n\n- Bug fixed: HTML.table\n\nFollowing modifications contributed by Philippe Grosjean\n\n- Now uses NAMESPACE\n\n- Renamed .First.lib() into .onLoad()\n\n- In RweaveHTMLSetup(), commented if(!require(R2HTML))\n       stop(\"R2HTML package is required.\").\n   This is not useful, becasue this function IS in R2HTML package!!!\n\n- Changed utils:::XXX and utils::XXX into XXX everywhere, and added\n   import(utils) in NAMESPACE instead.\n\nEric\nEric Lecoutre\nUCL /  Institut de Statistique\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBelgium\n\ntel: (+32)(0)10473050\nlecoutre at stat.ucl.ac.be\nhttp://www.stat.ucl.ac.be/ISpersonnel/lecoutre\n\nIf the statistics are boring, then you've got the wrong numbers. -Edward \nTufte",
+      "body_snippet": "Hi useRs,\n\nI have uploaded on CRAN R2HTML version 1.4-3, which should be available \nsoon for your favorite platform.\n\nFor R 2.0.0, I had to rewrite some parts of the code so that it works. I \ndid that",
+      "thread_id": "thread-87519858db14",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-c171a64fe19e",
+      "message_id": "<16757.25703.394807.531238@galadriel.ci.tuwien.ac.at>",
+      "from_name": "Friedrich.Leisch at ci.tuwien.ac.at",
+      "from_email_hash": "5a5fdfa4351343af049914cd2641c9feb963f07285041256e0164002823b1114",
+      "date": "2004-10-19T21:00:55+02:00",
+      "subject": "[R-pkgs] flexmix version 1.0-0 released",
+      "subject_clean": "flexmix version 1.0-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nFlexMix version 1.0-0 has been released on CRAN. FlexMix implements a\ngeneral framework for finite mixtures of regression models using the\nEM algorithm.  FlexMix provides the E-step and all data handling,\nwhile the M-step can be supplied by the user to easily define new\nmodels. Existing drivers implement mixtures of standard linear models,\ngeneralized linear models and model-based clustering.\n\nCompared to the porvious version on CRAN the code has not changed, but\nthe package has now an introductionary vignette, see\n\n\tvignette(\"flexmix-intro\")\n\nafter installing the package. The vignette has also been published in\nthe Journal of Statistical Software, see http://www.jstatsoft.org.\n\nBest regards,\nFritz Leisch\n\n** DESCRIPTION *******************************************\nPackage: flexmix\nVersion: 1.0-0\nDate: 2004-10-19\nAuthor: Friedrich Leisch\nTitle: Flexible Mixture Modeling\nDepends: R (>= 1.9.0), graphics, methods, stats, stats4\nSuggests: MASS, ellipse, mvtnorm\nLicense: GPL version 2.\nURL: http://www.ci.tuwien.ac.at/~leisch/FlexMix",
+      "body_snippet": "Dear useRs,\n\nFlexMix version 1.0-0 has been released on CRAN. FlexMix implements a\ngeneral framework for finite mixtures of regression models using the\nEM algorithm.  FlexMix provides the E-step and a",
+      "thread_id": "thread-c171a64fe19e",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-c171a64fe19e",
+      "message_id": "<16757.25703.394807.531238@galadriel.ci.tuwien.ac.at>",
+      "from_name": "Friedrich.Leisch at ci.tuwien.ac.at",
+      "from_email_hash": "5a5fdfa4351343af049914cd2641c9feb963f07285041256e0164002823b1114",
+      "date": "2004-10-19T21:00:55+02:00",
+      "subject": "[R-pkgs] flexmix version 1.0-0 released",
+      "subject_clean": "flexmix version 1.0-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nFlexMix version 1.0-0 has been released on CRAN. FlexMix implements a\ngeneral framework for finite mixtures of regression models using the\nEM algorithm.  FlexMix provides the E-step and all data handling,\nwhile the M-step can be supplied by the user to easily define new\nmodels. Existing drivers implement mixtures of standard linear models,\ngeneralized linear models and model-based clustering.\n\nCompared to the porvious version on CRAN the code has not changed, but\nthe package has now an introductionary vignette, see\n\n\tvignette(\"flexmix-intro\")\n\nafter installing the package. The vignette has also been published in\nthe Journal of Statistical Software, see http://www.jstatsoft.org.\n\nBest regards,\nFritz Leisch\n\n** DESCRIPTION *******************************************\nPackage: flexmix\nVersion: 1.0-0\nDate: 2004-10-19\nAuthor: Friedrich Leisch\nTitle: Flexible Mixture Modeling\nDepends: R (>= 1.9.0), graphics, methods, stats, stats4\nSuggests: MASS, ellipse, mvtnorm\nLicense: GPL version 2.\nURL: http://www.ci.tuwien.ac.at/~leisch/FlexMix",
+      "body_snippet": "Dear useRs,\n\nFlexMix version 1.0-0 has been released on CRAN. FlexMix implements a\ngeneral framework for finite mixtures of regression models using the\nEM algorithm.  FlexMix provides the E-step and a",
+      "thread_id": "thread-c171a64fe19e",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-5f644dad6665",
+      "message_id": "<16761.17686.677020.587408@ls01.fas.harvard.edu>",
+      "from_name": "Jasjeet Singh Sekhon",
+      "from_email_hash": "c242cc62896f45372f06954b45d6a9a9bbd4e58560fc0021f6b09cb968514169",
+      "date": "2004-10-22T13:36:22-04:00",
+      "subject": "[R-pkgs] New Package for Multivariate and Propensity Score Matching",
+      "subject_clean": "New Package for Multivariate and Propensity Score Matching",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "\"Matching\" version 0.48 is now available on CRAN.\n\nMatching provides functions for estimating causal effects by\nmultivariate and propensity score matching. The package includes a\nvariety of univariate and multivariate tests to determine if balance\nhas been obtained by the matching procedure. These tests can also be\nused to determine if an experiment or quasi-experiment is balanced on\nbaseline covariates.  The functions provide valid standard errors and\nallow one to estimate various estimands.\n\nFor documentation and further details see:\n\nhttp://jsekhon.fas.harvard.edu/matching\n\nCheers,\nJas.\n\n======================================\nJasjeet S. Sekhon\nAssociate Professor\nHarvard University\nCenter for Basic Research in the \n  Social Sciences\njasjeet_sekhon at harvard.edu\nhttp://jsekhon.fas.harvard.edu/\nOffice: 617.496.2426 Fax: 617.507.5524",
+      "body_snippet": "\"Matching\" version 0.48 is now available on CRAN.\n\nMatching provides functions for estimating causal effects by\nmultivariate and propensity score matching. The package includes a\nvariety of univariate",
+      "thread_id": "thread-5f644dad6665",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-5f644dad6665",
+      "message_id": "<16761.17686.677020.587408@ls01.fas.harvard.edu>",
+      "from_name": "Jasjeet Singh Sekhon",
+      "from_email_hash": "c242cc62896f45372f06954b45d6a9a9bbd4e58560fc0021f6b09cb968514169",
+      "date": "2004-10-22T13:36:22-04:00",
+      "subject": "[R-pkgs] New Package for Multivariate and Propensity Score Matching",
+      "subject_clean": "New Package for Multivariate and Propensity Score Matching",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "\"Matching\" version 0.48 is now available on CRAN.\n\nMatching provides functions for estimating causal effects by\nmultivariate and propensity score matching. The package includes a\nvariety of univariate and multivariate tests to determine if balance\nhas been obtained by the matching procedure. These tests can also be\nused to determine if an experiment or quasi-experiment is balanced on\nbaseline covariates.  The functions provide valid standard errors and\nallow one to estimate various estimands.\n\nFor documentation and further details see:\n\nhttp://jsekhon.fas.harvard.edu/matching\n\nCheers,\nJas.\n\n======================================\nJasjeet S. Sekhon\nAssociate Professor\nHarvard University\nCenter for Basic Research in the \n  Social Sciences\njasjeet_sekhon at harvard.edu\nhttp://jsekhon.fas.harvard.edu/\nOffice: 617.496.2426 Fax: 617.507.5524",
+      "body_snippet": "\"Matching\" version 0.48 is now available on CRAN.\n\nMatching provides functions for estimating causal effects by\nmultivariate and propensity score matching. The package includes a\nvariety of univariate",
+      "thread_id": "thread-5f644dad6665",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-2709b654e00c",
+      "message_id": "<Pine.LNX.4.44.0410281558340.3752-100000@gannet.stats>",
+      "from_name": "Prof Brian Ripley",
+      "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
+      "date": "2004-10-28T16:07:26+01:00",
+      "subject": "[R-pkgs] Package foreign_0.8-0 is on CRAN",
+      "subject_clean": "Package foreign_0.8-0 is on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is an update for the `foreign' package now on the CRAN master and \nsoon on a mirror near you.\n\nThis adds support for\n\nDBF files (by Nicholas Lewin-Koh, Roger Bivand and myself)\nSystat files written on MS-DOS/Windows (by Roger Bivand)\n\nThe reasons for announcing this update are\n\n1) People quite often ask for DBF support.\n\n2) There is a `maptools' update that depends on getting this one.\n\n3) We have tested many Systat and DBF files, and even created some extreme\nexamples of our own.  But many applications write DBF files and inevitably\nthere are rogue files out there, so we would appreciate seeing examples\nthat either do not work as expected or crash R.\n\nThe `R Data Import/Export' manual in R-patched and R-devel has been \nrevised to cover the new functionality.\n\n-- \nBrian D. Ripley,                  ripley at stats.ox.ac.uk\nProfessor of Applied Statistics,  http://www.stats.ox.ac.uk/~ripley/\nUniversity of Oxford,             Tel:  +44 1865 272861 (self)\n1 South Parks Road,                     +44 1865 272866 (PA)\nOxford OX1 3TG, UK                Fax:  +44 1865 272595",
+      "body_snippet": "There is an update for the `foreign' package now on the CRAN master and \nsoon on a mirror near you.\n\nThis adds support for\n\nDBF files (by Nicholas Lewin-Koh, Roger Bivand and myself)\nSystat files writ",
+      "thread_id": "thread-2709b654e00c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    },
+    {
+      "id": "msg-2709b654e00c",
+      "message_id": "<Pine.LNX.4.44.0410281558340.3752-100000@gannet.stats>",
+      "from_name": "Prof Brian Ripley",
+      "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
+      "date": "2004-10-28T16:07:26+01:00",
+      "subject": "[R-pkgs] Package foreign_0.8-0 is on CRAN",
+      "subject_clean": "Package foreign_0.8-0 is on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is an update for the `foreign' package now on the CRAN master and \nsoon on a mirror near you.\n\nThis adds support for\n\nDBF files (by Nicholas Lewin-Koh, Roger Bivand and myself)\nSystat files written on MS-DOS/Windows (by Roger Bivand)\n\nThe reasons for announcing this update are\n\n1) People quite often ask for DBF support.\n\n2) There is a `maptools' update that depends on getting this one.\n\n3) We have tested many Systat and DBF files, and even created some extreme\nexamples of our own.  But many applications write DBF files and inevitably\nthere are rogue files out there, so we would appreciate seeing examples\nthat either do not work as expected or crash R.\n\nThe `R Data Import/Export' manual in R-patched and R-devel has been \nrevised to cover the new functionality.\n\n-- \nBrian D. Ripley,                  ripley at stats.ox.ac.uk\nProfessor of Applied Statistics,  http://www.stats.ox.ac.uk/~ripley/\nUniversity of Oxford,             Tel:  +44 1865 272861 (self)\n1 South Parks Road,                     +44 1865 272866 (PA)\nOxford OX1 3TG, UK                Fax:  +44 1865 272595",
+      "body_snippet": "There is an update for the `foreign' package now on the CRAN master and \nsoon on a mirror near you.\n\nThis adds support for\n\nDBF files (by Nicholas Lewin-Koh, Roger Bivand and myself)\nSystat files writ",
+      "thread_id": "thread-2709b654e00c",
+      "thread_depth": 0,
+      "month": "2004-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-797714b1130c",
+      "subject": "gregmisc 2.0.0 release",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-10-01T10:19:47-04:00",
+      "last_reply": "2004-10-01T10:19:47-04:00",
+      "root_message_id": "msg-797714b1130c"
+    },
+    {
+      "id": "thread-797714b1130c",
+      "subject": "gregmisc 2.0.0 release",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-10-01T10:19:47-04:00",
+      "last_reply": "2004-10-01T10:19:47-04:00",
+      "root_message_id": "msg-797714b1130c"
+    },
+    {
+      "id": "thread-aff1695cfd9c",
+      "subject": "genetics 1.1.0 released",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-10-01T10:20:58-04:00",
+      "last_reply": "2004-10-01T10:20:58-04:00",
+      "root_message_id": "msg-aff1695cfd9c"
+    },
+    {
+      "id": "thread-aff1695cfd9c",
+      "subject": "genetics 1.1.0 released",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-10-01T10:20:58-04:00",
+      "last_reply": "2004-10-01T10:20:58-04:00",
+      "root_message_id": "msg-aff1695cfd9c"
+    },
+    {
+      "id": "thread-70bc9d7aaf8f",
+      "subject": "Publishing R package descriptions in JSS",
+      "message_count": 1,
+      "participants": [
+        "Jan de Leeuw"
+      ],
+      "started": "2004-10-02T11:55:16-07:00",
+      "last_reply": "2004-10-02T11:55:16-07:00",
+      "root_message_id": "msg-70bc9d7aaf8f"
+    },
+    {
+      "id": "thread-70bc9d7aaf8f",
+      "subject": "Publishing R package descriptions in JSS",
+      "message_count": 1,
+      "participants": [
+        "Jan de Leeuw"
+      ],
+      "started": "2004-10-02T11:55:16-07:00",
+      "last_reply": "2004-10-02T11:55:16-07:00",
+      "root_message_id": "msg-70bc9d7aaf8f"
+    },
+    {
+      "id": "thread-3472e10b8cf7",
+      "subject": "verfication package announcement",
+      "message_count": 1,
+      "participants": [
+        "Matt Pocernich"
+      ],
+      "started": "2004-10-04T10:02:33-06:00",
+      "last_reply": "2004-10-04T10:02:33-06:00",
+      "root_message_id": "msg-3472e10b8cf7"
+    },
+    {
+      "id": "thread-3472e10b8cf7",
+      "subject": "verfication package announcement",
+      "message_count": 1,
+      "participants": [
+        "Matt Pocernich"
+      ],
+      "started": "2004-10-04T10:02:33-06:00",
+      "last_reply": "2004-10-04T10:02:33-06:00",
+      "root_message_id": "msg-3472e10b8cf7"
+    },
+    {
+      "id": "thread-a62296607144",
+      "subject": "updated package boolean 1.5",
+      "message_count": 1,
+      "participants": [
+        "Bear F. Braumoeller"
+      ],
+      "started": "2004-10-07T20:42:51-04:00",
+      "last_reply": "2004-10-07T20:42:51-04:00",
+      "root_message_id": "msg-a62296607144"
+    },
+    {
+      "id": "thread-a62296607144",
+      "subject": "updated package boolean 1.5",
+      "message_count": 1,
+      "participants": [
+        "Bear F. Braumoeller"
+      ],
+      "started": "2004-10-07T20:42:51-04:00",
+      "last_reply": "2004-10-07T20:42:51-04:00",
+      "root_message_id": "msg-a62296607144"
+    },
+    {
+      "id": "thread-fc2bd1d0a760",
+      "subject": "R interface for MINPACK least squares optimization library",
+      "message_count": 1,
+      "participants": [
+        "Timur Elzhov"
+      ],
+      "started": "2004-10-08T11:20:22+04:00",
+      "last_reply": "2004-10-08T11:20:22+04:00",
+      "root_message_id": "msg-fc2bd1d0a760"
+    },
+    {
+      "id": "thread-fc2bd1d0a760",
+      "subject": "R interface for MINPACK least squares optimization library",
+      "message_count": 1,
+      "participants": [
+        "Timur Elzhov"
+      ],
+      "started": "2004-10-08T11:20:22+04:00",
+      "last_reply": "2004-10-08T11:20:22+04:00",
+      "root_message_id": "msg-fc2bd1d0a760"
+    },
+    {
+      "id": "thread-87519858db14",
+      "subject": "R2HTML version 1.4-3",
+      "message_count": 1,
+      "participants": [
+        "Eric Lecoutre"
+      ],
+      "started": "2004-10-19T16:57:27+02:00",
+      "last_reply": "2004-10-19T16:57:27+02:00",
+      "root_message_id": "msg-87519858db14"
+    },
+    {
+      "id": "thread-87519858db14",
+      "subject": "R2HTML version 1.4-3",
+      "message_count": 1,
+      "participants": [
+        "Eric Lecoutre"
+      ],
+      "started": "2004-10-19T16:57:27+02:00",
+      "last_reply": "2004-10-19T16:57:27+02:00",
+      "root_message_id": "msg-87519858db14"
+    },
+    {
+      "id": "thread-c171a64fe19e",
+      "subject": "flexmix version 1.0-0 released",
+      "message_count": 1,
+      "participants": [
+        "Friedrich.Leisch at ci.tuwien.ac.at"
+      ],
+      "started": "2004-10-19T21:00:55+02:00",
+      "last_reply": "2004-10-19T21:00:55+02:00",
+      "root_message_id": "msg-c171a64fe19e"
+    },
+    {
+      "id": "thread-c171a64fe19e",
+      "subject": "flexmix version 1.0-0 released",
+      "message_count": 1,
+      "participants": [
+        "Friedrich.Leisch at ci.tuwien.ac.at"
+      ],
+      "started": "2004-10-19T21:00:55+02:00",
+      "last_reply": "2004-10-19T21:00:55+02:00",
+      "root_message_id": "msg-c171a64fe19e"
+    },
+    {
+      "id": "thread-5f644dad6665",
+      "subject": "New Package for Multivariate and Propensity Score Matching",
+      "message_count": 1,
+      "participants": [
+        "Jasjeet Singh Sekhon"
+      ],
+      "started": "2004-10-22T13:36:22-04:00",
+      "last_reply": "2004-10-22T13:36:22-04:00",
+      "root_message_id": "msg-5f644dad6665"
+    },
+    {
+      "id": "thread-5f644dad6665",
+      "subject": "New Package for Multivariate and Propensity Score Matching",
+      "message_count": 1,
+      "participants": [
+        "Jasjeet Singh Sekhon"
+      ],
+      "started": "2004-10-22T13:36:22-04:00",
+      "last_reply": "2004-10-22T13:36:22-04:00",
+      "root_message_id": "msg-5f644dad6665"
+    },
+    {
+      "id": "thread-2709b654e00c",
+      "subject": "Package foreign_0.8-0 is on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Prof Brian Ripley"
+      ],
+      "started": "2004-10-28T16:07:26+01:00",
+      "last_reply": "2004-10-28T16:07:26+01:00",
+      "root_message_id": "msg-2709b654e00c"
+    },
+    {
+      "id": "thread-2709b654e00c",
+      "subject": "Package foreign_0.8-0 is on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Prof Brian Ripley"
+      ],
+      "started": "2004-10-28T16:07:26+01:00",
+      "last_reply": "2004-10-28T16:07:26+01:00",
+      "root_message_id": "msg-2709b654e00c"
+    }
+  ]
+}

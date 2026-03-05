@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-12",
+  "messages": [
+    {
+      "id": "msg-6aaccd9d21f6",
+      "message_id": "<CAO=DOObcTgiq9Gz89y_g6P8A9GPcELDCo6S8K+cJrEp831Cxag@mail.gmail.com>",
+      "from_name": "Eric Weine",
+      "from_email_hash": "0f36da20c412dea03b08802df05062114118350b238bb2c63ae84ed8e8c2a5ec",
+      "date": "2021-12-13T12:50:41-05:00",
+      "subject": "[R-pkgs] qqconf: An R Package for Q-Q Plot Testing Bounds",
+      "subject_clean": "qqconf: An R Package for Q-Q Plot Testing Bounds",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello!\n\nI've recently released version 1.1.1 of qqconf\n<https://cloud.r-project.org/web/packages/qqconf/index.html>. I'm\npublicizing it for the first time as our vignette\n<https://cloud.r-project.org/web/packages/qqconf/vignettes/qqconf_introduction.html>\ntutorial\nis now available. We have also published the code on github\n<https://github.com/eweine/qqconf> and additional methodological details\nare available on the arXiv <https://arxiv.org/abs/2111.15082>.\n\nOur package contains a number of useful functionalities for creating\nQuantile-Quantile (QQ) plots. Most importantly, qqconf can very quickly\ncreate simultaneous testing bands for datasets of any size to conduct an\nalpha level test to determine if the sample comes from a given reference\ndistribution. This process is much faster than any other currently\navailable packages, especially for large datasets.\n\nPlease reach out with any questions!\n\nEric.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello!\n\nI've recently released version 1.1.1 of qqconf\n<https://cloud.r-project.org/web/packages/qqconf/index.html>. I'm\npublicizing it for the first time as our vignette\n<https://cloud.r-project.org/",
+      "thread_id": "thread-6aaccd9d21f6",
+      "thread_depth": 0,
+      "month": "2021-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6aaccd9d21f6",
+      "subject": "qqconf: An R Package for Q-Q Plot Testing Bounds",
+      "message_count": 1,
+      "participants": [
+        "Eric Weine"
+      ],
+      "started": "2021-12-13T12:50:41-05:00",
+      "last_reply": "2021-12-13T12:50:41-05:00",
+      "root_message_id": "msg-6aaccd9d21f6"
+    }
+  ]
+}

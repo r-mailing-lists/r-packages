@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-11",
+  "messages": [
+    {
+      "id": "msg-46fbde9b087b",
+      "message_id": "<trinity-cfe6d357-b000-4baa-be54-3e572a938b50-1572969779507@3c-app-mailcom-bs11>",
+      "from_name": "PY Berrard",
+      "from_email_hash": "a0380c71ae8dac202ed33c0f774075aa50a1c39fb4788aada7108f648ccb36c4",
+      "date": "2019-11-05T17:02:59+01:00",
+      "subject": "[R-pkgs] New package 'funprog' : data manipulation with high-order functions",
+      "subject_clean": "New package 'funprog' : data manipulation with high-order functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "DeaR users,\n\nA new package called 'funprog' is now on CRAN : https://CRAN.R-project.org/package=funprog\n\n'funprog' contains high-order functions to manipulate data, given one or more auxiliary functions.\nFunctions are inspired by other pure functional programming languages (Haskell mainly).\n\nThe package also provides built-in function operators for creating compact anonymous functions, as well as the possibility to use the purrr package syntax.\n\nIf you are interested, you will find more details and examples here : https://gitlab.com/py_b/funprog#readme\n\nBest regards,\n\nPierre-Yves B.",
+      "body_snippet": "DeaR users,\n\nA new package called 'funprog' is now on CRAN : https://CRAN.R-project.org/package=funprog\n\n'funprog' contains high-order functions to manipulate data, given one or more auxiliary functio",
+      "thread_id": "thread-46fbde9b087b",
+      "thread_depth": 0,
+      "month": "2019-11"
+    },
+    {
+      "id": "msg-3965b5825239",
+      "message_id": "<CAGzH7UfN-qWE1N0=Mm1i-uVCEc24_dyL0qi70UMkjcHxFTGt=A@mail.gmail.com>",
+      "from_name": "Terry Therneau",
+      "from_email_hash": "840e23c9e4ce722bb825784cb30e6e2d7ba06988ba6e21acfe474929f901144d",
+      "date": "2019-11-06T06:15:43-06:00",
+      "subject": "[R-pkgs] survival3.1",
+      "subject_clean": "survival3.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.x of the survival package is now available from CRAN.  This is a\nmajor update whose primary goal is to make the analysis of multi-state\nsurvival models as easy to do as simple Kaplan-Meier and Cox proportional\nhazard fits. The primary changes are\n\n    -- in Surv(time1, time2, status) the status variable can now be a\nfactor that specifies which state a subject has transitioned into.  From a\nuser's point of view this is the single key change.\n\n    -- survfit() will then create multi-state Pr(state | time) curves,\ni.e., the Aalen-Johansen estimate.  (Kaplan-Meier and cumulative incidence\nare special cases of the AJ).  Printout and plotting are unchanged.\n\n    -- coxph() will then create multi-state fits.  There is an easy\nformula-like syntax for specifying shared coefficients or baseline hazards.\n\n    -- all use standard data, i.e. the (time1, time2, status) format that\nis common for time-dependent covariates; there is no need to create special\nintermediate data sets.  (An id variable is necessary to specify which rows\ngo with whom.)\n\n    -- robust variance estimates available throughout\n\nMany other CRAN packages depend on survival, which drove a second goal of\n\"don't break it\".  Part of the testing involved running the test suits of\nall 679 reverse dependencies under the new version.\n\nTerry Therneau\ntherneau at mayo.edu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 3.x of the survival package is now available from CRAN.  This is a\nmajor update whose primary goal is to make the analysis of multi-state\nsurvival models as easy to do as simple Kaplan-Meier a",
+      "thread_id": "thread-3965b5825239",
+      "thread_depth": 0,
+      "month": "2019-11"
+    },
+    {
+      "id": "msg-743c1b4677ae",
+      "message_id": "<CAJ+Uk2V_9fZD+bJ+s5DG3Yto0tPLCO-fD_qLS7Vb60m+HGX7Sg@mail.gmail.com>",
+      "from_name": "Mark Murphy",
+      "from_email_hash": "32352758fc9db8deda49f53cccb34dc6bf67dcf43e4010f1207e8344d49fb2d2",
+      "date": "2019-11-08T16:48:55Z",
+      "subject": "[R-pkgs] New package 'semEff'",
+      "subject_clean": "New package 'semEff'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI have a new package <https://www.rdocumentation.org/packages/semEff>\navailable for automatic effect calculation for 'piecewise' structural\nequation models (SEM), commonly used in ecology and evolution. Confidence\nintervals are provided via bootstrapping. It also does some useful things\nfor linear and generalised linear (mixed) models, like standardised\ncoefficients, R-squared, etc. Feedback/bug reports welcome. This is my\nfirst CRAN release.\n\nCheers,\nMark\n-- \n*Mark V. Murphy*\n*Community Ecologist*\nmurphymv at gmail.com\n* <https://orcid.org/0000-0001-9178-0871>*\nORCID <https://orcid.org/0000-0001-9178-0871> | ResearcherID\n<https://publons.com/researcher/2970870/mark-murphy/> | ResearchGate\n<https://www.researchgate.net/profile/Mark_Murphy7> | Linkedin\n<https://www.linkedin.com/in/murphymv> | Twitter\n<https://twitter.com/murphy_mv> | GitHub <https://github.com/murphymv>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nI have a new package <https://www.rdocumentation.org/packages/semEff>\navailable for automatic effect calculation for 'piecewise' structural\nequation models (SEM), commonly used in ecology and evo",
+      "thread_id": "thread-743c1b4677ae",
+      "thread_depth": 0,
+      "month": "2019-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-46fbde9b087b",
+      "subject": "New package 'funprog' : data manipulation with high-order functions",
+      "message_count": 1,
+      "participants": [
+        "PY Berrard"
+      ],
+      "started": "2019-11-05T17:02:59+01:00",
+      "last_reply": "2019-11-05T17:02:59+01:00",
+      "root_message_id": "msg-46fbde9b087b"
+    },
+    {
+      "id": "thread-3965b5825239",
+      "subject": "survival3.1",
+      "message_count": 1,
+      "participants": [
+        "Terry Therneau"
+      ],
+      "started": "2019-11-06T06:15:43-06:00",
+      "last_reply": "2019-11-06T06:15:43-06:00",
+      "root_message_id": "msg-3965b5825239"
+    },
+    {
+      "id": "thread-743c1b4677ae",
+      "subject": "New package 'semEff'",
+      "message_count": 1,
+      "participants": [
+        "Mark Murphy"
+      ],
+      "started": "2019-11-08T16:48:55+00:00",
+      "last_reply": "2019-11-08T16:48:55+00:00",
+      "root_message_id": "msg-743c1b4677ae"
+    }
+  ]
+}

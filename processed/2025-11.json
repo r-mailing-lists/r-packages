@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2025-11",
+  "messages": [
+    {
+      "id": "msg-ca8d482a56db",
+      "message_id": "<20e36a82-665b-49eb-a035-f3922cc0ce46@id.uib.eu>",
+      "from_name": "Albert Sesé",
+      "from_email_hash": "14d3e0413fe43741bbe1e42d00a297bf72d317a9389583c458f5ebd63fdc866f",
+      "date": "2025-11-08T12:28:42+01:00",
+      "subject": "[R-pkgs] MLwrap: An R package for simplifying Machine Learning Models",
+      "subject_clean": "MLwrap: An R package for simplifying Machine Learning Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-packages community,\n\nI am prof. Albert Ses? from the University of the Balearic Islands (UIB).\n\nI am writing to announce MLwrap, an R package now available on CRAN.\n\nMLwrap is designed to simplify machine learning implementation for \neducational and research contexts. It provides a step-by-step workflow \nthat emphasizes reproducibility, transparency, and pedagogical clarity.\n\nThe package integrates four machine learning algorithms:\n\n- Neural Networks (Multilayer Perceptron)\n- Support Vector Machines\n- Random Forests\n- XGBoost\n\nKey features:\n\n- Unified pipeline for model building, optimization, and evaluation\n- Explicit handling of random seeds for reproducibility\n- Clear, accessible interface for learning\n- Built-in sensitivity analysis for model interpretation\n\nResources:\n\nCRAN package: https://cran.r-project.org/web/packages/MLwrap\nTutorial: https://osf.io/preprints/psyarxiv/j6m4z\n\nWeb page: https://areademetodologia.uib.es/MLwrap/MLwrap_website.html\n\nMLwrap is particularly useful for teaching statistics and data science? \ncourses to students and researchers new to machine learning.\n\nBest regards,\nDr. Albert Ses?\nUniversity of the Balearic Islands (UIB)\nDepartment of Psychology\nalbert.sese at uib.es",
+      "body_snippet": "Dear R-packages community,\n\nI am prof. Albert Ses? from the University of the Balearic Islands (UIB).\n\nI am writing to announce MLwrap, an R package now available on CRAN.\n\nMLwrap is designed to simpl",
+      "thread_id": "thread-ca8d482a56db",
+      "thread_depth": 0,
+      "month": "2025-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ca8d482a56db",
+      "subject": "MLwrap: An R package for simplifying Machine Learning Models",
+      "message_count": 1,
+      "participants": [
+        "Albert Sesé"
+      ],
+      "started": "2025-11-08T12:28:42+01:00",
+      "last_reply": "2025-11-08T12:28:42+01:00",
+      "root_message_id": "msg-ca8d482a56db"
+    }
+  ]
+}

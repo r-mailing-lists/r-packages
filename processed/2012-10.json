@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-10",
+  "messages": [
+    {
+      "id": "msg-184416a57c36",
+      "message_id": "<20121018080734.GC17593@deu.xfim>",
+      "from_name": "Xavier Fernández i Marín",
+      "from_email_hash": "4c3d75a4451f649cb398579cf7d3d7f08ff41c52555ca923bcb128e8b9973a8f",
+      "date": "2012-10-18T10:07:35+02:00",
+      "subject": "[R-pkgs] ggmcmc 0.2 has been released",
+      "subject_clean": "ggmcmc 0.2 has been released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nggmcmc-0.2 has been released.\n\nggmcmc is a tool for assessing and diagnosing convergence of Markov Chain\nMonte Carlo simulations, as well as for graphically display results from\nfull MCMC analysis. The package also facilitates the graphical\ninterpretation of models by providing flexible functions to plot the\nresults against observed variables.\n\nThere is an example of its use at:\nhttp://xavier-fim.net/packages/ggmcmc\n\n\nggmcmc is being developed at github:\nhttps://github.com/xfim/ggmcmc\n\nBest regards,\n\n-- \n-  Xavier  -",
+      "body_snippet": "Dear all,\n\nggmcmc-0.2 has been released.\n\nggmcmc is a tool for assessing and diagnosing convergence of Markov Chain\nMonte Carlo simulations, as well as for graphically display results from\nfull MCMC a",
+      "thread_id": "thread-184416a57c36",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-c56d3d5ff2d9",
+      "message_id": "<alpine.DEB.2.02.1210241533360.9734@paninaro.uibk.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2012-10-26T11:33:10+02:00",
+      "subject": "[R-pkgs] colorspace: interactive HCL palette chooser",
+      "subject_clean": "colorspace: interactive HCL palette chooser",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nwe have just released a new version (1.2-0) of the \"colorspace\" package:\nhttp://CRAN.R-project.org/package=colorspace\n\nIn addition to the infrastructure for transforming colors between \ndifferent color spaces (RGB, HSV, HCL, and various others) and support for \ndifferent types of color palettes (qualitative, sequential, diverging), \nthere is now a new graphical user interface (GUI) for choosing suitable \nHCL-based color palettes: choose_palette().\n\nThe Tcl/Tk-based GUI features a broad range of different palettes from and \nlets the user interactively modify the underlying parameters (hue, chroma, \nluminance, ...) to produce new palettes. It allows for easy exploration of \nthe effects of color blindness (through Thomas Lumley's \"dichromat\" \npackage) and of desaturation (emulating a grayscale printout for example). \nThe GUI contains various types of graphics (maps, heatmaps, barplots, line \nand scatterplots, ...) that can be checked to see how a chosen palette \nlooks in practice.\n\nMost of the coding for the new GUI was done by new package co-author Jason \nC. Fisher. To check it out, simply run\n\nexample(choose_palette)\n\nafter installing and loading the latest version of \"colorspace\" from CRAN.\nBackground information on the implemented palettes is provided in:\n\nAchim Zeileis, Kurt Hornik, Paul Murrell (2009).\nEscaping RGBland: Selecting Colors for Statistical Graphics.\nComputational Statistics & Data Analysis, 53, 3259-3270.\ndoi:10.1016/j.csda.2008.11.033\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nwe have just released a new version (1.2-0) of the \"colorspace\" package:\nhttp://CRAN.R-project.org/package=colorspace\n\nIn addition to the infrastructure for transforming colors between \nd",
+      "thread_id": "thread-c56d3d5ff2d9",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-2e21e39fec4f",
+      "message_id": "<508EB46B.1080603@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2012-10-29T11:52:59-05:00",
+      "subject": "[R-pkgs] CRAN submission rms 3.6-0",
+      "subject_clean": "CRAN submission rms 3.6-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "CRAN second submission rms 3.6-0 is now in /incoming\n\nThanks\nFrank\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "CRAN second submission rms 3.6-0 is now in /incoming\n\nThanks\nFrank\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt Uni",
+      "thread_id": "thread-2e21e39fec4f",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-839dc2703436",
+      "message_id": "<509055B5.1080206@vanderbilt.edu>",
+      "from_name": "Frank Harrell",
+      "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
+      "date": "2012-10-30T17:33:25-05:00",
+      "subject": "[R-pkgs] Version 3.6-0 of rms package now on CRAN",
+      "subject_clean": "Version 3.6-0 of rms package now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There have been a number of improvements and bug fixes in the rms \npackage which is now on CRAN for linux/unix (and shortly to be available \nfor Mac and Windows).\n\n    * Gls: Updated optimization calls - had become inconsistent with gls \nand failed if > 1 correlation parameter (thanks: Mark Seeto \n<markseeto at gmail.com>); removed opmeth argument\n    * print.fastbw: added argument: estimates\n    * survplot.survfit: handled fact that survival:::summary.survfit may \nnot preserve order of strata levels.  Also fixed survit.cph and cph; \nThanks: William.Fulp at moffitt.org\n    * plot.Predict: added example showing how to rename variables in plot\n    * print(fit object, latex=TRUE): added latex.naprint.delete, used \nnew Hmisc latexDotchart function to make a dot chart of number of NAs \ndue to each model variable if at least 4 variables have NAs\n    * added trans argument to plot.anova.rms to allow transformed scales\n    * Corrected cph to use model.offset(); thanks: Simon Thornley \n<s.thornley at auckland.ac.nz>\n    * Changed latex.anova.rms to use REGRESSION instead of TOTAL label\n    * Changed gendata, contrast.rms to allow expand=FALSE to prevent \nexpand.grid from being called to generate all combinations of predictors\n    * Added type= to plot.Predict to allow user to specify a different \ndefault line/point type (especially useful when x is categorical)\n    * Corrected bug in offset in psm - made default offset the length of X\n    * Corrected bug in calibrate.psm (fixed -> parms)\n    * predab.resample, calibrate.cph, calibrate.default, calibrate.psm: \nstopped putting results from overall initial fit into .Global and \ninstead had predab.resample put them in attribute keepinfo, obtained \nfrom measure()\n\n-- \nFrank E Harrell Jr Professor and Chairman      School of Medicine\n                    Department of Biostatistics Vanderbilt University",
+      "body_snippet": "There have been a number of improvements and bug fixes in the rms \npackage which is now on CRAN for linux/unix (and shortly to be available \nfor Mac and Windows).\n\n    * Gls: Updated optimization call",
+      "thread_id": "thread-839dc2703436",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-95f148f9bef8",
+      "message_id": "<CACsjJ_e-8dMaVigrTNXWnPuuWD8mNFmouCcAvmK-EAzTRywb8w@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2012-10-31T12:50:58-04:00",
+      "subject": "[R-pkgs] randomForestSRC 1.0.0 is now available on CRAN",
+      "subject_clean": "randomForestSRC 1.0.0 is now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear userRs:\n\nPlease find randomForestSRC 1.0.0 now available for download on CRAN.\n\nRandom Forests for Survival, Regression, and Classification provides a\nunified treatment of Breiman's random forests (Breiman 2001) for\nsurvival, regression, and classification problems.  The underlying\ncode is based on Ishwaran and Kogalur's now retired\n\"randomSurvivalForest\" package and has been significantly refactored\nfor improved computational speed.  It implements Breiman's random\nforests for a variety of data settings.  Numeric or categorical\n(factor) responses yield regression and classification forests.\nSurvival and competing risk forests are grown when the response is\nright-censored.  Different splitting rules invoked under deterministic\nor random splitting are available for all families.  Variable\npredictiveness can be assessed using variable importance (VIMP)\nmeasures for single, as well as grouped variables.  Variable selection\nis implemented using minimal depth variable selection. Missing data\n(for x-variables and y-outcomes) can be imputed on both training and\ntest data.\n\nThis package implements OpenMP shared-memory parallel programming.\nHowever, the default installation will only execute serially.  To\nutilize OpenMP, the target system must first support it.  To install\nthe package with OpenMP compiler options turned on: (1) Download the\nsource code for the package.  (2) From the root directory of the\npackage source run the command \"autoconf\".  (3) Use \"R CMD INSTALL\" on\nthe modified package directory.\n\nThank you.\n\nubk\n\nUdaya B. Kogalur, Ph.D.\nAdjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation\nConsultant, Kogalur Shear Corporation\n\nkogalurshear at gmail.com\nWebsite:  www.kogalur-shear.com",
+      "body_snippet": "Dear userRs:\n\nPlease find randomForestSRC 1.0.0 now available for download on CRAN.\n\nRandom Forests for Survival, Regression, and Classification provides a\nunified treatment of Breiman's random forest",
+      "thread_id": "thread-95f148f9bef8",
+      "thread_depth": 0,
+      "month": "2012-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-184416a57c36",
+      "subject": "ggmcmc 0.2 has been released",
+      "message_count": 1,
+      "participants": [
+        "Xavier Fernández i Marín"
+      ],
+      "started": "2012-10-18T10:07:35+02:00",
+      "last_reply": "2012-10-18T10:07:35+02:00",
+      "root_message_id": "msg-184416a57c36"
+    },
+    {
+      "id": "thread-c56d3d5ff2d9",
+      "subject": "colorspace: interactive HCL palette chooser",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2012-10-26T11:33:10+02:00",
+      "last_reply": "2012-10-26T11:33:10+02:00",
+      "root_message_id": "msg-c56d3d5ff2d9"
+    },
+    {
+      "id": "thread-2e21e39fec4f",
+      "subject": "CRAN submission rms 3.6-0",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2012-10-29T11:52:59-05:00",
+      "last_reply": "2012-10-29T11:52:59-05:00",
+      "root_message_id": "msg-2e21e39fec4f"
+    },
+    {
+      "id": "thread-839dc2703436",
+      "subject": "Version 3.6-0 of rms package now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Frank Harrell"
+      ],
+      "started": "2012-10-30T17:33:25-05:00",
+      "last_reply": "2012-10-30T17:33:25-05:00",
+      "root_message_id": "msg-839dc2703436"
+    },
+    {
+      "id": "thread-95f148f9bef8",
+      "subject": "randomForestSRC 1.0.0 is now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2012-10-31T12:50:58-04:00",
+      "last_reply": "2012-10-31T12:50:58-04:00",
+      "root_message_id": "msg-95f148f9bef8"
+    }
+  ]
+}

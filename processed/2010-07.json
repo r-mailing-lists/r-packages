@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-07",
+  "messages": [
+    {
+      "id": "msg-49ccd2361cb7",
+      "message_id": "<AANLkTilW5A4tUckYCFzzrIV9Rs_1I562f_n57hjPKB8P@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-07-07T19:35:19+02:00",
+      "subject": "[R-pkgs] ggplot2 version 0.8.8",
+      "subject_clean": "ggplot2 version 0.8.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.8 (2010-07-02) ----------------------------------------\n\nThis version fixes the following 23 bugs:\n\n* coord_equal finally works as expected (thanks to continued prompting\nfrom Jean-Olivier Irisson)\n* coord_equal renamed to coord_fixed to better represent capabilities\n* coord_polar and coord_polar: new munching system that uses distances\n(as defined by the coordinate system) to figure out how many pieces\neach segment should be broken in to (thanks to prompting from\nJean-Olivier Irisson)\n* fix ordering bug in facet_wrap (thanks to bug report by Frank Davenport)\n* geom_errorh correctly responds to height parameter outside of aes\n* geom_hline and geom_vline will not impact legend when used for fixed\nintercepts\n* geom_hline/geom_vline: intercept values not set quite correctly\nwhich caused a problem in conjunction with transformed scales\n(reported by Seth Finnegan)\n* geom_line: can now stack lines again with position = \"stack\" (fixes #74)\n* geom_segment: arrows now preserved in non-Cartesian coordinate\nsystem (fixes #117)\n* geom_smooth now deals with missing values in the same way as\ngeom_line (thanks to patch from Karsten Loesing)\n* guides: check all axis labels for expressions (reported by Benji Oswald)\n* guides: extra 0.5 line margin around legend (fixes #71)\n* guides: non-left legend positions now work once more (thanks to\npatch from Karsten Loesing)\n* label_bquote works with more expressions (factors now cast to\ncharacters, thanks to Baptiste Auguie for bug report)\n* scale_color: add missing US spellings\n* stat: panels with no non-missing values trigged errors with some\nstatistics. (reported by Giovanni Dall'Olio)\n* stat: statistics now also respect layer parameter inherit.aes\n(thanks to bug report by Lorenzo Isella and investigation by Brian\nDiggs)\n* stat_bin no longer drops 0-count bins by default\n* stat_bin: fix small bug when dealing with single bin with NA\nposition (reported by John Rauser)\n* stat_binhex: uses range of data from scales when computing binwidth\nso hexes are the same size in all facets (thanks to Nicholas Lewin-Koh\nfor the bug report)\n* stat_qq has new dparam parameter for specifying distribution\nparameters (thanks to Yunfeng Zhang for the bug report)\n* stat_smooth now uses built-in confidence interval (with small sample\ncorrection) for linear models (thanks to suggestion by Ian Fellows)\n* stat_spoke: correctly calculate stat_spoke (cos and sin were\nflipped, thanks to Jean-Olivier Irisson for bug report and fix)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-49ccd2361cb7",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-9bcee744076d",
+      "message_id": "<D3885B3B-BDB8-4258-8C33-23E1B8E98F85@princeton.edu>",
+      "from_name": "Graeme Blair",
+      "from_email_hash": "f4d93c8ce7ee8cd70afce4a149a34da4914c30d8e47e41d8dec4b822809d9924",
+      "date": "2010-07-11T17:32:24+01:00",
+      "subject": "[R-pkgs] New package \"list\" for analyzing list survey experiments",
+      "subject_clean": "New package \"list\" for analyzing list survey experiments",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nKosuke Imai and I announce the new package \"list,\" which is now available on CRAN.\n\nlist: Multivariate Statistical Analysis for the Item Count Technique\n\nList allows researchers to conduct multivariate statistical analyses with data from the item count technique for sensitive survey questions. This survey methodology, also known as the list experiment or the unmatched count technique, is an alternative to the commonly used randomized response method. The package implements the methods described in Imai (2010) ``Statistical Inference for the Item Count Technique.''\n\nMore information is available at http://imai.princeton.edu/projects/sensitive.html\n\nBest wishes,\n\nGraeme Blair and Kosuke Imai\nDepartment of Politics \nPrinceton University",
+      "body_snippet": "Dear all,\n\nKosuke Imai and I announce the new package \"list,\" which is now available on CRAN.\n\nlist: Multivariate Statistical Analysis for the Item Count Technique\n\nList allows researchers to conduct ",
+      "thread_id": "thread-9bcee744076d",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-046da1e4dcd3",
+      "message_id": "<001801cb2d0c$a119a120$e34ce360$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2010-07-26T17:50:57-04:00",
+      "subject": "[R-pkgs] version 2.0-0 of the car package",
+      "subject_clean": "version 2.0-0 of the car package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nSandy Weisberg and I would like to announce version 2.0-0 of the car\npackage, now on CRAN. We've released this major revision of the package in\nanticipation of the publication of An R Companion to Applied Regression,\nSecond Edition (Sage, in press), co-authored by us, which should be\navailable before the end of the year.\n\nThe new version of the car package has a number of new functions and data\nsets, along with many changes to old functions, including a change in naming\nconventions, using \"camel-case\" rather than period-separated names: for\nexample, av.plots() is now avPlots(). For the time-being, old function\nnames, such as av.plots(), are available as deprecated aliases. A few\nfunctions from the alr3 package have also been rewritten, renamed, and are\nnow part of car. The alr3 package will be updated later in the year.\n\n\nRegards,\nJohn\n\n--------------------------------\nJohn Fox\nSenator William McMaster \n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear all,\n\nSandy Weisberg and I would like to announce version 2.0-0 of the car\npackage, now on CRAN. We've released this major revision of the package in\nanticipation of the publication of An R Compa",
+      "thread_id": "thread-046da1e4dcd3",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-5bdce8f8d56d",
+      "message_id": "<AANLkTi=Zh44evGEAHgL+Cu6wFLr8hopMXNbYwVsowFRm@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-07-26T20:43:59-05:00",
+      "subject": "[R-pkgs] plyr version 1.1",
+      "subject_clean": "plyr version 1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, you\nmight want to:\n\n  * fit the same model to subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with built-in functions (like split\nand the apply functions), but plyr just makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n\nSome considerable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast, or faster than, the\nbuilt-in functions.\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.  You can ask\nquestions about plyr (and data-manipulation in general) on the plyr\nmailing list.  Sign up at http://groups.google.com/group/manipulatr\n\nplyr 1.1 (2010-07-19) ---------------------------------------------------\n\n* *dply deals more gracefully with the case when all results are NULL\n(fixes #10)\n* *aply correctly orders output regardless of dimension names (fixes #11)\n* join gains type = \"full\" which preserves all x and y rows\n\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, ",
+      "thread_id": "thread-5bdce8f8d56d",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-12f5b40a4a69",
+      "message_id": "<AANLkTikp+dVafaDkxrAqrRne4Q=MoA1H+P---R6QVOjt@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2010-07-28T08:28:45-04:00",
+      "subject": "[R-pkgs] IPSUR-1.0 is on CRAN, plus update to RcmdrPlugin.IPSUR",
+      "subject_clean": "IPSUR-1.0 is on CRAN, plus update to RcmdrPlugin.IPSUR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "IPSUR-1.0 is making its way through CRAN. It is a snapshot of the\ndevelopment version of the following textbook:\n\nTitle: Introduction to Probability and Statistics using R, First Edition\nISBN: 978-0-557-24979-4\nPublisher: me\n\nThe book is targeted for an undergraduate course in probability and\nstatistics. The prerequisites are a couple semesters of calculus and a\nlittle bit of linear algebra. I have used various drafts of this\ndocument to supplement my lectures for over four years.\n\nIPSUR is FREE, in the GNU sense of the word. A pdf copy (plus the\nLaTeX source) is on the R-Forge Project Page:\n\nhttp://ipsur.r-forge.r-project.org/\n\nAlternatively, a person can do the following at the command prompt:\n\ninstall.packages(\"IPSUR\")\nlibrary(IPSUR)\nread(IPSUR)\n\nThere are still many important topics, examples, and (especially)\nexercises missing. I will add them as time and two toddlers permit. If\nyou would like to preview the daily-built, bleeding-edge latest\nversion you can get it with\n\ninstall.packages(\"IPSUR\", repos=\"http://R-Forge.R-project.org\")\n\nPlease route IPSUR-specific emails to the respective R-Forge mailing lists:\n\nQuestions or problems: ipsur-help at lists.r-forge.r-project.org\nMistakes, suggestions: ipsur-devel at lists.r-forge.r-project.org\n\nRcmdrPlugin.IPSUR is a plugin for the R Commander to accompany IPSUR.\nThe update to version 0.1-7 is an important one, because it squashes a\nlong-standing incompatibility problem with other plugins. The naming\nscheme for menus is also updated to be consistent with the other\nplugins in particular, and naming conventions in general.\n\nCheers,\nJay\n\nP.S. If you are thinking to print parts of IPSUR yourself then I\nrecommend the publisher-quality PDF linked from the Downloads section\nof the R-Forge Project Page.\n\n\n\n************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "IPSUR-1.0 is making its way through CRAN. It is a snapshot of the\ndevelopment version of the following textbook:\n\nTitle: Introduction to Probability and Statistics using R, First Edition\nISBN: 978-0-5",
+      "thread_id": "thread-12f5b40a4a69",
+      "thread_depth": 0,
+      "month": "2010-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-49ccd2361cb7",
+      "subject": "ggplot2 version 0.8.8",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-07-07T19:35:19+02:00",
+      "last_reply": "2010-07-07T19:35:19+02:00",
+      "root_message_id": "msg-49ccd2361cb7"
+    },
+    {
+      "id": "thread-9bcee744076d",
+      "subject": "New package \"list\" for analyzing list survey experiments",
+      "message_count": 1,
+      "participants": [
+        "Graeme Blair"
+      ],
+      "started": "2010-07-11T17:32:24+01:00",
+      "last_reply": "2010-07-11T17:32:24+01:00",
+      "root_message_id": "msg-9bcee744076d"
+    },
+    {
+      "id": "thread-046da1e4dcd3",
+      "subject": "version 2.0-0 of the car package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2010-07-26T17:50:57-04:00",
+      "last_reply": "2010-07-26T17:50:57-04:00",
+      "root_message_id": "msg-046da1e4dcd3"
+    },
+    {
+      "id": "thread-5bdce8f8d56d",
+      "subject": "plyr version 1.1",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-07-26T20:43:59-05:00",
+      "last_reply": "2010-07-26T20:43:59-05:00",
+      "root_message_id": "msg-5bdce8f8d56d"
+    },
+    {
+      "id": "thread-12f5b40a4a69",
+      "subject": "IPSUR-1.0 is on CRAN, plus update to RcmdrPlugin.IPSUR",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2010-07-28T08:28:45-04:00",
+      "last_reply": "2010-07-28T08:28:45-04:00",
+      "root_message_id": "msg-12f5b40a4a69"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-10",
+  "messages": [
+    {
+      "id": "msg-4b2e03562e17",
+      "message_id": "<1254406545.18275.35.camel@punchbuggy>",
+      "from_name": "Terry Therneau",
+      "from_email_hash": "382b7509cd09524d5383672b54b7679da321b2d7cddcbd90c1ab33e6472aece6",
+      "date": "2009-10-01T09:15:45-05:00",
+      "subject": "[R-pkgs] General mixed effects Cox models",
+      "subject_clean": "General mixed effects Cox models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "After an extremely long gestation, a new version of the coxme package is\nnow available on CRAN.  This function fits very general mixed-effects\nCox models using an lmer-like syntax.  For instance here is a model that\nfits a random treatment effect, using data from a multi-study\ncollaboration.\n\n   fit <- coxme(Surv(pg.time, pg.stat) ~ stage + trt + (trt|site) +\n\t\t     stata(site), data= multicolon)\n\nThe program allows for multiple random effects, and differing variance\nstructures for them.  It currently has a fairly simple vignette showing\nhow to use the package; I'll be improving this to include more examples\nover the next few months.  \n\nTerry Therneau\nMayo Clinic",
+      "body_snippet": "After an extremely long gestation, a new version of the coxme package is\nnow available on CRAN.  This function fits very general mixed-effects\nCox models using an lmer-like syntax.  For instance here ",
+      "thread_id": "thread-4b2e03562e17",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-6ad8136a0e26",
+      "message_id": "<alpine.DEB.1.10.0910011551140.4583@h180239.nist.gov>",
+      "from_name": "Katharine Mullen",
+      "from_email_hash": "e66758f72249d606022873f1d14e90d33cdef4e090cd376986ff85496beafd8d",
+      "date": "2009-10-01T16:05:06-04:00",
+      "subject": "[R-pkgs] DEoptim 2.0-0",
+      "subject_clean": "DEoptim 2.0-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nWe are happy to announce the release of the new version of DEoptim \n(version 2.0-0) which is now available from CRAN.\n\nThe DEoptim package [3] performs Differential Evolution (DE) minimization, \na genetic algorithm-based optimization technique [2,3]. This allows robust \nminimization over a continuous (bounded or not) domain.\n\nThe new DEoptim function calls a C implementation of the DE algorithm \nsimilar to the MS Visual C++ v5.0 implementation distributed with [2].\n\nMore details on DE optimization can be found on the DE homepage [1].\n\nWe believe that the DE approach may be applicable in many fields of \nresearch and hope that the package DEoptim will be fruitful for many \nresearchers.\n\nKate Mullen and David Ardia\n\nMODIFICATIONS\n   o The R-based implementation of Differential Evolution has been\n     replaced with a C-based implementation similar to the MS Visual C++\n     v5.0 implementation accompanying the book `Differential Evolution -\n     A Practical Approach to Global Optimization',downloaded from\n     http://www.icsi.berkeley.edu/~storn/DeWin.zip.\n\n     The new C implementation is significantly faster.\n\n   o The S3 method for plotting has been enhanced. It allows now to plot\n     the intermediate populations if provided.\n\n   o The package maintainer has been changed to Katharine Mullen,\n     <katharine.mullen at nist.gov>.\n\n   o A NAMESPACE has been added.\n\n   o Argument FUN for DEoptim is now called fn for compatibility with\n     optim.\n\n   o demo file has been removed\n\n   o CITATION file modified\n\nREFERENCES\n\n[1] Differential Evolution homepage: \nhttp://www.icsi.berkeley.edu/~storn/code.html\n\n[2] Price, K.V., Storn, R.M., Lampinen J.A. (2005). Differential Evolution\n- A Practical Approach to Global Optimization. Springer-Verlag.  ISBN\n3540209506.\n\n[3] Ardia, D., Mullen, K. (2009). DEoptim: Differential\nEvolution Optimization in R. R package version 2.0-0. URL\nhttp://CRAN.R-project.org/package=DEoptim",
+      "body_snippet": "Dear All,\n\nWe are happy to announce the release of the new version of DEoptim \n(version 2.0-0) which is now available from CRAN.\n\nThe DEoptim package [3] performs Differential Evolution (DE) minimizat",
+      "thread_id": "thread-6ad8136a0e26",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-992b003816ec",
+      "message_id": "<4ACC8D6C.20603@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2009-10-07T07:45:32-05:00",
+      "subject": "[R-pkgs] Updates to rms package",
+      "subject_clean": "Updates to rms package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The rms package, a replacement for the Design package, has been updated \non CRAN.  The most major change is the addition of smooth calibration \ncurves for externally (val.surv function) or internally (calibrate.cph, \ncalibrate.psm) validating a survival model with right-censored data. \nThe polspline package is used to estimate the survival probability at a \nfixed time point as a function of the predicted survival probability. \nSome user-requested plotting features have been added to bplot and \nplot.Predict.\n\nChanges in version 2.1-0\n    * Made Predict not return invisibly if predictors not specified\n    * New option nlines for plot.Predict for getting line plots with 2 \ncategorical predictors\n    * Added rename option to rbind.Predict to handle case where \npredictor name has changed between models\n    * Added ties=mean to approx( ) calls that did not have ties= specified\n    * Added nlevels argument to bplot to pass to contour\n    * Added par argument to iLegend - list to pass to par().\n    * Redirected ... argument to iLegend to image( ).\n    * Fixed groupkm - was printing warning messages wrongly\n    * Added new semiparametric survival prediction calibration curve \nmethod in val.surv for external validation; this is the first \nimplementation of smooth calibration curves for survival probability \nvalidation with right-censored data\n    * Fixed calibrate confidence limits from groupkm\n    * Added smooth calibration curve using hare (polspline package) for \ncalibrate.cph and calibrate.psm\n    * Added display of predicted risks for cph and psm models even for \nthe stratified KM method (old default)\n\n-- \nFrank E Harrell Jr   Professor and Chair           School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "The rms package, a replacement for the Design package, has been updated \non CRAN.  The most major change is the addition of smooth calibration \ncurves for externally (val.surv function) or internally ",
+      "thread_id": "thread-992b003816ec",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-9d7c392fb5f3",
+      "message_id": "<51DB78F6E5F0E84DB1F28E85AC471F3F16A09EE3E7@OB1NWS302.financial.com>",
+      "from_name": "Stefan Wilhelm",
+      "from_email_hash": "40112b2a5e2accb6bdd7cb6e0b2d279d39f7e6adc34a18fc83bbe16e96c1c7d3",
+      "date": "2009-10-09T08:57:25+02:00",
+      "subject": "[R-pkgs] Updates to tmvtnorm package",
+      "subject_clean": "Updates to tmvtnorm package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nthe tmvtnorm package, the package for the truncated multivariate normal distribution, has been updated on CRAN.\n\nThe major changes in version 0.8 are:\n* Reimplemented the Gibbs' sampler for random number generation in Fortran for performance reasons. This compiled code is now even faster than conventional rejection sampling and allows for the generation of large amounts of random numbers even in high dimensions.\n* Added a function ptmvnorm.marginal() for the one-dimensional marginal probabilities/CDF.\n\nBest regards,\nStefan Wilhelm\n\nfinancial.com AG\n\nMunich head office/Hauptsitz M?nchen: Maria-Probst-Str. 19 | 80939 M?nchen | Germany\nFrankfurt branch office/Niederlassung Frankfurt: Messeturm | Friedrich-Ebert-Anlage 49 | 60327 Frankfurt | Germany\nManagement board/Vorstand: Dr. Steffen Boehnert | Dr. Alexis Eisenhofer | Dr. Yann Samson | Matthias Wiederwach\nSupervisory board/Aufsichtsrat: Dr. Dr. Ernst zur Linden (chairman/Vorsitzender)\nRegister court/Handelsregister: Munich - HRB 128 972 | Sales tax ID number/St.Nr.: DE205 370 553",
+      "body_snippet": "Dear R users,\n\nthe tmvtnorm package, the package for the truncated multivariate normal distribution, has been updated on CRAN.\n\nThe major changes in version 0.8 are:\n* Reimplemented the Gibbs' sampler",
+      "thread_id": "thread-9d7c392fb5f3",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-fa1743b11ef9",
+      "message_id": "<979ffa270910290559v1b8cfc0dk510f5d06d3b35659@mail.gmail.com>",
+      "from_name": "David Hajage",
+      "from_email_hash": "e17f580a7f46b5d49ca87778a86df8e5d7609acb7fb34e442e7c2bd8905ac385",
+      "date": "2009-10-29T13:59:07+01:00",
+      "subject": "[R-pkgs] ascii package updated",
+      "subject_clean": "ascii package updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091029/2e4c02c1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091029/2e4c02c1/attachment.pl>",
+      "thread_id": "thread-fa1743b11ef9",
+      "thread_depth": 0,
+      "month": "2009-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4b2e03562e17",
+      "subject": "General mixed effects Cox models",
+      "message_count": 1,
+      "participants": [
+        "Terry Therneau"
+      ],
+      "started": "2009-10-01T09:15:45-05:00",
+      "last_reply": "2009-10-01T09:15:45-05:00",
+      "root_message_id": "msg-4b2e03562e17"
+    },
+    {
+      "id": "thread-6ad8136a0e26",
+      "subject": "DEoptim 2.0-0",
+      "message_count": 1,
+      "participants": [
+        "Katharine Mullen"
+      ],
+      "started": "2009-10-01T16:05:06-04:00",
+      "last_reply": "2009-10-01T16:05:06-04:00",
+      "root_message_id": "msg-6ad8136a0e26"
+    },
+    {
+      "id": "thread-992b003816ec",
+      "subject": "Updates to rms package",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2009-10-07T07:45:32-05:00",
+      "last_reply": "2009-10-07T07:45:32-05:00",
+      "root_message_id": "msg-992b003816ec"
+    },
+    {
+      "id": "thread-9d7c392fb5f3",
+      "subject": "Updates to tmvtnorm package",
+      "message_count": 1,
+      "participants": [
+        "Stefan Wilhelm"
+      ],
+      "started": "2009-10-09T08:57:25+02:00",
+      "last_reply": "2009-10-09T08:57:25+02:00",
+      "root_message_id": "msg-9d7c392fb5f3"
+    },
+    {
+      "id": "thread-fa1743b11ef9",
+      "subject": "ascii package updated",
+      "message_count": 1,
+      "participants": [
+        "David Hajage"
+      ],
+      "started": "2009-10-29T13:59:07+01:00",
+      "last_reply": "2009-10-29T13:59:07+01:00",
+      "root_message_id": "msg-fa1743b11ef9"
+    }
+  ]
+}

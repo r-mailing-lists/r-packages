@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-06",
+  "messages": [
+    {
+      "id": "msg-739d2b6af121",
+      "message_id": "<CAKRVzeL7Sx=xqTCNrAd2CRk+EAq4jVgpwayKKiFeEk8PNST6YA@mail.gmail.com>",
+      "from_name": "Jerzy Wieczorek",
+      "from_email_hash": "df7f23d1600a3856be6de6ff39f2ae8a1287c5654ad3babe0b6a50badd6dc2fc",
+      "date": "2022-06-21T21:16:43-04:00",
+      "subject": "[R-pkgs] {CIPerm}: Computationally-Efficient Confidence Intervals for Mean Shift from Permutation Methods",
+      "subject_clean": "{CIPerm}: Computationally-Efficient Confidence Intervals for Mean Shift from Permutation Methods",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nEmily Tupaj and I recently released a new package on CRAN:\n\n{CIPerm}: Computationally-Efficient Confidence Intervals\nfor Mean Shift from Permutation Methods\nhttps://cran.r-project.org/package=CIPerm\n\nProblem:\nIt is straightforward to carry out a permutation or randomization test of\nH_0: mu_A - mu_B = 0\nbut the \"naive\" approach to getting a confidence interval for the mean\nshift parameter\n(mu_A - mu_B)\nis more computationally-intensive. In this \"naive\" approach we would test\nH_0: mu_A - mu_B = delta\nfor many values of delta, and let our CI be the delta values where we\ndid not reject H_0. This requires running a new permutation test for\neach candidate value of delta.\n\nOur contribution:\nInstead of the naive approach, our R package implements an exact\nmethod derived by Minh Nguyen (2009) to calculate such confidence\ninterval endpoints from a single set of permutations. Thus, it is no\nmore computationally expensive than a single standard permutation\ntest.\n\nPlease see our package's README and `nguyen` vignette for examples and\na brief overview of the method:\nhttps://github.com/ColbyStatSvyRsch/CIPerm#readme\nhttps://cran.r-project.org/web/packages/CIPerm/vignettes/nguyen.html\n\nOur `naive` vignette contains timing tests to compare the\ncomputational speeds of Nguyen's method against the naive approach.\nFor large datasets, Nguyen's method is substantially faster:\nhttps://cran.r-project.org/web/packages/CIPerm/vignettes/naive.html\n\nFor details on the methodology, please see:\nNguyen, M.D. (2009). \"Nonparametric Inference using Randomization and\nPermutation Reference Distribution and their Monte-Carlo\nApproximation\" [unpublished MS thesis; Mara Tableman, advisor],\nPortland State University. Dissertations and Theses. Paper 5927.\nhttps://doi.org/10.15760/etd.7798\n\nFeedback is welcome by email or at:\nhttps://github.com/ColbyStatSvyRsch/CIPerm/issues\n\nBest wishes,\nJerzy Wieczorek\n\n-- \nJerzy Wieczorek\nAssistant Professor\nDepartment of Statistics\nColby College\n5841 Mayflower Hill\nWaterville, ME 04901\n207-859-5841\njawieczo at colby.edu",
+      "body_snippet": "Dear R users,\n\nEmily Tupaj and I recently released a new package on CRAN:\n\n{CIPerm}: Computationally-Efficient Confidence Intervals\nfor Mean Shift from Permutation Methods\nhttps://cran.r-project.org/p",
+      "thread_id": "thread-739d2b6af121",
+      "thread_depth": 0,
+      "month": "2022-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-739d2b6af121",
+      "subject": "{CIPerm}: Computationally-Efficient Confidence Intervals for Mean Shift from Permutation Methods",
+      "message_count": 1,
+      "participants": [
+        "Jerzy Wieczorek"
+      ],
+      "started": "2022-06-21T21:16:43-04:00",
+      "last_reply": "2022-06-21T21:16:43-04:00",
+      "root_message_id": "msg-739d2b6af121"
+    }
+  ]
+}

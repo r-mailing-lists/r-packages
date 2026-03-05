@@ -1,0 +1,230 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-07",
+  "messages": [
+    {
+      "id": "msg-d3c4fb48bd6c",
+      "message_id": "<475a3c8f0907010945p13e52b2am299cbf2c27fe43a9@mail.gmail.com>",
+      "from_name": "David M Smith",
+      "from_email_hash": "e873ecc9b48a51d9f95de487124f2f7eca018cad7e4a09f1c70640b96d54465e",
+      "date": "2009-07-01T09:45:08-07:00",
+      "subject": "[R-pkgs] Parallel programming packages iterators, foreach and doMC released",
+      "subject_clean": "Parallel programming packages iterators, foreach and doMC released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "REvolution Computing has just released three new packages for R to\nCRAN (under the open-source Apache 2.0 license): foreach, iterators,\nand doMC. Together, they provide a simple, scalable parallel computing\nframework for R that lets you take advantage of your multicore or\nmultiprocessor workstation to program loops that run faster than\ntraditional loops in R.\n\nThe three packages build on each other to implement a new loop\nconstruct for R -- foreach -- where iterations may run in parallel on\nseparate cores or processors.\n\n\"iterators\" implements the iterator object familiar to users of\nlanguages like Java, C# and Python to make it easy to program useful\nsequences - from all the prime numbers to the columns of a matrix or\nthe rows of an external database. Iterators objects are used as the\nindex variable for the parallel loops.\n\n\"foreach\" builds on the \"iterators\" package to introduce a new way of\nprogramming loops in R. Unlike the traditional for loop, a foreach\nloop can run multiple iterations simultaneously, in parallel. If you\nonly have a single-processor machine, foreach runs iterations\nsequentially. But with a multiprocessor workstation and a connection\nto a parallel programming backend, multiple iterations of the loop\nwill run in parallel. This means that without any changes to your\ncode, the loop will run faster (and with a speedup scaled by the\nnumber of available cores or processors, potentially much faster).\n\n\"doMC\" provides such a link between \"foreach\" and a parallel\nprogramming backend -- in this case, the multicore package (from Simon\nUrbanek). With this connection, foreach loops on MacOS and Unix/Linux\nsystems will make use of all the available cores/processors on the\nlocal workstation to run iterations in parallel.\n\nMore information at blog.revolution-computing.com:\nhttp://bit.ly/tygLz\n\n-- \nDavid M Smith <david at revolution-computing.com>\nDirector of Community, REvolution Computing www.revolution-computing.com\nTel: +1 (206) 577-4778 x3203 (San Francisco, USA)\n\nCheck out our upcoming events schedule at www.revolution-computing.com/events",
+      "body_snippet": "REvolution Computing has just released three new packages for R to\nCRAN (under the open-source Apache 2.0 license): foreach, iterators,\nand doMC. Together, they provide a simple, scalable parallel com",
+      "thread_id": "thread-d3c4fb48bd6c",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-3c3fc8c6f980",
+      "message_id": "<4A4C7B3B.2050602@web.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "15c6f9343c822bf97e545f3b88ce26db88e52254a70ea881177e6946cb00cf60",
+      "date": "2009-07-02T11:17:47+02:00",
+      "subject": "[R-pkgs] SweaveListingUtils --- a package for joining markup provided by TeX package 'listings' with Sweave",
+      "subject_clean": "SweaveListingUtils --- a package for joining markup provided by TeX package 'listings' with Sweave",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "As indicated in some off-list mail by Frank E. Harrell Jr.,\nthe announcement of the availability of package\n\n%---------------------------------------------\nSweaveListingUtils\n%---------------------------------------------\n\non CRAN, mingled into mail \"New versions for the distr-family of\npackages\" to R-pkgs from 21 Apr 2009, will probably have gone\nunnoticed by some people who might be interested in this package.\n\nBriefly, SweaveListingUtils provides utilities to make accessible\nthe markup commands provided by TeX package 'listings' (Heinz and Moses\n(2007)) for use with Sweave (confer Leisch(2002a,b,2003).\n\nR-functions for setting R-markup in Sweave by means of 'listings'\ncommand \\lstset are defined. (lstsetR, lstsetRd)\n\nR-Comments will automatically be set in a different style using\n\\lstset- resp. lstsetR()- argument 'commentstyle'.\n\nDifferent coloring for input, output and comments is set by default.\n\n.Rd markup is defined as a new \"sublanguage\" of TeX for listings package.\n\nPerhaps most useful is a feature for automatic keyword registration\nto listings for markup: We dynamically create a list of such keywords\nby masking/extending commands require(), library() such that, in\naddition to the usual behavior, these commands after attaching package\nSweaveListingUtils issue TeX (or more specifically listings) code\nregistering for markup all keywords found by ls() in the search() list;\nbesides this side effect require(), library() should behave as usual.\nThis way, each package can have its own markup style which can be useful\nto highlight ones own new functions in a different way.\n\nFinally, SweaveListingUtils also covers inclusion of code\nsniplets from a repository / an url (notably/by default from r-forge).\nThis can help to include R code from source files in some package\nR folder to be consistently documented in some vignette.\n\nFor details you may wish to consider  ?lstinputSourceFromRForge\nand vignette \"ExampleSweaveListingUtils\".\n\nI'd look forward to receiving questions, comments and\nsuggestions\n\nBest,\nPeter Ruckdeschel",
+      "body_snippet": "As indicated in some off-list mail by Frank E. Harrell Jr.,\nthe announcement of the availability of package\n\n%---------------------------------------------\nSweaveListingUtils\n%------------------------",
+      "thread_id": "thread-3c3fc8c6f980",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-a643e6fb2afe",
+      "message_id": "<E71B6F8FD9DA77498BED796B4E35362C01AB3F531F@NIHMLBX01.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2009-07-20T10:55:54-04:00",
+      "subject": "[R-pkgs] new package: exact2x2",
+      "subject_clean": "new package: exact2x2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/2ab43992/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/2ab43992/attachment.pl>",
+      "thread_id": "thread-a643e6fb2afe",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-aebe89674883",
+      "message_id": "<4A64B10B.5572.00B2.0@lshtm.ac.uk>",
+      "from_name": "Antonio.Gasparrini at lshtm.ac.uk",
+      "from_email_hash": "4259481ab2ca70510d6c3e35bf36d9141101faff9d6a8035498e7ebe93597860",
+      "date": "2009-07-20T18:01:48+01:00",
+      "subject": "[R-pkgs] new package 'dlnm' to run distributed lag non-linear models",
+      "subject_clean": "new package 'dlnm' to run distributed lag non-linear models",
+      "in_reply_to": null,
+      "references": [
+        "<4A648755020000B20005574E@smtp-a.lshtm.ac.uk>",
+        "<4A648765020000B200055751@smtp-a.lshtm.ac.uk>",
+        "<4A64B0A2020000B20005577E@smtp-a.lshtm.ac.uk>",
+        "<4A64B10C020000B200055782@smtp-a.lshtm.ac.uk>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/785957cd/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/785957cd/attachment.pl>",
+      "thread_id": "thread-aebe89674883",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-4472c1839b0c",
+      "message_id": "<4A658E0C.9080905@bitwrit.com.au>",
+      "from_name": "Jim Lemon",
+      "from_email_hash": "3273c0b7e1b702682c7827ee7e8f4ed4fffeab4d3b554d4b26eeca6e8bb9cf9b",
+      "date": "2009-07-21T19:44:44+10:00",
+      "subject": "[R-pkgs] plotrix v2.6-4",
+      "subject_clean": "plotrix v2.6-4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\nAfter a lot of rewriting, I am happy to say that plotrix_2.6-4 is on \nCRAN. The reason I am announcing this is that the newish hierobarp \nfunction has had a complete rewrite. This was the result of my learning \nthat the old version was horrendously slow on large data sets. Let me \nknow if there are any other problems in the package. Next up - a \nfunction to center plot titles to the figure region on plots that are \nway off center.\n\nJim",
+      "body_snippet": "Hi all,\nAfter a lot of rewriting, I am happy to say that plotrix_2.6-4 is on \nCRAN. The reason I am announcing this is that the newish hierobarp \nfunction has had a complete rewrite. This was the resu",
+      "thread_id": "thread-4472c1839b0c",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-ffc12f234a14",
+      "message_id": "<28152c800907251320kf470d51xbef3b93ebbb0a19e@mail.gmail.com>",
+      "from_name": "Cameron Bracken",
+      "from_email_hash": "ddc5e43326627b084db44fb0c8ef8deac4fd0ed8378e849572b6e075f71991fb",
+      "date": "2009-07-25T14:20:28-06:00",
+      "subject": "[R-pkgs] Beta Verson of tikzDevice Released!",
+      "subject_clean": "Beta Verson of tikzDevice Released!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090725/abfc180a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090725/abfc180a/attachment.pl>",
+      "thread_id": "thread-ffc12f234a14",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-365f6dfb8960",
+      "message_id": "<4A6C630A.10405@gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2009-07-26T16:07:06+02:00",
+      "subject": "[R-pkgs] Version 0.7 of package tsDyn, nonlinear time series",
+      "subject_clean": "Version 0.7 of package tsDyn, nonlinear time series",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi\n\nVersion 0.7 of package tsDyn presented at useR! 2009  is now on CRAN, \nextended with several new features.\n\nThe package tsDyn is aimed at estimating nonlinear time series models \nwhich exhibit regime specific properties. The regime switching dynamics \ncan either be described by smooth transition (STAR and LSTAR) or \nthreshold effects (SETAR). The package furthermore offers nonlinear \nmodels such as neural networks (NNET), and additive autoregressive (AAR) \nmodels.\n\nThe version 0.7 enhances the functionalities for the threshold \nautoregression models (SETAR) by extending the estimation techniques, \nproviding a complete testing framework and finally allowing its use in a \nmultivariate framework (generalizing VAR and VECM models).\n\nThose new features are particularly interesting in economic applications \nas they generalize the concept of cointegration: with threshold \ncointegration, variables are still meant to share a long-run \nrelationship, but their adjustment need not occur instantaneously but \nonly after the deviation exceeds some critical threshold. This allows \nthe model to take into account possible effects of transaction costs or \nstickiness of prices. Further, it permits us to capture asymmetries in \nthe adjustment process, where positive or negative deviations are not \ncorrected to the same extent.\n\nA second vignette available at \nhttp://code.google.com/p/tsdyn/wiki/ThresholdCointegration offers an \noverview of the threshold cointegration framework and describes the \nimplemented functions. It can serve as an ideal introduction for people \ninterested in discovering this field.\n\n\nMain new features include:\n-added possibilty to have two thresolds and hence three regimes in setar \nand selectSETAR (arg nthresh)\n-new functions for unit roots tests: KapShinTest() and BBCTest()\n-new functions for estimating VAR and VECM: lineVar\n-new function for estimating TVECM: function TVECM()\n-new function for estimating TVAR: function TVAR()\n-new function to test for setar: function setarTest()\n-new function to test for TVAR: function TVAR.LRtest()\n-new function to test for TVECM: functions TVECM.SeoTest() and \nHanSeo_TVECM()\n-new function to simulate/bootstrap a TVAR: function TVAR.sim()\n-new function to simulate/bootstrap a TVECM: function TVECM.sim()\n-new function to simulate/bootstrap a setar: function setar.sim()\n-new function to estimate regime-specific variance in setar: function \nresVar()\n-new function to extend a bootstrap replication in setarTest: function \nextendBoot()\n-added in selectSETAR() and setar() following args: include, common, \nmodel, trim, MM, ML, MH, model, restriction\n-added in selectSETAR(): criterion \"SSR\" (sum of squares residual) and \nargument max.iter\n-extended arg th in selectSETAR to search inside an intervall or around \na point or on the whole grid\n\nNote that minor fixes/improvements are expected soon, those will be only \nreported in the specific mailing list:  tsdyn at googlegroups.com\n\nAny comments/remarks, suggestions and bug reports are sure welcome!\n\nMatthieu Stigler",
+      "body_snippet": "Hi\n\nVersion 0.7 of package tsDyn presented at useR! 2009  is now on CRAN, \nextended with several new features.\n\nThe package tsDyn is aimed at estimating nonlinear time series models \nwhich exhibit reg",
+      "thread_id": "thread-365f6dfb8960",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-e6cb573a1788",
+      "message_id": "<eda626a30907311322w6080e122nb6bac3ffe0f584d6@mail.gmail.com>",
+      "from_name": "Justin Donaldson",
+      "from_email_hash": "0706b4f5bcf0eb19dcdf62b5a9634619396bec5cc6502ea1a936eed5faa1aced",
+      "date": "2009-07-31T16:22:27-04:00",
+      "subject": "[R-pkgs] New package for interactive brushing/cropping/deleting points from RGL : sculpt3d v 0.2",
+      "subject_clean": "New package for interactive brushing/cropping/deleting points from RGL : sculpt3d v 0.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090731/e424f20b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090731/e424f20b/attachment.pl>",
+      "thread_id": "thread-e6cb573a1788",
+      "thread_depth": 0,
+      "month": "2009-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d3c4fb48bd6c",
+      "subject": "Parallel programming packages iterators, foreach and doMC released",
+      "message_count": 1,
+      "participants": [
+        "David M Smith"
+      ],
+      "started": "2009-07-01T09:45:08-07:00",
+      "last_reply": "2009-07-01T09:45:08-07:00",
+      "root_message_id": "msg-d3c4fb48bd6c"
+    },
+    {
+      "id": "thread-3c3fc8c6f980",
+      "subject": "SweaveListingUtils --- a package for joining markup provided by TeX package 'listings' with Sweave",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2009-07-02T11:17:47+02:00",
+      "last_reply": "2009-07-02T11:17:47+02:00",
+      "root_message_id": "msg-3c3fc8c6f980"
+    },
+    {
+      "id": "thread-a643e6fb2afe",
+      "subject": "new package: exact2x2",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2009-07-20T10:55:54-04:00",
+      "last_reply": "2009-07-20T10:55:54-04:00",
+      "root_message_id": "msg-a643e6fb2afe"
+    },
+    {
+      "id": "thread-aebe89674883",
+      "subject": "new package 'dlnm' to run distributed lag non-linear models",
+      "message_count": 1,
+      "participants": [
+        "Antonio.Gasparrini at lshtm.ac.uk"
+      ],
+      "started": "2009-07-20T18:01:48+01:00",
+      "last_reply": "2009-07-20T18:01:48+01:00",
+      "root_message_id": "msg-aebe89674883"
+    },
+    {
+      "id": "thread-4472c1839b0c",
+      "subject": "plotrix v2.6-4",
+      "message_count": 1,
+      "participants": [
+        "Jim Lemon"
+      ],
+      "started": "2009-07-21T19:44:44+10:00",
+      "last_reply": "2009-07-21T19:44:44+10:00",
+      "root_message_id": "msg-4472c1839b0c"
+    },
+    {
+      "id": "thread-ffc12f234a14",
+      "subject": "Beta Verson of tikzDevice Released!",
+      "message_count": 1,
+      "participants": [
+        "Cameron Bracken"
+      ],
+      "started": "2009-07-25T14:20:28-06:00",
+      "last_reply": "2009-07-25T14:20:28-06:00",
+      "root_message_id": "msg-ffc12f234a14"
+    },
+    {
+      "id": "thread-365f6dfb8960",
+      "subject": "Version 0.7 of package tsDyn, nonlinear time series",
+      "message_count": 1,
+      "participants": [
+        "Matthieu Stigler"
+      ],
+      "started": "2009-07-26T16:07:06+02:00",
+      "last_reply": "2009-07-26T16:07:06+02:00",
+      "root_message_id": "msg-365f6dfb8960"
+    },
+    {
+      "id": "thread-e6cb573a1788",
+      "subject": "New package for interactive brushing/cropping/deleting points from RGL : sculpt3d v 0.2",
+      "message_count": 1,
+      "participants": [
+        "Justin Donaldson"
+      ],
+      "started": "2009-07-31T16:22:27-04:00",
+      "last_reply": "2009-07-31T16:22:27-04:00",
+      "root_message_id": "msg-e6cb573a1788"
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-04",
+  "messages": [
+    {
+      "id": "msg-f99b0891338c",
+      "message_id": "<428997EC9359D545926E03AE429681C321BE4D788E@si-mel01.entpe.net>",
+      "from_name": "PLAT didier",
+      "from_email_hash": "2aa9a0ff51f22695c7e74597c14549b147339faea99c5cd76dd13a05df31a9e2",
+      "date": "2012-04-02T15:05:34+02:00",
+      "subject": "[R-pkgs] New package IC2",
+      "subject_clean": "New package IC2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120402/20436a39/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120402/20436a39/attachment.pl>",
+      "thread_id": "thread-f99b0891338c",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-2a6225c42b5b",
+      "message_id": "<CAJ=0CtCdRr3hfkGGrWPC6Wt9+UYPJkvTYkovDk43=A_GHAgpng@mail.gmail.com>",
+      "from_name": "Adrian Dusa",
+      "from_email_hash": "c2afa4ff7eed7dfe3736cbfeb5723dea0a873413a6046e0927e8e7e940d7308f",
+      "date": "2012-04-08T12:57:16+03:00",
+      "subject": "[R-pkgs] new version of QCA",
+      "subject_clean": "new version of QCA",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI have just uploaded a new version of the QCA (Qualitative Comparative\nAnalysis) on CRAN, and it will be propagated in a couple of days.\n\nThis is version 1.0-0 (\"Easter edition\") of the package, straight from\nthe previous version 0.6-5, and it represent a major re-write of the\npackage in order to accomodate fuzzy-sets. I am pleased to welcome\nAlrik Thiem as a co-author of this package, his skills and knowledge\nhave been paramount to developing the current code.\n\nThis version has numerous changes in the code (probably too many to\npresent in this email) and new additional functions. Most notably, the\nprevious qmcc() function is now obsolete, given that all our tests\nhave shown that eqmcc() yield the same exact results but it's by far\nsuperior in speed.\n\nA very happy Easter, and happy QCA-ing,\nAdrian and Alrik\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd.\n050025 Bucharest sector 5\nRomania\nTel.:+40 21 3126618 \\\n? ? ? ?+40 21 3120210 / int.101\nFax: +40 21 3158391",
+      "body_snippet": "Dear All,\n\nI have just uploaded a new version of the QCA (Qualitative Comparative\nAnalysis) on CRAN, and it will be propagated in a couple of days.\n\nThis is version 1.0-0 (\"Easter edition\") of the pac",
+      "thread_id": "thread-2a6225c42b5b",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-d32f006e6935",
+      "message_id": "<4F83553E.80803@ku.edu>",
+      "from_name": "Paul Johnson",
+      "from_email_hash": "39535fb6d68bd241213126c7497c4b387b8587d36f0f655573d15b4a998aec72",
+      "date": "2012-04-09T16:31:42-05:00",
+      "subject": "[R-pkgs] rockchalk_1.5.4 posted",
+      "subject_clean": "rockchalk_1.5.4 posted",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings:\n\nrockchalk is a collection of functions to facilitate presentation of regression models.\nIt includes some functions that I have been circulating for quite some time (such as\n\"outreg\") as well as several others. The main aim is to allow people who do not\nunderstand very much R to survive a course in intermediate regression analysis.\nThe examples included with the functions include more than the usual amount of detail.\n\nThis version features\n\n1) a full vignette called \"rockchalk\" that illustrates many of the\nfunctions in the package.  The vignette includes an explanation of why mean-centering\nand residual-centering do not help with the \"inessential multicollinearity\" problem\nthat concerns users of regression models in which there are interactions or\nsquared terms.\n\n2) a function \"summarize\" that is intended to remedy some of the shortcomings I\nperceive in R's summary function.\n\nThe package is not coordinated with any particular textbook and should help in\nany class in which students are expected to estimate regression models, summarize\nthem in professional-looking tables, and conduct various follow up diagnostics.\n\nHighlights:\n\nplotSlopes & testSlopes: draw \"simple slopes\" graphs and conduct hypothesis tests\nfor moderator variables.\n\nplotCurves: an attempt to provide a \"termplot\" replacement that allows plots that\nincorporate mediators.\n\nplotPlane: a wrapper for persp to plot regressions in 3d (similar to scatterplot3d)\n\nstandardize, meanCenter, residualCenter: after fitting a non-centered model, use these\nto experiment with the benefits (or lack thereof) that flow from centering.\n\n-- \nPaul E. Johnson\t\t\temail: pauljohn at ku.edu\nhttp://pj.freefaculty.org\tAssoc. Director\nProfessor, Political Science \tCenter for Research Methods and Data Analysis\n1541 Lilac Lane, Rm 504\t\t1425 Jayhawk Blvd.\t\nUniversity of Kansas\t\tWatson Library, Rm. 470  \t\nLawrence, Kansas 66045-3129\tLawrence, Kansas 66045-7555\nPh: (785) 864-3523\t\tPh: (785) 864-3353",
+      "body_snippet": "Greetings:\n\nrockchalk is a collection of functions to facilitate presentation of regression models.\nIt includes some functions that I have been circulating for quite some time (such as\n\"outreg\") as we",
+      "thread_id": "thread-d32f006e6935",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-1ffa6a4ce682",
+      "message_id": "<438F3C8E-7A9D-4790-A977-2AEF3C28E052@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-04-11T08:31:41-04:00",
+      "subject": "[R-pkgs] mosaic 0.4 on CRAN",
+      "subject_clean": "mosaic 0.4 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120411/3be89a18/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120411/3be89a18/attachment.pl>",
+      "thread_id": "thread-1ffa6a4ce682",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-4da1edc36b43",
+      "message_id": "<CAM9CR=22b-99BsayK09G-g=8b+LfyfMJ7TipwnHQux6XXmp8Jg@mail.gmail.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "32fdd8046b75cfb0f4d6f8edc57dd69378ce2bc2369db36530b2110136c2b3c5",
+      "date": "2012-04-11T23:22:54+01:00",
+      "subject": "[R-pkgs] Significant updates to medical imaging packages: TractoR and RNiftyReg",
+      "subject_clean": "Significant updates to medical imaging packages: TractoR and RNiftyReg",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThere have been some recent major updates to the TractoR and RNiftyReg\npackages, which are available for medical image analysis applications.\nIf you use R for these purposes, I hope you will find the updates\nuseful.\n\nRNiftyReg is an image registration package, which provides a clean\nR-like interface to the NiftyReg library developed at University\nCollege London [1]. It is aimed at medical image registration, but\ncould be applied to 2D or 3D coalignment of images of any type.\nRNiftyReg version 0.6 adds an interface to the NiftyReg nonlinear\nregistration tool \"f3d\", which performs fast freeform\ndeformation-based registration based on a grid of control points. This\nis a fast implementation, which can perform 3D registration in under a\nminute for some medical images. The package is on CRAN, and\ndevelopment is coordinated through GitHub [2].\n\nTractoR is a larger project for medical image analysis, particularly\nwith magnetic resonance images [3]. It provides tools for reading,\nwriting, visualising, manipulating and processing MR images in R. The\ntractor.base package is on CRAN, and forms the backbone of the\nproject. Significant additions to this package in the 2.x series of\nreleases include:\n\n- Extensive use of the reference classes introduced in R 2.12.0.\n- Coercion methods between TractoR's \"MriImage\" class and the \"nifti\"\nclass in the oro.nifti package.\n- Specific support for sparse images (of any dimensionality).\n- The ability to read and write the MGH file format used by the\nFreesurfer software package.\n- A substantial number of other functionality and performance\nimprovements, as well as bug fixes.\n\nThe full TractoR distribution includes four other R packages, each\nsomewhat more specialised than tractor.base, as well as a flexible\ncommand-line interface which can be used to perform common tasks\nquickly. Details can be found in a recent JSS paper on TractoR [4].\n\nAll the best,\nJon\n\n[1] http://sourceforge.net/projects/niftyreg/\n[2] https://github.com/jonclayden/RNiftyReg\n[3] http://www.tractor-mri.org.uk\n[4] http://www.jstatsoft.org/v44/i08/\n\n--\nJonathan D Clayden, PhD\nLecturer in Neuroimaging and Biophysics\nImaging and Biophysics Unit\nUCL Institute of Child Health\n30 Guilford Street\nLONDON  WC1N 1EH\nUnited Kingdom\n\nt | +44 (0)20 7905 2708\nf | +44 (0)20 7905 2358\nw | www.homepages.ucl.ac.uk/~sejjjd2/\nw | www.diffusion-mri.org.uk/people/1",
+      "body_snippet": "Dear all,\n\nThere have been some recent major updates to the TractoR and RNiftyReg\npackages, which are available for medical image analysis applications.\nIf you use R for these purposes, I hope you wil",
+      "thread_id": "thread-4da1edc36b43",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-b5332393a53f",
+      "message_id": "<000101cd1b17$26658e80$7330ab80$@mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2012-04-15T10:50:49-04:00",
+      "subject": "[R-pkgs] version 3.0-0 of the sem now on CRAN",
+      "subject_clean": "version 3.0-0 of the sem now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nVersion 3.0-0 of the sem package is now on CRAN. From the package NEWS file:\n\n\to Compiled code for optimization.\n\t\n\to Added multi-group models.\n\t\n\to Modification indices for equality-constrained parameters.\n\t\n\to weights argument added to tsls().\n\t\n\to raw argument added to cfa().\n\nOf these changes, the first two are the most significant, and the first --\nthe use of compiled code to improve performance substantially -- was\nimplemented by Zhengua Nie, who has joined me and Jarrett Byrnes as a\nco-developer of the package.\n\nBest,\n John\n\n--------------------------------\nJohn Fox\nSenator William McMaster\n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nVersion 3.0-0 of the sem package is now on CRAN. From the package NEWS file:\n\n\to Compiled code for optimization.\n\t\n\to Added multi-group models.\n\t\n\to Modification indices for equality-co",
+      "thread_id": "thread-b5332393a53f",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-2fe380925810",
+      "message_id": "<4F8E7784.6080500@jrc.ec.europa.eu>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "cb7a54ef4e8975ad30de0695b2d09aa3d4937b447001baa0a37c3eb2d889aeda",
+      "date": "2012-04-18T10:12:52+02:00",
+      "subject": "[R-pkgs] new package: hydroPSO 0.1-54-1",
+      "subject_clean": "new package: hydroPSO 0.1-54-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R and hydrological/environmental community,\n\nI would like to draw your attention to hydroPSO, a newly developed R \npackage for the calibration/optimisation of (complex) environmental models.\n\nhydroPSO implements a state-of-the-art Particle Swarm Optimisation (PSO) \nalgorithm, which is a global optimisation technique with a surge of \nattention given its flexibility, ease of implementation and efficiency.\n\nKey features of hydroPSO are:\n\n1) Model-independent calibration engine\n2) Minimal user intervention to define I/O functions for interfacing \nhydroPSO with the model code\n3) Several fine-tuning options to customise the calibration engine (for \nadvanced PSO users)\n4) Sensitivity analysis included, using the Latin Hypercube \nOne-factor-At-a-Time (LH-OAT)\n5) Several functions for post-processing of the calibration results\n\n\nhydroPSO is already available on CRAN:\n\nhttp://cran.r-project.org/web/packages/hydroPSO/\n\n\nyou can install it with:\n\n > install.packages(\"hydroPSO\")\n\nThis package includes a vignette (tutorial) showing how to calibrate \nSWAT-2005 (http://swatmodel.tamu.edu/software/swat-model/) and \nMODFLOW-2005 \n(http://water.usgs.gov/nrp/gwsoftware/modflow2005/modflow2005.html) for \nreal-world case studies.\n\nYou can download the vignette and all the files required to follow the \ntwo case studies from:\n\nhttp://www.rforge.net/hydroPSO/\n\n\nFor assistance/bugs report/comments contact/collaboration do not \nhesitate to contact the authors:\n\nMauricio Zambrano-Bigiarini <mzb.devel [at] gmail.com>\nRodrigo Rojas               <Rodrigo.RojasMujica [at] gmail.com>\n\n\nKind regards,\n\nMauricio Zambrano-Bigiarini, PhD\n\n-- \n====================================================\nWater Resources Unit\nInstitute for Environment and Sustainability (IES)\nJoint Research Centre (JRC), European Commission\nwebinfo    : http://floods.jrc.ec.europa.eu/\n====================================================\nDISCLAIMER:\\ \"The views expressed are purely those of th...{{dropped:10}}",
+      "body_snippet": "Dear R and hydrological/environmental community,\n\nI would like to draw your attention to hydroPSO, a newly developed R \npackage for the calibration/optimisation of (complex) environmental models.\n\nhyd",
+      "thread_id": "thread-2fe380925810",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-64bc250d40ae",
+      "message_id": "<CAJ=0CtCX-q1Kenh8CkXhE7YDpcb9ikj0iyg1Esmzc8NfNON2oA@mail.gmail.com>",
+      "from_name": "Adrian Duşa",
+      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
+      "date": "2012-04-23T12:38:30+03:00",
+      "subject": "[R-pkgs] new version of QCAGUI",
+      "subject_clean": "new version of QCAGUI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\n\nI have just submitted a new version of the QCAGUI package on CRAN, it\nshould be propagated in a couple of days.\nThis version is nothing but a quick update to the latest Rcmdr base\npackage, and works (as usual) with the QCA package up to version 0.6-5\n\nFor the later versions of the QCA package, I will start adapting the\nGUI in the shortest time possible.\n\nBest wishes,\nAdrian\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd.\n050025 Bucharest sector 5\nRomania\nTel.:+40 21 3126618 \\\n? ? ? ?+40 21 3120210 / int.101\nFax: +40 21 3158391",
+      "body_snippet": "Dear All,\n\nI have just submitted a new version of the QCAGUI package on CRAN, it\nshould be propagated in a couple of days.\nThis version is nothing but a quick update to the latest Rcmdr base\npackage, ",
+      "thread_id": "thread-64bc250d40ae",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-ee777c60df86",
+      "message_id": "<4F96C755.7000705@norbl.com>",
+      "from_name": "Barnet Wagman",
+      "from_email_hash": "115e00c4e6be73f8bad83b8e83c4aef3b25a4cc4c4e4660070efe6e628a07871",
+      "date": "2012-04-24T10:31:33-05:00",
+      "subject": "[R-pkgs] New version of rreval: Remote R Evaluator",
+      "subject_clean": "New version of rreval: Remote R Evaluator",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "rreval 1.1 is now available on CRAN.\n\nThis release fixes a Window specific bug. It is required for cloudRmpi \n1.1 (which is also now available on CRAN).\n\nrreval is a means for using R on a remote system from within a local R \nsession. Any R expression can be evaluated on the remote server. All \nnon-graphical results are returned to the local R session: this includes \nthe results of remote evaluations and (nearly) all textual output, \nincluding errors and warnings. rreval uses socket level communication \nvia ssh port forwarding. It supports uploading and downloading R objects \nand scp file tranfers.\n\n\nCheers,\n\nBarnet Wagman",
+      "body_snippet": "rreval 1.1 is now available on CRAN.\n\nThis release fixes a Window specific bug. It is required for cloudRmpi \n1.1 (which is also now available on CRAN).\n\nrreval is a means for using R on a remote syst",
+      "thread_id": "thread-ee777c60df86",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-62be672a9d00",
+      "message_id": "<774450053.3992402.1335501139548.JavaMail.root@c.correo>",
+      "from_name": "Carlos M. Martinez Manrique",
+      "from_email_hash": "49c7dbabe818f59155d946549a2e91d2febcc9c29efb4418d961d4420bad2a07",
+      "date": "2012-04-27T00:02:19-04:30",
+      "subject": "[R-pkgs] New package TestSurvRec_1.01",
+      "subject_clean": "New package TestSurvRec_1.01",
+      "in_reply_to": "<1536375738.3992297.1335500972457.JavaMail.root@c.correo>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: no disponible\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120427/551d72e8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: no disponible\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120427/551d72e8/attachment.pl>",
+      "thread_id": "thread-62be672a9d00",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-1f0b2327cce1",
+      "message_id": "<74A8FE6C-E097-4986-9544-818D1AE9CA11@univie.ac.at>",
+      "from_name": "Neuwirth Erich",
+      "from_email_hash": "178c9665decd09e76ed713e123ba2a6b2ed2ac166995047eb6dc12c5ab93e7ac",
+      "date": "2012-04-30T09:07:05+02:00",
+      "subject": "[R-pkgs] RExcelInstaller update",
+      "subject_clean": "RExcelInstaller update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New version RExcel 3.2.7-1\nDownload wrapper for new version of RExcel.",
+      "body_snippet": "New version RExcel 3.2.7-1\nDownload wrapper for new version of RExcel.",
+      "thread_id": "thread-1f0b2327cce1",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-cd4b162ce754",
+      "message_id": "<CAM9CR=2hLJUEk1fj0mUaea0WWGNE68S+uAYjuJDYhYX62S5f9g@mail.gmail.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "32fdd8046b75cfb0f4d6f8edc57dd69378ce2bc2369db36530b2110136c2b3c5",
+      "date": "2012-04-30T17:17:50+01:00",
+      "subject": "[R-pkgs] New package for morphology and smoothing in any number of dimensions: mmand",
+      "subject_clean": "New package for morphology and smoothing in any number of dimensions: mmand",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm pleased to announce the release on CRAN of the \"mmand\" package\n(for Mathematical Morphology in Any Number of Dimensions). It provides\nfunctions for performing mathematical morphology (erode, dilate,\netc.), smoothing, and other kernel-based operations on array-like\nobjects of any dimensionality. The package is centred around a\nflexible function called morph(), which can apply any kernel to array\nelements, optionally conditioned on their value or number of nonzero\nneighbours.\n\nOperations such as erode and dilate are provided for 2D data by the\nEBImage Bioconductor package, but mmand can be used for higher (and\nlower!) dimensional data, can produce and apply anisotropic kernels,\nand does not have external dependencies--except for the small, pure R\npackage \"reportr\" (also on CRAN), which is used for message reporting.\n\nOwing to its more general, dimensionality-independent implementation,\nmmand is a little slower than EBImage; but due to various performance\noptimisations, run time is still very reasonable. For example:\n\n> x <- EBImage::readImage(system.file(\"images\", \"shapes.png\", package=\"EBImage\"))\n> k <- matrix(1,3,3)\n>\n> y1 <- EBImage::erode(x,k)\n> y2 <- mmand::erode(x,k)\n> identical(EBImage::imageData(y1),y2)\n[1] TRUE\n>\n> system.time(for(i in 1:100) EBImage::closing(x,k))\n  user  system elapsed\n 1.791   0.047   1.837\n> system.time(for(i in 1:100) mmand::closing(x,k))\n  user  system elapsed\n 3.267   0.018   3.287\n\nA single closing (dilate followed by erode) operation therefore takes\naround 1/30th of a second in this case.\n\nI hope that this contribution will be useful.\n\nAll the best,\nJon",
+      "body_snippet": "Dear all,\n\nI'm pleased to announce the release on CRAN of the \"mmand\" package\n(for Mathematical Morphology in Any Number of Dimensions). It provides\nfunctions for performing mathematical morphology (e",
+      "thread_id": "thread-cd4b162ce754",
+      "thread_depth": 0,
+      "month": "2012-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f99b0891338c",
+      "subject": "New package IC2",
+      "message_count": 1,
+      "participants": [
+        "PLAT didier"
+      ],
+      "started": "2012-04-02T15:05:34+02:00",
+      "last_reply": "2012-04-02T15:05:34+02:00",
+      "root_message_id": "msg-f99b0891338c"
+    },
+    {
+      "id": "thread-2a6225c42b5b",
+      "subject": "new version of QCA",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dusa"
+      ],
+      "started": "2012-04-08T12:57:16+03:00",
+      "last_reply": "2012-04-08T12:57:16+03:00",
+      "root_message_id": "msg-2a6225c42b5b"
+    },
+    {
+      "id": "thread-d32f006e6935",
+      "subject": "rockchalk_1.5.4 posted",
+      "message_count": 1,
+      "participants": [
+        "Paul Johnson"
+      ],
+      "started": "2012-04-09T16:31:42-05:00",
+      "last_reply": "2012-04-09T16:31:42-05:00",
+      "root_message_id": "msg-d32f006e6935"
+    },
+    {
+      "id": "thread-1ffa6a4ce682",
+      "subject": "mosaic 0.4 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Randall Pruim"
+      ],
+      "started": "2012-04-11T08:31:41-04:00",
+      "last_reply": "2012-04-11T08:31:41-04:00",
+      "root_message_id": "msg-1ffa6a4ce682"
+    },
+    {
+      "id": "thread-4da1edc36b43",
+      "subject": "Significant updates to medical imaging packages: TractoR and RNiftyReg",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2012-04-11T23:22:54+01:00",
+      "last_reply": "2012-04-11T23:22:54+01:00",
+      "root_message_id": "msg-4da1edc36b43"
+    },
+    {
+      "id": "thread-b5332393a53f",
+      "subject": "version 3.0-0 of the sem now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2012-04-15T10:50:49-04:00",
+      "last_reply": "2012-04-15T10:50:49-04:00",
+      "root_message_id": "msg-b5332393a53f"
+    },
+    {
+      "id": "thread-2fe380925810",
+      "subject": "new package: hydroPSO 0.1-54-1",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2012-04-18T10:12:52+02:00",
+      "last_reply": "2012-04-18T10:12:52+02:00",
+      "root_message_id": "msg-2fe380925810"
+    },
+    {
+      "id": "thread-64bc250d40ae",
+      "subject": "new version of QCAGUI",
+      "message_count": 1,
+      "participants": [
+        "Adrian Duşa"
+      ],
+      "started": "2012-04-23T12:38:30+03:00",
+      "last_reply": "2012-04-23T12:38:30+03:00",
+      "root_message_id": "msg-64bc250d40ae"
+    },
+    {
+      "id": "thread-ee777c60df86",
+      "subject": "New version of rreval: Remote R Evaluator",
+      "message_count": 1,
+      "participants": [
+        "Barnet Wagman"
+      ],
+      "started": "2012-04-24T10:31:33-05:00",
+      "last_reply": "2012-04-24T10:31:33-05:00",
+      "root_message_id": "msg-ee777c60df86"
+    },
+    {
+      "id": "thread-62be672a9d00",
+      "subject": "New package TestSurvRec_1.01",
+      "message_count": 1,
+      "participants": [
+        "Carlos M. Martinez Manrique"
+      ],
+      "started": "2012-04-27T00:02:19-04:30",
+      "last_reply": "2012-04-27T00:02:19-04:30",
+      "root_message_id": "msg-62be672a9d00"
+    },
+    {
+      "id": "thread-1f0b2327cce1",
+      "subject": "RExcelInstaller update",
+      "message_count": 1,
+      "participants": [
+        "Neuwirth Erich"
+      ],
+      "started": "2012-04-30T09:07:05+02:00",
+      "last_reply": "2012-04-30T09:07:05+02:00",
+      "root_message_id": "msg-1f0b2327cce1"
+    },
+    {
+      "id": "thread-cd4b162ce754",
+      "subject": "New package for morphology and smoothing in any number of dimensions: mmand",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2012-04-30T17:17:50+01:00",
+      "last_reply": "2012-04-30T17:17:50+01:00",
+      "root_message_id": "msg-cd4b162ce754"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-12",
+  "messages": [
+    {
+      "id": "msg-d1e327a97c89",
+      "message_id": "<CAJ9GNamGbHhLUkxLUPYFw8Jr889KFHPa9gkzn1rWfd9wnwH3ug@mail.gmail.com>",
+      "from_name": "Jan Wijffels",
+      "from_email_hash": "c67854060f9d1faa0785ceb6d8fc98369d857f79d54a92b874f39998787b7fc2",
+      "date": "2017-12-19T22:20:18+01:00",
+      "subject": "[R-pkgs] release of version 0.2 of the textrank package",
+      "subject_clean": "release of version 0.2 of the textrank package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello R users,\n\nI'm pleased to announce the release of version 0.2 of the textrank package\non CRAN: https://CRAN.R-project.org/package=textrank\n\n*The package is a natural language processing package which allows one to\nsummarize text by finding*\n*- relevant sentences*\n*- relevant keywords*\n\nThis is done by constructing a sentence network which finds how sentences\nare related to one another (word overlap). On that network Google Pagerank\nis used in order to find relevant sentences.\n\nIn a similar way 'textrank' can also be used to extract keywords. How? A\nword network is constructed by looking if words are following one another.\nOn top of that network the 'Pagerank' algorithm is applied to extract\nrelevant words. Relevant words which are following one another are next\npasted together to get keywords.\n\nThe package has a vignette at\nhttps://cran.r-project.org/web/packages/textrank/vignettes/textrank.html\nand it also plays nicely with the udpipe package ?\nhttps://CRAN.R-project.org/package=udpipe which is good for parts-of-speech\ntagging, lemmatisation, dependency parsing and general NLP processing.\n\n?all the best,\nJan\n\n\nJan Wijffels\nStatistician\nwww.bnosac.be\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello R users,\n\nI'm pleased to announce the release of version 0.2 of the textrank package\non CRAN: https://CRAN.R-project.org/package=textrank\n\n*The package is a natural language processing package w",
+      "thread_id": "thread-d1e327a97c89",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-ef42e5619491",
+      "message_id": "<2d81a93ee9bf4d5daa4e5eb3ec9c3886@E3PMBX15.idir.BCGOV>",
+      "from_name": "Albers, Sam ENV:EX",
+      "from_email_hash": "44678a4e8abe8d0192eb43404e7433af6113c50b2e08c390c498089660230287",
+      "date": "2017-12-20T00:38:12Z",
+      "subject": "[R-pkgs] New package: tidyhydat",
+      "subject_clean": "New package: tidyhydat",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\ntidyhydat - https://CRAN.R-project.org/package=tidyhydat - was accepted on CRAN recently. tidyhydat is a new R package that provides functions in R to access Canadian hydrometric data sources and then tidy that data.  We have tried to simplify the process of importing data so that users can focus on modelling and visualizing hydrometric data. \n\nHistorical data is contained within HYDAT, the Canadian national Water Data Archive, which is published quarterly by the Government of Canada's Department of Environment and Climate Change. Data in this archive range from 1850 to 2017. tidyhydat also provides functions to access real-time data over the web. This package would be of interest to anyone who has need for Canadian hydrometric data in R. \n\nThis package was peer-reviewed by the rOpenSci open review process and is now part of that suite of packages.\n\nA short vignette outlining tidyhydat's usage can be found here: https://cran.r-project.org/web/packages/tidyhydat/vignettes/tidyhydat_an_introduction.html\n\nThe project page can be found here: https://github.com/ropensci/tidyhydat\n\nBest,\n\nSam",
+      "body_snippet": "Hello all,\n\ntidyhydat - https://CRAN.R-project.org/package=tidyhydat - was accepted on CRAN recently. tidyhydat is a new R package that provides functions in R to access Canadian hydrometric data sour",
+      "thread_id": "thread-ef42e5619491",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-6973036def16",
+      "message_id": "<CAL2dDUswKZKK=8hngdyDbgxgweidd-Hb6NL-MGCF8PLP7X_dqQ@mail.gmail.com>",
+      "from_name": "Spence Aiello",
+      "from_email_hash": "3e31dace9b85ea1d87314dfb9bd2304d465df395559787fc9d03e971d5b41d44",
+      "date": "2017-12-20T17:37:49-08:00",
+      "subject": "[R-pkgs] A New R Kernel for Jupyter",
+      "subject_clean": "A New R Kernel for Jupyter",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello R Community,\n\n'JuniperKernel' is a new package that provides a 'Jupyter' kernel\nimplementation. This package is the first C++ 'Jupyter' kernel to exist in\nCRAN. Its architecture differs from incumbent R kernels in novel ways that\nallow for streaming I/O and full support of 'Jupyter' extensions.\n\nI would be grateful for any feedback!\n\nHappy Holidays,\nSpencer\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello R Community,\n\n'JuniperKernel' is a new package that provides a 'Jupyter' kernel\nimplementation. This package is the first C++ 'Jupyter' kernel to exist in\nCRAN. Its architecture differs from inc",
+      "thread_id": "thread-6973036def16",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-026ca80b3e5f",
+      "message_id": "<CAKFxdiRho4tcE8z4_SMsjx8DCiVAajyCfN1o2GyBc2n0LL1CKA@mail.gmail.com>",
+      "from_name": "Kevin Wright",
+      "from_email_hash": "9980ca62d8ef4c3af641d179dce486d9a860af009b282abcfb91c0b1d53645df",
+      "date": "2017-12-21T13:44:48-06:00",
+      "subject": "[R-pkgs] New package: nipals",
+      "subject_clean": "New package: nipals",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I would like to announce the availability of the 'nipals' package on CRAN,\nhttps://cran.r-project.org/web/packages/nipals/.\n\nThe nipals package tries to do just one thing really well...find principal\ncomponents of a matrix using Nonlinear Partial Least Squares. Missing\nvalues are allowed, the principal components are orthogonal, and the code\nhas been heavily optimized.\n\nDetails of the package can be found in a pair of vignettes:\n\nComparing NIPALS functions in R\nhttps://cran.r-project.org/web/packages/nipals/vignettes/nipals_comparisons.html\n\nNIPALS optimization notes\nhttps://cran.r-project.org/web/packages/nipals/vignettes/nipals_optimization.html\n\n\nPlease report any issues through the Github page:\nhttps://github.com/kwstat/nipals\n\nKevin Wright\n\n-- \nKevin Wright\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I would like to announce the availability of the 'nipals' package on CRAN,\nhttps://cran.r-project.org/web/packages/nipals/.\n\nThe nipals package tries to do just one thing really well...find principal\n",
+      "thread_id": "thread-026ca80b3e5f",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-7b8dd57f6c89",
+      "message_id": "<4E3720A8CDD9F941943008CD0BAEF5DA0FC89740@DVMSMBS03.Spectrum-Health.org>",
+      "from_name": "Paul.Egeler at spectrumhealth.org",
+      "from_email_hash": "9a1d320095eb603a702e6f0b02e07623ec40d116aa7226d30293dbc692a10025",
+      "date": "2017-12-22T16:23:42Z",
+      "subject": "[R-pkgs] Introducing samplesizeCMH: Power and Sample Size Calculation for the Cochran-Mantel-Haenszel Test",
+      "subject_clean": "Introducing samplesizeCMH: Power and Sample Size Calculation for the Cochran-Mantel-Haenszel Test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce the new package `samplesizeCMH` is now available on CRAN <https://cran.r-project.org/package=samplesizeCMH>.\n\nThe `samplesizeCMH` package will compute power and sample size for the Cochran-Mantel-Haenszel test for stratified 2x2 tables. There are also several helper functions for working with 2x2 tables, such as converting a proportion into an odds estimate and converting two row/column proportions into an odds ratio estimate.\n\nPlease see package vignettes for more information <https://cran.r-project.org/web/packages/samplesizeCMH/vignettes/>. \n\nYour feedback is welcome. Please feel free to submit issues and suggestions on the package issues page <https://github.com/pegeler/samplesizeCMH/issues>.\n\nBest regards,\n\nPaul Egeler, M.S., GStat\nBiostatistician, Sr.\nSpectrum Health Offices of Research Administration",
+      "body_snippet": "Dear R users,\n\nI am happy to announce the new package `samplesizeCMH` is now available on CRAN <https://cran.r-project.org/package=samplesizeCMH>.\n\nThe `samplesizeCMH` package will compute power and s",
+      "thread_id": "thread-7b8dd57f6c89",
+      "thread_depth": 0,
+      "month": "2017-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d1e327a97c89",
+      "subject": "release of version 0.2 of the textrank package",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2017-12-19T22:20:18+01:00",
+      "last_reply": "2017-12-19T22:20:18+01:00",
+      "root_message_id": "msg-d1e327a97c89"
+    },
+    {
+      "id": "thread-ef42e5619491",
+      "subject": "New package: tidyhydat",
+      "message_count": 1,
+      "participants": [
+        "Albers, Sam ENV:EX"
+      ],
+      "started": "2017-12-20T00:38:12+00:00",
+      "last_reply": "2017-12-20T00:38:12+00:00",
+      "root_message_id": "msg-ef42e5619491"
+    },
+    {
+      "id": "thread-6973036def16",
+      "subject": "A New R Kernel for Jupyter",
+      "message_count": 1,
+      "participants": [
+        "Spence Aiello"
+      ],
+      "started": "2017-12-20T17:37:49-08:00",
+      "last_reply": "2017-12-20T17:37:49-08:00",
+      "root_message_id": "msg-6973036def16"
+    },
+    {
+      "id": "thread-026ca80b3e5f",
+      "subject": "New package: nipals",
+      "message_count": 1,
+      "participants": [
+        "Kevin Wright"
+      ],
+      "started": "2017-12-21T13:44:48-06:00",
+      "last_reply": "2017-12-21T13:44:48-06:00",
+      "root_message_id": "msg-026ca80b3e5f"
+    },
+    {
+      "id": "thread-7b8dd57f6c89",
+      "subject": "Introducing samplesizeCMH: Power and Sample Size Calculation for the Cochran-Mantel-Haenszel Test",
+      "message_count": 1,
+      "participants": [
+        "Paul.Egeler at spectrumhealth.org"
+      ],
+      "started": "2017-12-22T16:23:42+00:00",
+      "last_reply": "2017-12-22T16:23:42+00:00",
+      "root_message_id": "msg-7b8dd57f6c89"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2014-08",
+  "messages": [
+    {
+      "id": "msg-d5c5f21874f8",
+      "message_id": "<53E0B671.8000801@p-roocks.de>",
+      "from_name": "Patrick Roocks",
+      "from_email_hash": "6b660630464dc5e34a570e236dfe2043f86241db8afc6e73187a3005d40c6301",
+      "date": "2014-08-05T12:48:17+02:00",
+      "subject": "[R-pkgs] rPref - new package for preferences and Skylines",
+      "subject_clean": "rPref - new package for preferences and Skylines",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "rPref is a new package for Skyline computation and some slight \ngeneralizations (database preferences).\n\nThe Skyline of a dataset selects tuples which are Pareto-optimal with \nrespect to given optimization goals. Only those tuples are returned, \nwhich are not dominated by any other tuple. A tuple dominates another \ntuple if it is better than another tuple in all relevant dimensions \n(strictly better at least in one dimension).\n\nrPref offers efficient Skyline computation (algorithms are in C++) and \nsome related stuff (e.g. maxima of other preference orders, top-k \npreference selection, some tools for visualization).\n\nFind more information and examples at: http://www.p-roocks.de/rpref\n\nFeel free to send a mail to me for suggestions, bug reports, etc.\n\nPatrick",
+      "body_snippet": "rPref is a new package for Skyline computation and some slight \ngeneralizations (database preferences).\n\nThe Skyline of a dataset selects tuples which are Pareto-optimal with \nrespect to given optimiz",
+      "thread_id": "thread-d5c5f21874f8",
+      "thread_depth": 0,
+      "month": "2014-08"
+    },
+    {
+      "id": "msg-bce66a9b63af",
+      "message_id": "<004701cfb0a9$2f051ea0$8d0f5be0$@comcast.net>",
+      "from_name": "Kem Phillips",
+      "from_email_hash": "aa21ea0a3462938229c22189d2bad5675e60ecf0118e08a80b0320686435d049",
+      "date": "2014-08-05T08:31:29-04:00",
+      "subject": "[R-pkgs] New version of the symmoments package",
+      "subject_clean": "New version of the symmoments package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl>",
+      "thread_id": "thread-bce66a9b63af",
+      "thread_depth": 0,
+      "month": "2014-08"
+    },
+    {
+      "id": "msg-c8efd767de8d",
+      "message_id": "<53FF5399.6060209@gmail.com>",
+      "from_name": "Emmanuel Blondel",
+      "from_email_hash": "eaaf2bdcbbb04c4bd02dba805d0187b0e9df3b55e277d977b19556bdc8ac488f",
+      "date": "2014-08-28T18:06:49+02:00",
+      "subject": "[R-pkgs] rsdmx - a package to read SDMX data and metadata",
+      "subject_clean": "rsdmx - a package to read SDMX data and metadata",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe rsdmx package has been published in CRAN \nhttp://cran.r-project.org/web/packages/rsdmx/index.html.\nrsdmx allows to read SDMX (Statistical Data and Metadata EXchange) data \nand metadata files, available in SDMX-ML format (XML).\n\nFor your information, its source code is managed at the following \nrepository https://github.com/opensdmx/rsdmx\n\nThe current version is 0.3, and a change history is available at: \nhttps://github.com/opensdmx/rsdmx/wiki/Change-History. I also recommend \nto check out the rsdmx wiki page available at: \nhttps://github.com/opensdmx/rsdmx/wiki\n\nI sincerely hope you will enjoy working with rsdmx. Feel free to contact \nme for questions or other feedback,\n\nEmmanuel",
+      "body_snippet": "Dear all,\n\nThe rsdmx package has been published in CRAN \nhttp://cran.r-project.org/web/packages/rsdmx/index.html.\nrsdmx allows to read SDMX (Statistical Data and Metadata EXchange) data \nand metadata ",
+      "thread_id": "thread-c8efd767de8d",
+      "thread_depth": 0,
+      "month": "2014-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bce66a9b63af",
+      "subject": "New version of the symmoments package",
+      "message_count": 1,
+      "participants": [
+        "Kem Phillips"
+      ],
+      "started": "2014-08-05T08:31:29-04:00",
+      "last_reply": "2014-08-05T08:31:29-04:00",
+      "root_message_id": "msg-bce66a9b63af"
+    },
+    {
+      "id": "thread-d5c5f21874f8",
+      "subject": "rPref - new package for preferences and Skylines",
+      "message_count": 1,
+      "participants": [
+        "Patrick Roocks"
+      ],
+      "started": "2014-08-05T12:48:17+02:00",
+      "last_reply": "2014-08-05T12:48:17+02:00",
+      "root_message_id": "msg-d5c5f21874f8"
+    },
+    {
+      "id": "thread-c8efd767de8d",
+      "subject": "rsdmx - a package to read SDMX data and metadata",
+      "message_count": 1,
+      "participants": [
+        "Emmanuel Blondel"
+      ],
+      "started": "2014-08-28T18:06:49+02:00",
+      "last_reply": "2014-08-28T18:06:49+02:00",
+      "root_message_id": "msg-c8efd767de8d"
+    }
+  ]
+}

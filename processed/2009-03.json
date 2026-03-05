@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-03",
+  "messages": [
+    {
+      "id": "msg-5ae40fb4c69e",
+      "message_id": "<49AC214F.9040509@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2009-03-02T19:11:27+01:00",
+      "subject": "[R-pkgs] package ltm -- version 0.9-0",
+      "subject_clean": "package ltm -- version 0.9-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \n(i.e., ltm_0.9-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible framework for analyzing \ndichotomous and polytomous data under various IRT models. Furthermore, \nsupporting functions for descriptive statistics, goodness-of-fit, \nability estimation and plotting are available.\n\nNew features include:\n\n  * function gpcm() (along with supporting methods, for the generic \nfunctions, anova, plot, margins, factor.scores, summary, vcov) has been \nadded for fitting the Generalized Partial Credit Model. The 'constraint' \nargument of gpcm() can be used to specify constrained versions of the \nmodel. Options are:\n\n    - 'constraint = \"rasch\"' that fits the partial credit model (i.e., \ndiscrimination parameter fixed at one)\n\n    - 'constraint = \"1PL\"' that specifies a single discrimination \nparameter, equal among items, and\n\n    - 'constraint = \"gpcm\"' that specifies a different discrimination \nparameter per item.\n\n  * gpcm() also allows for mixed type items, i.e., dichotomous and \npolytomous; however, for data sets with only dichotomous items, \nfunctions rasch() and ltm() are more efficient.\n\n  * The new function GoF.gpcm() calculates the Pearson chi-squared \nstatistic for Generalized Partial Credit models. A p-value can be also \nproduced either using the asymptotic chi-squared distribution or a \nparametric Bootstrap approach.\n\n  * The new function rmvordlogis() can be used to simulate ordinal data \nunder the Graded Response and the Generalized Partial Credit models.\n\n  * for more details and other new features check the NEWS file that \nships with the package.\n\nMore information as well as *.R files illustrating the capabilities of \nthe package can be found in the R-wiki page of 'ltm' available at: \nhttp://wiki.r-project.org/rwiki/doku.php?id=packages:cran:ltm.\n\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \n(i.e., ltm_0.9-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible fra",
+      "thread_id": "thread-5ae40fb4c69e",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-5ae40fb4c69e",
+      "message_id": "<49AC214F.9040509@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2009-03-02T19:11:27+01:00",
+      "subject": "[R-pkgs] package ltm -- version 0.9-0",
+      "subject_clean": "package ltm -- version 0.9-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \n(i.e., ltm_0.9-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible framework for analyzing \ndichotomous and polytomous data under various IRT models. Furthermore, \nsupporting functions for descriptive statistics, goodness-of-fit, \nability estimation and plotting are available.\n\nNew features include:\n\n  * function gpcm() (along with supporting methods, for the generic \nfunctions, anova, plot, margins, factor.scores, summary, vcov) has been \nadded for fitting the Generalized Partial Credit Model. The 'constraint' \nargument of gpcm() can be used to specify constrained versions of the \nmodel. Options are:\n\n    - 'constraint = \"rasch\"' that fits the partial credit model (i.e., \ndiscrimination parameter fixed at one)\n\n    - 'constraint = \"1PL\"' that specifies a single discrimination \nparameter, equal among items, and\n\n    - 'constraint = \"gpcm\"' that specifies a different discrimination \nparameter per item.\n\n  * gpcm() also allows for mixed type items, i.e., dichotomous and \npolytomous; however, for data sets with only dichotomous items, \nfunctions rasch() and ltm() are more efficient.\n\n  * The new function GoF.gpcm() calculates the Pearson chi-squared \nstatistic for Generalized Partial Credit models. A p-value can be also \nproduced either using the asymptotic chi-squared distribution or a \nparametric Bootstrap approach.\n\n  * The new function rmvordlogis() can be used to simulate ordinal data \nunder the Graded Response and the Generalized Partial Credit models.\n\n  * for more details and other new features check the NEWS file that \nships with the package.\n\nMore information as well as *.R files illustrating the capabilities of \nthe package can be found in the R-wiki page of 'ltm' available at: \nhttp://wiki.r-project.org/rwiki/doku.php?id=packages:cran:ltm.\n\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \n(i.e., ltm_0.9-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible fra",
+      "thread_id": "thread-5ae40fb4c69e",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-311139a6d7cb",
+      "message_id": "<200903040848.24102.s.wood@bath.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "b2c6cccc3d71b0ecda48b7a345238ac662323f0f05763385508e08a353a0ea9d",
+      "date": "2009-03-04T08:48:24Z",
+      "subject": "[R-pkgs] mgcv 1.5-0",
+      "subject_clean": "mgcv 1.5-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv 1.5-0 is now on CRAN. Main changes are:\n\n* REML and ML smoothness selection are now available.\n\n* A Tweedie family has been added.\n\n* `gam.method' has been replaced (see arguments `method' and `optimizer' \n   for   `gam')\n\nFor other changes see the changeLog.\n\nSimon\n-- \n> Simon Wood, Mathematical Sciences, University of Bath, Bath, BA2 7AY UK\n> +44 1225 386603  www.maths.bath.ac.uk/~sw283",
+      "body_snippet": "mgcv 1.5-0 is now on CRAN. Main changes are:\n\n* REML and ML smoothness selection are now available.\n\n* A Tweedie family has been added.\n\n* `gam.method' has been replaced (see arguments `method' and `o",
+      "thread_id": "thread-311139a6d7cb",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-311139a6d7cb",
+      "message_id": "<200903040848.24102.s.wood@bath.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "b2c6cccc3d71b0ecda48b7a345238ac662323f0f05763385508e08a353a0ea9d",
+      "date": "2009-03-04T08:48:24Z",
+      "subject": "[R-pkgs] mgcv 1.5-0",
+      "subject_clean": "mgcv 1.5-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv 1.5-0 is now on CRAN. Main changes are:\n\n* REML and ML smoothness selection are now available.\n\n* A Tweedie family has been added.\n\n* `gam.method' has been replaced (see arguments `method' and `optimizer' \n   for   `gam')\n\nFor other changes see the changeLog.\n\nSimon\n-- \n> Simon Wood, Mathematical Sciences, University of Bath, Bath, BA2 7AY UK\n> +44 1225 386603  www.maths.bath.ac.uk/~sw283",
+      "body_snippet": "mgcv 1.5-0 is now on CRAN. Main changes are:\n\n* REML and ML smoothness selection are now available.\n\n* A Tweedie family has been added.\n\n* `gam.method' has been replaced (see arguments `method' and `o",
+      "thread_id": "thread-311139a6d7cb",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-375d93a5829e",
+      "message_id": "<2CD42541-06B8-499A-9A31-F341C5ED618A@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-03-26T07:24:16-05:00",
+      "subject": "[R-pkgs] New CRAN Package: WriteXLS",
+      "subject_clean": "New CRAN Package: WriteXLS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package called WriteXLS (Version 1.5.0), containing a single  \nfunction of the same name, is now available via CRAN. The package is  \nmade available under the GPL, version >=2.\n\nThe function is based upon a Perl script that I have previously posted  \non r-help, now wrapped in R for convenience. It provides a cross- \nplatform function to create Excel 2003 (XLS) files from one or more  \ndata frames. Each data frame will be written to a separate named  \nworksheet in the Excel spreadsheet. The worksheet name will be the  \nname of the data frame it contains.\n\nThe package requires that Perl and several specific Perl modules are  \ninstalled in order to function. These modules, which may already be  \ninstalled on systems with Perl installed, include:\n\n   OLE::Storage_Lite\n   Parse::RecDescent\n   Getopt::Long\n   File::Basename\n   Spreadsheet::WriteExcel\n   Encode\n   File::Glob\n   Text::CSV_XS\n\n\nWith the exception of the last three modules listed, for convenience  \nall are included in the CRAN package and will be made available by  \nadding the installed package path for these modules to the Perl @INC  \narray.\n\nThe last three modules (Encode, File::Glob and Text::CSV_XS) are 'XS'  \nbased Perl modules, meaning that they call external C routines. Thus,  \nthey are not included as they require local compilation using the  \nparticular version of Perl installed on the user's system.\n\nAs a result, only source versions of the WriteXLS package will be made  \navailable. This is because the examples on the function help page will  \nnot run without Perl and all of these modules being available on the  \nuser's system. Hence the package will presently fail 'R CMD check' on  \nCRAN.\n\nFor more information on installing source packages from CRAN, please  \nsee:\n\n   http://cran.r-project.org/doc/manuals/R-admin.html#Installing- \npackages\n\nWriteXLS is being maintained using R-Forge at:\n\n   http://r-forge.r-project.org/projects/writexls\n\nPlease feel free to contact me directly with questions and comments.\n\nMany thanks to Prof. Brian Ripley for his assistance with the testing  \nof this package prior to release.\n\nThanks,\n\nMarc Schwartz",
+      "body_snippet": "A new package called WriteXLS (Version 1.5.0), containing a single  \nfunction of the same name, is now available via CRAN. The package is  \nmade available under the GPL, version >=2.\n\nThe function is ",
+      "thread_id": "thread-375d93a5829e",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-375d93a5829e",
+      "message_id": "<2CD42541-06B8-499A-9A31-F341C5ED618A@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-03-26T07:24:16-05:00",
+      "subject": "[R-pkgs] New CRAN Package: WriteXLS",
+      "subject_clean": "New CRAN Package: WriteXLS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package called WriteXLS (Version 1.5.0), containing a single  \nfunction of the same name, is now available via CRAN. The package is  \nmade available under the GPL, version >=2.\n\nThe function is based upon a Perl script that I have previously posted  \non r-help, now wrapped in R for convenience. It provides a cross- \nplatform function to create Excel 2003 (XLS) files from one or more  \ndata frames. Each data frame will be written to a separate named  \nworksheet in the Excel spreadsheet. The worksheet name will be the  \nname of the data frame it contains.\n\nThe package requires that Perl and several specific Perl modules are  \ninstalled in order to function. These modules, which may already be  \ninstalled on systems with Perl installed, include:\n\n   OLE::Storage_Lite\n   Parse::RecDescent\n   Getopt::Long\n   File::Basename\n   Spreadsheet::WriteExcel\n   Encode\n   File::Glob\n   Text::CSV_XS\n\n\nWith the exception of the last three modules listed, for convenience  \nall are included in the CRAN package and will be made available by  \nadding the installed package path for these modules to the Perl @INC  \narray.\n\nThe last three modules (Encode, File::Glob and Text::CSV_XS) are 'XS'  \nbased Perl modules, meaning that they call external C routines. Thus,  \nthey are not included as they require local compilation using the  \nparticular version of Perl installed on the user's system.\n\nAs a result, only source versions of the WriteXLS package will be made  \navailable. This is because the examples on the function help page will  \nnot run without Perl and all of these modules being available on the  \nuser's system. Hence the package will presently fail 'R CMD check' on  \nCRAN.\n\nFor more information on installing source packages from CRAN, please  \nsee:\n\n   http://cran.r-project.org/doc/manuals/R-admin.html#Installing- \npackages\n\nWriteXLS is being maintained using R-Forge at:\n\n   http://r-forge.r-project.org/projects/writexls\n\nPlease feel free to contact me directly with questions and comments.\n\nMany thanks to Prof. Brian Ripley for his assistance with the testing  \nof this package prior to release.\n\nThanks,\n\nMarc Schwartz",
+      "body_snippet": "A new package called WriteXLS (Version 1.5.0), containing a single  \nfunction of the same name, is now available via CRAN. The package is  \nmade available under the GPL, version >=2.\n\nThe function is ",
+      "thread_id": "thread-375d93a5829e",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-cb2b62ff1304",
+      "message_id": "<B6BD106B14A14CA1BFA74D9956C560D0@ADAM>",
+      "from_name": "Matthew Dowle",
+      "from_email_hash": "da70e29f21357922d3ff71dee2915877599edde846f651e4da8287df362c75d3",
+      "date": "2009-03-31T02:37:58+01:00",
+      "subject": "[R-pkgs] data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "subject_clean": "data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe data.table package was released back in August 2008. This email is to \npublicise its existence in response to several suggestions to do so. It \nseems I didn't send a general announcement about it at the time and \ntherefore perhaps, not surprisingly, not many people know about it. Glancing \nat some r-help threads recently supports the idea of sending a public \nannouncement.\n\nThe main difference between data.frame and data.table is enhanced \nfunctionality in [.data.table where most documentation for this package \nlives i.e. help(\"[.data.table\").  Selected extracts from the package \ndocumentation follow.\n\nThe package builds on base R functionality to reduce 2 types of time :\n   1. programming time (easier to write, read, debug and maintain)\n   2. compute time\nwhen combining database like operations (subset, with and by) and provides \nsimilar joins that merge provides but faster. This is achieved by using R's \ncolumn based ordered in-memory data.frame, eval within the environment of a \nlist (i.e. with), the [.data.table mechanism to condense the features and \ncompiled C to make certain operations fast.\n\n[.data.table is like [.data.frame but i and j can be expressions of column \nnames directly. Furthermore i may itself be a data.table which invokes a \nfast table join using binary search in O(log n) time. Allowing i to be \ndata.table is consistent with subsetting an n-dimension array by an n-column \nmatrix in base R. data.tables do not have rownames but may instead have a \nkey of one or more columns using setkey. This key may be used for row \nindexing instead of rownames.\n\nExamples comparing [.data.frame and [.data.table :\n\nDF = data.frame(a=1:5, b=6:10)\nDT = data.table(a=1:5, b=6:10)\n\ntt = subset(DF,a==3)\nss = DT[a==3]        # just use the column name 'a' directly. No need to \nremember the comma. The i argument is like the 'where' in SQL.\nidentical(as.data.table(tt), ss)\n\ntt = with(subset(DF,a==3),a+b+1)\nss = DT[a==3,a+b+1]        # j is like select in SQL and the select argument \nof subset in base R.  j can be an expression of column names directly, \nincluding a data.table of multiple expressions.  Here the j expression is \nexecuted just for the rows matching the i argument.\nidentical(tt, ss)\n\n# Examples above use vector scans i.e. the \"a==3\" expression first creates a \nlogical vector as long as the total number of rows and then evaluates a==3 \nfor every row.\n# Examples below use binary search, invoked by passing in a data.table as \nthe i argument. Joins in SQL are performed in the where clause and the i \nargument is like where, so this seems very natural (to me anyway!)\n\nDT = data.table(a=letters[1:5], b=6:10)\nsetkey(DT,a)\nidentical(DT[J(\"d\")], DT[4])        # binary search to row for 'd'\n\nDT = data.table(id=rep(c(\"A\",\"B\"),each=3), \ndate=c(20080501L,20080502L,20080506L), v=1:6)\nsetkey(DT,id,date)\nDT[\"A\"]                                        # all 3 rows for A since mult \nby default is \"all\"\nDT[J(\"A\",20080502L)]                 # row for A where date also matches \nexactly\nDT[J(\"A\",20080505L)]                 # NA since 5 May is missing (outer join \nby default)\nDT[J(\"A\",20080505L),nomatch=0]             # inner join instead\ndts = c(20080501L, 20080502L, 20080505L, 20080506L, 20080507L, 20080508L)\nDT[J(\"A\",dts)]                             # 3 of the dates in dts match \nexactly\nDT[J(\"A\",dts),roll=TRUE]                   # roll previous data forward i.e. \nreturn the prevailing observation\nDT[J(\"A\",dts),rolltolast=TRUE]             # roll all but last observation \nforward\n\ntables(mb=TRUE)   # prints table names, number of rows, size in memory\n\n\nThanks to all those who have made suggestions and feedback so far. Further \ncomments and feedback on the package would be much appreciated.\n\nRegards, Matthew",
+      "body_snippet": "Dear all,\n\nThe data.table package was released back in August 2008. This email is to \npublicise its existence in response to several suggestions to do so. It \nseems I didn't send a general announcemen",
+      "thread_id": "thread-cb2b62ff1304",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-cb2b62ff1304",
+      "message_id": "<B6BD106B14A14CA1BFA74D9956C560D0@ADAM>",
+      "from_name": "Matthew Dowle",
+      "from_email_hash": "da70e29f21357922d3ff71dee2915877599edde846f651e4da8287df362c75d3",
+      "date": "2009-03-31T02:37:58+01:00",
+      "subject": "[R-pkgs] data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "subject_clean": "data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe data.table package was released back in August 2008. This email is to \npublicise its existence in response to several suggestions to do so. It \nseems I didn't send a general announcement about it at the time and \ntherefore perhaps, not surprisingly, not many people know about it. Glancing \nat some r-help threads recently supports the idea of sending a public \nannouncement.\n\nThe main difference between data.frame and data.table is enhanced \nfunctionality in [.data.table where most documentation for this package \nlives i.e. help(\"[.data.table\").  Selected extracts from the package \ndocumentation follow.\n\nThe package builds on base R functionality to reduce 2 types of time :\n   1. programming time (easier to write, read, debug and maintain)\n   2. compute time\nwhen combining database like operations (subset, with and by) and provides \nsimilar joins that merge provides but faster. This is achieved by using R's \ncolumn based ordered in-memory data.frame, eval within the environment of a \nlist (i.e. with), the [.data.table mechanism to condense the features and \ncompiled C to make certain operations fast.\n\n[.data.table is like [.data.frame but i and j can be expressions of column \nnames directly. Furthermore i may itself be a data.table which invokes a \nfast table join using binary search in O(log n) time. Allowing i to be \ndata.table is consistent with subsetting an n-dimension array by an n-column \nmatrix in base R. data.tables do not have rownames but may instead have a \nkey of one or more columns using setkey. This key may be used for row \nindexing instead of rownames.\n\nExamples comparing [.data.frame and [.data.table :\n\nDF = data.frame(a=1:5, b=6:10)\nDT = data.table(a=1:5, b=6:10)\n\ntt = subset(DF,a==3)\nss = DT[a==3]        # just use the column name 'a' directly. No need to \nremember the comma. The i argument is like the 'where' in SQL.\nidentical(as.data.table(tt), ss)\n\ntt = with(subset(DF,a==3),a+b+1)\nss = DT[a==3,a+b+1]        # j is like select in SQL and the select argument \nof subset in base R.  j can be an expression of column names directly, \nincluding a data.table of multiple expressions.  Here the j expression is \nexecuted just for the rows matching the i argument.\nidentical(tt, ss)\n\n# Examples above use vector scans i.e. the \"a==3\" expression first creates a \nlogical vector as long as the total number of rows and then evaluates a==3 \nfor every row.\n# Examples below use binary search, invoked by passing in a data.table as \nthe i argument. Joins in SQL are performed in the where clause and the i \nargument is like where, so this seems very natural (to me anyway!)\n\nDT = data.table(a=letters[1:5], b=6:10)\nsetkey(DT,a)\nidentical(DT[J(\"d\")], DT[4])        # binary search to row for 'd'\n\nDT = data.table(id=rep(c(\"A\",\"B\"),each=3), \ndate=c(20080501L,20080502L,20080506L), v=1:6)\nsetkey(DT,id,date)\nDT[\"A\"]                                        # all 3 rows for A since mult \nby default is \"all\"\nDT[J(\"A\",20080502L)]                 # row for A where date also matches \nexactly\nDT[J(\"A\",20080505L)]                 # NA since 5 May is missing (outer join \nby default)\nDT[J(\"A\",20080505L),nomatch=0]             # inner join instead\ndts = c(20080501L, 20080502L, 20080505L, 20080506L, 20080507L, 20080508L)\nDT[J(\"A\",dts)]                             # 3 of the dates in dts match \nexactly\nDT[J(\"A\",dts),roll=TRUE]                   # roll previous data forward i.e. \nreturn the prevailing observation\nDT[J(\"A\",dts),rolltolast=TRUE]             # roll all but last observation \nforward\n\ntables(mb=TRUE)   # prints table names, number of rows, size in memory\n\n\nThanks to all those who have made suggestions and feedback so far. Further \ncomments and feedback on the package would be much appreciated.\n\nRegards, Matthew",
+      "body_snippet": "Dear all,\n\nThe data.table package was released back in August 2008. This email is to \npublicise its existence in response to several suggestions to do so. It \nseems I didn't send a general announcemen",
+      "thread_id": "thread-cb2b62ff1304",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-19b9856657c3",
+      "message_id": "<0BE7FC8E-7AF9-4D8C-B8AC-6DC1AA6F3C7A@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-03-31T15:47:00-05:00",
+      "subject": "[R-pkgs] WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "subject_clean": "WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nA new version of the WriteXLS package, 1.6.0, is making its way around  \nthe CRAN mirrors and should be generally available in the next 24-48  \nhours.\n\nThe WriteXLS package provides a cross-platform perl based R function  \nto create Excel (XLS) files from one or more data frames. Each data  \nframe will be written to a separate named worksheet in the Excel  \nspreadsheet. The worksheet name will be the name of the data frame it  \ncontains.\n\nKey changes from version 1.5.0:\n\n1. Thanks to work by Uwe Ligges and changes to the examples being  \nused, Windows and OSX binary versions of the package will become  \navailable to enable their easier installation using install.packages()  \nwithin an R session.\n\n2. A new function called testPerl() has been added to enable the self- \nchecking of the user's system to ensure that Perl and all required  \nPerl modules are available to use the WriteXLS() function. The package  \nwill return either success or error messages indicating missing  \nrequirements. If you are unsure as to whether or not you have all  \nrequirements, you can run this function prior to using the WriteXLS()  \nfunction.\n\n3. A new INSTALL file has been created and is in the main package  \ninstallation directory. An online copy is also available from CRAN at:\n\n   http://cran.r-project.org/web/packages/WriteXLS/INSTALL\n\nThe INSTALL file contains additional information on the package  \nrequirements and recommendations for meeting them. Details are  \nprovided for Windows, OSX and Linux relative to options for installing  \nPerl and any missing modules.\n\nThe WriteXLS package is being maintained on R-Forge at:\n\n   https://r-forge.r-project.org/projects/writexls/\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nA new version of the WriteXLS package, 1.6.0, is making its way around  \nthe CRAN mirrors and should be generally available in the next 24-48  \nhours.\n\nThe WriteXLS package provides a cross-p",
+      "thread_id": "thread-19b9856657c3",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-19b9856657c3",
+      "message_id": "<0BE7FC8E-7AF9-4D8C-B8AC-6DC1AA6F3C7A@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-03-31T15:47:00-05:00",
+      "subject": "[R-pkgs] WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "subject_clean": "WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nA new version of the WriteXLS package, 1.6.0, is making its way around  \nthe CRAN mirrors and should be generally available in the next 24-48  \nhours.\n\nThe WriteXLS package provides a cross-platform perl based R function  \nto create Excel (XLS) files from one or more data frames. Each data  \nframe will be written to a separate named worksheet in the Excel  \nspreadsheet. The worksheet name will be the name of the data frame it  \ncontains.\n\nKey changes from version 1.5.0:\n\n1. Thanks to work by Uwe Ligges and changes to the examples being  \nused, Windows and OSX binary versions of the package will become  \navailable to enable their easier installation using install.packages()  \nwithin an R session.\n\n2. A new function called testPerl() has been added to enable the self- \nchecking of the user's system to ensure that Perl and all required  \nPerl modules are available to use the WriteXLS() function. The package  \nwill return either success or error messages indicating missing  \nrequirements. If you are unsure as to whether or not you have all  \nrequirements, you can run this function prior to using the WriteXLS()  \nfunction.\n\n3. A new INSTALL file has been created and is in the main package  \ninstallation directory. An online copy is also available from CRAN at:\n\n   http://cran.r-project.org/web/packages/WriteXLS/INSTALL\n\nThe INSTALL file contains additional information on the package  \nrequirements and recommendations for meeting them. Details are  \nprovided for Windows, OSX and Linux relative to options for installing  \nPerl and any missing modules.\n\nThe WriteXLS package is being maintained on R-Forge at:\n\n   https://r-forge.r-project.org/projects/writexls/\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "Hi all,\n\nA new version of the WriteXLS package, 1.6.0, is making its way around  \nthe CRAN mirrors and should be generally available in the next 24-48  \nhours.\n\nThe WriteXLS package provides a cross-p",
+      "thread_id": "thread-19b9856657c3",
+      "thread_depth": 0,
+      "month": "2009-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5ae40fb4c69e",
+      "subject": "package ltm -- version 0.9-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2009-03-02T19:11:27+01:00",
+      "last_reply": "2009-03-02T19:11:27+01:00",
+      "root_message_id": "msg-5ae40fb4c69e"
+    },
+    {
+      "id": "thread-5ae40fb4c69e",
+      "subject": "package ltm -- version 0.9-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2009-03-02T19:11:27+01:00",
+      "last_reply": "2009-03-02T19:11:27+01:00",
+      "root_message_id": "msg-5ae40fb4c69e"
+    },
+    {
+      "id": "thread-311139a6d7cb",
+      "subject": "mgcv 1.5-0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2009-03-04T08:48:24+00:00",
+      "last_reply": "2009-03-04T08:48:24+00:00",
+      "root_message_id": "msg-311139a6d7cb"
+    },
+    {
+      "id": "thread-311139a6d7cb",
+      "subject": "mgcv 1.5-0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2009-03-04T08:48:24+00:00",
+      "last_reply": "2009-03-04T08:48:24+00:00",
+      "root_message_id": "msg-311139a6d7cb"
+    },
+    {
+      "id": "thread-375d93a5829e",
+      "subject": "New CRAN Package: WriteXLS",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-03-26T07:24:16-05:00",
+      "last_reply": "2009-03-26T07:24:16-05:00",
+      "root_message_id": "msg-375d93a5829e"
+    },
+    {
+      "id": "thread-375d93a5829e",
+      "subject": "New CRAN Package: WriteXLS",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-03-26T07:24:16-05:00",
+      "last_reply": "2009-03-26T07:24:16-05:00",
+      "root_message_id": "msg-375d93a5829e"
+    },
+    {
+      "id": "thread-cb2b62ff1304",
+      "subject": "data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "message_count": 1,
+      "participants": [
+        "Matthew Dowle"
+      ],
+      "started": "2009-03-31T02:37:58+01:00",
+      "last_reply": "2009-03-31T02:37:58+01:00",
+      "root_message_id": "msg-cb2b62ff1304"
+    },
+    {
+      "id": "thread-cb2b62ff1304",
+      "subject": "data.table is on CRAN (enhanced data.frame for time series joins and more)",
+      "message_count": 1,
+      "participants": [
+        "Matthew Dowle"
+      ],
+      "started": "2009-03-31T02:37:58+01:00",
+      "last_reply": "2009-03-31T02:37:58+01:00",
+      "root_message_id": "msg-cb2b62ff1304"
+    },
+    {
+      "id": "thread-19b9856657c3",
+      "subject": "WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-03-31T15:47:00-05:00",
+      "last_reply": "2009-03-31T15:47:00-05:00",
+      "root_message_id": "msg-19b9856657c3"
+    },
+    {
+      "id": "thread-19b9856657c3",
+      "subject": "WriteXLS: New version 1.6.0 - Binary CRAN packages available and other changes",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-03-31T15:47:00-05:00",
+      "last_reply": "2009-03-31T15:47:00-05:00",
+      "root_message_id": "msg-19b9856657c3"
+    }
+  ]
+}

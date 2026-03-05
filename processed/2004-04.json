@@ -1,0 +1,387 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2004-04",
+  "messages": [
+    {
+      "id": "msg-86513e3dfac7",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20680B274@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-04-12T17:44:56-04:00",
+      "subject": "[R-pkgs] new version of gregmisc package",
+      "subject_clean": "new version of gregmisc package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gregmisc 0.10.1\n---------------\n\ngregmisc 0.10.1 is now available at ftp://cran.r-project.org/incoming/ and\nwill move to the regular contributed packages location\n(http://cran.r-project.org/src/contrib/PACKAGES.html#gregmisc) as soon as\nthe CRAN administrators get caught up.\n\nRecent Changes\n---------------\n\nVersion 0.10.1\n\n- Fixed bug in textplot() reported by Kevin Wright  <kevin.d.wright at\npioneer\n  dot com>.\n\nVersion 0.10.0\n\n- Now works with and requires R 1.9.0\n\n- Added ooplot() function that mimics Open-Office style plots.\n  Contributed by Lodewijk Bonebakker <bonebakker at comcast.net>\n\n- Fixed bug in running() that arose when the called function\n  really needed a minimum number of elements to work on.\n\n- Added several new features to running(), it can now allow sequences\n  shorter than the requested width to be present at the front, the back,\n  or on both sides of the full lenth sequences.  This allows one to\n  align the data so that the window is before, after, or around the\n  indexed point.\n\n- Add enhancements to estimable() provided by S?ren H?jsgaard\n  <sorenh at agrsci.dk>:\n\n  The estimable function now\n  1) also works on geese and gee objects and\n  2) can test hypotheses af the forb L * beta = beta0 both as a\n     single Wald test and row-wise for each row in L.\n\n- Add colorpanel function, which generates a smoothly varying band of\n  colors over a three color range (lo, mid, high).\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "gregmisc 0.10.1\n---------------\n\ngregmisc 0.10.1 is now available at ftp://cran.r-project.org/incoming/ and\nwill move to the regular contributed packages location\n(http://cran.r-project.org/src/contri",
+      "thread_id": "thread-86513e3dfac7",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-86513e3dfac7",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20680B274@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-04-12T17:44:56-04:00",
+      "subject": "[R-pkgs] new version of gregmisc package",
+      "subject_clean": "new version of gregmisc package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "gregmisc 0.10.1\n---------------\n\ngregmisc 0.10.1 is now available at ftp://cran.r-project.org/incoming/ and\nwill move to the regular contributed packages location\n(http://cran.r-project.org/src/contrib/PACKAGES.html#gregmisc) as soon as\nthe CRAN administrators get caught up.\n\nRecent Changes\n---------------\n\nVersion 0.10.1\n\n- Fixed bug in textplot() reported by Kevin Wright  <kevin.d.wright at\npioneer\n  dot com>.\n\nVersion 0.10.0\n\n- Now works with and requires R 1.9.0\n\n- Added ooplot() function that mimics Open-Office style plots.\n  Contributed by Lodewijk Bonebakker <bonebakker at comcast.net>\n\n- Fixed bug in running() that arose when the called function\n  really needed a minimum number of elements to work on.\n\n- Added several new features to running(), it can now allow sequences\n  shorter than the requested width to be present at the front, the back,\n  or on both sides of the full lenth sequences.  This allows one to\n  align the data so that the window is before, after, or around the\n  indexed point.\n\n- Add enhancements to estimable() provided by S?ren H?jsgaard\n  <sorenh at agrsci.dk>:\n\n  The estimable function now\n  1) also works on geese and gee objects and\n  2) can test hypotheses af the forb L * beta = beta0 both as a\n     single Wald test and row-wise for each row in L.\n\n- Add colorpanel function, which generates a smoothly varying band of\n  colors over a three color range (lo, mid, high).\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "gregmisc 0.10.1\n---------------\n\ngregmisc 0.10.1 is now available at ftp://cran.r-project.org/incoming/ and\nwill move to the regular contributed packages location\n(http://cran.r-project.org/src/contri",
+      "thread_id": "thread-86513e3dfac7",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-98c693934aab",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521278@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-04-19T13:47:51-04:00",
+      "subject": "[R-pkgs] New package: mcgibbsit, an MCMC run length diagnostic ",
+      "subject_clean": "New package: mcgibbsit, an MCMC run length diagnostic",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Package: mcgibbsit\nTitle: Warnes and Raftery's MCGibbsit MCMC diagnostic \nVersion: 1.0\nAuthor: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nDescription: \n  mcgibbsit provides an implementation of Warnes & Raftery's MCGibbsit\n  run-length diagnostic for a set of (not-necessarily independent) MCMC\n  sampers.  It combines the estimate error-bounding approach of Raftery\n  and Lewis with evaulate between verses within chain approach\n  of Gelman and Rubin.\nMaintainer: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nLicense: GPL\nDepends: coda\n\nReferences:\n\nWarnes GR. The Normal Kernel Coupler: An adaptive Markov Chain Monte Carlo\nmethod for efficiently sampling from multi-modal distributions\n<http://www.analytics.washington.edu/statcomp/projects/mcmc/nkc/>, Ph.D.\nthesis, Department of Biostatistics, University of Washington,\n<http://www.biostat.washington.edu/> October 2000.   (See Chapter 3, \"Using\nthe Normal Kernel Coupler\")\n\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\nTel: 860-715-3536\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Package: mcgibbsit\nTitle: Warnes and Raftery's MCGibbsit MCMC diagnostic \nVersion: 1.0\nAuthor: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nDescription: \n  mcgibbsit provides an implement",
+      "thread_id": "thread-98c693934aab",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-98c693934aab",
+      "message_id": "<D7A3CFD7825BD6119B880002A58F06C20C521278@groexmb02.pfizer.com>",
+      "from_name": "Warnes, Gregory R",
+      "from_email_hash": "78176247357e33f9d8243f5809b8b9cf481d6519c967f5dec5cf7faa26b25aaa",
+      "date": "2004-04-19T13:47:51-04:00",
+      "subject": "[R-pkgs] New package: mcgibbsit, an MCMC run length diagnostic ",
+      "subject_clean": "New package: mcgibbsit, an MCMC run length diagnostic",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Package: mcgibbsit\nTitle: Warnes and Raftery's MCGibbsit MCMC diagnostic \nVersion: 1.0\nAuthor: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nDescription: \n  mcgibbsit provides an implementation of Warnes & Raftery's MCGibbsit\n  run-length diagnostic for a set of (not-necessarily independent) MCMC\n  sampers.  It combines the estimate error-bounding approach of Raftery\n  and Lewis with evaulate between verses within chain approach\n  of Gelman and Rubin.\nMaintainer: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nLicense: GPL\nDepends: coda\n\nReferences:\n\nWarnes GR. The Normal Kernel Coupler: An adaptive Markov Chain Monte Carlo\nmethod for efficiently sampling from multi-modal distributions\n<http://www.analytics.washington.edu/statcomp/projects/mcmc/nkc/>, Ph.D.\nthesis, Department of Biostatistics, University of Washington,\n<http://www.biostat.washington.edu/> October 2000.   (See Chapter 3, \"Using\nthe Normal Kernel Coupler\")\n\n\nGregory R. Warnes\nManager, Non-Clinical Statistics\nPfizer Global Research and Development\nTel: 860-715-3536\n\n\n\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Package: mcgibbsit\nTitle: Warnes and Raftery's MCGibbsit MCMC diagnostic \nVersion: 1.0\nAuthor: Gregory R. Warnes <gregory_r_warnes at groton.pfizer.com>\nDescription: \n  mcgibbsit provides an implement",
+      "thread_id": "thread-98c693934aab",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-bc5d0f7c5c40",
+      "message_id": "<6.0.1.1.2.20040421161018.0212e378@stat4ux.stat.ucl.ac.be>",
+      "from_name": "Eric Lecoutre",
+      "from_email_hash": "8fa2348fb1c15ba0453cc647aa6644879770c76ceeb98d5db135f1b4dd3c7cf3",
+      "date": "2004-04-21T16:31:19+02:00",
+      "subject": "[R-pkgs] R2HTML update",
+      "subject_clean": "R2HTML update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi to all R users,\n\nI have just uploaded in CRAN R2HTML 1.3, latest update of the R2HTML \npackage, so that it should soon be available for your favorite platform.\n\n\nCHANGELOG:\n- Fixed some user-contributed bugs.\n- More CSS styles are defined, so that it's possible to change the whole \nlook-and-feel of outputs / Add some CSS sample files.\n- Added HTMLstem to produce a stem-and-leaf plot (as stem does directly \nprint to console).\n- Added HTML.cormat, which is not a real S3 method but allows to write \ncorrelation matrices with \"traffic highlighting\" (colours).\n- Added a Sweave driver (for Friedrich Leisch wonderfull Sweave tool) which \nallows to include R code within complex HTML files and to replace this code \nby it's outputs (objects in HTML and graphs in png). Comes with sample files.\n- Dynamic use with HTMLStart() has a new option 'autobrowse' which \nauto-refresh (callls) the browser each time a command is processed.\n\nDESCRIPTION:\nPackage: R2HTML\nVersion: 1.3\nTitle: HTML exportation for R objects\nAuthor: Eric Lecoutre <lecoutre at stat.ucl.ac.be>\nMaintainer: Eric Lecoutre <lecoutre at stat.ucl.ac.be>\nDepends: R (>= 1.8.1)\nDescription: Includes HTML function and methods to write in an HTML file. \nThus, making HTML reports is easy. Includes a fonction that allows \nredirection on the fly, which appears to be very usefull for teaching \npurpose, as the student can keep a copy of the produced output to keep all \nthat he did during the course. Package comes with a vignette describing how \nto write HTML reports for statistical analysis. Finally, a driver for \nSweave allows to parse HTML flat files containing R code and to \nautomatically write the corresponding outputs (tables and graphs).\nLicense: GPL version 2 or newer\nURL: http://www.r-project.org, http://www.stat.ucl.ac.be/R2HTML/\n\nEric\nEric Lecoutre\nUCL /  Institut de Statistique\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBelgium\n\ntel: (+32)(0)10473050\nlecoutre at stat.ucl.ac.be\nhttp://www.stat.ucl.ac.be/ISpersonnel/lecoutre\n\nIf the statistics are boring, then you've got the wrong numbers. -Edward \nTufte",
+      "body_snippet": "Hi to all R users,\n\nI have just uploaded in CRAN R2HTML 1.3, latest update of the R2HTML \npackage, so that it should soon be available for your favorite platform.\n\n\nCHANGELOG:\n- Fixed some user-contri",
+      "thread_id": "thread-bc5d0f7c5c40",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-bc5d0f7c5c40",
+      "message_id": "<6.0.1.1.2.20040421161018.0212e378@stat4ux.stat.ucl.ac.be>",
+      "from_name": "Eric Lecoutre",
+      "from_email_hash": "8fa2348fb1c15ba0453cc647aa6644879770c76ceeb98d5db135f1b4dd3c7cf3",
+      "date": "2004-04-21T16:31:19+02:00",
+      "subject": "[R-pkgs] R2HTML update",
+      "subject_clean": "R2HTML update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi to all R users,\n\nI have just uploaded in CRAN R2HTML 1.3, latest update of the R2HTML \npackage, so that it should soon be available for your favorite platform.\n\n\nCHANGELOG:\n- Fixed some user-contributed bugs.\n- More CSS styles are defined, so that it's possible to change the whole \nlook-and-feel of outputs / Add some CSS sample files.\n- Added HTMLstem to produce a stem-and-leaf plot (as stem does directly \nprint to console).\n- Added HTML.cormat, which is not a real S3 method but allows to write \ncorrelation matrices with \"traffic highlighting\" (colours).\n- Added a Sweave driver (for Friedrich Leisch wonderfull Sweave tool) which \nallows to include R code within complex HTML files and to replace this code \nby it's outputs (objects in HTML and graphs in png). Comes with sample files.\n- Dynamic use with HTMLStart() has a new option 'autobrowse' which \nauto-refresh (callls) the browser each time a command is processed.\n\nDESCRIPTION:\nPackage: R2HTML\nVersion: 1.3\nTitle: HTML exportation for R objects\nAuthor: Eric Lecoutre <lecoutre at stat.ucl.ac.be>\nMaintainer: Eric Lecoutre <lecoutre at stat.ucl.ac.be>\nDepends: R (>= 1.8.1)\nDescription: Includes HTML function and methods to write in an HTML file. \nThus, making HTML reports is easy. Includes a fonction that allows \nredirection on the fly, which appears to be very usefull for teaching \npurpose, as the student can keep a copy of the produced output to keep all \nthat he did during the course. Package comes with a vignette describing how \nto write HTML reports for statistical analysis. Finally, a driver for \nSweave allows to parse HTML flat files containing R code and to \nautomatically write the corresponding outputs (tables and graphs).\nLicense: GPL version 2 or newer\nURL: http://www.r-project.org, http://www.stat.ucl.ac.be/R2HTML/\n\nEric\nEric Lecoutre\nUCL /  Institut de Statistique\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBelgium\n\ntel: (+32)(0)10473050\nlecoutre at stat.ucl.ac.be\nhttp://www.stat.ucl.ac.be/ISpersonnel/lecoutre\n\nIf the statistics are boring, then you've got the wrong numbers. -Edward \nTufte",
+      "body_snippet": "Hi to all R users,\n\nI have just uploaded in CRAN R2HTML 1.3, latest update of the R2HTML \npackage, so that it should soon be available for your favorite platform.\n\n\nCHANGELOG:\n- Fixed some user-contri",
+      "thread_id": "thread-bc5d0f7c5c40",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-e9dab7346e8d",
+      "message_id": "<p06002000bca43a623e05@[134.214.34.24]>",
+      "from_name": "ade4 at biomserv.univ-lyon1.fr",
+      "from_email_hash": "b3dbde7dc47330c2468fc87d6a5debe550ff3c3687d883b01f79e5d126f7ac0c",
+      "date": "2004-04-22T17:43:08+02:00",
+      "subject": "[R-pkgs] ade4 package update",
+      "subject_clean": "ade4 package update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The ade4 package (v. 1.2-1) has been updated on CRAN.\n\nNew features include:\n\n- functions based on Rao's axiomatization of diversity measures : Rao's\ndiversity coefficient and dissimilarity coefficient (divc and disc)\n\n- functions based on Excoffier et al. analysis of molecular variance\nwith tests of the difference among the factors (amova).\n\n- functions introducing double principal coordinate analysis (dpcoa).\n\n- genet class and related functions to analyse genetic data (tables with\npopulations in rows and alleles/loci in columns).\n\n- kdist class and related functions to analyse series of distance matrices\nmeasured on the same individuals.\n\n- rlq analysis, a three-tables ordination method, with permutation test (rlq)\n\n- hill-smith analysis, a row-weighted version of dudi.mix (dudi.hillsmith)\n\n- function ktab.match2ktabs, to prepare a STATICO analysis\n\n- functions s.class and s.chull allow the use of color.\n\n-- \n--\nJean Thioulouse - Labo. BBE, UMR CNRS 5558, Equipe \"Ecologie Statistique\"\nUniversite Lyon 1,  Batiment G. Mendel, 69622 Villeurbanne Cedex,  France\nTel: (33) 4 72 43 27 56                           Fax: (33) 4 72 43 27 56\n                 http://pbil.univ-lyon1.fr/JTHome.html",
+      "body_snippet": "The ade4 package (v. 1.2-1) has been updated on CRAN.\n\nNew features include:\n\n- functions based on Rao's axiomatization of diversity measures : Rao's\ndiversity coefficient and dissimilarity coefficien",
+      "thread_id": "thread-e9dab7346e8d",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-e9dab7346e8d",
+      "message_id": "<p06002000bca43a623e05@[134.214.34.24]>",
+      "from_name": "ade4 at biomserv.univ-lyon1.fr",
+      "from_email_hash": "b3dbde7dc47330c2468fc87d6a5debe550ff3c3687d883b01f79e5d126f7ac0c",
+      "date": "2004-04-22T17:43:08+02:00",
+      "subject": "[R-pkgs] ade4 package update",
+      "subject_clean": "ade4 package update",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The ade4 package (v. 1.2-1) has been updated on CRAN.\n\nNew features include:\n\n- functions based on Rao's axiomatization of diversity measures : Rao's\ndiversity coefficient and dissimilarity coefficient (divc and disc)\n\n- functions based on Excoffier et al. analysis of molecular variance\nwith tests of the difference among the factors (amova).\n\n- functions introducing double principal coordinate analysis (dpcoa).\n\n- genet class and related functions to analyse genetic data (tables with\npopulations in rows and alleles/loci in columns).\n\n- kdist class and related functions to analyse series of distance matrices\nmeasured on the same individuals.\n\n- rlq analysis, a three-tables ordination method, with permutation test (rlq)\n\n- hill-smith analysis, a row-weighted version of dudi.mix (dudi.hillsmith)\n\n- function ktab.match2ktabs, to prepare a STATICO analysis\n\n- functions s.class and s.chull allow the use of color.\n\n-- \n--\nJean Thioulouse - Labo. BBE, UMR CNRS 5558, Equipe \"Ecologie Statistique\"\nUniversite Lyon 1,  Batiment G. Mendel, 69622 Villeurbanne Cedex,  France\nTel: (33) 4 72 43 27 56                           Fax: (33) 4 72 43 27 56\n                 http://pbil.univ-lyon1.fr/JTHome.html",
+      "body_snippet": "The ade4 package (v. 1.2-1) has been updated on CRAN.\n\nNew features include:\n\n- functions based on Rao's axiomatization of diversity measures : Rao's\ndiversity coefficient and dissimilarity coefficien",
+      "thread_id": "thread-e9dab7346e8d",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-dbea00c126af",
+      "message_id": "<Pine.GSO.3.95q.1040426164217.24006B-100000@sun11.math.uni-hamburg.de>",
+      "from_name": "Christian Hennig",
+      "from_email_hash": "27ac985dbabe7f4bbf3f0190a1ef10b69a2c5d14166b622917b7adfcfd2aa62d",
+      "date": "2004-04-26T16:48:34+02:00",
+      "subject": "[R-pkgs] Cluster validation statistics in fpc",
+      "subject_clean": "Cluster validation statistics in fpc",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nthis is to announce a new version (1.1-2) of my package fpc. Apart from\nthe stuff already present in the older version (methods for fixed point\nclustering and clusterwise regression, somewhat bug-cleaned and with\nfaster examples) there is now a function cluster.stats, which computes\nsome distance-based statistics often used for cluster validation,\ndescription and decision about the number of clusters, including the\nso-called corrected rand index and some further methods mentioned in the\nGordon 1999 book on Classification.\n\nBest,\nChristian \n \n***********************************************************************\nChristian Hennig\nFachbereich Mathematik-SPST/ZMS, Universitaet Hamburg\nhennig at math.uni-hamburg.de, http://www.math.uni-hamburg.de/home/hennig/\n#######################################################################\nich empfehle www.boag-online.de",
+      "body_snippet": "Hi,\n\nthis is to announce a new version (1.1-2) of my package fpc. Apart from\nthe stuff already present in the older version (methods for fixed point\nclustering and clusterwise regression, somewhat bug",
+      "thread_id": "thread-dbea00c126af",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-dbea00c126af",
+      "message_id": "<Pine.GSO.3.95q.1040426164217.24006B-100000@sun11.math.uni-hamburg.de>",
+      "from_name": "Christian Hennig",
+      "from_email_hash": "27ac985dbabe7f4bbf3f0190a1ef10b69a2c5d14166b622917b7adfcfd2aa62d",
+      "date": "2004-04-26T16:48:34+02:00",
+      "subject": "[R-pkgs] Cluster validation statistics in fpc",
+      "subject_clean": "Cluster validation statistics in fpc",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nthis is to announce a new version (1.1-2) of my package fpc. Apart from\nthe stuff already present in the older version (methods for fixed point\nclustering and clusterwise regression, somewhat bug-cleaned and with\nfaster examples) there is now a function cluster.stats, which computes\nsome distance-based statistics often used for cluster validation,\ndescription and decision about the number of clusters, including the\nso-called corrected rand index and some further methods mentioned in the\nGordon 1999 book on Classification.\n\nBest,\nChristian \n \n***********************************************************************\nChristian Hennig\nFachbereich Mathematik-SPST/ZMS, Universitaet Hamburg\nhennig at math.uni-hamburg.de, http://www.math.uni-hamburg.de/home/hennig/\n#######################################################################\nich empfehle www.boag-online.de",
+      "body_snippet": "Hi,\n\nthis is to announce a new version (1.1-2) of my package fpc. Apart from\nthe stuff already present in the older version (methods for fixed point\nclustering and clusterwise regression, somewhat bug",
+      "thread_id": "thread-dbea00c126af",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-684ecff185cb",
+      "message_id": "<408D5745.7000203@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2004-04-26T20:39:01+02:00",
+      "subject": "[R-pkgs] New package: distr",
+      "subject_clean": "New package: distr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new package distr .\nIt is to provide a conceptual treatment of random variables (r.v.'s) by \nmeans of\nS4--classes. A virtual mother class \"Distribution\" is introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.3\nDate: 2004/04/23\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 1.9.0),  (version for 1.8.x on URL cited below),\n     setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:   \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new package distr .\nIt is to provide a conceptual treatment of random variables (r.v.'s) by \nmeans of\nS4--classes. A virtual mother class \"Distr",
+      "thread_id": "thread-684ecff185cb",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-684ecff185cb",
+      "message_id": "<408D5745.7000203@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2004-04-26T20:39:01+02:00",
+      "subject": "[R-pkgs] New package: distr",
+      "subject_clean": "New package: distr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new package distr .\nIt is to provide a conceptual treatment of random variables (r.v.'s) by \nmeans of\nS4--classes. A virtual mother class \"Distribution\" is introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.3\nDate: 2004/04/23\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 1.9.0),  (version for 1.8.x on URL cited below),\n     setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:   \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new package distr .\nIt is to provide a conceptual treatment of random variables (r.v.'s) by \nmeans of\nS4--classes. A virtual mother class \"Distr",
+      "thread_id": "thread-684ecff185cb",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-075659069b00",
+      "message_id": "<6roepcq87v.fsf@bates4.stat.wisc.edu>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2004-04-28T13:16:04-05:00",
+      "subject": "[R-pkgs] Release candidate 1 of lme4_0.6-1",
+      "subject_clean": "Release candidate 1 of lme4_0.6-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Deepayan Sarkar and I have a source package of release candidate 1 of\nthe 0.6 series of the lme4 package available at\n         http://www.stat.wisc.edu/~bates/lme4_0.6-0-1.tar.gz\nThis package requires Matrix_0.8-6 which has been uploaded to CRAN and\nshould be available in a few days.  A copy of the source package is\navailable as\n         http://www.stat.wisc.edu/~bates/Matrix_0.8-6.tar.gz\n\nAlthough this version of lme4 passes \"R CMD check\" on our GNU/Linux\nsystems we have not uploaded it to CRAN because it still lacks\ncapabilities that are available in lme4_0.5-2, which is currently on\nCRAN.  As soon as we have all the capabilities of the 0.5 series\navailable in the 0.6 series we will release lme4_0.6-1.tar.gz to CRAN.\n\nThis version of lme4 is a complete rewrite of the data structures and\nalgorithms for fitting linear mixed models.  An incomplete draft\nversion of a paper describing the methods is available as a vignette.\nSubsequent releases will contain a more polished version of this\npaper.\n\nThe big change relative to earlier versions is that you can fit models\nwith crossed random effects quickly and easily.  For example, using\nthe data on Scottish secondary school students achievement scores\n(from http://multilevel.ioe.ac.uk/softrev/) we can fit a model with\nrandom effects for both the secondary and the primary school attended\nas\n\n> library(lme4)\n This package is in development.  For production work use\n lme from package nlme or glmmPQL from package MASS.\n> data(ScotsSec)\n> fm1 = lme(attain ~ verbal*sex, ScotsSec, random=list(primary=~1,second=~1))\n> gc();system.time(lme(attain ~ verbal*sex, ScotsSec, random=list(primary=~1,second=~1)))\n         used (Mb) gc trigger (Mb)\nNcells 701438 18.8    1166886 31.2\nVcells 267929  2.1     786432  6.0\n[1] 0.1 0.0 0.1 0.0 0.0\n> summary(fm1)\nLinear mixed-effects model fit by REML\nFixed: formula \n      AIC      BIC    logLik\n 14882.32 14925.32 -7434.162\n\nRandom effects:\n Groups   Name        Variance Std.Dev.\n primary  (Intercept) 0.275458 0.52484 \n second   (Intercept) 0.014748 0.12144 \n Residual             4.2531   2.0623  \n\nFixed effects:\n              Estimate Std. Error   DF t value Pr(>|t|)    \n(Intercept) 5.9147e+00 7.6795e-02 3431 77.0197  < 2e-16 ***\nverbal      1.5836e-01 3.7872e-03 3431 41.8136  < 2e-16 ***\nsexF        1.2155e-01 7.2413e-02 3431  1.6786  0.09332 .  \nverbal:sexF 2.5929e-03 5.3885e-03 3431  0.4812  0.63041    \n---\nSignif. codes:  0 `***' 0.001 `**' 0.01 `*' 0.05 `.' 0.1 ` ' 1 \n\nCorrelation of Fixed Effects:\n            (Intr) verbal sexF  \nverbal       0.177              \nsexF        -0.482 -0.178       \nverbal:sexF -0.122 -0.680  0.161\n\nNumber of Observations: 3435\nNumber of Groups: \nprimary  second \n    148      19 \n\nThere are other examples in the tests subdirectory.  \n\nThe lme function behaves as previously *with one exception*.  In the\nmodel specification there is no longer any distinction between crossed\nor nested or partially crossed random effects.  This means that for\nnested random effects you must ensure that every inner grouping\ncorresponds to a unique level of the inner grouping factor.  For\nexample, in the Pixel data there are two grouping factors, Dog and\nSide with Side nested within Dog.  You must create a new grouping\nfactor, say DS, with unique levels for each Dog/Side combination to be\nable to specify a model of \"Side within Dog\".",
+      "body_snippet": "Deepayan Sarkar and I have a source package of release candidate 1 of\nthe 0.6 series of the lme4 package available at\n         http://www.stat.wisc.edu/~bates/lme4_0.6-0-1.tar.gz\nThis package requires",
+      "thread_id": "thread-075659069b00",
+      "thread_depth": 0,
+      "month": "2004-04"
+    },
+    {
+      "id": "msg-075659069b00",
+      "message_id": "<6roepcq87v.fsf@bates4.stat.wisc.edu>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2004-04-28T13:16:04-05:00",
+      "subject": "[R-pkgs] Release candidate 1 of lme4_0.6-1",
+      "subject_clean": "Release candidate 1 of lme4_0.6-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Deepayan Sarkar and I have a source package of release candidate 1 of\nthe 0.6 series of the lme4 package available at\n         http://www.stat.wisc.edu/~bates/lme4_0.6-0-1.tar.gz\nThis package requires Matrix_0.8-6 which has been uploaded to CRAN and\nshould be available in a few days.  A copy of the source package is\navailable as\n         http://www.stat.wisc.edu/~bates/Matrix_0.8-6.tar.gz\n\nAlthough this version of lme4 passes \"R CMD check\" on our GNU/Linux\nsystems we have not uploaded it to CRAN because it still lacks\ncapabilities that are available in lme4_0.5-2, which is currently on\nCRAN.  As soon as we have all the capabilities of the 0.5 series\navailable in the 0.6 series we will release lme4_0.6-1.tar.gz to CRAN.\n\nThis version of lme4 is a complete rewrite of the data structures and\nalgorithms for fitting linear mixed models.  An incomplete draft\nversion of a paper describing the methods is available as a vignette.\nSubsequent releases will contain a more polished version of this\npaper.\n\nThe big change relative to earlier versions is that you can fit models\nwith crossed random effects quickly and easily.  For example, using\nthe data on Scottish secondary school students achievement scores\n(from http://multilevel.ioe.ac.uk/softrev/) we can fit a model with\nrandom effects for both the secondary and the primary school attended\nas\n\n> library(lme4)\n This package is in development.  For production work use\n lme from package nlme or glmmPQL from package MASS.\n> data(ScotsSec)\n> fm1 = lme(attain ~ verbal*sex, ScotsSec, random=list(primary=~1,second=~1))\n> gc();system.time(lme(attain ~ verbal*sex, ScotsSec, random=list(primary=~1,second=~1)))\n         used (Mb) gc trigger (Mb)\nNcells 701438 18.8    1166886 31.2\nVcells 267929  2.1     786432  6.0\n[1] 0.1 0.0 0.1 0.0 0.0\n> summary(fm1)\nLinear mixed-effects model fit by REML\nFixed: formula \n      AIC      BIC    logLik\n 14882.32 14925.32 -7434.162\n\nRandom effects:\n Groups   Name        Variance Std.Dev.\n primary  (Intercept) 0.275458 0.52484 \n second   (Intercept) 0.014748 0.12144 \n Residual             4.2531   2.0623  \n\nFixed effects:\n              Estimate Std. Error   DF t value Pr(>|t|)    \n(Intercept) 5.9147e+00 7.6795e-02 3431 77.0197  < 2e-16 ***\nverbal      1.5836e-01 3.7872e-03 3431 41.8136  < 2e-16 ***\nsexF        1.2155e-01 7.2413e-02 3431  1.6786  0.09332 .  \nverbal:sexF 2.5929e-03 5.3885e-03 3431  0.4812  0.63041    \n---\nSignif. codes:  0 `***' 0.001 `**' 0.01 `*' 0.05 `.' 0.1 ` ' 1 \n\nCorrelation of Fixed Effects:\n            (Intr) verbal sexF  \nverbal       0.177              \nsexF        -0.482 -0.178       \nverbal:sexF -0.122 -0.680  0.161\n\nNumber of Observations: 3435\nNumber of Groups: \nprimary  second \n    148      19 \n\nThere are other examples in the tests subdirectory.  \n\nThe lme function behaves as previously *with one exception*.  In the\nmodel specification there is no longer any distinction between crossed\nor nested or partially crossed random effects.  This means that for\nnested random effects you must ensure that every inner grouping\ncorresponds to a unique level of the inner grouping factor.  For\nexample, in the Pixel data there are two grouping factors, Dog and\nSide with Side nested within Dog.  You must create a new grouping\nfactor, say DS, with unique levels for each Dog/Side combination to be\nable to specify a model of \"Side within Dog\".",
+      "body_snippet": "Deepayan Sarkar and I have a source package of release candidate 1 of\nthe 0.6 series of the lme4 package available at\n         http://www.stat.wisc.edu/~bates/lme4_0.6-0-1.tar.gz\nThis package requires",
+      "thread_id": "thread-075659069b00",
+      "thread_depth": 0,
+      "month": "2004-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-86513e3dfac7",
+      "subject": "new version of gregmisc package",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-04-12T17:44:56-04:00",
+      "last_reply": "2004-04-12T17:44:56-04:00",
+      "root_message_id": "msg-86513e3dfac7"
+    },
+    {
+      "id": "thread-86513e3dfac7",
+      "subject": "new version of gregmisc package",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-04-12T17:44:56-04:00",
+      "last_reply": "2004-04-12T17:44:56-04:00",
+      "root_message_id": "msg-86513e3dfac7"
+    },
+    {
+      "id": "thread-98c693934aab",
+      "subject": "New package: mcgibbsit, an MCMC run length diagnostic",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-04-19T13:47:51-04:00",
+      "last_reply": "2004-04-19T13:47:51-04:00",
+      "root_message_id": "msg-98c693934aab"
+    },
+    {
+      "id": "thread-98c693934aab",
+      "subject": "New package: mcgibbsit, an MCMC run length diagnostic",
+      "message_count": 1,
+      "participants": [
+        "Warnes, Gregory R"
+      ],
+      "started": "2004-04-19T13:47:51-04:00",
+      "last_reply": "2004-04-19T13:47:51-04:00",
+      "root_message_id": "msg-98c693934aab"
+    },
+    {
+      "id": "thread-bc5d0f7c5c40",
+      "subject": "R2HTML update",
+      "message_count": 1,
+      "participants": [
+        "Eric Lecoutre"
+      ],
+      "started": "2004-04-21T16:31:19+02:00",
+      "last_reply": "2004-04-21T16:31:19+02:00",
+      "root_message_id": "msg-bc5d0f7c5c40"
+    },
+    {
+      "id": "thread-bc5d0f7c5c40",
+      "subject": "R2HTML update",
+      "message_count": 1,
+      "participants": [
+        "Eric Lecoutre"
+      ],
+      "started": "2004-04-21T16:31:19+02:00",
+      "last_reply": "2004-04-21T16:31:19+02:00",
+      "root_message_id": "msg-bc5d0f7c5c40"
+    },
+    {
+      "id": "thread-e9dab7346e8d",
+      "subject": "ade4 package update",
+      "message_count": 1,
+      "participants": [
+        "ade4 at biomserv.univ-lyon1.fr"
+      ],
+      "started": "2004-04-22T17:43:08+02:00",
+      "last_reply": "2004-04-22T17:43:08+02:00",
+      "root_message_id": "msg-e9dab7346e8d"
+    },
+    {
+      "id": "thread-e9dab7346e8d",
+      "subject": "ade4 package update",
+      "message_count": 1,
+      "participants": [
+        "ade4 at biomserv.univ-lyon1.fr"
+      ],
+      "started": "2004-04-22T17:43:08+02:00",
+      "last_reply": "2004-04-22T17:43:08+02:00",
+      "root_message_id": "msg-e9dab7346e8d"
+    },
+    {
+      "id": "thread-dbea00c126af",
+      "subject": "Cluster validation statistics in fpc",
+      "message_count": 1,
+      "participants": [
+        "Christian Hennig"
+      ],
+      "started": "2004-04-26T16:48:34+02:00",
+      "last_reply": "2004-04-26T16:48:34+02:00",
+      "root_message_id": "msg-dbea00c126af"
+    },
+    {
+      "id": "thread-dbea00c126af",
+      "subject": "Cluster validation statistics in fpc",
+      "message_count": 1,
+      "participants": [
+        "Christian Hennig"
+      ],
+      "started": "2004-04-26T16:48:34+02:00",
+      "last_reply": "2004-04-26T16:48:34+02:00",
+      "root_message_id": "msg-dbea00c126af"
+    },
+    {
+      "id": "thread-684ecff185cb",
+      "subject": "New package: distr",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2004-04-26T20:39:01+02:00",
+      "last_reply": "2004-04-26T20:39:01+02:00",
+      "root_message_id": "msg-684ecff185cb"
+    },
+    {
+      "id": "thread-684ecff185cb",
+      "subject": "New package: distr",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2004-04-26T20:39:01+02:00",
+      "last_reply": "2004-04-26T20:39:01+02:00",
+      "root_message_id": "msg-684ecff185cb"
+    },
+    {
+      "id": "thread-075659069b00",
+      "subject": "Release candidate 1 of lme4_0.6-1",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2004-04-28T13:16:04-05:00",
+      "last_reply": "2004-04-28T13:16:04-05:00",
+      "root_message_id": "msg-075659069b00"
+    },
+    {
+      "id": "thread-075659069b00",
+      "subject": "Release candidate 1 of lme4_0.6-1",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2004-04-28T13:16:04-05:00",
+      "last_reply": "2004-04-28T13:16:04-05:00",
+      "root_message_id": "msg-075659069b00"
+    }
+  ]
+}

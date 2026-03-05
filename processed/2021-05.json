@@ -1,0 +1,174 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-05",
+  "messages": [
+    {
+      "id": "msg-0dd11fba1c4e",
+      "message_id": "<CAKoOfS3DaQ8dgDRjXY=khi0F_yf_HkhGDMqz9UrLiZYmCQRxEA@mail.gmail.com>",
+      "from_name": "Peer Christensen",
+      "from_email_hash": "9498703289458a53af3d3b72bba37d2bcccda03f216b6296865dd3391aa9a0e2",
+      "date": "2021-05-12T14:14:47+02:00",
+      "subject": "[R-pkgs] modelimpact",
+      "subject_clean": "modelimpact",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am happy to announce that modelimpact is now on CRAN.\n\nmodelimpact contains functions to assess the expected business value\nof using a churn prediction model in e.g. a marketing campaign.\n\nExamples are shown in the GitHub readme: https://github.com/\n<https://github.com/PeerChristensen/modelimpact>PeerChristensen/modelimpact\n\nBest regards\n\nPeer Christensen\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that modelimpact is now on CRAN.\n\nmodelimpact contains functions to assess the expected business value\nof using a churn prediction model in e.g. a marketing campa",
+      "thread_id": "thread-0dd11fba1c4e",
+      "thread_depth": 0,
+      "month": "2021-05"
+    },
+    {
+      "id": "msg-3a89985ecaec",
+      "message_id": "<878s4iq8tp.fsf@phoca.sebkatja.org>",
+      "from_name": "Sebastian P. Luque",
+      "from_email_hash": "64e1245723a518467f98fc9a0ecf9b5f086a4977ca9fcb21467077da9da7bf73",
+      "date": "2021-05-13T22:43:14-05:00",
+      "subject": "[R-pkgs] diveMove 1.6.0 released",
+      "subject_clean": "diveMove 1.6.0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nA new version of diveMove (1.6.0) is now on CRAN\n(https://cran.r-project.org/package=diveMove).  diveMove offers tools\nand utilities for performing essential tasks for the analysis of\ntime-depth recoder (TDR) data loggers.\n\nThe latest version completes the framework for modelling mixtures of\nexponential distributions, a common approach for identifying transitions\nbetween events such as dives occurring in bouts.  A new class is now\navailable to represent such data, with methods and functions available\nfor:\n\n* Fitting models via non-linear least squares and maximum likelihood\n  (recommended).\n* Determining bout-ending criteria.\n* Plotting predicted and observed data, including cumulative frequency\n  distribution.\n* Generating samples from mixtures of distributions.\n\nThe new class and associated methods make a number of functions in\nprevious versions obsolete.  Please see help(diveMove-defunct) and\nhelp(diveMove-deprecated) for details.\n\nhttps://github.com/spluque/diveMove\n\n--\nSebastian P. Luque",
+      "body_snippet": "Dear R community,\n\nA new version of diveMove (1.6.0) is now on CRAN\n(https://cran.r-project.org/package=diveMove).  diveMove offers tools\nand utilities for performing essential tasks for the analysis ",
+      "thread_id": "thread-3a89985ecaec",
+      "thread_depth": 0,
+      "month": "2021-05"
+    },
+    {
+      "id": "msg-6b6e401277d1",
+      "message_id": "<1912de5a-0f18-9441-b630-253ea0eaa050@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "040b2d09159b27cfd2853bc2dbb476bd637811586f307d9583c9ef7f806f3692",
+      "date": "2021-05-17T08:47:02-04:00",
+      "subject": "[R-pkgs] New CRAN Package: BI - Generate James (1996) and Bang (2004) Blinding Indexes",
+      "subject_clean": "New CRAN Package: BI - Generate James (1996) and Bang (2004) Blinding Indexes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nVersion 1.0.0 of the new BI package is now on CRAN.\n\nThe BI package will generate the James Blinding Index, as described in \nJames et al (1996, https://pubmed.ncbi.nlm.nih.gov/8841652/) and the \nBang Blinding Index, as described in Bang et al (2004, \nhttps://pubmed.ncbi.nlm.nih.gov/15020033/).\n\nThese are measures to assess whether or not satisfactory blinding has \nbeen maintained in a randomized, controlled, clinical trial. These can \nbe generated for trial subjects, research coordinators and principal \ninvestigators, based upon standardized questionnaires that have been \nadministered, to assess whether or not they can correctly guess to which \ntreatment arm (e.g. placebo or treatment) subjects were assigned at \nrandomization.\n\n\nThe package is available from:\n\n   https://CRAN.R-project.org/package=BI\n\nand is maintained on Github:\n\n   https://github.com/marcschwartz/BI\n\n\nWarm regards,\n\nMarc Schwartz",
+      "body_snippet": "Hi All,\n\nVersion 1.0.0 of the new BI package is now on CRAN.\n\nThe BI package will generate the James Blinding Index, as described in \nJames et al (1996, https://pubmed.ncbi.nlm.nih.gov/8841652/) and t",
+      "thread_id": "thread-6b6e401277d1",
+      "thread_depth": 0,
+      "month": "2021-05"
+    },
+    {
+      "id": "msg-4670238ddcb9",
+      "message_id": "<45WYJhX3rLMXX8kaLCj7rclaxYWs5gN8xWu1n-_UPOwGp9GKvjbJHa-EUM2605peA5kh8b91vaNrzyMnmJ6ZYXFvPLEFagqEFyc4ykUv-hI=@alecstashevsky.com>",
+      "from_name": "Alec Stashevsky",
+      "from_email_hash": "3801db8f292aa9a1f1d986f7e67bf4376c7c46a5961863b3df83bed3cd1af2d5",
+      "date": "2021-05-17T14:03:53Z",
+      "subject": "[R-pkgs] blocklength 0.1.4 released",
+      "subject_clean": "blocklength 0.1.4 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nblocklength 0.1.4 has been released to CRAN (https://cran.r-project.org/package=blocklength! blocklength is a package with several methods to automatically select the optimal block-length parameter to be used in a block-bootstrap procedure of dependent data, such as stationary time series.\n\nThe newest version includes two methods. A cross-validation method proposed by Hall, Horowitz, and Jing (1995) <[doi:10.1093/biomet/82.3.561](https://doi.org/10.1093%2Fbiomet%2F82.3.561)> and a non-parametric plug-in method based on spectral density estimation proposed by Politis and White (2004) <[doi:10.1081/ETC-120028836](https://doi.org/10.1081%2FETC-120028836)> including the Patton, Politis, and White (2009) <[doi:10.1080/07474930802459016](https://doi.org/10.1080%2F07474930802459016)> correction with a corresponding set of S3 plot methods.\n\nblocklength has also received a fancy hex sticker - thanks to Malina Cheeneebash!\n\nBest,\n\nAlec Stashevsky\n\n[Website](https://alecstashevsky.com)\n[Recent Publications](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2775666)\n[GitHub](https://github.com/Alec-Stashevsky/GAP-climate-research)\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Community,\n\nblocklength 0.1.4 has been released to CRAN (https://cran.r-project.org/package=blocklength! blocklength is a package with several methods to automatically select the optimal block-",
+      "thread_id": "thread-4670238ddcb9",
+      "thread_depth": 0,
+      "month": "2021-05"
+    },
+    {
+      "id": "msg-8e8a65b0299c",
+      "message_id": "<9ae2cb4e-576c-4243-b016-0eb71cc40077@www.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2021-05-22T11:13:01-04:00",
+      "subject": "[R-pkgs] pkglite 0.2.0 is released",
+      "subject_clean": "pkglite 0.2.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nA new version of pkglite (0.2.0) is now on CRAN (https://cran.r-project.org/package=pkglite). pkglite offers a tool, grammar, and standard to represent and exchange R package source code as text files.\n\nThis version brings new file specification templates and new methods to operate on file collections, with a few bug fixes and enhancements. Please see the changelog (https://merck.github.io/pkglite/news/) for details.\n\nThanks,\n-Nan",
+      "body_snippet": "Dear all,\n\nA new version of pkglite (0.2.0) is now on CRAN (https://cran.r-project.org/package=pkglite). pkglite offers a tool, grammar, and standard to represent and exchange R package source code as",
+      "thread_id": "thread-8e8a65b0299c",
+      "thread_depth": 0,
+      "month": "2021-05"
+    },
+    {
+      "id": "msg-ca5e78de2d96",
+      "message_id": "<1265731484.66404806.1621851941567.JavaMail.zimbra@istat.it>",
+      "from_name": "Andrea Fasulo",
+      "from_email_hash": "1effc454e30b23d0543992f3d7bfc77298a18f97de8a308d86967d4624a54f4d",
+      "date": "2021-05-24T12:25:41+02:00",
+      "subject": "[R-pkgs] mind 0.1.0",
+      "subject_clean": "mind 0.1.0",
+      "in_reply_to": "<1197766154.15579981.1611911877018.JavaMail.zimbra@istat.it>",
+      "references": [
+        "<625278381.7227906.1610527875843.JavaMail.zimbra@istat.it>",
+        "<1197766154.15579981.1611911877018.JavaMail.zimbra@istat.it>"
+      ],
+      "body_plain": "Dear R users: \nmind 0.1.0 is now available on CRAN. \nThis package a llows users to produce estimates and MSE for multivariate variables using unit level Linear Mixed Model. \nThe package follows the approach of Datta, Day and Basawa (1999). Hope this can be useful, \nRegards \nAndrea Fasulo \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users: \nmind 0.1.0 is now available on CRAN. \nThis package a llows users to produce estimates and MSE for multivariate variables using unit level Linear Mixed Model. \nThe package follows the ap",
+      "thread_id": "thread-ca5e78de2d96",
+      "thread_depth": 0,
+      "month": "2021-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0dd11fba1c4e",
+      "subject": "modelimpact",
+      "message_count": 1,
+      "participants": [
+        "Peer Christensen"
+      ],
+      "started": "2021-05-12T14:14:47+02:00",
+      "last_reply": "2021-05-12T14:14:47+02:00",
+      "root_message_id": "msg-0dd11fba1c4e"
+    },
+    {
+      "id": "thread-3a89985ecaec",
+      "subject": "diveMove 1.6.0 released",
+      "message_count": 1,
+      "participants": [
+        "Sebastian P. Luque"
+      ],
+      "started": "2021-05-13T22:43:14-05:00",
+      "last_reply": "2021-05-13T22:43:14-05:00",
+      "root_message_id": "msg-3a89985ecaec"
+    },
+    {
+      "id": "thread-6b6e401277d1",
+      "subject": "New CRAN Package: BI - Generate James (1996) and Bang (2004) Blinding Indexes",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2021-05-17T08:47:02-04:00",
+      "last_reply": "2021-05-17T08:47:02-04:00",
+      "root_message_id": "msg-6b6e401277d1"
+    },
+    {
+      "id": "thread-4670238ddcb9",
+      "subject": "blocklength 0.1.4 released",
+      "message_count": 1,
+      "participants": [
+        "Alec Stashevsky"
+      ],
+      "started": "2021-05-17T14:03:53+00:00",
+      "last_reply": "2021-05-17T14:03:53+00:00",
+      "root_message_id": "msg-4670238ddcb9"
+    },
+    {
+      "id": "thread-8e8a65b0299c",
+      "subject": "pkglite 0.2.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2021-05-22T11:13:01-04:00",
+      "last_reply": "2021-05-22T11:13:01-04:00",
+      "root_message_id": "msg-8e8a65b0299c"
+    },
+    {
+      "id": "thread-ca5e78de2d96",
+      "subject": "mind 0.1.0",
+      "message_count": 1,
+      "participants": [
+        "Andrea Fasulo"
+      ],
+      "started": "2021-05-24T12:25:41+02:00",
+      "last_reply": "2021-05-24T12:25:41+02:00",
+      "root_message_id": "msg-ca5e78de2d96"
+    }
+  ]
+}

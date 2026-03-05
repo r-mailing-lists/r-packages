@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2022-11",
+  "messages": [
+    {
+      "id": "msg-c3531c81ca1b",
+      "message_id": "<CAESJsLuT6TdnaUATFV6pddbzxSLBqbQgGLGdmynwQoK9dZ_JRA@mail.gmail.com>",
+      "from_name": "Shael Brown",
+      "from_email_hash": "e04b3ac9f7a8b11097fcf4593d4dd71572270f92c07fa5a3119770494313bbd0",
+      "date": "2022-11-09T09:17:06-04:00",
+      "subject": "[R-pkgs] TDApplied version 2.0.0",
+      "subject_clean": "TDApplied version 2.0.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am very excited to announce TDApplied version 2.0.0 is now available on\nCRAN, with some significant improvements to the previous version.\n\nTopological data analysis is a powerful tool for finding non-linear global\nstructure in whole datasets. 'TDApplied' aims to bridge topological data\nanalysis with data, statistical and machine learning practitioners so that\nmore analyses may benefit from the power of topological data analysis. The\nmain tool of topological data analysis is persistent homology, which\ncomputes a shape descriptor of a dataset, called a persistence diagram.\n\nThere are five goals of this package:\n\n(1) convert persistence diagrams computed using the two main R packages for\ntopological data analysis into a data frame,\n(2) implement fast versions of both distance and kernel calculations\n    for pairs of persistence diagrams,\n(3) provide methods for machine learning and inference for persistence\ndiagrams which scale well,\n(4) deliver a fast implementation of persistent homology via a python\ninterface, and\n(5) contribute tools for the interpretation of persistence diagrams.\n\nFor details and examples please check out the github page\nhttps://github.com/shaelebrown/TDApplied or the README file on CRAN\nhttps://cran.r-project.org/web/packages/TDApplied/readme/README.html\n\nI sincerely hope that you will enjoy using this updated version and that it\nhelps the field of topological data analysis progress in both academia and\nindustry.\n\nBest regards,\nShael\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am very excited to announce TDApplied version 2.0.0 is now available on\nCRAN, with some significant improvements to the previous version.\n\nTopological data analysis is a powerful tool",
+      "thread_id": "thread-c3531c81ca1b",
+      "thread_depth": 0,
+      "month": "2022-11"
+    },
+    {
+      "id": "msg-549280da29b2",
+      "message_id": "<eecad148a1987e4f8b053b564c614158@posteo.de>",
+      "from_name": "Lowe Wilsson",
+      "from_email_hash": "d1f0331e50365a3101ec637b51942f644075c5f91d1102de68fec5319c7b0388",
+      "date": "2022-11-11T17:27:55Z",
+      "subject": "[R-pkgs] synr: Analyze stimulus-color consistency test data",
+      "subject_clean": "synr: Analyze stimulus-color consistency test data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear fellow useRs,\n\nsynr is an R package for working with data resulting from so-called\nconsistency tests, aimed at studying associations between stimuli and\ncolors. A simple example of such an association is if someone\nexperiences the color blue when hearing a particular word, or seeing the\nletter 7 as red even if it is printed in black. The package, like\nconsistency tests, is especially relevant for synesthesia research but\nmay be of use to others researching color experiences. Yet others might\nbe interested in how the package utilizes the DBSCAN clustering\nalgorithm to evaluate variation in 3D space point coordinates.\n\nYou can learn more in an article just published in Behavior Research\nMethods, \"synr: An R package for handling synesthesia consistency test\ndata\": https://rdcu.be/cZrrh [1]\n\nThe package itself also includes comprehensive vignettes explaining its\nuse. CRAN link: https://cran.r-project.org/web/packages/synr/index.html\n[2]\n\nIssue reports and contributions are very welcome on GitHub:\nhttps://github.com/datalowe/synr [3] I've also created a GitHub page\nwith Packrat which includes nicely-formatted versions of the vignettes:\nhttps://datalowe.github.io/synr [4]\n\nI hope you'll find the package useful!\n\nSincerely,\nLowe Wilsson \n\nLinks:\n------\n[1] https://rdcu.be/cZrrh\n[2] https://cran.r-project.org/web/packages/synr/index.html\n[3] https://github.com/datalowe/synr\n[4] https://datalowe.github.io/synr\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear fellow useRs,\n\nsynr is an R package for working with data resulting from so-called\nconsistency tests, aimed at studying associations between stimuli and\ncolors. A simple example of such an associ",
+      "thread_id": "thread-549280da29b2",
+      "thread_depth": 0,
+      "month": "2022-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c3531c81ca1b",
+      "subject": "TDApplied version 2.0.0",
+      "message_count": 1,
+      "participants": [
+        "Shael Brown"
+      ],
+      "started": "2022-11-09T09:17:06-04:00",
+      "last_reply": "2022-11-09T09:17:06-04:00",
+      "root_message_id": "msg-c3531c81ca1b"
+    },
+    {
+      "id": "thread-549280da29b2",
+      "subject": "synr: Analyze stimulus-color consistency test data",
+      "message_count": 1,
+      "participants": [
+        "Lowe Wilsson"
+      ],
+      "started": "2022-11-11T17:27:55+00:00",
+      "last_reply": "2022-11-11T17:27:55+00:00",
+      "root_message_id": "msg-549280da29b2"
+    }
+  ]
+}

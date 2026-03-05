@@ -1,0 +1,144 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-11",
+  "messages": [
+    {
+      "id": "msg-39c017160e1d",
+      "message_id": "<CAC2h7us_RYEA535qBooOJsX+08JApgR6i=W7hbgKqO2uy_aU_w@mail.gmail.com>",
+      "from_name": "Kasper Daniel Hansen",
+      "from_email_hash": "b2b45a5f3ad330d8561a4711d1f95ff6a445243a303a83a7a709685fab3e068c",
+      "date": "2012-11-08T14:37:47-05:00",
+      "subject": "[R-pkgs] Rgraphviz 2.2.1",
+      "subject_clean": "Rgraphviz 2.2.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "(cross-posted to Graphviz-devel)\n\nRgraphviz 2.2.1 has been released as part of the Bioconductor 2.11 release.\n\nRgraphviz is an R interface to the Graphviz library\n(www.graphviz.org), which is used for graph\nlayouts.  Rgraphviz is one of the most popular packages from the\nBioconductor project with more than 39,000 downloads in the last 12\nmonths.\n\nThe major, user-visible change in Rgraphviz >= 2.x.x is that Rgraphviz\nno longer depends on an externally installed Graphviz.  Instead it is\nbundled with a patched version of Graphviz 2.28.0. This should greatly\nsimplify installation on all platforms (Linux, OS X and Windows, both\n32 and 64 bit).  It is now installed as any other Bioconductor\npackage, simply by:\n  R> source(\"http://www.bioconductor.org/biocLite.R\")\n  R> biocLite(\"Rgraphviz\")\n\nIn addition, numerous bugfixes to the Rgraphviz code has been incorporated.\n\nThis work could not have been completed without the generous help of\nnumerous people.  In alphabetical order (hopefully including all who\nhave helped):\n\n>From the Graphviz developers email list\n  John Ellson\n  Emden R. Gansner\n  Stephen North\n  Gordon Smith\n\nHelp with the R package, extensive testing and building\n  Dan Tenenbaum\n\nHelp with porting to 64 bit Windows, and for making 64 bit Windows\nbinaries of Graphviz available.\n  Brian D Ripley\n\nTesting and bug reporting\n  Claus Bendtsen\n  Henrik Bengtsson\n  Thomas Cokelaer\n  Laurent Gautier\n  Anand Gavai\n  Klaus K. Holst\n  Mike Jiang\n  Mikko Korpela\n  David Meyer\n  Roger D Peng\n  Adi Tarca\n  Jitao David Zhang\n\nBest,\nKasper Daniel Hansen\nDept. of Biostatistics and Institute of Genetic Medicine\nJohns Hopkins University",
+      "body_snippet": "(cross-posted to Graphviz-devel)\n\nRgraphviz 2.2.1 has been released as part of the Bioconductor 2.11 release.\n\nRgraphviz is an R interface to the Graphviz library\n(www.graphviz.org), which is used for",
+      "thread_id": "thread-39c017160e1d",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-dbe6d0b8c49e",
+      "message_id": "<509C1008.8060700@truecluster.com>",
+      "from_name": "Jens Oehlschlägel",
+      "from_email_hash": "a80c35d696d9821fe13568d7832e4175b24fc29fe0387be26ac995214f63c354",
+      "date": "2012-11-08T21:03:20+01:00",
+      "subject": "[R-pkgs] package bit64 with new functionality",
+      "subject_clean": "package bit64 with new functionality",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nThe new version of package 'bit64' - which extends R with fast 64-bit \nintegers - now has fast (single-threaded) implementations of the most \nimportant univariate algorithmic operations (those based on hashing and \nsorting). Package 'bit64' now has methods for 'match', '%in%', \n'duplicated', 'unique', 'table', 'sort', 'order', 'rank', 'quantile', \n'median' and 'summary'. Regarding data management it has novel generics \n'unipos' (positions of the unique values), 'tiepos' (positions of ties), \n'keypos' (positions of values in a sorted unique table) and derived \nmethods 'as.factor' and 'as.ordered'. This 64-bit functionality is \nimplemented carefully to be not slower than the respective 32-bit \noperations in Base R and also to avoid excessive execution times \nobserved with 'order', 'rank' and 'table' (speedup factors 20/16/200 \nrespective). This increases the dataset size with wich we can work truly \ninteractive. The speed is achieved by simple heuristic optimizers: the \nmentioned high-level functions choose the best from multiple low-level \nalgorithms and further take advantage of a novel optional caching \nmethod. In an example R session using a couple of these operations the \n64-bit integers performed 22x faster than base 32-bit integers, \nhash-caching improved this to 24x amortized, sortorder-caching was most \nefficient with 38x (caching both, hashing and sorting is not worth it \nwith 32x at duplicated RAM consumption).\n\nSince the package covers the most important functions for (univariate) \ndata exploration and data management, I think it is now appropriate to \nclaim that R has sound 64-bit integer support, for example for working \nwith keys or counts imported from large databases. For details \nconcerning approach, implementation and roadmap please check the \nANNOUNCEMENT-0.9-Details.txt file and the package help files.\n\nKind regards\n\n\nJens Oehlschl?gel\nMunich, 8.11.2012",
+      "body_snippet": "Dear R community,\n\nThe new version of package 'bit64' - which extends R with fast 64-bit \nintegers - now has fast (single-threaded) implementations of the most \nimportant univariate algorithmic operat",
+      "thread_id": "thread-dbe6d0b8c49e",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-3f077068d1cb",
+      "message_id": "<20643.37554.805566.357306@max.nulle.part>",
+      "from_name": "Dirk Eddelbuettel",
+      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
+      "date": "2012-11-14T06:46:42-06:00",
+      "subject": "[R-pkgs] Rcpp 0.10.0",
+      "subject_clean": "Rcpp 0.10.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new release 0.10.0 of Rcpp is now on CRAN, bringing a number of new\nfeatures to R --- please see the announcement text below.  \n\nThe most direct change may be what we call 'Rcpp attributes' and which is\ndescribed in a new vignette bringing the total to nine vignettes in the\npackage. \n\nDirk, on behalf of Dirk, Romain, Doug, John and JJ\n\n\n\n===== Summary =====\n\nVersion 0.10.0 of the Rcpp package is now on CRAN and its mirrors.  \n\nThis new release brings a number of new features, as well as extensions to\nexisting features, to the package.  Several key aspects are highlighted\nbelow, and further details can be found in the NEWS and ChangeLog files which\nare included in the package.\n\n\n\n===== Overview =====\n\nRcpp is an R package and associated C++ library for seamless integration\nbetween C++ and R.  \n\nIt has been described in a recent paper in the Journal of Statistical\nSoftware (Vol 40, Issue 08) which is also included in the package as the\n\"Rcpp-introduction\" pdf vignette.\n\nAs of late 2012, Rcpp is used by over 80 other CRAN packages making it the\nmost widely-used language interface for R.\n\nSeveral key features of the new 0.10.0 release are described below.\n\n\n\n===== Rcpp attributes =====\n\nRcpp attributes are a new feature of Rcpp version 0.10.0 that provide \ninfrastructure for seamless language bindings between R and C++. With\nattributes we hope to eliminate the need to write boilerplate conversion\nand marshaling code, make it much easier to use C++ within interactive\nR sessions, and reduce the learning curve associated with using C++\nand R together. \n\nRcpp attributes derive their syntax from C++11 style attributes and\nare included in C++ source files using specially formatted comments.\nFor example, the following source file includes the definition of \na fibonacci function with an Rcpp::export attribute included \nimmediately above the function definition:\n\n#include <Rcpp.h>\nusing namespace Rcpp;\n\n// [[Rcpp::export]]\nint fibonacci(const int x) {\n   if (x < 2)\n      return x;\n   else\n      return (fibonacci(x - 1)) + fibonacci(x - 2);\n}\n\nThe export attribute indicates that we'd like the function to be callable\nfrom R. We can now \"source\" this C++ file at the R prompt and then call\nthe function as follows:\n\nR> source(\"fibonacci.cpp\")\nR> fibonacci(20)\n[1] 6765\n\nRcpp attributes build upon Rcpp modules (described in another vignette in the\npackage), as well as the automatic type converters Rcpp::as<>() and Rcpp::wrap.  \nThe converters can already be used for a wide variety of standard C and C++\ntypes, and can also be adapted to other C++ types and libraries as described\nin the Rcpp-extending vignette.\n\nRcpp attributes and their supporting functions include: \n\n - Rcpp::export attribute to export a C++ function to R\n - sourceCpp function to source exported functions from a file\n - cppFunction and evalCpp functions for inline declarations and execution\n - Rcpp::depends attribute for specifying additional build dependencies\n   for sourceCpp\n\nAttributes can also be used for package development via the `compileAttributes`\nfunction, which generates an Rcpp module for all exported functions within\nan R package.\n\nMore details are provided in the new vignette Rcpp-attributes.  We also intend\nto provide further illustrations via our blogs following the release.\n\n\n\n===== Rcpp modules =====\n\nRcpp modules provide an easy way to expose C++ functions and classes to R using \na declarative syntax. We declare which functions and which classes we want to \nmake available to R and modules takes care of automatically (via the compiler, \nthrough template deduction ...) creating the interface code between the C++\ncode and R. \n\nRcpp modules have been extended for the new release.  A brief\nsummary of new key features is:\n\n - inheritance: A class can now declare that it inherits from another class;\n   the exposed class gains methods and properties (fields) from its parent class. \n - Functions and methods can now return objects from classes that are exposed\n   through modules. The macro RCPP_EXPOSED_CLASS and RCPP_EXPOSED_CLASS_NODECL \n   can be used to declared the required type traits.\n - Classes exposed through modules can also be used as parameters of exposed\n   functions or methods.  \n - Exposed classes can declare factories, i.e. a C++ function returning a\n   pointer to the target class, providing an alternative way to construct\n   objects. \n - \"converter\" can be used to declare a way to convert (\"cast\") an object of\n   a type to another type. This is translated at the R level in terms of an \"as\"\n   method.\n\nWe intend to provide example packages using these new features in the near future.\n\n\n\n===== New sugar functions =====\n\nRcpp sugar provides \"syntactic sugar\" familiar to R programmers at the C++\nlevel, including a large number of vectorised functions.  In this release, we\nadded \n - which_min() and which_max() returning the index of the first object\n   matching the condition\n - unique() and sort_unique()\n\n\n\n===== New I/O facilities =====\n\nThe Rcpp::Rcout object now supports the std::flush manipulator, which calls\nR_FlushConsole. A new object Rcpp::Rcerr has been added with passes content\nfor error messages to REprintf().\n\n\n\n===== New namespace \"R::\" for Rmath functions =====\n\nA side-effect of Rcpp sugar providing vectorised d/p/q/r functions for the\nvarious statistical distribution was that the scalar variants of these\nfunctions (available from Rmath.h) were masked behind a Rf_ prefix.\nPreviously, one had to call ::Rf_pnorm5() to compute pnorm() -- but now a\ncleaner interface R::pnorm() is available.  Unit tests were added as well.\n\n\n\n===== Links =====\n\nRcpp main page: \n    http://dirk.eddelbuettel.com/code/rcpp.html\n\nR-forge project page: \n    http://r-forge.r-project.org/projects/rcpp/\n\nDirk's blog section about Rcpp \n    Rcpp: http://dirk.eddelbuettel.com/blog/code/rcpp/\n\nRomain's blog section about Rcpp: \n    http://romainfrancois.blog.free.fr/index.php?category/R-package/Rcpp\n\nRStudio blog:\n    http://blog.rstudio.org\n\nGoogle+: \n    https://plus.google.com/b/107029540907667241299/107029540907667241299/posts\n    \nFacebook:\n    http://www.facebook.com/pages/Rcpp/213047595425775\n    \nTwitter:\n    https://twitter.com/eddelbuettel\n    https://twitter.com/romain_francois\n\n\n\n===== Support =====\n\nQuestions about Rcpp should be directed to the Rcpp-devel mailing list\n    https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\n\nWhile we prefer the mailing list, StackOverflow has also become a frequently\nused resource under the [rcpp] tag:\n    http://stackoverflow.com/questions/tagged/rcpp\n\n\nDirk Eddelbuettel, Romain Francois, Doug Bates, John Chambers and JJ Allaire\nNovember 2012\n\n\n\n\n-- \nDirk Eddelbuettel | edd at debian.org | http://dirk.eddelbuettel.com",
+      "body_snippet": "A new release 0.10.0 of Rcpp is now on CRAN, bringing a number of new\nfeatures to R --- please see the announcement text below.  \n\nThe most direct change may be what we call 'Rcpp attributes' and whic",
+      "thread_id": "thread-3f077068d1cb",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-33da3e4338b1",
+      "message_id": "<CAGSSRLFA2jDqZbe39qX1mpainR4-stmUr5PZ3Lt+zEP+DxQfYA@mail.gmail.com>",
+      "from_name": "Adelino Silva",
+      "from_email_hash": "1c804f58401f0e135fa92e49d8ff24b90431c2e5bc7b19832c6b70a11d2c3a65",
+      "date": "2012-11-29T09:28:49Z",
+      "subject": "[R-pkgs] New package \"gdimap\"",
+      "subject_clean": "New package \"gdimap\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121129/dbabe293/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121129/dbabe293/attachment.pl>",
+      "thread_id": "thread-33da3e4338b1",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-71800aadf70e",
+      "message_id": "<50B7C7E1.2050906@ci.tuwien.ac.at>",
+      "from_name": "Alexandros Karatzoglou",
+      "from_email_hash": "0e524417459a865a2fa3dde7cdd32d2105d4089ab3da98068f70846db3d16144",
+      "date": "2012-11-29T21:38:57+01:00",
+      "subject": "[R-pkgs] kernlab 0.9-15 on CRAN",
+      "subject_clean": "kernlab 0.9-15 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "kernlab package version 0.9-15 has been posted on CRAN,\nit contains several improvements and fixes along with new features e.g. \nvariance estimation for Gaussian Process  regression.\n\ncheers\nAlexandros",
+      "body_snippet": "kernlab package version 0.9-15 has been posted on CRAN,\nit contains several improvements and fixes along with new features e.g. \nvariance estimation for Gaussian Process  regression.\n\ncheers\nAlexandro",
+      "thread_id": "thread-71800aadf70e",
+      "thread_depth": 0,
+      "month": "2012-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-39c017160e1d",
+      "subject": "Rgraphviz 2.2.1",
+      "message_count": 1,
+      "participants": [
+        "Kasper Daniel Hansen"
+      ],
+      "started": "2012-11-08T14:37:47-05:00",
+      "last_reply": "2012-11-08T14:37:47-05:00",
+      "root_message_id": "msg-39c017160e1d"
+    },
+    {
+      "id": "thread-dbe6d0b8c49e",
+      "subject": "package bit64 with new functionality",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschlägel"
+      ],
+      "started": "2012-11-08T21:03:20+01:00",
+      "last_reply": "2012-11-08T21:03:20+01:00",
+      "root_message_id": "msg-dbe6d0b8c49e"
+    },
+    {
+      "id": "thread-3f077068d1cb",
+      "subject": "Rcpp 0.10.0",
+      "message_count": 1,
+      "participants": [
+        "Dirk Eddelbuettel"
+      ],
+      "started": "2012-11-14T06:46:42-06:00",
+      "last_reply": "2012-11-14T06:46:42-06:00",
+      "root_message_id": "msg-3f077068d1cb"
+    },
+    {
+      "id": "thread-33da3e4338b1",
+      "subject": "New package \"gdimap\"",
+      "message_count": 1,
+      "participants": [
+        "Adelino Silva"
+      ],
+      "started": "2012-11-29T09:28:49+00:00",
+      "last_reply": "2012-11-29T09:28:49+00:00",
+      "root_message_id": "msg-33da3e4338b1"
+    },
+    {
+      "id": "thread-71800aadf70e",
+      "subject": "kernlab 0.9-15 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Alexandros Karatzoglou"
+      ],
+      "started": "2012-11-29T21:38:57+01:00",
+      "last_reply": "2012-11-29T21:38:57+01:00",
+      "root_message_id": "msg-71800aadf70e"
+    }
+  ]
+}

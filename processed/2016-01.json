@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2016-01",
+  "messages": [
+    {
+      "id": "msg-105bd4a9259a",
+      "message_id": "<alpine.DEB.2.10.1601051427490.2461@luke-Latitude>",
+      "from_name": "luke-tierney at uiowa.edu",
+      "from_email_hash": "fd87c994f74e0db3eb4746b5041d9c21c4b45ec2e8a16acbcb99f7a3f6e651dc",
+      "date": "2016-01-05T14:29:14-06:00",
+      "subject": "[R-pkgs] new release of proftools package.",
+      "subject_clean": "new release of proftools package.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.99-0 of the proftools package for analyzing and\nvisualizing R profiling data has been uploaded to CRAN. This is a\nmajor update that adds new summary functions, new and improved\nvisualizations, and tools for subsetting and filtering profile\ndata. A vignette illustrates the use of the package.\n\nLuke Tierney\nRiad Jarjour\n\n-- \nLuke Tierney\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:   luke-tierney at uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
+      "body_snippet": "Version 0.99-0 of the proftools package for analyzing and\nvisualizing R profiling data has been uploaded to CRAN. This is a\nmajor update that adds new summary functions, new and improved\nvisualization",
+      "thread_id": "thread-105bd4a9259a",
+      "thread_depth": 0,
+      "month": "2016-01"
+    },
+    {
+      "id": "msg-6aec7f197b48",
+      "message_id": "<CAJ=0CtBzXpeHiKvJKuiK45xFTgLXyU0P-XfR98Xrj6O3x5J-pg@mail.gmail.com>",
+      "from_name": "Adrian Dușa",
+      "from_email_hash": "0adf325a6f5cc3417b78ab9f04c87fd96893831035070b13aabdf34b83338b0f",
+      "date": "2016-01-09T17:56:25+02:00",
+      "subject": "[R-pkgs] new package: venn",
+      "subject_clean": "new package: venn",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to announce a new package that has just the appeared on CRAN,\ncalled \"venn\" version 1.0:\nhttp://cran.r-project.org/web/packages/venn/\n(binaries will appear in one or two days)\n\nAlthough there are quite a few packages that draw Venn diagrams, there are\na number of reasons for yet another one:\n\n- this package draws diagrams up to 7 sets (!) while other packages top at 5\n\n- in addition, this package is also capable to draw any boolean union of\nset intersections, using different colors (transparency included), using a\nmeta-command\n\n- efforts were employed to create these diagrams using base R, without\nusing any dependencies to other graphics oriented packages\n\n- there are a variety of input data which are automatically recognised,\nmaking the package user friendly\n\n- the technology behind this package is completely different from the other\nVenn diagrams functions, similar to geographical maps where polygons can be\nconstructed on a hierarchical order, the way administrative units belong to\nsuperior, higher units.\n\nThe most impressive diagram to show off is the so-called \"Adelaide\" for 7\nsets, which can be viewed simply with:\n\n> venn(7)\n\nComments and suggestions are, as always, welcome.\n\nBest wishes,\nAdrian\n\n--\nAdrian Dusa\nUniversity of Bucharest\nRomanian Social Data Archive\nSoseaua Panduri nr.90\n050663 Bucharest sector 5\nRomania\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI would like to announce a new package that has just the appeared on CRAN,\ncalled \"venn\" version 1.0:\nhttp://cran.r-project.org/web/packages/venn/\n(binaries will appear in one or two da",
+      "thread_id": "thread-6aec7f197b48",
+      "thread_depth": 0,
+      "month": "2016-01"
+    },
+    {
+      "id": "msg-519729a6bf0a",
+      "message_id": "<81e4302a6d68ab3bae64841ed7b0b25b@starkingdom.co.uk>",
+      "from_name": "phill at starkingdom.co.uk",
+      "from_email_hash": "251c5e4e1b5da00b378a1f81222beb2746e5fc7071b96b5c86080e8095f6ad1a",
+      "date": "2016-01-31T21:36:33Z",
+      "subject": "[R-pkgs] New Package: backblazer",
+      "subject_clean": "New Package: backblazer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users, \n\nI'm pleased to announce that my first package has been accepted in CRAN.\n\n\nhttps://cran.r-project.org/web/packages/backblazer/ \n\nbackblazer provides bindings to Backblaze's B2 cloud storage API. \n\nAs it is my first package on CRAN, I would certainly appreciate feedback\nand suggestions from more experienced packagers. \n\nRegards, \n\nPhill \n\n \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users, \n\nI'm pleased to announce that my first package has been accepted in CRAN.\n\n\nhttps://cran.r-project.org/web/packages/backblazer/ \n\nbackblazer provides bindings to Backblaze's B2 cloud st",
+      "thread_id": "thread-519729a6bf0a",
+      "thread_depth": 0,
+      "month": "2016-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-105bd4a9259a",
+      "subject": "new release of proftools package.",
+      "message_count": 1,
+      "participants": [
+        "luke-tierney at uiowa.edu"
+      ],
+      "started": "2016-01-05T14:29:14-06:00",
+      "last_reply": "2016-01-05T14:29:14-06:00",
+      "root_message_id": "msg-105bd4a9259a"
+    },
+    {
+      "id": "thread-6aec7f197b48",
+      "subject": "new package: venn",
+      "message_count": 1,
+      "participants": [
+        "Adrian Dușa"
+      ],
+      "started": "2016-01-09T17:56:25+02:00",
+      "last_reply": "2016-01-09T17:56:25+02:00",
+      "root_message_id": "msg-6aec7f197b48"
+    },
+    {
+      "id": "thread-519729a6bf0a",
+      "subject": "New Package: backblazer",
+      "message_count": 1,
+      "participants": [
+        "phill at starkingdom.co.uk"
+      ],
+      "started": "2016-01-31T21:36:33+00:00",
+      "last_reply": "2016-01-31T21:36:33+00:00",
+      "root_message_id": "msg-519729a6bf0a"
+    }
+  ]
+}

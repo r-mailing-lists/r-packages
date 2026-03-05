@@ -1,0 +1,200 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-08",
+  "messages": [
+    {
+      "id": "msg-f52e3f3717f0",
+      "message_id": "<AANLkTimNzDv9StfVT7BZf2dAFuaQ_XGzzYpgXk_XBRTs@mail.gmail.com>",
+      "from_name": "Charlie Sharpsteen",
+      "from_email_hash": "61a5157bf3b50056b8fad9b559d93b86915f2e7b847327766122b4f2cfc76e33",
+      "date": "2010-08-10T08:51:19-07:00",
+      "subject": "[R-pkgs] tikzDevice 0.5.0 released to CRAN",
+      "subject_clean": "tikzDevice 0.5.0 released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100810/8bf4de4a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100810/8bf4de4a/attachment.pl>",
+      "thread_id": "thread-f52e3f3717f0",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-9e4dd17d4c9e",
+      "message_id": "<3CAA9068-6284-455E-B919-F338E47FE378@stat.ucla.edu>",
+      "from_name": "ian fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-08-16T10:14:59-07:00",
+      "subject": "[R-pkgs] Major update of Deducer, including GSOC funded work",
+      "subject_clean": "Major update of Deducer, including GSOC funded work",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of Deducer (0.4) has been sent to CRAN, and should be  \npropagating to all the mirrors in due course. Also, a new plug-in  \npackage (DeducerExtras) has also been released to CRAN, containing  \nadditional dialogs and functionality.\n\nI would like to take this opportunity to thank the R community for  \nchoosing this project for a Google Summer of Code grant, and for the  \nsupport and encouragement. In particular I would like to thank Hadley  \nWickham for mentoring the Plot Builder GUI, and Dirk Eddelbuettel for  \nhis organization of students and mentors.\n\n\t\t\t\t-------------   Deducer   -------------\nDeducer is designed to be a free easy to use alternative to  \nproprietary data analysis software such as SPSS, JMP, and Minitab. It  \nhas a menu system to do common data manipulation and analysis tasks,  \nand an excel-like spreadsheet in which to view and edit data frames.  \nThe goal of the project is two fold.\n\nProvide an intuitive interface so that non-technical users can learn  \nand perform analyses without programming getting in their way.\nIncrease the efficiency of expert R users when performing common  \ntasks by replacing hundreds of keystrokes with a few mouse clicks.  \nAlso, as much as possible the GUI should not get in their way if they  \njust want to do some programming.\nDeducer is designed to be used with the Java based R console JGR,  \nthough it supports a number of other R environments (e.g. Windows  \nRGUI and RTerm).\n\n\nFor those not familiar with Deducer, an online manual is available  \nat: http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual .\n\nIntroduction to Deducer (8 min): http://www.youtube.com/user/ \nMrIanfellows#p/u/6/iZ857h2j6wA\n\n\t\t\t    -------------   Plot Builder   -------------\n\nThe major change to Deducer is the inclusion of a new plotting GUI  \nbuilt on the ggplot2 package. This Google Summer of Code project  \nprovides an easy to use system to make anything from simple  \nhistograms, to custom publication ready graphics. Feel free to check  \nout the video introduction:\n\nPart 1 (6 min): http://www.youtube.com/user/MrIanfellows#p/u/4/- \nRym6Ucraes\nPart 2 (6 min): http://www.youtube.com/user/MrIanfellows#p/u/3/ \nk6elEgB3OCE\n\nAdditional videos:\nTemplates (5 min): \t\thttp://www.youtube.com/user/MrIanfellows#p/u/2/ \nktdifzqbLW8\nExtending the Builder (4 min):\thttp://www.youtube.com/user/ \nMrIanfellows#p/u/1/RsxOo0jx0II\n\n\t\t\t   -------------   Deducer Extras   -------------\n\nThe DeducerExtras package is an add-on package containing a variety  \nof additional analysis dialogs. These include:\n\t* Distribution quantiles\n\t* Single/multiple sample proportion tests\n\t* Paired t-test, and wilcoxon signed rank test\n\t* Levene's test and bartlett's test\n\t* K-means clustering\n\t* Hierarchical clustering\n\t* Factor analysis\n\t* Multi-dimensional scaling\n\nIntroduction to Deducer Extras (2 min): http://www.youtube.com/user/ \nMrIanfellows#p/u/0/UCrhxB8tSJY",
+      "body_snippet": "A new version of Deducer (0.4) has been sent to CRAN, and should be  \npropagating to all the mirrors in due course. Also, a new plug-in  \npackage (DeducerExtras) has also been released to CRAN, contai",
+      "thread_id": "thread-9e4dd17d4c9e",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-1958298af847",
+      "message_id": "<AANLkTikeb5uhTFnSVX1cmsiu60CaZOXqh_EiaXsXYGD1@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-08-25T13:08:12-05:00",
+      "subject": "[R-pkgs] stringr: version 0.4",
+      "subject_clean": "stringr: version 0.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Strings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because they have grown\norganically over time, they can be inconsistent and a little hard to\nlearn. Additionally, they lag behind the string operations in other\nprogramming languages, so that some things that are easy to do in\nlanguages like Ruby or Python are rather hard to do in R. The\n`stringr` package aims to remedy these problems by providing a clean,\nmodern interface to common string operations.\n\nMore concretely, `stringr`:\n\n * Processes factors and characters in the same way.\n\n * Gives functions consistent names and arguments.\n\n * Simplifies string operations by eliminating options that you don't need\n   95% of the time.\n\n * Produces outputs than can easily be used as inputs. This includes ensuring\n   that missing inputs result in missing outputs, and zero length inputs\n   result in zero length outputs.\n\n * Completes R's string handling functions with useful functions from other\n   programming languages.\n\n\nNew in stringr 0.4:\n\n * all functions now vectorised with respect to string, pattern (and\n   where appropriate) replacement parameters\n * fixed() function now tells stringr functions to use fixed matching, rather\n   than escaping the regular expression.  Should improve performance for\n   large vectors.\n * new ignore.case() modifier tells stringr functions to ignore case of\n   pattern.\n * str_replace renamed to str_replace_all and new str_replace function added.\n   This makes str_replace consistent with all functions.\n * new str_sub<- function (analogous to substring<-) for substring replacement\n * str_sub now understands negative positions as a position from the end of\n   the string. -1 replaces Inf as indicator for string end.\n * str_pad side argument can be left, right, or both (instead of center)\n * str_trim gains side argument to better match str_pad\n * stringr now has a namespace and imports plyr (rather than requiring it)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "Strings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because they have gr",
+      "thread_id": "thread-1958298af847",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-ae5f6bc840ba",
+      "message_id": "<4C767698.6030301@unige.ch>",
+      "from_name": "Alexis Gabadinho",
+      "from_email_hash": "f266eb5dc564422b73c163c3575ea632a6b7c79c4b5126673755776c8b963b20",
+      "date": "2010-08-26T16:13:44+02:00",
+      "subject": "[R-pkgs] TraMineR version 1.6-1",
+      "subject_clean": "TraMineR version 1.6-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences \nof  states or events, and more generally discrete sequential data has \nbeen updated to version 1.6-1. Its primary aim is the analysis of \nbiographical\nlongitudinal data in the social sciences, such as data describing \ncareers or family trajectories. Most of its features apply however also \nto non temporal data such as text or DNA sequences for instance.\n\nFor more information, please visit:\n\nhttp://mephisto.unige.ch/traminer\n\nIt is now possible to submit bug reports and feature requests, as well \nas to join the TraMineR user's list if you have questions. More \ninformation here:\n\nhttp://mephisto.unige.ch/traminer/contrib.shtml\n\nCheers,\nThe TraMineR team.",
+      "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences \nof  states or events, and more generally discrete sequential data has \nbeen updated to version 1.6-1. Its primary ",
+      "thread_id": "thread-ae5f6bc840ba",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-9ad1d2bf319e",
+      "message_id": "<alpine.LNX.2.00.1008271628030.31745@linux29.zdv.uni-tuebingen.de>",
+      "from_name": "florian.wickelmaier at uni-tuebingen.de",
+      "from_email_hash": "9fa0dc0cd46024f5e7889ac5bddfe862b71b9623380ac42b657edf8cc6f48af4",
+      "date": "2010-08-27T16:30:30+02:00",
+      "subject": "[R-pkgs] New package: mpt",
+      "subject_clean": "New package: mpt",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have submitted a new package called mpt to CRAN.\n\nIt contains functions for fitting and testing multinomial\nprocessing tree (MPT) models, a class of statistical models for\ncategorical data that involve latent parameters. These parameters\nare often interpreted as psychological processing variables.\n\nAn introduction to these models is:\n\nRiefer, D.M., & Batchelder, W.H. (1988). Multinomial modeling and\nthe measurement of cognitive processes. Psychological Review, 95,\n318-339.\n\nAn overview of applications give:\n\nBatchelder, W.H. & Riefer, D.M. (1999). Theoretical and empirical\nreview of multinomial process tree modeling. Psychonomic Bulletin\n& Review, 6, 57-86.\n\nErdfelder, E., Auer, T., Hilbig, B.E., Assfalg, A., Moshagen, M.,\n& Nadarevic, L. (2009). Multinomial processing tree models: A\nreview of the literature. Zeitschrift fuer Psychologie, 217,\n108-124.\n\nBest regards, Florian\n\n---\nFlorian Wickelmaier\nDepartment of Psychology\nUniversity of Tuebingen\nhttp://homepages.uni-tuebingen.de/florian.wickelmaier",
+      "body_snippet": "Dear all,\n\nI have submitted a new package called mpt to CRAN.\n\nIt contains functions for fitting and testing multinomial\nprocessing tree (MPT) models, a class of statistical models for\ncategorical dat",
+      "thread_id": "thread-9ad1d2bf319e",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-23acd259d11c",
+      "message_id": "<AANLkTi=6PypmTyBDS8R5KsbL=V5kagmsgTS5CejE1eWO@mail.gmail.com>",
+      "from_name": "Mike Lawrence",
+      "from_email_hash": "1a5ee30e8b6d6fd023f9cd066f9903301f0b75e038949a90eeb1aac28c844171",
+      "date": "2010-08-31T09:53:05-03:00",
+      "subject": "[R-pkgs] ez version 2.0",
+      "subject_clean": "ez version 2.0",
+      "in_reply_to": "<AANLkTikUGWHc52SdeK8Tr8KZTNgy6dcVm5=mpjZW6af4@mail.gmail.com>",
+      "references": [
+        "<AANLkTikUGWHc52SdeK8Tr8KZTNgy6dcVm5=mpjZW6af4@mail.gmail.com>"
+      ],
+      "body_plain": "The ez package was developed to aid those that are new to statistical\nprogramming. Over the course of several years of helping colleagues\nand students learn R, I observed that folks are often initially turned\noff R because they have difficulty obtaining SPSS-like results quickly\n(SPSS is the dominant environment in my field, psychology). ez\nattempts to fill this gap, providing quick and easy analysis and\ngraphics for common experimental designs. By easing the early portions\nof the R learning curve, ez hopes to promote the spread of R as a\nmeans of open source and reproducible analysis. ez now also attempts\nto pique interest in cutting-edge statistical methods by providing\neasy specification and visualization of simple* mixed effects models.\n\n*--> mixed effects models are limited to those with a single random\neffect (eg. Participant) and no numeric predictors.\n\n\nNew in version 2.0\n- ezDesign(), a function to visualize the balance of data across a\nspecified experimental design (useful for diagnosing missing data)\n- ezPrecis(), a function to summarize a data set (inspired by\nsummary(), str(), and YaleToolkit:whatis() )\n- ezBoot() and ezPlotBoot(), functions to compute and visualize\n(respectively) bootstrapped confidence intervals for either cell means\nor predictions from a mixed effects model\n- ezANOVA() updated with an improved measure of effect size:\ngeneralized eta-square.\n- ezPlot() updated to permit simultaneous plotting of multiple DV's,\nwith each mapped to a row of the plot facets.\n- see changelog for further changes\n\n\nEnjoy!\n\nMike\n\n--\nMike Lawrence\nGraduate Student\nDepartment of Psychology\nDalhousie University\n\nLooking to arrange a meeting? Check my public calendar:\nhttp://tr.im/mikes_public_calendar\n\n~ Certainty is folly... I think. ~",
+      "body_snippet": "The ez package was developed to aid those that are new to statistical\nprogramming. Over the course of several years of helping colleagues\nand students learn R, I observed that folks are often initiall",
+      "thread_id": "thread-23acd259d11c",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-1ba109654b82",
+      "message_id": "<AANLkTi=Hs4UU0JQ2=P1_BWyJjm1va-LkKzCgO48LCpBZ@mail.gmail.com>",
+      "from_name": "Garrett Grolemund",
+      "from_email_hash": "1f06ee68251392cd88a1b603f6ff387738cb0830211a0f37fb794a80993f1f09",
+      "date": "2010-08-31T09:51:49-05:00",
+      "subject": "[R-pkgs] New package: lubridate 0.1",
+      "subject_clean": "New package: lubridate 0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Please find below the package announcement for the R package lubridate\navailable from cran.\n\nThank you,\n\nGarrett Grolemund\nRice University\n\n##lubridate\n\nDate-time data can be frustrating to work with in R. R commands for\ndate-times are generally unintuitive and change depending on the type\nof date-time object being used. Moreover, the methods we use with\ndate-times must be robust to time zones, leap days, daylight savings\ntimes, and other time related quirks, and R lacks these capabilities\nin some situations. Lubridate makes it easier to do the things R does\nwith date-times and possible to do the things R does not.\nSpecifically, lubridate provides:\n\n* a set of intuitive date-time related functions that work the same\nway for all common date-time classes (including those from?chron,\ntimeDate,?zoo,?xts,its,?tis,?timeSeries,?fts, and?tseries)\n\n* quick and easy parsing of date-times:?ymd(),?dmy(),?mdy(), ...\n\n* simple functions to extract and modify components of a date-time,\nsuch as years, months, days, hours, minutes, and seconds:?year(),\nmonth(),?day(), ...\n\n* helper functions for handling time zones:?with_tz(),?force_tz()\n\nLubridate also expands the type of mathematical operations that can be\nperformed with date-time objects. It introduces three new time span\nclasses borrowed from http://joda.org.\n\n* durations, which measure the exact amount of time between two points\n\n* periods, which accurately track clock times despite leap years, leap\nseconds, and day light savings time\n\n* intervals, a protean summary of the time information between two points",
+      "body_snippet": "Please find below the package announcement for the R package lubridate\navailable from cran.\n\nThank you,\n\nGarrett Grolemund\nRice University\n\n##lubridate\n\nDate-time data can be frustrating to work with ",
+      "thread_id": "thread-1ba109654b82",
+      "thread_depth": 0,
+      "month": "2010-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f52e3f3717f0",
+      "subject": "tikzDevice 0.5.0 released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Charlie Sharpsteen"
+      ],
+      "started": "2010-08-10T08:51:19-07:00",
+      "last_reply": "2010-08-10T08:51:19-07:00",
+      "root_message_id": "msg-f52e3f3717f0"
+    },
+    {
+      "id": "thread-9e4dd17d4c9e",
+      "subject": "Major update of Deducer, including GSOC funded work",
+      "message_count": 1,
+      "participants": [
+        "ian fellows"
+      ],
+      "started": "2010-08-16T10:14:59-07:00",
+      "last_reply": "2010-08-16T10:14:59-07:00",
+      "root_message_id": "msg-9e4dd17d4c9e"
+    },
+    {
+      "id": "thread-1958298af847",
+      "subject": "stringr: version 0.4",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2010-08-25T13:08:12-05:00",
+      "last_reply": "2010-08-25T13:08:12-05:00",
+      "root_message_id": "msg-1958298af847"
+    },
+    {
+      "id": "thread-ae5f6bc840ba",
+      "subject": "TraMineR version 1.6-1",
+      "message_count": 1,
+      "participants": [
+        "Alexis Gabadinho"
+      ],
+      "started": "2010-08-26T16:13:44+02:00",
+      "last_reply": "2010-08-26T16:13:44+02:00",
+      "root_message_id": "msg-ae5f6bc840ba"
+    },
+    {
+      "id": "thread-9ad1d2bf319e",
+      "subject": "New package: mpt",
+      "message_count": 1,
+      "participants": [
+        "florian.wickelmaier at uni-tuebingen.de"
+      ],
+      "started": "2010-08-27T16:30:30+02:00",
+      "last_reply": "2010-08-27T16:30:30+02:00",
+      "root_message_id": "msg-9ad1d2bf319e"
+    },
+    {
+      "id": "thread-1ba109654b82",
+      "subject": "New package: lubridate 0.1",
+      "message_count": 1,
+      "participants": [
+        "Garrett Grolemund"
+      ],
+      "started": "2010-08-31T09:51:49-05:00",
+      "last_reply": "2010-08-31T09:51:49-05:00",
+      "root_message_id": "msg-1ba109654b82"
+    },
+    {
+      "id": "thread-23acd259d11c",
+      "subject": "ez version 2.0",
+      "message_count": 1,
+      "participants": [
+        "Mike Lawrence"
+      ],
+      "started": "2010-08-31T09:53:05-03:00",
+      "last_reply": "2010-08-31T09:53:05-03:00",
+      "root_message_id": "msg-23acd259d11c"
+    }
+  ]
+}

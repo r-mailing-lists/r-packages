@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2007-03",
+  "messages": [
+    {
+      "id": "msg-d581cec19c57",
+      "message_id": "<45E722F8.5060206@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2007-03-01T14:01:12-05:00",
+      "subject": "[R-pkgs] Update of X2R sent to CRAN",
+      "subject_clean": "Update of X2R sent to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of X2R has just been uploaded to CRAN.  It should be \navailable at mirrors within a few days.\n\nThis contains revisions to the For2R component to fix a bug in which \ndata frames were not written correctly if the user did not pass row labels.\n\nThe new version is supplied as files X2R.zip and X2R.tar.gz, which are \nequivalent.  The version can be identified from the contents of file \n\"VersionInfo.txt\" in the root of each archive.  The new version is dated \nMarch 1, 2007.\n\n-----\n\n From the original announcement:\n\nX2R is composed of three related software libraries: C2R,  ADMB2R, and \nFor2R (together, X2R). Each contains output routines to simplify \ntransfer of complicated data structures from models written in a \ncompiled language to R.  The user's data can be written as a structured \nASCII file which, when read by R (note 1) with a single dget() function \ncall, will become an R data object of type list. The list, may contain \ncomponents such as data frames, matrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be \nused with programmers' own modeling codes.  Limited testing indicates \nthat they are compatible with S-PLUS, as well (note 1, note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R) \nand AD Model Builder (with ADMB2R) (note 1, note 3).  Source code and \nusers' manuals are supplied.\n\nThis work has been tested and used by the authors. However, any software \nmay contain bugs, and these works are classified by NOAA as  \n\"Experimental Products.\"  Although the software is supplied with no \nwarranty whatsoever, bug reports, suggestions, and extensions are \nsolicited (send to Prager or Martin).  The authors will attempt to fix \nall bugs promptly and to add requested features.\n\nSoftware is now available at CRAN,  http://cran.r-project.org/ .  Look \nunder \"Software / Other\" for the current X2R distribution.\n\n\nMichael H. Prager - mike.prager at noaa.gov\nAndi Stephens\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1.  Use of product names (commercial or otherwise) does not imply \nendorsement or recommendation by any U.S. government agency, nor by the \nauthors in their government capacities.\n* Note 2.  S-PLUS is a commercial product, released by Insightful \nCorporation.\n* Note 3.  AD Model Builder is a commercial product, released by Otter \nResearch.",
+      "body_snippet": "A new version of X2R has just been uploaded to CRAN.  It should be \navailable at mirrors within a few days.\n\nThis contains revisions to the For2R component to fix a bug in which \ndata frames were not ",
+      "thread_id": "thread-d581cec19c57",
+      "thread_depth": 0,
+      "month": "2007-03"
+    },
+    {
+      "id": "msg-d581cec19c57",
+      "message_id": "<45E722F8.5060206@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2007-03-01T14:01:12-05:00",
+      "subject": "[R-pkgs] Update of X2R sent to CRAN",
+      "subject_clean": "Update of X2R sent to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of X2R has just been uploaded to CRAN.  It should be \navailable at mirrors within a few days.\n\nThis contains revisions to the For2R component to fix a bug in which \ndata frames were not written correctly if the user did not pass row labels.\n\nThe new version is supplied as files X2R.zip and X2R.tar.gz, which are \nequivalent.  The version can be identified from the contents of file \n\"VersionInfo.txt\" in the root of each archive.  The new version is dated \nMarch 1, 2007.\n\n-----\n\n From the original announcement:\n\nX2R is composed of three related software libraries: C2R,  ADMB2R, and \nFor2R (together, X2R). Each contains output routines to simplify \ntransfer of complicated data structures from models written in a \ncompiled language to R.  The user's data can be written as a structured \nASCII file which, when read by R (note 1) with a single dget() function \ncall, will become an R data object of type list. The list, may contain \ncomponents such as data frames, matrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be \nused with programmers' own modeling codes.  Limited testing indicates \nthat they are compatible with S-PLUS, as well (note 1, note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R) \nand AD Model Builder (with ADMB2R) (note 1, note 3).  Source code and \nusers' manuals are supplied.\n\nThis work has been tested and used by the authors. However, any software \nmay contain bugs, and these works are classified by NOAA as  \n\"Experimental Products.\"  Although the software is supplied with no \nwarranty whatsoever, bug reports, suggestions, and extensions are \nsolicited (send to Prager or Martin).  The authors will attempt to fix \nall bugs promptly and to add requested features.\n\nSoftware is now available at CRAN,  http://cran.r-project.org/ .  Look \nunder \"Software / Other\" for the current X2R distribution.\n\n\nMichael H. Prager - mike.prager at noaa.gov\nAndi Stephens\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1.  Use of product names (commercial or otherwise) does not imply \nendorsement or recommendation by any U.S. government agency, nor by the \nauthors in their government capacities.\n* Note 2.  S-PLUS is a commercial product, released by Insightful \nCorporation.\n* Note 3.  AD Model Builder is a commercial product, released by Otter \nResearch.",
+      "body_snippet": "A new version of X2R has just been uploaded to CRAN.  It should be \navailable at mirrors within a few days.\n\nThis contains revisions to the For2R component to fix a bug in which \ndata frames were not ",
+      "thread_id": "thread-d581cec19c57",
+      "thread_depth": 0,
+      "month": "2007-03"
+    },
+    {
+      "id": "msg-f5fbadf66857",
+      "message_id": "<1E7B167439290641966EB161D433079801EA928F@GSBEX.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2007-03-08T11:16:17-06:00",
+      "subject": "[R-pkgs] Release 2.1-1 of bayesm",
+      "subject_clean": "Release 2.1-1 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 2.1-1 is now available on CRAN.\n\nThis release includes--\nbayesm classes (some compatible with the mcmc class of coda) for output.\nplot\nand summary methods for these classes.\n\nadditional datasets including store-level panel data.\n\npeter r\n \n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 353, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081",
+      "body_snippet": "Release 2.1-1 is now available on CRAN.\n\nThis release includes--\nbayesm classes (some compatible with the mcmc class of coda) for output.\nplot\nand summary methods for these classes.\n\nadditional datase",
+      "thread_id": "thread-f5fbadf66857",
+      "thread_depth": 0,
+      "month": "2007-03"
+    },
+    {
+      "id": "msg-f5fbadf66857",
+      "message_id": "<1E7B167439290641966EB161D433079801EA928F@GSBEX.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2007-03-08T11:16:17-06:00",
+      "subject": "[R-pkgs] Release 2.1-1 of bayesm",
+      "subject_clean": "Release 2.1-1 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 2.1-1 is now available on CRAN.\n\nThis release includes--\nbayesm classes (some compatible with the mcmc class of coda) for output.\nplot\nand summary methods for these classes.\n\nadditional datasets including store-level panel data.\n\npeter r\n \n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 353, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081",
+      "body_snippet": "Release 2.1-1 is now available on CRAN.\n\nThis release includes--\nbayesm classes (some compatible with the mcmc class of coda) for output.\nplot\nand summary methods for these classes.\n\nadditional datase",
+      "thread_id": "thread-f5fbadf66857",
+      "thread_depth": 0,
+      "month": "2007-03"
+    },
+    {
+      "id": "msg-726ae4220a08",
+      "message_id": "<b0808fdc0703230715k2178fdbdl32d0fe3bca0e8caf@mail.gmail.com>",
+      "from_name": "Antonio, Fabio Di Narzo",
+      "from_email_hash": "d2543602a7e9eac417ed20eca2673d0a1d1c401c4b0d27ff6f0f644f508f348c",
+      "date": "2007-03-23T15:15:24+01:00",
+      "subject": "[R-pkgs] RTisean 3.0-7 released",
+      "subject_clean": "RTisean 3.0-7 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\nI've just uploaded to CRAN a new version of RTisean, the TISEAN-to-R interface.\nThis is now compatible with the recent, new 3.0.1 release of TISEAN [1].\nThis new TISEAN version is explicitely GPL-ed, and has some more\nroutines handling multivariate time series.\n\nBests,\nAntonio, Fabio Di Narzo.\n\n[1] http://idmc.blogspot.com/2007/03/tisean-300-is-out.html",
+      "body_snippet": "Dear R users,\nI've just uploaded to CRAN a new version of RTisean, the TISEAN-to-R interface.\nThis is now compatible with the recent, new 3.0.1 release of TISEAN [1].\nThis new TISEAN version is explic",
+      "thread_id": "thread-726ae4220a08",
+      "thread_depth": 0,
+      "month": "2007-03"
+    },
+    {
+      "id": "msg-726ae4220a08",
+      "message_id": "<b0808fdc0703230715k2178fdbdl32d0fe3bca0e8caf@mail.gmail.com>",
+      "from_name": "Antonio, Fabio Di Narzo",
+      "from_email_hash": "d2543602a7e9eac417ed20eca2673d0a1d1c401c4b0d27ff6f0f644f508f348c",
+      "date": "2007-03-23T15:15:24+01:00",
+      "subject": "[R-pkgs] RTisean 3.0-7 released",
+      "subject_clean": "RTisean 3.0-7 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\nI've just uploaded to CRAN a new version of RTisean, the TISEAN-to-R interface.\nThis is now compatible with the recent, new 3.0.1 release of TISEAN [1].\nThis new TISEAN version is explicitely GPL-ed, and has some more\nroutines handling multivariate time series.\n\nBests,\nAntonio, Fabio Di Narzo.\n\n[1] http://idmc.blogspot.com/2007/03/tisean-300-is-out.html",
+      "body_snippet": "Dear R users,\nI've just uploaded to CRAN a new version of RTisean, the TISEAN-to-R interface.\nThis is now compatible with the recent, new 3.0.1 release of TISEAN [1].\nThis new TISEAN version is explic",
+      "thread_id": "thread-726ae4220a08",
+      "thread_depth": 0,
+      "month": "2007-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d581cec19c57",
+      "subject": "Update of X2R sent to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2007-03-01T14:01:12-05:00",
+      "last_reply": "2007-03-01T14:01:12-05:00",
+      "root_message_id": "msg-d581cec19c57"
+    },
+    {
+      "id": "thread-d581cec19c57",
+      "subject": "Update of X2R sent to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2007-03-01T14:01:12-05:00",
+      "last_reply": "2007-03-01T14:01:12-05:00",
+      "root_message_id": "msg-d581cec19c57"
+    },
+    {
+      "id": "thread-f5fbadf66857",
+      "subject": "Release 2.1-1 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2007-03-08T11:16:17-06:00",
+      "last_reply": "2007-03-08T11:16:17-06:00",
+      "root_message_id": "msg-f5fbadf66857"
+    },
+    {
+      "id": "thread-f5fbadf66857",
+      "subject": "Release 2.1-1 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2007-03-08T11:16:17-06:00",
+      "last_reply": "2007-03-08T11:16:17-06:00",
+      "root_message_id": "msg-f5fbadf66857"
+    },
+    {
+      "id": "thread-726ae4220a08",
+      "subject": "RTisean 3.0-7 released",
+      "message_count": 1,
+      "participants": [
+        "Antonio, Fabio Di Narzo"
+      ],
+      "started": "2007-03-23T15:15:24+01:00",
+      "last_reply": "2007-03-23T15:15:24+01:00",
+      "root_message_id": "msg-726ae4220a08"
+    },
+    {
+      "id": "thread-726ae4220a08",
+      "subject": "RTisean 3.0-7 released",
+      "message_count": 1,
+      "participants": [
+        "Antonio, Fabio Di Narzo"
+      ],
+      "started": "2007-03-23T15:15:24+01:00",
+      "last_reply": "2007-03-23T15:15:24+01:00",
+      "root_message_id": "msg-726ae4220a08"
+    }
+  ]
+}

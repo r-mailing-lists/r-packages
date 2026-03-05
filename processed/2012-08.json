@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-08",
+  "messages": [
+    {
+      "id": "msg-82b4b5c56abe",
+      "message_id": "<CAH9coKZhS9NomZTZva_H+AQMgO=tdZa2CO2zY8ZZJ+sgQMHVPw@mail.gmail.com>",
+      "from_name": "Peter Solymos",
+      "from_email_hash": "3e4e5c37645041a11f505cbd9ee9456181aeea94ae29ebbc2f9032bc9b3633e1",
+      "date": "2012-08-26T23:22:12-06:00",
+      "subject": "[R-pkgs] PVAClone: new package for population viability analysis",
+      "subject_clean": "PVAClone: new package for population viability analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear UseRs!\n\nWe are pleased to announce the release of our new package 'PVAClone'.\n\nThe 'PVAClone' package implements Population Viability Analysis (PVA)\nmethodology using data cloning. The data cloning algorithm by Lele et\nal. (2007, 2010) is employed to compute maximum likelihood estimates\nof the state-space model parameters and the corresponding standard\nerrors, heavily capitalizing on JAGS, dclone and dcme packages (see\nSolymos 2010).\n\nThe main components of the package include estimation of univariate\npopulation growth models, model selection and extinction risk\nestimation:\n\n* Model Estimation *\n- computes maximum likelihood Estimation of the univariate population\ngrowth models, both in the presence or absence of observation error;\n- population time series with missing observations are also accommodated;\n- population growth models: Gompertz, Ricker, theta-logistic and the\ngeneralized Beverton-Holt;\n- models can also be fitted by fixing a subset of model parameters to\na priori values of interest;\n- observation error is incorporated via the general state-space\nmodeling framework.\n\n* Model Selection *\n- we implement Ponciano et. al.'s (2009) data cloned likelihood ratio\nalgorithm (DCLR) to compute likelihood ratios for comparing\nhierarchical (random effect) models;\n- this feature allows comparison of any two nested or non-nested\nstate-space models fitted using the Model Estimation procedure above\n- for instance one can compare the state-space Generalized\nBeverton-Holt model with a logistic model, even when observations are\nmissing;\n- the underlying function is pva.llr can also be called repeatedly to\ncompute profile likelihood of a parameter of interest.\n\n* Extinction Risk Estimation (under development) *\n- data cloning based frequentist prediction of latent variables in a\ngeneral hierarchical model (Lele et al. 2010) is used to forecast\nfuture abundance time series;\n- a large number of future population trajectories are generated under\nthe observed data and estimated model parameters;\n- these are then used to estimate various extinction metrics (see\nNadeem and Lele 2012).\n\nFeedback, bug reports and feature requests are welcome!\n\nKhurram and Peter\n\n--\nKhurram Nadeem\nknadeem at math.ualberta.ca\nUniversity of Alberta\n\nP?ter S?lymos\nsolymos at ualberta.ca\nUniversity of Alberta\n\n\nReferences\n\nNadeem, K. & Lele, S.R. 2012. Likelihood based population viability\nanalysis in the presence of observation error. Oikos, early online\n\nPonciano, J. M. et al. 2009. Hierarchical models in ecology:\nconfidence intervals, hypothesis testing, and model selection using\ndata cloning. Ecology 90: 356--362.\n\nLele, S. R. et al. 2007. Data cloning: easy maximum likelihood\nestimation for complex ecological models using Bayesian Markov chain\nMonte Carlo methods. Ecol. Lett. 10: 551--563.\n\nLele, S. R. et al. 2010. Estimability and Likelihood Inference for\nGeneralized Linear Mixed Models Using Data Cloning. J. Am. Stat.\nAssoc. 105: 1617--1625.\n\nSolymos, P. (2010): dclone: Data Cloning in R. The R Journal, 2(2): 29--37.",
+      "body_snippet": "Dear UseRs!\n\nWe are pleased to announce the release of our new package 'PVAClone'.\n\nThe 'PVAClone' package implements Population Viability Analysis (PVA)\nmethodology using data cloning. The data cloni",
+      "thread_id": "thread-82b4b5c56abe",
+      "thread_depth": 0,
+      "month": "2012-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-82b4b5c56abe",
+      "subject": "PVAClone: new package for population viability analysis",
+      "message_count": 1,
+      "participants": [
+        "Peter Solymos"
+      ],
+      "started": "2012-08-26T23:22:12-06:00",
+      "last_reply": "2012-08-26T23:22:12-06:00",
+      "root_message_id": "msg-82b4b5c56abe"
+    }
+  ]
+}

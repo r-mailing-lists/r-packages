@@ -1,0 +1,29 @@
+From @nto|ne@@oetewey @end|ng |rom uc|ouv@|n@be  Fri Jan  9 12:58:25 2026
+From: @nto|ne@@oetewey @end|ng |rom uc|ouv@|n@be (Antoine Soetewey)
+Date: Fri, 9 Jan 2026 11:58:25 +0000
+Subject: [R-pkgs] New package: AssociationExplorer2
+Message-ID: <GV2PR03MB8582AE221696CAAECBC9D934F8B8A@GV2PR03MB8582.eurprd03.prod.outlook.com>
+
+Dear R-packages community,
+
+I would like to announce the release of a new R package, AssociationExplorer2, now available on CRAN.
+
+AssociationExplorer2 provides a user-friendly Shiny application for exploratory analysis of associations in multivariate datasets. It supports both quantitative and qualitative variables and automatically selects appropriate association measures (Pearson?s r, Cramer?s V, and correlation ratio). Results are presented through an interactive correlation network and bivariate visualizations, making the package particularly suitable for exploratory data analysis, teaching, data journalism, and public communication.
+
+An accompanying paper describing the methodology and design of the package has been published in SoftwareX:
+https://doi.org/10.1016/j.softx.2025.102483
+
+CRAN page:
+<https://cran.r-project.org/package=AssociationExplorer2>https://CRAN.R-project.org/package=AssociationExplorer2<https://cran.r-project.org/package=AssociationExplorer2>
+
+Source code and documentation:
+https://github.com/AntoineSoetewey/AssociationExplorer2
+
+I hope this package will be useful to the community, and please feel free to contact me if you have any feedback or suggestions.
+
+Best regards,
+Antoine Soetewey
+
+	[[alternative HTML version deleted]]
+
+

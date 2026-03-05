@@ -1,0 +1,229 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-09",
+  "messages": [
+    {
+      "id": "msg-60f9bb9c535d",
+      "message_id": "<24DBDC04-F467-47DD-99A6-4A5E04DBF549@gmail.com>",
+      "from_name": "Jonathan Shore",
+      "from_email_hash": "81a63d02ba1202989c583f45ec54e7e7df911a942bc7b0d0b09c02c3fecf69aa",
+      "date": "2017-09-02T14:25:09-04:00",
+      "subject": "[R-pkgs] New package: rDotNet",
+      "subject_clean": "New package: rDotNet",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I?ve published a package on CRAN called ?rDotNet?.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static members)\n* access and set properties\n* access indexing members\n\nThe package will run with either mono on OS X / Linux or the Microsoft .NET VM on windows.   Find the source and description of the package on:\n\nhttps://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/ <https://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/>\n\nAnd the CRAN link as:\n\nhttps://cran.r-project.org/web/packages/rDotNet/index.html <https://cran.r-project.org/web/packages/rDotNet/index.html>\n\nThe package is stable, as has been in use for some years, but only now packaged up for public use on CRAN.  Feel free to contact with questions or suggestions on GitHub or by email.  \n\nRegards\n--\nJonathan Shore\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I?ve published a package on CRAN called ?rDotNet?.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static member",
+      "thread_id": "thread-60f9bb9c535d",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-1dff0755cf74",
+      "message_id": "<CADV5-bghLtKzxU9=sy2YNQHt+Oh=M_fQ7HmycQBs-PVObL-RNQ@mail.gmail.com>",
+      "from_name": "Zebulun Arendsee",
+      "from_email_hash": "7b8a4a7451c26355c865988542f645947cf6bdd18210bb7774dfbbbbf7a3c211",
+      "date": "2017-09-11T09:59:24-05:00",
+      "subject": "[R-pkgs] rmonad",
+      "subject_clean": "rmonad",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Rusers,\n\nThis summer I published the package rmonad on CRAN:\nhttps://cran.r-project.org/web/packages/rmonad\n\nrmonad is a toolset for building stateful, branching pipelines. As\nfunctions in the pipeline are executed, they are recorded in a graph of all\npast operations. The resulting structure can be computed on to access not\nonly the final results, but also node documentation, intermediate results,\nperformance stats, and any raised messages, warnings or errors.\n\nSee the README on github (https://github.com/arendsee/rmonad) for a few\nmotivating examples. For more detail, see the \"introduction\" vignette (\nhttps://cran.r-project.org/web/packages/rmonad/vignettes/introduction.html\n).\n\nAny thoughts, feature requests, or bug reports would be strongly\nappreciated. I am also looking for collaborators (see the last section of\nthe github README).\n\nCheers,\n\n-- \n*Zebulun Arendsee | PhD Candidate*\n\n*Bioinformatics and Computational Biology program*\nGenetics Development and Cellular Biology department\n\nGithub <https://github.com/zbwrnz> | LinkedIn\n<https://www.linkedin.com/in/zebulun-arendsee-1b073138>\n\n532 Science II\nIowa State University\nAmes, IA 50011\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Rusers,\n\nThis summer I published the package rmonad on CRAN:\nhttps://cran.r-project.org/web/packages/rmonad\n\nrmonad is a toolset for building stateful, branching pipelines. As\nfunctions in the pi",
+      "thread_id": "thread-1dff0755cf74",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-4ba428787e75",
+      "message_id": "<CAC_0WE8Y2crFhu0uDzGACX9eAzC6xDUxWa_Tp4_88MHWEx=RJg@mail.gmail.com>",
+      "from_name": "Matteo Fasiolo",
+      "from_email_hash": "3976a2f61132520b16ea7d77866041413ca343ce165a8c77ee5d6ebfeab64a9f",
+      "date": "2017-09-12T14:26:27+01:00",
+      "subject": "[R-pkgs]  qgam",
+      "subject_clean": "qgam",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI am happy to announce the publication on CRAN of\nthe qgam package:\nhttps://cran.r-project.org/web/packages/qgam/index.html\n\nqgam is an extension of mgcv, and provides methods for\nfitting quantile additive models including parametric, random and\nsmooth effects.\n\nFor basic examples see the vignette:\nhttps://cran.r-project.org/web/packages/qgam/vignettes/qgam.html\n\nFor more details on the underlying methods see the arXived paper:\nhttps://arxiv.org/abs/1707.03307\n\nComments, criticisms and feature requests are more than welcome.\nThe package is also available on github:\nhttps://github.com/mfasiolo/qgam\n\nBest,\n\nMatteo Fasiolo\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nI am happy to announce the publication on CRAN of\nthe qgam package:\nhttps://cran.r-project.org/web/packages/qgam/index.html\n\nqgam is an extension of mgcv, and provides methods for\nfitting",
+      "thread_id": "thread-4ba428787e75",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-06afd4e2bcb8",
+      "message_id": "<CAE-oFUffWBfbCmEzfF-oHCCKwFT-khOUssU9g7xN=91s3+j5wA@mail.gmail.com>",
+      "from_name": "Jacob Kaplan",
+      "from_email_hash": "fd2a49097e18d3d1def5cdd504dbab320e7e68e9ef3a4599ae6b5f38b694d2f2",
+      "date": "2017-09-14T14:01:39-04:00",
+      "subject": "[R-pkgs] New CRAN Package Announcement: asciiSetupReader",
+      "subject_clean": "New CRAN Package Announcement: asciiSetupReader",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm pleased to announce that asciiSetupReader is now on CRAN:\nhttps://cran.r-project.org/web/packages/asciiSetupReader/index.html\n\nThis package allows users to read ASCII files that have an SPSS or SAS\nsetup file (.sps or .sas). Datasets that come in these txt-sps and txt-sas\nparis can now be accessible through R. The function has the option of\ncorrecting value labels (e.g. 1 to Male, 2 to Female) and column names\n(e.g. V1 to Sex). You may also select only certain columns to read in which\nis helpful when dealing with very large data sets.\n\nA vignette is available explaining how to use the package with SPSS setup\nfiles. The process is the same as for SAS setup files.\n\nPlease let me know if you if you find any bugs or problems in the package.\nhttps://github.com/jacobkap/asciiReader/issues\n\nJacob\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to announce that asciiSetupReader is now on CRAN:\nhttps://cran.r-project.org/web/packages/asciiSetupReader/index.html\n\nThis package allows users to read ASCII files that have an SPSS or SA",
+      "thread_id": "thread-06afd4e2bcb8",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-1d35ea86128f",
+      "message_id": "<736305065.2181156.1505497457824@mail.yahoo.com>",
+      "from_name": "sam d",
+      "from_email_hash": "f6bd7d4877b774558dba71dc840538e27a355d0bebf32717d174c97d089d6e3b",
+      "date": "2017-09-15T17:44:17Z",
+      "subject": "[R-pkgs] revengc CRAN package",
+      "subject_clean": "revengc CRAN package",
+      "in_reply_to": null,
+      "references": [
+        "<736305065.2181156.1505497457824.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Dear R community,\n\n\n?\nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed to reverse engineer censored, decoupledcensus data into a likely hhs x area uncensored contingency table for estimating interior residentialoccupancy.?\n\n?\nFor basic examples:\n\nhttps://cran.r-project.org/web/packages/revengc/revengc.pdf\n\n?\nFor more details on the underlying methods:?\n\nhttps://cran.r-project.org/web/packages/revengc/vignettes/methodbehind_reverseengineeringcensus.pdf\n\n?\nThe package is also available on GitHub:\n\nhttps://github.com/GIST-ORNL/revengc\nCheers?Samantha Duchscherer\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\n\n?\nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed t",
+      "thread_id": "thread-1d35ea86128f",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-7e2bdc1500f4",
+      "message_id": "<BN6P135MB0049D035FC650E943571FEC19A600@BN6P135MB0049.NAMP135.PROD.OUTLOOK.COM>",
+      "from_name": "Jackson (Genomics), Donald",
+      "from_email_hash": "beef79f1a490f3d9594aa6f4f38779dc8d8fe5f2043722b9f4e908bd232b2e46",
+      "date": "2017-09-19T12:23:52Z",
+      "subject": "[R-pkgs] Update to R package envDocument",
+      "subject_clean": "Update to R package envDocument",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An updated version of my envDocument package is now available on CRAN at  https://CRAN.R-project.org/package=envDocument with code at https://github.com/dgJacks0n/envDocument/tree/V_2.4.0\n\nThe main function from this package, env_doc(), provides a detailed, automated report on the environment in which an analysis was run.  In addition to everything provided by sessionInfo() it also includes the path to the R script or Rmarkdown file that ran the analysis and that file's Git repository, branch, commit and status.  Version 2.4.0 adds information on Domino Datalab runs including the run URL and ID, project name, run user, and hardware tier.  The code detects whether it's run in a Domino environment (by checking for Domino-specific environment variables); if so, it will automatically include this section - otherwise it's skipped.  I also enhanced the git repo information.  The release also includes a number of bugfixes, mostly related to error handling.\n\n\nDonald Jackson, PhD\nPrincipal Scientist,\nTranslational Bioinformatics Group / Translational Medicine Department\nBristol-Myers Squibb R&D\n\n________________________________\nThis message (including any attachments) may contain con...{{dropped:11}}",
+      "body_snippet": "An updated version of my envDocument package is now available on CRAN at  https://CRAN.R-project.org/package=envDocument with code at https://github.com/dgJacks0n/envDocument/tree/V_2.4.0\n\nThe main fu",
+      "thread_id": "thread-7e2bdc1500f4",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-4c8854cb8339",
+      "message_id": "<B9E0C2E1-B744-4122-BE8F-3DE95A9339A4@math.uni-augsburg.de>",
+      "from_name": "Antony Unwin",
+      "from_email_hash": "443aedfd4dba6dcceabc22402a7b58ccaba98d6dc1076df10483dca03443bec7",
+      "date": "2017-09-27T17:21:57+01:00",
+      "subject": "[R-pkgs] The OutliersO3 package is now on CRAN",
+      "subject_clean": "The OutliersO3 package is now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe new package OutliersO3 is now available on CRAN:\n<https://cran.r-project.org/web/packages/OutliersO3/index.html>.\n\nThe aim is to graphically compare results of outlier analyses for all possible combinations of variables in a dataset.\n\nVarious kinds of O3 (Overview of Outliers) plots can be drawn to show which cases are classified as outliers for which combinations of variables.\nUp to five different methods can be used to identify the potential outliers in a dataset.\n\nThere is a vignette:\nhttps://cran.r-project.org/web/packages/OutliersO3/vignettes/O3-vignette.html\n\nand a video of a talk on O3 plots from useR!:\n\nhttps://channel9.msdn.com/events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/When-is-an-Outlier-an-Outlier-The-O3-plot?term=unwin\n\nQueries, comments, suggestions are welcome.\n\nRegards\n\nAntony\n\nProfessor Antony Unwin\nMathematics Institute,\nUniversity of Augsburg, \n86135 Augsburg, Germany\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nThe new package OutliersO3 is now available on CRAN:\n<https://cran.r-project.org/web/packages/OutliersO3/index.html>.\n\nThe aim is to graphically compare results of outlier analyses for all ",
+      "thread_id": "thread-4c8854cb8339",
+      "thread_depth": 0,
+      "month": "2017-09"
+    },
+    {
+      "id": "msg-1cf6575fd4c0",
+      "message_id": "<CAE6U0BbbKWm4aDiPiZWDdCtGZCvDutStSfyjTu4=4kXsq=Fi6A@mail.gmail.com>",
+      "from_name": "AMR RS",
+      "from_email_hash": "9d8ba78f8e2e04768169ecfa71127fd39c1084fddf646d787a6f5b66796419a2",
+      "date": "2017-09-29T22:42:44+05:30",
+      "subject": "[R-pkgs] 'coinmarketcapr' R Package to access coinmarketcap API",
+      "subject_clean": "'coinmarketcapr' R Package to access coinmarketcap API",
+      "in_reply_to": "<CAE6U0BYLyEtNVnTNkZtbT2cVLy6zLhdmQm2M27WLCS8wxwfTWg@mail.gmail.com>",
+      "references": [
+        "<CAE6U0BYLyEtNVnTNkZtbT2cVLy6zLhdmQm2M27WLCS8wxwfTWg@mail.gmail.com>"
+      ],
+      "body_plain": "Hello Rusers, 'coinmarketcapr' R Package to extract bitcoin and other\ncryptocurrencies market cap and prices from coinmarketcap API.\n\nWelcoming Suggestions and Contributions!\n\nhttps://github.com/amrrs/coinmarketcapr\n\nhttps://cran.r-project.org/package=coinmarketcapr\n\nThanks and Regards,\nAbdul\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Rusers, 'coinmarketcapr' R Package to extract bitcoin and other\ncryptocurrencies market cap and prices from coinmarketcap API.\n\nWelcoming Suggestions and Contributions!\n\nhttps://github.com/amrrs",
+      "thread_id": "thread-1cf6575fd4c0",
+      "thread_depth": 0,
+      "month": "2017-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-60f9bb9c535d",
+      "subject": "New package: rDotNet",
+      "message_count": 1,
+      "participants": [
+        "Jonathan Shore"
+      ],
+      "started": "2017-09-02T14:25:09-04:00",
+      "last_reply": "2017-09-02T14:25:09-04:00",
+      "root_message_id": "msg-60f9bb9c535d"
+    },
+    {
+      "id": "thread-1dff0755cf74",
+      "subject": "rmonad",
+      "message_count": 1,
+      "participants": [
+        "Zebulun Arendsee"
+      ],
+      "started": "2017-09-11T09:59:24-05:00",
+      "last_reply": "2017-09-11T09:59:24-05:00",
+      "root_message_id": "msg-1dff0755cf74"
+    },
+    {
+      "id": "thread-4ba428787e75",
+      "subject": "qgam",
+      "message_count": 1,
+      "participants": [
+        "Matteo Fasiolo"
+      ],
+      "started": "2017-09-12T14:26:27+01:00",
+      "last_reply": "2017-09-12T14:26:27+01:00",
+      "root_message_id": "msg-4ba428787e75"
+    },
+    {
+      "id": "thread-06afd4e2bcb8",
+      "subject": "New CRAN Package Announcement: asciiSetupReader",
+      "message_count": 1,
+      "participants": [
+        "Jacob Kaplan"
+      ],
+      "started": "2017-09-14T14:01:39-04:00",
+      "last_reply": "2017-09-14T14:01:39-04:00",
+      "root_message_id": "msg-06afd4e2bcb8"
+    },
+    {
+      "id": "thread-1d35ea86128f",
+      "subject": "revengc CRAN package",
+      "message_count": 1,
+      "participants": [
+        "sam d"
+      ],
+      "started": "2017-09-15T17:44:17+00:00",
+      "last_reply": "2017-09-15T17:44:17+00:00",
+      "root_message_id": "msg-1d35ea86128f"
+    },
+    {
+      "id": "thread-7e2bdc1500f4",
+      "subject": "Update to R package envDocument",
+      "message_count": 1,
+      "participants": [
+        "Jackson (Genomics), Donald"
+      ],
+      "started": "2017-09-19T12:23:52+00:00",
+      "last_reply": "2017-09-19T12:23:52+00:00",
+      "root_message_id": "msg-7e2bdc1500f4"
+    },
+    {
+      "id": "thread-4c8854cb8339",
+      "subject": "The OutliersO3 package is now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Antony Unwin"
+      ],
+      "started": "2017-09-27T17:21:57+01:00",
+      "last_reply": "2017-09-27T17:21:57+01:00",
+      "root_message_id": "msg-4c8854cb8339"
+    },
+    {
+      "id": "thread-1cf6575fd4c0",
+      "subject": "'coinmarketcapr' R Package to access coinmarketcap API",
+      "message_count": 1,
+      "participants": [
+        "AMR RS"
+      ],
+      "started": "2017-09-29T22:42:44+05:30",
+      "last_reply": "2017-09-29T22:42:44+05:30",
+      "root_message_id": "msg-1cf6575fd4c0"
+    }
+  ]
+}

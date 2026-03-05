@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-05",
+  "messages": [
+    {
+      "id": "msg-372e3adc8dac",
+      "message_id": "<CAHayGv9FbsJ-FShx7VKd+UO73LTYqd=eP3kWX_xm0OFJVfqj0w@mail.gmail.com>",
+      "from_name": "Blake Seers",
+      "from_email_hash": "f5936720f8118ce0ec6a6e134d533023471d7949ab9032f5cb802ca8446e4c62",
+      "date": "2017-05-02T11:24:41+12:00",
+      "subject": "[R-pkgs] Calculate wind fetch using fetchR",
+      "subject_clean": "Calculate wind fetch using fetchR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the fetchR package is now available on\nCRAN, which automatically calculates wind fetch lengths, for any\nlocation(s) around the world.\n\nWind fetch (or just fetch) is an important calculation in many coastal\nand oceanographic applications that require a measure for wind and\nwave exposure. The fetchR package exports the `fetch` function that\nrequires; a (projected) polygon shapefile representing the coastline\nand other obstructions to wind; and a points shapefile representing\nthe location(s) at which the fetch is to be calculated. There are\narguments that allow you to change the maximum distance and number of\ndirections. Finally, there are plot and kml methods that allow you to\nvisualise the exposure and export the vectors to a KML file,\nrespectively. Refer to the vignette for a reproducible example\n(https://cran.r-project.org/web/packages/fetchR/vignettes/introduction-to-fetchR.html).\n\nAlso, check out the shiny application for this R package\n(http://windfetch.cer.auckland.ac.nz/). Refer to the 'help' tab to get\nstarted with a reproducible example.\n\nfetchR on CRAN: https://cran.r-project.org/package=fetchR\nfetchR on GitHub: https://github.com/blasee/fetchR\nbugs, suggestions: https://github.com/blasee/fetchR/issues\n\nFeedback, comments and suggestions are welcomed!\n\nAll the best,\nBlake\n\n---\nBlake Seers  |  PhD candidate\nUniversity of Auckland\nDept. of Statistics  |  Inst. of Marine Science\nBuilding 303 Room 361",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce that the fetchR package is now available on\nCRAN, which automatically calculates wind fetch lengths, for any\nlocation(s) around the world.\n\nWind fetch (or just ",
+      "thread_id": "thread-372e3adc8dac",
+      "thread_depth": 0,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-eef2d8562550",
+      "message_id": "<c3552b8e-a141-2393-e282-380e52229ea1@dirk-schumacher.net>",
+      "from_name": "Dirk Schumacher",
+      "from_email_hash": "ee80cdfc677559205e68fcc566416f53159ec3e2a497e3703284fc4b69abe00a",
+      "date": "2017-05-13T15:00:14+02:00",
+      "subject": "[R-pkgs] New package: ompr",
+      "subject_clean": "New package: ompr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nhappy to announce that the first version of ompr is on CRAN now\n(https://cran.r-project.org/web/packages/ompr/).\n\nThe package lets you model mixed integer linear programs algebraically\ndirectly in R.\nThere is also another package ompr.roi that can be used to solve ompr\nmodels with ROI.\n\nSource code and extended examples are on GitHub:\nhttps://github.com/dirkschumacher/ompr\n\nWhile testing the package I also wrote a couple of vignettes describing\nhow to solve various combinatorial problems:\nhttps://dirkschumacher.github.io/ompr/articles/index.html\n\nAny feedback is most welcome!\n\nBest\nDirk",
+      "body_snippet": "Dear R users,\n\nhappy to announce that the first version of ompr is on CRAN now\n(https://cran.r-project.org/web/packages/ompr/).\n\nThe package lets you model mixed integer linear programs algebraically\n",
+      "thread_id": "thread-eef2d8562550",
+      "thread_depth": 0,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-d834f90a19d9",
+      "message_id": "<CAK8DnTmfSB8sV6XeNGG7zuNwCGP=7Eonk_Exg3rvD30wfiyz+Q@mail.gmail.com>",
+      "from_name": "Malte Grosser",
+      "from_email_hash": "9dcae6d06cc46ff229485db4a7deacdbafcb8d385fe40f602ba301f44d068911",
+      "date": "2017-05-19T18:42:33+02:00",
+      "subject": "[R-pkgs] Announcing snakecase 0.4.0",
+      "subject_clean": "Announcing snakecase 0.4.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am pleased to announce a fresh and simple approach on automatic\ncaseconversion with a concise design philosophy via the snakecase-pkg (\nhttps://cran.r-project.org/package=snakecase).\n\nJust use to_any_case(string, case) and (if the cases are too complex for\nthe default options) provide its most important arguments with further\ninformation about:\n- how a string should be parsed (regular expressions)\n- how the result should be split (character).\nOn the way you can achieve things like special character handling and minor\ncustomizations as also documented on github (\nhttps://github.com/Tazinho/snakecase)\n\nExamples:\n- Easy case conversions:\n\"RStudio\" to \"R_Studio\" (parsed) \"r_studio\", \"R_STUDIO\", \"rStudio\",\n\"RStudio\"  or choose any other separator than the default \"_\" or \"\".\n- More complex (different meanings of dots (separator or decimal) and\numlauts)\n\"R.St?dio: v.1.0.143\" to \"rst?dio_v_1_0_143\" or \"r_st?dio_v_1.0.143\", \"R\nStuedio v 1.0.143\",...\n\nNote that the usecases are not only formatting for naming conventions\nitself, but also for automated pretty printing like \"RStudio\" to \"R Studio\".\n\nBest,\nMalte Grosser\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am pleased to announce a fresh and simple approach on automatic\ncaseconversion with a concise design philosophy via the snakecase-pkg (\nhttps://cran.r-project.org/package=snakecase).\n\nJust use to_an",
+      "thread_id": "thread-d834f90a19d9",
+      "thread_depth": 0,
+      "month": "2017-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-372e3adc8dac",
+      "subject": "Calculate wind fetch using fetchR",
+      "message_count": 1,
+      "participants": [
+        "Blake Seers"
+      ],
+      "started": "2017-05-02T11:24:41+12:00",
+      "last_reply": "2017-05-02T11:24:41+12:00",
+      "root_message_id": "msg-372e3adc8dac"
+    },
+    {
+      "id": "thread-eef2d8562550",
+      "subject": "New package: ompr",
+      "message_count": 1,
+      "participants": [
+        "Dirk Schumacher"
+      ],
+      "started": "2017-05-13T15:00:14+02:00",
+      "last_reply": "2017-05-13T15:00:14+02:00",
+      "root_message_id": "msg-eef2d8562550"
+    },
+    {
+      "id": "thread-d834f90a19d9",
+      "subject": "Announcing snakecase 0.4.0",
+      "message_count": 1,
+      "participants": [
+        "Malte Grosser"
+      ],
+      "started": "2017-05-19T18:42:33+02:00",
+      "last_reply": "2017-05-19T18:42:33+02:00",
+      "root_message_id": "msg-d834f90a19d9"
+    }
+  ]
+}

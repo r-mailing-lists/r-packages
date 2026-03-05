@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-09",
+  "messages": [
+    {
+      "id": "msg-a9c940df4c97",
+      "message_id": "<CACCU-vM3B95EnoYz=-wKf5r+iWm-O8iCW6h-cBo-q+kjvuRk1Q@mail.gmail.com>",
+      "from_name": "Chao Liu",
+      "from_email_hash": "eb6a7eeab677b0afb10412d3e5d340d2c2dc8daad197d1233993e95d835d02b2",
+      "date": "2024-09-03T12:30:54-04:00",
+      "subject": "[R-pkgs] Goodreader: Scrape and Analyze 'Goodreads' Book Data",
+      "subject_clean": "Goodreader: Scrape and Analyze 'Goodreads' Book Data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users,\n\nI am pleased to announce that Goodreader 0.1.1 is now available on CRAN.\n\nGoodreader offers a toolkit for scraping and analyzing book data from\nGoodreads. Users can search for books, scrape detailed information and\nreviews, perform sentiment analysis on reviews, and conduct topic modeling.\n\nHere?s a quick overview of how to use Goodreader:\n# Search for books\nAI_df <- search_goodreads(search_term = \"artificial intelligence\",\nsearch_in = \"title\", num_books = 10, sort_by = \"ratings\")\n\n# Retrieve Book IDs and save them to a text file\nget_book_ids(input_data = AI_df, file_name = \"AI_books.txt\")\n\n# Get book-related information\nscrape_books(book_ids_path = \"AI_books.txt\")\n\n# Scrape book reviews\nscrape_reviews(book_ids_path = \"AI_books.txt\", num_reviews = 10)\n\nFor more details, please visit: https://liu-chao.site/Goodreader/\n\nBest regards,\n\nChao Liu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users,\n\nI am pleased to announce that Goodreader 0.1.1 is now available on CRAN.\n\nGoodreader offers a toolkit for scraping and analyzing book data from\nGoodreads. Users can search for books, sc",
+      "thread_id": "thread-a9c940df4c97",
+      "thread_depth": 0,
+      "month": "2024-09"
+    },
+    {
+      "id": "msg-885fc98db161",
+      "message_id": "<b11255da-dd8d-4731-8b3c-0e8a2bdab5e0@truecluster.com>",
+      "from_name": "Jens Oehlschlägel",
+      "from_email_hash": "28d9d20f251b7c67e853b4a18cf3a5734addd675556c2fcc38d68d846745416e",
+      "date": "2024-09-23T22:45:10+02:00",
+      "subject": "[R-pkgs] bit, bit64, ff and greeNsort",
+      "subject_clean": "bit, bit64, ff and greeNsort",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear package maintainers,\n\nDear users of packages `bit`, `bit64`, `ff`,\n\nEveryone interested in sustainable sorting algorithms,\n\nI submitted updated versions for the upcoming R 4.5.0. The are only \nminor changes (see the NEWS files) but there is one important change in \nbit64:\n\n ??? o setting options(integer64_semantics=\"new\")\n ????? gives the better semantics suggested by Ofek Shilon.\n ????? Downstream package authors: please test and adjust to the new \nsemantics,\n ????? we plan to make that the default.\n\nAfter 25 years volunteer work for the R community, that was my last \ncombined submission for packages `bit`, `bit64` and `ff`.\n\nI learned S+ in 1996 and supported R's 1.0 release in 2000 with bug \ntesting, a small code contribution to `pairs` and motivating the \ncore-team to replace 'NA' with NA_character_.\n\nIn 2007 Daniel Adler and I published `ff`: the first R package allowing \nbig out of memory data.frames was a nail in the coffin of SAS dominance \nand helped R into the big data era.\n\n2009 and 2012 followed `bit`, `bit64` to enhance R's data types somewhat \nwith `bit` vectors and signed `integer64`. Package `bit` supported \nefficient selection in `ff`. Package `bit64` was an emergency \ndevelopment in order to establish rather `integer64' than another \n`int64` package that had too expensive performance.\n\nSince 2011 I work for an employer that does not use R, and maintenance \nof R packages is a little rewarded burden.\n\nSince 2010 my priorities shifted to fighting global heating by \ndeveloping more sustainable sorting algorithms that provide better \ntrade-offs between memory investments, compute costs and adaptivity to \neasier input patterns. My R&D project was successfully completed 2024 \nwith theory and design of new symmetric sorting algorithms that can \nreplace Quicksort, Mergesort and Timsort. Lots of info at greeNsort.org. \nI have an R package `greeNsort` on github with a research testbed that \ncan measure RAM, CPU and RAPL energy for ?150 equally tuned sorting \nalgorithms on multiple test patterns.\n\nSince 24.2.2022 my priorities are on strengthening resilience of \nEuropean civil society.\n\nHence I happily accept the generous offer of Michael Chirico to carry \nforward the maintenance of packages `bit` and `bit64`. Please support \nhim in the difficult task of developing very close to the core as a \nnormal package author.\n\nI will continue bug-fixing `ff` as time permits, although a modern C++ \nrewrite would be preferable, which\n\n1) supports long vectors\n\n2) avoids copying between Mapped Memory and R's memory\n\n3) simplifies the package, particularly removes the \"virtual window\" \ncomplexity\n\nAll the best\n\n\nJens Oehlschl?gel",
+      "body_snippet": "Dear package maintainers,\n\nDear users of packages `bit`, `bit64`, `ff`,\n\nEveryone interested in sustainable sorting algorithms,\n\nI submitted updated versions for the upcoming R 4.5.0. The are only \nmi",
+      "thread_id": "thread-885fc98db161",
+      "thread_depth": 0,
+      "month": "2024-09"
+    },
+    {
+      "id": "msg-e79439be4439",
+      "message_id": "<DC8E6342-2A10-4A66-8D0C-007D663DC4F6@math.uni-augsburg.de>",
+      "from_name": "Antony Unwin",
+      "from_email_hash": "203ebe9e840705137c34a0b5e16f4ba87c6dd12210131a6f746f36c22ad71f4e",
+      "date": "2024-09-25T15:27:13+02:00",
+      "subject": "[R-pkgs] GmooG, ChessGmooG, FilmsGmooG, ComradesM",
+      "subject_clean": "GmooG, ChessGmooG, FilmsGmooG, ComradesM",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nGmooG, ChessGmooG, FilmsGmooG, ComradesM are dataset packages accompanying my book ?Getting (more out of) Graphics? (CRC Press 2024).  They are now available on CRAN.  R code producing the graphics in the book will be put online in a few weeks.\n\nRegards\n\nAntony\n\nProfessor Antony Unwin\nMathematics Institute,\nUniversity of Augsburg, \n86135 Augsburg, Germany\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nGmooG, ChessGmooG, FilmsGmooG, ComradesM are dataset packages accompanying my book ?Getting (more out of) Graphics? (CRC Press 2024).  They are now available on CRAN.  R code producing the ",
+      "thread_id": "thread-e79439be4439",
+      "thread_depth": 0,
+      "month": "2024-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a9c940df4c97",
+      "subject": "Goodreader: Scrape and Analyze 'Goodreads' Book Data",
+      "message_count": 1,
+      "participants": [
+        "Chao Liu"
+      ],
+      "started": "2024-09-03T12:30:54-04:00",
+      "last_reply": "2024-09-03T12:30:54-04:00",
+      "root_message_id": "msg-a9c940df4c97"
+    },
+    {
+      "id": "thread-885fc98db161",
+      "subject": "bit, bit64, ff and greeNsort",
+      "message_count": 1,
+      "participants": [
+        "Jens Oehlschlägel"
+      ],
+      "started": "2024-09-23T22:45:10+02:00",
+      "last_reply": "2024-09-23T22:45:10+02:00",
+      "root_message_id": "msg-885fc98db161"
+    },
+    {
+      "id": "thread-e79439be4439",
+      "subject": "GmooG, ChessGmooG, FilmsGmooG, ComradesM",
+      "message_count": 1,
+      "participants": [
+        "Antony Unwin"
+      ],
+      "started": "2024-09-25T15:27:13+02:00",
+      "last_reply": "2024-09-25T15:27:13+02:00",
+      "root_message_id": "msg-e79439be4439"
+    }
+  ]
+}

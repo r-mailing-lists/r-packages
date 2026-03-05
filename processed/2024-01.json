@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-01",
+  "messages": [
+    {
+      "id": "msg-a45c54db365d",
+      "message_id": "<CAJ44-AkUGpQKQ+8Geuje+Hu8NeemG3DqMyv=jkZVEQKfNH=0uQ@mail.gmail.com>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "e8d911bc0731d3d47078fe41dc90da60f631e7f44795c1e80e6d769d17b4684c",
+      "date": "2024-01-21T23:06:10-03:00",
+      "subject": "[R-pkgs] hydroTSM back on CRAN (v0.7-0 released)",
+      "subject_clean": "hydroTSM back on CRAN (v0.7-0 released)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nAfter being archived on CRAN on 2023-10-1, hydroTSM is finally back on CRAN\nsince January 18th: https://cran.r-project.org/package=hydroTSM.\n\nThis new version 0.7-0 has several new functions, improvements, bugfixes,\nand a new dataset, mostly devoted to work with sub-daily and sub-hourly\ntime series.\n\n*) New functions: baseflow, plot_pq, calendarHeatmap, subhourly2hourly,\nsubhourly2nminutes, daily2weekly, subdaily2weekly, cmv, si.\n\n*) Improvements: climograph, (sub)daily2monthly, subdaily2daily,\ndaily2annual, daily2monthly, subdaily2annual, hip, hydroplot, sname2plot,\nizoo2rzoo.\n\nA detailed description of the previous changes can be found in the new\nNews.md file:\nhttps://cran.r-project.org/web/packages/hydroTSM/news/news.html\n\nTwo vignettes illustrate the usage of the some of the main functions:\n\n1) Analysis of daily precipitation data:\nhttps://cloud.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Daily_P_Vignette-knitr.pdf\n\n2) 1) Analysis of daily streamflow data:\nhttps://cloud.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Daily_Q_Vignette-knitr.pdf\n\nIf you use this package, please cite it correctly as:\n\nZambrano-Bigiarini, Mauricio (2024). hydroTSM: Time Series Management and\nAnalysis for Hydrological Modelling. R package version 0.7-0. URL:\nhttps://cran.r-project.org/package=hydroTSM. doi:110.5281/zenodo.839565\n\nIssues and enhancements can be requested on:\nhttps://github.com/hzambran/hydroTSM/issues\n\nAll the best,\n\nMauricio\n\n\nMauricio Zambrano-Bigiarini, PhD\nAssociate Professor, Universidad de La Frontera\nAssociate Researcher, (CR)2 FONDAP Center\nPhone: +56 45 259 2812 <+56+45+259+2812>\ne-mail: mauricio.zambrano at ufrontera.cl\n[image: webpage] <https://hzambran.github.io/> [image: ORCID]\n<https://orcid.org/0000-0002-9536-643X> [image: Github]\n<https://github.com/hzambran> [image: Linkedin]\n<http://www.linkedin.com/in/hzambran/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nAfter being archived on CRAN on 2023-10-1, hydroTSM is finally back on CRAN\nsince January 18th: https://cran.r-project.org/package=hydroTSM.\n\nThis new version 0.7-0 has several new function",
+      "thread_id": "thread-a45c54db365d",
+      "thread_depth": 0,
+      "month": "2024-01"
+    },
+    {
+      "id": "msg-eb4d334ba328",
+      "message_id": "<CAJ44-Amtui+ZZCtM4JRMMLJW3d3EkUkBkbVx=b=epWep9v_C=A@mail.gmail.com>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "e8d911bc0731d3d47078fe41dc90da60f631e7f44795c1e80e6d769d17b4684c",
+      "date": "2024-01-22T02:30:00-03:00",
+      "subject": "[R-pkgs] hydroGOF back on CRAN (v0.5-4 released)",
+      "subject_clean": "hydroGOF back on CRAN (v0.5-4 released)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nAfter being archived on CRAN on  2023-10-16 , hydroGOF is finally back on\nCRAN since January 21th: https://cran.r-project.org/package=hydroGOF.\n\nThis new version 0.5-4 includes:\n\n*) the following new functions:\n\n    -) KGElf (Garc?a et al., 2017),\n    -) sKGE (Fowler et al., 2018),\n    -) KGEnp (Pool et al., 2018),\n    -) dr (Willmott et al., 2012),\n    -) ubRMSE (Entekhabi et al., 2010),\n    -) wNSE (Hundecha and Bardossy, 2004),\n    -) rSpearman,\n    -) R2\n\n*) improvements: all the functions allow you to apply a user-defined\nfunction (e.g., log, sqrt) to both 'sim' and 'obs' before computing the\ngoodness-of-fit measure.\n\nA detailed description of the previous changes can be found for the 0.5-0\nversion in the new News.md file:\nhttps://cran.r-project.org/web/packages/hydroGOF/news/news.html\n\nA much improved vignette illustrate the usage of some of the main functions:\n\n*) Analysis of daily precipitation data:\nhttps://cloud.r-project.org/web/packages/hydroGOF/vignettes/hydroGOF_Vignette.pdf\n\nIf you use this package, please cite it correctly as:\n\nZambrano-Bigiarini, Mauricio (2024). hydroGOF: Goodness-of-fit functions\nfor comparison of simulated and observed hydrological time series. R\npackage version 0.5-4. URL:https://cran.r-project.org/package=hydroGOF.\ndoi:10.5281/zenodo.839854.\n\nIssues and enhancements can be requested on:\nhttps://github.com/hzambran/hydroGOF/issues\n\nAll the best,\n\nMauricio\n\n\nMauricio Zambrano-Bigiarini, PhD\nAssociate Professor, Universidad de La Frontera\nAssociate Researcher, (CR)2 FONDAP Center\nPhone: +56 45 259 2812 <+56+45+259+2812>\ne-mail: mauricio.zambrano at ufrontera.cl\n[image: webpage] <http://hzambran.github.io/> [image: ORCID]\n<https://orcid.org/0000-0002-9536-643X> [image: Github]\n<https://github.com/hzambran> [image: Linkedin]\n<http://www.linkedin.com/in/hzambran/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nAfter being archived on CRAN on  2023-10-16 , hydroGOF is finally back on\nCRAN since January 21th: https://cran.r-project.org/package=hydroGOF.\n\nThis new version 0.5-4 includes:\n\n*) the fol",
+      "thread_id": "thread-eb4d334ba328",
+      "thread_depth": 0,
+      "month": "2024-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a45c54db365d",
+      "subject": "hydroTSM back on CRAN (v0.7-0 released)",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2024-01-21T23:06:10-03:00",
+      "last_reply": "2024-01-21T23:06:10-03:00",
+      "root_message_id": "msg-a45c54db365d"
+    },
+    {
+      "id": "thread-eb4d334ba328",
+      "subject": "hydroGOF back on CRAN (v0.5-4 released)",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2024-01-22T02:30:00-03:00",
+      "last_reply": "2024-01-22T02:30:00-03:00",
+      "root_message_id": "msg-eb4d334ba328"
+    }
+  ]
+}

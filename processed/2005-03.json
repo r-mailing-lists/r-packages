@@ -1,0 +1,333 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2005-03",
+  "messages": [
+    {
+      "id": "msg-7cae3ce0de55",
+      "message_id": "<207fa1db08ad58cc37bcf4eceb887741@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "4d239636167ba550b4ea9562cad1c6c71dc2165211dfed402127f3a2ec5d6eb3",
+      "date": "2005-03-03T09:31:16Z",
+      "subject": "[R-pkgs] new package: ResistorArray",
+      "subject_clean": "new package: ResistorArray",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing the release of a new R package ResistorArray.\n\n\nThis package solves the (nontrivial) general problem of resistance on \narbitrary (finite)\nresistor arrays.\n\nOutside electrical engineering, the problem has a wide range of \napplications to\nsituations such as groundwater modelling; there is a direct \ncorrespondence\nbetween electrical networks and random walks.\n\nThe package has a reasonably complete set of literature references, and \nsolves a number\nof classical problems such as the resistance between opposite points of \na skeleton resistor\ncube, and the Wheatstone bridge.\n\nThe package comes with a variety of standard resistor arrays, including \nall five platonic\nsolids, the Fibonacci ladder, and \"N\" arbitrary resistors in series.\n\nThe package gives nice numerical illustrations of a few theoretical \nresults from the\nrecent (2004) literature.\n\nOne of the Google aptitude tests was to determine the electrical \nresistance between two points\non an infinite grid of resistors. I couldn't solve this problem \nanalytically (although I found the\nother day that a solution does exist);  ResistorArray gets the answer \ncorrect to within about 1%.\n\n\n\n--\nRobin Hankin\nUncertainty Analyst\nSouthampton Oceanography Centre\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Announcing the release of a new R package ResistorArray.\n\n\nThis package solves the (nontrivial) general problem of resistance on \narbitrary (finite)\nresistor arrays.\n\nOutside electrical engineering, t",
+      "thread_id": "thread-7cae3ce0de55",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-7cae3ce0de55",
+      "message_id": "<207fa1db08ad58cc37bcf4eceb887741@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "4d239636167ba550b4ea9562cad1c6c71dc2165211dfed402127f3a2ec5d6eb3",
+      "date": "2005-03-03T09:31:16Z",
+      "subject": "[R-pkgs] new package: ResistorArray",
+      "subject_clean": "new package: ResistorArray",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing the release of a new R package ResistorArray.\n\n\nThis package solves the (nontrivial) general problem of resistance on \narbitrary (finite)\nresistor arrays.\n\nOutside electrical engineering, the problem has a wide range of \napplications to\nsituations such as groundwater modelling; there is a direct \ncorrespondence\nbetween electrical networks and random walks.\n\nThe package has a reasonably complete set of literature references, and \nsolves a number\nof classical problems such as the resistance between opposite points of \na skeleton resistor\ncube, and the Wheatstone bridge.\n\nThe package comes with a variety of standard resistor arrays, including \nall five platonic\nsolids, the Fibonacci ladder, and \"N\" arbitrary resistors in series.\n\nThe package gives nice numerical illustrations of a few theoretical \nresults from the\nrecent (2004) literature.\n\nOne of the Google aptitude tests was to determine the electrical \nresistance between two points\non an infinite grid of resistors. I couldn't solve this problem \nanalytically (although I found the\nother day that a solution does exist);  ResistorArray gets the answer \ncorrect to within about 1%.\n\n\n\n--\nRobin Hankin\nUncertainty Analyst\nSouthampton Oceanography Centre\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Announcing the release of a new R package ResistorArray.\n\n\nThis package solves the (nontrivial) general problem of resistance on \narbitrary (finite)\nresistor arrays.\n\nOutside electrical engineering, t",
+      "thread_id": "thread-7cae3ce0de55",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-59de5181fe4d",
+      "message_id": "<422ED490.8040307@imperial.ac.uk>",
+      "from_name": "Chris Jackson",
+      "from_email_hash": "51dce0c978de52e49d5d67a35146b501783e027f2d2fc382bd3e5ddb69e25a55",
+      "date": "2005-03-09T10:48:48Z",
+      "subject": "[R-pkgs] msm version 0.5 released",
+      "subject_clean": "msm version 0.5 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A major update of the \"msm\" package for continuous-time Markov and\nhidden Markov multi-state models is now available from CRAN.\n\nHidden Markov models with general, continuous response distributions are\nnow supported.  These models are used for Markov processes which can\nonly be observed through the value of some noisy marker.\n\nCensored states are now supported at any observation time.  The\nobservation scheme is also allowed to be different for each observation,\nfor example, process snapshot / fully-observed histories /\npartially-observed histories such as death times.\n\nUsers upgrading from previous versions of msm should note that\nsome of the syntax for specifying models has changed.  In particular,\ninitial values are now specified in the \"qmatrix\" and \"covinits\"\narguments instead of the inits argument, so that \"qmatrix\" is no longer\na matrix of 0/1 indicators.\n\nAs always, refer to the user guide \"msm-manual.pdf\" in the \"doc\"\nsubdirectory for a full description of the methodology, and worked\nexamples in the use of the package.  See the appendix for a full\nlist of the syntax changes, and the NEWS file in the top-level\ninstallation directory for a full list of the changes in this release.\n\n-- \nChristopher Jackson <chris.jackson at imperial.ac.uk>, Research Associate,\nDepartment of Epidemiology and Public Health, Imperial College\nSchool of Medicine, Norfolk Place, London W2 1PG, tel. 020 759 43371",
+      "body_snippet": "A major update of the \"msm\" package for continuous-time Markov and\nhidden Markov multi-state models is now available from CRAN.\n\nHidden Markov models with general, continuous response distributions ar",
+      "thread_id": "thread-59de5181fe4d",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-59de5181fe4d",
+      "message_id": "<422ED490.8040307@imperial.ac.uk>",
+      "from_name": "Chris Jackson",
+      "from_email_hash": "51dce0c978de52e49d5d67a35146b501783e027f2d2fc382bd3e5ddb69e25a55",
+      "date": "2005-03-09T10:48:48Z",
+      "subject": "[R-pkgs] msm version 0.5 released",
+      "subject_clean": "msm version 0.5 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A major update of the \"msm\" package for continuous-time Markov and\nhidden Markov multi-state models is now available from CRAN.\n\nHidden Markov models with general, continuous response distributions are\nnow supported.  These models are used for Markov processes which can\nonly be observed through the value of some noisy marker.\n\nCensored states are now supported at any observation time.  The\nobservation scheme is also allowed to be different for each observation,\nfor example, process snapshot / fully-observed histories /\npartially-observed histories such as death times.\n\nUsers upgrading from previous versions of msm should note that\nsome of the syntax for specifying models has changed.  In particular,\ninitial values are now specified in the \"qmatrix\" and \"covinits\"\narguments instead of the inits argument, so that \"qmatrix\" is no longer\na matrix of 0/1 indicators.\n\nAs always, refer to the user guide \"msm-manual.pdf\" in the \"doc\"\nsubdirectory for a full description of the methodology, and worked\nexamples in the use of the package.  See the appendix for a full\nlist of the syntax changes, and the NEWS file in the top-level\ninstallation directory for a full list of the changes in this release.\n\n-- \nChristopher Jackson <chris.jackson at imperial.ac.uk>, Research Associate,\nDepartment of Epidemiology and Public Health, Imperial College\nSchool of Medicine, Norfolk Place, London W2 1PG, tel. 020 759 43371",
+      "body_snippet": "A major update of the \"msm\" package for continuous-time Markov and\nhidden Markov multi-state models is now available from CRAN.\n\nHidden Markov models with general, continuous response distributions ar",
+      "thread_id": "thread-59de5181fe4d",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-f146558d7c73",
+      "message_id": "<Pine.LNX.4.58.0503111253460.28840@moon.stats.gla.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "36ac2776f5ec91936d203295c2b32089e39725e9aab19c2a037b5c6fef8154f1",
+      "date": "2005-03-11T14:01:06Z",
+      "subject": "[R-pkgs] mgcv 1.2-0",
+      "subject_clean": "mgcv 1.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv version 1.2 is on CRAN now. mgcv provides generalized additive models \nand generalized additive mixed models with automatic estimation of the \nsmoothness of model components. \n\nChanges in this version are:\n\n* A new gam fitting method is implemented for the generalized case. It \nprovides more reliable convergence than the previous default, but can be \na little slower.  See ?gam.method, ?gam.fit2 and ?gam.outer for details. \nThe old method is still available as an option.\n\n* `gam' has acquired a new list argument `method' to cope with the number \nof fitting  method options now available, and there has been some alteration \nto the `control' argument.\n\n* Any smoothers can now be used to construct nested models, including \ntensor product smooths. See ?fixDependence and ?gam.side for details.\n\n* By default all smooths are now parameterized to be centred, without \nrequiring additional constraints (this is automatic and applies also to \nuser defined smooths). The old behaviour is still available as an option. \nSee ?smoothCon for details. (This should be user transparent.) \n\n* Smoothing parameter initialization has been modified for better \nperformance with tensor product smooths. See ?initial.sp.\n\n* By default, tensor product smooths have been modified to use more \ninterpretable penalties. See ?te for details. This leaves smooths based \non the default basis unchanged, but improves the performance of smooths \nbased on other marginal bases.\n\n* Examples of how to obtain variance estimates etc. efficiently, for any \nquantities derived from a fitted gam model are provided in ?predict.gam.\n\n_____________________________________________________________________\n> Simon Wood simon at stats.gla.ac.uk        www.stats.gla.ac.uk/~simon/\n>>  Department of Statistics, University of Glasgow, Glasgow, G12 8QQ\n>>>   Direct telephone: (0)141 330 4530          Fax: (0)141 330 4814",
+      "body_snippet": "mgcv version 1.2 is on CRAN now. mgcv provides generalized additive models \nand generalized additive mixed models with automatic estimation of the \nsmoothness of model components. \n\nChanges in this ve",
+      "thread_id": "thread-f146558d7c73",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-f146558d7c73",
+      "message_id": "<Pine.LNX.4.58.0503111253460.28840@moon.stats.gla.ac.uk>",
+      "from_name": "Simon Wood",
+      "from_email_hash": "36ac2776f5ec91936d203295c2b32089e39725e9aab19c2a037b5c6fef8154f1",
+      "date": "2005-03-11T14:01:06Z",
+      "subject": "[R-pkgs] mgcv 1.2-0",
+      "subject_clean": "mgcv 1.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "mgcv version 1.2 is on CRAN now. mgcv provides generalized additive models \nand generalized additive mixed models with automatic estimation of the \nsmoothness of model components. \n\nChanges in this version are:\n\n* A new gam fitting method is implemented for the generalized case. It \nprovides more reliable convergence than the previous default, but can be \na little slower.  See ?gam.method, ?gam.fit2 and ?gam.outer for details. \nThe old method is still available as an option.\n\n* `gam' has acquired a new list argument `method' to cope with the number \nof fitting  method options now available, and there has been some alteration \nto the `control' argument.\n\n* Any smoothers can now be used to construct nested models, including \ntensor product smooths. See ?fixDependence and ?gam.side for details.\n\n* By default all smooths are now parameterized to be centred, without \nrequiring additional constraints (this is automatic and applies also to \nuser defined smooths). The old behaviour is still available as an option. \nSee ?smoothCon for details. (This should be user transparent.) \n\n* Smoothing parameter initialization has been modified for better \nperformance with tensor product smooths. See ?initial.sp.\n\n* By default, tensor product smooths have been modified to use more \ninterpretable penalties. See ?te for details. This leaves smooths based \non the default basis unchanged, but improves the performance of smooths \nbased on other marginal bases.\n\n* Examples of how to obtain variance estimates etc. efficiently, for any \nquantities derived from a fitted gam model are provided in ?predict.gam.\n\n_____________________________________________________________________\n> Simon Wood simon at stats.gla.ac.uk        www.stats.gla.ac.uk/~simon/\n>>  Department of Statistics, University of Glasgow, Glasgow, G12 8QQ\n>>>   Direct telephone: (0)141 330 4530          Fax: (0)141 330 4814",
+      "body_snippet": "mgcv version 1.2 is on CRAN now. mgcv provides generalized additive models \nand generalized additive mixed models with automatic estimation of the \nsmoothness of model components. \n\nChanges in this ve",
+      "thread_id": "thread-f146558d7c73",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-db6dad0c645c",
+      "message_id": "<002a01c52965$846b7e00$0540210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "02d3646a289a960533732d931746c3db82bff2d5017988028ea5a2fc836d3d26",
+      "date": "2005-03-15T14:47:23+01:00",
+      "subject": "[R-pkgs] New package for latent trait models",
+      "subject_clean": "New package for latent trait models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of my new package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch \nmodel) under the Item Response Theory approach. The latent trait model \nis the analogous of the factor analysis model for Bernoulli response \ndata. \"ltm\" fits the linear one- and two-factor models but also allows \nfor inclusion of nonlinear latent terms (e.g., interaction and \nquadratic). Any kind of feedback (questions, suggestions, bug-reports, \netc.) is more than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/16/336899\nFax: +32/16/337015\nWeb: http://www.med.kuleuven.ac.be/biostat/\n     http://www.student.kuleuven.ac.be/~m0390867/dimitris.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of my new package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch \nmodel) under the Item Response Theory approach. Th",
+      "thread_id": "thread-db6dad0c645c",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-db6dad0c645c",
+      "message_id": "<002a01c52965$846b7e00$0540210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "02d3646a289a960533732d931746c3db82bff2d5017988028ea5a2fc836d3d26",
+      "date": "2005-03-15T14:47:23+01:00",
+      "subject": "[R-pkgs] New package for latent trait models",
+      "subject_clean": "New package for latent trait models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of my new package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch \nmodel) under the Item Response Theory approach. The latent trait model \nis the analogous of the factor analysis model for Bernoulli response \ndata. \"ltm\" fits the linear one- and two-factor models but also allows \nfor inclusion of nonlinear latent terms (e.g., interaction and \nquadratic). Any kind of feedback (questions, suggestions, bug-reports, \netc.) is more than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/16/336899\nFax: +32/16/337015\nWeb: http://www.med.kuleuven.ac.be/biostat/\n     http://www.student.kuleuven.ac.be/~m0390867/dimitris.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of my new package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch \nmodel) under the Item Response Theory approach. Th",
+      "thread_id": "thread-db6dad0c645c",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-bfa2a68f6a66",
+      "message_id": "<424C6F94.6060706@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2005-03-31T23:45:56+02:00",
+      "subject": "[R-pkgs] version 1.5 of package \"distr\" available",
+      "subject_clean": "version 1.5 of package \"distr\" available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new version (1.5)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges from 1.4 to 1.5\n\n-package is now using /lazy loading/ \n-minor changes in the help pages\n-minor enhancements in plot for distributions \n (Gamma, discrete distributions)\n-package now includes a demo - folder; try /demo(\"distr\")/\n-class /Gamma/ has been renamed /Gammad/ to avoid name collisions\n-we have a CITATION file now; consider /citation(\"distr\")/\n-enhanced demos:\n  +convolution of uniform variables now includes exact expressions\n  +min/max of two variables now available for discrete distributions\n-rd-Files have now a keyword entry for distribution and thus may be\n found by the search engine\n-exact formula for  \"Unif\" o \"numeric\" where o \\in { +,-,*,/ }\n\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\" \nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n-----------------------------------------------------------------------------------------\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.5\nDate: 2005/03/29\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 2.0.1),  (versions for <=2.0.0, on URL cited below),\n         setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:  \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new version (1.5)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges fro",
+      "thread_id": "thread-bfa2a68f6a66",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-bfa2a68f6a66",
+      "message_id": "<424C6F94.6060706@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2005-03-31T23:45:56+02:00",
+      "subject": "[R-pkgs] version 1.5 of package \"distr\" available",
+      "subject_clean": "version 1.5 of package \"distr\" available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of a new version (1.5)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges from 1.4 to 1.5\n\n-package is now using /lazy loading/ \n-minor changes in the help pages\n-minor enhancements in plot for distributions \n (Gamma, discrete distributions)\n-package now includes a demo - folder; try /demo(\"distr\")/\n-class /Gamma/ has been renamed /Gammad/ to avoid name collisions\n-we have a CITATION file now; consider /citation(\"distr\")/\n-enhanced demos:\n  +convolution of uniform variables now includes exact expressions\n  +min/max of two variables now available for discrete distributions\n-rd-Files have now a keyword entry for distribution and thus may be\n found by the search engine\n-exact formula for  \"Unif\" o \"numeric\" where o \\in { +,-,*,/ }\n\n-----------------------------------------------------------------------------------------\nShort Description of \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\" \nis introduced.\nAll distributions of the \"base\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n\nAdditionally, we also provide classes for a standardized treatment of\nsimulations (also under contaminations) and evaluations of statistical\nprocedures on such simulations.\n-----------------------------------------------------------------------------------------\n\n\nDESCRIPTION:\n\nPackage: distr\nVersion: 1.5\nDate: 2005/03/29\nTitle: distr\nAuthors: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>,\nMatthias Kohl <matthias.kohl at uni-bayreuth.de>,\nThomas Stabla <statho3 at web.de>,\nFlorian Camphausen <fcampi at gmx.de>\nMaintainer: Peter Ruckdeschel <peter.ruckdeschel at uni-bayreuth.de>\nDescription: S4 Classes for Distributions\nDepends: R (>= 2.0.1),  (versions for <=2.0.0, on URL cited below),\n         setRNG (>= 2004.3-1)\nLicense: GPL version 2 or later\nURL: http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/\n\nReference:  \nhttp://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR/distr.pdf\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of a new version (1.5)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges fro",
+      "thread_id": "thread-bfa2a68f6a66",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-d85eb16b109a",
+      "message_id": "<20050331221639.5642.qmail@web52703.mail.yahoo.com>",
+      "from_name": "John Hendrickx",
+      "from_email_hash": "367c0578199679bf553426521525a7ba5bb4d491ee1c21697c9b6edbfdfb5dc4",
+      "date": "2005-03-31T14:16:39-08:00",
+      "subject": "[R-pkgs] perturb package for evaluating collinearity",
+      "subject_clean": "perturb package for evaluating collinearity",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I've uploaded the R package \"perturb\" to CRAN. Perturb contains two\nprograms for evaluating collinearity. \"Colldiag\" calculates condition\nindexes and variance decomposition proportions to detect and track\ndown collinear sets of variables. \n\n\"Perturb\" takes a different approach. It re-estimates the model a\nspecified number of times, adding random noise (\"perturbations\") to\nselected variables at each iteration. Categorical variables are\nrandomly reclassified. A summary then displays the impact of these\nperturbations on the stability of the coefficients. Perturb is not\nlimited to linear regression and can handle interaction effects and\ntransformations of independent variables.\n\nVersion 1 of perturb was available from my website. This new version\nmakes it much easier to reclassify categorical variables. In\naddition, colldiag now has a \"fuzz\" option to suppress printing of\nsmall variance decomposition values.\n\nComments and criticisms invited,\nJohn Hendrickx",
+      "body_snippet": "I've uploaded the R package \"perturb\" to CRAN. Perturb contains two\nprograms for evaluating collinearity. \"Colldiag\" calculates condition\nindexes and variance decomposition proportions to detect and t",
+      "thread_id": "thread-d85eb16b109a",
+      "thread_depth": 0,
+      "month": "2005-03"
+    },
+    {
+      "id": "msg-d85eb16b109a",
+      "message_id": "<20050331221639.5642.qmail@web52703.mail.yahoo.com>",
+      "from_name": "John Hendrickx",
+      "from_email_hash": "367c0578199679bf553426521525a7ba5bb4d491ee1c21697c9b6edbfdfb5dc4",
+      "date": "2005-03-31T14:16:39-08:00",
+      "subject": "[R-pkgs] perturb package for evaluating collinearity",
+      "subject_clean": "perturb package for evaluating collinearity",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I've uploaded the R package \"perturb\" to CRAN. Perturb contains two\nprograms for evaluating collinearity. \"Colldiag\" calculates condition\nindexes and variance decomposition proportions to detect and track\ndown collinear sets of variables. \n\n\"Perturb\" takes a different approach. It re-estimates the model a\nspecified number of times, adding random noise (\"perturbations\") to\nselected variables at each iteration. Categorical variables are\nrandomly reclassified. A summary then displays the impact of these\nperturbations on the stability of the coefficients. Perturb is not\nlimited to linear regression and can handle interaction effects and\ntransformations of independent variables.\n\nVersion 1 of perturb was available from my website. This new version\nmakes it much easier to reclassify categorical variables. In\naddition, colldiag now has a \"fuzz\" option to suppress printing of\nsmall variance decomposition values.\n\nComments and criticisms invited,\nJohn Hendrickx",
+      "body_snippet": "I've uploaded the R package \"perturb\" to CRAN. Perturb contains two\nprograms for evaluating collinearity. \"Colldiag\" calculates condition\nindexes and variance decomposition proportions to detect and t",
+      "thread_id": "thread-d85eb16b109a",
+      "thread_depth": 0,
+      "month": "2005-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7cae3ce0de55",
+      "subject": "new package: ResistorArray",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-03-03T09:31:16+00:00",
+      "last_reply": "2005-03-03T09:31:16+00:00",
+      "root_message_id": "msg-7cae3ce0de55"
+    },
+    {
+      "id": "thread-7cae3ce0de55",
+      "subject": "new package: ResistorArray",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-03-03T09:31:16+00:00",
+      "last_reply": "2005-03-03T09:31:16+00:00",
+      "root_message_id": "msg-7cae3ce0de55"
+    },
+    {
+      "id": "thread-59de5181fe4d",
+      "subject": "msm version 0.5 released",
+      "message_count": 1,
+      "participants": [
+        "Chris Jackson"
+      ],
+      "started": "2005-03-09T10:48:48+00:00",
+      "last_reply": "2005-03-09T10:48:48+00:00",
+      "root_message_id": "msg-59de5181fe4d"
+    },
+    {
+      "id": "thread-59de5181fe4d",
+      "subject": "msm version 0.5 released",
+      "message_count": 1,
+      "participants": [
+        "Chris Jackson"
+      ],
+      "started": "2005-03-09T10:48:48+00:00",
+      "last_reply": "2005-03-09T10:48:48+00:00",
+      "root_message_id": "msg-59de5181fe4d"
+    },
+    {
+      "id": "thread-f146558d7c73",
+      "subject": "mgcv 1.2-0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2005-03-11T14:01:06+00:00",
+      "last_reply": "2005-03-11T14:01:06+00:00",
+      "root_message_id": "msg-f146558d7c73"
+    },
+    {
+      "id": "thread-f146558d7c73",
+      "subject": "mgcv 1.2-0",
+      "message_count": 1,
+      "participants": [
+        "Simon Wood"
+      ],
+      "started": "2005-03-11T14:01:06+00:00",
+      "last_reply": "2005-03-11T14:01:06+00:00",
+      "root_message_id": "msg-f146558d7c73"
+    },
+    {
+      "id": "thread-db6dad0c645c",
+      "subject": "New package for latent trait models",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2005-03-15T14:47:23+01:00",
+      "last_reply": "2005-03-15T14:47:23+01:00",
+      "root_message_id": "msg-db6dad0c645c"
+    },
+    {
+      "id": "thread-db6dad0c645c",
+      "subject": "New package for latent trait models",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2005-03-15T14:47:23+01:00",
+      "last_reply": "2005-03-15T14:47:23+01:00",
+      "root_message_id": "msg-db6dad0c645c"
+    },
+    {
+      "id": "thread-d85eb16b109a",
+      "subject": "perturb package for evaluating collinearity",
+      "message_count": 1,
+      "participants": [
+        "John Hendrickx"
+      ],
+      "started": "2005-03-31T14:16:39-08:00",
+      "last_reply": "2005-03-31T14:16:39-08:00",
+      "root_message_id": "msg-d85eb16b109a"
+    },
+    {
+      "id": "thread-d85eb16b109a",
+      "subject": "perturb package for evaluating collinearity",
+      "message_count": 1,
+      "participants": [
+        "John Hendrickx"
+      ],
+      "started": "2005-03-31T14:16:39-08:00",
+      "last_reply": "2005-03-31T14:16:39-08:00",
+      "root_message_id": "msg-d85eb16b109a"
+    },
+    {
+      "id": "thread-bfa2a68f6a66",
+      "subject": "version 1.5 of package \"distr\" available",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2005-03-31T23:45:56+02:00",
+      "last_reply": "2005-03-31T23:45:56+02:00",
+      "root_message_id": "msg-bfa2a68f6a66"
+    },
+    {
+      "id": "thread-bfa2a68f6a66",
+      "subject": "version 1.5 of package \"distr\" available",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2005-03-31T23:45:56+02:00",
+      "last_reply": "2005-03-31T23:45:56+02:00",
+      "root_message_id": "msg-bfa2a68f6a66"
+    }
+  ]
+}

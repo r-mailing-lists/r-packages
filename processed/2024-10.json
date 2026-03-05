@@ -1,0 +1,63 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2024-10",
+  "messages": [
+    {
+      "id": "msg-4c5bba817682",
+      "message_id": "<875xpmyc4p.fsf@enricoschumann.net>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "42e3fbcaa04e968726f4c1d1a69e34143bdbc62b403d112ba1d3712256bacb88",
+      "date": "2024-10-20T18:25:58+02:00",
+      "subject": "[R-pkgs] PMwR 1.0 (Portfolio Management with R)",
+      "subject_clean": "PMwR 1.0 (Portfolio Management with R)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 1.0-1 of package PMwR is on CRAN now.\n\nPMwR stands for 'Portfolio Management with R', and the\npackage provides tools for the practical management of\nfinancial portfolios: backtesting investment and trading\nstrategies, computing profit/loss and returns, analysing\ntrades, handling lists of transactions, reporting, and\nmore.\n\nThe manual [1] provides all the details; a tutorial on\nbacktesting with the package is available on SSRN [2].\n\nComments/corrections/remarks/suggestions are very welcome;\nplease send them to the maintainer (me) directly.\n\nKind regards\n      Enrico\n\n\n\n[1] https://enricoschumann.net/R/packages/PMwR/manual/PMwR.html\n[2] https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3374195\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttps://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 1.0-1 of package PMwR is on CRAN now.\n\nPMwR stands for 'Portfolio Management with R', and the\npackage provides tools for the practical management of\nfinancial portfolios: backtestin",
+      "thread_id": "thread-4c5bba817682",
+      "thread_depth": 0,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-743b64f0dc05",
+      "message_id": "<871q0ayc07.fsf@enricoschumann.net>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "42e3fbcaa04e968726f4c1d1a69e34143bdbc62b403d112ba1d3712256bacb88",
+      "date": "2024-10-20T18:28:40+02:00",
+      "subject": "[R-pkgs] NMOF 2.10-0 (Numerical Methods and Optimization in Finance)",
+      "subject_clean": "NMOF 2.10-0 (Numerical Methods and Optimization in Finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 2.10-0 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization in\nFinance', and it accompanies the book with the same\nname, written by Manfred Gilli, Dietmar Maringer and\nEnrico Schumann.[1]\n\nSince the last announcement on this list in 2021,\nseveral functions have been added to the package, such\nas 'barrierOptionEuropean' for valuing barrier options,\nand function 'minMAD' for computing minimum-MAD\nportfolios.  Also, existing functionality has been\nexpanded. For instance, 'French', which downloads data\nfrom Kenneth French's data library, now supports\nadditional datasets.  See the NEWS file [2] for all\nchanges.  The documentation has also been expanded.\n\nComments/corrections/remarks/suggestions are -- as always --\nvery welcome; please send them to the maintainer (me)\ndirectly.\n\nKind regards\n      Enrico\n\n[1] https://enricoschumann.net/NMOF.htm\n[2] https://enricoschumann.net/R/packages/NMOF/NEWS\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttps://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 2.10-0 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization in\nFinance', and it accompanies the book with the same\nname, written by Manfred Gilli, Di",
+      "thread_id": "thread-743b64f0dc05",
+      "thread_depth": 0,
+      "month": "2024-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4c5bba817682",
+      "subject": "PMwR 1.0 (Portfolio Management with R)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2024-10-20T18:25:58+02:00",
+      "last_reply": "2024-10-20T18:25:58+02:00",
+      "root_message_id": "msg-4c5bba817682"
+    },
+    {
+      "id": "thread-743b64f0dc05",
+      "subject": "NMOF 2.10-0 (Numerical Methods and Optimization in Finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2024-10-20T18:28:40+02:00",
+      "last_reply": "2024-10-20T18:28:40+02:00",
+      "root_message_id": "msg-743b64f0dc05"
+    }
+  ]
+}

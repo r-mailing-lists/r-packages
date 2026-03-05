@@ -1,0 +1,495 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2006-06",
+  "messages": [
+    {
+      "id": "msg-6719475f579c",
+      "message_id": "<200606041410.22352.adi@roda.ro>",
+      "from_name": "Adrian DUSA",
+      "from_email_hash": "c7eb80271393ed831f0ae78107a15bf2f527ce148e6d2808ba6b98398c1130f7",
+      "date": "2006-06-04T14:10:22+03:00",
+      "subject": "[R-pkgs] new package QCAGUI",
+      "subject_clean": "new package QCAGUI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI'm pleased to let you know there's a new package on CRAN called QCAGUI, a \ngraphical user interface for the QCA package.\nThis is a stripped down version of John Fox's Rcmdr package, plus a couple of \nmenus for QCA.\n\nMy thanks to John Fox for his encouragement and advice.\n\nRegards,\nAdrian\n\n-- \nAdrian DUSA\nRomanian Social Data Archive\n1, Schitu Magureanu Bd\n050025 Bucharest sector 5\nRomania\nTel./Fax: +40 21 3126618 \\\n          +40 21 3120210 / int.101",
+      "body_snippet": "Dear list members,\n\nI'm pleased to let you know there's a new package on CRAN called QCAGUI, a \ngraphical user interface for the QCA package.\nThis is a stripped down version of John Fox's Rcmdr packag",
+      "thread_id": "thread-6719475f579c",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-6719475f579c",
+      "message_id": "<200606041410.22352.adi@roda.ro>",
+      "from_name": "Adrian DUSA",
+      "from_email_hash": "c7eb80271393ed831f0ae78107a15bf2f527ce148e6d2808ba6b98398c1130f7",
+      "date": "2006-06-04T14:10:22+03:00",
+      "subject": "[R-pkgs] new package QCAGUI",
+      "subject_clean": "new package QCAGUI",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI'm pleased to let you know there's a new package on CRAN called QCAGUI, a \ngraphical user interface for the QCA package.\nThis is a stripped down version of John Fox's Rcmdr package, plus a couple of \nmenus for QCA.\n\nMy thanks to John Fox for his encouragement and advice.\n\nRegards,\nAdrian\n\n-- \nAdrian DUSA\nRomanian Social Data Archive\n1, Schitu Magureanu Bd\n050025 Bucharest sector 5\nRomania\nTel./Fax: +40 21 3126618 \\\n          +40 21 3120210 / int.101",
+      "body_snippet": "Dear list members,\n\nI'm pleased to let you know there's a new package on CRAN called QCAGUI, a \ngraphical user interface for the QCA package.\nThis is a stripped down version of John Fox's Rcmdr packag",
+      "thread_id": "thread-6719475f579c",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-29c325baa50d",
+      "message_id": "<Pine.LNX.4.64.0606061038340.8514@nokomis.stat.uiowa.edu>",
+      "from_name": "Luke Tierney",
+      "from_email_hash": "a5794212f0450ee86843a234fdc23fdecc67cbd9935fd99e22e36e11b265bf20",
+      "date": "2006-06-06T10:40:03-05:00",
+      "subject": "[R-pkgs] misc3d_0.4-0 now available on CRAN",
+      "subject_clean": "misc3d_0.4-0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 0.4-0 of package misc3d is now available from CRAN.  This\npackage provides a small collection of functions for 3D plotting,\nincluding 'contour3d' for computing and rendering 3D contours or\nisosurfaces and 'parametric3d' for rendering parameterized surfaces.\n\nA major change in this release is that rendering in standard and grid\ngraphics is now supported in addition to rgl.  To support rendering in\nstandard and grid graphics the package includes some functions for\nmanaging and rendering triangle mesh representations of surfaces.\nRendering uses simple lighting and shading algorithms to represent 3D\nstructure.  The examples in\n\n    example(contour3d)\n    example(parametric3d)\n    demo(lighting)\n    demo(teapot)\n\nillustrate some of the features.\n\nDai Feng and Luke Tierney\n\n\n\n-- \nLuke Tierney\nChair, Statistics and Actuarial Science\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:      luke at stat.uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
+      "body_snippet": "Release 0.4-0 of package misc3d is now available from CRAN.  This\npackage provides a small collection of functions for 3D plotting,\nincluding 'contour3d' for computing and rendering 3D contours or\niso",
+      "thread_id": "thread-29c325baa50d",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-29c325baa50d",
+      "message_id": "<Pine.LNX.4.64.0606061038340.8514@nokomis.stat.uiowa.edu>",
+      "from_name": "Luke Tierney",
+      "from_email_hash": "a5794212f0450ee86843a234fdc23fdecc67cbd9935fd99e22e36e11b265bf20",
+      "date": "2006-06-06T10:40:03-05:00",
+      "subject": "[R-pkgs] misc3d_0.4-0 now available on CRAN",
+      "subject_clean": "misc3d_0.4-0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Release 0.4-0 of package misc3d is now available from CRAN.  This\npackage provides a small collection of functions for 3D plotting,\nincluding 'contour3d' for computing and rendering 3D contours or\nisosurfaces and 'parametric3d' for rendering parameterized surfaces.\n\nA major change in this release is that rendering in standard and grid\ngraphics is now supported in addition to rgl.  To support rendering in\nstandard and grid graphics the package includes some functions for\nmanaging and rendering triangle mesh representations of surfaces.\nRendering uses simple lighting and shading algorithms to represent 3D\nstructure.  The examples in\n\n    example(contour3d)\n    example(parametric3d)\n    demo(lighting)\n    demo(teapot)\n\nillustrate some of the features.\n\nDai Feng and Luke Tierney\n\n\n\n-- \nLuke Tierney\nChair, Statistics and Actuarial Science\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:      luke at stat.uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
+      "body_snippet": "Release 0.4-0 of package misc3d is now available from CRAN.  This\npackage provides a small collection of functions for 3D plotting,\nincluding 'contour3d' for computing and rendering 3D contours or\niso",
+      "thread_id": "thread-29c325baa50d",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-d0b37398b84a",
+      "message_id": "<20060606233146.6bfd068f.Achim.Zeileis@R-project.org>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2006-06-06T23:31:46+02:00",
+      "subject": "[R-pkgs] zoo: new version 1.1-0",
+      "subject_clean": "zoo: new version 1.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI've just uploaded the new version 1.1-0 of the zoo package for dealing\nwith regular and irregular time series data to the main CRAN site.\nSource and binary packages should be available from the mirrors in the\nnext days.\n\nThere are two changes that are nut fully backwards compatible:\n  - The package now has a NAMESPACE and most S3 methods are not exported\n    explicitely anymore. If some function needs to be exported for\n    useRs/developeRs of other packages, please let us know.\n  - By default read.zoo() does not try to produce regular series\n    anymore. The previous version could result in misleading\n    computations for daily financial data, affecting especially also the\n    zoo-quickref vignette. (Thanks to Ajay Shah for pointing this out.)\n    The old behaviour can be restored by setting `regular = TRUE'.\n\nFor general introductions to the package see:\n  vignette(\"zoo\", package = \"zoo\")\n  vignette(\"zoo-quickref\", package = \"zoo\")\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nI've just uploaded the new version 1.1-0 of the zoo package for dealing\nwith regular and irregular time series data to the main CRAN site.\nSource and binary packages should be available f",
+      "thread_id": "thread-d0b37398b84a",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-d0b37398b84a",
+      "message_id": "<20060606233146.6bfd068f.Achim.Zeileis@R-project.org>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2006-06-06T23:31:46+02:00",
+      "subject": "[R-pkgs] zoo: new version 1.1-0",
+      "subject_clean": "zoo: new version 1.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nI've just uploaded the new version 1.1-0 of the zoo package for dealing\nwith regular and irregular time series data to the main CRAN site.\nSource and binary packages should be available from the mirrors in the\nnext days.\n\nThere are two changes that are nut fully backwards compatible:\n  - The package now has a NAMESPACE and most S3 methods are not exported\n    explicitely anymore. If some function needs to be exported for\n    useRs/developeRs of other packages, please let us know.\n  - By default read.zoo() does not try to produce regular series\n    anymore. The previous version could result in misleading\n    computations for daily financial data, affecting especially also the\n    zoo-quickref vignette. (Thanks to Ajay Shah for pointing this out.)\n    The old behaviour can be restored by setting `regular = TRUE'.\n\nFor general introductions to the package see:\n  vignette(\"zoo\", package = \"zoo\")\n  vignette(\"zoo-quickref\", package = \"zoo\")\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nI've just uploaded the new version 1.1-0 of the zoo package for dealing\nwith regular and irregular time series data to the main CRAN site.\nSource and binary packages should be available f",
+      "thread_id": "thread-d0b37398b84a",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-231809a2973b",
+      "message_id": "<17544.18520.122208.384189@stat.math.ethz.ch>",
+      "from_name": "Markus Kalisch",
+      "from_email_hash": "b095aa55a6b8c74054fbfd372bd9b781cfbe4de188fb5160a5f5dd5e2b5f01eb",
+      "date": "2006-06-08T17:55:04+02:00",
+      "subject": "[R-pkgs] New R package \"pcalg\"",
+      "subject_clean": "New R package \"pcalg\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The R package \"pcalg\" is released.\n\nThe main purpose of this package is to estimate the skeleton of\na DAG given data sampled from a distribution corresponding to\nthis DAG.\n\nMore intuitively, you can search for \"strong dependencies\" in\npotentially high dimensional data sets. The result will be an\nundirected graph where each edge represents some dependence\nstatement. Optionally, the line width can be varied in order to indicate the\nreliability of the dependencies found.\n\nFor more details have a look at the vignette.\n\nI'd be happy to receive comments and suggestions for improvement.",
+      "body_snippet": "The R package \"pcalg\" is released.\n\nThe main purpose of this package is to estimate the skeleton of\na DAG given data sampled from a distribution corresponding to\nthis DAG.\n\nMore intuitively, you can s",
+      "thread_id": "thread-231809a2973b",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-231809a2973b",
+      "message_id": "<17544.18520.122208.384189@stat.math.ethz.ch>",
+      "from_name": "Markus Kalisch",
+      "from_email_hash": "b095aa55a6b8c74054fbfd372bd9b781cfbe4de188fb5160a5f5dd5e2b5f01eb",
+      "date": "2006-06-08T17:55:04+02:00",
+      "subject": "[R-pkgs] New R package \"pcalg\"",
+      "subject_clean": "New R package \"pcalg\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The R package \"pcalg\" is released.\n\nThe main purpose of this package is to estimate the skeleton of\na DAG given data sampled from a distribution corresponding to\nthis DAG.\n\nMore intuitively, you can search for \"strong dependencies\" in\npotentially high dimensional data sets. The result will be an\nundirected graph where each edge represents some dependence\nstatement. Optionally, the line width can be varied in order to indicate the\nreliability of the dependencies found.\n\nFor more details have a look at the vignette.\n\nI'd be happy to receive comments and suggestions for improvement.",
+      "body_snippet": "The R package \"pcalg\" is released.\n\nThe main purpose of this package is to estimate the skeleton of\na DAG given data sampled from a distribution corresponding to\nthis DAG.\n\nMore intuitively, you can s",
+      "thread_id": "thread-231809a2973b",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-e8d5ff5667ae",
+      "message_id": "<E1FppRA-0006Uv-00@DMjcadima>",
+      "from_name": "Jorge Cadima",
+      "from_email_hash": "321befb59b42836a6470f17bc366cd8d3c3ef42f9db619d233fc1305031efbfb",
+      "date": "2006-06-12T17:38:48+01:00",
+      "subject": "[R-pkgs] New version of Subselect package",
+      "subject_clean": "New version of Subselect package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Search algorithms include a full search algorithm \"leaps\",\nbased on Furnival and Wilson's leaps and bounds algorithm, and three\nrandom search algorithms: a genetic algorithm (\"genetic\"), a simulated\nannealing algorithm (\"anneal\") and a modified local search algorithm\n(\"improve\"). Previous versions of subselect had three criteria for\noptimality (\"rm\", \"rv\" and \"gcd\"), based on exploratory data analysis\nconsiderations. This new version adds four new criteria (\"tau2\",\n\"zeta2\", \"xi2\" and \"ccr12\"), associated with the multivariate linear\nhypothesis and the well-known test statistics for that hypothesis\n(Wilks' lambda, Roy's largest root, Pillai's trace and the\nHotelling-Lawley statistic). Subselect 0.9-99 also includes two\nfunctions that prepare the arguments for the search functions\nassociated with the new criteria in the most frequent contexts of\napplication of the multivariate linear hypothesis - linear regression\n(function \"lmHmat\") and linear discriminant analysis (\"ldaHmat\") - as\nwell as another function (\"glhHmat\") that prepares these arguments for\nan analysis associated with a hypothesis specified by the user. The\npackage documentation includes numerous examples.  \n\nFeedback is appreciated.\n\nBest regards,\nJorge Cadima\n\n\n-- \nJorge Cadima\nDepartamento de Matem?tica\nInstituto Superior de Agronomia\nUniversidade T?cnica de Lisboa\nTapada da Ajuda\n1349-017 Lisboa\nPortugal\n\ne-mail: jcadima at isa.utl.pt\nphone: +351 21 365 3317\nfax: +351 21 363 07 23",
+      "body_snippet": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Sea",
+      "thread_id": "thread-e8d5ff5667ae",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-e8d5ff5667ae",
+      "message_id": "<E1FppRA-0006Uv-00@DMjcadima>",
+      "from_name": "Jorge Cadima",
+      "from_email_hash": "321befb59b42836a6470f17bc366cd8d3c3ef42f9db619d233fc1305031efbfb",
+      "date": "2006-06-12T17:38:48+01:00",
+      "subject": "[R-pkgs] New version of Subselect package",
+      "subject_clean": "New version of Subselect package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Search algorithms include a full search algorithm \"leaps\",\nbased on Furnival and Wilson's leaps and bounds algorithm, and three\nrandom search algorithms: a genetic algorithm (\"genetic\"), a simulated\nannealing algorithm (\"anneal\") and a modified local search algorithm\n(\"improve\"). Previous versions of subselect had three criteria for\noptimality (\"rm\", \"rv\" and \"gcd\"), based on exploratory data analysis\nconsiderations. This new version adds four new criteria (\"tau2\",\n\"zeta2\", \"xi2\" and \"ccr12\"), associated with the multivariate linear\nhypothesis and the well-known test statistics for that hypothesis\n(Wilks' lambda, Roy's largest root, Pillai's trace and the\nHotelling-Lawley statistic). Subselect 0.9-99 also includes two\nfunctions that prepare the arguments for the search functions\nassociated with the new criteria in the most frequent contexts of\napplication of the multivariate linear hypothesis - linear regression\n(function \"lmHmat\") and linear discriminant analysis (\"ldaHmat\") - as\nwell as another function (\"glhHmat\") that prepares these arguments for\nan analysis associated with a hypothesis specified by the user. The\npackage documentation includes numerous examples.  \n\nFeedback is appreciated.\n\nBest regards,\nJorge Cadima\n\n\n-- \nJorge Cadima\nDepartamento de Matem?tica\nInstituto Superior de Agronomia\nUniversidade T?cnica de Lisboa\nTapada da Ajuda\n1349-017 Lisboa\nPortugal\n\ne-mail: jcadima at isa.utl.pt\nphone: +351 21 365 3317\nfax: +351 21 363 07 23",
+      "body_snippet": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Sea",
+      "thread_id": "thread-e8d5ff5667ae",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-4af4e08e2d65",
+      "message_id": "<44A27928.7090105@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2006-06-28T14:42:16+02:00",
+      "subject": "[R-pkgs] New version of eha",
+      "subject_clean": "New version of eha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit null \nmodels (i.e., only scale and shape) and covariates are no longer \nautomatically centered (although this is still the default), (iii) there \nis a new function, 'toBinary', which transforms a data frame suitable \nfor survival analysis to a data frame suitable for ,eg, logistic \nregression as a substitute for a discrete time cox regression. In the \nprocess, sampling of survivors in risk sets is possible.\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_snippet": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit",
+      "thread_id": "thread-4af4e08e2d65",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-4af4e08e2d65",
+      "message_id": "<44A27928.7090105@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2006-06-28T14:42:16+02:00",
+      "subject": "[R-pkgs] New version of eha",
+      "subject_clean": "New version of eha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit null \nmodels (i.e., only scale and shape) and covariates are no longer \nautomatically centered (although this is still the default), (iii) there \nis a new function, 'toBinary', which transforms a data frame suitable \nfor survival analysis to a data frame suitable for ,eg, logistic \nregression as a substitute for a discrete time cox regression. In the \nprocess, sampling of survivors in risk sets is possible.\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_snippet": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit",
+      "thread_id": "thread-4af4e08e2d65",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-cdafc6c06e80",
+      "message_id": "<44A27ACE.1050301@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2006-06-28T14:49:18+02:00",
+      "subject": "[R-pkgs] New version of glmmML (p-values!)",
+      "subject_clean": "New version of glmmML (p-values!)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is zero, on \nthe wishlist of many R users these days! Note two things: (i) glmmML \nonly treats random intercepts for binomial and poisson models, (ii) the \np-value is calculated thru bootstrapping (can be slow with large data sets).\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_snippet": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is z",
+      "thread_id": "thread-cdafc6c06e80",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-cdafc6c06e80",
+      "message_id": "<44A27ACE.1050301@stat.umu.se>",
+      "from_name": "Göran Broström",
+      "from_email_hash": "a5c32d25a912fd2e7d07bfdf35a470dbdd4bb162dffcf7d688b64aeeb247d678",
+      "date": "2006-06-28T14:49:18+02:00",
+      "subject": "[R-pkgs] New version of glmmML (p-values!)",
+      "subject_clean": "New version of glmmML (p-values!)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is zero, on \nthe wishlist of many R users these days! Note two things: (i) glmmML \nonly treats random intercepts for binomial and poisson models, (ii) the \np-value is calculated thru bootstrapping (can be slow with large data sets).\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_snippet": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is z",
+      "thread_id": "thread-cdafc6c06e80",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-a24351f65475",
+      "message_id": "<461D139C576A2C49B0C4720EF89EC164016D2D33@smmail4.rand.org>",
+      "from_name": "Ridgeway, Greg",
+      "from_email_hash": "b12cfb043a5966f8848f8e40f9b9253a016be699e0d7afb394a507a7ca35736b",
+      "date": "2006-06-29T13:50:20-07:00",
+      "subject": "[R-pkgs] twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "subject_clean": "twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The Toolkit for Weighting and Analysis of Nonequivalent Groups (twang\n1.0) has been released to CRAN. The package collects functions useful\nfor computing propensity score weights for treatment effect estimation,\ndeveloping nonresponse weights, and diagnosing the quality of those\nweights. The package includes a vignette containing some basic theory\nand walks through two examples. It is available by typing\nvignette(\"twang\")\nat the R prompt after loading the library.\n\nBackground on the methodology with an application to evaluating drug\ntreatment programs is available in\n\nMcCaffrey, D., G. Ridgeway, A. Morral (2004). \"Propensity score\nestimation with boosted regression for evaluating adolescent substance\nabuse treatment,\" Psychological Methods 9(4):403-425.\n\n\n--------------------\n\nThis email message is for the sole use of the intended recip...{{dropped}}",
+      "body_snippet": "The Toolkit for Weighting and Analysis of Nonequivalent Groups (twang\n1.0) has been released to CRAN. The package collects functions useful\nfor computing propensity score weights for treatment effect ",
+      "thread_id": "thread-a24351f65475",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-a24351f65475",
+      "message_id": "<461D139C576A2C49B0C4720EF89EC164016D2D33@smmail4.rand.org>",
+      "from_name": "Ridgeway, Greg",
+      "from_email_hash": "b12cfb043a5966f8848f8e40f9b9253a016be699e0d7afb394a507a7ca35736b",
+      "date": "2006-06-29T13:50:20-07:00",
+      "subject": "[R-pkgs] twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "subject_clean": "twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The Toolkit for Weighting and Analysis of Nonequivalent Groups (twang\n1.0) has been released to CRAN. The package collects functions useful\nfor computing propensity score weights for treatment effect estimation,\ndeveloping nonresponse weights, and diagnosing the quality of those\nweights. The package includes a vignette containing some basic theory\nand walks through two examples. It is available by typing\nvignette(\"twang\")\nat the R prompt after loading the library.\n\nBackground on the methodology with an application to evaluating drug\ntreatment programs is available in\n\nMcCaffrey, D., G. Ridgeway, A. Morral (2004). \"Propensity score\nestimation with boosted regression for evaluating adolescent substance\nabuse treatment,\" Psychological Methods 9(4):403-425.\n\n\n--------------------\n\nThis email message is for the sole use of the intended recip...{{dropped}}",
+      "body_snippet": "The Toolkit for Weighting and Analysis of Nonequivalent Groups (twang\n1.0) has been released to CRAN. The package collects functions useful\nfor computing propensity score weights for treatment effect ",
+      "thread_id": "thread-a24351f65475",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-f4a9c2fad518",
+      "message_id": "<20060629230715.60733488@localhost.localdomain>",
+      "from_name": "Antoine",
+      "from_email_hash": "54cb78c512c95d4b4c7bb62e81f31fac8e50c5443165c5df6052684f958c241f",
+      "date": "2006-06-29T23:07:15+02:00",
+      "subject": "[R-pkgs] gmp: bigintegers with matrix computation",
+      "subject_clean": "gmp: bigintegers with matrix computation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\ngmp package is now available on cran with version 0.4\n\nAim of gmp is to provide a lot a function to manipulate big integers, big rationals and last but not least big integers in Z/nZ (modulo n)\n\nWe add in last version support for matrix computation (standards operators, + * - / %*% ...) and inversion matrix (solve):\n\tin Z/nZ if matrix defined in Z/nZ\n\twith rationals (absolute precision) if not.\n\nBest Regards,\n\n\tAntoine Lucas.",
+      "body_snippet": "Dear all,\n\ngmp package is now available on cran with version 0.4\n\nAim of gmp is to provide a lot a function to manipulate big integers, big rationals and last but not least big integers in Z/nZ (modul",
+      "thread_id": "thread-f4a9c2fad518",
+      "thread_depth": 0,
+      "month": "2006-06"
+    },
+    {
+      "id": "msg-f4a9c2fad518",
+      "message_id": "<20060629230715.60733488@localhost.localdomain>",
+      "from_name": "Antoine",
+      "from_email_hash": "54cb78c512c95d4b4c7bb62e81f31fac8e50c5443165c5df6052684f958c241f",
+      "date": "2006-06-29T23:07:15+02:00",
+      "subject": "[R-pkgs] gmp: bigintegers with matrix computation",
+      "subject_clean": "gmp: bigintegers with matrix computation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\ngmp package is now available on cran with version 0.4\n\nAim of gmp is to provide a lot a function to manipulate big integers, big rationals and last but not least big integers in Z/nZ (modulo n)\n\nWe add in last version support for matrix computation (standards operators, + * - / %*% ...) and inversion matrix (solve):\n\tin Z/nZ if matrix defined in Z/nZ\n\twith rationals (absolute precision) if not.\n\nBest Regards,\n\n\tAntoine Lucas.",
+      "body_snippet": "Dear all,\n\ngmp package is now available on cran with version 0.4\n\nAim of gmp is to provide a lot a function to manipulate big integers, big rationals and last but not least big integers in Z/nZ (modul",
+      "thread_id": "thread-f4a9c2fad518",
+      "thread_depth": 0,
+      "month": "2006-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6719475f579c",
+      "subject": "new package QCAGUI",
+      "message_count": 1,
+      "participants": [
+        "Adrian DUSA"
+      ],
+      "started": "2006-06-04T14:10:22+03:00",
+      "last_reply": "2006-06-04T14:10:22+03:00",
+      "root_message_id": "msg-6719475f579c"
+    },
+    {
+      "id": "thread-6719475f579c",
+      "subject": "new package QCAGUI",
+      "message_count": 1,
+      "participants": [
+        "Adrian DUSA"
+      ],
+      "started": "2006-06-04T14:10:22+03:00",
+      "last_reply": "2006-06-04T14:10:22+03:00",
+      "root_message_id": "msg-6719475f579c"
+    },
+    {
+      "id": "thread-29c325baa50d",
+      "subject": "misc3d_0.4-0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Luke Tierney"
+      ],
+      "started": "2006-06-06T10:40:03-05:00",
+      "last_reply": "2006-06-06T10:40:03-05:00",
+      "root_message_id": "msg-29c325baa50d"
+    },
+    {
+      "id": "thread-29c325baa50d",
+      "subject": "misc3d_0.4-0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Luke Tierney"
+      ],
+      "started": "2006-06-06T10:40:03-05:00",
+      "last_reply": "2006-06-06T10:40:03-05:00",
+      "root_message_id": "msg-29c325baa50d"
+    },
+    {
+      "id": "thread-d0b37398b84a",
+      "subject": "zoo: new version 1.1-0",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2006-06-06T23:31:46+02:00",
+      "last_reply": "2006-06-06T23:31:46+02:00",
+      "root_message_id": "msg-d0b37398b84a"
+    },
+    {
+      "id": "thread-d0b37398b84a",
+      "subject": "zoo: new version 1.1-0",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2006-06-06T23:31:46+02:00",
+      "last_reply": "2006-06-06T23:31:46+02:00",
+      "root_message_id": "msg-d0b37398b84a"
+    },
+    {
+      "id": "thread-231809a2973b",
+      "subject": "New R package \"pcalg\"",
+      "message_count": 1,
+      "participants": [
+        "Markus Kalisch"
+      ],
+      "started": "2006-06-08T17:55:04+02:00",
+      "last_reply": "2006-06-08T17:55:04+02:00",
+      "root_message_id": "msg-231809a2973b"
+    },
+    {
+      "id": "thread-231809a2973b",
+      "subject": "New R package \"pcalg\"",
+      "message_count": 1,
+      "participants": [
+        "Markus Kalisch"
+      ],
+      "started": "2006-06-08T17:55:04+02:00",
+      "last_reply": "2006-06-08T17:55:04+02:00",
+      "root_message_id": "msg-231809a2973b"
+    },
+    {
+      "id": "thread-e8d5ff5667ae",
+      "subject": "New version of Subselect package",
+      "message_count": 1,
+      "participants": [
+        "Jorge Cadima"
+      ],
+      "started": "2006-06-12T17:38:48+01:00",
+      "last_reply": "2006-06-12T17:38:48+01:00",
+      "root_message_id": "msg-e8d5ff5667ae"
+    },
+    {
+      "id": "thread-e8d5ff5667ae",
+      "subject": "New version of Subselect package",
+      "message_count": 1,
+      "participants": [
+        "Jorge Cadima"
+      ],
+      "started": "2006-06-12T17:38:48+01:00",
+      "last_reply": "2006-06-12T17:38:48+01:00",
+      "root_message_id": "msg-e8d5ff5667ae"
+    },
+    {
+      "id": "thread-4af4e08e2d65",
+      "subject": "New version of eha",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2006-06-28T14:42:16+02:00",
+      "last_reply": "2006-06-28T14:42:16+02:00",
+      "root_message_id": "msg-4af4e08e2d65"
+    },
+    {
+      "id": "thread-4af4e08e2d65",
+      "subject": "New version of eha",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2006-06-28T14:42:16+02:00",
+      "last_reply": "2006-06-28T14:42:16+02:00",
+      "root_message_id": "msg-4af4e08e2d65"
+    },
+    {
+      "id": "thread-cdafc6c06e80",
+      "subject": "New version of glmmML (p-values!)",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2006-06-28T14:49:18+02:00",
+      "last_reply": "2006-06-28T14:49:18+02:00",
+      "root_message_id": "msg-cdafc6c06e80"
+    },
+    {
+      "id": "thread-cdafc6c06e80",
+      "subject": "New version of glmmML (p-values!)",
+      "message_count": 1,
+      "participants": [
+        "Göran Broström"
+      ],
+      "started": "2006-06-28T14:49:18+02:00",
+      "last_reply": "2006-06-28T14:49:18+02:00",
+      "root_message_id": "msg-cdafc6c06e80"
+    },
+    {
+      "id": "thread-a24351f65475",
+      "subject": "twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "message_count": 1,
+      "participants": [
+        "Ridgeway, Greg"
+      ],
+      "started": "2006-06-29T13:50:20-07:00",
+      "last_reply": "2006-06-29T13:50:20-07:00",
+      "root_message_id": "msg-a24351f65475"
+    },
+    {
+      "id": "thread-a24351f65475",
+      "subject": "twang - Toolkit for Weighting and Analysis of Nonequivalent Groups",
+      "message_count": 1,
+      "participants": [
+        "Ridgeway, Greg"
+      ],
+      "started": "2006-06-29T13:50:20-07:00",
+      "last_reply": "2006-06-29T13:50:20-07:00",
+      "root_message_id": "msg-a24351f65475"
+    },
+    {
+      "id": "thread-f4a9c2fad518",
+      "subject": "gmp: bigintegers with matrix computation",
+      "message_count": 1,
+      "participants": [
+        "Antoine"
+      ],
+      "started": "2006-06-29T23:07:15+02:00",
+      "last_reply": "2006-06-29T23:07:15+02:00",
+      "root_message_id": "msg-f4a9c2fad518"
+    },
+    {
+      "id": "thread-f4a9c2fad518",
+      "subject": "gmp: bigintegers with matrix computation",
+      "message_count": 1,
+      "participants": [
+        "Antoine"
+      ],
+      "started": "2006-06-29T23:07:15+02:00",
+      "last_reply": "2006-06-29T23:07:15+02:00",
+      "root_message_id": "msg-f4a9c2fad518"
+    }
+  ]
+}

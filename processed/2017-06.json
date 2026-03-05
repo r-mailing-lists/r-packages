@@ -1,0 +1,146 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2017-06",
+  "messages": [
+    {
+      "id": "msg-e584d9a9ddee",
+      "message_id": "<CAAiuAp=BEoGcjEE=pngo4Z7hrK-+2ZVLaXaQn1KJ_JjxZ=TN+A@mail.gmail.com>",
+      "from_name": "Shaun Wilkinson",
+      "from_email_hash": "bd81cf48d16be285db08e10961cdf2b8d7bc86b2a037ebd2d12373a26764ea32",
+      "date": "2017-06-19T15:20:04+09:00",
+      "subject": "[R-pkgs] New package: phylogram",
+      "subject_clean": "New package: phylogram",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\nI'd like to introduce a new R package called *phylogram,* for working with\nevolutionary trees as deeply-nested lists known as \"dendrogram\" objects.\n\nThe package provides functions for importing and exporting phylogenetic\ntrees in the Newick parenthetic text format, as well as several functions\nfor command-line tree manipulation.\n\nWith an emphasis on speed and computational efficiency, the *phylogram* package\nalso includes tools for rapidly computing distance matrices, and building\nlarge trees using fast alignment-free k-mer counting and divisive\nclustering. While not guaranteed to produce sufficiently accurate\nphylogenetic trees for taxonomic purposes, this offers an efficient means\nof clustering large trees for a variety of other applications including\ntree-based sequence weighting, guide trees for progressive multiple\nsequence alignment, and other recursive operations such as classification\ntree learning.\n\nAny feedback is warmly welcomed.\n\nvignette:\nhttps://cran.r-project.org/web/packages/phylogram/vignettes/phylogram-vignette.html\ndevelopment version: https://github.com/shaunpwilkinson/phylogram\nbug reports: https://github.com/shaunpwilkinson/phylogram/issues\ngoogle group:  https://groups.google.com/group/phylogram\n\nBest regards,\nShaun Wilkinson\n\nEmail: shaunpwilkinson at gmail.com\nTwitter: @wilkinshau\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\nI'd like to introduce a new R package called *phylogram,* for working with\nevolutionary trees as deeply-nested lists known as \"dendrogram\" objects.\n\nThe package provides functions for import",
+      "thread_id": "thread-e584d9a9ddee",
+      "thread_depth": 0,
+      "month": "2017-06"
+    },
+    {
+      "id": "msg-0241f65dd402",
+      "message_id": "<903D714CE6472F47A170461900DF9C874E19B20D@PPEXCHDC01.pp.local>",
+      "from_name": "Marco Nijmeijer",
+      "from_email_hash": "b6a9f8b0e816adae228f7ea3ba495396a0b5e81ca3d05293ef5ac3e978ea1bf6",
+      "date": "2017-06-20T13:21:21Z",
+      "subject": "[R-pkgs] lmvar",
+      "subject_clean": "lmvar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package 'lmvar' (https://CRAN.R-project.org/package=lmvar) fits a model which is linear in the expected value and log-linear in the variance. The fit is like the classical linear fit implemented in 'lm' but lifts the assumption of a constant variance which is implicit in 'lm'. Instead, different observations can have different variances.\n\nThe package comes with utility functions known also for 'lm' objects. Examples are the functions summary, coef, fitted, predict, vcov,  and AIC. To facilitate analysis, there is a function to carry out cross-validations. The vignette 'Introduction to the package' provides an introduction, the vignette 'Math details' provides  mathematical background.\n\nVersion 1.2.1 is now available. Please send bugs, requests and comments to the package maintainer.\n\nRegards,\nMarco Nijmeijer\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The package 'lmvar' (https://CRAN.R-project.org/package=lmvar) fits a model which is linear in the expected value and log-linear in the variance. The fit is like the classical linear fit implemented i",
+      "thread_id": "thread-0241f65dd402",
+      "thread_depth": 0,
+      "month": "2017-06"
+    },
+    {
+      "id": "msg-763ae4dba520",
+      "message_id": "<44efc443-a00e-41fc-b213-94ce411cb66a@inra.fr>",
+      "from_name": "Yann Desjeux",
+      "from_email_hash": "79b815241cb26507157a083aa2c883cee0286e59ca8e6e8b2e2b14127ae6d2c2",
+      "date": "2017-06-21T17:26:29+02:00",
+      "subject": "[R-pkgs] New R package on CRAN: sfadv (v 1.0.1)",
+      "subject_clean": "New R package on CRAN: sfadv (v 1.0.1)",
+      "in_reply_to": "<02810bae-1a85-a4be-eece-d3a01c9f15c2@inra.fr>",
+      "references": [
+        "<02810bae-1a85-a4be-eece-d3a01c9f15c2@inra.fr>"
+      ],
+      "body_plain": "Dear R users,\n\n\nI am happy to announce that the R package 'sfadv: Advanced Methods for \nStochastic Frontier Analysis' is now available on CRAN \n(https://CRAN.R-project.org/package=sfadv).\n\nThis package allows stochastic frontier analysis with advanced methods.\nParticularly it implements newly developped method proposed by Latruffe \net al. (2017) <doi:10.1093/ajae/aaw077> considering stochastic frontier \nanalysis with technical inefficiency effects and endogeneity of one input.\n\nBest regards,\n\nYann",
+      "body_snippet": "Dear R users,\n\n\nI am happy to announce that the R package 'sfadv: Advanced Methods for \nStochastic Frontier Analysis' is now available on CRAN \n(https://CRAN.R-project.org/package=sfadv).\n\nThis packag",
+      "thread_id": "thread-763ae4dba520",
+      "thread_depth": 0,
+      "month": "2017-06"
+    },
+    {
+      "id": "msg-4f73360c9812",
+      "message_id": "<CAEPY8Cb_fcBu3eHD0DqctKag96KOs-_RPzGtaiSofv2m41zorQ@mail.gmail.com>",
+      "from_name": "Peter Straka",
+      "from_email_hash": "3226c3f05bb2477c43e35dc9583acb1943d4acc533176dd873beaab295a92d62",
+      "date": "2017-06-26T19:02:40+10:00",
+      "subject": "[R-pkgs] New R package MittagLeffleR",
+      "subject_clean": "New R package MittagLeffleR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\napologies for interrupting your important work.\n\nThe new R package MittagLeffleR is now available on CRAN. It computes the\ntwo types of Mittag-Leffler distributions, i.e. provides probability\ndensity, distribution function, quantile function and random variate\ngeneration for the Mittag-Leffler distributions, and the Mittag-Leffler\nfunction itself. It is based on the Laplace-inversion algorithm by\nGarrappa, R. (2015).\n\nThe first type of Mittag-Leffler distribution is geometric stable, (very)\nheavy-tailed and typically models event durations (e.g. for earthquakes and\nsolar flares).\n\nThe second type is \"inverse\" to the sum-stable distribution, and typically\nmodels the number of events when the waiting times between events are\nheavy-tailed (a heavy-tailed renewal process).\n\nFor two examples, see https://strakaps.github.io/2017/06/26/mittagleffler/\n\nPlease report issues and bugs at\nhttps://github.com/strakaps/MittagLeffleR/issues\n\nVignettes:\n- plots of CDF and PDF:\nhttps://cran.r-project.org/web/packages/MittagLeffleR/vignettes/MLdist.html\n- random variable generation:\nhttps://cran.r-project.org/web/packages/MittagLeffleR/vignettes/parametrisation.html\n- calculation of quantiles:\nhttps://cran.r-project.org/web/packages/MittagLeffleR/vignettes/probsNquantiles.html\n\nThanks!\n-- \n* Dr Peter Straka*\n*Research Fellow (DECRA), School of Physical Engineering and Mathematical\nSciences*\n\nUNSW Canberra\nCampbell ACT 2600 Australia\n\nH: strakaps.github.io\nE: p.straka at unsw.edu.au\nORCID: orcid.org/0000-0003-1735-4676\nSkype + Google Hangouts: straka.ps\nCRICOS Provider Code 00098G\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\napologies for interrupting your important work.\n\nThe new R package MittagLeffleR is now available on CRAN. It computes the\ntwo types of Mittag-Leffler distributions, i.e. provides probabili",
+      "thread_id": "thread-4f73360c9812",
+      "thread_depth": 0,
+      "month": "2017-06"
+    },
+    {
+      "id": "msg-b751c0257947",
+      "message_id": "<CAOfWXX7m5-1WPXUzLaMOw8vPMxRfh7MKKm93dysSxNpc8uU30w@mail.gmail.com>",
+      "from_name": "William Brannon",
+      "from_email_hash": "d164a3a2ab6915c18d96938e54b7b061d8ec1f6e46e07b8bb0931c6a7070bfda",
+      "date": "2017-06-26T15:18:54-04:00",
+      "subject": "[R-pkgs] Announcing sqlscore",
+      "subject_clean": "Announcing sqlscore",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi useRs,\n\nI'm happy to announce package sqlscore, which just saw version 0.1.2\nreleased to CRAN. (It was first released earlier this year, but I didn't\nnotify this list at the time.)\n\nAs the DESCRIPTION file puts it, this package \"[p]rovides utilities for\ngenerating SQL queries (particularly CREATE TABLE statements) from R model\nobjects. The most important use case is generating SQL to score a\ngeneralized linear model or related model represented as an R object, in\nwhich case the package handles parsing formula operators and including the\nmodel's response function.\" It's intended to ease scoring of very large\ndatasets and those it would be difficult to read into memory.\n\nCheers\nWill\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi useRs,\n\nI'm happy to announce package sqlscore, which just saw version 0.1.2\nreleased to CRAN. (It was first released earlier this year, but I didn't\nnotify this list at the time.)\n\nAs the DESCRIPT",
+      "thread_id": "thread-b751c0257947",
+      "thread_depth": 0,
+      "month": "2017-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e584d9a9ddee",
+      "subject": "New package: phylogram",
+      "message_count": 1,
+      "participants": [
+        "Shaun Wilkinson"
+      ],
+      "started": "2017-06-19T15:20:04+09:00",
+      "last_reply": "2017-06-19T15:20:04+09:00",
+      "root_message_id": "msg-e584d9a9ddee"
+    },
+    {
+      "id": "thread-0241f65dd402",
+      "subject": "lmvar",
+      "message_count": 1,
+      "participants": [
+        "Marco Nijmeijer"
+      ],
+      "started": "2017-06-20T13:21:21+00:00",
+      "last_reply": "2017-06-20T13:21:21+00:00",
+      "root_message_id": "msg-0241f65dd402"
+    },
+    {
+      "id": "thread-763ae4dba520",
+      "subject": "New R package on CRAN: sfadv (v 1.0.1)",
+      "message_count": 1,
+      "participants": [
+        "Yann Desjeux"
+      ],
+      "started": "2017-06-21T17:26:29+02:00",
+      "last_reply": "2017-06-21T17:26:29+02:00",
+      "root_message_id": "msg-763ae4dba520"
+    },
+    {
+      "id": "thread-b751c0257947",
+      "subject": "Announcing sqlscore",
+      "message_count": 1,
+      "participants": [
+        "William Brannon"
+      ],
+      "started": "2017-06-26T15:18:54-04:00",
+      "last_reply": "2017-06-26T15:18:54-04:00",
+      "root_message_id": "msg-b751c0257947"
+    },
+    {
+      "id": "thread-4f73360c9812",
+      "subject": "New R package MittagLeffleR",
+      "message_count": 1,
+      "participants": [
+        "Peter Straka"
+      ],
+      "started": "2017-06-26T19:02:40+10:00",
+      "last_reply": "2017-06-26T19:02:40+10:00",
+      "root_message_id": "msg-4f73360c9812"
+    }
+  ]
+}

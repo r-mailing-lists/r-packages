@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-06",
+  "messages": [
+    {
+      "id": "msg-04f9e8fa4373",
+      "message_id": "<SV0P279MB0475E8976F77C9F18136B497EE20A@SV0P279MB0475.NORP279.PROD.OUTLOOK.COM>",
+      "from_name": "Roger Bivand",
+      "from_email_hash": "37a3c7637f7cdc3576966201a0fd58853d44abb21284a9eb85afffcb057c33b5",
+      "date": "2023-06-24T14:53:49Z",
+      "subject": "[R-pkgs] sp 2.0-0 released",
+      "subject_clean": "sp 2.0-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of the sp package, 2.0-0, has been published on CRAN. This new version defaults to using the sf package rather than the rgdal package, and deprecates use  of the rgeos package. These changes are described in https://r-spatial.org/r/2023/05/15/evolution4.html, and lead up to the planned archiving of the retiring packages: maptools, rgdal and rgeos in October 2023. This version issues invasive start-up messages in order to alert users to impending changes; maintainers of affected packages have already been warned.\n\n--\nRoger Bivand\nEmeritus Professor\nNorwegian School of Economics\nPostboks 3490 Ytre Sandviken, 5045 Bergen, Norway\nRoger.Bivand at nhh.no",
+      "body_snippet": "A new version of the sp package, 2.0-0, has been published on CRAN. This new version defaults to using the sf package rather than the rgdal package, and deprecates use  of the rgeos package. These cha",
+      "thread_id": "thread-04f9e8fa4373",
+      "thread_depth": 0,
+      "month": "2023-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-04f9e8fa4373",
+      "subject": "sp 2.0-0 released",
+      "message_count": 1,
+      "participants": [
+        "Roger Bivand"
+      ],
+      "started": "2023-06-24T14:53:49+00:00",
+      "last_reply": "2023-06-24T14:53:49+00:00",
+      "root_message_id": "msg-04f9e8fa4373"
+    }
+  ]
+}

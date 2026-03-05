@@ -1,0 +1,227 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-01",
+  "messages": [
+    {
+      "id": "msg-6dc45adb1a0a",
+      "message_id": "<CAO5UwgaeADkYcpma1ew=8w5wWS8ouRRPMcJmw+QmCTjZhG1tBA@mail.gmail.com>",
+      "from_name": "Stanislav Syekirin",
+      "from_email_hash": "8c84dc324cb3fc57ce14abeb50233e6427d77fbb5906ae6c89a54d0793f934fb",
+      "date": "2019-01-05T22:43:00+01:00",
+      "subject": "[R-pkgs] New package readABF for reading Axon Binary Files",
+      "subject_clean": "New package readABF for reading Axon Binary Files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package called readABF for reading .abf, a binary format (or rather a\nfamily of related binary formats) used by software like Axon pClamp, is\navailable.\n\nCRAN: https://cran.r-project.org/package=readABF\nGitHub: https://github.com/Zabolekar/readABF\n\nWe greatly appreciate any feedback.\n\nBest regards\nStanislav Syekirin\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A new package called readABF for reading .abf, a binary format (or rather a\nfamily of related binary formats) used by software like Axon pClamp, is\navailable.\n\nCRAN: https://cran.r-project.org/package",
+      "thread_id": "thread-6dc45adb1a0a",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-9d064186dedc",
+      "message_id": "<CABmqZHOBdG0hpdPAvw5AcmBK8HmPQeme8OeTKzi3QFvp=m9NvA@mail.gmail.com>",
+      "from_name": "Ingmar Visser",
+      "from_email_hash": "0c9c36cde6d030b49951871417015124f5becf46c2f7629f97e065bd8b2f3356",
+      "date": "2019-01-10T11:43:20+01:00",
+      "subject": "[R-pkgs] standard errors in depmixS4 beta version 1.4 on r-forge",
+      "subject_clean": "standard errors in depmixS4 beta version 1.4 on r-forge",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new 1.4 version of depmixS4 has an important (and much requested!) new\nfeature: the possibility to request standard errors of estimated parameters\nthrough the use of a finite differences approximation of the hessian. As\nthis is a critical feature we appreciate your comments and feedback when\nusing the beta version of this package available from r-forge:\nhttps://r-forge.r-project.org/R/?group_id=148\nwhich can be installed using:\n*install.packages(\"depmixS4\", repos=\"http://R-Forge.R-project.org\n<http://R-Forge.R-project.org>\")*\n\nAs soon as enough testing has been done and we are confident about the\nrobustness of this new functionality we will post the package to CRAN.\n\nHappy mixing, Ingmar Visser & Maarten Speekenbrink\n\nIngmar Visser\nUniversitair Hoofddocent ontwikkelingspsychologie | Directeur College\nPsychologie\nAfdeling Psychologie | Faculteit Maatschappij- en Gedragswetenschappen |\nUniversiteit van Amsterdam\nBezoek | Nieuwe Achtergracht 129B | Kamer G 1.18\nPost | Postbus 15933 | 1001 NK Amsterdam\nPakketpost | Valckenierstraat 59 | 1018 XE Amsterdam\nT: +31205256723 | M: +31647260824 | e: i.visser at uva.nl\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The new 1.4 version of depmixS4 has an important (and much requested!) new\nfeature: the possibility to request standard errors of estimated parameters\nthrough the use of a finite differences approxima",
+      "thread_id": "thread-9d064186dedc",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-e0476d364917",
+      "message_id": "<bb46e0cb-9326-f7de-c118-043d18b543b8@gmail.com>",
+      "from_name": "Siegfried Köstlmeier",
+      "from_email_hash": "8ce9c6106aa1f0ca8e85f3e99c6b259ff8ffaf418c1504c5e379a28425a01285",
+      "date": "2019-01-11T15:25:31+01:00",
+      "subject": "[R-pkgs] New package qrandom: True random numbers",
+      "subject_clean": "New package qrandom: True random numbers",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\nI would like to introduce a new package for R which is available on CRAN\nnow:\n\nqrandom: True Random Numbers using the ANU Quantum Random Numbers Server\n\nNote:\n(1) This package generates true random numbers and can be used as an\nalternative for RANDOM.ORG.\n(2) There is absolutely no limit on how many true random numbers one may\nretrieve.\n(3) A sequence up to 100,000 true random integers or hexadecimal numbers\nper single request is possible and data is whether a sequence, uniform\ndistribution or normal distribution.\n\nDescription:\nIt provides an interface to the ANU Quantum Random Number Generator\n<https://qrng.anu.edu.au/index.php> provided by the Australian National\nUniversity. True random numbers are generated in real-time by measuring\nthe quantum fluctuations of the vacuum. The electromagnetic field of the\nvacuum exhibits random fluctuations in phase and amplitude at all\nfrequencies. By carefully measuring these fluctuations, one is able to\ngenerate ultra-high bandwidth random numbers. The quantum Random Number\nGenerator is based on the papers by Symul et al., (2011)\n<https://doi.org/10.1063/1.3597793> and Haw, et al. (2015)\n<https://doi.org/10.1103/PhysRevApplied.3.054004>. The package offers\nfunctions to retrieve a sequence of random integers or hexadecimals and\ntrue random samples from a normal or uniform distribution.\n\nThe R package is available via\nhttps://cran.r-project.org/web/packages/qrandom/index.html\nIf you like to access the developmental version:\nhttps://github.com/skoestlmeier/qrandom\n\nBest regards,\nSiegfried K?stlmeier (Ph.D. student in Finance at the University of\nRegensburg)",
+      "body_snippet": "Hi everyone,\nI would like to introduce a new package for R which is available on CRAN\nnow:\n\nqrandom: True Random Numbers using the ANU Quantum Random Numbers Server\n\nNote:\n(1) This package generates t",
+      "thread_id": "thread-e0476d364917",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-4a134cbfbfa2",
+      "message_id": "<mailman.1098.2.1548318082.8483.r-packages@r-project.org>",
+      "from_name": "Langsrud, Øyvind",
+      "from_email_hash": "49334a0229164e5898e0a631aae573f5032780568b46b3096d6374d4821292dd",
+      "date": "2019-01-23T22:10:32Z",
+      "subject": "[R-pkgs] MANOVA for collinear responses with rotation testing (ffmanova) + Synthetic data (RegSDC)",
+      "subject_clean": "MANOVA for collinear responses with rotation testing (ffmanova) + Synthetic data (RegSDC)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nPackage ffmanova originally released on CRAN in 2006 has now been updated to Version 1.0. It has been a stable working horse and the changes are cosmetic.\n\nPackage RegSDC (Version: 0.2.0) is a new package on CRAN. The two packages are theoretically related and both make use of conditioned multivariate normal simulations - rotation testing in ffmanova and synthetic data generation in RegSDC.\n\nPackage ffmanova is mainly meant as a package for multivariate responses, but it also involves a general contribution to ANOVA testing in linear models. The approach to sums of squares (Type II*) is invariant to scale changes of continuous variables and pitfalls are avoided. Try to run code below.\n\n\nffmanova: Fifty-Fifty MANOVA\n\nGeneral linear modeling with multiple responses (MANCOVA). An overall p-value for each model term is calculated by the 50-50 MANOVA method by Langsrud (2002) <https://10.1111/1467-9884.00320>, which handles collinear responses. Rotation testing, described by Langsrud (2005) <https://10.1007/s11222-005-4789-5>, is used to compute adjusted single response p-values according to familywise error rates and false discovery rates (FDR). The approach to FDR is described in the appendix of Moen et al. (2005) <https://10.1128/AEM.71.4.2086-2094.2005>. Unbalanced designs are handled by Type II sums of squares as argued in Langsrud (2003) <https://10.1023/A:1023260610025>. Furthermore, the Type II philosophy is extended to continuous design variables as described in Langsrud et al. (2007) <https://10.1080/02664760701594246>. This means that the method is invariant to scale changes and that common pitfalls are avoided.\n\n\nRegSDC: Information Preserving Regression-Based Tools for Statistical Disclosure Control\n\nInformation Preserving Regression-Based Tools for Statistical Disclosure Control\nImplementation of the methods described in the paper with the above title: Langsrud, ?. (2019) <https://10.1007/s11222-018-9848-9>. Open view-only version at <https://rdcu.be/bfeWQ>. The package can be used to generate synthetic or hybrid continuous microdata, and the relationship to the original data can be controlled in several ways.\n\n\nBest,\n?yvind Langsrud\n\n\nset.seed(123)\nz <- 1:9\nx <- c(0, 0, 0, 10, 10, 10, 1, 1, 1)\ny <- rnorm(9)/10 + x  # y depends strongly on x\nz100 <- z + 100  # change of scale (origin)\nx100 <- x + 100  # change of scale (origin)\nlibrary(car)  # Anova with type II as default\nlibrary(ffmanova)\n\n# Type III depends on scale\nAnova(lm(y ~ factor(x) * z), type = 3)\nAnova(lm(y ~ factor(x) * z100), type = 3)\n\n# Even Type II depends on scale\nAnova(lm(y ~ x + I(x^2)), type = 2)\nAnova(lm(y ~ x100 + I(x100^2)), type = 2)\n\n# Type II* within ffmanova is invariant\nffmanova(y ~ x100 + I(x100^2))\nffmanova(y ~ z * (x100 + I(x100^2)))\n\n# Type I for comparison\nanova(lm(y ~ x100 + I(x100^2)))  # same as ffmanova\nanova(lm(y ~ z * (x100 + I(x100^2))))  # but here z is significant\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nPackage ffmanova originally released on CRAN in 2006 has now been updated to Version 1.0. It has been a stable working horse and the changes are cosmetic.\n\nPackage RegSDC (Version: 0.2.0) is a ne",
+      "thread_id": "thread-4a134cbfbfa2",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-ff1330a9e1c1",
+      "message_id": "<94c8e48ca3944046a7e0936151bb58ad@unige.ch>",
+      "from_name": "Jaromil Frossard",
+      "from_email_hash": "21052b893e59ab5b467357c9260c55530b2f490be58f745edcd8fe86bef2ea05",
+      "date": "2019-01-28T02:07:44Z",
+      "subject": "[R-pkgs] permuco: permutation tests and multiple comparisons.",
+      "subject_clean": "permuco: permutation tests and multiple comparisons.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\nWe present you the permuco package, which has 2 main purposes: PERmutation tests and MUltiple COmparisons.\n\nFirst, the package has functions for permutation tests for parameters in linear models with nuisance variables. Several permutation methods exist in the literature to reduce the effect of nuisance variables and the permuco package allows to use them for t statistics in regression model, F tests in type 3 ANOVA, and F tests in repeated measures ANOVA. The 2 functions aovperm() and lmperm() perform these tests and their usage is similar to the parametric counterpart aov() and lm().\n\nSecondly, it uses multiple comparisons procedures with permutation tests to compare signals time by time. This problem is common when analysing electroencephalography (or fMRI) data where the response variables are EEG signals recorded for each experimental setting. In these experiments, the number of tests is equal to the number of time points of the signal which is typically in the thousands. The permuco package implements the state-of-the-art multiple comparisons procedures which uses permutations, like the cluster-mass test or the threshold-free cluster-enhancement. These procedures are powerful when the effects appear in clusters and they will control the family wise error rate (FWER) under the null hypothesis.\n\nAll these procedures are explained and exemplified in detail in a vignette.\n\nWe are waiting for your feedback in order to improve the next releases of permuco.\n\nOlivier Renaud & Jaromil Frossard\n\nUniversity of Geneva\n\nURL:\nhttps://CRAN.R-project.org/package=permuco\nMaintainer:\njaromil.frossard at unige.ch<mailto:jaromil.frossard at unige.ch>\n\n<mailto:jaromil.frossard at unige.ch>\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\nWe present you the permuco package, which has 2 main purposes: PERmutation tests and MUltiple COmparisons.\n\nFirst, the package has functions for permutation tests for parameters in li",
+      "thread_id": "thread-ff1330a9e1c1",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-bf9322bc028c",
+      "message_id": "<CAC_0WE9WJDzXFXwwnc_tvYfea6+RX3_8QA+7hBqG8smZp0RZrg@mail.gmail.com>",
+      "from_name": "Matteo Fasiolo",
+      "from_email_hash": "a6476762c94f2a3d325a652bff45d4bf550ca8843faa72aa830657d95f88d500",
+      "date": "2019-01-28T13:08:08+01:00",
+      "subject": "[R-pkgs] mgcViz: scalable ggplot2 visualisations for mgcv",
+      "subject_clean": "mgcViz: scalable ggplot2 visualisations for mgcv",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\n I am pleased to announce the publication of mgcViz 0.1.3 on CRAN:\nhttps://cran.r-project.org/web/packages/mgcViz/index.html\n\nmgcViz is an extension of mgcv, and provides a layered ggplot2-based\nvisualisation framework for GAM models. In addition to layered smooth effect\nplots, mgcViz offers:\n- new scalable methods for model building and checking;\n- interactive 3D visualisations via the rgl package;\n- methods for approximate Bayesian posterior simulation.\n\nFor examples see the articles on mgcViz's website:\nhttps://mfasiolo.github.io/mgcViz/\nwhile for more details on the underlying methods see:\nhttps://arxiv.org/abs/1809.10632\n\nThe package is also available on github:\nhttps://github.com/mfasiolo/mgcViz\nso feel free to send comments, criticisms and feature requests via Github\nissues.\n\nMatteo Fasiolo\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\n I am pleased to announce the publication of mgcViz 0.1.3 on CRAN:\nhttps://cran.r-project.org/web/packages/mgcViz/index.html\n\nmgcViz is an extension of mgcv, and provides a layered ggplot",
+      "thread_id": "thread-bf9322bc028c",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-9baf3d9d2390",
+      "message_id": "<DM5PR1201MB000998F27B394AB4A6037C6987970@DM5PR1201MB0009.namprd12.prod.outlook.com>",
+      "from_name": "Harrell, Frank E",
+      "from_email_hash": "26ac1503887d5cb3d1e03e3af125900d175097b1788797cd34e2a884134e791a",
+      "date": "2019-01-29T16:24:25Z",
+      "subject": "[R-pkgs] Significant Update to Hmisc Package",
+      "subject_clean": "Significant Update to Hmisc Package",
+      "in_reply_to": "<DM5PR1201MB0009361609C41F4B7B3A891E87970@DM5PR1201MB0009.namprd12.prod.outlook.com>",
+      "references": [
+        "<DM5PR1201MB0009361609C41F4B7B3A891E87970@DM5PR1201MB0009.namprd12.prod.outlook.com>"
+      ],
+      "body_plain": "There have been a significant number of bug fixes and updates to the Hmisc package.  See the following for the list of changes: https://cran.r-project.org/web/packages/Hmisc/NEWS\n\ncran.r-project.org<https://cran.r-project.org/web/packages/Hmisc/NEWS>\ncran.r-project.org\nChanges in version 4.1-1 (2018-01-03)) * describe: quit rounding values when = 20 distinct values no matter how far apart any two values are spaced.https ...\n\n\n\n\n________________________________\nFrank E Harrell Jr      Professor       School of Medicine\n\n        Department of Biostatistics             Vanderbilt University\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "There have been a significant number of bug fixes and updates to the Hmisc package.  See the following for the list of changes: https://cran.r-project.org/web/packages/Hmisc/NEWS\n\ncran.r-project.org<h",
+      "thread_id": "thread-9baf3d9d2390",
+      "thread_depth": 0,
+      "month": "2019-01"
+    },
+    {
+      "id": "msg-d7ff4d930da2",
+      "message_id": "<FF905256-DACF-4AD9-84E9-F5063FF058AA@gmail.com>",
+      "from_name": "Cory Whitney",
+      "from_email_hash": "0957d87a031ee655c93ee4762461d3eed210ae7246d06d7113e1b3d884b85516",
+      "date": "2019-01-30T15:43:04+01:00",
+      "subject": "[R-pkgs] ethnobotanyR v0.1.3",
+      "subject_clean": "ethnobotanyR v0.1.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Many ethnobotanists are calculating indices and performing quantitative analysis with excel. Not any more! Now they can use the ethnobotanyR package to calculate common quantitative ethnobotany indices to assess the cultural significance of plant species based on informant consensus. The package closely follows two papers, one by Tardio and Pardo-de-Santayana (2008) and another by Whitney et al. (2018).\n\nThe CRAN page for the ethnobotanyR package\nhttps://cran.r-project.org/web/packages/ethnobotanyR/index.html\n\nA vignette that describes it i ethnobotanyR greater detail:\nhttps://cran.r-project.org/web/packages/ethnobotanyR/vignettes/ethnobotanyr_vignette.html\n\nThe main papers behind ethnobotanyR: \n\nTardio, J., and M. Pardo-de-Santayana, 2008. Cultural Importance Indices: A Comparative Analysis Based on the Useful Wild Plants of Southern Cantabria (Northern Spain) 1. Economic Botany, 62(1), 24-39. https://doi.org/10.1007/s12231-007-9004-5.\n\nWhitney, C. W., Bahati, J., and Gebauer, J. (2018), Ethnobotany and agrobiodiversity; valuation of plants in the homegardens of southwestern Uganda. Ethnobiology Letters, 9(2), 90-100. https://doi.org/10.14237/ebl.9.2.2018.503\n\nThe future of ethnobotanyR: \nThe package will be constantly updated with new functions and methods. If you have ideas, suggestions, metrics or methods that you would like to include please contact the package maintainer Cory Whitney <whitney.cory at gmail.com>",
+      "body_snippet": "Many ethnobotanists are calculating indices and performing quantitative analysis with excel. Not any more! Now they can use the ethnobotanyR package to calculate common quantitative ethnobotany indice",
+      "thread_id": "thread-d7ff4d930da2",
+      "thread_depth": 0,
+      "month": "2019-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6dc45adb1a0a",
+      "subject": "New package readABF for reading Axon Binary Files",
+      "message_count": 1,
+      "participants": [
+        "Stanislav Syekirin"
+      ],
+      "started": "2019-01-05T22:43:00+01:00",
+      "last_reply": "2019-01-05T22:43:00+01:00",
+      "root_message_id": "msg-6dc45adb1a0a"
+    },
+    {
+      "id": "thread-9d064186dedc",
+      "subject": "standard errors in depmixS4 beta version 1.4 on r-forge",
+      "message_count": 1,
+      "participants": [
+        "Ingmar Visser"
+      ],
+      "started": "2019-01-10T11:43:20+01:00",
+      "last_reply": "2019-01-10T11:43:20+01:00",
+      "root_message_id": "msg-9d064186dedc"
+    },
+    {
+      "id": "thread-e0476d364917",
+      "subject": "New package qrandom: True random numbers",
+      "message_count": 1,
+      "participants": [
+        "Siegfried Köstlmeier"
+      ],
+      "started": "2019-01-11T15:25:31+01:00",
+      "last_reply": "2019-01-11T15:25:31+01:00",
+      "root_message_id": "msg-e0476d364917"
+    },
+    {
+      "id": "thread-4a134cbfbfa2",
+      "subject": "MANOVA for collinear responses with rotation testing (ffmanova) + Synthetic data (RegSDC)",
+      "message_count": 1,
+      "participants": [
+        "Langsrud, Øyvind"
+      ],
+      "started": "2019-01-23T22:10:32+00:00",
+      "last_reply": "2019-01-23T22:10:32+00:00",
+      "root_message_id": "msg-4a134cbfbfa2"
+    },
+    {
+      "id": "thread-ff1330a9e1c1",
+      "subject": "permuco: permutation tests and multiple comparisons.",
+      "message_count": 1,
+      "participants": [
+        "Jaromil Frossard"
+      ],
+      "started": "2019-01-28T02:07:44+00:00",
+      "last_reply": "2019-01-28T02:07:44+00:00",
+      "root_message_id": "msg-ff1330a9e1c1"
+    },
+    {
+      "id": "thread-bf9322bc028c",
+      "subject": "mgcViz: scalable ggplot2 visualisations for mgcv",
+      "message_count": 1,
+      "participants": [
+        "Matteo Fasiolo"
+      ],
+      "started": "2019-01-28T13:08:08+01:00",
+      "last_reply": "2019-01-28T13:08:08+01:00",
+      "root_message_id": "msg-bf9322bc028c"
+    },
+    {
+      "id": "thread-9baf3d9d2390",
+      "subject": "Significant Update to Hmisc Package",
+      "message_count": 1,
+      "participants": [
+        "Harrell, Frank E"
+      ],
+      "started": "2019-01-29T16:24:25+00:00",
+      "last_reply": "2019-01-29T16:24:25+00:00",
+      "root_message_id": "msg-9baf3d9d2390"
+    },
+    {
+      "id": "thread-d7ff4d930da2",
+      "subject": "ethnobotanyR v0.1.3",
+      "message_count": 1,
+      "participants": [
+        "Cory Whitney"
+      ],
+      "started": "2019-01-30T15:43:04+01:00",
+      "last_reply": "2019-01-30T15:43:04+01:00",
+      "root_message_id": "msg-d7ff4d930da2"
+    }
+  ]
+}

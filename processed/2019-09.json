@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2019-09",
+  "messages": [
+    {
+      "id": "msg-fc370d4e0583",
+      "message_id": "<b593e923-c8ab-4ed6-40e5-f350aa51200d@gmail.com>",
+      "from_name": "Arseniy Khvorov",
+      "from_email_hash": "025425aae249c46a94bf2d78758496546c081a50c4157cdc6ad744078f382eb3",
+      "date": "2019-09-09T08:06:14+10:00",
+      "subject": "[R-pkgs] New package sclr for scaled logit model",
+      "subject_clean": "New package sclr for scaled logit model",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package \"sclr\" for fitting the \"scaled logit\" model from Dunning \n(2006)? <doi:10.1002/sim.2282> is available.\n\nCRAN: https://cran.r-project.org/package=sclr\nGithub: https://github.com/khvorov45/sclr\n\nI appreciate any feedback.\n\nBest regards,\nArseniy Khvorov",
+      "body_snippet": "A new package \"sclr\" for fitting the \"scaled logit\" model from Dunning \n(2006)? <doi:10.1002/sim.2282> is available.\n\nCRAN: https://cran.r-project.org/package=sclr\nGithub: https://github.com/khvorov45",
+      "thread_id": "thread-fc370d4e0583",
+      "thread_depth": 0,
+      "month": "2019-09"
+    },
+    {
+      "id": "msg-a814dc70163c",
+      "message_id": "<970603173.12400643.1568031978544.JavaMail.zimbra@mendoza-conicet.gob.ar>",
+      "from_name": "Ezequiel Toum",
+      "from_email_hash": "ddcc04bd8b0ac09273cc51dd242260154725f29b6eb1a90c8aa133dd47b2fa5a",
+      "date": "2019-09-09T09:26:18-03:00",
+      "subject": "[R-pkgs] New package ‘HBV.IANIGLA’ for hydrological modeling",
+      "subject_clean": "New package ‘HBV.IANIGLA’ for hydrological modeling",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, \n\n\n\n\na new package ?HBV.IANIGLA? for hydrological modeling has been relesased. \n\nCRAN: [ https://cran.r-project.org/web/packages/HBV.IANIGLA/index.html | https://cran.r-project.org/web/packages/HBV.IANIGLA/index.html ] \n\n\nIn case of doubts do not hesitate to write. \n\n\n\n\nBest, \n\nEzequiel Toum \n-- \nEzequiel Toum \nIngeniero Civil \nBecario Doctoral \nhttps://www.mendoza-conicet.gob.ar/portal/ianigla/paginas/index/integrantes87 \n\nInstituto Argentino de Nivolog?a, \nGlaciolog?a y Ciencias Ambientales (IANIGLA) \nCCT-CONICET-Mendoza \nC.C. 330, (5500) Mendoza, Argentina \nTel: 54(261)5244266 \nFax: 54(261)5244201 \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi, \n\n\n\n\na new package ?HBV.IANIGLA? for hydrological modeling has been relesased. \n\nCRAN: [ https://cran.r-project.org/web/packages/HBV.IANIGLA/index.html | https://cran.r-project.org/web/packages/HB",
+      "thread_id": "thread-a814dc70163c",
+      "thread_depth": 0,
+      "month": "2019-09"
+    },
+    {
+      "id": "msg-6f5364e94572",
+      "message_id": "<DM6PR12MB3452B8D51C55AF591A01335C9F820@DM6PR12MB3452.namprd12.prod.outlook.com>",
+      "from_name": "Domagalski, Rachel",
+      "from_email_hash": "9dfac7ce7a8a7263100f4a498ff67b6265b1e9418f2712d39137735cef42a371",
+      "date": "2019-09-30T15:42:03Z",
+      "subject": "[R-pkgs] New package 'backbone' for extracting significant edges from a weighted graph",
+      "subject_clean": "New package 'backbone' for extracting significant edges from a weighted graph",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello R users,\n\nI am excited to introduce a new package for R which is now available on CRAN called ?backbone?.\nThe package can be found here: https://cran.r-project.org/web/packages/backbone/index.html\n\nThe backbone package provides methods for extracting from a weighted graph a binary or signed backbone that retains only the significant edges. The user may input a weighted graph, or a bipartite graph from which a weighted graph is first constructed via projection.\n\nBackbone extraction methods include:\nthe stochastic degree sequence model (Neal, Z. P. (2014). https://doi.org/10.1016/j.socnet.2014.06.001),\nhypergeometric model (Neal, Z. (2013). https://doi.org/10.1007/s13278-013-0107-y),\nthe fixed degree sequence model (Zweig, K. A., and Kaufmann, M. (2011). https://doi.org/10.1007/s13278-011-0021-0),\nas well as a universal threshold method.\n\nA vignette which describes the package in greater detail can be found here: https://cran.r-project.org/web/packages/backbone/vignettes/backbone_introduction.html\n\nThe package will be constantly updated with new functions and methods.\nIf you have any backbone extraction methods you would like to see included, please contact the package maintainer Rachel Domagalski at <domagal9 at msu.edu>.\n\nVery best regards,\nRachel Domagalski\nZachary Neal\nBruce Sagan\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello R users,\n\nI am excited to introduce a new package for R which is now available on CRAN called ?backbone?.\nThe package can be found here: https://cran.r-project.org/web/packages/backbone/index.ht",
+      "thread_id": "thread-6f5364e94572",
+      "thread_depth": 0,
+      "month": "2019-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fc370d4e0583",
+      "subject": "New package sclr for scaled logit model",
+      "message_count": 1,
+      "participants": [
+        "Arseniy Khvorov"
+      ],
+      "started": "2019-09-09T08:06:14+10:00",
+      "last_reply": "2019-09-09T08:06:14+10:00",
+      "root_message_id": "msg-fc370d4e0583"
+    },
+    {
+      "id": "thread-a814dc70163c",
+      "subject": "New package ‘HBV.IANIGLA’ for hydrological modeling",
+      "message_count": 1,
+      "participants": [
+        "Ezequiel Toum"
+      ],
+      "started": "2019-09-09T09:26:18-03:00",
+      "last_reply": "2019-09-09T09:26:18-03:00",
+      "root_message_id": "msg-a814dc70163c"
+    },
+    {
+      "id": "thread-6f5364e94572",
+      "subject": "New package 'backbone' for extracting significant edges from a weighted graph",
+      "message_count": 1,
+      "participants": [
+        "Domagalski, Rachel"
+      ],
+      "started": "2019-09-30T15:42:03+00:00",
+      "last_reply": "2019-09-30T15:42:03+00:00",
+      "root_message_id": "msg-6f5364e94572"
+    }
+  ]
+}

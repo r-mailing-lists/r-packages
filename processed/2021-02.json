@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-02",
+  "messages": [
+    {
+      "id": "msg-5e0696d7e30a",
+      "message_id": "<2040941607.16696839.1612176395579.JavaMail.zimbra@istat.it>",
+      "from_name": "Andrea Fasulo",
+      "from_email_hash": "1effc454e30b23d0543992f3d7bfc77298a18f97de8a308d86967d4624a54f4d",
+      "date": "2021-02-01T11:46:35+01:00",
+      "subject": "[R-pkgs] R2BEAT 1.0.2",
+      "subject_clean": "R2BEAT 1.0.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users:\n\nR2BEAT 1.0.2 is now available on CRAN \n[ https://cran.r-project.org/web/packages/R2BEAT/index.html | https://cran.r-project.org/web/packages/R2BEAT/index.html ] \nThis package covers the two-stage stratified sample design,\noffering functions for determining the optimal allocation of both Primary and Secondary stage units,\nand for the selection of PSUs with pps, in such a way that the  final sample of SSU is almost self-weighting.\n\nFull documentation and vignettes on: [ https://barcaroli.github.io/R2BEAT/ | https://barcaroli.github.io/R2BEAT/ ] Hope this can be useful,\nRegards\n\nAndrea Fasulo \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n\nR2BEAT 1.0.2 is now available on CRAN \n[ https://cran.r-project.org/web/packages/R2BEAT/index.html | https://cran.r-project.org/web/packages/R2BEAT/index.html ] \nThis package covers the",
+      "thread_id": "thread-5e0696d7e30a",
+      "thread_depth": 0,
+      "month": "2021-02"
+    },
+    {
+      "id": "msg-6000acafe986",
+      "message_id": "<9491E023-38EC-461C-95E8-81704FD9441F@gmail.com>",
+      "from_name": "Cory Whitney",
+      "from_email_hash": "0957d87a031ee655c93ee4762461d3eed210ae7246d06d7113e1b3d884b85516",
+      "date": "2021-02-02T12:33:16+01:00",
+      "subject": "[R-pkgs] ethnobotanyR 0.1.8",
+      "subject_clean": "ethnobotanyR 0.1.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The newest release of the ethnobotanyR package (v0.1.8) calculates common quantitative ethnobotany indices to assess the cultural significance of plant species based on informant consensus. The package closely follows two papers, one on cultural importance indices (Tardio and Pardo-de-Santayana 2008) and another on agrobiodiversity valuation (Whitney, Bahati, and Gebauer 2018). The newest version of ethnobotanyR (0.1.8) has been released with a number of new features:\n\nThe goal is to provide an easy-to-use platform for ethnobotanists to work with quantitative ethnobotany assessments. \n\nInstall the released version of ethnobotanyR from CRAN with \ninstall.packages(\"ethnobotanyR\")\n\nInstall the working version of ethnobotanyR from GitHub with \ndevtools::install_github(\"CWWhitney/ethnobotanyR\")\n\nVignettes:\thttps://cran.r-project.org/web/packages/ethnobotanyR/vignettes/ethnobotanyr_vignette.html\n\nTardio, Javier, and Manuel Pardo-de-Santayana. 2008. ?Cultural Importance Indices: A Comparative Analysis Based on the Useful Wild Plants of Southern Cantabria (Northern Spain) 1.? Economic Botany 62 (1): 24?39.\n\nWhitney, Cory W., Joseph Bahati, and J. Gebauer. 2018. ?Ethnobotany and Agrobiodiversity; Valuation of Plants in the Homegardens of Southwestern Uganda.? Ethnobiology Letters 9 (2): 90?100. https://doi.org/10.14237/ebl.9.2.2018.503.",
+      "body_snippet": "The newest release of the ethnobotanyR package (v0.1.8) calculates common quantitative ethnobotany indices to assess the cultural significance of plant species based on informant consensus. The packag",
+      "thread_id": "thread-6000acafe986",
+      "thread_depth": 0,
+      "month": "2021-02"
+    },
+    {
+      "id": "msg-7f373001212a",
+      "message_id": "<A67051F8-01C3-4AE6-B3F7-863E0D152649@gmail.com>",
+      "from_name": "Anurag Agrawal",
+      "from_email_hash": "816234068ebf1ab99f8655c3fff902aa70059abca39cd0d74bb544d8b0249c47",
+      "date": "2021-02-06T14:53:24+05:30",
+      "subject": "[R-pkgs] 1.0.7 rMorningStar (Mutual Fund performance analysis)",
+      "subject_clean": "1.0.7 rMorningStar (Mutual Fund performance analysis)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs and developeRs,\n\nI am proud to announce that rMorningStar is now available on CRAN.\n\nrMornringStar is aimed to guide investors both professional and non-professional to analyse mutual funds and ETFs (exchange-traded funds).\n\nThe package provides a collection of functions to calculate performance metrics of mutual funds/exchange-traded funds. This package aids investors in researching mutual funds/exchange-traded funds for their investment decision. Also, this package contains tools to manage a portfolio of different mutual fund/exchange-traded funds.\n\nThis is the first version of rMorningStar. I will make every effort to better the package with every release. If you have any concerns/ feedback please connect with me on agrawalanurag1999 at gmail.com <mailto:agrawalanurag1999 at gmail.com>\n\n\n\n\n\n\n\nRegards,\nAnurag Agrawal\nBachelor of Science in Finance,\nNarsee Monjee Institute of Management Studies.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs and developeRs,\n\nI am proud to announce that rMorningStar is now available on CRAN.\n\nrMornringStar is aimed to guide investors both professional and non-professional to analyse mutual funds",
+      "thread_id": "thread-7f373001212a",
+      "thread_depth": 0,
+      "month": "2021-02"
+    },
+    {
+      "id": "msg-ce542ee6cc1b",
+      "message_id": "<de5f916c-fe1e-7408-5f57-514605485d09@sissa.it>",
+      "from_name": "Valerio Gherardi",
+      "from_email_hash": "983935078100044e1c2dfb4ad3814974046de6e286192336cb587b0f8932e6f9",
+      "date": "2021-02-16T12:20:22+01:00",
+      "subject": "[R-pkgs] kgrams: Classical k-gram Language Models",
+      "subject_clean": "kgrams: Classical k-gram Language Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am glad to introduce package `kgrams`, recently admitted on CRAN \n<https://cran.r-project.org/web/packages/kgrams/index.html> (v0.1.0). \nThis package implements several classical smoothing techniques for \nk-gram based language models, together with tools for prediction, model \nevaluation (e.g. perplexity computations) and fun (e.g. random text \ngeneration). On the package website <https://vgherard.github.io/kgrams/> \nyou can get an overview of its functionalities and consult the full \ndocumentation.\n\nIf you have any feedback, suggestion or bug to communicate, you can \nreach out to me through the GitHub repository \n<https://github.com/vgherard/kgrams>, or by email (vgherard at sissa.it).\n\nBest regards,\n\nValerio Gherardi.\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am glad to introduce package `kgrams`, recently admitted on CRAN \n<https://cran.r-project.org/web/packages/kgrams/index.html> (v0.1.0). \nThis package implements several classical smoothin",
+      "thread_id": "thread-ce542ee6cc1b",
+      "thread_depth": 0,
+      "month": "2021-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5e0696d7e30a",
+      "subject": "R2BEAT 1.0.2",
+      "message_count": 1,
+      "participants": [
+        "Andrea Fasulo"
+      ],
+      "started": "2021-02-01T11:46:35+01:00",
+      "last_reply": "2021-02-01T11:46:35+01:00",
+      "root_message_id": "msg-5e0696d7e30a"
+    },
+    {
+      "id": "thread-6000acafe986",
+      "subject": "ethnobotanyR 0.1.8",
+      "message_count": 1,
+      "participants": [
+        "Cory Whitney"
+      ],
+      "started": "2021-02-02T12:33:16+01:00",
+      "last_reply": "2021-02-02T12:33:16+01:00",
+      "root_message_id": "msg-6000acafe986"
+    },
+    {
+      "id": "thread-7f373001212a",
+      "subject": "1.0.7 rMorningStar (Mutual Fund performance analysis)",
+      "message_count": 1,
+      "participants": [
+        "Anurag Agrawal"
+      ],
+      "started": "2021-02-06T14:53:24+05:30",
+      "last_reply": "2021-02-06T14:53:24+05:30",
+      "root_message_id": "msg-7f373001212a"
+    },
+    {
+      "id": "thread-ce542ee6cc1b",
+      "subject": "kgrams: Classical k-gram Language Models",
+      "message_count": 1,
+      "participants": [
+        "Valerio Gherardi"
+      ],
+      "started": "2021-02-16T12:20:22+01:00",
+      "last_reply": "2021-02-16T12:20:22+01:00",
+      "root_message_id": "msg-ce542ee6cc1b"
+    }
+  ]
+}

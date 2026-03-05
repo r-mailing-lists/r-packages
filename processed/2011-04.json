@@ -1,0 +1,306 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2011-04",
+  "messages": [
+    {
+      "id": "msg-b11ea29af771",
+      "message_id": "<331998.98660.qm@web112502.mail.gq1.yahoo.com>",
+      "from_name": "Suman Kundu",
+      "from_email_hash": "32844e374bd47eaa1bbcd8f36015fbe68c923664b5cdfcef112ebb8c6298e80d",
+      "date": "2011-04-06T05:40:33-07:00",
+      "subject": "[R-pkgs] [R-package] PredictABEL 1.1: Assessment of risk prediction models in R",
+      "subject_clean": "[R-package] PredictABEL 1.1: Assessment of risk prediction models in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl>",
+      "thread_id": "thread-b11ea29af771",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-cdd08d9dc659",
+      "message_id": "<BANLkTi=Hw9hTJFsAutXNv4kNHhazvdp4OA@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2011-04-11T07:16:01-05:00",
+      "subject": "[R-pkgs] plyr: version 1.5",
+      "subject_clean": "plyr: version 1.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in equivalents.\n\nA detailed introduction to plyr has been published in JSS: \"The\nSplit-Apply-Combine Strategy for Data Analysis\",\nhttp://www.jstatsoft.org/v40/i01/. You can find out more at\nhttp://had.co.nz/plyr/, or track development at\nhttp://github.com/hadley/plyr. You can ask questions about plyr (and\ndata manipulation in general) on the plyr mailing list. Sign up at\nhttp://groups.google.com/group/manipulatr.\n\nVersion 1.5\n------------------------------------------------------------------------------\n\nNEW FEATURES\n\n* new `strip_splits` function removes splitting variables from the data frames\n  returned by `ddply`.\n\n* `rename` moved in from reshape, and rewritten.\n\n* new `match_df` function makes it easy to subset a data frame to only contain\n  values matching another data frame. Inspired by\n  http://stackoverflow.com/questions/4693849.\n\nBUG FIXES\n\n* `**ply` now works when passed a list of functions\n\n* `*dply` now correctly names output even when some output combinations are\n  missing (NULL) (Thanks to bug report from Karl Ove Hufthammer)\n\n* `*dply` preserves the class of many more object types.\n\n* `a*ply` now correctly works with zero length margins, operating on the\n  entire object (Thanks to bug report from Stavros Macrakis)\n\n* `join` now implements joins in a more SQL like way, returning all possible\n  matches, not just the first one. It is still a (little) faster than merge.\n  The previous behaviour is accessible with `match = \"first\"`.\n\n* `join` is now more symmetric so that `join(x, y, \"left\")` is closer to\n  `join(y, x, \"right\")`, modulo column ordering\n\n* `named.quoted` failed when quoted expressions were longer than 50\n  characters. (Thanks to bug report from Eric Goldlust)\n\n* `rbind.fill` now correctly maintains POSIXct tzone attributes and preserves\n  missing factor levels\n\n* `split_labels` correctly preserves empty factor levels, which means that\n  `drop = FALSE` should work in more places. Use `base::droplevels` to remove\n  levels that don't occur in the data, and `drop = T` to remove combinations\n  of levels that don't occur.\n\n* `vaggregate` now passes `...` to the aggregation function when working out\n  the output type (thanks to bug report by Pavan Racherla)\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
+      "thread_id": "thread-cdd08d9dc659",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-2b1bdca5cd83",
+      "message_id": "<BANLkTi=Zpc8hNvS-gcag4H=Che38teFrJg@mail.gmail.com>",
+      "from_name": "Charlie Sharpsteen",
+      "from_email_hash": "61a5157bf3b50056b8fad9b559d93b86915f2e7b847327766122b4f2cfc76e33",
+      "date": "2011-04-13T17:35:55-07:00",
+      "subject": "[R-pkgs] tikzDevice 0.6.0",
+      "subject_clean": "tikzDevice 0.6.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Cameron and I are pleased to announce version 0.6.0 of the tikzDevice\npackage which should be available shortly at your local CRAN mirror!\nThe tikzDevice makes it possible to export R graphics as LaTeX code\nthat can be included in other documents or compiled into stand alone\nfigures. The full power of LaTeX is available for typesetting text and\nmathematical expressions inside figures produced using the tikzDevice.\n\nOver 80 commits have occurred since the release of 0.5.3 which have\nadded exciting new features to the device. The most important addition\nis 0.6.0 is that the XeLaTeX compiler is officially supported.\nCompared to the PdfTeX engine, XeTeX has native support for Unicode\nwhich we hope will make the package more useful for producing graphics\nthat contain text in languages?outside?the ASCII symbol table. 0.6.0\nalso provides support for including raster imagry in graphics and\npolypath drawing which catches the `tikz()` graphics device up with\nrecent developments in the R graphics engine.\n\nThere have also been some significant changes under the hood. Our\npackage has migrated to using Roxygen for function documentation---a\nmove that was greatly facilitated by the Rd2roxygen package written by\nYihui Xie and Hadley Wickham. Our homebrewed testsuite has also been\nre-written on top of Hadley's excellent test_that package. ?Many\nthanks to the R community for writing great tools to support package\ndevelopment!\n\nThe full changelog is appended to this email. For a detailed diff of\nchanges since 0.5.3, see:\n??https://github.com/Sharpie/RTikZDevice/compare/0.5.3...master\n\nWith 80 commits, it is likely we introduced some exciting new bugs.\nBug reports are welcomed at the GitHub issue tracker:\n\n??https://github.com/Sharpie/RTikZDevice/issues\n\nThe tikzDevice also has a mailing list provided by R-Forge:\n\n??tikzdevice-bugs @at@?lists.r-forge.r-project.org\n\nWhich is also accessible via Google Groups:\n\n??https://groups.google.com/forum/#!forum/tikzdevice\n\n\nA rough roadmap for future package development can be found at:\n\n??https://github.com/Sharpie/RTikZDevice/wiki/Roadmap\n\nCommentary and discussion is welcomed in the mailing list, patches\ncontaining bugfixes or features are welcomed on the issue tracker.\n\n\n-Charlie\n\n---\n\n### Version: 0.6.0\n\n---\n\n#### New Features\n\n- Unicode Support!!!! XeLaTeX may now be used calculate metrics and widths for\n?Unicode characters. PdfLaTeX remains the default LaTeX compiler, but this may\n?be changed by setting the global option `tikzDefaultEngine` to `xetex`.\n\n- New global option `tikzXelatexPackages` which contains packages necessary to\n?use unicode characters with xelatex. ?Specifically, the fontspec and the\n?xunicode packages as well as the xetex option to the preview package.\n\n- New global option `tikzUnicodeMetricPackages` which contains the packages\n?necessary to calculate metrics for multibyte unicode characters with xelatex.\n\n- New function anyMultibyteUTF8Characters() which will check if the given\n?string contains any multibyte unicode characters. ?Exposed in the package\n?namespace since it is general and may be useful in other applications.\n\n- The TikZ device now fully supports the `Raster` graphics primitive that was\n?added in R 2.11.0 and no longer throws \"not implemented\" warnings when this\n?functionality is used. This is accompilshed by writing raster images to PNG\n?files, `Rplots_ras#.png`, which are then included in the main TeX file\n?`Rplots.tex`.\n\n- The TikZ device now fully supports the `polypath` graphics primitive that was\n?added in R 2.12.0 and no longer throws \"not implemented\" warnings when this\n?functionality is used.\n\n\n#### Bug Fixes\n\n- Fixed a bug where the `lwd` parameter used to control line widths was\n?declared by tikzDevice to be of type `int` when it is actually a `double`.\n?This was causing line widths to be ignored or miscalculated. Many thanks to\n?Baptiste Auguie for reporting this issue.\n\n\n#### Depreciation Notices\n\n- Versions of R < 2.11.0 are no longer supported due to lack of required\n?functions for handling Unicode strings.\n\n\n#### Behind the Scenes\n\n- New Makefile for executing common development tasks.\n\n- Package documentation now handled by `roxygen`. ?Many thanks to Hadley\n?Wickham and Yihui Xie for the `Rd2roxygen` package which facilitated this\n?switch.\n\n- Package test suite completely overhauled and now based on Hadley Wickham's\n?`test_that` unit testing framework.",
+      "body_snippet": "Cameron and I are pleased to announce version 0.6.0 of the tikzDevice\npackage which should be available shortly at your local CRAN mirror!\nThe tikzDevice makes it possible to export R graphics as LaTe",
+      "thread_id": "thread-2b1bdca5cd83",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-ecae6c52c8a4",
+      "message_id": "<4DADAEA7.1010407@googlemail.com>",
+      "from_name": "Cedric Ginestet",
+      "from_email_hash": "701f27bef89fcd585b8c536b3cc2a2bf268d8577524557c4198c251bb5b9d739",
+      "date": "2011-04-19T16:47:51+01:00",
+      "subject": "[R-pkgs] Boost library in R package.",
+      "subject_clean": "Boost library in R package.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl>",
+      "thread_id": "thread-ecae6c52c8a4",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-91ea0703f53a",
+      "message_id": "<D11C116C-FA1B-47F6-BAB9-7D8D709CA33D@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2011-04-19T19:15:14-07:00",
+      "subject": "[R-pkgs] glmnet_1.6 uploaded to CRAN",
+      "subject_clean": "glmnet_1.6 uploaded to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We have submitted glmnet_1.6 to CRAN\n\nThis version has an improved convergence criterion, and it also uses\na variable screening algorithm that dramatically reduces the time\nto convergence (while still producing the exact solutions).\nThe speedups in some cases are by a factors of 20 to 50, depending on\nthe particular problem and loss function.\n\nSee our paper http://www-stat.stanford.edu/~tibs/ftp/strong.pdf \n\"Strong Rules for Discarding Predictors in Lasso-type Problems\"\nfor details of this screening method.\n\n-------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231 (Statistics)          Fax: (650) 725-8977  \n  (650) 498-5233 (Biostatistics)   Fax: (650) 725-6951\n  URL: http://www-stat.stanford.edu/~hastie  \n   address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
+      "body_snippet": "We have submitted glmnet_1.6 to CRAN\n\nThis version has an improved convergence criterion, and it also uses\na variable screening algorithm that dramatically reduces the time\nto convergence (while still",
+      "thread_id": "thread-91ea0703f53a",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-bef680b87021",
+      "message_id": "<BANLkTinKhNmNXfpczfgN9SqZDc2AEu1K5g@mail.gmail.com>",
+      "from_name": "Jeffrey Horner",
+      "from_email_hash": "7511839a7ff3ccd4495a33d9411dfe3760207a304859290cd9d586f8a1efa278",
+      "date": "2011-04-25T14:59:52-05:00",
+      "subject": "[R-pkgs] Rook: software and specification for R web applications and servers",
+      "subject_clean": "Rook: software and specification for R web applications and servers",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear  useRs,\n\nRook is a new package that does three things:\n\n - It provides a way to run R web applications on your desktop with the\n new internal R web server named Rhttpd. Please see the Rhttpd help page.\n\n - It provides a set of reference classes you can use to write you R\n web applications. The following help pages provide more information:\n Brewery, Builder, File, Middleware, Redirect, Request, Response, Static,\n URLMap, and Utils. Also see the example web applications located in\n 'system(\"exampleApps\",package=\"Rook\")'.\n\n - It provides a specification for writing your R web applications to\n work on any web server that supports the Rook specification. Currently,\n only Rhttpd implements it, but rApache is close behind. See the Rook\n help page for more information.\n\nYou may not see the need for web applications written in R, but consider\nusing Rook to build a statistical engine that complements a front-end\nweb system, or consider creating elegant ggplot2 graphics on-demand from\na fresh data stream. Also, consider creating dynamic instructional content\nfor the classroom.\n\nIf you have other examples or ideas, please join in the discussion on\nR-help or here:\n\nhttp://groups.google.com/group/rrook\n\n--\nJeffrey Horner  (author of rApache and brew)",
+      "body_snippet": "Dear  useRs,\n\nRook is a new package that does three things:\n\n - It provides a way to run R web applications on your desktop with the\n new internal R web server named Rhttpd. Please see the Rhttpd help",
+      "thread_id": "thread-bef680b87021",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-a69141fec09f",
+      "message_id": "<1303802581.4331.35.camel@netbook>",
+      "from_name": "Matthew Dowle",
+      "from_email_hash": "da70e29f21357922d3ff71dee2915877599edde846f651e4da8287df362c75d3",
+      "date": "2011-04-26T08:23:01+01:00",
+      "subject": "[R-pkgs] unknownR : you didn't know you didn't know?",
+      "subject_clean": "unknownR : you didn't know you didn't know?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Do you know how many functions there are in base R?\nHow many of them do you know you don't know?\nRun unk() to discover your unknown unknowns.\nIt's fast and it's fun!\n\nunknownR v0.2 is now on CRAN.\n\nMore information is on the homepage :\n\nhttp://unknownr.r-forge.r-project.org/\n\nOr, just install the package and try it :\n\ninstall.packages(\"unknownR\")\nlibrary(unknownR)\n?unk\nunk()\nlearn()\n\nMatthew",
+      "body_snippet": "Do you know how many functions there are in base R?\nHow many of them do you know you don't know?\nRun unk() to discover your unknown unknowns.\nIt's fast and it's fun!\n\nunknownR v0.2 is now on CRAN.\n\nMo",
+      "thread_id": "thread-a69141fec09f",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-94642d65eea1",
+      "message_id": "<BANLkTimyK4WXx4xBc9S-CLiqT0zTK-P7yA@mail.gmail.com>",
+      "from_name": "Fabian Scheipl",
+      "from_email_hash": "adbeb0db03d3186112f76493acdf9b0fd5241bd7f500835deb71b1a970697b72",
+      "date": "2011-04-27T09:32:32+02:00",
+      "subject": "[R-pkgs] spikeSlabGAM",
+      "subject_clean": "spikeSlabGAM",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "spikeSlabGAM_0.9-6 (initial public release)\n\nspikeSlabGAM implements Bayesian variable selection, model choice,\nand regularized estimation in  (geo-)additive mixed models for\nGaussian, binomial, and Poisson responses.\n\nIts purpose is (1) to choose an appropriate subset of potential\ncovariates and their interactions, (2) to determine whether linear\nor more flexible functional forms (P-splines, tensor product\nsplines) are required to model the (joint) effects of the respective\ncovariates, and (3) to fit these regularized effects and return\n(model-averaged) estimates.\n\nSelection and regularization of the model terms is based on a novel\nspike-and-slab-type prior on coefficient groups associated with\nparametric and semi-parametric effects. Inference is fully Bayesian\nwith an underlying MCMC sampler implemented in C and can take\nadvantage of multi-core processors via multicore or snow. The\npackage uses standard formula syntax so that complex models can be\nspecified very concisely. It features powerful and user friendly\nvisualizations using ggplot2.\n\n\n\n----------------------------------------------------------------------\nFabian Scheipl\nDepartment of Statistics\nLudwig-Maximilians-University Munich\nLudwigstr. 33, room 239\n80539 Munich\nGermany\nPhone: +49-89-2180-2284\nhttp://www.statistik.lmu.de/~scheipl/",
+      "body_snippet": "spikeSlabGAM_0.9-6 (initial public release)\n\nspikeSlabGAM implements Bayesian variable selection, model choice,\nand regularized estimation in  (geo-)additive mixed models for\nGaussian, binomial, and P",
+      "thread_id": "thread-94642d65eea1",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-7890e1222f44",
+      "message_id": "<4DB7E448.3020009@UGent.be>",
+      "from_name": "Yves Rosseel",
+      "from_email_hash": "7ee5d518252b686fc8ce3f122bc472d620147f60ac9268aceff8928b1fe84606",
+      "date": "2011-04-27T11:39:20+02:00",
+      "subject": "[R-pkgs] lavaan version 0.4-8",
+      "subject_clean": "lavaan version 0.4-8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nA new version of `lavaan' (for latent variable analysis) is now \navailable on CRAN. The current version of lavaan (0.4-8) can be used for \npath analysis, confirmatory factor analysis, structural equation\nmodeling, and growth curve modeling.\n\nMore information can be found on the website: http://lavaan.org\n\nTo get a first impression of how the 'lavaan model syntax' looks like,\nbelow is the full R code for fitting a SEM model:\n\n## begin R Code ##\nlibrary(lavaan)\n# The industrialization and Political Democracy Example\n# Bollen (1989), page 332\nmodel <- '\n    # latent variable definitions\n       ind60 =~ x1 + x2 + x3\n       dem60 =~ y1 + y2 + y3 + y4\n       dem65 =~ y5 + y6 + y7 + y8\n\n    # regressions\n      dem60 ~ ind60\n      dem65 ~ ind60 + dem60\n\n    # residual correlations\n      y1 ~~ y5\n      y2 ~~ y4 + y6\n      y3 ~~ y7\n      y4 ~~ y8\n      y6 ~~ y8\n'\nfit <- sem(model, data=PoliticalDemocracy)\nsummary(fit, fit.measures=TRUE)\n## end R code ##\n\n\nPlease feel free to contact me directly with questions and comments.\n\nBest,\n\nYves Rosseel.\n\n\n-- \nYves Rosseel -- http://www.da.ugent.be\nDepartment of Data Analysis, Ghent University\nHenri Dunantlaan 1, B-9000 Gent, Belgium",
+      "body_snippet": "Dear R-users,\n\nA new version of `lavaan' (for latent variable analysis) is now \navailable on CRAN. The current version of lavaan (0.4-8) can be used for \npath analysis, confirmatory factor analysis, s",
+      "thread_id": "thread-7890e1222f44",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-79de1850ad7e",
+      "message_id": "<C9DDE8C3.F0FD%max.kuhn@pfizer.com>",
+      "from_name": "kuhnA03",
+      "from_email_hash": "683b391ed661c070f5863decbf465c88d7809b3da1b1effc8e9572765023226e",
+      "date": "2011-04-27T15:37:39-04:00",
+      "subject": "[R-pkgs] Rule-based regression models: Cubist",
+      "subject_clean": "Rule-based regression models: Cubist",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Cubist is a rule-based machine learning model for regression. Parts of the\nCubist model are described in:\n\n   Quinlan. Learning with continuous classes. Proceedings\n   of the 5th Australian Joint Conference On Artificial\n   Intelligence (1992) pp. 343-348\n\n   Quinlan. Combining instance-based and model-based\n   learning. Proceedings of the Tenth International Conference\n   on Machine Learning (1993) pp. 236-243\n\nRuleQuest, the company that created the program, now have a version\navailable under the GPL at:\n\n   http://rulequest.com/cubist-info.html\n\nWe've taken the Cubist GPL code and created an R interface. The package\nlocations are:\n\n   http://cran.r-project.org/web/packages/mvpart/index.html\n\nand\n\n   https://r-forge.r-project.org/projects/rulebasedmodels/\n\nThe primary functions are cubist() for creating the ruled and the terminal\nmodels and predict.cubist() to predict new outcomes. The model allows for\ninstance-based corrections of the model predictions. We've separated the\ninstance-based correction from the model build so that the choice of\ninstances is only needed when samples are predicted. An interface for tuning\nthe Cubist model will be available in the caret package shortly.\n\nWe are also working on a similar port of C5.0 (also GPL'ed). The C code is\nvery similar, so much of the Cubist changes can be extended. That said, we'd\nappreciate help if anyone wants to contribute.\n\nHere is an example cubist session:\n\nlibrary(mlbench)\ndata(BostonHousing)\n\n## 1 committee and no instance-based correction, so just an M5 fit:\nmod1 <- cubist(x = BostonHousing[, -14], y = BostonHousing$medv)\nsummary(mod1)\n\n## example output:\n\n## Cubist [Release 2.07 GPL Edition]  Sun Apr 10 17:36:56 2011\n## ---------------------------------\n## \n##     Target attribute `outcome'\n## \n## Read 506 cases (14 attributes) from undefined.data\n## \n## Model:\n## \n##   Rule 1: [101 cases, mean 13.84, range 5 to 27.5, est err 1.98]\n## \n##     if\n##     nox > 0.668\n##     then\n##     outcome = -1.11 + 2.93 dis + 21.4 nox - 0.33 lstat + 0.008 b\n##               - 0.13 ptratio - 0.02 crim - 0.003 age + 0.1 rm\n## \n##   Rule 2: [203 cases, mean 19.42, range 7 to 31, est err 2.10]\n## \n##     if\n##     nox <= 0.668\n##     lstat > 9.59\n##     then\n##     outcome = 23.57 + 3.1 rm - 0.81 dis - 0.71 ptratio - 0.048 age\n##               - 0.15 lstat + 0.01 b - 0.0041 tax - 5.2 nox + 0.05 crim\n##               + 0.02 rad\n## \n##   Rule 3: [43 cases, mean 24.00, range 11.9 to 50, est err 2.56]\n## \n##     if\n##     rm <= 6.226\n##     lstat <= 9.59\n##     then\n##     outcome = 1.18 + 3.83 crim + 4.3 rm - 0.06 age - 0.11 lstat - 0.003\ntax\n##               - 0.09 dis - 0.08 ptratio\n## \n##   Rule 4: [163 cases, mean 31.46, range 16.5 to 50, est err 2.78]\n## \n##     if\n##     rm > 6.226\n##     lstat <= 9.59\n##     then\n##     outcome = -4.71 + 2.22 crim + 9.2 rm - 0.83 lstat - 0.0182 tax\n##               - 0.72 ptratio - 0.71 dis - 0.04 age + 0.03 rad - 1.7 nox\n##               + 0.008 zn\n## \n## \n## Evaluation on training data (506 cases):\n## \n##     Average  |error|               2.07\n##     Relative |error|               0.31\n##     Correlation coefficient        0.94\n## \n## \n##     Attribute usage:\n##       Conds  Model\n## \n##        80%   100%    lstat\n##        60%    92%    nox\n##        40%   100%    rm\n##              100%    crim\n##              100%    age\n##              100%    dis\n##              100%    ptratio\n##               80%    tax\n##               72%    rad\n##               60%    b\n##               32%    zn\n## \n## \n## Time: 0.0 secs\n\n\nThanks,\n\nMax, Steve and Chris",
+      "body_snippet": "Cubist is a rule-based machine learning model for regression. Parts of the\nCubist model are described in:\n\n   Quinlan. Learning with continuous classes. Proceedings\n   of the 5th Australian Joint Conf",
+      "thread_id": "thread-79de1850ad7e",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-581fef3ff5f1",
+      "message_id": "<1303939655.4824.200.camel@netbook>",
+      "from_name": "Matthew Dowle",
+      "from_email_hash": "da70e29f21357922d3ff71dee2915877599edde846f651e4da8287df362c75d3",
+      "date": "2011-04-27T22:27:35+01:00",
+      "subject": "[R-pkgs] data.table 1.6 is now on CRAN",
+      "subject_clean": "data.table 1.6 is now on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "data.table offers fast subset, fast grouping and fast ordered joins in a\nshort and flexible syntax, for faster development. It was first released\nin August 2008 and is now the 3rd most popular package on Crantastic\nwith 20 votes and 7 reviews.\n\n* X[Y] is a fast join for large data.\n* X[,sum(b*c),by=a] is fast aggregation.\n* 10+ times faster than tapply()\n* 100+ times faster than ==\n\nIt inherits from data.frame. It is compatible with packages that only\naccept data.frame.\n\nThis is a major release that adds S4 compatibility to the package,\ncontributed by Steve Lianoglou.\n\nRecently the FAQs have been revised and ?data.table has been simplified\nwith shorter and easier examples. There is a wiki (with content), three\nvignettes, a video, a NEWS file and an active user community.\n\nhttp://datatable.r-forge.r-project.org/\n\nhttp://unknownr.r-forge.r-project.org/toppkgs.html\n\n\nMatthew, Tom and Steve",
+      "body_snippet": "data.table offers fast subset, fast grouping and fast ordered joins in a\nshort and flexible syntax, for faster development. It was first released\nin August 2008 and is now the 3rd most popular package",
+      "thread_id": "thread-581fef3ff5f1",
+      "thread_depth": 0,
+      "month": "2011-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b11ea29af771",
+      "subject": "[R-package] PredictABEL 1.1: Assessment of risk prediction models in R",
+      "message_count": 1,
+      "participants": [
+        "Suman Kundu"
+      ],
+      "started": "2011-04-06T05:40:33-07:00",
+      "last_reply": "2011-04-06T05:40:33-07:00",
+      "root_message_id": "msg-b11ea29af771"
+    },
+    {
+      "id": "thread-cdd08d9dc659",
+      "subject": "plyr: version 1.5",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2011-04-11T07:16:01-05:00",
+      "last_reply": "2011-04-11T07:16:01-05:00",
+      "root_message_id": "msg-cdd08d9dc659"
+    },
+    {
+      "id": "thread-2b1bdca5cd83",
+      "subject": "tikzDevice 0.6.0",
+      "message_count": 1,
+      "participants": [
+        "Charlie Sharpsteen"
+      ],
+      "started": "2011-04-13T17:35:55-07:00",
+      "last_reply": "2011-04-13T17:35:55-07:00",
+      "root_message_id": "msg-2b1bdca5cd83"
+    },
+    {
+      "id": "thread-ecae6c52c8a4",
+      "subject": "Boost library in R package.",
+      "message_count": 1,
+      "participants": [
+        "Cedric Ginestet"
+      ],
+      "started": "2011-04-19T16:47:51+01:00",
+      "last_reply": "2011-04-19T16:47:51+01:00",
+      "root_message_id": "msg-ecae6c52c8a4"
+    },
+    {
+      "id": "thread-91ea0703f53a",
+      "subject": "glmnet_1.6 uploaded to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2011-04-19T19:15:14-07:00",
+      "last_reply": "2011-04-19T19:15:14-07:00",
+      "root_message_id": "msg-91ea0703f53a"
+    },
+    {
+      "id": "thread-bef680b87021",
+      "subject": "Rook: software and specification for R web applications and servers",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Horner"
+      ],
+      "started": "2011-04-25T14:59:52-05:00",
+      "last_reply": "2011-04-25T14:59:52-05:00",
+      "root_message_id": "msg-bef680b87021"
+    },
+    {
+      "id": "thread-a69141fec09f",
+      "subject": "unknownR : you didn't know you didn't know?",
+      "message_count": 1,
+      "participants": [
+        "Matthew Dowle"
+      ],
+      "started": "2011-04-26T08:23:01+01:00",
+      "last_reply": "2011-04-26T08:23:01+01:00",
+      "root_message_id": "msg-a69141fec09f"
+    },
+    {
+      "id": "thread-94642d65eea1",
+      "subject": "spikeSlabGAM",
+      "message_count": 1,
+      "participants": [
+        "Fabian Scheipl"
+      ],
+      "started": "2011-04-27T09:32:32+02:00",
+      "last_reply": "2011-04-27T09:32:32+02:00",
+      "root_message_id": "msg-94642d65eea1"
+    },
+    {
+      "id": "thread-7890e1222f44",
+      "subject": "lavaan version 0.4-8",
+      "message_count": 1,
+      "participants": [
+        "Yves Rosseel"
+      ],
+      "started": "2011-04-27T11:39:20+02:00",
+      "last_reply": "2011-04-27T11:39:20+02:00",
+      "root_message_id": "msg-7890e1222f44"
+    },
+    {
+      "id": "thread-79de1850ad7e",
+      "subject": "Rule-based regression models: Cubist",
+      "message_count": 1,
+      "participants": [
+        "kuhnA03"
+      ],
+      "started": "2011-04-27T15:37:39-04:00",
+      "last_reply": "2011-04-27T15:37:39-04:00",
+      "root_message_id": "msg-79de1850ad7e"
+    },
+    {
+      "id": "thread-581fef3ff5f1",
+      "subject": "data.table 1.6 is now on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Matthew Dowle"
+      ],
+      "started": "2011-04-27T22:27:35+01:00",
+      "last_reply": "2011-04-27T22:27:35+01:00",
+      "root_message_id": "msg-581fef3ff5f1"
+    }
+  ]
+}

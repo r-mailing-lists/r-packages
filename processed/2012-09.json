@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2012-09",
+  "messages": [
+    {
+      "id": "msg-cbb138ea232e",
+      "message_id": "<B2BC088B83062D4A84D9C920BFA5CD2B10825BAC@CHCSPMBX1.ads.northwestern.edu>",
+      "from_name": "William R Revelle",
+      "from_email_hash": "90c1f4b1911cae8b00cb728d30f21f87f09094fdd3ec43a43946e4349d6c6133",
+      "date": "2012-09-09T19:50:01Z",
+      "subject": "[R-pkgs] psych 1.2.8 has been released",
+      "subject_clean": "psych 1.2.8 has been released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear fellow R users.\n\nI have released version 1.2.8 of the psych package.  This replaces 1.2.4 from the April release.\n\nThe more important changes \n\n    o   Modified score.irt so that subjects who miss all items or pass all\n\titems are given an estimate based upon the (product) of the\n\tdifficulty of the items they miss (pass) and then adjusted based\n\tupon half the quantile difference from 0 (if they miss all items)\n\tand 100 (if they pass all items).\n\n    o   Modified sim.omega to allow for specifying a general factor.  This\n\tallows for tests of not just the bias in the case of no general\n\tfactor, but also the ability to detect a general factor.  Also\n\tmodified it to include calls to omegaSem.\n\n    o   Modified iclust so that the fit statistic is based upon the\n\toff-diagonal elements unless otherwise specified.  Use diagonal\n\t=TRUE to get fits matching previous analyses.\n   \n    o   Added a function (irt.responses) to plot responses as a function of\n\tthe latent score for analyzing multiple choice alternatives.\n\n    o   Added a function, statsBy, to find summary statistics (means,\n\tsample sizes, standard deviations) by a grouping variable.  Similar\n\tto describeBy but somewhat easier to use. Also will report (as an\n\toption) the pooled within group correlations.  Calculates the within and between group correlations.\n\n\n\nThis has the normal number of small bug fixes and feature changes requested by various helpful users.\n\nFor a full list of changes try\nnews(Version > \"1.2.4\",package=\"psych\")\n\n Suggestions for additions and improvements are always welcome and sometimes implemented.\n\nBill\n \n\n\n\nWilliam Revelle\t\t           http://personality-project.org/revelle.html\nProfessor\t\t\t           http://personality-project.org\nDepartment of Psychology   http://www.wcas.northwestern.edu/psych/\nNorthwestern University\t   http://www.northwestern.edu/\nUse R for psychology             http://personality-project.org/r\nIt is 5 minutes to midnight\t   http://www.thebulletin.org",
+      "body_snippet": "Dear fellow R users.\n\nI have released version 1.2.8 of the psych package.  This replaces 1.2.4 from the April release.\n\nThe more important changes \n\n    o   Modified score.irt so that subjects who mis",
+      "thread_id": "thread-cbb138ea232e",
+      "thread_depth": 0,
+      "month": "2012-09"
+    },
+    {
+      "id": "msg-9e546383dacb",
+      "message_id": "<1C5C2DA4AB9170439BCB4632D98B59800BE5C35F@AMSPRD0104MB135.eurprd01.prod.exchangelabs.com>",
+      "from_name": "Geraci, Marco",
+      "from_email_hash": "3323fcb679ec024753146b6b0a8cf6361c9c51359b357de3077145a08d1ce1a7",
+      "date": "2012-09-17T10:25:11Z",
+      "subject": "[R-pkgs] lqmm package 1.02",
+      "subject_clean": "lqmm package 1.02",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120917/a80df3bf/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120917/a80df3bf/attachment.pl>",
+      "thread_id": "thread-9e546383dacb",
+      "thread_depth": 0,
+      "month": "2012-09"
+    },
+    {
+      "id": "msg-b29569196cf3",
+      "message_id": "<7191AFC7255B4F49A30707E39BEAD05F64E121@EXCH-RX03.erasmusmc.nl>",
+      "from_name": "D. Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2012-09-18T13:39:30Z",
+      "subject": "[R-pkgs] New Package 'JMbayes' for the Joint Modeling of Longitudinal\tand Survival Data under a Bayesian approach",
+      "subject_clean": "New Package 'JMbayes' for the Joint Modeling of Longitudinal\tand Survival Data under a Bayesian approach",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI would like to announce the release of the new package JMbayes \navailable from CRAN (http://CRAN.R-project.org/package=JMbayes). This \npackage fits shared parameter models for the joint modeling of normal \nlongitudinal responses and event times under a Bayesian approach using \nJAGS, WinBUGS or OpenBUGS.\n\nThe package has a single model-fitting function called \njointModelBayes(), which accepts as main arguments a linear mixed \neffects object fit returned by function lme() of package nlme, and a Cox \nmodel object fit returned by function coxph() of package survival.\n\n* jointModelBayes() allows for joint models with relative risk survival \nsubmodels with Weibull or B-spline approximated baseline hazard \nfunctions (controlled by argument 'survMod').\n\n* In addition, argument 'param' of jointModelBayes() specifies the \nassociation structure between the longitudinal and survival processes; \navailable options are:\n\n   - \"td-value\" which is the classic joint model formulation used in \nWulfsohn and Tsiatis (1997);\n\n   - \"td-extra\" which is a user-defined, possibly time-dependent, term \nbased on the specification of  the 'extraForm' argument of \njointModelBayes(). This could be used to include terms, such as the \ntime-dependent slope (i.e., the derivative of the subject-specific \nlinear predictor of the linear mixed model), and the time-dependent \ncumulative effect (i.e., the integral of the subject-specific linear \npredictor of the linear mixed model);\n\n   - \"td-both\" which is the combination of the previous two \nparameterizations, i.e., the current value and the user-specified terms \nare included in the linear predictor of the relative risk model; and\n\n   - \"shared-RE\" where only the random effects of the linear mixed model \nare included in the linear predictor of the survival submodel.\n\nThe package also provides functionality for computing dynamic \npredictions for the longitudinal and time-to-event outcomes using \nfunctions predict() and survfitJM(), respectively.\n\nAs always, any kind of feedback (questions, suggestions, bug-reports, \netc.) is more than welcome.\n\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014\nWeb: http://www.erasmusmc.nl/biostatistiek/",
+      "body_snippet": "Dear R-users,\n\nI would like to announce the release of the new package JMbayes \navailable from CRAN (http://CRAN.R-project.org/package=JMbayes). This \npackage fits shared parameter models for the join",
+      "thread_id": "thread-b29569196cf3",
+      "thread_depth": 0,
+      "month": "2012-09"
+    },
+    {
+      "id": "msg-adc5b8442be2",
+      "message_id": "<1348995284.31596.133.camel@milan>",
+      "from_name": "Milan Bouchet-Valat",
+      "from_email_hash": "0bb61b03926bd98d69d06d70fa8e9e1fc611c8b4d6e5734399f74a96ef3e03c1",
+      "date": "2012-09-30T10:54:44+02:00",
+      "subject": "[R-pkgs] New package: logmult (log-multiplicative models)",
+      "subject_clean": "New package: logmult (log-multiplicative models)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is a wrapper around gnm by Turner and Firth to make fitting\nlog-multiplicative models as convenient as possible: it provides simple\nfunctions, good starting values, jackknife or bootstrap standard errors,\nand direct plotting of the results.\n\nIn addition, it makes it possible to identify scores from RC(M)\nassociation models, which gnm does not allow without computing the SVD\nyourself. It will probably get support for more models in the future.\n\n\nBut let DESCRIPTION speak for itself:\n\nlogmult: Log-multiplicative models, including association models\n\nFunctions to fit log-multiplicative models using gnm, with support for\nconvenient printing, plots, and jackknife/bootstrap standard errors.\nCurrently supported models include UNIDIFF (Erikson & Goldthorpe),\na.k.a. log-multiplicative layer effect model (Xie), and several\nassociation models: Goodman's row-column association models of the RC(M)\nand RC(M)-L families resp. for two- and three-way tables with one or\nseveral dimensions; two skew-symmetric association models proposed by\nYamaguchi and by van der Heijden & Mooijaart.\n\n\nThanks for your attention. As usual, comments and bug reports are\nwelcome!\n\n\n\n--\nMilan Bouchet-Valat\nPh.D. at Observatory for Social Change (OCS-Sciences Po Paris)\nQuantitative Sociology Laboratory (LSQ-CREST)\nFrench National Institute for Demographic Studies (INED)",
+      "body_snippet": "This is a wrapper around gnm by Turner and Firth to make fitting\nlog-multiplicative models as convenient as possible: it provides simple\nfunctions, good starting values, jackknife or bootstrap standar",
+      "thread_id": "thread-adc5b8442be2",
+      "thread_depth": 0,
+      "month": "2012-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cbb138ea232e",
+      "subject": "psych 1.2.8 has been released",
+      "message_count": 1,
+      "participants": [
+        "William R Revelle"
+      ],
+      "started": "2012-09-09T19:50:01+00:00",
+      "last_reply": "2012-09-09T19:50:01+00:00",
+      "root_message_id": "msg-cbb138ea232e"
+    },
+    {
+      "id": "thread-9e546383dacb",
+      "subject": "lqmm package 1.02",
+      "message_count": 1,
+      "participants": [
+        "Geraci, Marco"
+      ],
+      "started": "2012-09-17T10:25:11+00:00",
+      "last_reply": "2012-09-17T10:25:11+00:00",
+      "root_message_id": "msg-9e546383dacb"
+    },
+    {
+      "id": "thread-b29569196cf3",
+      "subject": "New Package 'JMbayes' for the Joint Modeling of Longitudinal\tand Survival Data under a Bayesian approach",
+      "message_count": 1,
+      "participants": [
+        "D. Rizopoulos"
+      ],
+      "started": "2012-09-18T13:39:30+00:00",
+      "last_reply": "2012-09-18T13:39:30+00:00",
+      "root_message_id": "msg-b29569196cf3"
+    },
+    {
+      "id": "thread-adc5b8442be2",
+      "subject": "New package: logmult (log-multiplicative models)",
+      "message_count": 1,
+      "participants": [
+        "Milan Bouchet-Valat"
+      ],
+      "started": "2012-09-30T10:54:44+02:00",
+      "last_reply": "2012-09-30T10:54:44+02:00",
+      "root_message_id": "msg-adc5b8442be2"
+    }
+  ]
+}

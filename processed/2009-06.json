@@ -1,0 +1,279 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2009-06",
+  "messages": [
+    {
+      "id": "msg-31d557d6c7b3",
+      "message_id": "<4A284574.1000408@ucla.edu>",
+      "from_name": "Jeffrey Lewis",
+      "from_email_hash": "7e8e14684d5eead355808b885a0751cdc94c512329eb64313e0fea162810e78f",
+      "date": "2009-06-04T15:06:44-07:00",
+      "subject": "[R-pkgs] (ORPHANED) rimage 0.5-8 package uploaded",
+      "subject_clean": "(ORPHANED) rimage 0.5-8 package uploaded",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uploaded a new \nrelease, 0.5-8, that fixes these problems. \n\nIt have attempted to contact the package's  maintainer, Tomomi TAKASHINA \n<t.takashina at computer.org>, to no avail.   Kurt Hornik has also not been \nable to make contact with Tomomi. \n\nAt Kurt's suggestion, I have changed the maintainer to \"ORPHANED.\"\n\nBest,\n\nJeff Lewis\n\n-- \nJeffrey B. Lewis, Associate Professor \nDepartment of Political Science\nUniversity of California Los Angeles\nLos Angeles CA 90095\nt: 310.206.5295  f: 310.825.0778\nw: http://www.polisci.ucla.edu/faculty/lewis",
+      "body_snippet": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uplo",
+      "thread_id": "thread-31d557d6c7b3",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-31d557d6c7b3",
+      "message_id": "<4A284574.1000408@ucla.edu>",
+      "from_name": "Jeffrey Lewis",
+      "from_email_hash": "7e8e14684d5eead355808b885a0751cdc94c512329eb64313e0fea162810e78f",
+      "date": "2009-06-04T15:06:44-07:00",
+      "subject": "[R-pkgs] (ORPHANED) rimage 0.5-8 package uploaded",
+      "subject_clean": "(ORPHANED) rimage 0.5-8 package uploaded",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uploaded a new \nrelease, 0.5-8, that fixes these problems. \n\nIt have attempted to contact the package's  maintainer, Tomomi TAKASHINA \n<t.takashina at computer.org>, to no avail.   Kurt Hornik has also not been \nable to make contact with Tomomi. \n\nAt Kurt's suggestion, I have changed the maintainer to \"ORPHANED.\"\n\nBest,\n\nJeff Lewis\n\n-- \nJeffrey B. Lewis, Associate Professor \nDepartment of Political Science\nUniversity of California Los Angeles\nLos Angeles CA 90095\nt: 310.206.5295  f: 310.825.0778\nw: http://www.polisci.ucla.edu/faculty/lewis",
+      "body_snippet": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uplo",
+      "thread_id": "thread-31d557d6c7b3",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-aa5277c33fab",
+      "message_id": "<4A300C30.10102@wcgwave.ca>",
+      "from_name": "Drew Hoysak",
+      "from_email_hash": "0f2f248e57a46eff9f527395ce5019039f6d17e8c0f693a795f81e5d72d392eb",
+      "date": "2009-06-10T14:40:32-05:00",
+      "subject": "[R-pkgs] package installation fails (RandomFields)",
+      "subject_clean": "package installation fails (RandomFields)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have been unable to install the package RandomFields. I am using R \n2.9.0-4 on Ubuntu 9.04.\n\nTo install, I use the command:\nsudo R CMD INSTALL RandomFields_1.3.37.tar.gz\n\n\nThe output follows below. Any help Would be appreciated.\n\nD. Hoysak\nBrandon University\n\n\n* Installing to library ?/usr/local/lib/R/site-library?\n* Installing *source* package ?RandomFields? ...\n** libs\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c D.H.cc -o D.H.o\nIn file included from D.H.cc:27:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c Hyperfcts.cc -o Hyperfcts.o\nIn file included from Hyperfcts.cc:27:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nHyperfcts.cc: In function ?int checkNinit_co(covinfo_type*, int*, int, \nSimulationType, bool)?:\nHyperfcts.cc:145: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:145: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:145: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:145: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:145: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc: In function ?int checkNinit_Stein(covinfo_type*, int*, \nint, SimulationType, bool)?:\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\nHyperfcts.cc:261: warning: deprecated conversion from string constant to \n?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c MPP.cc -o MPP.o\nIn file included from MPP.cc:32:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c MPPFcts.cc -o MPPFcts.o\nIn file included from MPPFcts.cc:48:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFCovFcts.cc -o RFCovFcts.o\nIn file included from RFCovFcts.cc:47:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFcircembed.cc -o \nRFcircembed.o\nIn file included from RFcircembed.cc:33:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFcircembed.cc: In function ?void SetParamCircEmbed(int*, int*, double*, \ndouble*, int*, int*, double*, int*, int*, double*, int*)?:\nRFcircembed.cc:114: warning: deprecated conversion from string constant \nto ?char*?\nRFcircembed.cc: In function ?void SetParamLocal(int*, int*, double*, \ndouble*, int*, double*, int*, double*, int*)?:\nRFcircembed.cc:124: warning: deprecated conversion from string constant \nto ?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFdirect.cc -o RFdirect.o\nIn file included from RFdirect.cc:28:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFempvario.cc -o RFempvario.o\nIn file included from RFempvario.cc:28:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFgetNset.cc -o RFgetNset.o\nIn file included from RFgetNset.cc:36:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFgetNset.cc: In function ?SEXPREC* TooLarge(int*, int)?:\nRFgetNset.cc:1081: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1081: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc: In function ?SEXPREC* GetModelInfo(covinfo_type*, int, \nint, long int)?:\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1106: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc: In function ?SEXPREC* GetMethodInfo(key_type*, \nmethodvalue_type*, bool, int, int)?:\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1186: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1336: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1336: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1336: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc: In function ?SEXPREC* InternalGetKeyInfo(key_type*, bool, \nint, int)?:\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\nRFgetNset.cc:1478: warning: deprecated conversion from string constant \nto ?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFhyperplan.cc -o \nRFhyperplan.o\nIn file included from RFhyperplan.cc:29:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFinitNerror.cc -o \nRFinitNerror.o\nIn file included from RFinitNerror.cc:32:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFinitNerror.cc: In function ?void InitModelList()?:\nRFinitNerror.cc:451: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:456: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:462: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:467: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:473: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:477: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:482: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:491: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:496: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:501: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:511: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:515: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:520: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:524: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:530: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:536: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:541: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:546: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:551: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:556: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:561: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:565: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:571: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:576: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:588: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:593: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:598: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:603: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:609: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:623: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:629: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:633: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:638: warning: deprecated conversion from string constant \nto ?char*?\nRFinitNerror.cc:646: warning: deprecated conversion from string constant \nto ?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFnugget.cc -o RFnugget.o\nIn file included from RFnugget.cc:29:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFother.cc -o RFother.o\nIn file included from RFother.cc:28:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFsimu.cc -o RFsimu.o\nIn file included from RFsimu.cc:52:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFsimu.cc: In function ?int check_within_range(double*, cov_fct*, int, \nchar*)?:\nRFsimu.cc:759: warning: deprecated conversion from string constant to \n?char*?\nRFsimu.cc:761: warning: deprecated conversion from string constant to \n?char*?\nRFsimu.cc:772: warning: deprecated conversion from string constant to \n?char*?\nRFsimu.cc:774: warning: deprecated conversion from string constant to \n?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFspectral.cc -o RFspectral.o\nIn file included from RFspectral.cc:27:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFspectral.cc: In function ?int init_simulatespectral(key_type*, int)?:\nRFspectral.cc:96: warning: deprecated conversion from string constant to \n?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c RFtbm.cc -o RFtbm.o\nIn file included from RFtbm.cc:33:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\nRFtbm.cc: In function ?void SetParamTBMCE(int*, int*, double*, double*, \nint*, double*, int*, int*, double*, int*)?:\nRFtbm.cc:271: warning: deprecated conversion from string constant to ?char*?\nRFtbm.cc: In function ?void SetParamTBM2(int*, int*, double*, double*, \nint*, int*, int*)?:\nRFtbm.cc:316: warning: deprecated conversion from string constant to ?char*?\nRFtbm.cc: In function ?void SetParamTBM3(int*, int*, double*, double*, \nint*, int*)?:\nRFtbm.cc:326: warning: deprecated conversion from string constant to ?char*?\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c Xempvario.cc -o Xempvario.o\nIn file included from Xempvario.cc:28:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c addownfctns.cc -o \naddownfctns.o\nIn file included from addownfctns.cc:6:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c auxiliary.cc -o auxiliary.o\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c avltr.cc -o avltr.o\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c extremes.cc -o extremes.o\nIn file included from extremes.cc:27:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c modelling.cc -o modelling.o\nIn file included from modelling.cc:48:\nRFsimu.h:38: warning: ?typedef? was ignored in this declaration\nRFsimu.h:261: warning: ?typedef? was ignored in this declaration\nRFsimu.h:309: warning: ?typedef? was ignored in this declaration\ng++ -I/usr/share/R/include -g -fpic -g -O2 -c win_linux_aux.cc -o \nwin_linux_aux.o\ng++ -shared -o RandomFields.so D.H.o Hyperfcts.o MPP.o MPPFcts.o \nRFCovFcts.o RFcircembed.o RFdirect.o RFempvario.o RFgetNset.o \nRFhyperplan.o RFinitNerror.o RFnugget.o RFother.o RFsimu.o RFspectral.o \nRFtbm.o Xempvario.o addownfctns.o auxiliary.o avltr.o extremes.o \nmodelling.o win_linux_aux.o -llapack -L/usr/lib/R/lib -lR\n/usr/bin/ld: cannot find -llapack\ncollect2: ld returned 1 exit status\nmake: *** [RandomFields.so] Error 1\nERROR: compilation failed for package ?RandomFields?\n* Removing ?/usr/local/lib/R/site-library/RandomFields?",
+      "body_snippet": "I have been unable to install the package RandomFields. I am using R \n2.9.0-4 on Ubuntu 9.04.\n\nTo install, I use the command:\nsudo R CMD INSTALL RandomFields_1.3.37.tar.gz\n\n\nThe output follows below. ",
+      "thread_id": "thread-aa5277c33fab",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-840c6bdccd78",
+      "message_id": "<9E6E12F5-0ED0-49F2-A0FA-391C81DEDCD2@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-06-17T09:00:55-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 1.8.0",
+      "subject_clean": "WriteXLS - New Version 1.8.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where downloads are available as well.\n\nPackage: WriteXLS\n\nVersion: 1.8.0\n\nDescription: Cross-platform perl based R function to create Excel (XLS)\nfiles from one or more data frames. Each data frame will be written to a\nseparate named worksheet in the Excel spreadsheet. The worksheet name  \nwill\nbe the name of the data frame it contains or can be specified by the  \nuser.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\n\nChanges since version 1.7.1:\n\nAdded a new argument \"Encoding\" to WriteXLS(). The argument enables the\nproper decoding of data in the package's WriteXLS.pl Perl script for\neither \"UTF-8\" (default) or \"latin1\" character sets. Previously only\nUTF-8 was supported. This is modeled after the Encoding() R function.\n\nThanks to Robert Burns for reporting the problem and testing the fix.",
+      "body_snippet": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where download",
+      "thread_id": "thread-840c6bdccd78",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-090c97dc0f6e",
+      "message_id": "<4A3B47C7.60508@erasmusmc.nl>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "e3806fb5379473fd3e6887382569f2b11f5441f7e9a036248c569fc43a86f380",
+      "date": "2009-06-19T10:09:43+02:00",
+      "subject": "[R-pkgs] package JM -- version 0.3-0",
+      "subject_clean": "package JM -- version 0.3-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data using shared parameter models. These models are \napplicable in mainly two settings. First, when focus is in the \ntime-to-event outcome and we wish to account for the effect of a \ntime-dependent covariate measured with error. Second, when focus is in \nthe longitudinal outcome and we wish to correct for nonrandom dropout.\n\nNew features include:\n\n   * a relative risk model with a piecewise-constant baseline risk \nfunction is now available for the event outcome, using option \n'piecewise-PH-GH' in the 'method' argument of jointModel().\n\n   * several types of residuals are supported for the longitudinal and \ntime-to-event outcomes. Moreover, for the longitudinal outcome there is \nalso the option to compute multiple-imputation-based residuals, as \ndescribed in Rizopoulos, Verbeke and Molenberghs (Biometrics 2009, to \nappear).\n\n   * the Weibull submodel for the time-to-event outcome is now available \nunder both the relative risk and accelerated failure time formulations.\n\n   * this new version of the package features new and more robust \nalgorithms for numerical integration and optimization -- these updates \ncould lead to different results, epsecially for the survival part \ncompared to the previous version the package.\n\n\nAs always, any kind of feedback (e.g., questions, suggestions, \nbug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n-- \nDimitris Rizopoulos\nAssistant Professor\nDepartment of Biostatistics\nErasmus University Medical Center\n\nAddress: PO Box 2040, 3000 CA Rotterdam, the Netherlands\nTel: +31/(0)10/7043478\nFax: +31/(0)10/7043014",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data using shared parameter mode",
+      "thread_id": "thread-090c97dc0f6e",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-9d2d50ac163e",
+      "message_id": "<4A409812.3080007@dbmail.com>",
+      "from_name": "Romain Francois",
+      "from_email_hash": "59e39d3ea92dfd200ae594261b1588764b0f983f395cce1fc006e71efaf2c073",
+      "date": "2009-06-23T10:53:38+02:00",
+      "subject": "[R-pkgs] RImageJ initial release",
+      "subject_clean": "RImageJ initial release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI've uploaded the initial release (0.0-142) of the RImageJ package to CRAN.\nThe package allows R to use the facilities of the java based image \nprocessing and analysis platform ImageJ.\n\nSee also the announcement on my blog, with a very simple example showing \nhow to use the package:\nhttp://romainfrancois.blog.free.fr/index.php?post/2009/06/22/using-ImageJ-from-R%3A-the-RImageJ-package \n\n\nThe package is currently very simple (5 lines of R code !) but \nadditional features (such as an implementation of the java graphics \ndevice on top of imagej) are planned.\n\nRomain\n\n-- \nRomain Francois\nIndependent R Consultant\n+33(0) 6 28 91 30 30\nhttp://romainfrancois.blog.free.fr",
+      "body_snippet": "Hello,\n\nI've uploaded the initial release (0.0-142) of the RImageJ package to CRAN.\nThe package allows R to use the facilities of the java based image \nprocessing and analysis platform ImageJ.\n\nSee al",
+      "thread_id": "thread-9d2d50ac163e",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-aac51d490a6e",
+      "message_id": "<f8e6ff050906230836k58d07d09k61da10fe4eb2c475@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2009-06-23T10:36:41-05:00",
+      "subject": "[R-pkgs] plyr 0.1.9",
+      "subject_clean": "plyr 0.1.9",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, you\nmight want to:\n\n  * fit the same model to subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n  * eliminate for-loops in your code\n\nIt's already possible to do this with built-in functions (like split\nand the apply functions), but plyr just makes it all a bit easier\nwith:\n\n  * absolutely consistent names, arguments and outputs\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n\nSome considerable effort has been put into making plyr fast and memory\nefficient, and in most cases it is faster than the built-in functions.\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.  You can ask\nquestions about plyr (and data-manipulation in general) on the plyr\nmailing list.  Sign up at http://groups.google.com/group/manipulatr\n\nplyr 0.1.9 (2009-06-23) ---------------------------------------------------\n\n* fix bug in rbind.fill when NULLs present in list\n* improve each to recognise when all elements are numeric\n* fix labelling bug in d*ply when .drop = FALSE\n* additional methods for quoted objects\n* add summarise helper - this function is like transform, but creates\na new data frame rather than reusing the old (thanks to Brendan\nO'Connor for the neat idea)\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, ",
+      "thread_id": "thread-aac51d490a6e",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-83fac8e0caa3",
+      "message_id": "<alpine.LFD.2.00.0906250952560.5639@gannet.stats.ox.ac.uk>",
+      "from_name": "Prof Brian Ripley",
+      "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
+      "date": "2009-06-25T09:53:41+01:00",
+      "subject": "[R-pkgs] RODBC 1.2-6 on CRAN, future directions",
+      "subject_clean": "RODBC 1.2-6 on CRAN, future directions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.2.6 of RODBC is now on CRAN.  This has a number of bug fixes and many \nworkarounds for ODBC driver quirks--I've set up further testbeds for SQL Server \n2008, Oracle and DB2.\n\nMore visibly, the documentation has been expanded in several ways, in \nparticular in collecting together advice on using 'schemas' and 'catalogs' in \nthe ?RODBC overview.\n\nThere is also a test suite which although mainly useful for the maintainer \nprovides some more detailed examples of working with the quirks of various \nbackends (and has examples for Oracle's own Windows ODBC driver). \nContributions of adaptations of those examples to other drivers would be \nwelcome (especially for Sybase and other ODBC drivers for Oracle).\n\nIn the next version much of the documentation will be moved from the help pages \nto a package manual: a draft of that manual appropriate to RODBC 1.2-6 can be \nfound at http://www.stats.ox.ac.uk/pub/bdr/RODBC-manual.pdf\n\nOther planned changes are speed-ups for Oracle (currently 4x on the test \nsuite), more support for schemas (that in 1.2-6 is just a first step, but the \nbehaviour of the ODBC drivers is remarkably inconsistent) and support for R's \n'raw' type.\n\n-- \nBrian D. Ripley,                  ripley at stats.ox.ac.uk\nProfessor of Applied Statistics,  http://www.stats.ox.ac.uk/~ripley/\nUniversity of Oxford,             Tel:  +44 1865 272861 (self)\n1 South Parks Road,                     +44 1865 272866 (PA)\nOxford OX1 3TG, UK                Fax:  +44 1865 272595",
+      "body_snippet": "Version 1.2.6 of RODBC is now on CRAN.  This has a number of bug fixes and many \nworkarounds for ODBC driver quirks--I've set up further testbeds for SQL Server \n2008, Oracle and DB2.\n\nMore visibly, t",
+      "thread_id": "thread-83fac8e0caa3",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-be27cf2e3d85",
+      "message_id": "<8986526B-E4B4-46F1-9E92-003DD0CCDDA5@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-06-25T10:26:44-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 1.8.1",
+      "subject_clean": "WriteXLS - New Version 1.8.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where downloads will be available as well. There is a transient  \nproblem at the moment with R-Forge and the build system, so there may  \nbe delays using R-Forge to get the updated package builds.\n\nPackage: WriteXLS\n\nVersion: 1.8.1\n\nDescription: Cross-platform perl based R function to create Excel  \n(XLS) files from one or more data frames. Each data frame will be  \nwritten to a separate named worksheet in the Excel spreadsheet. The  \nworksheet name will be the name of the data frame it contains or can  \nbe specified by the user.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\n\nChanges since version 1.8.0:\n\nThe data frames will be written to the Excel file in the order that  \nthey appear in 'x'. Note that this is a change in the default  \nbehavior, where due to Perl's file globbing, they would previously  \nhave been written in alpha sort order. The prior default behavior  \ncould result in a mis-match between the data frames written to the  \nExcel worksheets and the user specified worksheet names as indicated  \nin the 'SheetNames' argument (added recently in version 1.7.1), if  \npresent.\n\nAs a result of the above change, File::Glob is no longer used and has  \nbeen removed as a required Perl module for the package. References to  \nFile::Glob have been removed from the testPerl() function and all  \nsupporting files.\n\nThe INSTALL file has been copied to the 'inst' package folder, so that  \nit is installed in the main package directory. It will therefore be  \navailable both on the CRAN mirror page for the package and on the  \nuser's system as referenced in the help files.",
+      "body_snippet": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where download",
+      "thread_id": "thread-be27cf2e3d85",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-3647830d15a6",
+      "message_id": "<4A48DF98.9070403@tu-dresden.de>",
+      "from_name": "Thomas Petzoldt",
+      "from_email_hash": "3221ae08bdf4f7466b5fc73f2e690233d8c64cb67da7f8476c4ec5c734737d1e",
+      "date": "2009-06-29T17:36:56+02:00",
+      "subject": "[R-pkgs] new version of package deSolve on CRAN",
+      "subject_clean": "new version of package deSolve on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nan improved version of package deSolve (version 1.3) is now available on\nCRAN. deSolve, the successor of R package odesolve, is a package to\nsolve initial value problems (IVP) of:\n\n- ordinary differential equations (ODE),\n- differential algebraic equations (DAE) and\n- partial differential equations (PDE).\n\nThe implementation includes stiff integration routines based on the\nODEPACK Fortran codes (Hindmarsh 1983). It also contains fixed and\nadaptive time step Runge-Kutta solvers and the Euler method.\n\n\nMain improvements:\n\n- new introductory tutorial (vignette) \"Solving initial value\ndifferential equations in R\",\n\n- all integrators are now implemented in compiled languages (Fortran\nresp. C). Now all solvers allow to call compiled models directly (see\npackage vignette \"Writing Code in Compiled Language\").\n\n- new function ode.3d that supplements the already existing\node.1d and ode.2d,\n\n- new function \"diagnostics\",\n\n- many small improvements, especially of the documentation.\n\n\nHave fun!\n\nThomas Petzoldt, Karline Soetaert, Woodrow Setzer",
+      "body_snippet": "Dear R users,\n\nan improved version of package deSolve (version 1.3) is now available on\nCRAN. deSolve, the successor of R package odesolve, is a package to\nsolve initial value problems (IVP) of:\n\n- or",
+      "thread_id": "thread-3647830d15a6",
+      "thread_depth": 0,
+      "month": "2009-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-31d557d6c7b3",
+      "subject": "(ORPHANED) rimage 0.5-8 package uploaded",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Lewis"
+      ],
+      "started": "2009-06-04T15:06:44-07:00",
+      "last_reply": "2009-06-04T15:06:44-07:00",
+      "root_message_id": "msg-31d557d6c7b3"
+    },
+    {
+      "id": "thread-31d557d6c7b3",
+      "subject": "(ORPHANED) rimage 0.5-8 package uploaded",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Lewis"
+      ],
+      "started": "2009-06-04T15:06:44-07:00",
+      "last_reply": "2009-06-04T15:06:44-07:00",
+      "root_message_id": "msg-31d557d6c7b3"
+    },
+    {
+      "id": "thread-aa5277c33fab",
+      "subject": "package installation fails (RandomFields)",
+      "message_count": 1,
+      "participants": [
+        "Drew Hoysak"
+      ],
+      "started": "2009-06-10T14:40:32-05:00",
+      "last_reply": "2009-06-10T14:40:32-05:00",
+      "root_message_id": "msg-aa5277c33fab"
+    },
+    {
+      "id": "thread-840c6bdccd78",
+      "subject": "WriteXLS - New Version 1.8.0",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-06-17T09:00:55-05:00",
+      "last_reply": "2009-06-17T09:00:55-05:00",
+      "root_message_id": "msg-840c6bdccd78"
+    },
+    {
+      "id": "thread-090c97dc0f6e",
+      "subject": "package JM -- version 0.3-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2009-06-19T10:09:43+02:00",
+      "last_reply": "2009-06-19T10:09:43+02:00",
+      "root_message_id": "msg-090c97dc0f6e"
+    },
+    {
+      "id": "thread-aac51d490a6e",
+      "subject": "plyr 0.1.9",
+      "message_count": 1,
+      "participants": [
+        "Hadley Wickham"
+      ],
+      "started": "2009-06-23T10:36:41-05:00",
+      "last_reply": "2009-06-23T10:36:41-05:00",
+      "root_message_id": "msg-aac51d490a6e"
+    },
+    {
+      "id": "thread-9d2d50ac163e",
+      "subject": "RImageJ initial release",
+      "message_count": 1,
+      "participants": [
+        "Romain Francois"
+      ],
+      "started": "2009-06-23T10:53:38+02:00",
+      "last_reply": "2009-06-23T10:53:38+02:00",
+      "root_message_id": "msg-9d2d50ac163e"
+    },
+    {
+      "id": "thread-83fac8e0caa3",
+      "subject": "RODBC 1.2-6 on CRAN, future directions",
+      "message_count": 1,
+      "participants": [
+        "Prof Brian Ripley"
+      ],
+      "started": "2009-06-25T09:53:41+01:00",
+      "last_reply": "2009-06-25T09:53:41+01:00",
+      "root_message_id": "msg-83fac8e0caa3"
+    },
+    {
+      "id": "thread-be27cf2e3d85",
+      "subject": "WriteXLS - New Version 1.8.1",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-06-25T10:26:44-05:00",
+      "last_reply": "2009-06-25T10:26:44-05:00",
+      "root_message_id": "msg-be27cf2e3d85"
+    },
+    {
+      "id": "thread-3647830d15a6",
+      "subject": "new version of package deSolve on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Thomas Petzoldt"
+      ],
+      "started": "2009-06-29T17:36:56+02:00",
+      "last_reply": "2009-06-29T17:36:56+02:00",
+      "root_message_id": "msg-3647830d15a6"
+    }
+  ]
+}

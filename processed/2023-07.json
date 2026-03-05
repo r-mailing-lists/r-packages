@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-07",
+  "messages": [
+    {
+      "id": "msg-6b3f3ab0bd17",
+      "message_id": "<f4414e37-3eb8-4933-8c80-40dff5371998@app.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2023-07-19T23:23:14-04:00",
+      "subject": "[R-pkgs] gsDesign 3.5.0 is released",
+      "subject_clean": "gsDesign 3.5.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm thrilled to announce that a new version of gsDesign (3.5.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, largely as presented in Jennison and Turnbull (2000).\n\nThe 3.5.0 update introduces some significant enhancements:\n\n- New toInteger() function to convert gsDesign or gsSurv objects to integer sample size and event counts.\n- New toBinomialExact() function to convert time-to-event bounds to exact binomial for studies with low event rates.\n- New vignette on the fundamentals of asymptotics for group sequential design, and another vignette on the sequential probability ratio test for a single arm binary endpoint.\n\nWe have also improved compatibility with the latest ggplot2 version and have introduced a new hex sticker logo. For the complete list of updates, please see the changelog (https://keaven.github.io/gsDesign/news/).\n\nBest regards,\n-Nan",
+      "body_snippet": "Dear all,\n\nI'm thrilled to announce that a new version of gsDesign (3.5.0) is now on CRAN (https://cran.r-project.org/package=gsDesign). gsDesign supports group sequential clinical trial design, large",
+      "thread_id": "thread-6b3f3ab0bd17",
+      "thread_depth": 0,
+      "month": "2023-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6b3f3ab0bd17",
+      "subject": "gsDesign 3.5.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2023-07-19T23:23:14-04:00",
+      "last_reply": "2023-07-19T23:23:14-04:00",
+      "root_message_id": "msg-6b3f3ab0bd17"
+    }
+  ]
+}

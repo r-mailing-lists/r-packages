@@ -1,0 +1,65 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2010-06",
+  "messages": [
+    {
+      "id": "msg-9b0449d9a586",
+      "message_id": "<Pine.LNX.4.64.1006031005470.30296@siegel.dreamhost.com>",
+      "from_name": "W. A. Green",
+      "from_email_hash": "6dcec1f8c781d8f0f9168d3e20004908bfb5256579d22e30154d244da0d9314c",
+      "date": "2010-06-04T09:33:58-07:00",
+      "subject": "[R-pkgs] new package released: stratigraph v. 0.6b",
+      "subject_clean": "new package released: stratigraph v. 0.6b",
+      "in_reply_to": "<C82C8EC1.E54E%wings@si.edu>",
+      "references": [
+        "<C82C8EC1.E54E%wings@si.edu>"
+      ],
+      "body_plain": "Ladies and Gentlemen,\n\nThe first public (beta) release of the package stratigraph is now \navailable on CRAN:\n\nhttp://cran.r-project.org/web/packages/stratigraph/index.html\n\nIt includes tools for plotting pollen diagrams, an implementation of an \nevolutionary algorithm for drawing stratigraphic lines of correlation, and \nseveral other functions for the analysis and plotting of geological, \nbiological, ecological, and paleontological data distributed through time \nor stratigraphic depth.\n\nThere are still some problems with the windows binary, which will \nbe resolved shortly, but a source install should work. Older versions, \nwhich have been privately circulated in the past year are available at \nhttp://www.bricol.net/stratigraph, where a change log will also be \nmaintained. As ever, user patches, comments, bug reports, recommendations, \netc. are much appreciated.\n\nWalton Green\n\n## .signature\n# Walton A. Green\n# E-mail: $ echo wagreenXbricol.net | tr 'X' '@'\n# URL: <http://www.bricol.net>\n# Phone: (203) 640-8122\n#################### 60 characters wide ####################",
+      "body_snippet": "Ladies and Gentlemen,\n\nThe first public (beta) release of the package stratigraph is now \navailable on CRAN:\n\nhttp://cran.r-project.org/web/packages/stratigraph/index.html\n\nIt includes tools for plott",
+      "thread_id": "thread-9b0449d9a586",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-ca30ab4b2084",
+      "message_id": "<AANLkTilSBwdfEBdqSMkszF39--h5v49pALv9LW-Nun1U@mail.gmail.com>",
+      "from_name": "Udaya B. Kogalur",
+      "from_email_hash": "510b413366415761be208e26f940aad622a23c991221b0f9c11965d32b980b2f",
+      "date": "2010-06-15T11:59:25-04:00",
+      "subject": "[R-pkgs] spikeslab 1.1.0 now available on CRAN",
+      "subject_clean": "spikeslab 1.1.0 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Please find release 1.1.0 of the CRAN package \"spikeslab\" now\navailable for download.\n\nSpike and slab for prediction and variable selection in linear\nregression models. Uses a generalized elastic net for variable\nselection.\n\nCHANGES TO RELEASE 1.1.0\n\nRELEASE 1.1.0 is a recommended upgrade of the product.\n\no cv.spikeslab() now takes advantage of the CRAN package \"snow\".  It\nallows users to create a socket cluser on the local machine, enabling\nparallel execution of this function.  It scales with the number of CPU\ncores on the local machine.\n\n-- \nkogalurshear at gmail.com\n\nUdaya B. Kogalur, Ph.D.\nAdjunct Staff, Dept of Quantitative Health Sciences, Cleveland Clinic Foundation\nPresident, Kogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Please find release 1.1.0 of the CRAN package \"spikeslab\" now\navailable for download.\n\nSpike and slab for prediction and variable selection in linear\nregression models. Uses a generalized elastic net ",
+      "thread_id": "thread-ca30ab4b2084",
+      "thread_depth": 0,
+      "month": "2010-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9b0449d9a586",
+      "subject": "new package released: stratigraph v. 0.6b",
+      "message_count": 1,
+      "participants": [
+        "W. A. Green"
+      ],
+      "started": "2010-06-04T09:33:58-07:00",
+      "last_reply": "2010-06-04T09:33:58-07:00",
+      "root_message_id": "msg-9b0449d9a586"
+    },
+    {
+      "id": "thread-ca30ab4b2084",
+      "subject": "spikeslab 1.1.0 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Udaya B. Kogalur"
+      ],
+      "started": "2010-06-15T11:59:25-04:00",
+      "last_reply": "2010-06-15T11:59:25-04:00",
+      "root_message_id": "msg-ca30ab4b2084"
+    }
+  ]
+}

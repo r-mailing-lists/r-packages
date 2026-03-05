@@ -1,0 +1,198 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-03",
+  "messages": [
+    {
+      "id": "msg-61f5a339f4f3",
+      "message_id": "<07d7001b-45b0-4b0d-88cf-7fcea46de017@www.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2021-03-08T18:04:28-05:00",
+      "subject": "[R-pkgs] pkglite: Compact Package Representations",
+      "subject_clean": "pkglite: Compact Package Representations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that {pkglite} is now on CRAN. It aims to offer a tool, grammar, and standard to represent and exchange R packages as text files. It can convert one or more source packages to a text file and restore the package structures from the file.\n\nI hope you find it helpful. Please feel free to reach out with feedback or questions.\n\nCRAN: https://cran.r-project.org/package=pkglite\nDocumentation: https://merck.github.io/pkglite/\n\nThanks,\n-Nan",
+      "body_snippet": "Dear all,\n\nI am happy to announce that {pkglite} is now on CRAN. It aims to offer a tool, grammar, and standard to represent and exchange R packages as text files. It can convert one or more source pa",
+      "thread_id": "thread-61f5a339f4f3",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-7fe5b9c84c9c",
+      "message_id": "<CO2PR04MB2231845593028B6FF61BC86FFB919@CO2PR04MB2231.namprd04.prod.outlook.com>",
+      "from_name": "Jacob Goldsmith",
+      "from_email_hash": "01a2bebbe96500dcc65efc1098e57f78be806622ecdc5abe609fd1bdc6c0967a",
+      "date": "2021-03-10T07:36:30Z",
+      "subject": "[R-pkgs] {peruse}",
+      "subject_clean": "{peruse}",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nR package {peruse 0.3.1} is on CRAN. {peruse} provides simple tools for sequence iteration and set comprehension. It is especially useful for analyzing recursively generated sequences, including any stochastic process. The main page at https://jacgoldsm.github.io/peruse/ provides in-depth examples and extensive explanation of how to use the tool.\n\nCRAN link:\nhttps://CRAN.R-project.org/package=peruse<https://cran.r-project.org/package=peruse>\n\n\nBest,\nJacob Goldsmith\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\n\nR package {peruse 0.3.1} is on CRAN. {peruse} provides simple tools for sequence iteration and set comprehension. It is especially useful for analyzing recursively generated sequences, inc",
+      "thread_id": "thread-7fe5b9c84c9c",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-a3e3e19a528f",
+      "message_id": "<CACr7k5K+8dVGX=uGRFtr6PrCKoL5pJBQLj8c-FjQqNN0aJpbpQ@mail.gmail.com>",
+      "from_name": "Jose Barrera",
+      "from_email_hash": "8778f264bf3302810a47e59dbb83a8c1620caae4891286991a9e13f30ea084b7",
+      "date": "2021-03-11T22:14:12+01:00",
+      "subject": "[R-pkgs] {miclust} Multiple imputation & cluster analysis",
+      "subject_clean": "{miclust} Multiple imputation & cluster analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nWant to perform cluster analysis but you have missing data?\n\nFollowing researchers' suggestion, our R package miclust is now on CRAN:\nhttps://CRAN.R-project.org/package=miclust\n\nmiclust implements a framework to integrate multiple imputed data sets due\nto missing data in cluster analysis. Methods are described in the original\nwork: https://academic.oup.com/aje/article/177/7/718/91109\n\nI hope you find it helpful.\n\nOn behalf of the authors,\n\nJose Barrera\nStatistician, Associate Lecturer\n\n*IS**Global*\nBarcelona Institute for Global Health - Campus MAR\nBarcelona Biomedical Research Park (PRBB) (Room Hypatia)\n\nDoctor Aiguader, 88\n08003 Barcelona, Spain\nTel. +34 93 2147383\njose.barrera at isglobal.org\n<https://www.linkedin.com/in/josebarrera>\nPersonal website: sites.google.com/view/josebarrera\nwww.isglobal.org\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege.\nIf you are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly\nprohibited by law. If this message has been received in error, please\nimmediately notify us via e-mail and delete it.\n\nDATA PROTECTION. We inform you that your personal data, including your\ne-mail address and data included in your email correspondence, are included\nin the ISGlobal Foundation filing system. Your personal data will be used\nfor the purpose of contacting you and sending information on the activities\nof the above foundations. You can exercise your rights to  access to\npersonal data, rectification, erasure, restriction of processing, data\nportability and object by contacting the following address: *lopd at isglobal.org\n<lopd at isglobal.org>*. ISGlobal Privacy Policy at *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a su\ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n, divulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n vigente. Si ha recibido este mensaje por error, le rogamos lo\ncomunique inmediatamente por esta misma v?a y proceda a su destrucci?n.\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de\ntitularidad de la Fundaci?n ISGlobal  para cualquier finalidades de\ncontacto, relaci?n institucional y/o env?o de informaci?n sobre sus\nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando\nel uso de su direcci?n de e-mail para las finalidades citadas. Puede\nejercer los derechos de acceso, rectificaci?n, supresi?n, limitaci?n del\ntratamiento, portabilidad y oposici?n dirigi?ndose a *lopd at isglobal.org\n<lopd at isglobal.org>* . Pol?tica de privacidad en *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n-- \n\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege. \nIf\nyou are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly \nprohibited\nby law. If this message has been received in error, please \nimmediately notify\nus via e-mail and delete it.\n\n\n\nDATA PROTECTION. We \ninform you that your personal data, including your\ne-mail address and data \nincluded in your email correspondence, are included in\nthe ISGlobal \nFoundation files. Your personal data will be used for the purpose\nof \ncontacting you and sending information on the activities of the above\nfoundations. You can exercise your rights of access, rectification,\ncancellation and opposition by contacting the following address: \nlopd at isglobal.org <mailto:lopd at isglobal.org>. ISGlobal\nPrivacy Policy at \nwww.isglobal.org <http://www.isglobal.org/>.\n\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a\nsu \ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n,\ndivulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n\nvigente. Si ha recibido este mensaje por error, le rogamos lo \ncomunique\ninmediatamente por esta misma v?a y proceda a su destrucci?n.\n\n\n\n\n\n\n\n\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de \ntitularidad\nde la Fundaci?n ISGlobal? para cualquier\nfinalidades de \ncontacto, relaci?n institucional y/o env?o de informaci?n sobre\nsus \nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando \nel\nuso de su direcci?n de e-mail para las finalidades citadas. Puede \nejercer los\nderechos de acceso, rectificaci?n, cancelaci?n y oposici?n \ndirigi?ndose a lopd at isglobal.org <mailto:lopd at isglobal.org>* *. Pol?tica de \nprivacidad\nen www.isglobal.org <http://www.isglobal.org/>.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nWant to perform cluster analysis but you have missing data?\n\nFollowing researchers' suggestion, our R package miclust is now on CRAN:\nhttps://CRAN.R-project.org/package=miclust\n\nmiclust imp",
+      "thread_id": "thread-a3e3e19a528f",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-c257c2863435",
+      "message_id": "<80M0QQ.U03F1AGIZT4B@gmail.com>",
+      "from_name": "Joseph Luchman",
+      "from_email_hash": "a271d2086aa40ba4fb3c82b7f28370ffcb79ef6877e0057a3e40e5edadb5c67b",
+      "date": "2021-03-15T09:38:32-05:00",
+      "subject": "[R-pkgs] domir: Tools to Support Relative Importance Analysis",
+      "subject_clean": "domir: Tools to Support Relative Importance Analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello All,\n\n  I am pleased to announce that {domir} is now available on CRAN.\n\n  {domir} aims to provide broadly applicable tools for the relative \nimportance analysis of facets of statistical models and machine \nlearning algorithms.  The focus for this initial release is on \nDominance Analysis/Shapley Value Decomposition as a methodology - which \nis to be expanded in future versions.\n\n  I hope the community finds the tool(s) in this package of value and I \nlook forward to further developing the package in collaboration with \nthe community.\n\n  Note: {domir} version 0.0.0 has a known bug that affects \nfunctionality in R versions < 4.  Working on a patch to revise.\n\n  Cordially,\n\n- Joseph\n\nCRAN: <https://cran.r-project.org/package=domir>\nGibHub: <https://github.com/jluchman/domir>\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello All,\n\n  I am pleased to announce that {domir} is now available on CRAN.\n\n  {domir} aims to provide broadly applicable tools for the relative \nimportance analysis of facets of statistical models ",
+      "thread_id": "thread-c257c2863435",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-71747502f56d",
+      "message_id": "<4ef974d1a266475389de09490bcbf20b@stat.lu.se>",
+      "from_name": "Krzysztof Podgórski",
+      "from_email_hash": "dd4f10a03c18f97393471b9fc91f52f0685f4e0c559be2d8465550200806afb4",
+      "date": "2021-03-15T22:13:15Z",
+      "subject": "[R-pkgs] Splinets",
+      "subject_clean": "Splinets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgo?rski, K. (2019) \"Splinets ? efficient orthonormalization of the B-splines.\" <arXiv:1910.07341>.\nPodgo?rski, K. (2021) \"Splinets ? splines through the Taylor expansion, their support sets and orthogonal bases.\" <arXiv:2102.00733>.\n \n\n#############################\nKrzysztof Podgorski\nProfessor\nDepartment of Statistics \nLund University\n#############################",
+      "body_snippet": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgo?rski, K. (2019) \"Splinets ? efficient orthonorm",
+      "thread_id": "thread-71747502f56d",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-4fddc95496f0",
+      "message_id": "<CAFF4+8YWHVO0EkxeLJbPxxGFv+wKeUWN69m=uO7WsTEPbzaFPA@mail.gmail.com>",
+      "from_name": "Fernando da Silva",
+      "from_email_hash": "8e95621631ef9496abbfd1cad7be71f2021ca6fbb78f0114553c5884083c0d6d",
+      "date": "2021-03-21T07:38:43-03:00",
+      "subject": "[R-pkgs] CRAN new release: meedr package provides access to Central Bank of Brazil API",
+      "subject_clean": "CRAN new release: meedr package provides access to Central Bank of Brazil API",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello everyone,\n\nVery happy to announce my first release on CRAN: *meedr. *The goal is to\nprovide quick and easy access to market expectations data to the main\nmacroeconomic indicators in the Focus report, made available by the Central\nBank of Brazil through the Expectations System data API. This data comes\nfrom several financial institutions, such as: banks, brokers, funds,\nconsultancies, etc.\n\nThe *meedr* package offers an R interface to the API and other advantages:\n\n   - Use of a caching system with package memoise to speed up repeated\n   requests of data;\n   - User can utilize all cores of the machine (parallel computing) when\n   fetching a large batch of time series.\n\n\nYou can install the released version of meedr from CRAN with:\n*install.packages(\"meedr\")*\n\nBest regards,\n\n*Fernando da Silva*\nEconomist\nE-mail: fernando at fortietwo.com\nWebsite: www.fortietwo.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\n\nVery happy to announce my first release on CRAN: *meedr. *The goal is to\nprovide quick and easy access to market expectations data to the main\nmacroeconomic indicators in the Focus re",
+      "thread_id": "thread-4fddc95496f0",
+      "thread_depth": 0,
+      "month": "2021-03"
+    },
+    {
+      "id": "msg-ae5b77c6e69f",
+      "message_id": "<CAA-7+EwQ+ujHvkypcJmnwu=DcmcRQog1Bj77TnWTEg23-PPvYg@mail.gmail.com>",
+      "from_name": "Renfei Mao",
+      "from_email_hash": "3cc2348e010f346cbb2df2bc3cb1aa020c37568d97118351f4c264c27b0fbf58",
+      "date": "2021-03-26T15:15:20+04:00",
+      "subject": "[R-pkgs] gm: create music & generate scores and audios in R Markdown, Jupyter Notebooks",
+      "subject_clean": "gm: create music & generate scores and audios in R Markdown, Jupyter Notebooks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that gm 1.0.0 is released on CRAN.\n\nhttps://CRAN.R-project.org/package=gm\n<https://cran.r-project.org/package=gm>\n\ngm provides an elegant and intuitive language, with which you can create\nmusic algorithmically. gm converts your description of music to musical\nscore and audio file, and embed them in R Markdown documents, R Jupyter\nNotebooks, and RStudio.\n\nExamples and complete guide can be found at\n\nhttps://flujoo.github.io/gm/articles/gm.html\n\nYou can submit an issue at\n\nhttps://github.com/flujoo/gm\n\nBest regards,\nFei\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am happy to announce that gm 1.0.0 is released on CRAN.\n\nhttps://CRAN.R-project.org/package=gm\n<https://cran.r-project.org/package=gm>\n\ngm provides an elegant and intuitive language, with",
+      "thread_id": "thread-ae5b77c6e69f",
+      "thread_depth": 0,
+      "month": "2021-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-61f5a339f4f3",
+      "subject": "pkglite: Compact Package Representations",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2021-03-08T18:04:28-05:00",
+      "last_reply": "2021-03-08T18:04:28-05:00",
+      "root_message_id": "msg-61f5a339f4f3"
+    },
+    {
+      "id": "thread-7fe5b9c84c9c",
+      "subject": "{peruse}",
+      "message_count": 1,
+      "participants": [
+        "Jacob Goldsmith"
+      ],
+      "started": "2021-03-10T07:36:30+00:00",
+      "last_reply": "2021-03-10T07:36:30+00:00",
+      "root_message_id": "msg-7fe5b9c84c9c"
+    },
+    {
+      "id": "thread-a3e3e19a528f",
+      "subject": "{miclust} Multiple imputation & cluster analysis",
+      "message_count": 1,
+      "participants": [
+        "Jose Barrera"
+      ],
+      "started": "2021-03-11T22:14:12+01:00",
+      "last_reply": "2021-03-11T22:14:12+01:00",
+      "root_message_id": "msg-a3e3e19a528f"
+    },
+    {
+      "id": "thread-c257c2863435",
+      "subject": "domir: Tools to Support Relative Importance Analysis",
+      "message_count": 1,
+      "participants": [
+        "Joseph Luchman"
+      ],
+      "started": "2021-03-15T09:38:32-05:00",
+      "last_reply": "2021-03-15T09:38:32-05:00",
+      "root_message_id": "msg-c257c2863435"
+    },
+    {
+      "id": "thread-71747502f56d",
+      "subject": "Splinets",
+      "message_count": 1,
+      "participants": [
+        "Krzysztof Podgórski"
+      ],
+      "started": "2021-03-15T22:13:15+00:00",
+      "last_reply": "2021-03-15T22:13:15+00:00",
+      "root_message_id": "msg-71747502f56d"
+    },
+    {
+      "id": "thread-4fddc95496f0",
+      "subject": "CRAN new release: meedr package provides access to Central Bank of Brazil API",
+      "message_count": 1,
+      "participants": [
+        "Fernando da Silva"
+      ],
+      "started": "2021-03-21T07:38:43-03:00",
+      "last_reply": "2021-03-21T07:38:43-03:00",
+      "root_message_id": "msg-4fddc95496f0"
+    },
+    {
+      "id": "thread-ae5b77c6e69f",
+      "subject": "gm: create music & generate scores and audios in R Markdown, Jupyter Notebooks",
+      "message_count": 1,
+      "participants": [
+        "Renfei Mao"
+      ],
+      "started": "2021-03-26T15:15:20+04:00",
+      "last_reply": "2021-03-26T15:15:20+04:00",
+      "root_message_id": "msg-ae5b77c6e69f"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2020-10",
+  "messages": [
+    {
+      "id": "msg-56a1a6083cf3",
+      "message_id": "<CAB035r+h0+RF4g2YUAner6Ne4cWfpRuynZFaLea1LKnB6+4BsA@mail.gmail.com>",
+      "from_name": "Anthony Trevisan",
+      "from_email_hash": "50e38281c93356ffcf4534c78777d24402cd5e98e78a34c9c51b8e1993a72abf",
+      "date": "2020-10-15T13:43:33-04:00",
+      "subject": "[R-pkgs] rameritrade",
+      "subject_clean": "rameritrade",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI recently created a package that allows R users to trade through the TD\nAmeritrade API. With billions in assets and over 11 million clients, I am\nsure some R users could leverage the API.\n\nBest regards,\nTony\n\nhttps://cran.r-project.org/web/packages/rameritrade/index.html\n\nhttps://tonytrevisan.github.io/rameritrade/index.html\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI recently created a package that allows R users to trade through the TD\nAmeritrade API. With billions in assets and over 11 million clients, I am\nsure some R users could leverage the API.\n\nBe",
+      "thread_id": "thread-56a1a6083cf3",
+      "thread_depth": 0,
+      "month": "2020-10"
+    },
+    {
+      "id": "msg-e41b237520cd",
+      "message_id": "<CAA-ibazJcPPtm3DJngObXhiB5zXgvH0t_bHfH7bN=-Mcrkca5Q@mail.gmail.com>",
+      "from_name": "Diego Hernangómez Herrero",
+      "from_email_hash": "c23fdbbd41b3120fc73c108973717a268afc6ba39d31ec06e8b21e95ac3ee277",
+      "date": "2020-10-16T17:37:56+02:00",
+      "subject": "[R-pkgs] {giscoR} v0.1.0 available on CRAN",
+      "subject_clean": "{giscoR} v0.1.0 available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Good afternoon:\n\ngiscoR is already available on CRAN. giscoR is a API package that helps to\nretrieve data from GISCO - Eurostat. It  also provides some lightweight\ndata sets ready to use without downloading.\n\nGISCO is a geospatial open data repository including several data sets as\ncountries, coastal lines, labels or NUTS levels. The data sets are usually\nprovided at several resolution levels (60M/20M/10M/03M/01M) and in 3\ndifferent projections (4326/3035/3857).\n\nVignette:\nhttps://dieghernan.github.io/giscoR/articles/giscoR.html\n-- \n\n\n\nHave a nice day!\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Good afternoon:\n\ngiscoR is already available on CRAN. giscoR is a API package that helps to\nretrieve data from GISCO - Eurostat. It  also provides some lightweight\ndata sets ready to use without downl",
+      "thread_id": "thread-e41b237520cd",
+      "thread_depth": 0,
+      "month": "2020-10"
+    },
+    {
+      "id": "msg-76acc0ebe8bd",
+      "message_id": "<8a3f5759-8d4b-cc5c-3774-14782c68006d@uni-landau.de>",
+      "from_name": "Mira Kattwinkel",
+      "from_email_hash": "893afa219a0fec51923074f36c9cca1ac66acb43cd3b9ae1c9735dd60b673d18",
+      "date": "2020-10-22T11:01:33+02:00",
+      "subject": "[R-pkgs] openSTARS version 1.2.2 on CRAN",
+      "subject_clean": "openSTARS version 1.2.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community\n\nThere is a new version of the openSTARS package (preparing GIS data for \nstream analysis) available on CRAN.\n\nMajor updates are:\n\n- catch errors arising in GRASS 7.8 due to changes in v.to.db\n- update setup_grass_environment; there is no need any more to initGRASS \nbefore\n\nPlease also find a detailed description of the package including example \ncode here: \nhttps://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239237\n\nAny comments, suggestions or bug reports are welcome on \nhttps://github.com/MiKatt/openSTARS\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\niES Landau, Institute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstra?e 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
+      "body_snippet": "Dear R community\n\nThere is a new version of the openSTARS package (preparing GIS data for \nstream analysis) available on CRAN.\n\nMajor updates are:\n\n- catch errors arising in GRASS 7.8 due to changes i",
+      "thread_id": "thread-76acc0ebe8bd",
+      "thread_depth": 0,
+      "month": "2020-10"
+    },
+    {
+      "id": "msg-1aa0c691d877",
+      "message_id": "<068A6271-39B5-42CA-9E96-FC99EA68F137@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "040b2d09159b27cfd2853bc2dbb476bd637811586f307d9583c9ef7f806f3692",
+      "date": "2020-10-23T09:15:01-04:00",
+      "subject": "[R-pkgs] WriteXLS Version 6.0.0 Released",
+      "subject_clean": "WriteXLS Version 6.0.0 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\nWriteXLS version 6.0.0 has been released and is available on CRAN.\n\nThe key changes are:\n\n1. More robust handling of embedded newline ('\\n') and carriage return ('\\r') characters, double quotes, and two character sequences of a backslash character ('\\') followed by another character, within a data value, has been implemented. An indirect consequence of this more robust handling, is better support for multiline cells in the resultant Excel worksheet.\n\n2. New 'AllText' argument to globally handle/overcome Excel's default reformatting of erstwhile numeric values with leading and/or trailing zeros. This option enhances prior improvements to preserving leading and/or trailing zeros on a worksheet cell specific basis.\n\n3. Updated Perl libraries are included as apropos.\n\n\nRegards,\n\nMarc Schwartz",
+      "body_snippet": "Hi All,\n\nWriteXLS version 6.0.0 has been released and is available on CRAN.\n\nThe key changes are:\n\n1. More robust handling of embedded newline ('\\n') and carriage return ('\\r') characters, double quot",
+      "thread_id": "thread-1aa0c691d877",
+      "thread_depth": 0,
+      "month": "2020-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-56a1a6083cf3",
+      "subject": "rameritrade",
+      "message_count": 1,
+      "participants": [
+        "Anthony Trevisan"
+      ],
+      "started": "2020-10-15T13:43:33-04:00",
+      "last_reply": "2020-10-15T13:43:33-04:00",
+      "root_message_id": "msg-56a1a6083cf3"
+    },
+    {
+      "id": "thread-e41b237520cd",
+      "subject": "{giscoR} v0.1.0 available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Diego Hernangómez Herrero"
+      ],
+      "started": "2020-10-16T17:37:56+02:00",
+      "last_reply": "2020-10-16T17:37:56+02:00",
+      "root_message_id": "msg-e41b237520cd"
+    },
+    {
+      "id": "thread-76acc0ebe8bd",
+      "subject": "openSTARS version 1.2.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mira Kattwinkel"
+      ],
+      "started": "2020-10-22T11:01:33+02:00",
+      "last_reply": "2020-10-22T11:01:33+02:00",
+      "root_message_id": "msg-76acc0ebe8bd"
+    },
+    {
+      "id": "thread-1aa0c691d877",
+      "subject": "WriteXLS Version 6.0.0 Released",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2020-10-23T09:15:01-04:00",
+      "last_reply": "2020-10-23T09:15:01-04:00",
+      "root_message_id": "msg-1aa0c691d877"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2021-10",
+  "messages": [
+    {
+      "id": "msg-c4829f25a5f9",
+      "message_id": "<CAKN1paY=J_vzhwvAc-rAbv3q4-wJFuOTdUJv-jfs5w3BqBZrZw@mail.gmail.com>",
+      "from_name": "Nelson Rayl",
+      "from_email_hash": "684e05be59658e28583475cffd7372a0584bc3f30621b25d66e3b11a2ba1a4e4",
+      "date": "2021-10-15T14:55:29-07:00",
+      "subject": "[R-pkgs] lmForc",
+      "subject_clean": "lmForc",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The R package lmForc (lmForc 0.0.1) is now available on CRAN. lmForc\nintroduces functions for evaluating linear forecasting models and a new\nclass for working with forecast data: Forecast. Test linear models\nout-of-sample by conditioning on realized values, vintage forecasts, or\nlagged values. Create and test performance weighted forecasts\nout-of-sample. Collect multiple forecasts and evaluate MSE or RMSE. These\nfunctions are built around the Forecast class which matches the simplicity\nand interpretability of linear models.\n\nFor additional information and examples, please visit the lmForc GitHub\nrepository or check out the lmForc vignette.\n\nGitHub:\nhttps://github.com/lucius-verus-fan/lmForc\n\nVignette:\nhttps://cran.r-project.org/web/packages/lmForc/vignettes/lmForc.html\n\nCRAN:\nhttps://CRAN.R-project.org/package=lmForc\n\nBest,\nNelson Rayl\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The R package lmForc (lmForc 0.0.1) is now available on CRAN. lmForc\nintroduces functions for evaluating linear forecasting models and a new\nclass for working with forecast data: Forecast. Test linear",
+      "thread_id": "thread-c4829f25a5f9",
+      "thread_depth": 0,
+      "month": "2021-10"
+    },
+    {
+      "id": "msg-884ea77c4809",
+      "message_id": "<87o87jd6mh.fsf@enricoschumann.net>",
+      "from_name": "Enrico Schumann",
+      "from_email_hash": "42e3fbcaa04e968726f4c1d1a69e34143bdbc62b403d112ba1d3712256bacb88",
+      "date": "2021-10-20T18:05:10+02:00",
+      "subject": "[R-pkgs] NMOF 2.5-0 (Numerical Methods and Optimization in Finance)",
+      "subject_clean": "NMOF 2.5-0 (Numerical Methods and Optimization in Finance)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nversion 2.5-0 of package NMOF is on CRAN now.\n(Incidentally, today is 20 October 2021, which marks the\n10th anniversary of NMOF on CRAN.)\n\nNMOF stands for 'Numerical Methods and Optimization in\nFinance', and it accompanies the book with the same name,\nwritten by Manfred Gilli, Dietmar Maringer and Enrico\nSchumann.[1]\n\nSince the last announcement on this list, functionality has\nbeen added to the package, e.g. for computing minimum-CVaR\nand tracking portfolios, or downloading IPO data.  See the\nNEWS file [2] for all changes.  The documentation has also\nbeen expanded.\n\nComments/corrections/remarks/suggestions are -- as always --\nvery welcome; please send them to the maintainer (me)\ndirectly.\n\nKind regards\n      Enrico\n\n[1] http://enricoschumann.net/NMOF.htm\n[2] https://gitlab.com/NMOF/NMOF/-/blob/master/NEWS\n\n\n-- \nEnrico Schumann\nLucerne, Switzerland\nhttp://enricoschumann.net",
+      "body_snippet": "Dear all,\n\nversion 2.5-0 of package NMOF is on CRAN now.\n(Incidentally, today is 20 October 2021, which marks the\n10th anniversary of NMOF on CRAN.)\n\nNMOF stands for 'Numerical Methods and Optimizatio",
+      "thread_id": "thread-884ea77c4809",
+      "thread_depth": 0,
+      "month": "2021-10"
+    },
+    {
+      "id": "msg-d63fc4b2319e",
+      "message_id": "<CABcwgRSCrqq4u=UWYuja=XzOdqBBTUZXmjPFOQ8GKYxHsoazCA@mail.gmail.com>",
+      "from_name": "Andrija Djurovic",
+      "from_email_hash": "d58934718a5e6af2b85172aa4db5d00c50c661c546b78b1a6de94d41ab0b38f5",
+      "date": "2021-10-22T08:25:26+02:00",
+      "subject": "[R-pkgs] monobin: new version 0.2.0",
+      "subject_clean": "monobin: new version 0.2.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nthe new version of monobin package is now on CRAN.\nAdditional binning algorithm is implemented - monotonic binning driven by\ndecision tree (mdt.bin).\n\nFor details and examples, install the new version of the monobin\n(install.packages(\"monobin\")) and check the help page of the function\n(?mdt.bin) or visit the github page:\nhttps://github.com/andrija-djurovic/monobin\n\nSoon I will upload to the CRAN updated version of monobinShiny package in\norder to reflect changes from the monobin. Until then users can install\ngithub version (https://github.com/andrija-djurovic/monobinShiny) where new\nbinning algorithm is already implemented.\n\nBR,\nAndrija Djurovic\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nthe new version of monobin package is now on CRAN.\nAdditional binning algorithm is implemented - monotonic binning driven by\ndecision tree (mdt.bin).\n\nFor details and examples, install ",
+      "thread_id": "thread-d63fc4b2319e",
+      "thread_depth": 0,
+      "month": "2021-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c4829f25a5f9",
+      "subject": "lmForc",
+      "message_count": 1,
+      "participants": [
+        "Nelson Rayl"
+      ],
+      "started": "2021-10-15T14:55:29-07:00",
+      "last_reply": "2021-10-15T14:55:29-07:00",
+      "root_message_id": "msg-c4829f25a5f9"
+    },
+    {
+      "id": "thread-884ea77c4809",
+      "subject": "NMOF 2.5-0 (Numerical Methods and Optimization in Finance)",
+      "message_count": 1,
+      "participants": [
+        "Enrico Schumann"
+      ],
+      "started": "2021-10-20T18:05:10+02:00",
+      "last_reply": "2021-10-20T18:05:10+02:00",
+      "root_message_id": "msg-884ea77c4809"
+    },
+    {
+      "id": "thread-d63fc4b2319e",
+      "subject": "monobin: new version 0.2.0",
+      "message_count": 1,
+      "participants": [
+        "Andrija Djurovic"
+      ],
+      "started": "2021-10-22T08:25:26+02:00",
+      "last_reply": "2021-10-22T08:25:26+02:00",
+      "root_message_id": "msg-d63fc4b2319e"
+    }
+  ]
+}

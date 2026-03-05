@@ -1,0 +1,90 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2023-12",
+  "messages": [
+    {
+      "id": "msg-0430e2212752",
+      "message_id": "<79834370-a2ad-4a6a-8b55-19b29e998f8a@app.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2023-12-13T00:09:06-05:00",
+      "subject": "[R-pkgs] simtrial: Clinical Trial Simulation",
+      "subject_clean": "simtrial: Clinical Trial Simulation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am happy to announce that {simtrial} is now on CRAN (https://cran.r-project.org/package=simtrial). simtrial is a fast and extensible clinical trial simulation framework for time-to-event endpoints.\n\nThis release brings a new tabular data processing engine powered by data.table for 3x to 5x faster simulations, a new parallelization adaptor with %dofuture%, a refreshed API that aligns with the gsDesign2 style guide, and new functions for zero early weight and analysis date. For a summary of the updates, please see the announcement: https://keaven.github.io/blog/simtrial-0-3-2/.\n\nI hope you find simtrial helpful. Please feel free to reach out with feedback or questions.\n\nBest regards,\n-Nan",
+      "body_snippet": "Dear all,\n\nI am happy to announce that {simtrial} is now on CRAN (https://cran.r-project.org/package=simtrial). simtrial is a fast and extensible clinical trial simulation framework for time-to-event ",
+      "thread_id": "thread-0430e2212752",
+      "thread_depth": 0,
+      "month": "2023-12"
+    },
+    {
+      "id": "msg-af1f23ddca10",
+      "message_id": "<aaeefcc6-8c10-4248-8db2-393c12e460e7@uottawa.ca>",
+      "from_name": "Denis Cousineau",
+      "from_email_hash": "a4976ffb1026766b96582c21b4ce2b819b43775c02e0e6f62d19d475d0343c1c",
+      "date": "2023-12-13T12:54:07Z",
+      "subject": "[R-pkgs] ANOFA: Analysis of frequency data",
+      "subject_clean": "ANOFA: Analysis of frequency data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A package for the analysis of frequency data, ANOFA, has been released \non CRAN.\n\nWith this package, it is now possible to analyze frequencies following \nthe logic of ANOVAs, by examining interaction effects and main effects, \nor explore simple effects (with expected marginal frequencies) or \nanalyze one-degree-of-freedom orthogonal contrasts.\n\nIf you were planning on doing a chi-square test on a contingency table, \nthink twice and read Sharpe (2015) https://*doi*.org/10.7275/tbfa-x148 . \nThen you will consider running an ANOFA . Examples are given in \nLaurencelle & Cousineau (2023) https://doi.org/10.20982/tqmp.19.2.p173\n\nAlso, a simple function for plotting the frequencies along with \nconfidence intervals is shipped with the package.\n\nSee the main documentation on https://dcousin3.github.io/ANOFA/\n\nDenis Cousineau.",
+      "body_snippet": "A package for the analysis of frequency data, ANOFA, has been released \non CRAN.\n\nWith this package, it is now possible to analyze frequencies following \nthe logic of ANOVAs, by examining interaction ",
+      "thread_id": "thread-af1f23ddca10",
+      "thread_depth": 0,
+      "month": "2023-12"
+    },
+    {
+      "id": "msg-c503bafbca23",
+      "message_id": "<CAKtE6yMQVy4xQYjMWBaj7NkDk5Py8k2QNSt8zwDqH2=fnWYx1g@mail.gmail.com>",
+      "from_name": "Zivan Karaman",
+      "from_email_hash": "f608a153dd427cba2b35b76e0770fde2c77ce66784745838abdf743368ce538c",
+      "date": "2023-12-16T19:04:25+01:00",
+      "subject": "[R-pkgs] Copernicus Data Space Ecosystem API Wrapper",
+      "subject_clean": "Copernicus Data Space Ecosystem API Wrapper",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI am pleased to announce the release of a new package named 'CDSE' on CRAN.\n\nIt provides direct access to the 'Copernicus Data Space Ecosystem' for\nR users. With this package, you can efficiently access the imagery\nfrom Sentinel-1, Sentinel-2, Sentinel-3, and Sentinel-5 missions and\nprocess and download data from the R environment.\n\nOne of the significant benefits of this package is that you can\ndownload the satellite data that is limited to your area of interest\ninstead of the entire image tiles (100 x 100 km) that are usually\ndistributed by Copernicus.\n\nAlthough the software is compatible with any satellite images\navailable in CDSE, it has been primarily tested with Sentinel-2\nimages.\n\nThis is the first version of the package, and your feedback and\nsuggestions are welcome\n\nPlease find more details and download the package from the following\nlink: https://cran.r-project.org/package=CDSE\n\nBest regards,\nZivan",
+      "body_snippet": "Dear all,\n\nI am pleased to announce the release of a new package named 'CDSE' on CRAN.\n\nIt provides direct access to the 'Copernicus Data Space Ecosystem' for\nR users. With this package, you can effic",
+      "thread_id": "thread-c503bafbca23",
+      "thread_depth": 0,
+      "month": "2023-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0430e2212752",
+      "subject": "simtrial: Clinical Trial Simulation",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2023-12-13T00:09:06-05:00",
+      "last_reply": "2023-12-13T00:09:06-05:00",
+      "root_message_id": "msg-0430e2212752"
+    },
+    {
+      "id": "thread-af1f23ddca10",
+      "subject": "ANOFA: Analysis of frequency data",
+      "message_count": 1,
+      "participants": [
+        "Denis Cousineau"
+      ],
+      "started": "2023-12-13T12:54:07+00:00",
+      "last_reply": "2023-12-13T12:54:07+00:00",
+      "root_message_id": "msg-af1f23ddca10"
+    },
+    {
+      "id": "thread-c503bafbca23",
+      "subject": "Copernicus Data Space Ecosystem API Wrapper",
+      "message_count": 1,
+      "participants": [
+        "Zivan Karaman"
+      ],
+      "started": "2023-12-16T19:04:25+01:00",
+      "last_reply": "2023-12-16T19:04:25+01:00",
+      "root_message_id": "msg-c503bafbca23"
+    }
+  ]
+}

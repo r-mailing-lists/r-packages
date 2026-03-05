@@ -1,0 +1,171 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2013-03",
+  "messages": [
+    {
+      "id": "msg-1ee5ac8c0958",
+      "message_id": "<9BC9E5B2-0788-461F-BD94-96E6917E073D@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2013-03-01T17:56:11-08:00",
+      "subject": "[R-pkgs] glmnet 1.9-3 uploaded to CRAN (with intercept option)",
+      "subject_clean": "glmnet 1.9-3 uploaded to CRAN (with intercept option)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130301/1d7b45c5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130301/1d7b45c5/attachment.pl>",
+      "thread_id": "thread-1ee5ac8c0958",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-a1a2bf19b65e",
+      "message_id": "<32619F6A-451C-4E50-ACF6-AEB84407F581@isped.u-bordeaux2.fr>",
+      "from_name": "Virginie RONDEAU",
+      "from_email_hash": "30a3c4b1a535ea279307beb547bf01f7b91ac98cce97816f96862f8535e3dc2b",
+      "date": "2013-03-02T14:34:46+01:00",
+      "subject": "[R-pkgs] frailtypack: new options !",
+      "subject_clean": "frailtypack: new options !",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of the package FRAILTYPACK is now available on CRAN.\n\n-- possibility to fit now a Shared and a Joint Frailty model with a log-normal distribution for the random effects. \n\n-- possibility to deal with interval-censored data (for a shared frailty model)\n\n-- possibility to fit a joint frailty model for clustered data\n\nFor more details see the corresponding NEWS files in the pkgs.\nWe are looking forward to getting your  bug reports or simple feedback, \n\nBest reagrds, \nVirginie and coauthors (CC).",
+      "body_snippet": "A new version of the package FRAILTYPACK is now available on CRAN.\n\n-- possibility to fit now a Shared and a Joint Frailty model with a log-normal distribution for the random effects. \n\n-- possibility",
+      "thread_id": "thread-a1a2bf19b65e",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-5604e27ca47e",
+      "message_id": "<CAJ44-AmyqMBdg1btv9KcWFv98pz0oSxswoST9jnEOQNemPD6mw@mail.gmail.com>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "e9fde6a1889a918f8a1b9e2b03f04fe4a17789608f62c0d62ec496896a0ff481",
+      "date": "2013-03-06T15:35:24+01:00",
+      "subject": "[R-pkgs] new package: cec2013 (v0.1-4)",
+      "subject_clean": "new package: cec2013 (v0.1-4)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI would like to draw your attention to 'cec2013', a new package\nproviding R wrappers for the 28 benchmark functions defined in the\nSpecial Session and Competition on Real-Parameter Single Objective\nOptimization at CEC-2013 (http://www.cec2013.org/).\n\nThe focus of this package is to provide an open-source and\nmulti-platform implementation of the CEC2013 benchmark functions, in\norder to make easier for researchers to test the performance of new\noptimization algorithms, or improvements to existing ones, in a\nreproducible way.\n\nThe original C code was provided by Jane Jing Liang, while GNU/Linux\ncomments were made by Janez Brest.\n\nThis package was gently authorised for publication on CRAN by\nPonnuthurai Nagaratnam Suganthan. The official documentation is\navailable at:\n\nhttp://www.ntu.edu.sg/home/EPNSugan/index_files/CEC2013/CEC2013.htm\n\n\ncec2013 is already available on CRAN:\n\nhttp://cran.r-project.org/web/packages/cec2013/\n\n\nyou can install it from the R console with:\n\n > install.packages(\"cec2013\")\n\n\nFor any comment or contact for collaboration do not hesitate to\ncontact the authors (in English, Spanish or Italian):\n\nMauricio Zambrano-Bigiarini  <mzb.devel [aT] gmail [DoT] com>\nYasser Gonzalez Fernandez <ygonzalezfernandez [At] gmail [DoT] com>\n\n\nKind regards,\n\nMauricio Zambrano-Bigiarini, Ph.D\n\n-- \n======================================\nWater Resources Unit\nInstitute for Environment and Sustainability\nJoint Research Centre, European Commission\nwebinfo    : http://floods.jrc.ec.europa.eu/\n======================================\nDISCLAIMER:\\ \"The views expressed are purely those of th...{{dropped:12}}",
+      "body_snippet": "Dear R users,\n\nI would like to draw your attention to 'cec2013', a new package\nproviding R wrappers for the 28 benchmark functions defined in the\nSpecial Session and Competition on Real-Parameter Sing",
+      "thread_id": "thread-5604e27ca47e",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-819705236367",
+      "message_id": "<BLU170-W42E1D6FE5F25D659CA3756EFE20@phx.gbl>",
+      "from_name": "Tyler Rinker",
+      "from_email_hash": "192c5a5c2cf714557361f22b3321228f178e2588db202a9d36282ce6a9620983",
+      "date": "2013-03-12T07:12:37-04:00",
+      "subject": "[R-pkgs] reports 0.1.2 released",
+      "subject_clean": "reports 0.1.2 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm very pleased to announce the release of reports: An R package to assist in the workflow of writing academic articles and other reports.\n\n\nThis is a bug fix release of reports: http://cran.r-project.org/web/packages/reports/index.html\n\n\nThe reports package assists in writing reports and presentations by providing a frame work that brings together existing R, LaTeX/.docx and Pandoc tools. The package is designed to be used with RStudio, MiKTex/Tex Live/LibreOffice, knitr, knitcitations, Pandoc and pander. The user will want to download these free programs/packages to maximize the effectiveness of the reports package. Functions with two letter names are general text formatting functions for copying text from articles for inclusion as a citation.\n\n\nGithub development version: https://github.com/trinker/reports\n\n\nAs reports is further developed the following are planned: (a) a help video section and (b) a vignette detailing workflow and use of reports.\n\n\nTyler Rinker",
+      "body_snippet": "I'm very pleased to announce the release of reports: An R package to assist in the workflow of writing academic articles and other reports.\n\n\nThis is a bug fix release of reports: http://cran.r-projec",
+      "thread_id": "thread-819705236367",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-bb4e4d9d722d",
+      "message_id": "<8446B5CF-B28E-46E9-886A-AC650E838BE0@mcmaster.ca>",
+      "from_name": "Jeffrey Racine",
+      "from_email_hash": "0142cbe3fe3304381d2b0a61bcba57be4c715a7c0972171715ecef6315cd0493",
+      "date": "2013-03-14T15:29:39-04:00",
+      "subject": "[R-pkgs] Versions 0.50-1 of the np and npRmpi packages released - new features and deprecated options…",
+      "subject_clean": "Versions 0.50-1 of the np and npRmpi packages released - new features and deprecated options…",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nWe are pleased to announce that versions 0.50-1 of the np package and its MPI-aware counterpart, the npRmpi package, are now available on CRAN:\n\nhttp://cran.r-project.org/web/packages/np/index.html\nhttp://cran.r-project.org/web/packages/npRmpi/index.html\n\nIn these versions we add new functionality:\n\n- new methods for multivariate mixed-data bandwidth selection for unconditional and conditional CDF bandwidth selection (`npudistbw' and `npcdistbw') using Li, Lin, and Racine (2013) and Li and Racine (2013)\n- a new function for multivariate mixed-data copula and copula density functions (`npcopula') that exploits Li and Racine (2013)\n\nDeprecated:\n\nWith these new methods we have deprecated the use of `cdf=TRUE' for density and conditional bandwidth objects (i.e. those generated with `npudensbw' and `npcdensbw') and decoupled this functionality into `npudensbw'/`npudistbw' and `npcdensbw'/`npcdistbw' (previously bandwidths optimal for PDFs were used for CDFs given the lack of methods for mixed-data CDF bandwidth selection).\n\nBug fixes:\n\nIn addition we have corrected a number of bugs reported by users (see the CHANGELOG below)\n\nhttp://cran.r-project.org/web/packages/np/ChangeLog\n\nReferences:\n\nLi, Q. and J. Lin and J.S. Racine (2013), ?Optimal Bandwidth Selection for Nonparametric Conditional Distribution and Quantile Functions?, Journal of Business and Economic Statistics, 31, 57-65.\n\nLi, H. and J.S. Racine (2013), ?Cross-validated estimation of cumulative distribution functions with categorical and continuous data,? manuscript.\n\nKindly see my webpage below for further information and the `Gallery of Code' for a variety of illustrative examples.\n\n-- Jeff & Tristen (co-authors of np/npRmpi)\n\nProfessor J. S. Racine         Phone:  (905) 525 9140 x 23825\nDepartment of Economics        FAX:    (905) 521-8232\nMcMaster University            e-mail: racinej at mcmaster.ca\n1280 Main St. W.,Hamilton,     URL: www.economics.mcmaster.ca/racine\nOntario, Canada. L8S 4M4\n\n`The generation of random numbers is too important to be left to chance'",
+      "body_snippet": "Dear useRs,\n\nWe are pleased to announce that versions 0.50-1 of the np package and its MPI-aware counterpart, the npRmpi package, are now available on CRAN:\n\nhttp://cran.r-project.org/web/packages/np/",
+      "thread_id": "thread-bb4e4d9d722d",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-0bdd1516c01e",
+      "message_id": "<CAP01uRkpQdKdBFPxpoYjTQDmjegkJPwYuCVG3NMwRQ98u55KFw@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2013-03-19T08:15:05-04:00",
+      "subject": "[R-pkgs] Windows batchfiles 0.7-1",
+      "subject_clean": "Windows batchfiles 0.7-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of the Windows batchfiles is available.\n\nCHANGES\n\nThe key change is the new R.bat utility.  R.bat has a new interface\nand extended functionality covering many of the other prior utilities.\n (These older utilities are no longer needed and have been removed.)\n\nUnlike R.bat which requires no configuration the new Rpathset.bat\nutility is configured by manually changing the Windows batch SET\nstatements in it.  The main advantage is just that it is very simple\ninternally which may be advantageous in some situations involving\ncustomization.\n\nA new pdf document accompanies the utilties providing more detail.\n\nOVERVIEW\n\nThese are self contained independent no-install Windows batch,\njavascript and .hta files. Just place any that you wish to use on your\nWindows PATH.\n\nR.bat\n\nR.bat allows one to run R without setting any environment variables,\nregistry keys or any modification of the Windows path.  Just download\nthis utility, place it in your Windows path and then to launch\nRgui.exe from the Windows cmd line do this:\n\n   R gui\n\nR.bat locates R, MiKTeX and Rtools using the registry or heuristics\nand then runs the subcommand indicated by the first argument.\n\nIn addition to the gui subcommand, the following subcommands are\navailable: cd, cmd, dir, gui, help, ls, path, R, script, show, SetReg,\ntools, touch.\n\nSome examples are:\n\nR -- run R.exe\nR gui -- run Rgui.exe\nR CMD build mypkg -- run Rcmd.exe build mypkg\nR script myScript.R -- run Rscript.exe myScript.R\n\nR dir -- list directories in R_ROOT, typically those in C:\\Program Files\\R\nR ls -- same\nR help -- help info\nR show -- show R_ variable values used (R_ROOT, R_HOME, R_VER, R_ARCH, etc.)\n\nR path -- temporarily add R, MiKTeX and Rtools to the Windows path\nR tools -- similar but only add MiKTeX and Rtools to the Windows path\n\nExcept for R touch (which updates the date on your R_HOME directory)\nand R SetReg (which calls RSetReg.exe to update the registry with your\nR version), R.bat makes no permanent changes to your system.\n\nRpathset.bat\n\nRpathset.bat temporarily sets the Windows path to R, Rtools and MiKTeX\nbased on SET statements that the user can configure manually.  It is\nan alternative to R.bat that lacks R.bat's \"no configuration\" nature\nbut may be preferred in some situations due to its internal\nsimplicity.\n\nAlso Rpathset.bat is more likely to work on systems that have not been\ntested given its simplicity.  (The utilities were tested on 32 bit\nWindows Vista and 64 bit Windows 8 systems.)\n\nOther\n\nOther commands which continue to be available are copydir.bat,\nmovedir.bat, el.js, clip2r.js and find-miktex.hta .  These copy and\nmove R libraries, run a command in elevated mode (i.e. as\nAdministrator), copy the clipboard to a running R instance and find\nMiKTeX.\n\nMore Info\n\nThe newly created sqldf discussion list will now be used for\ndiscussion of the batch files as well.\n\nHome Page: http://batchfiles.googlecode.com\nDiscuss: http://groups.google.com/group/sqldf  ** NEW **\n\nDownload: http://cran.r-project.org/contrib/extra/batchfiles\nSVN: https://code.google.com/p/batchfiles/source\n\n\n--\nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "A new version of the Windows batchfiles is available.\n\nCHANGES\n\nThe key change is the new R.bat utility.  R.bat has a new interface\nand extended functionality covering many of the other prior utilitie",
+      "thread_id": "thread-0bdd1516c01e",
+      "thread_depth": 0,
+      "month": "2013-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1ee5ac8c0958",
+      "subject": "glmnet 1.9-3 uploaded to CRAN (with intercept option)",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2013-03-01T17:56:11-08:00",
+      "last_reply": "2013-03-01T17:56:11-08:00",
+      "root_message_id": "msg-1ee5ac8c0958"
+    },
+    {
+      "id": "thread-a1a2bf19b65e",
+      "subject": "frailtypack: new options !",
+      "message_count": 1,
+      "participants": [
+        "Virginie RONDEAU"
+      ],
+      "started": "2013-03-02T14:34:46+01:00",
+      "last_reply": "2013-03-02T14:34:46+01:00",
+      "root_message_id": "msg-a1a2bf19b65e"
+    },
+    {
+      "id": "thread-5604e27ca47e",
+      "subject": "new package: cec2013 (v0.1-4)",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2013-03-06T15:35:24+01:00",
+      "last_reply": "2013-03-06T15:35:24+01:00",
+      "root_message_id": "msg-5604e27ca47e"
+    },
+    {
+      "id": "thread-819705236367",
+      "subject": "reports 0.1.2 released",
+      "message_count": 1,
+      "participants": [
+        "Tyler Rinker"
+      ],
+      "started": "2013-03-12T07:12:37-04:00",
+      "last_reply": "2013-03-12T07:12:37-04:00",
+      "root_message_id": "msg-819705236367"
+    },
+    {
+      "id": "thread-bb4e4d9d722d",
+      "subject": "Versions 0.50-1 of the np and npRmpi packages released - new features and deprecated options…",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Racine"
+      ],
+      "started": "2013-03-14T15:29:39-04:00",
+      "last_reply": "2013-03-14T15:29:39-04:00",
+      "root_message_id": "msg-bb4e4d9d722d"
+    },
+    {
+      "id": "thread-0bdd1516c01e",
+      "subject": "Windows batchfiles 0.7-1",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2013-03-19T08:15:05-04:00",
+      "last_reply": "2013-03-19T08:15:05-04:00",
+      "root_message_id": "msg-0bdd1516c01e"
+    }
+  ]
+}
