@@ -20,22 +20,6 @@
       "month": "2009-02"
     },
     {
-      "id": "msg-fc9581de2053",
-      "message_id": "<49873FAD.1090404@vanderbilt.edu>",
-      "from_name": "Jeffrey Horner",
-      "from_email_hash": "8b91e5b4000682951a703759aaef9fbaa2bc23dc141f7a1ef5c829c7c0d0d0de",
-      "date": "2009-02-02T12:47:09-06:00",
-      "subject": "[R-pkgs] RMySQL 0.7-3",
-      "subject_clean": "RMySQL 0.7-3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nRMySQL 0.7-3 has been released. Expect it to hit the CRAN mirrors \nshortly, but in the mean time please get it here:\n\nhttp://biostat.mc.vanderbilt.edu/RMySQL\n\n From the NEWS file:\n\nVersion 0.7-3\n\n* Added mysqlClientLibraryVersions() which returns the compiled and\n   loaded client library versions as a vector.\n\n* RMySQL will now check for MySQL minor version consistency and throw\n   an error when the client and loaded library versions don't match.\n\n\nBest,\n\nJeff\n-- \nhttp://biostat.mc.vanderbilt.edu/JeffreyHorner",
-      "body_snippet": "Dear R users,\n\nRMySQL 0.7-3 has been released. Expect it to hit the CRAN mirrors \nshortly, but in the mean time please get it here:\n\nhttp://biostat.mc.vanderbilt.edu/RMySQL\n\n From the NEWS file:\n\nVers",
-      "thread_id": "thread-fc9581de2053",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
       "id": "msg-a19589957ac7",
       "message_id": "<Pine.LNX.4.43.0902031230371.23612@hymn33.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -48,38 +32,6 @@
       "body_plain": "Version 3.11 of the survey package is making its way through CRAN.\n\nSince the last announcement on this list, of version 3.9, last September, there have been many minor bug fixes and usability improvements. The main new features are\n  - loglinear models with svyloglin()\n  - database-backed designs now allow new variables to be created, support ODBC\n    in addition to DBI database interfaces, and support multiple imputation\n  - there is an approximation (Brewer,2002) for PPS sampling without replacement\n  - svysmooth() now does quantile as well as mean smoothing\n  - barplot() and dotchart() methods for many objects.\n\nMore information at the package home page:\nhttp://faculty.washington.edu/tlumley/survey/\n\n    -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
       "body_snippet": "Version 3.11 of the survey package is making its way through CRAN.\n\nSince the last announcement on this list, of version 3.9, last September, there have been many minor bug fixes and usability improve",
       "thread_id": "thread-a19589957ac7",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-a19589957ac7",
-      "message_id": "<Pine.LNX.4.43.0902031230371.23612@hymn33.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2009-02-03T12:30:37-08:00",
-      "subject": "[R-pkgs] survey 3.11",
-      "subject_clean": "survey 3.11",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 3.11 of the survey package is making its way through CRAN.\n\nSince the last announcement on this list, of version 3.9, last September, there have been many minor bug fixes and usability improvements. The main new features are\n  - loglinear models with svyloglin()\n  - database-backed designs now allow new variables to be created, support ODBC\n    in addition to DBI database interfaces, and support multiple imputation\n  - there is an approximation (Brewer,2002) for PPS sampling without replacement\n  - svysmooth() now does quantile as well as mean smoothing\n  - barplot() and dotchart() methods for many objects.\n\nMore information at the package home page:\nhttp://faculty.washington.edu/tlumley/survey/\n\n    -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "Version 3.11 of the survey package is making its way through CRAN.\n\nSince the last announcement on this list, of version 3.9, last September, there have been many minor bug fixes and usability improve",
-      "thread_id": "thread-a19589957ac7",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-b95f85fe761f",
-      "message_id": "<1B96EF71-F7C9-43BF-BEAC-C9DFC6E26A21@math.uni-augsburg.de>",
-      "from_name": "Ali Uenlue",
-      "from_email_hash": "efaed8b009a3df3ead8833cadbd6cd4fcfd38c5b715a4b5b76b6fe1d86e4f10c",
-      "date": "2009-02-16T23:04:48+01:00",
-      "subject": "[R-pkgs] Package fechner for Fechnerian scaling, on CRAN now",
-      "subject_clean": "Package fechner for Fechnerian scaling, on CRAN now",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 1.0-0 of fechner has been released to CRAN.\n\nFechnerian scaling of discrete object (or stimulus) sets provides a  \ntheoretical framework for deriving, so-called Fechnerian, distances  \namong objects representing subjective dissimilarities.  A Fechnerian  \nmetric on a set of stimuli is constructed from the probabilities with  \nwhich the objects are discriminated from each other by a perceiving  \nsystem. In addition to the oriented and overall Fechnerian distances,  \nthe package fechner also computes such related information as the  \npoints of subjective equality, the psychometric increments, the  \ngeodesic chains and loops with their corresponding lengths, and the  \ngeneralized Shepardian dissimilarities. Moreover, the package fechner  \nprovides functions for checking the required data format and the  \nfundamental regular minimality/maximality condition.\n\nBest regards,\nThomas Kiefer\nAli Uenlue\n--\nDepartment of Computer-Oriented Statistics and Data Analysis\nInstitute of Mathematics\nUniversity of Augsburg\nhttp://stats.math.uni-augsburg.de/",
-      "body_snippet": "Version 1.0-0 of fechner has been released to CRAN.\n\nFechnerian scaling of discrete object (or stimulus) sets provides a  \ntheoretical framework for deriving, so-called Fechnerian, distances  \namong o",
-      "thread_id": "thread-b95f85fe761f",
       "thread_depth": 0,
       "month": "2009-02"
     },
@@ -116,22 +68,6 @@
       "month": "2009-02"
     },
     {
-      "id": "msg-7731c28ba98d",
-      "message_id": "<000601c9942d$188924d0$499b6e70$@ca>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2009-02-21T09:02:55-05:00",
-      "subject": "[R-pkgs] new RcmdrPlugin.survival package",
-      "subject_clean": "new RcmdrPlugin.survival package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nI'd like to announce the RcmdrPlugin.survival package, which has just been\nmade available on CRAN. The package provides an R Commander plug-in for the\nsurvival package, with dialogs for Cox models, parametric survival\nregression models, estimation of survival curves, and testing for\ndifferences in survival curves, along with data-management facilities and a\nvariety of tests, diagnostics and graphs. All of this is tightly integrated\nwith the standard R Commander menus. \n\nAs does the Rcmdr, the package takes advantage of the R facilities for\ntranslating messages into other languages. It comes with a translation into\nBrazilian Portuguese, courtesy of Marilia S? Carvalho of FIOCRUZ in Rio de\nJaneiro, whose suggestions during the development of the package were\ninvaluable. Please contact me if you're interested in providing a\ntranslation into another language.\n\nReports of bugs and other problems are welcome, as are suggestions for\nextending the package.\n\nRegards,\n John\n\n------------------------------\nJohn Fox, Professor\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
-      "body_snippet": "Dear R users,\n\nI'd like to announce the RcmdrPlugin.survival package, which has just been\nmade available on CRAN. The package provides an R Commander plug-in for the\nsurvival package, with dialogs for",
-      "thread_id": "thread-7731c28ba98d",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
       "id": "msg-fb827683f446",
       "message_id": "<49A2623E.1030902@wu-wien.ac.at>",
       "from_name": "Bettina Gruen",
@@ -144,38 +80,6 @@
       "body_plain": "Dear useRs,\n\nthe new R package exams provides Sweave-based automatic generation of\nexams with multiple-choice questions and arithmetic problems. The\npackage is available from CRAN:\n\nhttp://CRAN.R-project.org/package=exams\n\nIt includes a vignette giving an overview of the main design aims and\nprinciples as well as strategies for adaptation and extension.\nHands-on illustrations - based on example exercises and control files\nprovided in the package - are presented to get new users started easily.\n\nBest,\nBettina",
       "body_snippet": "Dear useRs,\n\nthe new R package exams provides Sweave-based automatic generation of\nexams with multiple-choice questions and arithmetic problems. The\npackage is available from CRAN:\n\nhttp://CRAN.R-proj",
       "thread_id": "thread-fb827683f446",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-fb827683f446",
-      "message_id": "<49A2623E.1030902@wu-wien.ac.at>",
-      "from_name": "Bettina Gruen",
-      "from_email_hash": "4ba2b1f16127d0815e7d81edbd9a6e97ff91f630ce4c272c65d0e7bb0240ca7a",
-      "date": "2009-02-23T09:45:50+01:00",
-      "subject": "[R-pkgs] New package: exams - Automatic Generation of Standardized Exams",
-      "subject_clean": "New package: exams - Automatic Generation of Standardized Exams",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nthe new R package exams provides Sweave-based automatic generation of\nexams with multiple-choice questions and arithmetic problems. The\npackage is available from CRAN:\n\nhttp://CRAN.R-project.org/package=exams\n\nIt includes a vignette giving an overview of the main design aims and\nprinciples as well as strategies for adaptation and extension.\nHands-on illustrations - based on example exercises and control files\nprovided in the package - are presented to get new users started easily.\n\nBest,\nBettina",
-      "body_snippet": "Dear useRs,\n\nthe new R package exams provides Sweave-based automatic generation of\nexams with multiple-choice questions and arithmetic problems. The\npackage is available from CRAN:\n\nhttp://CRAN.R-proj",
-      "thread_id": "thread-fb827683f446",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-9ceceab8192c",
-      "message_id": "<20090224124655.3ksrhkrtccco8css@icare.u-paris10.fr>",
-      "from_name": "cgenolin at u-paris10.fr",
-      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
-      "date": "2009-02-24T12:46:55+01:00",
-      "subject": "[R-pkgs] kml 0.9.2",
-      "subject_clean": "kml 0.9.2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "KmL, version 0.9.2\n\nKmL is a new implematation of k-means for longitudinal data (or \ntrajectories). This algorithm is able to deal with missing value and \nprovides an easy way to re roll the algorithm several times, varying \nthe starting conditions and/or the number of clusters looked for. It \nalso provide a graphical interface to let the user chose the best \nclusterization, when classical criterion are not efficiants.\n\nThis new version has been optimize (compiled code in C, 25 time faster \nthan the previous one) and also offer some facility to make research on \nclusterisation like trying to clusterize using some user define \ndistance.\n\nhttp://christophe.genolini.free.fr/kml\n\nChristophe Genolini",
-      "body_snippet": "KmL, version 0.9.2\n\nKmL is a new implematation of k-means for longitudinal data (or \ntrajectories). This algorithm is able to deal with missing value and \nprovides an easy way to re roll the algorithm",
-      "thread_id": "thread-9ceceab8192c",
       "thread_depth": 0,
       "month": "2009-02"
     },
@@ -212,22 +116,6 @@
       "month": "2009-02"
     },
     {
-      "id": "msg-57fdf3f5205a",
-      "message_id": "<Pine.LNX.4.43.0902250130310.6093@hymn31.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2009-02-25T01:30:31-08:00",
-      "subject": "[R-pkgs] leaps and biglm",
-      "subject_clean": "leaps and biglm",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "New versions of leaps and biglm are percolating through CRAN.\n\nThe new version of biglm fixes a bug in sandwich standard errors with weights, and adds predict(), deviance() and AIC() methods [based on code from Christophe Dutang].\n\nThe new version of leaps adds a regsubsets() method for biglm objects, so that the subset selection algorithms can be run efficiently on large data sets.\n\n      -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "New versions of leaps and biglm are percolating through CRAN.\n\nThe new version of biglm fixes a bug in sandwich standard errors with weights, and adds predict(), deviance() and AIC() methods [based on",
-      "thread_id": "thread-57fdf3f5205a",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
       "id": "msg-961b8a86168a",
       "message_id": "<f8e6ff050902250521k4f5421fav8f86e0101a1c2a98@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -240,38 +128,6 @@
       "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at http://github.com/hadley/ggplot2\n\nggplot2 0.8.2  (2008-02-23)\n----------------------------------------\n\nNew features\n\n* borders, fortify.map and map_data to make it easier to draw map\nborders and choropleth maps\n\n* cut_interval and cut_number utility functions to discretise\ncontinuous variables\n\n* stat_summary has reparameterised to make it easier to specify\ndifferent summary functions.  It now has four parameters: fun.y,\nfun.ymin and fun.ymax; and fun.data.  See the documentation for\nstat_summary for more details\n\nMinor improvements\n\n* ggfluctuation: default to aspect ratio that produces squares\n* ggsave: filename now first parameter, not second\n* qplot: if sample aesthetic is used, stat automatically set to qq\n* scale_datetime: improved breaks calculation\n* scale_gradient: better default colour scheme from red to blue\n(thanks to Charlotte Wickham for providing the Munsell colours)\n* scale_size and scale_area: increased default size range\n* stats: all give useful error message if missing a required aesthetic\n* theme_set warns if missing needed theme elements\n* theme_text: now possible to right and left align text with hjust=0\nand hjust=1 respectively\n\nBug fixes\n\n* be explicit about plyr::is.discrete to avoid clash with Hmisc\n* facet_wrap: work around R bug so no longer crashers when ncol = 1\n* geom_errorbar now works correctly with dashed lines\n* geom_path will now silently ignore lines with less than 2 points\n(instead of throwing a mysterious error as before)\n* geom_path now responds to the size aesthetic once more\n* geom_polygon etc now correctly displays linetype on legends\n* geom_step now works with multiple groups\n* geom_vline and geom_hline: fix bug when mapping intercept to\nvariable in data frame\n* ggsave: path parameter correctly sets path\n* guides: fix broken legend from default stat aesthetics (e.g. for stat_sum)\n* scale_manual now works better with missing values\n* scale_manual: labels now correctly sets legend labels.\n* stat_density_2d: no longer passes unnecessary parameters to kde2d\ncausing an error message (seen when setting aesthetics with qplot)\n* stat_pointrange: better relationship between point and line widths\n* stat_sum now correctly preserves other aesthetic columns (should be\na bit faster too)\n\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-961b8a86168a",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-961b8a86168a",
-      "message_id": "<f8e6ff050902250521k4f5421fav8f86e0101a1c2a98@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2009-02-25T07:21:52-06:00",
-      "subject": "[R-pkgs] ggplot2 0.8.2",
-      "subject_clean": "ggplot2 0.8.2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at http://github.com/hadley/ggplot2\n\nggplot2 0.8.2  (2008-02-23)\n----------------------------------------\n\nNew features\n\n* borders, fortify.map and map_data to make it easier to draw map\nborders and choropleth maps\n\n* cut_interval and cut_number utility functions to discretise\ncontinuous variables\n\n* stat_summary has reparameterised to make it easier to specify\ndifferent summary functions.  It now has four parameters: fun.y,\nfun.ymin and fun.ymax; and fun.data.  See the documentation for\nstat_summary for more details\n\nMinor improvements\n\n* ggfluctuation: default to aspect ratio that produces squares\n* ggsave: filename now first parameter, not second\n* qplot: if sample aesthetic is used, stat automatically set to qq\n* scale_datetime: improved breaks calculation\n* scale_gradient: better default colour scheme from red to blue\n(thanks to Charlotte Wickham for providing the Munsell colours)\n* scale_size and scale_area: increased default size range\n* stats: all give useful error message if missing a required aesthetic\n* theme_set warns if missing needed theme elements\n* theme_text: now possible to right and left align text with hjust=0\nand hjust=1 respectively\n\nBug fixes\n\n* be explicit about plyr::is.discrete to avoid clash with Hmisc\n* facet_wrap: work around R bug so no longer crashers when ncol = 1\n* geom_errorbar now works correctly with dashed lines\n* geom_path will now silently ignore lines with less than 2 points\n(instead of throwing a mysterious error as before)\n* geom_path now responds to the size aesthetic once more\n* geom_polygon etc now correctly displays linetype on legends\n* geom_step now works with multiple groups\n* geom_vline and geom_hline: fix bug when mapping intercept to\nvariable in data frame\n* ggsave: path parameter correctly sets path\n* guides: fix broken legend from default stat aesthetics (e.g. for stat_sum)\n* scale_manual now works better with missing values\n* scale_manual: labels now correctly sets legend labels.\n* stat_density_2d: no longer passes unnecessary parameters to kde2d\ncausing an error message (seen when setting aesthetics with qplot)\n* stat_pointrange: better relationship between point and line widths\n* stat_sum now correctly preserves other aesthetic columns (should be\na bit faster too)\n\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
-      "thread_id": "thread-961b8a86168a",
-      "thread_depth": 0,
-      "month": "2009-02"
-    },
-    {
-      "id": "msg-0f7c7c485e49",
-      "message_id": "<34896f090902251403i5f3524b5m6cf52870f4fd58b3@mail.gmail.com>",
-      "from_name": "Peter Solymos",
-      "from_email_hash": "3e4e5c37645041a11f505cbd9ee9456181aeea94ae29ebbc2f9032bc9b3633e1",
-      "date": "2009-02-25T15:03:04-07:00",
-      "subject": "[R-pkgs] mefa 3.0-0",
-      "subject_clean": "mefa 3.0-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R Community,\n\nI am pleased to announce that a new version of the mefa R package is\navailable at the CRAN.\n\nmefa is a package for multivariate data handling in ecology and\nbiogeography. It provides object classes to represent the data coded\nby samples, taxa and segments (i.e., subpopulations, repeated\nmeasures). It supports easy processing of the data along with\nrelational data tables for samples and taxa. An object of class mefa\nis a project specific compendium of the dataset and can be easily used\nin further analyses. Methods are provided for extraction, aggregation,\nconversion, plotting, summary and reporting of mefa objects. Reports\ncan be generated in plain text or LaTex.\n\nThe current version has been published in JSS (\nhttp://www.jstatsoft.org/v29/i08 ). The paper presents worked examples\non a variety of ecological analyses.\n\nBest wishes,\n\nP?ter\n\nP?ter S?lymos, PhD\nPostdoctoral Fellow\nDepartment of Mathematical and Statistical Sciences\nUniversity of Alberta\nEdmonton, Alberta, T6G 2G1\nCanada\nemail <- paste(\"solymos\", \"ualberta.ca\", sep = \"@\")",
-      "body_snippet": "Dear R Community,\n\nI am pleased to announce that a new version of the mefa R package is\navailable at the CRAN.\n\nmefa is a package for multivariate data handling in ecology and\nbiogeography. It provide",
-      "thread_id": "thread-0f7c7c485e49",
       "thread_depth": 0,
       "month": "2009-02"
     },
@@ -306,22 +162,6 @@
       "thread_id": "thread-4cd94b332d82",
       "thread_depth": 0,
       "month": "2009-02"
-    },
-    {
-      "id": "msg-4cd94b332d82",
-      "message_id": "<6421B233-9612-43D9-A754-750DEC952015@math.uni-augsburg.de>",
-      "from_name": "Ali Uenlue",
-      "from_email_hash": "efaed8b009a3df3ead8833cadbd6cd4fcfd38c5b715a4b5b76b6fe1d86e4f10c",
-      "date": "2009-02-26T21:11:30+01:00",
-      "subject": "[R-pkgs] Package DAKS for knowledge space theory, on CRAN now",
-      "subject_clean": "Package DAKS for knowledge space theory, on CRAN now",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment-0001.pl>",
-      "thread_id": "thread-4cd94b332d82",
-      "thread_depth": 0,
-      "month": "2009-02"
     }
   ],
   "threads": [
@@ -337,17 +177,6 @@
       "root_message_id": "msg-fc9581de2053"
     },
     {
-      "id": "thread-fc9581de2053",
-      "subject": "RMySQL 0.7-3",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Horner"
-      ],
-      "started": "2009-02-02T12:47:09-06:00",
-      "last_reply": "2009-02-02T12:47:09-06:00",
-      "root_message_id": "msg-fc9581de2053"
-    },
-    {
       "id": "thread-a19589957ac7",
       "subject": "survey 3.11",
       "message_count": 1,
@@ -357,28 +186,6 @@
       "started": "2009-02-03T12:30:37-08:00",
       "last_reply": "2009-02-03T12:30:37-08:00",
       "root_message_id": "msg-a19589957ac7"
-    },
-    {
-      "id": "thread-a19589957ac7",
-      "subject": "survey 3.11",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2009-02-03T12:30:37-08:00",
-      "last_reply": "2009-02-03T12:30:37-08:00",
-      "root_message_id": "msg-a19589957ac7"
-    },
-    {
-      "id": "thread-b95f85fe761f",
-      "subject": "Package fechner for Fechnerian scaling, on CRAN now",
-      "message_count": 1,
-      "participants": [
-        "Ali Uenlue"
-      ],
-      "started": "2009-02-16T23:04:48+01:00",
-      "last_reply": "2009-02-16T23:04:48+01:00",
-      "root_message_id": "msg-b95f85fe761f"
     },
     {
       "id": "thread-b95f85fe761f",
@@ -403,17 +210,6 @@
       "root_message_id": "msg-7731c28ba98d"
     },
     {
-      "id": "thread-7731c28ba98d",
-      "subject": "new RcmdrPlugin.survival package",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2009-02-21T09:02:55-05:00",
-      "last_reply": "2009-02-21T09:02:55-05:00",
-      "root_message_id": "msg-7731c28ba98d"
-    },
-    {
       "id": "thread-fb827683f446",
       "subject": "New package: exams - Automatic Generation of Standardized Exams",
       "message_count": 1,
@@ -423,28 +219,6 @@
       "started": "2009-02-23T09:45:50+01:00",
       "last_reply": "2009-02-23T09:45:50+01:00",
       "root_message_id": "msg-fb827683f446"
-    },
-    {
-      "id": "thread-fb827683f446",
-      "subject": "New package: exams - Automatic Generation of Standardized Exams",
-      "message_count": 1,
-      "participants": [
-        "Bettina Gruen"
-      ],
-      "started": "2009-02-23T09:45:50+01:00",
-      "last_reply": "2009-02-23T09:45:50+01:00",
-      "root_message_id": "msg-fb827683f446"
-    },
-    {
-      "id": "thread-9ceceab8192c",
-      "subject": "kml 0.9.2",
-      "message_count": 1,
-      "participants": [
-        "cgenolin at u-paris10.fr"
-      ],
-      "started": "2009-02-24T12:46:55+01:00",
-      "last_reply": "2009-02-24T12:46:55+01:00",
-      "root_message_id": "msg-9ceceab8192c"
     },
     {
       "id": "thread-9ceceab8192c",
@@ -469,28 +243,6 @@
       "root_message_id": "msg-57fdf3f5205a"
     },
     {
-      "id": "thread-57fdf3f5205a",
-      "subject": "leaps and biglm",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2009-02-25T01:30:31-08:00",
-      "last_reply": "2009-02-25T01:30:31-08:00",
-      "root_message_id": "msg-57fdf3f5205a"
-    },
-    {
-      "id": "thread-961b8a86168a",
-      "subject": "ggplot2 0.8.2",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2009-02-25T07:21:52-06:00",
-      "last_reply": "2009-02-25T07:21:52-06:00",
-      "root_message_id": "msg-961b8a86168a"
-    },
-    {
       "id": "thread-961b8a86168a",
       "subject": "ggplot2 0.8.2",
       "message_count": 1,
@@ -511,28 +263,6 @@
       "started": "2009-02-25T15:03:04-07:00",
       "last_reply": "2009-02-25T15:03:04-07:00",
       "root_message_id": "msg-0f7c7c485e49"
-    },
-    {
-      "id": "thread-0f7c7c485e49",
-      "subject": "mefa 3.0-0",
-      "message_count": 1,
-      "participants": [
-        "Peter Solymos"
-      ],
-      "started": "2009-02-25T15:03:04-07:00",
-      "last_reply": "2009-02-25T15:03:04-07:00",
-      "root_message_id": "msg-0f7c7c485e49"
-    },
-    {
-      "id": "thread-4cd94b332d82",
-      "subject": "Package DAKS for knowledge space theory, on CRAN now",
-      "message_count": 1,
-      "participants": [
-        "Ali Uenlue"
-      ],
-      "started": "2009-02-26T21:11:30+01:00",
-      "last_reply": "2009-02-26T21:11:30+01:00",
-      "root_message_id": "msg-4cd94b332d82"
     },
     {
       "id": "thread-4cd94b332d82",

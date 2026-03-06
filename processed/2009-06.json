@@ -20,22 +20,6 @@
       "month": "2009-06"
     },
     {
-      "id": "msg-31d557d6c7b3",
-      "message_id": "<4A284574.1000408@ucla.edu>",
-      "from_name": "Jeffrey Lewis",
-      "from_email_hash": "7e8e14684d5eead355808b885a0751cdc94c512329eb64313e0fea162810e78f",
-      "date": "2009-06-04T15:06:44-07:00",
-      "subject": "[R-pkgs] (ORPHANED) rimage 0.5-8 package uploaded",
-      "subject_clean": "(ORPHANED) rimage 0.5-8 package uploaded",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uploaded a new \nrelease, 0.5-8, that fixes these problems. \n\nIt have attempted to contact the package's  maintainer, Tomomi TAKASHINA \n<t.takashina at computer.org>, to no avail.   Kurt Hornik has also not been \nable to make contact with Tomomi. \n\nAt Kurt's suggestion, I have changed the maintainer to \"ORPHANED.\"\n\nBest,\n\nJeff Lewis\n\n-- \nJeffrey B. Lewis, Associate Professor \nDepartment of Political Science\nUniversity of California Los Angeles\nLos Angeles CA 90095\nt: 310.206.5295  f: 310.825.0778\nw: http://www.polisci.ucla.edu/faculty/lewis",
-      "body_snippet": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uplo",
-      "thread_id": "thread-31d557d6c7b3",
-      "thread_depth": 0,
-      "month": "2009-06"
-    },
-    {
       "id": "msg-aa5277c33fab",
       "message_id": "<4A300C30.10102@wcgwave.ca>",
       "from_name": "Drew Hoysak",
@@ -165,17 +149,6 @@
     }
   ],
   "threads": [
-    {
-      "id": "thread-31d557d6c7b3",
-      "subject": "(ORPHANED) rimage 0.5-8 package uploaded",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Lewis"
-      ],
-      "started": "2009-06-04T15:06:44-07:00",
-      "last_reply": "2009-06-04T15:06:44-07:00",
-      "root_message_id": "msg-31d557d6c7b3"
-    },
     {
       "id": "thread-31d557d6c7b3",
       "subject": "(ORPHANED) rimage 0.5-8 package uploaded",

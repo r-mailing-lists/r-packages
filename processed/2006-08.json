@@ -20,22 +20,6 @@
       "month": "2006-08"
     },
     {
-      "id": "msg-87ec132e81f8",
-      "message_id": "<17617.42929.317124.668398@maths.uwa.edu.au>",
-      "from_name": "Adrian Baddeley",
-      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
-      "date": "2006-08-03T15:37:21+08:00",
-      "subject": "[R-pkgs] spatstat 1.9-4",
-      "subject_clean": "spatstat 1.9-4",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 1.9-4 of package 'spatstat' has been sent to CRAN.\n\nIt includes new code for perfect simulation of point processes\nand various improvements.\n\nThe release notes are available at\n    <http://www.spatstat.org/spatstat/current/spatstatRELEASE-NOTES-1.9-4>\n\nAdrian Baddeley",
-      "body_snippet": "Version 1.9-4 of package 'spatstat' has been sent to CRAN.\n\nIt includes new code for perfect simulation of point processes\nand various improvements.\n\nThe release notes are available at\n    <http://www",
-      "thread_id": "thread-87ec132e81f8",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
       "id": "msg-6f19f79b6e67",
       "message_id": "<f8e6ff050608060753w28e532cby139b9abdf579844@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -48,40 +32,6 @@
       "body_plain": "Reshape 0.7\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is inspired by Excel's pivot tables, and it  makes it very\neasy to view your data the way you want. The reshape package (along\nwith ggplot) received the John Chambers Award for Statistical\nComputing. You can find out more at http://had.co.nz/reshape.\n\nReshape (hopefully) makes it easy to do what you have been struggling\nto do with tapply, by, aggregate, xtabs, apply and summarise.  It is\nalso useful for getting your data into the correct structure for\nlattice or ggplot plots.\n\nThis new version of reshape substantially expands the type of output\nyou can cast into.  You can now make nested lists, cast(m, a ~ b | c)\nor cast(m, a ~ b | c + d), and multidimensional arrays, cast(m, a ~ b\n~ c) (or any combination of the two).  See the examples in ?cast.\n\nWhat else is new?:\n\n * iapply, an idempotent apply function that returns results with the\nsame dimensionality as the input (very useful in conjunction with\nsweep and multidimensional arrays)\n\n * rescaler, a function to rescale data.frames variable by variable\nusing a range of different scaling methods\n\n * combine_factor and reorder_factor to make it easier to combine and\nreorder factor levels\n\n * bug fixes!\n\nAll feedback is welcomed, and if you are struggling with reshaping\nyour data and the reshape package isn't helping, please let me know.\n\nRegards,\n\nHadley\nhttp://had.co.nz/",
       "body_snippet": "Reshape 0.7\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is inspired by Excel's pivot tables, and it  makes it very\neasy to view your data the way y",
       "thread_id": "thread-6f19f79b6e67",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-6f19f79b6e67",
-      "message_id": "<f8e6ff050608060753w28e532cby139b9abdf579844@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2006-08-06T07:53:43-07:00",
-      "subject": "[R-pkgs] Reshape package: new version 0.7",
-      "subject_clean": "Reshape package: new version 0.7",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Reshape 0.7\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is inspired by Excel's pivot tables, and it  makes it very\neasy to view your data the way you want. The reshape package (along\nwith ggplot) received the John Chambers Award for Statistical\nComputing. You can find out more at http://had.co.nz/reshape.\n\nReshape (hopefully) makes it easy to do what you have been struggling\nto do with tapply, by, aggregate, xtabs, apply and summarise.  It is\nalso useful for getting your data into the correct structure for\nlattice or ggplot plots.\n\nThis new version of reshape substantially expands the type of output\nyou can cast into.  You can now make nested lists, cast(m, a ~ b | c)\nor cast(m, a ~ b | c + d), and multidimensional arrays, cast(m, a ~ b\n~ c) (or any combination of the two).  See the examples in ?cast.\n\nWhat else is new?:\n\n * iapply, an idempotent apply function that returns results with the\nsame dimensionality as the input (very useful in conjunction with\nsweep and multidimensional arrays)\n\n * rescaler, a function to rescale data.frames variable by variable\nusing a range of different scaling methods\n\n * combine_factor and reorder_factor to make it easier to combine and\nreorder factor levels\n\n * bug fixes!\n\nAll feedback is welcomed, and if you are struggling with reshaping\nyour data and the reshape package isn't helping, please let me know.\n\nRegards,\n\nHadley\nhttp://had.co.nz/",
-      "body_snippet": "Reshape 0.7\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is inspired by Excel's pivot tables, and it  makes it very\neasy to view your data the way y",
-      "thread_id": "thread-6f19f79b6e67",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-e39b49e67418",
-      "message_id": "<7FFEE688B57D7346BC6241C55900E730F31C54@pollux.bfro.uni-lj.si>",
-      "from_name": "Gorjanc Gregor",
-      "from_email_hash": "fa1948da1d5a19d793d64821dc48b628a0b7b353a62033b85cac76bd747bdc03",
-      "date": "2006-08-10T10:40:00+02:00",
-      "subject": "[R-pkgs] New upload of connectedness",
-      "subject_clean": "New upload of connectedness",
-      "in_reply_to": null,
-      "references": [
-        "<7FFEE688B57D7346BC6241C55900E730F31C50@pollux.bfro.uni-lj.si>"
-      ],
-      "body_plain": "Hello!\n\nI have uploaded update (0.2-1) for connectedness.\n\nNEWS?\n\no NA's in either x or y are not removed by default, but only when\n  drop=TRUE. Subset method gains dropNA=NULL argument due to\n  this. Now subset arguments are properly placed after '...'. 2006-08-08\n\no Added unit tests. 2006-08-08\n\no Removed connectedness.package.Rd as it is not really needed\n  here. 2006-08-08\n\no LGPL -> GPL. 2006-06-17\n\no Removed dependency on package RColorBrewer since this was not really\n  needed. I needed RColorBrewer only to get a set of default distinct\n  colors. 2006-06-17\n\no Only unique levels are printed out in Levels* columns. 2006-06-06\n\no Percent in form of 33 and not 0.33. 2006-06-06\n\no Minor documentation fixes - typos etc. 2006-05-02\n\nLep pozdrav / With regards,\n    Gregor Gorjanc\n\n----------------------------------------------------------------------\nUniversity of Ljubljana     PhD student\nBiotechnical Faculty        URI: http://www.bfro.uni-lj.si/MR/ggorjan\nZootechnical Department     mail: gregor.gorjanc <at> bfro.uni-lj.si\nGroblje 3                   tel: +386 (0)1 72 17 861\nSI-1230 Domzale             fax: +386 (0)1 72 17 888\nSlovenia, Europe\n----------------------------------------------------------------------\n\"One must learn by doing the thing; for though you think you know it,\n you have no certainty until you try.\" Sophocles ~ 450 B.C.",
-      "body_snippet": "Hello!\n\nI have uploaded update (0.2-1) for connectedness.\n\nNEWS?\n\no NA's in either x or y are not removed by default, but only when\n  drop=TRUE. Subset method gains dropNA=NULL argument due to\n  this.",
-      "thread_id": "thread-e39b49e67418",
       "thread_depth": 0,
       "month": "2006-08"
     },
@@ -120,22 +70,6 @@
       "month": "2006-08"
     },
     {
-      "id": "msg-b8c34a6fb441",
-      "message_id": "<DOEKJCLKLCEDEDHLDCJICEFOCNAA.ubk@kogalur-shear.com>",
-      "from_name": "K. B. Udaya",
-      "from_email_hash": "ca61ebba14e7a17243e62c7766734ccb2bf4c0b6eeda64c24e96a19c14d70aa2",
-      "date": "2006-08-14T00:16:58-04:00",
-      "subject": "[R-pkgs] Random Survival Forest 1.0.0 is now available.",
-      "subject_clean": "Random Survival Forest 1.0.0 is now available.",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nRelease 1.0.0 of the new R package 'randomSurvivalForest' is now available\non CRAN and its mirrors.  The package implements Ishwaran and Kogalur's\nRandom Survival Forests algorithm for right censored survival data.  The\nalgorithm is closely patterned after Breiman's random forests, but suitably\nmodified for the survival setting.  Some key features are:\n\no An ensemble cumulative hazard is constructed\n    from binary recursive survival trees grown\n    under different splitting rules.\n\no Mortality estimates interpretable in terms\n    of total number of deaths are provided.\n\no An out-of-bag estimate of Harrell's concordance\n    index is provided for assessing prediction.\n\nDetailed information on usage can be found in the manual.\n\nThank you.\n\nHemant Ishwaran,  Udaya B. Kogalur",
-      "body_snippet": "Dear useRs,\n\nRelease 1.0.0 of the new R package 'randomSurvivalForest' is now available\non CRAN and its mirrors.  The package implements Ishwaran and Kogalur's\nRandom Survival Forests algorithm for ri",
-      "thread_id": "thread-b8c34a6fb441",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
       "id": "msg-fac9e9e5e273",
       "message_id": "<148ed8180608210212k6a7858d9s3e01011588fec2ec@mail.gmail.com>",
       "from_name": "Göran Broström",
@@ -148,38 +82,6 @@
       "body_plain": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-Hermite approximations to the log\nlikelihood function are fully implemented. The Laplace method is made\nthe default. It should give results you can compare to the results\nfrom 'lmer' (for the models that glmmML can handle).\n\n* Binomial responses can now be represented as a two-column matrix\nwith No. of successes and No. of failures, respectively, as in glm.\n\n* New functions: 'ghq' for calculating the constants used in the\nGauss-Hermite quadrature. 'extractAIC.glmmML', which makes it possible\nto use functions like 'dropterm' (MASS) on glmmML fits.\n\n* There are three choices of distribution for the random effects:\n'gaussian' (default), 'logistic', and 'cauchy'.\n\n* The 'conditional' bootstrap is removed, so the only choice now is\nthe parametric bootstrap.\n\n* The 'posterior.means' are no longer calculated, leaving only the\n'posterior.modes' as 'predictions' of the random effects.\n\nAs usual, feedback is more than welcome!\n\nG?ran",
       "body_snippet": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-",
       "thread_id": "thread-fac9e9e5e273",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-fac9e9e5e273",
-      "message_id": "<148ed8180608210212k6a7858d9s3e01011588fec2ec@mail.gmail.com>",
-      "from_name": "Göran Broström",
-      "from_email_hash": "66e592a12cd1e56cd7a2efa08753111907fa15843f0a9978328deaf6f059b9dc",
-      "date": "2006-08-21T11:12:49+02:00",
-      "subject": "[R-pkgs] New version of glmmML",
-      "subject_clean": "New version of glmmML",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-Hermite approximations to the log\nlikelihood function are fully implemented. The Laplace method is made\nthe default. It should give results you can compare to the results\nfrom 'lmer' (for the models that glmmML can handle).\n\n* Binomial responses can now be represented as a two-column matrix\nwith No. of successes and No. of failures, respectively, as in glm.\n\n* New functions: 'ghq' for calculating the constants used in the\nGauss-Hermite quadrature. 'extractAIC.glmmML', which makes it possible\nto use functions like 'dropterm' (MASS) on glmmML fits.\n\n* There are three choices of distribution for the random effects:\n'gaussian' (default), 'logistic', and 'cauchy'.\n\n* The 'conditional' bootstrap is removed, so the only choice now is\nthe parametric bootstrap.\n\n* The 'posterior.means' are no longer calculated, leaving only the\n'posterior.modes' as 'predictions' of the random effects.\n\nAs usual, feedback is more than welcome!\n\nG?ran",
-      "body_snippet": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-",
-      "thread_id": "thread-fac9e9e5e273",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-b6fecdb611db",
-      "message_id": "<m2u045zf1a.fsf@ziti.fhcrc.org>",
-      "from_name": "Seth Falcon",
-      "from_email_hash": "92e6ad61c3d6d545a12aa5845a0d74c5de1bbbc7bf85c768e4a2cb862e092abc",
-      "date": "2006-08-21T19:21:21-07:00",
-      "subject": "[R-pkgs] ANN: 'weaver' package, caching for Sweave",
-      "subject_clean": "ANN: 'weaver' package, caching for Sweave",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi all,\n\nI've added a new package 'weaver' to the BioC repository:\n\nhttp://www.bioconductor.org/packages/1.9/bioc/html/weaver.html\n\nThe weaver package provides extensions to the Sweave utilities\nincluded in R's base package.  The focus of the extensions is on\ncaching computationally expensive (time consuming) code chunks in\nSweave documents.\n\nWhy would you want to cache code chunks?  If your Sweave document\nincludes one or more code chunks that take a long time to compute, you\nmay find it frustrating to make small changes to the document.  Each\nrun requires recomputing the \"expensive\" code chunks.  If these chunks\naren't changing, you can benefit from the caching provided by weaver.\n\nTo install:\n\n  source(\"http://bioconductor.org/biocLite.R\")\n  biocLite(\"weaver\")\n\nIf you give it a try and have any feedback, drop me a note.\n\nBest Wishes,\n\n+ seth",
-      "body_snippet": "Hi all,\n\nI've added a new package 'weaver' to the BioC repository:\n\nhttp://www.bioconductor.org/packages/1.9/bioc/html/weaver.html\n\nThe weaver package provides extensions to the Sweave utilities\ninclu",
-      "thread_id": "thread-b6fecdb611db",
       "thread_depth": 0,
       "month": "2006-08"
     },
@@ -218,24 +120,6 @@
       "month": "2006-08"
     },
     {
-      "id": "msg-0899b6470963",
-      "message_id": "<m2ejv8n7em.fsf@ziti.local>",
-      "from_name": "Seth Falcon",
-      "from_email_hash": "92e6ad61c3d6d545a12aa5845a0d74c5de1bbbc7bf85c768e4a2cb862e092abc",
-      "date": "2006-08-22T07:59:13-07:00",
-      "subject": "[R-pkgs] [R]  ANN: 'weaver' package, caching for Sweave",
-      "subject_clean": "ANN: 'weaver' package, caching for Sweave",
-      "in_reply_to": "<m2u045zf1a.fsf@ziti.fhcrc.org> (Seth Falcon's message of \"Mon, 21 Aug 2006 19:21:21 -0700\")",
-      "references": [
-        "<m2u045zf1a.fsf@ziti.fhcrc.org>"
-      ],
-      "body_plain": "Hi again,\n\nSorry for the noise, but I need to make a correction:\n\nSeth Falcon <sfalcon at fhcrc.org> writes:\n> To install:\n>\n>   source(\"http://bioconductor.org/biocLite.R\")\n>   biocLite(\"weaver\")\n\nAt present, the above install sequence will _only_ work if you are\nusing a development version of R.\n\nIf you are using the current R release, you will have to work a bit\nharder to install (put weaver works there too):\n\nFirst install weaver's dependencies:\n\n  digest (on CRAN)\n\n  codetools:\n    http://bioconductor.org/packages/1.9/omegahat/html/codetools.html\n\nThen install weaver:\n    http://www.bioconductor.org/packages/1.9/bioc/html/weaver.html\n\nFinally, I will try to make Windows binaries available by the end of\nthe week.\n\n+ seth",
-      "body_snippet": "Hi again,\n\nSorry for the noise, but I need to make a correction:\n\nSeth Falcon <sfalcon at fhcrc.org> writes:\n> To install:\n>\n>   source(\"http://bioconductor.org/biocLite.R\")\n>   biocLite(\"weaver\")\n\nAt",
-      "thread_id": "thread-b6fecdb611db",
-      "thread_depth": 1,
-      "month": "2006-08"
-    },
-    {
       "id": "msg-a6f13f523b73",
       "message_id": "<17644.63427.629643.303941@maths.uwa.edu.au>",
       "from_name": "Adrian Baddeley",
@@ -248,38 +132,6 @@
       "body_plain": "A new version 1.9-5 of the package `spatstat' \nhas been uploaded to CRAN.\n\nWhat it is:\n----------\nspatstat is a package for analysing spatial data, mainly Spatial Point\nPatterns. \n\nWhat's in it:\n------------\nFunctions for exploratory data analysis, model-fitting, simulation,\nspatial sampling, model diagnostics, and formal inference. Data types\ninclude point patterns, line segment patterns, spatial windows, and\npixel images. Point patterns may include marks (e.g. multitype\npoints).  Spatial windows can have irregular shape (polygons with\nholes, binary images).  Point process models can be fitted to point\npattern data. Cluster models are fitted by the method of minimum\ncontrast. Very general Gibbs point process models can be fitted to\npoint pattern data using a function ppm similar to lm or glm. Models\nmay include dependence on covariates, interpoint interaction and\ndependence on marks. Fitted models can be simulated\nautomatically. Also provides facilities for formal inference (such as\nchi-squared tests) and model diagnostics (including simulation\nenvelopes, residuals, residual plots and Q-Q plots).\n\nSpatstat is one of the largest packages available on CRAN,\nwith over 270 functions. \n\nFor more information:\n--------------------\n\tSee the Release Notes for version 1.9-5 at\n\t\t<www.spatstat.org>\n\n\n\nAdrian Baddeley and Rolf Turner",
       "body_snippet": "A new version 1.9-5 of the package `spatstat' \nhas been uploaded to CRAN.\n\nWhat it is:\n----------\nspatstat is a package for analysing spatial data, mainly Spatial Point\nPatterns. \n\nWhat's in it:\n-----",
       "thread_id": "thread-a6f13f523b73",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-a6f13f523b73",
-      "message_id": "<17644.63427.629643.303941@maths.uwa.edu.au>",
-      "from_name": "Adrian Baddeley",
-      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
-      "date": "2006-08-24T08:50:11+08:00",
-      "subject": "[R-pkgs] spatstat 1.9-5",
-      "subject_clean": "spatstat 1.9-5",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "A new version 1.9-5 of the package `spatstat' \nhas been uploaded to CRAN.\n\nWhat it is:\n----------\nspatstat is a package for analysing spatial data, mainly Spatial Point\nPatterns. \n\nWhat's in it:\n------------\nFunctions for exploratory data analysis, model-fitting, simulation,\nspatial sampling, model diagnostics, and formal inference. Data types\ninclude point patterns, line segment patterns, spatial windows, and\npixel images. Point patterns may include marks (e.g. multitype\npoints).  Spatial windows can have irregular shape (polygons with\nholes, binary images).  Point process models can be fitted to point\npattern data. Cluster models are fitted by the method of minimum\ncontrast. Very general Gibbs point process models can be fitted to\npoint pattern data using a function ppm similar to lm or glm. Models\nmay include dependence on covariates, interpoint interaction and\ndependence on marks. Fitted models can be simulated\nautomatically. Also provides facilities for formal inference (such as\nchi-squared tests) and model diagnostics (including simulation\nenvelopes, residuals, residual plots and Q-Q plots).\n\nSpatstat is one of the largest packages available on CRAN,\nwith over 270 functions. \n\nFor more information:\n--------------------\n\tSee the Release Notes for version 1.9-5 at\n\t\t<www.spatstat.org>\n\n\n\nAdrian Baddeley and Rolf Turner",
-      "body_snippet": "A new version 1.9-5 of the package `spatstat' \nhas been uploaded to CRAN.\n\nWhat it is:\n----------\nspatstat is a package for analysing spatial data, mainly Spatial Point\nPatterns. \n\nWhat's in it:\n-----",
-      "thread_id": "thread-a6f13f523b73",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-aeee22850292",
-      "message_id": "<20060825031952.1792caf0.Achim.Zeileis@R-project.org>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
-      "date": "2006-08-25T03:19:52+02:00",
-      "subject": "[R-pkgs] zoo: new version 1.2-0",
-      "subject_clean": "zoo: new version 1.2-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nthe new version 1.2-0 of the zoo package for dealing with regular and\nirregular time series data is available from the CRAN mirrors.\n\nThis version includes two important changes/enhancements:\n\n  - rapply() was re-named to rollapply() because from R 2.4.0 on,\n    base R provides a function rapply() for recursive (not rolling)\n    application of functions, which was already described in the Green\n    Book. zoo::rapply() currently still exists for backward\n    compatibility, however, it is flagged as deprecated and now\n    dispatches to rollapply() methods. We recommend to change existing\n    scripts from using rapply() to rollapply().\n\n  - xyplot() methods for \"zoo\", \"ts\", and \"its\" objects have been\n    added for creating trellis time series graphs. The functions\n    are still under development and suggestions for improvement are\n    welcome.\n\nFor general introductions to the package see:\n  vignette(\"zoo\", package = \"zoo\")\n  vignette(\"zoo-quickref\", package = \"zoo\")\n\nBest wishes,\nZ",
-      "body_snippet": "Dear useRs,\n\nthe new version 1.2-0 of the zoo package for dealing with regular and\nirregular time series data is available from the CRAN mirrors.\n\nThis version includes two important changes/enhanceme",
-      "thread_id": "thread-aeee22850292",
       "thread_depth": 0,
       "month": "2006-08"
     },
@@ -316,22 +168,6 @@
       "month": "2006-08"
     },
     {
-      "id": "msg-e5b94a73ca74",
-      "message_id": "<20060825032855.4ecccc38.Achim.Zeileis@R-project.org>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
-      "date": "2006-08-25T03:28:55+02:00",
-      "subject": "[R-pkgs] sandwich: new version 2.0-0",
-      "subject_clean": "sandwich: new version 2.0-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\na new version 2.0-0 of the sandwich package for estimating sandwich\ncovariance matrices is available from the CRAN mirrors.\n\nThe tools for computing heteroskedasticity (and autocorrelation)\nconsistent covariance matrix estimators (also called HC\nand HAC estimators, including the Eicker-Huber-White estimator)\nhave been generalized over the last releases from linear regression to\ngeneral parametric models. These new object-oriented features of the\nsandwich package are also described in paper published in the Journal\nof Statistical Software (JSS) that accompanies this release. See\n  http://www.jstatsoft.org/\n\nThe new JSS paper and the previous one (accompanying version 1.0-0) are\nalso available as package vignettes:\n  vignette(\"sandwich\", package = \"sandwich\")\n  vignette(\"sandwich-OOP\", package = \"sandwich\")\n\nBest wishes,\nZ",
-      "body_snippet": "Dear useRs,\n\na new version 2.0-0 of the sandwich package for estimating sandwich\ncovariance matrices is available from the CRAN mirrors.\n\nThe tools for computing heteroskedasticity (and autocorrelatio",
-      "thread_id": "thread-e5b94a73ca74",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
       "id": "msg-916eabd98f67",
       "message_id": "<Pine.LNX.4.64.0608250744120.6086@homer21.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -344,38 +180,6 @@
       "body_plain": "biglm fits linear and generalized linear models to large data sets, using \nbounded memory.\n\nWhat's New:  generalized linear models.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
       "body_snippet": "biglm fits linear and generalized linear models to large data sets, using \nbounded memory.\n\nWhat's New:  generalized linear models.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley",
       "thread_id": "thread-916eabd98f67",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-916eabd98f67",
-      "message_id": "<Pine.LNX.4.64.0608250744120.6086@homer21.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2006-08-25T07:47:13-07:00",
-      "subject": "[R-pkgs] biglm 0.4",
-      "subject_clean": "biglm 0.4",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "biglm fits linear and generalized linear models to large data sets, using \nbounded memory.\n\nWhat's New:  generalized linear models.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "biglm fits linear and generalized linear models to large data sets, using \nbounded memory.\n\nWhat's New:  generalized linear models.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley",
-      "thread_id": "thread-916eabd98f67",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-6a9175f262a2",
-      "message_id": "<44F45F0E.4010802@stats.gla.ac.uk>",
-      "from_name": "Adrian Bowman",
-      "from_email_hash": "952460a23e0504d358cc85dc54bbebff25e0d6a727139dc9630bc8a4aacf3dcb",
-      "date": "2006-08-29T16:36:46+01:00",
-      "subject": "[R-pkgs] The rpanel package",
-      "subject_clean": "The rpanel package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The rpanel package builds on the tcltk package to provide simple \ninteractive controls for R functions, in particular to provide simple \nforms of dynamic graphics.  The intention is to make this form of \ncontrol particularly easy for R users to implement, with full \ndocumentation.  The necessary tcltk variables are managed behind the \nscenes so that users need not be concerned with any technicalities.\n\nA descriptive paper and some simple example scripts are available at\n\twww.stats.gla.ac.uk/~adrian/rpanel/\nThe package is now available from CRAN.\n\nBest wishes,\n\nAdrian Bowman\n(on behalf of the authors: Bowman, Crawford, Alexander & Bowman)\n\n_______________________________________________________________________\n  Prof. Adrian Bowman           Tel: +44-141-330-4046\n  Dept. of Statistics           Fax: +44-141-330-4814\n  The University of Glasgow     E-mail:adrian at stats.gla.ac.uk\n  Glasgow G12 8QQ, U.K.         Web: www.stats.gla.ac.uk/~adrian",
-      "body_snippet": "The rpanel package builds on the tcltk package to provide simple \ninteractive controls for R functions, in particular to provide simple \nforms of dynamic graphics.  The intention is to make this form ",
-      "thread_id": "thread-6a9175f262a2",
       "thread_depth": 0,
       "month": "2006-08"
     },
@@ -412,22 +216,6 @@
       "month": "2006-08"
     },
     {
-      "id": "msg-8811e32bcce9",
-      "message_id": "<20060830113736.EBRT24981.tomts40-srv.bellnexxia.net@JohnDesktop8300>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2006-08-30T07:37:36-04:00",
-      "subject": "[R-pkgs] Version 1.2-0 of the Rcmdr package",
-      "subject_clean": "Version 1.2-0 of the Rcmdr package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I've submitted a new, and substantially enhanced, version (1.2-0) of the\nRcmdr package to CRAN. Some highlights (from the CHANGES) file:\n\n   o  Added ability to import from Excel, Access or dBase files (contributed\nby Samir Messad, Renaud Lancelot and Matthieu Lesnoff).\n\n   o  Added ability to read data from the clipboard (suggested by Graham\nSmith).\n\n   o  Added \"Data -> Active data set -> Stack variables in active data set\"\n(suggested by Richard Heiberger).\n   \n   o  Added many probability distributions, courtesy of Miroslav Ristic and\nG. Jay Kerns, Andy Chang, and Theophilius Boye.\n   \n   o  Added dialogs to sample from probability distributions; divided\ndistributions menus into Continuous and Discrete.\n   \n   o  Added totPercents function. Added total percentages and components of\nchi-square to two-way tables (suggested by Richard Heiberger).\n      \n   o  Added \"Statistics -> Summaries -> Count missing observations\".\n   \n   o  Added \"Statistics -> Summaries -> Correlation test\", contributed by\nStefano Calza.\n      \n   o  The numerical summaries, table of statistics, frequency distributions,\nnumeric to factor, and recode dialogs will now process multiple variables in\nparallel (suggested by Bo Sommerlund).\n   \n   o  Added function numSummaries for neater output from \"Statistics ->\nSummaries -> Numerical summaries\" (motivated by comments from Bo\nSommerlund).\n   \n   o  XY conditioning plots dialog added, courtesy of Richard Heiberger.\n      \n   o  Enhancements to 3D scatterplots.\n\n   o  Small interface improvements (e.g., pressing letter key in a list box\nmoves to next entry starting with that letter).\n\n   o  New Rcmdr options (etc and etcMenus) determine where the Commander\nwill look for its configuration and menu files (motivated by a suggestion by\nRichard Heiberger).\n      \nRcmdr version 1.2-0 includes revised Catalan and Japanese translations\n(courtesy of Manel Salamero and Takaharu Araki); as other revised\ntranslations become available, I'll submit updated versions of the package\nto CRAN. Version 1.2-1 will also have a revised introductory manual.\n\nAs usual, bug reports, comments, and suggestions are welcome.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
-      "body_snippet": "I've submitted a new, and substantially enhanced, version (1.2-0) of the\nRcmdr package to CRAN. Some highlights (from the CHANGES) file:\n\n   o  Added ability to import from Excel, Access or dBase file",
-      "thread_id": "thread-8811e32bcce9",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
       "id": "msg-83c72e257562",
       "message_id": "<17654.21522.980572.948491@basebud.nulle.part>",
       "from_name": "Dirk Eddelbuettel",
@@ -440,38 +228,6 @@
       "body_plain": "Dear useRs,\n\nA few days ago, the initial version 0.1.0 of a new package 'random' was\nuploaded to CRAN.\n\nThe random packages provides convenient access to the non-deterministic\nrandom numbers provided by the random.org site created by Mads Haahr\n(http://www.random.org).  \n\nWhile certain hardware and software solutions that provide access to\nnon-deterministic random-numbers exist, few if any are portable across all\nthe hardware platforms R supports. Retrieving non-deterministic random\nnumbers may be beneficial to seed parallel simulations with independent\ndraws, to obtain portable initializations for other RNGs, to validate\nsimulation with non-deterministic RNGs, or simply for fun and\nexperimentations.\n\nThe package contains five simple functions \n     randomNumber\t(random integeres between min, max w/ duplicates)\n     randomSequence\t(random sequences between min, max w/o duplicates)\n     randomBytes\t(in hex, dec, oct or bin)\n     randomBufferStatus (to query the server status)\n     sufficientBits\t(boolean test of randomBufferStats vs rec'ed value)\n\nAlso included are two vignettes that can be accessed via\n     vignette(\"random-intro\", package = \"random\")\n     vignette(\"random-essay\", package = \"random\")\n\n'random-intro' provides some background on the package as well as initial\ntest results using the dieharder suite by Robert G. Brown. I hope to expand\non these tests in the near future. 'random-essay' is a transcript of the web\nessay at http://www.random.org/essay.html and provides some background on the\nrandom.org service.\n\nSome information is / will be at \n     http://dirk.eddelbuettel.com/code/random.html will \n\nComments or suggestions are more than welcome!\n\nRegards, Dirk\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
       "body_snippet": "Dear useRs,\n\nA few days ago, the initial version 0.1.0 of a new package 'random' was\nuploaded to CRAN.\n\nThe random packages provides convenient access to the non-deterministic\nrandom numbers provided ",
       "thread_id": "thread-83c72e257562",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-83c72e257562",
-      "message_id": "<17654.21522.980572.948491@basebud.nulle.part>",
-      "from_name": "Dirk Eddelbuettel",
-      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
-      "date": "2006-08-30T22:14:26-05:00",
-      "subject": "[R-pkgs] New package 'random' for non-deterministic random number",
-      "subject_clean": "New package 'random' for non-deterministic random number",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nA few days ago, the initial version 0.1.0 of a new package 'random' was\nuploaded to CRAN.\n\nThe random packages provides convenient access to the non-deterministic\nrandom numbers provided by the random.org site created by Mads Haahr\n(http://www.random.org).  \n\nWhile certain hardware and software solutions that provide access to\nnon-deterministic random-numbers exist, few if any are portable across all\nthe hardware platforms R supports. Retrieving non-deterministic random\nnumbers may be beneficial to seed parallel simulations with independent\ndraws, to obtain portable initializations for other RNGs, to validate\nsimulation with non-deterministic RNGs, or simply for fun and\nexperimentations.\n\nThe package contains five simple functions \n     randomNumber\t(random integeres between min, max w/ duplicates)\n     randomSequence\t(random sequences between min, max w/o duplicates)\n     randomBytes\t(in hex, dec, oct or bin)\n     randomBufferStatus (to query the server status)\n     sufficientBits\t(boolean test of randomBufferStats vs rec'ed value)\n\nAlso included are two vignettes that can be accessed via\n     vignette(\"random-intro\", package = \"random\")\n     vignette(\"random-essay\", package = \"random\")\n\n'random-intro' provides some background on the package as well as initial\ntest results using the dieharder suite by Robert G. Brown. I hope to expand\non these tests in the near future. 'random-essay' is a transcript of the web\nessay at http://www.random.org/essay.html and provides some background on the\nrandom.org service.\n\nSome information is / will be at \n     http://dirk.eddelbuettel.com/code/random.html will \n\nComments or suggestions are more than welcome!\n\nRegards, Dirk\n\n-- \nHell, there are no rules here - we're trying to accomplish something. \n                                                  -- Thomas A. Edison",
-      "body_snippet": "Dear useRs,\n\nA few days ago, the initial version 0.1.0 of a new package 'random' was\nuploaded to CRAN.\n\nThe random packages provides convenient access to the non-deterministic\nrandom numbers provided ",
-      "thread_id": "thread-83c72e257562",
-      "thread_depth": 0,
-      "month": "2006-08"
-    },
-    {
-      "id": "msg-a8eab14386cc",
-      "message_id": "<m0wt8pjajl.fsf@bar.nemo-project.org>",
-      "from_name": "Bjørn-Helge Mevik and Øyvind Langsrud",
-      "from_email_hash": "9f1b760c981d133cffd0e60693d8f01269311ff152355fb79317dc6d34415c58",
-      "date": "2006-08-31T15:32:14+02:00",
-      "subject": "[R-pkgs] New package ffmanova for 50-50 MANOVA released",
-      "subject_clean": "New package ffmanova for 50-50 MANOVA released",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 0.1-0 of a new package `ffmanova' is now available on CRAN.\n\nComments, suggestions, etc. are welcome.  Please use the email address\nffmanova (at) mevik.net.\n\nThe package implements 50-50 MANOVA (Langsrud, 2002) with p-value\nadjustment based on rotation testing (Langsrud, 2005).\n\nThe 50-50 MANOVA method is a modified variant of classical MANOVA made\nto handle several highly correlated responses.  Classical MANOVA\nperforms poorly in such cases and it collapses when the number of\nresponses exceeds the number of observations.  The 50-50 MANOVA method\nis suggested as a general method that will handle all types of data.\nPrincipal component analysis is an integrated part of the algorithm.\n\nThe single response special case is ordinary general linear modeling.\nType II sums of squares are used to handle unbalanced designs\n(Langsrud, 2003).  Furthermore, the Type II philosophy is extended to\ncontinuous design variables.  This means that the method is invariant\nto scale changes.  Centering of design variables is not needed.  The\nType II approach ensures that common pitfalls are avoided.\n\nA univariate F-test p-value for each response can be reported when\nseveral responses are present.  However, with a large number of\nresponse variables, these results are questionable since we will\nexpect a lot of type I errors (\"incorrect significance\").  Therefore\nthe p-values need to be adjusted.\n\nBy using rotation testing it is possible to adjust the single response\np-values according to the familywise error rate criterion in an exact\nand non-conservative (unlike Bonferroni) way.\n\nIt is also possible to adjust p-values according to a false discovery\nrate criterion.  Our method is based on rotation testing and allows\nany kind of dependence among the responses (Moen et al., 2005).\n\nNote that rotation testing is closely related to permutation testing.\nOne difference is that rotation testing relies on the multinormal\nassumption.  All the classical tests (t-test, F-test, Hotelling T^2\ntest, ...) can be viewed as special cases of rotation testing.\n\n\nREFERENCES \n\nLangsrud, ?. (2002), 50-50 Multivariate Analysis of Variance for\nCollinear Responses, Journal of the Royal Statistical Society SERIES D\n- The Statistician, 51, 305-317.\n\nLangsrud, ?. (2003), ANOVA for Unbalanced Data: Use Type II Instead of\nType III Sums of Squares, Statistics and Computing, 13, 163-167.\n\nLangsrud, ?. (2005), Rotation Tests, Statistics and Computing, 15, 53-60. \n\nMoen, B., Oust, A., Langsrud, ?., Dorrell, N., Gemma, L., Marsden,\nG.L., Hinds, J., Kohler, A., Wren, B.W. and Rudi, K. (2005), An\nexplorative multifactor approach for investigating global survival\nmechanisms of Campylobacter jejuni under environmental conditions,\nApplied and Environmental Microbiology, 71, 2086-2094.\n\n\n-- \nBj?rn-Helge Mevik and ?yvind Langsrud",
-      "body_snippet": "Version 0.1-0 of a new package `ffmanova' is now available on CRAN.\n\nComments, suggestions, etc. are welcome.  Please use the email address\nffmanova (at) mevik.net.\n\nThe package implements 50-50 MANOV",
-      "thread_id": "thread-a8eab14386cc",
       "thread_depth": 0,
       "month": "2006-08"
     },
@@ -505,28 +261,6 @@
       "root_message_id": "msg-87ec132e81f8"
     },
     {
-      "id": "thread-87ec132e81f8",
-      "subject": "spatstat 1.9-4",
-      "message_count": 1,
-      "participants": [
-        "Adrian Baddeley"
-      ],
-      "started": "2006-08-03T15:37:21+08:00",
-      "last_reply": "2006-08-03T15:37:21+08:00",
-      "root_message_id": "msg-87ec132e81f8"
-    },
-    {
-      "id": "thread-6f19f79b6e67",
-      "subject": "Reshape package: new version 0.7",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2006-08-06T07:53:43-07:00",
-      "last_reply": "2006-08-06T07:53:43-07:00",
-      "root_message_id": "msg-6f19f79b6e67"
-    },
-    {
       "id": "thread-6f19f79b6e67",
       "subject": "Reshape package: new version 0.7",
       "message_count": 1,
@@ -549,17 +283,6 @@
       "root_message_id": "msg-e39b49e67418"
     },
     {
-      "id": "thread-e39b49e67418",
-      "subject": "New upload of connectedness",
-      "message_count": 1,
-      "participants": [
-        "Gorjanc Gregor"
-      ],
-      "started": "2006-08-10T10:40:00+02:00",
-      "last_reply": "2006-08-10T10:40:00+02:00",
-      "root_message_id": "msg-e39b49e67418"
-    },
-    {
       "id": "thread-b8c34a6fb441",
       "subject": "Random Survival Forest 1.0.0 is now available.",
       "message_count": 1,
@@ -569,28 +292,6 @@
       "started": "2006-08-14T00:16:58-04:00",
       "last_reply": "2006-08-14T00:16:58-04:00",
       "root_message_id": "msg-b8c34a6fb441"
-    },
-    {
-      "id": "thread-b8c34a6fb441",
-      "subject": "Random Survival Forest 1.0.0 is now available.",
-      "message_count": 1,
-      "participants": [
-        "K. B. Udaya"
-      ],
-      "started": "2006-08-14T00:16:58-04:00",
-      "last_reply": "2006-08-14T00:16:58-04:00",
-      "root_message_id": "msg-b8c34a6fb441"
-    },
-    {
-      "id": "thread-fac9e9e5e273",
-      "subject": "New version of glmmML",
-      "message_count": 1,
-      "participants": [
-        "Göran Broström"
-      ],
-      "started": "2006-08-21T11:12:49+02:00",
-      "last_reply": "2006-08-21T11:12:49+02:00",
-      "root_message_id": "msg-fac9e9e5e273"
     },
     {
       "id": "thread-fac9e9e5e273",
@@ -606,7 +307,7 @@
     {
       "id": "thread-b6fecdb611db",
       "subject": "ANN: 'weaver' package, caching for Sweave",
-      "message_count": 3,
+      "message_count": 2,
       "participants": [
         "Seth Falcon"
       ],
@@ -615,17 +316,6 @@
       "root_message_id": "msg-b6fecdb611db"
     },
     {
-      "id": "thread-b6fecdb611db",
-      "subject": "ANN: 'weaver' package, caching for Sweave",
-      "message_count": 1,
-      "participants": [
-        "Seth Falcon"
-      ],
-      "started": "2006-08-21T19:21:21-07:00",
-      "last_reply": "2006-08-21T19:21:21-07:00",
-      "root_message_id": "msg-b6fecdb611db"
-    },
-    {
       "id": "thread-a6f13f523b73",
       "subject": "spatstat 1.9-5",
       "message_count": 1,
@@ -635,28 +325,6 @@
       "started": "2006-08-24T08:50:11+08:00",
       "last_reply": "2006-08-24T08:50:11+08:00",
       "root_message_id": "msg-a6f13f523b73"
-    },
-    {
-      "id": "thread-a6f13f523b73",
-      "subject": "spatstat 1.9-5",
-      "message_count": 1,
-      "participants": [
-        "Adrian Baddeley"
-      ],
-      "started": "2006-08-24T08:50:11+08:00",
-      "last_reply": "2006-08-24T08:50:11+08:00",
-      "root_message_id": "msg-a6f13f523b73"
-    },
-    {
-      "id": "thread-aeee22850292",
-      "subject": "zoo: new version 1.2-0",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2006-08-25T03:19:52+02:00",
-      "last_reply": "2006-08-25T03:19:52+02:00",
-      "root_message_id": "msg-aeee22850292"
     },
     {
       "id": "thread-aeee22850292",
@@ -681,17 +349,6 @@
       "root_message_id": "msg-e5b94a73ca74"
     },
     {
-      "id": "thread-e5b94a73ca74",
-      "subject": "sandwich: new version 2.0-0",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2006-08-25T03:28:55+02:00",
-      "last_reply": "2006-08-25T03:28:55+02:00",
-      "root_message_id": "msg-e5b94a73ca74"
-    },
-    {
       "id": "thread-916eabd98f67",
       "subject": "biglm 0.4",
       "message_count": 1,
@@ -701,28 +358,6 @@
       "started": "2006-08-25T07:47:13-07:00",
       "last_reply": "2006-08-25T07:47:13-07:00",
       "root_message_id": "msg-916eabd98f67"
-    },
-    {
-      "id": "thread-916eabd98f67",
-      "subject": "biglm 0.4",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2006-08-25T07:47:13-07:00",
-      "last_reply": "2006-08-25T07:47:13-07:00",
-      "root_message_id": "msg-916eabd98f67"
-    },
-    {
-      "id": "thread-6a9175f262a2",
-      "subject": "The rpanel package",
-      "message_count": 1,
-      "participants": [
-        "Adrian Bowman"
-      ],
-      "started": "2006-08-29T16:36:46+01:00",
-      "last_reply": "2006-08-29T16:36:46+01:00",
-      "root_message_id": "msg-6a9175f262a2"
     },
     {
       "id": "thread-6a9175f262a2",
@@ -747,17 +382,6 @@
       "root_message_id": "msg-8811e32bcce9"
     },
     {
-      "id": "thread-8811e32bcce9",
-      "subject": "Version 1.2-0 of the Rcmdr package",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2006-08-30T07:37:36-04:00",
-      "last_reply": "2006-08-30T07:37:36-04:00",
-      "root_message_id": "msg-8811e32bcce9"
-    },
-    {
       "id": "thread-83c72e257562",
       "subject": "New package 'random' for non-deterministic random number",
       "message_count": 1,
@@ -767,28 +391,6 @@
       "started": "2006-08-30T22:14:26-05:00",
       "last_reply": "2006-08-30T22:14:26-05:00",
       "root_message_id": "msg-83c72e257562"
-    },
-    {
-      "id": "thread-83c72e257562",
-      "subject": "New package 'random' for non-deterministic random number",
-      "message_count": 1,
-      "participants": [
-        "Dirk Eddelbuettel"
-      ],
-      "started": "2006-08-30T22:14:26-05:00",
-      "last_reply": "2006-08-30T22:14:26-05:00",
-      "root_message_id": "msg-83c72e257562"
-    },
-    {
-      "id": "thread-a8eab14386cc",
-      "subject": "New package ffmanova for 50-50 MANOVA released",
-      "message_count": 1,
-      "participants": [
-        "Bjørn-Helge Mevik and Øyvind Langsrud"
-      ],
-      "started": "2006-08-31T15:32:14+02:00",
-      "last_reply": "2006-08-31T15:32:14+02:00",
-      "root_message_id": "msg-a8eab14386cc"
     },
     {
       "id": "thread-a8eab14386cc",

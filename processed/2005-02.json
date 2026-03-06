@@ -20,22 +20,6 @@
       "month": "2005-02"
     },
     {
-      "id": "msg-b6874e429645",
-      "message_id": "<20050202202208.23379258.Achim.Zeileis@R-project.org>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
-      "date": "2005-02-02T20:22:08+01:00",
-      "subject": "[R-pkgs] fortune update: 100th fortune",
-      "subject_clean": "fortune update: 100th fortune",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nversion 1.1-0 of the fortunes package is available from CRAN. It now\ncontains 100 R fortunes. Thanks to all who contributed.\n\nBest wishes,\nZ",
-      "body_snippet": "Dear useRs,\n\nversion 1.1-0 of the fortunes package is available from CRAN. It now\ncontains 100 R fortunes. Thanks to all who contributed.\n\nBest wishes,\nZ",
-      "thread_id": "thread-b6874e429645",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
       "id": "msg-faab7bfd4d1e",
       "message_id": "<5.1.0.14.0.20050203092344.00c5c980@biomserv.univ-lyon1.fr>",
       "from_name": "Clément Calenge",
@@ -48,38 +32,6 @@
       "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian bridge approach for kernel estimation),\nestimation of schoener's ratio.  This package now allows a\nbetter management of objects of class \"area\" (see plot.area,\nperarea, ararea). Some arguments of the graphical functions\nhave also been changed (kernel, image.kasc, scatter.enfa).\nFinally, some minor bugs have been corrected. Note that\nthe package now need that the packages ade4 and gpclib\nare installed.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing,\n\n\nCl?ment Calenge.\n\n======================================\nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian ",
       "thread_id": "thread-faab7bfd4d1e",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
-      "id": "msg-faab7bfd4d1e",
-      "message_id": "<5.1.0.14.0.20050203092344.00c5c980@biomserv.univ-lyon1.fr>",
-      "from_name": "Clément Calenge",
-      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
-      "date": "2005-02-03T09:52:15+01:00",
-      "subject": "[R-pkgs] adehabitat version 1.2",
-      "subject_clean": "adehabitat version 1.2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian bridge approach for kernel estimation),\nestimation of schoener's ratio.  This package now allows a\nbetter management of objects of class \"area\" (see plot.area,\nperarea, ararea). Some arguments of the graphical functions\nhave also been changed (kernel, image.kasc, scatter.enfa).\nFinally, some minor bugs have been corrected. Note that\nthe package now need that the packages ade4 and gpclib\nare installed.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing,\n\n\nCl?ment Calenge.\n\n======================================\nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
-      "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian ",
-      "thread_id": "thread-faab7bfd4d1e",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
-      "id": "msg-89284503b103",
-      "message_id": "<200502211256.45195.ahenningsen@email.uni-kiel.de>",
-      "from_name": "Arne Henningsen",
-      "from_email_hash": "03df17f10f077f3bffedf8b178fc34d61d8a069760e5779f1402657f12f56db8",
-      "date": "2005-02-21T12:56:45+01:00",
-      "subject": "[R-pkgs] New package for microeconomics: micEcon",
-      "subject_clean": "New package for microeconomics: micEcon",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI have uploaded a new package called micEcon (version 0.1-3) to CRAN \n(an early version of this package has been already presented at useR! 2004).\nIt contains tools for microeconomic analysis and microeconomic modeling.\nThese are for instance:\n\n- tools for demand analysis with the 'Almost Ideal Demand System' (AIDS): \ne.g. econometric estimation, calculation of price and income/expenditure \nelasticities, checking for theoretical consistency\n\n- tools for production/firm analysis with the 'Symmetric Normalized \nQuadratic' (SNQ) profit function: e.g. econometric estimation, calculation of \nprice elasticities and shadow prices, imposing convexity\n\n- tools for quadratic and translog functions, e.g. econometric estimation, \ncalculation of Hessians and derivatives\n\n- functions to write input files for and read output files of Tim Coelli's \n(1996) program \"Frontier 4.1\" (http://www.uq.edu.au/economics/cepa/ \nsoftware.htm). In this way R can use \"Frontier 4.1\" to perform stochastic \nfrontier analysis.\n\n- a function to perform a two-step Heckman (\"heckit\") estimation to correct \nfor non-random sample selection\n\n- functions to calculate \"Laspeyres\", \"Paasche\" or \"Fisher\" price and quantity \nindices\n\n\nI have checked most of the functions by comparing their results with values \npublished in the literature or obtained by other software. However, I cannot \nguarantee that they return correct results in all possible cases. So please \ncheck these functions (results, code) and send me bug reports or patches.\nYou are also invited to provide further functions, e.g. tools for other \nfunctional forms.\n\nBest regards,\nArne\n\n\n-- \nArne Henningsen\nDepartment of Agricultural Economics\nUniversity of Kiel\nOlshausenstr. 40\nD-24098 Kiel (Germany)\nTel: +49-431-880 4445\nFax: +49-431-880 1397\nahenningsen at agric-econ.uni-kiel.de\nhttp://www.uni-kiel.de/agrarpol/ahenningsen/",
-      "body_snippet": "Dear all,\n\nI have uploaded a new package called micEcon (version 0.1-3) to CRAN \n(an early version of this package has been already presented at useR! 2004).\nIt contains tools for microeconomic analys",
-      "thread_id": "thread-89284503b103",
       "thread_depth": 0,
       "month": "2005-02"
     },
@@ -116,22 +68,6 @@
       "month": "2005-02"
     },
     {
-      "id": "msg-a40580ad139c",
-      "message_id": "<Pine.A41.4.61b.0502250734490.134190@homer08.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2005-02-25T07:40:18-08:00",
-      "subject": "[R-pkgs] new version of survey package",
-      "subject_clean": "new version of survey package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 2.9 of survey is on CRAN.  In addition to various minor \nimprovements and bug fixes there are two major changes\n\n- full multistage finite-population sampling is supported (as in SUDAAN)\n- the same analysis commands can be used for all design types (eg svymean\n   instead of svrepmean for replicate weight designs)\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "Version 2.9 of survey is on CRAN.  In addition to various minor \nimprovements and bug fixes there are two major changes\n\n- full multistage finite-population sampling is supported (as in SUDAAN)\n- the ",
-      "thread_id": "thread-a40580ad139c",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
       "id": "msg-60270b975f2f",
       "message_id": "<200502281503.50641.tobias.sing@mpi-sb.mpg.de>",
       "from_name": "Tobias Sing",
@@ -144,38 +80,6 @@
       "body_plain": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for those of you working on classification problems. \nFor details, see the package description below, or the ROCR website: \nhttp://rocr.bioinf.mpi-sb.mpg.de. You can get a short overview by typing \n'demo(ROCR)'. Any kind of feedback (questions, comments, suggestions, bug \nreports) is very welcome.\n\nBest regards,\n  the ROCRs (Tobias Sing, Oliver Sander, Niko Beerenwinkel, Thomas Lengauer)\n\nPackage description:\n-------------------------\nROC graphs, sensitivity/specificity curves, lift charts, and precision/recall \nplots are popular examples of trade-off visualizations for specific pairs of \nperformance measures. ROCR is a flexible tool for creating \ncutoff-parametrized 2D performance curves by freely combining two from over \n25 performance measures (new performance measures can be added using a \nstandard interface). Curves from different cross-validation or bootstrapping \nruns can be averaged by different methods, and standard deviations, standard \nerrors or box plots can be used to visualize the variability across the runs. \nThe parametrization can be visualized by printing cutoff values at the \ncorresponding curve positions, or by coloring the curve according to cutoff. \nAll components of a performance plot can be quickly adjusted using a flexible \nparameter dispatching mechanism. Despite its flexibility, ROCR is easy to \nuse, with only three commands and reasonable default values for all optional \nparameters.\n\n\n__________________________________________________________________________\nTobias?Sing?????????????????????????phone:?+49?681?9325?315???\nMax-Planck-Institut?f?r?Informatik??fax??:?+49?681?9325?399???\nStuhlsatzenhausweg?85???????????????email:?tobias.sing at mpi-sb.mpg.de??\n66123?Saarbr?cken,?Germany??????????web??:?http://www.tobiassing.net",
       "body_snippet": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for",
       "thread_id": "thread-60270b975f2f",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
-      "id": "msg-60270b975f2f",
-      "message_id": "<200502281503.50641.tobias.sing@mpi-sb.mpg.de>",
-      "from_name": "Tobias Sing",
-      "from_email_hash": "d30b4c26d2906019dbb1f6e234fb18d50f046949c7f2ecefca6e36c5de59161e",
-      "date": "2005-02-28T15:03:50+01:00",
-      "subject": "[R-pkgs] New package: ROCR (Visualizing classifier performance)",
-      "subject_clean": "New package: ROCR (Visualizing classifier performance)",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for those of you working on classification problems. \nFor details, see the package description below, or the ROCR website: \nhttp://rocr.bioinf.mpi-sb.mpg.de. You can get a short overview by typing \n'demo(ROCR)'. Any kind of feedback (questions, comments, suggestions, bug \nreports) is very welcome.\n\nBest regards,\n  the ROCRs (Tobias Sing, Oliver Sander, Niko Beerenwinkel, Thomas Lengauer)\n\nPackage description:\n-------------------------\nROC graphs, sensitivity/specificity curves, lift charts, and precision/recall \nplots are popular examples of trade-off visualizations for specific pairs of \nperformance measures. ROCR is a flexible tool for creating \ncutoff-parametrized 2D performance curves by freely combining two from over \n25 performance measures (new performance measures can be added using a \nstandard interface). Curves from different cross-validation or bootstrapping \nruns can be averaged by different methods, and standard deviations, standard \nerrors or box plots can be used to visualize the variability across the runs. \nThe parametrization can be visualized by printing cutoff values at the \ncorresponding curve positions, or by coloring the curve according to cutoff. \nAll components of a performance plot can be quickly adjusted using a flexible \nparameter dispatching mechanism. Despite its flexibility, ROCR is easy to \nuse, with only three commands and reasonable default values for all optional \nparameters.\n\n\n__________________________________________________________________________\nTobias?Sing?????????????????????????phone:?+49?681?9325?315???\nMax-Planck-Institut?f?r?Informatik??fax??:?+49?681?9325?399???\nStuhlsatzenhausweg?85???????????????email:?tobias.sing at mpi-sb.mpg.de??\n66123?Saarbr?cken,?Germany??????????web??:?http://www.tobiassing.net",
-      "body_snippet": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for",
-      "thread_id": "thread-60270b975f2f",
-      "thread_depth": 0,
-      "month": "2005-02"
-    },
-    {
-      "id": "msg-f3e278db5627",
-      "message_id": "<INEGIMHGODBGKFPOJBBMCEFMCDAA.dieter.menne@menne-biomed.de>",
-      "from_name": "Dieter Menne",
-      "from_email_hash": "c7274b9bd46c9b3353bed705ed75d56d9deb9cf175a43e7f3c56be62d1d3d880",
-      "date": "2005-02-28T17:22:58+01:00",
-      "subject": "[R-pkgs] phpSerialize 0.8",
-      "subject_clean": "phpSerialize 0.8",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "New on CRAN: phpSerialize Version 0.8\nDieter Menne, dieter.menne at menne-biomed.de\n\nSerializes R objects for PHP import into an associative array. \nMain use is for building web pages with R-support. \n\nHas mainly been tested with lm,lme, nlme and their summaries.\n\nA web example is provide, showing\n\n-- How to start R from php/Apache\n-- How to pass variables from php to R via Environment\n-- How to create serialized php output from R\n-- How to read the serialize output from php/Apache via pipe\n-- How to display individual results in a table\n-- How to display the structure of the associative array.\n\nFor example, the following R structure...\n\n  Delta=as.numeric(Sys.getenv(\"DELTA\")) # Get Info from php\n  wc = wilcox.test(rnorm(10),rnorm(10)+Delta)\n\n... is is piped to standard output\n  cat(phpSerialize(wc),\"\\n\")\n\n... and after deserialization\n\n  $pp = popen(\"$Rterm --no-save  --slave  2>&1 < $RFile DELTA=$Delta\",\"r\");\n  // Read serialized R output via pipe.\n  $sWilcox=fgets($pp);\n  pclose($pp);\n  $Wilcox=unserialize($sWilcox);\n  print_r($Wilcox);\n\n... prints as follows:\n\nArray\n(\n  [statistic] => Array\n  (\n    [W] => 29\n  )\n\n  [parameter] => \n  [p.value] => 0.1230055\n  [null.value] => Array\n  (\n    [mu] => 0\n  )\n  [alternative] => two.sided\n  [method] => Wilcoxon rank sum test\n  [data.name] => rnorm(10) and rnorm(10) + Delta\n)",
-      "body_snippet": "New on CRAN: phpSerialize Version 0.8\nDieter Menne, dieter.menne at menne-biomed.de\n\nSerializes R objects for PHP import into an associative array. \nMain use is for building web pages with R-support. ",
-      "thread_id": "thread-f3e278db5627",
       "thread_depth": 0,
       "month": "2005-02"
     },
@@ -209,17 +113,6 @@
       "root_message_id": "msg-b6874e429645"
     },
     {
-      "id": "thread-b6874e429645",
-      "subject": "fortune update: 100th fortune",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2005-02-02T20:22:08+01:00",
-      "last_reply": "2005-02-02T20:22:08+01:00",
-      "root_message_id": "msg-b6874e429645"
-    },
-    {
       "id": "thread-faab7bfd4d1e",
       "subject": "adehabitat version 1.2",
       "message_count": 1,
@@ -229,28 +122,6 @@
       "started": "2005-02-03T09:52:15+01:00",
       "last_reply": "2005-02-03T09:52:15+01:00",
       "root_message_id": "msg-faab7bfd4d1e"
-    },
-    {
-      "id": "thread-faab7bfd4d1e",
-      "subject": "adehabitat version 1.2",
-      "message_count": 1,
-      "participants": [
-        "Clément Calenge"
-      ],
-      "started": "2005-02-03T09:52:15+01:00",
-      "last_reply": "2005-02-03T09:52:15+01:00",
-      "root_message_id": "msg-faab7bfd4d1e"
-    },
-    {
-      "id": "thread-89284503b103",
-      "subject": "New package for microeconomics: micEcon",
-      "message_count": 1,
-      "participants": [
-        "Arne Henningsen"
-      ],
-      "started": "2005-02-21T12:56:45+01:00",
-      "last_reply": "2005-02-21T12:56:45+01:00",
-      "root_message_id": "msg-89284503b103"
     },
     {
       "id": "thread-89284503b103",
@@ -275,17 +146,6 @@
       "root_message_id": "msg-a40580ad139c"
     },
     {
-      "id": "thread-a40580ad139c",
-      "subject": "new version of survey package",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2005-02-25T07:40:18-08:00",
-      "last_reply": "2005-02-25T07:40:18-08:00",
-      "root_message_id": "msg-a40580ad139c"
-    },
-    {
       "id": "thread-60270b975f2f",
       "subject": "New package: ROCR (Visualizing classifier performance)",
       "message_count": 1,
@@ -295,28 +155,6 @@
       "started": "2005-02-28T15:03:50+01:00",
       "last_reply": "2005-02-28T15:03:50+01:00",
       "root_message_id": "msg-60270b975f2f"
-    },
-    {
-      "id": "thread-60270b975f2f",
-      "subject": "New package: ROCR (Visualizing classifier performance)",
-      "message_count": 1,
-      "participants": [
-        "Tobias Sing"
-      ],
-      "started": "2005-02-28T15:03:50+01:00",
-      "last_reply": "2005-02-28T15:03:50+01:00",
-      "root_message_id": "msg-60270b975f2f"
-    },
-    {
-      "id": "thread-f3e278db5627",
-      "subject": "phpSerialize 0.8",
-      "message_count": 1,
-      "participants": [
-        "Dieter Menne"
-      ],
-      "started": "2005-02-28T17:22:58+01:00",
-      "last_reply": "2005-02-28T17:22:58+01:00",
-      "root_message_id": "msg-f3e278db5627"
     },
     {
       "id": "thread-f3e278db5627",

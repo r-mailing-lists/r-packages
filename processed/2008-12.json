@@ -20,38 +20,6 @@
       "month": "2008-12"
     },
     {
-      "id": "msg-2d069dd780f9",
-      "message_id": "<18741.62195.684768.963812@ron.nulle.part>",
-      "from_name": "Dirk Eddelbuettel",
-      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
-      "date": "2008-12-02T20:46:11-06:00",
-      "subject": "[R-pkgs] Rcpp package relaunched",
-      "subject_clean": "Rcpp package relaunched",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "New Rcpp versions 0.6.0 and 0.6.1\n---------------------------------\n\t\t\nThe Rcpp package provides C++ classes that greatly facilitate interfacing C\nor C++ code in R packages using the .Call() interface provided by R.\n\nRcpp provides matching C++ classes for a large number of basic R data\ntypes. Hence, a package author can keep his data in normal R data structure\nwithout having to worry about translation or transfer to C++. At the same\ntime, the data structures can be accessed as easily at the C++ level, and\nused in the normal manner.\n\nThe mapping of data types works in both directions. It is as straightforward\nto pass data from R to C++, as it is it return data from C++ to R.  The\nfollowing two sections list supported data types.\n\nTransfer from R to C++:\nStandard R datatypes that are understood in C++ are\n o named lists containing numeric (i.e. floating point), integer,\n   character, logical (i.e. boolean) or Date and Datetime (i.e. POSIXct at\n   the microsecond granularity) arguments;\n o data frames containing numeric, integer, logical, character,\n   Date, Datetime or Factor columns;\n o named vectors containing numeric or integer values,\n o vectors and matrices of different values\n o character strings\n\nTransfer from C++ to R:\nStandard C++ datatypes can be returned to R in a named list, the most\ngeneral data type in R.  Permissible components of the returns list\nare the following C++ types:\n o double (scalar as well as vectors and vectors of vectors),\n o int (scalar as well as vectors and vectors of vectors), string,\n o STL vector types and vector<vector> types of int and double\n o STL vector of strings\n o internal Rcpp types RcppDate, RcppDateVector, RcppDatetime,\n   RcppDatetimeVector, RcppStringVector, RcppVector of int or double,\n   RcppMatrix of int or double, RcppFrame\n\nRcpp was initially written by Dominick Samperi as part of his contributions\nto RQuantLib, and later released as a standalone package (under both the Rcpp\nand RcppTemplate names).   Its development had ceased in late 2006.\n\nAs of November 2008, I have made new release with substantially expanded\ndocumentation, simpler yet more comprehensive build structure leading to\neasier use of Rcpp from other packages, and support for Windows, Linux and\nMac OS X (with special thanks to Simon for some extended cluebat waving).\n\nMore information for Rcpp can be found at\n o the package homepage at http://dirk.eddelbuettel.com/code/rcpp.html\n o the R-forge repository at https://r-forge.r-project.org/projects/rcpp/\n o the CRAN page at http://cran.r-project.org/web/packages/Rcpp/index.html\n\nRegards,  Dirk\n \n-- \nThree out of two people have difficulties with fractions.",
-      "body_snippet": "New Rcpp versions 0.6.0 and 0.6.1\n---------------------------------\n\t\t\nThe Rcpp package provides C++ classes that greatly facilitate interfacing C\nor C++ code in R packages using the .Call() interface",
-      "thread_id": "thread-2d069dd780f9",
-      "thread_depth": 0,
-      "month": "2008-12"
-    },
-    {
-      "id": "msg-7cf30df2d919",
-      "message_id": "<493950D2.1090806@vanderbilt.edu>",
-      "from_name": "Jeffrey Horner",
-      "from_email_hash": "8b91e5b4000682951a703759aaef9fbaa2bc23dc141f7a1ef5c829c7c0d0d0de",
-      "date": "2008-12-05T10:03:30-06:00",
-      "subject": "[R-pkgs] RMySQL 0.7-2 now available on CRAN",
-      "subject_clean": "RMySQL 0.7-2 now available on CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nRMySQL 0.7-2 is now available on CRAN:\n\nhttp://cran.r-project.org/web/packages/RMySQL/index.html\n\n From the NEWS file:\n\n* New maintainer is Jeffrey Horner <jeff.horner at vanderbilt.edu>.\n\n* We no longer distribute libmysql.dll. This library is now found\n  either by reading the MYSQL_HOME environment variable or by reading\n  the windows registry entries.\n\n* Removed dependence on MySQL C function load_defaults() as it was\n  meant for command-line tools, not for (re)connecting to a database.\n\n* Fixed \\r issue with dbWriteTable().\n\n* Tests have been added and depend on proper values set in the\n  environment variables MYSQL_DATABASE, MYSQL_USER, and\n  MYSQL_PASSWD.\n\nBest,\n\nJeff",
-      "body_snippet": "Dear R users,\n\nRMySQL 0.7-2 is now available on CRAN:\n\nhttp://cran.r-project.org/web/packages/RMySQL/index.html\n\n From the NEWS file:\n\n* New maintainer is Jeffrey Horner <jeff.horner at vanderbilt.edu",
-      "thread_id": "thread-7cf30df2d919",
-      "thread_depth": 0,
-      "month": "2008-12"
-    },
-    {
       "id": "msg-7cf30df2d919",
       "message_id": "<493950D2.1090806@vanderbilt.edu>",
       "from_name": "Jeffrey Horner",
@@ -84,22 +52,6 @@
       "month": "2008-12"
     },
     {
-      "id": "msg-12a30dfd4dd2",
-      "message_id": "<200812091133.21668.arne.henningsen@googlemail.com>",
-      "from_name": "Arne Henningsen",
-      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
-      "date": "2008-12-09T11:33:21-05:00",
-      "subject": "[R-pkgs] SFA tools moved from micEcon to frontier",
-      "subject_clean": "SFA tools moved from micEcon to frontier",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nI would like to inform you that everything of the \"micEcon\" package that is \nrelated to Stochastic Frontier Analysis (SFA) has been moved to the \"frontier\" \npackage, because this is a more appropriate place for the functions \n\"front41WriteInput\", \"front41ReadOutput\", and \"front41Est\", and the \ncorresponding (S3) methods. The data sets \"riceProdPhil\" and \"Coelli\" have \nbeen removed from the \"micEcon\" package, because they were already included in \nthe \"frontier\" package (the latter is named \"front41Data\" in the \"frontier\" \npackage). The new \"frontier\" package (with the \"front41...\" functions) is \navailable on CRAN now and the new \"micEcon\" package (without the \"front41...\" \nfunctions) will be available on CRAN in some time. Please use the meantime to \nupdate your code. \n\nPlease don't hesitate to contact me if you have any questions \nor comments,\nArne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name/",
-      "body_snippet": "Dear R users,\n\nI would like to inform you that everything of the \"micEcon\" package that is \nrelated to Stochastic Frontier Analysis (SFA) has been moved to the \"frontier\" \npackage, because this is a m",
-      "thread_id": "thread-12a30dfd4dd2",
-      "thread_depth": 0,
-      "month": "2008-12"
-    },
-    {
       "id": "msg-1e0339482414",
       "message_id": "<f8e6ff050812141238y4dbf8079w37890ded03e5e060@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -112,38 +64,6 @@
       "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.1  (2008-12-12)\n----------------------------------------\n\nNew features\n\n* new labs, xlab & ylab functions for easily modifying axis labels and\nlegend titles\n* qplot now guesses what geom you want based on the position\naesthetics that you provide:\n  * both x & y: scatterplot\n  * only x: histogram\n  * only y: scatterplot of seq_along(y) vs y\n* scale_datetime: a first attempt at a scale for date time objects of\nclass POSIXt\n\nAesthetic improvements\n\n* legends should now work in cases where you have multiple layers the\nuse the same geom and have different aesthetic mappings\n* theme: new theme setting legend.key.size determines size of keys in legend\n* theme: new theme setting plot.margins to control the plot margins\n* tweaks to plot and legend layout\n\nOther minor improvements\n\n* geom_point warns if missing values present in data and not displayed on plot\n* geom_smooth gives a more accurate warning when you have incorrectly\nspecified the grouping\n* geom_smooth will switch to an alternative smoothing method\n(mgcv::gam(y ~ s(x, bs = \"cr\"))), when there are more than 1000\nobservations\n* layers gain a legend argument, which allow you to force the layer\neither into (TRUE) or out of (FALSE) the legend\n\nBug fixes\n\n* coord_equal now calculates scales correctly again\n* coord_flip: flips axes labels again too\n* coord_trans fix bug where transformation incorrect\n* facet_grid: fix bug where tick labels where being produced outside\nthe range of the axes\n* facet_wrap: fixed bug with ncol = 1 or nrow = 1\n* facet_wrap: labels correctly clipped to axis ranges\n* facet_wrap: labels will match panels even when factor levels are not\nin alphabetical order\n* facet_wrap: now works when a layer doesn't contain every level of\nthe faceting variables\n* geom_abline should now work in a wider variety of situations\n* geom_smooth now gives correct asymmetric standard errors with\ngeneralised linear models (thanks to Thierry Onkelinx)\n* geom_vline and geom_hline now correctly transform their intercepts\nif the scale is transformed\n* geom_vline and geom_hline: now use xintercept and yintercept instead\nof intercept\n* legend.position and legend.justification work again\n* position_dodge now works for any number of elements with smaller\nwidths, not just 2!\n* scale_discrete_position: does a better job of calculating axis\nlimits when plotting a mixture of continuous and discrete values (e.g.\nwith geom_jitter)\n* summary: tweaks to improve output\n\n\n-- \nhttp://had.co.nz/",
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-1e0339482414",
-      "thread_depth": 0,
-      "month": "2008-12"
-    },
-    {
-      "id": "msg-1e0339482414",
-      "message_id": "<f8e6ff050812141238y4dbf8079w37890ded03e5e060@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2008-12-14T14:38:36-06:00",
-      "subject": "[R-pkgs] New version of ggplot2, 0.8.1",
-      "subject_clean": "New version of ggplot2, 0.8.1",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.1  (2008-12-12)\n----------------------------------------\n\nNew features\n\n* new labs, xlab & ylab functions for easily modifying axis labels and\nlegend titles\n* qplot now guesses what geom you want based on the position\naesthetics that you provide:\n  * both x & y: scatterplot\n  * only x: histogram\n  * only y: scatterplot of seq_along(y) vs y\n* scale_datetime: a first attempt at a scale for date time objects of\nclass POSIXt\n\nAesthetic improvements\n\n* legends should now work in cases where you have multiple layers the\nuse the same geom and have different aesthetic mappings\n* theme: new theme setting legend.key.size determines size of keys in legend\n* theme: new theme setting plot.margins to control the plot margins\n* tweaks to plot and legend layout\n\nOther minor improvements\n\n* geom_point warns if missing values present in data and not displayed on plot\n* geom_smooth gives a more accurate warning when you have incorrectly\nspecified the grouping\n* geom_smooth will switch to an alternative smoothing method\n(mgcv::gam(y ~ s(x, bs = \"cr\"))), when there are more than 1000\nobservations\n* layers gain a legend argument, which allow you to force the layer\neither into (TRUE) or out of (FALSE) the legend\n\nBug fixes\n\n* coord_equal now calculates scales correctly again\n* coord_flip: flips axes labels again too\n* coord_trans fix bug where transformation incorrect\n* facet_grid: fix bug where tick labels where being produced outside\nthe range of the axes\n* facet_wrap: fixed bug with ncol = 1 or nrow = 1\n* facet_wrap: labels correctly clipped to axis ranges\n* facet_wrap: labels will match panels even when factor levels are not\nin alphabetical order\n* facet_wrap: now works when a layer doesn't contain every level of\nthe faceting variables\n* geom_abline should now work in a wider variety of situations\n* geom_smooth now gives correct asymmetric standard errors with\ngeneralised linear models (thanks to Thierry Onkelinx)\n* geom_vline and geom_hline now correctly transform their intercepts\nif the scale is transformed\n* geom_vline and geom_hline: now use xintercept and yintercept instead\nof intercept\n* legend.position and legend.justification work again\n* position_dodge now works for any number of elements with smaller\nwidths, not just 2!\n* scale_discrete_position: does a better job of calculating axis\nlimits when plotting a mixture of continuous and discrete values (e.g.\nwith geom_jitter)\n* summary: tweaks to improve output\n\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
-      "thread_id": "thread-1e0339482414",
-      "thread_depth": 0,
-      "month": "2008-12"
-    },
-    {
-      "id": "msg-5e3fd6fa1cd9",
-      "message_id": "<4946663D.43DF.0027.0@med.umich.edu>",
-      "from_name": "Shu Chen",
-      "from_email_hash": "41fade848aa695adc63ea3b5949a216878682f2fda477ceeb5c6467fac9722fb",
-      "date": "2008-12-15T14:14:21-05:00",
-      "subject": "[R-pkgs] R CMD check on window XP",
-      "subject_clean": "R CMD check on window XP",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi, there,\n\nI used R CMD check  to build my \"ATGGS\" package under window XP system. My R version is 2.7.2. But I encounter some problems. The log file is like:\n**********************************************************************************\ninstalling R.css in C:/ATGGS.Rcheck\n\n\n---------- Making package ATGGS ------------\n  adding build stamp to DESCRIPTION\n  installing R files\n  installing inst files\nfind: `C:/ATGGS.Rcheck/ATGGS/csvscripts': Permission denied\nmake[2]: *** [C:/ATGGS.Rcheck/ATGGS/inst] Error 1\nmake[1]: *** [all] Error 2\nmake: *** [pkg-ATGGS] Error 2\nCan't read C:/ATGGS.Rcheck/ATGGS/auxData: Invalid argument at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't remove directory C:/ATGGS.Rcheck/ATGGS/auxData: Directory not empty at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't read C:/ATGGS.Rcheck/ATGGS/csvData: Invalid argument at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't remove directory C:/ATGGS.Rcheck/ATGGS/csvData: Directory not empty at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't read C:/ATGGS.Rcheck/ATGGS/csvscripts: Invalid argument at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't remove directory C:/ATGGS.Rcheck/ATGGS/csvscripts: Directory not empty at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't read C:/ATGGS.Rcheck/ATGGS/doc: Invalid argument at c:\\R\\R-27~1.2/bin/INSTALL line 434\nCan't remove directory C:/ATGGS.Rcheck/ATGGS: Directory not empty at c:\\R\\R-27~1.2/bin/INSTALL line 434\n*** Installation of ATGGS failed ***\n\nRemoving 'C:/ATGGS.Rcheck/ATGGS'\n\n****************************************************************************************\n\nI am not able to delete c:/ATGGS.Rcheck until I change the permission of the folder. I'm the admin of C driver. I have full control of all other folders under  C driver.\n\n\nThanks for help.\n\nSue\n\n\n\n**********************************************************\nElectronic Mail is not secure, may not be read every day, and should not be used for urgent or sensitive issues",
-      "body_snippet": "Hi, there,\n\nI used R CMD check  to build my \"ATGGS\" package under window XP system. My R version is 2.7.2. But I encounter some problems. The log file is like:\n****************************************",
-      "thread_id": "thread-5e3fd6fa1cd9",
       "thread_depth": 0,
       "month": "2008-12"
     },
@@ -177,28 +97,6 @@
       "root_message_id": "msg-2d069dd780f9"
     },
     {
-      "id": "thread-2d069dd780f9",
-      "subject": "Rcpp package relaunched",
-      "message_count": 1,
-      "participants": [
-        "Dirk Eddelbuettel"
-      ],
-      "started": "2008-12-02T20:46:11-06:00",
-      "last_reply": "2008-12-02T20:46:11-06:00",
-      "root_message_id": "msg-2d069dd780f9"
-    },
-    {
-      "id": "thread-7cf30df2d919",
-      "subject": "RMySQL 0.7-2 now available on CRAN",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Horner"
-      ],
-      "started": "2008-12-05T10:03:30-06:00",
-      "last_reply": "2008-12-05T10:03:30-06:00",
-      "root_message_id": "msg-7cf30df2d919"
-    },
-    {
       "id": "thread-7cf30df2d919",
       "subject": "RMySQL 0.7-2 now available on CRAN",
       "message_count": 1,
@@ -221,17 +119,6 @@
       "root_message_id": "msg-12a30dfd4dd2"
     },
     {
-      "id": "thread-12a30dfd4dd2",
-      "subject": "SFA tools moved from micEcon to frontier",
-      "message_count": 1,
-      "participants": [
-        "Arne Henningsen"
-      ],
-      "started": "2008-12-09T11:33:21-05:00",
-      "last_reply": "2008-12-09T11:33:21-05:00",
-      "root_message_id": "msg-12a30dfd4dd2"
-    },
-    {
       "id": "thread-1e0339482414",
       "subject": "New version of ggplot2, 0.8.1",
       "message_count": 1,
@@ -241,28 +128,6 @@
       "started": "2008-12-14T14:38:36-06:00",
       "last_reply": "2008-12-14T14:38:36-06:00",
       "root_message_id": "msg-1e0339482414"
-    },
-    {
-      "id": "thread-1e0339482414",
-      "subject": "New version of ggplot2, 0.8.1",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2008-12-14T14:38:36-06:00",
-      "last_reply": "2008-12-14T14:38:36-06:00",
-      "root_message_id": "msg-1e0339482414"
-    },
-    {
-      "id": "thread-5e3fd6fa1cd9",
-      "subject": "R CMD check on window XP",
-      "message_count": 1,
-      "participants": [
-        "Shu Chen"
-      ],
-      "started": "2008-12-15T14:14:21-05:00",
-      "last_reply": "2008-12-15T14:14:21-05:00",
-      "root_message_id": "msg-5e3fd6fa1cd9"
     },
     {
       "id": "thread-5e3fd6fa1cd9",

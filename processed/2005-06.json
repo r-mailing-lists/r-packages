@@ -20,22 +20,6 @@
       "month": "2005-06"
     },
     {
-      "id": "msg-83aefe0ce071",
-      "message_id": "<Pine.LNX.4.51.0506030855240.564@artemis.imbe.med.uni-erlangen.de>",
-      "from_name": "Torsten Hothorn",
-      "from_email_hash": "41e657384fb07a3764a554d5304d033ebaccbd11a54485f1b6386a932843f125",
-      "date": "2005-06-03T08:59:12+02:00",
-      "subject": "[R-pkgs] New CRAN package `coin'",
-      "subject_clean": "New CRAN package `coin'",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Conditional Inference Procedures in a Permutation Test Framework\n\nThe `coin' package implements a general framework for conditional\ninference procedures, commonly known as permutation tests,\ntheoretically derived by Strasser & Weber (1999). The conditional\nexpectation and covariance for a broad class of multivariate linear\nstatistics as well as the corresponding multivariate limiting distribution\nwas derived by Strasser & Weber (1999). These results are\nutilized to construct tests for independence between two sets of\nvariables.\n\nBeside a general implementation of the abstract framework the package\noffers a rather huge set of convenience functions implementing well\nknown classical as well as less prominent classical and non-classical test\nprocedures in a conditional inference framework. Examples are linear rank\nstatistics for the two- and K-sample location and scale problem against\nordered and unordered alternatives including post-hoc tests for arbitrary\ncontrasts, tests of independence for contingency tables, two- and K-sample\ntests for censored data, tests for independence of two continuous\nvariables as well as tests for marginal homogeneity and symmetry.\nConditional counterparts of most of the classical procedures given in\nfamous text books like Hollander & Wolfe (1999) or Agresti (2002) can be\nimplemented as part of the general framework without much effort.\nApproximations of the exact null distribution via the limiting\ndistribution and conditional Monte-Carlo procedures are available for\nevery test while the exact null distribution\nis currently available for two-sample problems only.\n\nInference problems can be specified by a traditional formula based\ninterface. Support for data available as `exprSet' objects in a BioC\nenvironment is implemented as well. The theoretical framework is sketched\nin the vignette and we refer to `vignette(\"coin\")' for further details.\n\nComments, suggestions, bug-reports etc. are more than welcome!\n\nBest,\n\nTorsten, Kurt, Mark and Achim\n\n_____________________________________________________________________________\n\nPackage: coin\nTitle: Conditional Inference Procedures in a Permutation Test Framework\nDate: $Date: 2005/06/02 14:55:45 $\nVersion: 0.2-11\nAuthor: Torsten Hothorn and Kurt Hornik, with contributions by\n  Mark van de Wiel and Achim Zeileis\nMaintainer: Torsten Hothorn <Torsten.Hothorn at R-project.org>\nDescription: Conditional inference procedures for the general independence\n  problem including two-sample, K-sample, correlation, censored, ordered\n  and multivariate problems.\nDepends: R (>= 2.0.0), methods, survival, mvtnorm\nSuggests: multcomp\nSaveImage: yes\nLazyData: yes\nLicense: GPL",
-      "body_snippet": "Conditional Inference Procedures in a Permutation Test Framework\n\nThe `coin' package implements a general framework for conditional\ninference procedures, commonly known as permutation tests,\ntheoretic",
-      "thread_id": "thread-83aefe0ce071",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
       "id": "msg-86965f9e082f",
       "message_id": "<Pine.LNX.4.63.0506040820500.5600@itasca2.wildberry.org>",
       "from_name": "Luke Tierney",
@@ -48,38 +32,6 @@
       "body_plain": "The misc3d package provides a small collection of mostly rgl-based\nfunctions for 3D data:\n\n   contour3d     Uses rgl to render isosurfaces, or three-dimensional\n                 contours, computed by the marching cubes algorithm.\n\n   image3d       Crude 3d analog of image() using rgl to plot points on a\n \t\tthree dimensional grid representing values in a three\n \t\tdimensional array. Assumes high values are inside and\n \t\tuses alpha blending to make outside points more\n \t\ttransparent.\n\n   lines3d       Draws connected line segments in an rgl window.\n\n   parametric3d  Plots a two-parameter surface in three dimensions in\n                 rgl.  Based on Mathematica's Param3D\n\n   slices3d      Uses tkrplot to create an interactive slice view of three or\n                 four dimensional volume data, such as MRI data.\n\n\n-- \nLuke Tierney\nChair, Statistics and Actuarial Science\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:      luke at stat.uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
       "body_snippet": "The misc3d package provides a small collection of mostly rgl-based\nfunctions for 3D data:\n\n   contour3d     Uses rgl to render isosurfaces, or three-dimensional\n                 contours, computed by ",
       "thread_id": "thread-86965f9e082f",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-86965f9e082f",
-      "message_id": "<Pine.LNX.4.63.0506040820500.5600@itasca2.wildberry.org>",
-      "from_name": "Luke Tierney",
-      "from_email_hash": "a5794212f0450ee86843a234fdc23fdecc67cbd9935fd99e22e36e11b265bf20",
-      "date": "2005-06-04T08:23:04-05:00",
-      "subject": "[R-pkgs] New CRAN package misc3d",
-      "subject_clean": "New CRAN package misc3d",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The misc3d package provides a small collection of mostly rgl-based\nfunctions for 3D data:\n\n   contour3d     Uses rgl to render isosurfaces, or three-dimensional\n                 contours, computed by the marching cubes algorithm.\n\n   image3d       Crude 3d analog of image() using rgl to plot points on a\n \t\tthree dimensional grid representing values in a three\n \t\tdimensional array. Assumes high values are inside and\n \t\tuses alpha blending to make outside points more\n \t\ttransparent.\n\n   lines3d       Draws connected line segments in an rgl window.\n\n   parametric3d  Plots a two-parameter surface in three dimensions in\n                 rgl.  Based on Mathematica's Param3D\n\n   slices3d      Uses tkrplot to create an interactive slice view of three or\n                 four dimensional volume data, such as MRI data.\n\n\n-- \nLuke Tierney\nChair, Statistics and Actuarial Science\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:      luke at stat.uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
-      "body_snippet": "The misc3d package provides a small collection of mostly rgl-based\nfunctions for 3D data:\n\n   contour3d     Uses rgl to render isosurfaces, or three-dimensional\n                 contours, computed by ",
-      "thread_id": "thread-86965f9e082f",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-76509640d867",
-      "message_id": "<971536df050608100869f5196d@mail.gmail.com>",
-      "from_name": "Gabor Grothendieck",
-      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2005-06-08T13:08:07-04:00",
-      "subject": "[R-pkgs] New CRAN package dyn",
-      "subject_clean": "New CRAN package dyn",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "dyn is an R package that facilitates the use of regression\nusing time series data with lags and diffs (known as dynamic\nregression).  It is a lightweight package that has no\nfacilities of its own but leverages off the various time\nseries and regression functions in R to make it easier to\nuse them together.\n\nIts features include:\n\n- many regression functions.  It can be used with lm, glm,\n  loess, rq, randomForest, lqs, rlm and any other regression \n  functions that use model.frame and are written in the\n  style of lm.\n\n- many time series classes. It can be used with ts, zooreg,\n  zoo, its, and irts time series classes.  This covers\n  regular, weakly regular and irregular time series classes.\n\n- missing values.  Time series may have missing values including\n  internal missing values.  Both na.omit and na.exclude are\n  supported.  \n\n- good citizen.  It does not replace the regression\n  functions but rather works with them by providing new\n  methods to the standard R generics: model.frame, resid,\n  fitted, predict, update, anova and $.\n\n- ease of use.  dyn enables one to use the same regression\n  functions (lm, glm, etc.) using the same syntax one has\n  always used.  Just preface the regression function name with \n  dyn$ and it is transformed into a regression function that \n  can handle time series:\n\n   dyn$lm( y ~ x + lag(x) + diff(w) )     # lm\n   dyn$loess( y ~ x + lag(x) + diff(w) )  # loess\n\n- modular.  dyn can be used with any regression function that\n  uses model.frame and is written in the style of lm.  Additional\n  classes can be added to dyn simply by adding new methods. dyn\n  is modular so such updates can be made without changing dyn, \n  itself. \n\n- documentation.  It includes a help page and six demos.\n\n   ?dyn           # help file\n   demo()         # look under dyn for list of demos\n   demo(\"dyn-rq\") # runs indicated dyn demo\n\nThe package is available on CRAN.  Comments/questions welcome.",
-      "body_snippet": "dyn is an R package that facilitates the use of regression\nusing time series data with lags and diffs (known as dynamic\nregression).  It is a lightweight package that has no\nfacilities of its own but ",
-      "thread_id": "thread-76509640d867",
       "thread_depth": 0,
       "month": "2005-06"
     },
@@ -116,38 +68,6 @@
       "month": "2005-06"
     },
     {
-      "id": "msg-45036cc94ba3",
-      "message_id": "<42A8C567.7020902@cirad.fr>",
-      "from_name": "Renaud Lancelot",
-      "from_email_hash": "45ce8dc91e0676b1935dd8a50275f211ab4fc19fd5c25967d1dffcba8041c746",
-      "date": "2005-06-10T01:40:39+03:00",
-      "subject": "[R-pkgs] New package aod: Analysis of Overdispersed Data",
-      "subject_clean": "New package aod: Analysis of Overdispersed Data",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Information on package 'aod'\n\nDescription:\n\nPackage:       aod\nVersion:       1.1-2\nDate:          2005-06-08\nTitle:         Analysis of Overdispersed Data\nAuthor:        Matthieu Lesnoff <matthieu.lesnoff at cirad.fr> and Renaud\n                Lancelot <renaud.lancelot at cirad.fr>\nMaintainer:    Renaud Lancelot <renaud.lancelot at cirad.fr>\nDepends:       R (>= 2.0.0), methods, stats\nSuggests:      MASS, nlme\nDescription:   This package provides a set of functions to analyse\n                overdispersed counts or proportions. Most of the\n                methods are already available elsewhere but are\n                scattered in different packages. The proposed functions\n                should be considered as complements to more\n                sophisticated methods such as generalized estimating\n                equations (GEE) or generalized linear mixed effect\n                models (GLMM).\n\nIndex (edited):\n\nbetabin                 Beta-Binomial Model for Proportions\ndonner                  Test of Proportion Homogeneity using Donner's\n                         Adjustment\nicc                     Intra-Cluster Correlation\nnegbin                  Negative-Binomial Model for Counts\nquasibin                Quasi-Likelihood Model for Proportions\nquasipois               Quasi-Likelihood Model for Counts\nraoscott                Test of Proportion Homogeneity using Rao and\n                         Scott's Adjustment\nvarbin                  Mean, Variance and Confidence Interval of a\n                         Proportion\nwald.test               Wald Test for Model Coefficients\n\n#################\n\nBest regards,\n\nRenaud\n\n-- \nDr Renaud Lancelot, v?t?rinaire\nProjet FSP r?gional ?pidemio v?t?rinaire\nC/0 Ambassade de France - SCAC\nBP 834 Antananarivo 101 - Madagascar\n\ne-mail: renaud.lancelot at cirad.fr\ntel.:   +261 32 40 165 53 (cell)\n         +261 20 22 665 36 ext. 225 (work)\n         +261 20 22 494 37 (home)",
-      "body_snippet": "Information on package 'aod'\n\nDescription:\n\nPackage:       aod\nVersion:       1.1-2\nDate:          2005-06-08\nTitle:         Analysis of Overdispersed Data\nAuthor:        Matthieu Lesnoff <matthieu.le",
-      "thread_id": "thread-45036cc94ba3",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-a8cc09faba2b",
-      "message_id": "<40e66e0b050610121126020323@mail.gmail.com>",
-      "from_name": "Douglas Bates",
-      "from_email_hash": "72708f6f9e0ad5f9c626ca800c6c991618a61d5c470f4a0ef15080934ff9bb60",
-      "date": "2005-06-10T14:11:31-05:00",
-      "subject": "[R-pkgs] New versions of Matrix and lme4 packages",
-      "subject_clean": "New versions of Matrix and lme4 packages",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have uploaded version 0.96-1 of both Matrix and lme4 to CRAN.  The\nsource package should migrate to CRAN over the weekend and binary\npackages should be available some time next week.\n\nAs for previous releases, the versions of these two packages are\ninterdependent.  The lme4 package requires Matrix_0.96-1 or later but\nwe cannot enforce the other dependency.  Please remember that if you\nupgrade the Matrix package you should also upgrade the lme4 package.\n\nThe method for fitting generalized linear mixed models using the\nLaplacian approximation is considerably faster in this version.  Also,\nthe packages have been reorganized so the interdependence will not be\nas strong in the future.",
-      "body_snippet": "I have uploaded version 0.96-1 of both Matrix and lme4 to CRAN.  The\nsource package should migrate to CRAN over the weekend and binary\npackages should be available some time next week.\n\nAs for previou",
-      "thread_id": "thread-a8cc09faba2b",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
       "id": "msg-a8cc09faba2b",
       "message_id": "<40e66e0b050610121126020323@mail.gmail.com>",
       "from_name": "Douglas Bates",
@@ -176,38 +96,6 @@
       "body_plain": "Version 1.1-0 of bayesm is now available on CRAN.\n\nThis version includes Bayesian inference for the NBD(Poisson) regression\nmodel and a hierarchical version of the same.  It also includes an additional\ndataset with count data and various covariates. \n\nComments and suggestions for improvement are most welcome.\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
       "body_snippet": "Version 1.1-0 of bayesm is now available on CRAN.\n\nThis version includes Bayesian inference for the NBD(Poisson) regression\nmodel and a hierarchical version of the same.  It also includes an additiona",
       "thread_id": "thread-0d8264e08f59",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-0d8264e08f59",
-      "message_id": "<268ce92673d0.2673d0268ce9@gsb.uchicago.edu>",
-      "from_name": "Peter E. Rossi",
-      "from_email_hash": "b378580e904225037bff6e0ecbf2b15c48c97dae4128aeb866369d04b93ab0f8",
-      "date": "2005-06-15T09:10:17-05:00",
-      "subject": "[R-pkgs] Version 1.1-0 of bayesm",
-      "subject_clean": "Version 1.1-0 of bayesm",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 1.1-0 of bayesm is now available on CRAN.\n\nThis version includes Bayesian inference for the NBD(Poisson) regression\nmodel and a hierarchical version of the same.  It also includes an additional\ndataset with count data and various covariates. \n\nComments and suggestions for improvement are most welcome.\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
-      "body_snippet": "Version 1.1-0 of bayesm is now available on CRAN.\n\nThis version includes Bayesian inference for the NBD(Poisson) regression\nmodel and a hierarchical version of the same.  It also includes an additiona",
-      "thread_id": "thread-0d8264e08f59",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-0584b0c11fd7",
-      "message_id": "<42B2DC1F.7090901@geog.uu.nl>",
-      "from_name": "Edzer J. Pebesma",
-      "from_email_hash": "a7fb0ca623e251a5aff6aa466eb7f50e3c643594fe03e3232d546a007043eef0",
-      "date": "2005-06-17T16:20:15+02:00",
-      "subject": "[R-pkgs] New CRAN package sp: classes and methods for spatial data",
-      "subject_clean": "New CRAN package sp: classes and methods for spatial data",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "We're happy to announce the CRAN release of \"sp\", an R package which\nhas new-style classes and methods for spatial data, version 0.7-9.\n\nSpatial data types that sp implements are: points, grids, lines, and\npolygons (i.e., rings) optionally with holes. Methods include\n\n+ the usual print, summary, plot, [, [[, $, ...\n+ coercion between types (e.g. points and grids, matrices, data.frames)\n+ coordinates(x), which returns the spatial coordinates of x\n+ bbox(x), returns the coordinates bounding box of x\n+ overlay, to query the value of e.g. points in polygons or grid\n   (essentially does a point-in-polygon or point-in-raster cell)\n+ spsample, for random sampling methods over a spatial domain.\n\nAn additional package (spproj) provides coordinate reference system\ntransformation (projection and re-projection) using the PROJ.4 library\n[2]. Others (will) provide interfaces to GRASS 6 and gdal.\n\nA good deal of work has also gone into providing plotting methods using\nbase, grid and lattice graphics, through the spplot function, a front-end\nto lattice plots for spatial data (see gallery [1]).\n\nThe home page of these packages is found at\nhttp://r-spatial.sourceforge.net/\nSee also the Task View on Spatial Data Analysis, linked from CRAN.\n\nThe reason why we wrote this package is that we think R is an excellent\nenvironment to deal with spatial data, but that it lacks a uniform way\nto deal with spatial data. Compared to the handling of dates and times,\nwhich can utilize base classes or those provided in the chron package,\nspatial data handling is much more fragmented. As a consequence:\n\n- various packages make their own assumptions about how spatial data\n   are organized\n- spatial data organized for a certain package cannot easily be used\n   for another package\n- few (or no) packages address the full range of spatial data types\n   (points, grids, lines, polygons) and their interaction\n- generic spatial functionality (e.g. I/O to GIS, plotting, projection)\n   is scattered and often limited in functionality.\n\nIt also means that many different package authors have to use time writing\nsimilar data handling code, rather than concentrating on analytical\nfunctions. If the sp package achieves its goals, data I/O will become\nmany-to-one, and data access for analysis one-to-many, providing a shared\ndata object layer for which shared methods can be written.\n\nClasses and methods for spatial data are only useful when the spatial\npackages support them. The sp development team includes maintainers of\na number of spatial R packages, on which we will work, and we hope that\nover time other spatial package maintainers will also provide support\nfor the classes provided by this package.\n\nAlthough we are working towards a fixed set of classes at this moment\nof the development of sp we cannot fully guarantee that the exact\nrepresentation of the sp classes will not change in the future. Therefore,\nwe advise users to keep the scripts with instructions of building the\ndata into sp classes; it is most likely that we will not change the\nbuilding functions and methods.\n\nWork in progress currently involves:\n- support of sp classes by several spatial statistics packages\n- automatic determination of hole polygons from shapefiles\n- plotting filled polygons with holes\n- gdal read/write support\n- GRASS 6.0 support\n\nThe development of this package is a joint effort of Virgilio Gomez-Rubio,\nBarry Rowlinson, Roger Bivand and Edzer Pebesma, and followed from\ndiscussions held at a pre-DSC2003 workshop [3], announcements on R-sig-geo\n[4], and a meeting held last November in Lancaster [5]. A beta release\nof sp was announced a while ago on R-sig-geo [6].\n\nWith best regards,\n--\nRoger Bivand and Edzer Pebesma\n\n\n[1] http://r-spatial.sourceforge.net/\n[2] http://www.remotesensing.org/proj/\n[3] http://spatial.nhh.no/meetings/vienna/index.html\n[4] e.g. https://stat.ethz.ch/pipermail/r-sig-geo/2003-October/000028.html\n[5] http://elearning.maths.lancs.ac.uk:8080/RSpatial/\n[6] https://stat.ethz.ch/pipermail/r-sig-geo/2005-April/000378.html",
-      "body_snippet": "We're happy to announce the CRAN release of \"sp\", an R package which\nhas new-style classes and methods for spatial data, version 0.7-9.\n\nSpatial data types that sp implements are: points, grids, lines",
-      "thread_id": "thread-0584b0c11fd7",
       "thread_depth": 0,
       "month": "2005-06"
     },
@@ -244,38 +132,6 @@
       "month": "2005-06"
     },
     {
-      "id": "msg-3f2cf5ae7819",
-      "message_id": "<CA0BCF3BED56294AB91E3AD74B849FD57F409E@us-arlington-0668.mail.saic.com>",
-      "from_name": "Tuszynski, Jaroslaw W.",
-      "from_email_hash": "753c75a8a5b857508fe884ed7755d4ed5af70605acfb65c6f99507afb40d4dbd",
-      "date": "2005-06-17T15:59:25-04:00",
-      "subject": "[R-pkgs] Release of new version of caMassClass package and new package caT\tools",
-      "subject_clean": "Release of new version of caMassClass package and new package caT\tools",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment-0001.pl>",
-      "thread_id": "thread-3f2cf5ae7819",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-5031e4ee4b9c",
-      "message_id": "<40D3930AC1C8EA469E39536E5BC80835701D25@EXDKBA021.corp.novocorp.net>",
-      "from_name": "BXC (Bendix Carstensen)",
-      "from_email_hash": "e2c63febb35b7e0607156d33a4415f54466d31fe15c27f86e63edfa5bcac1ad3",
-      "date": "2005-06-19T23:02:14+02:00",
-      "subject": "[R-pkgs] Epi package",
-      "subject_clean": "Epi package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "There is now an Epi-package on CRAN.\n\nIt is intended for epidemiological analysis in R.\nIt has its own homepage, http://www.pubhealth.ku.dk/~bxc/Epi\n\nThe package has been used at the course \"Statistical practise \nin Epidemiology with R\", see http://www.pubhealth.ku.dk/~bxc/SPE.\n\nA mailing list for people using R for epidemiology, R-sig-Epi, has \nbeen set up, see https://stat.ethz.ch/mailman/listinfo/r-sig-epi\nor through the R-homepage -> Mailing lists\n\nBendix Carstensen\nmaintainer\n----------------------\nBendix Carstensen\nSenior Statistician\nSteno Diabetes Center\nNiels Steensens Vej 2\nDK-2820 Gentofte\nDenmark\ntel: +45 44 43 87 38\nmob: +45 30 75 87 38\nfax: +45 44 43 07 06\nbxc at steno.dk\nwww.biostat.ku.dk/~bxc",
-      "body_snippet": "There is now an Epi-package on CRAN.\n\nIt is intended for epidemiological analysis in R.\nIt has its own homepage, http://www.pubhealth.ku.dk/~bxc/Epi\n\nThe package has been used at the course \"Statistic",
-      "thread_id": "thread-5031e4ee4b9c",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
       "id": "msg-5031e4ee4b9c",
       "message_id": "<40D3930AC1C8EA469E39536E5BC80835701D25@EXDKBA021.corp.novocorp.net>",
       "from_name": "BXC (Bendix Carstensen)",
@@ -304,38 +160,6 @@
       "body_plain": "The R interface to the GNU Linear Programming Kit (GLPK) is now available\non CRAN.\n\nThe R interface functions are almost identical to the native GLPK C API\nmaking it easy to move code and concepts between R and C.\n\nThe GLPK package is intended for solving large-scale linear programming\n(LP), mixed integer linear programming (MIP), and other related problems.\n\nThe GLPK library includes the following main components:\n\n* implementation of the simplex method;\n* implementation of the primal-dual interior-point method;\n* implementation of the branch-and-bound method;\n* application program interface (API);\n* GNU MathProg modeling language (a subset of AMPL);\n* GLPSOL, a stand-alone LP/MIP solver.\n\nSee GLPK webpage <http://www.gnu.org/software/glpk/glpk.html>.",
       "body_snippet": "The R interface to the GNU Linear Programming Kit (GLPK) is now available\non CRAN.\n\nThe R interface functions are almost identical to the native GLPK C API\nmaking it easy to move code and concepts bet",
       "thread_id": "thread-2b0c8650df92",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-2b0c8650df92",
-      "message_id": "<33577.136.177.22.105.1119474519.squirrel@webmail.fpcc.net>",
-      "from_name": "Lopaka Lee (Rob)",
-      "from_email_hash": "910d057a11bd49655a237f3e9070430e0b8fa9b78072e58afcd7e236e15a86cb",
-      "date": "2005-06-22T15:08:39-06:00",
-      "subject": "[R-pkgs] The GNU Linear Programming Kit for R",
-      "subject_clean": "The GNU Linear Programming Kit for R",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The R interface to the GNU Linear Programming Kit (GLPK) is now available\non CRAN.\n\nThe R interface functions are almost identical to the native GLPK C API\nmaking it easy to move code and concepts between R and C.\n\nThe GLPK package is intended for solving large-scale linear programming\n(LP), mixed integer linear programming (MIP), and other related problems.\n\nThe GLPK library includes the following main components:\n\n* implementation of the simplex method;\n* implementation of the primal-dual interior-point method;\n* implementation of the branch-and-bound method;\n* application program interface (API);\n* GNU MathProg modeling language (a subset of AMPL);\n* GLPSOL, a stand-alone LP/MIP solver.\n\nSee GLPK webpage <http://www.gnu.org/software/glpk/glpk.html>.",
-      "body_snippet": "The R interface to the GNU Linear Programming Kit (GLPK) is now available\non CRAN.\n\nThe R interface functions are almost identical to the native GLPK C API\nmaking it easy to move code and concepts bet",
-      "thread_id": "thread-2b0c8650df92",
-      "thread_depth": 0,
-      "month": "2005-06"
-    },
-    {
-      "id": "msg-9f708dd76fa3",
-      "message_id": "<Pine.LNX.4.51.0506281014210.28909@artemis.imbe.med.uni-erlangen.de>",
-      "from_name": "Torsten Hothorn",
-      "from_email_hash": "41e657384fb07a3764a554d5304d033ebaccbd11a54485f1b6386a932843f125",
-      "date": "2005-06-28T10:18:38+02:00",
-      "subject": "[R-pkgs] New package `party': A Laboratory for Recursive Part(y)itioning",
-      "subject_clean": "New package `party': A Laboratory for Recursive Part(y)itioning",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\na new package for tree-structured regression is available on CRAN.\n\nThis package implements a unified framework for recursive partitioning\nwhich embeds tree-structured regression models into a well defined\ntheory of conditional inference procedures. Stopping criteria based on\nmultiple test procedures are implemented. The methodology is applicable\nto all kinds of regression problems, including nominal, ordinal, numeric,\ncensored as well as multivariate response variables and arbitrary\nmeasurement scales of the covariates. Extensible functionality for\nvisualizing tree-structured regression models is available.\n\nBest,\n\nTorsten\n\n__________________________________________________________________________\n\n\nPackage: party\nTitle: A Laboratory for Recursive Part(y)itioning\nDate: $Date: 2005/06/27 06:38:16 $\nVersion: 0.2-2\nAuthor: Torsten Hothorn, Kurt Hornik and Achim Zeileis\nMaintainer: Torsten Hothorn <Torsten.Hothorn at R-project.org>\nDescription: Unbiased recursive partitioning in a conditional\n  inference framework.\nDepends: R (>= 2.0.1), survival, grid, modeltools, coin\nSuggests: ipred\nSaveImage: yes\nLicense: GPL\nPackaged: Sun Jun 12 10:38:21 2005; hothorn",
-      "body_snippet": "Dear useRs,\n\na new package for tree-structured regression is available on CRAN.\n\nThis package implements a unified framework for recursive partitioning\nwhich embeds tree-structured regression models i",
-      "thread_id": "thread-9f708dd76fa3",
       "thread_depth": 0,
       "month": "2005-06"
     },
@@ -369,17 +193,6 @@
       "root_message_id": "msg-83aefe0ce071"
     },
     {
-      "id": "thread-83aefe0ce071",
-      "subject": "New CRAN package `coin'",
-      "message_count": 1,
-      "participants": [
-        "Torsten Hothorn"
-      ],
-      "started": "2005-06-03T08:59:12+02:00",
-      "last_reply": "2005-06-03T08:59:12+02:00",
-      "root_message_id": "msg-83aefe0ce071"
-    },
-    {
       "id": "thread-86965f9e082f",
       "subject": "New CRAN package misc3d",
       "message_count": 1,
@@ -389,28 +202,6 @@
       "started": "2005-06-04T08:23:04-05:00",
       "last_reply": "2005-06-04T08:23:04-05:00",
       "root_message_id": "msg-86965f9e082f"
-    },
-    {
-      "id": "thread-86965f9e082f",
-      "subject": "New CRAN package misc3d",
-      "message_count": 1,
-      "participants": [
-        "Luke Tierney"
-      ],
-      "started": "2005-06-04T08:23:04-05:00",
-      "last_reply": "2005-06-04T08:23:04-05:00",
-      "root_message_id": "msg-86965f9e082f"
-    },
-    {
-      "id": "thread-76509640d867",
-      "subject": "New CRAN package dyn",
-      "message_count": 1,
-      "participants": [
-        "Gabor Grothendieck"
-      ],
-      "started": "2005-06-08T13:08:07-04:00",
-      "last_reply": "2005-06-08T13:08:07-04:00",
-      "root_message_id": "msg-76509640d867"
     },
     {
       "id": "thread-76509640d867",
@@ -435,17 +226,6 @@
       "root_message_id": "msg-45036cc94ba3"
     },
     {
-      "id": "thread-45036cc94ba3",
-      "subject": "New package aod: Analysis of Overdispersed Data",
-      "message_count": 1,
-      "participants": [
-        "Renaud Lancelot"
-      ],
-      "started": "2005-06-10T01:40:39+03:00",
-      "last_reply": "2005-06-10T01:40:39+03:00",
-      "root_message_id": "msg-45036cc94ba3"
-    },
-    {
       "id": "thread-a8cc09faba2b",
       "subject": "New versions of Matrix and lme4 packages",
       "message_count": 1,
@@ -455,28 +235,6 @@
       "started": "2005-06-10T14:11:31-05:00",
       "last_reply": "2005-06-10T14:11:31-05:00",
       "root_message_id": "msg-a8cc09faba2b"
-    },
-    {
-      "id": "thread-a8cc09faba2b",
-      "subject": "New versions of Matrix and lme4 packages",
-      "message_count": 1,
-      "participants": [
-        "Douglas Bates"
-      ],
-      "started": "2005-06-10T14:11:31-05:00",
-      "last_reply": "2005-06-10T14:11:31-05:00",
-      "root_message_id": "msg-a8cc09faba2b"
-    },
-    {
-      "id": "thread-0d8264e08f59",
-      "subject": "Version 1.1-0 of bayesm",
-      "message_count": 1,
-      "participants": [
-        "Peter E. Rossi"
-      ],
-      "started": "2005-06-15T09:10:17-05:00",
-      "last_reply": "2005-06-15T09:10:17-05:00",
-      "root_message_id": "msg-0d8264e08f59"
     },
     {
       "id": "thread-0d8264e08f59",
@@ -501,28 +259,6 @@
       "root_message_id": "msg-3f2cf5ae7819"
     },
     {
-      "id": "thread-3f2cf5ae7819",
-      "subject": "Release of new version of caMassClass package and new package caT\tools",
-      "message_count": 1,
-      "participants": [
-        "Tuszynski, Jaroslaw W."
-      ],
-      "started": "2005-06-17T15:59:25-04:00",
-      "last_reply": "2005-06-17T15:59:25-04:00",
-      "root_message_id": "msg-3f2cf5ae7819"
-    },
-    {
-      "id": "thread-0584b0c11fd7",
-      "subject": "New CRAN package sp: classes and methods for spatial data",
-      "message_count": 1,
-      "participants": [
-        "Edzer J. Pebesma"
-      ],
-      "started": "2005-06-17T16:20:15+02:00",
-      "last_reply": "2005-06-17T16:20:15+02:00",
-      "root_message_id": "msg-0584b0c11fd7"
-    },
-    {
       "id": "thread-0584b0c11fd7",
       "subject": "New CRAN package sp: classes and methods for spatial data",
       "message_count": 1,
@@ -545,17 +281,6 @@
       "root_message_id": "msg-5031e4ee4b9c"
     },
     {
-      "id": "thread-5031e4ee4b9c",
-      "subject": "Epi package",
-      "message_count": 1,
-      "participants": [
-        "BXC (Bendix Carstensen)"
-      ],
-      "started": "2005-06-19T23:02:14+02:00",
-      "last_reply": "2005-06-19T23:02:14+02:00",
-      "root_message_id": "msg-5031e4ee4b9c"
-    },
-    {
       "id": "thread-2b0c8650df92",
       "subject": "The GNU Linear Programming Kit for R",
       "message_count": 1,
@@ -565,28 +290,6 @@
       "started": "2005-06-22T15:08:39-06:00",
       "last_reply": "2005-06-22T15:08:39-06:00",
       "root_message_id": "msg-2b0c8650df92"
-    },
-    {
-      "id": "thread-2b0c8650df92",
-      "subject": "The GNU Linear Programming Kit for R",
-      "message_count": 1,
-      "participants": [
-        "Lopaka Lee (Rob)"
-      ],
-      "started": "2005-06-22T15:08:39-06:00",
-      "last_reply": "2005-06-22T15:08:39-06:00",
-      "root_message_id": "msg-2b0c8650df92"
-    },
-    {
-      "id": "thread-9f708dd76fa3",
-      "subject": "New package `party': A Laboratory for Recursive Part(y)itioning",
-      "message_count": 1,
-      "participants": [
-        "Torsten Hothorn"
-      ],
-      "started": "2005-06-28T10:18:38+02:00",
-      "last_reply": "2005-06-28T10:18:38+02:00",
-      "root_message_id": "msg-9f708dd76fa3"
     },
     {
       "id": "thread-9f708dd76fa3",

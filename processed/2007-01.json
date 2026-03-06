@@ -20,22 +20,6 @@
       "month": "2007-01"
     },
     {
-      "id": "msg-a10294669616",
-      "message_id": "<m0sleta9m7.fsf@bar.nemo-project.org>",
-      "from_name": "Bjørn-Helge Mevik and Ron Wehrens",
-      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
-      "date": "2007-01-02T13:36:32+01:00",
-      "subject": "[R-pkgs] pls version 2.0-0",
-      "subject_clean": "pls version 2.0-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 2.0-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.2-0 are\n\n- There is now an options mechanism for selecting default fit algorithms.\n  See ?pls.options.\n- loadingplot() and coefplot() now try to be more intelligent when plotting\n  x axis labels.\n- The handling of factors in X has been improved, by changing the way the\n  intercept is removed from the model matrix.\n- All PLSR and PCR algorithms, as well as mvrCv(), have been optimised.\n  Depending on the algorithm used, the size of the matrices, and the number\n  of components used, one can expect from 5% to 65% reduction in\n  computation time.\n- Scaling of scores and loadings of kernel PLS and svd PCR algorithm has\n  changed.  They are now scaled using the `classic' scaling found in\n  oscorespls.\n- The arguments `ncomp' now always means \"number of components\", and `comps'\n  always means \"component number\".  The argument `cumulative' has been\n  removed.\n- A new data set 'gasoline' has been included.\n- The 'NIR' and 'sensory' data sets have been renamed to 'yarn' and 'oliveoil'.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nBj?rn-Helge Mevik",
-      "body_snippet": "Version 2.0-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
-      "thread_id": "thread-a10294669616",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
       "id": "msg-9faf0910767e",
       "message_id": "<eb555e660701021103w7b62ce07y9e452ecac2f65052@mail.gmail.com>",
       "from_name": "Deepayan Sarkar",
@@ -48,38 +32,6 @@
       "body_plain": "Hi,\n\nThe rcompletion package, originally intended to provide completion for\nreadline-based R interfaces, has undergone a number of changes.  These\nchanges are summarised below:\n\n  o Reorganisation:\n\n    - The package has been split into two.  All the completion code\n      has been moved to a pure R package called 'rcompgen'.\n      'rcompletion' now requires 'rcompgen' and simply provides\n      readline bindings that uses 'rcompgen' to generate possible\n      completions.  (Source packages are available on CRAN, binaries\n      should be available soon.)\n\n    - The purpose of this reorganisation is to allow other backends to\n      use the completion facilities provided by 'rcompgen', hopefully\n      avoiding duplication of effort.  I'm happy to add further\n      infrastructure to 'rcompgen' if that is helpful.\n\n    - as a proof of concept, .../examples/altesscomp.el contains code\n      that provides an alternative (using 'rcompgen') to ESS's\n      built-in completion mechanism.  It should be enough to include\n      the contents of this file in ~/.emacs (please read the comments at\n      the end before doing so).  The file is also available at\n\n      http://rcompletion.googlecode.com/svn/trunk/rcompgen/inst/examples/altesscomp.el\n\n      I am particularly interested in feedback from ESS users\n      regarding how this compares with the default mechanism in terms\n      of speed (especially in older machines).\n\n  o Hosting:\n\n    - The project is now hosted on Google Code, at\n      http://code.google.com/p/rcompletion/\n\n    - (For those interested, this now also hosts my R bash_completion\n      script)\n\n\n  o New completion features:\n\n    - when the token is determined to be the first argument of\n      library() or require(), completion is done on _installed_\n      package names.  This is disabled by default since the first call\n      to installed.packages() can be slow (especially when using\n      remote file systems).\n\n    - when the token is determined to be the first argument of data(),\n      completion is done on available data sets.\n\n    - tokens after a question mark (?) match aliases in help topics\n      rather than object names.  So, for example, ?INST will complete\n      to ?INSTALL even though there is no object named INSTALL.\n\n    - the old behaviour of appending a left-parenthesis to function\n      names has been disabled by default, since this requires\n      evaluation of the mode of _all_ matches, which is undesirable\n      for lazy-loaded symbols.\n\nAs always, comments and suggestions are most welcome.\n\n-Deepayan",
       "body_snippet": "Hi,\n\nThe rcompletion package, originally intended to provide completion for\nreadline-based R interfaces, has undergone a number of changes.  These\nchanges are summarised below:\n\n  o Reorganisation:\n\n ",
       "thread_id": "thread-9faf0910767e",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-9faf0910767e",
-      "message_id": "<eb555e660701021103w7b62ce07y9e452ecac2f65052@mail.gmail.com>",
-      "from_name": "Deepayan Sarkar",
-      "from_email_hash": "fa7cd18e8aabec28b1c7ad2f082e4585b0a924d4ab9e0fa7da5fe77aaaada8df",
-      "date": "2007-01-02T11:03:09-08:00",
-      "subject": "[R-pkgs] rcompletion update",
-      "subject_clean": "rcompletion update",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi,\n\nThe rcompletion package, originally intended to provide completion for\nreadline-based R interfaces, has undergone a number of changes.  These\nchanges are summarised below:\n\n  o Reorganisation:\n\n    - The package has been split into two.  All the completion code\n      has been moved to a pure R package called 'rcompgen'.\n      'rcompletion' now requires 'rcompgen' and simply provides\n      readline bindings that uses 'rcompgen' to generate possible\n      completions.  (Source packages are available on CRAN, binaries\n      should be available soon.)\n\n    - The purpose of this reorganisation is to allow other backends to\n      use the completion facilities provided by 'rcompgen', hopefully\n      avoiding duplication of effort.  I'm happy to add further\n      infrastructure to 'rcompgen' if that is helpful.\n\n    - as a proof of concept, .../examples/altesscomp.el contains code\n      that provides an alternative (using 'rcompgen') to ESS's\n      built-in completion mechanism.  It should be enough to include\n      the contents of this file in ~/.emacs (please read the comments at\n      the end before doing so).  The file is also available at\n\n      http://rcompletion.googlecode.com/svn/trunk/rcompgen/inst/examples/altesscomp.el\n\n      I am particularly interested in feedback from ESS users\n      regarding how this compares with the default mechanism in terms\n      of speed (especially in older machines).\n\n  o Hosting:\n\n    - The project is now hosted on Google Code, at\n      http://code.google.com/p/rcompletion/\n\n    - (For those interested, this now also hosts my R bash_completion\n      script)\n\n\n  o New completion features:\n\n    - when the token is determined to be the first argument of\n      library() or require(), completion is done on _installed_\n      package names.  This is disabled by default since the first call\n      to installed.packages() can be slow (especially when using\n      remote file systems).\n\n    - when the token is determined to be the first argument of data(),\n      completion is done on available data sets.\n\n    - tokens after a question mark (?) match aliases in help topics\n      rather than object names.  So, for example, ?INST will complete\n      to ?INSTALL even though there is no object named INSTALL.\n\n    - the old behaviour of appending a left-parenthesis to function\n      names has been disabled by default, since this requires\n      evaluation of the mode of _all_ matches, which is undesirable\n      for lazy-loaded symbols.\n\nAs always, comments and suggestions are most welcome.\n\n-Deepayan",
-      "body_snippet": "Hi,\n\nThe rcompletion package, originally intended to provide completion for\nreadline-based R interfaces, has undergone a number of changes.  These\nchanges are summarised below:\n\n  o Reorganisation:\n\n ",
-      "thread_id": "thread-9faf0910767e",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-63dc2cf5d826",
-      "message_id": "<m2odpe32w8.fsf@fhcrc.org>",
-      "from_name": "Seth Falcon",
-      "from_email_hash": "92e6ad61c3d6d545a12aa5845a0d74c5de1bbbc7bf85c768e4a2cb862e092abc",
-      "date": "2007-01-04T13:20:23-08:00",
-      "subject": "[R-pkgs] RSQLite 0.4-18 sent to CRAN",
-      "subject_clean": "RSQLite 0.4-18 sent to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "A new version of RSQLite has been pushed to CRAN.\n\nIn this version...\n\n* Further integration of the manifest type system available since\n  SQLite 3.  We now obtain the column type from the DB instead of\n  pulling everything across as a character vector and calling\n  type.convert.  This should improve performance and provide a more\n  reliable interface to build on top of.  Note, however, that since\n  type.convert is no longer called, return values will be different.\n  In particular, text columns will come across as text, not factor.\n\n* dbWriteTable has been refactored and no longer uses temp files.\n  This resolves performance issues and line ending quandries on\n  Windows.\n\n* Fix for a bug in dbWriteTable when used to import text files; files\n  lacking a trailing end of line marker can now be used.\n\nQuestions?  Send them to the r-sig-db mailing list.\n\nBest Wishes,\n\n+ seth\n\n-- \nSeth Falcon | Computational Biology | Fred Hutchinson Cancer Research Center\nhttp://bioconductor.org",
-      "body_snippet": "A new version of RSQLite has been pushed to CRAN.\n\nIn this version...\n\n* Further integration of the manifest type system available since\n  SQLite 3.  We now obtain the column type from the DB instead ",
-      "thread_id": "thread-63dc2cf5d826",
       "thread_depth": 0,
       "month": "2007-01"
     },
@@ -116,22 +68,6 @@
       "month": "2007-01"
     },
     {
-      "id": "msg-f6135dfbbef7",
-      "message_id": "<74c69e370701041938g50c2147fn3cfb767fe219487b@mail.gmail.com>",
-      "from_name": "David James",
-      "from_email_hash": "518f944315ecd649e58e873c2d74a6301646e9269495c3ef22ba6dde11367781",
-      "date": "2007-01-04T22:38:34-05:00",
-      "subject": "[R-pkgs] RMySQL 0.5-11 uploaded to CRAN",
-      "subject_clean": "RMySQL 0.5-11 uploaded to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hello,\n\nI've uploaded  version 0.5-11 of RMySQL into CRAN, and it should be available\nsoon.\n\n>From the NEWS file:\n\nVersion 0.5-11\n\n* Fixed a bug that would crash R with a failed mysql_real_connect().\n\n* dbApply() is now working again (but still experimentally).\n\n* Re-formatted the C code.\n\n[0.5-9 through 0.5-10 were maintanance releases that Seth Falcon\nkindly put out.]\n\nRegards,\n\n--\nDavid",
-      "body_snippet": "Hello,\n\nI've uploaded  version 0.5-11 of RMySQL into CRAN, and it should be available\nsoon.\n\n>From the NEWS file:\n\nVersion 0.5-11\n\n* Fixed a bug that would crash R with a failed mysql_real_connect().\n",
-      "thread_id": "thread-f6135dfbbef7",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
       "id": "msg-7d7389256f5e",
       "message_id": "<45A616E7.9060404@wu-wien.ac.at>",
       "from_name": "Ingo Feinerer",
@@ -144,38 +80,6 @@
       "body_plain": "Dear useRs,\n\na first version of tm has just been released on CRAN.\n\ntm provides a sophisticated framework for text mining applications\nwithin R.\n\nIt offers functionality for managing text documents, abstracts the\nprocess of document manipulation and eases the usage of heterogeneous\ntext formats in R. An advanced metadata management is\nimplemented for collections of text documents to alleviate the usage\nof large and with metadata enriched document sets.\n\nWith the package ships native support for handling\n   *) the Reuters 21578 dataset,\n   *) the Reuters Corpus Volume 1 dataset,\n   *) Gmane RSS feeds,\n   *) e-mails, and\n   *) several classic file formats (e.g. plain text or CSV text).\n\ntm provides easy access to preprocessing and manipulation mechanisms, like\n   *) whitespace removal,\n   *) stemming, or\n   *) conversion between file formats (e.g., Reuters21578 to plain\n   text).\n\nFurther a generic filter architecture is available in order to\n   *) filter documents for certain criteria,\n   *) or perform fulltext search.\n\nThe package supports the export from document collections to\nterm-document matrices as frequently used in the text mining\nliterature. This allows the straight-forward integration of existing\nmethods for classification, clustering, visualizations, etc.\n\nThe package is designed in a modular way to enable easy integration of\nnew file formats, parsers, transformations and filter operations.\n\nBest regards,\n\nIngo Feinerer",
       "body_snippet": "Dear useRs,\n\na first version of tm has just been released on CRAN.\n\ntm provides a sophisticated framework for text mining applications\nwithin R.\n\nIt offers functionality for managing text documents, a",
       "thread_id": "thread-7d7389256f5e",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-7d7389256f5e",
-      "message_id": "<45A616E7.9060404@wu-wien.ac.at>",
-      "from_name": "Ingo Feinerer",
-      "from_email_hash": "b30832cd7d708dc98f480e9b73cc01bf08a37bb57a0daab4444644f8b6fc0afa",
-      "date": "2007-01-11T11:52:23+01:00",
-      "subject": "[R-pkgs] tm 0.1 uploaded to CRAN",
-      "subject_clean": "tm 0.1 uploaded to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\na first version of tm has just been released on CRAN.\n\ntm provides a sophisticated framework for text mining applications\nwithin R.\n\nIt offers functionality for managing text documents, abstracts the\nprocess of document manipulation and eases the usage of heterogeneous\ntext formats in R. An advanced metadata management is\nimplemented for collections of text documents to alleviate the usage\nof large and with metadata enriched document sets.\n\nWith the package ships native support for handling\n   *) the Reuters 21578 dataset,\n   *) the Reuters Corpus Volume 1 dataset,\n   *) Gmane RSS feeds,\n   *) e-mails, and\n   *) several classic file formats (e.g. plain text or CSV text).\n\ntm provides easy access to preprocessing and manipulation mechanisms, like\n   *) whitespace removal,\n   *) stemming, or\n   *) conversion between file formats (e.g., Reuters21578 to plain\n   text).\n\nFurther a generic filter architecture is available in order to\n   *) filter documents for certain criteria,\n   *) or perform fulltext search.\n\nThe package supports the export from document collections to\nterm-document matrices as frequently used in the text mining\nliterature. This allows the straight-forward integration of existing\nmethods for classification, clustering, visualizations, etc.\n\nThe package is designed in a modular way to enable easy integration of\nnew file formats, parsers, transformations and filter operations.\n\nBest regards,\n\nIngo Feinerer",
-      "body_snippet": "Dear useRs,\n\na first version of tm has just been released on CRAN.\n\ntm provides a sophisticated framework for text mining applications\nwithin R.\n\nIt offers functionality for managing text documents, a",
-      "thread_id": "thread-7d7389256f5e",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-547bc0857d36",
-      "message_id": "<06676A7D-69A0-4443-B078-DA15E7767331@soc.soton.ac.uk>",
-      "from_name": "Robin Hankin",
-      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
-      "date": "2007-01-12T13:22:45Z",
-      "subject": "[R-pkgs] Dummy's guide to S4 methods: package Brobdingnag",
-      "subject_clean": "Dummy's guide to S4 methods: package Brobdingnag",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hello List.\n\nplease find uploaded to CRAN a new package, Brobdingnag.\n\nThis package does two things:\n\n(1) allows computation of very large numbers using a logarithmic  \nrepresentation.\n\n(2) provides a \"Hello, World\" example of S4 methods in use: there are  \ntwo classes of object\n   (brob and glub) and one virtual class (swift).  The package  \nincludes a vignette that is a\n    step-by-step guide to using S4 methods in the context of an R  \npackage.\n\n\nEnjoy\n\nRobin\n\n--\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
-      "body_snippet": "Hello List.\n\nplease find uploaded to CRAN a new package, Brobdingnag.\n\nThis package does two things:\n\n(1) allows computation of very large numbers using a logarithmic  \nrepresentation.\n\n(2) provides a",
-      "thread_id": "thread-547bc0857d36",
       "thread_depth": 0,
       "month": "2007-01"
     },
@@ -212,22 +116,6 @@
       "month": "2007-01"
     },
     {
-      "id": "msg-eff986691f95",
-      "message_id": "<17835.6588.479880.317926@maths.uwa.edu.au>",
-      "from_name": "Adrian Baddeley",
-      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
-      "date": "2007-01-15T14:05:48+08:00",
-      "subject": "[R-pkgs] spatstat 1.11-0",
-      "subject_clean": "spatstat 1.11-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "spatstat 1.11-0\n\nVersion 1.11-0 of package 'spatstat' is now available.\n\nSpatstat is a package for the analysis of spatial data, \nmostly point pattern data. See <www.spatstat.org>\n\nImportant changes in version 1.11-0:\n\n\tNew format for ppm objects (objects in old format are still handled).\n\tMore stringent checking of function arguments.\n\tImproved handling of pixellation effects.\n\tExtensions to variance-covariance calculations for fitted models.\n\nAdrian Baddeley and Rolf Turner",
-      "body_snippet": "spatstat 1.11-0\n\nVersion 1.11-0 of package 'spatstat' is now available.\n\nSpatstat is a package for the analysis of spatial data, \nmostly point pattern data. See <www.spatstat.org>\n\nImportant changes i",
-      "thread_id": "thread-eff986691f95",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
       "id": "msg-00d43d8c0bce",
       "message_id": "<1E7B167439290641966EB161D433079801BE1A8D@GSBEX.gsb.uchicago.edu>",
       "from_name": "Rossi, Peter E.",
@@ -240,38 +128,6 @@
       "body_plain": "Version 2.0-9 of bayesm is now available on CRAN\n\nchanges include-\n\n1. addition of rhierLinearMixture -- linear hierarchical models with a\nmixture of normals prior\n2. mixDenBi is now fully vectorized and run more than 10 times faster\n3. minor documentation corrections have been made\n4. rnmixGibbs allows the user to specify only one component\n \npeter rossi",
       "body_snippet": "Version 2.0-9 of bayesm is now available on CRAN\n\nchanges include-\n\n1. addition of rhierLinearMixture -- linear hierarchical models with a\nmixture of normals prior\n2. mixDenBi is now fully vectorized ",
       "thread_id": "thread-00d43d8c0bce",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-00d43d8c0bce",
-      "message_id": "<1E7B167439290641966EB161D433079801BE1A8D@GSBEX.gsb.uchicago.edu>",
-      "from_name": "Rossi, Peter E.",
-      "from_email_hash": "6a49ee665646922d3e8da4954c470b0dd732db0ce19b081f11392cba0e95fe03",
-      "date": "2007-01-18T09:42:21-06:00",
-      "subject": "[R-pkgs] Version 2.0-9 of bayesm",
-      "subject_clean": "Version 2.0-9 of bayesm",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 2.0-9 of bayesm is now available on CRAN\n\nchanges include-\n\n1. addition of rhierLinearMixture -- linear hierarchical models with a\nmixture of normals prior\n2. mixDenBi is now fully vectorized and run more than 10 times faster\n3. minor documentation corrections have been made\n4. rnmixGibbs allows the user to specify only one component\n \npeter rossi",
-      "body_snippet": "Version 2.0-9 of bayesm is now available on CRAN\n\nchanges include-\n\n1. addition of rhierLinearMixture -- linear hierarchical models with a\nmixture of normals prior\n2. mixDenBi is now fully vectorized ",
-      "thread_id": "thread-00d43d8c0bce",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-ce879c636c0f",
-      "message_id": "<45B537B2.70807@wp.pl>",
-      "from_name": "Jakub Jurdziak",
-      "from_email_hash": "0c6540b0d10d59e776448fb3fa81b95aa89c4f942e4b488ec001f00daade2700",
-      "date": "2007-01-22T23:16:18+01:00",
-      "subject": "[R-pkgs] eval() parse() and problem with square brackets",
-      "subject_clean": "eval() parse() and problem with square brackets",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hello,\n\ni have problem with the following code (I'm using sqlQuery function from \nRODBC package):\neval(parse(text=\"g_1 <- sqlQuery(cnn_1, \\\"select aa from \nbb.[cc\\\\dd].ee\\\")\")).\n\nI get the error message:\n\"[RODBC] ERROR: Could not SQLExecDirect\" \n\n\"S0002 208 [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object \nname 'bb.cc\\dd.ee'.\"\n\nIt seems that R is replacing square brackets that are needed for \ndatabase to execute query.\n\nHow can I force R to change its behavior and leave square brackets \nunchanged?\n\nAny ideas appreciated\n\nKuba",
-      "body_snippet": "Hello,\n\ni have problem with the following code (I'm using sqlQuery function from \nRODBC package):\neval(parse(text=\"g_1 <- sqlQuery(cnn_1, \\\"select aa from \nbb.[cc\\\\dd].ee\\\")\")).\n\nI get the error messa",
-      "thread_id": "thread-ce879c636c0f",
       "thread_depth": 0,
       "month": "2007-01"
     },
@@ -308,38 +164,6 @@
       "month": "2007-01"
     },
     {
-      "id": "msg-33bea5d98816",
-      "message_id": "<200701231328.08930.dusa.adrian@gmail.com>",
-      "from_name": "Adrian Dusa",
-      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
-      "date": "2007-01-23T13:28:08+02:00",
-      "subject": "[R-pkgs] version 0.3 of QCA",
-      "subject_clean": "version 0.3 of QCA",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear list members,\n\nA new version of the QCA package is now on CRAN.\nThe QCA package implements the Quine-McCluskey algorithm for boolean \nminimizations, according to the Qualitative Comparative Analysis.\n\nAlong with the additional improvements in version 0.3-1 (soon to be released \non CRAN), this code is about 100 times faster than the previous \"major\" \nrelease (0.2-6). It can now reasonably work with 11 binary variables, finding \na complete (and exact) solution in less than 2 minutes.\n\nThis dramatic increase in speed is due to using a mathematical reduction \ninstead of an algorithmic one. This approach openes the way for _exact_ \nmulti-value minimizations, and an even better (and faster) approach is \nsearched for the future versions.\n\nBest,\nAdrian\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd\n050025 Bucharest sector 5\nRomania\nTel./Fax: +40 21 3126618 \\\n          +40 21 3120210 / int.101",
-      "body_snippet": "Dear list members,\n\nA new version of the QCA package is now on CRAN.\nThe QCA package implements the Quine-McCluskey algorithm for boolean \nminimizations, according to the Qualitative Comparative Analy",
-      "thread_id": "thread-33bea5d98816",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-be098cc2bf4f",
-      "message_id": "<40e66e0b0701251512p78612c2br31e32ea0411f301b@mail.gmail.com>",
-      "from_name": "Douglas Bates",
-      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2007-01-25T17:12:00-06:00",
-      "subject": "[R-pkgs] New version of lme4 and new mailing list R-SIG-mixed-models",
-      "subject_clean": "New version of lme4 and new mailing list R-SIG-mixed-models",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 0.9975-11 of the lme4 package has been uploaded to CRAN.  The\nsource package should be available on the mirrors in a day or two and\nbinary packages should follow soon after.\n\nThere are several changes in this release of the package.  The most\nimportant is the availability of a development version of lmer called,\nfor the time being, lmer2.  At present lmer2 only fits linear mixed\nmodels.  Generalized linear mixed models will be added \"soon\".\nFurthermore there is no mcmcsamp method for a model fit by lmer2.\nThis deficiency will also be rectified \"soon\".  Once I have all the\ncapabilities and methods currently available for lmer also available\nfor the new representation I will remove the old representation and\nrename lmer2 as lmer.\n\nThe current version of lmer will continue to be available throughout\nthe migration process.  You don't have to change anything about your\nuse of that function unless you want to try the new one.  It would be\na good idea, however, to save the data and the call to lmer in\naddition to saving an lmer object, if you so choose, so that you can\nrecreate the fitted model when the development version becomes the\nrelease version.\n\nThe package contains a vignette giving the details of the new implementation.\n\nThe reason I am releasing a development version in parallel with the\nproduction version is because I would like feedback from useR's\nregarding the development version.  In my experience, testing it\nmyself and with colleagues whom I visited recently, I have found that\nlmer2 is faster and more reliable than the current lmer.  In\nparticular, on some difficult model fits I have been able to get\nsubstantially better parameter estimates (i.e. the deviance at the\nlmer2 estimates is perhaps 4 or 5 lower than that at the lmer\nestimates) with lmer2 than I could with lmer.\n\nIf you have fit a linear mixed model using lmer and are willing to try\nit with lmer2 I would appreciate your telling me if the parameter\nestimates are comparable and which fit was faster (use system.time()\nto check).  I'm primarily interested in models fit to large data sets\nor \"difficult\" fits.\n\nWe have established a new mailing list, R-SIG-mixed-models, for\ndiscussion of R software to fit mixed-effects models, especially lmer.\n See https://stat.ethz.ch/mailman/listinfo/r-sig-mixed-models for\ninformation or to subscribe.\n\nI know that I have said this before but this is the last time that I\nam going to change the underlying representation.  Really - trust me -\nthis is the last time.  My theory of software development is expressed\nin a line from an old blues song, \"you just keep doing it wrong till\nyou do it right\".  I'm convinced that this time I have it right.  That\nstatement sounds like \"famous last words\", doesn't it?  :-)",
-      "body_snippet": "Version 0.9975-11 of the lme4 package has been uploaded to CRAN.  The\nsource package should be available on the mirrors in a day or two and\nbinary packages should follow soon after.\n\nThere are several",
-      "thread_id": "thread-be098cc2bf4f",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
       "id": "msg-be098cc2bf4f",
       "message_id": "<40e66e0b0701251512p78612c2br31e32ea0411f301b@mail.gmail.com>",
       "from_name": "Douglas Bates",
@@ -368,38 +192,6 @@
       "body_plain": "Hmisc 3.1-2 has been uploaded to the CRAN incoming directory.\n\nChange log\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' function in base.\n\n       Fixed Bug in format.df that would create numbers with many\n       trailing zeros.\n\n       Added arguments 'math.row.names' and 'math.col.names' to\n       indicate that the row or col names should be wrapped in the\n       latex math environment.\n\n       Fixed problem with 'histbackback' function.\n\n-- \nCharles Dupont\tComputer System Analyst\t\tSchool of Medicine\n\t\tDepartment of Biostatistics\tVanderbilt University",
       "body_snippet": "Hmisc 3.1-2 has been uploaded to the CRAN incoming directory.\n\nChange log\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' functio",
       "thread_id": "thread-ff6cd766289d",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-ff6cd766289d",
-      "message_id": "<45BE2AB7.8030107@vanderbilt.edu>",
-      "from_name": "Charles Dupont",
-      "from_email_hash": "b9f7586f19ad4b41fa9e4c48947d15b4a153590e98f87c83dfe1a3a9691b5c0d",
-      "date": "2007-01-29T11:11:19-06:00",
-      "subject": "[R-pkgs] Hmisc Version 3.1-2 uploaded to CRAN repository",
-      "subject_clean": "Hmisc Version 3.1-2 uploaded to CRAN repository",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hmisc 3.1-2 has been uploaded to the CRAN incoming directory.\n\nChange log\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' function in base.\n\n       Fixed Bug in format.df that would create numbers with many\n       trailing zeros.\n\n       Added arguments 'math.row.names' and 'math.col.names' to\n       indicate that the row or col names should be wrapped in the\n       latex math environment.\n\n       Fixed problem with 'histbackback' function.\n\n-- \nCharles Dupont\tComputer System Analyst\t\tSchool of Medicine\n\t\tDepartment of Biostatistics\tVanderbilt University",
-      "body_snippet": "Hmisc 3.1-2 has been uploaded to the CRAN incoming directory.\n\nChange log\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' functio",
-      "thread_id": "thread-ff6cd766289d",
-      "thread_depth": 0,
-      "month": "2007-01"
-    },
-    {
-      "id": "msg-c50c5fada5eb",
-      "message_id": "<c3ca233a0701310253h458e88eam5d0a85ace4098fcc@mail.gmail.com>",
-      "from_name": "Tobias Sing",
-      "from_email_hash": "e5aa9e0a72a46e83010f69de9f936c1a74b392c29e707d83b3cedba8ec971b9a",
-      "date": "2007-01-31T11:53:43+01:00",
-      "subject": "[R-pkgs] ROCR 1.0-2",
-      "subject_clean": "ROCR 1.0-2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nan update of the ROCR package is available on CRAN.\n\nROCR helps in evaluating the performance of scoring classifiers using\nROC graphs, precision/recall plots, lift charts and many other\nperformance metrics.\nFor further information check http://rocr.bioinf.mpi-sb.mpg.de and\nhttp://bioinformatics.oxfordjournals.org/cgi/reprint/21/20/3940\n\nNEWS:\n- added an optional parameter 'fpr.stop' to the performance measure 'auc',\n  allowing to calculate the partial area under the ROC curve\n  up to the false positive rate given by 'fpr.stop'.\n\n- fixed bug in 'prediction' function which caused ROCR to halt\n  in the context of a custom label.ordering (thanks to Roberto Perdisci\n  for pointing out)\n\nAs usual, any feedback is more than welcome!\n- Tobias\n\n\n-- \nTobias Sing\nComputational Biology and Applied Algorithmics\nMax Planck Institute for Informatics\nSaarbrucken, Germany\nPhone: +49 681 9325 315\nFax: +49 681 9325 399\nhttp://www.tobiassing.net",
-      "body_snippet": "Dear useRs,\n\nan update of the ROCR package is available on CRAN.\n\nROCR helps in evaluating the performance of scoring classifiers using\nROC graphs, precision/recall plots, lift charts and many other\np",
-      "thread_id": "thread-c50c5fada5eb",
       "thread_depth": 0,
       "month": "2007-01"
     },
@@ -433,17 +225,6 @@
       "root_message_id": "msg-9faf0910767e"
     },
     {
-      "id": "thread-9faf0910767e",
-      "subject": "rcompletion update",
-      "message_count": 1,
-      "participants": [
-        "Deepayan Sarkar"
-      ],
-      "started": "2007-01-02T11:03:09-08:00",
-      "last_reply": "2007-01-02T11:03:09-08:00",
-      "root_message_id": "msg-9faf0910767e"
-    },
-    {
       "id": "thread-a10294669616",
       "subject": "pls version 2.0-0",
       "message_count": 1,
@@ -453,28 +234,6 @@
       "started": "2007-01-02T13:36:32+01:00",
       "last_reply": "2007-01-02T13:36:32+01:00",
       "root_message_id": "msg-a10294669616"
-    },
-    {
-      "id": "thread-a10294669616",
-      "subject": "pls version 2.0-0",
-      "message_count": 1,
-      "participants": [
-        "Bjørn-Helge Mevik and Ron Wehrens"
-      ],
-      "started": "2007-01-02T13:36:32+01:00",
-      "last_reply": "2007-01-02T13:36:32+01:00",
-      "root_message_id": "msg-a10294669616"
-    },
-    {
-      "id": "thread-63dc2cf5d826",
-      "subject": "RSQLite 0.4-18 sent to CRAN",
-      "message_count": 1,
-      "participants": [
-        "Seth Falcon"
-      ],
-      "started": "2007-01-04T13:20:23-08:00",
-      "last_reply": "2007-01-04T13:20:23-08:00",
-      "root_message_id": "msg-63dc2cf5d826"
     },
     {
       "id": "thread-63dc2cf5d826",
@@ -499,17 +258,6 @@
       "root_message_id": "msg-f6135dfbbef7"
     },
     {
-      "id": "thread-f6135dfbbef7",
-      "subject": "RMySQL 0.5-11 uploaded to CRAN",
-      "message_count": 1,
-      "participants": [
-        "David James"
-      ],
-      "started": "2007-01-04T22:38:34-05:00",
-      "last_reply": "2007-01-04T22:38:34-05:00",
-      "root_message_id": "msg-f6135dfbbef7"
-    },
-    {
       "id": "thread-7d7389256f5e",
       "subject": "tm 0.1 uploaded to CRAN",
       "message_count": 1,
@@ -519,28 +267,6 @@
       "started": "2007-01-11T11:52:23+01:00",
       "last_reply": "2007-01-11T11:52:23+01:00",
       "root_message_id": "msg-7d7389256f5e"
-    },
-    {
-      "id": "thread-7d7389256f5e",
-      "subject": "tm 0.1 uploaded to CRAN",
-      "message_count": 1,
-      "participants": [
-        "Ingo Feinerer"
-      ],
-      "started": "2007-01-11T11:52:23+01:00",
-      "last_reply": "2007-01-11T11:52:23+01:00",
-      "root_message_id": "msg-7d7389256f5e"
-    },
-    {
-      "id": "thread-547bc0857d36",
-      "subject": "Dummy's guide to S4 methods: package Brobdingnag",
-      "message_count": 1,
-      "participants": [
-        "Robin Hankin"
-      ],
-      "started": "2007-01-12T13:22:45+00:00",
-      "last_reply": "2007-01-12T13:22:45+00:00",
-      "root_message_id": "msg-547bc0857d36"
     },
     {
       "id": "thread-547bc0857d36",
@@ -565,17 +291,6 @@
       "root_message_id": "msg-eff986691f95"
     },
     {
-      "id": "thread-eff986691f95",
-      "subject": "spatstat 1.11-0",
-      "message_count": 1,
-      "participants": [
-        "Adrian Baddeley"
-      ],
-      "started": "2007-01-15T14:05:48+08:00",
-      "last_reply": "2007-01-15T14:05:48+08:00",
-      "root_message_id": "msg-eff986691f95"
-    },
-    {
       "id": "thread-00d43d8c0bce",
       "subject": "Version 2.0-9 of bayesm",
       "message_count": 1,
@@ -585,28 +300,6 @@
       "started": "2007-01-18T09:42:21-06:00",
       "last_reply": "2007-01-18T09:42:21-06:00",
       "root_message_id": "msg-00d43d8c0bce"
-    },
-    {
-      "id": "thread-00d43d8c0bce",
-      "subject": "Version 2.0-9 of bayesm",
-      "message_count": 1,
-      "participants": [
-        "Rossi, Peter E."
-      ],
-      "started": "2007-01-18T09:42:21-06:00",
-      "last_reply": "2007-01-18T09:42:21-06:00",
-      "root_message_id": "msg-00d43d8c0bce"
-    },
-    {
-      "id": "thread-ce879c636c0f",
-      "subject": "eval() parse() and problem with square brackets",
-      "message_count": 1,
-      "participants": [
-        "Jakub Jurdziak"
-      ],
-      "started": "2007-01-22T23:16:18+01:00",
-      "last_reply": "2007-01-22T23:16:18+01:00",
-      "root_message_id": "msg-ce879c636c0f"
     },
     {
       "id": "thread-ce879c636c0f",
@@ -631,28 +324,6 @@
       "root_message_id": "msg-33bea5d98816"
     },
     {
-      "id": "thread-33bea5d98816",
-      "subject": "version 0.3 of QCA",
-      "message_count": 1,
-      "participants": [
-        "Adrian Dusa"
-      ],
-      "started": "2007-01-23T13:28:08+02:00",
-      "last_reply": "2007-01-23T13:28:08+02:00",
-      "root_message_id": "msg-33bea5d98816"
-    },
-    {
-      "id": "thread-be098cc2bf4f",
-      "subject": "New version of lme4 and new mailing list R-SIG-mixed-models",
-      "message_count": 1,
-      "participants": [
-        "Douglas Bates"
-      ],
-      "started": "2007-01-25T17:12:00-06:00",
-      "last_reply": "2007-01-25T17:12:00-06:00",
-      "root_message_id": "msg-be098cc2bf4f"
-    },
-    {
       "id": "thread-be098cc2bf4f",
       "subject": "New version of lme4 and new mailing list R-SIG-mixed-models",
       "message_count": 1,
@@ -673,28 +344,6 @@
       "started": "2007-01-29T11:11:19-06:00",
       "last_reply": "2007-01-29T11:11:19-06:00",
       "root_message_id": "msg-ff6cd766289d"
-    },
-    {
-      "id": "thread-ff6cd766289d",
-      "subject": "Hmisc Version 3.1-2 uploaded to CRAN repository",
-      "message_count": 1,
-      "participants": [
-        "Charles Dupont"
-      ],
-      "started": "2007-01-29T11:11:19-06:00",
-      "last_reply": "2007-01-29T11:11:19-06:00",
-      "root_message_id": "msg-ff6cd766289d"
-    },
-    {
-      "id": "thread-c50c5fada5eb",
-      "subject": "ROCR 1.0-2",
-      "message_count": 1,
-      "participants": [
-        "Tobias Sing"
-      ],
-      "started": "2007-01-31T11:53:43+01:00",
-      "last_reply": "2007-01-31T11:53:43+01:00",
-      "root_message_id": "msg-c50c5fada5eb"
     },
     {
       "id": "thread-c50c5fada5eb",

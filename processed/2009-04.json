@@ -20,22 +20,6 @@
       "month": "2009-04"
     },
     {
-      "id": "msg-b30fe138cce1",
-      "message_id": "<49D61338.4000203@vanderbilt.edu>",
-      "from_name": "Jeffrey Horner",
-      "from_email_hash": "8b91e5b4000682951a703759aaef9fbaa2bc23dc141f7a1ef5c829c7c0d0d0de",
-      "date": "2009-04-03T08:46:32-05:00",
-      "subject": "[R-pkgs] New R graphics package targeting HTML 5 canvas element",
-      "subject_clean": "New R graphics package targeting HTML 5 canvas element",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi,\n\ncanvas is a new R package implementing a graphics device that emits \njavascript code conforming to the HTML 5 CanvasRenderingContext2D \ninterface. Available on CRAN soon, but you can get it here immediately:\n\nhttp://www.rforge.net/canvas\n\nIf you have access to a beta web browser like Firefox 3.1 or later, you \ncan see example plots here:\n\nhttp://www.rforge.net/canvas/plots/index.html\n\nClicking on one of the plots will take you to a comparator page where \nthe plot is rendered twice, once with the canvas package and once with \nthe png(type='cairo') function.\n\nThe implementation is almost complete, however there are some parts that \nneed work like font metrics and dotted/dashed lines. If anyone is \ninterested in helping flesh out the remaining bits, I'd be much obliged.\n\nBest,\n\nJeff",
-      "body_snippet": "Hi,\n\ncanvas is a new R package implementing a graphics device that emits \njavascript code conforming to the HTML 5 CanvasRenderingContext2D \ninterface. Available on CRAN soon, but you can get it here ",
-      "thread_id": "thread-b30fe138cce1",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
       "id": "msg-5f204f459ec0",
       "message_id": "<979ffa270904051121r3679bc8em778f653775e9dc72@mail.gmail.com>",
       "from_name": "David Hajage",
@@ -48,38 +32,6 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl>",
       "thread_id": "thread-5f204f459ec0",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-5f204f459ec0",
-      "message_id": "<979ffa270904051121r3679bc8em778f653775e9dc72@mail.gmail.com>",
-      "from_name": "David Hajage",
-      "from_email_hash": "e17f580a7f46b5d49ca87778a86df8e5d7609acb7fb34e442e7c2bd8905ac385",
-      "date": "2009-04-05T20:21:33+02:00",
-      "subject": "[R-pkgs] New package: ascii version 0.1",
-      "subject_clean": "New package: ascii version 0.1",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment-0001.pl>",
-      "thread_id": "thread-5f204f459ec0",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-5f542249b497",
-      "message_id": "<f8e6ff050904151646g40db1550i6ca7ac7587b90992@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2009-04-15T18:46:19-05:00",
-      "subject": "[R-pkgs] [ANN] plyr version 0.1.7",
-      "subject_clean": "[ANN] plyr version 0.1.7",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, you\nmight want to:\n\n  * fit the same model to subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n  * eliminate for-loops in your code\n\nIt's already possible to do this with built-in functions (like split\nand the apply functions), but plyr just makes it all a bit easier\nwith:\n\n  * absolutely consistent names, arguments and outputs\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n\nSome considerable effort has been put into making plyr fast and memory\nefficient, and in most cases it is faster than the built-in functions.\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.  You can ask\nquestions about plyr (and data-manipulation in general) on the plyr\nmailing list.  Sign up at http://groups.google.com/group/manipulatr\n\n\nplyr 0.1.7 (2008-04-15) ---------------------------------------------------\n\nEnsure that rbind.fill preserves attributes.\n\nplyr 0.1.6 (2008-04-15) ---------------------------------------------------\n\nImprovements:\n\n* all ply functions deal more elegantly when given function names: can\nsupply a vector of function names, and name is used as label in output\n* failwith and each now work with function names as well as functions\n(i.e. \"nrow\" instead of nrow)\n* each now accepts a list of functions or a vector of function names\n* l*ply will use list names where present\n* if .inform is TRUE, error messages will give you information about\nwhere errors within your data - hopefully this will make problems\neasier to track down\n\nSpeed-ups\n\n* massive speed ups for splitting large arrays\n* fixed typo that was causing a 50% speed penalty for d*ply\n* rewritten rbind.fill is considerably (> 4x) faster for many data frames\n* colwise about twice as fast\n\nBug fixes:\n\n* daply: now works when the data frame is split by multiple variables\n* aaply: now works with vectors\n* ddply: first variable now varies slowest as you'd expect\n\n\nplyr 0.1.5 (2008-02-23) ---------------------------------------------------\n\n* colwise now accepts a quoted list as its second argument.  This\nallows you to specify the names of columns to work on: colwise(mean,\n.(lat, long))\n* d_ply and a_ply now correctly pass ... to the function\n\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, ",
-      "thread_id": "thread-5f542249b497",
       "thread_depth": 0,
       "month": "2009-04"
     },
@@ -116,38 +68,6 @@
       "month": "2009-04"
     },
     {
-      "id": "msg-85af6b9445ce",
-      "message_id": "<d4588dec0904160753v337fdcd6p587ee7f809a228eb@mail.gmail.com>",
-      "from_name": "Jay Emerson",
-      "from_email_hash": "d3ffa0338d064ec9ac7a773f5c07c8f79ca790af532172525a48eea9a520d9ae",
-      "date": "2009-04-16T10:53:10-04:00",
-      "subject": "[R-pkgs] Major bigmemory revision released.",
-      "subject_clean": "Major bigmemory revision released.",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment-0001.pl>",
-      "thread_id": "thread-85af6b9445ce",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-dc6aca5cd947",
-      "message_id": "<554cd6450904161444r3a4f74a4wb8f3dd07e47eec10@mail.gmail.com>",
-      "from_name": "Etienne Laliberté",
-      "from_email_hash": "00e279a650bf2cb3cba9358398c4d14a2ff31fa3dafc8b5bb893f9bee376c52c",
-      "date": "2009-04-17T09:44:57+12:00",
-      "subject": "[R-pkgs] FD: R package to measure functional diversity indices",
-      "subject_clean": "FD: R package to measure functional diversity indices",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nThe FD package is intended for ecologists interested in functional\ndiversity (FD). It measures different functional diversity indices\nfrom multiple traits (any type of traits). The first version of FD\n(1.0-0) is now available on CRAN:\n\nhttp://cran.r-project.org/web/packages/FD/\n\nThe main functions of FD are:\n\ndbFD: Compute different multidimensional FD indices\n\ngowdis: Gower dissimilarity, including options for variable weights,\nasymetric binary variables, and implementing Podani's (1999) extension\nto ordinal variables\n\nfdisp: Functional dispersion\n\nfunctcomp: Functional composition (community-weighted means ot trait\nvalues, or CWM)\n\nI hope that FD will be useful to you. Feedback would be appreciated.\n\nSincerely,\n\nEtienne Lalibert?\n================================\nRural Ecology Research Group\nSchool of Forestry\nUniversity of Canterbury\nPrivate Bag 4800\nChristchurch 8140, New Zealand\nPhone: +64 3 366 7001 ext. 8365\nFax: +64 3 364 2124\nwww.elaliberte.info",
-      "body_snippet": "Dear useRs,\n\nThe FD package is intended for ecologists interested in functional\ndiversity (FD). It measures different functional diversity indices\nfrom multiple traits (any type of traits). The first ",
-      "thread_id": "thread-dc6aca5cd947",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
       "id": "msg-dc6aca5cd947",
       "message_id": "<554cd6450904161444r3a4f74a4wb8f3dd07e47eec10@mail.gmail.com>",
       "from_name": "Etienne Laliberté",
@@ -176,38 +96,6 @@
       "body_plain": "igraph is a package for graphs/networks. It has a C core and\nuses a simple and fast graph representation allowing millions\nof vertices and edges.\n\nLINKS\n\nRelease notes for the 0.5.2 version:\nhttp://igraph.sourceforge.net/relnotes-0.5.2.html\n\nRelease notes for the 0.5.1 version:\nhttp://igraph.sourceforge.net/relnotes-0.5.1.html\n\nComplete list of changes:\nhttp://igraph.sourceforge.net/news.html\n\nThe igraph homepage: http://igraph.sf.net\n\nSince there was no announcement about igraph version 0.5.1\non R-pkgs, here is a list of the more important new things of both\nversion 0.5.2 and 0.5.1.\n\nNEW FEATURES IN THE 0.5.2 VERSION\n\n- We have some support for bipartite (two-mode) graphs now.\n  See ?graph.incidence, ?get.incidence for dealing with\n  incidence matrices, ?graph.bipartite for a way to\n  create bipartite graphs, ?bipartite.projection for\n  creating one-mode projections. See ?is.bipartite for\n  deciding whether a graph has a bipartite structure.\n- A new simple and fast community finding algorithm called 'label\n  propagation' was added, see ?label.propagation.community\n  for details.\n- The DrL layout generator now supports 3d layouts.\n- A limited Tcl/Tk igraph GUI was added, please note that it supports\n  only a small fraction of the igraph functions. You can start it with\n  the tkigraph() function.\n- Johnson's algorithm is now supported by the shortest path finder.\n  It allows negative edge weight, but not negative cycles.\n  See ?shortest.paths.\n- The graph.knn function was added to calculate the average\n  nearest neighbor degree. It supports edge weights as well.\n- Curved edges are now supported by plot() and tkplot(), see\n  ?igraph.plotting for the details.\n- Many bugs and memory leaks were fixed, see the News section on the\n  igraph homepage for details.\n\nNEW FEATURES IN THE 0.5.1 VERSION\n\n- DrL layout generator was added, see ?layout.drl.\n- Uniform sampling of graphs with a given degree sequence,\n  see ?degree.sequence.game.\n- Conversion functions to/from graphNEL objects (graph package),\n  see ?igraph.to.graphNEL and ?igraph.from.graphNEL.\n- Conversion functions to/from sparse matrices (Matrix package),\n  see ?graph.adjacency and the 'sparse' argument of\n  ?get.adjacency.\n- Creating graphs from adjacency lists, see ?graph.adjlist.\n- The function graph.data.frame has an argument called\n  'vertices' and this makes it very easy to create graphs\n  with a lot of vertex and edge metadata.\n- The Dijkstra and Bellman-Ford shortest path algorithms\n  were added, see ?shortest.paths.\n- The function is.mutual() was added, this tests edge reciprocity.\n- The plot() function now supports plottings different vertex\n  shapes. See ?igraph.plotting and ?igraph.vertex.shapes for\n  detaills.\n- Many bugs were fixed, see the News section on the igraph\n  homepage for details.\n\nPACKAGE DESCRIPTION:\n\nigraph is originally a C library for graphs, but has interfaces\nto high level languages like R, Python and Ruby. The R package\ncontains BOTH the C library and its R interface.\n\nigraph supports:\n\n- graph generators, creating both regular structures like trees,\n  lattices, etc. and various random graphs.\n- a rich set of functions calculating structural properties of\n  graphs, like vertex centrality (degree, betweenness, closeness,\n  page rank, eigenvector centrality, Burt's constraints, etc.),\n  shortest paths, dyad and triad census, network motifs, girth,\n  K-core decomposition, etc.\n- attributes can be associated with the vertices/edges of the graph,\n  or the graph itself. The attributes can be arbitrary R objects.\n- graph visualization using regular R devices, interactive visualization\n  using Tcl/Tk, 3D visualization using RGL.\n- graph layout generators, the standard Kamada-Kawai and\n  Fruchterman-Reingold algorithms are included, plus many more.\n- Functions for graph and subgraph isomorphism, the BLISS and the VF2\n  algorithms are included.\n- Functions for maximal network flows, minimal cuts, vertex and\n  edge connectivity.\n- igraph can read and write many popular file formats used for\n  storing graph data: GraphML, Pajek, GML and others.\n- igraph contains implementations of many community structure\n  detection algorithms proposed recently.\n\n-- \nGabor Csardi <Gabor.Csardi at unil.ch>     UNIL DGM",
       "body_snippet": "igraph is a package for graphs/networks. It has a C core and\nuses a simple and fast graph representation allowing millions\nof vertices and edges.\n\nLINKS\n\nRelease notes for the 0.5.2 version:\nhttp://ig",
       "thread_id": "thread-27885c797628",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-27885c797628",
-      "message_id": "<d70c15d40904180218v3d452e29j34b89f109889a8fd@mail.gmail.com>",
-      "from_name": "Gábor Csárdi",
-      "from_email_hash": "be1b1aa2bf940edb4d90301c038c97e98b84ed5c8724f0d46a3b2ee263683539",
-      "date": "2009-04-18T11:18:44+02:00",
-      "subject": "[R-pkgs] igraph 0.5.2",
-      "subject_clean": "igraph 0.5.2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "igraph is a package for graphs/networks. It has a C core and\nuses a simple and fast graph representation allowing millions\nof vertices and edges.\n\nLINKS\n\nRelease notes for the 0.5.2 version:\nhttp://igraph.sourceforge.net/relnotes-0.5.2.html\n\nRelease notes for the 0.5.1 version:\nhttp://igraph.sourceforge.net/relnotes-0.5.1.html\n\nComplete list of changes:\nhttp://igraph.sourceforge.net/news.html\n\nThe igraph homepage: http://igraph.sf.net\n\nSince there was no announcement about igraph version 0.5.1\non R-pkgs, here is a list of the more important new things of both\nversion 0.5.2 and 0.5.1.\n\nNEW FEATURES IN THE 0.5.2 VERSION\n\n- We have some support for bipartite (two-mode) graphs now.\n  See ?graph.incidence, ?get.incidence for dealing with\n  incidence matrices, ?graph.bipartite for a way to\n  create bipartite graphs, ?bipartite.projection for\n  creating one-mode projections. See ?is.bipartite for\n  deciding whether a graph has a bipartite structure.\n- A new simple and fast community finding algorithm called 'label\n  propagation' was added, see ?label.propagation.community\n  for details.\n- The DrL layout generator now supports 3d layouts.\n- A limited Tcl/Tk igraph GUI was added, please note that it supports\n  only a small fraction of the igraph functions. You can start it with\n  the tkigraph() function.\n- Johnson's algorithm is now supported by the shortest path finder.\n  It allows negative edge weight, but not negative cycles.\n  See ?shortest.paths.\n- The graph.knn function was added to calculate the average\n  nearest neighbor degree. It supports edge weights as well.\n- Curved edges are now supported by plot() and tkplot(), see\n  ?igraph.plotting for the details.\n- Many bugs and memory leaks were fixed, see the News section on the\n  igraph homepage for details.\n\nNEW FEATURES IN THE 0.5.1 VERSION\n\n- DrL layout generator was added, see ?layout.drl.\n- Uniform sampling of graphs with a given degree sequence,\n  see ?degree.sequence.game.\n- Conversion functions to/from graphNEL objects (graph package),\n  see ?igraph.to.graphNEL and ?igraph.from.graphNEL.\n- Conversion functions to/from sparse matrices (Matrix package),\n  see ?graph.adjacency and the 'sparse' argument of\n  ?get.adjacency.\n- Creating graphs from adjacency lists, see ?graph.adjlist.\n- The function graph.data.frame has an argument called\n  'vertices' and this makes it very easy to create graphs\n  with a lot of vertex and edge metadata.\n- The Dijkstra and Bellman-Ford shortest path algorithms\n  were added, see ?shortest.paths.\n- The function is.mutual() was added, this tests edge reciprocity.\n- The plot() function now supports plottings different vertex\n  shapes. See ?igraph.plotting and ?igraph.vertex.shapes for\n  detaills.\n- Many bugs were fixed, see the News section on the igraph\n  homepage for details.\n\nPACKAGE DESCRIPTION:\n\nigraph is originally a C library for graphs, but has interfaces\nto high level languages like R, Python and Ruby. The R package\ncontains BOTH the C library and its R interface.\n\nigraph supports:\n\n- graph generators, creating both regular structures like trees,\n  lattices, etc. and various random graphs.\n- a rich set of functions calculating structural properties of\n  graphs, like vertex centrality (degree, betweenness, closeness,\n  page rank, eigenvector centrality, Burt's constraints, etc.),\n  shortest paths, dyad and triad census, network motifs, girth,\n  K-core decomposition, etc.\n- attributes can be associated with the vertices/edges of the graph,\n  or the graph itself. The attributes can be arbitrary R objects.\n- graph visualization using regular R devices, interactive visualization\n  using Tcl/Tk, 3D visualization using RGL.\n- graph layout generators, the standard Kamada-Kawai and\n  Fruchterman-Reingold algorithms are included, plus many more.\n- Functions for graph and subgraph isomorphism, the BLISS and the VF2\n  algorithms are included.\n- Functions for maximal network flows, minimal cuts, vertex and\n  edge connectivity.\n- igraph can read and write many popular file formats used for\n  storing graph data: GraphML, Pajek, GML and others.\n- igraph contains implementations of many community structure\n  detection algorithms proposed recently.\n\n-- \nGabor Csardi <Gabor.Csardi at unil.ch>     UNIL DGM",
-      "body_snippet": "igraph is a package for graphs/networks. It has a C core and\nuses a simple and fast graph representation allowing millions\nof vertices and edges.\n\nLINKS\n\nRelease notes for the 0.5.2 version:\nhttp://ig",
-      "thread_id": "thread-27885c797628",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-85b228ed21ea",
-      "message_id": "<49EC2B17.7030107@dbmail.com>",
-      "from_name": "Romain Francois",
-      "from_email_hash": "59e39d3ea92dfd200ae594261b1588764b0f983f395cce1fc006e71efaf2c073",
-      "date": "2009-04-20T09:58:15+02:00",
-      "subject": "[R-pkgs] xterm256",
-      "subject_clean": "xterm256",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "This is the first release of the xterm256 package.\n\nxterm256 is a small package that takes advantage of the 256 color mode \nof xterm, enabling use of foreground and background colors in the R \nconsole. The package exposes one function \"style\" that takes three \narguments:\n- (x) the text to style\n- (bg) the background color to use\n- (fg) the foreground color to use\n\nThe color might be specified as an number between 0 and 255 (see \nhttp://frexx.de/xterm-256-notes/), as classic hex notation ( \"#ff0000\" ) \nor as an R color (\"red\"). Note that the color specified is mapped to the \nclosest color of the 256 colors using an euclidean distance in the RGB \nspace.\n\nThe package is maintained at r-forge as part of the highlight project: \nhttp://r-forge.r-project.org/projects/highlight/ and welcomes requests \n(feature requests, bug requests, ...) though its tracker : \nhttp://r-forge.r-project.org/tracker/?group_id=384\n\nSee also this post on my blog: \nhttp://romainfrancois.blog.free.fr/index.php?post/2009/04/18/Colorful-terminal%3A-the-R-package-%22xterm256%22 \n\n\nRomain\n\n-- \nRomain Francois\nIndependent R Consultant\n+33(0) 6 28 91 30 30\nhttp://romainfrancois.blog.free.fr",
-      "body_snippet": "This is the first release of the xterm256 package.\n\nxterm256 is a small package that takes advantage of the 256 color mode \nof xterm, enabling use of foreground and background colors in the R \nconsole",
-      "thread_id": "thread-85b228ed21ea",
       "thread_depth": 0,
       "month": "2009-04"
     },
@@ -244,22 +132,6 @@
       "month": "2009-04"
     },
     {
-      "id": "msg-12671ef05c44",
-      "message_id": "<8a7634360904200930r4843c717t8e6df327369494cd@mail.gmail.com>",
-      "from_name": "Jonathan Weeks",
-      "from_email_hash": "741207f274327552800448df7d5110299c4b2836047e681449f3e4bf63bd4c4b",
-      "date": "2009-04-20T10:30:47-06:00",
-      "subject": "[R-pkgs] Major revision of plink for separate calibration IRT-based linking",
-      "subject_clean": "Major revision of plink for separate calibration IRT-based linking",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment-0001.pl>",
-      "thread_id": "thread-12671ef05c44",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
       "id": "msg-30613fb26a94",
       "message_id": "<49ECF1CE.5080006@web.de>",
       "from_name": "Peter Ruckdeschel",
@@ -272,38 +144,6 @@
       "body_plain": "-------------------------------------------------------------------------------\nNew versions released for the distr family of package\n-------------------------------------------------------------------------------\n\nWe would like to announce the availability on CRAN (with possibly a\nminor delay until on every mirror) of new versions of our packages \nin the \"distr\"-family (version 2.1), i.e.; \"distr\", \"distrEx\", \n\"distrSim\", \"distrTEst\", \"distrDoc\",  \"distrMod\", and \"distrTeach\", \nas well as our supporting package \"startupmsg\" and the new\n(supporting) package \"SweaveListingUtils\".\n\n[all of them require R >= 2.6.0]\n\nFor details, please also refer to the NEWS file of the corresponding\npackage, accessible via NEWS(\"<pkgname>\") [after require(<pkgname>)]\n\n-------------------------------------------------------------------------------\nDevel versions on r-forge\n-------------------------------------------------------------------------------\n\nDevelopment of these packages is done under r-forge project /distr/:\n\nhttp://r-forge.r-project.org/projects/distr/\nhttp://distr.r-forge.r-project.org/\n\nIf you find this project interesting and would like to collaborate, you are\nwarmly welcome. You may find more information on how to collaborate under\n\nhttp://distr.r-forge.r-project.org/HOWTO-collaborate.txt\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\n\nBelow you find a list of major improvements in version 2.1:\n\n%---------------------------------------------\nSweaveListingUtils:\n%---------------------------------------------\n  + a new package devoted to joining markup provided by TeX package\n      'listings' with Sweave;\n  + also covers inclusion of code sniplets from an url\n     (notably r-forge) in order to ease consistency\n      of documentation with code that is being developed.\n    see also ?lstinputSourceFromRForge and\n    vignette \"ExampleSweaveListingUtils\"\n%---------------------------------------------\ndistr\n%---------------------------------------------\n  COMPOUND DISTRIBUTIONS\n  + new support of compound distributions,\n      see ?CompoundDistribution, class?CompoundDistribution\n  ENHANCED ACCURACY\n  + by log scale\n       Following Peter Dalgaard's hint\n         https://stat.ethz.ch/pipermail/r-help/2008-September/174295.html\n       we use the log.p argument to be able to simulate accurately from\n       the far out tails.\n  + refined collapsing technique for DiscreteDistribution\n  + more frequent use of FFT for convolution by better treatment of\n      joint lattices\n  AUTOMATIC GENERATION OF IMAGE DISTRIBUTION\n  + slot r is now /much/ faster / slimmer for results of *,/,^\n  + slot d for results of *,/, exp() now is correct at 0 by extrapolation\n  COMFORT METHODS\n  + getLow/getUp methods  (for \"reasonable\" endpoints for distributions with\n       possibly unbounded support) for\n       *DiscreteDistribution,\n       *AbscontDistribution,\n       *UnivarLebDecDistribution,\n       *UnivarMixingDistribution\n  + q.r, p.l (methods for right continuous quantile function\n              and left continuous cdf) for\n       * DiscreteDistribution\n       * AbscontDistribution (takes care of constancy regions in p)\n       * UnivarLebDecDistribution\n       * UnivarMixingDistribution\n  + prob methods (returning vectors/matrices of probabilities of support)\n       + DiscreteDistribution\n       + UnivarLebDecDistribution (conditional/unconditional)\n  + p.ac, d.ac, p.discrete, d.discrete methods (for\nUnivarLebDecDistribution)\n        now conditional/unconditional\n%---------------------------------------------\ndistrEx\n%---------------------------------------------\n  FUNCTIONALS\n  + expectation gains explicit arguments to set accuracy locally;\n  + median and IQR are now defined for UnivariateCondDistribution\n  + cross-checked (and bug-fixed) particular functionals against\n      general implementations\n  DISTRIBUTIONS\n  + gains distribution Pareto; ported from pkg actuar by Nataliya Horbenko\n  DISTANCES:\n  + introduces distances asymmetric total variation distances\n     *OAsymTotalVarDist\n     *AsymTotalVarDist\n  + TotalVarDist and HellingerDist gain extra arguments\n      to better control the integration range and exactness\n%---------------------------------------------\ndistrMod\n%---------------------------------------------\n  MODELS\n  + added mad.const to guarantee for mad-consistency in location scale model\n      for general central distribution\n  TRAFO\n  + fixed some inconsistencies with slot trafo:\n      now when trafo is a function, we try to keep it as a function under\n      moves of the parametric model\n  + trafo.fct() to access the \"function\" aspect of trafo\n  + trafoEst() transforming an estimator of class \"estimate\"\n      consistently  by a \"trafo\" function\n  ESTIMATION\n  + enhanced Covariance calculation for CvMDist-MDE\n  + modified output in show - Confint-class\n%---------------------------------------------\nPLOTTING\n%---------------------------------------------\n+ enhanced automatic plotting range selection for distributions\n+ ylim can now be matrix-valued giving panel-individual values\n+ selection of panels to be plot by argument to.draw.arg\n+ L2ParamFamily plot in distrMod is now as flexible as plot-methods in\n    pkg distr\n+ more flexible panel axis annotation\n%---------------------------------------------\nDOCUMENTATION:\n%---------------------------------------------\n+ updated large vignette \"distr\" in distrDoc\n+ updated vignette \"ExampleSweaveListingUtils\" in pkg SweaveListingUtils\n+ updated vignette \"How to generate new distributions in packages distr,\n    distrEx\" in pkg distr\n+ new section \"Extension packages\" in package-help to package distr,\n     see ?distr\n%---------------------------------------------\nLICENSE:\n%---------------------------------------------\n- switched over to LGPL-3",
       "body_snippet": "-------------------------------------------------------------------------------\nNew versions released for the distr family of package\n------------------------------------------------------------------",
       "thread_id": "thread-30613fb26a94",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-30613fb26a94",
-      "message_id": "<49ECF1CE.5080006@web.de>",
-      "from_name": "Peter Ruckdeschel",
-      "from_email_hash": "15c6f9343c822bf97e545f3b88ce26db88e52254a70ea881177e6946cb00cf60",
-      "date": "2009-04-21T00:06:06+02:00",
-      "subject": "[R-pkgs] New versions for the distr-family of packages",
-      "subject_clean": "New versions for the distr-family of packages",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "-------------------------------------------------------------------------------\nNew versions released for the distr family of package\n-------------------------------------------------------------------------------\n\nWe would like to announce the availability on CRAN (with possibly a\nminor delay until on every mirror) of new versions of our packages \nin the \"distr\"-family (version 2.1), i.e.; \"distr\", \"distrEx\", \n\"distrSim\", \"distrTEst\", \"distrDoc\",  \"distrMod\", and \"distrTeach\", \nas well as our supporting package \"startupmsg\" and the new\n(supporting) package \"SweaveListingUtils\".\n\n[all of them require R >= 2.6.0]\n\nFor details, please also refer to the NEWS file of the corresponding\npackage, accessible via NEWS(\"<pkgname>\") [after require(<pkgname>)]\n\n-------------------------------------------------------------------------------\nDevel versions on r-forge\n-------------------------------------------------------------------------------\n\nDevelopment of these packages is done under r-forge project /distr/:\n\nhttp://r-forge.r-project.org/projects/distr/\nhttp://distr.r-forge.r-project.org/\n\nIf you find this project interesting and would like to collaborate, you are\nwarmly welcome. You may find more information on how to collaborate under\n\nhttp://distr.r-forge.r-project.org/HOWTO-collaborate.txt\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\n\nBelow you find a list of major improvements in version 2.1:\n\n%---------------------------------------------\nSweaveListingUtils:\n%---------------------------------------------\n  + a new package devoted to joining markup provided by TeX package\n      'listings' with Sweave;\n  + also covers inclusion of code sniplets from an url\n     (notably r-forge) in order to ease consistency\n      of documentation with code that is being developed.\n    see also ?lstinputSourceFromRForge and\n    vignette \"ExampleSweaveListingUtils\"\n%---------------------------------------------\ndistr\n%---------------------------------------------\n  COMPOUND DISTRIBUTIONS\n  + new support of compound distributions,\n      see ?CompoundDistribution, class?CompoundDistribution\n  ENHANCED ACCURACY\n  + by log scale\n       Following Peter Dalgaard's hint\n         https://stat.ethz.ch/pipermail/r-help/2008-September/174295.html\n       we use the log.p argument to be able to simulate accurately from\n       the far out tails.\n  + refined collapsing technique for DiscreteDistribution\n  + more frequent use of FFT for convolution by better treatment of\n      joint lattices\n  AUTOMATIC GENERATION OF IMAGE DISTRIBUTION\n  + slot r is now /much/ faster / slimmer for results of *,/,^\n  + slot d for results of *,/, exp() now is correct at 0 by extrapolation\n  COMFORT METHODS\n  + getLow/getUp methods  (for \"reasonable\" endpoints for distributions with\n       possibly unbounded support) for\n       *DiscreteDistribution,\n       *AbscontDistribution,\n       *UnivarLebDecDistribution,\n       *UnivarMixingDistribution\n  + q.r, p.l (methods for right continuous quantile function\n              and left continuous cdf) for\n       * DiscreteDistribution\n       * AbscontDistribution (takes care of constancy regions in p)\n       * UnivarLebDecDistribution\n       * UnivarMixingDistribution\n  + prob methods (returning vectors/matrices of probabilities of support)\n       + DiscreteDistribution\n       + UnivarLebDecDistribution (conditional/unconditional)\n  + p.ac, d.ac, p.discrete, d.discrete methods (for\nUnivarLebDecDistribution)\n        now conditional/unconditional\n%---------------------------------------------\ndistrEx\n%---------------------------------------------\n  FUNCTIONALS\n  + expectation gains explicit arguments to set accuracy locally;\n  + median and IQR are now defined for UnivariateCondDistribution\n  + cross-checked (and bug-fixed) particular functionals against\n      general implementations\n  DISTRIBUTIONS\n  + gains distribution Pareto; ported from pkg actuar by Nataliya Horbenko\n  DISTANCES:\n  + introduces distances asymmetric total variation distances\n     *OAsymTotalVarDist\n     *AsymTotalVarDist\n  + TotalVarDist and HellingerDist gain extra arguments\n      to better control the integration range and exactness\n%---------------------------------------------\ndistrMod\n%---------------------------------------------\n  MODELS\n  + added mad.const to guarantee for mad-consistency in location scale model\n      for general central distribution\n  TRAFO\n  + fixed some inconsistencies with slot trafo:\n      now when trafo is a function, we try to keep it as a function under\n      moves of the parametric model\n  + trafo.fct() to access the \"function\" aspect of trafo\n  + trafoEst() transforming an estimator of class \"estimate\"\n      consistently  by a \"trafo\" function\n  ESTIMATION\n  + enhanced Covariance calculation for CvMDist-MDE\n  + modified output in show - Confint-class\n%---------------------------------------------\nPLOTTING\n%---------------------------------------------\n+ enhanced automatic plotting range selection for distributions\n+ ylim can now be matrix-valued giving panel-individual values\n+ selection of panels to be plot by argument to.draw.arg\n+ L2ParamFamily plot in distrMod is now as flexible as plot-methods in\n    pkg distr\n+ more flexible panel axis annotation\n%---------------------------------------------\nDOCUMENTATION:\n%---------------------------------------------\n+ updated large vignette \"distr\" in distrDoc\n+ updated vignette \"ExampleSweaveListingUtils\" in pkg SweaveListingUtils\n+ updated vignette \"How to generate new distributions in packages distr,\n    distrEx\" in pkg distr\n+ new section \"Extension packages\" in package-help to package distr,\n     see ?distr\n%---------------------------------------------\nLICENSE:\n%---------------------------------------------\n- switched over to LGPL-3",
-      "body_snippet": "-------------------------------------------------------------------------------\nNew versions released for the distr family of package\n------------------------------------------------------------------",
-      "thread_id": "thread-30613fb26a94",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-090de06e6762",
-      "message_id": "<f8e6ff050904201821r22a30dcfp6d9dbbd521cdfcd0@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2009-04-20T20:21:33-05:00",
-      "subject": "[R-pkgs] [ANN] ggplot2 version 0.8.3",
-      "subject_clean": "[ANN] ggplot2 version 0.8.3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nTo install or update, run:\ninstall.packages(c(\"ggplot2\", \"plyr\"))\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8.3  (2008-04-20)\n----------------------------------------\n\nNew features\n\n* alpha: new aesthetic, with scale alpha.  Where a geom has both fill\nand colour, alpha affects the fill.\n* annotate: new annotate function to make it easier to add annotations to plots\n* facet_grid now takes strip label function from parameter labeller,\nnot theme setting\n* facet_grid: gains as.table argument to control direction of horizontal facets\n* fortify: full set of methods for turning data from the sp package\ninto data frames that can be plotted with ggplot2\n* geom_errorbarh: new geom for horizontal error bars\n* labels_parsed and labels_bquote functions to make it easier to\ndisplay expressions on facet labels\n* scale_manual now supports breaks and limits\n* subset: experimental new feature.  Layers now have a subset\nargument, which takes subsets formatted like .(var1 < 5, var2 == 3)\netc.\n* xlim and ylim now work recognise Date and POSIXct classes to create\ndate and date_time scales respectively\n\nDealing with missing values\n\n* facet_wrap: add drop argument to control whether or not panels for\nnon-existent combinations of facetting variables should be dropped or\nnot.  Defaults to TRUE\n* scale_discrete: empty factor levels will be preserved, unless drop = TRUE\n\nBug fixes\n\n* added presidents dataset from book to package\n* American spelling of color accepted in as geom parameter, and all\ncolour scales have alias spelled color (e.g. scale_color_hue)\n* facet_wrap: contents guaranteed to be clipped to panel\n* facet_wrap: corrected labelling when facetting by multiple variables\n(thank to Charlotte Wickham for a clear test case)\n* geom_histogram now works with negative weights (provided position =\n\"identity\").  This is useful for creating back to back histograms.\n* geom_step: improve legend\n* geom_text: better legend\n* geom_vline, geom_hline, geom_abline: should work in yet more situations\n* resolution: fixed bug in computation of resolution that lead to\n(e.g.) incorrect boxplot widths when there was only a single x value\nin a group.\n* position_stack: fixed bug in detection of overlap for very large bins\n* scale_discrete: factor levels no longer mistakenly reordered\n* scale_hue: now spans full range of hue if it less than 360 degrees\n* scale_hue: rotated default hue range by 15 degrees to avoid\nunfortunate red-green contrast in two colour case\n* show now works with ggplot objects\n* stat_sum: fixed bug which resulted in dropped aesthetics\n* stat_summary: now warns when dropping records with missing values\n* stat_summary: should be a little faster\n* stat_summary: correctly passes ... arguments on fun.data\n* theme_bw: corrected justification of axis.text.y\n* trans: bug fixes to logistic transformation\n* order aesthetic should work again\n\n-- \nhttp://had.co.nz/\n\n\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
-      "thread_id": "thread-090de06e6762",
       "thread_depth": 0,
       "month": "2009-04"
     },
@@ -340,22 +180,6 @@
       "month": "2009-04"
     },
     {
-      "id": "msg-47f9d40ada33",
-      "message_id": "<011e01c9c34b$1d9c5d00$9f62120a@pc.istat.it>",
-      "from_name": "Diego Zardetto",
-      "from_email_hash": "e640a29ca9975a9a6a7a2bf8323f4a3f6512a96c6eaa95b6ba01c3091093a1d2",
-      "date": "2009-04-22T15:06:14+02:00",
-      "subject": "[R-pkgs] EVER_1.1",
-      "subject_clean": "EVER_1.1",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment-0001.pl>",
-      "thread_id": "thread-47f9d40ada33",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
       "id": "msg-c067074cb245",
       "message_id": "<49EF2605.4040701@unige.ch>",
       "from_name": "Alexis Gabadinho",
@@ -368,38 +192,6 @@
       "body_plain": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.2. Its primary aim is the analysis of biographical \nlongitudinal data in the social sciences, such as data describing \ncareers or family trajectories. Most of its features apply however also \nto non temporal data such as text or DNA sequences for instance. These are\n\n   * Handling of longitudinal data and conversion between various \nsequence formats\n   * Plotting sequences (density plot, frequency plot, index plot and more)\n   * Centro-type and heterogeneity measure of a set of sequences\n   * Individual longitudinal characteristics of sequences (length, time \nin each state, longitudinal entropy, turbulence and more)\n   * Sequence transversal characteristics by age point (transversal \nstate distribution, transversal entropy, modal state)\n   * Other aggregated characteristics (transition rates, average \nduration in each state, sequence frequency)\n   * Dissimilarities between pairs of sequences using several metric \n(Optimal matching, longest common prefix, longest common postfix, \nlongest common subsequence)\n   * ANOVA-like analysis of sequences and tree structured ANOVA from \ndissimilarities\n   * Extracting frequent event subsequences\n   * Identifying most discriminating event subsequences\n\nMore information about TraMineR can be found  here:  \nhttp://mephisto.unige.ch/traminer/\n\nCheers,\nThe TraMineR team.",
       "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.2. Its primary aim",
       "thread_id": "thread-c067074cb245",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-c067074cb245",
-      "message_id": "<49EF2605.4040701@unige.ch>",
-      "from_name": "Alexis Gabadinho",
-      "from_email_hash": "f266eb5dc564422b73c163c3575ea632a6b7c79c4b5126673755776c8b963b20",
-      "date": "2009-04-22T16:13:25+02:00",
-      "subject": "[R-pkgs] Sequence analysis with TraMineR 1.2",
-      "subject_clean": "Sequence analysis with TraMineR 1.2",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.2. Its primary aim is the analysis of biographical \nlongitudinal data in the social sciences, such as data describing \ncareers or family trajectories. Most of its features apply however also \nto non temporal data such as text or DNA sequences for instance. These are\n\n   * Handling of longitudinal data and conversion between various \nsequence formats\n   * Plotting sequences (density plot, frequency plot, index plot and more)\n   * Centro-type and heterogeneity measure of a set of sequences\n   * Individual longitudinal characteristics of sequences (length, time \nin each state, longitudinal entropy, turbulence and more)\n   * Sequence transversal characteristics by age point (transversal \nstate distribution, transversal entropy, modal state)\n   * Other aggregated characteristics (transition rates, average \nduration in each state, sequence frequency)\n   * Dissimilarities between pairs of sequences using several metric \n(Optimal matching, longest common prefix, longest common postfix, \nlongest common subsequence)\n   * ANOVA-like analysis of sequences and tree structured ANOVA from \ndissimilarities\n   * Extracting frequent event subsequences\n   * Identifying most discriminating event subsequences\n\nMore information about TraMineR can be found  here:  \nhttp://mephisto.unige.ch/traminer/\n\nCheers,\nThe TraMineR team.",
-      "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.2. Its primary aim",
-      "thread_id": "thread-c067074cb245",
-      "thread_depth": 0,
-      "month": "2009-04"
-    },
-    {
-      "id": "msg-34dec6b48840",
-      "message_id": "<49F24C42.1070905@asu.edu>",
-      "from_name": "Jeffrey Dick",
-      "from_email_hash": "d313ecceb6249601b075296b8b93bc3e60365e71b9a1474d432d85fc94fbb60e",
-      "date": "2009-04-24T16:33:22-07:00",
-      "subject": "[R-pkgs] New package: CHNOSZ",
-      "subject_clean": "New package: CHNOSZ",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nA new package, CHNOSZ (version 0.8), is available on CRAN.\n\nCHNOSZ is a package for thermodynamic calculations and analysis. \nFunctions are available for calculating the standard Gibbs energies and \nother thermodynamic properties, and chemical affinities, of reactions \nbetween species contained in the thermodynamic database. The database \nincludes standard thermodynamic properties and equations of state \nparameters for a variety of minerals and inorganic and organic aqueous \nspecies. The relative abundances of species in equilibrium can be drawn \non activity diagrams as a function of temperature, pressure and/or \nchemical activities of basis species.\n\nThe documentation includes many examples taken from the literature, as \nwell as calculations of the metastability relationships in systems of \nproteins. The protein examples were developed to explore the chemical \nfeatures of thermophilic adaptation, subcellular localization, proteomic \nstress response, and microbial diversity. Calculation of the standard \nGibbs energies of proteins is based on a published group additivity \nalgorithm and is further supported in this package by the inclusion of \ndata files for the amino acid compositions of selected proteins and of \nproteins in yeast and E. coli.\n\nA paper describing some applications of the package can be found in \nGeochemical Transactions:\n\nhttp://www.geochemicaltransactions.com/content/9/1/10\n\nThe project website highlights many of the example calculations. There \nis also an Rpad script available for download that presents basic \nfunctionality of the program in a browser interface. The website is \nlocated at:\n\nhttp://www.chnosz.net\n\nThis release offers major enhancements over previous versions available \non the project website. Chemical affinities of formation reactions can \nbe calculated as a function of more than two variables, parallel \nprocessing of some computations is optionally carried out using the \nmclapply function of the multicore package, amino acid compositions of \nproteins can be read from FASTA files, protein stress response and \nrichness calculations were added to the examples, and a mass transfer \nalgorithm for reaction path modeling has been introduced.\n\nFeedback about the package is appreciated.\n\nSincerely,\n\nJeff Dick\n\n-- \nJeffrey M. Dick\nNSF Postdoctoral Fellow\nSchool of Earth and Space Exploration\nArizona State University\nTempe, AZ 85287-1404",
-      "body_snippet": "Dear R users,\n\nA new package, CHNOSZ (version 0.8), is available on CRAN.\n\nCHNOSZ is a package for thermodynamic calculations and analysis. \nFunctions are available for calculating the standard Gibbs ",
-      "thread_id": "thread-34dec6b48840",
       "thread_depth": 0,
       "month": "2009-04"
     },
@@ -433,17 +225,6 @@
       "root_message_id": "msg-b30fe138cce1"
     },
     {
-      "id": "thread-b30fe138cce1",
-      "subject": "New R graphics package targeting HTML 5 canvas element",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Horner"
-      ],
-      "started": "2009-04-03T08:46:32-05:00",
-      "last_reply": "2009-04-03T08:46:32-05:00",
-      "root_message_id": "msg-b30fe138cce1"
-    },
-    {
       "id": "thread-5f204f459ec0",
       "subject": "New package: ascii version 0.1",
       "message_count": 1,
@@ -453,28 +234,6 @@
       "started": "2009-04-05T20:21:33+02:00",
       "last_reply": "2009-04-05T20:21:33+02:00",
       "root_message_id": "msg-5f204f459ec0"
-    },
-    {
-      "id": "thread-5f204f459ec0",
-      "subject": "New package: ascii version 0.1",
-      "message_count": 1,
-      "participants": [
-        "David Hajage"
-      ],
-      "started": "2009-04-05T20:21:33+02:00",
-      "last_reply": "2009-04-05T20:21:33+02:00",
-      "root_message_id": "msg-5f204f459ec0"
-    },
-    {
-      "id": "thread-5f542249b497",
-      "subject": "[ANN] plyr version 0.1.7",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2009-04-15T18:46:19-05:00",
-      "last_reply": "2009-04-15T18:46:19-05:00",
-      "root_message_id": "msg-5f542249b497"
     },
     {
       "id": "thread-5f542249b497",
@@ -499,17 +258,6 @@
       "root_message_id": "msg-85af6b9445ce"
     },
     {
-      "id": "thread-85af6b9445ce",
-      "subject": "Major bigmemory revision released.",
-      "message_count": 1,
-      "participants": [
-        "Jay Emerson"
-      ],
-      "started": "2009-04-16T10:53:10-04:00",
-      "last_reply": "2009-04-16T10:53:10-04:00",
-      "root_message_id": "msg-85af6b9445ce"
-    },
-    {
       "id": "thread-dc6aca5cd947",
       "subject": "FD: R package to measure functional diversity indices",
       "message_count": 1,
@@ -519,28 +267,6 @@
       "started": "2009-04-17T09:44:57+12:00",
       "last_reply": "2009-04-17T09:44:57+12:00",
       "root_message_id": "msg-dc6aca5cd947"
-    },
-    {
-      "id": "thread-dc6aca5cd947",
-      "subject": "FD: R package to measure functional diversity indices",
-      "message_count": 1,
-      "participants": [
-        "Etienne Laliberté"
-      ],
-      "started": "2009-04-17T09:44:57+12:00",
-      "last_reply": "2009-04-17T09:44:57+12:00",
-      "root_message_id": "msg-dc6aca5cd947"
-    },
-    {
-      "id": "thread-27885c797628",
-      "subject": "igraph 0.5.2",
-      "message_count": 1,
-      "participants": [
-        "Gábor Csárdi"
-      ],
-      "started": "2009-04-18T11:18:44+02:00",
-      "last_reply": "2009-04-18T11:18:44+02:00",
-      "root_message_id": "msg-27885c797628"
     },
     {
       "id": "thread-27885c797628",
@@ -565,17 +291,6 @@
       "root_message_id": "msg-85b228ed21ea"
     },
     {
-      "id": "thread-85b228ed21ea",
-      "subject": "xterm256",
-      "message_count": 1,
-      "participants": [
-        "Romain Francois"
-      ],
-      "started": "2009-04-20T09:58:15+02:00",
-      "last_reply": "2009-04-20T09:58:15+02:00",
-      "root_message_id": "msg-85b228ed21ea"
-    },
-    {
       "id": "thread-12671ef05c44",
       "subject": "Major revision of plink for separate calibration IRT-based linking",
       "message_count": 1,
@@ -585,28 +300,6 @@
       "started": "2009-04-20T10:30:47-06:00",
       "last_reply": "2009-04-20T10:30:47-06:00",
       "root_message_id": "msg-12671ef05c44"
-    },
-    {
-      "id": "thread-12671ef05c44",
-      "subject": "Major revision of plink for separate calibration IRT-based linking",
-      "message_count": 1,
-      "participants": [
-        "Jonathan Weeks"
-      ],
-      "started": "2009-04-20T10:30:47-06:00",
-      "last_reply": "2009-04-20T10:30:47-06:00",
-      "root_message_id": "msg-12671ef05c44"
-    },
-    {
-      "id": "thread-090de06e6762",
-      "subject": "[ANN] ggplot2 version 0.8.3",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2009-04-20T20:21:33-05:00",
-      "last_reply": "2009-04-20T20:21:33-05:00",
-      "root_message_id": "msg-090de06e6762"
     },
     {
       "id": "thread-090de06e6762",
@@ -631,28 +324,6 @@
       "root_message_id": "msg-30613fb26a94"
     },
     {
-      "id": "thread-30613fb26a94",
-      "subject": "New versions for the distr-family of packages",
-      "message_count": 1,
-      "participants": [
-        "Peter Ruckdeschel"
-      ],
-      "started": "2009-04-21T00:06:06+02:00",
-      "last_reply": "2009-04-21T00:06:06+02:00",
-      "root_message_id": "msg-30613fb26a94"
-    },
-    {
-      "id": "thread-47f9d40ada33",
-      "subject": "EVER_1.1",
-      "message_count": 1,
-      "participants": [
-        "Diego Zardetto"
-      ],
-      "started": "2009-04-22T15:06:14+02:00",
-      "last_reply": "2009-04-22T15:06:14+02:00",
-      "root_message_id": "msg-47f9d40ada33"
-    },
-    {
       "id": "thread-47f9d40ada33",
       "subject": "EVER_1.1",
       "message_count": 1,
@@ -673,28 +344,6 @@
       "started": "2009-04-22T16:13:25+02:00",
       "last_reply": "2009-04-22T16:13:25+02:00",
       "root_message_id": "msg-c067074cb245"
-    },
-    {
-      "id": "thread-c067074cb245",
-      "subject": "Sequence analysis with TraMineR 1.2",
-      "message_count": 1,
-      "participants": [
-        "Alexis Gabadinho"
-      ],
-      "started": "2009-04-22T16:13:25+02:00",
-      "last_reply": "2009-04-22T16:13:25+02:00",
-      "root_message_id": "msg-c067074cb245"
-    },
-    {
-      "id": "thread-34dec6b48840",
-      "subject": "New package: CHNOSZ",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Dick"
-      ],
-      "started": "2009-04-24T16:33:22-07:00",
-      "last_reply": "2009-04-24T16:33:22-07:00",
-      "root_message_id": "msg-34dec6b48840"
     },
     {
       "id": "thread-34dec6b48840",

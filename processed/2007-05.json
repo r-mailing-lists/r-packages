@@ -20,22 +20,6 @@
       "month": "2007-05"
     },
     {
-      "id": "msg-dc759531abdc",
-      "message_id": "<38c08c270705030627p5016722s6ccd1a85093eddf1@mail.gmail.com>",
-      "from_name": "K. B. Udaya",
-      "from_email_hash": "11d883d67136e919455cdbda90ca3981a4821093cfd33d97af3a23e74968cbc7",
-      "date": "2007-05-03T09:27:11-04:00",
-      "subject": "[R-pkgs] randomSurvivalForest 2.1.0 now available",
-      "subject_clean": "randomSurvivalForest 2.1.0 now available",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs:\n\nRelease 2.1.0 of the randomSurvivalForest package is now available.\n--------------------------------------------------------------------------------------------------\nCHANGES TO RELEASE 2.1.0\n\nRelease 2.1.0 represents a minor upgrade of the product, and will not affect\nmost users of the prior version of the product.  Key changes are as follows:\n\no R 2.5.0 compliance issues and necessitated modifications.\n\no Modification of PMML representation of RSF forest output.  The RSF custom\nextension has been moved from the DataDictionary node to a new\nMiningBuildTask node.  Note that forests produced with Release 2.0.0 will\nhave to be regenerated using Release 2.1.0.  We apologize for the\ninconvenience.\n\no Fast processing of data involving large numbers of predictors (as in\nmany genomic examples) by using the option big.data=TRUE.  This\noption bypasses the huge overhead needed by R in creating design\nmatrices and parsing formula.  However, users should be aware of\nsome side effects.  See the RSF help file for more details.  Thanks\nto Steven (Xi) Chen for pointing out the problem.\n\no Only the top 100 predictors are now printed to the terminal when\ncalling plot.error().  This deals with settings as above when one\nmight have thousands of predictors.\n\no Introduced a new wrapper \"find.interaction()\" for testing for\npairwise interactions between predictors.\n\n-------------------------------------------------------------------------------------\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
-      "body_snippet": "Dear useRs:\n\nRelease 2.1.0 of the randomSurvivalForest package is now available.\n--------------------------------------------------------------------------------------------------\nCHANGES TO RELEASE 2",
-      "thread_id": "thread-dc759531abdc",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
       "id": "msg-8a6c67a1324a",
       "message_id": "<971536df0705030914j2a74bcb4l44099ae1425d2ae3@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
@@ -48,38 +32,6 @@
       "body_plain": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be used for\ncomputer algebra, exact arithmetic, ASCII pretty printing\nand R to TeX output. R, yacas and Ryacas are all free\nsoftware packages distributed under the GPL version 2.\n\nRyacas is written in R. It uses a recursive decent\nR-to-yacas translator and an XML-based OpenMath yacas-to-R\ntranslator. yacas is run as a second process to which\nR communicates via a socket interface.\n\nThere are 8 different user level interfaces\n(yacas.character, yacas.expression, yacas.function,\nyacas.formula, Sym objects, Expr objects, yacmode and\nrunYacas).  Most users will primarily use Sym objects.\n\nNEW INSTALLATION FOR WINDOWS USERS\n\nA key change in moving to CRAN is that yacas.exe is no longer\npart of the Ryacas distribution so that Windows users must\nseparately install yacas 1.0.63. :(  Non-windows users always\nhad to separately install yacas.  To simplify this somewhat\nthe yacasInstall() R command will download and install yacas from\nwithin R on Windows:\n\n\t# Windows installation procedure\n\tinstall.packages(\"Ryacas\", dep = TRUE)\n\tlibrary(Ryacas)\n\tyacasInstall()\n\nFor non-windows users the installation procedure is the same as\nbefore; namely, install yacas and then install the Ryacas R package.\nyacasInstall is not available on non-Windows systems.  More\ninstallation information is available on the Ryacas home page.\n\nLINKS\n\nHome Page (Overview, News, Installation, Sample Session, Links, SVN)\nhttp://code.google.com/p/ryacas/\n\nNews (on source changes; not entirely same as home page news)\nhttp://ryacas.googlecode.com/svn/trunk/inst/NEWS\n\nVignette (includes many examples)\nhttp://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n\n\nSAMPLE SESSION\n(need fixed font email viewer to view correctly)\n\n> library(Ryacas)\n\n>\n> # algebra\n>\n> library(Ryacas)\n> x <- Sym('x')\n> (x+1) * (x-1)\nexpression((x + 1) * (x - 1))\n> Simplify(\"%\")\nexpression(x^2 - 1)\n> PrettyForm(\"%\")\n 2\nx  - 1\n\n>\n> # calculus\n>\n> Integrate(x+tan(x), x)\nexpression(x^2/2 - log(cos(x)))\n\n>\n> # exact arithmetic\n>\n> yacas('12/24')\nexpression(1/2)\n\n>\n> # ASCII pretty printing\n>\n> exp(-x^2)/(cos(x)+exp(x))\nexpression(exp(-x^2)/(cos(x) + exp(x)))\n> PrettyForm(\"%\")\n     /  /  2 \\ \\\n  Exp\\ -\\ x  / /\n-------------------\nCos( x ) + Exp( x )\n\n>\n> # matrix - yacas matrices are row-wise\n>\n\n> List(List(1,2),List(x,6))\nexpression(list(list(1, 2), list(x, 6)))\n> PrettyForm(\"%\")\n/              \\\n| ( 1 ) ( 2 )  |\n|              |\n| ( x ) ( 6 )  |\n\\              /\n\n>\n> # output TeX\n>\n> k <- Sym('k')\n> yacas(TeXForm((x+1)^2 + k^3), retclass = 'unquote')\n$\\left( x + 1\\right)  ^{2} + k ^{3}$\n\n>\n> detach()\n>\n\nyacas was developed by Ayal Pinkus and other contributors.\n\nRyacas was developed by Rob Goedman, Gabor Grothendieck,\nS?ren H?jsgaard and Ayal Pinkus.   Contact Rob for Mac\nissues and Gabor for all other issues.",
       "body_snippet": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be ",
       "thread_id": "thread-8a6c67a1324a",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-8a6c67a1324a",
-      "message_id": "<971536df0705030914j2a74bcb4l44099ae1425d2ae3@mail.gmail.com>",
-      "from_name": "Gabor Grothendieck",
-      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2007-05-03T12:14:51-04:00",
-      "subject": "[R-pkgs] Ryacas now on CRAN",
-      "subject_clean": "Ryacas now on CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be used for\ncomputer algebra, exact arithmetic, ASCII pretty printing\nand R to TeX output. R, yacas and Ryacas are all free\nsoftware packages distributed under the GPL version 2.\n\nRyacas is written in R. It uses a recursive decent\nR-to-yacas translator and an XML-based OpenMath yacas-to-R\ntranslator. yacas is run as a second process to which\nR communicates via a socket interface.\n\nThere are 8 different user level interfaces\n(yacas.character, yacas.expression, yacas.function,\nyacas.formula, Sym objects, Expr objects, yacmode and\nrunYacas).  Most users will primarily use Sym objects.\n\nNEW INSTALLATION FOR WINDOWS USERS\n\nA key change in moving to CRAN is that yacas.exe is no longer\npart of the Ryacas distribution so that Windows users must\nseparately install yacas 1.0.63. :(  Non-windows users always\nhad to separately install yacas.  To simplify this somewhat\nthe yacasInstall() R command will download and install yacas from\nwithin R on Windows:\n\n\t# Windows installation procedure\n\tinstall.packages(\"Ryacas\", dep = TRUE)\n\tlibrary(Ryacas)\n\tyacasInstall()\n\nFor non-windows users the installation procedure is the same as\nbefore; namely, install yacas and then install the Ryacas R package.\nyacasInstall is not available on non-Windows systems.  More\ninstallation information is available on the Ryacas home page.\n\nLINKS\n\nHome Page (Overview, News, Installation, Sample Session, Links, SVN)\nhttp://code.google.com/p/ryacas/\n\nNews (on source changes; not entirely same as home page news)\nhttp://ryacas.googlecode.com/svn/trunk/inst/NEWS\n\nVignette (includes many examples)\nhttp://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n\n\nSAMPLE SESSION\n(need fixed font email viewer to view correctly)\n\n> library(Ryacas)\n\n>\n> # algebra\n>\n> library(Ryacas)\n> x <- Sym('x')\n> (x+1) * (x-1)\nexpression((x + 1) * (x - 1))\n> Simplify(\"%\")\nexpression(x^2 - 1)\n> PrettyForm(\"%\")\n 2\nx  - 1\n\n>\n> # calculus\n>\n> Integrate(x+tan(x), x)\nexpression(x^2/2 - log(cos(x)))\n\n>\n> # exact arithmetic\n>\n> yacas('12/24')\nexpression(1/2)\n\n>\n> # ASCII pretty printing\n>\n> exp(-x^2)/(cos(x)+exp(x))\nexpression(exp(-x^2)/(cos(x) + exp(x)))\n> PrettyForm(\"%\")\n     /  /  2 \\ \\\n  Exp\\ -\\ x  / /\n-------------------\nCos( x ) + Exp( x )\n\n>\n> # matrix - yacas matrices are row-wise\n>\n\n> List(List(1,2),List(x,6))\nexpression(list(list(1, 2), list(x, 6)))\n> PrettyForm(\"%\")\n/              \\\n| ( 1 ) ( 2 )  |\n|              |\n| ( x ) ( 6 )  |\n\\              /\n\n>\n> # output TeX\n>\n> k <- Sym('k')\n> yacas(TeXForm((x+1)^2 + k^3), retclass = 'unquote')\n$\\left( x + 1\\right)  ^{2} + k ^{3}$\n\n>\n> detach()\n>\n\nyacas was developed by Ayal Pinkus and other contributors.\n\nRyacas was developed by Rob Goedman, Gabor Grothendieck,\nS?ren H?jsgaard and Ayal Pinkus.   Contact Rob for Mac\nissues and Gabor for all other issues.",
-      "body_snippet": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be ",
-      "thread_id": "thread-8a6c67a1324a",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-0f6fb57e20b2",
-      "message_id": "<463A9E70.5070401@acm.org>",
-      "from_name": "Tony Plate",
-      "from_email_hash": "270dbfad1bede22a8cb030fa728f9ba1cb2915f53915148ec2f12f8d2cfa93a9",
-      "date": "2007-05-03T20:46:08-06:00",
-      "subject": "[R-pkgs] new package: RSVGTipsDevice: create SVG plots with tooltips & hyperlinks",
-      "subject_clean": "new package: RSVGTipsDevice: create SVG plots with tooltips & hyperlinks",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "the DESCRIPTION file:\n\nPackage: RSVGTipsDevice\nVersion: 0.7.0\nDate:    04/30/2007\nTitle:   An R SVG graphics device with dynamic tips and hyperlinks\nAuthor:  Tony Plate <tplate at acm.org>, based on RSvgDevice by T Jake \nLuciani <jakeluciani at yahoo.com>\nMaintainer: Tony Plate <tplate at acm.org>\nDepends: R (>= 1.4)\nDescription: A graphics device for R that uses the w3.org xml standard\n             for Scalable Vector Graphics.  This version supports\n             tooltips with 1 to 3 lines, hyperlinks, and line styles.\nLicense: GPL version 2 or newer. http://www.gnu.org/copyleft/gpl.html",
-      "body_snippet": "the DESCRIPTION file:\n\nPackage: RSVGTipsDevice\nVersion: 0.7.0\nDate:    04/30/2007\nTitle:   An R SVG graphics device with dynamic tips and hyperlinks\nAuthor:  Tony Plate <tplate at acm.org>, based on R",
-      "thread_id": "thread-0f6fb57e20b2",
       "thread_depth": 0,
       "month": "2007-05"
     },
@@ -116,22 +68,6 @@
       "month": "2007-05"
     },
     {
-      "id": "msg-f04928984ad9",
-      "message_id": "<463DDC01.5030406@gmx.de>",
-      "from_name": "Andreas Wittmann",
-      "from_email_hash": "ad7b6f8b730545ac5e8d8380a9122c647849b632465d5a308af1204521ca39f7",
-      "date": "2007-05-06T15:45:37+02:00",
-      "subject": "[R-pkgs] New Package Reliability",
-      "subject_clean": "New Package Reliability",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R useRs,\n\nA new package 'Reliability' is now available on CRAN. It is mainly a set \nof functions functions for estimating parameters in software reliability \nmodels. Only infinite failure models are implemented so far. \n\nThis is the first version of the package.\n\nThe canonical reference is:\nJ.D. Musa, A. Iannino, and K. Okumoto. Software Reliability: \nMeasurement, Prediction, Application. McGraw-Hill, 1987.\n\nMichael R. Lyu. Handbook of Software Realibility Engineering. IEEE \nComputer Society Press, 1996.\nhttp://www.cse.cuhk.edu.hk/~lyu/book/reliability/\n\n\nSuggestions, bug reports and other comments are very welcome.\n\n\nenjoy and best regards\nAndreas",
-      "body_snippet": "Dear R useRs,\n\nA new package 'Reliability' is now available on CRAN. It is mainly a set \nof functions functions for estimating parameters in software reliability \nmodels. Only infinite failure models ",
-      "thread_id": "thread-f04928984ad9",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
       "id": "msg-7c3afd2f7012",
       "message_id": "<012401c7914e$7142d370$0540210a@www.domain>",
       "from_name": "Dimitris Rizopoulos",
@@ -144,38 +80,6 @@
       "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package `ltm' \n(i.e., ltm_0.8-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible framework for analyzing \ndichotomous and polytomous data under IRT, including the Rasch model, \nthe Two-Parameter Logistic model, Birnbaum's Three-Parameter model, \nthe Latent Trait model with up to two latent variables (allowing also \nfor nonlinear terms), and Samejima's Graded Response model. \nFurthermore, supporting functions for descriptive statistics, \ngoodness-of-fit, ability estimation and plotting are available.\n\nNew features include:\n\n  * The new functions person.fit() and item.fit() compute p-values for \nperson- and item-fit statistics for IRT models for dichotomous data. \nThe `simulate.p.value' argument enables the computation of p-values \nbased on a Monte Carlo procedure.\n\n  * The new function unidimTest() checks the unidimensionality \nassumption for dichotomous data IRT models, using a Modified Parallel \nAnalysis.\n\n  * The new function testEquatingData() prepares data-sets for test \nequating by common items. In particular, two types of common item \nequating are included: alternate form equating (where common and \nunique items are analyzed simultaneously) and across sample equating \n(where different sets of unique items are analyzed separately based on \npreviously calibrated anchor items).\n\n  * grm() now works with the available cases when incomplete data \n(i.e., in the presence of NAs) are analyzed.\n\n  * better algorithms, for Missing At Random missing data mechanisms, \nhave been written for grm(), ltm(), rasch() and tpm().\n\n  * a residuals() method has been added for `grm', `ltm', `rasch', and \n`tpm' objects that computes Pearson-type residuals.\n\n  * factor.scores() and fitted() methods for classes `grm', `ltm', \n`rasch', and `tpm' allow now for NAs in the `resp.patterns' argument, \nenabling thus the computation of ability estimates and fitted values \nfor incomplete response patterns.\n\n  * the fitted() method now allows also for the computation of \nmarginal and conditional (on the latent variable(s)) probabilities; \nthis feature is controlled by the new `type' argument.\n\n  * for more details and other news, check the CHANGES file that ships \nwith the package.\n\nMore information as well as .R files illustrating the capabilities of \nthe package can be found in the Rwiki page of `ltm' available at: \nhttp://wiki.r-project.org/rwiki/doku.php?id=packages:cran:ltm.\n\nFuture plans include the development of functions for fitting Bock's \nNominal Response model and the option for Differential Item \nFunctioning.\n\nI'd like also to thank all users of `ltm' for providing valuable \nfeedback, and welcome any additional feedback (questions, suggestions, \nbug-reports, etc.).\n\nBest,\nDimitris\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package `ltm' \n(i.e., ltm_0.8-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible fra",
       "thread_id": "thread-7c3afd2f7012",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-7c3afd2f7012",
-      "message_id": "<012401c7914e$7142d370$0540210a@www.domain>",
-      "from_name": "Dimitris Rizopoulos",
-      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
-      "date": "2007-05-08T10:54:09+02:00",
-      "subject": "[R-pkgs] package ltm -- version 0.8-0",
-      "subject_clean": "package ltm -- version 0.8-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package `ltm' \n(i.e., ltm_0.8-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible framework for analyzing \ndichotomous and polytomous data under IRT, including the Rasch model, \nthe Two-Parameter Logistic model, Birnbaum's Three-Parameter model, \nthe Latent Trait model with up to two latent variables (allowing also \nfor nonlinear terms), and Samejima's Graded Response model. \nFurthermore, supporting functions for descriptive statistics, \ngoodness-of-fit, ability estimation and plotting are available.\n\nNew features include:\n\n  * The new functions person.fit() and item.fit() compute p-values for \nperson- and item-fit statistics for IRT models for dichotomous data. \nThe `simulate.p.value' argument enables the computation of p-values \nbased on a Monte Carlo procedure.\n\n  * The new function unidimTest() checks the unidimensionality \nassumption for dichotomous data IRT models, using a Modified Parallel \nAnalysis.\n\n  * The new function testEquatingData() prepares data-sets for test \nequating by common items. In particular, two types of common item \nequating are included: alternate form equating (where common and \nunique items are analyzed simultaneously) and across sample equating \n(where different sets of unique items are analyzed separately based on \npreviously calibrated anchor items).\n\n  * grm() now works with the available cases when incomplete data \n(i.e., in the presence of NAs) are analyzed.\n\n  * better algorithms, for Missing At Random missing data mechanisms, \nhave been written for grm(), ltm(), rasch() and tpm().\n\n  * a residuals() method has been added for `grm', `ltm', `rasch', and \n`tpm' objects that computes Pearson-type residuals.\n\n  * factor.scores() and fitted() methods for classes `grm', `ltm', \n`rasch', and `tpm' allow now for NAs in the `resp.patterns' argument, \nenabling thus the computation of ability estimates and fitted values \nfor incomplete response patterns.\n\n  * the fitted() method now allows also for the computation of \nmarginal and conditional (on the latent variable(s)) probabilities; \nthis feature is controlled by the new `type' argument.\n\n  * for more details and other news, check the CHANGES file that ships \nwith the package.\n\nMore information as well as .R files illustrating the capabilities of \nthe package can be found in the Rwiki page of `ltm' available at: \nhttp://wiki.r-project.org/rwiki/doku.php?id=packages:cran:ltm.\n\nFuture plans include the development of functions for fitting Bock's \nNominal Response model and the option for Differential Item \nFunctioning.\n\nI'd like also to thank all users of `ltm' for providing valuable \nfeedback, and welcome any additional feedback (questions, suggestions, \nbug-reports, etc.).\n\nBest,\nDimitris\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
-      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package `ltm' \n(i.e., ltm_0.8-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible fra",
-      "thread_id": "thread-7c3afd2f7012",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-d7b2e2184eef",
-      "message_id": "<46405669.6000502@uni-jena.de>",
-      "from_name": "Ivailo Partchev",
-      "from_email_hash": "6d4f9866320ea77458f4b8bcb0aad6979ae498125f5d246f0ef6e6a85300bdce",
-      "date": "2007-05-08T12:52:25+02:00",
-      "subject": "[R-pkgs] irtoys",
-      "subject_clean": "irtoys",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have just submitted irtoys_0.1.0, a package potentially useful for \nthose working with IRT models. It can fit the 1PL, 2PL, and 3PL models \nthrough a simple and unified syntax, using either the R package ltm, \nBrad Hanson's ICL program, or the commercially available BILOG-MG. The \npurpose is basically to facilitate teaching, and especially comparisons \nacross models and/or programs. Various graphs, item fit statistics, \nscaling methods, ability estimation, simulation facilities etc. are also \nincluded. Please notice that most options in estimating an IRT model are \nkept to the typical default values, and only a small, common subset of \nthe ltm, ICL, and BILOG syntax is supported. Comments are very welcome.\n\nIvailo Partchev\nInstitute of Psychology\nUniversity of Jena\nGermany",
-      "body_snippet": "I have just submitted irtoys_0.1.0, a package potentially useful for \nthose working with IRT models. It can fit the 1PL, 2PL, and 3PL models \nthrough a simple and unified syntax, using either the R pa",
-      "thread_id": "thread-d7b2e2184eef",
       "thread_depth": 0,
       "month": "2007-05"
     },
@@ -212,22 +116,6 @@
       "month": "2007-05"
     },
     {
-      "id": "msg-68051ba7ecbd",
-      "message_id": "<2323A6D37908A847A7C32F1E3662C80EBA0161@dc1ex01.air.org>",
-      "from_name": "Doran, Harold",
-      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
-      "date": "2007-05-08T11:59:22-04:00",
-      "subject": "[R-pkgs] MiscPsycho Package 1.0",
-      "subject_clean": "MiscPsycho Package 1.0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment-0001.pl>",
-      "thread_id": "thread-68051ba7ecbd",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
       "id": "msg-9cf8c29d6994",
       "message_id": "<000401c79357$9afe66b0$6401a8c0@DDV3JY61>",
       "from_name": "Stephen Milborrow",
@@ -240,38 +128,6 @@
       "body_plain": "The \"earth\" package is now available on CRAN.\n\nEarth builds models using Friedman's MARS.\n\nEarth's principal advantages over the existing function mda::mars are that \nit is much faster and provides plotting and printing methods.  The general \npurpose model plotting function \"plotmo\" may also be useful to people who \nare not interested in earth itself.\n\nExample:\n\n> a <- earth(Volume ~ ., data = trees)\n> summary(a, digits = 2)\n\nCall:\nearth(formula = Volume ~ ., data = trees)\n\nExpression:\n  23\n  +  5.7 * pmax(0,  Girth - 13)\n  -  2.9 * pmax(0,  13 - Girth)\n  + 0.72 * pmax(0, Height - 76)\n\nNumber of cases: 31\nSelected 4 of 5 terms, and 2 of 2 predictors\nNumber of terms at each degree of interaction: 1 3 (additive model)\nGCV: 11     RSS: 213     GRSq: 0.96     RSq: 0.97\n\n\nRegards,\nStephen Milborrow",
       "body_snippet": "The \"earth\" package is now available on CRAN.\n\nEarth builds models using Friedman's MARS.\n\nEarth's principal advantages over the existing function mda::mars are that \nit is much faster and provides pl",
       "thread_id": "thread-9cf8c29d6994",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-9cf8c29d6994",
-      "message_id": "<000401c79357$9afe66b0$6401a8c0@DDV3JY61>",
-      "from_name": "Stephen Milborrow",
-      "from_email_hash": "9f96ad3911dddacc791bbc2474b31460fd5976d9a4803118a437b76a76315aca",
-      "date": "2007-05-10T16:03:25-07:00",
-      "subject": "[R-pkgs] New package \"earth\"",
-      "subject_clean": "New package \"earth\"",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The \"earth\" package is now available on CRAN.\n\nEarth builds models using Friedman's MARS.\n\nEarth's principal advantages over the existing function mda::mars are that \nit is much faster and provides plotting and printing methods.  The general \npurpose model plotting function \"plotmo\" may also be useful to people who \nare not interested in earth itself.\n\nExample:\n\n> a <- earth(Volume ~ ., data = trees)\n> summary(a, digits = 2)\n\nCall:\nearth(formula = Volume ~ ., data = trees)\n\nExpression:\n  23\n  +  5.7 * pmax(0,  Girth - 13)\n  -  2.9 * pmax(0,  13 - Girth)\n  + 0.72 * pmax(0, Height - 76)\n\nNumber of cases: 31\nSelected 4 of 5 terms, and 2 of 2 predictors\nNumber of terms at each degree of interaction: 1 3 (additive model)\nGCV: 11     RSS: 213     GRSq: 0.96     RSq: 0.97\n\n\nRegards,\nStephen Milborrow",
-      "body_snippet": "The \"earth\" package is now available on CRAN.\n\nEarth builds models using Friedman's MARS.\n\nEarth's principal advantages over the existing function mda::mars are that \nit is much faster and provides pl",
-      "thread_id": "thread-9cf8c29d6994",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-c521d2ad3120",
-      "message_id": "<464AA878.7010906@uta.fi>",
-      "from_name": "Klaus Nordhausen",
-      "from_email_hash": "8c85244bfbf8bbf1b930252971688ca2c3f0100654ac6840777f5ba5c7dd8e44",
-      "date": "2007-05-16T09:45:12+03:00",
-      "subject": "[R-pkgs] new packages 'ICS' and 'ICSNP'",
-      "subject_clean": "new packages 'ICS' and 'ICSNP'",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R useRs,\n\nThe new contributed packages 'ICS' and 'ICSNP' are available on CRAN.\n\nDescriptions:\n\nThe 'ICS' package implements the 2 scatter matrix transformation to \nobtain an invariant coordinate system or independent components, \ndepending on the underlying assumptions. The result of the \ntransformation is an object of the S4 class ics which is provided by \nthis package. Besides generic functions to create and work with ics \nobjects the package contains also some scatter matrices and two tests \nfor multinormality.\n\n\nThe 'ICSNP' package contains tools for nonparametric multivariate \nanalysis, including the estimation of location and shape as well as some \ntests for location and independence. Shape matrices from this package \ncan be used as one of the scatter matrices needed in the package ICS \nwhereas the tests of this package can be used for testing in the \nframework of invariant coordinates or independent components obtained \nfrom the package ICS. The parametric Hotelling?s T test serves as a \nreference for the nonparametric location tests.\n\nSuggestions, bug reports and other comments are very welcome.\n\nBest wishes,\n\nKlaus, Seija, Hannu and Dave\n\n-- \nKlaus Nordhausen\nResearcher\nTampere School of Public Health\nFIN-33014 University of Tampere\n\nphone:\t+358 3 3551 7086\nfax:\t+358 3 3551 6057\ne-mail:\tKlaus.Nordhausen at uta.fi",
-      "body_snippet": "Dear R useRs,\n\nThe new contributed packages 'ICS' and 'ICSNP' are available on CRAN.\n\nDescriptions:\n\nThe 'ICS' package implements the 2 scatter matrix transformation to \nobtain an invariant coordinate",
-      "thread_id": "thread-c521d2ad3120",
       "thread_depth": 0,
       "month": "2007-05"
     },
@@ -308,22 +164,6 @@
       "month": "2007-05"
     },
     {
-      "id": "msg-f428c27f3130",
-      "message_id": "<464BAC20.6000901@stanford.edu>",
-      "from_name": "Trevor Hastie",
-      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
-      "date": "2007-05-16T18:13:04-07:00",
-      "subject": "[R-pkgs] New version 0.9-7 of lars package",
-      "subject_clean": "New version 0.9-7 of lars package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I uploaded a new version of the lars package to CRAN,\nwhich incorporates some nontrivial changes.\n\n1) lars now has normalize and intercept options, both defaulted to TRUE,\nwhich means the variables are scaled to have unit euclidean norm, and\nan intercept is included in the model. Either or both can be set to FALSE.\n\n2) lars has an additional type = \"stepwise\" option;\n    now the list is type=c(\"lasso\", \"lar\", \"forward.stagewise\",\"stepwise\")\nThis was included because it is trivial to implement, and useful for \ncomparisons.\n\"Stepwise\" is a version of forward stepwise regression, where the \nvariable to\nenter is the one most correlated with the residuals. This is not \nnecessarily the\nsame as the forward stepwise implemented as part of step() in R, where the\nvariable entered is the one that, when included, reduces the RSS the most.\n\n3) a method for summary() has been included, which gives an anova-type \nsummary\nof the sequence of steps.\n\n4) The plot method for lars defaults to plotting coefficients against \nthe relative\nL1 norm of the coefficients. This was not done correctly in general for \ntype \"lar\"\nand \"forward.stagewise\", since the L1 norm does not change smoothly if\ncoefficients pass through zero. This has been fixed.\n\n5) A smalll number of of other changes have been made, some in response \nto email\nmessages from users.\n \nThanks to Yann-Ael Le Borgne for pointing out the problem in (4) and \nproposing\na solution, and to Lukas Meier for reporting some bugs. Please let me \nknow of any\nnew problems, or old ones not yet repaired.\n\nTrevor Hastie\n\n--------------------------------------------------------------------\n  Trevor Hastie                                  hastie at stanford.edu\n  Professor & Chair, Department of Statistics, Stanford University\n  Phone: (650) 725-2231 (Statistics)\t         Fax: (650) 725-8977\n\t (650) 498-5233 (Biostatistics)\t\t Fax: (650) 725-6951\n  URL: http://www-stat.stanford.edu/~hastie\n  address: room 104, Department of Statistics, Sequoia Hall\n\t          390 Serra Mall, Stanford University, CA 94305-4065",
-      "body_snippet": "I uploaded a new version of the lars package to CRAN,\nwhich incorporates some nontrivial changes.\n\n1) lars now has normalize and intercept options, both defaulted to TRUE,\nwhich means the variables ar",
-      "thread_id": "thread-f428c27f3130",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
       "id": "msg-a148409267d3",
       "message_id": "<40119c691173b4fae2adff6bfabfe98a@lyon.inserm.fr>",
       "from_name": "ken knoblauch",
@@ -336,38 +176,6 @@
       "body_plain": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' from several\n   different experimental designs, links for mafc to be\n   used with the binomial family in glm (and possibly\n   other contexts) and selfStart functions for estimating gamma values\n  for CRT (and possibley other RGB) screen calibration data.\n\nMLDS implements analyses for Maximum Likelihood Difference Scaling.\nDifference scaling is a method for scaling perceived super-threshold\ndifferences. The package contains functions that allow the user to fit\nthe resulting data by maximum likelihood and to test the internal \nvalidity\nof the estimated scale.   There are also example functions that might\nbe used to design and run a difference scaling experiment,\n\nAny suggestioins, criticisms, bug-reports, etc. are always welcome.\n\nBest,\n\nKen Knoblauch\n\n-- \nKen Knoblauch\nInserm U846\nInstitut Cellule Souche et Cerveau\nD?partement Neurosciences Int?gratives\n18 avenue du Doyen L?pine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.pizzerialesgemeaux.com/u846/",
       "body_snippet": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' ",
       "thread_id": "thread-a148409267d3",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-a148409267d3",
-      "message_id": "<40119c691173b4fae2adff6bfabfe98a@lyon.inserm.fr>",
-      "from_name": "ken knoblauch",
-      "from_email_hash": "cd1eec8a1ad6dd6ca45868d4d8bd582ed8e9931848426612a8bc1afdbbf20bb5",
-      "date": "2007-05-29T17:59:04+02:00",
-      "subject": "[R-pkgs] new packages psyphy and MLDS",
-      "subject_clean": "new packages psyphy and MLDS",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' from several\n   different experimental designs, links for mafc to be\n   used with the binomial family in glm (and possibly\n   other contexts) and selfStart functions for estimating gamma values\n  for CRT (and possibley other RGB) screen calibration data.\n\nMLDS implements analyses for Maximum Likelihood Difference Scaling.\nDifference scaling is a method for scaling perceived super-threshold\ndifferences. The package contains functions that allow the user to fit\nthe resulting data by maximum likelihood and to test the internal \nvalidity\nof the estimated scale.   There are also example functions that might\nbe used to design and run a difference scaling experiment,\n\nAny suggestioins, criticisms, bug-reports, etc. are always welcome.\n\nBest,\n\nKen Knoblauch\n\n-- \nKen Knoblauch\nInserm U846\nInstitut Cellule Souche et Cerveau\nD?partement Neurosciences Int?gratives\n18 avenue du Doyen L?pine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.pizzerialesgemeaux.com/u846/",
-      "body_snippet": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' ",
-      "thread_id": "thread-a148409267d3",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-824b1af4d37a",
-      "message_id": "<20070529181027.3fturouitnogg0gs@webmail4.kuleuven.be>",
-      "from_name": "Alejandro Jara Vallejos",
-      "from_email_hash": "0c751e8de93995559378342bcf4bb9196e267ab9d3ff3b00c34e44c7eddf5c35",
-      "date": "2007-05-29T18:10:27+02:00",
-      "subject": "[R-pkgs] DPpackage - New version",
-      "subject_clean": "DPpackage - New version",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear List:\n\nI have uploaded version 1.0-4 of DPpackage on CRAN. Since the first  \nversion (1.0-0), I have not communicated the improvements of the  \npackage. I'll use this email to summarize its current status.\n\nThe name of the package is motivated by the Dirichlet process.  \nHowever, DPpackage tries to be a general package for Bayesian  \nnonparametric and semi-parametric data analysis. So far, the package  \nincludes models based on Dirichlet processes, Dirichlet process  \nmixtures of normals, Polya trees, and Random Bernstein polynomials. A  \nlist of current functions is given next:\n\n1) Density estimation: DPdensity (using DPM of normals), PTdensity  \n(using Mixtures of Polya Trees), and BDPdensity (using  \nBernstein-Dirichlet prior). The first two functions allow uni- and  \nmulti-variate analysis.\n\n2) Nonparametric random effects distributions in mixed effects models:\n\n    2.1) DPlmm and DPMlmm, using a DP/MDP and DPM of normals prior,  \nrespectively, for the linear mixed effects model.\n\n    2.2) DPglmm and DPMglmm, using a DP/MDP and DPM of normals prior,  \nrespectively, for generalized linear mixed effects models,  \nrespectively. The sampling(link) considered by these functions are  \nbinomial(logit,probit), poisson(log) and gamma(log).\n\n    2.3) DPolmm and DPMolmm, using a DP/MDP and DPM of normals prior,  \nrespectively, for the probit-ordinal mixed effects models.\n\n    2.4) DPrasch and FPTrasch, using a DP/MDP and finite PT/MPT  \n(mixture of Polya Trees) prior for the Rasch model with binary  \nsampling distribution, respectively.\n\n    2.5) DPraschpoisson and FPTraschpoisson. The same as before (2.4)  \nbut with a Poisson sampling.\n\n    2.6) DPmeta and DPMmeta for the random (mixed) effects  \nmeta-analysis models, using a DP/MDP and DPM of normals prior,  \nrespectively.\n\n3) Binary regression with nonparametric link:\n\n    3.1) CSDPbinary, using Newton, Czado and Chappell (1996)'s  \ncentrally standardized DP prior.\n\n    3.2) DPbinary, using the regular DP prior for the inverse of the  \nlink function.\n\n    3.3) FPTbinary, using a finite PT prior for the inverse of the  \nlink function.\n\n\n4) AFT model for interval-censored data:\n\n    4.1) DPsurvint, using a MDP prior for the baseline distribution.\n\n5) ROC curve estimation:\n\n    5.1) DProc, using DPM of normals.\n\n6) Linear model with a nonparametric for the error distribution:\n\n    6.1) PTlm, using MPT.\n\n7) DP prior elicitation:\n\n    7.1) DPelicit, using the exact and approximated formulas for the  \nmean and variance of the number of clusters given the total mass  \nparameter and the number of subjects.\n\n\nTim Hanson and Fernando Quintana have made contributions to the  \ncurrent version. I would also like to thank George Karabatsos for his  \ninput to the current status of the package and Peter Mueller for  \nactively promoting the package.\n\nVarious other improvements have been motivated by questions asked by  \nmany people around the world. I would like to thank all of them too.\n\nI welcome anyone who sends comments, suggestions, remarks, and  \nparticularly those who find bugs or mistakes in any part of the  \npackage or its documentation. DPpackage is an open source program for  \nBayesian nonparametric developments. All contributions are welcome.\n\nBest regards,\n\nAlejandro.\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
-      "body_snippet": "Dear List:\n\nI have uploaded version 1.0-4 of DPpackage on CRAN. Since the first  \nversion (1.0-0), I have not communicated the improvements of the  \npackage. I'll use this email to summarize its curre",
-      "thread_id": "thread-824b1af4d37a",
       "thread_depth": 0,
       "month": "2007-05"
     },
@@ -404,22 +212,6 @@
       "month": "2007-05"
     },
     {
-      "id": "msg-9afaaad019c2",
-      "message_id": "<20070529204734.WEHY13710.tomts25-srv.bellnexxia.net@JohnDesktop8300>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2007-05-29T16:47:30-04:00",
-      "subject": "[R-pkgs] Rcmdr 1.3-0 and RcmdrPlugins.TeachingDemos",
-      "subject_clean": "Rcmdr 1.3-0 and RcmdrPlugins.TeachingDemos",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I'd like to announce a new version, 1.3-0, of the Rcmdr package. The Rcmdr\npackage provides a basic-statistics graphical user interface (GUI) to R. \n\nBeyond small changes and additions, this new version of the package makes\nprovision for \"plug-ins\" that permit extension of the Rcmdr GUI without\naltering and rebuilding the Rcmdr source package or modifying the installed\npackage. An R Commander plug-in is an ordinary R package that (1) provides\nextensions to the R Commander menus is a file named menus.txt located in the\npackage's etc directory; (2) provides call-back functions required by these\nmenus; and (3) in optional Log-Exceptions: and Models: fields in the\npackage's DESCRIPTION file, augments respectively the list of functions for\nwhich printed output is suppressed and the list of model objects recognized\nby the R Commander. The menus provided by a plug-in package are merged with\nthe standard Commander menus. \n\nPlug-in packages given in the R Commander plugins option (see ?Commander)\nare automatically loaded when the Commander starts up. Plug-in packages may\nalso be loaded via the Commander \"Tools -> Load Rcmdr plug-in(s)\" menu; a\nrestart of the Commander is required to install the new menus. Finally,\nloading a plug-in package when the Rcmdr is not loaded will load the Rcmdr\nand activate the plug-in. \n\nAn illustrative R Commander plug-in package, RcmdrPlugin.TeachingDemos\n(providing a GUI to some of Greg Snow's TeachingDemos package), is now\navailable on CRAN. (I suggest using this naming convention -- RcmdrPlugin.*\n-- so that plug-in packages will sort immediately below the Rcmdr package on\nCRAN. This assumes, of course, that other people will be interested in\ncreating Rcmdr plugins!)\n\nBecause this is a new feature of the Rcmdr, feedback and suggestions would\nbe appreciated.\n\nI'd like to acknowledge Richard Heiberger's suggestions for the design of\nthis plug-in facility.\n\nJohn\n\n--------------------------------\nJohn Fox, Professor\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
-      "body_snippet": "I'd like to announce a new version, 1.3-0, of the Rcmdr package. The Rcmdr\npackage provides a basic-statistics graphical user interface (GUI) to R. \n\nBeyond small changes and additions, this new versi",
-      "thread_id": "thread-9afaaad019c2",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
       "id": "msg-9a6c53b6a097",
       "message_id": "<20070530085555.CCV65389@po-d.temple.edu>",
       "from_name": "Richard M. Heiberger",
@@ -432,38 +224,6 @@
       "body_plain": "I posted a revised Rcmdr.HH_1.8-0 package on CRAN.\n\nThe Rcmdr.HH package adds additional menu items to the Rcmdr package by\nJohn Fox.  Our introductory course at Temple University includes several\ntopics that were not addressed in the Rcmdr.  This revision uses the new\nRcmdrPlugin technology that John announced a few days ago.\n\nRich",
       "body_snippet": "I posted a revised Rcmdr.HH_1.8-0 package on CRAN.\n\nThe Rcmdr.HH package adds additional menu items to the Rcmdr package by\nJohn Fox.  Our introductory course at Temple University includes several\ntop",
       "thread_id": "thread-9a6c53b6a097",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-9a6c53b6a097",
-      "message_id": "<20070530085555.CCV65389@po-d.temple.edu>",
-      "from_name": "Richard M. Heiberger",
-      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2007-05-30T08:55:55-04:00",
-      "subject": "[R-pkgs] Revised Rcmdr.HH package",
-      "subject_clean": "Revised Rcmdr.HH package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I posted a revised Rcmdr.HH_1.8-0 package on CRAN.\n\nThe Rcmdr.HH package adds additional menu items to the Rcmdr package by\nJohn Fox.  Our introductory course at Temple University includes several\ntopics that were not addressed in the Rcmdr.  This revision uses the new\nRcmdrPlugin technology that John announced a few days ago.\n\nRich",
-      "body_snippet": "I posted a revised Rcmdr.HH_1.8-0 package on CRAN.\n\nThe Rcmdr.HH package adds additional menu items to the Rcmdr package by\nJohn Fox.  Our introductory course at Temple University includes several\ntop",
-      "thread_id": "thread-9a6c53b6a097",
-      "thread_depth": 0,
-      "month": "2007-05"
-    },
-    {
-      "id": "msg-72909181d5d9",
-      "message_id": "<465E76AF.6080501@biomserv.univ-lyon1.fr>",
-      "from_name": "Clément Calenge",
-      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
-      "date": "2007-05-31T09:18:07+02:00",
-      "subject": "[R-pkgs] adehabitat version 1.6",
-      "subject_clean": "adehabitat version 1.6",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.6 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* The package has been reorganized into four parts (see\n?adehabitat-package for a description): (i) management of raster maps,\n(ii) habitat selection / ecological niche analysis, (iii) home range\nanalysis, and (iv) analysis of animals trajects. The package contains\nseveral demo files to allow an overview of these parts :\ndemo(rastermaps), demo(homerange), demo(managltraj),\ndemo(analysisltraj), demo(nichehs).\n\n* the package now contains a new function allowing the exploration of\nthe ecological niche, which generalizes several factor analyses (ENFA,\nMADIFA, ...) and is closely related to several methods (Mahalanobis\ndistances, selection ratios, etc.), named gnesfa() (see the examples of\nthe help page for the properties of this analysis).\n\n* The class ltraj now distinguishes two types of trajects: type I (time\nnot recorded, e.g. tracks of animals in the snow) and type II (time\nrecorded, e.g. GPS monitoring). Trajects of type II may either be\n\"regular\" (constant time lag between relocations) or not.\n\n* Numerous example datasets have been added to the package to illustrate\nthe analysis of animals trajects: 4 porpoises, 6 albatross, 1 hooded\nseal, 1 whale, 1 brown bear, two roe deer, two chamois, 4 ibex, 1\nmouflon, 3 wild boar\n\n* Many functions have been added to allow the management of animals\ntrajects within R: Some functions allow to handle the attributes or the\nstorage of the trajects  (typeII2typeI, typeI2typeII, sett0, cutltr,\nis.regular, is.sd, mindistkeep, offsetdate, set.limits), other allow to\nmanage missing values and test their random distribution in the traject\n(setNA, summaryNAltraj, plotNAltraj, runsNAltraj), other allow a\ngraphical exploration of the properties of the trajects (hist.ltraj,\nplot.ltraj, plotltr, sliwinltr).\n\n* Several functions now allow to test the independence of the\ndescriptive parameters in the trajects (indmove and wawotest for dx, dy\nand dist, testang.ltraj for rel.angle and abs.angle)\n\n* Several functions allow to simulate common models of trajects: the\ncorrelated random walk (simm.crw), the brownian motion (simm.brown), the\narithmetic brownian motion (simm.mba), the Ornstein Uhlenbeck process\n(simm.mou), the brownian bridge (simm.bb) and the Levy process (simm.levy).\n\n* The function explore.kasc() provides a Tk interface for the\nexploration of a multi-layer raster map of class \"kasc\"\n\n* A partitioning algorithm (still under research) is also available to\npartition a traject into segments with homogeneous properties (see the\nhelp page of modpartltraj)\n\n* The bugs in redisltraj and mcp.area have been corrected\n\nHappy testing,\n\n\nCl?ment CALENGE\n-- \nCl?ment CALENGE\nLaboratoire de Biom?trie et Biologie ?volutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France\nOffice national de la chasse et de la faune sauvage\n95, rue Pierre Flourens\n34000 Montpellier",
-      "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.6 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* The package has been reorganized into four parts (see\n?adehabitat-package ",
-      "thread_id": "thread-72909181d5d9",
       "thread_depth": 0,
       "month": "2007-05"
     },
@@ -497,17 +257,6 @@
       "root_message_id": "msg-dc759531abdc"
     },
     {
-      "id": "thread-dc759531abdc",
-      "subject": "randomSurvivalForest 2.1.0 now available",
-      "message_count": 1,
-      "participants": [
-        "K. B. Udaya"
-      ],
-      "started": "2007-05-03T09:27:11-04:00",
-      "last_reply": "2007-05-03T09:27:11-04:00",
-      "root_message_id": "msg-dc759531abdc"
-    },
-    {
       "id": "thread-8a6c67a1324a",
       "subject": "Ryacas now on CRAN",
       "message_count": 1,
@@ -517,28 +266,6 @@
       "started": "2007-05-03T12:14:51-04:00",
       "last_reply": "2007-05-03T12:14:51-04:00",
       "root_message_id": "msg-8a6c67a1324a"
-    },
-    {
-      "id": "thread-8a6c67a1324a",
-      "subject": "Ryacas now on CRAN",
-      "message_count": 1,
-      "participants": [
-        "Gabor Grothendieck"
-      ],
-      "started": "2007-05-03T12:14:51-04:00",
-      "last_reply": "2007-05-03T12:14:51-04:00",
-      "root_message_id": "msg-8a6c67a1324a"
-    },
-    {
-      "id": "thread-0f6fb57e20b2",
-      "subject": "new package: RSVGTipsDevice: create SVG plots with tooltips & hyperlinks",
-      "message_count": 1,
-      "participants": [
-        "Tony Plate"
-      ],
-      "started": "2007-05-03T20:46:08-06:00",
-      "last_reply": "2007-05-03T20:46:08-06:00",
-      "root_message_id": "msg-0f6fb57e20b2"
     },
     {
       "id": "thread-0f6fb57e20b2",
@@ -563,17 +290,6 @@
       "root_message_id": "msg-f04928984ad9"
     },
     {
-      "id": "thread-f04928984ad9",
-      "subject": "New Package Reliability",
-      "message_count": 1,
-      "participants": [
-        "Andreas Wittmann"
-      ],
-      "started": "2007-05-06T15:45:37+02:00",
-      "last_reply": "2007-05-06T15:45:37+02:00",
-      "root_message_id": "msg-f04928984ad9"
-    },
-    {
       "id": "thread-7c3afd2f7012",
       "subject": "package ltm -- version 0.8-0",
       "message_count": 1,
@@ -583,28 +299,6 @@
       "started": "2007-05-08T10:54:09+02:00",
       "last_reply": "2007-05-08T10:54:09+02:00",
       "root_message_id": "msg-7c3afd2f7012"
-    },
-    {
-      "id": "thread-7c3afd2f7012",
-      "subject": "package ltm -- version 0.8-0",
-      "message_count": 1,
-      "participants": [
-        "Dimitris Rizopoulos"
-      ],
-      "started": "2007-05-08T10:54:09+02:00",
-      "last_reply": "2007-05-08T10:54:09+02:00",
-      "root_message_id": "msg-7c3afd2f7012"
-    },
-    {
-      "id": "thread-68051ba7ecbd",
-      "subject": "MiscPsycho Package 1.0",
-      "message_count": 1,
-      "participants": [
-        "Doran, Harold"
-      ],
-      "started": "2007-05-08T11:59:22-04:00",
-      "last_reply": "2007-05-08T11:59:22-04:00",
-      "root_message_id": "msg-68051ba7ecbd"
     },
     {
       "id": "thread-68051ba7ecbd",
@@ -629,17 +323,6 @@
       "root_message_id": "msg-d7b2e2184eef"
     },
     {
-      "id": "thread-d7b2e2184eef",
-      "subject": "irtoys",
-      "message_count": 1,
-      "participants": [
-        "Ivailo Partchev"
-      ],
-      "started": "2007-05-08T12:52:25+02:00",
-      "last_reply": "2007-05-08T12:52:25+02:00",
-      "root_message_id": "msg-d7b2e2184eef"
-    },
-    {
       "id": "thread-9cf8c29d6994",
       "subject": "New package \"earth\"",
       "message_count": 1,
@@ -649,28 +332,6 @@
       "started": "2007-05-10T16:03:25-07:00",
       "last_reply": "2007-05-10T16:03:25-07:00",
       "root_message_id": "msg-9cf8c29d6994"
-    },
-    {
-      "id": "thread-9cf8c29d6994",
-      "subject": "New package \"earth\"",
-      "message_count": 1,
-      "participants": [
-        "Stephen Milborrow"
-      ],
-      "started": "2007-05-10T16:03:25-07:00",
-      "last_reply": "2007-05-10T16:03:25-07:00",
-      "root_message_id": "msg-9cf8c29d6994"
-    },
-    {
-      "id": "thread-c521d2ad3120",
-      "subject": "new packages 'ICS' and 'ICSNP'",
-      "message_count": 1,
-      "participants": [
-        "Klaus Nordhausen"
-      ],
-      "started": "2007-05-16T09:45:12+03:00",
-      "last_reply": "2007-05-16T09:45:12+03:00",
-      "root_message_id": "msg-c521d2ad3120"
     },
     {
       "id": "thread-c521d2ad3120",
@@ -695,17 +356,6 @@
       "root_message_id": "msg-f428c27f3130"
     },
     {
-      "id": "thread-f428c27f3130",
-      "subject": "New version 0.9-7 of lars package",
-      "message_count": 1,
-      "participants": [
-        "Trevor Hastie"
-      ],
-      "started": "2007-05-16T18:13:04-07:00",
-      "last_reply": "2007-05-16T18:13:04-07:00",
-      "root_message_id": "msg-f428c27f3130"
-    },
-    {
       "id": "thread-9afaaad019c2",
       "subject": "Rcmdr 1.3-0 and RcmdrPlugins.TeachingDemos",
       "message_count": 1,
@@ -715,28 +365,6 @@
       "started": "2007-05-29T16:47:30-04:00",
       "last_reply": "2007-05-29T16:47:30-04:00",
       "root_message_id": "msg-9afaaad019c2"
-    },
-    {
-      "id": "thread-9afaaad019c2",
-      "subject": "Rcmdr 1.3-0 and RcmdrPlugins.TeachingDemos",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2007-05-29T16:47:30-04:00",
-      "last_reply": "2007-05-29T16:47:30-04:00",
-      "root_message_id": "msg-9afaaad019c2"
-    },
-    {
-      "id": "thread-a148409267d3",
-      "subject": "new packages psyphy and MLDS",
-      "message_count": 1,
-      "participants": [
-        "ken knoblauch"
-      ],
-      "started": "2007-05-29T17:59:04+02:00",
-      "last_reply": "2007-05-29T17:59:04+02:00",
-      "root_message_id": "msg-a148409267d3"
     },
     {
       "id": "thread-a148409267d3",
@@ -761,17 +389,6 @@
       "root_message_id": "msg-824b1af4d37a"
     },
     {
-      "id": "thread-824b1af4d37a",
-      "subject": "DPpackage - New version",
-      "message_count": 1,
-      "participants": [
-        "Alejandro Jara Vallejos"
-      ],
-      "started": "2007-05-29T18:10:27+02:00",
-      "last_reply": "2007-05-29T18:10:27+02:00",
-      "root_message_id": "msg-824b1af4d37a"
-    },
-    {
       "id": "thread-9a6c53b6a097",
       "subject": "Revised Rcmdr.HH package",
       "message_count": 1,
@@ -781,28 +398,6 @@
       "started": "2007-05-30T08:55:55-04:00",
       "last_reply": "2007-05-30T08:55:55-04:00",
       "root_message_id": "msg-9a6c53b6a097"
-    },
-    {
-      "id": "thread-9a6c53b6a097",
-      "subject": "Revised Rcmdr.HH package",
-      "message_count": 1,
-      "participants": [
-        "Richard M. Heiberger"
-      ],
-      "started": "2007-05-30T08:55:55-04:00",
-      "last_reply": "2007-05-30T08:55:55-04:00",
-      "root_message_id": "msg-9a6c53b6a097"
-    },
-    {
-      "id": "thread-72909181d5d9",
-      "subject": "adehabitat version 1.6",
-      "message_count": 1,
-      "participants": [
-        "Clément Calenge"
-      ],
-      "started": "2007-05-31T09:18:07+02:00",
-      "last_reply": "2007-05-31T09:18:07+02:00",
-      "root_message_id": "msg-72909181d5d9"
     },
     {
       "id": "thread-72909181d5d9",
