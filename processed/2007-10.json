@@ -20,6 +20,22 @@
       "month": "2007-10"
     },
     {
+      "id": "msg-b581a1efa067",
+      "message_id": "<20071004190009.1d47f726@antoine.domainelocal.fr>",
+      "from_name": "Antoine",
+      "from_email_hash": "a7a5e71716e3d60260b1564f8365e8e157304637b0ba91636f319f1bc0367bc8",
+      "date": "2007-10-04T19:00:09+02:00",
+      "subject": "[R-pkgs] Amap new release",
+      "subject_clean": "Amap new release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new major version of Amap package is available on CRAN.\n\nFor this major release, all clustering code has been rewritten in C++.\n\nAmap implements several tools in the field of clustering and robust statistics.\n\nNew features are:\n   * clustering possible in float precision (less memory needs)\n   * new rank-based metric: Kendall distance, use for both matrix distance computation, K-means, and hierachical clustering.\n\n\nBest.\n\n\tAntoine.",
+      "body_snippet": "A new major version of Amap package is available on CRAN.\n\nFor this major release, all clustering code has been rewritten in C++.\n\nAmap implements several tools in the field of clustering and robust s",
+      "thread_id": "thread-b581a1efa067",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
       "id": "msg-aba6e39770c1",
       "message_id": "<47054E50.4030300@zoology.ubc.ca>",
       "from_name": "Mario Pineda-Krch",
@@ -32,6 +48,38 @@
       "body_plain": "Dear useRs,\n\nA new version of the package GillespieSSA (0.3-1) has been uploaded to \nCRAN.\n\nThe GillespieSSA package (Gillespie's Stochastic Simulation Algorithm) \nprovides a simple to use, versatile, and extensible interface to a \nnumber of Monte Carlo implementations of the stochastic simulation \nalgorithm (SSA) and is intended for scientists, teachers, and students \nalike.\n\nThe SSA is a numerical procedure for generating statistically correct \ntrajectories of finite well-mixed populations in continuous time. The \nmethods currently implemented are: the Direct method, Explicit \ntau-leaping, Binomial tau-leaping, and Optimized tau-leaping. The \npackage also provides a library of molecular, ecological and \nepidemiological example models (as demos) that can easily be customized \nand extended. Currently the following models are included, \nDecaying-Dimerization Reaction Set, Linear Molecular Chain System, \nsingle-species logistic growth model, Lotka predator-prey model, \nRosenzweig-MacArthur predator-prey model, and Kermack-McKendrick SIR model.\n\nThe release consists of several bug fixes, improved documentation, and a \nrevised more 'R-like' management of model parameters.\n\nA vignette providing a tutorial of basic SSA theory, usage of the \npackage using additional example models is currently being finalized. \nAlthough it is not part of this release a preprint is available upon \nrequest.\n\nComments are welcome,\nMario Pineda-Krch\n\n-----------------------------------------------------------\nMario Pineda-Krch, Post Doctoral Fellow\n\nCenter for Animal Disease Modeling and Surveillance (CADMS)\nUniversity Of California, Davis, CA 95616, U.S.A.\n\nPhone: (530) 297-4621\nFax:   (530) 297-4618\nEmail: pineda at zoology.ubc.ca\nURL :  http://pineda-krch.com",
       "body_snippet": "Dear useRs,\n\nA new version of the package GillespieSSA (0.3-1) has been uploaded to \nCRAN.\n\nThe GillespieSSA package (Gillespie's Stochastic Simulation Algorithm) \nprovides a simple to use, versatile,",
       "thread_id": "thread-aba6e39770c1",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-aba6e39770c1",
+      "message_id": "<47054E50.4030300@zoology.ubc.ca>",
+      "from_name": "Mario Pineda-Krch",
+      "from_email_hash": "9102f8c674686bddedee35ad3ab3090845488d82ed464ac7717d9d4b69d8b189",
+      "date": "2007-10-04T13:34:24-07:00",
+      "subject": "[R-pkgs] New version of GillespieSSA package uploaded to CRAN",
+      "subject_clean": "New version of GillespieSSA package uploaded to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nA new version of the package GillespieSSA (0.3-1) has been uploaded to \nCRAN.\n\nThe GillespieSSA package (Gillespie's Stochastic Simulation Algorithm) \nprovides a simple to use, versatile, and extensible interface to a \nnumber of Monte Carlo implementations of the stochastic simulation \nalgorithm (SSA) and is intended for scientists, teachers, and students \nalike.\n\nThe SSA is a numerical procedure for generating statistically correct \ntrajectories of finite well-mixed populations in continuous time. The \nmethods currently implemented are: the Direct method, Explicit \ntau-leaping, Binomial tau-leaping, and Optimized tau-leaping. The \npackage also provides a library of molecular, ecological and \nepidemiological example models (as demos) that can easily be customized \nand extended. Currently the following models are included, \nDecaying-Dimerization Reaction Set, Linear Molecular Chain System, \nsingle-species logistic growth model, Lotka predator-prey model, \nRosenzweig-MacArthur predator-prey model, and Kermack-McKendrick SIR model.\n\nThe release consists of several bug fixes, improved documentation, and a \nrevised more 'R-like' management of model parameters.\n\nA vignette providing a tutorial of basic SSA theory, usage of the \npackage using additional example models is currently being finalized. \nAlthough it is not part of this release a preprint is available upon \nrequest.\n\nComments are welcome,\nMario Pineda-Krch\n\n-----------------------------------------------------------\nMario Pineda-Krch, Post Doctoral Fellow\n\nCenter for Animal Disease Modeling and Surveillance (CADMS)\nUniversity Of California, Davis, CA 95616, U.S.A.\n\nPhone: (530) 297-4621\nFax:   (530) 297-4618\nEmail: pineda at zoology.ubc.ca\nURL :  http://pineda-krch.com",
+      "body_snippet": "Dear useRs,\n\nA new version of the package GillespieSSA (0.3-1) has been uploaded to \nCRAN.\n\nThe GillespieSSA package (Gillespie's Stochastic Simulation Algorithm) \nprovides a simple to use, versatile,",
+      "thread_id": "thread-aba6e39770c1",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-e6a5c76dc427",
+      "message_id": "<71257D09F114DA4A8E134DEAC70F25D309B8C303@groamrexm03.amer.pfizer.com>",
+      "from_name": "Kuhn, Max",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2007-10-05T14:33:37-04:00",
+      "subject": "[R-pkgs] new packages: caret, caretLSF and caretNWS",
+      "subject_clean": "new packages: caret, caretLSF and caretNWS",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Three more packages will be showing up on your mirror soon.\n\nThe caret package (short for \"Classification And REgression Training\")\naims to simplify the model building process. The package has functions\nfor\n\n  - data splitting: balanced train/test splits, cross-validation and\nbootstrapping sampling functions. There is also a function for maximum\ndissimilarity sampling.\n\n  - pre-processing: simple centering/scaling, filter methods for highly\ncorrelated predictors, identification of linear combinations, removal of\n\"near zero variance\" predictors and the \"spatial-sign\" transformation\nfunction for predictors.\n\n  - model building: the train function provides a common interface to 27\nmodel types. Models can be tuned over complexity parameters using\nresampling methods. A few functions also exist for plotting the results\nfrom the tuning process.\n\n  - bagged versions of mars (via the earth package) and fda models.\n\n  - partial least squares classification model (based on the pls\npackage).\n\n  - yet another knn function (this one returns the vote proportions for\nall the classes) based on the functions in MASS and ipred.\n\n  - a variable importance class and methods for a variety of models\n(e.g. trees, pls, mars, etc) in addition to model-free methods.\n\n  - RMA-type normalization methods for oligo arrays that can be used on\na per sample basis. These functions are well suited for normalizing\nchips individually using information from the training set samples.\n\nThree vignettes come with the package and include several examples. A\nfew example data sets, mostly from quantitative structure-activity\nrelationship (QSAR) experiments, are also contained in the package.\n\nThe other two packages, caretLSF and caretNWS, provide alternate\nversions of caret's train function that can be executed in parallel\nusing the Rlsf and nws packages, respectively. For example, if\nbootstrapping is used to tune a model, the B models can be split over M\ndifferent nodes. For caretNWS, either the free nws package or the\ncommercial version (nwsPro) can be used. The commercial version offers\nfault tolerance features (as well as support). Email\ninfo at revolution-computing.com instead of me for more information about\nnwsPro or nws.\n\nThanks to Steve Weston, Jed Wing and Andre Williams who contributed to\nthese packages.\n\nPlease send me emails at max dot kuhn at pfizer dot com for questions,\nsuggestions or bugs. \n\nMax",
+      "body_snippet": "Three more packages will be showing up on your mirror soon.\n\nThe caret package (short for \"Classification And REgression Training\")\naims to simplify the model building process. The package has functio",
+      "thread_id": "thread-e6a5c76dc427",
       "thread_depth": 0,
       "month": "2007-10"
     },
@@ -68,6 +116,22 @@
       "month": "2007-10"
     },
     {
+      "id": "msg-ff0f37dd71e4",
+      "message_id": "<470B8835.1010204@cs.tu-berlin.de>",
+      "from_name": "Nicole Krämer",
+      "from_email_hash": "5b6b941b8f58e9970ea921428e2d930f44d2f7d20e62d3948a19c51737b6f5f7",
+      "date": "2007-10-09T15:55:01+02:00",
+      "subject": "[R-pkgs] new package ppls",
+      "subject_clean": "new package ppls",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package ppls is now available on CRAN.\n\nThe ppls package implements penalized Partial Leasts Squares (PLS). In a \nnutshell, supervised dimensionality reduction via PLS is combined with \npenalization techniques. Features of the package include\n\n\n* estimation of linear regression models with penalized PLS,\n* estimation of generalized additive models with penalized PLS based on \nsplines transformations,\n* model selection for both methods based on cross validation.\n\n\nFor more information on penalized PLS, see\n\nhttp://ml.cs.tu-berlin.de/~nkraemer/papers/preprint_penalizedPLS.pdf\n\nPlease send an email to nkraemer at cs dot tu-berlin dot de for any \ncomments, suggestions, or reports on bugs.\n\nRegards,\n\nNicole & Anne-Laure\n\n\n-- \nDr. Nicole Kr?mer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
+      "body_snippet": "A new package ppls is now available on CRAN.\n\nThe ppls package implements penalized Partial Leasts Squares (PLS). In a \nnutshell, supervised dimensionality reduction via PLS is combined with \npenaliza",
+      "thread_id": "thread-ff0f37dd71e4",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
       "id": "msg-0144e005565f",
       "message_id": "<Pine.GSO.4.56.0710151339320.9860@laurel.few.vu.nl>",
       "from_name": "Katharine Mullen",
@@ -80,6 +144,38 @@
       "body_plain": "A new package 'nnls' is now available on CRAN.\n\nThe package provides an R interface to the Lawson-Hanson NNLS algorithm\nfor non-negative least squares that solves the least squares problem A x =\nb with the constraint x >= 0.\n\nThe Lawson-Hanson NNLS algorithm was published in\n\nLawson CL, Hanson RJ (1974). Solving Least Squares Problems. Prentice\nHall, Englewood Cliffs, NJ.\n\nLawson CL, Hanson RJ (1995). Solving Least Squares Problems. Classics in\nApplied Mathematics. SIAM, Philadelphia.\n\nand is available as Fortran77 code on Netlib (file lawson-hanson/all). The\n'nnls' package interfaces to this code.\n\nIncluded in the examples section of the function 'nnls' is a test problem\ncomparing NNLS to the L-BFGS-B method of 'optim' and to the 'solve.QP'\nfunction of the package 'quadprog'.  NNLS is shown to be faster and\nslightly more accurate than these more general purpose algorithms for the\ntest problem examined.\n\nI do not have access to S-PLUS or the S-PLUS source, but the help page for\nthe S-SPLUS function 'nnls.fit' references Lawson and Hanson (1974), and\nis probably close to the port here.  I have not written any methods for\nprinting or summaries, and only return the solution x. On request, I can\nmodify this behavior.\n\nI would be interested in suggestions, bug reports, and other comments.\n\nKate Mullen\n\n----\nKatharine Mullen\nmail: Department of Physics and Astronomy, Faculty of Sciences\nVrije Universiteit Amsterdam, de Boelelaan 1081\n1081 HV Amsterdam, The Netherlands\nroom: T.1.06\ntel: +31 205987870\nfax: +31 205987992\ne-mail: kate at nat.vu.nl\nhomepage: http://www.nat.vu.nl/~kate/",
       "body_snippet": "A new package 'nnls' is now available on CRAN.\n\nThe package provides an R interface to the Lawson-Hanson NNLS algorithm\nfor non-negative least squares that solves the least squares problem A x =\nb wit",
       "thread_id": "thread-0144e005565f",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-0144e005565f",
+      "message_id": "<Pine.GSO.4.56.0710151339320.9860@laurel.few.vu.nl>",
+      "from_name": "Katharine Mullen",
+      "from_email_hash": "ad891a8b1d087839368a3404126b8e88083d7988c4b52dc00429156bae947a21",
+      "date": "2007-10-15T13:41:44+02:00",
+      "subject": "[R-pkgs] new package 'nnls'",
+      "subject_clean": "new package 'nnls'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package 'nnls' is now available on CRAN.\n\nThe package provides an R interface to the Lawson-Hanson NNLS algorithm\nfor non-negative least squares that solves the least squares problem A x =\nb with the constraint x >= 0.\n\nThe Lawson-Hanson NNLS algorithm was published in\n\nLawson CL, Hanson RJ (1974). Solving Least Squares Problems. Prentice\nHall, Englewood Cliffs, NJ.\n\nLawson CL, Hanson RJ (1995). Solving Least Squares Problems. Classics in\nApplied Mathematics. SIAM, Philadelphia.\n\nand is available as Fortran77 code on Netlib (file lawson-hanson/all). The\n'nnls' package interfaces to this code.\n\nIncluded in the examples section of the function 'nnls' is a test problem\ncomparing NNLS to the L-BFGS-B method of 'optim' and to the 'solve.QP'\nfunction of the package 'quadprog'.  NNLS is shown to be faster and\nslightly more accurate than these more general purpose algorithms for the\ntest problem examined.\n\nI do not have access to S-PLUS or the S-PLUS source, but the help page for\nthe S-SPLUS function 'nnls.fit' references Lawson and Hanson (1974), and\nis probably close to the port here.  I have not written any methods for\nprinting or summaries, and only return the solution x. On request, I can\nmodify this behavior.\n\nI would be interested in suggestions, bug reports, and other comments.\n\nKate Mullen\n\n----\nKatharine Mullen\nmail: Department of Physics and Astronomy, Faculty of Sciences\nVrije Universiteit Amsterdam, de Boelelaan 1081\n1081 HV Amsterdam, The Netherlands\nroom: T.1.06\ntel: +31 205987870\nfax: +31 205987992\ne-mail: kate at nat.vu.nl\nhomepage: http://www.nat.vu.nl/~kate/",
+      "body_snippet": "A new package 'nnls' is now available on CRAN.\n\nThe package provides an R interface to the Lawson-Hanson NNLS algorithm\nfor non-negative least squares that solves the least squares problem A x =\nb wit",
+      "thread_id": "thread-0144e005565f",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-8e5e2678b588",
+      "message_id": "<47149D7C.2070908@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-10-16T13:16:12+02:00",
+      "subject": "[R-pkgs] New package: sets",
+      "subject_clean": "New package: sets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nThe new 'sets' package made it to CRAN, supporting:\n\no data structures for sets, fuzzy sets, multisets, and fuzzy multisets\no the use of (most) R objects as elements\no standard set operations (union, intersection, complement, Cartesian \nproduct, power set, ...)\no support for several fuzzy logic systems\n\nAn introductory vignette is also available.\n\nDavid and Kurt.",
+      "body_snippet": "Dear useRs,\n\nThe new 'sets' package made it to CRAN, supporting:\n\no data structures for sets, fuzzy sets, multisets, and fuzzy multisets\no the use of (most) R objects as elements\no standard set operat",
+      "thread_id": "thread-8e5e2678b588",
       "thread_depth": 0,
       "month": "2007-10"
     },
@@ -116,6 +212,22 @@
       "month": "2007-10"
     },
     {
+      "id": "msg-127385b685a6",
+      "message_id": "<8A098B38-DA56-40F8-91D2-D8FE34C955BC@stat.ucla.edu>",
+      "from_name": "Jan de Leeuw",
+      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
+      "date": "2007-10-17T18:19:29-07:00",
+      "subject": "[R-pkgs] homals-0.9.0",
+      "subject_clean": "homals-0.9.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "homals-0.9.0 is on CRAN -- by Jan de Leeuw and Patrick Mair\n\nThis package implements the methods discussed in Gifi, Nonlinear  \nMultivariate\nAnalysis, Wiley, 1990. In the Gifi terminology it covers homals,  \nprincals,\ncanals, morals, criminals, and overals. The R implementation fills  \nseveral\ngaps in Gifi, adding multiple ordinal, numerical, and polynomial data\ntransformations. Differences with previous CRAN version:\n\na. More R-like with S3 classes, namespace, print, plot, plot3d,  \nsummary, predict methods\n\nb. (Much) better documented functions and data sets\n\nc. Dynamic three-d plot using rgl\n\nd. Static three-d plot using scatterplot3d\n\ne. Predict method that counts \"correct\" classifications\n\nf. Many bugs fixed\n\nA paper describing the technique and implementation, with many examples,\nis almost ready. There is a preprint at http://gifi.stat.ucla.edu/homalsR.pdf\nIntermediate updates by svn from http://r-forge.r-project.org/projects/psychor/\n\n==========================================================\nJan de Leeuw, 11667 Steinhoff Rd, Frazier Park, CA 93225\nhome 661-245-1725 skype 661-347-0667 global 254-381-4905\n.mac: jdeleeuw +++  aim: deleeuwjan +++ skype: j_deleeuw\n==========================================================\n                 Many nights on the road\n        and not dead yet ---\n                the end of autumn.       (Basho 1644-1694)",
+      "body_snippet": "homals-0.9.0 is on CRAN -- by Jan de Leeuw and Patrick Mair\n\nThis package implements the methods discussed in Gifi, Nonlinear  \nMultivariate\nAnalysis, Wiley, 1990. In the Gifi terminology it covers ho",
+      "thread_id": "thread-127385b685a6",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
       "id": "msg-27c6ed84268c",
       "message_id": "<47172B0F.7090804@wu-wien.ac.at>",
       "from_name": "David Meyer",
@@ -128,6 +240,38 @@
       "body_plain": "Dear useRs,\n\n\na new version of the 'relations' package has appeared on CRAN. New \nfeatures include:\n\n   o support for fuzzy relations added\n\n   o support for sets moved to separate 'sets' package\n\n   o new SD fitters for the S (\"symmetric\") and M (\"matches\") families\n\n   o fitters for Cook-Seiford method and Euclidean consensus added\n\n   o fitters can now use a sparse constraint matrix representation\n\n   o relations are now subsettable\n\n   o relation_choice() for choosing \"winner\" objects based on an ensemble\n     of relations between these\n\n   o new summary method for relations which computes all implemented\n     predicates\n\nBest,\n\nDavid and Kurt.",
       "body_snippet": "Dear useRs,\n\n\na new version of the 'relations' package has appeared on CRAN. New \nfeatures include:\n\n   o support for fuzzy relations added\n\n   o support for sets moved to separate 'sets' package\n\n   ",
       "thread_id": "thread-27c6ed84268c",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-27c6ed84268c",
+      "message_id": "<47172B0F.7090804@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-10-18T11:44:47+02:00",
+      "subject": "[R-pkgs] upgrade: relations",
+      "subject_clean": "upgrade: relations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\n\na new version of the 'relations' package has appeared on CRAN. New \nfeatures include:\n\n   o support for fuzzy relations added\n\n   o support for sets moved to separate 'sets' package\n\n   o new SD fitters for the S (\"symmetric\") and M (\"matches\") families\n\n   o fitters for Cook-Seiford method and Euclidean consensus added\n\n   o fitters can now use a sparse constraint matrix representation\n\n   o relations are now subsettable\n\n   o relation_choice() for choosing \"winner\" objects based on an ensemble\n     of relations between these\n\n   o new summary method for relations which computes all implemented\n     predicates\n\nBest,\n\nDavid and Kurt.",
+      "body_snippet": "Dear useRs,\n\n\na new version of the 'relations' package has appeared on CRAN. New \nfeatures include:\n\n   o support for fuzzy relations added\n\n   o support for sets moved to separate 'sets' package\n\n   ",
+      "thread_id": "thread-27c6ed84268c",
+      "thread_depth": 0,
+      "month": "2007-10"
+    },
+    {
+      "id": "msg-d8a1f9086dd0",
+      "message_id": "<f8e6ff050710211507p40df755dtced3fa3158cebc8b@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-10-21T17:07:01-05:00",
+      "subject": "[R-pkgs] ggplot2 - version 0.5.6",
+      "subject_clean": "ggplot2 - version 0.5.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nChanges in version 0.5.6\n----------------------------------------\n\nImproved error messages and other notifications:\n  * all geoms and position adjustments should now give an informative\nerror message when required aesthetics are missing\n  * better error messages if data not a data frame, or mapping not\ncreated by aes or aes_string\n  * better errors for qplot when variables missing or data invalid\n  * better error if somehow you are missing necessary scales\n  * stat_bin informs you of the default choice of binwidth\n  * stat_smooth gives helpful error messages for common problems\n  * printing a geom now displays the data set that it uses (if not the default)\n\nOther improvements:\n  * colour and fill legends now surround by background plot colour\n  * can now draw arrow heads with geom_segment, and have added an\nexample demonstrating drawing a vector field\n  * density plots should always include 0 on y axis\n  * default boxplot outlier changed colour to black\n  * stat_smooth supports categorical variables a little better\n  * implemented hash methods for all ggplot objects.  This is the\nfirst step in making it easier for me to compare all examples between\nversions for quality control purposes\n\nNew data:\n  * seals, contributed by David Brillinger and Charlotte Wickham, used\nfor vector field example\n\nBug fixes:\n  * geoms hline, vline and abline now all work correctly when a\ngrouping variable is used\n  * block histograms (where individuals are identifiable) now work correctly\n  * all ggplot objects should now print properly from the command line\n  * fixed bug in geom_path when only 1 point\n  * segments geom now works correctly for more coordinate systems\n  * order variables in scatterplot matrix by order of variables in data.frame\n  * geom_density deals with missing values correctly when displaying\nscaled densities\n  * fixed bug in calculating categorical ranges\n  * fixed bug in drawing error bars\n\nSubtractions\n  * now relies on R 2.6\n  * removed grid.gedit and grid.gremove, and code replaced by grid.ls\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. ",
+      "thread_id": "thread-d8a1f9086dd0",
       "thread_depth": 0,
       "month": "2007-10"
     },
@@ -162,6 +306,22 @@
       "thread_id": "thread-ca9a8b984a21",
       "thread_depth": 0,
       "month": "2007-10"
+    },
+    {
+      "id": "msg-ca9a8b984a21",
+      "message_id": "<m0tzoe2jzu.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik and Ron Wehrens",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2007-10-26T13:28:05+02:00",
+      "subject": "[R-pkgs] pls version 2.1-0",
+      "subject_clean": "pls version 2.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls, wide kernel\n  pls, and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, and correlation loadings.\n\nThe main changes since 2.0-0 are\n\n- Jackknife variance estimation of regression coefficients has been added.\n\n- The `wide kernel' PLS algorithm has been implemented.  It is faster than the\n  other algorithms for very wide data.\n\n- The definition of R^2 has been changed to  1 - SSE/SST for all estimators,\n  so R2() will give different results for test sets and\n  cross-validation compared to pls < 2.1-0.  Also, the internal\n  calculations have been reorganised.\n\n- The plot functions for coefficients, predictions and validation results\n  (R2, (R)MSEP) have gained an argument `main' to set the main title of the\n  plot.\n\n- plots that go over several pages now only set `par(ask = TRUE)' if the plot\n  device is interactive (suggested by Kevin Wright).\n\n- mvr() and mvrCv() now check for near zero standard deviation when autoscaling\n  (`scale = TRUE')\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nBj?rn-Helge Mevik and Ron Wehrens",
+      "body_snippet": "Version 2.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
+      "thread_id": "thread-ca9a8b984a21",
+      "thread_depth": 0,
+      "month": "2007-10"
     }
   ],
   "threads": [
@@ -175,6 +335,28 @@
       "started": "2007-10-04T13:34:24-07:00",
       "last_reply": "2007-10-04T13:34:24-07:00",
       "root_message_id": "msg-aba6e39770c1"
+    },
+    {
+      "id": "thread-aba6e39770c1",
+      "subject": "New version of GillespieSSA package uploaded to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mario Pineda-Krch"
+      ],
+      "started": "2007-10-04T13:34:24-07:00",
+      "last_reply": "2007-10-04T13:34:24-07:00",
+      "root_message_id": "msg-aba6e39770c1"
+    },
+    {
+      "id": "thread-b581a1efa067",
+      "subject": "Amap new release",
+      "message_count": 1,
+      "participants": [
+        "Antoine"
+      ],
+      "started": "2007-10-04T19:00:09+02:00",
+      "last_reply": "2007-10-04T19:00:09+02:00",
+      "root_message_id": "msg-b581a1efa067"
     },
     {
       "id": "thread-b581a1efa067",
@@ -199,6 +381,17 @@
       "root_message_id": "msg-e6a5c76dc427"
     },
     {
+      "id": "thread-e6a5c76dc427",
+      "subject": "new packages: caret, caretLSF and caretNWS",
+      "message_count": 1,
+      "participants": [
+        "Kuhn, Max"
+      ],
+      "started": "2007-10-05T14:33:37-04:00",
+      "last_reply": "2007-10-05T14:33:37-04:00",
+      "root_message_id": "msg-e6a5c76dc427"
+    },
+    {
       "id": "thread-ff0f37dd71e4",
       "subject": "new package ppls",
       "message_count": 1,
@@ -208,6 +401,28 @@
       "started": "2007-10-09T15:55:01+02:00",
       "last_reply": "2007-10-09T15:55:01+02:00",
       "root_message_id": "msg-ff0f37dd71e4"
+    },
+    {
+      "id": "thread-ff0f37dd71e4",
+      "subject": "new package ppls",
+      "message_count": 1,
+      "participants": [
+        "Nicole Krämer"
+      ],
+      "started": "2007-10-09T15:55:01+02:00",
+      "last_reply": "2007-10-09T15:55:01+02:00",
+      "root_message_id": "msg-ff0f37dd71e4"
+    },
+    {
+      "id": "thread-0144e005565f",
+      "subject": "new package 'nnls'",
+      "message_count": 1,
+      "participants": [
+        "Katharine Mullen"
+      ],
+      "started": "2007-10-15T13:41:44+02:00",
+      "last_reply": "2007-10-15T13:41:44+02:00",
+      "root_message_id": "msg-0144e005565f"
     },
     {
       "id": "thread-0144e005565f",
@@ -232,6 +447,28 @@
       "root_message_id": "msg-8e5e2678b588"
     },
     {
+      "id": "thread-8e5e2678b588",
+      "subject": "New package: sets",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-10-16T13:16:12+02:00",
+      "last_reply": "2007-10-16T13:16:12+02:00",
+      "root_message_id": "msg-8e5e2678b588"
+    },
+    {
+      "id": "thread-127385b685a6",
+      "subject": "homals-0.9.0",
+      "message_count": 1,
+      "participants": [
+        "Jan de Leeuw"
+      ],
+      "started": "2007-10-17T18:19:29-07:00",
+      "last_reply": "2007-10-17T18:19:29-07:00",
+      "root_message_id": "msg-127385b685a6"
+    },
+    {
       "id": "thread-127385b685a6",
       "subject": "homals-0.9.0",
       "message_count": 1,
@@ -254,6 +491,17 @@
       "root_message_id": "msg-27c6ed84268c"
     },
     {
+      "id": "thread-27c6ed84268c",
+      "subject": "upgrade: relations",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-10-18T11:44:47+02:00",
+      "last_reply": "2007-10-18T11:44:47+02:00",
+      "root_message_id": "msg-27c6ed84268c"
+    },
+    {
       "id": "thread-d8a1f9086dd0",
       "subject": "ggplot2 - version 0.5.6",
       "message_count": 1,
@@ -263,6 +511,28 @@
       "started": "2007-10-21T17:07:01-05:00",
       "last_reply": "2007-10-21T17:07:01-05:00",
       "root_message_id": "msg-d8a1f9086dd0"
+    },
+    {
+      "id": "thread-d8a1f9086dd0",
+      "subject": "ggplot2 - version 0.5.6",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-10-21T17:07:01-05:00",
+      "last_reply": "2007-10-21T17:07:01-05:00",
+      "root_message_id": "msg-d8a1f9086dd0"
+    },
+    {
+      "id": "thread-ca9a8b984a21",
+      "subject": "pls version 2.1-0",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik and Ron Wehrens"
+      ],
+      "started": "2007-10-26T13:28:05+02:00",
+      "last_reply": "2007-10-26T13:28:05+02:00",
+      "root_message_id": "msg-ca9a8b984a21"
     },
     {
       "id": "thread-ca9a8b984a21",

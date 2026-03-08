@@ -20,6 +20,38 @@
       "month": "2005-11"
     },
     {
+      "id": "msg-413b199c1900",
+      "message_id": "<1E7B167439290641966EB161D4330798AEF9BF@GSBEX.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2005-11-17T08:40:46-06:00",
+      "subject": "[R-pkgs] new version of bayesm",
+      "subject_clean": "new version of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 2.0-2 of bayesm is available on CRAN.\n This version includes bug fixes for rhierMnlRwMixture and\n rhierLinearModel.\n\n peter rossi",
+      "body_snippet": "Version 2.0-2 of bayesm is available on CRAN.\n This version includes bug fixes for rhierMnlRwMixture and\n rhierLinearModel.\n\n peter rossi",
+      "thread_id": "thread-413b199c1900",
+      "thread_depth": 0,
+      "month": "2005-11"
+    },
+    {
+      "id": "msg-7696b4e53316",
+      "message_id": "<2E1DE912-9603-4733-B00E-7450335F65E9@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2005-11-27T17:28:46-08:00",
+      "subject": "[R-pkgs] glmpath: L1 regularization path for glms",
+      "subject_clean": "glmpath: L1 regularization path for glms",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We have uploaded to CRAN the first version of glmpath,\nwhich fits the L1 regularization path for generalized linear models.\n\nThe lars package fits the entire piecewise-linear L1 regularization  \npath for\nthe lasso. The coefficient paths for L1 regularized glms, however,   \nare not piecewise linear.\nglmpath uses convex optimization - in particular predictor-corrector  \nmethods-\nto fit the coefficient path at important junctions. These junctions  \nare at the \"knots\" in |beta|\nwhere variables enter/leave the active set; i.e.  nonzero/zero values.\nUsers can request greater resolution at a cost of more computation,  \nand compute values\non a fine grid between the knots.\n\nThe code is fast, and can handle largish problems efficiently.\nit took just over 4 sec system cpu time to fit the logistic  \nregression path for\nthe \"spam\" data from UCI with 3065 training obs and 57 predictors.\nFor a microarray example with 5000 variables and 100 observations, 11  \nseconds cpu time.\n\nCurrently glmpath implements binomial, poisson and gaussian families.\n\nMee Young Park and Trevor Hastie\n\n\n\n\n-------------------------------------------------------------------\n   Trevor Hastie                                   hastie at stanford.edu\n   Professor, Department of Statistics, Stanford University\n   Phone: (650) 725-2231 (Statistics)          Fax: (650) 725-8977\n   (650) 498-5233 (Biostatistics)   Fax: (650) 725-6951\n   URL: http://www-stat.stanford.edu/~hastie\n    address: room 104, Department of Statistics, Sequoia Hall\n            390 Serra Mall, Stanford University, CA 94305-4065\n  --------------------------------------------------------------------",
+      "body_snippet": "We have uploaded to CRAN the first version of glmpath,\nwhich fits the L1 regularization path for generalized linear models.\n\nThe lars package fits the entire piecewise-linear L1 regularization  \npath ",
+      "thread_id": "thread-7696b4e53316",
+      "thread_depth": 0,
+      "month": "2005-11"
+    },
+    {
       "id": "msg-7696b4e53316",
       "message_id": "<2E1DE912-9603-4733-B00E-7450335F65E9@stanford.edu>",
       "from_name": "Trevor Hastie",
@@ -47,6 +79,28 @@
       "started": "2005-11-17T08:40:46-06:00",
       "last_reply": "2005-11-17T08:40:46-06:00",
       "root_message_id": "msg-413b199c1900"
+    },
+    {
+      "id": "thread-413b199c1900",
+      "subject": "new version of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2005-11-17T08:40:46-06:00",
+      "last_reply": "2005-11-17T08:40:46-06:00",
+      "root_message_id": "msg-413b199c1900"
+    },
+    {
+      "id": "thread-7696b4e53316",
+      "subject": "glmpath: L1 regularization path for glms",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2005-11-27T17:28:46-08:00",
+      "last_reply": "2005-11-27T17:28:46-08:00",
+      "root_message_id": "msg-7696b4e53316"
     },
     {
       "id": "thread-7696b4e53316",

@@ -20,6 +20,22 @@
       "month": "2005-04"
     },
     {
+      "id": "msg-cd8ee0fc3b6b",
+      "message_id": "<424D90A4.3060600@stat.wisc.edu>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2005-04-01T12:19:16-06:00",
+      "subject": "[R-pkgs] Version 0.95-1 of the lme4 package",
+      "subject_clean": "Version 0.95-1 of the lme4 package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This may sound like an April Fool's joke but it isn't really.\n\nI just uploaded version 0.95-1 of the lme4 package for R.  This is the \npackage with the new versions of the lme (linear mixed-effects) function \nfor R and the GLMM (generalized linear mixed models) function.\n\nOne distinguishing feature of the 0.95 series of releases of this \npackage is the absence of the lme and GLMM functions.  They have been \nreplaced by a single function called lmer (pronounced \"Elmer\").  The \nname could stand for \"lme revised\" or for \"lme for R\".\n\nThe method of specifying models for lmer is slightly different from that \nfor lme, which is the reason for using a new name for this function.  In \nlmer the random effects terms and their grouping factors are specified \nin the formula.  Furthermore, if a family argument is given then a \ngeneralized linear mixed model is fit - otherwise a linear mixed model \nis fit.\n\nI am writing an article for the next edition of R News describing the \nchanges from lme to lmer.  In the meantime you can look at the examples \nand the tests directory of the mlmRev package to see examples of \nspecifying lmer models.\n\nMy apologies for springing this on the community without warning.  I had \nplanned to do a bit more development and create more documentation \nbefore releasing this new version but yesterday I accidently triggered a \ncascade of inconsistencies by uploading a new version of the Matrix package.\n\nIf you are using the current lme4 and prefer not to make changes at this \ntime then stay with the 0.9 series of releases and don't update to 0.95-1.",
+      "body_snippet": "This may sound like an April Fool's joke but it isn't really.\n\nI just uploaded version 0.95-1 of the lme4 package for R.  This is the \npackage with the new versions of the lme (linear mixed-effects) f",
+      "thread_id": "thread-cd8ee0fc3b6b",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
       "id": "msg-483990c8a710",
       "message_id": "<9a3359461a03935734f63c6c89b438a2@stanford.edu>",
       "from_name": "Trevor Hastie",
@@ -32,6 +48,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment.ksh>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment.ksh>",
       "thread_id": "thread-483990c8a710",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-483990c8a710",
+      "message_id": "<9a3359461a03935734f63c6c89b438a2@stanford.edu>",
+      "from_name": "Trevor Hastie",
+      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
+      "date": "2005-04-05T21:57:23-07:00",
+      "subject": "[R-pkgs] Version 0.93 of GAM package on CRAN",
+      "subject_clean": "Version 0.93 of GAM package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment-0001.ksh>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment-0001.ksh>",
+      "thread_id": "thread-483990c8a710",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-dff7e65d8ab3",
+      "message_id": "<20050412185548.56646.qmail@web52701.mail.yahoo.com>",
+      "from_name": "John Hendrickx",
+      "from_email_hash": "367c0578199679bf553426521525a7ba5bb4d491ee1c21697c9b6edbfdfb5dc4",
+      "date": "2005-04-12T11:55:48-07:00",
+      "subject": "[R-pkgs] New version of \"catspec\" package",
+      "subject_clean": "New version of \"catspec\" package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I've uploaded a new version of \"catspec\" to CRAN. Catspec is for\nestimating certain \"special categorical\" models. It also contains\n\"ctab\", a function for creating one-way, two-way, and multi-way\npercentage tables (nothing special there really). Ctab can now print\nmore than one percentage type, as well as table marginals.\n\nThe first special model in catspec is \"mclgen\". Mclgen restructures a\ndata frame so a multinomial logistic model can be estimated using a\ncondition logit program. Doing so provides much more flexibility for\nimposing restrictions on the response variable.\n\nThe second special (set of) models is \"sqtab\", for estimating\nloglinear models for square tables (aka \"mobility models\") such as\nsymmetry, quasi-independence. One application can be to specify such\nmodels as multinomial logistic models with covariates, using mclgen.\n\nJohn Hendrickx",
+      "body_snippet": "I've uploaded a new version of \"catspec\" to CRAN. Catspec is for\nestimating certain \"special categorical\" models. It also contains\n\"ctab\", a function for creating one-way, two-way, and multi-way\nperce",
+      "thread_id": "thread-dff7e65d8ab3",
       "thread_depth": 0,
       "month": "2005-04"
     },
@@ -68,6 +116,22 @@
       "month": "2005-04"
     },
     {
+      "id": "msg-1bb4410b31b6",
+      "message_id": "<4DD6F8B8782D584FABF50BF3A32B03D801A2BB9E@MSGBOSCLF2WIN.DMN1.FMR.COM>",
+      "from_name": "Brahm, David",
+      "from_email_hash": "a7a625c3d1b4d784b9bd6c1505a0d161aaacff3229a24d9364039015491b7163",
+      "date": "2005-04-14T11:33:21-04:00",
+      "subject": "[R-pkgs] g.data version 1.6, upgrade in response to changes in R-2.1.0",
+      "subject_clean": "g.data version 1.6, upgrade in response to changes in R-2.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050414/b9a7e59c/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050414/b9a7e59c/attachment-0001.pl>",
+      "thread_id": "thread-1bb4410b31b6",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
       "id": "msg-221b660aaf70",
       "message_id": "<5c9ed65c9d9f.5c9d9f5c9ed6@gsb.uchicago.edu>",
       "from_name": "Peter E. Rossi",
@@ -80,6 +144,38 @@
       "body_plain": "We are pleased to announce the release of version 0.0 of bayesm on CRAN.\n\nbayesm covers many important models used in marketing\nand micro-econometrics applications. \n\nThe package includes: \nBayes Regression (univariate or multivariate dep var)\nMultinomial Logit\nMultinomial and Multivariate Probit\nMultivariate Mixtures of Normals\nHierarchical Linear Models with a normal prior and covariates\nHierarchical Multinomial Logits with mixture of normals prior\nBayesian analysis of choice-based conjoint data\nBayesian treatment of linear instrumental variables models\nAnalyis of Multivariate Ordinal survey data with scale usage heterogeneity \n\nafter installing the package, use help.search(\"mcmc\") to display\nthe key functions.\n\nbayem implements the models discussed in our book, Bayesian Statistics and Marketing\nTo view a draft of the book visit\nhttp://gsbwww.uchicago.edu/fac/peter.rossi/research/bsm.html\n\nWe would very much appreciate any comments/errors/suggestions for future development.\n\n\n\n................................\n Peter E. Rossi\n Joseph T. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
       "body_snippet": "We are pleased to announce the release of version 0.0 of bayesm on CRAN.\n\nbayesm covers many important models used in marketing\nand micro-econometrics applications. \n\nThe package includes: \nBayes Regr",
       "thread_id": "thread-221b660aaf70",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-221b660aaf70",
+      "message_id": "<5c9ed65c9d9f.5c9d9f5c9ed6@gsb.uchicago.edu>",
+      "from_name": "Peter E. Rossi",
+      "from_email_hash": "b378580e904225037bff6e0ecbf2b15c48c97dae4128aeb866369d04b93ab0f8",
+      "date": "2005-04-16T08:14:15-05:00",
+      "subject": "[R-pkgs] bayesm: a package for Bayesian infererence for Marketing/Micro-Econometrics",
+      "subject_clean": "bayesm: a package for Bayesian infererence for Marketing/Micro-Econometrics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are pleased to announce the release of version 0.0 of bayesm on CRAN.\n\nbayesm covers many important models used in marketing\nand micro-econometrics applications. \n\nThe package includes: \nBayes Regression (univariate or multivariate dep var)\nMultinomial Logit\nMultinomial and Multivariate Probit\nMultivariate Mixtures of Normals\nHierarchical Linear Models with a normal prior and covariates\nHierarchical Multinomial Logits with mixture of normals prior\nBayesian analysis of choice-based conjoint data\nBayesian treatment of linear instrumental variables models\nAnalyis of Multivariate Ordinal survey data with scale usage heterogeneity \n\nafter installing the package, use help.search(\"mcmc\") to display\nthe key functions.\n\nbayem implements the models discussed in our book, Bayesian Statistics and Marketing\nTo view a draft of the book visit\nhttp://gsbwww.uchicago.edu/fac/peter.rossi/research/bsm.html\n\nWe would very much appreciate any comments/errors/suggestions for future development.\n\n\n\n................................\n Peter E. Rossi\n Joseph T. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
+      "body_snippet": "We are pleased to announce the release of version 0.0 of bayesm on CRAN.\n\nbayesm covers many important models used in marketing\nand micro-econometrics applications. \n\nThe package includes: \nBayes Regr",
+      "thread_id": "thread-221b660aaf70",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-333f98998024",
+      "message_id": "<20050416162729.SGNL25800.tomts13-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2005-04-16T12:27:31-04:00",
+      "subject": "[R-pkgs] Version 1.0-0 of the Rcmdr package",
+      "subject_clean": "Version 1.0-0 of the Rcmdr package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI've just uploaded version 1.0-0 of the Rcmdr package to CRAN. For people\nwho haven't seen the package before, the \"R Commander\" provides a\nbasic-statistics graphical user interface to R, based on the tcltk package.\nThe new version incorporates a number of improvements to the R Commander\ninterface, as documented in the CHANGES file distributed with the package,\nand I feel that the package is now sufficiently polished and stable to\nwarrant finally bumping the version number to 1.0-0.\n\nMore details are available at\n<http://socserv.socsci.mcmaster.ca/jfox/Misc/Rcmdr/index.html> and in the\nmanual distributed with the package and accessible through the R Commander\n\"Help -> Introduction to the R Commander\" menu.\n\nAs usual, comments, suggestions, etc., are appreciated.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear list members,\n\nI've just uploaded version 1.0-0 of the Rcmdr package to CRAN. For people\nwho haven't seen the package before, the \"R Commander\" provides a\nbasic-statistics graphical user interfac",
+      "thread_id": "thread-333f98998024",
       "thread_depth": 0,
       "month": "2005-04"
     },
@@ -116,6 +212,22 @@
       "month": "2005-04"
     },
     {
+      "id": "msg-1d1a987c398e",
+      "message_id": "<42637BC3.3060601@statistik.uni-dortmund.de>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "2d61b878ddbd8cb498eaad13e213f45e20da358dea7c063799b1b3934f86a26c",
+      "date": "2005-04-18T11:20:03+02:00",
+      "subject": "[R-pkgs] RWinEdt 1.7-0 released",
+      "subject_clean": "RWinEdt 1.7-0 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nRWinEdt_1.7-0 has been released.\n\nWindows users of R-2.1.0 (which is scheduled to be released today) who \nare going to use a translated (i.e. non-english) version of RGui \ntogether with WinEdt will have to upgrade.\n\nIt is not advisable to upgrade RWinEdt for R versions < 2.1.0.\n\nRWinEdt can be used in form of an R package (e.g. by saying \ninstall.packages(\"RWinEdt\") within R-2.1.0) and as a manually \ninstallable WinEdt Plug-In.\n\nUwe Ligges",
+      "body_snippet": "Dear useRs,\n\nRWinEdt_1.7-0 has been released.\n\nWindows users of R-2.1.0 (which is scheduled to be released today) who \nare going to use a translated (i.e. non-english) version of RGui \ntogether with W",
+      "thread_id": "thread-1d1a987c398e",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
       "id": "msg-ee5f75c0368d",
       "message_id": "<79562e79187e.79187e79562e@gsb.uchicago.edu>",
       "from_name": "Peter E. Rossi",
@@ -128,6 +240,38 @@
       "body_plain": "Folks-\n\na patch release of bayesm, v0.0-1, is now available on CRAN.  This release corrects some errors in the help pages as well as one error in the function rhierLinearModel involving an incorrect default prior setting.\n\npeter\n\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
       "body_snippet": "Folks-\n\na patch release of bayesm, v0.0-1, is now available on CRAN.  This release corrects some errors in the help pages as well as one error in the function rhierLinearModel involving an incorrect d",
       "thread_id": "thread-ee5f75c0368d",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-ee5f75c0368d",
+      "message_id": "<79562e79187e.79187e79562e@gsb.uchicago.edu>",
+      "from_name": "Peter E. Rossi",
+      "from_email_hash": "b378580e904225037bff6e0ecbf2b15c48c97dae4128aeb866369d04b93ab0f8",
+      "date": "2005-04-23T09:10:53-05:00",
+      "subject": "[R-pkgs] patch release of bayesm",
+      "subject_clean": "patch release of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Folks-\n\na patch release of bayesm, v0.0-1, is now available on CRAN.  This release corrects some errors in the help pages as well as one error in the function rhierLinearModel involving an incorrect default prior setting.\n\npeter\n\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
+      "body_snippet": "Folks-\n\na patch release of bayesm, v0.0-1, is now available on CRAN.  This release corrects some errors in the help pages as well as one error in the function rhierLinearModel involving an incorrect d",
+      "thread_id": "thread-ee5f75c0368d",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-f6b92d67d755",
+      "message_id": "<1114352087.14892.669.camel@localhost.localdomain>",
+      "from_name": "Federico Calboli",
+      "from_email_hash": "a8bbf369f348bd87d0af37612627264a6c22cc2852a56c36e1457f3a5c80f6d6",
+      "date": "2005-04-24T15:14:47+01:00",
+      "subject": "[R-pkgs] Biodem 0.1/orphaning of MAlmig",
+      "subject_clean": "Biodem 0.1/orphaning of MAlmig",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Together with Alessio Boattini of the University of Bologna we have\ncreated a package called Biodem. Biodem provides a number of functions\nfor Biodemographycal analysis, and we hope it will be useful to the\nanthropological community.\n\nBecause Biodem contains all the functions found in Malmig (a package I\nmaintain), I would like to orphan it, or, even better, have it removed\nfrom CRAN.\n\nFinally, Biodem has been build on a Debian Linux box and is therefore\nnot yet available for Windows/OS X; Biodem was built with R 2.0.1\nbecause I am using Debian 'testing' and the new R 2.1.0 is not yet\navailable for 'testing'. I will upload Biodem 0.2 as soon as I can build\nit with R 2.1.\n\nRegards,\n\nFederico Calboli\n\n-- \nFederico C. F. Calboli\nDepartment of Epidemiology and Public Health\nImperial College, St Mary's Campus\nNorfolk Place, London W2 1PG\n\nTel  +44 (0)20 7594 1602     Fax (+44) 020 7594 3193\n\nf.calboli [.a.t] imperial.ac.uk\nf.calboli [.a.t] gmail.com",
+      "body_snippet": "Together with Alessio Boattini of the University of Bologna we have\ncreated a package called Biodem. Biodem provides a number of functions\nfor Biodemographycal analysis, and we hope it will be useful ",
+      "thread_id": "thread-f6b92d67d755",
       "thread_depth": 0,
       "month": "2005-04"
     },
@@ -164,6 +308,22 @@
       "month": "2005-04"
     },
     {
+      "id": "msg-bfd3ab1de3d5",
+      "message_id": "<20050426093351.936CC1C0012E@mwinf0503.wanadoo.fr>",
+      "from_name": "falissard",
+      "from_email_hash": "f7afa2f849c749d3e39855919c3ead862d37cd2432ceff99b2eb85636a6063ed",
+      "date": "2005-04-26T11:33:50+02:00",
+      "subject": "[R-pkgs] psy version 0.65 released",
+      "subject_clean": "psy version 0.65 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050426/14880319/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050426/14880319/attachment-0001.pl>",
+      "thread_id": "thread-bfd3ab1de3d5",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
       "id": "msg-bbc184592eab",
       "message_id": "<426FEE94.502@bank-banque-canada.ca>",
       "from_name": "Paul Gilbert",
@@ -176,6 +336,38 @@
       "body_plain": "We have just put a package GPArotation on CRAN. The functions in this \npackage perform an number of different orthogonal and oblique rotations \nfor factor analysis, using the gradient projection algorithm described \nin Coen A. Bernaards and Robert I. Jennrich  (2005),  \"Gradient \nProjection Algorithms and Software for Arbitrary Rotation Criteria in \nFactor Analysis, \", Educational and Psychological Measurement (in \npress).  Additional details are available on the web site  \n<http://www.stat.ucla.edu/research/gpa>.\n\nThe following rotations are available:\n\noblimin     oblique       oblimin family       \nquartimin   oblique                    \ntargetT     orthogonal    target rotation       \ntargetQ     oblique       target rotation       \npstT         orthogonal    partially specified target rotation\npstQ         oblique       partially specified target rotation\noblimax     oblique                    \nentropy     orthogonal    minimum entropy       \nquartimax   orthogonal                 \nvarimax     orthogonal                 \nsimplimax   oblique                    \nbentlerT    orthogonal    Bentler's invariant pattern simplicity criterion\nbentlerQ    oblique       Bentler's invariant pattern simplicity criterion\ntandemI     orthogonal    Tandem Criterion         \ntandemII    orthogonal    Tandem Criterion         \ngeominT     orthogonal                   \ngeominQ     oblique                      \ncfT         orthogonal    Crawford-Ferguson family     \ncfQ         oblique       Crawford-Ferguson family     \ninfomaxT    orthogonal                   \ninfomaxQ    oblique                      \nmccammon    orthogonal    McCammon minimum entropy ratio\n\nOther rotations can be fairly easily added simply by coding a small \nfunction to calculate the rotation criterion objective function, and \nits gradient. A detailed example of gradient computation is in the\npaper mentioned above.\n\nPaul Gilbert and\nCoen Bernaards",
       "body_snippet": "We have just put a package GPArotation on CRAN. The functions in this \npackage perform an number of different orthogonal and oblique rotations \nfor factor analysis, using the gradient projection algor",
       "thread_id": "thread-bbc184592eab",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-bbc184592eab",
+      "message_id": "<426FEE94.502@bank-banque-canada.ca>",
+      "from_name": "Paul Gilbert",
+      "from_email_hash": "51f348dc0febec9b32e9d9dcb86f6de731958e1295e818209b4c127bffef5569",
+      "date": "2005-04-27T15:57:08-04:00",
+      "subject": "[R-pkgs] GPArotation  package",
+      "subject_clean": "GPArotation  package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We have just put a package GPArotation on CRAN. The functions in this \npackage perform an number of different orthogonal and oblique rotations \nfor factor analysis, using the gradient projection algorithm described \nin Coen A. Bernaards and Robert I. Jennrich  (2005),  \"Gradient \nProjection Algorithms and Software for Arbitrary Rotation Criteria in \nFactor Analysis, \", Educational and Psychological Measurement (in \npress).  Additional details are available on the web site  \n<http://www.stat.ucla.edu/research/gpa>.\n\nThe following rotations are available:\n\noblimin     oblique       oblimin family       \nquartimin   oblique                    \ntargetT     orthogonal    target rotation       \ntargetQ     oblique       target rotation       \npstT         orthogonal    partially specified target rotation\npstQ         oblique       partially specified target rotation\noblimax     oblique                    \nentropy     orthogonal    minimum entropy       \nquartimax   orthogonal                 \nvarimax     orthogonal                 \nsimplimax   oblique                    \nbentlerT    orthogonal    Bentler's invariant pattern simplicity criterion\nbentlerQ    oblique       Bentler's invariant pattern simplicity criterion\ntandemI     orthogonal    Tandem Criterion         \ntandemII    orthogonal    Tandem Criterion         \ngeominT     orthogonal                   \ngeominQ     oblique                      \ncfT         orthogonal    Crawford-Ferguson family     \ncfQ         oblique       Crawford-Ferguson family     \ninfomaxT    orthogonal                   \ninfomaxQ    oblique                      \nmccammon    orthogonal    McCammon minimum entropy ratio\n\nOther rotations can be fairly easily added simply by coding a small \nfunction to calculate the rotation criterion objective function, and \nits gradient. A detailed example of gradient computation is in the\npaper mentioned above.\n\nPaul Gilbert and\nCoen Bernaards",
+      "body_snippet": "We have just put a package GPArotation on CRAN. The functions in this \npackage perform an number of different orthogonal and oblique rotations \nfor factor analysis, using the gradient projection algor",
+      "thread_id": "thread-bbc184592eab",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-fc5557cb3c1f",
+      "message_id": "<20050428125820.2d776c5d.Achim.Zeileis@R-project.org>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2005-04-28T12:58:20+02:00",
+      "subject": "[R-pkgs] update: zoo 0.9-9",
+      "subject_clean": "update: zoo 0.9-9",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new version of the zoo package for totally ordered observations is\navailable from CRAN. It contains many new features, the most important\nof which are: support of regular time series, an improved merge method\nand functions for carrying out rolling analyses of time series. A more\ndetailed list of changes and new features is given below.\n\nAll features (both old and new) are also documented in the package\nvignette.\n\nBest wishes,\nZ\n\n\nChanges in Version 0.9-9\n\n  o regular \"zoo\" series: objects of class \"zooreg\" (inheriting from\n    \"zoo\") can be used to store strictly regular series (similar to \"ts\"\n    objects) or series with an underlying regularity (as before but with\n    observations omitted). They have a frequency attribute that can be\n    used for conversion between \"zoo\" and \"ts\". The function\n    is.regular() can be used for checking the regularity of a series.\n\n  o improved merge() method: merge.zoo now accepts non-zoo arguments\n    (other than first) if all non-zoo args have the same NROW value\n    as the first argument (or are scalar). In that case the non-zoo\n    args are given the index of the first series. Scalars are added\n    for the full index of the merged series.\n\n  o merge() zoo can now optionally return a \"data.frame\" that contains\n    the numeric columns as \"zoo\" series and the \"zoo\" objects created\n    from factors converted back to \"factor\".\n    \n  o [.zoo allows now indexing using observations from the index scale\n    (and not only observation numbers).\n\n  o rapply, rollmean, rollmax, rollmedian to perform rolling analyses\n\n  o extended functionality to plot.zoo type argument\n\n  o when plot.zoo used with one series list(...) can be omitted from \n    various plotting parameter arguments\n\n  o print.zoo documentation fix for R 2.1.0\n\n  o yearmon and yearqtr datetime classes\n\n  o head.ts, tail.ts\n\n  o c.zoo, range.zoo\n\n  o coredata.default, coredata.ts",
+      "body_snippet": "Dear useRs,\n\na new version of the zoo package for totally ordered observations is\navailable from CRAN. It contains many new features, the most important\nof which are: support of regular time series, a",
+      "thread_id": "thread-fc5557cb3c1f",
       "thread_depth": 0,
       "month": "2005-04"
     },
@@ -212,6 +404,38 @@
       "month": "2005-04"
     },
     {
+      "id": "msg-ddcc740b2f0c",
+      "message_id": "<20050428125843.7ce8f7a8.Achim.Zeileis@R-project.org>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2005-04-28T12:58:43+02:00",
+      "subject": "[R-pkgs] new package: dynlm 0.1-0",
+      "subject_clean": "new package: dynlm 0.1-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nrecently, there were several discussions on R-help about how to\nconveniently fit dynamic linear models and time series regressions. The\npackage dynlm tries to address this problem by 1. providing some more\nfunctions like lags L() and differences d() and season() in the formula\nspecification of a model and 2. preserving the time series attributes of\nthe data. \n\nA first version of the dynlm package (which depends on the newest zoo\nversion) is now available from CRAN. For more information look at the\nman pages and examples in the package.\n\nFeedback is more than welcome.\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\nrecently, there were several discussions on R-help about how to\nconveniently fit dynamic linear models and time series regressions. The\npackage dynlm tries to address this problem by 1. p",
+      "thread_id": "thread-ddcc740b2f0c",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
+      "id": "msg-7eab4d8af8c6",
+      "message_id": "<20050428125849.0df802e4.Achim.Zeileis@R-project.org>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2005-04-28T12:58:49+02:00",
+      "subject": "[R-pkgs] update: lmtest 0.9-10",
+      "subject_clean": "update: lmtest 0.9-10",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na new version of the lmtest package is available from CRAN. Thanks to\nGiovanni Millo who provided the initial versions of several new\nfunctions (and many helpful discussions), there is new functionality for\nthe comparison of nested and non-nested linear models.\n\nFor non-nested model comparisons, the Cox test, encompassing test and \nJ test are now available.\n\nFor nested model comparisons, there is the function waldtest() which\nallows convenient specification of the models and into which H(A)C\nestimates can be plugged. Thus, waldtest() can be seen as the\n`econometric' counterpart to the anova() method, just as coeftest() can\nbe seen as the `econometric' counterpart of summary() for \"lm\" objects.\n\nBest wishes,\nZ",
+      "body_snippet": "Dear useRs,\n\na new version of the lmtest package is available from CRAN. Thanks to\nGiovanni Millo who provided the initial versions of several new\nfunctions (and many helpful discussions), there is ne",
+      "thread_id": "thread-7eab4d8af8c6",
+      "thread_depth": 0,
+      "month": "2005-04"
+    },
+    {
       "id": "msg-7eab4d8af8c6",
       "message_id": "<20050428125849.0df802e4.Achim.Zeileis@R-project.org>",
       "from_name": "Achim Zeileis",
@@ -241,6 +465,17 @@
       "root_message_id": "msg-cd8ee0fc3b6b"
     },
     {
+      "id": "thread-cd8ee0fc3b6b",
+      "subject": "Version 0.95-1 of the lme4 package",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2005-04-01T12:19:16-06:00",
+      "last_reply": "2005-04-01T12:19:16-06:00",
+      "root_message_id": "msg-cd8ee0fc3b6b"
+    },
+    {
       "id": "thread-483990c8a710",
       "subject": "Version 0.93 of GAM package on CRAN",
       "message_count": 1,
@@ -250,6 +485,28 @@
       "started": "2005-04-05T21:57:23-07:00",
       "last_reply": "2005-04-05T21:57:23-07:00",
       "root_message_id": "msg-483990c8a710"
+    },
+    {
+      "id": "thread-483990c8a710",
+      "subject": "Version 0.93 of GAM package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Trevor Hastie"
+      ],
+      "started": "2005-04-05T21:57:23-07:00",
+      "last_reply": "2005-04-05T21:57:23-07:00",
+      "root_message_id": "msg-483990c8a710"
+    },
+    {
+      "id": "thread-dff7e65d8ab3",
+      "subject": "New version of \"catspec\" package",
+      "message_count": 1,
+      "participants": [
+        "John Hendrickx"
+      ],
+      "started": "2005-04-12T11:55:48-07:00",
+      "last_reply": "2005-04-12T11:55:48-07:00",
+      "root_message_id": "msg-dff7e65d8ab3"
     },
     {
       "id": "thread-dff7e65d8ab3",
@@ -274,6 +531,17 @@
       "root_message_id": "msg-1bb4410b31b6"
     },
     {
+      "id": "thread-1bb4410b31b6",
+      "subject": "g.data version 1.6, upgrade in response to changes in R-2.1.0",
+      "message_count": 1,
+      "participants": [
+        "Brahm, David"
+      ],
+      "started": "2005-04-14T11:33:21-04:00",
+      "last_reply": "2005-04-14T11:33:21-04:00",
+      "root_message_id": "msg-1bb4410b31b6"
+    },
+    {
       "id": "thread-221b660aaf70",
       "subject": "bayesm: a package for Bayesian infererence for Marketing/Micro-Econometrics",
       "message_count": 1,
@@ -283,6 +551,28 @@
       "started": "2005-04-16T08:14:15-05:00",
       "last_reply": "2005-04-16T08:14:15-05:00",
       "root_message_id": "msg-221b660aaf70"
+    },
+    {
+      "id": "thread-221b660aaf70",
+      "subject": "bayesm: a package for Bayesian infererence for Marketing/Micro-Econometrics",
+      "message_count": 1,
+      "participants": [
+        "Peter E. Rossi"
+      ],
+      "started": "2005-04-16T08:14:15-05:00",
+      "last_reply": "2005-04-16T08:14:15-05:00",
+      "root_message_id": "msg-221b660aaf70"
+    },
+    {
+      "id": "thread-333f98998024",
+      "subject": "Version 1.0-0 of the Rcmdr package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2005-04-16T12:27:31-04:00",
+      "last_reply": "2005-04-16T12:27:31-04:00",
+      "root_message_id": "msg-333f98998024"
     },
     {
       "id": "thread-333f98998024",
@@ -307,6 +597,17 @@
       "root_message_id": "msg-1d1a987c398e"
     },
     {
+      "id": "thread-1d1a987c398e",
+      "subject": "RWinEdt 1.7-0 released",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2005-04-18T11:20:03+02:00",
+      "last_reply": "2005-04-18T11:20:03+02:00",
+      "root_message_id": "msg-1d1a987c398e"
+    },
+    {
       "id": "thread-ee5f75c0368d",
       "subject": "patch release of bayesm",
       "message_count": 1,
@@ -316,6 +617,28 @@
       "started": "2005-04-23T09:10:53-05:00",
       "last_reply": "2005-04-23T09:10:53-05:00",
       "root_message_id": "msg-ee5f75c0368d"
+    },
+    {
+      "id": "thread-ee5f75c0368d",
+      "subject": "patch release of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Peter E. Rossi"
+      ],
+      "started": "2005-04-23T09:10:53-05:00",
+      "last_reply": "2005-04-23T09:10:53-05:00",
+      "root_message_id": "msg-ee5f75c0368d"
+    },
+    {
+      "id": "thread-f6b92d67d755",
+      "subject": "Biodem 0.1/orphaning of MAlmig",
+      "message_count": 1,
+      "participants": [
+        "Federico Calboli"
+      ],
+      "started": "2005-04-24T15:14:47+01:00",
+      "last_reply": "2005-04-24T15:14:47+01:00",
+      "root_message_id": "msg-f6b92d67d755"
     },
     {
       "id": "thread-f6b92d67d755",
@@ -340,6 +663,28 @@
       "root_message_id": "msg-bfd3ab1de3d5"
     },
     {
+      "id": "thread-bfd3ab1de3d5",
+      "subject": "psy version 0.65 released",
+      "message_count": 1,
+      "participants": [
+        "falissard"
+      ],
+      "started": "2005-04-26T11:33:50+02:00",
+      "last_reply": "2005-04-26T11:33:50+02:00",
+      "root_message_id": "msg-bfd3ab1de3d5"
+    },
+    {
+      "id": "thread-bbc184592eab",
+      "subject": "GPArotation  package",
+      "message_count": 1,
+      "participants": [
+        "Paul Gilbert"
+      ],
+      "started": "2005-04-27T15:57:08-04:00",
+      "last_reply": "2005-04-27T15:57:08-04:00",
+      "root_message_id": "msg-bbc184592eab"
+    },
+    {
       "id": "thread-bbc184592eab",
       "subject": "GPArotation  package",
       "message_count": 1,
@@ -362,6 +707,17 @@
       "root_message_id": "msg-fc5557cb3c1f"
     },
     {
+      "id": "thread-fc5557cb3c1f",
+      "subject": "update: zoo 0.9-9",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2005-04-28T12:58:20+02:00",
+      "last_reply": "2005-04-28T12:58:20+02:00",
+      "root_message_id": "msg-fc5557cb3c1f"
+    },
+    {
       "id": "thread-ddcc740b2f0c",
       "subject": "new package: dynlm 0.1-0",
       "message_count": 1,
@@ -371,6 +727,28 @@
       "started": "2005-04-28T12:58:43+02:00",
       "last_reply": "2005-04-28T12:58:43+02:00",
       "root_message_id": "msg-ddcc740b2f0c"
+    },
+    {
+      "id": "thread-ddcc740b2f0c",
+      "subject": "new package: dynlm 0.1-0",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2005-04-28T12:58:43+02:00",
+      "last_reply": "2005-04-28T12:58:43+02:00",
+      "root_message_id": "msg-ddcc740b2f0c"
+    },
+    {
+      "id": "thread-7eab4d8af8c6",
+      "subject": "update: lmtest 0.9-10",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2005-04-28T12:58:49+02:00",
+      "last_reply": "2005-04-28T12:58:49+02:00",
+      "root_message_id": "msg-7eab4d8af8c6"
     },
     {
       "id": "thread-7eab4d8af8c6",

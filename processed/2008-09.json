@@ -20,6 +20,22 @@
       "month": "2008-09"
     },
     {
+      "id": "msg-47fd6fe87f92",
+      "message_id": "<C4E750CF.254E%max.kuhn@pfizer.com>",
+      "from_name": "Max",
+      "from_email_hash": "683b391ed661c070f5863decbf465c88d7809b3da1b1effc8e9572765023226e",
+      "date": "2008-09-05T21:10:39-04:00",
+      "subject": "[R-pkgs] New caret packages",
+      "subject_clean": "New caret packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New major versions of the caret packages (caret 3.37, caretLSF 1.23 and\ncaretNWS 0.23) have been uploaded to CRAN.\n\ncaret is a package for building and evaluating a wide variety of predictive\nmodels. There are functions for pre-processing, tuning models using\nresampling, visualizing the results, calculating performance and estimating\nvariable importance.  caretNWS and caretLSF are two parallel processing\nversions that can reduce the training time when multiple compute nodes are\navailable.\n\nThe project is now hosted on R-Forge. The homepage is\n\n   http://caret.r-forge.r-project.org/\n\nThe package currently includes model tuning/resampling for the following\nmodels: lm, single trees (C4.5, rpart, ctree, logistic model trees), mars\n(via earth), boosted models (ada, gbm, blackboost, glmboost, gamboost,\nlogitboost), bagged models (trees, earth, fda), randomforests (randomforest\nand cforest), rule-based models (Ripper and M5 prime), discriminant models\n(lda, fda, rda, ssda, slda), kernel methods (lssvm, ksvm, rvm, gausspr),\nnnet, nnet with initial pca step, multinom, pls, plsda, gpls, nearest\nshrunken centroids, the lasso, the elastic net, supervised pca, knn, lvq and\nNaiveBayes.\n\nRecent changes include:\n - Estimation of class probabilities from PLS discriminant analysis using\nBayes rule (in addition to softmax)\n- Added predict.train and predit.list\n- More lattice plots to visualize resampling results (xyplot, stripplot,\ndensitplot, histogram)\n- User-specified performance metrics for resampling\n- User-specified algorithms for determining the optimal tuning parameters\n(instead of highest/lowest)\n- A CHANGES files now exists to track the specifics of the version changes\n \nMax",
+      "body_snippet": "New major versions of the caret packages (caret 3.37, caretLSF 1.23 and\ncaretNWS 0.23) have been uploaded to CRAN.\n\ncaret is a package for building and evaluating a wide variety of predictive\nmodels. ",
+      "thread_id": "thread-47fd6fe87f92",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
       "id": "msg-868865ff6139",
       "message_id": "<Pine.LNX.4.64.0809091409590.5729@homer23.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -32,6 +48,38 @@
       "body_plain": "Version 3.9 of the survey package is now on CRAN.  Since the last \nannouncement (version 3.6-11, about a year ago) the main changes are\n  - Database-backed survey objects: the data can live in a SQLite (or other \nDBI-compatible) database and be loaded as needed.\n  - Ordinal logistic regression\n  - Support for the 'mitools' package and multiply-imputed data\n  - Conditioning plots, transparent scatterplots, survival and CDF plots.\n\nThere is more information on the package web page at\nhttp://faculty.washington.edu/tlumley/survey/\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
       "body_snippet": "Version 3.9 of the survey package is now on CRAN.  Since the last \nannouncement (version 3.6-11, about a year ago) the main changes are\n  - Database-backed survey objects: the data can live in a SQLit",
       "thread_id": "thread-868865ff6139",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
+      "id": "msg-868865ff6139",
+      "message_id": "<Pine.LNX.4.64.0809091409590.5729@homer23.u.washington.edu>",
+      "from_name": "Thomas Lumley",
+      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
+      "date": "2008-09-09T14:17:03-07:00",
+      "subject": "[R-pkgs] survey package",
+      "subject_clean": "survey package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 3.9 of the survey package is now on CRAN.  Since the last \nannouncement (version 3.6-11, about a year ago) the main changes are\n  - Database-backed survey objects: the data can live in a SQLite (or other \nDBI-compatible) database and be loaded as needed.\n  - Ordinal logistic regression\n  - Support for the 'mitools' package and multiply-imputed data\n  - Conditioning plots, transparent scatterplots, survival and CDF plots.\n\nThere is more information on the package web page at\nhttp://faculty.washington.edu/tlumley/survey/\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
+      "body_snippet": "Version 3.9 of the survey package is now on CRAN.  Since the last \nannouncement (version 3.6-11, about a year ago) the main changes are\n  - Database-backed survey objects: the data can live in a SQLit",
+      "thread_id": "thread-868865ff6139",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
+      "id": "msg-19a9a6f19c51",
+      "message_id": "<79ff51fb0809100156o3498531y5ef28da153a23cd6@mail.gmail.com>",
+      "from_name": "Christophe Pouzat",
+      "from_email_hash": "fd04adf62fdc4d557bf5297f7ddb0dc8f4335ae3229a010ec1def3650c4eaf50",
+      "date": "2008-09-10T10:56:06+02:00",
+      "subject": "[R-pkgs] STAR (Spike Train Analysis with R) uploaded on CRAN",
+      "subject_clean": "STAR (Spike Train Analysis with R) uploaded on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI've uploaded STAR (Spike Train Analysis with R) on CRAN two days ago.\n\nThe package is designed to analyze neuronal spike (action potential)\ntrains. It uses S3 classes and methods and makes heavy use of other\nCRAN packages like gss, R2HTML, mgcv, survival.\n\n* Analysis of both spontaneous and stimulus evoked activity is\nimplemented for single neuron spike trains as well as for many neurons\nrecorded simultaneously.\n* Several bi variate duration distribution can be automatically fitted\nto \"spontaneous\" spike trains. Tests for renewal processes are\nimplemented.\n* A non-parametric, smoothing spline based, approach to the estimation\nof the conditional intensity of the trains is also available (this\nfeature is under development).\n* The full collection of Ogata's tests (1988, JASA, 83:9) for\npoint-process models is implemented and the data set used by him\n(table 1 of the paper) is made available.\n* A new goodness of fit test for point-process is also proposed based\non the fact that the martingale of the process plotted as a function\nof the integrated conditional intensity starts behaving very quickly\nas a standard Wiener process (if the model is correct). By the way I\nhave no clean and formal proof of the latter statement so anyone able\n(and wiling) to give me some help on that is invited to send me an\nemail.\n* Many data sets are included as well as vignette (covering only part\nof the present functionalities) and several demos.\n\nAny feed-back, comment, critic, is welcome.\n\nChristophe\n\n--\nA Master Carpenter has many tools and is expert with most of them. If you\nonly know how to use a hammer, every problem starts to look like a nail.\nStay away from that trap.\nRichard B Johnson.\n--\n\nBetweeen May and October I'll be mainly staying\nin the Peter Kloppenburg's lab in Cologne, You can\ncall me there at: +49 (0)221 470 5207\n\nChristophe Pouzat\nLaboratoire de Physiologie Cerebrale\nCNRS UMR 8118\nUFR biomedicale de l'Universite Paris-Descartes\n45, rue des Saints Peres\n75006 PARIS\nFrance\n\ntel: +33 (0)1 42 86 38 28\nfax: +33 (0)1 42 86 38 30\nmobile: +33 (0)6 62 94 10 34\nweb: http://www.biomedicale.univ-paris5.fr/physcerv/C_Pouzat.html\nsip:christophe.pouzat at ekiga.net",
+      "body_snippet": "Hi all,\n\nI've uploaded STAR (Spike Train Analysis with R) on CRAN two days ago.\n\nThe package is designed to analyze neuronal spike (action potential)\ntrains. It uses S3 classes and methods and makes h",
+      "thread_id": "thread-19a9a6f19c51",
       "thread_depth": 0,
       "month": "2008-09"
     },
@@ -68,6 +116,22 @@
       "month": "2008-09"
     },
     {
+      "id": "msg-659d68a27bdb",
+      "message_id": "<74c69e370809110946q3274adco196a99b5c34fe91a@mail.gmail.com>",
+      "from_name": "David James",
+      "from_email_hash": "518f944315ecd649e58e873c2d74a6301646e9269495c3ef22ba6dde11367781",
+      "date": "2008-09-11T12:46:21-04:00",
+      "subject": "[R-pkgs] new RMySQL and new maintainer",
+      "subject_clean": "new RMySQL and new maintainer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\n[This is a re-posting of a previous announcement; I believe the\noriginal posting of a couple of days ago didn't go through.]\n\nThe latest version of RMySQL 0.6-1 is now in CRAN. Please see the NEWS\nfile for more details.\n\nAlso, I'm happy to announce that Jeff Horner\n<jeff.horner at vanderbilt.edu> has kindly agreed to maintain RMySQL from\nnow on.   Please continue sending your comments, suggestions, bug\nreports , patches, etc., to the R-sig-DB mailing list.\n\nRegards,\n--\nDavid",
+      "body_snippet": "Hello,\n\n[This is a re-posting of a previous announcement; I believe the\noriginal posting of a couple of days ago didn't go through.]\n\nThe latest version of RMySQL 0.6-1 is now in CRAN. Please see the ",
+      "thread_id": "thread-659d68a27bdb",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
       "id": "msg-39d94c8152b2",
       "message_id": "<48CE359A.4070505@stamats.de>",
       "from_name": "Matthias Kohl",
@@ -80,6 +144,38 @@
       "body_plain": "-----------------------------------------------------------------------------------------\nPackages for the computation of optimally robust estimators\n-----------------------------------------------------------------------------------------\n\nWe would like to announce the availability on CRAN (with possibly a\nminor delay until on every mirror) of new versions of our packages for\nthe computation of optimally robust estimators; i.e., \"RandVar\",\n\"ROptEst\", \"RobLox\" as well as a new package \"RobAStBase\" (not yet:\nROptRegTS and RobRex).\n\n-----------------------------------------------------------------------------------------\nDevel versions on R-forge\n-----------------------------------------------------------------------------------------\nThe development of these packages is under r-forge project RobASt\n(Robust Asymptotic Statistics):\n\nhttp://r-forge.r-project.org/projects/robast/\nhttp://robast.r-forge.r-project.org/\n\nIf you find this project interesting and would like to collaborate, you\nare warmly welcome.\n\nWe look forward to receiving questions, comments and suggestions.\n\nMatthias Kohl\nPeter Ruckdeschel\n\n-----------------------------------------------------------------------------------------\nRandVar - Implementation of random variables (version 0.6.3)\n-----------------------------------------------------------------------------------------\nThe package RandVar which includes an S4 implementation of random\nvariables together with the packages distr, distrEx and distrMod form\nthe basis of our packages on robust statistics.\n\n-----------------------------------------------------------------------------------------\nRobAStBase - Robust Asymptotic Statistics (version 0.1.0)\n-----------------------------------------------------------------------------------------\nThis is a new package including some necessary S4 class infrastructure\nlike neighborhoods, influence curves and robust models.\n\n-----------------------------------------------------------------------------------------\nROptEst - Optimally robust estimation (version 0.6.0)\n-----------------------------------------------------------------------------------------\nThis is the main package for the optimally robust estimation in smoothly\n(L2-differentiable) parametric models [optimal in the sense of the\nshrinking neighborhood setup]. By using S4 classes and methods\nthe implementation so far covers the optimally robust estimation for\nall(!) smoothly (L2-differentiable/differentiable in quadratic mean)\nparametric models which are based on a univariate distribution. Many\nwell-known parametric (in particular, exponential) families (Binomial,\nPoission, Normal, Gamma, Gumbel, ...) are L2-differentiable.\nWe include several\n   +neighborhood types (convex contamination, total variation)\n   +risks (MSE, Hampel, overshoot/undershoot),\n   +bias-types (symmetric, one-sided, asymmetric)\n   +norms (unstandardized, self-standardized, information-standardized)\nfor all these models.\nAfter installation you find a folder \"scripts\" in the package directory\nwhich includes many example scripts.\nAs the computation of optimally robust estimators involves several\nsteps, we -- in this new version -- added an interface function\n\"roptest\" which can be used to perform all steps via one function.\n\n-----------------------------------------------------------------------------------------\nRobLox - Optimally robust influence curves for location and scale\n(version 0.6.0)\n-----------------------------------------------------------------------------------------\nThis package includes functions for the computation of many well known\ninfluence curves (e.g., Huber-, Hampel-, Tukey-, Andrews-type) for\nnormal location and scale in the framework of our asymptotic setup.\nMoreover, (and for us, more importantly) it includes the functions\n\"roblox\", \"rowRoblox\" and \"colRoblox\" which can be used to compute\noptimally robust estimators in case of normal location and scale. These\nfunctions are optimized for speed and can be applied to large scale\nproblems like for instance gene expression data. Using rowRobLox the\ncomputation for a 50000 x 20 matrix takes about 2 sec. on a Centrino Duo\nwith 1.66 GHz. As a comparison (all on the same system): using apply and\nhuberM (robustbase), resp. huber (MASS) takes about 168 sec. resp 197\nsec., using apply and roblox takes about 16 minutes and using apply and\nroptest (ROptEst) takes about 1 month.\n\n-----------------------------------------------------------------------------------------\nROptRegTS - Optimally robust estimation for regression-type models\nRobRex - Optimally robust influence curves for regression and scale\n-----------------------------------------------------------------------------------------\nThese two packages which provide S4 classes and methods for the\ncomputation of optimally robust estimators in regression-type models are\nnot yet adapted to the new implementation. If you are interested in\nworking with these packages you have to use the old versions of the\nabove packages which we are pleased to provide on request (the sources\ncan also be found in the CRAN archives). But, of course, we will try to\nupdate these packages as soon as possible.\n\n-- \nDr. Matthias Kohl\nwww.stamats.de",
       "body_snippet": "-----------------------------------------------------------------------------------------\nPackages for the computation of optimally robust estimators\n--------------------------------------------------",
       "thread_id": "thread-39d94c8152b2",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
+      "id": "msg-39d94c8152b2",
+      "message_id": "<48CE359A.4070505@stamats.de>",
+      "from_name": "Matthias Kohl",
+      "from_email_hash": "d4f0ad548e5b2b7cf7a8ad59fdeac7b825fdec0788879a852168f8d932a1a177",
+      "date": "2008-09-15T12:14:50+02:00",
+      "subject": "[R-pkgs] RobASt-Packages",
+      "subject_clean": "RobASt-Packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "-----------------------------------------------------------------------------------------\nPackages for the computation of optimally robust estimators\n-----------------------------------------------------------------------------------------\n\nWe would like to announce the availability on CRAN (with possibly a\nminor delay until on every mirror) of new versions of our packages for\nthe computation of optimally robust estimators; i.e., \"RandVar\",\n\"ROptEst\", \"RobLox\" as well as a new package \"RobAStBase\" (not yet:\nROptRegTS and RobRex).\n\n-----------------------------------------------------------------------------------------\nDevel versions on R-forge\n-----------------------------------------------------------------------------------------\nThe development of these packages is under r-forge project RobASt\n(Robust Asymptotic Statistics):\n\nhttp://r-forge.r-project.org/projects/robast/\nhttp://robast.r-forge.r-project.org/\n\nIf you find this project interesting and would like to collaborate, you\nare warmly welcome.\n\nWe look forward to receiving questions, comments and suggestions.\n\nMatthias Kohl\nPeter Ruckdeschel\n\n-----------------------------------------------------------------------------------------\nRandVar - Implementation of random variables (version 0.6.3)\n-----------------------------------------------------------------------------------------\nThe package RandVar which includes an S4 implementation of random\nvariables together with the packages distr, distrEx and distrMod form\nthe basis of our packages on robust statistics.\n\n-----------------------------------------------------------------------------------------\nRobAStBase - Robust Asymptotic Statistics (version 0.1.0)\n-----------------------------------------------------------------------------------------\nThis is a new package including some necessary S4 class infrastructure\nlike neighborhoods, influence curves and robust models.\n\n-----------------------------------------------------------------------------------------\nROptEst - Optimally robust estimation (version 0.6.0)\n-----------------------------------------------------------------------------------------\nThis is the main package for the optimally robust estimation in smoothly\n(L2-differentiable) parametric models [optimal in the sense of the\nshrinking neighborhood setup]. By using S4 classes and methods\nthe implementation so far covers the optimally robust estimation for\nall(!) smoothly (L2-differentiable/differentiable in quadratic mean)\nparametric models which are based on a univariate distribution. Many\nwell-known parametric (in particular, exponential) families (Binomial,\nPoission, Normal, Gamma, Gumbel, ...) are L2-differentiable.\nWe include several\n   +neighborhood types (convex contamination, total variation)\n   +risks (MSE, Hampel, overshoot/undershoot),\n   +bias-types (symmetric, one-sided, asymmetric)\n   +norms (unstandardized, self-standardized, information-standardized)\nfor all these models.\nAfter installation you find a folder \"scripts\" in the package directory\nwhich includes many example scripts.\nAs the computation of optimally robust estimators involves several\nsteps, we -- in this new version -- added an interface function\n\"roptest\" which can be used to perform all steps via one function.\n\n-----------------------------------------------------------------------------------------\nRobLox - Optimally robust influence curves for location and scale\n(version 0.6.0)\n-----------------------------------------------------------------------------------------\nThis package includes functions for the computation of many well known\ninfluence curves (e.g., Huber-, Hampel-, Tukey-, Andrews-type) for\nnormal location and scale in the framework of our asymptotic setup.\nMoreover, (and for us, more importantly) it includes the functions\n\"roblox\", \"rowRoblox\" and \"colRoblox\" which can be used to compute\noptimally robust estimators in case of normal location and scale. These\nfunctions are optimized for speed and can be applied to large scale\nproblems like for instance gene expression data. Using rowRobLox the\ncomputation for a 50000 x 20 matrix takes about 2 sec. on a Centrino Duo\nwith 1.66 GHz. As a comparison (all on the same system): using apply and\nhuberM (robustbase), resp. huber (MASS) takes about 168 sec. resp 197\nsec., using apply and roblox takes about 16 minutes and using apply and\nroptest (ROptEst) takes about 1 month.\n\n-----------------------------------------------------------------------------------------\nROptRegTS - Optimally robust estimation for regression-type models\nRobRex - Optimally robust influence curves for regression and scale\n-----------------------------------------------------------------------------------------\nThese two packages which provide S4 classes and methods for the\ncomputation of optimally robust estimators in regression-type models are\nnot yet adapted to the new implementation. If you are interested in\nworking with these packages you have to use the old versions of the\nabove packages which we are pleased to provide on request (the sources\ncan also be found in the CRAN archives). But, of course, we will try to\nupdate these packages as soon as possible.\n\n-- \nDr. Matthias Kohl\nwww.stamats.de",
+      "body_snippet": "-----------------------------------------------------------------------------------------\nPackages for the computation of optimally robust estimators\n--------------------------------------------------",
+      "thread_id": "thread-39d94c8152b2",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
+      "id": "msg-1fb6507d56ae",
+      "message_id": "<710886E8-95E7-46B0-B1F9-3FE42F218D9D@act.ulaval.ca>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "e1091a7ef24172cab8ff1701d0e6c2c555c786b66d61ed102070f87705da8ffd",
+      "date": "2008-09-15T16:02:06-04:00",
+      "subject": "[R-pkgs] New version of actuar",
+      "subject_clean": "New version of actuar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "=== actuar: An R Package for Actuarial Science ===\n\nWe are pleased to announce the immediate availability of version 1.0-0  \nof actuar. This release follows publication of our papers in JSS (*)  \nand R News (**). From the NEWS file:\n\nVersion 1.0-0\n=============\n\nNEW FEATURES\n\n   o Improved support for regression credibility models. There is now\n     an option to make the computations with the intercept at the\n     barycenter of time. This assures that the credibility adjusted\n     regression line (or plane, or ...) lies between the individual and\n     collective ones. In addition, contracts without data are now\n     supported like in other credibility models.\n\n   o Argument 'right' for grouped.data() to allow intervals closed on\n     the right (default) or on the left.\n\n   o Method of quantile() for grouped data objects to compute the\n     inverse of the ogive.\n\nUSER-VISIBLE CHANGES\n\n   o cm() no longer returns the values of the unbiased estimators when\n     method = \"iterative\".\n\n   o Specification of regression models in cm() has changed: one should\n     now provide the regression model as a formula and the regressors\n     in a separate matrix or data frame.\n\n   o Due to above change, predict.cm() now expects 'newdata' to be a\n     data frame as for stats:::predict.lm().\n\n   o Function bstraub() is no longer exported. Users are expected to\n     use cm() as interface instead.\n\nBUG FIXES\n\n   o Functions r<foo>() are now more consistent in warning when NA's\n     (specifically NaN's) are generated (as per the change in R 2.7.0).\n\n   o frequency.portfolio was wrongly counting NAs.\n\n   o Domain of pdfs returned by aggregateDist() now restricted to\n     [0, 1].\n\n   o Quantiles are now computed correctly (and more efficiently) in 0\n     and 1 by quantile.aggregateDist().\n\n   o coverage() no longer requires a cdf when it is not needed, namely\n     when there is no deductible and no limit.\n\n\nThe CRAN page for the package is\n\n\thttp://cran.r-project.org/package=actuar\n\nThe project's web site is\n\n\thttp://www.actuar-project.org\n\nComments and contributions to the project are more than welcome.\n\n(*) http://www.jstatsoft.org/v25/i07\n(**) http://cran.r-project.org/doc/Rnews/Rnews_2008-1.pdf\n\n---\n   Vincent Goulet, Associate Professor\n   ?cole d'actuariat\n   Universit? Laval, Qu?bec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
+      "body_snippet": "=== actuar: An R Package for Actuarial Science ===\n\nWe are pleased to announce the immediate availability of version 1.0-0  \nof actuar. This release follows publication of our papers in JSS (*)  \nand ",
+      "thread_id": "thread-1fb6507d56ae",
       "thread_depth": 0,
       "month": "2008-09"
     },
@@ -116,6 +212,38 @@
       "month": "2008-09"
     },
     {
+      "id": "msg-08abf49a181e",
+      "message_id": "<Pine.LNX.4.64.0809161847440.3883@paninaro.stat-math.wu-wien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2008-09-16T18:52:39+02:00",
+      "subject": "[R-pkgs] AER 1.0-0: Applied Econometrics with R",
+      "subject_clean": "AER 1.0-0: Applied Econometrics with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.0-0 of the package \"AER\" for \"Applied Econometrics with R\" has been \nreleased to CRAN (http://CRAN.R-project.org/package=AER) a few weeks ago. \nIt accompanies\n\n   Applied Econometrics with R\n   Christian Kleiber, Achim Zeileis\n   http://www.springer.com/978-0-387-77316-2\n   http://www.amazon.com/Applied-Econometrics-R-Use/dp/0387773169/\n\nfrom Springer's useR! series.\n\nThis version contains a new package vignette\n   vignette(\"AER\", package = \"AER\")\nproviding an overview of the package. An extensive list of worked examples \nis available in a new set of demos\n   demo(package = \"AER\")\nwhich reproduce all the examples from the above book.\n\nMany of the examples and demos in the AER package use other CRAN packages for \neconometric analyses of various data sets. A collection of some of these CRAN \npackages is presented in a recently published special volume of JSS:\n\n   Econometrics in R\n   Journal of Statistical Software\n   Special Volume edited by Achim Zeileis and Roger Koenker\n   http://www.jstatsoft.org/v27/\n\nWe hope that all these provide useful information for econometric analyses \nusing R.",
+      "body_snippet": "Version 1.0-0 of the package \"AER\" for \"Applied Econometrics with R\" has been \nreleased to CRAN (http://CRAN.R-project.org/package=AER) a few weeks ago. \nIt accompanies\n\n   Applied Econometrics with R",
+      "thread_id": "thread-08abf49a181e",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
+      "id": "msg-611e7db2cf5e",
+      "message_id": "<f8e6ff050809300755j4f516a98n9d4ed69f103be19d@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-09-30T09:55:31-05:00",
+      "subject": "[R-pkgs] New package: plyr",
+      "subject_clean": "New package: plyr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "plyr is a set of tools that solves a common set of problems: you need\nto break a big problem down into manageable pieces, operate on each\npieces and then put all the pieces back together.  It's already\npossible to do this with split and the apply functions, but plyr just\nmakes it all a bit easier with:\n\n  * consistent names, arguments and outputs\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery\n  * the choice of passing chunks as rows or as variables\n\nplyr functions are named according to the type of object they input\n(first letter) and output (second letter):\n\n  * llply = from a list to a list\n  * alply = from an array (or vector, or matrix) to a list\n  * ldply = from a list to a data.frame\n  * d_ply = from a data.frame, ignore output\n  * and so on for llply, laply, ldply, l_ply, alply, aaply, adply,\na_ply, dlply, daply, dply, d_ply\n\nplyr also provides:\n\n  * m*ply which works in a similar way to mapply\n  * r*ply which works in a similar way to replicate\n\nYou can find out more at http://had.co.nz/plyr/, including a 20 page\nintroductory guide, http://had.co.nz/plyr/plyr-intro.pdf.\n\nRegards,\n\nHadley\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "plyr is a set of tools that solves a common set of problems: you need\nto break a big problem down into manageable pieces, operate on each\npieces and then put all the pieces back together.  It's alread",
+      "thread_id": "thread-611e7db2cf5e",
+      "thread_depth": 0,
+      "month": "2008-09"
+    },
+    {
       "id": "msg-611e7db2cf5e",
       "message_id": "<f8e6ff050809300755j4f516a98n9d4ed69f103be19d@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -145,6 +273,17 @@
       "root_message_id": "msg-47fd6fe87f92"
     },
     {
+      "id": "thread-47fd6fe87f92",
+      "subject": "New caret packages",
+      "message_count": 1,
+      "participants": [
+        "Max"
+      ],
+      "started": "2008-09-05T21:10:39-04:00",
+      "last_reply": "2008-09-05T21:10:39-04:00",
+      "root_message_id": "msg-47fd6fe87f92"
+    },
+    {
       "id": "thread-868865ff6139",
       "subject": "survey package",
       "message_count": 1,
@@ -154,6 +293,28 @@
       "started": "2008-09-09T14:17:03-07:00",
       "last_reply": "2008-09-09T14:17:03-07:00",
       "root_message_id": "msg-868865ff6139"
+    },
+    {
+      "id": "thread-868865ff6139",
+      "subject": "survey package",
+      "message_count": 1,
+      "participants": [
+        "Thomas Lumley"
+      ],
+      "started": "2008-09-09T14:17:03-07:00",
+      "last_reply": "2008-09-09T14:17:03-07:00",
+      "root_message_id": "msg-868865ff6139"
+    },
+    {
+      "id": "thread-19a9a6f19c51",
+      "subject": "STAR (Spike Train Analysis with R) uploaded on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Christophe Pouzat"
+      ],
+      "started": "2008-09-10T10:56:06+02:00",
+      "last_reply": "2008-09-10T10:56:06+02:00",
+      "root_message_id": "msg-19a9a6f19c51"
     },
     {
       "id": "thread-19a9a6f19c51",
@@ -178,6 +339,28 @@
       "root_message_id": "msg-659d68a27bdb"
     },
     {
+      "id": "thread-659d68a27bdb",
+      "subject": "new RMySQL and new maintainer",
+      "message_count": 1,
+      "participants": [
+        "David James"
+      ],
+      "started": "2008-09-11T12:46:21-04:00",
+      "last_reply": "2008-09-11T12:46:21-04:00",
+      "root_message_id": "msg-659d68a27bdb"
+    },
+    {
+      "id": "thread-39d94c8152b2",
+      "subject": "RobASt-Packages",
+      "message_count": 1,
+      "participants": [
+        "Matthias Kohl"
+      ],
+      "started": "2008-09-15T12:14:50+02:00",
+      "last_reply": "2008-09-15T12:14:50+02:00",
+      "root_message_id": "msg-39d94c8152b2"
+    },
+    {
       "id": "thread-39d94c8152b2",
       "subject": "RobASt-Packages",
       "message_count": 1,
@@ -200,6 +383,17 @@
       "root_message_id": "msg-1fb6507d56ae"
     },
     {
+      "id": "thread-1fb6507d56ae",
+      "subject": "New version of actuar",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2008-09-15T16:02:06-04:00",
+      "last_reply": "2008-09-15T16:02:06-04:00",
+      "root_message_id": "msg-1fb6507d56ae"
+    },
+    {
       "id": "thread-08abf49a181e",
       "subject": "AER 1.0-0: Applied Econometrics with R",
       "message_count": 1,
@@ -209,6 +403,28 @@
       "started": "2008-09-16T18:52:39+02:00",
       "last_reply": "2008-09-16T18:52:39+02:00",
       "root_message_id": "msg-08abf49a181e"
+    },
+    {
+      "id": "thread-08abf49a181e",
+      "subject": "AER 1.0-0: Applied Econometrics with R",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2008-09-16T18:52:39+02:00",
+      "last_reply": "2008-09-16T18:52:39+02:00",
+      "root_message_id": "msg-08abf49a181e"
+    },
+    {
+      "id": "thread-611e7db2cf5e",
+      "subject": "New package: plyr",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-09-30T09:55:31-05:00",
+      "last_reply": "2008-09-30T09:55:31-05:00",
+      "root_message_id": "msg-611e7db2cf5e"
     },
     {
       "id": "thread-611e7db2cf5e",

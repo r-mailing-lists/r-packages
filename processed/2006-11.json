@@ -22,6 +22,24 @@
       "month": "2006-11"
     },
     {
+      "id": "msg-b6273057673e",
+      "message_id": "<eb555e660611021627s3bc78e94rd68401ba682d1277@mail.gmail.com>",
+      "from_name": "Deepayan Sarkar",
+      "from_email_hash": "e2f6c1c06815045681b456968d2e109321e5194ba71ca82f1f6f312db1508e36",
+      "date": "2006-11-02T16:27:16-08:00",
+      "subject": "[R-pkgs] rcompletion: TAB completion for the R command line",
+      "subject_clean": "rcompletion: TAB completion for the R command line",
+      "in_reply_to": "<eb555e660610302010y5d39e4el4db81591ea13ae0@mail.gmail.com>",
+      "references": [
+        "<eb555e660610302010y5d39e4el4db81591ea13ae0@mail.gmail.com>"
+      ],
+      "body_plain": "Just a quick follow-up. Thanks to Simon Urbanek and hints from\nAlexandre Aguiar, CRAN now has a version (0.0-10) of rcompletion that\nshould work on more systems. If it still doesn't work when you think\nit should, please let me know.\n\n-Deepayan\n\nOn 10/30/06, Deepayan Sarkar <deepayan.sarkar at gmail.com> wrote:\n> CRAN now has a package called rcompletion that attempts to provide TAB\n> completion for R using the GNU readline library, intended for R\n> sessions run from a command line. From the package help page:\n> ...",
+      "body_snippet": "Just a quick follow-up. Thanks to Simon Urbanek and hints from\nAlexandre Aguiar, CRAN now has a version (0.0-10) of rcompletion that\nshould work on more systems. If it still doesn't work when you thin",
+      "thread_id": "thread-b6273057673e",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
       "id": "msg-637522f33428",
       "message_id": "<455ADDCA.9060100@agner.org>",
       "from_name": "Agner Fog",
@@ -34,6 +52,38 @@
       "body_plain": "A new package named BiasedUrn is available.\n\nThis package implements various noncentral hypergeometric distributions, \nunivariate and multivariate.\nIncludes the distribution you get when taking colored balls from an urn \nwithout replacement, with bias.\nThese distributions have many applications in models of biased sampling \nand models of evolution by natural selection.\n\nThe multivariate hypergeometric distribution can be generated as a \nspecial case.\n\nThe underlying theoretical publication is not out yet. Please see the \npackage vignette and www.agner.org/random/theory/ if you need the theory \ndetails.",
       "body_snippet": "A new package named BiasedUrn is available.\n\nThis package implements various noncentral hypergeometric distributions, \nunivariate and multivariate.\nIncludes the distribution you get when taking colore",
       "thread_id": "thread-637522f33428",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
+      "id": "msg-637522f33428",
+      "message_id": "<455ADDCA.9060100@agner.org>",
+      "from_name": "Agner Fog",
+      "from_email_hash": "30b5d9d1bb91ade5b8fdad5869b178a6430654382cbc9cdf09cd155d3c7a89f4",
+      "date": "2006-11-15T10:28:42+01:00",
+      "subject": "[R-pkgs] New package for Biased Urn Models",
+      "subject_clean": "New package for Biased Urn Models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package named BiasedUrn is available.\n\nThis package implements various noncentral hypergeometric distributions, \nunivariate and multivariate.\nIncludes the distribution you get when taking colored balls from an urn \nwithout replacement, with bias.\nThese distributions have many applications in models of biased sampling \nand models of evolution by natural selection.\n\nThe multivariate hypergeometric distribution can be generated as a \nspecial case.\n\nThe underlying theoretical publication is not out yet. Please see the \npackage vignette and www.agner.org/random/theory/ if you need the theory \ndetails.",
+      "body_snippet": "A new package named BiasedUrn is available.\n\nThis package implements various noncentral hypergeometric distributions, \nunivariate and multivariate.\nIncludes the distribution you get when taking colore",
+      "thread_id": "thread-637522f33428",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
+      "id": "msg-ee22de912381",
+      "message_id": "<1164396364.4185.42.camel@pc-racine1.economics.mcmaster.ca>",
+      "from_name": "Jeffrey Racine",
+      "from_email_hash": "0142cbe3fe3304381d2b0a61bcba57be4c715a7c0972171715ecef6315cd0493",
+      "date": "2006-11-24T14:26:04-05:00",
+      "subject": "[R-pkgs] New package `np' - nonparametric kernel smoothing methods for\tmixed datatypes",
+      "subject_clean": "New package `np' - nonparametric kernel smoothing methods for\tmixed datatypes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nA new package titled `np' is now available from CRAN.\n\nThe package implements recently developed kernel methods that seamlessly\nhandle the mix of continuous, unordered, and ordered factor datatypes\noften found in applied settings. \n\nThe package also allows users to create their own\nnonparametric/semiparametric routines using high-level function calls\n(via the function npksum()) rather than writing their own C or Fortran\ncode. Much of the code underlying the package is written in C including\nthe function npksum().\n\nCurrently, a range of methods can be found in the package including\n\n- multivariate nonparametric unconditional and conditional density\nestimation\n\n- multivariate nonparametric conditional mean and gradient estimation\n(local constant and local linear)\n\n- multivariate nonparametric conditional distribution, quantile and\ngradient estimation \n\n- nonparametric model specification tests for testing correctness of\nparametric regression models\n\n- nonparametric significance tests for nonparametric regression\n\n- semiparametric multivariate regression methods (partially linear,\nindex models, average derivative estimation, varying/smooth coefficient\nmodels)\n\nA function npplot() is implemented that allows users to visualize the\nresulting objects.\n\nA variety of methods for computing standard errors and error bounds are\nimplemented including asymptotic and resampling-based methods (the\nlatter employing the `boot' package which is required).\n\nA range of examples can be found in the examples section of the\naccompanying help files.\n\nWe caution potential users that multivariate data-driven bandwidth\nselection methods can be numerically intensive. For this reason we are\nnow using some of the functionality contained in the Rmpi package to\ndevelop an MPI-aware version of the np package that we have tentatively\ntitled the `npRmpi' package.\n\nThe np package implements a number of methods found in the newly\nreleased publication by Li and Racine (2007) titled Nonparametric\nEconometrics: Theory and Practice, Princeton University Press.\n\nSee press.princeton.edu/titles/8355.html for further details.\n\nBest regards, Jeff.\n\n-- \nProfessor J. S. Racine         Phone:  (905) 525 9140 x 23825\nDepartment of Economics        FAX:    (905) 521-8232\nMcMaster University            e-mail: racinej at mcmaster.ca\n1280 Main St. W.,Hamilton,     URL:\nhttp://www.economics.mcmaster.ca/racine/\nOntario, Canada. L8S 4M4\n\n`The generation of random numbers is too important to be left to chance'",
+      "body_snippet": "Dear R users,\n\nA new package titled `np' is now available from CRAN.\n\nThe package implements recently developed kernel methods that seamlessly\nhandle the mix of continuous, unordered, and ordered fact",
+      "thread_id": "thread-ee22de912381",
       "thread_depth": 0,
       "month": "2006-11"
     },
@@ -70,6 +120,38 @@
       "month": "2006-11"
     },
     {
+      "id": "msg-a8a38eb40850",
+      "message_id": "<Pine.LNX.4.58.0611271212540.6416@elendil.ci.tuwien.ac.at>",
+      "from_name": "Alexandros Karatzoglou",
+      "from_email_hash": "0e524417459a865a2fa3dde7cdd32d2105d4089ab3da98068f70846db3d16144",
+      "date": "2006-11-27T12:24:32+01:00",
+      "subject": "[R-pkgs] kernlab 0.9-0 on CRAN",
+      "subject_clean": "kernlab 0.9-0 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of kernlab has just been released.\nkernlab is a kernel-based Machine Learning package for R.\n\nkernlab includes the following functions:\n\n o ksvm() : Support Vector Machines for classification, regression,\n            novelty detection, native multi-class classification, support\n            for class-probability output and confidence intervals in\n            regression.\n\n o gausspr() : Gaussian Processes for classification and regression\n\n o lssvm() : Least Squares Support Vector Machines for classification\n\n o rvm() : Relevance Vector Machines for regression\n\n o specc() : Spectral Clustering\n\n o kkmeans() : Kernel k-means clustering\n\n o ranking() : Kernel-based ranking method\n\n o onlearn() : Kernel-based Online Learning algorithms for classification,\n               novelty detection and regression\n\n o kpca() : Kernel Pricipal Components Analysis\n\n o kcca() : Kernel Canonical Correlation Analysis\n\n o kfa() : Kernel Feature Analysis\n\n o sigest() : Hyperparameter estimation for the Gaussian and the Laplacian kernels\n\n o inchol() : Incomplete Cholesky decomposition method\n\n o csi() : Cholesky decomposition with side information\n\n o ipop() : Interior point-based Quadratic Optimizer\n\nKernlab also includes a range of functions enabling the easy implementation of\nnew kernel methods including functions for computing commonly used kernel\nexpressions (e.g. kernel matrix, kernel expansion, etc.) and\nimplementations of nine kernels (e.g. Linear, Gaussian, Polynomial,\nSigmoid, Laplace, String kernels, etc.) which can be used with any of the\nfunctions included in the package.\nReady computed kernel matrices and user defined kernel functions can also\nbe used.\n\nkernlab is based on the S4 object model.\nA vignette describing a large portion of the functions and features is\nincluded.\n\ncheers\nAlexandros",
+      "body_snippet": "A new version of kernlab has just been released.\nkernlab is a kernel-based Machine Learning package for R.\n\nkernlab includes the following functions:\n\n o ksvm() : Support Vector Machines for classific",
+      "thread_id": "thread-a8a38eb40850",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
+      "id": "msg-29d896870acd",
+      "message_id": "<456C4261.7050605@uni-bayreuth.de>",
+      "from_name": "Peter Ruckdeschel",
+      "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
+      "date": "2006-11-28T15:06:25+01:00",
+      "subject": "[R-pkgs] New versions for the distr-family of packages, of startupmsg, and a new package \"distrDoc\"",
+      "subject_clean": "New versions for the distr-family of packages, of startupmsg, and a new package \"distrDoc\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability on CRAN of new versions\nof our packages \"distr\" (1.8), \"distrEx\" (0.4-4), \"distrSim\" (1.8), \"distrTEst\" (1.8),\n\"startupmsg\" (0.4) as well as a new package \"distrDoc\" (1.8)\n[all of them require R >= 2.2.0]\n-----------------------------------------------------------------------------------------\n********************************* Changes ***********************************************\nof \"distr\" (1.8), \"distrEx\" (0.4-4), \"distrSim\" (1.8), \"distrTEst\" (1.8), \"startupmsg\" (0.4)\n*****************************************************************************************\n-----------------------------------------------------------------------------------------\nThere are major changes in \"distrSim\" and \"distrTest\" from this release on;\nthe more important ones can be inspected at\n\n        http://www.uni-bayreuth.de/departments/math/org/mathe7/DISTR\n\nand the pages linked to on this page.\n\nAfter package installation you may also have a look\nat NEWS(\"<pkg-name>\") for all the packages mentioned in this mail.\n\n>From this version on, we provide a more detailed manual for the distrXXX family\nin form of vignette distributed separately in package \"distrDoc\" (see below).\n\n-----------------------------------------------------------------------------------------\nShort Descriptions\n-----------------------------------------------------------------------------------------\n************ \"distr\":\n\"distr\" is to provide a conceptual treatment of random variables\n(r.v.'s) by means of S4--classes. A virtual mother class \"Distribution\"\nis introduced.\nAll distributions of the \"stats\" package are implemented as subclasses of\neither \"AbscontDistribution\" or \"DiscreteDistribution\".\n\nUsing these classes, we also provide (default) methods to automatically\ngenerate the image distributions under unary mathematical operations as\nwell as a general convolution algorithm.\n-----------------------------------------------------------------------------------------\n************ \"distrSim\":\nClasses and methods are provided for a standardized treatment of\nsimulations (also under contaminations) .\n-----------------------------------------------------------------------------------------\n************ \"distrTEst\":\nClasses and methods are provided for a standardized treatment of\nthe evaluation of statistical procedures (up to now only estimators)\nat data/simulations\n-----------------------------------------------------------------------------------------\n************ \"distrEx\":\nThis package provides some extensions to package \"distr\" like:\n* extreme value distribution classes,\n* expectations\n  +in the form E(X)  for the expectation of X where X is some\n    distribution or\n  +in the form E(X,f) for the expectation of f(X) where X is\n     some distribution and f some function in X,\n* further functionals: var, sd, IQR, mad, median\n* truncated moments,\n* distances between distributions\n  (Hellinger, Kolmogorov, total variation, \"convex contamination\")\n* lists of distributions,\n* conditional distributions in factorized form\n* conditional expectations in factorized form\n-----------------------------------------------------------------------------------------\n************ \"distrDoc\":\n\"distrDoc\" provides a common vignette to the distrXXX family\n-----------------------------------------------------------------------------------------\n************ \"startupmsg\":\nprovides utilities for start-up messages for packages\n-----------------------------------------------------------------------------------------\n\nWe look forward to receiving questions, comments and suggestions\n\nPeter Ruckdeschel\nMatthias Kohl\nThomas Stabla\nFlorian Camphausen",
+      "body_snippet": "We would like to announce the availability on CRAN of new versions\nof our packages \"distr\" (1.8), \"distrEx\" (0.4-4), \"distrSim\" (1.8), \"distrTEst\" (1.8),\n\"startupmsg\" (0.4) as well as a new package \"d",
+      "thread_id": "thread-29d896870acd",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
       "id": "msg-29d896870acd",
       "message_id": "<456C4261.7050605@uni-bayreuth.de>",
       "from_name": "Peter Ruckdeschel",
@@ -99,6 +181,28 @@
       "root_message_id": "msg-b6273057673e"
     },
     {
+      "id": "thread-b6273057673e",
+      "subject": "rcompletion: TAB completion for the R command line",
+      "message_count": 1,
+      "participants": [
+        "Deepayan Sarkar"
+      ],
+      "started": "2006-11-02T16:27:16-08:00",
+      "last_reply": "2006-11-02T16:27:16-08:00",
+      "root_message_id": "msg-b6273057673e"
+    },
+    {
+      "id": "thread-637522f33428",
+      "subject": "New package for Biased Urn Models",
+      "message_count": 1,
+      "participants": [
+        "Agner Fog"
+      ],
+      "started": "2006-11-15T10:28:42+01:00",
+      "last_reply": "2006-11-15T10:28:42+01:00",
+      "root_message_id": "msg-637522f33428"
+    },
+    {
       "id": "thread-637522f33428",
       "subject": "New package for Biased Urn Models",
       "message_count": 1,
@@ -121,6 +225,17 @@
       "root_message_id": "msg-ee22de912381"
     },
     {
+      "id": "thread-ee22de912381",
+      "subject": "New package `np' - nonparametric kernel smoothing methods for\tmixed datatypes",
+      "message_count": 1,
+      "participants": [
+        "Jeffrey Racine"
+      ],
+      "started": "2006-11-24T14:26:04-05:00",
+      "last_reply": "2006-11-24T14:26:04-05:00",
+      "root_message_id": "msg-ee22de912381"
+    },
+    {
       "id": "thread-a8a38eb40850",
       "subject": "kernlab 0.9-0 on CRAN",
       "message_count": 1,
@@ -130,6 +245,28 @@
       "started": "2006-11-27T12:24:32+01:00",
       "last_reply": "2006-11-27T12:24:32+01:00",
       "root_message_id": "msg-a8a38eb40850"
+    },
+    {
+      "id": "thread-a8a38eb40850",
+      "subject": "kernlab 0.9-0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Alexandros Karatzoglou"
+      ],
+      "started": "2006-11-27T12:24:32+01:00",
+      "last_reply": "2006-11-27T12:24:32+01:00",
+      "root_message_id": "msg-a8a38eb40850"
+    },
+    {
+      "id": "thread-29d896870acd",
+      "subject": "New versions for the distr-family of packages, of startupmsg, and a new package \"distrDoc\"",
+      "message_count": 1,
+      "participants": [
+        "Peter Ruckdeschel"
+      ],
+      "started": "2006-11-28T15:06:25+01:00",
+      "last_reply": "2006-11-28T15:06:25+01:00",
+      "root_message_id": "msg-29d896870acd"
     },
     {
       "id": "thread-29d896870acd",

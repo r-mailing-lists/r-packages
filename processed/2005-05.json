@@ -20,6 +20,22 @@
       "month": "2005-05"
     },
     {
+      "id": "msg-aa61967084e2",
+      "message_id": "<427608FE.3080201@R-project.org>",
+      "from_name": "Uwe Ligges",
+      "from_email_hash": "45a350d378cada8a3e57089106f6764e20345c5c1895ff406d935d8da081657d",
+      "date": "2005-05-02T13:03:26+02:00",
+      "subject": "[R-pkgs] RWinEdt_1.7-1 for R>=2.1.0",
+      "subject_clean": "RWinEdt_1.7-1 for R>=2.1.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear RWinEdt users,\n\nunfortunately, it seems to be impossible to support localized (i.e. \ntranslated) versions of RGui in MDI mode. The support of this feature \nhas been removed now. All the workarounds I tried caused bugs (as many \nof you told me re. RWinEdt_1.7-0). Thanks for all the bug reports!\n\nIt is recommended to use the new version of RWinEdt (1.7-1) together \nwith RGui in SDI mode (which should work with arbitrary translations).\nFurther on, only english versions of RGui in MDI mode are supported by \nRWinEdt.\n\nUwe Ligges",
+      "body_snippet": "Dear RWinEdt users,\n\nunfortunately, it seems to be impossible to support localized (i.e. \ntranslated) versions of RGui in MDI mode. The support of this feature \nhas been removed now. All the workaroun",
+      "thread_id": "thread-aa61967084e2",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
       "id": "msg-c90ad2bf67b4",
       "message_id": "<Pine.LNX.4.61.0505041830150.31655@madrid1.stat.washington.edu>",
       "from_name": "Adrian Raftery",
@@ -34,6 +50,40 @@
       "body_plain": "Bayesian Model Averaging (BMA) R Package available\n\nFree software to carry out Bayesian Model Averaging (BMA) \nin R is now available at\nhttp://cran.us.r-project.org/src/contrib/Descriptions/BMA.html\nBMA is a way of taking account of uncertainty about\nthe form of the model used by averaging across the models\nconsidered. The package includes BMA software for linear\nregression, generalized linear models and survival analysis,\nas well as various plotting routines for visualizing the BMA output.\n\nAdrian Raftery\n\n\n  -------------------------------------------------------------------\n  Adrian E. Raftery\n  Professor of Statistics and Sociology\n  Director, Center for Statistics and the Social Sciences\n  University of Washington, Box 354320\t Phone: (206) 543-4505\n  Seattle, WA 98195-4320.\t\t FAX:   (206) 221-6873\n  Web: http://www.stat.washington.edu/raftery\n  -------------------------------------------------------------------",
       "body_snippet": "Bayesian Model Averaging (BMA) R Package available\n\nFree software to carry out Bayesian Model Averaging (BMA) \nin R is now available at\nhttp://cran.us.r-project.org/src/contrib/Descriptions/BMA.html\nB",
       "thread_id": "thread-c90ad2bf67b4",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-c90ad2bf67b4",
+      "message_id": "<Pine.LNX.4.61.0505041830150.31655@madrid1.stat.washington.edu>",
+      "from_name": "Adrian Raftery",
+      "from_email_hash": "26d9fc86f2dce1a2fed06292ab13df250a48ccece617d38c187357828fdfa083",
+      "date": "2005-05-04T18:30:33-07:00",
+      "subject": "[R-pkgs] Bayesian Model Averaging (BMA) R Package available",
+      "subject_clean": "Bayesian Model Averaging (BMA) R Package available",
+      "in_reply_to": "<Pine.OSF.4.58.0312041933390.334531@lisbon2.stat.washington.edu>",
+      "references": [
+        "<Pine.OSF.4.58.0312041933390.334531@lisbon2.stat.washington.edu>"
+      ],
+      "body_plain": "Bayesian Model Averaging (BMA) R Package available\n\nFree software to carry out Bayesian Model Averaging (BMA) \nin R is now available at\nhttp://cran.us.r-project.org/src/contrib/Descriptions/BMA.html\nBMA is a way of taking account of uncertainty about\nthe form of the model used by averaging across the models\nconsidered. The package includes BMA software for linear\nregression, generalized linear models and survival analysis,\nas well as various plotting routines for visualizing the BMA output.\n\nAdrian Raftery\n\n\n  -------------------------------------------------------------------\n  Adrian E. Raftery\n  Professor of Statistics and Sociology\n  Director, Center for Statistics and the Social Sciences\n  University of Washington, Box 354320\t Phone: (206) 543-4505\n  Seattle, WA 98195-4320.\t\t FAX:   (206) 221-6873\n  Web: http://www.stat.washington.edu/raftery\n  -------------------------------------------------------------------",
+      "body_snippet": "Bayesian Model Averaging (BMA) R Package available\n\nFree software to carry out Bayesian Model Averaging (BMA) \nin R is now available at\nhttp://cran.us.r-project.org/src/contrib/Descriptions/BMA.html\nB",
+      "thread_id": "thread-c90ad2bf67b4",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-4e2c4e042dd4",
+      "message_id": "<Pine.GSO.4.33.0505051100300.17225-100000@zil.kom.auc.dk>",
+      "from_name": "Florian Wickelmaier",
+      "from_email_hash": "62f67a37e8e23c4f043132a0d0bf5fc233dbec16c6e2427096d06ed329449b1d",
+      "date": "2005-05-05T13:23:02+02:00",
+      "subject": "[R-pkgs] updated package eba 1.4-0",
+      "subject_clean": "updated package eba 1.4-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThere is an updated version of the eba package for\nelimination-by-aspects (EBA) choice models available on CRAN.\n\nIt features new functions for extracting and plotting\nthe residuals, for testing hypotheses on the parameters\n(wald.test), and for comparing sub-samples (group.test).\nThe documentation has also been updated.\nAny feedback is welcome.\n\nHappy modeling!\n\nFlorian Wickelmaier",
+      "body_snippet": "Dear all,\n\nThere is an updated version of the eba package for\nelimination-by-aspects (EBA) choice models available on CRAN.\n\nIt features new functions for extracting and plotting\nthe residuals, for te",
+      "thread_id": "thread-4e2c4e042dd4",
       "thread_depth": 0,
       "month": "2005-05"
     },
@@ -70,6 +120,22 @@
       "month": "2005-05"
     },
     {
+      "id": "msg-50a96643a076",
+      "message_id": "<42830A0F.2010206@biomserv.univ-lyon1.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
+      "date": "2005-05-12T09:47:27+02:00",
+      "subject": "[R-pkgs] Package adehabitat version 1.3",
+      "subject_clean": "Package adehabitat version 1.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.3 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- Several functions allowing the conversion from\n  and to classes of the package sp have been added.\n  Maps of class \"asc\", \"kasc\", \"area\", as well as\n  radio-monitoring of class \"traj\" can now be\n  converted to the spatial classes available in sp.\n\n- The function buffer.line() allows to compute buffer\n  around a line\n\n- The function distfacmap() converts one factor map\n  into a set of maps giving the distance to the\n  patches belonging to the different levels.\n\n- The kernel home-range estimation can now be fitted\n  using an Epanechnikov kernel (though it is still\n  optional), resulting in a quicker estimation.\n\n- The former function enfa() has been modified. It\n  now requires a data frame (available units) and\n  a vector (use of each unit). If the data consist\n  of a point pattern and of an object kasc, the\n  function data2enfa is to be used before.\n\n- The function angles() now takes an argument\n  indicating how successive relocations\n  located at the same place have to be managed.\n\n- The function as.traj now requires at least 2\n  relocations to return a trajectory\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nCl?ment Calenge\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.3 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- Several functions allowing the conversion from\n  and to classes of the pac",
+      "thread_id": "thread-50a96643a076",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
       "id": "msg-152604938a67",
       "message_id": "<4D99275E380CA94F998977EDACE548DC06265F@extas2-hba.tas.csiro.au>",
       "from_name": "Mark.Bravington at csiro.au",
@@ -82,6 +148,38 @@
       "body_plain": "There is a new version of the 'mvbutils' package (v1.1.1) available on\nCRAN.\n\nFor existing users, the main new features are:\n\n(i) 'help' now works properly with with R2.0+ (!)\n(ii) 'mvbutils' is now NAMESPACEd, so you can avoid naming conflicts\nwith other packages. (Many functions are no longer user-visible.\n(iii) Lazy-loading of individual objects is now available. Among other\nthings, this speeds up the use of 'cd' immensely with workspaces that\ncontain large objects.\n(iv) better-organized interactions between 'history' and 'cd'.\n\nFor new users, the main features of 'mvbutils' are:\n\n  * Hierarchical organization of projects and sub-projects, allowing\nswitching within a single R session, searching and moving objects\nthrough the hierarchy, objects in ancestor projects always visible from\nchild (sub)projects, etc.\n\n  * Improved function editing facilities, interfacing with whichever\ntext editor you prefer. The R command line is not frozen while editing,\nand you can have multiple edit windows open. There is also a complete\nautomatic backup system, with (as a side-effect) the ability to sort\nobjects by date.\n\n  * \"Lazy loading\" for individual objects, allowing fast & efficient\naccess to collections of biggish objects where only a few objects are\nused at a time.\n\n  * Support for flat-format (plain-text) documentation, stored along\nwith a function and editable at the same time, and viewable through\nnormal 'help'. Automatic conversion to Rd format is available if certain\nrules are followed.\n\n  * Support for nesting of 'source' calls, and for interspersing R code\nand data in the same file.\n\n  * Support for easy macro-like functions which act in their caller's\nenvironment (see also RNews 1/3), and for \"dynamically scoped\"\nfunctions.\n\n  * Graphical display of which functions call which other functions.\n\n  * numerous other lower-level utility functions and operators.\n\nPlease let me know of any comments and bug reports.\n\nMark Bravington (mark.bravington at csiro.au)\nCSIRO Mathematical & Information Sciences",
       "body_snippet": "There is a new version of the 'mvbutils' package (v1.1.1) available on\nCRAN.\n\nFor existing users, the main new features are:\n\n(i) 'help' now works properly with with R2.0+ (!)\n(ii) 'mvbutils' is now N",
       "thread_id": "thread-152604938a67",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-152604938a67",
+      "message_id": "<4D99275E380CA94F998977EDACE548DC06265F@extas2-hba.tas.csiro.au>",
+      "from_name": "Mark.Bravington at csiro.au",
+      "from_email_hash": "1760727dbf1df1aa8a04bf9be4b052304a85c59263f79bf5814d7216d8dccc9c",
+      "date": "2005-05-13T16:32:10+10:00",
+      "subject": "[R-pkgs] new version of package:mvbutils",
+      "subject_clean": "new version of package:mvbutils",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is a new version of the 'mvbutils' package (v1.1.1) available on\nCRAN.\n\nFor existing users, the main new features are:\n\n(i) 'help' now works properly with with R2.0+ (!)\n(ii) 'mvbutils' is now NAMESPACEd, so you can avoid naming conflicts\nwith other packages. (Many functions are no longer user-visible.\n(iii) Lazy-loading of individual objects is now available. Among other\nthings, this speeds up the use of 'cd' immensely with workspaces that\ncontain large objects.\n(iv) better-organized interactions between 'history' and 'cd'.\n\nFor new users, the main features of 'mvbutils' are:\n\n  * Hierarchical organization of projects and sub-projects, allowing\nswitching within a single R session, searching and moving objects\nthrough the hierarchy, objects in ancestor projects always visible from\nchild (sub)projects, etc.\n\n  * Improved function editing facilities, interfacing with whichever\ntext editor you prefer. The R command line is not frozen while editing,\nand you can have multiple edit windows open. There is also a complete\nautomatic backup system, with (as a side-effect) the ability to sort\nobjects by date.\n\n  * \"Lazy loading\" for individual objects, allowing fast & efficient\naccess to collections of biggish objects where only a few objects are\nused at a time.\n\n  * Support for flat-format (plain-text) documentation, stored along\nwith a function and editable at the same time, and viewable through\nnormal 'help'. Automatic conversion to Rd format is available if certain\nrules are followed.\n\n  * Support for nesting of 'source' calls, and for interspersing R code\nand data in the same file.\n\n  * Support for easy macro-like functions which act in their caller's\nenvironment (see also RNews 1/3), and for \"dynamically scoped\"\nfunctions.\n\n  * Graphical display of which functions call which other functions.\n\n  * numerous other lower-level utility functions and operators.\n\nPlease let me know of any comments and bug reports.\n\nMark Bravington (mark.bravington at csiro.au)\nCSIRO Mathematical & Information Sciences",
+      "body_snippet": "There is a new version of the 'mvbutils' package (v1.1.1) available on\nCRAN.\n\nFor existing users, the main new features are:\n\n(i) 'help' now works properly with with R2.0+ (!)\n(ii) 'mvbutils' is now N",
+      "thread_id": "thread-152604938a67",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-09985fe15ecc",
+      "message_id": "<4D99275E380CA94F998977EDACE548DC1AE6D3@extas2-hba.tas.csiro.au>",
+      "from_name": "Mark.Bravington at csiro.au",
+      "from_email_hash": "1760727dbf1df1aa8a04bf9be4b052304a85c59263f79bf5814d7216d8dccc9c",
+      "date": "2005-05-13T16:34:01+10:00",
+      "subject": "[R-pkgs] new version of package:debug",
+      "subject_clean": "new version of package:debug",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is a new version of the 'debug' package (v1.1.0) available on\nCRAN. For existing users, the main changes are (i) some bug fixes, and\n(ii) it is now NAMESPACEd, so you can avoid naming conflicts with other\npackages.\n\nFor new users, 'debug' is an alternative to 'trace' and 'browser',\noffering:\n\n\t*  a visible code window with line-numbered code and highlighted\nexecution point;\n\n\t*  the ability to set (conditional) breakpoints in advance, at\nany line number;\n\n\t*  the opportunity to keep going after errors;\n\n\t*  multiple debugging windows open at once (when one debuggee\ncalls another, or itself);\n\n\t*  full debugging of 'on.exit' code;\n\n\t*  the ability to move the execution point around without\nexecuting intervening statements;\n\n\t*  direct interpretation of typed-in statements, as if they were\nin the function itself.\n\t\nSee R-news 3.3 for an article on using this package.\n\t\nPlease let me know of any comments and bug reports.\n\nMark Bravington (mark.bravington at csiro.au)\nCSIRO Mathematical & Information Sciences",
+      "body_snippet": "There is a new version of the 'debug' package (v1.1.0) available on\nCRAN. For existing users, the main changes are (i) some bug fixes, and\n(ii) it is now NAMESPACEd, so you can avoid naming conflicts ",
+      "thread_id": "thread-09985fe15ecc",
       "thread_depth": 0,
       "month": "2005-05"
     },
@@ -118,6 +216,22 @@
       "month": "2005-05"
     },
     {
+      "id": "msg-cc76a19b1ca2",
+      "message_id": "<32dfe232ac71.32ac7132dfe2@gsb.uchicago.edu>",
+      "from_name": "Peter E. Rossi",
+      "from_email_hash": "b378580e904225037bff6e0ecbf2b15c48c97dae4128aeb866369d04b93ab0f8",
+      "date": "2005-05-20T11:51:12-05:00",
+      "subject": "[R-pkgs] Version 1.0-1 of bayesm",
+      "subject_clean": "Version 1.0-1 of bayesm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.0-1 of bayesm is now available on CRAN.\n\nThis is our first \"production\" version which include s much improved documentation as well as five data sets used in our book, Bayesian Statistics and Marketing.\n\npeter r\n\n\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Editor, Quantitative Marketing and Economics\n Rm 360, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081\n\n peter.rossi at ChicagoGsb.edu\n WWW: http://ChicagoGsb.edu/fac/peter.rossi\nSSRN: http://ssrn.com/author=22862\n QME: http://www.kluweronline.com/issn/1570-7156",
+      "body_snippet": "Version 1.0-1 of bayesm is now available on CRAN.\n\nThis is our first \"production\" version which include s much improved documentation as well as five data sets used in our book, Bayesian Statistics an",
+      "thread_id": "thread-cc76a19b1ca2",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
       "id": "msg-6377483a0318",
       "message_id": "<m0br73x8q8.fsf@bar.nemo-project.org>",
       "from_name": "Bjørn-Helge Mevik",
@@ -130,6 +244,38 @@
       "body_plain": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings and biplots.\n\n(The pls package is meant to supersede the pls.pcr package.)\n\n-- \nRon Wehrens and Bj?rn-Helge Mevik",
       "body_snippet": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
       "thread_id": "thread-6377483a0318",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-6377483a0318",
+      "message_id": "<m0br73x8q8.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2005-05-22T23:15:59+02:00",
+      "subject": "[R-pkgs] pls version 1.0-3",
+      "subject_clean": "pls version 1.0-3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings and biplots.\n\n(The pls package is meant to supersede the pls.pcr package.)\n\n-- \nRon Wehrens and Bj?rn-Helge Mevik",
+      "body_snippet": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
+      "thread_id": "thread-6377483a0318",
+      "thread_depth": 0,
+      "month": "2005-05"
+    },
+    {
+      "id": "msg-280d2ee13dcc",
+      "message_id": "<7B373C8F-3647-4BCD-9884-58D785222759@stat.ucla.edu>",
+      "from_name": "Jan de Leeuw",
+      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
+      "date": "2005-05-24T15:43:15-07:00",
+      "subject": "[R-pkgs] R Packages and code published in JSS in 2005",
+      "subject_clean": "R Packages and code published in JSS in 2005",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Get articles from http://www.jstatsoft.org\n\nFirth\nBradley-Terry Models in R\nVolume 12, Issue 01\n\nSturtz, Ligges, and Gelman\nR2WinBUGS: A Package for Running WinBUGS from R\nVolume 12, Issue 03\n\nMineo and Ruggieri\nA Software Tool for the Exponential Power Distribution: The normalp  \nPackage\nVolume 12, Issue 04\n\nRitz and Streibig\nBioassay Analysis Using R\nVolume 12, Issue 05\n\nBaddeley and Turner\nspatstat: An R Package for Analyzing Spatial Point Patterns\nVolume 12, Issue 06\n\nJohnstone and Silverman\nEbayesThresh: R Programs for Empirical Bayes Thresholding\nVolume 12, Issue 08\n\nNason\npinktoe: Semi-automatic Traversal of Trees\nVolume 14, Issue 01\n\nImai and Van Dyk\nMNP: R Package for Fitting the Multinomial Probit Model\nVolume 14, Issue 03\n\nButtrey\nCalling the lp_solve Linear Program Software from R, S-PLUS and Excel\nVolume 14, Issue 04\n\nZeileis and Grothendieck\nzoo: S3 Infrastructure for Regular and Irregular Time Series\nVolume 14, Issue 06\n\nTerpstra and McKean\nRank-Based Analyses of Linear Models using R\nVolume 14, Issue 07\n\n===\nJan de Leeuw; Distinguished Professor and Chair, UCLA Department of  \nStatistics;\nEditor: Journal of Multivariate Analysis, Journal of Statistical  \nSoftware\nUS mail: 8130 Math Sciences Bldg, Box 951554, Los Angeles, CA 90095-1554\nphone (310)-825-9550;  fax (310)-206-5658;  email: deleeuw at stat.ucla.edu\n.mac: jdeleeuw ++++++  aim: deleeuwjan ++++++ skype: j_deleeuw\nhomepages: http://gifi.stat.ucla.edu ++++++ http://www.cuddyvalley.org\n   \n------------------------------------------------------------------------ \n-------------------------\n           No matter where you go, there you are. --- Buckaroo Banzai\n                    http://gifi.stat.ucla.edu/sounds/nomatter.au",
+      "body_snippet": "Get articles from http://www.jstatsoft.org\n\nFirth\nBradley-Terry Models in R\nVolume 12, Issue 01\n\nSturtz, Ligges, and Gelman\nR2WinBUGS: A Package for Running WinBUGS from R\nVolume 12, Issue 03\n\nMineo a",
+      "thread_id": "thread-280d2ee13dcc",
       "thread_depth": 0,
       "month": "2005-05"
     },
@@ -163,6 +309,17 @@
       "root_message_id": "msg-aa61967084e2"
     },
     {
+      "id": "thread-aa61967084e2",
+      "subject": "RWinEdt_1.7-1 for R>=2.1.0",
+      "message_count": 1,
+      "participants": [
+        "Uwe Ligges"
+      ],
+      "started": "2005-05-02T13:03:26+02:00",
+      "last_reply": "2005-05-02T13:03:26+02:00",
+      "root_message_id": "msg-aa61967084e2"
+    },
+    {
       "id": "thread-c90ad2bf67b4",
       "subject": "Bayesian Model Averaging (BMA) R Package available",
       "message_count": 1,
@@ -172,6 +329,28 @@
       "started": "2005-05-04T18:30:33-07:00",
       "last_reply": "2005-05-04T18:30:33-07:00",
       "root_message_id": "msg-c90ad2bf67b4"
+    },
+    {
+      "id": "thread-c90ad2bf67b4",
+      "subject": "Bayesian Model Averaging (BMA) R Package available",
+      "message_count": 1,
+      "participants": [
+        "Adrian Raftery"
+      ],
+      "started": "2005-05-04T18:30:33-07:00",
+      "last_reply": "2005-05-04T18:30:33-07:00",
+      "root_message_id": "msg-c90ad2bf67b4"
+    },
+    {
+      "id": "thread-4e2c4e042dd4",
+      "subject": "updated package eba 1.4-0",
+      "message_count": 1,
+      "participants": [
+        "Florian Wickelmaier"
+      ],
+      "started": "2005-05-05T13:23:02+02:00",
+      "last_reply": "2005-05-05T13:23:02+02:00",
+      "root_message_id": "msg-4e2c4e042dd4"
     },
     {
       "id": "thread-4e2c4e042dd4",
@@ -196,6 +375,17 @@
       "root_message_id": "msg-50a96643a076"
     },
     {
+      "id": "thread-50a96643a076",
+      "subject": "Package adehabitat version 1.3",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2005-05-12T09:47:27+02:00",
+      "last_reply": "2005-05-12T09:47:27+02:00",
+      "root_message_id": "msg-50a96643a076"
+    },
+    {
       "id": "thread-152604938a67",
       "subject": "new version of package:mvbutils",
       "message_count": 1,
@@ -205,6 +395,28 @@
       "started": "2005-05-13T16:32:10+10:00",
       "last_reply": "2005-05-13T16:32:10+10:00",
       "root_message_id": "msg-152604938a67"
+    },
+    {
+      "id": "thread-152604938a67",
+      "subject": "new version of package:mvbutils",
+      "message_count": 1,
+      "participants": [
+        "Mark.Bravington at csiro.au"
+      ],
+      "started": "2005-05-13T16:32:10+10:00",
+      "last_reply": "2005-05-13T16:32:10+10:00",
+      "root_message_id": "msg-152604938a67"
+    },
+    {
+      "id": "thread-09985fe15ecc",
+      "subject": "new version of package:debug",
+      "message_count": 1,
+      "participants": [
+        "Mark.Bravington at csiro.au"
+      ],
+      "started": "2005-05-13T16:34:01+10:00",
+      "last_reply": "2005-05-13T16:34:01+10:00",
+      "root_message_id": "msg-09985fe15ecc"
     },
     {
       "id": "thread-09985fe15ecc",
@@ -229,6 +441,17 @@
       "root_message_id": "msg-cc76a19b1ca2"
     },
     {
+      "id": "thread-cc76a19b1ca2",
+      "subject": "Version 1.0-1 of bayesm",
+      "message_count": 1,
+      "participants": [
+        "Peter E. Rossi"
+      ],
+      "started": "2005-05-20T11:51:12-05:00",
+      "last_reply": "2005-05-20T11:51:12-05:00",
+      "root_message_id": "msg-cc76a19b1ca2"
+    },
+    {
       "id": "thread-6377483a0318",
       "subject": "pls version 1.0-3",
       "message_count": 1,
@@ -238,6 +461,28 @@
       "started": "2005-05-22T23:15:59+02:00",
       "last_reply": "2005-05-22T23:15:59+02:00",
       "root_message_id": "msg-6377483a0318"
+    },
+    {
+      "id": "thread-6377483a0318",
+      "subject": "pls version 1.0-3",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik"
+      ],
+      "started": "2005-05-22T23:15:59+02:00",
+      "last_reply": "2005-05-22T23:15:59+02:00",
+      "root_message_id": "msg-6377483a0318"
+    },
+    {
+      "id": "thread-280d2ee13dcc",
+      "subject": "R Packages and code published in JSS in 2005",
+      "message_count": 1,
+      "participants": [
+        "Jan de Leeuw"
+      ],
+      "started": "2005-05-24T15:43:15-07:00",
+      "last_reply": "2005-05-24T15:43:15-07:00",
+      "root_message_id": "msg-280d2ee13dcc"
     },
     {
       "id": "thread-280d2ee13dcc",

@@ -20,6 +20,22 @@
       "month": "2007-02"
     },
     {
+      "id": "msg-f32992eb504c",
+      "message_id": "<1170952132.45cb4fc4dc5dc@webmail.oregonstate.edu>",
+      "from_name": "Denis White",
+      "from_email_hash": "de4a770069f727db3e90d03ecbdb23db4216f186546e61b89fede324b543f87d",
+      "date": "2007-02-08T08:28:52-08:00",
+      "subject": "[R-pkgs] new contributed package 'stream.net'",
+      "subject_clean": "new contributed package 'stream.net'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New contributed package 'stream.net' is available on CRAN.\n\nDescription:   Functions with example data for creating, importing,\n               attributing, analyzing, and displaying stream networks\n               represented as binary trees.  Capabilities include\n               importing network topology and attributes from GIS data,\n               upstream and downstream distance matrices, stochastic\n               network generation, segmentation of network into\n               reaches, adding attributes to reaches with specified\n               statistical distributions, interpolating reach\n               attributes from sparse data, analyzing autocorrelation\n               of reach attributes, and creating maps with legends of\n               attribute data.  Target applications include dynamic\n               fish modeling.\n\nDenis White\nUS EPA\nCorvallis, Oregon, USA",
+      "body_snippet": "New contributed package 'stream.net' is available on CRAN.\n\nDescription:   Functions with example data for creating, importing,\n               attributing, analyzing, and displaying stream networks\n  ",
+      "thread_id": "thread-f32992eb504c",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
       "id": "msg-d43e41a76f5c",
       "message_id": "<38c08c270702110840v72971cd4n9b9cc9117b65c38d@mail.gmail.com>",
       "from_name": "K. B. Udaya",
@@ -32,6 +48,38 @@
       "body_plain": "Dear useRs:\n\nRelease 2.0.0 of the randomSurvivalForest package is now available.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 2.0.0\n\nRelease 2.0.0 represents a major upgrade in the functionality and stability\nof the original 1.0.0 release.  Key changes are as follows:\n\no Two new splitting rules, 'logrankscore' and 'logrankapprox', added.\n\no Expanded output from 'rsf()'.  Now out-of-bag objects 'oob.ensemble' and\n  'oob.mortality' are included in addition to the full ensemble objects\n  'ensemble' and 'mortality'.\n\no Importance values for predictors can now be calculated (set\n'importace = TRUE'\n  in the initial 'rsf()' call).  Extended 'plot.error()' to print, as\nwell as plot,\n  such values.\n\no Prediction on test data can now be implemented using 'rsf.predict()' (set\n  'forest = TRUE' in the initial 'rsf()' call).\n\no Included option 'predictorWt' used for weighted sampling of predictors when\n  growing a tree.\n\no Formula no longer restricted to main effects.  Formula for 'rsf' interpreted\n  as in typical R applications.  However, users should be aware that including\n  interactions or higher order terms in a formula may not be an optimal way to\n  grow a forest.\n\no Three types of objects are generated in an RSF analysis: '(rsf, grow)',\n  '(rsf, predict)' and '(rsf, forest)'.  Wrappers handle each type of object\n  in different ways.\n\no Improved error checking in all wrappers.\n\no Extended 'plot.variable()' wrapper to generate partial plots for predictors.\n\no Improved control over trace output.  See the 'do.trace' option in 'rsf()'.\n\no Implements the Predictive Model Markup Language specification for an\n  '(rsf, forest)' forest object.  PMML is an XML based language which\n  provides a way for applications to define statistical and data mining\n  models and to share models between PMML compliant applications.  More\n  information about PMML and the Data Mining Group can be found at\n  http://www.dmg.org.  Our implementation gives the user the ability to\n  save the geometry of a forest as a PMML XML document for export or\n  later retrieval.\n\n---------------------------------------------------------------------------------\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
       "body_snippet": "Dear useRs:\n\nRelease 2.0.0 of the randomSurvivalForest package is now available.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 2.0.0\n\nRelease 2.",
       "thread_id": "thread-d43e41a76f5c",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-d43e41a76f5c",
+      "message_id": "<38c08c270702110840v72971cd4n9b9cc9117b65c38d@mail.gmail.com>",
+      "from_name": "K. B. Udaya",
+      "from_email_hash": "ca61ebba14e7a17243e62c7766734ccb2bf4c0b6eeda64c24e96a19c14d70aa2",
+      "date": "2007-02-11T11:40:02-05:00",
+      "subject": "[R-pkgs] randomSurvivalForest 2.0.0 now available",
+      "subject_clean": "randomSurvivalForest 2.0.0 now available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs:\n\nRelease 2.0.0 of the randomSurvivalForest package is now available.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 2.0.0\n\nRelease 2.0.0 represents a major upgrade in the functionality and stability\nof the original 1.0.0 release.  Key changes are as follows:\n\no Two new splitting rules, 'logrankscore' and 'logrankapprox', added.\n\no Expanded output from 'rsf()'.  Now out-of-bag objects 'oob.ensemble' and\n  'oob.mortality' are included in addition to the full ensemble objects\n  'ensemble' and 'mortality'.\n\no Importance values for predictors can now be calculated (set\n'importace = TRUE'\n  in the initial 'rsf()' call).  Extended 'plot.error()' to print, as\nwell as plot,\n  such values.\n\no Prediction on test data can now be implemented using 'rsf.predict()' (set\n  'forest = TRUE' in the initial 'rsf()' call).\n\no Included option 'predictorWt' used for weighted sampling of predictors when\n  growing a tree.\n\no Formula no longer restricted to main effects.  Formula for 'rsf' interpreted\n  as in typical R applications.  However, users should be aware that including\n  interactions or higher order terms in a formula may not be an optimal way to\n  grow a forest.\n\no Three types of objects are generated in an RSF analysis: '(rsf, grow)',\n  '(rsf, predict)' and '(rsf, forest)'.  Wrappers handle each type of object\n  in different ways.\n\no Improved error checking in all wrappers.\n\no Extended 'plot.variable()' wrapper to generate partial plots for predictors.\n\no Improved control over trace output.  See the 'do.trace' option in 'rsf()'.\n\no Implements the Predictive Model Markup Language specification for an\n  '(rsf, forest)' forest object.  PMML is an XML based language which\n  provides a way for applications to define statistical and data mining\n  models and to share models between PMML compliant applications.  More\n  information about PMML and the Data Mining Group can be found at\n  http://www.dmg.org.  Our implementation gives the user the ability to\n  save the geometry of a forest as a PMML XML document for export or\n  later retrieval.\n\n---------------------------------------------------------------------------------\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, Suite L1\nClemmons, NC 27012",
+      "body_snippet": "Dear useRs:\n\nRelease 2.0.0 of the randomSurvivalForest package is now available.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEASE 2.0.0\n\nRelease 2.",
+      "thread_id": "thread-d43e41a76f5c",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-609104c7e80b",
+      "message_id": "<20070213195802.GA14089@athene.togaware.com>",
+      "from_name": "Graham Williams",
+      "from_email_hash": "1ef1df4ed52717e8ede33b680837f556dbbb4c9b6976225abdd11fb9ec5b5ce6",
+      "date": "2007-02-14T06:58:02+11:00",
+      "subject": "[R-pkgs] New version of rattle released",
+      "subject_clean": "New version of rattle released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten copmletely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quite a lot of activity since the last update, including:\n\nTransform:\n        Now include basic imputation of missing values. More to follow.\n\nModels: \n        Move to using ada for boosting.\n        Better missing value handling for random forest\n        Use arules package for market basket analysis\n        Add more model visualisations\n\nExport:\n        RPart PMML export completed.\n        PMML export has been separated out to its own package (pmml)\n\nComplete change log available at\n\n\thttp://rattle.togaware.com/changes.html\n\nRattle mailing list at\n\n\thttp://groups.google.com/group/rattle-users\n\nRegards,\nGraham",
+      "body_snippet": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten copmletely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quit",
+      "thread_id": "thread-609104c7e80b",
       "thread_depth": 0,
       "month": "2007-02"
     },
@@ -68,6 +116,22 @@
       "month": "2007-02"
     },
     {
+      "id": "msg-eac049bd6e94",
+      "message_id": "<20070214094140.GA17839@athene.togaware.com>",
+      "from_name": "Graham Williams",
+      "from_email_hash": "1ef1df4ed52717e8ede33b680837f556dbbb4c9b6976225abdd11fb9ec5b5ce6",
+      "date": "2007-02-14T20:41:40+11:00",
+      "subject": "[R-pkgs] New PMML package",
+      "subject_clean": "New PMML package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package is now available on CRAN - pmml.\n\nPMML is the Predictive Modelling Markup Language, and is accepted by a\nnumber of large database and data warehouse systems (IBM DB2 and NCR\nTeradata) for deployment of models as SQL.\n\nThe current package is an \"early release\" in that it is very basic (and\nprimarily supports the Rattle package). But it is a start! It currently\nsupports rpart classification trees and kmeans clusters.\n\nContributions of support for other models are welcome.\n\nRegards,\nGraham",
+      "body_snippet": "A new package is now available on CRAN - pmml.\n\nPMML is the Predictive Modelling Markup Language, and is accepted by a\nnumber of large database and data warehouse systems (IBM DB2 and NCR\nTeradata) fo",
+      "thread_id": "thread-eac049bd6e94",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
       "id": "msg-a711d97d8c0d",
       "message_id": "<20070214100010.GA18511@athene.togaware.com>",
       "from_name": "Graham Williams",
@@ -80,6 +144,38 @@
       "body_plain": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten completely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quite a lot of activity since the last update, including:\n\nTransform:\n        Now include basic imputation of missing values. More to follow.\n\nModels: \n        Move to using ada for boosting.\n        Better missing value handling for random forest\n        Use arules package for market basket analysis\n        Add more model visualisations\n\nExport:\n        RPart PMML export completed.\n        PMML export has been separated out to its own package (pmml)\n\nComplete change log available at\n\n\thttp://rattle.togaware.com/changes.html\n\nRattle mailing list at\n\n\thttp://groups.google.com/group/rattle-users\n\nRegards,\nGraham",
       "body_snippet": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten completely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quit",
       "thread_id": "thread-a711d97d8c0d",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-a711d97d8c0d",
+      "message_id": "<20070214100010.GA18511@athene.togaware.com>",
+      "from_name": "Graham Williams",
+      "from_email_hash": "1ef1df4ed52717e8ede33b680837f556dbbb4c9b6976225abdd11fb9ec5b5ce6",
+      "date": "2007-02-14T21:00:10+11:00",
+      "subject": "[R-pkgs] New version of rattle released",
+      "subject_clean": "New version of rattle released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten completely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quite a lot of activity since the last update, including:\n\nTransform:\n        Now include basic imputation of missing values. More to follow.\n\nModels: \n        Move to using ada for boosting.\n        Better missing value handling for random forest\n        Use arules package for market basket analysis\n        Add more model visualisations\n\nExport:\n        RPart PMML export completed.\n        PMML export has been separated out to its own package (pmml)\n\nComplete change log available at\n\n\thttp://rattle.togaware.com/changes.html\n\nRattle mailing list at\n\n\thttp://groups.google.com/group/rattle-users\n\nRegards,\nGraham",
+      "body_snippet": "A new version of Rattle (2.1.123), a Gnome-base GUI for data mining,\nwritten completely in R, and available on GNU/Linux, Unix, Mac OSX, and\nMS/Windows, has been released to CRAN.\n\nThere has been quit",
+      "thread_id": "thread-a711d97d8c0d",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-cc05d2083ebb",
+      "message_id": "<Pine.OSF.4.58.0702121514210.426251@sirppi.helsinki.fi>",
+      "from_name": "Jukka Jokinen",
+      "from_email_hash": "165ba5bbb64d8ea8d841c49308395d9cb997c7dc7aa0d18701d815f505e7c2e0",
+      "date": "2007-02-15T13:30:47+02:00",
+      "subject": "[R-pkgs] New package 'drm' for repeated categorical data analysis",
+      "subject_clean": "New package 'drm' for repeated categorical data analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nA new package 'drm', version 0.5-4, is available on CRAN.\n\nThe drm package provides functions for marginal regression analysis of\nrepeated (or otherwise clustered) binary, ordinal and nominal responses.\nThis package can be considered as a likelihood-based alternative to GEE\napproach for marginal regression. In addition to regression modelling,\nseveral temporal and latent variable models for the associations between\nrepeated responses can be specified. In other words, the package provides\njoint regression and association modelling for repeated categorical data.\n\nFor longitudinal studies with dropout, the package also provides a\npossibility to model the dropout mechanism by adding a selection model on\ntop of the joint regression and association model. This can be used to\nexplore the effect of dropout on the regression and association parameters\nwhen dropout is considered nonignorable.\n\nThe novelty of the proposed approach is that there exists an explicit\nsolution for the joint distribution, and the parameterisation has an\ninherent unit-sum constraint, which substantially facilitate maximum\nlikelihood fitting for datasets with large cluster sizes. For an\napplication to a binary response with 12 repeated measurements, see the\nhelp-file of function drm.\n\nFor more information, see:\nhttp://www.helsinki.fi/~jtjokine/drm/\n\nBug reports, comments or suggestions are welcome.\n\nbest,\nJukka Jokinen",
+      "body_snippet": "Dear useRs,\n\nA new package 'drm', version 0.5-4, is available on CRAN.\n\nThe drm package provides functions for marginal regression analysis of\nrepeated (or otherwise clustered) binary, ordinal and nom",
+      "thread_id": "thread-cc05d2083ebb",
       "thread_depth": 0,
       "month": "2007-02"
     },
@@ -113,6 +209,17 @@
       "root_message_id": "msg-f32992eb504c"
     },
     {
+      "id": "thread-f32992eb504c",
+      "subject": "new contributed package 'stream.net'",
+      "message_count": 1,
+      "participants": [
+        "Denis White"
+      ],
+      "started": "2007-02-08T08:28:52-08:00",
+      "last_reply": "2007-02-08T08:28:52-08:00",
+      "root_message_id": "msg-f32992eb504c"
+    },
+    {
       "id": "thread-d43e41a76f5c",
       "subject": "randomSurvivalForest 2.0.0 now available",
       "message_count": 1,
@@ -122,6 +229,28 @@
       "started": "2007-02-11T11:40:02-05:00",
       "last_reply": "2007-02-11T11:40:02-05:00",
       "root_message_id": "msg-d43e41a76f5c"
+    },
+    {
+      "id": "thread-d43e41a76f5c",
+      "subject": "randomSurvivalForest 2.0.0 now available",
+      "message_count": 1,
+      "participants": [
+        "K. B. Udaya"
+      ],
+      "started": "2007-02-11T11:40:02-05:00",
+      "last_reply": "2007-02-11T11:40:02-05:00",
+      "root_message_id": "msg-d43e41a76f5c"
+    },
+    {
+      "id": "thread-609104c7e80b",
+      "subject": "New version of rattle released",
+      "message_count": 1,
+      "participants": [
+        "Graham Williams"
+      ],
+      "started": "2007-02-14T06:58:02+11:00",
+      "last_reply": "2007-02-14T06:58:02+11:00",
+      "root_message_id": "msg-609104c7e80b"
     },
     {
       "id": "thread-609104c7e80b",
@@ -146,6 +275,17 @@
       "root_message_id": "msg-eac049bd6e94"
     },
     {
+      "id": "thread-eac049bd6e94",
+      "subject": "New PMML package",
+      "message_count": 1,
+      "participants": [
+        "Graham Williams"
+      ],
+      "started": "2007-02-14T20:41:40+11:00",
+      "last_reply": "2007-02-14T20:41:40+11:00",
+      "root_message_id": "msg-eac049bd6e94"
+    },
+    {
       "id": "thread-a711d97d8c0d",
       "subject": "New version of rattle released",
       "message_count": 1,
@@ -155,6 +295,28 @@
       "started": "2007-02-14T21:00:10+11:00",
       "last_reply": "2007-02-14T21:00:10+11:00",
       "root_message_id": "msg-a711d97d8c0d"
+    },
+    {
+      "id": "thread-a711d97d8c0d",
+      "subject": "New version of rattle released",
+      "message_count": 1,
+      "participants": [
+        "Graham Williams"
+      ],
+      "started": "2007-02-14T21:00:10+11:00",
+      "last_reply": "2007-02-14T21:00:10+11:00",
+      "root_message_id": "msg-a711d97d8c0d"
+    },
+    {
+      "id": "thread-cc05d2083ebb",
+      "subject": "New package 'drm' for repeated categorical data analysis",
+      "message_count": 1,
+      "participants": [
+        "Jukka Jokinen"
+      ],
+      "started": "2007-02-15T13:30:47+02:00",
+      "last_reply": "2007-02-15T13:30:47+02:00",
+      "root_message_id": "msg-cc05d2083ebb"
     },
     {
       "id": "thread-cc05d2083ebb",

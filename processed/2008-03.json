@@ -20,6 +20,22 @@
       "month": "2008-03"
     },
     {
+      "id": "msg-b9363bdaa931",
+      "message_id": "<200803071145.55715.arne.henningsen@googlemail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2008-03-07T11:45:55+01:00",
+      "subject": "[R-pkgs] Packages micEcon, sampleSelection, and maxLik",
+      "subject_clean": "Packages micEcon, sampleSelection, and maxLik",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Users:\n\nWe have splitted up the micEcon package into three packages:\n\na) Package \"maxLik\" provides tools for maximum likelihood estimations \n(see http://www.maxLik.org).\n\nb) Package \"sampleSelection\" provides tools for estimating Heckman-type sample \nselection/generalized tobit models (see http://www.sampleSelection.org).\n\nc) Package \"micEcon\" contains the remainder, i.e. mainly tools for \nmicroeconomic demand and firm models, e.g. estimating the \"Almost Ideal \nDemand System\" or the \"Symmetric Normalized Quadratic\" / \"Symmetric \nGeneralized McFadden\" profit function (see http://www.micEcon.org).\n\nAll these packages are available for download from CRAN and from their \nwebsites (see above).\n\nAny comments and suggestions on these packages are welcome!\nOtt & Arne\n\n-- \nArne Henningsen\nDepartment of Agricultural Economics\nUniversity of Kiel\nOlshausenstr. 40\nD-24098 Kiel (Germany)\nTel: +49-431-880 4445\nFax: +49-431-880 1397\nahenningsen at agric-econ.uni-kiel.de\nhttp://www.uni-kiel.de/agrarpol/ahenningsen/",
+      "body_snippet": "Dear R Users:\n\nWe have splitted up the micEcon package into three packages:\n\na) Package \"maxLik\" provides tools for maximum likelihood estimations \n(see http://www.maxLik.org).\n\nb) Package \"sampleSele",
+      "thread_id": "thread-b9363bdaa931",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
       "id": "msg-b39d5f207063",
       "message_id": "<FC7768358736E54AB330E0B99FFB5E1F566F04@GSBHEX2V.gsb.uchicago.edu>",
       "from_name": "Rossi, Peter E.",
@@ -32,6 +48,40 @@
       "body_plain": "bayesm version 2.2-0 is now available on CRAN.\n\nMajor changes include:\n\n1. general density estimation using a Dirichlet Process Prior and a\nnormal base\n2. linear instrumental variable models with unknown error distributions\n   (the Bayesian analogue of IV methods).  Achieved via DP priors.\n\npeter r\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Director, Kilts Center for Marketing\n Editor, Quantitative Marketing and Economics\n Rm 353, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081 \n WWW: http://ChicagoGsb.edu/fac/peter.rossi\n SSRN: http://ssrn.com/author=22862",
       "body_snippet": "bayesm version 2.2-0 is now available on CRAN.\n\nMajor changes include:\n\n1. general density estimation using a Dirichlet Process Prior and a\nnormal base\n2. linear instrumental variable models with unkn",
       "thread_id": "thread-b39d5f207063",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-b39d5f207063",
+      "message_id": "<FC7768358736E54AB330E0B99FFB5E1F566F04@GSBHEX2V.gsb.uchicago.edu>",
+      "from_name": "Rossi, Peter E.",
+      "from_email_hash": "32784d767b76eab76f8bf12676f4fe1c082737e44048a04657ec8a500e3f5318",
+      "date": "2008-03-07T13:41:51-06:00",
+      "subject": "[R-pkgs] bayesm version 2.2-0",
+      "subject_clean": "bayesm version 2.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "bayesm version 2.2-0 is now available on CRAN.\n\nMajor changes include:\n\n1. general density estimation using a Dirichlet Process Prior and a\nnormal base\n2. linear instrumental variable models with unknown error distributions\n   (the Bayesian analogue of IV methods).  Achieved via DP priors.\n\npeter r\n\n................................\n Peter E. Rossi\n Joseph T. and Bernice S. Lewis Professor of Marketing and Statistics\n Director, Kilts Center for Marketing\n Editor, Quantitative Marketing and Economics\n Rm 353, Graduate School of Business, U of Chicago\n 5807 S. Woodlawn Ave, Chicago IL 60637\n Tel: (773) 702-7513   |   Fax: (773) 834-2081 \n WWW: http://ChicagoGsb.edu/fac/peter.rossi\n SSRN: http://ssrn.com/author=22862",
+      "body_snippet": "bayesm version 2.2-0 is now available on CRAN.\n\nMajor changes include:\n\n1. general density estimation using a Dirichlet Process Prior and a\nnormal base\n2. linear instrumental variable models with unkn",
+      "thread_id": "thread-b39d5f207063",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-9fcb3c2961bd",
+      "message_id": "<Pine.LNX.4.64.0803071525480.18037@pathos.globalovermind.com>",
+      "from_name": "adinno at post.harvard.edu",
+      "from_email_hash": "da5e19bf0841cd5ec686fd4827fa8d18d816ae329115499921aae73d5276a98f",
+      "date": "2008-03-07T15:27:29-08:00",
+      "subject": "[R-pkgs] A new version of paran is available",
+      "subject_clean": "A new version of paran is available",
+      "in_reply_to": "<Pine.LNX.4.64.0803071224170.12743@pathos.globalovermind.com>",
+      "references": [
+        "<Pine.LNX.4.64.0803071224170.12743@pathos.globalovermind.com>"
+      ],
+      "body_plain": "Horn's parallel analysis method of deciding how many factors to retain has \nbeen implemented in R in the paran package. This update to paran adds an \noption to produce a graph of the analysis along the lines of what Horn \npresented in his seminal 1965 paper. It also makes a few minor improvements \nto the formatting of the program's output.\n\nAlexis Dinno",
+      "body_snippet": "Horn's parallel analysis method of deciding how many factors to retain has \nbeen implemented in R in the paran package. This update to paran adds an \noption to produce a graph of the analysis along th",
+      "thread_id": "thread-9fcb3c2961bd",
       "thread_depth": 0,
       "month": "2008-03"
     },
@@ -70,6 +120,22 @@
       "month": "2008-03"
     },
     {
+      "id": "msg-ad24653b9bd1",
+      "message_id": "<Pine.GSO.4.56.0803131616540.29333@laurel.few.vu.nl>",
+      "from_name": "Katharine Mullen",
+      "from_email_hash": "ad891a8b1d087839368a3404126b8e88083d7988c4b52dc00429156bae947a21",
+      "date": "2008-03-13T16:23:45+01:00",
+      "subject": "[R-pkgs] new version of minpack.lm",
+      "subject_clean": "new version of minpack.lm",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package minpack.lm allows nonlinear regression problems to be\naddressed with a modification of the Levenberg-Marquardt algorithm based\non the implementation of 'lmder' and 'lmdif' in MINPACK. Version 1.0-8 of\nthe package is now available on CRAN.\n\nChanges in version 1.0-8 include:\n\n    o possibility to obtain standard error estimates on the parameters\n      via new methods for the generic functions 'summary' and 'vcov'\n\n    o possibility to extract other information via new methods for the\n      generic functions 'coef', 'deviance', 'df.residual', 'print',\n      and 'residuals'\n\n    o the argument 'control' of 'nls.lm' now defaults to\n      'nls.lm.control()'; 'nls.control.lm' allows a maximum number of\n      iterations to be specified; when the element 'nprint' of the\n      'control' argument of a call to 'nls.lm' is an integer greater\n      than 0, the residual sum of squares is now included in the\n      information printed every 'nprint' iterations\n\n`   o the list returned by 'nls.lm' includes elements 'niter' and\n      'deviance' that represent the number of iterations performed and\n      the residual sum of squares, respectively\n\nside-note on Levenberg-Marquardt (LM) versus Gauss-Newton (GN):\nThere was some discussion\n(http://finzi.psych.upenn.edu/R/Rhelp02a/archive/108758.html) on Rhelp\nregarding whether one comes across real-world problems in which LM\nperforms better than GN.  I have been seeing such problems recently in\nsome applications where GN as implemented in 'nls' reduces the step to a\nvery small value, resulting in little change in the residual sum of\nsquares from the starting values, whereas both NL2SOL applied via 'nls'\ncalled with 'algorithm=\"port\"' or LM as implemented in\n'minpack.lm::nls.lm' significantly reduce the RSS.  The implementation of\nNL2SOL is slower by a significant factor on these problems as compared to\neither the GN or LM implementations, making use of 'minpack.lm::nls.lm'\nattractive.  Note that these problems may be considered pathological;\nthere are issues with near collinearity of columns of the Jacobian and\nwith the assumption that the residuals are Gaussian.\n\nKate Mullen\nTimur Elzhov",
+      "body_snippet": "The package minpack.lm allows nonlinear regression problems to be\naddressed with a modification of the Levenberg-Marquardt algorithm based\non the implementation of 'lmder' and 'lmdif' in MINPACK. Vers",
+      "thread_id": "thread-ad24653b9bd1",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
       "id": "msg-467c3b9ced92",
       "message_id": "<640EC882-0095-4A7E-94F6-67DE7333E639@kagi.com>",
       "from_name": "Ken Beath",
@@ -82,6 +148,38 @@
       "body_plain": "A new package 'randomLCA' is available on CRAN.\n\nIts main purpose is to fit latent class models with random effects,  \nsuch as those used in diagnostic testing.  This methodology can also  \nbe applied in other areas. It also fits standard latent class and will  \nplot.\n\nKen",
       "body_snippet": "A new package 'randomLCA' is available on CRAN.\n\nIts main purpose is to fit latent class models with random effects,  \nsuch as those used in diagnostic testing.  This methodology can also  \nbe applied",
       "thread_id": "thread-467c3b9ced92",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-467c3b9ced92",
+      "message_id": "<640EC882-0095-4A7E-94F6-67DE7333E639@kagi.com>",
+      "from_name": "Ken Beath",
+      "from_email_hash": "828012f8d91e7aec02576a685516a3192623cbd0772e74805d42b3a808a25e6c",
+      "date": "2008-03-25T15:09:30+11:00",
+      "subject": "[R-pkgs] new package 'randomLCA'",
+      "subject_clean": "new package 'randomLCA'",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package 'randomLCA' is available on CRAN.\n\nIts main purpose is to fit latent class models with random effects,  \nsuch as those used in diagnostic testing.  This methodology can also  \nbe applied in other areas. It also fits standard latent class and will  \nplot.\n\nKen",
+      "body_snippet": "A new package 'randomLCA' is available on CRAN.\n\nIts main purpose is to fit latent class models with random effects,  \nsuch as those used in diagnostic testing.  This methodology can also  \nbe applied",
+      "thread_id": "thread-467c3b9ced92",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-343934c9d5ef",
+      "message_id": "<200803251033.19872.jeremy.stephens@vanderbilt.edu>",
+      "from_name": "Jeremy Stephens",
+      "from_email_hash": "d5024d9fb401f7aeb4ac41b42af3b5efdd54d8cb5ab64b07e90a702e637b5269",
+      "date": "2008-03-25T10:33:19-05:00",
+      "subject": "[R-pkgs] New package: yaml 1.0 released to CRAN",
+      "subject_clean": "New package: yaml 1.0 released to CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI've released a new package to CRAN called 'yaml'.  It allows R to \nparse YAML documents (http://yaml.org) into R objects, and there are \na few methods to convert R objects into YAML.  The package uses the \nSyck YAML parser (http://whytheluckystiff.net/syck/), the same parser \nthat Ruby and other languages use to parse YAML.\n\nFor more information, please visit:\nhttp://biostat.mc.vanderbilt.edu/YamlR\n\nThanks!\nJeremy\n-- \nJeremy Stephens\nComputer Systems Analyst I\nDepartment of Biostatistics\nVanderbilt University",
+      "body_snippet": "Hi all,\n\nI've released a new package to CRAN called 'yaml'.  It allows R to \nparse YAML documents (http://yaml.org) into R objects, and there are \na few methods to convert R objects into YAML.  The pa",
+      "thread_id": "thread-343934c9d5ef",
       "thread_depth": 0,
       "month": "2008-03"
     },
@@ -118,6 +216,22 @@
       "month": "2008-03"
     },
     {
+      "id": "msg-876d3b3ddf5e",
+      "message_id": "<000001c88ed0$b41dc210$b5ac7b82@massey.ac.nz>",
+      "from_name": "Mark Stevenson",
+      "from_email_hash": "c4c9aa6b643877cb272d6571958870fc6f1cc820cb28a3597b42f3fa83a584c7",
+      "date": "2008-03-26T12:34:00+13:00",
+      "subject": "[R-pkgs] New package: epiR",
+      "subject_clean": "New package: epiR",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package 'epiR' is available on CRAN. Package description as follows:\n\nPackage: epiR\nVersion: 0.9-3\nDate: 2008-03-24\nTitle: Functions for analysing epidemiological data\nAuthor: Mark Stevenson <M.Stevenson at massey.ac.nz> with contributions \n\tfrom Telmo Nunes, Javier Sanchez, and Ron Thornton.\nMaintainer: Mark Stevenson <M.Stevenson at massey.ac.nz>\nDescription: A package for analysing epidemiological data. Contains\nfunctions\n\tfor directly and indirectly adjusting measures of disease frequency,\n\tquantifying measures of association on the basis of single or\nmultiple\n\tstrata of count data presented in a contingency table, and computing\n\n\tconfidence intervals around incidence risk and incidence rate\nestimates.\n\tMiscellaneous functions for use in meta-analysis, diagnostic test \n\tinterpretation, and sample size calculations.\nDepends: R (>= 2.0.0)\nLicense: GPL (>= 2)\nURL: http://epicentre.massey.ac.nz\n\nRegards,\n\nMark S\n\n************************************************* \nMark Stevenson \nAssociate Professor, Veterinary Epidemiology \nIVABS, Massey University \nPrivate Bag 11-222 \nPalmerston North New Zealand \nPh: + 64 (06) 350 5915 \nFx: + 64 (06) 350 5716 \nM.Stevenson at massey.ac.nz",
+      "body_snippet": "A new package 'epiR' is available on CRAN. Package description as follows:\n\nPackage: epiR\nVersion: 0.9-3\nDate: 2008-03-24\nTitle: Functions for analysing epidemiological data\nAuthor: Mark Stevenson <M.",
+      "thread_id": "thread-876d3b3ddf5e",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
       "id": "msg-0425cb9c0355",
       "message_id": "<90c54480803260841h2c70b846he588805b60d034cd@mail.gmail.com>",
       "from_name": "Longhai Li",
@@ -130,6 +244,38 @@
       "body_plain": "Hi R Users:\n\nThis package provides two generic functions for performing Markov\nchain sampling in a naive way for a user-defined target distribution,\nwhich involves only continuous variables. The function \"gibbs_met\"\nperforms Gibbs sampling with each 1-dimensional distribution sampled\nwith Metropolis update using Gaussian proposal distribution centered\nat the previous state. The function \"met_gaussian\" updates the whole\nstate with Metropolis method using independent Gaussian proposal\ndistribution centered at the previous state. The sampling is carried\nout without considering any special tricks for improving efficiency.\nThis package is aimed at only routine applications in\nmoderate-dimensional problems.\n\nThe website for this software is\n\n        http://math.usask.ca/~longhai/software/gibbs.met/release.html\n\n-- \n\nLonghai Li, PhD\n\nAssistant Professor\nDepartment of Mathematics and Statistics\nUniversity of Saskatchewan\n\nHomepage: http://math.usask.ca/~longhai",
       "body_snippet": "Hi R Users:\n\nThis package provides two generic functions for performing Markov\nchain sampling in a naive way for a user-defined target distribution,\nwhich involves only continuous variables. The funct",
       "thread_id": "thread-0425cb9c0355",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-0425cb9c0355",
+      "message_id": "<90c54480803260841h2c70b846he588805b60d034cd@mail.gmail.com>",
+      "from_name": "Longhai Li",
+      "from_email_hash": "c1c74320fd1b5ff0326dd595351c021b9f4ea7473361818d2dba8ed70e9af70c",
+      "date": "2008-03-26T09:41:14-06:00",
+      "subject": "[R-pkgs] Naive Gibbs Sampling with Metropolis Steps (pkg: gibbs.met)",
+      "subject_clean": "Naive Gibbs Sampling with Metropolis Steps (pkg: gibbs.met)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R Users:\n\nThis package provides two generic functions for performing Markov\nchain sampling in a naive way for a user-defined target distribution,\nwhich involves only continuous variables. The function \"gibbs_met\"\nperforms Gibbs sampling with each 1-dimensional distribution sampled\nwith Metropolis update using Gaussian proposal distribution centered\nat the previous state. The function \"met_gaussian\" updates the whole\nstate with Metropolis method using independent Gaussian proposal\ndistribution centered at the previous state. The sampling is carried\nout without considering any special tricks for improving efficiency.\nThis package is aimed at only routine applications in\nmoderate-dimensional problems.\n\nThe website for this software is\n\n        http://math.usask.ca/~longhai/software/gibbs.met/release.html\n\n-- \n\nLonghai Li, PhD\n\nAssistant Professor\nDepartment of Mathematics and Statistics\nUniversity of Saskatchewan\n\nHomepage: http://math.usask.ca/~longhai",
+      "body_snippet": "Hi R Users:\n\nThis package provides two generic functions for performing Markov\nchain sampling in a naive way for a user-defined target distribution,\nwhich involves only continuous variables. The funct",
+      "thread_id": "thread-0425cb9c0355",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-c908055dfdec",
+      "message_id": "<07E228A5BE53C24CAD490193A7381BBBFC3AFF@LP-EXCHVS07.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2008-03-26T10:55:00-06:00",
+      "subject": "[R-pkgs] Update of TeachingDemos package",
+      "subject_clean": "Update of TeachingDemos package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is to announce that versio 2.0 of the TeachingDemos package is now\non CRAN (and hopefully soon to a mirror near you).\n\nThis is a major upgrade of the package, some of the improvements\ninclude:\n\nThe package now uses an NAMESPACE so it is easier to load just the parts\nthat you need.\n\nSome of the GUI demonstrations now use tkrplot so that the graph is in\nthe same window as the controls (there are still 'old' versions of these\nfunctions available if you want the old functionality).  The rest of the\nGUI demos will be updated to use tkrplot as well, and after R2.7 comes\nout they all will be upgraded to use the themed widgets to give a more\nuniform look with your OS.\n\nMany of the examples sections of the help pages have replaced\n\"\\dontrun{\" with \"if(interactive()){\" so that they will be run by the\n\"example\" function, but still not block in the automatic checking.  I\nrecommend running \"example\" with the argument \"ask=FALSE\", otherwise you\nwill need to hit enter 2-4 times each time a diolog pops up and every\ntime you update something in the dialog.\n\nThere are several new functions including:\n\ntkexamp, a tool for creating interactive Tk based examples of what\noptions to functions do (mainly for plots, but one example shows a\nnon-plotting function).\n\ndynIdentify and TkIdentify, tools that create a scatterplot with labels,\nthen allow you to drag the labels with the mouse to better locations.\n\ncol2grey, a tool to convert your colors to greyscale so you can get a\ngeneral feel of how they would look when printed non-color, or copied,\netc.\n\nSensSpec.demo, a demonstration of how to compute positive and negative\npredictive value from sensitivity, specificity, and prevelance using a\nvirtual population rather than Bayes Theorem and algebra.\n\nTkApprox and TkSpline, GUI wrappers to the approxfun and splinfun\nfunctions that graph your data, the predictions, and allow you to drag\nreference lines on the plot to show the predicted values, differences,\nand derivatives.\n\ntkprogress, a utility to create and update a progress bar to show how\nfar through a loop or other iterative process you are.\n\nA set of functions (see txtStart and etxtStart) that will create a plain\ntext transcript of your R session including both commands and output\n(think glorified sink + history).  The 'etxt' versions add markup so\nthat the text file can be processed by the enscript program to create a\npostscript file with some syntax coloring and inclusion of graphs.  The\npostscript file can then be converted to pdf or other formats.\n\n\nHope others find this helpful,\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n(801) 408-8111",
+      "body_snippet": "This is to announce that versio 2.0 of the TeachingDemos package is now\non CRAN (and hopefully soon to a mirror near you).\n\nThis is a major upgrade of the package, some of the improvements\ninclude:\n\nT",
+      "thread_id": "thread-c908055dfdec",
       "thread_depth": 0,
       "month": "2008-03"
     },
@@ -166,6 +312,38 @@
       "month": "2008-03"
     },
     {
+      "id": "msg-0572263d5967",
+      "message_id": "<18412.65085.549853.54741@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2008-03-28T15:18:37+01:00",
+      "subject": "[R-pkgs] \"The Matrix\" is approaching version 1.0-0",
+      "subject_clean": "\"The Matrix\" is approaching version 1.0-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of \"the Matrix\" \n(well, actually the R package named \"Matrix\") has become\navailable on the CRAN mirrors.  \n\nAs some of you have noticed, the version numbers (current is version\n0.999375-8) are converging to one, and we feel that we have solved\nenough of the many (mostly small) problems to announce that release\n1.0-0 is imminent.\n\nIn the DESCRIPTION of the package we say\n--------------------------------------------------------------\nTitle: A Matrix package for R\nAuthor: Douglas Bates <....> and Martin Maechler <....>\nMaintainer: Doug and Martin <Matrix-authors at R-project.org>\nDescription: Classes and methods for dense and sparse matrices and\n   operations on them using Lapack, CSparse and CHOLMOD\n--------------------------------------------------------------\n\nThe Matrix package provides efficient methods for several formal\n(i.e. S4) classes of matrices where each of the actual classes are\nsome combination of the following three categories\n\n1) dense or sparse\n2) symmmetric, triangular, diagonal or \"general\" (or \"permutation\")\n3) numeric (\"d\"ouble), logical (TRUE/FALSE/NA) or \"patter[n]\" (0/1) matrices\n\nInterfaces to many efficient algorithms from Lapack (for \"dense\") and from\nCHOLMOD / Csparse (for \"sparse\") are all implemented via method definitions\nfor the customary linear algebra functions\n  %*%, t(), crossprod(), tcrossprod(), chol(), qr(), solve(),\n  colSums(), rowSums(), kronecker(), determinant(), ...\nand for various formal groups of generics, such as\n  \"Math\" (sin,exp,gamma,..)  \"Arith\" (+,-,*,...),\n  \"Logic\" (>, <=, ..),  \"Summary\" (sum, max, ...)  etc;\n  is.na()\n\nFurthermore, 'indexing' : \"A[...]\" and \"A[..] <- value\" of\nall(!) kinds of S/R indexing and some new generic functions such as\n\n lu()     {LU decomposition}\n Schur(), BunchKaufman(),\n norm(), rcond()        {Matrix norms and condition numbers}\n expm()   {Matrix exponential},\n band(), triu(), tril()  {extract band-diagonal or triangular sub-matrices}\n symmpart(), skewpart()   { (x + t(x))/2  and  (x - t(x)) / 2 }\n\nare provided. Further, an extension to the xtabs function\n  xtabs(*, sparse=TRUE)\nfor large sparse, two-way contingency tables\nand coercion of one *factor* (possibly crossed with one <numeric>)\nto the corresponding (potentially huge) sparse model matrix for sparse\nleast squares and related computations.\n\nFurther to the above, \"Matrix\" objects are also constructed by\nMatrix(), spMatrix(), bdiag() {block-diagonal}, Diagonal() and many\nas(., \"....Matrix\") possibilities.\n\nThe Matrix package also provides a C level API (header files of\nexported C functions providing low-level functionality) to many of its\ninternal algorithms that other packages can link to.  Currently, the\n'lme4' package makes heavy use of these exported C functions.\n\n---------------------------------------------------------------------------\n\nOne of the things we plan to improve considerably is the documentation\nfor the package.  Currently there are four vignettes but all but the\n\n   Comparisons: Comparisons of Least Squares calculation speeds\n\nare really not complete in one way or another.\n\n---------------------------------------------------------------------------\n\nWe would appreciate current users of the Matrix package (and also\ngenerally interested useRs) exploring the package's capabilities and\ngiving us feedback about problems that they might encounter or missing\nfeatures, inefficiencies and maybe even \"infelicities\" (a.k.a. bugs).\nFixing problems before the release of the 1.0-0 version of \"The Matrix\",\nrather than after its release, is our preferred approach.\n\nDouglas Bates and Martin Maechler\nMatrix-authors <at> r-project <.> org",
+      "body_snippet": "A new version of \"the Matrix\" \n(well, actually the R package named \"Matrix\") has become\navailable on the CRAN mirrors.  \n\nAs some of you have noticed, the version numbers (current is version\n0.999375-",
+      "thread_id": "thread-0572263d5967",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-dd3022a55ee6",
+      "message_id": "<47EED5B8.9040004@pdf.com>",
+      "from_name": "Spencer Graves",
+      "from_email_hash": "0d1725402b5f223aa45a1714f600b741ea6c2ccb2d67d2b94ddab1ed1e80aefd",
+      "date": "2008-03-29T16:50:16-07:00",
+      "subject": "[R-pkgs] FinTS_0.3-1",
+      "subject_clean": "FinTS_0.3-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, All:\n\n\t  FinTS version 0.3-1 is now available on CRAN.  This version\nadds a function 'apca' for \"Asymptotic Principal Components Analysis\", \nas discussed in Tsay (2005) Analysis of Financial Time Series, 2nd ed. \n(Wiley, sec. 9.6), in addition to minor improvements in the partially \ncomplete scripts for chapters 3 and 9.\n\n\t Spencer Graves",
+      "body_snippet": "Hi, All:\n\n\t  FinTS version 0.3-1 is now available on CRAN.  This version\nadds a function 'apca' for \"Asymptotic Principal Components Analysis\", \nas discussed in Tsay (2005) Analysis of Financial Time ",
+      "thread_id": "thread-dd3022a55ee6",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
       "id": "msg-dd3022a55ee6",
       "message_id": "<47EED5B8.9040004@pdf.com>",
       "from_name": "Spencer Graves",
@@ -195,6 +373,17 @@
       "root_message_id": "msg-b9363bdaa931"
     },
     {
+      "id": "thread-b9363bdaa931",
+      "subject": "Packages micEcon, sampleSelection, and maxLik",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2008-03-07T11:45:55+01:00",
+      "last_reply": "2008-03-07T11:45:55+01:00",
+      "root_message_id": "msg-b9363bdaa931"
+    },
+    {
       "id": "thread-b39d5f207063",
       "subject": "bayesm version 2.2-0",
       "message_count": 1,
@@ -204,6 +393,28 @@
       "started": "2008-03-07T13:41:51-06:00",
       "last_reply": "2008-03-07T13:41:51-06:00",
       "root_message_id": "msg-b39d5f207063"
+    },
+    {
+      "id": "thread-b39d5f207063",
+      "subject": "bayesm version 2.2-0",
+      "message_count": 1,
+      "participants": [
+        "Rossi, Peter E."
+      ],
+      "started": "2008-03-07T13:41:51-06:00",
+      "last_reply": "2008-03-07T13:41:51-06:00",
+      "root_message_id": "msg-b39d5f207063"
+    },
+    {
+      "id": "thread-9fcb3c2961bd",
+      "subject": "A new version of paran is available",
+      "message_count": 1,
+      "participants": [
+        "adinno at post.harvard.edu"
+      ],
+      "started": "2008-03-07T15:27:29-08:00",
+      "last_reply": "2008-03-07T15:27:29-08:00",
+      "root_message_id": "msg-9fcb3c2961bd"
     },
     {
       "id": "thread-9fcb3c2961bd",
@@ -228,6 +439,17 @@
       "root_message_id": "msg-ad24653b9bd1"
     },
     {
+      "id": "thread-ad24653b9bd1",
+      "subject": "new version of minpack.lm",
+      "message_count": 1,
+      "participants": [
+        "Katharine Mullen"
+      ],
+      "started": "2008-03-13T16:23:45+01:00",
+      "last_reply": "2008-03-13T16:23:45+01:00",
+      "root_message_id": "msg-ad24653b9bd1"
+    },
+    {
       "id": "thread-343934c9d5ef",
       "subject": "New package: yaml 1.0 released to CRAN",
       "message_count": 1,
@@ -237,6 +459,28 @@
       "started": "2008-03-25T10:33:19-05:00",
       "last_reply": "2008-03-25T10:33:19-05:00",
       "root_message_id": "msg-343934c9d5ef"
+    },
+    {
+      "id": "thread-343934c9d5ef",
+      "subject": "New package: yaml 1.0 released to CRAN",
+      "message_count": 1,
+      "participants": [
+        "Jeremy Stephens"
+      ],
+      "started": "2008-03-25T10:33:19-05:00",
+      "last_reply": "2008-03-25T10:33:19-05:00",
+      "root_message_id": "msg-343934c9d5ef"
+    },
+    {
+      "id": "thread-467c3b9ced92",
+      "subject": "new package 'randomLCA'",
+      "message_count": 1,
+      "participants": [
+        "Ken Beath"
+      ],
+      "started": "2008-03-25T15:09:30+11:00",
+      "last_reply": "2008-03-25T15:09:30+11:00",
+      "root_message_id": "msg-467c3b9ced92"
     },
     {
       "id": "thread-467c3b9ced92",
@@ -261,6 +505,28 @@
       "root_message_id": "msg-0425cb9c0355"
     },
     {
+      "id": "thread-0425cb9c0355",
+      "subject": "Naive Gibbs Sampling with Metropolis Steps (pkg: gibbs.met)",
+      "message_count": 1,
+      "participants": [
+        "Longhai Li"
+      ],
+      "started": "2008-03-26T09:41:14-06:00",
+      "last_reply": "2008-03-26T09:41:14-06:00",
+      "root_message_id": "msg-0425cb9c0355"
+    },
+    {
+      "id": "thread-c908055dfdec",
+      "subject": "Update of TeachingDemos package",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2008-03-26T10:55:00-06:00",
+      "last_reply": "2008-03-26T10:55:00-06:00",
+      "root_message_id": "msg-c908055dfdec"
+    },
+    {
       "id": "thread-c908055dfdec",
       "subject": "Update of TeachingDemos package",
       "message_count": 1,
@@ -283,6 +549,17 @@
       "root_message_id": "msg-876d3b3ddf5e"
     },
     {
+      "id": "thread-876d3b3ddf5e",
+      "subject": "New package: epiR",
+      "message_count": 1,
+      "participants": [
+        "Mark Stevenson"
+      ],
+      "started": "2008-03-26T12:34:00+13:00",
+      "last_reply": "2008-03-26T12:34:00+13:00",
+      "root_message_id": "msg-876d3b3ddf5e"
+    },
+    {
       "id": "thread-0572263d5967",
       "subject": "\"The Matrix\" is approaching version 1.0-0",
       "message_count": 1,
@@ -292,6 +569,28 @@
       "started": "2008-03-28T15:18:37+01:00",
       "last_reply": "2008-03-28T15:18:37+01:00",
       "root_message_id": "msg-0572263d5967"
+    },
+    {
+      "id": "thread-0572263d5967",
+      "subject": "\"The Matrix\" is approaching version 1.0-0",
+      "message_count": 1,
+      "participants": [
+        "Martin Maechler"
+      ],
+      "started": "2008-03-28T15:18:37+01:00",
+      "last_reply": "2008-03-28T15:18:37+01:00",
+      "root_message_id": "msg-0572263d5967"
+    },
+    {
+      "id": "thread-dd3022a55ee6",
+      "subject": "FinTS_0.3-1",
+      "message_count": 1,
+      "participants": [
+        "Spencer Graves"
+      ],
+      "started": "2008-03-29T16:50:16-07:00",
+      "last_reply": "2008-03-29T16:50:16-07:00",
+      "root_message_id": "msg-dd3022a55ee6"
     },
     {
       "id": "thread-dd3022a55ee6",

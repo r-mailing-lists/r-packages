@@ -23,6 +23,25 @@
       "month": "2007-11"
     },
     {
+      "id": "msg-c1627a1a2d52",
+      "message_id": "<DF714C74-B5EC-475F-9E7D-CF035DDB36A4@mac.com>",
+      "from_name": "Gregory Warnes",
+      "from_email_hash": "e7985c65608ae5a4100d43e8e1ba6ce1bc4356420a83333cb1cea22998c3802e",
+      "date": "2007-11-01T14:05:44-04:00",
+      "subject": "[R-pkgs] SASxport v. 1.2.0",
+      "subject_clean": "SASxport v. 1.2.0",
+      "in_reply_to": "<4722294E.30207@quantpharm.com>",
+      "references": [
+        "<470E2BF5.7070307@metrumrg.com>",
+        "<4722294E.30207@quantpharm.com>"
+      ],
+      "body_plain": "SASxport Version 1.2.0 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.0 corrects a critical issues with storage of negative\nnumbers, as well as adding additional improvements to the handling\nof SAS display and input format specifications.  With these\nenhancements, both reading and writing SAS transport files is\nalmost lossless*.\n\nSASxport 1.2.0 is available _now_ at\n\n\thttp://random-technologies-llc.com/products/SASxport/\n\nand will become available on your favorite CRAN repository shortly.\n\nFor additional information and commercial support packages, please\nvisit the Random Technologies web site:\n\n\thttp://random-technologies-llc.com/products/SASxport/\n\n-Greg\n\nGregory R. Warnes, Ph.D\nChief Scientist\nRandom Technologies, LLC.\n\n----\n\n(*) Only information that cannot be stored in a SAS xport format file\n     is lost: variable names are uppercased and truncated at 8\n     characters, missing values for character string variables are\n     converted to empty strings,  and numeric values outside of the SAS\n     xport format numeric floating point range are converted to missing\n     values.",
+      "body_snippet": "SASxport Version 1.2.0 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.0 correc",
+      "thread_id": "thread-c1627a1a2d52",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
       "id": "msg-520539658d0d",
       "message_id": "<AA61BDD3-CB47-441E-8E1E-372050754BA1@rochester.edu>",
       "from_name": "Gregory. R. Warnes",
@@ -35,6 +54,41 @@
       "body_plain": "Announcing gplots 2.5.0\n---------------------------------\n\ngplots provides additional plotting functions, including several  \nenhanced versions of base R functions.\n\nProvided functions include:\n\tballoonplot, bandplot, barplot2, boxplot.n, colorpanel, heatmap.2,\n\thist2d, lowess, ooplot, overplot, plot.lm2, plotCI, plotmeans,\n\tqqnorm.aov, residplot, rich.color, sinkplot, smartlegend, space,\n         textplot, wapply\n\n\nChanges in 2.5.0\n-----------------------\n\nNew Features:\n\n- textplot() now converts tab characters to spaces before processing to\n   avoid problems with computing height and width of text that includes\n   tabs.\n\n- Add col2rgb() function to convert color names to rgb hex codes\n\nBug Fixes:\n\n- Correct balloonplot.default to properly show specified x and y axis\n   labels when explicitly provided\n\n- R/balloonplot.R: Correct error in balloonplot when z contains NA  \nvalues.\n\n- Fix typos and code/doc mismatches identified by the latest R CMD check\n\nOther:\n\n- Clarify GPL version",
       "body_snippet": "Announcing gplots 2.5.0\n---------------------------------\n\ngplots provides additional plotting functions, including several  \nenhanced versions of base R functions.\n\nProvided functions include:\n\tballo",
       "thread_id": "thread-520539658d0d",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-520539658d0d",
+      "message_id": "<AA61BDD3-CB47-441E-8E1E-372050754BA1@rochester.edu>",
+      "from_name": "Gregory. R. Warnes",
+      "from_email_hash": "dfeee40bf383e378e8e21e0530c1024de0ef6e5b6d0801b286ba54ff888a75a9",
+      "date": "2007-11-02T15:47:26-04:00",
+      "subject": "[R-pkgs] gplots 2.5.0",
+      "subject_clean": "gplots 2.5.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Announcing gplots 2.5.0\n---------------------------------\n\ngplots provides additional plotting functions, including several  \nenhanced versions of base R functions.\n\nProvided functions include:\n\tballoonplot, bandplot, barplot2, boxplot.n, colorpanel, heatmap.2,\n\thist2d, lowess, ooplot, overplot, plot.lm2, plotCI, plotmeans,\n\tqqnorm.aov, residplot, rich.color, sinkplot, smartlegend, space,\n         textplot, wapply\n\n\nChanges in 2.5.0\n-----------------------\n\nNew Features:\n\n- textplot() now converts tab characters to spaces before processing to\n   avoid problems with computing height and width of text that includes\n   tabs.\n\n- Add col2rgb() function to convert color names to rgb hex codes\n\nBug Fixes:\n\n- Correct balloonplot.default to properly show specified x and y axis\n   labels when explicitly provided\n\n- R/balloonplot.R: Correct error in balloonplot when z contains NA  \nvalues.\n\n- Fix typos and code/doc mismatches identified by the latest R CMD check\n\nOther:\n\n- Clarify GPL version",
+      "body_snippet": "Announcing gplots 2.5.0\n---------------------------------\n\ngplots provides additional plotting functions, including several  \nenhanced versions of base R functions.\n\nProvided functions include:\n\tballo",
+      "thread_id": "thread-520539658d0d",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-d77eedf13b7a",
+      "message_id": "<DA158979-1950-4319-BB70-4B245D995090@random-technologies-llc.com>",
+      "from_name": "Gregory R. Warnes",
+      "from_email_hash": "79af38b47ae0a2496210fe38855e7748f4f7a4312bff403df72112a140b672f1",
+      "date": "2007-11-09T18:05:07-05:00",
+      "subject": "[R-pkgs] SASxport v. 1.2.2",
+      "subject_clean": "SASxport v. 1.2.2",
+      "in_reply_to": "<4722294E.30207@quantpharm.com>",
+      "references": [
+        "<470E2BF5.7070307@metrumrg.com>",
+        "<4722294E.30207@quantpharm.com>"
+      ],
+      "body_plain": "SASxport Version 1.2.2 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.2 corrects problems on 64 bit versions of R.\n\nSASxport 1.2.2 is available _now_ at\n\n\thttp://random-technologies-llc.com/products/SASxport/\n\nand will become available on your favorite CRAN repository shortly.\n\nFor additional information and commercial support packages, please\nvisit the Random Technologies web site:\n\n\thttp://random-technologies-llc.com/products/SASxport/\n\n-Greg\n\nGregory R. Warnes, Ph.D\nChief Scientist\nRandom Technologies, LLC.",
+      "body_snippet": "SASxport Version 1.2.2 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.2 correc",
+      "thread_id": "thread-d77eedf13b7a",
       "thread_depth": 0,
       "month": "2007-11"
     },
@@ -74,6 +128,22 @@
       "month": "2007-11"
     },
     {
+      "id": "msg-720bd84a2381",
+      "message_id": "<7F1B6E66-613E-4A93-AF0D-4F6D66BE4307@act.ulaval.ca>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "e1091a7ef24172cab8ff1701d0e6c2c555c786b66d61ed102070f87705da8ffd",
+      "date": "2007-11-16T13:30:19-05:00",
+      "subject": "[R-pkgs] New version of actuar",
+      "subject_clean": "New version of actuar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "UseRs,\n\nVersion 0.9-4 of actuar should be making its way to CRAN mirrors. The  \nmain highlights of this new version are speed enhancements for a few  \nfunctions, support for phase-type distributions and functions for ruin  \ntheory.\n\nThe relevant section of the NEWS file follows\n\nVersion 0.9-4\n=============\n\nMaintenance and new features release.\n\nNEW FEATURES -- LOSS DISTRIBUTIONS\n\n   o Functions mgffoo() to compute the moment (or cumulant if 'log =\n     TRUE') generating function of the following distributions:\n     chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform and phase-type (see\n     below).\n\n   o Functions mfoo() to compute the raw moments of all the probability\n     distributions supported in the package and the following of base\n     R: chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform.\n\n   o Functions {d,p,mgf,m,r}phtype() to compute the probability density\n     function, cumulative distribution function, moment generating\n     function, raw moments of, and to generate variates from,\n     phase-type distributions.\n\nNEW FEATURES -- RISK THEORY\n\n   o Function VaR() with a method for objects of class \"aggregateDist\"\n     to compute the Value at Risk of a distribution.\n\n   o Function CTE() with a method for objects of class \"aggregateDist\"\n     to compute the Conditional Tail Expectation of a distribution.\n\n   o Function adjCoef() to compute the adjustment coefficient in ruin\n     theory. If proportional or excess-of-loss reinsurance is included\n     in the model, adjCoef() returns a function to compute the\n     adjustment coefficient for given limits. A plot method is also\n     included.\n\n   o Function ruin() returns a function to compute the infinite time\n     probability of ruin for given initial surpluses in the\n     Cram?r-Lundberg and Sparre Andersen models. Most calculations are\n     done using the cdf of phase-type distributions as per Asmussen and\n     Rolski (1991).\n\n   o Calculations of the aggregate claim distribution using the\n     recursive method much faster now that recursions are done in C.\n\nNEW FEATURES -- CREDIBILITY THEORY\n\n   o Modular rewrite of cm(): the function now calls internal functions\n     to carry calculations for each supported credibility model. This\n     is more efficient.\n\n   o Basic support for the regression model of Hachemeister in function\n     cm().\n\n   o For the hierarchical credibility model: support for the variance\n     components estimators of B?hlmann and Gisler (2005) and Ohlsson\n     (2005). Support remains for iterative pseudo-estimators.\n\n   o Calculations of iterative pseudo-estimators in hierarchical\n     credibility are much faster now that they are done in C.\n\nOTHER NEW FEATURES\n\n   o Four new vignettes: introduction to the package and presentation\n     of the features in loss distributions, risk theory and credibility\n     theory.\n\n   o Portfolio simulation material of the \"credibility\" demo moved to\n     demo \"simulation\".\n\nUSER-VISIBLE CHANGES\n\n   o Argument 'approx.lin' of quantile.aggregateDist() renamed\n     'smooth'.\n\n   o Function aggregateDist() gains a 'maxit' argument for the maximum\n     number of recursions when using Panjer's algorithm. This is to\n     avoid infinite recursion when the cumulative distribution\n     function does not converge to 1.\n\n   o Function cm() gains a 'maxit' argument for the maximum number of\n     iterations in pseudo-estimators calculations.\n\n   o Methods of aggregate(), frequency(), severity() and weights() for\n     objects of class \"simpf\" gain two new arguments:\n\n     1. 'classification'; when TRUE, the columns giving the\n        classification structure of the portfolio are excluded from the\n        result. This eases calculation of loss ratios (aggregate claim\n        amounts divided by the weights);\n\n     2. 'prefix'; specifies a prefix to use in column names, with\n         sensible defaults to avoid name clashes for data and weight\n         columns.\n\nBUG FIXES\n\n   o The way weights had to be specified for the \"chi-square\" method of\n     mde() to give expected results was very unintuitive. The fix has\n     no effect when using the default weights.\n\n   o The empirical step function returned by the \"recursive\" and\n     \"convolution\" methods of aggregateDist() now correctly returns 1\n     when evaluated past its largest knot.\n\nDEPRECATED\n\n   o Direct usage of bstraub() is now deprecated in favor of cm(). The\n     function will remain in the package since it is used internally by\n     cm(), but it will not be exported in future releases of the\n     package. The current format of the results is also deprecated.\n\n\n---\n   Vincent Goulet, Associate Professor\n   ?cole d'actuariat\n   Universit? Laval, Qu?bec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
+      "body_snippet": "UseRs,\n\nVersion 0.9-4 of actuar should be making its way to CRAN mirrors. The  \nmain highlights of this new version are speed enhancements for a few  \nfunctions, support for phase-type distributions a",
+      "thread_id": "thread-720bd84a2381",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
       "id": "msg-f84ae58d17d6",
       "message_id": "<20071123195655.M80989@tfh-berlin.de>",
       "from_name": "Ulrike Grömping",
@@ -86,6 +156,38 @@
       "body_plain": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of interactions (for metric lmg only)\n- incorporation of observation weights\n- application to data from complex surveys\n- processing of multiply imputed data\nThe latter two points are somewhat experimental - of course, feedback is very\nwelcome.\n\nRegards, Ulrike\n\n****************************** \n Prof. Dr. Ulrike Gr?mping \n Fachbereich II \n TFH Berlin \n Luxemburger Str. 10 \n 13353 Berlin \n mail: groemping at tfh-berlin.de \n www: www.tfh-berlin.de/~groemp/",
       "body_snippet": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of",
       "thread_id": "thread-f84ae58d17d6",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-f84ae58d17d6",
+      "message_id": "<20071123195655.M80989@tfh-berlin.de>",
+      "from_name": "Ulrike Grömping",
+      "from_email_hash": "ece7b371347e1744ed105b8937745b2bea6acbaa3d35b14ef75dd59a6acfce2b",
+      "date": "2007-11-23T21:08:43+01:00",
+      "subject": "[R-pkgs] Major update to package relimpo: Version 2.0",
+      "subject_clean": "Major update to package relimpo: Version 2.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of interactions (for metric lmg only)\n- incorporation of observation weights\n- application to data from complex surveys\n- processing of multiply imputed data\nThe latter two points are somewhat experimental - of course, feedback is very\nwelcome.\n\nRegards, Ulrike\n\n****************************** \n Prof. Dr. Ulrike Gr?mping \n Fachbereich II \n TFH Berlin \n Luxemburger Str. 10 \n 13353 Berlin \n mail: groemping at tfh-berlin.de \n www: www.tfh-berlin.de/~groemp/",
+      "body_snippet": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of",
+      "thread_id": "thread-f84ae58d17d6",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-6ef224a12625",
+      "message_id": "<200711281814.lASIEMYo009315@definetti.ddns.uark.edu>",
+      "from_name": "Giovanni Petris",
+      "from_email_hash": "a8d6ee6436f2dfc5e32ffa3fbe802e40ef839cfd54608c07550b54289ed80d58",
+      "date": "2007-11-28T12:14:22-06:00",
+      "subject": "[R-pkgs] Package dlm version 0.8-1",
+      "subject_clean": "Package dlm version 0.8-1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I uploaded a new version of package dlm to CRAN. \n\ndlm provides functions for maximum likelihood, Kalman filtering and\nsmoothing, and Bayesian analysis of Gaussian linear state space\nmodels, also known as Dynamic Linear Models.  \n\nThe most important visible changes from the previous version are the\nfollowing.\n\n1) Missing values are now allowed in the observations.\n\n2) Extractor and replacement functions for the matrices defining a dlm\n   are now available.\n\n3) The function for Kalman smoothing, \"dlmSmooth\", can take as\n   arguments a data vector and a dlm object. Previously the argument\n   had to be the output from \"dlmFilter\".\n\n4) In addition to the \"+\" method function for objects of class \"dlm\",\n   used to build complex models from simple components, all having the\n   same dimensionality of the observation vector, there is now an\n   outer sum, \"%+%\", which creates a joint model from independent\n   dlm's. This is useful to specify models for multivariate\n   observations. \n\n5) Minimal support for Markov chain Monte Carlo output analysis has\n   been added, with functions \"mcmcSD\", \"mcmcMean\", \"ergMean\". \n\nThanks to Michael Lavine for suggesting the outer sum in (4).\n\nPlease let me know of any problems. Comments and suggestions are\nvery welcome. \n\nGiovanni Petris\n\n-- \n\nGiovanni Petris  <GPetris at uark.edu>\nDepartment of Mathematical Sciences\nUniversity of Arkansas - Fayetteville\nhttp://definetti.uark.edu/~gpetris/",
+      "body_snippet": "I uploaded a new version of package dlm to CRAN. \n\ndlm provides functions for maximum likelihood, Kalman filtering and\nsmoothing, and Bayesian analysis of Gaussian linear state space\nmodels, also know",
+      "thread_id": "thread-6ef224a12625",
       "thread_depth": 0,
       "month": "2007-11"
     },
@@ -120,6 +222,22 @@
       "thread_id": "thread-77ae75d70cf5",
       "thread_depth": 0,
       "month": "2007-11"
+    },
+    {
+      "id": "msg-77ae75d70cf5",
+      "message_id": "<71257D09F114DA4A8E134DEAC70F25D30A45AF33@groamrexm03.amer.pfizer.com>",
+      "from_name": "Kuhn, Max",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2007-11-29T09:25:26-05:00",
+      "subject": "[R-pkgs] New versions of the caret (3.08) and caretLSF (1.12) packages",
+      "subject_clean": "New versions of the caret (3.08) and caretLSF (1.12) packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "New versions of the caret (3.08) and caretLSF (1.12) packages have been\nreleased. \n\ncaret (short for \"Classification And REgression Training\") aims to\nsimplify the model building process. The package has functions for data\nsplitting, pre-processing and model tuning, as well as other\nmiscellaneous functions. \n\nIn the new versions:\n\n   - The elasticnet and the lasso (from the enet package) have been\nadded\n\n   - mars and fda models are now fit using the earth package. Instead of\nusing nk as a tuning parameter, these models now use the default nk from\nthe training set and tunes over nprune. This mimics the process used by\nearth/mars/fda more closely.\n\n   - A bug was fixed with leave-one-out cross-validation.\n\n   - For some models, the calculations in the train function are much\nmore efficient. Wherever possible, caret tries to avoid re-fitting\nmodels if it can get predictions from sub-models. For example, an object\nfor a boosted tree with 500 trees can often be used to get predictions\nfor any boosted tree with less than 500 trees. The affected models are:\npls, plsda, earth, rpart, gbm, gamboost, glmboost, blackboost, ctree,\npam, enet and lasso.\n\n\nThe caretLSF package is a parallel processing version of caret. The\nother caret package, caretNWS, will be updated to work with the new\nversion of caret shortly.\n\nPlease email me at max dot kuhn at pfizer dot com with any questions or\ncomments\n\nMax",
+      "body_snippet": "New versions of the caret (3.08) and caretLSF (1.12) packages have been\nreleased. \n\ncaret (short for \"Classification And REgression Training\") aims to\nsimplify the model building process. The package ",
+      "thread_id": "thread-77ae75d70cf5",
+      "thread_depth": 0,
+      "month": "2007-11"
     }
   ],
   "threads": [
@@ -133,6 +251,28 @@
       "started": "2007-11-01T14:05:44-04:00",
       "last_reply": "2007-11-01T14:05:44-04:00",
       "root_message_id": "msg-c1627a1a2d52"
+    },
+    {
+      "id": "thread-c1627a1a2d52",
+      "subject": "SASxport v. 1.2.0",
+      "message_count": 1,
+      "participants": [
+        "Gregory Warnes"
+      ],
+      "started": "2007-11-01T14:05:44-04:00",
+      "last_reply": "2007-11-01T14:05:44-04:00",
+      "root_message_id": "msg-c1627a1a2d52"
+    },
+    {
+      "id": "thread-520539658d0d",
+      "subject": "gplots 2.5.0",
+      "message_count": 1,
+      "participants": [
+        "Gregory. R. Warnes"
+      ],
+      "started": "2007-11-02T15:47:26-04:00",
+      "last_reply": "2007-11-02T15:47:26-04:00",
+      "root_message_id": "msg-520539658d0d"
     },
     {
       "id": "thread-520539658d0d",
@@ -157,6 +297,28 @@
       "root_message_id": "msg-d77eedf13b7a"
     },
     {
+      "id": "thread-d77eedf13b7a",
+      "subject": "SASxport v. 1.2.2",
+      "message_count": 1,
+      "participants": [
+        "Gregory R. Warnes"
+      ],
+      "started": "2007-11-09T18:05:07-05:00",
+      "last_reply": "2007-11-09T18:05:07-05:00",
+      "root_message_id": "msg-d77eedf13b7a"
+    },
+    {
+      "id": "thread-720bd84a2381",
+      "subject": "New version of actuar",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2007-11-16T13:30:19-05:00",
+      "last_reply": "2007-11-16T13:30:19-05:00",
+      "root_message_id": "msg-720bd84a2381"
+    },
+    {
       "id": "thread-720bd84a2381",
       "subject": "New version of actuar",
       "message_count": 1,
@@ -179,6 +341,17 @@
       "root_message_id": "msg-f84ae58d17d6"
     },
     {
+      "id": "thread-f84ae58d17d6",
+      "subject": "Major update to package relimpo: Version 2.0",
+      "message_count": 1,
+      "participants": [
+        "Ulrike Grömping"
+      ],
+      "started": "2007-11-23T21:08:43+01:00",
+      "last_reply": "2007-11-23T21:08:43+01:00",
+      "root_message_id": "msg-f84ae58d17d6"
+    },
+    {
       "id": "thread-6ef224a12625",
       "subject": "Package dlm version 0.8-1",
       "message_count": 1,
@@ -188,6 +361,28 @@
       "started": "2007-11-28T12:14:22-06:00",
       "last_reply": "2007-11-28T12:14:22-06:00",
       "root_message_id": "msg-6ef224a12625"
+    },
+    {
+      "id": "thread-6ef224a12625",
+      "subject": "Package dlm version 0.8-1",
+      "message_count": 1,
+      "participants": [
+        "Giovanni Petris"
+      ],
+      "started": "2007-11-28T12:14:22-06:00",
+      "last_reply": "2007-11-28T12:14:22-06:00",
+      "root_message_id": "msg-6ef224a12625"
+    },
+    {
+      "id": "thread-77ae75d70cf5",
+      "subject": "New versions of the caret (3.08) and caretLSF (1.12) packages",
+      "message_count": 1,
+      "participants": [
+        "Kuhn, Max"
+      ],
+      "started": "2007-11-29T09:25:26-05:00",
+      "last_reply": "2007-11-29T09:25:26-05:00",
+      "root_message_id": "msg-77ae75d70cf5"
     },
     {
       "id": "thread-77ae75d70cf5",

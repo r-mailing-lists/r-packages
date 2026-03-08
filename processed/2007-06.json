@@ -22,6 +22,24 @@
       "month": "2007-06"
     },
     {
+      "id": "msg-3d153eda4a27",
+      "message_id": "<f8e6ff050706032214l29c9d5fft3ce2948caf44c496@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-06-04T07:14:18+02:00",
+      "subject": "[R-pkgs] Beta version of ggplot2",
+      "subject_clean": "Beta version of ggplot2",
+      "in_reply_to": "<f8e6ff050706031018v119635f2m2f4a354cc332ccb6@mail.gmail.com>",
+      "references": [
+        "<f8e6ff050706031018v119635f2m2f4a354cc332ccb6@mail.gmail.com>"
+      ],
+      "body_plain": "Dear all,\n\nI am pleased to announce the new beta release of ggplot2.  ggplot2 is\na plotting system for R, based on the grammar of graphics, which tries\nto take the good parts of base and lattice graphics and none of the\nbad parts.  It takes of many of the fiddly details that make plotting\na hassle (like drawing legends) as well as providing a powerful model\nof graphics that makes it easy to produce complex multi-layered\ngraphics.\n\nYou can install ggplot2 from CRAN with the following code:\ninstall.packages(\"ggplot2\", dep=TRUE)\n\nThere have been a lot of changes to the syntax since the last version\nof ggplot and I have renamed the package to ggplot2, so that you can\ncontinue to use your existing code while you transition to the new\nsystem.\n\nAs part of the release, I am working on a radically improved\ndocumentation system, currently available at\nhttp://had.co.nz/ggplot2/.  While I'm still working on the textual\nexplanations, I have mostly completed the examples, which are\ndisplayed with both code and output.  There are over 480 example\ngraphics, so I hope you should be able to find an example\ndemonstrating whatever you need.  Any comments on the content and\ndisplay would be gratefully received.\n\nIn the next few days I will be adding the first chapters of the ggplot\nbook, which will provide a more systematic introduction to ggplot, the\ntheory behind it and more examples of its use.  The ggplot book will\nbe published with Springer, hopefully in Summer 2008.\n\nThe latest version of ggplot now provides a complete implementation of\nthe grammar of graphics, including new support for coordinate systems,\nposition adjustment (dodging, stacking and jittering).\n\nThis is a beta release, so there are still bugs in the code, and many\nsmall aesthetic tweaks to be made.  If you encounter something that\ndoesn't work, doesn't make sense or you think could be improved,\nplease don't hesitate to contact me.\n\nAgain, you can find out more, and see hundreds of example graphics at\nhttp://had.co.nz/ggplot2/.\n\nHadley\n\nPS. If you are interested in learning more in person, have at look at\nthe courses available at http://lookingatdata.com.",
+      "body_snippet": "Dear all,\n\nI am pleased to announce the new beta release of ggplot2.  ggplot2 is\na plotting system for R, based on the grammar of graphics, which tries\nto take the good parts of base and lattice graph",
+      "thread_id": "thread-3d153eda4a27",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
       "id": "msg-5718f3a34c47",
       "message_id": "<f8e6ff050706032214n600cb830m3294ab88b050fc9d@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -36,6 +54,40 @@
       "body_plain": "Hi everyone,\n\nThis is a short announcement for the users of ggplot and reshape.  I\nhave just released new versions of each that fix bugs when used with R\n2.5.0:\n\n * reshape was having problems with missing combinations of variables\n * errorbars in ggplot weren't working.\n\nI've you've been having problems with either of these, please upgrade.\n\nAbout ggplot\n=====================\n\nAn implementation of the grammar of graphics in R.\n\nggplot is an implementation of the grammar of graphics in R. It\ncombines the advantages of both base and lattice graphics:\nconditioning and shared axes are handled automatically, while\nmaintaining the ability to build up a plot step by step from multiple\ndata sources. It also implements a more sophisticated multidimensional\nconditioning system and a consistent interface to map data to\naesthetic attributes.\n\nFind out more at http://had.co.nz/ggplot\n\nAbout reshape\n=====================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is available on all platforms supported by R (Linux, OS X,\nWindows, ...).  Reshape (hopefully) makes it easy to do what you have\nbeen struggling to do with tapply, by, aggregate, xtabs, apply and\nsummarise. It is also useful for getting your data into the correct\nstructure for lattice or ggplot plots.\n\nYou can find out more at http://had.co.nz/reshape\n\n\nRegards,\n\nHadley",
       "body_snippet": "Hi everyone,\n\nThis is a short announcement for the users of ggplot and reshape.  I\nhave just released new versions of each that fix bugs when used with R\n2.5.0:\n\n * reshape was having problems with mi",
       "thread_id": "thread-5718f3a34c47",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-5718f3a34c47",
+      "message_id": "<f8e6ff050706032214n600cb830m3294ab88b050fc9d@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-06-04T07:14:40+02:00",
+      "subject": "[R-pkgs] Updated reshape and ggplot",
+      "subject_clean": "Updated reshape and ggplot",
+      "in_reply_to": "<f8e6ff050706031000l4b5bc719t4a9762a1be53103f@mail.gmail.com>",
+      "references": [
+        "<f8e6ff050706031000l4b5bc719t4a9762a1be53103f@mail.gmail.com>"
+      ],
+      "body_plain": "Hi everyone,\n\nThis is a short announcement for the users of ggplot and reshape.  I\nhave just released new versions of each that fix bugs when used with R\n2.5.0:\n\n * reshape was having problems with missing combinations of variables\n * errorbars in ggplot weren't working.\n\nI've you've been having problems with either of these, please upgrade.\n\nAbout ggplot\n=====================\n\nAn implementation of the grammar of graphics in R.\n\nggplot is an implementation of the grammar of graphics in R. It\ncombines the advantages of both base and lattice graphics:\nconditioning and shared axes are handled automatically, while\nmaintaining the ability to build up a plot step by step from multiple\ndata sources. It also implements a more sophisticated multidimensional\nconditioning system and a consistent interface to map data to\naesthetic attributes.\n\nFind out more at http://had.co.nz/ggplot\n\nAbout reshape\n=====================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is available on all platforms supported by R (Linux, OS X,\nWindows, ...).  Reshape (hopefully) makes it easy to do what you have\nbeen struggling to do with tapply, by, aggregate, xtabs, apply and\nsummarise. It is also useful for getting your data into the correct\nstructure for lattice or ggplot plots.\n\nYou can find out more at http://had.co.nz/reshape\n\n\nRegards,\n\nHadley",
+      "body_snippet": "Hi everyone,\n\nThis is a short announcement for the users of ggplot and reshape.  I\nhave just released new versions of each that fix bugs when used with R\n2.5.0:\n\n * reshape was having problems with mi",
+      "thread_id": "thread-5718f3a34c47",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-45f8715cb55c",
+      "message_id": "<46648E14.8000808@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2007-06-05T00:11:32+02:00",
+      "subject": "[R-pkgs] New package: relations",
+      "subject_clean": "New package: relations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nit is our great pleasure to announce the new package \"relations\" to\nappear on all CRAN-mirrors soon.\n\nThis package provides data structures and methods for creating and\nmanipulating relations, relation ensembles, sets, and tuples. The\nfeature list includes:\n\n* creation of relations by domain and graph/characteristic\nfunction/incidences,\n\n* extraction of characteristic function and graph,\n\n* predicate functions for the most common standard characteristics,\n\n* operators known from relational algebra theory (such as projection,\nselection, cartesian product, joins, etc.),\n\n* transitive/reflexive reduction and closure of a relation,\n\n* relation ensembles for combining relations,\n\n* fitters for determining (possibly all) consensus relations of a\nrelation ensemble including the Borda and Condorcet methods, as well as\nexact solvers for minimizing a criterion function based on the symmetric\ndifference (Kemeny-Snell) metric.\n\n* a simple plot method for Hasse-diagrams using RGraphviz.\n\n\nKurt and David",
+      "body_snippet": "Dear useRs,\n\nit is our great pleasure to announce the new package \"relations\" to\nappear on all CRAN-mirrors soon.\n\nThis package provides data structures and methods for creating and\nmanipulating relat",
+      "thread_id": "thread-45f8715cb55c",
       "thread_depth": 0,
       "month": "2007-06"
     },
@@ -72,6 +124,38 @@
       "month": "2007-06"
     },
     {
+      "id": "msg-10b10e56915b",
+      "message_id": "<20070605080955.GA15345@athene.togaware.com>",
+      "from_name": "Graham Williams",
+      "from_email_hash": "1ef1df4ed52717e8ede33b680837f556dbbb4c9b6976225abdd11fb9ec5b5ce6",
+      "date": "2007-06-05T18:09:55+10:00",
+      "subject": "[R-pkgs] Package update: pmml version 1.1.1",
+      "subject_clean": "Package update: pmml version 1.1.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.1.1 of the pmml package (PMML = Predictive Modelling Markup\nLanguage) has been uploaded to CRAN. This version adds pmml.lm to\ngenerate PMML for linear models (currently, without interactions).\n\nThe PMML package is part of the Rattle toolkit for data\nmining. Further information from http://rattle.togaware.com.\n\nRegards,\nGraham",
+      "body_snippet": "Version 1.1.1 of the pmml package (PMML = Predictive Modelling Markup\nLanguage) has been uploaded to CRAN. This version adds pmml.lm to\ngenerate PMML for linear models (currently, without interactions",
+      "thread_id": "thread-10b10e56915b",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-9ae2e19d4402",
+      "message_id": "<18021.27277.958091.918392@gargle.gargle.HOWL>",
+      "from_name": "David Kane",
+      "from_email_hash": "859af176ce8fb4a0488f28335bc79fbb4b2eda8c22f6b21ae893f02d8aaaa624",
+      "date": "2007-06-05T09:52:13-04:00",
+      "subject": "[R-pkgs] New Package on Lancet Surveys of Iraq Mortality",
+      "subject_clean": "New Package on Lancet Surveys of Iraq Mortality",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI have placed a package on CRAN about two surveys of mortality in Iraq\nthat were published in the Lancet.\n\nhttp://cran.at.r-project.org/src/contrib/Descriptions/lancet.iraqmortality.html\n\n> install.packages(\"lancet.iraqmortality\")\n\n...\n\n> library(lancet.iraqmortality)\nLoading required package: foreign\n> ?lancet.iraqmortality\n> vignette(\"mortality\")\n\nThis is a rough version. Suggestions and feedback are welcome.\n\nDave Kane",
+      "body_snippet": "Hello,\n\nI have placed a package on CRAN about two surveys of mortality in Iraq\nthat were published in the Lancet.\n\nhttp://cran.at.r-project.org/src/contrib/Descriptions/lancet.iraqmortality.html\n\n> in",
+      "thread_id": "thread-9ae2e19d4402",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
       "id": "msg-9ae2e19d4402",
       "message_id": "<18021.27277.958091.918392@gargle.gargle.HOWL>",
       "from_name": "David Kane",
@@ -104,6 +188,22 @@
       "month": "2007-06"
     },
     {
+      "id": "msg-cf576e458887",
+      "message_id": "<31DDB7BE4BF41D4888D41709C476B657062E7694@NIHCESMLBX5.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2007-06-06T09:34:50-04:00",
+      "subject": "[R-pkgs] R Package: ssanv - Sample size adjustments for nonadherence and variability of input parameters",
+      "subject_clean": "R Package: ssanv - Sample size adjustments for nonadherence and variability of input parameters",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/dc0b3c9b/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/dc0b3c9b/attachment-0001.pl>",
+      "thread_id": "thread-cf576e458887",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
       "id": "msg-ebf0ff1b7de6",
       "message_id": "<31DDB7BE4BF41D4888D41709C476B657062E7695@NIHCESMLBX5.nih.gov>",
       "from_name": "Fay, Michael (NIH/NIAID) [E]",
@@ -115,6 +215,22 @@
       "references": [],
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment.pl>",
+      "thread_id": "thread-ebf0ff1b7de6",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-ebf0ff1b7de6",
+      "message_id": "<31DDB7BE4BF41D4888D41709C476B657062E7695@NIHCESMLBX5.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2007-06-06T09:46:35-04:00",
+      "subject": "[R-pkgs] R package: Mchtest - Monte Carlo hypothesis testing allowing Sequential Stopping",
+      "subject_clean": "R package: Mchtest - Monte Carlo hypothesis testing allowing Sequential Stopping",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment-0001.pl>",
       "thread_id": "thread-ebf0ff1b7de6",
       "thread_depth": 0,
       "month": "2007-06"
@@ -132,6 +248,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment.pl>",
       "thread_id": "thread-2ad63d7412c9",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-2ad63d7412c9",
+      "message_id": "<31DDB7BE4BF41D4888D41709C476B657062E7696@NIHCESMLBX5.nih.gov>",
+      "from_name": "Fay, Michael (NIH/NIAID) [E]",
+      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
+      "date": "2007-06-06T09:50:52-04:00",
+      "subject": "[R-pkgs] New Package: rateratio.test",
+      "subject_clean": "New Package: rateratio.test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment-0001.pl>",
+      "thread_id": "thread-2ad63d7412c9",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-b437f26ed288",
+      "message_id": "<f8e6ff050706102242g399410b3kd34744ac2a44854f@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-06-11T07:42:03+02:00",
+      "subject": "[R-pkgs] Updated ggplot2 package (beta version)",
+      "subject_clean": "Updated ggplot2 package (beta version)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\nnone of the bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2\n\nChanges in version 0.5.1 ------------------------------\n\n * new chapter in book and changes to package to make it possible to\ncustomise every aspect of ggplot display using grid\n\n * a new economic data set to help demonstrate line, path and area plots\n\n * many bug fixes reported by beta testers\n\nHadley",
+      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\nnone of the bad p",
+      "thread_id": "thread-b437f26ed288",
       "thread_depth": 0,
       "month": "2007-06"
     },
@@ -168,6 +316,22 @@
       "month": "2007-06"
     },
     {
+      "id": "msg-9fd766afebb3",
+      "message_id": "<f8e6ff050706190007v2c236c2dn3ddb5de02d4b879d@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2007-06-19T09:07:26+02:00",
+      "subject": "[R-pkgs] ggplot2 0.5.2",
+      "subject_clean": "ggplot2 0.5.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\nnone of the bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2\n\nChanges in version 0.5.2 ------------------------------\n\n* add argument to position dodge so it's now possible to accurately\ndodge things with different widths to their physical widths\n* added median summary\n* new examples:\n\t* logistic regression example in stat_smooth\n* bugs fixed:\n\t* evaluation of arguments to layer is no longer delayed\n\t* can use categorical xseq with stat_smooth\n\t* x and y axes named incorrectly (thanks to Dieter Menne for spotting this)\n\t* can now pass position objects to qplot\n\t* y jitter calculated correctly, and jittered data rescales axis now\n\t* removed silly legend from quantile plot\n\t* extra arguments not being passed on to geoms/stats\n\t* fixed bug in stat_summary when summarising a factor\n\t* fixed bugs in stat_summary, geom_ribbon, and coord_trans examples",
+      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\nnone of the bad p",
+      "thread_id": "thread-9fd766afebb3",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
       "id": "msg-9f518f5d6554",
       "message_id": "<509e0620706190610ra4f82fdv1f547ef7d3323777@mail.gmail.com>",
       "from_name": "Michael Lawrence",
@@ -180,6 +344,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment.pl>",
       "thread_id": "thread-9f518f5d6554",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-9f518f5d6554",
+      "message_id": "<509e0620706190610ra4f82fdv1f547ef7d3323777@mail.gmail.com>",
+      "from_name": "Michael Lawrence",
+      "from_email_hash": "c36bf863fc6ce4c956c531e3be3c380a9dea26d6f0cbee8fa9df0b1b13a51f2d",
+      "date": "2007-06-19T08:10:35-05:00",
+      "subject": "[R-pkgs] RGtk2 2.10.x series available",
+      "subject_clean": "RGtk2 2.10.x series available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment-0001.pl>",
+      "thread_id": "thread-9f518f5d6554",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-4b8797091c68",
+      "message_id": "<35219.130.95.98.17.1182410126.squirrel@130.95.98.17>",
+      "from_name": "adrian at maths.uwa.edu.au",
+      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
+      "date": "2007-06-21T15:15:26+08:00",
+      "subject": "[R-pkgs] spatstat version 2",
+      "subject_clean": "spatstat version 2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "SPATSTAT version 2\n\nSpatstat is an R package for the statistical analysis of spatial data.\n\nA preliminary announcement about the forthcoming Version 2 of spatstat\nis available here:\n    <www.spatstat.org/spatstat/spatstat2.html>",
+      "body_snippet": "SPATSTAT version 2\n\nSpatstat is an R package for the statistical analysis of spatial data.\n\nA preliminary announcement about the forthcoming Version 2 of spatstat\nis available here:\n    <www.spatstat.",
+      "thread_id": "thread-4b8797091c68",
       "thread_depth": 0,
       "month": "2007-06"
     },
@@ -216,6 +412,22 @@
       "month": "2007-06"
     },
     {
+      "id": "msg-453bda061db3",
+      "message_id": "<71257D09F114DA4A8E134DEAC70F25D308B55763@groamrexm03.amer.pfizer.com>",
+      "from_name": "Kuhn, Max",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2007-06-21T10:50:40-04:00",
+      "subject": "[R-pkgs] odfWeave version 0.5.9 released",
+      "subject_clean": "odfWeave version 0.5.9 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of odfWeave has been released to CRAN. This is a\nsignificant change to the package internals. It now uses the XML library\ninstead of a bunch of regular expressions.\n\nNew features include:\n\n   - Captions for tables and figures\n   - Functions to insert page breaks and to change the page layout\n   - Style objects for frames and pages\n\nBug fixes include:\n\n   - Parsing of arguments for graphics devices\n   - Misc issues with bulleted lists\n\nThere is also a 30 page manual in the examples sub-directory that\ndescribes the various style element and their values, with almost 50\ncode chunks for illustration.\n\nThanks to Steve Weston, Nathan Coulter, Sarah Goslee and Ralf Herold.\n\nSend me any questions or comments,\n\nMax\n\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "A new version of odfWeave has been released to CRAN. This is a\nsignificant change to the package internals. It now uses the XML library\ninstead of a bunch of regular expressions.\n\nNew features include",
+      "thread_id": "thread-453bda061db3",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
       "id": "msg-a41b1c2fb247",
       "message_id": "<1182953262.46826f2e64b47@webmail.fas.harvard.edu>",
       "from_name": "luyizhao at fas.harvard.edu",
@@ -228,6 +440,38 @@
       "body_plain": "We would like to announce the availability of the 'tradeCosts' package\nin R for analysing transaction costs of trading.  Version 0.1-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"tradeCosts\")\n...\n> vignette(\"tradeCosts\")\n\nand play around.\n\nThis is the first and very basic version of a package that we hope to\nexpand over the next few months.\n\nThe cost analysis this package performs is currently very basic.  We\nare releasing this version with the goal of getting feedback from\npotential users on what functionality they would like to see in future\nreleases of the tradecosts package.\n\nAaron Schwartz\nLuyi Zhao",
       "body_snippet": "We would like to announce the availability of the 'tradeCosts' package\nin R for analysing transaction costs of trading.  Version 0.1-0 is now available\non CRAN.  To take a look, you can:\n\n> install.pa",
       "thread_id": "thread-a41b1c2fb247",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-a41b1c2fb247",
+      "message_id": "<1182953262.46826f2e64b47@webmail.fas.harvard.edu>",
+      "from_name": "luyizhao at fas.harvard.edu",
+      "from_email_hash": "7c5c9d35fc672770c63e65596c44ff503287985342715c850238e4529c17e0bc",
+      "date": "2007-06-27T10:07:42-04:00",
+      "subject": "[R-pkgs] New package \"tradeCosts\"",
+      "subject_clean": "New package \"tradeCosts\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We would like to announce the availability of the 'tradeCosts' package\nin R for analysing transaction costs of trading.  Version 0.1-0 is now available\non CRAN.  To take a look, you can:\n\n> install.packages(\"tradeCosts\")\n...\n> vignette(\"tradeCosts\")\n\nand play around.\n\nThis is the first and very basic version of a package that we hope to\nexpand over the next few months.\n\nThe cost analysis this package performs is currently very basic.  We\nare releasing this version with the goal of getting feedback from\npotential users on what functionality they would like to see in future\nreleases of the tradecosts package.\n\nAaron Schwartz\nLuyi Zhao",
+      "body_snippet": "We would like to announce the availability of the 'tradeCosts' package\nin R for analysing transaction costs of trading.  Version 0.1-0 is now available\non CRAN.  To take a look, you can:\n\n> install.pa",
+      "thread_id": "thread-a41b1c2fb247",
+      "thread_depth": 0,
+      "month": "2007-06"
+    },
+    {
+      "id": "msg-1aba86f289d7",
+      "message_id": "<4683B704.50406@statistik.uni-dortmund.de>",
+      "from_name": "Thoralf Mildenberger",
+      "from_email_hash": "de4d274fda368f79e29d533de3ef4b954daa90bb5116e4f9bfa6b3de57d55af5",
+      "date": "2007-06-28T15:26:28+02:00",
+      "subject": "[R-pkgs] new package benchden 1.0.0 : benchmark densities for nonparametric density estimation",
+      "subject_clean": "new package benchden 1.0.0 : benchmark densities for nonparametric density estimation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The new package \"benchden\" 1.0.0 implements 28 benchmark densities for\nnonparametric density estimation that were introduced by A. Berlinet and\nL. Devroye (\"A Comparison of Kernel Density Estimates\", Pub. Inst. Stat.\nUniv. Paris, XXXVIII, fasc. 3, 1994, 3-59,\nhttp://cg.scs.carleton.ca/~luc/devs.html ). This collection includes a\nvariety of densities with different degrees of smoothness, different\ntail behaviour, different number of modes, with and without infinite \npeaks and also some standard densities like the normal and the uniform. \nThere is also a small intersection (e.g. the claw density) with the \ncollection of normal mixtures introduced by Marron and Wand and \nimplemented in R in the package \"nor1mix\".\nSimilar to the test bed functions by Donoho and Johnstone (Blocks, Bumps\netc.) commonly used in regression or the \"Peppers\" and \"Lena\" images\npopular in image analysis, the densities in this collection should be \nuseful for testing and comparing new and existing density estimators.\n\"benchden\" 1.0.0 contains functions for the generation of random\nvariates as well as density-, distribution- and quantile-functions.\nEverything is implemented in typical R-style and the package should\nreduce the programming effort needed for simulation studies in\nnonparametric density estimation. It also allows for better\nreproducibility of the results.\n\nThoralf Mildenberger, Henrike Weinert and Sebastian Tiemeyer",
+      "body_snippet": "The new package \"benchden\" 1.0.0 implements 28 benchmark densities for\nnonparametric density estimation that were introduced by A. Berlinet and\nL. Devroye (\"A Comparison of Kernel Density Estimates\", ",
+      "thread_id": "thread-1aba86f289d7",
       "thread_depth": 0,
       "month": "2007-06"
     },
@@ -261,6 +505,17 @@
       "root_message_id": "msg-3d153eda4a27"
     },
     {
+      "id": "thread-3d153eda4a27",
+      "subject": "Beta version of ggplot2",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-06-04T07:14:18+02:00",
+      "last_reply": "2007-06-04T07:14:18+02:00",
+      "root_message_id": "msg-3d153eda4a27"
+    },
+    {
       "id": "thread-5718f3a34c47",
       "subject": "Updated reshape and ggplot",
       "message_count": 1,
@@ -270,6 +525,28 @@
       "started": "2007-06-04T07:14:40+02:00",
       "last_reply": "2007-06-04T07:14:40+02:00",
       "root_message_id": "msg-5718f3a34c47"
+    },
+    {
+      "id": "thread-5718f3a34c47",
+      "subject": "Updated reshape and ggplot",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-06-04T07:14:40+02:00",
+      "last_reply": "2007-06-04T07:14:40+02:00",
+      "root_message_id": "msg-5718f3a34c47"
+    },
+    {
+      "id": "thread-45f8715cb55c",
+      "subject": "New package: relations",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2007-06-05T00:11:32+02:00",
+      "last_reply": "2007-06-05T00:11:32+02:00",
+      "root_message_id": "msg-45f8715cb55c"
     },
     {
       "id": "thread-45f8715cb55c",
@@ -294,6 +571,17 @@
       "root_message_id": "msg-9ae2e19d4402"
     },
     {
+      "id": "thread-9ae2e19d4402",
+      "subject": "New Package on Lancet Surveys of Iraq Mortality",
+      "message_count": 1,
+      "participants": [
+        "David Kane"
+      ],
+      "started": "2007-06-05T09:52:13-04:00",
+      "last_reply": "2007-06-05T09:52:13-04:00",
+      "root_message_id": "msg-9ae2e19d4402"
+    },
+    {
       "id": "thread-10b10e56915b",
       "subject": "Package update: pmml version 1.1.1",
       "message_count": 1,
@@ -303,6 +591,28 @@
       "started": "2007-06-05T18:09:55+10:00",
       "last_reply": "2007-06-05T18:09:55+10:00",
       "root_message_id": "msg-10b10e56915b"
+    },
+    {
+      "id": "thread-10b10e56915b",
+      "subject": "Package update: pmml version 1.1.1",
+      "message_count": 1,
+      "participants": [
+        "Graham Williams"
+      ],
+      "started": "2007-06-05T18:09:55+10:00",
+      "last_reply": "2007-06-05T18:09:55+10:00",
+      "root_message_id": "msg-10b10e56915b"
+    },
+    {
+      "id": "thread-cf576e458887",
+      "subject": "R Package: ssanv - Sample size adjustments for nonadherence and variability of input parameters",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2007-06-06T09:34:50-04:00",
+      "last_reply": "2007-06-06T09:34:50-04:00",
+      "root_message_id": "msg-cf576e458887"
     },
     {
       "id": "thread-cf576e458887",
@@ -327,6 +637,17 @@
       "root_message_id": "msg-ebf0ff1b7de6"
     },
     {
+      "id": "thread-ebf0ff1b7de6",
+      "subject": "R package: Mchtest - Monte Carlo hypothesis testing allowing Sequential Stopping",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2007-06-06T09:46:35-04:00",
+      "last_reply": "2007-06-06T09:46:35-04:00",
+      "root_message_id": "msg-ebf0ff1b7de6"
+    },
+    {
       "id": "thread-2ad63d7412c9",
       "subject": "New Package: rateratio.test",
       "message_count": 1,
@@ -336,6 +657,28 @@
       "started": "2007-06-06T09:50:52-04:00",
       "last_reply": "2007-06-06T09:50:52-04:00",
       "root_message_id": "msg-2ad63d7412c9"
+    },
+    {
+      "id": "thread-2ad63d7412c9",
+      "subject": "New Package: rateratio.test",
+      "message_count": 1,
+      "participants": [
+        "Fay, Michael (NIH/NIAID) [E]"
+      ],
+      "started": "2007-06-06T09:50:52-04:00",
+      "last_reply": "2007-06-06T09:50:52-04:00",
+      "root_message_id": "msg-2ad63d7412c9"
+    },
+    {
+      "id": "thread-b437f26ed288",
+      "subject": "Updated ggplot2 package (beta version)",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-06-11T07:42:03+02:00",
+      "last_reply": "2007-06-11T07:42:03+02:00",
+      "root_message_id": "msg-b437f26ed288"
     },
     {
       "id": "thread-b437f26ed288",
@@ -360,6 +703,17 @@
       "root_message_id": "msg-9f518f5d6554"
     },
     {
+      "id": "thread-9f518f5d6554",
+      "subject": "RGtk2 2.10.x series available",
+      "message_count": 1,
+      "participants": [
+        "Michael Lawrence"
+      ],
+      "started": "2007-06-19T08:10:35-05:00",
+      "last_reply": "2007-06-19T08:10:35-05:00",
+      "root_message_id": "msg-9f518f5d6554"
+    },
+    {
       "id": "thread-9fd766afebb3",
       "subject": "ggplot2 0.5.2",
       "message_count": 1,
@@ -369,6 +723,28 @@
       "started": "2007-06-19T09:07:26+02:00",
       "last_reply": "2007-06-19T09:07:26+02:00",
       "root_message_id": "msg-9fd766afebb3"
+    },
+    {
+      "id": "thread-9fd766afebb3",
+      "subject": "ggplot2 0.5.2",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2007-06-19T09:07:26+02:00",
+      "last_reply": "2007-06-19T09:07:26+02:00",
+      "root_message_id": "msg-9fd766afebb3"
+    },
+    {
+      "id": "thread-453bda061db3",
+      "subject": "odfWeave version 0.5.9 released",
+      "message_count": 1,
+      "participants": [
+        "Kuhn, Max"
+      ],
+      "started": "2007-06-21T10:50:40-04:00",
+      "last_reply": "2007-06-21T10:50:40-04:00",
+      "root_message_id": "msg-453bda061db3"
     },
     {
       "id": "thread-453bda061db3",
@@ -393,6 +769,17 @@
       "root_message_id": "msg-4b8797091c68"
     },
     {
+      "id": "thread-4b8797091c68",
+      "subject": "spatstat version 2",
+      "message_count": 1,
+      "participants": [
+        "adrian at maths.uwa.edu.au"
+      ],
+      "started": "2007-06-21T15:15:26+08:00",
+      "last_reply": "2007-06-21T15:15:26+08:00",
+      "root_message_id": "msg-4b8797091c68"
+    },
+    {
       "id": "thread-a41b1c2fb247",
       "subject": "New package \"tradeCosts\"",
       "message_count": 1,
@@ -402,6 +789,28 @@
       "started": "2007-06-27T10:07:42-04:00",
       "last_reply": "2007-06-27T10:07:42-04:00",
       "root_message_id": "msg-a41b1c2fb247"
+    },
+    {
+      "id": "thread-a41b1c2fb247",
+      "subject": "New package \"tradeCosts\"",
+      "message_count": 1,
+      "participants": [
+        "luyizhao at fas.harvard.edu"
+      ],
+      "started": "2007-06-27T10:07:42-04:00",
+      "last_reply": "2007-06-27T10:07:42-04:00",
+      "root_message_id": "msg-a41b1c2fb247"
+    },
+    {
+      "id": "thread-1aba86f289d7",
+      "subject": "new package benchden 1.0.0 : benchmark densities for nonparametric density estimation",
+      "message_count": 1,
+      "participants": [
+        "Thoralf Mildenberger"
+      ],
+      "started": "2007-06-28T15:26:28+02:00",
+      "last_reply": "2007-06-28T15:26:28+02:00",
+      "root_message_id": "msg-1aba86f289d7"
     },
     {
       "id": "thread-1aba86f289d7",

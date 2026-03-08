@@ -4,130 +4,18 @@
   "month": "2007-12",
   "messages": [
     {
-      "id": "msg-ee0cf7111810",
-      "message_id": "<Pine.GSO.4.56.0712032032140.15974@laurel.few.vu.nl>",
-      "from_name": "Katharine Mullen",
-      "from_email_hash": "ad891a8b1d087839368a3404126b8e88083d7988c4b52dc00429156bae947a21",
-      "date": "2007-12-03T20:41:55+01:00",
-      "subject": "[R-pkgs] new package 'bvls', update of 'nnls'",
-      "subject_clean": "new package 'bvls', update of 'nnls'",
+      "id": "msg-9c02e943150a",
+      "message_id": "<47798F6B.2080004@braverock.com>",
+      "from_name": "Brian G. Peterson",
+      "from_email_hash": "2d44e89a02cb2a9eb2f2113de72098dcb74d077b13b61958f1336c3292aa0254",
+      "date": "2007-12-31T18:55:07-06:00",
+      "subject": "[R-pkgs] PerformanceAnalytics version 0.9.6 released to CRAN",
+      "subject_clean": "PerformanceAnalytics version 0.9.6 released to CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A new package 'bvls' is available on CRAN.\n\nThe package provides an R interface to the Stark-Parker algorithm for\nbounded-variable least squares (BVLS) that solves A x = b with the\nconstraint l <= x <= u under least squares criteria, where l,x,u \\in R^n,\nb \\in R^m and A is an m \\times n matrix.\n\nThe Stark-Parker BVLS algorithm was published in\n\n Stark PB, Parker RL (1995). Bounded-variable least-squares: an\n algorithm and applications, Computational Statistics, 10, 129-141.\n\nThe packages interfaces the Fortran77 code distributed via the statlib\non-line software repository at Carnegie Mellon University\n(http://lib.stat.cmu.edu/general/bvls), modified very slightly for\ncompatibility with the gfortran compiler.  Stark and Parker have agreed to\ndistribution under GPL version 2 or newer.\n\nThe function 'bvls::bvls' returns an object of (S3) class 'bvls', which\nhas methods for 'coefficients', 'fitted.values', 'deviance' and\n'residuals'.\n\n====\n\nVersion 1.1 of the package 'nnls' is available on CRAN.\nChanges between Version 1.0 and 1.1:\n\n\to The function 'nnls::nnls' returns an object of (S3) class\n\t  'nnls', which has methods for 'coefficients',\n\t  'fitted.values', 'deviance' and 'residuals'\n\n\to The function 'nnnpls::nnnpls' allows each element of x to be\n\t  constrained to either a non-positive or a non-negative value\n\n----\nKatharine Mullen\nmail: Department of Physics and Astronomy, Faculty of Sciences\nVrije Universiteit Amsterdam, de Boelelaan 1081\n1081 HV Amsterdam, The Netherlands\nroom: T.1.06\ntel: +31 205987870\nfax: +31 205987992\ne-mail: kate at nat.vu.nl\nhomepage: http://www.nat.vu.nl/~kate/",
-      "body_snippet": "A new package 'bvls' is available on CRAN.\n\nThe package provides an R interface to the Stark-Parker algorithm for\nbounded-variable least squares (BVLS) that solves A x = b with the\nconstraint l <= x <",
-      "thread_id": "thread-ee0cf7111810",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-6ca8507066b8",
-      "message_id": "<f8e6ff050712071102o58d7de95iaf491b11e016652e@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2007-12-07T13:02:05-06:00",
-      "subject": "[R-pkgs] fda, version 1.2.3",
-      "subject_clean": "fda, version 1.2.3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "fda 1.2.3\n========================\n\nVersion 1.2.3 of the fda package has just been released. This version adds to\nprevious versions a script to create most of the figures of chapter 6 of\n\"Applied Functional Data Analysis\" by Ramsay and Silverman. Other changes\noffer simpler calls to time warping / registration and functional principal\ncomponent functions.\n\nThe fda package supports the books \"Functional Data Analysis\" and \"Applied\nFunctional Data Analysis\" by Bernard Silverman and James Ramsay. Functional\ndata analysis, which lots of us like to call \"FDA\", is about the analysis of\ninformation on curves or functions. FDA is a collection statistical techniques\nfor answering questions like, \"What are the main ways in which the curves vary\nfrom one to another?\" In fact, most of the questions and problems associated\nwith multivariate data (PCA, LDA, clustering, ...) have functional\ncounterparts. More information about FDA can be found at\nhttp://www.psych.mcgill.ca/misc/fda/.\n\nRegards\n\nHadley Wickham\nJames Ramsey\nSpencer Graves",
-      "body_snippet": "fda 1.2.3\n========================\n\nVersion 1.2.3 of the fda package has just been released. This version adds to\nprevious versions a script to create most of the figures of chapter 6 of\n\"Applied Func",
-      "thread_id": "thread-6ca8507066b8",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-a56c07c25c6a",
-      "message_id": "<475FF73E.8080606@biomserv.univ-lyon1.fr>",
-      "from_name": "Simon Penel",
-      "from_email_hash": "930e04aa55d71c91868e2d4bc210a57595241d60b797a333334d2abac85bf4e9",
-      "date": "2007-12-12T15:59:10+01:00",
-      "subject": "[R-pkgs] New version of seqinR  released",
-      "subject_clean": "New version of seqinR  released",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nthe seqinR package contains utilities to import and analyze biological\nsequence data. For a general introduction see this document:\nhttp://pbil.univ-lyon1.fr/software/SeqinR//vignette.pdf\n\nPlease do not use r-help for questions about seqinR or r-bugs\nfor bug report about seqinR. Use instead the seqinR diffusion list:\nhttp://pbil.univ-lyon1.fr/software/SeqinR//mailing.php?lang=eng\n\nA new version of seqinR, seqinR 1.1-4, has been released on CRAN.\nHere is a summary of changes:\n\no There is a new chapter to explain how to set up a\n  local ACNUC server on Unix-like platforms.\n\no Function GC() has gained a new argument NA.GC\n  defaulting to NA to say what should be returned when the\n  GC content cannot be computed from data (for instance with a\n  sequence like NNNNNNNNNNNN). The argument oldGC is now\n  deprecated and a warning is issued. Functions GC1(),\n  GC2(), GC3() are now simple wrappers for the\n  more general GCpos() function. The new argument frame\n  allows to take the frame into account for CDS.\n\no Function read.fasta() now supports comment lines\n  starting by a semicolon character in FASTA files. An example\n  of such a file is provided in sequences/legacy.fasta.\n  The argument File is now deprecated. There is\n  a new argument seqonly to import just the sequences\n  without names, annotations and coercion attempts. There is\n  a new argument strip.desc to remove the leading\n  '>' character in annotations (as in function readFASTA\n  from the Biostrings package). The FASTA file\n  example someORF.fsa from Biostrings is also added\n  for comparisons.\n\no Function read.alignment() has gained a new argument\n  forceToLower defaulting to TRUE to force lower case in\n  the character of the sequence (this is for a smoother interaction\n  with the package ape). The argument File is now\n  deprecated and a warning is issued when used instead of file.\n  The example in the function kaks() has been corrected\n  to avoid this warning when reading the example files.\n\no The details of the socket connection are no more stored in\n  the slot socket for objects of class seqAcnucWeb:\n  this slot is now deleted. As a consequence, the argument\n  socket in function as.SeqAcnucWeb() has been\n  removed and there is now a new\n  argument socket = \"auto\" in functions getAnnot(),\n  getFrag(), geyKeyword(), getLocation(),\n  and getSequence(). The default value \"auto\" means\n  that the details of the socket connection are taken automatically\n  when necessary from the last opened bank. The size of local lists\n  of sequences is reduced by about a third now as compared to the\n  previous version.\n\no New dataset m16j and waterabs added.\n\no Generic functions getAnnot(), getFrag(), getKeyword(),\n  getLength(), getLocation(), getName(), getSequence() and\n  getTrans() have gained methods to handle objects from class list\n  and class qaw.\n\no Functions getAttributsocket() and getNumber.socket()\n  are now deprecated, a warning is issued.\n\no There is a new appendix in which all the examples protected\n  by a dontrun statment are forced to be executed.\n\no New low level utility functions related to an ACNUC server:\n  acnucclose(), quitacnuc(), clientid(), countfreelists(),\n  knowndbs(), autosocket(), countsubseqs(), savelist(),\n  ghelp(), modifylist(), getlistate(), setlistname(),\n  residuecount(), isenum(), prettyseq(), gfrag(),\n  print.seqAcnucWeb()\n\no Utility function parser.socket() has been optimized and\n  is about four times faster now. This decreases the time\n  needed by the query() function.\n\nBest,\n\nthe seqinR team\n\n-- \nSimon Penel\nLaboratoire de Biometrie et Biologie Evolutive           Bat 711  -   CNRS UMR 5558  -    Universite Lyon 1              43 bd du 11 novembre 1918 69622 Villeurbanne Cedex       Tel:   04 72 43 29 04      Fax:  04 72 43 13 88\nhttp://lbbe.univ-lyon1.fr/-Penel-Simon-.html?lang=fr\nhttp://pbil.univ-lyon1.fr/members/penel",
-      "body_snippet": "Dear useRs,\n\nthe seqinR package contains utilities to import and analyze biological\nsequence data. For a general introduction see this document:\nhttp://pbil.univ-lyon1.fr/software/SeqinR//vignette.pdf",
-      "thread_id": "thread-a56c07c25c6a",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-049a60ea11a0",
-      "message_id": "<86b533e90712131113y3104de23x9028456d2f7d8466@mail.gmail.com>",
-      "from_name": "Ken Kelley",
-      "from_email_hash": "ba5333a9caa0f2506ebf4a5b75c46f2f3e278a435c30b8b5dbc4a1c374cc7323",
-      "date": "2007-12-13T14:13:39-05:00",
-      "subject": "[R-pkgs] New version of MBESS released",
-      "subject_clean": "New version of MBESS released",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hello useRs,\n\nMBESS (Methods for the Behavioral, Educational, and Social Sciences)\nhas recently been released and should be on all of the mirrors by now\n(with binaries for Mac and Windows:\nhttp://cran.r-project.org/src/contrib/Descriptions/MBESS.html).\n\nThe major contribution of MBESS is confidence intervals for\nnoncentrality parameters (t, F, and chi-square) and standardized\neffect sizes (e.g., the standardized mean and mean difference, R^2 for\nrandom or fixed effects, the coefficient of variation, the root mean\nsquare error of approximation, standardized regression coefficients)\nas well as sample size planning from the accuracy in parameter\nestimation (AIPE) approach, where the width of the observed confidence\nintervals is of interest (in addition to or instead of the power\nanalytic approach to sample size planning).\n\nThis is the 10th release of MBESS and it is version number is now 1.0.0.\n\nDetailed information about MBESS is available in the current issue of\nBehavior Research Methods\n(http://www.psychonomic.org/BRMIC/contents.htm) as well as Journal of\nStatistical Software (http://www.jstatsoft.org/v20/i08).\n\nTake care,\nKen\n\n-- \nKen Kelley, Ph.D.\nIndiana University\nInquiry Methodology Program\n201 North Rose Avenue, Suite 4000\nBloomington, Indiana 47405\n\nPhone: 812-856-8330 / Fax: 812-856-8333\nEmail: KKIII at Indiana.Edu\nInternet: http://www.indiana.edu/~kenkel",
-      "body_snippet": "Hello useRs,\n\nMBESS (Methods for the Behavioral, Educational, and Social Sciences)\nhas recently been released and should be on all of the mirrors by now\n(with binaries for Mac and Windows:\nhttp://cran",
-      "thread_id": "thread-049a60ea11a0",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-38947072207f",
-      "message_id": "<200712181715.57597.ahenningsen@email.uni-kiel.de>",
-      "from_name": "Arne Henningsen",
-      "from_email_hash": "03df17f10f077f3bffedf8b178fc34d61d8a069760e5779f1402657f12f56db8",
-      "date": "2007-12-18T17:15:57+01:00",
-      "subject": "[R-pkgs] New version of systemfit (not backward compatible)",
-      "subject_clean": "New version of systemfit (not backward compatible)",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nthe systemfit package contains functions for fitting systems of simultaneous \nequations by various estimation methods (e.g. OLS, SUR, 2SLS, 3SLS). \nCurrently version 0.8 of systemfit is available on CRAN. However, shortly we \nwill upload version 1.0, which is NOT BACKWARD COMPATIBLE. The changes that \nbroke backward compatibility were necessary to make systemfit() more similar \nto standard regression tools in R such as lm(). We hope that the usage of \nsystemfit() is more intuitive for R users now. We will continue to maintain \nthe 0.8 branch so that users can still use the old version if they do not \nwant to update their R scripts. Both versions are and will be available for \ndownload from systemfit's website:\n   http://www.systemfit.org/\nwhich is a shortcut to \n   http://www.uni-kiel.de/agrarpol/ahenningsen/systemfit/\n\nA paper that describes the (new version of the) systemfit package is \nforthcoming in the Journal of Statistical Software (JSS). A preprint of this \npaper is available on systemfit's website:\n   http://www.systemfit.org/systemfit_paper_1.0.pdf\n\nThe following list summarizes the most important changes \nfrom version 0.8 to 1.0:\n- some names of systemfit()'s arguments have changed to make it more \n  similar to standard regression tools in R\n- the order of systemfit()'s arguments has changed to make it more \n  similar to standard regression tools in R\n- the names of the elements in the object returned by systemfit() have \n  changed to make it more similar to lm()\n- added several methods for systemfit objects that are generally \n  available for standard regression tools in R\n- restrictions on the coefficients can be specified symbolically now\n- the functionality of systemfitClassic() has been integrated into systemfit()\n- replaced ftest.systemfit() and waldtest.systemfit() by the method\n  linear.hypothesis()\n- systemfit now uses the \"Matrix\" package for matrix calculations (this \n  makes the estimation of large models and large data sets much faster)\n- improved checking of the arguments so that error messages are more \n  helpful now\n\nWe thank two anonymous referees of the JSS, Achim Zeileis, John Fox, William \nH. Greene, Ott Toomet, Duncan Murdoch, Martin Maechler, Duglas Bates and \nseveral (other) systemfit users for their answers, comments, and/or \nsuggestions that helped us to improve the systemfit package.\n\nFeedback is always welcome!\nArne & Jeff\n\n-- \nArne Henningsen\nDepartment of Agricultural Economics\nUniversity of Kiel\nOlshausenstr. 40\nD-24098 Kiel (Germany)\nTel: +49-431-880 4445 or +49-4349-914871\nFax: +49-431-880 1397\nahenningsen at agric-econ.uni-kiel.de\nhttp://www.uni-kiel.de/agrarpol/ahenningsen/",
-      "body_snippet": "Dear R users,\n\nthe systemfit package contains functions for fitting systems of simultaneous \nequations by various estimation methods (e.g. OLS, SUR, 2SLS, 3SLS). \nCurrently version 0.8 of systemfit is",
-      "thread_id": "thread-38947072207f",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-28aa6d347f79",
-      "message_id": "<1198009803.37146.29.camel@pc-racine1.mcmaster.ca>",
-      "from_name": "Jeffrey S. Racine",
-      "from_email_hash": "0142cbe3fe3304381d2b0a61bcba57be4c715a7c0972171715ecef6315cd0493",
-      "date": "2007-12-18T15:30:03-05:00",
-      "subject": "[R-pkgs] Update of the np package (version 0.14-1)",
-      "subject_clean": "Update of the np package (version 0.14-1)",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nAn updated version of the np package has recently been uploaded to CRAN\n(version 0.14-1). \n\nThe package is briefly described in a recent issue of Rnews (October,\n2007, http://cran.r-project.org/doc/Rnews/Rnews_2007-2.pdf) for those\nwho might be interested.\n\nA somewhat more detailed paper that describes the np package is\nforthcoming in the Journal of Statistical Software\n(http://www.jstatsoft.org) for those might be interested.\n\nA much more thorough treatment of the subject matter can be found in Li,\nQ. and J. S. Racine (2007), Nonparametric Econometrics: Theory and\nPractice, Princeton University Press, ISBN: 0691121613 (768 Pages) for\nthose who might be interested\n(http://press.princeton.edu/titles/8355.html)\n\nInformation on the np package:\n\nThis package provides a variety of nonparametric (and semiparametric)\nkernel methods that seamlessly handle a mix of continuous, unordered,\nand ordered factor datatypes. We would like to gratefully acknowledge\nsupport from  the Natural Sciences and Engineering Research Council of\nCanada (NSERC:www.nserc.ca), the Social Sciences and Humanities Research\nCouncil of Canada (SSHRC:www.sshrc.ca), and the Shared Hierarchical\nAcademic Research Computing Network (SHARCNET:www.sharcnet.ca).\n\nChanges from version 0.13-1 to 0.14-1:\n\n* now use optim rather than nlm for minimisation in single index and\nsmooth coefficient models\n* fixed bug in klein-spady objective function\n* regression standard errors are now available in the case of no\n  continuous variables\n* summary should look prettier, print additional information\n* tidied up lingering issues with out-of-sample data and conditional\nmodes\n* fixed error when plotting asymptotic errors with conditional densities\n* fixed a bug in npplot with partially linear regressions and \nplot.behavior='data' or 'plot-data'\n* maximum default number of multistarts is now set to 5\n* least-squares cross-validation of conditional densities uses a new,\n faster algorithm\n* new, faster algorithm for least-squares cross-validation for both \nlocal-constant and local linear regressions.\n   The estimator has changed somewhat: both cross-validation and\n   the estimator use a method of shrinking towards the local constant\n   estimator rather than the standard ridge approach that shrinks\n   towards zero\n* optimised smooth coefficient code, added ridging\n* fixed bug in uniform CDF kernel\n* fixed bug where npindexbw would ignore bandwidth.compute = FALSE and\n   compute bandwidths when supplied with a preexisting bw object\n* now can handle estimation out of discrete support.\n* summary would misreport the values of discrete scale factors which\n   were computed with bwscaling = TRUE\n\nWe are grateful to John Fox, Achim Zeilies, Roger Koenker, and numerous\nusers for their valuable feedback which resulted in an improved version\nof the package.\n\n-- Jeffrey Racine & Tristen Hayfield.\n\n-- \nProfessor J. S. Racine         Phone:  (905) 525 9140 x 23825\nDepartment of Economics        FAX:    (905) 521-8232\nMcMaster University            e-mail: racinej at mcmaster.ca\n1280 Main St. W.,Hamilton,     URL:\nhttp://www.economics.mcmaster.ca/racine/\nOntario, Canada. L8S 4M4\n\n`The generation of random numbers is too important to be left to chance'",
-      "body_snippet": "Dear R users,\n\nAn updated version of the np package has recently been uploaded to CRAN\n(version 0.14-1). \n\nThe package is briefly described in a recent issue of Rnews (October,\n2007, http://cran.r-pro",
-      "thread_id": "thread-28aa6d347f79",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-ff78df579b32",
-      "message_id": "<476DBAD2.1020700@acm.org>",
-      "from_name": "Tony Plate",
-      "from_email_hash": "270dbfad1bede22a8cb030fa728f9ba1cb2915f53915148ec2f12f8d2cfa93a9",
-      "date": "2007-12-22T18:33:06-07:00",
-      "subject": "[R-pkgs] new version of trackObjs",
-      "subject_clean": "new version of trackObjs",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The trackObjs package stores objects in files on disk so that files are\nautomatically rewritten when objects are changed, and so\nthat objects are accessible but do not occupy memory until\nthey are accessed. Also tracks times when objects are created\nand modified, and caches some basic characteristics of objects\nto allow for fast summaries of objects.\n\nThis version trackObjs_0.8-0 fixes some bugs:\n\n     o   Fixed faulty detection of conflicting existing objects\n         when starting to track to an existing directory.\n\n     o   Replaced environment on function that is in the active\n         binding for a tracked object.  Previously, that function\n         could, if constructed via track(obj <- value), have a\n         copy of the tracked object in its environment, which would\n         stay present taking up memory even if the object was\n         flushed out of the tracking environment.\n\n     o   Fixed bug that stopped track.stop(all=TRUE) from working\n\n-- Tony Plate",
-      "body_snippet": "The trackObjs package stores objects in files on disk so that files are\nautomatically rewritten when objects are changed, and so\nthat objects are accessible but do not occupy memory until\nthey are acc",
-      "thread_id": "thread-ff78df579b32",
-      "thread_depth": 0,
-      "month": "2007-12"
-    },
-    {
-      "id": "msg-bca08c4b7f1b",
-      "message_id": "<E99D0798-917F-4C4B-A951-C25D86A3175F@stat.ucla.edu>",
-      "from_name": "Jan de Leeuw",
-      "from_email_hash": "a167f5fca204abb64fa78a00e65068c9d14455edaf0726f65c9ebfbf7de7fcc8",
-      "date": "2007-12-23T09:57:08-08:00",
-      "subject": "[R-pkgs] anacor: yet another ca package",
-      "subject_clean": "anacor: yet another ca package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "anacor-0.9.0 is on CRAN (by De Leeuw and Mair)\n\nanacor does correspondence analysis and canonical correspondence\nanalysis. It can make row plots, column plots,\njoint plots, Benz?cri plots, regression plots,\nand transformation plots. Where appropriate, plots can\nbe in 3d using either rgl or scatterplot3d. Row and\ncolumn points can be in standard scaling, Benz?cri\nscaling, Goodman scaling, row-centroid, or column-centroid\nscaling.\n\nThe summary method writes out a table with the chi-square\n(inertia) decomposition, it also writes out the singular\nvalues, and their asymptotic standard errors under multinomial\nsampling. Plots of the category quantifications (row scores\nand column scores) can be made optionally with asymptotic\nconfidence ellipses, again based on multinomial sampling.\n\nThe package contain various utilities to switch data formats,\nin particular to transform data frames to Burt matrices,\nto indicator matrices, and even to fuzzy indicator matrices\nusing B-spline bases.\n\nThe vignette for the package (not added yet) is a paper\nalso submitted to the special psychoR issue of JSS. You\ncan get a preprint at\n\nhttp://idisk.mac.com/jdeleeuw-Public/psychoR/anacor.zip\n\nThe psychoR directory also has the anacor package, the\nhomals package, and the homals paper. smacof (many forms\nof multidimensional scaling) is next.\n\n==========================================================\nJan de Leeuw, 11667 Steinhoff Rd, Frazier Park, CA 93225\nhome 661-245-1725 mobile 661-231-5416 work 310-825-9550\n.mac: jdeleeuw +++  aim: deleeuwjan +++ skype: j_deleeuw\n==========================================================\n          There is no worse screen to block out\n    the spirit than confidence in our own intelligence.\n                                    ---- John Calvin.",
-      "body_snippet": "anacor-0.9.0 is on CRAN (by De Leeuw and Mair)\n\nanacor does correspondence analysis and canonical correspondence\nanalysis. It can make row plots, column plots,\njoint plots, Benz?cri plots, regression ",
-      "thread_id": "thread-bca08c4b7f1b",
+      "body_plain": "We are pleased to announce the availability on CRAN of\nPerformanceAnalytics version 0.9.6.\n\nThis is a feature and bugfix release.\n\nhttp://cran.r-project.org/src/contrib/Descriptions/PerformanceAnalytics.html\n\nPerformanceAnalytics is a library of econometric functions for\nperformance and risk analysis. This library aims to aid practitioners\nand researchers in utilizing the latest research in analysis of\nnon-normal return streams.\n\nPackage: PerformanceAnalytics\nType: Package\nTitle: Econometric tools for performance and risk analysis.\nVersion: 0.9.6\nDate: 2007-12-29\nLicense: GPL\nURL:\nhttp://cran.r-project.org/src/contrib/Descriptions/PerformanceAnalytics.html\nURL: http://braverock.com/R/\n\nNew Functions:\n     chart.ECDF\n         Creates an empirical cumulative distribution function (ECDF)\n         overlaid with a cumulative distribution function (CDF)\n         Inspired by:\n         Ruppert, David. 2004.\n         Statistics and Finance, an Introduction.\n         Ch. 2 Fig. 2.5\n\n     chart.ACF\n     chart.ACFplus\n         Inspired by (and partially ported from) the website:\n         http://www.stat.pitt.edu/stoffer/tsa2/Rcode/acf2.R\n         \"here's an R function that will plot the ACF and PACF of a time\n         series at the same time on the SAME SCALE, and it leaves out\n         the zero lag in the ACF [and uses the number of observations\n         as the default]\"\n         That description made a lot of sense, so it's implemented here\n         for both the ACF alone and the ACF with the PACF.\n\n     chart.Regression\n         Uses a scatterplot to display the relationship of returns\n         to a market benchmark.  Fits a linear model and overlays the\n         resulting model.  Also overlays a Loess line for comparison.\n\n     Return.read\n         Wrapper of 'read.zoo' with some defaults for different\n         date formats and frequencies.\n\n     Return.Geltner\n         Calculate Geltner liquidity-risk-adjusted return series.\n         David Geltner developed a method to remove estimating/liquidity\n         bias in real estate index returns.  It has since been applied\n         to other return series that show autocorrelation or\n         illiquidity effects. The theory is that by correcting for\n         autocorrelation, you are uncovering a \"true\" return from series\n         of observed returns that contain illiquidity or manual pricing\n         effects.\n\n     SmoothingIndex\n         Proposed by Getmansky et al to provide a normalized measure of\n         liquidity risk.  The index will produces a number from zero to\n         one.  A low number indicates low liquidity risk.  A number\n         trending towards one indicates a higher liquidity risk.\n\n     table.Autocorrelation\n         Produces data table of autocorrelation coefficients rho and\n         corresponding Q(6)-statistic for each column in return series.\n\n     table.CalendarReturns\n         Returns a table of returns formatted with years in rows, months\n         in columns, and a total column in the last column.\n         For additional columns, annual returns will be appended.\n\n\nSignificantly Changed Functions:\n     chart.Boxplot\n         Added the ability to more completely control the visual display.\n         Added the ability to render a Tufte-style compact boxplot.\n\n     chart.Histogram\n         Improved visual display for print-quality graphics\n         Added fits for extra distributions (stable,cauchy,skew-T)\n         Added more control over risk lines\n         Added event lines\n\n     chart.QQPlot\n         Replaced most internals with port of John Fox's\n         qq.plot from 'car'\n         Now fits arbitrary distributions\n         Allows use of error bands\n\n     We have made changes throughout the package to allow the\n     risk-free rate to contain a vector of changing rates corresponding\n     with the return series being examined.\n\n     In addition, we have made more extensive use of the features of the\n     'zoo' package in this release of PerformanceAnalytics, and removed\n     a few external dependencies where those dependencies were minor and\n     easily replicated or ported to this package.  We expect both of\n     these trends to continue in later releases.  Hopefully, we have\n     properly credited the original authors and functions both in our\n     code and in the manual pages.\n\nDeprecated Functions:\n     rollingCorrelation\n     rollingFunction\n         These functions have been replaced in our code by the use of\n         zoo's 'rollapply' function, and are no longer needed as\n         separate custom functions.\n\nNew Vignettes:\n     We have added as vignettes the presentations we gave on\n     PerformanceAnalytics at the R/RMetrics Conference in Mielesalp\n     in July 2007 and at UseR! 2007 in Ames, Iowa.\n\nOther:\n     This version of PerformanceAnalytics contains many, many minor\n     improvements and changes.  We added aver 1500 lines of code\n     and comments, and over 1000 lines of documentation.\n\nWe have benefited greatly from feedback and comments from the users of\nPerformanceAnalytics and from R-SIG-Finance.  Please continue to send\nyour questions, comments, and complaints.\n\nFull details available in the ChangeLog or in the CVS logs in all .R\nfiles in the source package.\n\nRegards,\n\n     - Brian",
+      "body_snippet": "We are pleased to announce the availability on CRAN of\nPerformanceAnalytics version 0.9.6.\n\nThis is a feature and bugfix release.\n\nhttp://cran.r-project.org/src/contrib/Descriptions/PerformanceAnalyti",
+      "thread_id": "thread-9c02e943150a",
       "thread_depth": 0,
       "month": "2007-12"
     },
@@ -150,92 +38,15 @@
   ],
   "threads": [
     {
-      "id": "thread-ee0cf7111810",
-      "subject": "new package 'bvls', update of 'nnls'",
+      "id": "thread-9c02e943150a",
+      "subject": "PerformanceAnalytics version 0.9.6 released to CRAN",
       "message_count": 1,
       "participants": [
-        "Katharine Mullen"
+        "Brian G. Peterson"
       ],
-      "started": "2007-12-03T20:41:55+01:00",
-      "last_reply": "2007-12-03T20:41:55+01:00",
-      "root_message_id": "msg-ee0cf7111810"
-    },
-    {
-      "id": "thread-6ca8507066b8",
-      "subject": "fda, version 1.2.3",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2007-12-07T13:02:05-06:00",
-      "last_reply": "2007-12-07T13:02:05-06:00",
-      "root_message_id": "msg-6ca8507066b8"
-    },
-    {
-      "id": "thread-a56c07c25c6a",
-      "subject": "New version of seqinR  released",
-      "message_count": 1,
-      "participants": [
-        "Simon Penel"
-      ],
-      "started": "2007-12-12T15:59:10+01:00",
-      "last_reply": "2007-12-12T15:59:10+01:00",
-      "root_message_id": "msg-a56c07c25c6a"
-    },
-    {
-      "id": "thread-049a60ea11a0",
-      "subject": "New version of MBESS released",
-      "message_count": 1,
-      "participants": [
-        "Ken Kelley"
-      ],
-      "started": "2007-12-13T14:13:39-05:00",
-      "last_reply": "2007-12-13T14:13:39-05:00",
-      "root_message_id": "msg-049a60ea11a0"
-    },
-    {
-      "id": "thread-28aa6d347f79",
-      "subject": "Update of the np package (version 0.14-1)",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey S. Racine"
-      ],
-      "started": "2007-12-18T15:30:03-05:00",
-      "last_reply": "2007-12-18T15:30:03-05:00",
-      "root_message_id": "msg-28aa6d347f79"
-    },
-    {
-      "id": "thread-38947072207f",
-      "subject": "New version of systemfit (not backward compatible)",
-      "message_count": 1,
-      "participants": [
-        "Arne Henningsen"
-      ],
-      "started": "2007-12-18T17:15:57+01:00",
-      "last_reply": "2007-12-18T17:15:57+01:00",
-      "root_message_id": "msg-38947072207f"
-    },
-    {
-      "id": "thread-ff78df579b32",
-      "subject": "new version of trackObjs",
-      "message_count": 1,
-      "participants": [
-        "Tony Plate"
-      ],
-      "started": "2007-12-22T18:33:06-07:00",
-      "last_reply": "2007-12-22T18:33:06-07:00",
-      "root_message_id": "msg-ff78df579b32"
-    },
-    {
-      "id": "thread-bca08c4b7f1b",
-      "subject": "anacor: yet another ca package",
-      "message_count": 1,
-      "participants": [
-        "Jan de Leeuw"
-      ],
-      "started": "2007-12-23T09:57:08-08:00",
-      "last_reply": "2007-12-23T09:57:08-08:00",
-      "root_message_id": "msg-bca08c4b7f1b"
+      "started": "2007-12-31T18:55:07-06:00",
+      "last_reply": "2007-12-31T18:55:07-06:00",
+      "root_message_id": "msg-9c02e943150a"
     },
     {
       "id": "thread-9c02e943150a",

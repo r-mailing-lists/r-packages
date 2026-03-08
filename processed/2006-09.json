@@ -20,6 +20,22 @@
       "month": "2006-09"
     },
     {
+      "id": "msg-a25afc81129c",
+      "message_id": "<44F9FB03.5050703@buseco.monash.edu.au>",
+      "from_name": "Rob Hyndman",
+      "from_email_hash": "4359c851432bfc20e36b5ecce6d98a32213e7d9735341752c86c5814ca300557",
+      "date": "2006-09-03T07:43:31+10:00",
+      "subject": "[R-pkgs] New forecasting bundle of packages",
+      "subject_clean": "New forecasting bundle of packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "v1.0 of the forecasting bundle of packages is now on CRAN and will \npropagate to mirrors shortly.\n\nThe forecasting bundle of R packages provides new forecasting methods, \nand graphical tools for displaying and analysing forecasts. It comprises \nthe following packages:\n\n     * forecast: Functions and methods for forecasting.\n\n     * fma: All data sets from Makridakis, Wheelwright and Hyndman \n(1998)         Forecasting: methods and applications, Wiley & Sons: New \nYork.\n\n     * Mcomp: All data from the M1 and M3 forecast competitions.\n\nKey features:\n\n* a \"forecast\" method and class which can be applied to Arima, StructTS, \nHoltWinters and other time series models. This is preferred to predict() \nas it provides output in a consistent format (the \"forecast\" class) that \ncan be used by other functions.\n\n* automatic univariate time series forecasting based on exponential \nsmoothing state space models. This is much more general and flexible \nthan HoltWinters().\n\n* automatic ARIMA forecasting based on minimizing the AIC or BIC.\n\n* several new forecasting methods and time series graphics.\n\nSome features of the forecast package were the subject of my talk at \nUseR! in Vienna in June. Slides of the talk are at \nhttp://www.robhyndman.info/talks/Hyndman_UseR.pdf\n\nAnyone who has been using earlier versions of the packages from my web \npages should check out the list of changes at \nhttp://www.robhyndman.info/Rlibrary/forecast/\n\n__________________________________________________\nProfessor Rob J Hyndman\nDepartment of Econometrics & Business Statistics,\nMonash University, VIC 3800, Australia\nhttp://www.robhyndman.info/",
+      "body_snippet": "v1.0 of the forecasting bundle of packages is now on CRAN and will \npropagate to mirrors shortly.\n\nThe forecasting bundle of R packages provides new forecasting methods, \nand graphical tools for displ",
+      "thread_id": "thread-a25afc81129c",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
       "id": "msg-50b54c879fbf",
       "message_id": "<00ad01c6d186$b5597740$0540210a@www.domain>",
       "from_name": "Dimitris Rizopoulos",
@@ -32,6 +48,38 @@
       "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \nfor analyzing multivariate dichotomous and polytomous data under the \nItem Response Theory approach.\n\nNew features:\n\n* function tpm() (along with supporting methods, i.e., anova, plot, \nmargins, factor.scores, etc.) has been added for fitting Birnbaum's \nThree Parameter Model.\n\n* grm() can now handle mix of dichotomous and polytomous items.\n\n* descript() returns more output, especially for dichotomous manifest \nvariables.\n\nFor more details check the CHANGES file. Future plans include \ndevelopment of functions for goodness-of-fit, and the Partial Credit \nModel.\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \nfor analyzing multivariate dichotomous and polytomous data under the \nItem Response Theory approach.\n\nNew features:",
       "thread_id": "thread-50b54c879fbf",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
+      "id": "msg-50b54c879fbf",
+      "message_id": "<00ad01c6d186$b5597740$0540210a@www.domain>",
+      "from_name": "Dimitris Rizopoulos",
+      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
+      "date": "2006-09-06T09:33:12+02:00",
+      "subject": "[R-pkgs] package ltm -- version 0.6-0",
+      "subject_clean": "package ltm -- version 0.6-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \nfor analyzing multivariate dichotomous and polytomous data under the \nItem Response Theory approach.\n\nNew features:\n\n* function tpm() (along with supporting methods, i.e., anova, plot, \nmargins, factor.scores, etc.) has been added for fitting Birnbaum's \nThree Parameter Model.\n\n* grm() can now handle mix of dichotomous and polytomous items.\n\n* descript() returns more output, especially for dichotomous manifest \nvariables.\n\nFor more details check the CHANGES file. Future plans include \ndevelopment of functions for goodness-of-fit, and the Partial Credit \nModel.\n\nAny kind of feedback (questions, suggestions, bug-reports, etc.) is \nmore than welcome.\n\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package 'ltm' \nfor analyzing multivariate dichotomous and polytomous data under the \nItem Response Theory approach.\n\nNew features:",
+      "thread_id": "thread-50b54c879fbf",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
+      "id": "msg-8b51dafbaad6",
+      "message_id": "<71257D09F114DA4A8E134DEAC70F25D3060D991B@groamrexm03.amer.pfizer.com>",
+      "from_name": "Kuhn, Max",
+      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
+      "date": "2006-09-06T15:03:35-04:00",
+      "subject": "[R-pkgs] odfWeave Version 0.4.4",
+      "subject_clean": "odfWeave Version 0.4.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.4.4 of odfWeave is available from CRAN. A Windows binary\nshould be available shortly.\n\nThis version requires base R version 2.3.1 or greater.\n\nChanges from the last version include\n\n  - Non-English character sets are handled better. For example, Chinese\ncharacters can be included in R code. See the file \"testCases.odt\" in\nthe examples directory for an example\n\n  - Image specifications, such as format and size, have been moved out\nof odfWeaveControl. They are now controlled by the functions\ngetImageDefs and setImageDefs. This change allows the user to easily\nmodify the image properties in code chunks so that figures can have\ndifferent sizes or types throughout the document.\n\n  - When odfWeave is invoked, a check for a zip program is done and a\nmore meaningful error is reported. This should help users better\nunderstand the odfWeave software dependencies. \n\n  - A new XML parser was written so that users no longer need to turn\noff the \"size optimization\" feature in OpenOffice. \n\n  - Three bugs were fixed:\n\n    o If the user specified a relative path to the source file, an error\noccurred\n\n    o Fonts contained in the style definitions are automatically\nregistered in the ODF document. Previously, fonts that specified using\nsetStyleDefs but were not used in the document were ignored. Now, the\nfonts found using getStyleDefs() at the start of odfWeave execution are\nadded to the document.\n\n    o A new function, odfTmpDir, is now used to set the path to the\nworking directory. A new directory is created in the location of\ntempdir().\n\nAs always, please send any comments, suggestions or bug reports to\nmax.kuhn at pfizer.com.\n\nMax\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
+      "body_snippet": "Version 0.4.4 of odfWeave is available from CRAN. A Windows binary\nshould be available shortly.\n\nThis version requires base R version 2.3.1 or greater.\n\nChanges from the last version include\n\n  - Non-",
+      "thread_id": "thread-8b51dafbaad6",
       "thread_depth": 0,
       "month": "2006-09"
     },
@@ -68,6 +116,22 @@
       "month": "2006-09"
     },
     {
+      "id": "msg-75e612115f80",
+      "message_id": "<451287F7.90200@iastate.edu>",
+      "from_name": "Michael Lawrence",
+      "from_email_hash": "c36bf863fc6ce4c956c531e3be3c380a9dea26d6f0cbee8fa9df0b1b13a51f2d",
+      "date": "2006-09-21T07:39:19-05:00",
+      "subject": "[R-pkgs] cairoDevice 1.2 on CRAN",
+      "subject_clean": "cairoDevice 1.2 on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The cairoDevice package has recently been released on CRAN. cairoDevice \nis an R graphics device based on the cairo \n(http://www.cairographics.org) vector graphics library. It is \ndistinguished from many other devices in its ability to render high \nquality anti-aliased graphics. It is available on all three major \nplatforms (Windows, Mac, and Linux) and requires the GTK+ 2.8.0 library \nand its dependencies. For the current users, version 1.2 fixes many bugs.\n\ncairoDevice is capable of rendering in three different ways: to the \nscreen inside a GTK+ window, to an arbitrary GtkDrawingArea that is part \nof an RGtk2 GUI, or to any GdkDrawable, allowing for example the output \nof png and jpg images derived from R graphics using the GdkPixbuf \nbindings from RGtk2.\n\ncairoDevice is interactive in that it supports the locator tool as well \nas the getGraphicsEvent() functionality, which previously was available \nonly from the Windows device.\n\nTo obtain the requisite GTK+ (>= 2.8.0) libraries:\n\nWindows: Download and run the installer from http://gladewin32.sf.net.\nMac: DarwinPorts\nLinux: packages from your distribution\n\nPlease enjoy the package and let me know if you have any problems,\n\nMichael Lawrence",
+      "body_snippet": "The cairoDevice package has recently been released on CRAN. cairoDevice \nis an R graphics device based on the cairo \n(http://www.cairographics.org) vector graphics library. It is \ndistinguished from m",
+      "thread_id": "thread-75e612115f80",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
       "id": "msg-65d2bb10c517",
       "message_id": "<a695148b0609251527r4464776cy65f15c353721a78@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
@@ -80,6 +144,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060925/e24f6aaa/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060925/e24f6aaa/attachment.pl>",
       "thread_id": "thread-65d2bb10c517",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
+      "id": "msg-65d2bb10c517",
+      "message_id": "<a695148b0609251527r4464776cy65f15c353721a78@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2006-09-25T18:27:10-04:00",
+      "subject": "[R-pkgs] the IPSUR package",
+      "subject_clean": "the IPSUR package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060925/e24f6aaa/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060925/e24f6aaa/attachment-0001.pl>",
+      "thread_id": "thread-65d2bb10c517",
+      "thread_depth": 0,
+      "month": "2006-09"
+    },
+    {
+      "id": "msg-194fda094171",
+      "message_id": "<f8e6ff050609301449j7f4cca00kcb99315ff275955a@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2006-09-30T16:49:29-05:00",
+      "subject": "[R-pkgs] Reshape version 0.7.1",
+      "subject_clean": "Reshape version 0.7.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape version 0.7.1\n=====================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get your data into the shape that you want.  You can find out\nmore at http://had.co.nz/reshape\n\nWhat's new in this version?\n\n * A 25 page introductory vignette, also available at\nhttp://had.co.nz/reshape/introduction.pdf, which shows some of the\nmany ways that you can use reshape.\n\n * The biggest change is that reshape now outputs regular data.frames,\nwhich should make it easier to use them for further analysis and\ntransformation.\n\n * Added a fill argument to cast which specifies what value should be\nused for structural missings\n\nVarious bug fixes and completion missing features:\n\n * fun.aggregate will always be applied if specified, even if no\naggregation occurs\n\n * margins now work for non-aggregated data\n\n * cast now accepts a list of functions for fun.aggregate\n\n * very long formulas will now work in cast\n\n * fixed bug in rbind.fill\n\n * should be able to melt any cast form\n\nPlease let me know if you have any comments, questions, or something\nisn't working right.\n\nRegards,\n\nHadley",
+      "body_snippet": "Reshape version 0.7.1\n=====================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to g",
+      "thread_id": "thread-194fda094171",
       "thread_depth": 0,
       "month": "2006-09"
     },
@@ -113,6 +209,17 @@
       "root_message_id": "msg-a25afc81129c"
     },
     {
+      "id": "thread-a25afc81129c",
+      "subject": "New forecasting bundle of packages",
+      "message_count": 1,
+      "participants": [
+        "Rob Hyndman"
+      ],
+      "started": "2006-09-03T07:43:31+10:00",
+      "last_reply": "2006-09-03T07:43:31+10:00",
+      "root_message_id": "msg-a25afc81129c"
+    },
+    {
       "id": "thread-50b54c879fbf",
       "subject": "package ltm -- version 0.6-0",
       "message_count": 1,
@@ -122,6 +229,28 @@
       "started": "2006-09-06T09:33:12+02:00",
       "last_reply": "2006-09-06T09:33:12+02:00",
       "root_message_id": "msg-50b54c879fbf"
+    },
+    {
+      "id": "thread-50b54c879fbf",
+      "subject": "package ltm -- version 0.6-0",
+      "message_count": 1,
+      "participants": [
+        "Dimitris Rizopoulos"
+      ],
+      "started": "2006-09-06T09:33:12+02:00",
+      "last_reply": "2006-09-06T09:33:12+02:00",
+      "root_message_id": "msg-50b54c879fbf"
+    },
+    {
+      "id": "thread-8b51dafbaad6",
+      "subject": "odfWeave Version 0.4.4",
+      "message_count": 1,
+      "participants": [
+        "Kuhn, Max"
+      ],
+      "started": "2006-09-06T15:03:35-04:00",
+      "last_reply": "2006-09-06T15:03:35-04:00",
+      "root_message_id": "msg-8b51dafbaad6"
     },
     {
       "id": "thread-8b51dafbaad6",
@@ -146,6 +275,17 @@
       "root_message_id": "msg-75e612115f80"
     },
     {
+      "id": "thread-75e612115f80",
+      "subject": "cairoDevice 1.2 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Lawrence"
+      ],
+      "started": "2006-09-21T07:39:19-05:00",
+      "last_reply": "2006-09-21T07:39:19-05:00",
+      "root_message_id": "msg-75e612115f80"
+    },
+    {
       "id": "thread-65d2bb10c517",
       "subject": "the IPSUR package",
       "message_count": 1,
@@ -155,6 +295,28 @@
       "started": "2006-09-25T18:27:10-04:00",
       "last_reply": "2006-09-25T18:27:10-04:00",
       "root_message_id": "msg-65d2bb10c517"
+    },
+    {
+      "id": "thread-65d2bb10c517",
+      "subject": "the IPSUR package",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2006-09-25T18:27:10-04:00",
+      "last_reply": "2006-09-25T18:27:10-04:00",
+      "root_message_id": "msg-65d2bb10c517"
+    },
+    {
+      "id": "thread-194fda094171",
+      "subject": "Reshape version 0.7.1",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2006-09-30T16:49:29-05:00",
+      "last_reply": "2006-09-30T16:49:29-05:00",
+      "root_message_id": "msg-194fda094171"
     },
     {
       "id": "thread-194fda094171",

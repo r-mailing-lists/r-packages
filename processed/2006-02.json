@@ -20,6 +20,22 @@
       "month": "2006-02"
     },
     {
+      "id": "msg-c4467e70383b",
+      "message_id": "<43E10401.1010503@iastate.edu>",
+      "from_name": "Michael Lawrence",
+      "from_email_hash": "c36bf863fc6ce4c956c531e3be3c380a9dea26d6f0cbee8fa9df0b1b13a51f2d",
+      "date": "2006-02-01T12:54:57-06:00",
+      "subject": "[R-pkgs] RGtk2 released",
+      "subject_clean": "RGtk2 released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am pleased to announce the first beta release of RGtk2, the R binding \nto GTK 2.0 (actually 2.8.0). RGtk2 works on all three major platforms \n(Linux, Mac, and Windows) and allows one to construct full-featured \nGUI's from within R.\n\nRGtk2 offers virtually complete bindings to the latest GTK, as well as \nsome of its dependencies, including Cairo and Pango, and some extras \nlike libglade and GtkMozEmbed (on Linux). Almost the entire package was \ndocumented by transforming the original (C language oriented) API \ndocumentation to the R perspective.\n\nPlease see the following website for details and downloads: \nhttp://www.ggobi.org/rgtk2.\n\nYou'll also find the Cairo R graphics device there, which lets you \ndisplay R graphics within your RGtk2 GUI.\n\nPlease send any bug reports to me.\n\nThanks,\nMichael Lawrence",
+      "body_snippet": "I am pleased to announce the first beta release of RGtk2, the R binding \nto GTK 2.0 (actually 2.8.0). RGtk2 works on all three major platforms \n(Linux, Mac, and Windows) and allows one to construct fu",
+      "thread_id": "thread-c4467e70383b",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
       "id": "msg-7f0d559c7b05",
       "message_id": "<20060207003936.CDLZ8316.tomts20-srv.bellnexxia.net@JohnDesktop8300>",
       "from_name": "John Fox",
@@ -32,6 +48,38 @@
       "body_plain": "Dear R-packages list members,\n\nLast month, Peter Muhlberger posted a message to the r-help list that\nsuggested, among other things, a desire for a more convenient method of\nperforming Wald tests for statistical models fit in R. \n\nThanks largely to Achim Zeleis's help, the linear.hypothesis function in the\ncar package has been reworked so that (1) it is applicable to any model\nobject that responds to the generic coef() and vcov() functions (along with\nspecific methods for lm and glm objects); and (2) permits symbolic\nspecification of hypotheses as linear equations in the named parameters of\nthe model. I'd be particularly interested in people's reactions to the new\ninterface and to learn of any problems that arise\n\nThe new version 1.1-0 of the car package (with some other, less significant\nchanges and additions) is now on CRAN.\n\nRegards,\n John\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
       "body_snippet": "Dear R-packages list members,\n\nLast month, Peter Muhlberger posted a message to the r-help list that\nsuggested, among other things, a desire for a more convenient method of\nperforming Wald tests for s",
       "thread_id": "thread-7f0d559c7b05",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
+      "id": "msg-7f0d559c7b05",
+      "message_id": "<20060207003936.CDLZ8316.tomts20-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2006-02-06T19:39:37-05:00",
+      "subject": "[R-pkgs] New car package with new linear.hypothesis function",
+      "subject_clean": "New car package with new linear.hypothesis function",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-packages list members,\n\nLast month, Peter Muhlberger posted a message to the r-help list that\nsuggested, among other things, a desire for a more convenient method of\nperforming Wald tests for statistical models fit in R. \n\nThanks largely to Achim Zeleis's help, the linear.hypothesis function in the\ncar package has been reworked so that (1) it is applicable to any model\nobject that responds to the generic coef() and vcov() functions (along with\nspecific methods for lm and glm objects); and (2) permits symbolic\nspecification of hypotheses as linear equations in the named parameters of\nthe model. I'd be particularly interested in people's reactions to the new\ninterface and to learn of any problems that arise\n\nThe new version 1.1-0 of the car package (with some other, less significant\nchanges and additions) is now on CRAN.\n\nRegards,\n John\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R-packages list members,\n\nLast month, Peter Muhlberger posted a message to the r-help list that\nsuggested, among other things, a desire for a more convenient method of\nperforming Wald tests for s",
+      "thread_id": "thread-7f0d559c7b05",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
+      "id": "msg-f5cc8e07a84a",
+      "message_id": "<200602071809.02167.adi@roda.ro>",
+      "from_name": "Adrian DUSA",
+      "from_email_hash": "c7eb80271393ed831f0ae78107a15bf2f527ce148e6d2808ba6b98398c1130f7",
+      "date": "2006-02-07T18:09:02+02:00",
+      "subject": "[R-pkgs] new package QCA",
+      "subject_clean": "new package QCA",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI am pleased to let you know that R met with QCA - Qualitative Comparative \nAnalysis.\nThis package has a few functions that implement the Quine-McCluskey algorithm, \nadapted to social sciences by Charles Ragin (as describes in his book from \n1987 \"The Comparative Method\").\nFuture versions of this package will have more functions to address the \nfuzzy-set minimization problems, as well.\n\nBig thanks to the r-help list members, supportive as ever, especially to Gabor \nGrothendieck and Martin Maechler for excellent ideas in the key parts of the \nalgorithm.\n\n-- \nAdrian DUSA\nRomanian Social Data Archive\n1, Schitu Magureanu Bd\n050025 Bucharest sector 5\nRomania\nTel./Fax: +40 21 3126618 \\\n          +40 21 3120210 / int.101",
+      "body_snippet": "Dear list members,\n\nI am pleased to let you know that R met with QCA - Qualitative Comparative \nAnalysis.\nThis package has a few functions that implement the Quine-McCluskey algorithm, \nadapted to soc",
+      "thread_id": "thread-f5cc8e07a84a",
       "thread_depth": 0,
       "month": "2006-02"
     },
@@ -68,6 +116,22 @@
       "month": "2006-02"
     },
     {
+      "id": "msg-d8aa7a2704a9",
+      "message_id": "<f8e6ff050602091142n37c74f34u3c72232483c07279@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2006-02-09T13:42:07-06:00",
+      "subject": "[R-pkgs] Reshape version 0.6",
+      "subject_clean": "Reshape version 0.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Reshape version 0.6\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get your data into the shape that you want.  You can find out\nmore at http://had.co.nz/reshape\n\nWhat's new in this version?\n\n * a new function, stamp, which is kind of a cross between by and\ncast, and allows for aggregation functions that take an entire data\nframe.  See ?stamp for examples\n\n * deals better with row and column names when subsetting the result\n\n * a namespace to make it easier to deal with potential name clashes\nwith other packages\n\n * better performance\n\nPlease let me know if you have any comments or questions.\n\nRegards,\n\nHadley",
+      "body_snippet": "Reshape version 0.6\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get y",
+      "thread_id": "thread-d8aa7a2704a9",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
       "id": "msg-4549fcd324f8",
       "message_id": "<43F8D667.10309@echip.com>",
       "from_name": "Bob Wheeler",
@@ -80,6 +144,38 @@
       "body_plain": "I've updated the Ziggurat normal and exponential\ngenerator in SuppDists in accordance with\nLeong, et.al (2005). A comment on the implementation\nof the Ziggurat Method. Jour. Stat. Sci. 12-7, 1-4.\n\nThe fix takes care of problems for very large sets\nof random values. I tested it a bit on small samples\nand it seems ok. It will be on CRAN shortly.\n-- \nBob Wheeler --- http://www.bobwheeler.com/\n    ECHIP, Inc. --- Randomness comes in bunches.",
       "body_snippet": "I've updated the Ziggurat normal and exponential\ngenerator in SuppDists in accordance with\nLeong, et.al (2005). A comment on the implementation\nof the Ziggurat Method. Jour. Stat. Sci. 12-7, 1-4.\n\nThe",
       "thread_id": "thread-4549fcd324f8",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
+      "id": "msg-4549fcd324f8",
+      "message_id": "<43F8D667.10309@echip.com>",
+      "from_name": "Bob Wheeler",
+      "from_email_hash": "b537ca2accd487c17614296fe4638ffcf8f38187b02e688c9da27d6b8ff0c287",
+      "date": "2006-02-19T15:34:47-05:00",
+      "subject": "[R-pkgs] Zigurrat updated",
+      "subject_clean": "Zigurrat updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I've updated the Ziggurat normal and exponential\ngenerator in SuppDists in accordance with\nLeong, et.al (2005). A comment on the implementation\nof the Ziggurat Method. Jour. Stat. Sci. 12-7, 1-4.\n\nThe fix takes care of problems for very large sets\nof random values. I tested it a bit on small samples\nand it seems ok. It will be on CRAN shortly.\n-- \nBob Wheeler --- http://www.bobwheeler.com/\n    ECHIP, Inc. --- Randomness comes in bunches.",
+      "body_snippet": "I've updated the Ziggurat normal and exponential\ngenerator in SuppDists in accordance with\nLeong, et.al (2005). A comment on the implementation\nof the Ziggurat Method. Jour. Stat. Sci. 12-7, 1-4.\n\nThe",
+      "thread_id": "thread-4549fcd324f8",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
+      "id": "msg-63e8866a5589",
+      "message_id": "<m0mzgi8p4a.fsf@bar.nemo-project.org>",
+      "from_name": "Bjørn-Helge Mevik and Ron Wehrens",
+      "from_email_hash": "a5fae67481a54c78fdd79ac4ccffdc0b4cfeac88f7e7e813990474606abee471",
+      "date": "2006-02-23T09:18:29+01:00",
+      "subject": "[R-pkgs] pls version 1.2-0",
+      "subject_clean": "pls version 1.2-0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 1.2-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.1-0 are\n\n- predict() now handles missing data like the `lm' method does (the\n  default is to predict `NA').\n- fitted() and residuals() now return NA for observations with missing\n  values, if na.action is na.exclude.\n- `ncomp' is now reduced when it is too large for the requested \n  cross-validation.\n- Line plot parameter arguments have been added to predplotXy(), so\n  one can control the properties of the target line in predplot().\n- MSEP(), RMSEP(), loadings(), loadingplot() and scoreplot() are now\n  generic.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nRon Wehrens and Bj?rn-Helge Mevik",
+      "body_snippet": "Version 1.2-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
+      "thread_id": "thread-63e8866a5589",
       "thread_depth": 0,
       "month": "2006-02"
     },
@@ -116,6 +212,38 @@
       "month": "2006-02"
     },
     {
+      "id": "msg-9c558f4b5734",
+      "message_id": "<43FD7176.8040403@biomserv.univ-lyon1.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
+      "date": "2006-02-23T09:25:26+01:00",
+      "subject": "[R-pkgs] adehabitat version 1.4",
+      "subject_clean": "adehabitat version 1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.4 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- The eigenanalysis of selection ratios (Calenge and Dufour, 2006, Ecology)\n  can now be performed using the function eisera(). It can be used for \nthe analysis of\n  habitat selection when habitat can be considered to consist of several \nhabitat types\n  (e.g. vegetation types).\n\n- A new class, the class \"ltraj\", is now available for the analysis of \ntrajectories of animals\n  (e.g. for the analysis of data collected using GPS collars). This \nclass automatically\n  computes the turning angles between successive moves, the absolute \nangles for each move,\n  the speeds and the net squared displacement for each relocation. This \nclass is to be\n  prefered to the class \"traj\". The class \"traj\" is now deprecated.\n  Note that the data set \"puechcirc\" is now of the class ltraj.\n\n- The functions making the interface with the package \"sp\" have been \nupdated: 'area2spol'\n   converts an object of class 'area' into an object of class \n'SpatialPolygons'. 'spol2area' converts\n   an object of class 'SpatialPolygons' or 'SpatialPolygonsDataFrame' \ninto an object of class 'area'.\n   'attpol2area' gets the data attribute of an object of class \n'SpatialPolygonsDataFrame'\n   and stores is into a data frame. 'traj2spdf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialPointsDataFrame'. 'traj2sldf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialLinesDataFrame'.\n\n- The function enfa() has been modified:\n   The old components \"co\" and \"l1\" have been removed from objects of \nclass \"enfa\", as they did not rely\n   on solid mathematical theory. The old component \"c1\" is now named \n\"co\", and corresponds to\n   the scores of habitat variables in the enfa (the squared norm of this \nvector is equal to 1 for\n   the identity metric). As previously, the component \"li\" stores the \nscores of the resource units\n   in the ENFA.\n\n- The function df2kasc now accept objects of class \"kasc\" with one column.\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nCl?ment Calenge\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.4 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- The eigenanalysis of selection ratios (Calenge and Dufour, 2006, Ecology)\n",
+      "thread_id": "thread-9c558f4b5734",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
+      "id": "msg-61c3f9148153",
+      "message_id": "<Pine.LNX.4.64.0602241135480.4699@artemis.imbe.med.uni-erlangen.de>",
+      "from_name": "Torsten Hothorn",
+      "from_email_hash": "41e657384fb07a3764a554d5304d033ebaccbd11a54485f1b6386a932843f125",
+      "date": "2006-02-24T11:39:44+01:00",
+      "subject": "[R-pkgs] New `party' tools",
+      "subject_clean": "New `party' tools",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nVersion 0.8-1 of the `party' package will appear on CRAN and its mirrors\nin due course. This version implements two new tools:\n\n   o  `mob', an object-oriented implementation of a recently suggested\n       algorithm for model-based recursive partitioning (Zeileis, Hothorn,\n       Hornik, 2005) has been added. It works out of the box for partitioning\n       (generalized) linear regression models, others can be easily plugged\n       in. A new vignette \"MOB\" describes the implementation ideas and\n       provides a few examples with nice plots.\n\n   o  `cforest', an implementation of Breiman's random forest ensemble\n       algorithm based on conditional inference trees (`ctree') has been\n       added and can be used to analyse censored data and weighted\n       problems.\n\nMoreover, some minor issues have been addressed and are documented in the \nCHANGES file.\n\nBest wishes,\n\nTorsten, Kurt and Achim.",
+      "body_snippet": "Dear useRs,\n\nVersion 0.8-1 of the `party' package will appear on CRAN and its mirrors\nin due course. This version implements two new tools:\n\n   o  `mob', an object-oriented implementation of a recentl",
+      "thread_id": "thread-61c3f9148153",
+      "thread_depth": 0,
+      "month": "2006-02"
+    },
+    {
       "id": "msg-61c3f9148153",
       "message_id": "<Pine.LNX.4.64.0602241135480.4699@artemis.imbe.med.uni-erlangen.de>",
       "from_name": "Torsten Hothorn",
@@ -145,6 +273,17 @@
       "root_message_id": "msg-c4467e70383b"
     },
     {
+      "id": "thread-c4467e70383b",
+      "subject": "RGtk2 released",
+      "message_count": 1,
+      "participants": [
+        "Michael Lawrence"
+      ],
+      "started": "2006-02-01T12:54:57-06:00",
+      "last_reply": "2006-02-01T12:54:57-06:00",
+      "root_message_id": "msg-c4467e70383b"
+    },
+    {
       "id": "thread-7f0d559c7b05",
       "subject": "New car package with new linear.hypothesis function",
       "message_count": 1,
@@ -154,6 +293,28 @@
       "started": "2006-02-06T19:39:37-05:00",
       "last_reply": "2006-02-06T19:39:37-05:00",
       "root_message_id": "msg-7f0d559c7b05"
+    },
+    {
+      "id": "thread-7f0d559c7b05",
+      "subject": "New car package with new linear.hypothesis function",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2006-02-06T19:39:37-05:00",
+      "last_reply": "2006-02-06T19:39:37-05:00",
+      "root_message_id": "msg-7f0d559c7b05"
+    },
+    {
+      "id": "thread-f5cc8e07a84a",
+      "subject": "new package QCA",
+      "message_count": 1,
+      "participants": [
+        "Adrian DUSA"
+      ],
+      "started": "2006-02-07T18:09:02+02:00",
+      "last_reply": "2006-02-07T18:09:02+02:00",
+      "root_message_id": "msg-f5cc8e07a84a"
     },
     {
       "id": "thread-f5cc8e07a84a",
@@ -178,6 +339,28 @@
       "root_message_id": "msg-d8aa7a2704a9"
     },
     {
+      "id": "thread-d8aa7a2704a9",
+      "subject": "Reshape version 0.6",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2006-02-09T13:42:07-06:00",
+      "last_reply": "2006-02-09T13:42:07-06:00",
+      "root_message_id": "msg-d8aa7a2704a9"
+    },
+    {
+      "id": "thread-4549fcd324f8",
+      "subject": "Zigurrat updated",
+      "message_count": 1,
+      "participants": [
+        "Bob Wheeler"
+      ],
+      "started": "2006-02-19T15:34:47-05:00",
+      "last_reply": "2006-02-19T15:34:47-05:00",
+      "root_message_id": "msg-4549fcd324f8"
+    },
+    {
       "id": "thread-4549fcd324f8",
       "subject": "Zigurrat updated",
       "message_count": 1,
@@ -200,6 +383,17 @@
       "root_message_id": "msg-63e8866a5589"
     },
     {
+      "id": "thread-63e8866a5589",
+      "subject": "pls version 1.2-0",
+      "message_count": 1,
+      "participants": [
+        "Bjørn-Helge Mevik and Ron Wehrens"
+      ],
+      "started": "2006-02-23T09:18:29+01:00",
+      "last_reply": "2006-02-23T09:18:29+01:00",
+      "root_message_id": "msg-63e8866a5589"
+    },
+    {
       "id": "thread-9c558f4b5734",
       "subject": "adehabitat version 1.4",
       "message_count": 1,
@@ -209,6 +403,28 @@
       "started": "2006-02-23T09:25:26+01:00",
       "last_reply": "2006-02-23T09:25:26+01:00",
       "root_message_id": "msg-9c558f4b5734"
+    },
+    {
+      "id": "thread-9c558f4b5734",
+      "subject": "adehabitat version 1.4",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2006-02-23T09:25:26+01:00",
+      "last_reply": "2006-02-23T09:25:26+01:00",
+      "root_message_id": "msg-9c558f4b5734"
+    },
+    {
+      "id": "thread-61c3f9148153",
+      "subject": "New `party' tools",
+      "message_count": 1,
+      "participants": [
+        "Torsten Hothorn"
+      ],
+      "started": "2006-02-24T11:39:44+01:00",
+      "last_reply": "2006-02-24T11:39:44+01:00",
+      "root_message_id": "msg-61c3f9148153"
     },
     {
       "id": "thread-61c3f9148153",

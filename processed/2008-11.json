@@ -20,6 +20,22 @@
       "month": "2008-11"
     },
     {
+      "id": "msg-6cd21df1fec0",
+      "message_id": "<490EB171.6070402@csiro.au>",
+      "from_name": "Adrian Baddeley",
+      "from_email_hash": "63cddde524cb7d011e38c5b10f109e1f51c3841949da4158e29790fcb7084584",
+      "date": "2008-11-03T17:08:17+09:00",
+      "subject": "[R-pkgs] scuba 1.2-2 posted",
+      "subject_clean": "scuba 1.2-2 posted",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "scuba 1.2-2\n\n'scuba' is a contributed package that performs theoretical calculations\nabout scuba diving --- dive profiles, decompression models, gas toxicity\nand so on.\n\nNew features in version 1.2-2:\n\n        . Package vignette provides detailed explanations.\n\n        . Improved handling of data from dive computers.\n\n        . Gas switches (switching from one tank of breathing gas\n          to another during the dive) are now easy to specify.\n\n        . Relative tissue saturations can be computed easily\n\n        . Eleven new datasets: real dive profiles\n\n        . Dives with multiple tanks of breathing gas are now plotted\n           using a different colour for each gas.\n\nNew functions:\n\n        whichtank\n        whichtank<-\n                        Choice of breathing gas tank\n                        at each waypoint during the dive\n\nImprovements:\n\n        dive\n                For easier handling of data uploaded from dive computers,\n                dive() now accepts elapsed time values in the formats\n                \"hh:mm:ss\", and \"mm:ss\" where mm can exceed 60.\n\n        plot.dive\n                Dives with multiple tanks of breathing gas are now plotted\n                using a different colour for each gas.\n\n                The choice of colours is controlled by the\n                argument 'col.gases'.\n\n        haldane\n                This function has a new argument 'relative'.\n                If relative=TRUE, tissue saturations are computed\n                as fractions of the surfacing M-value.\n\n        ndl\n                Improved numerical stability, in mixed-gas case.\n\n                The return value of ndl now has an attribute\n                which identifies the controlling tissue.\n\n        showstates\n                Improved plot labels.\n\nAdrian Baddeley, 30 october 2008",
+      "body_snippet": "scuba 1.2-2\n\n'scuba' is a contributed package that performs theoretical calculations\nabout scuba diving --- dive profiles, decompression models, gas toxicity\nand so on.\n\nNew features in version 1.2-2:",
+      "thread_id": "thread-6cd21df1fec0",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
       "id": "msg-f44ae1fc3284",
       "message_id": "<200811082253.20567.arne.henningsen@googlemail.com>",
       "from_name": "Arne Henningsen",
@@ -32,6 +48,38 @@
       "body_plain": "Hi!\n\nA few weeks ago, I have uploaded a new R package \"frontier\" for Stochastic \nFrontier Analysis (SFA) [1] to CRAN [2]. It includes the FORTRAN code of Tim \nCoelli's [3] software \"Frontier 4.1\" [4]. Hence, the R package \"frontier\" \nshould have the same capabilities as \"Frontier 4.1\", i.e. Maximum Likelihood \nEstimation of Stochastic Frontier Production and Cost Functions. Two \nspecifications are available: the error components specification with \ntime-varying efficiencies (Battese and Coelli, 1992) [5] and a model \nspecification in which the firm effects are directly influenced by a number \nof variables (Battese and Coelli, 1995) [6].\n     The functions \"front41WriteInput\" and \"front41ReadOutput\" for creating \ninput files for and reading output files of \"Frontier 4.1\" will be moved from \nthe \"micEcon\" package [7] to the \"frontier\" package within a short time.\n     The \"frontier\" package is developed on R-Forge [8]. All useRs and \ndevelopeRs are invited to contribute to this package.\n\n[1] http://en.wikipedia.org/wiki/Stochastic_Frontier_Analysis\n[2] http://cran.r-project.org/web/packages/frontier/index.html\n[3] http://www.uq.edu.au/economics/cepa/coelli.htm\n[4] http://www.uq.edu.au/economics/cepa/frontier.htm\n[5] Battese, G. E. & Coelli, T. J. (1992): Frontier Production Functions, \nTechnical Efficiency and Panel Data: With Application to Paddy Farmers in \nIndia. Journal of Productivity Analysis, 3, p. 153-169.\n[6] Battese, G. E. & Coelli, T. J. (1992) A Model for Technical Inefficiency \nEffects in a Stochastic Frontier Production Function for Panel Data. \nEmpirical Economics, 20, p. 325-332.\n[7] http://cran.r-project.org/web/packages/micEcon/index.html\n[8] http://r-forge.r-project.org/projects/frontier/\n\nAny hints, suggestions, and bug reports are welcome,\nArne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
       "body_snippet": "Hi!\n\nA few weeks ago, I have uploaded a new R package \"frontier\" for Stochastic \nFrontier Analysis (SFA) [1] to CRAN [2]. It includes the FORTRAN code of Tim \nCoelli's [3] software \"Frontier 4.1\" [4].",
       "thread_id": "thread-f44ae1fc3284",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-f44ae1fc3284",
+      "message_id": "<200811082253.20567.arne.henningsen@googlemail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2008-11-08T22:53:20+01:00",
+      "subject": "[R-pkgs] New package \"frontier\" for Stochastic Frontier Analysis (SFA)",
+      "subject_clean": "New package \"frontier\" for Stochastic Frontier Analysis (SFA)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nA few weeks ago, I have uploaded a new R package \"frontier\" for Stochastic \nFrontier Analysis (SFA) [1] to CRAN [2]. It includes the FORTRAN code of Tim \nCoelli's [3] software \"Frontier 4.1\" [4]. Hence, the R package \"frontier\" \nshould have the same capabilities as \"Frontier 4.1\", i.e. Maximum Likelihood \nEstimation of Stochastic Frontier Production and Cost Functions. Two \nspecifications are available: the error components specification with \ntime-varying efficiencies (Battese and Coelli, 1992) [5] and a model \nspecification in which the firm effects are directly influenced by a number \nof variables (Battese and Coelli, 1995) [6].\n     The functions \"front41WriteInput\" and \"front41ReadOutput\" for creating \ninput files for and reading output files of \"Frontier 4.1\" will be moved from \nthe \"micEcon\" package [7] to the \"frontier\" package within a short time.\n     The \"frontier\" package is developed on R-Forge [8]. All useRs and \ndevelopeRs are invited to contribute to this package.\n\n[1] http://en.wikipedia.org/wiki/Stochastic_Frontier_Analysis\n[2] http://cran.r-project.org/web/packages/frontier/index.html\n[3] http://www.uq.edu.au/economics/cepa/coelli.htm\n[4] http://www.uq.edu.au/economics/cepa/frontier.htm\n[5] Battese, G. E. & Coelli, T. J. (1992): Frontier Production Functions, \nTechnical Efficiency and Panel Data: With Application to Paddy Farmers in \nIndia. Journal of Productivity Analysis, 3, p. 153-169.\n[6] Battese, G. E. & Coelli, T. J. (1992) A Model for Technical Inefficiency \nEffects in a Stochastic Frontier Production Function for Panel Data. \nEmpirical Economics, 20, p. 325-332.\n[7] http://cran.r-project.org/web/packages/micEcon/index.html\n[8] http://r-forge.r-project.org/projects/frontier/\n\nAny hints, suggestions, and bug reports are welcome,\nArne\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name",
+      "body_snippet": "Hi!\n\nA few weeks ago, I have uploaded a new R package \"frontier\" for Stochastic \nFrontier Analysis (SFA) [1] to CRAN [2]. It includes the FORTRAN code of Tim \nCoelli's [3] software \"Frontier 4.1\" [4].",
+      "thread_id": "thread-f44ae1fc3284",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-65647d457bee",
+      "message_id": "<49182464.8050005@utas.edu.au>",
+      "from_name": "Michael Sumner",
+      "from_email_hash": "4d8db92248257cf58a15282ef4b057029dbd45ad2b2c007fbad56eff8864a080",
+      "date": "2008-11-10T23:09:08+11:00",
+      "subject": "[R-pkgs] trip package: version 1.1-2",
+      "subject_clean": "trip package: version 1.1-2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nA long overdue update to the 'trip' package is now on CRAN.\n\no New function forceConstraints() to impose the common problems found in \ntrack data of duplicated records, and duplicated time stamps.\no Bug fix to speedfilter() which would never finish for trips of 3 \nlocations.\no Clean up of trip methods to fix a bug that caused R CMD check to fail \nin 2.8.0.\n\nThanks to all who provide feedback for problems and ideas for improvements.\n\nRegards,\nMike.",
+      "body_snippet": "Hello,\n\nA long overdue update to the 'trip' package is now on CRAN.\n\no New function forceConstraints() to impose the common problems found in \ntrack data of duplicated records, and duplicated time sta",
+      "thread_id": "thread-65647d457bee",
       "thread_depth": 0,
       "month": "2008-11"
     },
@@ -68,6 +116,22 @@
       "month": "2008-11"
     },
     {
+      "id": "msg-bdc6163455c7",
+      "message_id": "<f6df8039264f.491f04be@unal.edu.co>",
+      "from_name": "Campo Elias Pardo Turriago",
+      "from_email_hash": "b3de43b8de56676355df6cecf5365d06a72e980d25d4c30753b646be377c272e",
+      "date": "2008-11-15T17:19:58-05:00",
+      "subject": "[R-pkgs] New Package FactoClass",
+      "subject_clean": "New Package FactoClass",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "new R package FactoClass to combine factorial methods and cluster\nanalysis is uploaded to CRAN. This package is implemented in order to perform a\nmultivariate exploration of a data table according to Lebart et al. (1995). We\nuse some ade4 functions (Chessel et al. 2004) to perform the factorial analysis\nof the data and some stats functions in R to perform cluster methods.\nSome new functions are programmed to make specific tasks and another old\nones are modified.\n\n\nCampo-El?as PARDO\nDepartamento de Estad?stica\nUniversidad Nacional de Colombia - Bogot?",
+      "body_snippet": "new R package FactoClass to combine factorial methods and cluster\nanalysis is uploaded to CRAN. This package is implemented in order to perform a\nmultivariate exploration of a data table according to ",
+      "thread_id": "thread-bdc6163455c7",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
       "id": "msg-308423b465f3",
       "message_id": "<94730b8a0811172015l6c8dbd25l19388100b3540f53@mail.gmail.com>",
       "from_name": "Felix Andrews",
@@ -80,6 +144,38 @@
       "body_plain": "A new package, *latticist*, is available now from CRAN.\n\nLatticist is a graphical user interface for exploratory visualisation.\nIt is primarily an interface to the Lattice graphics system, but also\nproduces displays from the vcd package for categorical data.\n\nGiven a multivariate dataset (either a data frame or a table),\nLatticist attempts to produce useful displays based on the properties\nof the data. The user chooses variables for the plot axes, for\ngrouping, conditioning and subsetting. Some hypervariate displays are\nalso available. The plots can be customised by editing the calls used\nto generate them.\n\nA simple graphical user interface is available, built on the gWidgets\npackage. This requires one of the \"toolkit implementations\" to be\ninstalled: currently gWidgetstcltk or gWidgetsRGtk2 (note, the\ngWidgetsrJava toolkit is still in testing). Alternatively, Latticist\ncan be run as a toolbar extension to playwith. This brings many extra\nfeatures, such as dynamic zooming, identifying data points, etc.\n\nA major new version of *playwith* is also available.\n\nThe playwith package provides a GTK+ graphical user interface for\nediting and interacting with R plots. It has been redesigned, and the\nGUI has been overhauled completely. The most prominent new features\nare linked brushing, identifying co-variates of data points, dialogs\nboxes for various settings, and a better API.\n\nThe websites for playwith and latticist include screenshots and demos.\n\nhttp://latticist.googlecode.com/\nhttp://playwith.googlecode.com/\n\nFeedback welcome...\n\n(and job offers? :-)\n-- \nFelix Andrews / ???\nhttp://www.neurofractal.org/felix/\n3358 543D AAC6 22C2 D336  80D9 360B 72DD 3E4C F5D8",
       "body_snippet": "A new package, *latticist*, is available now from CRAN.\n\nLatticist is a graphical user interface for exploratory visualisation.\nIt is primarily an interface to the Lattice graphics system, but also\npr",
       "thread_id": "thread-308423b465f3",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-308423b465f3",
+      "message_id": "<94730b8a0811172015l6c8dbd25l19388100b3540f53@mail.gmail.com>",
+      "from_name": "Felix Andrews",
+      "from_email_hash": "ab8be5753adb1cfce5e50bf8235dddc08e38086328727de3f965639ec7b93f1d",
+      "date": "2008-11-18T15:15:14+11:00",
+      "subject": "[R-pkgs] latticist and playwith",
+      "subject_clean": "latticist and playwith",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new package, *latticist*, is available now from CRAN.\n\nLatticist is a graphical user interface for exploratory visualisation.\nIt is primarily an interface to the Lattice graphics system, but also\nproduces displays from the vcd package for categorical data.\n\nGiven a multivariate dataset (either a data frame or a table),\nLatticist attempts to produce useful displays based on the properties\nof the data. The user chooses variables for the plot axes, for\ngrouping, conditioning and subsetting. Some hypervariate displays are\nalso available. The plots can be customised by editing the calls used\nto generate them.\n\nA simple graphical user interface is available, built on the gWidgets\npackage. This requires one of the \"toolkit implementations\" to be\ninstalled: currently gWidgetstcltk or gWidgetsRGtk2 (note, the\ngWidgetsrJava toolkit is still in testing). Alternatively, Latticist\ncan be run as a toolbar extension to playwith. This brings many extra\nfeatures, such as dynamic zooming, identifying data points, etc.\n\nA major new version of *playwith* is also available.\n\nThe playwith package provides a GTK+ graphical user interface for\nediting and interacting with R plots. It has been redesigned, and the\nGUI has been overhauled completely. The most prominent new features\nare linked brushing, identifying co-variates of data points, dialogs\nboxes for various settings, and a better API.\n\nThe websites for playwith and latticist include screenshots and demos.\n\nhttp://latticist.googlecode.com/\nhttp://playwith.googlecode.com/\n\nFeedback welcome...\n\n(and job offers? :-)\n-- \nFelix Andrews / ???\nhttp://www.neurofractal.org/felix/\n3358 543D AAC6 22C2 D336  80D9 360B 72DD 3E4C F5D8",
+      "body_snippet": "A new package, *latticist*, is available now from CRAN.\n\nLatticist is a graphical user interface for exploratory visualisation.\nIt is primarily an interface to the Lattice graphics system, but also\npr",
+      "thread_id": "thread-308423b465f3",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-a850dd8b27bd",
+      "message_id": "<49230B81.2060604@bank-banque-canada.ca>",
+      "from_name": "Paul Gilbert",
+      "from_email_hash": "51f348dc0febec9b32e9d9dcb86f6de731958e1295e818209b4c127bffef5569",
+      "date": "2008-11-18T13:37:53-05:00",
+      "subject": "[R-pkgs] Packages for time series databases",
+      "subject_clean": "Packages for time series databases",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I recently put several packages for time series databases on CRAN. The \nmain package, TSdbi, provides a common interface to time series \ndatabases. The objective is to define a standard interface so users can \nretrieve time series data from various sources with a simple, common, \nset of commands, and so programs can be written to be portable with \nrespect to the data source. The SQL implementations also provide a \ndatabase table design, so users needing to set up a time series database \nhave a reasonably complete way to do this easily. The interface provides \nfor a variety of options with respect to the representation of time \nseries in R. There is also a (not yet well tested) mechanism to handle \nmultilingual data documentation.\n\n-TSdbi  is the main package.\n\n-TSMySQL,  TSPostgreSQL, and  TSSQLite provide interfaces for these \nthree SQL databases  (using RMySQL, RSQLite, and RPostgreSQL).\n\n-TSodbc  provides an interface using RODBC (tested only with a \nPostgreSQL server).\n\n-TSfame  provides an interface to Fame using the fame package.\n\n-TSpadi  provides an interface to Fame using a (somewhat dated) padi server.\n\n-TShistQuote  provides an interface to get.hist.quote.\n\nMany thanks to the authors and maintainers of the underlying packages, \nand several people who have commented on early versions of the TS* packages.\n\nPaul Gilbert\n====================================================================================\n\nLa version fran?aise suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential information, and the Bank of\nCanada does not waive any related rights. Any distribution, use, or copying of this\nemail or the information it contains by other than the intended recipient is\nunauthorized. If you received this email in error please delete it immediately from\nyour system and notify the sender promptly by email that you have done so. \n\n------------------------------------------------------------------------------------\n\nLe pr?sent courriel peut contenir de l'information privil?gi?e ou confidentielle.\nLa Banque du Canada ne renonce pas aux droits qui s'y rapportent. Toute diffusion,\nutilisation ou copie de ce courriel ou des renseignements qu'il contient par une\npersonne autre que le ou les destinataires d?sign?s est interdite. Si vous recevez\nce courriel par erreur, veuillez le supprimer imm?diatement et envoyer sans d?lai ?\nl'exp?diteur un message ?lectronique pour l'aviser que vous avez ?limin? de votre\nordinateur toute copie du courriel re?u.",
+      "body_snippet": "I recently put several packages for time series databases on CRAN. The \nmain package, TSdbi, provides a common interface to time series \ndatabases. The objective is to define a standard interface so u",
+      "thread_id": "thread-a850dd8b27bd",
       "thread_depth": 0,
       "month": "2008-11"
     },
@@ -116,6 +212,22 @@
       "month": "2008-11"
     },
     {
+      "id": "msg-d9add3997203",
+      "message_id": "<49256290.1070309@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2008-11-20T08:13:52-05:00",
+      "subject": "[R-pkgs] Update of X2R (with FishGraph) at CRAN, 20 Nov 2008",
+      "subject_clean": "Update of X2R (with FishGraph) at CRAN, 20 Nov 2008",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "X2R is a bundle of three software libraries for passing complicated data \nstructures from Fortran, C/C++, or AD Model Builder to R.  An update has \nbeen sent to CRAN and should be available from mirrors shortly. From the \nmenu at the left of the CRAN home page, look under Software / Other. \n\nWe also have updated FishGraph, a compatible set of R functions for \nexamining output from fish population models.  \n\n* * *\n\nChanges in this Update\n\nThe update adds minor bug fixes only.  In For2R, nested lists are now \nhandled correctly.  In FishGraph, correct axis units are now used in the \nCLD.plots (catch, landings, discards) routine.\n\n* * *\n\nMore detail, for those interested:\n\nX2R is three independent but related software libraries:  C2R, ADMB2R, \nand For2R (together, X2R). Each contains output routines to  simplify \ntransfer of complicated data structures from models written in a \ncompiled language to R (note 1). Through calls to X2R routines, the \nuser's data is written as a structured ASCII file. That file can be read \nby R with a single dget() function call to create an R data object of \ntype list. The list may contain components such as vectors, data frames, \nmatrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be \nused with programmers' own modeling codes. Limited testing indicates \ncompatibility with S-PLUS, as well (note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R) \nand AD Model Builder (with ADMB2R) (note 3).  Source code and detailed \nusers' manuals are supplied.\n\nADMB2R has been tested with ADMB versions 6.03 and 7.71 and recent \nversions of the gcc and Borland C++ compilers.\n\nThe compatible software FishGraph is a set of R functions providing \nexploratory and presentation graphics of fishery catch-at-age or \ncatch-at-length models. By taking its data from an R list assumed to \nhave a certain structure (diagram provided), FishGraph determines which \ngraphs should be generated. The required data structure may be generated \nwith X2R or within R itself and may contain any amount of additional \ndata. Most FishGraph routines have options to control titles, colors, \nand reference lines. The combination of X2R and FishGraph allows \nautomating graphics from routine fish stock assessments. The FishGraph \nfunctions can be modified or supplemented to reflect the needs of the \nanalysis at hand.\n\nX2R is supplied as files X2R.zip and X2R.tar.gz, which are equivalent.  \nVersion and release date are found in file  \"VersionInfo.txt\" in the \nroot of each archive. The new version is dated November 19, 2008.\n\nFishGraph (same CRAN directory) is supplied as a Windows installer.  We \nwill gladly collaborate with anyone interested in adapting FishGraph to \nother operating systems.\n\nThis work has been tested and is regularly used by the authors. However, \nany software may contain bugs, and these works are classified by NOAA as \n\"Experimental Products.\"  THIS SOFTWARE IS SUPPLIED WITH NO WARRANTY OF \nANY KIND. The authors will endeavor to fix bugs promptly and to add \nrequested features.  Send bug reports, suggestions, and extensions to\n\nMichael H. Prager - mike.prager at noaa.gov\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\n\n* Note 1. Use of product names (commercial or otherwise) does not imply \nendorsement or recommendation by any U.S. government agency, nor by the \nauthors in their government capacities.\n* Note 2. S-PLUS is a commercial product that requires licensing by the \nuser.\n* Note 3. AD Model Builder, formerly a commercial product, is now an \nopen-source free-software project. See http://admb-project.org/.",
+      "body_snippet": "X2R is a bundle of three software libraries for passing complicated data \nstructures from Fortran, C/C++, or AD Model Builder to R.  An update has \nbeen sent to CRAN and should be available from mirro",
+      "thread_id": "thread-d9add3997203",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
       "id": "msg-5c3ee3438531",
       "message_id": "<f8e6ff050811210453u2a5edd8dkcc0b8553872a1b81@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -128,6 +240,38 @@
       "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8  (2008-11-18)\n----------------------------------------\n\nThe two biggest new features in this release are the (long awaited)\nability to have scales that vary between facets, and a faceting system\nthat works like lattice (facet_wrap). From qplot, you can use\nfacet_wrap by specifying one sided formula (~ colour, as opposed to .\n~ color). To see some potential uses for these new features, see the\n\"Positioning\" chapter of the book or the documentation for facet_wrap\nand facet_grid.  Implementing these changes has required a rewrite of\nlarge parts of the coordinate systems code, so if anything seems\nstrange with non-Cartesian coordinate systems, please get in touch.\n\nI've also made another round of tweaks to make the plots more\naesthetically pleasing.  This includes using a bright blue colour for\ngeoms used to add statistical summaries to plots (contour, smooth, and\nquantiles), and tweaking the default colour scheme for the continuous\ncolour scale.  Please let me know what you think.  Remember that most\nof these options are controllable with the theming system - see the\nbook chapter \"Polishing your plots for publication\".\n\nAccompanying this new release of the package is an updated and\nexpanded version of the book.  The content of the book is now largely\ncomplete (~170 pages), and over the coming months I will be working on\nmake it polished and easy to understand.  See\nhttp://had.co.nz/ggplot2/book.  I love to hear your feedback about the\nbook, but at this point please don't bother reporting minor typos, I\nwould much rather hear about what you want to do, but can't figure out\nfrom the book.\n\nOther new features:\n\n* geom_bin2d/stat_bin2d & geom_hex/stat_binhex: for 2d square and\nhexagon binning, particularly useful for alleviating overplotting in\nscatterplots\n* geom_freqpoly: draws frequency polygons (= stat_bin + geom_line)\n* scale_position: both discrete and continuous gain a new formatter\nargument to control the default formatting of the axis labels.  See\nalso the handy numeric formatters: dollar, comma and percent\n* the xlim and ylim functions now produce discrete scales when\nappropriate, and generate a reverse scale if the minimum is greater\nthan the maximum\n\nImprovements\n\n* coord_map gains experimental axis labels\n* facet_grid: new support for varying scales in rows and columns\n* facet_wrap: new faceter which wraps a 1d ribbon of panels into 2d,\nin a similar way to lattice\n* geom_bin: gains a drop argument to control whether or not 0 count\nbins should be removed\n* geom_path and geom_line gain arrows argument to match geom_segment\n* ggsave now checks that you are using it with a ggplot plot\n* ggsave now produces postscript files that are suitable for embedding\nin another document\n* ggsave now recognises the .svg extension and will produce svg files,\nif possible\n* ggsave: default dpi changed to 300, on the assumption that you are\nsaving the plot for printing\n* qplot: uses facet_wrap if formula looks like ~ a + b (as opposed to a ~ b)\n\nAesthetic tweaks\n\n* geom_bar, geom_polygon, geom_rect, ...: default fill colour is now\nmuch closer to black to match the defaults in other geoms (point,\nline, etc)\n* geom_line, geom_path, geom_segment: lines have squared ends\n* geom_point, geom_pointrange and geom_boxplot: now use shape = 16\ninstead of 19.  This shape does not have a border from R 2.8 on, and\nso will look better when displayed transparently.\n* geom_contour, geom_density2d, geom_quantile and geom_smooth use a\nbright blue colour for lines, to make them stand out when used with\nblack points\n* scale_gradient: tweaked default colours to make more aesthetically pleasing\n* theme: new theme setting panel.margin (a unit) controls gap between\npanels in facetted plots (for both grid and wrap)\n* theme_gray: removed black border around strips\n* theme_bw: tweaks to make black and white theme look a little nicer\n\nBug fixes\n\n* coord_cartesian now correctly clips instead of dropping points\noutside of its limits\n* facet_grid: margins now grouped correctly in default case\n(non-aesthetic variables ignored when generating default group value)\n* facet_grid: fix long standing bug when combining datasets with\ndifferent levels of facetting variable\n* geom_smooth calls stat::predict explicitly to avoid conflicts with\npackages that override predict for S4 model classes\n* grid: correctly expose subcomponents of strips and axes\n* mapping aesthetics to functions of stat output now works in a much\nwider variety of cases\n* order aesthetic should now work with bars (and in general more geoms)\n* position_dodge now works with points and other geoms that lack xmin and xmax\n* scale_area works once more\n* scale_discrete_position: empty levels are no longer displayed by\ndefault, if you want them, use breaks = levels(myfactor)\n* scale_discrete_position: fixed bug when limits were set\n* scale_discrete_position: more aesthetically pleasing expansion for a\nwider ranges of plots (picks expansion based on whether or not geom\nwith width used, e.g. bars)\n* scale_gradient*: axes are correctly labelled when a transformation is used\n* scale_x_log10, scale_y_sqrt etc now correctly transform output from\nstatistics as well as raw data\n* scale_z_* now removed because no longer used by anything\n* stat_bin: correctly returns 0 when no observations in a bin (was\npreviously returning NA)\n* stat_quantreg: deal with yet another new output format from quantreg\n* stat_contour now has arguments to control the position of the\ncontours, rather than relying on the z scale\n* theme: panel.empty setting removed as it is no longer used\n* theme_grey now aliased to theme_gray\n* theme_line: setting size works correctly\n* theme_rect, theme_segment: size now measured in mm, to be consistent\nwith the rest of ggplot\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-5c3ee3438531",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-5c3ee3438531",
+      "message_id": "<f8e6ff050811210453u2a5edd8dkcc0b8553872a1b81@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-11-21T06:53:31-06:00",
+      "subject": "[R-pkgs] ggplot2 - version 0.8",
+      "subject_clean": "ggplot2 - version 0.8",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.  If you're interested, you can also sign up to\nthe ggplot2 mailing list at http://groups.google.com/group/ggplot2, or track\ndevelopment at  http://github.com/hadley/ggplot2\n\nggplot2 0.8  (2008-11-18)\n----------------------------------------\n\nThe two biggest new features in this release are the (long awaited)\nability to have scales that vary between facets, and a faceting system\nthat works like lattice (facet_wrap). From qplot, you can use\nfacet_wrap by specifying one sided formula (~ colour, as opposed to .\n~ color). To see some potential uses for these new features, see the\n\"Positioning\" chapter of the book or the documentation for facet_wrap\nand facet_grid.  Implementing these changes has required a rewrite of\nlarge parts of the coordinate systems code, so if anything seems\nstrange with non-Cartesian coordinate systems, please get in touch.\n\nI've also made another round of tweaks to make the plots more\naesthetically pleasing.  This includes using a bright blue colour for\ngeoms used to add statistical summaries to plots (contour, smooth, and\nquantiles), and tweaking the default colour scheme for the continuous\ncolour scale.  Please let me know what you think.  Remember that most\nof these options are controllable with the theming system - see the\nbook chapter \"Polishing your plots for publication\".\n\nAccompanying this new release of the package is an updated and\nexpanded version of the book.  The content of the book is now largely\ncomplete (~170 pages), and over the coming months I will be working on\nmake it polished and easy to understand.  See\nhttp://had.co.nz/ggplot2/book.  I love to hear your feedback about the\nbook, but at this point please don't bother reporting minor typos, I\nwould much rather hear about what you want to do, but can't figure out\nfrom the book.\n\nOther new features:\n\n* geom_bin2d/stat_bin2d & geom_hex/stat_binhex: for 2d square and\nhexagon binning, particularly useful for alleviating overplotting in\nscatterplots\n* geom_freqpoly: draws frequency polygons (= stat_bin + geom_line)\n* scale_position: both discrete and continuous gain a new formatter\nargument to control the default formatting of the axis labels.  See\nalso the handy numeric formatters: dollar, comma and percent\n* the xlim and ylim functions now produce discrete scales when\nappropriate, and generate a reverse scale if the minimum is greater\nthan the maximum\n\nImprovements\n\n* coord_map gains experimental axis labels\n* facet_grid: new support for varying scales in rows and columns\n* facet_wrap: new faceter which wraps a 1d ribbon of panels into 2d,\nin a similar way to lattice\n* geom_bin: gains a drop argument to control whether or not 0 count\nbins should be removed\n* geom_path and geom_line gain arrows argument to match geom_segment\n* ggsave now checks that you are using it with a ggplot plot\n* ggsave now produces postscript files that are suitable for embedding\nin another document\n* ggsave now recognises the .svg extension and will produce svg files,\nif possible\n* ggsave: default dpi changed to 300, on the assumption that you are\nsaving the plot for printing\n* qplot: uses facet_wrap if formula looks like ~ a + b (as opposed to a ~ b)\n\nAesthetic tweaks\n\n* geom_bar, geom_polygon, geom_rect, ...: default fill colour is now\nmuch closer to black to match the defaults in other geoms (point,\nline, etc)\n* geom_line, geom_path, geom_segment: lines have squared ends\n* geom_point, geom_pointrange and geom_boxplot: now use shape = 16\ninstead of 19.  This shape does not have a border from R 2.8 on, and\nso will look better when displayed transparently.\n* geom_contour, geom_density2d, geom_quantile and geom_smooth use a\nbright blue colour for lines, to make them stand out when used with\nblack points\n* scale_gradient: tweaked default colours to make more aesthetically pleasing\n* theme: new theme setting panel.margin (a unit) controls gap between\npanels in facetted plots (for both grid and wrap)\n* theme_gray: removed black border around strips\n* theme_bw: tweaks to make black and white theme look a little nicer\n\nBug fixes\n\n* coord_cartesian now correctly clips instead of dropping points\noutside of its limits\n* facet_grid: margins now grouped correctly in default case\n(non-aesthetic variables ignored when generating default group value)\n* facet_grid: fix long standing bug when combining datasets with\ndifferent levels of facetting variable\n* geom_smooth calls stat::predict explicitly to avoid conflicts with\npackages that override predict for S4 model classes\n* grid: correctly expose subcomponents of strips and axes\n* mapping aesthetics to functions of stat output now works in a much\nwider variety of cases\n* order aesthetic should now work with bars (and in general more geoms)\n* position_dodge now works with points and other geoms that lack xmin and xmax\n* scale_area works once more\n* scale_discrete_position: empty levels are no longer displayed by\ndefault, if you want them, use breaks = levels(myfactor)\n* scale_discrete_position: fixed bug when limits were set\n* scale_discrete_position: more aesthetically pleasing expansion for a\nwider ranges of plots (picks expansion based on whether or not geom\nwith width used, e.g. bars)\n* scale_gradient*: axes are correctly labelled when a transformation is used\n* scale_x_log10, scale_y_sqrt etc now correctly transform output from\nstatistics as well as raw data\n* scale_z_* now removed because no longer used by anything\n* stat_bin: correctly returns 0 when no observations in a bin (was\npreviously returning NA)\n* stat_quantreg: deal with yet another new output format from quantreg\n* stat_contour now has arguments to control the position of the\ncontours, rather than relying on the z scale\n* theme: panel.empty setting removed as it is no longer used\n* theme_grey now aliased to theme_gray\n* theme_line: setting size works correctly\n* theme_rect, theme_segment: size now measured in mm, to be consistent\nwith the rest of ggplot\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-5c3ee3438531",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-478b350439c2",
+      "message_id": "<38b9f0350811232239p3e19a0feh112e53eee9376e84@mail.gmail.com>",
+      "from_name": "ronggui",
+      "from_email_hash": "6846f5c272f8850077470247e7e6a025c83f8d7387bcf22387269b3b25a06522",
+      "date": "2008-11-24T14:39:11+08:00",
+      "subject": "[R-pkgs] RQDA-0.1.5 is released",
+      "subject_clean": "RQDA-0.1.5 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RDQA is a package for Qualitative Data Analysis built upon R. It works\nboth on the Windows and Linux/FreeBSD platforms. RQDA is an\neasy-to-use tool to assist in the analysis of textual data. At the\npresent, it supports only plain text format data. All the information\nis stored in SQLite database via the R package of RSQLite. The GUI is\nbased on RGtk2, via the aid of gWidgetsRGtk2. It includes a number of\nstandard Computer-Aided Qualitative Data Analysis features. Besides,\nit seamlessly integrated with R, which means that a) statistical\nanalysis on the coding is possible, and b) functions about data\nmanipulation and analysis can be easily extended by writing R\nfunctions. To some extent, RQDA and R makes an integrated platform for\nboth quantitative and qualitative data analysis.\n\nThe current version should be regarded as Release Candidate Version, I\nwill test it preliminary under Chinese Windows  OS, but it should work\nunder Linux and FreeBSD.\n\nBy the GUI, it can:\n# Import documents from plain text\n# Support non-English documents, Simplified Chinese Character is\nwell-tested under Windows\n# Character-level coding using codes\n# Memos of documents, codes, coding, project, files and more\n# Retrieval of coding\n# Single-file (*.rqda) format, which is basically SQLite database.\nData are stored in UTF-8, so it should be portable\n# Facilitator helps to categorize codes,which is key to theory\nbuilding. I deliberately avoid using tree-like categorization\n# There is a case category, which is crucial feature to bridge\nqualitative and quantative research\n# Search information about selected case from the Internet vis popup menu\n# Temporary delete files and codes\n# Rename the files,code, code category, case and others\n\nMore information can be found in http://rqda.r-forge.r-project.org/\n\nComments and suggestions are welcome:)\n\n-- \nHUANG Ronggui, Wincent\nTel: (00852) 3442 3832\nPh.D. Candidate, CityU of HK\nMaster of sociology, Fudan University, China\nBachelor of Social Work, Fudan University, China\nPersonal homepage: http://ronggui.huang.googlepages.com/",
+      "body_snippet": "RDQA is a package for Qualitative Data Analysis built upon R. It works\nboth on the Windows and Linux/FreeBSD platforms. RQDA is an\neasy-to-use tool to assist in the analysis of textual data. At the\npr",
+      "thread_id": "thread-478b350439c2",
       "thread_depth": 0,
       "month": "2008-11"
     },
@@ -166,6 +310,40 @@
       "month": "2008-11"
     },
     {
+      "id": "msg-be0793e51f4d",
+      "message_id": "<200811252101.02073.dusa.adrian@gmail.com>",
+      "from_name": "Adrian Dusa",
+      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
+      "date": "2008-11-25T21:01:01+02:00",
+      "subject": "[R-pkgs] RQDA-0.1.5 is released",
+      "subject_clean": "RQDA-0.1.5 is released",
+      "in_reply_to": "<38b9f0350811232239p3e19a0feh112e53eee9376e84@mail.gmail.com>",
+      "references": [
+        "<38b9f0350811232239p3e19a0feh112e53eee9376e84@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20081125/afd230d3/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20081125/afd230d3/attachment-0001.pl>",
+      "thread_id": "thread-478b350439c2",
+      "thread_depth": 1,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-fd6705c64af6",
+      "message_id": "<001101c9516d$237253b0$6a56fb10$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2008-11-28T10:22:34-05:00",
+      "subject": "[R-pkgs] version 2.0-0 of the effects package",
+      "subject_clean": "version 2.0-0 of the effects package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nI'd like to announce version 2.0-0 of the effects package, which is now on\nCRAN. The package constructs graphical and tabular \"effect displays,\" e.g.,\nof interactions, for several kinds of models. These displays are\ngeneralizations of \"adjusted\" means in linear models. \n\nThe major addition to the package is the ability to display terms in\nmultinomial and proportional-odds logit models (using results described in\nFox, J. and R. Andersen (2006), \"Effect displays for multinomial and\nproportional-odds logit models,\" Sociological Methodology 36, 225-255; the\noriginal package was described in Fox, J. (2003), \"Effect displays in R for\ngeneralised linear models,\" Journal of Statistical Software 8:15, 1-27.)\n\nThe new version of the package is co-authored with Jangman Hong.\n\nRegards,\n John\n\n------------------------------\nJohn Fox, Professor\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
+      "body_snippet": "Dear R users,\n\nI'd like to announce version 2.0-0 of the effects package, which is now on\nCRAN. The package constructs graphical and tabular \"effect displays,\" e.g.,\nof interactions, for several kinds",
+      "thread_id": "thread-fd6705c64af6",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
       "id": "msg-fd6705c64af6",
       "message_id": "<001101c9516d$237253b0$6a56fb10$@ca>",
       "from_name": "John Fox",
@@ -195,6 +373,17 @@
       "root_message_id": "msg-6cd21df1fec0"
     },
     {
+      "id": "thread-6cd21df1fec0",
+      "subject": "scuba 1.2-2 posted",
+      "message_count": 1,
+      "participants": [
+        "Adrian Baddeley"
+      ],
+      "started": "2008-11-03T17:08:17+09:00",
+      "last_reply": "2008-11-03T17:08:17+09:00",
+      "root_message_id": "msg-6cd21df1fec0"
+    },
+    {
       "id": "thread-f44ae1fc3284",
       "subject": "New package \"frontier\" for Stochastic Frontier Analysis (SFA)",
       "message_count": 1,
@@ -204,6 +393,28 @@
       "started": "2008-11-08T22:53:20+01:00",
       "last_reply": "2008-11-08T22:53:20+01:00",
       "root_message_id": "msg-f44ae1fc3284"
+    },
+    {
+      "id": "thread-f44ae1fc3284",
+      "subject": "New package \"frontier\" for Stochastic Frontier Analysis (SFA)",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2008-11-08T22:53:20+01:00",
+      "last_reply": "2008-11-08T22:53:20+01:00",
+      "root_message_id": "msg-f44ae1fc3284"
+    },
+    {
+      "id": "thread-65647d457bee",
+      "subject": "trip package: version 1.1-2",
+      "message_count": 1,
+      "participants": [
+        "Michael Sumner"
+      ],
+      "started": "2008-11-10T23:09:08+11:00",
+      "last_reply": "2008-11-10T23:09:08+11:00",
+      "root_message_id": "msg-65647d457bee"
     },
     {
       "id": "thread-65647d457bee",
@@ -228,6 +439,17 @@
       "root_message_id": "msg-bdc6163455c7"
     },
     {
+      "id": "thread-bdc6163455c7",
+      "subject": "New Package FactoClass",
+      "message_count": 1,
+      "participants": [
+        "Campo Elias Pardo Turriago"
+      ],
+      "started": "2008-11-15T17:19:58-05:00",
+      "last_reply": "2008-11-15T17:19:58-05:00",
+      "root_message_id": "msg-bdc6163455c7"
+    },
+    {
       "id": "thread-a850dd8b27bd",
       "subject": "Packages for time series databases",
       "message_count": 1,
@@ -237,6 +459,28 @@
       "started": "2008-11-18T13:37:53-05:00",
       "last_reply": "2008-11-18T13:37:53-05:00",
       "root_message_id": "msg-a850dd8b27bd"
+    },
+    {
+      "id": "thread-a850dd8b27bd",
+      "subject": "Packages for time series databases",
+      "message_count": 1,
+      "participants": [
+        "Paul Gilbert"
+      ],
+      "started": "2008-11-18T13:37:53-05:00",
+      "last_reply": "2008-11-18T13:37:53-05:00",
+      "root_message_id": "msg-a850dd8b27bd"
+    },
+    {
+      "id": "thread-308423b465f3",
+      "subject": "latticist and playwith",
+      "message_count": 1,
+      "participants": [
+        "Felix Andrews"
+      ],
+      "started": "2008-11-18T15:15:14+11:00",
+      "last_reply": "2008-11-18T15:15:14+11:00",
+      "root_message_id": "msg-308423b465f3"
     },
     {
       "id": "thread-308423b465f3",
@@ -261,6 +505,28 @@
       "root_message_id": "msg-d9add3997203"
     },
     {
+      "id": "thread-d9add3997203",
+      "subject": "Update of X2R (with FishGraph) at CRAN, 20 Nov 2008",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2008-11-20T08:13:52-05:00",
+      "last_reply": "2008-11-20T08:13:52-05:00",
+      "root_message_id": "msg-d9add3997203"
+    },
+    {
+      "id": "thread-5c3ee3438531",
+      "subject": "ggplot2 - version 0.8",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-11-21T06:53:31-06:00",
+      "last_reply": "2008-11-21T06:53:31-06:00",
+      "root_message_id": "msg-5c3ee3438531"
+    },
+    {
       "id": "thread-5c3ee3438531",
       "subject": "ggplot2 - version 0.8",
       "message_count": 1,
@@ -274,7 +540,7 @@
     {
       "id": "thread-478b350439c2",
       "subject": "RQDA-0.1.5 is released",
-      "message_count": 2,
+      "message_count": 3,
       "participants": [
         "Adrian Dusa",
         "ronggui"
@@ -282,6 +548,28 @@
       "started": "2008-11-24T14:39:11+08:00",
       "last_reply": "2008-11-25T21:01:01+02:00",
       "root_message_id": "msg-478b350439c2"
+    },
+    {
+      "id": "thread-478b350439c2",
+      "subject": "RQDA-0.1.5 is released",
+      "message_count": 1,
+      "participants": [
+        "ronggui"
+      ],
+      "started": "2008-11-24T14:39:11+08:00",
+      "last_reply": "2008-11-24T14:39:11+08:00",
+      "root_message_id": "msg-478b350439c2"
+    },
+    {
+      "id": "thread-fd6705c64af6",
+      "subject": "version 2.0-0 of the effects package",
+      "message_count": 1,
+      "participants": [
+        "John Fox"
+      ],
+      "started": "2008-11-28T10:22:34-05:00",
+      "last_reply": "2008-11-28T10:22:34-05:00",
+      "root_message_id": "msg-fd6705c64af6"
     },
     {
       "id": "thread-fd6705c64af6",

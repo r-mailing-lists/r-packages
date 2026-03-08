@@ -20,6 +20,22 @@
       "month": "2003-11"
     },
     {
+      "id": "msg-33b5916b3cc7",
+      "message_id": "<200311010947.hA19lAjt016231@tahi.mcs.vuw.ac.nz>",
+      "from_name": "Ray Brownrigg",
+      "from_email_hash": "7c9305d6e8465d47af27a60c306088e1452a12be430f4303fa181000c81760b5",
+      "date": "2003-11-01T22:47:10+13:00",
+      "subject": "[R-pkgs] R maps, mapdata and mapproj for Windows",
+      "subject_clean": "R maps, mapdata and mapproj for Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Nearly a month ago I announced the availability of a Windows port of\nthe maps for S package but for various reasons the Windows binaries\ndid not appear on CRAN until yesterday.  Now I am pleased to announce\nthat the three packages maps_2.0-8 (the base maps package with\nlow-resolution databases), mapdata_2.0-6 (high-resolution and other\ndatabases) and mapproj_1.1 (projection add-on for maps, maintained by\nTom Minka) are all now available on CRAN both in source and Windows\nbinary forms.\n\nI apologise for the delays.\nRay Brownrigg",
+      "body_snippet": "Nearly a month ago I announced the availability of a Windows port of\nthe maps for S package but for various reasons the Windows binaries\ndid not appear on CRAN until yesterday.  Now I am pleased to an",
+      "thread_id": "thread-33b5916b3cc7",
+      "thread_depth": 0,
+      "month": "2003-11"
+    },
+    {
       "id": "msg-b9de4eeb09b7",
       "message_id": "<16315.9824.576634.789737@gargle.gargle.HOWL>",
       "from_name": "Martin Maechler",
@@ -32,6 +48,38 @@
       "body_plain": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\") and density evaluation.\nIt also provides the 16 \"Marron-Wand densities\" (known in the (1d)\ndensity estimation business).\nErik J?rgensen has provided \"p\" and \"q\" functions -- such that\nthere's now the full range of \"dpqr\" functionality.\n\nI have recently *renamed* the package to 'nor1mix' (now on CRAN\nwhere 'normix' has gone). \n\nNote that *estimation* (i.e. fitting normal mixtures to data) is \nnot part of this package, but rather in (the more general framework of)\nthe package 'mclust'.\n\nMartin Maechler <maechler at stat.math.ethz.ch>\thttp://stat.ethz.ch/~maechler/\nSeminar fuer Statistik, ETH-Zentrum  LEO C16\tLeonhardstr. 27\nETH (Federal Inst. Technology)\t8092 Zurich\tSWITZERLAND\nphone: x-41-1-632-3408\t\tfax: ...-1228\t\t\t<><",
       "body_snippet": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\"",
       "thread_id": "thread-b9de4eeb09b7",
+      "thread_depth": 0,
+      "month": "2003-11"
+    },
+    {
+      "id": "msg-b9de4eeb09b7",
+      "message_id": "<16315.9824.576634.789737@gargle.gargle.HOWL>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2003-11-19T09:14:24+01:00",
+      "subject": "[R-pkgs] 'nor1mix' for 1-dimensional normal mixture distributions",
+      "subject_clean": "'nor1mix' for 1-dimensional normal mixture distributions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\") and density evaluation.\nIt also provides the 16 \"Marron-Wand densities\" (known in the (1d)\ndensity estimation business).\nErik J?rgensen has provided \"p\" and \"q\" functions -- such that\nthere's now the full range of \"dpqr\" functionality.\n\nI have recently *renamed* the package to 'nor1mix' (now on CRAN\nwhere 'normix' has gone). \n\nNote that *estimation* (i.e. fitting normal mixtures to data) is \nnot part of this package, but rather in (the more general framework of)\nthe package 'mclust'.\n\nMartin Maechler <maechler at stat.math.ethz.ch>\thttp://stat.ethz.ch/~maechler/\nSeminar fuer Statistik, ETH-Zentrum  LEO C16\tLeonhardstr. 27\nETH (Federal Inst. Technology)\t8092 Zurich\tSWITZERLAND\nphone: x-41-1-632-3408\t\tfax: ...-1228\t\t\t<><",
+      "body_snippet": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\"",
+      "thread_id": "thread-b9de4eeb09b7",
+      "thread_depth": 0,
+      "month": "2003-11"
+    },
+    {
+      "id": "msg-a3e9d2a467a9",
+      "message_id": "<a06002024bbea865e3f74@[139.166.242.29]>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "7e11c9f2323f6bea660b3d190b86a4318603bb60803f82854ac7b57f1bba3502",
+      "date": "2003-11-26T16:40:51Z",
+      "subject": "[R-pkgs] new R package: magic squares",
+      "subject_clean": "new R package: magic squares",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear List\n\nI have just placed a new R package on CRAN that includes many tools \nfor creating and\ninvestigating magic squares and hypercubes.\n\nAny comments, suggestions, etc very welcome.  I am particularly interested in\ncoding up additional algorithms for magic squares, and also in improving the\nexisting methods.\n\n\n-- \nRobin Hankin\nUncertainty Analyst\nSouthampton Oceanography Centre\nSO14 3ZH\ntel +44(0)23-8059-7743\ninitialDOTsurname at soc.soton.ac.uk (edit in obvious way; spam precaution)",
+      "body_snippet": "Dear List\n\nI have just placed a new R package on CRAN that includes many tools \nfor creating and\ninvestigating magic squares and hypercubes.\n\nAny comments, suggestions, etc very welcome.  I am particu",
+      "thread_id": "thread-a3e9d2a467a9",
       "thread_depth": 0,
       "month": "2003-11"
     },
@@ -65,6 +113,17 @@
       "root_message_id": "msg-33b5916b3cc7"
     },
     {
+      "id": "thread-33b5916b3cc7",
+      "subject": "R maps, mapdata and mapproj for Windows",
+      "message_count": 1,
+      "participants": [
+        "Ray Brownrigg"
+      ],
+      "started": "2003-11-01T22:47:10+13:00",
+      "last_reply": "2003-11-01T22:47:10+13:00",
+      "root_message_id": "msg-33b5916b3cc7"
+    },
+    {
       "id": "thread-b9de4eeb09b7",
       "subject": "'nor1mix' for 1-dimensional normal mixture distributions",
       "message_count": 1,
@@ -74,6 +133,28 @@
       "started": "2003-11-19T09:14:24+01:00",
       "last_reply": "2003-11-19T09:14:24+01:00",
       "root_message_id": "msg-b9de4eeb09b7"
+    },
+    {
+      "id": "thread-b9de4eeb09b7",
+      "subject": "'nor1mix' for 1-dimensional normal mixture distributions",
+      "message_count": 1,
+      "participants": [
+        "Martin Maechler"
+      ],
+      "started": "2003-11-19T09:14:24+01:00",
+      "last_reply": "2003-11-19T09:14:24+01:00",
+      "root_message_id": "msg-b9de4eeb09b7"
+    },
+    {
+      "id": "thread-a3e9d2a467a9",
+      "subject": "new R package: magic squares",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2003-11-26T16:40:51+00:00",
+      "last_reply": "2003-11-26T16:40:51+00:00",
+      "root_message_id": "msg-a3e9d2a467a9"
     },
     {
       "id": "thread-a3e9d2a467a9",

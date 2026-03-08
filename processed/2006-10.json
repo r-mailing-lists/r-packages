@@ -20,6 +20,22 @@
       "month": "2006-10"
     },
     {
+      "id": "msg-9b2ef7386a3a",
+      "message_id": "<p06210200c143e92a3943@[10.0.1.5]>",
+      "from_name": "Jean Thioulouse",
+      "from_email_hash": "b20a674eb42804a87b064b390e04515db85d2871dd7105ba54500899f94dfe16",
+      "date": "2006-10-01T14:26:55+02:00",
+      "subject": "[R-pkgs] New package 'ade4TkGUI', a Tcl/Tk GUI for ade4",
+      "subject_clean": "New package 'ade4TkGUI', a Tcl/Tk GUI for ade4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-Users,\n\nade4TkGUI is a new package available on CRAN. It implements a Tcl/Tk\ngraphical user interface (GUI) for the ade4 package.\n\nOnly the most basic functions of ade4 have a GUI in this first\nversion : classical one-table data analysis methods (PCA, COA,\nMCA, PCO, etc.), one table with groups of rows (BGA, WGA, DA),\nand two-tables analysis methods (Coinertia analysis, CCA, PCAIV).\nhttp://pbil.univ-lyon1.fr/JTHome/ade4TkGUI.jpg\n\nOne of the benefits of using ade4TkGUI is the centralized graphical\ndisplay of the dudi objects created by ade4. A dudi is a list with\nmany components http://pbil.univ-lyon1.fr/ade4html/dudi.html\nThe GUI presents a window in which the user can click on dudi\ncomponents to get predefined graphical displays : \nhttp://pbil.univ-lyon1.fr/JTHome/coa1dudi.jpg\n\nAnother benefit is for complex functions, and particularly graphical\nfunctions that have many parameters. For example, the s.class function\nhas 27 parameters : http://pbil.univ-lyon1.fr/ade4html/s.class.html\nIn this case, the GUI makes it much easier to try various graphical\noptions : http://pbil.univ-lyon1.fr/JTHome/s.class.jpg\n\nade4TkGUI also contains a factor map exploration function, written by\nStephane Dray. This function allows dynamic operations like zooming,\npanning, and identification of points by searching on labels on the\nfactor maps : http://pbil.univ-lyon1.fr/JTHome/explore.jpg\n\nCurrent version (ade4TkGUI_0.1-4) depends on ade4_1.4-2, and the\ndynamic factor map exploration function depends on tkrplot. Future\nversions will add GUIs for more advanced ade4 methods, like ktables\nanalysis methods, or spatial methods, and for more graphical functions.\n\nAll comments are welcome. Please use the adelist mailing list :\nhttp://listes.univ-lyon1.fr/wws/info/adelist\n\nJean\n-- \nJean Thioulouse - Labo Biometrie et Biologie Evolutive, UMR CNRS 5558\nUniversite Lyon 1,  43 Boulevard du 11 Novembre 1918,  Bat. G. Mendel\n69622 Villeurbanne Cedex,  France.       Tel/Fax : (33) 4 72 43 27 56                       \n               http://pbil.univ-lyon1.fr/JTHome.html",
+      "body_snippet": "Dear R-Users,\n\nade4TkGUI is a new package available on CRAN. It implements a Tcl/Tk\ngraphical user interface (GUI) for the ade4 package.\n\nOnly the most basic functions of ade4 have a GUI in this first",
+      "thread_id": "thread-9b2ef7386a3a",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
       "id": "msg-bdf552e7aa82",
       "message_id": "<696224530610011925p4af5d879h7408d48085e1cb30@mail.gmail.com>",
       "from_name": "halldor bjornsson",
@@ -32,6 +48,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl>",
       "thread_id": "thread-bdf552e7aa82",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-bdf552e7aa82",
+      "message_id": "<696224530610011925p4af5d879h7408d48085e1cb30@mail.gmail.com>",
+      "from_name": "halldor bjornsson",
+      "from_email_hash": "5d7baf2e48b7e679b71c54d5e74516995d311a48fe3de0d36a609ebe71eb1627",
+      "date": "2006-10-02T02:25:29Z",
+      "subject": "[R-pkgs] Stineman interpolation package",
+      "subject_clean": "Stineman interpolation package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment-0001.pl>",
+      "thread_id": "thread-bdf552e7aa82",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-9516bfe8f0a6",
+      "message_id": "<40e66e0b0610030756j7f966eb9k8ab90c9daf047580@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2006-10-03T09:56:00-05:00",
+      "subject": "[R-pkgs] New versions of Matrix and lme4 packages for R-2.4.0",
+      "subject_clean": "New versions of Matrix and lme4 packages for R-2.4.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Versions 0.9975-1 of the Matrix and lme4 packages will soon be available on\nCRAN for use with R version 2.4.0 or later.\n\nPurpose of the packages:\n\nThe Matrix package provides S4 classes and methods for sparse\nand dense matrices.  The lme4 package provides functions for fitting\nand assessing linear or generalized linear mixed effects models (also\ncalled multilevel models).  Like the Matrix package, the lme4 package\nuses S4 classes and methods.\n\nFeatures of this release:\n\n- These package versions are designed for use with release 2.4.0 or\n later of R.  Because of enhancements in S4 classes and methods in\n R-2.4.0 the packages load much faster than before and the functions\n can be organized differently.  In particular, the lmer function for\n fitting linear or generalized linear models is again in the lme4\n package. The C code of lme4 now calls C code that is exported from Matrix\n\nMatrix package improvements:\n\n- The  Matrix() constructor function has become more versatile and you\n  are advised to read the help page and try its examples.\n\n- Reorganization and simplification of source code (source package is\n  about 1/3 the previous size).  Much greater use of virtual classes\n  in method definitions.\n\n- LU and QR decompositions for sparse matrices using the CSparse\n  library of C functions written by Tim Davis and documented in his\n  2006 SIAM book \"Direct Methods for Sparse Linear Systems\".  New\n  function Cholesky (in addition to function chol) that allows the\n  full range of CHOLMOD library options for sparse Cholesky\n  decompositions.\n\n- New classes to distinguish between sparse logical matrices and\n  sparse pattern matrices.\n\n- NAs are now properly dealt with in sparse and dense matrices.\n\n- Printing of sparse matrices now distinguishes structural zeros and\n  values that can be nonzero but happen to be equal to zero.\n\n- New functions triu, tril and band patterned after those in Octave\n  and Matlab.\n\nlme4 package improvements:\n\n- Allow specification of nested random effects using terms of the form\n (1|block/field)\n\n- Model specifications without fixed effects, such as travel ~ (1|Rail),\n  are allowed.  Previously the implicit intercept term needed to be\n  explicitly specified as travel ~ 1 + (1 | Rail).\n\n- Error declared when the number of levels of a grouping factor is not\n   less than the number of observations.\n\n- Default estimation method for GLMMs is now optimization of the\n  Laplace approximation to the log-likelihood\n\n- Reorganization and simplification of source code.  Allow for models,\n  such as multilevel item response theory models or models with\n  carry-over of teacher effects, that extend the linear or generalized\n  linear mixed model.\n\n- Fixed bug, reported by Goran Brostrom, in calculation of standard\n  errors of coefficients in a binomial GLMM where the response is\n  given as a matrix.\n\n\nOn behalf of the authors Martin Maechler and Douglas Bates",
+      "body_snippet": "Versions 0.9975-1 of the Matrix and lme4 packages will soon be available on\nCRAN for use with R version 2.4.0 or later.\n\nPurpose of the packages:\n\nThe Matrix package provides S4 classes and methods fo",
+      "thread_id": "thread-9516bfe8f0a6",
       "thread_depth": 0,
       "month": "2006-10"
     },
@@ -68,6 +116,22 @@
       "month": "2006-10"
     },
     {
+      "id": "msg-3c6cb54fbc50",
+      "message_id": "<12618.195.113.27.161.1159994023.squirrel@www.karlin.mff.cuni.cz>",
+      "from_name": "David Kraus",
+      "from_email_hash": "e10f33bfd1cb0fb4729e47c04f8e0f3b801a358c2137a9050e581ce81ca5a545",
+      "date": "2006-10-04T22:33:43+02:00",
+      "subject": "[R-pkgs] new package proptest",
+      "subject_clean": "new package proptest",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R users,\n\nThe package proptest (http://www.davidkraus.net/proptest/) has been\nrecently released to CRAN.\n\nThe package provides functions for testing the proportional hazards\nassumption in the Cox model for right censored survival data. Two types of\ntests for identifying nonproportional covariates are implemented:\n\n* data-driven Neyman type smooth tests (using both nested and all-subsets\nvariant of the BIC),\n\n* tests based on the score process (KS, CM, and AD type, with the LWY\nsimulation).\n\nBug reports, comments or suggestions are welcome.\n\nRegards,\n\nDavid.\n\n\n-- \n\nDavid Kraus\n\nInstitute of Information Theory and Automation\nPod Vodarenskou vezi 4\n18208 Praha 8\nCzechia\n\n&\n\nCharles University in Prague\nDepartment of Statistics\nSokolovska 83\n18675 Praha 8\nCzechia\n\nkraus #at# karlin.mff.cuni.cz\nhttp://www.davidkraus.net/",
+      "body_snippet": "Dear R users,\n\nThe package proptest (http://www.davidkraus.net/proptest/) has been\nrecently released to CRAN.\n\nThe package provides functions for testing the proportional hazards\nassumption in the Cox",
+      "thread_id": "thread-3c6cb54fbc50",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
       "id": "msg-22ac1ca6111e",
       "message_id": "<Pine.LNX.4.64.0610061047240.1563@homer22.u.washington.edu>",
       "from_name": "Chris Fraley",
@@ -80,6 +144,38 @@
       "body_plain": "A new version of mclust is now available as a contributed package on CRAN.\n\nThe associated manual is located at\nhttp://www.stat.washington.edu/www/research/reports/2006/tr504.pdf\n\nThe main feature in terms of new functionality is the option to include \na Bayesian prior in the mixture model for regularization.\n\nThe older version is still available mclust02 for those who need\nbackward compatibility.\n\nChris Fraley\nDepartment of Statistics\nUniversity of Washington",
       "body_snippet": "A new version of mclust is now available as a contributed package on CRAN.\n\nThe associated manual is located at\nhttp://www.stat.washington.edu/www/research/reports/2006/tr504.pdf\n\nThe main feature in ",
       "thread_id": "thread-22ac1ca6111e",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-22ac1ca6111e",
+      "message_id": "<Pine.LNX.4.64.0610061047240.1563@homer22.u.washington.edu>",
+      "from_name": "Chris Fraley",
+      "from_email_hash": "a077f667085b5244bc33a7bc5eb18db29f8c778a955cf2cfbc68bed05cdaaac8",
+      "date": "2006-10-06T11:04:27-07:00",
+      "subject": "[R-pkgs] new version of mclust available",
+      "subject_clean": "new version of mclust available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of mclust is now available as a contributed package on CRAN.\n\nThe associated manual is located at\nhttp://www.stat.washington.edu/www/research/reports/2006/tr504.pdf\n\nThe main feature in terms of new functionality is the option to include \na Bayesian prior in the mixture model for regularization.\n\nThe older version is still available mclust02 for those who need\nbackward compatibility.\n\nChris Fraley\nDepartment of Statistics\nUniversity of Washington",
+      "body_snippet": "A new version of mclust is now available as a contributed package on CRAN.\n\nThe associated manual is located at\nhttp://www.stat.washington.edu/www/research/reports/2006/tr504.pdf\n\nThe main feature in ",
+      "thread_id": "thread-22ac1ca6111e",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-68dfad5759b0",
+      "message_id": "<m2y7rtknnc.fsf@ziti.fhcrc.org>",
+      "from_name": "Seth Falcon",
+      "from_email_hash": "92e6ad61c3d6d545a12aa5845a0d74c5de1bbbc7bf85c768e4a2cb862e092abc",
+      "date": "2006-10-06T16:52:39-07:00",
+      "subject": "[R-pkgs] DBI, RMySQL, RSQLite updated",
+      "subject_clean": "DBI, RMySQL, RSQLite updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nJust uploaded to CRAN updates for RSQLite, RMySQL, and DBI.  \n\nThe primary svn repository for these packages is now hosted by the\nGentleman Lab in Seattle and our group is working with David James to\nhelp with maintenance.  Details on the updates are below.\n\nRMySQL_0.5-9.tar.gz  \n\n  * Fixed unclosed textConnections\n\nRSQLite_0.4-4.tar.gz\n  \n  * Upgraded to SQLite 3.3.7\n\n  * Default when building from source is now to compile the included\n    version of SQLite and link to it statically\n\n  * Fixed unclosed textConnections\n\nDBI_0.1-11.tar.gz  \n\n  * Minor updates in package structure (no feature changes).\n\n\nBest Wishes,\n\n+ seth\n\n-- \nSeth Falcon | Computational Biology | Fred Hutchinson Cancer Research Center\nhttp://bioconductor.org",
+      "body_snippet": "Hello all,\n\nJust uploaded to CRAN updates for RSQLite, RMySQL, and DBI.  \n\nThe primary svn repository for these packages is now hosted by the\nGentleman Lab in Seattle and our group is working with Dav",
+      "thread_id": "thread-68dfad5759b0",
       "thread_depth": 0,
       "month": "2006-10"
     },
@@ -116,6 +212,22 @@
       "month": "2006-10"
     },
     {
+      "id": "msg-8767b45df6ea",
+      "message_id": "<857a431c0610072152o5c0270c0p4ea05adf6ff76eb7@mail.gmail.com>",
+      "from_name": "Jay Kerns",
+      "from_email_hash": "a9925dd8c0dfe4265ad215392542ac46397a3ff80f383fac2c3b0059cafe6fca",
+      "date": "2006-10-08T00:52:15-04:00",
+      "subject": "[R-pkgs] new version IPSUR_0.1-1 now available on CRAN",
+      "subject_clean": "new version IPSUR_0.1-1 now available on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment-0001.pl>",
+      "thread_id": "thread-8767b45df6ea",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
       "id": "msg-09898611d266",
       "message_id": "<971536df0610151943h50599eb9l5436685f594d10e9@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
@@ -128,6 +240,38 @@
       "body_plain": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R and get back the result.  It\nalso has facilities for manipulating yacas strings and R\nexpressions destined for yacas processing.\n\nIt can be used for exact arithmetic, symbolic math, ASCII\npretty printing and translating R to TeX.\n\n\nOnline info.  For overview, pointers to additional\ninformation, installation instructions and a sample session\nsee:\n\n    http://code.google.com/p/ryacas/\n\nThe vignettes can be viewed online here:\n\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas-Sym.pdf\n\n\nMore. Once Ryacas is installed, pointers to additional\ninformation can be found with these R commands:\n\n    library(Ryacas)\n    package?Ryacas\n\n\n---\n\nRob Goedman, goedman at mac dot com\nGabor Grothendieck, ggrothendieck at gmail dot com\nS?ren H?jsgaard, Soren.Hojsgaard at agrsci dot dk\nAyal Pinkus, apinkus at xs4all dot nl",
       "body_snippet": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R a",
       "thread_id": "thread-09898611d266",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-09898611d266",
+      "message_id": "<971536df0610151943h50599eb9l5436685f594d10e9@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2006-10-15T22:43:06-04:00",
+      "subject": "[R-pkgs] New package Ryacas",
+      "subject_clean": "New package Ryacas",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R and get back the result.  It\nalso has facilities for manipulating yacas strings and R\nexpressions destined for yacas processing.\n\nIt can be used for exact arithmetic, symbolic math, ASCII\npretty printing and translating R to TeX.\n\n\nOnline info.  For overview, pointers to additional\ninformation, installation instructions and a sample session\nsee:\n\n    http://code.google.com/p/ryacas/\n\nThe vignettes can be viewed online here:\n\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas-Sym.pdf\n\n\nMore. Once Ryacas is installed, pointers to additional\ninformation can be found with these R commands:\n\n    library(Ryacas)\n    package?Ryacas\n\n\n---\n\nRob Goedman, goedman at mac dot com\nGabor Grothendieck, ggrothendieck at gmail dot com\nS?ren H?jsgaard, Soren.Hojsgaard at agrsci dot dk\nAyal Pinkus, apinkus at xs4all dot nl",
+      "body_snippet": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R a",
+      "thread_id": "thread-09898611d266",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-03e78fc7aa07",
+      "message_id": "<971536df0610181738p5662de67p34c3308de129ea5d@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2006-10-18T20:38:27-04:00",
+      "subject": "[R-pkgs] New version of batchfiles 0.2-9",
+      "subject_clean": "New version of batchfiles 0.2-9",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "There is a new version, 0.2-9, of the Windows XP batchfiles\ndistribution.  It is a zip file containing a set of Windows\nXP batch scripts useful in conjunction with R.\n\nThe latest release adds sweave.bat which will 1. run sweave,\n2. run pdflatex and then 3. view the pdf in sequence.  If\nsweave or pdflatex terminates in an error or if either fails\nto produce a file newer than its input the script is halted\nat that point.\n\nThere is also a new home page and public svn repository\nfor the batchfiles project:\n\n\thttp://code.google.com/p/batchfiles/\n\nThe home page has these and other links:\n\n- \"README\" link provides more details\n\n- \"Download batchfiles distribution from CRAN\" link\n   to download the distribution as a .zip file",
+      "body_snippet": "There is a new version, 0.2-9, of the Windows XP batchfiles\ndistribution.  It is a zip file containing a set of Windows\nXP batch scripts useful in conjunction with R.\n\nThe latest release adds sweave.b",
+      "thread_id": "thread-03e78fc7aa07",
       "thread_depth": 0,
       "month": "2006-10"
     },
@@ -164,6 +308,22 @@
       "month": "2006-10"
     },
     {
+      "id": "msg-105224304475",
+      "message_id": "<4537B5FF.6020605@gmx.de>",
+      "from_name": "Andreas Wittmann",
+      "from_email_hash": "ad7b6f8b730545ac5e8d8380a9122c647849b632465d5a308af1204521ca39f7",
+      "date": "2006-10-19T19:29:35+02:00",
+      "subject": "[R-pkgs] New package CreditMetrics",
+      "subject_clean": "New package CreditMetrics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R useRs,\n\nA new package 'CreditMetrics' is now available on CRAN. It is mainly a \nset of\nfunctions for computing the CreditMetrics risk model.\n\nThis is the first version of the package and it is also my first try to\nbuild a package for R.\n\nThe canonical reference is:\nGlasserman, Paul, Monte Carlo Methods in Financial Engineering, Springer \n2004\n\n\nSuggestions, bug reports and other comments are very welcome.\n\n\nenjoy and best regards\nAndreas",
+      "body_snippet": "Dear R useRs,\n\nA new package 'CreditMetrics' is now available on CRAN. It is mainly a \nset of\nfunctions for computing the CreditMetrics risk model.\n\nThis is the first version of the package and it is ",
+      "thread_id": "thread-105224304475",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
       "id": "msg-49df6417f4bf",
       "message_id": "<17725.10446.610808.297970@gargle.gargle.HOWL>",
       "from_name": "Jeff Enos",
@@ -176,6 +336,38 @@
       "body_plain": "A new version of package 'portfolio' is now available on CRAN.  Also\navailable are new packages 'backtest', for basic spread-based\nhypothesis testing, and 'portfolioSim', a general framework for\nportfolio simulation.\n\nLast March we wrote R-packages regarding our desire to build a suite\nof tools for portfolio analytics in R:\n\nhttps://stat.ethz.ch/pipermail/r-packages/2006/000171.html\n\nSince then we've made progress by improving 'portfolio' and adding two\nnew packages, but are still looking for collaborators who would like\nto help design, build, and test this set of tools.  We hope to make\nthe same amount of progress in 2007 as we have in 2006.\n\nAs always, comments on design, usefulness, or any aspect of these\npackages is much appreciated.\n\nDave Kane\nJeff Enos",
       "body_snippet": "A new version of package 'portfolio' is now available on CRAN.  Also\navailable are new packages 'backtest', for basic spread-based\nhypothesis testing, and 'portfolioSim', a general framework for\nportf",
       "thread_id": "thread-49df6417f4bf",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-49df6417f4bf",
+      "message_id": "<17725.10446.610808.297970@gargle.gargle.HOWL>",
+      "from_name": "Jeff Enos",
+      "from_email_hash": "6371495f4c250755c717111961b2399fec4c002541d2ade6ab2c9ec45e6c0d39",
+      "date": "2006-10-23T16:40:46-04:00",
+      "subject": "[R-pkgs] New version of 'portfolio' and new related packages",
+      "subject_clean": "New version of 'portfolio' and new related packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new version of package 'portfolio' is now available on CRAN.  Also\navailable are new packages 'backtest', for basic spread-based\nhypothesis testing, and 'portfolioSim', a general framework for\nportfolio simulation.\n\nLast March we wrote R-packages regarding our desire to build a suite\nof tools for portfolio analytics in R:\n\nhttps://stat.ethz.ch/pipermail/r-packages/2006/000171.html\n\nSince then we've made progress by improving 'portfolio' and adding two\nnew packages, but are still looking for collaborators who would like\nto help design, build, and test this set of tools.  We hope to make\nthe same amount of progress in 2007 as we have in 2006.\n\nAs always, comments on design, usefulness, or any aspect of these\npackages is much appreciated.\n\nDave Kane\nJeff Enos",
+      "body_snippet": "A new version of package 'portfolio' is now available on CRAN.  Also\navailable are new packages 'backtest', for basic spread-based\nhypothesis testing, and 'portfolioSim', a general framework for\nportf",
+      "thread_id": "thread-49df6417f4bf",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-27c92a8de5c8",
+      "message_id": "<Pine.LNX.4.64.0610240835150.16003@imbe153.imbe.med.uni-erlangen.de>",
+      "from_name": "Torsten Hothorn",
+      "from_email_hash": "41e657384fb07a3764a554d5304d033ebaccbd11a54485f1b6386a932843f125",
+      "date": "2006-10-24T08:38:27+02:00",
+      "subject": "[R-pkgs] New version of `multcomp' on CRAN",
+      "subject_clean": "New version of `multcomp' on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\n`multcomp' version 0.991-1 will be shortly available from \nCRAN near you. Nearly all functionality contained in the\npackage has been re-implemented from scratch.\n\nThe focus of the package has been extended to general linear\nhypotheses in arbitrary parametric models and the most important\nfunction to check out is `glht()'. Multiple comparison of\nmeans procedures (for example Tukey all-pair comparisons)\nare contained in the framework as special cases.\n\nThe old user interface (functions `simint()' and `simtest()') are still\navailable, however deprecated, and the presentation of their output \ndiffers from older versions of `multcomp'.\n\nAs always, feedback, feature requests and bug reports are more than \nwelcome.\n\nBest wishes,\n\nTorsten\n\n___________________________________________________________________________\n\nPackage: multcomp\nTitle: Simultaneous Inference for General Linear Hypotheses\nVersion: 0.991-1\nDate: 2006-10-16\nAuthor: Torsten Hothorn, Frank Bretz and Peter Westfall\nDescription: Simultaneous tests and confidence intervals\n   for general linear hypotheses in parametric models, including\n   linear, generalized linear, linear mixed effects, and survival models.\nMaintainer: Torsten Hothorn <Torsten.Hothorn at R-project.org>\nDepends: mvtnorm (>= 0.7-5)\nLazyData: yes\nLicense: GPL\nPackaged: Mon Oct 23 10:39:01 2006; hothorn",
+      "body_snippet": "Dear useRs,\n\n`multcomp' version 0.991-1 will be shortly available from \nCRAN near you. Nearly all functionality contained in the\npackage has been re-implemented from scratch.\n\nThe focus of the package",
+      "thread_id": "thread-27c92a8de5c8",
       "thread_depth": 0,
       "month": "2006-10"
     },
@@ -212,6 +404,22 @@
       "month": "2006-10"
     },
     {
+      "id": "msg-3f238936a36c",
+      "message_id": "<453E24BA.2000300@noaa.gov>",
+      "from_name": "Michael H. Prager",
+      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
+      "date": "2006-10-24T10:35:38-04:00",
+      "subject": "[R-pkgs] X2R: R-compatible output routines from C, ADMB, Fortran to R",
+      "subject_clean": "X2R: R-compatible output routines from C, ADMB, Fortran to R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We announce the availability of three related software libraries: C2R, \nADMB2R, and For2R (together, X2R). Each contains output routines to \nsimplify transfer of complicated data structures from models written in \na compiled language to R.  The user's data can be written as a \nstructured ASCII file which, when read by R (note 1) with a single \ndget() function call, will become an R data object of type list. The \nlist, of course, may contain components such as data frames, matrices, \nand other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be \nused with programmers' own modeling codes.  Limited testing indicates \nthat they are compatible with S-PLUS, as well (note 1, note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R) \nand AD Model Builder (with ADMB2R) (note 1, note 3).  Source code and \nusers' manuals are supplied. \n\nFor those working in fish stock assessment, we anticipate releasing soon \na related group of R functions, FishGraph.  The FishGraph functions \ncreate graphs useful in analysis of fisheries stock assessments whose \noutput has been saved with X2R.  We have been using FishGraph for \nseveral years and are now completing the documentation.\n\nThis work has been tested and used by the authors. However, any software \nmay contain bugs, and these works are classified by NOAA as  \n\"Experimental Products.\"  Although the software is supplied with no \nwarranty whatsoever, bug reports, suggestions, and extensions are \nsolicited (send to Prager or Martin).  The authors will attempt to fix \nall bugs promptly and to add requested features.\n\nSoftware is now available at CRAN,  http://cran.r-project.org/ , and is \nexpected to propagate to mirrors shortly.  Look under \"Software / Other\" \nfor the current X2R distribution.\n\n\nMichael H. Prager - mike.prager at noaa.gov\nAndi Stephens\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1.  Use of product names (commercial or otherwise) does not imply \nendorsement or recommendation by any U.S. government agency, nor by the \nauthors in their government capacities.\n* Note 2.  S-PLUS is a commercial product, released by Insightful \nCorporation.\n* Note 3.  AD Model Builder is a commercial product, released by Otter \nResearch.",
+      "body_snippet": "We announce the availability of three related software libraries: C2R, \nADMB2R, and For2R (together, X2R). Each contains output routines to \nsimplify transfer of complicated data structures from model",
+      "thread_id": "thread-3f238936a36c",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
       "id": "msg-607beff6a52e",
       "message_id": "<4545B049.7060204@biomserv.univ-lyon1.fr>",
       "from_name": "Clément Calenge",
@@ -224,6 +432,38 @@
       "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecomposition of the Mahalanobis distances in habitat selection studies, \nnamed madifa().\n\n* The ENFA can now be performed using all kinds of variables (numeric, \nfactors, fuzzy, mixing of several types, etc.)\n\n* Several methods allowing the analysis of animals movements have been \nadded, including the first passage time (function fpt()), a \nrediscretization algorithm (redisltraj()), and an interactive graphic \nwindow for dynamic analysis (trajdyn())\n\n* A function for interactive exploration of maps of class \"kasc\" has \nbeen added (explore.kasc)\n\n* Scott Fortmann-Roe (Univ. Berkeley) programmed a better algorithm for \nNearest neighbour Convex hull home range estimation.\n\n* The function kasc2spixdf() have been updated\n\n\nHappy testing,\n\n\nCl?ment CALENGE\n-- \nCl?ment CALENGE\nLaboratoire de Biom?trie et Biologie ?volutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecompositio",
       "thread_id": "thread-607beff6a52e",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-607beff6a52e",
+      "message_id": "<4545B049.7060204@biomserv.univ-lyon1.fr>",
+      "from_name": "Clément Calenge",
+      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
+      "date": "2006-10-30T08:56:57+01:00",
+      "subject": "[R-pkgs] adehabitat version 1.5",
+      "subject_clean": "adehabitat version 1.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecomposition of the Mahalanobis distances in habitat selection studies, \nnamed madifa().\n\n* The ENFA can now be performed using all kinds of variables (numeric, \nfactors, fuzzy, mixing of several types, etc.)\n\n* Several methods allowing the analysis of animals movements have been \nadded, including the first passage time (function fpt()), a \nrediscretization algorithm (redisltraj()), and an interactive graphic \nwindow for dynamic analysis (trajdyn())\n\n* A function for interactive exploration of maps of class \"kasc\" has \nbeen added (explore.kasc)\n\n* Scott Fortmann-Roe (Univ. Berkeley) programmed a better algorithm for \nNearest neighbour Convex hull home range estimation.\n\n* The function kasc2spixdf() have been updated\n\n\nHappy testing,\n\n\nCl?ment CALENGE\n-- \nCl?ment CALENGE\nLaboratoire de Biom?trie et Biologie ?volutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France",
+      "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecompositio",
+      "thread_id": "thread-607beff6a52e",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-309e5c20c229",
+      "message_id": "<eb555e660610302010y5d39e4el4db81591ea13ae0@mail.gmail.com>",
+      "from_name": "Deepayan Sarkar",
+      "from_email_hash": "e2f6c1c06815045681b456968d2e109321e5194ba71ca82f1f6f312db1508e36",
+      "date": "2006-10-30T20:10:14-08:00",
+      "subject": "[R-pkgs] rcompletion: TAB completion for the R command line",
+      "subject_clean": "rcompletion: TAB completion for the R command line",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "CRAN now has a package called rcompletion that attempts to provide TAB\ncompletion for R using the GNU readline library, intended for R\nsessions run from a command line. From the package help page:\n\nDescription:\n\n    This package provides pseudo-intelligent TAB completion for a\n    readline enabled instance of R when it is run from a terminal (or\n    more specifically, an interface which uses readline to accept user\n    input). It has no effect on the various GUI interfaces to R,\n    including ESS and the standard Windows interface.\n\nThe package does not compile on a standard Windows box, and there is\nno Windows binary available for it. For more usage details, install\nand load the package, then type\n\npackage?rcompletion\n\nat the R prompt. The manual is also available online at\n\nhttp://cran.r-project.org/doc/packages/rcompletion.pdf\n\n\nNotes:\n\nTo install and use the package successfully, you need:\n\n(1) R compiled with readline, and run with readline enabled\n\n(2) the rcompletion package compiled with readline\n\nThe rcompletion package comes with a configure script that tries to\ndetect readline on the system and aborts if it is unsuccessful in\ndoing so. There have been no reports so far of false positives (i.e.\ndetecting readline when it shouldn't). However, there are known cases\nof false negatives, i.e. installation failing when it shouldn't. If\nthis happens to you, any information you can provide to help resolve\nthe problem would be appreciated.\n\nIf step (2) appears to be successful but (1) is not true (e.g. R is\nrun with --no-readline), nothing bad (but nothing good either) should\nhappen.\n\n-Deepayan",
+      "body_snippet": "CRAN now has a package called rcompletion that attempts to provide TAB\ncompletion for R using the GNU readline library, intended for R\nsessions run from a command line. From the package help page:\n\nDe",
+      "thread_id": "thread-309e5c20c229",
       "thread_depth": 0,
       "month": "2006-10"
     },
@@ -257,6 +497,17 @@
       "root_message_id": "msg-9b2ef7386a3a"
     },
     {
+      "id": "thread-9b2ef7386a3a",
+      "subject": "New package 'ade4TkGUI', a Tcl/Tk GUI for ade4",
+      "message_count": 1,
+      "participants": [
+        "Jean Thioulouse"
+      ],
+      "started": "2006-10-01T14:26:55+02:00",
+      "last_reply": "2006-10-01T14:26:55+02:00",
+      "root_message_id": "msg-9b2ef7386a3a"
+    },
+    {
       "id": "thread-bdf552e7aa82",
       "subject": "Stineman interpolation package",
       "message_count": 1,
@@ -266,6 +517,28 @@
       "started": "2006-10-02T02:25:29+00:00",
       "last_reply": "2006-10-02T02:25:29+00:00",
       "root_message_id": "msg-bdf552e7aa82"
+    },
+    {
+      "id": "thread-bdf552e7aa82",
+      "subject": "Stineman interpolation package",
+      "message_count": 1,
+      "participants": [
+        "halldor bjornsson"
+      ],
+      "started": "2006-10-02T02:25:29+00:00",
+      "last_reply": "2006-10-02T02:25:29+00:00",
+      "root_message_id": "msg-bdf552e7aa82"
+    },
+    {
+      "id": "thread-9516bfe8f0a6",
+      "subject": "New versions of Matrix and lme4 packages for R-2.4.0",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2006-10-03T09:56:00-05:00",
+      "last_reply": "2006-10-03T09:56:00-05:00",
+      "root_message_id": "msg-9516bfe8f0a6"
     },
     {
       "id": "thread-9516bfe8f0a6",
@@ -290,6 +563,17 @@
       "root_message_id": "msg-3c6cb54fbc50"
     },
     {
+      "id": "thread-3c6cb54fbc50",
+      "subject": "new package proptest",
+      "message_count": 1,
+      "participants": [
+        "David Kraus"
+      ],
+      "started": "2006-10-04T22:33:43+02:00",
+      "last_reply": "2006-10-04T22:33:43+02:00",
+      "root_message_id": "msg-3c6cb54fbc50"
+    },
+    {
       "id": "thread-22ac1ca6111e",
       "subject": "new version of mclust available",
       "message_count": 1,
@@ -299,6 +583,28 @@
       "started": "2006-10-06T11:04:27-07:00",
       "last_reply": "2006-10-06T11:04:27-07:00",
       "root_message_id": "msg-22ac1ca6111e"
+    },
+    {
+      "id": "thread-22ac1ca6111e",
+      "subject": "new version of mclust available",
+      "message_count": 1,
+      "participants": [
+        "Chris Fraley"
+      ],
+      "started": "2006-10-06T11:04:27-07:00",
+      "last_reply": "2006-10-06T11:04:27-07:00",
+      "root_message_id": "msg-22ac1ca6111e"
+    },
+    {
+      "id": "thread-68dfad5759b0",
+      "subject": "DBI, RMySQL, RSQLite updated",
+      "message_count": 1,
+      "participants": [
+        "Seth Falcon"
+      ],
+      "started": "2006-10-06T16:52:39-07:00",
+      "last_reply": "2006-10-06T16:52:39-07:00",
+      "root_message_id": "msg-68dfad5759b0"
     },
     {
       "id": "thread-68dfad5759b0",
@@ -323,6 +629,17 @@
       "root_message_id": "msg-8767b45df6ea"
     },
     {
+      "id": "thread-8767b45df6ea",
+      "subject": "new version IPSUR_0.1-1 now available on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Jay Kerns"
+      ],
+      "started": "2006-10-08T00:52:15-04:00",
+      "last_reply": "2006-10-08T00:52:15-04:00",
+      "root_message_id": "msg-8767b45df6ea"
+    },
+    {
       "id": "thread-09898611d266",
       "subject": "New package Ryacas",
       "message_count": 1,
@@ -332,6 +649,28 @@
       "started": "2006-10-15T22:43:06-04:00",
       "last_reply": "2006-10-15T22:43:06-04:00",
       "root_message_id": "msg-09898611d266"
+    },
+    {
+      "id": "thread-09898611d266",
+      "subject": "New package Ryacas",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2006-10-15T22:43:06-04:00",
+      "last_reply": "2006-10-15T22:43:06-04:00",
+      "root_message_id": "msg-09898611d266"
+    },
+    {
+      "id": "thread-03e78fc7aa07",
+      "subject": "New version of batchfiles 0.2-9",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2006-10-18T20:38:27-04:00",
+      "last_reply": "2006-10-18T20:38:27-04:00",
+      "root_message_id": "msg-03e78fc7aa07"
     },
     {
       "id": "thread-03e78fc7aa07",
@@ -356,6 +695,17 @@
       "root_message_id": "msg-105224304475"
     },
     {
+      "id": "thread-105224304475",
+      "subject": "New package CreditMetrics",
+      "message_count": 1,
+      "participants": [
+        "Andreas Wittmann"
+      ],
+      "started": "2006-10-19T19:29:35+02:00",
+      "last_reply": "2006-10-19T19:29:35+02:00",
+      "root_message_id": "msg-105224304475"
+    },
+    {
       "id": "thread-49df6417f4bf",
       "subject": "New version of 'portfolio' and new related packages",
       "message_count": 1,
@@ -365,6 +715,28 @@
       "started": "2006-10-23T16:40:46-04:00",
       "last_reply": "2006-10-23T16:40:46-04:00",
       "root_message_id": "msg-49df6417f4bf"
+    },
+    {
+      "id": "thread-49df6417f4bf",
+      "subject": "New version of 'portfolio' and new related packages",
+      "message_count": 1,
+      "participants": [
+        "Jeff Enos"
+      ],
+      "started": "2006-10-23T16:40:46-04:00",
+      "last_reply": "2006-10-23T16:40:46-04:00",
+      "root_message_id": "msg-49df6417f4bf"
+    },
+    {
+      "id": "thread-27c92a8de5c8",
+      "subject": "New version of `multcomp' on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Torsten Hothorn"
+      ],
+      "started": "2006-10-24T08:38:27+02:00",
+      "last_reply": "2006-10-24T08:38:27+02:00",
+      "root_message_id": "msg-27c92a8de5c8"
     },
     {
       "id": "thread-27c92a8de5c8",
@@ -389,6 +761,17 @@
       "root_message_id": "msg-3f238936a36c"
     },
     {
+      "id": "thread-3f238936a36c",
+      "subject": "X2R: R-compatible output routines from C, ADMB, Fortran to R",
+      "message_count": 1,
+      "participants": [
+        "Michael H. Prager"
+      ],
+      "started": "2006-10-24T10:35:38-04:00",
+      "last_reply": "2006-10-24T10:35:38-04:00",
+      "root_message_id": "msg-3f238936a36c"
+    },
+    {
       "id": "thread-607beff6a52e",
       "subject": "adehabitat version 1.5",
       "message_count": 1,
@@ -398,6 +781,28 @@
       "started": "2006-10-30T08:56:57+01:00",
       "last_reply": "2006-10-30T08:56:57+01:00",
       "root_message_id": "msg-607beff6a52e"
+    },
+    {
+      "id": "thread-607beff6a52e",
+      "subject": "adehabitat version 1.5",
+      "message_count": 1,
+      "participants": [
+        "Clément Calenge"
+      ],
+      "started": "2006-10-30T08:56:57+01:00",
+      "last_reply": "2006-10-30T08:56:57+01:00",
+      "root_message_id": "msg-607beff6a52e"
+    },
+    {
+      "id": "thread-309e5c20c229",
+      "subject": "rcompletion: TAB completion for the R command line",
+      "message_count": 1,
+      "participants": [
+        "Deepayan Sarkar"
+      ],
+      "started": "2006-10-30T20:10:14-08:00",
+      "last_reply": "2006-10-30T20:10:14-08:00",
+      "root_message_id": "msg-309e5c20c229"
     },
     {
       "id": "thread-309e5c20c229",

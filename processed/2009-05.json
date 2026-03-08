@@ -20,6 +20,51 @@
       "month": "2009-05"
     },
     {
+      "id": "msg-c48b6f3964d3",
+      "message_id": "<200905042045.00741.arne.henningsen@googlemail.com>",
+      "from_name": "Arne Henningsen",
+      "from_email_hash": "2836356914fd18c264f7a7e377f18bc40d00a56628d522555ff412ffc7d6eca4",
+      "date": "2009-05-04T13:45:00-05:00",
+      "subject": "[R-pkgs] frontier 0.99 is NOT backward compatible",
+      "subject_clean": "frontier 0.99 is NOT backward compatible",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear current (and future) users of the \"frontier\" package,\n\nWe are approaching the first stable version (1.0) of the frontier package, \nwhich provides tools for microeconomic Stochastic Frontier Analysis (SFA). \nI have uploaded a kind of beta release (version 0.99) of this package to CRAN. \nThe most important differences to version 0.9 affect the user interface. I \nhave modified the package so that it is (hopefully) simpler to use and the \nfunctions are more similar to other R functions. Unfortunately, these changes \nmake the new version NOT backward compatible. The most significant changes are \nreported below. A full ChangeLog is available in the log messages of the SVN \nrepository on R-Forge [1]. Feedback about this package is highly appreciated. \nPlease report any bugs, suggestions, feature requests, comments, and questions \nin the forums and trackers on R-Forge [1].\n\n[1] http://r-forge.r-project.org/projects/frontier/\n\nBest regards,\nArne\n\n\nCHANGES IN VERSION 0.99-0\n\n* corrected and considerably improved documentation of function \"fontier\"\n\n* changed order of arguments of function \"frontier\"\n\n* removed arguments \"crossSectionName\" and \"timePeriodName\" from function\n\"frontier\": in case of cross-section data, these variables (information) are\nnot needed, and in case of panel data, the information on the panel structure\nhas to be added to the data set by the function \"plm.data\" of the \"plm\" \npackage\n\n* argument \"modelType\" of function \"frontier\" must be \"ECF\" or \"EEF\" now\n\n* replaced argument \"funtionType\" of function \"frontier\"\nby argument \"ineffDecrease\"\n\n* renamed argument \"eta\" of function \"frontier\" as \"timeEffect\"\n\n* split argument \"mu\" of function \"frontier\" into \"truncNorm\"\nand \"zIntercept\"\n\n* increased default value of argument \"maxit\" of function \"frontier\" to 1000\n\n* renamed argument \"step1\" of function \"frontier\" as \"searchStep\"\n\n* renamed argument \"tol2\" of function \"frontier\" as \"searchTol\"\n\n* replaced argument \"indic\" of function \"frontier\" by \"searchScale\"\n\n* renamed argument \"gridno\" of function \"frontier\" as \"gridSize\"\n\n* renamed argument \"igrid2\" of function \"frontier\" as \"gridDouble\"\n\n* renamed argument \"iprint\" of function \"frontier\" as \"printIter\"\n\n* removed arguments \"qxNames\" and \"quadHalf\" from function \"frontier\",\nbecause quadratic or translog frontiers can be estimated with function\n\"frontierQuad\" now\n\n* added \"logLik\" method for objects of class \"frontier\"\n\n* added function \"frontierQuad\" for estimating quadratic and translog \nfrontiers\n\n* added function \"frontierTranslogRay\" for estimating stochastic ray\ntranslog frontier functions\n\n* added the generic function \"efficiencies\" and corresponding methods\nfor default objects and objects of class \"frontier\"\n\n* added \"elas\" method for objects of class \"frontierQuad\"\n\n* function frontier() and frontierQuad() return the (matched) call now\n\n* the matrix of efficiency estimates returned by \"frontier\" has row names\n(cross section units) and possibly column names (time period) now\n\n\n-- \nArne Henningsen\nhttp://www.arne-henningsen.name/",
+      "body_snippet": "Dear current (and future) users of the \"frontier\" package,\n\nWe are approaching the first stable version (1.0) of the frontier package, \nwhich provides tools for microeconomic Stochastic Frontier Analy",
+      "thread_id": "thread-c48b6f3964d3",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-042ac6388f72",
+      "message_id": "<49FF612A.10900@prodsyse.com>",
+      "from_name": "spencerg",
+      "from_email_hash": "6586e2ac1511c7ac857f5fde255a82a116c8b018001a5efabe6ff8460c83a853",
+      "date": "2009-05-04T14:42:02-07:00",
+      "subject": "[R-pkgs] RSiteSearch package?",
+      "subject_clean": "RSiteSearch package?",
+      "in_reply_to": "<49F17E32.2080002@dbmail.com>",
+      "references": [
+        "<49E8EA09.6000601@prodsyse.com>",
+        "<49EA2D85.5080902@prodsyse.com>",
+        "<49EA3658.6060307@dbmail.com>",
+        "<49EA4A85.20403@prodsyse.com>",
+        "<49EB5040.7080503@dbmail.com>",
+        "<49EB5DA3.80604@prodsyse.com>",
+        "<49EB60AC.5000403@dbmail.com>",
+        "<49EB94F5.6070500@prodsyse.com>",
+        "<49ECDFA7.9000300@dbmail.com>",
+        "<49F0FA54.7070104@prodsyse.com>",
+        "<c9ce82b00904231856p4d681a4sf7d53e7e6fa2e7be@mail.gmail.com>",
+        "<49F17E32.2080002@dbmail.com>"
+      ],
+      "body_plain": "A new \"RSiteSearch\" package is now available on CRAN.  This makes it \nmuch easier to find things among contributed packages (including all \nCRAN packages).  The capabilities are further\ndescribed in system.file('doc', 'RSiteSearch.pdf',\npackage='RSiteSearch').\"\n\n\n\t  Spencer Graves\n\t  Sundar Dorai-Raj\n\t  Romain Francois",
+      "body_snippet": "A new \"RSiteSearch\" package is now available on CRAN.  This makes it \nmuch easier to find things among contributed packages (including all \nCRAN packages).  The capabilities are further\ndescribed in s",
+      "thread_id": "thread-042ac6388f72",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
       "id": "msg-042ac6388f72",
       "message_id": "<49FF612A.10900@prodsyse.com>",
       "from_name": "spencerg",
@@ -65,6 +110,22 @@
       "month": "2009-05"
     },
     {
+      "id": "msg-ad511b6d6e77",
+      "message_id": "<0A5A4124-CF2B-4661-91D4-94A244CEC518@act.ulaval.ca>",
+      "from_name": "Vincent Goulet",
+      "from_email_hash": "e1091a7ef24172cab8ff1701d0e6c2c555c786b66d61ed102070f87705da8ffd",
+      "date": "2009-05-19T20:50:36-04:00",
+      "subject": "[R-pkgs] New version of actuar",
+      "subject_clean": "New version of actuar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nA new version of actuar is available since last Friday. This is mainly  \na bugfix release. From the NEWS file:\n\nVersion 1.0-2\n=============\n\nUSER-VISIBLE CHANGES\n\no m<foo>() and lev<foo>() now return Inf instead of NaN for infinite\nmoments. (Thanks to David Humke for the idea.)\n\nBUG FIXES\n\no Non-ascii characters in one R source file prevented compilation of\nthe package in a C locale (at least on OS X).\n\no For probability laws that have a strictly positive mode or a mode\nat zero depending on the value of one or more shape parameters,\nd<foo>(0, ...) did not handle correctly the case exactly at the\nboundary condition.\n\nactuar is a package offering additional actuarial science  \nfunctionality to R, mostly in the fields of loss distributions, risk  \ntheory (including ruin theory), simulation of compound hierarchical  \nmodels and credibility theory\n\nSee also: http://www.actuar-project.org.\n\n--\nVincent Goulet, Associate Professor\n?cole d'actuariat\nUniversit? Laval, Qu?bec\nvincent.goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
+      "body_snippet": "Dear useRs,\n\nA new version of actuar is available since last Friday. This is mainly  \na bugfix release. From the NEWS file:\n\nVersion 1.0-2\n=============\n\nUSER-VISIBLE CHANGES\n\no m<foo>() and lev<foo>(",
+      "thread_id": "thread-ad511b6d6e77",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
       "id": "msg-69de79168bb9",
       "message_id": "<68e086180905200347sb72adf4x7734169f64bc024f@mail.gmail.com>",
       "from_name": "Jon Clayden",
@@ -77,6 +138,38 @@
       "body_plain": "Dear all,\n\nThe \"tractor.base\" package has recently been added to CRAN. This\npackage provides functions to read, write, visualise and manipulate\nmagnetic resonance images. The standard Analyze, NIfTI and DICOM file\nformats are supported (read-only for DICOM), and all metadata is\nstored with the image data internally. The code can be used to\nvisualise image slices or maximum intensity projections; and to apply\nmasking, thresholding or other arbitrary functions to the image data.\nThe package is written in pure R.\n\nThis package stands alone, but it is also part of the larger TractoR\nproject for working with MR images and diffusion MR based\ntractography. Further information about TractoR can be found at\n<http://code.google.com/p/tractor>.\n\nRegards,\nJon\n\n--\nJonathan D. Clayden, Ph.D.\nResearch Fellow\nRadiology and Physics Unit\nUCL Institute of Child Health\n30 Guilford Street\nLONDON  WC1N 1EH\nUnited Kingdom\n\nt | +44 (0)20 7905 2708\nf | +44 (0)20 7905 2358\nw | www.homepages.ucl.ac.uk/~sejjjd2/",
       "body_snippet": "Dear all,\n\nThe \"tractor.base\" package has recently been added to CRAN. This\npackage provides functions to read, write, visualise and manipulate\nmagnetic resonance images. The standard Analyze, NIfTI a",
       "thread_id": "thread-69de79168bb9",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-69de79168bb9",
+      "message_id": "<68e086180905200347sb72adf4x7734169f64bc024f@mail.gmail.com>",
+      "from_name": "Jon Clayden",
+      "from_email_hash": "9e3ee1b5a6030e94938d115f850dab6d953f5e2e450ab08adbaabe910307aab4",
+      "date": "2009-05-20T11:47:05+01:00",
+      "subject": "[R-pkgs] New package for medical image manipulation: tractor.base",
+      "subject_clean": "New package for medical image manipulation: tractor.base",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nThe \"tractor.base\" package has recently been added to CRAN. This\npackage provides functions to read, write, visualise and manipulate\nmagnetic resonance images. The standard Analyze, NIfTI and DICOM file\nformats are supported (read-only for DICOM), and all metadata is\nstored with the image data internally. The code can be used to\nvisualise image slices or maximum intensity projections; and to apply\nmasking, thresholding or other arbitrary functions to the image data.\nThe package is written in pure R.\n\nThis package stands alone, but it is also part of the larger TractoR\nproject for working with MR images and diffusion MR based\ntractography. Further information about TractoR can be found at\n<http://code.google.com/p/tractor>.\n\nRegards,\nJon\n\n--\nJonathan D. Clayden, Ph.D.\nResearch Fellow\nRadiology and Physics Unit\nUCL Institute of Child Health\n30 Guilford Street\nLONDON  WC1N 1EH\nUnited Kingdom\n\nt | +44 (0)20 7905 2708\nf | +44 (0)20 7905 2358\nw | www.homepages.ucl.ac.uk/~sejjjd2/",
+      "body_snippet": "Dear all,\n\nThe \"tractor.base\" package has recently been added to CRAN. This\npackage provides functions to read, write, visualise and manipulate\nmagnetic resonance images. The standard Analyze, NIfTI a",
+      "thread_id": "thread-69de79168bb9",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-b584a4445134",
+      "message_id": "<EF4C0973-C4EE-4774-AD03-7F99D46D4D57@me.com>",
+      "from_name": "Marc Schwartz",
+      "from_email_hash": "1c0c26ffdc63f8bcd27163d1af93be76a2c5ad37789d7759468aa44285929e74",
+      "date": "2009-05-29T07:56:43-05:00",
+      "subject": "[R-pkgs] WriteXLS - New Version 1.7.1",
+      "subject_clean": "WriteXLS - New Version 1.7.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where downloads are available as well.\n\n\n\nPackage: WriteXLS\n\nVersion: 1.7.1\n\nDescription: Cross-platform perl based R function to create Excel (XLS)\nfiles from one or more data frames. Each data frame will be written to a\nseparate named worksheet in the Excel spreadsheet. The worksheet name  \nwill\nbe the name of the data frame it contains or can be specified by the  \nuser.\n\nAuthor(s): Marc Schwartz <marc_schwartz at me.com>\nMaintainer: Marc Schwartz <marc_schwartz at me.com>\n\nLicense: GPL (>=2)\n\n\nChanges since version 1.6.0:\n\n1. Added \\'verbose\\' argument to testPerl so that it can be used in an\nif() manner without console output\n\n2. Added \\'SheetNames\\' argument to WriteXLS to enable user specified\nworksheet names\n\n3. Added various checks to code for unique worksheet names, worksheet\nnames <= 31 chars, length(SheetNames) == length(x)\n\n4. Added check for invalid worksheet names for chars []:*?/\\\\\n\n5. Added argument \\'--SN\\' to WriteXLS.pl to support SheetNames from\nWriteXLS.R\n\n6. Modified WriteXLS.pl to handle SheetNames.txt file and related\nactivity\n\n7. Substantive changes to WriteXLS.Rd to describe new function arguments\nand additional validity checks.\n\n8. Fixed typos in e-mail in both help files.\n\n9. New \\'envir\\' argument to WriteXLS to enable WriteXLS to be wrapped\nin other functions and locate the data frames to be written.\n\n10. Reduced SystemRequirements in DESCRIPTION file to only those Perl\nmodules not included in the package.\n\n11. Added TRUE/FALSE invisible return values to WriteXLS to enable the\nfunction to be tested for success or failure. Note that error messages\nwill still be output.\n\n\nRegards to all,\n\nMarc Schwartz",
+      "body_snippet": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where download",
+      "thread_id": "thread-b584a4445134",
       "thread_depth": 0,
       "month": "2009-05"
     },
@@ -110,6 +203,28 @@
       "root_message_id": "msg-c48b6f3964d3"
     },
     {
+      "id": "thread-c48b6f3964d3",
+      "subject": "frontier 0.99 is NOT backward compatible",
+      "message_count": 1,
+      "participants": [
+        "Arne Henningsen"
+      ],
+      "started": "2009-05-04T13:45:00-05:00",
+      "last_reply": "2009-05-04T13:45:00-05:00",
+      "root_message_id": "msg-c48b6f3964d3"
+    },
+    {
+      "id": "thread-042ac6388f72",
+      "subject": "RSiteSearch package?",
+      "message_count": 1,
+      "participants": [
+        "spencerg"
+      ],
+      "started": "2009-05-04T14:42:02-07:00",
+      "last_reply": "2009-05-04T14:42:02-07:00",
+      "root_message_id": "msg-042ac6388f72"
+    },
+    {
       "id": "thread-042ac6388f72",
       "subject": "RSiteSearch package?",
       "message_count": 1,
@@ -132,6 +247,17 @@
       "root_message_id": "msg-ad511b6d6e77"
     },
     {
+      "id": "thread-ad511b6d6e77",
+      "subject": "New version of actuar",
+      "message_count": 1,
+      "participants": [
+        "Vincent Goulet"
+      ],
+      "started": "2009-05-19T20:50:36-04:00",
+      "last_reply": "2009-05-19T20:50:36-04:00",
+      "root_message_id": "msg-ad511b6d6e77"
+    },
+    {
       "id": "thread-69de79168bb9",
       "subject": "New package for medical image manipulation: tractor.base",
       "message_count": 1,
@@ -141,6 +267,28 @@
       "started": "2009-05-20T11:47:05+01:00",
       "last_reply": "2009-05-20T11:47:05+01:00",
       "root_message_id": "msg-69de79168bb9"
+    },
+    {
+      "id": "thread-69de79168bb9",
+      "subject": "New package for medical image manipulation: tractor.base",
+      "message_count": 1,
+      "participants": [
+        "Jon Clayden"
+      ],
+      "started": "2009-05-20T11:47:05+01:00",
+      "last_reply": "2009-05-20T11:47:05+01:00",
+      "root_message_id": "msg-69de79168bb9"
+    },
+    {
+      "id": "thread-b584a4445134",
+      "subject": "WriteXLS - New Version 1.7.1",
+      "message_count": 1,
+      "participants": [
+        "Marc Schwartz"
+      ],
+      "started": "2009-05-29T07:56:43-05:00",
+      "last_reply": "2009-05-29T07:56:43-05:00",
+      "root_message_id": "msg-b584a4445134"
     },
     {
       "id": "thread-b584a4445134",

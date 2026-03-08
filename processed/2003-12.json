@@ -20,6 +20,38 @@
       "month": "2003-12"
     },
     {
+      "id": "msg-5511c77525e5",
+      "message_id": "<Pine.OSF.4.58.0312041933390.334531@lisbon2.stat.washington.edu>",
+      "from_name": "Adrian Raftery",
+      "from_email_hash": "26d9fc86f2dce1a2fed06292ab13df250a48ccece617d38c187357828fdfa083",
+      "date": "2003-12-04T19:34:41-08:00",
+      "subject": "[R-pkgs] Robust Covariance Estimation (NNVE) Package Released",
+      "subject_clean": "Robust Covariance Estimation (NNVE) Package Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Robust Covariance Estimation Software via Nearest Neighbor Variance Estimation (NNVE)\n\nSoftware to carry out robust covariance estimation by Nearest Neighbor\nVariance Estimation (NNVE) [Wang and Raftery (2002, J. Amer. Statist. Ass.)]\nis now available for R and Splus. In the simulation studies published in JASA,\nthis had mean squared error at least 100 times smaller than that of\nother leading covariance estimators when the proportion of outliers was high.\n\ncov.nnve is now available in the covRobust contributed package at\nhttp://cran.r-project.org/src/contrib/PACKAGES.html#covRobust\n\nAn Splus version is also available on the S archive of Statlib\nhttp://lib.stat.cmu.edu/S/\nunder the function name cov.nnve\n\ncov.nnve is by Naisyin Wang and Adrian Raftery, with contributions by Chris Fraley.\n\nReferences:\n\nWang, N. and Raftery. A.E. (December 2002). Nearest-neighbor variance estimation (NNVE):\n Robust covariance estimation via nearest-neighbor cleaning (with Discussion).\n Journal of the American Statistical Association 97(460): 994-1019.\n\nWang, N. and Raftery. A.E. (2000). Nearest-neighbor variance estimation (NNVE):\n Robust covariance estimation via nearest-neighbor cleaning.\n Technical Report no. 368, Department of Statistics, University of Washington.\n Available at www.stat.washington.edu/www/research/reports\n\n\n -------------------------------------------------------------------\n Adrian E. Raftery\n Professor of Statistics and Sociology\n Director, Center for Statistics and the Social Sciences\n University of Washington, Box 354320\t Phone: (206) 543-4505\n Seattle, WA 98195-4320.\t\t FAX:   (206) 221-6873\n Web: www.stat.washington.edu/raftery;   www.csss.washington.edu\n -------------------------------------------------------------------",
+      "body_snippet": "Robust Covariance Estimation Software via Nearest Neighbor Variance Estimation (NNVE)\n\nSoftware to carry out robust covariance estimation by Nearest Neighbor\nVariance Estimation (NNVE) [Wang and Rafte",
+      "thread_id": "thread-5511c77525e5",
+      "thread_depth": 0,
+      "month": "2003-12"
+    },
+    {
+      "id": "msg-1c3ec4b626be",
+      "message_id": "<Pine.LNX.4.33L2.0312231605500.23875-100000@linaria.dst.unive.it>",
+      "from_name": "Claudio Agostinelli",
+      "from_email_hash": "8bab9e7af796ed09645aa0a01dae91664e073647b6ea5da7e5cc7276c6fde982",
+      "date": "2003-12-23T16:28:59+01:00",
+      "subject": "[R-pkgs] circular package",
+      "subject_clean": "circular package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All,\nUlric Lund and me are developing a new package called 'circular' that as\nsoon as possible will substitute 'CircStats' package.\nA pre-released is available at:\nhttp://www.dst.unive.it/~claudio/R/circular_0.1.tar.gz\nI kindly ask everybody is using CircStats to check this new package\nand send me comments, suggestions and bugs to claudio at unive.it and not to\nthe list.\nAs soon as the package will work fine we will ask the R core to make it\navailable on CRAN.\n\nBests,\nClaudio Agostinelli\n\n--------------------------------------------------------------\nClaudio Agostinelli\nDipartimento di Statistica\nUniversita' Ca' Foscari di Venezia\nCampiello San Agostin, 2347 San Polo\n30125 Venezia\nTel: 041 2347432, Fax: 041 710355\nemail: claudio at unive.it, www: www.dst.unive.it/~claudio\n--------------------------------------------------------------\nPer favore non mandatemi allegati in Word o PowerPoint.\nSi veda http://www.fsf.org/philosophy/no-word-attachments.html\n\nPlease avoid sending me Word or PowerPoint attachments.\nSee http://www.fsf.org/philosophy/no-word-attachments.html",
+      "body_snippet": "Dear All,\nUlric Lund and me are developing a new package called 'circular' that as\nsoon as possible will substitute 'CircStats' package.\nA pre-released is available at:\nhttp://www.dst.unive.it/~claudi",
+      "thread_id": "thread-1c3ec4b626be",
+      "thread_depth": 0,
+      "month": "2003-12"
+    },
+    {
       "id": "msg-1c3ec4b626be",
       "message_id": "<Pine.LNX.4.33L2.0312231605500.23875-100000@linaria.dst.unive.it>",
       "from_name": "Claudio Agostinelli",
@@ -47,6 +79,28 @@
       "started": "2003-12-04T19:34:41-08:00",
       "last_reply": "2003-12-04T19:34:41-08:00",
       "root_message_id": "msg-5511c77525e5"
+    },
+    {
+      "id": "thread-5511c77525e5",
+      "subject": "Robust Covariance Estimation (NNVE) Package Released",
+      "message_count": 1,
+      "participants": [
+        "Adrian Raftery"
+      ],
+      "started": "2003-12-04T19:34:41-08:00",
+      "last_reply": "2003-12-04T19:34:41-08:00",
+      "root_message_id": "msg-5511c77525e5"
+    },
+    {
+      "id": "thread-1c3ec4b626be",
+      "subject": "circular package",
+      "message_count": 1,
+      "participants": [
+        "Claudio Agostinelli"
+      ],
+      "started": "2003-12-23T16:28:59+01:00",
+      "last_reply": "2003-12-23T16:28:59+01:00",
+      "root_message_id": "msg-1c3ec4b626be"
     },
     {
       "id": "thread-1c3ec4b626be",

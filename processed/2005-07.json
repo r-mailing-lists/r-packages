@@ -20,6 +20,22 @@
       "month": "2005-07"
     },
     {
+      "id": "msg-6fa03be43e75",
+      "message_id": "<20050705003039.563e6e9c.david.meyer@wu-wien.ac.at>",
+      "from_name": "David Meyer",
+      "from_email_hash": "654c29c8b08ea0942273319b5f403abebb4f0324f6059c016cd0832242a33418",
+      "date": "2005-07-05T00:30:39+02:00",
+      "subject": "[R-pkgs] New version of \"vcd\" package",
+      "subject_clean": "New version of \"vcd\" package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\na completely revised version of the `vcd' (\"Visualizing Categorical\nData\") package is now\navailable from CRAN. This major revision includes the following\nenhancements:\n\n* grid-based:\n\nThe package is now entirely based on `grid', the new R graphics system,\nthus exploiting\nits unique functionalities. Powered by grid, it is now possible,\ne.g., to simply compose complex plots of available components, or to\nmodify plot elements \nafter they have been drawn.\n\n* new flexible framework for mosaic and association plots\n\nExtended mosaic and association plots are now integrated in a completely\nnew\ngeneric framework for the visualization of contingency tables (so-called\n`strucplots'). \nThe new design modularizes labeling, shading, spacing, and drawing of\nlegends, and\nalso the cells' content by the use of panel functions.\n\nPowerful labeling functions offer much more flexibility for adding\nlabels\n(e.g., no restrictions on the number of dimensions, flexible positioning\nof labels,\ncell labeling, etc.)\n\nThe framework in particular includes many predefinded functions for the\ncreation of\nresidual-based shadings.\n\nConvenience interfaces for various `flavors' of mosaic displays are\navailable, e.g., \ndoubledecker plots, or visualizations of \"loglm\" objects with\nresidual-based shading.\n\n* misc:\n\nIn addition, the package features several new data sets, and an\ninference\nfunction for (conditional) independence of margins in a contingency\ntable.\n\n\nHappy drawing!\n\nDavid, Achim, Kurt\n\n-- \nDr. David Meyer\nDepartment of Information Systems and Operations\n\nVienna University of Economics and Business Administration\nAugasse 2-6, A-1090 Wien, Austria, Europe\nFax: +43-1-313 36x746 \nTel: +43-1-313 36x4393\nHP:  http://wi.wu-wien.ac.at/~meyer/",
+      "body_snippet": "Dear useRs,\n\na completely revised version of the `vcd' (\"Visualizing Categorical\nData\") package is now\navailable from CRAN. This major revision includes the following\nenhancements:\n\n* grid-based:\n\nThe",
+      "thread_id": "thread-6fa03be43e75",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
       "id": "msg-6c3b7838ca5d",
       "message_id": "<971536df05070505571023a56f@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
@@ -32,6 +48,38 @@
       "body_plain": "batchfiles, available on CRAN at\n\n   http://cran.r-project.org/contrib/extra/batchfiles/\n\nconsists of a set of Windows XP batch files (they may run on \nNT/2000 too but that has not been tested) which facilitate:\n\n1. starting R, automatically locating it in the registry\n   each time they are run, so that when a new version of \n   R is installed its not necessary to update them all \n   - Rcmd.bat, Rgui.bat, R.bat\n\n2. copying configuration files to new versions of R when R\n   is updated and optionally updating MiKTeX to be consistent \n   with a new R version.  After a one-time configuration just \n   run the batch file after each new download and install of R \n   - Rrefresh.bat\n\n3. use of .Rbuildignore when checking and installing \n   R packages automatically running a build first and then \n   'Rcmd CHECK' or 'Rcmd INSTALL' in one step.  Also sets R_LIBS\n   to .../R/library if R_LIBS has not already been set.\n   - makepkgs.bat\n\n4. locating various R tools that are used in building R packages\n   on your system by querying the registry.\n   - Rfind.bat\n\nComments welcome.\n\nGabor Grothendieck",
       "body_snippet": "batchfiles, available on CRAN at\n\n   http://cran.r-project.org/contrib/extra/batchfiles/\n\nconsists of a set of Windows XP batch files (they may run on \nNT/2000 too but that has not been tested) which ",
       "thread_id": "thread-6c3b7838ca5d",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
+      "id": "msg-6c3b7838ca5d",
+      "message_id": "<971536df05070505571023a56f@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2005-07-05T08:57:26-04:00",
+      "subject": "[R-pkgs] batchfiles for Windows",
+      "subject_clean": "batchfiles for Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "batchfiles, available on CRAN at\n\n   http://cran.r-project.org/contrib/extra/batchfiles/\n\nconsists of a set of Windows XP batch files (they may run on \nNT/2000 too but that has not been tested) which facilitate:\n\n1. starting R, automatically locating it in the registry\n   each time they are run, so that when a new version of \n   R is installed its not necessary to update them all \n   - Rcmd.bat, Rgui.bat, R.bat\n\n2. copying configuration files to new versions of R when R\n   is updated and optionally updating MiKTeX to be consistent \n   with a new R version.  After a one-time configuration just \n   run the batch file after each new download and install of R \n   - Rrefresh.bat\n\n3. use of .Rbuildignore when checking and installing \n   R packages automatically running a build first and then \n   'Rcmd CHECK' or 'Rcmd INSTALL' in one step.  Also sets R_LIBS\n   to .../R/library if R_LIBS has not already been set.\n   - makepkgs.bat\n\n4. locating various R tools that are used in building R packages\n   on your system by querying the registry.\n   - Rfind.bat\n\nComments welcome.\n\nGabor Grothendieck",
+      "body_snippet": "batchfiles, available on CRAN at\n\n   http://cran.r-project.org/contrib/extra/batchfiles/\n\nconsists of a set of Windows XP batch files (they may run on \nNT/2000 too but that has not been tested) which ",
+      "thread_id": "thread-6c3b7838ca5d",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
+      "id": "msg-7e20eaeaec53",
+      "message_id": "<D1141C2F-8EE5-463D-B729-E946F0361C64@soc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2005-07-15T10:01:24+01:00",
+      "subject": "[R-pkgs] new package: elliptic",
+      "subject_clean": "new package: elliptic",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi\n\nI recently uploaded package \"elliptic\" to CRAN.  From the DESCRIPTION  \nfile, it is:\n\n\nA suite of elliptic and related functions including\n                Weierstrass and Jacobi forms.  Also includes various\n                tools for manipulating and visualizing complex\n                functions.\n\n\n\nenjoy\n\nrksh\n\n--\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Hi\n\nI recently uploaded package \"elliptic\" to CRAN.  From the DESCRIPTION  \nfile, it is:\n\n\nA suite of elliptic and related functions including\n                Weierstrass and Jacobi forms.  Also inclu",
+      "thread_id": "thread-7e20eaeaec53",
       "thread_depth": 0,
       "month": "2005-07"
     },
@@ -68,6 +116,22 @@
       "month": "2005-07"
     },
     {
+      "id": "msg-e2e8bd834ccd",
+      "message_id": "<1122130908.8703.6.camel@localhost.localdomain>",
+      "from_name": "Antonio, Fabio Di Narzo",
+      "from_email_hash": "d2543602a7e9eac417ed20eca2673d0a1d1c401c4b0d27ff6f0f644f508f348c",
+      "date": "2005-07-23T17:01:48+02:00",
+      "subject": "[R-pkgs] tseriesChaos ver. 0.1",
+      "subject_clean": "tseriesChaos ver. 0.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI have uploaded to CRAN a new package: tseriesChaos.\nThis is an early version (0.1) with basic tools for the explorative\nanalysis of nonlinear time series motivated by chaos theory. Until now,\nthe package is largely inspired by the TISEAN project (by Rainer Hegger,\nHolger Kantz and Thomas Schreiber:\nhttp://www.mpipks-dresden.mpg.de/~tisean/ ).\n\nThis version includes:\n- Method of false nearest neighbours for the choice of the embedding\ndimension.\n- Tools for the estimation of the correlation dimension.\n- Kantz algorithm for the estimation of the largest Lyapunov exponent.\n- (naif) mutual information index estimation.\n- Space-time separation plot.\n- Recurrence plot.\n- Simulation of noise-free continuous dynamic systems.\n\nAt the present time, algorithms are not too much optimized for speed, we\nare working on optimizing the codes.\nFuture versions will (hopefully) include also code inspired from the\nbook of Chan and Tong (2001) (Chaos: A Statistical perspective) by\nSpringer as well as other contributions.\nChecking was mainly done by comparing results with those available in\nliterature.\nAny kind of feedback/help would be greatly appreciated.\n\nAntonio, Fabio Di Narzo.",
+      "body_snippet": "Dear all,\n\nI have uploaded to CRAN a new package: tseriesChaos.\nThis is an early version (0.1) with basic tools for the explorative\nanalysis of nonlinear time series motivated by chaos theory. Until n",
+      "thread_id": "thread-e2e8bd834ccd",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
       "id": "msg-4cc900de8cd9",
       "message_id": "<FC4627EC695CD71180280003477108C50203CEEC@exchange.epripeac.com>",
       "from_name": "Short, Tom",
@@ -80,6 +144,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment.pl>",
       "thread_id": "thread-4cc900de8cd9",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
+      "id": "msg-4cc900de8cd9",
+      "message_id": "<FC4627EC695CD71180280003477108C50203CEEC@exchange.epripeac.com>",
+      "from_name": "Short, Tom",
+      "from_email_hash": "13ac9336c7f649b31c35c383c7c9db3b9e4a0b687d6ad34af06f915b1a3e8712",
+      "date": "2005-07-25T10:11:07-04:00",
+      "subject": "[R-pkgs] New version of Rpad",
+      "subject_clean": "New version of Rpad",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment-0001.pl>",
+      "thread_id": "thread-4cc900de8cd9",
+      "thread_depth": 0,
+      "month": "2005-07"
+    },
+    {
+      "id": "msg-0711b25955b1",
+      "message_id": "<40e66e0b05072806227ee2381d@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "72708f6f9e0ad5f9c626ca800c6c991618a61d5c470f4a0ef15080934ff9bb60",
+      "date": "2005-07-28T08:22:07-05:00",
+      "subject": "[R-pkgs] New versions of Matrix and lme4 packages",
+      "subject_clean": "New versions of Matrix and lme4 packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Version 0.98-1 of the lme4 package and of the Matrix package are now\non CRAN.  This version provides the adaptive Gauss-Hermite quadrature\n(AGQ) method for fitting generalized linear mixed models.\n\nA new generic function mcmcsamp has been added with a method for\nobjects in the \"lmer\" (linear mixed model fit or generalized linear\nmixed-effects model fit) class.  This function provides a Markov Chain\nMonte Carlo sample from the posterior distribution of the model\nparameters.  The returned object has (S3) class \"mcmc\" and the\ndiagnostic functions in the coda package can be used on it.",
+      "body_snippet": "Version 0.98-1 of the lme4 package and of the Matrix package are now\non CRAN.  This version provides the adaptive Gauss-Hermite quadrature\n(AGQ) method for fitting generalized linear mixed models.\n\nA ",
+      "thread_id": "thread-0711b25955b1",
       "thread_depth": 0,
       "month": "2005-07"
     },
@@ -113,6 +209,17 @@
       "root_message_id": "msg-6fa03be43e75"
     },
     {
+      "id": "thread-6fa03be43e75",
+      "subject": "New version of \"vcd\" package",
+      "message_count": 1,
+      "participants": [
+        "David Meyer"
+      ],
+      "started": "2005-07-05T00:30:39+02:00",
+      "last_reply": "2005-07-05T00:30:39+02:00",
+      "root_message_id": "msg-6fa03be43e75"
+    },
+    {
       "id": "thread-6c3b7838ca5d",
       "subject": "batchfiles for Windows",
       "message_count": 1,
@@ -122,6 +229,28 @@
       "started": "2005-07-05T08:57:26-04:00",
       "last_reply": "2005-07-05T08:57:26-04:00",
       "root_message_id": "msg-6c3b7838ca5d"
+    },
+    {
+      "id": "thread-6c3b7838ca5d",
+      "subject": "batchfiles for Windows",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2005-07-05T08:57:26-04:00",
+      "last_reply": "2005-07-05T08:57:26-04:00",
+      "root_message_id": "msg-6c3b7838ca5d"
+    },
+    {
+      "id": "thread-7e20eaeaec53",
+      "subject": "new package: elliptic",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2005-07-15T10:01:24+01:00",
+      "last_reply": "2005-07-15T10:01:24+01:00",
+      "root_message_id": "msg-7e20eaeaec53"
     },
     {
       "id": "thread-7e20eaeaec53",
@@ -146,6 +275,17 @@
       "root_message_id": "msg-e2e8bd834ccd"
     },
     {
+      "id": "thread-e2e8bd834ccd",
+      "subject": "tseriesChaos ver. 0.1",
+      "message_count": 1,
+      "participants": [
+        "Antonio, Fabio Di Narzo"
+      ],
+      "started": "2005-07-23T17:01:48+02:00",
+      "last_reply": "2005-07-23T17:01:48+02:00",
+      "root_message_id": "msg-e2e8bd834ccd"
+    },
+    {
       "id": "thread-4cc900de8cd9",
       "subject": "New version of Rpad",
       "message_count": 1,
@@ -155,6 +295,28 @@
       "started": "2005-07-25T10:11:07-04:00",
       "last_reply": "2005-07-25T10:11:07-04:00",
       "root_message_id": "msg-4cc900de8cd9"
+    },
+    {
+      "id": "thread-4cc900de8cd9",
+      "subject": "New version of Rpad",
+      "message_count": 1,
+      "participants": [
+        "Short, Tom"
+      ],
+      "started": "2005-07-25T10:11:07-04:00",
+      "last_reply": "2005-07-25T10:11:07-04:00",
+      "root_message_id": "msg-4cc900de8cd9"
+    },
+    {
+      "id": "thread-0711b25955b1",
+      "subject": "New versions of Matrix and lme4 packages",
+      "message_count": 1,
+      "participants": [
+        "Douglas Bates"
+      ],
+      "started": "2005-07-28T08:22:07-05:00",
+      "last_reply": "2005-07-28T08:22:07-05:00",
+      "root_message_id": "msg-0711b25955b1"
     },
     {
       "id": "thread-0711b25955b1",

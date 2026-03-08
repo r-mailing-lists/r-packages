@@ -20,6 +20,38 @@
       "month": "2008-05"
     },
     {
+      "id": "msg-e080998acc5f",
+      "message_id": "<f8e6ff050805021157h7aaa3281q66b950000599e612@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-05-02T13:57:33-05:00",
+      "subject": "[R-pkgs] New package: profr 0.1 - an alternative display for profiling information",
+      "subject_clean": "New package: profr 0.1 - an alternative display for profiling information",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "profr 0.1 ----------------------------\n\nprofr provides an alternative data structure and display for profiling\ndata.  It still uses Rprof() to collect the data, but outputs a\ndata.frame which should be easier to manipulate.  It also implements a\nnovel visualisation which allows you to see the length of each call,\nas well as the context in which it was called.\n\nTo get started, try:\n\ninstall.packages(\"profr\")\nlibrary(profr)\np <- profr(my.slow.function())\nplot(p)\n\nTwo built in examples are:\n\nplot(nesting_prof)\nplot(reshape_prof)\n\n(and the second has helped me to considerably speed up (5-20x) the\ndevelopment version of reshape)\n\nRegards,\n\nHadley\n\nPS.  If you'd like to contribute to the development of profr, the\nsource code is available from http://github.com/hadley/profr.\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "profr 0.1 ----------------------------\n\nprofr provides an alternative data structure and display for profiling\ndata.  It still uses Rprof() to collect the data, but outputs a\ndata.frame which should b",
+      "thread_id": "thread-e080998acc5f",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
+      "id": "msg-6076f57ff9d2",
+      "message_id": "<971536df0805050414v4b59aafdqd7342a4e13e47593@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2008-05-05T07:14:10-04:00",
+      "subject": "[R-pkgs] batchfiles 0-4.1",
+      "subject_clean": "batchfiles 0-4.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "batchfiles 0.4-1 consists of a set of Windows Vista .bat and\nother scripts used as front ends to R CMD ... and for other\npurposes.\n\nWhereas Version 0.4-0 of batchfiles eliminated the need to\nset any paths when running R, version 0.4-1 now eliminates\nthe need to set any paths when building and installing R\npackages.  It does this by using the registry to find R and\nrtools and uses a heuristic to find MiKTeX (since MiKTeX\ndoes not have a reliable registry key) and temporarily sets\nthe path to include rtools and MiKTeX.\n\nVersion 0.4-1 also includes an rtools.bat utility which will\nset the paths for that session that would have otherwise had\nto be set in case you want to use rtools and MiKTeX with\nother programs -- this is not needed if you only want to use\nR or if you only want to build and install R packages.\n\nAlso there is a new el utility (el.js) which runs the\ncommand given as its argument in elevated mode.  e.g.\n    el cmd\nspawns a cmd session which is elevated.\n\nThe scripts Rcmd.bat, R.bat, Rterm.bat, Rscript.bat,\n#Rscript.bat, Rgui.bat, RguiStart.bat, Rjgr.bat are actually\nall the same script which query the name by which it was\ncalled to determine the appropriate action.  These scripts\nare each self containd single file scripts which do not\ndepend on each other or on other software.  To install any\nof them just copy it to any place on your PATH and it can be\nimmediately used.  Uninstall by deleting it.  Atlhough they\nquery the registry they do not set the registry (except for\nRversions.hta which calls RSetReg.exe, a program that comes\nbundled with R, that in turn sets the registry.)\n\nVersion 0.4-0 of these utilities and later have only been\ntested on Vista.  Version 0.3-2 and earlier have only been\ntested on XP.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com",
+      "body_snippet": "batchfiles 0.4-1 consists of a set of Windows Vista .bat and\nother scripts used as front ends to R CMD ... and for other\npurposes.\n\nWhereas Version 0.4-0 of batchfiles eliminated the need to\nset any p",
+      "thread_id": "thread-6076f57ff9d2",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
       "id": "msg-6076f57ff9d2",
       "message_id": "<971536df0805050414v4b59aafdqd7342a4e13e47593@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
@@ -48,6 +80,38 @@
       "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080509/8a51d676/attachment.pl>",
       "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080509/8a51d676/attachment.pl>",
       "thread_id": "thread-0a7ec7a57c8c",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
+      "id": "msg-0a7ec7a57c8c",
+      "message_id": "<BAY103-W15C63339C51BF9DCA71A149DD30@phx.gbl>",
+      "from_name": "Karine Berthier",
+      "from_email_hash": "5d07f0e5de8f5c26863eb4c40f544c4a0c7a1027d11606f79d02be301957df41",
+      "date": "2008-05-09T07:03:01Z",
+      "subject": "[R-pkgs] ncf package version 1.0-4",
+      "subject_clean": "ncf package version 1.0-4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080509/8a51d676/attachment-0001.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080509/8a51d676/attachment-0001.pl>",
+      "thread_id": "thread-0a7ec7a57c8c",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
+      "id": "msg-a7d1ad7eb771",
+      "message_id": "<Pine.LNX.4.64.0805100957400.6755@paninaro.stat-math.wu-wien.ac.at>",
+      "from_name": "Achim Zeileis",
+      "from_email_hash": "5d0666ce9b4ba3eb5d16d8dda715c40e6659f1707b7e9d0727ac8d70b93c8461",
+      "date": "2008-05-10T09:58:37+02:00",
+      "subject": "[R-pkgs] AER: Applied Econometrics with R",
+      "subject_clean": "AER: Applied Econometrics with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The package AER accompanying the forthcoming book \"Applied\nEconometrics with R\" by Christian Kleiber and me in the\nSpringer useR! series has (finally!) been released to CRAN:\n   http://CRAN.R-project.org/package=AER\n\nIt contains some new R functionality\n   o tobit regression convenience interface (to \"survival\")\n   o instrumental variables regression (two-stage least squares)\n   o (over-) dispersion test (via auxiliary regression)\nbut the main feature are ~100 data sets taken from popular\neconometrics text books and the data archives of JAE (Journal\nof Applied Econometrics) and JBES (Journal of Business and\nEconomic Statistics). Extensive examples are provided with\nthe data sets, reproducing many of the analyses in the\nbooks/papers they were taken from. In particular, all data\nsets from the following books with many of the associated\nexamples are provided:\n   o \"Econometrics\" (Baltagi, 2002)\n   o \"Econometric Analysis\" (Greene, 2003)\n   o \"Introduction to Econometrics\" (Stock & Watson, 2007)\n\nUntil the book becomes available in autumn 2008, we will add\nvignettes to the package reproducing the examples from our\nbook.\n\nBest wishes,\nZ",
+      "body_snippet": "The package AER accompanying the forthcoming book \"Applied\nEconometrics with R\" by Christian Kleiber and me in the\nSpringer useR! series has (finally!) been released to CRAN:\n   http://CRAN.R-project.",
+      "thread_id": "thread-a7d1ad7eb771",
       "thread_depth": 0,
       "month": "2008-05"
     },
@@ -84,6 +148,22 @@
       "month": "2008-05"
     },
     {
+      "id": "msg-dd1c2a82e210",
+      "message_id": "<48317FDA.2080506@wias-berlin.de>",
+      "from_name": "Karsten Tabelow",
+      "from_email_hash": "84adb3df4c8958dead8f093b9568c1e1f60cbf1b6c6793ad1288f16448ea66ad",
+      "date": "2008-05-19T15:25:46+02:00",
+      "subject": "[R-pkgs] New package dti",
+      "subject_clean": "New package dti",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\ndti is a new contributed package for R, that implements functions for\nsmoothing Diffusion-weighted MR data with structural adaptive smoothing\nmethods.\n\nVersion 0.5-2 contains functions for smoothing DW data in the context of\nthe Diffusion Tensor Model and for visualization of Diffusion Tensor\nData and anisotropy maps derived thereof. The tensor estimation can be\ndone using a linearized model, or using a non-linear model. A correction\nfor Rician bias can be included.\n\n\n\n- --\nKarsten Tabelow, Dr.\nWIAS Berlin\nMohrenstrasse 39, 10117 Berlin, Germany\n\nemail: tabelow at wias-berlin.de\nphone: +49-30-20372 564\nfax  : +49-30-2044975\nurl  : http://www.wias-berlin.de/people/tabelow/\nurl  : http://www.wias-berlin.de/project-areas/stat/a3\nMember of Matheon (www.matheon.de)\n\nD08D1822\n8EC1 479A ECD6 18C1 5DD7 E63E 32F1 50A9 D08D 1822\n\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.2 (GNU/Linux)\nComment: Using GnuPG with SUSE - http://enigmail.mozdev.org\n\niD8DBQFIMX/aMvFQqdCNGCIRAt3gAKCCdv9f8h030EAFpzIWL8npiJCq/wCfXWYK\nIufrFV0vmO7Dcz/Rr2QzFGs=\n=HWa8\n-----END PGP SIGNATURE-----",
+      "body_snippet": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\ndti is a new contributed package for R, that implements functions for\nsmoothing Diffusion-weighted MR data with structural adaptive smoothing\nmethods.\n\nV",
+      "thread_id": "thread-dd1c2a82e210",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
       "id": "msg-964bc8e3b0db",
       "message_id": "<48317FDD.7030604@wias-berlin.de>",
       "from_name": "Karsten Tabelow",
@@ -96,6 +176,38 @@
       "body_plain": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nfmri is a contributed package for R, that implements functions for\nanalyzing single-subject fmri data with structural adaptive smoothing\nmethods.\n\nNew in version 1.2-6\n- --------------------\n\n~  - new function cutroi()\n~  - plot.fmridata() is now able to produce anatomical overlay for pvalue\n~    data for AFNI, and NIFTI data\n~  - read.AFNI() should be able to interpret filenames more flexible:\n~    with, without extensions, with dots in name.\n\n\n\n\n\n- --\nKarsten Tabelow, Dr.\nWIAS Berlin\nMohrenstrasse 39, 10117 Berlin, Germany\n\nemail: tabelow at wias-berlin.de\nphone: +49-30-20372 564\nfax  : +49-30-2044975\nurl  : http://www.wias-berlin.de/people/tabelow/\nurl  : http://www.wias-berlin.de/project-areas/stat/a3\nMember of Matheon (www.matheon.de)\n\nD08D1822\n8EC1 479A ECD6 18C1 5DD7 E63E 32F1 50A9 D08D 1822\n\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.2 (GNU/Linux)\nComment: Using GnuPG with SUSE - http://enigmail.mozdev.org\n\niD8DBQFIMX/cMvFQqdCNGCIRAgfoAJ4hxwFLSTup4Zf8NYriVvzKiKbErwCfSIXI\nVt0ggjbb7GEfCMJVhzkWeRQ=\n=IHty\n-----END PGP SIGNATURE-----",
       "body_snippet": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nfmri is a contributed package for R, that implements functions for\nanalyzing single-subject fmri data with structural adaptive smoothing\nmethods.\n\nNew in",
       "thread_id": "thread-964bc8e3b0db",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
+      "id": "msg-964bc8e3b0db",
+      "message_id": "<48317FDD.7030604@wias-berlin.de>",
+      "from_name": "Karsten Tabelow",
+      "from_email_hash": "84adb3df4c8958dead8f093b9568c1e1f60cbf1b6c6793ad1288f16448ea66ad",
+      "date": "2008-05-19T15:25:49+02:00",
+      "subject": "[R-pkgs] Updated package fmri",
+      "subject_clean": "Updated package fmri",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nfmri is a contributed package for R, that implements functions for\nanalyzing single-subject fmri data with structural adaptive smoothing\nmethods.\n\nNew in version 1.2-6\n- --------------------\n\n~  - new function cutroi()\n~  - plot.fmridata() is now able to produce anatomical overlay for pvalue\n~    data for AFNI, and NIFTI data\n~  - read.AFNI() should be able to interpret filenames more flexible:\n~    with, without extensions, with dots in name.\n\n\n\n\n\n- --\nKarsten Tabelow, Dr.\nWIAS Berlin\nMohrenstrasse 39, 10117 Berlin, Germany\n\nemail: tabelow at wias-berlin.de\nphone: +49-30-20372 564\nfax  : +49-30-2044975\nurl  : http://www.wias-berlin.de/people/tabelow/\nurl  : http://www.wias-berlin.de/project-areas/stat/a3\nMember of Matheon (www.matheon.de)\n\nD08D1822\n8EC1 479A ECD6 18C1 5DD7 E63E 32F1 50A9 D08D 1822\n\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.2 (GNU/Linux)\nComment: Using GnuPG with SUSE - http://enigmail.mozdev.org\n\niD8DBQFIMX/cMvFQqdCNGCIRAgfoAJ4hxwFLSTup4Zf8NYriVvzKiKbErwCfSIXI\nVt0ggjbb7GEfCMJVhzkWeRQ=\n=IHty\n-----END PGP SIGNATURE-----",
+      "body_snippet": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nfmri is a contributed package for R, that implements functions for\nanalyzing single-subject fmri data with structural adaptive smoothing\nmethods.\n\nNew in",
+      "thread_id": "thread-964bc8e3b0db",
+      "thread_depth": 0,
+      "month": "2008-05"
+    },
+    {
+      "id": "msg-ea9896ccc46e",
+      "message_id": "<48317FDF.8020809@wias-berlin.de>",
+      "from_name": "Karsten Tabelow",
+      "from_email_hash": "84adb3df4c8958dead8f093b9568c1e1f60cbf1b6c6793ad1288f16448ea66ad",
+      "date": "2008-05-19T15:25:51+02:00",
+      "subject": "[R-pkgs] Updated package adimpro",
+      "subject_clean": "Updated package adimpro",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nThis package implements tools for manipulationg digital images and the\nPropagation Separation approach for smoothing digital images.\n\nVersion 0.6.1 is a major update with many new features:\n\nInput/Output:\n\n- - we now keep exif information as comment of an image\n~  this information is evaluated to recover the original adimpro-object\n~  used to produce the image file, see demo(io).\n~  This may be changed to using rpm-profiles.\n- - new function write.raw provides a possibility to store\n~  RAW sensor data as a greyscale png-image\n~  these images are recognized by read.raw, see demo(raw).\n- - write.image now keeps color space by default\n- - read.image/write.image now also handles xyz, yuv, yiq and\n~  hsi color spaces correctly\n- - the location of ImageMagick is now automatically determined\n~  using function Sys.which and set as an environment variable\n~  ImageMagick when the package is loaded (This requires R >=2.6.0).\n~  The argument convert.path in read.image and write.image is no\n~  longer needed and has been removed.\n- - make.image no longer has an argument gamma\n\nAdaptive smoothing:\n\n- - functions awsimage, awspimage:\n\n- - value of ladjust      1.0 -- 1.25, different lseq\n- - new arguments plateau=NULL, homogen=TRUE, earlystop=TRUE\n- - new varmodel \"Quadratic\"\n- - location kernel with choice \"Plateau\"\n- - statistical kernel changed to Plateau with spmin=0.25\n- - FORTRAN subroutine awsimg has fewer parameters\n- - lseq extended (if it is to short) by last element rather than by 1\n- - FORTRAN subroutine awsvimage has differing parameters\n- - FORTRAN subroutine mawsimg has fewer parameters\n- - FORTRAN subroutine awspimg has fewer parameters\n- - handles lower/uppercase for some arguments\n\n- - new function awsprop for testing propagation condition\n\n- - new function awsaniso for anisotropic structural adaptive smoothing\n\nColor space conversions:\n\n- - increased and changed functionality of adjust.image\n- - rgb2xxx  also accepts colorspaces xyz , yuv and yiq\n- - xxx2rgb - functions now allow to specify RGB-color space (default\n~  \"Adobe\")\n- - new function cam2rgb for conversion of camera color spaces to RGB\n- - new funcions rgb2xyzmat and xyz2rgbmat\n- - function gamma.correction  now uses gammatype instead of arguments ga\n~  and bp\n- - new function for inverse gamma correction\n- - new function whitepoint, wpofT, changewhitepoint  for white point\n~  definitions and manipulation\n- - whitebalance no uses whitepoint and color temperature\n- - adjust.image  now allows to set gammatype, cspace, whitep, color\n~  temperature blackpoint and exposure\n- - new function demosaic.raw to convert RAW sensor data to RGB\n\n\nImage manipulations and diagnostics:\n\n- - function edges has a new argument abs\n- - functions shrink.image, rotate.image, clip.image also accept \"RAW\"\n- - rotate.image has new argument compress\n- - new function extract.info for extracting EXIF-Information\n\nBug fixes: e.g. in make.image, invgamma.correction (internal),\n~           read.ppm(internal), read.pgm(internal),\n\nDemos:\n\nWe added an extensive set of demos.\ndemo(adimpro) just runs all demos sequentially. Especially\ndemo(awspimage) (local polynomial smoothing) is time consuming.\n\n\n\n\n- --\nKarsten Tabelow, Dr.\nWIAS Berlin\nMohrenstrasse 39, 10117 Berlin, Germany\n\nemail: tabelow at wias-berlin.de\nphone: +49-30-20372 564\nfax  : +49-30-2044975\nurl  : http://www.wias-berlin.de/people/tabelow/\nurl  : http://www.wias-berlin.de/project-areas/stat/a3\nMember of Matheon (www.matheon.de)\n\nD08D1822\n8EC1 479A ECD6 18C1 5DD7 E63E 32F1 50A9 D08D 1822\n\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.2 (GNU/Linux)\nComment: Using GnuPG with SUSE - http://enigmail.mozdev.org\n\niD8DBQFIMX/fMvFQqdCNGCIRAjQ1AJ9BkbKNO6hQnDj2p466KxWRGOQ9EgCZAUfX\ndjO1KxHt9uogG9fNDSLtKUI=\n=pbts\n-----END PGP SIGNATURE-----",
+      "body_snippet": "-----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nThis package implements tools for manipulationg digital images and the\nPropagation Separation approach for smoothing digital images.\n\nVersion 0.6.1 is a ",
+      "thread_id": "thread-ea9896ccc46e",
       "thread_depth": 0,
       "month": "2008-05"
     },
@@ -129,6 +241,17 @@
       "root_message_id": "msg-e080998acc5f"
     },
     {
+      "id": "thread-e080998acc5f",
+      "subject": "New package: profr 0.1 - an alternative display for profiling information",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-05-02T13:57:33-05:00",
+      "last_reply": "2008-05-02T13:57:33-05:00",
+      "root_message_id": "msg-e080998acc5f"
+    },
+    {
       "id": "thread-6076f57ff9d2",
       "subject": "batchfiles 0-4.1",
       "message_count": 1,
@@ -138,6 +261,28 @@
       "started": "2008-05-05T07:14:10-04:00",
       "last_reply": "2008-05-05T07:14:10-04:00",
       "root_message_id": "msg-6076f57ff9d2"
+    },
+    {
+      "id": "thread-6076f57ff9d2",
+      "subject": "batchfiles 0-4.1",
+      "message_count": 1,
+      "participants": [
+        "Gabor Grothendieck"
+      ],
+      "started": "2008-05-05T07:14:10-04:00",
+      "last_reply": "2008-05-05T07:14:10-04:00",
+      "root_message_id": "msg-6076f57ff9d2"
+    },
+    {
+      "id": "thread-0a7ec7a57c8c",
+      "subject": "ncf package version 1.0-4",
+      "message_count": 1,
+      "participants": [
+        "Karine Berthier"
+      ],
+      "started": "2008-05-09T07:03:01+00:00",
+      "last_reply": "2008-05-09T07:03:01+00:00",
+      "root_message_id": "msg-0a7ec7a57c8c"
     },
     {
       "id": "thread-0a7ec7a57c8c",
@@ -162,6 +307,28 @@
       "root_message_id": "msg-a7d1ad7eb771"
     },
     {
+      "id": "thread-a7d1ad7eb771",
+      "subject": "AER: Applied Econometrics with R",
+      "message_count": 1,
+      "participants": [
+        "Achim Zeileis"
+      ],
+      "started": "2008-05-10T09:58:37+02:00",
+      "last_reply": "2008-05-10T09:58:37+02:00",
+      "root_message_id": "msg-a7d1ad7eb771"
+    },
+    {
+      "id": "thread-dd1c2a82e210",
+      "subject": "New package dti",
+      "message_count": 1,
+      "participants": [
+        "Karsten Tabelow"
+      ],
+      "started": "2008-05-19T15:25:46+02:00",
+      "last_reply": "2008-05-19T15:25:46+02:00",
+      "root_message_id": "msg-dd1c2a82e210"
+    },
+    {
       "id": "thread-dd1c2a82e210",
       "subject": "New package dti",
       "message_count": 1,
@@ -182,6 +349,28 @@
       "started": "2008-05-19T15:25:49+02:00",
       "last_reply": "2008-05-19T15:25:49+02:00",
       "root_message_id": "msg-964bc8e3b0db"
+    },
+    {
+      "id": "thread-964bc8e3b0db",
+      "subject": "Updated package fmri",
+      "message_count": 1,
+      "participants": [
+        "Karsten Tabelow"
+      ],
+      "started": "2008-05-19T15:25:49+02:00",
+      "last_reply": "2008-05-19T15:25:49+02:00",
+      "root_message_id": "msg-964bc8e3b0db"
+    },
+    {
+      "id": "thread-ea9896ccc46e",
+      "subject": "Updated package adimpro",
+      "message_count": 1,
+      "participants": [
+        "Karsten Tabelow"
+      ],
+      "started": "2008-05-19T15:25:51+02:00",
+      "last_reply": "2008-05-19T15:25:51+02:00",
+      "root_message_id": "msg-ea9896ccc46e"
     },
     {
       "id": "thread-ea9896ccc46e",

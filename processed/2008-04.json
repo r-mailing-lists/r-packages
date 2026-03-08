@@ -20,6 +20,22 @@
       "month": "2008-04"
     },
     {
+      "id": "msg-c1d5e17bb38a",
+      "message_id": "<f8e6ff050804031745l3b97910dm2e02bd942cd8134c@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2008-04-03T19:45:48-05:00",
+      "subject": "[R-pkgs] ggplot2 - version 0.6",
+      "subject_clean": "ggplot2 - version 0.6",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 400\nexamples of ggplot in use.\n\nggplot 0.6\n----------------------------------------\n\nThe two big changes in this release are improved documentation and legends:\n\n * all major ggplot2 components now have their own built in\ndocumentation, so that (e.g.) ?stat_smooth or ?geom_point now give you\nuseful information\n\n * the legend code is now considerably more sophisticated and will\nattempt to merge together legends for the same variable\n\n * also, legends are drawn based on the geoms used (instead of the\nscales used, as previously) so should match the plot much better (e.g.\nfor geom_smooth, geom_boxplot, geom_vline, geom_abline,\ngeom_pointrange).\n\nThese features are new, so there are likely to be a few bugs that I\nhaven't discovered.  Please me know if you do find any.\n\nOther additions and corrections\n\n  * coord_equal: should now work correctly in all situations\n  * coord_polar: add start and direction parameters, giving more\ncontrol over the layout of the polar coords\n  * coord_polar: added my favourite pie chart example\n  * coord_trans now deals with groups appropriately, at the cost of\ndecreased speed\n  * geom_abline, geom_vline, geom_hline: should now behave better in a\nwider variety of settings\n  * geom_boxplot: deals with continuous x-axis and grouping much better\n  * geom_boxplot: now has it's own legend which actually looks like a boxplot\n  * geom_boxplot: reports if missing values removed\n  * geom_crossbar: the middle line is now display thicker than the\nother lines, controlled by the parameter fatten (thanks to Heike\nHofmann for the suggestion)\n  * geom_density: fix scale adjustment bug in geom_density\n  * geom_line, geom_text: all size measurements (now lines and text as\nwell) are measured in mm, lines/paths default to paths 0.5mm wide\n  * geom_rug: new to add marginal rug plots\n  * geom_smooth: added example showing how to use geom_smooth with\nyour own models\n  * geom_smooth: fixed bug where if se=FALSE x axis always includes 0\n  * geom_vline, geom_hline: yet another rewrite which should make them\nmore powerful and less error prone.\n  * ggsave reports width and height of saved image\n  * position_stack: fixed bug when data was empty\n  * qplot: allow qplot to use computed aesthetics too\n  * scale_continuous: tweaks to minor breaks to make appearance better\non wider range of coordinate systems\n  * scale_discrete: all discrete scales now have labels argument which\nyou can use to override the factor levels\n  * scale_discrete: now works correctly with character vectors\n  * scale_size: changed default range to [0.5, 3] to better reflect\nnew sizing decisions\n  * scale_size: legends resize to avoid overlaps\n  * scale_x_continuous, scale_y_continuous: new convenience functions\nxlim and ylim (and zlim) that make it even easier to adjust the limits\nof the x, y, and z axes\n  * stat_bin, geom_area: fixed bug in combination of stat_bin and\ngeom_area that made it difficult to draw frequency polygons\n  * stat_bin: fixed bug which resulted in increased counts when the x\naxis was a categorical variable with a single level (thanks to Bob\nMuenchen for pointing this out!)\n  * stat_bin: no longer incorrectly warns that binwidth is unspecified\nwhen breaks are set\n  * stat_bin: now takes origin argument to manually specify origin of\nfirst bin (default is round_any(min(range), bin_width, floor))\n  * stat_boxplot, stat_contour, stat_density2d, stat_qq, stat_density:\nna.rm parameter added to the following statistics (thanks to Leena\nChoi for suggesting this)\n  * stat_function: new, makes it easy to superimpose a function on the plot\n  * stat_qq: axes flipped to agree with base R\n  * stat_qq: now uses sample aesthetic to select variable for summary\n  * stat_quantile: updated to work with latest version of quantreg\n  * stat_spoke: new, to make it possible to use geom_segment\nparameterised by angle and radius (thanks to Jiho for the suggestion)\n  * stat_summary: better documentation\n  * stat_summary: convenient auto wrapping of simple summary functions\n\nMiscellaneous changes:\n\n  * it's now easy to change the default scales (and their arguments)\nwith the set_default_scale function, see ?set_default_scale for more\ndetails (thanks to Bob Muenchen for the suggestion)\n  * new order aesthetic which controls the order in which elements are plotted\n  * min and max are now scaled the same way as y\n  * functions are silently dropped (e.g. aes(colour=col))\n  * scales do not try and map variables that don't exist (fixes some\nrather obscure bugs)\n  * aes(mpg, wt) is now equivalent to aes(x = mpg, y = wt)\n\n\nSee CHANGELOG for changes in previous versions\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
+      "thread_id": "thread-c1d5e17bb38a",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
       "id": "msg-5c606007e041",
       "message_id": "<47F685E8.9070209@jhsph.edu>",
       "from_name": "Roger D. Peng",
@@ -32,6 +48,38 @@
       "body_plain": "The 'cacher' package contains a set of routines for caching statistical \nanalyses.  The idea is that an analysis stored in a file (say, 'foo.R') is run \nand the results of the evaluated expressions are cached in a database.  These \ncached results can subsequently be packaged up and distributed over the interweb.\n\nI've just uploaded to CRAN version 0.1-2 of the 'cacher' package.\n\nThere is a brief document describing the package available at\n\nhttp://www.biostat.jhsph.edu/~rpeng/papers/archive/cacher.pdf\n\nSome sample cached analyses can be found at\n\nhttp://penguin.biostat.jhsph.edu/cpkg.html\n\nFor example, if you wanted to download the analysis associated with the \n'sample.R' file, you could run\n\nlibrary(cacher)\nclonecache(id = \"44bf\", all.files = TRUE)\n\nUsing the tools in the 'cacher' package you could then explore the data and code \nthat make up this analysis.\n\nThis package is by no means 'complete' and is still evolving.  I would greatly \nappreciate any feedback or suggestions on the design if you end up using the \npackage for any reason.\n\n-roger\n-- \nRoger D. Peng  |  http://www.biostat.jhsph.edu/~rpeng/",
       "body_snippet": "The 'cacher' package contains a set of routines for caching statistical \nanalyses.  The idea is that an analysis stored in a file (say, 'foo.R') is run \nand the results of the evaluated expressions ar",
       "thread_id": "thread-5c606007e041",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-5c606007e041",
+      "message_id": "<47F685E8.9070209@jhsph.edu>",
+      "from_name": "Roger D. Peng",
+      "from_email_hash": "f16db268d52d59f4891274e2527502244f6fb69eae6abe5f5f14ba72cc4ce10e",
+      "date": "2008-04-04T15:47:52-04:00",
+      "subject": "[R-pkgs] cacher v0.1-2",
+      "subject_clean": "cacher v0.1-2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The 'cacher' package contains a set of routines for caching statistical \nanalyses.  The idea is that an analysis stored in a file (say, 'foo.R') is run \nand the results of the evaluated expressions are cached in a database.  These \ncached results can subsequently be packaged up and distributed over the interweb.\n\nI've just uploaded to CRAN version 0.1-2 of the 'cacher' package.\n\nThere is a brief document describing the package available at\n\nhttp://www.biostat.jhsph.edu/~rpeng/papers/archive/cacher.pdf\n\nSome sample cached analyses can be found at\n\nhttp://penguin.biostat.jhsph.edu/cpkg.html\n\nFor example, if you wanted to download the analysis associated with the \n'sample.R' file, you could run\n\nlibrary(cacher)\nclonecache(id = \"44bf\", all.files = TRUE)\n\nUsing the tools in the 'cacher' package you could then explore the data and code \nthat make up this analysis.\n\nThis package is by no means 'complete' and is still evolving.  I would greatly \nappreciate any feedback or suggestions on the design if you end up using the \npackage for any reason.\n\n-roger\n-- \nRoger D. Peng  |  http://www.biostat.jhsph.edu/~rpeng/",
+      "body_snippet": "The 'cacher' package contains a set of routines for caching statistical \nanalyses.  The idea is that an analysis stored in a file (say, 'foo.R') is run \nand the results of the evaluated expressions ar",
+      "thread_id": "thread-5c606007e041",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-8c6536cafaa0",
+      "message_id": "<6.2.0.14.2.20080407182457.020a5180@mail.bex.net>",
+      "from_name": "Maria Rizzo",
+      "from_email_hash": "b694e18a12cff508cca7664950e6e1c9aeef52499b4f26a7fbbff281a272129e",
+      "date": "2008-04-08T21:04:01-04:00",
+      "subject": "[R-pkgs] energy 1.1-0 with dcov",
+      "subject_clean": "energy 1.1-0 with dcov",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-users,\n\nAn updated version of the energy package, energy 1.1-0, is now available on \nCRAN.\n\nThis version has merged the dcov package (previously available from my \npersonal web page) into energy.\n\nNew functions include:\n\ndcov (distance covariance)\ndcor (distance correlation)\nDCOR (four statistics)\ndcov.test (distance covariance test of multivariate independence)\nindep.test (choice of nonparametric energy tests of multivariate independence)\n\nThese functions implement the new methods introduced in our recent article:\n\nG. J. Szekely, M. L. Rizzo and N. K. Bakirov (2007) Measuring and Testing \nIndependence by Correlation of Distances, Annals of Statistics, Vol. 35 No. \n6, pp. 2769-2794.\n\nDistance correlation R is a scalar statistic for measuring and testing \nindependence of random vectors. It satisfies 0<=R<=1 and R=0 only if \nindependence holds. Distance covariance V determines a statistically \nconsistent test of independence.\n\nThe distance covariance test is theoretically related to, but different \nfrom the original test based on coefficient I_n implemented in indep.etest. \nThe new dcov.test is faster by a factor O(n) than indep.etest.\n\nWith the introduction of a second and faster test, we provide a new \nfunction indep.test with a choice of methods to obtain either test. The \noriginal indep.etest is now deprecated.\n\nReprints of the article are available upon request.\n\nComments and suggestions are always welcome.\n\n   Maria Rizzo and Gabor Szekely",
+      "body_snippet": "Dear R-users,\n\nAn updated version of the energy package, energy 1.1-0, is now available on \nCRAN.\n\nThis version has merged the dcov package (previously available from my \npersonal web page) into energ",
+      "thread_id": "thread-8c6536cafaa0",
       "thread_depth": 0,
       "month": "2008-04"
     },
@@ -70,6 +118,24 @@
       "month": "2008-04"
     },
     {
+      "id": "msg-1e92ac789f83",
+      "message_id": "<68b1e2610804090627j24f3436i3e2d232898f4bcb2@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2008-04-09T15:27:36+02:00",
+      "subject": "[R-pkgs] RcmdrPlugin.Export_0.2-0 released",
+      "subject_clean": "RcmdrPlugin.Export_0.2-0 released",
+      "in_reply_to": "<68b1e2610804090034k6841c182u44ce39ee1dbc9f62@mail.gmail.com>",
+      "references": [
+        "<68b1e2610804090034k6841c182u44ce39ee1dbc9f62@mail.gmail.com>"
+      ],
+      "body_plain": "Dear R users,\n\nI am pleased to announce the release of the Export plug-in for Rcmdr.\nAt the moment, it is simply a graphical user interface to xtable().\nSeveral developments are, however, planned. It is worth to note that\nthe Manual offers several pointers on using Sweave together with LyX,\nand from this perspective the plugin is an attempt to simplify\ncreating (LaTeX) reports by using graphical interfaces only.\n\nIn the near future, only exporting to LaTeX and HTML will be\nsupported. Exporting to other formats (say, RTF or ODF) could be\nintegrated provided that someone is willing to contribute the code\n(say, personal scripts that were never published), or point to a\nsensible way of automating the process. Any such contributions are\nheartily welcome.\n\nComments and suggestions are, of course, always welcome.\nLiviu",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce the release of the Export plug-in for Rcmdr.\nAt the moment, it is simply a graphical user interface to xtable().\nSeveral developments are, however, planned. It ",
+      "thread_id": "thread-1e92ac789f83",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
       "id": "msg-69a28125c06f",
       "message_id": "<480741D0.2040504@univie.ac.at>",
       "from_name": "Erich Neuwirth",
@@ -82,6 +148,38 @@
       "body_plain": "RExcelInstaller_2.0-15\n\ninstalls RExcel, an add-in for Excel, which connects R and Excel.\n\nRExcel allows to transfer data between R and Excel,\nwriting VBA macros using R as a library for Excel,\nand calling R functions as worksheet function in Excel.\nRExcel integrates nicely with R Commander (Rcmdr),\nturning R Commander's menus into Excel menus.\nIt comes with a comprehensive set of example worksheet\nillustrating different usage scenarios.\n\nThis R package installs the Excel add-in for Excel versions\nfrom 2000 to 2007. It only works on MS Windows (XP and Vista)\n\n-- \nErich Neuwirth, University of Vienna\nFaculty of Computer Science\nComputer Supported Didactics Working Group\nVisit our SunSITE at http://sunsite.univie.ac.at\nPhone: +43-1-4277-39464 Fax: +43-1-4277-39459",
       "body_snippet": "RExcelInstaller_2.0-15\n\ninstalls RExcel, an add-in for Excel, which connects R and Excel.\n\nRExcel allows to transfer data between R and Excel,\nwriting VBA macros using R as a library for Excel,\nand ca",
       "thread_id": "thread-69a28125c06f",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-69a28125c06f",
+      "message_id": "<480741D0.2040504@univie.ac.at>",
+      "from_name": "Erich Neuwirth",
+      "from_email_hash": "178c9665decd09e76ed713e123ba2a6b2ed2ac166995047eb6dc12c5ab93e7ac",
+      "date": "2008-04-17T14:25:52+02:00",
+      "subject": "[R-pkgs] RExcelInstaller",
+      "subject_clean": "RExcelInstaller",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "RExcelInstaller_2.0-15\n\ninstalls RExcel, an add-in for Excel, which connects R and Excel.\n\nRExcel allows to transfer data between R and Excel,\nwriting VBA macros using R as a library for Excel,\nand calling R functions as worksheet function in Excel.\nRExcel integrates nicely with R Commander (Rcmdr),\nturning R Commander's menus into Excel menus.\nIt comes with a comprehensive set of example worksheet\nillustrating different usage scenarios.\n\nThis R package installs the Excel add-in for Excel versions\nfrom 2000 to 2007. It only works on MS Windows (XP and Vista)\n\n-- \nErich Neuwirth, University of Vienna\nFaculty of Computer Science\nComputer Supported Didactics Working Group\nVisit our SunSITE at http://sunsite.univie.ac.at\nPhone: +43-1-4277-39464 Fax: +43-1-4277-39459",
+      "body_snippet": "RExcelInstaller_2.0-15\n\ninstalls RExcel, an add-in for Excel, which connects R and Excel.\n\nRExcel allows to transfer data between R and Excel,\nwriting VBA macros using R as a library for Excel,\nand ca",
+      "thread_id": "thread-69a28125c06f",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-533aa1df7cc0",
+      "message_id": "<4808A59C.8030406@yorku.ca>",
+      "from_name": "Michael Friendly",
+      "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
+      "date": "2008-04-18T09:43:56-04:00",
+      "subject": "[R-pkgs] new candisc package on CRAN",
+      "subject_clean": "new candisc package on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm happy to announce the candisc package, v 0.5-9, now on CRAN.\n\nGeneralized Canonical Discriminant Analysis\n\nDescription\nThis package includes functions for computing and visualizing \ngeneralized canonical discriminant analyses for a multivariate linear \nmodel. They are designed to provide low-rank visualizations of terms in \na mlm via the plot method and the heplots package.\n\nThe methods are described in\n\nFriendly, M. (2007). HE plots for Multivariate General Linear Models. \nJournal of Computational and Graphical Statistics, 16 (2), 421-444. \nhttp://www.math.yorku.ca/SCS/Papers/heplots.pdf\n\nFriendly, M. (2006). Data Ellipses, HE Plots and Reduced-Rank Displays \nfor Multivariate Linear Models: SAS Software and Examples. Journal of \nStatistical Software, 17(6), 1-42. http://www.jstatsoft.org/v17/i06/\n\n\n-Michael\n\n\n-- \nMichael Friendly     Email: friendly AT yorku DOT ca\nProfessor, Psychology Dept.\nYork University      Voice: 416 736-5115 x66249 Fax: 416 736-5814\n4700 Keele Street    http://www.math.yorku.ca/SCS/friendly.html\nToronto, ONT  M3J 1P3 CANADA",
+      "body_snippet": "I'm happy to announce the candisc package, v 0.5-9, now on CRAN.\n\nGeneralized Canonical Discriminant Analysis\n\nDescription\nThis package includes functions for computing and visualizing \ngeneralized ca",
+      "thread_id": "thread-533aa1df7cc0",
       "thread_depth": 0,
       "month": "2008-04"
     },
@@ -118,6 +216,38 @@
       "month": "2008-04"
     },
     {
+      "id": "msg-151ce86de283",
+      "message_id": "<480C65BE.6000103@upc.edu>",
+      "from_name": "Jan Graffelman",
+      "from_email_hash": "2b79b556fd4e4ce02607cbc53b2a555c073ca59f0750b9880f1b2d13cf1f7eb3",
+      "date": "2008-04-21T12:00:30+02:00",
+      "subject": "[R-pkgs] Upload HardyWeinberg package (1.1)",
+      "subject_clean": "Upload HardyWeinberg package (1.1)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI've uploaded to CRAN a new version of the HardyWeinberg package. This\npackage has routines for performing graphical significance tests (based \non the ternary plot) for Hardy-Weinberg equilibrium of bi-allelic marker \n  data.\n\nJan.\n\n-- \n------------------------------------------------------------------------\n|Jan Graffelman                          |tel:   +34-93-4011739        |\n|Dpt. of Statistics & Operations Research|fax:   +34-93-4016575        |\n|Universitat Politecnica de Catalunya    |email: jan.graffelman at upc.edu|\n|Av. Diagonal 647, 6th floor             |www:                         |\n|08028 Barcelona, Spain                  |  http://www-eio.upc.es/~jan/|",
+      "body_snippet": "Hi all,\n\nI've uploaded to CRAN a new version of the HardyWeinberg package. This\npackage has routines for performing graphical significance tests (based \non the ternary plot) for Hardy-Weinberg equilib",
+      "thread_id": "thread-151ce86de283",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-be35175a9536",
+      "message_id": "<C02F20DD-A630-4E81-9FF8-F49EEEDF0B55@noc.soton.ac.uk>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
+      "date": "2008-04-23T11:11:09+01:00",
+      "subject": "[R-pkgs] new package multipol",
+      "subject_clean": "new package multipol",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello List\n\nplease find a new package, multipol, recently uploaded to CRAN.\n\nThis package generalizes the polynom package (which handles univariate\npolynomials) to the multivariate case.   A  short article discussing the\npackage will appear in the next issue of Rnews,  Insha'Allah\n\n\nenjoy\n\n\n\n--\nRobin Hankin\nUncertainty Analyst and Neutral Theorist,\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
+      "body_snippet": "Hello List\n\nplease find a new package, multipol, recently uploaded to CRAN.\n\nThis package generalizes the polynom package (which handles univariate\npolynomials) to the multivariate case.   A  short ar",
+      "thread_id": "thread-be35175a9536",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
       "id": "msg-be35175a9536",
       "message_id": "<C02F20DD-A630-4E81-9FF8-F49EEEDF0B55@noc.soton.ac.uk>",
       "from_name": "Robin Hankin",
@@ -147,6 +277,17 @@
       "root_message_id": "msg-c1d5e17bb38a"
     },
     {
+      "id": "thread-c1d5e17bb38a",
+      "subject": "ggplot2 - version 0.6",
+      "message_count": 1,
+      "participants": [
+        "hadley wickham"
+      ],
+      "started": "2008-04-03T19:45:48-05:00",
+      "last_reply": "2008-04-03T19:45:48-05:00",
+      "root_message_id": "msg-c1d5e17bb38a"
+    },
+    {
       "id": "thread-5c606007e041",
       "subject": "cacher v0.1-2",
       "message_count": 1,
@@ -156,6 +297,28 @@
       "started": "2008-04-04T15:47:52-04:00",
       "last_reply": "2008-04-04T15:47:52-04:00",
       "root_message_id": "msg-5c606007e041"
+    },
+    {
+      "id": "thread-5c606007e041",
+      "subject": "cacher v0.1-2",
+      "message_count": 1,
+      "participants": [
+        "Roger D. Peng"
+      ],
+      "started": "2008-04-04T15:47:52-04:00",
+      "last_reply": "2008-04-04T15:47:52-04:00",
+      "root_message_id": "msg-5c606007e041"
+    },
+    {
+      "id": "thread-8c6536cafaa0",
+      "subject": "energy 1.1-0 with dcov",
+      "message_count": 1,
+      "participants": [
+        "Maria Rizzo"
+      ],
+      "started": "2008-04-08T21:04:01-04:00",
+      "last_reply": "2008-04-08T21:04:01-04:00",
+      "root_message_id": "msg-8c6536cafaa0"
     },
     {
       "id": "thread-8c6536cafaa0",
@@ -180,6 +343,28 @@
       "root_message_id": "msg-1e92ac789f83"
     },
     {
+      "id": "thread-1e92ac789f83",
+      "subject": "RcmdrPlugin.Export_0.2-0 released",
+      "message_count": 1,
+      "participants": [
+        "Liviu Andronic"
+      ],
+      "started": "2008-04-09T15:27:36+02:00",
+      "last_reply": "2008-04-09T15:27:36+02:00",
+      "root_message_id": "msg-1e92ac789f83"
+    },
+    {
+      "id": "thread-69a28125c06f",
+      "subject": "RExcelInstaller",
+      "message_count": 1,
+      "participants": [
+        "Erich Neuwirth"
+      ],
+      "started": "2008-04-17T14:25:52+02:00",
+      "last_reply": "2008-04-17T14:25:52+02:00",
+      "root_message_id": "msg-69a28125c06f"
+    },
+    {
       "id": "thread-69a28125c06f",
       "subject": "RExcelInstaller",
       "message_count": 1,
@@ -202,6 +387,17 @@
       "root_message_id": "msg-533aa1df7cc0"
     },
     {
+      "id": "thread-533aa1df7cc0",
+      "subject": "new candisc package on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2008-04-18T09:43:56-04:00",
+      "last_reply": "2008-04-18T09:43:56-04:00",
+      "root_message_id": "msg-533aa1df7cc0"
+    },
+    {
       "id": "thread-151ce86de283",
       "subject": "Upload HardyWeinberg package (1.1)",
       "message_count": 1,
@@ -211,6 +407,28 @@
       "started": "2008-04-21T12:00:30+02:00",
       "last_reply": "2008-04-21T12:00:30+02:00",
       "root_message_id": "msg-151ce86de283"
+    },
+    {
+      "id": "thread-151ce86de283",
+      "subject": "Upload HardyWeinberg package (1.1)",
+      "message_count": 1,
+      "participants": [
+        "Jan Graffelman"
+      ],
+      "started": "2008-04-21T12:00:30+02:00",
+      "last_reply": "2008-04-21T12:00:30+02:00",
+      "root_message_id": "msg-151ce86de283"
+    },
+    {
+      "id": "thread-be35175a9536",
+      "subject": "new package multipol",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2008-04-23T11:11:09+01:00",
+      "last_reply": "2008-04-23T11:11:09+01:00",
+      "root_message_id": "msg-be35175a9536"
     },
     {
       "id": "thread-be35175a9536",

@@ -20,6 +20,22 @@
       "month": "2004-11"
     },
     {
+      "id": "msg-a907e02487b8",
+      "message_id": "<OF520777B8.23C07501-ON80256F3F.0068A07B-80256F3F.006B12A1@sb.com>",
+      "from_name": "Brandon.J.Whitcher at gsk.com",
+      "from_email_hash": "9183cb37ae448daaffdebf38502d0bbc1908de40c74bb8327885350e5be7c442",
+      "date": "2004-11-01T19:28:45Z",
+      "subject": "[R-pkgs] updated package waveslim 1.4",
+      "subject_clean": "updated package waveslim 1.4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041101/3d89ef48/attachment-0001.ksh>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041101/3d89ef48/attachment-0001.ksh>",
+      "thread_id": "thread-a907e02487b8",
+      "thread_depth": 0,
+      "month": "2004-11"
+    },
+    {
       "id": "msg-f42149816439",
       "message_id": "<Pine.A41.4.61b.0411051048540.140096@homer10.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -32,6 +48,38 @@
       "body_plain": "This is an update (version 1.2), not a new package, but given recent \npostings on the R lists an announcement may be helpful.\n\nThe 'dichromat' package has color schemes designed for people with \nred-green deficient or anomalous vision, tools for simulating the effect \nof color blindness, and tools for creating color ramps and palettes (these \nlast will be in R 2.1.0).\n\nI would welcome feedback on the accuracy of the simulations of color \nblindness from people who are actually affected. They are based on \npublished algorithms and methods, but color matching is always tricky.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
       "body_snippet": "This is an update (version 1.2), not a new package, but given recent \npostings on the R lists an announcement may be helpful.\n\nThe 'dichromat' package has color schemes designed for people with \nred-g",
       "thread_id": "thread-f42149816439",
+      "thread_depth": 0,
+      "month": "2004-11"
+    },
+    {
+      "id": "msg-f42149816439",
+      "message_id": "<Pine.A41.4.61b.0411051048540.140096@homer10.u.washington.edu>",
+      "from_name": "Thomas Lumley",
+      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
+      "date": "2004-11-05T10:57:15-08:00",
+      "subject": "[R-pkgs] dichromat package",
+      "subject_clean": "dichromat package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This is an update (version 1.2), not a new package, but given recent \npostings on the R lists an announcement may be helpful.\n\nThe 'dichromat' package has color schemes designed for people with \nred-green deficient or anomalous vision, tools for simulating the effect \nof color blindness, and tools for creating color ramps and palettes (these \nlast will be in R 2.1.0).\n\nI would welcome feedback on the accuracy of the simulations of color \nblindness from people who are actually affected. They are based on \npublished algorithms and methods, but color matching is always tricky.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
+      "body_snippet": "This is an update (version 1.2), not a new package, but given recent \npostings on the R lists an announcement may be helpful.\n\nThe 'dichromat' package has color schemes designed for people with \nred-g",
+      "thread_id": "thread-f42149816439",
+      "thread_depth": 0,
+      "month": "2004-11"
+    },
+    {
+      "id": "msg-ccd9ec331299",
+      "message_id": "<a06200710bdc39dd2eba3@[139.166.242.29]>",
+      "from_name": "Robin Hankin",
+      "from_email_hash": "7e11c9f2323f6bea660b3d190b86a4318603bb60803f82854ac7b57f1bba3502",
+      "date": "2004-11-19T13:10:36Z",
+      "subject": "[R-pkgs] new package gsl, a wrapper for the Gnu Scientific Library",
+      "subject_clean": "new package gsl, a wrapper for the Gnu Scientific Library",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list\n\nR package \"gsl\" is now on  CRAN.  This  is a wrapper for\nthe special functions of the Gnu Scientific Library (GSL).  Functions include\nelliptic integrals, Airy functions, hypergeometric functions, and so on.\nMost functions optionally return error estimates.\n\nThis library is a little odd in that documentation is limited to a \npointer to the GSL reference\nmanual, and occasional re-productions of tables and figures from \nAbramowitz and Stegun.\n\nIt passes R CMD check  under Fedora Linux, and MacOSX 10.3 if the GSL\n(version 1.5)  is installed in the default locations.\n\nA windows version is available at  http://www.stats.ox.ac.uk/pub/RWin/2.0.0/\n\n\n\n(also, a big Thank You to Kurt Hornik for advice on configure.ac)\n\n\n\n-- \nRobin Hankin\nUncertainty Analyst\nSouthampton Oceanography Centre\nSO14 3ZH\ntel +44(0)23-8059-7743\ninitialDOTsurname at soc.soton.ac.uk (edit in obvious way; spam precaution)",
+      "body_snippet": "Dear list\n\nR package \"gsl\" is now on  CRAN.  This  is a wrapper for\nthe special functions of the Gnu Scientific Library (GSL).  Functions include\nelliptic integrals, Airy functions, hypergeometric fun",
+      "thread_id": "thread-ccd9ec331299",
       "thread_depth": 0,
       "month": "2004-11"
     },
@@ -66,9 +114,36 @@
       "thread_id": "thread-ed753e5fd83c",
       "thread_depth": 0,
       "month": "2004-11"
+    },
+    {
+      "id": "msg-ed753e5fd83c",
+      "message_id": "<41ACF14A.5030803@vanderbilt.edu>",
+      "from_name": "Frank E Harrell Jr",
+      "from_email_hash": "aac2104e568f1b4bc608deccefed75168aaf244b4de06a96ffe1c917f66b7853",
+      "date": "2004-11-30T16:16:42-06:00",
+      "subject": "[R-pkgs] New Hmisc Package Available",
+      "subject_clean": "New Hmisc Package Available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An updated version of Hmisc is now available from CRAN.  The Web site \nfor Hmisc is http://biostat.mc.vanderbilt.edu/s/Hmisc.  The change log \nmay be found at http://biostat.mc.vanderbilt.edu/changelog/Hmisc.html. \nChanges made after 2004-11-24 should be ignored; these will be in the \nnext version.\n\nThe most major change in Hmisc is that thanks to discussions with a \nhighly respected, persistent, and convincing member of the R community, \nHmisc no longer overrides [.factor to drop unused factor levels by \ndefault upon subsetting.  You can get the old behavior at any time by \ntyping dropUnusedLevels().  A message to that effect appears when you \nattach the package.  Also Hmisc no longer overrides the interaction \nfunction, as the R builtin version provides the sep argument.  In the \nnext version, the summary.formula function will be updated to \nautomatically drop unused levels when this is appropriate.\n\nSome other key changes are the addition of bubble plot capability in \nxYplot and addition of the capability of csv.get to correct certain date \nformatting inconsistencies.  sasxport.get now has keep and drop \narguments to restrict attention to a subset of datasets when many \ndatasets are being imported.  Other changes include bug and \ndocumentation fixes.\n\n-- \nFrank E Harrell Jr   Professor and Chair           School of Medicine\n                      Department of Biostatistics   Vanderbilt University",
+      "body_snippet": "An updated version of Hmisc is now available from CRAN.  The Web site \nfor Hmisc is http://biostat.mc.vanderbilt.edu/s/Hmisc.  The change log \nmay be found at http://biostat.mc.vanderbilt.edu/changelo",
+      "thread_id": "thread-ed753e5fd83c",
+      "thread_depth": 0,
+      "month": "2004-11"
     }
   ],
   "threads": [
+    {
+      "id": "thread-a907e02487b8",
+      "subject": "updated package waveslim 1.4",
+      "message_count": 1,
+      "participants": [
+        "Brandon.J.Whitcher at gsk.com"
+      ],
+      "started": "2004-11-01T19:28:45+00:00",
+      "last_reply": "2004-11-01T19:28:45+00:00",
+      "root_message_id": "msg-a907e02487b8"
+    },
     {
       "id": "thread-a907e02487b8",
       "subject": "updated package waveslim 1.4",
@@ -92,6 +167,17 @@
       "root_message_id": "msg-f42149816439"
     },
     {
+      "id": "thread-f42149816439",
+      "subject": "dichromat package",
+      "message_count": 1,
+      "participants": [
+        "Thomas Lumley"
+      ],
+      "started": "2004-11-05T10:57:15-08:00",
+      "last_reply": "2004-11-05T10:57:15-08:00",
+      "root_message_id": "msg-f42149816439"
+    },
+    {
       "id": "thread-ccd9ec331299",
       "subject": "new package gsl, a wrapper for the Gnu Scientific Library",
       "message_count": 1,
@@ -101,6 +187,28 @@
       "started": "2004-11-19T13:10:36+00:00",
       "last_reply": "2004-11-19T13:10:36+00:00",
       "root_message_id": "msg-ccd9ec331299"
+    },
+    {
+      "id": "thread-ccd9ec331299",
+      "subject": "new package gsl, a wrapper for the Gnu Scientific Library",
+      "message_count": 1,
+      "participants": [
+        "Robin Hankin"
+      ],
+      "started": "2004-11-19T13:10:36+00:00",
+      "last_reply": "2004-11-19T13:10:36+00:00",
+      "root_message_id": "msg-ccd9ec331299"
+    },
+    {
+      "id": "thread-ed753e5fd83c",
+      "subject": "New Hmisc Package Available",
+      "message_count": 1,
+      "participants": [
+        "Frank E Harrell Jr"
+      ],
+      "started": "2004-11-30T16:16:42-06:00",
+      "last_reply": "2004-11-30T16:16:42-06:00",
+      "root_message_id": "msg-ed753e5fd83c"
     },
     {
       "id": "thread-ed753e5fd83c",
