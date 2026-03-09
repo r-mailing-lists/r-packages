@@ -20,22 +20,6 @@
       "month": "2007-09"
     },
     {
-      "id": "msg-57b8a8d05559",
-      "message_id": "<f8e6ff050709020953r248fd0d5l8edcee4466d23acf@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2007-09-02T11:53:46-05:00",
-      "subject": "[R-pkgs] ggplot2 - version 0.5.5",
-      "subject_clean": "ggplot2 - version 0.5.5",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\n\nChanges in version 0.5.5\n----------------------------------------\n\nImprovements:\n\t* ggplot now gives rather more helpful errors if you have\nmisspecified a variable name in the aesthetic mapping\n\t* changed default hline and vline intercepts to 0\n\t* added \"count\" output variable from stat_density for creating\nstacked/conditional density plots\n\t* added parameters to geom_boxplot to control appearance of outlying points\n\t* overriding aesthetics with fixed values that have already been set\nwith aesthetics now actually works\n\t* slightly better names for xaxis and yaxis grobs\n\t* added aes_string function to make it easier to construction\naesthetic mapping specifications in functions\n\t* continuous scales now have labels argument so that you can manually\nspecify labels if desired\n\t* stat_density now calculates densities on a common grid across\ngroups.  This means that position_fill and position_stack now work\nproperly\n\t* if numeric, legend labels right aligned\n\t* polar coordinates much improved, and with better examples\n\nDocumentation:\n\t* fixed argument documentation for qplot\n\t* added (very) rudimentary documentation about what functions return\n\t* documentation now lists extra variables created by statistics\n\nBug fixes:\n\t* coord_flip now works with segment and all interval geoms\n\t* geom_errorbar now works in all coordinate systems\n\t* derived y axes (eg. on histogram) are now labelled correctly\n\t* fixed bug in stat_quantile caused by new output format from predict.rq\n\t* fixed bug if x or y are constant\n\t* fixed bug in histogram where sometimes lowest bar was omitted\n\t* fixed bug in stat_qq which prevent setting aesthetics\n\t* fixed bug in qplot(..., geom=\"density\", position=\"identity\")\n\t* fixed stat_qq so that unnecessary arguments are no longer passed to\nthe distribution function\n\nSubtractions:\n\t* removed grid argument from ggsave, replaced by ggtheme(theme_bw)\n\t* removed add argument from qplot\n\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. ",
-      "thread_id": "thread-57b8a8d05559",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
       "id": "msg-70e1adb20830",
       "message_id": "<46DBB863.3000300@biomserv.univ-lyon1.fr>",
       "from_name": "Clément Calenge",
@@ -48,38 +32,6 @@
       "body_plain": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It now takes more than 80% less time than the previous \nversion. A new function \"liker\" has also been added, which estimates the \none of the two smoothing parameters of the bridge kernel using a maximum \nlikelihood approach (recommended in Horn et al., Ecology, in press). \nExamples of the help page demonstrate the use and interest of this \nfunction. Comparison between kernelbb and the Visual basic algorithm \nprovided in the paper of Horn et al. returned consistent results.\n\n* The function kernelUD has also been improved. It now takes more than \n50% less time than the previous version. In addition the \"grid\" argument \nof this function, now also allows a list of objects of class \"asc\" to be \npassed as grid where the UD should be estimated.\n\nHappy testing,\n\nCl?ment Calenge.\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It",
       "thread_id": "thread-70e1adb20830",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
-      "id": "msg-70e1adb20830",
-      "message_id": "<46DBB863.3000300@biomserv.univ-lyon1.fr>",
-      "from_name": "Clément Calenge",
-      "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
-      "date": "2007-09-03T09:31:47+02:00",
-      "subject": "[R-pkgs] adehabitat version 1.7",
-      "subject_clean": "adehabitat version 1.7",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It now takes more than 80% less time than the previous \nversion. A new function \"liker\" has also been added, which estimates the \none of the two smoothing parameters of the bridge kernel using a maximum \nlikelihood approach (recommended in Horn et al., Ecology, in press). \nExamples of the help page demonstrate the use and interest of this \nfunction. Comparison between kernelbb and the Visual basic algorithm \nprovided in the paper of Horn et al. returned consistent results.\n\n* The function kernelUD has also been improved. It now takes more than \n50% less time than the previous version. In addition the \"grid\" argument \nof this function, now also allows a list of objects of class \"asc\" to be \npassed as grid where the UD should be estimated.\n\nHappy testing,\n\nCl?ment Calenge.\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
-      "body_snippet": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It",
-      "thread_id": "thread-70e1adb20830",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
-      "id": "msg-d9d22e547cbe",
-      "message_id": "<8a7634360709050915s3c13221at4a82775b9e208098@mail.gmail.com>",
-      "from_name": "Jonathan Weeks",
-      "from_email_hash": "741207f274327552800448df7d5110299c4b2836047e681449f3e4bf63bd4c4b",
-      "date": "2007-09-05T10:15:11-06:00",
-      "subject": "[R-pkgs] New R package plink for separate calibration IRT linking",
-      "subject_clean": "New R package plink for separate calibration IRT linking",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The first version of the package plink has been uploaded to CRAN.\n\nplink is a package for conducting unidimensional IRT scaling and chain\nlinking for multiple groups for single-format or mixed-format common\nitems. The package supports eight IRT models and four calibration\nmethods.\n\nDichotomous Models:\n1PL, 2PL, 3PL\n\nPolytomous Models:\n-Graded response model\n-Partial credit model\n-Generalized partial credit model\n-Nominal response model\n-Multiple-choice model\n\nCalibration Methods:\n-Mean/Mean\n-Mean/Sigma\n-Haebara\n-Stocking-Lord\n\nAny combination of dichotomous and polytomous items can be supplied\nwith intermingled unique and common items for as many items and groups\nas system memory allows. Linking constants are computed and returned\nfor all the calibration methods, and (if desired) ability and/or item\nparameters can be rescaled and returned using any of the estimated\nlinking constants.\n\nAny of the included groups can be specified as the base scale, the\ncharacteristic curve methods can use symmetric or non-symmetric\noptimization, various scoring functions can be supplied for the\nStocking-Lord method, and there is great flexibility in specifying\nthetas and theta weights to be integrated over in the characteristic\ncurve methods.\n\nIn addition to computing linking constants and rescaling ability and\nitem parameters, the methods in the package can be used to compute\nitem/category response probabilities and create plots of item/category\ncharacteristic curves.\n\nThe package is designed to allow for a variety of formats for the item\nparameters including vectors, lists, matrices, and other objects\n(irt.pars and sep.pars) available in the package. Item parameters and\ncalibration output can be summarized, and descriptive statistics for\nthe item parameters can be displayed as well.\n\nGetting Started:\nRunning the separate calibration is typically a two-step process. The\nfirst step is to format the item parameters for processing with the\nfunction 'plink'. Parameters should be formatted as either an object\nof class 'irt.pars' with multiple groups, a set of 'irt.pars' objects,\nor a set of 'sep.pars' objects.  Once in this format, response\nprobabilities can be computed using the functions 'drm', 'gpcm',\n'grm', 'mcm', or 'nrm' or linking constants can be computed using\n'plink'.\n\nThe functions 'as.irt.pars', 'sep.pars', and 'combine.pars' can be\nused to create the 'irt.pars' and 'sep.pars' objects. 'summary' can be\nused to summarize item parameters (including descriptive statistics)\nand linking constants, and 'plot' can be used to create item/category\ncharacteristic curves.\n\nI am currently working on a vignette; however, the documentation\ncontains extensive examples. The best documentation to start with is\nhelp(as.irt.pars) and help(plink).\n\nAlthough this is the first version of this package, I have gone\nthrough extensive debugging and validation, so there should be few, if\nany bugs. Many of the examples (and the associated output) can be\nfound in published articles or books, and the output from the various\ncalibration methods has been checked against other available linking\nsoftware.\n\nI hope this will be a useful package for those interested in test\nlinking. I invite any comments and suggestions.\n\nTake care\n\n-- \nJonathan Weeks\nDoctoral Candidate\nSchool of Education\nUniversity of Colorado, Boulder\nweeksjp at gmail.com\n303-517-9666",
-      "body_snippet": "The first version of the package plink has been uploaded to CRAN.\n\nplink is a package for conducting unidimensional IRT scaling and chain\nlinking for multiple groups for single-format or mixed-format ",
-      "thread_id": "thread-d9d22e547cbe",
       "thread_depth": 0,
       "month": "2007-09"
     },
@@ -116,22 +68,6 @@
       "month": "2007-09"
     },
     {
-      "id": "msg-edbf95232776",
-      "message_id": "<200709100221.24440.dusa.adrian@gmail.com>",
-      "from_name": "Adrian Dusa",
-      "from_email_hash": "6a403e8d36067b9a5490b33c3f9b771c8b9fb11b65319c8b0ebbaa42146b32c8",
-      "date": "2007-09-10T02:21:24+03:00",
-      "subject": "[R-pkgs] QCA version 0.4-5",
-      "subject_clean": "QCA version 0.4-5",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "QCA implements the Qualitative Comparative Analysis using a boolean \nminimization algorithm for data coded with presence/absence of the causal \nconditions that affects a phenomenon of interest.\n\nThis new release has an experimental function that obtains the same exact \nsolutions as the main minimization function, using a shortcut instead of the \nclassical complete and exhaustive algorithm. This new function is faster and \nuses significantly less memory (50 MB compared to 1.5 GB for large datasets).\n\nIt should appear soon on CRAN, feedback is welcome.\n\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd\n050025 Bucharest sector 5\nRomania\nTel./Fax: +40 21 3126618 \\\n          +40 21 3120210 / int.101",
-      "body_snippet": "QCA implements the Qualitative Comparative Analysis using a boolean \nminimization algorithm for data coded with presence/absence of the causal \nconditions that affects a phenomenon of interest.\n\nThis ",
-      "thread_id": "thread-edbf95232776",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
       "id": "msg-cc6ee1afd925",
       "message_id": "<46E5B42C.4040805@acm.org>",
       "from_name": "Tony Plate",
@@ -144,38 +80,6 @@
       "body_plain": "From ?trackObjs:\n\nOverview of trackObjs package\n\nDescription:\n\n      The trackObjs package sets up a link between R objects in memory\n      and files on disk so that objects are automatically resaved to\n      files when they are changed.  R objects in files are read in on\n      demand and do not consume memory prior to being referenced.  The\n      trackObjs package also tracks times when objects are created and\n      modified, and caches some basic characteristics of objects to\n      allow for fast summaries of objects.\n\n      Each object is stored in a separate RData file using the standard\n      format as used by 'save()', so that objects can be manually picked\n      out of or added to the trackObjs database if needed.\n\n      Tracking works by replacing a tracked variable by an\n      'activeBinding', which when accessed looks up information in an\n      associated 'tracking environment' and reads or writes the\n      corresponding RData file and/or gets or assigns the variable in\n      the tracking environment.\n\nDetails:\n\n      There are three main reasons to use the 'trackObjs' package:\n\n         *  conveniently handle many moderately-large objects that would\n            collectively exhaust memory or be inconvenient to manage in\n            files by manually using 'save()' and 'load()'\n\n         *  keep track of creation and modification times on objects\n\n         *  get fast summaries of basic characteristics of objects -\n            class, size, dimension, etc.\n\n      There is an option to control whether tracked objects are cached\n      in memory as well as being stored on disk.  By default, objects\n      are not cached.  To save time when working with collections of\n      objects that will all fit in memory, turn on caching with\n      'track.options(cache=TRUE)', or start tracking with\n      'track.start(..., cache=TRUE)'.\n\n      Here is a brief example of tracking some variables in the global\n      environment:\n\n\n      > library(trackObjs)\n      > track.start(\"tmp1\")\n      > x <- 123                  # Not yet tracked\n      > track(x)                  # Variable 'x' is now tracked\n      > track(y <- matrix(1:6, ncol=2)) # 'y' is assigned & tracked\n      > z1 <- list(\"a\", \"b\", \"c\")\n      > z2 <- Sys.time()\n      > track(list=c(\"z1\", \"z2\")) # Track a bunch of variables\n      > track.summary(size=F)     # See a summary of tracked vars\n                  class    mode extent length            modified TA TW\n      x         numeric numeric    [1]      1 2007-09-07 08:50:58  0  1\n      y          matrix numeric  [3x2]      6 2007-09-07 08:50:58  0  1\n      z1           list    list  [[3]]      3 2007-09-07 08:50:58  0  1\n      z2 POSIXt,POSIXct numeric    [1]      1 2007-09-07 08:50:58  0  1\n      > # (TA=\"total accesses\", TW=\"total writes\")\n      > ls(all=TRUE)\n      [1] \"x\"  \"y\"  \"z1\" \"z2\"\n      > track.stop()              # Stop tracking\n      > ls(all=TRUE)\n      character(0)\n      >\n      > # Restart using the tracking dir -- the variables reappear\n      > track.start(\"tmp1\") # Start using the tracking dir again\n     > ls(all=TRUE)\n      [1] \"x\"  \"y\"  \"z1\" \"z2\"\n      > track.summary(size=F)\n                  class    mode extent length            modified TA TW\n      x         numeric numeric    [1]      1 2007-09-07 08:50:58  0  1\n      y          matrix numeric  [3x2]      6 2007-09-07 08:50:58  0  1\n      z1           list    list  [[3]]      3 2007-09-07 08:50:58  0  1\n      z2 POSIXt,POSIXct numeric    [1]      1 2007-09-07 08:50:58  0  1\n      > track.stop()\n      >\n      > # the files in the tracking directory:\n      > list.files(\"tmp1\", all=TRUE)\n      [1] \".\"                    \"..\"\n      [3] \"filemap.txt\"          \".trackingSummary.rda\"\n      [5] \"x.rda\"                \"y.rda\"\n      [7] \"z1.rda\"               \"z2.rda\"\n      >\n\n      There are several points to note:\n\n         *  The global environment is the default environment for\n            tracking - it is possible to track variables in other\n            environments, but that environment must be supplied as an\n            argument to the track functions.\n\n         *  Vars must be explicitly 'track()'ed - newly created objects\n            are not tracked.  (This is not a \"feature\", but there is\n            currently no way of automatically tracking newly created\n            objects - this is on the wishlist.)  Thus, it is possible\n            for variables in a tracked environment to either tracked or\n            untracked.\n\n         *  When tracking is stopped, all tracked variables are saved on\n            disk and will be no longer accessible until tracking is\n            started again.\n\n         *  The objects are stored each in their own file in the\n            tracking dir, in the format used by 'save()'/'load()' (RData\n            files).\n\nList of basic functions and common calling patterns:\n\n      Six functions cover the majority of common usage of the trackObjs\n      package:\n\n         *  'track.start(dir=...)': start tracking the global\n            environment, with files saved in 'dir'\n\n         *  'track.stop()': stop tracking (any unsaved tracked variables\n            are saved to disk and all tracked variables become\n            unavailable until tracking starts again)\n\n         *  'track(x)': start tracking 'x' - 'x' in the global\n            environment is replaced by an active binding and 'x' is\n            saved in its corresponding file in the tracking directory\n            and, if caching is on, in the tracking environment\n\n         *  'track(x <- value)': start tracking 'x'\n\n         *  'track(list=c('x', 'y'))': start tracking specified\n            variables\n\n         *  'track(all=TRUE)': start tracking all untracked variables in\n            the global environment\n\n         *  'untrack(x)': stop tracking variable 'x' - the R object 'x'\n            is put back as an ordinary object in the global environment\n\n         *  'untrack(all=TRUE)': stop tracking all variables in the\n            global environment (but tracking is still set up)\n\n         *  'untrack(list=...)': stop tracking specified variables\n\n         *  'track.summary()': print a summary of the basic\n            characteristics of tracked variables: name, class, extent,\n            and creation, modification and access times.\n\n         *  'track.remove(x)': completely remove all traces of 'x' from\n            the global environment, tracking environment and tracking\n            directory.   Note that if variable 'x' in the global\n            environment is tracked, 'remove(x)' will make 'x' an\n            \"orphaned\" variable: 'remove(x)' will just remove the active\n            binding from the global environment, and leave 'x' in the\n            tracked environment and on file, and 'x' will reappear after\n            restarting tracking.\n\nComplete list of functions and common calling patterns:\n\n      The 'trackObjs' package provides many additional functions for\n      controlling how tracking is performed (e.g., whether or not\n      tracked variables are cached in memory), examining the state of\n      tracking (show which variables are tracked, untracked, orphaned,\n      masked, etc.) and repairing tracking environments and databases\n      that have become inconsistent or incomplete (this may result from\n      resource limitiations, e.g., being unable to write a save file due\n      to lack of disk space, or from manual tinkering, e.g., dropping a\n      new save file into a tracking directory.)\n\n[truncated here -- see ?trackObjs]\n\n-- Tony Plate\n\nPS: to give credit where due, the end of ?trackObjs says:\n\nReferences:\n      Roger D. Peng. Interacting with data using the filehash package. R\n      News, 6(4):19-24, October 2006.\n      'http://cran.r-project.org/doc/Rnews' and\n      'http://sandybox.typepad.com/software'\n\n      David E. Brahm. Delayed data packages. R News, 2(3):11-12,\n      December 2002.  'http://cran.r-project.org/doc/Rnews'\n\nSee Also:\n      [...]\n      Inspriation from the packages 'g.data' and 'filehash'.",
       "body_snippet": "From ?trackObjs:\n\nOverview of trackObjs package\n\nDescription:\n\n      The trackObjs package sets up a link between R objects in memory\n      and files on disk so that objects are automatically resaved ",
       "thread_id": "thread-cc6ee1afd925",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
-      "id": "msg-cc6ee1afd925",
-      "message_id": "<46E5B42C.4040805@acm.org>",
-      "from_name": "Tony Plate",
-      "from_email_hash": "270dbfad1bede22a8cb030fa728f9ba1cb2915f53915148ec2f12f8d2cfa93a9",
-      "date": "2007-09-10T15:16:28-06:00",
-      "subject": "[R-pkgs] new package 'trackObjs' - mirror objects to files, provide summaries & modification times",
-      "subject_clean": "new package 'trackObjs' - mirror objects to files, provide summaries & modification times",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "From ?trackObjs:\n\nOverview of trackObjs package\n\nDescription:\n\n      The trackObjs package sets up a link between R objects in memory\n      and files on disk so that objects are automatically resaved to\n      files when they are changed.  R objects in files are read in on\n      demand and do not consume memory prior to being referenced.  The\n      trackObjs package also tracks times when objects are created and\n      modified, and caches some basic characteristics of objects to\n      allow for fast summaries of objects.\n\n      Each object is stored in a separate RData file using the standard\n      format as used by 'save()', so that objects can be manually picked\n      out of or added to the trackObjs database if needed.\n\n      Tracking works by replacing a tracked variable by an\n      'activeBinding', which when accessed looks up information in an\n      associated 'tracking environment' and reads or writes the\n      corresponding RData file and/or gets or assigns the variable in\n      the tracking environment.\n\nDetails:\n\n      There are three main reasons to use the 'trackObjs' package:\n\n         *  conveniently handle many moderately-large objects that would\n            collectively exhaust memory or be inconvenient to manage in\n            files by manually using 'save()' and 'load()'\n\n         *  keep track of creation and modification times on objects\n\n         *  get fast summaries of basic characteristics of objects -\n            class, size, dimension, etc.\n\n      There is an option to control whether tracked objects are cached\n      in memory as well as being stored on disk.  By default, objects\n      are not cached.  To save time when working with collections of\n      objects that will all fit in memory, turn on caching with\n      'track.options(cache=TRUE)', or start tracking with\n      'track.start(..., cache=TRUE)'.\n\n      Here is a brief example of tracking some variables in the global\n      environment:\n\n\n      > library(trackObjs)\n      > track.start(\"tmp1\")\n      > x <- 123                  # Not yet tracked\n      > track(x)                  # Variable 'x' is now tracked\n      > track(y <- matrix(1:6, ncol=2)) # 'y' is assigned & tracked\n      > z1 <- list(\"a\", \"b\", \"c\")\n      > z2 <- Sys.time()\n      > track(list=c(\"z1\", \"z2\")) # Track a bunch of variables\n      > track.summary(size=F)     # See a summary of tracked vars\n                  class    mode extent length            modified TA TW\n      x         numeric numeric    [1]      1 2007-09-07 08:50:58  0  1\n      y          matrix numeric  [3x2]      6 2007-09-07 08:50:58  0  1\n      z1           list    list  [[3]]      3 2007-09-07 08:50:58  0  1\n      z2 POSIXt,POSIXct numeric    [1]      1 2007-09-07 08:50:58  0  1\n      > # (TA=\"total accesses\", TW=\"total writes\")\n      > ls(all=TRUE)\n      [1] \"x\"  \"y\"  \"z1\" \"z2\"\n      > track.stop()              # Stop tracking\n      > ls(all=TRUE)\n      character(0)\n      >\n      > # Restart using the tracking dir -- the variables reappear\n      > track.start(\"tmp1\") # Start using the tracking dir again\n     > ls(all=TRUE)\n      [1] \"x\"  \"y\"  \"z1\" \"z2\"\n      > track.summary(size=F)\n                  class    mode extent length            modified TA TW\n      x         numeric numeric    [1]      1 2007-09-07 08:50:58  0  1\n      y          matrix numeric  [3x2]      6 2007-09-07 08:50:58  0  1\n      z1           list    list  [[3]]      3 2007-09-07 08:50:58  0  1\n      z2 POSIXt,POSIXct numeric    [1]      1 2007-09-07 08:50:58  0  1\n      > track.stop()\n      >\n      > # the files in the tracking directory:\n      > list.files(\"tmp1\", all=TRUE)\n      [1] \".\"                    \"..\"\n      [3] \"filemap.txt\"          \".trackingSummary.rda\"\n      [5] \"x.rda\"                \"y.rda\"\n      [7] \"z1.rda\"               \"z2.rda\"\n      >\n\n      There are several points to note:\n\n         *  The global environment is the default environment for\n            tracking - it is possible to track variables in other\n            environments, but that environment must be supplied as an\n            argument to the track functions.\n\n         *  Vars must be explicitly 'track()'ed - newly created objects\n            are not tracked.  (This is not a \"feature\", but there is\n            currently no way of automatically tracking newly created\n            objects - this is on the wishlist.)  Thus, it is possible\n            for variables in a tracked environment to either tracked or\n            untracked.\n\n         *  When tracking is stopped, all tracked variables are saved on\n            disk and will be no longer accessible until tracking is\n            started again.\n\n         *  The objects are stored each in their own file in the\n            tracking dir, in the format used by 'save()'/'load()' (RData\n            files).\n\nList of basic functions and common calling patterns:\n\n      Six functions cover the majority of common usage of the trackObjs\n      package:\n\n         *  'track.start(dir=...)': start tracking the global\n            environment, with files saved in 'dir'\n\n         *  'track.stop()': stop tracking (any unsaved tracked variables\n            are saved to disk and all tracked variables become\n            unavailable until tracking starts again)\n\n         *  'track(x)': start tracking 'x' - 'x' in the global\n            environment is replaced by an active binding and 'x' is\n            saved in its corresponding file in the tracking directory\n            and, if caching is on, in the tracking environment\n\n         *  'track(x <- value)': start tracking 'x'\n\n         *  'track(list=c('x', 'y'))': start tracking specified\n            variables\n\n         *  'track(all=TRUE)': start tracking all untracked variables in\n            the global environment\n\n         *  'untrack(x)': stop tracking variable 'x' - the R object 'x'\n            is put back as an ordinary object in the global environment\n\n         *  'untrack(all=TRUE)': stop tracking all variables in the\n            global environment (but tracking is still set up)\n\n         *  'untrack(list=...)': stop tracking specified variables\n\n         *  'track.summary()': print a summary of the basic\n            characteristics of tracked variables: name, class, extent,\n            and creation, modification and access times.\n\n         *  'track.remove(x)': completely remove all traces of 'x' from\n            the global environment, tracking environment and tracking\n            directory.   Note that if variable 'x' in the global\n            environment is tracked, 'remove(x)' will make 'x' an\n            \"orphaned\" variable: 'remove(x)' will just remove the active\n            binding from the global environment, and leave 'x' in the\n            tracked environment and on file, and 'x' will reappear after\n            restarting tracking.\n\nComplete list of functions and common calling patterns:\n\n      The 'trackObjs' package provides many additional functions for\n      controlling how tracking is performed (e.g., whether or not\n      tracked variables are cached in memory), examining the state of\n      tracking (show which variables are tracked, untracked, orphaned,\n      masked, etc.) and repairing tracking environments and databases\n      that have become inconsistent or incomplete (this may result from\n      resource limitiations, e.g., being unable to write a save file due\n      to lack of disk space, or from manual tinkering, e.g., dropping a\n      new save file into a tracking directory.)\n\n[truncated here -- see ?trackObjs]\n\n-- Tony Plate\n\nPS: to give credit where due, the end of ?trackObjs says:\n\nReferences:\n      Roger D. Peng. Interacting with data using the filehash package. R\n      News, 6(4):19-24, October 2006.\n      'http://cran.r-project.org/doc/Rnews' and\n      'http://sandybox.typepad.com/software'\n\n      David E. Brahm. Delayed data packages. R News, 2(3):11-12,\n      December 2002.  'http://cran.r-project.org/doc/Rnews'\n\nSee Also:\n      [...]\n      Inspriation from the packages 'g.data' and 'filehash'.",
-      "body_snippet": "From ?trackObjs:\n\nOverview of trackObjs package\n\nDescription:\n\n      The trackObjs package sets up a link between R objects in memory\n      and files on disk so that objects are automatically resaved ",
-      "thread_id": "thread-cc6ee1afd925",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
-      "id": "msg-f48ddcd7747f",
-      "message_id": "<60074.124.182.61.237.1189479934.squirrel@124.182.61.237>",
-      "from_name": "adrian at maths.uwa.edu.au",
-      "from_email_hash": "0a0e76f6b108d4a1bad3941837d331be1eae194226d8adc0ceddc0672c5984c8",
-      "date": "2007-09-11T11:05:34+08:00",
-      "subject": "[R-pkgs] scuba 1.1-8",
-      "subject_clean": "scuba 1.1-8",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 1.1-8 of package 'scuba' has been uploaded to CRAN.\n\n'scuba' is a package for scuba diving calculations and decompression\nmodels. It supports dive profiles (tables, plotting etc), analysis of dive\nprofiles using decompression models, gas toxicity calculations, and gas\nusage calculations.\n\nNew features in version 1.1-8:\n     . support for dive profiles uploaded from a dive computer\n     . new dataset: dive profile from a wreck dive on nitrox\n     . bug fix in oxygen toxicity calculations\n\nAdrian Baddeley",
-      "body_snippet": "Version 1.1-8 of package 'scuba' has been uploaded to CRAN.\n\n'scuba' is a package for scuba diving calculations and decompression\nmodels. It supports dive profiles (tables, plotting etc), analysis of ",
-      "thread_id": "thread-f48ddcd7747f",
       "thread_depth": 0,
       "month": "2007-09"
     },
@@ -212,38 +116,6 @@
       "month": "2007-09"
     },
     {
-      "id": "msg-91942808af7b",
-      "message_id": "<31DDB7BE4BF41D4888D41709C476B657062E780D@NIHCESMLBX5.nih.gov>",
-      "from_name": "Fay, Michael (NIH/NIAID) [E]",
-      "from_email_hash": "4ea9b0e1924b872164660a7e16bc410866c98a68763daa0566553bada982fced",
-      "date": "2007-09-12T15:26:09-04:00",
-      "subject": "[R-pkgs] New package: hbim - Hill/Bliss Independence Model for Multicomponent Vaccines",
-      "subject_clean": "New package: hbim - Hill/Bliss Independence Model for Multicomponent Vaccines",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment-0001.pl>",
-      "thread_id": "thread-91942808af7b",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
-      "id": "msg-ddc2bde8da23",
-      "message_id": "<1EA97626-87BD-4ED0-BD9B-25C350AE0CAB@stats.gla.ac.uk>",
-      "from_name": "Adrian Bowman",
-      "from_email_hash": "952460a23e0504d358cc85dc54bbebff25e0d6a727139dc9630bc8a4aacf3dcb",
-      "date": "2007-09-27T10:40:39+01:00",
-      "subject": "[R-pkgs] New version (2.2) of the sm package",
-      "subject_clean": "New version (2.2) of the sm package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The sm package (by Adrian Bowman and Adelchi Azzalini) implements a\nvariety of nonparametric smoothing techniques, centred on nonparametric\nregression for one or two covariates and density estimation for up to\nthree variables.  A new version of the package is now available on CRAN.\n\nIn an earlier unannounced version (2.1), a variety of methods of  \nbandwidth\nselection were added, with default settings to allow particularly simple\nfunction calls.\n\nIn the new version (2.2), interactive control panels are available for\nthe main functions (sm.regression and sm.density), using the rpanel  \npackage\n(which itself is based on tcltk).  In addition, the rgl package is used\nto provide rotatable three-dimensional plots, where these are  \nappropriate.\nThe details of how these functions operate are available in the help  \nfiles\n(including the help file for sm.options) and in the examples.  However,\nthe broad principle is that a control panel is activated by adding the\nargument\n       panel = TRUE\nand an rgl plot is created by adding the argument\n       display = \"rgl\"\n\nAdrian Bowman",
-      "body_snippet": "The sm package (by Adrian Bowman and Adelchi Azzalini) implements a\nvariety of nonparametric smoothing techniques, centred on nonparametric\nregression for one or two covariates and density estimation ",
-      "thread_id": "thread-ddc2bde8da23",
-      "thread_depth": 0,
-      "month": "2007-09"
-    },
-    {
       "id": "msg-ddc2bde8da23",
       "message_id": "<1EA97626-87BD-4ED0-BD9B-25C350AE0CAB@stats.gla.ac.uk>",
       "from_name": "Adrian Bowman",
@@ -273,17 +145,6 @@
       "root_message_id": "msg-57b8a8d05559"
     },
     {
-      "id": "thread-57b8a8d05559",
-      "subject": "ggplot2 - version 0.5.5",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2007-09-02T11:53:46-05:00",
-      "last_reply": "2007-09-02T11:53:46-05:00",
-      "root_message_id": "msg-57b8a8d05559"
-    },
-    {
       "id": "thread-70e1adb20830",
       "subject": "adehabitat version 1.7",
       "message_count": 1,
@@ -293,28 +154,6 @@
       "started": "2007-09-03T09:31:47+02:00",
       "last_reply": "2007-09-03T09:31:47+02:00",
       "root_message_id": "msg-70e1adb20830"
-    },
-    {
-      "id": "thread-70e1adb20830",
-      "subject": "adehabitat version 1.7",
-      "message_count": 1,
-      "participants": [
-        "Clément Calenge"
-      ],
-      "started": "2007-09-03T09:31:47+02:00",
-      "last_reply": "2007-09-03T09:31:47+02:00",
-      "root_message_id": "msg-70e1adb20830"
-    },
-    {
-      "id": "thread-d9d22e547cbe",
-      "subject": "New R package plink for separate calibration IRT linking",
-      "message_count": 1,
-      "participants": [
-        "Jonathan Weeks"
-      ],
-      "started": "2007-09-05T10:15:11-06:00",
-      "last_reply": "2007-09-05T10:15:11-06:00",
-      "root_message_id": "msg-d9d22e547cbe"
     },
     {
       "id": "thread-d9d22e547cbe",
@@ -339,28 +178,6 @@
       "root_message_id": "msg-edbf95232776"
     },
     {
-      "id": "thread-edbf95232776",
-      "subject": "QCA version 0.4-5",
-      "message_count": 1,
-      "participants": [
-        "Adrian Dusa"
-      ],
-      "started": "2007-09-10T02:21:24+03:00",
-      "last_reply": "2007-09-10T02:21:24+03:00",
-      "root_message_id": "msg-edbf95232776"
-    },
-    {
-      "id": "thread-cc6ee1afd925",
-      "subject": "new package 'trackObjs' - mirror objects to files, provide summaries & modification times",
-      "message_count": 1,
-      "participants": [
-        "Tony Plate"
-      ],
-      "started": "2007-09-10T15:16:28-06:00",
-      "last_reply": "2007-09-10T15:16:28-06:00",
-      "root_message_id": "msg-cc6ee1afd925"
-    },
-    {
       "id": "thread-cc6ee1afd925",
       "subject": "new package 'trackObjs' - mirror objects to files, provide summaries & modification times",
       "message_count": 1,
@@ -383,17 +200,6 @@
       "root_message_id": "msg-f48ddcd7747f"
     },
     {
-      "id": "thread-f48ddcd7747f",
-      "subject": "scuba 1.1-8",
-      "message_count": 1,
-      "participants": [
-        "adrian at maths.uwa.edu.au"
-      ],
-      "started": "2007-09-11T11:05:34+08:00",
-      "last_reply": "2007-09-11T11:05:34+08:00",
-      "root_message_id": "msg-f48ddcd7747f"
-    },
-    {
       "id": "thread-91942808af7b",
       "subject": "New package: hbim - Hill/Bliss Independence Model for Multicomponent Vaccines",
       "message_count": 1,
@@ -403,28 +209,6 @@
       "started": "2007-09-12T15:26:09-04:00",
       "last_reply": "2007-09-12T15:26:09-04:00",
       "root_message_id": "msg-91942808af7b"
-    },
-    {
-      "id": "thread-91942808af7b",
-      "subject": "New package: hbim - Hill/Bliss Independence Model for Multicomponent Vaccines",
-      "message_count": 1,
-      "participants": [
-        "Fay, Michael (NIH/NIAID) [E]"
-      ],
-      "started": "2007-09-12T15:26:09-04:00",
-      "last_reply": "2007-09-12T15:26:09-04:00",
-      "root_message_id": "msg-91942808af7b"
-    },
-    {
-      "id": "thread-ddc2bde8da23",
-      "subject": "New version (2.2) of the sm package",
-      "message_count": 1,
-      "participants": [
-        "Adrian Bowman"
-      ],
-      "started": "2007-09-27T10:40:39+01:00",
-      "last_reply": "2007-09-27T10:40:39+01:00",
-      "root_message_id": "msg-ddc2bde8da23"
     },
     {
       "id": "thread-ddc2bde8da23",

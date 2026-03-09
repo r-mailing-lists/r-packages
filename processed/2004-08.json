@@ -20,22 +20,6 @@
       "month": "2004-08"
     },
     {
-      "id": "msg-bb38fbc1e32b",
-      "message_id": "<1091440669.410e101d6cd9a@www.cx.unibe.ch>",
-      "from_name": "Pavel Michna",
-      "from_email_hash": "982feaa75e325ae7611f1526736106dd5dce9e0843ca231f699d953249bb8f79",
-      "date": "2004-08-02T11:57:49+02:00",
-      "subject": "[R-pkgs] New package: RNetCDF",
-      "subject_clean": "New package: RNetCDF",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nRNetCDF: R Interface to NetCDF Datasets\n\nThis package provides an interface to Unidata's NetCDF library functions \n(version 3) and furthermore access to Unidata's udunits calendar\nconversions. The routines and the documentation follow the NetCDF and\nudunits C interface, so the corresponding manuals can be consulted for\nmore detailed information.\n\nThe main aims of this package are:\n- to provide full read/write access to all NetCDF datasets (supporting\n  all external NetCDF data types)\n- to provide a low level interface which allows the user to write his\n  own (customized) NetCDF read/write functions in a simple way\n\nThis package requires Unidata's NetCDF and the undunits library already \ninstalled on the system, which are both available from Unidata's website\n(http://www.unidata.ucar.edu/packages/).\n\n\nFeedback is greatly appreciated.\n\nPavel\n\n\nI would like to thank Juerg Schmidli for his excellent comments and\nsuggestions during the development process of this package and This\nRutishauser for testing the package from the user's perspective.\n\n\n------------------------------------------------------------------------\n\nPavel Michna (PhD Student)                  Tel:     +41 (0)31 631 85 42\nClimatology and Meteorology (KLIMET)        Fax:     +41 (0)31 631 85 11\nInstitute of Geography                      E-Mail: michna at giub.unibe.ch\nUniversity of Bern\nHallerstrasse 12\nCH-3012 Bern/Switzerland",
-      "body_snippet": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nRNetCDF: R Interface to NetCDF Datasets\n\nThis package provides an interface to Unidata's NetCDF library functions \n(vers",
-      "thread_id": "thread-bb38fbc1e32b",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
       "id": "msg-d72e9d308a2a",
       "message_id": "<030f01c47bdb$c8d6a160$ec6640ab@stuk>",
       "from_name": "Trevor Hastie",
@@ -48,38 +32,6 @@
       "body_plain": "I have contributed a \"gam\" library to CRAN,\nwhich implements \"Generalized Additive Models\".\n\nThis implementation follows closely the description in \nthe GAM chapter 7 of the \"white\" book \"Statistical Models in S\"\n(Chambers & Hastie (eds), 1992, Wadsworth), as well as the philosophy\nin \"Generalized Additive Models\" (Hastie & Tibshirani 1990, Chapman and\nHall). Hence it behaves pretty much like the Splus version of GAM.\n\nNote: this gam library and functions therein are different from the\ngam function in package mgcv, and both libraries should not be used\nsimultaneously.\n\nThe gam library allows both local regression (loess) and smoothing\nspline smoothers, and uses backfitting and local scoring to fit gams.\nIt also allows users to supply their own smoothing methods which can\nthen be included in gam fits.\n\nThe gam function in mgcv uses only smoothing spline smoothers, with a\nfocus on automatic parameter selection via gcv. \n\nSome of the features of the gam library:\n\n* full compatibility with the R functions glm and lm - a fitted gam\n  inherits from class \"glm\" and \"lm\"\n\n* print, summary, anova, predict and plot methods are provided, as\n  well as the usual extractor methods like coefficients, residuals etc\n\n* the method step.gam provides a flexible and customizable approach to\n  model selection. \n\nSome differences with the Splus version of gam:\n\n* predictions with new data are improved, without need for the\n  \"safe.predict.gam\" function. This was partly facilitated by\n  the improved prediction strategy used in R for GLMs and LMs\n\n* Currently the only backfitting algorithm is all.wam. In the earlier\n  versions of gam, dedicated fortran routines fit models that had only\n  smoothing spline terms (s.wam) or all local regression terms\n  (lo.wam), which in fact made calls back to Splus to update the\n  working response and weights. These were designed for efficiency. It\n  seems now with much faster computers this efficiency is no longer\n  needed, and all.wam is modular and \"visible\"\n\n \nThis package is numbered 0.9 in anticipation of a few bug fixes and\nglitches. I have tested many aspects of the functions, but there are\nalways a few that slip by. I will be happy to hear of any problems,\nbugs and suggestions.\n\nPlans for future versions:\n\n* exact standard error calculations. gam employs approximations as\n  described in the white book. With a bit more computing (now\n  possible), we will have a function that computes exact standard\n  errors along the lines described in the GAM book page 127. \n\nTrevor Hastie\n\n--------------------------------------------------------------------\n  Trevor Hastie                                  hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231 (Statistics)          Fax: (650) 725-8977  \n  (650) 498-5233 (Biostatistics)   Fax: (650) 725-6951\n  URL: http://www-stat.stanford.edu/~hastie  \n  address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
       "body_snippet": "I have contributed a \"gam\" library to CRAN,\nwhich implements \"Generalized Additive Models\".\n\nThis implementation follows closely the description in \nthe GAM chapter 7 of the \"white\" book \"Statistical ",
       "thread_id": "thread-d72e9d308a2a",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-d72e9d308a2a",
-      "message_id": "<030f01c47bdb$c8d6a160$ec6640ab@stuk>",
-      "from_name": "Trevor Hastie",
-      "from_email_hash": "f7b7890060ce5c52b4e5e2ad3e429109262da6ce1e809ca3f2549a18fd94c00e",
-      "date": "2004-08-06T10:35:36-07:00",
-      "subject": "[R-pkgs] gam --- a new contributed package",
-      "subject_clean": "gam --- a new contributed package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have contributed a \"gam\" library to CRAN,\nwhich implements \"Generalized Additive Models\".\n\nThis implementation follows closely the description in \nthe GAM chapter 7 of the \"white\" book \"Statistical Models in S\"\n(Chambers & Hastie (eds), 1992, Wadsworth), as well as the philosophy\nin \"Generalized Additive Models\" (Hastie & Tibshirani 1990, Chapman and\nHall). Hence it behaves pretty much like the Splus version of GAM.\n\nNote: this gam library and functions therein are different from the\ngam function in package mgcv, and both libraries should not be used\nsimultaneously.\n\nThe gam library allows both local regression (loess) and smoothing\nspline smoothers, and uses backfitting and local scoring to fit gams.\nIt also allows users to supply their own smoothing methods which can\nthen be included in gam fits.\n\nThe gam function in mgcv uses only smoothing spline smoothers, with a\nfocus on automatic parameter selection via gcv. \n\nSome of the features of the gam library:\n\n* full compatibility with the R functions glm and lm - a fitted gam\n  inherits from class \"glm\" and \"lm\"\n\n* print, summary, anova, predict and plot methods are provided, as\n  well as the usual extractor methods like coefficients, residuals etc\n\n* the method step.gam provides a flexible and customizable approach to\n  model selection. \n\nSome differences with the Splus version of gam:\n\n* predictions with new data are improved, without need for the\n  \"safe.predict.gam\" function. This was partly facilitated by\n  the improved prediction strategy used in R for GLMs and LMs\n\n* Currently the only backfitting algorithm is all.wam. In the earlier\n  versions of gam, dedicated fortran routines fit models that had only\n  smoothing spline terms (s.wam) or all local regression terms\n  (lo.wam), which in fact made calls back to Splus to update the\n  working response and weights. These were designed for efficiency. It\n  seems now with much faster computers this efficiency is no longer\n  needed, and all.wam is modular and \"visible\"\n\n \nThis package is numbered 0.9 in anticipation of a few bug fixes and\nglitches. I have tested many aspects of the functions, but there are\nalways a few that slip by. I will be happy to hear of any problems,\nbugs and suggestions.\n\nPlans for future versions:\n\n* exact standard error calculations. gam employs approximations as\n  described in the white book. With a bit more computing (now\n  possible), we will have a function that computes exact standard\n  errors along the lines described in the GAM book page 127. \n\nTrevor Hastie\n\n--------------------------------------------------------------------\n  Trevor Hastie                                  hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231 (Statistics)          Fax: (650) 725-8977  \n  (650) 498-5233 (Biostatistics)   Fax: (650) 725-6951\n  URL: http://www-stat.stanford.edu/~hastie  \n  address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065",
-      "body_snippet": "I have contributed a \"gam\" library to CRAN,\nwhich implements \"Generalized Additive Models\".\n\nThis implementation follows closely the description in \nthe GAM chapter 7 of the \"white\" book \"Statistical ",
-      "thread_id": "thread-d72e9d308a2a",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-b01a89302443",
-      "message_id": "<Pine.GSO.4.33.0408111452280.15406-100000@zil.kom.auc.dk>",
-      "from_name": "Florian Wickelmaier",
-      "from_email_hash": "62f67a37e8e23c4f043132a0d0bf5fc233dbec16c6e2427096d06ed329449b1d",
-      "date": "2004-08-11T15:20:12+02:00",
-      "subject": "[R-pkgs] New package: eba",
-      "subject_clean": "New package: eba",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have recently uploaded a new package to CRAN called eba,\nwhich stands for elimination-by-aspects models.\n\nIt allows for fitting and testing probabilistic choice models,\nespecially the BTL model (Bradley & Terry, 1952; Luce, 1959),\nelimination-by-aspects (EBA) models (Tversky, 1972), and\npreference tree (Pretree) models (Tversky & Sattath, 1979).\n\nI believe that the functions in this package can be useful\nin many fields, like marketing, consumer research, psychological\nscaling, and food testing, to name only a few.\n\nDetailed information about probabilistic choice models and\nhow to fit them can be found in a recent publication:\n\nWickelmaier, F. & Schmid, C. (2004). A Matlab function to estimate\n  choice model parameters from paired-comparison data. Behavior\n  Research Methods, Instruments, and Computers, 36(1), 29-40.\n\nI would be glad to receive some feedback or comments.\n\n---------------------------------------------------------------\n Florian Wickelmaier\n Dipl.-Psych., Research Assistant       office: B5-209\n Department of Acoustics                phone: (+45) 9635 8720\n Fredrik Bajers Vej 7 B5                fax: (+45) 9815 2144\n DK-9220 Aalborg East                   e-mail: fw at acoustics.dk",
-      "body_snippet": "I have recently uploaded a new package to CRAN called eba,\nwhich stands for elimination-by-aspects models.\n\nIt allows for fitting and testing probabilistic choice models,\nespecially the BTL model (Bra",
-      "thread_id": "thread-b01a89302443",
       "thread_depth": 0,
       "month": "2004-08"
     },
@@ -116,22 +68,6 @@
       "month": "2004-08"
     },
     {
-      "id": "msg-ecfc29cfc6d3",
-      "message_id": "<20040812200147.3e098447.Achim.Zeileis@wu-wien.ac.at>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
-      "date": "2004-08-12T20:01:47+02:00",
-      "subject": "[R-pkgs] \"new\" package fortunes 1.0-3",
-      "subject_clean": "\"new\" package fortunes 1.0-3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nI used the summer months to work on all of my packages,\nand so this is the first of a sequence of announcements\nof \"new\" or updated packages. The \"new\" packages are new \nin the sense that previous versions had been on CRAN for\nsome months but hadn't been announced to the R community\nvia this list until now.\n\nAll packages are available from the CRAN master site\nin source form - binary versions should be available\nfrom the mirrors in the next days.\n\n\nSo the first announcement is for fortunes 1.0-3:\n\nThe fortunes package provides simple infrastructure for\nreading fortunes from a .csv file and displaying them.\nFurthermore, it contains a growing list of fortunes\nrelated to R, mainly collected from the mailing lists\nbut also from quotes at conferences. The author list\ncontains me (as I've written the R code) as well as\nthe people who contributed quotes by sending me a mail.\nThe original \"authors\" of each quote are always given\nin the respective fortune.\n\nFor those of you who want to see a quote each time they \nstart up R: you can add to your .Rprofile something like\n\nif(interactive()) { library(fortunes); fortune() }\n\nIf you want to create your own list of fortunes you can\nsimply add another fortune collection in .csv format.\nOf course, it would also be great if you could contribute\nsome quotes to the package...simply send me an e-mail.\n\nEnjoy!\nZ\n\n\n-----------------\nPackage: fortunes\nVersion: 1.0-3\nDate: 2004-08-10\nTitle: R Fortunes\nAuthor: Achim Zeileis, fortune contributions from Torsten Hothorn, Peter\n        Dalgaard, Uwe Ligges, Kevin Wright, Martin Maechler\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: R Fortunes\nDepends: R (>= 1.4.0)\nLicense: GPL",
-      "body_snippet": "Dear useRs,\n\nI used the summer months to work on all of my packages,\nand so this is the first of a sequence of announcements\nof \"new\" or updated packages. The \"new\" packages are new \nin the sense that",
-      "thread_id": "thread-ecfc29cfc6d3",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
       "id": "msg-8d14f731478e",
       "message_id": "<20040812200328.0c22c1d6.Achim.Zeileis@wu-wien.ac.at>",
       "from_name": "Achim Zeileis",
@@ -144,38 +80,6 @@
       "body_plain": "Dear useRs,\n\nhere is the announcement for the next \"new\" package:\nsandwich 0.1-3.\n\nsandwich provides heteroskedasticity (and autocorrelation)\nconsistent covariance matrix estimators (also called HC\nand HAC estimators).\n\nThe former are implemented in the function vcovHC() (which\nwas available in strucchange  before - and independently\nin hccm() in John Fox's car package).\n\nAnd the latter are implemented in the function vcovHAC().\nThis implements sandwich-type estimators in a rather \nflexible way, allowing for user-defined weights or \nweight functions. It builds on some of the functionality\nwhich was before available in Thomas Lumley's weave package\n(not on CRAN). In particular it makes available the\nclass of WEAVE estimators introduced by Lumley & Heagerty (1999)\nin the function weave() which is a convenience interface to\nvcovHAC(). Furthermore, it implements the class of kernel\nHAC estimators with automatic bandwidth-selection of\nAndrews (1991) in the function kernHAC(), which is again a\nconvenience interface to vcovHAC().\n\nBest wishes,\nZ\n\n-----------------\nPackage: sandwich\nVersion: 0.1-3\nDate: 2004-07-19\nTitle: Robust Covariance Matrix Estimators\nAuthor: Thomas Lumley, Achim Zeileis\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: Model-robust standard error estimators for time series\n             and longitudinal data.\nDepends: zoo, R (>= 1.5.0)\nLicense: GPL version 2",
       "body_snippet": "Dear useRs,\n\nhere is the announcement for the next \"new\" package:\nsandwich 0.1-3.\n\nsandwich provides heteroskedasticity (and autocorrelation)\nconsistent covariance matrix estimators (also called HC\nan",
       "thread_id": "thread-8d14f731478e",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-8d14f731478e",
-      "message_id": "<20040812200328.0c22c1d6.Achim.Zeileis@wu-wien.ac.at>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
-      "date": "2004-08-12T20:03:28+02:00",
-      "subject": "[R-pkgs] \"new\" package sandwich 0.1-3",
-      "subject_clean": "\"new\" package sandwich 0.1-3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nhere is the announcement for the next \"new\" package:\nsandwich 0.1-3.\n\nsandwich provides heteroskedasticity (and autocorrelation)\nconsistent covariance matrix estimators (also called HC\nand HAC estimators).\n\nThe former are implemented in the function vcovHC() (which\nwas available in strucchange  before - and independently\nin hccm() in John Fox's car package).\n\nAnd the latter are implemented in the function vcovHAC().\nThis implements sandwich-type estimators in a rather \nflexible way, allowing for user-defined weights or \nweight functions. It builds on some of the functionality\nwhich was before available in Thomas Lumley's weave package\n(not on CRAN). In particular it makes available the\nclass of WEAVE estimators introduced by Lumley & Heagerty (1999)\nin the function weave() which is a convenience interface to\nvcovHAC(). Furthermore, it implements the class of kernel\nHAC estimators with automatic bandwidth-selection of\nAndrews (1991) in the function kernHAC(), which is again a\nconvenience interface to vcovHAC().\n\nBest wishes,\nZ\n\n-----------------\nPackage: sandwich\nVersion: 0.1-3\nDate: 2004-07-19\nTitle: Robust Covariance Matrix Estimators\nAuthor: Thomas Lumley, Achim Zeileis\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: Model-robust standard error estimators for time series\n             and longitudinal data.\nDepends: zoo, R (>= 1.5.0)\nLicense: GPL version 2",
-      "body_snippet": "Dear useRs,\n\nhere is the announcement for the next \"new\" package:\nsandwich 0.1-3.\n\nsandwich provides heteroskedasticity (and autocorrelation)\nconsistent covariance matrix estimators (also called HC\nan",
-      "thread_id": "thread-8d14f731478e",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-ba67581fd040",
-      "message_id": "<20040812200426.20295e3d.Achim.Zeileis@wu-wien.ac.at>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
-      "date": "2004-08-12T20:04:26+02:00",
-      "subject": "[R-pkgs] \"new\" package zoo 0.2-0",
-      "subject_clean": "\"new\" package zoo 0.2-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nyet another \"new\" package: zoo 0.2-0.\n\nzoo provides a simple S3 class and methods for totally\nordered indexed observations such as irregular time\nseries. Although there are other packages for irregular\ntime series available on CRAN (Giles Heywood's its \npackage and irts() in Adrian Trapletti's tseries package)\nI wrote this package because I needed something which\nprovides simple infrastructure for observations with\n(almost) arbitrary indexes (and not only \"POSIXct\" time\nstampes as in its() and irts()). And it was at least also\nuseful for Gabor Grothendieck who provided most of the\nupdates to this version.\n\nBest wishes,\nZ\n\n------------\n\nPackage: zoo\nVersion: 0.2-0\nDate: 2004-08-12\nTitle: Z's ordered observations\nAuthor: Achim Zeileis, Gabor Grothendieck\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: A class with methods for totally ordered indexed\nobservations             such as irregular time series.\nDepends: R (>= 1.7.0)\nLicense: GPL",
-      "body_snippet": "Dear useRs,\n\nyet another \"new\" package: zoo 0.2-0.\n\nzoo provides a simple S3 class and methods for totally\nordered indexed observations such as irregular time\nseries. Although there are other packages",
-      "thread_id": "thread-ba67581fd040",
       "thread_depth": 0,
       "month": "2004-08"
     },
@@ -212,22 +116,6 @@
       "month": "2004-08"
     },
     {
-      "id": "msg-4b0b92be2bbc",
-      "message_id": "<20040812200506.78e22588.Achim.Zeileis@wu-wien.ac.at>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
-      "date": "2004-08-12T20:05:06+02:00",
-      "subject": "[R-pkgs] updated package strucchange 1.2-4",
-      "subject_clean": "updated package strucchange 1.2-4",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nthe strucchange package for testing for structural change\nhas been updated: the current version is 1.2-4.\nThe most significant additions were two functions gefp()\nand efpFunctional().\n\ngefp() implements a class of generalized M-fluctuation\ntests for testing for parameter instability or structural\nchange in general parametric models including generalized\nlinear models (GLMs). \n\nefpFunctional() provides infrastructure for inference based\non functionals applied to empirical fluctuation processes\nsuch as automatic tabulation of critical values and a choice\nof a suitable visualization method.\n\nThe theory behind both functions is described in Zeileis\n& Hornik (2003), the implementation ideas are explained in\nZeileis (2004). Links to both papers are available from\nmy web page: http://www.ci.tuwien.ac.at/~zeileis/\n\nBest wishes,\nZ\n\n--------------------\n\nPackage: strucchange\nVersion: 1.2-4\nDate: 2004-08-10\nTitle: Testing for Structural Change\nAuthor: Achim Zeileis, Friedrich Leisch, Bruce Hansen,\n        Kurt Hornik, Christian Kleiber, Andrea Peters\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: Testing, dating and monitoring of structural change in\n             linear regression relationships.\n             strucchange features tests/methods from the generalized\n             fluctuation test framework as well as from the F test (Chow\n             test) framework. This includes methods to fit, plot and\n             test fluctuation processes (e.g., CUSUM, MOSUM,\n             recursive/moving estimates) and F statistics, respectively.\n             It is possible to monitor incoming data online using\n             fluctuation processes.\n             Finally, the breakpoints in regression models with\n             structural changes can be estimated together with\n             confidence intervals. Emphasis is always given to methods\n             for visualizing the data.\nDepends: sandwich, zoo, R (>= 1.5.0)\nLicense: GPL",
-      "body_snippet": "Dear useRs,\n\nthe strucchange package for testing for structural change\nhas been updated: the current version is 1.2-4.\nThe most significant additions were two functions gefp()\nand efpFunctional().\n\nge",
-      "thread_id": "thread-4b0b92be2bbc",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
       "id": "msg-f07184bceba0",
       "message_id": "<20040812200509.17710696.Achim.Zeileis@wu-wien.ac.at>",
       "from_name": "Achim Zeileis",
@@ -240,38 +128,6 @@
       "body_plain": "Dear useRs,\n\nmy last announcement is an update of the ineq package\nfor measuring inequality, concentration and poverty.\nThe current version is now 0.2-4.\n\nThanks to suggestions from Rein Halbersma the Pen()\nfunction for plotting Pen's parade was improved and now\nallows for much more flexibility. See the help page\nfor examples.\n\nBest wishes,\nZ\n\n-------------\n\nPackage: ineq\nVersion: 0.2-4\nDate: 2004-08-10\nTitle: Measuring inequality, concentration and poverty\nAuthor: Achim Zeileis\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: Inequality, concentration and poverty measures\n             Lorenz curves (empirical and theoretical)\nLicense: GPL",
       "body_snippet": "Dear useRs,\n\nmy last announcement is an update of the ineq package\nfor measuring inequality, concentration and poverty.\nThe current version is now 0.2-4.\n\nThanks to suggestions from Rein Halbersma the",
       "thread_id": "thread-f07184bceba0",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-f07184bceba0",
-      "message_id": "<20040812200509.17710696.Achim.Zeileis@wu-wien.ac.at>",
-      "from_name": "Achim Zeileis",
-      "from_email_hash": "d766623ae20ff5eea9df5809187df08da7b9ac247d6072a1908ecce0219ab3e0",
-      "date": "2004-08-12T20:05:09+02:00",
-      "subject": "[R-pkgs] updated package ineq 0.2-4",
-      "subject_clean": "updated package ineq 0.2-4",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nmy last announcement is an update of the ineq package\nfor measuring inequality, concentration and poverty.\nThe current version is now 0.2-4.\n\nThanks to suggestions from Rein Halbersma the Pen()\nfunction for plotting Pen's parade was improved and now\nallows for much more flexibility. See the help page\nfor examples.\n\nBest wishes,\nZ\n\n-------------\n\nPackage: ineq\nVersion: 0.2-4\nDate: 2004-08-10\nTitle: Measuring inequality, concentration and poverty\nAuthor: Achim Zeileis\nMaintainer: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\nDescription: Inequality, concentration and poverty measures\n             Lorenz curves (empirical and theoretical)\nLicense: GPL",
-      "body_snippet": "Dear useRs,\n\nmy last announcement is an update of the ineq package\nfor measuring inequality, concentration and poverty.\nThe current version is now 0.2-4.\n\nThanks to suggestions from Rein Halbersma the",
-      "thread_id": "thread-f07184bceba0",
-      "thread_depth": 0,
-      "month": "2004-08"
-    },
-    {
-      "id": "msg-b0c5189e00e7",
-      "message_id": "<002a01c486b0$127e2700$7b360ad4@math.auc.dk>",
-      "from_name": "Claus Dethlefsen",
-      "from_email_hash": "48e6709cd362023eb65ed9bec9662a1f01e94978d5c5ac385fbb13896d4bdc25",
-      "date": "2004-08-20T14:20:25+02:00",
-      "subject": "[R-pkgs] Package \"deal\" version 1.2-17",
-      "subject_clean": "Package \"deal\" version 1.2-17",
-      "in_reply_to": "<200408131021.i7DAK5cI027245@hypatia.math.ethz.ch>",
-      "references": [],
-      "body_plain": "A new version of the package \"deal\" is now available on CRAN. The package is\nfor learning (parameters and structure) of Bayesian networks and provide an\ninterface to Hugin. In the new version there is an interface to the package\ndynamicGraph which allows for editing and callbacks of graphs in the\ndisplayed window.\n\nTry\n> install.packages(c(\"dynamicGraph\",\"deal\"))\n> library(deal)\n> demo(reinis)\n\nBest,\nClaus\n\n---------------------------------------------------------------------------\nAssistant Prof. Claus Dethlefsen, PhD\nDepartment of Mathematical Sciences, Aalborg University \nFredrik Bajers Vej 7G, DK-9220 Aalborg, Denmark\ndethlef at math.aau.dk; www.math.aau.dk/~dethlef\nPh: +45 9635 8878; Fax: +45 9815 8129\n \n\n---",
-      "body_snippet": "A new version of the package \"deal\" is now available on CRAN. The package is\nfor learning (parameters and structure) of Bayesian networks and provide an\ninterface to Hugin. In the new version there is",
-      "thread_id": "thread-b0c5189e00e7",
       "thread_depth": 0,
       "month": "2004-08"
     },
@@ -305,17 +161,6 @@
       "root_message_id": "msg-bb38fbc1e32b"
     },
     {
-      "id": "thread-bb38fbc1e32b",
-      "subject": "New package: RNetCDF",
-      "message_count": 1,
-      "participants": [
-        "Pavel Michna"
-      ],
-      "started": "2004-08-02T11:57:49+02:00",
-      "last_reply": "2004-08-02T11:57:49+02:00",
-      "root_message_id": "msg-bb38fbc1e32b"
-    },
-    {
       "id": "thread-d72e9d308a2a",
       "subject": "gam --- a new contributed package",
       "message_count": 1,
@@ -325,28 +170,6 @@
       "started": "2004-08-06T10:35:36-07:00",
       "last_reply": "2004-08-06T10:35:36-07:00",
       "root_message_id": "msg-d72e9d308a2a"
-    },
-    {
-      "id": "thread-d72e9d308a2a",
-      "subject": "gam --- a new contributed package",
-      "message_count": 1,
-      "participants": [
-        "Trevor Hastie"
-      ],
-      "started": "2004-08-06T10:35:36-07:00",
-      "last_reply": "2004-08-06T10:35:36-07:00",
-      "root_message_id": "msg-d72e9d308a2a"
-    },
-    {
-      "id": "thread-b01a89302443",
-      "subject": "New package: eba",
-      "message_count": 1,
-      "participants": [
-        "Florian Wickelmaier"
-      ],
-      "started": "2004-08-11T15:20:12+02:00",
-      "last_reply": "2004-08-11T15:20:12+02:00",
-      "root_message_id": "msg-b01a89302443"
     },
     {
       "id": "thread-b01a89302443",
@@ -371,17 +194,6 @@
       "root_message_id": "msg-ecfc29cfc6d3"
     },
     {
-      "id": "thread-ecfc29cfc6d3",
-      "subject": "\"new\" package fortunes 1.0-3",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2004-08-12T20:01:47+02:00",
-      "last_reply": "2004-08-12T20:01:47+02:00",
-      "root_message_id": "msg-ecfc29cfc6d3"
-    },
-    {
       "id": "thread-8d14f731478e",
       "subject": "\"new\" package sandwich 0.1-3",
       "message_count": 1,
@@ -391,28 +203,6 @@
       "started": "2004-08-12T20:03:28+02:00",
       "last_reply": "2004-08-12T20:03:28+02:00",
       "root_message_id": "msg-8d14f731478e"
-    },
-    {
-      "id": "thread-8d14f731478e",
-      "subject": "\"new\" package sandwich 0.1-3",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2004-08-12T20:03:28+02:00",
-      "last_reply": "2004-08-12T20:03:28+02:00",
-      "root_message_id": "msg-8d14f731478e"
-    },
-    {
-      "id": "thread-ba67581fd040",
-      "subject": "\"new\" package zoo 0.2-0",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2004-08-12T20:04:26+02:00",
-      "last_reply": "2004-08-12T20:04:26+02:00",
-      "root_message_id": "msg-ba67581fd040"
     },
     {
       "id": "thread-ba67581fd040",
@@ -437,17 +227,6 @@
       "root_message_id": "msg-4b0b92be2bbc"
     },
     {
-      "id": "thread-4b0b92be2bbc",
-      "subject": "updated package strucchange 1.2-4",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2004-08-12T20:05:06+02:00",
-      "last_reply": "2004-08-12T20:05:06+02:00",
-      "root_message_id": "msg-4b0b92be2bbc"
-    },
-    {
       "id": "thread-f07184bceba0",
       "subject": "updated package ineq 0.2-4",
       "message_count": 1,
@@ -457,28 +236,6 @@
       "started": "2004-08-12T20:05:09+02:00",
       "last_reply": "2004-08-12T20:05:09+02:00",
       "root_message_id": "msg-f07184bceba0"
-    },
-    {
-      "id": "thread-f07184bceba0",
-      "subject": "updated package ineq 0.2-4",
-      "message_count": 1,
-      "participants": [
-        "Achim Zeileis"
-      ],
-      "started": "2004-08-12T20:05:09+02:00",
-      "last_reply": "2004-08-12T20:05:09+02:00",
-      "root_message_id": "msg-f07184bceba0"
-    },
-    {
-      "id": "thread-b0c5189e00e7",
-      "subject": "Package \"deal\" version 1.2-17",
-      "message_count": 1,
-      "participants": [
-        "Claus Dethlefsen"
-      ],
-      "started": "2004-08-20T14:20:25+02:00",
-      "last_reply": "2004-08-20T14:20:25+02:00",
-      "root_message_id": "msg-b0c5189e00e7"
     },
     {
       "id": "thread-b0c5189e00e7",

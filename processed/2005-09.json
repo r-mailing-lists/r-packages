@@ -20,22 +20,6 @@
       "month": "2005-09"
     },
     {
-      "id": "msg-2a41b61bef80",
-      "message_id": "<009e01c5b211$cc248220$0540210a@www.domain>",
-      "from_name": "Dimitris Rizopoulos",
-      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
-      "date": "2005-09-05T14:03:15+02:00",
-      "subject": "[R-pkgs] New package for grouped data models",
-      "subject_clean": "New package for grouped data models",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R-users,\n\nWe'd like to announce the release of our new package \"grouped\" \n(available from CRAN), for fitting models for grouped or coarse data, \nunder the Coarsened At Random assumption. This is useful in cases \nwhere the true response variable is known only up to an interval in \nwhich it lies. Features of the package include: power calculations for \ntwo-group comparisons, computation of Bayesian residuals using \nMultiple Imputation, capability of fitting models for index-kind data \n(e.g., quality of life indexes). Any kind of feedback (questions, \nsuggestions, bug-reports, etc.) is more than welcome.\n\n\nBest,\nDimitris Rizopoulos\nRoula Tsonaka\n\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/16/336899\nFax: +32/16/337015\nWeb: http://www.med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm \n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
-      "body_snippet": "Dear R-users,\n\nWe'd like to announce the release of our new package \"grouped\" \n(available from CRAN), for fitting models for grouped or coarse data, \nunder the Coarsened At Random assumption. This is ",
-      "thread_id": "thread-2a41b61bef80",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
       "id": "msg-6569dc795081",
       "message_id": "<Pine.LNX.4.44.0509072038490.7066-100000@reclus.nhh.no>",
       "from_name": "Roger Bivand",
@@ -48,38 +32,6 @@
       "body_plain": "Revised versions of maptools, a package for reading geographical data from\nshapefiles, and sp, a package with classes and methods for spatial data\nhandling, have been released on CRAN. They are maptools release 0.5-1 and\nsp release 0.8-1.\n\nThe maptools package now depends on sp (>= 0.8), so that users of maptools\nwill need both to update the package itself, and to install the sp\npackage. All previous maptools classes and functions are still available,\nbut users are encouraged to try out the cleaner and more robust versions\nin sp.\n\nFurther details of changes (particularly incompatible changes in sp) are\navailable on the R-sig-geo mailing list (see the \"Spatial\" task view on\nCRAN), and at http://r-spatial.sourceforge.net\n\n-- \nRoger Bivand\nEconomic Geography Section, Department of Economics, Norwegian School of\nEconomics and Business Administration, Helleveien 30, N-5045 Bergen,\nNorway. voice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
       "body_snippet": "Revised versions of maptools, a package for reading geographical data from\nshapefiles, and sp, a package with classes and methods for spatial data\nhandling, have been released on CRAN. They are maptoo",
       "thread_id": "thread-6569dc795081",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
-      "id": "msg-6569dc795081",
-      "message_id": "<Pine.LNX.4.44.0509072038490.7066-100000@reclus.nhh.no>",
-      "from_name": "Roger Bivand",
-      "from_email_hash": "a0c87926e9477aa221755cc93bdef47227c3563fd707e66ae49044467663d168",
-      "date": "2005-09-07T20:41:08+02:00",
-      "subject": "[R-pkgs] Revised versions of the maptools and sp packages",
-      "subject_clean": "Revised versions of the maptools and sp packages",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Revised versions of maptools, a package for reading geographical data from\nshapefiles, and sp, a package with classes and methods for spatial data\nhandling, have been released on CRAN. They are maptools release 0.5-1 and\nsp release 0.8-1.\n\nThe maptools package now depends on sp (>= 0.8), so that users of maptools\nwill need both to update the package itself, and to install the sp\npackage. All previous maptools classes and functions are still available,\nbut users are encouraged to try out the cleaner and more robust versions\nin sp.\n\nFurther details of changes (particularly incompatible changes in sp) are\navailable on the R-sig-geo mailing list (see the \"Spatial\" task view on\nCRAN), and at http://r-spatial.sourceforge.net\n\n-- \nRoger Bivand\nEconomic Geography Section, Department of Economics, Norwegian School of\nEconomics and Business Administration, Helleveien 30, N-5045 Bergen,\nNorway. voice: +47 55 95 93 55; fax +47 55 95 95 43\ne-mail: Roger.Bivand at nhh.no",
-      "body_snippet": "Revised versions of maptools, a package for reading geographical data from\nshapefiles, and sp, a package with classes and methods for spatial data\nhandling, have been released on CRAN. They are maptoo",
-      "thread_id": "thread-6569dc795081",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
-      "id": "msg-96772162d465",
-      "message_id": "<432086B4.3080804@swissonline.ch>",
-      "from_name": "Adrian Trapletti",
-      "from_email_hash": "8ef317913635f2eb99705d48e347f755fb3f9abcdcaa447bda61b9d2c686fa69",
-      "date": "2005-09-08T20:45:08+02:00",
-      "subject": "[R-pkgs] tseries",
-      "subject_clean": "tseries",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "There is a new version of tseries with an enhanced \"get.hist.quote\" \navailable:\n\n* \"get.hist.quote\" now optionally returns a \"zoo\", \"ts\", or \"its\" object \n(thanks to Achim Zeileis)\n* New provider \"oanda\" is implemented which provides access to one of \nthe largest foreign exchange databases\n* Some minor improvements, see the \"ChangeLog\" for details\n\nBest regards\nAdrian Trapletti",
-      "body_snippet": "There is a new version of tseries with an enhanced \"get.hist.quote\" \navailable:\n\n* \"get.hist.quote\" now optionally returns a \"zoo\", \"ts\", or \"its\" object \n(thanks to Achim Zeileis)\n* New provider \"oan",
-      "thread_id": "thread-96772162d465",
       "thread_depth": 0,
       "month": "2005-09"
     },
@@ -116,38 +68,6 @@
       "month": "2005-09"
     },
     {
-      "id": "msg-574ea0f70e97",
-      "message_id": "<20050909193749.TNWQ1799.tomts40-srv.bellnexxia.net@JohnDesktop8300>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2005-09-09T15:37:50-04:00",
-      "subject": "[R-pkgs] Internationalized version of the Rcmdr package",
-      "subject_clean": "Internationalized version of the Rcmdr package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R-packages list members,\n\nI've recently uploaded to CRAN version 1.1-1 of the Rcmdr (\"R Commander\")\npackage. Based on the tcltk package, the Rcmdr provides a basic-statistics\ngraphical interface to R.\n\nThe general functionality of the R Commander has not changed much since\nversion 1.0-0. There are some small improvements to the package, but the\nreason that I'm re-announcing it is that the latest version supports\ntranslation into other languages, using the new internationalization and\nlocalization features of R 2.1.x. \n\nA Catalan translation (courtesy of Manel Salamero), a French translation\n(courtesy of Philippe Grosjean), a Japanese translations (courtesy of\nTakaharu Araki), and a Slovenian translation (courtesy of Jaro Lajovic), are\nprovided with the Rcmdr package. I understand that Portuguese, Russian, and\nSpanish translations are in the works, and these will be incorporated when\nthey are completed. \n\nIf you're interested in translating the Rcmdr into another language, please\ncontact me.\n\nAs before, bug reports, suggestions, and other feedback are appreciated.\n\n John \n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
-      "body_snippet": "Dear R-packages list members,\n\nI've recently uploaded to CRAN version 1.1-1 of the Rcmdr (\"R Commander\")\npackage. Based on the tcltk package, the Rcmdr provides a basic-statistics\ngraphical interface ",
-      "thread_id": "thread-574ea0f70e97",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
-      "id": "msg-b2a40c5db87d",
-      "message_id": "<Pine.LNX.4.63a.0509101007370.19273@homer24.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2005-09-10T10:16:17-07:00",
-      "subject": "[R-pkgs] survey: version 3.3",
-      "subject_clean": "survey: version 3.3",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 3.3 of \"survey\" is percolating through CRAN.  Since the last \nannouncement on this list, version 2.9, the main additions are calibration \nestimators: linear, bounded linear, raking ratio, bounded raking ratio, \nlogit.\n\nOther updates and bug fixes are described in\n         http://faculty.washington.edu/tlumley/survey/NEWS\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "Version 3.3 of \"survey\" is percolating through CRAN.  Since the last \nannouncement on this list, version 2.9, the main additions are calibration \nestimators: linear, bounded linear, raking ratio, boun",
-      "thread_id": "thread-b2a40c5db87d",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
       "id": "msg-b2a40c5db87d",
       "message_id": "<Pine.LNX.4.63a.0509101007370.19273@homer24.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -180,22 +100,6 @@
       "month": "2005-09"
     },
     {
-      "id": "msg-ebcbf288b259",
-      "message_id": "<432D91D3.6000007@statistik.uni-dortmund.de>",
-      "from_name": "Uwe Ligges",
-      "from_email_hash": "2d61b878ddbd8cb498eaad13e213f45e20da358dea7c063799b1b3934f86a26c",
-      "date": "2005-09-18T18:12:03+02:00",
-      "subject": "[R-pkgs] tuneR_0.2-0",
-      "subject_clean": "tuneR_0.2-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Announcement of a major revision of package tuneR\n\nThe package tuneR for the analysis of sound has been updated, improved,\nand extended.\nMost notably the functionality of the orphaned package\n\"sound\" has been merged into tuneR. Because tuneR's representation and\nAPI is very different, it was not possible to retain the \"API\" (i.e.\nnames of functions, argument ordering and expected objects) of package\n\"sound\".\n\nUwe Ligges",
-      "body_snippet": "Announcement of a major revision of package tuneR\n\nThe package tuneR for the analysis of sound has been updated, improved,\nand extended.\nMost notably the functionality of the orphaned package\n\"sound\" ",
-      "thread_id": "thread-ebcbf288b259",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
       "id": "msg-45429d379422",
       "message_id": "<f8e6ff05050922163639f6d954@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -208,38 +112,6 @@
       "body_plain": "Reshape version 0.5\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's very much pivot table inspired, and it (hopefully) makes\nit very easy to view your data the way you want.  You can find out\nmore at http://had.co.nz/reshape\n\nThe big news in this version of reshape is that I've renamed all the\nfunctions so they no longer conflict with any built in functions -\ndeshape is now melt (think liquid data) and reshape is now cast (think\nsolidifying data into the form you want).\n\nWhat else is new?\n\n * recast melts and casts your data in one step\n * column naming bugs fixed\n * easily display all margins with the argument margins=T in cast\n\nPlease let me know what you think.\n\nRegards,\n\nHadley",
       "body_snippet": "Reshape version 0.5\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's very much pivot table inspired, and it (hopefully) makes\nit very easy to view yo",
       "thread_id": "thread-45429d379422",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
-      "id": "msg-45429d379422",
-      "message_id": "<f8e6ff05050922163639f6d954@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2005-09-22T18:36:04-05:00",
-      "subject": "[R-pkgs] Reshape package: new version 0.5",
-      "subject_clean": "Reshape package: new version 0.5",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Reshape version 0.5\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's very much pivot table inspired, and it (hopefully) makes\nit very easy to view your data the way you want.  You can find out\nmore at http://had.co.nz/reshape\n\nThe big news in this version of reshape is that I've renamed all the\nfunctions so they no longer conflict with any built in functions -\ndeshape is now melt (think liquid data) and reshape is now cast (think\nsolidifying data into the form you want).\n\nWhat else is new?\n\n * recast melts and casts your data in one step\n * column naming bugs fixed\n * easily display all margins with the argument margins=T in cast\n\nPlease let me know what you think.\n\nRegards,\n\nHadley",
-      "body_snippet": "Reshape version 0.5\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's very much pivot table inspired, and it (hopefully) makes\nit very easy to view yo",
-      "thread_id": "thread-45429d379422",
-      "thread_depth": 0,
-      "month": "2005-09"
-    },
-    {
-      "id": "msg-ed77e8fa4294",
-      "message_id": "<00cd01c5c341$50444870$0540210a@www.domain>",
-      "from_name": "Dimitris Rizopoulos",
-      "from_email_hash": "255e70445195f93351001d553d560dab56dbee2dac8cb6c7029fa1bd536c406c",
-      "date": "2005-09-27T10:56:13+02:00",
-      "subject": "[R-pkgs] package 'ltm' -- version: 0.3-0",
-      "subject_clean": "package 'ltm' -- version: 0.3-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nI'd like to announce the new version of the package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch and \ntwo-parameter logistic models) under the Item Response Theory \napproach. Three main extra features have been added: (i) now both \nltm() and rasch() permit general fixed-value constraints (e.g., useful \nfor scaling purposes), (ii) there is the option to report the \nestimated parameters under the usual IRT parameterization, and (iii) \nboth plot.ltm() and plot.rasch() are now more flexible. For info about \nother new features check the help and CHANGES files. Future plans \ninclude development of functions for fitting the three-parameter \nlogistic and the graded response models. Any kind of feedback \n(questions, suggestions, bug-reports, etc.) is more than welcome.\n\nBest,\nDimitris\n\n----\nDimitris Rizopoulos\nPh.D. Student\nBiostatistical Centre\nSchool of Public Health\nCatholic University of Leuven\n\nAddress: Kapucijnenvoer 35, Leuven, Belgium\nTel: +32/(0)16/336899\nFax: +32/(0)16/337015\nWeb: http://www.med.kuleuven.be/biostat/\n     http://www.student.kuleuven.be/~m0390867/dimitris.htm\n\n\nDisclaimer: http://www.kuleuven.be/cwis/email_disclaimer.htm",
-      "body_snippet": "Dear R users,\n\nI'd like to announce the new version of the package \"ltm\" (available \nfrom CRAN), for fitting Latent Trait Models (including the Rasch and \ntwo-parameter logistic models) under the Item",
-      "thread_id": "thread-ed77e8fa4294",
       "thread_depth": 0,
       "month": "2005-09"
     },
@@ -273,17 +145,6 @@
       "root_message_id": "msg-2a41b61bef80"
     },
     {
-      "id": "thread-2a41b61bef80",
-      "subject": "New package for grouped data models",
-      "message_count": 1,
-      "participants": [
-        "Dimitris Rizopoulos"
-      ],
-      "started": "2005-09-05T14:03:15+02:00",
-      "last_reply": "2005-09-05T14:03:15+02:00",
-      "root_message_id": "msg-2a41b61bef80"
-    },
-    {
       "id": "thread-6569dc795081",
       "subject": "Revised versions of the maptools and sp packages",
       "message_count": 1,
@@ -293,28 +154,6 @@
       "started": "2005-09-07T20:41:08+02:00",
       "last_reply": "2005-09-07T20:41:08+02:00",
       "root_message_id": "msg-6569dc795081"
-    },
-    {
-      "id": "thread-6569dc795081",
-      "subject": "Revised versions of the maptools and sp packages",
-      "message_count": 1,
-      "participants": [
-        "Roger Bivand"
-      ],
-      "started": "2005-09-07T20:41:08+02:00",
-      "last_reply": "2005-09-07T20:41:08+02:00",
-      "root_message_id": "msg-6569dc795081"
-    },
-    {
-      "id": "thread-96772162d465",
-      "subject": "tseries",
-      "message_count": 1,
-      "participants": [
-        "Adrian Trapletti"
-      ],
-      "started": "2005-09-08T20:45:08+02:00",
-      "last_reply": "2005-09-08T20:45:08+02:00",
-      "root_message_id": "msg-96772162d465"
     },
     {
       "id": "thread-96772162d465",
@@ -339,28 +178,6 @@
       "root_message_id": "msg-574ea0f70e97"
     },
     {
-      "id": "thread-574ea0f70e97",
-      "subject": "Internationalized version of the Rcmdr package",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2005-09-09T15:37:50-04:00",
-      "last_reply": "2005-09-09T15:37:50-04:00",
-      "root_message_id": "msg-574ea0f70e97"
-    },
-    {
-      "id": "thread-b2a40c5db87d",
-      "subject": "survey: version 3.3",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2005-09-10T10:16:17-07:00",
-      "last_reply": "2005-09-10T10:16:17-07:00",
-      "root_message_id": "msg-b2a40c5db87d"
-    },
-    {
       "id": "thread-b2a40c5db87d",
       "subject": "survey: version 3.3",
       "message_count": 1,
@@ -383,17 +200,6 @@
       "root_message_id": "msg-ebcbf288b259"
     },
     {
-      "id": "thread-ebcbf288b259",
-      "subject": "tuneR_0.2-0",
-      "message_count": 1,
-      "participants": [
-        "Uwe Ligges"
-      ],
-      "started": "2005-09-18T18:12:03+02:00",
-      "last_reply": "2005-09-18T18:12:03+02:00",
-      "root_message_id": "msg-ebcbf288b259"
-    },
-    {
       "id": "thread-45429d379422",
       "subject": "Reshape package: new version 0.5",
       "message_count": 1,
@@ -403,28 +209,6 @@
       "started": "2005-09-22T18:36:04-05:00",
       "last_reply": "2005-09-22T18:36:04-05:00",
       "root_message_id": "msg-45429d379422"
-    },
-    {
-      "id": "thread-45429d379422",
-      "subject": "Reshape package: new version 0.5",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2005-09-22T18:36:04-05:00",
-      "last_reply": "2005-09-22T18:36:04-05:00",
-      "root_message_id": "msg-45429d379422"
-    },
-    {
-      "id": "thread-ed77e8fa4294",
-      "subject": "package 'ltm' -- version: 0.3-0",
-      "message_count": 1,
-      "participants": [
-        "Dimitris Rizopoulos"
-      ],
-      "started": "2005-09-27T10:56:13+02:00",
-      "last_reply": "2005-09-27T10:56:13+02:00",
-      "root_message_id": "msg-ed77e8fa4294"
     },
     {
       "id": "thread-ed77e8fa4294",

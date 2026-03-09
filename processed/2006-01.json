@@ -20,22 +20,6 @@
       "month": "2006-01"
     },
     {
-      "id": "msg-a5a90f25fa61",
-      "message_id": "<4DD6F8B8782D584FABF50BF3A32B03D801A2BCDB@MSGBOSCLF2WIN.DMN1.FMR.COM>",
-      "from_name": "Brahm, David",
-      "from_email_hash": "a7a625c3d1b4d784b9bd6c1505a0d161aaacff3229a24d9364039015491b7163",
-      "date": "2006-01-06T11:43:44-05:00",
-      "subject": "[R-pkgs] sudoku",
-      "subject_clean": "sudoku",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060106/44451c21/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060106/44451c21/attachment-0001.pl>",
-      "thread_id": "thread-a5a90f25fa61",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
       "id": "msg-94c7b5e25607",
       "message_id": "<43C3AA44.4000303@geog.uu.nl>",
       "from_name": "Edzer J. Pebesma",
@@ -48,38 +32,6 @@
       "body_plain": "Soon on CRAN a new version of package gstat will emerge, which\nhas a few minor changes and possible incompatibilities w.r.t. the\nprevious version(s).\n\nThe new gstat (0.9-23) now:\n+ depends on sp, and uses internally with Spatial* classes from sp\n   if data are provided in the old-fashoned way (as data.frame)\n+ has a vignette to get you started with the classes in sp\n+ defines krige as a generic; two typical uses are:\n\n# \"old-style\", using data.frame's:\nlibrary(gstat)\ndata(meuse)\ndata(meuse.grid)\nv = vgm(0.6, \"Sph\", 900, 0.1) # spherical variogram model\nzn.kri1 = krige(log(zinc)~1, ~x+y, meuse, meuse.grid, v)\nimage(zn.kri1)\n\n# \"new-style\", using SpatialPointsDataFrame's:\ncoordinates(meuse) = c(\"x\", \"y\") # promote meuse to SpatialPointsDataFrame\ncoordinates(meuse.grid) = c(\"x\", \"y\") # promote to SpatialPointsDataFrame\ngridded(meuse.grid) = TRUE # promote to SpatialPixelsDataFrame\nzn.kri2 = krige(log(zinc)~1, meuse, meuse.grid, v)\nspplot(zn.kri2[1])\n\n+ provides a generic idw for inverse distance interpolation\n(calling sequence identical to krige)\n\nINCOMPATIBLE CHANGE:\n  the krige generic is\n\n     krige(formula, locations, ...)\n\n  based on the class of argument 2 (locations) either of the two\n  versions (see above) is called. This means that no named argument\n  \"data\" should be passed in case locations is missing (i.e., when\n  data is of class SpatialPointsDataFrame). Instead, pass it as\n  argument 2 or as named argument \"locations\".\n\n--\nEdzer",
       "body_snippet": "Soon on CRAN a new version of package gstat will emerge, which\nhas a few minor changes and possible incompatibilities w.r.t. the\nprevious version(s).\n\nThe new gstat (0.9-23) now:\n+ depends on sp, and ",
       "thread_id": "thread-94c7b5e25607",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
-      "id": "msg-94c7b5e25607",
-      "message_id": "<43C3AA44.4000303@geog.uu.nl>",
-      "from_name": "Edzer J. Pebesma",
-      "from_email_hash": "a7fb0ca623e251a5aff6aa466eb7f50e3c643594fe03e3232d546a007043eef0",
-      "date": "2006-01-10T13:36:20+01:00",
-      "subject": "[R-pkgs] new gstat version",
-      "subject_clean": "new gstat version",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Soon on CRAN a new version of package gstat will emerge, which\nhas a few minor changes and possible incompatibilities w.r.t. the\nprevious version(s).\n\nThe new gstat (0.9-23) now:\n+ depends on sp, and uses internally with Spatial* classes from sp\n   if data are provided in the old-fashoned way (as data.frame)\n+ has a vignette to get you started with the classes in sp\n+ defines krige as a generic; two typical uses are:\n\n# \"old-style\", using data.frame's:\nlibrary(gstat)\ndata(meuse)\ndata(meuse.grid)\nv = vgm(0.6, \"Sph\", 900, 0.1) # spherical variogram model\nzn.kri1 = krige(log(zinc)~1, ~x+y, meuse, meuse.grid, v)\nimage(zn.kri1)\n\n# \"new-style\", using SpatialPointsDataFrame's:\ncoordinates(meuse) = c(\"x\", \"y\") # promote meuse to SpatialPointsDataFrame\ncoordinates(meuse.grid) = c(\"x\", \"y\") # promote to SpatialPointsDataFrame\ngridded(meuse.grid) = TRUE # promote to SpatialPixelsDataFrame\nzn.kri2 = krige(log(zinc)~1, meuse, meuse.grid, v)\nspplot(zn.kri2[1])\n\n+ provides a generic idw for inverse distance interpolation\n(calling sequence identical to krige)\n\nINCOMPATIBLE CHANGE:\n  the krige generic is\n\n     krige(formula, locations, ...)\n\n  based on the class of argument 2 (locations) either of the two\n  versions (see above) is called. This means that no named argument\n  \"data\" should be passed in case locations is missing (i.e., when\n  data is of class SpatialPointsDataFrame). Instead, pass it as\n  argument 2 or as named argument \"locations\".\n\n--\nEdzer",
-      "body_snippet": "Soon on CRAN a new version of package gstat will emerge, which\nhas a few minor changes and possible incompatibilities w.r.t. the\nprevious version(s).\n\nThe new gstat (0.9-23) now:\n+ depends on sp, and ",
-      "thread_id": "thread-94c7b5e25607",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
-      "id": "msg-7d8a48220515",
-      "message_id": "<40e66e0b0601101236u61c7c269u9c1bea16cb532867@mail.gmail.com>",
-      "from_name": "Douglas Bates",
-      "from_email_hash": "72708f6f9e0ad5f9c626ca800c6c991618a61d5c470f4a0ef15080934ff9bb60",
-      "date": "2006-01-10T14:36:57-06:00",
-      "subject": "[R-pkgs] Representation of lmer objects will change soon",
-      "subject_clean": "Representation of lmer objects will change soon",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "This is a \"heads up\" to those using the lmer function for fitting\nlinear mixed models or generalized linear mixed models.  In the next\nfew days Martin and I will upload a new version of the Matrix package\nthat employs a new representation of linear mixed models based on the\nsupernodal Cholesky factorization provided by Tim Davis's CHOLMOD\nlibrary of sparse matrix code.\n\nThis representation will be incompatible with the current\nrepresentation, which uses a class of blocked compressed sparse\nmatrices called the dBCMatrix class.  If you have an lmer object\ncreated with the current code you will need to convert it to use it\nwith the new package.  By far the easiest way to do this is to\nrecreate it.  (The new code is very fast.)  However, we will also\noffer a conversion function for those who no longer have the\ninformation used to produce the model fit.\n\nSo the takehome message is that if you are currently using lmer then\nyou should save the information used to fit a model in addition to\nsaving the fitted model.",
-      "body_snippet": "This is a \"heads up\" to those using the lmer function for fitting\nlinear mixed models or generalized linear mixed models.  In the next\nfew days Martin and I will upload a new version of the Matrix pac",
-      "thread_id": "thread-7d8a48220515",
       "thread_depth": 0,
       "month": "2006-01"
     },
@@ -116,38 +68,6 @@
       "month": "2006-01"
     },
     {
-      "id": "msg-56d16340e669",
-      "message_id": "<m0lkxgp93a.fsf@bar.nemo-project.org>",
-      "from_name": "Bjørn-Helge Mevik",
-      "from_email_hash": "41abab05254252740b3a57f8ce1f5222569357648ad6f9522f5a175d96704b7f",
-      "date": "2006-01-16T14:59:21+01:00",
-      "subject": "[R-pkgs] New package lspls",
-      "subject_clean": "New package lspls",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJ?rgensen, K., Segtnan, V. H., Thyholt, K., N?s, T. (2004) A Comparison of\nMethods for Analysing Regression Models with Both Spectral and Designed\nVariables; Journal of Chemometrics 18(10), 451--464.\n\nThe current version of the package (0.1-0) should probably be\nconsidered `alpha software'.  Nothing is cast in iron yet, and\nespecially the formula interface and internal structure are apt to\nchange in future versions.  The software should, however, be fully\nusable in its present form.\n\n`lspls' currently includes fit and cross-validation functions with\nformula interfaces, a predict method, and plots of scores, loadings\nand (R)MSEP values.\n\nSuggestions, bug reports and other comments are very welcome.\n\n-- \nSincerely,\nBj?rn-Helge Mevik",
-      "body_snippet": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJ?rgensen, K., Segtnan, V.",
-      "thread_id": "thread-56d16340e669",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
-      "id": "msg-f7eb99d591b4",
-      "message_id": "<1F37DFAA-7366-42F4-B116-B410CF994E5E@soc.soton.ac.uk>",
-      "from_name": "Robin Hankin",
-      "from_email_hash": "e0041d78795bfa85c51f516af85793d42d89938e714b2ac523251ba319eb86e3",
-      "date": "2006-01-19T08:08:02Z",
-      "subject": "[R-pkgs] new R package: UNTB",
-      "subject_clean": "new R package: UNTB",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear List\n\nplease find uploaded to CRAN a new R package for the simulation and  \nanalysis\nof biodiversity.\n\nThe package implements simulations and diagnostics of ecological systems\nthat obey the Unified Neutral Theory of Biodiversity (untb).\n\nThe canonical reference is:\n\n\nThe Unified Neutral Theory of Biodiversity and Biogeography,\nStephen P. Hubbell, Princeton University Press, 2000.\n\n\nenjoy\n\n\n\n--\nRobin Hankin\nUncertainty Analyst\nNational Oceanography Centre, Southampton\nEuropean Way, Southampton SO14 3ZH, UK\n  tel  023-8059-7743",
-      "body_snippet": "Dear List\n\nplease find uploaded to CRAN a new R package for the simulation and  \nanalysis\nof biodiversity.\n\nThe package implements simulations and diagnostics of ecological systems\nthat obey the Unifi",
-      "thread_id": "thread-f7eb99d591b4",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
       "id": "msg-f7eb99d591b4",
       "message_id": "<1F37DFAA-7366-42F4-B116-B410CF994E5E@soc.soton.ac.uk>",
       "from_name": "Robin Hankin",
@@ -180,22 +100,6 @@
       "month": "2006-01"
     },
     {
-      "id": "msg-0a95dd2a1c27",
-      "message_id": "<20060119181232.GB10546@jessie.research.bell-labs.com>",
-      "from_name": "David James",
-      "from_email_hash": "d70346f19232d55003c28617ba1b043422fbe6909353b2f6834436c98dd76a17",
-      "date": "2006-01-19T13:12:33-05:00",
-      "subject": "[R-pkgs] RSQLite",
-      "subject_clean": "RSQLite",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 0.4-1 of the RSQLite package has been uploaded to CRAN.\nRSQLite embeds the SQLite engine in R (see http://www.sqlite.org)\n\nChanges include:\n\n* Fixed problems exporting/importing NA's \n\n* An new experimental dbWriteTable() method to create SQLite tables\n  from simple files (delimited unquoted fields), e.g., \n     > dbWriteTable(con, \"table_name\", \"file_name\", ...)\n     > methods?dbWriteTable           ## see documentation for details\n\n* dbConnect() now accepts values for the \"cache_size\" and \"synchronous\" \n  to tune/improve SQLite performance (see methods?dbConnect for details).\n\nThanks to Seth Falcon, Ronggui Huang, and Charles Loboz for their\npatches, suggestions, bug reports and testing.\n\n-- \nDavid",
-      "body_snippet": "Version 0.4-1 of the RSQLite package has been uploaded to CRAN.\nRSQLite embeds the SQLite engine in R (see http://www.sqlite.org)\n\nChanges include:\n\n* Fixed problems exporting/importing NA's \n\n* An ne",
-      "thread_id": "thread-0a95dd2a1c27",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
       "id": "msg-31944f7f7d78",
       "message_id": "<20060125100028.5d9cc7c7.antoinelucas@libertysurf.fr>",
       "from_name": "Antoine Lucas",
@@ -208,38 +112,6 @@
       "body_plain": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a parallelized hierarchical clustering) and\n   allow the possibility of using different distances like\n   Eulidean or Spearman (rank-based metric).\n\n   We implement a principal component analysis (with robusts methods).\n\nNews of version 0.7-1: a new method of clustering \"optimal partiton\"\n\nA major advantage of the method is that the number K of classes \nis computed from the data, and ONLY from the data. \n\n-- \nAntoine Lucas\nCentre de g?n?tique Mol?culaire, CNRS\n91198 Gif sur Yvette Cedex\nTel: (33)1 69 82 38 89\nFax: (33)1 69 82 38 77",
       "body_snippet": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a paralleliz",
       "thread_id": "thread-31944f7f7d78",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
-      "id": "msg-31944f7f7d78",
-      "message_id": "<20060125100028.5d9cc7c7.antoinelucas@libertysurf.fr>",
-      "from_name": "Antoine Lucas",
-      "from_email_hash": "879260959378cfc2dd39292ffa62924dbeabd8279212df323bf72b6da03e72b8",
-      "date": "2006-01-25T10:00:28+01:00",
-      "subject": "[R-pkgs] amap",
-      "subject_clean": "amap",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a parallelized hierarchical clustering) and\n   allow the possibility of using different distances like\n   Eulidean or Spearman (rank-based metric).\n\n   We implement a principal component analysis (with robusts methods).\n\nNews of version 0.7-1: a new method of clustering \"optimal partiton\"\n\nA major advantage of the method is that the number K of classes \nis computed from the data, and ONLY from the data. \n\n-- \nAntoine Lucas\nCentre de g?n?tique Mol?culaire, CNRS\n91198 Gif sur Yvette Cedex\nTel: (33)1 69 82 38 89\nFax: (33)1 69 82 38 77",
-      "body_snippet": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a paralleliz",
-      "thread_id": "thread-31944f7f7d78",
-      "thread_depth": 0,
-      "month": "2006-01"
-    },
-    {
-      "id": "msg-a7e3348de41b",
-      "message_id": "<4DD6F8B8782D584FABF50BF3A32B03D801A2BD0C@MSGBOSCLF2WIN.DMN1.FMR.COM>",
-      "from_name": "Brahm, David",
-      "from_email_hash": "a7a625c3d1b4d784b9bd6c1505a0d161aaacff3229a24d9364039015491b7163",
-      "date": "2006-01-31T11:31:11-05:00",
-      "subject": "[R-pkgs] [R]  sudoku",
-      "subject_clean": "sudoku",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "sudoku_2.0 is now available on CRAN and mirrors.\n\nThanks to some terrific contributions and suggestions, especially by\nnew co-author Greg Snow, this version has a full GUI interface (native\non Windows, or using \"tkrplot\"), a puzzle generator, and a function to\nfetch recently published puzzles.  The GUI (playSudoku) can act as an\neditor to input a puzzle, then give you hints, correct errors, reveal\ncells, or show the full solution.\n\nSee README for some work remaining to be done, including a uniqueness\ntest, \"notes\" in the GUI, and a scoring mechanism. \n\n-- David Brahm (brahm at alum.mit.edu)",
-      "body_snippet": "sudoku_2.0 is now available on CRAN and mirrors.\n\nThanks to some terrific contributions and suggestions, especially by\nnew co-author Greg Snow, this version has a full GUI interface (native\non Windows",
-      "thread_id": "thread-a7e3348de41b",
       "thread_depth": 0,
       "month": "2006-01"
     },
@@ -273,17 +145,6 @@
       "root_message_id": "msg-a5a90f25fa61"
     },
     {
-      "id": "thread-a5a90f25fa61",
-      "subject": "sudoku",
-      "message_count": 1,
-      "participants": [
-        "Brahm, David"
-      ],
-      "started": "2006-01-06T11:43:44-05:00",
-      "last_reply": "2006-01-06T11:43:44-05:00",
-      "root_message_id": "msg-a5a90f25fa61"
-    },
-    {
       "id": "thread-94c7b5e25607",
       "subject": "new gstat version",
       "message_count": 1,
@@ -293,28 +154,6 @@
       "started": "2006-01-10T13:36:20+01:00",
       "last_reply": "2006-01-10T13:36:20+01:00",
       "root_message_id": "msg-94c7b5e25607"
-    },
-    {
-      "id": "thread-94c7b5e25607",
-      "subject": "new gstat version",
-      "message_count": 1,
-      "participants": [
-        "Edzer J. Pebesma"
-      ],
-      "started": "2006-01-10T13:36:20+01:00",
-      "last_reply": "2006-01-10T13:36:20+01:00",
-      "root_message_id": "msg-94c7b5e25607"
-    },
-    {
-      "id": "thread-7d8a48220515",
-      "subject": "Representation of lmer objects will change soon",
-      "message_count": 1,
-      "participants": [
-        "Douglas Bates"
-      ],
-      "started": "2006-01-10T14:36:57-06:00",
-      "last_reply": "2006-01-10T14:36:57-06:00",
-      "root_message_id": "msg-7d8a48220515"
     },
     {
       "id": "thread-7d8a48220515",
@@ -339,28 +178,6 @@
       "root_message_id": "msg-56d16340e669"
     },
     {
-      "id": "thread-56d16340e669",
-      "subject": "New package lspls",
-      "message_count": 1,
-      "participants": [
-        "Bjørn-Helge Mevik"
-      ],
-      "started": "2006-01-16T14:59:21+01:00",
-      "last_reply": "2006-01-16T14:59:21+01:00",
-      "root_message_id": "msg-56d16340e669"
-    },
-    {
-      "id": "thread-f7eb99d591b4",
-      "subject": "new R package: UNTB",
-      "message_count": 1,
-      "participants": [
-        "Robin Hankin"
-      ],
-      "started": "2006-01-19T08:08:02+00:00",
-      "last_reply": "2006-01-19T08:08:02+00:00",
-      "root_message_id": "msg-f7eb99d591b4"
-    },
-    {
       "id": "thread-f7eb99d591b4",
       "subject": "new R package: UNTB",
       "message_count": 1,
@@ -383,17 +200,6 @@
       "root_message_id": "msg-0a95dd2a1c27"
     },
     {
-      "id": "thread-0a95dd2a1c27",
-      "subject": "RSQLite",
-      "message_count": 1,
-      "participants": [
-        "David James"
-      ],
-      "started": "2006-01-19T13:12:33-05:00",
-      "last_reply": "2006-01-19T13:12:33-05:00",
-      "root_message_id": "msg-0a95dd2a1c27"
-    },
-    {
       "id": "thread-31944f7f7d78",
       "subject": "amap",
       "message_count": 1,
@@ -403,28 +209,6 @@
       "started": "2006-01-25T10:00:28+01:00",
       "last_reply": "2006-01-25T10:00:28+01:00",
       "root_message_id": "msg-31944f7f7d78"
-    },
-    {
-      "id": "thread-31944f7f7d78",
-      "subject": "amap",
-      "message_count": 1,
-      "participants": [
-        "Antoine Lucas"
-      ],
-      "started": "2006-01-25T10:00:28+01:00",
-      "last_reply": "2006-01-25T10:00:28+01:00",
-      "root_message_id": "msg-31944f7f7d78"
-    },
-    {
-      "id": "thread-a7e3348de41b",
-      "subject": "sudoku",
-      "message_count": 1,
-      "participants": [
-        "Brahm, David"
-      ],
-      "started": "2006-01-31T11:31:11-05:00",
-      "last_reply": "2006-01-31T11:31:11-05:00",
-      "root_message_id": "msg-a7e3348de41b"
     },
     {
       "id": "thread-a7e3348de41b",

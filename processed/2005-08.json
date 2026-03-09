@@ -20,22 +20,6 @@
       "month": "2005-08"
     },
     {
-      "id": "msg-af0ca2bffdac",
-      "message_id": "<42EF26AD.2050208@vanderbilt.edu>",
-      "from_name": "Jeffrey Horner",
-      "from_email_hash": "8b91e5b4000682951a703759aaef9fbaa2bc23dc141f7a1ef5c829c7c0d0d0de",
-      "date": "2005-08-02T02:54:21-05:00",
-      "subject": "[R-pkgs] [ANNOUNCE] mod_R: The R/Apache Integration Project",
-      "subject_clean": "[ANNOUNCE] mod_R: The R/Apache Integration Project",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "What is it?\n   -----------\n   mod_R is a project dedicated to embedding the R interpreter inside\n   the Apache 2.0 (and beyond) web server for the purpose of writing web\n   applications in R. It's composed of three parts:\n\n   mod_R: the Apache 2.0 module that implements the glue to load the\n   R interpreter.\n\n   RApache: the R package that provides the API for programming web\n   applications in R.\n\n   libapreq 2.0.4: an Apache sponsored project for parsing request input.\n   If you don't want to compile and install this version, then you can\n   specify which libapreq2 library to use during configuration.\n\n   The Latest Version\n   ------------------\n\n   Details of the latest version can be found at the mod_R\n   project page:\n\nhttp://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/ApacheRproject\n\n   (mind the wrap)\n\n\n   Prerequisites\n   -------------\n   This release has been tested under Debian Linux with Apache 2.0.54,\n   R 2.1.1, and libapreq 2.0.4.  Apache2 _MUST_ be compiled with the\n   prefork MPM to compile mod_R. Also, R must have been compiled with\n   the --enable-R-shlib configure flag.\n\n   Installation\n   ------------\n   The following is the preferred way to compile and install mod_R:\n\n     $ ./configure --with-apache2-apxs=/path/to/apxs --with-R=/path/to/R\n     $ make\n     $ make install\n\n   Both --with-apache2-apxs and --with-R _MUST_ be specified.  Otherwise,\n   trying to figure out the dependencies between the sources and headers\n   and library paths becomes quite complex.\n\n   If you don't want to compile and install the bundled libapreq2 version,\n   then add --with-apreq2-config=/path/to/apreq2-config. The version _MUST_\n   be equal to or greater than 2.0.4.\n\n   Configuration\n   -------------\n   In order to use mod_R and RApache, you must configure apache to find\n   it. Type help(\"directives\",package=\"RApache\") once mod_R is installed\n   for a little more detail. Add something similar to this to the apache\n   config file:\n\n     LoadModule R_Module /path/to/mod_R.so\n\n     <Location /URL>\n        SetHandler r-handler\n        Rsource /path/to/R/code.R\n        RreqHandler function-name\n        Rlibrary library-name\n     </Location>\n\n   Also, libR.so _MUST_ be found in the shared library path as it is\n   linked to by mod_R, RApache and the rest of the packages containing\n   shared libraries. You can either set LD_LIBRARY_PATH like this:\n\n      $ export LD_LIBRARY_PATH=`/path/to/R RHOME`/lib\n\n   or add that path to /etc/ld.so.conf and then run ldconfig.\n\n   NOTE: the latest apache2 debian packages cause the web server to run\n   in a very reduced environment, thus one is unable to set LD_LIBRARY_PATH\n   before calling /etc/init.d/apache2. One option is to actually edit that\n   file and add the LD_LIBRARY_PATH explicitly. Another is to use the \napache2ctl\n   scripts which are also bundled with the debian packages. Or you can \nadd it\n   to /etc/ld.so.conf.\n\n   Documentation\n   -------------\n   All of the documentation is currently in the RApache package. Once\n   you install mod_R, start R and load the RApache package. You'll get\n   a warning that you're currently not running the R interpreter within\n   Apache; just don't try to run any of the code. Sample session:\n    > library(RApache)\n    Warning message:\n\n    RApache is only useful within the Apache web server.\n    It is loaded now for informational purposes only\n\n     in: firstlib(which.lib.loc, package)\n    > help(package=\"RApache\")\n\n                    Information on package 'RApache'\n\n    Description:\n\n    Package:       RApache\n    Version:       0.1-0\n    Date:          2005-08-02\n    Title:         An R interface to the Apache 2.0 web server\n    Author:        Jeffrey Horner\n    Maintainer:    Jeffrey Horner <jeff.horner at vanderbilt.edu>\n    License:       Apache License, Version 2.0\n    Description:   RApache allows web applications to be written in R and\n    executed within the Apache 2.0 web server.\n    Built:         R 2.1.0; i386-pc-linux-gnu; 2005-08-02 01:06:26; unix\n\n    Index:\n\n    IO                      IO in RApache\n    apache.add_cookie       Adding Cookies to Outgoing Headers\n    apache.add_header       Adding HTTP headers\n    apache.allow_methods    RApache Methods\n    apache.log_error        Logging Errors to the Apache error log\n    apache.set_content_type\n    Setting the Content Type header\n    apr_table               Structure of the apr_table type in RApache\n    as.html                 Converting RApache objects to HTML\n    directives              RApache directives used in Apace config file\n    intro                   Introduction to RApache\n    request_rec             Structure of the RApache request record\n    return_codes            RApache handler return codes\n\n\n   Licensing\n   ---------\n\n   Please see the file called LICENSE.\n\n-- \nJeffrey Horner       Computer Systems Analyst         School of Medicine\n615-322-8606         Department of Biostatistics   Vanderbilt University",
-      "body_snippet": "What is it?\n   -----------\n   mod_R is a project dedicated to embedding the R interpreter inside\n   the Apache 2.0 (and beyond) web server for the purpose of writing web\n   applications in R. It's com",
-      "thread_id": "thread-af0ca2bffdac",
-      "thread_depth": 0,
-      "month": "2005-08"
-    },
-    {
       "id": "msg-6b01511396a8",
       "message_id": "<200508052023.31632.deepayan@stat.wisc.edu>",
       "from_name": "Deepayan Sarkar",
@@ -48,38 +32,6 @@
       "body_plain": "[This is more a warning than an announcement]\n\nA new version of lattice should be soon on CRAN. From this version onwards, \nall high-level lattice functions are (S3) generic. All of them have formula \nmethods, some have other methods as well, formalizing the various non-formula \nuses which used to be handled by clumsy hacks in the past. There's also a new \ntable method for barchart.\n\nIdeally, this change should be completely transparent to the user and no \nexisting code should break (except undocumented and inappropriate examples \nlike \n\ndotplot( x  | a )\n\nwhich used to work like dotplot(~x | a) before). However, Murphy's law usually \nprevails, so...\n\nDeepayan",
       "body_snippet": "[This is more a warning than an announcement]\n\nA new version of lattice should be soon on CRAN. From this version onwards, \nall high-level lattice functions are (S3) generic. All of them have formula ",
       "thread_id": "thread-6b01511396a8",
-      "thread_depth": 0,
-      "month": "2005-08"
-    },
-    {
-      "id": "msg-6b01511396a8",
-      "message_id": "<200508052023.31632.deepayan@stat.wisc.edu>",
-      "from_name": "Deepayan Sarkar",
-      "from_email_hash": "da20c1efdfdd448a71b20da6e2500e3a2016b67041d1d9ab7648cdcce3bad7e5",
-      "date": "2005-08-05T20:23:31-05:00",
-      "subject": "[R-pkgs] new version of lattice",
-      "subject_clean": "new version of lattice",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "[This is more a warning than an announcement]\n\nA new version of lattice should be soon on CRAN. From this version onwards, \nall high-level lattice functions are (S3) generic. All of them have formula \nmethods, some have other methods as well, formalizing the various non-formula \nuses which used to be handled by clumsy hacks in the past. There's also a new \ntable method for barchart.\n\nIdeally, this change should be completely transparent to the user and no \nexisting code should break (except undocumented and inappropriate examples \nlike \n\ndotplot( x  | a )\n\nwhich used to work like dotplot(~x | a) before). However, Murphy's law usually \nprevails, so...\n\nDeepayan",
-      "body_snippet": "[This is more a warning than an announcement]\n\nA new version of lattice should be soon on CRAN. From this version onwards, \nall high-level lattice functions are (S3) generic. All of them have formula ",
-      "thread_id": "thread-6b01511396a8",
-      "thread_depth": 0,
-      "month": "2005-08"
-    },
-    {
-      "id": "msg-4f56c3448709",
-      "message_id": "<14ce7bc2a2d0dd85e6b9e92332b528ec@uni-goettingen.de>",
-      "from_name": "Daniel Adler",
-      "from_email_hash": "469a3a475c36a72d9b30e0f97eb9eaa4a3b8c71d9422a01a0e93e5444b308512",
-      "date": "2005-08-21T16:30:45+02:00",
-      "subject": "[R-pkgs] RGL v0.65",
-      "subject_clean": "RGL v0.65",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "RGL Version 0.65 [r405 / 2005-08-14]\n\nDESCRIPTION\nThe RGL package is a visualization device system for R, using\nOpenGL as the rendering backend. An rgl device at its core\nis a real-time 3D engine written in C++. It provides an\ninteractive viewpoint navigation facility (mouse + wheel support)\nand an R programming interface.\n\nRELEASE INFO\nThis is a Beta release. We target a stable release at the end of \nSeptember 2005.\n\nWHATS NEW\n* A native Mac OS X / Carbon version is shipped with this release.\n   No need to start an X11 Server.\n   The X11 Port is still available, but configure defaults to use Carbon.\n\n* The X11 port has been improved. The crash (using rgl.close() or \nrgl.quit()\n   has been fixed.\n\n* User-selectable mouse handlers featuring trackball navigation and\n   interactive selection.\n\n* A new interface concept \"R3D\" is available for preview and discussion\n   using the function name pattern:\n     XXX3d()\n\n   The functions map to rgl functions internally (with some exceptions).\n\n   Here's a short list of interesting spots in the interface API:\n\n   * par3d() can be used to get/set values on the current RGL device.\n\n   * Primitives functions such as points3d(), lines3d(), surface3d(), ...\n\n   * First bunch of generic transformation utilities, rendering methods\n     and mesh objects are implemented.\n\n   The rgl interface using the pattern \"rgl.XXX()\" is still available.\n   You can decide between more OpenGL/RGL'is low-level functions or\n   more R'ish functions using the R3D interface concept.\n\n* Rendering of blended surfaces using hierarchical z-sorting.\n\n* New material property: Texture environment mapping\n\nWEBSITE\nhttp://rgl.neoscientists.org",
-      "body_snippet": "RGL Version 0.65 [r405 / 2005-08-14]\n\nDESCRIPTION\nThe RGL package is a visualization device system for R, using\nOpenGL as the rendering backend. An rgl device at its core\nis a real-time 3D engine writ",
-      "thread_id": "thread-4f56c3448709",
       "thread_depth": 0,
       "month": "2005-08"
     },
@@ -116,38 +68,6 @@
       "month": "2005-08"
     },
     {
-      "id": "msg-9c43ae08ebc0",
-      "message_id": "<OF43F03024.B7B6774E-ON80257065.002B2E99-80257065.002BFD7F@gsk.com>",
-      "from_name": "Brandon.J.Whitcher at gsk.com",
-      "from_email_hash": "9183cb37ae448daaffdebf38502d0bbc1908de40c74bb8327885350e5be7c442",
-      "date": "2005-08-22T09:00:27+01:00",
-      "subject": "[R-pkgs] New CRAN package: DICOM",
-      "subject_clean": "New CRAN package: DICOM",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050822/3cbe4820/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050822/3cbe4820/attachment-0001.pl>",
-      "thread_id": "thread-9c43ae08ebc0",
-      "thread_depth": 0,
-      "month": "2005-08"
-    },
-    {
-      "id": "msg-3364e41a4775",
-      "message_id": "<430B8250.9060308@noaa.gov>",
-      "from_name": "Mike Prager",
-      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
-      "date": "2005-08-23T16:08:48-04:00",
-      "subject": "[R-pkgs] For2R - Interface from Fortran to R",
-      "subject_clean": "For2R - Interface from Fortran to R",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "We announce the availability of the Fortran 95 module \"For2R\", which \nmakes it easy to write complicated R data structures (i.e., lists of \nlists, matrices, dataframes, ...) from Fortran programs. By a series of \nsubroutine calls, program outputs can be written to a file readable by R \nwith a single \"dget\" function call. This facilitates automated graphics \ngeneration and other postprocessing of model results.\n\nA downloadable ZIP file of For2R is available from  \nhttp://shrimp.ccfhrb.noaa.gov/~mprager/Rinter.html  and includes Fortran \nsource, documentation, and an example.\n\nWe are working on similar code to interface C++ with R. An extremely \ncrude version of such code is available from the same page. Though the \nC++ code will be totally replaced, the download includes sample output \nand R graphics functions for automated processing of a fisheries example. \n\nAlthough For2R is much nicer than our current C++ code, it should all be \nconsidered beta-test code, and it is supplied with no warranty \nwhatsoever.  Bug reports and suggestions are welcome.\n\n-- \nMichael Prager, for myself and Erik Williams\nPopulation Dynamics Team, NMFS SE Fisheries Science Center\nNOAA Center for Coastal Fisheries and Habitat Research\nBeaufort, North Carolina  28516  USA\nhttp://shrimp.ccfhrb.noaa.gov/~mprager/",
-      "body_snippet": "We announce the availability of the Fortran 95 module \"For2R\", which \nmakes it easy to write complicated R data structures (i.e., lists of \nlists, matrices, dataframes, ...) from Fortran programs. By ",
-      "thread_id": "thread-3364e41a4775",
-      "thread_depth": 0,
-      "month": "2005-08"
-    },
-    {
       "id": "msg-3364e41a4775",
       "message_id": "<430B8250.9060308@noaa.gov>",
       "from_name": "Mike Prager",
@@ -177,28 +97,6 @@
       "root_message_id": "msg-af0ca2bffdac"
     },
     {
-      "id": "thread-af0ca2bffdac",
-      "subject": "[ANNOUNCE] mod_R: The R/Apache Integration Project",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Horner"
-      ],
-      "started": "2005-08-02T02:54:21-05:00",
-      "last_reply": "2005-08-02T02:54:21-05:00",
-      "root_message_id": "msg-af0ca2bffdac"
-    },
-    {
-      "id": "thread-6b01511396a8",
-      "subject": "new version of lattice",
-      "message_count": 1,
-      "participants": [
-        "Deepayan Sarkar"
-      ],
-      "started": "2005-08-05T20:23:31-05:00",
-      "last_reply": "2005-08-05T20:23:31-05:00",
-      "root_message_id": "msg-6b01511396a8"
-    },
-    {
       "id": "thread-6b01511396a8",
       "subject": "new version of lattice",
       "message_count": 1,
@@ -221,17 +119,6 @@
       "root_message_id": "msg-4f56c3448709"
     },
     {
-      "id": "thread-4f56c3448709",
-      "subject": "RGL v0.65",
-      "message_count": 1,
-      "participants": [
-        "Daniel Adler"
-      ],
-      "started": "2005-08-21T16:30:45+02:00",
-      "last_reply": "2005-08-21T16:30:45+02:00",
-      "root_message_id": "msg-4f56c3448709"
-    },
-    {
       "id": "thread-9c43ae08ebc0",
       "subject": "New CRAN package: DICOM",
       "message_count": 1,
@@ -241,28 +128,6 @@
       "started": "2005-08-22T09:00:27+01:00",
       "last_reply": "2005-08-22T09:00:27+01:00",
       "root_message_id": "msg-9c43ae08ebc0"
-    },
-    {
-      "id": "thread-9c43ae08ebc0",
-      "subject": "New CRAN package: DICOM",
-      "message_count": 1,
-      "participants": [
-        "Brandon.J.Whitcher at gsk.com"
-      ],
-      "started": "2005-08-22T09:00:27+01:00",
-      "last_reply": "2005-08-22T09:00:27+01:00",
-      "root_message_id": "msg-9c43ae08ebc0"
-    },
-    {
-      "id": "thread-3364e41a4775",
-      "subject": "For2R - Interface from Fortran to R",
-      "message_count": 1,
-      "participants": [
-        "Mike Prager"
-      ],
-      "started": "2005-08-23T16:08:48-04:00",
-      "last_reply": "2005-08-23T16:08:48-04:00",
-      "root_message_id": "msg-3364e41a4775"
     },
     {
       "id": "thread-3364e41a4775",

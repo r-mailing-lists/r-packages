@@ -20,22 +20,6 @@
       "month": "2008-08"
     },
     {
-      "id": "msg-2029fc9fb745",
-      "message_id": "<6AF7979EE40736408C94E7D414EBD62804B0CD59@THEZE.intra.cea.fr>",
-      "from_name": "IOOSS Bertrand 165542",
-      "from_email_hash": "e9709784dcc1e6f88f7f394a8081283f2965ec2e5ad2dae808216e7f53de95cf",
-      "date": "2008-08-01T16:39:19+02:00",
-      "subject": "[R-pkgs]  sensitivity",
-      "subject_clean": "sensitivity",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi All,\n\nthe new release v1.4-0 of the \"sensitivity\" package is now available on CRAN\nThe \"sensitivity\" package is devoted to factor screening and global sensitivity analysis\nof numerical model output. \n\nHere are the new features list:\n\nNew functionalities:\n\t * sequential bifurcation method (sb function) [VERSION ALPHA] \n       * 3D plot 3D for the Morris method (function plot3d.morris, needs the rgl package) \n       * simplex designs for Morris method (function morris) \n       * multidimensional Sobol indices (function sobol) \n       * argument return.var in sobol methods in order to have local variables\n         which are not saved in the output object, for example the bootstrap replicates\n\t   (functions sobol and sobol2002) \n       * template files writing (function template.replace) \n       * new argument ylim to control the ordinate axis for graphics (src, pcc, sobol, sobol2002, fast)\n \nSmall changes in the functions:\n       * several names of parameters and variables in the objects have changed \n       * function \"srcpcc\" has been divided in two functions: \"src\" and \"pcc\" \n       * function \"sobol\" has been divided in two functions: \"sobol\" (original 1993 method) and \"sobol2002\"\n       * function \"fast\" has been renamed \"fast99\"\n       * the space filling design optimization for the Morris design has been rearranged in order\n\t   to gain computing memory. Some C code additions will be done later. \n \n\n------------------------------------------------------------------\nBertrand Iooss\nCEA Cadarache\nDEN/CAD/DER/SESI/LCFR\n13108 Saint Paul lez Durance\nFrance\n\nLaboratoire de Conduite et de Fiabilit? des R?acteurs\nbertrand.iooss at cea.fr\nTel : (33/0) 4 42 25 72 73\nFax : (33/0) 4 42 25 24 08",
-      "body_snippet": "Hi All,\n\nthe new release v1.4-0 of the \"sensitivity\" package is now available on CRAN\nThe \"sensitivity\" package is devoted to factor screening and global sensitivity analysis\nof numerical model output",
-      "thread_id": "thread-2029fc9fb745",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
       "id": "msg-50fed65b3ef9",
       "message_id": "<489331D7.8070607@bio.uio.no>",
       "from_name": "Arnaud Le Rouzic",
@@ -48,38 +32,6 @@
       "body_plain": "Hi the list,\n\nA new version (0.92) of my package 'noia' will be available soon on CRAN \nmirrors, and I think it might be a good opportunity to introduce it \nshortly to the R community.\n\nIn summary: 'noia' will be of absolutely no interest for 99.99% of you. \nThe 0.01% remaining are quantitative geneticists who are interested in \nmeasuring the effect of genes in a proper way.\n\nSince some of you may want to know why it is worth to let this 'noia' \npackage take a few bytes on the CRAN server, I will try to introduce \nvery shortly the scientific problem. The rules that explain the \ntransmission of genes between generations are well known since the end \nof the 19th century. One important consequence of these rules is that in \nall diploid organisms (having two copies of the genomes, i.e. most of \nthem, including us), it is virtually impossible to produce an equal \nnumber of offspring of each \"type\" from non-inbred parents: you end up, \nmost of the time, with frequencies such as 1/4 vs 3/4, or 7/16 vs 9/16, \nor many other combinations. For quantitative traits, the link between \nthe genes and the characters is complex, and the effect of genes has to \nbe measured through models that look like cross-factor ANOVA designs. \nBecause of the unequal segregating ratios, these ANOVAs are highly \nunbalanced, with all well-known annoying consequences: correlations \nbetween effect estimates, non-orthogonal variance decomposition, etc.\n\nFor a long time, comparing estimates measured in differently designed \npopulations was not considered as a big issue. However, the recent need \nof effective model selection procedures lead to the proposition of new \nmodels aiming to a (more or less) orthogonal decomposition of genetic \neffects. This package provides tools to perform linear regressions using \nvarious models, to manipulate the genetic effects, and to compute \ngenotype to phenotype maps, i.e. the function explaining how the genes \nexpresses a given character. In addition, the 'noia' package provides a \ntool to perform 'multilinear' regression, an attempt of non-linear \ngenotype-phenotype mapping.\n\nIn summary, 'noia' is a wrapper for lm() and nls() functions in a very \nspecific context: estimating the effects of genes on a given trait.\n\nNB: 'noia' is useless if the location of the genes is not known. \nLocating the genes requires a QTL detection procedure, for which \npackages already exist (see Rqtl for instance).\n\nMuch more information can be found in scientific publications. Two are \nparticularly relevant:\n\n* This package and its functions are described in a recent paper:\nArnaud Le Rouzic and Jos? M. ?lvarez-Castro, Estimation of Genetic \nEffects and Genotype-Phenotype Maps, /Evolutionary Bioinformatics \n/2008:4 225-235.  http://la-press.com/article.php?article_id=887\n\n* The corresponding statistical framework is extensively described in:\nJos? M. ?lvarez-Castro and ?rjan Carlborg, A unified model for \nfunctional and statistical epistasis and its application in QTL \nanalysis, Genetics, Vol. 176, 1151-1167 2007. \nhttp://www.genetics.org/cgi/content/abstract/176/2/1151\n\nGiven the probable low impact of the package, I am not planning to \nfollow the R help mailing list. However, my email address is everywhere \nin the manual, and I would be very happy to answer questions related to \nthis package; so don't hesitate to forward potential questions or to \nencourage users to contact me directly.\n\nArnaud Le Rouzic.",
       "body_snippet": "Hi the list,\n\nA new version (0.92) of my package 'noia' will be available soon on CRAN \nmirrors, and I think it might be a good opportunity to introduce it \nshortly to the R community.\n\nIn summary: 'n",
       "thread_id": "thread-50fed65b3ef9",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-50fed65b3ef9",
-      "message_id": "<489331D7.8070607@bio.uio.no>",
-      "from_name": "Arnaud Le Rouzic",
-      "from_email_hash": "23d173c225ed742808d7266bfae2a031bb4d9865d54ee00884907864b4ed9d41",
-      "date": "2008-08-01T17:55:03+02:00",
-      "subject": "[R-pkgs] New package: noia",
-      "subject_clean": "New package: noia",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hi the list,\n\nA new version (0.92) of my package 'noia' will be available soon on CRAN \nmirrors, and I think it might be a good opportunity to introduce it \nshortly to the R community.\n\nIn summary: 'noia' will be of absolutely no interest for 99.99% of you. \nThe 0.01% remaining are quantitative geneticists who are interested in \nmeasuring the effect of genes in a proper way.\n\nSince some of you may want to know why it is worth to let this 'noia' \npackage take a few bytes on the CRAN server, I will try to introduce \nvery shortly the scientific problem. The rules that explain the \ntransmission of genes between generations are well known since the end \nof the 19th century. One important consequence of these rules is that in \nall diploid organisms (having two copies of the genomes, i.e. most of \nthem, including us), it is virtually impossible to produce an equal \nnumber of offspring of each \"type\" from non-inbred parents: you end up, \nmost of the time, with frequencies such as 1/4 vs 3/4, or 7/16 vs 9/16, \nor many other combinations. For quantitative traits, the link between \nthe genes and the characters is complex, and the effect of genes has to \nbe measured through models that look like cross-factor ANOVA designs. \nBecause of the unequal segregating ratios, these ANOVAs are highly \nunbalanced, with all well-known annoying consequences: correlations \nbetween effect estimates, non-orthogonal variance decomposition, etc.\n\nFor a long time, comparing estimates measured in differently designed \npopulations was not considered as a big issue. However, the recent need \nof effective model selection procedures lead to the proposition of new \nmodels aiming to a (more or less) orthogonal decomposition of genetic \neffects. This package provides tools to perform linear regressions using \nvarious models, to manipulate the genetic effects, and to compute \ngenotype to phenotype maps, i.e. the function explaining how the genes \nexpresses a given character. In addition, the 'noia' package provides a \ntool to perform 'multilinear' regression, an attempt of non-linear \ngenotype-phenotype mapping.\n\nIn summary, 'noia' is a wrapper for lm() and nls() functions in a very \nspecific context: estimating the effects of genes on a given trait.\n\nNB: 'noia' is useless if the location of the genes is not known. \nLocating the genes requires a QTL detection procedure, for which \npackages already exist (see Rqtl for instance).\n\nMuch more information can be found in scientific publications. Two are \nparticularly relevant:\n\n* This package and its functions are described in a recent paper:\nArnaud Le Rouzic and Jos? M. ?lvarez-Castro, Estimation of Genetic \nEffects and Genotype-Phenotype Maps, /Evolutionary Bioinformatics \n/2008:4 225-235.  http://la-press.com/article.php?article_id=887\n\n* The corresponding statistical framework is extensively described in:\nJos? M. ?lvarez-Castro and ?rjan Carlborg, A unified model for \nfunctional and statistical epistasis and its application in QTL \nanalysis, Genetics, Vol. 176, 1151-1167 2007. \nhttp://www.genetics.org/cgi/content/abstract/176/2/1151\n\nGiven the probable low impact of the package, I am not planning to \nfollow the R help mailing list. However, my email address is everywhere \nin the manual, and I would be very happy to answer questions related to \nthis package; so don't hesitate to forward potential questions or to \nencourage users to contact me directly.\n\nArnaud Le Rouzic.",
-      "body_snippet": "Hi the list,\n\nA new version (0.92) of my package 'noia' will be available soon on CRAN \nmirrors, and I think it might be a good opportunity to introduce it \nshortly to the R community.\n\nIn summary: 'n",
-      "thread_id": "thread-50fed65b3ef9",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-b920257cddce",
-      "message_id": "<1060702519@web.de>",
-      "from_name": "Jens Oehlschlägel",
-      "from_email_hash": "f073adaa565bb1d2ee057e84a39a987c70da1df4938e3d4d5a72e0cc3cffbdc1",
-      "date": "2008-08-04T10:12:56+02:00",
-      "subject": "[R-pkgs] major release ff 2.0 (large atomic objects)",
-      "subject_clean": "major release ff 2.0 (large atomic objects)",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R community,\n\nff Version 2.0 is available on CRAN. Based on paging concepts from version 1.0, \n2.0 is a major redesign of this package for handling large datasets. \nWe have implemented numerous enhancements and performance improvements to make \nthis package suitable as a 'base' package for large data processing. \n\nThe ff package provides atomic data structures that are stored on disk but \nbehave (almost) as if they were in RAM by transparently mapping only a section \n(pagesize) in main memory - the effective virtual memory consumption per ff \nobject.\n\nIn addition to the 'double' data type, ff objects now have support for\n'logical', 'raw' and 'integer' atomic datatypes, plus close-to-atomic types \nlike 'factor', 'POSIXct' or custom close-to-atomic types. In addition to fast \nvector access, ff now has native support for matrices and arrays with flexible \ndimorder (major column-order, major row-order and generalizations for arrays). \n\nWhile the raw data still gets stored on binary flat files in native encoding,\n'ff' objects have been extended to carry their meta information as physical\nand virtual attributes. ff objects have well-defined hybrid copying semantics, \nwhich gives rise to certain performance improvements through virtualization. \n\nThe new ff objects can be stored and reopened across R sessions. Flat files can \nbe shared by multiple 'ff' R objects (using different data en/de-coding \nschemes) in the same process or from multiple R processes to exploit \nparallelism. A wide choice of finalizer options allows to work with 'permanent'\nfiles as well as creating/removing 'temporary' ff files completely transparent \nto the user. On certain OS/Filesystem combinations, the creation process of \nlarge atomic data sets has been speed-up dramatically using sparse file \nallocation.\n\nSeveral access optimization techniques such as Hybrid Index Preprocessing and \nVirtualization are implemented to achieve good performance even with large \ndatasets, for example virtual matrix transpose without touching a single byte \non disk.\n\nFurther, to reduce disk I/O, the atomic data gets stored native and compact on\nbinary flat files i.e. logicals take up exactly 2 bits to represent TRUE, FALSE\nand NA.\n\nBeyond basic access functions, the ff package also provides compatibility \nfunctions that facilitate writing code for ff and ram objects and support for \nbatch processing on ff objects (e.g. as.ram, as.ff, ffapply).\n\nA package that supports convenient processing of large ff objects is in the \nmaking. R.ff will make the bigger part of R's basic functions available for ff \nobjects through method dispatch and/or an evaluator that handles expressions \nwhich contain ff objects. \n\nNOTE: A professional extension is available from the authors, which integrates\n      additional high-performance features neatly into the ff package. \n      The extension allows  efficient handling of symmetric matrices \n      and supports more packed data types: \n      boolean (1 bit), quad (2 bit unsigned), nibble (4 bit unsigned)\n      , byte (1 byte signed with NAs), ubyte (1 byte unsigned)\n      , short (2 byte signed with NAs), ushort (2 byte unsigned)\n      , single (4 byte float with NAs). \n      For example 'quad' allows efficient storage of genomic data as an \n      'A','T','G','C' factor. The unsigned types support 'circular' arithmetic. \n \nP.S. If you are interested in ff 2.0 you might want to visit our presentation \nAugust 5th at JSM \"High-Performance Processing of Large Data Sets via Memory \nMapping: A Case Study in R And C++\" or the official package presentation at \nUseR!2008 in Dortmund scheduled for August 13th. \n\nThe ff authors\nDaniel Adler <dadler at uni-goettingen.de>\nChristian Gl?ser <christian_glaeser at gmx.de>\nOleg Nenadic <onenadi at uni-goettingen.de>\nJens Oehlschl?gel <Jens.Oehlschlaegel at truecluster.com>\nWalter Zucchini <wzucchi at uni-goettingen.de>",
-      "body_snippet": "Dear R community,\n\nff Version 2.0 is available on CRAN. Based on paging concepts from version 1.0, \n2.0 is a major redesign of this package for handling large datasets. \nWe have implemented numerous e",
-      "thread_id": "thread-b920257cddce",
       "thread_depth": 0,
       "month": "2008-08"
     },
@@ -116,22 +68,6 @@
       "month": "2008-08"
     },
     {
-      "id": "msg-771ecbecea05",
-      "message_id": "<Pine.LNX.4.64.0808081432590.21158@elendil.ci.tuwien.ac.at>",
-      "from_name": "Alexandros Karatzoglou",
-      "from_email_hash": "0e524417459a865a2fa3dde7cdd32d2105d4089ab3da98068f70846db3d16144",
-      "date": "2008-08-08T14:51:53+02:00",
-      "subject": "[R-pkgs] kernlab version 0.9-7",
-      "subject_clean": "kernlab version 0.9-7",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "kernlab version 0.9-7 is now online and incorporates :\n\n  + a much improved fast implementation of string kernels \"stringdot\"\n    based on suffix arrays.\n\n  + a new kernel method kmmd() which implements a non-parametric kernel\n    based two sample test.\n\nThe new kernlab version also includes many minor improvements and fixes.\n\n\nAlexandros",
-      "body_snippet": "kernlab version 0.9-7 is now online and incorporates :\n\n  + a much improved fast implementation of string kernels \"stringdot\"\n    based on suffix arrays.\n\n  + a new kernel method kmmd() which implemen",
-      "thread_id": "thread-771ecbecea05",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
       "id": "msg-832835e8662f",
       "message_id": "<000801c8f961$cf529960$6df7cc20$@ca>",
       "from_name": "John Fox",
@@ -144,38 +80,6 @@
       "body_plain": "Dear R users,\n\nA new version (1.4-0) of the Rcmdr package (providing a basic-statistics\ngraphical user interface to R) is now on CRAN. This is the annual update of\nthe package (apart from bug-fixes and minor changes). Updated Italian and\nRussian translations are included with the package (courtesy, respectively,\nof Stefano Calza and Alexey Shipunov); I'll submit minor updates as other\ntranslations arrive.\n\nThe new version of the Rcmdr package has a number of new facilities (see the\nCHANGES file installed with the package), the most important of which is\nprobably the ability of plug-in packages to remove (as well as add to) the\nRcmdr menus. This should permit individuals to use the Rcmdr infrastructure\nto create GUIs for specialized applications.\n\nAs usual, comments, suggestions, and bug-reports are welcome.\n\nJohn\n\n------------------------------\nJohn Fox, Professor\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
       "body_snippet": "Dear R users,\n\nA new version (1.4-0) of the Rcmdr package (providing a basic-statistics\ngraphical user interface to R) is now on CRAN. This is the annual update of\nthe package (apart from bug-fixes an",
       "thread_id": "thread-832835e8662f",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-832835e8662f",
-      "message_id": "<000801c8f961$cf529960$6df7cc20$@ca>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2008-08-08T10:19:46-04:00",
-      "subject": "[R-pkgs] New version of Rcmdr package",
-      "subject_clean": "New version of Rcmdr package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nA new version (1.4-0) of the Rcmdr package (providing a basic-statistics\ngraphical user interface to R) is now on CRAN. This is the annual update of\nthe package (apart from bug-fixes and minor changes). Updated Italian and\nRussian translations are included with the package (courtesy, respectively,\nof Stefano Calza and Alexey Shipunov); I'll submit minor updates as other\ntranslations arrive.\n\nThe new version of the Rcmdr package has a number of new facilities (see the\nCHANGES file installed with the package), the most important of which is\nprobably the ability of plug-in packages to remove (as well as add to) the\nRcmdr menus. This should permit individuals to use the Rcmdr infrastructure\nto create GUIs for specialized applications.\n\nAs usual, comments, suggestions, and bug-reports are welcome.\n\nJohn\n\n------------------------------\nJohn Fox, Professor\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox",
-      "body_snippet": "Dear R users,\n\nA new version (1.4-0) of the Rcmdr package (providing a basic-statistics\ngraphical user interface to R) is now on CRAN. This is the annual update of\nthe package (apart from bug-fixes an",
-      "thread_id": "thread-832835e8662f",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-6ab4122cd230",
-      "message_id": "<1218621860.6744.68.camel@anthony-laptop>",
-      "from_name": "La Grange, AM",
-      "from_email_hash": "a5fdc870628b4589c10fb21f8cccaf6157dd2cf1f86e42f869061b97898a7282",
-      "date": "2008-08-13T12:04:20+02:00",
-      "subject": "[R-pkgs] New package: BiplotGUI",
-      "subject_clean": "New package: BiplotGUI",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nI am pleased to announce the release of the new BiplotGUI package on\nCRAN.\n\nBiplots are graphs in which the samples and all the variables of a data\nmatrix are represented simultaneously. They can be very useful for\nexploring multivariate data.\n\nThe BiplotGUI package allows users to construct and interact with\nbiplots as they are described in \"Biplots\" (Gower and Hand, 1996). In\nsuch biplots, the samples are represented as points, while the variables\nare represented as calibrated biplot axes. The representations are\nsimilar to ordinary scatter plots, but with all the variables\nrepresented at one time. \n\nVersion 0.0-2 of the package has the following features:\n\n* A graphical user interface (GUI), making it easy to use\n* Support for different types of biplots (PCA, covariance/correlation,\nCVA, regression, Procrustes, circular non-linear), both interpolative\nand predictive\n* Support for different scaling techniques (PCO, metric MDS, non-metric\nMDS, semi-metric MDS)\n* Various data transformations and distance metrics\n* Additional descriptors (convex hulls, alpha-bags, point densities,\nclassification regions)\n* Intermediate quantities for export back to R\n* Diagnostics (graphs of convergence; point, group and axis\npredictivities; Shepard diagrams)\n* Interactivity (variable value prediction, zooming, point and axis\ndrag-and-drop, 3D biplots)\n* Highly customisable graphics\n* Import of data directly from Excel 1997-2003 files\n\nThe package can be downloaded from CRAN:\n<http://cran.r-project.org/web/packages/BiplotGUI/index.html> or a\nfavourite mirror.\n\nThe project homepage is at <http://biplotgui.r-forge.r-project.org>. It\nincludes screenshots and example biplots. A manual is included within\nthe package itself, but is also available from the website.\n\nAt present, the package runs under Windows only. \n\n\nI would appreciate any feedback so that the package can be further\nimproved.\n\n\nThanks,\n\nAnthony la Grange\nDepartment of Statistics and Actuarial Science\nStellenbosch University\nSouth Africa",
-      "body_snippet": "Dear R users,\n\nI am pleased to announce the release of the new BiplotGUI package on\nCRAN.\n\nBiplots are graphs in which the samples and all the variables of a data\nmatrix are represented simultaneously",
-      "thread_id": "thread-6ab4122cd230",
       "thread_depth": 0,
       "month": "2008-08"
     },
@@ -212,22 +116,6 @@
       "month": "2008-08"
     },
     {
-      "id": "msg-f31ff13a87ee",
-      "message_id": "<c86bda880808180844s4e2d489dpe227423326529a1a@mail.gmail.com>",
-      "from_name": "Jose Claudio Faria",
-      "from_email_hash": "1c617eddedb86787eb21c0f1fea6ae273f7a339d35a851ebdf1c616666990248",
-      "date": "2008-08-18T12:44:28-03:00",
-      "subject": "[R-pkgs] New packages bpca: biplot (2d and 3d) and diagnostic tools",
-      "subject_clean": "New packages bpca: biplot (2d and 3d) and diagnostic tools",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R Community,\n\nWe am pleased to announce the release of the 'bcpa' package.  The\nsource code and binaries is now on CRAN\n(http://cran.r-project.org/web/packages/bpca/index.html).\n\nThe bpca package implements biplot (2d and 3d) and diagnostic tools of\nthe quality of the reduction.\nIt depends R (>= 2.6.0), scatterplot3d, rgl and MASS packages.\n\nRegards,\n-- \n///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\\nJose Claudio Faria\nEstatistica - prof. Titular\nUESC/DCET/Brasil\njoseclaudio.faria at gmail.com\njoseclaudio.faria at terra.com.br\n///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\///\\\\\\",
-      "body_snippet": "Dear R Community,\n\nWe am pleased to announce the release of the 'bcpa' package.  The\nsource code and binaries is now on CRAN\n(http://cran.r-project.org/web/packages/bpca/index.html).\n\nThe bpca package",
-      "thread_id": "thread-f31ff13a87ee",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
       "id": "msg-8dd55eef4ea4",
       "message_id": "<48B558F1.4000806@mrc-bsu.cam.ac.uk>",
       "from_name": "Chris Jackson",
@@ -240,38 +128,6 @@
       "body_plain": "Dear R users,\n\nI'd like to announce a new package on CRAN called ``denstrip''.  It\nimplements ``density strips'' and other graphical methods for\nillustrating and comparing distributions in a compact fashion.\n\nPosterior distributions of parameters are often summarised using point\nand line drawings of means and credible intervals.  This is common,\nfor example, in multiple regression or meta-analysis.  Density\nstrips generalise these to illustrate whole distributions.  Instead of a\npoint and line, a shaded strip indicates the density as proportional to\nthe darkness of the shading.  They taper to white at the end of the\nstrip, instead of terminating at a clear limit - this may discourage\ncasually categorising effects as ``significant'' if the line excludes\nthe null.\n\nThe shading idea generalises to ``density regions'' to show\nuncertainty about continuously-varying quantities, such as predictions\nfrom time series.  The package includes other functions for\nillustrating distributions in ``one dimension'', such as varying-width\nstrips (similar to violin plots) and sectioned density plots.\n\nIf you're interested in reading more about these methods, I discuss\nthem in a forthcoming article in The American Statistician, ``Displaying\nuncertainty with shading'', also available from\n\nhttp://www.mrc-bsu.cam.ac.uk/personal/chris/papers/denstrip.pdf\n\nComments and suggestions for improvement of the package are welcome.\n\n-- \nChristopher Jackson <chris.jackson at mrc-bsu.cam.ac.uk>\nResearch Statistician, MRC Biostatistics Unit, Institute of Public\nHealth, Robinson Way, Cambridge, UK, CB2 0SR. +44 (1223) 330381",
       "body_snippet": "Dear R users,\n\nI'd like to announce a new package on CRAN called ``denstrip''.  It\nimplements ``density strips'' and other graphical methods for\nillustrating and comparing distributions in a compact f",
       "thread_id": "thread-8dd55eef4ea4",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-8dd55eef4ea4",
-      "message_id": "<48B558F1.4000806@mrc-bsu.cam.ac.uk>",
-      "from_name": "Chris Jackson",
-      "from_email_hash": "a795016ae845f46bbc0bceb32639ecd94bb2642be3d281dab474dbcd82764218",
-      "date": "2008-08-27T14:38:57+01:00",
-      "subject": "[R-pkgs] New package: ``denstrip'' for compactly illustrating distributions",
-      "subject_clean": "New package: ``denstrip'' for compactly illustrating distributions",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nI'd like to announce a new package on CRAN called ``denstrip''.  It\nimplements ``density strips'' and other graphical methods for\nillustrating and comparing distributions in a compact fashion.\n\nPosterior distributions of parameters are often summarised using point\nand line drawings of means and credible intervals.  This is common,\nfor example, in multiple regression or meta-analysis.  Density\nstrips generalise these to illustrate whole distributions.  Instead of a\npoint and line, a shaded strip indicates the density as proportional to\nthe darkness of the shading.  They taper to white at the end of the\nstrip, instead of terminating at a clear limit - this may discourage\ncasually categorising effects as ``significant'' if the line excludes\nthe null.\n\nThe shading idea generalises to ``density regions'' to show\nuncertainty about continuously-varying quantities, such as predictions\nfrom time series.  The package includes other functions for\nillustrating distributions in ``one dimension'', such as varying-width\nstrips (similar to violin plots) and sectioned density plots.\n\nIf you're interested in reading more about these methods, I discuss\nthem in a forthcoming article in The American Statistician, ``Displaying\nuncertainty with shading'', also available from\n\nhttp://www.mrc-bsu.cam.ac.uk/personal/chris/papers/denstrip.pdf\n\nComments and suggestions for improvement of the package are welcome.\n\n-- \nChristopher Jackson <chris.jackson at mrc-bsu.cam.ac.uk>\nResearch Statistician, MRC Biostatistics Unit, Institute of Public\nHealth, Robinson Way, Cambridge, UK, CB2 0SR. +44 (1223) 330381",
-      "body_snippet": "Dear R users,\n\nI'd like to announce a new package on CRAN called ``denstrip''.  It\nimplements ``density strips'' and other graphical methods for\nillustrating and comparing distributions in a compact f",
-      "thread_id": "thread-8dd55eef4ea4",
-      "thread_depth": 0,
-      "month": "2008-08"
-    },
-    {
-      "id": "msg-d3d74326f905",
-      "message_id": "<66f3bd910808271935ved14acdmcb5de37e8d83baee@mail.gmail.com>",
-      "from_name": "Roger D. Peng",
-      "from_email_hash": "f16db268d52d59f4891274e2527502244f6fb69eae6abe5f5f14ba72cc4ce10e",
-      "date": "2008-08-27T22:35:24-04:00",
-      "subject": "[R-pkgs] filehash 2.0",
-      "subject_clean": "filehash 2.0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have just uploaded to CRAN version 2.0 of the 'filehash' package.\nThis version contains a major rewriting of many of the internals (much\nrewritten in C) for the DB1 format, which is the default.  This\ndevelopment has lead to better file locking for concurrent access and\nfaster reading and writing of data in general.\n\nIn addition to rewriting the internals, I have added two modules for a\nstack and queue data structure, implemented using 'filehash'\ndatabases.  These are mostly for my own amusement, but perhaps you\nwill find them useful also.\n\nFor users of the 'filehash' package I would appreciate any general\ncomments as well as any bug reports, particularly considering the\nnumber of changes that were made to the internals this time around.\n\n-roger\n\n-- \nRoger D. Peng | http://www.biostat.jhsph.edu/~rpeng/",
-      "body_snippet": "I have just uploaded to CRAN version 2.0 of the 'filehash' package.\nThis version contains a major rewriting of many of the internals (much\nrewritten in C) for the DB1 format, which is the default.  Th",
-      "thread_id": "thread-d3d74326f905",
       "thread_depth": 0,
       "month": "2008-08"
     },
@@ -305,17 +161,6 @@
       "root_message_id": "msg-2029fc9fb745"
     },
     {
-      "id": "thread-2029fc9fb745",
-      "subject": "sensitivity",
-      "message_count": 1,
-      "participants": [
-        "IOOSS Bertrand 165542"
-      ],
-      "started": "2008-08-01T16:39:19+02:00",
-      "last_reply": "2008-08-01T16:39:19+02:00",
-      "root_message_id": "msg-2029fc9fb745"
-    },
-    {
       "id": "thread-50fed65b3ef9",
       "subject": "New package: noia",
       "message_count": 1,
@@ -325,28 +170,6 @@
       "started": "2008-08-01T17:55:03+02:00",
       "last_reply": "2008-08-01T17:55:03+02:00",
       "root_message_id": "msg-50fed65b3ef9"
-    },
-    {
-      "id": "thread-50fed65b3ef9",
-      "subject": "New package: noia",
-      "message_count": 1,
-      "participants": [
-        "Arnaud Le Rouzic"
-      ],
-      "started": "2008-08-01T17:55:03+02:00",
-      "last_reply": "2008-08-01T17:55:03+02:00",
-      "root_message_id": "msg-50fed65b3ef9"
-    },
-    {
-      "id": "thread-b920257cddce",
-      "subject": "major release ff 2.0 (large atomic objects)",
-      "message_count": 1,
-      "participants": [
-        "Jens Oehlschlägel"
-      ],
-      "started": "2008-08-04T10:12:56+02:00",
-      "last_reply": "2008-08-04T10:12:56+02:00",
-      "root_message_id": "msg-b920257cddce"
     },
     {
       "id": "thread-b920257cddce",
@@ -371,17 +194,6 @@
       "root_message_id": "msg-832835e8662f"
     },
     {
-      "id": "thread-832835e8662f",
-      "subject": "New version of Rcmdr package",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2008-08-08T10:19:46-04:00",
-      "last_reply": "2008-08-08T10:19:46-04:00",
-      "root_message_id": "msg-832835e8662f"
-    },
-    {
       "id": "thread-771ecbecea05",
       "subject": "kernlab version 0.9-7",
       "message_count": 1,
@@ -391,28 +203,6 @@
       "started": "2008-08-08T14:51:53+02:00",
       "last_reply": "2008-08-08T14:51:53+02:00",
       "root_message_id": "msg-771ecbecea05"
-    },
-    {
-      "id": "thread-771ecbecea05",
-      "subject": "kernlab version 0.9-7",
-      "message_count": 1,
-      "participants": [
-        "Alexandros Karatzoglou"
-      ],
-      "started": "2008-08-08T14:51:53+02:00",
-      "last_reply": "2008-08-08T14:51:53+02:00",
-      "root_message_id": "msg-771ecbecea05"
-    },
-    {
-      "id": "thread-6ab4122cd230",
-      "subject": "New package: BiplotGUI",
-      "message_count": 1,
-      "participants": [
-        "La Grange, AM"
-      ],
-      "started": "2008-08-13T12:04:20+02:00",
-      "last_reply": "2008-08-13T12:04:20+02:00",
-      "root_message_id": "msg-6ab4122cd230"
     },
     {
       "id": "thread-6ab4122cd230",
@@ -437,17 +227,6 @@
       "root_message_id": "msg-f31ff13a87ee"
     },
     {
-      "id": "thread-f31ff13a87ee",
-      "subject": "New packages bpca: biplot (2d and 3d) and diagnostic tools",
-      "message_count": 1,
-      "participants": [
-        "Jose Claudio Faria"
-      ],
-      "started": "2008-08-18T12:44:28-03:00",
-      "last_reply": "2008-08-18T12:44:28-03:00",
-      "root_message_id": "msg-f31ff13a87ee"
-    },
-    {
       "id": "thread-8dd55eef4ea4",
       "subject": "New package: ``denstrip'' for compactly illustrating distributions",
       "message_count": 1,
@@ -457,28 +236,6 @@
       "started": "2008-08-27T14:38:57+01:00",
       "last_reply": "2008-08-27T14:38:57+01:00",
       "root_message_id": "msg-8dd55eef4ea4"
-    },
-    {
-      "id": "thread-8dd55eef4ea4",
-      "subject": "New package: ``denstrip'' for compactly illustrating distributions",
-      "message_count": 1,
-      "participants": [
-        "Chris Jackson"
-      ],
-      "started": "2008-08-27T14:38:57+01:00",
-      "last_reply": "2008-08-27T14:38:57+01:00",
-      "root_message_id": "msg-8dd55eef4ea4"
-    },
-    {
-      "id": "thread-d3d74326f905",
-      "subject": "filehash 2.0",
-      "message_count": 1,
-      "participants": [
-        "Roger D. Peng"
-      ],
-      "started": "2008-08-27T22:35:24-04:00",
-      "last_reply": "2008-08-27T22:35:24-04:00",
-      "root_message_id": "msg-d3d74326f905"
     },
     {
       "id": "thread-d3d74326f905",

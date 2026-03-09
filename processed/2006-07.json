@@ -20,38 +20,6 @@
       "month": "2006-07"
     },
     {
-      "id": "msg-663db86f1cfc",
-      "message_id": "<20060702212429.GC758@ms.unimelb.edu.au>",
-      "from_name": "Andrew Robinson",
-      "from_email_hash": "a0357b0f3a3b9527c98f8588b434280de306c80418cd26fa3e9e9971a908681b",
-      "date": "2006-07-03T07:24:29+10:00",
-      "subject": "[R-pkgs] Rassist - Student-friendly package",
-      "subject_clean": "Rassist - Student-friendly package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The Rassist package has been loaded to CRAN.  This package is designed\nto make R easier for new users, by providing extra checks and\nfeedback. \n\nPresently the package functionality includes:\n\n* offers an alternative help facility, eg(.), with examples first,\n  with additional examples included.  eg() offers a start help menu,\n  and eg(.) incorporates help.search(.) automatically.  It also\n  locates the relevant package if not loaded.\n\n* Some mathematical functions validate input received.  They give\n  feedback on units used, and when in error, prompt the user to\n  correct the input.\n\n* plot(.) offers feedback and cautions about input format.  \n\n* deskcheck incorporates debug(), in straight forward testing.\n\n* source(.), under development, in error produces a directory listing.\n\nWe believe that much remains to be done, but we wanted to solicit\ncommunity feedback from interested parties. Please pass on suggestions\nfor other functions, or better ways to achieve the same goals, to me.\n\nCheers\n\nAndrew\n\n-- \nAndrew Robinson  \nDepartment of Mathematics and Statistics            Tel: +61-3-8344-9763\nUniversity of Melbourne, VIC 3010 Australia         Fax: +61-3-8344-4599\nEmail: a.robinson at ms.unimelb.edu.au         http://www.ms.unimelb.edu.au",
-      "body_snippet": "The Rassist package has been loaded to CRAN.  This package is designed\nto make R easier for new users, by providing extra checks and\nfeedback. \n\nPresently the package functionality includes:\n\n* offers",
-      "thread_id": "thread-663db86f1cfc",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-85d8c626f02d",
-      "message_id": "<f8e6ff050607030025k77d4075bv7faf5b68d54b56b3@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2006-07-03T09:25:20+02:00",
-      "subject": "[R-pkgs] ggplot: a new system for drawing graphics in R",
-      "subject_clean": "ggplot: a new system for drawing graphics in R",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot provides a new system for drawing graphics in R, based on the\nGrammar of Graphics. It combines the advantages of both base and\nlattice graphics: conditioning and shared axes are handled\nautomatically, and you can still build up a plot step by step from\nmultiple data sources. It also implements a more sophisticated\nmultidimensional conditioning system and a consistent interface to map\ndata to visual attributes.  ggplot (along with reshape) received the\nJohn Chambers Award for Statistical Computing.\n\nggplot is available now from CRAN (install.packages(\"ggplot\")) and\nmore information is available at my website (http://had.co.nz/ggplot)\nincluding copies of talks, examples, and a guide showing how to\nconvert your existing lattice code.\n\nTo get started I recommend you look at:\n\n * the introductory vignette: vignette(\"introduction\", \"ggplot\")\n * help for the quick plotting command: ?qplot\n * help for the full plotting commands: ?ggplot\n\nI want to provide great documentation, so if there is anything you\nthink I am missing, please let me know.\n\nRegards,\n\nHadley",
-      "body_snippet": "ggplot provides a new system for drawing graphics in R, based on the\nGrammar of Graphics. It combines the advantages of both base and\nlattice graphics: conditioning and shared axes are handled\nautomat",
-      "thread_id": "thread-85d8c626f02d",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
       "id": "msg-85d8c626f02d",
       "message_id": "<f8e6ff050607030025k77d4075bv7faf5b68d54b56b3@mail.gmail.com>",
       "from_name": "hadley wickham",
@@ -84,22 +52,6 @@
       "month": "2006-07"
     },
     {
-      "id": "msg-879c2771ddc6",
-      "message_id": "<20060630103932.M37854@tfh-berlin.de>",
-      "from_name": "Ulrike Grömping",
-      "from_email_hash": "ece7b371347e1744ed105b8937745b2bea6acbaa3d35b14ef75dd59a6acfce2b",
-      "date": "2006-07-05T10:17:27+02:00",
-      "subject": "[R-pkgs] relaimpo: CRAN package for relative importance in linear regression",
-      "subject_clean": "relaimpo: CRAN package for relative importance in linear regression",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment-0001.pl>",
-      "thread_id": "thread-879c2771ddc6",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
       "id": "msg-90ba1645d428",
       "message_id": "<44ABDE63.6090204@TU-Dresden.de>",
       "from_name": "Thomas Petzoldt",
@@ -112,38 +64,6 @@
       "body_plain": "Dear useRs,\n\na new and completely re-worked version of the \"simecol\" package\n\n   SIMulatiion of ECOLogical (and other) dynamic systems\n\nis now available on CRAN. Compared to the S3 based 0.2-x versions an\nimproved object model using S4 classes was employed. Please ask me for\nassistance in case of incompatibility.\n\nComments are welcome, Thomas Petzoldt\n\n----------------------------------------------------------------------\n\nAbstract:\n=========\n\nThe simecol package is intended to give users (scientists and students)\nand interactive environment to implement, distribute, simulate and\ndocument ecological and other dynamic models without the need to write\nlong simulation programs. An object oriented approach based on the S4\nclass system is proposed, which should provide a consistent but still\nflexible and extensible way to implement dynamic models.\n\nModels of different type are provided as data and in source code (see\ndirectory \"examples\") which are intended as a starting point to write\nand distribute your own simObj models.\n\nThe package is supplemented with several utility functions (e.g.\nseedfill or neighbours), which can be used independently from simObj\nobjects.\n\nMore Info:\n==========\n\n? simecol-package: general description of the package\n? parms: functions to get or set model parameters etc.\n\n\nExamples:\n=========\n\nfile.show(system.file(\"examples/lv.R\", package = \"simecol\"))\nfile.show(system.file(\"examples/conway.R\", package = \"simecol\"))\nfile.show(system.file(\"examples/upca.R\", package = \"simecol\"))\n\nHomepage:\n=========\nhttp://www.simecol.de with examples, useR-2006 slides and poster.\n\n\n\n--\nDr. Thomas Petzoldt\nTechnische Universitaet Dresden\nInstitut fuer Hydrobiologie        thomas.petzoldt at tu-dresden.de\n01062 Dresden                      http://tu-dresden.de/hydrobiologie/\nGERMANY",
       "body_snippet": "Dear useRs,\n\na new and completely re-worked version of the \"simecol\" package\n\n   SIMulatiion of ECOLogical (and other) dynamic systems\n\nis now available on CRAN. Compared to the S3 based 0.2-x version",
       "thread_id": "thread-90ba1645d428",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-90ba1645d428",
-      "message_id": "<44ABDE63.6090204@TU-Dresden.de>",
-      "from_name": "Thomas Petzoldt",
-      "from_email_hash": "c2a982b70f8aad17b531e5990cc824679391643203ce292cbbc0e7d925fda2e9",
-      "date": "2006-07-05T17:44:35+02:00",
-      "subject": "[R-pkgs] package simecol uploaded to CRAN",
-      "subject_clean": "package simecol uploaded to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\na new and completely re-worked version of the \"simecol\" package\n\n   SIMulatiion of ECOLogical (and other) dynamic systems\n\nis now available on CRAN. Compared to the S3 based 0.2-x versions an\nimproved object model using S4 classes was employed. Please ask me for\nassistance in case of incompatibility.\n\nComments are welcome, Thomas Petzoldt\n\n----------------------------------------------------------------------\n\nAbstract:\n=========\n\nThe simecol package is intended to give users (scientists and students)\nand interactive environment to implement, distribute, simulate and\ndocument ecological and other dynamic models without the need to write\nlong simulation programs. An object oriented approach based on the S4\nclass system is proposed, which should provide a consistent but still\nflexible and extensible way to implement dynamic models.\n\nModels of different type are provided as data and in source code (see\ndirectory \"examples\") which are intended as a starting point to write\nand distribute your own simObj models.\n\nThe package is supplemented with several utility functions (e.g.\nseedfill or neighbours), which can be used independently from simObj\nobjects.\n\nMore Info:\n==========\n\n? simecol-package: general description of the package\n? parms: functions to get or set model parameters etc.\n\n\nExamples:\n=========\n\nfile.show(system.file(\"examples/lv.R\", package = \"simecol\"))\nfile.show(system.file(\"examples/conway.R\", package = \"simecol\"))\nfile.show(system.file(\"examples/upca.R\", package = \"simecol\"))\n\nHomepage:\n=========\nhttp://www.simecol.de with examples, useR-2006 slides and poster.\n\n\n\n--\nDr. Thomas Petzoldt\nTechnische Universitaet Dresden\nInstitut fuer Hydrobiologie        thomas.petzoldt at tu-dresden.de\n01062 Dresden                      http://tu-dresden.de/hydrobiologie/\nGERMANY",
-      "body_snippet": "Dear useRs,\n\na new and completely re-worked version of the \"simecol\" package\n\n   SIMulatiion of ECOLogical (and other) dynamic systems\n\nis now available on CRAN. Compared to the S3 based 0.2-x version",
-      "thread_id": "thread-90ba1645d428",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-6ce084ce6706",
-      "message_id": "<0F923E9EBBF1554ABA641ACA04BEBEC004ED4F22@WS-BCO-MSE7.milky-way.battelle.org>",
-      "from_name": "Carnell, Rob C",
-      "from_email_hash": "c266be4c7f9811076278c286559d2577b2bc2b2868c789acfbc2c229d400d3cd",
-      "date": "2006-07-12T11:05:20-04:00",
-      "subject": "[R-pkgs] New R-Packages:  Triangle and LHS",
-      "subject_clean": "New R-Packages:  Triangle and LHS",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Two new packages have been added to CRAN.  \n\nThe first is a simple package which provides the standard functions for\na triangle distribution (rtriangle, dtriangle, ptriangle, qtriangle).  \n\nThe second package generates and augments Latin Hypercube Samples.\nFunctions for generating random and optimized designs are provided.\n\nI look forward hearing your feedback and improving the documentation!\n \n\nRob Carnell",
-      "body_snippet": "Two new packages have been added to CRAN.  \n\nThe first is a simple package which provides the standard functions for\na triangle distribution (rtriangle, dtriangle, ptriangle, qtriangle).  \n\nThe second",
-      "thread_id": "thread-6ce084ce6706",
       "thread_depth": 0,
       "month": "2006-07"
     },
@@ -180,22 +100,6 @@
       "month": "2006-07"
     },
     {
-      "id": "msg-6b301632dbd9",
-      "message_id": "<148ed8180607120959j361f7893h3aeab3551fae490@mail.gmail.com>",
-      "from_name": "Göran Broström",
-      "from_email_hash": "66e592a12cd1e56cd7a2efa08753111907fa15843f0a9978328deaf6f059b9dc",
-      "date": "2006-07-12T18:59:08+02:00",
-      "subject": "[R-pkgs] glmmML updated",
-      "subject_clean": "glmmML updated",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "I have uploaded a new version (0.30-2) of glmmML to CRAN today.\n\nThis is a rather extensive upgrade, mostly internal. Adaptive\nGauss-Hermite quadrature (GHQ) is now used for the evaluation of the\nintegrals in the log likelihood function. The user can choose the number\nof points (default is 16), I _think_ that choosing 1 point will result\nin a Laplace approximation. The integrals in the score and hessian\nare evaluated by the QUADPACK function 'Rdqagi' which is the C code\nbehind the R function 'integrate'. This specific combination of the two\nmethods seems to work best. (I often get _exactly_ (up to seven digits)\nthe same value with the two methods, but in some extreme cases one may\nfail and not the other.)\n\nNew components in the output from 'glmmML' are 'posterior.means' and\nposterior.modes'. The modes are found by using 'vmmin' (behind R's\n'optim') on the integrands in the GHQ, the means by numerical\nintegration. Usually, they do not differ much.\n\nA special problem is situations where the random effects variance is\nvery small or zero. I may happen that glmmML is unable to get the\nlikelihood value above the value given by 'glm' on the corresponding\nmodel with no clustering. In such a case zero variance is reported, with\na standard error that is NA. A warning is also given. If a test of the\nhypothesis that sigma = 0 is on the wish list, a p-value can be\nestimated by bootstrapping, see the input parameter 'boot'. The only\noption now is a parametric bootstrap; I have removed the 'conditional'\napproach.\n\nAs usual, comments, and error and bug reports are welcome.\n\nG?ran\n\n-- \nG?ran Brostr?m",
-      "body_snippet": "I have uploaded a new version (0.30-2) of glmmML to CRAN today.\n\nThis is a rather extensive upgrade, mostly internal. Adaptive\nGauss-Hermite quadrature (GHQ) is now used for the evaluation of the\ninte",
-      "thread_id": "thread-6b301632dbd9",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
       "id": "msg-af7e8ebbd36a",
       "message_id": "<71257D09F114DA4A8E134DEAC70F25D305A521F2@groamrexm03.amer.pfizer.com>",
       "from_name": "Kuhn, Max",
@@ -208,38 +112,6 @@
       "body_plain": "The odfWeave package is now available on CRAN at\n\nhttp://lib.stat.cmu.edu/R/CRAN/src/contrib/Descriptions/odfWeave.html\n\nand your local mirror.\n\nThe package extends Sweave to Open Document Format (ODF) text document \nfiles. Latex-style code chunks and in-line Sexpr commands can be used \nto embed R output into ODF file, which can then be exported to doc, \nrtf, html, pdf and other formats.\n\nOther functions in the package facilitate ODF formatted tables, text \nand lists.\n\nThe current limitations of the package are:\n\n O tangling is not yet implement (but will be)\n\n O testing has been done on text documents generated by OpenOffice. \n   Other formats/editors may work, but are not (yet) supported.\n\nPlease send comments, suggestions and/or contributions.\n\nMax Kuhn\nResearch Statistics\nPfizer Global R&D\nMax.Kuhn at pfizer.com\n\n\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
       "body_snippet": "The odfWeave package is now available on CRAN at\n\nhttp://lib.stat.cmu.edu/R/CRAN/src/contrib/Descriptions/odfWeave.html\n\nand your local mirror.\n\nThe package extends Sweave to Open Document Format (ODF",
       "thread_id": "thread-af7e8ebbd36a",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-af7e8ebbd36a",
-      "message_id": "<71257D09F114DA4A8E134DEAC70F25D305A521F2@groamrexm03.amer.pfizer.com>",
-      "from_name": "Kuhn, Max",
-      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
-      "date": "2006-07-18T22:58:21-04:00",
-      "subject": "[R-pkgs] odfWeave Package",
-      "subject_clean": "odfWeave Package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The odfWeave package is now available on CRAN at\n\nhttp://lib.stat.cmu.edu/R/CRAN/src/contrib/Descriptions/odfWeave.html\n\nand your local mirror.\n\nThe package extends Sweave to Open Document Format (ODF) text document \nfiles. Latex-style code chunks and in-line Sexpr commands can be used \nto embed R output into ODF file, which can then be exported to doc, \nrtf, html, pdf and other formats.\n\nOther functions in the package facilitate ODF formatted tables, text \nand lists.\n\nThe current limitations of the package are:\n\n O tangling is not yet implement (but will be)\n\n O testing has been done on text documents generated by OpenOffice. \n   Other formats/editors may work, but are not (yet) supported.\n\nPlease send comments, suggestions and/or contributions.\n\nMax Kuhn\nResearch Statistics\nPfizer Global R&D\nMax.Kuhn at pfizer.com\n\n\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
-      "body_snippet": "The odfWeave package is now available on CRAN at\n\nhttp://lib.stat.cmu.edu/R/CRAN/src/contrib/Descriptions/odfWeave.html\n\nand your local mirror.\n\nThe package extends Sweave to Open Document Format (ODF",
-      "thread_id": "thread-af7e8ebbd36a",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-a1c2791d3385",
-      "message_id": "<b0808fdc0607210119q34a4933re2f10d45309d7478@mail.gmail.com>",
-      "from_name": "Antonio, Fabio Di Narzo",
-      "from_email_hash": "d2543602a7e9eac417ed20eca2673d0a1d1c401c4b0d27ff6f0f644f508f348c",
-      "date": "2006-07-21T10:19:50+02:00",
-      "subject": "[R-pkgs] tsDyn and RTisean packages on CRAN",
-      "subject_clean": "tsDyn and RTisean packages on CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\nI've just uploaded  2 packages on CRAN, RTisean and tsDyn, both for time\nseries analysis (joint research projects with members of the Statistics\nDepartment, University of Udine). Brief descriptions follow.\n\nRTisean is an R interface to TISEAN executables\n(http://www.mpipks-dresden.mpg.de/~tisean/). TISEAN is a suite of C\nand Fortran routines for nonlinear time series analysis, coded and\ndocumented by Rainer Hegger, Holger Kantz and Thomas Schreiber. In\nRTisean, almost all TISEAN routines are wrapped in a conventional R\nfunction (which silently calls TISEAN executables), with online help\nand examples (thanks to Gianluca Gazzola).\n\ntsDyn is a package for nonlinear time series modelling. At this point\nthe package focuses on Nonlinear Autoregressive Models, often indicated as\nNLAR (as a major reference, see Tong (1990)). Currently available are\nthreshold (SETAR and LSTAR), neural networks (NNET), and additive\nautoregressive (AAR) models. An experimental cross-platform tcltk GUI is\nincluded for model selection. Explorative and diagnostic tools are\nalso available. A vignette is included for a clearer presentation of the\npackage contents.\n\nComments and suggestions appreciated\n\nAntonio, Fabio Di Narzo\nDipartimento di Statistica\nUniversit? degli studi di Bologna.",
-      "body_snippet": "Dear R users,\nI've just uploaded  2 packages on CRAN, RTisean and tsDyn, both for time\nseries analysis (joint research projects with members of the Statistics\nDepartment, University of Udine). Brief d",
-      "thread_id": "thread-a1c2791d3385",
       "thread_depth": 0,
       "month": "2006-07"
     },
@@ -276,22 +148,6 @@
       "month": "2006-07"
     },
     {
-      "id": "msg-d49b1842a1cb",
-      "message_id": "<44C60DA8.6070602@biomserv.univ-lyon1.fr>",
-      "from_name": "Simon Penel",
-      "from_email_hash": "930e04aa55d71c91868e2d4bc210a57595241d60b797a333334d2abac85bf4e9",
-      "date": "2006-07-25T14:25:12+02:00",
-      "subject": "[R-pkgs] seqinr updated :  release 1.0-5",
-      "subject_clean": "seqinr updated :  release 1.0-5",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\n\nseqinR 1.0-5 has been released yesterday on CRAN, so that the source code\nof the package should be available on all CRAN mirrors within the next 24h.\n\nThe updated package vignette is here:\nhttp://pbil.univ-lyon1.fr/software/SeqinR/seqinr_1_0-5.pdf\n\nUser level visible changes are:\n\no  A  new function dotPlot() is now available.\n   \nhttp://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/dotPlot.html\n\no  A new function crelistfromclientdata() is now available to create a \nlist on\n   the server from a local file of sequence names, sequence accession \nnumbers,\n   species names, or keywords names.\n\nhttp://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/crelistfromclientdata.html \n\n\no  A new function pmw() to compute the molecular weight of a protein is now\n   available.\n   http://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/pmw.html\n\no  A new function reverse.align() contributed by Anamaria Necsulea is now\n   available to align CDS at the protein level and then reverse translate\n   this at the nucleic acid level from a clustalw output. This can be done\n   on the fly if clustalw is available on your platform.\n\nhttp://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/reverse.align.html \n\n\no  An undocumented behavior was reported by Guy Perriere for uco() when\n   computing RSCU on sequences where an amino-acid is missing. There is\n   now a new argument NA.rscu that allows the user to force the missing\n   values to his favorite magic value.\n   http://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/uco.html\n\no  There was a bug in read.fasta(): some sequence names were truncated, \nthis\n   is now fixed (thanks to Marcus G. Daniels for pointing this).\n   In order to be more consistent with standard functions such as \nread.table()\n   or scan(), the file argument starts now with a lower case letter \n(i.e.\"file\")\n   in function read.fasta(), but the old-style \"File\" is still \nfunctional for\n   forward-compatibility. There is a new logical argument in read.fasta()\n   named as.string to allow sequences to be returned as strings instead of\n   vector of single characters. The automatic conversion of DNA \nsequences into\n   lower case letters can now be disabled with the new logical argument\n   forceDNAtolower. It is also possible to disable the automatic attributes\n   settings with the new logical argument set.attributes.\n\nhttp://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/read.fasta.html \n\n\no  A new function write.fasta() is now available.\n\nhttp://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/write.fasta.html \n\n\no  The function kaks() now forces character in sequences to upper case.\n   This default behavior can be neutralized in order to save time by \nsetting the\n   argument forceUpperCase to FALSE.\n   http://pbil.univ-lyon1.fr/software/SeqinR/SEQINR_CRAN/DOC/html/kaks.html\n\nall the best,\n\nSimon\n\n-- \nSimon Penel\nLaboratoire de Biometrie et Biologie Evolutive           \nBat 711  -   CNRS UMR 5558  -    Universite Lyon 1              \n43 bd du 11 novembre 1918 69622 Villeurbanne Cedex       \nTel:   04 72 43 29 04      Fax:  04 72 43 13 88\nhttp://pbil.univ-lyon1.fr/members/penel",
-      "body_snippet": "Dear R users,\n\n\nseqinR 1.0-5 has been released yesterday on CRAN, so that the source code\nof the package should be available on all CRAN mirrors within the next 24h.\n\nThe updated package vignette is h",
-      "thread_id": "thread-d49b1842a1cb",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
       "id": "msg-238f176d2d15",
       "message_id": "<20060725183626.IWTT10262.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
       "from_name": "John Fox",
@@ -304,38 +160,6 @@
       "body_plain": "Dear Kurt,\n\nI've uploaded a new version (0.9-4) of the sem package to CRAN.\n\nI hope that everything is well with you.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
       "body_snippet": "Dear Kurt,\n\nI've uploaded a new version (0.9-4) of the sem package to CRAN.\n\nI hope that everything is well with you.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster ",
       "thread_id": "thread-238f176d2d15",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-238f176d2d15",
-      "message_id": "<20060725183626.IWTT10262.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
-      "from_name": "John Fox",
-      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2006-07-25T14:36:26-04:00",
-      "subject": "[R-pkgs] Version 0.9-4 of sem to CRAN",
-      "subject_clean": "Version 0.9-4 of sem to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear Kurt,\n\nI've uploaded a new version (0.9-4) of the sem package to CRAN.\n\nI hope that everything is well with you.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox",
-      "body_snippet": "Dear Kurt,\n\nI've uploaded a new version (0.9-4) of the sem package to CRAN.\n\nI hope that everything is well with you.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster ",
-      "thread_id": "thread-238f176d2d15",
-      "thread_depth": 0,
-      "month": "2006-07"
-    },
-    {
-      "id": "msg-e5345d6ee073",
-      "message_id": "<71257D09F114DA4A8E134DEAC70F25D305B922AF@groamrexm03.amer.pfizer.com>",
-      "from_name": "Kuhn, Max",
-      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
-      "date": "2006-07-28T21:44:06-04:00",
-      "subject": "[R-pkgs] Version 0.4.3 of odfWeave",
-      "subject_clean": "Version 0.4.3 of odfWeave",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "A new version of odfWeave is on CRAN. Changes include:\n\n - handling of locales. Errors were being produced when locales were set\nto anything but \"C\". The fix changes the locale to \"C\" and changes back\nto the original locale when the user's code is executed.\n\n - a bug fix for default plot device units (to prevent bitmap graphics\nfrom being 480x480 inches on non-Windows systems).\n\n - a check was inserted at the beginning of the odfWeave function to\ntest for zipping/unzipping utilities. This is only done if the default\nvalue for zipCmd in odfWeaveControl was not used. A more meaningful\nerror message is produced.\n\n - the manual is now a \"legal\" package vignette and accessible using\nvignette(\"odfWeave\").\n\nThanks to Manuel Morales, Ronggui, Andrew Robinson, Frank Harrell and\nDavid Hajage for their help in finding bugs.\n\nPlease send any comments, questions, bugs etc.\n\nMax Kuhn\nResearch Statistics\nPfizer Global R&D\nMax.Kuhn at pfizer.com\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
-      "body_snippet": "A new version of odfWeave is on CRAN. Changes include:\n\n - handling of locales. Errors were being produced when locales were set\nto anything but \"C\". The fix changes the locale to \"C\" and changes back",
-      "thread_id": "thread-e5345d6ee073",
       "thread_depth": 0,
       "month": "2006-07"
     },
@@ -369,17 +193,6 @@
       "root_message_id": "msg-663db86f1cfc"
     },
     {
-      "id": "thread-663db86f1cfc",
-      "subject": "Rassist - Student-friendly package",
-      "message_count": 1,
-      "participants": [
-        "Andrew Robinson"
-      ],
-      "started": "2006-07-03T07:24:29+10:00",
-      "last_reply": "2006-07-03T07:24:29+10:00",
-      "root_message_id": "msg-663db86f1cfc"
-    },
-    {
       "id": "thread-85d8c626f02d",
       "subject": "ggplot: a new system for drawing graphics in R",
       "message_count": 1,
@@ -389,28 +202,6 @@
       "started": "2006-07-03T09:25:20+02:00",
       "last_reply": "2006-07-03T09:25:20+02:00",
       "root_message_id": "msg-85d8c626f02d"
-    },
-    {
-      "id": "thread-85d8c626f02d",
-      "subject": "ggplot: a new system for drawing graphics in R",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2006-07-03T09:25:20+02:00",
-      "last_reply": "2006-07-03T09:25:20+02:00",
-      "root_message_id": "msg-85d8c626f02d"
-    },
-    {
-      "id": "thread-879c2771ddc6",
-      "subject": "relaimpo: CRAN package for relative importance in linear regression",
-      "message_count": 1,
-      "participants": [
-        "Ulrike Grömping"
-      ],
-      "started": "2006-07-05T10:17:27+02:00",
-      "last_reply": "2006-07-05T10:17:27+02:00",
-      "root_message_id": "msg-879c2771ddc6"
     },
     {
       "id": "thread-879c2771ddc6",
@@ -435,17 +226,6 @@
       "root_message_id": "msg-90ba1645d428"
     },
     {
-      "id": "thread-90ba1645d428",
-      "subject": "package simecol uploaded to CRAN",
-      "message_count": 1,
-      "participants": [
-        "Thomas Petzoldt"
-      ],
-      "started": "2006-07-05T17:44:35+02:00",
-      "last_reply": "2006-07-05T17:44:35+02:00",
-      "root_message_id": "msg-90ba1645d428"
-    },
-    {
       "id": "thread-6ce084ce6706",
       "subject": "New R-Packages:  Triangle and LHS",
       "message_count": 1,
@@ -455,28 +235,6 @@
       "started": "2006-07-12T11:05:20-04:00",
       "last_reply": "2006-07-12T11:05:20-04:00",
       "root_message_id": "msg-6ce084ce6706"
-    },
-    {
-      "id": "thread-6ce084ce6706",
-      "subject": "New R-Packages:  Triangle and LHS",
-      "message_count": 1,
-      "participants": [
-        "Carnell, Rob C"
-      ],
-      "started": "2006-07-12T11:05:20-04:00",
-      "last_reply": "2006-07-12T11:05:20-04:00",
-      "root_message_id": "msg-6ce084ce6706"
-    },
-    {
-      "id": "thread-6b301632dbd9",
-      "subject": "glmmML updated",
-      "message_count": 1,
-      "participants": [
-        "Göran Broström"
-      ],
-      "started": "2006-07-12T18:59:08+02:00",
-      "last_reply": "2006-07-12T18:59:08+02:00",
-      "root_message_id": "msg-6b301632dbd9"
     },
     {
       "id": "thread-6b301632dbd9",
@@ -501,28 +259,6 @@
       "root_message_id": "msg-af7e8ebbd36a"
     },
     {
-      "id": "thread-af7e8ebbd36a",
-      "subject": "odfWeave Package",
-      "message_count": 1,
-      "participants": [
-        "Kuhn, Max"
-      ],
-      "started": "2006-07-18T22:58:21-04:00",
-      "last_reply": "2006-07-18T22:58:21-04:00",
-      "root_message_id": "msg-af7e8ebbd36a"
-    },
-    {
-      "id": "thread-a1c2791d3385",
-      "subject": "tsDyn and RTisean packages on CRAN",
-      "message_count": 1,
-      "participants": [
-        "Antonio, Fabio Di Narzo"
-      ],
-      "started": "2006-07-21T10:19:50+02:00",
-      "last_reply": "2006-07-21T10:19:50+02:00",
-      "root_message_id": "msg-a1c2791d3385"
-    },
-    {
       "id": "thread-a1c2791d3385",
       "subject": "tsDyn and RTisean packages on CRAN",
       "message_count": 1,
@@ -545,17 +281,6 @@
       "root_message_id": "msg-d49b1842a1cb"
     },
     {
-      "id": "thread-d49b1842a1cb",
-      "subject": "seqinr updated :  release 1.0-5",
-      "message_count": 1,
-      "participants": [
-        "Simon Penel"
-      ],
-      "started": "2006-07-25T14:25:12+02:00",
-      "last_reply": "2006-07-25T14:25:12+02:00",
-      "root_message_id": "msg-d49b1842a1cb"
-    },
-    {
       "id": "thread-238f176d2d15",
       "subject": "Version 0.9-4 of sem to CRAN",
       "message_count": 1,
@@ -565,28 +290,6 @@
       "started": "2006-07-25T14:36:26-04:00",
       "last_reply": "2006-07-25T14:36:26-04:00",
       "root_message_id": "msg-238f176d2d15"
-    },
-    {
-      "id": "thread-238f176d2d15",
-      "subject": "Version 0.9-4 of sem to CRAN",
-      "message_count": 1,
-      "participants": [
-        "John Fox"
-      ],
-      "started": "2006-07-25T14:36:26-04:00",
-      "last_reply": "2006-07-25T14:36:26-04:00",
-      "root_message_id": "msg-238f176d2d15"
-    },
-    {
-      "id": "thread-e5345d6ee073",
-      "subject": "Version 0.4.3 of odfWeave",
-      "message_count": 1,
-      "participants": [
-        "Kuhn, Max"
-      ],
-      "started": "2006-07-28T21:44:06-04:00",
-      "last_reply": "2006-07-28T21:44:06-04:00",
-      "root_message_id": "msg-e5345d6ee073"
     },
     {
       "id": "thread-e5345d6ee073",

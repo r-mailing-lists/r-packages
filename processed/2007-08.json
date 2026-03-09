@@ -20,38 +20,6 @@
       "month": "2007-08"
     },
     {
-      "id": "msg-d11172dfcf5b",
-      "message_id": "<94730b8a0708011840k36455658s35fe0056467d2245@mail.gmail.com>",
-      "from_name": "Felix Andrews",
-      "from_email_hash": "ab8be5753adb1cfce5e50bf8235dddc08e38086328727de3f965639ec7b93f1d",
-      "date": "2007-08-02T11:40:20+10:00",
-      "subject": "[R-pkgs] new package plotAndPlayGTK",
-      "subject_clean": "new package plotAndPlayGTK",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Package plotAndPlayGTK provides a graphical user interface for R\nplots. Wrap it around your plot commands, like playwith(plot(mydata)).\nA window pops up with a Cairo plot device and a toolbar with buttons\nto interact with the plot. The default buttons allow you to add\npersistent labels to data points, zoom in and out and around, save the\nplot to a file, and so on. Furthermore, you can edit the plot call on\nthe fly. There are buttons to work with multiple panels and pages of a\nLattice plot. For multi-variate scatterplots ('splom' only) there is a\n\"brush\" function, and for 3D plots ('wireframe' / 'cloud' only) there\nis a simple zoom and rotate.\n\nNew buttons can also be defined; actually any GTK+ widget can be added\nto the toolbar. An example is given of a numeric input widget to\nchoose a number of clusters to show.\n\nNote: code to generate the plot will need to be wrapped up into a\nsingle call with some standard arguments, and the interaction features\ndo not work well with multiple-plot layouts in traditional graphics.\nAs yet it does not work with grid-based plots other than Lattice (such\nas ggplot2), but button handlers could be written. This package is\nbased on RGtk2, and so requires the GTK+ libraries.\n\nv0.8.42 is on CRAN.\n\nhttp://code.google.com/p/plotandplay-gtk/\n\n-- \nFelix Andrews / ???\nPhD candidate\nIntegrated Catchment Assessment and Management Centre\nThe Fenner School of Environment and Society\nThe Australian National University (Building 48A), ACT 0200\nBeijing Bag, Locked Bag 40, Kingston ACT 2604\nhttp://www.neurofractal.org/felix/\nxmpp:foolish.android at gmail.com\n3358 543D AAC6 22C2 D336  80D9 360B 72DD 3E4C F5D8",
-      "body_snippet": "Package plotAndPlayGTK provides a graphical user interface for R\nplots. Wrap it around your plot commands, like playwith(plot(mydata)).\nA window pops up with a Cairo plot device and a toolbar with but",
-      "thread_id": "thread-d11172dfcf5b",
-      "thread_depth": 0,
-      "month": "2007-08"
-    },
-    {
-      "id": "msg-a9c3d4b6e34f",
-      "message_id": "<Pine.LNX.4.43.0708041312350.21274@hymn09.u.washington.edu>",
-      "from_name": "Thomas Lumley",
-      "from_email_hash": "fd3f6e9367b335430f74a8f6feb36e5e9d187865079d5ca2018b64dfb89dd278",
-      "date": "2007-08-04T13:12:35-07:00",
-      "subject": "[R-pkgs] surveyNG (and survey)",
-      "subject_clean": "surveyNG (and survey)",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "'surveyNG' version 0.3 is on CRAN.\n\n This package provides experimental features for survey analysis that may be incorporated in the survey package in the future. Currently there are facilities for analysis of complex surveys using (possibly large) data sets stored in a SQLite database. However, analysis facilities for these SQL-backed survey designs are rather more limited than in the 'survey' package.\n\nVersion 0.3 adds hexagonal binning plots and kernel smoothing.\n\n\nAlso, the 'survey' package hasn't been announced on this list since version 2.9 in 2005 and verison 3.6-11 was recently posted.  It provides fairly comprehensive facilities for analysis of complex survey designs.  Major additions since 2.9 are calibration estimators (aka GREG or generalized raking), simple two-phase designs, and smoothing.\n\n\n     -thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley at u.washington.edu\tUniversity of Washington, Seattle",
-      "body_snippet": "'surveyNG' version 0.3 is on CRAN.\n\n This package provides experimental features for survey analysis that may be incorporated in the survey package in the future. Currently there are facilities for an",
-      "thread_id": "thread-a9c3d4b6e34f",
-      "thread_depth": 0,
-      "month": "2007-08"
-    },
-    {
       "id": "msg-a9c3d4b6e34f",
       "message_id": "<Pine.LNX.4.43.0708041312350.21274@hymn09.u.washington.edu>",
       "from_name": "Thomas Lumley",
@@ -84,22 +52,6 @@
       "month": "2007-08"
     },
     {
-      "id": "msg-92cfcd548e6d",
-      "message_id": "<f8e6ff050708141205k6bc36e6cm49a9bb5ac3e5cb2e@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2007-08-14T14:05:26-05:00",
-      "subject": "[R-pkgs] 'fda' 1.2.2 is now available on CRAN.",
-      "subject_clean": "'fda' 1.2.2 is now available on CRAN.",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The fda package supports \"Functional Data Analysis\" and \"Applied\nFunctional Data Analysis\" by Bernard Silverman and James Ramsay.\nFunctional data analysis, which lots of us like to call \"FDA\", is\nabout the analysis of information on curves or functions. FDA is a\ncollection statistical techniques for answering questions like, \"What\nare the main ways in which the curves vary from one to another?\" In\nfact, most of the questions and problems associated with multivariate\ndata (PCA, LDA, clustering, ...) have functional counterparts. More\ninformation about FDA can be found at\nhttp://www.psych.mcgill.ca/misc/fda/.\n\nThis version (and the previous 1.2.1) includes bug fixes plus a\n\"scripts\" subdirectory with R code to reproduce some of the analyses\nin the two functional data analysis books by Ramsay and Silverman and\na \"Continuously Stirred Tank Reactor (CSTR)\" simulation discussed in a\nRamsay, et al., discussion paper to appear soon in the Journal of the\nRoyal Statistical Society-series B.\n\nIt also includes the draft of a presentation on \"fda in Matlab & R\"\n(in PowerPoint and Adobe Acrobat PDF formats) for the UseR! 2007\nconference this Friday, Aug. 10, 1:55 - 2:20 PM in Ames, IA.\n\nRegards\n\nHadley Wickham\nJames Ramsey\nSpencer Graves",
-      "body_snippet": "The fda package supports \"Functional Data Analysis\" and \"Applied\nFunctional Data Analysis\" by Bernard Silverman and James Ramsay.\nFunctional data analysis, which lots of us like to call \"FDA\", is\nabou",
-      "thread_id": "thread-92cfcd548e6d",
-      "thread_depth": 0,
-      "month": "2007-08"
-    },
-    {
       "id": "msg-12b745c510ae",
       "message_id": "<46CB6F07.7050104@vanderbilt.edu>",
       "from_name": "Jeffrey Horner",
@@ -112,38 +64,6 @@
       "body_plain": "brew implements a templating framework for mixing text and R code for \nreport generation. brew template syntax is similar to PHP, Ruby's erb \nmodule, Java Server Pages, and Python's psp module.\n\nbrew is written in R with no package dependencies, and it's not just for \nthe web. It can be used as an alternative to Sweave in a limited \ncontext. See the brew-test-1.brew file in the distribution for some \nsalient differences between the two. brew can also complement Sweave \nsince it can be written to do conditional inclusion of or loop over \nSweave code chunks.\n\nThe 1.0-1 version should show up on the CRAN mirrors shortly, but in the \nmean time it can be got from:\n\nhttp://www.rforge.net/brew/\n\nBest,\n\nJeff\n-- \nhttp://biostat.mc.vanderbilt.edu/JeffreyHorner",
       "body_snippet": "brew implements a templating framework for mixing text and R code for \nreport generation. brew template syntax is similar to PHP, Ruby's erb \nmodule, Java Server Pages, and Python's psp module.\n\nbrew ",
       "thread_id": "thread-12b745c510ae",
-      "thread_depth": 0,
-      "month": "2007-08"
-    },
-    {
-      "id": "msg-12b745c510ae",
-      "message_id": "<46CB6F07.7050104@vanderbilt.edu>",
-      "from_name": "Jeffrey Horner",
-      "from_email_hash": "8b91e5b4000682951a703759aaef9fbaa2bc23dc141f7a1ef5c829c7c0d0d0de",
-      "date": "2007-08-21T18:02:31-05:00",
-      "subject": "[R-pkgs] brew 1.0-1",
-      "subject_clean": "brew 1.0-1",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "brew implements a templating framework for mixing text and R code for \nreport generation. brew template syntax is similar to PHP, Ruby's erb \nmodule, Java Server Pages, and Python's psp module.\n\nbrew is written in R with no package dependencies, and it's not just for \nthe web. It can be used as an alternative to Sweave in a limited \ncontext. See the brew-test-1.brew file in the distribution for some \nsalient differences between the two. brew can also complement Sweave \nsince it can be written to do conditional inclusion of or loop over \nSweave code chunks.\n\nThe 1.0-1 version should show up on the CRAN mirrors shortly, but in the \nmean time it can be got from:\n\nhttp://www.rforge.net/brew/\n\nBest,\n\nJeff\n-- \nhttp://biostat.mc.vanderbilt.edu/JeffreyHorner",
-      "body_snippet": "brew implements a templating framework for mixing text and R code for \nreport generation. brew template syntax is similar to PHP, Ruby's erb \nmodule, Java Server Pages, and Python's psp module.\n\nbrew ",
-      "thread_id": "thread-12b745c510ae",
-      "thread_depth": 0,
-      "month": "2007-08"
-    },
-    {
-      "id": "msg-6a2b27af6b45",
-      "message_id": "<Pine.LNX.4.64.0708270729320.2888@nokomis.stat.uiowa.edu>",
-      "from_name": "Luke Tierney",
-      "from_email_hash": "a5794212f0450ee86843a234fdc23fdecc67cbd9935fd99e22e36e11b265bf20",
-      "date": "2007-08-27T07:30:33-05:00",
-      "subject": "[R-pkgs] proftools package now available from CRAN",
-      "subject_clean": "proftools package now available from CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "PROFILE OUTPUT PROCESSING TOOLS FOR R\n                 =====================================\n\n\nThis package provides some simple tools for examining Rprof output\nand, in particular, extracting and viewing call graph information.\nCall graph information, including which direct calls where observed\nand how much time was spent in these calls, can be very useful in\nidentifying performance bottlenecks.\n\nOne important caution: because of lazy evaluation a nested call\nf(g(x)) will appear on the profile call stack as if g had been called\nby f or one of f's callees, because it is the point at which the value\nof g(x) is first needed that triggers the evaluation.\n\n\nEXPORTED FUNCTIONS\n\nThe package exports five functions:\n\n     readProfileData reads the data in the file produced by Rprof into a\n         data structure used by the other functions in the package.\n         The format of the data structure is subject to change.\n\n     flatProfile is similar to summaryRprof.  It returns either a\n         matrix with output analogous to gprof's flat profile or a\n         matrix like the by.total component returned by summaryRprof;\n         which is returned depends on the value of an optional second\n         argument.\n\n     printProfileCallGraph produces a printed representation of the\n         call graph.  It is analogous to the call graph produced by\n         gprof with a few minor changes.  Reading the gprof manual\n         section on the call graph should help understanding this\n         output.  The output is similar enough to gprof output for the\n         cgprof (http://mvertes.free.fr/) script to be able to produce\n         a call graph via Graphviz.\n\n     profileCallGraph2Dot prints out a Graphviz .dot file representing\n         the profile graph.  Times spent in calls can be mapped to node\n         and edge colors.  The resulting files can then be viewed with\n         the Graphviz command line tools.\n\n     plotProfileCallGraph uses the graph and Rgraphviz packages to\n         produce call graph visualizations within R.  You will need to\n         install these packages to use this function.\n\n\nA SIMPLE EXAMPLE\n\nCollect profile information  for the examples for glm:\n\n           Rprof(\"glm.out\")\n           example(glm)\n           Rprof()\n           pd <- readProfileData(\"glm.out\")\n\nObtain flat profile information:\n\n           flatProfile(pd)\n           flatProfile(pd, FALSE)\n\nObtain a printed call graph on the standard output:\n\n           printProfileCallGraph(pd)\n\nIf you have the cgprof script and the Graphviz command line tools\navailable on a UNIX-like system, then you can save the printed graph\nto a file,\n\n           printProfileCallGraph(pd, \"glm.graph\")\n\nand either use\n\n           cgprof -TX glm.graph\n\nto display the graph in the interactive graph viewer dotty, or use\n\n           cgprof -Tps glm.graph > glm.ps\n           gv glm.ps\n\nto create a PostScript version of the call graph and display it with\ngv.\n\nInstead of using the printed graph and cgprof you can use create a\nGraphviz .dot file representation of the call graph with\n\n           profileCallGraph2Dot(pd, filename = \"glm.dot\", score = \"total\")\n\nand view the graph interactively with dotty using\n\n           dotty glm.dot\n\nor as a postscript file with\n\n           dot -Tps glm.dot > glm.ps\n           gv glm.ps\n\nFinally, if you have the graph package from CRAN and the Rgraphviz\npackage from Bioconductor installed, then you can view the call graph\nwithin R using\n\n           plotProfileCallGraph(pd, score = \"total\")\n\nThe default settings for this version need some work.]\n\n\nOPEN ISSUES\n\nMy intention was to handle cycles roughly the same way that gprof\ndoes.  I am not completely sure that I have managed to do this; I am\nalso not completely sure this is the best approach.\n\nThe graphs produced by cgprof and by plotProfileGraph and friends when\nmergeEdges is false differ a bit.  I think this is due to the\nheuristics of cgprof not handling cycle entries ideally and that the\nplotProfileGraph graphs are actually closer to what is wanted.  When\nmergeEdges is true the resulting graphs are DAGs, which simplifies\ninterpretation, but at the cost of lumping all cycle members together.\n\ngprof provides options for pruning graph printouts by omitting\nspecified nodes.  It may be useful to allow this here as well.\n\nProbably more use should be made of the graph package.\n\n\nIMPLEMENTATION NOTES\n\nThe implementation is extremely crude (a real mess would be more\naccurate) and will hopefully be improved over time--at this point it\nis more of an existence proof than a final product.\n\nPerformance is less than ideal, though using these tools it was\npossible to identify some problem points and speed up computing the\nprofile data by a factor of two (in other words, it may be bad now but\nit used to be worse).  More careful design of the data structures and\nmemoizing calculations that are now repeated is likely to improve\nperformance substantially.\n\n\n\n\n-- \nLuke Tierney\nChair, Statistics and Actuarial Science\nRalph E. Wareham Professor of Mathematical Sciences\nUniversity of Iowa                  Phone:             319-335-3386\nDepartment of Statistics and        Fax:               319-335-3017\n    Actuarial Science\n241 Schaeffer Hall                  email:      luke at stat.uiowa.edu\nIowa City, IA 52242                 WWW:  http://www.stat.uiowa.edu",
-      "body_snippet": "PROFILE OUTPUT PROCESSING TOOLS FOR R\n                 =====================================\n\n\nThis package provides some simple tools for examining Rprof output\nand, in particular, extracting and vie",
-      "thread_id": "thread-6a2b27af6b45",
       "thread_depth": 0,
       "month": "2007-08"
     },
@@ -177,28 +97,6 @@
       "root_message_id": "msg-d11172dfcf5b"
     },
     {
-      "id": "thread-d11172dfcf5b",
-      "subject": "new package plotAndPlayGTK",
-      "message_count": 1,
-      "participants": [
-        "Felix Andrews"
-      ],
-      "started": "2007-08-02T11:40:20+10:00",
-      "last_reply": "2007-08-02T11:40:20+10:00",
-      "root_message_id": "msg-d11172dfcf5b"
-    },
-    {
-      "id": "thread-a9c3d4b6e34f",
-      "subject": "surveyNG (and survey)",
-      "message_count": 1,
-      "participants": [
-        "Thomas Lumley"
-      ],
-      "started": "2007-08-04T13:12:35-07:00",
-      "last_reply": "2007-08-04T13:12:35-07:00",
-      "root_message_id": "msg-a9c3d4b6e34f"
-    },
-    {
       "id": "thread-a9c3d4b6e34f",
       "subject": "surveyNG (and survey)",
       "message_count": 1,
@@ -221,17 +119,6 @@
       "root_message_id": "msg-92cfcd548e6d"
     },
     {
-      "id": "thread-92cfcd548e6d",
-      "subject": "'fda' 1.2.2 is now available on CRAN.",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2007-08-14T14:05:26-05:00",
-      "last_reply": "2007-08-14T14:05:26-05:00",
-      "root_message_id": "msg-92cfcd548e6d"
-    },
-    {
       "id": "thread-12b745c510ae",
       "subject": "brew 1.0-1",
       "message_count": 1,
@@ -241,28 +128,6 @@
       "started": "2007-08-21T18:02:31-05:00",
       "last_reply": "2007-08-21T18:02:31-05:00",
       "root_message_id": "msg-12b745c510ae"
-    },
-    {
-      "id": "thread-12b745c510ae",
-      "subject": "brew 1.0-1",
-      "message_count": 1,
-      "participants": [
-        "Jeffrey Horner"
-      ],
-      "started": "2007-08-21T18:02:31-05:00",
-      "last_reply": "2007-08-21T18:02:31-05:00",
-      "root_message_id": "msg-12b745c510ae"
-    },
-    {
-      "id": "thread-6a2b27af6b45",
-      "subject": "proftools package now available from CRAN",
-      "message_count": 1,
-      "participants": [
-        "Luke Tierney"
-      ],
-      "started": "2007-08-27T07:30:33-05:00",
-      "last_reply": "2007-08-27T07:30:33-05:00",
-      "root_message_id": "msg-6a2b27af6b45"
     },
     {
       "id": "thread-6a2b27af6b45",

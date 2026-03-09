@@ -20,22 +20,6 @@
       "month": "2008-10"
     },
     {
-      "id": "msg-6ba8a8ac36ea",
-      "message_id": "<ED7B522EE00C9A4FA515AA71724D61EE016E2328@DC1EXCL01.air.org>",
-      "from_name": "Doran, Harold",
-      "from_email_hash": "92d2bc653019a2d5a0fa1618e3004819dccf7a9f65c746de6a1bc55fa1e194db",
-      "date": "2008-10-01T13:39:09-04:00",
-      "subject": "[R-pkgs] MiscPsycho 1.3 posted to CRAN",
-      "subject_clean": "MiscPsycho 1.3 posted to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An updated version of the Miscellaneous Psychometrics package has been\nupdated to CRAN. The following updates are included in the package:\n\n1) An implementation of the Stocking-Lord procedure for linking test\nscales.\n2) An implementation of the Levenshtein algorithm for comparing\ncharacter strings\n3) stringProbs, a function for computing the probability of a given\nLevenshtein Distance\n4) Three sources of documentation on all functions. There is complete\ntechnical documentation on the functions used in MiscPsycho in the file\nMP.pdf, the stocking-lord implementation is documented in\nstock_lord.pdf, and a paper describing the Levenshtein algorithm and its\napplication in educational measurement is provided in levenshtein.pdf.\nAll of these are in the docs folder in the package distribution.\n\nAny comments, reactions, critiques, are welcome.\n\nHarold",
-      "body_snippet": "An updated version of the Miscellaneous Psychometrics package has been\nupdated to CRAN. The following updates are included in the package:\n\n1) An implementation of the Stocking-Lord procedure for link",
-      "thread_id": "thread-6ba8a8ac36ea",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
       "id": "msg-512ede483469",
       "message_id": "<7.0.1.0.2.20081003111605.02113920@uclouvain.be>",
       "from_name": "Mathieu Pigeon",
@@ -48,38 +32,6 @@
       "body_plain": "expert: Modeling Without Data Using Expert Opinion\n\nExpert opinion is a technique to do statistical modeling when data is\nscarse (e.g. accidents in nuclear plants) or even absent, at least for\nthe analyst (e.g. confidential settlements in liability insurance).\nOpinions on the distribution of the decision random variable is sought\nfrom experts in the field. The experts give their opinion in the form\nof a few quantiles for the decision variable and for a set of \"seed\nvariables\" for which the analyst knows the true quantiles. Results for\nseed variables are compared to the true values and used to determine\nthe influence of each expert on the aggregated distribution. The\npackage supports three different ways to aggregate the information\nprovided by the experts in one final distribution:\n\n1. the classical model of Cooke (1991);\n2. the Bayesian model of Mendel and Sheridan (1989);\n3. an ad-hoc procedure where the weight of each expert is pre-\ndetermined by the analyst.\n\nThe main function of the package is expert(), a unified interface to\nall three methods above. The package also provides a few utility\nfunctions to display, plot or compute probabilities and quantiles from\nthe aggregated distribution returned by expert().\n\n\nBest regards,\n\nMathieu Pigeon\nInstitut de Statistique\nUniversite Catholique de Louvain\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBELGIUM\n\nE-mail address : mathieu.pigeon at uclouvain.be",
       "body_snippet": "expert: Modeling Without Data Using Expert Opinion\n\nExpert opinion is a technique to do statistical modeling when data is\nscarse (e.g. accidents in nuclear plants) or even absent, at least for\nthe ana",
       "thread_id": "thread-512ede483469",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-512ede483469",
-      "message_id": "<7.0.1.0.2.20081003111605.02113920@uclouvain.be>",
-      "from_name": "Mathieu Pigeon",
-      "from_email_hash": "c0535b913c020814bbcc045b0080f21ba115cea2f79285771c505aca581cb1f0",
-      "date": "2008-10-03T11:24:14+02:00",
-      "subject": "[R-pkgs] New package: expert 1.0-0",
-      "subject_clean": "New package: expert 1.0-0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "expert: Modeling Without Data Using Expert Opinion\n\nExpert opinion is a technique to do statistical modeling when data is\nscarse (e.g. accidents in nuclear plants) or even absent, at least for\nthe analyst (e.g. confidential settlements in liability insurance).\nOpinions on the distribution of the decision random variable is sought\nfrom experts in the field. The experts give their opinion in the form\nof a few quantiles for the decision variable and for a set of \"seed\nvariables\" for which the analyst knows the true quantiles. Results for\nseed variables are compared to the true values and used to determine\nthe influence of each expert on the aggregated distribution. The\npackage supports three different ways to aggregate the information\nprovided by the experts in one final distribution:\n\n1. the classical model of Cooke (1991);\n2. the Bayesian model of Mendel and Sheridan (1989);\n3. an ad-hoc procedure where the weight of each expert is pre-\ndetermined by the analyst.\n\nThe main function of the package is expert(), a unified interface to\nall three methods above. The package also provides a few utility\nfunctions to display, plot or compute probabilities and quantiles from\nthe aggregated distribution returned by expert().\n\n\nBest regards,\n\nMathieu Pigeon\nInstitut de Statistique\nUniversite Catholique de Louvain\nVoie du Roman Pays, 20\n1348 Louvain-la-Neuve\nBELGIUM\n\nE-mail address : mathieu.pigeon at uclouvain.be",
-      "body_snippet": "expert: Modeling Without Data Using Expert Opinion\n\nExpert opinion is a technique to do statistical modeling when data is\nscarse (e.g. accidents in nuclear plants) or even absent, at least for\nthe ana",
-      "thread_id": "thread-512ede483469",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-904318403955",
-      "message_id": "<f8e6ff050810050841q4d7cf8cav777e9b096e4492c9@mail.gmail.com>",
-      "from_name": "hadley wickham",
-      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2008-10-05T10:41:35-05:00",
-      "subject": "[R-pkgs] ggplot2 - version 0.7",
-      "subject_clean": "ggplot2 - version 0.7",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the nearly 500\nexamples of ggplot in use.\n\nggplot2 0.7 introduces a new theming system which allows you to\ncontrol (almost) every aspect of the appearance of the plot.  This\nsystem is documented in the book chapter \"Polishing your plots for\npublication\", available from\nhttp://had.co.nz/ggplot2/book/polishing.pdf.\n\nBugs fixed\n\n* geom_boxplot: now displays outliers even if only one present\n* geom_jitter: setting one jitter direction to 0 now works\n* geom_segment: should now work correctly in all coordinate systems\n(note that arrows only work in Cartesian coordinates)\n* ggsave: correctly uses dpi for raster devices and default dpi\nchanged to 72 (thanks to Brian Ripley for pointing this out)\n* ggsave: current device no longer closes if error occurs\n* position_jitter: now works correctly with 0 jitter\n* remove_missing: some statistics were calculated incorrectly when\nmissing values were present\n* scales: extra scales ignored (again)\n* scales: legends respect fixed parameters of the layer\n* scales: legends won't appear when aesthetics are mapped to NULL, or\nset to fixed value\n* scales: xend and yend now transformed correctly\n* scale_date: breaks are now rounded to correct position\n\nNew functionality\n\n* geom_point: can now control colour and fill separately for point\nglyphs with borders\n* geom_step: now has parameter direction which can take values vh\n(vertical then horizontal) or hv (horizontal then vertical) describing\nthe shape of the stairs\n* qplot: new asp argument to set aspect ratio\n* qplot: now captures the environment in which it was run, which\nshould make it much more robust at finding the variables you expect it\nto find\n* qplot: now treats any arguments wrapped in I() as parameters, not\naesthetics, e.g. qplot(mpg, wt, data=mtcars, colour = I(\"red\")) or\nqplot(mpg, wt, data=mtcars, size = I(5))\n* scale_continuous: new minor_breaks argument to controls position of\nminor breaks\n* scale_discrete: new discrete position scales which make it possible\nto manually position elements\n* scale_gradientn: new colour scale which creates gradient between any\nlist of colours\n\nMore consistent interfaces\n\n* can use color instead of colour, and old R names throughout ggplot2\n* geom_jitter: Arguments changed to height and width to match other\nposition adjustments\n* scales: any point outside of limits is dropped (this was previously\nthe behaviour for discrete scales, but not continuous scales)\n* scales: limits are consistent across discrete and continuous scales\n(limits c(1, NA) form no longer works for continuous scales)\n* scales: order of legends reversed to match order of x axis (and to\nbe consistent with previous versions)\n* scale_date: new limits argument to set axis limits\n* scale_discrete: all discrete scales accept breaks argument\n* scale_discrete: all discrete scales have limits and labels argument\nto better control legends\n* scale_discrete: character and logical vectors now reliably treated\nas discrete scales\n* stat_density2d, geom_density2d: density2d used consistently (instead\nof density_2d in some places)\n\nImproved aesthetics\n\n* coord_polar: more tweaks to grid lines to enhance appearance\n* coord_polar: new expand argument to control whether axes should be\nexpanded outside the range of the data\n* geom_contour, geom_smooth, geom_quantile: now use blue lines\n* position_stack, position_dodge: should be more informative if\nconditions for stacking/dodging not met\n* position_jitter: default amount of jittering tweaked to align with\nboxplots etc.\n* scales: background colour of legends key matches plot\n* themes: Complete rewrite of theming system, see new book chapter for details\n* themes: direct access to plot options via $ is now disabled\n\nImproved documentation and error messages\n\n* facet_grid: documentation improved\n* qplot: Better error messages when needed variables are missing\n* scale_discrete: improved error message for too many values in domain\n* scale_size: improved documentation for discrete variables\n* online documentation generally tweaked and primped to work a little\nbetter and look a little nicer\n* website now includes a search box\n* links from rdoc now point to correct pages\n\n\n-- \nhttp://had.co.nz/",
-      "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
-      "thread_id": "thread-904318403955",
       "thread_depth": 0,
       "month": "2008-10"
     },
@@ -116,22 +68,6 @@
       "month": "2008-10"
     },
     {
-      "id": "msg-3b0e9b8810df",
-      "message_id": "<200810061023.52293.POLMETH@artsci.wustl.edu>",
-      "from_name": "Martin Elff",
-      "from_email_hash": "0b32226cee20511de8776f267558deea3e759e50462392a44bb70d6fbac092ba",
-      "date": "2008-10-06T10:23:52+02:00",
-      "subject": "[R-pkgs] New verision 0.95 of package 'memisc' released to CRAN",
-      "subject_clean": "New verision 0.95 of package 'memisc' released to CRAN",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nI am pleased to announce the availability of version 0.95 of package 'memisc' \non CRAN (http://cran.r-project.org/web/packages/memisc/).\n\n'memisc' does not implement any new estimators, but focuses on providing an \ninfrastructure for data analysis especially of survey data. It may be of \ninterest to all those who have had to use a commercial package like SPSS or \nStata in order to prepare data for analysis in R. I wrote this package to \nbecome independent from commercial software and to do everything in R, from \ndata management to data analysis and presentation of analysis results. I hope \nthat the package will be as useful for others as it has become for me. UseRs \nmay want to check out the vignette \"Analysing the American National Election \nStudy of 1948\" to see the package in action.\n\nFeedback is more than welcome. Please to do not hesitate to inform me if you \nfind any bugs in this package.\n\n\nAll the best,\n\nMartin \n\nPackage description:\n=============================================================================================\n\nPackage: memisc\nType: Package\nTitle: Tools for Management of Survey Data, Graphics, Programming, Statistics, \nand Simulation\nVersion: 0.95-1\nDate: 2008-10-1\nAuthor: Martin Elff\nMaintainer: Martin Elff <elff at uni-mannheim.de>\nDescription: One of the aims of this package is to make life easier for useRs\n  who deal with survey data sets. It provides an infrastructure for the \n  management of survey data including value labels, definable missing values,\n  recoding of variables, production of code books, and import of (subsets of)\n  SPSS and Stata files. Further, it provides functionality to produce tables\n  and data frames of arbitrary descriptive statistics and (almost)  \n  publication-ready tables of regression model estimates. Also some \n  convenience tools for graphics, programming, and simulation are provided.\nLicense: GPL-2\nLazyLoad: Yes\nDepends: lattice, grid, stats, methods, utils, MASS\nURL: \nhttp://webrum.uni-mannheim.de/sowi/elff/content.php/EnglishVersion/MartinsRPackages\n\n=============================================================================================\n\n-- \n-------------------------------------------------\nDr. Martin Elff\nDepartment of Social Sciences\nUniversity of Mannheim\nA5, Room 328\n68131 Mannheim\nGermany\n\nPhone: ++49-621-181-2093\nFax: ++49-621-181-2099\nE-Mail: elff at sowi.uni-mannheim.de\nHomepage: \nhttp://webrum.uni-mannheim.de/sowi/elff\nhttp://www.sowi.uni-mannheim.de/lspwivs/\n-------------------------------------------------\n\n**********************************************************\n             Political Methodology E-Mail List\n   Editors: Melanie Goodrich, <melaniegoodrich at nyu.edu>\n            Delia Bailey, <dbailey at wustl.edu>\n**********************************************************\n        Send messages to polmeth at artsci.wustl.edu\n  To join the list, cancel your subscription, or modify\n           your subscription settings visit:\n\n          http://polmeth.wustl.edu/polmeth.php",
-      "body_snippet": "Dear useRs,\n\nI am pleased to announce the availability of version 0.95 of package 'memisc' \non CRAN (http://cran.r-project.org/web/packages/memisc/).\n\n'memisc' does not implement any new estimators, b",
-      "thread_id": "thread-3b0e9b8810df",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
       "id": "msg-3da70bb909b5",
       "message_id": "<48EBB4D7.4060607@ebi.ac.uk>",
       "from_name": "Gregoire Pau",
@@ -144,38 +80,6 @@
       "body_plain": "Dear R community,\n\nI'm pleased to announce the availability of hwriter v0.93 on CRAN.\n\nhwriter is an easy-to-use package able to format and output R objects in\nHTML format. It supports advanced formatting, tables, CSS styling,\nimages and provides a convenient mapping between R tables and HTML tables.\n\nhwriter combines the simple syntax of the xtable package and the\nstrength of HTML/CSS styling. Making a complex HTML template with\nimages, nested tables and nested HTML components is particularly easy.\n\nhwriter project page (written by itself, using 'example(hwriter)'):\nhttp://www.ebi.ac.uk/~gpau/hwriter/\n\nIts CRAN page is http://cran.r-project.org/web/packages/hwriter/\n\nHoping this package will be useful to the R community,\nBest regards,\n\nGreg\n-- \nGregoire Pau\nEMBL/EBI Cambridge, UK\nhttp://www.ebi.ac.uk/~gpau",
       "body_snippet": "Dear R community,\n\nI'm pleased to announce the availability of hwriter v0.93 on CRAN.\n\nhwriter is an easy-to-use package able to format and output R objects in\nHTML format. It supports advanced format",
       "thread_id": "thread-3da70bb909b5",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-3da70bb909b5",
-      "message_id": "<48EBB4D7.4060607@ebi.ac.uk>",
-      "from_name": "Gregoire Pau",
-      "from_email_hash": "20fcd28649a7d549bbda0eb4805742bd0f4f62031a4ef0f0cffefaa2a3f381b3",
-      "date": "2008-10-07T20:13:27+01:00",
-      "subject": "[R-pkgs] hwriter - Writing R objects in HTML format",
-      "subject_clean": "hwriter - Writing R objects in HTML format",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R community,\n\nI'm pleased to announce the availability of hwriter v0.93 on CRAN.\n\nhwriter is an easy-to-use package able to format and output R objects in\nHTML format. It supports advanced formatting, tables, CSS styling,\nimages and provides a convenient mapping between R tables and HTML tables.\n\nhwriter combines the simple syntax of the xtable package and the\nstrength of HTML/CSS styling. Making a complex HTML template with\nimages, nested tables and nested HTML components is particularly easy.\n\nhwriter project page (written by itself, using 'example(hwriter)'):\nhttp://www.ebi.ac.uk/~gpau/hwriter/\n\nIts CRAN page is http://cran.r-project.org/web/packages/hwriter/\n\nHoping this package will be useful to the R community,\nBest regards,\n\nGreg\n-- \nGregoire Pau\nEMBL/EBI Cambridge, UK\nhttp://www.ebi.ac.uk/~gpau",
-      "body_snippet": "Dear R community,\n\nI'm pleased to announce the availability of hwriter v0.93 on CRAN.\n\nhwriter is an easy-to-use package able to format and output R objects in\nHTML format. It supports advanced format",
-      "thread_id": "thread-3da70bb909b5",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-8f41b31b19e2",
-      "message_id": "<68b1e2610810091059kd5f932ei3cecea503d3c9c91@mail.gmail.com>",
-      "from_name": "Liviu Andronic",
-      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2008-10-09T19:59:17+02:00",
-      "subject": "[R-pkgs] release of RcmdrPlugin.Export 0.2-1",
-      "subject_clean": "release of RcmdrPlugin.Export 0.2-1",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nA new version of RcmdrPlugin.Export is currently available on CRAN.\nThe release introduces support for the \"file\" and \"append\" options of\nprint.xtable(). The new features make easier to include exported HTML\ncode into documents created with regular word-processing programmes,\nsuch as .odt (OpenOffice.org) and .doc (Microsoft Word). The exported\nLaTeX code can also be `Imported as File' into LyX documents.\n\nAs always, suggestions and bug reports are most welcome.\n\nRegards,\nLiviu",
-      "body_snippet": "Dear R users,\n\nA new version of RcmdrPlugin.Export is currently available on CRAN.\nThe release introduces support for the \"file\" and \"append\" options of\nprint.xtable(). The new features make easier to",
-      "thread_id": "thread-8f41b31b19e2",
       "thread_depth": 0,
       "month": "2008-10"
     },
@@ -212,22 +116,6 @@
       "month": "2008-10"
     },
     {
-      "id": "msg-b32863ce2bd9",
-      "message_id": "<1096847731@web.de>",
-      "from_name": "Jens Oehlschlägel",
-      "from_email_hash": "f073adaa565bb1d2ee057e84a39a987c70da1df4938e3d4d5a72e0cc3cffbdc1",
-      "date": "2008-10-10T18:08:51+02:00",
-      "subject": "[R-pkgs] New package: bit 1.0",
-      "subject_clean": "New package: bit 1.0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R community,\n\nPackage 'bit' Version 1.0 is available on CRAN. \nIt provides bitmapped vectors of booleans (no NAs), \ncoercion from and to logicals, integers and integer subscripts; \nfast boolean operators and fast summary statistics. \n\nWith bit vectors you can store true binary booleans {FALSE,TRUE} at the expense \nof 1 bit only, on a 32 bit architecture this means factor 32 less RAM and \nfactor 32 more speed on boolean operations. With this speed gain it even \npays-off to convert to bit in order to avoid a single boolean operation on \nlogicals or a single set operation on (longer) integer subscripts, the pay-off \nis dramatic when such components are used more than once. \n\nReading from and writing to bit is approximately as fast as accessing standard \nlogicals - mostly due to R's time for memory allocation. The package allows to \nwork with pre-allocated memory for return values by calling .Call() directly: \nwhen evaluating the speed of C-access with pre-allocated vector memory, coping \nfrom bit to logical requires only 70% of the time for copying from logical to \nlogical; and copying from logical to bit comes at a performance penalty of 150%.\n\nFunctions 'which' and 'xor' are made S3 generic, 'xor.default' is implemented \nmuch faster than in base R (this should go into base R).\n\nThe package has automated regression-tests and is hopefully useful for better\nhandling large datasets, together with packages 'rindex' and 'ff'.\n\nBest regards\n\n\nJens Oehlschl?gel\nMunich, 10.10.2008",
-      "body_snippet": "Dear R community,\n\nPackage 'bit' Version 1.0 is available on CRAN. \nIt provides bitmapped vectors of booleans (no NAs), \ncoercion from and to logicals, integers and integer subscripts; \nfast boolean o",
-      "thread_id": "thread-b32863ce2bd9",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
       "id": "msg-be966fa66d41",
       "message_id": "<48F3095E.6050809@istat.it>",
       "from_name": "Marcello D'Orazio",
@@ -240,38 +128,6 @@
       "body_plain": "Dear useRs,\n\nI am pleased to announce the availability of the new package 'StatMatch'\n(version 0.4)\nhttp://cran.at.r-project.org/web/packages/StatMatch/index.html\n\n\n'StatMatch' contains some functions to perform Statistical Matching.\nStatistical Matching methods aim at integrate two samples, referred to\nthe same target population, sharing a certain number of common variables\nbut without overlapping of the units.\nNote that some functions in 'StatMatch' can also be used to impute\nmissing values in a data set.\n\nBest Regards,\nMarcello D'Orazio\n\n-- \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n Marcello D'Orazio\n\n ISTAT       (Italian National Statistical Institute)\t\t\n Via Cesare Balbo, 16 (1? piano, stanza 153)\n 00184 ROMA  ITALY\n Tel.: +39 06 4673 2772\n Fax:  +39 06 4673 2955\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n________________________________________________________________________\n\n Legal Disclaimer:\n Any views expressed by the sender of this message are not necessarily\n those of the Italian National Statistical Institute.",
       "body_snippet": "Dear useRs,\n\nI am pleased to announce the availability of the new package 'StatMatch'\n(version 0.4)\nhttp://cran.at.r-project.org/web/packages/StatMatch/index.html\n\n\n'StatMatch' contains some functions",
       "thread_id": "thread-be966fa66d41",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-be966fa66d41",
-      "message_id": "<48F3095E.6050809@istat.it>",
-      "from_name": "Marcello D'Orazio",
-      "from_email_hash": "219a6ddee83a7fbec13079cd66225598e3d9aae6e75fa286ac338bc0f8979178",
-      "date": "2008-10-13T10:39:58+02:00",
-      "subject": "[R-pkgs] New package: StatMatch 0.4",
-      "subject_clean": "New package: StatMatch 0.4",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nI am pleased to announce the availability of the new package 'StatMatch'\n(version 0.4)\nhttp://cran.at.r-project.org/web/packages/StatMatch/index.html\n\n\n'StatMatch' contains some functions to perform Statistical Matching.\nStatistical Matching methods aim at integrate two samples, referred to\nthe same target population, sharing a certain number of common variables\nbut without overlapping of the units.\nNote that some functions in 'StatMatch' can also be used to impute\nmissing values in a data set.\n\nBest Regards,\nMarcello D'Orazio\n\n-- \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n Marcello D'Orazio\n\n ISTAT       (Italian National Statistical Institute)\t\t\n Via Cesare Balbo, 16 (1? piano, stanza 153)\n 00184 ROMA  ITALY\n Tel.: +39 06 4673 2772\n Fax:  +39 06 4673 2955\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n________________________________________________________________________\n\n Legal Disclaimer:\n Any views expressed by the sender of this message are not necessarily\n those of the Italian National Statistical Institute.",
-      "body_snippet": "Dear useRs,\n\nI am pleased to announce the availability of the new package 'StatMatch'\n(version 0.4)\nhttp://cran.at.r-project.org/web/packages/StatMatch/index.html\n\n\n'StatMatch' contains some functions",
-      "thread_id": "thread-be966fa66d41",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-8cf514c042b3",
-      "message_id": "<895632.31528.qm@web63406.mail.re1.yahoo.com>",
-      "from_name": "bob pruzek",
-      "from_email_hash": "d0b8e9e6851f3ec1437dbc6e03eb0e15def595b931e3bec4e688618623eeaab7",
-      "date": "2008-10-14T11:02:24-07:00",
-      "subject": "[R-pkgs] New versions of two packages: granova and PSAgraphics",
-      "subject_clean": "New versions of two packages: granova and PSAgraphics",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear R users,\n\nThis is to announce new versions of our packages granova and PSAgraphics, both now v.1.2.\n\ngranova derives from ?graphical analysis of variance.? The package consists of four functions that facilitate seeing basic data as well as standard summary statistics for various ANOVA applications. The functions are especially flexible, so they are able to handle widely different data specifications. Focus is directed to basic questions that drive methods, so that the graphics can help to learn how data play out in answer to question(s) posed by methods. Experience suggests these functions can be particularly helpful for students and non-statistician analysts, since they help understand the methods themselves, as well as the data. Dynamic graphics are used to depict two-way data. In all cases numerical results accompany the graphical displays. \n\nPSAgraphics aims chiefly to facilitate visualization of various results in the context of propensity score analysis. One set of functions concerns assessment of covariate balance, with respect to defined propensity scores; both numerical and graphical functions are provided. Two other functions help to understand PSA effects after adjustment for propensity scores. The functions have been designed to be flexible, and in all cases numerical results complement the graphic displays. \n\nVarious documents and displays that illustrate graphic results for these methods are available; write rmp at  rmpruzek at yahoo.com . \n\nAll comments, suggestions for improvement and bug-reports are solicited.\n\nBob Pruzek & James Helmreich",
-      "body_snippet": "Dear R users,\n\nThis is to announce new versions of our packages granova and PSAgraphics, both now v.1.2.\n\ngranova derives from ?graphical analysis of variance.? The package consists of four functions ",
-      "thread_id": "thread-8cf514c042b3",
       "thread_depth": 0,
       "month": "2008-10"
     },
@@ -308,22 +164,6 @@
       "month": "2008-10"
     },
     {
-      "id": "msg-2e4564c8ebec",
-      "message_id": "<18677.22625.526067.785258@ron.nulle.part>",
-      "from_name": "Dirk Eddelbuettel",
-      "from_email_hash": "447d8de83a7b9c5d61116890bacb6dc0c76aee31b3011a41fb7d3c62dac9042f",
-      "date": "2008-10-14T21:41:37-05:00",
-      "subject": "[R-pkgs] New package RPostgreSQL 0.1.0",
-      "subject_clean": "New package RPostgreSQL 0.1.0",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "RPostgreSQL version 0.1.0\n\nWe are pround to announce the availability of the RPostgreSQL package on CRAN\nand its mirrors.  This package provides an a DBI-compliant interface between\nPostgreSQL and R.\n\nRPostgreSQL was developed as part of the Google Summer of Code 2008 program\nby Sameer Kumar Prayaga.\n\nSome highlights:\n\n  o  Implemented all the DBI features \n\n  o  Added support for transaction management \n\n  o  Added type mapping for dates & timestamps\n\nKnown bugs/deficiencies:\n\n  o  Building on Windows unknown/untested. Feedback welcome\n\nRPostgreSQL is hosted on Google Code, for more information see\n\n   http://rpostgresql.googlecode.com/\n\nFor any suggestions and queries, please contact:\n\n   Sameer Kumar Prayaga <sameer.bits at gmail.com>\n   Dirk Eddelbuettel <edd at debian.org>\n\n-- \nThree out of two people have difficulties with fractions.",
-      "body_snippet": "RPostgreSQL version 0.1.0\n\nWe are pround to announce the availability of the RPostgreSQL package on CRAN\nand its mirrors.  This package provides an a DBI-compliant interface between\nPostgreSQL and R.\n",
-      "thread_id": "thread-2e4564c8ebec",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
       "id": "msg-801f1d26e87f",
       "message_id": "<971536df0810200645m1c5e1f77ga408fc02e67f3f07@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
@@ -336,38 +176,6 @@
       "body_plain": "Version 0.3-7 of the gsubfn package is available on CRAN.\nChanges to the package are:\n\n- all known bugs have been fixed.\n\n- in gsubfn and strapply the replacement object can be a\n  list (or a function, formula, character string or proto\n  object, as before).  In the case of a list, regexp matches\n  are looked up in the list names and the corresponding list\n  component used.\n\n  # Example 1 - at string end replace M with e6 & G with e9\n  gsubfn(\".$\", list(M = \"e6\", G = \"e9\"), c(\"19G\", \"32.5M\"))\n\n- the backref= argument in gsubfn now defaults to the\n  negative of its prior default.  Thus by default if there\n  are back references only they and not the entire match is\n  passed to the user function.  (Although the changed\n  default introduces an incompatibility with prior versions\n  this incompatability is small because it only affects\n  situations where back references are present in the\n  regular expression _and_ backref= was not used. Since the\n  previous default for backref= was not useful in that case\n  there would be very few, if any, such instances.)  On the\n  other hand, it does mean that the backref= argument can be\n  omitted most cases now.\n\nFor more info, see home page and brief description below.\n\thttp://gsubfn.googlecode.com\n\nThe gsubfn package - summary\n============================\n\nA seemingly small enhancement to R's gsub function, allowing\nthe replacement string to be a function, formula, list or\nproto object gives surprising additional power allowing\nparsing of strings by content rather than delimiters.  e.g.\nextract numbers:\n\n\t# Example 2. Replace each number with its increment\n\tgsubfn(\"[0-9]+\", ~ as.numeric(x) + 1, \"90 and 17\")\n\n\t# Example 3. extract numbers\n\tstrapply(\"Over 90 stones in 17 places\", \"[0-9]+\")\n\nThe optional function passed to gsubfn and strapply may be\nspecified using usual R function notation or by a formula\nwhose left hand side represents the arguments (defaulting to\nvariables appearing in right hand side) and whose right hand\nside represents the body.  In order to extend this\nfunctionality beyond gsubfn and strapply to the rest of R\nany R function may be prefaced with fn$ like this:\n\n\t# Example 4. Integrate x^2\n\tfn$integrate(~ x^2, 0, 1)\n\nIt also supports quasi-perl style string interpolation:\n\n\t# Example 5. Quasi-perl style string interpolation\n\tfn$cat(\"pi = $pi and e = `exp(1)`\\n\")\n\nmatch.funfn is an alternative to match.fun which allows\ndevelopers to add this functionality to their own functions\nby simply replacing match.fun with match.funfn -- a one line\nchange.  In that case even the fn$ prefix is not needed.",
       "body_snippet": "Version 0.3-7 of the gsubfn package is available on CRAN.\nChanges to the package are:\n\n- all known bugs have been fixed.\n\n- in gsubfn and strapply the replacement object can be a\n  list (or a function",
       "thread_id": "thread-801f1d26e87f",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-801f1d26e87f",
-      "message_id": "<971536df0810200645m1c5e1f77ga408fc02e67f3f07@mail.gmail.com>",
-      "from_name": "Gabor Grothendieck",
-      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2008-10-20T09:45:36-04:00",
-      "subject": "[R-pkgs] New verion 0.3-7 of gsubfn package",
-      "subject_clean": "New verion 0.3-7 of gsubfn package",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Version 0.3-7 of the gsubfn package is available on CRAN.\nChanges to the package are:\n\n- all known bugs have been fixed.\n\n- in gsubfn and strapply the replacement object can be a\n  list (or a function, formula, character string or proto\n  object, as before).  In the case of a list, regexp matches\n  are looked up in the list names and the corresponding list\n  component used.\n\n  # Example 1 - at string end replace M with e6 & G with e9\n  gsubfn(\".$\", list(M = \"e6\", G = \"e9\"), c(\"19G\", \"32.5M\"))\n\n- the backref= argument in gsubfn now defaults to the\n  negative of its prior default.  Thus by default if there\n  are back references only they and not the entire match is\n  passed to the user function.  (Although the changed\n  default introduces an incompatibility with prior versions\n  this incompatability is small because it only affects\n  situations where back references are present in the\n  regular expression _and_ backref= was not used. Since the\n  previous default for backref= was not useful in that case\n  there would be very few, if any, such instances.)  On the\n  other hand, it does mean that the backref= argument can be\n  omitted most cases now.\n\nFor more info, see home page and brief description below.\n\thttp://gsubfn.googlecode.com\n\nThe gsubfn package - summary\n============================\n\nA seemingly small enhancement to R's gsub function, allowing\nthe replacement string to be a function, formula, list or\nproto object gives surprising additional power allowing\nparsing of strings by content rather than delimiters.  e.g.\nextract numbers:\n\n\t# Example 2. Replace each number with its increment\n\tgsubfn(\"[0-9]+\", ~ as.numeric(x) + 1, \"90 and 17\")\n\n\t# Example 3. extract numbers\n\tstrapply(\"Over 90 stones in 17 places\", \"[0-9]+\")\n\nThe optional function passed to gsubfn and strapply may be\nspecified using usual R function notation or by a formula\nwhose left hand side represents the arguments (defaulting to\nvariables appearing in right hand side) and whose right hand\nside represents the body.  In order to extend this\nfunctionality beyond gsubfn and strapply to the rest of R\nany R function may be prefaced with fn$ like this:\n\n\t# Example 4. Integrate x^2\n\tfn$integrate(~ x^2, 0, 1)\n\nIt also supports quasi-perl style string interpolation:\n\n\t# Example 5. Quasi-perl style string interpolation\n\tfn$cat(\"pi = $pi and e = `exp(1)`\\n\")\n\nmatch.funfn is an alternative to match.fun which allows\ndevelopers to add this functionality to their own functions\nby simply replacing match.fun with match.funfn -- a one line\nchange.  In that case even the fn$ prefix is not needed.",
-      "body_snippet": "Version 0.3-7 of the gsubfn package is available on CRAN.\nChanges to the package are:\n\n- all known bugs have been fixed.\n\n- in gsubfn and strapply the replacement object can be a\n  list (or a function",
-      "thread_id": "thread-801f1d26e87f",
-      "thread_depth": 0,
-      "month": "2008-10"
-    },
-    {
-      "id": "msg-9da3f988c9a3",
-      "message_id": "<4906155D.8020508@oncfs.gouv.fr>",
-      "from_name": "Clément Calenge",
-      "from_email_hash": "599c7bb21e58eb2d87faf33dae39c73009649e589b73716148359a67c1e08666",
-      "date": "2008-10-27T20:24:13+01:00",
-      "subject": "[R-pkgs] adehabitat version 1.8",
-      "subject_clean": "adehabitat version 1.8",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear all,\n\nI have uploaded to CRAN the version 1.8 of the package 'adehabitat'.\nSignificant changes are listed below:\n\n* getverticeshr now relies on the function contourLines(), and returns\n   smoother estimates of the kernel home range (see the help page).\n\n* the new function kernelkc (and related functions) now allows the\n   estimation of the utilization distribution in space and time of\n   animals using the product kernel algorithm advocated by Keating and\n   Cherry (Ecology, in press).\n\n* the new function findmaxasc allows to find the local maxima on a map\n   of class 'asc'. It can be potentially useful to identify the points\n   of attraction in the home range of an animal (modes of the\n   utilization distribution).\n\n* the new functions engen2008I and engen2008II implements the method of\n   Engen et al. (2008, Journal of Animal Ecology) for the study of\n   habitat selection using multivariate data.\n\n* The function dunnfa performs a factorial decomposition of the\n   Mahalanobis distances in habitat selection studies. This method has\n   been suggested by Prof. James Dunn as an alternative\n\n* A new bug tracking system has been set up for adehabitat thanks to\n   the great work of Paolo Cavallini (Faunalia). It is available at:\n   https://www.faunalia.it/animove/trac/\n   Any other project intended to manage, store, analyze animals\n   movements can be added there, provided it is free and open source.\n\n* Note that my e-mail adress has changed. It is now:\nclement.calenge at oncfs.gouv.fr\n\nHappy testing,\n\n\nCl?ment Calenge\n\n-- \nCl?ment CALENGE\nOffice national de la chasse et de la faune sauvage\nSaint Benoist - 78610 Auffargis\ntel. (33) 01.30.46.54.14",
-      "body_snippet": "Dear all,\n\nI have uploaded to CRAN the version 1.8 of the package 'adehabitat'.\nSignificant changes are listed below:\n\n* getverticeshr now relies on the function contourLines(), and returns\n   smoothe",
-      "thread_id": "thread-9da3f988c9a3",
       "thread_depth": 0,
       "month": "2008-10"
     },
@@ -401,17 +209,6 @@
       "root_message_id": "msg-6ba8a8ac36ea"
     },
     {
-      "id": "thread-6ba8a8ac36ea",
-      "subject": "MiscPsycho 1.3 posted to CRAN",
-      "message_count": 1,
-      "participants": [
-        "Doran, Harold"
-      ],
-      "started": "2008-10-01T13:39:09-04:00",
-      "last_reply": "2008-10-01T13:39:09-04:00",
-      "root_message_id": "msg-6ba8a8ac36ea"
-    },
-    {
       "id": "thread-512ede483469",
       "subject": "New package: expert 1.0-0",
       "message_count": 1,
@@ -421,28 +218,6 @@
       "started": "2008-10-03T11:24:14+02:00",
       "last_reply": "2008-10-03T11:24:14+02:00",
       "root_message_id": "msg-512ede483469"
-    },
-    {
-      "id": "thread-512ede483469",
-      "subject": "New package: expert 1.0-0",
-      "message_count": 1,
-      "participants": [
-        "Mathieu Pigeon"
-      ],
-      "started": "2008-10-03T11:24:14+02:00",
-      "last_reply": "2008-10-03T11:24:14+02:00",
-      "root_message_id": "msg-512ede483469"
-    },
-    {
-      "id": "thread-904318403955",
-      "subject": "ggplot2 - version 0.7",
-      "message_count": 1,
-      "participants": [
-        "hadley wickham"
-      ],
-      "started": "2008-10-05T10:41:35-05:00",
-      "last_reply": "2008-10-05T10:41:35-05:00",
-      "root_message_id": "msg-904318403955"
     },
     {
       "id": "thread-904318403955",
@@ -467,17 +242,6 @@
       "root_message_id": "msg-3b0e9b8810df"
     },
     {
-      "id": "thread-3b0e9b8810df",
-      "subject": "New verision 0.95 of package 'memisc' released to CRAN",
-      "message_count": 1,
-      "participants": [
-        "Martin Elff"
-      ],
-      "started": "2008-10-06T10:23:52+02:00",
-      "last_reply": "2008-10-06T10:23:52+02:00",
-      "root_message_id": "msg-3b0e9b8810df"
-    },
-    {
       "id": "thread-3da70bb909b5",
       "subject": "hwriter - Writing R objects in HTML format",
       "message_count": 1,
@@ -487,28 +251,6 @@
       "started": "2008-10-07T20:13:27+01:00",
       "last_reply": "2008-10-07T20:13:27+01:00",
       "root_message_id": "msg-3da70bb909b5"
-    },
-    {
-      "id": "thread-3da70bb909b5",
-      "subject": "hwriter - Writing R objects in HTML format",
-      "message_count": 1,
-      "participants": [
-        "Gregoire Pau"
-      ],
-      "started": "2008-10-07T20:13:27+01:00",
-      "last_reply": "2008-10-07T20:13:27+01:00",
-      "root_message_id": "msg-3da70bb909b5"
-    },
-    {
-      "id": "thread-8f41b31b19e2",
-      "subject": "release of RcmdrPlugin.Export 0.2-1",
-      "message_count": 1,
-      "participants": [
-        "Liviu Andronic"
-      ],
-      "started": "2008-10-09T19:59:17+02:00",
-      "last_reply": "2008-10-09T19:59:17+02:00",
-      "root_message_id": "msg-8f41b31b19e2"
     },
     {
       "id": "thread-8f41b31b19e2",
@@ -533,17 +275,6 @@
       "root_message_id": "msg-b32863ce2bd9"
     },
     {
-      "id": "thread-b32863ce2bd9",
-      "subject": "New package: bit 1.0",
-      "message_count": 1,
-      "participants": [
-        "Jens Oehlschlägel"
-      ],
-      "started": "2008-10-10T18:08:51+02:00",
-      "last_reply": "2008-10-10T18:08:51+02:00",
-      "root_message_id": "msg-b32863ce2bd9"
-    },
-    {
       "id": "thread-be966fa66d41",
       "subject": "New package: StatMatch 0.4",
       "message_count": 1,
@@ -553,28 +284,6 @@
       "started": "2008-10-13T10:39:58+02:00",
       "last_reply": "2008-10-13T10:39:58+02:00",
       "root_message_id": "msg-be966fa66d41"
-    },
-    {
-      "id": "thread-be966fa66d41",
-      "subject": "New package: StatMatch 0.4",
-      "message_count": 1,
-      "participants": [
-        "Marcello D'Orazio"
-      ],
-      "started": "2008-10-13T10:39:58+02:00",
-      "last_reply": "2008-10-13T10:39:58+02:00",
-      "root_message_id": "msg-be966fa66d41"
-    },
-    {
-      "id": "thread-8cf514c042b3",
-      "subject": "New versions of two packages: granova and PSAgraphics",
-      "message_count": 1,
-      "participants": [
-        "bob pruzek"
-      ],
-      "started": "2008-10-14T11:02:24-07:00",
-      "last_reply": "2008-10-14T11:02:24-07:00",
-      "root_message_id": "msg-8cf514c042b3"
     },
     {
       "id": "thread-8cf514c042b3",
@@ -599,17 +308,6 @@
       "root_message_id": "msg-2e4564c8ebec"
     },
     {
-      "id": "thread-2e4564c8ebec",
-      "subject": "New package RPostgreSQL 0.1.0",
-      "message_count": 1,
-      "participants": [
-        "Dirk Eddelbuettel"
-      ],
-      "started": "2008-10-14T21:41:37-05:00",
-      "last_reply": "2008-10-14T21:41:37-05:00",
-      "root_message_id": "msg-2e4564c8ebec"
-    },
-    {
       "id": "thread-801f1d26e87f",
       "subject": "New verion 0.3-7 of gsubfn package",
       "message_count": 1,
@@ -619,28 +317,6 @@
       "started": "2008-10-20T09:45:36-04:00",
       "last_reply": "2008-10-20T09:45:36-04:00",
       "root_message_id": "msg-801f1d26e87f"
-    },
-    {
-      "id": "thread-801f1d26e87f",
-      "subject": "New verion 0.3-7 of gsubfn package",
-      "message_count": 1,
-      "participants": [
-        "Gabor Grothendieck"
-      ],
-      "started": "2008-10-20T09:45:36-04:00",
-      "last_reply": "2008-10-20T09:45:36-04:00",
-      "root_message_id": "msg-801f1d26e87f"
-    },
-    {
-      "id": "thread-9da3f988c9a3",
-      "subject": "adehabitat version 1.8",
-      "message_count": 1,
-      "participants": [
-        "Clément Calenge"
-      ],
-      "started": "2008-10-27T20:24:13+01:00",
-      "last_reply": "2008-10-27T20:24:13+01:00",
-      "root_message_id": "msg-9da3f988c9a3"
     },
     {
       "id": "thread-9da3f988c9a3",

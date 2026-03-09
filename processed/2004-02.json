@@ -20,38 +20,6 @@
       "month": "2004-02"
     },
     {
-      "id": "msg-9556e28a6fd9",
-      "message_id": "<4020F1FA.6040203@echip.com>",
-      "from_name": "Bob Wheeler",
-      "from_email_hash": "b5c8494cbb1856adf05ae595cd671df6feb3cd84e1c8430d17cc17138282ed39",
-      "date": "2004-02-04T08:22:02-05:00",
-      "subject": "[R-pkgs] AlgDesign",
-      "subject_clean": "AlgDesign",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "AlgDesign is a new package for calculating algorithmic experimental\ndesigns. It will calculate both exact and approximate designs for a\nvariety of criteria. It will handle very large designs. It will also\nblock designs in a variety of ways, including split plotting. You should\nfind it at least as capable as other software for this purpose.\n\nI'd normally submit this sort of thing to beta test, but I guess the R\nusers are the beta testers, so have at it. It would probably be best to\nsend the bug reports directly to me rather then clutter up the newsgroups.\n\n\n-- \nBob Wheeler --- http://www.bobwheeler.com/\n           ECHIP, Inc. ---\nRandomness comes in bunches.",
-      "body_snippet": "AlgDesign is a new package for calculating algorithmic experimental\ndesigns. It will calculate both exact and approximate designs for a\nvariety of criteria. It will handle very large designs. It will ",
-      "thread_id": "thread-9556e28a6fd9",
-      "thread_depth": 0,
-      "month": "2004-02"
-    },
-    {
-      "id": "msg-8cc36c77fc3d",
-      "message_id": "<5.1.1.6.2.20040217102016.01d808f8@mail.aims.gov.au>",
-      "from_name": "Glenn Death",
-      "from_email_hash": "47cf17cde2740e8557b29e80d64c6f7ebb65ec1977d71dbf29753e9208b0a577",
-      "date": "2004-02-17T10:28:22-08:00",
-      "subject": "[R-pkgs] New package -- mvpart",
-      "subject_clean": "New package -- mvpart",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The package mvpart is now available.\nmvpart includes partitioning based on (1) multivariate numeric responses and\n(2) dissimilarity matrices.\n\nThe package mvpart is a modification of rpart --\n  -- authors of original: Terry M Therneau and Beth Atkinson \n<atkinson at mayo.edu>, and\n  R port of rpart Brian Ripley <ripley at stats.ox.ac.uk>.\nIncludes some modified routines from vegan -- Jari Oksanen \n<jari.oksanen at oulu.fi>\n\nThanks and credit to all the above.\n\nModifications of rpart to mvpart by Glenn De'ath <g.death at aims.gov.au>.\n\nIt was not possible to simply build a separate packge which required RPART due\nto the modifications to the rpart C-code necessary to include the 2 new\npartitioning methods.\n\nAs few changes as possible have been made to rpart.\n\nIn addition to the changes in the C-code, the following changes and \nadditions in\nR-functions have been made.\n\n(1) A wrapper function for rpart called mvpart supports selection of trees \nby x-validation,\n         interactive display, printing of results etc.\n\n(2) Some multivariate methods to deal with representation and \ninterpretation of multivariate\n         partitioning objects have been added. These include PCA plots and \ntree-cluster comparisons.\n\n(3) Methods for calculating increased forms of dissimilarities and for \nscaling matrices\n         have been added. These are designed in particluar for community \necology.\n\n(3) text.rpart has been modified to include graphical annotation of nodes.\n\nGlenn De'ath\n\n\n===============================================\nGlenn De'ath\nAustralian Institute of Marine Science\nPMB No 3, Townsville Mail Centre\nQld 4810, Australia\nPh: +61-7-4753-4314 or  +61-7-4758-1979",
-      "body_snippet": "The package mvpart is now available.\nmvpart includes partitioning based on (1) multivariate numeric responses and\n(2) dissimilarity matrices.\n\nThe package mvpart is a modification of rpart --\n  -- aut",
-      "thread_id": "thread-8cc36c77fc3d",
-      "thread_depth": 0,
-      "month": "2004-02"
-    },
-    {
       "id": "msg-8cc36c77fc3d",
       "message_id": "<5.1.1.6.2.20040217102016.01d808f8@mail.aims.gov.au>",
       "from_name": "Glenn Death",
@@ -80,38 +48,6 @@
       "body_plain": "We would like to announce the availability on CRAN of a new package\nmultinomRob.  It does robust estimation of overdispersed multinomial\nregression models. The package is also able to estimate overdispersed\ngrouped multinomial logistic and multivariate-t logistic models.  The\ncode is relatively general; for example, it allows for equality\nconstraints across parameters and it can handle datasets in which the\nnumber of categories varies by observation.\n\nDESCRIPTION:\n\nPackage: multinomRob\nVersion: 1.0\nDate: 2004/02/18\nTitle: Robust Estimation of Overdispersed Multinomial Regression Models\nAuthor: Walter R. Mebane, Jr. <wrm1 at cornell.edu>, Jasjeet Singh Sekhon <jasjeet_sekhon at harvard.edu>\nMaintainer: Jasjeet Singh Sekhon <jasjeet_sekhon at harvard.edu>\nDescription: overdispersed multinomial regression using robust (LQD and tanh) estimation\nDepends: R (>= 1.7.0), rgenoud (>= 1.22), MASS (>= 7.1-8), mvtnorm (>= 0.6-3)\nLicense: GPL version 2 or later\nURL: http://jsekhon.fas.harvard.edu/robust/\n\n\nWe look forward to receiving questions, comments and suggestions.\n\nCheers,\nJas.\n\n======================================\nJasjeet S. Sekhon\nAssociate Professor\nHarvard University\nCenter for Basic Research in the \n  Social Sciences\njsekhon at fas.harvard.edu\nhttp://jsekhon.fas.harvard.edu/\nOffice: 617.496.2426 Fax: 617.496.5149",
       "body_snippet": "We would like to announce the availability on CRAN of a new package\nmultinomRob.  It does robust estimation of overdispersed multinomial\nregression models. The package is also able to estimate overdis",
       "thread_id": "thread-703432a4356d",
-      "thread_depth": 0,
-      "month": "2004-02"
-    },
-    {
-      "id": "msg-703432a4356d",
-      "message_id": "<16437.32492.977572.998974@musil.localdomain>",
-      "from_name": "Jasjeet Singh Sekhon",
-      "from_email_hash": "fb8bc0cb16830f8ea34021b5d9997f1823661f62edbc610e2d4de765bec91e4c",
-      "date": "2004-02-19T22:28:44-05:00",
-      "subject": "[R-pkgs] New Package: multinomRob",
-      "subject_clean": "New Package: multinomRob",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "We would like to announce the availability on CRAN of a new package\nmultinomRob.  It does robust estimation of overdispersed multinomial\nregression models. The package is also able to estimate overdispersed\ngrouped multinomial logistic and multivariate-t logistic models.  The\ncode is relatively general; for example, it allows for equality\nconstraints across parameters and it can handle datasets in which the\nnumber of categories varies by observation.\n\nDESCRIPTION:\n\nPackage: multinomRob\nVersion: 1.0\nDate: 2004/02/18\nTitle: Robust Estimation of Overdispersed Multinomial Regression Models\nAuthor: Walter R. Mebane, Jr. <wrm1 at cornell.edu>, Jasjeet Singh Sekhon <jasjeet_sekhon at harvard.edu>\nMaintainer: Jasjeet Singh Sekhon <jasjeet_sekhon at harvard.edu>\nDescription: overdispersed multinomial regression using robust (LQD and tanh) estimation\nDepends: R (>= 1.7.0), rgenoud (>= 1.22), MASS (>= 7.1-8), mvtnorm (>= 0.6-3)\nLicense: GPL version 2 or later\nURL: http://jsekhon.fas.harvard.edu/robust/\n\n\nWe look forward to receiving questions, comments and suggestions.\n\nCheers,\nJas.\n\n======================================\nJasjeet S. Sekhon\nAssociate Professor\nHarvard University\nCenter for Basic Research in the \n  Social Sciences\njsekhon at fas.harvard.edu\nhttp://jsekhon.fas.harvard.edu/\nOffice: 617.496.2426 Fax: 617.496.5149",
-      "body_snippet": "We would like to announce the availability on CRAN of a new package\nmultinomRob.  It does robust estimation of overdispersed multinomial\nregression models. The package is also able to estimate overdis",
-      "thread_id": "thread-703432a4356d",
-      "thread_depth": 0,
-      "month": "2004-02"
-    },
-    {
-      "id": "msg-1240eab69be2",
-      "message_id": "<17540.1077553011@www6.gmx.net>",
-      "from_name": "\"Jens Oehlschlägel\"",
-      "from_email_hash": "c498ae52a55418c8697debb92e3996771aed4e116e7f722857c592a766b548d1",
-      "date": "2004-02-23T17:16:51+01:00",
-      "subject": "[R-pkgs] Package \"ref\" implements references and referenceable data.frames for the S-language",
-      "subject_clean": "Package \"ref\" implements references and referenceable data.frames for the S-language",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Repeatedly people have asked how to pass arguments by reference in R.\n\nNow package \"ref\"  is on CRAN, which provides two referencing methods:\n\nFunctions ref(), deref() and friends conveniently allow to pass parameters\n\"by reference\" instead of  \"by value\". This can be useful in memory critical\napplications but requires a more careful programming style to track the\nimplications of functions changing their parameters. However, package ref is\nwritten in pure S and attaching this package does not change any standard S\nbehaviour. \n\nClass refdata is a transparent wrapper to matrices and data.frames which\nallows for memory efficient nested subsetting. I.e. you can create a subset\nof a\nsubset ... of a data.frame without duplicating the data in memory, instead\nonly indexing information is duplicated. Indexing information is represented\nas positive or negative integers, whatever is shorter, thus the length of\nthe\nindex is granted to be <=nrows/2 resp. <=ncol/2. Memory savings in case of a\nsquare data.frame is roughly n^2-n elements per level of nested subsetting.\n\nThis code is offered \"as is\" under the GPL, usage is completely at your own\nrisk. (Some efforts has been put in the included regression tests to make\nshure\nthe code does what it is intended to do).\n\nFeedback about problems or successful example uses is welcome.\nPlease use the email address given in the package DESCRIPTION and please\ndon't cc to lists for spam prevention.\n\nBest regards\n\n\nJens Oehlschl?gel\n\n-- \nGMX ProMail (250 MB Mailbox, 50 FreeSMS, Virenschutz, 2,99 EUR/Monat...)\njetzt 3 Monate GRATIS + 3x DER SPIEGEL +++ http://www.gmx.net/derspiegel +++",
-      "body_snippet": "Repeatedly people have asked how to pass arguments by reference in R.\n\nNow package \"ref\"  is on CRAN, which provides two referencing methods:\n\nFunctions ref(), deref() and friends conveniently allow t",
-      "thread_id": "thread-1240eab69be2",
       "thread_depth": 0,
       "month": "2004-02"
     },
@@ -145,28 +81,6 @@
       "root_message_id": "msg-9556e28a6fd9"
     },
     {
-      "id": "thread-9556e28a6fd9",
-      "subject": "AlgDesign",
-      "message_count": 1,
-      "participants": [
-        "Bob Wheeler"
-      ],
-      "started": "2004-02-04T08:22:02-05:00",
-      "last_reply": "2004-02-04T08:22:02-05:00",
-      "root_message_id": "msg-9556e28a6fd9"
-    },
-    {
-      "id": "thread-8cc36c77fc3d",
-      "subject": "New package -- mvpart",
-      "message_count": 1,
-      "participants": [
-        "Glenn Death"
-      ],
-      "started": "2004-02-17T10:28:22-08:00",
-      "last_reply": "2004-02-17T10:28:22-08:00",
-      "root_message_id": "msg-8cc36c77fc3d"
-    },
-    {
       "id": "thread-8cc36c77fc3d",
       "subject": "New package -- mvpart",
       "message_count": 1,
@@ -187,28 +101,6 @@
       "started": "2004-02-19T22:28:44-05:00",
       "last_reply": "2004-02-19T22:28:44-05:00",
       "root_message_id": "msg-703432a4356d"
-    },
-    {
-      "id": "thread-703432a4356d",
-      "subject": "New Package: multinomRob",
-      "message_count": 1,
-      "participants": [
-        "Jasjeet Singh Sekhon"
-      ],
-      "started": "2004-02-19T22:28:44-05:00",
-      "last_reply": "2004-02-19T22:28:44-05:00",
-      "root_message_id": "msg-703432a4356d"
-    },
-    {
-      "id": "thread-1240eab69be2",
-      "subject": "Package \"ref\" implements references and referenceable data.frames for the S-language",
-      "message_count": 1,
-      "participants": [
-        "\"Jens Oehlschlägel\""
-      ],
-      "started": "2004-02-23T17:16:51+01:00",
-      "last_reply": "2004-02-23T17:16:51+01:00",
-      "root_message_id": "msg-1240eab69be2"
     },
     {
       "id": "thread-1240eab69be2",

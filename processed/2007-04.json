@@ -20,22 +20,6 @@
       "month": "2007-04"
     },
     {
-      "id": "msg-0dc392610401",
-      "message_id": "<4623CF4A.3020100@noaa.gov>",
-      "from_name": "Michael H. Prager",
-      "from_email_hash": "b55d3e36aadae69091d3524904c3dc333c39e1ee222fcfae79fbb718334c7f3a",
-      "date": "2007-04-16T15:32:26-04:00",
-      "subject": "[R-pkgs] Update of X2R sent to CRAN, 16 Apr 2007",
-      "subject_clean": "Update of X2R sent to CRAN, 16 Apr 2007",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "X2R is a bundle of three software libraries allowing the user to pass \nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN today and should be available at \nmirrors shortly. This fixes a bug in the ADMB2R and C2R components in \nwhich data frames were not written correctly when the user did not \nspecify row names. Several other minor improvements also have been made.\n\nThe new version is supplied as files X2R.zip and X2R.tar.gz, which are \nequivalent.  The version and release date can be identified from the \ncontents of file \"VersionInfo.txt\" in the root of each archive. The new \nversion bears date April 16, 2007.\n\n                                * * *\n\n From the original announcement:\n\nX2R is composed of three related software libraries: C2R,  ADMB2R, and\nFor2R (together, X2R). Each contains output routines to simplify\ntransfer of complicated data structures from models written in a\ncompiled language to R.  The user's data can be written as a structured\nASCII file which, when read by R (note 1) with a single dget() function\ncall, will become an R data object of type list. The list, may contain\ncomponents such as data frames, matrices, and other lists.\n\nThese are NOT R packages; rather they are subroutine libraries to be\nused with programmers' own modeling codes.  Limited testing indicates\nthat they are compatible with S-PLUS, as well (note 1, note 2).\n\nLanguages supported are Fortran 95 (with For2R), C and C++ (with C2R)\nand AD Model Builder (with ADMB2R) (note 1, note 3).  Source code and\nusers' manuals are supplied.\n\nThis work has been tested and used by the authors. However, any software\nmay contain bugs, and these works are classified by NOAA as\n\"Experimental Products.\"  Although the software is supplied with no\nwarranty whatsoever, bug reports, suggestions, and extensions are\nsolicited (send to Prager or Martin).  The authors will attempt to fix\nall bugs promptly and to add requested features.\n\nSoftware is now available at CRAN,  http://cran.r-project.org/ .  Look\nunder \"Software / Other\" for the current X2R distribution.\n\n\nMichael H. Prager - mike.prager at noaa.gov\nAndi Stephens\nSoutheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n101 Pivers Island Road\nBeaufort, North Carolina 28516 USA\n\nJennifer L. Martin - jennifer.martin at noaa.gov\nNortheast Fisheries Science Center\nNational Marine Fisheries Service, NOAA\n166 Water Street\nWoods Hole, Massachusetts 02543 USA\n\n\n* Note 1.  Use of product names (commercial or otherwise) does not imply\nendorsement or recommendation by any U.S. government agency, nor by the\nauthors in their government capacities.\n* Note 2.  S-PLUS is a commercial product, released by Insightful\nCorporation.\n* Note 3.  AD Model Builder is a commercial product, released by Otter\nResearch.",
-      "body_snippet": "X2R is a bundle of three software libraries allowing the user to pass \nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN today and should be",
-      "thread_id": "thread-0dc392610401",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
       "id": "msg-c981522537bb",
       "message_id": "<200704231120.59692.vincent.goulet@act.ulaval.ca>",
       "from_name": "Vincent Goulet",
@@ -48,38 +32,6 @@
       "body_plain": "UseRs,\n\nactuar is a package for Actuarial Science. A rather preliminary\nversion (0.1-3) of the package has been available on CRAN since February 2006. \nWe now announce the immediate availability of version 0.9-2 sporting a large \nnumber of new features. \n\nNon actuaries behold! There can be some features of interest for you, \nespecially those related to new probability distribution and to the \nmanipulation of grouped data.\n\nSince I took the time to write a fairly detailed NEWS file, I'll let it speak \nfor itself:\n\n=== actuar: an R package for Actuarial Science ===\n\nVersion 0.9-2\n=============\n\nMajor official update. This version is not backward compatible with\nthe 0.1-x series. Feature of the package can be split in the following\ncategories: loss distributions modeling, risk theory, credibility\ntheory.\n\nNEW FEATURES -- LOSS DISTRIBUTIONS\n\no Functions {d,p,q,r}foo to compute the density function, cumulative\n  distribution function, quantile function of, and to generate\n  variates from, all probability distributions of Appendix A of\n  Klugman et al. (2004), \"Loss Models, Second Edition\" (except the\n  inverse gaussian) not already in R. Namely, this adds the following\n  distributions (the root is what follows the 'd', 'p', 'q' or 'r' in\n  function names):\n  \n  Distribution name          \tRoot        \n  ------------------------- \t\t--------------  \n   Burr\t\t\t    \t \tburr\t\t  \n   Generalized beta\t     \t\tgenbeta\t  \n   Generalized Pareto\t    \tgenpareto\t  \n   Inverse Burr\t\t     \tinvburr\t  \n   Inverse exponential\t     \tinvexp\t  \n   Inverse Pareto\t     \t\tinvpareto\t  \n   Inverse paralogistic\t     \tinvparalogis\t  \n   Inverse Weibull\t     \t\tinvweibull\t  \n   Loggamma\t\t     \t\tloggamma\t  \n   Loglogistic\t\t     \t\tllogis\t  \n   Paralogistic\t\t    \t \tparalogis\t  \n   Pareto\t\t     \t\t\tpareto\t  \n   Single parameter Pareto   \tpareto1\t  \n   Transformed beta\t     \ttrbeta\t  \n   Transformed gamma\t     \ttrgamma\t  \n\n  All functions are coded in C for efficiency purposes and should\n  behave exactly like the functions in base R. For all distributions\n  that have a scale parameter, the corresponding functions have 'rate\n  = 1' and 'scale = 1/rate' arguments.\n\no Functions {m,lev}foo to compute the k-th raw (non-central) moment\n  and k-th limited moment for all the probability distributions\n  mentioned above, plus the following ones of base R: beta,\n  exponential, gamma, lognormal and Weibull.\n\no Facilities to store and manipulate grouped data (stored in an\n  interval-frequency fashion). Function grouped.data() creates a\n  grouped data object similar to a data frame. Methods of \"[\", \"[<-\",\n  mean() and hist() created for objects of class \"grouped.data\".\n\no Function ogive() --- with appropriate methods of knots(),\n  plot(), print() and summary() --- to compute the ogive of grouped\n  data. Usage is in every respect similar to ecdf().\n\no Function elev() to compute the empirical limited expected value of a\n  sample of individual or grouped data.\n\no Function emm() to compute the k-th empirical raw (non-central)\n  moment of a sample of individual or grouped data.\n\no Function mde() to compute minimum distance estimators from a sample\n  of individual or grouped data using one of three distance measures:\n  Cramer-von Mises (CvM), chi-square, layer average severity\n  (LAS). Usage is similar to fitdistr() of package 'MASS'.\n\no Function coverage() to obtain the pdf or cdf of the payment per\n  payment or payment per loss random variable under any combination of\n  the following coverage modifications: ordinary of franchise\n  deductible, policy limit, coinsurance, inflation. The result is a\n  function that can be used in fitting models to data subject to such\n  coverage modifications.\n\no Individual dental claims data set 'dental' and grouped dental claims\n  data set 'gdental' of Klugman et al. (2004), \"Loss Models, Second\n  Edition\".\n\nNEW FEATURES -- RISK THEORY\n\no Function aggregateDist() returns a function to compute the\n  cumulative distribution function of the total amount of claims\n  random variable for an insurance portfolio using any of the\n  following five methods:\n\n  1. exact calculation by convolutions (using function convolve() of\n     package 'stats';\n  2. recursive calculation using Panjer's algorithm;\n  3. normal approximation;\n  4. normal power approximation;\n  5. simulation.\n\n  The modular conception of aggregateDist() allows for easy inclusion\n  of additional methods. There are special methods of print(),\n  summary(), quantile() and mean() for objects of class\n  \"aggregateDist\".  The objects otherwise inherit from classes \"ecdf\"\n  (for methods 1, 2 and 3) and \"function\".\n\n  See also the \"Deprecated, defunct or no backward compatibility\"\n  section below.\n\no Function discretize() to discretize a continuous distribution using\n  any of the following four methods:\n\n  1. upper discretization, where the discretized cdf is always above\n     the true cdf;\n  2. lower discretization, where the discretized cdf is always under\n     the true cdf;\n  3. rounding, where the true cdf passes through the midpoints of the\n     intervals of the discretized cdf;\n  4. first moment matching of the discretized and true distributions.\n\n  Usage is similar to curve() of package 'graphics'. Again, the\n  modular conception allows for easy inclusion of additional\n  discretization methods.\n\nNEW FEATURES -- CREDIBILITY THEORY\n\no Function simpf() can now simulate data for hierarchical portfolios\n  of any number of levels. Model specification changed completely; see\n  the \"Deprecated, defunct or no backward compatibility\" below. The\n  function is also significantly (~10x) faster than the previous\n  version.\n\no Generic function severity() defined mostly to provide a method for\n  objects of class \"simpf\"; see below.\n\no Methods of aggregate(), frequency(), severity() and weights() to\n  extract information from objects of class \"simpf\":\n\n  1. aggregate() returns the matrix of aggregate claim amounts per\n     node;\n  2. frequency() returns the matrix of the number of claims per node;\n  3. severity() returns the matrix of individual claim amounts per\n     node;\n  4. weights() returns the matrix of weights corresponding to the\n     data.\n\n  Summaries can be done in various ways; see ?simpf.summaries\n\no Function cm() (for \"_c_redibility _m_odel\") to compute structure\n  parameters estimators for hierarchical credibility models, including\n  the B?hlmann and B?hlmann-Straub models. Usage is similar to lm() of\n  packages 'stats' in that the hierarchical structure is specified by\n  means of a formula object and data is extracted from a matrix or\n  data frame. There are special methods of print(), summary() for\n  objects of class \"cm\". Credibility premiums are computed using a\n  method of predict(); see below.\n\n  For simple B?hlmann and B?hlmann-Straub models, bstraub() remains\n  simpler to use and faster.\n\no Function bstraub() now returns an object of class \"bstraub\" for\n  which there exist print and summary methods. The function no longer\n  computes the credibility premiums; see the \"Deprecated,\n  defunct or no backward compatibility\" below.\n\no Methods of predict() for objects of class \"cm\" and \"bstraub\" created\n  to actually compute the credibility premiums of credibility\n  models. Function predict.cm() can return the premiums for specific\n  levels of a hierarchical portfolio only.\n\nOTHER NEW FEATURES\n\no Function unroll() to unlist a list with a \"dim\" attribute of length\n  0, 1 or 2 (that is, a vector or matrix of vectors) according\n  to a specific dimension. Currently identical to severity.default()\n  by lack of a better usage of the default method of severity().\n\no Three new demos corresponding to the three main fields of actuarial\n  science covered by the package.\n\no French translations of the error and warning messages.\n\no The package now has a name space.\n\nDEPRECATED, DEFUNCT OR NO BACKWARD COMPATIBILITY\n\no Function panjer(), although still present in the package, should no\n  longer be used directly. Recursive calculation of the aggregate\n  claim amount should be done with aggregateDist(). Further, the\n  function is not backward compatible: model specification has\n  changed, discretization of the claim amount distribution should now\n  be done with discretize(), and the function now returns a function\n  to compute the cdf instead of a simple vector of probabilities.\n\no Model specification for simpf() changed completely and is not\n  backward compatible with previous versions of the package. The new\n  scheme allows for much more general models.\n\no Function rearrangepf() is defunct and has been replaced by methods\n  of aggregate(), frequency() and severity().\n\no Function bstraub() no longer computes the credibility premiums. One\n  should now instead use predict() for this.\n\no The data set 'hachemeister' is no longer a list but rather a matrix\n  with a state specification.\n\n\nVersion 0.1-3\n=============\n\nFixed the dependency on R >= 2.1.0 since the package uses function\nisTRUE().\n\n\nVersion 0.1-2\n=============\n\n- First public release.\n- Fixed an important bug in bstraub(): when calculating the range of\n  the weights matrix, NAs were not excluded.\n- Miscellaneous documentation corrections.\n\n\nVersion 0.1-1\n=============\n\n- Initial release.\n- Contains functions bstraub(), simpf(), rearrangepf() and panjer(),\n  and the dataset hachemeister.\n\n[There has been a very short lived version 0.9-1 on CRAN. Please ignore this \nversion altogether.]\n\nCollaboration is welcome. Please contact me directly.\n\n-- \n  Vincent Goulet, Associate Professor\n  ?cole d'actuariat\n  Universit? Laval, Qu?bec \n  Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
       "body_snippet": "UseRs,\n\nactuar is a package for Actuarial Science. A rather preliminary\nversion (0.1-3) of the package has been available on CRAN since February 2006. \nWe now announce the immediate availability of ve",
       "thread_id": "thread-c981522537bb",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
-      "id": "msg-c981522537bb",
-      "message_id": "<200704231120.59692.vincent.goulet@act.ulaval.ca>",
-      "from_name": "Vincent Goulet",
-      "from_email_hash": "e1091a7ef24172cab8ff1701d0e6c2c555c786b66d61ed102070f87705da8ffd",
-      "date": "2007-04-23T10:20:59-05:00",
-      "subject": "[R-pkgs] New version of actuar",
-      "subject_clean": "New version of actuar",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "UseRs,\n\nactuar is a package for Actuarial Science. A rather preliminary\nversion (0.1-3) of the package has been available on CRAN since February 2006. \nWe now announce the immediate availability of version 0.9-2 sporting a large \nnumber of new features. \n\nNon actuaries behold! There can be some features of interest for you, \nespecially those related to new probability distribution and to the \nmanipulation of grouped data.\n\nSince I took the time to write a fairly detailed NEWS file, I'll let it speak \nfor itself:\n\n=== actuar: an R package for Actuarial Science ===\n\nVersion 0.9-2\n=============\n\nMajor official update. This version is not backward compatible with\nthe 0.1-x series. Feature of the package can be split in the following\ncategories: loss distributions modeling, risk theory, credibility\ntheory.\n\nNEW FEATURES -- LOSS DISTRIBUTIONS\n\no Functions {d,p,q,r}foo to compute the density function, cumulative\n  distribution function, quantile function of, and to generate\n  variates from, all probability distributions of Appendix A of\n  Klugman et al. (2004), \"Loss Models, Second Edition\" (except the\n  inverse gaussian) not already in R. Namely, this adds the following\n  distributions (the root is what follows the 'd', 'p', 'q' or 'r' in\n  function names):\n  \n  Distribution name          \tRoot        \n  ------------------------- \t\t--------------  \n   Burr\t\t\t    \t \tburr\t\t  \n   Generalized beta\t     \t\tgenbeta\t  \n   Generalized Pareto\t    \tgenpareto\t  \n   Inverse Burr\t\t     \tinvburr\t  \n   Inverse exponential\t     \tinvexp\t  \n   Inverse Pareto\t     \t\tinvpareto\t  \n   Inverse paralogistic\t     \tinvparalogis\t  \n   Inverse Weibull\t     \t\tinvweibull\t  \n   Loggamma\t\t     \t\tloggamma\t  \n   Loglogistic\t\t     \t\tllogis\t  \n   Paralogistic\t\t    \t \tparalogis\t  \n   Pareto\t\t     \t\t\tpareto\t  \n   Single parameter Pareto   \tpareto1\t  \n   Transformed beta\t     \ttrbeta\t  \n   Transformed gamma\t     \ttrgamma\t  \n\n  All functions are coded in C for efficiency purposes and should\n  behave exactly like the functions in base R. For all distributions\n  that have a scale parameter, the corresponding functions have 'rate\n  = 1' and 'scale = 1/rate' arguments.\n\no Functions {m,lev}foo to compute the k-th raw (non-central) moment\n  and k-th limited moment for all the probability distributions\n  mentioned above, plus the following ones of base R: beta,\n  exponential, gamma, lognormal and Weibull.\n\no Facilities to store and manipulate grouped data (stored in an\n  interval-frequency fashion). Function grouped.data() creates a\n  grouped data object similar to a data frame. Methods of \"[\", \"[<-\",\n  mean() and hist() created for objects of class \"grouped.data\".\n\no Function ogive() --- with appropriate methods of knots(),\n  plot(), print() and summary() --- to compute the ogive of grouped\n  data. Usage is in every respect similar to ecdf().\n\no Function elev() to compute the empirical limited expected value of a\n  sample of individual or grouped data.\n\no Function emm() to compute the k-th empirical raw (non-central)\n  moment of a sample of individual or grouped data.\n\no Function mde() to compute minimum distance estimators from a sample\n  of individual or grouped data using one of three distance measures:\n  Cramer-von Mises (CvM), chi-square, layer average severity\n  (LAS). Usage is similar to fitdistr() of package 'MASS'.\n\no Function coverage() to obtain the pdf or cdf of the payment per\n  payment or payment per loss random variable under any combination of\n  the following coverage modifications: ordinary of franchise\n  deductible, policy limit, coinsurance, inflation. The result is a\n  function that can be used in fitting models to data subject to such\n  coverage modifications.\n\no Individual dental claims data set 'dental' and grouped dental claims\n  data set 'gdental' of Klugman et al. (2004), \"Loss Models, Second\n  Edition\".\n\nNEW FEATURES -- RISK THEORY\n\no Function aggregateDist() returns a function to compute the\n  cumulative distribution function of the total amount of claims\n  random variable for an insurance portfolio using any of the\n  following five methods:\n\n  1. exact calculation by convolutions (using function convolve() of\n     package 'stats';\n  2. recursive calculation using Panjer's algorithm;\n  3. normal approximation;\n  4. normal power approximation;\n  5. simulation.\n\n  The modular conception of aggregateDist() allows for easy inclusion\n  of additional methods. There are special methods of print(),\n  summary(), quantile() and mean() for objects of class\n  \"aggregateDist\".  The objects otherwise inherit from classes \"ecdf\"\n  (for methods 1, 2 and 3) and \"function\".\n\n  See also the \"Deprecated, defunct or no backward compatibility\"\n  section below.\n\no Function discretize() to discretize a continuous distribution using\n  any of the following four methods:\n\n  1. upper discretization, where the discretized cdf is always above\n     the true cdf;\n  2. lower discretization, where the discretized cdf is always under\n     the true cdf;\n  3. rounding, where the true cdf passes through the midpoints of the\n     intervals of the discretized cdf;\n  4. first moment matching of the discretized and true distributions.\n\n  Usage is similar to curve() of package 'graphics'. Again, the\n  modular conception allows for easy inclusion of additional\n  discretization methods.\n\nNEW FEATURES -- CREDIBILITY THEORY\n\no Function simpf() can now simulate data for hierarchical portfolios\n  of any number of levels. Model specification changed completely; see\n  the \"Deprecated, defunct or no backward compatibility\" below. The\n  function is also significantly (~10x) faster than the previous\n  version.\n\no Generic function severity() defined mostly to provide a method for\n  objects of class \"simpf\"; see below.\n\no Methods of aggregate(), frequency(), severity() and weights() to\n  extract information from objects of class \"simpf\":\n\n  1. aggregate() returns the matrix of aggregate claim amounts per\n     node;\n  2. frequency() returns the matrix of the number of claims per node;\n  3. severity() returns the matrix of individual claim amounts per\n     node;\n  4. weights() returns the matrix of weights corresponding to the\n     data.\n\n  Summaries can be done in various ways; see ?simpf.summaries\n\no Function cm() (for \"_c_redibility _m_odel\") to compute structure\n  parameters estimators for hierarchical credibility models, including\n  the B?hlmann and B?hlmann-Straub models. Usage is similar to lm() of\n  packages 'stats' in that the hierarchical structure is specified by\n  means of a formula object and data is extracted from a matrix or\n  data frame. There are special methods of print(), summary() for\n  objects of class \"cm\". Credibility premiums are computed using a\n  method of predict(); see below.\n\n  For simple B?hlmann and B?hlmann-Straub models, bstraub() remains\n  simpler to use and faster.\n\no Function bstraub() now returns an object of class \"bstraub\" for\n  which there exist print and summary methods. The function no longer\n  computes the credibility premiums; see the \"Deprecated,\n  defunct or no backward compatibility\" below.\n\no Methods of predict() for objects of class \"cm\" and \"bstraub\" created\n  to actually compute the credibility premiums of credibility\n  models. Function predict.cm() can return the premiums for specific\n  levels of a hierarchical portfolio only.\n\nOTHER NEW FEATURES\n\no Function unroll() to unlist a list with a \"dim\" attribute of length\n  0, 1 or 2 (that is, a vector or matrix of vectors) according\n  to a specific dimension. Currently identical to severity.default()\n  by lack of a better usage of the default method of severity().\n\no Three new demos corresponding to the three main fields of actuarial\n  science covered by the package.\n\no French translations of the error and warning messages.\n\no The package now has a name space.\n\nDEPRECATED, DEFUNCT OR NO BACKWARD COMPATIBILITY\n\no Function panjer(), although still present in the package, should no\n  longer be used directly. Recursive calculation of the aggregate\n  claim amount should be done with aggregateDist(). Further, the\n  function is not backward compatible: model specification has\n  changed, discretization of the claim amount distribution should now\n  be done with discretize(), and the function now returns a function\n  to compute the cdf instead of a simple vector of probabilities.\n\no Model specification for simpf() changed completely and is not\n  backward compatible with previous versions of the package. The new\n  scheme allows for much more general models.\n\no Function rearrangepf() is defunct and has been replaced by methods\n  of aggregate(), frequency() and severity().\n\no Function bstraub() no longer computes the credibility premiums. One\n  should now instead use predict() for this.\n\no The data set 'hachemeister' is no longer a list but rather a matrix\n  with a state specification.\n\n\nVersion 0.1-3\n=============\n\nFixed the dependency on R >= 2.1.0 since the package uses function\nisTRUE().\n\n\nVersion 0.1-2\n=============\n\n- First public release.\n- Fixed an important bug in bstraub(): when calculating the range of\n  the weights matrix, NAs were not excluded.\n- Miscellaneous documentation corrections.\n\n\nVersion 0.1-1\n=============\n\n- Initial release.\n- Contains functions bstraub(), simpf(), rearrangepf() and panjer(),\n  and the dataset hachemeister.\n\n[There has been a very short lived version 0.9-1 on CRAN. Please ignore this \nversion altogether.]\n\nCollaboration is welcome. Please contact me directly.\n\n-- \n  Vincent Goulet, Associate Professor\n  ?cole d'actuariat\n  Universit? Laval, Qu?bec \n  Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
-      "body_snippet": "UseRs,\n\nactuar is a package for Actuarial Science. A rather preliminary\nversion (0.1-3) of the package has been available on CRAN since February 2006. \nWe now announce the immediate availability of ve",
-      "thread_id": "thread-c981522537bb",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
-      "id": "msg-e339b3ac90ad",
-      "message_id": "<462DBF96.7090404@biomserv.univ-lyon1.fr>",
-      "from_name": "Simon Penel",
-      "from_email_hash": "930e04aa55d71c91868e2d4bc210a57595241d60b797a333334d2abac85bf4e9",
-      "date": "2007-04-24T10:28:06+02:00",
-      "subject": "[R-pkgs] new version of seqinR",
-      "subject_clean": "new version of seqinR",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear useRs,\n\nThe seqinR package  is a library of utilities to retrieve and analyse \nbiological sequences.\n\nA new version of seqinR, seqinR 1.0-7,  has been released on CRAN.\n\nHere is a summary of changes:\n\no A new *experimental* function extractseqs() to download\n  sequences thru zlib compressed sockets from an ACNUC server is released.\n  Preliminary tests suggest that working with about 100,000 CDS is \npossible with\n  a home ADSL connection. See the manual chapter 3 page 44 at\n  http://pbil.univ-lyon1.fr/software/SeqinR/seqinr_1_0-7.pdf\n  for some system.time() examples.\n\no As pointed by Emmanuel Prestat the URL used in dia.bactgensize() was no\n  more available, this has been fixed in the current version.\n\no As pointed by Guy Perriere, the function oriloc() was no more compatible\n  with glimmer 3.0 outputs. The function has gained a new argument\n  glimmer.version defaulting to 3, but the value 2 is still functional for\n  backward compatibility with old glimmer outputs.\n\no As pointed by Lionel Guy there was no default value for the as.string\n  argument in the getSequence.SeqFastadna(). A default FALSE value is now\n  present for backward compatibility with older code.\n\no New utility vectorized function stresc() to escape LaTeX special \ncharacters\n  present in a string.\n\no New low level function readsmj() available.\n\no A new function readfirstrec() to get the record count of the specified \nACNUC\n  index file is now available.\n\no Function getType() called without arguments will now use the default \nACNUC\n  database to return available subsequence types.\n\no Function read.alignment() now also accepts file in addition to File as\n  argument.\n\no A new function rearranged.oriloc() is available. This method, based on\n  oriloc(), can be used to detect the effect of the replication \nmechanism on\n  DNA base composition asymmetry, in prokaryotic chromosomes.\n\no New function extract.breakpoints(), used to extract breakpoints in \nrearranged\n  nucleotide skews. This function uses the segmented package to define the\n  position of the breakpoints.\n\no New function draw.rearranged.oriloc() available, to plot nucleotide skews\n  on artificially rearranged prokaryotic chromosomes.\n\no New function gbk2g2.euk() available. Similarly to gbk2g2(), this function\n  extracts the coding sequence annotations from a GenBank format file. This\n  function is specifically designed for eukaryotic sequences, i.e. with \nintrons.\n  The output file will contain the coordinates of the exons, along with the\n  name of the CDS to which they belong.\n\no After an e-mail by Marcelo Bertalan on 26 Mar 2007, a bug in oriloc() \nwhen\n  the gbk argument was NULL was found and fixed by Anamaria Necsulea.\n\no Functions translate() and getTrans() have gained a new argument \nNAstring to\n  represent untranslatable amino-acids, defaulting to character \"X\".\n\no There was a typo for the total number of printed bases in the ACNUC \nbooks:\n  474,439 should be 526,506.\n\no Function invers() has been deleted.\n\no Functions translate(), getTrans() and comp() have gained a new argument\n  ambiguous defaulting to FALSE allowing to handle ambiguous bases. If \nTRUE,\n  ambiguous bases are taken into account so that for instance GGN is \ntranslated\n  to Gly in the standard genetic code.\n\no New function amb() to return the list of nucleotide matching a given \nIUPAC\n  nucleotide symbol.\n\no Function count() has gained a new argument alphabet so that oligopeptides\n  counts are now possible. Thanks to Gabriel Valiente for this suggestion.\n  The functions zscore(), rho() and summary.SeqFastadna() have also an \nargument\n  alphabet which is forwarded to count().\n\nBest,\n\nthe seqinR team\n\nhttp://pbil.univ-lyon1.fr/software/SeqinR/seqinr_accueil.php\n\n\n-- \nSimon Penel\nLaboratoire de Biometrie et Biologie Evolutive           \nBat 711  -   CNRS UMR 5558  -    Universite Lyon 1              \n43 bd du 11 novembre 1918 69622 Villeurbanne Cedex       \nTel:   04 72 43 29 04      Fax:  04 72 43 13 88\nhttp://pbil.univ-lyon1.fr/members/penel",
-      "body_snippet": "Dear useRs,\n\nThe seqinR package  is a library of utilities to retrieve and analyse \nbiological sequences.\n\nA new version of seqinR, seqinR 1.0-7,  has been released on CRAN.\n\nHere is a summary of chan",
-      "thread_id": "thread-e339b3ac90ad",
       "thread_depth": 0,
       "month": "2007-04"
     },
@@ -116,38 +68,6 @@
       "month": "2007-04"
     },
     {
-      "id": "msg-a0c1a3029c56",
-      "message_id": "<462F7BBD.5040502@biomserv.univ-lyon1.fr>",
-      "from_name": "Thibaut Jombart",
-      "from_email_hash": "745bd5f1d840815ae5156488a617b95dd0ec8c0e8571cbfdb7b8c4915d7b1fdd",
-      "date": "2007-04-25T18:03:09+02:00",
-      "subject": "[R-pkgs] new package adegenet",
-      "subject_clean": "new package adegenet",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070425/87cdf118/attachment-0001.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070425/87cdf118/attachment-0001.pl>",
-      "thread_id": "thread-a0c1a3029c56",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
-      "id": "msg-26fc9b900615",
-      "message_id": "<p06240800c25674fa4314@[134.214.34.24]>",
-      "from_name": "Jean Thioulouse",
-      "from_email_hash": "a2e55291bd63fe9c6d5100fe97a96b6321b2e575d22dd23bdf7cc71c3f883fba",
-      "date": "2007-04-26T17:34:43+02:00",
-      "subject": "[R-pkgs] New version of ade4TkGUI",
-      "subject_clean": "New version of ade4TkGUI",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Dear UseRs,\n\nVersion 0.2-1 of the ade4TkGUI package (a GUI for the ade4 package)\nis now available on CRAN. This version corrects a few bugs and has\nthe following new features :\n\n- history management : commands executed in the GUI are now stored\nin the R session history\n\n- echo of commands on cosole : all commands (including these ones\nissued in the dudi synthesis window) are now echoed to the console\n\n- an interface for the \"s.arrow\" function has been added\n\n- the interface for the s.label function has been modified to allow\n(or disallow) label frames\n\n- the interface of the \"s.value\" interface has been modified to\nallow simultaneous drawing of all the variables in a dataframe\n\n- a help page has been added for the \"explore\" function\n\n- the presentation of the \"explore\" function had been improved\n\n- the \"ordiCLust\" function has been added, to do cluster analysis\non multivariate analysis row scores, with several dynamic graphic\nhelp tools (a help page is also available). See these screenshots :\nhttp://pbil.univ-lyon1.fr/JTHome/ordiClust1.png\nhttp://pbil.univ-lyon1.fr/JTHome/ordiClust2.png\nhttp://pbil.univ-lyon1.fr/JTHome/ordiClust3.png\n\nThanks you to all the people who sent me remarks, advice, and bug\nreports. Comments are still (and always) welcome.\n\nJean\n-- \nJean Thioulouse - Labo Biometrie et Biologie Evolutive,  UMR CNRS 5558\nUniversite Lyon 1, Batiment Mendel,   43 Boulevard du 11 Novembre 1918\n69622 Villeurbanne Cedex - France    http://pbil.univ-lyon1.fr/JTHome/\nTel : (33) 4 72 43 27 56                      Fax : (33) 4 72 43 13 88\n# msn: thioulouse at hotmail.com  #  jabber: jt69 #  .mac: j.thioulouse #",
-      "body_snippet": "Dear UseRs,\n\nVersion 0.2-1 of the ade4TkGUI package (a GUI for the ade4 package)\nis now available on CRAN. This version corrects a few bugs and has\nthe following new features :\n\n- history management :",
-      "thread_id": "thread-26fc9b900615",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
       "id": "msg-26fc9b900615",
       "message_id": "<p06240800c25674fa4314@[134.214.34.24]>",
       "from_name": "Jean Thioulouse",
@@ -176,38 +96,6 @@
       "body_plain": "Hmisc Version 3.3-2 has been posted to the CRAN repository.\n\nChange Log\n\n3.3-2 4/26/2007\n       Fixed bug with combine<- function not handling NULL values.\n\n3.3-1 3/29/2007\n       Created functions trunc.POSIXt, ceil.POSIXt, round.POSIXt to do\n       those ops on POSIXt objects.  Removed chron versions of these\n       functions.\n\n       Placed Hmisc in a namespace\n\n       Factored out category levels that are identical (and in the same\n       order) for multiple variables.  Changed print and html methods\n       accordingly, and made new default for html output,\n       levelType='list'.\n\n       new argument levelType in html.contents.data.frame\n\n       enhanced html.data.frame to set column headings in h2\n\n       added curtail option (default: FALSE) for type='regression' to\n       set imputed values to the boundaries of real data if outside\n\n       added datadensity argument to plot.aregImpute\n\n       fixed bug with curtail, added datadensity argument to\n       plot.aregImpute\n\n       fixed typo related to bass argument\n\n       fixed bug in latex.describe to translate underscores in variable\n       names when listing those with all NAs\n\n       fixed inmChoice by unclassing first argument when pasting\n\n       handled underscore in dataset name in latex.describe by calling\n       latexTranslate\n\n       Finished addition of listunique and listnchar, handled listing\n       of character values in latex.describe.*\n\n       listunique and listnchar\n\n       For listunique option ignored multiple white spaces, leading and\n       trailing white spaces, and case in tabulating character strings.\n\n       For listunique ignored leading and trailing white space,\n       multiple white spaces, and case when tabulating character\n       strings. Carriage returns without new lines are changed to a\n       single space.\n\n       Modified 'extracolheads' such that when cgroup and n.cgroup are\n       used in a latex.summary.formula.reverse statement the extra N=\n       columns line up correctly.\n\n       added boot.method argument to implement approximate Bayesian\n       bootstrap when group is not used\n\n       'R/inc-dec.s' created 2 new functions 'inc<-' and 'dec<-'. \n'inc<-' increments\n       'x' by value assigned to it.  'dec<-' does the same thing but \ndecrements 'x'.\n\n       'R/responseSummary.s' changed 'responseSummary' 'FUN' argument\n       so that is it run on each row of the response instead of the\n       whole of the response.\n\n       'R/latexObject.s' changed names of constant escapes.\n\n       'R/combine.s' functions to perform element wise combination.\n\n       'R/print.char.list.s'  various code simplifications.\n\n       Corrected extra escapes in latexSN function.  fixes #10.\n\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' function in base.\n\n       Fixed Bug in format.df that would create numbers with many\n       trailing zeros.\n\n       Added arguments 'math.row.names' and 'math.col.names' to\n       indicate that the row or col names should be wrapped in the\n       latex math environment.\n\n       Fixed problem with 'histbackback' function.\n\n-- \nCharles Dupont\tComputer System Analyst\t\tSchool of Medicine\n\t\tDepartment of Biostatistics\tVanderbilt University",
       "body_snippet": "Hmisc Version 3.3-2 has been posted to the CRAN repository.\n\nChange Log\n\n3.3-2 4/26/2007\n       Fixed bug with combine<- function not handling NULL values.\n\n3.3-1 3/29/2007\n       Created functions tr",
       "thread_id": "thread-1a68b9222fdb",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
-      "id": "msg-1a68b9222fdb",
-      "message_id": "<463206A6.7090401@vanderbilt.edu>",
-      "from_name": "Charles Dupont",
-      "from_email_hash": "b9f7586f19ad4b41fa9e4c48947d15b4a153590e98f87c83dfe1a3a9691b5c0d",
-      "date": "2007-04-27T09:20:22-05:00",
-      "subject": "[R-pkgs] Hmisc Version 3.3-2 is now in CRAN repository",
-      "subject_clean": "Hmisc Version 3.3-2 is now in CRAN repository",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "Hmisc Version 3.3-2 has been posted to the CRAN repository.\n\nChange Log\n\n3.3-2 4/26/2007\n       Fixed bug with combine<- function not handling NULL values.\n\n3.3-1 3/29/2007\n       Created functions trunc.POSIXt, ceil.POSIXt, round.POSIXt to do\n       those ops on POSIXt objects.  Removed chron versions of these\n       functions.\n\n       Placed Hmisc in a namespace\n\n       Factored out category levels that are identical (and in the same\n       order) for multiple variables.  Changed print and html methods\n       accordingly, and made new default for html output,\n       levelType='list'.\n\n       new argument levelType in html.contents.data.frame\n\n       enhanced html.data.frame to set column headings in h2\n\n       added curtail option (default: FALSE) for type='regression' to\n       set imputed values to the boundaries of real data if outside\n\n       added datadensity argument to plot.aregImpute\n\n       fixed bug with curtail, added datadensity argument to\n       plot.aregImpute\n\n       fixed typo related to bass argument\n\n       fixed bug in latex.describe to translate underscores in variable\n       names when listing those with all NAs\n\n       fixed inmChoice by unclassing first argument when pasting\n\n       handled underscore in dataset name in latex.describe by calling\n       latexTranslate\n\n       Finished addition of listunique and listnchar, handled listing\n       of character values in latex.describe.*\n\n       listunique and listnchar\n\n       For listunique option ignored multiple white spaces, leading and\n       trailing white spaces, and case in tabulating character strings.\n\n       For listunique ignored leading and trailing white space,\n       multiple white spaces, and case when tabulating character\n       strings. Carriage returns without new lines are changed to a\n       single space.\n\n       Modified 'extracolheads' such that when cgroup and n.cgroup are\n       used in a latex.summary.formula.reverse statement the extra N=\n       columns line up correctly.\n\n       added boot.method argument to implement approximate Bayesian\n       bootstrap when group is not used\n\n       'R/inc-dec.s' created 2 new functions 'inc<-' and 'dec<-'. \n'inc<-' increments\n       'x' by value assigned to it.  'dec<-' does the same thing but \ndecrements 'x'.\n\n       'R/responseSummary.s' changed 'responseSummary' 'FUN' argument\n       so that is it run on each row of the response instead of the\n       whole of the response.\n\n       'R/latexObject.s' changed names of constant escapes.\n\n       'R/combine.s' functions to perform element wise combination.\n\n       'R/print.char.list.s'  various code simplifications.\n\n       Corrected extra escapes in latexSN function.  fixes #10.\n\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' function in base.\n\n       Fixed Bug in format.df that would create numbers with many\n       trailing zeros.\n\n       Added arguments 'math.row.names' and 'math.col.names' to\n       indicate that the row or col names should be wrapped in the\n       latex math environment.\n\n       Fixed problem with 'histbackback' function.\n\n-- \nCharles Dupont\tComputer System Analyst\t\tSchool of Medicine\n\t\tDepartment of Biostatistics\tVanderbilt University",
-      "body_snippet": "Hmisc Version 3.3-2 has been posted to the CRAN repository.\n\nChange Log\n\n3.3-2 4/26/2007\n       Fixed bug with combine<- function not handling NULL values.\n\n3.3-1 3/29/2007\n       Created functions tr",
-      "thread_id": "thread-1a68b9222fdb",
-      "thread_depth": 0,
-      "month": "2007-04"
-    },
-    {
-      "id": "msg-9447148f33e8",
-      "message_id": "<71257D09F114DA4A8E134DEAC70F25D308320A27@groamrexm03.amer.pfizer.com>",
-      "from_name": "Kuhn, Max",
-      "from_email_hash": "4bbb93bd9ee327e01e44e35d06ee86a8cc9dc4e7616bda8275b7c4b1e26ae879",
-      "date": "2007-04-27T10:31:01-04:00",
-      "subject": "[R-pkgs] New packages: contrast and desirability",
-      "subject_clean": "New packages: contrast and desirability",
-      "in_reply_to": null,
-      "references": [],
-      "body_plain": "The contrast and desirability packages are available for all platforms\nat cran.r-project.org (and coming soon to a mirror near you).\n\nThe contrast package extends Frank Harrell's contrast.Design function\nfor one degree of freedom contrasts of model parameters to other types\nof models, such as lm, glm, lme, gls and geese models. Fold-changes are\nalso calculated for all contrasts. There is a package vignette that\nshows examples for a basic two-way layout and a design with repeated\nmeasures.\n\nThe desirability package contains S3 classes for multivariate\noptimization using the desirability function approach of Harrington\n(1965) using the functional forms described by Derringer and Suich\n(1980). There are functions for maximization, minimization, hitting a\ntarget, box constraints and a function for creating arbitrarily shaped\ndesirability equations. There is also a package vignette that shows an\nexample of a multi-response surface experiment. \n\nPlease send me emails for suggestions and bug fixes at max.kuhn at\npfizer.com.\n\nMax\n\n----------------------------------------------------------------------\nLEGAL NOTICE\\ Unless expressly stated otherwise, this messag...{{dropped}}",
-      "body_snippet": "The contrast and desirability packages are available for all platforms\nat cran.r-project.org (and coming soon to a mirror near you).\n\nThe contrast package extends Frank Harrell's contrast.Design funct",
-      "thread_id": "thread-9447148f33e8",
       "thread_depth": 0,
       "month": "2007-04"
     },
@@ -241,17 +129,6 @@
       "root_message_id": "msg-0dc392610401"
     },
     {
-      "id": "thread-0dc392610401",
-      "subject": "Update of X2R sent to CRAN, 16 Apr 2007",
-      "message_count": 1,
-      "participants": [
-        "Michael H. Prager"
-      ],
-      "started": "2007-04-16T15:32:26-04:00",
-      "last_reply": "2007-04-16T15:32:26-04:00",
-      "root_message_id": "msg-0dc392610401"
-    },
-    {
       "id": "thread-c981522537bb",
       "subject": "New version of actuar",
       "message_count": 1,
@@ -261,28 +138,6 @@
       "started": "2007-04-23T10:20:59-05:00",
       "last_reply": "2007-04-23T10:20:59-05:00",
       "root_message_id": "msg-c981522537bb"
-    },
-    {
-      "id": "thread-c981522537bb",
-      "subject": "New version of actuar",
-      "message_count": 1,
-      "participants": [
-        "Vincent Goulet"
-      ],
-      "started": "2007-04-23T10:20:59-05:00",
-      "last_reply": "2007-04-23T10:20:59-05:00",
-      "root_message_id": "msg-c981522537bb"
-    },
-    {
-      "id": "thread-e339b3ac90ad",
-      "subject": "new version of seqinR",
-      "message_count": 1,
-      "participants": [
-        "Simon Penel"
-      ],
-      "started": "2007-04-24T10:28:06+02:00",
-      "last_reply": "2007-04-24T10:28:06+02:00",
-      "root_message_id": "msg-e339b3ac90ad"
     },
     {
       "id": "thread-e339b3ac90ad",
@@ -307,28 +162,6 @@
       "root_message_id": "msg-a0c1a3029c56"
     },
     {
-      "id": "thread-a0c1a3029c56",
-      "subject": "new package adegenet",
-      "message_count": 1,
-      "participants": [
-        "Thibaut Jombart"
-      ],
-      "started": "2007-04-25T18:03:09+02:00",
-      "last_reply": "2007-04-25T18:03:09+02:00",
-      "root_message_id": "msg-a0c1a3029c56"
-    },
-    {
-      "id": "thread-26fc9b900615",
-      "subject": "New version of ade4TkGUI",
-      "message_count": 1,
-      "participants": [
-        "Jean Thioulouse"
-      ],
-      "started": "2007-04-26T17:34:43+02:00",
-      "last_reply": "2007-04-26T17:34:43+02:00",
-      "root_message_id": "msg-26fc9b900615"
-    },
-    {
       "id": "thread-26fc9b900615",
       "subject": "New version of ade4TkGUI",
       "message_count": 1,
@@ -349,28 +182,6 @@
       "started": "2007-04-27T09:20:22-05:00",
       "last_reply": "2007-04-27T09:20:22-05:00",
       "root_message_id": "msg-1a68b9222fdb"
-    },
-    {
-      "id": "thread-1a68b9222fdb",
-      "subject": "Hmisc Version 3.3-2 is now in CRAN repository",
-      "message_count": 1,
-      "participants": [
-        "Charles Dupont"
-      ],
-      "started": "2007-04-27T09:20:22-05:00",
-      "last_reply": "2007-04-27T09:20:22-05:00",
-      "root_message_id": "msg-1a68b9222fdb"
-    },
-    {
-      "id": "thread-9447148f33e8",
-      "subject": "New packages: contrast and desirability",
-      "message_count": 1,
-      "participants": [
-        "Kuhn, Max"
-      ],
-      "started": "2007-04-27T10:31:01-04:00",
-      "last_reply": "2007-04-27T10:31:01-04:00",
-      "root_message_id": "msg-9447148f33e8"
     },
     {
       "id": "thread-9447148f33e8",
