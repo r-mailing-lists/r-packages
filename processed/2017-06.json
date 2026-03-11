@@ -8,7 +8,7 @@
       "message_id": "<CAAiuAp=BEoGcjEE=pngo4Z7hrK-+2ZVLaXaQn1KJ_JjxZ=TN+A@mail.gmail.com>",
       "from_name": "Shaun Wilkinson",
       "from_email_hash": "bd81cf48d16be285db08e10961cdf2b8d7bc86b2a037ebd2d12373a26764ea32",
-      "date": "2017-06-19T15:20:04+09:00",
+      "date": "2017-06-19T06:20:04Z",
       "subject": "[R-pkgs] New package: phylogram",
       "subject_clean": "New package: phylogram",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<44efc443-a00e-41fc-b213-94ce411cb66a@inra.fr>",
       "from_name": "Yann Desjeux",
       "from_email_hash": "79b815241cb26507157a083aa2c883cee0286e59ca8e6e8b2e2b14127ae6d2c2",
-      "date": "2017-06-21T17:26:29+02:00",
+      "date": "2017-06-21T15:26:29Z",
       "subject": "[R-pkgs] New R package on CRAN: sfadv (v 1.0.1)",
       "subject_clean": "New R package on CRAN: sfadv (v 1.0.1)",
       "in_reply_to": "<02810bae-1a85-a4be-eece-d3a01c9f15c2@inra.fr>",
@@ -58,7 +58,7 @@
       "message_id": "<CAEPY8Cb_fcBu3eHD0DqctKag96KOs-_RPzGtaiSofv2m41zorQ@mail.gmail.com>",
       "from_name": "Peter Straka",
       "from_email_hash": "3226c3f05bb2477c43e35dc9583acb1943d4acc533176dd873beaab295a92d62",
-      "date": "2017-06-26T19:02:40+10:00",
+      "date": "2017-06-26T09:02:40Z",
       "subject": "[R-pkgs] New R package MittagLeffleR",
       "subject_clean": "New R package MittagLeffleR",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<CAOfWXX7m5-1WPXUzLaMOw8vPMxRfh7MKKm93dysSxNpc8uU30w@mail.gmail.com>",
       "from_name": "William Brannon",
       "from_email_hash": "d164a3a2ab6915c18d96938e54b7b061d8ec1f6e46e07b8bb0931c6a7070bfda",
-      "date": "2017-06-26T15:18:54-04:00",
+      "date": "2017-06-26T19:18:54Z",
       "subject": "[R-pkgs] Announcing sqlscore",
       "subject_clean": "Announcing sqlscore",
       "in_reply_to": null,
@@ -94,8 +94,8 @@
       "participants": [
         "Shaun Wilkinson"
       ],
-      "started": "2017-06-19T15:20:04+09:00",
-      "last_reply": "2017-06-19T15:20:04+09:00",
+      "started": "2017-06-19T06:20:04Z",
+      "last_reply": "2017-06-19T06:20:04Z",
       "root_message_id": "msg-e584d9a9ddee"
     },
     {
@@ -105,8 +105,8 @@
       "participants": [
         "Marco Nijmeijer"
       ],
-      "started": "2017-06-20T13:21:21+00:00",
-      "last_reply": "2017-06-20T13:21:21+00:00",
+      "started": "2017-06-20T13:21:21Z",
+      "last_reply": "2017-06-20T13:21:21Z",
       "root_message_id": "msg-0241f65dd402"
     },
     {
@@ -116,20 +116,9 @@
       "participants": [
         "Yann Desjeux"
       ],
-      "started": "2017-06-21T17:26:29+02:00",
-      "last_reply": "2017-06-21T17:26:29+02:00",
+      "started": "2017-06-21T15:26:29Z",
+      "last_reply": "2017-06-21T15:26:29Z",
       "root_message_id": "msg-763ae4dba520"
-    },
-    {
-      "id": "thread-b751c0257947",
-      "subject": "Announcing sqlscore",
-      "message_count": 1,
-      "participants": [
-        "William Brannon"
-      ],
-      "started": "2017-06-26T15:18:54-04:00",
-      "last_reply": "2017-06-26T15:18:54-04:00",
-      "root_message_id": "msg-b751c0257947"
     },
     {
       "id": "thread-4f73360c9812",
@@ -138,9 +127,20 @@
       "participants": [
         "Peter Straka"
       ],
-      "started": "2017-06-26T19:02:40+10:00",
-      "last_reply": "2017-06-26T19:02:40+10:00",
+      "started": "2017-06-26T09:02:40Z",
+      "last_reply": "2017-06-26T09:02:40Z",
       "root_message_id": "msg-4f73360c9812"
+    },
+    {
+      "id": "thread-b751c0257947",
+      "subject": "Announcing sqlscore",
+      "message_count": 1,
+      "participants": [
+        "William Brannon"
+      ],
+      "started": "2017-06-26T19:18:54Z",
+      "last_reply": "2017-06-26T19:18:54Z",
+      "root_message_id": "msg-b751c0257947"
     }
   ]
 }

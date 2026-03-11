@@ -56,7 +56,7 @@
       "message_id": "<002a01c52965$846b7e00$0540210a@www.domain>",
       "from_name": "Dimitris Rizopoulos",
       "from_email_hash": "02d3646a289a960533732d931746c3db82bff2d5017988028ea5a2fc836d3d26",
-      "date": "2005-03-15T14:47:23+01:00",
+      "date": "2005-03-15T13:47:23Z",
       "subject": "[R-pkgs] New package for latent trait models",
       "subject_clean": "New package for latent trait models",
       "in_reply_to": null,
@@ -72,7 +72,7 @@
       "message_id": "<424C6F94.6060706@uni-bayreuth.de>",
       "from_name": "Peter Ruckdeschel",
       "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
-      "date": "2005-03-31T23:45:56+02:00",
+      "date": "2005-03-31T21:45:56Z",
       "subject": "[R-pkgs] version 1.5 of package \"distr\" available",
       "subject_clean": "version 1.5 of package \"distr\" available",
       "in_reply_to": null,
@@ -88,7 +88,7 @@
       "message_id": "<20050331221639.5642.qmail@web52703.mail.yahoo.com>",
       "from_name": "John Hendrickx",
       "from_email_hash": "367c0578199679bf553426521525a7ba5bb4d491ee1c21697c9b6edbfdfb5dc4",
-      "date": "2005-03-31T14:16:39-08:00",
+      "date": "2005-03-31T22:16:39Z",
       "subject": "[R-pkgs] perturb package for evaluating collinearity",
       "subject_clean": "perturb package for evaluating collinearity",
       "in_reply_to": null,
@@ -108,8 +108,8 @@
       "participants": [
         "Robin Hankin"
       ],
-      "started": "2005-03-03T09:31:16+00:00",
-      "last_reply": "2005-03-03T09:31:16+00:00",
+      "started": "2005-03-03T09:31:16Z",
+      "last_reply": "2005-03-03T09:31:16Z",
       "root_message_id": "msg-7cae3ce0de55"
     },
     {
@@ -119,8 +119,8 @@
       "participants": [
         "Chris Jackson"
       ],
-      "started": "2005-03-09T10:48:48+00:00",
-      "last_reply": "2005-03-09T10:48:48+00:00",
+      "started": "2005-03-09T10:48:48Z",
+      "last_reply": "2005-03-09T10:48:48Z",
       "root_message_id": "msg-59de5181fe4d"
     },
     {
@@ -130,8 +130,8 @@
       "participants": [
         "Simon Wood"
       ],
-      "started": "2005-03-11T14:01:06+00:00",
-      "last_reply": "2005-03-11T14:01:06+00:00",
+      "started": "2005-03-11T14:01:06Z",
+      "last_reply": "2005-03-11T14:01:06Z",
       "root_message_id": "msg-f146558d7c73"
     },
     {
@@ -141,20 +141,9 @@
       "participants": [
         "Dimitris Rizopoulos"
       ],
-      "started": "2005-03-15T14:47:23+01:00",
-      "last_reply": "2005-03-15T14:47:23+01:00",
+      "started": "2005-03-15T13:47:23Z",
+      "last_reply": "2005-03-15T13:47:23Z",
       "root_message_id": "msg-db6dad0c645c"
-    },
-    {
-      "id": "thread-d85eb16b109a",
-      "subject": "perturb package for evaluating collinearity",
-      "message_count": 1,
-      "participants": [
-        "John Hendrickx"
-      ],
-      "started": "2005-03-31T14:16:39-08:00",
-      "last_reply": "2005-03-31T14:16:39-08:00",
-      "root_message_id": "msg-d85eb16b109a"
     },
     {
       "id": "thread-bfa2a68f6a66",
@@ -163,9 +152,20 @@
       "participants": [
         "Peter Ruckdeschel"
       ],
-      "started": "2005-03-31T23:45:56+02:00",
-      "last_reply": "2005-03-31T23:45:56+02:00",
+      "started": "2005-03-31T21:45:56Z",
+      "last_reply": "2005-03-31T21:45:56Z",
       "root_message_id": "msg-bfa2a68f6a66"
+    },
+    {
+      "id": "thread-d85eb16b109a",
+      "subject": "perturb package for evaluating collinearity",
+      "message_count": 1,
+      "participants": [
+        "John Hendrickx"
+      ],
+      "started": "2005-03-31T22:16:39Z",
+      "last_reply": "2005-03-31T22:16:39Z",
+      "root_message_id": "msg-d85eb16b109a"
     }
   ]
 }

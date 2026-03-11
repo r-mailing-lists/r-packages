@@ -8,7 +8,7 @@
       "message_id": "<AANLkTinqjw_B7TkMJ++bQRKJW+z8ofsFKgPUQHk5fsOY@mail.gmail.com>",
       "from_name": "Michael Lawrence",
       "from_email_hash": "bfe89466f88aa4e170d0a66a4e53638a9e527ae59f6b2639e8267ad3421950bf",
-      "date": "2010-11-05T15:23:38-07:00",
+      "date": "2010-11-05T22:23:38Z",
       "subject": "[R-pkgs] RGtk2 2.20.x",
       "subject_clean": "RGtk2 2.20.x",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<AANLkTimayH-yB4qD+62yNELeMarZvA+54ULHsi=MF_nX@mail.gmail.com>",
       "from_name": "Charlotte Maia",
       "from_email_hash": "3d0795a7b2517575cc7e66f2a4d170db38bd5db6c3e72af4e60d2ab5aee4244b",
-      "date": "2010-11-17T12:56:26+13:00",
+      "date": "2010-11-16T23:56:26Z",
       "subject": "[R-pkgs] The *makesweave* Package for Using Make with Sweave Efficiently",
       "subject_clean": "The *makesweave* Package for Using Make with Sweave Efficiently",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<AANLkTikPq_jj2MG5y_mhf1F9iN_aqtY_DnA8WDwbZK4_@mail.gmail.com>",
       "from_name": "Garrett Grolemund",
       "from_email_hash": "1f06ee68251392cd88a1b603f6ff387738cb0830211a0f37fb794a80993f1f09",
-      "date": "2010-11-17T09:31:08-06:00",
+      "date": "2010-11-17T15:31:08Z",
       "subject": "[R-pkgs] lubridate v2.2 available on cran",
       "subject_clean": "lubridate v2.2 available on cran",
       "in_reply_to": null,
@@ -60,20 +60,9 @@
       "participants": [
         "Michael Lawrence"
       ],
-      "started": "2010-11-05T15:23:38-07:00",
-      "last_reply": "2010-11-05T15:23:38-07:00",
+      "started": "2010-11-05T22:23:38Z",
+      "last_reply": "2010-11-05T22:23:38Z",
       "root_message_id": "msg-bce51d79e35c"
-    },
-    {
-      "id": "thread-9a63b3ab996e",
-      "subject": "lubridate v2.2 available on cran",
-      "message_count": 1,
-      "participants": [
-        "Garrett Grolemund"
-      ],
-      "started": "2010-11-17T09:31:08-06:00",
-      "last_reply": "2010-11-17T09:31:08-06:00",
-      "root_message_id": "msg-9a63b3ab996e"
     },
     {
       "id": "thread-05b71c95d619",
@@ -82,9 +71,20 @@
       "participants": [
         "Charlotte Maia"
       ],
-      "started": "2010-11-17T12:56:26+13:00",
-      "last_reply": "2010-11-17T12:56:26+13:00",
+      "started": "2010-11-16T23:56:26Z",
+      "last_reply": "2010-11-16T23:56:26Z",
       "root_message_id": "msg-05b71c95d619"
+    },
+    {
+      "id": "thread-9a63b3ab996e",
+      "subject": "lubridate v2.2 available on cran",
+      "message_count": 1,
+      "participants": [
+        "Garrett Grolemund"
+      ],
+      "started": "2010-11-17T15:31:08Z",
+      "last_reply": "2010-11-17T15:31:08Z",
+      "root_message_id": "msg-9a63b3ab996e"
     }
   ]
 }

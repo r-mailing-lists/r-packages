@@ -24,7 +24,7 @@
       "message_id": "<515D97C4-DE1E-4283-9082-ECA9486E3B03@comcast.net>",
       "from_name": "Bert Gunter",
       "from_email_hash": "55999f6db81a30285e8663f25ef6e0e06fc3f1766ef61fa3463f1a1ee9e82820",
-      "date": "2016-02-01T09:48:18-08:00",
+      "date": "2016-02-01T17:48:18Z",
       "subject": "[R-pkgs] New Package: stripless (V. 1.0)",
       "subject_clean": "New Package: stripless (V. 1.0)",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<1556909406.16276237.1455442524227.JavaMail.zimbra@meteo.be>",
       "from_name": "Alex Deckmyn",
       "from_email_hash": "b3d1e6f006faa315c69ed0744f4118e0020743d7620b8a4dd1c1cf53e5c21bce",
-      "date": "2016-02-14T10:35:24+01:00",
+      "date": "2016-02-14T09:35:24Z",
       "subject": "[R-pkgs] announcing maps version 3.1.0",
       "subject_clean": "announcing maps version 3.1.0",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<CAPJUxXURpuWcsK0qpkXxtFuRM00k_K4tavZ3fAenZ8HZEOupdg@mail.gmail.com>",
       "from_name": "George Vega Yon",
       "from_email_hash": "edae9fce24743142989114d1e7ee4aea5716adfbeaaedf579206b4e101ca484c",
-      "date": "2016-02-18T09:50:36-08:00",
+      "date": "2016-02-18T17:50:36Z",
       "subject": "[R-pkgs] New package 'netdiffuseR: Network Analysis for Diffusion of Innovations'",
       "subject_clean": "New package 'netdiffuseR: Network Analysis for Diffusion of Innovations'",
       "in_reply_to": null,
@@ -86,26 +86,26 @@
   ],
   "threads": [
     {
-      "id": "thread-fb00706d70a8",
-      "subject": "New Package: stripless (V. 1.0)",
-      "message_count": 1,
-      "participants": [
-        "Bert Gunter"
-      ],
-      "started": "2016-02-01T09:48:18-08:00",
-      "last_reply": "2016-02-01T09:48:18-08:00",
-      "root_message_id": "msg-fb00706d70a8"
-    },
-    {
       "id": "thread-89b7034fa900",
       "subject": "Update on bpcp R package: Confidence intervals to use with Kaplan-Meier Survival Estimator",
       "message_count": 1,
       "participants": [
         "Fay, Michael (NIH/NIAID) [E]"
       ],
-      "started": "2016-02-01T14:01:27+00:00",
-      "last_reply": "2016-02-01T14:01:27+00:00",
+      "started": "2016-02-01T14:01:27Z",
+      "last_reply": "2016-02-01T14:01:27Z",
       "root_message_id": "msg-89b7034fa900"
+    },
+    {
+      "id": "thread-fb00706d70a8",
+      "subject": "New Package: stripless (V. 1.0)",
+      "message_count": 1,
+      "participants": [
+        "Bert Gunter"
+      ],
+      "started": "2016-02-01T17:48:18Z",
+      "last_reply": "2016-02-01T17:48:18Z",
+      "root_message_id": "msg-fb00706d70a8"
     },
     {
       "id": "thread-20431df0c67d",
@@ -114,8 +114,8 @@
       "participants": [
         "Alex Deckmyn"
       ],
-      "started": "2016-02-14T10:35:24+01:00",
-      "last_reply": "2016-02-14T10:35:24+01:00",
+      "started": "2016-02-14T09:35:24Z",
+      "last_reply": "2016-02-14T09:35:24Z",
       "root_message_id": "msg-20431df0c67d"
     },
     {
@@ -125,8 +125,8 @@
       "participants": [
         "George Vega Yon"
       ],
-      "started": "2016-02-18T09:50:36-08:00",
-      "last_reply": "2016-02-18T09:50:36-08:00",
+      "started": "2016-02-18T17:50:36Z",
+      "last_reply": "2016-02-18T17:50:36Z",
       "root_message_id": "msg-6decc5abde9f"
     },
     {
@@ -136,8 +136,8 @@
       "participants": [
         "Rick Wargo"
       ],
-      "started": "2016-02-22T18:03:18+00:00",
-      "last_reply": "2016-02-22T18:03:18+00:00",
+      "started": "2016-02-22T18:03:18Z",
+      "last_reply": "2016-02-22T18:03:18Z",
       "root_message_id": "msg-460266e93443"
     }
   ]

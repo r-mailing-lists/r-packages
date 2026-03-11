@@ -8,7 +8,7 @@
       "message_id": "<53E0B671.8000801@p-roocks.de>",
       "from_name": "Patrick Roocks",
       "from_email_hash": "6b660630464dc5e34a570e236dfe2043f86241db8afc6e73187a3005d40c6301",
-      "date": "2014-08-05T12:48:17+02:00",
+      "date": "2014-08-05T10:48:17Z",
       "subject": "[R-pkgs] rPref - new package for preferences and Skylines",
       "subject_clean": "rPref - new package for preferences and Skylines",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<004701cfb0a9$2f051ea0$8d0f5be0$@comcast.net>",
       "from_name": "Kem Phillips",
       "from_email_hash": "aa21ea0a3462938229c22189d2bad5675e60ecf0118e08a80b0320686435d049",
-      "date": "2014-08-05T08:31:29-04:00",
+      "date": "2014-08-05T12:31:29Z",
       "subject": "[R-pkgs] New version of the symmoments package",
       "subject_clean": "New version of the symmoments package",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<53FF5399.6060209@gmail.com>",
       "from_name": "Emmanuel Blondel",
       "from_email_hash": "eaaf2bdcbbb04c4bd02dba805d0187b0e9df3b55e277d977b19556bdc8ac488f",
-      "date": "2014-08-28T18:06:49+02:00",
+      "date": "2014-08-28T16:06:49Z",
       "subject": "[R-pkgs] rsdmx - a package to read SDMX data and metadata",
       "subject_clean": "rsdmx - a package to read SDMX data and metadata",
       "in_reply_to": null,
@@ -54,26 +54,26 @@
   ],
   "threads": [
     {
-      "id": "thread-bce66a9b63af",
-      "subject": "New version of the symmoments package",
-      "message_count": 1,
-      "participants": [
-        "Kem Phillips"
-      ],
-      "started": "2014-08-05T08:31:29-04:00",
-      "last_reply": "2014-08-05T08:31:29-04:00",
-      "root_message_id": "msg-bce66a9b63af"
-    },
-    {
       "id": "thread-d5c5f21874f8",
       "subject": "rPref - new package for preferences and Skylines",
       "message_count": 1,
       "participants": [
         "Patrick Roocks"
       ],
-      "started": "2014-08-05T12:48:17+02:00",
-      "last_reply": "2014-08-05T12:48:17+02:00",
+      "started": "2014-08-05T10:48:17Z",
+      "last_reply": "2014-08-05T10:48:17Z",
       "root_message_id": "msg-d5c5f21874f8"
+    },
+    {
+      "id": "thread-bce66a9b63af",
+      "subject": "New version of the symmoments package",
+      "message_count": 1,
+      "participants": [
+        "Kem Phillips"
+      ],
+      "started": "2014-08-05T12:31:29Z",
+      "last_reply": "2014-08-05T12:31:29Z",
+      "root_message_id": "msg-bce66a9b63af"
     },
     {
       "id": "thread-c8efd767de8d",
@@ -82,8 +82,8 @@
       "participants": [
         "Emmanuel Blondel"
       ],
-      "started": "2014-08-28T18:06:49+02:00",
-      "last_reply": "2014-08-28T18:06:49+02:00",
+      "started": "2014-08-28T16:06:49Z",
+      "last_reply": "2014-08-28T16:06:49Z",
       "root_message_id": "msg-c8efd767de8d"
     }
   ]

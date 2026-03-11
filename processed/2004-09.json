@@ -8,7 +8,7 @@
       "message_id": "<Pine.LNX.4.44.0409151632150.17035-100000@gannet.stats>",
       "from_name": "Prof Brian Ripley",
       "from_email_hash": "375ec446f7a1157a4f0268b6dc682d6c2a5b186f57aa61253477aa48159d2329",
-      "date": "2004-09-15T16:38:17+01:00",
+      "date": "2004-09-15T15:38:17Z",
       "subject": "[R-pkgs] RODBC 1.1-1",
       "subject_clean": "RODBC 1.1-1",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<85wtyv5ptp.fsf_-_@servant.blindglobe.net>",
       "from_name": "A.J. Rossini",
       "from_email_hash": "0c039ab537611416fe37b12e9ca69767bfd2c5030d7e2f2a7420f19217e05d1b",
-      "date": "2004-09-15T11:50:42-07:00",
+      "date": "2004-09-15T18:50:42Z",
       "subject": "[R-pkgs] Announcing snowFT 0.1",
       "subject_clean": "Announcing snowFT 0.1",
       "in_reply_to": "<Pine.LNX.4.53.0409150923480.7383@sdhcp24.stat.washington.edu> (Hana Sevcikova's message of \"Wed, 15 Sep 2004 09:59:54 -0700 (PDT)\")",
@@ -43,7 +43,7 @@
       "message_id": "<414B35AC.1030201@epri-peac.com>",
       "from_name": "Short, Tom",
       "from_email_hash": "0bab54eed724573acd8ef682cf726d6f1e94addc99416a2646cd8199308fe7bb",
-      "date": "2004-09-17T15:06:21-04:00",
+      "date": "2004-09-17T19:06:21Z",
       "subject": "[R-pkgs]  Announcing Rpad, a web-based workbook-style interface for R",
       "subject_clean": "Announcing Rpad, a web-based workbook-style interface for R",
       "in_reply_to": null,
@@ -59,7 +59,7 @@
       "message_id": "<5.1.0.14.0.20040923151115.02a77108@biomserv.univ-lyon1.fr>",
       "from_name": "Clément Calenge",
       "from_email_hash": "cad863fc3cc348c12d4485cc17b2c939d8f345c7b79293d7898ac714415857aa",
-      "date": "2004-09-24T17:03:09+02:00",
+      "date": "2004-09-24T15:03:09Z",
       "subject": "[R-pkgs] New package: adehabitat",
       "subject_clean": "New package: adehabitat",
       "in_reply_to": null,
@@ -75,7 +75,7 @@
       "message_id": "<415808A8.9090006@env.ethz.ch>",
       "from_name": "Schmidli Juerg",
       "from_email_hash": "1a8854476cd06ec7b1e669b68771f0341f947a835f88e954caf0efdc8f693079",
-      "date": "2004-09-27T14:33:44+02:00",
+      "date": "2004-09-27T12:33:44Z",
       "subject": "[R-pkgs] New package: ncvar",
       "subject_clean": "New package: ncvar",
       "in_reply_to": null,
@@ -91,7 +91,7 @@
       "message_id": "<41586016.7060705@uni-bayreuth.de>",
       "from_name": "Peter Ruckdeschel",
       "from_email_hash": "948e6e3b65a4143bd9e281b4665115c4c2642587275fb7c730698f05f9b78dbf",
-      "date": "2004-09-27T20:46:46+02:00",
+      "date": "2004-09-27T18:46:46Z",
       "subject": "[R-pkgs] new version of package \"distr\" available",
       "subject_clean": "new version of package \"distr\" available",
       "in_reply_to": null,
@@ -105,26 +105,26 @@
   ],
   "threads": [
     {
-      "id": "thread-a28070e45e5c",
-      "subject": "Announcing snowFT 0.1",
-      "message_count": 1,
-      "participants": [
-        "A.J. Rossini"
-      ],
-      "started": "2004-09-15T11:50:42-07:00",
-      "last_reply": "2004-09-15T11:50:42-07:00",
-      "root_message_id": "msg-a28070e45e5c"
-    },
-    {
       "id": "thread-f0c7fa80178a",
       "subject": "RODBC 1.1-1",
       "message_count": 1,
       "participants": [
         "Prof Brian Ripley"
       ],
-      "started": "2004-09-15T16:38:17+01:00",
-      "last_reply": "2004-09-15T16:38:17+01:00",
+      "started": "2004-09-15T15:38:17Z",
+      "last_reply": "2004-09-15T15:38:17Z",
       "root_message_id": "msg-f0c7fa80178a"
+    },
+    {
+      "id": "thread-a28070e45e5c",
+      "subject": "Announcing snowFT 0.1",
+      "message_count": 1,
+      "participants": [
+        "A.J. Rossini"
+      ],
+      "started": "2004-09-15T18:50:42Z",
+      "last_reply": "2004-09-15T18:50:42Z",
+      "root_message_id": "msg-a28070e45e5c"
     },
     {
       "id": "thread-aa4846359501",
@@ -133,8 +133,8 @@
       "participants": [
         "Short, Tom"
       ],
-      "started": "2004-09-17T15:06:21-04:00",
-      "last_reply": "2004-09-17T15:06:21-04:00",
+      "started": "2004-09-17T19:06:21Z",
+      "last_reply": "2004-09-17T19:06:21Z",
       "root_message_id": "msg-aa4846359501"
     },
     {
@@ -144,8 +144,8 @@
       "participants": [
         "Clément Calenge"
       ],
-      "started": "2004-09-24T17:03:09+02:00",
-      "last_reply": "2004-09-24T17:03:09+02:00",
+      "started": "2004-09-24T15:03:09Z",
+      "last_reply": "2004-09-24T15:03:09Z",
       "root_message_id": "msg-67a268b20fc8"
     },
     {
@@ -155,8 +155,8 @@
       "participants": [
         "Schmidli Juerg"
       ],
-      "started": "2004-09-27T14:33:44+02:00",
-      "last_reply": "2004-09-27T14:33:44+02:00",
+      "started": "2004-09-27T12:33:44Z",
+      "last_reply": "2004-09-27T12:33:44Z",
       "root_message_id": "msg-eeea28da5c0c"
     },
     {
@@ -166,8 +166,8 @@
       "participants": [
         "Peter Ruckdeschel"
       ],
-      "started": "2004-09-27T20:46:46+02:00",
-      "last_reply": "2004-09-27T20:46:46+02:00",
+      "started": "2004-09-27T18:46:46Z",
+      "last_reply": "2004-09-27T18:46:46Z",
       "root_message_id": "msg-63b4acf67715"
     }
   ]

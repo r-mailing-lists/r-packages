@@ -8,7 +8,7 @@
       "message_id": "<d5cccd19fb48bb26a5502ca0429bdfff@ulrik.uio.no>",
       "from_name": "Magnus Dehli Vigeland",
       "from_email_hash": "40b2b3bc6336992360200fd7fe16f71e203cedd3490f18bf79c719ac92d24dc4",
-      "date": "2012-02-03T12:24:53+01:00",
+      "date": "2012-02-03T11:24:53Z",
       "subject": "[R-pkgs] Major update: paramlink version 0.6-1",
       "subject_clean": "Major update: paramlink version 0.6-1",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAHHjBM6xXeJ2WJiGjPZhkxD8+N=Q0xOYuG_=RzU-mQeUWYF1Sw@mail.gmail.com>",
       "from_name": "robin hankin",
       "from_email_hash": "53ec16b04ed8adaf46925b139567c8ea5f9e6012a47d351f63674e036ad02e86",
-      "date": "2012-02-14T10:26:45+13:00",
+      "date": "2012-02-13T21:26:45Z",
       "subject": "[R-pkgs] new package on CRAN: multivator",
       "subject_clean": "new package on CRAN: multivator",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CAH9coKZ0hKsQYJrrikUj3Kiy3oHHo7oXLWgdsQQ7oH5MXGwSnA@mail.gmail.com>",
       "from_name": "Peter Solymos",
       "from_email_hash": "3e4e5c37645041a11f505cbd9ee9456181aeea94ae29ebbc2f9032bc9b3633e1",
-      "date": "2012-02-14T10:09:20-07:00",
+      "date": "2012-02-14T17:09:20Z",
       "subject": "[R-pkgs] New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
       "subject_clean": "New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<4F4416F4.2010809@truecluster.com>",
       "from_name": "Jens Oehlschägel",
       "from_email_hash": "a80c35d696d9821fe13568d7832e4175b24fc29fe0387be26ac995214f63c354",
-      "date": "2012-02-21T23:13:08+01:00",
+      "date": "2012-02-21T22:13:08Z",
       "subject": "[R-pkgs] new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
       "subject_clean": "new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
       "in_reply_to": null,
@@ -92,20 +92,9 @@
       "participants": [
         "Magnus Dehli Vigeland"
       ],
-      "started": "2012-02-03T12:24:53+01:00",
-      "last_reply": "2012-02-03T12:24:53+01:00",
+      "started": "2012-02-03T11:24:53Z",
+      "last_reply": "2012-02-03T11:24:53Z",
       "root_message_id": "msg-c40755573652"
-    },
-    {
-      "id": "thread-4b767de8c102",
-      "subject": "New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
-      "message_count": 1,
-      "participants": [
-        "Peter Solymos"
-      ],
-      "started": "2012-02-14T10:09:20-07:00",
-      "last_reply": "2012-02-14T10:09:20-07:00",
-      "root_message_id": "msg-4b767de8c102"
     },
     {
       "id": "thread-546a04ed6616",
@@ -114,9 +103,20 @@
       "participants": [
         "robin hankin"
       ],
-      "started": "2012-02-14T10:26:45+13:00",
-      "last_reply": "2012-02-14T10:26:45+13:00",
+      "started": "2012-02-13T21:26:45Z",
+      "last_reply": "2012-02-13T21:26:45Z",
       "root_message_id": "msg-546a04ed6616"
+    },
+    {
+      "id": "thread-4b767de8c102",
+      "subject": "New version: dclone 1.7-1 and dcmle 0.1-4 rolled out",
+      "message_count": 1,
+      "participants": [
+        "Peter Solymos"
+      ],
+      "started": "2012-02-14T17:09:20Z",
+      "last_reply": "2012-02-14T17:09:20Z",
+      "root_message_id": "msg-4b767de8c102"
     },
     {
       "id": "thread-a42b51a8d938",
@@ -125,8 +125,8 @@
       "participants": [
         "Jens Oehlschägel"
       ],
-      "started": "2012-02-21T23:13:08+01:00",
-      "last_reply": "2012-02-21T23:13:08+01:00",
+      "started": "2012-02-21T22:13:08Z",
+      "last_reply": "2012-02-21T22:13:08Z",
       "root_message_id": "msg-a42b51a8d938"
     },
     {
@@ -136,8 +136,8 @@
       "participants": [
         "Federico Calboli"
       ],
-      "started": "2012-02-29T14:52:49+00:00",
-      "last_reply": "2012-02-29T14:52:49+00:00",
+      "started": "2012-02-29T14:52:49Z",
+      "last_reply": "2012-02-29T14:52:49Z",
       "root_message_id": "msg-7274eaefe95a"
     }
   ]

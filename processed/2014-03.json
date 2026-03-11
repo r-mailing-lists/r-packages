@@ -8,7 +8,7 @@
       "message_id": "<2F982EDF-097B-46EF-93DC-D31F419DA4E2@hacettepe.edu.tr>",
       "from_name": "Selcuk Korkmaz",
       "from_email_hash": "995881611b3a7fde3395388b3f5786852aff764c9d76eaaca37ad69b248b823f",
-      "date": "2014-03-04T12:34:20+02:00",
+      "date": "2014-03-04T10:34:20Z",
       "subject": "[R-pkgs]  Version 2.0 of MVN package on CRAN‏",
       "subject_clean": "Version 2.0 of MVN package on CRAN‏",
       "in_reply_to": "<C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>",
@@ -26,7 +26,7 @@
       "message_id": "<5315D361.3000909@vanderbilt.edu>",
       "from_name": "Frank Harrell",
       "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
-      "date": "2014-03-04T07:21:37-06:00",
+      "date": "2014-03-04T13:21:37Z",
       "subject": "[R-pkgs] New version of Hmisc package on CRAN",
       "subject_clean": "New version of Hmisc package on CRAN",
       "in_reply_to": null,
@@ -42,7 +42,7 @@
       "message_id": "<5315D446.8000808@vanderbilt.edu>",
       "from_name": "Frank Harrell",
       "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
-      "date": "2014-03-04T07:25:26-06:00",
+      "date": "2014-03-04T13:25:26Z",
       "subject": "[R-pkgs] rms package updated",
       "subject_clean": "rms package updated",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<53166925.8050509@vanderbilt.edu>",
       "from_name": "Frank Harrell",
       "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
-      "date": "2014-03-04T18:00:37-06:00",
+      "date": "2014-03-05T00:00:37Z",
       "subject": "[R-pkgs] New package on CRAN: greport",
       "subject_clean": "New package on CRAN: greport",
       "in_reply_to": null,
@@ -90,7 +90,7 @@
       "message_id": "<CALVusX-+YSCo+K3zt=zbt+w6Wthmo_OGkd3-M-hsaoam_ASVzg@mail.gmail.com>",
       "from_name": "John Harrison",
       "from_email_hash": "d6219a4ab3a73c5be43990b3d5b2f0e770b6ec201d93dd4268f8475bb9215b39",
-      "date": "2014-03-18T08:59:45+07:00",
+      "date": "2014-03-18T01:59:45Z",
       "subject": "[R-pkgs] RSelenium package",
       "subject_clean": "RSelenium package",
       "in_reply_to": null,
@@ -106,7 +106,7 @@
       "message_id": "<web-502235909@cgpsrv2.cis.mcmaster.ca>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2014-03-22T11:01:15-04:00",
+      "date": "2014-03-22T15:01:15Z",
       "subject": "[R-pkgs] new version of effects package",
       "subject_clean": "new version of effects package",
       "in_reply_to": null,
@@ -120,14 +120,25 @@
   ],
   "threads": [
     {
+      "id": "thread-6c23367d6ad7",
+      "subject": "Version 2.0 of MVN package on CRAN‏",
+      "message_count": 1,
+      "participants": [
+        "Selcuk Korkmaz"
+      ],
+      "started": "2014-03-04T10:34:20Z",
+      "last_reply": "2014-03-04T10:34:20Z",
+      "root_message_id": "msg-6c23367d6ad7"
+    },
+    {
       "id": "thread-30d5b505cf35",
       "subject": "New version of Hmisc package on CRAN",
       "message_count": 1,
       "participants": [
         "Frank Harrell"
       ],
-      "started": "2014-03-04T07:21:37-06:00",
-      "last_reply": "2014-03-04T07:21:37-06:00",
+      "started": "2014-03-04T13:21:37Z",
+      "last_reply": "2014-03-04T13:21:37Z",
       "root_message_id": "msg-30d5b505cf35"
     },
     {
@@ -137,20 +148,9 @@
       "participants": [
         "Frank Harrell"
       ],
-      "started": "2014-03-04T07:25:26-06:00",
-      "last_reply": "2014-03-04T07:25:26-06:00",
+      "started": "2014-03-04T13:25:26Z",
+      "last_reply": "2014-03-04T13:25:26Z",
       "root_message_id": "msg-38b257e88742"
-    },
-    {
-      "id": "thread-6c23367d6ad7",
-      "subject": "Version 2.0 of MVN package on CRAN‏",
-      "message_count": 1,
-      "participants": [
-        "Selcuk Korkmaz"
-      ],
-      "started": "2014-03-04T12:34:20+02:00",
-      "last_reply": "2014-03-04T12:34:20+02:00",
-      "root_message_id": "msg-6c23367d6ad7"
     },
     {
       "id": "thread-4e4646db05fc",
@@ -159,8 +159,8 @@
       "participants": [
         "Frank Harrell"
       ],
-      "started": "2014-03-04T18:00:37-06:00",
-      "last_reply": "2014-03-04T18:00:37-06:00",
+      "started": "2014-03-05T00:00:37Z",
+      "last_reply": "2014-03-05T00:00:37Z",
       "root_message_id": "msg-4e4646db05fc"
     },
     {
@@ -170,8 +170,8 @@
       "participants": [
         "Michael Dewey"
       ],
-      "started": "2014-03-17T14:44:45+00:00",
-      "last_reply": "2014-03-17T14:44:45+00:00",
+      "started": "2014-03-17T14:44:45Z",
+      "last_reply": "2014-03-17T14:44:45Z",
       "root_message_id": "msg-0f667db17234"
     },
     {
@@ -181,8 +181,8 @@
       "participants": [
         "John Harrison"
       ],
-      "started": "2014-03-18T08:59:45+07:00",
-      "last_reply": "2014-03-18T08:59:45+07:00",
+      "started": "2014-03-18T01:59:45Z",
+      "last_reply": "2014-03-18T01:59:45Z",
       "root_message_id": "msg-bbb0c5c41c30"
     },
     {
@@ -192,8 +192,8 @@
       "participants": [
         "John Fox"
       ],
-      "started": "2014-03-22T11:01:15-04:00",
-      "last_reply": "2014-03-22T11:01:15-04:00",
+      "started": "2014-03-22T15:01:15Z",
+      "last_reply": "2014-03-22T15:01:15Z",
       "root_message_id": "msg-5069ea81e8cc"
     }
   ]

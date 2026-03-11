@@ -8,7 +8,7 @@
       "message_id": "<5412ABA6.5080808@gmail.com>",
       "from_name": "Krueger, Fabian",
       "from_email_hash": "0f389ba022f161515d9d1e5d7789c8b990d855bd487feccf1b9ecd786381a4a6",
-      "date": "2014-09-12T10:15:34+02:00",
+      "date": "2014-09-12T08:15:34Z",
       "subject": "[R-pkgs] New R package ``bvarsv''",
       "subject_clean": "New R package ``bvarsv''",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<5415A900.8000406@yorku.ca>",
       "from_name": "Michael Friendly",
       "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
-      "date": "2014-09-14T10:41:04-04:00",
+      "date": "2014-09-14T14:41:04Z",
       "subject": "[R-pkgs] Announce: Lahman baseball database archive package, v 3.0",
       "subject_clean": "Announce: Lahman baseball database archive package, v 3.0",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CAJ9GNa=7X6YDaCFu3JOHdg2S15_VKUvdGaUkWiQ73Z7jBhcD7w@mail.gmail.com>",
       "from_name": "Jan Wijffels",
       "from_email_hash": "c67854060f9d1faa0785ceb6d8fc98369d857f79d54a92b874f39998787b7fc2",
-      "date": "2014-09-19T14:01:28+02:00",
+      "date": "2014-09-19T12:01:28Z",
       "subject": "[R-pkgs] RMOA data stream modelling using MOA (Massive Online Analysis)",
       "subject_clean": "RMOA data stream modelling using MOA (Massive Online Analysis)",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<541C6046.1060602@vanderbilt.edu>",
       "from_name": "Frank Harrell",
       "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
-      "date": "2014-09-19T11:56:38-05:00",
+      "date": "2014-09-19T16:56:38Z",
       "subject": "[R-pkgs] CRAN submission of Hmisc 3.14-5",
       "subject_clean": "CRAN submission of Hmisc 3.14-5",
       "in_reply_to": null,
@@ -72,7 +72,7 @@
       "message_id": "<541C6144.2030204@vanderbilt.edu>",
       "from_name": "Frank Harrell",
       "from_email_hash": "416ca93053912cfc2e0362d90740df9d9f64f8e27fd2a2c6da59687e4401fc59",
-      "date": "2014-09-19T12:00:52-05:00",
+      "date": "2014-09-19T17:00:52Z",
       "subject": "[R-pkgs] CRAN update: rms 4.2-1",
       "subject_clean": "CRAN update: rms 4.2-1",
       "in_reply_to": null,
@@ -92,8 +92,8 @@
       "participants": [
         "Krueger, Fabian"
       ],
-      "started": "2014-09-12T10:15:34+02:00",
-      "last_reply": "2014-09-12T10:15:34+02:00",
+      "started": "2014-09-12T08:15:34Z",
+      "last_reply": "2014-09-12T08:15:34Z",
       "root_message_id": "msg-a7c19d1d6f36"
     },
     {
@@ -103,9 +103,20 @@
       "participants": [
         "Michael Friendly"
       ],
-      "started": "2014-09-14T10:41:04-04:00",
-      "last_reply": "2014-09-14T10:41:04-04:00",
+      "started": "2014-09-14T14:41:04Z",
+      "last_reply": "2014-09-14T14:41:04Z",
       "root_message_id": "msg-2098ff5bf8ce"
+    },
+    {
+      "id": "thread-98e9029e4942",
+      "subject": "RMOA data stream modelling using MOA (Massive Online Analysis)",
+      "message_count": 1,
+      "participants": [
+        "Jan Wijffels"
+      ],
+      "started": "2014-09-19T12:01:28Z",
+      "last_reply": "2014-09-19T12:01:28Z",
+      "root_message_id": "msg-98e9029e4942"
     },
     {
       "id": "thread-4f83333da522",
@@ -114,8 +125,8 @@
       "participants": [
         "Frank Harrell"
       ],
-      "started": "2014-09-19T11:56:38-05:00",
-      "last_reply": "2014-09-19T11:56:38-05:00",
+      "started": "2014-09-19T16:56:38Z",
+      "last_reply": "2014-09-19T16:56:38Z",
       "root_message_id": "msg-4f83333da522"
     },
     {
@@ -125,20 +136,9 @@
       "participants": [
         "Frank Harrell"
       ],
-      "started": "2014-09-19T12:00:52-05:00",
-      "last_reply": "2014-09-19T12:00:52-05:00",
+      "started": "2014-09-19T17:00:52Z",
+      "last_reply": "2014-09-19T17:00:52Z",
       "root_message_id": "msg-9d9afd42d5c4"
-    },
-    {
-      "id": "thread-98e9029e4942",
-      "subject": "RMOA data stream modelling using MOA (Massive Online Analysis)",
-      "message_count": 1,
-      "participants": [
-        "Jan Wijffels"
-      ],
-      "started": "2014-09-19T14:01:28+02:00",
-      "last_reply": "2014-09-19T14:01:28+02:00",
-      "root_message_id": "msg-98e9029e4942"
     }
   ]
 }

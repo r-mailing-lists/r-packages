@@ -8,7 +8,7 @@
       "message_id": "<CAE4w2GWLqQP7Cg3YNAfVyVAQv7q0oOkjcU=E88aW9oHOiHPzkQ@mail.gmail.com>",
       "from_name": "Bojan Mihaljevic",
       "from_email_hash": "18b0764115573ac68ba301d354a36699e9fc151b699ccbc85b99afde66422fcc",
-      "date": "2015-11-19T16:46:00+01:00",
+      "date": "2015-11-19T15:46:00Z",
       "subject": "[R-pkgs] Version 0.3.2 of bnclassify on CRAN",
       "subject_clean": "Version 0.3.2 of bnclassify on CRAN",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<564E195D.8080807@yorku.ca>",
       "from_name": "Michael Friendly",
       "from_email_hash": "e9b90ce73178f88f76f93dfc82689bfc2868e9a51ea9a8e011552092e2ee1ae2",
-      "date": "2015-11-19T13:47:57-05:00",
+      "date": "2015-11-19T18:47:57Z",
       "subject": "[R-pkgs] matlib package for linear algebra and multivariate statistics",
       "subject_clean": "matlib package for linear algebra and multivariate statistics",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CAKxd1KNuX5LYPBhCpf8GKbeJBYpf82Vcrwv6GUK35kVNh6Bg-A@mail.gmail.com>",
       "from_name": "Charles Determan",
       "from_email_hash": "fcc9a1e7c21371cee92703630056a3d910de1afb77217895dfe5b4bc47c007e1",
-      "date": "2015-11-23T07:10:09-06:00",
+      "date": "2015-11-23T13:10:09Z",
       "subject": "[R-pkgs] New package: gpuR",
       "subject_clean": "New package: gpuR",
       "in_reply_to": null,
@@ -54,26 +54,26 @@
   ],
   "threads": [
     {
-      "id": "thread-0e9b737463b6",
-      "subject": "matlib package for linear algebra and multivariate statistics",
-      "message_count": 1,
-      "participants": [
-        "Michael Friendly"
-      ],
-      "started": "2015-11-19T13:47:57-05:00",
-      "last_reply": "2015-11-19T13:47:57-05:00",
-      "root_message_id": "msg-0e9b737463b6"
-    },
-    {
       "id": "thread-3199e6f4cda5",
       "subject": "Version 0.3.2 of bnclassify on CRAN",
       "message_count": 1,
       "participants": [
         "Bojan Mihaljevic"
       ],
-      "started": "2015-11-19T16:46:00+01:00",
-      "last_reply": "2015-11-19T16:46:00+01:00",
+      "started": "2015-11-19T15:46:00Z",
+      "last_reply": "2015-11-19T15:46:00Z",
       "root_message_id": "msg-3199e6f4cda5"
+    },
+    {
+      "id": "thread-0e9b737463b6",
+      "subject": "matlib package for linear algebra and multivariate statistics",
+      "message_count": 1,
+      "participants": [
+        "Michael Friendly"
+      ],
+      "started": "2015-11-19T18:47:57Z",
+      "last_reply": "2015-11-19T18:47:57Z",
+      "root_message_id": "msg-0e9b737463b6"
     },
     {
       "id": "thread-2061d9562627",
@@ -82,8 +82,8 @@
       "participants": [
         "Charles Determan"
       ],
-      "started": "2015-11-23T07:10:09-06:00",
-      "last_reply": "2015-11-23T07:10:09-06:00",
+      "started": "2015-11-23T13:10:09Z",
+      "last_reply": "2015-11-23T13:10:09Z",
       "root_message_id": "msg-2061d9562627"
     }
   ]

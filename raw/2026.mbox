@@ -27,3 +27,45 @@ Antoine Soetewey
 	[[alternative HTML version deleted]]
 
 
+From n@r@@ @end|ng |rom @t@n|ord@edu  Sun Mar  8 01:04:47 2026
+From: n@r@@ @end|ng |rom @t@n|ord@edu (Balasubramanian Narasimhan)
+Date: Sat, 7 Mar 2026 16:04:47 -0800
+Subject: [R-pkgs] CVXR v1.8.1: A completely new rewrite for Convex
+ Programming in R
+Message-ID: <bd5d0e04-804e-459b-9d41-1f8bbb3acc6c@stanford.edu>
+
+Dear useRs,
+
+We are happy to announce the release of CVXR 1.8.1 on CRAN, unleashing 
+the full power of convex optimization for R users. Version 1.8.1 is a 
+ground-up rewrite using S7 classes and establishes parity with CVXPY 
+1.8.1, except for some esoteric atoms that are rarely needed. We support 
+four open source solvers (osqp, clarabel, scs and highs) out of the box; 
+additional solvers, open source and commercial, are also supported. CVXR 
+also supports Disciplined Parametric Programming (DPP), Disciplined 
+Geometric Programming (DGP) and DQCP (Disciplined Quasiconvex Programming).
+
+We also note that people are often surprised to hear that one can 
+formulate Integer Programming problems with CVXR.
+
+The full list of features is large, so please consult the website
+
+https://cvxr.rbind.io
+
+for what's new, migration guide, and a number of examples. A totally new 
+feature in CVXR is visualization: see `?visualize` and examples on the 
+website.
+
+A related talk regarding the development of this new version may be of 
+interest. Slides and video at
+
+https://naras.su.domains/blog/ (Slide 25 for TL;DR.)
+
+We welcome your feedback and issues on Github: 
+https://github.com/cvxgrp/CVXR
+
+Thank you.
+
+Anqi Fu and Balasubramanian Narasimhan
+
+

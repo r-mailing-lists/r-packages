@@ -8,7 +8,7 @@
       "message_id": "<50ED1B3D.20103@bioinf.jku.at>",
       "from_name": "Ulrich Bodenhofer",
       "from_email_hash": "235a23b4b9d7ccb9626ce68d4d9248ea6e23014f9ccf9e135eb089e19ec666b3",
-      "date": "2013-01-09T08:24:45+01:00",
+      "date": "2013-01-09T07:24:45Z",
       "subject": "[R-pkgs] Version 1.3.0 of apcluster package on CRAN",
       "subject_clean": "Version 1.3.0 of apcluster package on CRAN",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<fcd08d2754a.50eef21e@hacettepe.edu.tr>",
       "from_name": "Selcuk KORKMAZ",
       "from_email_hash": "995881611b3a7fde3395388b3f5786852aff764c9d76eaaca37ad69b248b823f",
-      "date": "2013-01-10T16:53:50+02:00",
+      "date": "2013-01-10T14:53:50Z",
       "subject": "[R-pkgs]  Version 1.0 of royston package on CRAN‏",
       "subject_clean": "Version 1.0 of royston package on CRAN‏",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CAJ44-AmxjBRaVpW_8WQBTeUC2vwAwz+y9i1mZ7Zk3GO0TTSTTg@mail.gmail.com>",
       "from_name": "Mauricio Zambrano-Bigiarini",
       "from_email_hash": "e9fde6a1889a918f8a1b9e2b03f04fe4a17789608f62c0d62ec496896a0ff481",
-      "date": "2013-01-10T16:05:13-03:00",
+      "date": "2013-01-10T19:05:13Z",
       "subject": "[R-pkgs] hydroPSO 0.3-0 on CRAN",
       "subject_clean": "hydroPSO 0.3-0 on CRAN",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<C16A6FAE-F018-4480-AB56-A53E46972EEF@muxspace.com>",
       "from_name": "Brian Lee Yung Rowe",
       "from_email_hash": "9bac401501175f8e5f58a68494a778fda4c9e165446648ca3c36d0f863e74446",
-      "date": "2013-01-21T13:34:38-05:00",
+      "date": "2013-01-21T18:34:38Z",
       "subject": "[R-pkgs] lambda.r 1.1.0 on CRAN",
       "subject_clean": "lambda.r 1.1.0 on CRAN",
       "in_reply_to": null,
@@ -72,7 +72,7 @@
       "message_id": "<CAAy4ZDTzK3sg71S91h=hQb_ZJr0-=RscpYR=8y-ADvm7CJDoyg@mail.gmail.com>",
       "from_name": "David Valentim Dias",
       "from_email_hash": "9c9779894c45d1446c7d1fd5e1aed82fdb16feade5ec981bf1be118dc2f1b9b8",
-      "date": "2013-01-26T17:03:05-04:00",
+      "date": "2013-01-26T21:03:05Z",
       "subject": "[R-pkgs] FI 1.0 avaliable on CRAN",
       "subject_clean": "FI 1.0 avaliable on CRAN",
       "in_reply_to": null,
@@ -88,7 +88,7 @@
       "message_id": "<201301301409.005707@miram7700b.williams.edu>",
       "from_name": "Yang Lu",
       "from_email_hash": "0f2eeb256397f8a59992133c0585dd89f350f3bbe3ec4a799788057f4a1f756c",
-      "date": "2013-01-30T09:09:51-05:00",
+      "date": "2013-01-30T14:09:51Z",
       "subject": "[R-pkgs] Version 1.2 of pa package available on CRAN",
       "subject_clean": "Version 1.2 of pa package available on CRAN",
       "in_reply_to": null,
@@ -108,20 +108,9 @@
       "participants": [
         "Ulrich Bodenhofer"
       ],
-      "started": "2013-01-09T08:24:45+01:00",
-      "last_reply": "2013-01-09T08:24:45+01:00",
+      "started": "2013-01-09T07:24:45Z",
+      "last_reply": "2013-01-09T07:24:45Z",
       "root_message_id": "msg-66e9fcc71aee"
-    },
-    {
-      "id": "thread-70740cbbf958",
-      "subject": "hydroPSO 0.3-0 on CRAN",
-      "message_count": 1,
-      "participants": [
-        "Mauricio Zambrano-Bigiarini"
-      ],
-      "started": "2013-01-10T16:05:13-03:00",
-      "last_reply": "2013-01-10T16:05:13-03:00",
-      "root_message_id": "msg-70740cbbf958"
     },
     {
       "id": "thread-dc05aedcc95c",
@@ -130,9 +119,20 @@
       "participants": [
         "Selcuk KORKMAZ"
       ],
-      "started": "2013-01-10T16:53:50+02:00",
-      "last_reply": "2013-01-10T16:53:50+02:00",
+      "started": "2013-01-10T14:53:50Z",
+      "last_reply": "2013-01-10T14:53:50Z",
       "root_message_id": "msg-dc05aedcc95c"
+    },
+    {
+      "id": "thread-70740cbbf958",
+      "subject": "hydroPSO 0.3-0 on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Mauricio Zambrano-Bigiarini"
+      ],
+      "started": "2013-01-10T19:05:13Z",
+      "last_reply": "2013-01-10T19:05:13Z",
+      "root_message_id": "msg-70740cbbf958"
     },
     {
       "id": "thread-216ca4a44b84",
@@ -141,8 +141,8 @@
       "participants": [
         "Brian Lee Yung Rowe"
       ],
-      "started": "2013-01-21T13:34:38-05:00",
-      "last_reply": "2013-01-21T13:34:38-05:00",
+      "started": "2013-01-21T18:34:38Z",
+      "last_reply": "2013-01-21T18:34:38Z",
       "root_message_id": "msg-216ca4a44b84"
     },
     {
@@ -152,8 +152,8 @@
       "participants": [
         "David Valentim Dias"
       ],
-      "started": "2013-01-26T17:03:05-04:00",
-      "last_reply": "2013-01-26T17:03:05-04:00",
+      "started": "2013-01-26T21:03:05Z",
+      "last_reply": "2013-01-26T21:03:05Z",
       "root_message_id": "msg-b38de348a0a8"
     },
     {
@@ -163,8 +163,8 @@
       "participants": [
         "Yang Lu"
       ],
-      "started": "2013-01-30T09:09:51-05:00",
-      "last_reply": "2013-01-30T09:09:51-05:00",
+      "started": "2013-01-30T14:09:51Z",
+      "last_reply": "2013-01-30T14:09:51Z",
       "root_message_id": "msg-d5830ad8479e"
     }
   ]

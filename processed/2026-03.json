@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2026-03",
+  "messages": [
+    {
+      "id": "msg-c5f3f564d2fd",
+      "message_id": "<bd5d0e04-804e-459b-9d41-1f8bbb3acc6c@stanford.edu>",
+      "from_name": "Balasubramanian Narasimhan",
+      "from_email_hash": "8ac399d76c818e61c909b0156cca82cebf32dadd634d34e61e47628c6ff29cd0",
+      "date": "2026-03-08T00:04:47Z",
+      "subject": "[R-pkgs] CVXR v1.8.1: A completely new rewrite for Convex Programming in R",
+      "subject_clean": "CVXR v1.8.1: A completely new rewrite for Convex Programming in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear useRs,\n\nWe are happy to announce the release of CVXR 1.8.1 on CRAN, unleashing \nthe full power of convex optimization for R users. Version 1.8.1 is a \nground-up rewrite using S7 classes and establishes parity with CVXPY \n1.8.1, except for some esoteric atoms that are rarely needed. We support \nfour open source solvers (osqp, clarabel, scs and highs) out of the box; \nadditional solvers, open source and commercial, are also supported. CVXR \nalso supports Disciplined Parametric Programming (DPP), Disciplined \nGeometric Programming (DGP) and DQCP (Disciplined Quasiconvex Programming).\n\nWe also note that people are often surprised to hear that one can \nformulate Integer Programming problems with CVXR.\n\nThe full list of features is large, so please consult the website\n\nhttps://cvxr.rbind.io\n\nfor what's new, migration guide, and a number of examples. A totally new \nfeature in CVXR is visualization: see `?visualize` and examples on the \nwebsite.\n\nA related talk regarding the development of this new version may be of \ninterest. Slides and video at\n\nhttps://naras.su.domains/blog/ (Slide 25 for TL;DR.)\n\nWe welcome your feedback and issues on Github: \nhttps://github.com/cvxgrp/CVXR\n\nThank you.\n\nAnqi Fu and Balasubramanian Narasimhan",
+      "body_snippet": "Dear useRs,\n\nWe are happy to announce the release of CVXR 1.8.1 on CRAN, unleashing \nthe full power of convex optimization for R users. Version 1.8.1 is a \nground-up rewrite using S7 classes and estab",
+      "thread_id": "thread-c5f3f564d2fd",
+      "thread_depth": 0,
+      "month": "2026-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c5f3f564d2fd",
+      "subject": "CVXR v1.8.1: A completely new rewrite for Convex Programming in R",
+      "message_count": 1,
+      "participants": [
+        "Balasubramanian Narasimhan"
+      ],
+      "started": "2026-03-08T00:04:47Z",
+      "last_reply": "2026-03-08T00:04:47Z",
+      "root_message_id": "msg-c5f3f564d2fd"
+    }
+  ]
+}
