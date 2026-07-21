@@ -69,3 +69,223 @@ Thank you.
 Anqi Fu and Balasubramanian Narasimhan
 
 
+From mzb@deve| @end|ng |rom gm@||@com  Fri May  1 17:26:35 2026
+From: mzb@deve| @end|ng |rom gm@||@com (Mauricio Zambrano-Bigiarini)
+Date: Fri, 1 May 2026 11:26:35 -0400
+Subject: [R-pkgs] hydroTSM: new version 0.8-6 on CRAN
+Message-ID: <CAJ44-A=6PQZYFOVtbnwV6G6qb6vyCmhEhM1bCJQCbpuZ_-qMQA@mail.gmail.com>
+
+Dear all,
+
+After two years of working mostly in sub-daily functions, the new version
+of `hydroTSM` (v0.8-6) was released on April 28th 2026, and it is available
+on CRAN now (https://cran.r-project.org/package=hydroTSM).
+
+Among the **new features** included in this version, the following stand
+out:
+
+* New graphical logo.
+
+* New webpage (https://hzambran.github.io/hydroTSM/), created with pkgdown.
+
+
+* Package tested against R version 4.6.0 (2026-04-24) -- "Because it was
+There", following an imperative request made by CRAN.
+
+* New function `isComplete`, for identifying whether a zoo object has a
+regular time frequency without missing values from the first one to the
+last one.
+
+* New function `shiftyears`, to allow the computation of annual values
+starting in a month different from january. Mostly for internal purposes
+only.
+
+* The `baseflow` function can now apply the low-pass filter more than three
+times, which should be mandatory for hourly time series (Ladson et al.,
+2013).
+
+* The `daily2annual` function has a new argument 'start.month', to choose
+the starting month to be used in the computation of annual values.
+
+* The function `cmv`  has a new argument 'start.month', to choose the
+starting month to be used in the computation of annual values.
+
+* The `matrixplot` several new arguments to customise the legend and the
+output figure.
+
+* The `fdc` has a new argument 'thr.pos', to customise the position of the
+threshold in the output figure.
+
+* Several bugfixes (
+https://cran.r-project.org/web/packages/hydroTSM/news/news.html), mostly
+related to temporal aggregation functions
+
+
+I hope you enjoy it !.
+
+
+Mauricio Zambrano-Bigiarini, PhD
+Associate Professor, Universidad de La Frontera
+Associate Researcher, (CR)2 FONDAP Center
+Phone: +56 45 259 2812 <+56+45+259+2812>
+e-mail: mauricio.zambrano at ufrontera.cl
+[image: webpage] <https://hzambran.github.io/> [image: ORCID]
+<https://orcid.org/0000-0002-9536-643X> [image: Github]
+<https://github.com/hzambran> [image: Linkedin]
+<http://www.linkedin.com/in/hzambran/>
+
+	[[alternative HTML version deleted]]
+
+
+From mzb@deve| @end|ng |rom gm@||@com  Tue May  5 13:41:02 2026
+From: mzb@deve| @end|ng |rom gm@||@com (Mauricio Zambrano-Bigiarini)
+Date: Tue, 5 May 2026 07:41:02 -0400
+Subject: [R-pkgs] hydroGOF: new version 0.7-0 on CRAN
+Message-ID: <CAJ44-AmuKe-1Zc2C-WfiQu8J3Wnpw2qr4aXktWjx6A=kWD6W9g@mail.gmail.com>
+
+Dear all,
+
+After two years the new version of `hydroGOF` (v0.7-0) was released on May
+1st 2026, and it is available on CRAN now (
+https://cran.r-project.org/package=hydroGOF).
+
+Among the **new features** included in this version, the following stand
+out:
+
+* New graphical logo.
+
+* New webpage (https://hzambran.github.io/hydroGOF), created with pkgdown.
+
+
+* Package tested against R version 4.6.0 (2026-04-24) -- "Because it was
+There", following an imperative request made by CRAN.
+
+* The package DOI was changed from the one given by Zotero to the new DOI
+given by CRAN (https://doi.org/10.32614/CRAN.package.hydroGOF) in June 2024.
+
+* Improved documentation of some functions (e.g., sKGE, KGEkm, pfactor,
+rfactor)
+
+* New functions:
+
+    o PMR: to compute the Proxy for Model Robustness to quantify the
+temporal stability of model bias, proposed by Royer-Gaspard et al. (2021).
+
+    o JDKGE: to compute the Joint Divergence Kling-Gupta Efficiency, which
+extends the traditional Kling-Gupta efficiency by incorporating a fourth
+diagnostic component that evaluates the similarity between the probability
+distributions of simulated and observed values, proposed by Ficchi et al.
+(2026).
+
+    o LME: to compute the Liu-Mean Efficiency, which evaluates how large
+the error is compared to the average level of the observations, making it
+particularly useful in hydrological applications where the mean value is a
+meaningful scale for evaluating prediction accuracy.
+
+  o LCE: to compute the Lee and Choi Efficiency, which jointly assess the
+correlation, variability, and bias component of the error, while explicitly
+penalizing imbalances between correlation and variability through two
+complementary terms (r x Alpha and r/Alpha).
+
+  o HFB: to compute the median annual high-flows bias, focused on high
+flows. This function was completely re-formulated with respect to version
+0.6-0.1, in order to make it more compatible with APFB and PBIAS, with an
+optimum value in 0 and not in 1.
+
+* Several enhancements and bugfixes (
+https://cran.r-project.org/web/packages/hydroGOF/news/news.html), mostly
+related to temporal aggregation functions
+
+I hope you enjoy it !.
+
+
+Mauricio Zambrano-Bigiarini, PhD
+Associate Professor, Universidad de La Frontera
+Associate Researcher, (CR)2 FONDAP Center
+Phone: +56 45 259 2812 <+56+45+259+2812>
+e-mail: mauricio.zambrano at ufrontera.cl
+[image: webpage] <https://hzambran.github.io/> [image: ORCID]
+<https://orcid.org/0000-0002-9536-643X> [image: Github]
+<https://github.com/hzambran> [image: Linkedin]
+<http://www.linkedin.com/in/hzambran/>
+
+	[[alternative HTML version deleted]]
+
+
+From mzb@deve| @end|ng |rom gm@||@com  Tue May 12 18:17:18 2026
+From: mzb@deve| @end|ng |rom gm@||@com (Mauricio Zambrano-Bigiarini)
+Date: Tue, 12 May 2026 12:17:18 -0400
+Subject: [R-pkgs] RFmerge: new version 0.3-3 is back on CRAN
+Message-ID: <CAJ44-Am2sHAFoGmCK+rJcU1_Odyu8M5BBS_2Vy-pwJiqnBydjA@mail.gmail.com>
+
+Dear all,
+
+RFmerge is an R package designed to merge gridded datasets with in situ
+observations using Random Forest as the core spatial prediction algorithm.
+The method incorporates spatial covariates such as topographic attributes
+and Euclidean distances, among others, to improve the accuracy and spatial
+consistency of the merged estimates.
+
+In February 2023, the RFmerge package was removed from CRAN because we did
+not resolve several issues related to the retirement of rgdal and rgeos (
+https://r-spatial.org/r/2022/04/12/evolution.html), which were used in
+RFmerge 0.1-6 together with the raster package.
+
+By July 2023, these issues were addressed, in time for a short technical
+course organized by SISSA (https://sissa.crc-sas.org/). Unfortunately, this
+updated version of the package (v0.2-0) was not submitted to CRAN at the
+time, due to time constraints affecting the development team.
+
+Now, a new version of RFmerge (v0.3-3) has been released on May 8, 2026,
+and is available on CRAN: https://cran.r-project.org/package=RFmerge.
+
+Key new features include:
+
+- Migration to the terra package, which supersedes raster. This represents
+a major change and results in a substantial improvement in computational
+performance.
+
+- Support for multi-core processing and distributed computing environments
+via the parallel package.
+
+- An updated vignette:
+
+  > Zambrano-Bigiarini, M., Baez-Villanueva, O. M., Giraldo-Osorio, J. D.,
+& McNamara, I. (2026). *Tutorial for merging satellite-based precipitation
+datasets with ground observations using RFmerge (>=0.3-0)*. Zenodo.
+https://doi.org/10.5281/zenodo.20061104.
+
+- A new graphical logo.
+
+- A new project website built with pkgdown: http://mzb.cl/RFmerge/.
+
+- The package DOI was updated in June 2024 from the Zotero-assigned
+identifier to the CRAN DOI: https://doi.org/10.32614/CRAN.package.RFmerge.
+
+- A complete list of changes is available at:
+https://cran.r-project.org/web/packages/RFmerge/news/news.html
+
+
+I hope you find this new version useful and enjoy it !
+
+
+Mauricio Zambrano-Bigiarini, PhD
+Associate Professor, Universidad de La Frontera
+Associate Researcher, (CR)2 FONDAP Center
+Phone: +56 45 259 2812 <+56+45+259+2812>
+e-mail: mauricio.zambrano at ufrontera.cl
+[image: webpage] <https://hzambran.github.io/> [image: ORCID]
+<https://orcid.org/0000-0002-9536-643X> [image: Github]
+<https://github.com/hzambran> [image: Linkedin]
+<http://www.linkedin.com/in/hzambran/>
+
+	[[alternative HTML version deleted]]
+
+
+From r@c|nej @end|ng |rom mcm@@ter@c@  Thu Jun  4 14:24:11 2026
+From: r@c|nej @end|ng |rom mcm@@ter@c@ (Racine, Jeffrey)
+Date: Thu, 4 Jun 2026 12:24:11 +0000
+Subject: [R-pkgs] np 0.70-3 and npRmpi 0.70-3 now on CRAN
+Message-ID: <YQBPR0101MB8815C7D9C6389288123F6E8BBC102@YQBPR0101MB8815.CANPRD01.PROD.OUTLOOK.COM>
+
+
