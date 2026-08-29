@@ -289,3 +289,40 @@ Subject: [R-pkgs] np 0.70-3 and npRmpi 0.70-3 now on CRAN
 Message-ID: <YQBPR0101MB8815C7D9C6389288123F6E8BBC102@YQBPR0101MB8815.CANPRD01.PROD.OUTLOOK.COM>
 
 
+From ko||erm@ @end|ng |rom proton@me  Thu Aug 27 20:59:43 2026
+From: ko||erm@ @end|ng |rom proton@me (Manuel Koller)
+Date: Thu, 27 Aug 2026 18:59:43 +0000
+Subject: [R-pkgs] jsslintr 1.1.0 on CRAN: style checker for JSS manuscripts
+Message-ID: <8848C9C8-4560-4825-8125-8AFEA6583D67@proton.me>
+
+jsslintr 1.1.0 is on CRAN.
+
+jsslintr checks a Journal of Statistical Software (JSS) format
+manuscript -- .tex, .Rnw, or .Rmd plus its .bib -- against 62
+deterministic rules derived from the journal's published style guide:
+preamble macros, semantic markup (\proglang, \pkg, \code), citation
+conventions, capitalization, code formatting, and bibliography
+completeness. Violations are reported with source positions and fix
+suggestions; jssfix() applies the auto-fixable subset.
+
+  install.packages("jsslintr")
+  library(jsslintr)
+  jsslint("paper.Rnw")
+  jssfix("paper.Rnw")
+
+The rule set's accuracy is measured: precision is 97.2% over 20,060 
+adjudicated violation instances against a pinned corpus of 254 real
+JSS-format manuscripts, recall 80.7% against a hand-annotated 
+ground-truth corpus. The same engine is also available as a
+command-line tool, Python package, VS Code extension, GitHub Action,
+and a fully client-side browser app:
+
+  https://kollerma.github.io/jss-style-checker/
+  https://github.com/kollerma/jss-style-checker
+
+jsslintr is an independent project; it is not affiliated with or
+endorsed by the Journal of Statistical Software.
+
+Manuel Koller
+
+

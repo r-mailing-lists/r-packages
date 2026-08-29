@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2026-08",
+  "messages": [
+    {
+      "id": "msg-82b6996eb8ff",
+      "message_id": "<8848C9C8-4560-4825-8125-8AFEA6583D67@proton.me>",
+      "from_name": "Manuel Koller",
+      "from_email_hash": "92acfc9be77c90ca54cbebcd10bfbf6c255aea9811ddebb2011a06c084744d5a",
+      "date": "2026-08-27T18:59:43Z",
+      "subject": "[R-pkgs] jsslintr 1.1.0 on CRAN: style checker for JSS manuscripts",
+      "subject_clean": "jsslintr 1.1.0 on CRAN: style checker for JSS manuscripts",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "jsslintr 1.1.0 is on CRAN.\n\njsslintr checks a Journal of Statistical Software (JSS) format\nmanuscript -- .tex, .Rnw, or .Rmd plus its .bib -- against 62\ndeterministic rules derived from the journal's published style guide:\npreamble macros, semantic markup (\\proglang, \\pkg, \\code), citation\nconventions, capitalization, code formatting, and bibliography\ncompleteness. Violations are reported with source positions and fix\nsuggestions; jssfix() applies the auto-fixable subset.\n\n  install.packages(\"jsslintr\")\n  library(jsslintr)\n  jsslint(\"paper.Rnw\")\n  jssfix(\"paper.Rnw\")\n\nThe rule set's accuracy is measured: precision is 97.2% over 20,060 \nadjudicated violation instances against a pinned corpus of 254 real\nJSS-format manuscripts, recall 80.7% against a hand-annotated \nground-truth corpus. The same engine is also available as a\ncommand-line tool, Python package, VS Code extension, GitHub Action,\nand a fully client-side browser app:\n\n  https://kollerma.github.io/jss-style-checker/\n  https://github.com/kollerma/jss-style-checker\n\njsslintr is an independent project; it is not affiliated with or\nendorsed by the Journal of Statistical Software.\n\nManuel Koller",
+      "body_snippet": "jsslintr 1.1.0 is on CRAN.\n\njsslintr checks a Journal of Statistical Software (JSS) format\nmanuscript -- .tex, .Rnw, or .Rmd plus its .bib -- against 62\ndeterministic rules derived from the journal's ",
+      "thread_id": "thread-82b6996eb8ff",
+      "thread_depth": 0,
+      "month": "2026-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-82b6996eb8ff",
+      "subject": "jsslintr 1.1.0 on CRAN: style checker for JSS manuscripts",
+      "message_count": 1,
+      "participants": [
+        "Manuel Koller"
+      ],
+      "started": "2026-08-27T18:59:43Z",
+      "last_reply": "2026-08-27T18:59:43Z",
+      "root_message_id": "msg-82b6996eb8ff"
+    }
+  ]
+}
