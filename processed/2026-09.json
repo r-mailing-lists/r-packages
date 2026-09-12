@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2026-09",
+  "messages": [
+    {
+      "id": "msg-4c16d3aca34c",
+      "message_id": "<3c73021a-c6fa-4c81-bf25-ba4ae71e1618@app.fastmail.com>",
+      "from_name": "Nan Xiao",
+      "from_email_hash": "5730c1dc440c8ac20e04086764f618f8ad4183ec3b2a8fab93b7329e433f9cb3",
+      "date": "2026-09-11T19:24:30Z",
+      "subject": "[R-pkgs] shinygenui: Generative UI for Shiny",
+      "subject_clean": "shinygenui: Generative UI for Shiny",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm pleased to share that shinygenui 0.1.0 is now on CRAN. Built on ellmer and shinychat, it lets a language model build and update interactive Shiny interfaces from a developer defined catalog of components.\n\nThe \"intent to interface\" loop works like this: Components wrap regular Shiny UI and server logic. The LLM selects components and supplies typed arguments via tool calls, which shinygenui validates before rendering. Shiny handles subsequent reactive interactions.\n\nCRAN: https://cran.r-project.org/package=shinygenui\nBlog post: https://nanx.me/blog/post/shinygenui/\n\nBest,\n-Nan",
+      "body_snippet": "Dear all,\n\nI'm pleased to share that shinygenui 0.1.0 is now on CRAN. Built on ellmer and shinychat, it lets a language model build and update interactive Shiny interfaces from a developer defined cat",
+      "thread_id": "thread-4c16d3aca34c",
+      "thread_depth": 0,
+      "month": "2026-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4c16d3aca34c",
+      "subject": "shinygenui: Generative UI for Shiny",
+      "message_count": 1,
+      "participants": [
+        "Nan Xiao"
+      ],
+      "started": "2026-09-11T19:24:30Z",
+      "last_reply": "2026-09-11T19:24:30Z",
+      "root_message_id": "msg-4c16d3aca34c"
+    }
+  ]
+}

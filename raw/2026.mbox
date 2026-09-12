@@ -326,3 +326,22 @@ endorsed by the Journal of Statistical Software.
 Manuel Koller
 
 
+From me @end|ng |rom n@nx@me  Fri Sep 11 21:24:30 2026
+From: me @end|ng |rom n@nx@me (Nan Xiao)
+Date: Fri, 11 Sep 2026 12:24:30 -0700
+Subject: [R-pkgs] shinygenui: Generative UI for Shiny
+Message-ID: <3c73021a-c6fa-4c81-bf25-ba4ae71e1618@app.fastmail.com>
+
+Dear all,
+
+I'm pleased to share that shinygenui 0.1.0 is now on CRAN. Built on ellmer and shinychat, it lets a language model build and update interactive Shiny interfaces from a developer defined catalog of components.
+
+The "intent to interface" loop works like this: Components wrap regular Shiny UI and server logic. The LLM selects components and supplies typed arguments via tool calls, which shinygenui validates before rendering. Shiny handles subsequent reactive interactions.
+
+CRAN: https://cran.r-project.org/package=shinygenui
+Blog post: https://nanx.me/blog/post/shinygenui/
+
+Best,
+-Nan
+
+
