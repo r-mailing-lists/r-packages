@@ -1,0 +1,36 @@
+{
+  "list": "r-packages",
+  "description": "",
+  "month": "2026-10",
+  "messages": [
+    {
+      "id": "msg-00b3e51ca324",
+      "message_id": "<GV2P250MB0900746FC7138FDE19A6B433B69D2@GV2P250MB0900.EURP250.PROD.OUTLOOK.COM>",
+      "from_name": "EGIDI LEONARDO",
+      "from_email_hash": "bd073223a05bc1228c8e550eb18ae0806f766cac7c3b09f84e44b55fc05599bc",
+      "date": "2026-10-14T11:19:51Z",
+      "subject": "[R-pkgs] R package footBayes 2.1.0 release",
+      "subject_clean": "R package footBayes 2.1.0 release",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-packages community,\n\nWe are pleased to announce the release of version 2.1.0 of footBayes, now available on CRAN.\n\nfootBayes is an R package for the estimation, visualization and prediction of goal-based football models: double Poisson, bivariate Poisson, Dixon-Coles, negative binomial, Skellam, Student-t, diagonal-inflated bivariate Poisson and zero-inflated Skellam. Models are fitted by maximum likelihood or in a Bayesian framework through Stan, with static or dynamic team abilities. The package also provides tools for posterior predictive checks, match outcome probabilities, league table reconstruction and model comparison through predictive metrics.\n\nThis is also the main und underlying package for the 2025 CRC book \"Predictive Modelling for Football Analytics\", by L. Egidi, D. Karlis and I. Ntzoufras:\nhttps://www.routledge.com/Predictive-Modelling-for-Football-Analytics/Egidi-Karlis-Ntzoufras/p/book/9781032030630\n\nThe main changes in version 2.1.0 are:\n\n  *\nThe Dixon-Coles model in both stan_foot() and mle_foot(), and the negative binomial model in mle_foot();\n  *\nNew specifications of the evolution variance of the dynamic models: a common variance (Owen, 2011) and a variance inflation after the summer break (Koopman and Lit, 2015);\n  *\nThe weighted dynamic models with commensurate priors described in Macr?-Demartino, Egidi and Torelli (2026), Journal of the Royal Statistical Society Series C: https://doi.org/10.1093/jrsssc/qlag032\n\nThe Bayesian models require the cmdstanr package and CmdStan; please install footBayes from source (install.packages(\"footBayes\", type = \"source\")) so that the Stan models are compiled during installation.\n\nCRAN page:\nhttps://CRAN.R-project.org/package=footBayes<https://cran.r-project.org/package=footBayes>\n\nfootBayes website:\nhttps://leoegidi.github.io/footBayes/\n\nSource code and documentation:\nhttps://github.com/LeoEgidi/footBayes\n\nWe hope the package will be useful to the community, and we welcome any feedback or suggestions.\n\nBest regards,\nLeonardo Egidi, Roberto Macr?-Demartino and Vasilis Palaskas\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-packages community,\n\nWe are pleased to announce the release of version 2.1.0 of footBayes, now available on CRAN.\n\nfootBayes is an R package for the estimation, visualization and prediction of ",
+      "thread_id": "thread-00b3e51ca324",
+      "thread_depth": 0,
+      "month": "2026-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-00b3e51ca324",
+      "subject": "R package footBayes 2.1.0 release",
+      "message_count": 1,
+      "participants": [
+        "EGIDI LEONARDO"
+      ],
+      "started": "2026-10-14T11:19:51Z",
+      "last_reply": "2026-10-14T11:19:51Z",
+      "root_message_id": "msg-00b3e51ca324"
+    }
+  ]
+}

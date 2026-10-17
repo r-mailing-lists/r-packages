@@ -345,3 +345,47 @@ Best,
 -Nan
 
 
+From |eg|d| @end|ng |rom un|t@@|t  Wed Oct 14 13:19:51 2026
+From: |eg|d| @end|ng |rom un|t@@|t (EGIDI LEONARDO)
+Date: Wed, 14 Oct 2026 11:19:51 +0000
+Subject: [R-pkgs] R package footBayes 2.1.0 release
+Message-ID: <GV2P250MB0900746FC7138FDE19A6B433B69D2@GV2P250MB0900.EURP250.PROD.OUTLOOK.COM>
+
+Dear R-packages community,
+
+We are pleased to announce the release of version 2.1.0 of footBayes, now available on CRAN.
+
+footBayes is an R package for the estimation, visualization and prediction of goal-based football models: double Poisson, bivariate Poisson, Dixon-Coles, negative binomial, Skellam, Student-t, diagonal-inflated bivariate Poisson and zero-inflated Skellam. Models are fitted by maximum likelihood or in a Bayesian framework through Stan, with static or dynamic team abilities. The package also provides tools for posterior predictive checks, match outcome probabilities, league table reconstruction and model comparison through predictive metrics.
+
+This is also the main und underlying package for the 2025 CRC book "Predictive Modelling for Football Analytics", by L. Egidi, D. Karlis and I. Ntzoufras:
+https://www.routledge.com/Predictive-Modelling-for-Football-Analytics/Egidi-Karlis-Ntzoufras/p/book/9781032030630
+
+The main changes in version 2.1.0 are:
+
+  *
+The Dixon-Coles model in both stan_foot() and mle_foot(), and the negative binomial model in mle_foot();
+  *
+New specifications of the evolution variance of the dynamic models: a common variance (Owen, 2011) and a variance inflation after the summer break (Koopman and Lit, 2015);
+  *
+The weighted dynamic models with commensurate priors described in Macr?-Demartino, Egidi and Torelli (2026), Journal of the Royal Statistical Society Series C: https://doi.org/10.1093/jrsssc/qlag032
+
+The Bayesian models require the cmdstanr package and CmdStan; please install footBayes from source (install.packages("footBayes", type = "source")) so that the Stan models are compiled during installation.
+
+CRAN page:
+https://CRAN.R-project.org/package=footBayes<https://cran.r-project.org/package=footBayes>
+
+footBayes website:
+https://leoegidi.github.io/footBayes/
+
+Source code and documentation:
+https://github.com/LeoEgidi/footBayes
+
+We hope the package will be useful to the community, and we welcome any feedback or suggestions.
+
+Best regards,
+Leonardo Egidi, Roberto Macr?-Demartino and Vasilis Palaskas
+
+
+	[[alternative HTML version deleted]]
+
+
