@@ -29,11 +29,14 @@
       "subject_clean": "New version of the symmoments package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl>",
+      "body_plain": "R users,\n\nVersion 1 of the symmoments package computed LaTeX expressions for the\ncentral moments of the multivariate normal distribution, and evaluated such\nmoments at specified variance-covariance matrices.\n\nIn version 1.2, symmoments has been augmented to calculate Latex expressions\nof non-central multivariate moments, and to calculate the expected values of\nsuch moments, as well as the expected values of multivariate polynomials. In\naddition, it is shown in the vignette that first non-central multivariate\nmoments are in a one-to-one relationship to phylogenetic trees, and\nfunctions making this correspondence and the correspondence with matchings\nare provided.\n\nThe new functions are as follows:\n\nThe toLatex_noncentral function computes the Latex representations of a\nnon-central moment.\n\nThe evaluate_noncentral computes the value of a non-central moment.\n\nThe evaluate_expected.polynomial function evaluates the expected value of a\nmultivariate polynomial defined by a list, multipol object, or mpoly object.\n\nThe convert.multipol function converts between multipol objects and\nmultivariate polynomials defined by lists.\n\nThe convert.mpoly function converts between mpoly objects and multivariate\npolynomials defined by lists.\n\nThe tounsorted function converts a sorted moment (e.g. m123) to an unsorted\nmoment (e.g. m312).\n\nThe make.all.moments function computes all moments up to a specified size\nand places them in the symmoments environment.\n\nThe integrate.polynomial function integrates a multivariate polynomial\nagainst the normal distribution using ordinary integration.\n\nThe functions toMoment, toNewick, and toMatching convert among moment\nL-matrices, Newick trees, and ape matching objects.\n\nPlease forward any comments or corrections to me at\n\nkemphillips at comcast.net <mailto:kemphillips at comcast.net> \n\nThanks.\n\n \n\nKem Phillips\n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "R users,\n\nVersion 1 of the symmoments package computed LaTeX expressions for the\ncentral moments of the multivariate normal distribution, and evaluated such\nmoments at specified variance-covariance ma",
       "thread_id": "thread-bce66a9b63af",
       "thread_depth": 0,
-      "month": "2014-08"
+      "month": "2014-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20140805/4c280dbd/attachment.pl"
+      ]
     },
     {
       "id": "msg-c8efd767de8d",

@@ -109,11 +109,14 @@
       "subject_clean": "MiscPsycho Package 1.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment.pl>",
+      "body_plain": "I have just submitted MiscPsycho to CRAN. MiscPsycho contains functions\nfor miscellaneous psychometrics that may be useful for applied\npsychometricians. MML estimation already exists in the ltm package.\nHence, a jml option is provided for users who prefer this method. The\njml function gives back rasch difficulties and the same Infit and Outfit\nstatistics as Winsteps. \n\nAlso, jml is known to return biased parameter estimates. So, a\ncorrection for jml bias is provided for as an optional argument in the\nfunction. Currently, the package includes the following:\n\n1) jml() a function for joint maximum likelihood estimation of the Rasch\nmodel\n2) alpha() , coefficient alpha\n3) alpha.Summary(), gives what alpha would be if item i were excluded\n3) scoreCon(), create score conversion tables, \n4) class.acc(), classification accuracy statistics \n5) simRasch(), simulate Rasch item responses \n6) classical(), point-biserial and p-values \n\nFuture versions will include Master's partial credit model, DIF\nstatistics, procedures for linking scales (e.g., Stocking-Lord), lattice\ngraphics for item characteristic curves, and bayesian scoring methods\n(EAP).\n\nBelow is a sample session:\n\nset.seed(1) # for replication only\nxx <- simRasch(200, 10) # Simulate data for 200 persons and 10 items\nclassical(xx$data) # get p-values and point-biserials\nalpha(xx$data) # coefficient alpha\nalpha.Summary(xx$data)\naa <- jml(xx$data) # estimate item parameters\nscoreCon(aa$params)\n\nThe student in row 1 has a number correct score of 3 out of 10. From the\nscore conversion table, his theta estimate is -1.36. So, we can ask,\nwhat is the probability that his true score is above, say, .5 on the\ntheta scale.\n\nclass.acc(as.numeric(xx$d[1,]), aa$params, .5, aboveQ=T)\n\nAny recommendations, bugs, hints, comments, are welcome.\n\nHarold Doran\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have just submitted MiscPsycho to CRAN. MiscPsycho contains functions\nfor miscellaneous psychometrics that may be useful for applied\npsychometricians. MML estimation already exists in the ltm packag",
       "thread_id": "thread-68051ba7ecbd",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment.pl"
+      ]
     },
     {
       "id": "msg-9cf8c29d6994",

@@ -13,11 +13,14 @@
       "subject_clean": "New package about migration indices",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl>",
+      "body_plain": "Dear useRs,\n\nme and my colleague (cc) have recently released a new package on CRAN about\ncomputing various migration indices like the Crude Migration Rate, the\nEffectiveness and Connectivity Index, different Gini indices or the\nCoefficient of Variation.\n\nI hope that some of you dealing with migration matrices in the R console\nwould find this small package useful:\nhttp://cran.r-project.org/web/packages/migration.indices/\n\nBest,\nGergely\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nme and my colleague (cc) have recently released a new package on CRAN about\ncomputing various migration indices like the Crude Migration Rate, the\nEffectiveness and Connectivity Index, di",
       "thread_id": "thread-443f291b8dc3",
       "thread_depth": 0,
-      "month": "2013-08"
+      "month": "2013-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl"
+      ]
     },
     {
       "id": "msg-19fe8b7692c9",
@@ -63,11 +66,14 @@
       "references": [
         "<030f01c47bdb$c8d6a160$ec6640ab@stuk>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl>",
+      "body_plain": "I have posted a new version of the gam package:  gam_1.09\nto CRAN. Thus update improved the step.gam function considerably,\nand gives it a parallel option.\n\nI am posting this update announcement along with the original package announcement below,\nwhich may be of interest to those new to the list\n\nTrevor Hastie\n\nBegin forwarded message:\n\n> From: \"Trevor Hastie\" <hastie at stanford.edu>\n> Subject: gam --- a new contributed package\n> Date: August 6, 2004 10:35:36 AM PDT\n> To: <r-packages at stat.math.ethz.ch>\n> \n> I have contributed a \"gam\" library to CRAN,\n> which implements \"Generalized Additive Models\".\n> \n> This implementation follows closely the description in \n> the GAM chapter 7 of the \"white\" book \"Statistical Models in S\"\n> (Chambers & Hastie (eds), 1992, Wadsworth), as well as the philosophy\n> in \"Generalized Additive Models\" (Hastie & Tibshirani 1990, Chapman and\n> Hall). Hence it behaves pretty much like the Splus version of GAM.\n> \n> Note: this gam library and functions therein are different from the\n> gam function in package mgcv, and both libraries should not be used\n> simultaneously.\n> \n> The gam library allows both local regression (loess) and smoothing\n> spline smoothers, and uses backfitting and local scoring to fit gams.\n> It also allows users to supply their own smoothing methods which can\n> then be included in gam fits.\n> \n> The gam function in mgcv uses only smoothing spline smoothers, with a\n> focus on automatic parameter selection via gcv. \n> \n> Some of the features of the gam library:\n> \n> * full compatibility with the R functions glm and lm - a fitted gam\n>  inherits from class \"glm\" and \"lm\"\n> \n> * print, summary, anova, predict and plot methods are provided, as\n>  well as the usual extractor methods like coefficients, residuals etc\n> \n> * the method step.gam provides a flexible and customizable approach to\n>  model selection. \n> \n> Some differences with the Splus version of gam:\n> \n> * predictions with new data are improved, without need for the\n>  \"safe.predict.gam\" function. This was partly facilitated by\n>  the improved prediction strategy used in R for GLMs and LMs\n> \n> * Currently the only backfitting algorithm is all.wam. In the earlier\n>  versions of gam, dedicated fortran routines fit models that had only\n>  smoothing spline terms (s.wam) or all local regression terms\n>  (lo.wam), which in fact made calls back to Splus to update the\n>  working response and weights. These were designed for efficiency. It\n>  seems now with much faster computers this efficiency is no longer\n>  needed, and all.wam is modular and \"visible\"\n> \n \n ----------------------------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu  \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231                 Fax: (650) 725-8977  \n  URL: http://www.stanford.edu/~hastie  \n   address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065  \n --------------------------------------------------------------------------------------\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have posted a new version of the gam package:  gam_1.09\nto CRAN. Thus update improved the step.gam function considerably,\nand gives it a parallel option.\n\nI am posting this update announcement along",
       "thread_id": "thread-a4b59f1efba3",
       "thread_depth": 0,
-      "month": "2013-08"
+      "month": "2013-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl"
+      ]
     },
     {
       "id": "msg-5bda43cf2c6d",
@@ -79,11 +85,14 @@
       "subject_clean": "Myrrix at CRAN - recommendation engines locally or distributed",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl>",
+      "body_plain": "Dear R community,\n\nFor users interested in recommendation engines, I would like to announce\nthe release of a new package called Myrrix on CRAN (\nhttp://cran.r-project.org/web/packages/Myrrix/).\nMyrrix is a complete, real-time, scalable clustering and recommender\nsystem, evolved from Apache Mahout.\nIt uses Alternating Least Squares to build recommendation engines. For more\ninformation, visit http://myrrix.com.\n\nThe R package called Myrrix (http://cran.r-project.org/web/packages/Myrrix/)\nprovides S4 classes and methods to communicate and build either locally\nrecommendation engines or connect with recommendation engines running on\ntop of Hadoop.\nFor an example, have a look at\nhttp://www.bnosac.be/index.php/blog/29-connect-r-with-myrrix-mahout-a-clouderas-real-time-scalable-recommender-system\n\nhappy recommending,\nJan\n\n\nJan Wijffels\nStatistical Data Miner\nwww.bnosac.be  | +32 486 611708\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\nFor users interested in recommendation engines, I would like to announce\nthe release of a new package called Myrrix on CRAN (\nhttp://cran.r-project.org/web/packages/Myrrix/).\nMyrrix",
       "thread_id": "thread-5bda43cf2c6d",
       "thread_depth": 0,
-      "month": "2013-08"
+      "month": "2013-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl"
+      ]
     }
   ],
   "threads": [

@@ -109,11 +109,14 @@
       "subject_clean": "New package: hbim - Hill/Bliss Independence Model for Multicomponent Vaccines",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment.pl>",
+      "body_plain": "Hi all,\n\nI have just uploaded the hbim package. This package does calculations related to the Hill/Bliss independence model as applied to mulitcomponent vaccines. Specifically, the package caculates expected relative risk and proportion protected assuming normally distributed log10 transformed antibody dose for a several component vaccine. It uses Hill models for each component which are combined under Bliss independence.\n\nA description of the motivation for the package is published in:\n\nSaul A, Fay MP (2007). Human Immunity and the Design of Multi-Component, Single Target Vaccines. PLoS ONE 2(9): e850. doi:10.1371/jounal.pone.0000850 (Available at http://www.plosone.org/)\n\nPlease let me know if you have any comments about or corrections for the package. \n \nThanks, \n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)                           \n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\n**********************************************************************\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI have just uploaded the hbim package. This package does calculations related to the Hill/Bliss independence model as applied to mulitcomponent vaccines. Specifically, the package caculates e",
       "thread_id": "thread-91942808af7b",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment.pl"
+      ]
     },
     {
       "id": "msg-ddc2bde8da23",

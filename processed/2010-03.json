@@ -29,11 +29,14 @@
       "subject_clean": "NEW: extracat - a package for the visualization of categorical data",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100301/6f212e63/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100301/6f212e63/attachment.pl>",
+      "body_plain": "Dear useRs,\n\nmy new package extracat is now available from CRAN.\n\nIt provides extensions to mosaicplots and parallel coordinates plots for \nthe visualization of categorical data.\n\nThe new member of the mosaicplot family is called rmb-plot and it \nvisualizes the factorization of the absolute frequencies in a contingency \ntable into conditional relative frequencies and weights. It is possible to \nchoose between the barcharts version (which is a bit similar to multiple \nbarcharts) and the generalized spineplot version. The rmb function is also \navailable in an interactive version callled irmb which is based on the \npackage iWidgets ( http://www.rforge.net ).\n\nParallel coordinates plots are made fit for categorical data with the \nfunction cpcp, which is based on the ipcp function from package iplots. To \nreflect the categorical structure of the data, point sequences and \norderings are applied to the categories of different variables. It is \npossible to use interactive highlighting and linking with other iplots. \nFurthermore the cpcp function also accepts continuous data.\n\nI hope, everyone who is interested will enjoy my first R-package !\n\nBest wishes\n\nAlexander Pilhöfer\n\nUniversity of Augsburg\nwww.rosuda.org\n\n    \n-- \nSicherer, schneller und einfacher. Die aktuellen Internet-Browser -\njetzt kostenlos herunterladen! http://portal.gmx.net/de/go/chbrowser\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nmy new package extracat is now available from CRAN.\n\nIt provides extensions to mosaicplots and parallel coordinates plots for \nthe visualization of categorical data.\n\nThe new member of th",
       "thread_id": "thread-6c81b6b495e2",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100301/6f212e63/attachment.pl"
+      ]
     },
     {
       "id": "msg-c662b308021d",
@@ -93,11 +96,14 @@
       "subject_clean": "oro.dicom released (replaces DICOM)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/126aa10d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/126aa10d/attachment.pl>",
+      "body_plain": "The first release of oro.dicom (v0.2.4) is now available for download from\nCRAN.\nThis is a major revision and improvement that replaces the previous DICOM\npackage.\n\nNew features include:\n\n* Increased speed\n* Uploading only header information (for restricted memory situations)\n* Reading implicit value representations (VR's)\n* Parsing SequenceItem tags (undefined lengths are allowed)\n* Integration with oro.nifti (to be released) to convert DICOM to NIfTI or\nAnalyze format\n\nBrandon\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The first release of oro.dicom (v0.2.4) is now available for download from\nCRAN.\nThis is a major revision and improvement that replaces the previous DICOM\npackage.\n\nNew features include:\n\n* Increased ",
       "thread_id": "thread-b39c15fdcefd",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/126aa10d/attachment.pl"
+      ]
     },
     {
       "id": "msg-81c6aadfbdfa",
@@ -109,11 +115,14 @@
       "subject_clean": "oro.nifti released (new package)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/dc60c0a6/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/dc60c0a6/attachment.pl>",
+      "body_plain": "The first release of oro.nifti (v0.1.3) is a bundle of functions and\ncapabilities from the dcemriS4 package.\n\n* This package is able to read/write both NIfTI and Analyze data formats for\nmedical imaging.\n* S4 classes are available and numerous methods exist to visualize and\ninteract with these data formats.\n* NIfTI extensions are allowed both as input and output.\n* With the XML package installed there is the ability to keep an \"audit\ntrail\" of all operations that have been applied to a particular S4 data\nobject.\n\nBrandon\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The first release of oro.nifti (v0.1.3) is a bundle of functions and\ncapabilities from the dcemriS4 package.\n\n* This package is able to read/write both NIfTI and Analyze data formats for\nmedical imagi",
       "thread_id": "thread-81c6aadfbdfa",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100312/dc60c0a6/attachment.pl"
+      ]
     },
     {
       "id": "msg-247bc0bba1e3",
@@ -173,11 +182,14 @@
       "subject_clean": "tmvtnorm: version 1.0-2",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100316/5eda189e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100316/5eda189e/attachment.pl>",
+      "body_plain": "Dear R users,\n\nthe tmvtnorm package, the package for the truncated multivariate normal and Student-t distribution, has been updated on CRAN.\n\nThe major changes in version 1.0-2 (2010-03-04) are:\n\n* The package now provides methods for the truncated multivariate Student-t distribution, i.e. random number generation, density function, distribution functions like rtmvt(), dtmvt() und ptmvt() and ptmvt.marginal(). Random number generation supports both rejection sampling and Gibbs sampling.\n* We implemented a thinning technique for the Gibbs sampler in both rtmvt.gibbs() and rtmvnorm.gibbs(), including additional arguments \"thinning\", \"start.value\" and \"burn.in\" for controlling the Gibbs sampler.\n* We added a parameter \"margin=NULL\" to dtmvnorm() as an interface/wrapper to marginal density functions dtmvnorm.marginal() and dtmvnorm.marginal2().\n\nBest regards,\nStefan Wilhelm\n\n\n\nfinancial.com AG\n\nMunich head office/Hauptsitz M?nchen: Maria-Probst-Str. 19 | 80939 M?nchen | Germany\nFrankfurt branch office/Niederlassung Frankfurt: Messeturm | Friedrich-Ebert-Anlage 49 | 60327 Frankfurt | Germany\nManagement board/Vorstand: Dr. Steffen Boehnert | Dr. Alexis Eisenhofer | Dr. Yann Samson | Matthias Wiederwach\nSupervisory board/Aufsichtsrat: Dr. Dr. Ernst zur Linden (chairman/Vorsitzender)\nRegister court/Handelsregister: Munich - HRB 128 972 | Sales tax ID number/St.Nr.: DE205 370 553\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nthe tmvtnorm package, the package for the truncated multivariate normal and Student-t distribution, has been updated on CRAN.\n\nThe major changes in version 1.0-2 (2010-03-04) are:\n\n* Th",
       "thread_id": "thread-6c5ef541572a",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100316/5eda189e/attachment.pl"
+      ]
     },
     {
       "id": "msg-d10dfd7fe40c",
@@ -221,11 +233,14 @@
       "subject_clean": "waveband",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9422abb5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9422abb5/attachment.pl>",
+      "body_plain": "Dear all,\n\nThe package waveband, for computing wavelet shrinkage credible intervals, has been uploaded to CRAN.\n\nThis was previously bundled with wavethresh, but has now been unbundled.\n\nBest wishes,\nGuy Nason\n\n\n\n--\nProfessor Guy Nason                        \nHead of Department\nDepartment of Mathematics                  \nUniversity of Bristol\nhttp://www.stats.bris.ac.uk/~magpn\n\n\nPA: Helen Craven\nHelen.Craven at bristol.ac.uk, +44 (0) 117 928 7978\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nThe package waveband, for computing wavelet shrinkage credible intervals, has been uploaded to CRAN.\n\nThis was previously bundled with wavethresh, but has now been unbundled.\n\nBest wishes,\n",
       "thread_id": "thread-e8a3fa488862",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9422abb5/attachment.pl"
+      ]
     },
     {
       "id": "msg-ca8d83bdfd91",
@@ -237,11 +252,14 @@
       "subject_clean": "cthresh",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9cf9bfba/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9cf9bfba/attachment.pl>",
+      "body_plain": "Dear all,\n\nThe package cthresh, for computing complex-valued wavelet shrinkage has now been uploaded to CRAN.\n\nThis was previously bundled with wavethresh, but has now been unbundled.\n\nBest wishes,\nGuy Nason\n\n\n--\nProfessor Guy Nason                        \nHead of Department\nDepartment of Mathematics                  \nUniversity of Bristol\nhttp://www.stats.bris.ac.uk/~magpn\n\n\nPA: Helen Craven\nHelen.Craven at bristol.ac.uk, +44 (0) 117 928 7978\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nThe package cthresh, for computing complex-valued wavelet shrinkage has now been uploaded to CRAN.\n\nThis was previously bundled with wavethresh, but has now been unbundled.\n\nBest wishes,\nGu",
       "thread_id": "thread-ca8d83bdfd91",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/9cf9bfba/attachment.pl"
+      ]
     },
     {
       "id": "msg-dfbe3e8abdee",
@@ -253,11 +271,14 @@
       "subject_clean": "NORMT3",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/2f0280c0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/2f0280c0/attachment.pl>",
+      "body_plain": "Dear all,\n\nThe package NORMT3 which computes the erf, erfc functions as well as the exact values of the convolution of a Gaussian with a Student's t 3 distribution has been enhanced with the addition of a function to compute Faddeeva's function.\n\nThanks to Krishna Myneni for this addition.\n\nGuy Nason\n\n\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nThe package NORMT3 which computes the erf, erfc functions as well as the exact values of the convolution of a Gaussian with a Student's t 3 distribution has been enhanced with the addition ",
       "thread_id": "thread-dfbe3e8abdee",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100317/2f0280c0/attachment.pl"
+      ]
     },
     {
       "id": "msg-331bd1ead323",

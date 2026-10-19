@@ -29,11 +29,14 @@
       "subject_clean": "update to exact2x2 package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101006/91d99fe5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101006/91d99fe5/attachment.pl>",
+      "body_plain": "Hi all,\n\nI have updated the exact2x2 package. The update corrects an error that can sometimes occur in the confidence intervals when the number of counts are large and tsmethod=\"minlike\". In addition to fixing the bug, the correction gives a much faster method for calculating the confidence interval.\n\n\nThe package gives exact confidence intervals that match the p-values for Fisher's exact test and Blaker's exact test as well as giving an exact version of McNemar's test. For a description see:\n\nFay (2010) R Journal 2(1):53-58.\nhttp://journal.r-project.org/archive/2010-1/RJournal_2010-1.html\n\nand\n\nFay (2010) Biostatistics 11(2): 373-374.\nhttp://biostatistics.oxfordjournals.org/content/11/2/373\n\n\n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\nDisclaimer:\nThe information in this e-mail and any of its attachment...{{dropped:11}}",
+      "body_snippet": "Hi all,\n\nI have updated the exact2x2 package. The update corrects an error that can sometimes occur in the confidence intervals when the number of counts are large and tsmethod=\"minlike\". In addition ",
       "thread_id": "thread-f3818f1e92d9",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20101006/91d99fe5/attachment.pl"
+      ]
     },
     {
       "id": "msg-bc244ef70be1",
@@ -63,11 +66,14 @@
       "references": [
         "<mailman.1.1286586175.31653.r-help@r-project.org>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101008/e887d65f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101008/e887d65f/attachment.pl>",
+      "body_plain": "From: Oscar Perpiñan Lamigueiro <oscar.perpinan at upm.es>\nDate: October 8, 2010 4:25:34 AM EDT\nTo: r-packages at r-project.org\nSubject: [R-pkgs] solaR: version 0.20\n\n\nHello,\n\nI'd like to announce the availability of the version 0.20 of the\n\"solaR\" package. It provides a set of calculation methods of solar\nradiation and performance of photovoltaic systems. The package has\nbeen uploaded to CRAN under the GPL-3 license.\n\nThe most important changes included in this version are:\n\n*The package is now almost entirely designed with S4 classes and\nmethods.\n*The time series objects are constructed with the 'zoo'\npackage.\n*Most of the functions and arguments have been renamed in\norder to ease the understanding by international users.\n*Two new functions have been included for the statistical analysis of\na PV plant composed of several systems.\n*The package dependencies have been optimized.\n*Several new small functions for date-time calculations are now\navailable.\n*Several bugs have been corrected.\n\nAn introduction to this package is available as a vignette (both in\nEnglish and in Spanish). Moreover, a handbook of photovoltaic systems  \n(in Spanish) is available at\nhttp://procomun.wordpress.com/documentos/libroesf/.\n\nBest regards.\n\nOscar Perpiñán Lamigueiro\nElectrical Engineering Department\nEUITI-UPM\n\n_______________________________________________\nR-packages mailing list\nR-packages at r-project.org\nhttps://stat.ethz.ch/mailman/listinfo/r-packages\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "From: Oscar Perpiñan Lamigueiro <oscar.perpinan at upm.es>\nDate: October 8, 2010 4:25:34 AM EDT\nTo: r-packages at r-project.org\nSubject: [R-pkgs] solaR: version 0.20\n\n\nHello,\n\nI'd like to announce the",
       "thread_id": "thread-0439f7d9fc77",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20101008/e887d65f/attachment.pl"
+      ]
     },
     {
       "id": "msg-54afc4103a6d",

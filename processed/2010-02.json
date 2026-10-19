@@ -45,11 +45,14 @@
       "subject_clean": "Update of interval package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl>",
+      "body_plain": "Hi all,\n\nI have uploaded an update of the interval package, which calculates nonparametric maximum likelihood estimates (NPMLE) of distributions and exact or asymptotic weighted logrank-type tests for interval censored data. An important part of the update is that now the default initial estimate of the NPMLE uses the MLEcens package and is much faster. This increases the speed of the logrank-type tests as well.  Other changes are listed in the NEWS file.\n\nFor details on the package see vignette(\"intervalPaper\").\n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\nDisclaimer:\nThe information in this e-mail and any of its attachment...{{dropped:11}}",
+      "body_snippet": "Hi all,\n\nI have uploaded an update of the interval package, which calculates nonparametric maximum likelihood estimates (NPMLE) of distributions and exact or asymptotic weighted logrank-type tests for",
       "thread_id": "thread-db27abf0fd90",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl"
+      ]
     },
     {
       "id": "msg-0fea393d888f",
@@ -125,11 +128,14 @@
       "subject_clean": "\"tsne\" package for t-SNE dimensionality reduction",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl>",
+      "body_plain": "I'd like to announce the availability of the \"tsne\" package.\n\nIt provides the T distributed Stocastic Neighbor Embedding algorithm by van\nder Maaten and Hinton:\n\n\n   1. http://ict.ewi.tudelft.nl/~lvandermaaten/t-SNE.html\n\n   2.\n\n   L.J.P. van der Maaten and G.E. Hinton. Visualizing High-Dimensional Data\n   Using t-SNE. Journal of Machine Learning Research 9(Nov):2579-2605, 2008.\n   [ PDF<http://ict.ewi.tudelft.nl/%7Elvandermaaten/t-SNE_files/vandermaaten08a.pdf>]\n[ Supplemental\n   Material<http://ict.ewi.tudelft.nl/%7Elvandermaaten/t-SNE_files/SupplementalMaterial.pdf>(24MB)\n]\n   3.\n\n   L.J.P. van der Maaten. Learning a Parametric Embedding by Preserving\n   Local Structure. In Proceedings of the Twelfth International Conference\n   on Artificial Intelligence and Statistics (AISTATS), JMLR W&CP 5:384-391,\n   2009. [ PDF<http://ict.ewi.tudelft.nl/%7Elvandermaaten/t-SNE_files/Paper.pdf>]\n\nIt has a few utility/convenience parameters for tweaking the algorithm and\nproviding feedback.  Be sure to try the example to get an idea of how it\nworks:\n\nrequire(tsne)\n?tsne\n\nIt's currently much slower than the \"official\" implementations by van der\nMaaten.  If you're interested in providing some tips on optimized C/Fortan\ncode, let me know.\n\n\nBest,\n-Justin\n\n-- \nJustin Donaldson\nPhD Candidate, Informatics\nIndiana University\nhttp://www.scwn.net\naim: iujjd\ntwitter: jjdonald\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'd like to announce the availability of the \"tsne\" package.\n\nIt provides the T distributed Stocastic Neighbor Embedding algorithm by van\nder Maaten and Hinton:\n\n\n   1. http://ict.ewi.tudelft.nl/~lvan",
       "thread_id": "thread-5b06083d41dc",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl"
+      ]
     },
     {
       "id": "msg-9a1f74b63223",

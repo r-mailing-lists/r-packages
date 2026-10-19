@@ -125,11 +125,14 @@
       "subject_clean": "Release of new version of caMassClass package and new package caT\tools",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment.pl>",
+      "body_plain": "Hi,\n\nA new version of \"caMassClass\" package was released today. The package\ncontain pipeline for processing and classification of protein mass spectra\ndata.\nThe main change is off-spinning from the library collection of generic\nfunctions into a new package \"caTools\". This package, which might be useful\nto broader group, is much smaller than \"caMassClass\" and has fewer\ndependencies.\n\nOther changes include:\n- Adding to \"caMassClass\" support for reading and writing mzXML data - a\nstandard for storing proteomics MS data. \n- Adding more error checking to 'runmean', 'runmin', 'runmax', 'runmad' &\n'runquantile' functions\n- Writing 3 new functions for round-off-error free sumation: 'sum.exact',\n'cumsum.exact' and 'runsum.exact'. \n- Added option to \"runmean\" function to allow use of above round-off-error\nfree computation\n\nJarek\n=====================================\\====                 \n Jarek Tuszynski, PhD.                               o / \\ \n Science Applications International Corporation  <\\__,|  \n (703) 676-4192                        \">  \\\n Jaroslaw.W.Tuszynski at saic.com                   `    \\\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nA new version of \"caMassClass\" package was released today. The package\ncontain pipeline for processing and classification of protein mass spectra\ndata.\nThe main change is off-spinning from the li",
       "thread_id": "thread-3f2cf5ae7819",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment.pl"
+      ]
     },
     {
       "id": "msg-5031e4ee4b9c",

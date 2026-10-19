@@ -13,11 +13,14 @@
       "subject_clean": "[R-package] PredictABEL 1.1: Assessment of risk prediction models in R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl>",
+      "body_plain": "Dear R users,\n\nA new R package (PredictABEL, http://cran.at.r-project.org/web/packages/PredictABEL/ ) has been published recently that includes functions to assess the performance of (genetic) risk models.\n\n\nThe package provides the following measures: \n \n\nUnivariate and multivariate odds ratios (OR) of the predictors\nThe c-statistic (or area under the receiver operating characteristic (ROC) curve (AUC))\nHosmer-Lemeshow goodness of fit test\nReclassification table\nNet reclassification improvement (NRI)\nIntegrated discrimination improvement (IDI)\n\n\nYou can find more information in our paper [1] and on PredictABEL website\nhttp://www.genabel.org/packages/PredictABEL\n \nHope you'll find it useful!\n\nSuman Kundu\n\n------------------- \nReferences:\n[1] http://www.ncbi.nlm.nih.gov/pubmed/21431839\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nA new R package (PredictABEL, http://cran.at.r-project.org/web/packages/PredictABEL/ ) has been published recently that includes functions to assess the performance of (genetic) risk mo",
       "thread_id": "thread-b11ea29af771",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl"
+      ]
     },
     {
       "id": "msg-cdd08d9dc659",
@@ -61,11 +64,14 @@
       "subject_clean": "Boost library in R package.",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl>",
+      "body_plain": "Hi R package developers,\n\nI would like to know whether anyone had experience using the C++ Boost \nlibrary within an R package, and how portable was the resulting package. \nI am especially thinking of possible compiling problems on Windows and \nApple systems.\n\nIf anyone had any tips on how to render an R package using Boost \nportable, that would be very much appreciated.\n\nThank you very much for your help,\n-- \nCedric Ginestet\nCentre for Neuroimaging Sciences (L3.04)\nNIHR Biomedical Research Centre\nDepartment of Neuroimaging\nInstitute of Psychiatry, Box P089\nKing's College London\nDe Crespigny Park\nLondon\nSE5 8AF\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi R package developers,\n\nI would like to know whether anyone had experience using the C++ Boost \nlibrary within an R package, and how portable was the resulting package. \nI am especially thinking of ",
       "thread_id": "thread-ecae6c52c8a4",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl"
+      ]
     },
     {
       "id": "msg-91ea0703f53a",

@@ -205,11 +205,14 @@
       "subject_clean": "New package: dtw - Dynamic Time Warping",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl>",
+      "body_plain": "Dear R community,\n\nI would like to introduce the package \"dtw\" for computing Dynamic Time\nWarping (DTW) alignments and related algorithms on timeseries.\n\nThe DTW algorithm computes the time axis stretch which optimally maps one\ntimeseries (query) onto another (template); it outputs the resulting\ncumulative distance between the two inputs, which is frequently used for\nclassification and clustering.\n\nThe R implementation in package \"dtw\" is fairly comprehensive, allowing\nchoice of:\n\n* windowing functions (global constraints), eg. the Sakoe-Chiba band\n* 26 transition types (local constraints), incl.\n  - symmetric and asymmetric\n  - smoothed\n  - slope-constrained\n  - step patterns found in Sakoe-Chiba and Rabiner-Myers;\n* any definition for a local distance can be used for multivariate\ntimeseries, thanks to the {proxy}distance function.\n\nBesides alignment computations, the package also provides:\n\n* plot methods for warping functions with several visualization styles;\n* methods for applying a warping function (direct or inverse);\n* native and interpreted implementations.\n\nDTW itself registers as a distance function with {proxy}distance;\n\nPackage \"dtw\" is hosted on CRAN (stable) and R-forge (testing: recommended).\nCurrent package version is 1.4-3 (this is the first announcement on\nr-packages).\n\nPlease find more information at the project home page:\nhttp://dtw.r-forge.r-project.org , providing repository locations and a\ngallery of sample plots.  A companion paper is upcoming.\n\nBest regards,\nToni Giorgino\n\n\n\n-- \nToni Giorgino, PhD                         toni.giorgino at unipv.it\nLaboratorio di Informatica Biomedica          tel +39 0382 985981\nDip. Informatica e Sistemistica               fax +39 0382 526088\nvia Ferrata 1                                       I-27100 Pavia\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\nI would like to introduce the package \"dtw\" for computing Dynamic Time\nWarping (DTW) alignments and related algorithms on timeseries.\n\nThe DTW algorithm computes the time axis stret",
       "thread_id": "thread-0a78b0cb758c",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl"
+      ]
     },
     {
       "id": "msg-fb5993a0fbab",

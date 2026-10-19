@@ -77,11 +77,14 @@
       "subject_clean": "ascii package updated",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091029/2e4c02c1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20091029/2e4c02c1/attachment.pl>",
+      "body_plain": "Hello,\n\nascii package has been updated to version 0.3.2.\nascii is a R package for writing asciidoc, txt2tags, sphinx or org documents\nwith embeded R code. See http://eusebe.github.com/ascii/ for some examples.\n\nNews since version 0.2 are:\n\n - new sphinx driver and output (see http://sphinx.pocoo.org/)\n - new org driver and output (see http://orgmode.org/)\n - ascii.simple.list method\n - ftable method\n - packageDescription method\n - sessionInfo method\n - new option \"label\" for list.type argument\n - new rownames and colnames arguments\n - cgroup argument works with txt2tags output\n - improve col alignment in txt2tags output\n - improve row and col span (cgroup and rgroup)\n - remove SweaveAscii() function\n - new Asciidoc(), T2t(), Sphinx() and Org() functions (wrapper for\nSweave(\"file.Rnw\", RweaveXxx))\n\nBest,\n\nDavid Hajage\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nascii package has been updated to version 0.3.2.\nascii is a R package for writing asciidoc, txt2tags, sphinx or org documents\nwith embeded R code. See http://eusebe.github.com/ascii/ for some ",
       "thread_id": "thread-fa1743b11ef9",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20091029/2e4c02c1/attachment.pl"
+      ]
     }
   ],
   "threads": [

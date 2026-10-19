@@ -29,11 +29,14 @@
       "subject_clean": "Package FuncMap Now Available on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/f3d0192c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/f3d0192c/attachment.pl>",
+      "body_plain": "I'm pleased to announce that the FuncMap (v 1.0) package is available  \non CRAN.\n\nThis is a single function package that makes hive plots of function  \ncalls for a specified package.  Hive plots are a powerful concept  \ndeveloped by Martin Krzywinski at the Genome Sciences Center  \n(mkweb.bcgsc.ca/linnet/).  FuncMap is a simple implementation of  \nMartin's concept.  Function calls in a package are categorized as  \nsource functions, sink functions, or middle-managers, and plotted on 3  \naxes with several options available (?FuncMap for details of course).\n\nI'm not entirely certain of what use one might make of this package!   \nIt certainly creates good art - maybe t-shirt art for the package  \ndeveloper's research group?  Perhaps those from a computer science  \nbackground can find some value in it.  A simple demo is given below,  \nwhich shows some dramatic differences between the structure of the two  \npopular plotting packages lattice and ggplot2.\n\nBryan\n******\nBryan Hanson\nProf. of Chemistry & Biochemistry\nDePauw University\nGreencastle Indiana USA\n\n\n\nrequire(mvbutils)\nrequire(lattice)\nrequire(ggplot2)\nrequire(FuncMap)\n\n# Use Mark Bravington's foodweb to create the call list\n# Also creates a plot illustrating the calls\n# Do these one at a time\n\nfw.l <- foodweb(where = \"package:lattice\")\n\nfw.g <- foodweb(where = \"package:ggplot2\")\n\n# Now consider the hive plot versions\n\nFuncMap(fw.l, pkg = \"lattice\")\n\nFuncMap(fw.g, pkg = \"ggplot2\")\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to announce that the FuncMap (v 1.0) package is available  \non CRAN.\n\nThis is a single function package that makes hive plots of function  \ncalls for a specified package.  Hive plots are a",
       "thread_id": "thread-333fbd6b6826",
       "thread_depth": 0,
-      "month": "2011-03"
+      "month": "2011-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/f3d0192c/attachment.pl"
+      ]
     },
     {
       "id": "msg-9dc2f3c59760",
@@ -45,11 +48,14 @@
       "subject_clean": "Package ChemoSpec 1.46 Now Available on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/ebcb0dae/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/ebcb0dae/attachment.pl>",
+      "body_plain": "I'm pleased to announce that the ChemoSpec package is available on  \nCRAN for the first time (as version 1.46-4).\n\nChemoSpec is a collection of functions for plotting spectra (NMR, IR  \netc) and carrying out various forms of top-down exploratory data  \nanalysis, such as HCA, PCA and model-based clustering. The design  \npermits comparison of data from samples which fall into groups such as  \ntreatment vs. control. Robust methods appropriate for this type of  \nhigh-dimensional data are available. ChemoSpec is designed to be very  \nuser friendly and suitable for people with limited background in R. A  \nvignette illustrating typical operations is available.\n\nNaturally, I'd be glad to hear from users with suggestions and bug  \nreports.\n\nBryan\n******\nBryan Hanson\nProf. of Chemistry & Biochemistry\nDePauw University\nGreencastle Indiana USA\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I'm pleased to announce that the ChemoSpec package is available on  \nCRAN for the first time (as version 1.46-4).\n\nChemoSpec is a collection of functions for plotting spectra (NMR, IR  \netc) and carry",
       "thread_id": "thread-9dc2f3c59760",
       "thread_depth": 0,
-      "month": "2011-03"
+      "month": "2011-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110330/ebcb0dae/attachment.pl"
+      ]
     },
     {
       "id": "msg-b6b32f175a94",

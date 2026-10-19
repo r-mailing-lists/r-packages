@@ -61,11 +61,14 @@
       "subject_clean": "ggmap : ggplot2 and RgoogleMaps",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120305/98e223b4/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120305/98e223b4/attachment.pl>",
+      "body_plain": "Dear useRs -\n\nggmap v1.2 is now available on CRAN.  \n\nggmap is a relatively new package which combines the power of ggplot2 with the spatial contextual information in Google Maps or OpenStreetMaps (via RgoogleMaps) to provide an easy, consistent and modular framework for spatial graphics.\n\nFor examples on how to get started with ggmap, see ?ggmapplot for several examples of its use.\n\nHappy mapping!\n\nCheers\ndavid kahle.\n\n-------------------------------------------------------------\n-------------------------------------------------------------\n\nDavid J. Kahle, Ph.D.\nAssistant Professor of Statistical Science\nDepartment of Statistical Science\nBaylor University\nOne Bear Place #97140\nWaco, Texas 76798\nOffice : (254) 710-6102\nhttp://sites.google.com/site/davidkahle/\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs -\n\nggmap v1.2 is now available on CRAN.  \n\nggmap is a relatively new package which combines the power of ggplot2 with the spatial contextual information in Google Maps or OpenStreetMaps (vi",
       "thread_id": "thread-6b44813cbe13",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20120305/98e223b4/attachment.pl"
+      ]
     },
     {
       "id": "msg-a16cb933a59f",
@@ -77,11 +80,14 @@
       "subject_clean": "lubridate 1.1.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120306/6bd71b0d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120306/6bd71b0d/attachment.pl>",
+      "body_plain": "#lubridate\n\nlubridate makes it easier to work with dates and times by providing\nfunctions to identify and parse date-time data, extract and modify\ncomponents of a date-time (years, months, days, hours, minutes,\nand seconds), perform accurate math on date-times, handle time zones and\nDaylight Savings Time. lubridate has a consistent, memorable syntax that\nmakes working with dates less frustrating.\n\nlubridate 1.1.0 introduces extensive changes, which are summarized below\n\nVersion 1.1.0\n-------------------------------------------------------------------------\n* lubridate no longer overwrites base R methods for +, - , *, /, %%, and\n%/%. To recreate the previous experience of subtracting two date times to\ncreate an interval, we've added the interval creation function %--%.\n\n* lubridate has moved to an S4 object system. Timespans, Intervals,\nDurations, and Periods have each been redefined as an S4 class with its own\nmethods.\n\n* arithmetic operations will no longer perform implicit class changes\nbetween periods, durations, and intervals. Users must explicitly state how\nand when they wish class changes to occur with as.period(), as.duration(),\nand as.interval(). This makes code written with lubridate more robust, as\nsuch implicit changes often did not produce consistent behavior across a\nvariety of operations. It also allows lubridate to be less chatty with\nfewer console messages. lubridate does not need to explain what it is\ndoing, because it no longer attempts to do things whose outcome would not\nbe clear. On the other hand, arithmetic between multiple time classes will\nproduce informative error messages.\n\n* the internal structure of lubridate R code has been reorganized at\nhttps://github.com/hadley/lubridate to make lubridate more development\nfriendly.\n\n\nNEW FEATURES\n\n* intervals are now more useful and lubridate has more ways to manipulate\nthem. Intervals can be created with %--%; modified with int_shift(),\nint_flip(), and int_standardize(); manipulated with intersect(), union(),\nand setdiff(); and used in logical tests with int_aligns(), int_overlaps(),\nand %within%. lubridate will no longer perform arithmetic between two\nintervals because the correct results of such operations is no more obvious\nthan the correct result of adding two dates. Instead users are encouraged\nto use the new set operations or to directly modify intervals with\nint_start() and int_end(), which can also be used as settors. lubridate now\nsupports negative intervals as well as positive intervals. Intervals also\nnow display with a time zone.\n\n* Modulo methods for timespans have been changed to return a timespan. This\nallows modulo methods to be used with integer division in an intuitive\nmanner, e.g.\n\na = a %/% b * b + a %% b\n\nUsers can still acheive a numerical result by using as.numeric() on input\nbefore performing modulo.\n\n* Periods, durations, and intervals can now all be put into a data frame.\n\n* Periods, durations, and intervals can be intuitively subset with $ and\n[]. These operations also can be used as settors with <-.\n\n* The parsing functions and the as.period method for intervals are now\nslightly faster.\n\n* month<- and wday<- settors accept names as well as numbers\n\n* parsing functions now have a quiet argument to parse without messages and\na tz argument to directly parse times into the desired time zone.\n\n* logical comparison methods now work for period objects.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "#lubridate\n\nlubridate makes it easier to work with dates and times by providing\nfunctions to identify and parse date-time data, extract and modify\ncomponents of a date-time (years, months, days, hours",
       "thread_id": "thread-a16cb933a59f",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20120306/6bd71b0d/attachment.pl"
+      ]
     },
     {
       "id": "msg-1dfdd1750c57",
@@ -157,11 +163,14 @@
       "subject_clean": "New package cloudRmpi: Cloud-based parallel proccessing for R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120322/0658dc07/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120322/0658dc07/attachment.pl>",
+      "body_plain": "cloudRmpi is means for doing parallel processing in R, using MPI on a \ncloud-based network.  It currently supports the use of Amazon's EC2 \ncloud computer service. cloudRmpi provides a mechanism to launch and \nmanage a cloud-based network and to access an R session on the network's \nmaster MPI node (using the rreval package). cloudRmpi should work with \nany MPI based R package (it has been tested with Rmpi, npRmpi, and snow).\n\nBarnet Wagman\nbw at norbl.com\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "cloudRmpi is means for doing parallel processing in R, using MPI on a \ncloud-based network.  It currently supports the use of Amazon's EC2 \ncloud computer service. cloudRmpi provides a mechanism to la",
       "thread_id": "thread-44442edbfd08",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20120322/0658dc07/attachment.pl"
+      ]
     },
     {
       "id": "msg-346772bb0ac4",
@@ -205,11 +214,14 @@
       "subject_clean": "package update: mediation",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120328/18e1a85c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120328/18e1a85c/attachment.pl>",
+      "body_plain": "Package update: mediation\n\nScholars across a range of disciplines are increasingly interested in\nidentifying causal mechanisms, going beyond the estimation of causal\neffects. The mediation package (4.0) estimates mediation effects for a\nvariety of experimental designs and statistical models. The update covers\nnew models, designs, and includes many new functionalities.\n\n\n\nDustin Tingley\nGovernment Department\nHarvard University\nhttp://scholar.harvard.edu/dtingley\nDirector, Program on Experience Based Learning in the Social Sciences\nhttp://projects.iq.harvard.edu/peblss/\nContribute to the Research Reservoir:\nhttp://projects.iq.harvard.edu/undergradscholars/pages/research-resources\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Package update: mediation\n\nScholars across a range of disciplines are increasingly interested in\nidentifying causal mechanisms, going beyond the estimation of causal\neffects. The mediation package (4.",
       "thread_id": "thread-1e5c8629e767",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20120328/18e1a85c/attachment.pl"
+      ]
     },
     {
       "id": "msg-d24c3c99d125",
@@ -221,11 +233,14 @@
       "subject_clean": "New package joineR",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120331/789ab38b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20120331/789ab38b/attachment.pl>",
+      "body_plain": "Dear All,\n\nThe 'joineR' package for the joint analysis of repeated measurements and time-to-event outcomes is now available on CRAN. The package contains utilities for creating and manipulating 'jointdata' objects, graphical summaries, a variogram function for estimating correlation structure, and maximum likelihood estimation for a class of random effects joint models.\n\nBest wishes, Pete.\n\n\nPete Philipson\nLecturer in Statistics\nSchool of Computing, Engineering and Information Sciences\nNorthumbria University\nemail: pete.philipson at northumbria.ac.uk\n\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nThe 'joineR' package for the joint analysis of repeated measurements and time-to-event outcomes is now available on CRAN. The package contains utilities for creating and manipulating 'joint",
       "thread_id": "thread-d24c3c99d125",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20120331/789ab38b/attachment.pl"
+      ]
     }
   ],
   "threads": [

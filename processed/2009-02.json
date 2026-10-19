@@ -157,11 +157,14 @@
       "subject_clean": "Package DAKS for knowledge space theory, on CRAN now",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment.pl>",
+      "body_plain": "Version 1.0-0 of DAKS (Data Analysis and Knowledge Spaces) has been  \nreleased to CRAN.\n\nKnowledge space theory is a recent psychometric test theory based on  \ncombinatorial mathematical structures (order and lattice theory).  \nSolvability dependencies between dichotomous test items play an  \nimportant role in knowledge space theory. Utilizing hypothesized  \ndependencies between items, knowledge space theory has been  \nsuccessfully applied for the computerized, adaptive assessment and  \ntraining of knowledge.\n\nThe package DAKS implements inductive item tree analysis methods for  \nderiving surmise relations from binary data. It provides functions for  \ncomputing population and estimated asymptotic variances of the used  \nfit measures, and for switching between test item and knowledge state  \nrepresentations.  Other features are a Hasse diagram drawing device, a  \ndata simulation tool based on a finite mixture latent variable model,  \nand a function for computing response pattern and knowledge state  \nfrequencies.\n\nBest regards,\nAnatol Sargin\nAli Uenlue\n--\nDepartment of Computer-Oriented Statistics and Data Analysis\nInstitute of Mathematics\nUniversity of Augsburg\nhttp://stats.math.uni-augsburg.de/\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 1.0-0 of DAKS (Data Analysis and Knowledge Spaces) has been  \nreleased to CRAN.\n\nKnowledge space theory is a recent psychometric test theory based on  \ncombinatorial mathematical structures (o",
       "thread_id": "thread-4cd94b332d82",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment.pl"
+      ]
     }
   ],
   "threads": [

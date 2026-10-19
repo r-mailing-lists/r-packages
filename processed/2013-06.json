@@ -13,11 +13,14 @@
       "subject_clean": "bpcp package for pointwise confidence intervals for a survival distribution",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/83863462/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/83863462/attachment.pl>",
+      "body_plain": "Hi all,\n\nI just uploaded a new version of the bpcp package.  It calculates confidence intervals for a survival distribution for right-censored data using the newly developed beta product confidence procedure.  Previously developed methods can have substantial error rate inflation for the lower limit, especially at the right end of the curves when there are small numbers of events.  The bpcp method guarantees coverage when there is no censoring (when it reduces to the exact Clopper-Pearson intervals for binomial data at each time) or when there is progressive type II censoring.  Simulations show at least nominal  coverage for independent censoring.  Also, it is fast so it can be used routinely.\n\nFor a complete description of the new method see\n\nFay, Brittain, and Proschan (2013). Pointwise confidence intervals for a survival distribution with small samples or heavy censoring. Biostatistics doi:10.1093/biostatistics/kxt016 (available at http://www.niaid.nih.gov/about/organization/dcr/brb/staff/Pages/michael.aspx ).\n\n\nMike\n\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\nDisclaimer:\nThe information in this e-mail and any of its attachment...{{dropped:11}}",
+      "body_snippet": "Hi all,\n\nI just uploaded a new version of the bpcp package.  It calculates confidence intervals for a survival distribution for right-censored data using the newly developed beta product confidence pr",
       "thread_id": "thread-96e9b7787a89",
       "thread_depth": 0,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/83863462/attachment.pl"
+      ]
     },
     {
       "id": "msg-4fedf88603ec",
@@ -29,11 +32,14 @@
       "subject_clean": "update to interval package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/24fa043f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/24fa043f/attachment.pl>",
+      "body_plain": "Hi all,\n\nI just uploaded an update to the interval package that does NPMLE estimates of survival distribution and weighted logrank tests for interval censored data.\n\nThe update now includes a confidence interval method for the survival that uses a modified bootstrap method.\n\nMike\n\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\nDisclaimer:\nThe information in this e-mail and any of its attachment...{{dropped:11}}",
+      "body_snippet": "Hi all,\n\nI just uploaded an update to the interval package that does NPMLE estimates of survival distribution and weighted logrank tests for interval censored data.\n\nThe update now includes a confiden",
       "thread_id": "thread-4fedf88603ec",
       "thread_depth": 0,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130605/24fa043f/attachment.pl"
+      ]
     }
   ],
   "threads": [

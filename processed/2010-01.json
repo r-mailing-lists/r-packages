@@ -141,11 +141,14 @@
       "subject_clean": "exactci package gives exact binomial and poisson tests and matching CI",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl>",
+      "body_plain": "I am announcing the release of the exactci package.  It calculates exact tests and confidence intervals for binomial and Poisson tests. Here is an example to motivate the package:\n\nSuppose you want to see if the observed rates of 2/17877  for group A  are significantly different from the observed rates of 10/20000 for group B assuming Poisson counts. The poisson.test function in the stats package gives a significant test result but a confidence interval that contains the rate ratio of 1:\n\n> poisson.test(c(2,10),c(17877,20000))\n\n        Comparison of Poisson rates\n\ndata:  c(2, 10) time base: c(17877, 20000)\ncount1 = 2, expected count1 = 5.664, p-value = 0.04213\nalternative hypothesis: true rate ratio is not equal to 1\n95 percent confidence interval:\n 0.02383738 1.04995468\nsample estimates:\nrate ratio\n 0.2237512\n\nIn the exactci package, the test and confidence interval are calculated from the same p-value function so these kind of test-CI inconsistencies are avoided as much as is possible. Here are the results from the package (first using the central method to match the CI from poisson.test, then using the minlike method to match the p-value from poisson.test):\n\n> poisson.exact(c(2,10),c(17877,20000))\n\n        Exact two-sided Poisson test (central method)\n\ndata:  c(2, 10) time base: c(17877, 20000)\ncount1 = 2, expected count1 = 5.664, p-value = 0.06056\nalternative hypothesis: true rate ratio is not equal to 1\n95 percent confidence interval:\n 0.02383738 1.04995468\nsample estimates:\nrate ratio\n 0.2237512\n\n> poisson.exact(c(2,10),c(17877,20000),tsmethod=\"minlike\")\n\n        Exact two-sided Poisson test (sum of minimum likelihood method)\n\ndata:  c(2, 10) time base: c(17877, 20000)\ncount1 = 2, expected count1 = 5.664, p-value = 0.04213\nalternative hypothesis: true rate ratio is not equal to 1\n95 percent confidence interval:\n 0.03519552 0.94194758\nsample estimates:\nrate ratio\n 0.2237512\n\n\nThe binom.exact function works similarly with the binomial  hypothesis tests.\n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am announcing the release of the exactci package.  It calculates exact tests and confidence intervals for binomial and Poisson tests. Here is an example to motivate the package:\n\nSuppose you want to",
       "thread_id": "thread-ffe667faac83",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl"
+      ]
     },
     {
       "id": "msg-ac6e7f332736",
@@ -157,11 +160,14 @@
       "subject_clean": "Update to exact2x2 package: Exact McNemar's test",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl>",
+      "body_plain": "Hi all,\n\nI have updated the exact2x2 package which calculates exact conditional tests and the matching confidence intervals for 2x2 tables.  The big change in the update is to allow the option paired=TRUE which gives an exact McNemar's test together with odds ratio estimates and confidence intervals. See vignette(\"exactMcNemar\") for details.\n\nThe original release is described in the paper:\n\nFay, M.P. (2009). \"Confidence intervals that match Fisher's exact or Blaker's exact tests\" Biostatistics. doi:10.1093/biostatistics/kxp050.\n\nLet me know if there are bugs, comments or questions.\n\n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\nDisclaimer:\nThe information in this e-mail and any of its attachment...{{dropped:11}}",
+      "body_snippet": "Hi all,\n\nI have updated the exact2x2 package which calculates exact conditional tests and the matching confidence intervals for 2x2 tables.  The big change in the update is to allow the option paired=",
       "thread_id": "thread-ac6e7f332736",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl"
+      ]
     }
   ],
   "threads": [

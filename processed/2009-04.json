@@ -29,11 +29,14 @@
       "subject_clean": "New package: ascii version 0.1",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl>",
+      "body_plain": "Hi,\n\nascii is a new R package for writing asciidoc or txt2tags document with\nembeded R commands.\n\nIt provides:\n - a generic method for common R objects: ascii(). Default argument depends\nof R object.\n - two Sweave drivers: Sweave(\"yourfile.Rnw\", RweaveAsciidoc) or\nSweave(\"yourfile.Rnw\",\nRweaveT2t).\nThis package is very similar to xtable or R2HTML. It is very interesting if\nyou want to produce multiple output from one source.\n\nYou could find some examples on http://eusebe.github.com/ascii/.\n\nComments and suggestions are welcome !\n\nBest,\n\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nascii is a new R package for writing asciidoc or txt2tags document with\nembeded R commands.\n\nIt provides:\n - a generic method for common R objects: ascii(). Default argument depends\nof R object.\n",
       "thread_id": "thread-5f204f459ec0",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl"
+      ]
     },
     {
       "id": "msg-5f542249b497",
@@ -61,11 +64,14 @@
       "subject_clean": "Major bigmemory revision released.",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment.pl>",
+      "body_plain": "The re-engineered bigmemory package is now available (Version 3.5\nand above) on CRAN.  We strongly recommend you cease using\nthe older versions at this point.\n\nbigmemory now offers completely platform-independent support for\nthe big.matrix class in shared memory and, optionally, as filebacked\nmatrices for larger-than-RAM applications.  We're working on updating\nthe package vignette, and a draft is available upon request (just send\nme an email if you're interested).  The user interface is largely unchanged.\n\nFeedback, bug reports, etc... are welcome.\n\nJay Emerson & Michael Kane\n\n-- \nJohn W. Emerson (Jay)\nAssistant Professor of Statistics\nDepartment of Statistics\nYale University\nhttp://www.stat.yale.edu/~jay\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The re-engineered bigmemory package is now available (Version 3.5\nand above) on CRAN.  We strongly recommend you cease using\nthe older versions at this point.\n\nbigmemory now offers completely platform",
       "thread_id": "thread-85af6b9445ce",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment.pl"
+      ]
     },
     {
       "id": "msg-dc6aca5cd947",
@@ -125,11 +131,14 @@
       "subject_clean": "Major revision of plink for separate calibration IRT-based linking",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment.pl>",
+      "body_plain": "An updated version of the package plink has been uploaded to CRAN. This is a\nmajor revision that now includes multidimensional models and methods.\n\nplink is a package for conducting unidimensional and multidimensional\nIRT-based test linking using separate calibration methods for multiple\ngroups for single-format or mixed-format common items. The package supports\nsixteen IRT models and eleven calibration methods.\n\nDichotomous Models:\n1PL, 2PL, 3PL, M1PL, M2PL, M3PL\n\nPolytomous Models:\n-Graded response model, MD graded response model\n-Partial credit model, MD partial credit model\n-Generalized partial credit model, MD generalized partial credit model\n-Nominal response model, MD nominal response model\n-Multiple-choice model, MD multiple-choice model\n\nUnidimensional Calibration Methods:\n-Mean/Mean\n-Mean/Sigma\n-Haebara\n-Stocking-Lord\n\nMultidimensional Calibration Methods:\n-Reckase-Martineau (least squares with oblique procrustes rotation)\n-MD Haebara\n-MD Stocking-Lord\n--For the later two methods there are three dilation approaches\n  - Oshima-Davey-Lee (oblique rotation)\n  - Li-Lissitz (orthogonal procrustes rotation with a single dilation\nparameter)\n  - Min (orthogonal procrustes rotation with multiple dilation parameters)\n\nAny combination of dichotomous and polytomous items can be supplied with\nintermingled unique and common items for as many items and groups as system\nmemory allows. Linking constants are computed and returned for all the\ncalibration methods, and (if desired) ability and/or item parameters can be\nrescaled and returned using any of the estimated linking constants.\n\nAny of the included groups can be specified as the base scale, the\ncharacteristic curve methods can use symmetric or non-symmetric\noptimization, various scoring functions can be supplied for the\nStocking-Lord methods, and there is great flexibility in specifying thetas\nand theta weights to be integrated over in the characteristic curve methods.\n\nIn addition to computing linking constants and rescaling ability and item\nparameters, the methods in the package can be used to compute item/category\nresponse probabilities and create plots of item/category characteristic\ncurves/surfaces. Particular attention has been given to the creation of\nmultidimensional plots (they include wireframe plots, contour plots and\nvector plots).\n\nThe package is designed to allow for a variety of formats for the item\nparameters including vectors, lists, matrices, and other objects available\nin the package (irt.pars and sep.pars). Item parameters and calibration\noutput can be summarized, and descriptive statistics for the item parameters\ncan be displayed as well. There is also functionality for importing item\nand/or ability parameters from BILOG, PARSCALE, and TESTFACT (functionality\nfor MULTILOG will be added in a later version).\n\nGetting Started:\nRunning the separate calibration is generally a two-step process. The first\nstep is to format the item parameters for processing with the function\n'plink'. In the simplest scenario, parameters should be formatted using the\nfunction 'as.irt.pars'. This essentially creates a blueprint of the item\nparameters, response models, response categories, and common items across\nall linked tests. Once this object has been created, the function 'plink' is\nused to estimate the linking constants and rescale item and/or ability\nparameters.\n\nIn addition to the estimation of linking constants, response probabilities\ncan be computed using the functions 'drm', 'gpcm', 'grm', 'mcm', or 'nrm'\n(for both unidimensional and multidimensional models).\n\nI am currently working on a step-by-step walk through of the package, but\nfor now the current documentation contains extensive details and examples.\nThe best documentation to start with is help(as.irt.pars) and help(plink).\n\nI have gone through a lot of debugging and validation, so there should be\nfew, if any bugs. Many of the examples (and the associated output) can be\nfound in published articles or books. The output from all of the\nunidimensional calibration methods have been checked against other available\nlinking software, and to the extent possible, the multidimensional linking\nmethods have also been checked against available software.\n\n\nJonathan Weeks\nDoctoral Candidate\nSchool of Education\nUniversity of Colorado, Boulder <weeksjp at gmail.com>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "An updated version of the package plink has been uploaded to CRAN. This is a\nmajor revision that now includes multidimensional models and methods.\n\nplink is a package for conducting unidimensional and",
       "thread_id": "thread-12671ef05c44",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment.pl"
+      ]
     },
     {
       "id": "msg-30613fb26a94",
@@ -173,11 +182,14 @@
       "subject_clean": "EVER_1.1",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment.pl>",
+      "body_plain": "Dear R users,\n\nVersion 1.1 of the EVER package is on CRAN.\n\nEVER (the acronym stands for Estimation of Variance by Efficient Replication) is mainly intended for calculating estimates and standard errors from complex surveys.\nVariance estimation is based on the extended Delete-A-group Jackknife technique proposed by Dr. Phillip S. Kott.\n\nThe advantage of the DAGJK method over the traditional jackknife is that, unlike the latter, it remains computationally manageable even when dealing\nwith \"complex and big\" surveys (tens of thousands of PSUs arranged in a large number of strata with widely varying sizes).\n\nThanks,\n\nDiego Zardetto\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nVersion 1.1 of the EVER package is on CRAN.\n\nEVER (the acronym stands for Estimation of Variance by Efficient Replication) is mainly intended for calculating estimates and standard erro",
       "thread_id": "thread-47f9d40ada33",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment.pl"
+      ]
     },
     {
       "id": "msg-c067074cb245",

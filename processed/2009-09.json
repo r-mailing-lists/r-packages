@@ -13,11 +13,14 @@
       "subject_clean": "amer: generalized additive mixed models with lme4",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090901/6c602412/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090901/6c602412/attachment.pl>",
+      "body_plain": "Dear R-users,\n\nI'd like to announce the release of the amer-package that adds the\ncapability to fit generalized additive mixed models to lme4.\nIt includes a vignette with real data examples and a brief summary of the\ntheory behind the implementation.\n\nBest,\nFabian\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the amer-package that adds the\ncapability to fit generalized additive mixed models to lme4.\nIt includes a vignette with real data examples and a brie",
       "thread_id": "thread-9337bd37be46",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090901/6c602412/attachment.pl"
+      ]
     },
     {
       "id": "msg-650908a342ff",
@@ -77,11 +80,14 @@
       "subject_clean": "new version of R-package mice",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090910/c2e67991/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090910/c2e67991/attachment.pl>",
+      "body_plain": "Dear R-users,\n\nVersion V2.0 of the package mice is now available on CRAN for Windows, Linux and Apple users.\n\nMultivariate Imputation by Chained Equations (MICE) is the name of software for imputing incomplete multivariate data by Fully Conditional Specifcation (FCS). MICE V1.0 appeared in the year 2000 as an S-PLUS library, and in 2001 as an R package. MICE V1.0 introduced predictor selection, passive imputation and automatic pooling. \n\nMICE V2.0, which extends the functionality of MICE V1.0 in several ways. In MICE V2.0, the analysis of imputed data is made completely general, whereas the range of models under which pooling works is substantially extended. MICE V2.0 adds new functionality for imputing multilevel data, automatic predictor selection, data handling, post-processing imputed values, specialized pooling and model selection. Imputation of categorical data is improved in order to bypass problems caused by perfect prediction.Special attention to transformations, sum scores, indices and interactions using passive imputation, and to the proper setup of the predictor matrix. \n\nWe have written also a complete new manual for mice, which can be downloaded from http://www.stefvanbuuren.nl/publications/MICE%20in%20R%20-%20Draft.pdf <https://webmail.kpnplanet.nl/exchweb/bin/redir.asp?URL=http://www.stefvanbuuren.nl/publications/MICE%2520in%2520R%2520-%2520Draft.pdf> \n\nThis article/manual provides a hands-on, stepwise approach to using mice for solving incomplete data problems in real data.\n\nBest Regards,\n\nKarin Groothuis-Oudshoorn & Stef van Buuren\n\n \n\n                                                                           \n\nC.G.M. (Karin) Groothuis-Oudshoorn, Phd\n\nAssistent Professor University of Twente / Biostatistician Roessingh Research and Development\n\nc.g.m.oudshoorn at utwente.nl <mailto:c.g.m.oudshoorn at utwente.nl>  / k.groothuis at rrd.nl <mailto:k.groothuis at rrd.nl> \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-users,\n\nVersion V2.0 of the package mice is now available on CRAN for Windows, Linux and Apple users.\n\nMultivariate Imputation by Chained Equations (MICE) is the name of software for imputing i",
       "thread_id": "thread-043b68dcb61f",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090910/c2e67991/attachment.pl"
+      ]
     },
     {
       "id": "msg-c237f4f675d2",
@@ -109,11 +115,14 @@
       "subject_clean": "New package: tikzDevice",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090912/ca404658/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090912/ca404658/attachment.pl>",
+      "body_plain": "This is to announce the first release of the tikzDevice package on CRAN.\n The package should be migrating to your mirror soon.\nThe tikzDevice package provides a new graphics device for R which enables\ndirect output of graphics in a LaTeX-friendly way.  Please see the original\nposting on R-Forge for all the release details:\nhttp://r-forge.r-project.org/forum/forum.php?forum_id=1596\n\nEnjoy!\n\n- The tikzDevice Team\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This is to announce the first release of the tikzDevice package on CRAN.\n The package should be migrating to your mirror soon.\nThe tikzDevice package provides a new graphics device for R which enables",
       "thread_id": "thread-a4b69703cec5",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090912/ca404658/attachment.pl"
+      ]
     },
     {
       "id": "msg-1108ccc102da",
@@ -141,11 +150,14 @@
       "subject_clean": "New version of QCA",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090921/0a45967e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090921/0a45967e/attachment.pl>",
+      "body_plain": "Hi,\n\nA new version of the QCA package (0.6-0) was submitted to CRAN.\nThis is a major improvement, now working with multi-valued data (previous \nversions accepted binary data only).\nThe \"classical\" function qmcc() still accepts only binary data, but the \nenhanced function eqmcc() is now ready for mvQCA.\n\nThe QCA package performs the Quine-McCluskey algorithm for Qualitative \nComparative Analysis.\n\nAs usual, any suggestions and bug reports are welcomed.\n\nAdrian\n\n-- \nAdrian Dusa\nRomanian Social Data Archive\n1, Schitu Magureanu Bd.\n050025 Bucharest sector 5\nRomania\nTel.:+40 21 3126618 \\\n     +40 21 3120210 / int.101\nFax: +40 21 3158391\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nA new version of the QCA package (0.6-0) was submitted to CRAN.\nThis is a major improvement, now working with multi-valued data (previous \nversions accepted binary data only).\nThe \"classical\" fun",
       "thread_id": "thread-62f4da3e78b0",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090921/0a45967e/attachment.pl"
+      ]
     },
     {
       "id": "msg-d33866832c2c",

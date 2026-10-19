@@ -29,11 +29,14 @@
       "subject_clean": "Stineman interpolation package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl>",
+      "body_plain": "The package STINEPACK is now available on CRAN.\n\nThis package implements the stineman interpolation method, and is coded\nentirely in R\n(no Fortan or C libraries).  The interpolation method is very robust, and\ndoes not yield\nspurious oscillations near spikes or steps. The original article (Stineman\n1980) describes\nthis method as \"consistently well behaved\".\n\nThe interpolation is done in the stinterp routine, and depending on\narguments passed to it, this routine\nmay call other routines to estimate the slope of the interpolating function.\nIf the slope is known it can be\nexplicitly included in stinterp.\n\nThe interpolation method is described in an article by Russell W. Stineman\nin the July 1980 issue of\nCreative Computing with a note from the editor stating that while they were\n\"not an academic journal\nbut once in a while something serious and original comes in\" adding that\nthis was \"apparently a\nreal solution\" to a well known problem.\n\nAccording to Stineman, the interpolation procedure has \"the following\nproperties:\n\n1. If values of the ordinates of the specified points change monotonically,\nand the slopes of the\nline segments joining the points change monotonically, then the\ninterpolating curve and its\nslope will change monotonically.\n2. If the slopes of the line segments joining the specified points change\nmonotonically, then the\nslopes of the interpolating curve will change monotonically.\n3. Suppose that the conditions in (1) or (2) are satisfied by a set of\npoints, but a small change\nin the ordinate or slope at one of the points will result conditions (1) or\n(2) being not longer\nsatisfied. Then making this small change in the ordinate or slope at a point\nwill cause no more\nthan a small change in the interpolating curve.\"\n\nThe method is based on rational interpolation with specially chosen rational\nfunctions to satisfy the\nabove three conditions.\n\nSlopes computed at the given points with the methods provided by the\n'stinterp' function satisfy\nStineman's requirements. The original method suggested by Stineman\n(method=\"scaledstineman\",\nthe default, and \"stineman\") result in lower slopes near abrupt steps or\nspikes in the point sequence,\nand therefore a smaller tendency for overshooting. The method based on a\nsecond degree polynomial\n(method=\"parabola\") provides better approximation to smooth functions, but\nit results in\nin higher slopes near abrupt steps or spikes and can lead to some\novershooting where Stineman's\nmethod does not. Both methods lead to much less tendency for 'spurious'\noscillations than traditional\ninterplation methods based on polynomials, such as splines (see the example\nbelow).\n\nStineman states that \"The complete assurance that the procedure will never\ngenerate 'wild' points\nmakes it attractive as a general purpose procedure\".\n\nThis interpolation method has been implemented in Matlab and Python in\naddition to R\n\nAn example follows:\n\nlibrary(\"stinepack\")\n\n# make a function with a sharp spike\nx <- seq(0,2*pi,by=pi/6)\ny <- sin(x)\ny[3] <- -1.5\n\n# interpolate to a finer axis, try all three methods for estimating the\nslope.\nxo <- seq(0,2*pi,by=pi/150)\ny1 <- stinterp(x,y,xo,method=\"sc\")$y\ny2 <- stinterp(x,y,xo,method=\"st\")$y\ny3 <- stinterp(x,y,xo,method=\"pa\")$y\n\n# compare with standard spline\nysp=spline(x,y,n=length(xo))\n\n# plot the results\nplot(x,y,ylim=c(-1.5,1.5))\npoints(xo,y1,cex=1/5,col=2)\npoints(xo,y2,cex=1/5,col=3)\npoints(xo,y3,cex=1/5,col=4)\npoints(ysp,cex=1/5,col=5)\n\nlegend(3, 1, c(\"Scaled Stineman\", \"Stineman\", \"Parabolic\", \"Spline\"), col =\nc(2,3,4,5),lty=1)\n\n\nSincerely,\nHalldor\n-- \nHalldór Björnsson\nDeildarstj. Ranns. & Þróun\nVeðursvið Veðurstofu Íslands\n\nHalldór Bjornsson\nWeatherservice R & D\nIcelandic Met. Office\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The package STINEPACK is now available on CRAN.\n\nThis package implements the stineman interpolation method, and is coded\nentirely in R\n(no Fortan or C libraries).  The interpolation method is very rob",
       "thread_id": "thread-bdf552e7aa82",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl"
+      ]
     },
     {
       "id": "msg-9516bfe8f0a6",
@@ -109,11 +112,14 @@
       "subject_clean": "new version IPSUR_0.1-1 now available on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment.pl>",
+      "body_plain": "Dear All,\n\nThe latest version of IPSUR (last one for awhile) is\nnow available on CRAN.\n\nWhat's New in 0.1-1:\n\n1. Important bug fixes\n2. Test of equality for several proportions...\n3. Enter table for single proportion test...\n4. Enter table for multiple proportions test...\n5. Bar graph plot by groups (stacked and side-by side)\n6. Enter table for bar graphs...\n\nVisit the IPSUR website for the latest bug fixes, updates, and new features:\n\nhttp://www.cc.ysu.edu/~gjkerns/IPSUR/package<http://www.cc.ysu.edu/%7Egjkerns/IPSUR/package>\n\nRegards,\nJay\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nThe latest version of IPSUR (last one for awhile) is\nnow available on CRAN.\n\nWhat's New in 0.1-1:\n\n1. Important bug fixes\n2. Test of equality for several proportions...\n3. Enter table for s",
       "thread_id": "thread-8767b45df6ea",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment.pl"
+      ]
     },
     {
       "id": "msg-09898611d266",

@@ -45,11 +45,14 @@
       "subject_clean": "Update: googleVis 0.2.4 - Using the Google Visualisation API with R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110208/485fbd95/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110208/485fbd95/attachment.pl>",
+      "body_plain": "Hi all,\n\nVersion 0.2.4 of the googVis package has been released on CRAN and \nwill be available from your local CRAN mirror soon. \n\ngoogleVis provides an interface between R and the Google Visualisation API. \nThe functions of the package allow users to visualise data stored in R with the \nGoogle Visualisation API without  uploading their data to Google\n\nSince the last version a lot of work has been carried out under the bonnet to make \ngoogleVis  more flexible and easier to use. \n\nThe new version no longer requires to install the package into a folder with access \nrights and  provides a better interface to insert the visualisation output into your \nown  sites.\n\nFor more information see:\nProject site: http://code.google.com/p/google-motion-charts-with-r/\nOverview: http://google-motion-charts-with-r.googlecode.com/files/GoogleVisOverview_0.2.4.pdf\nExamples: http://code.google.com/p/google-motion-charts-with-r/wiki/GadgetExamples\nVignette: http://cran.r-project.org/web/packages/googleVis/vignettes/googleVis.pdf\n\nAnd here are the NEWS:\n\nVersion 0.2.4 [2011-02-07]\n==========================\n\nChanges\n   \n   o plot.gvis no longer writes into the package folder. Instead\n     temporary files are created. This overcomes the need to install\n     the package into a directory with write access. Many thanks to\n     Ben Bolker for this suggestion and code contribution.  \n  \n   o plot.gvis no longer requires the web server provided by\n     the R.rsp package to display the visualisation output. Instead it\n     uses the internal R HTTP help server. Many thanks to John Verzani\n     for this suggestion and code contribution. \n  \n   o R >= 2.11.0 is required to plot googleVis output, as it uses the\n     internal R HTTP help server.\n  \n   o Updated vignette with a section on how to use googleVis with\n     RApache and brew\n\nNEW FEATURES\n\n   o The plot function generates a web page which includes a link\n     to the HTML code of the chart. Many thanks to Henrik Bengtsson\n     for this suggestion.\n\n   o gvis visualisation functions have a new argument 'chart id', to\n     set the chart id of the exhibit manually.           \n\n   o gvis functions return more details about the visualisation chart\n     in a structured way. Suppose x is a 'gvis' object, than\n     x$html$chart is a named character vector of the chart's\n     JavaScript building blocks and html tags. \n\n   o print.gvis has a new argument 'tag', which gives the user more\n     control over the output\n\n   o New brew example files in: \n     system.file(\"brew\", package = \"googleVis\")  \n\nBUG FIXES\n\n   o gvisTable did not accept datetime columns.\n\n\nPlease feel free to send us an email <rvisualisation at gmail.com>\nif you would like to be kept informed of new versions, or if you have \nany feedback, ideas, suggestions or would like to collaborate.\n\nBest regards,\n\nThe googleVis team:\nMarkus Gesmann, Diego de Castillo\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nVersion 0.2.4 of the googVis package has been released on CRAN and \nwill be available from your local CRAN mirror soon. \n\ngoogleVis provides an interface between R and the Google Visualisatio",
       "thread_id": "thread-b83e35e231cd",
       "thread_depth": 0,
-      "month": "2011-02"
+      "month": "2011-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110208/485fbd95/attachment.pl"
+      ]
     },
     {
       "id": "msg-73ebbf75a33e",
@@ -93,11 +96,14 @@
       "subject_clean": "ascii package updated",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110227/1a423ff3/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110227/1a423ff3/attachment.pl>",
+      "body_plain": "Hi,\n\nI have uploaded a new version of the ascii package, it should be availble on\nCRAN soon.\n\nMajor new features are:\n - pandoc support (http://johnmacfarlane.net/pandoc/)\n - an alternative to the Sweave \"way\" to create reports: see ?Report. This\nfeature needs a working installation of asciidoc, txt2tags and/or pandoc.\n\nIt becomes increasingly difficult for me to maintain and test all the\navailable markup languages (asciidoc, txt2tags, org, textile,\nrestructeredtext and pandoc for this version), and I would be very pleased\nfor any comments, suggestions or bug reports.\n\nBest,\n\nDavid\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nI have uploaded a new version of the ascii package, it should be availble on\nCRAN soon.\n\nMajor new features are:\n - pandoc support (http://johnmacfarlane.net/pandoc/)\n - an alternative to the Swe",
       "thread_id": "thread-2249fc497961",
       "thread_depth": 0,
-      "month": "2011-02"
+      "month": "2011-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110227/1a423ff3/attachment.pl"
+      ]
     }
   ],
   "threads": [

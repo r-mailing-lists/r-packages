@@ -77,11 +77,14 @@
       "subject_clean": "New version of Rpad",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment.pl>",
+      "body_plain": "Announcing release 0.9.6 of Rpad. This version provides bug fixes and\nsome improved HTML handling. This is also the first widespread release\nthat supports Rpad as an installed package within R.\n\nRpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis\npackage, a web-page designer, and a gui designer all wrapped in\none. Rpad makes it easy to develop powerful data analysis applications\nthat can be shared with others (most likely on an intranet).\n\nRpad is a new type of application like Google's gmail where the\nbrowser page is dynamically updated with R calculations (Ajax is the \nlatest buzzword for this).\n\nRpad can be installed in two ways: (1) local package and (2) server\nstyle. The server version uses Apache (or other web server) to serve\nup web pages and act as an R calculation engine. In the local version,\nRpad is installed as an R package, and it uses a builtin mini web\nserver to serve Rpad pages to your local browser.\n\nYou can try demos of Rpad at: http://www.rpad.org/Rpad\n\nHere are two basic demos that show how it's used:\n\nhttp://www.rpad.org/Rpad/Example1.Rpad\nhttp://www.rpad.org/Rpad/InputExamples.Rpad\n\nHere are two of the fancier demos that show off interactivity using\nRpad (in these examples, the R code is hidden by default):\n\nhttp://www.rpad.org/Rpad/mapdemo.Rpad\nhttp://www.rpad.org/Rpad/SearchRKeywords.Rpad\n\nRpad can be downloaded from CRAN or from www.rpad.org.\n\n- Tom\n\nTom Short\nEPRI Solutions, Inc.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Announcing release 0.9.6 of Rpad. This version provides bug fixes and\nsome improved HTML handling. This is also the first widespread release\nthat supports Rpad as an installed package within R.\n\nRpad ",
       "thread_id": "thread-4cc900de8cd9",
       "thread_depth": 0,
-      "month": "2005-07"
+      "month": "2005-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050725/d9561915/attachment.pl"
+      ]
     },
     {
       "id": "msg-0711b25955b1",

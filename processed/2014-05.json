@@ -29,11 +29,14 @@
       "subject_clean": "Package 'dnet' for omics data integrative analysis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl>",
+      "body_plain": "Dear R package developers and users,\n\nI am pleased to announce the official release of our newly developed\npackage 'dnet', which intends to analyse omics data in terms of network,\nevolution and ontology.\n\nIt has features:\n1. Identification of gene-active networks from high-throughput omics data;\n2. Network-based sample classifications and visualisations on 2D sample\nlandscape;\n3. Random Walk with Restart for network affinity calculation;\n4. Semantic similarity between ontology terms (and between their annotated\ngenes);\n5. Enrichment analysis using a variety of built-in databases;\n6. A wide variety of built-in RData (\nhttp://dnet.r-forge.r-project.org/rdata.html): ontologies (including Gene\nOntology, Disease Ontology, Human Phenotype and Mammalian Phenotype), gene\nevolutionary age information and gene association networks in well-studied\norganisms, including human, mouse, rat, chicken, c.elegans, fruitfly,\nzebrafish and arabidopsis;\n7. Support for high-performance parallel computing.\n\nFor it to be used widely, we have analysed several realcases with\nstep-by-step protocols (http://dnet.r-forge.r-project.org/demos.html).\nSince it supports many functionalities, we also introduce them individual\ntopics in the form of FAQs (http://dnet.r-forge.r-project.org/faqs.html).\n\nEnjoy it!\n\nHai Fang, Ph.D.\n>From Prof. Gough's Group (http://bioinformatics.bris.ac.uk)\nDepartment of Computer Science\nUniveristy of Bristol\nBristol, United Kingdom\nhfang at cs.bris.ac.uk\nhttp://www.cs.bris.ac.uk/~hfang\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R package developers and users,\n\nI am pleased to announce the official release of our newly developed\npackage 'dnet', which intends to analyse omics data in terms of network,\nevolution and ontolo",
       "thread_id": "thread-14d714f0ae78",
       "thread_depth": 0,
-      "month": "2014-05"
+      "month": "2014-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20140521/2342b91e/attachment.pl"
+      ]
     }
   ],
   "threads": [

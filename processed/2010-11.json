@@ -13,11 +13,14 @@
       "subject_clean": "RGtk2 2.20.x",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101105/702f38f2/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101105/702f38f2/attachment.pl>",
+      "body_plain": "This is to announce the release of the RGtk2 2.20.x series. RGtk2 is an\ninterface between R and the GTK+ GUI toolkit and friends. The new release\nupdates the bindings to support up to GTK+ 2.20 (and remains backwards\ncompatible to 2.8). Previously, the interface supported only up to GTK+\n2.12, which is several years old.\n\nNew features in GTK 2.20 (relative to 2.12) include:\n\n* GtkInfoBar widget: Displays transient popup notifications, generally at\nthe bottom of the window (near the status bar).\n* Off-screen rendering of widgets, e.g., automatically save a widget or\nvisualization to disk.\n* GtkSpinner: Animated widget for indicating activity\n* GtkToolPalette: Essentially a multi-row toolbar with drag and drop of\ntoolbar items between the palette and other tool item containers.\n\nThe bindings to Pango and Cairo were also updated to the latest stable\nversions.\n\nRGtk2 also adds a new library to its interface: GIO (2.22), a low-level\nlibrary supporting asynchronous streaming I/O, mounting of volumes,\nnetworking, etc. Might be useful.\n\nThere is also a new mode of error handling available, that is disabled by\ndefault. By setting the option \"RGtk2::newErrorHandling\" to TRUE, errors in\nthe libraries will result in errors in R (instead of warnings), and the\nerror object is no longer returned, which often simplifies return values by\nno longer requiring a list to hold both the error and the original return\nvalue. This is probably a more sensible strategy.\n\nWindows users: The new binaries for Windows are being built against 2.20, so\nyou'll need to get GTK+ 2.20 (or higher, 2.22 is released but does not\nreally add any new features) for Windows at:\nhttp://gtk-win.sourceforge.net/home/index.php/en/Downloads.\n\nThanks,\nMichael\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This is to announce the release of the RGtk2 2.20.x series. RGtk2 is an\ninterface between R and the GTK+ GUI toolkit and friends. The new release\nupdates the bindings to support up to GTK+ 2.20 (and r",
       "thread_id": "thread-bce51d79e35c",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20101105/702f38f2/attachment.pl"
+      ]
     },
     {
       "id": "msg-05b71c95d619",
@@ -45,11 +48,14 @@
       "subject_clean": "lubridate v2.2 available on cran",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101117/872a2669/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20101117/872a2669/attachment.pl>",
+      "body_plain": "Version 2.2 of the lubridate package is now available. lubridate makes it\neasier to work with date-time data. For example, it provides:\n\n* simple functions to extract and modify components of a date-time,\nsuch as years, months, days, hours, minutes, and seconds: year(),\nmonth(), day(), ...\n\n* quick and easy functions to parse date-times: ymd(), dmy(), mdy(), ...\n\n* helper functions for handling time zones: with_tz(), force_tz()\n\n* three new time span objects -- durations, periods, and intervals -- based\non the time span classes of http://joda.org and the boost C++ library.\n\nThe new version includes:\n\n* division, modulo, and integer methods for time spans.\n\n* cleaner display formats for time span objects\n\n* a namespace for the package\n\nFor an example of how you might use lubridate, calculate the number of days\nuntil christmas with:\n\n(ymd(\"2010-12-25\") - today()) / ddays(1)\n\n---------------------------\nGarrett Grolemund\nRice University\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 2.2 of the lubridate package is now available. lubridate makes it\neasier to work with date-time data. For example, it provides:\n\n* simple functions to extract and modify components of a date-t",
       "thread_id": "thread-9a63b3ab996e",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20101117/872a2669/attachment.pl"
+      ]
     }
   ],
   "threads": [

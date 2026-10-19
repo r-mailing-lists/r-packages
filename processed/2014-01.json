@@ -45,11 +45,14 @@
       "subject_clean": "TAQMNGR",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl>",
+      "body_plain": "Dear R users\nSome days ago we released the package 'TAQMNGR'.\nThe package manages tick-by-tick transaction data, performing 'cleaning',\n'aggregation' and 'import' in an efficient and fast way (the package engine\nis in C++). Cleaning and Aggregation are performed according to Brownlees\nand Gallo (2006).\nCurrently, the package processes raw data from WRDS (Wharton Research Data\nService -- See help(TAQMNGR) for more details on the data format).\nIn comparison with packages performing similar tasks, there is no\nlimitation in the length of the time period, the number of tickers or the\nnumber of files processed and there is no need to adjust raw data (for\nexample uncompressing or splitting files).\nBest regards\n\n-- \nFabrizio Cipollini\nDipartimento di Statistica, Informatica e Applicazioni (DISIA) 'G. Parenti'\nviale Morgagni 59, 50134, Firenze\nskype: cipollini_fabrizio\ntel: (+39) 055 2751592\nfax: (+39) 055 4223560\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users\nSome days ago we released the package 'TAQMNGR'.\nThe package manages tick-by-tick transaction data, performing 'cleaning',\n'aggregation' and 'import' in an efficient and fast way (the pac",
       "thread_id": "thread-c1c0eb95a9a7",
       "thread_depth": 0,
-      "month": "2014-01"
+      "month": "2014-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20140120/01017d5f/attachment.pl"
+      ]
     },
     {
       "id": "msg-fc1cb3811c49",

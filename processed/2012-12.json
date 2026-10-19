@@ -45,11 +45,14 @@
       "subject_clean": "AQ-R 0.2 // realtime messaging.",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/f7ce8e8f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/f7ce8e8f/attachment.pl>",
+      "body_plain": "Hi there,\n\nI am glad to announce AQ-R 0.2 has been successfully built and is \navailable via install.packages(\"aqr\", \nrepos=\"http://R-Forge.R-project.org\").\n\n\nThe most important new feature is real-time messaging from within R.\n\nAQ-R 0.2 enables you to send and receive byte[] messages within R \nthrough a STOMP compliant messaging server, such as the ActiveQuant \nMaster Server. There are various STOMP protocol compliant servers [1].\n\nYou can build arbitrarily complex messaging infrastructures, where \nmessages flow between R instances or other-language messaging components.\n\nThe key functions are:\naqSubscribe(aChannel) - subscribe to messages in a channel\naqWaitForData() - a blocking call that waits for data to arrive\naqPoll() - fetches all messages from the internal buffer (not the STOMP \nserver)\naqSend(channel, text) - send a message to a channel\n\nThis extension does buffer incoming data between consecutive aqPoll() \ncalls.\n\nThe core loop for using this should look like:\n\nwhile(aqWaitForData()){\n     data = aqPoll()\n}\n\n\nVersion 0.2 is beta. I have thoroughly tested it on Windows and on \nLinux. I am looking for more testers and feedback.\n\nDemo video at [2].\n\n<buzz>I hope it opens up an easy venue to build distributed calculators \nwithout the hassle of going through MPI or anything similar, in a truely \ncross-platform approach, making R a viable citizen in  highly \nheterogenous message processing environments. </buzz>\n\n\n\nCheers,\nUlrich\n\n\n\n\nReferences:\n[1] http://stomp.github.com/implementations.html#STOMP_1_0_Servers\n[2] http://www.youtube.com/watch?v=h1gLgJOEWW0\n\n\n-- \nUlrich Staudinger, ActiveQuant GmbH\n\nP: +41 79 702 05 95\nE:ustaudinger at activequant.com\n\nhttp://www.activequant.com\nConnect online:https://www.xing.com/profile/Ulrich_Staudinger\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi there,\n\nI am glad to announce AQ-R 0.2 has been successfully built and is \navailable via install.packages(\"aqr\", \nrepos=\"http://R-Forge.R-project.org\").\n\n\nThe most important new feature is real-tim",
       "thread_id": "thread-7c81e0060a39",
       "thread_depth": 0,
-      "month": "2012-12"
+      "month": "2012-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/f7ce8e8f/attachment.pl"
+      ]
     },
     {
       "id": "msg-4fbbbe5ad0a6",
@@ -61,11 +64,14 @@
       "subject_clean": "SamplingStrata version 1.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/6c76e21a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/6c76e21a/attachment.pl>",
+      "body_plain": "SamplingStrata (1.0) is now available on CRAN.\n\nPackage \"SamplingStrata\" permits the determination of the best stratification of a sampling frame, the one that ensures the sample of minimum cost, under the condition to satisfy precision constraints in a multivariate and multidomain case. \n\nThis new version of the package offer two new functions:\n- \"evalSolution\", to evaluate the found solution in terms of expected target variables precision and bias obtainable by samples drawn from the otpimized frame;\n- \"tuneParameters\", to determine the best combination of values to assign to the parameters necessary for the execution of the genetic algorithm used for the optimization of the frame stratification.\n\nAn overview of the way this package can be used in practice is contained in the vignette \"Optimization of sampling strata with the SamplingStrata package\" available on the website.\nA focus on the use of  the \"tuneParameters\" function is in the vignette \"tuneParameters.pdf\" contained in the \\inst\\doc folder.\n <http://cran.r-project.org/web/packages/SamplingStrata/vignettes/SamplingStrataVignette.pdf>\n\n-- \nGiulio Barcaroli\nServizio Metodologie, Strumenti e Supporto metodologico\nDipartimento Integrazione, Qualità e Reti\nIstituto Nazionale di Statistica\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "SamplingStrata (1.0) is now available on CRAN.\n\nPackage \"SamplingStrata\" permits the determination of the best stratification of a sampling frame, the one that ensures the sample of minimum cost, unde",
       "thread_id": "thread-4fbbbe5ad0a6",
       "thread_depth": 0,
-      "month": "2012-12"
+      "month": "2012-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20121205/6c76e21a/attachment.pl"
+      ]
     },
     {
       "id": "msg-e043ede0433b",

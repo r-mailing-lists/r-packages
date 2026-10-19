@@ -29,11 +29,14 @@
       "subject_clean": "Version 0.93 of GAM package on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment.ksh>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment.ksh>",
+      "body_plain": "I have posted an update to the GAM package. Note that this package \nimplements gam() as described\nin the \"White\" S book (Statistical models in S). In particular, you can \nfit models with lo() terms (local regression)\nand/or s() terms (smoothing splines), mixed in, of course, with any \nterms appropriate for glms.\n\nA number of bugs in version 0.92 have been fixed; notably\n\n1) some problems with predict and newdata\n2) plot.gam now works with any model for which predict( ..., \ntype=\"terms\") is appropriate\n   (well, at least several). Examples are lm, glm, gam and coxph models.\n\n  So for example, if you have fit a Cox model\n\n\tcox1 <- coxph( Surv(Survival, death) ~ Grade + ns(Age,4) + ns(Size,4))\n\n  Then plot.gam(cox1, se=T) will produce three plots, one for each term \nin the model, with standard error bands.\n\n3) I have implemented the fast versions of backfitting for models \nconsisting of all local regression\n     terms (lo.wam) or all smoothing spline terms (s.wam).\n\nPlease let me know of any problems with the gam package\n\nTrevor Hastie\n\n-------------------------------------------------------------------\n  Trevor Hastie                                   hastie at stanford.edu \n  Professor, Department of Statistics, Stanford University\n  Phone: (650) 725-2231 (Statistics)          Fax: (650) 725-8977 \n  (650) 498-5233 (Biostatistics)   Fax: (650) 725-6951\n  URL: http://www-stat.stanford.edu/~hastie \n    address: room 104, Department of Statistics, Sequoia Hall\n           390 Serra Mall, Stanford University, CA 94305-4065 \n  --------------------------------------------------------------------\n\n\t[[alternative text/enriched version deleted]]",
+      "body_snippet": "I have posted an update to the GAM package. Note that this package \nimplements gam() as described\nin the \"White\" S book (Statistical models in S). In particular, you can \nfit models with lo() terms (l",
       "thread_id": "thread-483990c8a710",
       "thread_depth": 0,
-      "month": "2005-04"
+      "month": "2005-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050405/edd6bd53/attachment.ksh"
+      ]
     },
     {
       "id": "msg-dff7e65d8ab3",
@@ -61,11 +64,14 @@
       "subject_clean": "g.data version 1.6, upgrade in response to changes in R-2.1.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050414/b9a7e59c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050414/b9a7e59c/attachment.pl>",
+      "body_plain": "Version 1.6 of the \"g.data\" package is available on CRAN.\nThe \"g.data\" package is used to create and maintain delayed-data\npackages (DDP's). Data stored in a DDP are available on demand, but do\nnot take up memory until requested. You attach a DDP with\ng.data.attach(), then read from it and assign to it in a manner similar\nto S-Plus, except that you must run g.data.save() to actually commit to\ndisk.\nThis new version uses delayedAssign (new to R-2.1.0) instead of delay\n(deprecated in R-2.1.0).  If it detects you are using R-2.1.0 or higher,\nit will automatically upgrade older DDP's.  Version 1.6 of \"g.data\" will\nstill work fine under earlier versions of R too.  Note, however, that\nonce you upgrade an older DDP (by g.data.attach'ing it under R-2.1.0),\nit will no longer be readable by earlier versions of R (which do not\nunderstand delayedAssign), so users running multiple versions of R may\nwant to avoid this upgrade.  Please contact me if this presents a\nproblem.\n\n-- David Brahm (brahm at alum.mit.edu)\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 1.6 of the \"g.data\" package is available on CRAN.\nThe \"g.data\" package is used to create and maintain delayed-data\npackages (DDP's). Data stored in a DDP are available on demand, but do\nnot ta",
       "thread_id": "thread-1bb4410b31b6",
       "thread_depth": 0,
-      "month": "2005-04"
+      "month": "2005-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050414/b9a7e59c/attachment.pl"
+      ]
     },
     {
       "id": "msg-221b660aaf70",
@@ -157,11 +163,14 @@
       "subject_clean": "psy version 0.65 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050426/14880319/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050426/14880319/attachment.pl>",
+      "body_plain": "Dear R users,\n\n \n\npsy version 0.65 is on CRAN now.\n\npsy provides several methods used in psychometry (kappa, icc, cronbach,\nscreeplot (with simulations), non linear mapping, etc.)\n\nA bug has been fixed in function wkappa (weighted kappa): in particular\ncircumstances, the 2*2 table presented levels in an order different to what\nwas suggested in the help file.\n\nThe fpca function (PCA plot with pvalues and compatible with\ndependant/independant variables dichotomy) has been extended.\n\nAs usual, any kind of feedback is the most welcome…\n\n \n\nBruno\n\n \n\n------------------------------------------------------------------------\n\nBruno Falissard\n\nDépartement de santé publique\n\nHôpital Paul Brousse\n\n14 Avenue Paul Vaillant Couturier\n\n94804 Villejuif cedex, France\n\ntel : (+33) 6 81 82 70 76\n\nfax : (+33) 1 45 59 34 18\n\nweb site :  <http://perso.wanadoo.fr/bruno.falissard/>\nhttp://perso.wanadoo.fr/bruno.falissard/\n\n------------------------------------------------------------------------\n\n \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\n \n\npsy version 0.65 is on CRAN now.\n\npsy provides several methods used in psychometry (kappa, icc, cronbach,\nscreeplot (with simulations), non linear mapping, etc.)\n\nA bug has been fixe",
       "thread_id": "thread-bfd3ab1de3d5",
       "thread_depth": 0,
-      "month": "2005-04"
+      "month": "2005-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050426/14880319/attachment.pl"
+      ]
     },
     {
       "id": "msg-bbc184592eab",

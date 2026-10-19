@@ -93,11 +93,14 @@
       "subject_clean": "dcemri: A package for medical image analysis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl>",
+      "body_plain": "dcemri 0.10 has been released on CRAN\n\n\"dcemri\" is (to the best of my knowledge) the first public-domain software \npackage for the quantitative analysis of dynamic contrast-enhanced MRI \n(DCE-MRI) and diffusion-weighted MRI (DW-MRI or DWI).  Data import and \nexport is availble for ANALYZE or NIfTI data formats (sorry, no DICOM). \nImages are stored in neurological format regardless of the \"handedness\" of \nthe data; i.e., simple reflections are allowed via the q-form or s-form \ncodes in NIfTI.\n\nSoftware development is currently under SourceForge via\n\n        http://www.dcemri.org\n\nA mailing list has been established and feedback is appreciated.\n\nFunctionality includes:\n\nMotion correction and co-registration via \"fast template matching\"\nT1 quantification via multiple flip-angle acquistions (inversion recovery \ncoming soon!)\nConversion to gadolinium contrast agent concentration\nParametric models for the arterial input function (AIF), both \nliterature-based (Tofts-Kermode and Fritz-Hansen) and data-adaptive.\nKinetic parameter estimation using a variety of compartmental models \n(e.g., Kety, extended Kety, etc.)\nEstimation via nonlinear regression (Levenburg-Marquardt optimization) or \nBayesian methods (MCMC)\nSemi-parametric methods via Bayesian P-splines (MCMC)\n\nA detailed vignette has been included as a \"tutorial\" for the package and \npermission was obtained to include the simulated data from Buckley (2002; \nMRM).  Basic NIfTI data sets have also been provided.\n\nSincerely,\n\nBrandon\n\n\n-----------------------------------------------------------\nThis e-mail was sent by GlaxoSmithKline Services Unlimited \n(registered in England and Wales No. 1047315), which is a \nmember of the GlaxoSmithKline group of companies. The \nregistered address of GlaxoSmithKline Services Unlimited \nis 980 Great West Road, Brentford, Middlesex TW8 9GS.\n-----------------------------------------------------------\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "dcemri 0.10 has been released on CRAN\n\n\"dcemri\" is (to the best of my knowledge) the first public-domain software \npackage for the quantitative analysis of dynamic contrast-enhanced MRI \n(DCE-MRI) and",
       "thread_id": "thread-8f5d3e69d2ea",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl"
+      ]
     },
     {
       "id": "msg-a1d51a04e578",

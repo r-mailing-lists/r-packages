@@ -61,11 +61,14 @@
       "subject_clean": "RQDA 0.2-2 has been released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl>",
+      "body_plain": "Dear all,\n\nRQDA is a package for computer-aided qualitative data analysis, currently\nsupporting plain text as qualitative data.\nIt supports various operations in the grounded theory tradition such as\ncoding, retrieval of codings, categorisation, attributes etc. It can also\nbe used for content analysis and similar analysis, the result of which can\nbe exported to be analysed in quantitative or qualitative comparative\nanalysis.\n\nThe change in the new version includes:\n* easier to uncode a coding (major change in GUI behaviour)\n* rename of GetAttr to getAttr\n* support MySQL preliminarily\n* export attribute items in pop-up menu\n* new function of codingBySearch, for auto-coding\n* new function of exportCodedFile\n* enhancement related to encoding\n* various bugfixes\nMore can be found in the changelog.\n\nAs always, comments, suggestions and contributions are highly welcome.\n\nBest\n\n-- \nWincent Ronggui HUANG\nSociology Department of Fudan University\nPhD of City University of Hong Kong\nhttp://homepage.fudan.edu.cn/rghuang/cv/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nRQDA is a package for computer-aided qualitative data analysis, currently\nsupporting plain text as qualitative data.\nIt supports various operations in the grounded theory tradition such as\n",
       "thread_id": "thread-35afa1e44bb4",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl"
+      ]
     },
     {
       "id": "msg-b0e02b2d1205",

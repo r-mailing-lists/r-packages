@@ -97,11 +97,14 @@
       "subject_clean": "R Package: ssanv - Sample size adjustments for nonadherence and variability of input parameters",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/dc0b3c9b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/dc0b3c9b/attachment.pl>",
+      "body_plain": "Hi,\n\nThis is a late announcement for a package that has been up on CRAN since Feb 2006. \n\nThe package is called ssanv and it calculates sample sizes for two group tests with adjustments for nonadherence and variability of the input parameters. As an example, suppose you want a sample size for a two group difference in normal means but you get your estimate of your variance from a previous study. Then with this package, you can account for the variability of that variance estimate in your sample size calculations. The details are described in:\n\n\n\n\t\tFay, MP, Halloran, ME, Follmann, DA. Accounting for Variability in Sample Size Estimation with Applications to Nonadherence and Estimation of Variance and Effect Size. Biometrics 2007, 63: 465-474. http://www.blackwell-synergy.com/doi/abs/10.1111/j.1541-0420.2006.00703.x\n\n\nPlease let me know of any problems with the package or have any comments.\n\nThanks, \n\n\nMike\n\n\n\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)                           \n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\n**********************************************************************\n\nDisclaimer: \n\nThe information in this e-mail and any of its attachments is confidential and may contain sensitive information. It should not be used by anyone who is not the original intended recipient. If you have received this e-mail in error please inform the sender and delete it from your mailbox or any other storage devices. National Institute of Allergy and Infectious Diseases shall not accept liability for any statements made that are sender's own and not expressly made on behalf of the NIAID by one of its representatives\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nThis is a late announcement for a package that has been up on CRAN since Feb 2006. \n\nThe package is called ssanv and it calculates sample sizes for two group tests with adjustments for nonadheren",
       "thread_id": "thread-cf576e458887",
       "thread_depth": 0,
-      "month": "2007-06"
+      "month": "2007-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/dc0b3c9b/attachment.pl"
+      ]
     },
     {
       "id": "msg-ebf0ff1b7de6",
@@ -113,11 +116,14 @@
       "subject_clean": "R package: Mchtest - Monte Carlo hypothesis testing allowing Sequential Stopping",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment.pl>",
+      "body_plain": "Hi,\n\nThis is an announcement for a package that has been up on CRAN since March 2006 but was never announced.\n\nThe package is Mchtest - for Monte Carlo hypothesis tests allowing sequential stopping.  The idea is to use the sequential probability ratio test boundaries to stop resampling for a Monte Carlo hypothesis test such as a bootstrap or permutation test. This means that you will take many samples when the p-value is close to the significance level (e.g., 0.05), but you may stop after a much  fewer samples if it becomes clear that the p-value is either very likely to be less than or more than 0.05. \n\nThe details are described in:\n\n\t\tFay, MP, Kim, H-J, and Hachey, M. (2007). \"On using Truncated Sequential Probability Ratio Test Boundaries for Monte Carlo Implementation of Hypothesis Tests.\" (to appear in Journal of Graphical and Computational Statistics).  \n             http://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael\n\n\nPlease let me know of any problems or if you have any comments. \n\n\nMike\n\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)                           \n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\n**********************************************************************\n\nDisclaimer: \n\nThe information in this e-mail and any of its attachments is confidential and may contain sensitive information. It should not be used by anyone who is not the original intended recipient. If you have received this e-mail in error please inform the sender and delete it from your mailbox or any other storage devices. National Institute of Allergy and Infectious Diseases shall not accept liability for any statements made that are sender's own and not expressly made on behalf of the NIAID by one of its representatives\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nThis is an announcement for a package that has been up on CRAN since March 2006 but was never announced.\n\nThe package is Mchtest - for Monte Carlo hypothesis tests allowing sequential stopping.  ",
       "thread_id": "thread-ebf0ff1b7de6",
       "thread_depth": 0,
-      "month": "2007-06"
+      "month": "2007-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d0c6991b/attachment.pl"
+      ]
     },
     {
       "id": "msg-2ad63d7412c9",
@@ -129,11 +135,14 @@
       "subject_clean": "New Package: rateratio.test",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment.pl>",
+      "body_plain": "Hi,\n\nI just uploaded a new package rateratio.test. The package contains one function of the same name and it performs an exact rate ratio test for Poisson counts.  Unlike binom.test and fisher.test the p-values and confidence intervals are internally consistent. In other words, if the p-value implies that the null hypothesis should be rejected, then the confidence interval also implies that the null should be rejected. There is a vignette discussing this issue.\n\n\nMike\n\n\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)                           \n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\n**********************************************************************\n\nDisclaimer: \n\nThe information in this e-mail and any of its attachments is confidential and may contain sensitive information. It should not be used by anyone who is not the original intended recipient. If you have received this e-mail in error please inform the sender and delete it from your mailbox or any other storage devices. National Institute of Allergy and Infectious Diseases shall not accept liability for any statements made that are sender's own and not expressly made on behalf of the NIAID by one of its representatives\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nI just uploaded a new package rateratio.test. The package contains one function of the same name and it performs an exact rate ratio test for Poisson counts.  Unlike binom.test and fisher.test th",
       "thread_id": "thread-2ad63d7412c9",
       "thread_depth": 0,
-      "month": "2007-06"
+      "month": "2007-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070606/d1b1dce4/attachment.pl"
+      ]
     },
     {
       "id": "msg-b437f26ed288",
@@ -177,11 +186,14 @@
       "subject_clean": "RGtk2 2.10.x series available",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment.pl>",
+      "body_plain": "The new 2.10.x series of the RGtk2 package has recently become available on\nCRAN. RGtk2 is a package for creating graphical user interfaces (GUI's) in R\nand is similar in purpose to the tcltk package. RGtk2 binds to and enables\nthe extension of the GTK+ user interface library, as well as several other\nlibraries that are integrated with GTK+. The gWidgetsRGtk2 package provides\nan RGtk2 implementation of the elegant toolkit-independent gWidgets API. The\ncairoDevice package allows embedding of R graphics inside RGtk2 interfaces.\n\nRGtk2 2.10.x (currently at 2.10.9-1) brings several major improvements:\n\n* Updated bindings to the latest stable versions of all bound libraries,\nwhich include: GTK+, GDK, GdkPixbuf, Cairo, Pango and libglade.\n* The ability to create new GObject classes, including new types of widgets,\nentirely from within R.\n* The compilation of RGtk2 now conditions on the versions of the libraries\ninstalled on the system. This means that RGtk2 has the same dependencies as\nthe original 2.8.x series, but if newer versions of libraries (ie GTK+\n2.10.x) are available, it will bind to the new API.\n* Much of the C-level API has been registered to be callable from the C code\nof other packages (allowing packages binding other GObject-based libraries\nto borrow from RGtk2).\n* Many, many bugfixes and minor improvements.\n\nRGtk2 offers several advantages over tcltk:\n\n* Many more features (too many more to list)\n* Arguably cleaner API\n* Integration with gWidgets (via gWidgetsRGtk2); see the 'pmg' package for\nan example of this in action.\n* The ability to create new types of widgets from scratch.\n* Support for building GUI's using the point-and-click interface design tool\nGlade (via libglade); see the 'rattle' package for example.\n* Extras: Cairo vector graphics, GdkPixbuf image manipulation, etc.\n\nRGtk2 as well as all other packages mentioned here are available on CRAN.\n\nMichael Lawrence\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The new 2.10.x series of the RGtk2 package has recently become available on\nCRAN. RGtk2 is a package for creating graphical user interfaces (GUI's) in R\nand is similar in purpose to the tcltk package.",
       "thread_id": "thread-9f518f5d6554",
       "thread_depth": 0,
-      "month": "2007-06"
+      "month": "2007-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20070619/8ab78a9f/attachment.pl"
+      ]
     },
     {
       "id": "msg-4b8797091c68",

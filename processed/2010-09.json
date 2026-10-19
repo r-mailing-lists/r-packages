@@ -141,11 +141,14 @@
       "subject_clean": "depmixS4 1.0-0 on CRAN & vignette/paper on jstatsoft.org",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100920/f274fed3/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100920/f274fed3/attachment.pl>",
+      "body_plain": "depmixS4 has reached some form of maturity and therefore we have bumped its\nversion number to 1.0-0 which is now on CRAN:\nhttp://cran.r-project.org/web/packages/depmixS4/index.html\n\ndepmixS4 fits hidden (latent) Markov models of multivariate, mixed\ncategorical and continuous data, otherwise known as dependent mixture\nmodels. Responses or observations can be modeled using GLMs, and\nadditionally with multivariate normal or multinomial distributions. The\npackage includes an example of how to add new response distributions.\n\nThere is a paper introducing the package in the Journal of Statistical\nSoftware http://www.jstatsoft.org/v36/i07 which is also included as a\nvignette http://cran.r-project.org/web/packages/depmixS4/index.html\n\nThe development version of depmixS4 can be found on the R-forge site:\nhttps://r-forge.r-project.org/projects/depmix/\n\nbest, Ingmar Visser & Maarten Speekenbrink\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "depmixS4 has reached some form of maturity and therefore we have bumped its\nversion number to 1.0-0 which is now on CRAN:\nhttp://cran.r-project.org/web/packages/depmixS4/index.html\n\ndepmixS4 fits hidd",
       "thread_id": "thread-e11885fe8384",
       "thread_depth": 0,
-      "month": "2010-09"
+      "month": "2010-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100920/f274fed3/attachment.pl"
+      ]
     },
     {
       "id": "msg-d7def49003bc",

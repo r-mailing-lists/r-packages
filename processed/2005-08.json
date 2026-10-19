@@ -61,11 +61,14 @@
       "subject_clean": "New CRAN package: DICOM",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050822/3cbe4820/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20050822/3cbe4820/attachment.pl>",
+      "body_plain": "The package DICOM is a first attempt at a set of routines to import and \nsummarize medical imaging data that conforms to the DICOM standard.  This \nis now the industry standard for a wide variety of medical imaging \nequipment (e.g., PET, MRI, CT, etc.).  Please see http://medical.nema.org \nfor more information about the DICOM standard.  A simple list structure \nholds the separate header and image information.  I currently export any \nimage files (4D arrays) in Analyze format for further analysis.  These \n(exporting) routines may be added in the future.\n\nI welcome any comments/questions/suggestions.\n\ncheers...\n\nBrandon\n\n\nBrandon Whitcher, PhD\nClinical Imaging Scientist\nTranslational Medicine & Genetics\nGlaxoSmithKline, UK\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The package DICOM is a first attempt at a set of routines to import and \nsummarize medical imaging data that conforms to the DICOM standard.  This \nis now the industry standard for a wide variety of m",
       "thread_id": "thread-9c43ae08ebc0",
       "thread_depth": 0,
-      "month": "2005-08"
+      "month": "2005-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20050822/3cbe4820/attachment.pl"
+      ]
     },
     {
       "id": "msg-3364e41a4775",

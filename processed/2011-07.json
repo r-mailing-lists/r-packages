@@ -61,11 +61,14 @@
       "subject_clean": "ANNOUNCE -- Rjms package, message publishing using rJava and ActiveMQ",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl>",
+      "body_plain": "EIP(Enterprise Integration Patterns), ESB( Enterprise service bus) are\ncommonly used terms utilized with Message oriented middleware.\nApache ActiveMQ implements message queues and message topics. The Rjms\npackage brings the capabilities of messaging to R.\nThe description states:\nThis package uses rJava to publish messages to an ActiveMQ queue or topic,\nimplementing Enterprise Integration Patterns.\n\nThis is the first version of the project. The usage is pretty simple: you\ncreate a logger, send messages to a queue/topic using the logger and destroy\nthe logger.\nOne interesting use case is in monitoring various iteration results while\nthe code executes.Using Rjms and ActiveMQ, a user can log various values and\nupdate a chart or a table on a realtime basis. In case your iterations are\nheading in the wrong direction, you can interrupt the code execution.\nIt feels good to bring the two open source projects together.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "EIP(Enterprise Integration Patterns), ESB( Enterprise service bus) are\ncommonly used terms utilized with Message oriented middleware.\nApache ActiveMQ implements message queues and message topics. The ",
       "thread_id": "thread-0c778e0b8983",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl"
+      ]
     },
     {
       "id": "msg-f0644b2a53d9",
@@ -157,11 +160,14 @@
       "subject_clean": "CatDyn - Estimation of wild populations abundance",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl>",
+      "body_plain": "Dear ComRades,\n\nPackage CatDyn 1.0-3 is now available on CRAN.\n\nThe package allows the estimation of the absolute abundance of a wild population during a capture season using a nonlinear and recursive discrete-time structural model.\n\nThe response variable is the catch, assumed a random variable produced by either a multiplicative stochastic process (lognormal distribution) or an additive stochastic process (normal distribution).\n\nThe predictor variables are capture effort, assumed observed exactly, and stock abundance, a latent predictor.\n\nThe data are high frequency (e.g. daily) observations of catch and capture effort during the season.\n\nThe structural model comes in five varieties. The simplest model assumes that all individuals that can be captured during the season were available at the start of the season, thus during the season the abundance always decreases (a pure depletion model), due to natural mortality and capture mortality. The other versions include one, two, three or four positive perturbations, such as immigration of recruits, that occur at certain time steps during the season. The models also includes nonlinear (power) relations between response and predictors. The models can be fit with natural mortality fixed at a given value or letting this parameter be estimated as well. Taking into account structural and stochastic options, CatDyn can fit up to 20 model versions to the same data.\n\nCatDyn uses the recently released optimx package for maximum flexibility in selecting and using numerical methods implemented in R. CatDyn also has analytical gradients but in the current version these gradients are not yet passed to the optimizer; instead they are computed after convergence using numerical gradients, in order to compare analytical versus numerical gradients at the maximum likelihood estimates using various methods.\n\nCatDyn estimates all parameters in the log scale and uses function deltamethod() from package msm to return back-transformed estimates vectors and covariance matrices. \n\nCatDyn has been used already to estimate abundance of several fish and invertebrate stocks harvested by industrial and artisanal fishing fleets over the world.\n\nA manuscript is under preparation with the first application (a squid stock from the Falkland Islands) and will be submitted to a marine science journal.\n\nDr. Rubén H. Roa-Ureta,\nAZTI Tecnalia, Txatxarramendi Ugartea z/g,\nSukarrieta, Bizkaia, SPAIN\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear ComRades,\n\nPackage CatDyn 1.0-3 is now available on CRAN.\n\nThe package allows the estimation of the absolute abundance of a wild population during a capture season using a nonlinear and recursive",
       "thread_id": "thread-5674ff1a9510",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl"
+      ]
     },
     {
       "id": "msg-2945530103f3",

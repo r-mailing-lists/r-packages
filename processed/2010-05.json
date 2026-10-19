@@ -29,11 +29,14 @@
       "subject_clean": "Release of optimbase, optimsimplex and neldermead packages",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl>",
+      "body_plain": "Dear R users,\n\nI am pleased to announce the release of three new R packages: optimbase,\noptimsimplex, and neldermead.\n- optimbase provides a set of commands to manage an abstract optimization\nmethod. The goal is to provide a building block for a large class of\nspecialized optimization methods. This package manages: the number of\nvariables, the minimum and maximum bounds, the number of non linear\ninequality constraints, the cost function, the logging system, various\ntermination criteria, etc...\n- optimsimplex provides a building block for optimization algorithms based\non a simplex. The optimsimplex package may be used in the following\noptimization methods: the simplex method of Spendley et al., the method of\nNelder and Mead, Box's algorithm for constrained optimization, the\nmulti-dimensional search by Torczon, etc...\n- neldermead depends on optimbase and optimsimplex and provides several\ndirect search optimization algorithms based on the simplex method. The\nprovided algorithms are direct search algorithms, i.e. algorithms which do\nnot use the derivative of the cost function. They are based on the update of\na simplex. The following algorithms are available: the fixed size simplex\nmethod of Spendley, Hext and Himsworth (unconstrained optimization with a\nfixed sized simplex), the variable size simplex method of Nelder and Mead\n(unconstrained optimization with a variable sized simplex), Box's complex\nmethod (constrained optimization with a variable sized simplex). This\npackage includes an R-port of the fminsearch function (available in Matlab\nand Scilab) which is a specialized use of the more general neldermead\npackage and computes the unconstrained minimimum of given function with the\nNelder-Mead algorithm.\n\nOne important benefit offered by those packages (especially optimbase) is\nthe possibly for the user to define functions that will be called at the\neach iteration of the optimization process. These functions may be used when\ndebugging a specialized optimization algorithm, to write to one or several\nreport files, or create/update optimization graphs. optimbase can\naccommodate both derivative-based or derivative-free algorithms.\n\nThe three packages are ports of original Scilab modules written by Michael\nBaudin at the Digiteo Consortium (and previously at Institut National de\nRecheche en Informatique et en Automatique).\n\nAll packages are available in version 1.0-1 on CRAN.\n\nAny question, comment or feedback on those packages can be sent at:\nsb.pmlab at gmail.com.\n\nSebastien Bihorel\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am pleased to announce the release of three new R packages: optimbase,\noptimsimplex, and neldermead.\n- optimbase provides a set of commands to manage an abstract optimization\nmethod. ",
       "thread_id": "thread-a67f0bfed85e",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl"
+      ]
     },
     {
       "id": "msg-1a7427e5fe87",
@@ -45,11 +48,14 @@
       "subject_clean": "Release of the scaRabee package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl>",
+      "body_plain": "Dear R-users,\n\nI am pleased to announce the release of scaRabee, a new R package which\nconstitutes a toolkit for modeling and simulation in the field of\npharmacometrics. It was designed as a user-friendly interface to create and\nmodify model scripts, define system observations and inputs, and run\nsimulation or estimation analysis. scaRabee provides templates for the\ndefinition of pharmacokinetic-pharmacodynamic models with closed form\nsolutions, ordinary or delay differential equations. At the end of each\nanalysis, scaRabee automatically generates diagnostic plots, report files\nwith run estimate statistics, and a log file with the history of the\noptimization process (for estimation runs). Optimization in scaRabee are\nperformed using the simplex method of Nelder and Mead, implemented in the\nneldermead package.\n\nscaRabee is available on CRAN or at http://code.google.com/p/pmlab/ in\nversion 1.0.\n\nAny question, comment or feedback on this package is to be sent at:\nsb.pmlab at gmail.com.\n\nSebastien Bihorel\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-users,\n\nI am pleased to announce the release of scaRabee, a new R package which\nconstitutes a toolkit for modeling and simulation in the field of\npharmacometrics. It was designed as a user-frie",
       "thread_id": "thread-1a7427e5fe87",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl"
+      ]
     },
     {
       "id": "msg-f641ebd1aaec",
@@ -77,11 +83,14 @@
       "subject_clean": "hash-2.0.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl>",
+      "body_plain": "The hash-2.0.0 has been released to CRAN.\n\nThis package implements a data structure similar to hashes in Perl and\ndictionaries in Python but with a purposefully R flavor. For objects of\nappreciable size, access using hashes outperforms native named lists and\nvectors.\n\nThis version accounts for changes in R-2.11.0 and is optimized for both\nspeed and usabiity.\n\nSome references:\n\nhttp://opendatagroup.com/2010/04/26/hash-2-0-0/\nhttp://opendatagroup.com/2009/07/26/hash-package-for-r/\n\n\nBasic Examples:\n\n  h <- hash( keys=letters, values=1:26 )\n  h <- hash( letters, 1:26 )\n\n  h$a # 1\n  h$foo <- \"bar\"\n\n  h[ \"foo\" ]\n  h[[ \"foo\" ]]\n\n  clear(h)\n  rm(h)\n\n\nWarmest Regards,\n\nChris\n\nChristopher Brown\nPrincipal\nOpen Data\n http://www.opendatagroup.com\n http://blog.opendatagroup.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The hash-2.0.0 has been released to CRAN.\n\nThis package implements a data structure similar to hashes in Perl and\ndictionaries in Python but with a purposefully R flavor. For objects of\nappreciable si",
       "thread_id": "thread-782447e19a98",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl"
+      ]
     },
     {
       "id": "msg-c3ca0c91c0fc",
@@ -109,11 +118,14 @@
       "subject_clean": "\"Bayesian change point\" package bcp 2.2.0 available",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl>",
+      "body_plain": "Version 2.2.0 of package bcp is now available.  It replaces the suggests of\nNetWorkSpaces (previously used for optional parallel MCMC) with the\ndependency on package foreach, giving greater flexibility and supporting a\nwider range of parallel backends (see doSNOW, doMC, etc...).\n\nFor those unfamiliar with foreach (thanks to Steve Weston for this\ncontribution), it's a beautiful and highly portable looping construct which\ncan run sequentially or in parallel based on the user's actions (rather than\nthe programmer's choices).  We think other package authors might want to\nconsider taking advantage of it for tasks that might be computationally\nintensive and could be easily done in parallel.  Some vignettes are\navailable at http://cran.r-project.org/web/packages/foreach/index.html.\n\nJay Emerson & Chandra Erdman\n\n-- \nJohn W. Emerson (Jay)\nAssociate Professor of Statistics\nDepartment of Statistics\nYale University\nhttp://www.stat.yale.edu/~jay\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Version 2.2.0 of package bcp is now available.  It replaces the suggests of\nNetWorkSpaces (previously used for optional parallel MCMC) with the\ndependency on package foreach, giving greater flexibilit",
       "thread_id": "thread-b72a5efb468e",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl"
+      ]
     },
     {
       "id": "msg-5dbf0772667d",

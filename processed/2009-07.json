@@ -45,11 +45,14 @@
       "subject_clean": "new package: exact2x2",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/2ab43992/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/2ab43992/attachment.pl>",
+      "body_plain": "Hi all,\n\nI have just uploaded a new package to the ftp site called exact2x2. The package does exact conditional tests for 2x2 tables. Specifically, it does Fisher's exact test and Blaker's exact test (see Blaker, 2000, Canadian Journal of Statistics, 783-798). The motivation for the package is to have inferences from p-values and confidence intervals match as much as is possible for the tests, so that when p<0.05 the 95 percent confidence interval on the odds ratio does not contain 1.\n\n\nHere is an example which shows the problem  with fisher.test in this regard:\n\n> fisher.test(matrix(c(6,12,12,5),2,2))\n\n        Fisher's Exact Test for Count Data\n\ndata:  matrix(c(6, 12, 12, 5), 2, 2)\np-value = 0.04371\nalternative hypothesis: true odds ratio is not equal to 1\n95 percent confidence interval:\n 0.03888003 1.05649145\nsample estimates:\nodds ratio\n 0.2189021\n\nUsing the  exact2x2 function, there are two options for two-sided Fisher's exact test: \"minlike\" (default) is the usual one that defines extreme in terms of values smaller than the observed probability, and \"central\" is the one that defines the two-sided p-value as twice the minimum of the one-sided ones. The problem with fisher.test is that it gives confidence intervals which are an inversion of the later but p-values from the former.   Here is that example from exact2x2:\n\n> exact2x2(matrix(c(6,12,12,5),2,2))\n\n        Two-sided Fisher's Exact Test (usual method using minimum likelihood)\n\ndata:  matrix(c(6, 12, 12, 5), 2, 2)\np-value = 0.04371\nalternative hypothesis: true odds ratio is not equal to 1\n95 percent confidence interval:\n 0.0435 0.9170\nsample estimates:\nodds ratio\n 0.2189021\n\n>\n> exact2x2(matrix(c(6,12,12,5),2,2),tsmethod=\"central\")\n\n        Central Fisher's Exact Test\n\ndata:  matrix(c(6, 12, 12, 5), 2, 2)\np-value = 0.06059\nalternative hypothesis: true odds ratio is not equal to 1\n95 percent confidence interval:\n 0.03888003 1.05649145\nsample estimates:\nodds ratio\n 0.2189021\n\n>\n\n\nLet me know if there are comments or problems,\n\nMike\n******************************************************************\nMichael P. Fay, PhD\nMathematical Statistician\nNational Institute of Allergy and Infectious Diseases\nTel: 301-451-5124               Fax:301-480-0912\n(U.S. postal mail address)\n6700B Rockledge Drive MSC 7609\nBethesda, MD 20892-7609\n(Overnight mail address)\n6700-A Rockledge Drive, Room 5133\nBethesda, MD 20817\n\nhttp://www3.niaid.nih.gov/about/organization/dcr/BRB/staff/michael.htm\n**********************************************************************\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI have just uploaded a new package to the ftp site called exact2x2. The package does exact conditional tests for 2x2 tables. Specifically, it does Fisher's exact test and Blaker's exact test ",
       "thread_id": "thread-a643e6fb2afe",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/2ab43992/attachment.pl"
+      ]
     },
     {
       "id": "msg-aebe89674883",
@@ -66,11 +69,14 @@
         "<4A64B0A2020000B20005577E@smtp-a.lshtm.ac.uk>",
         "<4A64B10C020000B200055782@smtp-a.lshtm.ac.uk>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/785957cd/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/785957cd/attachment.pl>",
+      "body_plain": "Dear R Community,\n\nI am pleased to announce the release of a new package called  'dlnm', now available on CRAN (version 0.2.1).\n \nThe package dlnm provides some facilities to run distributed lag models (DLM's) and their non-linear extension (DLNM's), a modelling framework to describe simultaneously non-linear and delayed effects between predictors and an outcome in time-series data.\n \nThe package includes a vignette giving an extended overview of its capabilities together with the theory underlying DLNM's, including an detailed summary of the functions and some examples of application to real data, in order to get new users started easily.\n \nI hope that this package will be useful to your work. \nAny kind of feedback (questions, suggestions, bug-reports, etc.) is appreciated.\n\nSincerely,\n \nAntonio Gasparrini\nPublic and Environmental Health Research Unit (PEHRU)\nLondon School of Hygiene & Tropical Medicine\nKeppel Street, London WC1E 7HT, UK\nOffice: 0044 (0)20 79272406 - Mobile: 0044 (0)79 64925523\nSkype contact: a.gasparrini\nhttp://www.lshtm.ac.uk/people/gasparrini.antonio ( http://www.lshtm.ac.uk/pehru/ )\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Community,\n\nI am pleased to announce the release of a new package called  'dlnm', now available on CRAN (version 0.2.1).\n \nThe package dlnm provides some facilities to run distributed lag model",
       "thread_id": "thread-aebe89674883",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090720/785957cd/attachment.pl"
+      ]
     },
     {
       "id": "msg-4472c1839b0c",
@@ -98,11 +104,14 @@
       "subject_clean": "Beta Verson of tikzDevice Released!",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090725/abfc180a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090725/abfc180a/attachment.pl>",
+      "body_plain": "The tikzDevice package provides a new graphics device for R which enables\ndirect output of graphics in a LaTeX-friendly way. The device output\nconsists of files containing instructions for the TikZ graphics language and\nmay be imported directly into LaTeX documents using the \\input{} command.\n\nThe beta version of tikzDevice is now available here:\nhttps://r-forge.r-project.org/R/?group_id=440\n\nAn additional location for downloading source tarballs and windows binaries\nis:http://github.com/Sharpie/RTikZDevice/downloads\n\nThere are many significant improvements compared to the alpha version:\n\nFeatures:\n\n- Rd documentation\n- A vignette\n- Proper string placement (because of string width and character metric\ncalculations via latex)\n- Custom LaTeX headers, footers and typesetting engines\n- R-Level Annotation of graphics with TikZ commands (see\nhttp://www.texample.net for great examples of using TikZ commands)\n\n\n\nLimitations:\n\n- ASCII character support only\n- No recognition of the R symbol font (i.e. no plotmath symbols)\n- A bevy of other quirks and \"personality traits\" that will make themselves\nknown in time\n\nThe device requires a working installation of LaTeX and the TIkZ package in\norder to function. This is because font metrics are currently calculated\nthrough direct calls to the LaTeX compiler. Unfortunately, this results in\nsome significant computational overhead- it may take several seconds to\ncreate a plot that contains a lot of text. In an attempt to offset this\nbehavior, the tikzDevice uses the filehash package to store font metrics\nthat it has already computed. Hopefully the more the device is used, the\nfaster it will be. We suggest reviewing the package vignette, especially the\nsection \"R Options That Aﬀect Package Behavior \" for more information on how\nthe caching process works.\n\nWe think the package is quite usable as it is, but there are surely many\nbugs that we don't know about. We welcome bug reports at our R-Forge\ntracker: https://r-forge.r-project.org/tracker/?group_id=440\n\nEnjoy!\n\n- The tikzDevice Team\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The tikzDevice package provides a new graphics device for R which enables\ndirect output of graphics in a LaTeX-friendly way. The device output\nconsists of files containing instructions for the TikZ gr",
       "thread_id": "thread-ffc12f234a14",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090725/abfc180a/attachment.pl"
+      ]
     },
     {
       "id": "msg-365f6dfb8960",
@@ -130,11 +139,14 @@
       "subject_clean": "New package for interactive brushing/cropping/deleting points from RGL : sculpt3d v 0.2",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090731/e424f20b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20090731/e424f20b/attachment.pl>",
+      "body_plain": "sculpt3d is a GTK+ toolbar that allows for more interactive control of a\ndataset inside the RGL plot window.\nControls for simple brushing, highlighting, labeling, and mouseMode changes\nare provided by point-and-click rather than through the R terminal\ninterface.\n\nMore discussion and demo movie:\nhttp://www.scwn.net/2009/07/sculpt3d/\n\nPackage at:\nhttp://cran.r-project.org/web/packages/sculpt3d/index.html\n\nsculpt3d works with a subset of rgl's plot3d arguments, and controls an rgl\ndevice by proxy.  The intent is to allow an individual to quickly\nlabel/unlabel and pare down three dimensional data points.  Once interesting\nparts of the original data set have been isolated, a call to\nsculpt3d.current() or sculpt3d.selected() will return a logical vector,\nindicating which of the original data points are still visible or selected.\n\nIt is also possible to set up additional callback functions with\nsculpt3d.setCallback(), which can enable brushing/filtering across multiple\nviews.\n\nThere are some warnings/issues with different OS platforms, see the\ndocumentation for details.\n\nBest,\n-Justin\n\n\n-- \nJustin Donaldson\nPhD Candidate, Informatics\nIndiana University\nhttp://www.scwn.net\naim: iujjd\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "sculpt3d is a GTK+ toolbar that allows for more interactive control of a\ndataset inside the RGL plot window.\nControls for simple brushing, highlighting, labeling, and mouseMode changes\nare provided by",
       "thread_id": "thread-e6cb573a1788",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090731/e424f20b/attachment.pl"
+      ]
     }
   ],
   "threads": [

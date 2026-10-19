@@ -45,11 +45,14 @@
       "subject_clean": "relaimpo: CRAN package for relative importance in linear regression",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment.pl>",
+      "body_plain": "Dear useRs,\n\nthe R-package relaimpo is now mature enough to be advertised on this list: Version 1.1 is now on CRAN.\n\nrelaimpo allows to assess relative importance of predictors in linear regression using different metrics, the most important of which is \"lmg\", which partitions R-squared based on averaging of orders of regressors (like hier.part). Since relaimpo makes use of the specifics of linear regression, it is much faster than hier.part and also offers bootstrap intervals for all metrics. (However, relaimpo does not replace hier.part, since hier.part covers more goodness-of-fit measures and also generalized linear regression.)\n\nFor non-US users (restriction due to a potential patent restriction on pmvd), relaimpo is also available in a non-US version that additionally includes the metric \"pmvd\", an alternative way of partitioning R-squared based on weighted averages over orders of regressors. This version can be downloaded from my website.\n\nUser feedback is very welcome!\n\nRegards, Ulrike\n\n****************************** \nProf. Dr. Ulrike Grömping \nFachbereich II \nTFH Berlin \nLuxemburger Str. 10 \n13353 Berlin \nmail: groemping at tfh-berlin.de \nwww: www.tfh-berlin.de/~groemp/   \n******************************\n\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nthe R-package relaimpo is now mature enough to be advertised on this list: Version 1.1 is now on CRAN.\n\nrelaimpo allows to assess relative importance of predictors in linear regression us",
       "thread_id": "thread-879c2771ddc6",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment.pl"
+      ]
     },
     {
       "id": "msg-90ba1645d428",

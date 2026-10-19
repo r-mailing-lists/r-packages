@@ -13,11 +13,14 @@
       "subject_clean": "updated package waveslim 1.4",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041101/3d89ef48/attachment.ksh>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20041101/3d89ef48/attachment.ksh>",
+      "body_plain": "waveslim 1.4 has recently been uploaded to CRAN and is fully compatible \nwith Rv2.0.  Besides ensuring usability with the most recent version of R, \ntwo additional \"flavors\" of wavelet methodology have been added to the \npackage: (1) Hilbert wavelet pairs and (2) the dual-tree complex wavelet \ntransform [only 1D and 2D ported from Matlab code by Selesnick].  The \ndual-tree CWT code has not been optimized for R (only a \"direct\" port from \nMatlab) so reasonable speed-ups are anticipated in the future. \nComments/bug reports are welcome.\n\nReferences for (1) include: \n\nSelesnick, I.W. (2001). Hilbert transform pairs of wavelet bases. IEEE \nSignal Processing Letters 8 (6), 170–173.\nSelesnick, I.W. (2002). The design of approximate Hilbert transform pairs \nof wavelet bases. IEEE Transactions on Signal Processing 50 (5), \n1144–1152.\nWhitcher, B. and P.F. Craigmile (2004). Multivariate Spectral Analysis \nUsing Hilbert Wavelet Pairs, International Journal of Wavelets, \nMultiresolution and Information Processing, 2 (4), in press.\n\nReferences for (2) include: \n\nKingsbury, N. (1999). Image processing with complex wavelets. Proceedings \nof the Royal Society of London, Series A, 357, 2543–2560.\nKingsbury, N. (2001). Complex wavelets for shift invariant analysis and \nfiltering of signals. Applied and Computational Harmonic Analysis, 10 (3), \n234–253.\n\ncheers...\n\nBrandon\n\n\nBrandon Whitcher, PhD\nTranslational Medicine & Technology\nGlaxoSmithKline\nGreenford Road\nGreenford UB6 0HE, United Kingdom\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "waveslim 1.4 has recently been uploaded to CRAN and is fully compatible \nwith Rv2.0.  Besides ensuring usability with the most recent version of R, \ntwo additional \"flavors\" of wavelet methodology hav",
       "thread_id": "thread-a907e02487b8",
       "thread_depth": 0,
-      "month": "2004-11"
+      "month": "2004-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20041101/3d89ef48/attachment.ksh"
+      ]
     },
     {
       "id": "msg-f42149816439",

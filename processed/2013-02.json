@@ -63,11 +63,14 @@
       "references": [
         "<DUB002-W74A6F5095D511C60AB5BDBC80E0@phx.gbl>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130217/9da0a729/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130217/9da0a729/attachment.pl>",
+      "body_plain": "Dear colleagues,\n\nThis is to inform you that Version 1.0 of the R package MVN has been released on CRAN yesterday. This package contain several multivariate normality tests such as Henze-Zirkler, Mardia and Royston. \nHZ.test: The Henze-Zirkler (HZ) test is based on a non-negative functional distance that measures the distance between two distribution functions. If the data is multivariate normality, the test statistic HZ is approximately lognormally distributed. It proceeds to calculate the mean, variance and smoothness parameter. Then, mean and variance are lognormalized and the p-value is estimated. The HZ.test function have two options for calculating covariance: population (covariance matrix normalized by n) and sample (covariance matrix normalized by n-1). It also draws a chi-square Q-Q plot.mardia.test: Calculates the Mardia's multivariate skewness and kurtosis coefficients as well as their corresponding statistical tests. For large sample size the multivariate skewness is asymptotically distributed as a Chi-square random variable; here it is corrected for small sample size. Likewise, the multivariate kurtosis it is distributed as a unit-normal. The mardia.test function have two options for calculating covariance: population (covariance matrix normalized by n) and sample (covariance matrix normalized by n-1). It also draws a chi-square Q-Q plot.royston.test: A function to generate the Shapiro-Wilk's W statistic needed to feed the Royston's H test for multivariate normality However, if kurtosis of the data greater than 3 then Shapiro-Francia test is used for leptokurtic samples else Shapiro-Wilk test is used for platykurtic samples. The royston.test function also draws a chi-square Q-Q plot.\nFor more details, see the following URL:\nhttp://cran.r-project.org/web/packages/MVN/index.html\n\nRes. Assist. Selçuk KorkmazHacettepe University Faculty of Medicine Department of Biostatistics \nSıhhiye, Ankara. \t\t \t   \t\t   \t\t \t   \t\t  \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nThis is to inform you that Version 1.0 of the R package MVN has been released on CRAN yesterday. This package contain several multivariate normality tests such as Henze-Zirkler, Mard",
       "thread_id": "thread-83b8262dd536",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130217/9da0a729/attachment.pl"
+      ]
     },
     {
       "id": "msg-e1a7e1a0ae6a",
@@ -95,11 +98,14 @@
       "subject_clean": "conf.design 2.0.0 has been submitted to CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/6cee087d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/6cee087d/attachment.pl>",
+      "body_plain": "A new release of the conf.design package has been submitted to CRAN.\n\nThis is largely a \"tidying up\" release, with no substantial change in\nfunctionality.  The one difference some users may notice is that the method\nfunctions\n\nfactorize.default\nfactorize.factor\n\nare no longer exported directly, but instead are simply registered as S3\nmethods in the namespace.   This change should not affect any code which\nuses the generic function factorize() as it should have been used.\n\nOn the other hand, users who have made direct use of the method functions\nmay need to adjust their code.  (Future changes are planned for this\nfunction, so 'triple colon' qualification is inadvisable.)\n\nThe objects produced by conf.design and others no longer carry the\nredundant \"design\" class, which was a hangover from the original S-PLUS\ncode.  Such objects are now of class \"data.frame\" only.  Again, since the\nclass \"design\" had no constructor or methods for it (in R), this\nsimplification should not cause any material difference to the\nfunctionality.\n\nThe primes() function is now much faster, but still uses the same algorithm.\n\n-- \nBill Venables,\nPost-retirement Research Fellow,\nCSIRO, Ecosciences Precinct,\n41 Boggo Road,\nDutton Park, Qld, 4102\nAustralia.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A new release of the conf.design package has been submitted to CRAN.\n\nThis is largely a \"tidying up\" release, with no substantial change in\nfunctionality.  The one difference some users may notice is ",
       "thread_id": "thread-ad1969426a32",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/6cee087d/attachment.pl"
+      ]
     },
     {
       "id": "msg-3db3c8c52ab2",
@@ -111,11 +117,14 @@
       "subject_clean": "New package lazyData submitted to CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/408c9763/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/408c9763/attachment.pl>",
+      "body_plain": "I have submitted a tiny new package to CRAN, lazyData.  This has a single\nfunction\n\nrequireData\n\nwhich is designed as a drop-in replacement for base::require.  In addition\nto doing the same job as base::require, it supplies a LazyData facility for\nthose packages which have data but do not provide LazyData.\n\nThe call is the same as for base::require but with an additional\nside-effects.\n\nAfter the package is attached, as necessary, a check is made if the package\nsupplies data objects.  If it does, and if it does NOT provide LazyData for\nthem, an additional entry is made on the search path, initially containing\n'promises' to bring the data set into memory, at that point of the search\npath, if and when they are needed.\n\nUnder these circumstances, a package 'pkg' would generate two entries on\nthe search path\n\npackage:pkg\ndatasets:pkg\n\nIf attaching a package causes others to be attached on the search path,\nthese are also checked for hidden data and any are exposed any in the same\nway.\n___\n\nThis has a number of advantages: data sets are initially visible on the\nsearch path, they do not occupy memory until they are needed and when they\ndo silently enter memory it is on the search path and not cluttering up the\nglobal environment as the use of data() would do by default.   (That is,\nessentially the same advantages as if the package had provided LazyData in\nthe first place.)\n\nA potential disadvantage is that is data sets in packages need to me\nmodified rather than simply used, the modified copy is held in the working\nenvironment as well as the copy on the search path at the datasets:pkg\nentry.   However using requireData() a second time on the package will\ndemote the visible copies of the data sets on the search path back to\npromises and hence flush memory again.\n__\n\nTo make the function itself automatically available within R sessions, one\nway is to add a line to a ~/.Rprofile file.  e.g. from within R\n\ncat('\\nautoload(\"requireData\", \"lazyData\")\\n', file = \"~/.Rprofile\", append\n= TRUE)\n\nbut this comes with the same caveats that using a ~/.Rprofile always carry.\n\n-- \nBill Venables,\nPost-retirement Research Fellow,\nCSIRO, Ecosciences Precinct,\n41 Boggo Road,\nDutton Park, Qld, 4102\nAustralia.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have submitted a tiny new package to CRAN, lazyData.  This has a single\nfunction\n\nrequireData\n\nwhich is designed as a drop-in replacement for base::require.  In addition\nto doing the same job as bas",
       "thread_id": "thread-3db3c8c52ab2",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20130224/408c9763/attachment.pl"
+      ]
     }
   ],
   "threads": [

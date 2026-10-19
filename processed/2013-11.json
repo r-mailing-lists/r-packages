@@ -13,11 +13,14 @@
       "subject_clean": "rmongodb 1.1.3 back to CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131104/344de54f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131104/344de54f/attachment.pl>",
+      "body_plain": "Dear all,\n\nI am pleased to announce that the rmongodb package connecting R with the NoSQL database mongodb is back to CRAN: http://cran.r-project.org/web/packages/rmongodb/index.html\nThis release is a bug fix release to get the package back to CRAN.\n\nI have overtaken the package maintenance from Gerald Lindsly and looking forward to extend the great work in this package. Planed new features are:\n* add high-level functionality to improve usability\n* enable JSON queries\n* switch to roxygen (already done and on github)\n* implement RUnit tests to make the package more stable (work in progress)\n* update to the newest C driver (including libBSON and libmongoc)\n* improve documentation, write vignettes\n(please check github for more details https://github.com/mongosoup/rmongodb/issues)\n\nIf you have any ideas or bugs please feel free to contact me.\nFurthermore, please feel free to join me in developing the package: https://github.com/mongosoup/rmongodb\n\nBest regards\nMarkus\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\nI am pleased to announce that the rmongodb package connecting R with the NoSQL database mongodb is back to CRAN: http://cran.r-project.org/web/packages/rmongodb/index.html\nThis release is a",
       "thread_id": "thread-f9681ffec32a",
       "thread_depth": 0,
-      "month": "2013-11"
+      "month": "2013-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20131104/344de54f/attachment.pl"
+      ]
     },
     {
       "id": "msg-d9251c30a3b1",
@@ -29,11 +32,14 @@
       "subject_clean": "ndl 0.2.13 released today.",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131107/6793c34a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20131107/6793c34a/attachment.pl>",
+      "body_plain": "Dear R-package Folk,\n\nI am pleased to announce the release of a new version of the ndl package (\nhttp://cran.r-project.org/web/packages/ndl/)\n\nWhat is NDL? It is a simple learning model based on the Rescorla-Wagner\nmodel of discrimination learning.\n\nI have become the new maintainer, replacing Dr. Antti Arppe (thank you for\nall your hard work, Antti!)\n\nThis release is a major update. In particular the following items are new\nsince the last CRAN version (v 0.1.6 from Dec. 2012)\n\n* improved speed in counting co-occurrence counts through the use of Rcpp\nand C++ functions.\n* improved scalability: it can process many millions of events, with much\nlarger numbers of cues and outcomes.\n* support for Unicode text\n* new ability to count background rates (optional)\n* new method for converting counts to probabilities\n-- and many other small improvements.\n\nFor access to the development branch, to join development,  or to submit\nissues, please go to: https://bitbucket.org/cyrusshaoul/ndl/\n\nBest regards,\n\nCyrus\n\n-- \nCyrus Shaoul, PhD\nhttp://www.sfs.uni-tuebingen.de/~cshaoul/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-package Folk,\n\nI am pleased to announce the release of a new version of the ndl package (\nhttp://cran.r-project.org/web/packages/ndl/)\n\nWhat is NDL? It is a simple learning model based on the R",
       "thread_id": "thread-d9251c30a3b1",
       "thread_depth": 0,
-      "month": "2013-11"
+      "month": "2013-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20131107/6793c34a/attachment.pl"
+      ]
     },
     {
       "id": "msg-71cf392aa358",

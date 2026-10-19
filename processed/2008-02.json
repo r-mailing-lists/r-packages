@@ -93,11 +93,14 @@
       "subject_clean": "Announcement: obsSens Package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl>",
+      "body_plain": "The new package obsSens is now on the CRAN mirrors.  This package has tools for doing senstitivity analysis for observational studies.\n \nThe common criticism of observational studies is that there is the possibility of an unmeasured variable that is related to both the response and the predictor of interst that could explain the observed relationship.  The sensitivity analysis is a \"What If?\" game where you specify potential relationships between the unmeasured variable and the response and predictor variable and see how that affects the relationship between predictor and response.\n \n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "The new package obsSens is now on the CRAN mirrors.  This package has tools for doing senstitivity analysis for observational studies.\n \nThe common criticism of observational studies is that there is ",
       "thread_id": "thread-a4bb5047c6b1",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl"
+      ]
     },
     {
       "id": "msg-6a96091d41a0",
@@ -143,11 +146,14 @@
       "subject_clean": "New Package: geozoo. High-Dimensional Geometric Objects",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl>",
+      "body_plain": "Dear useRs,\n\nI'd like to announce a new package called geozoo, short for geometric\nzoo. It's a compilation of functions to produce high-dimensional\ngeometric objects, including hypercubes and hyperspheres, Boy's\nsurface, the hyper torus and a selection of polytopes.  For a complete\nlist, as well as images and movies, visit\nhttp://streaming.stat.iastate.edu/~dicook/geometric-data/<http://streaming.stat.iastate.edu/%7Edicook/geometric-data/>\n.\n\nThis package makes extensive use of GGobi (http://ggobi.org) and the\nrggobi package (http://ggobi.org/rggobi) to visualise these objects,\nso if you'd like to practice your high-dimensional visualisation\nskills, give it a shot!\n\nAny feedback (questions, suggestions, bug-reports, etc.) is very welcome.\n\nThanks,\nBarret Schloerke\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear useRs,\n\nI'd like to announce a new package called geozoo, short for geometric\nzoo. It's a compilation of functions to produce high-dimensional\ngeometric objects, including hypercubes and hypersph",
       "thread_id": "thread-502e96c282c2",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl"
+      ]
     },
     {
       "id": "msg-f44631a746b8",
@@ -175,11 +181,14 @@
       "subject_clean": "MiscPsycho 1.1 revised posted",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl>",
+      "body_plain": "A revised version of the MiscPsycho package has been uploaded to CRAN.\nThe fixes include:\n\n1) A bug found in the class.acc() function that resulted in overflow\nerrors when computing probabilities associated with polytomously scored\nitems has been resolved. The function now integrates over the posterior\ndistribution of an IRT model for dichotomously scored items,\npolytomously scored items, or a combination of the two.\n\n2) The help page for the irt.ability() function was updated. There was\npreviously an error indicating that the function used the argument\n'std.error' when the argument should be 'std.err' in order to get the\nstandard error on the IRT ability estimate.\n\nAny other comments, bug reports, or suggestions are welcome.\n\nHarold\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A revised version of the MiscPsycho package has been uploaded to CRAN.\nThe fixes include:\n\n1) A bug found in the class.acc() function that resulted in overflow\nerrors when computing probabilities asso",
       "thread_id": "thread-87c6a404ab7b",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl"
+      ]
     }
   ],
   "threads": [
