@@ -17,7 +17,8 @@
       "body_snippet": "Hmisc version 3.8-0 has been released and is now available on CRAN.\n\nPrimary improvement is compatibility with R 2.11.0.\n\nLinux packages, Windows 32bit and 64bit binary packages, and Mac binary packag",
       "thread_id": "thread-2938686612ad",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001136.html"
     },
     {
       "id": "msg-a67f0bfed85e",
@@ -34,6 +35,7 @@
       "thread_id": "thread-a67f0bfed85e",
       "thread_depth": 0,
       "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001138.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/4af42188/attachment.pl"
       ]
@@ -53,6 +55,7 @@
       "thread_id": "thread-1a7427e5fe87",
       "thread_depth": 0,
       "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001139.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100506/d3c1610d/attachment.pl"
       ]
@@ -71,7 +74,8 @@
       "body_snippet": "data.table is an enhanced data.frame with fast subset, fast\ngrouping and fast merge. It uses a short and flexible syntax\nwhich extends existing R concepts.\n\nExample:\n    DT[a>3,sum(b*c),by=d]\nwhere DT",
       "thread_id": "thread-f641ebd1aaec",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001137.html"
     },
     {
       "id": "msg-782447e19a98",
@@ -88,6 +92,7 @@
       "thread_id": "thread-782447e19a98",
       "thread_depth": 0,
       "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001141.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100507/140f151d/attachment.pl"
       ]
@@ -106,7 +111,8 @@
       "body_snippet": "RSQLite is an R package conforming to the R DBI interface that allows \nfor interaction with SQLite.\n\nVersion 0.9-0 highlights:\n\n* Support for SQLite BLOBs using raw vectors in R\n\n* New memory model fo",
       "thread_id": "thread-c3ca0c91c0fc",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001140.html"
     },
     {
       "id": "msg-b72a5efb468e",
@@ -123,6 +129,7 @@
       "thread_id": "thread-b72a5efb468e",
       "thread_depth": 0,
       "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001142.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100509/4a72a578/attachment.pl"
       ]
@@ -141,7 +148,8 @@
       "body_snippet": "Version 2.2.0 of package bcp is now available.? It replaces the\nsuggests of NetWorkSpaces (previously used for optional parallel MCMC)\nwith the dependency on package foreach, giving greater flexibilit",
       "thread_id": "thread-5dbf0772667d",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001144.html"
     },
     {
       "id": "msg-d421d4357861",
@@ -157,7 +165,8 @@
       "body_snippet": "The long-promised revision to bigmemory has arrived, with package\n4.2.3 now on CRAN.  The mutexes (locks) have been extracted and will\nbe available through package synchronicity (on R-Forge, soon to a",
       "thread_id": "thread-d421d4357861",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001145.html"
     },
     {
       "id": "msg-52f478c6d7c6",
@@ -173,7 +182,8 @@
       "body_snippet": "Lot of examples for one way pipes, but I need to create some named\npipes from R to another process, especially SQLite.  I am look at the\nR/SQLite packages for help.  ANy pointers?",
       "thread_id": "thread-52f478c6d7c6",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001146.html"
     },
     {
       "id": "msg-eb72caa4fd5e",
@@ -189,7 +199,8 @@
       "body_snippet": "===== Summary =====\n\nVersion 0.8.0 of the Rcpp package was released to CRAN today. This release\nmarks another milestone in the ongoing redesign of the package, and\nunderlying C++ library.\n\n\n===== Over",
       "thread_id": "thread-eb72caa4fd5e",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001143.html"
     },
     {
       "id": "msg-48545cad2f60",
@@ -205,7 +216,8 @@
       "body_snippet": "Version 4.39 of the caret package was sent to CRAN.\n\ncaret can be used to tune the parameters of predictive models using\nresampling, estimate variable importance and visualize the results.\nThere are a",
       "thread_id": "thread-48545cad2f60",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001147.html"
     },
     {
       "id": "msg-89a6aa730920",
@@ -221,7 +233,8 @@
       "body_snippet": "Dear R users,\n\nA parallel implementation of the np package titled `npRmpi' is now available on CRAN. This package can take advantage of multiple core computing environments to reduce the run time asso",
       "thread_id": "thread-89a6aa730920",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001148.html"
     },
     {
       "id": "msg-ed712ed8bf38",
@@ -237,7 +250,8 @@
       "body_snippet": "Dear R-users,\n\nA new package called `lavaan' (for latent variable analysis) has been \nuploaded to CRAN. The current version of lavaan (0.3-1) can be used for \npath analysis, confirmatory factor analys",
       "thread_id": "thread-ed712ed8bf38",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001149.html"
     },
     {
       "id": "msg-ac5f2f09f52c",
@@ -253,7 +267,8 @@
       "body_snippet": "RSQLite.extfuns provides SQLite extension functions for use with\nRSQLite.  The package is a wrapper of extension functions written by\nLiam Healy and made available through the SQLite website\n(http://w",
       "thread_id": "thread-ac5f2f09f52c",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001150.html"
     },
     {
       "id": "msg-b446d06c3384",
@@ -269,7 +284,8 @@
       "body_snippet": "Hi fellow R developers/users,\n\nI've recently revised a package called rtv, and now consider it\nreasonably stable.\n\nDescription: A package for conveniently representing, manipulating and\nvisualising ti",
       "thread_id": "thread-b446d06c3384",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001151.html"
     }
   ],
   "threads": [

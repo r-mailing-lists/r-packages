@@ -13,11 +13,12 @@
       "subject_clean": "Announcing fitdistrplus 1.0-8",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs,\n\nWe are pleased to announce you a new version of \"fitdistrplus\" on CRAN :\nhttps://cran.r-project.org/web/packages/fitdistrplus/index.html\n\n\"fitdistrplus\" is a package dedicated to help the fit of a parametric \ndistribution to non-censored or censored data.\n\nThe main new features in this release are few new topics in the FAQ \nvignette \n(https://cran.r-project.org/web/packages/fitdistrplus/vignettes/FAQ.html) \nand the now possible use of \"ggplot2\" in functions \"cdfcomp\", \n\"denscomp\", \"qqcomp\" and \"ppcomp\".\nWe also created a new mailing list \nfitdist-users at listes.univ-lyon1.fr*//*at which you can send any question \nor comment regarding \"fitdistrplus\".\n\nBest regards,\n\nMarie Laure Delignette-Muller, Christophe Dutang and Aur?lie Siberchicot\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear useRs,\n\nWe are pleased to announce you a new version of \"fitdistrplus\" on CRAN :\nhttps://cran.r-project.org/web/packages/fitdistrplus/index.html\n\n\"fitdistrplus\" is a package dedicated to help the fit of a parametric \ndistribution to non-censored or censored data.\n\nThe main new features in this release are few new topics in the FAQ \nvignette \n(https://cran.r-project.org/web/packages/fitdistrplus/vignettes/FAQ.html) \nand the now possible use of \"ggplot2\" in functions \"cdfcomp\", \n\"denscomp\", \"qqcomp\" and \"ppcomp\".\nWe also created a new mailing list \nfitdist-users at listes.univ-lyon1.fr*//*at which you can send any question \nor comment regarding \"fitdistrplus\".\n\nBest regards,\n\nMarie Laure Delignette-Muller, Christophe Dutang and Aurélie Siberchicot\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear useRs,\n\nWe are pleased to announce you a new version of \"fitdistrplus\" on CRAN :\nhttps://cran.r-project.org/web/packages/fitdistrplus/index.html\n\n\"fitdistrplus\" is a package dedicated to help the",
       "thread_id": "thread-fcb60d542bd8",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001531.html"
     },
     {
       "id": "msg-b6cc3809a9eb",
@@ -33,7 +34,8 @@
       "body_snippet": "Hello useRs,\n\nI am announcing the release of my first package, usmap (\nhttp://cran.r-project.org/package=usmap).\n\n\"usmap\" is a package to aid in the creation of US choropleths that include\nAlaska and ",
       "thread_id": "thread-b6cc3809a9eb",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001532.html"
     },
     {
       "id": "msg-b0444c0bcd7b",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
       "thread_id": "thread-b0444c0bcd7b",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001533.html"
     },
     {
       "id": "msg-4acb89e5735f",
@@ -65,7 +68,8 @@
       "body_snippet": "rpg is a package for working with postgresql: https://github.com/thk686/rpg\nodeintr is a package for integrating differential equations:\nhttps://github.com/thk686/odeintr\n\nCheers,\nTHK\n\nhttp://www.keit",
       "thread_id": "thread-4acb89e5735f",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001534.html"
     },
     {
       "id": "msg-ec89c18277b4",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
       "thread_id": "thread-ec89c18277b4",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001535.html"
     },
     {
       "id": "msg-af915c022bc5",
@@ -97,7 +102,8 @@
       "body_snippet": "Dear all,\n\nThe new package opusminer is now available on CRAN:\n<https://CRAN.R-project.org/package=opusminer>.\n\nopusminer provides an interface to the OPUS Miner algorithm\n(implemented in C++) for fin",
       "thread_id": "thread-af915c022bc5",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001536.html"
     },
     {
       "id": "msg-5f8a44c51ecf",
@@ -111,11 +117,12 @@
       "references": [
         "<CAHujmRZV-ePVGzQ-uUCM862BKzMiBj2rTsRfYVkrEpGL319Duw@mail.gmail.com>"
       ],
-      "body_plain": "Hello useRs,\nI am announcing the release of my first package, usmap (http://cran.r-project.org/package=usmap).\n\"usmap\" is a package to aid in the creation of US choropleths that include Alaska and Hawaii. It is still in its early stages (v 0.1.0) but I hope to improve it with added functionality over time.\nFeatures can be seen in the vignettes here:https://cran.r-project.org/web/packages/usmap/vignettes/introduction.html\nhttps://cran.r-project.org/web/packages/usmap/vignettes/mapping.html\n\nFeel free to contribute ideas and code:?http://github.com/pdil/usmap\nIf you have any questions please email me at?paolo at dilorenzo.pl?or message me on Twitter?@dilorenzopl.\nThank you,\nPaolo Di Lorenzohttp://dilorenzo.plpaolo at dilorenzo.pl?// dilorenzopl at gmail.com\n\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Hello useRs,\nI am announcing the release of my first package, usmap (http://cran.r-project.org/package=usmap).\n\"usmap\" is a package to aid in the creation of US choropleths that include Alaska and Hawaii. It is still in its early stages (v 0.1.0) but I hope to improve it with added functionality over time.\nFeatures can be seen in the vignettes here:https://cran.r-project.org/web/packages/usmap/vignettes/introduction.html\nhttps://cran.r-project.org/web/packages/usmap/vignettes/mapping.html\n\nFeel free to contribute ideas and code: http://github.com/pdil/usmap\nIf you have any questions please email me at paolo at dilorenzo.pl or message me on Twitter @dilorenzopl.\nThank you,\nPaolo Di Lorenzohttp://dilorenzo.plpaolo at dilorenzo.pl // dilorenzopl at gmail.com\n\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Hello useRs,\nI am announcing the release of my first package, usmap (http://cran.r-project.org/package=usmap).\n\"usmap\" is a package to aid in the creation of US choropleths that include Alaska and Haw",
       "thread_id": "thread-b6cc3809a9eb",
       "thread_depth": 1,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001537.html"
     },
     {
       "id": "msg-114a9b67893f",
@@ -131,7 +138,8 @@
       "body_snippet": "Hey folks,\n\nI'm pleased to announce the inaugural release of my hrbrthemes (0.1.0)\non CRAN: https://CRAN.R-project.org/package=hrbrthemes\n\nThe primary goal of said package is to provide opinionated\nty",
       "thread_id": "thread-114a9b67893f",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001538.html"
     }
   ],
   "threads": [

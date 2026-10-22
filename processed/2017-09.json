@@ -13,11 +13,12 @@
       "subject_clean": "New package: rDotNet",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I?ve published a package on CRAN called ?rDotNet?.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static members)\n* access and set properties\n* access indexing members\n\nThe package will run with either mono on OS X / Linux or the Microsoft .NET VM on windows.   Find the source and description of the package on:\n\nhttps://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/ <https://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/>\n\nAnd the CRAN link as:\n\nhttps://cran.r-project.org/web/packages/rDotNet/index.html <https://cran.r-project.org/web/packages/rDotNet/index.html>\n\nThe package is stable, as has been in use for some years, but only now packaged up for public use on CRAN.  Feel free to contact with questions or suggestions on GitHub or by email.  \n\nRegards\n--\nJonathan Shore\n\n\n\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "I?ve published a package on CRAN called ?rDotNet?.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static member",
+      "body_plain": "I’ve published a package on CRAN called ‘rDotNet’.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static members)\n* access and set properties\n* access indexing members\n\nThe package will run with either mono on OS X / Linux or the Microsoft .NET VM on windows.   Find the source and description of the package on:\n\nhttps://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/ <https://github.com/tr8dr/.Net-Bridge/blob/master/src/R/rDotNet/>\n\nAnd the CRAN link as:\n\nhttps://cran.r-project.org/web/packages/rDotNet/index.html <https://cran.r-project.org/web/packages/rDotNet/index.html>\n\nThe package is stable, as has been in use for some years, but only now packaged up for public use on CRAN.  Feel free to contact with questions or suggestions on GitHub or by email.  \n\nRegards\n--\nJonathan Shore\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I’ve published a package on CRAN called ‘rDotNet’.  rDotNet allows R to access .NET libraries. From R one can:\n\n* create .NET objects\n* call member functions\n* call class functions (i.e. static member",
       "thread_id": "thread-60f9bb9c535d",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001572.html"
     },
     {
       "id": "msg-1dff0755cf74",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear Rusers,\n\nThis summer I published the package rmonad on CRAN:\nhttps://cran.r-project.org/web/packages/rmonad\n\nrmonad is a toolset for building stateful, branching pipelines. As\nfunctions in the pi",
       "thread_id": "thread-1dff0755cf74",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001573.html"
     },
     {
       "id": "msg-4ba428787e75",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear useRs,\n\nI am happy to announce the publication on CRAN of\nthe qgam package:\nhttps://cran.r-project.org/web/packages/qgam/index.html\n\nqgam is an extension of mgcv, and provides methods for\nfitting",
       "thread_id": "thread-4ba428787e75",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001574.html"
     },
     {
       "id": "msg-06afd4e2bcb8",
@@ -65,7 +68,8 @@
       "body_snippet": "I'm pleased to announce that asciiSetupReader is now on CRAN:\nhttps://cran.r-project.org/web/packages/asciiSetupReader/index.html\n\nThis package allows users to read ASCII files that have an SPSS or SA",
       "thread_id": "thread-06afd4e2bcb8",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001575.html"
     },
     {
       "id": "msg-1d35ea86128f",
@@ -79,11 +83,12 @@
       "references": [
         "<736305065.2181156.1505497457824.ref@mail.yahoo.com>"
       ],
-      "body_plain": "Dear R community,\n\n\n?\nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed to reverse engineer censored, decoupledcensus data into a likely hhs x area uncensored contingency table for estimating interior residentialoccupancy.?\n\n?\nFor basic examples:\n\nhttps://cran.r-project.org/web/packages/revengc/revengc.pdf\n\n?\nFor more details on the underlying methods:?\n\nhttps://cran.r-project.org/web/packages/revengc/vignettes/methodbehind_reverseengineeringcensus.pdf\n\n?\nThe package is also available on GitHub:\n\nhttps://github.com/GIST-ORNL/revengc\nCheers?Samantha Duchscherer\n\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear R community,\n\n\n?\nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed t",
+      "body_plain": "Dear R community,\n\n\n \nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed to reverse engineer censored, decoupledcensus data into a likely hhs x area uncensored contingency table for estimating interior residentialoccupancy. \n\n \nFor basic examples:\n\nhttps://cran.r-project.org/web/packages/revengc/revengc.pdf\n\n \nFor more details on the underlying methods: \n\nhttps://cran.r-project.org/web/packages/revengc/vignettes/methodbehind_reverseengineeringcensus.pdf\n\n \nThe package is also available on GitHub:\n\nhttps://github.com/GIST-ORNL/revengc\nCheers Samantha Duchscherer\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R community,\n\n\n \nI am happy to announce the publication on CRAN of the revengc package:\n\nhttps://cran.r-project.org/web/packages/revengc/index.html\n\nThe statistical package revengc was designed t",
       "thread_id": "thread-1d35ea86128f",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001576.html"
     },
     {
       "id": "msg-7e2bdc1500f4",
@@ -99,7 +104,8 @@
       "body_snippet": "An updated version of my envDocument package is now available on CRAN at  https://CRAN.R-project.org/package=envDocument with code at https://github.com/dgJacks0n/envDocument/tree/V_2.4.0\n\nThe main fu",
       "thread_id": "thread-7e2bdc1500f4",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001577.html"
     },
     {
       "id": "msg-4c8854cb8339",
@@ -115,7 +121,8 @@
       "body_snippet": "Dear all,\n\nThe new package OutliersO3 is now available on CRAN:\n<https://cran.r-project.org/web/packages/OutliersO3/index.html>.\n\nThe aim is to graphically compare results of outlier analyses for all ",
       "thread_id": "thread-4c8854cb8339",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001578.html"
     },
     {
       "id": "msg-1cf6575fd4c0",
@@ -133,7 +140,8 @@
       "body_snippet": "Hello Rusers, 'coinmarketcapr' R Package to extract bitcoin and other\ncryptocurrencies market cap and prices from coinmarketcap API.\n\nWelcoming Suggestions and Contributions!\n\nhttps://github.com/amrrs",
       "thread_id": "thread-1cf6575fd4c0",
       "thread_depth": 0,
-      "month": "2017-09"
+      "month": "2017-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001579.html"
     }
   ],
   "threads": [

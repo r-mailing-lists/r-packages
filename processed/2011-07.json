@@ -17,7 +17,8 @@
       "body_snippet": "# stringr\n\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because t",
       "thread_id": "thread-e306268449cf",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001236.html"
     },
     {
       "id": "msg-8836d1a30bde",
@@ -33,7 +34,8 @@
       "body_snippet": "A series of package updates is on CRAN (or in the process to get there).\n\nAlready available from CRAN are:\n\n- signal: Since I took over maintainership years ago, I have not \ninvested the required amou",
       "thread_id": "thread-8836d1a30bde",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001239.html"
     },
     {
       "id": "msg-fb4d2e0257de",
@@ -49,7 +51,8 @@
       "body_snippet": "A new release of rgdal, a package providing bindings for the Geospatial \nData Abstraction Library for reading and writing spatial data, has reached \nCRAN.\n\nThis release changes the error handling mech",
       "thread_id": "thread-fb4d2e0257de",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001237.html"
     },
     {
       "id": "msg-0c778e0b8983",
@@ -66,6 +69,7 @@
       "thread_id": "thread-0c778e0b8983",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001240.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20110708/f350a009/attachment.pl"
       ]
@@ -84,7 +88,8 @@
       "body_snippet": "Hadley Wickham refactored roxygen, making it more maintainable and\nrobust; the changes are so significant that we decided to nominate it\nroxygen2:\n\n  http://cran.r-project.org/web/packages/roxygen2/in",
       "thread_id": "thread-f0644b2a53d9",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001243.html"
     },
     {
       "id": "msg-6c847aa50c74",
@@ -96,11 +101,12 @@
       "subject_clean": "rasterVis 0.10-3",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs,\n\nI'd like to announce the release of version 0.10-3 of rasterVis. This\npackage provides a set of methods for enhanced visualization and\ninteraction with the Raster* objects from the raster package.\n\nYou will find some examples at: http://rastervis.r-forge.r-project.org/.\n\nBest,\n\nOscar.\n-------------\nOscar Perpi??n Lamigueiro\nDpto. de Ingenier?a El?ctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
+      "body_plain": "Dear useRs,\n\nI'd like to announce the release of version 0.10-3 of rasterVis. This\npackage provides a set of methods for enhanced visualization and\ninteraction with the Raster* objects from the raster package.\n\nYou will find some examples at: http://rastervis.r-forge.r-project.org/.\n\nBest,\n\nOscar.\n-------------\nOscar Perpiñán Lamigueiro\nDpto. de Ingeniería Eléctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
       "body_snippet": "Dear useRs,\n\nI'd like to announce the release of version 0.10-3 of rasterVis. This\npackage provides a set of methods for enhanced visualization and\ninteraction with the Raster* objects from the raster",
       "thread_id": "thread-6c847aa50c74",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001241.html"
     },
     {
       "id": "msg-9825a0485f28",
@@ -112,11 +118,12 @@
       "subject_clean": "pxR 0.20",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs,\n\nI'd like to announce the release of pxR, a package to use the PC-Axis\nfile format in R.\n\nPC-Axis is a software family consisting of a number of programs for the\nWindows and Internet environment used to present statistical\ninformation. It is used by national and international institutions to\npublish statistical data. Programs in the PC-Axis family use a\nparticular data file format. pxR provides a set of functions for \nreading and writing PC-Axis files. \n\nThe function read.px reads a PC-Axis file from a given location and\nreturns an object of the class px containing all the data and metadata\nin the PC-Axis file. The single most important piece of information with\na px object is the data matrix, which can be extracted with function\nas.data.frame.\n\nFor instance,\n\tmy.px.object <- read.px(\"/path/to/pc-axis/file\")\n\tmy.px.data   <-  as.data.frame(my.px.object)\n\nwill create the data.frame my.px.data with the data in the\ncorresponding PC-Axis file.\n\nBest,\n\nOscar.\n\n-------------\nOscar Perpi??n Lamigueiro\nDpto. de Ingenier?a El?ctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
+      "body_plain": "Dear useRs,\n\nI'd like to announce the release of pxR, a package to use the PC-Axis\nfile format in R.\n\nPC-Axis is a software family consisting of a number of programs for the\nWindows and Internet environment used to present statistical\ninformation. It is used by national and international institutions to\npublish statistical data. Programs in the PC-Axis family use a\nparticular data file format. pxR provides a set of functions for \nreading and writing PC-Axis files. \n\nThe function read.px reads a PC-Axis file from a given location and\nreturns an object of the class px containing all the data and metadata\nin the PC-Axis file. The single most important piece of information with\na px object is the data matrix, which can be extracted with function\nas.data.frame.\n\nFor instance,\n\tmy.px.object <- read.px(\"/path/to/pc-axis/file\")\n\tmy.px.data   <-  as.data.frame(my.px.object)\n\nwill create the data.frame my.px.data with the data in the\ncorresponding PC-Axis file.\n\nBest,\n\nOscar.\n\n-------------\nOscar Perpiñán Lamigueiro\nDpto. de Ingeniería Eléctrica\nEUITI-UPM\n\nhttp://procomun.wordpress.com",
       "body_snippet": "Dear useRs,\n\nI'd like to announce the release of pxR, a package to use the PC-Axis\nfile format in R.\n\nPC-Axis is a software family consisting of a number of programs for the\nWindows and Internet envir",
       "thread_id": "thread-9825a0485f28",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001242.html"
     },
     {
       "id": "msg-f0a09b1b522a",
@@ -132,7 +139,8 @@
       "body_snippet": "Initial Announcement: Package rdyncall released on CRAN. (Version 0.7.3)\n\nThe package was presented at the Use!R 2009 with the title \n'An improved Foreign Function Interface for R' and is now availabl",
       "thread_id": "thread-f0a09b1b522a",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001244.html"
     },
     {
       "id": "msg-a49b76b98e8d",
@@ -148,7 +156,8 @@
       "body_snippet": "Dear useRs:\n\nAnnouncing the release of kinship2, version 1.2.1, to CRAN. \n\nkinship2 is a branch from the original kinship package with some key\nupdates for the pedigree and kinship functions, with som",
       "thread_id": "thread-a49b76b98e8d",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001245.html"
     },
     {
       "id": "msg-5674ff1a9510",
@@ -165,6 +174,7 @@
       "thread_id": "thread-5674ff1a9510",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001246.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20110727/b10551f2/attachment.pl"
       ]
@@ -183,7 +193,8 @@
       "body_snippet": "The package xgrid 0.1-11 is now available on CRAN.? The package provides functions to distribute and collate results from\nsimulation studies and other computationally expensive tasks to\nApple Xgrid cl",
       "thread_id": "thread-2945530103f3",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001247.html"
     },
     {
       "id": "msg-11eefad54765",
@@ -199,7 +210,8 @@
       "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
       "thread_id": "thread-11eefad54765",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001248.html"
     }
   ],
   "threads": [

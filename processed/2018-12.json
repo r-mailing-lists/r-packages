@@ -17,7 +17,8 @@
       "body_snippet": "hi all\n\nI would like to introduce my R package:\nempirical: Probability Distributions as Models of Data\n\nThe description is:\nComputes continuous (not step) empirical (and nonparametric) probability\nden",
       "thread_id": "thread-fd843d6a93d9",
       "thread_depth": 0,
-      "month": "2018-12"
+      "month": "2018-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001646.html"
     },
     {
       "id": "msg-de7410696c9d",
@@ -29,11 +30,12 @@
       "subject_clean": "New package cNORM: Continuous norming",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi everyone,\nI would like to introduce a new package: cNORM. It aims at solving \nproblems with percentile estimation / norm score generation in \nbiometrics and psychometrics, f. e. BMI growth curves, IQ tests ... \nConventional methods for producing standard scores in psychometrics or \nbiometrics are often plagued with \"jumps\" or \"gaps\" (i.e., \ndiscontinuities) in norm tables and low confidence for assessing extreme \nscores. The continuous norming method introduced by A. Lenhard et al. \n(2016), <doi:10.1177/1073191116656437>, generates continuous test norm \nscores on the basis of the raw data from standardization samples, \nwithout requiring assumptions about the distribution of the raw data: \nNorm scores are directly established from raw data by modeling the \nlatter ones as a function of both percentile scores and an explanatory \nvariable (e.g., age). The method minimizes bias arising from sampling \nand measurement error, while handling marked deviations from normality, \naddressing bottom or ceiling effects and capturing almost all of the \nvariance in the original norm data sample.\n\nThe R package is available via \nhttps://cran.r-project.org/web/packages/cNORM/\nComprehensive online tutorial: https://www.psychometrica.de/cNorm_en.html\nIf you like to access the developmental version: \nhttps://github.com/WLenhard/cNORM\n\nAnd finally the original article and project updates via Researchgate:\n- https://www.researchgate.net/project/Continuous-Norming\n- \nhttps://www.researchgate.net/publication/303785307_A_Continuous_Solution_to_the_Norming_Problem\n\nBest regards,\n ??? Wolfgang Lenhard\n\n-- \nProf. Dr. Wolfgang Lenhard\nInstitute for Psychologie IV\nD-97070 W?rzburg, Germany\nURL:  https://go.uniwue.de/lenhard",
+      "body_plain": "Hi everyone,\nI would like to introduce a new package: cNORM. It aims at solving \nproblems with percentile estimation / norm score generation in \nbiometrics and psychometrics, f. e. BMI growth curves, IQ tests ... \nConventional methods for producing standard scores in psychometrics or \nbiometrics are often plagued with \"jumps\" or \"gaps\" (i.e., \ndiscontinuities) in norm tables and low confidence for assessing extreme \nscores. The continuous norming method introduced by A. Lenhard et al. \n(2016), <doi:10.1177/1073191116656437>, generates continuous test norm \nscores on the basis of the raw data from standardization samples, \nwithout requiring assumptions about the distribution of the raw data: \nNorm scores are directly established from raw data by modeling the \nlatter ones as a function of both percentile scores and an explanatory \nvariable (e.g., age). The method minimizes bias arising from sampling \nand measurement error, while handling marked deviations from normality, \naddressing bottom or ceiling effects and capturing almost all of the \nvariance in the original norm data sample.\n\nThe R package is available via \nhttps://cran.r-project.org/web/packages/cNORM/\nComprehensive online tutorial: https://www.psychometrica.de/cNorm_en.html\nIf you like to access the developmental version: \nhttps://github.com/WLenhard/cNORM\n\nAnd finally the original article and project updates via Researchgate:\n- https://www.researchgate.net/project/Continuous-Norming\n- \nhttps://www.researchgate.net/publication/303785307_A_Continuous_Solution_to_the_Norming_Problem\n\nBest regards,\n     Wolfgang Lenhard\n\n-- \nProf. Dr. Wolfgang Lenhard\nInstitute for Psychologie IV\nD-97070 Würzburg, Germany\nURL:  https://go.uniwue.de/lenhard",
       "body_snippet": "Hi everyone,\nI would like to introduce a new package: cNORM. It aims at solving \nproblems with percentile estimation / norm score generation in \nbiometrics and psychometrics, f. e. BMI growth curves, ",
       "thread_id": "thread-de7410696c9d",
       "thread_depth": 0,
-      "month": "2018-12"
+      "month": "2018-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001647.html"
     },
     {
       "id": "msg-2e66dd4b8147",
@@ -47,11 +49,12 @@
       "references": [
         "<494687108.6752524.1545236241993.ref@mail.yahoo.com>"
       ],
-      "body_plain": "Hello,\nKindly?find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given database.\nCRAN:?<https://cran.r-project.org/web/packages/dbparser/index.html>\nVignettes:?<https://cran.r-project.org/web/packages/dbparser/vignettes/dbparser.html>\nGithub:?<https://github.com/Dainanahan/dbparser>\n\n\n\n\nIt will be great to know your feedback :). Thank you\n\nBest Regards,\nMohammed Ali\nMSc in Applied Data Science & Big Data\nmohammed.ali at edu.dsti.institute\n+20 01000481973\neg.linkedin.com/in/mohammedali85",
-      "body_snippet": "Hello,\nKindly?find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given ",
+      "body_plain": "Hello,\nKindly find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given database.\nCRAN: <https://cran.r-project.org/web/packages/dbparser/index.html>\nVignettes: <https://cran.r-project.org/web/packages/dbparser/vignettes/dbparser.html>\nGithub: <https://github.com/Dainanahan/dbparser>\n\n\n\n\nIt will be great to know your feedback :). Thank you\n\nBest Regards,\nMohammed Ali\nMSc in Applied Data Science & Big Data\nmohammed.ali at edu.dsti.institute\n+20 01000481973\neg.linkedin.com/in/mohammedali85",
+      "body_snippet": "Hello,\nKindly find this new package for parsing the 'DrugBank' XML database <http://drugbank.ca/>. The parsed data are then returned in a proper 'R' dataframe with the ability to save them in a given ",
       "thread_id": "thread-2e66dd4b8147",
       "thread_depth": 0,
-      "month": "2018-12"
+      "month": "2018-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001648.html"
     }
   ],
   "threads": [

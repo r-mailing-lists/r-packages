@@ -13,11 +13,12 @@
       "subject_clean": "nofrills: Low-Cost Anonymous Functions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R Users,\n\nnofrills (0.2.0) has been published on CRAN:\nhttps://cran.r-project.org/package=nofrills\n\nThis lightweight package provides `fn()`, a compact variation of the\nusual syntax of function declaration, in order to support\ntidyverse-style quasiquotation of a function?s arguments and body.\n\nAside from enabling a shorter but fully general syntax for function\ndeclarations, the main benefit of `fn()` is its ability to create\n_pure_ functions via quasiquotation, which is tricky to guarantee in\nbase R, due to the mutability of bindings in a function?s lexical scope.\n\nTo learn more, see the landing page of the source repository:\nhttps://github.com/egnha/nofrills\n\nBug reports and other feedback are welcome at the issues page on GitHub:\nhttps://github.com/egnha/nofrills/issues\n\nEugene Ha",
+      "body_plain": "Dear R Users,\n\nnofrills (0.2.0) has been published on CRAN:\nhttps://cran.r-project.org/package=nofrills\n\nThis lightweight package provides `fn()`, a compact variation of the\nusual syntax of function declaration, in order to support\ntidyverse-style quasiquotation of a function’s arguments and body.\n\nAside from enabling a shorter but fully general syntax for function\ndeclarations, the main benefit of `fn()` is its ability to create\n_pure_ functions via quasiquotation, which is tricky to guarantee in\nbase R, due to the mutability of bindings in a function’s lexical scope.\n\nTo learn more, see the landing page of the source repository:\nhttps://github.com/egnha/nofrills\n\nBug reports and other feedback are welcome at the issues page on GitHub:\nhttps://github.com/egnha/nofrills/issues\n\nEugene Ha",
       "body_snippet": "Dear R Users,\n\nnofrills (0.2.0) has been published on CRAN:\nhttps://cran.r-project.org/package=nofrills\n\nThis lightweight package provides `fn()`, a compact variation of the\nusual syntax of function d",
       "thread_id": "thread-8a23998971d8",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001580.html"
     },
     {
       "id": "msg-2895127e3455",
@@ -36,7 +37,8 @@
       "body_snippet": "Dear R users,\n\nI'm pleased to announce that huxtable version 1.0.0 will be on CRAN\nshortly.\n\nHuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface.\n\nVersion 1.0.0",
       "thread_id": "thread-2895127e3455",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001581.html"
     },
     {
       "id": "msg-f4366ae1e104",
@@ -48,11 +50,12 @@
       "subject_clean": "New package: leabRa",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R enthusiasts,\n\nI am happy to announce that the package Leab*R*a is now on CRAN\n(https://cran.r-project.org/web/packages/leabRa/)\n\nLeab*R*a provides the Leabra artificial neural network algorithm (O?Reilly,\n1996, ftp://grey.colorado.edu/pub/oreilly/thesis/oreilly_thesis.all.pdf)\nfor R. Leabra stands for ?local error driven and associative biologically\nrealistic algorithm?. It is the Rolls Royce of artificial neural networks\nbecause it combines error driven learning and self organized learning in an\nelegant way, while focusing on a biologically plausible learning rule.\n\nThe vignette shows how to construct networks:\nhttps://cran.r-project.org/web/packages/leabRa/vignettes/leabRa.html\n\nFeedback welcome: https://github.com/johannes-titz/leabRa/\n\nBest,\nJohannes",
+      "body_plain": "Dear R enthusiasts,\n\nI am happy to announce that the package Leab*R*a is now on CRAN\n(https://cran.r-project.org/web/packages/leabRa/)\n\nLeab*R*a provides the Leabra artificial neural network algorithm (O’Reilly,\n1996, ftp://grey.colorado.edu/pub/oreilly/thesis/oreilly_thesis.all.pdf)\nfor R. Leabra stands for “local error driven and associative biologically\nrealistic algorithm”. It is the Rolls Royce of artificial neural networks\nbecause it combines error driven learning and self organized learning in an\nelegant way, while focusing on a biologically plausible learning rule.\n\nThe vignette shows how to construct networks:\nhttps://cran.r-project.org/web/packages/leabRa/vignettes/leabRa.html\n\nFeedback welcome: https://github.com/johannes-titz/leabRa/\n\nBest,\nJohannes",
       "body_snippet": "Dear R enthusiasts,\n\nI am happy to announce that the package Leab*R*a is now on CRAN\n(https://cran.r-project.org/web/packages/leabRa/)\n\nLeab*R*a provides the Leabra artificial neural network algorithm",
       "thread_id": "thread-f4366ae1e104",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001582.html"
     },
     {
       "id": "msg-85dd0cfec63c",
@@ -68,7 +71,8 @@
       "body_snippet": "Dear R users,\n\nI am happy to announce the most recent version of gpuR has been\nreleased. There are several new enhancements to the package including\nthe ability to use user written OpenCL kernels.  A ",
       "thread_id": "thread-85dd0cfec63c",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001583.html"
     },
     {
       "id": "msg-67a22ff0f485",
@@ -84,7 +88,8 @@
       "body_snippet": "Dear all,\n\nversion 1.2-2 of package NMOF is on CRAN now.\n\nNMOF stands for 'Numerical Methods and Optimization\nin Finance'. The package provides R code and datasets\nfor the book with the same name, wri",
       "thread_id": "thread-67a22ff0f485",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001584.html"
     },
     {
       "id": "msg-b87169d3bb8e",
@@ -100,7 +105,8 @@
       "body_snippet": "Dear useRs:\n\nThe latest build of randomForestSRC (2.5.1) includes a configuration\nfile that switches on the -fopenmp tag during compilation on systems\nthat support OpenMP parallel processing.  Previou",
       "thread_id": "thread-b87169d3bb8e",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001585.html"
     },
     {
       "id": "msg-59ed86988b64",
@@ -112,11 +118,12 @@
       "subject_clean": "hsdar is back on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "hsdar is back on CRAN\n\nWe are very happy to announce that a new version of the hsdar-package \n(hyperspectral data analysis in R) is available on CRAN. \n\nThe introductory vignette is available here: \nhttps://cran.r-project.org/web/packages/hsdar/vignettes/Hsdar-intro.pdf\n\nThe main class \"Speclib\" has been changed in that the additional information \nis now stored in the SI slot (function \"SI\" replaced \"attribute\" for \nupdate/access). This change was used to restructure how the supplementary data \nis internally stored and allows the user to use e.g. raster images as source \nof additional information (which can be of advantage if e.g. terrain is \nsuspected to play a role for hyperspectral classification/regression).  \nAdditionally, the Speclib-class has now methods compatible with the \niteratively reading/writing functions of the raster-package (writeStart-, \nwriteValues-, writeStop-methods for Speclib class are implemented).\n\nBesides these technical changes, the new version of PROSPECT (version D) is \nimplemented.\n\nCheers\n\nLukas Lehnert\nHanna Meyer\nJ?rg Bendix",
+      "body_plain": "hsdar is back on CRAN\n\nWe are very happy to announce that a new version of the hsdar-package \n(hyperspectral data analysis in R) is available on CRAN. \n\nThe introductory vignette is available here: \nhttps://cran.r-project.org/web/packages/hsdar/vignettes/Hsdar-intro.pdf\n\nThe main class \"Speclib\" has been changed in that the additional information \nis now stored in the SI slot (function \"SI\" replaced \"attribute\" for \nupdate/access). This change was used to restructure how the supplementary data \nis internally stored and allows the user to use e.g. raster images as source \nof additional information (which can be of advantage if e.g. terrain is \nsuspected to play a role for hyperspectral classification/regression).  \nAdditionally, the Speclib-class has now methods compatible with the \niteratively reading/writing functions of the raster-package (writeStart-, \nwriteValues-, writeStop-methods for Speclib class are implemented).\n\nBesides these technical changes, the new version of PROSPECT (version D) is \nimplemented.\n\nCheers\n\nLukas Lehnert\nHanna Meyer\nJörg Bendix",
       "body_snippet": "hsdar is back on CRAN\n\nWe are very happy to announce that a new version of the hsdar-package \n(hyperspectral data analysis in R) is available on CRAN. \n\nThe introductory vignette is available here: \nh",
       "thread_id": "thread-59ed86988b64",
       "thread_depth": 0,
-      "month": "2017-10"
+      "month": "2017-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001586.html"
     }
   ],
   "threads": [

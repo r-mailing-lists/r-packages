@@ -13,11 +13,12 @@
       "subject_clean": "spqdep: An R package to test for spatial dependence in categorical spatial data",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nI am happy to announce that a new package ?spqdep? is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/index.html>\n\nThe objective of this R-package is to test for spatial dependence in categorical spatial data. \nhttps://f8l5h9.github.io/spqdep/articles/spq_userguide.html <https://f8l5h9.github.io/spqdep/articles/spq_userguide.html>\n\nSeveral tests have been implemented in spqdep, namely, the classical joint count statistics, the Q-test based on symbolic dynamics, the Scan-test based on scan methodology and a new spatial test based on spatial-runs. All tests can be applied to categorical spatial cross-section data with two or more categories and asymptotic and bootstrap permutation distribution are implemented. The R package is completely documented, including several examples and an user-guide is available as a vignette.\n\nBest regards,\nFernando L?pez\n\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear R users,\n\nI am happy to announce that a new package ?spqdep? is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/in",
+      "body_plain": "Dear R users,\n\nI am happy to announce that a new package “spqdep” is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/index.html>\n\nThe objective of this R-package is to test for spatial dependence in categorical spatial data. \nhttps://f8l5h9.github.io/spqdep/articles/spq_userguide.html <https://f8l5h9.github.io/spqdep/articles/spq_userguide.html>\n\nSeveral tests have been implemented in spqdep, namely, the classical joint count statistics, the Q-test based on symbolic dynamics, the Scan-test based on scan methodology and a new spatial test based on spatial-runs. All tests can be applied to categorical spatial cross-section data with two or more categories and asymptotic and bootstrap permutation distribution are implemented. The R package is completely documented, including several examples and an user-guide is available as a vignette.\n\nBest regards,\nFernando López\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nI am happy to announce that a new package “spqdep” is now available on CRAN.\nhttps://cran.r-project.org/web/packages/spqdep/index.html <https://cran.r-project.org/web/packages/spqdep/in",
       "thread_id": "thread-d64fd98061f8",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001801.html"
     },
     {
       "id": "msg-12566914999a",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nthe new version (0.2.0) of PDtoolkit package is now on CRAN.\nThe is the package second update.\n\nSince the first release, besides minor improvements of the existing\nfeatures, package is ",
       "thread_id": "thread-12566914999a",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001802.html"
     },
     {
       "id": "msg-76975cadfdf4",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear R users,\n\nI am happy to announce that a new package 'rlcv' is now available on? CRAN.\n\nhttps://cran.r-project.org/web/packages/rlcv/index.html\n\nRobust likelihood cross validation bandwidth for un",
       "thread_id": "thread-76975cadfdf4",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001803.html"
     },
     {
       "id": "msg-4b738ffd728d",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear community,\n\nVersion 0.12 of the package declared has just made it on CRAN.\n\nApart from the usual functions to declare labels for regular and missing\nvalues, this version has a suite of new functi",
       "thread_id": "thread-4b738ffd728d",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001804.html"
     },
     {
       "id": "msg-496f910cdedf",
@@ -81,7 +85,8 @@
       "body_snippet": "Hi all,\n\npackageRank v0.6.0 is now available. \n\n??packageRank? is an R package that helps put package download counts into context. It does so via two core functions, cranDownloads() and packageRank()",
       "thread_id": "thread-496f910cdedf",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001805.html"
     },
     {
       "id": "msg-bf713084042e",
@@ -97,7 +102,8 @@
       "body_snippet": "An easy way to do sentiment analysis (and more) based on deep learning: sentiment.ai, now on CRAN! https://cran.r-project.org/web/packages/sentiment.ai/index.html\n\nsentiment.ai  does sentiment analysi",
       "thread_id": "thread-bf713084042e",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001806.html"
     },
     {
       "id": "msg-4a61e7c2fc6a",
@@ -113,7 +119,8 @@
       "body_snippet": "Dear R users,\n\nI have released a new package on CRAN:\n\n`surveyCV`: Cross Validation Based on Survey Design\nhttps://cran.r-project.org/package=surveyCV\n\nFollowing the design-based framework used in sur",
       "thread_id": "thread-4a61e7c2fc6a",
       "thread_depth": 0,
-      "month": "2022-03"
+      "month": "2022-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001807.html"
     }
   ],
   "threads": [

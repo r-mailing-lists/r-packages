@@ -18,6 +18,7 @@
       "thread_id": "thread-a5a90f25fa61",
       "thread_depth": 0,
       "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000667.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20060106/44451c21/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Soon on CRAN a new version of package gstat will emerge, which\nhas a few minor changes and possible incompatibilities w.r.t. the\nprevious version(s).\n\nThe new gstat (0.9-23) now:\n+ depends on sp, and ",
       "thread_id": "thread-94c7b5e25607",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000668.html"
     },
     {
       "id": "msg-7d8a48220515",
@@ -52,7 +54,8 @@
       "body_snippet": "This is a \"heads up\" to those using the lmer function for fitting\nlinear mixed models or generalized linear mixed models.  In the next\nfew days Martin and I will upload a new version of the Matrix pac",
       "thread_id": "thread-7d8a48220515",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000669.html"
     },
     {
       "id": "msg-56d16340e669",
@@ -64,11 +67,12 @@
       "subject_clean": "New package lspls",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJ?rgensen, K., Segtnan, V. H., Thyholt, K., N?s, T. (2004) A Comparison of\nMethods for Analysing Regression Models with Both Spectral and Designed\nVariables; Journal of Chemometrics 18(10), 451--464.\n\nThe current version of the package (0.1-0) should probably be\nconsidered `alpha software'.  Nothing is cast in iron yet, and\nespecially the formula interface and internal structure are apt to\nchange in future versions.  The software should, however, be fully\nusable in its present form.\n\n`lspls' currently includes fit and cross-validation functions with\nformula interfaces, a predict method, and plots of scores, loadings\nand (R)MSEP values.\n\nSuggestions, bug reports and other comments are very welcome.\n\n-- \nSincerely,\nBj?rn-Helge Mevik",
-      "body_snippet": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJ?rgensen, K., Segtnan, V.",
+      "body_plain": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJørgensen, K., Segtnan, V. H., Thyholt, K., Næs, T. (2004) A Comparison of\nMethods for Analysing Regression Models with Both Spectral and Designed\nVariables; Journal of Chemometrics 18(10), 451--464.\n\nThe current version of the package (0.1-0) should probably be\nconsidered `alpha software'.  Nothing is cast in iron yet, and\nespecially the formula interface and internal structure are apt to\nchange in future versions.  The software should, however, be fully\nusable in its present form.\n\n`lspls' currently includes fit and cross-validation functions with\nformula interfaces, a predict method, and plots of scores, loadings\nand (R)MSEP values.\n\nSuggestions, bug reports and other comments are very welcome.\n\n-- \nSincerely,\nBjørn-Helge Mevik",
+      "body_snippet": "Dear R useRs,\n\nA new package `lspls' is now available on CRAN.  It implements the\nLS-PLS (least squares--partial least squares) regression method,\ndescribed in for instance\n\nJørgensen, K., Segtnan, V.",
       "thread_id": "thread-56d16340e669",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000670.html"
     },
     {
       "id": "msg-f7eb99d591b4",
@@ -84,7 +88,8 @@
       "body_snippet": "Dear List\n\nplease find uploaded to CRAN a new R package for the simulation and  \nanalysis\nof biodiversity.\n\nThe package implements simulations and diagnostics of ecological systems\nthat obey the Unifi",
       "thread_id": "thread-f7eb99d591b4",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000671.html"
     },
     {
       "id": "msg-0a95dd2a1c27",
@@ -100,7 +105,8 @@
       "body_snippet": "Version 0.4-1 of the RSQLite package has been uploaded to CRAN.\nRSQLite embeds the SQLite engine in R (see http://www.sqlite.org)\n\nChanges include:\n\n* Fixed problems exporting/importing NA's \n\n* An ne",
       "thread_id": "thread-0a95dd2a1c27",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000672.html"
     },
     {
       "id": "msg-31944f7f7d78",
@@ -112,11 +118,12 @@
       "subject_clean": "amap",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a parallelized hierarchical clustering) and\n   allow the possibility of using different distances like\n   Eulidean or Spearman (rank-based metric).\n\n   We implement a principal component analysis (with robusts methods).\n\nNews of version 0.7-1: a new method of clustering \"optimal partiton\"\n\nA major advantage of the method is that the number K of classes \nis computed from the data, and ONLY from the data. \n\n-- \nAntoine Lucas\nCentre de g?n?tique Mol?culaire, CNRS\n91198 Gif sur Yvette Cedex\nTel: (33)1 69 82 38 89\nFax: (33)1 69 82 38 77",
+      "body_plain": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a parallelized hierarchical clustering) and\n   allow the possibility of using different distances like\n   Eulidean or Spearman (rank-based metric).\n\n   We implement a principal component analysis (with robusts methods).\n\nNews of version 0.7-1: a new method of clustering \"optimal partiton\"\n\nA major advantage of the method is that the number K of classes \nis computed from the data, and ONLY from the data. \n\n-- \nAntoine Lucas\nCentre de génétique Moléculaire, CNRS\n91198 Gif sur Yvette Cedex\nTel: (33)1 69 82 38 89\nFax: (33)1 69 82 38 77",
       "body_snippet": "Dear R users,\n\n\nVersion 0.7-1 of the amap package has been uploaded to CRAN.\n\n   Amap package includes standard hierarchical\n   clustering and k-means. We optimize implementation\n   (with a paralleliz",
       "thread_id": "thread-31944f7f7d78",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000673.html"
     },
     {
       "id": "msg-a7e3348de41b",
@@ -132,7 +139,8 @@
       "body_snippet": "sudoku_2.0 is now available on CRAN and mirrors.\n\nThanks to some terrific contributions and suggestions, especially by\nnew co-author Greg Snow, this version has a full GUI interface (native\non Windows",
       "thread_id": "thread-a7e3348de41b",
       "thread_depth": 0,
-      "month": "2006-01"
+      "month": "2006-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000674.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Conditional Inference Procedures in a Permutation Test Framework\n\nThe `coin' package implements a general framework for conditional\ninference procedures, commonly known as permutation tests,\ntheoretic",
       "thread_id": "thread-83aefe0ce071",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000626.html"
     },
     {
       "id": "msg-86965f9e082f",
@@ -33,7 +34,8 @@
       "body_snippet": "The misc3d package provides a small collection of mostly rgl-based\nfunctions for 3D data:\n\n   contour3d     Uses rgl to render isosurfaces, or three-dimensional\n                 contours, computed by ",
       "thread_id": "thread-86965f9e082f",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000627.html"
     },
     {
       "id": "msg-76509640d867",
@@ -49,7 +51,8 @@
       "body_snippet": "dyn is an R package that facilitates the use of regression\nusing time series data with lags and diffs (known as dynamic\nregression).  It is a lightweight package that has no\nfacilities of its own but ",
       "thread_id": "thread-76509640d867",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000628.html"
     },
     {
       "id": "msg-45036cc94ba3",
@@ -61,11 +64,12 @@
       "subject_clean": "New package aod: Analysis of Overdispersed Data",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Information on package 'aod'\n\nDescription:\n\nPackage:       aod\nVersion:       1.1-2\nDate:          2005-06-08\nTitle:         Analysis of Overdispersed Data\nAuthor:        Matthieu Lesnoff <matthieu.lesnoff at cirad.fr> and Renaud\n                Lancelot <renaud.lancelot at cirad.fr>\nMaintainer:    Renaud Lancelot <renaud.lancelot at cirad.fr>\nDepends:       R (>= 2.0.0), methods, stats\nSuggests:      MASS, nlme\nDescription:   This package provides a set of functions to analyse\n                overdispersed counts or proportions. Most of the\n                methods are already available elsewhere but are\n                scattered in different packages. The proposed functions\n                should be considered as complements to more\n                sophisticated methods such as generalized estimating\n                equations (GEE) or generalized linear mixed effect\n                models (GLMM).\n\nIndex (edited):\n\nbetabin                 Beta-Binomial Model for Proportions\ndonner                  Test of Proportion Homogeneity using Donner's\n                         Adjustment\nicc                     Intra-Cluster Correlation\nnegbin                  Negative-Binomial Model for Counts\nquasibin                Quasi-Likelihood Model for Proportions\nquasipois               Quasi-Likelihood Model for Counts\nraoscott                Test of Proportion Homogeneity using Rao and\n                         Scott's Adjustment\nvarbin                  Mean, Variance and Confidence Interval of a\n                         Proportion\nwald.test               Wald Test for Model Coefficients\n\n#################\n\nBest regards,\n\nRenaud\n\n-- \nDr Renaud Lancelot, v?t?rinaire\nProjet FSP r?gional ?pidemio v?t?rinaire\nC/0 Ambassade de France - SCAC\nBP 834 Antananarivo 101 - Madagascar\n\ne-mail: renaud.lancelot at cirad.fr\ntel.:   +261 32 40 165 53 (cell)\n         +261 20 22 665 36 ext. 225 (work)\n         +261 20 22 494 37 (home)",
+      "body_plain": "Information on package 'aod'\n\nDescription:\n\nPackage:       aod\nVersion:       1.1-2\nDate:          2005-06-08\nTitle:         Analysis of Overdispersed Data\nAuthor:        Matthieu Lesnoff <matthieu.lesnoff at cirad.fr> and Renaud\n                Lancelot <renaud.lancelot at cirad.fr>\nMaintainer:    Renaud Lancelot <renaud.lancelot at cirad.fr>\nDepends:       R (>= 2.0.0), methods, stats\nSuggests:      MASS, nlme\nDescription:   This package provides a set of functions to analyse\n                overdispersed counts or proportions. Most of the\n                methods are already available elsewhere but are\n                scattered in different packages. The proposed functions\n                should be considered as complements to more\n                sophisticated methods such as generalized estimating\n                equations (GEE) or generalized linear mixed effect\n                models (GLMM).\n\nIndex (edited):\n\nbetabin                 Beta-Binomial Model for Proportions\ndonner                  Test of Proportion Homogeneity using Donner's\n                         Adjustment\nicc                     Intra-Cluster Correlation\nnegbin                  Negative-Binomial Model for Counts\nquasibin                Quasi-Likelihood Model for Proportions\nquasipois               Quasi-Likelihood Model for Counts\nraoscott                Test of Proportion Homogeneity using Rao and\n                         Scott's Adjustment\nvarbin                  Mean, Variance and Confidence Interval of a\n                         Proportion\nwald.test               Wald Test for Model Coefficients\n\n#################\n\nBest regards,\n\nRenaud\n\n-- \nDr Renaud Lancelot, vétérinaire\nProjet FSP régional épidemio vétérinaire\nC/0 Ambassade de France - SCAC\nBP 834 Antananarivo 101 - Madagascar\n\ne-mail: renaud.lancelot at cirad.fr\ntel.:   +261 32 40 165 53 (cell)\n         +261 20 22 665 36 ext. 225 (work)\n         +261 20 22 494 37 (home)",
       "body_snippet": "Information on package 'aod'\n\nDescription:\n\nPackage:       aod\nVersion:       1.1-2\nDate:          2005-06-08\nTitle:         Analysis of Overdispersed Data\nAuthor:        Matthieu Lesnoff <matthieu.le",
       "thread_id": "thread-45036cc94ba3",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000629.html"
     },
     {
       "id": "msg-a8cc09faba2b",
@@ -81,7 +85,8 @@
       "body_snippet": "I have uploaded version 0.96-1 of both Matrix and lme4 to CRAN.  The\nsource package should migrate to CRAN over the weekend and binary\npackages should be available some time next week.\n\nAs for previou",
       "thread_id": "thread-a8cc09faba2b",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000630.html"
     },
     {
       "id": "msg-0d8264e08f59",
@@ -97,7 +102,8 @@
       "body_snippet": "Version 1.1-0 of bayesm is now available on CRAN.\n\nThis version includes Bayesian inference for the NBD(Poisson) regression\nmodel and a hierarchical version of the same.  It also includes an additiona",
       "thread_id": "thread-0d8264e08f59",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000632.html"
     },
     {
       "id": "msg-0584b0c11fd7",
@@ -113,7 +119,8 @@
       "body_snippet": "We're happy to announce the CRAN release of \"sp\", an R package which\nhas new-style classes and methods for spatial data, version 0.7-9.\n\nSpatial data types that sp implements are: points, grids, lines",
       "thread_id": "thread-0584b0c11fd7",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000631.html"
     },
     {
       "id": "msg-3f2cf5ae7819",
@@ -130,6 +137,7 @@
       "thread_id": "thread-3f2cf5ae7819",
       "thread_depth": 0,
       "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000633.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20050617/e1dbe4d6/attachment.pl"
       ]
@@ -148,7 +156,8 @@
       "body_snippet": "There is now an Epi-package on CRAN.\n\nIt is intended for epidemiological analysis in R.\nIt has its own homepage, http://www.pubhealth.ku.dk/~bxc/Epi\n\nThe package has been used at the course \"Statistic",
       "thread_id": "thread-5031e4ee4b9c",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000634.html"
     },
     {
       "id": "msg-2b0c8650df92",
@@ -164,7 +173,8 @@
       "body_snippet": "The R interface to the GNU Linear Programming Kit (GLPK) is now available\non CRAN.\n\nThe R interface functions are almost identical to the native GLPK C API\nmaking it easy to move code and concepts bet",
       "thread_id": "thread-2b0c8650df92",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000635.html"
     },
     {
       "id": "msg-9f708dd76fa3",
@@ -180,7 +190,8 @@
       "body_snippet": "Dear useRs,\n\na new package for tree-structured regression is available on CRAN.\n\nThis package implements a unified framework for recursive partitioning\nwhich embeds tree-structured regression models i",
       "thread_id": "thread-9f708dd76fa3",
       "thread_depth": 0,
-      "month": "2005-06"
+      "month": "2005-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000636.html"
     }
   ],
   "threads": [

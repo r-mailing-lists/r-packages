@@ -17,7 +17,8 @@
       "body_snippet": "A new package called readABF for reading .abf, a binary format (or rather a\nfamily of related binary formats) used by software like Axon pClamp, is\navailable.\n\nCRAN: https://cran.r-project.org/package",
       "thread_id": "thread-6dc45adb1a0a",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001649.html"
     },
     {
       "id": "msg-9d064186dedc",
@@ -33,7 +34,8 @@
       "body_snippet": "The new 1.4 version of depmixS4 has an important (and much requested!) new\nfeature: the possibility to request standard errors of estimated parameters\nthrough the use of a finite differences approxima",
       "thread_id": "thread-9d064186dedc",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001651.html"
     },
     {
       "id": "msg-e0476d364917",
@@ -45,11 +47,12 @@
       "subject_clean": "New package qrandom: True random numbers",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi everyone,\nI would like to introduce a new package for R which is available on CRAN\nnow:\n\nqrandom: True Random Numbers using the ANU Quantum Random Numbers Server\n\nNote:\n(1) This package generates true random numbers and can be used as an\nalternative for RANDOM.ORG.\n(2) There is absolutely no limit on how many true random numbers one may\nretrieve.\n(3) A sequence up to 100,000 true random integers or hexadecimal numbers\nper single request is possible and data is whether a sequence, uniform\ndistribution or normal distribution.\n\nDescription:\nIt provides an interface to the ANU Quantum Random Number Generator\n<https://qrng.anu.edu.au/index.php> provided by the Australian National\nUniversity. True random numbers are generated in real-time by measuring\nthe quantum fluctuations of the vacuum. The electromagnetic field of the\nvacuum exhibits random fluctuations in phase and amplitude at all\nfrequencies. By carefully measuring these fluctuations, one is able to\ngenerate ultra-high bandwidth random numbers. The quantum Random Number\nGenerator is based on the papers by Symul et al., (2011)\n<https://doi.org/10.1063/1.3597793> and Haw, et al. (2015)\n<https://doi.org/10.1103/PhysRevApplied.3.054004>. The package offers\nfunctions to retrieve a sequence of random integers or hexadecimals and\ntrue random samples from a normal or uniform distribution.\n\nThe R package is available via\nhttps://cran.r-project.org/web/packages/qrandom/index.html\nIf you like to access the developmental version:\nhttps://github.com/skoestlmeier/qrandom\n\nBest regards,\nSiegfried K?stlmeier (Ph.D. student in Finance at the University of\nRegensburg)",
+      "body_plain": "Hi everyone,\nI would like to introduce a new package for R which is available on CRAN\nnow:\n\nqrandom: True Random Numbers using the ANU Quantum Random Numbers Server\n\nNote:\n(1) This package generates true random numbers and can be used as an\nalternative for RANDOM.ORG.\n(2) There is absolutely no limit on how many true random numbers one may\nretrieve.\n(3) A sequence up to 100,000 true random integers or hexadecimal numbers\nper single request is possible and data is whether a sequence, uniform\ndistribution or normal distribution.\n\nDescription:\nIt provides an interface to the ANU Quantum Random Number Generator\n<https://qrng.anu.edu.au/index.php> provided by the Australian National\nUniversity. True random numbers are generated in real-time by measuring\nthe quantum fluctuations of the vacuum. The electromagnetic field of the\nvacuum exhibits random fluctuations in phase and amplitude at all\nfrequencies. By carefully measuring these fluctuations, one is able to\ngenerate ultra-high bandwidth random numbers. The quantum Random Number\nGenerator is based on the papers by Symul et al., (2011)\n<https://doi.org/10.1063/1.3597793> and Haw, et al. (2015)\n<https://doi.org/10.1103/PhysRevApplied.3.054004>. The package offers\nfunctions to retrieve a sequence of random integers or hexadecimals and\ntrue random samples from a normal or uniform distribution.\n\nThe R package is available via\nhttps://cran.r-project.org/web/packages/qrandom/index.html\nIf you like to access the developmental version:\nhttps://github.com/skoestlmeier/qrandom\n\nBest regards,\nSiegfried Köstlmeier (Ph.D. student in Finance at the University of\nRegensburg)",
       "body_snippet": "Hi everyone,\nI would like to introduce a new package for R which is available on CRAN\nnow:\n\nqrandom: True Random Numbers using the ANU Quantum Random Numbers Server\n\nNote:\n(1) This package generates t",
       "thread_id": "thread-e0476d364917",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001650.html"
     },
     {
       "id": "msg-4a134cbfbfa2",
@@ -65,7 +68,8 @@
       "body_snippet": "Hi,\n\nPackage ffmanova originally released on CRAN in 2006 has now been updated to Version 1.0. It has been a stable working horse and the changes are cosmetic.\n\nPackage RegSDC (Version: 0.2.0) is a ne",
       "thread_id": "thread-4a134cbfbfa2",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001652.html"
     },
     {
       "id": "msg-ff1330a9e1c1",
@@ -81,7 +85,8 @@
       "body_snippet": "Hello everyone,\n\nWe present you the permuco package, which has 2 main purposes: PERmutation tests and MUltiple COmparisons.\n\nFirst, the package has functions for permutation tests for parameters in li",
       "thread_id": "thread-ff1330a9e1c1",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001653.html"
     },
     {
       "id": "msg-bf9322bc028c",
@@ -97,7 +102,8 @@
       "body_snippet": "Dear useRs,\n\n I am pleased to announce the publication of mgcViz 0.1.3 on CRAN:\nhttps://cran.r-project.org/web/packages/mgcViz/index.html\n\nmgcViz is an extension of mgcv, and provides a layered ggplot",
       "thread_id": "thread-bf9322bc028c",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001654.html"
     },
     {
       "id": "msg-9baf3d9d2390",
@@ -115,7 +121,8 @@
       "body_snippet": "There have been a significant number of bug fixes and updates to the Hmisc package.  See the following for the list of changes: https://cran.r-project.org/web/packages/Hmisc/NEWS\n\ncran.r-project.org<h",
       "thread_id": "thread-9baf3d9d2390",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001655.html"
     },
     {
       "id": "msg-d7ff4d930da2",
@@ -131,7 +138,8 @@
       "body_snippet": "Many ethnobotanists are calculating indices and performing quantitative analysis with excel. Not any more! Now they can use the ethnobotanyR package to calculate common quantitative ethnobotany indice",
       "thread_id": "thread-d7ff4d930da2",
       "thread_depth": 0,
-      "month": "2019-01"
+      "month": "2019-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001656.html"
     }
   ],
   "threads": [

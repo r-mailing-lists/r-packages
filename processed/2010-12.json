@@ -17,7 +17,8 @@
       "body_snippet": "In formatR 0.1-5, the dependency on the gWidgets and animation\npackages are removed. The GUI by gWidgets is optional now.\n\nMeanwhile, the function tidy.source() has been moved from the\nanimation packa",
       "thread_id": "thread-93b6ab74bc1a",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001190.html"
     },
     {
       "id": "msg-6ae57a089859",
@@ -33,7 +34,8 @@
       "body_snippet": "A new release of the tikzDevice was posted to CRAN today and will soon\nbe available from mirrors worldwide.  The tikzDevice package provides\na graphics device that translates R graphics into TeX code ",
       "thread_id": "thread-6ae57a089859",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001191.html"
     },
     {
       "id": "msg-6a94fd6b8372",
@@ -45,11 +47,12 @@
       "subject_clean": "pgfSweave 1.1.1 Released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "The next release of?pgfSweave?is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the?highlight?package. This can be\nturned off with the new `highlight`?option.\n- \"Tidying\" of source code output via the?tidy?option.\n- Access to?tikzDevice?sanitization through a code chunk option?`sanitize`\n- Automatic addition of the?\\pgfrealjobname?command if it does not\nexist similarly to the addition of the?\\usepackage{Sweave}?line.\n- Setting tex.driver=latex will now (in addition to working) generate\nan eps file\n\nAnd of course bug fixes:\n\n- Fixes for bunches of issues related to the changes in Sweave in R\n2.12. I think these issues are now resolved (fingers crossed)\n- keep.source?actually works now.\n\nSee the?NEWS?file for the complete list of changes and the?vignette\nfor information on now to use the new options.\n\nCheers!\n\n-Cameron",
-      "body_snippet": "The next release of?pgfSweave?is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the?highlight?pac",
+      "body_plain": "The next release of pgfSweave is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the highlight package. This can be\nturned off with the new `highlight` option.\n- \"Tidying\" of source code output via the tidy option.\n- Access to tikzDevice sanitization through a code chunk option `sanitize`\n- Automatic addition of the \\pgfrealjobname command if it does not\nexist similarly to the addition of the \\usepackage{Sweave} line.\n- Setting tex.driver=latex will now (in addition to working) generate\nan eps file\n\nAnd of course bug fixes:\n\n- Fixes for bunches of issues related to the changes in Sweave in R\n2.12. I think these issues are now resolved (fingers crossed)\n- keep.source actually works now.\n\nSee the NEWS file for the complete list of changes and the vignette\nfor information on now to use the new options.\n\nCheers!\n\n-Cameron",
+      "body_snippet": "The next release of pgfSweave is now on CRAN! pgfSweave has seen some\nsignificant changes in the past couple of months.\n\nThe main new features are:\n\n- Automatic code highlighting via the highlight pac",
       "thread_id": "thread-6a94fd6b8372",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001192.html"
     },
     {
       "id": "msg-0259355737e4",
@@ -65,7 +68,8 @@
       "body_snippet": "batchfiles is a set of batch, javascript and HTML\nApplication files that are useful for running R and\nassociated programs on Windows.\n\nVersion 0.6-0 updates them for the new architecture\nspecific dire",
       "thread_id": "thread-0259355737e4",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001193.html"
     },
     {
       "id": "msg-114295ebd359",
@@ -82,6 +86,7 @@
       "thread_id": "thread-114295ebd359",
       "thread_depth": 0,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001194.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20101214/0b9afe1c/attachment.pl"
       ]
@@ -100,7 +105,8 @@
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modeling of longitudinal and \ntime-to-event data using shared parameter model",
       "thread_id": "thread-81a0ed9ad138",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001195.html"
     },
     {
       "id": "msg-e55c472be62c",
@@ -116,7 +122,8 @@
       "body_snippet": "Dear all,\n\nI'm pleased to announce the release of an R implementation of the\nSelf-Organising Migrating Algorithm (SOMA), a general-purpose,\nstochastic optimisation algorithm. The approach is similar t",
       "thread_id": "thread-e55c472be62c",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001196.html"
     },
     {
       "id": "msg-6ebcdfbb32a2",
@@ -132,7 +139,8 @@
       "body_snippet": "===== Summary =====\n\nVersion 0.9.0 of the Rcpp package is now on CRAN and its mirrors.  This\nrelease marks another step in the development of the package, and a few key\npoints are highlighted below.  ",
       "thread_id": "thread-6ebcdfbb32a2",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001197.html"
     },
     {
       "id": "msg-cdf07f5bd53c",
@@ -149,6 +157,7 @@
       "thread_id": "thread-cdf07f5bd53c",
       "thread_depth": 0,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001200.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20101224/4598fb4f/attachment.pl"
       ]
@@ -167,7 +176,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-783212149216",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001198.html"
     },
     {
       "id": "msg-8ecc62a3c65d",
@@ -183,7 +193,8 @@
       "body_snippet": "Version 0.9.0, a first release of cg, is published on CRAN and its\nmirrors. The \"cg\" name stands for \"compare groups.\" Its genesis and\nevolution are driven by common \"in-practice\" needs to compare sam",
       "thread_id": "thread-8ecc62a3c65d",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001199.html"
     }
   ],
   "threads": [

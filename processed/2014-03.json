@@ -15,11 +15,12 @@
       "references": [
         "<C9BDFBA8-E99D-4975-89EB-A0F2750B054E@hacettepe.edu.tr>"
       ],
-      "body_plain": "Dear R users,\n\nWe are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. \n\nThis package contains three most widely used multivariate normality tests, including Mardia?s, Henze-Zirkler?s and Royston?s Multivariate Normality Tests. \nIn addition these tests, our package has ability to create three multivariate plots. In the earlier version of the package, there was just one plot, which was chi-square Q-Q plot. Now, users can create two new multivariate plots, perspective and contour plots, for binary data sets. \n\nWe have also added a vignette to the package for more depth information.\n\nWe are looking forward to getting your useful feedbacks to email selcuk.korkmaz at hacettepe.edu.tr\n\nBest, \n\nhttp://cran.r-project.org/web/packages/MVN/index.html\nhttp://cran.r-project.org/web/packages/MVN/vignettes/MVN.pdf\n\n----------------------------------------------------------\nSelcuk Korkmaz\nHacettepe University \nFaculty of Medicine \nDepartment of Biostatistics \n06100 Sihhiye, Ankara/Turkey.",
+      "body_plain": "Dear R users,\n\nWe are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. \n\nThis package contains three most widely used multivariate normality tests, including Mardia’s, Henze-Zirkler’s and Royston’s Multivariate Normality Tests. \nIn addition these tests, our package has ability to create three multivariate plots. In the earlier version of the package, there was just one plot, which was chi-square Q-Q plot. Now, users can create two new multivariate plots, perspective and contour plots, for binary data sets. \n\nWe have also added a vignette to the package for more depth information.\n\nWe are looking forward to getting your useful feedbacks to email selcuk.korkmaz at hacettepe.edu.tr\n\nBest, \n\nhttp://cran.r-project.org/web/packages/MVN/index.html\nhttp://cran.r-project.org/web/packages/MVN/vignettes/MVN.pdf\n\n----------------------------------------------------------\nSelcuk Korkmaz\nHacettepe University \nFaculty of Medicine \nDepartment of Biostatistics \n06100 Sihhiye, Ankara/Turkey.",
       "body_snippet": "Dear R users,\n\nWe are pleased to inform you that version 2.0 of the MVN package has been released yesterday and it is available on CRAN now. \n\nThis package contains three most widely used multivariate",
       "thread_id": "thread-6c23367d6ad7",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001407.html"
     },
     {
       "id": "msg-30d5b505cf35",
@@ -35,7 +36,8 @@
       "body_snippet": "Recent changes include the following.\n\nChanges in version 3.14-2 (2014-02-26)\n    * latex.default: improved logic using new function in Misc: latexBuild\n\t * latex.default: fixed bug with ctable=TRUE w",
       "thread_id": "thread-30d5b505cf35",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001404.html"
     },
     {
       "id": "msg-38b257e88742",
@@ -51,7 +53,8 @@
       "body_snippet": "Changes are listed below.\n\nNOTE: The next release of rms will replace the survfit.formula function \nwith a new function named npsurv (\"nonparametric survival estimates\") so \nas to not conflict with th",
       "thread_id": "thread-38b257e88742",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001405.html"
     },
     {
       "id": "msg-4e4646db05fc",
@@ -67,7 +70,8 @@
       "body_snippet": "The first submission of the new greport package is now on CTAN.  This \npackage facilitates graphical reporting of clinical trials an is highly \ntied to LaTeX, Hmisc, and lattice.  It creates hyperlink",
       "thread_id": "thread-4e4646db05fc",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001406.html"
     },
     {
       "id": "msg-0f667db17234",
@@ -83,7 +87,8 @@
       "body_snippet": "This package provides meta-analysis of significance values.\n\nAlthough the preferred way of performing meta-analysis uses effect \nsizes sometimes these are unavailable and only p-values can be \nobtaine",
       "thread_id": "thread-0f667db17234",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001408.html"
     },
     {
       "id": "msg-bbb0c5c41c30",
@@ -100,6 +105,7 @@
       "thread_id": "thread-bbb0c5c41c30",
       "thread_depth": 0,
       "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001409.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20140318/82c23d50/attachment.pl"
       ]
@@ -118,7 +124,8 @@
       "body_snippet": "Dear all,\n\nSandy Weisberg, Michael Friendly, and I would like to announce a new version of the effects package, 3.0-0, now on CRAN; the new version should shortly percolate through the various CRAN mi",
       "thread_id": "thread-5069ea81e8cc",
       "thread_depth": 0,
-      "month": "2014-03"
+      "month": "2014-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001410.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "## statquotes package released to CRAN\n\nThe statquotes package v. 0.2 has recently been released to CRAN.  In a spirit\nsimilar to fortunes and gaussfacts, the function `statquote()`\ndisplays a randoml",
       "thread_id": "thread-6c8b2aef8bfe",
       "thread_depth": 0,
-      "month": "2016-09"
+      "month": "2016-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001498.html"
     },
     {
       "id": "msg-a8beda2be8fd",
@@ -33,7 +34,8 @@
       "body_snippet": "## Lahman package v. 5.0.0 released to CRAN\n\nTeam Lahman is pleased to announce that v. 5.0.0 of the Lahamn package \nis now\non CRAN.  It contains the data from Sean Lahman's Baseball Database,\nhttp://",
       "thread_id": "thread-a8beda2be8fd",
       "thread_depth": 0,
-      "month": "2016-09"
+      "month": "2016-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001499.html"
     },
     {
       "id": "msg-ab3de39b79e5",
@@ -51,7 +53,8 @@
       "body_snippet": "diffobj provides tools to compare the visual representation of R objects using the Myer's diff algorithm:\n\n## Example:\n> mx1 <- matrix(1:9, 3)\n> mx2 <- mx1[-2,]\n> diffPrint(mx1, mx2, format=\"raw\")\n< m",
       "thread_id": "thread-ab3de39b79e5",
       "thread_depth": 0,
-      "month": "2016-09"
+      "month": "2016-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001500.html"
     },
     {
       "id": "msg-700c006a6a2d",
@@ -63,11 +66,12 @@
       "subject_clean": "stripless package version 1.0-2 now on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A vignette has been added to the package. I hope that even those who don?t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs and adds a few small features. See the NEWS file for details. As always, comments and suggestions welcome.",
-      "body_snippet": "A vignette has been added to the package. I hope that even those who don?t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs a",
+      "body_plain": "A vignette has been added to the package. I hope that even those who don’t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs and adds a few small features. See the NEWS file for details. As always, comments and suggestions welcome.",
+      "body_snippet": "A vignette has been added to the package. I hope that even those who don’t use the package will find its discussion of trellis graphics useful. Otherwise, this is a minor update that fixes some bugs a",
       "thread_id": "thread-700c006a6a2d",
       "thread_depth": 0,
-      "month": "2016-09"
+      "month": "2016-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001501.html"
     },
     {
       "id": "msg-a719be823036",
@@ -83,7 +87,8 @@
       "body_snippet": "The package \"Rdice\" has just been released on CRAN. It contains a\ncollection of functions to simulate dice rolls and the like. In particular,\nexperiments and exercises can be performed looking at comb",
       "thread_id": "thread-a719be823036",
       "thread_depth": 0,
-      "month": "2016-09"
+      "month": "2016-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001502.html"
     }
   ],
   "threads": [

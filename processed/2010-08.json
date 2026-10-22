@@ -18,6 +18,7 @@
       "thread_id": "thread-f52e3f3717f0",
       "thread_depth": 0,
       "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001159.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100810/8bf4de4a/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "A new version of Deducer (0.4) has been sent to CRAN, and should be  \npropagating to all the mirrors in due course. Also, a new plug-in  \npackage (DeducerExtras) has also been released to CRAN, contai",
       "thread_id": "thread-9e4dd17d4c9e",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001160.html"
     },
     {
       "id": "msg-1958298af847",
@@ -52,7 +54,8 @@
       "body_snippet": "Strings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because they have gr",
       "thread_id": "thread-1958298af847",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001161.html"
     },
     {
       "id": "msg-ae5f6bc840ba",
@@ -68,7 +71,8 @@
       "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences \nof  states or events, and more generally discrete sequential data has \nbeen updated to version 1.6-1. Its primary ",
       "thread_id": "thread-ae5f6bc840ba",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001162.html"
     },
     {
       "id": "msg-9ad1d2bf319e",
@@ -84,7 +88,8 @@
       "body_snippet": "Dear all,\n\nI have submitted a new package called mpt to CRAN.\n\nIt contains functions for fitting and testing multinomial\nprocessing tree (MPT) models, a class of statistical models for\ncategorical dat",
       "thread_id": "thread-9ad1d2bf319e",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001163.html"
     },
     {
       "id": "msg-23acd259d11c",
@@ -102,7 +107,8 @@
       "body_snippet": "The ez package was developed to aid those that are new to statistical\nprogramming. Over the course of several years of helping colleagues\nand students learn R, I observed that folks are often initiall",
       "thread_id": "thread-23acd259d11c",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001164.html"
     },
     {
       "id": "msg-1ba109654b82",
@@ -114,11 +120,12 @@
       "subject_clean": "New package: lubridate 0.1",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Please find below the package announcement for the R package lubridate\navailable from cran.\n\nThank you,\n\nGarrett Grolemund\nRice University\n\n##lubridate\n\nDate-time data can be frustrating to work with in R. R commands for\ndate-times are generally unintuitive and change depending on the type\nof date-time object being used. Moreover, the methods we use with\ndate-times must be robust to time zones, leap days, daylight savings\ntimes, and other time related quirks, and R lacks these capabilities\nin some situations. Lubridate makes it easier to do the things R does\nwith date-times and possible to do the things R does not.\nSpecifically, lubridate provides:\n\n* a set of intuitive date-time related functions that work the same\nway for all common date-time classes (including those from?chron,\ntimeDate,?zoo,?xts,its,?tis,?timeSeries,?fts, and?tseries)\n\n* quick and easy parsing of date-times:?ymd(),?dmy(),?mdy(), ...\n\n* simple functions to extract and modify components of a date-time,\nsuch as years, months, days, hours, minutes, and seconds:?year(),\nmonth(),?day(), ...\n\n* helper functions for handling time zones:?with_tz(),?force_tz()\n\nLubridate also expands the type of mathematical operations that can be\nperformed with date-time objects. It introduces three new time span\nclasses borrowed from http://joda.org.\n\n* durations, which measure the exact amount of time between two points\n\n* periods, which accurately track clock times despite leap years, leap\nseconds, and day light savings time\n\n* intervals, a protean summary of the time information between two points",
+      "body_plain": "Please find below the package announcement for the R package lubridate\navailable from cran.\n\nThank you,\n\nGarrett Grolemund\nRice University\n\n##lubridate\n\nDate-time data can be frustrating to work with in R. R commands for\ndate-times are generally unintuitive and change depending on the type\nof date-time object being used. Moreover, the methods we use with\ndate-times must be robust to time zones, leap days, daylight savings\ntimes, and other time related quirks, and R lacks these capabilities\nin some situations. Lubridate makes it easier to do the things R does\nwith date-times and possible to do the things R does not.\nSpecifically, lubridate provides:\n\n* a set of intuitive date-time related functions that work the same\nway for all common date-time classes (including those from chron,\ntimeDate, zoo, xts,its, tis, timeSeries, fts, and tseries)\n\n* quick and easy parsing of date-times: ymd(), dmy(), mdy(), ...\n\n* simple functions to extract and modify components of a date-time,\nsuch as years, months, days, hours, minutes, and seconds: year(),\nmonth(), day(), ...\n\n* helper functions for handling time zones: with_tz(), force_tz()\n\nLubridate also expands the type of mathematical operations that can be\nperformed with date-time objects. It introduces three new time span\nclasses borrowed from http://joda.org.\n\n* durations, which measure the exact amount of time between two points\n\n* periods, which accurately track clock times despite leap years, leap\nseconds, and day light savings time\n\n* intervals, a protean summary of the time information between two points",
       "body_snippet": "Please find below the package announcement for the R package lubridate\navailable from cran.\n\nThank you,\n\nGarrett Grolemund\nRice University\n\n##lubridate\n\nDate-time data can be frustrating to work with ",
       "thread_id": "thread-1ba109654b82",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001165.html"
     }
   ],
   "threads": [

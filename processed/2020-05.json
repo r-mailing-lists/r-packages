@@ -13,11 +13,12 @@
       "subject_clean": "multivariance: Measuring Multivariate Dependence Using Distance Multivariance",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R-users and developers,\n\nbased on a recent series of of papers [1-6] the package 'multivariance' \n(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.\nIt provides in particular:\n\n+ *fast global tests of independence* for an arbitrary number of \nvariables of arbitrary dimensions\n\n+ a detection and visualization algorithm for *higher order dependence \nstructures*\n\n+ estimators for multivariate dependence measures which *characterize \nindependence*, i.e. the population version is 0 if and only if the \nvariables are independent (in contrast to the standard correlation 'cor')\n\nAs a side remark, some food for thought: Note that in [3] it is referred \nto over 350 datasets from more than 150 R-packages, which all feature \nsome statistical significant higher order dependencies. Some are \nprobably artefacts, but in any case it is likely that these have been \nunnoticed and undiscussed so far. Moreover, since it was purely a brute \nforce study, this might provide starting points for plenty of research \nby the corresponding field specialists.\n\nComments and questions on 'multivariance' and the underlying theory are \nwelcome.\n\nBest wishes\n\nBj?rn B?ttcher\n\n\nReferences:\n\n[1] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Detecting \nindependence of random vectors: generalized distance covariance and \nGaussian covariance.\nModern Stochastics: Theory and Applications, Vol. 5, No. 3 (2018) 353-383.\nhttps://www.vmsta.org/journal/VMSTA/article/127/info\n\n[2] B. B?ttcher, M. Keller-Ressel, R.L. Schilling, Distance \nmultivariance: New dependence measures for random vectors.\nThe Annals of Statistics, Vol. 47, No. 5 (2019) 2757-2789.\nhttps://projecteuclid.org/euclid.aos/1564797863\n\n[3] B. B?ttcher, Dependence and Dependence Structures: Estimation and \nVisualization using the Unifying Concept of Distance Multivariance.\nOpen Statistics, Vol. 1, No. 1 (2020) 1-46.\nhttps://doi.org/10.1515/stat-2020-0001\n\n[4] G. Berschneider, B. B?ttcher, On complex Gaussian random fields, \nGaussian quadratic forms and sample distance multivariance. Preprint.\nhttps://arxiv.org/abs/1808.07280\n\n[5] B. B?ttcher, Copula versions of distance multivariance and dHSIC via \nthe distributional transform -- a general approach to construct \ninvariant dependence measures.\nStatistics, (2020) 1-18.\nhttps://doi.org/10.1080/02331888.2020.1748029\n\n[6] B. B?ttcher, Notes on the interpretation of dependence measures -- \nPearson's correlation, distance correlation, distance multicorrelations \nand their copula versions. Preprint.\nhttps://arxiv.org/abs/2004.07649\n\n\n-- \nDr. Bj?rn B?ttcher\nTU Dresden\nInstitut f?r Math. Stochastik\nD-01062 Dresden, Germany\nPhone: +49 (0) 351 463 32423\nFax:   +49 (0) 351 463 37251\nWeb:   http://www.math.tu-dresden.de/~boettch/",
+      "body_plain": "Dear R-users and developers,\n\nbased on a recent series of of papers [1-6] the package 'multivariance' \n(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.\nIt provides in particular:\n\n+ *fast global tests of independence* for an arbitrary number of \nvariables of arbitrary dimensions\n\n+ a detection and visualization algorithm for *higher order dependence \nstructures*\n\n+ estimators for multivariate dependence measures which *characterize \nindependence*, i.e. the population version is 0 if and only if the \nvariables are independent (in contrast to the standard correlation 'cor')\n\nAs a side remark, some food for thought: Note that in [3] it is referred \nto over 350 datasets from more than 150 R-packages, which all feature \nsome statistical significant higher order dependencies. Some are \nprobably artefacts, but in any case it is likely that these have been \nunnoticed and undiscussed so far. Moreover, since it was purely a brute \nforce study, this might provide starting points for plenty of research \nby the corresponding field specialists.\n\nComments and questions on 'multivariance' and the underlying theory are \nwelcome.\n\nBest wishes\n\nBjörn Böttcher\n\n\nReferences:\n\n[1] B. Böttcher, M. Keller-Ressel, R.L. Schilling, Detecting \nindependence of random vectors: generalized distance covariance and \nGaussian covariance.\nModern Stochastics: Theory and Applications, Vol. 5, No. 3 (2018) 353-383.\nhttps://www.vmsta.org/journal/VMSTA/article/127/info\n\n[2] B. Böttcher, M. Keller-Ressel, R.L. Schilling, Distance \nmultivariance: New dependence measures for random vectors.\nThe Annals of Statistics, Vol. 47, No. 5 (2019) 2757-2789.\nhttps://projecteuclid.org/euclid.aos/1564797863\n\n[3] B. Böttcher, Dependence and Dependence Structures: Estimation and \nVisualization using the Unifying Concept of Distance Multivariance.\nOpen Statistics, Vol. 1, No. 1 (2020) 1-46.\nhttps://doi.org/10.1515/stat-2020-0001\n\n[4] G. Berschneider, B. Böttcher, On complex Gaussian random fields, \nGaussian quadratic forms and sample distance multivariance. Preprint.\nhttps://arxiv.org/abs/1808.07280\n\n[5] B. Böttcher, Copula versions of distance multivariance and dHSIC via \nthe distributional transform -- a general approach to construct \ninvariant dependence measures.\nStatistics, (2020) 1-18.\nhttps://doi.org/10.1080/02331888.2020.1748029\n\n[6] B. Böttcher, Notes on the interpretation of dependence measures -- \nPearson's correlation, distance correlation, distance multicorrelations \nand their copula versions. Preprint.\nhttps://arxiv.org/abs/2004.07649\n\n\n-- \nDr. Björn Böttcher\nTU Dresden\nInstitut für Math. Stochastik\nD-01062 Dresden, Germany\nPhone: +49 (0) 351 463 32423\nFax:   +49 (0) 351 463 37251\nWeb:   http://www.math.tu-dresden.de/~boettch/",
       "body_snippet": "Dear R-users and developers,\n\nbased on a recent series of of papers [1-6] the package 'multivariance' \n(available on CRAN; latest version 2.3.0, 2020-04-23) was developed.\nIt provides in particular:\n\n",
       "thread_id": "thread-7bcfa05558c7",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001707.html"
     },
     {
       "id": "msg-969a9b4e690b",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi all,\n\nI hope this message finds you well. I have developed a new R package,\nsquashinformr, that allows users to web scrape data on the Professional\nSquash Association World Tour and other squash to",
       "thread_id": "thread-969a9b4e690b",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001708.html"
     },
     {
       "id": "msg-3af5883842a4",
@@ -49,7 +51,8 @@
       "body_snippet": "Hi All,\n\nI hope this message finds you well.\nI have developed the simplePHENOTYPES package to simulate single and multiple (correlated) traits in a wide range of scenarios, including additive, dominan",
       "thread_id": "thread-3af5883842a4",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001709.html"
     },
     {
       "id": "msg-b7fa801f9b95",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear All,\n\nI would like to announce the release of the 'mathjaxr' package: \n\nhttps://cran.r-project.org/package=mathjaxr\n\nThe package provides MathJax and a handful of macros to enable its use within ",
       "thread_id": "thread-b7fa801f9b95",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001711.html"
     },
     {
       "id": "msg-d234bb6ec542",
@@ -81,7 +85,8 @@
       "body_snippet": "addScales is a small package that modifies trellis objects created\nusing lattice graphics by adding horizontal and/or vertical reference\nlines that provide visual scaling information. This is mostly u",
       "thread_id": "thread-d234bb6ec542",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001710.html"
     },
     {
       "id": "msg-89b6dafc7811",
@@ -93,11 +98,12 @@
       "subject_clean": "New version 'spsur' for the estimation of Spatial Seemingly Unrelated Regression",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all\nI am pleased to announce that the R package ?spsur? for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/spsur/index.html <https://cran.r-project.org/web/packages/spsur/index.html>\nThis version of ?spsur? has been adapted to the standard arguments used in similar packages (spatialreg, spdep, splm, sphet) and include new functionalities.\n\nA new user guide is available on: https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html <https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html>\nI hope you find interest this package for you research or for your PhD students. \nFernando A. L?pez Hern?ndez\nfernando.lopez at upct.es <mailto:fernando.lopez at upct.es>\nhttp://metodos.upct.es/falopez/ <http://metodos.upct.es/falopez/>\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear all\nI am pleased to announce that the R package ?spsur? for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/sp",
+      "body_plain": "Dear all\nI am pleased to announce that the R package ‘spsur’ for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/spsur/index.html <https://cran.r-project.org/web/packages/spsur/index.html>\nThis version of ‘spsur’ has been adapted to the standard arguments used in similar packages (spatialreg, spdep, splm, sphet) and include new functionalities.\n\nA new user guide is available on: https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html <https://cran.r-project.org/web/packages/spsur/vignettes/vig1.html>\nI hope you find interest this package for you research or for your PhD students. \nFernando A. López Hernández\nfernando.lopez at upct.es <mailto:fernando.lopez at upct.es>\nhttp://metodos.upct.es/falopez/ <http://metodos.upct.es/falopez/>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all\nI am pleased to announce that the R package ‘spsur’ for the estimation of Spatial Seemingly Unrelated Regression upload a new version in the CRAN. \n\nhttps://cran.r-project.org/web/packages/sp",
       "thread_id": "thread-89b6dafc7811",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001712.html"
     },
     {
       "id": "msg-292208d5eca2",
@@ -113,7 +119,8 @@
       "body_snippet": "Hi all,\n\n\nI'm writing to you to introduce our new package, copent. This package estimates copula entropy, a new mathematical concept for multivariate statistical independence measure and testing [1].&",
       "thread_id": "thread-292208d5eca2",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001713.html"
     },
     {
       "id": "msg-b02f6e04ef42",
@@ -129,7 +136,8 @@
       "body_snippet": "Thanks all,\nMy package \"roptions\" is now available on CRAN. My package contains a\ncollection of tools to develop options strategies, value option contracts\nusing the Black-Scholes-Merten option pricin",
       "thread_id": "thread-b02f6e04ef42",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001714.html"
     },
     {
       "id": "msg-c50175544344",
@@ -145,7 +153,8 @@
       "body_snippet": "Dear All,\n\nThe statespacer package is now on CRAN (\nhttps://cran.r-project.org/package=statespacer). This package provides\nfunctionality for modelling and forecasting time series using state space\ntec",
       "thread_id": "thread-c50175544344",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001715.html"
     },
     {
       "id": "msg-52915bc79a1d",
@@ -161,7 +170,8 @@
       "body_snippet": "Dear all,\n\nI am happy to announce that the R package \"motifcluster\" is now \navailable on CRAN. This package provides tools for spectral clustering \nof weighted directed networks using motif adjacency ",
       "thread_id": "thread-52915bc79a1d",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001716.html"
     },
     {
       "id": "msg-5cc9c94551e9",
@@ -177,7 +187,8 @@
       "body_snippet": "Hi all,\n\nI'm pleased to announce that the 'strand' package is now available on CRAN.\n\nThe package provides a framework for performing discrete (share-level)\nsimulations of investment strategies. Simul",
       "thread_id": "thread-5cc9c94551e9",
       "thread_depth": 0,
-      "month": "2020-05"
+      "month": "2020-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001717.html"
     }
   ],
   "threads": [

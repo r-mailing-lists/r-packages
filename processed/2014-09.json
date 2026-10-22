@@ -13,11 +13,12 @@
       "subject_clean": "New R package ``bvarsv''",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nplease let me draw your attention to my new R package bvarsv (on CRAN \nsince August 28) which implements the Primiceri (Review of Economic \nStudies, 2005) vector autoregressive model. The model is popular in \nmacroeconomic analysis as it allows to model instabilities (e.g. in the \nmean and volatility dynamics) that are often observed in macroeconomic \ntime series like inflation.\n\nThe package provides functionality for Bayesian analysis of the \nPrimiceri model. To the best of my knowledge, it is the only publicly \navailable R code to do so. The underlying Markov Chain Monte Carlo \nalgorithm is computationally challenging, since each iteration requires \nmultiple calls of a recursive Kalman filter type algorithm. Therefore, \nbvarsv relies on C++ code ported to R via Rcpp and RcppArmadillo. The \nclear focus of the package is on forecasting, as opposed to structural \nanalysis of economic relationships. The package allows to compute \nposterior predictive distributions, which can then be plotted and \nanalyzed using forecast evaluation techniques. More detailed \ndocumentation and examples is available here:\n\nhttps://sites.google.com/site/fk83research/code\n\nYour feedback on any aspects of the package, as well as possible \nimprovements or extensions, would be highly appreciated.\n\nThank you and best wishes,\nFabian Kr?ger",
+      "body_plain": "Dear R users,\n\nplease let me draw your attention to my new R package bvarsv (on CRAN \nsince August 28) which implements the Primiceri (Review of Economic \nStudies, 2005) vector autoregressive model. The model is popular in \nmacroeconomic analysis as it allows to model instabilities (e.g. in the \nmean and volatility dynamics) that are often observed in macroeconomic \ntime series like inflation.\n\nThe package provides functionality for Bayesian analysis of the \nPrimiceri model. To the best of my knowledge, it is the only publicly \navailable R code to do so. The underlying Markov Chain Monte Carlo \nalgorithm is computationally challenging, since each iteration requires \nmultiple calls of a recursive Kalman filter type algorithm. Therefore, \nbvarsv relies on C++ code ported to R via Rcpp and RcppArmadillo. The \nclear focus of the package is on forecasting, as opposed to structural \nanalysis of economic relationships. The package allows to compute \nposterior predictive distributions, which can then be plotted and \nanalyzed using forecast evaluation techniques. More detailed \ndocumentation and examples is available here:\n\nhttps://sites.google.com/site/fk83research/code\n\nYour feedback on any aspects of the package, as well as possible \nimprovements or extensions, would be highly appreciated.\n\nThank you and best wishes,\nFabian Krüger",
       "body_snippet": "Dear R users,\n\nplease let me draw your attention to my new R package bvarsv (on CRAN \nsince August 28) which implements the Primiceri (Review of Economic \nStudies, 2005) vector autoregressive model. T",
       "thread_id": "thread-a7c19d1d6f36",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001423.html"
     },
     {
       "id": "msg-2098ff5bf8ce",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear list\n\nVersion 3.0-1 of the Lahman package was recently submitted to CRAN. It \ncontains the\nthe tables from Sean Lahman's  Baseball Database,\nhttp://www.seanlahman.com/baseball-archive/statistics/",
       "thread_id": "thread-2098ff5bf8ce",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001424.html"
     },
     {
       "id": "msg-98e9029e4942",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear R community,\n\nFor users interested in streaming classification or building classification\nmodels with limited amounts of RAM on your whole data set, I would like to\nannounce the release of a new ",
       "thread_id": "thread-98e9029e4942",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001425.html"
     },
     {
       "id": "msg-4f83333da522",
@@ -65,7 +68,8 @@
       "body_snippet": "An update to the Hmisc package is now on CRAN.  Some recent changes:\n\n    * latex.summaryM: fixed bug in caption with test=TRUE.  Thanks: \nYonghao Pua\n    * combined.levels: sensed all NA vector, now ",
       "thread_id": "thread-4f83333da522",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001426.html"
     },
     {
       "id": "msg-9d9afd42d5c4",
@@ -81,7 +85,8 @@
       "body_snippet": "An update to the rms package is now on CRAN.  Some recent changes:\n\n    * plot.summary.rms: allowed a vector for lwd, and passed lwd to \nconfbar.  Thanks: Michael Friendly\n    * gendata: Starting in R",
       "thread_id": "thread-9d9afd42d5c4",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2014/001427.html"
     }
   ],
   "threads": [

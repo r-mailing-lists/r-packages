@@ -17,7 +17,8 @@
       "body_snippet": "Dear list members,\n\nI'm pleased to let you know there's a new package on CRAN called QCAGUI, a \ngraphical user interface for the QCA package.\nThis is a stripped down version of John Fox's Rcmdr packag",
       "thread_id": "thread-6719475f579c",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000702.html"
     },
     {
       "id": "msg-29c325baa50d",
@@ -33,7 +34,8 @@
       "body_snippet": "Release 0.4-0 of package misc3d is now available from CRAN.  This\npackage provides a small collection of functions for 3D plotting,\nincluding 'contour3d' for computing and rendering 3D contours or\niso",
       "thread_id": "thread-29c325baa50d",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000703.html"
     },
     {
       "id": "msg-d0b37398b84a",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear useRs,\n\nI've just uploaded the new version 1.1-0 of the zoo package for dealing\nwith regular and irregular time series data to the main CRAN site.\nSource and binary packages should be available f",
       "thread_id": "thread-d0b37398b84a",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000704.html"
     },
     {
       "id": "msg-231809a2973b",
@@ -65,7 +68,8 @@
       "body_snippet": "The R package \"pcalg\" is released.\n\nThe main purpose of this package is to estimate the skeleton of\na DAG given data sampled from a distribution corresponding to\nthis DAG.\n\nMore intuitively, you can s",
       "thread_id": "thread-231809a2973b",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000705.html"
     },
     {
       "id": "msg-e8d5ff5667ae",
@@ -77,11 +81,12 @@
       "subject_clean": "New version of Subselect package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Search algorithms include a full search algorithm \"leaps\",\nbased on Furnival and Wilson's leaps and bounds algorithm, and three\nrandom search algorithms: a genetic algorithm (\"genetic\"), a simulated\nannealing algorithm (\"anneal\") and a modified local search algorithm\n(\"improve\"). Previous versions of subselect had three criteria for\noptimality (\"rm\", \"rv\" and \"gcd\"), based on exploratory data analysis\nconsiderations. This new version adds four new criteria (\"tau2\",\n\"zeta2\", \"xi2\" and \"ccr12\"), associated with the multivariate linear\nhypothesis and the well-known test statistics for that hypothesis\n(Wilks' lambda, Roy's largest root, Pillai's trace and the\nHotelling-Lawley statistic). Subselect 0.9-99 also includes two\nfunctions that prepare the arguments for the search functions\nassociated with the new criteria in the most frequent contexts of\napplication of the multivariate linear hypothesis - linear regression\n(function \"lmHmat\") and linear discriminant analysis (\"ldaHmat\") - as\nwell as another function (\"glhHmat\") that prepares these arguments for\nan analysis associated with a hypothesis specified by the user. The\npackage documentation includes numerous examples.  \n\nFeedback is appreciated.\n\nBest regards,\nJorge Cadima\n\n\n-- \nJorge Cadima\nDepartamento de Matem?tica\nInstituto Superior de Agronomia\nUniversidade T?cnica de Lisboa\nTapada da Ajuda\n1349-017 Lisboa\nPortugal\n\ne-mail: jcadima at isa.utl.pt\nphone: +351 21 365 3317\nfax: +351 21 363 07 23",
+      "body_plain": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Search algorithms include a full search algorithm \"leaps\",\nbased on Furnival and Wilson's leaps and bounds algorithm, and three\nrandom search algorithms: a genetic algorithm (\"genetic\"), a simulated\nannealing algorithm (\"anneal\") and a modified local search algorithm\n(\"improve\"). Previous versions of subselect had three criteria for\noptimality (\"rm\", \"rv\" and \"gcd\"), based on exploratory data analysis\nconsiderations. This new version adds four new criteria (\"tau2\",\n\"zeta2\", \"xi2\" and \"ccr12\"), associated with the multivariate linear\nhypothesis and the well-known test statistics for that hypothesis\n(Wilks' lambda, Roy's largest root, Pillai's trace and the\nHotelling-Lawley statistic). Subselect 0.9-99 also includes two\nfunctions that prepare the arguments for the search functions\nassociated with the new criteria in the most frequent contexts of\napplication of the multivariate linear hypothesis - linear regression\n(function \"lmHmat\") and linear discriminant analysis (\"ldaHmat\") - as\nwell as another function (\"glhHmat\") that prepares these arguments for\nan analysis associated with a hypothesis specified by the user. The\npackage documentation includes numerous examples.  \n\nFeedback is appreciated.\n\nBest regards,\nJorge Cadima\n\n\n-- \nJorge Cadima\nDepartamento de Matemática\nInstituto Superior de Agronomia\nUniversidade Técnica de Lisboa\nTapada da Ajuda\n1349-017 Lisboa\nPortugal\n\ne-mail: jcadima at isa.utl.pt\nphone: +351 21 365 3317\nfax: +351 21 363 07 23",
       "body_snippet": "Version 0.9-99 of package \"subselect\" is now on CRAN. \n\nThe subselect package has functions that search for k-variable subsets\nof a p-variable (p>k) data set that are optimal under some\ncriterion. Sea",
       "thread_id": "thread-e8d5ff5667ae",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000706.html"
     },
     {
       "id": "msg-4af4e08e2d65",
@@ -93,11 +98,12 @@
       "subject_clean": "New version of eha",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit null \nmodels (i.e., only scale and shape) and covariates are no longer \nautomatically centered (although this is still the default), (iii) there \nis a new function, 'toBinary', which transforms a data frame suitable \nfor survival analysis to a data frame suitable for ,eg, logistic \nregression as a substitute for a discrete time cox regression. In the \nprocess, sampling of survivors in risk sets is possible.\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_plain": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit null \nmodels (i.e., only scale and shape) and covariates are no longer \nautomatically centered (although this is still the default), (iii) there \nis a new function, 'toBinary', which transforms a data frame suitable \nfor survival analysis to a data frame suitable for ,eg, logistic \nregression as a substitute for a discrete time cox regression. In the \nprocess, sampling of survivors in risk sets is possible.\n\nGöran\n-- \nGöran Broström, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUmeå University                 email: gb at stat.umu.se\nSE-90187 Umeå, Sweden            http://www.stat.umu.se/~goran.brostrom",
       "body_snippet": "A new version (0.96.3) of the package 'eha' is now on CRAN. Apart from \nsome bug fixes, there are some news. The most noteworthy are: (i) \n'plot.Surv' has a few new options, (ii) 'weibreg' now can fit",
       "thread_id": "thread-4af4e08e2d65",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000707.html"
     },
     {
       "id": "msg-cdafc6c06e80",
@@ -109,11 +115,12 @@
       "subject_clean": "New version of glmmML (p-values!)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is zero, on \nthe wishlist of many R users these days! Note two things: (i) glmmML \nonly treats random intercepts for binomial and poisson models, (ii) the \np-value is calculated thru bootstrapping (can be slow with large data sets).\n\nG?ran\n-- \nG?ran Brostr?m, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUme? University                 email: gb at stat.umu.se\nSE-90187 Ume?, Sweden            http://www.stat.umu.se/~goran.brostrom",
+      "body_plain": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is zero, on \nthe wishlist of many R users these days! Note two things: (i) glmmML \nonly treats random intercepts for binomial and poisson models, (ii) the \np-value is calculated thru bootstrapping (can be slow with large data sets).\n\nGöran\n-- \nGöran Broström, professor         phone: 46 90 786 5223\nDepartment of Statistics\t  fax: 46 90 786 6614\nUmeå University                 email: gb at stat.umu.se\nSE-90187 Umeå, Sweden            http://www.stat.umu.se/~goran.brostrom",
       "body_snippet": "A new version of 'glmmML' (0.28-4) is uploaded to CRAN. The most \nimportant new feature is the possibility to get a p-value for the test \nof the hypothesis that the variance of the random effects is z",
       "thread_id": "thread-cdafc6c06e80",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000708.html"
     },
     {
       "id": "msg-a24351f65475",
@@ -129,7 +136,8 @@
       "body_snippet": "The Toolkit for Weighting and Analysis of Nonequivalent Groups (twang\n1.0) has been released to CRAN. The package collects functions useful\nfor computing propensity score weights for treatment effect ",
       "thread_id": "thread-a24351f65475",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000710.html"
     },
     {
       "id": "msg-f4a9c2fad518",
@@ -145,7 +153,8 @@
       "body_snippet": "Dear all,\n\ngmp package is now available on cran with version 0.4\n\nAim of gmp is to provide a lot a function to manipulate big integers, big rationals and last but not least big integers in Z/nZ (modul",
       "thread_id": "thread-f4a9c2fad518",
       "thread_depth": 0,
-      "month": "2006-06"
+      "month": "2006-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000709.html"
     }
   ],
   "threads": [

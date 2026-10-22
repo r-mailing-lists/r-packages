@@ -17,7 +17,8 @@
       "body_snippet": "Nearly a month ago I announced the availability of a Windows port of\nthe maps for S package but for various reasons the Windows binaries\ndid not appear on CRAN until yesterday.  Now I am pleased to an",
       "thread_id": "thread-33b5916b3cc7",
       "thread_depth": 0,
-      "month": "2003-11"
+      "month": "2003-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2003/000520.html"
     },
     {
       "id": "msg-b9de4eeb09b7",
@@ -29,11 +30,12 @@
       "subject_clean": "'nor1mix' for 1-dimensional normal mixture distributions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\") and density evaluation.\nIt also provides the 16 \"Marron-Wand densities\" (known in the (1d)\ndensity estimation business).\nErik J?rgensen has provided \"p\" and \"q\" functions -- such that\nthere's now the full range of \"dpqr\" functionality.\n\nI have recently *renamed* the package to 'nor1mix' (now on CRAN\nwhere 'normix' has gone). \n\nNote that *estimation* (i.e. fitting normal mixtures to data) is \nnot part of this package, but rather in (the more general framework of)\nthe package 'mclust'.\n\nMartin Maechler <maechler at stat.math.ethz.ch>\thttp://stat.ethz.ch/~maechler/\nSeminar fuer Statistik, ETH-Zentrum  LEO C16\tLeonhardstr. 27\nETH (Federal Inst. Technology)\t8092 Zurich\tSWITZERLAND\nphone: x-41-1-632-3408\t\tfax: ...-1228\t\t\t<><",
+      "body_plain": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\") and density evaluation.\nIt also provides the 16 \"Marron-Wand densities\" (known in the (1d)\ndensity estimation business).\nErik Jørgensen has provided \"p\" and \"q\" functions -- such that\nthere's now the full range of \"dpqr\" functionality.\n\nI have recently *renamed* the package to 'nor1mix' (now on CRAN\nwhere 'normix' has gone). \n\nNote that *estimation* (i.e. fitting normal mixtures to data) is \nnot part of this package, but rather in (the more general framework of)\nthe package 'mclust'.\n\nMartin Maechler <maechler at stat.math.ethz.ch>\thttp://stat.ethz.ch/~maechler/\nSeminar fuer Statistik, ETH-Zentrum  LEO C16\tLeonhardstr. 27\nETH (Federal Inst. Technology)\t8092 Zurich\tSWITZERLAND\nphone: x-41-1-632-3408\t\tfax: ...-1228\t\t\t<><",
       "body_snippet": "I have been authoring a very small R package on CRAN, named \n\"normix\" which implements an S3 class \"norMix\" has plot and\nprint methods;  further, E[X] and Var[X] methods, random number\ngeneration (\"r\"",
       "thread_id": "thread-b9de4eeb09b7",
       "thread_depth": 0,
-      "month": "2003-11"
+      "month": "2003-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2003/000521.html"
     },
     {
       "id": "msg-a3e9d2a467a9",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear List\n\nI have just placed a new R package on CRAN that includes many tools \nfor creating and\ninvestigating magic squares and hypercubes.\n\nAny comments, suggestions, etc very welcome.  I am particu",
       "thread_id": "thread-a3e9d2a467a9",
       "thread_depth": 0,
-      "month": "2003-11"
+      "month": "2003-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2003/000522.html"
     }
   ],
   "threads": [

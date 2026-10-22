@@ -20,7 +20,8 @@
       "body_snippet": "SASxport Version 1.2.0 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.0 correc",
       "thread_id": "thread-c1627a1a2d52",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000861.html"
     },
     {
       "id": "msg-520539658d0d",
@@ -36,7 +37,8 @@
       "body_snippet": "Announcing gplots 2.5.0\n---------------------------------\n\ngplots provides additional plotting functions, including several  \nenhanced versions of base R functions.\n\nProvided functions include:\n\tballo",
       "thread_id": "thread-520539658d0d",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000862.html"
     },
     {
       "id": "msg-d77eedf13b7a",
@@ -55,7 +57,8 @@
       "body_snippet": "SASxport Version 1.2.2 is now available\n---------------------------------------\n\nThe SASxport package provides R with full support for reading\nand writing SAS xport format files.\n\nVersion 1.2.2 correc",
       "thread_id": "thread-d77eedf13b7a",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000863.html"
     },
     {
       "id": "msg-720bd84a2381",
@@ -67,11 +70,12 @@
       "subject_clean": "New version of actuar",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "UseRs,\n\nVersion 0.9-4 of actuar should be making its way to CRAN mirrors. The  \nmain highlights of this new version are speed enhancements for a few  \nfunctions, support for phase-type distributions and functions for ruin  \ntheory.\n\nThe relevant section of the NEWS file follows\n\nVersion 0.9-4\n=============\n\nMaintenance and new features release.\n\nNEW FEATURES -- LOSS DISTRIBUTIONS\n\n   o Functions mgffoo() to compute the moment (or cumulant if 'log =\n     TRUE') generating function of the following distributions:\n     chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform and phase-type (see\n     below).\n\n   o Functions mfoo() to compute the raw moments of all the probability\n     distributions supported in the package and the following of base\n     R: chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform.\n\n   o Functions {d,p,mgf,m,r}phtype() to compute the probability density\n     function, cumulative distribution function, moment generating\n     function, raw moments of, and to generate variates from,\n     phase-type distributions.\n\nNEW FEATURES -- RISK THEORY\n\n   o Function VaR() with a method for objects of class \"aggregateDist\"\n     to compute the Value at Risk of a distribution.\n\n   o Function CTE() with a method for objects of class \"aggregateDist\"\n     to compute the Conditional Tail Expectation of a distribution.\n\n   o Function adjCoef() to compute the adjustment coefficient in ruin\n     theory. If proportional or excess-of-loss reinsurance is included\n     in the model, adjCoef() returns a function to compute the\n     adjustment coefficient for given limits. A plot method is also\n     included.\n\n   o Function ruin() returns a function to compute the infinite time\n     probability of ruin for given initial surpluses in the\n     Cram?r-Lundberg and Sparre Andersen models. Most calculations are\n     done using the cdf of phase-type distributions as per Asmussen and\n     Rolski (1991).\n\n   o Calculations of the aggregate claim distribution using the\n     recursive method much faster now that recursions are done in C.\n\nNEW FEATURES -- CREDIBILITY THEORY\n\n   o Modular rewrite of cm(): the function now calls internal functions\n     to carry calculations for each supported credibility model. This\n     is more efficient.\n\n   o Basic support for the regression model of Hachemeister in function\n     cm().\n\n   o For the hierarchical credibility model: support for the variance\n     components estimators of B?hlmann and Gisler (2005) and Ohlsson\n     (2005). Support remains for iterative pseudo-estimators.\n\n   o Calculations of iterative pseudo-estimators in hierarchical\n     credibility are much faster now that they are done in C.\n\nOTHER NEW FEATURES\n\n   o Four new vignettes: introduction to the package and presentation\n     of the features in loss distributions, risk theory and credibility\n     theory.\n\n   o Portfolio simulation material of the \"credibility\" demo moved to\n     demo \"simulation\".\n\nUSER-VISIBLE CHANGES\n\n   o Argument 'approx.lin' of quantile.aggregateDist() renamed\n     'smooth'.\n\n   o Function aggregateDist() gains a 'maxit' argument for the maximum\n     number of recursions when using Panjer's algorithm. This is to\n     avoid infinite recursion when the cumulative distribution\n     function does not converge to 1.\n\n   o Function cm() gains a 'maxit' argument for the maximum number of\n     iterations in pseudo-estimators calculations.\n\n   o Methods of aggregate(), frequency(), severity() and weights() for\n     objects of class \"simpf\" gain two new arguments:\n\n     1. 'classification'; when TRUE, the columns giving the\n        classification structure of the portfolio are excluded from the\n        result. This eases calculation of loss ratios (aggregate claim\n        amounts divided by the weights);\n\n     2. 'prefix'; specifies a prefix to use in column names, with\n         sensible defaults to avoid name clashes for data and weight\n         columns.\n\nBUG FIXES\n\n   o The way weights had to be specified for the \"chi-square\" method of\n     mde() to give expected results was very unintuitive. The fix has\n     no effect when using the default weights.\n\n   o The empirical step function returned by the \"recursive\" and\n     \"convolution\" methods of aggregateDist() now correctly returns 1\n     when evaluated past its largest knot.\n\nDEPRECATED\n\n   o Direct usage of bstraub() is now deprecated in favor of cm(). The\n     function will remain in the package since it is used internally by\n     cm(), but it will not be exported in future releases of the\n     package. The current format of the results is also deprecated.\n\n\n---\n   Vincent Goulet, Associate Professor\n   ?cole d'actuariat\n   Universit? Laval, Qu?bec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
+      "body_plain": "UseRs,\n\nVersion 0.9-4 of actuar should be making its way to CRAN mirrors. The  \nmain highlights of this new version are speed enhancements for a few  \nfunctions, support for phase-type distributions and functions for ruin  \ntheory.\n\nThe relevant section of the NEWS file follows\n\nVersion 0.9-4\n=============\n\nMaintenance and new features release.\n\nNEW FEATURES -- LOSS DISTRIBUTIONS\n\n   o Functions mgffoo() to compute the moment (or cumulant if 'log =\n     TRUE') generating function of the following distributions:\n     chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform and phase-type (see\n     below).\n\n   o Functions mfoo() to compute the raw moments of all the probability\n     distributions supported in the package and the following of base\n     R: chi-square, exponential, gamma, inverse gaussian (from package\n     SuppDists), inverse gamma, normal, uniform.\n\n   o Functions {d,p,mgf,m,r}phtype() to compute the probability density\n     function, cumulative distribution function, moment generating\n     function, raw moments of, and to generate variates from,\n     phase-type distributions.\n\nNEW FEATURES -- RISK THEORY\n\n   o Function VaR() with a method for objects of class \"aggregateDist\"\n     to compute the Value at Risk of a distribution.\n\n   o Function CTE() with a method for objects of class \"aggregateDist\"\n     to compute the Conditional Tail Expectation of a distribution.\n\n   o Function adjCoef() to compute the adjustment coefficient in ruin\n     theory. If proportional or excess-of-loss reinsurance is included\n     in the model, adjCoef() returns a function to compute the\n     adjustment coefficient for given limits. A plot method is also\n     included.\n\n   o Function ruin() returns a function to compute the infinite time\n     probability of ruin for given initial surpluses in the\n     Cramér-Lundberg and Sparre Andersen models. Most calculations are\n     done using the cdf of phase-type distributions as per Asmussen and\n     Rolski (1991).\n\n   o Calculations of the aggregate claim distribution using the\n     recursive method much faster now that recursions are done in C.\n\nNEW FEATURES -- CREDIBILITY THEORY\n\n   o Modular rewrite of cm(): the function now calls internal functions\n     to carry calculations for each supported credibility model. This\n     is more efficient.\n\n   o Basic support for the regression model of Hachemeister in function\n     cm().\n\n   o For the hierarchical credibility model: support for the variance\n     components estimators of Bühlmann and Gisler (2005) and Ohlsson\n     (2005). Support remains for iterative pseudo-estimators.\n\n   o Calculations of iterative pseudo-estimators in hierarchical\n     credibility are much faster now that they are done in C.\n\nOTHER NEW FEATURES\n\n   o Four new vignettes: introduction to the package and presentation\n     of the features in loss distributions, risk theory and credibility\n     theory.\n\n   o Portfolio simulation material of the \"credibility\" demo moved to\n     demo \"simulation\".\n\nUSER-VISIBLE CHANGES\n\n   o Argument 'approx.lin' of quantile.aggregateDist() renamed\n     'smooth'.\n\n   o Function aggregateDist() gains a 'maxit' argument for the maximum\n     number of recursions when using Panjer's algorithm. This is to\n     avoid infinite recursion when the cumulative distribution\n     function does not converge to 1.\n\n   o Function cm() gains a 'maxit' argument for the maximum number of\n     iterations in pseudo-estimators calculations.\n\n   o Methods of aggregate(), frequency(), severity() and weights() for\n     objects of class \"simpf\" gain two new arguments:\n\n     1. 'classification'; when TRUE, the columns giving the\n        classification structure of the portfolio are excluded from the\n        result. This eases calculation of loss ratios (aggregate claim\n        amounts divided by the weights);\n\n     2. 'prefix'; specifies a prefix to use in column names, with\n         sensible defaults to avoid name clashes for data and weight\n         columns.\n\nBUG FIXES\n\n   o The way weights had to be specified for the \"chi-square\" method of\n     mde() to give expected results was very unintuitive. The fix has\n     no effect when using the default weights.\n\n   o The empirical step function returned by the \"recursive\" and\n     \"convolution\" methods of aggregateDist() now correctly returns 1\n     when evaluated past its largest knot.\n\nDEPRECATED\n\n   o Direct usage of bstraub() is now deprecated in favor of cm(). The\n     function will remain in the package since it is used internally by\n     cm(), but it will not be exported in future releases of the\n     package. The current format of the results is also deprecated.\n\n\n---\n   Vincent Goulet, Associate Professor\n   École d'actuariat\n   Université Laval, Québec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
       "body_snippet": "UseRs,\n\nVersion 0.9-4 of actuar should be making its way to CRAN mirrors. The  \nmain highlights of this new version are speed enhancements for a few  \nfunctions, support for phase-type distributions a",
       "thread_id": "thread-720bd84a2381",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000864.html"
     },
     {
       "id": "msg-f84ae58d17d6",
@@ -83,11 +87,12 @@
       "subject_clean": "Major update to package relimpo: Version 2.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of interactions (for metric lmg only)\n- incorporation of observation weights\n- application to data from complex surveys\n- processing of multiply imputed data\nThe latter two points are somewhat experimental - of course, feedback is very\nwelcome.\n\nRegards, Ulrike\n\n****************************** \n Prof. Dr. Ulrike Gr?mping \n Fachbereich II \n TFH Berlin \n Luxemburger Str. 10 \n 13353 Berlin \n mail: groemping at tfh-berlin.de \n www: www.tfh-berlin.de/~groemp/",
+      "body_plain": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of interactions (for metric lmg only)\n- incorporation of observation weights\n- application to data from complex surveys\n- processing of multiply imputed data\nThe latter two points are somewhat experimental - of course, feedback is very\nwelcome.\n\nRegards, Ulrike\n\n****************************** \n Prof. Dr. Ulrike Grömping \n Fachbereich II \n TFH Berlin \n Luxemburger Str. 10 \n 13353 Berlin \n mail: groemping at tfh-berlin.de \n www: www.tfh-berlin.de/~groemp/",
       "body_snippet": "Dear userRs,\n\nVersion 2.0 of package relaimpo is on CRAN (and on my homepage with an\nadditional metric for non-US users). It contains several major improvements: \n- usage of factors\n- incorporation of",
       "thread_id": "thread-f84ae58d17d6",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000865.html"
     },
     {
       "id": "msg-6ef224a12625",
@@ -103,7 +108,8 @@
       "body_snippet": "I uploaded a new version of package dlm to CRAN. \n\ndlm provides functions for maximum likelihood, Kalman filtering and\nsmoothing, and Bayesian analysis of Gaussian linear state space\nmodels, also know",
       "thread_id": "thread-6ef224a12625",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000866.html"
     },
     {
       "id": "msg-77ae75d70cf5",
@@ -119,7 +125,8 @@
       "body_snippet": "New versions of the caret (3.08) and caretLSF (1.12) packages have been\nreleased. \n\ncaret (short for \"Classification And REgression Training\") aims to\nsimplify the model building process. The package ",
       "thread_id": "thread-77ae75d70cf5",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000867.html"
     }
   ],
   "threads": [

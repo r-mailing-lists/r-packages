@@ -17,7 +17,8 @@
       "body_snippet": "We're announcing the initial CRAN release of 'rpostgisLT' (v0.4.0), which\nis an extension to our 'rpostgis\n<https://cran.r-project.org/web/packages/rpostgis/index.html>' package.\nrpostgisLT is aimed a",
       "thread_id": "thread-3298da2bb814",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001512.html"
     },
     {
       "id": "msg-2c8b9e395671",
@@ -33,7 +34,8 @@
       "body_snippet": "Hmisc 4.0-0 is now on CRAN.  The package has undergone a massive update.\nThe most user-visable changes are;\n\n- support for Rmarkdown html notebooks\n\n- advanced html tables using the htmlTable package ",
       "thread_id": "thread-2c8b9e395671",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001511.html"
     },
     {
       "id": "msg-7c4008ea3be1",
@@ -49,7 +51,8 @@
       "body_snippet": "A major new version of the rms package is now on CRAN.  The most\nuser-visible changes are:\n\n- interactive plotly graphic methods for model fits.  The best example of\nthis is survplot for npsurv (Kapla",
       "thread_id": "thread-7c4008ea3be1",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001513.html"
     },
     {
       "id": "msg-f21d2c1fdcaf",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R users,\n\nIf you use quantmod::GetSymbols to download financial data from yahoo or\ngoogle finance, you might find my new package  *BatchGetSymbols* very\nuseful. It no only downloads data for mult",
       "thread_id": "thread-f21d2c1fdcaf",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001514.html"
     },
     {
       "id": "msg-b74aa674681f",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear useRs,\n\nI'm happy to announce a substantial update of package actuar that bumps the version number to 2.0-0. This release focuses on additional support for continuous and discrete distributions, ",
       "thread_id": "thread-b74aa674681f",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001515.html"
     },
     {
       "id": "msg-4b52b6028727",
@@ -93,11 +98,12 @@
       "subject_clean": "New Package: largeVis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,  \n\nI?m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for visualizing high-dimensional datasets, similar to (and of similar quality to) t-SNE. But, LargeVis runs in O(n) time, which makes it feasible to use on datasets with millions of rows and thousands of columns. LargeVis is also insensitive to hyperparameter changes, which is important when running on large datasets that take time to compute.  \n\n\t- Very fast approximate nearest neighbor search. I believe it to be the fastest nearest neighbor search available for R.  \n\n\t- A fast implementation of the HDBSCAN clustering algorithm. HDBSCAN is a density-based clustering similar to DBSCAN and OPTICS (which are also implemented), but HDBSCAN allows the density threshold for clusters to vary. This makes it insensitive to hyperparameter changes and more flexible than either DBSCAN or OPTICS.\n\nThere are other features as well, such as functions to visualize image embeddings using largeVis.?\n\nSome examples are available here: ?https://github.com/elbamos/largevis\nBenchmarks comparing the speed of the nearest neighbor search to RcppAnnoy are here:?https://github.com/elbamos/largeVis/blob/master/benchmarks.md\nExamples of HDBSCAN are here: ?https://cran.r-project.org/web/packages/largeVis/vignettes/momentumandusedata.html\n\nThe package is available here: ?https://cran.r-project.org/web/packages/largeVis/index.html? and for best results, to take advantage of 64-bit machines and multiple cores, should be installed from source.?\n\nThank you!\n\n(*) A prior version was available on CRAN but not announced.\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear R users,  \n\nI?m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for",
+      "body_plain": "Dear R users,  \n\nI’m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for visualizing high-dimensional datasets, similar to (and of similar quality to) t-SNE. But, LargeVis runs in O(n) time, which makes it feasible to use on datasets with millions of rows and thousands of columns. LargeVis is also insensitive to hyperparameter changes, which is important when running on large datasets that take time to compute.  \n\n\t- Very fast approximate nearest neighbor search. I believe it to be the fastest nearest neighbor search available for R.  \n\n\t- A fast implementation of the HDBSCAN clustering algorithm. HDBSCAN is a density-based clustering similar to DBSCAN and OPTICS (which are also implemented), but HDBSCAN allows the density threshold for clusters to vary. This makes it insensitive to hyperparameter changes and more flexible than either DBSCAN or OPTICS.\n\nThere are other features as well, such as functions to visualize image embeddings using largeVis. \n\nSome examples are available here:  https://github.com/elbamos/largevis\nBenchmarks comparing the speed of the nearest neighbor search to RcppAnnoy are here: https://github.com/elbamos/largeVis/blob/master/benchmarks.md\nExamples of HDBSCAN are here:  https://cran.r-project.org/web/packages/largeVis/vignettes/momentumandusedata.html\n\nThe package is available here:  https://cran.r-project.org/web/packages/largeVis/index.html  and for best results, to take advantage of 64-bit machines and multiple cores, should be installed from source. \n\nThank you!\n\n(*) A prior version was available on CRAN but not announced.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,  \n\nI’m please to announce the available on CRAN of new package largeVis.(*)   \n\nlargeVis offers three major features:\n\n\t- A fast implementation of the LargeVis algorithm. LargeVis is for",
       "thread_id": "thread-4b52b6028727",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001516.html"
     },
     {
       "id": "msg-6d928d5b322a",
@@ -109,11 +115,12 @@
       "subject_clean": "Announcing new package horseshoe",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nThe first version of the package ?horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versions for the special case of the normal means problem.\n\nThe functions output, among other things, the horseshoe estimator (posterior mean), credible intervals, and there is a function to perform variable selection.\n\nThe package can be installed by typing install.packages{?horseshoe?)\n\nThe page for the package:\n\nhttps://CRAN.R-project.org/package=horseshoe <https://cran.r-project.org/package=horseshoe>\n\nThe manual contains examples for each function:\n\nhttps://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf <https://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf>\n\nComments and suggestions are very welcome.\n\nBest wishes,\n\nSt?phanie van der Pas, James Scott, Antik Chakraborty and Anirban Bhattacharya\n\n\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear R users,\n\nThe first version of the package ?horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versio",
+      "body_plain": "Dear R users,\n\nThe first version of the package ‘horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versions for the special case of the normal means problem.\n\nThe functions output, among other things, the horseshoe estimator (posterior mean), credible intervals, and there is a function to perform variable selection.\n\nThe package can be installed by typing install.packages{“horseshoe”)\n\nThe page for the package:\n\nhttps://CRAN.R-project.org/package=horseshoe <https://cran.r-project.org/package=horseshoe>\n\nThe manual contains examples for each function:\n\nhttps://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf <https://cran.r-project.org/web/packages/horseshoe/horseshoe.pdf>\n\nComments and suggestions are very welcome.\n\nBest wishes,\n\nStéphanie van der Pas, James Scott, Antik Chakraborty and Anirban Bhattacharya\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users,\n\nThe first version of the package ‘horseshoe' is now available on CRAN. It contains various functions for implementing the horseshoe prior for sparse linear regression, and faster versio",
       "thread_id": "thread-6d928d5b322a",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001517.html"
     },
     {
       "id": "msg-8442a108f1ca",
@@ -129,7 +136,8 @@
       "body_snippet": "Dear R users,\n\nqueuecomputer is a new R package now available on CRAN. It is a very\nfast method for simulating queueing networks.\n\nThe user supplies the arrival and service times and the departure\ntim",
       "thread_id": "thread-8442a108f1ca",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001518.html"
     }
   ],
   "threads": [

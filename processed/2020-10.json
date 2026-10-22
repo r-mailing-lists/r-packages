@@ -17,7 +17,8 @@
       "body_snippet": "Hello,\n\nI recently created a package that allows R users to trade through the TD\nAmeritrade API. With billions in assets and over 11 million clients, I am\nsure some R users could leverage the API.\n\nBe",
       "thread_id": "thread-56a1a6083cf3",
       "thread_depth": 0,
-      "month": "2020-10"
+      "month": "2020-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001731.html"
     },
     {
       "id": "msg-e41b237520cd",
@@ -33,7 +34,8 @@
       "body_snippet": "Good afternoon:\n\ngiscoR is already available on CRAN. giscoR is a API package that helps to\nretrieve data from GISCO - Eurostat. It  also provides some lightweight\ndata sets ready to use without downl",
       "thread_id": "thread-e41b237520cd",
       "thread_depth": 0,
-      "month": "2020-10"
+      "month": "2020-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001732.html"
     },
     {
       "id": "msg-76acc0ebe8bd",
@@ -45,11 +47,12 @@
       "subject_clean": "openSTARS version 1.2.2 on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R community\n\nThere is a new version of the openSTARS package (preparing GIS data for \nstream analysis) available on CRAN.\n\nMajor updates are:\n\n- catch errors arising in GRASS 7.8 due to changes in v.to.db\n- update setup_grass_environment; there is no need any more to initGRASS \nbefore\n\nPlease also find a detailed description of the package including example \ncode here: \nhttps://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239237\n\nAny comments, suggestions or bug reports are welcome on \nhttps://github.com/MiKatt/openSTARS\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\niES Landau, Institute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstra?e 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
+      "body_plain": "Dear R community\n\nThere is a new version of the openSTARS package (preparing GIS data for \nstream analysis) available on CRAN.\n\nMajor updates are:\n\n- catch errors arising in GRASS 7.8 due to changes in v.to.db\n- update setup_grass_environment; there is no need any more to initGRASS \nbefore\n\nPlease also find a detailed description of the package including example \ncode here: \nhttps://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239237\n\nAny comments, suggestions or bug reports are welcome on \nhttps://github.com/MiKatt/openSTARS\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\niES Landau, Institute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstraße 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
       "body_snippet": "Dear R community\n\nThere is a new version of the openSTARS package (preparing GIS data for \nstream analysis) available on CRAN.\n\nMajor updates are:\n\n- catch errors arising in GRASS 7.8 due to changes i",
       "thread_id": "thread-76acc0ebe8bd",
       "thread_depth": 0,
-      "month": "2020-10"
+      "month": "2020-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001733.html"
     },
     {
       "id": "msg-1aa0c691d877",
@@ -65,7 +68,8 @@
       "body_snippet": "Hi All,\n\nWriteXLS version 6.0.0 has been released and is available on CRAN.\n\nThe key changes are:\n\n1. More robust handling of embedded newline ('\\n') and carriage return ('\\r') characters, double quot",
       "thread_id": "thread-1aa0c691d877",
       "thread_depth": 0,
-      "month": "2020-10"
+      "month": "2020-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001734.html"
     }
   ],
   "threads": [

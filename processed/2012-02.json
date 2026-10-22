@@ -17,7 +17,8 @@
       "body_snippet": "Dear all,\n\n I'd like to introduce the paramlink package, offering parametric \n linkage analysis in R, as well as other likelihood-based pedigree \n analyses.\n While a rudimentary version of the package",
       "thread_id": "thread-c40755573652",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001284.html"
     },
     {
       "id": "msg-546a04ed6616",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear list,\n\nThe new package 'multivator' is now available on CRAN.  This presents\na multivariate generalization of the emulator package.\n\nThe corresponding JSS article is:\n\nRobin K. S. Hankin (2012), ",
       "thread_id": "thread-546a04ed6616",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001285.html"
     },
     {
       "id": "msg-4b767de8c102",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear R Community,\n\nI am happy to introduce the next release of the *dclone* package (see\nR Journal, 2(2): 29-37, 2010) which now includes a suite of functions\nfor parallel computations:\n\n- see functio",
       "thread_id": "thread-4b767de8c102",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001286.html"
     },
     {
       "id": "msg-a42b51a8d938",
@@ -61,11 +64,12 @@
       "subject_clean": "new package 'bit64' - 1000x faster than 'int64' sponsored by Google",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R-Core team,\nDear Rcpp team and other package teams,\nDear R users,\n\nThe new package 'bit64' is available on CRAN for beta-testing and \ncode-reviewing.\n\nPackage 'bit64' provides fast serializable S3 atomic 64bit (signed) \nintegers that can be used in vectors, matrices, arrays and data.frames. \nMethods are available for coercion from and to logicals, integers, \ndoubles, characters as well as many elementwise and summary functions.\n\nPackage 'bit64' has the following advantages over package 'int64' (which \nwas sponsored by Google):\n- true atomic vectors usable with length, dim, names etc.\n- only S3, not S4 class system used to dispatch methods\n- less RAM consumption by factor 7 (under 64 bit OS)\n- faster operations by factor 4 to 2000 (under 64 bit OS)\n- no slow-down of R's garbage collection (as caused by the pure \nexistence of 'int64' objects)\n- pure GPL, no copyrights from transnational commercial company\n\nWhile the advantage of the atomic S3 design over the complicated S4 \nobject design is obvious, it is less obvious that an external package is \nthe best way to enrich R with 64bit integers. An external package will \nnot give us literals such as 1LL or directly allow us to address larger \nvectors than possible with base R. But it allows us to properly address \nlarger vectors in other packages such as 'ff' or 'bigmemory' and it \nallows us to properly work with large surrogate keys from external \ndatabases. An external package realizing just one data type also makes a \nperfect test bed to play with innovative performance enhancements. \nPerformance tuned sorting and hashing are planned for the next release, \nwhich will give us fast versions of sort, order, merge, duplicated, \nunique, and table - for 64bit integers.\n\nFor those who still hope that R's 'integer' will be 64bit some day, here \nis my key learning: migrating R's 'integer' from 32 to 64 bit would be \nRAM expensive. It would most likely require to also migrate R's 'double' \nfrom 64 to 128 bit - in order to again have a data type to which we can \nlossless coerce. The assumption that 'integer' is a proper subset of \n'double' is scattered over R's semantics. We all expect that binary and \nn-ary functions such as '+' and 'c' do return 'double' and do not \ndestroy information. With solely extending 64bit integers but not 128bit \ndoubles, we have semantic changes potentially disappointing such \nexpectations: integer64+double returns integer64 and does kill decimals. \nI did my best to make operations involving integer64 consistent and \nnumerically stable - please consult the documentation at ?bit64 for details.\n\nSince this package is 'at risk' to create a lot of dependencies from \nother packages, I'd appreciate serious  beta-testing and also \ncode-review, ideally from the R-Core team. Please check the \n'Limitations' sections at the help page and the numerics involving \"long \ndouble\" in C. If the conclusion is that this should be better done in \nBase R - I happly donate the code and drop this package. If we have to \ngo with an external package for 64bit integers, it would be great if \nthis work could convince the Rcpp team including Romain about the \nadvantages of this approach. Shouldn't we join forces here?\n\nBest regards\n\nJens Oehlschl?gel\nMunich, 21.2.2012",
+      "body_plain": "Dear R-Core team,\nDear Rcpp team and other package teams,\nDear R users,\n\nThe new package 'bit64' is available on CRAN for beta-testing and \ncode-reviewing.\n\nPackage 'bit64' provides fast serializable S3 atomic 64bit (signed) \nintegers that can be used in vectors, matrices, arrays and data.frames. \nMethods are available for coercion from and to logicals, integers, \ndoubles, characters as well as many elementwise and summary functions.\n\nPackage 'bit64' has the following advantages over package 'int64' (which \nwas sponsored by Google):\n- true atomic vectors usable with length, dim, names etc.\n- only S3, not S4 class system used to dispatch methods\n- less RAM consumption by factor 7 (under 64 bit OS)\n- faster operations by factor 4 to 2000 (under 64 bit OS)\n- no slow-down of R's garbage collection (as caused by the pure \nexistence of 'int64' objects)\n- pure GPL, no copyrights from transnational commercial company\n\nWhile the advantage of the atomic S3 design over the complicated S4 \nobject design is obvious, it is less obvious that an external package is \nthe best way to enrich R with 64bit integers. An external package will \nnot give us literals such as 1LL or directly allow us to address larger \nvectors than possible with base R. But it allows us to properly address \nlarger vectors in other packages such as 'ff' or 'bigmemory' and it \nallows us to properly work with large surrogate keys from external \ndatabases. An external package realizing just one data type also makes a \nperfect test bed to play with innovative performance enhancements. \nPerformance tuned sorting and hashing are planned for the next release, \nwhich will give us fast versions of sort, order, merge, duplicated, \nunique, and table - for 64bit integers.\n\nFor those who still hope that R's 'integer' will be 64bit some day, here \nis my key learning: migrating R's 'integer' from 32 to 64 bit would be \nRAM expensive. It would most likely require to also migrate R's 'double' \nfrom 64 to 128 bit - in order to again have a data type to which we can \nlossless coerce. The assumption that 'integer' is a proper subset of \n'double' is scattered over R's semantics. We all expect that binary and \nn-ary functions such as '+' and 'c' do return 'double' and do not \ndestroy information. With solely extending 64bit integers but not 128bit \ndoubles, we have semantic changes potentially disappointing such \nexpectations: integer64+double returns integer64 and does kill decimals. \nI did my best to make operations involving integer64 consistent and \nnumerically stable - please consult the documentation at ?bit64 for details.\n\nSince this package is 'at risk' to create a lot of dependencies from \nother packages, I'd appreciate serious  beta-testing and also \ncode-review, ideally from the R-Core team. Please check the \n'Limitations' sections at the help page and the numerics involving \"long \ndouble\" in C. If the conclusion is that this should be better done in \nBase R - I happly donate the code and drop this package. If we have to \ngo with an external package for 64bit integers, it would be great if \nthis work could convince the Rcpp team including Romain about the \nadvantages of this approach. Shouldn't we join forces here?\n\nBest regards\n\nJens Oehlschlägel\nMunich, 21.2.2012",
       "body_snippet": "Dear R-Core team,\nDear Rcpp team and other package teams,\nDear R users,\n\nThe new package 'bit64' is available on CRAN for beta-testing and \ncode-reviewing.\n\nPackage 'bit64' provides fast serializable ",
       "thread_id": "thread-a42b51a8d938",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001287.html"
     },
     {
       "id": "msg-7274eaefe95a",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear All,\n\na new version of MultiPhen (0.3) is available on CRAN, and will be available to a mirror near you soon. \n\n*Please upgrade* because this release is a bug fix release. A new version, with imp",
       "thread_id": "thread-7274eaefe95a",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001288.html"
     }
   ],
   "threads": [

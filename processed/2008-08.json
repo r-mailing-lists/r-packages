@@ -13,11 +13,12 @@
       "subject_clean": "sensitivity",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi All,\n\nthe new release v1.4-0 of the \"sensitivity\" package is now available on CRAN\nThe \"sensitivity\" package is devoted to factor screening and global sensitivity analysis\nof numerical model output. \n\nHere are the new features list:\n\nNew functionalities:\n\t * sequential bifurcation method (sb function) [VERSION ALPHA] \n       * 3D plot 3D for the Morris method (function plot3d.morris, needs the rgl package) \n       * simplex designs for Morris method (function morris) \n       * multidimensional Sobol indices (function sobol) \n       * argument return.var in sobol methods in order to have local variables\n         which are not saved in the output object, for example the bootstrap replicates\n\t   (functions sobol and sobol2002) \n       * template files writing (function template.replace) \n       * new argument ylim to control the ordinate axis for graphics (src, pcc, sobol, sobol2002, fast)\n \nSmall changes in the functions:\n       * several names of parameters and variables in the objects have changed \n       * function \"srcpcc\" has been divided in two functions: \"src\" and \"pcc\" \n       * function \"sobol\" has been divided in two functions: \"sobol\" (original 1993 method) and \"sobol2002\"\n       * function \"fast\" has been renamed \"fast99\"\n       * the space filling design optimization for the Morris design has been rearranged in order\n\t   to gain computing memory. Some C code additions will be done later. \n \n\n------------------------------------------------------------------\nBertrand Iooss\nCEA Cadarache\nDEN/CAD/DER/SESI/LCFR\n13108 Saint Paul lez Durance\nFrance\n\nLaboratoire de Conduite et de Fiabilit? des R?acteurs\nbertrand.iooss at cea.fr\nTel : (33/0) 4 42 25 72 73\nFax : (33/0) 4 42 25 24 08",
+      "body_plain": "Hi All,\n\nthe new release v1.4-0 of the \"sensitivity\" package is now available on CRAN\nThe \"sensitivity\" package is devoted to factor screening and global sensitivity analysis\nof numerical model output. \n\nHere are the new features list:\n\nNew functionalities:\n\t * sequential bifurcation method (sb function) [VERSION ALPHA] \n       * 3D plot 3D for the Morris method (function plot3d.morris, needs the rgl package) \n       * simplex designs for Morris method (function morris) \n       * multidimensional Sobol indices (function sobol) \n       * argument return.var in sobol methods in order to have local variables\n         which are not saved in the output object, for example the bootstrap replicates\n\t   (functions sobol and sobol2002) \n       * template files writing (function template.replace) \n       * new argument ylim to control the ordinate axis for graphics (src, pcc, sobol, sobol2002, fast)\n \nSmall changes in the functions:\n       * several names of parameters and variables in the objects have changed \n       * function \"srcpcc\" has been divided in two functions: \"src\" and \"pcc\" \n       * function \"sobol\" has been divided in two functions: \"sobol\" (original 1993 method) and \"sobol2002\"\n       * function \"fast\" has been renamed \"fast99\"\n       * the space filling design optimization for the Morris design has been rearranged in order\n\t   to gain computing memory. Some C code additions will be done later. \n \n\n------------------------------------------------------------------\nBertrand Iooss\nCEA Cadarache\nDEN/CAD/DER/SESI/LCFR\n13108 Saint Paul lez Durance\nFrance\n\nLaboratoire de Conduite et de Fiabilité des Réacteurs\nbertrand.iooss at cea.fr\nTel : (33/0) 4 42 25 72 73\nFax : (33/0) 4 42 25 24 08",
       "body_snippet": "Hi All,\n\nthe new release v1.4-0 of the \"sensitivity\" package is now available on CRAN\nThe \"sensitivity\" package is devoted to factor screening and global sensitivity analysis\nof numerical model output",
       "thread_id": "thread-2029fc9fb745",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000939.html"
     },
     {
       "id": "msg-50fed65b3ef9",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi the list,\n\nA new version (0.92) of my package 'noia' will be available soon on CRAN \nmirrors, and I think it might be a good opportunity to introduce it \nshortly to the R community.\n\nIn summary: 'n",
       "thread_id": "thread-50fed65b3ef9",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000940.html"
     },
     {
       "id": "msg-b920257cddce",
@@ -45,11 +47,12 @@
       "subject_clean": "major release ff 2.0 (large atomic objects)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R community,\n\nff Version 2.0 is available on CRAN. Based on paging concepts from version 1.0, \n2.0 is a major redesign of this package for handling large datasets. \nWe have implemented numerous enhancements and performance improvements to make \nthis package suitable as a 'base' package for large data processing. \n\nThe ff package provides atomic data structures that are stored on disk but \nbehave (almost) as if they were in RAM by transparently mapping only a section \n(pagesize) in main memory - the effective virtual memory consumption per ff \nobject.\n\nIn addition to the 'double' data type, ff objects now have support for\n'logical', 'raw' and 'integer' atomic datatypes, plus close-to-atomic types \nlike 'factor', 'POSIXct' or custom close-to-atomic types. In addition to fast \nvector access, ff now has native support for matrices and arrays with flexible \ndimorder (major column-order, major row-order and generalizations for arrays). \n\nWhile the raw data still gets stored on binary flat files in native encoding,\n'ff' objects have been extended to carry their meta information as physical\nand virtual attributes. ff objects have well-defined hybrid copying semantics, \nwhich gives rise to certain performance improvements through virtualization. \n\nThe new ff objects can be stored and reopened across R sessions. Flat files can \nbe shared by multiple 'ff' R objects (using different data en/de-coding \nschemes) in the same process or from multiple R processes to exploit \nparallelism. A wide choice of finalizer options allows to work with 'permanent'\nfiles as well as creating/removing 'temporary' ff files completely transparent \nto the user. On certain OS/Filesystem combinations, the creation process of \nlarge atomic data sets has been speed-up dramatically using sparse file \nallocation.\n\nSeveral access optimization techniques such as Hybrid Index Preprocessing and \nVirtualization are implemented to achieve good performance even with large \ndatasets, for example virtual matrix transpose without touching a single byte \non disk.\n\nFurther, to reduce disk I/O, the atomic data gets stored native and compact on\nbinary flat files i.e. logicals take up exactly 2 bits to represent TRUE, FALSE\nand NA.\n\nBeyond basic access functions, the ff package also provides compatibility \nfunctions that facilitate writing code for ff and ram objects and support for \nbatch processing on ff objects (e.g. as.ram, as.ff, ffapply).\n\nA package that supports convenient processing of large ff objects is in the \nmaking. R.ff will make the bigger part of R's basic functions available for ff \nobjects through method dispatch and/or an evaluator that handles expressions \nwhich contain ff objects. \n\nNOTE: A professional extension is available from the authors, which integrates\n      additional high-performance features neatly into the ff package. \n      The extension allows  efficient handling of symmetric matrices \n      and supports more packed data types: \n      boolean (1 bit), quad (2 bit unsigned), nibble (4 bit unsigned)\n      , byte (1 byte signed with NAs), ubyte (1 byte unsigned)\n      , short (2 byte signed with NAs), ushort (2 byte unsigned)\n      , single (4 byte float with NAs). \n      For example 'quad' allows efficient storage of genomic data as an \n      'A','T','G','C' factor. The unsigned types support 'circular' arithmetic. \n \nP.S. If you are interested in ff 2.0 you might want to visit our presentation \nAugust 5th at JSM \"High-Performance Processing of Large Data Sets via Memory \nMapping: A Case Study in R And C++\" or the official package presentation at \nUseR!2008 in Dortmund scheduled for August 13th. \n\nThe ff authors\nDaniel Adler <dadler at uni-goettingen.de>\nChristian Gl?ser <christian_glaeser at gmx.de>\nOleg Nenadic <onenadi at uni-goettingen.de>\nJens Oehlschl?gel <Jens.Oehlschlaegel at truecluster.com>\nWalter Zucchini <wzucchi at uni-goettingen.de>",
+      "body_plain": "Dear R community,\n\nff Version 2.0 is available on CRAN. Based on paging concepts from version 1.0, \n2.0 is a major redesign of this package for handling large datasets. \nWe have implemented numerous enhancements and performance improvements to make \nthis package suitable as a 'base' package for large data processing. \n\nThe ff package provides atomic data structures that are stored on disk but \nbehave (almost) as if they were in RAM by transparently mapping only a section \n(pagesize) in main memory - the effective virtual memory consumption per ff \nobject.\n\nIn addition to the 'double' data type, ff objects now have support for\n'logical', 'raw' and 'integer' atomic datatypes, plus close-to-atomic types \nlike 'factor', 'POSIXct' or custom close-to-atomic types. In addition to fast \nvector access, ff now has native support for matrices and arrays with flexible \ndimorder (major column-order, major row-order and generalizations for arrays). \n\nWhile the raw data still gets stored on binary flat files in native encoding,\n'ff' objects have been extended to carry their meta information as physical\nand virtual attributes. ff objects have well-defined hybrid copying semantics, \nwhich gives rise to certain performance improvements through virtualization. \n\nThe new ff objects can be stored and reopened across R sessions. Flat files can \nbe shared by multiple 'ff' R objects (using different data en/de-coding \nschemes) in the same process or from multiple R processes to exploit \nparallelism. A wide choice of finalizer options allows to work with 'permanent'\nfiles as well as creating/removing 'temporary' ff files completely transparent \nto the user. On certain OS/Filesystem combinations, the creation process of \nlarge atomic data sets has been speed-up dramatically using sparse file \nallocation.\n\nSeveral access optimization techniques such as Hybrid Index Preprocessing and \nVirtualization are implemented to achieve good performance even with large \ndatasets, for example virtual matrix transpose without touching a single byte \non disk.\n\nFurther, to reduce disk I/O, the atomic data gets stored native and compact on\nbinary flat files i.e. logicals take up exactly 2 bits to represent TRUE, FALSE\nand NA.\n\nBeyond basic access functions, the ff package also provides compatibility \nfunctions that facilitate writing code for ff and ram objects and support for \nbatch processing on ff objects (e.g. as.ram, as.ff, ffapply).\n\nA package that supports convenient processing of large ff objects is in the \nmaking. R.ff will make the bigger part of R's basic functions available for ff \nobjects through method dispatch and/or an evaluator that handles expressions \nwhich contain ff objects. \n\nNOTE: A professional extension is available from the authors, which integrates\n      additional high-performance features neatly into the ff package. \n      The extension allows  efficient handling of symmetric matrices \n      and supports more packed data types: \n      boolean (1 bit), quad (2 bit unsigned), nibble (4 bit unsigned)\n      , byte (1 byte signed with NAs), ubyte (1 byte unsigned)\n      , short (2 byte signed with NAs), ushort (2 byte unsigned)\n      , single (4 byte float with NAs). \n      For example 'quad' allows efficient storage of genomic data as an \n      'A','T','G','C' factor. The unsigned types support 'circular' arithmetic. \n \nP.S. If you are interested in ff 2.0 you might want to visit our presentation \nAugust 5th at JSM \"High-Performance Processing of Large Data Sets via Memory \nMapping: A Case Study in R And C++\" or the official package presentation at \nUseR!2008 in Dortmund scheduled for August 13th. \n\nThe ff authors\nDaniel Adler <dadler at uni-goettingen.de>\nChristian Gläser <christian_glaeser at gmx.de>\nOleg Nenadic <onenadi at uni-goettingen.de>\nJens Oehlschlägel <Jens.Oehlschlaegel at truecluster.com>\nWalter Zucchini <wzucchi at uni-goettingen.de>",
       "body_snippet": "Dear R community,\n\nff Version 2.0 is available on CRAN. Based on paging concepts from version 1.0, \n2.0 is a major redesign of this package for handling large datasets. \nWe have implemented numerous e",
       "thread_id": "thread-b920257cddce",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000942.html"
     },
     {
       "id": "msg-771ecbecea05",
@@ -65,7 +68,8 @@
       "body_snippet": "kernlab version 0.9-7 is now online and incorporates :\n\n  + a much improved fast implementation of string kernels \"stringdot\"\n    based on suffix arrays.\n\n  + a new kernel method kmmd() which implemen",
       "thread_id": "thread-771ecbecea05",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000944.html"
     },
     {
       "id": "msg-832835e8662f",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R users,\n\nA new version (1.4-0) of the Rcmdr package (providing a basic-statistics\ngraphical user interface to R) is now on CRAN. This is the annual update of\nthe package (apart from bug-fixes an",
       "thread_id": "thread-832835e8662f",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000943.html"
     },
     {
       "id": "msg-6ab4122cd230",
@@ -97,7 +102,8 @@
       "body_snippet": "Dear R users,\n\nI am pleased to announce the release of the new BiplotGUI package on\nCRAN.\n\nBiplots are graphs in which the samples and all the variables of a data\nmatrix are represented simultaneously",
       "thread_id": "thread-6ab4122cd230",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000945.html"
     },
     {
       "id": "msg-f31ff13a87ee",
@@ -113,7 +119,8 @@
       "body_snippet": "Dear R Community,\n\nWe am pleased to announce the release of the 'bcpa' package.  The\nsource code and binaries is now on CRAN\n(http://cran.r-project.org/web/packages/bpca/index.html).\n\nThe bpca package",
       "thread_id": "thread-f31ff13a87ee",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000946.html"
     },
     {
       "id": "msg-8dd55eef4ea4",
@@ -129,7 +136,8 @@
       "body_snippet": "Dear R users,\n\nI'd like to announce a new package on CRAN called ``denstrip''.  It\nimplements ``density strips'' and other graphical methods for\nillustrating and comparing distributions in a compact f",
       "thread_id": "thread-8dd55eef4ea4",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000948.html"
     },
     {
       "id": "msg-d3d74326f905",
@@ -145,7 +153,8 @@
       "body_snippet": "I have just uploaded to CRAN version 2.0 of the 'filehash' package.\nThis version contains a major rewriting of many of the internals (much\nrewritten in C) for the DB1 format, which is the default.  Th",
       "thread_id": "thread-d3d74326f905",
       "thread_depth": 0,
-      "month": "2008-08"
+      "month": "2008-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000947.html"
     }
   ],
   "threads": [

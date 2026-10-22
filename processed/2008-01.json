@@ -17,7 +17,8 @@
       "body_snippet": "Hello List:\n\nPlease find uploaded to CRAN a new package, PwrGSD\n\nThe package is intended for the design and analysis of group sequential trials\nThere are two main functions, \n(1) GrpSeqBnds: computes ",
       "thread_id": "thread-34c0abbfdfd8",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000878.html"
     },
     {
       "id": "msg-252a0c389613",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it w",
       "thread_id": "thread-252a0c389613",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000877.html"
     },
     {
       "id": "msg-fbbf01b9ed43",
@@ -45,11 +47,12 @@
       "subject_clean": "New version of ggplot2: 0.5.7",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nggplot 0.5.7\n----------------------------------------\n\nNew geoms, scales and aesthetics\n\n  * stat_step and geom_step to draw staircase plots (like plot(type=\"s\"))\n  * order aesthetic (currently only for lines/paths) allows you to\ncontrol the drawing order within a group\n  * scale_manual makes it easier to let ggplot uses the exact\ncolours/sizes/linetypes that you want\n  * scale_reverse allows you to reverse the scale of x and y axes\n  * scale_grey is a new black and white scale for categorical data\n(colour and fill)\n\n\nImproved options handling\n\n  * new function opts() to allow modification of plot options by addition\n  * update(p, theme_bw) and p + theme_bw now work\n\nThese changes mean that you can modify plot options in the same way\nthat you modify all other aspects of the plot, e.g.  qplot(mpg, wt,\ndata=mptcars) + opts(title = \"Fuel economy vs weight\")\n\nImproved documentation\n\n  * many tweaks to the online documentation, particular including the\nactual code you need to run for each object!\n  * every page now has a link to a form where you can submit feedback\non exactly you do or don't like about a page\n  * required aesthetics now listed in documentation\n  * geom_polygon now has a decent example\n  * numerous minor corrections suggested by J?rg Beyer\n  * separated plotting advice from details of plot construction (what\nvs how), thanks to Bert Gunter for this suggestion\n\n\nImproved map projections (with coord_map)\n\n  * coord_map defaults to orientation = c(90, 0, mean(range(y))) -\nthis ensures that multiple layers line up correctly, but means you\nwill have to specify the orientation yourself for many projections\n  * coord_map now respects limits set by scales\n  * removed useless ticks from coord_map\n\nIf you're using ggplot to draw maps and have thought of other features\nthat would make your life easier, please let me know.\n\n\nBug fixes\n\n  * adding data and aesthetics in separate steps should now work\n  * layers with set parameters will not use mapped aesthetics\n  * use LazyLoad: false instead of SaveData: true for better future\ncompatability\n\n  * coord_cartesian: fixed bug that prevented you from overriding the\ndefault axis expansion\n  * coord_equal: now scales correctly if ratio < 1\n  * geom_abline: fix bug where slope was ignored\n  * geom_jitter now works correctly with groups and categorical values\n(was actually a bug in how scale_discrete deals with continuous\nvalues)\n  * geom_path: automatically switch between polylineGrob and\nsegmentsGrob when drawing paths so that setting line type now works\nproperly\n  * geom_segment now uses both ends of segments to calculate axis limits\n  * plotmatrix: fix bug in scatterplot matrix where all scatterplots\nwere transposed!\n  * qplot: should now work better within functions\n  * quickplot added as an alias of qplot, to avoid confusion with qunif, etc\n  * scale_*: better error message if you add a scale without a\nmatching aesthetic mapping in the plot\n  * scale_identity no longer converts everything to character\n  * scale_identity: grob argument renamed to guide\n  * stat_*: made all statistics more robust to errors\n  * stat_quantile: fixed bug when only drawing a single quantile\n  * stat_smooth: returns silently if <2 non-missing data points\n\n\nMinor aesthetic improvements\n\n  * coord_polar now specifies aspect.ratio by default, and I've made a\nfew other tweaks to make polar coordinates plot look nicer\n  * geom_bar no longer draws gray borders by default, but instead uses\nthe same colour as fill (this eliminates a tiny gap between\nneighbouring bars)\n  * plotmatrix: tweaks to improve display of scatterplot matrix\n  * scale_brewer: added option to reverse palette\n  * scale_colour: colour and fill legends now look exactly the same\n(previously colour was missing a grey border)\n  * scale_discrete has slightly larger expansion (0.75 vs 0.5)\n  * stat_bar: only output bars with > 0 count\n\n\nSee CHANGELOG for changes in previous versions\n\n\n-- \nhttp://had.co.nz/",
+      "body_plain": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. It takes care of many of the fiddly details\nthat make plotting a hassle (like drawing legends) as well as\nproviding a powerful model of graphics that makes it easy to produce\ncomplex multi-layered graphics.\n\nFind out more at http://had.co.nz/ggplot2, and check out the over 500\nexamples of ggplot in use.\n\nggplot 0.5.7\n----------------------------------------\n\nNew geoms, scales and aesthetics\n\n  * stat_step and geom_step to draw staircase plots (like plot(type=\"s\"))\n  * order aesthetic (currently only for lines/paths) allows you to\ncontrol the drawing order within a group\n  * scale_manual makes it easier to let ggplot uses the exact\ncolours/sizes/linetypes that you want\n  * scale_reverse allows you to reverse the scale of x and y axes\n  * scale_grey is a new black and white scale for categorical data\n(colour and fill)\n\n\nImproved options handling\n\n  * new function opts() to allow modification of plot options by addition\n  * update(p, theme_bw) and p + theme_bw now work\n\nThese changes mean that you can modify plot options in the same way\nthat you modify all other aspects of the plot, e.g.  qplot(mpg, wt,\ndata=mptcars) + opts(title = \"Fuel economy vs weight\")\n\nImproved documentation\n\n  * many tweaks to the online documentation, particular including the\nactual code you need to run for each object!\n  * every page now has a link to a form where you can submit feedback\non exactly you do or don't like about a page\n  * required aesthetics now listed in documentation\n  * geom_polygon now has a decent example\n  * numerous minor corrections suggested by Jörg Beyer\n  * separated plotting advice from details of plot construction (what\nvs how), thanks to Bert Gunter for this suggestion\n\n\nImproved map projections (with coord_map)\n\n  * coord_map defaults to orientation = c(90, 0, mean(range(y))) -\nthis ensures that multiple layers line up correctly, but means you\nwill have to specify the orientation yourself for many projections\n  * coord_map now respects limits set by scales\n  * removed useless ticks from coord_map\n\nIf you're using ggplot to draw maps and have thought of other features\nthat would make your life easier, please let me know.\n\n\nBug fixes\n\n  * adding data and aesthetics in separate steps should now work\n  * layers with set parameters will not use mapped aesthetics\n  * use LazyLoad: false instead of SaveData: true for better future\ncompatability\n\n  * coord_cartesian: fixed bug that prevented you from overriding the\ndefault axis expansion\n  * coord_equal: now scales correctly if ratio < 1\n  * geom_abline: fix bug where slope was ignored\n  * geom_jitter now works correctly with groups and categorical values\n(was actually a bug in how scale_discrete deals with continuous\nvalues)\n  * geom_path: automatically switch between polylineGrob and\nsegmentsGrob when drawing paths so that setting line type now works\nproperly\n  * geom_segment now uses both ends of segments to calculate axis limits\n  * plotmatrix: fix bug in scatterplot matrix where all scatterplots\nwere transposed!\n  * qplot: should now work better within functions\n  * quickplot added as an alias of qplot, to avoid confusion with qunif, etc\n  * scale_*: better error message if you add a scale without a\nmatching aesthetic mapping in the plot\n  * scale_identity no longer converts everything to character\n  * scale_identity: grob argument renamed to guide\n  * stat_*: made all statistics more robust to errors\n  * stat_quantile: fixed bug when only drawing a single quantile\n  * stat_smooth: returns silently if <2 non-missing data points\n\n\nMinor aesthetic improvements\n\n  * coord_polar now specifies aspect.ratio by default, and I've made a\nfew other tweaks to make polar coordinates plot look nicer\n  * geom_bar no longer draws gray borders by default, but instead uses\nthe same colour as fill (this eliminates a tiny gap between\nneighbouring bars)\n  * plotmatrix: tweaks to improve display of scatterplot matrix\n  * scale_brewer: added option to reverse palette\n  * scale_colour: colour and fill legends now look exactly the same\n(previously colour was missing a grey border)\n  * scale_discrete has slightly larger expansion (0.75 vs 0.5)\n  * stat_bar: only output bars with > 0 count\n\n\nSee CHANGELOG for changes in previous versions\n\n\n-- \nhttp://had.co.nz/",
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-fbbf01b9ed43",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000879.html"
     },
     {
       "id": "msg-bb6c3e918d0e",
@@ -65,7 +68,8 @@
       "body_snippet": "A new major upgrade of the Epi package for Epidemiological data analysis\nhas been put on CRAN, it is now at version 1.0.7.\n\nIt contains an entirely new way of representing follow-up data on\nmultiple t",
       "thread_id": "thread-bb6c3e918d0e",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000880.html"
     },
     {
       "id": "msg-404f564856bd",
@@ -81,7 +85,8 @@
       "body_snippet": "batchfiles 0.4-0 consists of a set of Windows Vista\n.bat, .hta and .pl files.\n\nMore information is available on the home page:\nhttp://batchfiles.googlecode.com\n\nCHANGES\n\n- now tested with Vista exclus",
       "thread_id": "thread-404f564856bd",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000881.html"
     },
     {
       "id": "msg-25f39756313d",
@@ -93,11 +98,12 @@
       "subject_clean": "Package surveillance (v0.9-8) on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health data.\n\nThe package addresses epidemiologists and statisticians working with\nroutine surveillance, but it also offers an infrastructure for\ndevelopers of new detection algorithms.\n\nImplemented outbreak detection algorithms are:\n* Stroup et al. (1989)\n* Farrington et al. (1996)\n* A Bayesian predictive posterior approach\n* Time varying Poisson means as documented in Rogerson and Yamada (2004)\n* Approximate CUSUM method for time varying Poisson means by\n   Rossi et al. (1999)\n* A generalized likelihood ratio detector for time varying Poisson\n   and and negative binomial means\n\nModelling routines:\n* A Poisson and negative binomial model for the analysis of\nmultivariate infectious disease surveillance data described in Held\net al. (2005)\n\nThe paper available from http://dx.doi.org/10.1007/s00180-007-0074-8\nprovides a good overview of the package. Source code and binaries\n(currently version 0.9-8) are available from CRAN. Visit the R-Forge\nproject web page for more information, development versions and forums\nto discuss ideas and report bugs:\n\n       \t    http://surveillance.r-forge.r-project.org/\n\nI would appreciate hearing about your experiences with the package.\n\nBest regards,\n\nMichael\n-on behalf of the surveillance development team\n\n--\n\nMichael H?hle, Ph.D.\nDepartment of Statistics\nUniversity of Munich\nLudwigstr. 33\n80539 Munich\nGermany\n\nHomepage: http://www.stat.uni-muenchen.de/~hoehle",
+      "body_plain": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health data.\n\nThe package addresses epidemiologists and statisticians working with\nroutine surveillance, but it also offers an infrastructure for\ndevelopers of new detection algorithms.\n\nImplemented outbreak detection algorithms are:\n* Stroup et al. (1989)\n* Farrington et al. (1996)\n* A Bayesian predictive posterior approach\n* Time varying Poisson means as documented in Rogerson and Yamada (2004)\n* Approximate CUSUM method for time varying Poisson means by\n   Rossi et al. (1999)\n* A generalized likelihood ratio detector for time varying Poisson\n   and and negative binomial means\n\nModelling routines:\n* A Poisson and negative binomial model for the analysis of\nmultivariate infectious disease surveillance data described in Held\net al. (2005)\n\nThe paper available from http://dx.doi.org/10.1007/s00180-007-0074-8\nprovides a good overview of the package. Source code and binaries\n(currently version 0.9-8) are available from CRAN. Visit the R-Forge\nproject web page for more information, development versions and forums\nto discuss ideas and report bugs:\n\n       \t    http://surveillance.r-forge.r-project.org/\n\nI would appreciate hearing about your experiences with the package.\n\nBest regards,\n\nMichael\n-on behalf of the surveillance development team\n\n--\n\nMichael Höhle, Ph.D.\nDepartment of Statistics\nUniversity of Munich\nLudwigstr. 33\n80539 Munich\nGermany\n\nHomepage: http://www.stat.uni-muenchen.de/~hoehle",
       "body_snippet": "Dear R Community,\n\nI would like to announce the package \"surveillance\", which provides\nmethods for the surveillance of count data time series originating\nfrom the routine collection of public health d",
       "thread_id": "thread-25f39756313d",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000883.html"
     },
     {
       "id": "msg-3d17705283eb",
@@ -113,7 +119,8 @@
       "body_snippet": "Hi the list\n\n*** New package ***\nR to LaTeX : Univariate analyses\nr2lUniv\n*URL:*http://www.r-project.org, http://christophe.genolini.free.fr/r2lUniv\n\n*** Description ***\nr2lUniv performs some basic an",
       "thread_id": "thread-3d17705283eb",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000882.html"
     },
     {
       "id": "msg-6323e686c19d",
@@ -129,7 +136,8 @@
       "body_snippet": "Version 1.1 of the MiscPsycho package had been uploaded to CRAN. The\npackage has been updated to include the following:\n\n1) The irt.ability() function that estimates examinee ability given a\nset of it",
       "thread_id": "thread-6323e686c19d",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000884.html"
     },
     {
       "id": "msg-5a82cf915729",
@@ -145,7 +153,8 @@
       "body_snippet": "RSQLite 0.6-7 has been uploaded to CRAN and should hit a mirror near\nyou in the next few days.\n\nThis version changes the behavior of the dbGetQuery method to make it\nmore consistent with dbSendQuery. ",
       "thread_id": "thread-5a82cf915729",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000885.html"
     },
     {
       "id": "msg-6ea951969be3",
@@ -161,7 +170,8 @@
       "body_snippet": "Dear useRs,\n\nI've release a new version of the \"dynlm\" package to CRAN which adds two\nnew features:\n\n  o instrumental variables regression (two-stage least squares) via\n    formulas like\n      dynlm(y",
       "thread_id": "thread-6ea951969be3",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000886.html"
     },
     {
       "id": "msg-89aed838c317",
@@ -173,11 +183,12 @@
       "subject_clean": "New package: gRain - gRAphical Independence Networks",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?ren H?jsgaard",
-      "body_snippet": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nS?",
+      "body_plain": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nSøren Højsgaard",
+      "body_snippet": "Dear useRs\n \nI have uploaded a new package, gRain, for propability propagation in graphical independence networks; sometimes also called probabilistic expertsystems and Bayesian networks.\n \nRegards\nSø",
       "thread_id": "thread-89aed838c317",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000887.html"
     },
     {
       "id": "msg-55083513aea3",
@@ -193,7 +204,8 @@
       "body_snippet": "Dear useRs,\n\nnew and updated features in eRm 0.9-6 for extended Rasch modeling:\n\n- infit and outfit mean-square statistics added to functions personfit() \nand itemfit().\n\n- new method: plotPImap() plo",
       "thread_id": "thread-55083513aea3",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000888.html"
     },
     {
       "id": "msg-0a78b0cb758c",
@@ -210,6 +222,7 @@
       "thread_id": "thread-0a78b0cb758c",
       "thread_depth": 0,
       "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000889.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20080129/5962cfe0/attachment.pl"
       ]
@@ -228,7 +241,8 @@
       "body_snippet": "X2R is a bundle of three software libraries allowing the user to pass\nstructured data easily from Fortran, C/C++, or AD Model Builder to R.\n\nAn update to X2R has been sent to CRAN and should be availa",
       "thread_id": "thread-fb5993a0fbab",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000890.html"
     }
   ],
   "threads": [

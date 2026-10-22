@@ -17,7 +17,8 @@
       "body_snippet": "A new version of RSQLite has been uploaded to CRAN. Details on the enhancements and fixes are below. Please direct questions to the R-sig-db mailing list.\n\nVersion 0.11.0\n\n- Enhance type detection in ",
       "thread_id": "thread-57648d947cf2",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001269.html"
     },
     {
       "id": "msg-cdb7e5113743",
@@ -29,11 +30,12 @@
       "subject_clean": "pls 2.3.0 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 2.3.0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression and Principal Component\nRegression.\n\nThe major changes are:\n\n- New analysis method Canonical Powered PLS (CPPLS) implmemented.  See\n  ?cppls.fit.\n\n- coefplot() can now plot whiskers at +/-1 SE (since 2.2.0).  See ?coefplot\n\n- The package now has a name space (since 2.2.0).\n\n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_plain": "Version 2.3.0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression and Principal Component\nRegression.\n\nThe major changes are:\n\n- New analysis method Canonical Powered PLS (CPPLS) implmemented.  See\n  ?cppls.fit.\n\n- coefplot() can now plot whiskers at +/-1 SE (since 2.2.0).  See ?coefplot\n\n- The package now has a name space (since 2.2.0).\n\n-- \nRegards,\nBjørn-Helge Mevik",
       "body_snippet": "Version 2.3.0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression and Principal Component\nRegression.\n\nThe major changes are:\n\n- New analysis method Cano",
       "thread_id": "thread-cdb7e5113743",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001270.html"
     },
     {
       "id": "msg-4413a0dd2a14",
@@ -49,7 +51,8 @@
       "body_snippet": "# stringr\nStrings are not glamorous, high-profile components of R, but they do\nplay a big role in many data cleaning and preparations tasks. R\nprovides a solid set of string operations, but because th",
       "thread_id": "thread-4413a0dd2a14",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001271.html"
     },
     {
       "id": "msg-35afa1e44bb4",
@@ -66,6 +69,7 @@
       "thread_id": "thread-35afa1e44bb4",
       "thread_depth": 0,
       "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001272.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20111227/490dd462/attachment.pl"
       ]
@@ -84,7 +88,8 @@
       "body_snippet": "Dear R users,\n\nI'd like to announce a new version, 1.8-1, of the Rcmdr package. The Rcmdr\n(\"R Commander\") package provides a basic-statistics graphical user interface\n(GUI) to R, implemented in Tcl/Tk",
       "thread_id": "thread-b0e02b2d1205",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001273.html"
     },
     {
       "id": "msg-77c6a1b498c8",
@@ -100,7 +105,8 @@
       "body_snippet": "Dear R users,\n\nI'd like to announce the PairedData package (version 0.5). This package provides a set of graphical tools (based on ggplot2), statistics, effect sizes and some classical and robust test",
       "thread_id": "thread-77c6a1b498c8",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001277.html"
     },
     {
       "id": "msg-785aa2271983",
@@ -112,11 +118,12 @@
       "subject_clean": "Plyr 1.7",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in equivalents.\n\nA detailed introduction to plyr has been published in JSS: \"The\nSplit-Apply-Combine Strategy for Data Analysis\",\nhttp://www.jstatsoft.org/v40/i01/. You can find out more at\nhttp://had.co.nz/plyr/, or track development at\nhttp://github.com/hadley/plyr. You can ask questions about plyr (and\ndata manipulation in general) on the plyr mailing list. Sign up at\nhttp://groups.google.com/group/manipulatr.\n\nVersion 1.7------------------------------------------------------------------------------\n* `rbind.fill`: if a column contains both factors and characters (in\ndifferent? inputs), the resulting column will be coerced to character\n* When there are more than 2^31 distinct combinations `id`, switches\nto a? slower fallback strategy using strings (inspired by `merge`)\nthat guarantees? correct results. This fixes problems with `join` when\njoining across many? columns. (Fixes #63)\n* `split_indices` checks input more aggressively to prevent segfaults.\n? ?Fixes #43.\n* fix small bug in `loop_apply` which lead to segfaults in certain\ncircumstances. (Thanks to P?l Westermark for patch)\n* `itertools` and `iterators` moved to suggests from imports so that\nplyr now? only depends on base R.\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_plain": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the results back\ntogether. For example, you might want to:\n\n  * fit the same model each patient subsets of a data frame\n  * quickly calculate summary statistics for each group\n  * perform group-wise transformations like scaling or standardising\n\nIt's already possible to do this with base R functions (like split and\nthe apply family of functions), but plyr makes it all a bit easier\nwith:\n\n  * totally consistent names, arguments and outputs\n  * convenient parallelisation through the foreach package\n  * input from and output to data.frames, matrices and lists\n  * progress bars to keep track of long running operations\n  * built-in error recovery, and informative error messages\n  * labels that are maintained across all transformations\n\nConsiderable effort has been put into making plyr fast and memory\nefficient, and in many cases plyr is as fast as, or faster than, the\nbuilt-in equivalents.\n\nA detailed introduction to plyr has been published in JSS: \"The\nSplit-Apply-Combine Strategy for Data Analysis\",\nhttp://www.jstatsoft.org/v40/i01/. You can find out more at\nhttp://had.co.nz/plyr/, or track development at\nhttp://github.com/hadley/plyr. You can ask questions about plyr (and\ndata manipulation in general) on the plyr mailing list. Sign up at\nhttp://groups.google.com/group/manipulatr.\n\nVersion 1.7------------------------------------------------------------------------------\n* `rbind.fill`: if a column contains both factors and characters (in\ndifferent  inputs), the resulting column will be coerced to character\n* When there are more than 2^31 distinct combinations `id`, switches\nto a  slower fallback strategy using strings (inspired by `merge`)\nthat guarantees  correct results. This fixes problems with `join` when\njoining across many  columns. (Fixes #63)\n* `split_indices` checks input more aggressively to prevent segfaults.\n   Fixes #43.\n* fix small bug in `loop_apply` which lead to segfaults in certain\ncircumstances. (Thanks to Pål Westermark for patch)\n* `itertools` and `iterators` moved to suggests from imports so that\nplyr now  only depends on base R.\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
       "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
       "thread_id": "thread-785aa2271983",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001274.html"
     },
     {
       "id": "msg-c10055bdeac5",
@@ -132,7 +139,8 @@
       "body_snippet": "# testthat\nTesting your code is normally painful and boring. `testthat` tries to\nmake testing as fun as possible, so that you get a visceral\nsatisfaction from writing tests. Testing should be fun, not",
       "thread_id": "thread-c10055bdeac5",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001275.html"
     },
     {
       "id": "msg-34fa8b7ce193",
@@ -148,7 +156,8 @@
       "body_snippet": "What happened with \"packages\" directory?\n\nhttp://cran.r-project.org/web/\n\nThanks\n-- \nPawel Matykiewicz\nhttp://www.neuron.m4u.pl\nhttp://www.linkedin.com/in/pawelmatykiewicz",
       "thread_id": "thread-34fa8b7ce193",
       "thread_depth": 0,
-      "month": "2011-12"
+      "month": "2011-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001276.html"
     }
   ],
   "threads": [

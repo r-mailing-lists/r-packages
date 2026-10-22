@@ -17,7 +17,8 @@
       "body_snippet": "Dear useRs,\n\nversion 1.1-0 of the fortunes package is available from CRAN. It now\ncontains 100 R fortunes. Thanks to all who contributed.\n\nBest wishes,\nZ",
       "thread_id": "thread-b6874e429645",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000591.html"
     },
     {
       "id": "msg-faab7bfd4d1e",
@@ -29,11 +30,12 @@
       "subject_clean": "adehabitat version 1.2",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian bridge approach for kernel estimation),\nestimation of schoener's ratio.  This package now allows a\nbetter management of objects of class \"area\" (see plot.area,\nperarea, ararea). Some arguments of the graphical functions\nhave also been changed (kernel, image.kasc, scatter.enfa).\nFinally, some minor bugs have been corrected. Note that\nthe package now need that the packages ade4 and gpclib\nare installed.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing,\n\n\nCl?ment Calenge.\n\n======================================\nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian bridge approach for kernel estimation),\nestimation of schoener's ratio.  This package now allows a\nbetter management of objects of class \"area\" (see plot.area,\nperarea, ararea). Some arguments of the graphical functions\nhave also been changed (kernel, image.kasc, scatter.enfa).\nFinally, some minor bugs have been corrected. Note that\nthe package now need that the packages ade4 and gpclib\nare installed.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHappy testing,\n\n\nClément Calenge.\n\n======================================\nClément CALENGE\nLBBE - UMR CNRS 5558 - Université Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.2 of the package\n'adehabitat'. This package now contains new functions for\nthe estimation of home ranges (Nearest neighbour convex\nhull, brownian ",
       "thread_id": "thread-faab7bfd4d1e",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000592.html"
     },
     {
       "id": "msg-89284503b103",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear all,\n\nI have uploaded a new package called micEcon (version 0.1-3) to CRAN \n(an early version of this package has been already presented at useR! 2004).\nIt contains tools for microeconomic analys",
       "thread_id": "thread-89284503b103",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000593.html"
     },
     {
       "id": "msg-a40580ad139c",
@@ -65,7 +68,8 @@
       "body_snippet": "Version 2.9 of survey is on CRAN.  In addition to various minor \nimprovements and bug fixes there are two major changes\n\n- full multistage finite-population sampling is supported (as in SUDAAN)\n- the ",
       "thread_id": "thread-a40580ad139c",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000594.html"
     },
     {
       "id": "msg-60270b975f2f",
@@ -77,11 +81,12 @@
       "subject_clean": "New package: ROCR (Visualizing classifier performance)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for those of you working on classification problems. \nFor details, see the package description below, or the ROCR website: \nhttp://rocr.bioinf.mpi-sb.mpg.de. You can get a short overview by typing \n'demo(ROCR)'. Any kind of feedback (questions, comments, suggestions, bug \nreports) is very welcome.\n\nBest regards,\n  the ROCRs (Tobias Sing, Oliver Sander, Niko Beerenwinkel, Thomas Lengauer)\n\nPackage description:\n-------------------------\nROC graphs, sensitivity/specificity curves, lift charts, and precision/recall \nplots are popular examples of trade-off visualizations for specific pairs of \nperformance measures. ROCR is a flexible tool for creating \ncutoff-parametrized 2D performance curves by freely combining two from over \n25 performance measures (new performance measures can be added using a \nstandard interface). Curves from different cross-validation or bootstrapping \nruns can be averaged by different methods, and standard deviations, standard \nerrors or box plots can be used to visualize the variability across the runs. \nThe parametrization can be visualized by printing cutoff values at the \ncorresponding curve positions, or by coloring the curve according to cutoff. \nAll components of a performance plot can be quickly adjusted using a flexible \nparameter dispatching mechanism. Despite its flexibility, ROCR is easy to \nuse, with only three commands and reasonable default values for all optional \nparameters.\n\n\n__________________________________________________________________________\nTobias?Sing?????????????????????????phone:?+49?681?9325?315???\nMax-Planck-Institut?f?r?Informatik??fax??:?+49?681?9325?399???\nStuhlsatzenhausweg?85???????????????email:?tobias.sing at mpi-sb.mpg.de??\n66123?Saarbr?cken,?Germany??????????web??:?http://www.tobiassing.net",
+      "body_plain": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for those of you working on classification problems. \nFor details, see the package description below, or the ROCR website: \nhttp://rocr.bioinf.mpi-sb.mpg.de. You can get a short overview by typing \n'demo(ROCR)'. Any kind of feedback (questions, comments, suggestions, bug \nreports) is very welcome.\n\nBest regards,\n  the ROCRs (Tobias Sing, Oliver Sander, Niko Beerenwinkel, Thomas Lengauer)\n\nPackage description:\n-------------------------\nROC graphs, sensitivity/specificity curves, lift charts, and precision/recall \nplots are popular examples of trade-off visualizations for specific pairs of \nperformance measures. ROCR is a flexible tool for creating \ncutoff-parametrized 2D performance curves by freely combining two from over \n25 performance measures (new performance measures can be added using a \nstandard interface). Curves from different cross-validation or bootstrapping \nruns can be averaged by different methods, and standard deviations, standard \nerrors or box plots can be used to visualize the variability across the runs. \nThe parametrization can be visualized by printing cutoff values at the \ncorresponding curve positions, or by coloring the curve according to cutoff. \nAll components of a performance plot can be quickly adjusted using a flexible \nparameter dispatching mechanism. Despite its flexibility, ROCR is easy to \nuse, with only three commands and reasonable default values for all optional \nparameters.\n\n\n__________________________________________________________________________\nTobias?Sing??????????????????????   phone: +49 681 9325 315   \nMax-Planck-Institut für Informatik  fax  : +49 681 9325 399   \nStuhlsatzenhausweg 85  ??????????   email: tobias.sing at mpi-sb.mpg.de  \n66123 Saarbrücken, Germany   ?????? web  : http://www.tobiassing.net",
       "body_snippet": "Dear R users,\n\nwe are glad to announce the release of our new R package ROCR, for visualizing \nthe performance of scoring classifiers (available on CRAN). We hope that the \npackage might be useful for",
       "thread_id": "thread-60270b975f2f",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000595.html"
     },
     {
       "id": "msg-f3e278db5627",
@@ -97,7 +102,8 @@
       "body_snippet": "New on CRAN: phpSerialize Version 0.8\nDieter Menne, dieter.menne at menne-biomed.de\n\nSerializes R objects for PHP import into an associative array. \nMain use is for building web pages with R-support. ",
       "thread_id": "thread-f3e278db5627",
       "thread_depth": 0,
-      "month": "2005-02"
+      "month": "2005-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000596.html"
     }
   ],
   "threads": [

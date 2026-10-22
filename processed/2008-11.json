@@ -17,7 +17,8 @@
       "body_snippet": "scuba 1.2-2\n\n'scuba' is a contributed package that performs theoretical calculations\nabout scuba diving --- dive profiles, decompression models, gas toxicity\nand so on.\n\nNew features in version 1.2-2:",
       "thread_id": "thread-6cd21df1fec0",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000969.html"
     },
     {
       "id": "msg-f44ae1fc3284",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi!\n\nA few weeks ago, I have uploaded a new R package \"frontier\" for Stochastic \nFrontier Analysis (SFA) [1] to CRAN [2]. It includes the FORTRAN code of Tim \nCoelli's [3] software \"Frontier 4.1\" [4].",
       "thread_id": "thread-f44ae1fc3284",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000970.html"
     },
     {
       "id": "msg-65647d457bee",
@@ -49,7 +51,8 @@
       "body_snippet": "Hello,\n\nA long overdue update to the 'trip' package is now on CRAN.\n\no New function forceConstraints() to impose the common problems found in \ntrack data of duplicated records, and duplicated time sta",
       "thread_id": "thread-65647d457bee",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000971.html"
     },
     {
       "id": "msg-bdc6163455c7",
@@ -61,11 +64,12 @@
       "subject_clean": "New Package FactoClass",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "new R package FactoClass to combine factorial methods and cluster\nanalysis is uploaded to CRAN. This package is implemented in order to perform a\nmultivariate exploration of a data table according to Lebart et al. (1995). We\nuse some ade4 functions (Chessel et al. 2004) to perform the factorial analysis\nof the data and some stats functions in R to perform cluster methods.\nSome new functions are programmed to make specific tasks and another old\nones are modified.\n\n\nCampo-El?as PARDO\nDepartamento de Estad?stica\nUniversidad Nacional de Colombia - Bogot?",
+      "body_plain": "new R package FactoClass to combine factorial methods and cluster\nanalysis is uploaded to CRAN. This package is implemented in order to perform a\nmultivariate exploration of a data table according to Lebart et al. (1995). We\nuse some ade4 functions (Chessel et al. 2004) to perform the factorial analysis\nof the data and some stats functions in R to perform cluster methods.\nSome new functions are programmed to make specific tasks and another old\nones are modified.\n\n\nCampo-Elías PARDO\nDepartamento de Estadística\nUniversidad Nacional de Colombia - Bogotá",
       "body_snippet": "new R package FactoClass to combine factorial methods and cluster\nanalysis is uploaded to CRAN. This package is implemented in order to perform a\nmultivariate exploration of a data table according to ",
       "thread_id": "thread-bdc6163455c7",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000972.html"
     },
     {
       "id": "msg-308423b465f3",
@@ -81,7 +85,8 @@
       "body_snippet": "A new package, *latticist*, is available now from CRAN.\n\nLatticist is a graphical user interface for exploratory visualisation.\nIt is primarily an interface to the Lattice graphics system, but also\npr",
       "thread_id": "thread-308423b465f3",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000973.html"
     },
     {
       "id": "msg-a850dd8b27bd",
@@ -93,11 +98,12 @@
       "subject_clean": "Packages for time series databases",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I recently put several packages for time series databases on CRAN. The \nmain package, TSdbi, provides a common interface to time series \ndatabases. The objective is to define a standard interface so users can \nretrieve time series data from various sources with a simple, common, \nset of commands, and so programs can be written to be portable with \nrespect to the data source. The SQL implementations also provide a \ndatabase table design, so users needing to set up a time series database \nhave a reasonably complete way to do this easily. The interface provides \nfor a variety of options with respect to the representation of time \nseries in R. There is also a (not yet well tested) mechanism to handle \nmultilingual data documentation.\n\n-TSdbi  is the main package.\n\n-TSMySQL,  TSPostgreSQL, and  TSSQLite provide interfaces for these \nthree SQL databases  (using RMySQL, RSQLite, and RPostgreSQL).\n\n-TSodbc  provides an interface using RODBC (tested only with a \nPostgreSQL server).\n\n-TSfame  provides an interface to Fame using the fame package.\n\n-TSpadi  provides an interface to Fame using a (somewhat dated) padi server.\n\n-TShistQuote  provides an interface to get.hist.quote.\n\nMany thanks to the authors and maintainers of the underlying packages, \nand several people who have commented on early versions of the TS* packages.\n\nPaul Gilbert\n====================================================================================\n\nLa version fran?aise suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential information, and the Bank of\nCanada does not waive any related rights. Any distribution, use, or copying of this\nemail or the information it contains by other than the intended recipient is\nunauthorized. If you received this email in error please delete it immediately from\nyour system and notify the sender promptly by email that you have done so. \n\n------------------------------------------------------------------------------------\n\nLe pr?sent courriel peut contenir de l'information privil?gi?e ou confidentielle.\nLa Banque du Canada ne renonce pas aux droits qui s'y rapportent. Toute diffusion,\nutilisation ou copie de ce courriel ou des renseignements qu'il contient par une\npersonne autre que le ou les destinataires d?sign?s est interdite. Si vous recevez\nce courriel par erreur, veuillez le supprimer imm?diatement et envoyer sans d?lai ?\nl'exp?diteur un message ?lectronique pour l'aviser que vous avez ?limin? de votre\nordinateur toute copie du courriel re?u.",
+      "body_plain": "I recently put several packages for time series databases on CRAN. The \nmain package, TSdbi, provides a common interface to time series \ndatabases. The objective is to define a standard interface so users can \nretrieve time series data from various sources with a simple, common, \nset of commands, and so programs can be written to be portable with \nrespect to the data source. The SQL implementations also provide a \ndatabase table design, so users needing to set up a time series database \nhave a reasonably complete way to do this easily. The interface provides \nfor a variety of options with respect to the representation of time \nseries in R. There is also a (not yet well tested) mechanism to handle \nmultilingual data documentation.\n\n-TSdbi  is the main package.\n\n-TSMySQL,  TSPostgreSQL, and  TSSQLite provide interfaces for these \nthree SQL databases  (using RMySQL, RSQLite, and RPostgreSQL).\n\n-TSodbc  provides an interface using RODBC (tested only with a \nPostgreSQL server).\n\n-TSfame  provides an interface to Fame using the fame package.\n\n-TSpadi  provides an interface to Fame using a (somewhat dated) padi server.\n\n-TShistQuote  provides an interface to get.hist.quote.\n\nMany thanks to the authors and maintainers of the underlying packages, \nand several people who have commented on early versions of the TS* packages.\n\nPaul Gilbert\n====================================================================================\n\nLa version française suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential information, and the Bank of\nCanada does not waive any related rights. Any distribution, use, or copying of this\nemail or the information it contains by other than the intended recipient is\nunauthorized. If you received this email in error please delete it immediately from\nyour system and notify the sender promptly by email that you have done so. \n\n------------------------------------------------------------------------------------\n\nLe présent courriel peut contenir de l'information privilégiée ou confidentielle.\nLa Banque du Canada ne renonce pas aux droits qui s'y rapportent. Toute diffusion,\nutilisation ou copie de ce courriel ou des renseignements qu'il contient par une\npersonne autre que le ou les destinataires désignés est interdite. Si vous recevez\nce courriel par erreur, veuillez le supprimer immédiatement et envoyer sans délai à\nl'expéditeur un message électronique pour l'aviser que vous avez éliminé de votre\nordinateur toute copie du courriel reçu.",
       "body_snippet": "I recently put several packages for time series databases on CRAN. The \nmain package, TSdbi, provides a common interface to time series \ndatabases. The objective is to define a standard interface so u",
       "thread_id": "thread-a850dd8b27bd",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000974.html"
     },
     {
       "id": "msg-d9add3997203",
@@ -113,7 +119,8 @@
       "body_snippet": "X2R is a bundle of three software libraries for passing complicated data \nstructures from Fortran, C/C++, or AD Model Builder to R.  An update has \nbeen sent to CRAN and should be available from mirro",
       "thread_id": "thread-d9add3997203",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000976.html"
     },
     {
       "id": "msg-5c3ee3438531",
@@ -129,7 +136,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-5c3ee3438531",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000975.html"
     },
     {
       "id": "msg-478b350439c2",
@@ -145,7 +153,8 @@
       "body_snippet": "RDQA is a package for Qualitative Data Analysis built upon R. It works\nboth on the Windows and Linux/FreeBSD platforms. RQDA is an\neasy-to-use tool to assist in the analysis of textual data. At the\npr",
       "thread_id": "thread-478b350439c2",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000977.html"
     },
     {
       "id": "msg-be0793e51f4d",
@@ -164,6 +173,7 @@
       "thread_id": "thread-478b350439c2",
       "thread_depth": 1,
       "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000978.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20081125/afd230d3/attachment.pl"
       ]
@@ -182,7 +192,8 @@
       "body_snippet": "Dear R users,\n\nI'd like to announce version 2.0-0 of the effects package, which is now on\nCRAN. The package constructs graphical and tabular \"effect displays,\" e.g.,\nof interactions, for several kinds",
       "thread_id": "thread-fd6705c64af6",
       "thread_depth": 0,
-      "month": "2008-11"
+      "month": "2008-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000979.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Dear RWinEdt users,\n\nunfortunately, it seems to be impossible to support localized (i.e. \ntranslated) versions of RGui in MDI mode. The support of this feature \nhas been removed now. All the workaroun",
       "thread_id": "thread-aa61967084e2",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000617.html"
     },
     {
       "id": "msg-c90ad2bf67b4",
@@ -35,7 +36,8 @@
       "body_snippet": "Bayesian Model Averaging (BMA) R Package available\n\nFree software to carry out Bayesian Model Averaging (BMA) \nin R is now available at\nhttp://cran.us.r-project.org/src/contrib/Descriptions/BMA.html\nB",
       "thread_id": "thread-c90ad2bf67b4",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000618.html"
     },
     {
       "id": "msg-4e2c4e042dd4",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear all,\n\nThere is an updated version of the eba package for\nelimination-by-aspects (EBA) choice models available on CRAN.\n\nIt features new functions for extracting and plotting\nthe residuals, for te",
       "thread_id": "thread-4e2c4e042dd4",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000619.html"
     },
     {
       "id": "msg-50a96643a076",
@@ -63,11 +66,12 @@
       "subject_clean": "Package adehabitat version 1.3",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.3 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- Several functions allowing the conversion from\n  and to classes of the package sp have been added.\n  Maps of class \"asc\", \"kasc\", \"area\", as well as\n  radio-monitoring of class \"traj\" can now be\n  converted to the spatial classes available in sp.\n\n- The function buffer.line() allows to compute buffer\n  around a line\n\n- The function distfacmap() converts one factor map\n  into a set of maps giving the distance to the\n  patches belonging to the different levels.\n\n- The kernel home-range estimation can now be fitted\n  using an Epanechnikov kernel (though it is still\n  optional), resulting in a quicker estimation.\n\n- The former function enfa() has been modified. It\n  now requires a data frame (available units) and\n  a vector (use of each unit). If the data consist\n  of a point pattern and of an object kasc, the\n  function data2enfa is to be used before.\n\n- The function angles() now takes an argument\n  indicating how successive relocations\n  located at the same place have to be managed.\n\n- The function as.traj now requires at least 2\n  relocations to return a trajectory\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nCl?ment Calenge\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.3 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- Several functions allowing the conversion from\n  and to classes of the package sp have been added.\n  Maps of class \"asc\", \"kasc\", \"area\", as well as\n  radio-monitoring of class \"traj\" can now be\n  converted to the spatial classes available in sp.\n\n- The function buffer.line() allows to compute buffer\n  around a line\n\n- The function distfacmap() converts one factor map\n  into a set of maps giving the distance to the\n  patches belonging to the different levels.\n\n- The kernel home-range estimation can now be fitted\n  using an Epanechnikov kernel (though it is still\n  optional), resulting in a quicker estimation.\n\n- The former function enfa() has been modified. It\n  now requires a data frame (available units) and\n  a vector (use of each unit). If the data consist\n  of a point pattern and of an object kasc, the\n  function data2enfa is to be used before.\n\n- The function angles() now takes an argument\n  indicating how successive relocations\n  located at the same place have to be managed.\n\n- The function as.traj now requires at least 2\n  relocations to return a trajectory\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nClément Calenge\n\n-- \nClément CALENGE\nLBBE - UMR CNRS 5558 - Université \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.3 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- Several functions allowing the conversion from\n  and to classes of the pac",
       "thread_id": "thread-50a96643a076",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000620.html"
     },
     {
       "id": "msg-152604938a67",
@@ -83,7 +87,8 @@
       "body_snippet": "There is a new version of the 'mvbutils' package (v1.1.1) available on\nCRAN.\n\nFor existing users, the main new features are:\n\n(i) 'help' now works properly with with R2.0+ (!)\n(ii) 'mvbutils' is now N",
       "thread_id": "thread-152604938a67",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000621.html"
     },
     {
       "id": "msg-09985fe15ecc",
@@ -99,7 +104,8 @@
       "body_snippet": "There is a new version of the 'debug' package (v1.1.0) available on\nCRAN. For existing users, the main changes are (i) some bug fixes, and\n(ii) it is now NAMESPACEd, so you can avoid naming conflicts ",
       "thread_id": "thread-09985fe15ecc",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000622.html"
     },
     {
       "id": "msg-cc76a19b1ca2",
@@ -115,7 +121,8 @@
       "body_snippet": "Version 1.0-1 of bayesm is now available on CRAN.\n\nThis is our first \"production\" version which include s much improved documentation as well as five data sets used in our book, Bayesian Statistics an",
       "thread_id": "thread-cc76a19b1ca2",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000623.html"
     },
     {
       "id": "msg-6377483a0318",
@@ -127,11 +134,12 @@
       "subject_clean": "pls version 1.0-3",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings and biplots.\n\n(The pls package is meant to supersede the pls.pcr package.)\n\n-- \nRon Wehrens and Bj?rn-Helge Mevik",
+      "body_plain": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings and biplots.\n\n(The pls package is meant to supersede the pls.pcr package.)\n\n-- \nRon Wehrens and Bjørn-Helge Mevik",
       "body_snippet": "Version 1.0-3 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
       "thread_id": "thread-6377483a0318",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000625.html"
     },
     {
       "id": "msg-280d2ee13dcc",
@@ -147,7 +155,8 @@
       "body_snippet": "Get articles from http://www.jstatsoft.org\n\nFirth\nBradley-Terry Models in R\nVolume 12, Issue 01\n\nSturtz, Ligges, and Gelman\nR2WinBUGS: A Package for Running WinBUGS from R\nVolume 12, Issue 03\n\nMineo a",
       "thread_id": "thread-280d2ee13dcc",
       "thread_depth": 0,
-      "month": "2005-05"
+      "month": "2005-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000624.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Hello everyone,\n\nI like the expressiveness of dplyr's data manipulation verbs, but I also\nappreciate the optimizations offered by data.table, so I figured: why not\nboth?\n\nThe table.express package lev",
       "thread_id": "thread-0e9a106501c4",
       "thread_depth": 0,
-      "month": "2019-06"
+      "month": "2019-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001671.html"
     },
     {
       "id": "msg-7e56fd72f9f6",
@@ -33,7 +34,8 @@
       "body_snippet": "pwr2ppl contains protocols for running a wide range of power analyses.\nAnalyses range from simple approaches such as t-test and correlations\nto multifactor ANOVA (between and within subjects, linear m",
       "thread_id": "thread-7e56fd72f9f6",
       "thread_depth": 0,
-      "month": "2019-06"
+      "month": "2019-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001672.html"
     },
     {
       "id": "msg-178939f72c1b",
@@ -45,11 +47,12 @@
       "subject_clean": "short presentation of the new package \"GuessCompx\"",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R community members, please find here a short presentation of our new\npackage.\n\nWe introduce GuessCompx, a new R package that makes an empirical guess on\nthe time and memory complexities of an algorithm or a function. It will\ntest multiple, increasing-sizes samples of the user?s data and try to fit\none of seven complexity functions : O(n), O(n2), O(log(n)), etc. Based on a\nbest fit procedure using LOO-MSE error, it also predicts the full\ncomputation time and memory usage on the whole dataset. It relies on the\nbase R functions `system.time` and `memory.size `, the latter being only\nsuitable for Windows users. Together with this result, a plot and a\nsignificance test are also returned.\n\nComplexity is assessed with regard to the user?s actual dataset through its\nsize (and no other parameter). We provide several examples showing some use\ncase (distance function, time series, custom function) and how to best tune\nthe parameters.\n\nThe subject of empirical computational complexity has been relatively\nlittle studied in computer sciences, and such a package provides a\nconvenient and simple procedure to estimate it, thus preventing the user to\nrun any computation for an unknown amount of time. Empirical fit does not\nguarantee to find the true complexity function but approaches it in an\nacceptable way. The package does not require to have the code of the target\nfunction.\n\nhttps://cran.r-project.org/package=GuessCompx\n\nRegards,\n\nMarc Agenis\nNeeraj Bokde\nmarc.agenis at gmail.com\n+33 (0)6 19 60 91 23\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear R community members, please find here a short presentation of our new\npackage.\n\nWe introduce GuessCompx, a new R package that makes an empirical guess on\nthe time and memory complexities of an algorithm or a function. It will\ntest multiple, increasing-sizes samples of the user’s data and try to fit\none of seven complexity functions : O(n), O(n2), O(log(n)), etc. Based on a\nbest fit procedure using LOO-MSE error, it also predicts the full\ncomputation time and memory usage on the whole dataset. It relies on the\nbase R functions `system.time` and `memory.size `, the latter being only\nsuitable for Windows users. Together with this result, a plot and a\nsignificance test are also returned.\n\nComplexity is assessed with regard to the user’s actual dataset through its\nsize (and no other parameter). We provide several examples showing some use\ncase (distance function, time series, custom function) and how to best tune\nthe parameters.\n\nThe subject of empirical computational complexity has been relatively\nlittle studied in computer sciences, and such a package provides a\nconvenient and simple procedure to estimate it, thus preventing the user to\nrun any computation for an unknown amount of time. Empirical fit does not\nguarantee to find the true complexity function but approaches it in an\nacceptable way. The package does not require to have the code of the target\nfunction.\n\nhttps://cran.r-project.org/package=GuessCompx\n\nRegards,\n\nMarc Agenis\nNeeraj Bokde\nmarc.agenis at gmail.com\n+33 (0)6 19 60 91 23\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear R community members, please find here a short presentation of our new\npackage.\n\nWe introduce GuessCompx, a new R package that makes an empirical guess on\nthe time and memory complexities of an al",
       "thread_id": "thread-178939f72c1b",
       "thread_depth": 0,
-      "month": "2019-06"
+      "month": "2019-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001673.html"
     },
     {
       "id": "msg-23017663d33e",
@@ -65,7 +68,8 @@
       "body_snippet": "A new package called APFr for threshold selection in large scale inference\nproblems using robust estimates of Average Power Function and Bayes FDR, is\navailable.\n\nCRAN: https://cran.r-project.org/web/",
       "thread_id": "thread-23017663d33e",
       "thread_depth": 0,
-      "month": "2019-06"
+      "month": "2019-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001674.html"
     }
   ],
   "threads": [

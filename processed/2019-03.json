@@ -17,7 +17,8 @@
       "body_snippet": "R and Shiny Developers,\n\nPackage noteMD v0.1.0 is released on CRAN now.\nWhen building a 'shiny' app to generate reports (pdf or 'word'), we can\ninsert a comment box in front-end side for user to write",
       "thread_id": "thread-65136192d7b7",
       "thread_depth": 0,
-      "month": "2019-03"
+      "month": "2019-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001659.html"
     },
     {
       "id": "msg-8cd0987e0865",
@@ -29,11 +30,12 @@
       "subject_clean": "New package feisr: Fixed effects individual slope models",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nAre you worried about the parallel trends assumption in your panel\nregression? Use fixed effects individual slope models, controlling for\nheterogeneous trends!\n\nI am very pleased to announce that the package feisr is now available on\nCRAN!\n\nCRAN: https://cran.r-project.org/package=feisr\nGitHub: https://github.com/ruettenauer/feisr\n\nThe packages feisr provides a function to estimate fixed effects individual\nslope (FEIS) models. FEIS models constitute a more general version of the\noften used conventional fixed effects (FE) panel models. In contrast to\nconventional fixed effects models, data are not person ?demeaned?, but\n'detrended? by the predicted individual slope of each person or group, which\nrelaxes the assumptions of parallel trends between treated and untreated\ngroups.\n\nWe are happy about any comments or feedback!\n\nBest regards,\nTobias\n\n\nTobias R?ttenauer\nDepartment of Social Sciences\nTU Kaiserslautern\nErwin-Schroedinger-Str. 57\n67663 Kaiserslautern\n\nruettenauer at sowi.uni-kl.de\nTel.: +49 631 205 5785",
+      "body_plain": "Dear R users,\n\nAre you worried about the parallel trends assumption in your panel\nregression? Use fixed effects individual slope models, controlling for\nheterogeneous trends!\n\nI am very pleased to announce that the package feisr is now available on\nCRAN!\n\nCRAN: https://cran.r-project.org/package=feisr\nGitHub: https://github.com/ruettenauer/feisr\n\nThe packages feisr provides a function to estimate fixed effects individual\nslope (FEIS) models. FEIS models constitute a more general version of the\noften used conventional fixed effects (FE) panel models. In contrast to\nconventional fixed effects models, data are not person ‘demeaned’, but\n'detrended’ by the predicted individual slope of each person or group, which\nrelaxes the assumptions of parallel trends between treated and untreated\ngroups.\n\nWe are happy about any comments or feedback!\n\nBest regards,\nTobias\n\n\nTobias Rüttenauer\nDepartment of Social Sciences\nTU Kaiserslautern\nErwin-Schroedinger-Str. 57\n67663 Kaiserslautern\n\nruettenauer at sowi.uni-kl.de\nTel.: +49 631 205 5785",
       "body_snippet": "Dear R users,\n\nAre you worried about the parallel trends assumption in your panel\nregression? Use fixed effects individual slope models, controlling for\nheterogeneous trends!\n\nI am very pleased to ann",
       "thread_id": "thread-8cd0987e0865",
       "thread_depth": 0,
-      "month": "2019-03"
+      "month": "2019-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001660.html"
     },
     {
       "id": "msg-850039f2f882",
@@ -49,7 +51,8 @@
       "body_snippet": "I'm pleased to announce the release of the \"arsenal\" package v3.0.0 on CRAN (https://cran.r-project.org/package=arsenal)!\n\n\"arsenal\" has experienced some major growth in the last few months, starting ",
       "thread_id": "thread-850039f2f882",
       "thread_depth": 0,
-      "month": "2019-03"
+      "month": "2019-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001661.html"
     }
   ],
   "threads": [

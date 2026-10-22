@@ -13,11 +13,12 @@
       "subject_clean": "pls version 2.0-0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 2.0-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.2-0 are\n\n- There is now an options mechanism for selecting default fit algorithms.\n  See ?pls.options.\n- loadingplot() and coefplot() now try to be more intelligent when plotting\n  x axis labels.\n- The handling of factors in X has been improved, by changing the way the\n  intercept is removed from the model matrix.\n- All PLSR and PCR algorithms, as well as mvrCv(), have been optimised.\n  Depending on the algorithm used, the size of the matrices, and the number\n  of components used, one can expect from 5% to 65% reduction in\n  computation time.\n- Scaling of scores and loadings of kernel PLS and svd PCR algorithm has\n  changed.  They are now scaled using the `classic' scaling found in\n  oscorespls.\n- The arguments `ncomp' now always means \"number of components\", and `comps'\n  always means \"component number\".  The argument `cumulative' has been\n  removed.\n- A new data set 'gasoline' has been included.\n- The 'NIR' and 'sensory' data sets have been renamed to 'yarn' and 'oliveoil'.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nBj?rn-Helge Mevik",
+      "body_plain": "Version 2.0-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.2-0 are\n\n- There is now an options mechanism for selecting default fit algorithms.\n  See ?pls.options.\n- loadingplot() and coefplot() now try to be more intelligent when plotting\n  x axis labels.\n- The handling of factors in X has been improved, by changing the way the\n  intercept is removed from the model matrix.\n- All PLSR and PCR algorithms, as well as mvrCv(), have been optimised.\n  Depending on the algorithm used, the size of the matrices, and the number\n  of components used, one can expect from 5% to 65% reduction in\n  computation time.\n- Scaling of scores and loadings of kernel PLS and svd PCR algorithm has\n  changed.  They are now scaled using the `classic' scaling found in\n  oscorespls.\n- The arguments `ncomp' now always means \"number of components\", and `comps'\n  always means \"component number\".  The argument `cumulative' has been\n  removed.\n- A new data set 'gasoline' has been included.\n- The 'NIR' and 'sensory' data sets have been renamed to 'yarn' and 'oliveoil'.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nBjørn-Helge Mevik",
       "body_snippet": "Version 2.0-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
       "thread_id": "thread-a10294669616",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000768.html"
     },
     {
       "id": "msg-9faf0910767e",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi,\n\nThe rcompletion package, originally intended to provide completion for\nreadline-based R interfaces, has undergone a number of changes.  These\nchanges are summarised below:\n\n  o Reorganisation:\n\n ",
       "thread_id": "thread-9faf0910767e",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000769.html"
     },
     {
       "id": "msg-63dc2cf5d826",
@@ -49,7 +51,8 @@
       "body_snippet": "A new version of RSQLite has been pushed to CRAN.\n\nIn this version...\n\n* Further integration of the manifest type system available since\n  SQLite 3.  We now obtain the column type from the DB instead ",
       "thread_id": "thread-63dc2cf5d826",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000770.html"
     },
     {
       "id": "msg-f6135dfbbef7",
@@ -65,7 +68,8 @@
       "body_snippet": "Hello,\n\nI've uploaded  version 0.5-11 of RMySQL into CRAN, and it should be available\nsoon.\n\n>From the NEWS file:\n\nVersion 0.5-11\n\n* Fixed a bug that would crash R with a failed mysql_real_connect().\n",
       "thread_id": "thread-f6135dfbbef7",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000771.html"
     },
     {
       "id": "msg-7d7389256f5e",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear useRs,\n\na first version of tm has just been released on CRAN.\n\ntm provides a sophisticated framework for text mining applications\nwithin R.\n\nIt offers functionality for managing text documents, a",
       "thread_id": "thread-7d7389256f5e",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000772.html"
     },
     {
       "id": "msg-547bc0857d36",
@@ -97,7 +102,8 @@
       "body_snippet": "Hello List.\n\nplease find uploaded to CRAN a new package, Brobdingnag.\n\nThis package does two things:\n\n(1) allows computation of very large numbers using a logarithmic  \nrepresentation.\n\n(2) provides a",
       "thread_id": "thread-547bc0857d36",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000773.html"
     },
     {
       "id": "msg-eff986691f95",
@@ -113,7 +119,8 @@
       "body_snippet": "spatstat 1.11-0\n\nVersion 1.11-0 of package 'spatstat' is now available.\n\nSpatstat is a package for the analysis of spatial data, \nmostly point pattern data. See <www.spatstat.org>\n\nImportant changes i",
       "thread_id": "thread-eff986691f95",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000774.html"
     },
     {
       "id": "msg-00d43d8c0bce",
@@ -129,7 +136,8 @@
       "body_snippet": "Version 2.0-9 of bayesm is now available on CRAN\n\nchanges include-\n\n1. addition of rhierLinearMixture -- linear hierarchical models with a\nmixture of normals prior\n2. mixDenBi is now fully vectorized ",
       "thread_id": "thread-00d43d8c0bce",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000775.html"
     },
     {
       "id": "msg-ce879c636c0f",
@@ -145,7 +153,8 @@
       "body_snippet": "Hello,\n\ni have problem with the following code (I'm using sqlQuery function from \nRODBC package):\neval(parse(text=\"g_1 <- sqlQuery(cnn_1, \\\"select aa from \nbb.[cc\\\\dd].ee\\\")\")).\n\nI get the error messa",
       "thread_id": "thread-ce879c636c0f",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000776.html"
     },
     {
       "id": "msg-33bea5d98816",
@@ -161,7 +170,8 @@
       "body_snippet": "Dear list members,\n\nA new version of the QCA package is now on CRAN.\nThe QCA package implements the Quine-McCluskey algorithm for boolean \nminimizations, according to the Qualitative Comparative Analy",
       "thread_id": "thread-33bea5d98816",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000777.html"
     },
     {
       "id": "msg-be098cc2bf4f",
@@ -177,7 +187,8 @@
       "body_snippet": "Version 0.9975-11 of the lme4 package has been uploaded to CRAN.  The\nsource package should be available on the mirrors in a day or two and\nbinary packages should follow soon after.\n\nThere are several",
       "thread_id": "thread-be098cc2bf4f",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000778.html"
     },
     {
       "id": "msg-ff6cd766289d",
@@ -193,7 +204,8 @@
       "body_snippet": "Hmisc 3.1-2 has been uploaded to the CRAN incoming directory.\n\nChange log\n3.2-1 1/25/2007:\n       Hmisc function 'ecdf' has been renamed 'Ecdf' to deconflict it\n       with the existing 'ecdf' functio",
       "thread_id": "thread-ff6cd766289d",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000779.html"
     },
     {
       "id": "msg-c50c5fada5eb",
@@ -209,7 +221,8 @@
       "body_snippet": "Dear useRs,\n\nan update of the ROCR package is available on CRAN.\n\nROCR helps in evaluating the performance of scoring classifiers using\nROC graphs, precision/recall plots, lift charts and many other\np",
       "thread_id": "thread-c50c5fada5eb",
       "thread_depth": 0,
-      "month": "2007-01"
+      "month": "2007-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000780.html"
     }
   ],
   "threads": [

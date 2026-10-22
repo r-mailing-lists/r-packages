@@ -17,7 +17,8 @@
       "body_snippet": "Hi,\n\nWith the help of Dirk Eddelbuettel, I was able to fix a few little \nproblems that prevented the rimage (0.5-7) package from working under \n(at least) R 2.8 or 2.9 and g++ 4.2 or 4.3.  I have uplo",
       "thread_id": "thread-31d557d6c7b3",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001026.html"
     },
     {
       "id": "msg-aa5277c33fab",
@@ -33,7 +34,8 @@
       "body_snippet": "I have been unable to install the package RandomFields. I am using R \n2.9.0-4 on Ubuntu 9.04.\n\nTo install, I use the command:\nsudo R CMD INSTALL RandomFields_1.3.37.tar.gz\n\n\nThe output follows below. ",
       "thread_id": "thread-aa5277c33fab",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000513.html"
     },
     {
       "id": "msg-840c6bdccd78",
@@ -49,7 +51,8 @@
       "body_snippet": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where download",
       "thread_id": "thread-840c6bdccd78",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001027.html"
     },
     {
       "id": "msg-090c97dc0f6e",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package JM (soon \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data using shared parameter mode",
       "thread_id": "thread-090c97dc0f6e",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001028.html"
     },
     {
       "id": "msg-9d2d50ac163e",
@@ -81,7 +85,8 @@
       "body_snippet": "Hello,\n\nI've uploaded the initial release (0.0-142) of the RImageJ package to CRAN.\nThe package allows R to use the facilities of the java based image \nprocessing and analysis platform ImageJ.\n\nSee al",
       "thread_id": "thread-9d2d50ac163e",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001030.html"
     },
     {
       "id": "msg-aac51d490a6e",
@@ -97,7 +102,8 @@
       "body_snippet": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, ",
       "thread_id": "thread-aac51d490a6e",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001029.html"
     },
     {
       "id": "msg-83fac8e0caa3",
@@ -113,7 +119,8 @@
       "body_snippet": "Version 1.2.6 of RODBC is now on CRAN.  This has a number of bug fixes and many \nworkarounds for ODBC driver quirks--I've set up further testbeds for SQL Server \n2008, Oracle and DB2.\n\nMore visibly, t",
       "thread_id": "thread-83fac8e0caa3",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001031.html"
     },
     {
       "id": "msg-be27cf2e3d85",
@@ -129,7 +136,8 @@
       "body_snippet": "The updated package has been submitted to CRAN and will propagate to  \nmirrors over the next day or so.\n\nIt is maintained on R-Forge at http://r-forge.r-project.org/projects/writexls \n, where download",
       "thread_id": "thread-be27cf2e3d85",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001032.html"
     },
     {
       "id": "msg-3647830d15a6",
@@ -145,7 +153,8 @@
       "body_snippet": "Dear R users,\n\nan improved version of package deSolve (version 1.3) is now available on\nCRAN. deSolve, the successor of R package odesolve, is a package to\nsolve initial value problems (IVP) of:\n\n- or",
       "thread_id": "thread-3647830d15a6",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001033.html"
     }
   ],
   "threads": [

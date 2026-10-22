@@ -17,7 +17,8 @@
       "body_snippet": "Hi folks,\n\nI am pleased to announce that the rsoi is now up on CRAN (v0.2.1\nhttps://CRAN.R-project.org/package=rsoi). rsoi is a minimal but\nhopefully useful package to folks that are looking for easy ",
       "thread_id": "thread-918c165432ce",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001544.html"
     },
     {
       "id": "msg-584e65615656",
@@ -35,7 +36,8 @@
       "body_snippet": "`unitizer` is a unit testing framework for tests that produce non-trivial output.  It is conceptually similar to using \".Rout.save\" files, except we save the actual R objects and conditions, and we st",
       "thread_id": "thread-584e65615656",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001545.html"
     },
     {
       "id": "msg-0587abd77c99",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear R users,\n\nI am happy to announce that the package fastDummies is now on CRAN\n(*https://cran.r-project.org/package=fastDummies\n<https://cran.r-project.org/package=fastDummies>)*.\n\nThe fastDummies ",
       "thread_id": "thread-0587abd77c99",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001546.html"
     },
     {
       "id": "msg-6d7855047f0b",
@@ -67,7 +70,8 @@
       "body_snippet": "I'm pleased to announce that the glmnetUtils package is now available on CRAN. I wrote this after using the popular glmnet package to fit elastic net models for a few customer projects, and rewriting ",
       "thread_id": "thread-6d7855047f0b",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001547.html"
     },
     {
       "id": "msg-3d0c371a132d",
@@ -83,7 +87,8 @@
       "body_snippet": "Hi all,\n\nI'm happy to announce that the huxtable package version 0.2.1 is on CRAN.\n\nhuxtable is an R package to create LaTeX and HTML tables, with a friendly,\nmodern interface. Features of 0.2.1 inclu",
       "thread_id": "thread-3d0c371a132d",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001548.html"
     },
     {
       "id": "msg-78dba227f055",
@@ -95,11 +100,12 @@
       "subject_clean": "apercu",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aper?u\" in french) of any object you want (vector, matrix, data\nframe, list, array...). I first developed it after being tired to write\nmatrix[1:5,1:5] all the time to check my data, and I am sure that I am not\nthe only one doing that all the time. Thus now you can replace it by\nap(matrix) !\n\nIf you find a bug, please don't hesitate to contact me.\n\nBest,\n\nAur?lien Chateigner, PhD\nPostdoctoral Fellow\nUR0588 Am?lioration, G?n?tique et Physiologie Foresti?res\nINRA Val-de-Loire\n2163 avenue de la Pomme de Pin\nCS 40001 - Ardon\n45075 ORLEANS CEDEX 2\nFrance\n\nhttps://www6.val-de-loire.inra.fr/uragpf/\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aper?u\" in french) of any objec",
+      "body_plain": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aperçu\" in french) of any object you want (vector, matrix, data\nframe, list, array...). I first developed it after being tired to write\nmatrix[1:5,1:5] all the time to check my data, and I am sure that I am not\nthe only one doing that all the time. Thus now you can replace it by\nap(matrix) !\n\nIf you find a bug, please don't hesitate to contact me.\n\nBest,\n\nAurélien Chateigner, PhD\nPostdoctoral Fellow\nUR0588 Amélioration, Génétique et Physiologie Forestières\nINRA Val-de-Loire\n2163 avenue de la Pomme de Pin\nCS 40001 - Ardon\n45075 ORLEANS CEDEX 2\nFrance\n\nhttps://www6.val-de-loire.inra.fr/uragpf/\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All,\n\nI am pleased to announce the availability of my package called \"apercu\" on\nCRAN. The goal is to make your development easier by showing you a quick\nview (an \"aperçu\" in french) of any objec",
       "thread_id": "thread-78dba227f055",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001549.html"
     },
     {
       "id": "msg-d8ba0e564ca4",
@@ -115,7 +121,8 @@
       "body_snippet": "Dear All,\n\nHave a look at updated version of PSF package for time series forecasting.\nI am glad to inform you, it gets published in R Journal, too.\n\nPattern Sequence Based Forecasting (PSF) takes univ",
       "thread_id": "thread-d8ba0e564ca4",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001552.html"
     }
   ],
   "threads": [

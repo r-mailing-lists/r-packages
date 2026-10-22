@@ -19,7 +19,8 @@
       "body_snippet": "fansi provides counterparts to the base string manipulation functions substr, strwrap, strtrim, strsplit, and n(z)char that account for ANSI CSI SGR control sequences.? ANSI CSI SGR control sequences ",
       "thread_id": "thread-8aa7f35e1e26",
       "thread_depth": 0,
-      "month": "2018-04"
+      "month": "2018-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001614.html"
     },
     {
       "id": "msg-841646b5ed98",
@@ -31,11 +32,12 @@
       "subject_clean": "Announcing ECoL 0.1.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nI am pleased to announce that the package ECoL (Complexity Measures for\nClassification Problems) is now available on CRAN (\nhttps://cran.r-project.org/package=ECoL).\n\nThe ECoL package provides measures to characterize the complexity of\nclassification problems based on the ambiguity and the separation between\nthe classes and the data sparsity and dimensionality of the datasets. This\npackage provides bug fixes, generalizations and implementations of many\nstate of the art measures. The measures are described in the paper: Tin Ho\nand Mitra Basu (2002).\n\nPlease, visit the repository on GitHub (\nhttps://github.com/SmartDataAnalytics/ECoL) for more information.\n\nKind regards,\nLuis\n\n-- \nDr. Lu?s Paulo Faina Garcia\nDepartment of Computer Science, University of Leipzig\nhttp://aksw.org/LuisGarcia\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear R users,\n\nI am pleased to announce that the package ECoL (Complexity Measures for\nClassification Problems) is now available on CRAN (\nhttps://cran.r-project.org/package=ECoL).\n\nThe ECoL package provides measures to characterize the complexity of\nclassification problems based on the ambiguity and the separation between\nthe classes and the data sparsity and dimensionality of the datasets. This\npackage provides bug fixes, generalizations and implementations of many\nstate of the art measures. The measures are described in the paper: Tin Ho\nand Mitra Basu (2002).\n\nPlease, visit the repository on GitHub (\nhttps://github.com/SmartDataAnalytics/ECoL) for more information.\n\nKind regards,\nLuis\n\n-- \nDr. Luís Paulo Faina Garcia\nDepartment of Computer Science, University of Leipzig\nhttp://aksw.org/LuisGarcia\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear R users,\n\nI am pleased to announce that the package ECoL (Complexity Measures for\nClassification Problems) is now available on CRAN (\nhttps://cran.r-project.org/package=ECoL).\n\nThe ECoL package p",
       "thread_id": "thread-841646b5ed98",
       "thread_depth": 0,
-      "month": "2018-04"
+      "month": "2018-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001615.html"
     }
   ],
   "threads": [

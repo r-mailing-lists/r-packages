@@ -17,7 +17,8 @@
       "body_snippet": "Dear useRs:\n\nThe latest build of randomForestSRC (2.6.0) includes significant\nimprovements in speed when a number of user options including general\nensembles, forest weights, importance and partial pl",
       "thread_id": "thread-988729d5d0b7",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001616.html"
     },
     {
       "id": "msg-2d917ea34764",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear useRs,\n\nthe R package CTRE has been released on CRAN. It models *extreme values in\nbursty time series*.\n\nUnlike extreme value cluster models, CTRE assumes heavy-tailed\ninter-arrival times, which ",
       "thread_id": "thread-2d917ea34764",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001618.html"
     },
     {
       "id": "msg-a93c73acd709",
@@ -49,7 +51,8 @@
       "body_snippet": "Hello Rusers, `randquotes` R package to Get Random Quotes from Quotes on\nDesign API .\n\nStar it, Fork it, install it and use it!\n\nhttps://github.com/amrrs/randquotes\n\ninstall.packages(\"randquotes\")\n\nht",
       "thread_id": "thread-a93c73acd709",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001617.html"
     },
     {
       "id": "msg-f224eb63a97d",
@@ -61,11 +64,12 @@
       "subject_clean": "new R package dqrng",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nA new package, dqrng, is available on CRAN:\n\ndqrng: Fast Pseudo Random Number Generators\n\nSeveral fast random number generators are provided as C++ header only\nlibraries: The PCG family by O'Neill (2014\n<https://www.cs.hmc.edu/tr/hmc-cs-2014-0905.pdf>) as well as\nXoroshiro128+ and Xoshiro256+ by Blackman and Vigna (2018\n<arXiv:1805.01407>). In addition fast functions for generating random\nnumbers according to a uniform, normal and exponential distribution are\nincluded. The latter two use the Ziggurat algorithm originally proposed\nby Marsaglia and Tsang (2000, <doi:10.18637/jss.v005.i08>). These\nfunctions are exported to R and as a C++ interface and are enabled for\nuse with the 64 bit version of the Mersenne-Twister by Matsumoto and\nNishimura (1998 <doi:10.1145/272991.272995>), the default 64 bit\ngenerator from the PCG family as well as Xoroshiro128+ and Xoshiro256+.\n\nUsing the provided RNGs from R is deliberately similar to using R?s\nbuild-in RNGs:\n\nlibrary(dqrng)\ndqRNGkind(\"Xoroshiro128+\")\ndqset.seed(42)\ndqrunif(5, min = 2, max = 10)\n#> [1] 4.498747 9.647875 5.232044 6.176499 8.453008\ndqrexp(5, rate = 4)\n#> [1] 0.5520084 0.1982174 0.3281557 0.1913137 0.7544450\n\nThey are quite a bit faster, though:\n\nN <- 1e7\nsystem.time(rnorm(N))\n#>    user  system elapsed\n#>   0.650   0.005   0.654\nsystem.time(dqrnorm(N))\n#>    user  system elapsed\n#>   0.059   0.012   0.072\n\nGreetings\nRalf\n\n-- \nRalf Stubner\nSenior Software Engineer / Trainer\n\ndaqana GmbH\nDortustra?e 48\n14467 Potsdam\n\nT: +49 331 23 70 81 66\nF: +49 331 23 70 81 67\nM: +49 162 20 91 196\nMail: ralf.stubner at daqana.com\n\nSitz: Potsdam\nRegister: AG Potsdam HRB 27966 P\nUst.-IdNr.: DE300072622\nGesch?ftsf?hrer: Prof. Dr. Dr. Karl-Kuno Kunze",
+      "body_plain": "Dear R users,\n\nA new package, dqrng, is available on CRAN:\n\ndqrng: Fast Pseudo Random Number Generators\n\nSeveral fast random number generators are provided as C++ header only\nlibraries: The PCG family by O'Neill (2014\n<https://www.cs.hmc.edu/tr/hmc-cs-2014-0905.pdf>) as well as\nXoroshiro128+ and Xoshiro256+ by Blackman and Vigna (2018\n<arXiv:1805.01407>). In addition fast functions for generating random\nnumbers according to a uniform, normal and exponential distribution are\nincluded. The latter two use the Ziggurat algorithm originally proposed\nby Marsaglia and Tsang (2000, <doi:10.18637/jss.v005.i08>). These\nfunctions are exported to R and as a C++ interface and are enabled for\nuse with the 64 bit version of the Mersenne-Twister by Matsumoto and\nNishimura (1998 <doi:10.1145/272991.272995>), the default 64 bit\ngenerator from the PCG family as well as Xoroshiro128+ and Xoshiro256+.\n\nUsing the provided RNGs from R is deliberately similar to using R’s\nbuild-in RNGs:\n\nlibrary(dqrng)\ndqRNGkind(\"Xoroshiro128+\")\ndqset.seed(42)\ndqrunif(5, min = 2, max = 10)\n#> [1] 4.498747 9.647875 5.232044 6.176499 8.453008\ndqrexp(5, rate = 4)\n#> [1] 0.5520084 0.1982174 0.3281557 0.1913137 0.7544450\n\nThey are quite a bit faster, though:\n\nN <- 1e7\nsystem.time(rnorm(N))\n#>    user  system elapsed\n#>   0.650   0.005   0.654\nsystem.time(dqrnorm(N))\n#>    user  system elapsed\n#>   0.059   0.012   0.072\n\nGreetings\nRalf\n\n-- \nRalf Stubner\nSenior Software Engineer / Trainer\n\ndaqana GmbH\nDortustraße 48\n14467 Potsdam\n\nT: +49 331 23 70 81 66\nF: +49 331 23 70 81 67\nM: +49 162 20 91 196\nMail: ralf.stubner at daqana.com\n\nSitz: Potsdam\nRegister: AG Potsdam HRB 27966 P\nUst.-IdNr.: DE300072622\nGeschäftsführer: Prof. Dr. Dr. Karl-Kuno Kunze",
       "body_snippet": "Dear R users,\n\nA new package, dqrng, is available on CRAN:\n\ndqrng: Fast Pseudo Random Number Generators\n\nSeveral fast random number generators are provided as C++ header only\nlibraries: The PCG family",
       "thread_id": "thread-f224eb63a97d",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001619.html"
     },
     {
       "id": "msg-0f3bc6d7f2bf",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R users,\n\nI'm happy to announce the release of the new R package \n\t\n\tExPanDaR (Explore Panel Data with R)\n\non CRAN (https://CRAN.R-project.org/package=ExPanDaR). \n\nExPanDaR provides the code base",
       "thread_id": "thread-0f3bc6d7f2bf",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001620.html"
     },
     {
       "id": "msg-07db95cbc003",
@@ -97,7 +102,8 @@
       "body_snippet": "## [crypto 1.0.1]\n\nDear R users and enthusiasts,\n\nAfter several months in the public domain, the first major version of the ?crypto? package was just released on CRAN with some new features and bug fi",
       "thread_id": "thread-07db95cbc003",
       "thread_depth": 0,
-      "month": "2018-05"
+      "month": "2018-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001621.html"
     }
   ],
   "threads": [

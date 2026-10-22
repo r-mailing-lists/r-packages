@@ -17,7 +17,8 @@
       "body_snippet": "Hi, All:\n\n\t  Version 1.2.4 of the Functional Data Analysis (fda) package is now \navailable on CRAN.  In this version, both 'smooth.basis' and \n'smooth.basisPar' have been modified to make them easier ",
       "thread_id": "thread-f6ff25604cb0",
       "thread_depth": 0,
-      "month": "2008-07"
+      "month": "2008-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000935.html"
     },
     {
       "id": "msg-a8286d24d5f1",
@@ -29,11 +30,12 @@
       "subject_clean": "ppls: version 1.02 including a new data set",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nan update of the package ppls - Penalized Partial Least Squares - is now \navailable on CRAN.\n\nIt implements the methods described in\n\nN. Kr?mer, A.-L. Boulesteix, G. Tutz\n\"Penalized Partial Least Squares with Applications to B-Spline \nTransformations and Functional Data\"\nChem. Intell. Lab. Sys. 2008\nhttp://dx.doi.org/10.1016/j.chemolab.2008.06.009\n\n\nFeatures of the package include\n\n* the estimation of functional data with penalized PLS,\n* the estimation of generalized additive models with penalized PLS based \non spline transformations,\n* model selection for both methods based on cross validation.\n\nThe most important changes since 1.01 are\n\n(1) a more efficient implementation of the penalized PLS algorithm that \ndecreases the run-time substantially,\n(2) the inclusion of the data set \"cookie\" that contains measurements \nfrom quantitative near-infrared spectroscopy.\n\nBest regards,\n\nNicole & Anne-Laure\n\n\n-- \nDr. Nicole Kr?mer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
-      "body_snippet": "Dear R users,\n\nan update of the package ppls - Penalized Partial Least Squares - is now \navailable on CRAN.\n\nIt implements the methods described in\n\nN. Kr?mer, A.-L. Boulesteix, G. Tutz\n\"Penalized Par",
+      "body_plain": "Dear R users,\n\nan update of the package ppls - Penalized Partial Least Squares - is now \navailable on CRAN.\n\nIt implements the methods described in\n\nN. Krämer, A.-L. Boulesteix, G. Tutz\n\"Penalized Partial Least Squares with Applications to B-Spline \nTransformations and Functional Data\"\nChem. Intell. Lab. Sys. 2008\nhttp://dx.doi.org/10.1016/j.chemolab.2008.06.009\n\n\nFeatures of the package include\n\n* the estimation of functional data with penalized PLS,\n* the estimation of generalized additive models with penalized PLS based \non spline transformations,\n* model selection for both methods based on cross validation.\n\nThe most important changes since 1.01 are\n\n(1) a more efficient implementation of the penalized PLS algorithm that \ndecreases the run-time substantially,\n(2) the inclusion of the data set \"cookie\" that contains measurements \nfrom quantitative near-infrared spectroscopy.\n\nBest regards,\n\nNicole & Anne-Laure\n\n\n-- \nDr. Nicole Krämer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
+      "body_snippet": "Dear R users,\n\nan update of the package ppls - Penalized Partial Least Squares - is now \navailable on CRAN.\n\nIt implements the methods described in\n\nN. Krämer, A.-L. Boulesteix, G. Tutz\n\"Penalized Par",
       "thread_id": "thread-a8286d24d5f1",
       "thread_depth": 0,
-      "month": "2008-07"
+      "month": "2008-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000936.html"
     },
     {
       "id": "msg-8d15547584a7",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear R users,\n\nAn updated version of the np package has recently been uploaded to CRAN\n(version 0.20-0). Version 0.20-0 is documented in\n\nTristen Hayfield and Jeffrey S. Racine (2008). Nonparametric\nE",
       "thread_id": "thread-8d15547584a7",
       "thread_depth": 0,
-      "month": "2008-07"
+      "month": "2008-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000937.html"
     },
     {
       "id": "msg-88cfd3c44c49",
@@ -65,7 +68,8 @@
       "body_snippet": "Please find release 3.5.0 of the CRAN package \"randomSurvivalForest\"\nnow posted on CRAN.  Thank you.\n\n\nubk2101 at columbia.edu\n\nUdaya B. Kogalur, Ph.D.\nKogalur Shear Corporation\n5425 Nestleway Drive, ",
       "thread_id": "thread-88cfd3c44c49",
       "thread_depth": 0,
-      "month": "2008-07"
+      "month": "2008-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000938.html"
     },
     {
       "id": "msg-6571c46e9d14",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R community,\n\nI'm pleased to announce the availability of hwriter v0.92 on CRAN.\n\nhwriter is an easy-to-use package able to format and output R objects in \nHTML format. It supports advanced forma",
       "thread_id": "thread-6571c46e9d14",
       "thread_depth": 0,
-      "month": "2008-07"
+      "month": "2008-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000941.html"
     }
   ],
   "threads": [

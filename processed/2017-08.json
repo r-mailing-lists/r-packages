@@ -17,7 +17,8 @@
       "body_snippet": "The version 1.1 update to my glmnetUtils package is now available on CRAN. glmnetUtils provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating th",
       "thread_id": "thread-4b703ef91699",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001562.html"
     },
     {
       "id": "msg-de5d0796bafa",
@@ -33,7 +34,8 @@
       "body_snippet": "Hello Fellow Rusers,\n\nIntroducing '*itunesr' *my first package to help iOS Product Managers to\naccess Ratings and Reviews via R: https://cran.r-project.org/package=itunesr\n\n\nPlease give me suggestions",
       "thread_id": "thread-de5d0796bafa",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001563.html"
     },
     {
       "id": "msg-9c2b1fbddc33",
@@ -45,11 +47,12 @@
       "subject_clean": "New Package: openSTARS",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear userRs\n\nI am pleased to announce the release of the new package *openSTARS* on \nCRAN (https://cran.r-project.org/web/packages/openSTARS/index.html).\n\nopenSTARS prepares GIS data for stream network analysis using open \nsource GRASS GIS within R. It is intended as an alternative to the \nArcGIS toolbox STARS to format the input data for the SSN package for \nSpatial Statistical Modeling on Stream Networks \n(https://cran.r-project.org/web/packages/SSN/index.html).\n\nFor more information see \nhttps://htmlpreview.github.io/?https://github.com/MiKatt/openSTARS/master/release_files/release_announcement.html \n.\n\nAny comments and suggestions are very welcome.\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\nInstitute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstra?e 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
+      "body_plain": "Dear userRs\n\nI am pleased to announce the release of the new package *openSTARS* on \nCRAN (https://cran.r-project.org/web/packages/openSTARS/index.html).\n\nopenSTARS prepares GIS data for stream network analysis using open \nsource GRASS GIS within R. It is intended as an alternative to the \nArcGIS toolbox STARS to format the input data for the SSN package for \nSpatial Statistical Modeling on Stream Networks \n(https://cran.r-project.org/web/packages/SSN/index.html).\n\nFor more information see \nhttps://htmlpreview.github.io/?https://github.com/MiKatt/openSTARS/master/release_files/release_announcement.html \n.\n\nAny comments and suggestions are very welcome.\n\nAll the best,\n\nMira\n\n\n-- \nDr. Mira Kattwinkel\nQuantitative Landscape Ecology\nInstitute for Environmental Sciences\nUniversity of Koblenz-Landau\nFortstraße 7\n76829 Landau\nGermany\nPhone: + 49 6341 280-31553\nOffice: Building I, Room 2.02",
       "body_snippet": "Dear userRs\n\nI am pleased to announce the release of the new package *openSTARS* on \nCRAN (https://cran.r-project.org/web/packages/openSTARS/index.html).\n\nopenSTARS prepares GIS data for stream networ",
       "thread_id": "thread-9c2b1fbddc33",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001564.html"
     },
     {
       "id": "msg-65c2b3e1cf76",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear useRs,\n\n- I am pleased to announce that the R package OHPL is now available on\nCRAN (https://CRAN.R-project.org/package=OHPL).\n\nThe package implements the ordered homogeneity pursuit lasso (OHPL)",
       "thread_id": "thread-65c2b3e1cf76",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001565.html"
     },
     {
       "id": "msg-4420b9b719ce",
@@ -81,7 +85,8 @@
       "body_snippet": "I'm pleased to announce the release of the \"arsenal\" package v0.5.0 on CRAN (https://cran.r-project.org/package=arsenal).  There are 4 items I want to mention:\n\n1.      arsenal is now on github: https",
       "thread_id": "thread-4420b9b719ce",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001566.html"
     },
     {
       "id": "msg-470347c84ff0",
@@ -93,11 +98,12 @@
       "subject_clean": "usmap v0.2.1 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hello useRs,\n\nPackage *usmap* has been updated to version 0.2.1 and is now available on\nCRAN <https://cran.r-project.org/package=usmap>. This update contains some\nminor fixes and improvements.\n\nThe full change log is available on Github:\nhttps://github.com/pdil/usmap/releases/tag/v0.2.1\n\n?\n\n*usmap* is a package that allows one to easily create US choropleths that\ninclude Alaska and Hawaii. The package is still in its early stages and I?m\ncontinuing to add more features and improve the API. I am open to\nsuggestions for the direction in which this package should go so feel free\nto submit issues/pull requests at https://github.com/pdil/usmap.\n\nRegards,\nPaolo\nhttps://dilorenzo.pl\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Hello useRs,\n\nPackage *usmap* has been updated to version 0.2.1 and is now available on\nCRAN <https://cran.r-project.org/package=usmap>. This update contains some\nminor fixes and improvements.\n\nThe full change log is available on Github:\nhttps://github.com/pdil/usmap/releases/tag/v0.2.1\n\n—\n\n*usmap* is a package that allows one to easily create US choropleths that\ninclude Alaska and Hawaii. The package is still in its early stages and I’m\ncontinuing to add more features and improve the API. I am open to\nsuggestions for the direction in which this package should go so feel free\nto submit issues/pull requests at https://github.com/pdil/usmap.\n\nRegards,\nPaolo\nhttps://dilorenzo.pl\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Hello useRs,\n\nPackage *usmap* has been updated to version 0.2.1 and is now available on\nCRAN <https://cran.r-project.org/package=usmap>. This update contains some\nminor fixes and improvements.\n\nThe fu",
       "thread_id": "thread-470347c84ff0",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001567.html"
     },
     {
       "id": "msg-f9fa31427cd3",
@@ -113,7 +119,8 @@
       "body_snippet": "Hello users,\n\npackage *easycsv* version 1.0.5 is now available on CRAN <\nhttps://cran.r-project.org/package=usmap>. this update contains some\nupgrades and a new *choose_dir* function for Linux and Mac",
       "thread_id": "thread-f9fa31427cd3",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001568.html"
     },
     {
       "id": "msg-38bfa1d001d5",
@@ -129,7 +136,8 @@
       "body_snippet": "I'm pleased to announce that splashr is now on CRAN:\nhttps://CRAN.R-project.org/package=splashr\n\nThe package is an R interface to the Splash javascript rendering\nservice. It works in a similar fashion",
       "thread_id": "thread-38bfa1d001d5",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001569.html"
     },
     {
       "id": "msg-f990b33f4a4a",
@@ -145,7 +153,8 @@
       "body_snippet": "Dear R users,\n\nI am pleased to announce that the package mfe (Meta-Feature Extractor) is\nnow\navailable on CRAN (https://cran.r-project.org/package=mfe).\n\nThe mfe package extracts meta-features from da",
       "thread_id": "thread-f990b33f4a4a",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001570.html"
     },
     {
       "id": "msg-7c442f41b819",
@@ -157,11 +166,12 @@
       "subject_clean": "The aphid package for analysis with profile hidden Markov models",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi folks,\n\nI'm pleased to introduce a new package called ?aphid?, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor both nucleic acids and proteins (preferably in the DNAbin or AAbin\nformat), model building, parameter optimization (Baum Welch and Viterbi\ntraining), plotting, file import & export, tree-based sequence weighting,\nsimulation, and implementation of the forward, backward and Viterbi\nalgorithms for calculating sequence probabilities.\n\n\nStandard HMMs are also supported, with functions for building, training,\nplotting, sequence simulation, and HMM implementations of the forward,\nbackward & Viterbi algorithms.\n\n\nThe package has a wide variety of uses including database searching,\ngene-finding and annotation, phylogenetic analysis and sequence\nclassification.\n\n\nThe number of dependencies has been kept to a minimum (non-base\ndependencies: Rcpp, openssl & phylogram), and while aphid is designed to be\nused in conjunction with the ?ape? package, it is not a requisite. Indeed,\nthe package functions will work with any standard character sequence\nvectors (even non-biological ones), though at a cost of memory efficiency\nwhen compared with ape?s raw DNAbin and AAbin objects types.\n\n\nAlgorithms and examples are from the essential book by Durbin et al (1998),\nBiological Sequence Analysis: Probabilistic Models of Proteins and Nucleic\nAcids (Cambridge University Press; ISBN 978-0521629713).\n\n\n\nAny feedback is warmly welcomed.\n\n\nRegards,\n\nShaun Wilkinson\n\nRutherford Foundation Postdoctoral Research Fellow\n\nVictoria University of Wellington\n\nP.O. Box 600 Wellington, New Zealand\n\n\n\nvignette: https://cran.r-project.org/web/packages/aphid/vignettes/\naphid-vignette.html\n\ndevelopment version: https://github.com/shaunpwilkinson/aphid\n\nbug reports: https://github.com/shaunpwilkinson/aphid/issues\n\nemail: shaunpwilkinson at gmail.com\n\ntwitter: @wilkinshau\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Hi folks,\n\nI'm pleased to introduce a new package called ?aphid?, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor",
+      "body_plain": "Hi folks,\n\nI'm pleased to introduce a new package called ‘aphid’, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor both nucleic acids and proteins (preferably in the DNAbin or AAbin\nformat), model building, parameter optimization (Baum Welch and Viterbi\ntraining), plotting, file import & export, tree-based sequence weighting,\nsimulation, and implementation of the forward, backward and Viterbi\nalgorithms for calculating sequence probabilities.\n\n\nStandard HMMs are also supported, with functions for building, training,\nplotting, sequence simulation, and HMM implementations of the forward,\nbackward & Viterbi algorithms.\n\n\nThe package has a wide variety of uses including database searching,\ngene-finding and annotation, phylogenetic analysis and sequence\nclassification.\n\n\nThe number of dependencies has been kept to a minimum (non-base\ndependencies: Rcpp, openssl & phylogram), and while aphid is designed to be\nused in conjunction with the ‘ape’ package, it is not a requisite. Indeed,\nthe package functions will work with any standard character sequence\nvectors (even non-biological ones), though at a cost of memory efficiency\nwhen compared with ape’s raw DNAbin and AAbin objects types.\n\n\nAlgorithms and examples are from the essential book by Durbin et al (1998),\nBiological Sequence Analysis: Probabilistic Models of Proteins and Nucleic\nAcids (Cambridge University Press; ISBN 978-0521629713).\n\n\n\nAny feedback is warmly welcomed.\n\n\nRegards,\n\nShaun Wilkinson\n\nRutherford Foundation Postdoctoral Research Fellow\n\nVictoria University of Wellington\n\nP.O. Box 600 Wellington, New Zealand\n\n\n\nvignette: https://cran.r-project.org/web/packages/aphid/vignettes/\naphid-vignette.html\n\ndevelopment version: https://github.com/shaunpwilkinson/aphid\n\nbug reports: https://github.com/shaunpwilkinson/aphid/issues\n\nemail: shaunpwilkinson at gmail.com\n\ntwitter: @wilkinshau\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi folks,\n\nI'm pleased to introduce a new package called ‘aphid’, for analysis with\nprofile hidden Markov models in R.\n\n\nThe package contains functions for multiple and pairwise sequence alignment\nfor",
       "thread_id": "thread-7c442f41b819",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001571.html"
     }
   ],
   "threads": [

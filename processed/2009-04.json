@@ -17,7 +17,8 @@
       "body_snippet": "Hi,\n\ncanvas is a new R package implementing a graphics device that emits \njavascript code conforming to the HTML 5 CanvasRenderingContext2D \ninterface. Available on CRAN soon, but you can get it here ",
       "thread_id": "thread-b30fe138cce1",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001008.html"
     },
     {
       "id": "msg-5f204f459ec0",
@@ -34,8 +35,9 @@
       "thread_id": "thread-5f204f459ec0",
       "thread_depth": 0,
       "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001009.html",
       "restored_from": [
-        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment.pl"
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090405/8a6293a5/attachment-0001.pl"
       ]
     },
     {
@@ -52,7 +54,8 @@
       "body_snippet": "plyr is a set of tools for a common set of problems: you need to break\ndown a big data structure into manageable pieces, operate on each\npiece and then put all the pieces back together.  For example, ",
       "thread_id": "thread-5f542249b497",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001010.html"
     },
     {
       "id": "msg-85af6b9445ce",
@@ -69,8 +72,9 @@
       "thread_id": "thread-85af6b9445ce",
       "thread_depth": 0,
       "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001012.html",
       "restored_from": [
-        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment.pl"
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090416/18d603c0/attachment-0001.pl"
       ]
     },
     {
@@ -87,7 +91,8 @@
       "body_snippet": "Dear useRs,\n\nThe FD package is intended for ecologists interested in functional\ndiversity (FD). It measures different functional diversity indices\nfrom multiple traits (any type of traits). The first ",
       "thread_id": "thread-dc6aca5cd947",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001011.html"
     },
     {
       "id": "msg-27885c797628",
@@ -103,7 +108,8 @@
       "body_snippet": "igraph is a package for graphs/networks. It has a C core and\nuses a simple and fast graph representation allowing millions\nof vertices and edges.\n\nLINKS\n\nRelease notes for the 0.5.2 version:\nhttp://ig",
       "thread_id": "thread-27885c797628",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001013.html"
     },
     {
       "id": "msg-85b228ed21ea",
@@ -119,7 +125,8 @@
       "body_snippet": "This is the first release of the xterm256 package.\n\nxterm256 is a small package that takes advantage of the 256 color mode \nof xterm, enabling use of foreground and background colors in the R \nconsole",
       "thread_id": "thread-85b228ed21ea",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001014.html"
     },
     {
       "id": "msg-12671ef05c44",
@@ -136,8 +143,9 @@
       "thread_id": "thread-12671ef05c44",
       "thread_depth": 0,
       "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001017.html",
       "restored_from": [
-        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment.pl"
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090420/c6b44f73/attachment-0001.pl"
       ]
     },
     {
@@ -154,7 +162,8 @@
       "body_snippet": "-------------------------------------------------------------------------------\nNew versions released for the distr family of package\n------------------------------------------------------------------",
       "thread_id": "thread-30613fb26a94",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001015.html"
     },
     {
       "id": "msg-090de06e6762",
@@ -170,7 +179,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-090de06e6762",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001016.html"
     },
     {
       "id": "msg-47f9d40ada33",
@@ -187,8 +197,9 @@
       "thread_id": "thread-47f9d40ada33",
       "thread_depth": 0,
       "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001019.html",
       "restored_from": [
-        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment.pl"
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090422/79a4d78e/attachment-0001.pl"
       ]
     },
     {
@@ -205,7 +216,8 @@
       "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.2. Its primary aim",
       "thread_id": "thread-c067074cb245",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001018.html"
     },
     {
       "id": "msg-34dec6b48840",
@@ -221,7 +233,8 @@
       "body_snippet": "Dear R users,\n\nA new package, CHNOSZ (version 0.8), is available on CRAN.\n\nCHNOSZ is a package for thermodynamic calculations and analysis. \nFunctions are available for calculating the standard Gibbs ",
       "thread_id": "thread-34dec6b48840",
       "thread_depth": 0,
-      "month": "2009-04"
+      "month": "2009-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001020.html"
     }
   ],
   "threads": [

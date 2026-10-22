@@ -13,11 +13,12 @@
       "subject_clean": "rTRNG: Advanced and Parallel Random Number Generation via TRNG",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina?s Random Number Generator,\n<https://numbercrunch.de/trng/>), a state-of-the-art C++ pseudo-random\nnumber generator library for sequential and parallel Monte Carlo\nsimulations. In particular, parallel random number generators provided\nby TRNG can be manipulated by jump and split operations. These allow\nto jump ahead by an arbitrary number of steps and to split a sequence\ninto any desired sub-sequence(s), thus enabling techniques suitable to\nparallel algorithms, such as block-splitting and leapfrogging.\n\nThe package provides the R user with access to the functionality of\nthe underlying TRNG C++ library. It embeds TRNG sources and headers\nand makes them available to other projects combining R with C++.\nBeyond this, rTRNG exposes the creation, manipulation and use of\npseudo-random streams to R, via Rcpp and RcppParallel.\n\nrTRNG on CRAN\n<https://cran.r-project.org/package=rTRNG>\nPublic repository\n<https://github.com/miraisolutions/rTRNG#readme>\n\nMore on the history behind rTRNG and its way to CRAN at\n<https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/>\n\n\n-- \nRiccardo Porreca\nSenior Solutions Consultant\nMirai Solutions GmbH\nriccardo.porreca at mirai-solutions.com",
-      "body_snippet": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina?s Random Number Generator,\n<ht",
+      "body_plain": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina’s Random Number Generator,\n<https://numbercrunch.de/trng/>), a state-of-the-art C++ pseudo-random\nnumber generator library for sequential and parallel Monte Carlo\nsimulations. In particular, parallel random number generators provided\nby TRNG can be manipulated by jump and split operations. These allow\nto jump ahead by an arbitrary number of steps and to split a sequence\ninto any desired sub-sequence(s), thus enabling techniques suitable to\nparallel algorithms, such as block-splitting and leapfrogging.\n\nThe package provides the R user with access to the functionality of\nthe underlying TRNG C++ library. It embeds TRNG sources and headers\nand makes them available to other projects combining R with C++.\nBeyond this, rTRNG exposes the creation, manipulation and use of\npseudo-random streams to R, via Rcpp and RcppParallel.\n\nrTRNG on CRAN\n<https://cran.r-project.org/package=rTRNG>\nPublic repository\n<https://github.com/miraisolutions/rTRNG#readme>\n\nMore on the history behind rTRNG and its way to CRAN at\n<https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/>\n\n\n-- \nRiccardo Porreca\nSenior Solutions Consultant\nMirai Solutions GmbH\nriccardo.porreca at mirai-solutions.com",
+      "body_snippet": "We are happy to announce the first CRAN release of rTRNG version 4.20-1.\n\nrTRNG is a package for advanced parallel Random Number Generation in\nR. It relies on TRNG (Tina’s Random Number Generator,\n<ht",
       "thread_id": "thread-03cc332ea951",
       "thread_depth": 0,
-      "month": "2019-05"
+      "month": "2019-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001668.html"
     },
     {
       "id": "msg-35566e720c39",
@@ -35,7 +36,8 @@
       "body_snippet": "Hi,\n\nPlease find below the links related to 'Riex' package release announcement.\nIf you have any questions or need additional information,  let me know.\n\n   - Release Announcement *-  *https://myriami",
       "thread_id": "thread-35566e720c39",
       "thread_depth": 0,
-      "month": "2019-05"
+      "month": "2019-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001669.html"
     },
     {
       "id": "msg-258af0080031",
@@ -51,7 +53,8 @@
       "body_snippet": "Hi all,\n\nI am pleased to announce that WriteXLS version 5.0.0 is now available on CRAN:\n\n  https://cran.r-project.org/web/packages/WriteXLS/index.html\n\nThis supersedes version 4.1.0 and should appear ",
       "thread_id": "thread-258af0080031",
       "thread_depth": 0,
-      "month": "2019-05"
+      "month": "2019-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2019/001670.html"
     }
   ],
   "threads": [

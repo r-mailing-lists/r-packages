@@ -17,7 +17,8 @@
       "body_snippet": "Dear useRs,\n\nit's a new year and time for a new CRAN-version of the \"fortunes\" package. \nVersion 1.3-7 is now online at\n\n   http://CRAN.R-project.org/package=fortunes\n\nwhich contains the 250th fortune",
       "thread_id": "thread-af142ac84989",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001085.html"
     },
     {
       "id": "msg-bc06890542c4",
@@ -29,11 +30,12 @@
       "subject_clean": "parcor 0.2-2 - Regularized Partial Correlation Matrices with (adaptive) Lasso, PLS, and Ridge Regression",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R-users,\n\nwe are happy to announce the release of our R package parcor.\n\nThe package contains tools to estimate the matrix of partial \ncorrelations based on different regularized regression methods: Lasso, \nadaptive Lasso, PLS, and Ridge Regression. In addition, parcor provides \ncross-validation based model selection for Lasso, adaptive Lasso and \nRidge Regression.\n\nMore details can be found in the accompanying article\n\nNicole Kr?mer, Juliane Sch?fer, Anne-Laure Boulesteix.\nRegularized Estimation of Large Scale Gene Association Networks using \nGaussian Graphical Models\nBMC Bioinformatics, 10:384, 2009.\n\nhttp://www.biomedcentral.com/1471-2105/10/384\n\nPlease send an email to nkraemer at cs.tu-berlin.de for any comments, \nsuggestions, or bug reports.\n\nBest regards,\n\nNicole & Juliane\n\n-- \nDr. Nicole Kr?mer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
+      "body_plain": "Dear R-users,\n\nwe are happy to announce the release of our R package parcor.\n\nThe package contains tools to estimate the matrix of partial \ncorrelations based on different regularized regression methods: Lasso, \nadaptive Lasso, PLS, and Ridge Regression. In addition, parcor provides \ncross-validation based model selection for Lasso, adaptive Lasso and \nRidge Regression.\n\nMore details can be found in the accompanying article\n\nNicole Krämer, Juliane Schäfer, Anne-Laure Boulesteix.\nRegularized Estimation of Large Scale Gene Association Networks using \nGaussian Graphical Models\nBMC Bioinformatics, 10:384, 2009.\n\nhttp://www.biomedcentral.com/1471-2105/10/384\n\nPlease send an email to nkraemer at cs.tu-berlin.de for any comments, \nsuggestions, or bug reports.\n\nBest regards,\n\nNicole & Juliane\n\n-- \nDr. Nicole Krämer\nTU Berlin\nMachine Learning/Intelligent Data Analysis\tfon: (+49) 30 314 78627\nFranklinstr. 28/29, 10587 Berlin, Germany\tfax: (+49) 30 314 78622\n\nweb: http://ml.cs.tu-berlin.de/~nkraemer",
       "body_snippet": "Dear R-users,\n\nwe are happy to announce the release of our R package parcor.\n\nThe package contains tools to estimate the matrix of partial \ncorrelations based on different regularized regression metho",
       "thread_id": "thread-bc06890542c4",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001086.html"
     },
     {
       "id": "msg-6cf3e1ef0bc8",
@@ -49,7 +51,8 @@
       "body_snippet": "The sp package provides class definitions for spatial data, and utilities \nfor spatial data handling and manipulation.\n\nThe release of sp version 0.9-56 introduces changes in the ways in which \nPolygo",
       "thread_id": "thread-6cf3e1ef0bc8",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001087.html"
     },
     {
       "id": "msg-fa33d31a218e",
@@ -65,7 +68,8 @@
       "body_snippet": "I'd like to announce the availability of the new \"itertools\" package,\nwhich provides a variety of functions used to create iterators, as\ndefined by REvolution Computing's \"iterators\" package.  The pac",
       "thread_id": "thread-fa33d31a218e",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001088.html"
     },
     {
       "id": "msg-62a044b40c3b",
@@ -81,7 +85,8 @@
       "body_snippet": "I'd like to announce the availability of version 0.1-4 of the \"doMPI\"\npackage, a parallel backend for the \"foreach\" package, which acts as an\nadaptor to the \"Rmpi\" package.  The package has been uploa",
       "thread_id": "thread-62a044b40c3b",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001089.html"
     },
     {
       "id": "msg-6ac92fa2aaac",
@@ -97,7 +102,8 @@
       "body_snippet": "GGally:  a companion to GGplot2.\n\nGGally is a package built to produce plot matrices without the hassle\nof making viewports and labels yourself.  GGally is built upon the\nGGplot2 framework.  Keeping t",
       "thread_id": "thread-6ac92fa2aaac",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001090.html"
     },
     {
       "id": "msg-18e4858d77b5",
@@ -113,7 +119,8 @@
       "body_snippet": "Now available on CRAN.\nPackage: mspath\nTitle: Multi-state Path-Dependent Models in Discrete Time\nDescription:  Functions for fitting path-dependent (non-Markov)\n multi-state models to categorical proc",
       "thread_id": "thread-18e4858d77b5",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001091.html"
     },
     {
       "id": "msg-98ad63d3fd00",
@@ -129,7 +136,8 @@
       "body_snippet": "Dear R community,\n\nPackage bit version 1.1-3 and ff version 2.1.2 is available on CRAN and should be useful to handle large datasets.\n\nIt adds convenient utilities for managing ff objects and files (s",
       "thread_id": "thread-98ad63d3fd00",
       "thread_depth": 0,
-      "month": "2010-01"
+      "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001092.html"
     },
     {
       "id": "msg-ffe667faac83",
@@ -146,6 +154,7 @@
       "thread_id": "thread-ffe667faac83",
       "thread_depth": 0,
       "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001093.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/2f5de288/attachment.pl"
       ]
@@ -165,6 +174,7 @@
       "thread_id": "thread-ac6e7f332736",
       "thread_depth": 0,
       "month": "2010-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001094.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100127/3328bbdf/attachment.pl"
       ]

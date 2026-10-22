@@ -17,7 +17,8 @@
       "body_snippet": "Dear R users,\n\nVersion denpro_0.8.1 of denpro package is available.\n\nDenpro is a package for visualization of  multivariate functions, sets, \nand data.\nIt is specialized for visualizing multivariate d",
       "thread_id": "thread-620111ee71bf",
       "thread_depth": 0,
-      "month": "2006-04"
+      "month": "2006-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000694.html"
     },
     {
       "id": "msg-aba4cab0e405",
@@ -33,7 +34,8 @@
       "body_snippet": ">From version 2.01-17, splancs, a package for spatial point pattern \nanalysis, depends on package sp. \n\nBecause both packages have defined a bounding box function bbox(), the\nbbox() method in sp has b",
       "thread_id": "thread-aba4cab0e405",
       "thread_depth": 0,
-      "month": "2006-04"
+      "month": "2006-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000695.html"
     },
     {
       "id": "msg-388215f7abfa",
@@ -49,7 +51,8 @@
       "body_snippet": "Version 1.0 of hapassoc now available from CRAN\n\nhapassoc is an R package for likelihood inference of trait associations \nwith SNP haplotypes and other attributes using the EM Algorithm. Recent \nchang",
       "thread_id": "thread-388215f7abfa",
       "thread_depth": 0,
-      "month": "2006-04"
+      "month": "2006-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000696.html"
     },
     {
       "id": "msg-f18f3bf66c46",
@@ -61,11 +64,12 @@
       "subject_clean": "pls package: bugfix release 1.2-1",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 are\n\n- Fixed bug in kernelpls.fit() that resulted in incorrect results when fitting\n  mulitresponse models with fewer responses than predictors\n- Changed default radii in corrplot()\n- It is now possible to select the radii of the circles in corrplot\n\nSee the file CHANGES in the sources for all changes.\n\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\n-- \nBj?rn-Helge Mevik",
+      "body_plain": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 are\n\n- Fixed bug in kernelpls.fit() that resulted in incorrect results when fitting\n  mulitresponse models with fewer responses than predictors\n- Changed default radii in corrplot()\n- It is now possible to select the radii of the circles in corrplot\n\nSee the file CHANGES in the sources for all changes.\n\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\n-- \nBjørn-Helge Mevik",
       "body_snippet": "Version 1.2-1 of the pls package is now available on CRAN.\n\nThis is mainly a bugfix-release.  If you fit multi-response models,\nyou are strongly engouraged to upgrade!\n\n\nThe main changes since 1.2-0 a",
       "thread_id": "thread-f18f3bf66c46",
       "thread_depth": 0,
-      "month": "2006-04"
+      "month": "2006-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000697.html"
     }
   ],
   "threads": [

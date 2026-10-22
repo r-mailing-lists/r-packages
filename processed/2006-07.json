@@ -17,7 +17,8 @@
       "body_snippet": "The Rassist package has been loaded to CRAN.  This package is designed\nto make R easier for new users, by providing extra checks and\nfeedback. \n\nPresently the package functionality includes:\n\n* offers",
       "thread_id": "thread-663db86f1cfc",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000712.html"
     },
     {
       "id": "msg-85d8c626f02d",
@@ -33,7 +34,8 @@
       "body_snippet": "ggplot provides a new system for drawing graphics in R, based on the\nGrammar of Graphics. It combines the advantages of both base and\nlattice graphics: conditioning and shared axes are handled\nautomat",
       "thread_id": "thread-85d8c626f02d",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000711.html"
     },
     {
       "id": "msg-879c2771ddc6",
@@ -50,6 +52,7 @@
       "thread_id": "thread-879c2771ddc6",
       "thread_depth": 0,
       "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000713.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20060705/51983db1/attachment.pl"
       ]
@@ -68,7 +71,8 @@
       "body_snippet": "Dear useRs,\n\na new and completely re-worked version of the \"simecol\" package\n\n   SIMulatiion of ECOLogical (and other) dynamic systems\n\nis now available on CRAN. Compared to the S3 based 0.2-x version",
       "thread_id": "thread-90ba1645d428",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000714.html"
     },
     {
       "id": "msg-6ce084ce6706",
@@ -84,7 +88,8 @@
       "body_snippet": "Two new packages have been added to CRAN.  \n\nThe first is a simple package which provides the standard functions for\na triangle distribution (rtriangle, dtriangle, ptriangle, qtriangle).  \n\nThe second",
       "thread_id": "thread-6ce084ce6706",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000715.html"
     },
     {
       "id": "msg-6b301632dbd9",
@@ -96,11 +101,12 @@
       "subject_clean": "glmmML updated",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I have uploaded a new version (0.30-2) of glmmML to CRAN today.\n\nThis is a rather extensive upgrade, mostly internal. Adaptive\nGauss-Hermite quadrature (GHQ) is now used for the evaluation of the\nintegrals in the log likelihood function. The user can choose the number\nof points (default is 16), I _think_ that choosing 1 point will result\nin a Laplace approximation. The integrals in the score and hessian\nare evaluated by the QUADPACK function 'Rdqagi' which is the C code\nbehind the R function 'integrate'. This specific combination of the two\nmethods seems to work best. (I often get _exactly_ (up to seven digits)\nthe same value with the two methods, but in some extreme cases one may\nfail and not the other.)\n\nNew components in the output from 'glmmML' are 'posterior.means' and\nposterior.modes'. The modes are found by using 'vmmin' (behind R's\n'optim') on the integrands in the GHQ, the means by numerical\nintegration. Usually, they do not differ much.\n\nA special problem is situations where the random effects variance is\nvery small or zero. I may happen that glmmML is unable to get the\nlikelihood value above the value given by 'glm' on the corresponding\nmodel with no clustering. In such a case zero variance is reported, with\na standard error that is NA. A warning is also given. If a test of the\nhypothesis that sigma = 0 is on the wish list, a p-value can be\nestimated by bootstrapping, see the input parameter 'boot'. The only\noption now is a parametric bootstrap; I have removed the 'conditional'\napproach.\n\nAs usual, comments, and error and bug reports are welcome.\n\nG?ran\n\n-- \nG?ran Brostr?m",
+      "body_plain": "I have uploaded a new version (0.30-2) of glmmML to CRAN today.\n\nThis is a rather extensive upgrade, mostly internal. Adaptive\nGauss-Hermite quadrature (GHQ) is now used for the evaluation of the\nintegrals in the log likelihood function. The user can choose the number\nof points (default is 16), I _think_ that choosing 1 point will result\nin a Laplace approximation. The integrals in the score and hessian\nare evaluated by the QUADPACK function 'Rdqagi' which is the C code\nbehind the R function 'integrate'. This specific combination of the two\nmethods seems to work best. (I often get _exactly_ (up to seven digits)\nthe same value with the two methods, but in some extreme cases one may\nfail and not the other.)\n\nNew components in the output from 'glmmML' are 'posterior.means' and\nposterior.modes'. The modes are found by using 'vmmin' (behind R's\n'optim') on the integrands in the GHQ, the means by numerical\nintegration. Usually, they do not differ much.\n\nA special problem is situations where the random effects variance is\nvery small or zero. I may happen that glmmML is unable to get the\nlikelihood value above the value given by 'glm' on the corresponding\nmodel with no clustering. In such a case zero variance is reported, with\na standard error that is NA. A warning is also given. If a test of the\nhypothesis that sigma = 0 is on the wish list, a p-value can be\nestimated by bootstrapping, see the input parameter 'boot'. The only\noption now is a parametric bootstrap; I have removed the 'conditional'\napproach.\n\nAs usual, comments, and error and bug reports are welcome.\n\nGöran\n\n-- \nGöran Broström",
       "body_snippet": "I have uploaded a new version (0.30-2) of glmmML to CRAN today.\n\nThis is a rather extensive upgrade, mostly internal. Adaptive\nGauss-Hermite quadrature (GHQ) is now used for the evaluation of the\ninte",
       "thread_id": "thread-6b301632dbd9",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000716.html"
     },
     {
       "id": "msg-af7e8ebbd36a",
@@ -116,7 +122,8 @@
       "body_snippet": "The odfWeave package is now available on CRAN at\n\nhttp://lib.stat.cmu.edu/R/CRAN/src/contrib/Descriptions/odfWeave.html\n\nand your local mirror.\n\nThe package extends Sweave to Open Document Format (ODF",
       "thread_id": "thread-af7e8ebbd36a",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000717.html"
     },
     {
       "id": "msg-a1c2791d3385",
@@ -132,7 +139,8 @@
       "body_snippet": "Dear R users,\nI've just uploaded  2 packages on CRAN, RTisean and tsDyn, both for time\nseries analysis (joint research projects with members of the Statistics\nDepartment, University of Udine). Brief d",
       "thread_id": "thread-a1c2791d3385",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000718.html"
     },
     {
       "id": "msg-d49b1842a1cb",
@@ -148,7 +156,8 @@
       "body_snippet": "Dear R users,\n\n\nseqinR 1.0-5 has been released yesterday on CRAN, so that the source code\nof the package should be available on all CRAN mirrors within the next 24h.\n\nThe updated package vignette is h",
       "thread_id": "thread-d49b1842a1cb",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000719.html"
     },
     {
       "id": "msg-238f176d2d15",
@@ -164,7 +173,8 @@
       "body_snippet": "Dear Kurt,\n\nI've uploaded a new version (0.9-4) of the sem package to CRAN.\n\nI hope that everything is well with you.\n\nJohn\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster ",
       "thread_id": "thread-238f176d2d15",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000720.html"
     },
     {
       "id": "msg-e5345d6ee073",
@@ -180,7 +190,8 @@
       "body_snippet": "A new version of odfWeave is on CRAN. Changes include:\n\n - handling of locales. Errors were being produced when locales were set\nto anything but \"C\". The fix changes the locale to \"C\" and changes back",
       "thread_id": "thread-e5345d6ee073",
       "thread_depth": 0,
-      "month": "2006-07"
+      "month": "2006-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000721.html"
     }
   ],
   "threads": [

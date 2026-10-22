@@ -17,7 +17,8 @@
       "body_snippet": "(cross-posted to Graphviz-devel)\n\nRgraphviz 2.2.1 has been released as part of the Bioconductor 2.11 release.\n\nRgraphviz is an R interface to the Graphviz library\n(www.graphviz.org), which is used for",
       "thread_id": "thread-39c017160e1d",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001338.html"
     },
     {
       "id": "msg-dbe6d0b8c49e",
@@ -29,11 +30,12 @@
       "subject_clean": "package bit64 with new functionality",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R community,\n\nThe new version of package 'bit64' - which extends R with fast 64-bit \nintegers - now has fast (single-threaded) implementations of the most \nimportant univariate algorithmic operations (those based on hashing and \nsorting). Package 'bit64' now has methods for 'match', '%in%', \n'duplicated', 'unique', 'table', 'sort', 'order', 'rank', 'quantile', \n'median' and 'summary'. Regarding data management it has novel generics \n'unipos' (positions of the unique values), 'tiepos' (positions of ties), \n'keypos' (positions of values in a sorted unique table) and derived \nmethods 'as.factor' and 'as.ordered'. This 64-bit functionality is \nimplemented carefully to be not slower than the respective 32-bit \noperations in Base R and also to avoid excessive execution times \nobserved with 'order', 'rank' and 'table' (speedup factors 20/16/200 \nrespective). This increases the dataset size with wich we can work truly \ninteractive. The speed is achieved by simple heuristic optimizers: the \nmentioned high-level functions choose the best from multiple low-level \nalgorithms and further take advantage of a novel optional caching \nmethod. In an example R session using a couple of these operations the \n64-bit integers performed 22x faster than base 32-bit integers, \nhash-caching improved this to 24x amortized, sortorder-caching was most \nefficient with 38x (caching both, hashing and sorting is not worth it \nwith 32x at duplicated RAM consumption).\n\nSince the package covers the most important functions for (univariate) \ndata exploration and data management, I think it is now appropriate to \nclaim that R has sound 64-bit integer support, for example for working \nwith keys or counts imported from large databases. For details \nconcerning approach, implementation and roadmap please check the \nANNOUNCEMENT-0.9-Details.txt file and the package help files.\n\nKind regards\n\n\nJens Oehlschl?gel\nMunich, 8.11.2012",
+      "body_plain": "Dear R community,\n\nThe new version of package 'bit64' - which extends R with fast 64-bit \nintegers - now has fast (single-threaded) implementations of the most \nimportant univariate algorithmic operations (those based on hashing and \nsorting). Package 'bit64' now has methods for 'match', '%in%', \n'duplicated', 'unique', 'table', 'sort', 'order', 'rank', 'quantile', \n'median' and 'summary'. Regarding data management it has novel generics \n'unipos' (positions of the unique values), 'tiepos' (positions of ties), \n'keypos' (positions of values in a sorted unique table) and derived \nmethods 'as.factor' and 'as.ordered'. This 64-bit functionality is \nimplemented carefully to be not slower than the respective 32-bit \noperations in Base R and also to avoid excessive execution times \nobserved with 'order', 'rank' and 'table' (speedup factors 20/16/200 \nrespective). This increases the dataset size with wich we can work truly \ninteractive. The speed is achieved by simple heuristic optimizers: the \nmentioned high-level functions choose the best from multiple low-level \nalgorithms and further take advantage of a novel optional caching \nmethod. In an example R session using a couple of these operations the \n64-bit integers performed 22x faster than base 32-bit integers, \nhash-caching improved this to 24x amortized, sortorder-caching was most \nefficient with 38x (caching both, hashing and sorting is not worth it \nwith 32x at duplicated RAM consumption).\n\nSince the package covers the most important functions for (univariate) \ndata exploration and data management, I think it is now appropriate to \nclaim that R has sound 64-bit integer support, for example for working \nwith keys or counts imported from large databases. For details \nconcerning approach, implementation and roadmap please check the \nANNOUNCEMENT-0.9-Details.txt file and the package help files.\n\nKind regards\n\n\nJens Oehlschlägel\nMunich, 8.11.2012",
       "body_snippet": "Dear R community,\n\nThe new version of package 'bit64' - which extends R with fast 64-bit \nintegers - now has fast (single-threaded) implementations of the most \nimportant univariate algorithmic operat",
       "thread_id": "thread-dbe6d0b8c49e",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001339.html"
     },
     {
       "id": "msg-3f077068d1cb",
@@ -49,7 +51,8 @@
       "body_snippet": "A new release 0.10.0 of Rcpp is now on CRAN, bringing a number of new\nfeatures to R --- please see the announcement text below.  \n\nThe most direct change may be what we call 'Rcpp attributes' and whic",
       "thread_id": "thread-3f077068d1cb",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001340.html"
     },
     {
       "id": "msg-33da3e4338b1",
@@ -66,6 +69,7 @@
       "thread_id": "thread-33da3e4338b1",
       "thread_depth": 0,
       "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001341.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20121129/dbabe293/attachment.pl"
       ]
@@ -84,7 +88,8 @@
       "body_snippet": "kernlab package version 0.9-15 has been posted on CRAN,\nit contains several improvements and fixes along with new features e.g. \nvariance estimation for Gaussian Process  regression.\n\ncheers\nAlexandro",
       "thread_id": "thread-71800aadf70e",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2012/001342.html"
     }
   ],
   "threads": [

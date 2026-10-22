@@ -13,11 +13,12 @@
       "subject_clean": "fmpcloudr package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hello,\n\nAs recommended in https://r-pkgs.org/release.html <https://r-pkgs.org/release.html>, I wanted to notify the R community about a new package for accessing financial data metrics. The package fmpcloudr (https://CRAN.R-project.org/package=fmpcloudr <https://cran.r-project.org/package=fmpcloudr>) interacts with the FMP API. \n\nFMP offers historical pricing data for indexes, stocks, ETFs, mutual finds, currencies, and crypto. Other financial metrics are available such as technical indicators (EMA, RSI, etc), company financials, and 13F. It?s a great data source and could be beneficial to many R users. You can find more details about the package here: https://tonytrevisan.github.io/fmpcloudr/ <https://tonytrevisan.github.io/fmpcloudr/>\n\nThank you for supporting such an incredible open source community. Learning R has dramatically reshaped my career path which would have been impossible without the R community.  \n\nBest regards,\nTony\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Hello,\n\nAs recommended in https://r-pkgs.org/release.html <https://r-pkgs.org/release.html>, I wanted to notify the R community about a new package for accessing financial data metrics. The package fmpcloudr (https://CRAN.R-project.org/package=fmpcloudr <https://cran.r-project.org/package=fmpcloudr>) interacts with the FMP API. \n\nFMP offers historical pricing data for indexes, stocks, ETFs, mutual finds, currencies, and crypto. Other financial metrics are available such as technical indicators (EMA, RSI, etc), company financials, and 13F. It’s a great data source and could be beneficial to many R users. You can find more details about the package here: https://tonytrevisan.github.io/fmpcloudr/ <https://tonytrevisan.github.io/fmpcloudr/>\n\nThank you for supporting such an incredible open source community. Learning R has dramatically reshaped my career path which would have been impossible without the R community.  \n\nBest regards,\nTony\n\n\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Hello,\n\nAs recommended in https://r-pkgs.org/release.html <https://r-pkgs.org/release.html>, I wanted to notify the R community about a new package for accessing financial data metrics. The package fm",
       "thread_id": "thread-da252c6d98ad",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001735.html"
     },
     {
       "id": "msg-e7cace9a4cec",
@@ -33,7 +34,8 @@
       "body_snippet": "Hello everyone,\n\n\n\nDriven by the need to work with XML data from medical systems that use\nobject-oriented databases I have developed the 'xmlconvert' package. With\nits easy-to-use functions xml_to_df(",
       "thread_id": "thread-e7cace9a4cec",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001736.html"
     },
     {
       "id": "msg-1f3f284dd448",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear all,\n\nI would like to introduce\nsbo: Utilities for building and evaluating text prediction functions \nbased on Stupid Back-off N-gram models.\n\nv0.3.0 is now on CRAN: \nhttps://cran.r-project.org/w",
       "thread_id": "thread-1f3f284dd448",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001737.html"
     },
     {
       "id": "msg-5be7805b5662",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R users and developers,\n\nThe 'sftrack' package is finally on CRAN!\n\nhttps://cran.r-project.org/package=sftrack\n\n'sftrack' provides modern classes for tracking and movement data, relying\non 'sf' s",
       "thread_id": "thread-5be7805b5662",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001738.html"
     },
     {
       "id": "msg-cede10d2fb7b",
@@ -77,11 +81,12 @@
       "subject_clean": "experDesign",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hello,\n\nSome weeks ago the experDesign package was released on CRAN:\nhttps://CRAN.R-project.org/package=experDesign\nThe package helps designing experiments to avoid batch effects\nconfounding the result by distributing the samples on batches\naccording to their features.\n\nIf you or your colleagues design this kind of analysis I hope\nexperDesign will be useful. I greatly appreciate your feedback,\nespecially if you find bugs (despite the testing) or think of any\nimprovement.\n\nTo all developers, maintainers and the CRAN team that made this\npossible: Thank you!\n\nBest regards,\n\nLlu?s\n\nGitHub: https://github.com/llrs/experDesign\nCRAN: https://CRAN.R-project.org/package=experDesign",
+      "body_plain": "Hello,\n\nSome weeks ago the experDesign package was released on CRAN:\nhttps://CRAN.R-project.org/package=experDesign\nThe package helps designing experiments to avoid batch effects\nconfounding the result by distributing the samples on batches\naccording to their features.\n\nIf you or your colleagues design this kind of analysis I hope\nexperDesign will be useful. I greatly appreciate your feedback,\nespecially if you find bugs (despite the testing) or think of any\nimprovement.\n\nTo all developers, maintainers and the CRAN team that made this\npossible: Thank you!\n\nBest regards,\n\nLluís\n\nGitHub: https://github.com/llrs/experDesign\nCRAN: https://CRAN.R-project.org/package=experDesign",
       "body_snippet": "Hello,\n\nSome weeks ago the experDesign package was released on CRAN:\nhttps://CRAN.R-project.org/package=experDesign\nThe package helps designing experiments to avoid batch effects\nconfounding the resul",
       "thread_id": "thread-cede10d2fb7b",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001739.html"
     },
     {
       "id": "msg-6116758e234a",
@@ -97,7 +102,8 @@
       "body_snippet": "Hi All,\n\nWriteXLS version 6.1.0 has been released and is in the process of becoming available via CRAN.\n\nThis is a bug fix release, as in version 6.0.0, there were occasions where certain integer valu",
       "thread_id": "thread-6116758e234a",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001740.html"
     },
     {
       "id": "msg-16fa63f42630",
@@ -113,7 +119,8 @@
       "body_snippet": "Hello,\n\nI wanted to notify the R community about a new package for trading on the\nETRADE platform through an API. The package `etrader` (\nhttps://CRAN.R-project.org/package=etrader\n<https://cran.r-pro",
       "thread_id": "thread-16fa63f42630",
       "thread_depth": 0,
-      "month": "2020-11"
+      "month": "2020-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001741.html"
     }
   ],
   "threads": [

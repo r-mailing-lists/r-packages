@@ -18,6 +18,7 @@
       "thread_id": "thread-443f291b8dc3",
       "thread_depth": 0,
       "month": "2013-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2013/001381.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20130807/d0445c97/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Hi all,\n\nWriteXLS version 3.2.1 has been submitted to CRAN, with thanks to the CRAN maintainers.\n\nThis is a bug fix release with the following fixes:\n\n1. When row.names = TRUE, the initial comments ro",
       "thread_id": "thread-19fe8b7692c9",
       "thread_depth": 0,
-      "month": "2013-08"
+      "month": "2013-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2013/001382.html"
     },
     {
       "id": "msg-3a09e9f7395d",
@@ -48,11 +50,12 @@
       "subject_clean": "pls 2.4-3 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 2.4-3 of the pls package has been released.  Windows and OSX\nbinaries should appear shortly.\n\nThe pls package implements Partial Least Squares Regression, Principal\nComponent Regression and Canonical Powered PLS Regression.\n\nThe major changes are:\n\n- Can now perform cross-validation in parallel, using the facilities of\n  the 'parallel' package.  See ?pls.options and the examples in ?mvr for\n  details.  (Note: in order to use MPI, packages 'snow' and 'Rmpi' must\n  be installed, because 'parallel' rely on them for MPI parallelisation.)\n\nOther user-visible changes:\n\n- In order to comply with current CRAN submission policies,\n  pls.options() no longer stores the modified option list in the global \n  environment.  This has the effect that the options will have to be set\n  every time R is started, even if the work space was saved an loaded.\n\n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_plain": "Version 2.4-3 of the pls package has been released.  Windows and OSX\nbinaries should appear shortly.\n\nThe pls package implements Partial Least Squares Regression, Principal\nComponent Regression and Canonical Powered PLS Regression.\n\nThe major changes are:\n\n- Can now perform cross-validation in parallel, using the facilities of\n  the 'parallel' package.  See ?pls.options and the examples in ?mvr for\n  details.  (Note: in order to use MPI, packages 'snow' and 'Rmpi' must\n  be installed, because 'parallel' rely on them for MPI parallelisation.)\n\nOther user-visible changes:\n\n- In order to comply with current CRAN submission policies,\n  pls.options() no longer stores the modified option list in the global \n  environment.  This has the effect that the options will have to be set\n  every time R is started, even if the work space was saved an loaded.\n\n-- \nRegards,\nBjørn-Helge Mevik",
       "body_snippet": "Version 2.4-3 of the pls package has been released.  Windows and OSX\nbinaries should appear shortly.\n\nThe pls package implements Partial Least Squares Regression, Principal\nComponent Regression and Ca",
       "thread_id": "thread-3a09e9f7395d",
       "thread_depth": 0,
-      "month": "2013-08"
+      "month": "2013-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2013/001383.html"
     },
     {
       "id": "msg-a4b59f1efba3",
@@ -71,6 +74,7 @@
       "thread_id": "thread-a4b59f1efba3",
       "thread_depth": 0,
       "month": "2013-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2013/001384.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20130811/760a09b8/attachment.pl"
       ]
@@ -90,6 +94,7 @@
       "thread_id": "thread-5bda43cf2c6d",
       "thread_depth": 0,
       "month": "2013-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2013/001385.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20130812/92f851d7/attachment.pl"
       ]

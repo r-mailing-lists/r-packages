@@ -17,7 +17,8 @@
       "body_snippet": "Dear R users,\n\nRMySQL 0.7-3 has been released. Expect it to hit the CRAN mirrors \nshortly, but in the mean time please get it here:\n\nhttp://biostat.mc.vanderbilt.edu/RMySQL\n\n From the NEWS file:\n\nVers",
       "thread_id": "thread-fc9581de2053",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000993.html"
     },
     {
       "id": "msg-a19589957ac7",
@@ -33,7 +34,8 @@
       "body_snippet": "Version 3.11 of the survey package is making its way through CRAN.\n\nSince the last announcement on this list, of version 3.9, last September, there have been many minor bug fixes and usability improve",
       "thread_id": "thread-a19589957ac7",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000994.html"
     },
     {
       "id": "msg-b95f85fe761f",
@@ -49,7 +51,8 @@
       "body_snippet": "Version 1.0-0 of fechner has been released to CRAN.\n\nFechnerian scaling of discrete object (or stimulus) sets provides a  \ntheoretical framework for deriving, so-called Fechnerian, distances  \namong o",
       "thread_id": "thread-b95f85fe761f",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000995.html"
     },
     {
       "id": "msg-7731c28ba98d",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R users,\n\nI'd like to announce the RcmdrPlugin.survival package, which has just been\nmade available on CRAN. The package provides an R Commander plug-in for the\nsurvival package, with dialogs for",
       "thread_id": "thread-7731c28ba98d",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000996.html"
     },
     {
       "id": "msg-fb827683f446",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear useRs,\n\nthe new R package exams provides Sweave-based automatic generation of\nexams with multiple-choice questions and arithmetic problems. The\npackage is available from CRAN:\n\nhttp://CRAN.R-proj",
       "thread_id": "thread-fb827683f446",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000997.html"
     },
     {
       "id": "msg-9ceceab8192c",
@@ -97,7 +102,8 @@
       "body_snippet": "KmL, version 0.9.2\n\nKmL is a new implematation of k-means for longitudinal data (or \ntrajectories). This algorithm is able to deal with missing value and \nprovides an easy way to re roll the algorithm",
       "thread_id": "thread-9ceceab8192c",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000998.html"
     },
     {
       "id": "msg-57fdf3f5205a",
@@ -113,7 +119,8 @@
       "body_snippet": "New versions of leaps and biglm are percolating through CRAN.\n\nThe new version of biglm fixes a bug in sandwich standard errors with weights, and adds predict(), deviance() and AIC() methods [based on",
       "thread_id": "thread-57fdf3f5205a",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/000999.html"
     },
     {
       "id": "msg-961b8a86168a",
@@ -129,7 +136,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-961b8a86168a",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001000.html"
     },
     {
       "id": "msg-0f7c7c485e49",
@@ -141,11 +149,12 @@
       "subject_clean": "mefa 3.0-0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R Community,\n\nI am pleased to announce that a new version of the mefa R package is\navailable at the CRAN.\n\nmefa is a package for multivariate data handling in ecology and\nbiogeography. It provides object classes to represent the data coded\nby samples, taxa and segments (i.e., subpopulations, repeated\nmeasures). It supports easy processing of the data along with\nrelational data tables for samples and taxa. An object of class mefa\nis a project specific compendium of the dataset and can be easily used\nin further analyses. Methods are provided for extraction, aggregation,\nconversion, plotting, summary and reporting of mefa objects. Reports\ncan be generated in plain text or LaTex.\n\nThe current version has been published in JSS (\nhttp://www.jstatsoft.org/v29/i08 ). The paper presents worked examples\non a variety of ecological analyses.\n\nBest wishes,\n\nP?ter\n\nP?ter S?lymos, PhD\nPostdoctoral Fellow\nDepartment of Mathematical and Statistical Sciences\nUniversity of Alberta\nEdmonton, Alberta, T6G 2G1\nCanada\nemail <- paste(\"solymos\", \"ualberta.ca\", sep = \"@\")",
+      "body_plain": "Dear R Community,\n\nI am pleased to announce that a new version of the mefa R package is\navailable at the CRAN.\n\nmefa is a package for multivariate data handling in ecology and\nbiogeography. It provides object classes to represent the data coded\nby samples, taxa and segments (i.e., subpopulations, repeated\nmeasures). It supports easy processing of the data along with\nrelational data tables for samples and taxa. An object of class mefa\nis a project specific compendium of the dataset and can be easily used\nin further analyses. Methods are provided for extraction, aggregation,\nconversion, plotting, summary and reporting of mefa objects. Reports\ncan be generated in plain text or LaTex.\n\nThe current version has been published in JSS (\nhttp://www.jstatsoft.org/v29/i08 ). The paper presents worked examples\non a variety of ecological analyses.\n\nBest wishes,\n\nPéter\n\nPéter Sólymos, PhD\nPostdoctoral Fellow\nDepartment of Mathematical and Statistical Sciences\nUniversity of Alberta\nEdmonton, Alberta, T6G 2G1\nCanada\nemail <- paste(\"solymos\", \"ualberta.ca\", sep = \"@\")",
       "body_snippet": "Dear R Community,\n\nI am pleased to announce that a new version of the mefa R package is\navailable at the CRAN.\n\nmefa is a package for multivariate data handling in ecology and\nbiogeography. It provide",
       "thread_id": "thread-0f7c7c485e49",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001002.html"
     },
     {
       "id": "msg-4cd94b332d82",
@@ -162,8 +171,9 @@
       "thread_id": "thread-4cd94b332d82",
       "thread_depth": 0,
       "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001001.html",
       "restored_from": [
-        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment.pl"
+        "https://stat.ethz.ch/pipermail/r-packages/attachments/20090226/eafa81fb/attachment-0001.pl"
       ]
     }
   ],

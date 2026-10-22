@@ -17,7 +17,8 @@
       "body_snippet": "Dear all,\n\nI am happy to announce that {pkglite} is now on CRAN. It aims to offer a tool, grammar, and standard to represent and exchange R packages as text files. It can convert one or more source pa",
       "thread_id": "thread-61f5a339f4f3",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001754.html"
     },
     {
       "id": "msg-7fe5b9c84c9c",
@@ -33,7 +34,8 @@
       "body_snippet": "Hello all,\n\nR package {peruse 0.3.1} is on CRAN. {peruse} provides simple tools for sequence iteration and set comprehension. It is especially useful for analyzing recursively generated sequences, inc",
       "thread_id": "thread-7fe5b9c84c9c",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001755.html"
     },
     {
       "id": "msg-a3e3e19a528f",
@@ -45,11 +47,12 @@
       "subject_clean": "{miclust} Multiple imputation & cluster analysis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nWant to perform cluster analysis but you have missing data?\n\nFollowing researchers' suggestion, our R package miclust is now on CRAN:\nhttps://CRAN.R-project.org/package=miclust\n\nmiclust implements a framework to integrate multiple imputed data sets due\nto missing data in cluster analysis. Methods are described in the original\nwork: https://academic.oup.com/aje/article/177/7/718/91109\n\nI hope you find it helpful.\n\nOn behalf of the authors,\n\nJose Barrera\nStatistician, Associate Lecturer\n\n*IS**Global*\nBarcelona Institute for Global Health - Campus MAR\nBarcelona Biomedical Research Park (PRBB) (Room Hypatia)\n\nDoctor Aiguader, 88\n08003 Barcelona, Spain\nTel. +34 93 2147383\njose.barrera at isglobal.org\n<https://www.linkedin.com/in/josebarrera>\nPersonal website: sites.google.com/view/josebarrera\nwww.isglobal.org\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege.\nIf you are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly\nprohibited by law. If this message has been received in error, please\nimmediately notify us via e-mail and delete it.\n\nDATA PROTECTION. We inform you that your personal data, including your\ne-mail address and data included in your email correspondence, are included\nin the ISGlobal Foundation filing system. Your personal data will be used\nfor the purpose of contacting you and sending information on the activities\nof the above foundations. You can exercise your rights to  access to\npersonal data, rectification, erasure, restriction of processing, data\nportability and object by contacting the following address: *lopd at isglobal.org\n<lopd at isglobal.org>*. ISGlobal Privacy Policy at *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a su\ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n, divulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n vigente. Si ha recibido este mensaje por error, le rogamos lo\ncomunique inmediatamente por esta misma v?a y proceda a su destrucci?n.\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de\ntitularidad de la Fundaci?n ISGlobal  para cualquier finalidades de\ncontacto, relaci?n institucional y/o env?o de informaci?n sobre sus\nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando\nel uso de su direcci?n de e-mail para las finalidades citadas. Puede\nejercer los derechos de acceso, rectificaci?n, supresi?n, limitaci?n del\ntratamiento, portabilidad y oposici?n dirigi?ndose a *lopd at isglobal.org\n<lopd at isglobal.org>* . Pol?tica de privacidad en *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n-- \n\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege. \nIf\nyou are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly \nprohibited\nby law. If this message has been received in error, please \nimmediately notify\nus via e-mail and delete it.\n\n\n\nDATA PROTECTION. We \ninform you that your personal data, including your\ne-mail address and data \nincluded in your email correspondence, are included in\nthe ISGlobal \nFoundation files. Your personal data will be used for the purpose\nof \ncontacting you and sending information on the activities of the above\nfoundations. You can exercise your rights of access, rectification,\ncancellation and opposition by contacting the following address: \nlopd at isglobal.org <mailto:lopd at isglobal.org>. ISGlobal\nPrivacy Policy at \nwww.isglobal.org <http://www.isglobal.org/>.\n\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a\nsu \ndestinatario y puede contener informaci?n confidencial, por lo que la\nutilizaci?n,\ndivulgaci?n y/o copia sin autorizaci?n est? prohibida por la\nlegislaci?n\nvigente. Si ha recibido este mensaje por error, le rogamos lo \ncomunique\ninmediatamente por esta misma v?a y proceda a su destrucci?n.\n\n\n\n\n\n\n\n\n\nPROTECCI?N DE DATOS. Sus datos de car?cter personal utilizados en este\nenv?o, incluida su direcci?n de e-mail, forman parte de ficheros de \ntitularidad\nde la Fundaci?n ISGlobal? para cualquier\nfinalidades de \ncontacto, relaci?n institucional y/o env?o de informaci?n sobre\nsus \nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedar?n incorporados en los correspondientes ficheros, autorizando \nel\nuso de su direcci?n de e-mail para las finalidades citadas. Puede \nejercer los\nderechos de acceso, rectificaci?n, cancelaci?n y oposici?n \ndirigi?ndose a lopd at isglobal.org <mailto:lopd at isglobal.org>* *. Pol?tica de \nprivacidad\nen www.isglobal.org <http://www.isglobal.org/>.\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear all,\n\nWant to perform cluster analysis but you have missing data?\n\nFollowing researchers' suggestion, our R package miclust is now on CRAN:\nhttps://CRAN.R-project.org/package=miclust\n\nmiclust implements a framework to integrate multiple imputed data sets due\nto missing data in cluster analysis. Methods are described in the original\nwork: https://academic.oup.com/aje/article/177/7/718/91109\n\nI hope you find it helpful.\n\nOn behalf of the authors,\n\nJose Barrera\nStatistician, Associate Lecturer\n\n*IS**Global*\nBarcelona Institute for Global Health - Campus MAR\nBarcelona Biomedical Research Park (PRBB) (Room Hypatia)\n\nDoctor Aiguader, 88\n08003 Barcelona, Spain\nTel. +34 93 2147383\njose.barrera at isglobal.org\n<https://www.linkedin.com/in/josebarrera>\nPersonal website: sites.google.com/view/josebarrera\nwww.isglobal.org\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege.\nIf you are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly\nprohibited by law. If this message has been received in error, please\nimmediately notify us via e-mail and delete it.\n\nDATA PROTECTION. We inform you that your personal data, including your\ne-mail address and data included in your email correspondence, are included\nin the ISGlobal Foundation filing system. Your personal data will be used\nfor the purpose of contacting you and sending information on the activities\nof the above foundations. You can exercise your rights to  access to\npersonal data, rectification, erasure, restriction of processing, data\nportability and object by contacting the following address: *lopd at isglobal.org\n<lopd at isglobal.org>*. ISGlobal Privacy Policy at *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a su\ndestinatario y puede contener información confidencial, por lo que la\nutilización, divulgación y/o copia sin autorización está prohibida por la\nlegislación vigente. Si ha recibido este mensaje por error, le rogamos lo\ncomunique inmediatamente por esta misma vía y proceda a su destrucción.\n\nPROTECCIÓN DE DATOS. Sus datos de carácter personal utilizados en este\nenvío, incluida su dirección de e-mail, forman parte de ficheros de\ntitularidad de la Fundación ISGlobal  para cualquier finalidades de\ncontacto, relación institucional y/o envío de información sobre sus\nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedarán incorporados en los correspondientes ficheros, autorizando\nel uso de su dirección de e-mail para las finalidades citadas. Puede\nejercer los derechos de acceso, rectificación, supresión, limitación del\ntratamiento, portabilidad y oposición dirigiéndose a *lopd at isglobal.org\n<lopd at isglobal.org>* . Política de privacidad en *www.isglobal.org\n<http://www.isglobal.org/>*.\n\n-- \n\n\nThis message is intended exclusively for its addressee and may contain\ninformation that is CONFIDENTIAL and protected by professional privilege. \nIf\nyou are not the intended recipient you are hereby notified that any\ndissemination, copy or disclosure of this communication is strictly \nprohibited\nby law. If this message has been received in error, please \nimmediately notify\nus via e-mail and delete it.\n\n\n\nDATA PROTECTION. We \ninform you that your personal data, including your\ne-mail address and data \nincluded in your email correspondence, are included in\nthe ISGlobal \nFoundation files. Your personal data will be used for the purpose\nof \ncontacting you and sending information on the activities of the above\nfoundations. You can exercise your rights of access, rectification,\ncancellation and opposition by contacting the following address: \nlopd at isglobal.org <mailto:lopd at isglobal.org>. ISGlobal\nPrivacy Policy at \nwww.isglobal.org <http://www.isglobal.org/>.\n\n\n\n-----------------------------------------------------------------------------------------------------------------------------\n\nCONFIDENCIALIDAD. Este mensaje y sus anexos se dirigen exclusivamente a\nsu \ndestinatario y puede contener información confidencial, por lo que la\nutilización,\ndivulgación y/o copia sin autorización está prohibida por la\nlegislación\nvigente. Si ha recibido este mensaje por error, le rogamos lo \ncomunique\ninmediatamente por esta misma vía y proceda a su destrucción.\n\n\n\n\n\n\n\n\n\nPROTECCIÓN DE DATOS. Sus datos de carácter personal utilizados en este\nenvío, incluida su dirección de e-mail, forman parte de ficheros de \ntitularidad\nde la Fundación ISGlobal  para cualquier\nfinalidades de \ncontacto, relación institucional y/o envío de información sobre\nsus \nactividades. Los datos que usted nos pueda facilitar contestando este\ncorreo quedarán incorporados en los correspondientes ficheros, autorizando \nel\nuso de su dirección de e-mail para las finalidades citadas. Puede \nejercer los\nderechos de acceso, rectificación, cancelación y oposición \ndirigiéndose a lopd at isglobal.org <mailto:lopd at isglobal.org>* *. Política de \nprivacidad\nen www.isglobal.org <http://www.isglobal.org/>.\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear all,\n\nWant to perform cluster analysis but you have missing data?\n\nFollowing researchers' suggestion, our R package miclust is now on CRAN:\nhttps://CRAN.R-project.org/package=miclust\n\nmiclust imp",
       "thread_id": "thread-a3e3e19a528f",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001756.html"
     },
     {
       "id": "msg-c257c2863435",
@@ -65,7 +68,8 @@
       "body_snippet": "Hello All,\n\n  I am pleased to announce that {domir} is now available on CRAN.\n\n  {domir} aims to provide broadly applicable tools for the relative \nimportance analysis of facets of statistical models ",
       "thread_id": "thread-c257c2863435",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001758.html"
     },
     {
       "id": "msg-71747502f56d",
@@ -77,11 +81,12 @@
       "subject_clean": "Splinets",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgo?rski, K. (2019) \"Splinets ? efficient orthonormalization of the B-splines.\" <arXiv:1910.07341>.\nPodgo?rski, K. (2021) \"Splinets ? splines through the Taylor expansion, their support sets and orthogonal bases.\" <arXiv:2102.00733>.\n \n\n#############################\nKrzysztof Podgorski\nProfessor\nDepartment of Statistics \nLund University\n#############################",
-      "body_snippet": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgo?rski, K. (2019) \"Splinets ? efficient orthonorm",
+      "body_plain": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgórski, K. (2019) \"Splinets – efficient orthonormalization of the B-splines.\" <arXiv:1910.07341>.\nPodgórski, K. (2021) \"Splinets – splines through the Taylor expansion, their support sets and orthogonal bases.\" <arXiv:2102.00733>.\n \n\n#############################\nKrzysztof Podgorski\nProfessor\nDepartment of Statistics \nLund University\n#############################",
+      "body_snippet": "Splinets -- a package with an efficient B-spline orthogonalization suitable for sparse functional data analysis.\n\nSee also: \n\nLiu, X., Nassar, H., Podgórski, K. (2019) \"Splinets – efficient orthonorm",
       "thread_id": "thread-71747502f56d",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001757.html"
     },
     {
       "id": "msg-4fddc95496f0",
@@ -97,7 +102,8 @@
       "body_snippet": "Hello everyone,\n\nVery happy to announce my first release on CRAN: *meedr. *The goal is to\nprovide quick and easy access to market expectations data to the main\nmacroeconomic indicators in the Focus re",
       "thread_id": "thread-4fddc95496f0",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001759.html"
     },
     {
       "id": "msg-ae5b77c6e69f",
@@ -113,7 +119,8 @@
       "body_snippet": "Dear all,\n\nI am happy to announce that gm 1.0.0 is released on CRAN.\n\nhttps://CRAN.R-project.org/package=gm\n<https://cran.r-project.org/package=gm>\n\ngm provides an elegant and intuitive language, with",
       "thread_id": "thread-ae5b77c6e69f",
       "thread_depth": 0,
-      "month": "2021-03"
+      "month": "2021-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2021/001760.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Version 1.9-4 of package 'spatstat' has been sent to CRAN.\n\nIt includes new code for perfect simulation of point processes\nand various improvements.\n\nThe release notes are available at\n    <http://www",
       "thread_id": "thread-87ec132e81f8",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000722.html"
     },
     {
       "id": "msg-6f19f79b6e67",
@@ -33,7 +34,8 @@
       "body_snippet": "Reshape 0.7\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata. It is inspired by Excel's pivot tables, and it  makes it very\neasy to view your data the way y",
       "thread_id": "thread-6f19f79b6e67",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000723.html"
     },
     {
       "id": "msg-e39b49e67418",
@@ -51,7 +53,8 @@
       "body_snippet": "Hello!\n\nI have uploaded update (0.2-1) for connectedness.\n\nNEWS?\n\no NA's in either x or y are not removed by default, but only when\n  drop=TRUE. Subset method gains dropNA=NULL argument due to\n  this.",
       "thread_id": "thread-e39b49e67418",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000724.html"
     },
     {
       "id": "msg-b8c34a6fb441",
@@ -67,7 +70,8 @@
       "body_snippet": "Dear useRs,\n\nRelease 1.0.0 of the new R package 'randomSurvivalForest' is now available\non CRAN and its mirrors.  The package implements Ishwaran and Kogalur's\nRandom Survival Forests algorithm for ri",
       "thread_id": "thread-b8c34a6fb441",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000725.html"
     },
     {
       "id": "msg-fac9e9e5e273",
@@ -79,11 +83,12 @@
       "subject_clean": "New version of glmmML",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-Hermite approximations to the log\nlikelihood function are fully implemented. The Laplace method is made\nthe default. It should give results you can compare to the results\nfrom 'lmer' (for the models that glmmML can handle).\n\n* Binomial responses can now be represented as a two-column matrix\nwith No. of successes and No. of failures, respectively, as in glm.\n\n* New functions: 'ghq' for calculating the constants used in the\nGauss-Hermite quadrature. 'extractAIC.glmmML', which makes it possible\nto use functions like 'dropterm' (MASS) on glmmML fits.\n\n* There are three choices of distribution for the random effects:\n'gaussian' (default), 'logistic', and 'cauchy'.\n\n* The 'conditional' bootstrap is removed, so the only choice now is\nthe parametric bootstrap.\n\n* The 'posterior.means' are no longer calculated, leaving only the\n'posterior.modes' as 'predictions' of the random effects.\n\nAs usual, feedback is more than welcome!\n\nG?ran",
+      "body_plain": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-Hermite approximations to the log\nlikelihood function are fully implemented. The Laplace method is made\nthe default. It should give results you can compare to the results\nfrom 'lmer' (for the models that glmmML can handle).\n\n* Binomial responses can now be represented as a two-column matrix\nwith No. of successes and No. of failures, respectively, as in glm.\n\n* New functions: 'ghq' for calculating the constants used in the\nGauss-Hermite quadrature. 'extractAIC.glmmML', which makes it possible\nto use functions like 'dropterm' (MASS) on glmmML fits.\n\n* There are three choices of distribution for the random effects:\n'gaussian' (default), 'logistic', and 'cauchy'.\n\n* The 'conditional' bootstrap is removed, so the only choice now is\nthe parametric bootstrap.\n\n* The 'posterior.means' are no longer calculated, leaving only the\n'posterior.modes' as 'predictions' of the random effects.\n\nAs usual, feedback is more than welcome!\n\nGöran",
       "body_snippet": "A new version, 0.65-1, of glmmML is now on CRAN. It is a major rewrite\nof the inner structures, so frequent updates (bug fixes) may be\nexpected for some time.\n\nNews:\n\n* The Laplace and adaptive Gauss-",
       "thread_id": "thread-fac9e9e5e273",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000726.html"
     },
     {
       "id": "msg-b6fecdb611db",
@@ -99,7 +104,8 @@
       "body_snippet": "Hi all,\n\nI've added a new package 'weaver' to the BioC repository:\n\nhttp://www.bioconductor.org/packages/1.9/bioc/html/weaver.html\n\nThe weaver package provides extensions to the Sweave utilities\ninclu",
       "thread_id": "thread-b6fecdb611db",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000727.html"
     },
     {
       "id": "msg-0899b6470963",
@@ -117,7 +123,8 @@
       "body_snippet": "Hi again,\n\nSorry for the noise, but I need to make a correction:\n\nSeth Falcon <sfalcon at fhcrc.org> writes:\n> To install:\n>\n>   source(\"http://bioconductor.org/biocLite.R\")\n>   biocLite(\"weaver\")\n\nAt",
       "thread_id": "thread-b6fecdb611db",
       "thread_depth": 1,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000728.html"
     },
     {
       "id": "msg-a6f13f523b73",
@@ -133,7 +140,8 @@
       "body_snippet": "A new version 1.9-5 of the package `spatstat' \nhas been uploaded to CRAN.\n\nWhat it is:\n----------\nspatstat is a package for analysing spatial data, mainly Spatial Point\nPatterns. \n\nWhat's in it:\n-----",
       "thread_id": "thread-a6f13f523b73",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000729.html"
     },
     {
       "id": "msg-aeee22850292",
@@ -149,7 +157,8 @@
       "body_snippet": "Dear useRs,\n\nthe new version 1.2-0 of the zoo package for dealing with regular and\nirregular time series data is available from the CRAN mirrors.\n\nThis version includes two important changes/enhanceme",
       "thread_id": "thread-aeee22850292",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000730.html"
     },
     {
       "id": "msg-e5b94a73ca74",
@@ -165,7 +174,8 @@
       "body_snippet": "Dear useRs,\n\na new version 2.0-0 of the sandwich package for estimating sandwich\ncovariance matrices is available from the CRAN mirrors.\n\nThe tools for computing heteroskedasticity (and autocorrelatio",
       "thread_id": "thread-e5b94a73ca74",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000731.html"
     },
     {
       "id": "msg-916eabd98f67",
@@ -181,7 +191,8 @@
       "body_snippet": "biglm fits linear and generalized linear models to large data sets, using \nbounded memory.\n\nWhat's New:  generalized linear models.\n\n\n \t-thomas\n\nThomas Lumley\t\t\tAssoc. Professor, Biostatistics\ntlumley",
       "thread_id": "thread-916eabd98f67",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000732.html"
     },
     {
       "id": "msg-6a9175f262a2",
@@ -197,7 +208,8 @@
       "body_snippet": "The rpanel package builds on the tcltk package to provide simple \ninteractive controls for R functions, in particular to provide simple \nforms of dynamic graphics.  The intention is to make this form ",
       "thread_id": "thread-6a9175f262a2",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000733.html"
     },
     {
       "id": "msg-8811e32bcce9",
@@ -213,7 +225,8 @@
       "body_snippet": "I've submitted a new, and substantially enhanced, version (1.2-0) of the\nRcmdr package to CRAN. Some highlights (from the CHANGES) file:\n\n   o  Added ability to import from Excel, Access or dBase file",
       "thread_id": "thread-8811e32bcce9",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000734.html"
     },
     {
       "id": "msg-83c72e257562",
@@ -229,7 +242,8 @@
       "body_snippet": "Dear useRs,\n\nA few days ago, the initial version 0.1.0 of a new package 'random' was\nuploaded to CRAN.\n\nThe random packages provides convenient access to the non-deterministic\nrandom numbers provided ",
       "thread_id": "thread-83c72e257562",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000735.html"
     },
     {
       "id": "msg-a8eab14386cc",
@@ -241,11 +255,12 @@
       "subject_clean": "New package ffmanova for 50-50 MANOVA released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 0.1-0 of a new package `ffmanova' is now available on CRAN.\n\nComments, suggestions, etc. are welcome.  Please use the email address\nffmanova (at) mevik.net.\n\nThe package implements 50-50 MANOVA (Langsrud, 2002) with p-value\nadjustment based on rotation testing (Langsrud, 2005).\n\nThe 50-50 MANOVA method is a modified variant of classical MANOVA made\nto handle several highly correlated responses.  Classical MANOVA\nperforms poorly in such cases and it collapses when the number of\nresponses exceeds the number of observations.  The 50-50 MANOVA method\nis suggested as a general method that will handle all types of data.\nPrincipal component analysis is an integrated part of the algorithm.\n\nThe single response special case is ordinary general linear modeling.\nType II sums of squares are used to handle unbalanced designs\n(Langsrud, 2003).  Furthermore, the Type II philosophy is extended to\ncontinuous design variables.  This means that the method is invariant\nto scale changes.  Centering of design variables is not needed.  The\nType II approach ensures that common pitfalls are avoided.\n\nA univariate F-test p-value for each response can be reported when\nseveral responses are present.  However, with a large number of\nresponse variables, these results are questionable since we will\nexpect a lot of type I errors (\"incorrect significance\").  Therefore\nthe p-values need to be adjusted.\n\nBy using rotation testing it is possible to adjust the single response\np-values according to the familywise error rate criterion in an exact\nand non-conservative (unlike Bonferroni) way.\n\nIt is also possible to adjust p-values according to a false discovery\nrate criterion.  Our method is based on rotation testing and allows\nany kind of dependence among the responses (Moen et al., 2005).\n\nNote that rotation testing is closely related to permutation testing.\nOne difference is that rotation testing relies on the multinormal\nassumption.  All the classical tests (t-test, F-test, Hotelling T^2\ntest, ...) can be viewed as special cases of rotation testing.\n\n\nREFERENCES \n\nLangsrud, ?. (2002), 50-50 Multivariate Analysis of Variance for\nCollinear Responses, Journal of the Royal Statistical Society SERIES D\n- The Statistician, 51, 305-317.\n\nLangsrud, ?. (2003), ANOVA for Unbalanced Data: Use Type II Instead of\nType III Sums of Squares, Statistics and Computing, 13, 163-167.\n\nLangsrud, ?. (2005), Rotation Tests, Statistics and Computing, 15, 53-60. \n\nMoen, B., Oust, A., Langsrud, ?., Dorrell, N., Gemma, L., Marsden,\nG.L., Hinds, J., Kohler, A., Wren, B.W. and Rudi, K. (2005), An\nexplorative multifactor approach for investigating global survival\nmechanisms of Campylobacter jejuni under environmental conditions,\nApplied and Environmental Microbiology, 71, 2086-2094.\n\n\n-- \nBj?rn-Helge Mevik and ?yvind Langsrud",
+      "body_plain": "Version 0.1-0 of a new package `ffmanova' is now available on CRAN.\n\nComments, suggestions, etc. are welcome.  Please use the email address\nffmanova (at) mevik.net.\n\nThe package implements 50-50 MANOVA (Langsrud, 2002) with p-value\nadjustment based on rotation testing (Langsrud, 2005).\n\nThe 50-50 MANOVA method is a modified variant of classical MANOVA made\nto handle several highly correlated responses.  Classical MANOVA\nperforms poorly in such cases and it collapses when the number of\nresponses exceeds the number of observations.  The 50-50 MANOVA method\nis suggested as a general method that will handle all types of data.\nPrincipal component analysis is an integrated part of the algorithm.\n\nThe single response special case is ordinary general linear modeling.\nType II sums of squares are used to handle unbalanced designs\n(Langsrud, 2003).  Furthermore, the Type II philosophy is extended to\ncontinuous design variables.  This means that the method is invariant\nto scale changes.  Centering of design variables is not needed.  The\nType II approach ensures that common pitfalls are avoided.\n\nA univariate F-test p-value for each response can be reported when\nseveral responses are present.  However, with a large number of\nresponse variables, these results are questionable since we will\nexpect a lot of type I errors (\"incorrect significance\").  Therefore\nthe p-values need to be adjusted.\n\nBy using rotation testing it is possible to adjust the single response\np-values according to the familywise error rate criterion in an exact\nand non-conservative (unlike Bonferroni) way.\n\nIt is also possible to adjust p-values according to a false discovery\nrate criterion.  Our method is based on rotation testing and allows\nany kind of dependence among the responses (Moen et al., 2005).\n\nNote that rotation testing is closely related to permutation testing.\nOne difference is that rotation testing relies on the multinormal\nassumption.  All the classical tests (t-test, F-test, Hotelling T^2\ntest, ...) can be viewed as special cases of rotation testing.\n\n\nREFERENCES \n\nLangsrud, Ø. (2002), 50-50 Multivariate Analysis of Variance for\nCollinear Responses, Journal of the Royal Statistical Society SERIES D\n- The Statistician, 51, 305-317.\n\nLangsrud, Ø. (2003), ANOVA for Unbalanced Data: Use Type II Instead of\nType III Sums of Squares, Statistics and Computing, 13, 163-167.\n\nLangsrud, Ø. (2005), Rotation Tests, Statistics and Computing, 15, 53-60. \n\nMoen, B., Oust, A., Langsrud, Ø., Dorrell, N., Gemma, L., Marsden,\nG.L., Hinds, J., Kohler, A., Wren, B.W. and Rudi, K. (2005), An\nexplorative multifactor approach for investigating global survival\nmechanisms of Campylobacter jejuni under environmental conditions,\nApplied and Environmental Microbiology, 71, 2086-2094.\n\n\n-- \nBjørn-Helge Mevik and Øyvind Langsrud",
       "body_snippet": "Version 0.1-0 of a new package `ffmanova' is now available on CRAN.\n\nComments, suggestions, etc. are welcome.  Please use the email address\nffmanova (at) mevik.net.\n\nThe package implements 50-50 MANOV",
       "thread_id": "thread-a8eab14386cc",
       "thread_depth": 0,
-      "month": "2006-08"
+      "month": "2006-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000736.html"
     }
   ],
   "threads": [

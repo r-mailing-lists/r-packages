@@ -13,11 +13,12 @@
       "subject_clean": "pls 2.5-0 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 2.5-0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression, Principal Component\nRegression and Canonical Powered PLS.\n\nThe major changes are:\n\n- Cross-validation can now make sure that replicates are kept in the\n  same segment, by the use of a new argument `nrep'.  See ?cvsegments\n  for details.\n\n- It now has a vignette.\n\n- It now has a NEWS file that can be accessed by news().\n \n-- \nRegards,\nBj?rn-Helge Mevik",
+      "body_plain": "Version 2.5-0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression, Principal Component\nRegression and Canonical Powered PLS.\n\nThe major changes are:\n\n- Cross-validation can now make sure that replicates are kept in the\n  same segment, by the use of a new argument `nrep'.  See ?cvsegments\n  for details.\n\n- It now has a vignette.\n\n- It now has a NEWS file that can be accessed by news().\n \n-- \nRegards,\nBjørn-Helge Mevik",
       "body_snippet": "Version 2.5-0 of the pls package has been released.  The pls package\nimplements Partial Least Squares Regression, Principal Component\nRegression and Canonical Powered PLS.\n\nThe major changes are:\n\n- C",
       "thread_id": "thread-755b2b3974f4",
       "thread_depth": 0,
-      "month": "2015-08"
+      "month": "2015-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2015/001445.html"
     },
     {
       "id": "msg-4428703a636c",
@@ -33,7 +34,8 @@
       "body_snippet": "Time Series Clustering With Dynamic Time Warping Distance (DTW)\n===============================================================\n\nThe dtwclust package attempts to consolidate some of the recent techniq",
       "thread_id": "thread-4428703a636c",
       "thread_depth": 0,
-      "month": "2015-08"
+      "month": "2015-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2015/001446.html"
     },
     {
       "id": "msg-80fe910ca49e",
@@ -49,7 +51,8 @@
       "body_snippet": "Hi R package users,\n\nYou may be interested in these two new packages now available on CRAN:\n\n*googleAuthR* lets you easily authenticate with Google OAuth2 APIs and make\nyour own packages with them.  I",
       "thread_id": "thread-80fe910ca49e",
       "thread_depth": 0,
-      "month": "2015-08"
+      "month": "2015-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2015/001447.html"
     }
   ],
   "threads": [

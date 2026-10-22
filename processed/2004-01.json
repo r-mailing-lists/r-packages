@@ -13,11 +13,12 @@
       "subject_clean": "New version of eha",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty models, yet (on the TODO list).\n\n\t* mlreg: New argument, 'n.points', added to 'control'. Controls\n\tthe number of points used in the Gauss-Hermite quadrature.\n\n\t* mlreg: Stricter control of numerical problems, especially in the\n\tfrailty fit.\n\t\n\t* clean: Replaced by the new functions check.spells and join.spells.\n\n\t* Return values changed to conform with R-1.8.0 (and later).\n-------------------------\nAs usual, comments and bug reports are welcome!\n\n-- \n G?ran Brostr?m                    tel: +46 90 786 5223\n Department of Statistics          fax: +46 90 786 6614\n Ume? University                   http://www.stat.umu.se/egna/gb/\n SE-90187 Ume?, Sweden             e-mail: gb at stat.umu.se",
+      "body_plain": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty models, yet (on the TODO list).\n\n\t* mlreg: New argument, 'n.points', added to 'control'. Controls\n\tthe number of points used in the Gauss-Hermite quadrature.\n\n\t* mlreg: Stricter control of numerical problems, especially in the\n\tfrailty fit.\n\t\n\t* clean: Replaced by the new functions check.spells and join.spells.\n\n\t* Return values changed to conform with R-1.8.0 (and later).\n-------------------------\nAs usual, comments and bug reports are welcome!\n\n-- \n Göran Broström                    tel: +46 90 786 5223\n Department of Statistics          fax: +46 90 786 6614\n Umeå University                   http://www.stat.umu.se/egna/gb/\n SE-90187 Umeå, Sweden             e-mail: gb at stat.umu.se",
       "body_snippet": "A new version of 'eha' (0.92-1) is now on CRAN. From the ChangeLog:\n\n0.92-1 (January 7, 2004)\n\t\n\t* mlreg: Geometric distribution (i.e., constant baseline discrete\n\thazard) added. Not for frailty model",
       "thread_id": "thread-b0c350e25cd2",
       "thread_depth": 0,
-      "month": "2004-01"
+      "month": "2004-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000525.html"
     },
     {
       "id": "msg-59de5a5d39c1",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nI've just released a new version of randomForest (available on CRAN now).\nThis version contained quite a number of new features and bug fixes,\ncompared to version prior to 4.0-x (and fe",
       "thread_id": "thread-59de5a5d39c1",
       "thread_depth": 0,
-      "month": "2004-01"
+      "month": "2004-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000526.html"
     },
     {
       "id": "msg-df93b8b53ed9",
@@ -49,7 +51,8 @@
       "body_snippet": ">  -----Original Message-----\n> From: \tWarnes, Gregory R  \n> Sent:\tFriday, January 16, 2004 3:52 AM\n> To:\t'r-packages'; 'python-announce '; 'rsoap-talk'; 'Dan Nathan'; 'RPy\n> List'\n> Subject:\tAnnounce",
       "thread_id": "thread-df93b8b53ed9",
       "thread_depth": 0,
-      "month": "2004-01"
+      "month": "2004-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000527.html"
     }
   ],
   "threads": [

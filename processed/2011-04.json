@@ -18,6 +18,7 @@
       "thread_id": "thread-b11ea29af771",
       "thread_depth": 0,
       "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001221.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20110406/0e5c56a5/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
       "thread_id": "thread-cdd08d9dc659",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001222.html"
     },
     {
       "id": "msg-2b1bdca5cd83",
@@ -48,11 +50,12 @@
       "subject_clean": "tikzDevice 0.6.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Cameron and I are pleased to announce version 0.6.0 of the tikzDevice\npackage which should be available shortly at your local CRAN mirror!\nThe tikzDevice makes it possible to export R graphics as LaTeX code\nthat can be included in other documents or compiled into stand alone\nfigures. The full power of LaTeX is available for typesetting text and\nmathematical expressions inside figures produced using the tikzDevice.\n\nOver 80 commits have occurred since the release of 0.5.3 which have\nadded exciting new features to the device. The most important addition\nis 0.6.0 is that the XeLaTeX compiler is officially supported.\nCompared to the PdfTeX engine, XeTeX has native support for Unicode\nwhich we hope will make the package more useful for producing graphics\nthat contain text in languages?outside?the ASCII symbol table. 0.6.0\nalso provides support for including raster imagry in graphics and\npolypath drawing which catches the `tikz()` graphics device up with\nrecent developments in the R graphics engine.\n\nThere have also been some significant changes under the hood. Our\npackage has migrated to using Roxygen for function documentation---a\nmove that was greatly facilitated by the Rd2roxygen package written by\nYihui Xie and Hadley Wickham. Our homebrewed testsuite has also been\nre-written on top of Hadley's excellent test_that package. ?Many\nthanks to the R community for writing great tools to support package\ndevelopment!\n\nThe full changelog is appended to this email. For a detailed diff of\nchanges since 0.5.3, see:\n??https://github.com/Sharpie/RTikZDevice/compare/0.5.3...master\n\nWith 80 commits, it is likely we introduced some exciting new bugs.\nBug reports are welcomed at the GitHub issue tracker:\n\n??https://github.com/Sharpie/RTikZDevice/issues\n\nThe tikzDevice also has a mailing list provided by R-Forge:\n\n??tikzdevice-bugs @at@?lists.r-forge.r-project.org\n\nWhich is also accessible via Google Groups:\n\n??https://groups.google.com/forum/#!forum/tikzdevice\n\n\nA rough roadmap for future package development can be found at:\n\n??https://github.com/Sharpie/RTikZDevice/wiki/Roadmap\n\nCommentary and discussion is welcomed in the mailing list, patches\ncontaining bugfixes or features are welcomed on the issue tracker.\n\n\n-Charlie\n\n---\n\n### Version: 0.6.0\n\n---\n\n#### New Features\n\n- Unicode Support!!!! XeLaTeX may now be used calculate metrics and widths for\n?Unicode characters. PdfLaTeX remains the default LaTeX compiler, but this may\n?be changed by setting the global option `tikzDefaultEngine` to `xetex`.\n\n- New global option `tikzXelatexPackages` which contains packages necessary to\n?use unicode characters with xelatex. ?Specifically, the fontspec and the\n?xunicode packages as well as the xetex option to the preview package.\n\n- New global option `tikzUnicodeMetricPackages` which contains the packages\n?necessary to calculate metrics for multibyte unicode characters with xelatex.\n\n- New function anyMultibyteUTF8Characters() which will check if the given\n?string contains any multibyte unicode characters. ?Exposed in the package\n?namespace since it is general and may be useful in other applications.\n\n- The TikZ device now fully supports the `Raster` graphics primitive that was\n?added in R 2.11.0 and no longer throws \"not implemented\" warnings when this\n?functionality is used. This is accompilshed by writing raster images to PNG\n?files, `Rplots_ras#.png`, which are then included in the main TeX file\n?`Rplots.tex`.\n\n- The TikZ device now fully supports the `polypath` graphics primitive that was\n?added in R 2.12.0 and no longer throws \"not implemented\" warnings when this\n?functionality is used.\n\n\n#### Bug Fixes\n\n- Fixed a bug where the `lwd` parameter used to control line widths was\n?declared by tikzDevice to be of type `int` when it is actually a `double`.\n?This was causing line widths to be ignored or miscalculated. Many thanks to\n?Baptiste Auguie for reporting this issue.\n\n\n#### Depreciation Notices\n\n- Versions of R < 2.11.0 are no longer supported due to lack of required\n?functions for handling Unicode strings.\n\n\n#### Behind the Scenes\n\n- New Makefile for executing common development tasks.\n\n- Package documentation now handled by `roxygen`. ?Many thanks to Hadley\n?Wickham and Yihui Xie for the `Rd2roxygen` package which facilitated this\n?switch.\n\n- Package test suite completely overhauled and now based on Hadley Wickham's\n?`test_that` unit testing framework.",
+      "body_plain": "Cameron and I are pleased to announce version 0.6.0 of the tikzDevice\npackage which should be available shortly at your local CRAN mirror!\nThe tikzDevice makes it possible to export R graphics as LaTeX code\nthat can be included in other documents or compiled into stand alone\nfigures. The full power of LaTeX is available for typesetting text and\nmathematical expressions inside figures produced using the tikzDevice.\n\nOver 80 commits have occurred since the release of 0.5.3 which have\nadded exciting new features to the device. The most important addition\nis 0.6.0 is that the XeLaTeX compiler is officially supported.\nCompared to the PdfTeX engine, XeTeX has native support for Unicode\nwhich we hope will make the package more useful for producing graphics\nthat contain text in languages outside the ASCII symbol table. 0.6.0\nalso provides support for including raster imagry in graphics and\npolypath drawing which catches the `tikz()` graphics device up with\nrecent developments in the R graphics engine.\n\nThere have also been some significant changes under the hood. Our\npackage has migrated to using Roxygen for function documentation---a\nmove that was greatly facilitated by the Rd2roxygen package written by\nYihui Xie and Hadley Wickham. Our homebrewed testsuite has also been\nre-written on top of Hadley's excellent test_that package.  Many\nthanks to the R community for writing great tools to support package\ndevelopment!\n\nThe full changelog is appended to this email. For a detailed diff of\nchanges since 0.5.3, see:\n  https://github.com/Sharpie/RTikZDevice/compare/0.5.3...master\n\nWith 80 commits, it is likely we introduced some exciting new bugs.\nBug reports are welcomed at the GitHub issue tracker:\n\n  https://github.com/Sharpie/RTikZDevice/issues\n\nThe tikzDevice also has a mailing list provided by R-Forge:\n\n  tikzdevice-bugs @at@ lists.r-forge.r-project.org\n\nWhich is also accessible via Google Groups:\n\n  https://groups.google.com/forum/#!forum/tikzdevice\n\n\nA rough roadmap for future package development can be found at:\n\n  https://github.com/Sharpie/RTikZDevice/wiki/Roadmap\n\nCommentary and discussion is welcomed in the mailing list, patches\ncontaining bugfixes or features are welcomed on the issue tracker.\n\n\n-Charlie\n\n---\n\n### Version: 0.6.0\n\n---\n\n#### New Features\n\n- Unicode Support!!!! XeLaTeX may now be used calculate metrics and widths for\n Unicode characters. PdfLaTeX remains the default LaTeX compiler, but this may\n be changed by setting the global option `tikzDefaultEngine` to `xetex`.\n\n- New global option `tikzXelatexPackages` which contains packages necessary to\n use unicode characters with xelatex.  Specifically, the fontspec and the\n xunicode packages as well as the xetex option to the preview package.\n\n- New global option `tikzUnicodeMetricPackages` which contains the packages\n necessary to calculate metrics for multibyte unicode characters with xelatex.\n\n- New function anyMultibyteUTF8Characters() which will check if the given\n string contains any multibyte unicode characters.  Exposed in the package\n namespace since it is general and may be useful in other applications.\n\n- The TikZ device now fully supports the `Raster` graphics primitive that was\n added in R 2.11.0 and no longer throws \"not implemented\" warnings when this\n functionality is used. This is accompilshed by writing raster images to PNG\n files, `Rplots_ras#.png`, which are then included in the main TeX file\n `Rplots.tex`.\n\n- The TikZ device now fully supports the `polypath` graphics primitive that was\n added in R 2.12.0 and no longer throws \"not implemented\" warnings when this\n functionality is used.\n\n\n#### Bug Fixes\n\n- Fixed a bug where the `lwd` parameter used to control line widths was\n declared by tikzDevice to be of type `int` when it is actually a `double`.\n This was causing line widths to be ignored or miscalculated. Many thanks to\n Baptiste Auguie for reporting this issue.\n\n\n#### Depreciation Notices\n\n- Versions of R < 2.11.0 are no longer supported due to lack of required\n functions for handling Unicode strings.\n\n\n#### Behind the Scenes\n\n- New Makefile for executing common development tasks.\n\n- Package documentation now handled by `roxygen`.  Many thanks to Hadley\n Wickham and Yihui Xie for the `Rd2roxygen` package which facilitated this\n switch.\n\n- Package test suite completely overhauled and now based on Hadley Wickham's\n `test_that` unit testing framework.",
       "body_snippet": "Cameron and I are pleased to announce version 0.6.0 of the tikzDevice\npackage which should be available shortly at your local CRAN mirror!\nThe tikzDevice makes it possible to export R graphics as LaTe",
       "thread_id": "thread-2b1bdca5cd83",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001223.html"
     },
     {
       "id": "msg-ecae6c52c8a4",
@@ -69,6 +72,7 @@
       "thread_id": "thread-ecae6c52c8a4",
       "thread_depth": 0,
       "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001225.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20110419/051f919f/attachment.pl"
       ]
@@ -87,7 +91,8 @@
       "body_snippet": "We have submitted glmnet_1.6 to CRAN\n\nThis version has an improved convergence criterion, and it also uses\na variable screening algorithm that dramatically reduces the time\nto convergence (while still",
       "thread_id": "thread-91ea0703f53a",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001224.html"
     },
     {
       "id": "msg-bef680b87021",
@@ -103,7 +108,8 @@
       "body_snippet": "Dear  useRs,\n\nRook is a new package that does three things:\n\n - It provides a way to run R web applications on your desktop with the\n new internal R web server named Rhttpd. Please see the Rhttpd help",
       "thread_id": "thread-bef680b87021",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001226.html"
     },
     {
       "id": "msg-a69141fec09f",
@@ -119,7 +125,8 @@
       "body_snippet": "Do you know how many functions there are in base R?\nHow many of them do you know you don't know?\nRun unk() to discover your unknown unknowns.\nIt's fast and it's fun!\n\nunknownR v0.2 is now on CRAN.\n\nMo",
       "thread_id": "thread-a69141fec09f",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001228.html"
     },
     {
       "id": "msg-94642d65eea1",
@@ -135,7 +142,8 @@
       "body_snippet": "spikeSlabGAM_0.9-6 (initial public release)\n\nspikeSlabGAM implements Bayesian variable selection, model choice,\nand regularized estimation in  (geo-)additive mixed models for\nGaussian, binomial, and P",
       "thread_id": "thread-94642d65eea1",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001231.html"
     },
     {
       "id": "msg-7890e1222f44",
@@ -151,7 +159,8 @@
       "body_snippet": "Dear R-users,\n\nA new version of `lavaan' (for latent variable analysis) is now \navailable on CRAN. The current version of lavaan (0.4-8) can be used for \npath analysis, confirmatory factor analysis, s",
       "thread_id": "thread-7890e1222f44",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001229.html"
     },
     {
       "id": "msg-79de1850ad7e",
@@ -167,7 +176,8 @@
       "body_snippet": "Cubist is a rule-based machine learning model for regression. Parts of the\nCubist model are described in:\n\n   Quinlan. Learning with continuous classes. Proceedings\n   of the 5th Australian Joint Conf",
       "thread_id": "thread-79de1850ad7e",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001227.html"
     },
     {
       "id": "msg-581fef3ff5f1",
@@ -183,7 +193,8 @@
       "body_snippet": "data.table offers fast subset, fast grouping and fast ordered joins in a\nshort and flexible syntax, for faster development. It was first released\nin August 2008 and is now the 3rd most popular package",
       "thread_id": "thread-581fef3ff5f1",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001230.html"
     }
   ],
   "threads": [

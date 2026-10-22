@@ -17,7 +17,8 @@
       "body_snippet": "Hi all,\n\nI have uploaded a new package called perm which does linear permutation tests. It does two-sample, k-sample and trend tests. The package is redundant, since everything it does can be done in ",
       "thread_id": "thread-3cb061e0470a",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001042.html"
     },
     {
       "id": "msg-e9f4a9b18de2",
@@ -33,7 +34,8 @@
       "body_snippet": "I have just uploaded a new package called interval. It does weighted logrank tests (e.g., logrank, Wilcoxon-type tests) on interval censored data. It allows Surv objects and can calculated exact p-val",
       "thread_id": "thread-e9f4a9b18de2",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001043.html"
     },
     {
       "id": "msg-0c67bbd7d24c",
@@ -49,7 +51,8 @@
       "body_snippet": "Deducer 0.1 has been released to CRAN\n\nDeducer is designed to be a free, easy to use, alternative to proprietary\nsoftware such as SPSS, JMP, and Minitab. It has a menu system to do common\ndata manipul",
       "thread_id": "thread-0c67bbd7d24c",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001044.html"
     },
     {
       "id": "msg-149ccd6f2cff",
@@ -65,7 +68,8 @@
       "body_snippet": "Hello,\n\nThe version 0.0-3 of the parser package has been published to CRAN a few \ndays ago.\nThe package defines a parser for R code very similar to the \"parse\" \nfunction in base but organize the infor",
       "thread_id": "thread-149ccd6f2cff",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001045.html"
     },
     {
       "id": "msg-c354e6801ab5",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R users,\n\nThe TraMineR package for mining, describing and visualizing sequences of \nstates or events, and more generally discrete sequential data has been \nupdated to version 1.4.\n\nMany new funct",
       "thread_id": "thread-c354e6801ab5",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001046.html"
     },
     {
       "id": "msg-8f5d3e69d2ea",
@@ -98,6 +103,7 @@
       "thread_id": "thread-8f5d3e69d2ea",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001047.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20090813/dd8ff521/attachment.pl"
       ]
@@ -116,7 +122,8 @@
       "body_snippet": "Hi,\n\nRSQLite 0.7-2 is available on CRAN.\n\nVersion 0.7-2\n\n- Fixed some partial argument matching warnings.  Thanks to Matthias\n  Burger for reporting and sending a patch.\n\n- Added dbBuildTableDefinitio",
       "thread_id": "thread-a1d51a04e578",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001048.html"
     },
     {
       "id": "msg-eb8c2dfe5e41",
@@ -130,11 +137,12 @@
       "references": [
         "<mailman.0.1250665896.17370.r-packages@r-project.org>"
       ],
-      "body_plain": "Dear all,\n\nI am pleased to announce the CRAN release of a new package called 'KFAS' -\nKalman filter and smoother.\n\nThe package KFAS contains functions of multivariate Kalman filter,\nsmoother, simulation smoother and forecasting. It uses univariate approach\nalgorithm (aka sequential processing), which is faster than normal method,\nand it also allows mean square prediction error matrix Ft to be singular.\nFiltering, smoothing and simulation functions are all written in Fortran.\nFunctions allow time-variant system matrices and missing observations. In\ncase distributions of some or all elements of initial state vector are\nunknown, functions use exact diffuse initialisation.\n\nI hope that this package will be useful for people working with state\nspace models and time series in general. Any feedback is appreciated.\n\nYours,\n\nJouni Lehtonen\nUniversity of Jyv?skyl?\nFinland",
+      "body_plain": "Dear all,\n\nI am pleased to announce the CRAN release of a new package called 'KFAS' -\nKalman filter and smoother.\n\nThe package KFAS contains functions of multivariate Kalman filter,\nsmoother, simulation smoother and forecasting. It uses univariate approach\nalgorithm (aka sequential processing), which is faster than normal method,\nand it also allows mean square prediction error matrix Ft to be singular.\nFiltering, smoothing and simulation functions are all written in Fortran.\nFunctions allow time-variant system matrices and missing observations. In\ncase distributions of some or all elements of initial state vector are\nunknown, functions use exact diffuse initialisation.\n\nI hope that this package will be useful for people working with state\nspace models and time series in general. Any feedback is appreciated.\n\nYours,\n\nJouni Lehtonen\nUniversity of Jyväskylä\nFinland",
       "body_snippet": "Dear all,\n\nI am pleased to announce the CRAN release of a new package called 'KFAS' -\nKalman filter and smoother.\n\nThe package KFAS contains functions of multivariate Kalman filter,\nsmoother, simulati",
       "thread_id": "thread-eb8c2dfe5e41",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001049.html"
     }
   ],
   "threads": [

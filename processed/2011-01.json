@@ -17,7 +17,8 @@
       "body_snippet": "Dear R Community,\n\nI am happy to introduce the latest version 1.3-0 of the 'dclone' R package.\n\nThe package provides low level functions for implementing maximum\nlikelihood estimating procedures for c",
       "thread_id": "thread-2d9e1cbbd3e6",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001202.html"
     },
     {
       "id": "msg-c4fad0492949",
@@ -29,11 +30,12 @@
       "subject_clean": "orddom package for Ordinal Dominance Statistics",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff?s delta \nstatistics. It provides basic parameters for various robust tests of \nstochastic equality with ordinally scaled variables.\n\nFor two sets of data, ordinal comparison estimates are calculated such as\n- Cliff's delta (for which a Cohen's d effect size estimate, along with \nCIs are also calculated), (cf. Cliff, 1993; 1996; Long, Feng, & Cliff, \n2003; Feng & Cliff, 2004; Feng, 2007);\n\n- the Common Language CL effect size or Probability of Superiority (PS) \n(Grissom, 1994; Grissom & Kim, 2005) estimate; and\n\n- estimates of Vargha and Delaney?s A as stochastic superiority (Vargha \n& Delaney, 1998, 2000; Delaney & Vargha, 2002).\n\nReferences and details can be found in the package help manual.\nThe package is available as of now via\nhttp://cran.r-project.org/web/packages/orddom/index.html\n\nYour comments and suggestions are appreciated; please send your email to \njens.rogmann _AT_ uni-hamburg.de\n\nThank you,\nKind regards\n\nJens J. Rogmann\n---------------\nDr. J. J. Rogmann\nUniversit?t Hamburg\nFakultaet EPB / ABK\nDept of Psychology\nVon-Melle-Park 5/IV\nD-20146 Hamburg\nGermany",
-      "body_snippet": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff?s delta \n",
+      "body_plain": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff’s delta \nstatistics. It provides basic parameters for various robust tests of \nstochastic equality with ordinally scaled variables.\n\nFor two sets of data, ordinal comparison estimates are calculated such as\n- Cliff's delta (for which a Cohen's d effect size estimate, along with \nCIs are also calculated), (cf. Cliff, 1993; 1996; Long, Feng, & Cliff, \n2003; Feng & Cliff, 2004; Feng, 2007);\n\n- the Common Language CL effect size or Probability of Superiority (PS) \n(Grissom, 1994; Grissom & Kim, 2005) estimate; and\n\n- estimates of Vargha and Delaney’s A as stochastic superiority (Vargha \n& Delaney, 1998, 2000; Delaney & Vargha, 2002).\n\nReferences and details can be found in the package help manual.\nThe package is available as of now via\nhttp://cran.r-project.org/web/packages/orddom/index.html\n\nYour comments and suggestions are appreciated; please send your email to \njens.rogmann _AT_ uni-hamburg.de\n\nThank you,\nKind regards\n\nJens J. Rogmann\n---------------\nDr. J. J. Rogmann\nUniversität Hamburg\nFakultaet EPB / ABK\nDept of Psychology\nVon-Melle-Park 5/IV\nD-20146 Hamburg\nGermany",
+      "body_snippet": "Dear R-users,\n\na new R package has been released named orddom.\n\nThis package provides ordinal estimates as alternatives to independent \nor paired group mean comparisons, especially for Cliff’s delta \n",
       "thread_id": "thread-c4fad0492949",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001201.html"
     },
     {
       "id": "msg-1e6ab882caea",
@@ -49,7 +51,8 @@
       "body_snippet": "# plyr\n\nplyr is a set of tools for a common set of problems: you need to\n__split__ up a big data structure into homogeneous pieces, __apply__ a\nfunction to each piece and then __combine__ all the resu",
       "thread_id": "thread-1e6ab882caea",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001203.html"
     },
     {
       "id": "msg-ddc14ae28a36",
@@ -65,7 +68,8 @@
       "body_snippet": "Reshape2 is a reboot of the reshape package. It's been over five years\nsince the first release of the package, and in that time I've learned\na tremendous amount about R programming, and how to work wi",
       "thread_id": "thread-ddc14ae28a36",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001204.html"
     },
     {
       "id": "msg-213340080f0b",
@@ -81,7 +85,8 @@
       "body_snippet": "ENmisc contains two utility function\n\nmtapply is a hybrid of mapply and tapply. It evaluates summary function\nfor each cell of data defined by a fixed set of factor values.\nThe reason I wrote it was t",
       "thread_id": "thread-213340080f0b",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001205.html"
     },
     {
       "id": "msg-3c4c11a0c577",
@@ -97,7 +102,8 @@
       "body_snippet": "Hi,\n\nThe animation package 2.0-0 is on CRAN now. This version is a\nmilestone of the animation package. It includes a new function\nsaveHTML() which uses a much more elegant interface and is consistent\n",
       "thread_id": "thread-3c4c11a0c577",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001206.html"
     },
     {
       "id": "msg-09238f6a6da1",
@@ -113,7 +119,8 @@
       "body_snippet": "Hi,\n\nA new version (0.1-5) of Rd2roxygen is on CRAN now.\n\nRd2roxygen is a package to help developers transit from the raw Rd\nfiles to roxygen-style documentations, and it also has utilities to\nhelp bu",
       "thread_id": "thread-09238f6a6da1",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001207.html"
     },
     {
       "id": "msg-1cec123fb33b",
@@ -129,7 +136,8 @@
       "body_snippet": "Hi,\n\nThe package animation 2.0-1 is on CRAN now\n(http://cran.r-project.org/package=animation).\n\n\n? ? ? ? ? ? ? ? ?CHANGES IN animation VERSION 2.0-1\n\n\nNEW FEATURES\n\n? ?o demo('Xmas_card') contributed ",
       "thread_id": "thread-1cec123fb33b",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001208.html"
     },
     {
       "id": "msg-2fac83597bbe",
@@ -145,7 +153,8 @@
       "body_snippet": "------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nNew versions 2.3 of our distr-family of packages are ",
       "thread_id": "thread-2fac83597bbe",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001209.html"
     },
     {
       "id": "msg-3bb6aab7fb2f",
@@ -161,7 +170,8 @@
       "body_snippet": "Dear useRs,\n\nThis is to announce the RGtk2Extras R package is available on CRAN in version 0.5.1.\n\nThis package provides useful extras for R programmers who wish to create graphic user interfaces. It ",
       "thread_id": "thread-3bb6aab7fb2f",
       "thread_depth": 0,
-      "month": "2011-01"
+      "month": "2011-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2011/001210.html"
     }
   ],
   "threads": [

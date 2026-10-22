@@ -17,7 +17,8 @@
       "body_snippet": "The first non-maintenance update of RODBC since January 2003 is now on \nCRAN and will soon propagate to mirrors.  From the ChangeLog:\n\n        * Select the decimal point from Sys.localeconv.\n\n        ",
       "thread_id": "thread-f0c7fa80178a",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000565.html"
     },
     {
       "id": "msg-a28070e45e5c",
@@ -36,7 +37,8 @@
       "body_snippet": "Parallel programming with snowFT\n\nOur package snowFT is now available at CRAN. It is an extention of the\npackage snow, which adds fault tolerance (in the sense of recomputing\ncomputational units when ",
       "thread_id": "thread-a28070e45e5c",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000566.html"
     },
     {
       "id": "msg-aa4846359501",
@@ -52,7 +54,8 @@
       "body_snippet": "Rpad is an interactive, web-based analysis system. Rpad pages are\ninteractive workbook-type sheets based on R. Rpad is an analysis package, a\nweb-page designer, and a gui designer all wrapped in one. ",
       "thread_id": "thread-aa4846359501",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000567.html"
     },
     {
       "id": "msg-67a268b20fc8",
@@ -64,11 +67,12 @@
       "subject_clean": "New package: adehabitat",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently used in this field are available to\nhighlight habitat selection by animals (selection ratios, ENFA, habitat \nsuitability maps\nwith the algorithm DOMAIN or Resource Selection Functions)\nor to describe the movements and area used in radio-tracking studies \n(kernel or\nminimum convex polygon home range, computation of travel speed and turning \nangles).\nASCII raster maps exported from Arcview can also be imported, and basic GIS \noperations\nare available (e.g. spatial join, computation of buffers).\n\nThe package comes with a pdf documentation file which\ncontains an overview of the main classes of maps available\nin the package.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHere is the description file of the package:\n\nPackage: adehabitat\nVersion: 1.1\nDate: 2004/09/15\nTitle: Analysis of habitat selection by animals\nAuthor: Cl?ment Calenge, contributions from Mathieu Basille\nMaintainer: Cl?ment Calenge <calenge at biomserv.univ-lyon1.fr>\nDepends: R (>= 1.8.0), ade4\nDescription: A collection of tools for the analysis of habitat selection by \nanimals\nLicense: GPL version 2 or newer\n\nHappy testing\n\n\nCl?ment Calenge\n\n======================================\nUMR CNRS 5558 - Equipe \"Ecologie Statistique\"\nLaboratoire de Biom?trie et Biologie Evolutive\nUniversit? Claude Bernard Lyon 1\n43, Boulevard du 11 novembre 1918\n69622 Villeurbanne Cedex\nFRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_plain": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently used in this field are available to\nhighlight habitat selection by animals (selection ratios, ENFA, habitat \nsuitability maps\nwith the algorithm DOMAIN or Resource Selection Functions)\nor to describe the movements and area used in radio-tracking studies \n(kernel or\nminimum convex polygon home range, computation of travel speed and turning \nangles).\nASCII raster maps exported from Arcview can also be imported, and basic GIS \noperations\nare available (e.g. spatial join, computation of buffers).\n\nThe package comes with a pdf documentation file which\ncontains an overview of the main classes of maps available\nin the package.\n\nQuestions, comments and suggestions are greatly appreciated.\n\nHere is the description file of the package:\n\nPackage: adehabitat\nVersion: 1.1\nDate: 2004/09/15\nTitle: Analysis of habitat selection by animals\nAuthor: Clément Calenge, contributions from Mathieu Basille\nMaintainer: Clément Calenge <calenge at biomserv.univ-lyon1.fr>\nDepends: R (>= 1.8.0), ade4\nDescription: A collection of tools for the analysis of habitat selection by \nanimals\nLicense: GPL version 2 or newer\n\nHappy testing\n\n\nClément Calenge\n\n======================================\nUMR CNRS 5558 - Equipe \"Ecologie Statistique\"\nLaboratoire de Biométrie et Biologie Evolutive\nUniversité Claude Bernard Lyon 1\n43, Boulevard du 11 novembre 1918\n69622 Villeurbanne Cedex\nFRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have just uploaded a package to CRAN a new package called 'adehabitat'.\nThis package is intended for ecologists who want to analyse the use of \nspace by animals.\nMany functions currently ",
       "thread_id": "thread-67a268b20fc8",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000568.html"
     },
     {
       "id": "msg-eeea28da5c0c",
@@ -84,7 +88,8 @@
       "body_snippet": "Dear all,\n\nI would like to announce the availability of a new package on CRAN:\n\nncvar: High-level R Interface to NetCDF Datasets\n\nThis package provides a high-level R interface to Unidata's NetCDF\ndat",
       "thread_id": "thread-eeea28da5c0c",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000569.html"
     },
     {
       "id": "msg-63b4acf67715",
@@ -100,7 +105,8 @@
       "body_snippet": "We would like to announce the availability on CRAN of a new version (1.4)\nof our package \"distr\" .\n-----------------------------------------------------------------------------------------\nChanges fro",
       "thread_id": "thread-63b4acf67715",
       "thread_depth": 0,
-      "month": "2004-09"
+      "month": "2004-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2004/000570.html"
     }
   ],
   "threads": [

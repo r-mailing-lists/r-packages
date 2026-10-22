@@ -17,7 +17,8 @@
       "body_snippet": "- ndjdon : Wicked Fast ndjson Reader\n\n  Reads in ndjson significantly faster than jsonlite::stream_in(), flattens\neach\n  JSON record and returns a data.table.\n\n  https://cran.r-project.org/web/package",
       "thread_id": "thread-01dd41a50702",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001503.html"
     },
     {
       "id": "msg-21edad4a9bf8",
@@ -35,7 +36,8 @@
       "body_snippet": "Dear useRs,\n\nI am happy to announce that my package \"plotluck\" is now on CRAN:\n[1]https://cran.r-project.org/web/packages/plotluck/\n\nThe aim of the package is to let the user focus on what to plot, ra",
       "thread_id": "thread-21edad4a9bf8",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001506.html"
     },
     {
       "id": "msg-df2f43b5ae15",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear R users,\n\nI would like to announce an updated version of qualpalr:\n\nhttps://cran.r-project.org/package=qualpalr\n\nqualpalr uses color difference equations to generate distinct qualitative color pa",
       "thread_id": "thread-df2f43b5ae15",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001505.html"
     },
     {
       "id": "msg-49aedccc242b",
@@ -67,7 +70,8 @@
       "body_snippet": "[markdown format]\n\nI'm glad to introduce you the new package aVirtualTwins. This package is an adaptation of VirtualTwins method of subgroup identification from [Foster, J. C., Taylor, J. M.G. and Rub",
       "thread_id": "thread-49aedccc242b",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001504.html"
     },
     {
       "id": "msg-31c6a3676cb4",
@@ -83,7 +87,8 @@
       "body_snippet": "Dear R users,\n\n \n\nI'm pleased to announce that my first package has been accepted in CRAN.\n\n \n\nhttps://cran.r-project.org/web/packages/glm.predict/\n\n \n\nWith glm.predict it is possible to calculate dis",
       "thread_id": "thread-31c6a3676cb4",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001507.html"
     },
     {
       "id": "msg-b51052e26d00",
@@ -99,7 +104,8 @@
       "body_snippet": "Dear R users,\n\n\n\nI would like to announce the first version of eulerr (https://cran.r-project.org/package=eulerr). eulerr generates area-proportional euler diagrams that display set relationships (int",
       "thread_id": "thread-b51052e26d00",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001508.html"
     },
     {
       "id": "msg-2e0679b9ced2",
@@ -115,7 +121,8 @@
       "body_snippet": "Dear all,\n\nversion 0.40-0 of package NMOF is on CRAN now, 5 years\n(exactly) after its first release on CRAN.\n\n'NMOF' stands for 'Numerical Methods and Optimization\nin Finance'. The package accompanies",
       "thread_id": "thread-2e0679b9ced2",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001510.html"
     },
     {
       "id": "msg-cd6649d41a3b",
@@ -127,11 +134,12 @@
       "subject_clean": "New Package: pinbasic - Fast and Stable Estimation of the Probability of Informed Trading (PIN)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R-Users,\n\na new package, \"pinbasic\", is now available on CRAN. According to the \nDESCRIPTION:\n\n\nUtilities for fast and stable estimation of the probability of informed \ntrading (PIN) in the model introduced by Easley et al. (2002) \n<DOI:10.1111/1540-6261.00493> are implemented. Since the basic model \ndeveloped  by Easley et al. (1996) \n<DOI:10.1111/j.1540-6261.1996.tb04074.x> is nested in the former due to \nequating the intensity of uninformed buys and sells, functionalities  \ncan also be applied to this simpler model structure, if needed.\n\n\nA vignette will be added to the package in near future. However, the \nexisting manual pages should be a good starting point.\n\nDevelopment version of the package is available at:\n\nhttps://github.com/anre005/pinbasic\n\n-- \nDiplom-Kaufmann Andreas Recktenwald\nStatistik & ?konometrie\nRechts- und Wirtschaftswissenschaftliche Fakult?t\nUniversit?t des Saarlandes\nCampus C3 1, Raum 2.06\n66123 Saarbr?cken\nDeutschland",
+      "body_plain": "Dear R-Users,\n\na new package, \"pinbasic\", is now available on CRAN. According to the \nDESCRIPTION:\n\n\nUtilities for fast and stable estimation of the probability of informed \ntrading (PIN) in the model introduced by Easley et al. (2002) \n<DOI:10.1111/1540-6261.00493> are implemented. Since the basic model \ndeveloped  by Easley et al. (1996) \n<DOI:10.1111/j.1540-6261.1996.tb04074.x> is nested in the former due to \nequating the intensity of uninformed buys and sells, functionalities  \ncan also be applied to this simpler model structure, if needed.\n\n\nA vignette will be added to the package in near future. However, the \nexisting manual pages should be a good starting point.\n\nDevelopment version of the package is available at:\n\nhttps://github.com/anre005/pinbasic\n\n-- \nDiplom-Kaufmann Andreas Recktenwald\nStatistik & Ökonometrie\nRechts- und Wirtschaftswissenschaftliche Fakultät\nUniversität des Saarlandes\nCampus C3 1, Raum 2.06\n66123 Saarbrücken\nDeutschland",
       "body_snippet": "Dear R-Users,\n\na new package, \"pinbasic\", is now available on CRAN. According to the \nDESCRIPTION:\n\n\nUtilities for fast and stable estimation of the probability of informed \ntrading (PIN) in the model",
       "thread_id": "thread-cd6649d41a3b",
       "thread_depth": 0,
-      "month": "2016-10"
+      "month": "2016-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001509.html"
     }
   ],
   "threads": [

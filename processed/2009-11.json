@@ -17,7 +17,8 @@
       "body_snippet": "Dear R community,\n\nff Version 2.1.1 is available on CRAN. It now supports large data.frames, \ncsv import/export, packed atomic datatypes and bit filtering from package \n'bit' on which it depends from ",
       "thread_id": "thread-46cb2c4973f3",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001066.html"
     },
     {
       "id": "msg-d42a5d8ea5eb",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nAn update to version 1.4-1 of the TraMineR package is available on the \nCRAN. The package is intended for mining, describing and visualizing \nsequences of states or events and more gene",
       "thread_id": "thread-d42a5d8ea5eb",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001067.html"
     },
     {
       "id": "msg-85d29c1646c1",
@@ -45,11 +47,12 @@
       "subject_clean": "new dse package",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "With the release of R-2.10.0 I have divided the dse bundle into packages. The bundled package dse1 and part of dse2 are now in the new package dse. The remaining part of dse2 is in a new package EvalEst. The package dse does multivariate ARMA and state space time series modelling and forecasting, while package EvalEst is now focused on the evaluation of estimation methods. To aid transition, there are packages dse1 and dse2 on CRAN. These do nothing except require the new packages dse and EvalEst respectively, but should help prevent breaking of existing code that requires() dse1 or dse2.\n\nI have also taken this opportunity to do a long overdue cleanup of the Users' Guides distributed as vignettes in the packages.\n\nPaul Gilbert\n\n====================================================================================\n\nLa version fran?aise suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential in...{{dropped:26}}",
+      "body_plain": "With the release of R-2.10.0 I have divided the dse bundle into packages. The bundled package dse1 and part of dse2 are now in the new package dse. The remaining part of dse2 is in a new package EvalEst. The package dse does multivariate ARMA and state space time series modelling and forecasting, while package EvalEst is now focused on the evaluation of estimation methods. To aid transition, there are packages dse1 and dse2 on CRAN. These do nothing except require the new packages dse and EvalEst respectively, but should help prevent breaking of existing code that requires() dse1 or dse2.\n\nI have also taken this opportunity to do a long overdue cleanup of the Users' Guides distributed as vignettes in the packages.\n\nPaul Gilbert\n\n====================================================================================\n\nLa version française suit le texte anglais.\n\n------------------------------------------------------------------------------------\n\nThis email may contain privileged and/or confidential in...{{dropped:26}}",
       "body_snippet": "With the release of R-2.10.0 I have divided the dse bundle into packages. The bundled package dse1 and part of dse2 are now in the new package dse. The remaining part of dse2 is in a new package EvalE",
       "thread_id": "thread-85d29c1646c1",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001065.html"
     },
     {
       "id": "msg-2b8144ff579e",
@@ -61,11 +64,12 @@
       "subject_clean": "NEW release of FRAILTYPACK",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear All,\n\nWe are happy to announce, after a long gestation, the release of the new \nversion of FRAILTYPACK (version 2.2-9.5) which is now available from \nCRAN. The package fit general frailty models using penalized likelihood \nestimation, for clustered or recurrent events.\n\nFor instance :\n\n--  ADDITIVE FRAILTY MODELS for proportional hazards models with two \ncorrelated random effects (intercept random effect with random slope):\n\n  \nfitAdditive<-additivePenal(Surv(t1,t2,event)~cluster(group)+var1+slope(var1), \n\n  correlation=TRUE,data=dataAdditive,n.knots=8,kappa1=10000)\n\n\n--  NESTED FRAILTY MODELS for hierarchically clustered data (with 2 \nlevels of clustering) by including two random effects:\n\n  \nfitnested<-frailtyPenal(Surv(t1,t2,event)~cluster(group)+subcluster(subgroup), \n\n  data=dataNested,n.knots=8,kappa1=50000)\n\n-- JOINT FRAILTY MODELS in the context of joint modelling of recurrent \nevents with terminal event:\n\n  fitJoint<-frailtyPenal(Surv(time.entry,time.end,status)~cluster(id)+\n    \nterminal(status.terminal),formula.terminalEvent=~status.terminal,data=dataJoint \n\n  ,n.knots=12,kappa1=1,kappa2=1,joint=TRUE,recurrentAG=TRUE)\n\nWe included several examples.\n\n\n\nREFERENCES\n\n[1] Rondeau V, Michiels S, Liquet B, Pignon JP. Investigating trial and \ntreatment hete\nrogeneity in an individual patient data meta-analysis of survival data \nby means of the\npenalized maximum likelihood approach. Statistics in Medicine 2008 ;27 \n:1894-1910.\n\n[2] Rondeau V, Mathoulin-Pelissier S, Jacqmin-Gadda H, Brouste V, \nSoubeyran P. Joint\nfrailty models for recurring events and death using maximum penalized \nlikelihood es-\ntimation : application on cancer events. Biostatistics 2007 ; 8(4),708-721.\n\n[3] Rondeau V, Filleul L, Joly P. Nested frailty models using maximum \npenalized likelihood estimation. Statistics in Medicine. 2006 ;25(23) : \n4036-4052.\n\n[4] Rondeau V, Gonzalez JR. FRAILTYPACK : a computer program for the \nanalysis of\ncorrelated failure time data using penalized likelihood estimation. \nComputer Methods\nand Statistics in Biomedicine, 2005 ;80,154-164.\n\n[5] Rondeau V, Joly P, Commenges D. Maximum penalized likelihood \nestimation in frailty\nmodels. Lifetime Data Analysis, 2003 ;9 :139-153.\n\n-- \n_____________________________________________________________________\nVirginie RONDEAU, Ph.D. - Chercheur INSERM (CR1)\n\nINSERM U897 (Biostatistique),ISPED\nUniversit? Victor Segalen Bordeaux2,\n146 rue L?o Saignat,\n33076 Bordeaux Cedex, France.\n\nemail   : Virginie.Rondeau at isped.u-bordeaux2.fr\n\nweb site : http://biostat.isped.u-bordeaux2.fr/\nPhone   : (33) 557 574 531\nFax     : (33) 556 240 081",
+      "body_plain": "Dear All,\n\nWe are happy to announce, after a long gestation, the release of the new \nversion of FRAILTYPACK (version 2.2-9.5) which is now available from \nCRAN. The package fit general frailty models using penalized likelihood \nestimation, for clustered or recurrent events.\n\nFor instance :\n\n--  ADDITIVE FRAILTY MODELS for proportional hazards models with two \ncorrelated random effects (intercept random effect with random slope):\n\n  \nfitAdditive<-additivePenal(Surv(t1,t2,event)~cluster(group)+var1+slope(var1), \n\n  correlation=TRUE,data=dataAdditive,n.knots=8,kappa1=10000)\n\n\n--  NESTED FRAILTY MODELS for hierarchically clustered data (with 2 \nlevels of clustering) by including two random effects:\n\n  \nfitnested<-frailtyPenal(Surv(t1,t2,event)~cluster(group)+subcluster(subgroup), \n\n  data=dataNested,n.knots=8,kappa1=50000)\n\n-- JOINT FRAILTY MODELS in the context of joint modelling of recurrent \nevents with terminal event:\n\n  fitJoint<-frailtyPenal(Surv(time.entry,time.end,status)~cluster(id)+\n    \nterminal(status.terminal),formula.terminalEvent=~status.terminal,data=dataJoint \n\n  ,n.knots=12,kappa1=1,kappa2=1,joint=TRUE,recurrentAG=TRUE)\n\nWe included several examples.\n\n\n\nREFERENCES\n\n[1] Rondeau V, Michiels S, Liquet B, Pignon JP. Investigating trial and \ntreatment hete\nrogeneity in an individual patient data meta-analysis of survival data \nby means of the\npenalized maximum likelihood approach. Statistics in Medicine 2008 ;27 \n:1894-1910.\n\n[2] Rondeau V, Mathoulin-Pelissier S, Jacqmin-Gadda H, Brouste V, \nSoubeyran P. Joint\nfrailty models for recurring events and death using maximum penalized \nlikelihood es-\ntimation : application on cancer events. Biostatistics 2007 ; 8(4),708-721.\n\n[3] Rondeau V, Filleul L, Joly P. Nested frailty models using maximum \npenalized likelihood estimation. Statistics in Medicine. 2006 ;25(23) : \n4036-4052.\n\n[4] Rondeau V, Gonzalez JR. FRAILTYPACK : a computer program for the \nanalysis of\ncorrelated failure time data using penalized likelihood estimation. \nComputer Methods\nand Statistics in Biomedicine, 2005 ;80,154-164.\n\n[5] Rondeau V, Joly P, Commenges D. Maximum penalized likelihood \nestimation in frailty\nmodels. Lifetime Data Analysis, 2003 ;9 :139-153.\n\n-- \n_____________________________________________________________________\nVirginie RONDEAU, Ph.D. - Chercheur INSERM (CR1)\n\nINSERM U897 (Biostatistique),ISPED\nUniversité Victor Segalen Bordeaux2,\n146 rue Léo Saignat,\n33076 Bordeaux Cedex, France.\n\nemail   : Virginie.Rondeau at isped.u-bordeaux2.fr\n\nweb site : http://biostat.isped.u-bordeaux2.fr/\nPhone   : (33) 557 574 531\nFax     : (33) 556 240 081",
       "body_snippet": "Dear All,\n\nWe are happy to announce, after a long gestation, the release of the new \nversion of FRAILTYPACK (version 2.2-9.5) which is now available from \nCRAN. The package fit general frailty models ",
       "thread_id": "thread-2b8144ff579e",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001068.html"
     },
     {
       "id": "msg-5bc22ab85d5a",
@@ -81,7 +85,8 @@
       "body_snippet": "New versions of the 'mvbutils' and 'debug' packages are now available on CRAN. These should work with R 2.10 as well as R 2.9.\n\n'mvbutils' offers tools for organization of workspaces, function/documen",
       "thread_id": "thread-5bc22ab85d5a",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001069.html"
     },
     {
       "id": "msg-df75566c6d10",
@@ -97,7 +102,8 @@
       "body_snippet": "The new version 2.2 of our distr-family of packages has now been \navailable on CRAN for several days. As there were many changes we will \nonly sketch the most important ones here. For more details see",
       "thread_id": "thread-df75566c6d10",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001070.html"
     },
     {
       "id": "msg-437a5001a781",
@@ -113,7 +119,8 @@
       "body_snippet": "The 'NMF' package implements a number of standard algorithms to perform \nNonnegative Matrix Factorization.\nIt also provides a flexible framework to easily test and develop new \nmethods, as well as a l",
       "thread_id": "thread-437a5001a781",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001071.html"
     }
   ],
   "threads": [

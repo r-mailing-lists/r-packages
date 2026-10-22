@@ -17,7 +17,8 @@
       "body_snippet": "Dear R users,\n\nI am happy to announce that my new package PDtoolkit is now available on\nCRAN.\n\nThe goal of this package is to cover the most common steps in probability\nof default (PD) rating model de",
       "thread_id": "thread-df9d183c473f",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001788.html"
     },
     {
       "id": "msg-4e32330065f5",
@@ -35,7 +36,8 @@
       "body_snippet": "Dear R users,\n\nIt is now possible to create and annotate Holdridge life zone plots using\nfunctions modelled on the standard graphics package using the the package\n\"Ternary\", whose v2.0 release is now ",
       "thread_id": "thread-4e32330065f5",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001789.html"
     },
     {
       "id": "msg-efa6b3ca7269",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear R users,\n\nPackage \"Rogue\" has been published on CRAN:\nhttps://CRAN.R-project.org/package=Rogue.\n\n\"Rogue\" improves phylogenetic analysis by detecting wildcard taxa whose\ninconsistent position redu",
       "thread_id": "thread-efa6b3ca7269",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001790.html"
     },
     {
       "id": "msg-741ef5585d28",
@@ -63,11 +66,12 @@
       "subject_clean": "Analysis of phylogenetic datasets in R: package \"TreeSearch\"",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nTreeSearch is an R package for phylogenetic analysis, optimized for\nmorphological datasets. Tree search may be conducted using under equal or\nimplied step weights with an explicit (albeit inexact) allowance for\ninapplicable character entries, avoiding some of the pitfalls inherent in\nstandard parsimony methods. Profile parsimony and user-specified optimality\ncriteria are supported.\n\nA graphical interface, which requires no familiarity with R, is designed to\nhelp a user to improve the quality of datasets through critical review of\nunderpinning character codings; and to obtain additional information from\nresults by identifying and summarising clusters of similar trees, mapping\nthe distribution of trees, and removing ?rogue? taxa that obscure\nunderlying relationships.\n\nTaken together, the package aims to support methodological rigour at each\nstep of data collection, analysis, and the exploration of phylogenetic\nresults.\n\nA stable release of TreeSearch is now on CRAN:\nhttps://CRAN.R-project.org/package=TreeSearch\n\nAn introduction to the package is provided in the vignette:\nhttps://ms609.github.io/TreeSearch/articles/tree-search.html\n\nFurther details are in the BioR?iv preprint:\nhttps://www.biorxiv.org/content/10.1101/2021.11.08.467735\n\nRegards,\n\nMartin\n\n\n--\n\n*Dr. Martin R. Smith*\nAssociate Professor in Palaeontology\nDurham University\nDepartment of Earth Sciences\nMountjoy Site, South Road, Durham, DH1 3LE United Kingdom\n\n*M*: +44 (0)774 353 7510\n*E*: martin.smith at durham.ac.uk\n\nsmithlabdurham.github.io\ntwitter.com/PalaeoSmith\n\nMy working days are Monday?Thursday.\n\nThe information in this e-mail and any attachments is co...{{dropped:13}}",
+      "body_plain": "Dear R users,\n\nTreeSearch is an R package for phylogenetic analysis, optimized for\nmorphological datasets. Tree search may be conducted using under equal or\nimplied step weights with an explicit (albeit inexact) allowance for\ninapplicable character entries, avoiding some of the pitfalls inherent in\nstandard parsimony methods. Profile parsimony and user-specified optimality\ncriteria are supported.\n\nA graphical interface, which requires no familiarity with R, is designed to\nhelp a user to improve the quality of datasets through critical review of\nunderpinning character codings; and to obtain additional information from\nresults by identifying and summarising clusters of similar trees, mapping\nthe distribution of trees, and removing ‘rogue’ taxa that obscure\nunderlying relationships.\n\nTaken together, the package aims to support methodological rigour at each\nstep of data collection, analysis, and the exploration of phylogenetic\nresults.\n\nA stable release of TreeSearch is now on CRAN:\nhttps://CRAN.R-project.org/package=TreeSearch\n\nAn introduction to the package is provided in the vignette:\nhttps://ms609.github.io/TreeSearch/articles/tree-search.html\n\nFurther details are in the BioRχiv preprint:\nhttps://www.biorxiv.org/content/10.1101/2021.11.08.467735\n\nRegards,\n\nMartin\n\n\n--\n\n*Dr. Martin R. Smith*\nAssociate Professor in Palaeontology\nDurham University\nDepartment of Earth Sciences\nMountjoy Site, South Road, Durham, DH1 3LE United Kingdom\n\n*M*: +44 (0)774 353 7510\n*E*: martin.smith at durham.ac.uk\n\nsmithlabdurham.github.io\ntwitter.com/PalaeoSmith\n\nMy working days are Monday–Thursday.\n\nThe information in this e-mail and any attachments is co...{{dropped:13}}",
       "body_snippet": "Dear R users,\n\nTreeSearch is an R package for phylogenetic analysis, optimized for\nmorphological datasets. Tree search may be conducted using under equal or\nimplied step weights with an explicit (albe",
       "thread_id": "thread-741ef5585d28",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001791.html"
     },
     {
       "id": "msg-8ceacbbd7ab2",
@@ -83,7 +87,8 @@
       "body_snippet": "Dear R users,\n\nA new package \"steprf\" has been published on CRAN:\nhttps://cran.r-project.org/web/packages/steprf/index.html.\n\nIt introduces several novel predictive variable selection methods for\nrand",
       "thread_id": "thread-8ceacbbd7ab2",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001792.html"
     },
     {
       "id": "msg-97debe2480a6",
@@ -99,7 +104,8 @@
       "body_snippet": "Hello everyone,\n\n\nR package 'this.path' has received an update, the current version\nnumber is 0.5.0\nYou can find this package at:\n\nhttps://CRAN.R-project.org/package=this.path\n\nUpdates include:\n\n(1) a",
       "thread_id": "thread-97debe2480a6",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001793.html"
     },
     {
       "id": "msg-4d9a0e338a04",
@@ -111,11 +117,12 @@
       "subject_clean": "latex2exp 0.9.0: Use LaTeX Expressions in Plots",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R users,\n\nlatex2exp is an R package to use a subset of LaTeX to create formatted\ntext and mathematical formulas and symbols. It can be used for axis\nlabels, annotations, legends, titles, etc. throughout R?s plotting\nsystem and ggplot2.\n\nA call to TeX() such as `TeX(r\"(\\textbf{Euler's identity} is $e^{i\\pi}\n+ 1 = 0$.)\")` will return an expression containing the formatted text\nand equation, suitable for plotting. latex2exp works by parsing the\nprovided LaTeX string and converting it to R's plotmath expressions.\n\nA new major version of latex2exp (0.9.0), containing a rewritten\nparser, tens of new commands and symbols, and many bug fixes, is now\navailable on CRAN:\nhttps://cran.r-project.org/package=latex2exp\n\nA website for the package, with examples, vignettes, and a searchable\ntable of supported LaTeX commands, is available at:\nhttps://stefano-meschiari.github.io/latex2exp\n\nFinally, issues should be reported at:\nhttps://github.com/stefano-meschiari/latex2exp/\n\nBest regards,\nStefano\n-- \nStefano Meschiari\nhttp://www.stefanom.io",
+      "body_plain": "Dear R users,\n\nlatex2exp is an R package to use a subset of LaTeX to create formatted\ntext and mathematical formulas and symbols. It can be used for axis\nlabels, annotations, legends, titles, etc. throughout R’s plotting\nsystem and ggplot2.\n\nA call to TeX() such as `TeX(r\"(\\textbf{Euler's identity} is $e^{i\\pi}\n+ 1 = 0$.)\")` will return an expression containing the formatted text\nand equation, suitable for plotting. latex2exp works by parsing the\nprovided LaTeX string and converting it to R's plotmath expressions.\n\nA new major version of latex2exp (0.9.0), containing a rewritten\nparser, tens of new commands and symbols, and many bug fixes, is now\navailable on CRAN:\nhttps://cran.r-project.org/package=latex2exp\n\nA website for the package, with examples, vignettes, and a searchable\ntable of supported LaTeX commands, is available at:\nhttps://stefano-meschiari.github.io/latex2exp\n\nFinally, issues should be reported at:\nhttps://github.com/stefano-meschiari/latex2exp/\n\nBest regards,\nStefano\n-- \nStefano Meschiari\nhttp://www.stefanom.io",
       "body_snippet": "Dear R users,\n\nlatex2exp is an R package to use a subset of LaTeX to create formatted\ntext and mathematical formulas and symbols. It can be used for axis\nlabels, annotations, legends, titles, etc. thr",
       "thread_id": "thread-4d9a0e338a04",
       "thread_depth": 0,
-      "month": "2022-01"
+      "month": "2022-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2022/001794.html"
     }
   ],
   "threads": [

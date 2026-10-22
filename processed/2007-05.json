@@ -17,7 +17,8 @@
       "body_snippet": "Dear useRs:\n\nRelease 2.1.0 of the randomSurvivalForest package is now available.\n--------------------------------------------------------------------------------------------------\nCHANGES TO RELEASE 2",
       "thread_id": "thread-dc759531abdc",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000797.html"
     },
     {
       "id": "msg-8a6c67a1324a",
@@ -29,11 +30,12 @@
       "subject_clean": "Ryacas now on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be used for\ncomputer algebra, exact arithmetic, ASCII pretty printing\nand R to TeX output. R, yacas and Ryacas are all free\nsoftware packages distributed under the GPL version 2.\n\nRyacas is written in R. It uses a recursive decent\nR-to-yacas translator and an XML-based OpenMath yacas-to-R\ntranslator. yacas is run as a second process to which\nR communicates via a socket interface.\n\nThere are 8 different user level interfaces\n(yacas.character, yacas.expression, yacas.function,\nyacas.formula, Sym objects, Expr objects, yacmode and\nrunYacas).  Most users will primarily use Sym objects.\n\nNEW INSTALLATION FOR WINDOWS USERS\n\nA key change in moving to CRAN is that yacas.exe is no longer\npart of the Ryacas distribution so that Windows users must\nseparately install yacas 1.0.63. :(  Non-windows users always\nhad to separately install yacas.  To simplify this somewhat\nthe yacasInstall() R command will download and install yacas from\nwithin R on Windows:\n\n\t# Windows installation procedure\n\tinstall.packages(\"Ryacas\", dep = TRUE)\n\tlibrary(Ryacas)\n\tyacasInstall()\n\nFor non-windows users the installation procedure is the same as\nbefore; namely, install yacas and then install the Ryacas R package.\nyacasInstall is not available on non-Windows systems.  More\ninstallation information is available on the Ryacas home page.\n\nLINKS\n\nHome Page (Overview, News, Installation, Sample Session, Links, SVN)\nhttp://code.google.com/p/ryacas/\n\nNews (on source changes; not entirely same as home page news)\nhttp://ryacas.googlecode.com/svn/trunk/inst/NEWS\n\nVignette (includes many examples)\nhttp://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n\n\nSAMPLE SESSION\n(need fixed font email viewer to view correctly)\n\n> library(Ryacas)\n\n>\n> # algebra\n>\n> library(Ryacas)\n> x <- Sym('x')\n> (x+1) * (x-1)\nexpression((x + 1) * (x - 1))\n> Simplify(\"%\")\nexpression(x^2 - 1)\n> PrettyForm(\"%\")\n 2\nx  - 1\n\n>\n> # calculus\n>\n> Integrate(x+tan(x), x)\nexpression(x^2/2 - log(cos(x)))\n\n>\n> # exact arithmetic\n>\n> yacas('12/24')\nexpression(1/2)\n\n>\n> # ASCII pretty printing\n>\n> exp(-x^2)/(cos(x)+exp(x))\nexpression(exp(-x^2)/(cos(x) + exp(x)))\n> PrettyForm(\"%\")\n     /  /  2 \\ \\\n  Exp\\ -\\ x  / /\n-------------------\nCos( x ) + Exp( x )\n\n>\n> # matrix - yacas matrices are row-wise\n>\n\n> List(List(1,2),List(x,6))\nexpression(list(list(1, 2), list(x, 6)))\n> PrettyForm(\"%\")\n/              \\\n| ( 1 ) ( 2 )  |\n|              |\n| ( x ) ( 6 )  |\n\\              /\n\n>\n> # output TeX\n>\n> k <- Sym('k')\n> yacas(TeXForm((x+1)^2 + k^3), retclass = 'unquote')\n$\\left( x + 1\\right)  ^{2} + k ^{3}$\n\n>\n> detach()\n>\n\nyacas was developed by Ayal Pinkus and other contributors.\n\nRyacas was developed by Rob Goedman, Gabor Grothendieck,\nS?ren H?jsgaard and Ayal Pinkus.   Contact Rob for Mac\nissues and Gabor for all other issues.",
+      "body_plain": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be used for\ncomputer algebra, exact arithmetic, ASCII pretty printing\nand R to TeX output. R, yacas and Ryacas are all free\nsoftware packages distributed under the GPL version 2.\n\nRyacas is written in R. It uses a recursive decent\nR-to-yacas translator and an XML-based OpenMath yacas-to-R\ntranslator. yacas is run as a second process to which\nR communicates via a socket interface.\n\nThere are 8 different user level interfaces\n(yacas.character, yacas.expression, yacas.function,\nyacas.formula, Sym objects, Expr objects, yacmode and\nrunYacas).  Most users will primarily use Sym objects.\n\nNEW INSTALLATION FOR WINDOWS USERS\n\nA key change in moving to CRAN is that yacas.exe is no longer\npart of the Ryacas distribution so that Windows users must\nseparately install yacas 1.0.63. :(  Non-windows users always\nhad to separately install yacas.  To simplify this somewhat\nthe yacasInstall() R command will download and install yacas from\nwithin R on Windows:\n\n\t# Windows installation procedure\n\tinstall.packages(\"Ryacas\", dep = TRUE)\n\tlibrary(Ryacas)\n\tyacasInstall()\n\nFor non-windows users the installation procedure is the same as\nbefore; namely, install yacas and then install the Ryacas R package.\nyacasInstall is not available on non-Windows systems.  More\ninstallation information is available on the Ryacas home page.\n\nLINKS\n\nHome Page (Overview, News, Installation, Sample Session, Links, SVN)\nhttp://code.google.com/p/ryacas/\n\nNews (on source changes; not entirely same as home page news)\nhttp://ryacas.googlecode.com/svn/trunk/inst/NEWS\n\nVignette (includes many examples)\nhttp://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n\n\nSAMPLE SESSION\n(need fixed font email viewer to view correctly)\n\n> library(Ryacas)\n\n>\n> # algebra\n>\n> library(Ryacas)\n> x <- Sym('x')\n> (x+1) * (x-1)\nexpression((x + 1) * (x - 1))\n> Simplify(\"%\")\nexpression(x^2 - 1)\n> PrettyForm(\"%\")\n 2\nx  - 1\n\n>\n> # calculus\n>\n> Integrate(x+tan(x), x)\nexpression(x^2/2 - log(cos(x)))\n\n>\n> # exact arithmetic\n>\n> yacas('12/24')\nexpression(1/2)\n\n>\n> # ASCII pretty printing\n>\n> exp(-x^2)/(cos(x)+exp(x))\nexpression(exp(-x^2)/(cos(x) + exp(x)))\n> PrettyForm(\"%\")\n     /  /  2 \\ \\\n  Exp\\ -\\ x  / /\n-------------------\nCos( x ) + Exp( x )\n\n>\n> # matrix - yacas matrices are row-wise\n>\n\n> List(List(1,2),List(x,6))\nexpression(list(list(1, 2), list(x, 6)))\n> PrettyForm(\"%\")\n/              \\\n| ( 1 ) ( 2 )  |\n|              |\n| ( x ) ( 6 )  |\n\\              /\n\n>\n> # output TeX\n>\n> k <- Sym('k')\n> yacas(TeXForm((x+1)^2 + k^3), retclass = 'unquote')\n$\\left( x + 1\\right)  ^{2} + k ^{3}$\n\n>\n> detach()\n>\n\nyacas was developed by Ayal Pinkus and other contributors.\n\nRyacas was developed by Rob Goedman, Gabor Grothendieck,\nSøren Højsgaard and Ayal Pinkus.   Contact Rob for Mac\nissues and Gabor for all other issues.",
       "body_snippet": "Ryacas is now available on CRAN.  (Previously it was\navailable on the Omegahat repository.)\n\nRyacas is an R package that provides an interface from R to\nthe yacas computer algebra system.   It can be ",
       "thread_id": "thread-8a6c67a1324a",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000798.html"
     },
     {
       "id": "msg-0f6fb57e20b2",
@@ -49,7 +51,8 @@
       "body_snippet": "the DESCRIPTION file:\n\nPackage: RSVGTipsDevice\nVersion: 0.7.0\nDate:    04/30/2007\nTitle:   An R SVG graphics device with dynamic tips and hyperlinks\nAuthor:  Tony Plate <tplate at acm.org>, based on R",
       "thread_id": "thread-0f6fb57e20b2",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000799.html"
     },
     {
       "id": "msg-f04928984ad9",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R useRs,\n\nA new package 'Reliability' is now available on CRAN. It is mainly a set \nof functions functions for estimating parameters in software reliability \nmodels. Only infinite failure models ",
       "thread_id": "thread-f04928984ad9",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000800.html"
     },
     {
       "id": "msg-7c3afd2f7012",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new version of package `ltm' \n(i.e., ltm_0.8-0 soon available from CRAN) for Item Response Theory \nanalyses. This package provides a flexible fra",
       "thread_id": "thread-7c3afd2f7012",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000801.html"
     },
     {
       "id": "msg-d7b2e2184eef",
@@ -97,7 +102,8 @@
       "body_snippet": "I have just submitted irtoys_0.1.0, a package potentially useful for \nthose working with IRT models. It can fit the 1PL, 2PL, and 3PL models \nthrough a simple and unified syntax, using either the R pa",
       "thread_id": "thread-d7b2e2184eef",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000802.html"
     },
     {
       "id": "msg-68051ba7ecbd",
@@ -114,6 +120,7 @@
       "thread_id": "thread-68051ba7ecbd",
       "thread_depth": 0,
       "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000803.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20070508/eb1b1c00/attachment.pl"
       ]
@@ -132,7 +139,8 @@
       "body_snippet": "The \"earth\" package is now available on CRAN.\n\nEarth builds models using Friedman's MARS.\n\nEarth's principal advantages over the existing function mda::mars are that \nit is much faster and provides pl",
       "thread_id": "thread-9cf8c29d6994",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000804.html"
     },
     {
       "id": "msg-c521d2ad3120",
@@ -144,11 +152,12 @@
       "subject_clean": "new packages 'ICS' and 'ICSNP'",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear R useRs,\n\nThe new contributed packages 'ICS' and 'ICSNP' are available on CRAN.\n\nDescriptions:\n\nThe 'ICS' package implements the 2 scatter matrix transformation to \nobtain an invariant coordinate system or independent components, \ndepending on the underlying assumptions. The result of the \ntransformation is an object of the S4 class ics which is provided by \nthis package. Besides generic functions to create and work with ics \nobjects the package contains also some scatter matrices and two tests \nfor multinormality.\n\n\nThe 'ICSNP' package contains tools for nonparametric multivariate \nanalysis, including the estimation of location and shape as well as some \ntests for location and independence. Shape matrices from this package \ncan be used as one of the scatter matrices needed in the package ICS \nwhereas the tests of this package can be used for testing in the \nframework of invariant coordinates or independent components obtained \nfrom the package ICS. The parametric Hotelling?s T test serves as a \nreference for the nonparametric location tests.\n\nSuggestions, bug reports and other comments are very welcome.\n\nBest wishes,\n\nKlaus, Seija, Hannu and Dave\n\n-- \nKlaus Nordhausen\nResearcher\nTampere School of Public Health\nFIN-33014 University of Tampere\n\nphone:\t+358 3 3551 7086\nfax:\t+358 3 3551 6057\ne-mail:\tKlaus.Nordhausen at uta.fi",
+      "body_plain": "Dear R useRs,\n\nThe new contributed packages 'ICS' and 'ICSNP' are available on CRAN.\n\nDescriptions:\n\nThe 'ICS' package implements the 2 scatter matrix transformation to \nobtain an invariant coordinate system or independent components, \ndepending on the underlying assumptions. The result of the \ntransformation is an object of the S4 class ics which is provided by \nthis package. Besides generic functions to create and work with ics \nobjects the package contains also some scatter matrices and two tests \nfor multinormality.\n\n\nThe 'ICSNP' package contains tools for nonparametric multivariate \nanalysis, including the estimation of location and shape as well as some \ntests for location and independence. Shape matrices from this package \ncan be used as one of the scatter matrices needed in the package ICS \nwhereas the tests of this package can be used for testing in the \nframework of invariant coordinates or independent components obtained \nfrom the package ICS. The parametric Hotelling’s T test serves as a \nreference for the nonparametric location tests.\n\nSuggestions, bug reports and other comments are very welcome.\n\nBest wishes,\n\nKlaus, Seija, Hannu and Dave\n\n-- \nKlaus Nordhausen\nResearcher\nTampere School of Public Health\nFIN-33014 University of Tampere\n\nphone:\t+358 3 3551 7086\nfax:\t+358 3 3551 6057\ne-mail:\tKlaus.Nordhausen at uta.fi",
       "body_snippet": "Dear R useRs,\n\nThe new contributed packages 'ICS' and 'ICSNP' are available on CRAN.\n\nDescriptions:\n\nThe 'ICS' package implements the 2 scatter matrix transformation to \nobtain an invariant coordinate",
       "thread_id": "thread-c521d2ad3120",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000805.html"
     },
     {
       "id": "msg-f428c27f3130",
@@ -164,7 +173,8 @@
       "body_snippet": "I uploaded a new version of the lars package to CRAN,\nwhich incorporates some nontrivial changes.\n\n1) lars now has normalize and intercept options, both defaulted to TRUE,\nwhich means the variables ar",
       "thread_id": "thread-f428c27f3130",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000806.html"
     },
     {
       "id": "msg-a148409267d3",
@@ -176,11 +186,12 @@
       "subject_clean": "new packages psyphy and MLDS",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' from several\n   different experimental designs, links for mafc to be\n   used with the binomial family in glm (and possibly\n   other contexts) and selfStart functions for estimating gamma values\n  for CRT (and possibley other RGB) screen calibration data.\n\nMLDS implements analyses for Maximum Likelihood Difference Scaling.\nDifference scaling is a method for scaling perceived super-threshold\ndifferences. The package contains functions that allow the user to fit\nthe resulting data by maximum likelihood and to test the internal \nvalidity\nof the estimated scale.   There are also example functions that might\nbe used to design and run a difference scaling experiment,\n\nAny suggestioins, criticisms, bug-reports, etc. are always welcome.\n\nBest,\n\nKen Knoblauch\n\n-- \nKen Knoblauch\nInserm U846\nInstitut Cellule Souche et Cerveau\nD?partement Neurosciences Int?gratives\n18 avenue du Doyen L?pine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.pizzerialesgemeaux.com/u846/",
+      "body_plain": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' from several\n   different experimental designs, links for mafc to be\n   used with the binomial family in glm (and possibly\n   other contexts) and selfStart functions for estimating gamma values\n  for CRT (and possibley other RGB) screen calibration data.\n\nMLDS implements analyses for Maximum Likelihood Difference Scaling.\nDifference scaling is a method for scaling perceived super-threshold\ndifferences. The package contains functions that allow the user to fit\nthe resulting data by maximum likelihood and to test the internal \nvalidity\nof the estimated scale.   There are also example functions that might\nbe used to design and run a difference scaling experiment,\n\nAny suggestioins, criticisms, bug-reports, etc. are always welcome.\n\nBest,\n\nKen Knoblauch\n\n-- \nKen Knoblauch\nInserm U846\nInstitut Cellule Souche et Cerveau\nDépartement Neurosciences Intégratives\n18 avenue du Doyen Lépine\n69500 Bron\nFrance\ntel: +33 (0)4 72 91 34 77\nfax: +33 (0)4 72 91 34 61\nportable: +33 (0)6 84 10 64 10\nhttp://www.pizzerialesgemeaux.com/u846/",
       "body_snippet": "New packages psyphy and MLDS are available on CRAN:\n\npsyphy ncludes an assortment of functions\n  useful in  analyzing data from pyschophysical experiments. It\n   includes functions for calculating d' ",
       "thread_id": "thread-a148409267d3",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000809.html"
     },
     {
       "id": "msg-824b1af4d37a",
@@ -196,7 +207,8 @@
       "body_snippet": "Dear List:\n\nI have uploaded version 1.0-4 of DPpackage on CRAN. Since the first  \nversion (1.0-0), I have not communicated the improvements of the  \npackage. I'll use this email to summarize its curre",
       "thread_id": "thread-824b1af4d37a",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000808.html"
     },
     {
       "id": "msg-9afaaad019c2",
@@ -212,7 +224,8 @@
       "body_snippet": "I'd like to announce a new version, 1.3-0, of the Rcmdr package. The Rcmdr\npackage provides a basic-statistics graphical user interface (GUI) to R. \n\nBeyond small changes and additions, this new versi",
       "thread_id": "thread-9afaaad019c2",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000807.html"
     },
     {
       "id": "msg-9a6c53b6a097",
@@ -228,7 +241,8 @@
       "body_snippet": "I posted a revised Rcmdr.HH_1.8-0 package on CRAN.\n\nThe Rcmdr.HH package adds additional menu items to the Rcmdr package by\nJohn Fox.  Our introductory course at Temple University includes several\ntop",
       "thread_id": "thread-9a6c53b6a097",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000810.html"
     },
     {
       "id": "msg-72909181d5d9",
@@ -240,11 +254,12 @@
       "subject_clean": "adehabitat version 1.6",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.6 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* The package has been reorganized into four parts (see\n?adehabitat-package for a description): (i) management of raster maps,\n(ii) habitat selection / ecological niche analysis, (iii) home range\nanalysis, and (iv) analysis of animals trajects. The package contains\nseveral demo files to allow an overview of these parts :\ndemo(rastermaps), demo(homerange), demo(managltraj),\ndemo(analysisltraj), demo(nichehs).\n\n* the package now contains a new function allowing the exploration of\nthe ecological niche, which generalizes several factor analyses (ENFA,\nMADIFA, ...) and is closely related to several methods (Mahalanobis\ndistances, selection ratios, etc.), named gnesfa() (see the examples of\nthe help page for the properties of this analysis).\n\n* The class ltraj now distinguishes two types of trajects: type I (time\nnot recorded, e.g. tracks of animals in the snow) and type II (time\nrecorded, e.g. GPS monitoring). Trajects of type II may either be\n\"regular\" (constant time lag between relocations) or not.\n\n* Numerous example datasets have been added to the package to illustrate\nthe analysis of animals trajects: 4 porpoises, 6 albatross, 1 hooded\nseal, 1 whale, 1 brown bear, two roe deer, two chamois, 4 ibex, 1\nmouflon, 3 wild boar\n\n* Many functions have been added to allow the management of animals\ntrajects within R: Some functions allow to handle the attributes or the\nstorage of the trajects  (typeII2typeI, typeI2typeII, sett0, cutltr,\nis.regular, is.sd, mindistkeep, offsetdate, set.limits), other allow to\nmanage missing values and test their random distribution in the traject\n(setNA, summaryNAltraj, plotNAltraj, runsNAltraj), other allow a\ngraphical exploration of the properties of the trajects (hist.ltraj,\nplot.ltraj, plotltr, sliwinltr).\n\n* Several functions now allow to test the independence of the\ndescriptive parameters in the trajects (indmove and wawotest for dx, dy\nand dist, testang.ltraj for rel.angle and abs.angle)\n\n* Several functions allow to simulate common models of trajects: the\ncorrelated random walk (simm.crw), the brownian motion (simm.brown), the\narithmetic brownian motion (simm.mba), the Ornstein Uhlenbeck process\n(simm.mou), the brownian bridge (simm.bb) and the Levy process (simm.levy).\n\n* The function explore.kasc() provides a Tk interface for the\nexploration of a multi-layer raster map of class \"kasc\"\n\n* A partitioning algorithm (still under research) is also available to\npartition a traject into segments with homogeneous properties (see the\nhelp page of modpartltraj)\n\n* The bugs in redisltraj and mcp.area have been corrected\n\nHappy testing,\n\n\nCl?ment CALENGE\n-- \nCl?ment CALENGE\nLaboratoire de Biom?trie et Biologie ?volutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France\nOffice national de la chasse et de la faune sauvage\n95, rue Pierre Flourens\n34000 Montpellier",
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.6 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* The package has been reorganized into four parts (see\n?adehabitat-package for a description): (i) management of raster maps,\n(ii) habitat selection / ecological niche analysis, (iii) home range\nanalysis, and (iv) analysis of animals trajects. The package contains\nseveral demo files to allow an overview of these parts :\ndemo(rastermaps), demo(homerange), demo(managltraj),\ndemo(analysisltraj), demo(nichehs).\n\n* the package now contains a new function allowing the exploration of\nthe ecological niche, which generalizes several factor analyses (ENFA,\nMADIFA, ...) and is closely related to several methods (Mahalanobis\ndistances, selection ratios, etc.), named gnesfa() (see the examples of\nthe help page for the properties of this analysis).\n\n* The class ltraj now distinguishes two types of trajects: type I (time\nnot recorded, e.g. tracks of animals in the snow) and type II (time\nrecorded, e.g. GPS monitoring). Trajects of type II may either be\n\"regular\" (constant time lag between relocations) or not.\n\n* Numerous example datasets have been added to the package to illustrate\nthe analysis of animals trajects: 4 porpoises, 6 albatross, 1 hooded\nseal, 1 whale, 1 brown bear, two roe deer, two chamois, 4 ibex, 1\nmouflon, 3 wild boar\n\n* Many functions have been added to allow the management of animals\ntrajects within R: Some functions allow to handle the attributes or the\nstorage of the trajects  (typeII2typeI, typeI2typeII, sett0, cutltr,\nis.regular, is.sd, mindistkeep, offsetdate, set.limits), other allow to\nmanage missing values and test their random distribution in the traject\n(setNA, summaryNAltraj, plotNAltraj, runsNAltraj), other allow a\ngraphical exploration of the properties of the trajects (hist.ltraj,\nplot.ltraj, plotltr, sliwinltr).\n\n* Several functions now allow to test the independence of the\ndescriptive parameters in the trajects (indmove and wawotest for dx, dy\nand dist, testang.ltraj for rel.angle and abs.angle)\n\n* Several functions allow to simulate common models of trajects: the\ncorrelated random walk (simm.crw), the brownian motion (simm.brown), the\narithmetic brownian motion (simm.mba), the Ornstein Uhlenbeck process\n(simm.mou), the brownian bridge (simm.bb) and the Levy process (simm.levy).\n\n* The function explore.kasc() provides a Tk interface for the\nexploration of a multi-layer raster map of class \"kasc\"\n\n* A partitioning algorithm (still under research) is also available to\npartition a traject into segments with homogeneous properties (see the\nhelp page of modpartltraj)\n\n* The bugs in redisltraj and mcp.area have been corrected\n\nHappy testing,\n\n\nClément CALENGE\n-- \nClément CALENGE\nLaboratoire de Biométrie et Biologie évolutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France\nOffice national de la chasse et de la faune sauvage\n95, rue Pierre Flourens\n34000 Montpellier",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.6 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* The package has been reorganized into four parts (see\n?adehabitat-package ",
       "thread_id": "thread-72909181d5d9",
       "thread_depth": 0,
-      "month": "2007-05"
+      "month": "2007-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000811.html"
     }
   ],
   "threads": [

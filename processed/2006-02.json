@@ -17,7 +17,8 @@
       "body_snippet": "I am pleased to announce the first beta release of RGtk2, the R binding \nto GTK 2.0 (actually 2.8.0). RGtk2 works on all three major platforms \n(Linux, Mac, and Windows) and allows one to construct fu",
       "thread_id": "thread-c4467e70383b",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000675.html"
     },
     {
       "id": "msg-7f0d559c7b05",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R-packages list members,\n\nLast month, Peter Muhlberger posted a message to the r-help list that\nsuggested, among other things, a desire for a more convenient method of\nperforming Wald tests for s",
       "thread_id": "thread-7f0d559c7b05",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000676.html"
     },
     {
       "id": "msg-f5cc8e07a84a",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear list members,\n\nI am pleased to let you know that R met with QCA - Qualitative Comparative \nAnalysis.\nThis package has a few functions that implement the Quine-McCluskey algorithm, \nadapted to soc",
       "thread_id": "thread-f5cc8e07a84a",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000677.html"
     },
     {
       "id": "msg-d8aa7a2704a9",
@@ -65,7 +68,8 @@
       "body_snippet": "Reshape version 0.6\n===================\n\nReshape is an R package for flexibly restructuring and aggregating\ndata.  It's inspired by Excel's pivot tables, and it (hopefully) makes\nit very easy to get y",
       "thread_id": "thread-d8aa7a2704a9",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000678.html"
     },
     {
       "id": "msg-4549fcd324f8",
@@ -81,7 +85,8 @@
       "body_snippet": "I've updated the Ziggurat normal and exponential\ngenerator in SuppDists in accordance with\nLeong, et.al (2005). A comment on the implementation\nof the Ziggurat Method. Jour. Stat. Sci. 12-7, 1-4.\n\nThe",
       "thread_id": "thread-4549fcd324f8",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000679.html"
     },
     {
       "id": "msg-63e8866a5589",
@@ -93,11 +98,12 @@
       "subject_clean": "pls version 1.2-0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 1.2-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.1-0 are\n\n- predict() now handles missing data like the `lm' method does (the\n  default is to predict `NA').\n- fitted() and residuals() now return NA for observations with missing\n  values, if na.action is na.exclude.\n- `ncomp' is now reduced when it is too large for the requested \n  cross-validation.\n- Line plot parameter arguments have been added to predplotXy(), so\n  one can control the properties of the target line in predplot().\n- MSEP(), RMSEP(), loadings(), loadingplot() and scoreplot() are now\n  generic.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nRon Wehrens and Bj?rn-Helge Mevik",
+      "body_plain": "Version 1.2-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.1-0 are\n\n- predict() now handles missing data like the `lm' method does (the\n  default is to predict `NA').\n- fitted() and residuals() now return NA for observations with missing\n  values, if na.action is na.exclude.\n- `ncomp' is now reduced when it is too large for the requested \n  cross-validation.\n- Line plot parameter arguments have been added to predplotXy(), so\n  one can control the properties of the target line in predplot().\n- MSEP(), RMSEP(), loadings(), loadingplot() and scoreplot() are now\n  generic.\n\n\nSee the file CHANGES in the sources for all changes.\n\n-- \nRon Wehrens and Bjørn-Helge Mevik",
       "body_snippet": "Version 1.2-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
       "thread_id": "thread-63e8866a5589",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000681.html"
     },
     {
       "id": "msg-9c558f4b5734",
@@ -109,11 +115,12 @@
       "subject_clean": "adehabitat version 1.4",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.4 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- The eigenanalysis of selection ratios (Calenge and Dufour, 2006, Ecology)\n  can now be performed using the function eisera(). It can be used for \nthe analysis of\n  habitat selection when habitat can be considered to consist of several \nhabitat types\n  (e.g. vegetation types).\n\n- A new class, the class \"ltraj\", is now available for the analysis of \ntrajectories of animals\n  (e.g. for the analysis of data collected using GPS collars). This \nclass automatically\n  computes the turning angles between successive moves, the absolute \nangles for each move,\n  the speeds and the net squared displacement for each relocation. This \nclass is to be\n  prefered to the class \"traj\". The class \"traj\" is now deprecated.\n  Note that the data set \"puechcirc\" is now of the class ltraj.\n\n- The functions making the interface with the package \"sp\" have been \nupdated: 'area2spol'\n   converts an object of class 'area' into an object of class \n'SpatialPolygons'. 'spol2area' converts\n   an object of class 'SpatialPolygons' or 'SpatialPolygonsDataFrame' \ninto an object of class 'area'.\n   'attpol2area' gets the data attribute of an object of class \n'SpatialPolygonsDataFrame'\n   and stores is into a data frame. 'traj2spdf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialPointsDataFrame'. 'traj2sldf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialLinesDataFrame'.\n\n- The function enfa() has been modified:\n   The old components \"co\" and \"l1\" have been removed from objects of \nclass \"enfa\", as they did not rely\n   on solid mathematical theory. The old component \"c1\" is now named \n\"co\", and corresponds to\n   the scores of habitat variables in the enfa (the squared norm of this \nvector is equal to 1 for\n   the identity metric). As previously, the component \"li\" stores the \nscores of the resource units\n   in the ENFA.\n\n- The function df2kasc now accept objects of class \"kasc\" with one column.\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nCl?ment Calenge\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.4 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- The eigenanalysis of selection ratios (Calenge and Dufour, 2006, Ecology)\n  can now be performed using the function eisera(). It can be used for \nthe analysis of\n  habitat selection when habitat can be considered to consist of several \nhabitat types\n  (e.g. vegetation types).\n\n- A new class, the class \"ltraj\", is now available for the analysis of \ntrajectories of animals\n  (e.g. for the analysis of data collected using GPS collars). This \nclass automatically\n  computes the turning angles between successive moves, the absolute \nangles for each move,\n  the speeds and the net squared displacement for each relocation. This \nclass is to be\n  prefered to the class \"traj\". The class \"traj\" is now deprecated.\n  Note that the data set \"puechcirc\" is now of the class ltraj.\n\n- The functions making the interface with the package \"sp\" have been \nupdated: 'area2spol'\n   converts an object of class 'area' into an object of class \n'SpatialPolygons'. 'spol2area' converts\n   an object of class 'SpatialPolygons' or 'SpatialPolygonsDataFrame' \ninto an object of class 'area'.\n   'attpol2area' gets the data attribute of an object of class \n'SpatialPolygonsDataFrame'\n   and stores is into a data frame. 'traj2spdf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialPointsDataFrame'. 'traj2sldf' converts an object of \nclass 'traj' into an object of\n   class 'SpatialLinesDataFrame'.\n\n- The function enfa() has been modified:\n   The old components \"co\" and \"l1\" have been removed from objects of \nclass \"enfa\", as they did not rely\n   on solid mathematical theory. The old component \"c1\" is now named \n\"co\", and corresponds to\n   the scores of habitat variables in the enfa (the squared norm of this \nvector is equal to 1 for\n   the identity metric). As previously, the component \"li\" stores the \nscores of the resource units\n   in the ENFA.\n\n- The function df2kasc now accept objects of class \"kasc\" with one column.\n\n- That's all, thanks for reading !\n\nQuestions, comments and suggestions are greatly appreciated.\nHappy testing,\n\n\nClément Calenge\n\n-- \nClément CALENGE\nLBBE - UMR CNRS 5558 - Université \nClaude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.4 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n- The eigenanalysis of selection ratios (Calenge and Dufour, 2006, Ecology)\n",
       "thread_id": "thread-9c558f4b5734",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000680.html"
     },
     {
       "id": "msg-61c3f9148153",
@@ -129,7 +136,8 @@
       "body_snippet": "Dear useRs,\n\nVersion 0.8-1 of the `party' package will appear on CRAN and its mirrors\nin due course. This version implements two new tools:\n\n   o  `mob', an object-oriented implementation of a recentl",
       "thread_id": "thread-61c3f9148153",
       "thread_depth": 0,
-      "month": "2006-02"
+      "month": "2006-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000682.html"
     }
   ],
   "threads": [

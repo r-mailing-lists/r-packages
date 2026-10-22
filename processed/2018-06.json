@@ -17,7 +17,8 @@
       "body_snippet": "Dear R Users,\n \nThe gestalt package (0.1.1) has been published on CRAN:\nhttps://cran.r-project.org/package=gestalt\n\nIt provides a suite of function-building tools centered around a\n(forward) compositi",
       "thread_id": "thread-fe614bffbb22",
       "thread_depth": 0,
-      "month": "2018-06"
+      "month": "2018-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001622.html"
     },
     {
       "id": "msg-8876df18b7d1",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nAfter about five years of development and generous contributions, 'icd' has now reached version 3.2 and is better than ever.\n\n'icd' can calculate comorbidities, Charlson and other score",
       "thread_id": "thread-8876df18b7d1",
       "thread_depth": 0,
-      "month": "2018-06"
+      "month": "2018-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001623.html"
     },
     {
       "id": "msg-4c1bec2a658c",
@@ -45,11 +47,12 @@
       "subject_clean": "PriorGen: An R package that generates prior distributions for proportions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear Colleagues,\n\nPriorGen is an R package that generates priors in the form of beta and\nGamma distributions got proportions. You may find it useful for the\ngeneration of priors on the sensitivity/specificity of diagnostic tests and\nthe prevalence of disease.\n\nThe findbeta function estimates the parameters of a Beta distribution based\non the existing prior beliefs about the mean (or the median or the mode)\nand whether it is lower or greater that a certain value with a\npre-speci?ed certainty (usually set at 95%).\n\nThe findbetaqq function estimates the parameters of a Beta distribution\nbased on the existing prior beliefs about the values of two distinct\npercentiles.\n\nThe findbetamupsi function estimates:\n\n? 1.? the parameters of a Beta distribution for the expected mean of a\nproportion -usually the prevalence of disease/infection.\n? 2.? the parameters of a Gamma distribution expressing our prior belief\nabout the variability (?) of the prevalence estimates across the units of\nthe area/region under consideration.\n\nYou may download it from here: https://cran.r-project.org/package=PriorGen\n\nHope you find it helpful and, of course, any comments/suggestions are most\nwelcome.\n\nPolychronis\n\nTo cite package ?PriorGen? in publications use:\n\n? Polychronis Kostoulas (2018). PriorGen: Generates Prior Distributions\n? for Proportions. R package version 1.1.2.\n? https://CRAN.R-project.org/package=PriorGen\n\nA BibTeX entry for LaTeX users is\n\n? @Manual{,\n??? title = {PriorGen: Generates Prior Distributions for Proportions},\n??? author = {Polychronis Kostoulas},\n??? year = {2018},\n??? note = {R package version 1.1.2},\n??? url = {https://CRAN.R-project.org/package=PriorGen},\n? }\n-- \nPolychronis P. Kostoulas\nD.V.M., Ph.D., Assistant Professor\nAssociate Editor of Preventive Veterinary Medicine\nErasmus+ Departmental Coordinator\nLaboratory of Epidemiology, Biostatistics and Animal Health Economics\nFaculty of Veterinary Medicine\nUniversity of Thessaly\nKarditsa, 224 Trikalon st.\nGREECE. P.C. 43100\nTelephone: +30 2441066022\nMobile: +30 6977881857\nEmail: pkost at vet.uth.gr\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear Colleagues,\n\nPriorGen is an R package that generates priors in the form of beta and\nGamma distributions got proportions. You may find it useful for the\ngeneration of priors on the sensitivity/specificity of diagnostic tests and\nthe prevalence of disease.\n\nThe findbeta function estimates the parameters of a Beta distribution based\non the existing prior beliefs about the mean (or the median or the mode)\nand whether it is lower or greater that a certain value with a\npre-speciﬁed certainty (usually set at 95%).\n\nThe findbetaqq function estimates the parameters of a Beta distribution\nbased on the existing prior beliefs about the values of two distinct\npercentiles.\n\nThe findbetamupsi function estimates:\n\n  1.  the parameters of a Beta distribution for the expected mean of a\nproportion -usually the prevalence of disease/infection.\n  2.  the parameters of a Gamma distribution expressing our prior belief\nabout the variability (ψ) of the prevalence estimates across the units of\nthe area/region under consideration.\n\nYou may download it from here: https://cran.r-project.org/package=PriorGen\n\nHope you find it helpful and, of course, any comments/suggestions are most\nwelcome.\n\nPolychronis\n\nTo cite package ‘PriorGen’ in publications use:\n\n  Polychronis Kostoulas (2018). PriorGen: Generates Prior Distributions\n  for Proportions. R package version 1.1.2.\n  https://CRAN.R-project.org/package=PriorGen\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {PriorGen: Generates Prior Distributions for Proportions},\n    author = {Polychronis Kostoulas},\n    year = {2018},\n    note = {R package version 1.1.2},\n    url = {https://CRAN.R-project.org/package=PriorGen},\n  }\n-- \nPolychronis P. Kostoulas\nD.V.M., Ph.D., Assistant Professor\nAssociate Editor of Preventive Veterinary Medicine\nErasmus+ Departmental Coordinator\nLaboratory of Epidemiology, Biostatistics and Animal Health Economics\nFaculty of Veterinary Medicine\nUniversity of Thessaly\nKarditsa, 224 Trikalon st.\nGREECE. P.C. 43100\nTelephone: +30 2441066022\nMobile: +30 6977881857\nEmail: pkost at vet.uth.gr\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear Colleagues,\n\nPriorGen is an R package that generates priors in the form of beta and\nGamma distributions got proportions. You may find it useful for the\ngeneration of priors on the sensitivity/spe",
       "thread_id": "thread-4c1bec2a658c",
       "thread_depth": 0,
-      "month": "2018-06"
+      "month": "2018-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001624.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "ggplot2\n===================================\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graphics and\navoid bad parts. ",
       "thread_id": "thread-57b8a8d05559",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000843.html"
     },
     {
       "id": "msg-70e1adb20830",
@@ -29,11 +30,12 @@
       "subject_clean": "adehabitat version 1.7",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It now takes more than 80% less time than the previous \nversion. A new function \"liker\" has also been added, which estimates the \none of the two smoothing parameters of the bridge kernel using a maximum \nlikelihood approach (recommended in Horn et al., Ecology, in press). \nExamples of the help page demonstrate the use and interest of this \nfunction. Comparison between kernelbb and the Visual basic algorithm \nprovided in the paper of Horn et al. returned consistent results.\n\n* The function kernelUD has also been improved. It now takes more than \n50% less time than the previous version. In addition the \"grid\" argument \nof this function, now also allows a list of objects of class \"asc\" to be \npassed as grid where the UD should be estimated.\n\nHappy testing,\n\nCl?ment Calenge.\n\n-- \nCl?ment CALENGE\nLBBE - UMR CNRS 5558 - Universit? Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
+      "body_plain": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It now takes more than 80% less time than the previous \nversion. A new function \"liker\" has also been added, which estimates the \none of the two smoothing parameters of the bridge kernel using a maximum \nlikelihood approach (recommended in Horn et al., Ecology, in press). \nExamples of the help page demonstrate the use and interest of this \nfunction. Comparison between kernelbb and the Visual basic algorithm \nprovided in the paper of Horn et al. returned consistent results.\n\n* The function kernelUD has also been improved. It now takes more than \n50% less time than the previous version. In addition the \"grid\" argument \nof this function, now also allows a list of objects of class \"asc\" to be \npassed as grid where the UD should be estimated.\n\nHappy testing,\n\nClément Calenge.\n\n-- \nClément CALENGE\nLBBE - UMR CNRS 5558 - Université Claude Bernard Lyon 1 - FRANCE\ntel. (+33) 04.72.43.27.57\nfax. (+33) 04.72.43.13.88",
       "body_snippet": "Dear all,\n\nI have uploaded to CRAN the version 1.7 of the package 'adehabitat'. \nSignificant changes are listed below:\n\n* The Brownian bridge kernel estimation algorithm has been greatly \nimproved. It",
       "thread_id": "thread-70e1adb20830",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000844.html"
     },
     {
       "id": "msg-d9d22e547cbe",
@@ -49,7 +51,8 @@
       "body_snippet": "The first version of the package plink has been uploaded to CRAN.\n\nplink is a package for conducting unidimensional IRT scaling and chain\nlinking for multiple groups for single-format or mixed-format ",
       "thread_id": "thread-d9d22e547cbe",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000845.html"
     },
     {
       "id": "msg-edbf95232776",
@@ -65,7 +68,8 @@
       "body_snippet": "QCA implements the Qualitative Comparative Analysis using a boolean \nminimization algorithm for data coded with presence/absence of the causal \nconditions that affects a phenomenon of interest.\n\nThis ",
       "thread_id": "thread-edbf95232776",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000846.html"
     },
     {
       "id": "msg-cc6ee1afd925",
@@ -81,7 +85,8 @@
       "body_snippet": "From ?trackObjs:\n\nOverview of trackObjs package\n\nDescription:\n\n      The trackObjs package sets up a link between R objects in memory\n      and files on disk so that objects are automatically resaved ",
       "thread_id": "thread-cc6ee1afd925",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000847.html"
     },
     {
       "id": "msg-f48ddcd7747f",
@@ -97,7 +102,8 @@
       "body_snippet": "Version 1.1-8 of package 'scuba' has been uploaded to CRAN.\n\n'scuba' is a package for scuba diving calculations and decompression\nmodels. It supports dive profiles (tables, plotting etc), analysis of ",
       "thread_id": "thread-f48ddcd7747f",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000848.html"
     },
     {
       "id": "msg-91942808af7b",
@@ -114,6 +120,7 @@
       "thread_id": "thread-91942808af7b",
       "thread_depth": 0,
       "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000849.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20070912/1a5d93f5/attachment.pl"
       ]
@@ -132,7 +139,8 @@
       "body_snippet": "The sm package (by Adrian Bowman and Adelchi Azzalini) implements a\nvariety of nonparametric smoothing techniques, centred on nonparametric\nregression for one or two covariates and density estimation ",
       "thread_id": "thread-ddc2bde8da23",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2007/000850.html"
     }
   ],
   "threads": [

@@ -13,11 +13,12 @@
       "subject_clean": "Deducer: An R data analysis GUI",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Announcing a new version of Deducer:\n\nDeducer 0.2-1 is an intuitive, cross-platform graphical data analysis\nsystem. It uses menus and dialogs to guide the user efficiently through\nthe data manipulation and analysis process, and has an excel like\nspreadsheet for easy data frame visualization and editing. Deducer works\nbest when used with the Java based R GUI JGR, but the dialogs can be\ncalled from the command line. Dialogs have also been integrated into the\nWindows Rgui.\n\nThe statistical methods and concepts covered by the dialogs is increasing,\nand currently includes:\n\nData Manipulation: factor editing, Variable recoding, subseting, sorting,\nmerging, transposing, opening data (text and foreign), and saving data\n\nAnalysis: Frequencies, Descriptives, Contingency tables (and related\nstatistics), one-sample, two-sample, k-sample tests, as well as\ncorrelations\n\nModels: Linear Models (with optional HCCM), Logistic regression,\nGeneralized Linear Models\n\nSince it?s initial release in August, there have been significant changes\nto the back-end as well as the programmatic interface. This has resulted\nin increased stability, and made for easier incorporation of Deducer?s R\nfunctions into non-GUI programs. Additionally, a plug-in interface has\nbeen added, which allows arbitrary packages to add onto Deducer?s menu\nsystem.",
+      "body_plain": "Announcing a new version of Deducer:\n\nDeducer 0.2-1 is an intuitive, cross-platform graphical data analysis\nsystem. It uses menus and dialogs to guide the user efficiently through\nthe data manipulation and analysis process, and has an excel like\nspreadsheet for easy data frame visualization and editing. Deducer works\nbest when used with the Java based R GUI JGR, but the dialogs can be\ncalled from the command line. Dialogs have also been integrated into the\nWindows Rgui.\n\nThe statistical methods and concepts covered by the dialogs is increasing,\nand currently includes:\n\nData Manipulation: factor editing, Variable recoding, subseting, sorting,\nmerging, transposing, opening data (text and foreign), and saving data\n\nAnalysis: Frequencies, Descriptives, Contingency tables (and related\nstatistics), one-sample, two-sample, k-sample tests, as well as\ncorrelations\n\nModels: Linear Models (with optional HCCM), Logistic regression,\nGeneralized Linear Models\n\nSince it’s initial release in August, there have been significant changes\nto the back-end as well as the programmatic interface. This has resulted\nin increased stability, and made for easier incorporation of Deducer’s R\nfunctions into non-GUI programs. Additionally, a plug-in interface has\nbeen added, which allows arbitrary packages to add onto Deducer’s menu\nsystem.",
       "body_snippet": "Announcing a new version of Deducer:\n\nDeducer 0.2-1 is an intuitive, cross-platform graphical data analysis\nsystem. It uses menus and dialogs to guide the user efficiently through\nthe data manipulatio",
       "thread_id": "thread-fcfabd21395f",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001072.html"
     },
     {
       "id": "msg-7e50e2d4be98",
@@ -33,7 +34,8 @@
       "body_snippet": "At long last pgfSweave has finally made its way to CRAN.\n\nThe pgfSweave package is about speed and style of graphics. For speed,\nthe package provides capabilities for ?caching? graphics generated\nwith",
       "thread_id": "thread-7e50e2d4be98",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001073.html"
     },
     {
       "id": "msg-729097360b52",
@@ -49,7 +51,8 @@
       "body_snippet": "The new version 0.7 of our RobASt-family of packages is available on \nCRAN for several days. As there were many changes we will only sketch \nthe most important ones here. For more details see the corr",
       "thread_id": "thread-729097360b52",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001074.html"
     },
     {
       "id": "msg-224641e62972",
@@ -65,7 +68,8 @@
       "body_snippet": "I'd like to announce the availability of the new \"doMPI\" package, a\nparallel backend for the \"foreach\" package, which acts as an adaptor to\nthe \"Rmpi\" package.  The package has been uploaded to CRAN a",
       "thread_id": "thread-224641e62972",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001075.html"
     },
     {
       "id": "msg-1d3e76f17965",
@@ -81,7 +85,8 @@
       "body_snippet": "Hey R people,\n\nI have just put a package on CRAN, mecdf 0.2.1.\n\nIt computes multivariate ECDFs.\ni.e. Estimates (or perhaps I should say evaluates) a multivariate\ncumulative distribution function, usin",
       "thread_id": "thread-1d3e76f17965",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001076.html"
     },
     {
       "id": "msg-441e7af58a92",
@@ -97,7 +102,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-441e7af58a92",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001077.html"
     },
     {
       "id": "msg-97b7ab60307e",
@@ -114,6 +120,7 @@
       "thread_id": "thread-97b7ab60307e",
       "thread_depth": 0,
       "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001078.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20091220/2556e950/attachment.pl"
       ]
@@ -132,7 +139,8 @@
       "body_snippet": "Please find release 3.6.0 of the package \"randomSurvivalForest\" now\navailable for download on CRAN.\n\n---------------------------------------------------------------------------------\nCHANGES TO RELEAS",
       "thread_id": "thread-18d4f4f58dab",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001081.html"
     },
     {
       "id": "msg-574b4612889a",
@@ -148,7 +156,8 @@
       "body_snippet": "Rcpp version 0.7.0 went onto CRAN this weekend. The key new features are\n\n  o inline support, taken from Oleg Sklyar's neat inline package and \n    adapted/extented to support Rcpp as well as external",
       "thread_id": "thread-574b4612889a",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001079.html"
     },
     {
       "id": "msg-381b060dd974",
@@ -164,7 +173,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-381b060dd974",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001080.html"
     },
     {
       "id": "msg-85a11c43c215",
@@ -180,7 +190,8 @@
       "body_snippet": "dcemriS4: A package for medical image anlaysis\n\nThe dcemriS4 package is a major update, and S4 implementation, of the\ndcemri package.? All previous functionality has been replicated, for\nDCE-MRI and D",
       "thread_id": "thread-85a11c43c215",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001082.html"
     },
     {
       "id": "msg-d74212161c13",
@@ -196,7 +207,8 @@
       "body_snippet": "A new version of sqldf, version 0.2-0, has been uploaded to CRAN and\nshould be available on most mirrors by now.\n\nNEW\n\n- works with the new version of DBI package, DBI 0.2-5.   The default\naction of t",
       "thread_id": "thread-d74212161c13",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001083.html"
     },
     {
       "id": "msg-7515bdefe996",
@@ -212,7 +224,8 @@
       "body_snippet": "The \"micEcon\" package has been split into three packages: miscTools,\nmicEconAids, and micEcon.\n\na) miscTools (version 0.6-0) includes miscellaneous small tools and\nutilities that are not related to (m",
       "thread_id": "thread-7515bdefe996",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2009/001084.html"
     }
   ],
   "threads": [

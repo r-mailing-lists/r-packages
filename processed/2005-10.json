@@ -18,6 +18,7 @@
       "thread_id": "thread-71a60c190412",
       "thread_depth": 0,
       "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000656.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20051002/fa38fbb8/attachment.pl"
       ]
@@ -32,11 +33,12 @@
       "subject_clean": "pls version 1.1-0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.0-3 are\n\n- mvr, mvrCv and predict.mvr now has builtin support for scaling of X.\n- A new function stdize for explicit centering and/or scaling.\n- Correlation loadings plot (corrplot).\n- New argument `varnames' in coefplot, to label the x tick marks with the\n  variable names.\n- loadingplot, coefplot and plot.mvrVal can now display legends, with the\n  argument 'legendpos'.\n\nSee CHANGES in the sources for all changes.\n\n\n-- \nBj?rn-Helge Mevik and Ron Wehrens",
+      "body_plain": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package include\n\n- Several plsr algorithms: orthogonal scores, kernel pls and simpls\n- Flexible cross-validation\n- A formula interface, with traditional methods like predict, coef,\n  plot and summary\n- Functions for extraction of scores and loadings, and calculation of\n  (R)MSEP and R2\n- A simple multiplicative scatter correction (msc) implementation\n- Functions for plotting predictions, validation statistics,\n  coefficients, scores, loadings, biplots and correlation loadings.\n\nThe main changes since 1.0-3 are\n\n- mvr, mvrCv and predict.mvr now has builtin support for scaling of X.\n- A new function stdize for explicit centering and/or scaling.\n- Correlation loadings plot (corrplot).\n- New argument `varnames' in coefplot, to label the x tick marks with the\n  variable names.\n- loadingplot, coefplot and plot.mvrVal can now display legends, with the\n  argument 'legendpos'.\n\nSee CHANGES in the sources for all changes.\n\n\n-- \nBjørn-Helge Mevik and Ron Wehrens",
       "body_snippet": "Version 1.1-0 of the pls package is now available on CRAN.\n\nThe pls package implements partial least squares regression (PLSR) and\nprincipal component regression (PCR).  Features of the package includ",
       "thread_id": "thread-7d92a50dfe23",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000657.html"
     },
     {
       "id": "msg-0ef637d2795a",
@@ -52,7 +54,8 @@
       "body_snippet": "Dear useRs,\n\na new version of the vcd package (0.9-5) is now available from CRAN.\n\nApart from (a lot of) bug fixes, it includes the following new features\n(some of them have 'silently' been included i",
       "thread_id": "thread-0ef637d2795a",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000658.html"
     },
     {
       "id": "msg-9aed968698df",
@@ -68,7 +71,8 @@
       "body_snippet": "Dear List\n\nI have just uploaded a new package, \"onion\", to CRAN.\n\nIt provides some functionality for manipulating and visualizing  \nquaternions\nand octonions.\n\nAll comments welcome!\n\n\nenjoy\n\n\nrksh\n\n\n-",
       "thread_id": "thread-9aed968698df",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000659.html"
     },
     {
       "id": "msg-50c03bb042c9",
@@ -84,7 +88,8 @@
       "body_snippet": "After some reorganization, we would like to announce the availability\non CRAN of a new version (1.6) of our package \"distr\" as well as the\navailabilty on CRAN of the new packages \"distrEx\", \"distrSim\"",
       "thread_id": "thread-50c03bb042c9",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000660.html"
     },
     {
       "id": "msg-3a81fb5ba1a1",
@@ -100,7 +105,8 @@
       "body_snippet": "Dear List\n\nplease find on CRAN a new R bundle, BACCO, for Bayesian analysis of\nrandom functions, comprising two packages: emulator and calibrator.\n\nPackage calibrator implements:\n\n?Bayesian calibratio",
       "thread_id": "thread-3a81fb5ba1a1",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000661.html"
     },
     {
       "id": "msg-bc622296206b",
@@ -116,7 +122,8 @@
       "body_snippet": "A new version of RQuantLib has been uploaded to CRAN a few days ago (and\nshould be available at http://cran.r-project.org and all mirrors). Debian\nbinaries are also available.\n\nAmong the new features ",
       "thread_id": "thread-bc622296206b",
       "thread_depth": 0,
-      "month": "2005-10"
+      "month": "2005-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2005/000662.html"
     }
   ],
   "threads": [

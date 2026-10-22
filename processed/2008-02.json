@@ -17,7 +17,8 @@
       "body_snippet": "This is to announce an updated version of the blockrand package has been\nuploaded to CRAN.\n\nThe blockrand package is used for creating randomizations for clinical\ntrials or other studies where random ",
       "thread_id": "thread-65f5ecc5bfb5",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000891.html"
     },
     {
       "id": "msg-58eb766bc9a5",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear useRs:\n\nRelease 3.2.0 of the CRAN package randomSurvivalForest is now available.\n\n----------------------------------------------------------------------------------------------\n\nRelease 3.2.0 rep",
       "thread_id": "thread-58eb766bc9a5",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000892.html"
     },
     {
       "id": "msg-69d1f690f429",
@@ -49,7 +51,8 @@
       "body_snippet": "Hi, All:\n\n\t  FinTS version 0.2-7 is now available on CRAN.  This version adds two \nnew functions:\n\n\t  * ArchTest to compute the Engle (1982) Lagrange multiplier test for \nconditional heteroscedasticit",
       "thread_id": "thread-69d1f690f429",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000893.html"
     },
     {
       "id": "msg-19022e4ff17a",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R-users,\n\nI'd like to announce the release of the new package JM (JM_0.1-0 \navailable from CRAN) for the joint modelling of longitudinal and \ntime-to-event data.\n\nThe package has a single model-f",
       "thread_id": "thread-19022e4ff17a",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000894.html"
     },
     {
       "id": "msg-1aa30405f9a1",
@@ -81,7 +85,8 @@
       "body_snippet": "igraph is a package for graphs and networks. It has a C core and \nuses a simple and fast graph representation allowing millions \nof vertices and edges.\n\nNEW FEATURES:\n\n- We use the ARPACK library for ",
       "thread_id": "thread-1aa30405f9a1",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000895.html"
     },
     {
       "id": "msg-a4bb5047c6b1",
@@ -98,6 +103,7 @@
       "thread_id": "thread-a4bb5047c6b1",
       "thread_depth": 0,
       "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000896.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20080223/19d0ca1a/attachment.pl"
       ]
@@ -116,7 +122,8 @@
       "body_snippet": "Hi Everybody,\n\nA new package called ``Bayesian Prediction with High-order\nInteractions'' is available from CRAN. The description of this package\nis as follows\"\n\n\"This R package is used in two situatio",
       "thread_id": "thread-6a96091d41a0",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000897.html"
     },
     {
       "id": "msg-c6862a2c772a",
@@ -134,7 +141,8 @@
       "body_snippet": "A full set of course notes on\n          'Analysing spatial point patterns in R'\nis now available at\n     <http://www.csiro.au/resources/pf16h.html>\n\nThe course is based on the package 'spatstat'. It i",
       "thread_id": "thread-c6862a2c772a",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000898.html"
     },
     {
       "id": "msg-502e96c282c2",
@@ -151,6 +159,7 @@
       "thread_id": "thread-502e96c282c2",
       "thread_depth": 0,
       "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000899.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20080228/77e7aba5/attachment.pl"
       ]
@@ -165,11 +174,12 @@
       "subject_clean": "surv2sample 0.1-2",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral information about the package:\n\nsurv2sample provides various two-sample tests for right-censored survival  \ndata. Three main areas and corresponding methods are:\n\n* comparison of two survival distributions\n   - surv2.logrank: weighted logrank tests and their combinations (max, sum)\n   - surv2.neyman: Neyman's smooth test and its data-driven version\n   - surv2.ks: Kolmogorov?Smirnov, Cram?r?von Mises and Anderson?Darling  \ntest\n\n* comparison of two cumulative incidence functions for competing risks data\n   - cif: estimation and plotting of cumulative incidence functions\n   - cif2.logrank: logrank-type test for subdistribution hazards\n   - cif2.neyman: Neyman's smooth test and its data-driven version\n   - cif2.ks: Kolmogorov?Smirnov test\n   - cif2.int: integrated-difference test\n\n* goodness of fit tests of the proportional rate assumption (proportional  \nhazards or proportional odds functions in two samples)\n   - proprate2: estimation based on the simplified partial likelihood\n   - proprate2.ks: Kolmogorov?Smirnov test\n   - proprate2.neyman: Neyman's smooth test and its data-driven version\n   - proprate2.gs: Gill?Schumacher type test\n\nSee http://www.davidkraus.net/surv2sample/ for details and references.\n\nBest regards,\n\n-- \nDavid Kraus\n\nInstitute of Information Theory and Automation\nPod Vodarenskou vezi 4\nCZ-18208 Prague 8\nCzechia\n\ndavid.kraus at matfyz.cz\nhttp://www.davidkraus.net/",
+      "body_plain": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral information about the package:\n\nsurv2sample provides various two-sample tests for right-censored survival  \ndata. Three main areas and corresponding methods are:\n\n* comparison of two survival distributions\n   - surv2.logrank: weighted logrank tests and their combinations (max, sum)\n   - surv2.neyman: Neyman's smooth test and its data-driven version\n   - surv2.ks: Kolmogorov–Smirnov, Cramér–von Mises and Anderson–Darling  \ntest\n\n* comparison of two cumulative incidence functions for competing risks data\n   - cif: estimation and plotting of cumulative incidence functions\n   - cif2.logrank: logrank-type test for subdistribution hazards\n   - cif2.neyman: Neyman's smooth test and its data-driven version\n   - cif2.ks: Kolmogorov–Smirnov test\n   - cif2.int: integrated-difference test\n\n* goodness of fit tests of the proportional rate assumption (proportional  \nhazards or proportional odds functions in two samples)\n   - proprate2: estimation based on the simplified partial likelihood\n   - proprate2.ks: Kolmogorov–Smirnov test\n   - proprate2.neyman: Neyman's smooth test and its data-driven version\n   - proprate2.gs: Gill–Schumacher type test\n\nSee http://www.davidkraus.net/surv2sample/ for details and references.\n\nBest regards,\n\n-- \nDavid Kraus\n\nInstitute of Information Theory and Automation\nPod Vodarenskou vezi 4\nCZ-18208 Prague 8\nCzechia\n\ndavid.kraus at matfyz.cz\nhttp://www.davidkraus.net/",
       "body_snippet": "Dear useRs,\n\nThere is a new version 0.1-2 of the package surv2sample available on CRAN.  \nUsers of the previous versions should update because a bug in the function  \ncif2.ks has been fixed.\n\nGeneral ",
       "thread_id": "thread-f44631a746b8",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000900.html"
     },
     {
       "id": "msg-87c6a404ab7b",
@@ -186,6 +196,7 @@
       "thread_id": "thread-87c6a404ab7b",
       "thread_depth": 0,
       "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000901.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20080229/23c44c44/attachment.pl"
       ]

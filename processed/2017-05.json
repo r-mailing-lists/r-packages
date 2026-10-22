@@ -17,7 +17,8 @@
       "body_snippet": "Dear R users,\n\nI am pleased to announce that the fetchR package is now available on\nCRAN, which automatically calculates wind fetch lengths, for any\nlocation(s) around the world.\n\nWind fetch (or just ",
       "thread_id": "thread-372e3adc8dac",
       "thread_depth": 0,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001550.html"
     },
     {
       "id": "msg-eef2d8562550",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nhappy to announce that the first version of ompr is on CRAN now\n(https://cran.r-project.org/web/packages/ompr/).\n\nThe package lets you model mixed integer linear programs algebraically\n",
       "thread_id": "thread-eef2d8562550",
       "thread_depth": 0,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001551.html"
     },
     {
       "id": "msg-d834f90a19d9",
@@ -45,11 +47,12 @@
       "subject_clean": "Announcing snakecase 0.4.0",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I am pleased to announce a fresh and simple approach on automatic\ncaseconversion with a concise design philosophy via the snakecase-pkg (\nhttps://cran.r-project.org/package=snakecase).\n\nJust use to_any_case(string, case) and (if the cases are too complex for\nthe default options) provide its most important arguments with further\ninformation about:\n- how a string should be parsed (regular expressions)\n- how the result should be split (character).\nOn the way you can achieve things like special character handling and minor\ncustomizations as also documented on github (\nhttps://github.com/Tazinho/snakecase)\n\nExamples:\n- Easy case conversions:\n\"RStudio\" to \"R_Studio\" (parsed) \"r_studio\", \"R_STUDIO\", \"rStudio\",\n\"RStudio\"  or choose any other separator than the default \"_\" or \"\".\n- More complex (different meanings of dots (separator or decimal) and\numlauts)\n\"R.St?dio: v.1.0.143\" to \"rst?dio_v_1_0_143\" or \"r_st?dio_v_1.0.143\", \"R\nStuedio v 1.0.143\",...\n\nNote that the usecases are not only formatting for naming conventions\nitself, but also for automated pretty printing like \"RStudio\" to \"R Studio\".\n\nBest,\nMalte Grosser\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "I am pleased to announce a fresh and simple approach on automatic\ncaseconversion with a concise design philosophy via the snakecase-pkg (\nhttps://cran.r-project.org/package=snakecase).\n\nJust use to_any_case(string, case) and (if the cases are too complex for\nthe default options) provide its most important arguments with further\ninformation about:\n- how a string should be parsed (regular expressions)\n- how the result should be split (character).\nOn the way you can achieve things like special character handling and minor\ncustomizations as also documented on github (\nhttps://github.com/Tazinho/snakecase)\n\nExamples:\n- Easy case conversions:\n\"RStudio\" to \"R_Studio\" (parsed) \"r_studio\", \"R_STUDIO\", \"rStudio\",\n\"RStudio\"  or choose any other separator than the default \"_\" or \"\".\n- More complex (different meanings of dots (separator or decimal) and\numlauts)\n\"R.Stüdio: v.1.0.143\" to \"rstüdio_v_1_0_143\" or \"r_stüdio_v_1.0.143\", \"R\nStuedio v 1.0.143\",...\n\nNote that the usecases are not only formatting for naming conventions\nitself, but also for automated pretty printing like \"RStudio\" to \"R Studio\".\n\nBest,\nMalte Grosser\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "I am pleased to announce a fresh and simple approach on automatic\ncaseconversion with a concise design philosophy via the snakecase-pkg (\nhttps://cran.r-project.org/package=snakecase).\n\nJust use to_an",
       "thread_id": "thread-d834f90a19d9",
       "thread_depth": 0,
-      "month": "2017-05"
+      "month": "2017-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2017/001553.html"
     }
   ],
   "threads": [

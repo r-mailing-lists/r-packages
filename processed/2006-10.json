@@ -17,7 +17,8 @@
       "body_snippet": "Dear R-Users,\n\nade4TkGUI is a new package available on CRAN. It implements a Tcl/Tk\ngraphical user interface (GUI) for the ade4 package.\n\nOnly the most basic functions of ade4 have a GUI in this first",
       "thread_id": "thread-9b2ef7386a3a",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000744.html"
     },
     {
       "id": "msg-bdf552e7aa82",
@@ -34,6 +35,7 @@
       "thread_id": "thread-bdf552e7aa82",
       "thread_depth": 0,
       "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000743.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20061002/cb150b35/attachment.pl"
       ]
@@ -52,7 +54,8 @@
       "body_snippet": "Versions 0.9975-1 of the Matrix and lme4 packages will soon be available on\nCRAN for use with R version 2.4.0 or later.\n\nPurpose of the packages:\n\nThe Matrix package provides S4 classes and methods fo",
       "thread_id": "thread-9516bfe8f0a6",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000745.html"
     },
     {
       "id": "msg-3c6cb54fbc50",
@@ -68,7 +71,8 @@
       "body_snippet": "Dear R users,\n\nThe package proptest (http://www.davidkraus.net/proptest/) has been\nrecently released to CRAN.\n\nThe package provides functions for testing the proportional hazards\nassumption in the Cox",
       "thread_id": "thread-3c6cb54fbc50",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000746.html"
     },
     {
       "id": "msg-22ac1ca6111e",
@@ -84,7 +88,8 @@
       "body_snippet": "A new version of mclust is now available as a contributed package on CRAN.\n\nThe associated manual is located at\nhttp://www.stat.washington.edu/www/research/reports/2006/tr504.pdf\n\nThe main feature in ",
       "thread_id": "thread-22ac1ca6111e",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000747.html"
     },
     {
       "id": "msg-68dfad5759b0",
@@ -100,7 +105,8 @@
       "body_snippet": "Hello all,\n\nJust uploaded to CRAN updates for RSQLite, RMySQL, and DBI.  \n\nThe primary svn repository for these packages is now hosted by the\nGentleman Lab in Seattle and our group is working with Dav",
       "thread_id": "thread-68dfad5759b0",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000748.html"
     },
     {
       "id": "msg-8767b45df6ea",
@@ -117,6 +123,7 @@
       "thread_id": "thread-8767b45df6ea",
       "thread_depth": 0,
       "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000749.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20061008/fc247bc5/attachment.pl"
       ]
@@ -131,11 +138,12 @@
       "subject_clean": "New package Ryacas",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R and get back the result.  It\nalso has facilities for manipulating yacas strings and R\nexpressions destined for yacas processing.\n\nIt can be used for exact arithmetic, symbolic math, ASCII\npretty printing and translating R to TeX.\n\n\nOnline info.  For overview, pointers to additional\ninformation, installation instructions and a sample session\nsee:\n\n    http://code.google.com/p/ryacas/\n\nThe vignettes can be viewed online here:\n\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas-Sym.pdf\n\n\nMore. Once Ryacas is installed, pointers to additional\ninformation can be found with these R commands:\n\n    library(Ryacas)\n    package?Ryacas\n\n\n---\n\nRob Goedman, goedman at mac dot com\nGabor Grothendieck, ggrothendieck at gmail dot com\nS?ren H?jsgaard, Soren.Hojsgaard at agrsci dot dk\nAyal Pinkus, apinkus at xs4all dot nl",
+      "body_plain": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R and get back the result.  It\nalso has facilities for manipulating yacas strings and R\nexpressions destined for yacas processing.\n\nIt can be used for exact arithmetic, symbolic math, ASCII\npretty printing and translating R to TeX.\n\n\nOnline info.  For overview, pointers to additional\ninformation, installation instructions and a sample session\nsee:\n\n    http://code.google.com/p/ryacas/\n\nThe vignettes can be viewed online here:\n\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas.pdf\n    http://ryacas.googlecode.com/svn/trunk/inst/doc/Ryacas-Sym.pdf\n\n\nMore. Once Ryacas is installed, pointers to additional\ninformation can be found with these R commands:\n\n    library(Ryacas)\n    package?Ryacas\n\n\n---\n\nRob Goedman, goedman at mac dot com\nGabor Grothendieck, ggrothendieck at gmail dot com\nSøren Højsgaard, Soren.Hojsgaard at agrsci dot dk\nAyal Pinkus, apinkus at xs4all dot nl",
       "body_snippet": "Ryacas is an R interface to the free yacas computer algebra\nsystem.  Ryacas allows one to send R expressions,\nunprocessed yacas strings and certain other R objects to a\nseparate yacas process from R a",
       "thread_id": "thread-09898611d266",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000750.html"
     },
     {
       "id": "msg-03e78fc7aa07",
@@ -151,7 +159,8 @@
       "body_snippet": "There is a new version, 0.2-9, of the Windows XP batchfiles\ndistribution.  It is a zip file containing a set of Windows\nXP batch scripts useful in conjunction with R.\n\nThe latest release adds sweave.b",
       "thread_id": "thread-03e78fc7aa07",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000751.html"
     },
     {
       "id": "msg-105224304475",
@@ -167,7 +176,8 @@
       "body_snippet": "Dear R useRs,\n\nA new package 'CreditMetrics' is now available on CRAN. It is mainly a \nset of\nfunctions for computing the CreditMetrics risk model.\n\nThis is the first version of the package and it is ",
       "thread_id": "thread-105224304475",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000752.html"
     },
     {
       "id": "msg-49df6417f4bf",
@@ -183,7 +193,8 @@
       "body_snippet": "A new version of package 'portfolio' is now available on CRAN.  Also\navailable are new packages 'backtest', for basic spread-based\nhypothesis testing, and 'portfolioSim', a general framework for\nportf",
       "thread_id": "thread-49df6417f4bf",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000754.html"
     },
     {
       "id": "msg-27c92a8de5c8",
@@ -199,7 +210,8 @@
       "body_snippet": "Dear useRs,\n\n`multcomp' version 0.991-1 will be shortly available from \nCRAN near you. Nearly all functionality contained in the\npackage has been re-implemented from scratch.\n\nThe focus of the package",
       "thread_id": "thread-27c92a8de5c8",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000753.html"
     },
     {
       "id": "msg-3f238936a36c",
@@ -215,7 +227,8 @@
       "body_snippet": "We announce the availability of three related software libraries: C2R, \nADMB2R, and For2R (together, X2R). Each contains output routines to \nsimplify transfer of complicated data structures from model",
       "thread_id": "thread-3f238936a36c",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000755.html"
     },
     {
       "id": "msg-607beff6a52e",
@@ -227,11 +240,12 @@
       "subject_clean": "adehabitat version 1.5",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecomposition of the Mahalanobis distances in habitat selection studies, \nnamed madifa().\n\n* The ENFA can now be performed using all kinds of variables (numeric, \nfactors, fuzzy, mixing of several types, etc.)\n\n* Several methods allowing the analysis of animals movements have been \nadded, including the first passage time (function fpt()), a \nrediscretization algorithm (redisltraj()), and an interactive graphic \nwindow for dynamic analysis (trajdyn())\n\n* A function for interactive exploration of maps of class \"kasc\" has \nbeen added (explore.kasc)\n\n* Scott Fortmann-Roe (Univ. Berkeley) programmed a better algorithm for \nNearest neighbour Convex hull home range estimation.\n\n* The function kasc2spixdf() have been updated\n\n\nHappy testing,\n\n\nCl?ment CALENGE\n-- \nCl?ment CALENGE\nLaboratoire de Biom?trie et Biologie ?volutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France",
+      "body_plain": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecomposition of the Mahalanobis distances in habitat selection studies, \nnamed madifa().\n\n* The ENFA can now be performed using all kinds of variables (numeric, \nfactors, fuzzy, mixing of several types, etc.)\n\n* Several methods allowing the analysis of animals movements have been \nadded, including the first passage time (function fpt()), a \nrediscretization algorithm (redisltraj()), and an interactive graphic \nwindow for dynamic analysis (trajdyn())\n\n* A function for interactive exploration of maps of class \"kasc\" has \nbeen added (explore.kasc)\n\n* Scott Fortmann-Roe (Univ. Berkeley) programmed a better algorithm for \nNearest neighbour Convex hull home range estimation.\n\n* The function kasc2spixdf() have been updated\n\n\nHappy testing,\n\n\nClément CALENGE\n-- \nClément CALENGE\nLaboratoire de Biométrie et Biologie évolutive\nUMR CNRS 5558\n43 Bd. 11 Nov. 1918\n69622 Villeurbanne Cedex - France",
       "body_snippet": "Dear all,\n\nI have just uploaded to CRAN the version 1.5 of the\npackage 'adehabitat'. Significant changes are\nlisted below:\n\n* the package now contains a new function allowing a factorial \ndecompositio",
       "thread_id": "thread-607beff6a52e",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000756.html"
     },
     {
       "id": "msg-309e5c20c229",
@@ -247,7 +261,8 @@
       "body_snippet": "CRAN now has a package called rcompletion that attempts to provide TAB\ncompletion for R using the GNU readline library, intended for R\nsessions run from a command line. From the package help page:\n\nDe",
       "thread_id": "thread-309e5c20c229",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2006/000757.html"
     }
   ],
   "threads": [

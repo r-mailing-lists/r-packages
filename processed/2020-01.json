@@ -17,7 +17,8 @@
       "body_snippet": "Dear All,\n\nI would like to introduce the above-named new package that is now available\non CRAN: https://cran.r-project.org/web/packages/skedastic/index.html The\npackage features numerous 'classical' h",
       "thread_id": "thread-3cc5721ca110",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001700.html"
     },
     {
       "id": "msg-abeb308f2ddd",
@@ -29,11 +30,12 @@
       "subject_clean": "forestError 0.1.0: Random forest conditional prediction intervals, squared errors, and biases",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi all,\n\nI?m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional biases, and conditional prediction\nerror distribution functions for random forests using new methods proposed\nin Lu and Hardin (2019+) <arXiv:1912.07435>.\n\nThe package does not grow specially designed random forests, but rather\nsits on top of the standard random forest algorithm. In particular, the\npackage can estimate the above quantities for regression random forests\nbuilt using the randomForest, randomForestSRC, ranger, and quantregForest\npackages.\n\nI hope that you find this useful. Please feel free to reach out with\nfeedback or questions.\n\nCRAN: https://cran.r-project.org/package=forestError\nGithub: https://github.com/benjilu/forestError\nReference: https://arxiv.org/abs/1912.07435\n\nBest,\nBenji Lu\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Hi all,\n\nI?m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional bias",
+      "body_plain": "Hi all,\n\nI’m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional biases, and conditional prediction\nerror distribution functions for random forests using new methods proposed\nin Lu and Hardin (2019+) <arXiv:1912.07435>.\n\nThe package does not grow specially designed random forests, but rather\nsits on top of the standard random forest algorithm. In particular, the\npackage can estimate the above quantities for regression random forests\nbuilt using the randomForest, randomForestSRC, ranger, and quantregForest\npackages.\n\nI hope that you find this useful. Please feel free to reach out with\nfeedback or questions.\n\nCRAN: https://cran.r-project.org/package=forestError\nGithub: https://github.com/benjilu/forestError\nReference: https://arxiv.org/abs/1912.07435\n\nBest,\nBenji Lu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI’m writing to introduce a new package, forestError. This package estimates\nconditional response quantiles (prediction intervals), conditional mean\nsquared prediction errors, conditional bias",
       "thread_id": "thread-abeb308f2ddd",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001701.html"
     },
     {
       "id": "msg-15805d5b9054",
@@ -45,11 +47,12 @@
       "subject_clean": "SWIM: vignette and new version on CRAN",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi all,\n\n\nWe?re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides weights on simulated\nscenarios from a stochastic model, such that stressed random variables\nfulfil given probabilistic constraints (e.g. specified values for risk\nmeasures), under the new scenario weights. Scenario weights are selected by\nconstrained minimisation of the relative entropy to the baseline model.\n\n The new version includes additional functionalities which are illustrated\nin the Vignette on a credit risk model:\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274.\n<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274>\n\n\nCRAN: https://CRAN.R-project.org/package=SWIM\n\nGitHuB: https://github.com/spesenti/SWIM\n\nVignette: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274\n\n\n\n\nBest regards,\n\nSilvana Pesenti\n\nMaintainer and co-author.\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Hi all,\n\n\nWe?re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides ",
+      "body_plain": "Hi all,\n\n\nWe’re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides weights on simulated\nscenarios from a stochastic model, such that stressed random variables\nfulfil given probabilistic constraints (e.g. specified values for risk\nmeasures), under the new scenario weights. Scenario weights are selected by\nconstrained minimisation of the relative entropy to the baseline model.\n\n The new version includes additional functionalities which are illustrated\nin the Vignette on a credit risk model:\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274.\n<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274>\n\n\nCRAN: https://CRAN.R-project.org/package=SWIM\n\nGitHuB: https://github.com/spesenti/SWIM\n\nVignette: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515274\n\n\n\n\nBest regards,\n\nSilvana Pesenti\n\nMaintainer and co-author.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\n\nWe’re happy to announce that the new version of *SWIM* is available on\nCRAN. *SWIM* is an efficient sensitivity analysis tool for stochastic\nmodels based on Monte Carlo samples. It provides ",
       "thread_id": "thread-15805d5b9054",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001702.html"
     },
     {
       "id": "msg-1419044a8a6a",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear all,\n\nthis is to announce that a new version of*SamplingStrata*  \n       is available on CRAN.*SamplingStrata*  is a package for the\n       optimization of stratified sample design. This new vers",
       "thread_id": "thread-1419044a8a6a",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2020/001703.html"
     }
   ],
   "threads": [

@@ -13,11 +13,12 @@
       "subject_clean": "Major update: mboost 2.0-0 released",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear useRs,\n\nwe are happy to announce the release of mboost 2.0-0 on CRAN:\n\nhttp://cran.r-project.org/package=mboost\n\nThis version contains major updates and changes to the implementation of \nthe main algorithm. Some slight changes to the user-interface where \nnecessary. Please consult the manual and the list of CHANGES below.\n\nThe package 'mboost' (Model-based Boosting) implements boosting for \noptimizing general risk functions utilizing component-wise (penalized) \nleast squares estimates or regression trees as base-learners for fitting \ngeneralized linear, additive and interaction models to potentially \nhigh-dimensional data.\n\nA big variety of models can be investigated using 'mboost' including \nsurvival models, expectile regression models, ordinal regression models \nas well as standard models such as simple linear models. In all cases, \nthe predictor can be specified very flexible using linear, smooth, \nrandom and spatial effects as well as decision trees or an arbitrary \ncombination suiting the intention of the researcher.\n\nFor more details and a nice example showing some of the functionality of \n'mboost' see ?mboost-package.\n\nWe appreciate any feedback.\n\n    mboost development team\n\n___________\n\n\n                 CHANGES in `mboost' VERSION 2.0-0 (2010-02-01)\n\n   o  generic implementation of component-wise functional gradient\n      boosting in `mboost_fit', specialized code for linear,\n      additive and interaction models removed\n\n   o  new families available for ordinal, expectile and censored\n      regression\n\n   o  computations potentially based on package Matrix\n      (reduces memory usage)\n\n   o  various speed improvements\n\n   o  added interface to extract selected base-learners (selected())\n\n   o  added interface for parallel computations in cvrisk with\n      arbitrary packages (e.g. multicore, snow)\n\n   o  added \"which\" argument in predict and coef functions and improved\n      usability of \"which\" in plot-function. Users can specify \"which\" as\n      numeric value or as a character string\n\n   o  added function cv() to generate matrices for k-fold\n      cross-validation, subsampling and bootstrap\n\n   o  new function stabsel() for stability selection with error control\n\n   o  added function model.weights() to extract the weights\n\n   o  added interface to expand model by increasing mstop in\n      model[mstop]\n\n   o  alternative definition of degrees of freedom available\n\n   o  Interface changes:\n\n      - class definition / Family() arguments changed\n      - changed behavior of subset method (model[mstop]). Object\n        is directly altered and not duplicated\n      - argument \"center\" in bols replaced with \"intercept\"\n      - argument \"z\" in base-learners replaced with \"by\"\n      - bns and bss deprecated\n\n\n-- \n******************************************************************************\nDipl.-Stat. Benjamin Hofner\n\nInstitut f?r Medizininformatik, Biometrie und Epidemiologie\nFriedrich-Alexander-Universit?t Erlangen-N?rnberg\nWaldstr. 6 - 91054 Erlangen - Germany\n\nbenjamin.hofner at imbe.med.uni-erlangen.de\n\nhttp://www.imbe.med.uni-erlangen.de/~hofnerb/\nhttp://www.benjaminhofner.de",
+      "body_plain": "Dear useRs,\n\nwe are happy to announce the release of mboost 2.0-0 on CRAN:\n\nhttp://cran.r-project.org/package=mboost\n\nThis version contains major updates and changes to the implementation of \nthe main algorithm. Some slight changes to the user-interface where \nnecessary. Please consult the manual and the list of CHANGES below.\n\nThe package 'mboost' (Model-based Boosting) implements boosting for \noptimizing general risk functions utilizing component-wise (penalized) \nleast squares estimates or regression trees as base-learners for fitting \ngeneralized linear, additive and interaction models to potentially \nhigh-dimensional data.\n\nA big variety of models can be investigated using 'mboost' including \nsurvival models, expectile regression models, ordinal regression models \nas well as standard models such as simple linear models. In all cases, \nthe predictor can be specified very flexible using linear, smooth, \nrandom and spatial effects as well as decision trees or an arbitrary \ncombination suiting the intention of the researcher.\n\nFor more details and a nice example showing some of the functionality of \n'mboost' see ?mboost-package.\n\nWe appreciate any feedback.\n\n    mboost development team\n\n___________\n\n\n                 CHANGES in `mboost' VERSION 2.0-0 (2010-02-01)\n\n   o  generic implementation of component-wise functional gradient\n      boosting in `mboost_fit', specialized code for linear,\n      additive and interaction models removed\n\n   o  new families available for ordinal, expectile and censored\n      regression\n\n   o  computations potentially based on package Matrix\n      (reduces memory usage)\n\n   o  various speed improvements\n\n   o  added interface to extract selected base-learners (selected())\n\n   o  added interface for parallel computations in cvrisk with\n      arbitrary packages (e.g. multicore, snow)\n\n   o  added \"which\" argument in predict and coef functions and improved\n      usability of \"which\" in plot-function. Users can specify \"which\" as\n      numeric value or as a character string\n\n   o  added function cv() to generate matrices for k-fold\n      cross-validation, subsampling and bootstrap\n\n   o  new function stabsel() for stability selection with error control\n\n   o  added function model.weights() to extract the weights\n\n   o  added interface to expand model by increasing mstop in\n      model[mstop]\n\n   o  alternative definition of degrees of freedom available\n\n   o  Interface changes:\n\n      - class definition / Family() arguments changed\n      - changed behavior of subset method (model[mstop]). Object\n        is directly altered and not duplicated\n      - argument \"center\" in bols replaced with \"intercept\"\n      - argument \"z\" in base-learners replaced with \"by\"\n      - bns and bss deprecated\n\n\n-- \n******************************************************************************\nDipl.-Stat. Benjamin Hofner\n\nInstitut für Medizininformatik, Biometrie und Epidemiologie\nFriedrich-Alexander-Universität Erlangen-Nürnberg\nWaldstr. 6 - 91054 Erlangen - Germany\n\nbenjamin.hofner at imbe.med.uni-erlangen.de\n\nhttp://www.imbe.med.uni-erlangen.de/~hofnerb/\nhttp://www.benjaminhofner.de",
       "body_snippet": "Dear useRs,\n\nwe are happy to announce the release of mboost 2.0-0 on CRAN:\n\nhttp://cran.r-project.org/package=mboost\n\nThis version contains major updates and changes to the implementation of \nthe main",
       "thread_id": "thread-08d5c0b68b15",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001095.html"
     },
     {
       "id": "msg-64df85ab83ad",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nVersion 0.30-6 of the np package has been uploaded to CRAN. See\n\nhttp://cran.r-project.org/package=np\n\nNote that the cubature package is now required in addition to the boot package. Th",
       "thread_id": "thread-64df85ab83ad",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001096.html"
     },
     {
       "id": "msg-db27abf0fd90",
@@ -50,6 +52,7 @@
       "thread_id": "thread-db27abf0fd90",
       "thread_depth": 0,
       "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001097.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100204/0c9be857/attachment.pl"
       ]
@@ -68,7 +71,8 @@
       "body_snippet": "Version 3.20 of the survey package is percolating through CRAN\n\nThe major additions since the last announcement on this list (3.18, in September) are\n  \n    - database-backed designs can now use repli",
       "thread_id": "thread-0fea393d888f",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001098.html"
     },
     {
       "id": "msg-382196897a80",
@@ -84,7 +88,8 @@
       "body_snippet": "I'd like to announce the availability of the \"GWRM\" package. It provides a\nset of functions for fitting Generalized Waring Regression Models. It also\nincludes the dataset and the example of Rodriguez-",
       "thread_id": "thread-382196897a80",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001099.html"
     },
     {
       "id": "msg-3829c2caaaeb",
@@ -100,7 +105,8 @@
       "body_snippet": "Hello.\n\nI'd like to announce the availability of version 0.14 of the \"solaR\" package. It provides a set of calculation methods of solar radiation and performance of photovoltaic systems. The package h",
       "thread_id": "thread-3829c2caaaeb",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001103.html"
     },
     {
       "id": "msg-65a8d0fe8d58",
@@ -116,7 +122,8 @@
       "body_snippet": "ggplot2 ------------------------------------------------------------\n\nggplot2 is a plotting system for R, based on the grammar of graphics,\nwhich tries to take the good parts of base and lattice graph",
       "thread_id": "thread-65a8d0fe8d58",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001100.html"
     },
     {
       "id": "msg-5b06083d41dc",
@@ -133,6 +140,7 @@
       "thread_id": "thread-5b06083d41dc",
       "thread_depth": 0,
       "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001101.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-packages/attachments/20100219/0082cd62/attachment.pl"
       ]
@@ -153,7 +161,8 @@
       "body_snippet": "The new package RFLPtools is available on CRAN.\n\nRFLPtools provides analysis functions for DNA fragment molecular weights \n(e.g.\\ derived from RFLP-analysis) and nucleotide sequence similarities. \nIt ",
       "thread_id": "thread-9a1f74b63223",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001102.html"
     },
     {
       "id": "msg-f6227a72de44",
@@ -169,7 +178,8 @@
       "body_snippet": "Version 2.2-0 of the rms package is now available.  This is a somewhat \nmajor update.  One major change is not downward compatible: Instead of \nspecifying predictor=. or predictor=NA to Predict, summa",
       "thread_id": "thread-f6227a72de44",
       "thread_depth": 0,
-      "month": "2010-02"
+      "month": "2010-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2010/001104.html"
     }
   ],
   "threads": [

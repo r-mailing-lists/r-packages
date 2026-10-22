@@ -17,7 +17,8 @@
       "body_snippet": "Dear useRs,\n\nI am really excited that my first package is now on CRAN:\nhttps://cran.r-project.org/web/packages/DataExplorer/.\n\nThe package aims to simplify the data exploration process before your dat",
       "thread_id": "thread-395de1ce6ef4",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001468.html"
     },
     {
       "id": "msg-0e7e213d3f90",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R users,\n\nI'm pleased to announce that the first release of lavaan.shiny has\nbeen released to CRAN.\n\nlavaan.shiny \"latent variable analysis with shiny\" has built in\nexamples from the lavaan packa",
       "thread_id": "thread-0e7e213d3f90",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001469.html"
     },
     {
       "id": "msg-dd0f2c11d59d",
@@ -45,11 +47,12 @@
       "subject_clean": "rZeppelin: An R notebook that makes Spark easy to use",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin\nis a notebook, sort of like iPython, built on top of Apache Spark.\n\nrZeppelin makes it possible, for the first time, to create a single data/ML\npipeline that mixes R, scala, and Python code, seamlessly, from a single\ninterface.  (Without breaking lazy evaluation!)\n\nFor R-using data scientists, this means that you can access the full power\nof Spark ? including ultra-fast distributed implementations of popular\nalgorithms ? using R, without having to learn scala, without a dedicated\nadministrator to manage a Spark or Hadoop cluster, and without spending\nmore than minimal time to review the SparkR api.\n\nYou can load text data using R, quickly create an LDA model using Spark?s\ndistributed LDA package, tag the text using gensim from Python, and then\nvisualize and take further steps from R, from a single session using a\nsingle interface.\n\nThe full range of Spark packages, including MLLIB and GraphX, which used to\nrequire scala development, can be used in the same pipeline with R.\n(Except Spark Streaming, which Zeppelin doesn?t yet support.)\n\nBeyond Spark, R data can be visualized using Zeppelin?s built-in\ninteractive visualizations.  rZeppelin also leverages knitr to make\navailable most R visualization and interactive visualization packages.\n\nMany data types are also easily moved between R, scala and Python:  the\nlanguages share a ZeppelinContext, where variables can be added and\nextracted with .z.put() and .z.get().\n\nrZeppelin is intended to make Spark part of the R data scientist?s daily\ntoolbox.\n\nrZeppelin is available here:  https://github.com/elbamos/Zeppelin-With-R\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin\nis a notebook, sort of like iPython, built on top of Apache Spark.\n\nrZeppelin makes it possible, for the first time, to create a single data/ML\npipeline that mixes R, scala, and Python code, seamlessly, from a single\ninterface.  (Without breaking lazy evaluation!)\n\nFor R-using data scientists, this means that you can access the full power\nof Spark — including ultra-fast distributed implementations of popular\nalgorithms — using R, without having to learn scala, without a dedicated\nadministrator to manage a Spark or Hadoop cluster, and without spending\nmore than minimal time to review the SparkR api.\n\nYou can load text data using R, quickly create an LDA model using Spark’s\ndistributed LDA package, tag the text using gensim from Python, and then\nvisualize and take further steps from R, from a single session using a\nsingle interface.\n\nThe full range of Spark packages, including MLLIB and GraphX, which used to\nrequire scala development, can be used in the same pipeline with R.\n(Except Spark Streaming, which Zeppelin doesn’t yet support.)\n\nBeyond Spark, R data can be visualized using Zeppelin’s built-in\ninteractive visualizations.  rZeppelin also leverages knitr to make\navailable most R visualization and interactive visualization packages.\n\nMany data types are also easily moved between R, scala and Python:  the\nlanguages share a ZeppelinContext, where variables can be added and\nextracted with .z.put() and .z.get().\n\nrZeppelin is intended to make Spark part of the R data scientist’s daily\ntoolbox.\n\nrZeppelin is available here:  https://github.com/elbamos/Zeppelin-With-R\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "rZeppelin is an R interpreter for Apache (incubating) Zeppelin.  Zeppelin\nis a notebook, sort of like iPython, built on top of Apache Spark.\n\nrZeppelin makes it possible, for the first time, to create",
       "thread_id": "thread-dd0f2c11d59d",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001470.html"
     },
     {
       "id": "msg-358dc95580c4",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R users,\n\nThe new package lazysql has been accepted on CRAN\n(https://cran.r-project.org/web/packages/lazysql/).\n\nIt includes helper functions to build SQL statements under program\ncontrol for use",
       "thread_id": "thread-358dc95580c4",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001471.html"
     },
     {
       "id": "msg-64bcf216c2cf",
@@ -81,7 +85,8 @@
       "body_snippet": "Dear R users,\n\nThe next release of gpuR (1.1.0) has been accepted to CRAN (\nhttp://cran.r-project.org/package=gpuR).\n\nThere have been multiple additions including:\n\n1. Scalar operations for gpuMatrix/",
       "thread_id": "thread-64bcf216c2cf",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001472.html"
     },
     {
       "id": "msg-30ca9defa5b5",
@@ -97,7 +102,8 @@
       "body_snippet": "We are pleased to announce the release of version 2.0 of the \"acs\"\npackage, now available on CRAN\n<http://cran.r-project.org/web/packages/acs/index.html>.\n\nThe package allows users to download, manipu",
       "thread_id": "thread-30ca9defa5b5",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001473.html"
     },
     {
       "id": "msg-84d447758952",
@@ -113,7 +119,8 @@
       "body_snippet": "Greetings,\n\nWe wanted to announce a new R package 'KScorrect' that carries out the Lilliefors correction to the Kolmogorov-Smirnoff test for use in (one-sample) goodness-of-fit tests.\n\nIt's well-estab",
       "thread_id": "thread-84d447758952",
       "thread_depth": 0,
-      "month": "2016-03"
+      "month": "2016-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2016/001474.html"
     }
   ],
   "threads": [

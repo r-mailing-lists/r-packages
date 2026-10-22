@@ -17,7 +17,8 @@
       "body_snippet": "New major versions of the caret packages (caret 3.37, caretLSF 1.23 and\ncaretNWS 0.23) have been uploaded to CRAN.\n\ncaret is a package for building and evaluating a wide variety of predictive\nmodels. ",
       "thread_id": "thread-47fd6fe87f92",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000949.html"
     },
     {
       "id": "msg-868865ff6139",
@@ -33,7 +34,8 @@
       "body_snippet": "Version 3.9 of the survey package is now on CRAN.  Since the last \nannouncement (version 3.6-11, about a year ago) the main changes are\n  - Database-backed survey objects: the data can live in a SQLit",
       "thread_id": "thread-868865ff6139",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000950.html"
     },
     {
       "id": "msg-19a9a6f19c51",
@@ -49,7 +51,8 @@
       "body_snippet": "Hi all,\n\nI've uploaded STAR (Spike Train Analysis with R) on CRAN two days ago.\n\nThe package is designed to analyze neuronal spike (action potential)\ntrains. It uses S3 classes and methods and makes h",
       "thread_id": "thread-19a9a6f19c51",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000951.html"
     },
     {
       "id": "msg-659d68a27bdb",
@@ -65,7 +68,8 @@
       "body_snippet": "Hello,\n\n[This is a re-posting of a previous announcement; I believe the\noriginal posting of a couple of days ago didn't go through.]\n\nThe latest version of RMySQL 0.6-1 is now in CRAN. Please see the ",
       "thread_id": "thread-659d68a27bdb",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000952.html"
     },
     {
       "id": "msg-39d94c8152b2",
@@ -81,7 +85,8 @@
       "body_snippet": "-----------------------------------------------------------------------------------------\nPackages for the computation of optimally robust estimators\n--------------------------------------------------",
       "thread_id": "thread-39d94c8152b2",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000953.html"
     },
     {
       "id": "msg-1fb6507d56ae",
@@ -93,11 +98,12 @@
       "subject_clean": "New version of actuar",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "=== actuar: An R Package for Actuarial Science ===\n\nWe are pleased to announce the immediate availability of version 1.0-0  \nof actuar. This release follows publication of our papers in JSS (*)  \nand R News (**). From the NEWS file:\n\nVersion 1.0-0\n=============\n\nNEW FEATURES\n\n   o Improved support for regression credibility models. There is now\n     an option to make the computations with the intercept at the\n     barycenter of time. This assures that the credibility adjusted\n     regression line (or plane, or ...) lies between the individual and\n     collective ones. In addition, contracts without data are now\n     supported like in other credibility models.\n\n   o Argument 'right' for grouped.data() to allow intervals closed on\n     the right (default) or on the left.\n\n   o Method of quantile() for grouped data objects to compute the\n     inverse of the ogive.\n\nUSER-VISIBLE CHANGES\n\n   o cm() no longer returns the values of the unbiased estimators when\n     method = \"iterative\".\n\n   o Specification of regression models in cm() has changed: one should\n     now provide the regression model as a formula and the regressors\n     in a separate matrix or data frame.\n\n   o Due to above change, predict.cm() now expects 'newdata' to be a\n     data frame as for stats:::predict.lm().\n\n   o Function bstraub() is no longer exported. Users are expected to\n     use cm() as interface instead.\n\nBUG FIXES\n\n   o Functions r<foo>() are now more consistent in warning when NA's\n     (specifically NaN's) are generated (as per the change in R 2.7.0).\n\n   o frequency.portfolio was wrongly counting NAs.\n\n   o Domain of pdfs returned by aggregateDist() now restricted to\n     [0, 1].\n\n   o Quantiles are now computed correctly (and more efficiently) in 0\n     and 1 by quantile.aggregateDist().\n\n   o coverage() no longer requires a cdf when it is not needed, namely\n     when there is no deductible and no limit.\n\n\nThe CRAN page for the package is\n\n\thttp://cran.r-project.org/package=actuar\n\nThe project's web site is\n\n\thttp://www.actuar-project.org\n\nComments and contributions to the project are more than welcome.\n\n(*) http://www.jstatsoft.org/v25/i07\n(**) http://cran.r-project.org/doc/Rnews/Rnews_2008-1.pdf\n\n---\n   Vincent Goulet, Associate Professor\n   ?cole d'actuariat\n   Universit? Laval, Qu?bec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
+      "body_plain": "=== actuar: An R Package for Actuarial Science ===\n\nWe are pleased to announce the immediate availability of version 1.0-0  \nof actuar. This release follows publication of our papers in JSS (*)  \nand R News (**). From the NEWS file:\n\nVersion 1.0-0\n=============\n\nNEW FEATURES\n\n   o Improved support for regression credibility models. There is now\n     an option to make the computations with the intercept at the\n     barycenter of time. This assures that the credibility adjusted\n     regression line (or plane, or ...) lies between the individual and\n     collective ones. In addition, contracts without data are now\n     supported like in other credibility models.\n\n   o Argument 'right' for grouped.data() to allow intervals closed on\n     the right (default) or on the left.\n\n   o Method of quantile() for grouped data objects to compute the\n     inverse of the ogive.\n\nUSER-VISIBLE CHANGES\n\n   o cm() no longer returns the values of the unbiased estimators when\n     method = \"iterative\".\n\n   o Specification of regression models in cm() has changed: one should\n     now provide the regression model as a formula and the regressors\n     in a separate matrix or data frame.\n\n   o Due to above change, predict.cm() now expects 'newdata' to be a\n     data frame as for stats:::predict.lm().\n\n   o Function bstraub() is no longer exported. Users are expected to\n     use cm() as interface instead.\n\nBUG FIXES\n\n   o Functions r<foo>() are now more consistent in warning when NA's\n     (specifically NaN's) are generated (as per the change in R 2.7.0).\n\n   o frequency.portfolio was wrongly counting NAs.\n\n   o Domain of pdfs returned by aggregateDist() now restricted to\n     [0, 1].\n\n   o Quantiles are now computed correctly (and more efficiently) in 0\n     and 1 by quantile.aggregateDist().\n\n   o coverage() no longer requires a cdf when it is not needed, namely\n     when there is no deductible and no limit.\n\n\nThe CRAN page for the package is\n\n\thttp://cran.r-project.org/package=actuar\n\nThe project's web site is\n\n\thttp://www.actuar-project.org\n\nComments and contributions to the project are more than welcome.\n\n(*) http://www.jstatsoft.org/v25/i07\n(**) http://cran.r-project.org/doc/Rnews/Rnews_2008-1.pdf\n\n---\n   Vincent Goulet, Associate Professor\n   École d'actuariat\n   Université Laval, Québec\n   Vincent.Goulet at act.ulaval.ca   http://vgoulet.act.ulaval.ca",
       "body_snippet": "=== actuar: An R Package for Actuarial Science ===\n\nWe are pleased to announce the immediate availability of version 1.0-0  \nof actuar. This release follows publication of our papers in JSS (*)  \nand ",
       "thread_id": "thread-1fb6507d56ae",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000955.html"
     },
     {
       "id": "msg-08abf49a181e",
@@ -113,7 +119,8 @@
       "body_snippet": "Version 1.0-0 of the package \"AER\" for \"Applied Econometrics with R\" has been \nreleased to CRAN (http://CRAN.R-project.org/package=AER) a few weeks ago. \nIt accompanies\n\n   Applied Econometrics with R",
       "thread_id": "thread-08abf49a181e",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000954.html"
     },
     {
       "id": "msg-611e7db2cf5e",
@@ -129,7 +136,8 @@
       "body_snippet": "plyr is a set of tools that solves a common set of problems: you need\nto break a big problem down into manageable pieces, operate on each\npieces and then put all the pieces back together.  It's alread",
       "thread_id": "thread-611e7db2cf5e",
       "thread_depth": 0,
-      "month": "2008-09"
+      "month": "2008-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2008/000956.html"
     }
   ],
   "threads": [

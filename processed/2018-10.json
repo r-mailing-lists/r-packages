@@ -17,7 +17,8 @@
       "body_snippet": "I am pleased to announce that a new release (1.3)  of SamplingStrata is now\navailable on CRAN.\nThis version offers a numer of important new features:\n\n  o The optimization of the stratification of the",
       "thread_id": "thread-3565dad78e68",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001634.html"
     },
     {
       "id": "msg-f3ff7b8f7537",
@@ -29,11 +30,12 @@
       "subject_clean": "MCHT: an R package for bootstrap and Monte Carlo hypothesis testing",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "I'm pleased to publicly announce MCHT, an R package for bootstrap and Monte Carlo hypothesis testing. Here is the blog post announcing the package (https://ntguardian.wordpress.com/2018/10/08/announcing-mcht-package-bootstrap-monte-carlo-hypothesis-testing/) and here is a link to the GitHub page (https://github.com/ntguardian/MCHT). In the blog post (and in the read-me of the actual package) I explain how Monte Carlo and bootstrap hypothesis testing work, and I give demonstrations of basic usage of the package.\n\nThis is the first in a weekly series of blog posts explaining the package. Future topics include making the primary objects of the package (MCHTest-class objects) self-contained and immune from side effects; maximized Monte Carlo testing; bootstrap testing; testing with multi-sample or multivariate data; time series inference; and a final example that motivated my initial creation of the package.\n\nI'm excited about the package and hope others will find it useful. This is the first package I?ve publicly released so I?d like feedback, such as whether I should submit the package to CRAN or a paper to J. Stat. Soft. or the R Journal. And please report any issues you encounter on GitHub; I won't know until someone tells me.\n\nCurtis Miller\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "I'm pleased to publicly announce MCHT, an R package for bootstrap and Monte Carlo hypothesis testing. Here is the blog post announcing the package (https://ntguardian.wordpress.com/2018/10/08/announcing-mcht-package-bootstrap-monte-carlo-hypothesis-testing/) and here is a link to the GitHub page (https://github.com/ntguardian/MCHT). In the blog post (and in the read-me of the actual package) I explain how Monte Carlo and bootstrap hypothesis testing work, and I give demonstrations of basic usage of the package.\n\nThis is the first in a weekly series of blog posts explaining the package. Future topics include making the primary objects of the package (MCHTest-class objects) self-contained and immune from side effects; maximized Monte Carlo testing; bootstrap testing; testing with multi-sample or multivariate data; time series inference; and a final example that motivated my initial creation of the package.\n\nI'm excited about the package and hope others will find it useful. This is the first package I’ve publicly released so I’d like feedback, such as whether I should submit the package to CRAN or a paper to J. Stat. Soft. or the R Journal. And please report any issues you encounter on GitHub; I won't know until someone tells me.\n\nCurtis Miller\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "I'm pleased to publicly announce MCHT, an R package for bootstrap and Monte Carlo hypothesis testing. Here is the blog post announcing the package (https://ntguardian.wordpress.com/2018/10/08/announci",
       "thread_id": "thread-f3ff7b8f7537",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001637.html"
     },
     {
       "id": "msg-00fbc74df385",
@@ -49,7 +51,8 @@
       "body_snippet": "List members might like to know that the `rcheology` package has been\nupdated on CRAN. `rcheology` is a data package which lists every object in\nbase R packages for previous versions of R. The new upd",
       "thread_id": "thread-00fbc74df385",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001635.html"
     },
     {
       "id": "msg-d87d602b48d7",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear R users,\n\nif you are using machine learning algorithms and have a lot of data\n(especially a lot of predictors, e.g. in genome-wide association studies),\ncheck the package bigstep. You can easily ",
       "thread_id": "thread-d87d602b48d7",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001636.html"
     },
     {
       "id": "msg-bba83269997d",
@@ -81,7 +85,8 @@
       "body_snippet": "Hello everyone,\n\nI'm happy to announce the release of a new R package on CRAN called\ncrfsuite.\nThe crfsuite package is an R package specific to *Natural Language\nProcessing* and allows you to easily b",
       "thread_id": "thread-bba83269997d",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-packages/2018/001638.html"
     }
   ],
   "threads": [
